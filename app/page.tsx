@@ -1,65 +1,161 @@
-import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
-export default function Home() {
+import { CountryFlag } from "@/components/site/country-flag";
+import { CounsellingDialog } from "@/components/site/counselling-dialog";
+import { HeroSearch } from "@/components/site/hero-search";
+import { LeadForm } from "@/components/site/lead-form";
+import { SectionHeading } from "@/components/site/section-heading";
+import { UniversityCard } from "@/components/site/university-card";
+import { Button } from "@/components/ui/button";
+import { getFeaturedPrograms } from "@/lib/data/catalog";
+import { navDestinations } from "@/lib/constants";
+
+export default async function HomePage() {
+  const featuredPrograms = await getFeaturedPrograms();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      <section className="py-20 md:py-28 lg:py-32">
+        <div className="container-shell text-center">
+          {/* Eyebrow */}
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+            Study Abroad Experts
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+
+          {/* Headline */}
+          <h1 className="mx-auto mt-5 max-w-4xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+            <span className="text-heading">Your Global Education,</span>{" "}
+            <span className="italic text-accent">Made Simple.</span>
+          </h1>
+
+          {/* Subtext */}
+          <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
+            We help Indian students explore universities across the world, compare fees and programs, and apply with confidence — with free expert guidance at every step.
+          </p>
+
+          {/* Search widget */}
+          <div className="mt-10">
+            <HeroSearch />
+          </div>
+
+          {/* Free counselling link */}
+          <div className="mt-5 flex items-center justify-center gap-1.5 text-sm text-muted-foreground">
+            <span>Not sure where to start?</span>
+            <CounsellingDialog
+              plainTrigger
+              triggerClassName="font-medium text-primary underline-offset-2 hover:underline"
+              triggerContent="Get free counselling"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* ── Destinations ──────────────────────────────────────────────────── */}
+      <section className="border-t border-border py-16 md:py-20">
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="Study Destinations"
+            title="Where do you want to study?"
+            description="We guide students to verified universities across some of the most popular study-abroad destinations for Indian students."
+          />
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {navDestinations.map((dest) => (
+              <Link
+                key={dest.countryCode}
+                href={dest.href}
+                className="group flex items-center gap-4 rounded-xl border border-border p-5 transition-all hover:border-primary/20 hover:shadow-sm"
+              >
+                <CountryFlag
+                  countryCode={dest.countryCode}
+                  alt={dest.name}
+                  width={36}
+                  height={27}
+                  className="flex-shrink-0 rounded-md shadow-flag"
+                />
+                <div className="min-w-0 flex-1">
+                  <p className="font-semibold text-foreground transition-colors group-hover:text-primary">
+                    {dest.name}
+                  </p>
+                  <p className="mt-0.5 text-sm text-muted-foreground">
+                    {dest.description}
+                  </p>
+                </div>
+                <ArrowRight className="size-4 flex-shrink-0 text-muted-foreground opacity-0 transition-all group-hover:translate-x-0.5 group-hover:text-primary group-hover:opacity-100" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Featured Universities ─────────────────────────────────────────── */}
+      <section className="border-t border-border py-16 md:py-20">
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="Top Universities"
+            title="Programs students are applying for."
+            description="Every listing shows verified fees, medium of instruction, hostel availability, and eligibility for NMC and USMLE."
+            aside={
+              <Button asChild variant="outline">
+                <Link href="/universities">View all</Link>
+              </Button>
+            }
+          />
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {featuredPrograms.map((program) => (
+              <UniversityCard key={program.offering.slug} program={program} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Lead Form ─────────────────────────────────────────────────────── */}
+      <section className="border-t border-border py-16 md:py-20">
+        <div className="container-shell grid gap-12 lg:grid-cols-2 lg:items-start">
+          {/* Left — value prop */}
+          <div className="space-y-6 lg:pt-2">
+            <div className="space-y-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                Free Counselling
+              </p>
+              <h2 className="font-display text-heading text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+                Not sure where to begin?
+                <br />
+                <span className="italic text-primary">We&apos;ll help.</span>
+              </h2>
+              <p className="text-base leading-7 text-muted-foreground">
+                Our counsellors help you pick the right country, compare
+                universities, and navigate the application process — at no cost.
+              </p>
+            </div>
+
+            <ul className="space-y-3">
+              {[
+                "Personalised university shortlist",
+                "Fee comparison across countries",
+                "Application & visa guidance",
+                "Completely free — no obligations",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-3 text-sm text-foreground">
+                  <span className="flex size-5 flex-shrink-0 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">
+                    ✓
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right — form */}
+          <LeadForm
+            sourcePath="/"
+            ctaVariant="home_cta"
+            title="Get your free shortlist"
+          />
+        </div>
+      </section>
+    </>
   );
 }

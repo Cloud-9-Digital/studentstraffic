@@ -1,26 +1,354 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "react-phone-number-input/style.css";
 
+/* ── Third-party overrides ───────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --PhoneInput-color--focus: var(--accent);
+  --PhoneInputCountryFlag-height: 1.1em;
+  --PhoneInputCountryFlag-borderColor: rgba(18, 55, 50, 0.18);
+  --PhoneInputCountrySelectArrow-color: var(--muted-foreground);
+  --PhoneInputCountrySelectArrow-opacity: 0.7;
 }
 
+/* ── Design tokens ───────────────────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+
+  /* Surface colors */
+  --background: #ffffff;
+  --foreground: #0f1f1c;
+  --card: #ffffff;
+  --card-foreground: #0f1f1c;
+  --popover: #ffffff;
+  --popover-foreground: #0f1f1c;
+  --panel: rgba(255, 255, 255, 0.85);
+  --panel-strong: rgba(255, 255, 255, 0.97);
+
+  /* Brand colors */
+  --primary: #0f3d37;
+  --heading: #155e53;
+  --heading-contrast: #b9efd0;
+  --primary-foreground: #ffffff;
+  --accent: #f08a4b;
+  --accent-foreground: #ffffff;
+  --accent-strong: #dc7435;
+  --accent-soft: rgba(240, 138, 75, 0.12);
+
+  /* Semantic colors */
+  --secondary: #f2f2f2;
+  --secondary-foreground: #0f1f1c;
+  --muted: #f5f5f5;
+  --muted-foreground: #6b7280;
+  --destructive: #c75a43;
+  --destructive-foreground: #ffffff;
+
+  /* UI colors */
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(0, 0, 0, 0.06);
+  --ring: #f08a4b;
+
+  /* Surface variants */
+  --surface-dark: #0f3d37;
+  --surface-dark-2: #184a43;
+
+  /* Third-party brand colors */
+  --whatsapp: #25d366;
+  --whatsapp-dark: #167a43;
+
+  /* Status / traffic light (muted) */
+  --status-green: rgba(34, 113, 71, 0.1);
+  --status-green-fg: #1a6641;
+  --status-green-border: rgba(34, 113, 71, 0.22);
+  --status-amber: rgba(180, 113, 14, 0.1);
+  --status-amber-fg: #9a6410;
+  --status-amber-border: rgba(180, 113, 14, 0.22);
+  --status-red: rgba(185, 60, 45, 0.1);
+  --status-red-fg: #a03128;
+  --status-red-border: rgba(185, 60, 45, 0.22);
+
+  /* Component-specific */
+  --header-bg: rgba(255, 255, 255, 0.92);
+
+  /* Radius scale */
+  --radius: 0.625rem;
+  --radius-hero: 2rem;
+}
+
+/* ── Tailwind token mapping ───────────────────────────────────────────────── */
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-surface-dark: var(--surface-dark);
+  --color-surface-dark-2: var(--surface-dark-2);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-dark: var(--whatsapp-dark);
+  --color-header-bg: var(--header-bg);
+  --color-status-green: var(--status-green);
+  --color-status-green-fg: var(--status-green-fg);
+  --color-status-green-border: var(--status-green-border);
+  --color-status-amber: var(--status-amber);
+  --color-status-amber-fg: var(--status-amber-fg);
+  --color-status-amber-border: var(--status-amber-border);
+  --color-status-red: var(--status-red);
+  --color-status-red-fg: var(--status-red-fg);
+  --color-status-red-border: var(--status-red-border);
+
+  /* Typography */
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+
+  /* Radius — matches shadcn default scale */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 14px);
+  --radius-3xl: calc(var(--radius) + 24px);
+  --radius-hero: var(--radius-hero);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ── Base styles ─────────────────────────────────────────────────────────── */
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--foreground);
+    font-family: var(--font-body), sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+  }
+
+  .hero-panel h1,
+  .hero-panel h2,
+  .hero-panel h3,
+  .hero-panel h4,
+  .hero-panel h5,
+  .hero-panel h6 {
+    color: var(--primary-foreground);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.font-display {
+  font-family: var(--font-display), serif;
+  font-synthesis: none;
+  font-weight: 600;
+}
+
+:where(a) {
+  color: inherit;
+}
+
+/* ── Layout utilities ─────────────────────────────────────────────────────── */
+
+.page-noise {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(18, 55, 50, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 55, 50, 0.02) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(circle at center, black 45%, transparent 100%);
+}
+
+.container-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.section-space {
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+/* ── Component utilities ─────────────────────────────────────────────────── */
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--muted);
+  padding: 0.5rem 0.875rem;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-panel {
+  background:
+    linear-gradient(135deg, rgba(15, 61, 55, 0.97) 0%, rgba(24, 74, 67, 0.94) 100%);
+  color: var(--primary-foreground);
+  border-radius: var(--radius-hero);
+  overflow: hidden;
+}
+
+.hero-panel p,
+.hero-panel li,
+.hero-panel a:not([data-slot="button"]) {
+  color: inherit;
+}
+
+.hero-grid-lines {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 100%);
+}
+
+.hero-glass {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.06) 100%);
+  backdrop-filter: blur(18px);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(18px);
+  animation: hero-orb-float 14s ease-in-out infinite;
+}
+
+.hero-orb--warm {
+  background: rgba(240, 138, 75, 0.24);
+}
+
+.hero-orb--cool {
+  background: rgba(255, 255, 255, 0.16);
+  animation-delay: -7s;
+}
+
+.section-tint {
+  background:
+    radial-gradient(circle at top left, rgba(240, 138, 75, 0.12), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(15, 61, 55, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(247, 249, 248, 0.92), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(15, 61, 55, 0.08);
+}
+
+.prose-copy {
+  color: var(--muted-foreground);
+}
+
+.prose-copy p + p {
+  margin-top: 1rem;
+}
+
+.surface-outline {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+}
+
+.soft-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.field-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .field-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ── Color utilities ─────────────────────────────────────────────────────── */
+
+@utility text-heading {
+  color: var(--heading);
+}
+
+@utility text-heading-contrast {
+  color: var(--heading-contrast);
+}
+
+/* ── Shadow utilities ─────────────────────────────────────────────────────── */
+
+@utility shadow-hero {
+  box-shadow: 0 24px 80px rgba(12, 32, 29, 0.18);
+}
+
+@utility shadow-dropdown {
+  box-shadow: 0 20px 60px rgba(15, 61, 55, 0.1), 0 4px 16px rgba(15, 61, 55, 0.06);
+}
+
+@utility shadow-flag {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+@utility shadow-cta {
+  box-shadow: 0 4px 14px rgba(240, 138, 75, 0.38);
+}
+
+@utility shadow-cta-hover {
+  box-shadow: 0 6px 20px rgba(240, 138, 75, 0.42);
+}
+
+@utility shadow-header-scrolled {
+  box-shadow: 0 2px 24px rgba(15, 61, 55, 0.08), 0 1px 0 rgba(18, 55, 50, 0.07);
+}
+
+@utility shadow-drawer {
+  box-shadow: -8px 0 48px rgba(15, 61, 55, 0.14);
+}
+
+@utility shadow-dialog {
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.18);
+}
+
+/* ── Typography utilities ─────────────────────────────────────────────────── */
+
+@utility text-2xs {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+}
+
+@keyframes hero-orb-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.08);
+  }
 }

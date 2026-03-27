@@ -1,0 +1,861 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import {
+  ArrowUpRight,
+  BedDouble,
+  Building2,
+  CalendarDays,
+  CheckCircle2,
+  CircleDollarSign,
+  Clock,
+  GraduationCap,
+  Languages,
+  MapPin,
+  MapPinned,
+  ShieldCheck,
+  Stethoscope,
+  UtensilsCrossed,
+} from "lucide-react";
+
+import { JsonLd } from "@/components/shared/json-ld";
+import { ContentTrustPanel } from "@/components/site/content-trust-panel";
+import { CounsellingDialog } from "@/components/site/counselling-dialog";
+import { LeadForm } from "@/components/site/lead-form";
+import { UniversityCard } from "@/components/site/university-card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  catalogReviewedAt,
+  countUniqueSources,
+} from "@/lib/content-governance";
+import {
+  getComparisonGuidesForUniversity,
+} from "@/lib/discovery-pages";
+import {
+  getCountryBySlug,
+  getProgramsForUniversity,
+  getUniversities,
+  getUniversityBySlug,
+  listFinderPrograms,
+} from "@/lib/data/catalog";
+import type {
+  FinderProgram,
+  LinkItem,
+  UniversityGalleryImage,
+} from "@/lib/data/types";
+import { buildIndexableMetadata } from "@/lib/metadata";
+import {
+  getBreadcrumbStructuredData,
+  getCountryStructuredData,
+  getCourseStructuredData,
+  getFaqStructuredData,
+  getProgramItemListStructuredData,
+  getStructuredDataGraph,
+  getWebPageStructuredData,
+  getUniversityStructuredData,
+} from "@/lib/structured-data";
+import {
+  getUniversityCoverImage,
+  getUniversityGalleryImages,
+  getUniversityInitials,
+} from "@/lib/university-media";
+import { getComparisonHref } from "@/lib/routes";
+import { cn, formatCurrencyUsd } from "@/lib/utils";
+
+export async function generateStaticParams() {
+  const universities = await getUniversities();
+  return universities.map((university) => ({ slug: university.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const university = await getUniversityBySlug(slug);
+
+  if (!university) {
+    return { title: "University Not Found" };
+  }
+
+  const [country, programs] = await Promise.all([
+    getCountryBySlug(university.countrySlug),
+    getProgramsForUniversity(university.slug),
+  ]);
+  const primaryProgram =
+    programs.find((p) => p.offering.featured) ?? programs[0];
+  const title = primaryProgram
+    ? `${university.name} | ${primaryProgram.course.shortName} Fees, Hostel & Admissions`
+    : `${university.name} | University Details`;
+  const description =
+    primaryProgram && country
+      ? `${university.summary} Compare ${primaryProgram.course.shortName} annual tuition, hostel, medium of instruction, intake, and student support in ${university.city}, ${country.name}.`
+      : university.summary;
+
+  return buildIndexableMetadata({
+    title,
+    description,
+    path: `/universities/${university.slug}`,
+    keywords: [
+      university.name,
+      primaryProgram
+        ? `${primaryProgram.course.shortName} at ${university.name}`
+        : undefined,
+      country ? `${university.name} ${country.name}` : undefined,
+      `${university.city} medical university`,
+      ...university.recognitionBadges,
+    ].filter(Boolean) as string[],
+  });
+}
+
+export default async function UniversityDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const university = await getUniversityBySlug(slug);
+
+  if (!university) notFound();
+
+  const [programs, country, allFinderPrograms] = await Promise.all([
+    getProgramsForUniversity(university.slug),
+    getCountryBySlug(university.countrySlug),
+    listFinderPrograms({}),
+  ]);
+  const comparisonGuides = await getComparisonGuidesForUniversity(university.slug);
+
+  if (!country) notFound();
+
+  const primaryProgram =
+    programs.find((p) => p.offering.featured) ?? programs[0];
+  const similarPrograms = university.similarUniversitySlugs
+    .map((s) => allFinderPrograms.find((p) => p.university.slug === s))
+    .filter((p): p is FinderProgram => Boolean(p));
+  const galleryImages = getUniversityGalleryImages(university);
+  const coverImage = getUniversityCoverImage(university);
+  const additionalGalleryImages = galleryImages.slice(1);
+  const referenceCount = countUniqueSources(
+    university.recognitionLinks,
+    university.references
+  );
+
+  const path = `/universities/${university.slug}`;
+  const primaryCourseStructuredData = primaryProgram
+    ? getCourseStructuredData(primaryProgram.course)
+    : null;
+  const countryStructuredData = getCountryStructuredData(country);
+  const universityStructuredData = getUniversityStructuredData({
+    university,
+    country,
+    programs,
+    sameAs: [
+      ...university.recognitionLinks.map((i) => i.url),
+      ...university.references.map((i) => i.url),
+    ],
+  });
+  const structuredDataItems = [
+    getBreadcrumbStructuredData([
+      { name: "Home", path: "/" },
+      { name: "Universities", path: "/universities" },
+      { name: university.name, path },
+    ]),
+    countryStructuredData,
+    primaryCourseStructuredData,
+    getWebPageStructuredData({
+      path,
+      name: university.name,
+      description: university.summary,
+      aboutIds: [
+        countryStructuredData["@id"],
+        primaryCourseStructuredData?.["@id"],
+      ].filter(Boolean) as string[],
+      mainEntityId: universityStructuredData["@id"],
+      datePublished: catalogReviewedAt,
+      dateModified: catalogReviewedAt,
+    }),
+    universityStructuredData,
+    programs.length
+      ? getProgramItemListStructuredData({
+          path,
+          name: `${university.name} program offerings`,
+          programs,
+        })
+      : null,
+    university.faq.length ? getFaqStructuredData(university.faq, path) : null,
+  ];
+
+  return (
+    <>
+      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      <div className="relative overflow-hidden bg-surface-dark">
+        <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
+        <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
+        <div className="hero-orb hero-orb--warm pointer-events-none absolute -right-16 -top-20 size-96 opacity-30" aria-hidden />
+        <div className="hero-orb hero-orb--cool pointer-events-none absolute -bottom-10 left-10 size-72 opacity-50" aria-hidden />
+
+        <div className="relative mx-auto w-[min(1380px,calc(100%-2rem))] py-12 md:py-16">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(420px,0.95fr)] lg:items-center lg:gap-12 xl:gap-16">
+            <div className="min-w-0 space-y-6">
+              <nav className="flex items-center gap-2 text-xs text-white/50">
+                <Link href="/universities" className="transition-colors hover:text-white/80">
+                  Universities
+                </Link>
+                <span>/</span>
+                <span className="text-white/70">{university.name}</span>
+              </nav>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="inline-flex items-center gap-1.5 rounded-md border border-white/15 bg-white/10 px-2.5 py-1 text-xs font-medium text-white/90 backdrop-blur-sm">
+                  <MapPin className="size-3" />
+                  {country.name}
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-md border border-white/15 bg-white/10 px-2.5 py-1 text-xs font-medium text-white/90 backdrop-blur-sm">
+                  <Building2 className="size-3" />
+                  {university.type}
+                </span>
+                {university.recognitionBadges.map((badge) => (
+                  <span
+                    key={badge}
+                    className="inline-flex items-center rounded-md border border-white/12 bg-white/8 px-2.5 py-1 text-xs font-medium text-white/80 backdrop-blur-sm"
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+
+              <div className="space-y-3">
+                <h1 className="font-display text-4xl font-semibold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
+                  {university.name}
+                </h1>
+                <p className="max-w-2xl text-sm leading-7 text-white/65 md:text-base md:leading-8">
+                  {university.summary}
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2">
+                  <MapPinned className="size-4 text-white/50" />
+                  <span className="text-sm font-medium text-white/80">{university.city}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CalendarDays className="size-4 text-white/50" />
+                  <span className="text-sm font-medium text-white/80">Est. {university.establishedYear}</span>
+                </div>
+                {primaryProgram && (
+                  <div className="flex items-center gap-2">
+                    <CircleDollarSign className="size-4 text-white/50" />
+                    <span className="text-sm font-medium text-white/80">
+                      {formatCurrencyUsd(primaryProgram.offering.annualTuitionUsd)}
+                      <span className="text-white/50"> / year</span>
+                    </span>
+                  </div>
+                )}
+                {primaryProgram && (
+                  <div className="flex items-center gap-2">
+                    <GraduationCap className="size-4 text-white/50" />
+                    <span className="text-sm font-medium text-white/80">
+                      {primaryProgram.offering.durationYears}-year {primaryProgram.course.shortName}
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                <CounsellingDialog
+                  triggerContent="Get free counselling"
+                  triggerVariant="accent"
+                  triggerSize="default"
+                />
+                <Button asChild variant="ghost" size="default" className="border border-white/20 bg-white/8 !text-white hover:bg-white/15 hover:!text-white">
+                  <Link href={university.officialWebsite} target="_blank" rel="noreferrer">
+                    Official website
+                    <ArrowUpRight className="size-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {coverImage && (
+              <div className="min-w-0 lg:justify-self-end">
+                <UniversityHeroMedia
+                  coverImage={coverImage}
+                  universityName={university.name}
+                  logoUrl={university.logoUrl}
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* ── Body ──────────────────────────────────────────────────────────── */}
+      <section className="py-10 md:py-14">
+        <div className="container-shell">
+          <ContentTrustPanel
+            lastReviewed={catalogReviewedAt}
+            sourceSummary="University pages use official websites, linked recognition records, and Students Traffic editorial review for shortlist context."
+            referenceCount={referenceCount}
+            className="mb-10"
+          />
+          <div className="grid gap-10 lg:grid-cols-[1fr_380px] lg:items-start">
+
+            {/* ── Main column ─────────────────────────────────────────────── */}
+            <div className="min-w-0 space-y-0">
+
+              {/* At a glance */}
+              {primaryProgram && (
+                <div className="pb-10">
+                  <div className="mb-1 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    At a glance
+                  </div>
+                  <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                    <GlanceStat
+                      icon={<CircleDollarSign className="size-4 text-accent" />}
+                      label="Annual tuition"
+                      value={formatCurrencyUsd(primaryProgram.offering.annualTuitionUsd)}
+                    />
+                    <GlanceStat
+                      icon={<Clock className="size-4 text-accent" />}
+                      label="Duration"
+                      value={`${primaryProgram.offering.durationYears} years`}
+                    />
+                    <GlanceStat
+                      icon={<Languages className="size-4 text-accent" />}
+                      label="Medium"
+                      value={primaryProgram.offering.medium}
+                    />
+                    <GlanceStat
+                      icon={<CalendarDays className="size-4 text-accent" />}
+                      label="Intake"
+                      value={primaryProgram.offering.intakeMonths.join(", ")}
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* About */}
+              <div className="space-y-6 py-10">
+                <SectionLabel>About the university</SectionLabel>
+                <p className="text-sm leading-8 text-muted-foreground md:text-base">
+                  {university.campusLifestyle}
+                </p>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <InfoCard
+                    icon={<MapPinned className="size-4 text-accent" />}
+                    title="City & location"
+                    body={university.cityProfile}
+                  />
+                  <InfoCard
+                    icon={<ShieldCheck className="size-4 text-accent" />}
+                    title="Student support"
+                    body={university.studentSupport}
+                  />
+                </div>
+              </div>
+
+              {/* Gallery */}
+              {additionalGalleryImages.length > 0 && (
+                <div className="space-y-6 py-10">
+                  <SectionLabel>Gallery</SectionLabel>
+                  <div className="grid gap-4 md:grid-cols-2">
+                    {additionalGalleryImages.map((image, index) => (
+                      <figure
+                        key={image.url}
+                        className={cn(
+                          "overflow-hidden rounded-2xl border border-border bg-card shadow-sm",
+                          index === 0 && "md:col-span-2"
+                        )}
+                      >
+                        <div
+                          className={cn(
+                            "relative overflow-hidden bg-muted/40",
+                            index === 0 ? "aspect-[16/9]" : "aspect-[4/3]"
+                          )}
+                        >
+                          <Image
+                            src={image.url}
+                            alt={image.alt}
+                            fill
+                            sizes={
+                              index === 0
+                                ? "(max-width: 768px) 100vw, 66vw"
+                                : "(max-width: 768px) 100vw, 33vw"
+                            }
+                            className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+                          />
+                        </div>
+                      </figure>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Program */}
+              {primaryProgram && (
+                <div className="space-y-6 py-10">
+                  <SectionLabel>Program details</SectionLabel>
+
+                  <div className="flex flex-wrap items-center gap-2">
+                    <Badge className="text-sm">{primaryProgram.course.shortName}</Badge>
+                    <Badge variant="outline">{primaryProgram.offering.medium}</Badge>
+                    <span className="text-sm text-muted-foreground">{primaryProgram.offering.title}</span>
+                  </div>
+
+                  {/* Teaching phases */}
+                  {primaryProgram.offering.teachingPhases.length > 0 && (
+                    <div className="space-y-3">
+                      <h3 className="text-sm font-semibold text-foreground">Teaching phases</h3>
+                      <div className="space-y-0 divide-y divide-border overflow-hidden rounded-xl border border-border">
+                        {primaryProgram.offering.teachingPhases.map((phase, i) => (
+                          <div key={phase.phase} className="flex gap-4 bg-card px-5 py-4">
+                            <div className="flex size-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xs font-bold text-accent mt-0.5">
+                              {i + 1}
+                            </div>
+                            <div className="space-y-1">
+                              <div className="flex flex-wrap items-center gap-2">
+                                <span className="text-sm font-medium text-foreground">{phase.phase}</span>
+                                <span className="rounded-full border border-accent/25 bg-accent/8 px-2 py-0.5 text-xs font-medium text-accent">
+                                  {phase.language}
+                                </span>
+                              </div>
+                              <p className="text-sm leading-6 text-muted-foreground">{phase.details}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Cost breakdown */}
+                  <div className="space-y-3">
+                    <h3 className="text-sm font-semibold text-foreground">Year-wise cost breakdown</h3>
+                    <div className="overflow-hidden rounded-xl border border-border">
+                      <Table>
+                        <TableHeader>
+                          <TableRow className="bg-muted/50">
+                            <TableHead className="font-semibold">Year</TableHead>
+                            <TableHead className="font-semibold">Tuition</TableHead>
+                            <TableHead className="font-semibold">Living</TableHead>
+                            <TableHead className="font-semibold">Total / yr</TableHead>
+                          </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                          {primaryProgram.offering.yearlyCostBreakdown.map((year) => (
+                            <TableRow key={year.yearLabel}>
+                              <TableCell className="font-medium">{year.yearLabel}</TableCell>
+                              <TableCell>{formatCurrencyUsd(year.tuitionUsd)}</TableCell>
+                              <TableCell>{formatCurrencyUsd(year.livingUsd)}</TableCell>
+                              <TableCell className="font-semibold text-foreground">
+                                {formatCurrencyUsd(year.totalUsd)}
+                              </TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </div>
+                  </div>
+
+                  {/* Licensing */}
+                  {primaryProgram.offering.licenseExamSupport.length > 0 && (
+                    <div className="space-y-3">
+                      <h3 className="text-sm font-semibold text-foreground">Licensing &amp; exam planning</h3>
+                      <ul className="space-y-2">
+                        {primaryProgram.offering.licenseExamSupport.map((item) => (
+                          <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
+                            <span className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Clinical & Student Life */}
+              <div className="space-y-6 py-10">
+                <SectionLabel>Clinical &amp; student life</SectionLabel>
+
+                {/* Clinical exposure */}
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2">
+                    <Stethoscope className="size-4 text-accent" />
+                    <h3 className="text-sm font-semibold text-foreground">Clinical exposure</h3>
+                  </div>
+                  <p className="text-sm leading-7 text-muted-foreground">{university.clinicalExposure}</p>
+                  {university.teachingHospitals.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {university.teachingHospitals.map((h) => (
+                        <span
+                          key={h}
+                          className="rounded-full border border-border bg-muted/50 px-3 py-1.5 text-xs font-medium text-foreground"
+                        >
+                          {h}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Hostel / Food / Safety */}
+                <div className="grid gap-4 sm:grid-cols-3">
+                  <InfoCard
+                    icon={<BedDouble className="size-4 text-accent" />}
+                    title="Hostel"
+                    body={university.hostelOverview}
+                  />
+                  <InfoCard
+                    icon={<UtensilsCrossed className="size-4 text-accent" />}
+                    title="Food &amp; settling in"
+                    body={university.indianFoodSupport}
+                  />
+                  <InfoCard
+                    icon={<ShieldCheck className="size-4 text-accent" />}
+                    title="Safety"
+                    body={university.safetyOverview}
+                  />
+                </div>
+              </div>
+
+              {/* Shortlist fit */}
+              <div className="space-y-6 py-10">
+                <SectionLabel>Shortlist fit</SectionLabel>
+                <div className="grid gap-4 sm:grid-cols-3">
+                  <FitCard
+                    title="Why students choose it"
+                    items={university.whyChoose}
+                    dotClass="bg-emerald-500"
+                  />
+                  <FitCard
+                    title="Things to consider"
+                    items={university.thingsToConsider}
+                    dotClass="bg-amber-500"
+                  />
+                  <FitCard
+                    title="Best fit for"
+                    items={university.bestFitFor}
+                    dotClass="bg-accent"
+                  />
+                </div>
+              </div>
+
+              {/* Recognition & Sources */}
+              <div className="space-y-6 py-10">
+                <SectionLabel>Recognition &amp; sources</SectionLabel>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <LinkListCard
+                    title="Recognition links"
+                    items={university.recognitionLinks}
+                  />
+                  <LinkListCard
+                    title="References"
+                    items={university.references}
+                  />
+                </div>
+              </div>
+
+              {/* Program offerings */}
+              {programs.length > 0 && (
+                <div className="space-y-6 py-10">
+                  <SectionLabel>Program offerings</SectionLabel>
+                  <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+                    {programs.map((program) => (
+                      <UniversityCard key={program.offering.slug} program={program} />
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* FAQ */}
+              {university.faq.length > 0 && (
+                <div className="space-y-6 py-10">
+                  <SectionLabel>Frequently asked questions</SectionLabel>
+                  <Accordion type="single" collapsible className="space-y-2">
+                    {university.faq.map((item, i) => (
+                      <AccordionItem
+                        key={item.question}
+                        value={`faq-${i}`}
+                        className="rounded-xl border border-border bg-card px-5 data-[state=open]:border-accent/30"
+                      >
+                        <AccordionTrigger className="text-left text-sm font-medium text-foreground hover:no-underline">
+                          {item.question}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-sm leading-7 text-muted-foreground">
+                          {item.answer}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
+              )}
+
+              {/* Similar universities */}
+              {similarPrograms.length > 0 && (
+                <div className="space-y-6 py-10">
+                  <SectionLabel>Similar universities to compare</SectionLabel>
+                  {comparisonGuides.length > 0 ? (
+                    <div className="flex flex-wrap gap-3">
+                      {comparisonGuides.map((guide) => (
+                        <Button key={guide.slug} asChild variant="outline" size="sm">
+                          <Link href={getComparisonHref(guide.slug)}>
+                            {guide.left.university.name} vs {guide.right.university.name}
+                          </Link>
+                        </Button>
+                      ))}
+                    </div>
+                  ) : null}
+                  <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+                    {similarPrograms.map((program) => (
+                      <UniversityCard key={program.offering.slug} program={program} />
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* ── Sticky sidebar ───────────────────────────────────────────── */}
+            <aside className="lg:sticky lg:top-20">
+              <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+                {/* Dark header */}
+                <div className="relative overflow-hidden bg-surface-dark px-4 py-4">
+                  <div className="absolute -right-10 -top-10 size-40 rounded-full bg-accent/15 blur-2xl pointer-events-none" />
+                  <div className="absolute -bottom-6 -left-6 size-28 rounded-full bg-white/4 blur-xl pointer-events-none" />
+                  <div className="relative space-y-4">
+                    <div>
+                      <p className="text-[0.65rem] font-semibold uppercase tracking-widest text-white/50">
+                        Free counselling
+                      </p>
+                      <h2 className="mt-1 font-display text-lg font-semibold leading-snug text-white">
+                        Interested in {university.name}?
+                      </h2>
+                    </div>
+                    <ul className="space-y-1.5">
+                      {[
+                        `${primaryProgram ? primaryProgram.course.shortName + " fee breakdown" : "Fee breakdown"}`,
+                        `${country.name} admission guidance`,
+                        "Callback within 24 hours",
+                      ].map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-center gap-2 text-sm text-white/70"
+                        >
+                          <CheckCircle2 className="size-3.5 shrink-0 text-accent" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Form */}
+                <div className="bg-card px-4 pb-4 pt-3">
+                  <LeadForm
+                    sourcePath={`/universities/${university.slug}`}
+                    ctaVariant="university_sidebar"
+                    universitySlug={university.slug}
+                    countrySlug={country.slug}
+                    courseSlug={primaryProgram?.course.slug}
+                    embedded
+                    simple
+                    stacked
+                  />
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
+    </>
+  );
+}
+
+// ── Helper components ──────────────────────────────────────────────────────────
+
+function UniversityHeroMedia({
+  coverImage,
+  universityName,
+  logoUrl,
+}: {
+  coverImage: UniversityGalleryImage;
+  universityName: string;
+  logoUrl?: string;
+}) {
+  return (
+    <figure className="group relative mx-auto w-full max-w-[580px] overflow-hidden rounded-[2rem] border border-white/12 bg-card shadow-[0_30px_100px_-50px_rgba(7,10,19,0.9)]">
+      <div className="relative h-[320px] overflow-hidden md:h-[420px] lg:h-[560px]">
+        <Image
+          src={coverImage.url}
+          alt={coverImage.alt}
+          width={1160}
+          height={1450}
+          sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 38vw, 580px"
+          loading="eager"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.18),transparent_42%,rgba(7,10,19,0.08))]" />
+        <div className="absolute bottom-4 left-4 md:bottom-5 md:left-5">
+          <UniversityLogoBadge
+            name={universityName}
+            logoUrl={logoUrl}
+            className="size-16 border-white/80 bg-white text-surface-dark shadow-lg backdrop-blur-sm md:size-20"
+          />
+        </div>
+      </div>
+    </figure>
+  );
+}
+
+function UniversityLogoBadge({
+  name,
+  logoUrl,
+  className,
+}: {
+  name: string;
+  logoUrl?: string;
+  className?: string;
+}) {
+  const initials = getUniversityInitials(name);
+
+  return (
+    <div
+      className={cn(
+        "flex shrink-0 items-center justify-center overflow-hidden rounded-2xl border font-semibold",
+        className
+      )}
+    >
+      {logoUrl ? (
+        <span className="flex h-full w-full items-center justify-center p-[18%]">
+          <Image
+            src={logoUrl}
+            alt={`${name} logo`}
+            width={64}
+            height={64}
+            className="h-full w-full object-contain"
+          />
+        </span>
+      ) : (
+        <span className="text-sm font-bold tracking-wide">{initials}</span>
+      )}
+    </div>
+  );
+}
+
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+      {children}
+    </div>
+  );
+}
+
+function GlanceStat({
+  icon,
+  label,
+  value,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+}) {
+  return (
+    <div className="flex flex-col gap-2 rounded-xl border border-border bg-card p-4">
+      {icon}
+      <div className="space-y-0.5">
+        <p className="text-xs text-muted-foreground">{label}</p>
+        <p className="text-sm font-semibold text-foreground">{value}</p>
+      </div>
+    </div>
+  );
+}
+
+function InfoCard({
+  icon,
+  title,
+  body,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  body: string;
+}) {
+  return (
+    <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
+      <div className="flex items-center gap-2">
+        {icon}
+        <span className="text-sm font-semibold text-foreground">{title}</span>
+      </div>
+      <p className="text-sm leading-7 text-muted-foreground">{body}</p>
+    </div>
+  );
+}
+
+function FitCard({
+  title,
+  items,
+  dotClass,
+}: {
+  title: string;
+  items: string[];
+  dotClass: string;
+}) {
+  return (
+    <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
+      <h3 className="text-sm font-semibold text-foreground">{title}</h3>
+      <ul className="space-y-2.5">
+        {items.map((item) => (
+          <li key={item} className="flex gap-2.5 text-sm leading-6 text-muted-foreground">
+            <span className={`mt-2 size-1.5 shrink-0 rounded-full ${dotClass}`} />
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function LinkListCard({
+  title,
+  items,
+}: {
+  title: string;
+  items: LinkItem[];
+}) {
+  return (
+    <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
+      <h3 className="text-sm font-semibold text-foreground">{title}</h3>
+      <div className="flex flex-col gap-2">
+        {items.map((item) => (
+          <Link
+            key={`${item.label}:${item.url}`}
+            href={item.url}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-between gap-3 rounded-lg border border-border bg-muted/40 px-4 py-3 text-sm text-foreground transition-colors hover:border-accent/40 hover:text-accent"
+          >
+            <span>{item.label}</span>
+            <ArrowUpRight className="size-3.5 shrink-0 text-muted-foreground" />
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
