@@ -84,7 +84,7 @@ async function SearchContent({
               id="q"
               name="q"
               defaultValue={filters.q}
-              placeholder="Kazan, MBBS Russia, NMC university, hostel..."
+              placeholder="Kazan, MBBS Russia, NMC university, fees..."
             />
           </div>
           <div className="space-y-2">
@@ -190,7 +190,7 @@ function SearchContentFallback({
             <Input
               id="q"
               name="q"
-              placeholder="Kazan, MBBS Russia, NMC university, hostel..."
+              placeholder="Kazan, MBBS Russia, NMC university, fees..."
             />
           </div>
           <div className="space-y-2">
@@ -250,10 +250,6 @@ function SearchContentFallback({
           <label className="flex items-center gap-2 rounded-2xl border border-border bg-muted/40 px-4 py-3 text-sm font-medium text-foreground">
             <input type="checkbox" name="usmle" value="true" />
             USMLE eligible
-          </label>
-          <label className="flex items-center gap-2 rounded-2xl border border-border bg-muted/40 px-4 py-3 text-sm font-medium text-foreground">
-            <input type="checkbox" name="hostel" value="true" />
-            Hostel available
           </label>
           <Button type="submit" className="ml-auto">
             Search catalog

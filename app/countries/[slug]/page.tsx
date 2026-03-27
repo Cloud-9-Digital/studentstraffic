@@ -61,7 +61,7 @@ export async function generateMetadata({
       `study in ${country.name}`,
       primaryCourse ? `${primaryCourse} in ${country.name}` : undefined,
       `${country.name} universities`,
-      `${country.name} hostel`,
+      `${country.name} student support`,
       country.region,
     ].filter(Boolean) as string[],
   });
@@ -142,7 +142,7 @@ export default async function CountryPage({
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Country pages synthesize the current catalog, official university references, and destination context for Indian students."
+          sourceSummary="Country pages are manually reviewed to help students compare destination fit, fees, and admissions context more clearly."
           referenceCount={sourceCount}
         />
 

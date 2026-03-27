@@ -124,7 +124,7 @@ export default async function BudgetGuidePage({
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Budget guides are generated from current catalog fee data that traces back to linked university and recognition references."
+          sourceSummary="Budget guides are manually reviewed from the current catalog to help students compare fee bands and shortlist fit."
         />
 
         <div className="grid gap-8 lg:grid-cols-[1fr_360px]">

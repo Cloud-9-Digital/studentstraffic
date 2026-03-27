@@ -14,6 +14,7 @@ import {
   Languages,
   MapPin,
   MapPinned,
+  PencilLine,
   ShieldCheck,
   Stethoscope,
   UtensilsCrossed,
@@ -42,7 +43,8 @@ import {
 } from "@/components/ui/table";
 import {
   catalogReviewedAt,
-  countUniqueSources,
+  contentAuthorName,
+  formatContentDate,
 } from "@/lib/content-governance";
 import {
   getComparisonGuidesForUniversity,
@@ -56,7 +58,6 @@ import {
 } from "@/lib/data/catalog";
 import type {
   FinderProgram,
-  LinkItem,
   UniversityGalleryImage,
 } from "@/lib/data/types";
 import { buildIndexableMetadata } from "@/lib/metadata";
@@ -102,11 +103,11 @@ export async function generateMetadata({
   const primaryProgram =
     programs.find((p) => p.offering.featured) ?? programs[0];
   const title = primaryProgram
-    ? `${university.name} | ${primaryProgram.course.shortName} Fees, Hostel & Admissions`
+    ? `${university.name} | ${primaryProgram.course.shortName} Fees, Admissions & Course Details`
     : `${university.name} | University Details`;
   const description =
     primaryProgram && country
-      ? `${university.summary} Compare ${primaryProgram.course.shortName} annual tuition, hostel, medium of instruction, intake, and student support in ${university.city}, ${country.name}.`
+      ? `${university.summary} Compare ${primaryProgram.course.shortName} annual tuition, medium of instruction, intake, and student support in ${university.city}, ${country.name}.`
       : university.summary;
 
   return buildIndexableMetadata({
@@ -152,10 +153,6 @@ export default async function UniversityDetailPage({
   const galleryImages = getUniversityGalleryImages(university);
   const coverImage = getUniversityCoverImage(university);
   const additionalGalleryImages = galleryImages.slice(1);
-  const referenceCount = countUniqueSources(
-    university.recognitionLinks,
-    university.references
-  );
 
   const path = `/universities/${university.slug}`;
   const primaryCourseStructuredData = primaryProgram
@@ -222,25 +219,6 @@ export default async function UniversityDetailPage({
                 <span className="text-white/70">{university.name}</span>
               </nav>
 
-              <div className="flex flex-wrap gap-2">
-                <span className="inline-flex items-center gap-1.5 rounded-md border border-white/15 bg-white/10 px-2.5 py-1 text-xs font-medium text-white/90 backdrop-blur-sm">
-                  <MapPin className="size-3" />
-                  {country.name}
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-md border border-white/15 bg-white/10 px-2.5 py-1 text-xs font-medium text-white/90 backdrop-blur-sm">
-                  <Building2 className="size-3" />
-                  {university.type}
-                </span>
-                {university.recognitionBadges.map((badge) => (
-                  <span
-                    key={badge}
-                    className="inline-flex items-center rounded-md border border-white/12 bg-white/8 px-2.5 py-1 text-xs font-medium text-white/80 backdrop-blur-sm"
-                  >
-                    {badge}
-                  </span>
-                ))}
-              </div>
-
               <div className="space-y-3">
                 <h1 className="font-display text-4xl font-semibold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
                   {university.name}
@@ -291,17 +269,26 @@ export default async function UniversityDetailPage({
                   </Link>
                 </Button>
               </div>
+
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
+                <div className="flex items-center gap-1.5 text-xs text-white/45">
+                  <PencilLine className="size-3 shrink-0" />
+                  <span>By <span className="font-medium text-white/65">{contentAuthorName}</span></span>
+                </div>
+                <div className="flex items-center gap-1.5 text-xs text-white/45">
+                  <CalendarDays className="size-3 shrink-0" />
+                  <span>Updated <span className="font-medium text-white/65">{formatContentDate(catalogReviewedAt)}</span></span>
+                </div>
+              </div>
             </div>
 
-            {coverImage && (
-              <div className="min-w-0 lg:justify-self-end">
-                <UniversityHeroMedia
-                  coverImage={coverImage}
-                  universityName={university.name}
-                  logoUrl={university.logoUrl}
-                />
-              </div>
-            )}
+            <div className="min-w-0 lg:justify-self-end">
+              <UniversityHeroMedia
+                coverImage={coverImage}
+                universityName={university.name}
+                logoUrl={university.logoUrl}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -309,12 +296,6 @@ export default async function UniversityDetailPage({
       {/* ── Body ──────────────────────────────────────────────────────────── */}
       <section className="py-10 md:py-14">
         <div className="container-shell">
-          <ContentTrustPanel
-            lastReviewed={catalogReviewedAt}
-            sourceSummary="University pages use official websites, linked recognition records, and Students Traffic editorial review for shortlist context."
-            referenceCount={referenceCount}
-            className="mb-10"
-          />
           <div className="grid gap-10 lg:grid-cols-[1fr_380px] lg:items-start">
 
             {/* ── Main column ─────────────────────────────────────────────── */}
@@ -492,7 +473,7 @@ export default async function UniversityDetailPage({
 
               {/* Clinical & Student Life */}
               <div className="space-y-6 py-10">
-                <SectionLabel>Clinical &amp; student life</SectionLabel>
+                <SectionLabel>Clinical &amp; student experience</SectionLabel>
 
                 {/* Clinical exposure */}
                 <div className="space-y-4">
@@ -515,17 +496,17 @@ export default async function UniversityDetailPage({
                   )}
                 </div>
 
-                {/* Hostel / Food / Safety */}
+                {/* Campus / Safety / Support */}
                 <div className="grid gap-4 sm:grid-cols-3">
                   <InfoCard
                     icon={<BedDouble className="size-4 text-accent" />}
-                    title="Hostel"
-                    body={university.hostelOverview}
+                    title="Campus environment"
+                    body={university.campusLifestyle}
                   />
                   <InfoCard
                     icon={<UtensilsCrossed className="size-4 text-accent" />}
-                    title="Food &amp; settling in"
-                    body={university.indianFoodSupport}
+                    title="Student support"
+                    body={university.studentSupport}
                   />
                   <InfoCard
                     icon={<ShieldCheck className="size-4 text-accent" />}
@@ -557,18 +538,22 @@ export default async function UniversityDetailPage({
                 </div>
               </div>
 
-              {/* Recognition & Sources */}
+              {/* Recognition */}
               <div className="space-y-6 py-10">
-                <SectionLabel>Recognition &amp; sources</SectionLabel>
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <LinkListCard
-                    title="Recognition links"
-                    items={university.recognitionLinks}
-                  />
-                  <LinkListCard
-                    title="References"
-                    items={university.references}
-                  />
+                <SectionLabel>Recognition</SectionLabel>
+                <div className="rounded-2xl border border-border bg-card p-5">
+                  <div className="flex flex-wrap gap-2">
+                    {university.recognitionBadges.map((badge) => (
+                      <Badge key={badge} variant="outline" className="rounded-full px-3 py-1">
+                        {badge}
+                      </Badge>
+                    ))}
+                  </div>
+                  <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                    Recognition should always be cross-checked against the current admissions cycle,
+                    especially when students are comparing language pathway, licensing fit, and
+                    long-term clinical planning.
+                  </p>
                 </div>
               </div>
 
@@ -696,23 +681,46 @@ function UniversityHeroMedia({
   universityName,
   logoUrl,
 }: {
-  coverImage: UniversityGalleryImage;
+  coverImage: UniversityGalleryImage | null;
   universityName: string;
   logoUrl?: string;
 }) {
+  const initials = getUniversityInitials(universityName);
+
   return (
     <figure className="group relative mx-auto w-full max-w-[580px] overflow-hidden rounded-[2rem] border border-white/12 bg-card shadow-[0_30px_100px_-50px_rgba(7,10,19,0.9)]">
       <div className="relative h-[320px] overflow-hidden md:h-[420px] lg:h-[560px]">
-        <Image
-          src={coverImage.url}
-          alt={coverImage.alt}
-          width={1160}
-          height={1450}
-          sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 38vw, 580px"
-          loading="eager"
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.18),transparent_42%,rgba(7,10,19,0.08))]" />
+        {coverImage ? (
+          <>
+            <Image
+              src={coverImage.url}
+              alt={coverImage.alt}
+              width={1160}
+              height={1450}
+              sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 38vw, 580px"
+              loading="eager"
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.18),transparent_42%,rgba(7,10,19,0.08))]" />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.16),transparent_36%),linear-gradient(135deg,rgba(247,153,74,0.16),rgba(7,10,19,0.06)_38%,rgba(17,73,63,0.32))]">
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.06),rgba(7,10,19,0.28))]" />
+            <div className="absolute inset-x-0 bottom-0 border-t border-white/8 bg-[linear-gradient(180deg,rgba(7,10,19,0),rgba(7,10,19,0.55))] px-6 py-8">
+              <div className="max-w-xs">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/45">
+                  Campus media pending
+                </p>
+                <p className="mt-2 text-sm leading-6 text-white/70">
+                  We have not published an official campus cover for this university yet.
+                </p>
+              </div>
+            </div>
+            <div className="absolute right-6 top-6 flex size-24 items-center justify-center rounded-full border border-white/10 bg-white/6 text-3xl font-semibold tracking-[0.2em] text-white/20 md:size-28 md:text-4xl">
+              {initials}
+            </div>
+          </div>
+        )}
         <div className="absolute bottom-4 left-4 md:bottom-5 md:left-5">
           <UniversityLogoBadge
             name={universityName}
@@ -764,6 +772,26 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
       {children}
+    </div>
+  );
+}
+
+function HeroStat({
+  icon,
+  label,
+  value,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+}) {
+  return (
+    <div className="flex flex-col gap-1.5 rounded-xl border border-white/12 bg-white/8 px-3 py-3 backdrop-blur-sm">
+      <div className="flex items-center gap-1.5">
+        {icon}
+        <p className="text-[0.65rem] font-medium uppercase tracking-wider text-white/50">{label}</p>
+      </div>
+      <p className="text-sm font-semibold leading-snug text-white/90">{value}</p>
     </div>
   );
 }
@@ -828,34 +856,6 @@ function FitCard({
           </li>
         ))}
       </ul>
-    </div>
-  );
-}
-
-function LinkListCard({
-  title,
-  items,
-}: {
-  title: string;
-  items: LinkItem[];
-}) {
-  return (
-    <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
-      <h3 className="text-sm font-semibold text-foreground">{title}</h3>
-      <div className="flex flex-col gap-2">
-        {items.map((item) => (
-          <Link
-            key={`${item.label}:${item.url}`}
-            href={item.url}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center justify-between gap-3 rounded-lg border border-border bg-muted/40 px-4 py-3 text-sm text-foreground transition-colors hover:border-accent/40 hover:text-accent"
-          >
-            <span>{item.label}</span>
-            <ArrowUpRight className="size-3.5 shrink-0 text-muted-foreground" />
-          </Link>
-        ))}
-      </div>
     </div>
   );
 }

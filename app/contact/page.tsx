@@ -53,7 +53,7 @@ export default function ContactPage() {
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Direct contact channels for admissions support and editorial questions."
+          sourceSummary="Direct contact channels for admissions support, research feedback, and editorial questions."
         />
 
         <div className="grid gap-6 md:grid-cols-3">

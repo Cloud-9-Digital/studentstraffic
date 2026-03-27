@@ -127,7 +127,7 @@ export default async function CoursePage({
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Course hubs aggregate the live program catalog, linked university references, and editorial shortlist context."
+          sourceSummary="Course hubs are manually reviewed to help students compare program fit, fee range, and admissions context more clearly."
           referenceCount={sourceCount}
         />
 

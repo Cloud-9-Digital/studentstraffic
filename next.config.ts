@@ -13,10 +13,6 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "flagcdn.com",
       },
-      {
-        protocol: "https",
-        hostname: "picsum.photos",
-      },
       ...mediaHostnames.map((hostname) => ({
         protocol: "https" as const,
         hostname,

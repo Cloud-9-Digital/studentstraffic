@@ -1,90 +1,77 @@
-import Link from "next/link";
-import { CalendarDays, FileCheck2, Files, ShieldCheck } from "lucide-react";
+import { CalendarDays, PencilLine } from "lucide-react";
 
-import {
-  editorialDeskName,
-  formatContentDate,
-} from "@/lib/content-governance";
+import { contentAuthorName, formatContentDate } from "@/lib/content-governance";
 import { cn } from "@/lib/utils";
 
 export function ContentTrustPanel({
   lastReviewed,
-  sourceSummary,
-  referenceCount,
   className,
+  inverse = false,
 }: {
   lastReviewed: string;
-  sourceSummary: string;
+  sourceSummary?: string;
   referenceCount?: number;
   className?: string;
+  inverse?: boolean;
 }) {
   return (
-    <div className={cn("grid gap-3 md:grid-cols-2 xl:grid-cols-4", className)}>
-      <TrustCard
-        icon={<CalendarDays className="size-4 text-accent" />}
-        label="Last reviewed"
+    <div className={cn("flex flex-wrap items-center gap-x-5 gap-y-2", className)}>
+      <MetaItem
+        icon={
+          <CalendarDays
+            className={cn("size-4", inverse ? "text-white/45" : "text-accent")}
+          />
+        }
+        label="Updated"
         value={formatContentDate(lastReviewed)}
+        inverse={inverse}
       />
-      <TrustCard
-        icon={<ShieldCheck className="size-4 text-accent" />}
-        label="Reviewed by"
-        value={editorialDeskName}
-      />
-      <TrustCard
-        icon={<Files className="size-4 text-accent" />}
-        label="Source basis"
-        value={
-          referenceCount
-            ? `${referenceCount} linked source${referenceCount === 1 ? "" : "s"}`
-            : sourceSummary
+      <MetaItem
+        icon={
+          <PencilLine
+            className={cn("size-4", inverse ? "text-white/45" : "text-accent")}
+          />
         }
-        description={sourceSummary}
-      />
-      <TrustCard
-        icon={<FileCheck2 className="size-4 text-accent" />}
-        label="Standards"
-        value="Editorial policy & methodology"
-        description={
-          <>
-            <Link href="/editorial-policy" className="font-medium text-primary hover:underline">
-              Editorial policy
-            </Link>
-            {" · "}
-            <Link href="/methodology" className="font-medium text-primary hover:underline">
-              Methodology
-            </Link>
-          </>
-        }
+        label="Author"
+        value={contentAuthorName}
+        inverse={inverse}
       />
     </div>
   );
 }
 
-function TrustCard({
+function MetaItem({
   icon,
   label,
   value,
-  description,
+  inverse,
 }: {
   icon: React.ReactNode;
   label: string;
   value: React.ReactNode;
-  description?: React.ReactNode;
+  inverse?: boolean;
 }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-4">
-      <div className="flex items-center gap-2">
-        {icon}
-        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+    <div className="flex items-center gap-2.5">
+      {icon}
+      <div className="flex flex-wrap items-center gap-2">
+        <p
+          className={cn(
+            "text-[0.65rem] font-semibold uppercase tracking-[0.14em]",
+            inverse ? "text-white/50" : "text-muted-foreground"
+          )}
+        >
           {label}
         </p>
+        <p
+          className={cn(
+            "text-sm font-medium",
+            inverse ? "text-white/88" : "text-foreground"
+          )}
+        >
+          {value}
+        </p>
       </div>
-      <p className="mt-3 text-sm font-semibold text-foreground">{value}</p>
-      {description ? (
-        <div className="mt-2 text-sm leading-6 text-muted-foreground">
-          {description}
-        </div>
-      ) : null}
     </div>
   );
 }

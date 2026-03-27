@@ -31,6 +31,6 @@ export default async function Image({
     title: `${course.shortName} Universities Across ${uniqueCountries.size || 1} Countries`,
     description: course.summary,
     accentLabel: `${programs.length} options`,
-    tags: ["Fees", "Eligibility", "Hostel", "Support"],
+    tags: ["Fees", "Eligibility", "Clinical Fit", "Support"],
   });
 }

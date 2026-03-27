@@ -96,7 +96,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Top Universities"
             title="Programs students are applying for."
-            description="Every listing shows verified fees, medium of instruction, hostel availability, and eligibility for NMC and USMLE."
+            description="Every listing shows verified fees, medium of instruction, and eligibility context for NMC and USMLE."
             aside={
               <Button asChild variant="outline">
                 <Link href="/universities">View all</Link>

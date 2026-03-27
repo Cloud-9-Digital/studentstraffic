@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Suspense } from "react";
 
 import { FinderFilterForm } from "@/components/site/finder-filter-form";
@@ -28,7 +29,7 @@ export async function generateMetadata({
   const base: Metadata = {
     title: "University Finder",
     description:
-      "Filter global medical universities by country, fee, intake, hostel, and eligibility.",
+      "Filter global medical universities by country, fee, intake, and eligibility.",
   };
   const raw = await searchParams;
   const pageParam = Array.isArray(raw.page) ? raw.page[0] : raw.page;
@@ -183,12 +184,12 @@ async function CardsSection({
         <p className="mt-1 text-sm text-muted-foreground">
           Try widening the fee range or removing a filter.
         </p>
-        <a
+        <Link
           href="/universities"
           className="mt-4 inline-block text-sm font-medium text-accent underline underline-offset-2 hover:text-accent-strong"
         >
           Clear all filters
-        </a>
+        </Link>
       </CardContent>
     </Card>
   );

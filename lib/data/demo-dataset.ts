@@ -10,6 +10,7 @@ import type {
   UniversityGalleryImage,
   YearlyCostBreakdown,
 } from "@/lib/data/types";
+import { applyUniversityContentOverride } from "@/lib/data/university-content-overrides";
 import { getUniversityGalleryImages } from "@/lib/university-media";
 
 type UniversitySeed = Omit<University, "galleryImages"> & {
@@ -51,7 +52,7 @@ function buildFaq(
     },
     {
       question: `What should students verify before choosing ${universityName} in ${countryName}?`,
-      answer: `Verify the current teaching language, WDOMS listing, India-return licensing fit, hostel availability, total six-year cost, and the real level of student support in the city before paying any admission amount.`,
+      answer: `Verify the current teaching language, WDOMS listing, India-return licensing fit, total six-year cost, and the real level of student support in the city before paying any admission amount.`,
     },
   ];
 }
@@ -156,11 +157,11 @@ export const courses: Course[] = [
 function withUniversityMediaDefaults(university: UniversitySeed): University {
   const galleryImages = getUniversityGalleryImages(university);
 
-  return {
+  return applyUniversityContentOverride({
     ...university,
     coverImageUrl: university.coverImageUrl ?? galleryImages[0]?.url,
     galleryImages,
-  };
+  });
 }
 
 const universitySeeds: UniversitySeed[] = [
@@ -171,7 +172,6 @@ const universitySeeds: UniversitySeed[] = [
     city: "Kazan",
     type: "Public",
     establishedYear: 1814,
-    coverImageUrl: "https://picsum.photos/seed/kazan/800/400",
     summary:
       "A long-standing public medical university known for established MBBS delivery and strong international student recognition.",
     featured: true,
@@ -232,7 +232,6 @@ const universitySeeds: UniversitySeed[] = [
     name: "Altai State Medical University",
     city: "Barnaul",
     type: "Public",
-    coverImageUrl: "https://picsum.photos/seed/altai/800/400",
     establishedYear: 1954,
     summary:
       "A cost-aware Russian option for students evaluating public university value and consistent hostel-backed MBBS intake.",
@@ -417,7 +416,6 @@ const universitySeeds: UniversitySeed[] = [
     countrySlug: "georgia",
     name: "Georgian National University SEU",
     city: "Tbilisi",
-    coverImageUrl: "https://picsum.photos/seed/tbilisi/800/400",
     type: "Private",
     establishedYear: 2001,
     summary:

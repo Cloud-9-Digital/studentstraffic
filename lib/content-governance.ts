@@ -1,22 +1,21 @@
 import type { LinkItem } from "@/lib/data/types";
-import { siteConfig } from "@/lib/constants";
 
 export const catalogReviewedAt = "2026-03-27";
 export const governancePublishedAt = "2026-03-27";
-export const editorialDeskName = `${siteConfig.name} Editorial Desk`;
+export const contentAuthorName = "Bharath";
 
 export const editorialPrinciples = [
-  "Prefer original university details, fee context, and admission guidance over generic summaries.",
-  "Use official university pages, recognition directories, and referenced public records wherever possible.",
-  "Revise or remove content when the underlying fee, intake, recognition, or support information changes.",
+  "Prefer university-specific academic context, fee clarity, and admissions guidance over generic brochure summaries.",
+  "Review every shortlist page against current university and public admissions materials before publishing updates.",
+  "Revise or remove content when the underlying fee, intake, recognition, or student-planning context changes.",
   "Separate editorial guidance from promotional claims so students can compare options clearly.",
 ];
 
 export const methodologySteps = [
-  "Collect program, fee, intake, location, and support data from official university materials and primary public references.",
+  "Collect program, fee, intake, location, and student-planning data from current university and public admissions materials.",
   "Normalize data into a consistent catalog so students can compare universities on the same criteria.",
-  "Highlight important student decision factors such as tuition, city, medium, hostel, recognition, and fit.",
-  "Review destination and shortlist pages through the Students Traffic editorial desk before publishing.",
+  "Highlight important student decision factors such as tuition, city, medium, recognition, clinical environment, and fit.",
+  "Review destination and shortlist pages through Bharath before publishing.",
 ];
 
 export const trustPageLinks = [

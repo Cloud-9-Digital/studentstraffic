@@ -5,12 +5,14 @@ import type {
   University,
 } from "@/lib/data/types";
 import { siteConfig } from "@/lib/constants";
+import { contentAuthorName } from "@/lib/content-governance";
 import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
 import {
   getCountryHref,
   getCourseHref,
   getUniversityHref,
 } from "@/lib/routes";
+import { getIndexableUniversityImageUrls } from "@/lib/university-media";
 
 type BreadcrumbItem = {
   name: string;
@@ -190,8 +192,8 @@ export function getWebPageStructuredData(input: WebPageSchemaInput) {
       "@id": getWebsiteStructuredDataId(),
     },
     author: {
-      "@type": "Organization",
-      name: `${siteConfig.name} Editorial Desk`,
+      "@type": "Person",
+      name: contentAuthorName,
       url: absoluteUrl("/about"),
     },
     publisher: {
@@ -312,10 +314,12 @@ export function getUniversityStructuredData(input: {
   sameAs?: string[];
 }) {
   const path = getUniversityHref(input.university.slug);
-  const imageUrls = getAbsoluteMediaUrls([
-    input.university.coverImageUrl,
-    ...input.university.galleryImages.map((image) => image.url),
-  ]);
+  const imageUrls = getAbsoluteMediaUrls(
+    getIndexableUniversityImageUrls([
+      input.university.coverImageUrl,
+      ...input.university.galleryImages.map((image) => image.url),
+    ])
+  );
   const logoUrl = input.university.logoUrl
     ? absoluteUrl(input.university.logoUrl)
     : undefined;

@@ -51,7 +51,7 @@ export default function EditorialPolicyPage() {
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Policy maintained by the Students Traffic editorial desk and applied across catalog, destination, and comparison pages."
+          sourceSummary="Policy maintained by Bharath and applied across catalog, destination, and comparison pages."
         />
 
         <div className="grid gap-4 md:grid-cols-2">
@@ -67,8 +67,8 @@ export default function EditorialPolicyPage() {
         <div className="grid gap-6 lg:grid-cols-3">
           {[
             {
-              title: "Source preference",
-              body: "We prefer official university pages, public recognition references, and linked primary materials over derivative summaries.",
+              title: "Research preference",
+              body: "We prefer current university and public admissions materials over recycled brochure language or derivative summaries.",
             },
             {
               title: "Revision rule",

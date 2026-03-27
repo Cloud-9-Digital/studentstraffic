@@ -7,17 +7,42 @@ type UniversityMediaInput = {
   galleryImages?: UniversityGalleryImage[] | null;
 };
 
-function createPlaceholderGalleryImage(input: {
-  slug: string;
-  name: string;
-  seed: string;
-  caption: string;
-}): UniversityGalleryImage {
-  return {
-    url: `https://picsum.photos/seed/${input.slug}-${input.seed}/1600/900`,
-    alt: `${input.name} ${input.caption.toLowerCase()}`,
-    caption: input.caption,
-  };
+const stockImageHostnames = new Set(["picsum.photos"]);
+
+function getImageHostname(url: string) {
+  try {
+    return new URL(url, "https://studentstraffic.local").hostname;
+  } catch {
+    return null;
+  }
+}
+
+export function isStockUniversityImageUrl(url?: string | null) {
+  if (!url) {
+    return false;
+  }
+
+  const hostname = getImageHostname(url);
+  return hostname ? stockImageHostnames.has(hostname) : false;
+}
+
+export function isRealUniversityImageUrl(url?: string | null) {
+  return Boolean(url) && !isStockUniversityImageUrl(url);
+}
+
+export function getIndexableUniversityImageUrls(
+  urls: Array<string | null | undefined>
+) {
+  const seen = new Set<string>();
+
+  return urls.filter((url): url is string => {
+    if (!url || !isRealUniversityImageUrl(url) || seen.has(url)) {
+      return false;
+    }
+
+    seen.add(url);
+    return true;
+  });
 }
 
 export function getUniversityInitials(name: string): string {
@@ -27,31 +52,6 @@ export function getUniversityInitials(name: string): string {
     .slice(0, 2)
     .map((word) => word[0]?.toUpperCase() ?? "")
     .join("");
-}
-
-export function getDefaultUniversityGalleryImages(
-  input: Pick<UniversityMediaInput, "slug" | "name">
-) {
-  return [
-    createPlaceholderGalleryImage({
-      slug: input.slug,
-      name: input.name,
-      seed: "cover",
-      caption: "Campus overview",
-    }),
-    createPlaceholderGalleryImage({
-      slug: input.slug,
-      name: input.name,
-      seed: "facilities",
-      caption: "Campus facilities",
-    }),
-    createPlaceholderGalleryImage({
-      slug: input.slug,
-      name: input.name,
-      seed: "student-life",
-      caption: "Student life",
-    }),
-  ];
 }
 
 export function getUniversityGalleryImages(input: UniversityMediaInput) {
@@ -66,7 +66,7 @@ export function getUniversityGalleryImages(input: UniversityMediaInput) {
     : null;
 
   const push = (image?: UniversityGalleryImage | null) => {
-    if (!image?.url || seen.has(image.url)) {
+    if (!image?.url || !isRealUniversityImageUrl(image.url) || seen.has(image.url)) {
       return;
     }
 
@@ -77,14 +77,6 @@ export function getUniversityGalleryImages(input: UniversityMediaInput) {
   push(coverGalleryImage);
 
   for (const image of input.galleryImages ?? []) {
-    push(image);
-  }
-
-  for (const image of getDefaultUniversityGalleryImages(input)) {
-    if (galleryImages.length >= 3) {
-      break;
-    }
-
     push(image);
   }
 

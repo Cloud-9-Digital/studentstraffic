@@ -20,6 +20,7 @@ import {
   getLandingPageHref,
   getUniversityHref,
 } from "@/lib/routes";
+import { getIndexableUniversityImageUrls } from "@/lib/university-media";
 
 function uniqueUrls(urls: Array<string | undefined>) {
   return [...new Set(urls.filter(Boolean))];
@@ -107,11 +108,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl(getUniversityHref(university.slug)),
       priority: 0.85,
       changeFrequency: "weekly" as const,
-      images: uniqueUrls([
-        university.logoUrl,
-        university.coverImageUrl,
-        ...university.galleryImages.map((image) => image.url),
-      ]).map((url) => absoluteUrl(url)),
+      images: uniqueUrls(
+        getIndexableUniversityImageUrls([
+          university.logoUrl,
+          university.coverImageUrl,
+          ...university.galleryImages.map((image) => image.url),
+        ])
+      ).map((url) => absoluteUrl(url)),
     })),
     ...landingPages.map((page) => ({
       url: absoluteUrl(getLandingPageHref(page.courseSlug, page.countrySlug)),

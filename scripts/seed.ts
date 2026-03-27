@@ -1,6 +1,7 @@
 import "dotenv/config";
 
-import { Pool, type PoolClient } from "@neondatabase/serverless";
+import { Pool, type PoolClient, neonConfig } from "@neondatabase/serverless";
+import { WebSocket } from "ws";
 
 import { env } from "@/lib/env";
 import {
@@ -11,6 +12,8 @@ import {
   universities,
 } from "@/lib/data/demo-dataset";
 import { buildSearchDocuments } from "@/lib/search/documents";
+
+neonConfig.webSocketConstructor = WebSocket;
 
 async function setupSearchInfrastructure(
   client: PoolClient

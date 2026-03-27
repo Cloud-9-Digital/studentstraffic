@@ -44,7 +44,7 @@ export default async function Image({
     title: university.name,
     description:
       primaryProgram
-        ? `Compare ${primaryProgram.course.shortName} fees, hostel, intake, and student support in ${university.city}, ${country.name}.`
+        ? `Compare ${primaryProgram.course.shortName} fees, intake, and student support in ${university.city}, ${country.name}.`
         : university.summary,
     accentLabel: university.city,
     tags: [

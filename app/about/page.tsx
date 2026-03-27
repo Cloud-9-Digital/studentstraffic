@@ -66,7 +66,7 @@ export default function AboutPage() {
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Students Traffic catalog data, official university sources, and publicly referenced recognition materials."
+          sourceSummary="Students Traffic pages are manually reviewed and refreshed to keep admissions planning content more current and comparison-friendly."
         />
 
         <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">

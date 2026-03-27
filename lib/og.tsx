@@ -175,7 +175,7 @@ export function createSeoImage(input: SeoImageInput) {
                   color: "rgba(247,247,243,0.66)",
                 }}
               >
-                Compare universities, fees, hostels, and guidance.
+                Compare universities, fees, admissions, and guidance.
               </div>
             </div>
           </div>

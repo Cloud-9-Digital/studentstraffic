@@ -127,8 +127,6 @@ export function buildSearchDocuments({
         university.campusLifestyle,
         university.cityProfile,
         university.clinicalExposure,
-        university.hostelOverview,
-        university.indianFoodSupport,
         university.safetyOverview,
         university.studentSupport,
         university.whyChoose,
@@ -177,8 +175,6 @@ export function buildSearchDocuments({
         university?.name,
         university?.summary,
         university?.clinicalExposure,
-        university?.hostelOverview,
-        university?.indianFoodSupport,
         offering.medium,
         offering.licenseExamSupport,
         offering.teachingPhases.map(

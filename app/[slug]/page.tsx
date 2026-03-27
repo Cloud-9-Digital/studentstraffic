@@ -238,7 +238,7 @@ export default async function LandingPageRoute({
         <div className="container-shell space-y-4">
           <ContentTrustPanel
             lastReviewed={catalogReviewedAt}
-            sourceSummary="Landing pages are curated from official university references, recognition links, and Students Traffic editorial notes."
+            sourceSummary="Landing pages are manually reviewed for current admissions context and curated to help students compare destination fit with more clarity."
             referenceCount={sourceCount}
           />
           {recommendedBudgetGuide ? (
@@ -260,7 +260,7 @@ export default async function LandingPageRoute({
                 {course.shortName} universities in {country.name}
               </h2>
               <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
-                Verified programs with confirmed fees, recognition status, and hostel details. All data is sourced from official university and NMC records.
+                Verified programs with confirmed fees, recognition context, and shortlist guidance reviewed for the current admissions cycle.
               </p>
             </div>
             <Button asChild variant="outline" className="shrink-0">
