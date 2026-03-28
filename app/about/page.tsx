@@ -1,18 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight, FileCheck, Globe, MessageCircle, Search, ShieldCheck, Users } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
-import { ContentTrustPanel } from "@/components/site/content-trust-panel";
-import { SectionHeading } from "@/components/site/section-heading";
+import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  catalogReviewedAt,
-  editorialPrinciples,
-  governancePublishedAt,
-  methodologySteps,
-} from "@/lib/content-governance";
-import { siteConfig } from "@/lib/constants";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
@@ -23,9 +15,57 @@ import {
 export const metadata: Metadata = buildIndexableMetadata({
   title: "About Students Traffic",
   description:
-    "Learn how Students Traffic helps Indian students compare universities, validate study-abroad information, and get shortlist support.",
+    "Students Traffic helps Indian students find and apply to the best universities abroad — with transparent comparisons, verified information, and free end-to-end admissions support.",
   path: "/about",
 });
+
+const pillars = [
+  {
+    Icon: Search,
+    label: "Transparent Comparisons",
+    heading: "See the full picture",
+    body: "Honest, side-by-side comparisons of fees, programs, cities, and recognition — so you can choose the best option, not just the one marketed loudest.",
+  },
+  {
+    Icon: ShieldCheck,
+    label: "Verified Information",
+    heading: "Data you can rely on",
+    body: "Every university listing is verified against current admissions materials. No inflated numbers, no outdated fees, no vague promises.",
+  },
+  {
+    Icon: Users,
+    label: "End-to-End Admissions",
+    heading: "With you from start to visa",
+    body: "Our award-winning counsellors handle everything — shortlisting, applications, documents, and visa — across countries and streams, completely free.",
+  },
+] as const;
+
+const journey = [
+  {
+    Icon: Globe,
+    step: "01",
+    heading: "Explore your options",
+    body: "Browse universities across Russia, Vietnam, Georgia, and more. Compare fees, programs, cities, and recognition side by side.",
+  },
+  {
+    Icon: MessageCircle,
+    step: "02",
+    heading: "Talk to a counsellor",
+    body: "Our experts understand your goals, academic background, and budget — and recommend the universities that are genuinely the best fit for you.",
+  },
+  {
+    Icon: FileCheck,
+    step: "03",
+    heading: "We handle your application",
+    body: "From filling forms to preparing documents, we manage the entire admissions process so you can focus on getting ready for the move.",
+  },
+  {
+    Icon: ArrowRight,
+    step: "04",
+    heading: "Arrive confident",
+    body: "Visa done. Seat confirmed. Our support doesn't stop at admission — we stay with you through pre-departure and beyond.",
+  },
+] as const;
 
 export default function AboutPage() {
   const path = "/about";
@@ -38,119 +78,248 @@ export default function AboutPage() {
       path,
       name: "About Students Traffic",
       description:
-        "How Students Traffic approaches university discovery, student guidance, and editorial review.",
-      datePublished: governancePublishedAt,
-      dateModified: catalogReviewedAt,
+        "Students Traffic helps Indian students find and apply to the best universities abroad — with transparent comparisons and free expert admissions support.",
     }),
   ];
 
   return (
-    <section className="section-space">
-      <div className="container-shell space-y-12">
-        <div className="hero-panel px-6 py-8 md:px-10 md:py-10">
-          <div className="max-w-4xl space-y-5">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/55">
-              About Students Traffic
-            </p>
-            <h1 className="font-display text-heading-contrast text-5xl font-semibold tracking-tight md:text-6xl">
-              Verified study-abroad guidance built for real student decisions.
-            </h1>
-            <p className="max-w-3xl text-base leading-8 text-white/80">
-              {siteConfig.name} helps Indian students compare universities,
-              tuition, destinations, and admissions paths without relying on
-              vague brochure copy. We focus on structured comparisons, clear
-              source trails, and free counselling support.
-            </p>
-          </div>
-        </div>
-
-        <ContentTrustPanel
-          lastReviewed={catalogReviewedAt}
-          sourceSummary="Students Traffic pages are manually reviewed and refreshed to keep admissions planning content more current and comparison-friendly."
-        />
-
-        <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="space-y-8">
-            <SectionHeading
-              eyebrow="What We Do"
-              title="How the platform helps students"
-              description="We combine catalog structure, editorial review, and counsellor support so students can move from browsing to shortlist decisions with more confidence."
-            />
-            <div className="grid gap-4 md:grid-cols-2">
-              {[
-                "Compare universities with a consistent view of fees, duration, city, medium, and support.",
-                "Highlight high-intent decision questions such as affordability, recognition, intake timing, and fit.",
-                "Keep lead attribution and page context tied to enquiries so follow-up is relevant.",
-                "Create routes and summaries that search engines, LLMs, and AI agents can understand and cite cleanly.",
-              ].map((item) => (
-                <Card key={item}>
-                  <CardContent className="p-5 text-sm leading-7 text-muted-foreground">
-                    {item}
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <SectionHeading
-              eyebrow="Editorial Standards"
-              title="Principles behind the content"
-              description="These standards guide how we publish university and destination information."
-            />
-            <div className="space-y-4">
-              {editorialPrinciples.map((principle, index) => (
-                <div key={principle} className="flex gap-4 rounded-2xl border border-border bg-card p-5">
-                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-semibold text-white">
-                    {index + 1}
-                  </span>
-                  <p className="text-sm leading-7 text-muted-foreground">{principle}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-6">
-            <Card className="border-border/90">
-              <CardContent className="space-y-4 p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                  Our workflow
-                </p>
-                <div className="space-y-3">
-                  {methodologySteps.map((step) => (
-                    <p key={step} className="text-sm leading-7 text-muted-foreground">
-                      {step}
-                    </p>
-                  ))}
-                </div>
-                <div className="flex flex-wrap gap-3 pt-2">
-                  <Button asChild>
-                    <Link href="/methodology">Read methodology</Link>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <Link href="/editorial-policy">Editorial policy</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border/90">
-              <CardContent className="space-y-3 p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                  Contact
-                </p>
-                <p className="text-sm leading-7 text-muted-foreground">
-                  Need help with a shortlist or want to verify a university
-                  detail? Reach us directly through the contact page or from any
-                  counselling form on the site.
-                </p>
-                <Button asChild variant="outline" className="w-full">
-                  <Link href="/contact">Open contact page</Link>
+    <>
+      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      <section className="section-space border-b border-border">
+        <div className="container-shell">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            {/* Left */}
+            <div className="space-y-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                About Students Traffic
+              </p>
+              <h1 className="font-display text-5xl font-semibold leading-[1.06] tracking-tight text-heading sm:text-6xl lg:text-7xl">
+                Transparent guidance.
+                <br />
+                <span className="italic text-accent">Better decisions.</span>
+              </h1>
+              <p className="max-w-lg text-base leading-8 text-muted-foreground">
+                We help students across India find and apply to the best
+                universities abroad — with honest comparisons, verified
+                information, and end-to-end admissions support from
+                award-winning counsellors who have taken over 2,000 students
+                from enquiry to enrolment.
+              </p>
+              <div className="flex flex-wrap gap-3 pt-1">
+                <CounsellingDialog
+                  triggerContent={
+                    <>
+                      Talk to a counsellor{" "}
+                      <ArrowRight className="size-4" />
+                    </>
+                  }
+                  triggerVariant="accent"
+                />
+                <Button asChild variant="outline">
+                  <Link href="/universities">Explore universities</Link>
                 </Button>
-              </CardContent>
-            </Card>
+              </div>
+
+              {/* Stats — visible on mobile below CTAs, hidden on lg (shown right) */}
+              <div className="grid grid-cols-2 gap-3 pt-2 lg:hidden">
+                {[
+                  { number: "2,000+", label: "Students enrolled" },
+                  { number: "6+", label: "Study destinations" },
+                  { number: "100%", label: "Free service" },
+                  { number: "Award", label: "Winning counsellors" },
+                ].map(({ number, label }) => (
+                  <div key={label} className="rounded-xl border border-border bg-muted/40 px-4 py-3">
+                    <p className="text-2xl font-bold text-heading">{number}</p>
+                    <p className="mt-0.5 text-xs font-medium text-muted-foreground">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right — credential cards, desktop only */}
+            <div className="hidden grid-cols-2 gap-4 lg:grid">
+              {[
+                {
+                  number: "2,000+",
+                  label: "Students enrolled",
+                  note: "Across countries & streams",
+                  highlight: true,
+                },
+                {
+                  number: "6+",
+                  label: "Study destinations",
+                  note: "Russia, Georgia, Vietnam & more",
+                  highlight: false,
+                },
+                {
+                  number: "100%",
+                  label: "Free service",
+                  note: "No fees, no obligations",
+                  highlight: false,
+                },
+                {
+                  number: "Award",
+                  label: "Winning counsellors",
+                  note: "Recognised expert guidance",
+                  highlight: false,
+                },
+              ].map(({ number, label, note, highlight }) => (
+                <div
+                  key={label}
+                  className={
+                    highlight
+                      ? "flex flex-col gap-1.5 rounded-2xl bg-primary p-6"
+                      : "flex flex-col gap-1.5 rounded-2xl border border-border bg-card p-6"
+                  }
+                >
+                  <p className={`text-3xl font-bold ${highlight ? "text-accent" : "text-heading"}`}>
+                    {number}
+                  </p>
+                  <p className={`text-sm font-semibold ${highlight ? "text-white" : "text-foreground"}`}>
+                    {label}
+                  </p>
+                  <p className={`text-xs ${highlight ? "text-white/60" : "text-muted-foreground"}`}>
+                    {note}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* ── Mission ───────────────────────────────────────────────────────── */}
+      <section className="section-space border-b border-border">
+        <div className="container-shell">
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+              Why We Exist
+            </p>
+            <h2 className="mt-6 font-display text-3xl font-semibold leading-[1.18] tracking-tight text-primary sm:text-4xl lg:text-5xl">
+              Students deserve{" "}
+              <span className="italic text-accent">real options</span>
+              {" "}and real support —{" "}
+              not a sales pitch.
+            </h2>
+            <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-muted-foreground">
+              Most consultancies push students toward universities that pay them
+              the highest commissions. We built Students Traffic to do the
+              opposite — give students the clearest, most honest view of their
+              options, then back it with genuine admissions expertise to get
+              them there.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Three pillars ─────────────────────────────────────────────────── */}
+      <section className="section-space border-b border-border">
+        <div className="container-shell">
+          <div className="mb-12">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+              What We Do
+            </p>
+            <h2 className="mt-4 font-display text-4xl font-semibold leading-tight tracking-tight text-heading md:text-5xl">
+              Information and admissions,
+              <br />
+              <span className="italic">under one roof.</span>
+            </h2>
+          </div>
+
+          <div className="grid gap-px overflow-hidden rounded-3xl border border-border bg-border md:grid-cols-3">
+            {pillars.map(({ Icon, label, heading, body }) => (
+              <div key={label} className="flex flex-col gap-6 bg-background p-8 md:p-10">
+                <div className="flex size-11 items-center justify-center rounded-xl bg-primary text-white">
+                  <Icon className="size-5" />
+                </div>
+                <div className="space-y-2.5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                    {label}
+                  </p>
+                  <h3 className="font-display text-xl font-semibold text-heading">
+                    {heading}
+                  </h3>
+                  <p className="text-sm leading-7 text-muted-foreground">{body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Admissions journey ────────────────────────────────────────────── */}
+      <section className="section-space border-b border-border">
+        <div className="container-shell">
+          <div className="section-tint rounded-3xl px-8 py-14 md:px-14 md:py-16">
+            <div className="mx-auto mb-12 max-w-xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                How It Works
+              </p>
+              <h2 className="mt-4 font-display text-4xl font-semibold leading-tight tracking-tight text-heading md:text-5xl">
+                From first search
+                <br />
+                <span className="italic">to enrolled.</span>
+              </h2>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              {journey.map(({ Icon, step, heading, body }) => (
+                <div
+                  key={step}
+                  className="flex gap-5 rounded-2xl border border-border/50 bg-white/70 p-6 backdrop-blur-sm"
+                >
+                  <div className="mt-0.5 shrink-0">
+                    <div className="flex size-10 items-center justify-center rounded-xl bg-primary text-white">
+                      <Icon className="size-4" />
+                    </div>
+                  </div>
+                  <div className="space-y-1.5">
+                    <p className="font-semibold text-foreground">{heading}</p>
+                    <p className="text-sm leading-7 text-muted-foreground">{body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ───────────────────────────────────────────────────────────── */}
+      <section className="section-space">
+        <div className="container-shell">
+          <div className="mx-auto max-w-2xl space-y-6 text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+              Free · No obligations
+            </p>
+            <h2 className="font-display text-4xl font-semibold leading-tight tracking-tight text-heading md:text-5xl">
+              Ready to find your
+              <br />
+              <span className="italic">perfect programme?</span>
+            </h2>
+            <p className="text-base leading-7 text-muted-foreground">
+              Talk to one of our counsellors — they'll understand your goals and
+              walk you through the best options across countries and streams,
+              completely free.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <CounsellingDialog
+                triggerContent={
+                  <>
+                    Get free counselling{" "}
+                    <ArrowRight className="size-4" />
+                  </>
+                }
+                triggerVariant="accent"
+              />
+              <Button asChild variant="outline">
+                <Link href="/universities">Browse universities</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
-    </section>
+    </>
   );
 }

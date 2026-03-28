@@ -351,27 +351,12 @@ Use the database for scalable structured content such as:
 Use code/content files for curated editorial pages such as:
 
 - homepage messaging
-- country-course landing pages
+- country-course landing pages (`lib/data/landing-pages.ts`)
 - special campaign or comparison pages
 
 ### Why this split exists
 
 Thousands of university pages are easier to scale from structured data. High-value editorial pages are easier to keep sharp and differentiated in code.
-
-## Seed Data
-
-The repository currently includes a seed dataset to make development and testing easy.
-
-At the moment, the seeded catalog covers the medical-first launch slice:
-
-- Russia
-- Vietnam
-- Georgia
-- Kyrgyzstan
-- MBBS
-- a small set of sample universities and program offerings
-
-This seed data is only the starting point. It should be replaced or expanded with real researched content, and later broadened across additional countries, courses, and streams.
 
 ## Environment Variables
 
@@ -406,10 +391,10 @@ npm run dev
 ### Database workflow
 
 ```bash
-npm run db:generate
-npm run db:push
-npm run db:seed
-npm run db:studio
+npm run db:generate   # generate Drizzle migration files
+npm run db:push       # push schema changes to the database
+npm run db:seed       # rebuild the search_documents index from live DB data
+npm run db:studio     # open Drizzle Studio
 ```
 
 ### Quality checks
@@ -431,7 +416,7 @@ npm run build
 | `app/search/page.tsx` | Search UI |
 | `lib/db/schema.ts` | Drizzle schema |
 | `lib/data/catalog.ts` | Catalog access and transformations |
-| `lib/data/demo-dataset.ts` | Seed content |
+| `lib/data/landing-pages.ts` | Curated landing page content |
 | `lib/search/documents.ts` | Search document builder |
 | `lib/search/search.ts` | Search ranking/query logic |
 | `scripts/seed.ts` | Database seed script |
@@ -439,19 +424,23 @@ npm run build
 
 ## Current Status
 
-What is implemented right now:
+The site is live in production on Neon PostgreSQL with real university data.
 
-- greenfield Next.js app foundation
-- Neon + Drizzle integration
+What is implemented:
+
+- Next.js 16 App Router foundation
+- Neon + Drizzle integration with production data
 - normalized database schema
-- demo seed flow
-- university finder
+- university finder with filters
 - country/course/university routes
-- medical-first landing pages and sample medical catalog content
+- medical-first curated landing pages (`lib/data/landing-pages.ts`)
 - lead capture and UTM attribution
 - sitemap and robots support
-- Postgres-backed search
+- Postgres-backed search with BM25 + trigram fallback
 - rich university detail template
+- live currency converter (INR ↔ local currency via fawazahmed0 API)
+- recognition badge filtering (NMC, WHO, WFME, FAIMER only)
+- `db:seed` now rebuilds the search index from live DB data — it does not touch the main tables
 
 ## What Is Not Implemented Yet
 
@@ -467,14 +456,11 @@ These are expected future steps, not regressions.
 
 ## Recommended Next Steps
 
-If work continues from here, the highest-value order is:
-
-1. replace seed data with real researched university and program data
-2. create a repeatable import pipeline for universities and offerings
-3. improve the first production medical landing pages with deeper source-backed editorial content
-4. add more destinations and courses only after the first medical template quality is proven
-5. expand the same architecture into other streams and course families
-6. add admin/CMS capabilities only when manual content operations become a bottleneck
+1. create a repeatable import pipeline for adding new universities and programs to the DB
+2. expand landing pages in `lib/data/landing-pages.ts` with deeper source-backed editorial content
+3. add more country destinations after the medical-first template quality is proven
+4. expand into other streams and course families using the same architecture
+5. add admin/CMS capabilities only when manual content operations become a bottleneck
 
 ## Notes for Future Contributors
 

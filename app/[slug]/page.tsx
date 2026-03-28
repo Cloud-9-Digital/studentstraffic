@@ -17,7 +17,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   catalogReviewedAt,
-  countUniqueSources,
 } from "@/lib/content-governance";
 import { navDestinations } from "@/lib/constants";
 import {
@@ -91,12 +90,6 @@ export default async function LandingPageRoute({
   const country = context.country;
   const course = context.course;
   const path = `/${page.slug}`;
-  const sourceCount = countUniqueSources(
-    ...context.featuredPrograms.map((program) => program.university.references),
-    ...context.featuredPrograms.map(
-      (program) => program.university.recognitionLinks
-    )
-  );
 
   const countryCode = navDestinations.find(
     (d) => d.href === `/countries/${country.slug}`
@@ -218,7 +211,7 @@ export default async function LandingPageRoute({
                     Free counselling
                   </p>
                   <h2 className="mb-5 font-display text-xl font-semibold text-heading-contrast">
-                    Get your {course.shortName} shortlist
+                    Start your {course.shortName} admission
                   </h2>
                   <LeadForm
                     sourcePath={path}
@@ -238,8 +231,6 @@ export default async function LandingPageRoute({
         <div className="container-shell space-y-4">
           <ContentTrustPanel
             lastReviewed={catalogReviewedAt}
-            sourceSummary="Landing pages are manually reviewed for current admissions context and curated to help students compare destination fit with more clarity."
-            referenceCount={sourceCount}
           />
           {recommendedBudgetGuide ? (
             <Button asChild variant="outline">
@@ -333,6 +324,238 @@ export default async function LandingPageRoute({
         </div>
       </section>
 
+      {/* ── At a Glance ──────────────────────────────────────────────────── */}
+      {page.atAGlance?.length ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              {page.title} at a glance
+            </h2>
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {page.atAGlance.map((row) => (
+                <div
+                  key={row.label}
+                  className="rounded-2xl border border-border bg-[#faf8f4] px-5 py-4"
+                >
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                    {row.label}
+                  </p>
+                  <p className="mt-1.5 text-sm font-medium text-foreground">{row.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── India Comparison ─────────────────────────────────────────────── */}
+      {page.indiaComparison?.length ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              MBBS in India vs {country.name}
+            </h2>
+            <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+              A side-by-side comparison of key factors to help you evaluate both pathways.
+            </p>
+            <div className="mt-8 overflow-hidden rounded-2xl border border-border">
+              <div className="grid grid-cols-3 border-b border-border bg-[#f7f5f0] px-5 py-3">
+                <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  Criterion
+                </span>
+                <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-center">
+                  India
+                </span>
+                <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-right">
+                  {country.name}
+                </span>
+              </div>
+              {page.indiaComparison.map((row, i) => (
+                <div
+                  key={row.criterion}
+                  className={`grid grid-cols-3 items-start px-5 py-4 ${i > 0 ? "border-t border-border/60" : ""}`}
+                >
+                  <span className="text-sm font-medium text-foreground">{row.criterion}</span>
+                  <span className="text-center text-sm text-muted-foreground">{row.india}</span>
+                  <span className="text-right text-sm text-muted-foreground">{row.abroad}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Eligibility Criteria ─────────────────────────────────────────── */}
+      {page.eligibility ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Eligibility criteria for Indian students
+            </h2>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground">
+              {page.eligibility.intro}
+            </p>
+            <div className="mt-8 space-y-3">
+              {page.eligibility.items.map((item, i) => (
+                <div key={i} className="flex gap-4">
+                  <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-white mt-0.5">
+                    {i + 1}
+                  </span>
+                  <p className="text-sm leading-7 text-muted-foreground">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Admission Process ────────────────────────────────────────────── */}
+      {page.admissionSteps?.length ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Admission process
+            </h2>
+            <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+              A step-by-step overview of how Indian students apply for {page.title}.
+            </p>
+            <div className="mt-8 space-y-3">
+              {page.admissionSteps.map((step, i) => (
+                <div key={i} className="flex gap-4">
+                  <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-white mt-0.5">
+                    {i + 1}
+                  </span>
+                  <p className="text-sm leading-7 text-muted-foreground">{step}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Documents Required ───────────────────────────────────────────── */}
+      {page.documentsRequired ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Documents required
+            </h2>
+            <div className="mt-8 grid gap-8 sm:grid-cols-2">
+              <div>
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-4">
+                  Educational documents
+                </p>
+                <ul className="space-y-3">
+                  {page.documentsRequired.educational.map((doc) => (
+                    <li key={doc} className="flex gap-3">
+                      <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
+                      <span className="text-sm leading-6 text-muted-foreground">{doc}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-4">
+                  Visa documents
+                </p>
+                <ul className="space-y-3">
+                  {page.documentsRequired.visa.map((doc) => (
+                    <li key={doc} className="flex gap-3">
+                      <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
+                      <span className="text-sm leading-6 text-muted-foreground">{doc}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Syllabus Overview ────────────────────────────────────────────── */}
+      {page.syllabusPhases?.length ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Syllabus overview
+            </h2>
+            <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+              How the {page.title} curriculum is structured across the program.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              {page.syllabusPhases.map((phase) => (
+                <div
+                  key={phase.phase}
+                  className="rounded-2xl border border-border bg-[#faf8f4] p-5"
+                >
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                    {phase.years}
+                  </p>
+                  <h3 className="mt-2 font-display text-base font-semibold text-heading">
+                    {phase.phase}
+                  </h3>
+                  <ul className="mt-4 space-y-2">
+                    {phase.highlights.map((item) => (
+                      <li key={item} className="flex gap-2.5">
+                        <CheckCircle2 className="mt-0.5 size-3.5 shrink-0 text-primary" />
+                        <span className="text-xs leading-5 text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Hostel & Accommodation ───────────────────────────────────────── */}
+      {page.hostelInfo ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Hostel &amp; accommodation
+            </h2>
+            <p className="mt-6 max-w-3xl text-sm leading-7 text-muted-foreground">
+              {page.hostelInfo}
+            </p>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Scholarships ─────────────────────────────────────────────────── */}
+      {page.scholarshipInfo ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Scholarships &amp; financial support
+            </h2>
+            <p className="mt-6 max-w-3xl text-sm leading-7 text-muted-foreground">
+              {page.scholarshipInfo}
+            </p>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Career Opportunities ─────────────────────────────────────────── */}
+      {page.careerOpportunities?.length ? (
+        <section className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Career opportunities after {page.title}
+            </h2>
+            <ul className="mt-8 space-y-3">
+              {page.careerOpportunities.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
+                  <span className="text-sm leading-7 text-muted-foreground">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
+
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       {page.faq.length > 0 && (
         <section className="border-b border-border py-14 md:py-20">
@@ -373,11 +596,11 @@ export default async function LandingPageRoute({
                   Not sure which {country.name} university fits your profile?
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-white/70">
-                  Our counsellors compare universities, fees, NMC recognition, and lifestyle factors — and build a personalised shortlist at no cost.
+                  Our counsellors compare universities, fees, NMC recognition, and lifestyle factors — and handle your full admission at no cost.
                 </p>
                 <ul className="mt-6 space-y-2">
                   {[
-                    "Personalised university shortlist",
+                    "Personalised university guidance",
                     "NMC eligibility guidance",
                     "Fee comparison across cities",
                     "Completely free, no obligations",

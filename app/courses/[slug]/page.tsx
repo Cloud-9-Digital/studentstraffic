@@ -11,7 +11,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   catalogReviewedAt,
-  countUniqueSources,
 } from "@/lib/content-governance";
 import {
   getCourseBySlug,
@@ -79,10 +78,6 @@ export default async function CoursePage({
 
   const programs = await getProgramsForCourse(course.slug);
   const budgetGuides = await getBudgetGuidesForCourse(course.slug);
-  const sourceCount = countUniqueSources(
-    ...programs.map((program) => program.university.references),
-    ...programs.map((program) => program.university.recognitionLinks)
-  );
   const path = `/courses/${course.slug}`;
   const courseStructuredData = getCourseStructuredData(course);
   const structuredDataItems = [
@@ -127,8 +122,6 @@ export default async function CoursePage({
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Course hubs are manually reviewed to help students compare program fit, fee range, and admissions context more clearly."
-          referenceCount={sourceCount}
         />
 
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">

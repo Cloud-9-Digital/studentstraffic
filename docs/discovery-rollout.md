@@ -28,13 +28,15 @@ Use this checklist after each production deploy.
 ## Submission helpers
 
 - IndexNow ownership file is published at `/41c071d78fa6ee664777ef8ed5c6b312.txt`.
-- Submit the current URL set with `npm run seo:indexnow` after production deploys or major content updates.
-- Use `npx tsx scripts/submit-indexnow.ts --dry-run` if you want to inspect the exact payload before submission.
+- First-run full submission: `npm run seo:indexnow -- --all`
+- Ongoing changed-only submission: `npm run seo:indexnow`
+- Manual changed URLs: `npm run seo:indexnow -- --url=/mbbs-in-vietnam --url=/universities/can-tho-university-medicine-pharmacy`
+- Inspect the exact payload before submission with `npx tsx scripts/submit-indexnow.ts --dry-run`
 
 ## Content quality
 
 - Replace placeholder imagery with real university logos, covers, and galleries because image sitemaps and structured data are only as strong as the underlying assets.
-- Add or refresh “last updated” dates and primary-source references on high-value landing pages.
+- Add or refresh “last updated” dates, recognition details, and admissions guidance on high-value landing pages.
 - Prioritize pages that answer comparison, budget, eligibility, intake, and recognition intent.
 
 ## Measurement

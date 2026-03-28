@@ -11,7 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import type { SearchDocumentType, SearchResult } from "@/lib/data/types";
-import { formatCurrencyUsd } from "@/lib/utils";
+import { formatCurrencyUsd, hasPublishedUsdAmount } from "@/lib/utils";
 
 function getTypeLabel(documentType: SearchDocumentType) {
   switch (documentType) {
@@ -68,9 +68,9 @@ export function SearchResultCard({ result }: { result: SearchResult }) {
           ))}
         </div>
 
-        {(result.annualTuitionUsd || result.medium) ? (
+        {(hasPublishedUsdAmount(result.annualTuitionUsd) || result.medium) ? (
           <div className="grid gap-3 text-sm text-muted-foreground md:grid-cols-2">
-            {result.annualTuitionUsd ? (
+            {hasPublishedUsdAmount(result.annualTuitionUsd) ? (
               <div className="rounded-xl border border-border bg-muted/60 p-3">
                 <CircleDollarSign className="mb-2 h-4 w-4 text-accent" />
                 <p className="font-semibold text-foreground">

@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+/.indexnow/
 
 # debug
 npm-debug.log*

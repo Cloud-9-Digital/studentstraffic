@@ -51,7 +51,6 @@ export default function EditorialPolicyPage() {
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Policy maintained by Bharath and applied across catalog, destination, and comparison pages."
         />
 
         <div className="grid gap-4 md:grid-cols-2">

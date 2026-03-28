@@ -5,13 +5,18 @@ import { ArrowUpRight, Building2 } from "lucide-react";
 import type { FinderProgram } from "@/lib/data/types";
 import { getUniversityHref } from "@/lib/routes";
 import { getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
-import { cn, formatCurrencyUsd } from "@/lib/utils";
+import {
+  cn,
+  formatUsdAmountOrTbd,
+  hasPublishedUsdAmount,
+} from "@/lib/utils";
 
 export function UniversityCard({ program }: { program: FinderProgram }) {
   const { university, country, course, offering } = program;
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
   const coverImage = getUniversityCoverImage(university);
+  const hasPublishedFee = hasPublishedUsdAmount(offering.annualTuitionUsd);
 
   return (
     <Link
@@ -64,13 +69,13 @@ export function UniversityCard({ program }: { program: FinderProgram }) {
         {/* Logo badge — bottom-left */}
         <div className="absolute bottom-2.5 left-2.5 flex size-10 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-md">
           {university.logoUrl ? (
-            <span className="flex h-full w-full items-center justify-center p-1.5">
+            <span className="relative flex h-full w-full items-center justify-center p-1.5">
               <Image
                 src={university.logoUrl}
                 alt={`${university.name} logo`}
-                width={40}
-                height={40}
-                className="h-full w-full object-contain"
+                fill
+                sizes="40px"
+                className="object-contain p-1.5"
               />
             </span>
           ) : (
@@ -96,9 +101,16 @@ export function UniversityCard({ program }: { program: FinderProgram }) {
         {/* Stats row */}
         <div className="mt-auto grid grid-cols-3 gap-2 border-t border-border pt-3">
           <div className="flex flex-col">
-            <span className="text-[0.65rem] text-muted-foreground">Tuition / yr</span>
-            <span className="text-sm font-bold text-foreground">
-              {formatCurrencyUsd(offering.annualTuitionUsd)}
+            <span className="text-[0.65rem] text-muted-foreground">
+              {hasPublishedFee ? "Tuition / yr" : "Fee"}
+            </span>
+            <span
+              className={cn(
+                "font-bold text-foreground",
+                hasPublishedFee ? "text-sm" : "text-xs leading-5"
+              )}
+            >
+              {formatUsdAmountOrTbd(offering.annualTuitionUsd)}
             </span>
           </div>
           <div className="flex flex-col">

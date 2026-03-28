@@ -9,8 +9,6 @@ export function ContentTrustPanel({
   inverse = false,
 }: {
   lastReviewed: string;
-  sourceSummary?: string;
-  referenceCount?: number;
   className?: string;
   inverse?: boolean;
 }) {

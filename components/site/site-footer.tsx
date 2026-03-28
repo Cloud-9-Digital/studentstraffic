@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail, Phone } from "lucide-react";
 
+import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { listFinderPrograms } from "@/lib/data/catalog";
 import {
   footerPopularRoutes,
@@ -50,7 +51,7 @@ export async function SiteFooter() {
               <span className="text-accent">We&apos;ll help.</span>
             </h2>
             <p className="mt-2 text-sm text-white/60">
-              Our counsellors build a personalised university shortlist for you — at no cost.
+              Our counsellors guide you from first enquiry to enrolment — at no cost.
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-3">
@@ -63,13 +64,10 @@ export async function SiteFooter() {
               <WhatsAppIcon className="size-4" />
               WhatsApp
             </a>
-            <Link
-              href="/universities"
-              className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-strong"
-            >
-              Get Free Counselling
-              <ArrowRight className="size-4" />
-            </Link>
+            <CounsellingDialog
+              triggerContent={<>Get Free Counselling <ArrowRight className="size-4" /></>}
+              triggerVariant="accent"
+            />
           </div>
         </div>
       </div>

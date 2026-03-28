@@ -18,7 +18,7 @@ import { navDestinations } from "@/lib/constants";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Study Destinations",
   description:
-    "Browse country guides for Indian students comparing universities, fees, and admissions routes abroad.",
+    "Browse country guides for Indian students comparing universities, fees, cities, and teaching options abroad.",
   path: "/countries",
 });
 
@@ -46,7 +46,7 @@ export default async function CountriesPage() {
       path,
       name: "Study destinations",
       description:
-        "Country guides covering universities, fees, and admissions context for Indian students.",
+        "Country guides covering universities, fees, cities, and teaching context for Indian students.",
     }),
   ];
 
@@ -55,8 +55,8 @@ export default async function CountriesPage() {
       <div className="container-shell space-y-12">
         <SectionHeading
           eyebrow="Study Destinations"
-          title="Country guides built for shortlist decisions"
-          description="These destination pages combine context, costs, and university routes so students can compare countries before diving into individual universities."
+          title="Country guides built for deeper destination research"
+          description="These destination pages bring together country context, costs, city spread, and university options so students can understand each market before comparing individual campuses."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

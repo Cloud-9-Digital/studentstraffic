@@ -113,7 +113,9 @@ export async function getBudgetGuides() {
 
     for (const budgetUsd of budgetThresholds) {
       const matchingPrograms = coursePrograms.filter(
-        (program) => program.offering.annualTuitionUsd <= budgetUsd
+        (program) =>
+          program.offering.annualTuitionUsd > 0 &&
+          program.offering.annualTuitionUsd <= budgetUsd
       );
 
       if (matchingPrograms.length < 2) {

@@ -4,14 +4,14 @@ import { Pool, type PoolClient, neonConfig } from "@neondatabase/serverless";
 import { WebSocket } from "ws";
 
 import { env } from "@/lib/env";
-import {
-  countries,
-  courses,
-  landingPages,
-  programOfferings,
-  universities,
-} from "@/lib/data/demo-dataset";
+import { landingPages } from "@/lib/data/landing-pages";
 import { buildSearchDocuments } from "@/lib/search/documents";
+import type {
+  Country,
+  Course,
+  ProgramOffering,
+  University,
+} from "@/lib/data/types";
 
 neonConfig.webSocketConstructor = WebSocket;
 
@@ -53,6 +53,97 @@ async function rebuildSearchIndexes(
   `);
 }
 
+async function readCatalogFromDb(client: PoolClient) {
+  const [countryRows, courseRows, universityRows, programRows] =
+    await Promise.all([
+      client.query(`SELECT * FROM countries`),
+      client.query(`SELECT * FROM courses`),
+      client.query(`
+        SELECT u.*, c.slug as country_slug
+        FROM universities u
+        JOIN countries c ON c.id = u.country_id
+      `),
+      client.query(`
+        SELECT po.*, u.slug as university_slug, c.slug as course_slug
+        FROM program_offerings po
+        JOIN universities u ON u.id = po.university_id
+        JOIN courses c ON c.id = po.course_id
+      `),
+    ]);
+
+  const countries: Country[] = countryRows.rows.map((r) => ({
+    slug: r.slug,
+    name: r.name,
+    region: r.region,
+    summary: r.summary,
+    whyStudentsChooseIt: r.why_students_choose_it,
+    climate: r.climate,
+    currencyCode: r.currency_code,
+    metaTitle: r.meta_title,
+    metaDescription: r.meta_description,
+  }));
+
+  const courses: Course[] = courseRows.rows.map((r) => ({
+    slug: r.slug,
+    name: r.name,
+    shortName: r.short_name,
+    durationYears: r.duration_years,
+    summary: r.summary,
+    metaTitle: r.meta_title,
+    metaDescription: r.meta_description,
+  }));
+
+  const universities: University[] = universityRows.rows.map((r) => ({
+    slug: r.slug,
+    countrySlug: r.country_slug,
+    name: r.name,
+    city: r.city,
+    type: r.type,
+    establishedYear: r.established_year,
+    summary: r.summary,
+    featured: r.featured,
+    officialWebsite: r.official_website,
+    logoUrl: r.logo_url ?? undefined,
+    coverImageUrl: r.cover_image_url ?? undefined,
+    galleryImages: r.gallery_images ?? [],
+    campusLifestyle: r.campus_lifestyle,
+    cityProfile: r.city_profile,
+    clinicalExposure: r.clinical_exposure,
+    hostelOverview: r.hostel_overview,
+    indianFoodSupport: r.indian_food_support,
+    safetyOverview: r.safety_overview,
+    studentSupport: r.student_support,
+    whyChoose: r.why_choose ?? [],
+    thingsToConsider: r.things_to_consider ?? [],
+    bestFitFor: r.best_fit_for ?? [],
+    teachingHospitals: r.teaching_hospitals,
+    recognitionBadges: r.recognition_badges ?? [],
+    recognitionLinks: r.recognition_links ?? [],
+    faq: r.faq ?? [],
+    similarUniversitySlugs: r.similar_university_slugs ?? [],
+  }));
+
+  const programOfferings: ProgramOffering[] = programRows.rows.map((r) => ({
+    slug: r.slug,
+    universitySlug: r.university_slug,
+    courseSlug: r.course_slug,
+    title: r.title,
+    durationYears: r.duration_years,
+    annualTuitionUsd: r.annual_tuition_usd,
+    totalTuitionUsd: r.total_tuition_usd,
+    livingUsd: r.living_usd,
+    officialProgramUrl: r.official_program_url,
+    medium: r.medium,
+    teachingPhases: r.teaching_phases ?? [],
+    yearlyCostBreakdown: r.yearly_cost_breakdown ?? [],
+    licenseExamSupport: r.license_exam_support,
+    intakeMonths: r.intake_months ?? [],
+    featured: r.featured,
+  }));
+
+  return { countries, courses, universities, programOfferings };
+}
+
 async function seed() {
   if (!env.databaseUrl) {
     throw new Error(
@@ -62,222 +153,23 @@ async function seed() {
 
   const pool = new Pool({ connectionString: env.databaseUrl });
   const client = await pool.connect();
-  const searchDocuments = buildSearchDocuments({
-    countries,
-    courses,
-    universities,
-    programOfferings,
-    landingPages,
-  });
 
   try {
     await setupSearchInfrastructure(client);
 
+    const { countries, courses, universities, programOfferings } =
+      await readCatalogFromDb(client);
+
+    const searchDocuments = buildSearchDocuments({
+      countries,
+      courses,
+      universities,
+      programOfferings,
+      landingPages,
+    });
+
     await client.query("BEGIN");
     await client.query("DELETE FROM search_documents");
-    await client.query("DELETE FROM program_offerings");
-    await client.query("DELETE FROM universities");
-    await client.query("DELETE FROM courses");
-    await client.query("DELETE FROM countries");
-
-    for (const country of countries) {
-      await client.query(
-        `INSERT INTO countries (
-          slug,
-          name,
-          region,
-          summary,
-          why_students_choose_it,
-          climate,
-          currency_code,
-          meta_title,
-          meta_description
-        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`,
-        [
-          country.slug,
-          country.name,
-          country.region,
-          country.summary,
-          country.whyStudentsChooseIt,
-          country.climate,
-          country.currencyCode,
-          country.metaTitle,
-          country.metaDescription,
-        ]
-      );
-    }
-
-    for (const course of courses) {
-      await client.query(
-        `INSERT INTO courses (
-          slug,
-          name,
-          short_name,
-          duration_years,
-          summary,
-          meta_title,
-          meta_description
-        ) VALUES ($1, $2, $3, $4, $5, $6, $7)`,
-        [
-          course.slug,
-          course.name,
-          course.shortName,
-          course.durationYears,
-          course.summary,
-          course.metaTitle,
-          course.metaDescription,
-        ]
-      );
-    }
-
-    for (const university of universities) {
-      await client.query(
-        `INSERT INTO universities (
-          country_id,
-          slug,
-          name,
-          city,
-          type,
-          established_year,
-          summary,
-          featured,
-          logo_url,
-          cover_image_url,
-          gallery_images,
-          official_website,
-          campus_lifestyle,
-          city_profile,
-          clinical_exposure,
-          hostel_overview,
-          indian_food_support,
-          safety_overview,
-          student_support,
-          why_choose,
-          things_to_consider,
-          best_fit_for,
-          teaching_hospitals,
-          recognition_badges,
-          recognition_links,
-          faq,
-          "references",
-          similar_university_slugs
-        ) VALUES (
-          (SELECT id FROM countries WHERE slug = $1),
-          $2,
-          $3,
-          $4,
-          $5,
-          $6,
-          $7,
-          $8,
-          $9,
-          $10,
-          $11::jsonb,
-          $12,
-          $13,
-          $14,
-          $15,
-          $16,
-          $17,
-          $18,
-          $19,
-          $20::jsonb,
-          $21::jsonb,
-          $22::jsonb,
-          $23,
-          $24,
-          $25::jsonb,
-          $26::jsonb,
-          $27::jsonb,
-          $28
-        )`,
-        [
-          university.countrySlug,
-          university.slug,
-          university.name,
-          university.city,
-          university.type,
-          university.establishedYear,
-          university.summary,
-          university.featured,
-          university.logoUrl ?? null,
-          university.coverImageUrl ?? null,
-          JSON.stringify(university.galleryImages),
-          university.officialWebsite,
-          university.campusLifestyle,
-          university.cityProfile,
-          university.clinicalExposure,
-          university.hostelOverview,
-          university.indianFoodSupport,
-          university.safetyOverview,
-          university.studentSupport,
-          JSON.stringify(university.whyChoose),
-          JSON.stringify(university.thingsToConsider),
-          JSON.stringify(university.bestFitFor),
-          university.teachingHospitals,
-          university.recognitionBadges,
-          JSON.stringify(university.recognitionLinks),
-          JSON.stringify(university.faq),
-          JSON.stringify(university.references),
-          university.similarUniversitySlugs,
-        ]
-      );
-    }
-
-    for (const offering of programOfferings) {
-      await client.query(
-        `INSERT INTO program_offerings (
-          university_id,
-          course_id,
-          slug,
-          title,
-          duration_years,
-          annual_tuition_usd,
-          total_tuition_usd,
-          living_usd,
-          official_program_url,
-          medium,
-          teaching_phases,
-          yearly_cost_breakdown,
-          license_exam_support,
-          intake_months,
-          featured
-        ) VALUES (
-          (SELECT id FROM universities WHERE slug = $1),
-          (SELECT id FROM courses WHERE slug = $2),
-          $3,
-          $4,
-          $5,
-          $6,
-          $7,
-          $8,
-          $9,
-          $10,
-          $11::jsonb,
-          $12::jsonb,
-          $13::jsonb,
-          $14,
-          $15
-        )`,
-        [
-          offering.universitySlug,
-          offering.courseSlug,
-          offering.slug,
-          offering.title,
-          offering.durationYears,
-          offering.annualTuitionUsd,
-          offering.totalTuitionUsd,
-          offering.livingUsd,
-          offering.officialProgramUrl,
-          offering.medium,
-          JSON.stringify(offering.teachingPhases),
-          JSON.stringify(offering.yearlyCostBreakdown),
-          JSON.stringify(offering.licenseExamSupport),
-          offering.intakeMonths,
-          offering.featured,
-        ]
-      );
-    }
 
     for (const document of searchDocuments) {
       await client.query(
@@ -339,7 +231,7 @@ async function seed() {
 
     await client.query("COMMIT");
     await rebuildSearchIndexes(client);
-    console.log("Seed complete.");
+    console.log(`Seed complete. Indexed ${searchDocuments.length} documents.`);
   } catch (error) {
     await client.query("ROLLBACK");
     throw error;

@@ -1,5 +1,3 @@
-import type { LinkItem } from "@/lib/data/types";
-
 export const catalogReviewedAt = "2026-03-27";
 export const governancePublishedAt = "2026-03-27";
 export const contentAuthorName = "Bharath";
@@ -15,7 +13,7 @@ export const methodologySteps = [
   "Collect program, fee, intake, location, and student-planning data from current university and public admissions materials.",
   "Normalize data into a consistent catalog so students can compare universities on the same criteria.",
   "Highlight important student decision factors such as tuition, city, medium, recognition, clinical environment, and fit.",
-  "Review destination and shortlist pages through Bharath before publishing.",
+  "Review destination and shortlist pages through our editorial team before publishing.",
 ];
 
 export const trustPageLinks = [
@@ -32,15 +30,4 @@ export function formatContentDate(date: string) {
     year: "numeric",
     timeZone: "UTC",
   }).format(new Date(`${date}T00:00:00.000Z`));
-}
-
-export function countUniqueSources(
-  ...sourceLists: Array<readonly LinkItem[] | LinkItem[] | undefined>
-) {
-  return new Set(
-    sourceLists
-      .flatMap((list) => list ?? [])
-      .map((item) => item.url)
-      .filter(Boolean)
-  ).size;
 }

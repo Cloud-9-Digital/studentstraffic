@@ -12,6 +12,7 @@ import {
   getLandingPageHref,
   getUniversityHref,
 } from "@/lib/routes";
+import { getSortableUsdValue, hasPublishedUsdAmount } from "@/lib/utils";
 
 type SearchCatalogInput = {
   countries: Country[];
@@ -104,7 +105,9 @@ export function buildSearchDocuments({
     const country = countryBySlug.get(university.countrySlug);
     const universityPrograms =
       offeringsByUniversitySlug.get(university.slug)?.sort(
-        (a, b) => a.annualTuitionUsd - b.annualTuitionUsd
+        (a, b) =>
+          getSortableUsdValue(a.annualTuitionUsd) -
+          getSortableUsdValue(b.annualTuitionUsd)
       ) ?? [];
     const courseSlugs = [...new Set(universityPrograms.map((program) => program.courseSlug))];
     const courseNames = courseSlugs
@@ -145,7 +148,9 @@ export function buildSearchDocuments({
       universitySlug: university.slug,
       city: university.city,
       featured: university.featured,
-      annualTuitionUsd: cheapestProgram?.annualTuitionUsd,
+      annualTuitionUsd: hasPublishedUsdAmount(cheapestProgram?.annualTuitionUsd)
+        ? cheapestProgram?.annualTuitionUsd
+        : undefined,
       medium: cheapestProgram?.medium,
       intakeMonths: [
         ...new Set(universityPrograms.flatMap((program) => program.intakeMonths)),
@@ -190,7 +195,9 @@ export function buildSearchDocuments({
       universitySlug: offering.universitySlug,
       city: university?.city,
       featured: offering.featured,
-      annualTuitionUsd: offering.annualTuitionUsd,
+      annualTuitionUsd: hasPublishedUsdAmount(offering.annualTuitionUsd)
+        ? offering.annualTuitionUsd
+        : undefined,
       medium: offering.medium,
       intakeMonths: offering.intakeMonths,
     };

@@ -8,6 +8,7 @@ export type Country = {
   currencyCode: string;
   metaTitle: string;
   metaDescription: string;
+  updatedAt?: string;
 };
 
 export type Course = {
@@ -18,6 +19,7 @@ export type Course = {
   summary: string;
   metaTitle: string;
   metaDescription: string;
+  updatedAt?: string;
 };
 
 export type LinkItem = {
@@ -78,8 +80,8 @@ export type University = {
   recognitionBadges: string[];
   recognitionLinks: LinkItem[];
   faq: Faq[];
-  references: LinkItem[];
   similarUniversitySlugs: string[];
+  updatedAt?: string;
 };
 
 export type ProgramOffering = {
@@ -92,12 +94,51 @@ export type ProgramOffering = {
   totalTuitionUsd: number;
   livingUsd: number;
   officialProgramUrl: string;
-  medium: "English" | "English + Local Support";
+  medium: "English" | "English + Local Support" | "Vietnamese";
   teachingPhases: TeachingPhase[];
   yearlyCostBreakdown: YearlyCostBreakdown[];
   licenseExamSupport: string[];
   intakeMonths: string[];
   featured: boolean;
+  updatedAt?: string;
+};
+
+export type AtAGlanceRow = {
+  label: string;
+  value: string;
+};
+
+export type EligibilityCriteria = {
+  intro: string;
+  items: string[];
+};
+
+export type DocumentsRequired = {
+  educational: string[];
+  visa: string[];
+};
+
+export type SyllabusPhase = {
+  phase: string;
+  years: string;
+  highlights: string[];
+};
+
+export type IndiaComparisonRow = {
+  criterion: string;
+  india: string;
+  abroad: string;
+};
+
+export type CostOfLivingItem = {
+  category: string;
+  range: string;
+  notes?: string;
+};
+
+export type CostOfLiving = {
+  intro: string;
+  items: CostOfLivingItem[];
 };
 
 export type LandingPage = {
@@ -114,6 +155,15 @@ export type LandingPage = {
   faq: Faq[];
   metaTitle: string;
   metaDescription: string;
+  atAGlance?: AtAGlanceRow[];
+  eligibility?: EligibilityCriteria;
+  admissionSteps?: string[];
+  documentsRequired?: DocumentsRequired;
+  syllabusPhases?: SyllabusPhase[];
+  indiaComparison?: IndiaComparisonRow[];
+  hostelInfo?: string;
+  scholarshipInfo?: string;
+  careerOpportunities?: string[];
 };
 
 export type FinderFilters = {

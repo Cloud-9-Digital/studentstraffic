@@ -101,7 +101,6 @@ export const universities = pgTable(
       .notNull()
       .default([]),
     faq: jsonb("faq").$type<Faq[]>().notNull().default([]),
-    references: jsonb("references").$type<LinkItem[]>().notNull().default([]),
     similarUniversitySlugs: text("similar_university_slugs")
       .array()
       .notNull()

@@ -2,13 +2,7 @@ import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
 
-import {
-  countries as demoCountries,
-  courses as demoCourses,
-  landingPages,
-  programOfferings as demoProgramOfferings,
-  universities as demoUniversities,
-} from "@/lib/data/demo-dataset";
+import { landingPages } from "@/lib/data/landing-pages";
 import type {
   Country,
   Course,
@@ -34,6 +28,10 @@ import {
   getCourseHref,
   getUniversityHref,
 } from "@/lib/routes";
+import {
+  getSortableUsdValue,
+  hasPublishedUsdAmount,
+} from "@/lib/utils";
 
 type CatalogSnapshot = {
   countries: Country[];
@@ -41,8 +39,6 @@ type CatalogSnapshot = {
   universities: University[];
   programOfferings: ProgramOffering[];
 };
-
-let catalogFallbackWarningShown = false;
 
 async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
   const db = getDb();
@@ -84,8 +80,8 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
           recognitionBadges: universitiesTable.recognitionBadges,
           recognitionLinks: universitiesTable.recognitionLinks,
           faq: universitiesTable.faq,
-          references: universitiesTable.references,
           similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
+          updatedAt: universitiesTable.updatedAt,
         })
         .from(universitiesTable),
       db.select().from(programOfferingsTable),
@@ -101,6 +97,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       currencyCode: country.currencyCode,
       metaTitle: country.metaTitle,
       metaDescription: country.metaDescription,
+      updatedAt: country.updatedAt?.toISOString(),
     }));
 
     const courses: Course[] = courseRows.map((course) => ({
@@ -111,6 +108,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       summary: course.summary,
       metaTitle: course.metaTitle,
       metaDescription: course.metaDescription,
+      updatedAt: course.updatedAt?.toISOString(),
     }));
 
     const countrySlugsById = new Map(
@@ -149,8 +147,8 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       recognitionLinks:
         university.recognitionLinks as University["recognitionLinks"],
       faq: university.faq as University["faq"],
-      references: university.references as University["references"],
       similarUniversitySlugs: university.similarUniversitySlugs,
+      updatedAt: university.updatedAt?.toISOString(),
     }));
 
     const universitySlugsById = new Map(
@@ -176,6 +174,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         program.licenseExamSupport as ProgramOffering["licenseExamSupport"],
       intakeMonths: program.intakeMonths,
       featured: program.featured,
+      updatedAt: program.updatedAt?.toISOString(),
     }));
 
     return {
@@ -185,14 +184,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       programOfferings,
     };
   } catch (error) {
-    if (!catalogFallbackWarningShown) {
-      catalogFallbackWarningShown = true;
-      console.warn(
-        "Falling back to the demo catalog because the database is not ready yet.",
-        error
-      );
-    }
-
+    console.error("Failed to read catalog from database:", error);
     return null;
   }
 }
@@ -209,10 +201,10 @@ export async function getCatalogSnapshot() {
 
   return (
     (await readCatalogFromDatabase()) ?? {
-      countries: demoCountries,
-      courses: demoCourses,
-      universities: demoUniversities,
-      programOfferings: demoProgramOfferings,
+      countries: [],
+      courses: [],
+      universities: [],
+      programOfferings: [],
     }
   );
 }
@@ -317,12 +309,24 @@ export async function listFinderPrograms(filters: FinderFilters) {
         return false;
       }
 
-      if (filters.feeMin && program.offering.annualTuitionUsd < filters.feeMin) {
-        return false;
+      if (filters.feeMin) {
+        if (!hasPublishedUsdAmount(program.offering.annualTuitionUsd)) {
+          return false;
+        }
+
+        if (program.offering.annualTuitionUsd < filters.feeMin) {
+          return false;
+        }
       }
 
-      if (filters.feeMax && program.offering.annualTuitionUsd > filters.feeMax) {
-        return false;
+      if (filters.feeMax) {
+        if (!hasPublishedUsdAmount(program.offering.annualTuitionUsd)) {
+          return false;
+        }
+
+        if (program.offering.annualTuitionUsd > filters.feeMax) {
+          return false;
+        }
       }
 
       if (filters.medium && program.offering.medium !== filters.medium) {
@@ -343,7 +347,10 @@ export async function listFinderPrograms(filters: FinderFilters) {
         return Number(b.offering.featured) - Number(a.offering.featured);
       }
 
-      return a.offering.annualTuitionUsd - b.offering.annualTuitionUsd;
+      return (
+        getSortableUsdValue(a.offering.annualTuitionUsd) -
+        getSortableUsdValue(b.offering.annualTuitionUsd)
+      );
     });
 }
 
@@ -405,7 +412,9 @@ export async function getHomeStats() {
   ]);
 
   const cheapestAnnualTuitionUsd = Math.min(
-    ...programs.map((program) => program.annualTuitionUsd)
+    ...programs
+      .map((program) => program.annualTuitionUsd)
+      .filter((fee) => hasPublishedUsdAmount(fee))
   );
 
   return {
@@ -427,6 +436,8 @@ export async function getSitemapStaticUrls() {
     "/contact",
     "/editorial-policy",
     "/methodology",
+    "/privacy",
+    "/terms",
     "/universities",
     getCountriesIndexHref(),
     getCoursesIndexHref(),
@@ -443,6 +454,7 @@ export async function getUniversitySitemapSlice(start: number, end: number) {
   return universities.slice(start, end).map((university) => ({
     slug: university.slug,
     path: getUniversityHref(university.slug),
+    updatedAt: university.updatedAt,
   }));
 }
 

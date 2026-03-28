@@ -8,10 +8,15 @@ const mediaHostnames = (process.env.MEDIA_HOSTNAMES ?? "")
 const nextConfig: NextConfig = {
   cacheComponents: true,
   images: {
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
         protocol: "https",
         hostname: "flagcdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
       ...mediaHostnames.map((hostname) => ({
         protocol: "https" as const,

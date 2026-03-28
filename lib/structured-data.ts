@@ -13,6 +13,7 @@ import {
   getUniversityHref,
 } from "@/lib/routes";
 import { getIndexableUniversityImageUrls } from "@/lib/university-media";
+import { hasPublishedUsdAmount } from "@/lib/utils";
 
 type BreadcrumbItem = {
   name: string;
@@ -59,6 +60,7 @@ function getAbsoluteMediaUrls(urls: Array<string | undefined>) {
 
 function getProgramCourseStructuredData(program: FinderProgram) {
   const universityUrl = absoluteUrl(getUniversityHref(program.university.slug));
+  const hasPublishedFee = hasPublishedUsdAmount(program.offering.annualTuitionUsd);
 
   return {
     "@type": "Course",
@@ -79,14 +81,18 @@ function getProgramCourseStructuredData(program: FinderProgram) {
     courseMode: program.offering.medium,
     educationalCredentialAwarded: program.course.shortName,
     inLanguage: "en",
-    timeRequired: `P${program.offering.durationYears}Y`,
-    offers: {
-      "@type": "Offer",
-      url: universityUrl,
-      priceCurrency: "USD",
-      price: program.offering.annualTuitionUsd,
-      category: program.course.shortName,
-    },
+    timeRequired: Number.isInteger(program.offering.durationYears)
+      ? `P${program.offering.durationYears}Y`
+      : `P${Math.round(program.offering.durationYears * 12)}M`,
+    offers: hasPublishedFee
+      ? {
+          "@type": "Offer",
+          url: universityUrl,
+          priceCurrency: "USD",
+          price: program.offering.annualTuitionUsd,
+          category: program.course.shortName,
+        }
+      : undefined,
   };
 }
 

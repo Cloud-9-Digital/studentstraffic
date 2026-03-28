@@ -5,14 +5,12 @@ import { notFound } from "next/navigation";
 import {
   ArrowUpRight,
   BedDouble,
-  Building2,
   CalendarDays,
   CheckCircle2,
   CircleDollarSign,
   Clock,
   GraduationCap,
   Languages,
-  MapPin,
   MapPinned,
   PencilLine,
   ShieldCheck,
@@ -21,7 +19,8 @@ import {
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
-import { ContentTrustPanel } from "@/components/site/content-trust-panel";
+import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
+import { ComparisonCard } from "@/components/site/comparison-card";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { LeadForm } from "@/components/site/lead-form";
 import { UniversityCard } from "@/components/site/university-card";
@@ -51,15 +50,12 @@ import {
 } from "@/lib/discovery-pages";
 import {
   getCountryBySlug,
+  getProgramsForCountry,
   getProgramsForUniversity,
   getUniversities,
   getUniversityBySlug,
-  listFinderPrograms,
 } from "@/lib/data/catalog";
-import type {
-  FinderProgram,
-  UniversityGalleryImage,
-} from "@/lib/data/types";
+import type { UniversityGalleryImage } from "@/lib/data/types";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
@@ -76,8 +72,13 @@ import {
   getUniversityGalleryImages,
   getUniversityInitials,
 } from "@/lib/university-media";
-import { getComparisonHref } from "@/lib/routes";
-import { cn, formatCurrencyUsd } from "@/lib/utils";
+import {
+  cn,
+  formatCurrencyUsd,
+  formatProgramDuration,
+  formatUsdAmountOrTbd,
+  hasPublishedUsdAmount,
+} from "@/lib/utils";
 
 export async function generateStaticParams() {
   const universities = await getUniversities();
@@ -102,12 +103,19 @@ export async function generateMetadata({
   ]);
   const primaryProgram =
     programs.find((p) => p.offering.featured) ?? programs[0];
+  const primaryProgramHasPublishedFee = primaryProgram
+    ? hasPublishedUsdAmount(primaryProgram.offering.annualTuitionUsd)
+    : false;
   const title = primaryProgram
-    ? `${university.name} | ${primaryProgram.course.shortName} Fees, Admissions & Course Details`
+    ? `${university.name} | ${primaryProgram.course.shortName} ${
+        primaryProgramHasPublishedFee ? "Fees, " : ""
+      }Admissions & Course Details`
     : `${university.name} | University Details`;
   const description =
     primaryProgram && country
-      ? `${university.summary} Compare ${primaryProgram.course.shortName} annual tuition, medium of instruction, intake, and student support in ${university.city}, ${country.name}.`
+      ? `${university.summary} Compare ${primaryProgram.course.shortName} ${
+          primaryProgramHasPublishedFee ? "annual tuition, " : ""
+        }medium of instruction, intake, and student support in ${university.city}, ${country.name}.`
       : university.summary;
 
   return buildIndexableMetadata({
@@ -136,20 +144,33 @@ export default async function UniversityDetailPage({
 
   if (!university) notFound();
 
-  const [programs, country, allFinderPrograms] = await Promise.all([
+  const [programs, country, comparisonGuides, countryPrograms] = await Promise.all([
     getProgramsForUniversity(university.slug),
     getCountryBySlug(university.countrySlug),
-    listFinderPrograms({}),
+    getComparisonGuidesForUniversity(university.slug, 10),
+    getProgramsForCountry(university.countrySlug),
   ]);
-  const comparisonGuides = await getComparisonGuidesForUniversity(university.slug);
 
   if (!country) notFound();
 
   const primaryProgram =
     programs.find((p) => p.offering.featured) ?? programs[0];
-  const similarPrograms = university.similarUniversitySlugs
-    .map((s) => allFinderPrograms.find((p) => p.university.slug === s))
-    .filter((p): p is FinderProgram => Boolean(p));
+  const primaryProgramHasPublishedFee = primaryProgram
+    ? hasPublishedUsdAmount(primaryProgram.offering.annualTuitionUsd)
+    : false;
+  const planningNotesTitle =
+    primaryProgram?.course.slug === "medical-pg"
+      ? "Training & admissions planning"
+      : "Licensing & exam planning";
+
+  // Deduplicate by university slug, exclude current university
+  const otherCountryPrograms = Array.from(
+    new Map(
+      countryPrograms
+        .filter((p) => p.university.slug !== university.slug)
+        .map((p) => [p.university.slug, p])
+    ).values()
+  );
   const galleryImages = getUniversityGalleryImages(university);
   const coverImage = getUniversityCoverImage(university);
   const additionalGalleryImages = galleryImages.slice(1);
@@ -163,10 +184,7 @@ export default async function UniversityDetailPage({
     university,
     country,
     programs,
-    sameAs: [
-      ...university.recognitionLinks.map((i) => i.url),
-      ...university.references.map((i) => i.url),
-    ],
+    sameAs: university.recognitionLinks.map((item) => item.url),
   });
   const structuredDataItems = [
     getBreadcrumbStructuredData([
@@ -241,8 +259,9 @@ export default async function UniversityDetailPage({
                   <div className="flex items-center gap-2">
                     <CircleDollarSign className="size-4 text-white/50" />
                     <span className="text-sm font-medium text-white/80">
-                      {formatCurrencyUsd(primaryProgram.offering.annualTuitionUsd)}
-                      <span className="text-white/50"> / year</span>
+                      {primaryProgramHasPublishedFee
+                        ? `${formatCurrencyUsd(primaryProgram.offering.annualTuitionUsd)} / year`
+                        : "Fee on official notice"}
                     </span>
                   </div>
                 )}
@@ -250,7 +269,7 @@ export default async function UniversityDetailPage({
                   <div className="flex items-center gap-2">
                     <GraduationCap className="size-4 text-white/50" />
                     <span className="text-sm font-medium text-white/80">
-                      {primaryProgram.offering.durationYears}-year {primaryProgram.course.shortName}
+                      {formatProgramDuration(primaryProgram.offering.durationYears)} {primaryProgram.course.shortName}
                     </span>
                   </div>
                 )}
@@ -310,13 +329,13 @@ export default async function UniversityDetailPage({
                   <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
                     <GlanceStat
                       icon={<CircleDollarSign className="size-4 text-accent" />}
-                      label="Annual tuition"
-                      value={formatCurrencyUsd(primaryProgram.offering.annualTuitionUsd)}
+                      label={primaryProgramHasPublishedFee ? "Annual tuition" : "Fee status"}
+                      value={formatUsdAmountOrTbd(primaryProgram.offering.annualTuitionUsd)}
                     />
                     <GlanceStat
                       icon={<Clock className="size-4 text-accent" />}
                       label="Duration"
-                      value={`${primaryProgram.offering.durationYears} years`}
+                      value={formatProgramDuration(primaryProgram.offering.durationYears)}
                     />
                     <GlanceStat
                       icon={<Languages className="size-4 text-accent" />}
@@ -428,36 +447,54 @@ export default async function UniversityDetailPage({
                   {/* Cost breakdown */}
                   <div className="space-y-3">
                     <h3 className="text-sm font-semibold text-foreground">Year-wise cost breakdown</h3>
-                    <div className="overflow-hidden rounded-xl border border-border">
-                      <Table>
-                        <TableHeader>
-                          <TableRow className="bg-muted/50">
-                            <TableHead className="font-semibold">Year</TableHead>
-                            <TableHead className="font-semibold">Tuition</TableHead>
-                            <TableHead className="font-semibold">Living</TableHead>
-                            <TableHead className="font-semibold">Total / yr</TableHead>
-                          </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                          {primaryProgram.offering.yearlyCostBreakdown.map((year) => (
-                            <TableRow key={year.yearLabel}>
-                              <TableCell className="font-medium">{year.yearLabel}</TableCell>
-                              <TableCell>{formatCurrencyUsd(year.tuitionUsd)}</TableCell>
-                              <TableCell>{formatCurrencyUsd(year.livingUsd)}</TableCell>
-                              <TableCell className="font-semibold text-foreground">
-                                {formatCurrencyUsd(year.totalUsd)}
-                              </TableCell>
+                    {primaryProgram.offering.yearlyCostBreakdown.some(
+                      (year) =>
+                        hasPublishedUsdAmount(year.tuitionUsd) ||
+                        hasPublishedUsdAmount(year.livingUsd) ||
+                        hasPublishedUsdAmount(year.totalUsd)
+                    ) ? (
+                      <div className="overflow-hidden rounded-xl border border-border">
+                        <Table>
+                          <TableHeader>
+                            <TableRow className="bg-muted/50">
+                              <TableHead className="font-semibold">Year</TableHead>
+                              <TableHead className="font-semibold">Tuition</TableHead>
+                              <TableHead className="font-semibold">Living</TableHead>
+                              <TableHead className="font-semibold">Total / yr</TableHead>
                             </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
-                    </div>
+                          </TableHeader>
+                          <TableBody>
+                            {primaryProgram.offering.yearlyCostBreakdown.map((year) => (
+                              <TableRow key={year.yearLabel}>
+                                <TableCell className="font-medium">{year.yearLabel}</TableCell>
+                                <TableCell>{formatUsdAmountOrTbd(year.tuitionUsd)}</TableCell>
+                                <TableCell>
+                                  {formatUsdAmountOrTbd(
+                                    year.livingUsd,
+                                    "Check local living plan"
+                                  )}
+                                </TableCell>
+                                <TableCell className="font-semibold text-foreground">
+                                  {formatUsdAmountOrTbd(year.totalUsd)}
+                                </TableCell>
+                              </TableRow>
+                            ))}
+                          </TableBody>
+                        </Table>
+                      </div>
+                    ) : (
+                      <div className="rounded-xl border border-border bg-card px-5 py-4 text-sm leading-7 text-muted-foreground">
+                        Official fee publication varies by specialty and admission notice for this postgraduate track. Use the university notice to confirm tuition, hospital practice fees, and any specialty-specific charges.
+                      </div>
+                    )}
                   </div>
 
                   {/* Licensing */}
                   {primaryProgram.offering.licenseExamSupport.length > 0 && (
                     <div className="space-y-3">
-                      <h3 className="text-sm font-semibold text-foreground">Licensing &amp; exam planning</h3>
+                      <h3 className="text-sm font-semibold text-foreground">
+                        {planningNotesTitle}
+                      </h3>
                       <ul className="space-y-2">
                         {primaryProgram.offering.licenseExamSupport.map((item) => (
                           <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
@@ -578,7 +615,7 @@ export default async function UniversityDetailPage({
                       <AccordionItem
                         key={item.question}
                         value={`faq-${i}`}
-                        className="rounded-xl border border-border bg-card px-5 data-[state=open]:border-accent/30"
+                        className="rounded-xl border border-border bg-card px-5 last:border-b data-[state=open]:border-accent/30"
                       >
                         <AccordionTrigger className="text-left text-sm font-medium text-foreground hover:no-underline">
                           {item.question}
@@ -592,26 +629,29 @@ export default async function UniversityDetailPage({
                 </div>
               )}
 
-              {/* Similar universities */}
-              {similarPrograms.length > 0 && (
-                <div className="space-y-6 py-10">
-                  <SectionLabel>Similar universities to compare</SectionLabel>
-                  {comparisonGuides.length > 0 ? (
-                    <div className="flex flex-wrap gap-3">
-                      {comparisonGuides.map((guide) => (
-                        <Button key={guide.slug} asChild variant="outline" size="sm">
-                          <Link href={getComparisonHref(guide.slug)}>
-                            {guide.left.university.name} vs {guide.right.university.name}
-                          </Link>
-                        </Button>
-                      ))}
-                    </div>
-                  ) : null}
-                  <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
-                    {similarPrograms.map((program) => (
-                      <UniversityCard key={program.offering.slug} program={program} />
+              {/* Comparisons */}
+              {comparisonGuides.length > 0 && (
+                <div className="py-10">
+                  <CardCarousel heading="Compare with similar">
+                    {comparisonGuides.map((guide) => (
+                      <CarouselItem key={guide.slug}>
+                        <ComparisonCard guide={guide} />
+                      </CarouselItem>
                     ))}
-                  </div>
+                  </CardCarousel>
+                </div>
+              )}
+
+              {/* Other universities in country */}
+              {otherCountryPrograms.length > 0 && (
+                <div className="py-10">
+                  <CardCarousel heading={`Other universities in ${country.name}`}>
+                    {otherCountryPrograms.map((program) => (
+                      <CarouselItem key={program.university.slug}>
+                        <UniversityCard program={program} />
+                      </CarouselItem>
+                    ))}
+                  </CardCarousel>
                 </div>
               )}
             </div>
@@ -634,7 +674,11 @@ export default async function UniversityDetailPage({
                     </div>
                     <ul className="space-y-1.5">
                       {[
-                        `${primaryProgram ? primaryProgram.course.shortName + " fee breakdown" : "Fee breakdown"}`,
+                        primaryProgram
+                          ? primaryProgramHasPublishedFee
+                            ? `${primaryProgram.course.shortName} fee breakdown`
+                            : `${primaryProgram.course.shortName} admission planning`
+                          : "Admission planning",
                         `${country.name} admission guidance`,
                         "Callback within 24 hours",
                       ].map((item) => (
@@ -659,7 +703,6 @@ export default async function UniversityDetailPage({
                     countrySlug={country.slug}
                     courseSlug={primaryProgram?.course.slug}
                     embedded
-                    simple
                     stacked
                   />
                 </div>
@@ -772,26 +815,6 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
       {children}
-    </div>
-  );
-}
-
-function HeroStat({
-  icon,
-  label,
-  value,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="flex flex-col gap-1.5 rounded-xl border border-white/12 bg-white/8 px-3 py-3 backdrop-blur-sm">
-      <div className="flex items-center gap-1.5">
-        {icon}
-        <p className="text-[0.65rem] font-medium uppercase tracking-wider text-white/50">{label}</p>
-      </div>
-      <p className="text-sm font-semibold leading-snug text-white/90">{value}</p>
     </div>
   );
 }

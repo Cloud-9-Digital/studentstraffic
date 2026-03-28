@@ -16,6 +16,7 @@ const bodyFont = Plus_Jakarta_Sans({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 const displayFont = Fraunces({
@@ -23,6 +24,7 @@ const displayFont = Fraunces({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   style: ["normal", "italic"],
+  display: "swap",
 });
 
 export const metadata: Metadata = defaultMetadata;

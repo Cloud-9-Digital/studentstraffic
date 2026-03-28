@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+import { getLatestDate } from "@/lib/content-dates";
+import { catalogReviewedAt } from "@/lib/content-governance";
 import { maxSitemapUrls } from "@/lib/constants";
 import { absoluteUrl } from "@/lib/metadata";
 import { getUniversities, getUniversitySitemapSlice } from "@/lib/data/catalog";
@@ -23,5 +25,6 @@ export default async function sitemap(props: {
     url: absoluteUrl(university.path),
     priority: 0.85,
     changeFrequency: "weekly",
+    lastModified: getLatestDate([catalogReviewedAt, university.updatedAt]),
   }));
 }

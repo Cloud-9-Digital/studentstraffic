@@ -51,7 +51,6 @@ export default function MethodologyPage() {
 
         <ContentTrustPanel
           lastReviewed={catalogReviewedAt}
-          sourceSummary="Methodology for collecting, normalizing, and reviewing study-abroad content across Students Traffic."
         />
 
         <div className="space-y-4">

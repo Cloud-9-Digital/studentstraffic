@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+import { JsonLd } from "@/components/shared/json-ld";
 import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { HeroSearch } from "@/components/site/hero-search";
@@ -8,11 +10,66 @@ import { LeadForm } from "@/components/site/lead-form";
 import { SectionHeading } from "@/components/site/section-heading";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
-import { getFeaturedPrograms } from "@/lib/data/catalog";
+import {
+  catalogReviewedAt,
+  governancePublishedAt,
+} from "@/lib/content-governance";
+import {
+  getFeaturedLandingPages,
+  getFeaturedPrograms,
+} from "@/lib/data/catalog";
 import { navDestinations } from "@/lib/constants";
+import { buildIndexableMetadata } from "@/lib/metadata";
+import {
+  getBreadcrumbStructuredData,
+  getCollectionPageStructuredData,
+  getItemListStructuredDataId,
+  getProgramItemListStructuredData,
+  getStructuredDataGraph,
+} from "@/lib/structured-data";
+import { getLandingPageHref } from "@/lib/routes";
+
+export const metadata: Metadata = buildIndexableMetadata({
+  title: "Study Abroad Admissions for Indian Students",
+  description:
+    "Explore verified universities abroad, compare fees and eligibility, and get free admissions guidance for MBBS and other medical programs.",
+  path: "/",
+  keywords: [
+    "study abroad admissions",
+    "MBBS abroad for Indian students",
+    "medical universities abroad",
+    "study abroad counselling",
+    "compare universities abroad",
+  ],
+});
 
 export default async function HomePage() {
-  const featuredPrograms = await getFeaturedPrograms();
+  const [featuredPrograms, featuredGuides] = await Promise.all([
+    getFeaturedPrograms(),
+    getFeaturedLandingPages(),
+  ]);
+  const path = "/";
+  const structuredDataItems = [
+    getBreadcrumbStructuredData([{ name: "Home", path }]),
+    getCollectionPageStructuredData({
+      path,
+      name: "Students Traffic Home",
+      description:
+        "Homepage for Students Traffic, helping Indian students compare universities abroad and start their admissions journey.",
+      mainEntityId: featuredPrograms.length
+        ? getItemListStructuredDataId(path)
+        : undefined,
+      datePublished: governancePublishedAt,
+      dateModified: catalogReviewedAt,
+    }),
+    featuredPrograms.length
+      ? getProgramItemListStructuredData({
+          path,
+          name: "Featured programs on Students Traffic",
+          programs: featuredPrograms,
+        })
+      : null,
+  ];
 
   return (
     <>
@@ -90,6 +147,52 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ── Popular Guides ───────────────────────────────────────────────── */}
+      {featuredGuides.length ? (
+        <section className="border-t border-border py-16 md:py-20">
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="Admissions Guides"
+              title="Start with the route that matches your plan."
+              description="These are the pages students usually need first: fees, eligibility, recognition context, and the actual admission flow."
+            />
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              {featuredGuides.map((guide) => (
+                <Link
+                  key={guide.slug}
+                  href={getLandingPageHref(guide.courseSlug, guide.countrySlug)}
+                  className="group rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-sm"
+                >
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
+                    {guide.kicker}
+                  </p>
+                  <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-heading">
+                    {guide.title}
+                  </h2>
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                    {guide.summary}
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {guide.heroHighlights.slice(0, 3).map((highlight) => (
+                      <span
+                        key={highlight}
+                        className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground"
+                      >
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors group-hover:text-accent">
+                    Read the guide
+                    <ArrowRight className="size-4" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {/* ── Featured Universities ─────────────────────────────────────────── */}
       <section className="border-t border-border py-16 md:py-20">
         <div className="container-shell">
@@ -133,7 +236,7 @@ export default async function HomePage() {
 
             <ul className="space-y-3">
               {[
-                "Personalised university shortlist",
+                "Personalised university recommendations",
                 "Fee comparison across countries",
                 "Application & visa guidance",
                 "Completely free — no obligations",
@@ -152,10 +255,12 @@ export default async function HomePage() {
           <LeadForm
             sourcePath="/"
             ctaVariant="home_cta"
-            title="Get your free shortlist"
+            title="Talk to a counsellor for free"
           />
         </div>
       </section>
+
+      <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
     </>
   );
 }

@@ -2,7 +2,7 @@ import "server-only";
 
 import { sql } from "drizzle-orm";
 
-import { landingPages } from "@/lib/data/demo-dataset";
+import { landingPages } from "@/lib/data/landing-pages";
 import { getCatalogSnapshot } from "@/lib/data/catalog";
 import type {
   SearchDocument,
