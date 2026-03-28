@@ -25,6 +25,11 @@ function emptyToUndefined(value?: string | null) {
   return trimmed ? trimmed : undefined;
 }
 
+function getFormString(formData: FormData, key: string) {
+  const value = formData.get(key);
+  return typeof value === "string" ? value : undefined;
+}
+
 function parseJsonObject<T extends Record<string, unknown>>(
   value?: string | null
 ): T {
@@ -102,23 +107,23 @@ export async function submitLeadAction(
   formData: FormData
 ): Promise<LeadFormState> {
   const parsed = leadSchema.safeParse({
-    fullName: formData.get("fullName"),
-    phone: formData.get("phone"),
-    email: formData.get("email"),
-    userState: formData.get("userState"),
-    courseSlug: formData.get("courseSlug"),
-    countrySlug: formData.get("countrySlug"),
-    universitySlug: formData.get("universitySlug"),
-    sourcePath: formData.get("sourcePath"),
-    sourceUrl: formData.get("sourceUrl"),
-    sourceQuery: formData.get("sourceQuery"),
-    pageTitle: formData.get("pageTitle"),
-    ctaVariant: formData.get("ctaVariant"),
-    notes: formData.get("notes"),
-    documentReferrer: formData.get("documentReferrer"),
-    clientContext: formData.get("clientContext"),
-    website: formData.get("website"),
-    startedAt: formData.get("startedAt"),
+    fullName: getFormString(formData, "fullName"),
+    phone: getFormString(formData, "phone"),
+    email: getFormString(formData, "email"),
+    userState: getFormString(formData, "userState"),
+    courseSlug: getFormString(formData, "courseSlug"),
+    countrySlug: getFormString(formData, "countrySlug"),
+    universitySlug: getFormString(formData, "universitySlug"),
+    sourcePath: getFormString(formData, "sourcePath"),
+    sourceUrl: getFormString(formData, "sourceUrl"),
+    sourceQuery: getFormString(formData, "sourceQuery"),
+    pageTitle: getFormString(formData, "pageTitle"),
+    ctaVariant: getFormString(formData, "ctaVariant"),
+    notes: getFormString(formData, "notes"),
+    documentReferrer: getFormString(formData, "documentReferrer"),
+    clientContext: getFormString(formData, "clientContext"),
+    website: getFormString(formData, "website"),
+    startedAt: getFormString(formData, "startedAt"),
   });
 
   if (!parsed.success) {
