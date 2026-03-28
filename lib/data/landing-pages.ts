@@ -67,7 +67,7 @@ export const landingPages: LandingPage[] = [
     },
     admissionSteps: [
       "Clear NEET-UG and obtain your scorecard",
-      "Research and shortlist NMC-recognised universities in Russia",
+      "Research and shortlist universities in Russia that follow NMC guidelines",
       "Submit your application online with required documents",
       "Receive the official invitation letter from the university",
       "Apply for a Russian student visa at the Russian Embassy in India",
@@ -157,42 +157,44 @@ export const landingPages: LandingPage[] = [
     courseSlug: "mbbs",
     countrySlug: "vietnam",
     title: "MBBS in Vietnam",
-    kicker: "NMC-recognised · English-medium · Affordable fees",
+    kicker: "Follows NMC guidelines · English-medium · Affordable fees",
     summary:
-      "Vietnam has emerged as one of the most credible and affordable MBBS destinations for Indian students — with NMC-recognised universities, English-medium programs, and fees starting from $2,833/year. Closer to home, easier to settle in, and with a fast-growing Indian student community.",
+      "Vietnam has emerged as one of the most credible and affordable MBBS destinations for Indian students — with universities following NMC guidelines, English-medium programs, and fees starting from $2,833/year. Closer to home, easier to settle in, and with a fast-growing Indian student community.",
     heroHighlights: [
       "Fees from $2,833/year",
-      "NMC recognised",
+      "Follows NMC guidelines",
       "English-medium programs",
       "Hostel with Indian food",
       "Closer to India",
     ],
     reasonsToChoose: [
       "Significantly lower fees than Indian private medical colleges — total 6-year costs can be ₹15–45 lakh all-in, well below comparable programs in Russia or Eastern Europe.",
-      "Multiple universities hold confirmed NMC recognition — graduates can sit FMGE/NExT to practice medicine in India.",
+      "Multiple universities follow NMC guidelines — graduates can sit FMGE/NExT to practise medicine in India.",
       "Vietnam is geographically close to India (3–5 hour flights), making semester breaks, emergency travel, and family visits far easier than European or Central Asian destinations.",
       "English is the primary teaching language in international MBBS programs, eliminating the language barrier that affects clinical years in Russia, China, or Kazakhstan.",
       "A rapidly growing Indian student community across Can Tho, Da Nang, Hanoi, and Ho Chi Minh City means established Indian food, cultural support, and peer networks from day one.",
       "Diverse city choices — from the coastal lifestyle of Da Nang to the Mekong Delta calm of Can Tho — let students match their personality and lifestyle preferences.",
     ],
     editorialNotes: [
-      "Always verify the specific university's NMC listing on the official NMC website before paying any fees — not all universities marketed to Indian students are confirmed.",
-      "Can Tho University of Medicine and Pharmacy is the most consistently recognised public university with NMC, WHO, and FAIMER confirmation.",
-      "Duy Tan and Phan Chau Trinh are among the strongest private options — verify their current NMC status independently.",
+      "Before paying any fees, check whether the university follows NMC guidelines on the official NMC website — not all universities marketed to Indian students meet the requirements.",
+      "Can Tho University of Medicine and Pharmacy is the most established public university, also listed with WHO and FAIMER.",
+      "Duy Tan and Phan Chau Trinh are among the stronger private options — verify their compliance with NMC guidelines independently before enrolling.",
     ],
     featuredUniversitySlugs: [
+      "dong-a-university-college-of-medicine",
       "can-tho-university-medicine-pharmacy",
-      "hue-university-medicine-pharmacy",
-      "duy-tan-university-faculty-of-medicine",
+      "dai-nam-university-faculty-of-medicine",
+      "nam-can-tho-university-faculty-of-medicine",
       "phan-chau-trinh-university",
-      "thai-binh-university-medicine-pharmacy",
-      "thai-nguyen-university-medicine-pharmacy",
+      "buon-ma-thuot-medical-university",
+      "vo-truong-toan-university",
+      "hong-bang-international-university-medicine",
     ],
     faq: [
       {
-        question: "Is MBBS in Vietnam recognised by the NMC (India)?",
+        question: "Is MBBS in Vietnam valid in India?",
         answer:
-          "Yes — several Vietnam universities are NMC-recognised, meaning Indian graduates can sit the FMGE/NExT screening test to obtain a licence to practice in India. However, NMC recognition is specific to each university, not the country as a whole. Always verify the individual university's status on the official NMC website before enrolling.",
+          "NMC does not approve or recognise universities — it publishes guidelines under the 2022 NMC Screening Test Regulations. If a student studies at a university that follows these guidelines, their degree is valid in India and they can sit the FMGE/NExT screening test to obtain a licence to practise. Compliance is specific to each university, not the country. Always check the individual university's status on the official NMC website before enrolling.",
       },
       {
         question: "What are the total fees for MBBS in Vietnam?",
@@ -212,7 +214,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Which are the best Vietnam universities for Indian students?",
         answer:
-          "The most consistently recognised universities are Can Tho University of Medicine and Pharmacy, Hue University of Medicine and Pharmacy, and Duy Tan University. Thai Binh University is the most affordable confirmed option. Always verify current NMC recognition status on the official NMC website before enrolling.",
+          "Can Tho University of Medicine and Pharmacy, Hue University of Medicine and Pharmacy, and Duy Tan University are among the well-established options for Indian students. Thai Binh University is one of the more affordable choices. Always verify that the university follows NMC guidelines on the official NMC website before enrolling.",
       },
       {
         question: "What intake months are available for MBBS in Vietnam?",
@@ -220,9 +222,9 @@ export const landingPages: LandingPage[] = [
           "All Vietnam universities offering MBBS to international students admit students in September. Applications typically open January–June for the September intake. Students should apply at least 3–4 months before the intake to allow time for documentation, visa processing, and accommodation arrangements.",
       },
     ],
-    metaTitle: "MBBS in Vietnam 2026 | NMC-Recognised Universities, Fees & Admissions",
+    metaTitle: "MBBS in Vietnam 2026 | Universities, Fees & Admissions for Indian Students",
     metaDescription:
-      "Complete guide to MBBS in Vietnam for Indian students — NMC recognised universities, fees from $2,833/year, English-medium programs, hostel details, and free expert counselling.",
+      "Complete guide to MBBS in Vietnam for Indian students — universities following NMC guidelines, fees from $2,833/year, English-medium programs, hostel details, and free expert counselling.",
     atAGlance: [
       { label: "Program", value: "MBBS (6-year international MD program)" },
       { label: "Annual tuition", value: "$2,833 – $9,000" },
@@ -230,7 +232,7 @@ export const landingPages: LandingPage[] = [
       { label: "Total 6-year cost", value: "$31,000 – $75,000 approx." },
       { label: "Intake", value: "September" },
       { label: "Medium", value: "English (with Vietnamese clinical orientation)" },
-      { label: "NEET required", value: "Yes" },
+      { label: "NEET required", value: "Not for admission — required before program start if practising in India" },
       { label: "Recognition", value: "NMC, WHO, FAIMER (university-specific)" },
     ],
     eligibility: {
@@ -238,15 +240,15 @@ export const landingPages: LandingPage[] = [
         "Indian students applying for MBBS in Vietnam must meet the standard NMC requirements for overseas medical education, as confirmed in the 2022 NMC Screening Test Regulations.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology as core subjects",
-        "Minimum 50% aggregate in PCB (45% for SC/ST/OBC candidates)",
-        "Cleared NEET-UG (mandatory)",
+        "Minimum 60% aggregate in PCB in Class 12",
+        "NEET-UG not required for admission — but must have qualified NEET-UG before the program starts if you intend to practise medicine in India after graduation",
         "Age 17 or above at the time of admission",
         "Valid Indian passport",
       ],
     },
     admissionSteps: [
-      "Clear NEET-UG and save your scorecard",
-      "Verify NMC recognition of shortlisted Vietnam universities on the official NMC portal",
+      "If you plan to practise in India, ensure you have a valid NEET-UG score before your MBBS program begins",
+      "Check that your shortlisted Vietnam universities follow NMC guidelines — verify on the official NMC website",
       "Submit your application with required documents to the university or an authorised representative",
       "Receive the university's official admission offer letter",
       "Apply for a Vietnam student visa at the Vietnamese Embassy in India",
@@ -313,7 +315,7 @@ export const landingPages: LandingPage[] = [
     indiaComparison: [
       { criterion: "Annual tuition", india: "₹10–25 lakh (private colleges)", abroad: "$2,833–$9,000" },
       { criterion: "NEET requirement", india: "Yes — mandatory", abroad: "Yes — mandatory" },
-      { criterion: "Program duration", india: "5.5 years + 1 year internship", abroad: "6 years (incl. internship)" },
+      { criterion: "Program duration", india: "5.5 years (incl. 1 year internship)", abroad: "6 years (incl. internship)" },
       { criterion: "Medium", india: "English", abroad: "English (with Vietnamese clinical orientation)" },
       { criterion: "Distance from India", india: "—", abroad: "3–5 hour flight" },
       { criterion: "Seat availability", india: "Very limited — high cutoffs", abroad: "No seat cap for international students" },

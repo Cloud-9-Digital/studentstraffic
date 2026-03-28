@@ -39,7 +39,7 @@ const countryContentMap: Record<string, CountryContent> = {
     },
     admissionSteps: [
       "Clear NEET-UG and save your scorecard",
-      "Research and shortlist NMC-recognised universities in Russia",
+      "Research and shortlist universities in Russia that follow NMC guidelines",
       "Submit your application with required documents to the chosen university",
       "Receive the official invitation letter from the university",
       "Apply for a Russian student visa at the Russian Embassy in India",
@@ -104,15 +104,15 @@ const countryContentMap: Record<string, CountryContent> = {
         "Indian students applying for MBBS in Vietnam must meet the standard NMC requirements for overseas medical education, confirmed in the 2022 NMC Screening Test Regulations.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology as core subjects",
-        "Minimum 50% aggregate in PCB (45% for SC/ST/OBC candidates)",
-        "Cleared NEET-UG (mandatory)",
+        "Minimum 60% aggregate in PCB in Class 12",
+        "NEET-UG not required for admission — but must have qualified NEET-UG before the program starts if you intend to practise medicine in India after graduation",
         "Age 17 or above at time of admission",
         "Valid Indian passport",
       ],
     },
     admissionSteps: [
-      "Clear NEET-UG and save your scorecard",
-      "Verify NMC recognition of shortlisted Vietnam universities on the official NMC portal",
+      "If you plan to practise in India, ensure you have a valid NEET-UG score before your MBBS program begins",
+      "Check that your shortlisted Vietnam universities follow NMC guidelines — verify on the official NMC website",
       "Submit application with required documents to the university or authorised representative",
       "Receive the university's official admission offer letter",
       "Apply for a Vietnam student visa at the Vietnamese Embassy in India",
@@ -155,7 +155,7 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     careerOpportunities: [
-      "Clear FMGE/NExT to obtain NMC registration and practise in India — several Vietnam universities are NMC-recognised for this pathway",
+      "Clear FMGE/NExT to obtain NMC registration and practise in India — graduates from universities that follow NMC guidelines are eligible to sit the exam",
       "Apply for postgraduate DNB or MD/MS programmes in India with a valid FMGE/NExT score",
       "Explore PG clinical specialisation in Vietnam or nearby Southeast Asian medical institutions",
       "Vietnam's location gives graduates proximity to Singapore, Malaysia, and other regional medical markets",
@@ -185,7 +185,7 @@ const countryContentMap: Record<string, CountryContent> = {
     },
     admissionSteps: [
       "Clear NEET-UG and save your scorecard",
-      "Shortlist NMC-recognised Georgian universities",
+      "Shortlist Georgian universities that follow NMC guidelines",
       "Submit application with required documents",
       "Receive admission offer letter",
       "Apply for Georgia student visa",
@@ -230,7 +230,7 @@ const countryContentMap: Record<string, CountryContent> = {
     careerOpportunities: [
       "Clear FMGE/NExT to obtain NMC registration and practise medicine in India",
       "Apply for postgraduate MD/MS or DNB programmes in India after licensing",
-      "Georgian universities are often NMC-recognised, supporting the India-return pathway",
+      "Many Georgian universities follow NMC guidelines, supporting the India-return pathway via FMGE/NExT",
       "Explore international licensing in the UK, Europe, or Middle East",
     ],
   },
@@ -257,7 +257,7 @@ const countryContentMap: Record<string, CountryContent> = {
     },
     admissionSteps: [
       "Clear NEET-UG and save your scorecard",
-      "Shortlist NMC-recognised universities in Kyrgyzstan",
+      "Shortlist universities in Kyrgyzstan that follow NMC guidelines",
       "Submit application with required documents",
       "Receive official admission offer letter",
       "Apply for a Kyrgyzstan student visa",

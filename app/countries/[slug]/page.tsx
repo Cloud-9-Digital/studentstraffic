@@ -352,6 +352,14 @@ export default async function CountryPage({
               label="Available tracks"
               value={uniqueCourses.length ? uniqueCourses.join(", ") : "Verify by institution"}
             />
+            {countryContent?.quickFacts
+              .filter(
+                (f) =>
+                  !["region", "currency", "climate"].includes(f.label.toLowerCase())
+              )
+              .map((f) => (
+                <FactRow key={f.label} label={f.label} value={f.value} />
+              ))}
           </div>
 
           {allRecognitionBadges.length ? (
@@ -464,6 +472,35 @@ export default async function CountryPage({
               </Button>
             </div>
           ) : null}
+
+          {/* Monthly living cost breakdown */}
+          {countryContent?.costOfLiving ? (
+            <div className="mt-10">
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-1">
+                Monthly living costs
+              </p>
+              <p className="text-sm leading-7 text-muted-foreground mb-5">
+                {countryContent.costOfLiving.intro}
+              </p>
+              <div className="overflow-hidden rounded-[1.6rem] border border-border/70">
+                <div className="grid grid-cols-3 border-b border-border/60 bg-[#f7f5f0] px-5 py-3">
+                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Category</span>
+                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-center">Monthly range</span>
+                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-right">Notes</span>
+                </div>
+                {countryContent.costOfLiving.items.map((item, i) => (
+                  <CostRow
+                    key={item.category}
+                    label={item.category}
+                    value={item.range}
+                    note={item.notes ?? ""}
+                    border={i > 0}
+                    highlight={i === countryContent.costOfLiving.items.length - 1}
+                  />
+                ))}
+              </div>
+            </div>
+          ) : null}
         </div>
 
         {/* ── UNIVERSITY DIRECTORY ────────────────────────────── */}
@@ -508,19 +545,6 @@ export default async function CountryPage({
         {/* ── COUNTRY CONTENT SECTIONS ────────────────────────── */}
         {countryContent && (
           <>
-            {/* Quick Facts */}
-            <div className="py-14 md:py-18">
-              <SectionLabel icon={<Globe2 className="size-3.5" />} text="Quick Facts" />
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                {country.name} — key facts
-              </h2>
-              <div className="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                {countryContent.quickFacts.map((fact) => (
-                  <FactRow key={fact.label} label={fact.label} value={fact.value} />
-                ))}
-              </div>
-            </div>
-
             {/* Eligibility */}
             <div className="py-14 md:py-18">
               <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Eligibility" />
@@ -616,40 +640,6 @@ export default async function CountryPage({
               <p className="mt-6 max-w-3xl text-base leading-8 text-muted-foreground">
                 {countryContent.scholarshipInfo}
               </p>
-            </div>
-
-            {/* Cost of Living */}
-            <div className="py-14 md:py-18">
-              <SectionLabel icon={<CircleDollarSign className="size-3.5" />} text="Cost of Living" />
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Cost of living in {country.name}
-              </h2>
-              <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground">
-                {countryContent.costOfLiving.intro}
-              </p>
-              <div className="mt-8 overflow-hidden rounded-[1.6rem] border border-border/70">
-                <div className="grid grid-cols-3 border-b border-border/60 bg-[#f7f5f0] px-5 py-3">
-                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                    Category
-                  </span>
-                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-center">
-                    Monthly range
-                  </span>
-                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-right">
-                    Notes
-                  </span>
-                </div>
-                {countryContent.costOfLiving.items.map((item, i) => (
-                  <CostRow
-                    key={item.category}
-                    label={item.category}
-                    value={item.range}
-                    note={item.notes ?? ""}
-                    border={i > 0}
-                    highlight={i === countryContent.costOfLiving.items.length - 1}
-                  />
-                ))}
-              </div>
             </div>
 
             {/* Career Opportunities */}
