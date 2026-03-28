@@ -61,6 +61,79 @@ export type LeadSyncPayload = {
 };
 
 const SYNC_TIMEOUT_MS = 8_000;
+const SYNC_PLACEHOLDER = "NA";
+
+type LeadSyncTransportPayload = Omit<
+  LeadSyncPayload,
+  | "email"
+  | "userState"
+  | "courseSlug"
+  | "countrySlug"
+  | "universitySlug"
+  | "sourceUrl"
+  | "pageTitle"
+  | "notes"
+  | "documentReferrer"
+  | "utmSource"
+  | "utmMedium"
+  | "utmCampaign"
+  | "utmTerm"
+  | "utmContent"
+  | "referrer"
+  | "userAgent"
+  | "ipAddress"
+  | "acceptLanguage"
+> & {
+  email: string;
+  userState: string;
+  courseSlug: string;
+  countrySlug: string;
+  universitySlug: string;
+  sourceUrl: string;
+  pageTitle: string;
+  notes: string;
+  documentReferrer: string;
+  utmSource: string;
+  utmMedium: string;
+  utmCampaign: string;
+  utmTerm: string;
+  utmContent: string;
+  referrer: string;
+  userAgent: string;
+  ipAddress: string;
+  acceptLanguage: string;
+};
+
+function withPlaceholder(value?: string | null) {
+  const trimmed = value?.trim();
+  return trimmed ? trimmed : SYNC_PLACEHOLDER;
+}
+
+function buildTransportPayload(
+  payload: LeadSyncPayload
+): LeadSyncTransportPayload {
+  return {
+    ...payload,
+    email: withPlaceholder(payload.email),
+    userState: withPlaceholder(payload.userState),
+    courseSlug: withPlaceholder(payload.courseSlug),
+    countrySlug: withPlaceholder(payload.countrySlug),
+    universitySlug: withPlaceholder(payload.universitySlug),
+    sourceUrl: withPlaceholder(payload.sourceUrl),
+    pageTitle: withPlaceholder(payload.pageTitle),
+    notes: withPlaceholder(payload.notes),
+    documentReferrer: withPlaceholder(payload.documentReferrer),
+    utmSource: withPlaceholder(payload.utmSource),
+    utmMedium: withPlaceholder(payload.utmMedium),
+    utmCampaign: withPlaceholder(payload.utmCampaign),
+    utmTerm: withPlaceholder(payload.utmTerm),
+    utmContent: withPlaceholder(payload.utmContent),
+    referrer: withPlaceholder(payload.referrer),
+    userAgent: withPlaceholder(payload.userAgent),
+    ipAddress: withPlaceholder(payload.ipAddress),
+    acceptLanguage: withPlaceholder(payload.acceptLanguage),
+  };
+}
 
 function truncateErrorMessage(error: unknown) {
   if (error instanceof Error) {
@@ -118,9 +191,13 @@ async function syncLeadToCrm(
   }
 
   try {
-    const response = await postJson(env.crmLeadIntakeUrl, payload, {
+    const response = await postJson(
+      env.crmLeadIntakeUrl,
+      buildTransportPayload(payload),
+      {
       "x-lead-intake-secret": env.crmLeadIntakeSecret,
-    });
+      }
+    );
     const rawText = await response.text();
     const parsed = rawText ? (JSON.parse(rawText) as CrmSyncResponse) : {};
 
@@ -162,10 +239,11 @@ async function syncLeadToPabbly(
   }
 
   try {
+    const transportPayload = buildTransportPayload(payload);
     const response = await postJson(env.pabblyLeadWebhookUrl, {
       event: "lead.created",
       sentAt: new Date().toISOString(),
-      lead: payload,
+      lead: transportPayload,
     });
 
     if (!response.ok) {
