@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 
+import { MobileStickyBar } from "@/components/site/mobile-sticky-bar";
 import { SiteFooter } from "@/components/site/site-footer";
 import { SiteHeader } from "@/components/site/site-header";
 import { JsonLd } from "@/components/shared/json-ld";
@@ -54,6 +55,7 @@ export default function RootLayout({
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />
+          <MobileStickyBar />
         </div>
         <JsonLd
           data={getStructuredDataGraph([

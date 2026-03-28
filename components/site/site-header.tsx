@@ -24,17 +24,25 @@ function WhatsAppIcon({ className }: { className?: string }) {
   );
 }
 
-function SiteLogo({ onClick }: { onClick?: () => void }) {
+function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; showTagline?: boolean }) {
   return (
-    <Link href="/" onClick={onClick} className="flex-shrink-0">
+    <Link href="/" onClick={onClick} className="flex shrink-0 items-center gap-3">
       <Image
         src="/logo.webp"
         alt="Students Traffic"
         width={180}
         height={48}
-        className="h-7 w-auto"
+        className="h-5 w-auto"
         priority
       />
+      {showTagline && (
+        <>
+          <span className="h-4 w-px bg-foreground/20" aria-hidden />
+          <span className="text-[10px] font-medium leading-snug text-foreground/50">
+            India&apos;s Trusted<br />Study Abroad Platform
+          </span>
+        </>
+      )}
     </Link>
   );
 }
@@ -77,12 +85,19 @@ export function SiteHeader() {
     <>
       <header
         className={cn(
-          "sticky top-0 z-50 bg-header-bg backdrop-blur-xl transition-shadow duration-300",
-          scrolled ? "shadow-header-scrolled" : "border-b border-border",
+          "sticky top-0 z-50 transition-all duration-300",
+          scrolled ? "shadow-[0_4px_24px_rgba(0,0,0,0.08)]" : "border-b border-white/60",
         )}
+        style={{
+          background: scrolled
+            ? "rgba(255, 255, 255, 0.75)"
+            : "rgba(255, 255, 255, 0.60)",
+          backdropFilter: "blur(24px) saturate(180%) brightness(1.06)",
+          WebkitBackdropFilter: "blur(24px) saturate(180%) brightness(1.06)",
+        }}
       >
         <div className="relative flex h-16 items-center px-4 sm:px-6 lg:px-8">
-          <SiteLogo />
+          <SiteLogo showTagline />
 
           {/* Desktop nav */}
           <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-0.5 lg:flex">
@@ -103,23 +118,23 @@ export function SiteHeader() {
           </nav>
 
           {/* Desktop actions */}
-          <div className="ml-auto hidden items-center gap-1 lg:flex">
+          <div className="ml-auto hidden items-center gap-2 lg:flex">
             <SearchPalette />
             <a
               href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
               aria-label="Call us"
-              className="flex h-9 w-9 items-center justify-center rounded-xl text-foreground/60 transition-colors hover:bg-black/5 hover:text-foreground"
+              className="flex h-9 w-9 items-center justify-center rounded-xl border border-primary/20 bg-primary/8 text-primary transition-all hover:bg-primary/14 hover:border-primary/30"
             >
-              <Phone className="size-[18px]" />
+              <Phone className="size-[18px]" strokeWidth={1.75} />
             </a>
             <a
               href={`https://wa.me/${siteConfig.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat on WhatsApp"
-              className="flex h-9 w-9 items-center justify-center rounded-xl text-foreground/60 transition-colors hover:bg-whatsapp/10 hover:text-whatsapp"
+              className="flex h-9 w-9 items-center justify-center rounded-xl border border-whatsapp/25 bg-whatsapp/10 text-whatsapp-dark transition-all hover:bg-whatsapp/18 hover:border-whatsapp/35"
             >
-              <WhatsAppIcon className="size-[19px]" />
+              <WhatsAppIcon className="size-[18px]" />
             </a>
             <CounsellingDialog
               triggerVariant="accent"

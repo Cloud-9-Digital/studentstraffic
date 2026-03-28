@@ -154,9 +154,9 @@ export function SearchPalette() {
         type="button"
         onClick={openPalette}
         aria-label="Search"
-        className="flex h-9 w-9 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-black/5 hover:text-foreground"
+        className="flex h-9 w-9 items-center justify-center rounded-xl border border-primary/20 bg-primary/8 text-primary transition-all hover:bg-primary/14 hover:border-primary/30"
       >
-        <Search className="size-[17px]" />
+        <Search className="size-[18px]" strokeWidth={1.75} />
       </button>
 
       {/* Overlay — rendered via portal to escape header's backdrop-filter stacking context */}
