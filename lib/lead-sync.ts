@@ -104,6 +104,12 @@ type LeadSyncTransportPayload = Omit<
   acceptLanguage: string;
 };
 
+type PabblyLeadPayload = LeadSyncTransportPayload & {
+  courseInterest: string;
+  countryInterest: string;
+  universityInterest: string;
+};
+
 function withPlaceholder(value?: string | null) {
   const trimmed = value?.trim();
   return trimmed ? trimmed : SYNC_PLACEHOLDER;
@@ -132,6 +138,17 @@ function buildTransportPayload(
     userAgent: withPlaceholder(payload.userAgent),
     ipAddress: withPlaceholder(payload.ipAddress),
     acceptLanguage: withPlaceholder(payload.acceptLanguage),
+  };
+}
+
+function buildPabblyPayload(payload: LeadSyncPayload): PabblyLeadPayload {
+  const transportPayload = buildTransportPayload(payload);
+
+  return {
+    ...transportPayload,
+    courseInterest: transportPayload.courseSlug,
+    countryInterest: transportPayload.countrySlug,
+    universityInterest: transportPayload.universitySlug,
   };
 }
 
@@ -239,11 +256,11 @@ async function syncLeadToPabbly(
   }
 
   try {
-    const transportPayload = buildTransportPayload(payload);
+    const pabblyPayload = buildPabblyPayload(payload);
     const response = await postJson(env.pabblyLeadWebhookUrl, {
       event: "lead.created",
       sentAt: new Date().toISOString(),
-      lead: transportPayload,
+      ...pabblyPayload,
     });
 
     if (!response.ok) {
