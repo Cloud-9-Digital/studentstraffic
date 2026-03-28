@@ -99,7 +99,7 @@ export function UniversityCard({ program }: { program: FinderProgram }) {
         </div>
 
         {/* Stats row */}
-        <div className="mt-auto grid grid-cols-3 gap-2 border-t border-border pt-3">
+        <div className="mt-auto grid grid-cols-2 gap-2 border-t border-border pt-3">
           <div className="flex flex-col">
             <span className="text-[0.65rem] text-muted-foreground">
               {hasPublishedFee ? "Tuition / yr" : "Fee"}
@@ -112,10 +112,6 @@ export function UniversityCard({ program }: { program: FinderProgram }) {
             >
               {formatUsdAmountOrTbd(offering.annualTuitionUsd)}
             </span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-[0.65rem] text-muted-foreground">City</span>
-            <span className="text-sm font-semibold text-foreground truncate">{university.city}</span>
           </div>
           <div className="flex flex-col">
             <span className="text-[0.65rem] text-muted-foreground">Course</span>

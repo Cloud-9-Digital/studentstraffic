@@ -159,7 +159,7 @@ export const landingPages: LandingPage[] = [
     title: "MBBS in Vietnam",
     kicker: "Follows NMC guidelines · English-medium · Affordable fees",
     summary:
-      "Vietnam has emerged as one of the most credible and affordable MBBS destinations for Indian students — with universities following NMC guidelines, English-medium programs, and fees starting from $2,833/year. Closer to home, easier to settle in, and with a fast-growing Indian student community.",
+      "Vietnam has emerged as one of the most credible and affordable MBBS destinations for Indian students — with universities following NMC guidelines, English-medium programs, and fees starting from $2,833/year. Students Traffic has sent 1,000+ students to Vietnam and handles the entire process for you, from application to landing.",
     heroHighlights: [
       "Fees from $2,833/year",
       "Follows NMC guidelines",

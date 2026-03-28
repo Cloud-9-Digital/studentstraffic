@@ -12,6 +12,7 @@ import {
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { CountryFlag } from "@/components/site/country-flag";
+import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { LeadForm } from "@/components/site/lead-form";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
@@ -166,16 +167,17 @@ export default async function LandingPageRoute({
               </p>
 
               <div className="mt-9 flex flex-wrap gap-3">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-accent text-white shadow-cta hover:bg-accent-strong hover:shadow-cta-hover"
-                >
-                  <Link href="/contact">
-                    Free counselling
-                    <ArrowRight className="size-4" />
-                  </Link>
-                </Button>
+                <CounsellingDialog
+                  triggerContent={<>Free counselling <ArrowRight className="size-4" /></>}
+                  triggerSize="lg"
+                  triggerClassName="bg-accent text-white shadow-cta hover:bg-accent-strong hover:shadow-cta-hover"
+                  title="Get free counselling"
+                  description={`Tell us your goals and we'll guide you through your options for ${page.title} — and handle the entire admissions process for you.`}
+                  submitLabel="Request counselling"
+                  ctaVariant="landing_hero_cta"
+                  countrySlug={country.slug}
+                  courseSlug={course.slug}
+                />
                 <Button
                   asChild
                   size="lg"
@@ -230,48 +232,6 @@ export default async function LandingPageRoute({
         </div>
       </section>
 
-
-      {/* ── NEET Notice ──────────────────────────────────────────────────── */}
-      <section className="border-b border-border bg-amber-50 py-10 md:py-12">
-        <div className="container-shell">
-          <div className="flex gap-4">
-            <div className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-500 text-white">
-              <AlertTriangle className="size-4" />
-            </div>
-            <div>
-              <h2 className="font-display text-xl font-semibold text-amber-900 sm:text-2xl">
-                NEET UG &amp; your degree validity in India — read this before enrolling
-              </h2>
-              <div className="mt-5 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-xl border border-amber-200 bg-white px-5 py-4">
-                  <p className="mb-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-amber-600">
-                    Admission
-                  </p>
-                  <p className="text-sm leading-6 text-amber-900">
-                    Vietnam universities <span className="font-semibold">do not require NEET UG</span> for admission. You can enrol without a NEET score.
-                  </p>
-                </div>
-                <div className="rounded-xl border border-amber-200 bg-white px-5 py-4">
-                  <p className="mb-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-amber-600">
-                    Practising in India
-                  </p>
-                  <p className="text-sm leading-6 text-amber-900">
-                    To appear for FMGE / NExT and practice medicine in India, <span className="font-semibold">NEET must have been qualified before your MBBS program began.</span> Without this, your degree has no legal standing in India.
-                  </p>
-                </div>
-                <div className="rounded-xl border border-red-200 bg-red-50 px-5 py-4">
-                  <p className="mb-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-red-600">
-                    Agent misinformation — beware
-                  </p>
-                  <p className="text-sm leading-6 text-red-900">
-                    Some agents advise students to <span className="font-semibold">start MBBS first and appear for NEET the following year.</span> This is incorrect and harmful. NMC requires NEET qualification before program commencement — appearing after does not validate your degree. NEET scores are also valid for only 3 years from the date of result.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── Universities ─────────────────────────────────────────────────── */}
       <section className="border-b border-border py-14 md:py-20">
@@ -408,6 +368,62 @@ export default async function LandingPageRoute({
         </section>
       )}
 
+      {/* ── How We Help ──────────────────────────────────────────────────── */}
+      <section className="border-b border-border bg-primary py-14 md:py-20">
+        <div className="container-shell">
+          <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-16">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+                Students Traffic
+              </p>
+              <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-4xl">
+                We handle everything — you don&apos;t need to leave home.
+              </h2>
+              <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
+                We have already sent <span className="font-semibold text-white">1,000+ students to Vietnam</span> across all major universities. From the day you decide to apply until you land at the university, every step is managed by our team — at no extra cost to you.
+              </p>
+              <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {[
+                  { icon: "✈️", label: "Flight ticket", desc: "We book your travel to Vietnam" },
+                  { icon: "🛂", label: "Student visa", desc: "Full visa application handled by us" },
+                  { icon: "🏥", label: "Health insurance", desc: "Arranged before you depart" },
+                  { icon: "📋", label: "Document legalisation", desc: "Apostille & ministry authentication" },
+                  { icon: "🎓", label: "University application", desc: "Submitted directly on your behalf" },
+                  { icon: "🏠", label: "Hostel booking", desc: "Accommodation sorted before arrival" },
+                ].map((item) => (
+                  <div key={item.label} className="flex gap-3 rounded-xl border border-white/10 bg-white/8 px-4 py-4">
+                    <span className="text-xl leading-none">{item.icon}</span>
+                    <div>
+                      <p className="text-sm font-semibold text-white">{item.label}</p>
+                      <p className="mt-0.5 text-xs leading-5 text-white/60">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="shrink-0 lg:text-right">
+              <div className="inline-flex flex-col items-center justify-center rounded-2xl border border-white/15 bg-white/10 px-10 py-8 text-center">
+                <span className="font-display text-5xl font-bold text-white">1,000+</span>
+                <span className="mt-2 text-sm text-white/60">students sent to Vietnam</span>
+                <div className="mt-5 border-t border-white/15 pt-5">
+                  <CounsellingDialog
+                    triggerContent={<>Start your application <ArrowRight className="size-4" /></>}
+                    triggerSize="lg"
+                    triggerClassName="bg-accent text-white hover:bg-accent-strong"
+                    title="Start your application"
+                    description="We handle everything from application to landing — visa, flight, health insurance, document legalisation, and hostel. Share your details and we'll be in touch within 24 hours."
+                    submitLabel="Start my application"
+                    ctaVariant="landing_service_cta"
+                    countrySlug={country.slug}
+                    courseSlug={course.slug}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Why this destination ─────────────────────────────────────────── */}
       <section className="border-b border-border py-14 md:py-20">
         <div className="container-shell">
@@ -487,6 +503,48 @@ export default async function LandingPageRoute({
           </div>
         </section>
       ) : null}
+
+      {/* ── NEET Notice ──────────────────────────────────────────────────── */}
+      <section className="border-b border-border bg-amber-50 py-10 md:py-12">
+        <div className="container-shell">
+          <div className="flex gap-4">
+            <div className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-500 text-white">
+              <AlertTriangle className="size-4" />
+            </div>
+            <div>
+              <h2 className="font-display text-xl font-semibold text-amber-900 sm:text-2xl">
+                NEET UG &amp; your degree validity in India — read this before enrolling
+              </h2>
+              <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                <div className="rounded-xl border border-amber-200 bg-white px-5 py-4">
+                  <p className="mb-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-amber-600">
+                    Admission
+                  </p>
+                  <p className="text-sm leading-6 text-amber-900">
+                    Vietnam universities <span className="font-semibold">do not require NEET UG</span> for admission. You can enrol without a NEET score.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-amber-200 bg-white px-5 py-4">
+                  <p className="mb-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-amber-600">
+                    Practising in India
+                  </p>
+                  <p className="text-sm leading-6 text-amber-900">
+                    To appear for FMGE / NExT and practice medicine in India, <span className="font-semibold">NEET must have been qualified before your MBBS program began.</span> Without this, your degree has no legal standing in India.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-red-200 bg-red-50 px-5 py-4">
+                  <p className="mb-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-red-600">
+                    Agent misinformation — beware
+                  </p>
+                  <p className="text-sm leading-6 text-red-900">
+                    Some agents advise students to <span className="font-semibold">start MBBS first and appear for NEET the following year.</span> This is incorrect and harmful. NMC requires NEET qualification before program commencement — appearing after does not validate your degree. NEET scores are also valid for only 3 years from the date of result.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ── Eligibility Criteria ─────────────────────────────────────────── */}
       {page.eligibility ? (
@@ -696,20 +754,17 @@ export default async function LandingPageRoute({
                   Free counselling
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-4xl">
-                  Go beyond the information — hear from real students.
+                  Ready to apply? We handle everything, free of charge.
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-white/70">
-                  Read reviews, watch video testimonials, and connect with
-                  Indian students already enrolled at these universities. When
-                  you are ready to apply, our counsellors will handle everything
-                  — shortlisting, applications, documents, and visa — for free.
+                  1,000+ students have gone through us to Vietnam. Our team manages the entire process — you don&apos;t need to visit any office or step out of your home until it is time to board your flight.
                 </p>
                 <ul className="mt-6 space-y-2">
                   {[
-                    "Read reviews and watch videos from current students",
-                    "Connect with enrolled peers to ask real questions",
-                    "Shortlist guidance based on your NEET score and budget",
-                    "Support with applications, documents, and visa",
+                    "University application submitted on your behalf",
+                    "Student visa, flight ticket & health insurance arranged",
+                    "Document legalisation & ministry authentication handled",
+                    "Hostel booked before you arrive",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-2.5 text-sm text-white/80">
                       <CheckCircle2 className="size-4 shrink-0 text-accent" />
@@ -719,9 +774,18 @@ export default async function LandingPageRoute({
                 </ul>
               </div>
               <div className="mt-10 shrink-0 space-y-3 lg:mt-0 lg:w-80">
-                <Button asChild size="lg" variant="accent" className="w-full">
-                  <Link href="/contact">Get free counselling</Link>
-                </Button>
+                <CounsellingDialog
+                  triggerContent="Get free counselling"
+                  triggerVariant="accent"
+                  triggerSize="lg"
+                  triggerClassName="w-full"
+                  title="Ready to apply?"
+                  description={`1,000+ students have trusted us with their ${page.title} journey. We handle everything — you stay home until it's time to board your flight.`}
+                  submitLabel="Yes, get me started"
+                  ctaVariant="landing_bottom_cta"
+                  countrySlug={country.slug}
+                  courseSlug={course.slug}
+                />
                 <Button asChild size="lg" variant="outline" className="w-full border-white/20 bg-white/8 text-white hover:bg-white/18 hover:text-white">
                   <Link href={`/universities?country=${country.slug}&course=${course.slug}`}>
                     See all universities

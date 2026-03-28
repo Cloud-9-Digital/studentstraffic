@@ -15,6 +15,12 @@ export function CounsellingDialog({
   triggerSize = "default",
   plainTrigger = false,
   onTriggerClick,
+  title = "Free Counselling",
+  description = "Share your details and our counsellors will reach out to guide you through your options and handle your admissions.",
+  submitLabel,
+  ctaVariant = "header_dialog",
+  countrySlug,
+  courseSlug,
 }: {
   triggerContent: React.ReactNode;
   triggerClassName?: string;
@@ -22,6 +28,12 @@ export function CounsellingDialog({
   triggerSize?: React.ComponentProps<typeof Button>["size"];
   plainTrigger?: boolean;
   onTriggerClick?: () => void;
+  title?: string;
+  description?: string;
+  submitLabel?: string;
+  ctaVariant?: string;
+  countrySlug?: string;
+  courseSlug?: string;
 }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -72,11 +84,10 @@ export function CounsellingDialog({
           <div className="mb-5 flex items-start justify-between gap-4">
             <div>
               <Dialog.Title className="text-xl font-semibold text-heading">
-                Free Counselling
+                {title}
               </Dialog.Title>
               <Dialog.Description className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                Share your details and our counsellors will reach out to
-                guide you through your options and handle your admissions.
+                {description}
               </Dialog.Description>
             </div>
             <Dialog.Close className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-black/6 hover:text-foreground">
@@ -86,7 +97,10 @@ export function CounsellingDialog({
 
           <LeadForm
             sourcePath={pathname}
-            ctaVariant="header_dialog"
+            ctaVariant={ctaVariant}
+            submitLabel={submitLabel}
+            countrySlug={countrySlug}
+            courseSlug={courseSlug}
             embedded
             stacked
           />

@@ -61,6 +61,7 @@ export function LeadForm({
   ctaVariant,
   title = "Talk to an admissions expert",
   description = "Share your details and our counsellors will reach out to understand your goals and guide you through your options.",
+  submitLabel = "Get free guidance",
   courseSlug,
   countrySlug,
   universitySlug,
@@ -71,6 +72,7 @@ export function LeadForm({
   ctaVariant: string;
   title?: string;
   description?: string;
+  submitLabel?: string;
   courseSlug?: string;
   countrySlug?: string;
   universitySlug?: string;
@@ -157,7 +159,7 @@ export function LeadForm({
       )}
 
       <Button type="submit" size="lg" className="w-full" disabled={isPending}>
-        {isPending ? "Submitting..." : "Get free guidance"}
+        {isPending ? "Submitting..." : submitLabel}
       </Button>
     </form>
   );
