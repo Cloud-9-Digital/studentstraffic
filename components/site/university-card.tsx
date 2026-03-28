@@ -11,7 +11,13 @@ import {
   hasPublishedUsdAmount,
 } from "@/lib/utils";
 
-export function UniversityCard({ program }: { program: FinderProgram }) {
+export function UniversityCard({
+  program,
+  imagePriority = false,
+}: {
+  program: FinderProgram;
+  imagePriority?: boolean;
+}) {
   const { university, country, course, offering } = program;
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
@@ -31,6 +37,8 @@ export function UniversityCard({ program }: { program: FinderProgram }) {
             alt={coverImage.alt}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            priority={imagePriority}
+            loading={imagePriority ? "eager" : undefined}
             className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
         ) : (

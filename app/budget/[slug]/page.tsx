@@ -147,8 +147,12 @@ export default async function BudgetGuidePage({
             description="Start with budget here, then open university pages for a deeper look at country, city, recognition, and support."
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {guide.programs.map((program) => (
-              <UniversityCard key={program.offering.slug} program={program} />
+            {guide.programs.map((program, index) => (
+              <UniversityCard
+                key={program.offering.slug}
+                program={program}
+                imagePriority={index < 2}
+              />
             ))}
           </div>
           <div className="flex flex-wrap gap-3">

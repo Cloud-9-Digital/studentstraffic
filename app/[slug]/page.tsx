@@ -7,7 +7,6 @@ import {
   CheckCircle2,
   ChevronRight,
   Phone,
-  ShieldCheck,
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -247,8 +246,12 @@ export default async function LandingPageRoute({
           </div>
 
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
-            {previewPrograms.map((program) => (
-              <UniversityCard key={program.offering.slug} program={program} />
+            {previewPrograms.map((program, index) => (
+              <UniversityCard
+                key={program.offering.slug}
+                program={program}
+                imagePriority={index < 2}
+              />
             ))}
           </div>
 

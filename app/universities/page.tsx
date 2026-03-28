@@ -213,8 +213,12 @@ async function CardsSection({
     <>
       <h2 className="sr-only">University results</h2>
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
-        {programs.map((program) => (
-          <UniversityCard key={program.offering.slug} program={program} />
+        {programs.map((program, index) => (
+          <UniversityCard
+            key={program.offering.slug}
+            program={program}
+            imagePriority={index < 2}
+          />
         ))}
       </div>
     </>

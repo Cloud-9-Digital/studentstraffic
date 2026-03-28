@@ -506,8 +506,12 @@ export default async function CountryPage({
             </div>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {previewPrograms.map((program) => (
-                <UniversityCard key={program.offering.slug} program={program} />
+              {previewPrograms.map((program, index) => (
+                <UniversityCard
+                  key={program.offering.slug}
+                  program={program}
+                  imagePriority={index === 0}
+                />
               ))}
             </div>
             <div className="mt-6">

@@ -249,8 +249,12 @@ export default async function CoursePage({
             }
           />
             <div className="soft-grid sm:grid-cols-2 xl:grid-cols-3">
-              {previewPrograms.map((program) => (
-                <UniversityCard key={program.offering.slug} program={program} />
+              {previewPrograms.map((program, index) => (
+                <UniversityCard
+                  key={program.offering.slug}
+                  program={program}
+                  imagePriority={index < 2}
+                />
               ))}
             </div>
           </div>
