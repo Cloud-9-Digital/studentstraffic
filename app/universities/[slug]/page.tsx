@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import {
   ArrowUpRight,
   BedDouble,
@@ -144,11 +145,9 @@ export default async function UniversityDetailPage({
 
   if (!university) notFound();
 
-  const [programs, country, comparisonGuides, countryPrograms] = await Promise.all([
+  const [programs, country] = await Promise.all([
     getProgramsForUniversity(university.slug),
     getCountryBySlug(university.countrySlug),
-    getComparisonGuidesForUniversity(university.slug, 10),
-    getProgramsForCountry(university.countrySlug),
   ]);
 
   if (!country) notFound();
@@ -163,14 +162,6 @@ export default async function UniversityDetailPage({
       ? "Training & admissions planning"
       : "Licensing & exam planning";
 
-  // Deduplicate by university slug, exclude current university
-  const otherCountryPrograms = Array.from(
-    new Map(
-      countryPrograms
-        .filter((p) => p.university.slug !== university.slug)
-        .map((p) => [p.university.slug, p])
-    ).values()
-  );
   const galleryImages = getUniversityGalleryImages(university);
   const coverImage = getUniversityCoverImage(university);
   const additionalGalleryImages = galleryImages.slice(1);
@@ -290,11 +281,11 @@ export default async function UniversityDetailPage({
               </div>
 
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
-                <div className="flex items-center gap-1.5 text-xs text-white/45">
+                <div className="flex items-center gap-1.5 text-xs text-white/60">
                   <PencilLine className="size-3 shrink-0" />
                   <span>By <span className="font-medium text-white/65">{contentAuthorName}</span></span>
                 </div>
-                <div className="flex items-center gap-1.5 text-xs text-white/45">
+                <div className="flex items-center gap-1.5 text-xs text-white/60">
                   <CalendarDays className="size-3 shrink-0" />
                   <span>Updated <span className="font-medium text-white/65">{formatContentDate(catalogReviewedAt)}</span></span>
                 </div>
@@ -629,31 +620,13 @@ export default async function UniversityDetailPage({
                 </div>
               )}
 
-              {/* Comparisons */}
-              {comparisonGuides.length > 0 && (
-                <div className="py-10">
-                  <CardCarousel heading="Compare with similar">
-                    {comparisonGuides.map((guide) => (
-                      <CarouselItem key={guide.slug}>
-                        <ComparisonCard guide={guide} />
-                      </CarouselItem>
-                    ))}
-                  </CardCarousel>
-                </div>
-              )}
-
-              {/* Other universities in country */}
-              {otherCountryPrograms.length > 0 && (
-                <div className="py-10">
-                  <CardCarousel heading={`Other universities in ${country.name}`}>
-                    {otherCountryPrograms.map((program) => (
-                      <CarouselItem key={program.university.slug}>
-                        <UniversityCard program={program} />
-                      </CarouselItem>
-                    ))}
-                  </CardCarousel>
-                </div>
-              )}
+              <Suspense fallback={null}>
+                <UniversityRelatedSection
+                  universitySlug={university.slug}
+                  countrySlug={university.countrySlug}
+                  countryName={country.name}
+                />
+              </Suspense>
             </div>
 
             {/* ── Sticky sidebar ───────────────────────────────────────────── */}
@@ -751,7 +724,7 @@ function UniversityHeroMedia({
             <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.06),rgba(7,10,19,0.28))]" />
             <div className="absolute inset-x-0 bottom-0 border-t border-white/8 bg-[linear-gradient(180deg,rgba(7,10,19,0),rgba(7,10,19,0.55))] px-6 py-8">
               <div className="max-w-xs">
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/45">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/60">
                   Campus media pending
                 </p>
                 <p className="mt-2 text-sm leading-6 text-white/70">
@@ -773,6 +746,61 @@ function UniversityHeroMedia({
         </div>
       </div>
     </figure>
+  );
+}
+
+async function UniversityRelatedSection({
+  universitySlug,
+  countrySlug,
+  countryName,
+}: {
+  universitySlug: string;
+  countrySlug: string;
+  countryName: string;
+}) {
+  const [comparisonGuides, countryPrograms] = await Promise.all([
+    getComparisonGuidesForUniversity(universitySlug, 10),
+    getProgramsForCountry(countrySlug),
+  ]);
+
+  const otherCountryPrograms = Array.from(
+    new Map(
+      countryPrograms
+        .filter((program) => program.university.slug !== universitySlug)
+        .map((program) => [program.university.slug, program])
+    ).values()
+  );
+
+  if (comparisonGuides.length === 0 && otherCountryPrograms.length === 0) {
+    return null;
+  }
+
+  return (
+    <>
+      {comparisonGuides.length > 0 && (
+        <div className="py-10">
+          <CardCarousel heading="Compare with similar">
+            {comparisonGuides.map((guide) => (
+              <CarouselItem key={guide.slug}>
+                <ComparisonCard guide={guide} />
+              </CarouselItem>
+            ))}
+          </CardCarousel>
+        </div>
+      )}
+
+      {otherCountryPrograms.length > 0 && (
+        <div className="py-10">
+          <CardCarousel heading={`Other universities in ${countryName}`}>
+            {otherCountryPrograms.map((program) => (
+              <CarouselItem key={program.university.slug}>
+                <UniversityCard program={program} />
+              </CarouselItem>
+            ))}
+          </CardCarousel>
+        </div>
+      )}
+    </>
   );
 }
 

@@ -56,12 +56,12 @@ export function SiteFooter() {
               <Image
                 src="/logo.webp"
                 alt="Students Traffic"
-                width={180}
-                height={48}
+                width={256}
+                height={28}
                 className="h-7 w-auto brightness-0 invert"
               />
             </Link>
-            <p className="max-w-sm text-sm leading-6 text-white/50">
+            <p className="max-w-sm text-sm leading-6 text-white/70">
               Students Traffic helps Indian students and parents explore
               medical study-abroad options, understand the differences between
               countries and universities, and get guidance throughout the
@@ -70,14 +70,14 @@ export function SiteFooter() {
             <div className="space-y-2">
               <a
                 href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-                className="flex items-center gap-2.5 text-sm text-white/55 transition-colors hover:text-white"
+                className="flex items-center gap-2.5 text-sm text-white/75 transition-colors hover:text-white"
               >
                 <Phone className="size-3.5 shrink-0" />
                 {siteConfig.phone}
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="flex items-center gap-2.5 text-sm text-white/55 transition-colors hover:text-white"
+                className="flex items-center gap-2.5 text-sm text-white/75 transition-colors hover:text-white"
               >
                 <Mail className="size-3.5 shrink-0" />
                 {siteConfig.email}
@@ -86,7 +86,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/35">
+            <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/55">
               Start Here
             </p>
             <ul className="space-y-2.5">
@@ -99,7 +99,7 @@ export function SiteFooter() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-white/60 transition-colors hover:text-white"
+                    className="text-sm text-white/80 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -109,7 +109,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/35">
+            <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/55">
               Guides
             </p>
             <ul className="space-y-2.5">
@@ -117,7 +117,7 @@ export function SiteFooter() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-white/60 transition-colors hover:text-white"
+                    className="text-sm text-white/80 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -127,7 +127,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/35">
+            <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/55">
               Trust & Support
             </p>
             <ul className="space-y-2.5">
@@ -141,7 +141,7 @@ export function SiteFooter() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-white/60 transition-colors hover:text-white"
+                    className="text-sm text-white/80 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -155,7 +155,7 @@ export function SiteFooter() {
       <div className="border-t border-white/8">
         <div className="container-shell space-y-6 py-8">
           <div>
-            <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/30">
+            <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">
               Popular Guides
             </p>
             <div className="flex flex-wrap gap-x-1 gap-y-1">
@@ -163,7 +163,7 @@ export function SiteFooter() {
                 <span key={route.href} className="flex items-center">
                   <Link
                     href={route.href}
-                    className="text-sm text-white/45 transition-colors hover:text-white/80"
+                    className="text-sm text-white/65 transition-colors hover:text-white"
                   >
                     {route.label}
                   </Link>
@@ -177,7 +177,7 @@ export function SiteFooter() {
 
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
-              <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/30">
+              <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">
                 Country Guides
               </p>
               <div className="flex flex-wrap gap-x-1 gap-y-1">
@@ -185,7 +185,7 @@ export function SiteFooter() {
                   <span key={destination.href} className="flex items-center">
                     <Link
                       href={destination.href}
-                      className="text-sm text-white/45 transition-colors hover:text-white/80"
+                      className="text-sm text-white/65 transition-colors hover:text-white"
                     >
                       {destination.name}
                     </Link>
@@ -198,7 +198,7 @@ export function SiteFooter() {
             </div>
 
             <div>
-              <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/30">
+              <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">
                 Course Guides
               </p>
               <div className="flex flex-wrap gap-x-1 gap-y-1">
@@ -206,7 +206,7 @@ export function SiteFooter() {
                   <span key={course.href} className="flex items-center">
                     <Link
                       href={course.href}
-                      className="text-sm text-white/45 transition-colors hover:text-white/80"
+                      className="text-sm text-white/65 transition-colors hover:text-white"
                     >
                       {course.name}
                     </Link>
@@ -223,17 +223,17 @@ export function SiteFooter() {
 
       <div className="border-t border-white/8">
         <div className="container-shell flex flex-col gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-white/30">
+          <p className="text-xs text-white/50">
             © {siteConfig.copyrightYear} Students Traffic. All rights reserved.
           </p>
-          <div className="flex gap-5 text-xs text-white/30">
-            <Link href="/privacy" className="transition-colors hover:text-white/60">
+          <div className="flex gap-5 text-xs text-white/50">
+            <Link href="/privacy" className="transition-colors hover:text-white/80">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="transition-colors hover:text-white/60">
+            <Link href="/terms" className="transition-colors hover:text-white/80">
               Terms of Service
             </Link>
-            <Link href="/sitemap.xml" className="transition-colors hover:text-white/60">
+            <Link href="/sitemap.xml" className="transition-colors hover:text-white/80">
               Sitemap
             </Link>
           </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import { Suspense } from "react";
 import {
   ArrowRight,
   BookOpen,
@@ -105,12 +106,6 @@ export default async function CountryPage({
   const primaryProgram = programs[0];
   const curatedLandingPageHref = primaryProgram
     ? getLandingPageHref(primaryProgram.course.slug, country.slug)
-    : null;
-  const recommendedBudgetGuide = primaryProgram
-    ? await getRecommendedBudgetGuideForCourse(primaryProgram.course.slug)
-    : null;
-  const landingPage = curatedLandingPageHref
-    ? await getLandingPageBySlug(curatedLandingPageHref.slice(1))
     : null;
   const previewPrograms = programs.slice(0, 3);
 
@@ -216,7 +211,6 @@ export default async function CountryPage({
     ? `/universities?country=${country.slug}&course=${primaryProgram.course.slug}`
     : `/universities?country=${country.slug}`;
   const heroImage = getCountryHeroImage(country.slug);
-  const exchangeRate = await getInrExchangeRate(country.currencyCode);
   const editorialCopy = getCountryEditorialCopy({
     slug: country.slug,
     name: country.name,
@@ -227,6 +221,9 @@ export default async function CountryPage({
     courseCount: uniqueCourses.length,
   });
   const countryContent = getCountryContent(country.slug);
+  const landingPagePromise = curatedLandingPageHref
+    ? getLandingPageBySlug(curatedLandingPageHref.slice(1))
+    : Promise.resolve(null);
 
   return (
     <>
@@ -280,17 +277,21 @@ export default async function CountryPage({
                       <ArrowRight className="size-4" />
                     </Link>
                   </Button>
-                  {landingPage && primaryProgram && curatedLandingPageHref ? (
-                    <Button
-                      asChild
-                      size="lg"
-                      variant="outline"
-                      className="!bg-transparent !text-white !border-white/30 hover:!bg-white/20 hover:!text-white hover:!border-white/50"
+                  {primaryProgram && curatedLandingPageHref ? (
+                    <Suspense
+                      fallback={
+                        <div
+                          aria-hidden="true"
+                          className="h-12 w-44 rounded-xl border border-white/20 bg-white/5"
+                        />
+                      }
                     >
-                      <Link href={curatedLandingPageHref}>
-                        Open {primaryProgram.course.shortName} guide
-                      </Link>
-                    </Button>
+                      <CountryHeroGuideLink
+                        landingPagePromise={landingPagePromise}
+                        href={curatedLandingPageHref}
+                        courseLabel={primaryProgram.course.shortName}
+                      />
+                    </Suspense>
                   ) : null}
                 </div>
               </div>
@@ -444,34 +445,12 @@ export default async function CountryPage({
             </div>
           </div>
 
-          {/* Currency converter */}
-          {exchangeRate ? (
-            <div className="mt-10 max-w-sm">
-              <CurrencyConverter
-                rate={exchangeRate.rate}
-                localCurrency={country.currencyCode}
-                date={exchangeRate.date}
-              />
-            </div>
-          ) : null}
-
-          {/* Budget guide */}
-          {recommendedBudgetGuide ? (
-            <div className="mt-6 max-w-sm rounded-[1.4rem] border border-border/70 bg-[#fff9f2] p-5">
-              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#a06030] mb-3">
-                Budget guide available
-              </p>
-              <p className="text-sm leading-6 text-muted-foreground mb-4">
-                A detailed breakdown of what to budget for across all years of study.
-              </p>
-              <Button asChild variant="outline" size="sm" className="w-full justify-between">
-                <Link href={`/budget/${recommendedBudgetGuide.slug}`}>
-                  Explore budget guide
-                  <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-            </div>
-          ) : null}
+          <Suspense fallback={null}>
+            <CountryCostAddOns
+              currencyCode={country.currencyCode}
+              courseSlug={primaryProgram?.course.slug}
+            />
+          </Suspense>
 
           {/* Monthly living cost breakdown */}
           {countryContent?.costOfLiving ? (
@@ -857,6 +836,81 @@ function GuidancePoint({ label, text }: { label: string; text: string }) {
       <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-primary/70 mb-1">{label}</p>
       <p className="text-sm leading-6 text-muted-foreground">{text}</p>
     </div>
+  );
+}
+
+async function CountryHeroGuideLink({
+  landingPagePromise,
+  href,
+  courseLabel,
+}: {
+  landingPagePromise: Promise<Awaited<ReturnType<typeof getLandingPageBySlug>>>;
+  href: string;
+  courseLabel: string;
+}) {
+  const landingPage = await landingPagePromise;
+
+  if (!landingPage) {
+    return null;
+  }
+
+  return (
+    <Button
+      asChild
+      size="lg"
+      variant="outline"
+      className="!bg-transparent !text-white !border-white/30 hover:!bg-white/20 hover:!text-white hover:!border-white/50"
+    >
+      <Link href={href}>Open {courseLabel} guide</Link>
+    </Button>
+  );
+}
+
+async function CountryCostAddOns({
+  currencyCode,
+  courseSlug,
+}: {
+  currencyCode: string;
+  courseSlug?: string;
+}) {
+  const [exchangeRate, recommendedBudgetGuide] = await Promise.all([
+    getInrExchangeRate(currencyCode),
+    courseSlug ? getRecommendedBudgetGuideForCourse(courseSlug) : Promise.resolve(null),
+  ]);
+
+  if (!exchangeRate && !recommendedBudgetGuide) {
+    return null;
+  }
+
+  return (
+    <>
+      {exchangeRate ? (
+        <div className="mt-10 max-w-sm">
+          <CurrencyConverter
+            rate={exchangeRate.rate}
+            localCurrency={currencyCode}
+            date={exchangeRate.date}
+          />
+        </div>
+      ) : null}
+
+      {recommendedBudgetGuide ? (
+        <div className="mt-6 max-w-sm rounded-[1.4rem] border border-border/70 bg-[#fff9f2] p-5">
+          <p className="mb-3 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#a06030]">
+            Budget guide available
+          </p>
+          <p className="mb-4 text-sm leading-6 text-muted-foreground">
+            A detailed breakdown of what to budget for across all years of study.
+          </p>
+          <Button asChild variant="outline" size="sm" className="w-full justify-between">
+            <Link href={`/budget/${recommendedBudgetGuide.slug}`}>
+              Explore budget guide
+              <ArrowRight className="size-4" />
+            </Link>
+          </Button>
+        </div>
+      ) : null}
+    </>
   );
 }
 

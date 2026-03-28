@@ -46,6 +46,7 @@ export function CurrencyConverter({
     day: "numeric",
     month: "short",
     year: "numeric",
+    timeZone: "UTC",
   });
 
   return (
@@ -59,7 +60,7 @@ export function CurrencyConverter({
             INR ↔ {localCurrency}
           </p>
         </div>
-        <span className="text-[0.65rem] text-muted-foreground/70 text-right leading-5">
+        <span className="text-[0.65rem] text-muted-foreground text-right leading-5">
           Last updated<br />{formattedDate}
         </span>
       </div>
@@ -67,7 +68,7 @@ export function CurrencyConverter({
       {/* Rate summary */}
       <div className="mb-4 rounded-xl bg-[#f7f5f0] px-4 py-3 flex items-center justify-between gap-4">
         <span className="text-sm text-muted-foreground">1 INR</span>
-        <span className="text-xs text-muted-foreground/50">=</span>
+        <span className="text-xs text-muted-foreground">=</span>
         <span className="text-sm font-semibold text-foreground">
           {formatDisplay(rate, localCurrency)} {localCurrency}
         </span>
@@ -96,7 +97,7 @@ export function CurrencyConverter({
         />
       </div>
 
-      <p className="mt-4 text-[0.65rem] leading-5 text-muted-foreground/60">
+      <p className="mt-4 text-[0.65rem] leading-5 text-muted-foreground">
         Indicative rate, updated daily. Use for planning only — verify with your bank before transferring funds.
       </p>
     </div>
@@ -123,7 +124,7 @@ function ConverterInput({
         inputMode="decimal"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="min-w-0 flex-1 bg-transparent text-right text-sm font-medium text-foreground outline-none placeholder:text-muted-foreground/40"
+        className="min-w-0 flex-1 bg-transparent text-right text-sm font-medium text-foreground outline-none placeholder:text-muted-foreground/70"
         placeholder="0"
       />
     </div>

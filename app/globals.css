@@ -30,10 +30,10 @@
   --heading: #155e53;
   --heading-contrast: #b9efd0;
   --primary-foreground: #ffffff;
-  --accent: #f08a4b;
+  --accent: #c2410c;
   --accent-foreground: #ffffff;
-  --accent-strong: #dc7435;
-  --accent-soft: rgba(240, 138, 75, 0.12);
+  --accent-strong: #9a3412;
+  --accent-soft: rgba(194, 65, 12, 0.12);
 
   /* Semantic colors */
   --secondary: #f2f2f2;
@@ -46,7 +46,7 @@
   /* UI colors */
   --border: rgba(0, 0, 0, 0.1);
   --input: rgba(0, 0, 0, 0.06);
-  --ring: #f08a4b;
+  --ring: #c2410c;
 
   /* Surface variants */
   --surface-dark: #0f3d37;

@@ -133,6 +133,7 @@ async function MobileFilters({
 
   return (
     <FinderFilterForm
+      key={JSON.stringify(filters)}
       countries={options.countries}
       courses={options.courses}
       mediums={options.mediums}
@@ -155,6 +156,7 @@ async function SidebarSection({
   return (
     <aside className="hidden lg:block lg:sticky lg:top-20">
       <FinderFilterForm
+        key={JSON.stringify(filters)}
         countries={options.countries}
         courses={options.courses}
         mediums={options.mediums}
@@ -208,11 +210,14 @@ async function CardsSection({
   };
 
   const cards = programs.length ? (
-    <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
-      {programs.map((program) => (
-        <UniversityCard key={program.offering.slug} program={program} />
-      ))}
-    </div>
+    <>
+      <h2 className="sr-only">University results</h2>
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+        {programs.map((program) => (
+          <UniversityCard key={program.offering.slug} program={program} />
+        ))}
+      </div>
+    </>
   ) : (
     <Card>
       <CardContent className="py-16 text-center">
@@ -254,8 +259,7 @@ async function CardsSection({
                 <PaginationItem>
                   <PaginationPrevious
                     href={currentPage > 1 ? pageUrl(currentPage - 1) : undefined}
-                    aria-disabled={currentPage <= 1}
-                    className={currentPage <= 1 ? "pointer-events-none opacity-50" : ""}
+                    disabled={currentPage <= 1}
                   />
                 </PaginationItem>
 
@@ -276,8 +280,7 @@ async function CardsSection({
                 <PaginationItem>
                   <PaginationNext
                     href={currentPage < totalPages ? pageUrl(currentPage + 1) : undefined}
-                    aria-disabled={currentPage >= totalPages}
-                    className={currentPage >= totalPages ? "pointer-events-none opacity-50" : ""}
+                    disabled={currentPage >= totalPages}
                   />
                 </PaginationItem>
               </PaginationContent>

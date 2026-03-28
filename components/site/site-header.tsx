@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -30,15 +30,15 @@ function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; show
       <Image
         src="/logo.webp"
         alt="Students Traffic"
-        width={180}
-        height={48}
+        width={256}
+        height={28}
         className="h-4 w-auto"
         priority
       />
       {showTagline && (
         <>
-          <span className="h-5 w-px shrink-0 bg-foreground/20" aria-hidden />
-          <span className="text-[9px] font-medium leading-snug text-foreground/45">
+          <span className="h-5 w-px shrink-0 bg-foreground/25" aria-hidden />
+          <span className="text-[9px] font-medium leading-snug text-foreground/65">
             India&apos;s Trusted<br />Study Abroad Platform
           </span>
         </>

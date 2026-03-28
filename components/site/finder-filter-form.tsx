@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ChevronDown, Search, SlidersHorizontal, X } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import {
   Sheet,
@@ -289,6 +288,22 @@ export function FinderFilterForm({
   const [sheetOpen, setSheetOpen] = useState(false);
   const isFiltered = hasActiveFilters(filters);
   const filterCount = countActiveFilters(filters);
+  const router = useRouter();
+  const [searchValue, setSearchValue] = useState(filters.q ?? "");
+
+  useEffect(() => {
+    if (sidebarMode) return;
+
+    const timer = setTimeout(() => {
+      const trimmed = searchValue.trim();
+      const current = filters.q ?? "";
+      if (trimmed !== current) {
+        router.push(buildUrl(filters, { q: trimmed || undefined }));
+      }
+    }, 400);
+
+    return () => clearTimeout(timer);
+  }, [filters, router, searchValue, sidebarMode]);
 
   // ── Sidebar mode (desktop inline panel) ────────────────────────────────────
   if (sidebarMode) {
@@ -327,23 +342,6 @@ export function FinderFilterForm({
   }
 
   // ── Hero / default mode (search bar + filter button + sheet) ───────────────
-  const router = useRouter();
-  const [searchValue, setSearchValue] = useState(filters.q ?? "");
-
-  useEffect(() => { setSearchValue(filters.q ?? ""); }, [filters.q]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const trimmed = searchValue.trim();
-      const current = filters.q ?? "";
-      if (trimmed !== current) {
-        router.push(buildUrl(filters, { q: trimmed || undefined }));
-      }
-    }, 400);
-    return () => clearTimeout(timer);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchValue]);
-
   return (
     <>
       {/* Search + filter button row */}
@@ -380,6 +378,11 @@ export function FinderFilterForm({
         <button
           type="button"
           onClick={() => setSheetOpen(true)}
+          aria-label={
+            filterCount > 0
+              ? `Open filters, ${filterCount} active`
+              : "Open filters"
+          }
           className={cn(
             "flex h-12 shrink-0 items-center gap-2 rounded-xl px-4 text-sm font-semibold transition-colors",
             heroMode

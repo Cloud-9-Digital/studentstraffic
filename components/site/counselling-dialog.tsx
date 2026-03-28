@@ -1,12 +1,20 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useId, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Dialog } from "radix-ui";
 import { X } from "lucide-react";
 
-import { LeadForm } from "@/components/site/lead-form";
+import { CounsellingDialogFormSkeleton } from "@/components/site/counselling-dialog-form-skeleton";
 import { Button } from "@/components/ui/button";
+
+const LazyLeadForm = dynamic(
+  () => import("@/components/site/lead-form").then((mod) => mod.LeadForm),
+  {
+    loading: () => <CounsellingDialogFormSkeleton />,
+  }
+);
 
 export function CounsellingDialog({
   triggerContent,
@@ -95,15 +103,19 @@ export function CounsellingDialog({
             </Dialog.Close>
           </div>
 
-          <LeadForm
-            sourcePath={pathname}
-            ctaVariant={ctaVariant}
-            submitLabel={submitLabel}
-            countrySlug={countrySlug}
-            courseSlug={courseSlug}
-            embedded
-            stacked
-          />
+          {open ? (
+            <LazyLeadForm
+              sourcePath={pathname}
+              ctaVariant={ctaVariant}
+              submitLabel={submitLabel}
+              countrySlug={countrySlug}
+              courseSlug={courseSlug}
+              embedded
+              stacked
+            />
+          ) : (
+            <CounsellingDialogFormSkeleton />
+          )}
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
