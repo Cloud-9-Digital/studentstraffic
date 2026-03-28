@@ -113,7 +113,7 @@ export function UniversityCard({ program }: { program: FinderProgram }) {
               {formatUsdAmountOrTbd(offering.annualTuitionUsd)}
             </span>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col items-end">
             <span className="text-[0.65rem] text-muted-foreground">Course</span>
             <span className="text-sm font-semibold text-foreground">{course.shortName}</span>
           </div>

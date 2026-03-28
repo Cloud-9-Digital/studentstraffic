@@ -99,14 +99,9 @@ export default function AboutPage() {
                 <span className="italic text-accent">Better decisions.</span>
               </h1>
               <p className="max-w-lg text-base leading-8 text-muted-foreground">
-                We built Students Traffic to be the most detailed resource for
-                Indian students researching universities abroad — covering
                 500+ MBBS and medical programs across Russia, Georgia,
-                Kazakhstan, Vietnam, Kyrgyzstan, Uzbekistan, and more. Students can
-                read real reviews, watch video testimonials, and connect
-                directly with peers already enrolled before making a decision.
-                We back all of it with free end-to-end admissions support from
-                counsellors who have taken 2,000+ students from enquiry to
+                Kazakhstan, Vietnam, Kyrgyzstan, and more — with real reviews,
+                peer connect, and free admissions support from enquiry to
                 enrolment.
               </p>
               <div className="flex flex-wrap gap-3 pt-1">

@@ -4,19 +4,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  ArrowRight,
-  ChevronDown,
-  ChevronRight,
-  Menu,
-  Phone,
-  X,
-} from "lucide-react";
+import { ArrowRight, Menu, Phone, X } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { SearchPalette } from "@/components/site/search-palette";
 import { cn } from "@/lib/utils";
-import { guideNav, siteConfig } from "@/lib/constants";
+import { siteConfig } from "@/lib/constants";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -46,48 +39,19 @@ function SiteLogo({ onClick }: { onClick?: () => void }) {
   );
 }
 
-function GuidesPanel() {
-  return (
-    <div className="w-[520px] overflow-hidden rounded-xl border border-border bg-white shadow-dropdown">
-      <div className="border-b border-border bg-muted/30 px-4 py-3">
-        <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-          Research Guides
-        </p>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Explore country, course, comparison, and budget guides built to help
-          students and parents make better study-abroad decisions.
-        </p>
-      </div>
-      <div className="grid gap-0.5 p-2">
-        {guideNav.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className="group flex items-start justify-between gap-3 rounded-xl p-3 transition-colors hover:bg-muted"
-          >
-            <div>
-              <p className="text-sm font-semibold text-foreground transition-colors group-hover:text-primary">
-                {item.label}
-              </p>
-              <p className="mt-0.5 text-2xs leading-relaxed text-muted-foreground">
-                {item.description}
-              </p>
-            </div>
-            <ChevronRight className="mt-0.5 size-3.5 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
-}
+const navLinks = [
+  { href: "/universities", label: "Universities" },
+  { href: "/countries",    label: "Countries" },
+  { href: "/courses",      label: "Courses" },
+  { href: "/guides",       label: "Guides" },
+  { href: "/about",        label: "About" },
+  { href: "/contact",      label: "Contact" },
+] as const;
 
 export function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [guidesOpen, setGuidesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileGuidesOpen, setMobileGuidesOpen] = useState(false);
-  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 6);
@@ -102,34 +66,12 @@ export function SiteHeader() {
     };
   }, [mobileOpen]);
 
-  const openGuides = useCallback(() => {
-    if (closeTimer.current) {
-      clearTimeout(closeTimer.current);
-    }
-    setGuidesOpen(true);
-  }, []);
+  const closeMobile = useCallback(() => setMobileOpen(false), []);
 
-  const scheduleGuidesClose = useCallback(() => {
-    closeTimer.current = setTimeout(() => setGuidesOpen(false), 120);
-  }, []);
-
-  const cancelGuidesClose = useCallback(() => {
-    if (closeTimer.current) {
-      clearTimeout(closeTimer.current);
-    }
-  }, []);
-
-  const closeMobile = useCallback(() => {
-    setMobileOpen(false);
-    setMobileGuidesOpen(false);
-  }, []);
-
-  const isGuidesPath =
-    pathname === "/guides" ||
-    pathname.startsWith("/countries") ||
-    pathname.startsWith("/courses") ||
-    pathname.startsWith("/compare") ||
-    pathname.startsWith("/budget");
+  const isActive = (href: string) =>
+    href === "/"
+      ? pathname === "/"
+      : pathname === href || pathname.startsWith(href + "/");
 
   return (
     <>
@@ -142,80 +84,25 @@ export function SiteHeader() {
         <div className="relative flex h-16 items-center px-4 sm:px-6 lg:px-8">
           <SiteLogo />
 
+          {/* Desktop nav */}
           <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-0.5 lg:flex">
-            <Link
-              href="/universities"
-              className={cn(
-                "rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
-                pathname.startsWith("/universities")
-                  ? "bg-primary/8 text-primary"
-                  : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-              )}
-            >
-              Universities
-            </Link>
-
-            <div
-              className="relative"
-              onMouseEnter={openGuides}
-              onMouseLeave={scheduleGuidesClose}
-            >
-              <button
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
                 className={cn(
-                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
-                  guidesOpen || isGuidesPath
+                  "rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                  isActive(href)
                     ? "bg-primary/8 text-primary"
                     : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
                 )}
               >
-                Guides
-                <ChevronDown
-                  className={cn(
-                    "size-3.5 transition-transform duration-200",
-                    guidesOpen && "rotate-180",
-                  )}
-                />
-              </button>
-
-              <div
-                className={cn(
-                  "absolute left-0 top-full pt-2.5 transition-[opacity,transform] duration-200",
-                  guidesOpen
-                    ? "pointer-events-auto translate-y-0 opacity-100"
-                    : "pointer-events-none translate-y-2 opacity-0",
-                )}
-                onMouseEnter={cancelGuidesClose}
-                onMouseLeave={scheduleGuidesClose}
-              >
-                <GuidesPanel />
-              </div>
-            </div>
-
-            <Link
-              href="/about"
-              className={cn(
-                "rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
-                pathname === "/about"
-                  ? "bg-primary/8 text-primary"
-                  : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-              )}
-            >
-              About
-            </Link>
-
-            <Link
-              href="/contact"
-              className={cn(
-                "rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
-                pathname === "/contact"
-                  ? "bg-primary/8 text-primary"
-                  : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-              )}
-            >
-              Contact
-            </Link>
+                {label}
+              </Link>
+            ))}
           </nav>
 
+          {/* Desktop actions */}
           <div className="ml-auto hidden items-center gap-1 lg:flex">
             <SearchPalette />
             <a
@@ -247,6 +134,7 @@ export function SiteHeader() {
             />
           </div>
 
+          {/* Mobile toggle */}
           <div className="ml-auto flex items-center gap-1 lg:hidden">
             <SearchPalette />
             <button
@@ -260,6 +148,7 @@ export function SiteHeader() {
         </div>
       </header>
 
+      {/* Mobile overlay */}
       <div
         aria-hidden="true"
         className={cn(
@@ -271,6 +160,7 @@ export function SiteHeader() {
         onClick={closeMobile}
       />
 
+      {/* Mobile drawer */}
       <div
         className={cn(
           "fixed right-0 top-0 z-50 flex h-full w-[min(340px,90vw)] flex-col bg-background shadow-drawer transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden",
@@ -290,73 +180,16 @@ export function SiteHeader() {
 
         <div className="flex flex-1 flex-col overflow-y-auto">
           <nav className="flex-1 space-y-0.5 p-3">
-            <Link
-              href="/universities"
-              onClick={closeMobile}
-              className="flex w-full items-center rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
-            >
-              Universities
-            </Link>
-
-            <div>
-              <button
-                onClick={() => setMobileGuidesOpen((value) => !value)}
-                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={closeMobile}
+                className="flex w-full items-center rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
               >
-                Guides
-                <ChevronDown
-                  className={cn(
-                    "size-4 text-muted-foreground transition-transform duration-200",
-                    mobileGuidesOpen && "rotate-180",
-                  )}
-                />
-              </button>
-              <div
-                className={cn(
-                  "overflow-hidden transition-all duration-300",
-                  mobileGuidesOpen
-                    ? "max-h-[520px] opacity-100"
-                    : "max-h-0 opacity-0",
-                )}
-              >
-                <div className="space-y-0.5 pb-2 pl-2 pr-1 pt-1">
-                  {guideNav.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={closeMobile}
-                      className="flex items-center justify-between rounded-xl px-3 py-2.5 transition-colors hover:bg-black/5"
-                    >
-                      <div>
-                        <p className="text-sm font-medium text-foreground">
-                          {item.label}
-                        </p>
-                        <p className="text-2xs leading-relaxed text-muted-foreground">
-                          {item.description}
-                        </p>
-                      </div>
-                      <ChevronRight className="size-3.5 shrink-0 text-muted-foreground" />
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <Link
-              href="/about"
-              onClick={closeMobile}
-              className="flex w-full items-center rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
-            >
-              About
-            </Link>
-
-            <Link
-              href="/contact"
-              onClick={closeMobile}
-              className="flex w-full items-center rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
-            >
-              Contact
-            </Link>
+                {label}
+              </Link>
+            ))}
           </nav>
 
           <div className="flex-shrink-0 space-y-2.5 border-t border-border p-4">

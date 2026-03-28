@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useRef } from "react";
+import { ChevronDown } from "lucide-react";
 
 import {
   type LeadFormState,
@@ -137,18 +138,21 @@ export function LeadForm({
         </div>
         <div className="space-y-2">
           <Label htmlFor="lf-state">State</Label>
-          <select
-            id="lf-state"
-            name="userState"
-            required
-            defaultValue=""
-            className="h-11 w-full min-w-0 rounded-xl border border-input bg-transparent px-4 py-3 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
-          >
-            <option value="" disabled className="text-muted-foreground">Select state</option>
-            {INDIAN_STATES.map((s) => (
-              <option key={s} value={s}>{s}</option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              id="lf-state"
+              name="userState"
+              required
+              defaultValue=""
+              className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              <option value="" disabled className="text-muted-foreground">Select state</option>
+              {INDIAN_STATES.map((s) => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+          </div>
         </div>
       </div>
 
