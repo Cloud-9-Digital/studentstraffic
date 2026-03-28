@@ -26,19 +26,19 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; showTagline?: boolean }) {
   return (
-    <Link href="/" onClick={onClick} className="flex shrink-0 items-center gap-3">
+    <Link href="/" onClick={onClick} className="flex shrink-0 items-center gap-2.5">
       <Image
         src="/logo.webp"
         alt="Students Traffic"
         width={180}
         height={48}
-        className="h-5 w-auto"
+        className="h-4 w-auto"
         priority
       />
       {showTagline && (
         <>
-          <span className="h-4 w-px bg-foreground/20" aria-hidden />
-          <span className="text-[10px] font-medium leading-snug text-foreground/50">
+          <span className="h-5 w-px shrink-0 bg-foreground/20" aria-hidden />
+          <span className="text-[9px] font-medium leading-snug text-foreground/45">
             India&apos;s Trusted<br />Study Abroad Platform
           </span>
         </>
