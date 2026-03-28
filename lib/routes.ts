@@ -2,6 +2,10 @@ export function getCountryHref(countrySlug: string) {
   return `/countries/${countrySlug}`;
 }
 
+export function getGuidesIndexHref() {
+  return "/guides";
+}
+
 export function getCourseHref(courseSlug: string) {
   return `/courses/${courseSlug}`;
 }

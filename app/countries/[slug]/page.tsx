@@ -13,7 +13,6 @@ import {
   GraduationCap,
   Globe2,
   MapPin,
-  Thermometer,
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -41,7 +40,7 @@ import {
 import { getCountryHeroImage } from "@/lib/country-media";
 import { isValidRecognitionBadge } from "@/lib/data/recognition-bodies";
 import { getInrExchangeRate } from "@/lib/exchange-rate";
-import { getLandingPageHref, getUniversityHref } from "@/lib/routes";
+import { getLandingPageHref } from "@/lib/routes";
 import { getCountryContent } from "@/lib/data/country-content";
 import {
   cn,
@@ -113,6 +112,7 @@ export default async function CountryPage({
   const landingPage = curatedLandingPageHref
     ? await getLandingPageBySlug(curatedLandingPageHref.slice(1))
     : null;
+  const previewPrograms = programs.slice(0, 3);
 
   const path = `/countries/${country.slug}`;
   const countryPageDescription = primaryProgram
@@ -122,6 +122,7 @@ export default async function CountryPage({
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
+      { name: "Guides", path: "/guides" },
       { name: "Countries", path: "/countries" },
       { name: country.name, path },
     ]),
@@ -250,6 +251,8 @@ export default async function CountryPage({
                 {/* Breadcrumb */}
                 <nav className="mb-6 flex items-center gap-1.5 text-xs text-white/36">
                   <Link href="/" className="hover:text-white/70 transition-colors">Home</Link>
+                  <ChevronRight className="size-3 shrink-0" />
+                  <Link href="/guides" className="hover:text-white/70 transition-colors">Guides</Link>
                   <ChevronRight className="size-3 shrink-0" />
                   <Link href="/countries" className="hover:text-white/70 transition-colors">Countries</Link>
                   <ChevronRight className="size-3 shrink-0" />
@@ -466,13 +469,15 @@ export default async function CountryPage({
         {/* ── UNIVERSITY DIRECTORY ────────────────────────────── */}
         {programs.length ? (
           <div className="py-14 md:py-18">
-            <SectionLabel icon={<GraduationCap className="size-3.5" />} text="University Directory" />
+            <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Finder Preview" />
 
             <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-              Universities in {country.name}
+              Browse universities in {country.name}
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground">
-              {editorialCopy.directoryLead}
+              If you want to browse all currently listed universities in
+              {` ${country.name}, `}this section gives you a quick preview before
+              you open the full university list.
             </p>
 
             {/* Snapshot row */}
@@ -485,9 +490,17 @@ export default async function CountryPage({
             </div>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {programs.map((program) => (
+              {previewPrograms.map((program) => (
                 <UniversityCard key={program.offering.slug} program={program} />
               ))}
+            </div>
+            <div className="mt-6">
+              <Button asChild variant="outline">
+                <Link href={heroPrimaryHref}>
+                  See all {country.name} universities
+                  <ArrowRight className="size-4" />
+                </Link>
+              </Button>
             </div>
           </div>
         ) : null}
@@ -657,14 +670,16 @@ export default async function CountryPage({
           </>
         )}
 
-        {/* ── LEAD FORM ───────────────────────────────────────── */}
+        {/* ── NEXT STEP ───────────────────────────────────────── */}
         <div className="py-14 md:py-18">
-          <SectionLabel text="Free Guidance" />
+          <SectionLabel text="Next Step" />
           <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            Need help reading the options in {country.name}?
+            Need help after you have explored {country.name}?
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
-            {editorialCopy.guidanceLead}
+            Share your details if you want help understanding the differences
+            between universities, expected costs, or the next admissions step
+            for studying in {country.name}.
           </p>
 
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -674,12 +689,21 @@ export default async function CountryPage({
             <GuidancePoint label="Next steps" text="What to verify before sending an application" />
           </div>
 
-          <div className="mt-8 max-w-lg rounded-[1.8rem] border border-border/70 bg-white p-6 shadow-[0_12px_40px_-16px_rgba(0,0,0,0.1)]">
+          <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-start">
+            <div className="flex flex-wrap gap-3">
+              <Button asChild size="lg">
+                <Link href={heroPrimaryHref}>Explore universities</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link href="/contact">Talk to the team</Link>
+              </Button>
+            </div>
+
             <LeadForm
               sourcePath={`/countries/${country.slug}`}
               ctaVariant="country_sidebar"
               title={`Talk through studying in ${country.name}`}
-              description="Share your details if you want help understanding the differences between universities, likely costs, and the next questions worth asking."
+              description="Tell us what you are comparing and our counsellors will help you evaluate your options more clearly."
               countrySlug={country.slug}
               courseSlug={primaryProgram?.course.slug}
             />

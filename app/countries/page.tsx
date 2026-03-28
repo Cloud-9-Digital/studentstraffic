@@ -16,9 +16,9 @@ import { getCountryHref } from "@/lib/routes";
 import { navDestinations } from "@/lib/constants";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Study Destinations",
+  title: "Study Abroad Country Guides for Indian Students — MBBS Fees & Recognition",
   description:
-    "Browse country guides for Indian students comparing universities, fees, cities, and teaching options abroad.",
+    "In-depth country guides for Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, Uzbekistan, and more — covering MBBS fees, NMC recognition, hostel costs, FMGE outcomes, and eligibility for Indian students.",
   path: "/countries",
 });
 
@@ -54,9 +54,9 @@ export default async function CountriesPage() {
     <section className="section-space">
       <div className="container-shell space-y-12">
         <SectionHeading
-          eyebrow="Study Destinations"
-          title="Country guides built for deeper destination research"
-          description="These destination pages bring together country context, costs, city spread, and university options so students can understand each market before comparing individual campuses."
+          eyebrow="Study Abroad Destinations"
+          title="Research the destination before you shortlist the university"
+          description="Each guide covers MBBS fees, NMC recognition status, FMGE pass rates, hostel and living costs, city options, intake timelines, and NEET eligibility — everything Indian students and parents need to compare destinations with confidence."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -92,7 +92,7 @@ export default async function CountriesPage() {
                       {country.summary}
                     </p>
                     <div className="flex flex-wrap gap-3 text-xs text-muted-foreground">
-                      <span>{programCounts.get(country.slug) ?? 0} programs</span>
+                      <span>{programCounts.get(country.slug) ?? 0} listed options</span>
                       <span>{country.currencyCode}</span>
                       <span>{country.climate}</span>
                     </div>

@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Students Traffic",
   shortName: "Students Traffic",
   description:
-    "Students Traffic helps Indian students shortlist global universities, compare courses and fees, and capture expert guidance for study-abroad admissions, starting with medical.",
+    "Students Traffic helps Indian students research medical study-abroad options, compare universities, and get guided admissions support when they are ready to apply.",
   copyrightYear: 2026,
   email: "hello@studentstraffic.com",
   phone: "+91 91716 12888",
@@ -16,9 +16,37 @@ export const defaultSiteUrl = "http://localhost:3000";
 export const marketingNav = [
   { href: "/", label: "Home" },
   { href: "/universities", label: "University Finder" },
-  { href: "/search", label: "Search" },
-  { href: "/courses/mbbs", label: "MBBS" },
-  { href: "/countries/vietnam", label: "Vietnam" },
+  { href: "/guides", label: "Guides" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+] as const;
+
+export const guideNav = [
+  {
+    href: "/guides",
+    label: "All Guides",
+    description: "Country, course, comparison, and budget research in one place",
+  },
+  {
+    href: "/countries",
+    label: "Country Guides",
+    description: "Costs, recognition, student life, and destination context",
+  },
+  {
+    href: "/courses",
+    label: "Course Guides",
+    description: "Understand MBBS, BDS, nursing, and postgraduate routes",
+  },
+  {
+    href: "/compare",
+    label: "Comparison Guides",
+    description: "Side-by-side university evaluations for shortlist decisions",
+  },
+  {
+    href: "/budget",
+    label: "Budget Guides",
+    description: "Research by tuition range before opening university pages",
+  },
 ] as const;
 
 export const navDestinations = [
@@ -72,7 +100,7 @@ export const navCourses = [
     description: "Bachelor of Dental Surgery",
   },
   {
-    href: "/courses/md-ms",
+    href: "/courses/medical-pg",
     name: "MD / MS",
     description: "Postgraduate Medical Programs",
   },
@@ -95,7 +123,7 @@ export const footerPopularRoutes = [
 export const homeCourseCategories = [
   { name: "MBBS", description: "Bachelor of Medicine & Surgery", href: "/courses/mbbs" },
   { name: "BDS", description: "Bachelor of Dental Surgery", href: "/courses/bds" },
-  { name: "MD / MS", description: "Postgraduate Medical Programs", href: "/courses/md-ms" },
+  { name: "MD / MS", description: "Postgraduate Medical Programs", href: "/courses/medical-pg" },
   { name: "Nursing", description: "BSc & MSc Nursing", href: "/courses/nursing" },
   { name: "B.Tech / Engineering", description: "Undergraduate Engineering", href: "/universities" },
   { name: "MBA", description: "Master of Business Administration", href: "/universities" },

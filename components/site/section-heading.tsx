@@ -24,6 +24,11 @@ export function SectionHeading({
     >
       <div className={cn("space-y-4", align === "center" && "md:items-center")}>
         <div className="space-y-3">
+          {eyebrow ? (
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+              {eyebrow}
+            </p>
+          ) : null}
           <h2 className="font-display text-heading text-4xl font-semibold tracking-tight md:text-5xl">
             {title}
           </h2>

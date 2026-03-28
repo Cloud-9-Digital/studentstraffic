@@ -13,30 +13,30 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "About Students Traffic",
+  title: "About Students Traffic — MBBS Abroad Guidance for Indian Students",
   description:
-    "Students Traffic helps Indian students find and apply to the best universities abroad — with transparent comparisons, verified information, and free end-to-end admissions support.",
+    "Students Traffic is India's most detailed resource for studying abroad — 500+ universities, in-depth country guides, honest fee comparisons, and free end-to-end admissions support.",
   path: "/about",
 });
 
 const pillars = [
   {
     Icon: Search,
-    label: "Transparent Comparisons",
-    heading: "See the full picture",
-    body: "Honest, side-by-side comparisons of fees, programs, cities, and recognition — so you can choose the best option, not just the one marketed loudest.",
+    label: "500+ Universities Listed",
+    heading: "The most complete database",
+    body: "Every MBBS and medical program listed includes tuition fees, hostel costs, NMC recognition status, intake dates, eligibility criteria, and teaching medium — updated regularly so the numbers you see are the numbers you can plan around.",
   },
   {
-    Icon: ShieldCheck,
-    label: "Verified Information",
-    heading: "Data you can rely on",
-    body: "Every university listing is verified against current admissions materials. No inflated numbers, no outdated fees, no vague promises.",
+    Icon: MessageCircle,
+    label: "Real Reviews & Peer Connect",
+    heading: "Insights from students, not agents",
+    body: "Read and watch text and video reviews from students already enrolled at each university. Connect directly with peers studying there to ask the questions agents never answer — hostel conditions, clinical exposure, faculty quality, city life.",
   },
   {
     Icon: Users,
-    label: "End-to-End Admissions",
-    heading: "With you from start to visa",
-    body: "Our award-winning counsellors handle everything — shortlisting, applications, documents, and visa — across countries and streams, completely free.",
+    label: "Free Admissions Support",
+    heading: "With you from enquiry to visa",
+    body: "Our award-winning counsellors have taken 2,000+ students from first enquiry to enrolment — shortlisting, applications, documents, and visa — across Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more, completely free.",
   },
 ] as const;
 
@@ -94,16 +94,20 @@ export default function AboutPage() {
                 About Students Traffic
               </p>
               <h1 className="font-display text-5xl font-semibold leading-[1.06] tracking-tight text-heading sm:text-6xl lg:text-7xl">
-                Transparent guidance.
+                More information.
                 <br />
                 <span className="italic text-accent">Better decisions.</span>
               </h1>
               <p className="max-w-lg text-base leading-8 text-muted-foreground">
-                We help students across India find and apply to the best
-                universities abroad — with honest comparisons, verified
-                information, and end-to-end admissions support from
-                award-winning counsellors who have taken over 2,000 students
-                from enquiry to enrolment.
+                We built Students Traffic to be the most detailed resource for
+                Indian students researching universities abroad — covering
+                500+ MBBS and medical programs across Russia, Georgia,
+                Kazakhstan, Vietnam, Kyrgyzstan, Uzbekistan, and more. Students can
+                read real reviews, watch video testimonials, and connect
+                directly with peers already enrolled before making a decision.
+                We back all of it with free end-to-end admissions support from
+                counsellors who have taken 2,000+ students from enquiry to
+                enrolment.
               </p>
               <div className="flex flex-wrap gap-3 pt-1">
                 <CounsellingDialog
@@ -196,17 +200,19 @@ export default function AboutPage() {
               Why We Exist
             </p>
             <h2 className="mt-6 font-display text-3xl font-semibold leading-[1.18] tracking-tight text-primary sm:text-4xl lg:text-5xl">
-              Students deserve{" "}
-              <span className="italic text-accent">real options</span>
-              {" "}and real support —{" "}
-              not a sales pitch.
+              Indian students deserve{" "}
+              <span className="italic text-accent">complete information</span>
+              {" "}— not a curated shortlist.
             </h2>
             <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-muted-foreground">
-              Most consultancies push students toward universities that pay them
+              Most consultancies show you only the universities that pay them
               the highest commissions. We built Students Traffic to do the
-              opposite — give students the clearest, most honest view of their
-              options, then back it with genuine admissions expertise to get
-              them there.
+              opposite — publish detailed, honest information on every major
+              university abroad, let you read reviews and watch video
+              testimonials from real students, connect you with peers already
+              enrolled so you can ask the questions agents won't answer, and
+              only then offer free admissions support when you are ready to
+              move forward.
             </p>
           </div>
         </div>
@@ -297,7 +303,7 @@ export default function AboutPage() {
               <span className="italic">perfect programme?</span>
             </h2>
             <p className="text-base leading-7 text-muted-foreground">
-              Talk to one of our counsellors — they'll understand your goals and
+              Talk to one of our counsellors — they&apos;ll understand your goals and
               walk you through the best options across countries and streams,
               completely free.
             </p>

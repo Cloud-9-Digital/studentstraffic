@@ -5,7 +5,6 @@ import { ArrowRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { ContentTrustPanel } from "@/components/site/content-trust-panel";
-import { LeadForm } from "@/components/site/lead-form";
 import { SectionHeading } from "@/components/site/section-heading";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
@@ -74,6 +73,7 @@ export default async function BudgetGuidePage({
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
+      { name: "Guides", path: "/guides" },
       { name: "Budget guides", path: "/budget" },
       {
         name: `${guide.course.shortName} under ${formatCurrencyUsd(guide.budgetUsd)}`,
@@ -97,6 +97,7 @@ export default async function BudgetGuidePage({
     }),
   ];
   const countries = [...new Set(guide.programs.map((program) => program.country.name))];
+  const finderHref = `/universities?course=${guide.course.slug}&fee_max=${guide.budgetUsd}`;
 
   return (
     <section className="section-space">
@@ -110,14 +111,27 @@ export default async function BudgetGuidePage({
               {guide.course.shortName} universities under {formatCurrencyUsd(guide.budgetUsd)}
             </h1>
             <p className="max-w-3xl text-base leading-8 text-white/80">
-              This page filters the current catalog for annual tuition at or
-              below {formatCurrencyUsd(guide.budgetUsd)} so students can start
-              with affordability and then compare location, fit, and support.
+              Explore current {guide.course.shortName} options with annual
+              tuition at or below {formatCurrencyUsd(guide.budgetUsd)} and use
+              this page as a starting point for a more affordable shortlist.
             </p>
             <div className="flex flex-wrap gap-3 text-sm text-white/70">
               <span>{guide.programs.length} programs</span>
               <span>{countries.length} countries</span>
               <span>Sorted by affordability and featured priority</span>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Button asChild size="lg" variant="accent">
+                <Link href={finderHref}>Explore all matching universities</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-white/20 bg-white/10 text-white hover:bg-white/18 hover:text-white"
+              >
+                <Link href="/contact">Get free counselling</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -126,36 +140,38 @@ export default async function BudgetGuidePage({
           lastReviewed={catalogReviewedAt}
         />
 
-        <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
-          <div className="space-y-8">
-            <SectionHeading
-              eyebrow="Affordable shortlist"
-              title={`Current ${guide.course.shortName} options under ${formatCurrencyUsd(guide.budgetUsd)}`}
-              description="Use this guide to start from budget, then open each university page for a deeper review of city, recognition, and support."
-            />
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {guide.programs.map((program) => (
-                <UniversityCard key={program.offering.slug} program={program} />
-              ))}
-            </div>
-            <div className="flex flex-wrap gap-3">
-              {guide.programs.slice(0, 3).map((program) => (
-                <Button key={program.university.slug} asChild variant="outline">
-                  <Link href={getUniversityHref(program.university.slug)}>
-                    {program.university.name}
-                    <ArrowRight className="size-4" />
-                  </Link>
-                </Button>
-              ))}
-            </div>
-          </div>
-
-          <LeadForm
-            sourcePath={path}
-            ctaVariant="budget_sidebar"
-            title={`Get an affordable ${guide.course.shortName} shortlist`}
-            courseSlug={guide.course.slug}
+        <div className="space-y-8">
+          <SectionHeading
+            eyebrow="Affordable shortlist"
+            title={`Current ${guide.course.shortName} options under ${formatCurrencyUsd(guide.budgetUsd)}`}
+            description="Start with budget here, then open university pages for a deeper look at country, city, recognition, and support."
           />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {guide.programs.map((program) => (
+              <UniversityCard key={program.offering.slug} program={program} />
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {guide.programs.slice(0, 3).map((program) => (
+              <Button key={program.university.slug} asChild variant="outline">
+                <Link href={getUniversityHref(program.university.slug)}>
+                  {program.university.name}
+                  <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            ))}
+          </div>
+          <div className="rounded-3xl border border-border bg-card px-8 py-10 md:px-10">
+            <SectionHeading
+              title="Want to widen the shortlist beyond this budget page?"
+              description="Browse all matching universities in one place while keeping the budget filter active."
+              aside={
+                <Button asChild>
+                  <Link href={finderHref}>Explore all matching universities</Link>
+                </Button>
+              }
+            />
+          </div>
         </div>
       </div>
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />

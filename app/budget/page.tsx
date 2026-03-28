@@ -17,7 +17,7 @@ import { formatCurrencyUsd } from "@/lib/utils";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Budget Guides",
   description:
-    "Browse affordability-first guides for study-abroad courses and compare university options within specific tuition bands.",
+    "Browse affordability-first guides that help students research study-abroad options by tuition band before shortlisting universities.",
   path: "/budget",
 });
 
@@ -42,8 +42,8 @@ export default async function BudgetIndexPage() {
       <div className="container-shell space-y-12">
         <SectionHeading
           eyebrow="Budget Guides"
-          title="Affordability-first course guides"
-          description="These pages start from annual tuition thresholds so students can shortlist by budget before opening individual university profiles."
+          title="Use budget guides when cost is shaping the shortlist first"
+          description="These pages are planning tools for students who want to understand the market by tuition band before opening university detail pages."
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {guides.map((guide) => (

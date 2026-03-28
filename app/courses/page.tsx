@@ -14,9 +14,9 @@ import {
 import { getCourseHref } from "@/lib/routes";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Courses",
+  title: "Course Guides",
   description:
-    "Browse course hubs for medical and study-abroad programs, with country and university options for Indian students.",
+    "Browse course guides for Indian students researching MBBS and other medical study-abroad routes before comparing universities.",
   path: "/courses",
 });
 
@@ -49,9 +49,9 @@ export default async function CoursesPage() {
     <section className="section-space">
       <div className="container-shell space-y-12">
         <SectionHeading
-          eyebrow="Courses"
-          title="Course hubs built around real search intent"
-          description="Each course hub groups universities and countries so students can start from the qualification they care about and then narrow the shortlist."
+          eyebrow="Course Guides"
+          title="Understand the route before you compare institutions"
+          description="Each course page helps students understand the qualification, available destinations, and the planning questions that matter before they start comparing universities."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -71,7 +71,7 @@ export default async function CoursesPage() {
                     {course.summary}
                   </p>
                   <div className="flex flex-wrap gap-3 text-xs text-muted-foreground">
-                    <span>{programCounts.get(course.slug) ?? 0} programs</span>
+                    <span>{programCounts.get(course.slug) ?? 0} listed options</span>
                     <span>{course.durationYears} years</span>
                   </div>
                 </CardContent>

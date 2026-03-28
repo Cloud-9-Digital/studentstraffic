@@ -1,23 +1,22 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
+  ArrowRight,
   ChevronDown,
   ChevronRight,
   Menu,
-  X,
-  ArrowRight,
   Phone,
+  X,
 } from "lucide-react";
 
-import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { SearchPalette } from "@/components/site/search-palette";
 import { cn } from "@/lib/utils";
-import { navCourses, navDestinations, siteConfig } from "@/lib/constants";
+import { guideNav, siteConfig } from "@/lib/constants";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -31,10 +30,6 @@ function WhatsAppIcon({ className }: { className?: string }) {
     </svg>
   );
 }
-
-type DropdownId = "destinations" | "courses" | null;
-
-// ─── Logo ────────────────────────────────────────────────────────────────────
 
 function SiteLogo({ onClick }: { onClick?: () => void }) {
   return (
@@ -51,70 +46,34 @@ function SiteLogo({ onClick }: { onClick?: () => void }) {
   );
 }
 
-// ─── Desktop Dropdowns ───────────────────────────────────────────────────────
-
-function DestinationsPanel() {
+function GuidesPanel() {
   return (
     <div className="w-[520px] overflow-hidden rounded-xl border border-border bg-white shadow-dropdown">
-      <div className="p-2">
-        <div className="grid grid-cols-2 gap-0.5">
-          {navDestinations.map((dest) => (
-            <Link
-              key={dest.href}
-              href={dest.href}
-              className="group flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-muted"
-            >
-              <CountryFlag
-                countryCode={dest.countryCode}
-                alt={dest.name}
-                width={24}
-                height={18}
-                className="mt-0.5 flex-shrink-0 rounded-sm shadow-flag"
-              />
-              <div>
-                <p className="text-sm font-semibold text-foreground transition-colors group-hover:text-primary">
-                  {dest.name}
-                </p>
-                <p className="mt-0.5 text-2xs leading-relaxed text-muted-foreground">
-                  {dest.description}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
+      <div className="border-b border-border bg-muted/30 px-4 py-3">
+        <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+          Research Guides
+        </p>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Explore country, course, comparison, and budget guides built to help
+          students and parents make better study-abroad decisions.
+        </p>
       </div>
-      <div className="border-t border-border bg-muted/60 px-4 py-3">
-        <Link
-          href="/countries"
-          className="group flex items-center gap-1.5 text-xs font-semibold text-primary"
-        >
-          View all destinations
-          <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-        </Link>
-      </div>
-    </div>
-  );
-}
-
-function CoursesPanel() {
-  return (
-    <div className="w-60 overflow-hidden rounded-xl border border-border bg-white shadow-dropdown">
-      <div className="p-2">
-        {navCourses.map((course) => (
+      <div className="grid gap-0.5 p-2">
+        {guideNav.map((item) => (
           <Link
-            key={course.href}
-            href={course.href}
-            className="group flex items-center justify-between rounded-xl px-3 py-2.5 transition-colors hover:bg-muted"
+            key={item.href}
+            href={item.href}
+            className="group flex items-start justify-between gap-3 rounded-xl p-3 transition-colors hover:bg-muted"
           >
             <div>
               <p className="text-sm font-semibold text-foreground transition-colors group-hover:text-primary">
-                {course.name}
+                {item.label}
               </p>
-              <p className="text-2xs text-muted-foreground">
-                {course.description}
+              <p className="mt-0.5 text-2xs leading-relaxed text-muted-foreground">
+                {item.description}
               </p>
             </div>
-            <ChevronRight className="size-3.5 flex-shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
+            <ChevronRight className="mt-0.5 size-3.5 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
           </Link>
         ))}
       </div>
@@ -122,26 +81,20 @@ function CoursesPanel() {
   );
 }
 
-// ─── Main Header ─────────────────────────────────────────────────────────────
-
 export function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<DropdownId>(null);
+  const [guidesOpen, setGuidesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileExpanded, setMobileExpanded] = useState<
-    "destinations" | "courses" | null
-  >(null);
+  const [mobileGuidesOpen, setMobileGuidesOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Shadow on scroll
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 6);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Body scroll lock for mobile drawer
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => {
@@ -149,27 +102,37 @@ export function SiteHeader() {
     };
   }, [mobileOpen]);
 
-  const openDropdown = useCallback((id: DropdownId) => {
-    if (closeTimer.current) clearTimeout(closeTimer.current);
-    setActiveDropdown(id);
+  const openGuides = useCallback(() => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+    }
+    setGuidesOpen(true);
   }, []);
 
-  const scheduleClose = useCallback(() => {
-    closeTimer.current = setTimeout(() => setActiveDropdown(null), 120);
+  const scheduleGuidesClose = useCallback(() => {
+    closeTimer.current = setTimeout(() => setGuidesOpen(false), 120);
   }, []);
 
-  const cancelClose = useCallback(() => {
-    if (closeTimer.current) clearTimeout(closeTimer.current);
+  const cancelGuidesClose = useCallback(() => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+    }
   }, []);
 
   const closeMobile = useCallback(() => {
     setMobileOpen(false);
-    setMobileExpanded(null);
+    setMobileGuidesOpen(false);
   }, []);
+
+  const isGuidesPath =
+    pathname === "/guides" ||
+    pathname.startsWith("/countries") ||
+    pathname.startsWith("/courses") ||
+    pathname.startsWith("/compare") ||
+    pathname.startsWith("/budget");
 
   return (
     <>
-      {/* ── Header bar ────────────────────────────────────────────────────── */}
       <header
         className={cn(
           "sticky top-0 z-50 bg-header-bg backdrop-blur-xl transition-shadow duration-300",
@@ -179,82 +142,7 @@ export function SiteHeader() {
         <div className="relative flex h-16 items-center px-4 sm:px-6 lg:px-8">
           <SiteLogo />
 
-          {/* Desktop nav — absolutely centered */}
           <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-0.5 lg:flex">
-            {/* Study Destinations */}
-            <div
-              className="relative"
-              onMouseEnter={() => openDropdown("destinations")}
-              onMouseLeave={scheduleClose}
-            >
-              <button
-                className={cn(
-                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
-                  activeDropdown === "destinations" || pathname.startsWith("/countries")
-                    ? "bg-primary/8 text-primary"
-                    : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-                )}
-              >
-                Study Destinations
-                <ChevronDown
-                  className={cn(
-                    "size-3.5 transition-transform duration-200",
-                    activeDropdown === "destinations" && "rotate-180",
-                  )}
-                />
-              </button>
-
-              <div
-                className={cn(
-                  "absolute left-0 top-full pt-2.5 transition-[opacity,transform] duration-200",
-                  activeDropdown === "destinations"
-                    ? "pointer-events-auto translate-y-0 opacity-100"
-                    : "pointer-events-none translate-y-2 opacity-0",
-                )}
-                onMouseEnter={cancelClose}
-                onMouseLeave={scheduleClose}
-              >
-                <DestinationsPanel />
-              </div>
-            </div>
-
-            {/* Courses */}
-            <div
-              className="relative"
-              onMouseEnter={() => openDropdown("courses")}
-              onMouseLeave={scheduleClose}
-            >
-              <button
-                className={cn(
-                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
-                  activeDropdown === "courses" || pathname.startsWith("/courses")
-                    ? "bg-primary/8 text-primary"
-                    : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-                )}
-              >
-                Courses
-                <ChevronDown
-                  className={cn(
-                    "size-3.5 transition-transform duration-200",
-                    activeDropdown === "courses" && "rotate-180",
-                  )}
-                />
-              </button>
-
-              <div
-                className={cn(
-                  "absolute left-0 top-full pt-2.5 transition-[opacity,transform] duration-200",
-                  activeDropdown === "courses"
-                    ? "pointer-events-auto translate-y-0 opacity-100"
-                    : "pointer-events-none translate-y-2 opacity-0",
-                )}
-                onMouseEnter={cancelClose}
-                onMouseLeave={scheduleClose}
-              >
-                <CoursesPanel />
-              </div>
-            </div>
-
             <Link
               href="/universities"
               className={cn(
@@ -264,8 +152,44 @@ export function SiteHeader() {
                   : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
               )}
             >
-              University Finder
+              Universities
             </Link>
+
+            <div
+              className="relative"
+              onMouseEnter={openGuides}
+              onMouseLeave={scheduleGuidesClose}
+            >
+              <button
+                className={cn(
+                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                  guidesOpen || isGuidesPath
+                    ? "bg-primary/8 text-primary"
+                    : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+                )}
+              >
+                Guides
+                <ChevronDown
+                  className={cn(
+                    "size-3.5 transition-transform duration-200",
+                    guidesOpen && "rotate-180",
+                  )}
+                />
+              </button>
+
+              <div
+                className={cn(
+                  "absolute left-0 top-full pt-2.5 transition-[opacity,transform] duration-200",
+                  guidesOpen
+                    ? "pointer-events-auto translate-y-0 opacity-100"
+                    : "pointer-events-none translate-y-2 opacity-0",
+                )}
+                onMouseEnter={cancelGuidesClose}
+                onMouseLeave={scheduleGuidesClose}
+              >
+                <GuidesPanel />
+              </div>
+            </div>
 
             <Link
               href="/about"
@@ -278,9 +202,20 @@ export function SiteHeader() {
             >
               About
             </Link>
+
+            <Link
+              href="/contact"
+              className={cn(
+                "rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                pathname === "/contact"
+                  ? "bg-primary/8 text-primary"
+                  : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+              )}
+            >
+              Contact
+            </Link>
           </nav>
 
-          {/* Desktop right actions */}
           <div className="ml-auto hidden items-center gap-1 lg:flex">
             <SearchPalette />
             <a
@@ -299,7 +234,6 @@ export function SiteHeader() {
             >
               <WhatsAppIcon className="size-[19px]" />
             </a>
-
             <CounsellingDialog
               triggerVariant="accent"
               triggerSize="sm"
@@ -313,7 +247,6 @@ export function SiteHeader() {
             />
           </div>
 
-          {/* Mobile right actions */}
           <div className="ml-auto flex items-center gap-1 lg:hidden">
             <SearchPalette />
             <button
@@ -327,7 +260,6 @@ export function SiteHeader() {
         </div>
       </header>
 
-      {/* ── Mobile drawer backdrop ─────────────────────────────────────────── */}
       <div
         aria-hidden="true"
         className={cn(
@@ -339,14 +271,12 @@ export function SiteHeader() {
         onClick={closeMobile}
       />
 
-      {/* ── Mobile drawer panel ────────────────────────────────────────────── */}
       <div
         className={cn(
           "fixed right-0 top-0 z-50 flex h-full w-[min(340px,90vw)] flex-col bg-background shadow-drawer transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden",
           mobileOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
-        {/* Drawer header */}
         <div className="flex h-16 flex-shrink-0 items-center justify-between border-b border-border px-5">
           <SiteLogo onClick={closeMobile} />
           <button
@@ -358,128 +288,59 @@ export function SiteHeader() {
           </button>
         </div>
 
-        {/* Drawer scrollable body */}
         <div className="flex flex-1 flex-col overflow-y-auto">
           <nav className="flex-1 space-y-0.5 p-3">
-            {/* Destinations accordion */}
-            <div>
-              <button
-                onClick={() =>
-                  setMobileExpanded(
-                    mobileExpanded === "destinations" ? null : "destinations",
-                  )
-                }
-                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
-              >
-                Study Destinations
-                <ChevronDown
-                  className={cn(
-                    "size-4 text-muted-foreground transition-transform duration-200",
-                    mobileExpanded === "destinations" && "rotate-180",
-                  )}
-                />
-              </button>
-              <div
-                className={cn(
-                  "overflow-hidden transition-all duration-300",
-                  mobileExpanded === "destinations"
-                    ? "max-h-[480px] opacity-100"
-                    : "max-h-0 opacity-0",
-                )}
-              >
-                <div className="space-y-0.5 pb-2 pl-2 pr-1 pt-1">
-                  {navDestinations.map((dest) => (
-                    <Link
-                      key={dest.href}
-                      href={dest.href}
-                      onClick={closeMobile}
-                      className="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-black/5"
-                    >
-                      <CountryFlag
-                        countryCode={dest.countryCode}
-                        alt={dest.name}
-                        width={20}
-                        height={15}
-                        className="flex-shrink-0 rounded-sm shadow-flag"
-                      />
-                      <div>
-                        <p className="text-sm font-medium text-foreground">
-                          {dest.name}
-                        </p>
-                        <p className="text-2xs leading-relaxed text-muted-foreground">
-                          {dest.description}
-                        </p>
-                      </div>
-                    </Link>
-                  ))}
-                  <Link
-                    href="/countries"
-                    onClick={closeMobile}
-                    className="group flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-primary"
-                  >
-                    View all destinations
-                    <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Courses accordion */}
-            <div>
-              <button
-                onClick={() =>
-                  setMobileExpanded(
-                    mobileExpanded === "courses" ? null : "courses",
-                  )
-                }
-                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
-              >
-                Courses
-                <ChevronDown
-                  className={cn(
-                    "size-4 text-muted-foreground transition-transform duration-200",
-                    mobileExpanded === "courses" && "rotate-180",
-                  )}
-                />
-              </button>
-              <div
-                className={cn(
-                  "overflow-hidden transition-all duration-300",
-                  mobileExpanded === "courses"
-                    ? "max-h-[280px] opacity-100"
-                    : "max-h-0 opacity-0",
-                )}
-              >
-                <div className="space-y-0.5 pb-2 pl-2 pr-1 pt-1">
-                  {navCourses.map((course) => (
-                    <Link
-                      key={course.href}
-                      href={course.href}
-                      onClick={closeMobile}
-                      className="flex items-center justify-between rounded-xl px-3 py-2.5 transition-colors hover:bg-black/5"
-                    >
-                      <div>
-                        <p className="text-sm font-medium text-foreground">
-                          {course.name}
-                        </p>
-                        <p className="text-2xs text-muted-foreground">
-                          {course.description}
-                        </p>
-                      </div>
-                      <ChevronRight className="size-3.5 flex-shrink-0 text-muted-foreground" />
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
             <Link
               href="/universities"
               onClick={closeMobile}
               className="flex w-full items-center rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
             >
-              University Finder
+              Universities
             </Link>
+
+            <div>
+              <button
+                onClick={() => setMobileGuidesOpen((value) => !value)}
+                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
+              >
+                Guides
+                <ChevronDown
+                  className={cn(
+                    "size-4 text-muted-foreground transition-transform duration-200",
+                    mobileGuidesOpen && "rotate-180",
+                  )}
+                />
+              </button>
+              <div
+                className={cn(
+                  "overflow-hidden transition-all duration-300",
+                  mobileGuidesOpen
+                    ? "max-h-[520px] opacity-100"
+                    : "max-h-0 opacity-0",
+                )}
+              >
+                <div className="space-y-0.5 pb-2 pl-2 pr-1 pt-1">
+                  {guideNav.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={closeMobile}
+                      className="flex items-center justify-between rounded-xl px-3 py-2.5 transition-colors hover:bg-black/5"
+                    >
+                      <div>
+                        <p className="text-sm font-medium text-foreground">
+                          {item.label}
+                        </p>
+                        <p className="text-2xs leading-relaxed text-muted-foreground">
+                          {item.description}
+                        </p>
+                      </div>
+                      <ChevronRight className="size-3.5 shrink-0 text-muted-foreground" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
 
             <Link
               href="/about"
@@ -488,9 +349,16 @@ export function SiteHeader() {
             >
               About
             </Link>
+
+            <Link
+              href="/contact"
+              onClick={closeMobile}
+              className="flex w-full items-center rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
+            >
+              Contact
+            </Link>
           </nav>
 
-          {/* Drawer bottom CTAs */}
           <div className="flex-shrink-0 space-y-2.5 border-t border-border p-4">
             <a
               href={`https://wa.me/${siteConfig.whatsappNumber}`}

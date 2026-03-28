@@ -14,9 +14,9 @@ import {
 import { getComparisonHref } from "@/lib/routes";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "University Comparisons",
+  title: "Comparison Guides",
   description:
-    "Browse university comparison guides that put fees, location, and shortlist fit side by side.",
+    "Browse comparison guides that help students evaluate universities side by side during shortlist decisions.",
   path: "/compare",
 });
 
@@ -40,9 +40,9 @@ export default async function CompareIndexPage() {
     <section className="section-space">
       <div className="container-shell space-y-12">
         <SectionHeading
-          eyebrow="Compare"
-          title="University comparison guides"
-          description="These pages put frequently compared universities side by side on fees, fit, and shortlist context."
+          eyebrow="Comparison Guides"
+          title="Use comparison guides when your shortlist is already narrowing"
+          description="These pages are research support for decision-stage students who want side-by-side thinking before choosing between institutions."
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {guides.map((guide) => (

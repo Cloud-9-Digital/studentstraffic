@@ -4,10 +4,23 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Search, X, ArrowRight, MapPin, GraduationCap, Building2, BookOpen } from "lucide-react";
+import {
+  Search,
+  X,
+  ArrowRight,
+  MapPin,
+  GraduationCap,
+  Building2,
+  BookOpen,
+} from "lucide-react";
 
 import type { Suggestion } from "@/app/api/suggestions/route";
-import { navDestinations, navCourses, footerPopularRoutes } from "@/lib/constants";
+import {
+  footerPopularRoutes,
+  guideNav,
+  navCourses,
+  navDestinations,
+} from "@/lib/constants";
 import { CountryFlag } from "@/components/site/country-flag";
 const typeIcon = {
   university: Building2,
@@ -25,6 +38,14 @@ const typeLabel = {
 
 const quickLinks = [
   {
+    heading: "Start Here",
+    items: [
+      { label: "Universities", href: "/universities", flag: null },
+      { label: "All Guides", href: "/guides", flag: null },
+      { label: "Contact", href: "/contact", flag: null },
+    ],
+  },
+  {
     heading: "Destinations",
     items: navDestinations.map((d) => ({ label: d.name, href: d.href, flag: d.countryCode })),
   },
@@ -35,6 +56,10 @@ const quickLinks = [
   {
     heading: "Popular Routes",
     items: footerPopularRoutes.map((r) => ({ label: r.label, href: r.href, flag: null })),
+  },
+  {
+    heading: "Guide Types",
+    items: guideNav.slice(1).map((item) => ({ label: item.label, href: item.href, flag: null })),
   },
 ];
 

@@ -90,6 +90,7 @@ export default async function LandingPageRoute({
   const country = context.country;
   const course = context.course;
   const path = `/${page.slug}`;
+  const previewPrograms = context.featuredPrograms.slice(0, 3);
 
   const countryCode = navDestinations.find(
     (d) => d.href === `/countries/${country.slug}`
@@ -100,6 +101,7 @@ export default async function LandingPageRoute({
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
+      { name: "Guides", path: "/guides" },
       { name: page.title, path },
     ]),
     getCollectionPageStructuredData({
@@ -141,7 +143,7 @@ export default async function LandingPageRoute({
                 <nav className="mb-7 flex items-center gap-1.5 text-xs text-white/50" aria-label="Breadcrumb">
                   <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
                   <ChevronRight className="size-3 shrink-0" />
-                  <Link href={`/countries/${country.slug}`} className="hover:text-white/80 transition-colors capitalize">{country.name}</Link>
+                  <Link href="/guides" className="hover:text-white/80 transition-colors">Guides</Link>
                   <ChevronRight className="size-3 shrink-0" />
                   <span className="text-white/70">{page.title}</span>
                 </nav>
@@ -198,27 +200,30 @@ export default async function LandingPageRoute({
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white/20 bg-white/10 text-white hover:bg-white/18 hover:text-white">
                     <Link href={`/countries/${country.slug}`}>
-                      About {country.name}
+                      Read the {country.name} guide
                     </Link>
                   </Button>
                 </div>
               </div>
 
-              {/* Right col — sticky lead form */}
+              {/* Right col — counselling */}
               <div className="hidden border-l border-white/10 lg:flex lg:items-center lg:py-10 lg:pl-10">
                 <div className="hero-glass w-full rounded-2xl p-6">
                   <p className="mb-1 text-xs font-semibold uppercase tracking-[0.14em] text-white/50">
                     Free counselling
                   </p>
                   <h2 className="mb-5 font-display text-xl font-semibold text-heading-contrast">
-                    Start your {course.shortName} admission
+                    Talk through {page.title}
                   </h2>
                   <LeadForm
                     sourcePath={path}
                     ctaVariant="landing_sidebar"
                     title=""
+                    description=""
                     countrySlug={country.slug}
                     courseSlug={course.slug}
+                    embedded
+                    stacked
                   />
                 </div>
               </div>
@@ -248,22 +253,23 @@ export default async function LandingPageRoute({
           <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-                {course.shortName} universities in {country.name}
+                Universities students usually consider for this route
               </h2>
               <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
-                Verified programs with confirmed fees, recognition context, and shortlist guidance reviewed for the current admissions cycle.
+                These listings can help you move from information gathering into
+                actual university comparison.
               </p>
             </div>
             <Button asChild variant="outline" className="shrink-0">
               <Link href={`/universities?country=${country.slug}&course=${course.slug}`}>
-                View all
+                See all universities
                 <ArrowRight className="size-3.5" />
               </Link>
             </Button>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {context.featuredPrograms.map((program) => (
+            {previewPrograms.map((program) => (
               <UniversityCard key={program.offering.slug} program={program} />
             ))}
           </div>
@@ -590,20 +596,23 @@ export default async function LandingPageRoute({
             <div className="px-8 py-12 md:px-14 md:py-16 lg:flex lg:items-center lg:justify-between lg:gap-12">
               <div className="lg:max-w-xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
-                  Free · No obligations
+                  Free counselling
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-4xl">
-                  Not sure which {country.name} university fits your profile?
+                  Go beyond the information — hear from real students.
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-white/70">
-                  Our counsellors compare universities, fees, NMC recognition, and lifestyle factors — and handle your full admission at no cost.
+                  Read reviews, watch video testimonials, and connect with
+                  Indian students already enrolled at these universities. When
+                  you are ready to apply, our counsellors will handle everything
+                  — shortlisting, applications, documents, and visa — for free.
                 </p>
                 <ul className="mt-6 space-y-2">
                   {[
-                    "Personalised university guidance",
-                    "NMC eligibility guidance",
-                    "Fee comparison across cities",
-                    "Completely free, no obligations",
+                    "Read reviews and watch videos from current students",
+                    "Connect with enrolled peers to ask real questions",
+                    "Shortlist guidance based on your NEET score and budget",
+                    "Support with applications, documents, and visa",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-2.5 text-sm text-white/80">
                       <CheckCircle2 className="size-4 shrink-0 text-accent" />
@@ -612,16 +621,15 @@ export default async function LandingPageRoute({
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 shrink-0 lg:mt-0">
-                <div className="rounded-xl border border-white/10 bg-white/8 p-6 backdrop-blur-sm lg:w-80">
-                  <LeadForm
-                    sourcePath={path}
-                    ctaVariant="landing_bottom"
-                    title=""
-                    countrySlug={country.slug}
-                    courseSlug={course.slug}
-                  />
-                </div>
+              <div className="mt-10 shrink-0 space-y-3 lg:mt-0 lg:w-80">
+                <Button asChild size="lg" variant="accent" className="w-full">
+                  <Link href="/contact">Get free counselling</Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="w-full border-white/20 bg-white/8 text-white hover:bg-white/18 hover:text-white">
+                  <Link href={`/universities?country=${country.slug}&course=${course.slug}`}>
+                    See all universities
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>

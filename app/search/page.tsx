@@ -44,8 +44,8 @@ export default async function SearchPage({
       <div className="container-shell space-y-12">
         <SectionHeading
           eyebrow="Search"
-          title="Search the university catalog with filters and structured signals."
-          description="This search layer is powered by a dedicated Postgres index, so it can combine keyword relevance with country, course, and licensing filters."
+          title="Search the catalog when you already know what you want."
+          description="Search is a utility layer for jumping straight to countries, courses, universities, and long-form guides."
         />
 
         <Suspense
@@ -149,7 +149,7 @@ async function SearchContent({
             Showing <strong className="text-foreground">{results.length}</strong>{" "}
             result{results.length === 1 ? "" : "s"}.
           </p>
-          <p>Search pages stay noindex while curated destination pages stay indexable.</p>
+          <p>Open the detailed guide or university page that matches what you need.</p>
         </CardContent>
       </Card>
 

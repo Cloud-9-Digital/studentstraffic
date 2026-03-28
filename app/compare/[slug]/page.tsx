@@ -4,20 +4,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   ArrowUpRight,
-  BadgeCheck,
-  Building2,
   CalendarDays,
   Check,
-  CircleDollarSign,
-  Clock,
-  Languages,
-  MapPin,
   PencilLine,
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { ComparisonCard } from "@/components/site/comparison-card";
-import { LeadForm } from "@/components/site/lead-form";
 import { Button } from "@/components/ui/button";
 import {
   catalogReviewedAt,
@@ -28,7 +21,6 @@ import {
   getComparisonGuideBySlug,
   getComparisonGuides,
   getComparisonGuidesForUniversity,
-  type ComparisonGuide,
 } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
@@ -41,7 +33,6 @@ import {
 } from "@/lib/structured-data";
 import { getComparisonHref, getUniversityHref } from "@/lib/routes";
 import {
-  getUniversityCoverImage,
   getUniversityInitials,
 } from "@/lib/university-media";
 import { formatCurrencyUsd } from "@/lib/utils";
@@ -107,6 +98,7 @@ export default async function ComparisonGuidePage({
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
+      { name: "Guides", path: "/guides" },
       { name: "Compare", path: "/compare" },
       { name: `${guide.left.university.name} vs ${guide.right.university.name}`, path },
     ]),
@@ -133,6 +125,7 @@ export default async function ComparisonGuidePage({
     getComparisonGuidesForUniversity(guide.left.university.slug, 6),
     getComparisonGuidesForUniversity(guide.right.university.slug, 6),
   ]);
+  const finderHref = `/universities?course=${guide.left.course.slug}`;
   const relatedGuides = [...leftGuides, ...rightGuides]
     .filter((g) => g.slug !== guide.slug)
     .filter((g, i, arr) => arr.findIndex((x) => x.slug === g.slug) === i)
@@ -189,7 +182,7 @@ export default async function ComparisonGuidePage({
         <div className="relative mx-auto w-[min(1120px,calc(100%-2rem))] py-12 md:py-16">
           {/* Breadcrumb */}
           <nav className="mb-6 flex items-center gap-2 text-xs text-white/40">
-            <Link href="/universities" className="transition-colors hover:text-white/70">Universities</Link>
+            <Link href="/guides" className="transition-colors hover:text-white/70">Guides</Link>
             <span>/</span>
             <Link href="/compare" className="transition-colors hover:text-white/70">Compare</Link>
             <span>/</span>
@@ -357,17 +350,23 @@ export default async function ComparisonGuidePage({
               <div className="flex min-w-0 flex-col justify-center gap-5 p-6 md:p-10">
                 <div className="min-w-0">
                   <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/40">
-                    Free counselling
+                    Next step
                   </p>
                   <h2 className="font-display text-2xl font-semibold leading-snug tracking-tight text-white md:text-3xl">
                     Still deciding between these two?
                   </h2>
                   <p className="mt-3 text-sm leading-7 text-white/55">
-                    Share your details and we&apos;ll help you weigh these options
-                    against your shortlist and connect you with an admissions advisor.
+                    Use this page to weigh the tradeoffs side by side, then
+                    open the university pages or browse more options if you
+                    want a broader shortlist.
                   </p>
                 </div>
                 <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:flex-wrap">
+                  <Button asChild size="sm" variant="accent" className="min-w-0 max-w-full justify-start">
+                    <Link href={finderHref} className="min-w-0">
+                      <span className="truncate">Browse more universities</span>
+                    </Link>
+                  </Button>
                   <Button asChild size="sm" variant="ghost" className="min-w-0 max-w-full justify-start border border-white/20 bg-white/8 !text-white hover:bg-white/15 hover:!text-white">
                     <Link href={guide.left.university.officialWebsite} target="_blank" rel="noreferrer" className="min-w-0">
                       <span className="truncate">{guide.left.university.name}</span>
@@ -383,18 +382,24 @@ export default async function ComparisonGuidePage({
                 </div>
               </div>
 
-              {/* Right — form */}
+              {/* Right — handoff */}
               <div className="min-w-0 overflow-hidden border-t border-white/10 bg-white p-6 md:p-8 lg:border-l lg:border-t-0">
-                <LeadForm
-                  sourcePath={path}
-                  ctaVariant="comparison_sidebar"
-                  title="Get a personalised comparison call"
-                  universitySlug={guide.left.university.slug}
-                  countrySlug={guide.left.country.slug}
-                  courseSlug={guide.left.course.slug}
-                  embedded
-                  stacked
-                />
+                <h3 className="font-display text-2xl font-semibold tracking-tight text-heading">
+                  Want help choosing between these options?
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                  Explore more universities if you want a broader comparison,
+                  or contact the team if you want help understanding which
+                  option fits your goals better.
+                </p>
+                <div className="mt-6 space-y-3">
+                  <Button asChild className="w-full">
+                    <Link href={finderHref}>Browse more universities</Link>
+                  </Button>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/contact">Talk to the team</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -417,138 +422,6 @@ export default async function ComparisonGuidePage({
       </section>
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
     </>
-  );
-}
-
-/* ── Sub-components ──────────────────────────────────────────────────────── */
-
-function UniversityProfileCard({
-  program,
-  accent,
-}: {
-  program: FinderProgram;
-  accent: "teal" | "amber";
-}) {
-  const { university, country, course, offering } = program;
-  const href = getUniversityHref(university.slug);
-  const coverImage = getUniversityCoverImage(university);
-  const initials = getUniversityInitials(university.name);
-  const isTeal = accent === "teal";
-
-  return (
-    <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
-      {/* Cover */}
-      <div className="relative h-44 w-full overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5">
-        {coverImage ? (
-          <Image
-            src={coverImage.url}
-            alt={coverImage.alt}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
-          />
-        ) : (
-          <div className="flex h-full items-center justify-center">
-            <span className="select-none font-display text-7xl font-semibold text-primary/8">
-              {initials}
-            </span>
-          </div>
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-
-        {/* Accent stripe */}
-        <div
-          className={`absolute left-0 top-0 h-1 w-full ${isTeal ? "bg-primary" : "bg-accent"}`}
-        />
-
-        {/* Logo */}
-        <div className="absolute bottom-3 left-4 flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl border-2 border-white/80 bg-white shadow-md">
-          {university.logoUrl ? (
-            <Image
-              src={university.logoUrl}
-              alt={`${university.name} logo`}
-              width={44}
-              height={44}
-              className="h-full w-full object-contain p-1"
-            />
-          ) : (
-            <span className="text-xs font-bold text-primary">{initials}</span>
-          )}
-        </div>
-
-        {/* Type badge */}
-        <div className="absolute right-3 top-3">
-          <span className="inline-flex items-center gap-1 rounded-md border border-white/20 bg-black/40 px-2 py-0.5 text-[0.65rem] font-medium text-white/90 backdrop-blur-sm">
-            <Building2 className="size-2.5" />
-            {university.type}
-          </span>
-        </div>
-      </div>
-
-      {/* Body */}
-      <div className="p-5">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <h3 className="font-semibold leading-snug text-foreground">{university.name}</h3>
-            <div className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground">
-              <MapPin className="size-3 shrink-0" />
-              <span>{university.city}, {country.name}</span>
-            </div>
-          </div>
-          <Link
-            href={href}
-            className="flex shrink-0 items-center gap-1 text-xs font-medium text-primary transition-colors hover:text-primary/70"
-          >
-            View profile
-            <ArrowUpRight className="size-3.5" />
-          </Link>
-        </div>
-
-        {/* Stats row */}
-        <div className="mt-4 grid grid-cols-3 gap-2 border-t border-border pt-4">
-          <StatCell icon={<CircleDollarSign className="size-3.5 text-muted-foreground" />} label="Tuition / yr" value={formatCurrencyUsd(offering.annualTuitionUsd)} />
-          <StatCell icon={<Clock className="size-3.5 text-muted-foreground" />} label="Duration" value={`${offering.durationYears} years`} />
-          <StatCell icon={<Languages className="size-3.5 text-muted-foreground" />} label="Medium" value={offering.medium === "English" ? "English" : "English+"} />
-        </div>
-
-        {/* Recognition */}
-        {university.recognitionBadges.length > 0 && (
-          <div className="mt-3 flex flex-wrap gap-1.5 border-t border-border pt-3">
-            {university.recognitionBadges.map((badge) => (
-              <span
-                key={badge}
-                className="inline-flex items-center gap-1 rounded-md border border-border bg-muted/50 px-2 py-0.5 text-[0.65rem] font-medium text-muted-foreground"
-              >
-                <BadgeCheck className="size-3 shrink-0 text-primary" />
-                {badge}
-              </span>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function StatCell({
-  icon,
-  label,
-  value,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="flex flex-col gap-1">
-      <div className="flex items-center gap-1">
-        {icon}
-        <span className="text-[0.6rem] font-medium uppercase tracking-wider text-muted-foreground">
-          {label}
-        </span>
-      </div>
-      <span className="text-sm font-semibold text-foreground">{value}</span>
-    </div>
   );
 }
 

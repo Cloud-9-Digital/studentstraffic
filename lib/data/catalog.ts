@@ -248,6 +248,10 @@ export async function getFeaturedLandingPages() {
   return landingPages.slice(0, 4);
 }
 
+export async function getLandingPages() {
+  return landingPages;
+}
+
 export async function getLandingPageBySlug(slug: string) {
   return landingPages.find((page) => page.slug === slug) ?? null;
 }

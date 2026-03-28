@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 import { FinderFilterForm } from "@/components/site/finder-filter-form";
+import { LeadForm } from "@/components/site/lead-form";
 import { UniversityCard } from "@/components/site/university-card";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -27,9 +28,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const filters = parseFinderFilters(await searchParams);
   const base: Metadata = {
-    title: "University Finder",
+    title: "MBBS Abroad Universities — Compare Fees, Recognition & Eligibility",
     description:
-      "Filter global medical universities by country, fee, intake, and eligibility.",
+      "Browse 500+ MBBS and medical universities across Russia, Georgia, Vietnam, Kyrgyzstan, Kazakhstan, and more. Filter by country, total fees, intake, teaching medium, and NMC recognition.",
   };
   const raw = await searchParams;
   const pageParam = Array.isArray(raw.page) ? raw.page[0] : raw.page;
@@ -57,9 +58,40 @@ export default function UniversitiesPage({
       {/* Cards */}
       <section className="py-10 md:py-14">
         <div className="container-shell space-y-10">
-          <Suspense fallback={<CardsFallback />}>
-            <CardsSection searchParams={searchParams} />
-          </Suspense>
+          {/* Sidebar and cards in separate Suspense boundaries so the sidebar
+              doesn't flash when paginating — filter options are cache-hit */}
+          <div className="lg:grid lg:grid-cols-[280px_1fr] lg:items-start lg:gap-8">
+            <Suspense fallback={<SidebarFallback />}>
+              <SidebarSection searchParams={searchParams} />
+            </Suspense>
+            <Suspense fallback={<CardGridFallback />}>
+              <CardsSection searchParams={searchParams} />
+            </Suspense>
+          </div>
+
+          <div className="grid gap-8 rounded-3xl border border-border bg-card p-6 md:p-8 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="space-y-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                Free Counselling
+              </p>
+              <h2 className="font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
+                Need help building the right shortlist?
+              </h2>
+              <p className="max-w-2xl text-base leading-8 text-muted-foreground">
+                Share your NEET score, budget, and destination preference and
+                our counsellors will help you narrow down to the universities
+                that actually match — comparing total fees, recognition status,
+                and admission requirements, all free.
+              </p>
+            </div>
+
+            <LeadForm
+              sourcePath="/universities"
+              ctaVariant="finder_cta"
+              title="Talk through your shortlist"
+              description="Share your details and our counsellors will help you compare universities, destinations, fees, and next steps."
+            />
+          </div>
         </div>
       </section>
     </>
@@ -88,10 +120,12 @@ async function HeroSection({
         {/* Text */}
         <div className="mb-7 space-y-3 text-center md:mb-9">
           <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
-            Find your perfect medical university
+            Compare MBBS & medical universities abroad
           </h1>
           <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base md:leading-7">
-            Filter programs by country, budget, intake, and eligibility.
+            500+ programs across Russia, Georgia, Vietnam, Kyrgyzstan,
+            Kazakhstan, and more. Filter by country, total fees, intake month,
+            teaching medium, and NMC recognition status.
           </p>
         </div>
 
@@ -119,10 +153,12 @@ function HeroFallback() {
       <div className="container-shell relative py-10 pb-8 md:py-16 md:pb-10">
         <div className="mb-7 space-y-3 text-center md:mb-9">
           <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
-            Find your perfect medical university
+            Explore universities abroad
           </h1>
           <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base">
-            Filter programs by country, budget, intake, and eligibility.
+            500+ programs across Russia, Georgia, Vietnam, Kyrgyzstan,
+            Kazakhstan, and more. Filter by country, total fees, intake month,
+            teaching medium, and NMC recognition status.
           </p>
         </div>
         {/* Skeleton search bar */}
@@ -135,7 +171,38 @@ function HeroFallback() {
   );
 }
 
-// ── Cards (async — fetches programs) ─────────────────────────────────────────
+// ── Sidebar (async — fetches filter options only, cached) ─────────────────────
+
+async function SidebarSection({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const filters = parseFinderFilters(await searchParams);
+  const options = await getFinderOptions();
+  return (
+    <aside className="hidden lg:block lg:sticky lg:top-20">
+      <FinderFilterForm
+        countries={options.countries}
+        courses={options.courses}
+        mediums={options.mediums}
+        intakes={options.intakes}
+        filters={filters}
+        sidebarMode
+      />
+    </aside>
+  );
+}
+
+function SidebarFallback() {
+  return (
+    <div className="hidden lg:block">
+      <div className="h-[500px] rounded-2xl bg-muted animate-pulse" />
+    </div>
+  );
+}
+
+// ── Cards (async — fetches programs only) ─────────────────────────────────────
 
 async function CardsSection({
   searchParams,
@@ -147,10 +214,7 @@ async function CardsSection({
   const pageParam = Array.isArray(raw.page) ? raw.page[0] : raw.page;
   const page = Math.max(1, parseInt(pageParam ?? "1", 10) || 1);
 
-  const [options, allPrograms] = await Promise.all([
-    getFinderOptions(),
-    listFinderPrograms(filters),
-  ]);
+  const allPrograms = await listFinderPrograms(filters);
 
   const totalPages = Math.ceil(allPrograms.length / PAGE_SIZE);
   const currentPage = Math.min(page, Math.max(totalPages, 1));
@@ -209,26 +273,11 @@ async function CardsSection({
   }
 
   return (
-    <>
-      <div className="lg:grid lg:grid-cols-[280px_1fr] lg:items-start lg:gap-8">
-        {/* Sidebar — desktop only, sticky */}
-        <aside className="hidden lg:block lg:sticky lg:top-20">
-          <FinderFilterForm
-            countries={options.countries}
-            courses={options.courses}
-            mediums={options.mediums}
-            intakes={options.intakes}
-            filters={filters}
-            sidebarMode
-          />
-        </aside>
+    <div className="space-y-8">
+      {cards}
 
-        {/* Cards column */}
-        <div className="space-y-8">
-          {cards}
-
-          {totalPages > 1 && (
-            <Pagination>
+      {totalPages > 1 && (
+        <Pagination>
               <PaginationContent>
                 <PaginationItem>
                   <PaginationPrevious
@@ -261,24 +310,17 @@ async function CardsSection({
                 </PaginationItem>
               </PaginationContent>
             </Pagination>
-          )}
-        </div>
-      </div>
-    </>
+      )}
+    </div>
   );
 }
 
-function CardsFallback() {
+function CardGridFallback() {
   return (
-    <div className="lg:grid lg:grid-cols-[280px_1fr] lg:items-start lg:gap-8">
-      <div className="hidden lg:block">
-        <div className="h-[600px] rounded-2xl bg-muted animate-pulse" />
-      </div>
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <div key={i} className="h-64 rounded-2xl bg-muted animate-pulse" />
-        ))}
-      </div>
+    <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+      {Array.from({ length: 6 }).map((_, i) => (
+        <div key={i} className="h-64 rounded-2xl bg-muted animate-pulse" />
+      ))}
     </div>
   );
 }
