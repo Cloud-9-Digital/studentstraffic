@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Headphones, Phone } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
@@ -14,10 +15,21 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 export function MobileStickyBar() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const threshold = window.innerHeight * 0.5;
+    const onScroll = () => setVisible(window.scrollY > threshold);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-40 md:hidden"
+      className="fixed bottom-0 left-0 right-0 z-40 md:hidden transition-transform duration-300 ease-in-out"
       style={{
+        transform: visible ? "translateY(0)" : "translateY(100%)",
         paddingBottom: "env(safe-area-inset-bottom)",
         background: "rgba(255, 255, 255, 0.65)",
         backdropFilter: "blur(24px) saturate(180%) brightness(1.08)",
