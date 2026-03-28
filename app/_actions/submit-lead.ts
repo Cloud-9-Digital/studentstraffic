@@ -6,6 +6,8 @@ import { z } from "zod";
 
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
+import { env } from "@/lib/env";
+import { syncLeadDestinations } from "@/lib/lead-sync";
 
 export type LeadFormState = {
   error?: string;
@@ -144,6 +146,7 @@ export async function submitLeadAction(
   const db = getDb();
   const cookieStore = await cookies();
   const headerStore = await headers();
+  const submittedAt = new Date();
   const sourceQuery = parseJsonObject<QueryParamMap>(data.sourceQuery);
   const clientContext = parseJsonObject<ClientContext>(data.clientContext);
   const utmSource =
@@ -163,8 +166,10 @@ export async function submitLeadAction(
     getFirstQueryValue(sourceQuery, "utm_content");
 
   try {
+    let insertedLeadId: number | undefined;
+
     if (db) {
-      await db.insert(leads).values({
+      const [insertedLead] = await db.insert(leads).values({
         fullName: data.fullName,
         phone: data.phone,
         email: emptyToUndefined(data.email),
@@ -188,6 +193,42 @@ export async function submitLeadAction(
         userAgent: headerStore.get("user-agent") ?? null,
         ipAddress: getIpAddress(headerStore),
         acceptLanguage: headerStore.get("accept-language") ?? null,
+        clientContext,
+        crmSyncStatus: env.hasCrmLeadSyncConfig ? "pending" : "skipped",
+        pabblySyncStatus: env.hasPabblyLeadWebhook ? "pending" : "skipped",
+        createdAt: submittedAt,
+      }).returning({
+        id: leads.id,
+      });
+
+      insertedLeadId = insertedLead?.id;
+
+      await syncLeadDestinations(insertedLeadId, {
+        websiteLeadId: insertedLeadId,
+        submittedAt: submittedAt.toISOString(),
+        fullName: data.fullName,
+        phone: data.phone,
+        email: emptyToUndefined(data.email),
+        userState: data.userState,
+        courseSlug: emptyToUndefined(data.courseSlug),
+        countrySlug: emptyToUndefined(data.countrySlug),
+        universitySlug: emptyToUndefined(data.universitySlug),
+        sourcePath: data.sourcePath,
+        sourceUrl: emptyToUndefined(data.sourceUrl),
+        sourceQuery,
+        pageTitle: emptyToUndefined(data.pageTitle),
+        ctaVariant: data.ctaVariant,
+        notes: emptyToUndefined(data.notes),
+        documentReferrer: emptyToUndefined(data.documentReferrer),
+        utmSource,
+        utmMedium,
+        utmCampaign,
+        utmTerm,
+        utmContent,
+        referrer: headerStore.get("referer") ?? undefined,
+        userAgent: headerStore.get("user-agent") ?? undefined,
+        ipAddress: getIpAddress(headerStore) ?? undefined,
+        acceptLanguage: headerStore.get("accept-language") ?? undefined,
         clientContext,
       });
     } else {

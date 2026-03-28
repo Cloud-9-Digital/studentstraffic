@@ -50,10 +50,33 @@ export default function UniversitiesPage({
 }) {
   return (
     <>
-      {/* Hero — search bar lives here, no gap below */}
-      <Suspense fallback={<HeroFallback />}>
-        <HeroSection searchParams={searchParams} />
-      </Suspense>
+      {/* Hero — heading is static, only mobile filters are async */}
+      <div className="relative overflow-hidden bg-surface-dark">
+        <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
+        <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
+        <div className="hero-orb hero-orb--warm pointer-events-none absolute -right-16 -top-20 size-96 opacity-40" aria-hidden />
+        <div className="hero-orb hero-orb--cool pointer-events-none absolute -bottom-10 left-10 size-72 opacity-60" aria-hidden />
+
+        <div className="container-shell relative py-10 pb-8 md:py-16 md:pb-10">
+          <div className="mb-7 space-y-3 text-center md:mb-9">
+            <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
+              Browse 500+ universities abroad
+            </h1>
+            <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base md:leading-7">
+              Filter by country, fees, intake, teaching medium, and NMC
+              recognition across Russia, Georgia, Vietnam, Kyrgyzstan,
+              Kazakhstan, and more.
+            </p>
+          </div>
+
+          {/* Mobile filters only — async */}
+          <div className="lg:hidden">
+            <Suspense fallback={<div className="flex gap-2"><div className="h-12 flex-1 rounded-xl bg-white/10" /><div className="h-12 w-28 rounded-xl bg-white/10" /></div>}>
+              <MobileFilters searchParams={searchParams} />
+            </Suspense>
+          </div>
+        </div>
+      </div>
 
       {/* Cards */}
       <section className="py-10 md:py-14">
@@ -98,9 +121,9 @@ export default function UniversitiesPage({
   );
 }
 
-// ── Hero (async — fetches filter options) ─────────────────────────────────────
+// ── Mobile filters only (async — fetches filter options) ──────────────────────
 
-async function HeroSection({
+async function MobileFilters({
   searchParams,
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
@@ -109,65 +132,14 @@ async function HeroSection({
   const options = await getFinderOptions();
 
   return (
-    <div className="relative overflow-hidden bg-surface-dark">
-      {/* Gradient depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-      <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
-      <div className="hero-orb hero-orb--warm pointer-events-none absolute -right-16 -top-20 size-96 opacity-40" aria-hidden />
-      <div className="hero-orb hero-orb--cool pointer-events-none absolute -bottom-10 left-10 size-72 opacity-60" aria-hidden />
-
-      <div className="container-shell relative py-10 pb-8 md:py-16 md:pb-10">
-        {/* Text */}
-        <div className="mb-7 space-y-3 text-center md:mb-9">
-          <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
-            Compare MBBS & medical universities abroad
-          </h1>
-          <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base md:leading-7">
-            500+ programs across Russia, Georgia, Vietnam, Kyrgyzstan,
-            Kazakhstan, and more. Filter by country, total fees, intake month,
-            teaching medium, and NMC recognition status.
-          </p>
-        </div>
-
-        {/* Search + filter bar — mobile only; desktop uses the sidebar */}
-        <div className="lg:hidden">
-          <FinderFilterForm
-            countries={options.countries}
-            courses={options.courses}
-            mediums={options.mediums}
-            intakes={options.intakes}
-            filters={filters}
-            heroMode
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function HeroFallback() {
-  return (
-    <div className="relative overflow-hidden bg-surface-dark">
-      <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-      <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
-      <div className="container-shell relative py-10 pb-8 md:py-16 md:pb-10">
-        <div className="mb-7 space-y-3 text-center md:mb-9">
-          <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
-            Explore universities abroad
-          </h1>
-          <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base">
-            500+ programs across Russia, Georgia, Vietnam, Kyrgyzstan,
-            Kazakhstan, and more. Filter by country, total fees, intake month,
-            teaching medium, and NMC recognition status.
-          </p>
-        </div>
-        {/* Skeleton search bar */}
-        <div className="flex gap-2">
-          <div className="h-12 flex-1 rounded-xl bg-white/10" />
-          <div className="h-12 w-28 rounded-xl bg-white/10" />
-        </div>
-      </div>
-    </div>
+    <FinderFilterForm
+      countries={options.countries}
+      courses={options.courses}
+      mediums={options.mediums}
+      intakes={options.intakes}
+      filters={filters}
+      heroMode
+    />
   );
 }
 

@@ -192,6 +192,15 @@ export const leads = pgTable(
       .$type<LeadClientContext>()
       .notNull()
       .default({}),
+    crmSyncStatus: text("crm_sync_status").notNull().default("not_attempted"),
+    crmSyncedAt: timestamp("crm_synced_at", { withTimezone: true }),
+    crmSyncError: text("crm_sync_error"),
+    crmExternalId: text("crm_external_id"),
+    pabblySyncStatus: text("pabbly_sync_status")
+      .notNull()
+      .default("not_attempted"),
+    pabblySyncedAt: timestamp("pabbly_synced_at", { withTimezone: true }),
+    pabblySyncError: text("pabbly_sync_error"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
   },
   (table) => [index("leads_source_path_idx").on(table.sourcePath)]
@@ -239,4 +248,5 @@ export type CourseRow = typeof courses.$inferSelect;
 export type UniversityRow = typeof universities.$inferSelect;
 export type ProgramOfferingRow = typeof programOfferings.$inferSelect;
 export type LeadInsert = typeof leads.$inferInsert;
+export type LeadRow = typeof leads.$inferSelect;
 export type SearchDocumentRow = typeof searchDocuments.$inferSelect;
