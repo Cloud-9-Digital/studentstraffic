@@ -60,7 +60,7 @@ export function UniversitiesExplorer({
   const abortRef = useRef<AbortController | null>(null);
   const resultsSectionRef = useRef<HTMLElement | null>(null);
   const cacheRef = useRef(
-    new Map<string, FinderProgramsPage>([
+    new Map<string, FinderCardProgramsPage>([
       [
         getResultsCacheKey(
           normalizedInitialFilters,
@@ -258,7 +258,7 @@ export function UniversitiesExplorer({
           throw new Error("Failed to prefetch finder results");
         }
 
-        return response.json() as Promise<FinderProgramsPage>;
+        return response.json() as Promise<FinderCardProgramsPage>;
       })
       .then((nextResults) => {
         cacheRef.current.set(requestKey, nextResults);
