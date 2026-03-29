@@ -126,13 +126,9 @@ export function UniversitiesExplorer({
       setIsLoading(true);
 
       try {
-        const response = await fetch(
-          getFinderApiUrl(normalizedFilters, nextPage),
-          {
-            signal: controller.signal,
-            cache: "no-store",
-          },
-        );
+        const response = await fetch(getFinderApiUrl(normalizedFilters, nextPage), {
+          signal: controller.signal,
+        });
 
         if (!response.ok) {
           throw new Error("The universities catalogue could not be refreshed.");
@@ -251,7 +247,6 @@ export function UniversitiesExplorer({
 
     void fetch(getFinderApiUrl(filters, nextPage), {
       signal: controller.signal,
-      cache: "no-store",
     })
       .then((response) => {
         if (!response.ok) {

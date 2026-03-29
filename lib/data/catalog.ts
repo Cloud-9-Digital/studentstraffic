@@ -9,6 +9,8 @@ import type {
   Course,
   FinderCardProgram,
   FinderCardProgramsPage,
+  FinderCountryOption,
+  FinderCourseOption,
   FinderOptions,
   FinderFilters,
   FinderProgram,
@@ -17,7 +19,6 @@ import type {
   LandingPage,
   ProgramOffering,
   University,
-  UniversityGalleryImage,
 } from "@/lib/data/types";
 import { getDb } from "@/lib/db/server";
 import {
@@ -576,43 +577,58 @@ export async function queryFinderCardProgramsPage(
   const currentPage = Math.max(page, 1);
   const offset = (currentPage - 1) * pageSize;
 
-  const [rows, countResult] = await Promise.all([
-    db
-      .select({
-        offeringSlug: programOfferingsTable.slug,
-        annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
-        offeringFeatured: programOfferingsTable.featured,
-        uniSlug: universitiesTable.slug,
-        uniName: universitiesTable.name,
-        uniCity: universitiesTable.city,
-        uniType: universitiesTable.type,
-        uniLogoUrl: universitiesTable.logoUrl,
-        uniCoverImageUrl: universitiesTable.coverImageUrl,
-        uniGalleryImages: universitiesTable.galleryImages,
-        uniFeatured: universitiesTable.featured,
-        countrySlug: countriesTable.slug,
-        countryName: countriesTable.name,
-        courseSlug: coursesTable.slug,
-        courseShortName: coursesTable.shortName,
-      })
-      .from(programOfferingsTable)
-      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-      .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
-      .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
-      .where(where)
-      .orderBy(...orderClauses)
-      .limit(pageSize)
-      .offset(offset),
-    db
-      .select({ total: sql<string>`count(*)` })
-      .from(programOfferingsTable)
-      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-      .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
-      .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
-      .where(where),
-  ]);
+  const rows = await db
+    .select({
+      offeringSlug: programOfferingsTable.slug,
+      annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
+      offeringFeatured: programOfferingsTable.featured,
+      uniSlug: universitiesTable.slug,
+      uniName: universitiesTable.name,
+      uniCity: universitiesTable.city,
+      uniType: universitiesTable.type,
+      uniLogoUrl: universitiesTable.logoUrl,
+      uniCoverImageUrl: universitiesTable.coverImageUrl,
+      uniFeatured: universitiesTable.featured,
+      countrySlug: countriesTable.slug,
+      countryName: countriesTable.name,
+      courseSlug: coursesTable.slug,
+      courseShortName: coursesTable.shortName,
+      totalCount: sql<number>`count(*) over()`,
+    })
+    .from(programOfferingsTable)
+    .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+    .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+    .where(where)
+    .orderBy(...orderClauses)
+    .limit(pageSize)
+    .offset(offset);
 
-  const totalItems = Number(countResult[0]?.total ?? 0);
+  const totalItems =
+    rows.length > 0
+      ? Number(rows[0]?.totalCount ?? 0)
+      : currentPage > 1
+        ? Number(
+            (
+              await db
+                .select({ total: sql<string>`count(*)` })
+                .from(programOfferingsTable)
+                .innerJoin(
+                  universitiesTable,
+                  eq(programOfferingsTable.universityId, universitiesTable.id),
+                )
+                .innerJoin(
+                  countriesTable,
+                  eq(universitiesTable.countryId, countriesTable.id),
+                )
+                .innerJoin(
+                  coursesTable,
+                  eq(programOfferingsTable.courseId, coursesTable.id),
+                )
+                .where(where)
+            )[0]?.total ?? 0,
+          )
+        : 0;
   const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
   const safePage = Math.min(currentPage, totalPages);
 
@@ -624,7 +640,6 @@ export async function queryFinderCardProgramsPage(
       type: row.uniType as "Public" | "Private",
       logoUrl: row.uniLogoUrl ?? undefined,
       coverImageUrl: row.uniCoverImageUrl ?? undefined,
-      galleryImages: (row.uniGalleryImages ?? []) as UniversityGalleryImage[],
       featured: row.uniFeatured,
     },
     country: { slug: row.countrySlug, name: row.countryName },
@@ -654,17 +669,64 @@ export async function getFinderOptions(): Promise<FinderOptions> {
   cacheTag("catalog");
   cacheTag("finder");
 
-  const snapshot = await getCatalogSnapshot();
+  const db = getDb();
+  if (!db) {
+    return {
+      countries: [],
+      courses: [],
+      mediums: [],
+      intakes: [],
+    };
+  }
+
+  const [countryRows, courseRows, mediumRows, intakeRows] = await Promise.all([
+    db
+      .select({
+        slug: countriesTable.slug,
+        name: countriesTable.name,
+      })
+      .from(countriesTable)
+      .orderBy(asc(countriesTable.name)),
+    db
+      .select({
+        slug: coursesTable.slug,
+        shortName: coursesTable.shortName,
+      })
+      .from(coursesTable)
+      .orderBy(asc(coursesTable.shortName)),
+    db
+      .selectDistinct({
+        medium: programOfferingsTable.medium,
+      })
+      .from(programOfferingsTable)
+      .orderBy(asc(programOfferingsTable.medium)),
+    db
+      .select({
+        intakeMonths: programOfferingsTable.intakeMonths,
+      })
+      .from(programOfferingsTable),
+  ]);
+
+  const countries: FinderCountryOption[] = countryRows.map((country) => ({
+    slug: country.slug,
+    name: country.name,
+  }));
+
+  const courses: FinderCourseOption[] = courseRows.map((course) => ({
+    slug: course.slug,
+    shortName: course.shortName,
+  }));
+
+  const mediums = mediumRows.map(
+    (row) => row.medium as ProgramOffering["medium"],
+  );
+  const intakes = [...new Set(intakeRows.flatMap((row) => row.intakeMonths))].sort();
 
   return {
-    countries: snapshot.countries,
-    courses: snapshot.courses,
-    mediums: [...new Set(snapshot.programOfferings.map((item) => item.medium))],
-    intakes: [
-      ...new Set(
-        snapshot.programOfferings.flatMap((item) => item.intakeMonths),
-      ),
-    ].sort(),
+    countries,
+    courses,
+    mediums,
+    intakes,
   };
 }
 

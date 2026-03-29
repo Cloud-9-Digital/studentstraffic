@@ -57,6 +57,13 @@
       "when": 1774733400000,
       "tag": "0007_lead_sync_status",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1774783506000,
+      "tag": "0008_finder_search_indexes",
+      "breakpoints": true
     }
   ]
 }

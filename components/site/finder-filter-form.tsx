@@ -14,8 +14,8 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import type {
-  Country,
-  Course,
+  FinderCountryOption,
+  FinderCourseOption,
   FinderFilters,
   ProgramOffering,
 } from "@/lib/data/types";
@@ -25,8 +25,8 @@ export type FinderFilterChangeOptions = {
 };
 
 type FinderFilterFormProps = {
-  countries: Country[];
-  courses: Course[];
+  countries: FinderCountryOption[];
+  courses: FinderCourseOption[];
   mediums: ProgramOffering["medium"][];
   intakes: string[];
   filters: FinderFilters;
@@ -188,8 +188,8 @@ function FilterFields({
   onNavigate,
   onFiltersChange,
 }: {
-  countries: Country[];
-  courses: Course[];
+  countries: FinderCountryOption[];
+  courses: FinderCourseOption[];
   mediums: ProgramOffering["medium"][];
   intakes: string[];
   filters: FinderFilters;
