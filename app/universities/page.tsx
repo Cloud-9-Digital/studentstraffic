@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 
+import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { FinderFilterForm } from "@/components/site/finder-filter-form";
-import { LeadForm } from "@/components/site/lead-form";
 import { UniversityCard } from "@/components/site/university-card";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -108,7 +108,7 @@ export default function UniversitiesPage({
               </p>
             </div>
 
-            <LeadForm
+            <DeferredLeadForm
               sourcePath="/universities"
               ctaVariant="finder_cta"
               title="Talk through your shortlist"

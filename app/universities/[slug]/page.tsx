@@ -23,7 +23,7 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
 import { ComparisonCard } from "@/components/site/comparison-card";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
-import { LeadForm } from "@/components/site/lead-form";
+import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversityCard } from "@/components/site/university-card";
 import {
   Accordion,
@@ -669,7 +669,7 @@ export default async function UniversityDetailPage({
 
                 {/* Form */}
                 <div className="bg-card px-4 pb-4 pt-3">
-                  <LeadForm
+                  <DeferredLeadForm
                     sourcePath={`/universities/${university.slug}`}
                     ctaVariant="university_sidebar"
                     universitySlug={university.slug}

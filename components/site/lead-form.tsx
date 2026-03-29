@@ -57,6 +57,19 @@ const INDIAN_STATES = [
 
 const initialState: LeadFormState = {};
 
+export type LeadFormProps = {
+  sourcePath: string;
+  ctaVariant: string;
+  title?: string;
+  description?: string;
+  submitLabel?: string;
+  courseSlug?: string;
+  countrySlug?: string;
+  universitySlug?: string;
+  embedded?: boolean;
+  stacked?: boolean;
+};
+
 export function LeadForm({
   sourcePath,
   ctaVariant,
@@ -68,18 +81,7 @@ export function LeadForm({
   universitySlug,
   embedded = false,
   stacked = false,
-}: {
-  sourcePath: string;
-  ctaVariant: string;
-  title?: string;
-  description?: string;
-  submitLabel?: string;
-  courseSlug?: string;
-  countrySlug?: string;
-  universitySlug?: string;
-  embedded?: boolean;
-  stacked?: boolean;
-}) {
+}: LeadFormProps) {
   const [state, formAction, isPending] = useActionState(
     submitLeadAction,
     initialState

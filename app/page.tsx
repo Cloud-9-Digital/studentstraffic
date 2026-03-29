@@ -10,8 +10,8 @@ import {
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
+import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { HeroSearch } from "@/components/site/hero-search";
-import { LeadForm } from "@/components/site/lead-form";
 import { SectionHeading } from "@/components/site/section-heading";
 import { Button } from "@/components/ui/button";
 import {
@@ -122,7 +122,7 @@ export default async function HomePage() {
       <section className="py-20 md:py-28 lg:py-32">
         <div className="container-shell text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
-            India's Most Transparent MBBS Abroad Platform
+            India&apos;s Most Transparent MBBS Abroad Platform
           </p>
 
           <h1 className="mx-auto mt-4 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
@@ -274,7 +274,7 @@ export default async function HomePage() {
               </p>
             </div>
 
-            <LeadForm
+            <DeferredLeadForm
               sourcePath="/"
               ctaVariant="home_cta"
               title="Talk to a counsellor for free"

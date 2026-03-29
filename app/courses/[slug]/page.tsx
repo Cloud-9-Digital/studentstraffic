@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { ContentTrustPanel } from "@/components/site/content-trust-panel";
-import { LeadForm } from "@/components/site/lead-form";
+import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { SectionHeading } from "@/components/site/section-heading";
 import { UniversityCard } from "@/components/site/university-card";
 import { Badge } from "@/components/ui/badge";
@@ -267,7 +267,7 @@ export default async function CoursePage({
               description="Share your details if you want help understanding destinations, shortlisting universities, or planning the next step."
             />
           </div>
-          <LeadForm
+          <DeferredLeadForm
             sourcePath={`/courses/${course.slug}`}
             ctaVariant="course_cta"
             title={`Talk through your ${course.shortName} options`}

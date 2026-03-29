@@ -18,7 +18,7 @@ import {
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { CurrencyConverter } from "@/components/site/currency-converter";
-import { LeadForm } from "@/components/site/lead-form";
+import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
 import { catalogReviewedAt } from "@/lib/content-governance";
@@ -672,7 +672,7 @@ export default async function CountryPage({
               </Button>
             </div>
 
-            <LeadForm
+            <DeferredLeadForm
               sourcePath={`/countries/${country.slug}`}
               ctaVariant="country_sidebar"
               title={`Talk through studying in ${country.name}`}
