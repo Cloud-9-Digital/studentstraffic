@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { ArrowUpRight, Star } from "lucide-react";
 
-
+import { JsonLd } from "@/components/shared/json-ld";
 import { UniversityReviewForm } from "@/components/site/university-review-form";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 import type { UniversityReview } from "@/lib/data/types";
 import { getUniversityReviews } from "@/lib/university-community";
+import { absoluteUrl } from "@/lib/metadata";
+import { getUniversityHref } from "@/lib/routes";
+import { getUniversityStructuredDataId } from "@/lib/structured-data";
 import { getYouTubeEmbedUrl } from "@/lib/youtube";
 
 function formatReviewDate(value: string) {
@@ -40,23 +42,23 @@ function ReviewerAvatar({ name }: { name: string }) {
     .join("");
 
   return (
-    <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-accent/12 text-xs font-bold text-accent ring-2 ring-accent/10">
+    <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-accent/10 text-[0.65rem] font-bold text-accent">
       {initials}
     </div>
   );
 }
 
-function StarDisplay({ rating, size = "sm" }: { rating: number; size?: "sm" | "md" }) {
-  const cls = size === "md" ? "size-5" : "size-3.5";
+function StarDisplay({ rating, size = "sm" }: { rating: number; size?: "sm" | "xs" }) {
+  const cls = size === "sm" ? "size-3.5" : "size-3";
   return (
-    <div className="flex items-center gap-0.5">
+    <div className="flex items-center gap-px">
       {[1, 2, 3, 4, 5].map((star) => (
         <Star
           key={star}
           className={
             star <= rating
               ? `${cls} fill-yellow-400 text-yellow-400`
-              : `${cls} fill-none text-border`
+              : `${cls} fill-muted text-muted`
           }
         />
       ))}
@@ -68,8 +70,8 @@ function VideoReviewCard({ review }: { review: UniversityReview }) {
   if (!review.youtubeVideoId || !review.youtubeUrl) return null;
 
   return (
-    <Card className="overflow-hidden border-border/60 bg-card shadow-sm transition-shadow hover:shadow-md">
-      <div className="aspect-video overflow-hidden border-b border-border/60 bg-muted">
+    <div className="overflow-hidden rounded-xl border border-border/60 bg-card">
+      <div className="aspect-video overflow-hidden bg-muted">
         <iframe
           src={getYouTubeEmbedUrl(review.youtubeVideoId)}
           title={`${review.reviewerName} video review`}
@@ -79,105 +81,123 @@ function VideoReviewCard({ review }: { review: UniversityReview }) {
           className="h-full w-full border-0"
         />
       </div>
-      <CardContent className="py-5">
-        <div className="flex items-center gap-3">
-          <ReviewerAvatar name={review.reviewerName} />
-          <div className="min-w-0 flex-1">
-            <div className="flex flex-wrap items-center gap-1.5">
-              <p className="text-sm font-semibold text-foreground">{review.reviewerName}</p>
-              {review.verificationStatus === "verified" && (
-                <Badge className="rounded-full px-2 py-0.5 text-[0.65rem]">Verified</Badge>
-              )}
-              {review.isFeatured && (
-                <Badge className="rounded-full bg-accent px-2 py-0.5 text-[0.65rem] text-white">Featured</Badge>
-              )}
-            </div>
-            {review.reviewerContext && (
-              <p className="text-xs text-muted-foreground">{review.reviewerContext}</p>
+      <div className="flex items-center gap-2.5 px-4 py-3">
+        <ReviewerAvatar name={review.reviewerName} />
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-1.5">
+            <p className="truncate text-sm font-semibold text-foreground">{review.reviewerName}</p>
+            {review.verificationStatus === "verified" && (
+              <Badge className="rounded-full px-1.5 py-0 text-[0.6rem]">Verified</Badge>
             )}
-            <p className="text-[0.7rem] uppercase tracking-[0.1em] text-muted-foreground/70">
-              {formatReviewDate(review.createdAt)}
-            </p>
           </div>
-          <Link
-            href={review.youtubeUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="flex shrink-0 items-center gap-1 text-xs font-medium text-accent hover:text-accent-strong"
-          >
-            YouTube
-            <ArrowUpRight className="size-3.5" />
-          </Link>
+          {review.reviewerContext && (
+            <p className="text-xs text-muted-foreground">{review.reviewerContext}</p>
+          )}
         </div>
-      </CardContent>
-    </Card>
+        <Link
+          href={review.youtubeUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="flex shrink-0 items-center gap-0.5 text-xs font-medium text-accent hover:underline"
+        >
+          Watch
+          <ArrowUpRight className="size-3" />
+        </Link>
+      </div>
+    </div>
   );
 }
 
-function TextReviewCard({ review }: { review: UniversityReview }) {
+function TextReviewRow({ review, isLast }: { review: UniversityReview; isLast: boolean }) {
   return (
-    <Card className="group relative overflow-hidden border-border/60 bg-card shadow-sm transition-shadow hover:shadow-md">
-      <CardContent className="relative p-6 sm:p-7">
-        {/* Decorative quote mark */}
-        <span className="pointer-events-none absolute right-5 top-3 font-display text-[5rem] font-bold leading-none text-accent/8 select-none">
-          &ldquo;
-        </span>
-
-        {/* Stars */}
-        {review.starRating ? (
-          <div className="mb-4">
-            <StarDisplay rating={review.starRating} size="md" />
-          </div>
-        ) : null}
-
-        {/* Review body */}
-        <p className="relative text-sm leading-[1.85] text-foreground/85 sm:text-[0.9375rem]">
-          {review.reviewBody}
-        </p>
-
-        {/* Reviewer */}
-        <div className="mt-5 flex items-center gap-3 border-t border-border/50 pt-5">
-          <ReviewerAvatar name={review.reviewerName} />
-          <div className="min-w-0 flex-1">
-            <div className="flex flex-wrap items-center gap-1.5">
-              <p className="text-sm font-semibold text-foreground">{review.reviewerName}</p>
+    <div className={!isLast ? "border-b border-border/50 pb-4" : undefined}>
+      <div className="flex items-start gap-2.5">
+        <ReviewerAvatar name={review.reviewerName} />
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-0.5">
+            <div className="flex items-center gap-1.5">
+              <span className="text-sm font-semibold text-foreground">{review.reviewerName}</span>
               {review.verificationStatus === "verified" && (
-                <Badge className="rounded-full px-2 py-0.5 text-[0.65rem]">Verified</Badge>
-              )}
-              {review.isFeatured && (
-                <Badge className="rounded-full bg-accent px-2 py-0.5 text-[0.65rem] text-white">Featured</Badge>
+                <Badge className="rounded-full px-1.5 py-0 text-[0.6rem]">Verified</Badge>
               )}
             </div>
-            <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0">
-              {review.reviewerContext && (
-                <p className="text-xs text-muted-foreground">{review.reviewerContext}</p>
-              )}
-              <p className="text-[0.7rem] uppercase tracking-[0.1em] text-muted-foreground/60">
-                {formatReviewDate(review.createdAt)}
-              </p>
-            </div>
+            {review.starRating ? <StarDisplay rating={review.starRating} size="sm" /> : null}
           </div>
+          <p className="text-[0.7rem] text-muted-foreground">
+            {review.reviewerContext ? `${review.reviewerContext} · ` : ""}
+            {formatReviewDate(review.createdAt)}
+          </p>
+          {review.reviewBody && (
+            <p className="mt-1.5 text-sm leading-relaxed text-foreground/80">{review.reviewBody}</p>
+          )}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }
 
-function AggregateRating({ reviews }: { reviews: UniversityReview[] }) {
+function AggregateRatingDisplay({ reviews }: { reviews: UniversityReview[] }) {
   const rated = reviews.filter((r) => r.reviewType === "text" && r.starRating);
   if (rated.length === 0) return null;
   const avg = rated.reduce((sum, r) => sum + (r.starRating ?? 0), 0) / rated.length;
   const rounded = Math.round(avg * 10) / 10;
 
   return (
-    <div className="flex items-center gap-2.5 rounded-2xl border border-border/60 bg-card px-4 py-3 shadow-sm">
-      <span className="font-display text-3xl font-semibold text-heading">{rounded}</span>
-      <div>
-        <StarDisplay rating={Math.round(avg)} size="md" />
-        <p className="mt-0.5 text-xs text-muted-foreground">{rated.length} rating{rated.length !== 1 ? "s" : ""}</p>
-      </div>
+    <div className="flex items-center gap-1.5">
+      <span className="text-xl font-bold tabular-nums text-heading">{rounded}</span>
+      <StarDisplay rating={Math.round(avg)} size="sm" />
+      <span className="text-xs text-muted-foreground">({rated.length})</span>
     </div>
   );
+}
+
+function buildReviewsSchema(
+  reviews: UniversityReview[],
+  universitySlug: string,
+  universityName: string,
+) {
+  const universityId = getUniversityStructuredDataId(universitySlug);
+  const universityUrl = absoluteUrl(getUniversityHref(universitySlug));
+
+  const textReviews = reviews.filter(
+    (r) => r.reviewType === "text" && r.reviewBody,
+  );
+  const rated = textReviews.filter((r) => r.starRating);
+
+  const graph: object[] = textReviews.map((r) => ({
+    "@type": "Review",
+    "@id": `${universityUrl}#review-${r.id}`,
+    author: { "@type": "Person", name: r.reviewerName },
+    reviewBody: r.reviewBody,
+    datePublished: r.createdAt.slice(0, 10),
+    itemReviewed: { "@id": universityId },
+    ...(r.starRating
+      ? {
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: r.starRating,
+            bestRating: 5,
+            worstRating: 1,
+          },
+        }
+      : {}),
+  }));
+
+  if (rated.length > 0) {
+    const avg =
+      rated.reduce((sum, r) => sum + (r.starRating ?? 0), 0) / rated.length;
+    graph.push({
+      "@type": "AggregateRating",
+      "@id": `${universityUrl}#aggregate-rating`,
+      itemReviewed: { "@id": universityId, "@type": "CollegeOrUniversity", name: universityName },
+      ratingValue: String(Math.round(avg * 10) / 10),
+      bestRating: "5",
+      worstRating: "1",
+      reviewCount: rated.length,
+    });
+  }
+
+  return { "@context": "https://schema.org", "@graph": graph };
 }
 
 export async function UniversityReviewsSection({
@@ -189,84 +209,77 @@ export async function UniversityReviewsSection({
 }) {
   const reviews = await getUniversityReviews(universitySlug);
   const videoReviews = sortVideoReviews(
-    reviews.filter((r) => r.reviewType === "youtube_video")
+    reviews.filter((r) => r.reviewType === "youtube_video"),
   );
   const textReviews = sortTextReviews(
-    reviews.filter((r) => r.reviewType === "text")
+    reviews.filter((r) => r.reviewType === "text"),
   );
   const totalCount = videoReviews.length + textReviews.length;
+  const hasSchema = reviews.some((r) => r.reviewType === "text" && r.reviewBody);
 
   return (
     <div id="reviews" className="deferred-render py-10">
+      {hasSchema && (
+        <JsonLd data={buildReviewsSchema(reviews, universitySlug, universityName)} />
+      )}
 
-      {/* ── Section header ────────────────────────────────────────────── */}
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <div className="flex items-center gap-2">
-            <div className="flex gap-0.5">
-              {[1, 2, 3, 4, 5].map((s) => (
-                <Star key={s} className="size-3.5 fill-yellow-400 text-yellow-400" />
-              ))}
-            </div>
-            <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              Student Reviews
-            </span>
-          </div>
-          <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight text-heading sm:text-4xl">
-            What students say about {universityName}
+      {/* Header */}
+      <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-baseline gap-2">
+          <h2 className="font-display text-xl font-semibold tracking-tight text-heading">
+            Student reviews
           </h2>
           {totalCount > 0 && (
-            <p className="mt-2 text-sm text-muted-foreground">
-              {totalCount} review{totalCount !== 1 ? "s" : ""} from students and community members
-            </p>
+            <span className="text-sm text-muted-foreground">{totalCount}</span>
           )}
         </div>
-        <AggregateRating reviews={reviews} />
+        <AggregateRatingDisplay reviews={reviews} />
       </div>
 
-      {/* ── Reviews ───────────────────────────────────────────────────── */}
-      {totalCount === 0 ? (
-        <div className="mt-8 rounded-[1.5rem] border border-dashed border-border bg-muted/20 py-12 text-center">
-          <p className="font-display text-xl font-semibold text-heading">No reviews yet.</p>
-          <p className="mx-auto mt-2 max-w-xs text-sm text-muted-foreground">
+      {totalCount === 0 && (
+        <div className="rounded-2xl border border-dashed border-border bg-muted/20 py-10 text-center">
+          <p className="text-sm font-medium text-heading">No reviews yet.</p>
+          <p className="mt-1 text-sm text-muted-foreground">
             Be the first to share your experience at {universityName}.
           </p>
         </div>
-      ) : null}
+      )}
 
-      {videoReviews.length > 0 ? (
-        <div className="mt-8 space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Video reviews</p>
-          <div className="grid gap-4">
+      {videoReviews.length > 0 && (
+        <div className="mb-5">
+          <p className="mb-2.5 text-[0.7rem] font-semibold uppercase tracking-widest text-muted-foreground">
+            Video reviews
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
             {videoReviews.map((review) => (
               <VideoReviewCard key={review.id} review={review} />
             ))}
           </div>
         </div>
-      ) : null}
+      )}
 
-      {textReviews.length > 0 ? (
-        <div className="mt-8 space-y-3">
-          {videoReviews.length > 0 && (
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Written reviews</p>
-          )}
-          <div className="grid gap-4">
-            {textReviews.map((review) => (
-              <TextReviewCard key={review.id} review={review} />
+      {textReviews.length > 0 && (
+        <div className="rounded-xl border border-border/60 bg-card px-4 py-4 sm:px-5">
+          <div className="space-y-4">
+            {textReviews.map((review, i) => (
+              <TextReviewRow
+                key={review.id}
+                review={review}
+                isLast={i === textReviews.length - 1}
+              />
             ))}
           </div>
         </div>
-      ) : null}
+      )}
 
-      {/* ── Add review CTA ────────────────────────────────────────────── */}
-      <div className="mt-10 section-tint rounded-[1.75rem] p-6 sm:p-8">
+      {/* Add review */}
+      <div className="mt-6 section-tint rounded-[1.75rem] p-5 sm:p-6">
         <UniversityReviewForm
           sourcePath={`/universities/${universitySlug}`}
           universitySlug={universitySlug}
           universityName={universityName}
         />
       </div>
-
     </div>
   );
 }

@@ -20,6 +20,10 @@ import { getDb } from "@/lib/db/server";
 import { countries, leads, peerRequests, universities } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { syncLeadDestinations } from "@/lib/lead-sync";
+import {
+  consumePublicFormRateLimits,
+  normalizePhoneIdentifier,
+} from "@/lib/security/public-form-guard";
 
 export type PeerRequestFormState = {
   error?: string;
@@ -147,6 +151,32 @@ export async function submitPeerRequestAction(
     message: emptyToUndefined(data.message),
   });
 
+  const rateLimitError = await consumePublicFormRateLimits(
+    [
+      ipAddress
+        ? {
+            scope: "public:peer_request:ip",
+            identifier: ipAddress,
+            limit: 4,
+            windowMs: 30 * 60_000,
+            blockMs: 2 * 60 * 60_000,
+          }
+        : null,
+      {
+        scope: "public:peer_request:phone",
+        identifier: normalizePhoneIdentifier(data.phone),
+        limit: 3,
+        windowMs: 6 * 60 * 60_000,
+        blockMs: 12 * 60 * 60_000,
+      },
+    ],
+    "peer requests"
+  );
+
+  if (rateLimitError) {
+    return { error: rateLimitError };
+  }
+
   const [universityRecord] = await db
     .select({
       id: universities.id,
@@ -186,68 +216,65 @@ export async function submitPeerRequestAction(
   let insertedLeadId: number | undefined;
 
   try {
-    await db.transaction(async (tx) => {
-      const [insertedLead] = await tx
-        .insert(leads)
-        .values({
-          fullName: data.fullName,
-          phone: data.phone,
-          email: emptyToUndefined(data.email),
-          userState: data.userState,
-          countrySlug: universityRecord.countrySlug,
-          universitySlug: universityRecord.slug,
-          sourcePath: data.sourcePath,
-          sourceUrl: emptyToUndefined(data.sourceUrl),
-          sourceQuery,
-          pageTitle: emptyToUndefined(data.pageTitle),
-          ctaVariant: "peer_request",
-          notes: leadNotes,
-          documentReferrer: emptyToUndefined(data.documentReferrer),
-          utmSource,
-          utmMedium,
-          utmCampaign,
-          utmTerm,
-          utmContent,
-          referrer: headerStore.get("referer") ?? null,
-          userAgent: headerStore.get("user-agent") ?? null,
-          ipAddress,
-          acceptLanguage: headerStore.get("accept-language") ?? null,
-          clientContext,
-          crmSyncStatus: env.hasCrmLeadSyncConfig ? "pending" : "skipped",
-          pabblySyncStatus: env.hasPabblyLeadWebhook ? "pending" : "skipped",
-          createdAt: submittedAt,
-        })
-        .returning({
-          id: leads.id,
-        });
-
-      insertedLeadId = insertedLead?.id;
-
-      await tx.insert(peerRequests).values({
-        universityId: universityRecord.id,
-        leadId: insertedLeadId,
+    const [insertedLead] = await db
+      .insert(leads)
+      .values({
         fullName: data.fullName,
         phone: data.phone,
         email: emptyToUndefined(data.email),
         userState: data.userState,
-        courseInterest: emptyToUndefined(data.courseInterest),
-        preferredContactMode: data.preferredContactMode,
-        message: emptyToUndefined(data.message),
+        countrySlug: universityRecord.countrySlug,
+        universitySlug: universityRecord.slug,
         sourcePath: data.sourcePath,
         sourceUrl: emptyToUndefined(data.sourceUrl),
         sourceQuery,
         pageTitle: emptyToUndefined(data.pageTitle),
+        ctaVariant: "peer_request",
+        notes: leadNotes,
         documentReferrer: emptyToUndefined(data.documentReferrer),
+        utmSource,
+        utmMedium,
+        utmCampaign,
+        utmTerm,
+        utmContent,
+        referrer: headerStore.get("referer") ?? null,
         userAgent: headerStore.get("user-agent") ?? null,
         ipAddress,
         acceptLanguage: headerStore.get("accept-language") ?? null,
         clientContext,
-        status: "new",
+        crmSyncStatus: env.hasCrmLeadSyncConfig ? "pending" : "skipped",
+        pabblySyncStatus: env.hasPabblyLeadWebhook ? "pending" : "skipped",
         createdAt: submittedAt,
-        updatedAt: submittedAt,
-      });
+      })
+      .returning({ id: leads.id });
+
+    insertedLeadId = insertedLead?.id;
+
+    await db.insert(peerRequests).values({
+      universityId: universityRecord.id,
+      leadId: insertedLeadId,
+      fullName: data.fullName,
+      phone: data.phone,
+      email: emptyToUndefined(data.email),
+      userState: data.userState,
+      courseInterest: emptyToUndefined(data.courseInterest),
+      preferredContactMode: data.preferredContactMode,
+      message: emptyToUndefined(data.message),
+      sourcePath: data.sourcePath,
+      sourceUrl: emptyToUndefined(data.sourceUrl),
+      sourceQuery,
+      pageTitle: emptyToUndefined(data.pageTitle),
+      documentReferrer: emptyToUndefined(data.documentReferrer),
+      userAgent: headerStore.get("user-agent") ?? null,
+      ipAddress,
+      acceptLanguage: headerStore.get("accept-language") ?? null,
+      clientContext,
+      status: "new",
+      createdAt: submittedAt,
+      updatedAt: submittedAt,
     });
-  } catch {
+  } catch (err) {
+    console.error("[submit-peer-request] insert failed:", err);
     return {
       error: "We could not save your request right now. Please try once more.",
     };

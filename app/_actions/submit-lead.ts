@@ -1,5 +1,6 @@
 "use server";
 
+import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
@@ -10,6 +11,7 @@ import {
   getFirstQueryValue,
   getFormString,
   getIpAddress,
+  minutesAgo,
   parseJsonObject,
   QueryParamMap,
   wasSubmittedTooFast,
@@ -18,6 +20,10 @@ import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { syncLeadDestinations } from "@/lib/lead-sync";
+import {
+  consumePublicFormRateLimits,
+  normalizePhoneIdentifier,
+} from "@/lib/security/public-form-guard";
 
 export type LeadFormState = {
   error?: string;
@@ -117,11 +123,53 @@ export async function submitLeadAction(
   const utmContent =
     cookieStore.get("utm_content")?.value ??
     getFirstQueryValue(sourceQuery, "utm_content");
+  const ipAddress = getIpAddress(headerStore);
 
   try {
     let insertedLeadId: number | undefined;
 
     if (db) {
+      const rateLimitError = await consumePublicFormRateLimits(
+        [
+          ipAddress
+            ? {
+                scope: "public:lead:ip",
+                identifier: ipAddress,
+                limit: 6,
+                windowMs: 30 * 60_000,
+                blockMs: 2 * 60 * 60_000,
+              }
+            : null,
+          {
+            scope: "public:lead:phone",
+            identifier: normalizePhoneIdentifier(data.phone),
+            limit: 4,
+            windowMs: 6 * 60 * 60_000,
+            blockMs: 12 * 60 * 60_000,
+          },
+        ],
+        "enquiries"
+      );
+
+      if (rateLimitError) {
+        return { error: rateLimitError };
+      }
+
+      const [recentLead] = await db
+        .select({ id: leads.id })
+        .from(leads)
+        .where(
+          and(eq(leads.phone, data.phone), gte(leads.createdAt, minutesAgo(15)))
+        )
+        .limit(1);
+
+      if (recentLead) {
+        return {
+          error:
+            "We already received your enquiry recently. Please wait a few minutes before submitting again.",
+        };
+      }
+
       const [insertedLead] = await db.insert(leads).values({
         fullName: data.fullName,
         phone: data.phone,
@@ -144,7 +192,7 @@ export async function submitLeadAction(
         utmContent,
         referrer: headerStore.get("referer") ?? null,
         userAgent: headerStore.get("user-agent") ?? null,
-        ipAddress: getIpAddress(headerStore),
+        ipAddress,
         acceptLanguage: headerStore.get("accept-language") ?? null,
         clientContext,
         crmSyncStatus: env.hasCrmLeadSyncConfig ? "pending" : "skipped",
@@ -180,7 +228,7 @@ export async function submitLeadAction(
         utmContent,
         referrer: headerStore.get("referer") ?? undefined,
         userAgent: headerStore.get("user-agent") ?? undefined,
-        ipAddress: getIpAddress(headerStore) ?? undefined,
+        ipAddress: ipAddress ?? undefined,
         acceptLanguage: headerStore.get("accept-language") ?? undefined,
         clientContext,
       });

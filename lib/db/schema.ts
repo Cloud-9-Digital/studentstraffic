@@ -24,11 +24,15 @@ import type {
   YearlyCostBreakdown,
 } from "@/lib/data/types";
 
+type JsonValue = string | number | boolean | null | string[];
 type LeadSourceQuery = Record<string, string | string[]>;
 type LeadClientContext = Record<
   string,
-  string | number | boolean | null | string[]
+  JsonValue
 >;
+type AdminAuditLogMetadata = Record<string, JsonValue>;
+
+export type AdminUserRole = "owner" | "admin";
 
 export const countries = pgTable(
   "countries",
@@ -212,6 +216,77 @@ export const leads = pgTable(
   (table) => [index("leads_source_path_idx").on(table.sourcePath)]
 );
 
+export const adminUsers = pgTable(
+  "admin_users",
+  {
+    id: serial("id").primaryKey(),
+    fullName: text("full_name").notNull(),
+    email: text("email").notNull(),
+    passwordHash: text("password_hash").notNull(),
+    role: text("role").$type<AdminUserRole>().notNull().default("owner"),
+    isActive: boolean("is_active").notNull().default(true),
+    createdByAdminId: integer("created_by_admin_id"),
+    lastSignedInAt: timestamp("last_signed_in_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("admin_users_email_idx").on(table.email),
+    index("admin_users_active_idx").on(table.isActive),
+    index("admin_users_role_idx").on(table.role),
+  ]
+);
+
+export const securityRateLimits = pgTable(
+  "security_rate_limits",
+  {
+    id: serial("id").primaryKey(),
+    scope: text("scope").notNull(),
+    identifier: text("identifier").notNull(),
+    attemptCount: integer("attempt_count").notNull().default(0),
+    windowStartedAt: timestamp("window_started_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    blockedUntil: timestamp("blocked_until", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("security_rate_limits_scope_identifier_idx").on(
+      table.scope,
+      table.identifier
+    ),
+    index("security_rate_limits_blocked_until_idx").on(table.blockedUntil),
+  ]
+);
+
+export const adminAuditLogs = pgTable(
+  "admin_audit_logs",
+  {
+    id: serial("id").primaryKey(),
+    actorAdminId: integer("actor_admin_id").references(() => adminUsers.id, {
+      onDelete: "set null",
+    }),
+    actorEmail: text("actor_email"),
+    action: text("action").notNull(),
+    targetType: text("target_type").notNull(),
+    targetId: text("target_id"),
+    targetDisplay: text("target_display"),
+    ipAddress: text("ip_address"),
+    userAgent: text("user_agent"),
+    metadata: jsonb("metadata")
+      .$type<AdminAuditLogMetadata>()
+      .notNull()
+      .default({}),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("admin_audit_logs_actor_idx").on(table.actorAdminId),
+    index("admin_audit_logs_action_idx").on(table.action),
+    index("admin_audit_logs_created_at_idx").on(table.createdAt),
+  ]
+);
+
 export const studentPeers = pgTable(
   "student_peers",
   {
@@ -365,6 +440,9 @@ export type UniversityRow = typeof universities.$inferSelect;
 export type ProgramOfferingRow = typeof programOfferings.$inferSelect;
 export type LeadInsert = typeof leads.$inferInsert;
 export type LeadRow = typeof leads.$inferSelect;
+export type AdminUserRow = typeof adminUsers.$inferSelect;
+export type SecurityRateLimitRow = typeof securityRateLimits.$inferSelect;
+export type AdminAuditLogRow = typeof adminAuditLogs.$inferSelect;
 export type StudentPeerRow = typeof studentPeers.$inferSelect;
 export type PeerRequestInsert = typeof peerRequests.$inferInsert;
 export type PeerRequestRow = typeof peerRequests.$inferSelect;

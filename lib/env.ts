@@ -8,6 +8,7 @@ const envSchema = z.object({
   CRM_LEAD_INTAKE_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_SECRET: z.string().min(1).optional(),
   PABBLY_LEAD_WEBHOOK_URL: z.string().url().optional(),
+  NEXTAUTH_SECRET: z.string().min(1).optional(),
 });
 
 const parsedEnv = envSchema.safeParse({
@@ -16,6 +17,7 @@ const parsedEnv = envSchema.safeParse({
   CRM_LEAD_INTAKE_URL: process.env.CRM_LEAD_INTAKE_URL,
   CRM_LEAD_INTAKE_SECRET: process.env.CRM_LEAD_INTAKE_SECRET,
   PABBLY_LEAD_WEBHOOK_URL: process.env.PABBLY_LEAD_WEBHOOK_URL,
+  NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
 });
 
 if (!parsedEnv.success) {
@@ -43,9 +45,11 @@ export const env = {
   crmLeadIntakeUrl: parsedEnv.data.CRM_LEAD_INTAKE_URL,
   crmLeadIntakeSecret: parsedEnv.data.CRM_LEAD_INTAKE_SECRET,
   pabblyLeadWebhookUrl: parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL,
+  nextAuthSecret: parsedEnv.data.NEXTAUTH_SECRET,
   hasDatabase: Boolean(parsedEnv.data.DATABASE_URL),
   hasCrmLeadSyncConfig: Boolean(
     parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET
   ),
   hasPabblyLeadWebhook: Boolean(parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL),
+  hasAdminAuthConfig: Boolean(parsedEnv.data.NEXTAUTH_SECRET),
 };

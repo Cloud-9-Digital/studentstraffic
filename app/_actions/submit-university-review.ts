@@ -14,6 +14,7 @@ import {
 } from "@/app/_actions/form-helpers";
 import { getDb } from "@/lib/db/server";
 import { universities, universityReviews } from "@/lib/db/schema";
+import { consumePublicFormRateLimits } from "@/lib/security/public-form-guard";
 import { getUniversityReviewsTag } from "@/lib/university-community";
 import { getYouTubeVideoId, getYouTubeWatchUrl } from "@/lib/youtube";
 
@@ -130,6 +131,36 @@ export async function submitUniversityReviewAction(
   const headerStore = await headers();
   const ipAddress = getIpAddress(headerStore);
   const submittedAt = new Date();
+  const reviewerIdentifier =
+    emptyToUndefined(data.reviewerEmail)?.toLowerCase() ??
+    `${data.universitySlug}:${data.reviewerName.trim().toLowerCase()}`;
+
+  const rateLimitError = await consumePublicFormRateLimits(
+    [
+      ipAddress
+        ? {
+            scope: "public:review:ip",
+            identifier: ipAddress,
+            limit: 3,
+            windowMs: 60 * 60_000,
+            blockMs: 6 * 60 * 60_000,
+          }
+        : null,
+      {
+        scope: "public:review:identity",
+        identifier: reviewerIdentifier,
+        limit: 2,
+        windowMs: 24 * 60 * 60_000,
+        blockMs: 24 * 60 * 60_000,
+      },
+    ],
+    "review submissions"
+  );
+
+  if (rateLimitError) {
+    return { error: rateLimitError };
+  }
+
   const [universityRecord] = await db
     .select({
       id: universities.id,
@@ -226,7 +257,7 @@ export async function submitUniversityReviewAction(
       sourcePath: data.sourcePath,
       userAgent: headerStore.get("user-agent") ?? null,
       ipAddress,
-      visibilityStatus: "live",
+      visibilityStatus: "hidden",
       verificationStatus: "unverified",
       isFeatured: false,
       starRating: data.reviewType === "text" ? (data.starRating ?? null) : null,
@@ -243,6 +274,6 @@ export async function submitUniversityReviewAction(
   refresh();
 
   return {
-    success: "Thanks for sharing your perspective.",
+    success: "Thanks for sharing your perspective. Your review is now queued for moderation.",
   };
 }

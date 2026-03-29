@@ -2,9 +2,12 @@
 
 import { eq } from "drizzle-orm";
 import { refresh, updateTag } from "next/cache";
+import { headers } from "next/headers";
 
+import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { universities, universityReviews } from "@/lib/db/schema";
+import { recordAdminAuditLog } from "@/lib/security/admin-audit";
 import { getUniversityReviewsTag } from "@/lib/university-community";
 
 export type ModerationAction = "show" | "hide" | "archive" | "feature" | "unfeature";
@@ -13,6 +16,8 @@ export async function moderateReviewAction(
   reviewId: number,
   action: ModerationAction
 ): Promise<{ error?: string }> {
+  const session = await requireAdminSession();
+
   const db = getDb();
 
   if (!db) {
@@ -49,6 +54,21 @@ export async function moderateReviewAction(
     .update(universityReviews)
     .set(updates)
     .where(eq(universityReviews.id, reviewId));
+
+  const headerStore = await headers();
+  await recordAdminAuditLog({
+    actorAdminId: session.user.adminUserId,
+    actorEmail: session.user.email,
+    action: `review.${action}`,
+    targetType: "university_review",
+    targetId: String(reviewId),
+    targetDisplay: review.universitySlug,
+    metadata: {
+      reviewId,
+      universitySlug: review.universitySlug,
+    },
+    headerSource: headerStore,
+  });
 
   updateTag(getUniversityReviewsTag(review.universitySlug));
   refresh();

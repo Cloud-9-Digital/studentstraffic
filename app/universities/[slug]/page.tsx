@@ -4,7 +4,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import {
-  ArrowUpRight,
   BedDouble,
   CalendarDays,
   CheckCircle2,
@@ -260,13 +259,7 @@ export default async function UniversityDetailPage({
                   size="default"
                   className="border border-white/20 bg-white/8 !text-white hover:bg-white/15 hover:!text-white"
                 >
-                  <Link href="#talk-to-peers">Talk to peers</Link>
-                </Button>
-                <Button asChild variant="ghost" size="default" className="border border-white/20 bg-white/8 !text-white hover:bg-white/15 hover:!text-white">
-                  <Link href={university.officialWebsite} target="_blank" rel="noreferrer">
-                    Official website
-                    <ArrowUpRight className="size-4" />
-                  </Link>
+                  <Link href="#talk-to-peers">Talk to a student</Link>
                 </Button>
               </div>
 
@@ -490,15 +483,16 @@ export default async function UniversityDetailPage({
                   </div>
                   <p className="mt-3 text-sm leading-7 text-muted-foreground">{university.clinicalExposure}</p>
                   {university.teachingHospitals.length > 0 && (
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {university.teachingHospitals.map((h) => (
-                        <span
-                          key={h}
-                          className="rounded-full border border-accent/20 bg-white/80 px-3 py-1.5 text-xs font-medium text-foreground"
-                        >
-                          {h}
-                        </span>
-                      ))}
+                    <div className="mt-4 border-t border-border/60 pt-4">
+                      <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Teaching hospitals</p>
+                      <ul className="space-y-1.5">
+                        {university.teachingHospitals.map((h) => (
+                          <li key={h} className="flex items-start gap-2 text-sm text-foreground">
+                            <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-accent" />
+                            {h}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>

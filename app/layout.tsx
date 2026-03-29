@@ -1,12 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
+import { Suspense } from "react";
 
-import { CompareTrayLoader } from "@/components/site/compare-tray-loader";
-import { MobileStickyBar } from "@/components/site/mobile-sticky-bar";
-import { SiteFooter } from "@/components/site/site-footer";
-import { SiteHeader } from "@/components/site/site-header";
+import { AppChrome } from "@/components/app/app-chrome";
 import { JsonLd } from "@/components/shared/json-ld";
-import { CompareProvider } from "@/lib/compare-context";
+import { Toaster } from "@/components/ui/sonner";
 import { defaultMetadata } from "@/lib/metadata";
 import {
   getOrganizationStructuredData,
@@ -53,15 +51,10 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-full bg-background text-foreground"
       >
-        <CompareProvider>
-          <div className="relative flex min-h-full flex-col">
-            <SiteHeader />
-            <main className="flex-1 pb-[72px] md:pb-0">{children}</main>
-            <SiteFooter />
-            <MobileStickyBar />
-            <CompareTrayLoader />
-          </div>
-        </CompareProvider>
+        <Suspense fallback={null}>
+          <AppChrome>{children}</AppChrome>
+        </Suspense>
+        <Toaster position="top-center" />
         <JsonLd
           data={getStructuredDataGraph([
             getOrganizationStructuredData(),

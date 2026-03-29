@@ -40,7 +40,7 @@ function StarSelector({
         <button
           key={star}
           type="button"
-          onClick={() => onChange(star)}
+          onClick={() => onChange(star === value ? 0 : star)}
           onMouseEnter={() => setHovered(star)}
           onMouseLeave={() => setHovered(0)}
           className="text-muted-foreground transition-colors hover:text-yellow-400"
@@ -48,7 +48,7 @@ function StarSelector({
         >
           <Star
             className={cn(
-              "size-7 transition-colors",
+              "size-6 transition-colors",
               star <= (hovered || value)
                 ? "fill-yellow-400 text-yellow-400"
                 : "fill-none text-muted-foreground/40"

@@ -1,33 +1,52 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
+import { getToken } from "next-auth/jwt";
 
-const trackedParams = [
-  "utm_source",
-  "utm_medium",
-  "utm_campaign",
-  "utm_term",
-  "utm_content",
-] as const;
+import { findActiveAdminById } from "@/lib/auth/admin-access";
+import { env } from "@/lib/env";
 
-export function proxy(request: NextRequest) {
-  const response = NextResponse.next();
+const OWNER_ONLY_ADMIN_PATHS = ["/admin/admins"];
 
-  for (const key of trackedParams) {
-    const value = request.nextUrl.searchParams.get(key);
+function getLoginRedirect(request: NextRequest) {
+  const loginUrl = new URL("/login", request.url);
+  loginUrl.searchParams.set(
+    "callbackUrl",
+    `${request.nextUrl.pathname}${request.nextUrl.search}`
+  );
+  return loginUrl;
+}
 
-    if (value) {
-      response.cookies.set(key, value, {
-        httpOnly: true,
-        sameSite: "lax",
-        path: "/",
-        maxAge: 60 * 60 * 24 * 30,
-      });
-    }
+export async function proxy(request: NextRequest) {
+  if (request.nextUrl.pathname === "/admin/login") {
+    return NextResponse.next();
   }
 
-  return response;
+  const token = await getToken({
+    req: request,
+    secret: env.nextAuthSecret,
+  });
+
+  if (token?.role !== "admin" || typeof token.adminUserId !== "number") {
+    return NextResponse.redirect(getLoginRedirect(request));
+  }
+
+  const adminUser = await findActiveAdminById(token.adminUserId);
+
+  if (!adminUser) {
+    return NextResponse.redirect(getLoginRedirect(request));
+  }
+
+  if (
+    OWNER_ONLY_ADMIN_PATHS.some((path) =>
+      request.nextUrl.pathname.startsWith(path)
+    ) &&
+    adminUser.role !== "owner"
+  ) {
+    return NextResponse.redirect(new URL("/admin", request.url));
+  }
+
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)"],
+  matcher: ["/admin/:path*"],
 };
