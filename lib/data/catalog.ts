@@ -260,7 +260,13 @@ export async function getLandingPageSlugs() {
   return landingPages.map((page) => page.slug);
 }
 
-export async function listFinderPrograms(filters: FinderFilters) {
+async function getFinderProgramsBase() {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+
   const snapshot = await getCatalogSnapshot();
 
   const universityBySlug = new Map(
@@ -291,61 +297,6 @@ export async function listFinderPrograms(filters: FinderFilters) {
       };
     })
     .filter((item): item is FinderProgram => Boolean(item))
-    .filter((program) => {
-      if (filters.q) {
-        const q = filters.q.toLowerCase();
-        const haystack = [
-          program.university.name,
-          program.university.city,
-          program.country.name,
-          program.course.shortName,
-        ]
-          .join(" ")
-          .toLowerCase();
-        if (!haystack.includes(q)) return false;
-      }
-
-      if (filters.country && program.country.slug !== filters.country) {
-        return false;
-      }
-
-      if (filters.course && program.course.slug !== filters.course) {
-        return false;
-      }
-
-      if (filters.feeMin) {
-        if (!hasPublishedUsdAmount(program.offering.annualTuitionUsd)) {
-          return false;
-        }
-
-        if (program.offering.annualTuitionUsd < filters.feeMin) {
-          return false;
-        }
-      }
-
-      if (filters.feeMax) {
-        if (!hasPublishedUsdAmount(program.offering.annualTuitionUsd)) {
-          return false;
-        }
-
-        if (program.offering.annualTuitionUsd > filters.feeMax) {
-          return false;
-        }
-      }
-
-      if (filters.medium && program.offering.medium !== filters.medium) {
-        return false;
-      }
-
-      if (
-        filters.intake &&
-        !program.offering.intakeMonths.includes(filters.intake)
-      ) {
-        return false;
-      }
-
-      return true;
-    })
     .sort((a, b) => {
       if (a.offering.featured !== b.offering.featured) {
         return Number(b.offering.featured) - Number(a.offering.featured);
@@ -358,7 +309,79 @@ export async function listFinderPrograms(filters: FinderFilters) {
     });
 }
 
+export async function listFinderPrograms(filters: FinderFilters) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+
+  const programs = await getFinderProgramsBase();
+
+  return programs.filter((program) => {
+    if (filters.q) {
+      const q = filters.q.toLowerCase();
+      const haystack = [
+        program.university.name,
+        program.university.city,
+        program.country.name,
+        program.course.shortName,
+      ]
+        .join(" ")
+        .toLowerCase();
+      if (!haystack.includes(q)) return false;
+    }
+
+    if (filters.country && program.country.slug !== filters.country) {
+      return false;
+    }
+
+    if (filters.course && program.course.slug !== filters.course) {
+      return false;
+    }
+
+    if (filters.feeMin) {
+      if (!hasPublishedUsdAmount(program.offering.annualTuitionUsd)) {
+        return false;
+      }
+
+      if (program.offering.annualTuitionUsd < filters.feeMin) {
+        return false;
+      }
+    }
+
+    if (filters.feeMax) {
+      if (!hasPublishedUsdAmount(program.offering.annualTuitionUsd)) {
+        return false;
+      }
+
+      if (program.offering.annualTuitionUsd > filters.feeMax) {
+        return false;
+      }
+    }
+
+    if (filters.medium && program.offering.medium !== filters.medium) {
+      return false;
+    }
+
+    if (
+      filters.intake &&
+      !program.offering.intakeMonths.includes(filters.intake)
+    ) {
+      return false;
+    }
+
+    return true;
+  });
+}
+
 export async function getFinderOptions() {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+
   const snapshot = await getCatalogSnapshot();
 
   return {
@@ -385,7 +408,7 @@ export async function getProgramsForCourse(courseSlug: string) {
 }
 
 export async function getProgramsForUniversity(universitySlug: string) {
-  const programs = await listFinderPrograms({});
+  const programs = await getFinderProgramsBase();
   return programs.filter((program) => program.university.slug === universitySlug);
 }
 
