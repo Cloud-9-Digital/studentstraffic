@@ -127,7 +127,7 @@ export default async function CoursePage({
             <p className="max-w-3xl text-base leading-8 text-white/80">
               {course.summary} Explore where this route is available, which
               countries students usually compare, and the next pages worth
-              opening when you want a clearer shortlist.
+              opening when you want a clearer path.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -211,7 +211,7 @@ export default async function CoursePage({
           <SectionHeading
             eyebrow="Budget Guides"
             title={`Budget-first planning for ${course.shortName}`}
-            description="If fees are shaping the shortlist early, these pages give you a simpler place to start."
+            description="If fees are shaping the options early, these pages give you a simpler place to start."
           />
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {budgetGuides.slice(0, 3).map((guide) => (
@@ -264,7 +264,7 @@ export default async function CoursePage({
           <div>
             <SectionHeading
               title={`Want help choosing the right ${course.shortName} route?`}
-              description="Share your details if you want help understanding destinations, shortlisting universities, or planning the next step."
+              description="Share your details if you want help understanding destinations, evaluating universities, or planning the next step."
             />
           </div>
           <DeferredLeadForm

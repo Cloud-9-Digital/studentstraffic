@@ -37,6 +37,7 @@ const reviewSchema = z.object({
   reviewerContext: z.string().trim().max(120).optional(),
   reviewBody: z.string().trim().optional(),
   youtubeUrl: z.string().trim().optional(),
+  starRating: z.coerce.number().int().min(1).max(5).optional(),
   sourcePath: z.string().trim().min(1),
   website: z.string().trim().optional(),
   startedAt: z.string().trim().min(1),
@@ -78,6 +79,7 @@ export async function submitUniversityReviewAction(
     reviewerContext: getFormString(formData, "reviewerContext"),
     reviewBody: getFormString(formData, "reviewBody"),
     youtubeUrl: getFormString(formData, "youtubeUrl"),
+    starRating: getFormString(formData, "starRating"),
     sourcePath: getFormString(formData, "sourcePath"),
     website: getFormString(formData, "website"),
     startedAt: getFormString(formData, "startedAt"),
@@ -227,6 +229,7 @@ export async function submitUniversityReviewAction(
       visibilityStatus: "live",
       verificationStatus: "unverified",
       isFeatured: false,
+      starRating: data.reviewType === "text" ? (data.starRating ?? null) : null,
       createdAt: submittedAt,
       updatedAt: submittedAt,
     });

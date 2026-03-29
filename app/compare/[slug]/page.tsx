@@ -46,8 +46,8 @@ export async function generateMetadata({
   if (!guide) return { title: "Comparison Not Found" };
 
   return buildIndexableMetadata({
-    title: `${guide.left.university.name} vs ${guide.right.university.name} | Fees, Fit & Shortlist Guide`,
-    description: `Compare ${guide.left.university.name} and ${guide.right.university.name} on MBBS fees, city, duration, NMC recognition, and shortlist fit for Indian students.`,
+    title: `${guide.left.university.name} vs ${guide.right.university.name} | Fees, Fit & Admissions Guide`,
+    description: `Compare ${guide.left.university.name} and ${guide.right.university.name} on MBBS fees, city, duration, NMC recognition, and admissions fit for Indian students.`,
     path: getComparisonHref(guide.slug),
     keywords: [
       `${guide.left.university.name} vs ${guide.right.university.name}`,
@@ -164,7 +164,7 @@ export default async function ComparisonGuidePage({
 
           <p className="mt-4 max-w-2xl text-sm leading-7 text-white/55 md:text-base md:leading-8">
             A side-by-side breakdown of tuition, city, teaching medium, recognition,
-            and shortlist fit to help you decide which university suits you better.
+            and admissions fit to help you decide which university suits you better.
           </p>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1.5">
@@ -240,7 +240,7 @@ export default async function ComparisonGuidePage({
                   <p className="mt-3 text-sm leading-7 text-white/55">
                     Use this page to weigh the tradeoffs side by side, then
                     open the university pages or browse more options if you
-                    want a broader shortlist.
+                    want a broader set of options.
                   </p>
                 </div>
                 <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:flex-wrap">

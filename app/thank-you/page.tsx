@@ -197,7 +197,7 @@ const steps = [
       "If we need to follow up on your request, we'll use the contact details you just shared.",
   },
   {
-    title: "Save your shortlist",
+    title: "Save your options",
     description:
       "It helps to keep your preferred universities, course goals, and questions ready for the next conversation.",
   },

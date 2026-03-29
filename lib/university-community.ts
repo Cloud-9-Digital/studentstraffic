@@ -94,6 +94,7 @@ export async function getUniversityReviews(
       visibilityStatus: universityReviews.visibilityStatus,
       verificationStatus: universityReviews.verificationStatus,
       isFeatured: universityReviews.isFeatured,
+      starRating: universityReviews.starRating,
       createdAt: universityReviews.createdAt,
       updatedAt: universityReviews.updatedAt,
     })
@@ -123,6 +124,7 @@ export async function getUniversityReviews(
     visibilityStatus: review.visibilityStatus,
     verificationStatus: review.verificationStatus,
     isFeatured: review.isFeatured,
+    starRating: review.starRating ?? undefined,
     createdAt: toIsoString(review.createdAt),
     updatedAt: review.updatedAt ? toIsoString(review.updatedAt) : undefined,
   }));

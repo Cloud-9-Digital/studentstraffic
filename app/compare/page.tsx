@@ -16,7 +16,7 @@ import { getComparisonHref } from "@/lib/routes";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS University Comparison Guides for Indian Students",
   description:
-    "Side-by-side comparison guides for MBBS universities abroad — fees, city, recognition, teaching medium, and shortlist fit for Indian students.",
+    "Side-by-side comparison guides for MBBS universities abroad — fees, city, recognition, teaching medium, and admissions fit for Indian students.",
   path: "/compare",
 });
 
@@ -41,7 +41,7 @@ export default async function CompareIndexPage() {
       <div className="container-shell space-y-12">
         <SectionHeading
           eyebrow="Comparison Guides"
-          title="Use comparison guides when your shortlist is already narrowing"
+          title="Use comparison guides when your options are narrowing"
           description="These pages are research support for decision-stage students who want side-by-side thinking before choosing between institutions."
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -56,7 +56,7 @@ export default async function CompareIndexPage() {
                     {guide.left.university.name} vs {guide.right.university.name}
                   </h2>
                   <p className="text-sm leading-7 text-muted-foreground">
-                    Compare tuition, city, medium, recognition, and shortlist
+                    Compare tuition, city, medium, recognition, and admissions fit
                     fit for two universities students often evaluate together.
                   </p>
                 </CardContent>

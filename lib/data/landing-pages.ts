@@ -8,11 +8,11 @@ export const landingPages: LandingPage[] = [
     title: "MBBS in Russia",
     kicker: "Established public medical universities",
     summary:
-      "Compare public Russian medical universities, hostel-backed campuses, and fee bands to shortlist a confident MBBS pathway.",
+      "Compare public Russian medical universities, hostel-backed campuses, and fee bands to plan a confident MBBS pathway.",
     heroHighlights: [
       "Public university options",
       "Strong university legacy",
-      "NMC-focused shortlisting",
+      "NMC-focused planning",
       "Hostel-backed campus planning",
     ],
     reasonsToChoose: [
@@ -22,7 +22,7 @@ export const landingPages: LandingPage[] = [
     ],
     editorialNotes: [
       "Best for families who value institutional history over trendiness.",
-      "Strong shortlist destination when you want multiple public MBBS options in one market.",
+      "Strong destination when you want multiple public MBBS options in one market.",
       "Important to compare city, language support, and winter lifestyle before final selection.",
     ],
     featuredUniversitySlugs: [
@@ -43,7 +43,7 @@ export const landingPages: LandingPage[] = [
     ],
     metaTitle: "MBBS in Russia 2026 | Fees, Universities, Eligibility",
     metaDescription:
-      "Explore MBBS in Russia with shortlist-ready university data, fee bands, hostel filters, and a lead capture flow built for Indian applicants.",
+      "Explore MBBS in Russia with admission-ready university data, fee bands, hostel filters, and a lead capture flow built for Indian applicants.",
     atAGlance: [
       { label: "Program", value: "MBBS (6-year MD-equivalent)" },
       { label: "Annual tuition", value: "$3,500 – $9,000" },
@@ -67,7 +67,7 @@ export const landingPages: LandingPage[] = [
     },
     admissionSteps: [
       "Clear NEET-UG and obtain your scorecard",
-      "Research and shortlist universities in Russia that follow NMC guidelines",
+      "Research and evaluate universities in Russia that follow NMC guidelines",
       "Submit your application online with required documents",
       "Receive the official invitation letter from the university",
       "Apply for a Russian student visa at the Russian Embassy in India",
@@ -248,7 +248,7 @@ export const landingPages: LandingPage[] = [
     },
     admissionSteps: [
       "If you plan to practise in India, ensure you have a valid NEET-UG score before your MBBS program begins",
-      "Check that your shortlisted Vietnam universities follow NMC guidelines — verify on the official NMC website",
+      "Check that your optionsed Vietnam universities follow NMC guidelines — verify on the official NMC website",
       "Submit your application with required documents to the university or an authorised representative",
       "Receive the university's official admission offer letter",
       "Apply for a Vietnam student visa at the Vietnamese Embassy in India",
@@ -397,22 +397,22 @@ export const landingPages: LandingPage[] = [
     title: "MBBS in Georgia",
     kicker: "English-medium urban medical programs",
     summary:
-      "Evaluate English-medium MBBS options in Georgia with city-based campuses, cleaner shortlist comparisons, and modern student support.",
+      "Evaluate English-medium MBBS options in Georgia with city-based campuses, cleaner admissions comparisons, and modern student support.",
     heroHighlights: [
       "English-medium programs",
       "Urban campus lifestyle",
-      "Compact shortlist planning",
+      "Compact admissions planning",
       "International student orientation",
     ],
     reasonsToChoose: [
       "Strong option for students who want English-medium delivery from day one",
       "Useful for families who value city safety and daily convenience",
-      "Often shortlisted by students prioritizing urban living over ultra-low fees",
+      "Often chosen by students prioritizing urban living over ultra-low fees",
     ],
     editorialNotes: [
       "Georgia is best evaluated through city fit, medium, and academic support quality.",
       "Do not compare only by tuition; lifestyle and long-term academic fit matter more here.",
-      "A smaller, better Georgia shortlist usually converts better than a wide one.",
+      "A smaller, better Georgian admissions plan usually converts better than a wide one.",
     ],
     featuredUniversitySlugs: [
       "georgian-national-university-seu",
@@ -439,14 +439,14 @@ export const landingPages: LandingPage[] = [
     courseSlug: "mbbs",
     countrySlug: "kyrgyzstan",
     title: "MBBS in Kyrgyzstan",
-    kicker: "Budget-led medical shortlisting",
+    kicker: "Budget-led medical admissions",
     summary:
-      "Explore affordable MBBS options in Kyrgyzstan with fee-sensitive comparisons, hostel filters, and fast shortlist discovery.",
+      "Explore affordable MBBS options in Kyrgyzstan with fee-sensitive comparisons, hostel filters, and fast admissions discovery.",
     heroHighlights: [
       "Lower annual fee bands",
       "Hostel-backed affordability",
       "Strong budget comparison use case",
-      "Fast shortlist generation",
+      "Fast admissions planning",
     ],
     reasonsToChoose: [
       "One of the clearest destinations for affordability-driven MBBS planning",
@@ -454,7 +454,7 @@ export const landingPages: LandingPage[] = [
       "Best for families where total cost is the main decision driver",
     ],
     editorialNotes: [
-      "Kyrgyzstan shortlists should be quality-checked carefully, not decided only by low fees.",
+      "Kyrgyzstan university choices should be quality-checked carefully, not decided only by low fees.",
       "Support, recognition, and student environment still matter even in budget-led planning.",
       "This destination performs best when paired with structured eligibility and hostel filters.",
     ],
@@ -464,14 +464,14 @@ export const landingPages: LandingPage[] = [
     ],
     faq: [
       {
-        question: "Why is Kyrgyzstan often shortlisted for MBBS?",
+        question: "Why is Kyrgyzstan often chosen for MBBS?",
         answer:
-          "Kyrgyzstan is often shortlisted because it sits in the lower fee band for international MBBS planning while still offering hostel-backed options.",
+          "Kyrgyzstan is often chosen because it sits in the lower fee band for international MBBS planning while still offering hostel-backed options.",
       },
       {
         question: "Should students choose only by the lowest fee?",
         answer:
-          "No. The better shortlist balances affordability with recognition, hostel quality, city support, and future licensing fit.",
+          "No. The better choice balances affordability with recognition, hostel quality, city support, and future licensing fit.",
       },
     ],
     metaTitle: "MBBS in Kyrgyzstan 2026 | Affordable Universities & Fees",

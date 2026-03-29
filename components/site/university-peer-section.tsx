@@ -1,13 +1,7 @@
-import { Badge } from "@/components/ui/badge";
+import { Users } from "lucide-react";
+
 import { PeerRequestForm } from "@/components/site/peer-request-form";
 import { getUniversityPeerAvailability } from "@/lib/university-community";
-
-const TOPICS = [
-  "How classes and teaching feel in practice",
-  "What daily life in the city is actually like",
-  "Hostel, food, commute, and settling in",
-  "What they wish they knew before choosing",
-] as const;
 
 export async function UniversityPeerSection({
   universitySlug,
@@ -19,41 +13,28 @@ export async function UniversityPeerSection({
   const availability = await getUniversityPeerAvailability(universitySlug);
 
   return (
-    <div id="talk-to-peers" className="deferred-render space-y-6 py-10">
-      <div className="flex flex-wrap items-center gap-3">
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-          Talk to peers
-        </h2>
-        {availability.hasPeers ? (
-          <Badge variant="outline" className="rounded-full px-3 py-1 text-[0.65rem] uppercase tracking-[0.16em] text-accent">
-            Student conversations available
-          </Badge>
-        ) : null}
-      </div>
+    <div id="talk-to-peers" className="deferred-render py-10">
+      <div className="rounded-[1.75rem] bg-accent p-6 sm:p-8">
 
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,0.8fr)_minmax(380px,1.2fr)]">
-        <div className="section-tint rounded-[1.75rem] p-6 sm:p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent/80">
-            Student perspective
-          </p>
-          <h3 className="mt-4 font-display text-3xl font-semibold tracking-tight text-heading">
-            Ask questions you can&apos;t get from brochures.
-          </h3>
-          <p className="mt-4 max-w-xl text-sm leading-7 text-muted-foreground">
-            If you want a first-hand view of student life at {universityName},
-            this is the place to ask about academics, daily routine, city
-            adjustment, and living experience.
-          </p>
-
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            {TOPICS.map((topic) => (
-              <div
-                key={topic}
-                className="rounded-2xl border border-border/70 bg-white/75 px-4 py-3 text-sm text-foreground shadow-sm"
-              >
-                {topic}
-              </div>
-            ))}
+        <div className="mb-6 flex items-start gap-3">
+          <div className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-white/15 text-white">
+            <Users className="size-4" />
+          </div>
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <h2 className="font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                Talk to a student at {universityName}
+              </h2>
+              {availability.hasPeers ? (
+                <span className="flex items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-white/90">
+                  <span className="size-1.5 animate-pulse rounded-full bg-white" />
+                  Available
+                </span>
+              ) : null}
+            </div>
+            <p className="mt-1.5 text-sm leading-6 text-white/70">
+              Get honest answers about academics, hostel life, and daily experience before you decide.
+            </p>
           </div>
         </div>
 
@@ -62,6 +43,7 @@ export async function UniversityPeerSection({
           universitySlug={universitySlug}
           universityName={universityName}
         />
+
       </div>
     </div>
   );

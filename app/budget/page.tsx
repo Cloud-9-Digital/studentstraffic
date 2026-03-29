@@ -17,7 +17,7 @@ import { formatCurrencyUsd } from "@/lib/utils";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS Abroad Budget Guides — Compare Universities by Tuition Band",
   description:
-    "Research MBBS universities by annual tuition range before shortlisting. Explore affordable options across countries for Indian students.",
+    "Research MBBS universities by annual tuition range before admissions planning. Explore affordable options across countries for Indian students.",
   path: "/budget",
 });
 
@@ -42,7 +42,7 @@ export default async function BudgetIndexPage() {
       <div className="container-shell space-y-12">
         <SectionHeading
           eyebrow="Budget Guides"
-          title="Use budget guides when cost is shaping the shortlist first"
+          title="Use budget guides when cost is shaping the options first"
           description="These pages are planning tools for students who want to understand the market by tuition band before opening university detail pages."
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

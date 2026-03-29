@@ -31,7 +31,7 @@ const termsSections = [
   },
   {
     title: "Admissions guidance scope",
-    body: "Our team helps with counselling, shortlisting, application support, and related admissions guidance. Final decisions on admission, visas, eligibility, fees, and recognition remain with universities, regulators, embassies, and other third parties.",
+    body: "Our team helps with counselling, admissions planning, application support, and related admissions guidance. Final decisions on admission, visas, eligibility, fees, and recognition remain with universities, regulators, embassies, and other third parties.",
   },
   {
     title: "Content accuracy",

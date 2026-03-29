@@ -43,7 +43,7 @@ export const guideNav = [
   {
     href: "/compare",
     label: "Comparison Guides",
-    description: "Side-by-side university evaluations for shortlist decisions",
+    description: "Side-by-side university evaluations for admissions decisions",
   },
   {
     href: "/budget",

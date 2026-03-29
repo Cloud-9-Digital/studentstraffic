@@ -14,6 +14,6 @@ export default function Image() {
     eyebrow: "Study Abroad Experts",
     title: siteConfig.name,
     description: siteConfig.description,
-    tags: ["Verified data", "University shortlists", "Free guidance"],
+    tags: ["Verified data", "University guidance", "Free guidance"],
   });
 }

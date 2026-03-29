@@ -45,12 +45,12 @@ const journeySteps = [
   {
     step: "01",
     title: "Research destinations",
-    body: "Country guides covering costs, recognition, cities, and student life — before you shortlist a single university.",
+    body: "Country guides covering costs, recognition, cities, and student life — before you choose a single university.",
   },
   {
     step: "02",
     title: "Compare universities",
-    body: "Filter 500+ programs by country, fees, intake, and medium. Build your shortlist in minutes.",
+    body: "Filter 500+ programs by country, fees, intake, and medium. Explore your options in minutes.",
   },
   {
     step: "03",
@@ -60,7 +60,7 @@ const journeySteps = [
   {
     step: "04",
     title: "Apply with free support",
-    body: "Our counsellors handle shortlisting, applications, documents, and visa — completely free.",
+    body: "Our counsellors handle admissions, applications, documents, and visa — completely free.",
   },
 ] as const;
 
@@ -269,7 +269,7 @@ export default async function HomePage() {
                 Still deciding? Let&apos;s talk.
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-8 text-white/75">
-                Share your NEET score and budget — our counsellors will shortlist
+                Share your NEET score and budget — our counsellors will find
                 the best universities for you. Free, no obligations.
               </p>
             </div>

@@ -44,7 +44,7 @@ function buildFallbackList(university: University, variant: "why" | "consider" |
     return [
       `Recognizable ${university.type.toLowerCase()} medical training option in ${university.city}.`,
       "Useful for students comparing academic environment, city fit, and teaching style together.",
-      "Shortlist-worthy when institutional profile matters more than promotional claims.",
+      "Worth exploring when institutional profile matters more than promotional claims.",
     ];
   }
 
@@ -150,7 +150,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
     clinicalExposure:
       "Its strongest differentiator is the integrated hospital model, so the real comparison point is how early skills training and owned-hospital exposure translate into sustained clinical depth.",
     studentSupport:
-      "This is a strong shortlist for students who want a tightly focused private medical environment rather than a large multidisciplinary campus.",
+      "This is a strong fit for students who want a tightly focused private medical environment rather than a large multidisciplinary campus.",
     whyChoose: [
       "Distinctive medical-only identity with simulation-driven training and a more specialized academic story than most private competitors.",
       "Da Nang combines city comfort, connectivity, and a calmer rhythm than Hanoi or Ho Chi Minh City.",
@@ -193,7 +193,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
   },
   "international-school-of-medicine": {
     summary:
-      "A long-running Kyrgyz medical school with a strong international student profile and a recognizable place in Bishkek shortlists.",
+      "A long-running Kyrgyz medical school with a strong international student profile and a recognizable option in Bishkek.",
     campusLifestyle:
       "The environment is more internationally mixed than many regional campuses, which shapes both classroom culture and peer networks.",
     cityProfile:
@@ -201,11 +201,11 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
     clinicalExposure:
       "Students should pay attention to the balance between campus teaching, simulation, and partner-hospital training as they move into clinical years.",
     studentSupport:
-      "It suits applicants looking for a longer-established Kyrgyz option with visible foreign student enrollment and a more familiar shortlist profile.",
+      "It suits applicants looking for a longer-established Kyrgyz option with visible foreign student enrollment and a more familiar admissions profile.",
   },
   "asian-medical-institute": {
     summary:
-      "A lower-cost private medical institute in Kyrgyzstan that frequently appears in affordability-driven shortlists for international students.",
+      "A lower-cost private medical institute in Kyrgyzstan that frequently appears in affordability-driven choices for international students.",
     campusLifestyle:
       "The student experience is shaped more by cost efficiency and peer community than by a large standalone university ecosystem.",
     cityProfile:
@@ -337,7 +337,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
     whyChoose: [
       "Modern private-campus environment in one of Vietnam's easiest cities to settle into.",
       "International-facing medicine admissions story is clearer than at many domestic-first universities.",
-      "Good shortlist option for students who want Da Nang without committing to a higher-priced brand.",
+      "Good option for students who want Da Nang without committing to a higher-priced brand.",
     ],
     thingsToConsider: [
       "Verify the current recognition position and hospital network instead of relying on marketing alone.",
@@ -364,7 +364,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
     whyChoose: [
       "Larger private-university scale and visibility than most comparable Vietnam medicine programs.",
       "Da Nang city quality makes the overall student experience easier than in the biggest metros.",
-      "Often shortlisted by families who want brand, infrastructure, and livability together.",
+      "Often chosen by families who want brand, infrastructure, and livability together.",
     ],
     thingsToConsider: [
       "Private-university pricing is higher than many public alternatives.",
@@ -391,7 +391,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
     whyChoose: [
       "Public medical university in a large northern city without Hanoi-level intensity.",
       "Regional hospital base gives a practical clinical setting.",
-      "Often a sensible shortlist for students who prefer public systems over private marketing-led campuses.",
+      "Often a sensible choice for students who prefer public systems over private marketing-led campuses.",
     ],
     thingsToConsider: [
       "Its international-facing profile is lighter than the best-known Vietnam schools.",
@@ -526,7 +526,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
     whyChoose: [
       "Research-oriented private university with a more modern academic feel than older medical schools.",
       "Hanoi location keeps the program close to the country's deepest northern clinical ecosystem.",
-      "Good shortlist choice for students who want a newer campus and innovation-oriented brand.",
+      "Good choice for students who want a newer campus and innovation-oriented brand.",
     ],
     thingsToConsider: [
       "As a younger medical faculty, long-run clinical track record is still being built.",

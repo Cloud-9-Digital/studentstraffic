@@ -46,7 +46,7 @@ export default function MethodologyPage() {
         <SectionHeading
           eyebrow="Methodology"
           title="How the catalog is assembled"
-          description="Students Traffic turns a wide range of university and destination details into a more comparable catalog so students can shortlist faster."
+          description="Students Traffic turns a wide range of university and destination details into a more comparable catalog so students can decide faster."
         />
 
         <ContentTrustPanel
@@ -70,7 +70,7 @@ export default function MethodologyPage() {
           {[
             {
               title: "Normalization",
-              body: "Program and destination pages use shared structures for tuition, duration, location, medium, support, and shortlist fit so comparisons stay readable.",
+              body: "Program and destination pages use shared structures for tuition, duration, location, medium, support, and admissions fit so comparisons stay readable.",
             },
             {
               title: "Editorial review",

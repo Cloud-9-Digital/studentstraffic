@@ -54,7 +54,7 @@ export default function UniversitiesPage({
                 Free Counselling
               </p>
               <h2 className="font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Need help building the right shortlist?
+                Need help planning the right path?
               </h2>
               <p className="max-w-2xl text-base leading-8 text-muted-foreground">
                 Share your NEET score, budget, and destination preference and
@@ -67,7 +67,7 @@ export default function UniversitiesPage({
             <DeferredLeadForm
               sourcePath="/universities"
               ctaVariant="finder_cta"
-              title="Talk through your shortlist"
+              title="Talk through your options"
               description="Share your details and our counsellors will help you compare universities, destinations, fees, and next steps."
             />
           </div>

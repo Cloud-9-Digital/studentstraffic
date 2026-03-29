@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS Abroad Guides | Countries, Courses, Comparisons & Budgets",
   description:
-    "Browse country guides, course guides, university comparisons, and budget planning guides to support your MBBS abroad shortlist.",
+    "Browse country guides, course guides, university comparisons, and budget planning guides to support your MBBS abroad options.",
   path: "/guides",
 });
 
@@ -44,9 +44,9 @@ const guideTypes = [
   },
   {
     Icon: BookOpen,
-    label: "Shortlisting",
+    label: "Admissions planning",
     title: "Comparison Guides",
-    description: "Side-by-side university evaluations for when your shortlist is narrowing.",
+    description: "Side-by-side university evaluations for when your options are narrowing.",
     href: "/compare",
     cta: "Browse comparisons",
   },

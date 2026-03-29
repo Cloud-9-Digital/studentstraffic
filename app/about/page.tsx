@@ -36,7 +36,7 @@ const pillars = [
     Icon: Users,
     label: "Free Admissions Support",
     heading: "With you from enquiry to visa",
-    body: "Our award-winning counsellors have taken 2,000+ students from first enquiry to enrolment — shortlisting, applications, documents, and visa — across Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more, completely free.",
+    body: "Our award-winning counsellors have taken 2,000+ students from first enquiry to enrolment — admissions, applications, documents, and visa — across Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more, completely free.",
   },
 ] as const;
 
@@ -197,7 +197,7 @@ export default function AboutPage() {
             <h2 className="mt-6 font-display text-3xl font-semibold leading-[1.18] tracking-tight text-primary sm:text-4xl lg:text-5xl">
               Indian students deserve{" "}
               <span className="italic text-accent">complete information</span>
-              {" "}— not a curated shortlist.
+              {" "}— not a curated list.
             </h2>
             <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-muted-foreground">
               Most consultancies show you only the universities that pay them

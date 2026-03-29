@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useEffect, useRef, useState } from "react";
-import { Film, PencilLine } from "lucide-react";
+import { Film, PencilLine, Star } from "lucide-react";
 
 import {
   submitUniversityReviewAction,
@@ -25,6 +25,41 @@ const initialState: UniversityReviewFormState = {};
 
 type ReviewType = "text" | "youtube_video";
 
+function StarSelector({
+  value,
+  onChange,
+}: {
+  value: number;
+  onChange: (rating: number) => void;
+}) {
+  const [hovered, setHovered] = useState(0);
+
+  return (
+    <div className="flex gap-1">
+      {[1, 2, 3, 4, 5].map((star) => (
+        <button
+          key={star}
+          type="button"
+          onClick={() => onChange(star)}
+          onMouseEnter={() => setHovered(star)}
+          onMouseLeave={() => setHovered(0)}
+          className="text-muted-foreground transition-colors hover:text-yellow-400"
+          aria-label={`Rate ${star} star${star !== 1 ? "s" : ""}`}
+        >
+          <Star
+            className={cn(
+              "size-7 transition-colors",
+              star <= (hovered || value)
+                ? "fill-yellow-400 text-yellow-400"
+                : "fill-none text-muted-foreground/40"
+            )}
+          />
+        </button>
+      ))}
+    </div>
+  );
+}
+
 export function UniversityReviewForm({
   sourcePath,
   universitySlug,
@@ -35,6 +70,7 @@ export function UniversityReviewForm({
   universityName: string;
 }) {
   const [reviewType, setReviewType] = useState<ReviewType>("text");
+  const [starRating, setStarRating] = useState(0);
   const [state, formAction, isPending] = useActionState(
     submitUniversityReviewAction,
     initialState
@@ -48,6 +84,7 @@ export function UniversityReviewForm({
     }
 
     formRef.current?.reset();
+    setStarRating(0);
 
     if (startedAtInputRef.current) {
       startedAtInputRef.current.value = "0";
@@ -102,6 +139,9 @@ export function UniversityReviewForm({
             autoComplete="off"
             className="hidden"
           />
+          {reviewType === "text" && starRating > 0 ? (
+            <input type="hidden" name="starRating" value={starRating} />
+          ) : null}
 
           <div className="grid gap-2">
             <Label>Review type</Label>
@@ -165,16 +205,22 @@ export function UniversityReviewForm({
           </div>
 
           {reviewType === "text" ? (
-            <div className="space-y-2">
-              <Label htmlFor="review-body">Your review</Label>
-              <Textarea
-                id="review-body"
-                name="reviewBody"
-                rows={6}
-                placeholder="Share what stood out about academics, faculty support, city life, hostel experience, campus environment, or overall student life."
-                required
-              />
-            </div>
+            <>
+              <div className="space-y-2">
+                <Label>Rating <span className="font-normal text-muted-foreground">(optional)</span></Label>
+                <StarSelector value={starRating} onChange={setStarRating} />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="review-body">Your review</Label>
+                <Textarea
+                  id="review-body"
+                  name="reviewBody"
+                  rows={6}
+                  placeholder="Share what stood out about academics, faculty support, city life, hostel experience, campus environment, or overall student life."
+                  required
+                />
+              </div>
+            </>
           ) : (
             <div className="space-y-2">
               <Label htmlFor="review-youtube">YouTube video URL</Label>

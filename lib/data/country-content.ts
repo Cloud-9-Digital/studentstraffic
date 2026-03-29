@@ -39,7 +39,7 @@ const countryContentMap: Record<string, CountryContent> = {
     },
     admissionSteps: [
       "Clear NEET-UG and save your scorecard",
-      "Research and shortlist universities in Russia that follow NMC guidelines",
+      "Research and evaluate universities in Russia that follow NMC guidelines",
       "Submit your application with required documents to the chosen university",
       "Receive the official invitation letter from the university",
       "Apply for a Russian student visa at the Russian Embassy in India",
@@ -112,7 +112,7 @@ const countryContentMap: Record<string, CountryContent> = {
     },
     admissionSteps: [
       "If you plan to practise in India, ensure you have a valid NEET-UG score before your MBBS program begins",
-      "Check that your shortlisted Vietnam universities follow NMC guidelines — verify on the official NMC website",
+      "Check that your optionsed Vietnam universities follow NMC guidelines — verify on the official NMC website",
       "Submit application with required documents to the university or authorised representative",
       "Receive the university's official admission offer letter",
       "Apply for a Vietnam student visa at the Vietnamese Embassy in India",
@@ -185,7 +185,7 @@ const countryContentMap: Record<string, CountryContent> = {
     },
     admissionSteps: [
       "Clear NEET-UG and save your scorecard",
-      "Shortlist Georgian universities that follow NMC guidelines",
+      "Evaluate Georgian universities that follow NMC guidelines",
       "Submit application with required documents",
       "Receive admission offer letter",
       "Apply for Georgia student visa",
@@ -257,7 +257,7 @@ const countryContentMap: Record<string, CountryContent> = {
     },
     admissionSteps: [
       "Clear NEET-UG and save your scorecard",
-      "Shortlist universities in Kyrgyzstan that follow NMC guidelines",
+      "Evaluate universities in Kyrgyzstan that follow NMC guidelines",
       "Submit application with required documents",
       "Receive official admission offer letter",
       "Apply for a Kyrgyzstan student visa",
@@ -289,7 +289,7 @@ const countryContentMap: Record<string, CountryContent> = {
       "Some Kyrgyzstan universities offer merit-based fee reductions or partial scholarships for Indian students. The Kyrgyz Government offers a limited number of scholarships under bilateral agreements. Confirm current availability with the specific university before applying.",
     costOfLiving: {
       intro:
-        "Bishkek is among the more affordable cities for Indian medical students. The lower cost of living is one of the primary reasons students shortlist Kyrgyzstan.",
+        "Bishkek is among the more affordable cities for Indian medical students. The lower cost of living is one of the primary reasons students choose Kyrgyzstan.",
       items: [
         { category: "Hostel accommodation", range: "$60 – $120/month", notes: "University hostel including utilities" },
         { category: "Food & mess", range: "$60 – $120/month", notes: "Indian mess options available near campuses" },

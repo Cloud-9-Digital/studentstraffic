@@ -23,20 +23,11 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
 import { ComparisonCard } from "@/components/site/comparison-card";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
-import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversityPeerSection } from "@/components/site/university-peer-section";
 import { UniversityReviewsSection } from "@/components/site/university-reviews-section";
 import { UniversityCard } from "@/components/site/university-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import {
   catalogReviewedAt,
   contentAuthorName,
@@ -153,11 +144,6 @@ export default async function UniversityDetailPage({
   const primaryProgramHasPublishedFee = primaryProgram
     ? hasPublishedUsdAmount(primaryProgram.offering.annualTuitionUsd)
     : false;
-  const planningNotesTitle =
-    primaryProgram?.course.slug === "medical-pg"
-      ? "Training & admissions planning"
-      : "Licensing & exam planning";
-
   const galleryImages = getUniversityGalleryImages(university);
   const coverImage = getUniversityCoverImage(university);
   const additionalGalleryImages = galleryImages.slice(1);
@@ -310,10 +296,7 @@ export default async function UniversityDetailPage({
       {/* ── Body ──────────────────────────────────────────────────────────── */}
       <section className="py-10 md:py-14">
         <div className="container-shell">
-          <div className="grid gap-10 lg:grid-cols-[1fr_380px] lg:items-start">
-
-            {/* ── Main column ─────────────────────────────────────────────── */}
-            <div className="min-w-0 space-y-0">
+          <div className="min-w-0 space-y-0">
 
               {/* At a glance */}
               {primaryProgram && (
@@ -349,7 +332,7 @@ export default async function UniversityDetailPage({
               {/* About */}
               <div className="space-y-6 py-10">
                 <SectionLabel>About the university</SectionLabel>
-                <p className="text-sm leading-8 text-muted-foreground md:text-base">
+                <p className="text-sm leading-8 text-foreground/80 md:text-base md:leading-9">
                   {university.campusLifestyle}
                 </p>
                 <div className="grid gap-4 sm:grid-cols-2">
@@ -405,28 +388,31 @@ export default async function UniversityDetailPage({
 
               {/* Program */}
               {primaryProgram && (
-                <div className="deferred-render space-y-6 py-10">
+                <div className="deferred-render space-y-8 py-10">
                   <SectionLabel>Program details</SectionLabel>
 
-                  <div className="flex flex-wrap items-center gap-2">
-                    <Badge className="text-sm">{primaryProgram.course.shortName}</Badge>
-                    <Badge variant="outline">{primaryProgram.offering.medium}</Badge>
-                    <span className="text-sm text-muted-foreground">{primaryProgram.offering.title}</span>
+                  {/* Program header */}
+                  <div className="section-tint rounded-[1.5rem] p-5 sm:p-6">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Badge className="text-sm">{primaryProgram.course.shortName}</Badge>
+                      <Badge variant="outline">{primaryProgram.offering.medium}</Badge>
+                    </div>
+                    <p className="mt-2 text-sm text-muted-foreground">{primaryProgram.offering.title}</p>
                   </div>
 
                   {/* Teaching phases */}
                   {primaryProgram.offering.teachingPhases.length > 0 && (
                     <div className="space-y-3">
-                      <h3 className="text-sm font-semibold text-foreground">Teaching phases</h3>
-                      <div className="space-y-0 divide-y divide-border overflow-hidden rounded-xl border border-border">
+                      <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Teaching phases</p>
+                      <div className="divide-y divide-border overflow-hidden rounded-[1.25rem] border border-border">
                         {primaryProgram.offering.teachingPhases.map((phase, i) => (
                           <div key={phase.phase} className="flex gap-4 bg-card px-5 py-4">
-                            <div className="flex size-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-xs font-bold text-accent mt-0.5">
+                            <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent text-xs font-bold text-white mt-0.5">
                               {i + 1}
                             </div>
-                            <div className="space-y-1">
+                            <div className="space-y-1 pt-0.5">
                               <div className="flex flex-wrap items-center gap-2">
-                                <span className="text-sm font-medium text-foreground">{phase.phase}</span>
+                                <span className="text-sm font-semibold text-foreground">{phase.phase}</span>
                                 <span className="rounded-full border border-accent/25 bg-accent/8 px-2 py-0.5 text-xs font-medium text-accent">
                                   {phase.language}
                                 </span>
@@ -441,85 +427,74 @@ export default async function UniversityDetailPage({
 
                   {/* Cost breakdown */}
                   <div className="space-y-3">
-                    <h3 className="text-sm font-semibold text-foreground">Year-wise cost breakdown</h3>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Year-wise cost breakdown</p>
                     {primaryProgram.offering.yearlyCostBreakdown.some(
                       (year) =>
                         hasPublishedUsdAmount(year.tuitionUsd) ||
                         hasPublishedUsdAmount(year.livingUsd) ||
                         hasPublishedUsdAmount(year.totalUsd)
                     ) ? (
-                      <div className="overflow-hidden rounded-xl border border-border">
-                        <Table>
-                          <TableHeader>
-                            <TableRow className="bg-muted/50">
-                              <TableHead className="font-semibold">Year</TableHead>
-                              <TableHead className="font-semibold">Tuition</TableHead>
-                              <TableHead className="font-semibold">Living</TableHead>
-                              <TableHead className="font-semibold">Total / yr</TableHead>
-                            </TableRow>
-                          </TableHeader>
-                          <TableBody>
-                            {primaryProgram.offering.yearlyCostBreakdown.map((year) => (
-                              <TableRow key={year.yearLabel}>
-                                <TableCell className="font-medium">{year.yearLabel}</TableCell>
-                                <TableCell>{formatUsdAmountOrTbd(year.tuitionUsd)}</TableCell>
-                                <TableCell>
-                                  {formatUsdAmountOrTbd(
-                                    year.livingUsd,
-                                    "Check local living plan"
-                                  )}
-                                </TableCell>
-                                <TableCell className="font-semibold text-foreground">
-                                  {formatUsdAmountOrTbd(year.totalUsd)}
-                                </TableCell>
-                              </TableRow>
-                            ))}
-                          </TableBody>
-                        </Table>
+                      <div className="overflow-hidden rounded-[1.25rem] border border-border">
+                        {/* Header row */}
+                        <div className="grid grid-cols-[2fr_2fr_2fr_2fr] gap-2 border-b border-border bg-muted/40 px-5 py-3">
+                          {["Year", "Tuition", "Living", "Total / yr"].map((h) => (
+                            <span key={h} className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{h}</span>
+                          ))}
+                        </div>
+                        {/* Data rows */}
+                        {primaryProgram.offering.yearlyCostBreakdown.map((year, i) => (
+                          <div
+                            key={year.yearLabel}
+                            className={cn(
+                              "grid grid-cols-[2fr_2fr_2fr_2fr] gap-2 px-5 py-4",
+                              i % 2 === 0 ? "bg-card" : "bg-muted/20"
+                            )}
+                          >
+                            <span className="text-sm font-semibold text-foreground">{year.yearLabel}</span>
+                            <span className="text-sm text-muted-foreground">{formatUsdAmountOrTbd(year.tuitionUsd)}</span>
+                            <span className="text-sm text-muted-foreground">{formatUsdAmountOrTbd(year.livingUsd, "—")}</span>
+                            <span className="text-sm font-bold text-accent">{formatUsdAmountOrTbd(year.totalUsd)}</span>
+                          </div>
+                        ))}
                       </div>
                     ) : (
-                      <div className="rounded-xl border border-border bg-card px-5 py-4 text-sm leading-7 text-muted-foreground">
+                      <div className="section-tint rounded-[1.25rem] px-5 py-4 text-sm leading-7 text-muted-foreground">
                         Official fee publication varies by specialty and admission notice for this postgraduate track. Use the university notice to confirm tuition, hospital practice fees, and any specialty-specific charges.
                       </div>
                     )}
                   </div>
 
-                  {/* Licensing */}
-                  {primaryProgram.offering.licenseExamSupport.length > 0 && (
-                    <div className="space-y-3">
-                      <h3 className="text-sm font-semibold text-foreground">
-                        {planningNotesTitle}
-                      </h3>
-                      <ul className="space-y-2">
-                        {primaryProgram.offering.licenseExamSupport.map((item) => (
-                          <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground">
-                            <span className="mt-2 size-1.5 shrink-0 rounded-full bg-accent" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
                 </div>
               )}
+
+              <div className="deferred-render py-10">
+                <UniversityCounsellingSection
+                  universitySlug={university.slug}
+                  universityName={university.name}
+                  countrySlug={country.slug}
+                  countryName={country.name}
+                  courseSlug={primaryProgram?.course.slug}
+                  courseShortName={primaryProgram?.course.shortName}
+                />
+              </div>
 
               {/* Clinical & Student Life */}
               <div className="deferred-render space-y-6 py-10">
                 <SectionLabel>Clinical &amp; student experience</SectionLabel>
 
                 {/* Clinical exposure */}
-                <div className="space-y-4">
+                <div className="section-tint rounded-[1.5rem] p-5 sm:p-6">
                   <div className="flex items-center gap-2">
                     <Stethoscope className="size-4 text-accent" />
                     <h3 className="text-sm font-semibold text-foreground">Clinical exposure</h3>
                   </div>
-                  <p className="text-sm leading-7 text-muted-foreground">{university.clinicalExposure}</p>
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">{university.clinicalExposure}</p>
                   {university.teachingHospitals.length > 0 && (
-                    <div className="flex flex-wrap gap-2">
+                    <div className="mt-4 flex flex-wrap gap-2">
                       {university.teachingHospitals.map((h) => (
                         <span
                           key={h}
-                          className="rounded-full border border-border bg-muted/50 px-3 py-1.5 text-xs font-medium text-foreground"
+                          className="rounded-full border border-accent/20 bg-white/80 px-3 py-1.5 text-xs font-medium text-foreground"
                         >
                           {h}
                         </span>
@@ -557,24 +532,27 @@ export default async function UniversityDetailPage({
                 </Suspense>
               </div>
 
-              {/* Shortlist fit */}
+              {/* Who it's right for */}
               <div className="deferred-render space-y-6 py-10">
-                <SectionLabel>Shortlist fit</SectionLabel>
+                <SectionLabel>Who it&apos;s right for</SectionLabel>
                 <div className="grid gap-4 sm:grid-cols-3">
                   <FitCard
                     title="Why students choose it"
                     items={university.whyChoose}
                     dotClass="bg-emerald-500"
+                    className="border-emerald-200/60 bg-emerald-50/60"
                   />
                   <FitCard
                     title="Things to consider"
                     items={university.thingsToConsider}
                     dotClass="bg-amber-500"
+                    className="border-amber-200/60 bg-amber-50/60"
                   />
                   <FitCard
                     title="Best fit for"
                     items={university.bestFitFor}
                     dotClass="bg-accent"
+                    className="border-accent/20 bg-accent/5"
                   />
                 </div>
               </div>
@@ -582,15 +560,18 @@ export default async function UniversityDetailPage({
               {/* Recognition */}
               <div className="deferred-render space-y-6 py-10">
                 <SectionLabel>Recognition</SectionLabel>
-                <div className="rounded-2xl border border-border bg-card p-5">
+                <div className="section-tint rounded-[1.5rem] p-5 sm:p-6">
                   <div className="flex flex-wrap gap-2">
                     {university.recognitionBadges.map((badge) => (
-                      <Badge key={badge} variant="outline" className="rounded-full px-3 py-1">
+                      <span
+                        key={badge}
+                        className="rounded-full border border-accent/25 bg-white/80 px-4 py-1.5 text-sm font-medium text-foreground"
+                      >
                         {badge}
-                      </Badge>
+                      </span>
                     ))}
                   </div>
-                  <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                  <p className="mt-5 text-sm leading-7 text-muted-foreground">
                     Recognition should always be cross-checked against the current admissions cycle,
                     especially when students are comparing language pathway, licensing fit, and
                     long-term clinical planning.
@@ -654,60 +635,6 @@ export default async function UniversityDetailPage({
                   />
                 </Suspense>
               </div>
-            </div>
-
-            {/* ── Sticky sidebar ───────────────────────────────────────────── */}
-            <aside className="lg:sticky lg:top-20">
-              <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
-                {/* Dark header */}
-                <div className="relative overflow-hidden bg-surface-dark px-4 py-4">
-                  <div className="absolute -right-10 -top-10 size-40 rounded-full bg-accent/15 blur-2xl pointer-events-none" />
-                  <div className="absolute -bottom-6 -left-6 size-28 rounded-full bg-white/4 blur-xl pointer-events-none" />
-                  <div className="relative space-y-4">
-                    <div>
-                      <p className="text-[0.65rem] font-semibold uppercase tracking-widest text-white/50">
-                        Free counselling
-                      </p>
-                      <h2 className="mt-1 font-display text-lg font-semibold leading-snug text-white">
-                        Interested in {university.name}?
-                      </h2>
-                    </div>
-                    <ul className="space-y-1.5">
-                      {[
-                        primaryProgram
-                          ? primaryProgramHasPublishedFee
-                            ? `${primaryProgram.course.shortName} fee breakdown`
-                            : `${primaryProgram.course.shortName} admission planning`
-                          : "Admission planning",
-                        `${country.name} admission guidance`,
-                        "Callback within 24 hours",
-                      ].map((item) => (
-                        <li
-                          key={item}
-                          className="flex items-center gap-2 text-sm text-white/70"
-                        >
-                          <CheckCircle2 className="size-3.5 shrink-0 text-accent" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Form */}
-                <div className="bg-card px-4 pb-4 pt-3">
-                  <DeferredLeadForm
-                    sourcePath={`/universities/${university.slug}`}
-                    ctaVariant="university_sidebar"
-                    universitySlug={university.slug}
-                    countrySlug={country.slug}
-                    courseSlug={primaryProgram?.course.slug}
-                    embedded
-                    stacked
-                  />
-                </div>
-              </div>
-            </aside>
           </div>
         </div>
       </section>
@@ -773,6 +700,50 @@ function UniversityHeroMedia({
         </div>
       </div>
     </figure>
+  );
+}
+
+function UniversityCounsellingSection({
+  universitySlug,
+  universityName,
+  countrySlug,
+  countryName,
+  courseSlug,
+  courseShortName,
+}: {
+  universitySlug: string;
+  universityName: string;
+  countrySlug: string;
+  countryName: string;
+  courseSlug?: string;
+  courseShortName?: string;
+}) {
+  return (
+    <div className="section-tint rounded-[1.75rem] p-6 sm:p-8">
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent/80">
+            Free counselling
+          </p>
+          <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading">
+            Need more clarity on {universityName}?
+          </h2>
+          <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+            Talk to one of our counsellors — free, no obligations.
+          </p>
+        </div>
+        <div className="shrink-0">
+          <CounsellingDialog
+            triggerContent="Talk to a counsellor"
+            triggerVariant="default"
+            triggerSize="lg"
+            triggerClassName="w-full sm:w-auto"
+            countrySlug={countrySlug}
+            courseSlug={courseSlug}
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -918,13 +889,15 @@ function FitCard({
   title,
   items,
   dotClass,
+  className,
 }: {
   title: string;
   items: string[];
   dotClass: string;
+  className?: string;
 }) {
   return (
-    <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
+    <div className={cn("flex flex-col gap-3 rounded-xl border p-5", className)}>
       <h3 className="text-sm font-semibold text-foreground">{title}</h3>
       <ul className="space-y-2.5">
         {items.map((item) => (

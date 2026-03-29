@@ -45,7 +45,7 @@ export async function generateMetadata({
   }
 
   return buildIndexableMetadata({
-    title: `${guide.course.shortName} Universities Under ${formatCurrencyUsd(guide.budgetUsd)}/Year | Affordable Shortlist`,
+    title: `${guide.course.shortName} Universities Under ${formatCurrencyUsd(guide.budgetUsd)}/Year | Affordable Options`,
     description: `Compare ${guide.course.shortName} universities with annual tuition under ${formatCurrencyUsd(guide.budgetUsd)} — filtered by country, city, NMC recognition, and teaching medium.`,
     path: getBudgetGuideHref(guide.slug),
     keywords: [
@@ -85,7 +85,7 @@ export default async function BudgetGuidePage({
     getCollectionPageStructuredData({
       path,
       name: `${guide.course.shortName} universities under ${formatCurrencyUsd(guide.budgetUsd)}`,
-      description: `Budget-focused ${guide.course.shortName} shortlist with annual tuition under ${formatCurrencyUsd(guide.budgetUsd)}.`,
+      description: `Budget-focused ${guide.course.shortName} options with annual tuition under ${formatCurrencyUsd(guide.budgetUsd)}.`,
       aboutIds: [courseStructuredData["@id"]],
       mainEntityId: getItemListStructuredDataId(path),
       dateModified: catalogReviewedAt,
@@ -114,7 +114,7 @@ export default async function BudgetGuidePage({
             <p className="max-w-3xl text-base leading-8 text-white/80">
               Explore current {guide.course.shortName} options with annual
               tuition at or below {formatCurrencyUsd(guide.budgetUsd)} and use
-              this page as a starting point for a more affordable shortlist.
+              this page as a starting point for a more affordable options.
             </p>
             <div className="flex flex-wrap gap-3 text-sm text-white/70">
               <span>{guide.programs.length} programs</span>
@@ -143,7 +143,7 @@ export default async function BudgetGuidePage({
 
         <div className="space-y-8">
           <SectionHeading
-            eyebrow="Affordable shortlist"
+            eyebrow="Affordable options"
             title={`Current ${guide.course.shortName} options under ${formatCurrencyUsd(guide.budgetUsd)}`}
             description="Start with budget here, then open university pages for a deeper look at country, city, recognition, and support."
           />
@@ -168,7 +168,7 @@ export default async function BudgetGuidePage({
           </div>
           <div className="rounded-3xl border border-border bg-card px-8 py-10 md:px-10">
             <SectionHeading
-              title="Want to widen the shortlist beyond this budget page?"
+              title="Want to explore more options beyond this budget page?"
               description="Browse all matching universities in one place while keeping the budget filter active."
               aside={
                 <Button asChild>

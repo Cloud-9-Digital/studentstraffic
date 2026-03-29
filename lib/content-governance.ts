@@ -4,7 +4,7 @@ export const contentAuthorName = "Bharath";
 
 export const editorialPrinciples = [
   "Prefer university-specific academic context, fee clarity, and admissions guidance over generic brochure summaries.",
-  "Review every shortlist page against current university and public admissions materials before publishing updates.",
+  "Review every admissions page against current university and public admissions materials before publishing updates.",
   "Revise or remove content when the underlying fee, intake, recognition, or student-planning context changes.",
   "Separate editorial guidance from promotional claims so students can compare options clearly.",
 ];
@@ -13,7 +13,7 @@ export const methodologySteps = [
   "Collect program, fee, intake, location, and student-planning data from current university and public admissions materials.",
   "Normalize data into a consistent catalog so students can compare universities on the same criteria.",
   "Highlight important student decision factors such as tuition, city, medium, recognition, clinical environment, and fit.",
-  "Review destination and shortlist pages through our editorial team before publishing.",
+  "Review destination and admissions pages through our editorial team before publishing.",
 ];
 
 export const trustPageLinks = [

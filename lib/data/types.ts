@@ -159,6 +159,7 @@ export type UniversityReview = {
   reviewBody?: string;
   youtubeUrl?: string;
   youtubeVideoId?: string;
+  starRating?: number;
   visibilityStatus: UniversityReviewVisibilityStatus;
   verificationStatus: UniversityReviewVerificationStatus;
   isFeatured: boolean;

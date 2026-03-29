@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Contact Students Traffic | Free MBBS Abroad Counselling",
   description:
-    "Get free university shortlisting, MBBS abroad guidance, and admissions support from Students Traffic. We respond within 24 hours.",
+    "Get free university admissions guidance, MBBS abroad guidance, and admissions support from Students Traffic. We respond within 24 hours.",
   path: "/contact",
 });
 
