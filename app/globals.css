@@ -192,6 +192,11 @@
   padding-block: clamp(4rem, 8vw, 7rem);
 }
 
+.deferred-render {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 960px;
+}
+
 /* ── Component utilities ─────────────────────────────────────────────────── */
 
 .eyebrow {

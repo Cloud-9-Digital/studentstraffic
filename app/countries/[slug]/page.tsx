@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
-import { CurrencyConverter } from "@/components/site/currency-converter";
+import { DeferredCurrencyConverter } from "@/components/site/deferred-currency-converter";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
@@ -484,7 +484,7 @@ export default async function CountryPage({
 
         {/* ── UNIVERSITY DIRECTORY ────────────────────────────── */}
         {programs.length ? (
-          <div className="py-14 md:py-18">
+          <div className="deferred-render py-14 md:py-18">
             <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Finder Preview" />
 
             <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
@@ -529,7 +529,7 @@ export default async function CountryPage({
         {countryContent && (
           <>
             {/* Eligibility */}
-            <div className="py-14 md:py-18">
+            <div className="deferred-render py-14 md:py-18">
               <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Eligibility" />
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
                 Eligibility for Indian students
@@ -550,7 +550,7 @@ export default async function CountryPage({
             </div>
 
             {/* Admission Process */}
-            <div className="py-14 md:py-18">
+            <div className="deferred-render py-14 md:py-18">
               <SectionLabel icon={<BookOpen className="size-3.5" />} text="Admission Process" />
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
                 How to apply — step by step
@@ -568,7 +568,7 @@ export default async function CountryPage({
             </div>
 
             {/* Documents Required */}
-            <div className="py-14 md:py-18">
+            <div className="deferred-render py-14 md:py-18">
               <SectionLabel icon={<Building2 className="size-3.5" />} text="Documents Required" />
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
                 Documents required
@@ -604,7 +604,7 @@ export default async function CountryPage({
             </div>
 
             {/* Hostel & Accommodation */}
-            <div className="py-14 md:py-18">
+            <div className="deferred-render py-14 md:py-18">
               <SectionLabel icon={<MapPin className="size-3.5" />} text="Hostel & Accommodation" />
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
                 Hostel &amp; accommodation
@@ -615,7 +615,7 @@ export default async function CountryPage({
             </div>
 
             {/* Scholarships */}
-            <div className="py-14 md:py-18">
+            <div className="deferred-render py-14 md:py-18">
               <SectionLabel icon={<CircleDollarSign className="size-3.5" />} text="Scholarships" />
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
                 Scholarships &amp; financial support
@@ -626,7 +626,7 @@ export default async function CountryPage({
             </div>
 
             {/* Career Opportunities */}
-            <div className="py-14 md:py-18">
+            <div className="deferred-render py-14 md:py-18">
               <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Career Opportunities" />
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
                 Career opportunities after studying in {country.name}
@@ -644,7 +644,7 @@ export default async function CountryPage({
         )}
 
         {/* ── NEXT STEP ───────────────────────────────────────── */}
-        <div className="py-14 md:py-18">
+        <div className="deferred-render py-14 md:py-18">
           <SectionLabel text="Next Step" />
           <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
             Need help after you have explored {country.name}?
@@ -890,7 +890,7 @@ async function CountryCostAddOns({
     <>
       {exchangeRate ? (
         <div className="mt-10 max-w-sm">
-          <CurrencyConverter
+          <DeferredCurrencyConverter
             rate={exchangeRate.rate}
             localCurrency={currencyCode}
             date={exchangeRate.date}

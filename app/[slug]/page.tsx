@@ -12,7 +12,7 @@ import {
 import { JsonLd } from "@/components/shared/json-ld";
 import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
-import { LeadForm } from "@/components/site/lead-form";
+import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -215,7 +215,7 @@ export default async function LandingPageRoute({
                 <h2 className="mb-6 font-display text-2xl font-semibold leading-snug text-primary">
                   Get guidance on {page.title}
                 </h2>
-                <LeadForm
+                <DeferredLeadForm
                   sourcePath={path}
                   ctaVariant="landing_sidebar"
                   title=""
@@ -233,7 +233,7 @@ export default async function LandingPageRoute({
 
 
       {/* ── Universities ─────────────────────────────────────────────────── */}
-      <section className="border-b border-border py-14 md:py-20">
+      <section className="deferred-render border-b border-border py-14 md:py-20">
         <div className="container-shell">
           <div className="mb-10">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -267,7 +267,7 @@ export default async function LandingPageRoute({
 
       {/* ── Fee Structures ───────────────────────────────────────────────── */}
       {feeStructures.length > 0 && (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Fee structures — 2026
@@ -372,7 +372,7 @@ export default async function LandingPageRoute({
       )}
 
       {/* ── How We Help ──────────────────────────────────────────────────── */}
-      <section className="border-b border-border bg-primary py-14 md:py-20">
+      <section className="deferred-render border-b border-border bg-primary py-14 md:py-20">
         <div className="container-shell">
           <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-16">
             <div>
@@ -428,7 +428,7 @@ export default async function LandingPageRoute({
       </section>
 
       {/* ── Why this destination ─────────────────────────────────────────── */}
-      <section className="border-b border-border py-14 md:py-20">
+      <section className="deferred-render border-b border-border py-14 md:py-20">
         <div className="container-shell">
           <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
             Why students choose {page.title}
@@ -448,7 +448,7 @@ export default async function LandingPageRoute({
 
       {/* ── At a Glance ──────────────────────────────────────────────────── */}
       {page.atAGlance?.length ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               {page.title} at a glance
@@ -472,7 +472,7 @@ export default async function LandingPageRoute({
 
       {/* ── India Comparison ─────────────────────────────────────────────── */}
       {page.indiaComparison?.length ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               MBBS in India vs {country.name}
@@ -508,7 +508,7 @@ export default async function LandingPageRoute({
       ) : null}
 
       {/* ── NEET Notice ──────────────────────────────────────────────────── */}
-      <section className="border-b border-border bg-amber-50 py-10 md:py-12">
+      <section className="deferred-render border-b border-border bg-amber-50 py-10 md:py-12">
         <div className="container-shell">
           <div className="flex gap-4">
             <div className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-amber-500 text-white">
@@ -551,7 +551,7 @@ export default async function LandingPageRoute({
 
       {/* ── Eligibility Criteria ─────────────────────────────────────────── */}
       {page.eligibility ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Eligibility criteria for Indian students
@@ -575,7 +575,7 @@ export default async function LandingPageRoute({
 
       {/* ── Admission Process ────────────────────────────────────────────── */}
       {page.admissionSteps?.length ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Admission process
@@ -599,7 +599,7 @@ export default async function LandingPageRoute({
 
       {/* ── Documents Required ───────────────────────────────────────────── */}
       {page.documentsRequired ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Documents required
@@ -638,7 +638,7 @@ export default async function LandingPageRoute({
 
       {/* ── Syllabus Overview ────────────────────────────────────────────── */}
       {page.syllabusPhases?.length ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Syllabus overview
@@ -675,7 +675,7 @@ export default async function LandingPageRoute({
 
       {/* ── Hostel & Accommodation ───────────────────────────────────────── */}
       {page.hostelInfo ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Hostel &amp; accommodation
@@ -689,7 +689,7 @@ export default async function LandingPageRoute({
 
       {/* ── Scholarships ─────────────────────────────────────────────────── */}
       {page.scholarshipInfo ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Scholarships &amp; financial support
@@ -703,7 +703,7 @@ export default async function LandingPageRoute({
 
       {/* ── Career Opportunities ─────────────────────────────────────────── */}
       {page.careerOpportunities?.length ? (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Career opportunities after {page.title}
@@ -722,7 +722,7 @@ export default async function LandingPageRoute({
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       {page.faq.length > 0 && (
-        <section className="border-b border-border py-14 md:py-20">
+        <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <div className="mb-10">
               <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -748,7 +748,7 @@ export default async function LandingPageRoute({
       )}
 
       {/* ── Bottom CTA ───────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20">
+      <section className="deferred-render py-14 md:py-20">
         <div className="container-shell">
           <div className="overflow-hidden rounded-2xl bg-primary">
             <div className="px-8 py-12 md:px-14 md:py-16 lg:flex lg:items-center lg:justify-between lg:gap-12">

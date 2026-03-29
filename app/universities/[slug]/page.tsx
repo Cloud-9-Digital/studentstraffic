@@ -25,12 +25,6 @@ import { ComparisonCard } from "@/components/site/comparison-card";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversityCard } from "@/components/site/university-card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -364,7 +358,7 @@ export default async function UniversityDetailPage({
 
               {/* Gallery */}
               {additionalGalleryImages.length > 0 && (
-                <div className="space-y-6 py-10">
+                <div className="deferred-render space-y-6 py-10">
                   <SectionLabel>Gallery</SectionLabel>
                   <div className="grid gap-4 md:grid-cols-2">
                     {additionalGalleryImages.map((image, index) => (
@@ -401,7 +395,7 @@ export default async function UniversityDetailPage({
 
               {/* Program */}
               {primaryProgram && (
-                <div className="space-y-6 py-10">
+                <div className="deferred-render space-y-6 py-10">
                   <SectionLabel>Program details</SectionLabel>
 
                   <div className="flex flex-wrap items-center gap-2">
@@ -500,7 +494,7 @@ export default async function UniversityDetailPage({
               )}
 
               {/* Clinical & Student Life */}
-              <div className="space-y-6 py-10">
+              <div className="deferred-render space-y-6 py-10">
                 <SectionLabel>Clinical &amp; student experience</SectionLabel>
 
                 {/* Clinical exposure */}
@@ -545,7 +539,7 @@ export default async function UniversityDetailPage({
               </div>
 
               {/* Shortlist fit */}
-              <div className="space-y-6 py-10">
+              <div className="deferred-render space-y-6 py-10">
                 <SectionLabel>Shortlist fit</SectionLabel>
                 <div className="grid gap-4 sm:grid-cols-3">
                   <FitCard
@@ -567,7 +561,7 @@ export default async function UniversityDetailPage({
               </div>
 
               {/* Recognition */}
-              <div className="space-y-6 py-10">
+              <div className="deferred-render space-y-6 py-10">
                 <SectionLabel>Recognition</SectionLabel>
                 <div className="rounded-2xl border border-border bg-card p-5">
                   <div className="flex flex-wrap gap-2">
@@ -587,7 +581,7 @@ export default async function UniversityDetailPage({
 
               {/* Program offerings */}
               {programs.length > 0 && (
-                <div className="space-y-6 py-10">
+                <div className="deferred-render space-y-6 py-10">
                   <SectionLabel>Program offerings</SectionLabel>
                   <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
                     {programs.map((program) => (
@@ -599,34 +593,39 @@ export default async function UniversityDetailPage({
 
               {/* FAQ */}
               {university.faq.length > 0 && (
-                <div className="space-y-6 py-10">
+                <div className="deferred-render space-y-6 py-10">
                   <SectionLabel>Frequently asked questions</SectionLabel>
-                  <Accordion type="single" collapsible className="space-y-2">
+                  <div className="space-y-2">
                     {university.faq.map((item, i) => (
-                      <AccordionItem
+                      <details
                         key={item.question}
-                        value={`faq-${i}`}
-                        className="rounded-xl border border-border bg-card px-5 last:border-b data-[state=open]:border-accent/30"
+                        open={i === 0}
+                        className="group rounded-xl border border-border bg-card px-5"
                       >
-                        <AccordionTrigger className="text-left text-sm font-medium text-foreground hover:no-underline">
-                          {item.question}
-                        </AccordionTrigger>
-                        <AccordionContent className="text-sm leading-7 text-muted-foreground">
+                        <summary className="flex cursor-pointer list-none items-start justify-between gap-4 py-4 text-left text-sm font-medium text-foreground marker:hidden">
+                          <span>{item.question}</span>
+                          <span className="mt-0.5 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-45">
+                            +
+                          </span>
+                        </summary>
+                        <div className="pb-4 text-sm leading-7 text-muted-foreground">
                           {item.answer}
-                        </AccordionContent>
-                      </AccordionItem>
+                        </div>
+                      </details>
                     ))}
-                  </Accordion>
+                  </div>
                 </div>
               )}
 
-              <Suspense fallback={null}>
-                <UniversityRelatedSection
-                  universitySlug={university.slug}
-                  countrySlug={university.countrySlug}
-                  countryName={country.name}
-                />
-              </Suspense>
+              <div className="deferred-render">
+                <Suspense fallback={null}>
+                  <UniversityRelatedSection
+                    universitySlug={university.slug}
+                    countrySlug={university.countrySlug}
+                    countryName={country.name}
+                  />
+                </Suspense>
+              </div>
             </div>
 
             {/* ── Sticky sidebar ───────────────────────────────────────────── */}
@@ -841,9 +840,9 @@ function UniversityLogoBadge({
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+    <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
       {children}
-    </div>
+    </h2>
   );
 }
 
