@@ -2,15 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import {
-  ArrowUpRight,
-  CalendarDays,
-  Check,
-  PencilLine,
-} from "lucide-react";
+import { ArrowUpRight, CalendarDays, Check, PencilLine } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { ComparisonCard } from "@/components/site/comparison-card";
+import { ComparisonTable } from "@/components/site/comparison-table";
 import { Button } from "@/components/ui/button";
 import {
   catalogReviewedAt,
@@ -32,11 +28,9 @@ import {
   getWebPageStructuredData,
 } from "@/lib/structured-data";
 import { getComparisonHref, getUniversityHref } from "@/lib/routes";
-import {
-  getUniversityInitials,
-} from "@/lib/university-media";
-import { formatCurrencyUsd } from "@/lib/utils";
+import { getUniversityInitials } from "@/lib/university-media";
 import type { FinderProgram } from "@/lib/data/types";
+// formatCurrencyUsd moved to ComparisonTable component
 
 export async function generateStaticParams() {
   const guides = await getComparisonGuides();
@@ -136,40 +130,6 @@ export default async function ComparisonGuidePage({
   const tuitionWinner =
     leftTuition < rightTuition ? "left" : rightTuition < leftTuition ? "right" : "tie";
 
-  const rows: { label: string; left: string; right: string; winner?: "left" | "right" }[] = [
-    {
-      label: "Annual tuition",
-      left: formatCurrencyUsd(leftTuition),
-      right: formatCurrencyUsd(rightTuition),
-      winner: tuitionWinner === "tie" ? undefined : tuitionWinner,
-    },
-    {
-      label: "Duration",
-      left: `${guide.left.offering.durationYears} years`,
-      right: `${guide.right.offering.durationYears} years`,
-    },
-    {
-      label: "City",
-      left: `${guide.left.university.city}, ${guide.left.country.name}`,
-      right: `${guide.right.university.city}, ${guide.right.country.name}`,
-    },
-    {
-      label: "University type",
-      left: guide.left.university.type,
-      right: guide.right.university.type,
-    },
-    {
-      label: "Teaching medium",
-      left: guide.left.offering.medium,
-      right: guide.right.offering.medium,
-    },
-    {
-      label: "Recognition",
-      left: guide.left.university.recognitionBadges.join(", ") || "—",
-      right: guide.right.university.recognitionBadges.join(", ") || "—",
-    },
-  ];
-
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
@@ -227,101 +187,24 @@ export default async function ComparisonGuidePage({
 
           {/* ── Head-to-head table ──────────────────────────────────────── */}
           <div>
-            <div className="mb-4 flex items-center gap-3">
+            <div className="mb-4 flex flex-wrap items-center gap-2">
               <h2 className="font-display text-heading text-2xl font-semibold tracking-tight">
                 Head-to-head
               </h2>
               {tuitionWinner !== "tie" && (
-                <span className="inline-flex items-center gap-1 rounded-full bg-[color:var(--status-green)] px-2.5 py-0.5 text-xs font-medium text-[color:var(--status-green-fg)]">
-                  <Check className="size-3" />
-                  {tuitionWinner === "left"
-                    ? guide.left.university.name
-                    : guide.right.university.name}{" "}
-                  has lower tuition
+                <span className="inline-flex items-center gap-1 rounded-full bg-[color:var(--status-green)] px-2.5 py-1 text-xs font-medium text-[color:var(--status-green-fg)]">
+                  <Check className="size-3 shrink-0" />
+                  <span>
+                    {tuitionWinner === "left"
+                      ? guide.left.university.name
+                      : guide.right.university.name}{" "}
+                    has lower tuition
+                  </span>
                 </span>
               )}
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-border bg-card">
-              {/* Column headers */}
-              <div className="grid grid-cols-[1fr_160px_1fr] border-b border-border">
-                {/* Left header */}
-                <Link href={getUniversityHref(guide.left.university.slug)} className="group flex items-center gap-3 bg-primary/[0.04] px-6 py-4 transition-colors hover:bg-primary/[0.08]">
-                  <UniLogoSmall university={guide.left.university} />
-                  <div>
-                    <p className="text-sm font-semibold leading-tight text-foreground group-hover:text-primary">
-                      {guide.left.university.name}
-                    </p>
-                    <p className="mt-0.5 flex items-center gap-1 text-xs text-muted-foreground">
-                      {guide.left.university.city}
-                      <ArrowUpRight className="size-3 opacity-0 transition-opacity group-hover:opacity-60" />
-                    </p>
-                  </div>
-                </Link>
-                {/* Center header */}
-                <div className="flex items-center justify-center border-x border-border bg-muted/50 px-3 py-4">
-                  <span className="text-[0.6rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                    Metric
-                  </span>
-                </div>
-                {/* Right header */}
-                <Link href={getUniversityHref(guide.right.university.slug)} className="group flex items-center justify-end gap-3 bg-accent/[0.04] px-6 py-4 transition-colors hover:bg-accent/[0.08]">
-                  <div className="text-right">
-                    <p className="text-sm font-semibold leading-tight text-foreground group-hover:text-primary">
-                      {guide.right.university.name}
-                    </p>
-                    <p className="mt-0.5 flex items-center justify-end gap-1 text-xs text-muted-foreground">
-                      <ArrowUpRight className="size-3 opacity-0 transition-opacity group-hover:opacity-60" />
-                      {guide.right.university.city}
-                    </p>
-                  </div>
-                  <UniLogoSmall university={guide.right.university} />
-                </Link>
-              </div>
-
-              {/* Data rows */}
-              {rows.map((row, i) => (
-                <div
-                  key={row.label}
-                  className={`grid grid-cols-[1fr_160px_1fr] ${i < rows.length - 1 ? "border-b border-border" : ""} ${i % 2 === 1 ? "bg-muted/20" : ""}`}
-                >
-                  {/* Left value */}
-                  <div className={`flex items-center px-6 py-3.5 ${row.winner === "left" ? "bg-[color:var(--status-green)]" : ""}`}>
-                    <div className="flex items-center gap-2">
-                      {row.winner === "left" && (
-                        <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[color:var(--status-green-fg)]/12">
-                          <Check className="size-2.5 text-[color:var(--status-green-fg)]" />
-                        </span>
-                      )}
-                      <span className={`text-sm ${row.winner === "left" ? "font-semibold text-[color:var(--status-green-fg)]" : "text-foreground"}`}>
-                        {row.left}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Center label */}
-                  <div className="flex items-center justify-center border-x border-border bg-muted/50 px-3 py-3.5 text-center">
-                    <span className="text-[0.65rem] font-medium leading-snug text-muted-foreground">
-                      {row.label}
-                    </span>
-                  </div>
-
-                  {/* Right value */}
-                  <div className={`flex items-center justify-end px-6 py-3.5 ${row.winner === "right" ? "bg-[color:var(--status-green)]" : ""}`}>
-                    <div className="flex items-center gap-2">
-                      <span className={`text-sm text-right ${row.winner === "right" ? "font-semibold text-[color:var(--status-green-fg)]" : "text-foreground"}`}>
-                        {row.right}
-                      </span>
-                      {row.winner === "right" && (
-                        <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[color:var(--status-green-fg)]/12">
-                          <Check className="size-2.5 text-[color:var(--status-green-fg)]" />
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <ComparisonTable programs={[guide.left, guide.right]} />
           </div>
 
           {/* ── Who should choose ───────────────────────────────────────── */}

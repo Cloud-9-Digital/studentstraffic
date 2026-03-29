@@ -53,7 +53,7 @@ function SelectWrapper({ children }: { children: ReactNode }) {
 
 function hasActiveFilters(filters: FinderFilters): boolean {
   return Object.entries(filters)
-    .filter(([key]) => key !== "q")
+    .filter(([key]) => key !== "q" && key !== "sort")
     .some(([, value]) =>
       typeof value === "boolean" ? value : value !== undefined && value !== "",
     );
@@ -61,7 +61,7 @@ function hasActiveFilters(filters: FinderFilters): boolean {
 
 function countActiveFilters(filters: FinderFilters): number {
   return Object.entries(filters)
-    .filter(([key]) => key !== "q")
+    .filter(([key]) => key !== "q" && key !== "sort")
     .filter(([, value]) =>
       typeof value === "boolean" ? value : value !== undefined && value !== "",
     ).length;
@@ -80,6 +80,7 @@ function mergeFilters(
 function DebouncedSearchInput({
   initialValue,
   placeholder,
+  wrapperClassName,
   inputClassName,
   iconClassName,
   clearButtonClassName,
@@ -87,6 +88,7 @@ function DebouncedSearchInput({
 }: {
   initialValue: string;
   placeholder: string;
+  wrapperClassName?: string;
   inputClassName: string;
   iconClassName: string;
   clearButtonClassName?: string;
@@ -108,7 +110,7 @@ function DebouncedSearchInput({
   }, [initialValue, onQueryChange, value]);
 
   return (
-    <div className="relative">
+    <div className={cn("relative", wrapperClassName)}>
       <Search className={iconClassName} />
       <input
         type="search"
@@ -319,7 +321,10 @@ function FilterFields({
         <button
           type="button"
           onClick={() => {
-            onFiltersChange({ q: filters.q }, { history: "replace" });
+            onFiltersChange(
+              { q: filters.q, sort: filters.sort },
+              { history: "replace" },
+            );
             onNavigate?.();
           }}
           className="block w-full text-center text-xs font-medium text-muted-foreground underline underline-offset-2 hover:text-accent"
@@ -409,14 +414,15 @@ export function FinderFilterForm({
     <>
       <div
         className={cn(
-          "flex items-center gap-2",
-          heroMode && "mx-auto max-w-2xl",
+          "flex w-full items-center gap-2",
+          heroMode && "mx-auto w-full max-w-2xl",
         )}
       >
         <DebouncedSearchInput
           key={`hero:${filters.q ?? ""}`}
           initialValue={filters.q ?? ""}
           placeholder="Search universities, cities, countries…"
+          wrapperClassName="min-w-0 flex-1"
           iconClassName={cn(
             "pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2",
             heroMode ? "text-foreground/40" : "text-muted-foreground",
@@ -444,7 +450,7 @@ export function FinderFilterForm({
               : "Open filters"
           }
           className={cn(
-            "flex h-12 shrink-0 items-center gap-2 rounded-xl px-4 text-sm font-semibold transition-colors",
+            "flex h-12 shrink-0 items-center justify-center gap-2 rounded-xl px-3 text-sm font-semibold transition-colors sm:px-4",
             heroMode
               ? "bg-accent text-white shadow-lg hover:bg-accent-strong"
               : cn(
@@ -456,7 +462,7 @@ export function FinderFilterForm({
           )}
         >
           <SlidersHorizontal className="size-4" />
-          <span className="hidden sm:inline">Filters</span>
+          <span>Filters</span>
           {filterCount > 0 && (
             <span
               className={cn(
@@ -474,7 +480,7 @@ export function FinderFilterForm({
         <SheetContent
           side="right"
           showCloseButton={false}
-          className="flex w-[65vw] flex-col gap-0 p-0 sm:max-w-[65vw]"
+          className="flex w-screen max-w-none flex-col gap-0 p-0 sm:w-[420px] sm:max-w-[420px]"
         >
           <SheetHeader className="shrink-0 flex-row items-center justify-between border-b border-border px-5 py-4">
             <div className="flex items-center gap-2">

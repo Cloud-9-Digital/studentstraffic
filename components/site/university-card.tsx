@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Building2 } from "lucide-react";
+import { Building2 } from "lucide-react";
 
+import { AddToCompareButton } from "@/components/site/add-to-compare-button";
 import type { FinderProgram } from "@/lib/data/types";
 import { getUniversityHref } from "@/lib/routes";
 import { getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
@@ -25,10 +26,13 @@ export function UniversityCard({
   const hasPublishedFee = hasPublishedUsdAmount(offering.annualTuitionUsd);
 
   return (
-    <Link
-      href={href}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-sm"
-    >
+    // Wrapper is a plain div — Link covers the whole card via absolute inset,
+    // AddToCompareButton is a sibling at z-10 to avoid nested interactive elements.
+    <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-sm">
+
+      {/* Full-card link — covers everything below z-10 */}
+      <Link href={href} className="absolute inset-0 z-0" aria-label={university.name} />
+
       {/* Cover image ─────────────────────────────────────────────── */}
       <div className="relative h-36 w-full shrink-0 overflow-hidden bg-gradient-to-br from-primary/12 to-primary/5">
         {coverImage ? (
@@ -49,7 +53,7 @@ export function UniversityCard({
           </div>
         )}
 
-        {/* Gradient overlay for bottom legibility */}
+        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
 
         {/* University type — top-left */}
@@ -91,42 +95,47 @@ export function UniversityCard({
           )}
         </div>
 
-        {/* Arrow — bottom-right */}
-        <div className="absolute bottom-2.5 right-2.5 flex size-7 items-center justify-center rounded-full bg-white/15 backdrop-blur-sm transition-colors group-hover:bg-white/25">
-          <ArrowUpRight className="size-3.5 text-white transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-        </div>
       </div>
 
       {/* Card body ─────────────────────────────────────────────── */}
-      <div className="flex flex-1 flex-col gap-3 p-4">
-        {/* Name + location */}
+      <div className="relative z-0 flex flex-1 flex-col gap-3 p-4">
         <div>
           <h3 className="text-sm font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
             {university.name}
           </h3>
         </div>
 
-        {/* Stats row */}
-        <div className="mt-auto grid grid-cols-2 gap-2 border-t border-border pt-3">
-          <div className="flex flex-col">
-            <span className="text-[0.65rem] text-muted-foreground">
-              {hasPublishedFee ? "Tuition / yr" : "Fee"}
-            </span>
-            <span
-              className={cn(
-                "font-bold text-foreground",
-                hasPublishedFee ? "text-sm" : "text-xs leading-5"
-              )}
-            >
-              {formatUsdAmountOrTbd(offering.annualTuitionUsd)}
-            </span>
+        <div className="mt-auto flex flex-col gap-2.5 border-t border-border pt-3">
+          <div className="grid grid-cols-2 gap-2">
+            <div className="flex flex-col">
+              <span className="text-[0.65rem] text-muted-foreground">
+                {hasPublishedFee ? "Tuition / yr" : "Fee"}
+              </span>
+              <span
+                className={cn(
+                  "font-bold text-foreground",
+                  hasPublishedFee ? "text-sm" : "text-xs leading-5"
+                )}
+              >
+                {formatUsdAmountOrTbd(offering.annualTuitionUsd)}
+              </span>
+            </div>
+            <div className="flex flex-col items-end">
+              <span className="text-[0.65rem] text-muted-foreground">Course</span>
+              <span className="text-sm font-semibold text-foreground">{course.shortName}</span>
+            </div>
           </div>
-          <div className="flex flex-col items-end">
-            <span className="text-[0.65rem] text-muted-foreground">Course</span>
-            <span className="text-sm font-semibold text-foreground">{course.shortName}</span>
+
+          {/* Compare button — z-10 so it intercepts clicks above the card link */}
+          <div className="relative z-10">
+            <AddToCompareButton
+              slug={university.slug}
+              name={university.name}
+              logoUrl={university.logoUrl}
+            />
           </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

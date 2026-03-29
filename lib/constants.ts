@@ -5,8 +5,8 @@ export const siteConfig = {
     "Students Traffic helps Indian students research medical study-abroad options, compare universities, and get guided admissions support when they are ready to apply.",
   copyrightYear: 2026,
   email: "hello@studentstraffic.com",
-  phone: "+91 91716 12888",
-  whatsappNumber: "919171612888",
+  phone: "+91 91761 62888",
+  whatsappNumber: "919176162888",
 };
 
 export const maxSitemapUrls = 50_000;

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import { ChevronDown } from "lucide-react";
 
 import { UniversityCard } from "@/components/site/university-card";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,15 +14,29 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { getFinderSort } from "@/lib/filters";
 import { buildFinderUrl } from "@/lib/filters";
-import type { FinderFilters, FinderProgramsPage } from "@/lib/data/types";
+import type {
+  FinderFilters,
+  FinderProgramsPage,
+  FinderSort,
+} from "@/lib/data/types";
+
+const finderSortOptions: { value: FinderSort; label: string }[] = [
+  { value: "recommended", label: "Recommended" },
+  { value: "tuition_asc", label: "Fees: Low to High" },
+  { value: "tuition_desc", label: "Fees: High to Low" },
+  { value: "name_asc", label: "University: A to Z" },
+];
 
 type UniversitiesResultsPanelProps = {
   filters: FinderFilters;
   results: FinderProgramsPage;
   isLoading: boolean;
   errorMessage?: string;
+  currentSort?: FinderSort;
   onPageChange: (page: number) => void;
+  onSortChange: (sort: FinderSort) => void;
   onClearFilters: () => void;
   onRetry: () => void;
 };
@@ -61,7 +76,9 @@ export function UniversitiesResultsPanel({
   results,
   isLoading,
   errorMessage,
+  currentSort,
   onPageChange,
+  onSortChange,
   onClearFilters,
   onRetry,
 }: UniversitiesResultsPanelProps) {
@@ -77,11 +94,12 @@ export function UniversitiesResultsPanel({
     results.totalItems === 0
       ? 0
       : Math.min(results.currentPage * results.pageSize, results.totalItems);
+  const selectedSort = getFinderSort(currentSort);
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div>
+      <div className="flex flex-wrap items-end gap-3">
+        <div className="min-w-0 flex-1">
           <p className="text-sm font-semibold text-heading">
             {results.totalItems.toLocaleString()} universities matched
           </p>
@@ -90,12 +108,39 @@ export function UniversitiesResultsPanel({
             {results.totalItems.toLocaleString()}
           </p>
         </div>
-        {isLoading && (
-          <span className="inline-flex items-center gap-2 self-start rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground sm:self-auto">
-            <span className="size-2 rounded-full bg-accent animate-pulse" />
-            Updating results…
-          </span>
-        )}
+        <div className="ml-auto flex flex-wrap items-end justify-end gap-2">
+          {isLoading && (
+            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
+              <span className="size-2 rounded-full bg-accent animate-pulse" />
+              Updating results…
+            </span>
+          )}
+          <div className="flex flex-col items-start gap-1">
+            <label
+              htmlFor="finder-sort"
+              className="text-xs font-medium text-muted-foreground"
+            >
+              Sort by
+            </label>
+            <div className="relative">
+              <select
+                id="finder-sort"
+                value={selectedSort}
+                onChange={(event) =>
+                  onSortChange(event.target.value as FinderSort)
+                }
+                className="h-9 min-w-[154px] appearance-none rounded-lg border border-border bg-card px-3 py-2 pr-8 text-sm text-foreground shadow-xs outline-none transition-colors focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+              >
+                {finderSortOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+            </div>
+          </div>
+        </div>
       </div>
 
       {errorMessage && (

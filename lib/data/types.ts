@@ -174,7 +174,14 @@ export type FinderFilters = {
   feeMax?: number;
   medium?: string;
   intake?: string;
+  sort?: FinderSort;
 };
+
+export type FinderSort =
+  | "recommended"
+  | "tuition_asc"
+  | "tuition_desc"
+  | "name_asc";
 
 export type FinderProgram = {
   country: Country;

@@ -10,6 +10,7 @@ import type {
   FinderFilters,
   FinderProgram,
   FinderProgramsPage,
+  FinderSort,
   LandingPage,
   ProgramOffering,
   University,
@@ -32,6 +33,7 @@ import {
 } from "@/lib/routes";
 import { getSortableUsdValue, hasPublishedUsdAmount } from "@/lib/utils";
 import { finderPageSize } from "@/lib/constants";
+import { getFinderSort } from "@/lib/filters";
 
 type CatalogSnapshot = {
   countries: Country[];
@@ -300,16 +302,83 @@ async function getFinderProgramsBase() {
       };
     })
     .filter((item): item is FinderProgram => Boolean(item))
-    .sort((a, b) => {
-      if (a.offering.featured !== b.offering.featured) {
-        return Number(b.offering.featured) - Number(a.offering.featured);
-      }
+    .sort(compareRecommendedPrograms);
+}
 
-      return (
-        getSortableUsdValue(a.offering.annualTuitionUsd) -
-        getSortableUsdValue(b.offering.annualTuitionUsd)
-      );
-    });
+function compareFinderProgramNames(left: FinderProgram, right: FinderProgram) {
+  const byUniversityName = left.university.name.localeCompare(
+    right.university.name,
+  );
+
+  if (byUniversityName !== 0) {
+    return byUniversityName;
+  }
+
+  const byCourseName = left.course.shortName.localeCompare(right.course.shortName);
+  if (byCourseName !== 0) {
+    return byCourseName;
+  }
+
+  return left.country.name.localeCompare(right.country.name);
+}
+
+function compareRecommendedPrograms(left: FinderProgram, right: FinderProgram) {
+  if (left.offering.featured !== right.offering.featured) {
+    return Number(right.offering.featured) - Number(left.offering.featured);
+  }
+
+  const tuitionDifference =
+    getSortableUsdValue(left.offering.annualTuitionUsd) -
+    getSortableUsdValue(right.offering.annualTuitionUsd);
+
+  if (tuitionDifference !== 0) {
+    return tuitionDifference;
+  }
+
+  return compareFinderProgramNames(left, right);
+}
+
+function compareProgramsByTuition(
+  left: FinderProgram,
+  right: FinderProgram,
+  direction: "asc" | "desc",
+) {
+  const leftHasTuition = hasPublishedUsdAmount(left.offering.annualTuitionUsd);
+  const rightHasTuition = hasPublishedUsdAmount(right.offering.annualTuitionUsd);
+
+  if (leftHasTuition !== rightHasTuition) {
+    return leftHasTuition ? -1 : 1;
+  }
+
+  if (leftHasTuition && rightHasTuition) {
+    const tuitionDifference =
+      left.offering.annualTuitionUsd - right.offering.annualTuitionUsd;
+
+    if (tuitionDifference !== 0) {
+      return direction === "asc" ? tuitionDifference : -tuitionDifference;
+    }
+  }
+
+  return compareRecommendedPrograms(left, right);
+}
+
+function sortFinderPrograms(programs: FinderProgram[], sort: FinderSort) {
+  if (sort === "recommended") {
+    return programs;
+  }
+
+  return [...programs].sort((left, right) => {
+    switch (sort) {
+      case "tuition_asc":
+        return compareProgramsByTuition(left, right, "asc");
+      case "tuition_desc":
+        return compareProgramsByTuition(left, right, "desc");
+      case "name_asc":
+        return compareFinderProgramNames(left, right);
+      default:
+        return compareRecommendedPrograms(left, right);
+    }
+  });
 }
 
 export async function listFinderPrograms(filters: FinderFilters) {
@@ -321,7 +390,7 @@ export async function listFinderPrograms(filters: FinderFilters) {
 
   const programs = await getFinderProgramsBase();
 
-  return programs.filter((program) => {
+  const filteredPrograms = programs.filter((program) => {
     if (filters.q) {
       const q = filters.q.toLowerCase();
       const haystack = [
@@ -376,6 +445,8 @@ export async function listFinderPrograms(filters: FinderFilters) {
 
     return true;
   });
+
+  return sortFinderPrograms(filteredPrograms, getFinderSort(filters.sort));
 }
 
 export async function getFinderProgramsPage(

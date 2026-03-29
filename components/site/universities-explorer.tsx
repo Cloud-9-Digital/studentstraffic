@@ -17,6 +17,7 @@ import type {
   FinderFilters,
   FinderOptions,
   FinderProgramsPage,
+  FinderSort,
 } from "@/lib/data/types";
 import {
   buildFinderUrl,
@@ -57,6 +58,7 @@ export function UniversitiesExplorer({
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | undefined>();
   const abortRef = useRef<AbortController | null>(null);
+  const resultsSectionRef = useRef<HTMLElement | null>(null);
   const cacheRef = useRef(
     new Map<string, FinderProgramsPage>([
       [
@@ -179,6 +181,11 @@ export function UniversitiesExplorer({
         return;
       }
 
+      resultsSectionRef.current?.scrollIntoView({
+        block: "start",
+        behavior: "auto",
+      });
+
       void loadResults(filters, page, { history: "push" });
     },
     [filters, loadResults, results.currentPage],
@@ -191,8 +198,26 @@ export function UniversitiesExplorer({
   }, [loadResults]);
 
   const handleClearFilters = useCallback(() => {
-    void loadResults({ q: filters.q }, 1, { history: "replace" });
-  }, [filters.q, loadResults]);
+    void loadResults(
+      { q: filters.q, sort: filters.sort },
+      1,
+      { history: "replace" },
+    );
+  }, [filters.q, filters.sort, loadResults]);
+
+  const handleSortChange = useCallback(
+    (sort: FinderSort) => {
+      void loadResults(
+        {
+          ...filters,
+          sort: sort === "recommended" ? undefined : sort,
+        },
+        1,
+        { history: "replace" },
+      );
+    },
+    [filters, loadResults],
+  );
 
   useEffect(() => {
     const handlePopState = () => {
@@ -289,7 +314,10 @@ export function UniversitiesExplorer({
         </div>
       </div>
 
-      <section className="py-10 md:py-14">
+      <section
+        ref={resultsSectionRef}
+        className="scroll-mt-20 py-10 md:scroll-mt-24 md:py-14"
+      >
         <div className="container-shell space-y-10">
           <div className="lg:grid lg:grid-cols-[280px_1fr] lg:items-start lg:gap-8">
             <aside className="hidden lg:block lg:sticky lg:top-20">
@@ -309,7 +337,9 @@ export function UniversitiesExplorer({
               results={results}
               isLoading={isLoading}
               errorMessage={errorMessage}
+              currentSort={filters.sort}
               onPageChange={handlePageChange}
+              onSortChange={handleSortChange}
               onClearFilters={handleClearFilters}
               onRetry={handleRetry}
             />

@@ -1,4 +1,12 @@
-import type { FinderFilters } from "@/lib/data/types";
+import type { FinderFilters, FinderSort } from "@/lib/data/types";
+
+export const defaultFinderSort: FinderSort = "recommended";
+export const finderSortValues = [
+  "recommended",
+  "tuition_asc",
+  "tuition_desc",
+  "name_asc",
+] as const satisfies readonly FinderSort[];
 
 type FinderParamsInput =
   | Record<string, string | string[] | undefined>
@@ -27,6 +35,26 @@ function getFirstValue(raw: FinderParamsInput, key: string) {
   return value;
 }
 
+function parseFinderSort(value?: string): FinderSort | undefined {
+  if (!value) {
+    return undefined;
+  }
+
+  return finderSortValues.find((sort) => sort === value);
+}
+
+function normalizeFinderSort(sort?: FinderSort) {
+  if (!sort || sort === defaultFinderSort) {
+    return undefined;
+  }
+
+  return parseFinderSort(sort);
+}
+
+export function getFinderSort(sort?: FinderSort) {
+  return parseFinderSort(sort) ?? defaultFinderSort;
+}
+
 export function normalizeFinderFilters(filters: FinderFilters): FinderFilters {
   return {
     q: filters.q?.trim() || undefined,
@@ -36,6 +64,7 @@ export function normalizeFinderFilters(filters: FinderFilters): FinderFilters {
     feeMax: filters.feeMax,
     medium: filters.medium || undefined,
     intake: filters.intake || undefined,
+    sort: normalizeFinderSort(filters.sort),
   };
 }
 
@@ -48,6 +77,7 @@ export function parseFinderFilters(raw: FinderParamsInput): FinderFilters {
     feeMax: parseNumber(getFirstValue(raw, "fee_max")),
     medium: getFirstValue(raw, "medium") || undefined,
     intake: getFirstValue(raw, "intake") || undefined,
+    sort: parseFinderSort(getFirstValue(raw, "sort") || undefined),
   });
 }
 
@@ -69,6 +99,7 @@ export function createFinderSearchParams(filters: FinderFilters, page = 1) {
     params.set("fee_min", String(normalized.feeMin));
   if (normalized.feeMax != null)
     params.set("fee_max", String(normalized.feeMax));
+  if (normalized.sort) params.set("sort", normalized.sort);
   if (page > 1) params.set("page", String(page));
 
   return params;
