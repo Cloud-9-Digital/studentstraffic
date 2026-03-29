@@ -117,43 +117,38 @@ export function UniversitiesResultsPanel({
   const selectedSort = getFinderSort(currentSort);
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-start gap-3">
-        <div className="min-w-0 flex-1 space-y-0.5 pr-1">
-          <p className="text-sm font-semibold text-heading">
-            {results.totalItems.toLocaleString()} universities matched
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Showing {firstResult}-{lastResult} of{" "}
-            {results.totalItems.toLocaleString()}
+    <div className="space-y-5 md:space-y-6">
+      <div className="flex items-center justify-between gap-3">
+        <div className="min-w-0">
+          <p className="text-sm leading-none font-semibold text-heading">
+            {results.totalItems.toLocaleString()} universities
           </p>
         </div>
-        <div className="flex shrink-0 items-start gap-2">
-          <div className="flex shrink-0 flex-col items-start gap-0.5 sm:items-end">
-            <label
-              htmlFor="finder-sort"
-              className="text-[11px] font-medium text-muted-foreground"
+
+        <div className="flex shrink-0 items-center gap-1.5">
+          <label
+            htmlFor="finder-sort"
+            className="whitespace-nowrap text-sm leading-none font-medium text-muted-foreground"
+          >
+            Sort by
+          </label>
+          <div className="relative">
+            <select
+              id="finder-sort"
+              value={selectedSort}
+              onChange={(event) =>
+                onSortChange(event.target.value as FinderSort)
+              }
+              disabled={isLoading}
+              className="h-8 min-w-[164px] appearance-none rounded-lg border border-border/80 bg-card px-3 pr-8 text-sm font-medium text-foreground outline-none transition-colors focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
             >
-              Sort by
-            </label>
-            <div className="relative w-full sm:w-auto">
-              <select
-                id="finder-sort"
-                value={selectedSort}
-                onChange={(event) =>
-                  onSortChange(event.target.value as FinderSort)
-                }
-                disabled={isLoading}
-                className="h-8 min-w-[172px] appearance-none rounded-xl border border-border/80 bg-card px-2.5 py-1.5 pr-7 text-[13px] font-medium text-foreground shadow-none outline-none transition-colors focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 sm:px-3 sm:pr-8 sm:text-sm"
-              >
-                {finderSortOptions.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
-              <ChevronDown className="pointer-events-none absolute right-2 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground sm:right-2.5 sm:size-4" />
-            </div>
+              {finderSortOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
           </div>
         </div>
       </div>
@@ -212,7 +207,12 @@ export function UniversitiesResultsPanel({
       )}
 
       {!isLoading && results.totalPages > 1 && (
-        <Pagination>
+        <>
+          <p className="text-center text-sm text-muted-foreground">
+            Showing {firstResult}-{lastResult} of{" "}
+            {results.totalItems.toLocaleString()}
+          </p>
+          <Pagination>
           <PaginationContent>
             <PaginationItem>
               <PaginationPrevious
@@ -273,7 +273,8 @@ export function UniversitiesResultsPanel({
               />
             </PaginationItem>
           </PaginationContent>
-        </Pagination>
+          </Pagination>
+        </>
       )}
     </div>
   );

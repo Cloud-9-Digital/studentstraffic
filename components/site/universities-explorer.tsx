@@ -316,9 +316,9 @@ export function UniversitiesExplorer({
 
       <section
         ref={resultsSectionRef}
-        className="scroll-mt-20 py-10 md:scroll-mt-24 md:py-14"
+        className="scroll-mt-20 pt-6 pb-10 md:scroll-mt-24 md:pt-10 md:pb-14"
       >
-        <div className="container-shell space-y-10">
+        <div className="container-shell space-y-8 md:space-y-10">
           <div className="lg:grid lg:grid-cols-[280px_1fr] lg:items-start lg:gap-8">
             <aside className="hidden lg:block lg:sticky lg:top-20">
               <FinderFilterForm

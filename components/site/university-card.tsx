@@ -30,8 +30,8 @@ export function UniversityCard({
     // AddToCompareButton is a sibling at z-10 to avoid nested interactive elements.
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-sm">
 
-      {/* Full-card link — covers everything below z-10 */}
-      <Link href={href} className="absolute inset-0 z-0" aria-label={university.name} />
+      {/* Full-card link — sits above card content (z-[1]) but below compare button (z-10) */}
+      <Link href={href} className="absolute inset-0 z-[1]" aria-label={university.name} />
 
       {/* Cover image ─────────────────────────────────────────────── */}
       <div className="relative h-36 w-full shrink-0 overflow-hidden bg-gradient-to-br from-primary/12 to-primary/5">
