@@ -56,7 +56,7 @@ export default function RootLayout({
         <CompareProvider>
           <div className="relative flex min-h-full flex-col">
             <SiteHeader />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 pb-[72px] md:pb-0">{children}</main>
             <SiteFooter />
             <MobileStickyBar />
             <CompareTrayLoader />

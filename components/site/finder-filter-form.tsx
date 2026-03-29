@@ -428,7 +428,7 @@ export function FinderFilterForm({
             heroMode ? "text-foreground/40" : "text-muted-foreground",
           )}
           inputClassName={cn(
-            "h-12 w-full rounded-xl pl-11 pr-10 text-sm outline-none transition-shadow",
+            "h-12 w-full rounded-xl pl-11 pr-10 text-base outline-none transition-shadow",
             heroMode
               ? "border-0 bg-white text-foreground shadow-lg placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-white/60"
               : "border border-input bg-card text-foreground shadow-sm placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50",

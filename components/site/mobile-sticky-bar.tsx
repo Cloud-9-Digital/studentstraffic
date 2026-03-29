@@ -34,8 +34,7 @@ export function MobileStickyBar() {
         background: "rgba(255, 255, 255, 0.65)",
         backdropFilter: "blur(24px) saturate(180%) brightness(1.08)",
         WebkitBackdropFilter: "blur(24px) saturate(180%) brightness(1.08)",
-        borderTop: "1px solid rgba(255, 255, 255, 0.9)",
-        boxShadow: "0 -8px 32px rgba(0, 0, 0, 0.08)",
+        borderTop: "1px solid rgba(0, 0, 0, 0.07)",
       }}
     >
       <div className="flex items-center gap-2.5 px-4 py-3">
