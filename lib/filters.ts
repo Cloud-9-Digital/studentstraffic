@@ -1,5 +1,9 @@
 import type { FinderFilters } from "@/lib/data/types";
 
+type FinderParamsInput =
+  | Record<string, string | string[] | undefined>
+  | URLSearchParams;
+
 function parseNumber(value?: string) {
   if (!value) {
     return undefined;
@@ -9,28 +13,72 @@ function parseNumber(value?: string) {
   return Number.isFinite(parsed) ? parsed : undefined;
 }
 
-export function parseFinderFilters(
-  raw: Record<string, string | string[] | undefined>
-): FinderFilters {
-  const getFirst = (key: string) => {
-    const value = raw[key];
+function getFirstValue(raw: FinderParamsInput, key: string) {
+  if (raw instanceof URLSearchParams) {
+    return raw.get(key) ?? undefined;
+  }
 
-    if (Array.isArray(value)) {
-      return value[0];
-    }
+  const value = raw[key];
 
-    return value;
-  };
+  if (Array.isArray(value)) {
+    return value[0];
+  }
 
+  return value;
+}
+
+export function normalizeFinderFilters(filters: FinderFilters): FinderFilters {
   return {
-    q: getFirst("q") || undefined,
-    country: getFirst("country") || undefined,
-    course: getFirst("course") || undefined,
-    feeMin: parseNumber(getFirst("fee_min")),
-    feeMax: parseNumber(getFirst("fee_max")),
-    medium: getFirst("medium") || undefined,
-    intake: getFirst("intake") || undefined,
+    q: filters.q?.trim() || undefined,
+    country: filters.country || undefined,
+    course: filters.course || undefined,
+    feeMin: filters.feeMin,
+    feeMax: filters.feeMax,
+    medium: filters.medium || undefined,
+    intake: filters.intake || undefined,
   };
+}
+
+export function parseFinderFilters(raw: FinderParamsInput): FinderFilters {
+  return normalizeFinderFilters({
+    q: getFirstValue(raw, "q") || undefined,
+    country: getFirstValue(raw, "country") || undefined,
+    course: getFirstValue(raw, "course") || undefined,
+    feeMin: parseNumber(getFirstValue(raw, "fee_min")),
+    feeMax: parseNumber(getFirstValue(raw, "fee_max")),
+    medium: getFirstValue(raw, "medium") || undefined,
+    intake: getFirstValue(raw, "intake") || undefined,
+  });
+}
+
+export function parseFinderPage(value?: string) {
+  const parsed = Number.parseInt(value ?? "1", 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 1;
+}
+
+export function createFinderSearchParams(filters: FinderFilters, page = 1) {
+  const params = new URLSearchParams();
+  const normalized = normalizeFinderFilters(filters);
+
+  if (normalized.q) params.set("q", normalized.q);
+  if (normalized.country) params.set("country", normalized.country);
+  if (normalized.course) params.set("course", normalized.course);
+  if (normalized.medium) params.set("medium", normalized.medium);
+  if (normalized.intake) params.set("intake", normalized.intake);
+  if (normalized.feeMin != null)
+    params.set("fee_min", String(normalized.feeMin));
+  if (normalized.feeMax != null)
+    params.set("fee_max", String(normalized.feeMax));
+  if (page > 1) params.set("page", String(page));
+
+  return params;
+}
+
+export function buildFinderUrl(filters: FinderFilters, page = 1) {
+  const params = createFinderSearchParams(filters, page);
+  const query = params.toString();
+
+  return `/universities${query ? `?${query}` : ""}`;
 }
 
 export function hasFinderFilters(filters: FinderFilters) {

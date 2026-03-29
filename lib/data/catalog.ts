@@ -6,8 +6,10 @@ import { landingPages } from "@/lib/data/landing-pages";
 import type {
   Country,
   Course,
+  FinderOptions,
   FinderFilters,
   FinderProgram,
+  FinderProgramsPage,
   LandingPage,
   ProgramOffering,
   University,
@@ -28,10 +30,8 @@ import {
   getCourseHref,
   getUniversityHref,
 } from "@/lib/routes";
-import {
-  getSortableUsdValue,
-  hasPublishedUsdAmount,
-} from "@/lib/utils";
+import { getSortableUsdValue, hasPublishedUsdAmount } from "@/lib/utils";
+import { finderPageSize } from "@/lib/constants";
 
 type CatalogSnapshot = {
   countries: Country[];
@@ -48,44 +48,45 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
   }
 
   try {
-    const [countryRows, courseRows, universityRows, programRows] = await Promise.all([
-      db.select().from(countriesTable),
-      db.select().from(coursesTable),
-      db
-        .select({
-          id: universitiesTable.id,
-          countryId: universitiesTable.countryId,
-          slug: universitiesTable.slug,
-          name: universitiesTable.name,
-          city: universitiesTable.city,
-          type: universitiesTable.type,
-          establishedYear: universitiesTable.establishedYear,
-          summary: universitiesTable.summary,
-          featured: universitiesTable.featured,
-          officialWebsite: universitiesTable.officialWebsite,
-          logoUrl: universitiesTable.logoUrl,
-          coverImageUrl: universitiesTable.coverImageUrl,
-          galleryImages: universitiesTable.galleryImages,
-          campusLifestyle: universitiesTable.campusLifestyle,
-          cityProfile: universitiesTable.cityProfile,
-          clinicalExposure: universitiesTable.clinicalExposure,
-          hostelOverview: universitiesTable.hostelOverview,
-          indianFoodSupport: universitiesTable.indianFoodSupport,
-          safetyOverview: universitiesTable.safetyOverview,
-          studentSupport: universitiesTable.studentSupport,
-          whyChoose: universitiesTable.whyChoose,
-          thingsToConsider: universitiesTable.thingsToConsider,
-          bestFitFor: universitiesTable.bestFitFor,
-          teachingHospitals: universitiesTable.teachingHospitals,
-          recognitionBadges: universitiesTable.recognitionBadges,
-          recognitionLinks: universitiesTable.recognitionLinks,
-          faq: universitiesTable.faq,
-          similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
-          updatedAt: universitiesTable.updatedAt,
-        })
-        .from(universitiesTable),
-      db.select().from(programOfferingsTable),
-    ]);
+    const [countryRows, courseRows, universityRows, programRows] =
+      await Promise.all([
+        db.select().from(countriesTable),
+        db.select().from(coursesTable),
+        db
+          .select({
+            id: universitiesTable.id,
+            countryId: universitiesTable.countryId,
+            slug: universitiesTable.slug,
+            name: universitiesTable.name,
+            city: universitiesTable.city,
+            type: universitiesTable.type,
+            establishedYear: universitiesTable.establishedYear,
+            summary: universitiesTable.summary,
+            featured: universitiesTable.featured,
+            officialWebsite: universitiesTable.officialWebsite,
+            logoUrl: universitiesTable.logoUrl,
+            coverImageUrl: universitiesTable.coverImageUrl,
+            galleryImages: universitiesTable.galleryImages,
+            campusLifestyle: universitiesTable.campusLifestyle,
+            cityProfile: universitiesTable.cityProfile,
+            clinicalExposure: universitiesTable.clinicalExposure,
+            hostelOverview: universitiesTable.hostelOverview,
+            indianFoodSupport: universitiesTable.indianFoodSupport,
+            safetyOverview: universitiesTable.safetyOverview,
+            studentSupport: universitiesTable.studentSupport,
+            whyChoose: universitiesTable.whyChoose,
+            thingsToConsider: universitiesTable.thingsToConsider,
+            bestFitFor: universitiesTable.bestFitFor,
+            teachingHospitals: universitiesTable.teachingHospitals,
+            recognitionBadges: universitiesTable.recognitionBadges,
+            recognitionLinks: universitiesTable.recognitionLinks,
+            faq: universitiesTable.faq,
+            similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
+            updatedAt: universitiesTable.updatedAt,
+          })
+          .from(universitiesTable),
+        db.select().from(programOfferingsTable),
+      ]);
 
     const countries: Country[] = countryRows.map((country) => ({
       slug: country.slug,
@@ -112,10 +113,10 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
     }));
 
     const countrySlugsById = new Map(
-      countryRows.map((country) => [country.id, country.slug])
+      countryRows.map((country) => [country.id, country.slug]),
     );
     const courseSlugsById = new Map(
-      courseRows.map((course) => [course.id, course.slug])
+      courseRows.map((course) => [course.id, course.slug]),
     );
 
     const universities: University[] = universityRows.map((university) => ({
@@ -152,7 +153,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
     }));
 
     const universitySlugsById = new Map(
-      universityRows.map((university) => [university.id, university.slug])
+      universityRows.map((university) => [university.id, university.slug]),
     );
 
     const programOfferings: ProgramOffering[] = programRows.map((program) => ({
@@ -270,12 +271,14 @@ async function getFinderProgramsBase() {
   const snapshot = await getCatalogSnapshot();
 
   const universityBySlug = new Map(
-    snapshot.universities.map((university) => [university.slug, university])
+    snapshot.universities.map((university) => [university.slug, university]),
   );
   const countryBySlug = new Map(
-    snapshot.countries.map((country) => [country.slug, country])
+    snapshot.countries.map((country) => [country.slug, country]),
   );
-  const courseBySlug = new Map(snapshot.courses.map((course) => [course.slug, course]));
+  const courseBySlug = new Map(
+    snapshot.courses.map((course) => [course.slug, course]),
+  );
 
   return snapshot.programOfferings
     .map((offering): FinderProgram | null => {
@@ -375,7 +378,35 @@ export async function listFinderPrograms(filters: FinderFilters) {
   });
 }
 
-export async function getFinderOptions() {
+export async function getFinderProgramsPage(
+  filters: FinderFilters,
+  page = 1,
+  pageSize = finderPageSize,
+): Promise<FinderProgramsPage> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+
+  const allPrograms = await listFinderPrograms(filters);
+  const totalItems = allPrograms.length;
+  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+  const currentPage = Math.min(Math.max(page, 1), totalPages);
+  const start = (currentPage - 1) * pageSize;
+
+  return {
+    programs: allPrograms.slice(start, start + pageSize),
+    totalItems,
+    totalPages,
+    currentPage,
+    pageSize,
+    hasPreviousPage: currentPage > 1,
+    hasNextPage: currentPage < totalPages,
+  };
+}
+
+export async function getFinderOptions(): Promise<FinderOptions> {
   "use cache";
 
   cacheLife("hours");
@@ -389,14 +420,18 @@ export async function getFinderOptions() {
     courses: snapshot.courses,
     mediums: [...new Set(snapshot.programOfferings.map((item) => item.medium))],
     intakes: [
-      ...new Set(snapshot.programOfferings.flatMap((item) => item.intakeMonths)),
+      ...new Set(
+        snapshot.programOfferings.flatMap((item) => item.intakeMonths),
+      ),
     ].sort(),
   };
 }
 
 export async function getFeaturedPrograms(limit = 4) {
   const featuredPrograms = await listFinderPrograms({});
-  return featuredPrograms.filter((program) => program.offering.featured).slice(0, limit);
+  return featuredPrograms
+    .filter((program) => program.offering.featured)
+    .slice(0, limit);
 }
 
 export async function getProgramsForCountry(countrySlug: string) {
@@ -409,26 +444,30 @@ export async function getProgramsForCourse(courseSlug: string) {
 
 export async function getProgramsForUniversity(universitySlug: string) {
   const programs = await getFinderProgramsBase();
-  return programs.filter((program) => program.university.slug === universitySlug);
+  return programs.filter(
+    (program) => program.university.slug === universitySlug,
+  );
 }
 
 export async function getRelatedLandingPages(
   countrySlug: string,
-  courseSlugs: string | string[]
+  courseSlugs: string | string[],
 ) {
   const courseSlugSet = new Set(
-    Array.isArray(courseSlugs) ? courseSlugs : [courseSlugs]
+    Array.isArray(courseSlugs) ? courseSlugs : [courseSlugs],
   );
 
   return landingPages.filter(
     (page) =>
-      page.countrySlug === countrySlug || courseSlugSet.has(page.courseSlug)
+      page.countrySlug === countrySlug || courseSlugSet.has(page.courseSlug),
   );
 }
 
 export async function getFeaturedUniversities(limit = 4) {
   const universities = await getUniversities();
-  return universities.filter((university) => university.featured).slice(0, limit);
+  return universities
+    .filter((university) => university.featured)
+    .slice(0, limit);
 }
 
 export async function getHomeStats() {
@@ -441,7 +480,7 @@ export async function getHomeStats() {
   const cheapestAnnualTuitionUsd = Math.min(
     ...programs
       .map((program) => program.annualTuitionUsd)
-      .filter((fee) => hasPublishedUsdAmount(fee))
+      .filter((fee) => hasPublishedUsdAmount(fee)),
   );
 
   return {
@@ -455,7 +494,10 @@ export async function getHomeStats() {
 }
 
 export async function getSitemapStaticUrls() {
-  const [countries, courses] = await Promise.all([getCountries(), getCourses()]);
+  const [countries, courses] = await Promise.all([
+    getCountries(),
+    getCourses(),
+  ]);
 
   return [
     "/",
@@ -500,7 +542,7 @@ export async function getLandingPageContext(page: LandingPage) {
   ]);
 
   const featuredPrograms = finderPrograms.filter((program) =>
-    page.featuredUniversitySlugs.includes(program.university.slug)
+    page.featuredUniversitySlugs.includes(program.university.slug),
   );
 
   return {

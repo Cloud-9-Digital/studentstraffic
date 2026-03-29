@@ -183,6 +183,23 @@ export type FinderProgram = {
   offering: ProgramOffering;
 };
 
+export type FinderOptions = {
+  countries: Country[];
+  courses: Course[];
+  mediums: ProgramOffering["medium"][];
+  intakes: string[];
+};
+
+export type FinderProgramsPage = {
+  programs: FinderProgram[];
+  totalItems: number;
+  totalPages: number;
+  currentPage: number;
+  pageSize: number;
+  hasPreviousPage: boolean;
+  hasNextPage: boolean;
+};
+
 export type SearchDocumentType =
   | "country"
   | "course"

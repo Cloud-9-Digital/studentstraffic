@@ -13,6 +13,8 @@ export const maxSitemapUrls = 50_000;
 
 export const defaultSiteUrl = "http://localhost:3000";
 
+export const finderPageSize = 12;
+
 export const marketingNav = [
   { href: "/", label: "Home" },
   { href: "/universities", label: "University Finder" },
@@ -25,7 +27,8 @@ export const guideNav = [
   {
     href: "/guides",
     label: "All Guides",
-    description: "Country, course, comparison, and budget research in one place",
+    description:
+      "Country, course, comparison, and budget research in one place",
   },
   {
     href: "/countries",
@@ -121,12 +124,44 @@ export const footerPopularRoutes = [
 ] as const;
 
 export const homeCourseCategories = [
-  { name: "MBBS", description: "Bachelor of Medicine & Surgery", href: "/courses/mbbs" },
-  { name: "BDS", description: "Bachelor of Dental Surgery", href: "/courses/bds" },
-  { name: "MD / MS", description: "Postgraduate Medical Programs", href: "/courses/medical-pg" },
-  { name: "Nursing", description: "BSc & MSc Nursing", href: "/courses/nursing" },
-  { name: "B.Tech / Engineering", description: "Undergraduate Engineering", href: "/universities" },
-  { name: "MBA", description: "Master of Business Administration", href: "/universities" },
-  { name: "Architecture", description: "B.Arch & M.Arch Programs", href: "/universities" },
-  { name: "Pharmacy", description: "B.Pharm & M.Pharm Abroad", href: "/universities" },
+  {
+    name: "MBBS",
+    description: "Bachelor of Medicine & Surgery",
+    href: "/courses/mbbs",
+  },
+  {
+    name: "BDS",
+    description: "Bachelor of Dental Surgery",
+    href: "/courses/bds",
+  },
+  {
+    name: "MD / MS",
+    description: "Postgraduate Medical Programs",
+    href: "/courses/medical-pg",
+  },
+  {
+    name: "Nursing",
+    description: "BSc & MSc Nursing",
+    href: "/courses/nursing",
+  },
+  {
+    name: "B.Tech / Engineering",
+    description: "Undergraduate Engineering",
+    href: "/universities",
+  },
+  {
+    name: "MBA",
+    description: "Master of Business Administration",
+    href: "/universities",
+  },
+  {
+    name: "Architecture",
+    description: "B.Arch & M.Arch Programs",
+    href: "/universities",
+  },
+  {
+    name: "Pharmacy",
+    description: "B.Pharm & M.Pharm Abroad",
+    href: "/universities",
+  },
 ] as const;
