@@ -45,13 +45,14 @@ export async function generateMetadata({
   }
 
   return buildIndexableMetadata({
-    title: `${guide.course.shortName} universities under ${formatCurrencyUsd(guide.budgetUsd)} | Budget shortlist`,
-    description: `Explore ${guide.course.shortName} university options with annual tuition under ${formatCurrencyUsd(guide.budgetUsd)} and compare them by country, city, and fit.`,
+    title: `${guide.course.shortName} Universities Under ${formatCurrencyUsd(guide.budgetUsd)}/Year | Affordable Shortlist`,
+    description: `Compare ${guide.course.shortName} universities with annual tuition under ${formatCurrencyUsd(guide.budgetUsd)} — filtered by country, city, NMC recognition, and teaching medium.`,
     path: getBudgetGuideHref(guide.slug),
     keywords: [
-      `${guide.course.shortName} under ${guide.budgetUsd} USD`,
-      `${guide.course.shortName} budget universities`,
-      `${guide.course.shortName} affordable options`,
+      `${guide.course.shortName} under ${formatCurrencyUsd(guide.budgetUsd)} per year`,
+      `affordable ${guide.course.shortName} universities abroad`,
+      `${guide.course.shortName} low cost universities`,
+      `${guide.course.shortName} budget universities for Indian students`,
     ],
   });
 }

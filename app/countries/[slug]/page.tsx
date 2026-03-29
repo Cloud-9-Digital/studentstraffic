@@ -73,8 +73,8 @@ export async function generateMetadata({
     ? `Study ${primaryCourse} in ${country.name} | Universities, Fees, Cities & Teaching`
     : `Study in ${country.name} | Universities, Fees, Cities & Teaching`;
   const description = primaryCourse
-    ? `Explore ${primaryCourse} opportunities in ${country.name} with listed universities, fee range, city spread, teaching language, and intake context for Indian students.`
-    : `Explore ${country.name} as a study destination with listed universities, fee range, city spread, teaching language, and intake context for Indian students.`;
+    ? `Compare ${primaryCourse} universities in ${country.name} by fees, city, teaching medium, and NMC recognition. Intake details and student support context for Indian students.`
+    : `Compare universities in ${country.name} by fees, city, and teaching medium. Intake details and student support context for Indian students.`;
 
   return buildIndexableMetadata({
     title,
@@ -83,9 +83,9 @@ export async function generateMetadata({
     keywords: [
       `study in ${country.name}`,
       primaryCourse ? `${primaryCourse} in ${country.name}` : undefined,
+      primaryCourse ? `${primaryCourse} ${country.name} fees` : undefined,
       `${country.name} universities`,
-      `${country.name} student support`,
-      country.region,
+      `${country.name} medical university`,
     ].filter(Boolean) as string[],
   });
 }

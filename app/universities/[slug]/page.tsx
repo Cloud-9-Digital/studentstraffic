@@ -24,6 +24,8 @@ import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
 import { ComparisonCard } from "@/components/site/comparison-card";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
+import { UniversityPeerSection } from "@/components/site/university-peer-section";
+import { UniversityReviewsSection } from "@/components/site/university-reviews-section";
 import { UniversityCard } from "@/components/site/university-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -266,6 +268,14 @@ export default async function UniversityDetailPage({
                   triggerVariant="accent"
                   triggerSize="default"
                 />
+                <Button
+                  asChild
+                  variant="ghost"
+                  size="default"
+                  className="border border-white/20 bg-white/8 !text-white hover:bg-white/15 hover:!text-white"
+                >
+                  <Link href="#talk-to-peers">Talk to peers</Link>
+                </Button>
                 <Button asChild variant="ghost" size="default" className="border border-white/20 bg-white/8 !text-white hover:bg-white/15 hover:!text-white">
                   <Link href={university.officialWebsite} target="_blank" rel="noreferrer">
                     Official website
@@ -538,6 +548,15 @@ export default async function UniversityDetailPage({
                 </div>
               </div>
 
+              <div className="deferred-render">
+                <Suspense fallback={null}>
+                  <UniversityPeerSection
+                    universitySlug={university.slug}
+                    universityName={university.name}
+                  />
+                </Suspense>
+              </div>
+
               {/* Shortlist fit */}
               <div className="deferred-render space-y-6 py-10">
                 <SectionLabel>Shortlist fit</SectionLabel>
@@ -590,6 +609,15 @@ export default async function UniversityDetailPage({
                   </div>
                 </div>
               )}
+
+              <div className="deferred-render">
+                <Suspense fallback={null}>
+                  <UniversityReviewsSection
+                    universitySlug={university.slug}
+                    universityName={university.name}
+                  />
+                </Suspense>
+              </div>
 
               {/* FAQ */}
               {university.faq.length > 0 && (

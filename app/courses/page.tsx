@@ -13,9 +13,9 @@ import {
 import { getCourseHref } from "@/lib/routes";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Course Guides",
+  title: "MBBS & Medical Course Guides for Indian Students Abroad",
   description:
-    "Browse course guides for Indian students researching MBBS and other medical programmes abroad before comparing universities.",
+    "Understand MBBS, BDS, nursing, and postgraduate medical routes abroad — duration, eligibility, fees, and top countries for Indian students.",
   path: "/courses",
 });
 

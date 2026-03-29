@@ -15,6 +15,7 @@ export async function GET() {
     "",
     "## Preferred URLs",
     `- Home: ${absoluteUrl("/")}`,
+    `- Full content index (all universities, fees, programs): ${absoluteUrl("/llms-full.txt")}`,
     `- University catalog: ${absoluteUrl("/universities")}`,
     `- Countries: ${absoluteUrl("/countries")}`,
     `- Courses: ${absoluteUrl("/courses")}`,

@@ -16,9 +16,9 @@ import { getCountryHref } from "@/lib/routes";
 import { navDestinations } from "@/lib/constants";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Study Abroad Country Guides for Indian Students — MBBS Fees & Recognition",
+  title: "MBBS Country Guides for Indian Students | Fees & NMC Recognition",
   description:
-    "In-depth country guides for Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, Uzbekistan, and more — covering MBBS fees, NMC recognition, hostel costs, FMGE outcomes, and eligibility for Indian students.",
+    "Country guides for Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more — covering MBBS fees, NMC recognition, hostel costs, and eligibility for Indian students.",
   path: "/countries",
 });
 

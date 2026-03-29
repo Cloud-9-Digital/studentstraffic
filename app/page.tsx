@@ -26,9 +26,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Abroad & Study Abroad Universities for Indian Students",
+  title: "MBBS Abroad | Compare 500+ Universities for Indian Students",
   description:
-    "Compare 500+ universities across Russia, Georgia, Kazakhstan, Vietnam, Kyrgyzstan, and more. Explore fees, eligibility, NMC recognition, and get free admissions counselling.",
+    "Compare 500+ MBBS universities across Russia, Georgia, Kazakhstan, Vietnam, and Kyrgyzstan — fees, NMC recognition, eligibility, and free admissions counselling.",
   path: "/",
   keywords: [
     "MBBS abroad for Indian students",

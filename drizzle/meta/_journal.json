@@ -64,6 +64,13 @@
       "when": 1774783506000,
       "tag": "0008_finder_search_indexes",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1774792232494,
+      "tag": "0009_light_toro",
+      "breakpoints": true
     }
   ]
 }

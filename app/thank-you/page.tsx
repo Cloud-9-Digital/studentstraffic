@@ -192,19 +192,19 @@ export default async function ThankYouPage({
 
 const steps = [
   {
-    title: "We review your details",
+    title: "Keep an eye on your phone",
     description:
-      "Your enquiry is matched against available programmes, intakes, and entry requirements so you receive accurate, relevant information.",
+      "If we need to follow up on your request, we'll use the contact details you just shared.",
   },
   {
-    title: "A counsellor reaches out",
+    title: "Save your shortlist",
     description:
-      "An expert adviser — usually within one business day — will contact you to discuss your goals and shortlist the best-fit options.",
+      "It helps to keep your preferred universities, course goals, and questions ready for the next conversation.",
   },
   {
-    title: "Your journey begins",
+    title: "Keep exploring",
     description:
-      "Once you're ready, we guide you through applications, documents, visa processing, and arrival — every step of the way.",
+      "You can keep comparing universities, countries, and guides while you wait for the next update.",
   },
 ] as const;
 

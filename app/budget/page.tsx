@@ -15,9 +15,9 @@ import { getBudgetGuideHref } from "@/lib/routes";
 import { formatCurrencyUsd } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Budget Guides",
+  title: "MBBS Abroad Budget Guides — Compare Universities by Tuition Band",
   description:
-    "Browse affordability-first guides that help students research study-abroad options by tuition band before shortlisting universities.",
+    "Research MBBS universities by annual tuition range before shortlisting. Explore affordable options across countries for Indian students.",
   path: "/budget",
 });
 

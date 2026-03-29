@@ -12,8 +12,14 @@ import {
 import type {
   Faq,
   LinkItem,
+  PeerPreferredContactMode,
+  PeerRequestStatus,
   SearchDocument,
+  StudentPeerStatus,
   TeachingPhase,
+  UniversityReviewType,
+  UniversityReviewVerificationStatus,
+  UniversityReviewVisibilityStatus,
   UniversityGalleryImage,
   YearlyCostBreakdown,
 } from "@/lib/data/types";
@@ -206,6 +212,115 @@ export const leads = pgTable(
   (table) => [index("leads_source_path_idx").on(table.sourcePath)]
 );
 
+export const studentPeers = pgTable(
+  "student_peers",
+  {
+    id: serial("id").primaryKey(),
+    universityId: integer("university_id")
+      .notNull()
+      .references(() => universities.id, { onDelete: "cascade" }),
+    fullName: text("full_name").notNull(),
+    courseName: text("course_name"),
+    currentYearOrBatch: text("current_year_or_batch"),
+    contactPhone: text("contact_phone"),
+    contactEmail: text("contact_email"),
+    status: text("status").$type<StudentPeerStatus>().notNull().default("active"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("student_peers_university_idx").on(table.universityId),
+    index("student_peers_status_idx").on(table.status),
+  ]
+);
+
+export const peerRequests = pgTable(
+  "peer_requests",
+  {
+    id: serial("id").primaryKey(),
+    universityId: integer("university_id")
+      .notNull()
+      .references(() => universities.id, { onDelete: "cascade" }),
+    leadId: integer("lead_id").references(() => leads.id, {
+      onDelete: "set null",
+    }),
+    matchedPeerId: integer("matched_peer_id").references(() => studentPeers.id, {
+      onDelete: "set null",
+    }),
+    fullName: text("full_name").notNull(),
+    phone: text("phone").notNull(),
+    email: text("email"),
+    userState: text("user_state").notNull(),
+    courseInterest: text("course_interest"),
+    preferredContactMode: text("preferred_contact_mode")
+      .$type<PeerPreferredContactMode>(),
+    message: text("message"),
+    sourcePath: text("source_path").notNull(),
+    sourceUrl: text("source_url"),
+    sourceQuery: jsonb("source_query")
+      .$type<LeadSourceQuery>()
+      .notNull()
+      .default({}),
+    pageTitle: text("page_title"),
+    documentReferrer: text("document_referrer"),
+    userAgent: text("user_agent"),
+    ipAddress: text("ip_address"),
+    acceptLanguage: text("accept_language"),
+    clientContext: jsonb("client_context")
+      .$type<LeadClientContext>()
+      .notNull()
+      .default({}),
+    status: text("status").$type<PeerRequestStatus>().notNull().default("new"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("peer_requests_university_idx").on(table.universityId),
+    index("peer_requests_lead_idx").on(table.leadId),
+    index("peer_requests_status_idx").on(table.status),
+    index("peer_requests_phone_idx").on(table.phone),
+    index("peer_requests_created_at_idx").on(table.createdAt),
+  ]
+);
+
+export const universityReviews = pgTable(
+  "university_reviews",
+  {
+    id: serial("id").primaryKey(),
+    universityId: integer("university_id")
+      .notNull()
+      .references(() => universities.id, { onDelete: "cascade" }),
+    reviewType: text("review_type").$type<UniversityReviewType>().notNull(),
+    reviewerName: text("reviewer_name").notNull(),
+    reviewerEmail: text("reviewer_email"),
+    reviewerContext: text("reviewer_context"),
+    reviewBody: text("review_body"),
+    youtubeUrl: text("youtube_url"),
+    youtubeVideoId: text("youtube_video_id"),
+    sourcePath: text("source_path").notNull(),
+    userAgent: text("user_agent"),
+    ipAddress: text("ip_address"),
+    visibilityStatus: text("visibility_status")
+      .$type<UniversityReviewVisibilityStatus>()
+      .notNull()
+      .default("live"),
+    verificationStatus: text("verification_status")
+      .$type<UniversityReviewVerificationStatus>()
+      .notNull()
+      .default("unverified"),
+    isFeatured: boolean("is_featured").notNull().default(false),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("university_reviews_university_idx").on(table.universityId),
+    index("university_reviews_type_idx").on(table.reviewType),
+    index("university_reviews_visibility_idx").on(table.visibilityStatus),
+    index("university_reviews_featured_idx").on(table.isFeatured),
+    index("university_reviews_created_at_idx").on(table.createdAt),
+  ]
+);
+
 export const searchDocuments = pgTable(
   "search_documents",
   {
@@ -249,4 +364,9 @@ export type UniversityRow = typeof universities.$inferSelect;
 export type ProgramOfferingRow = typeof programOfferings.$inferSelect;
 export type LeadInsert = typeof leads.$inferInsert;
 export type LeadRow = typeof leads.$inferSelect;
+export type StudentPeerRow = typeof studentPeers.$inferSelect;
+export type PeerRequestInsert = typeof peerRequests.$inferInsert;
+export type PeerRequestRow = typeof peerRequests.$inferSelect;
+export type UniversityReviewInsert = typeof universityReviews.$inferInsert;
+export type UniversityReviewRow = typeof universityReviews.$inferSelect;
 export type SearchDocumentRow = typeof searchDocuments.$inferSelect;

@@ -17,7 +17,7 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Editorial Policy",
+  title: "Editorial Policy | Students Traffic",
   description:
     "The editorial standards Students Traffic uses for university, destination, fee, and admissions content.",
   path: "/editorial-policy",

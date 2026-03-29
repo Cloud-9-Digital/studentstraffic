@@ -4,6 +4,16 @@ import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
+import {
+  ClientContext,
+  emptyToUndefined,
+  getFirstQueryValue,
+  getFormString,
+  getIpAddress,
+  parseJsonObject,
+  QueryParamMap,
+  wasSubmittedTooFast,
+} from "@/app/_actions/form-helpers";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
@@ -12,68 +22,6 @@ import { syncLeadDestinations } from "@/lib/lead-sync";
 export type LeadFormState = {
   error?: string;
 };
-
-type QueryParamValue = string | string[];
-type QueryParamMap = Record<string, QueryParamValue>;
-type ClientContext = Record<
-  string,
-  string | number | boolean | null | string[]
->;
-
-function emptyToUndefined(value?: string | null) {
-  const trimmed = value?.trim();
-  return trimmed ? trimmed : undefined;
-}
-
-function getFormString(formData: FormData, key: string) {
-  const value = formData.get(key);
-  return typeof value === "string" ? value : undefined;
-}
-
-function parseJsonObject<T extends Record<string, unknown>>(
-  value?: string | null
-): T {
-  if (!value) {
-    return {} as T;
-  }
-
-  try {
-    const parsed = JSON.parse(value);
-
-    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
-      return parsed as T;
-    }
-  } catch {}
-
-  return {} as T;
-}
-
-function getFirstQueryValue(
-  query: QueryParamMap,
-  key: string
-): string | undefined {
-  const value = query[key];
-
-  if (Array.isArray(value)) {
-    return value[0];
-  }
-
-  return typeof value === "string" && value ? value : undefined;
-}
-
-function getIpAddress(headerStore: Awaited<ReturnType<typeof headers>>) {
-  const forwardedFor = headerStore.get("x-forwarded-for");
-
-  if (forwardedFor) {
-    return forwardedFor.split(",")[0]?.trim() || null;
-  }
-
-  return (
-    headerStore.get("x-real-ip") ??
-    headerStore.get("cf-connecting-ip") ??
-    null
-  );
-}
 
 const leadSchema = z.object({
   fullName: z.string().trim().min(2, "Please enter your full name."),
@@ -142,7 +90,7 @@ export async function submitLeadAction(
     };
   }
 
-  if (Date.now() - Number(data.startedAt) < 1200) {
+  if (wasSubmittedTooFast(data.startedAt)) {
     return {
       error: "Please take a moment and submit again.",
     };

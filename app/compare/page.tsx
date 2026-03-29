@@ -14,9 +14,9 @@ import {
 import { getComparisonHref } from "@/lib/routes";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Comparison Guides",
+  title: "MBBS University Comparison Guides for Indian Students",
   description:
-    "Browse comparison guides that help students evaluate universities side by side during shortlist decisions.",
+    "Side-by-side comparison guides for MBBS universities abroad — fees, city, recognition, teaching medium, and shortlist fit for Indian students.",
   path: "/compare",
 });
 

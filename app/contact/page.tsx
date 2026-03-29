@@ -18,9 +18,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Contact",
+  title: "Contact Students Traffic | Free MBBS Abroad Counselling",
   description:
-    "Contact Students Traffic for university shortlisting, study-abroad guidance, and admissions support.",
+    "Get free university shortlisting, MBBS abroad guidance, and admissions support from Students Traffic. We respond within 24 hours.",
   path: "/contact",
 });
 

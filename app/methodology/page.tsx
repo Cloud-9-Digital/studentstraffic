@@ -17,7 +17,7 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Methodology",
+  title: "Research Methodology | Students Traffic",
   description:
     "How Students Traffic structures, reviews, and presents study-abroad university data and destination pages.",
   path: "/methodology",

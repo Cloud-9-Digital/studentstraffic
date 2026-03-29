@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, FileCheck, Globe, MessageCircle, Search, ShieldCheck, Users } from "lucide-react";
+import { ArrowRight, FileCheck, Globe, MessageCircle, Search, Users } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
@@ -13,9 +13,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "About Students Traffic — MBBS Abroad Guidance for Indian Students",
+  title: "About Students Traffic | India's MBBS Abroad Research Platform",
   description:
-    "Students Traffic is India's most detailed resource for studying abroad — 500+ universities, in-depth country guides, honest fee comparisons, and free end-to-end admissions support.",
+    "Students Traffic is India's most detailed MBBS abroad resource — 500+ universities, country guides, honest fee comparisons, and free admissions support.",
   path: "/about",
 });
 
@@ -205,7 +205,7 @@ export default function AboutPage() {
               opposite — publish detailed, honest information on every major
               university abroad, let you read reviews and watch video
               testimonials from real students, connect you with peers already
-              enrolled so you can ask the questions agents won't answer, and
+              enrolled so you can ask the questions agents won&apos;t answer, and
               only then offer free admissions support when you are ready to
               move forward.
             </p>

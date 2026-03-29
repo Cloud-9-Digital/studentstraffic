@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, CalendarDays, Check, PencilLine } from "lucide-react";
@@ -28,7 +27,6 @@ import {
   getWebPageStructuredData,
 } from "@/lib/structured-data";
 import { getComparisonHref, getUniversityHref } from "@/lib/routes";
-import { getUniversityInitials } from "@/lib/university-media";
 import type { FinderProgram } from "@/lib/data/types";
 // formatCurrencyUsd moved to ComparisonTable component
 
@@ -48,12 +46,13 @@ export async function generateMetadata({
   if (!guide) return { title: "Comparison Not Found" };
 
   return buildIndexableMetadata({
-    title: `${guide.left.university.name} vs ${guide.right.university.name} | Fees, fit & shortlist guide`,
-    description: `Compare ${guide.left.university.name} and ${guide.right.university.name} on annual tuition, city, duration, recognition, and shortlist fit.`,
+    title: `${guide.left.university.name} vs ${guide.right.university.name} | Fees, Fit & Shortlist Guide`,
+    description: `Compare ${guide.left.university.name} and ${guide.right.university.name} on MBBS fees, city, duration, NMC recognition, and shortlist fit for Indian students.`,
     path: getComparisonHref(guide.slug),
     keywords: [
       `${guide.left.university.name} vs ${guide.right.university.name}`,
-      `${guide.left.course.shortName} comparison`,
+      `${guide.left.course.shortName} in ${guide.left.country.name}`,
+      `${guide.left.course.shortName} in ${guide.right.country.name}`,
       `${guide.left.university.name} fees`,
       `${guide.right.university.name} fees`,
     ],
@@ -305,25 +304,6 @@ export default async function ComparisonGuidePage({
       </section>
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
     </>
-  );
-}
-
-function UniLogoSmall({ university }: { university: FinderProgram["university"] }) {
-  const initials = getUniversityInitials(university.name);
-  return (
-    <div className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-white shadow-sm">
-      {university.logoUrl ? (
-        <Image
-          src={university.logoUrl}
-          alt={`${university.name} logo`}
-          width={36}
-          height={36}
-          className="h-full w-full object-contain p-0.5"
-        />
-      ) : (
-        <span className="text-[0.6rem] font-bold text-primary">{initials}</span>
-      )}
-    </div>
   );
 }
 

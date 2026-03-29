@@ -19,9 +19,9 @@ import {
 } from "@/lib/routes";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Study Abroad Guides",
+  title: "MBBS Abroad Guides | Countries, Courses, Comparisons & Budgets",
   description:
-    "Browse country guides, course guides, comparison pages, budget planning guides, and editorial routes that support your university shortlist.",
+    "Browse country guides, course guides, university comparisons, and budget planning guides to support your MBBS abroad shortlist.",
   path: "/guides",
 });
 

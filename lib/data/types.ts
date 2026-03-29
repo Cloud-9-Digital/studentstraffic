@@ -84,6 +84,46 @@ export type University = {
   updatedAt?: string;
 };
 
+export type StudentPeerStatus = "active" | "inactive";
+
+export type PeerPreferredContactMode = "Call" | "WhatsApp" | "Either";
+
+export type PeerRequestStatus = "new" | "contacted" | "matched" | "closed";
+
+export type StudentPeer = {
+  id: number;
+  universitySlug: string;
+  fullName: string;
+  courseName?: string;
+  currentYearOrBatch?: string;
+  contactPhone?: string;
+  contactEmail?: string;
+  status: StudentPeerStatus;
+  updatedAt?: string;
+};
+
+export type PeerRequest = {
+  id: number;
+  universitySlug: string;
+  fullName: string;
+  phone: string;
+  email?: string;
+  userState: string;
+  courseInterest?: string;
+  preferredContactMode?: PeerPreferredContactMode;
+  message?: string;
+  status: PeerRequestStatus;
+  leadId?: number;
+  matchedPeerId?: number;
+  createdAt?: string;
+};
+
+export type UniversityPeerAvailability = {
+  universitySlug: string;
+  activePeerCount: number;
+  hasPeers: boolean;
+};
+
 export type ProgramOffering = {
   slug: string;
   universitySlug: string;
@@ -100,6 +140,29 @@ export type ProgramOffering = {
   licenseExamSupport: string[];
   intakeMonths: string[];
   featured: boolean;
+  updatedAt?: string;
+};
+
+export type UniversityReviewType = "text" | "youtube_video";
+
+export type UniversityReviewVisibilityStatus = "live" | "hidden" | "archived";
+
+export type UniversityReviewVerificationStatus = "unverified" | "verified";
+
+export type UniversityReview = {
+  id: number;
+  universitySlug: string;
+  reviewType: UniversityReviewType;
+  reviewerName: string;
+  reviewerEmail?: string;
+  reviewerContext?: string;
+  reviewBody?: string;
+  youtubeUrl?: string;
+  youtubeVideoId?: string;
+  visibilityStatus: UniversityReviewVisibilityStatus;
+  verificationStatus: UniversityReviewVerificationStatus;
+  isFeatured: boolean;
+  createdAt: string;
   updatedAt?: string;
 };
 
