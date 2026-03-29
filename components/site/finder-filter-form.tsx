@@ -113,7 +113,7 @@ function DebouncedSearchInput({
     <div className={cn("relative", wrapperClassName)}>
       <Search className={iconClassName} />
       <input
-        type="search"
+        type="text"
         value={value}
         onChange={(event) => setValue(event.target.value)}
         placeholder={placeholder}

@@ -17,8 +17,8 @@ import {
 import { getFinderSort } from "@/lib/filters";
 import { buildFinderUrl } from "@/lib/filters";
 import type {
+  FinderCardProgramsPage,
   FinderFilters,
-  FinderProgramsPage,
   FinderSort,
 } from "@/lib/data/types";
 
@@ -29,9 +29,29 @@ const finderSortOptions: { value: FinderSort; label: string }[] = [
   { value: "name_asc", label: "University: A to Z" },
 ];
 
+function UniversitiesResultsLoadingState() {
+  return (
+    <div className="space-y-6">
+      <div className="space-y-2">
+        <div className="h-5 w-44 rounded-full bg-muted animate-pulse" />
+        <div className="h-4 w-36 rounded-full bg-muted/70 animate-pulse" />
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+        {Array.from({ length: 6 }).map((_, index) => (
+          <div
+            key={index}
+            className="h-64 rounded-2xl bg-muted animate-pulse"
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 type UniversitiesResultsPanelProps = {
   filters: FinderFilters;
-  results: FinderProgramsPage;
+  results: FinderCardProgramsPage;
   isLoading: boolean;
   errorMessage?: string;
   currentSort?: FinderSort;
@@ -98,8 +118,8 @@ export function UniversitiesResultsPanel({
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-wrap items-end gap-3">
-        <div className="min-w-0 flex-1">
+      <div className="flex items-start gap-3">
+        <div className="min-w-0 flex-1 space-y-0.5 pr-1">
           <p className="text-sm font-semibold text-heading">
             {results.totalItems.toLocaleString()} universities matched
           </p>
@@ -108,28 +128,23 @@ export function UniversitiesResultsPanel({
             {results.totalItems.toLocaleString()}
           </p>
         </div>
-        <div className="ml-auto flex flex-wrap items-end justify-end gap-2">
-          {isLoading && (
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
-              <span className="size-2 rounded-full bg-accent animate-pulse" />
-              Updating results…
-            </span>
-          )}
-          <div className="flex flex-col items-start gap-1">
+        <div className="flex shrink-0 items-start gap-2">
+          <div className="flex shrink-0 flex-col items-start gap-0.5 sm:items-end">
             <label
               htmlFor="finder-sort"
-              className="text-xs font-medium text-muted-foreground"
+              className="text-[11px] font-medium text-muted-foreground"
             >
               Sort by
             </label>
-            <div className="relative">
+            <div className="relative w-full sm:w-auto">
               <select
                 id="finder-sort"
                 value={selectedSort}
                 onChange={(event) =>
                   onSortChange(event.target.value as FinderSort)
                 }
-                className="h-9 min-w-[154px] appearance-none rounded-lg border border-border bg-card px-3 py-2 pr-8 text-sm text-foreground shadow-xs outline-none transition-colors focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+                disabled={isLoading}
+                className="h-8 min-w-[172px] appearance-none rounded-xl border border-border/80 bg-card px-2.5 py-1.5 pr-7 text-[13px] font-medium text-foreground shadow-none outline-none transition-colors focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 sm:px-3 sm:pr-8 sm:text-sm"
               >
                 {finderSortOptions.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -137,7 +152,7 @@ export function UniversitiesResultsPanel({
                   </option>
                 ))}
               </select>
-              <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              <ChevronDown className="pointer-events-none absolute right-2 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground sm:right-2.5 sm:size-4" />
             </div>
           </div>
         </div>
@@ -161,22 +176,19 @@ export function UniversitiesResultsPanel({
         </Card>
       )}
 
-      {results.programs.length ? (
+      {isLoading ? (
+        <UniversitiesResultsLoadingState />
+      ) : results.programs.length ? (
         <>
           <h2 className="sr-only">University results</h2>
-          <div className="relative" aria-busy={isLoading}>
-            <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
-              {results.programs.map((program, index) => (
-                <UniversityCard
-                  key={program.offering.slug}
-                  program={program}
-                  imagePriority={index < 2}
-                />
-              ))}
-            </div>
-            {isLoading && (
-              <div className="pointer-events-none absolute inset-0 rounded-3xl bg-background/45 backdrop-blur-[1px]" />
-            )}
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+            {results.programs.map((program, index) => (
+              <UniversityCard
+                key={program.offering.slug}
+                program={program}
+                imagePriority={index < 2}
+              />
+            ))}
           </div>
         </>
       ) : (
@@ -199,7 +211,7 @@ export function UniversitiesResultsPanel({
         </Card>
       )}
 
-      {results.totalPages > 1 && (
+      {!isLoading && results.totalPages > 1 && (
         <Pagination>
           <PaginationContent>
             <PaginationItem>

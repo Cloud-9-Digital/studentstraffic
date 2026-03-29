@@ -14,9 +14,9 @@ import {
 } from "@/components/site/finder-filter-form";
 import { UniversitiesResultsPanel } from "@/components/site/universities-results-panel";
 import type {
+  FinderCardProgramsPage,
   FinderFilters,
   FinderOptions,
-  FinderProgramsPage,
   FinderSort,
 } from "@/lib/data/types";
 import {
@@ -30,7 +30,7 @@ import {
 type UniversitiesExplorerProps = {
   options: FinderOptions;
   initialFilters: FinderFilters;
-  initialResults: FinderProgramsPage;
+  initialResults: FinderCardProgramsPage;
 };
 
 type LoadOptions = {
@@ -54,7 +54,7 @@ export function UniversitiesExplorer({
 }: UniversitiesExplorerProps) {
   const normalizedInitialFilters = normalizeFinderFilters(initialFilters);
   const [filters, setFilters] = useState(normalizedInitialFilters);
-  const [results, setResults] = useState(initialResults);
+  const [results, setResults] = useState<FinderCardProgramsPage>(initialResults);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | undefined>();
   const abortRef = useRef<AbortController | null>(null);
@@ -138,7 +138,7 @@ export function UniversitiesExplorer({
           throw new Error("The universities catalogue could not be refreshed.");
         }
 
-        const nextResults = (await response.json()) as FinderProgramsPage;
+        const nextResults = (await response.json()) as FinderCardProgramsPage;
 
         cacheRef.current.set(requestKey, nextResults);
         startTransition(() => {

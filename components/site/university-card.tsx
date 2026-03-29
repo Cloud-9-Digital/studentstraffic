@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Building2 } from "lucide-react";
 
 import { AddToCompareButton } from "@/components/site/add-to-compare-button";
-import type { FinderProgram } from "@/lib/data/types";
+import type { FinderCardProgram } from "@/lib/data/types";
 import { getUniversityHref } from "@/lib/routes";
 import { getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
 import {
@@ -16,7 +16,7 @@ export function UniversityCard({
   program,
   imagePriority = false,
 }: {
-  program: FinderProgram;
+  program: FinderCardProgram;
   imagePriority?: boolean;
 }) {
   const { university, country, course, offering } = program;

@@ -1,11 +1,14 @@
 import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
+import { and, asc, desc, eq, gte, ilike, lte, or, sql } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
 import type {
   Country,
   Course,
+  FinderCardProgram,
+  FinderCardProgramsPage,
   FinderOptions,
   FinderFilters,
   FinderProgram,
@@ -14,6 +17,7 @@ import type {
   LandingPage,
   ProgramOffering,
   University,
+  UniversityGalleryImage,
 } from "@/lib/data/types";
 import { getDb } from "@/lib/db/server";
 import {
@@ -474,6 +478,172 @@ export async function getFinderProgramsPage(
     pageSize,
     hasPreviousPage: currentPage > 1,
     hasNextPage: currentPage < totalPages,
+  };
+}
+
+const EMPTY_CARD_PAGE: FinderCardProgramsPage = {
+  programs: [],
+  totalItems: 0,
+  totalPages: 1,
+  currentPage: 1,
+  pageSize: finderPageSize,
+  hasPreviousPage: false,
+  hasNextPage: false,
+};
+
+/**
+ * DB-level finder query — filters, sorts, and paginates in Postgres.
+ * Returns only the slim FinderCardProgram fields needed for the card list.
+ * Replaces the in-memory getFinderProgramsPage for the /universities explorer.
+ */
+export async function queryFinderCardProgramsPage(
+  filters: FinderFilters,
+  page = 1,
+  pageSize = finderPageSize,
+): Promise<FinderCardProgramsPage> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+
+  const db = getDb();
+  if (!db) return { ...EMPTY_CARD_PAGE, pageSize };
+
+  // Build WHERE conditions
+  const conditions = [];
+
+  if (filters.country) {
+    conditions.push(eq(countriesTable.slug, filters.country));
+  }
+  if (filters.course) {
+    conditions.push(eq(coursesTable.slug, filters.course));
+  }
+  if (filters.medium) {
+    conditions.push(eq(programOfferingsTable.medium, filters.medium));
+  }
+  if (filters.feeMin != null) {
+    conditions.push(gte(programOfferingsTable.annualTuitionUsd, filters.feeMin));
+  }
+  if (filters.feeMax != null) {
+    conditions.push(lte(programOfferingsTable.annualTuitionUsd, filters.feeMax));
+  }
+  if (filters.intake) {
+    // Postgres array contains
+    conditions.push(
+      sql`${programOfferingsTable.intakeMonths} @> ARRAY[${filters.intake}]::text[]`,
+    );
+  }
+  if (filters.q) {
+    const q = `%${filters.q}%`;
+    conditions.push(
+      or(
+        ilike(universitiesTable.name, q),
+        ilike(universitiesTable.city, q),
+        ilike(countriesTable.name, q),
+        ilike(coursesTable.shortName, q),
+      ),
+    );
+  }
+
+  const where = conditions.length > 0 ? and(...conditions) : undefined;
+
+  // Sort order — replicate JS sort logic in SQL
+  const sort = getFinderSort(filters.sort);
+  // Push rows with annualTuitionUsd = 0 (TBD) to end for all sort modes
+  const tbd = sql`CASE WHEN ${programOfferingsTable.annualTuitionUsd} = 0 THEN 1 ELSE 0 END`;
+
+  let orderClauses;
+  switch (sort) {
+    case "tuition_asc":
+      orderClauses = [asc(tbd), asc(programOfferingsTable.annualTuitionUsd), asc(universitiesTable.name)];
+      break;
+    case "tuition_desc":
+      orderClauses = [asc(tbd), desc(programOfferingsTable.annualTuitionUsd), asc(universitiesTable.name)];
+      break;
+    case "name_asc":
+      orderClauses = [asc(universitiesTable.name), asc(coursesTable.shortName)];
+      break;
+    default: // recommended: featured first, then cheapest, then name
+      orderClauses = [
+        desc(programOfferingsTable.featured),
+        asc(tbd),
+        asc(programOfferingsTable.annualTuitionUsd),
+        asc(universitiesTable.name),
+      ];
+  }
+
+  const currentPage = Math.max(page, 1);
+  const offset = (currentPage - 1) * pageSize;
+
+  const [rows, countResult] = await Promise.all([
+    db
+      .select({
+        offeringSlug: programOfferingsTable.slug,
+        annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
+        offeringFeatured: programOfferingsTable.featured,
+        uniSlug: universitiesTable.slug,
+        uniName: universitiesTable.name,
+        uniCity: universitiesTable.city,
+        uniType: universitiesTable.type,
+        uniLogoUrl: universitiesTable.logoUrl,
+        uniCoverImageUrl: universitiesTable.coverImageUrl,
+        uniGalleryImages: universitiesTable.galleryImages,
+        uniFeatured: universitiesTable.featured,
+        countrySlug: countriesTable.slug,
+        countryName: countriesTable.name,
+        courseSlug: coursesTable.slug,
+        courseShortName: coursesTable.shortName,
+      })
+      .from(programOfferingsTable)
+      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+      .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+      .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+      .where(where)
+      .orderBy(...orderClauses)
+      .limit(pageSize)
+      .offset(offset),
+    db
+      .select({ total: sql<string>`count(*)` })
+      .from(programOfferingsTable)
+      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+      .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+      .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+      .where(where),
+  ]);
+
+  const totalItems = Number(countResult[0]?.total ?? 0);
+  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+  const safePage = Math.min(currentPage, totalPages);
+
+  const programs: FinderCardProgram[] = rows.map((row) => ({
+    university: {
+      slug: row.uniSlug,
+      name: row.uniName,
+      city: row.uniCity,
+      type: row.uniType as "Public" | "Private",
+      logoUrl: row.uniLogoUrl ?? undefined,
+      coverImageUrl: row.uniCoverImageUrl ?? undefined,
+      galleryImages: (row.uniGalleryImages ?? []) as UniversityGalleryImage[],
+      featured: row.uniFeatured,
+    },
+    country: { slug: row.countrySlug, name: row.countryName },
+    course: { slug: row.courseSlug, shortName: row.courseShortName },
+    offering: {
+      slug: row.offeringSlug,
+      annualTuitionUsd: row.annualTuitionUsd,
+      featured: row.offeringFeatured,
+    },
+  }));
+
+  return {
+    programs,
+    totalItems,
+    totalPages,
+    currentPage: safePage,
+    pageSize,
+    hasPreviousPage: safePage > 1,
+    hasNextPage: safePage < totalPages,
   };
 }
 

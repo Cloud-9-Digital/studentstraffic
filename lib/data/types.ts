@@ -190,6 +190,33 @@ export type FinderProgram = {
   offering: ProgramOffering;
 };
 
+/** Lean projection used by the finder card list — strips all rich-text fields */
+export type FinderCardProgram = {
+  university: {
+    slug: string;
+    name: string;
+    city: string;
+    type: "Public" | "Private";
+    logoUrl?: string;
+    coverImageUrl?: string;
+    galleryImages: UniversityGalleryImage[];
+    featured: boolean;
+  };
+  country: {
+    slug: string;
+    name: string;
+  };
+  course: {
+    slug: string;
+    shortName: string;
+  };
+  offering: {
+    slug: string;
+    annualTuitionUsd: number;
+    featured: boolean;
+  };
+};
+
 export type FinderOptions = {
   countries: Country[];
   courses: Course[];
@@ -199,6 +226,16 @@ export type FinderOptions = {
 
 export type FinderProgramsPage = {
   programs: FinderProgram[];
+  totalItems: number;
+  totalPages: number;
+  currentPage: number;
+  pageSize: number;
+  hasPreviousPage: boolean;
+  hasNextPage: boolean;
+};
+
+export type FinderCardProgramsPage = {
+  programs: FinderCardProgram[];
   totalItems: number;
   totalPages: number;
   currentPage: number;

@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversitiesExplorer } from "@/components/site/universities-explorer";
 import { finderPageSize } from "@/lib/constants";
-import { getFinderOptions, getFinderProgramsPage } from "@/lib/data/catalog";
+import { getFinderOptions, queryFinderCardProgramsPage } from "@/lib/data/catalog";
 import { buildNoIndexMetadata } from "@/lib/metadata";
 import {
   hasFinderFilters,
@@ -88,7 +88,7 @@ async function UniversitiesExplorerSection({
   const page = parseFinderPage(pageParam);
   const [options, initialResults] = await Promise.all([
     getFinderOptions(),
-    getFinderProgramsPage(filters, page, finderPageSize),
+    queryFinderCardProgramsPage(filters, page, finderPageSize),
   ]);
 
   return (
