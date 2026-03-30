@@ -14,6 +14,7 @@ interface PhoneInputFieldProps {
   name: string;
   required?: boolean;
   defaultCountry?: Country;
+  defaultValue?: string;
   className?: string;
 }
 
@@ -38,9 +39,12 @@ export function PhoneInputField({
   name,
   required,
   defaultCountry = "IN",
+  defaultValue,
   className,
 }: PhoneInputFieldProps) {
-  const [value, setValue] = useState<Value | undefined>(undefined);
+  const [value, setValue] = useState<Value | undefined>(
+    (defaultValue as Value) ?? undefined
+  );
   const [touched, setTouched] = useState(false);
   const isInvalid = touched && value !== undefined && value !== "" && !isValidPhoneNumber(value);
 

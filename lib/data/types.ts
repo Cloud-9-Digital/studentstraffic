@@ -104,6 +104,8 @@ export type University = {
 
 export type StudentPeerStatus = "active" | "inactive";
 
+export type StudentPeerApplicationStatus = "pending" | "approved" | "rejected";
+
 export type PeerPreferredContactMode = "Call" | "WhatsApp" | "Either";
 
 export type PeerRequestStatus = "new" | "contacted" | "matched" | "closed";

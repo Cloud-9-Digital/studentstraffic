@@ -12,6 +12,7 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { HeroSearch } from "@/components/site/hero-search";
+import { PeerUniversitiesSection } from "@/components/site/peer-universities-section";
 import { SectionHeading } from "@/components/site/section-heading";
 import { Button } from "@/components/ui/button";
 import {
@@ -257,6 +258,8 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      <PeerUniversitiesSection />
 
       <section className="border-t border-border py-16 md:py-20">
         <div className="container-shell">

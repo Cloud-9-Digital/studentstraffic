@@ -15,6 +15,7 @@ import type {
   PeerPreferredContactMode,
   PeerRequestStatus,
   SearchDocument,
+  StudentPeerApplicationStatus,
   StudentPeerStatus,
   ResearchSource,
   TeachingPhase,
@@ -345,6 +346,7 @@ export const studentPeers = pgTable(
       .notNull()
       .references(() => universities.id, { onDelete: "cascade" }),
     fullName: text("full_name").notNull(),
+    photoUrl: text("photo_url"),
     courseName: text("course_name"),
     currentYearOrBatch: text("current_year_or_batch"),
     contactPhone: text("contact_phone"),
@@ -447,6 +449,41 @@ export const universityReviews = pgTable(
   ]
 );
 
+export const studentPeerApplications = pgTable(
+  "student_peer_applications",
+  {
+    id: serial("id").primaryKey(),
+    universityId: integer("university_id")
+      .notNull()
+      .references(() => universities.id, { onDelete: "cascade" }),
+    fullName: text("full_name").notNull(),
+    email: text("email").notNull(),
+    phone: text("phone").notNull(),
+    courseName: text("course_name"),
+    currentYearOrBatch: text("current_year_or_batch"),
+    enrollmentStatus: text("enrollment_status").notNull(),
+    photoUrl: text("photo_url"),
+    proofUrl: text("proof_url").notNull(),
+    message: text("message"),
+    status: text("status")
+      .$type<StudentPeerApplicationStatus>()
+      .notNull()
+      .default("pending"),
+    reviewedByAdminId: integer("reviewed_by_admin_id").references(
+      () => adminUsers.id,
+      { onDelete: "set null" }
+    ),
+    reviewNotes: text("review_notes"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("student_peer_applications_university_idx").on(table.universityId),
+    index("student_peer_applications_status_idx").on(table.status),
+    index("student_peer_applications_created_at_idx").on(table.createdAt),
+  ]
+);
+
 export const searchDocuments = pgTable(
   "search_documents",
   {
@@ -499,3 +536,5 @@ export type PeerRequestRow = typeof peerRequests.$inferSelect;
 export type UniversityReviewInsert = typeof universityReviews.$inferInsert;
 export type UniversityReviewRow = typeof universityReviews.$inferSelect;
 export type SearchDocumentRow = typeof searchDocuments.$inferSelect;
+export type StudentPeerApplicationInsert = typeof studentPeerApplications.$inferInsert;
+export type StudentPeerApplicationRow = typeof studentPeerApplications.$inferSelect;

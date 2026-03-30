@@ -49,11 +49,8 @@ function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; show
 
 const navLinks = [
   { href: "/universities", label: "Universities" },
-  { href: "/countries",    label: "Countries" },
-  { href: "/courses",      label: "Courses" },
-  { href: "/guides",       label: "Guides" },
-  { href: "/about",        label: "About" },
-  { href: "/contact",      label: "Contact" },
+  { href: "/students",     label: "Talk to Students" },
+  { href: "/reviews",      label: "Reviews" },
 ] as const;
 
 export function SiteHeader() {

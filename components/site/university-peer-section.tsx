@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import { Users } from "lucide-react";
 
 import { PeerRequestForm } from "@/components/site/peer-request-form";
+import { PeersGrid } from "@/components/site/peers-grid";
 import { getUniversityPeerAvailability } from "@/lib/university-community";
 
 export async function UniversityPeerSection({
@@ -37,6 +39,21 @@ export async function UniversityPeerSection({
             </p>
           </div>
         </div>
+
+        {availability.hasPeers && (
+          <Suspense fallback={null}>
+            <PeersGrid
+              universitySlug={universitySlug}
+              universityName={universityName}
+            />
+          </Suspense>
+        )}
+
+        {availability.hasPeers && (
+          <p className="mb-4 text-center text-xs font-medium text-white/50">
+            — or request any student conversation —
+          </p>
+        )}
 
         <PeerRequestForm
           sourcePath={`/universities/${universitySlug}`}

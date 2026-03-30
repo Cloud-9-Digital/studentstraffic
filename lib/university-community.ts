@@ -1,6 +1,6 @@
 import "server-only";
 
-import { and, desc, eq, sql } from "drizzle-orm";
+import { and, asc, desc, eq, sql } from "drizzle-orm";
 import { cacheLife, cacheTag } from "next/cache";
 
 import type {
@@ -9,6 +9,7 @@ import type {
 } from "@/lib/data/types";
 import { getDb } from "@/lib/db/server";
 import {
+  countries,
   studentPeers,
   universities,
   universityReviews,
@@ -64,6 +65,193 @@ export async function getUniversityPeerAvailability(
     activePeerCount,
     hasPeers: activePeerCount > 0,
   };
+}
+
+export type PublicPeer = {
+  id: number;
+  fullName: string;
+  photoUrl: string | null;
+  courseName: string | null;
+  currentYearOrBatch: string | null;
+  hasWhatsApp: boolean;
+};
+
+export async function getActivePeersForUniversity(
+  universitySlug: string
+): Promise<PublicPeer[]> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag(getUniversityPeersTag(universitySlug));
+
+  const db = getDb();
+
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      id: studentPeers.id,
+      fullName: studentPeers.fullName,
+      photoUrl: studentPeers.photoUrl,
+      courseName: studentPeers.courseName,
+      currentYearOrBatch: studentPeers.currentYearOrBatch,
+      hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(
+        Boolean
+      ),
+    })
+    .from(studentPeers)
+    .innerJoin(universities, eq(studentPeers.universityId, universities.id))
+    .where(
+      and(
+        eq(universities.slug, universitySlug),
+        eq(studentPeers.status, "active")
+      )
+    )
+    .orderBy(asc(studentPeers.id));
+
+  return rows;
+}
+
+export type PeerWithUniversity = PublicPeer & {
+  universitySlug: string;
+  universityName: string;
+  countryName: string;
+};
+
+export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
+  "use cache";
+
+  cacheLife("hours");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      id: studentPeers.id,
+      fullName: studentPeers.fullName,
+      photoUrl: studentPeers.photoUrl,
+      courseName: studentPeers.courseName,
+      currentYearOrBatch: studentPeers.currentYearOrBatch,
+      hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+      universitySlug: universities.slug,
+      universityName: universities.name,
+      countryName: countries.name,
+    })
+    .from(studentPeers)
+    .innerJoin(universities, eq(studentPeers.universityId, universities.id))
+    .innerJoin(countries, eq(universities.countryId, countries.id))
+    .where(eq(studentPeers.status, "active"))
+    .orderBy(asc(universities.name), asc(studentPeers.id));
+
+  return rows;
+}
+
+export type PeerUniversity = {
+  slug: string;
+  name: string;
+  logoUrl: string | null;
+  coverImageUrl: string | null;
+  countryName: string;
+  peerCount: number;
+};
+
+export type UniversityWithPeers = {
+  slug: string;
+  name: string;
+  countryName: string;
+  logoUrl: string | null;
+  peers: PublicPeer[];
+};
+
+export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithPeers[]> {
+  "use cache";
+
+  cacheLife("hours");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      universitySlug: universities.slug,
+      universityName: universities.name,
+      countryName: countries.name,
+      logoUrl: universities.logoUrl,
+      peerId: studentPeers.id,
+      peerFullName: studentPeers.fullName,
+      peerPhotoUrl: studentPeers.photoUrl,
+      peerCourseName: studentPeers.courseName,
+      peerCurrentYearOrBatch: studentPeers.currentYearOrBatch,
+      hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+    })
+    .from(studentPeers)
+    .innerJoin(universities, eq(studentPeers.universityId, universities.id))
+    .innerJoin(countries, eq(universities.countryId, countries.id))
+    .where(eq(studentPeers.status, "active"))
+    .orderBy(asc(universities.name), asc(studentPeers.id));
+
+  const map = new Map<string, UniversityWithPeers>();
+
+  for (const row of rows) {
+    let uni = map.get(row.universitySlug);
+    if (!uni) {
+      uni = {
+        slug: row.universitySlug,
+        name: row.universityName,
+        countryName: row.countryName,
+        logoUrl: row.logoUrl,
+        peers: [],
+      };
+      map.set(row.universitySlug, uni);
+    }
+    uni.peers.push({
+      id: row.peerId,
+      fullName: row.peerFullName,
+      photoUrl: row.peerPhotoUrl,
+      courseName: row.peerCourseName,
+      currentYearOrBatch: row.peerCurrentYearOrBatch,
+      hasWhatsApp: row.hasWhatsApp,
+    });
+  }
+
+  return [...map.values()];
+}
+
+export async function getUniversitiesWithActivePeers(
+  limit = 6
+): Promise<PeerUniversity[]> {
+  "use cache";
+
+  cacheLife("hours");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      slug: universities.slug,
+      name: universities.name,
+      logoUrl: universities.logoUrl,
+      coverImageUrl: universities.coverImageUrl,
+      countryName: countries.name,
+      peerCount: sql<number>`count(${studentPeers.id})`.mapWith(Number),
+    })
+    .from(studentPeers)
+    .innerJoin(universities, eq(studentPeers.universityId, universities.id))
+    .innerJoin(countries, eq(universities.countryId, countries.id))
+    .where(eq(studentPeers.status, "active"))
+    .groupBy(
+      universities.slug,
+      universities.name,
+      universities.logoUrl,
+      universities.coverImageUrl,
+      countries.name
+    )
+    .orderBy(desc(sql`count(${studentPeers.id})`))
+    .limit(limit);
+
+  return rows;
 }
 
 export async function getUniversityReviews(
@@ -127,5 +315,57 @@ export async function getUniversityReviews(
     starRating: review.starRating ?? undefined,
     createdAt: toIsoString(review.createdAt),
     updatedAt: review.updatedAt ? toIsoString(review.updatedAt) : undefined,
+  }));
+}
+
+export type ReviewWithUniversity = UniversityReview & {
+  universityName: string;
+};
+
+export async function getAllLiveReviews(): Promise<ReviewWithUniversity[]> {
+  "use cache";
+
+  cacheLife("minutes");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      id: universityReviews.id,
+      universitySlug: universities.slug,
+      universityName: universities.name,
+      reviewType: universityReviews.reviewType,
+      reviewerName: universityReviews.reviewerName,
+      reviewerContext: universityReviews.reviewerContext,
+      reviewBody: universityReviews.reviewBody,
+      youtubeUrl: universityReviews.youtubeUrl,
+      youtubeVideoId: universityReviews.youtubeVideoId,
+      visibilityStatus: universityReviews.visibilityStatus,
+      verificationStatus: universityReviews.verificationStatus,
+      isFeatured: universityReviews.isFeatured,
+      starRating: universityReviews.starRating,
+      createdAt: universityReviews.createdAt,
+    })
+    .from(universityReviews)
+    .innerJoin(universities, eq(universityReviews.universityId, universities.id))
+    .where(eq(universityReviews.visibilityStatus, "live"))
+    .orderBy(desc(universityReviews.isFeatured), desc(universityReviews.createdAt));
+
+  return rows.map((r) => ({
+    id: r.id,
+    universitySlug: r.universitySlug,
+    universityName: r.universityName,
+    reviewType: r.reviewType,
+    reviewerName: r.reviewerName,
+    reviewerContext: r.reviewerContext ?? undefined,
+    reviewBody: r.reviewBody ?? undefined,
+    youtubeUrl: r.youtubeUrl ?? undefined,
+    youtubeVideoId: r.youtubeVideoId ?? undefined,
+    visibilityStatus: r.visibilityStatus,
+    verificationStatus: r.verificationStatus,
+    isFeatured: r.isFeatured,
+    starRating: r.starRating ?? undefined,
+    createdAt: toIsoString(r.createdAt),
   }));
 }

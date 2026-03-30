@@ -1,4 +1,3 @@
-import { siteConfig } from "@/lib/constants";
 import {
   createSeoImage,
   ogImageContentType,
@@ -7,13 +6,13 @@ import {
 
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
-export const alt = "Students Traffic";
+export const alt = "Students Traffic — Study MBBS abroad, the right way.";
 
-export default function Image() {
+export default async function Image() {
   return createSeoImage({
-    eyebrow: "Study Abroad Experts",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    tags: ["Verified data", "University guidance", "Free guidance"],
+    eyebrow: "India's Most Transparent MBBS Abroad Platform",
+    title: "Study MBBS abroad —",
+    accentTitle: "the right way.",
+    tags: ["3,000+ Students", "500+ Universities", "10+ Countries", "100% Free"],
   });
 }

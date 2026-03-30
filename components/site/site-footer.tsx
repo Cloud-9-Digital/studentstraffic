@@ -92,6 +92,9 @@ export function SiteFooter() {
             <ul className="space-y-2.5">
               {[
                 { label: "Universities", href: "/universities" },
+                { label: "Talk to Students", href: "/students" },
+                { label: "Reviews", href: "/reviews" },
+                { label: "Become a Student Guide", href: "/join" },
                 { label: "All Guides", href: "/guides" },
                 { label: "Contact", href: "/contact" },
                 { label: "Search", href: "/search" },

@@ -9,6 +9,10 @@ const envSchema = z.object({
   CRM_LEAD_INTAKE_SECRET: z.string().min(1).optional(),
   PABBLY_LEAD_WEBHOOK_URL: z.string().url().optional(),
   NEXTAUTH_SECRET: z.string().min(1).optional(),
+  BREVO_API_KEY: z.string().min(1).optional(),
+  BREVO_SENDER_EMAIL: z.string().email().optional(),
+  BREVO_REPLY_TO_EMAIL: z.string().email().optional(),
+  BREVO_ADMIN_EMAIL: z.string().email().optional(),
 });
 
 const parsedEnv = envSchema.safeParse({
@@ -18,6 +22,10 @@ const parsedEnv = envSchema.safeParse({
   CRM_LEAD_INTAKE_SECRET: process.env.CRM_LEAD_INTAKE_SECRET,
   PABBLY_LEAD_WEBHOOK_URL: process.env.PABBLY_LEAD_WEBHOOK_URL,
   NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+  BREVO_API_KEY: process.env.BREVO_API_KEY,
+  BREVO_SENDER_EMAIL: process.env.BREVO_SENDER_EMAIL,
+  BREVO_REPLY_TO_EMAIL: process.env.BREVO_REPLY_TO_EMAIL,
+  BREVO_ADMIN_EMAIL: process.env.BREVO_ADMIN_EMAIL,
 });
 
 if (!parsedEnv.success) {
@@ -46,10 +54,15 @@ export const env = {
   crmLeadIntakeSecret: parsedEnv.data.CRM_LEAD_INTAKE_SECRET,
   pabblyLeadWebhookUrl: parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL,
   nextAuthSecret: parsedEnv.data.NEXTAUTH_SECRET,
+  brevoApiKey: parsedEnv.data.BREVO_API_KEY,
+  brevoSenderEmail: parsedEnv.data.BREVO_SENDER_EMAIL ?? "updates@studentstraffic.com",
+  brevoReplyToEmail: parsedEnv.data.BREVO_REPLY_TO_EMAIL ?? "hello@studentstraffic.com",
+  brevoAdminEmail: parsedEnv.data.BREVO_ADMIN_EMAIL ?? "hello@studentstraffic.com",
   hasDatabase: Boolean(parsedEnv.data.DATABASE_URL),
   hasCrmLeadSyncConfig: Boolean(
     parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET
   ),
   hasPabblyLeadWebhook: Boolean(parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL),
   hasAdminAuthConfig: Boolean(parsedEnv.data.NEXTAUTH_SECRET),
+  hasBrevo: Boolean(parsedEnv.data.BREVO_API_KEY),
 };
