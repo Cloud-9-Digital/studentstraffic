@@ -16,6 +16,7 @@ import type {
   PeerRequestStatus,
   SearchDocument,
   StudentPeerStatus,
+  ResearchSource,
   TeachingPhase,
   UniversityReviewType,
   UniversityReviewVerificationStatus,
@@ -84,6 +85,7 @@ export const universities = pgTable(
     establishedYear: integer("established_year").notNull(),
     summary: text("summary").notNull(),
     featured: boolean("featured").notNull().default(false),
+    published: boolean("published").notNull().default(true),
     officialWebsite: text("official_website").notNull(),
     logoUrl: text("logo_url"),
     coverImageUrl: text("cover_image_url"),
@@ -115,6 +117,12 @@ export const universities = pgTable(
       .array()
       .notNull()
       .default([]),
+    lastVerifiedAt: text("last_verified_at"),
+    researchSources: jsonb("research_sources")
+      .$type<ResearchSource[]>()
+      .notNull()
+      .default([]),
+    researchNotes: text("research_notes"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
   },
@@ -140,8 +148,12 @@ export const programOfferings = pgTable(
     annualTuitionUsd: integer("annual_tuition_usd").notNull(),
     totalTuitionUsd: integer("total_tuition_usd").notNull(),
     livingUsd: integer("living_usd").notNull(),
+    officialFeeCurrency: text("official_fee_currency"),
+    officialAnnualTuitionAmount: integer("official_annual_tuition_amount"),
+    officialTotalTuitionAmount: integer("official_total_tuition_amount"),
     officialProgramUrl: text("official_program_url").notNull(),
     medium: text("medium").notNull(),
+    published: boolean("published").notNull().default(true),
     teachingPhases: jsonb("teaching_phases")
       .$type<TeachingPhase[]>()
       .notNull()
@@ -155,6 +167,11 @@ export const programOfferings = pgTable(
       .notNull()
       .default([]),
     intakeMonths: text("intake_months").array().notNull().default([]),
+    feeVerifiedAt: text("fee_verified_at"),
+    fxRateDate: text("fx_rate_date"),
+    fxRateSourceUrl: text("fx_rate_source_url"),
+    feeNotes: text("fee_notes"),
+    sourceUrls: text("source_urls").array().notNull().default([]),
     featured: boolean("featured").notNull().default(false),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
@@ -165,6 +182,39 @@ export const programOfferings = pgTable(
     index("program_offerings_course_idx").on(table.courseId),
     index("program_offerings_fee_idx").on(table.annualTuitionUsd),
     index("program_offerings_medium_idx").on(table.medium),
+  ]
+);
+
+export const wdomsDirectoryEntries = pgTable(
+  "wdoms_directory_entries",
+  {
+    id: serial("id").primaryKey(),
+    countrySlug: text("country_slug").notNull(),
+    countryName: text("country_name").notNull(),
+    schoolId: text("school_id").notNull(),
+    schoolName: text("school_name").notNull(),
+    cityName: text("city_name").notNull(),
+    schoolUrl: text("school_url").notNull(),
+    schoolType: text("school_type"),
+    operationalStatus: text("operational_status"),
+    yearInstructionStarted: integer("year_instruction_started"),
+    academicAffiliation: text("academic_affiliation"),
+    clinicalFacilities: text("clinical_facilities"),
+    clinicalTraining: text("clinical_training"),
+    schoolWebsite: text("school_website"),
+    mainAddress: text("main_address"),
+    qualificationTitle: text("qualification_title"),
+    curriculumDuration: text("curriculum_duration"),
+    languageOfInstruction: text("language_of_instruction"),
+    prerequisiteEducation: text("prerequisite_education"),
+    foreignStudents: text("foreign_students"),
+    entranceExam: text("entrance_exam"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("wdoms_directory_entries_school_id_idx").on(table.schoolId),
+    index("wdoms_directory_entries_country_idx").on(table.countrySlug),
   ]
 );
 

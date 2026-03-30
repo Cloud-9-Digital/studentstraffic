@@ -1,0 +1,495 @@
+{
+  "batchId": "georgia-batch-001",
+  "countrySlug": "georgia",
+  "notes": "Official-source research drafts for three net-new Georgian medical universities. Keep unpublished until reviewed.",
+  "universities": [
+    {
+      "slug": "alte-university",
+      "name": "Alte University",
+      "city": "Tbilisi",
+      "type": "Private",
+      "establishedYear": 2001,
+      "summary": "A private Tbilisi university with an English-medium six-year Medical Doctor program, clear published tuition, hospital-linked clinical messaging, and unusually visible student-support services on its official pages.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://alte.edu.ge",
+      "campusLifestyle": "Official pages present Alte as a modern city-campus in central Tbilisi rather than a secluded residential university. The university highlights a multicultural student body, clubs, buddy-style services, research opportunities, and student-facing support functions across the campus experience.",
+      "cityProfile": "Alte consistently frames its medical offer around being in the heart of Tbilisi. The reviewed official materials emphasize the central urban location and international orientation more than leisure or destination marketing claims.",
+      "clinicalExposure": "Clinical training is one of Alte's clearest official selling points. Join.alte says students access Ivane Bokeria University Hospital through an exclusive partnership with Vian, while the international medical page positions the curriculum for global clinical practice and later licensing pathways.",
+      "hostelOverview": "Alte does not present one fixed medicine dorm on the reviewed public pages. Its relocation services page says international students can explore hostel accommodation as well as single or shared apartments, so housing appears to be guided rather than standardized into one package.",
+      "indianFoodSupport": "The reviewed official Alte pages do not advertise a dedicated Indian mess, Indian canteen, or India-specific dining service. Official support is framed around relocation and student services rather than cuisine guarantees.",
+      "safetyOverview": "The reviewed official materials do not publish a detailed standalone safety brief. What they do show is a formal support structure that includes student services, a well-being advisor and success coach, and relocation help for day-to-day settlement issues.",
+      "studentSupport": "Support is one of Alte's strongest official signals. The university publicly advertises a Student Support Center, student services, a Student Well-being Advisor and Success Coach, and relocation services for accommodation planning and settling in.",
+      "whyChoose": [
+        "Official admissions pages publish a fully English six-year Medical Doctor program with annual tuition of USD 5,500.",
+        "Join.alte highlights access to Ivane Bokeria University Hospital through Alte's partnership with Vian.",
+        "The university visibly publishes student services, well-being mentoring, relocation help, clubs, and a multicultural campus environment."
+      ],
+      "thingsToConsider": [
+        "The public program page is lighter on curriculum detail than some competitors, so applicants should request the latest detailed medicine curriculum before enrolling.",
+        "Housing is presented as guided hostel or apartment options rather than a single guaranteed medical dorm package.",
+        "Official recognition messaging is broad, so students should still verify destination-country licensing and internship rules for their own long-term plan."
+      ],
+      "bestFitFor": [
+        "Students who want an English-medium MD in central Tbilisi.",
+        "Applicants who value visible student-support and relocation services.",
+        "Families comparing private Georgian universities with hospital-linked training and moderate private-school pricing."
+      ],
+      "teachingHospitals": [
+        "Ivane Bokeria University Hospital"
+      ],
+      "recognitionBadges": [
+        "Ministry of Education and Science of Georgia",
+        "NCEQE",
+        "WFME",
+        "NMC",
+        "ECFMG"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Alte official medicine admissions page",
+          "url": "https://join.alte.edu.ge/"
+        },
+        {
+          "label": "International Medical School page",
+          "url": "https://alte.edu.ge/en/international-medical"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does Alte University teach medicine in English?",
+          "answer": "Yes. Alte's official admissions and international medical pages describe the Medical Doctor program as English-medium."
+        },
+        {
+          "question": "What is the official annual tuition for Alte's Medical Doctor program?",
+          "answer": "Alte's official spring international admissions page lists the Medical Doctor program at USD 5,500 per year."
+        },
+        {
+          "question": "What housing support does Alte officially mention for international students?",
+          "answer": "Alte's relocation services page says students can explore hostel accommodation plus single or shared apartments, which suggests guided housing support rather than one fixed dorm model."
+        },
+        {
+          "question": "How are admissions handled according to Alte's official pages?",
+          "answer": "Join.alte says admissions are based on previous qualifying exam performance and states there is no entrance exam."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "Alte medicine admissions landing page",
+            "url": "https://join.alte.edu.ge/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Spring 2025 international admissions announcement",
+            "url": "https://alte.edu.ge/en/admission-for-spring-2025-is-open-for-international-students",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "For international students",
+            "url": "https://alte.edu.ge/en/for-international-students",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "International Medical School page",
+            "url": "https://alte.edu.ge/en/international-medical",
+            "kind": "recognition",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Relocation services",
+            "url": "https://alte.edu.ge/en/relocation-services",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Student well-being advisor and success coach",
+            "url": "https://alte.edu.ge/en/student-well-being-advisor-and-success-coach",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          }
+        ]
+      },
+      "programs": [
+        {
+          "slug": "alte-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 5500,
+          "officialTotalTuitionAmount": 33000,
+          "annualTuitionUsd": 5500,
+          "totalTuitionUsd": 33000,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://alte.edu.ge/en/international-medical",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Integrated medical degree",
+              "language": "English",
+              "details": "Alte's official admissions page describes a 6-year, 12-semester Medical Doctor program taught in English, including 1 year of internship."
+            },
+            {
+              "phase": "Clinical training and internship",
+              "language": "English",
+              "details": "Official medicine pages highlight access to Ivane Bokeria University Hospital through Vian and frame the program for later residency and licensing pathways."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Join.alte says the curriculum and clinical training prepare graduates for licensing exams and professional practice in the UK and other countries."
+          ],
+          "intakeMonths": [
+            "Spring",
+            "Fall"
+          ],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official annual tuition is published in USD on Alte's international admissions page. The total tuition is calculated from the official annual fee multiplied by the official 6-year duration. The reviewed official pages do not publish one standardized annual living-cost figure.",
+          "sourceUrls": [
+            "https://alte.edu.ge/en/international-medical",
+            "https://alte.edu.ge/en/admission-for-spring-2025-is-open-for-international-students",
+            "https://alte.edu.ge/en/for-international-students"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bau-international-university-batumi",
+      "name": "BAU International University, Batumi",
+      "city": "Batumi",
+      "type": "Private",
+      "establishedYear": 2015,
+      "summary": "A private Batumi medical university centered on an English-medium six-year MD, early clinic exposure, simulation-heavy teaching, and a medical-campus setup tied to the Medina health complex.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://bauinternational.edu.ge",
+      "campusLifestyle": "BAU presents a focused medical-school environment rather than a broad multidisciplinary campus. Official materials describe a busy timetable, a multicultural student cohort, well-equipped labs and library spaces, and day-to-day contact with student support staff.",
+      "cityProfile": "The university is based in Batumi at the Iris Borchashvili Health Center Medina campus. Its official guide talks about Batumi in practical student terms such as budgeting and daily life rather than making broad lifestyle promises.",
+      "clinicalExposure": "BAU's medicine page says students begin clinical visits from the first semester, build practical skills through simulation and OSCE-style training, move into rotations from later years, and spend the sixth year largely in clinical practice.",
+      "hostelOverview": "BAU's admissions page is very clear that the university does not currently offer student accommodation. It says the university can provide a list of websites to help students start their housing search.",
+      "indianFoodSupport": "The reviewed official BAU pages do not promise Indian food support or a dedicated Indian canteen. The official student guide discusses general living costs in Batumi instead of country-specific dining arrangements.",
+      "safetyOverview": "The reviewed BAU sources do not publish a standalone campus safety brief. What they do show is on-campus first-aid coverage, mental-health first-aid support, and a formal student services structure.",
+      "studentSupport": "BAU publicly says its Student Services Department handles academic guidance, status-related help, student integration, clubs, trainings, and events. The university also lists named staff for first aid and mental health first aid.",
+      "whyChoose": [
+        "The medicine page publishes a structured six-year English MD with 360 ECTS and explicit simulation and clinical training components.",
+        "Official materials say clinical exposure begins from the first semester and intensifies through rotations and final-year practice.",
+        "Fees are clearly published in USD: USD 6,500 per year, payable USD 3,250 per semester."
+      ],
+      "thingsToConsider": [
+        "BAU officially says it does not currently provide accommodation for students.",
+        "The university is highly medicine-focused, so students wanting a broader multi-faculty campus ecosystem may prefer a different setup.",
+        "Official cost-of-living guidance is presented only as an estimate, so applicants should build a real housing budget before committing."
+      ],
+      "bestFitFor": [
+        "Students who want a medical-only environment in Batumi with early clinic exposure.",
+        "Applicants who like simulation-heavy teaching and structured clinical rotations.",
+        "Families comfortable arranging private housing instead of depending on a university hostel."
+      ],
+      "teachingHospitals": [
+        "Iris Borchashvili Health Center Medina"
+      ],
+      "recognitionBadges": [
+        "NCEQE authorization",
+        "Accredited medicine program",
+        "WFME on official site",
+        "ISO 9001:2015 on official site"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Medicine program page",
+          "url": "https://www.bauinternational.edu.ge/en/medicine"
+        },
+        {
+          "label": "BAU Batumi home page",
+          "url": "https://bauinternational.edu.ge/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does BAU International University, Batumi teach medicine in English?",
+          "answer": "Yes. BAU's medicine page lists the language of instruction for the Medicine program as English, and the admissions page says all programs are fully taught in English."
+        },
+        {
+          "question": "What is the official annual tuition for BAU Batumi medicine?",
+          "answer": "BAU's admissions page lists international-student tuition for medicine at USD 6,500 per year, payable at USD 3,250 per semester."
+        },
+        {
+          "question": "When does clinical exposure begin at BAU Batumi?",
+          "answer": "The official medicine page says students make clinical visits from the first semester and later move into rotations and final-year clinical practice."
+        },
+        {
+          "question": "Does BAU Batumi provide university accommodation?",
+          "answer": "The official admissions page says the university does not currently offer accommodation, but it can provide websites to help students start their search."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "Medicine program page",
+            "url": "https://www.bauinternational.edu.ge/en/medicine",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Admissions and fees page",
+            "url": "https://www.bauinternational.edu.ge/en/page/22",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Student support service page",
+            "url": "https://www.bauinternational.edu.ge/en/page/10",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Guidebook for freshmen",
+            "url": "https://www.bauinternational.edu.ge/en/page/8",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BAU Batumi home page",
+            "url": "https://bauinternational.edu.ge/",
+            "kind": "recognition",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BAU opening and Medina affiliation news item",
+            "url": "https://bauinternational.edu.ge/en/news/14",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          }
+        ]
+      },
+      "programs": [
+        {
+          "slug": "bau-international-university-batumi-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 6500,
+          "officialTotalTuitionAmount": 39000,
+          "annualTuitionUsd": 6500,
+          "totalTuitionUsd": 39000,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://www.bauinternational.edu.ge/en/medicine",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Simulation-integrated foundation",
+              "language": "English",
+              "details": "BAU's official medicine page says the 6-year MD includes simulation-based training from early study and clinical visits from the first semester."
+            },
+            {
+              "phase": "Rotations and final-year clinical practice",
+              "language": "English",
+              "details": "The official medicine page says most clinical courses are taught on rotation, students develop practical skills through partner-clinic work, and the sixth year is largely devoted to clinical practice."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "BAU's official home page lists free USMLE courses as one of the university's medicine-program advantages."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official annual tuition is published in USD on BAU's admissions page, with semester payment terms also stated there. The total tuition is calculated from the official annual fee multiplied by the official 6-year duration. BAU's student guide estimates living in Batumi at about USD 500-600 per month, but the university does not publish one fixed annual living-cost figure for all students.",
+          "sourceUrls": [
+            "https://www.bauinternational.edu.ge/en/medicine",
+            "https://www.bauinternational.edu.ge/en/page/22",
+            "https://www.bauinternational.edu.ge/en/page/8",
+            "https://bauinternational.edu.ge/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "caucasus-international-university",
+      "name": "Caucasus International University",
+      "city": "Tbilisi",
+      "type": "Private",
+      "establishedYear": 1995,
+      "summary": "A private Tbilisi university with a long-running Faculty of Medicine, a six-year English medical program, a detailed international-student information trail, and a broad affiliated-clinic network on its official site.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://ciu.edu.ge",
+      "campusLifestyle": "CIU's official pages describe a multi-faculty university with student services, a 300-seat cafeteria, student-life functions, and an international-student pathway built around online application, visa guidance, and campus support offices.",
+      "cityProfile": "CIU is based on Chargali Street in Tbilisi and its international-student pages focus on practical settlement topics such as housing, dining, transport, and visa procedures rather than broad promotional city claims.",
+      "clinicalExposure": "CIU publicly details a Clinical Skills Center with advanced simulators and says practical teaching in clinical disciplines takes place at affiliated and partner clinics and medical institutions. The official medicine partnership page lists a wide clinical network across Tbilisi.",
+      "hostelOverview": "The reviewed official CIU pages discuss living in Tbilisi and off-campus renting, but they do not present one guaranteed university hostel package for medicine students. Applicants should confirm current housing arrangements directly with the university.",
+      "indianFoodSupport": "CIU's living page mentions the university cafeteria and says Tbilisi has traditional and Asian dining options, but the reviewed official pages do not advertise a dedicated Indian mess or India-specific food support.",
+      "safetyOverview": "The reviewed CIU sources do not publish a dedicated safety overview for medical students. The clearest official support signals are the Student Service Office, Medical Office, International Relations Department, and the university's visa-guidance pages.",
+      "studentSupport": "CIU's structure page lists a Student Service Office, International Relations Department, Lifelong Learning and Career Development Service, Medical Office, and youth and culture services. Its international portal also explains online registration and visa steps for incoming students.",
+      "whyChoose": [
+        "CIU has a longer-established medical identity: the university says it was founded in 1995 as the medical institute Clinician.",
+        "Official fee pages clearly publish the English medicine program at USD 6,000 per year for 6 academic years.",
+        "The faculty and partnership pages show a strong practical-training setup with a clinical skills center and a large affiliated and partner clinic network."
+      ],
+      "thingsToConsider": [
+        "The reviewed public pages do not show one fixed university hostel package for medicine students.",
+        "The official English medicine program PDF requires at least B1 English for admission, which some applicants will need to prepare for.",
+        "Because CIU operates as a broad university rather than a medical-only campus, students should compare whether that environment matches their preferred study style."
+      ],
+      "bestFitFor": [
+        "Students who want a Tbilisi medical university with a long-running Faculty of Medicine.",
+        "Applicants who value a broad affiliated-clinic network for later clinical training.",
+        "Families looking for a private Georgian option with clear English-program pricing and step-by-step international-student guidance."
+      ],
+      "teachingHospitals": [
+        "Caucasus Medical Center",
+        "M. Iashvili Children's Central Hospital",
+        "Academician O. Gudushauri National Medical Center",
+        "Simon Khechinashvili University Clinic"
+      ],
+      "recognitionBadges": [
+        "Third-term authorization (official site)",
+        "Faculty of Medicine since 1995",
+        "AMEE member on faculty page",
+        "MCI acknowledged on faculty page"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "CIU authorization and accreditation page",
+          "url": "https://ciu.edu.ge/en/about/authorization-accreditation"
+        },
+        {
+          "label": "CIU Faculty of Medicine page",
+          "url": "https://ciu.edu.ge/en/faculty/medicine"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does Caucasus International University offer medicine in English?",
+          "answer": "Yes. CIU's faculty and international-student pages list a Medical Educational Program in English."
+        },
+        {
+          "question": "What is the official annual tuition for CIU medicine in English?",
+          "answer": "CIU's international-student programs page lists the English medicine program at USD 6,000 per year."
+        },
+        {
+          "question": "What English level does CIU officially require?",
+          "answer": "The official English medicine program PDF says the mandatory precondition is at least B1 English, proven by certificate or a university-administered test."
+        },
+        {
+          "question": "How long does CIU say enrollment and visa processing usually take?",
+          "answer": "CIU's visa page says enrollment takes up to 3 weeks and visa processing takes up to 4 weeks."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "CIU about page",
+            "url": "https://ciu.edu.ge/en/about",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Faculty of Medicine page",
+            "url": "https://ciu.edu.ge/en/faculty/medicine",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Medical education program in English PDF",
+            "url": "https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Programs and fees for international students",
+            "url": "https://ciu.edu.ge/en/for-international-students/programs",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Clinical skills center",
+            "url": "https://ciu.edu.ge/en/faculty/medicine/clinical-skills-center",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Medicine partnership clinics",
+            "url": "https://ciu.edu.ge/en/faculty/medicine/partnership",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Living and dining",
+            "url": "https://ciu.edu.ge/en/for-international-students/living-and-dining",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "University structure and support offices",
+            "url": "https://ciu.edu.ge/en/about/structure",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Visa requirements",
+            "url": "https://ciu.edu.ge/en/for-international-students/visa-requirements",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          }
+        ]
+      },
+      "programs": [
+        {
+          "slug": "caucasus-international-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 6000,
+          "officialTotalTuitionAmount": 36000,
+          "annualTuitionUsd": 6000,
+          "totalTuitionUsd": 36000,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Integrated basic and clinical sciences",
+              "language": "English",
+              "details": "CIU's official English medicine program PDF describes a 6-year, 12-semester, 360-credit one-step MD with 123 basic education credits, 168 clinical education credits, and 24 clinical-skills credits."
+            },
+            {
+              "phase": "Clinical skills and partner-clinic practice",
+              "language": "English",
+              "details": "The faculty page says practical teaching in clinical disciplines is conducted at affiliated and partner clinics, while the Clinical Skills Center page highlights simulation-based training in emergency care, obstetrics and gynecology, resuscitation, therapy, and surgery."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official annual tuition is published in USD on CIU's international-student programs page. The total tuition is calculated from the official annual fee multiplied by the official 6-year duration. The reviewed official pages do not publish one standardized annual living-cost figure for all medicine students.",
+          "sourceUrls": [
+            "https://ciu.edu.ge/uploads/Medical_education_program_in_English_3_126c7d8355.pdf",
+            "https://ciu.edu.ge/en/for-international-students/programs",
+            "https://ciu.edu.ge/en/faculty/medicine",
+            "https://ciu.edu.ge/en/faculty/medicine/clinical-skills-center",
+            "https://ciu.edu.ge/en/faculty/medicine/partnership"
+          ]
+        }
+      ]
+    }
+  ]
+}

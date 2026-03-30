@@ -12,6 +12,8 @@
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
     "db:seed": "tsx scripts/seed.ts",
+    "db:import:guide-drafts": "tsx scripts/import-university-guide-drafts.ts",
+    "db:import:wdoms": "tsx scripts/import-wdoms-directory.ts",
     "db:studio": "drizzle-kit studio",
     "seo:indexnow": "tsx scripts/submit-indexnow.ts"
   },

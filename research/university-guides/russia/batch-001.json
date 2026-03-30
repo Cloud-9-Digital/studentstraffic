@@ -1,0 +1,405 @@
+{
+  "batchId": "russia-batch-001",
+  "countrySlug": "russia",
+  "notes": "Official-source research drafts for net-new Russia university guides. Keep all universities and programs unpublished until reviewed.",
+  "universities": [
+    {
+      "slug": "bashkir-state-medical-university",
+      "name": "Bashkir State Medical University",
+      "city": "Ufa",
+      "type": "Public",
+      "establishedYear": 1932,
+      "summary": "A long-running public medical university in Ufa with a large international student body, a 6-year General Medicine specialist program offered in Russian and English, and clinical training tied to its own clinic and other hospitals in the city.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://bashgmu.ru/en/",
+      "campusLifestyle": "BSMU's official site describes a large medical university environment with about 8,000 students, volunteer and student-life activity, and a university positioned for both Russian and international learners.",
+      "cityProfile": "The university places itself in central Ufa and describes the city as the capital of Bashkortostan with developed infrastructure and an active student community. That gives applicants a clearer regional-capital setting than a small provincial campus.",
+      "clinicalExposure": "The admission page says clinical training is held in the university hospital and other hospitals in Ufa, while the university home page highlights the multi-disciplinary BSMU Clinic and Dental Clinic. It also states that simulation-based learning is used in both pre-clinical and clinical training.",
+      "hostelOverview": "The English site includes accommodation under Student's Life and references the Interuniversity Student Campus in Ufa, but the pages checked did not publish a clear fixed hostel tariff or room-allocation policy for General Medicine applicants.",
+      "indianFoodSupport": "The official English pages reviewed did not mention Indian mess facilities or India-specific food arrangements. Applicants should confirm current day-to-day meal options directly with the university before enrolment.",
+      "safetyOverview": "The official pages checked describe a central Ufa location, university-led student adaptation, and campus-supported student life, but they did not publish a standalone campus-security or city-safety page. Students should verify current residence rules and after-hours support directly with BSMU.",
+      "studentSupport": "BSMU's site highlights an International Office, contact channels in Ufa, volunteer-led first-year adaptation, and a sizable foreign-student community. That suggests a structured onboarding setup rather than a purely self-service admissions process.",
+      "whyChoose": [
+        "The official program and fee pages list General Medicine as a 6-year specialist degree available in both Russian and English.",
+        "The university states that clinical training runs through its own clinic plus other hospitals in Ufa, with simulation-based learning used in pre-clinical and clinical stages.",
+        "BSMU reports a large international footprint, including about 5,000 foreign students and residents from 64 countries."
+      ],
+      "thingsToConsider": [
+        "The university teaches General Medicine in both Russian and English, so applicants should confirm the exact current language path for their intake.",
+        "The pages checked did not publish a fixed hostel tariff or detailed accommodation rules in English, so housing terms should be verified directly.",
+        "BSMU positions itself as a large public medical university, which can suit some students well but may feel less personalized than a smaller intake model."
+      ],
+      "bestFitFor": [
+        "Students who want a public Russian medical university with a documented English-track General Medicine option.",
+        "Applicants who value official mention of hospital-linked and simulation-based training instead of a classroom-only pitch.",
+        "Families looking for a university with a visibly established international-student ecosystem in Ufa."
+      ],
+      "teachingHospitals": [
+        "BSMU Clinic",
+        "Dental Clinic"
+      ],
+      "recognitionBadges": [
+        "WDOMS Listed"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "BSMU official website",
+          "url": "https://bashgmu.ru/en/"
+        },
+        {
+          "label": "BSMU admission page",
+          "url": "https://bashgmu.ru/en/admission/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does Bashkir State Medical University offer General Medicine in English?",
+          "answer": "Yes. The official fee structure lists 31.05.01 General medicine as a 6-year specialist degree taught in Russian and English."
+        },
+        {
+          "question": "What annual tuition is officially published for General Medicine?",
+          "answer": "The official fee page lists 490080 RUB per year for General Medicine. The admission page also describes the tuition as approximately $5,000 per year."
+        },
+        {
+          "question": "Where is the university located?",
+          "answer": "BSMU says it is located in Ufa, the capital of the Republic of Bashkortostan, and that the university sits in the historical center of the city."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "BSMU home page",
+            "url": "https://bashgmu.ru/en/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMU admission page",
+            "url": "https://bashgmu.ru/en/admission/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMU curriculum and degrees page",
+            "url": "https://bashgmu.ru/en/admission/curriculum-and-degrees.php",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMU fee structure page",
+            "url": "https://bashgmu.ru/en/admission/tuition-fees/",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMU International Office contacts",
+            "url": "https://bashgmu.ru/en/university/international-office/contacts/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          }
+        ]
+      },
+      "programs": [
+        {
+          "slug": "bashkir-state-medical-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "RUB",
+          "officialAnnualTuitionAmount": 490080,
+          "annualTuitionUsd": 5000,
+          "totalTuitionUsd": 30000,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://bashgmu.ru/en/admission/curriculum-and-degrees.php",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Integrated six-year specialist program",
+              "language": "English",
+              "details": "BSMU lists General Medicine as a 6-year specialist degree taught in Russian and English. The admission page says clinical training takes place in the university hospital and other hospitals in Ufa, with simulation-based learning used in both pre-clinical and clinical training."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official fee page lists General Medicine at 490080 RUB per year. BSMU's admission page also describes tuition as approximately $5,000 per year, so the USD fields use the university's own published estimate. The total USD is the simple 6-year multiplication of that annual estimate. No fixed official living-cost amount was published on the pages checked, so livingUsd is 0.",
+          "sourceUrls": [
+            "https://bashgmu.ru/en/admission/",
+            "https://bashgmu.ru/en/admission/curriculum-and-degrees.php",
+            "https://bashgmu.ru/en/admission/tuition-fees/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "astrakhan-state-medical-university",
+      "name": "Astrakhan State Medical University",
+      "city": "Astrakhan",
+      "type": "Public",
+      "establishedYear": 1918,
+      "summary": "A public medical university in Astrakhan with a long-running international-student faculty, a General Medicine admissions route for foreign citizens, and official evidence of English- and French-mediated study alongside Russian-language training.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://astgmu.ru/en/",
+      "campusLifestyle": "The official materials focus less on lifestyle marketing and more on structured admissions, foreign-student administration, and adaptation support. That points to a traditional public-university environment centered on academic and administrative systems.",
+      "cityProfile": "Students are based in Astrakhan and use the university's centralized admissions, foreign-student, and hostel-information pages. The official pages reviewed frame the city mainly through the university's academic footprint rather than through promotional city claims.",
+      "clinicalExposure": "Astrakhan's international-faculty history page says clinical disciplines shift into Russian from years 3-4 because patient communication is required. That is the clearest official signal that bedside training is tied to real clinical communication rather than staying inside an isolated foreign-student track.",
+      "hostelOverview": "The official bachelor admissions page includes a dedicated hostel-information link for out-of-town applicants, which confirms that dormitory placement is part of the admissions infrastructure. The pages checked did not publish a current hostel price sheet alongside that link.",
+      "indianFoodSupport": "The official pages reviewed did not mention Indian mess facilities or India-specific food support. Students should verify meal options and cooking arrangements directly with the university or hostel office.",
+      "safetyOverview": "The official sources checked emphasized foreign-student administration, adaptation support, and hostel-information links rather than a separate public safety page. Applicants should confirm current residence rules, curfews, and support contacts directly with Astrakhan State Medical University.",
+      "studentSupport": "The university maintains official pages for foreign learners and a dedicated foreign-student faculty history that references adaptation support, dean's-office involvement, and cooperation with dormitories. That suggests an established international-student administration rather than an ad hoc process.",
+      "whyChoose": [
+        "The current official admissions page clearly includes 31.05.01 General Medicine for foreign citizens.",
+        "Official university history pages document English- and French-mediated General Medicine teaching with parallel Russian-language study for international students.",
+        "The university's official site shows a long-running foreign-student structure rather than a newly created international office."
+      ],
+      "thingsToConsider": [
+        "Astrakhan's official materials make clear that Russian becomes important in clinical years, so applicants should plan seriously for language transition.",
+        "The public foreign-fee document located on the official site was an older 2020/2021 PDF, so the current contract amount should be reconfirmed before applying.",
+        "The pages checked linked hostel information but did not publish a current public hostel tariff, so accommodation budgeting needs direct confirmation."
+      ],
+      "bestFitFor": [
+        "Students who are comfortable with an English-plus-Russian transition instead of expecting a fully isolated English-only pathway through graduation.",
+        "Applicants who want a public Russian medical university with a visible official history of foreign-student administration.",
+        "Families who prefer universities that publish centralized admissions and hostel-information workflows on the main official site."
+      ],
+      "teachingHospitals": [],
+      "recognitionBadges": [
+        "WDOMS Listed"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Astrakhan State Medical University official website",
+          "url": "https://astgmu.ru/en/"
+        },
+        {
+          "label": "Astrakhan bachelor admissions page",
+          "url": "https://astgmu.ru/abitur/bachelor/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does Astrakhan State Medical University publish General Medicine for foreign applicants?",
+          "answer": "Yes. The official bachelor admissions page includes 31.05.01 General Medicine for foreign citizens and the university's international-faculty materials describe General Medicine among the core international programs."
+        },
+        {
+          "question": "What language pathway is documented on the official site?",
+          "answer": "Astrakhan's official international-faculty history page says General Medicine is taught on intermediary languages including English and French from the first year, with parallel Russian-language study, and that from years 3-4 clinical disciplines move into Russian."
+        },
+        {
+          "question": "What tuition is officially published?",
+          "answer": "The official foreign-student fee PDF found on the university site lists General Medicine at 144000 RUB per year for foreign citizens with partial English and French teaching. Because that public file is older, applicants should verify the current contract before enrolment."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "Astrakhan official home page",
+            "url": "https://astgmu.ru/en/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Astrakhan bachelor admissions page",
+            "url": "https://astgmu.ru/abitur/bachelor/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Astrakhan foreign students faculty history page",
+            "url": "https://astgmu.ru/en/fakultet-inostrannyx-studentov/istoriya/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Astrakhan foreign learners information page",
+            "url": "https://astgmu.ru/en/mezhdunarodnyj-otdel/obshhaya-informatsiya_n/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Astrakhan foreign-student fee PDF",
+            "url": "https://astgmu.ru/wp-content/uploads/2020/06/stoimost-obucheniya-VO-2020.pdf",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          }
+        ],
+        "notes": "The current admissions infrastructure is clearly live on the official site. The only public foreign-student fee sheet located on the official site during this review was the older 2020/2021 PDF."
+      },
+      "programs": [
+        {
+          "slug": "astrakhan-state-medical-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "RUB",
+          "officialAnnualTuitionAmount": 144000,
+          "annualTuitionUsd": 0,
+          "totalTuitionUsd": 0,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://astgmu.ru/abitur/bachelor/",
+          "medium": "English + Local Support",
+          "teachingPhases": [
+            {
+              "phase": "Early foreign-language track with Russian integration",
+              "language": "English + Local Support",
+              "details": "Astrakhan's official international-faculty history page says General Medicine for foreign students starts from year 1 in an intermediary language such as English with parallel Russian-language study."
+            },
+            {
+              "phase": "Clinical transition",
+              "language": "Russian",
+              "details": "The same official page says that from years 3-4, clinical disciplines move into Russian because patient communication is required."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official foreign-student fee PDF available on the university site lists General Medicine at 144000 RUB per year for foreign citizens with partial English and French teaching. I did not use a USD conversion because the university did not publish USD pricing and no same-day official FX source was applied. The public fee file found during review is older than the current admissions page, so applicants should reconfirm the latest contract amount directly with the university.",
+          "sourceUrls": [
+            "https://astgmu.ru/abitur/bachelor/",
+            "https://astgmu.ru/en/fakultet-inostrannyx-studentov/istoriya/",
+            "https://astgmu.ru/wp-content/uploads/2020/06/stoimost-obucheniya-VO-2020.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "privolzhsky-research-medical-university",
+      "name": "Privolzhsky Research Medical University",
+      "city": "Nizhny Novgorod",
+      "type": "Public",
+      "establishedYear": 1920,
+      "summary": "A public research medical university in Nizhny Novgorod that officially markets full-fledged English Medical Specialist programs for international applicants and ties training to departments, clinical sites, and major city hospitals.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://pimunn.ru/en/",
+      "campusLifestyle": "PRMU's English site presents a sizeable medical campus with 8 faculties, international exchange activity, and more than 8,300 students. The official pages also describe six modern accommodations and a student life that is closely integrated with the university rather than outsourced.",
+      "cityProfile": "PRMU is explicitly based in Nizhny Novgorod, and its foreign-applicant materials repeatedly frame the city as the home base for both admissions and student life. That gives applicants a clearer large-city study environment than a remote single-campus model.",
+      "clinicalExposure": "The rector's message on PRMU's English site says students train at university departments and clinical sites and complete internships at the largest hospitals of the city. The same page names university-hospital partnerships such as the Regional Pediatric Hospital and the Institute for Pediatric Research.",
+      "hostelOverview": "PRMU's official English site says the university has six modern accommodations with shared rooms, furniture, bed linen, kitchens, and in-building cafes or canteens. That is stronger official accommodation detail than many Russian university English pages provide.",
+      "indianFoodSupport": "The official site says accommodation buildings have kitchens and also mentions cafes and canteens in the building. It does not mention Indian mess facilities or India-specific food support on the pages checked.",
+      "safetyOverview": "PRMU's official English pages emphasize dormitory accommodation, student conduct expectations, and structured admissions contacts, but they do not publish a dedicated public campus-safety page. Students should confirm current dormitory rules and emergency support contacts directly with PRMU.",
+      "studentSupport": "The foreign-applicants page gives a direct admissions email and phone contact, lays out a foreign-applicant procedure, and links visa and registration guidance. Combined with the university's large international-student share, that suggests a mature international admissions workflow.",
+      "whyChoose": [
+        "PRMU explicitly advertises full-fledged Medical Specialist programs in English, including General Medicine.",
+        "The official English site describes training through departments, clinical sites, and internships at major city hospitals.",
+        "PRMU publishes stronger accommodation detail than many peers, including six modern accommodations with kitchens and in-building food options."
+      ],
+      "thingsToConsider": [
+        "The current tuition table on the official site is published in RUB only, so applicants should budget in local currency and confirm contract terms directly.",
+        "PRMU presents itself as a large, research-oriented medical university, which may suit independent students more than applicants seeking a very small cohort environment.",
+        "The official English pages promote General Medicine in English, but applicants should still confirm the exact current classroom and clinical language setup for their intake."
+      ],
+      "bestFitFor": [
+        "Students who want a public Russian university that clearly promotes an English General Medicine route on its own official site.",
+        "Applicants who value explicit hospital-linked training and a larger research-medical-university ecosystem.",
+        "Families who want more concrete official dormitory information before shortlisting a university."
+      ],
+      "teachingHospitals": [
+        "Regional Pediatric Hospital",
+        "Institute for Pediatric Research"
+      ],
+      "recognitionBadges": [
+        "WDOMS Listed"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "PRMU official website",
+          "url": "https://pimunn.ru/en/"
+        },
+        {
+          "label": "PRMU foreign applicants page",
+          "url": "https://pimunn.ru/en/admissions/foreign-applicants/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does PRMU officially promote General Medicine in English?",
+          "answer": "Yes. PRMU's English home page says it offers full-fledged Medical Specialist programs in English, including General Medicine."
+        },
+        {
+          "question": "What tuition is publicly listed on the official site for 2025/2026?",
+          "answer": "PRMU's official 2025/2026 student fee table lists General Medicine at 305670 RUB for year 1, then 277700 RUB for year 2, and 241800 RUB for years 3 to 6."
+        },
+        {
+          "question": "What accommodation detail does PRMU publish officially?",
+          "answer": "The official English site says PRMU has six modern accommodations with shared rooms, furniture, bed linen, kitchens, and cafes or canteens within the building."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "PRMU English home page",
+            "url": "https://pimunn.ru/en/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "PRMU foreign applicants page",
+            "url": "https://pimunn.ru/en/admissions/foreign-applicants/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "PRMU student tuition page",
+            "url": "https://pimunn.ru/student/student/",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          }
+        ]
+      },
+      "programs": [
+        {
+          "slug": "privolzhsky-research-medical-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "RUB",
+          "officialAnnualTuitionAmount": 305670,
+          "annualTuitionUsd": 0,
+          "totalTuitionUsd": 0,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://pimunn.ru/en/admissions/foreign-applicants/",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "English medical specialist program",
+              "language": "English",
+              "details": "PRMU's English home page says the university offers full-fledged Medical Specialist programs in English, including General Medicine."
+            },
+            {
+              "phase": "Clinical and internship training",
+              "language": "English",
+              "details": "The official English site says students train at university departments and clinical sites and complete internships at the largest hospitals of the city."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official 2025/2026 student fee table publishes year-by-year RUB pricing for General Medicine: 305670 RUB in year 1, 277700 RUB in year 2, and 241800 RUB in years 3 to 6. I left all USD fields at 0 because the university did not publish USD pricing and I did not apply a same-day official FX conversion. No fixed official living-cost amount was published on the reviewed pages.",
+          "sourceUrls": [
+            "https://pimunn.ru/en/",
+            "https://pimunn.ru/en/admissions/foreign-applicants/",
+            "https://pimunn.ru/student/student/"
+          ]
+        }
+      ]
+    }
+  ]
+}

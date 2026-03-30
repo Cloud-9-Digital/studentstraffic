@@ -1,0 +1,527 @@
+{
+  "batchId": "kyrgyzstan-batch-001",
+  "countrySlug": "kyrgyzstan",
+  "notes": "Official-source research drafts for net-new Kyrgyz medical universities. Keep unpublished until reviewed.",
+  "universities": [
+    {
+      "slug": "adam-university",
+      "name": "Adam University",
+      "city": "Bishkek",
+      "type": "Private",
+      "establishedYear": 1994,
+      "summary": "Adam University is a private Bishkek institution whose official General Medicine pages emphasize evidence-based medicine, digital and simulation tools, and a broad network of clinical training bases in Kyrgyzstan and Pakistan. Its School of Medicine pages also target international applicants with English-medium teaching, hostel support, and visa guidance.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://adam.edu.kg/en/",
+      "campusLifestyle": "Official student-life pages describe an international-student-oriented environment with sports activities, board games, mountain trips, and early practical exposure from the first year alongside regular classroom teaching.",
+      "cityProfile": "Adam University describes itself as being in Bishkek, the capital of the Kyrgyz Republic. Its official accommodation page says students can stay in university hostel housing or arrange nearby flats and apartments around the campus area.",
+      "clinicalExposure": "Adam University's General Medicine page says students train across clinical bases in Kyrgyzstan and Pakistan and can complete industrial placements in their home countries. The university also says it has expanded its own clinical infrastructure through Plaza Clinic Medical Center and the Adam University Medical Center.",
+      "hostelOverview": "The official hostel page says first- and second-year students must stay in the hostel. Rooms are arranged for 2 or 4 students, and the listed room setup includes a bed, mattress, pillow, blanket, desk, chair, heater, and study lighting, with 24-hour access to security and emergency services.",
+      "indianFoodSupport": "The reviewed official Adam University sources do not describe a dedicated Indian mess or food service. Applicants should confirm current meal arrangements directly with the university or hostel team.",
+      "safetyOverview": "The official hostel page states that the hostel has 24-hour security and emergency-service access. The reviewed sources do not publish broader city-safety statistics, so applicants should request current transport and safety guidance from the university.",
+      "studentSupport": "Adam University's official admissions pages say the university provides visa support, airport pickup coordination, hostel guidance, passport registration help, and visa-extension assistance through its international office.",
+      "whyChoose": [
+        "Official School of Medicine pages describe English-medium teaching, simulation tools, and English-speaking faculty.",
+        "Adam University's admissions page publishes a current General Medicine tuition figure and a defined foreign-student admissions process.",
+        "The university publishes a detailed clinical-base list in Kyrgyzstan and Pakistan and says it has opened its own medical centers."
+      ],
+      "thingsToConsider": [
+        "Adam's central admissions page lists General Medicine as a 6-year specialty, while School of Medicine pages describe a 5-year English-medium MBBS/MD track, so applicants should confirm which structure applies to their intake.",
+        "The official tuition figure reviewed for General Medicine is published in KGS, not USD.",
+        "The reviewed official pages do not publish a dedicated Indian food service or a full annual living-cost budget."
+      ],
+      "bestFitFor": [
+        "Students who want a Bishkek-based private medical option with official hostel support in the early years.",
+        "Applicants who value published clinical-base information and visa/on-arrival guidance.",
+        "Students comfortable confirming final program-structure details directly with admissions before enrollment."
+      ],
+      "teachingHospitals": [
+        "Adam University Medical Center",
+        "Regional Family Medicine Centre, Bishkek",
+        "Emergency Medical Care Center, Bishkek",
+        "Regional Clinical United Hospital, Jalal-Abad"
+      ],
+      "recognitionBadges": [
+        "Licensed by the Ministry of Education and Science of the Kyrgyz Republic",
+        "Independent programme accreditation"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Adam University admission campaign",
+          "url": "https://adam.edu.kg/en/admission/"
+        },
+        {
+          "label": "Adam University School of Medicine legislative documents",
+          "url": "https://fm.adam.edu.kg/accreditation/legislative-documents/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What annual tuition does Adam University officially publish for General Medicine?",
+          "answer": "Adam University's admissions page lists General Medicine at 93,000 KGS per year for the 2025-2026 academic year."
+        },
+        {
+          "question": "Does Adam University say medicine is taught in English?",
+          "answer": "Yes. The School of Medicine faculty page says the medicine program is taught in English and describes an English-medium MBBS/MD track."
+        },
+        {
+          "question": "What accommodation details are officially published?",
+          "answer": "The official hostel page says first- and second-year students must live in the hostel, rooms are for 2 or 4 students, and the hostel has 24-hour security and emergency-service access."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "Adam University admission campaign",
+            "url": "https://adam.edu.kg/en/admission/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Adam University General Medicine page",
+            "url": "https://adam.edu.kg/en/education/specialist/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Adam University School of Medicine faculty page",
+            "url": "https://fm.adam.edu.kg/about/faculty/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Adam University School of Medicine admission requirements",
+            "url": "https://fm.adam.edu.kg/admission/requirements/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Adam University School of Medicine dormitory page",
+            "url": "https://fm.adam.edu.kg/for-students/dormitory/",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Adam University School of Medicine legislative documents",
+            "url": "https://fm.adam.edu.kg/accreditation/legislative-documents/",
+            "kind": "recognition",
+            "checkedAt": "2026-03-30"
+          }
+        ],
+        "notes": "Official Adam pages are useful but not perfectly aligned: the central admissions page publishes General Medicine as a 6-year specialty with tuition in KGS, while School of Medicine pages describe a 5-year English-medium MBBS/MD track. This draft keeps that discrepancy visible instead of smoothing it over."
+      },
+      "programs": [
+        {
+          "slug": "adam-university-general-medicine",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "KGS",
+          "officialAnnualTuitionAmount": 93000,
+          "annualTuitionUsd": 0,
+          "totalTuitionUsd": 0,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://adam.edu.kg/en/education/specialist/",
+          "medium": "English + Local Support",
+          "teachingPhases": [
+            {
+              "phase": "Foundational medical sciences",
+              "language": "English + Local Support",
+              "details": "Adam University's General Medicine page says students build a foundation in biomedical and clinical sciences while using digital and simulation technologies."
+            },
+            {
+              "phase": "Clinical training and industrial practice",
+              "language": "English + Local Support",
+              "details": "The university says students complete clinical placements at training bases in Kyrgyzstan and Pakistan, and international students may undertake industrial practice in their home countries."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "The School of Medicine says faculty are fluent in English and teaching uses Simformer, Webex, and Virtumed.",
+            "Adam University's medical pages say international students can complete industrial practice in familiar healthcare settings in their home countries."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "Adam University's admissions page lists General Medicine at 93,000 KGS per year for the 2025-2026 academic year. The School of Medicine pages separately describe a 5-year English-medium MBBS/MD track, so applicants should confirm whether their intake follows the 5-year or 6-year structure. USD fields are 0 because the reviewed official tuition figure is published only in KGS.",
+          "sourceUrls": [
+            "https://adam.edu.kg/en/admission/",
+            "https://adam.edu.kg/en/education/specialist/",
+            "https://fm.adam.edu.kg/about/faculty/",
+            "https://fm.adam.edu.kg/admission/requirements/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "international-higher-school-of-medicine",
+      "name": "International Higher School of Medicine",
+      "city": "Bishkek",
+      "type": "Private",
+      "establishedYear": 2003,
+      "summary": "IHSM is a Bishkek-based medical school founded in 2003 that publishes English-medium MBBS admissions information, year-by-year USD tuition, hostel and mess details, and accreditation records on its official site. The school presents itself as an international medical institution designed for foreign applicants with 12 years of prior education.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://ism.edu.kg/",
+      "campusLifestyle": "IHSM's official student and accommodation pages show a strongly international campus environment with student self-governance, multiple student organizations, organized dining, and dormitory-based living with study and recreation spaces.",
+      "cityProfile": "IHSM operates across multiple Bishkek sites, including the Eastern Medical Campus, the Morphological Center, and the university clinic. This gives the school a distributed capital-city setup rather than a single isolated campus.",
+      "clinicalExposure": "IHSM's official site says clinical training is coordinated through its Medical Affairs Department, the Clinical Simulation Center, the Medical Clinic of IHSM \"VEDANTA,\" and affiliated state hospitals. The university says students take part in academic, industrial, and pre-graduation internships through these clinical bases.",
+      "hostelOverview": "The official accommodation page says IHSM provides dormitory housing for male and female students. Listed facilities include shared bathrooms with hot and cold water, laundry rooms, gym halls, reading rooms, Wi-Fi, hostel staff support, and hostel-affairs student representatives.",
+      "indianFoodSupport": "IHSM officially says its mess is managed by representatives for India and Pakistan and that experienced Indian cooks prepare traditional Indian cuisine. The page also says the current mess service is limited to Indian and Pakistani students.",
+      "safetyOverview": "IHSM's health and security page says two medical stations operate for students, the Vedanta university clinic is involved in care, emergency contacts are published, and students can contact the deputy dean for security in urgent situations.",
+      "studentSupport": "IHSM publishes dedicated contacts for academic affairs, student affairs, international affairs, hostel and accommodation, passport and visa support, clinical training, simulation, and quality-management offices, which gives international students multiple named support channels.",
+      "whyChoose": [
+        "The official undergraduate page publishes year-by-year tuition, hostel and mess fees, medical-fee lines, and admission requirements in English.",
+        "IHSM publishes multiple institutional and General Medicine accreditation records on its official accreditation page.",
+        "Official pages make the clinical ecosystem visible through VEDANTA, the simulation center, and dedicated clinical-training administration."
+      ],
+      "thingsToConsider": [
+        "Year 1 tuition is higher than later years in the official fee table.",
+        "The official mess currently says it serves Indian and Pakistani students, so other students should confirm current meal options before arrival.",
+        "Hostel rules, including the 10:00 PM entry limit and medical-insurance procedures, should be reviewed carefully before travel."
+      ],
+      "bestFitFor": [
+        "Students who want a medical school that publishes a clear USD fee structure on its own site.",
+        "Applicants seeking English-medium training with strong international-student services in Bishkek.",
+        "Students who value seeing admissions, accommodation, security, and accreditation information in one official source trail."
+      ],
+      "teachingHospitals": [
+        "Medical Clinic of IHSM \"VEDANTA\"",
+        "IUK University Clinic"
+      ],
+      "recognitionBadges": [
+        "International institutional accreditation by IAAR",
+        "International program accreditation in General Medicine by IAAR",
+        "National program accreditation in General Medicine by AAEPO"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "IHSM accreditation and ratings",
+          "url": "https://ism.edu.kg/accreditation-and-ratings"
+        },
+        {
+          "label": "IHSM official documents",
+          "url": "https://ism.edu.kg/official-documents"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What tuition does IHSM officially publish for MBBS?",
+          "answer": "IHSM's undergraduate applicants page lists tuition of 7,500 USD for year 1 and 6,000 USD for each of years 2 to 5. The same page also lists hostel and mess fees of 2,150 USD and a medical fee of 200 USD from year 2 onward."
+        },
+        {
+          "question": "Does IHSM teach medicine in English?",
+          "answer": "Yes. IHSM's undergraduate applicants page is published in English for MBBS applicants, and the university's state-language page says foreign students study at IHSM where education is conducted in English."
+        },
+        {
+          "question": "What hostel support is officially described by IHSM?",
+          "answer": "IHSM says it provides separate dormitory accommodation for male and female students, with laundry rooms, study rooms, gym halls, Wi-Fi, hostel staff, and hostel-affairs student representatives."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "IHSM undergraduate applicants page",
+            "url": "https://www.ism.edu.kg/undergraduate-applicants",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "IHSM accreditation and ratings",
+            "url": "https://ism.edu.kg/accreditation-and-ratings",
+            "kind": "recognition",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "IHSM food and accommodation page",
+            "url": "https://ism.edu.kg/food-and-accommodation",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "IHSM health and security page",
+            "url": "https://www.ism.edu.kg/health-and-security",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "IHSM contacts page",
+            "url": "https://ism.edu.kg/contacts",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "IHSM student council page",
+            "url": "https://ism.edu.kg/student-council",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "IHSM medical affairs department page",
+            "url": "https://ism.edu.kg/medical-affairs-department",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          }
+        ]
+      },
+      "programs": [
+        {
+          "slug": "international-higher-school-of-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 5,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 7500,
+          "officialTotalTuitionAmount": 31500,
+          "annualTuitionUsd": 7500,
+          "totalTuitionUsd": 31500,
+          "livingUsd": 2150,
+          "officialProgramUrl": "https://www.ism.edu.kg/undergraduate-applicants",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Foundational medical training",
+              "language": "English",
+              "details": "IHSM's undergraduate applicants page is published for MBBS applicants in English and is designed for foreign citizens with 12 years of prior education."
+            },
+            {
+              "phase": "Clinical training and internships",
+              "language": "English",
+              "details": "The Medical Affairs Department says it coordinates academic, industrial, and pre-graduation internships with clinical bases and supports student involvement in diagnostic and treatment processes."
+            }
+          ],
+          "yearlyCostBreakdown": [
+            {
+              "yearLabel": "Year 1",
+              "tuitionUsd": 7500,
+              "hostelUsd": 0,
+              "livingUsd": 0,
+              "totalUsd": 7500,
+              "notes": "The official fee table marks hostel, mess, and medical fee as N/A for the first academic year."
+            },
+            {
+              "yearLabel": "Year 2",
+              "tuitionUsd": 6000,
+              "hostelUsd": 2150,
+              "livingUsd": 200,
+              "totalUsd": 8350,
+              "notes": "Total is taken from the official IHSM payment table."
+            },
+            {
+              "yearLabel": "Year 3",
+              "tuitionUsd": 6000,
+              "hostelUsd": 2150,
+              "livingUsd": 200,
+              "totalUsd": 8350,
+              "notes": "Total is taken from the official IHSM payment table."
+            },
+            {
+              "yearLabel": "Year 4",
+              "tuitionUsd": 6000,
+              "hostelUsd": 2150,
+              "livingUsd": 200,
+              "totalUsd": 8350,
+              "notes": "Total is taken from the official IHSM payment table."
+            },
+            {
+              "yearLabel": "Year 5",
+              "tuitionUsd": 6000,
+              "hostelUsd": 2150,
+              "livingUsd": 200,
+              "totalUsd": 8350,
+              "notes": "Total is taken from the official IHSM payment table."
+            }
+          ],
+          "licenseExamSupport": [
+            "IHSM maintains an official Excellence in Licensing section on its website.",
+            "The official alumni monitoring sector says graduates go through recognition and licensing examinations such as FMGE, PLAB, USMLE, and NRE."
+          ],
+          "intakeMonths": [
+            "August",
+            "December"
+          ],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "IHSM publishes tuition in USD on its undergraduate applicants page: 7,500 USD for year 1 and 6,000 USD for each of years 2 to 5. The same official table lists hostel and mess fees of 2,150 USD and a medical fee of 200 USD from year 2 onward. `annualTuitionUsd` reflects the first-year tuition because the official tuition schedule is front-loaded.",
+          "sourceUrls": [
+            "https://www.ism.edu.kg/undergraduate-applicants",
+            "https://ism.edu.kg/food-and-accommodation",
+            "https://ism.edu.kg/medical-affairs-department",
+            "https://ism.edu.kg/accreditation-and-ratings",
+            "https://ism.edu.kg/excellence-in-licensing",
+            "https://ism.edu.kg/alumni-monitoring-sector"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "osh-state-university",
+      "name": "Osh State University",
+      "city": "Osh",
+      "type": "Public",
+      "establishedYear": 1939,
+      "summary": "Osh State University is a public university whose roots officially trace back to 1939 and whose International Medical Faculty was approved in 2015. Official OshSU sources highlight a foreign-citizen General Medicine route, a large dormitory and clinic base, and ongoing institutional work on support issues such as medical insurance for international students.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://oshsu.kg/en",
+      "campusLifestyle": "Official OshSU sources show a large public-university environment with multiple faculties, sports infrastructure, and a sizable dormitory network rather than a single-purpose medical campus.",
+      "cityProfile": "OshSU's main campus is on Alymbek Datka Street in Osh, while the International Medical Faculty page gives 215 Vodozabornaya Street as the faculty address. This setup fits students who want a southern-Kyrgyzstan university environment rather than Bishkek.",
+      "clinicalExposure": "OshSU's official infrastructure updates say the university has two medical clinics and is building another 7-storey medical clinic. The International Medical Faculty page also positions the faculty around internationalized medical education, research, and professional preparation.",
+      "hostelOverview": "The reviewed official OshSU sources confirm substantial hostel capacity, though the exact count differs by page: one dormitory news post says the university has 9 student dormitories, while later university-wide infrastructure updates say it has 10. The dormitory page says living conditions include dining rooms, washrooms, laundry rooms, and toilets.",
+      "indianFoodSupport": "The reviewed official OshSU sources do not publish a dedicated Indian mess or Indian food arrangement for medical students. Applicants should confirm current food options directly with the university.",
+      "safetyOverview": "The reviewed official OshSU sources focus more on dormitories, clinics, and medical-insurance support than on broad city-safety claims. OshSU did officially discuss medical-insurance procedures for foreign students in 2025.",
+      "studentSupport": "Official OshSU sources show an admissions office, an International Medical Faculty, a large dormitory system, and university-level work on medical-insurance awareness for foreign students. These suggest practical administrative support, but applicants should still confirm the current process for visas, insurance, and housing.",
+      "whyChoose": [
+        "Public university with a long official history and a dedicated International Medical Faculty.",
+        "Official pages show a foreign-citizen General Medicine route under specialty 560001.",
+        "OshSU publishes substantial university infrastructure, including multiple dormitories and two medical clinics."
+      ],
+      "thingsToConsider": [
+        "The English specialty page explicitly notes that its displayed tuition table shows 2022-2023 fees, so applicants should reconfirm the current contract amount before payment.",
+        "The reviewed official sources do not publish a dedicated Indian food service or a detailed annual living-cost budget.",
+        "Dormitory counts differ across official OshSU pages, so applicants should ask for the latest housing allocation details."
+      ],
+      "bestFitFor": [
+        "Students who prefer a large public-university setting in Osh rather than a smaller private school.",
+        "Applicants who want a foreign-citizen General Medicine route under a dedicated International Medical Faculty.",
+        "Families comfortable verifying final fee and housing details directly with admissions before deposit or payment."
+      ],
+      "teachingHospitals": [
+        "Osh State University Medical Clinic"
+      ],
+      "recognitionBadges": [
+        "Licensed by the Ministry of Education and Culture of the Kyrgyz Republic",
+        "Public university with special status in Kyrgyzstan's higher-education system"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "OshSU specialty page",
+          "url": "https://www.oshsu.kg/en/page/43"
+        },
+        {
+          "label": "OshSU academic advancement and special status article",
+          "url": "https://www.oshsu.kg/en/news/2176"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What tuition does OshSU publish for foreign-citizen General Medicine?",
+          "answer": "The English specialty page lists Medical work (for foreign citizens) at 252,000 KGS for a 5-year daytime program, but the page also notes that the displayed table is for 2022-2023 fees, so applicants should reconfirm the latest amount with OshSU."
+        },
+        {
+          "question": "Where is OshSU's International Medical Faculty located?",
+          "answer": "The International Medical Faculty page lists the faculty address as 215 Vodozabornaya Street, Osh."
+        },
+        {
+          "question": "What accommodation support is officially visible at OshSU?",
+          "answer": "OshSU's official sources confirm a large dormitory network and say dormitories include basic living facilities such as dining rooms, washrooms, laundry rooms, and toilets."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "OshSU specialty page",
+            "url": "https://www.oshsu.kg/en/page/43",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "OshSU tuition fees page",
+            "url": "https://www.oshsu.kg/en/page/55",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "OshSU Faculty of International Medicine page",
+            "url": "https://oshsu.kg/public/index.php/en/page/174",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "OshSU about page",
+            "url": "https://oshsu.kg/en/page/258",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "OshSU student dormitory page",
+            "url": "https://oshsu.kg/public/index.php/en/news/2485",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "OshSU foreign-student insurance article",
+            "url": "https://www.oshsu.kg/public/en/news/3152",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "OshSU infrastructure update with clinics and dormitories",
+            "url": "https://oshsu.kg/en/events/3862",
+            "kind": "other",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "OshSU academic advancement and special status article",
+            "url": "https://www.oshsu.kg/en/news/2176",
+            "kind": "recognition",
+            "checkedAt": "2026-03-30"
+          }
+        ],
+        "notes": "OshSU has an official current tuition page for applicants, but the English specialty table that clearly exposes the foreign-citizen General Medicine fee is labeled as showing 2022-2023 tuition. This draft keeps that caveat explicit and avoids converting KGS figures into USD."
+      },
+      "programs": [
+        {
+          "slug": "osh-state-university-general-medicine-foreign-citizens",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 5,
+          "officialFeeCurrency": "KGS",
+          "officialAnnualTuitionAmount": 252000,
+          "annualTuitionUsd": 0,
+          "totalTuitionUsd": 0,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://www.oshsu.kg/en/page/43",
+          "medium": "English + Local Support",
+          "teachingPhases": [
+            {
+              "phase": "International Medical Faculty training",
+              "language": "English + Local Support",
+              "details": "OshSU's International Medical Faculty says it aims to internationalize national medical education and prepare students for medical work in Kyrgyzstan and abroad."
+            },
+            {
+              "phase": "University-clinic and infrastructure-based exposure",
+              "language": "English + Local Support",
+              "details": "OshSU's official infrastructure updates say the university has two medical clinics and is building another 7-storey medical clinic for student and institutional use."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "OshSU officially reported English-language certification work for lecturers at the Faculty of International Medicine in institutions where instruction is conducted in English.",
+            "The International Medical Faculty says it prepares graduates for independent professional, scientific, and research activity."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "OshSU's English specialty page lists Medical work (for foreign citizens) at 252,000 KGS for a 5-year daytime program, but the same page notes that the displayed table shows 2022-2023 tuition fees. OshSU's current applicant tuition page for 2025 is live, but the linked tariff PDF was not machine-readable during this check. USD fields are 0 because the reviewed official fee figure is published in KGS.",
+          "sourceUrls": [
+            "https://www.oshsu.kg/en/page/43",
+            "https://www.oshsu.kg/en/page/55",
+            "https://oshsu.kg/public/index.php/en/page/174",
+            "https://www.oshsu.kg/en/news/2658",
+            "https://www.oshsu.kg/public/en/news/3152"
+          ]
+        }
+      ]
+    }
+  ]
+}

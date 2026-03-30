@@ -5,7 +5,10 @@ import { ArrowUpRight, Check, Plus, X } from "lucide-react";
 import type { FinderProgram } from "@/lib/data/types";
 import { getUniversityHref } from "@/lib/routes";
 import { getUniversityInitials } from "@/lib/university-media";
-import { formatCurrencyUsd } from "@/lib/utils";
+import {
+  formatProgramAnnualFee,
+  hasPublishedUsdAmount,
+} from "@/lib/utils";
 
 function UniLogoSmall({ university }: { university: FinderProgram["university"] }) {
   const initials = getUniversityInitials(university.name);
@@ -33,17 +36,26 @@ type Row = {
 };
 
 function buildRows(programs: FinderProgram[]): Row[] {
-  const tuitions = programs.map((p) => p.offering.annualTuitionUsd);
-  const minTuition = Math.min(...tuitions);
-  const tuitionWinners = tuitions
-    .map((t, i) => (t === minTuition ? i : -1))
-    .filter((i) => i !== -1);
+  const hasComparableUsdFees = programs.every((program) =>
+    hasPublishedUsdAmount(program.offering.annualTuitionUsd),
+  );
+  const tuitions = hasComparableUsdFees
+    ? programs.map((p) => p.offering.annualTuitionUsd)
+    : [];
+  const minTuition = hasComparableUsdFees ? Math.min(...tuitions) : null;
+  const tuitionWinners =
+    minTuition == null
+      ? []
+      : tuitions.map((t, i) => (t === minTuition ? i : -1)).filter((i) => i !== -1);
 
   return [
     {
       label: "Annual tuition",
-      values: programs.map((p) => formatCurrencyUsd(p.offering.annualTuitionUsd)),
-      winnerIndexes: tuitionWinners.length < programs.length ? tuitionWinners : undefined,
+      values: programs.map((p) => formatProgramAnnualFee(p.offering)),
+      winnerIndexes:
+        hasComparableUsdFees && tuitionWinners.length < programs.length
+          ? tuitionWinners
+          : undefined,
     },
     {
       label: "Duration",

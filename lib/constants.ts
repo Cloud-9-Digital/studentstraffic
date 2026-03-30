@@ -121,6 +121,7 @@ export const footerPopularRoutes = [
   { label: "MBBS in Philippines", href: "/mbbs-in-philippines" },
   { label: "MBBS in Kyrgyzstan", href: "/mbbs-in-kyrgyzstan" },
   { label: "MBBS in Kazakhstan", href: "/mbbs-in-kazakhstan" },
+  { label: "Medical Schools in Uzbekistan", href: "/wdoms/uzbekistan" },
 ] as const;
 
 export const homeCourseCategories = [

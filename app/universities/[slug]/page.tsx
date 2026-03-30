@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   CircleDollarSign,
   Clock,
+  ExternalLink,
   GraduationCap,
   Languages,
   MapPinned,
@@ -41,6 +42,7 @@ import {
   getProgramsForUniversity,
   getUniversities,
   getUniversityBySlug,
+  getWdomsDirectoryEntryForUniversity,
 } from "@/lib/data/catalog";
 import type { UniversityGalleryImage } from "@/lib/data/types";
 import { buildIndexableMetadata } from "@/lib/metadata";
@@ -61,10 +63,13 @@ import {
 } from "@/lib/university-media";
 import {
   cn,
+  formatProgramAnnualFee,
   formatCurrencyUsd,
   formatProgramDuration,
   formatUsdAmountOrTbd,
+  getProgramAnnualFeeLabel,
   hasPublishedUsdAmount,
+  hasRenderableProgramAnnualFee,
 } from "@/lib/utils";
 
 export async function generateStaticParams() {
@@ -131,9 +136,10 @@ export default async function UniversityDetailPage({
 
   if (!university) notFound();
 
-  const [programs, country] = await Promise.all([
+  const [programs, country, wdomsEntry] = await Promise.all([
     getProgramsForUniversity(university.slug),
     getCountryBySlug(university.countrySlug),
+    getWdomsDirectoryEntryForUniversity(university.slug),
   ]);
 
   if (!country) notFound();
@@ -143,9 +149,22 @@ export default async function UniversityDetailPage({
   const primaryProgramHasPublishedFee = primaryProgram
     ? hasPublishedUsdAmount(primaryProgram.offering.annualTuitionUsd)
     : false;
+  const primaryProgramHasRenderableFee = primaryProgram
+    ? hasRenderableProgramAnnualFee(primaryProgram.offering)
+    : false;
+  const primaryProgramFeeDisplay = primaryProgram
+    ? formatProgramAnnualFee(primaryProgram.offering)
+    : null;
   const galleryImages = getUniversityGalleryImages(university);
   const coverImage = getUniversityCoverImage(university);
   const additionalGalleryImages = galleryImages.slice(1);
+  const pageReviewedAt = university.lastVerifiedAt ?? catalogReviewedAt;
+  const feeSourceUrls = [
+    ...new Set(primaryProgram?.offering.sourceUrls ?? []),
+  ];
+  const extraFeeSourceUrls = feeSourceUrls.filter(
+    (url) => !university.researchSources.some((source) => source.url === url),
+  );
 
   const path = `/universities/${university.slug}`;
   const primaryCourseStructuredData = primaryProgram
@@ -156,7 +175,10 @@ export default async function UniversityDetailPage({
     university,
     country,
     programs,
-    sameAs: university.recognitionLinks.map((item) => item.url),
+    sameAs: [...new Set([
+      ...university.recognitionLinks.map((item) => item.url),
+      wdomsEntry?.schoolUrl,
+    ].filter(Boolean))] as string[],
   });
   const structuredDataItems = [
     getBreadcrumbStructuredData([
@@ -175,8 +197,8 @@ export default async function UniversityDetailPage({
         primaryCourseStructuredData?.["@id"],
       ].filter(Boolean) as string[],
       mainEntityId: universityStructuredData["@id"],
-      datePublished: catalogReviewedAt,
-      dateModified: catalogReviewedAt,
+      datePublished: pageReviewedAt,
+      dateModified: pageReviewedAt,
     }),
     universityStructuredData,
     programs.length
@@ -233,7 +255,9 @@ export default async function UniversityDetailPage({
                     <span className="text-sm font-medium text-white/80">
                       {primaryProgramHasPublishedFee
                         ? `${formatCurrencyUsd(primaryProgram.offering.annualTuitionUsd)} / year`
-                        : "Fee on official notice"}
+                        : primaryProgramHasRenderableFee && primaryProgramFeeDisplay
+                          ? `${primaryProgramFeeDisplay} / year`
+                          : "Fee on official notice"}
                     </span>
                   </div>
                 )}
@@ -270,7 +294,7 @@ export default async function UniversityDetailPage({
                 </div>
                 <div className="flex items-center gap-1.5 text-xs text-white/60">
                   <CalendarDays className="size-3 shrink-0" />
-                  <span>Updated <span className="font-medium text-white/65">{formatContentDate(catalogReviewedAt)}</span></span>
+                  <span>Updated <span className="font-medium text-white/65">{formatContentDate(pageReviewedAt)}</span></span>
                 </div>
               </div>
             </div>
@@ -300,8 +324,8 @@ export default async function UniversityDetailPage({
                   <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
                     <GlanceStat
                       icon={<CircleDollarSign className="size-4 text-accent" />}
-                      label={primaryProgramHasPublishedFee ? "Annual tuition" : "Fee status"}
-                      value={formatUsdAmountOrTbd(primaryProgram.offering.annualTuitionUsd)}
+                      label={getProgramAnnualFeeLabel(primaryProgram.offering)}
+                      value={formatProgramAnnualFee(primaryProgram.offering)}
                     />
                     <GlanceStat
                       icon={<Clock className="size-4 text-accent" />}
@@ -457,6 +481,95 @@ export default async function UniversityDetailPage({
                     )}
                   </div>
 
+                  {(primaryProgram.offering.feeNotes ||
+                    primaryProgram.offering.feeVerifiedAt ||
+                    university.lastVerifiedAt ||
+                    university.researchNotes ||
+                    university.researchSources.length > 0 ||
+                    extraFeeSourceUrls.length > 0) && (
+                    <div className="space-y-3">
+                      <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                        Research & verification
+                      </p>
+                      <div className="section-tint rounded-[1.25rem] p-5">
+                        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+                          {primaryProgram.offering.feeVerifiedAt ? (
+                            <span>
+                              Fee checked{" "}
+                              <span className="font-medium text-foreground">
+                                {formatContentDate(primaryProgram.offering.feeVerifiedAt)}
+                              </span>
+                            </span>
+                          ) : null}
+                          {university.lastVerifiedAt ? (
+                            <span>
+                              Profile checked{" "}
+                              <span className="font-medium text-foreground">
+                                {formatContentDate(university.lastVerifiedAt)}
+                              </span>
+                            </span>
+                          ) : null}
+                        </div>
+
+                        {primaryProgram.offering.feeNotes ? (
+                          <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                            {primaryProgram.offering.feeNotes}
+                          </p>
+                        ) : null}
+
+                        {university.researchNotes ? (
+                          <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                            {university.researchNotes}
+                          </p>
+                        ) : null}
+
+                        {university.researchSources.length > 0 ? (
+                          <div className="mt-5">
+                            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                              Official sources used
+                            </p>
+                            <div className="mt-3 flex flex-wrap gap-2">
+                              {university.researchSources.map((source) => (
+                                <a
+                                  key={`${source.url}-${source.checkedAt}`}
+                                  href={source.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1.5 text-xs font-semibold text-foreground transition-colors hover:border-primary/30 hover:text-primary"
+                                >
+                                  {source.label}
+                                  <ExternalLink className="size-3.5" />
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        ) : null}
+
+                        {extraFeeSourceUrls.length > 0 ? (
+                          <div className="mt-5">
+                            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                              Fee source pages
+                            </p>
+                            <div className="mt-3 flex flex-wrap gap-2">
+                              {extraFeeSourceUrls.map((url) => (
+                                <a
+                                  key={url}
+                                  href={url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1.5 text-xs font-semibold text-foreground transition-colors hover:border-primary/30 hover:text-primary"
+                                >
+                                  Fee source
+                                  <ExternalLink className="size-3.5" />
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    </div>
+                  )}
+
                 </div>
               )}
 
@@ -570,6 +683,35 @@ export default async function UniversityDetailPage({
                     especially when students are comparing language pathway, licensing fit, and
                     long-term clinical planning.
                   </p>
+                  {wdomsEntry ? (
+                    <div className="mt-5 rounded-xl border border-border bg-white/80 p-4">
+                      <p className="text-sm font-semibold text-foreground">
+                        Official WDOMS listing
+                      </p>
+                      <p className="mt-1.5 text-sm leading-7 text-muted-foreground">
+                        This university appears in the World Directory of Medical
+                        Schools
+                        {wdomsEntry.schoolName !== university.name
+                          ? ` as ${wdomsEntry.schoolName}`
+                          : ""}
+                        . Use the official listing for directory-level
+                        verification, then continue evaluating admissions,
+                        teaching language, and India-return planning on this
+                        page.
+                      </p>
+                      <div className="mt-3">
+                        <a
+                          href={wdomsEntry.schoolUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:border-primary/30 hover:text-primary"
+                        >
+                          Open WDOMS listing
+                          <ExternalLink className="size-4" />
+                        </a>
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
               </div>
 

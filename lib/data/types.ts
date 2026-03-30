@@ -27,6 +27,20 @@ export type LinkItem = {
   url: string;
 };
 
+export type ResearchSource = {
+  label: string;
+  url: string;
+  kind:
+    | "official-university"
+    | "official-program"
+    | "official-fee"
+    | "government"
+    | "recognition"
+    | "other";
+  checkedAt: string;
+  notes?: string;
+};
+
 export type Faq = {
   question: string;
   answer: string;
@@ -65,6 +79,7 @@ export type University = {
   establishedYear: number;
   summary: string;
   featured: boolean;
+  published: boolean;
   officialWebsite: string;
   campusLifestyle: string;
   cityProfile: string;
@@ -81,6 +96,9 @@ export type University = {
   recognitionLinks: LinkItem[];
   faq: Faq[];
   similarUniversitySlugs: string[];
+  lastVerifiedAt?: string;
+  researchSources: ResearchSource[];
+  researchNotes?: string;
   updatedAt?: string;
 };
 
@@ -133,14 +151,49 @@ export type ProgramOffering = {
   annualTuitionUsd: number;
   totalTuitionUsd: number;
   livingUsd: number;
+  officialFeeCurrency?: string;
+  officialAnnualTuitionAmount?: number;
+  officialTotalTuitionAmount?: number;
   officialProgramUrl: string;
   medium: "English" | "English + Local Support" | "Vietnamese";
+  published: boolean;
   teachingPhases: TeachingPhase[];
   yearlyCostBreakdown: YearlyCostBreakdown[];
   licenseExamSupport: string[];
   intakeMonths: string[];
+  feeVerifiedAt?: string;
+  fxRateDate?: string;
+  fxRateSourceUrl?: string;
+  feeNotes?: string;
+  sourceUrls: string[];
   featured: boolean;
   updatedAt?: string;
+};
+
+export type WdomsDirectoryEntry = {
+  countrySlug: string;
+  countryName: string;
+  schoolId: string;
+  schoolName: string;
+  cityName: string;
+  schoolUrl: string;
+  schoolType?: string;
+  operationalStatus?: string;
+  yearInstructionStarted?: number;
+  academicAffiliation?: string;
+  clinicalFacilities?: string;
+  clinicalTraining?: string;
+  schoolWebsite?: string;
+  mainAddress?: string;
+  qualificationTitle?: string;
+  curriculumDuration?: string;
+  languageOfInstruction?: string;
+  prerequisiteEducation?: string;
+  foreignStudents?: string;
+  entranceExam?: string;
+  routeSlug: string;
+  matchedUniversitySlug?: string;
+  matchedUniversityName?: string;
 };
 
 export type UniversityReviewType = "text" | "youtube_video";
@@ -286,6 +339,8 @@ export type FinderCardProgram = {
   offering: {
     slug: string;
     annualTuitionUsd: number;
+    officialFeeCurrency?: string;
+    officialAnnualTuitionAmount?: number;
     featured: boolean;
   };
 };

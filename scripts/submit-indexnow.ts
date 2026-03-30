@@ -3,6 +3,8 @@ import "dotenv/config";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
+import { eq } from "drizzle-orm";
+
 import { landingPages } from "@/lib/data/landing-pages";
 import { getLatestDate, isDateOnOrAfter, toDateValue } from "@/lib/content-dates";
 import {
@@ -266,6 +268,7 @@ async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
         establishedYear: universitiesTable.establishedYear,
         summary: universitiesTable.summary,
         featured: universitiesTable.featured,
+        published: universitiesTable.published,
         officialWebsite: universitiesTable.officialWebsite,
         logoUrl: universitiesTable.logoUrl,
         coverImageUrl: universitiesTable.coverImageUrl,
@@ -285,10 +288,17 @@ async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
         recognitionLinks: universitiesTable.recognitionLinks,
         faq: universitiesTable.faq,
         similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
+        lastVerifiedAt: universitiesTable.lastVerifiedAt,
+        researchSources: universitiesTable.researchSources,
+        researchNotes: universitiesTable.researchNotes,
         updatedAt: universitiesTable.updatedAt,
       })
-      .from(universitiesTable),
-    db.select().from(programOfferingsTable),
+      .from(universitiesTable)
+      .where(eq(universitiesTable.published, true)),
+    db
+      .select()
+      .from(programOfferingsTable)
+      .where(eq(programOfferingsTable.published, true)),
   ]);
 
   const countries: Country[] = countryRows.map((country) => ({
@@ -331,6 +341,7 @@ async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
     establishedYear: university.establishedYear,
     summary: university.summary,
     featured: university.featured,
+    published: university.published,
     officialWebsite: university.officialWebsite,
     logoUrl: university.logoUrl ?? undefined,
     coverImageUrl: university.coverImageUrl ?? undefined,
@@ -352,6 +363,9 @@ async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
       university.recognitionLinks as University["recognitionLinks"],
     faq: university.faq as University["faq"],
     similarUniversitySlugs: university.similarUniversitySlugs,
+    lastVerifiedAt: university.lastVerifiedAt ?? undefined,
+    researchSources: university.researchSources as University["researchSources"],
+    researchNotes: university.researchNotes ?? undefined,
     updatedAt: university.updatedAt?.toISOString(),
   }));
 
@@ -359,27 +373,47 @@ async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
     universityRows.map((university) => [university.id, university.slug])
   );
 
-  const programOfferings: ProgramOffering[] = programRows.map((program) => ({
-    slug: program.slug,
-    universitySlug: universitySlugsById.get(program.universityId) ?? "",
-    courseSlug: courseSlugsById.get(program.courseId) ?? "",
-    title: program.title,
-    durationYears: program.durationYears,
-    annualTuitionUsd: program.annualTuitionUsd,
-    totalTuitionUsd: program.totalTuitionUsd,
-    livingUsd: program.livingUsd,
-    officialProgramUrl: program.officialProgramUrl,
-    medium: program.medium as ProgramOffering["medium"],
-    teachingPhases:
-      program.teachingPhases as ProgramOffering["teachingPhases"],
-    yearlyCostBreakdown:
-      program.yearlyCostBreakdown as ProgramOffering["yearlyCostBreakdown"],
-    licenseExamSupport:
-      program.licenseExamSupport as ProgramOffering["licenseExamSupport"],
-    intakeMonths: program.intakeMonths,
-    featured: program.featured,
-    updatedAt: program.updatedAt?.toISOString(),
-  }));
+  const programOfferings: ProgramOffering[] = programRows.flatMap((program) => {
+    const universitySlug = universitySlugsById.get(program.universityId);
+    const courseSlug = courseSlugsById.get(program.courseId);
+
+    if (!universitySlug || !courseSlug) {
+      return [];
+    }
+
+    return [{
+      slug: program.slug,
+      universitySlug,
+      courseSlug,
+      title: program.title,
+      durationYears: program.durationYears,
+      annualTuitionUsd: program.annualTuitionUsd,
+      totalTuitionUsd: program.totalTuitionUsd,
+      livingUsd: program.livingUsd,
+      officialFeeCurrency: program.officialFeeCurrency ?? undefined,
+      officialAnnualTuitionAmount:
+        program.officialAnnualTuitionAmount ?? undefined,
+      officialTotalTuitionAmount:
+        program.officialTotalTuitionAmount ?? undefined,
+      officialProgramUrl: program.officialProgramUrl,
+      medium: program.medium as ProgramOffering["medium"],
+      published: program.published,
+      teachingPhases:
+        program.teachingPhases as ProgramOffering["teachingPhases"],
+      yearlyCostBreakdown:
+        program.yearlyCostBreakdown as ProgramOffering["yearlyCostBreakdown"],
+      licenseExamSupport:
+        program.licenseExamSupport as ProgramOffering["licenseExamSupport"],
+      intakeMonths: program.intakeMonths,
+      feeVerifiedAt: program.feeVerifiedAt ?? undefined,
+      fxRateDate: program.fxRateDate ?? undefined,
+      fxRateSourceUrl: program.fxRateSourceUrl ?? undefined,
+      feeNotes: program.feeNotes ?? undefined,
+      sourceUrls: program.sourceUrls,
+      featured: program.featured,
+      updatedAt: program.updatedAt?.toISOString(),
+    }];
+  });
 
   return { countries, courses, universities, programOfferings };
 }

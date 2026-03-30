@@ -1,0 +1,132 @@
+{
+  "batchId": "russia-batch-001",
+  "countrySlug": "russia",
+  "notes": "Official-source research batch. Set published to true once the content is ready to go live.",
+  "universities": [
+    {
+      "slug": "example-medical-university",
+      "name": "Example Medical University",
+      "city": "Example City",
+      "type": "Public",
+      "establishedYear": 1950,
+      "summary": "A short, source-backed overview of the university's academic positioning and why it matters for international medical students.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://example.edu",
+      "campusLifestyle": "A concise paragraph about the student experience, campus rhythm, and support environment based on official information.",
+      "cityProfile": "A concise paragraph about the city context, transport, and student suitability.",
+      "clinicalExposure": "A concise paragraph about the university hospital network, clinical bases, or practical training setup.",
+      "hostelOverview": "A concise paragraph about hostel availability or accommodation options based on official sources.",
+      "indianFoodSupport": "A concise paragraph that states only what is officially supported or clearly documented. Do not guess.",
+      "safetyOverview": "A concise paragraph about campus and city safety context without making unsupported claims.",
+      "studentSupport": "A concise paragraph about international office support, onboarding, visa help, or language support.",
+      "whyChoose": [
+        "Verified strength one.",
+        "Verified strength two.",
+        "Verified strength three."
+      ],
+      "thingsToConsider": [
+        "Verified caution one.",
+        "Verified caution two.",
+        "Verified caution three."
+      ],
+      "bestFitFor": [
+        "Profile one.",
+        "Profile two.",
+        "Profile three."
+      ],
+      "teachingHospitals": [
+        "Official Hospital Name"
+      ],
+      "recognitionBadges": [
+        "WDOMS Listed"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Official university website",
+          "url": "https://example.edu"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does this university teach medicine in English?",
+          "answer": "Answer only from official sources."
+        },
+        {
+          "question": "What is the annual tuition?",
+          "answer": "Answer only from official sources."
+        },
+        {
+          "question": "Where is the university located?",
+          "answer": "Answer only from official sources."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "University home page",
+            "url": "https://example.edu",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "Medicine tuition page",
+            "url": "https://example.edu/medicine/fees",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          }
+        ]
+      },
+      "programs": [
+        {
+          "slug": "example-medical-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 5000,
+          "officialTotalTuitionAmount": 30000,
+          "annualTuitionUsd": 5000,
+          "totalTuitionUsd": 30000,
+          "livingUsd": 1800,
+          "officialProgramUrl": "https://example.edu/medicine",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Pre-clinical foundation",
+              "language": "English",
+              "details": "Years 1-2 focus on basic sciences."
+            }
+          ],
+          "yearlyCostBreakdown": [
+            {
+              "yearLabel": "Year 1",
+              "tuitionUsd": 5000,
+              "hostelUsd": 700,
+              "livingUsd": 1100,
+              "totalUsd": 6800
+            }
+          ],
+          "licenseExamSupport": [
+            "Official curriculum details available on the medicine faculty page."
+          ],
+          "intakeMonths": [
+            "September"
+          ],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-03-30",
+          "fxRateDate": "2026-03-30",
+          "fxRateSourceUrl": "https://example.com/fx/usd",
+          "feeNotes": "If the official fee is not already in USD, explain the source currency and how the USD estimate was calculated.",
+          "sourceUrls": [
+            "https://example.edu/medicine",
+            "https://example.edu/medicine/fees"
+          ]
+        }
+      ]
+    }
+  ]
+}

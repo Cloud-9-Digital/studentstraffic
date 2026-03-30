@@ -14,6 +14,7 @@ import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversityCard } from "@/components/site/university-card";
+import { WdomsDirectorySection } from "@/components/site/wdoms-directory-section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -35,8 +36,10 @@ import {
   getLandingPageBySlug,
   getLandingPageContext,
   getLandingPageSlugs,
+  getWdomsDirectoryEntries,
 } from "@/lib/data/catalog";
 import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
+import { getWdomsCountryConfig } from "@/lib/wdoms";
 
 export async function generateStaticParams() {
   const slugs = await getLandingPageSlugs();
@@ -89,6 +92,11 @@ export default async function LandingPageRoute({
   const path = `/${page.slug}`;
   const previewPrograms = context.featuredPrograms;
   const feeStructures = getFeeStructuresForSlugs(page.featuredUniversitySlugs);
+  const wdomsCountryConfig = getWdomsCountryConfig(country.slug);
+  const wdomsDirectoryEntries =
+    wdomsCountryConfig?.landingPageSlug === page.slug
+      ? await getWdomsDirectoryEntries(country.slug)
+      : [];
 
   const countryCode = navDestinations.find(
     (d) => d.href === `/countries/${country.slug}`
@@ -258,12 +266,26 @@ export default async function LandingPageRoute({
           <div className="mt-8 flex gap-3 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4">
             <AlertTriangle className="mt-0.5 size-4 shrink-0 text-amber-600" />
             <p className="text-sm leading-6 text-amber-900">
-              <span className="font-semibold">Only the universities listed above currently accept Indian students.</span>{" "}
-              Other universities in Vietnam have not yet opened admissions for Indian applicants. Be cautious of agents or websites marketing unlisted universities — verify directly before paying any fees.
+              <span className="font-semibold">
+                The universities listed above are the ones we currently cover in detail.
+              </span>{" "}
+              We reserve individual university guides for schools where we have
+              stronger admissions, fee, and student-planning context. Always
+              verify current intake, medium, and official notices before paying
+              any fees.
             </p>
           </div>
         </div>
       </section>
+
+      {wdomsDirectoryEntries.length > 0 ? (
+        <WdomsDirectorySection
+          entries={wdomsDirectoryEntries}
+          countryName={country.name}
+          title={`All ${wdomsDirectoryEntries.length} medical schools in ${country.name} listed on WDOMS`}
+          intro={`Use this as the broader official directory view for ${country.name}. The detailed university cards above are our higher-confidence guides; this WDOMS section shows the full landscape without forcing thin pages onto the site.`}
+        />
+      ) : null}
 
       {/* ── Fee Structures ───────────────────────────────────────────────── */}
       {feeStructures.length > 0 && (
@@ -383,11 +405,19 @@ export default async function LandingPageRoute({
                 We handle everything — you don&apos;t need to leave home.
               </h2>
               <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
-                We have already sent <span className="font-semibold text-white">1,000+ students to Vietnam</span> across all major universities. From the day you decide to apply until you land at the university, every step is managed by our team — at no extra cost to you.
+                We have already guided{" "}
+                <span className="font-semibold text-white">1,000+ students</span>{" "}
+                through overseas medical admissions. From shortlisting through
+                landing, every step is managed by our team at no extra cost to
+                you.
               </p>
               <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {[
-                  { icon: "✈️", label: "Flight ticket", desc: "We book your travel to Vietnam" },
+                  {
+                    icon: "✈️",
+                    label: "Flight ticket",
+                    desc: `We book your travel to ${country.name}`,
+                  },
                   { icon: "🛂", label: "Student visa", desc: "Full visa application handled by us" },
                   { icon: "🏥", label: "Health insurance", desc: "Arranged before you depart" },
                   { icon: "📋", label: "Document legalisation", desc: "Apostille & ministry authentication" },
@@ -407,7 +437,7 @@ export default async function LandingPageRoute({
             <div className="shrink-0 lg:text-right">
               <div className="inline-flex flex-col items-center justify-center rounded-2xl border border-white/15 bg-white/10 px-10 py-8 text-center">
                 <span className="font-display text-5xl font-bold text-white">1,000+</span>
-                <span className="mt-2 text-sm text-white/60">students sent to Vietnam</span>
+                <span className="mt-2 text-sm text-white/60">students guided abroad</span>
                 <div className="mt-5 border-t border-white/15 pt-5">
                   <CounsellingDialog
                     triggerContent={<>Start your application <ArrowRight className="size-4" /></>}
@@ -524,7 +554,9 @@ export default async function LandingPageRoute({
                     Admission
                   </p>
                   <p className="text-sm leading-6 text-amber-900">
-                    Vietnam universities <span className="font-semibold">do not require NEET UG</span> for admission. You can enrol without a NEET score.
+                    Some foreign universities may not ask for NEET UG during
+                    admissions, but that does not override Indian eligibility
+                    rules for future screening or licensing.
                   </p>
                 </div>
                 <div className="rounded-xl border border-amber-200 bg-white px-5 py-4">
@@ -760,7 +792,10 @@ export default async function LandingPageRoute({
                   Ready to apply? We handle everything, free of charge.
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-white/70">
-                  1,000+ students have gone through us to Vietnam. Our team manages the entire process — you don&apos;t need to visit any office or step out of your home until it is time to board your flight.
+                  1,000+ students have already trusted us with their overseas
+                  medical applications. Our team manages the full process, so
+                  you do not need to visit an office until it is time to board
+                  your flight.
                 </p>
                 <ul className="mt-6 space-y-2">
                   {[
@@ -783,7 +818,7 @@ export default async function LandingPageRoute({
                   triggerSize="lg"
                   triggerClassName="w-full"
                   title="Ready to apply?"
-                  description={`1,000+ students have trusted us with their ${page.title} journey. We handle everything — you stay home until it's time to board your flight.`}
+                  description={`1,000+ students have trusted us with their ${page.title} journey. We handle everything, from application through departure planning, so you stay home until it is time to board your flight.`}
                   submitLabel="Yes, get me started"
                   ctaVariant="landing_bottom_cta"
                   countrySlug={country.slug}

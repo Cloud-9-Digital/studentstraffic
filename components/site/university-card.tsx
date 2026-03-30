@@ -8,8 +8,9 @@ import { getUniversityHref } from "@/lib/routes";
 import { getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
 import {
   cn,
-  formatUsdAmountOrTbd,
-  hasPublishedUsdAmount,
+  formatProgramAnnualFee,
+  getProgramAnnualFeeLabel,
+  hasRenderableProgramAnnualFee,
 } from "@/lib/utils";
 
 export function UniversityCard({
@@ -23,7 +24,7 @@ export function UniversityCard({
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
   const coverImage = getUniversityCoverImage(university);
-  const hasPublishedFee = hasPublishedUsdAmount(offering.annualTuitionUsd);
+  const hasPublishedFee = hasRenderableProgramAnnualFee(offering);
 
   return (
     // Wrapper is a plain div — Link covers the whole card via absolute inset,
@@ -98,7 +99,7 @@ export function UniversityCard({
       </div>
 
       {/* Card body ─────────────────────────────────────────────── */}
-      <div className="relative z-0 flex flex-1 flex-col gap-3 p-4">
+      <div className="relative flex flex-1 flex-col gap-3 p-4">
         <div>
           <h3 className="text-sm font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
             {university.name}
@@ -109,7 +110,9 @@ export function UniversityCard({
           <div className="grid grid-cols-2 gap-2">
             <div className="flex flex-col">
               <span className="text-[0.65rem] text-muted-foreground">
-                {hasPublishedFee ? "Tuition / yr" : "Fee"}
+                {hasPublishedFee
+                  ? `${getProgramAnnualFeeLabel(offering)} / yr`
+                  : "Fee"}
               </span>
               <span
                 className={cn(
@@ -117,7 +120,7 @@ export function UniversityCard({
                   hasPublishedFee ? "text-sm" : "text-xs leading-5"
                 )}
               >
-                {formatUsdAmountOrTbd(offering.annualTuitionUsd)}
+                {formatProgramAnnualFee(offering)}
               </span>
             </div>
             <div className="flex flex-col items-end">

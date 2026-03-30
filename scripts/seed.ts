@@ -62,12 +62,15 @@ async function readCatalogFromDb(client: PoolClient) {
         SELECT u.*, c.slug as country_slug
         FROM universities u
         JOIN countries c ON c.id = u.country_id
+        WHERE u.published = true
       `),
       client.query(`
         SELECT po.*, u.slug as university_slug, c.slug as course_slug
         FROM program_offerings po
         JOIN universities u ON u.id = po.university_id
         JOIN courses c ON c.id = po.course_id
+        WHERE po.published = true
+          AND u.published = true
       `),
     ]);
 
@@ -102,6 +105,7 @@ async function readCatalogFromDb(client: PoolClient) {
     establishedYear: r.established_year,
     summary: r.summary,
     featured: r.featured,
+    published: r.published,
     officialWebsite: r.official_website,
     logoUrl: r.logo_url ?? undefined,
     coverImageUrl: r.cover_image_url ?? undefined,
@@ -121,25 +125,43 @@ async function readCatalogFromDb(client: PoolClient) {
     recognitionLinks: r.recognition_links ?? [],
     faq: r.faq ?? [],
     similarUniversitySlugs: r.similar_university_slugs ?? [],
+    lastVerifiedAt: r.last_verified_at ?? undefined,
+    researchSources: r.research_sources ?? [],
+    researchNotes: r.research_notes ?? undefined,
   }));
 
-  const programOfferings: ProgramOffering[] = programRows.rows.map((r) => ({
-    slug: r.slug,
-    universitySlug: r.university_slug,
-    courseSlug: r.course_slug,
-    title: r.title,
-    durationYears: r.duration_years,
-    annualTuitionUsd: r.annual_tuition_usd,
-    totalTuitionUsd: r.total_tuition_usd,
-    livingUsd: r.living_usd,
-    officialProgramUrl: r.official_program_url,
-    medium: r.medium,
-    teachingPhases: r.teaching_phases ?? [],
-    yearlyCostBreakdown: r.yearly_cost_breakdown ?? [],
-    licenseExamSupport: r.license_exam_support,
-    intakeMonths: r.intake_months ?? [],
-    featured: r.featured,
-  }));
+  const programOfferings: ProgramOffering[] = programRows.rows.flatMap((r) => {
+    if (!r.university_slug || !r.course_slug) {
+      return [];
+    }
+
+    return [{
+      slug: r.slug,
+      universitySlug: r.university_slug,
+      courseSlug: r.course_slug,
+      title: r.title,
+      durationYears: r.duration_years,
+      annualTuitionUsd: r.annual_tuition_usd,
+      totalTuitionUsd: r.total_tuition_usd,
+      livingUsd: r.living_usd,
+      officialFeeCurrency: r.official_fee_currency ?? undefined,
+      officialAnnualTuitionAmount: r.official_annual_tuition_amount ?? undefined,
+      officialTotalTuitionAmount: r.official_total_tuition_amount ?? undefined,
+      officialProgramUrl: r.official_program_url,
+      medium: r.medium,
+      published: r.published,
+      teachingPhases: r.teaching_phases ?? [],
+      yearlyCostBreakdown: r.yearly_cost_breakdown ?? [],
+      licenseExamSupport: r.license_exam_support ?? [],
+      intakeMonths: r.intake_months ?? [],
+      feeVerifiedAt: r.fee_verified_at ?? undefined,
+      fxRateDate: r.fx_rate_date ?? undefined,
+      fxRateSourceUrl: r.fx_rate_source_url ?? undefined,
+      feeNotes: r.fee_notes ?? undefined,
+      sourceUrls: r.source_urls ?? [],
+      featured: r.featured,
+    }];
+  });
 
   return { countries, courses, universities, programOfferings };
 }

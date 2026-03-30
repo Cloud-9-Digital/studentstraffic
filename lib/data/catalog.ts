@@ -19,6 +19,7 @@ import type {
   LandingPage,
   ProgramOffering,
   University,
+  WdomsDirectoryEntry,
 } from "@/lib/data/types";
 import { getDb } from "@/lib/db/server";
 import {
@@ -26,6 +27,7 @@ import {
   courses as coursesTable,
   programOfferings as programOfferingsTable,
   universities as universitiesTable,
+  wdomsDirectoryEntries as wdomsDirectoryEntriesTable,
 } from "@/lib/db/schema";
 import {
   getBudgetIndexHref,
@@ -35,10 +37,21 @@ import {
   getCoursesIndexHref,
   getCourseHref,
   getUniversityHref,
+  getWdomsDirectoryHref,
+  getWdomsSchoolHref,
 } from "@/lib/routes";
-import { getSortableUsdValue, hasPublishedUsdAmount } from "@/lib/utils";
+import {
+  getSortableUsdValue,
+  hasPublishedUsdAmount,
+} from "@/lib/utils";
 import { finderPageSize } from "@/lib/constants";
 import { getFinderSort } from "@/lib/filters";
+import {
+  buildWdomsUniversityLookup,
+  matchWdomsSchoolToUniversity,
+  getWdomsSchoolRouteSlug,
+  wdomsCountryConfigs,
+} from "@/lib/wdoms";
 
 type CatalogSnapshot = {
   countries: Country[];
@@ -70,6 +83,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
             establishedYear: universitiesTable.establishedYear,
             summary: universitiesTable.summary,
             featured: universitiesTable.featured,
+            published: universitiesTable.published,
             officialWebsite: universitiesTable.officialWebsite,
             logoUrl: universitiesTable.logoUrl,
             coverImageUrl: universitiesTable.coverImageUrl,
@@ -89,10 +103,17 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
             recognitionLinks: universitiesTable.recognitionLinks,
             faq: universitiesTable.faq,
             similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
+            lastVerifiedAt: universitiesTable.lastVerifiedAt,
+            researchSources: universitiesTable.researchSources,
+            researchNotes: universitiesTable.researchNotes,
             updatedAt: universitiesTable.updatedAt,
           })
-          .from(universitiesTable),
-        db.select().from(programOfferingsTable),
+          .from(universitiesTable)
+          .where(eq(universitiesTable.published, true)),
+        db
+          .select()
+          .from(programOfferingsTable)
+          .where(eq(programOfferingsTable.published, true)),
       ]);
 
     const countries: Country[] = countryRows.map((country) => ({
@@ -135,6 +156,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       establishedYear: university.establishedYear,
       summary: university.summary,
       featured: university.featured,
+      published: university.published,
       officialWebsite: university.officialWebsite,
       logoUrl: university.logoUrl ?? undefined,
       coverImageUrl: university.coverImageUrl ?? undefined,
@@ -156,6 +178,9 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         university.recognitionLinks as University["recognitionLinks"],
       faq: university.faq as University["faq"],
       similarUniversitySlugs: university.similarUniversitySlugs,
+      lastVerifiedAt: university.lastVerifiedAt ?? undefined,
+      researchSources: university.researchSources as University["researchSources"],
+      researchNotes: university.researchNotes ?? undefined,
       updatedAt: university.updatedAt?.toISOString(),
     }));
 
@@ -163,27 +188,47 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       universityRows.map((university) => [university.id, university.slug]),
     );
 
-    const programOfferings: ProgramOffering[] = programRows.map((program) => ({
-      slug: program.slug,
-      universitySlug: universitySlugsById.get(program.universityId) ?? "",
-      courseSlug: courseSlugsById.get(program.courseId) ?? "",
-      title: program.title,
-      durationYears: program.durationYears,
-      annualTuitionUsd: program.annualTuitionUsd,
-      totalTuitionUsd: program.totalTuitionUsd,
-      livingUsd: program.livingUsd,
-      officialProgramUrl: program.officialProgramUrl,
-      medium: program.medium as ProgramOffering["medium"],
-      teachingPhases:
-        program.teachingPhases as ProgramOffering["teachingPhases"],
-      yearlyCostBreakdown:
-        program.yearlyCostBreakdown as ProgramOffering["yearlyCostBreakdown"],
-      licenseExamSupport:
-        program.licenseExamSupport as ProgramOffering["licenseExamSupport"],
-      intakeMonths: program.intakeMonths,
-      featured: program.featured,
-      updatedAt: program.updatedAt?.toISOString(),
-    }));
+    const programOfferings: ProgramOffering[] = programRows.flatMap((program) => {
+      const universitySlug = universitySlugsById.get(program.universityId);
+      const courseSlug = courseSlugsById.get(program.courseId);
+
+      if (!universitySlug || !courseSlug) {
+        return [];
+      }
+
+      return [{
+        slug: program.slug,
+        universitySlug,
+        courseSlug,
+        title: program.title,
+        durationYears: program.durationYears,
+        annualTuitionUsd: program.annualTuitionUsd,
+        totalTuitionUsd: program.totalTuitionUsd,
+        livingUsd: program.livingUsd,
+        officialFeeCurrency: program.officialFeeCurrency ?? undefined,
+        officialAnnualTuitionAmount:
+          program.officialAnnualTuitionAmount ?? undefined,
+        officialTotalTuitionAmount:
+          program.officialTotalTuitionAmount ?? undefined,
+        officialProgramUrl: program.officialProgramUrl,
+        medium: program.medium as ProgramOffering["medium"],
+        published: program.published,
+        teachingPhases:
+          program.teachingPhases as ProgramOffering["teachingPhases"],
+        yearlyCostBreakdown:
+          program.yearlyCostBreakdown as ProgramOffering["yearlyCostBreakdown"],
+        licenseExamSupport:
+          program.licenseExamSupport as ProgramOffering["licenseExamSupport"],
+        intakeMonths: program.intakeMonths,
+        feeVerifiedAt: program.feeVerifiedAt ?? undefined,
+        fxRateDate: program.fxRateDate ?? undefined,
+        fxRateSourceUrl: program.fxRateSourceUrl ?? undefined,
+        feeNotes: program.feeNotes ?? undefined,
+        sourceUrls: program.sourceUrls,
+        featured: program.featured,
+        updatedAt: program.updatedAt?.toISOString(),
+      }];
+    });
 
     return {
       countries,
@@ -266,6 +311,138 @@ export async function getLandingPageBySlug(slug: string) {
 
 export async function getLandingPageSlugs() {
   return landingPages.map((page) => page.slug);
+}
+
+export async function getWdomsDirectoryEntries(countrySlug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("wdoms-directory");
+  cacheTag(`wdoms-directory:${countrySlug}`);
+
+  const db = getDb();
+
+  if (!db) {
+    return [] as WdomsDirectoryEntry[];
+  }
+
+  const [directoryRows, publishedUniversities] = await Promise.all([
+    db
+      .select({
+        countrySlug: wdomsDirectoryEntriesTable.countrySlug,
+        countryName: wdomsDirectoryEntriesTable.countryName,
+        schoolId: wdomsDirectoryEntriesTable.schoolId,
+        schoolName: wdomsDirectoryEntriesTable.schoolName,
+        cityName: wdomsDirectoryEntriesTable.cityName,
+        schoolUrl: wdomsDirectoryEntriesTable.schoolUrl,
+        schoolType: wdomsDirectoryEntriesTable.schoolType,
+        operationalStatus: wdomsDirectoryEntriesTable.operationalStatus,
+        yearInstructionStarted: wdomsDirectoryEntriesTable.yearInstructionStarted,
+        academicAffiliation: wdomsDirectoryEntriesTable.academicAffiliation,
+        clinicalFacilities: wdomsDirectoryEntriesTable.clinicalFacilities,
+        clinicalTraining: wdomsDirectoryEntriesTable.clinicalTraining,
+        schoolWebsite: wdomsDirectoryEntriesTable.schoolWebsite,
+        mainAddress: wdomsDirectoryEntriesTable.mainAddress,
+        qualificationTitle: wdomsDirectoryEntriesTable.qualificationTitle,
+        curriculumDuration: wdomsDirectoryEntriesTable.curriculumDuration,
+        languageOfInstruction: wdomsDirectoryEntriesTable.languageOfInstruction,
+        prerequisiteEducation: wdomsDirectoryEntriesTable.prerequisiteEducation,
+        foreignStudents: wdomsDirectoryEntriesTable.foreignStudents,
+        entranceExam: wdomsDirectoryEntriesTable.entranceExam,
+      })
+      .from(wdomsDirectoryEntriesTable)
+      .where(eq(wdomsDirectoryEntriesTable.countrySlug, countrySlug))
+      .orderBy(
+        asc(wdomsDirectoryEntriesTable.schoolName),
+        asc(wdomsDirectoryEntriesTable.cityName),
+      ),
+    db
+      .select({
+        slug: universitiesTable.slug,
+        name: universitiesTable.name,
+        city: universitiesTable.city,
+      })
+      .from(universitiesTable)
+      .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+      .where(
+        and(
+          eq(countriesTable.slug, countrySlug),
+          eq(universitiesTable.published, true),
+        ),
+      ),
+  ]);
+
+  const universityLookup = buildWdomsUniversityLookup(publishedUniversities);
+
+  return directoryRows.map((entry) => {
+    const matchedUniversity = matchWdomsSchoolToUniversity(entry, universityLookup);
+
+    return {
+      countrySlug: entry.countrySlug,
+      countryName: entry.countryName,
+      schoolId: entry.schoolId,
+      schoolName: entry.schoolName,
+      cityName: entry.cityName,
+      schoolUrl: entry.schoolUrl,
+      schoolType: entry.schoolType ?? undefined,
+      operationalStatus: entry.operationalStatus ?? undefined,
+      yearInstructionStarted: entry.yearInstructionStarted ?? undefined,
+      academicAffiliation: entry.academicAffiliation ?? undefined,
+      clinicalFacilities: entry.clinicalFacilities ?? undefined,
+      clinicalTraining: entry.clinicalTraining ?? undefined,
+      schoolWebsite: entry.schoolWebsite ?? undefined,
+      mainAddress: entry.mainAddress ?? undefined,
+      qualificationTitle: entry.qualificationTitle ?? undefined,
+      curriculumDuration: entry.curriculumDuration ?? undefined,
+      languageOfInstruction: entry.languageOfInstruction ?? undefined,
+      prerequisiteEducation: entry.prerequisiteEducation ?? undefined,
+      foreignStudents: entry.foreignStudents ?? undefined,
+      entranceExam: entry.entranceExam ?? undefined,
+      routeSlug: getWdomsSchoolRouteSlug(entry.schoolName, entry.schoolId),
+      matchedUniversitySlug: matchedUniversity?.slug,
+      matchedUniversityName: matchedUniversity?.name,
+    };
+  });
+}
+
+export async function getWdomsDirectoryEntryForUniversity(universitySlug: string) {
+  const university = await getUniversityBySlug(universitySlug);
+
+  if (!university) {
+    return null;
+  }
+
+  const entries = await getWdomsDirectoryEntries(university.countrySlug);
+
+  return (
+    entries.find((entry) => entry.matchedUniversitySlug === university.slug) ?? null
+  );
+}
+
+export async function getWdomsDirectoryEntryByRoute(
+  countrySlug: string,
+  schoolRouteSlug: string,
+) {
+  const entries = await getWdomsDirectoryEntries(countrySlug);
+  return entries.find((entry) => entry.routeSlug === schoolRouteSlug) ?? null;
+}
+
+export async function getWdomsUniversityPreviewGroups(limitPerCountry = 4) {
+  const groups = await Promise.all(
+    wdomsCountryConfigs.map(async (config) => ({
+      config,
+      allEntries: await getWdomsDirectoryEntries(config.slug),
+    })),
+  );
+
+  return groups
+    .map((group) => ({
+      config: group.config,
+      entries: group.allEntries.slice(0, limitPerCountry),
+      totalCount: group.allEntries.length,
+    }))
+    .filter((group) => group.totalCount > 0);
 }
 
 async function getFinderProgramsBase() {
@@ -512,7 +689,10 @@ export async function queryFinderCardProgramsPage(
   if (!db) return { ...EMPTY_CARD_PAGE, pageSize };
 
   // Build WHERE conditions
-  const conditions = [];
+  const conditions = [
+    eq(universitiesTable.published, true),
+    eq(programOfferingsTable.published, true),
+  ];
 
   if (filters.country) {
     conditions.push(eq(countriesTable.slug, filters.country));
@@ -537,14 +717,16 @@ export async function queryFinderCardProgramsPage(
   }
   if (filters.q) {
     const q = `%${filters.q}%`;
-    conditions.push(
-      or(
-        ilike(universitiesTable.name, q),
-        ilike(universitiesTable.city, q),
-        ilike(countriesTable.name, q),
-        ilike(coursesTable.shortName, q),
-      ),
+    const searchCondition = or(
+      ilike(universitiesTable.name, q),
+      ilike(universitiesTable.city, q),
+      ilike(countriesTable.name, q),
+      ilike(coursesTable.shortName, q),
     );
+
+    if (searchCondition) {
+      conditions.push(searchCondition);
+    }
   }
 
   const where = conditions.length > 0 ? and(...conditions) : undefined;
@@ -581,6 +763,9 @@ export async function queryFinderCardProgramsPage(
     .select({
       offeringSlug: programOfferingsTable.slug,
       annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
+      officialFeeCurrency: programOfferingsTable.officialFeeCurrency,
+      officialAnnualTuitionAmount:
+        programOfferingsTable.officialAnnualTuitionAmount,
       offeringFeatured: programOfferingsTable.featured,
       uniSlug: universitiesTable.slug,
       uniName: universitiesTable.name,
@@ -645,10 +830,13 @@ export async function queryFinderCardProgramsPage(
     country: { slug: row.countrySlug, name: row.countryName },
     course: { slug: row.courseSlug, shortName: row.courseShortName },
     offering: {
-      slug: row.offeringSlug,
-      annualTuitionUsd: row.annualTuitionUsd,
-      featured: row.offeringFeatured,
-    },
+        slug: row.offeringSlug,
+        annualTuitionUsd: row.annualTuitionUsd,
+        officialFeeCurrency: row.officialFeeCurrency ?? undefined,
+        officialAnnualTuitionAmount:
+          row.officialAnnualTuitionAmount ?? undefined,
+        featured: row.offeringFeatured,
+      },
   }));
 
   return {
@@ -681,30 +869,60 @@ export async function getFinderOptions(): Promise<FinderOptions> {
 
   const [countryRows, courseRows, mediumRows, intakeRows] = await Promise.all([
     db
-      .select({
+      .selectDistinct({
         slug: countriesTable.slug,
         name: countriesTable.name,
       })
       .from(countriesTable)
+      .innerJoin(universitiesTable, eq(universitiesTable.countryId, countriesTable.id))
+      .innerJoin(programOfferingsTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+      .where(
+        and(
+          eq(universitiesTable.published, true),
+          eq(programOfferingsTable.published, true),
+        ),
+      )
       .orderBy(asc(countriesTable.name)),
     db
-      .select({
+      .selectDistinct({
         slug: coursesTable.slug,
         shortName: coursesTable.shortName,
       })
       .from(coursesTable)
+      .innerJoin(programOfferingsTable, eq(programOfferingsTable.courseId, coursesTable.id))
+      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+      .where(
+        and(
+          eq(universitiesTable.published, true),
+          eq(programOfferingsTable.published, true),
+        ),
+      )
       .orderBy(asc(coursesTable.shortName)),
     db
       .selectDistinct({
         medium: programOfferingsTable.medium,
       })
       .from(programOfferingsTable)
+      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+      .where(
+        and(
+          eq(universitiesTable.published, true),
+          eq(programOfferingsTable.published, true),
+        ),
+      )
       .orderBy(asc(programOfferingsTable.medium)),
     db
       .select({
         intakeMonths: programOfferingsTable.intakeMonths,
       })
-      .from(programOfferingsTable),
+      .from(programOfferingsTable)
+      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+      .where(
+        and(
+          eq(universitiesTable.published, true),
+          eq(programOfferingsTable.published, true),
+        ),
+      ),
   ]);
 
   const countries: FinderCountryOption[] = countryRows.map((country) => ({
@@ -797,9 +1015,15 @@ export async function getHomeStats() {
 }
 
 export async function getSitemapStaticUrls() {
-  const [countries, courses] = await Promise.all([
+  const [countries, courses, wdomsProfileGroups] = await Promise.all([
     getCountries(),
     getCourses(),
+    Promise.all(
+      wdomsCountryConfigs.map(async (config) => ({
+        config,
+        entries: await getWdomsDirectoryEntries(config.slug),
+      })),
+    ),
   ]);
 
   return [
@@ -816,6 +1040,14 @@ export async function getSitemapStaticUrls() {
     getCompareIndexHref(),
     getBudgetIndexHref(),
     ...landingPages.map((page) => `/${page.slug}`),
+    ...wdomsCountryConfigs
+      .filter((config) => !config.landingPageSlug)
+      .map((config) => getWdomsDirectoryHref(config.slug)),
+    ...wdomsProfileGroups.flatMap((group) =>
+      group.entries.map((entry) =>
+        getWdomsSchoolHref(group.config.slug, entry.routeSlug),
+      ),
+    ),
     ...countries.map((country) => getCountryHref(country.slug)),
     ...courses.map((course) => getCourseHref(course.slug)),
   ];

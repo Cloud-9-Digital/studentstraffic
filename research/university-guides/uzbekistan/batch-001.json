@@ -1,0 +1,405 @@
+{
+  "batchId": "uzbekistan-batch-001",
+  "countrySlug": "uzbekistan",
+  "notes": "Official-source research drafts for Uzbek medical universities. Keep unpublished until reviewed.",
+  "universities": [
+    {
+      "slug": "andijan-state-medical-institute",
+      "name": "Andijan State Medical Institute",
+      "city": "Andijan",
+      "type": "Public",
+      "establishedYear": 1955,
+      "summary": "Andijan State Medical Institute is a public medical institute in Andijan. Its official English home page says it was founded in 1955 and currently reports 4 faculties, 56 departments, 9 bachelor's degrees, 29 master's degrees, 8,397 students, and 387 international students.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://adti.uz/en/",
+      "campusLifestyle": "The official site presents ASMI as a medium-sized medical campus with library, forum, distance learning, and student-facing service pages. The home page also reports 387 international students, which suggests an existing foreign-student presence rather than a purely domestic intake.",
+      "cityProfile": "The reviewed official pages place the institute at Yu.Otabekov 1 in Andijan city. ASMI's English pages focus more on institute services than on a detailed city guide, so applicants should verify transport and daily living logistics directly with the university.",
+      "clinicalExposure": "The reviewed English pages confirm a six-year English-medium General medicine program, but they do not clearly list named teaching hospitals on the pages checked for this draft. Applicants should confirm current clinical bases directly with the institute before enrolling.",
+      "hostelOverview": "ASMI's official fee page lists accommodation at USD 50-70 per month depending on room size and capacity. The English hostel page exists, but the detailed content falls back to Uzbek, so room allocation details are not fully explained on the reviewed English pages.",
+      "indianFoodSupport": "The reviewed official ASMI pages do not mention an Indian mess, Indian food counter, or dedicated dining support for Indian students.",
+      "safetyOverview": "The reviewed English pages do not publish a detailed campus safety page. ASMI does publish student-service, hostel, and international-admission pages, but day-to-day safety procedures should be confirmed directly with the institute.",
+      "studentSupport": "ASMI's official site includes dedicated international-admission pages, a registration link in the international section, class schedule access, an electronic library, and distance-learning tools. Those pages show that the institute has a working student-services layer even though some English content remains limited.",
+      "whyChoose": [
+        "The official home page says the institute was founded in 1955 and now operates 4 faculties and 56 departments.",
+        "ASMI publishes an exact official USD tuition page for the six-year English-medium General medicine program.",
+        "The official site reports 387 international students and provides student-service tools such as e-library and distance learning."
+      ],
+      "thingsToConsider": [
+        "The English hostel page does not provide full accommodation details and redirects to Uzbek content for the main body.",
+        "ASMI's public English admissions material is lighter on step-by-step detail than some other universities, so direct confirmation is important.",
+        "The official yearly total includes extra charges beyond tuition, such as activity service fee and visa or registration costs."
+      ],
+      "bestFitFor": [
+        "Students who want a public Uzbek medical institute with exact USD tuition shown on the official site.",
+        "Applicants comfortable confirming some hostel and admissions details directly with the university.",
+        "Students specifically looking for a six-year English-medium General medicine track."
+      ],
+      "teachingHospitals": [],
+      "recognitionBadges": [
+        "Public Medical Institute",
+        "Founded 1955",
+        "Official USD Tuition Published"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "ASMI official home page",
+          "url": "https://adti.uz/en/"
+        },
+        {
+          "label": "ASMI tuition and living fee page",
+          "url": "https://adti.uz/en/tuition-and-living-fee/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does ASMI publish tuition in USD for General medicine?",
+          "answer": "Yes. ASMI's official fee page lists tuition at USD 3,500 per year for students enrolled from the 2023-2024 academic year, plus a USD 350 yearly activity service fee."
+        },
+        {
+          "question": "Is General medicine taught in English at ASMI?",
+          "answer": "Yes. The official fee page describes the course as a six years English medium General medicine program."
+        },
+        {
+          "question": "Where is Andijan State Medical Institute located?",
+          "answer": "The official home page lists the address as Yu.Otabekov 1, Andijan city."
+        }
+      ],
+      "similarUniversitySlugs": [
+        "bukhara-state-medical-institute-abu-ali-ibn-sino",
+        "central-asian-university-medical-school"
+      ],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "ASMI official home page",
+            "url": "https://adti.uz/en/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "ASMI 2023-2024 admission page",
+            "url": "https://adti.uz/en/xorijiy-qabul/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "ASMI tuition and living fee page",
+            "url": "https://adti.uz/en/tuition-and-living-fee/",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "ASMI hostel page",
+            "url": "https://adti.uz/en/talabalarga/talabalar-turar-joyi/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30",
+            "notes": "English page exists but the detailed hostel content falls back to Uzbek."
+          }
+        ],
+        "notes": "ASMI provides exact USD tuition on the official fee page, but the reviewed English admissions and hostel content are less detailed than some peer institutions."
+      },
+      "programs": [
+        {
+          "slug": "andijan-state-medical-institute-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 3500,
+          "officialTotalTuitionAmount": 21000,
+          "annualTuitionUsd": 3500,
+          "totalTuitionUsd": 21000,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://adti.uz/en/tuition-and-living-fee/",
+          "medium": "English",
+          "teachingPhases": [],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official fee page lists tuition at USD 3,500 per year for students enrolled from the 2023-2024 academic year. It also lists a separate USD 350 yearly activity service fee, accommodation at USD 50-70 per month, and visa/passport registration at USD 500-600 per year. No official consolidated living-cost budget is published, so livingUsd is left at 0.",
+          "sourceUrls": [
+            "https://adti.uz/en/tuition-and-living-fee/",
+            "https://adti.uz/en/xorijiy-qabul/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bukhara-state-medical-institute-abu-ali-ibn-sino",
+      "name": "Bukhara State Medical Institute named after Abu Ali Ibn Sino",
+      "city": "Bukhara",
+      "type": "Public",
+      "establishedYear": 1990,
+      "summary": "Bukhara State Medical Institute named after Abu Ali Ibn Sino is a public medical institute in Bukhara. Its official general-information page says the institute was established in October 1990, now has 4 faculties and 53 departments, and enrolls more than 9,180 students and residents.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://bsmi.uz/en/home/",
+      "campusLifestyle": "BSMI's official pages show a large public medical campus with multiple student and international sections. The institute's residence page for foreign students mentions shared accommodation, kitchens, laundry rooms, washrooms, and sports facilities tied to student life.",
+      "cityProfile": "BSMI's official About Bukhara page describes the city center as part of the UNESCO World Heritage List and says Bukhara is more than 2,500 years old. The same page notes hot, arid summers and comparatively mild winters, which is useful climate context for international students.",
+      "clinicalExposure": "The official General medicine page describes clinical work in public and private clinics, hospital duty, ambulance service, and children's educational institutions. BSMI's official site also includes departments for clinical skills simulation training and work with clinical educational bases, which supports a practice-oriented training setup.",
+      "hostelOverview": "The official residence page says foreign students use institute residences with 2-person rooms, kitchens, laundry rooms, and washrooms. The page also mentions sports complexes near the residence area.",
+      "indianFoodSupport": "The reviewed official BSMI pages describe Uzbek and Bukhara cuisine but do not mention an Indian mess, Indian kitchen, or dedicated Indian food support.",
+      "safetyOverview": "The reviewed official BSMI pages provide accommodation information for foreign students but do not publish a detailed English safety protocol on the pages used for this draft. Students should confirm current residence rules and support arrangements directly with admissions.",
+      "studentSupport": "BSMI publishes a dedicated international admission page with admissions phone numbers and the address admissions@bsmi.uz. The institute also maintains separate pages for foreign-student residence and for international-student fee information.",
+      "whyChoose": [
+        "BSMI publishes a clear international admissions route based on an interview in biology, chemistry, and the language of instruction.",
+        "The official General medicine page states entry documents, duration, and an international tuition range on the university website.",
+        "The official general-information page shows institutional scale, including 4 faculties, 53 departments, and more than 9,180 students and residents."
+      ],
+      "thingsToConsider": [
+        "The official General medicine page gives international tuition as a USD 3,000-5,500 range rather than a program-specific exact amount.",
+        "BSMI teaches in multiple languages, so applicants should confirm the current English-language section and support arrangements before paying fees.",
+        "Applicants may need to follow up with admissions@bsmi.uz to get a precise fee quote and final document checklist for their intake."
+      ],
+      "bestFitFor": [
+        "Students who want a public institute with a clearly stated interview-based international admissions process.",
+        "Applicants comfortable confirming the final tuition figure directly with the official admissions team.",
+        "Students interested in studying medicine in a historic UNESCO-listed city environment."
+      ],
+      "teachingHospitals": [],
+      "recognitionBadges": [
+        "Public Medical Institute",
+        "Established 1990",
+        "International Admissions Page Available"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "BSMI official home page",
+          "url": "https://bsmi.uz/en/home/"
+        },
+        {
+          "label": "BSMI general information page",
+          "url": "https://bsmi.uz/en/general-information/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What are the admission subjects for international students at BSMI?",
+          "answer": "BSMI's official international-admission page says foreign citizens are admitted on the basis of an interview, or oral examination, in biology, chemistry, and the language of instruction, which it lists as Russian or English."
+        },
+        {
+          "question": "How long is the General medicine program at BSMI?",
+          "answer": "The official General medicine page lists the duration of study as 6 years."
+        },
+        {
+          "question": "Does BSMI publish an exact annual international tuition for General medicine?",
+          "answer": "Not on the reviewed official program page. BSMI's General medicine page lists international-student fees as USD 3,000-5,500, so applicants should request the exact current figure from the official admissions team."
+        }
+      ],
+      "similarUniversitySlugs": [
+        "andijan-state-medical-institute",
+        "central-asian-university-medical-school"
+      ],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "BSMI official home page",
+            "url": "https://bsmi.uz/en/home/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMI general information page",
+            "url": "https://bsmi.uz/en/general-information/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMI General medicine page",
+            "url": "https://bsmi.uz/en/general-medicine/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMI international admission procedure",
+            "url": "https://bsmi.uz/en/admission-procedureinternational-students/",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMI residence information for foreign students",
+            "url": "https://bsmi.uz/en/information-about-the-residence-of-foreign-students/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "BSMI About Bukhara page",
+            "url": "https://bsmi.uz/en/about-bukhara/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          }
+        ],
+        "notes": "BSMI's official program page gives a fee range rather than an exact annual figure for international General medicine students."
+      },
+      "programs": [
+        {
+          "slug": "bukhara-state-medical-institute-general-medicine",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 0,
+          "officialTotalTuitionAmount": 0,
+          "annualTuitionUsd": 0,
+          "totalTuitionUsd": 0,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://bsmi.uz/en/general-medicine/",
+          "medium": "English",
+          "teachingPhases": [],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official General medicine page lists international-student fees as USD 3,000-5,500 and does not publish a single exact annual figure for this program. Because the official source provides a range instead of a program-specific exact amount, the numeric tuition fields are left at 0. The reviewed official pages also do not publish a consolidated yearly living-cost budget, so livingUsd is left at 0.",
+          "sourceUrls": [
+            "https://bsmi.uz/en/general-medicine/",
+            "https://bsmi.uz/en/admission-procedureinternational-students/",
+            "https://bsmi.uz/en/information-about-the-residence-of-foreign-students/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "central-asian-university-medical-school",
+      "name": "Central Asian University Medical School",
+      "city": "Tashkent",
+      "type": "Private",
+      "establishedYear": 2019,
+      "summary": "Central Asian University Medical School is part of Central Asian University in Tashkent. An official CAU press release says the university was founded in 2019 in Uzbekistan, while CAU's official home page states that the university is licensed to provide private educational services under license number 223409.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://centralasian.uz/",
+      "campusLifestyle": "CAU's official facilities page presents a modern private-campus model with an on-campus dormitory, sports center, fully equipped rooms, and accessibility features. The same page says students can reach campus facilities within several minutes from the dormitory.",
+      "cityProfile": "The reviewed official CAU pages place the university at 264 Milliy bog St, Tashkent, 111221, Uzbekistan. CAU's official pages emphasize the campus itself more than a city guide, so applicants should confirm daily transport and off-campus living details directly with the university.",
+      "clinicalExposure": "CAU's official M.D. page says the program includes hands-on clinical experience. Official CAU press releases also say the university is developing Central Asian University Hospital in partnership with Cleveland Clinic and describe it as a training base with simulation center, laboratories, and residency programs integrated into the clinical environment.",
+      "hostelOverview": "CAU's official facilities page says the dormitory is on campus, offers single or triple rooms, and includes bed, refrigerator, separate bathroom and toilet, Wi-Fi, shared kitchens, and free laundry service except detergent. The same page lists annual dorm prices for international students at USD 3,000 for a single room and USD 1,500 for a triple room.",
+      "indianFoodSupport": "The reviewed official CAU pages do not mention Indian mess facilities or dedicated Indian food support.",
+      "safetyOverview": "CAU's official facilities page says the university dormitories are safe and mention 24/7 security and dedicated residential staff. Beyond that residence-focused statement, the reviewed official pages do not publish a broader standalone safety guide for the whole campus.",
+      "studentSupport": "CAU's official pages provide direct admissions contact details, an on-campus dormitory option for international students, and facilities designed for accessibility. The M.D. page also says admissions officers can answer questions about programs, requirements, and study abroad.",
+      "whyChoose": [
+        "CAU publishes a clear M.D. program page with English medium, 12 semesters, and explicit admission requirements.",
+        "The university publishes exact tuition for international medicine students at USD 11,000 per year on official pages.",
+        "Official CAU sources describe an expanding medical ecosystem that includes a university hospital project developed with Cleveland Clinic."
+      ],
+      "thingsToConsider": [
+        "CAU is a private university, so its tuition and dormitory costs are higher than many public Uzbek options.",
+        "The reviewed official pages do not publish a bundled annual living-cost estimate beyond tuition and dormitory pricing.",
+        "Clinical infrastructure is expanding rapidly, so applicants should confirm which hospital components are operational for their intake year."
+      ],
+      "bestFitFor": [
+        "Students who want a private English-medium M.D. program with exact official tuition published online.",
+        "Applicants who value on-campus housing and a modern campus environment in Tashkent.",
+        "Students interested in a university that is building its medical ecosystem around hospital, simulation, and residency capacity."
+      ],
+      "teachingHospitals": [
+        "Central Asian University Hospital"
+      ],
+      "recognitionBadges": [
+        "Licensed by Ministry of Education (License 223409)",
+        "Founded 2019",
+        "Cleveland Clinic Hospital Partnership"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "CAU official home page with license information",
+          "url": "https://centralasian.uz/"
+        },
+        {
+          "label": "CAU hospital project press release",
+          "url": "https://centralasian.uz/university_community/e803ucu6c1-the-project-for-the-construction-of-the"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What are the admission requirements for the CAU M.D. program?",
+          "answer": "The official M.D. page lists Biology and Chemistry at at least 50 percent and IELTS 6.0 or above."
+        },
+        {
+          "question": "What is the official annual tuition for international medicine students at CAU?",
+          "answer": "CAU's official medicine and tuition pages list the fee for international students at USD 11,000 per year."
+        },
+        {
+          "question": "Does CAU provide on-campus accommodation?",
+          "answer": "Yes. CAU's official facilities page says the dormitory is on campus and offers single and triple rooms for international students."
+        }
+      ],
+      "similarUniversitySlugs": [
+        "andijan-state-medical-institute",
+        "bukhara-state-medical-institute-abu-ali-ibn-sino"
+      ],
+      "research": {
+        "lastVerifiedAt": "2026-03-30",
+        "sources": [
+          {
+            "label": "CAU official home page",
+            "url": "https://centralasian.uz/",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "CAU M.D. Doctor of Medicine page",
+            "url": "https://centralasian.uz/medical",
+            "kind": "official-program",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "CAU tuition fees page",
+            "url": "https://centralasian.uz/tuitionfees",
+            "kind": "official-fee",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "CAU facilities page",
+            "url": "https://centralasian.uz/facility",
+            "kind": "official-university",
+            "checkedAt": "2026-03-30"
+          },
+          {
+            "label": "CAU hospital project press release",
+            "url": "https://centralasian.uz/university_community/e803ucu6c1-the-project-for-the-construction-of-the",
+            "kind": "recognition",
+            "checkedAt": "2026-03-30"
+          }
+        ],
+        "notes": "CAU's official pages provide exact tuition, dormitory pricing, and licensing details. The founded year is taken from an official CAU press release."
+      },
+      "programs": [
+        {
+          "slug": "central-asian-university-md-doctor-of-medicine",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 11000,
+          "officialTotalTuitionAmount": 66000,
+          "annualTuitionUsd": 11000,
+          "totalTuitionUsd": 66000,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://centralasian.uz/medical",
+          "medium": "English",
+          "teachingPhases": [],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-03-30",
+          "feeNotes": "The official medicine and tuition pages list international-student tuition at USD 11,000 per year for the 6-year medicine program. CAU's official dormitory page separately lists annual hostel prices at USD 1,500 for a triple room or USD 3,000 for a single room for international students. No official bundled living-cost estimate is published, so livingUsd is left at 0.",
+          "sourceUrls": [
+            "https://centralasian.uz/medical",
+            "https://centralasian.uz/tuitionfees",
+            "https://centralasian.uz/facility"
+          ]
+        }
+      ]
+    }
+  ]
+}
