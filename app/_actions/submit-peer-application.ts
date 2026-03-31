@@ -39,6 +39,9 @@ const applicationSchema = z.object({
     (v) => v !== undefined,
     { message: "Please select your enrollment status." }
   ),
+  homeState: z.string().trim().optional(),
+  homeDistrict: z.string().trim().optional(),
+  languages: z.string().trim().optional(),
   message: z.string().trim().optional(),
   website: z.string().trim().optional(),
 });
@@ -55,6 +58,9 @@ export async function submitPeerApplicationAction(
     courseName: getFormString(formData, "courseName") || undefined,
     currentYearOrBatch: getFormString(formData, "currentYearOrBatch") || undefined,
     enrollmentStatus: getFormString(formData, "enrollmentStatus"),
+    homeState: getFormString(formData, "homeState") || undefined,
+    homeDistrict: getFormString(formData, "homeDistrict") || undefined,
+    languages: getFormString(formData, "languages") || undefined,
     message: getFormString(formData, "message") || undefined,
     website: getFormString(formData, "website"),
   });
@@ -182,6 +188,9 @@ export async function submitPeerApplicationAction(
       courseName: emptyToUndefined(data.courseName) ?? null,
       currentYearOrBatch: emptyToUndefined(data.currentYearOrBatch) ?? null,
       enrollmentStatus: data.enrollmentStatus,
+      homeState: emptyToUndefined(data.homeState) ?? null,
+      homeDistrict: emptyToUndefined(data.homeDistrict) ?? null,
+      languages: data.languages ? data.languages.split(",").map((l) => l.trim()).filter(Boolean) : null,
       proofUrl,
       message: emptyToUndefined(data.message) ?? null,
       status: "pending",
