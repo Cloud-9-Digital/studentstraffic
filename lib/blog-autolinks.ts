@@ -8,6 +8,7 @@
  */
 
 import { desc, eq, ne } from "drizzle-orm";
+import { unstable_cache } from "next/cache";
 
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
@@ -37,7 +38,8 @@ const STATIC_RULES: LinkRule[] = [
 
 // ─── Rule builder ─────────────────────────────────────────────────────────────
 
-export async function buildLinkRules(currentSlug: string): Promise<LinkRule[]> {
+export const buildLinkRules = unstable_cache(
+  async (currentSlug: string): Promise<LinkRule[]> => {
   const db = getDb();
 
   const [countries, universities, posts] = await Promise.all([
@@ -75,7 +77,10 @@ export async function buildLinkRules(currentSlug: string): Promise<LinkRule[]> {
     seen.add(key);
     return true;
   });
-}
+},
+  (currentSlug) => [`blog-autolinks-${currentSlug}`],
+  { tags: ["blog", "catalog"], revalidate: 3600 }
+);
 
 // ─── Linkifier ────────────────────────────────────────────────────────────────
 
