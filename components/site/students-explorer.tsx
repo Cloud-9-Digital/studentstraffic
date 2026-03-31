@@ -22,10 +22,12 @@ interface Filters {
   universitySlug: string;
   course: string;
   year: string;
+  state: string;
+  language: string;
 }
 
 function countActive(f: Filters) {
-  return [f.country, f.universitySlug, f.course, f.year].filter(Boolean).length;
+  return [f.country, f.universitySlug, f.course, f.year, f.state, f.language].filter(Boolean).length;
 }
 
 // ─── Shared filter controls ─────────────────────────────────────────────────
@@ -73,6 +75,8 @@ function FilterPanel({
   universities,
   courses,
   years,
+  states,
+  languages,
   onSet,
   onClear,
 }: {
@@ -81,6 +85,8 @@ function FilterPanel({
   universities: { slug: string; name: string }[];
   courses: string[];
   years: string[];
+  states: string[];
+  languages: string[];
   onSet: (key: keyof Filters, value: string) => void;
   onClear: () => void;
 }) {
@@ -120,6 +126,24 @@ function FilterPanel({
           placeholder="All years"
         />
       )}
+      {states.length > 0 && (
+        <FilterSelect
+          label="Home state"
+          value={filters.state}
+          onChange={(v) => onSet("state", v)}
+          options={states.map((s) => ({ value: s, label: s }))}
+          placeholder="All states"
+        />
+      )}
+      {languages.length > 0 && (
+        <FilterSelect
+          label="Language"
+          value={filters.language}
+          onChange={(v) => onSet("language", v)}
+          options={languages.map((l) => ({ value: l, label: l }))}
+          placeholder="All languages"
+        />
+      )}
       {activeCount > 0 && (
         <button
           onClick={onClear}
@@ -148,6 +172,8 @@ export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
     universitySlug: searchParams.get("university") ?? "",
     course: searchParams.get("course") ?? "",
     year: searchParams.get("year") ?? "",
+    state: searchParams.get("state") ?? "",
+    language: searchParams.get("language") ?? "",
   };
   const page = Math.max(1, Number(searchParams.get("page") ?? "1"));
 
@@ -216,6 +242,19 @@ export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
     [peers]
   );
 
+  const states = useMemo(
+    () => [...new Set(peers.map((p) => p.homeState).filter(Boolean))].sort() as string[],
+    [peers]
+  );
+
+  const languages = useMemo(
+    () =>
+      [
+        ...new Set(peers.flatMap((p) => p.languages ?? [])),
+      ].sort(),
+    [peers]
+  );
+
   const filtered = useMemo(() => {
     const q = filters.search.toLowerCase().trim();
     return peers.filter((p) => {
@@ -230,6 +269,8 @@ export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
         return false;
       if (filters.course && p.courseName !== filters.course) return false;
       if (filters.year && p.currentYearOrBatch !== filters.year) return false;
+      if (filters.state && p.homeState !== filters.state) return false;
+      if (filters.language && !p.languages?.includes(filters.language)) return false;
       return true;
     });
   }, [peers, filters]);
@@ -311,6 +352,8 @@ export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
                   universities={universities}
                   courses={courses}
                   years={years}
+                  states={states}
+                  languages={languages}
                   onSet={set}
                   onClear={clear}
                 />
@@ -335,6 +378,8 @@ export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
                   universities={universities}
                   courses={courses}
                   years={years}
+                  states={states}
+                  languages={languages}
                   onSet={set}
                   onClear={clear}
                 />

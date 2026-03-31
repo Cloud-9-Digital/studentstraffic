@@ -74,6 +74,9 @@ export type PublicPeer = {
   courseName: string | null;
   currentYearOrBatch: string | null;
   hasWhatsApp: boolean;
+  homeState: string | null;
+  homeDistrict: string | null;
+  languages: string[] | null;
 };
 
 export async function getActivePeersForUniversity(
@@ -96,6 +99,9 @@ export async function getActivePeersForUniversity(
       courseName: studentPeers.courseName,
       currentYearOrBatch: studentPeers.currentYearOrBatch,
       hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+      homeState: studentPeers.homeState,
+      homeDistrict: studentPeers.homeDistrict,
+      languages: studentPeers.languages,
       universitySlug: universities.slug,
       universityName: universities.name,
       countryName: countries.name,
@@ -136,6 +142,9 @@ export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
       courseName: studentPeers.courseName,
       currentYearOrBatch: studentPeers.currentYearOrBatch,
       hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+      homeState: studentPeers.homeState,
+      homeDistrict: studentPeers.homeDistrict,
+      languages: studentPeers.languages,
       universitySlug: universities.slug,
       universityName: universities.name,
       countryName: countries.name,
@@ -186,6 +195,9 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
       peerCourseName: studentPeers.courseName,
       peerCurrentYearOrBatch: studentPeers.currentYearOrBatch,
       hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+      homeState: studentPeers.homeState,
+      homeDistrict: studentPeers.homeDistrict,
+      languages: studentPeers.languages,
     })
     .from(studentPeers)
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
@@ -214,6 +226,9 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
       courseName: row.peerCourseName,
       currentYearOrBatch: row.peerCurrentYearOrBatch,
       hasWhatsApp: row.hasWhatsApp,
+      homeState: row.homeState,
+      homeDistrict: row.homeDistrict,
+      languages: row.languages,
     });
   }
 

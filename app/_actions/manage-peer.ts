@@ -14,6 +14,12 @@ export type ManagePeerState = {
   success?: boolean;
 };
 
+function parseLanguages(raw: string | undefined): string[] | null {
+  if (!raw) return null;
+  const langs = raw.split(",").map((l) => l.trim()).filter(Boolean);
+  return langs.length > 0 ? langs : null;
+}
+
 const peerSchema = z.object({
   universityId: z.coerce.number().int().positive("Please select a university."),
   fullName: z.string().trim().min(2, "Full name is required."),
@@ -22,6 +28,9 @@ const peerSchema = z.object({
   currentYearOrBatch: z.string().trim().optional(),
   contactPhone: z.string().trim().optional(),
   contactEmail: z.string().trim().optional(),
+  homeState: z.string().trim().optional(),
+  homeDistrict: z.string().trim().optional(),
+  languages: z.string().trim().optional(),
 });
 
 export async function createPeerAction(
@@ -38,6 +47,9 @@ export async function createPeerAction(
     currentYearOrBatch: formData.get("currentYearOrBatch") || undefined,
     contactPhone: formData.get("contactPhone") || undefined,
     contactEmail: formData.get("contactEmail") || undefined,
+    homeState: formData.get("homeState") || undefined,
+    homeDistrict: formData.get("homeDistrict") || undefined,
+    languages: formData.get("languages") || undefined,
   });
 
   if (!parsed.success) {
@@ -63,6 +75,9 @@ export async function createPeerAction(
     currentYearOrBatch: parsed.data.currentYearOrBatch ?? null,
     contactPhone: parsed.data.contactPhone ?? null,
     contactEmail: parsed.data.contactEmail ?? null,
+    homeState: parsed.data.homeState ?? null,
+    homeDistrict: parsed.data.homeDistrict ?? null,
+    languages: parseLanguages(parsed.data.languages),
     status: "active",
   });
 
@@ -86,6 +101,9 @@ export async function updatePeerAction(
     currentYearOrBatch: formData.get("currentYearOrBatch") || undefined,
     contactPhone: formData.get("contactPhone") || undefined,
     contactEmail: formData.get("contactEmail") || undefined,
+    homeState: formData.get("homeState") || undefined,
+    homeDistrict: formData.get("homeDistrict") || undefined,
+    languages: formData.get("languages") || undefined,
   });
 
   if (!parsed.success) {
@@ -113,6 +131,9 @@ export async function updatePeerAction(
       currentYearOrBatch: parsed.data.currentYearOrBatch ?? null,
       contactPhone: parsed.data.contactPhone ?? null,
       contactEmail: parsed.data.contactEmail ?? null,
+      homeState: parsed.data.homeState ?? null,
+      homeDistrict: parsed.data.homeDistrict ?? null,
+      languages: parseLanguages(parsed.data.languages),
       updatedAt: new Date(),
     })
     .where(eq(studentPeers.id, peerId));

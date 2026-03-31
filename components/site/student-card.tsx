@@ -294,7 +294,7 @@ export function StudentCard({ peer }: { peer: PeerWithUniversity }) {
             <p className="text-[11px] text-slate-400">{peer.countryName}</p>
           </div>
 
-          {/* Course + year as separate chips */}
+          {/* Course + year chips */}
           {(peer.courseName || peer.currentYearOrBatch) && (
             <div className="flex flex-wrap items-center justify-center gap-1">
               {peer.courseName && (
@@ -307,6 +307,24 @@ export function StudentCard({ peer }: { peer: PeerWithUniversity }) {
                   {peer.currentYearOrBatch}
                 </span>
               )}
+            </div>
+          )}
+
+          {/* State / district */}
+          {(peer.homeState || peer.homeDistrict) && (
+            <p className="text-[11px] text-slate-400">
+              {[peer.homeDistrict, peer.homeState].filter(Boolean).join(", ")}
+            </p>
+          )}
+
+          {/* Languages */}
+          {peer.languages && peer.languages.length > 0 && (
+            <div className="flex flex-wrap items-center justify-center gap-1">
+              {peer.languages.map((lang) => (
+                <span key={lang} className="rounded-md bg-blue-50 px-2 py-0.5 text-[11px] font-medium text-blue-600">
+                  {lang}
+                </span>
+              ))}
             </div>
           )}
         </div>

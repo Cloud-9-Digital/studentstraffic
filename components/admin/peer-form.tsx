@@ -23,10 +23,24 @@ type Props = {
     currentYearOrBatch?: string;
     contactPhone?: string;
     contactEmail?: string;
+    homeState?: string;
+    homeDistrict?: string;
+    languages?: string;
   };
   submitLabel?: string;
   cancelHref?: string;
 };
+
+const INDIAN_STATES = [
+  "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+  "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
+  "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram",
+  "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+  "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
+  "Andaman and Nicobar Islands", "Chandigarh",
+  "Dadra and Nagar Haveli and Daman and Diu", "Delhi",
+  "Jammu and Kashmir", "Ladakh", "Lakshadweep", "Puducherry",
+];
 
 const initialState: ManagePeerState = {};
 
@@ -120,6 +134,48 @@ export function PeerForm({
             defaultValue={defaultValues?.currentYearOrBatch}
           />
         </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+        <div className="space-y-1.5">
+          <Label htmlFor="homeState">Home state</Label>
+          <div className="relative">
+            <select
+              id="homeState"
+              name="homeState"
+              defaultValue={defaultValues?.homeState ?? ""}
+              className="h-11 w-full appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+            >
+              <option value="">Select state</option>
+              {INDIAN_STATES.map((s) => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+          </div>
+        </div>
+        <div className="space-y-1.5">
+          <Label htmlFor="homeDistrict">Home district</Label>
+          <Input
+            id="homeDistrict"
+            name="homeDistrict"
+            placeholder="e.g. Pune"
+            defaultValue={defaultValues?.homeDistrict}
+          />
+        </div>
+      </div>
+
+      <div className="space-y-1.5">
+        <Label htmlFor="languages">
+          Languages spoken{" "}
+          <span className="font-normal text-muted-foreground">(comma-separated, e.g. Hindi, English, Tamil)</span>
+        </Label>
+        <Input
+          id="languages"
+          name="languages"
+          placeholder="e.g. Hindi, English"
+          defaultValue={defaultValues?.languages}
+        />
       </div>
 
       <div className="space-y-1.5">

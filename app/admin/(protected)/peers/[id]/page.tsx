@@ -35,6 +35,9 @@ export default async function EditPeerPage({
         currentYearOrBatch: studentPeers.currentYearOrBatch,
         contactPhone: studentPeers.contactPhone,
         contactEmail: studentPeers.contactEmail,
+        homeState: studentPeers.homeState,
+        homeDistrict: studentPeers.homeDistrict,
+        languages: studentPeers.languages,
         status: studentPeers.status,
       })
       .from(studentPeers)
@@ -88,6 +91,9 @@ export default async function EditPeerPage({
             currentYearOrBatch: peer.currentYearOrBatch ?? undefined,
             contactPhone: peer.contactPhone ?? undefined,
             contactEmail: peer.contactEmail ?? undefined,
+            homeState: peer.homeState ?? undefined,
+            homeDistrict: peer.homeDistrict ?? undefined,
+            languages: peer.languages?.join(", ") ?? undefined,
           }}
           submitLabel="Save changes"
         />
