@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ReactMarkdown from "react-markdown";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { Suspense } from "react";
@@ -355,10 +356,10 @@ export default async function CountryPage({
           <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl lg:text-5xl">
             {country.name} as a study destination
           </h2>
-          <div className="mt-6 max-w-3xl space-y-4 text-base leading-8 text-muted-foreground md:text-[1.04rem]">
+          <div className="mt-6 max-w-3xl space-y-4 text-base leading-8 text-muted-foreground md:text-[1.04rem] [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-1 [&_strong]:font-semibold [&_strong]:text-foreground">
             <p>{editorialCopy.overviewLead}</p>
             {country.whyStudentsChooseIt && editorialCopy.overviewLead !== country.whyStudentsChooseIt && (
-              <p>{country.whyStudentsChooseIt}</p>
+              <ReactMarkdown>{country.whyStudentsChooseIt}</ReactMarkdown>
             )}
           </div>
 
@@ -1038,6 +1039,12 @@ function getCountryEditorialCopy({
         "Kyrgyzstan is usually evaluated for affordability first, but the real differences appear in hostel access, city infrastructure, academic support, and how each university handles international students.",
       overviewLead:
         "This destination makes the most sense when you compare beyond the lowest fee and look at whether the city, campus setup, and support model suit the student.",
+    },
+    uzbekistan: {
+      heroLead:
+        "Uzbekistan provides an affordable, rapidly growing English-medium medical track with NMC-compliant universities and straightforward admissions.",
+      overviewLead:
+        "This destination balances modern campuses, highly affordable tuition, and safe environments without overwhelming complexity.",
     },
   };
 

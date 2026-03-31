@@ -89,6 +89,12 @@ export const navDestinations = [
     name: "Kazakhstan",
     description: "Quality education, modern campuses",
   },
+  {
+    href: "/countries/uzbekistan",
+    countryCode: "uz",
+    name: "Uzbekistan",
+    description: "English medium programs, highly affordable",
+  },
 ] as const;
 
 export const navCourses = [
@@ -121,7 +127,7 @@ export const footerPopularRoutes = [
   { label: "MBBS in Philippines", href: "/mbbs-in-philippines" },
   { label: "MBBS in Kyrgyzstan", href: "/mbbs-in-kyrgyzstan" },
   { label: "MBBS in Kazakhstan", href: "/mbbs-in-kazakhstan" },
-  { label: "Medical Schools in Uzbekistan", href: "/wdoms/uzbekistan" },
+  { label: "MBBS in Uzbekistan", href: "/mbbs-in-uzbekistan" },
 ] as const;
 
 export const homeCourseCategories = [
