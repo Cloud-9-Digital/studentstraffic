@@ -260,6 +260,22 @@ export type CostOfLiving = {
   items: CostOfLivingItem[];
 };
 
+export type IntakeTimelineItem = {
+  milestone: string;
+  timeline: string;
+  details?: string;
+};
+
+export type LivingCostItem = {
+  item: string;
+  cost: string;
+};
+
+export type ChallengeItem = {
+  title: string;
+  realityCheck: string;
+};
+
 export type LandingPage = {
   slug: string;
   courseSlug: string;
@@ -280,6 +296,9 @@ export type LandingPage = {
   documentsRequired?: DocumentsRequired;
   syllabusPhases?: SyllabusPhase[];
   indiaComparison?: IndiaComparisonRow[];
+  intakeTimeline?: IntakeTimelineItem[];
+  livingCostBreakdown?: LivingCostItem[];
+  challenges?: ChallengeItem[];
   hostelInfo?: string;
   scholarshipInfo?: string;
   careerOpportunities?: string[];
