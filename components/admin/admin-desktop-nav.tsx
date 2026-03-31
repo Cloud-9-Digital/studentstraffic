@@ -12,7 +12,7 @@ const navigation = [
   { href: "/admin/peer-applications", label: "Applications", icon: ClipboardList, ownerOnly: false },
   { href: "/admin/peer-requests", label: "Peer Requests", icon: Users2, ownerOnly: false },
   { href: "/admin/reviews", label: "Reviews", icon: MessageSquareQuote, ownerOnly: false },
-  { href: "/admin/admins", label: "Admins", icon: Users, ownerOnly: true },
+  { href: "/admin/users", label: "Users", icon: Users, ownerOnly: true },
 ] as const;
 
 export function AdminDesktopNav({

@@ -29,10 +29,10 @@ export function AdminCreateForm() {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-5">
       <div className="mb-4 flex items-center gap-3">
-        <div className="flex size-9 items-center justify-center rounded-xl bg-[#0b312b]/8 text-[#0b312b]">
+        <div className="flex size-9 items-center justify-center rounded-xl bg-primary/8 text-primary">
           <UserPlus className="size-4" />
         </div>
-        <h3 className="text-sm font-semibold text-[#0b312b]">Add admin</h3>
+        <h3 className="text-sm font-semibold text-foreground">Add user</h3>
       </div>
       <form ref={formRef} action={action} className="space-y-3.5">
         <div className="space-y-1.5">
@@ -58,7 +58,7 @@ export function AdminCreateForm() {
             id="admin-user-role"
             name="role"
             defaultValue="admin"
-            className="h-10 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-700 outline-none transition focus:border-[#0b312b]/30 focus:ring-2 focus:ring-[#0b312b]/10"
+            className="h-10 w-full rounded-xl border border-input bg-transparent px-3 text-sm text-foreground outline-none transition focus:border-ring focus:ring-2 focus:ring-ring/20"
           >
             <option value="admin">Admin</option>
             <option value="owner">Owner</option>
@@ -84,24 +84,24 @@ export function AdminCreateForm() {
           <div
             className={`rounded-xl px-4 py-3 text-sm ${
               state.status === "success"
-                ? "border border-emerald-200 bg-emerald-50 text-emerald-700"
+                ? "border border-status-green-border bg-status-green text-status-green-fg"
                 : state.status === "error"
-                  ? "border border-red-200 bg-red-50 text-red-700"
-                  : "border border-slate-200 bg-slate-50 text-slate-700"
+                  ? "border border-destructive/20 bg-destructive/8 text-destructive"
+                  : "border border-border bg-muted text-muted-foreground"
             }`}
           >
             {state.message}
           </div>
         ) : null}
 
-        <Button type="submit" disabled={pending} className="mt-1 h-10 w-full rounded-xl bg-[#0b312b] text-sm hover:bg-[#184a43]">
+        <Button type="submit" disabled={pending} className="mt-1 h-10 w-full rounded-xl bg-primary text-sm hover:bg-surface-dark-2">
           {pending ? (
             <>
               <Loader2 className="size-4 animate-spin" />
               Creating…
             </>
           ) : (
-            "Create admin"
+            "Create user"
           )}
         </Button>
       </form>

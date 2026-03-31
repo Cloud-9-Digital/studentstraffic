@@ -41,7 +41,7 @@ const peerRequestSchema = z.object({
       message: "Please enter a valid email address.",
     }),
   userState: z.string().trim().min(2, "Please enter your state."),
-  userDistrict: z.string().trim().optional(),
+  userCity: z.string().trim().optional(),
   universitySlug: z.string().trim().min(1),
   courseInterest: z.string().trim().optional(),
   languagePreference: z.string().trim().optional(),
@@ -59,13 +59,13 @@ const peerRequestSchema = z.object({
 function buildLeadNotes(input: {
   courseInterest?: string;
   languagePreference?: string;
-  userDistrict?: string;
+  userCity?: string;
   message?: string;
 }) {
   const parts = [
     input.courseInterest ? `Course interest: ${input.courseInterest}` : null,
     input.languagePreference ? `Language preference: ${input.languagePreference}` : null,
-    input.userDistrict ? `District: ${input.userDistrict}` : null,
+    input.userCity ? `District: ${input.userCity}` : null,
     input.message ? `Peer questions: ${input.message}` : null,
   ].filter(Boolean);
 
@@ -81,7 +81,7 @@ export async function submitPeerRequestAction(
     phone: getFormString(formData, "phone"),
     email: getFormString(formData, "email"),
     userState: getFormString(formData, "userState"),
-    userDistrict: getFormString(formData, "userDistrict"),
+    userCity: getFormString(formData, "userCity"),
     universitySlug: getFormString(formData, "universitySlug"),
     courseInterest: getFormString(formData, "courseInterest"),
     languagePreference: getFormString(formData, "languagePreference"),
@@ -150,7 +150,7 @@ export async function submitPeerRequestAction(
   const leadNotes = buildLeadNotes({
     courseInterest: emptyToUndefined(data.courseInterest),
     languagePreference: emptyToUndefined(data.languagePreference),
-    userDistrict: emptyToUndefined(data.userDistrict),
+    userCity: emptyToUndefined(data.userCity),
     message: emptyToUndefined(data.message),
   });
 
@@ -260,7 +260,7 @@ export async function submitPeerRequestAction(
       phone: data.phone,
       email: emptyToUndefined(data.email),
       userState: data.userState,
-      userDistrict: emptyToUndefined(data.userDistrict),
+      userCity: emptyToUndefined(data.userCity),
       courseInterest: emptyToUndefined(data.courseInterest),
       languagePreference: emptyToUndefined(data.languagePreference),
       message: emptyToUndefined(data.message),

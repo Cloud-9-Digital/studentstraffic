@@ -5,6 +5,7 @@ import { eq } from "drizzle-orm";
 import { z } from "zod";
 
 import { requireAdminSession } from "@/lib/auth";
+import { uploadFileToCloudinary, isAllowedPhotoType } from "@/lib/cloudinary-upload";
 import { getDb } from "@/lib/db/server";
 import { studentPeers, universities } from "@/lib/db/schema";
 import { getUniversityPeersTag } from "@/lib/university-community";
@@ -23,13 +24,12 @@ function parseLanguages(raw: string | undefined): string[] | null {
 const peerSchema = z.object({
   universityId: z.coerce.number().int().positive("Please select a university."),
   fullName: z.string().trim().min(2, "Full name is required."),
-  photoUrl: z.string().trim().url("Please enter a valid photo URL.").optional().or(z.literal("")),
   courseName: z.string().trim().optional(),
   currentYearOrBatch: z.string().trim().optional(),
   contactPhone: z.string().trim().optional(),
   contactEmail: z.string().trim().optional(),
   homeState: z.string().trim().optional(),
-  homeDistrict: z.string().trim().optional(),
+  homeCity: z.string().trim().optional(),
   languages: z.string().trim().optional(),
 });
 
@@ -42,13 +42,12 @@ export async function createPeerAction(
   const parsed = peerSchema.safeParse({
     universityId: formData.get("universityId"),
     fullName: formData.get("fullName"),
-    photoUrl: formData.get("photoUrl") || undefined,
     courseName: formData.get("courseName") || undefined,
     currentYearOrBatch: formData.get("currentYearOrBatch") || undefined,
     contactPhone: formData.get("contactPhone") || undefined,
     contactEmail: formData.get("contactEmail") || undefined,
     homeState: formData.get("homeState") || undefined,
-    homeDistrict: formData.get("homeDistrict") || undefined,
+    homeCity: formData.get("homeCity") || undefined,
     languages: formData.get("languages") || undefined,
   });
 
@@ -67,16 +66,29 @@ export async function createPeerAction(
 
   if (!university) return { error: "University not found." };
 
+  let photoUrl: string | null = null;
+  const photoFile = formData.get("photoFile");
+  if (photoFile instanceof File && photoFile.size > 0) {
+    if (!isAllowedPhotoType(photoFile.type)) {
+      return { error: "Photo must be a JPG, PNG, or WebP image." };
+    }
+    const result = await uploadFileToCloudinary(photoFile, {
+      folder: "studentstraffic/peer-photos",
+      maxBytes: 5 * 1024 * 1024,
+    });
+    photoUrl = result.url;
+  }
+
   await db.insert(studentPeers).values({
     universityId: parsed.data.universityId,
     fullName: parsed.data.fullName,
-    photoUrl: parsed.data.photoUrl || null,
+    photoUrl,
     courseName: parsed.data.courseName ?? null,
     currentYearOrBatch: parsed.data.currentYearOrBatch ?? null,
     contactPhone: parsed.data.contactPhone ?? null,
     contactEmail: parsed.data.contactEmail ?? null,
     homeState: parsed.data.homeState ?? null,
-    homeDistrict: parsed.data.homeDistrict ?? null,
+    homeCity: parsed.data.homeCity ?? null,
     languages: parseLanguages(parsed.data.languages),
     status: "active",
   });
@@ -96,13 +108,12 @@ export async function updatePeerAction(
   const parsed = peerSchema.safeParse({
     universityId: formData.get("universityId"),
     fullName: formData.get("fullName"),
-    photoUrl: formData.get("photoUrl") || undefined,
     courseName: formData.get("courseName") || undefined,
     currentYearOrBatch: formData.get("currentYearOrBatch") || undefined,
     contactPhone: formData.get("contactPhone") || undefined,
     contactEmail: formData.get("contactEmail") || undefined,
     homeState: formData.get("homeState") || undefined,
-    homeDistrict: formData.get("homeDistrict") || undefined,
+    homeCity: formData.get("homeCity") || undefined,
     languages: formData.get("languages") || undefined,
   });
 
@@ -121,18 +132,36 @@ export async function updatePeerAction(
 
   if (!university) return { error: "University not found." };
 
+  // Determine new photoUrl: upload new file if provided, otherwise keep existing
+  let photoUrl: string | undefined | null = undefined; // undefined = don't change
+  const photoFile = formData.get("photoFile");
+  const clearPhoto = formData.get("clearPhoto") === "1";
+
+  if (clearPhoto) {
+    photoUrl = null;
+  } else if (photoFile instanceof File && photoFile.size > 0) {
+    if (!isAllowedPhotoType(photoFile.type)) {
+      return { error: "Photo must be a JPG, PNG, or WebP image." };
+    }
+    const result = await uploadFileToCloudinary(photoFile, {
+      folder: "studentstraffic/peer-photos",
+      maxBytes: 5 * 1024 * 1024,
+    });
+    photoUrl = result.url;
+  }
+
   await db
     .update(studentPeers)
     .set({
       universityId: parsed.data.universityId,
       fullName: parsed.data.fullName,
-      photoUrl: parsed.data.photoUrl || null,
+      ...(photoUrl !== undefined ? { photoUrl } : {}),
       courseName: parsed.data.courseName ?? null,
       currentYearOrBatch: parsed.data.currentYearOrBatch ?? null,
       contactPhone: parsed.data.contactPhone ?? null,
       contactEmail: parsed.data.contactEmail ?? null,
       homeState: parsed.data.homeState ?? null,
-      homeDistrict: parsed.data.homeDistrict ?? null,
+      homeCity: parsed.data.homeCity ?? null,
       languages: parseLanguages(parsed.data.languages),
       updatedAt: new Date(),
     })

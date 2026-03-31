@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PhoneInputField } from "@/components/ui/phone-input";
+import { getCitiesForState } from "@/lib/data/india-cities";
 
 type University = { id: number; name: string };
 
@@ -89,8 +90,11 @@ export function JoinForm({ universities }: { universities: University[] }) {
 
   // Step 1 captured values (injected as hidden inputs in step 2)
   const [step1, setStep1] = useState({
-    fullName: "", email: "", phone: "", homeState: "", homeDistrict: "", languages: "",
+    fullName: "", email: "", phone: "", homeState: "", homeCity: "", languages: "",
   });
+
+  const [selectedState, setSelectedState] = useState("");
+  const cities = getCitiesForState(selectedState);
 
   // Step 2 state (file uploads)
   const [photoPreview, setPhotoPreview] = useState<string | null>(null);
@@ -153,7 +157,7 @@ export function JoinForm({ universities }: { universities: University[] }) {
       email: fd.get("email") as string,
       phone,
       homeState,
-      homeDistrict: fd.get("homeDistrict") as string ?? "",
+      homeCity: fd.get("homeCity") as string ?? "",
       languages,
     });
     setCurrentStep(2);
@@ -244,7 +248,8 @@ export function JoinForm({ universities }: { universities: University[] }) {
                   id="homeState"
                   name="homeState"
                   required
-                  defaultValue=""
+                  value={selectedState}
+                  onChange={(e) => setSelectedState(e.target.value)}
                   className="h-11 w-full appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
                 >
                   <option value="" disabled>Select state</option>
@@ -256,10 +261,24 @@ export function JoinForm({ universities }: { universities: University[] }) {
               </div>
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="homeDistrict">
-                District <span className="font-normal text-muted-foreground">(optional)</span>
+              <Label htmlFor="homeCity">
+                City <span className="font-normal text-muted-foreground">(optional)</span>
               </Label>
-              <Input id="homeDistrict" name="homeDistrict" placeholder="e.g. Pune" />
+              <div className="relative">
+                <select
+                  id="homeCity"
+                  name="homeCity"
+                  disabled={cities.length === 0}
+                  defaultValue=""
+                  className="h-11 w-full appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:opacity-50"
+                >
+                  <option value="">{selectedState ? "Select city" : "Select state first"}</option>
+                  {cities.map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              </div>
             </div>
           </div>
 
@@ -305,7 +324,7 @@ export function JoinForm({ universities }: { universities: University[] }) {
           <input type="hidden" name="email" value={step1.email} readOnly />
           <input type="hidden" name="phone" value={step1.phone} readOnly />
           <input type="hidden" name="homeState" value={step1.homeState} readOnly />
-          <input type="hidden" name="homeDistrict" value={step1.homeDistrict} readOnly />
+          <input type="hidden" name="homeCity" value={step1.homeCity} readOnly />
           <input type="hidden" name="languages" value={step1.languages} readOnly />
 
           <div className="space-y-1.5">

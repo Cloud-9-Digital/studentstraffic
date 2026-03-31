@@ -10,7 +10,7 @@ const navigation = [
   { href: "/admin/leads", label: "Leads", icon: WalletCards, ownerOnly: false },
   { href: "/admin/peer-requests", label: "Peers", icon: Users2, ownerOnly: false },
   { href: "/admin/reviews", label: "Reviews", icon: MessageSquareQuote, ownerOnly: false },
-  { href: "/admin/admins", label: "Admins", icon: Users, ownerOnly: true },
+  { href: "/admin/users", label: "Users", icon: Users, ownerOnly: true },
 ] as const;
 
 export function AdminBottomNav({

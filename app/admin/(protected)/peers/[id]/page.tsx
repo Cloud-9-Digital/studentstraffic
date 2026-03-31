@@ -36,7 +36,7 @@ export default async function EditPeerPage({
         contactPhone: studentPeers.contactPhone,
         contactEmail: studentPeers.contactEmail,
         homeState: studentPeers.homeState,
-        homeDistrict: studentPeers.homeDistrict,
+        homeCity: studentPeers.homeCity,
         languages: studentPeers.languages,
         status: studentPeers.status,
       })
@@ -86,13 +86,13 @@ export default async function EditPeerPage({
           defaultValues={{
             universityId: peer.universityId,
             fullName: peer.fullName,
-            photoUrl: peer.photoUrl ?? undefined,
+            existingPhotoUrl: peer.photoUrl ?? undefined,
             courseName: peer.courseName ?? undefined,
             currentYearOrBatch: peer.currentYearOrBatch ?? undefined,
             contactPhone: peer.contactPhone ?? undefined,
             contactEmail: peer.contactEmail ?? undefined,
             homeState: peer.homeState ?? undefined,
-            homeDistrict: peer.homeDistrict ?? undefined,
+            homeCity: peer.homeCity ?? undefined,
             languages: peer.languages?.join(", ") ?? undefined,
           }}
           submitLabel="Save changes"

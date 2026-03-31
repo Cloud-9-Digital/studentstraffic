@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useRef } from "react";
+import { useActionState, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 import {
@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PhoneInputField } from "@/components/ui/phone-input";
 import { cn } from "@/lib/utils";
+import { getCitiesForState } from "@/lib/data/india-cities";
 
 const INDIAN_STATES = [
   "Andhra Pradesh",
@@ -69,6 +70,8 @@ export function PeerRequestForm({
     submitPeerRequestAction,
     initialState
   );
+  const [selectedState, setSelectedState] = useState("");
+  const cities = getCitiesForState(selectedState);
   const formRef = useRef<HTMLFormElement | null>(null);
   const startedAtInputRef = useRef<HTMLInputElement | null>(null);
 
@@ -146,7 +149,8 @@ export function PeerRequestForm({
                   id="peer-state"
                   name="userState"
                   required
-                  defaultValue=""
+                  value={selectedState}
+                  onChange={(e) => setSelectedState(e.target.value)}
                   className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <option value="" disabled className="text-muted-foreground">
@@ -166,13 +170,23 @@ export function PeerRequestForm({
           <div className="field-grid field-grid--two">
             <div className="space-y-2">
               <Label htmlFor="peer-district">
-                District <span className="font-normal text-muted-foreground">(optional)</span>
+                City <span className="font-normal text-muted-foreground">(optional)</span>
               </Label>
-              <Input
-                id="peer-district"
-                name="userDistrict"
-                placeholder="e.g. Pune"
-              />
+              <div className="relative">
+                <select
+                  id="peer-district"
+                  name="userCity"
+                  disabled={cities.length === 0}
+                  defaultValue=""
+                  className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  <option value="">{selectedState ? "Select city" : "Select state first"}</option>
+                  {cities.map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              </div>
             </div>
             <div className="space-y-2">
               <Label htmlFor="peer-language">

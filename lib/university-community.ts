@@ -75,7 +75,7 @@ export type PublicPeer = {
   currentYearOrBatch: string | null;
   hasWhatsApp: boolean;
   homeState: string | null;
-  homeDistrict: string | null;
+  homeCity: string | null;
   languages: string[] | null;
 };
 
@@ -100,7 +100,7 @@ export async function getActivePeersForUniversity(
       currentYearOrBatch: studentPeers.currentYearOrBatch,
       hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
       homeState: studentPeers.homeState,
-      homeDistrict: studentPeers.homeDistrict,
+      homeCity: studentPeers.homeCity,
       languages: studentPeers.languages,
       universitySlug: universities.slug,
       universityName: universities.name,
@@ -143,7 +143,7 @@ export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
       currentYearOrBatch: studentPeers.currentYearOrBatch,
       hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
       homeState: studentPeers.homeState,
-      homeDistrict: studentPeers.homeDistrict,
+      homeCity: studentPeers.homeCity,
       languages: studentPeers.languages,
       universitySlug: universities.slug,
       universityName: universities.name,
@@ -196,7 +196,7 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
       peerCurrentYearOrBatch: studentPeers.currentYearOrBatch,
       hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
       homeState: studentPeers.homeState,
-      homeDistrict: studentPeers.homeDistrict,
+      homeCity: studentPeers.homeCity,
       languages: studentPeers.languages,
     })
     .from(studentPeers)
@@ -227,7 +227,7 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
       currentYearOrBatch: row.peerCurrentYearOrBatch,
       hasWhatsApp: row.hasWhatsApp,
       homeState: row.homeState,
-      homeDistrict: row.homeDistrict,
+      homeCity: row.homeCity,
       languages: row.languages,
     });
   }
