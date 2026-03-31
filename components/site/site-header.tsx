@@ -51,6 +51,7 @@ const navLinks = [
   { href: "/universities", label: "Universities" },
   { href: "/students",     label: "Talk to Students" },
   { href: "/reviews",      label: "Reviews" },
+  { href: "/blog",         label: "Blog" },
 ] as const;
 
 export function SiteHeader() {

@@ -527,6 +527,30 @@ export const searchDocuments = pgTable(
   ]
 );
 
+export const blogPosts = pgTable(
+  "blog_posts",
+  {
+    id: serial("id").primaryKey(),
+    slug: text("slug").notNull(),
+    title: text("title").notNull(),
+    excerpt: text("excerpt"),
+    content: text("content").notNull().default(""),
+    coverUrl: text("cover_url"),
+    category: text("category"),
+    metaTitle: text("meta_title"),
+    metaDescription: text("meta_description"),
+    status: text("status").$type<"draft" | "published">().notNull().default("draft"),
+    publishedAt: timestamp("published_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("blog_posts_slug_idx").on(table.slug),
+    index("blog_posts_status_idx").on(table.status),
+    index("blog_posts_published_at_idx").on(table.publishedAt),
+  ]
+);
+
 export type CountryRow = typeof countries.$inferSelect;
 export type CourseRow = typeof courses.$inferSelect;
 export type UniversityRow = typeof universities.$inferSelect;

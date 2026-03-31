@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, MessageSquareQuote, Users, Users2, WalletCards } from "lucide-react";
+import { LayoutDashboard, MessageSquareQuote, NotebookPen, Users, Users2, WalletCards } from "lucide-react";
 import type { AdminUserRole } from "@/lib/db/schema";
 
 const navigation = [
@@ -10,6 +10,7 @@ const navigation = [
   { href: "/admin/leads", label: "Leads", icon: WalletCards, ownerOnly: false },
   { href: "/admin/peer-requests", label: "Peers", icon: Users2, ownerOnly: false },
   { href: "/admin/reviews", label: "Reviews", icon: MessageSquareQuote, ownerOnly: false },
+  { href: "/admin/blog", label: "Blog", icon: NotebookPen, ownerOnly: false },
   { href: "/admin/users", label: "Users", icon: Users, ownerOnly: true },
 ] as const;
 
