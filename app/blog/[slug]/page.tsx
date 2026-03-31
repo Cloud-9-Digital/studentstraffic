@@ -122,7 +122,7 @@ export default async function BlogPostPage({
           <h3 className="font-display text-lg font-bold text-primary">Ready to apply for MBBS abroad?</h3>
           <p className="mt-1 text-sm text-muted-foreground">Talk to a student who's already there — for free.</p>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
-            <Link href="/universities" className="rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-surface-dark-2 transition-colors">
+            <Link href="/universities" className="rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-surface-dark-2 transition-colors">
               Browse universities
             </Link>
             <Link href="/students" className="rounded-xl border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground hover:bg-muted transition-colors">

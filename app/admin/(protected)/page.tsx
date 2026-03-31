@@ -232,7 +232,7 @@ export default async function AdminDashboardPage() {
             <Button
               asChild
               size="sm"
-              className="h-8 bg-[#0b312b] text-xs hover:bg-[#184a43]"
+              className="h-8 bg-primary !text-white text-xs hover:bg-surface-dark-2"
             >
               <Link href="/admin/leads">
                 <span className="hidden sm:inline">View all</span>
@@ -383,7 +383,7 @@ export default async function AdminDashboardPage() {
           <Button
             asChild
             size="sm"
-            className="h-8 bg-[#0b312b] text-xs hover:bg-[#184a43]"
+            className="h-8 bg-primary !text-white text-xs hover:bg-surface-dark-2"
           >
             <Link href="/admin/reviews">
               <span className="hidden sm:inline">Review queue</span>

@@ -44,7 +44,7 @@ async function BlogList() {
         </div>
         <Link
           href="/admin/blog/new"
-          className="flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-surface-dark-2"
+          className="flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-surface-dark-2"
         >
           <Plus className="size-4" /> New post
         </Link>
@@ -55,7 +55,7 @@ async function BlogList() {
           <FileText className="mx-auto mb-3 size-8 text-muted-foreground/40" />
           <p className="font-medium text-foreground">No posts yet</p>
           <p className="mt-1 text-sm text-muted-foreground">Create your first blog post to start driving organic traffic.</p>
-          <Link href="/admin/blog/new" className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-surface-dark-2">
+          <Link href="/admin/blog/new" className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-surface-dark-2">
             <Plus className="size-4" /> Write first post
           </Link>
         </div>

@@ -40,7 +40,7 @@ export default async function AdminLeadsPage() {
           <p className="mt-1 text-sm text-slate-500">{rows.length} lead{rows.length !== 1 ? "s" : ""} · most recent 200</p>
         </div>
         {session.user.adminRole === "owner" ? (
-          <Button asChild className="shrink-0 bg-[#0b312b] hover:bg-[#184a43]">
+          <Button asChild className="shrink-0 bg-primary !text-white hover:bg-surface-dark-2">
             <Link href="/admin/leads/export">
               <Download className="size-4" />
               <span className="hidden sm:inline">Export CSV</span>

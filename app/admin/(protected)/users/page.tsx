@@ -124,7 +124,7 @@ export default async function AdminUsersPage() {
                   <div
                     className={`flex size-10 shrink-0 items-center justify-center rounded-full text-sm font-bold ${
                       isOwner
-                        ? "bg-primary text-primary-foreground"
+                        ? "bg-primary text-white"
                         : "bg-primary/10 text-primary"
                     }`}
                   >

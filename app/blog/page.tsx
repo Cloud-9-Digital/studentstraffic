@@ -51,11 +51,11 @@ export default async function BlogPage() {
       {/* Hero */}
       <section className="border-b border-border bg-surface-dark py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-4">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary-foreground/50">Resources</p>
-          <h1 className="mt-2 font-display text-3xl font-bold text-primary-foreground md:text-4xl lg:text-5xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/50">Resources</p>
+          <h1 className="mt-2 font-display text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             MBBS Abroad Guides
           </h1>
-          <p className="mt-3 max-w-xl text-base text-primary-foreground/70">
+          <p className="mt-3 max-w-xl text-base text-white/70">
             Honest, research-backed guides to help Indian students navigate MBBS abroad — universities, fees, admission, and life on campus.
           </p>
         </div>

@@ -106,7 +106,7 @@ export function BlogEditor({
             Back to posts
           </Link>
           {state.postId && (
-            <Link href={`/admin/blog/${state.postId}`} className="rounded-xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-surface-dark-2">
+            <Link href={`/admin/blog/${state.postId}`} className="rounded-xl bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-surface-dark-2">
               Continue editing
             </Link>
           )}
