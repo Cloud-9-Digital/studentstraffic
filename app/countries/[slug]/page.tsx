@@ -28,6 +28,9 @@ import {
   getLandingPageBySlug,
   getProgramsForCountry,
 } from "@/lib/data/catalog";
+import { and, eq, ilike } from "drizzle-orm";
+import { getDb } from "@/lib/db/server";
+import { blogPosts } from "@/lib/db/schema";
 import { getRecommendedBudgetGuideForCourse } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
@@ -222,8 +225,22 @@ export default async function CountryPage({
     courseCount: uniqueCourses.length,
   });
   const countryContent = getCountryContent(country.slug);
+  const db = getDb();
   const landingPagePromise = curatedLandingPageHref
     ? getLandingPageBySlug(curatedLandingPageHref.slice(1))
+    : Promise.resolve(null);
+  const relatedBlogPostPromise = db
+    ? db
+        .select({ title: blogPosts.title, slug: blogPosts.slug, excerpt: blogPosts.excerpt })
+        .from(blogPosts)
+        .where(
+          and(
+            eq(blogPosts.status, "published"),
+            ilike(blogPosts.slug, `%${country.slug}%`)
+          )
+        )
+        .limit(1)
+        .then((rows) => rows[0] ?? null)
     : Promise.resolve(null);
   const wdomsCountryConfig = getWdomsCountryConfig(country.slug);
   const wdomsDirectoryHref = wdomsCountryConfig
@@ -231,6 +248,8 @@ export default async function CountryPage({
       ? `/${wdomsCountryConfig.landingPageSlug}#wdoms-directory`
       : getWdomsDirectoryHref(wdomsCountryConfig.slug)
     : null;
+
+  const relatedBlogPost = await relatedBlogPostPromise;
 
   return (
     <>
@@ -667,6 +686,32 @@ export default async function CountryPage({
               </ul>
             </div>
           </>
+        )}
+
+        {/* ── RELATED BLOG POST ───────────────────────────────── */}
+        {relatedBlogPost && (
+          <div className="py-8 border-t border-border">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+              From the blog
+            </p>
+            <Link
+              href={`/blog/${relatedBlogPost.slug}`}
+              className="group flex items-start gap-4 rounded-xl border border-border bg-card p-4 hover:bg-muted transition-colors"
+            >
+              <BookOpen className="mt-0.5 size-5 shrink-0 text-primary" />
+              <div>
+                <p className="font-semibold text-foreground group-hover:text-primary transition-colors text-sm leading-snug">
+                  {relatedBlogPost.title}
+                </p>
+                {relatedBlogPost.excerpt && (
+                  <p className="mt-1 text-xs text-muted-foreground line-clamp-2">
+                    {relatedBlogPost.excerpt}
+                  </p>
+                )}
+              </div>
+              <ChevronRight className="ml-auto mt-0.5 size-4 shrink-0 text-muted-foreground group-hover:text-primary transition-colors" />
+            </Link>
+          </div>
         )}
 
         {/* ── NEXT STEP ───────────────────────────────────────── */}

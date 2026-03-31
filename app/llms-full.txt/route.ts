@@ -1,3 +1,5 @@
+import { eq, desc } from "drizzle-orm";
+
 import { siteConfig } from "@/lib/constants";
 import {
   getCountries,
@@ -5,6 +7,8 @@ import {
   getProgramOfferings,
   getUniversities,
 } from "@/lib/data/catalog";
+import { getDb } from "@/lib/db/server";
+import { blogPosts } from "@/lib/db/schema";
 import { absoluteUrl } from "@/lib/metadata";
 import {
   getCountryHref,
@@ -14,11 +18,25 @@ import {
 import { hasPublishedUsdAmount } from "@/lib/utils";
 
 export async function GET() {
-  const [universities, countries, courses, offerings] = await Promise.all([
+  const db = getDb();
+  const [universities, countries, courses, offerings, posts] = await Promise.all([
     getUniversities(),
     getCountries(),
     getCourses(),
     getProgramOfferings(),
+    db
+      ? db.select({
+          slug: blogPosts.slug,
+          title: blogPosts.title,
+          category: blogPosts.category,
+          excerpt: blogPosts.excerpt,
+          publishedAt: blogPosts.publishedAt,
+          content: blogPosts.content,
+        })
+        .from(blogPosts)
+        .where(eq(blogPosts.status, "published"))
+        .orderBy(desc(blogPosts.publishedAt))
+      : Promise.resolve([]),
   ]);
 
   const countryMap = new Map(countries.map((c) => [c.slug, c]));
@@ -97,6 +115,22 @@ export async function GET() {
 
     lines.push(`- Summary: ${university.summary}`);
     lines.push("");
+  }
+
+  if (posts.length > 0) {
+    lines.push("---", "", "## Blog Posts", "");
+    for (const post of posts) {
+      const url = absoluteUrl(`/blog/${post.slug}`);
+      const wordCount = post.content.split(/\s+/).length;
+      const readingMinutes = Math.ceil(wordCount / 200);
+      lines.push(`### ${post.title}`);
+      lines.push(`- URL: ${url}`);
+      if (post.category) lines.push(`- Category: ${post.category}`);
+      if (post.publishedAt) lines.push(`- Published: ${new Date(post.publishedAt).toISOString().slice(0, 10)}`);
+      lines.push(`- Reading time: ~${readingMinutes} min`);
+      if (post.excerpt) lines.push(`- Summary: ${post.excerpt}`);
+      lines.push("");
+    }
   }
 
   lines.push("---", "", "## Contact", "");

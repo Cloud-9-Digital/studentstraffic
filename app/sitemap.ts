@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { eq, desc } from "drizzle-orm";
 
 import { getLatestDate } from "@/lib/content-dates";
 import {
@@ -11,6 +12,8 @@ import {
   getCatalogSnapshot,
 } from "@/lib/data/catalog";
 import { getBudgetGuides, getComparisonGuides } from "@/lib/discovery-pages";
+import { getDb } from "@/lib/db/server";
+import { blogPosts } from "@/lib/db/schema";
 import {
   getBudgetGuideHref,
   getBudgetIndexHref,
@@ -30,12 +33,19 @@ function uniqueUrls(urls: Array<string | undefined>) {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [snapshot, landingPages, comparisonGuides, budgetGuides] =
+  const db = getDb();
+  const [snapshot, landingPages, comparisonGuides, budgetGuides, publishedPosts] =
     await Promise.all([
       getCatalogSnapshot(),
       getAllLandingPages(),
       getComparisonGuides(),
       getBudgetGuides(),
+      db
+        ? db.select({ slug: blogPosts.slug, publishedAt: blogPosts.publishedAt, updatedAt: blogPosts.updatedAt })
+            .from(blogPosts)
+            .where(eq(blogPosts.status, "published"))
+            .orderBy(desc(blogPosts.publishedAt))
+        : Promise.resolve([]),
     ]);
   const { countries, courses, universities, programOfferings } = snapshot;
   const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
@@ -129,6 +139,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       lastModified: catalogLastModified,
     },
+    {
+      url: absoluteUrl("/blog"),
+      priority: 0.8,
+      changeFrequency: "weekly",
+      lastModified: publishedPosts[0]?.publishedAt ? new Date(publishedPosts[0].publishedAt) : new Date(),
+    },
+    {
+      url: absoluteUrl("/blog/feed.xml"),
+      priority: 0.3,
+      changeFrequency: "daily" as const,
+      lastModified: publishedPosts[0]?.publishedAt ? new Date(publishedPosts[0].publishedAt) : new Date(),
+    },
+    // Category archive pages
+    ...["mbbs-abroad","country-guide","nmc-licensing","university-guide","admissions","student-life","fees-scholarships","tips-advice"].map((cat) => ({
+      url: absoluteUrl(`/blog/category/${cat}`),
+      priority: 0.65,
+      changeFrequency: "weekly" as const,
+      lastModified: new Date(),
+    })),
+    ...publishedPosts.map((post) => ({
+      url: absoluteUrl(`/blog/${post.slug}`),
+      priority: 0.75,
+      changeFrequency: "monthly" as const,
+      lastModified: post.updatedAt ? new Date(post.updatedAt) : post.publishedAt ? new Date(post.publishedAt) : new Date(),
+    })),
     {
       url: absoluteUrl("/about"),
       priority: 0.7,
