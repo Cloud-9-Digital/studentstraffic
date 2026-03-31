@@ -56,6 +56,12 @@ const securityHeaders = [
 ] satisfies Array<{ key: string; value: string }>;
 
 const nextConfig: NextConfig = {
+  typescript: {
+    // Type checking is done explicitly via `tsc --noEmit` in the build command.
+    // This prevents Next.js from running its own cached TS check which can fail
+    // when Vercel restores a stale build cache with old tsbuildinfo artifacts.
+    ignoreBuildErrors: true,
+  },
   cacheComponents: true,
   experimental: {
     serverActions: {
