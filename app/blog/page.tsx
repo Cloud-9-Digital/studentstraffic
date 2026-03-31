@@ -117,10 +117,9 @@ type PostRow = {
 function PostCard({ post }: { post: PostRow }) {
   const mins = post.readingTimeMinutes ?? 5;
   return (
-    <Link
-      href={`/blog/${post.slug}`}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card hover:border-primary/25 hover:shadow-sm transition-all duration-200"
-    >
+    <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card hover:border-primary/25 hover:shadow-sm transition-all duration-200">
+      {/* Overlay link covers the whole card — no nested <a> */}
+      <Link href={`/blog/${post.slug}`} className="absolute inset-0 z-10" aria-label={post.title} />
       <div className="relative aspect-[16/9] overflow-hidden bg-muted">
         {post.coverUrl ? (
           <Image
@@ -135,7 +134,7 @@ function PostCard({ post }: { post: PostRow }) {
       </div>
       <div className="flex flex-1 flex-col p-5">
         {post.category && (
-          <div className="mb-3">
+          <div className="relative z-20 mb-3">
             <CategoryPill category={post.category} />
           </div>
         )}
@@ -153,7 +152,7 @@ function PostCard({ post }: { post: PostRow }) {
           <span>{mins} min read</span>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
 
