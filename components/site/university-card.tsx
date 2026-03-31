@@ -37,7 +37,7 @@ export function UniversityCard({
       {/* Cover image ─────────────────────────────────────────────── */}
       <div
         className="relative h-36 w-full shrink-0 overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #0f3d37, #184a43 60%, #2a1a0e)" }}
+        style={{ background: "linear-gradient(135deg, #0f3d37 0%, #1a4a43 45%, #7c2610 100%)" }}
       >
         {coverImage ? (
           <Image
