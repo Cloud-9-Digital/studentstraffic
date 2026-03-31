@@ -15,17 +15,15 @@ declare global {
   }
 }
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const GA_ID = "G-D7WE61F5SM";
 
 export function GoogleAnalytics() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (!GA_ID || typeof window.gtag !== "function") return;
+    if (typeof window.gtag !== "function") return;
     window.gtag("config", GA_ID, { page_path: pathname });
   }, [pathname]);
-
-  if (!GA_ID) return null;
 
   return (
     <>
