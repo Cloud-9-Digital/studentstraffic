@@ -196,7 +196,7 @@ export function JoinForm({ universities }: { universities: University[] }) {
       {isLoading && <LoadingDialog step={loadingStep} />}
 
       {/* Step indicator */}
-      <div className="mb-8 flex items-center gap-3">
+      <div className="mb-8 flex items-center justify-center gap-3">
         {[1, 2].map((s) => (
           <div key={s} className="flex items-center gap-3">
             <div className={`flex size-7 items-center justify-center rounded-full text-xs font-semibold transition-colors ${
