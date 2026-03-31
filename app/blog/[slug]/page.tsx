@@ -82,6 +82,16 @@ const getPrevNext = unstable_cache(
   { tags: ["blog"], revalidate: 3600 }
 );
 
+export async function generateStaticParams() {
+  const db = getDb();
+  if (!db) return [];
+  const posts = await db
+    .select({ slug: blogPosts.slug })
+    .from(blogPosts)
+    .where(eq(blogPosts.status, "published"));
+  return posts.map((p) => ({ slug: p.slug }));
+}
+
 export async function generateMetadata({
   params,
 }: {
