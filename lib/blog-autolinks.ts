@@ -78,7 +78,7 @@ export const buildLinkRules = unstable_cache(
     return true;
   });
 },
-  (currentSlug) => [`blog-autolinks-${currentSlug}`],
+  ["blog-autolinks"],
   { tags: ["blog", "catalog"], revalidate: 3600 }
 );
 
