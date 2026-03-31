@@ -4,6 +4,7 @@ import { Suspense } from "react";
 
 import { AppChrome } from "@/components/app/app-chrome";
 import { GoogleAnalytics } from "@/components/google-analytics";
+import { MetaPixel } from "@/components/meta-pixel";
 import { JsonLd } from "@/components/shared/json-ld";
 import { Toaster } from "@/components/ui/sonner";
 import { defaultMetadata } from "@/lib/metadata";
@@ -54,6 +55,7 @@ export default function RootLayout({
       >
         <Suspense fallback={null}>
           <GoogleAnalytics />
+          <MetaPixel />
           <AppChrome>{children}</AppChrome>
         </Suspense>
         <Toaster position="top-center" />
