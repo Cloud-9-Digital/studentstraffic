@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 import { Suspense } from "react";
 
 import { AppChrome } from "@/components/app/app-chrome";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { JsonLd } from "@/components/shared/json-ld";
 import { Toaster } from "@/components/ui/sonner";
 import { defaultMetadata } from "@/lib/metadata";
@@ -52,6 +53,7 @@ export default function RootLayout({
         className="min-h-full bg-background text-foreground"
       >
         <Suspense fallback={null}>
+          <GoogleAnalytics />
           <AppChrome>{children}</AppChrome>
         </Suspense>
         <Toaster position="top-center" />
