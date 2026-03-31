@@ -5,7 +5,7 @@ import { Building2 } from "lucide-react";
 import { AddToCompareButton } from "@/components/site/add-to-compare-button";
 import type { FinderCardProgram } from "@/lib/data/types";
 import { getUniversityHref } from "@/lib/routes";
-import { getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
+import { getCountryPlaceholder, getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
 import {
   cn,
   formatProgramAnnualFee,
@@ -24,6 +24,7 @@ export function UniversityCard({
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
   const coverImage = getUniversityCoverImage(university);
+  const placeholder = getCountryPlaceholder(country.slug);
   const hasPublishedFee = hasRenderableProgramAnnualFee(offering);
 
   return (
@@ -35,7 +36,10 @@ export function UniversityCard({
       <Link href={href} className="absolute inset-0 z-[1]" aria-label={university.name} />
 
       {/* Cover image ─────────────────────────────────────────────── */}
-      <div className="relative h-36 w-full shrink-0 overflow-hidden bg-gradient-to-br from-primary/12 to-primary/5">
+      <div
+        className="relative h-36 w-full shrink-0 overflow-hidden"
+        style={{ background: `linear-gradient(135deg, ${placeholder.from}, ${placeholder.to})` }}
+      >
         {coverImage ? (
           <Image
             src={coverImage.url}
@@ -47,8 +51,11 @@ export function UniversityCard({
             className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="select-none font-display text-6xl font-semibold text-primary/10">
+          <div className="absolute inset-0 flex items-end justify-end p-3">
+            <span
+              className="select-none font-display text-7xl font-bold leading-none opacity-20"
+              style={{ color: placeholder.text }}
+            >
               {initials}
             </span>
           </div>
@@ -79,9 +86,9 @@ export function UniversityCard({
           </span>
         </div>
 
-        {/* Logo badge — bottom-left */}
-        <div className="absolute bottom-2.5 left-2.5 flex size-10 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-md">
-          {university.logoUrl ? (
+        {/* Logo badge — bottom-left, only when available */}
+        {university.logoUrl && (
+          <div className="absolute bottom-2.5 left-2.5 flex size-10 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-md">
             <span className="relative flex h-full w-full items-center justify-center p-1.5">
               <Image
                 src={university.logoUrl}
@@ -91,10 +98,8 @@ export function UniversityCard({
                 className="object-contain p-1.5"
               />
             </span>
-          ) : (
-            <span className="text-xs font-bold text-primary">{initials}</span>
-          )}
-        </div>
+          </div>
+        )}
 
       </div>
 

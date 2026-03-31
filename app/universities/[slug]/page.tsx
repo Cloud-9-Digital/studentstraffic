@@ -221,7 +221,7 @@ export default async function UniversityDetailPage({
         <div className="hero-orb hero-orb--cool pointer-events-none absolute -bottom-10 left-10 size-72 opacity-50" aria-hidden />
 
         <div className="relative mx-auto w-[min(1380px,calc(100%-2rem))] py-12 md:py-16">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(420px,0.95fr)] lg:items-center lg:gap-12 xl:gap-16">
+          <div className={`grid gap-8 lg:items-center lg:gap-12 xl:gap-16 ${coverImage || university.logoUrl ? "lg:grid-cols-[minmax(0,1.05fr)_minmax(420px,0.95fr)]" : ""}`}>
             <div className="min-w-0 space-y-6">
               <nav className="flex items-center gap-2 text-xs text-white/50">
                 <Link href="/universities" className="transition-colors hover:text-white/80">
@@ -791,50 +791,42 @@ function UniversityHeroMedia({
   universityName: string;
   logoUrl?: string;
 }) {
-  const initials = getUniversityInitials(universityName);
+  if (!coverImage && !logoUrl) return null;
 
   return (
     <figure className="group relative mx-auto w-full max-w-[580px] overflow-hidden rounded-[2rem] border border-white/12 bg-card shadow-[0_30px_100px_-50px_rgba(7,10,19,0.9)]">
-      <div className="relative h-[320px] overflow-hidden md:h-[420px] lg:h-[560px]">
-        {coverImage ? (
-          <>
-            <Image
-              src={coverImage.url}
-              alt={coverImage.alt}
-              width={1160}
-              height={1450}
-              sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 38vw, 580px"
-              loading="eager"
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.18),transparent_42%,rgba(7,10,19,0.08))]" />
-          </>
-        ) : (
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.16),transparent_36%),linear-gradient(135deg,rgba(247,153,74,0.16),rgba(7,10,19,0.06)_38%,rgba(17,73,63,0.32))]">
-            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.06),rgba(7,10,19,0.28))]" />
-            <div className="absolute inset-x-0 bottom-0 border-t border-white/8 bg-[linear-gradient(180deg,rgba(7,10,19,0),rgba(7,10,19,0.55))] px-6 py-8">
-              <div className="max-w-xs">
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/60">
-                  Campus media pending
-                </p>
-                <p className="mt-2 text-sm leading-6 text-white/70">
-                  We have not published an official campus cover for this university yet.
-                </p>
-              </div>
+      {coverImage && (
+        <div className="relative h-[320px] overflow-hidden md:h-[420px] lg:h-[560px]">
+          <Image
+            src={coverImage.url}
+            alt={coverImage.alt}
+            width={1160}
+            height={1450}
+            sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 38vw, 580px"
+            loading="eager"
+            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(7,10,19,0.18),transparent_42%,rgba(7,10,19,0.08))]" />
+          {logoUrl && (
+            <div className="absolute bottom-4 left-4 md:bottom-5 md:left-5">
+              <UniversityLogoBadge
+                name={universityName}
+                logoUrl={logoUrl}
+                className="size-16 border-white/80 bg-white text-surface-dark shadow-lg backdrop-blur-sm md:size-20"
+              />
             </div>
-            <div className="absolute right-6 top-6 flex size-24 items-center justify-center rounded-full border border-white/10 bg-white/6 text-3xl font-semibold tracking-[0.2em] text-white/20 md:size-28 md:text-4xl">
-              {initials}
-            </div>
-          </div>
-        )}
-        <div className="absolute bottom-4 left-4 md:bottom-5 md:left-5">
+          )}
+        </div>
+      )}
+      {!coverImage && logoUrl && (
+        <div className="flex items-center justify-center px-10 py-14">
           <UniversityLogoBadge
             name={universityName}
             logoUrl={logoUrl}
-            className="size-16 border-white/80 bg-white text-surface-dark shadow-lg backdrop-blur-sm md:size-20"
+            className="size-28 border-white/20 bg-white text-surface-dark shadow-lg md:size-36"
           />
         </div>
-      </div>
+      )}
     </figure>
   );
 }

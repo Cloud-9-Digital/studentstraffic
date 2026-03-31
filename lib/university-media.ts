@@ -86,3 +86,20 @@ export function getUniversityGalleryImages(input: UniversityMediaInput) {
 export function getUniversityCoverImage(input: UniversityMediaInput) {
   return getUniversityGalleryImages(input)[0] ?? null;
 }
+
+// Country-branded placeholder gradients — used when no cover image is available.
+// Colors are loosely derived from each country's national palette.
+const COUNTRY_GRADIENTS: Record<string, { from: string; to: string; text: string }> = {
+  russia:     { from: "#6b1a1a", to: "#1a2e4a", text: "#fca5a5" },
+  vietnam:    { from: "#8b1a1a", to: "#7c3a0a", text: "#fde68a" },
+  georgia:    { from: "#7c1530", to: "#8b3a12", text: "#fecdd3" },
+  kyrgyzstan: { from: "#a31c1c", to: "#2d3748", text: "#fca5a5" },
+  kazakhstan: { from: "#0c5f8a", to: "#8a6b0c", text: "#bae6fd" },
+  uzbekistan: { from: "#0d6b61", to: "#1a2e5a", text: "#6ee7b7" },
+  bangladesh: { from: "#145228", to: "#8b1a1a", text: "#bbf7d0" },
+};
+const DEFAULT_GRADIENT = { from: "#1e3a5f", to: "#312e81", text: "#c7d2fe" };
+
+export function getCountryPlaceholder(countrySlug: string) {
+  return COUNTRY_GRADIENTS[countrySlug] ?? DEFAULT_GRADIENT;
+}
