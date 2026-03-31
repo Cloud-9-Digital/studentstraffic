@@ -312,6 +312,7 @@ export type FinderFilters = {
   feeMax?: number;
   medium?: string;
   intake?: string;
+  universityType?: "Public" | "Private";
   sort?: FinderSort;
 };
 

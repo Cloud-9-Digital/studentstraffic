@@ -715,6 +715,9 @@ export async function queryFinderCardProgramsPage(
       sql`${programOfferingsTable.intakeMonths} @> ARRAY[${filters.intake}]::text[]`,
     );
   }
+  if (filters.universityType) {
+    conditions.push(eq(universitiesTable.type, filters.universityType));
+  }
   if (filters.q) {
     const q = `%${filters.q}%`;
     const searchCondition = or(

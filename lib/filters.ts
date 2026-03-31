@@ -55,6 +55,11 @@ export function getFinderSort(sort?: FinderSort) {
   return parseFinderSort(sort) ?? defaultFinderSort;
 }
 
+function parseUniversityType(value?: string): "Public" | "Private" | undefined {
+  if (value === "Public" || value === "Private") return value;
+  return undefined;
+}
+
 export function normalizeFinderFilters(filters: FinderFilters): FinderFilters {
   return {
     q: filters.q?.trim() || undefined,
@@ -64,6 +69,7 @@ export function normalizeFinderFilters(filters: FinderFilters): FinderFilters {
     feeMax: filters.feeMax,
     medium: filters.medium || undefined,
     intake: filters.intake || undefined,
+    universityType: filters.universityType || undefined,
     sort: normalizeFinderSort(filters.sort),
   };
 }
@@ -77,6 +83,7 @@ export function parseFinderFilters(raw: FinderParamsInput): FinderFilters {
     feeMax: parseNumber(getFirstValue(raw, "fee_max")),
     medium: getFirstValue(raw, "medium") || undefined,
     intake: getFirstValue(raw, "intake") || undefined,
+    universityType: parseUniversityType(getFirstValue(raw, "university_type")),
     sort: parseFinderSort(getFirstValue(raw, "sort") || undefined),
   });
 }
@@ -95,6 +102,7 @@ export function createFinderSearchParams(filters: FinderFilters, page = 1) {
   if (normalized.course) params.set("course", normalized.course);
   if (normalized.medium) params.set("medium", normalized.medium);
   if (normalized.intake) params.set("intake", normalized.intake);
+  if (normalized.universityType) params.set("university_type", normalized.universityType);
   if (normalized.feeMin != null)
     params.set("fee_min", String(normalized.feeMin));
   if (normalized.feeMax != null)

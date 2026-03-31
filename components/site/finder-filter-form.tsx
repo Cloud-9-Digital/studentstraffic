@@ -310,6 +310,27 @@ function FilterFields({
       </div>
 
       <div className="space-y-1.5">
+        <Label className="text-xs font-medium">University type</Label>
+        <div className="flex gap-2">
+          {([undefined, "Public", "Private"] as const).map((val) => (
+            <button
+              key={val ?? "all"}
+              type="button"
+              onClick={() => navigate({ universityType: val })}
+              className={cn(
+                "flex-1 rounded-xl border px-3 py-1.5 text-xs font-medium transition-colors",
+                filters.universityType === val
+                  ? "border-primary/30 bg-primary/8 text-primary"
+                  : "border-border bg-muted/30 text-foreground hover:bg-muted/60",
+              )}
+            >
+              {val ?? "All"}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="space-y-1.5">
         <Label className="text-xs font-medium">Annual fee (USD)</Label>
         <FeeRangePicker
           filters={filters}
