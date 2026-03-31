@@ -540,6 +540,7 @@ export const blogPosts = pgTable(
     metaTitle: text("meta_title"),
     metaDescription: text("meta_description"),
     status: text("status").$type<"draft" | "published">().notNull().default("draft"),
+    readingTimeMinutes: integer("reading_time_minutes"),
     publishedAt: timestamp("published_at", { withTimezone: true }),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),

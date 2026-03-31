@@ -38,7 +38,7 @@ const getRelatedPosts = unstable_cache(
     // Try same category first, fall back to any recent posts
     const sameCat = category
       ? await db
-          .select({ id: blogPosts.id, title: blogPosts.title, slug: blogPosts.slug, excerpt: blogPosts.excerpt, coverUrl: blogPosts.coverUrl, category: blogPosts.category, publishedAt: blogPosts.publishedAt, content: blogPosts.content })
+          .select({ id: blogPosts.id, title: blogPosts.title, slug: blogPosts.slug, excerpt: blogPosts.excerpt, coverUrl: blogPosts.coverUrl, category: blogPosts.category, publishedAt: blogPosts.publishedAt, readingTimeMinutes: blogPosts.readingTimeMinutes })
           .from(blogPosts)
           .where(and(eq(blogPosts.status, "published"), eq(blogPosts.category, category), ne(blogPosts.slug, slug)))
           .orderBy(desc(blogPosts.publishedAt))
@@ -47,7 +47,7 @@ const getRelatedPosts = unstable_cache(
     if (sameCat.length >= 2) return sameCat;
     // top up with any recent posts
     const recent = await db
-      .select({ id: blogPosts.id, title: blogPosts.title, slug: blogPosts.slug, excerpt: blogPosts.excerpt, coverUrl: blogPosts.coverUrl, category: blogPosts.category, publishedAt: blogPosts.publishedAt, content: blogPosts.content })
+      .select({ id: blogPosts.id, title: blogPosts.title, slug: blogPosts.slug, excerpt: blogPosts.excerpt, coverUrl: blogPosts.coverUrl, category: blogPosts.category, publishedAt: blogPosts.publishedAt, readingTimeMinutes: blogPosts.readingTimeMinutes })
       .from(blogPosts)
       .where(and(eq(blogPosts.status, "published"), ne(blogPosts.slug, slug)))
       .orderBy(desc(blogPosts.publishedAt))
@@ -393,7 +393,7 @@ export default async function BlogPostPage({
                       {r.title}
                     </p>
                     <p className="mt-1.5 text-[11px] text-muted-foreground/50">
-                      {Math.ceil(readingTime(r.content).minutes)} min read
+                      {r.readingTimeMinutes ?? 5} min read
                     </p>
                   </div>
                 </Link>

@@ -4,7 +4,6 @@ import { desc, eq } from "drizzle-orm";
 import type { Metadata } from "next";
 import { unstable_cache } from "next/cache";
 import { Rss } from "lucide-react";
-import readingTime from "reading-time";
 
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
@@ -45,7 +44,7 @@ const getPosts = unstable_cache(
         excerpt: blogPosts.excerpt,
         coverUrl: blogPosts.coverUrl,
         category: blogPosts.category,
-        content: blogPosts.content,
+        readingTimeMinutes: blogPosts.readingTimeMinutes,
         publishedAt: blogPosts.publishedAt,
       })
       .from(blogPosts)
@@ -111,12 +110,12 @@ type PostRow = {
   excerpt: string | null;
   coverUrl: string | null;
   category: string | null;
-  content: string;
+  readingTimeMinutes: number | null;
   publishedAt: Date | string | null;
 };
 
 function PostCard({ post }: { post: PostRow }) {
-  const mins = Math.ceil(readingTime(post.content).minutes);
+  const mins = post.readingTimeMinutes ?? 5;
   return (
     <Link
       href={`/blog/${post.slug}`}
