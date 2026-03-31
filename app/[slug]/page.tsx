@@ -6,7 +6,13 @@ import {
   ArrowRight,
   CheckCircle2,
   ChevronRight,
+  FileCheck,
+  GraduationCap,
+  Home,
+  IdCard,
   Phone,
+  Plane,
+  ShieldPlus,
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -14,9 +20,8 @@ import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversityCard } from "@/components/site/university-card";
-import { WdomsDirectorySection } from "@/components/site/wdoms-directory-section";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   catalogReviewedAt,
 } from "@/lib/content-governance";
@@ -36,10 +41,8 @@ import {
   getLandingPageBySlug,
   getLandingPageContext,
   getLandingPageSlugs,
-  getWdomsDirectoryEntries,
 } from "@/lib/data/catalog";
 import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
-import { getWdomsCountryConfig } from "@/lib/wdoms";
 
 export async function generateStaticParams() {
   const slugs = await getLandingPageSlugs();
@@ -92,11 +95,6 @@ export default async function LandingPageRoute({
   const path = `/${page.slug}`;
   const previewPrograms = context.featuredPrograms;
   const feeStructures = getFeeStructuresForSlugs(page.featuredUniversitySlugs);
-  const wdomsCountryConfig = getWdomsCountryConfig(country.slug);
-  const wdomsDirectoryEntries =
-    wdomsCountryConfig?.landingPageSlug === page.slug
-      ? await getWdomsDirectoryEntries(country.slug)
-      : [];
 
   const countryCode = navDestinations.find(
     (d) => d.href === `/countries/${country.slug}`
@@ -245,7 +243,7 @@ export default async function LandingPageRoute({
         <div className="container-shell">
           <div className="mb-10">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Universities accepting Indian students for {page.title}
+              Top universities for {page.title}
             </h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
               These listings can help you move from information gathering into
@@ -263,29 +261,9 @@ export default async function LandingPageRoute({
             ))}
           </div>
 
-          <div className="mt-8 flex gap-3 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4">
-            <AlertTriangle className="mt-0.5 size-4 shrink-0 text-amber-600" />
-            <p className="text-sm leading-6 text-amber-900">
-              <span className="font-semibold">
-                The universities listed above are the ones we currently cover in detail.
-              </span>{" "}
-              We reserve individual university guides for schools where we have
-              stronger admissions, fee, and student-planning context. Always
-              verify current intake, medium, and official notices before paying
-              any fees.
-            </p>
-          </div>
+
         </div>
       </section>
-
-      {wdomsDirectoryEntries.length > 0 ? (
-        <WdomsDirectorySection
-          entries={wdomsDirectoryEntries}
-          countryName={country.name}
-          title={`All ${wdomsDirectoryEntries.length} medical schools in ${country.name} listed on WDOMS`}
-          intro={`Use this as the broader official directory view for ${country.name}. The detailed university cards above are our higher-confidence guides; this WDOMS section shows the full landscape without forcing thin pages onto the site.`}
-        />
-      ) : null}
 
       {/* ── Fee Structures ───────────────────────────────────────────────── */}
       {feeStructures.length > 0 && (
@@ -406,7 +384,7 @@ export default async function LandingPageRoute({
               </h2>
               <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
                 We have already guided{" "}
-                <span className="font-semibold text-white">1,000+ students</span>{" "}
+                <span className="font-semibold text-white">3,000+ students</span>{" "}
                 through overseas medical admissions. From shortlisting through
                 landing, every step is managed by our team at no extra cost to
                 you.
@@ -414,18 +392,18 @@ export default async function LandingPageRoute({
               <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   {
-                    icon: "✈️",
+                    icon: <Plane className="size-5 text-white/80" />,
                     label: "Flight ticket",
                     desc: `We book your travel to ${country.name}`,
                   },
-                  { icon: "🛂", label: "Student visa", desc: "Full visa application handled by us" },
-                  { icon: "🏥", label: "Health insurance", desc: "Arranged before you depart" },
-                  { icon: "📋", label: "Document legalisation", desc: "Apostille & ministry authentication" },
-                  { icon: "🎓", label: "University application", desc: "Submitted directly on your behalf" },
-                  { icon: "🏠", label: "Hostel booking", desc: "Accommodation sorted before arrival" },
+                  { icon: <IdCard className="size-5 text-white/80" />, label: "Student visa", desc: "Full visa application handled by us" },
+                  { icon: <ShieldPlus className="size-5 text-white/80" />, label: "Health insurance", desc: "Arranged before you depart" },
+                  { icon: <FileCheck className="size-5 text-white/80" />, label: "Document legalisation", desc: "Apostille & ministry authentication" },
+                  { icon: <GraduationCap className="size-5 text-white/80" />, label: "University application", desc: "Submitted directly on your behalf" },
+                  { icon: <Home className="size-5 text-white/80" />, label: "Hostel booking", desc: "Accommodation sorted before arrival" },
                 ].map((item) => (
                   <div key={item.label} className="flex gap-3 rounded-xl border border-white/10 bg-white/8 px-4 py-4">
-                    <span className="text-xl leading-none">{item.icon}</span>
+                    <span className="mt-0.5 shrink-0">{item.icon}</span>
                     <div>
                       <p className="text-sm font-semibold text-white">{item.label}</p>
                       <p className="mt-0.5 text-xs leading-5 text-white/60">{item.desc}</p>
@@ -436,7 +414,7 @@ export default async function LandingPageRoute({
             </div>
             <div className="shrink-0 lg:text-right">
               <div className="inline-flex flex-col items-center justify-center rounded-2xl border border-white/15 bg-white/10 px-10 py-8 text-center">
-                <span className="font-display text-5xl font-bold text-white">1,000+</span>
+                <span className="font-display text-5xl font-bold text-white">3,000+</span>
                 <span className="mt-2 text-sm text-white/60">students guided abroad</span>
                 <div className="mt-5 border-t border-white/15 pt-5">
                   <CounsellingDialog
@@ -704,6 +682,104 @@ export default async function LandingPageRoute({
           </div>
         </section>
       ) : null}
+      {/* ── Intake Timeline ──────────────────────────────────────────────── */}
+      {page.intakeTimeline?.length ? (
+        <section className="deferred-render border-b border-border bg-[#faf8f4] py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Application & intake timeline
+            </h2>
+            <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+              A month-by-month guide on when to apply and prepare for {country.name}.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {page.intakeTimeline.map((item, i) => (
+                <div key={item.milestone} className="relative rounded-2xl border border-border bg-white px-5 py-5 pb-6">
+                  <span className="flex size-7 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary mb-3">
+                    {i + 1}
+                  </span>
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
+                    {item.timeline}
+                  </p>
+                  <h3 className="mt-2 font-display text-base font-semibold text-heading">
+                    {item.milestone}
+                  </h3>
+                  {item.details && (
+                    <p className="mt-2 text-xs leading-5 text-muted-foreground">
+                      {item.details}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Itemized Living Costs ────────────────────────────────────────── */}
+      {page.livingCostBreakdown?.length ? (
+        <section className="deferred-render border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+              Monthly living costs in {country.name}
+            </h2>
+            <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+              An itemized breakdown of typical student expenses.
+            </p>
+            <div className="mt-8 overflow-hidden rounded-2xl border border-border max-w-3xl">
+              <div className="grid grid-cols-2 border-b border-border bg-[#f7f5f0] px-5 py-3">
+                <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  Expense Category
+                </span>
+                <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-right">
+                  Estimated Cost (USD)
+                </span>
+              </div>
+              {page.livingCostBreakdown.map((row, i) => (
+                <div
+                  key={row.item}
+                  className={`grid grid-cols-2 items-center px-5 py-4 ${i > 0 ? "border-t border-border/60" : ""}`}
+                >
+                  <span className="text-sm font-medium text-foreground">{row.item}</span>
+                  <span className="text-right text-sm text-muted-foreground">{row.cost}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── Challenges & Reality Check ───────────────────────────────────── */}
+      {page.challenges?.length ? (
+        <section className="deferred-render border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <div className="mb-8">
+              <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl text-red-900">
+                Challenges & reality check
+              </h2>
+              <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
+                We believe in full transparency. Here are the genuine challenges students face and how to navigate them.
+              </p>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {page.challenges.map((challenge, index) => (
+                <div key={index} className="flex gap-4 rounded-2xl border border-red-200 bg-[#fdfaf8] px-6 py-6 ring-1 ring-inset ring-red-100">
+                  <AlertTriangle className="mt-1 size-5 shrink-0 text-red-600" />
+                  <div>
+                    <h3 className="font-display text-base font-semibold text-red-950">
+                      {challenge.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-6 text-red-900/80">
+                      {challenge.realityCheck}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
 
       {/* ── Hostel & Accommodation ───────────────────────────────────────── */}
       {page.hostelInfo ? (
@@ -761,20 +837,18 @@ export default async function LandingPageRoute({
                 Common questions about {page.title}
               </h2>
             </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              {page.faq.map((item) => (
-                <Card key={item.question} className="rounded-2xl border-border">
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-semibold leading-snug text-heading">
-                      {item.question}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="text-sm leading-7 text-muted-foreground">
+            <Accordion type="single" collapsible className="w-full divide-y divide-border">
+              {page.faq.map((item, i) => (
+                <AccordionItem key={item.question} value={`faq-${i}`} className="border-none">
+                  <AccordionTrigger className="py-4 text-left text-sm font-semibold leading-snug text-heading hover:no-underline">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="pb-4 text-sm leading-7 text-muted-foreground">
                     {item.answer}
-                  </CardContent>
-                </Card>
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </div>
+            </Accordion>
           </div>
         </section>
       )}
@@ -792,7 +866,7 @@ export default async function LandingPageRoute({
                   Ready to apply? We handle everything, free of charge.
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-white/70">
-                  1,000+ students have already trusted us with their overseas
+                  3,000+ students have already trusted us with their overseas
                   medical applications. Our team manages the full process, so
                   you do not need to visit an office until it is time to board
                   your flight.
@@ -818,7 +892,7 @@ export default async function LandingPageRoute({
                   triggerSize="lg"
                   triggerClassName="w-full"
                   title="Ready to apply?"
-                  description={`1,000+ students have trusted us with their ${page.title} journey. We handle everything, from application through departure planning, so you stay home until it is time to board your flight.`}
+                  description={`3,000+ students have trusted us with their ${page.title} journey. We handle everything, from application through departure planning, so you stay home until it is time to board your flight.`}
                   submitLabel="Yes, get me started"
                   ctaVariant="landing_bottom_cta"
                   countrySlug={country.slug}
