@@ -98,7 +98,8 @@ async function PeerRequestDetail({ id }: { id: string }) {
           </a>
         } />
         <Field label="Course interest" value={req.courseInterest} />
-        <Field label="Preferred contact" value={req.preferredContactMode} />
+        <Field label="Language preference" value={req.languagePreference} />
+        <Field label="District" value={req.userDistrict} />
       </Section>
 
       {req.message && (

@@ -83,6 +83,9 @@ export function PeerRequestForm({
   return (
     <Card className="border-border/80 bg-card/95 shadow-lg">
       <CardContent className="pt-6">
+        <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+          Share your details and we&apos;ll match you with a registered student from this university who can answer your questions directly.
+        </p>
         <form
           ref={formRef}
           action={formAction}
@@ -160,23 +163,43 @@ export function PeerRequestForm({
             </div>
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="peer-contact-mode">
-              Preferred contact mode <span className="font-normal text-muted-foreground">(optional)</span>
-            </Label>
-            <div className="relative">
-              <select
-                id="peer-contact-mode"
-                name="preferredContactMode"
-                defaultValue=""
-                className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                <option value="">No preference</option>
-                <option value="Call">Call</option>
-                <option value="WhatsApp">WhatsApp</option>
-                <option value="Either">Either</option>
-              </select>
-              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+          <div className="field-grid field-grid--two">
+            <div className="space-y-2">
+              <Label htmlFor="peer-district">
+                District <span className="font-normal text-muted-foreground">(optional)</span>
+              </Label>
+              <Input
+                id="peer-district"
+                name="userDistrict"
+                placeholder="e.g. Pune"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="peer-language">
+                Language preference <span className="font-normal text-muted-foreground">(optional)</span>
+              </Label>
+              <div className="relative">
+                <select
+                  id="peer-language"
+                  name="languagePreference"
+                  defaultValue=""
+                  className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  <option value="">No preference</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="English">English</option>
+                  <option value="Tamil">Tamil</option>
+                  <option value="Telugu">Telugu</option>
+                  <option value="Kannada">Kannada</option>
+                  <option value="Malayalam">Malayalam</option>
+                  <option value="Marathi">Marathi</option>
+                  <option value="Gujarati">Gujarati</option>
+                  <option value="Bengali">Bengali</option>
+                  <option value="Punjabi">Punjabi</option>
+                  <option value="Odia">Odia</option>
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              </div>
             </div>
           </div>
 

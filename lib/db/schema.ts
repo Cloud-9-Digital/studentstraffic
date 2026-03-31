@@ -381,9 +381,9 @@ export const peerRequests = pgTable(
     phone: text("phone").notNull(),
     email: text("email"),
     userState: text("user_state").notNull(),
+    userDistrict: text("user_district"),
     courseInterest: text("course_interest"),
-    preferredContactMode: text("preferred_contact_mode")
-      .$type<PeerPreferredContactMode>(),
+    languagePreference: text("language_preference"),
     message: text("message"),
     sourcePath: text("source_path").notNull(),
     sourceUrl: text("source_url"),

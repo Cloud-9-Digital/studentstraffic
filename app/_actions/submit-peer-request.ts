@@ -41,9 +41,10 @@ const peerRequestSchema = z.object({
       message: "Please enter a valid email address.",
     }),
   userState: z.string().trim().min(2, "Please enter your state."),
+  userDistrict: z.string().trim().optional(),
   universitySlug: z.string().trim().min(1),
   courseInterest: z.string().trim().optional(),
-  preferredContactMode: z.enum(["Call", "WhatsApp", "Either"]).optional(),
+  languagePreference: z.string().trim().optional(),
   message: z.string().trim().optional(),
   sourcePath: z.string().trim().min(1),
   sourceUrl: z.string().trim().optional(),
@@ -57,14 +58,14 @@ const peerRequestSchema = z.object({
 
 function buildLeadNotes(input: {
   courseInterest?: string;
-  preferredContactMode?: string;
+  languagePreference?: string;
+  userDistrict?: string;
   message?: string;
 }) {
   const parts = [
     input.courseInterest ? `Course interest: ${input.courseInterest}` : null,
-    input.preferredContactMode
-      ? `Preferred contact mode: ${input.preferredContactMode}`
-      : null,
+    input.languagePreference ? `Language preference: ${input.languagePreference}` : null,
+    input.userDistrict ? `District: ${input.userDistrict}` : null,
     input.message ? `Peer questions: ${input.message}` : null,
   ].filter(Boolean);
 
@@ -80,9 +81,10 @@ export async function submitPeerRequestAction(
     phone: getFormString(formData, "phone"),
     email: getFormString(formData, "email"),
     userState: getFormString(formData, "userState"),
+    userDistrict: getFormString(formData, "userDistrict"),
     universitySlug: getFormString(formData, "universitySlug"),
     courseInterest: getFormString(formData, "courseInterest"),
-    preferredContactMode: getFormString(formData, "preferredContactMode"),
+    languagePreference: getFormString(formData, "languagePreference"),
     message: getFormString(formData, "message"),
     sourcePath: getFormString(formData, "sourcePath"),
     sourceUrl: getFormString(formData, "sourceUrl"),
@@ -147,7 +149,8 @@ export async function submitPeerRequestAction(
   const ipAddress = getIpAddress(headerStore);
   const leadNotes = buildLeadNotes({
     courseInterest: emptyToUndefined(data.courseInterest),
-    preferredContactMode: emptyToUndefined(data.preferredContactMode),
+    languagePreference: emptyToUndefined(data.languagePreference),
+    userDistrict: emptyToUndefined(data.userDistrict),
     message: emptyToUndefined(data.message),
   });
 
@@ -257,8 +260,9 @@ export async function submitPeerRequestAction(
       phone: data.phone,
       email: emptyToUndefined(data.email),
       userState: data.userState,
+      userDistrict: emptyToUndefined(data.userDistrict),
       courseInterest: emptyToUndefined(data.courseInterest),
-      preferredContactMode: data.preferredContactMode,
+      languagePreference: emptyToUndefined(data.languagePreference),
       message: emptyToUndefined(data.message),
       sourcePath: data.sourcePath,
       sourceUrl: emptyToUndefined(data.sourceUrl),
