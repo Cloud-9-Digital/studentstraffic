@@ -87,6 +87,24 @@ export function getUniversityCoverImage(input: UniversityMediaInput) {
   return getUniversityGalleryImages(input)[0] ?? null;
 }
 
+// ISO 3166-1 alpha-2 codes for flagcdn.com
+const COUNTRY_FLAG_CODES: Record<string, string> = {
+  russia:     "ru",
+  vietnam:    "vn",
+  georgia:    "ge",
+  kyrgyzstan: "kg",
+  kazakhstan: "kz",
+  uzbekistan: "uz",
+  bangladesh: "bd",
+  philippines:"ph",
+  ukraine:    "ua",
+  china:      "cn",
+};
+
+export function getCountryFlagCode(countrySlug: string): string {
+  return COUNTRY_FLAG_CODES[countrySlug] ?? countrySlug;
+}
+
 // Country-branded placeholder gradients — used when no cover image is available.
 // Colors are loosely derived from each country's national palette.
 const COUNTRY_GRADIENTS: Record<string, { from: string; to: string; text: string }> = {

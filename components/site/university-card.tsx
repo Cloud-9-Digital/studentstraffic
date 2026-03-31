@@ -5,7 +5,7 @@ import { Building2 } from "lucide-react";
 import { AddToCompareButton } from "@/components/site/add-to-compare-button";
 import type { FinderCardProgram } from "@/lib/data/types";
 import { getUniversityHref } from "@/lib/routes";
-import { getCountryPlaceholder, getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
+import { getCountryFlagCode, getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
 import {
   cn,
   formatProgramAnnualFee,
@@ -24,7 +24,6 @@ export function UniversityCard({
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
   const coverImage = getUniversityCoverImage(university);
-  const placeholder = getCountryPlaceholder(country.slug);
   const hasPublishedFee = hasRenderableProgramAnnualFee(offering);
 
   return (
@@ -38,7 +37,7 @@ export function UniversityCard({
       {/* Cover image ─────────────────────────────────────────────── */}
       <div
         className="relative h-36 w-full shrink-0 overflow-hidden"
-        style={{ background: `linear-gradient(135deg, ${placeholder.from}, ${placeholder.to})` }}
+        style={{ background: "linear-gradient(135deg, #0f3d37, #184a43 60%, #2a1a0e)" }}
       >
         {coverImage ? (
           <Image
@@ -52,10 +51,7 @@ export function UniversityCard({
           />
         ) : (
           <div className="absolute inset-0 flex items-end justify-end p-3">
-            <span
-              className="select-none font-display text-7xl font-bold leading-none opacity-20"
-              style={{ color: placeholder.text }}
-            >
+            <span className="select-none font-display text-7xl font-bold leading-none opacity-20 text-white">
               {initials}
             </span>
           </div>
@@ -86,20 +82,32 @@ export function UniversityCard({
           </span>
         </div>
 
-        {/* Logo badge — bottom-left, only when available */}
-        {university.logoUrl && (
-          <div className="absolute bottom-2.5 left-2.5 flex size-10 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-md">
-            <span className="relative flex h-full w-full items-center justify-center p-1.5">
-              <Image
-                src={university.logoUrl}
-                alt={`${university.name} logo`}
-                fill
-                sizes="40px"
-                className="object-contain p-1.5"
+        {/* Logo badge — bottom-left; falls back to country flag when no logo */}
+        <div className="absolute bottom-2.5 left-2.5">
+          {university.logoUrl ? (
+            <div className="flex size-10 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-md">
+              <span className="relative flex h-full w-full items-center justify-center p-1.5">
+                <Image
+                  src={university.logoUrl}
+                  alt={`${university.name} logo`}
+                  fill
+                  sizes="40px"
+                  className="object-contain p-1.5"
+                />
+              </span>
+            </div>
+          ) : (
+            <div className="flex size-10 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-md">
+              <img
+                src={`https://flagcdn.com/w40/${getCountryFlagCode(country.slug)}.png`}
+                alt={country.name}
+                width={28}
+                height={20}
+                className="block rounded-sm"
               />
-            </span>
-          </div>
-        )}
+            </div>
+          )}
+        </div>
 
       </div>
 
