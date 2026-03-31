@@ -78,7 +78,7 @@ export type PublicPeer = {
 
 export async function getActivePeersForUniversity(
   universitySlug: string
-): Promise<PublicPeer[]> {
+): Promise<PeerWithUniversity[]> {
   "use cache";
 
   cacheLife("hours");
@@ -95,12 +95,14 @@ export async function getActivePeersForUniversity(
       photoUrl: studentPeers.photoUrl,
       courseName: studentPeers.courseName,
       currentYearOrBatch: studentPeers.currentYearOrBatch,
-      hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(
-        Boolean
-      ),
+      hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+      universitySlug: universities.slug,
+      universityName: universities.name,
+      countryName: countries.name,
     })
     .from(studentPeers)
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
+    .innerJoin(countries, eq(universities.countryId, countries.id))
     .where(
       and(
         eq(universities.slug, universitySlug),
