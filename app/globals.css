@@ -158,16 +158,16 @@
   .hero-panel h6 {
     color: var(--primary-foreground);
   }
+
+  :where(a) {
+    color: inherit;
+  }
 }
 
 .font-display {
   font-family: var(--font-display), serif;
   font-synthesis: none;
   font-weight: 600;
-}
-
-:where(a) {
-  color: inherit;
 }
 
 /* ── Layout utilities ─────────────────────────────────────────────────────── */
