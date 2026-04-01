@@ -104,7 +104,7 @@ function DebouncedSearchInput({
       if (trimmed !== current) {
         onQueryChange(trimmed || undefined);
       }
-    }, 250);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [initialValue, onQueryChange, value]);

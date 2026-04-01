@@ -272,79 +272,42 @@ export function StudentCard({ peer }: { peer: PeerWithUniversity }) {
   const [dialogOpen, setDialogOpen] = useState(false);
   const firstName = peer.fullName.split(" ")[0];
 
+  const meta = [
+    peer.courseName,
+    peer.currentYearOrBatch,
+    [peer.homeCity, peer.homeState].filter(Boolean).join(", ") || null,
+  ].filter(Boolean);
+
   return (
     <>
-      <div className="flex flex-col rounded-2xl border border-border bg-card transition-all hover:border-accent/30 hover:shadow-sm group">
+      <div className="group flex items-center gap-3 rounded-xl border border-border bg-card px-3 py-3 shadow-sm transition-all hover:border-accent/40 hover:shadow-md">
+        <Avatar peer={peer} size={42} />
 
-        {/* Avatar + identity */}
-        <div className="flex flex-col items-center px-4 pt-6 pb-4 text-center gap-3">
-
-          {/* Avatar with subtle accent ring */}
-          <div className="ring-[3px] ring-accent/15 ring-offset-2 rounded-full">
-            <Avatar peer={peer} size={88} />
-          </div>
-
-          <div className="min-w-0 w-full space-y-0.5">
-            <p className="font-semibold text-foreground text-sm leading-snug">
-              {peer.fullName}
-            </p>
-            <p className="text-[11px] text-muted-foreground line-clamp-2 leading-relaxed">
-              {peer.universityName}
-            </p>
-            <p className="text-[11px] text-muted-foreground/70">{peer.countryName}</p>
-          </div>
-
-          {/* Course + year chips */}
-          {(peer.courseName || peer.currentYearOrBatch) && (
-            <div className="flex flex-wrap items-center justify-center gap-1">
-              {peer.courseName && (
-                <span className="rounded-md bg-accent-soft px-2 py-0.5 text-[11px] font-semibold text-accent">
-                  {peer.courseName}
-                </span>
-              )}
-              {peer.currentYearOrBatch && (
-                <span className="rounded-md bg-muted px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
-                  {peer.currentYearOrBatch}
-                </span>
-              )}
-            </div>
-          )}
-
-          {/* State / city */}
-          {(peer.homeState || peer.homeCity) && (
-            <p className="text-[11px] text-muted-foreground/70">
-              {[peer.homeCity, peer.homeState].filter(Boolean).join(", ")}
+        <div className="min-w-0 flex-1">
+          <p className="truncate text-sm font-semibold text-foreground">
+            {peer.fullName}
+          </p>
+          {meta.length > 0 && (
+            <p className="mt-0.5 truncate text-xs text-muted-foreground">
+              {meta.join(" · ")}
             </p>
           )}
-
-          {/* Languages */}
           {peer.languages && peer.languages.length > 0 && (
-            <div className="flex flex-wrap items-center justify-center gap-1">
-              {peer.languages.map((lang) => (
-                <span key={lang} className="rounded-md bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary">
-                  {lang}
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* CTA — separated by border */}
-        <div className="mt-auto border-t border-border px-4 py-3.5">
-          {peer.hasWhatsApp ? (
-            <button
-              type="button"
-              onClick={() => setDialogOpen(true)}
-              className="w-full rounded-xl bg-accent py-2 text-xs font-semibold text-accent-foreground transition-colors hover:bg-accent-strong group-hover:shadow-sm"
-            >
-              Talk to {firstName}
-            </button>
-          ) : (
-            <p className="py-1 text-center text-[11px] text-muted-foreground">
-              Contact unavailable
+            <p className="mt-0.5 truncate text-[11px] text-muted-foreground/70">
+              Speaks {peer.languages.join(", ")}
             </p>
           )}
         </div>
+
+        {peer.hasWhatsApp ? (
+          <button
+            type="button"
+            onClick={() => setDialogOpen(true)}
+            className="shrink-0 rounded-lg bg-accent px-3 py-1.5 text-xs font-semibold text-accent-foreground transition-colors hover:bg-accent-strong"
+          >
+            Talk
+          </button>
+        ) : null}
       </div>
 
       <ConnectDialog peer={peer} open={dialogOpen} onOpenChange={setDialogOpen} />

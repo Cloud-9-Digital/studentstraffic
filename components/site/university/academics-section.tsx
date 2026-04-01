@@ -40,15 +40,18 @@ export function UniversityAcademicsSection({
         </p>
         <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1.5">
           <span className="text-sm text-muted-foreground">
-            <span className="font-medium text-foreground">Duration</span>{" "}
+            <span className="font-medium text-foreground">Duration</span>
+            <span className="mx-1.5 text-border">—</span>
             {formatProgramDuration(primaryProgram.offering.durationYears)}
           </span>
           <span className="text-sm text-muted-foreground">
-            <span className="font-medium text-foreground">Medium</span>{" "}
+            <span className="font-medium text-foreground">Medium</span>
+            <span className="mx-1.5 text-border">—</span>
             {primaryProgram.offering.medium}
           </span>
           <span className="text-sm text-muted-foreground">
-            <span className="font-medium text-foreground">Intake</span>{" "}
+            <span className="font-medium text-foreground">Intake</span>
+            <span className="mx-1.5 text-border">—</span>
             {primaryProgram.offering.intakeMonths.join(", ")}
           </span>
         </div>
@@ -73,7 +76,7 @@ export function UniversityAcademicsSection({
                     <span className="text-sm font-semibold text-foreground">
                       {phase.phase}
                     </span>
-                    <span className="rounded-full bg-accent/10 px-2.5 py-0.5 text-[0.7rem] font-semibold text-accent">
+                    <span className="inline-flex items-center rounded border border-border px-1.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wide text-muted-foreground">
                       {phase.language}
                     </span>
                   </div>

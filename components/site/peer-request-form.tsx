@@ -9,7 +9,6 @@ import {
 } from "@/app/_actions/submit-peer-request";
 import { syncLeadTrackingFields } from "@/components/site/lead-tracking";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PhoneInputField } from "@/components/ui/phone-input";
@@ -84,15 +83,10 @@ export function PeerRequestForm({
   };
 
   return (
-    <Card className="border-border/80 bg-card/95 shadow-lg">
-      <CardContent className="pt-6">
-        <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-          Share your details and we&apos;ll match you with a registered student from this university who can answer your questions directly.
-        </p>
-        <form
+    <form
           ref={formRef}
           action={formAction}
-          className="space-y-4"
+          className="space-y-3"
           onFocusCapture={armStartedAt}
           onPointerDownCapture={armStartedAt}
           onKeyDownCapture={armStartedAt}
@@ -227,7 +221,5 @@ export function PeerRequestForm({
             {isPending ? "Sending request..." : "Request a student conversation"}
           </Button>
         </form>
-      </CardContent>
-    </Card>
   );
 }

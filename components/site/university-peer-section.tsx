@@ -15,51 +15,48 @@ export async function UniversityPeerSection({
   const availability = await getUniversityPeerAvailability(universitySlug);
 
   return (
-    <div className="deferred-render py-10">
-      <div className="rounded-[1.75rem] bg-accent p-6 sm:p-8">
+    <div className="overflow-hidden rounded-2xl border border-border bg-card">
+      <div className="grid md:grid-cols-[5fr_6fr]">
 
-        <div className="mb-6 flex items-start gap-3">
-          <div className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-white/15 text-white">
-            <Users className="size-4" />
-          </div>
-          <div>
-            <div className="flex flex-wrap items-center gap-2">
-              <h2 className="font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                Talk to a student at {universityName}
-              </h2>
-              {availability.hasPeers ? (
-                <span className="flex items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-white/90">
-                  <span className="size-1.5 animate-pulse rounded-full bg-white" />
-                  Available
-                </span>
-              ) : null}
-            </div>
-            <p className="mt-1.5 text-sm leading-6 text-white/70">
-              Get honest answers about academics, hostel life, and daily experience before you decide.
+        {/* Left — student list */}
+        <div className="border-b border-border bg-muted/20 p-5 md:border-b-0 md:border-r">
+          <div className="mb-1 flex items-center gap-2">
+            <Users className="size-4 text-accent" />
+            <p className="text-sm font-semibold text-foreground">
+              Talk to a student
             </p>
           </div>
+          <p className="mb-4 text-xs leading-5 text-muted-foreground">
+            These students studied here and can answer your real questions about academics, hostel life, and daily experience.
+          </p>
+          {availability.hasPeers ? (
+            <Suspense fallback={null}>
+              <PeersGrid
+                universitySlug={universitySlug}
+                universityName={universityName}
+              />
+            </Suspense>
+          ) : (
+            <p className="text-sm text-muted-foreground">
+              No student contacts listed yet for this university.
+            </p>
+          )}
         </div>
 
-        {availability.hasPeers && (
-          <Suspense fallback={null}>
-            <PeersGrid
-              universitySlug={universitySlug}
-              universityName={universityName}
-            />
-          </Suspense>
-        )}
-
-        {availability.hasPeers && (
-          <p className="mb-4 text-center text-xs font-medium text-white/50">
-            — or request any student conversation —
+        {/* Right — request form */}
+        <div className="p-5">
+          <p className="mb-4 text-sm font-semibold text-foreground">
+            Request a student conversation
           </p>
-        )}
-
-        <PeerRequestForm
-          sourcePath={`/universities/${universitySlug}`}
-          universitySlug={universitySlug}
-          universityName={universityName}
-        />
+          <p className="mb-4 text-sm leading-6 text-muted-foreground">
+            Share your details and we&apos;ll match you with a registered student who can answer your questions directly.
+          </p>
+          <PeerRequestForm
+            sourcePath={`/universities/${universitySlug}`}
+            universitySlug={universitySlug}
+            universityName={universityName}
+          />
+        </div>
 
       </div>
     </div>
