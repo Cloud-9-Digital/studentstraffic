@@ -45,7 +45,7 @@ import {
 import { getCountryHeroImage } from "@/lib/country-media";
 import { isValidRecognitionBadge } from "@/lib/data/recognition-bodies";
 import { getInrExchangeRate } from "@/lib/exchange-rate";
-import { getLandingPageHref, getWdomsDirectoryHref } from "@/lib/routes";
+import { getLandingPageHref } from "@/lib/routes";
 import { getCountryContent } from "@/lib/data/country-content";
 import {
   cn,
@@ -53,7 +53,7 @@ import {
   formatProgramDuration,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
-import { getWdomsCountryConfig } from "@/lib/wdoms";
+
 
 export async function generateStaticParams() {
   const countries = await getCountries();
@@ -243,12 +243,6 @@ export default async function CountryPage({
         .limit(1)
         .then((rows) => rows[0] ?? null)
     : Promise.resolve(null);
-  const wdomsCountryConfig = getWdomsCountryConfig(country.slug);
-  const wdomsDirectoryHref = wdomsCountryConfig
-    ? wdomsCountryConfig.landingPageSlug
-      ? `/${wdomsCountryConfig.landingPageSlug}#wdoms-directory`
-      : getWdomsDirectoryHref(wdomsCountryConfig.slug)
-    : null;
 
   const relatedBlogPost = await relatedBlogPostPromise;
 
@@ -550,24 +544,6 @@ export default async function CountryPage({
               </Button>
             </div>
 
-            {wdomsDirectoryHref ? (
-              <div className="mt-6 rounded-2xl border border-border bg-card px-5 py-4">
-                <p className="text-sm leading-7 text-muted-foreground">
-                  Looking for the broader official directory view? Our{" "}
-                  {country.name} coverage also includes the full WDOMS list of
-                  medical schools, alongside the smaller set of universities we
-                  currently cover in detail.
-                </p>
-                <div className="mt-3">
-                  <Button asChild variant="outline" size="sm">
-                    <Link href={wdomsDirectoryHref}>
-                      Open the WDOMS list
-                      <ArrowRight className="size-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            ) : null}
           </div>
         ) : null}
 
