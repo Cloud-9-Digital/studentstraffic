@@ -3,9 +3,12 @@ import Link from "next/link";
 import {
   ArrowRight,
   BookOpen,
+  Clock3,
   Compass,
+  FileCheck2,
   GraduationCap,
   ShieldCheck,
+  Sparkles,
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -101,6 +104,30 @@ const trustPoints = [
   {
     title: "Talk to current students directly",
     body: "Connect with Indian students already at the university before you apply. Unfiltered answers on fees, hostels, and clinical training — from peers, not agents.",
+  },
+] as const;
+
+const counsellingSignals = [
+  "Shortlist recommendations matched to your budget and goals",
+  "Clear guidance on NMC recognition, eligibility, and intake timing",
+  "Support across applications, documents, and visa preparation",
+] as const;
+
+const counsellingAssurances = [
+  {
+    Icon: Clock3,
+    title: "Fast human response",
+    body: "Most enquiries are answered the same day, often within a few hours.",
+  },
+  {
+    Icon: FileCheck2,
+    title: "Advice with context",
+    body: "We use your destination preference, intake timing, and budget to guide the shortlist.",
+  },
+  {
+    Icon: Sparkles,
+    title: "Built for research-first students",
+    body: "You can come to us early, compare calmly, and decide only when you're ready.",
   },
 ] as const;
 
@@ -263,26 +290,66 @@ export default async function HomePage() {
 
       <section className="border-t border-border py-16 md:py-20">
         <div className="container-shell">
-          <div className="grid gap-8 rounded-3xl bg-primary px-8 py-12 text-white md:px-12 md:py-14 lg:grid-cols-[1fr_0.95fr] lg:items-start">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/60">
-                Free Counselling
-              </p>
-              <h2 className="mt-4 font-display text-4xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-5xl">
-                Still deciding? Let&apos;s talk.
-              </h2>
-              <p className="mt-4 max-w-2xl text-base leading-8 text-white/75">
-                Share your NEET score and budget — our counsellors will find
-                the best universities for you. Free, no obligations.
-              </p>
-            </div>
+          <div className="relative overflow-hidden rounded-[2rem] border border-primary/10 bg-primary px-8 py-12 text-white shadow-2xl md:px-12 md:py-14">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.12),transparent_28%)]" />
+            <div className="relative grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/60">
+                  Free Counselling
+                </p>
+                <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-5xl">
+                  Want a shortlist that actually fits your budget and goals?
+                </h2>
+                <p className="mt-4 max-w-2xl text-base leading-8 text-white/75">
+                  Share a few details and we&apos;ll help you narrow your options
+                  with clear next steps, realistic budget guidance, and a more
+                  confident plan.
+                </p>
 
-            <DeferredLeadForm
-              sourcePath="/"
-              ctaVariant="home_cta"
-              title="Talk to a counsellor for free"
-              description="Tell us a little about yourself and we will reach out to guide you through your options."
-            />
+                <div className="mt-8 grid gap-3">
+                  {counsellingSignals.map((signal) => (
+                    <div
+                      key={signal}
+                      className="flex items-start gap-3 rounded-2xl border border-white/12 bg-white/7 px-4 py-3 backdrop-blur-sm"
+                    >
+                      <div className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-white/14 text-white">
+                        <ShieldCheck className="size-4" />
+                      </div>
+                      <p className="text-sm leading-6 text-white/86">{signal}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-8 grid gap-3 md:grid-cols-3">
+                  {counsellingAssurances.map(({ Icon, title, body }) => (
+                    <div
+                      key={title}
+                      className="rounded-2xl border border-white/12 bg-black/10 p-4"
+                    >
+                      <div className="flex size-10 items-center justify-center rounded-xl bg-white/12 text-white">
+                        <Icon className="size-4.5" />
+                      </div>
+                      <h3 className="mt-4 text-sm font-semibold text-white">
+                        {title}
+                      </h3>
+                      <p className="mt-2 text-sm leading-6 text-white/65">
+                        {body}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <DeferredLeadForm
+                sourcePath="/"
+                ctaVariant="home_cta"
+                title="Get your personalised shortlist"
+                description="Tell us about your budget, NEET status, and preferred destinations. We&apos;ll follow up with guidance that matches where you are."
+                qualificationMode="detailed"
+                contextBadge="Research Planner"
+                responsePromise="Usually within the same day"
+              />
+            </div>
           </div>
         </div>
       </section>

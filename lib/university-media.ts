@@ -1,10 +1,7 @@
-import type { UniversityGalleryImage } from "@/lib/data/types";
-
 type UniversityMediaInput = {
   slug: string;
   name: string;
   coverImageUrl?: string | null;
-  galleryImages?: UniversityGalleryImage[] | null;
 };
 
 const stockImageHostnames = new Set(["picsum.photos"]);
@@ -54,37 +51,16 @@ export function getUniversityInitials(name: string): string {
     .join("");
 }
 
-export function getUniversityGalleryImages(input: UniversityMediaInput) {
-  const galleryImages: UniversityGalleryImage[] = [];
-  const seen = new Set<string>();
-  const coverGalleryImage = input.coverImageUrl
-    ? (input.galleryImages ?? []).find((image) => image.url === input.coverImageUrl) ?? {
-        url: input.coverImageUrl,
-        alt: `${input.name} campus overview`,
-        caption: "Campus overview",
-      }
-    : null;
-
-  const push = (image?: UniversityGalleryImage | null) => {
-    if (!image?.url || !isRealUniversityImageUrl(image.url) || seen.has(image.url)) {
-      return;
-    }
-
-    seen.add(image.url);
-    galleryImages.push(image);
-  };
-
-  push(coverGalleryImage);
-
-  for (const image of input.galleryImages ?? []) {
-    push(image);
+export function getUniversityCoverImage(input: UniversityMediaInput) {
+  if (!input.coverImageUrl || !isRealUniversityImageUrl(input.coverImageUrl)) {
+    return null;
   }
 
-  return galleryImages;
-}
-
-export function getUniversityCoverImage(input: UniversityMediaInput) {
-  return getUniversityGalleryImages(input)[0] ?? null;
+  return {
+    url: input.coverImageUrl,
+    alt: `${input.name} campus overview`,
+    caption: "Campus overview",
+  };
 }
 
 // ISO 3166-1 alpha-2 codes for flagcdn.com

@@ -5,10 +5,12 @@ import type { Metadata } from "next";
 import { unstable_cache } from "next/cache";
 import { Rss, ChevronLeft, ChevronRight } from "lucide-react";
 
+import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 import { absoluteUrl } from "@/lib/metadata";
 import { categoryToSlug } from "@/app/blog/category/[slug]/page";
+import { contentAuthorName, contentAuthorSlug } from "@/lib/content-governance";
 
 const PAGE_SIZE = 12;
 
@@ -105,6 +107,32 @@ const CATEGORY_STYLES: Record<string, { pill: string; dot: string; placeholder: 
   "Tips & Advice":      { pill: "bg-teal-100 text-teal-800 border border-teal-200",              dot: "bg-teal-500",    placeholder: "from-teal-500/15 via-teal-400/8 to-teal-300/3" },
 };
 const DEFAULT_STYLE = { pill: "bg-muted text-muted-foreground border border-border", dot: "bg-muted-foreground", placeholder: "from-muted to-background" };
+const blogNextSteps = [
+  {
+    href: "/countries",
+    label: "Destinations",
+    title: "Explore country guides",
+    description: "Start with destination-level research before you compare universities or fees.",
+  },
+  {
+    href: "/universities",
+    label: "Finder",
+    title: "Browse universities",
+    description: "Move from reading into actual university-level comparisons and fee filters.",
+  },
+  {
+    href: "/compare",
+    label: "Compare",
+    title: "Open comparison guides",
+    description: "Use side-by-side pages when your shortlist is starting to narrow.",
+  },
+  {
+    href: `/authors/${contentAuthorSlug}`,
+    label: "Author",
+    title: `About ${contentAuthorName}`,
+    description: "See who writes and reviews the research content across Students Traffic.",
+  },
+] as const;
 
 function getCategoryStyle(cat: string | null) {
   return cat ? (CATEGORY_STYLES[cat] ?? DEFAULT_STYLE) : DEFAULT_STYLE;
@@ -312,6 +340,14 @@ export default async function BlogPage({
           <p className="py-32 text-center text-muted-foreground">No posts yet — check back soon.</p>
         ) : (
           <div className="py-10 pb-20 md:pb-28">
+            <div className="mb-10">
+              <ResearchNextSteps
+                title="Use the blog as the start of a broader research path"
+                description="Articles help students ask better questions. The next step is usually to compare destinations, inspect universities, and test a shortlist against budget and fit."
+                items={[...blogNextSteps]}
+              />
+            </div>
+
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {posts.map((post) => (
                 <PostCard key={post.id} post={post} />

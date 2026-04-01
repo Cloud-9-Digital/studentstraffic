@@ -61,12 +61,6 @@ export type YearlyCostBreakdown = {
   notes?: string;
 };
 
-export type UniversityGalleryImage = {
-  url: string;
-  alt: string;
-  caption?: string;
-};
-
 export type University = {
   slug: string;
   countrySlug: string;
@@ -75,7 +69,6 @@ export type University = {
   type: "Public" | "Private";
   logoUrl?: string;
   coverImageUrl?: string;
-  galleryImages: UniversityGalleryImage[];
   establishedYear: number;
   summary: string;
   featured: boolean;
@@ -99,6 +92,7 @@ export type University = {
   lastVerifiedAt?: string;
   researchSources: ResearchSource[];
   researchNotes?: string;
+  admissionsContent?: UniversityAdmissionsContent;
   updatedAt?: string;
 };
 
@@ -235,6 +229,16 @@ export type EligibilityCriteria = {
 export type DocumentsRequired = {
   educational: string[];
   visa: string[];
+};
+
+export type UniversityAdmissionsContent = {
+  overview?: string;
+  eligibility?: EligibilityCriteria;
+  admissionSteps?: string[];
+  documentsRequired?: DocumentsRequired;
+  deadlinesNote?: string;
+  scholarshipInfo?: string;
+  licensingPathway?: string[];
 };
 
 export type SyllabusPhase = {

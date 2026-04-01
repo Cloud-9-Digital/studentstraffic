@@ -1,6 +1,15 @@
 export const catalogReviewedAt = "2026-03-27";
 export const governancePublishedAt = "2026-03-27";
 export const contentAuthorName = "Bharath";
+export const contentAuthorSlug = "bharath";
+export const contentAuthorRole = "Editorial lead";
+export const contentAuthorBio =
+  "Bharath leads Students Traffic's editorial work on MBBS abroad research, university comparisons, admissions planning, and student decision support for Indian families.";
+export const contentAuthorAreas = [
+  "MBBS abroad destination research",
+  "University comparison and shortlist planning",
+  "Admissions, fees, and student-planning guidance",
+] as const;
 
 export const editorialPrinciples = [
   "Prefer university-specific academic context, fee clarity, and admissions guidance over generic brochure summaries.",

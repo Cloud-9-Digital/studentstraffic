@@ -109,7 +109,6 @@ async function readCatalogFromDb(client: PoolClient) {
     officialWebsite: r.official_website,
     logoUrl: r.logo_url ?? undefined,
     coverImageUrl: r.cover_image_url ?? undefined,
-    galleryImages: r.gallery_images ?? [],
     campusLifestyle: r.campus_lifestyle,
     cityProfile: r.city_profile,
     clinicalExposure: r.clinical_exposure,

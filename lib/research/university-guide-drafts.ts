@@ -32,12 +32,6 @@ export const linkItemSchema = z.object({
   url: z.string().url(),
 });
 
-export const galleryImageSchema = z.object({
-  url: z.string().url(),
-  alt: z.string().min(1),
-  caption: z.string().min(1).optional(),
-});
-
 export const teachingPhaseSchema = z.object({
   phase: z.string().min(1),
   language: z.string().min(1),
@@ -86,7 +80,6 @@ export const universityDraftSchema = z.object({
   type: z.enum(["Public", "Private"]),
   logoUrl: z.string().url().optional(),
   coverImageUrl: z.string().url().optional(),
-  galleryImages: z.array(galleryImageSchema).default([]),
   establishedYear: z.number().int().positive(),
   summary: z.string().min(1),
   featured: z.boolean().default(false),
@@ -107,6 +100,27 @@ export const universityDraftSchema = z.object({
   recognitionLinks: z.array(linkItemSchema).default([]),
   faq: z.array(faqSchema).min(3),
   similarUniversitySlugs: z.array(z.string().min(1)).default([]),
+  admissionsContent: z
+    .object({
+      overview: z.string().min(1).optional(),
+      eligibility: z
+        .object({
+          intro: z.string().min(1),
+          items: z.array(z.string().min(1)).min(1),
+        })
+        .optional(),
+      admissionSteps: z.array(z.string().min(1)).min(1).optional(),
+      documentsRequired: z
+        .object({
+          educational: z.array(z.string().min(1)).min(1),
+          visa: z.array(z.string().min(1)).min(1),
+        })
+        .optional(),
+      deadlinesNote: z.string().min(1).optional(),
+      scholarshipInfo: z.string().min(1).optional(),
+      licensingPathway: z.array(z.string().min(1)).min(1).optional(),
+    })
+    .optional(),
   research: z.object({
     lastVerifiedAt: isoDateSchema,
     sources: z.array(researchSourceSchema).min(2),

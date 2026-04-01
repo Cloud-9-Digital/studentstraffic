@@ -19,6 +19,8 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
+import { EditorialTrustCard } from "@/components/site/editorial-trust-card";
+import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { UniversityCard } from "@/components/site/university-card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
@@ -43,6 +45,12 @@ import {
   getLandingPageSlugs,
 } from "@/lib/data/catalog";
 import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
+import {
+  getBudgetIndexHref,
+  getCompareIndexHref,
+  getCountryHref,
+  getUniversityHref,
+} from "@/lib/routes";
 
 export async function generateStaticParams() {
   const slugs = await getLandingPageSlugs();
@@ -95,6 +103,34 @@ export default async function LandingPageRoute({
   const path = `/${page.slug}`;
   const previewPrograms = context.featuredPrograms;
   const feeStructures = getFeeStructuresForSlugs(page.featuredUniversitySlugs);
+  const nextSteps = [
+    {
+      href: getCountryHref(country.slug),
+      label: "Destination",
+      title: `Explore ${country.name}`,
+      description: `Step back from this guide and review the broader destination context before finalising a shortlist.`,
+    },
+    {
+      href: previewPrograms[0]
+        ? getUniversityHref(previewPrograms[0].university.slug)
+        : `/universities?country=${country.slug}&course=${course.slug}`,
+      label: "Universities",
+      title: "Inspect individual universities",
+      description: "Move from destination-level research into actual university profiles, fees, and student perspective.",
+    },
+    {
+      href: getCompareIndexHref(),
+      label: "Compare",
+      title: "Read comparison guides",
+      description: "Use side-by-side comparisons when your shortlist starts narrowing and rankings stop being useful.",
+    },
+    {
+      href: getBudgetIndexHref(),
+      label: "Budget",
+      title: "Browse budget-led options",
+      description: "Check lower-cost routes once you know the course and destination band that fits your plan.",
+    },
+  ];
 
   const countryCode = navDestinations.find(
     (d) => d.href === `/countries/${country.slug}`
@@ -234,6 +270,17 @@ export default async function LandingPageRoute({
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="deferred-render border-b border-border py-14">
+        <div className="container-shell">
+          <EditorialTrustCard
+            title={`Why this ${page.title.toLowerCase()} guide is structured this way`}
+            description="This guide is built to move students from broad destination interest into clearer comparisons, realistic cost expectations, and shortlist-ready next steps."
+            lastReviewed={catalogReviewedAt}
+            notes={page.editorialNotes}
+          />
         </div>
       </section>
 
@@ -827,6 +874,16 @@ export default async function LandingPageRoute({
           </div>
         </section>
       ) : null}
+
+      <section className="deferred-render border-b border-border py-14 md:py-20">
+        <div className="container-shell">
+          <ResearchNextSteps
+            title={`Use ${page.title} as one step in a bigger research path`}
+            description="Search performance grows when pages are tightly connected around the user journey. This guide should lead naturally into destination context, university-level review, comparison pages, and budget planning."
+            items={nextSteps}
+          />
+        </div>
+      </section>
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       {page.faq.length > 0 && (

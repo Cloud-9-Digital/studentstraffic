@@ -69,9 +69,12 @@ export default function ContactPage() {
             <LeadForm
               sourcePath={path}
               ctaVariant="contact-page"
-              title="Send us a message"
-              description="Fill in your details and a counsellor will reach out within a few hours."
-              submitLabel="Send message"
+              title="Tell us where you are in the process"
+              description="Share a little context and a counsellor will reply with more relevant guidance, not a generic callback."
+              submitLabel="Request guidance"
+              qualificationMode="detailed"
+              contextBadge="Personalised Guidance"
+              responsePromise="Usually within a few hours"
             />
 
             {/* Right — contact methods + trust */}

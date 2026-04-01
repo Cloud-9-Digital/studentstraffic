@@ -73,7 +73,6 @@ async function main() {
           officialWebsite: university.officialWebsite,
           logoUrl: university.logoUrl,
           coverImageUrl: university.coverImageUrl,
-          galleryImages: university.galleryImages,
           campusLifestyle: university.campusLifestyle,
           cityProfile: university.cityProfile,
           clinicalExposure: university.clinicalExposure,
@@ -92,6 +91,7 @@ async function main() {
           lastVerifiedAt: university.research.lastVerifiedAt,
           researchSources: university.research.sources,
           researchNotes: university.research.notes,
+          admissionsContent: university.admissionsContent ?? {},
         })
         .onConflictDoUpdate({
           target: universities.slug,
@@ -107,7 +107,6 @@ async function main() {
             officialWebsite: university.officialWebsite,
             logoUrl: university.logoUrl,
             coverImageUrl: university.coverImageUrl,
-            galleryImages: university.galleryImages,
             campusLifestyle: university.campusLifestyle,
             cityProfile: university.cityProfile,
             clinicalExposure: university.clinicalExposure,
@@ -126,6 +125,7 @@ async function main() {
             lastVerifiedAt: university.research.lastVerifiedAt,
             researchSources: university.research.sources,
             researchNotes: university.research.notes,
+            admissionsContent: university.admissionsContent ?? {},
             updatedAt: new Date(),
           },
         })

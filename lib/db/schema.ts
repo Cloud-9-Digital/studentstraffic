@@ -10,9 +10,10 @@ import {
   uniqueIndex,
 } from "drizzle-orm/pg-core";
 import type {
+  DocumentsRequired,
+  EligibilityCriteria,
   Faq,
   LinkItem,
-  PeerPreferredContactMode,
   PeerRequestStatus,
   SearchDocument,
   StudentPeerApplicationStatus,
@@ -22,7 +23,7 @@ import type {
   UniversityReviewType,
   UniversityReviewVerificationStatus,
   UniversityReviewVisibilityStatus,
-  UniversityGalleryImage,
+  UniversityAdmissionsContent,
   YearlyCostBreakdown,
 } from "@/lib/data/types";
 
@@ -90,10 +91,6 @@ export const universities = pgTable(
     officialWebsite: text("official_website").notNull(),
     logoUrl: text("logo_url"),
     coverImageUrl: text("cover_image_url"),
-    galleryImages: jsonb("gallery_images")
-      .$type<UniversityGalleryImage[]>()
-      .notNull()
-      .default([]),
     campusLifestyle: text("campus_lifestyle").notNull(),
     cityProfile: text("city_profile").notNull(),
     clinicalExposure: text("clinical_exposure").notNull(),
@@ -124,6 +121,10 @@ export const universities = pgTable(
       .notNull()
       .default([]),
     researchNotes: text("research_notes"),
+    admissionsContent: jsonb("admissions_content")
+      .$type<UniversityAdmissionsContent>()
+      .notNull()
+      .default({}),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
   },

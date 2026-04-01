@@ -233,7 +233,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         getIndexableUniversityImageUrls([
           university.logoUrl,
           university.coverImageUrl,
-          ...university.galleryImages.map((image) => image.url),
         ])
       ).map((url) => absoluteUrl(url)),
     })),

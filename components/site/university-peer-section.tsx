@@ -15,7 +15,7 @@ export async function UniversityPeerSection({
   const availability = await getUniversityPeerAvailability(universitySlug);
 
   return (
-    <div id="talk-to-peers" className="deferred-render py-10">
+    <div className="deferred-render py-10">
       <div className="rounded-[1.75rem] bg-accent p-6 sm:p-8">
 
         <div className="mb-6 flex items-start gap-3">

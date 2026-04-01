@@ -323,7 +323,6 @@ export function getUniversityStructuredData(input: {
   const imageUrls = getAbsoluteMediaUrls(
     getIndexableUniversityImageUrls([
       input.university.coverImageUrl,
-      ...input.university.galleryImages.map((image) => image.url),
     ])
   );
   const logoUrl = input.university.logoUrl
