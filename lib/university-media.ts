@@ -69,10 +69,8 @@ const COUNTRY_FLAG_CODES: Record<string, string> = {
   vietnam:    "vn",
   georgia:    "ge",
   kyrgyzstan: "kg",
-  kazakhstan: "kz",
   uzbekistan: "uz",
   bangladesh: "bd",
-  philippines:"ph",
   ukraine:    "ua",
   china:      "cn",
 };
@@ -88,7 +86,6 @@ const COUNTRY_GRADIENTS: Record<string, { from: string; to: string; text: string
   vietnam:    { from: "#8b1a1a", to: "#7c3a0a", text: "#fde68a" },
   georgia:    { from: "#7c1530", to: "#8b3a12", text: "#fecdd3" },
   kyrgyzstan: { from: "#a31c1c", to: "#2d3748", text: "#fca5a5" },
-  kazakhstan: { from: "#0c5f8a", to: "#8a6b0c", text: "#bae6fd" },
   uzbekistan: { from: "#0d6b61", to: "#1a2e5a", text: "#6ee7b7" },
   bangladesh: { from: "#145228", to: "#8b1a1a", text: "#bbf7d0" },
 };

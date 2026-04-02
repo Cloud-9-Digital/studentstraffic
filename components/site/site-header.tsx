@@ -1,15 +1,16 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowRight, Menu, Phone, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Menu, Phone, X } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
+import { CountryFlag } from "@/components/site/country-flag";
 import { SearchPalette } from "@/components/site/search-palette";
 import { cn } from "@/lib/utils";
-import { siteConfig } from "@/lib/constants";
+import { navDestinations, siteConfig } from "@/lib/constants";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -58,6 +59,9 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [countriesOpen, setCountriesOpen] = useState(false);
+  const [mobileCountriesOpen, setMobileCountriesOpen] = useState(false);
+  const countriesMenuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 6);
@@ -72,12 +76,46 @@ export function SiteHeader() {
     };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    setMobileOpen(false);
+    setCountriesOpen(false);
+    setMobileCountriesOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!countriesOpen) {
+      return;
+    }
+
+    const handlePointerDown = (event: MouseEvent) => {
+      if (!countriesMenuRef.current?.contains(event.target as Node)) {
+        setCountriesOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setCountriesOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [countriesOpen]);
+
   const closeMobile = useCallback(() => setMobileOpen(false), []);
 
   const isActive = (href: string) =>
     href === "/"
       ? pathname === "/"
       : pathname === href || pathname.startsWith(href + "/");
+
+  const countriesActive = isActive("/countries");
 
   return (
     <>
@@ -99,6 +137,85 @@ export function SiteHeader() {
 
           {/* Desktop nav */}
           <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-0.5 lg:flex">
+            <div className="relative" ref={countriesMenuRef}>
+              <button
+                type="button"
+                className={cn(
+                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                  countriesActive || countriesOpen
+                    ? "bg-primary/8 text-primary"
+                    : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+                )}
+                aria-expanded={countriesOpen}
+                aria-haspopup="menu"
+                onClick={() => setCountriesOpen((open) => !open)}
+              >
+                Countries
+                <ChevronDown
+                  className={cn(
+                    "size-4 transition-transform",
+                    countriesOpen ? "rotate-180" : "",
+                  )}
+                />
+              </button>
+
+              <div
+                className={cn(
+                  "absolute left-0 top-full mt-2 w-[25rem] overflow-hidden rounded-2xl border border-border bg-background p-2 shadow-xl transition-all duration-200",
+                  countriesOpen
+                    ? "pointer-events-auto translate-y-0 opacity-100"
+                    : "pointer-events-none -translate-y-1 opacity-0",
+                )}
+              >
+                <div className="flex items-center justify-between gap-4 border-b border-border/60 px-3 py-2">
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-primary/70">
+                      Countries
+                    </p>
+                    <h3 className="mt-0.5 text-sm font-semibold text-heading">
+                      Choose a destination
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="py-2">
+                  {navDestinations.map((destination) => (
+                    <Link
+                      key={destination.href}
+                      href={destination.href}
+                      onClick={() => setCountriesOpen(false)}
+                      className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-muted"
+                    >
+                      <CountryFlag
+                        countryCode={destination.countryCode}
+                        alt={destination.name}
+                        width={26}
+                        height={18}
+                        className="rounded-sm border border-black/5 shadow-sm"
+                      />
+                      <div className="min-w-0 flex-1">
+                        <p className="text-sm font-medium text-foreground">
+                          {destination.name}
+                        </p>
+                      </div>
+                      <ArrowRight className="size-3.5 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />
+                    </Link>
+                  ))}
+                </div>
+
+                <div className="border-t border-border/60 p-2">
+                  <Link
+                    href="/countries"
+                    onClick={() => setCountriesOpen(false)}
+                    className="flex items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-muted hover:text-primary"
+                  >
+                    View all country guides
+                    <ArrowRight className="size-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
@@ -193,6 +310,54 @@ export function SiteHeader() {
 
         <div className="flex flex-1 flex-col overflow-y-auto">
           <nav className="flex-1 space-y-0.5 p-3">
+            <div className="rounded-2xl">
+              <button
+                type="button"
+                onClick={() => setMobileCountriesOpen((open) => !open)}
+                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
+                aria-expanded={mobileCountriesOpen}
+              >
+                <span>Countries</span>
+                <ChevronDown
+                  className={cn(
+                    "size-4 text-muted-foreground transition-transform",
+                    mobileCountriesOpen ? "rotate-180" : "",
+                  )}
+                />
+              </button>
+
+              <div
+                className={cn(
+                  "overflow-hidden transition-all duration-200",
+                  mobileCountriesOpen ? "max-h-[520px] opacity-100" : "max-h-0 opacity-0",
+                )}
+              >
+                <div className="space-y-1 px-2 pb-2">
+                  {navDestinations.map((destination) => (
+                    <Link
+                      key={destination.href}
+                      href={destination.href}
+                      onClick={closeMobile}
+                      className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition-colors hover:bg-black/5"
+                    >
+                      <CountryFlag
+                        countryCode={destination.countryCode}
+                        alt={destination.name}
+                        width={24}
+                        height={18}
+                        className="rounded-sm border border-black/5"
+                      />
+                      <div className="min-w-0">
+                        <p className="font-semibold text-foreground">
+                          {destination.name}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}

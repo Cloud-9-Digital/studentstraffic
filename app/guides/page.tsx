@@ -3,20 +3,15 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, Compass, GraduationCap, Wallet } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
-import { Button } from "@/components/ui/button";
 import { getLandingPages } from "@/lib/data/catalog";
-import { getBudgetGuides, getComparisonGuides } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
   getStructuredDataGraph,
 } from "@/lib/structured-data";
-import {
-  getBudgetGuideHref,
-  getComparisonHref,
-  getLandingPageHref,
-} from "@/lib/routes";
+import { getLandingPageHref } from "@/lib/routes";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS Abroad Guides | Countries, Courses, Comparisons & Budgets",
@@ -28,48 +23,73 @@ export const metadata: Metadata = buildIndexableMetadata({
 const guideTypes = [
   {
     Icon: Compass,
-    label: "Destinations",
     title: "Country Guides",
-    description: "Costs, recognition, student life, and destination context before you compare universities.",
+    description:
+      "Compare destination fit, recognition context, city life, and admissions practicality.",
     href: "/countries",
-    cta: "Explore countries",
+    cta: "Open countries",
+    theme:
+      "border-[#2d6b64]/15 bg-[linear-gradient(180deg,rgba(45,107,100,0.06)_0%,#ffffff_40%)] hover:border-[#2d6b64]/30",
+    action: "text-[#235b55]",
   },
   {
     Icon: GraduationCap,
-    label: "Programmes",
     title: "Course Guides",
-    description: "Understand MBBS, BDS, nursing, and postgraduate routes before judging institutions.",
+    description:
+      "Understand the route first, then compare where and how to study it abroad.",
     href: "/courses",
-    cta: "Explore courses",
+    cta: "Open courses",
+    theme:
+      "border-[#355e8a]/15 bg-[linear-gradient(180deg,rgba(53,94,138,0.06)_0%,#ffffff_40%)] hover:border-[#355e8a]/30",
+    action: "text-[#2f5a86]",
   },
   {
     Icon: BookOpen,
-    label: "Admissions planning",
     title: "Comparison Guides",
-    description: "Side-by-side university evaluations for when your options are narrowing.",
+    description:
+      "Use side-by-side university comparisons once your shortlist is getting tighter.",
     href: "/compare",
-    cta: "Browse comparisons",
+    cta: "Open comparisons",
+    theme:
+      "border-[#7b5d3d]/15 bg-[linear-gradient(180deg,rgba(123,93,61,0.06)_0%,#ffffff_40%)] hover:border-[#7b5d3d]/30",
+    action: "text-[#6d5132]",
   },
   {
     Icon: Wallet,
-    label: "Affordability",
     title: "Budget Guides",
-    description: "Research by tuition range before opening individual university pages.",
+    description:
+      "Start with a yearly tuition ceiling before moving into university-level detail.",
     href: "/budget",
-    cta: "Browse by budget",
+    cta: "Open budget guides",
+    theme:
+      "border-primary/15 bg-[linear-gradient(180deg,rgba(11,49,43,0.05)_0%,#ffffff_40%)] hover:border-primary/30",
+    action: "text-primary",
   },
 ] as const;
 
-export default async function GuidesPage() {
-  const [landingPages, comparisonGuides, budgetGuides] = await Promise.all([
-    getLandingPages(),
-    getComparisonGuides(),
-    getBudgetGuides(),
-  ]);
+function toPlainText(value: string) {
+  return value
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/\*\*(.*?)\*\*/g, "$1")
+    .replace(/\[(.*?)\]\((.*?)\)/g, "$1")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
-  const featuredEditorialGuides = landingPages.slice(0, 6);
-  const featuredComparisonGuides = comparisonGuides.slice(0, 5);
-  const featuredBudgetGuides = budgetGuides.slice(0, 5);
+function getConciseSummary(value: string) {
+  const plain = toPlainText(value);
+  const firstSentence = plain.match(/^[^.!?]+[.!?]/)?.[0]?.trim() || plain;
+
+  if (firstSentence.length <= 150) {
+    return firstSentence;
+  }
+
+  return `${firstSentence.slice(0, 147).trimEnd()}...`;
+}
+
+export default async function GuidesPage() {
+  const landingPages = await getLandingPages();
+  const featuredGuides = landingPages.slice(0, 6);
 
   const path = "/guides";
   const structuredDataItems = [
@@ -87,242 +107,102 @@ export default async function GuidesPage() {
 
   return (
     <>
-      {/* ── Hero ─────────────────────────────────────────────────────────────── */}
-      <div className="relative overflow-hidden bg-surface-dark">
-        <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-        <div className="hero-grid-lines pointer-events-none absolute inset-0" />
-        <div className="hero-orb hero-orb--warm pointer-events-none absolute -right-16 -top-20 size-96 opacity-40" />
-        <div className="hero-orb hero-orb--cool pointer-events-none absolute -bottom-10 left-10 size-72 opacity-60" />
-
-        <div className="container-shell relative py-12 md:py-20">
-          <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-end">
-            <div className="space-y-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-                Research guides
-              </p>
-              <h1 className="font-display text-5xl font-semibold leading-[1.06] tracking-tight text-white sm:text-6xl lg:text-7xl">
-                Everything you need
-                <br />
-                <span className="italic text-accent">before you decide.</span>
-              </h1>
-              <p className="max-w-lg text-base leading-8 text-white/70">
-                Country guides, course overviews, university comparisons, and
-                budget planning — all in one place.
-              </p>
-              <div className="flex flex-wrap gap-3 pt-1">
-                <Button asChild size="lg" variant="accent">
-                  <Link href="/universities">
-                    Browse universities
-                    <ArrowRight className="size-4" />
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-white/20 bg-white/10 !text-white hover:bg-white/18"
-                >
-                  <Link href="/contact">Talk to a counsellor</Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Guide type quick-links — desktop */}
-            <div className="hidden space-y-2 lg:block">
-              {guideTypes.map(({ Icon, title, href }) => (
-                <Link
-                  key={title}
-                  href={href}
-                  className="hero-glass group flex items-center gap-3 rounded-2xl px-4 py-3 transition-opacity hover:opacity-90"
-                >
-                  <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-white/12 text-white">
-                    <Icon className="size-4" />
-                  </div>
-                  <span className="text-sm font-semibold text-white">{title}</span>
-                  <ArrowRight className="ml-auto size-3.5 text-white/30 transition-transform group-hover:translate-x-0.5" />
-                </Link>
-              ))}
-            </div>
+      <section className="relative overflow-hidden border-b border-border/70 bg-[linear-gradient(145deg,#f6efe7_0%,#fbfaf8_48%,#eef4fb_100%)]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(214,97,0,0.10),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(53,94,138,0.10),transparent_28%)]" />
+        <div className="container-shell relative py-14 md:py-18 lg:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              Research Guides
+            </p>
+            <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-heading sm:text-6xl">
+              Start with the right guide type.
+            </h1>
+            <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
+              Use this hub to jump into country research, course research,
+              comparison pages, or budget-first planning.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* ── Guide categories ─────────────────────────────────────────────────── */}
-      <section className="section-space border-b border-border">
+      <section className="section-space">
         <div className="container-shell">
-          <div className="mb-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-              Guide types
-            </p>
-            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading sm:text-4xl">
-              Choose where to start
-            </h2>
-          </div>
-
-          <div className="grid gap-px overflow-hidden rounded-3xl border border-border bg-border md:grid-cols-2">
-            {guideTypes.map(({ Icon, label, title, description, href, cta }) => (
+          <div className="grid gap-4 md:grid-cols-2">
+            {guideTypes.map(({ Icon, title, description, href, cta, theme, action }) => (
               <Link
                 key={title}
                 href={href}
-                className="group flex flex-col gap-5 bg-background p-8 transition-colors hover:bg-muted/30 md:p-10"
+                className={cn(
+                  "group flex h-full flex-col rounded-2xl border bg-card p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md",
+                  theme,
+                )}
               >
-                <div className="flex items-start justify-between">
-                  <div className="flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                    <Icon className="size-5" />
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex size-12 items-center justify-center rounded-2xl bg-white/70 shadow-sm">
+                    <Icon className="size-5 text-heading" />
                   </div>
-                  <span className="rounded-full border border-border px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">
-                    {label}
+                  <ArrowRight className="mt-1 size-4 shrink-0 text-muted-foreground/40 transition-transform group-hover:translate-x-0.5" />
+                </div>
+
+                <h2 className="mt-5 font-display text-3xl font-semibold tracking-tight text-heading">
+                  {title}
+                </h2>
+                <p className="mt-3 flex-1 text-sm leading-7 text-muted-foreground">
+                  {description}
+                </p>
+
+                <div className="mt-5 border-t border-border/70 pt-4">
+                  <span
+                    className={cn(
+                      "inline-flex items-center gap-2 text-sm font-semibold",
+                      action,
+                    )}
+                  >
+                    {cta}
+                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </div>
-                <div className="space-y-2">
-                  <h3 className="font-display text-2xl font-semibold tracking-tight text-heading">
-                    {title}
-                  </h3>
-                  <p className="text-sm leading-7 text-muted-foreground">
-                    {description}
-                  </p>
-                </div>
-                <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors group-hover:text-accent">
-                  {cta}
-                  <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-                </span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── Editorial guides ─────────────────────────────────────────────────── */}
-      <section className="section-space border-b border-border">
+      <section className="pb-24">
         <div className="container-shell">
-          <div className="mb-10 flex items-end justify-between gap-4">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-                Editorial
-              </p>
-              <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading sm:text-4xl">
-                In-depth guides
-              </h2>
-            </div>
-            <Button asChild variant="outline" className="hidden shrink-0 sm:flex">
-              <Link href="/countries">
-                All country guides
-                <ArrowRight className="size-3.5" />
-              </Link>
-            </Button>
+          <div className="mb-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              Popular Reads
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
+              In-depth guides people open often.
+            </h2>
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {featuredEditorialGuides.map((guide) => (
+            {featuredGuides.map((guide) => (
               <Link
                 key={guide.slug}
                 href={getLandingPageHref(guide.courseSlug, guide.countrySlug)}
-                className="group flex flex-col rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-sm"
+                className="group flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-md"
               >
                 <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
                   {guide.kicker}
                 </p>
-                <h3 className="mt-3 font-display text-xl font-semibold tracking-tight text-heading">
+                <h3 className="mt-3 font-display text-2xl font-semibold tracking-tight text-heading">
                   {guide.title}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-7 text-muted-foreground">
-                  {guide.summary}
+                  {getConciseSummary(guide.summary)}
                 </p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors group-hover:text-accent">
-                  Read guide
-                  <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-                </span>
+                <div className="mt-5 border-t border-border/70 pt-4">
+                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
+                    Read guide
+                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                </div>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Comparison + Budget ───────────────────────────────────────────────── */}
-      <section className="section-space">
-        <div className="container-shell">
-          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-
-            {/* Comparison guides */}
-            <div>
-              <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-                    Comparisons
-                  </p>
-                  <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-heading sm:text-3xl">
-                    University vs University
-                  </h2>
-                </div>
-                <Button asChild variant="outline" size="sm" className="shrink-0">
-                  <Link href="/compare">
-                    View all
-                    <ArrowRight className="size-3.5" />
-                  </Link>
-                </Button>
-              </div>
-              <div className="space-y-3">
-                {featuredComparisonGuides.map((guide) => (
-                  <Link
-                    key={guide.slug}
-                    href={getComparisonHref(guide.slug)}
-                    className="group flex items-center justify-between rounded-2xl border border-border bg-card px-5 py-4 transition-all hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-sm"
-                  >
-                    <div className="min-w-0">
-                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">
-                        Comparison guide
-                      </p>
-                      <p className="mt-0.5 text-sm font-semibold text-foreground">
-                        {guide.left.university.name} vs {guide.right.university.name}
-                      </p>
-                    </div>
-                    <ArrowRight className="ml-3 size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Budget guides */}
-            <div>
-              <div className="mb-7 flex flex-wrap items-end justify-between gap-3">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-                    Affordability
-                  </p>
-                  <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-heading sm:text-3xl">
-                    Research by budget
-                  </h2>
-                </div>
-                <Button asChild variant="outline" size="sm" className="shrink-0">
-                  <Link href="/budget">
-                    View all
-                    <ArrowRight className="size-3.5" />
-                  </Link>
-                </Button>
-              </div>
-              <div className="space-y-3">
-                {featuredBudgetGuides.map((guide) => (
-                  <Link
-                    key={guide.slug}
-                    href={getBudgetGuideHref(guide.slug)}
-                    className="group flex items-center justify-between rounded-2xl border border-border bg-card px-5 py-4 transition-all hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-sm"
-                  >
-                    <div className="min-w-0">
-                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">
-                        {guide.course.shortName}
-                      </p>
-                      <p className="mt-0.5 text-sm font-semibold text-foreground">
-                        Under ${guide.budgetUsd.toLocaleString("en-US")} —{" "}
-                        <span className="font-normal text-muted-foreground">
-                          {guide.programs.length} programs
-                        </span>
-                      </p>
-                    </div>
-                    <ArrowRight className="ml-3 size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />
-                  </Link>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>

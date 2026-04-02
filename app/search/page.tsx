@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
+import Link from "next/link";
+import { X } from "lucide-react";
 
 import { SearchResultCard } from "@/components/site/search-result-card";
-import { SectionHeading } from "@/components/site/section-heading";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { buildNoIndexMetadata } from "@/lib/metadata";
-import { getCountries, getCourses } from "@/lib/data/catalog";
+import type { SearchDocumentType } from "@/lib/data/types";
 import { parseSearchFilters } from "@/lib/search/filters";
 import { searchCatalog } from "@/lib/search/search";
 
@@ -20,248 +19,181 @@ export const metadata: Metadata = buildNoIndexMetadata(
   },
   {
     canonicalPath: "/search",
-  }
+  },
 );
 
-const documentTypes = [
-  { value: "", label: "All result types" },
-  { value: "program", label: "Programs" },
-  { value: "university", label: "Universities" },
-  { value: "landing_page", label: "Landing pages" },
-  { value: "country", label: "Countries" },
-  { value: "course", label: "Courses" },
+const suggestedQueries = [
+  "MBBS in Russia",
+  "Vietnam fees",
+  "Nursing abroad",
+  "Georgia universities",
+  "Medical PG",
+  "NMC university",
 ] as const;
+
+const resultSections: Array<{
+  type: SearchDocumentType;
+  title: string;
+}> = [
+  { type: "university", title: "Universities" },
+  { type: "program", title: "Programs" },
+  { type: "landing_page", title: "Guides" },
+  { type: "country", title: "Countries" },
+  { type: "course", title: "Courses" },
+];
+
+function buildQueryHref(query: string) {
+  const params = new URLSearchParams();
+  params.set("q", query);
+  return `/search?${params.toString()}`;
+}
 
 export default async function SearchPage({
   searchParams,
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  const [countries, courses] = await Promise.all([getCountries(), getCourses()]);
+  const filters = parseSearchFilters(await searchParams);
+  const hasQuery = Boolean(filters.q);
+  const results = hasQuery ? await searchCatalog({ q: filters.q }) : [];
+
+  const resultsByType = new Map<SearchDocumentType, typeof results>();
+
+  for (const section of resultSections) {
+    resultsByType.set(
+      section.type,
+      results.filter((result) => result.documentType === section.type),
+    );
+  }
 
   return (
     <section className="section-space">
-      <div className="container-shell space-y-12">
-        <SectionHeading
-          eyebrow="Search"
-          title="Search the catalog when you already know what you want."
-          description="Search is a utility layer for jumping straight to countries, courses, universities, and long-form guides."
-        />
-
-        <Suspense
-          fallback={<SearchContentFallback countries={countries} courses={courses} />}
-        >
-          <SearchContent
-            searchParams={searchParams}
-            countries={countries}
-            courses={courses}
-          />
-        </Suspense>
-      </div>
-    </section>
-  );
-}
-
-async function SearchContent({
-  searchParams,
-  countries,
-  courses,
-}: {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-  countries: Awaited<ReturnType<typeof getCountries>>;
-  courses: Awaited<ReturnType<typeof getCourses>>;
-}) {
-  const filters = parseSearchFilters(await searchParams);
-  const results = await searchCatalog(filters);
-
-  return (
-    <>
-      <form action="/search" className="surface-outline rounded-2xl p-5 md:p-6">
-        <div className="field-grid md:grid-cols-[2fr_1fr_1fr_1fr]">
-          <div className="space-y-2">
-            <Label htmlFor="q">Search query</Label>
-            <Input
-              id="q"
-              name="q"
-              defaultValue={filters.q}
-              placeholder="Kazan, MBBS Russia, NMC university, fees..."
-            />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="type">Type</Label>
-            <select
-              id="type"
-              name="type"
-              defaultValue={filters.type ?? ""}
-              className="flex h-9 w-full min-w-0 rounded-xl border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-            >
-              {documentTypes.map((type) => (
-                <option key={type.value} value={type.value}>
-                  {type.label}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="country">Country</Label>
-            <select
-              id="country"
-              name="country"
-              defaultValue={filters.country ?? ""}
-              className="flex h-9 w-full min-w-0 rounded-xl border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-            >
-              <option value="">All countries</option>
-              {countries.map((country) => (
-                <option key={country.slug} value={country.slug}>
-                  {country.name}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="course">Course</Label>
-            <select
-              id="course"
-              name="course"
-              defaultValue={filters.course ?? ""}
-              className="flex h-9 w-full min-w-0 rounded-xl border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-            >
-              <option value="">All courses</option>
-              {courses.map((course) => (
-                <option key={course.slug} value={course.slug}>
-                  {course.shortName}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        <div className="mt-4 flex flex-wrap items-center gap-3">
-          <Button type="submit" className="ml-auto">
-            Search catalog
-          </Button>
-        </div>
-      </form>
-
-      <Card>
-        <CardContent className="flex items-center justify-between gap-4 py-6 text-sm text-muted-foreground">
-          <p>
-            Showing <strong className="text-foreground">{results.length}</strong>{" "}
-            result{results.length === 1 ? "" : "s"}.
+      <div className="container-shell max-w-6xl space-y-6">
+        <div className="max-w-3xl">
+          <h1 className="font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
+            Search
+          </h1>
+          <p className="mt-3 text-sm leading-7 text-muted-foreground">
+            Search universities, countries, courses, and guides.
           </p>
-          <p>Open the detailed guide or university page that matches what you need.</p>
-        </CardContent>
-      </Card>
+        </div>
 
-      <div className="soft-grid md:grid-cols-2">
-        {results.length ? (
-          results.map((result) => (
-            <SearchResultCard
-              key={`${result.documentType}:${result.sourceSlug}`}
-              result={result}
-            />
-          ))
+        <form action="/search" className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_auto]">
+          <div>
+            <Label htmlFor="q" className="sr-only">
+              Search query
+            </Label>
+            <div className="relative">
+              <Input
+                id="q"
+                name="q"
+                defaultValue={filters.q}
+                placeholder="Search a university, country, course, city, fee term..."
+                className="h-12 pr-12 text-base md:text-base"
+              />
+              {hasQuery ? (
+                <Link
+                  href="/search"
+                  aria-label="Clear search"
+                  className="absolute inset-y-0 right-2 inline-flex items-center justify-center rounded-full px-2 text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <X className="size-4" />
+                </Link>
+              ) : null}
+            </div>
+          </div>
+          <Button
+            type="submit"
+            size="lg"
+            variant="accent"
+            className="w-full lg:w-auto"
+          >
+            Search
+          </Button>
+        </form>
+
+        {hasQuery ? (
+          <div className="space-y-6">
+            <p className="text-sm text-muted-foreground">
+              <span className="font-semibold text-foreground">{results.length}</span>{" "}
+              result{results.length === 1 ? "" : "s"} for "{filters.q}"
+            </p>
+
+            {results.length ? (
+              <div className="space-y-8">
+                {resultSections.map((section) => {
+                  const sectionResults = resultsByType.get(section.type) ?? [];
+
+                  if (!sectionResults.length) {
+                    return null;
+                  }
+
+                  return (
+                    <div key={section.type} className="space-y-4">
+                      <div>
+                        <h2 className="font-display text-2xl font-semibold tracking-tight text-heading">
+                          {section.title}
+                        </h2>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          {sectionResults.length} result
+                          {sectionResults.length === 1 ? "" : "s"}
+                        </p>
+                      </div>
+
+                      <div className="grid gap-4 lg:grid-cols-2">
+                        {sectionResults.map((result) => (
+                          <SearchResultCard
+                            key={`${result.documentType}:${result.sourceSlug}`}
+                            result={result}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="space-y-3 py-2">
+                <h2 className="font-display text-2xl font-semibold tracking-tight text-heading">
+                  No results
+                </h2>
+                <p className="text-sm leading-7 text-muted-foreground">
+                  Try another university name, country, course, or broader phrase.
+                </p>
+                <div className="space-y-2">
+                  {suggestedQueries.map((query) => (
+                    <Link
+                      key={query}
+                      href={buildQueryHref(query)}
+                      className="block text-sm font-medium text-primary hover:underline"
+                    >
+                      {query}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         ) : (
-          <Card className="md:col-span-2">
-            <CardContent className="py-12 text-center text-muted-foreground">
-              No results matched this search yet. Try a broader query or remove one
-              of the filters.
-            </CardContent>
-          </Card>
+          <div className="space-y-3 py-2">
+            <p className="text-sm leading-7 text-muted-foreground">
+              Search is mainly for direct lookup. Try a university name, country,
+              course, city, or fee keyword.
+            </p>
+            <div className="space-y-2">
+              {suggestedQueries.map((query) => (
+                <Link
+                  key={query}
+                  href={buildQueryHref(query)}
+                  className="block text-sm font-medium text-primary hover:underline"
+                >
+                  {query}
+                </Link>
+              ))}
+            </div>
+          </div>
         )}
       </div>
-    </>
-  );
-}
-
-function SearchContentFallback({
-  countries,
-  courses,
-}: {
-  countries: Awaited<ReturnType<typeof getCountries>>;
-  courses: Awaited<ReturnType<typeof getCourses>>;
-}) {
-  return (
-    <>
-      <form action="/search" className="surface-outline rounded-2xl p-5 md:p-6">
-        <div className="field-grid md:grid-cols-[2fr_1fr_1fr_1fr]">
-          <div className="space-y-2">
-            <Label htmlFor="q">Search query</Label>
-            <Input
-              id="q"
-              name="q"
-              placeholder="Kazan, MBBS Russia, NMC university, fees..."
-            />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="type">Type</Label>
-            <select
-              id="type"
-              name="type"
-              defaultValue=""
-              className="flex h-9 w-full min-w-0 rounded-xl border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-            >
-              {documentTypes.map((type) => (
-                <option key={type.value} value={type.value}>
-                  {type.label}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="country">Country</Label>
-            <select
-              id="country"
-              name="country"
-              defaultValue=""
-              className="flex h-9 w-full min-w-0 rounded-xl border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-            >
-              <option value="">All countries</option>
-              {countries.map((country) => (
-                <option key={country.slug} value={country.slug}>
-                  {country.name}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="course">Course</Label>
-            <select
-              id="course"
-              name="course"
-              defaultValue=""
-              className="flex h-9 w-full min-w-0 rounded-xl border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-            >
-              <option value="">All courses</option>
-              {courses.map((course) => (
-                <option key={course.slug} value={course.slug}>
-                  {course.shortName}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-
-        <div className="mt-4 flex flex-wrap items-center gap-3">
-          <label className="flex items-center gap-2 rounded-2xl border border-border bg-muted/40 px-4 py-3 text-sm font-medium text-foreground">
-            <input type="checkbox" name="nmc" value="true" />
-            NMC eligible
-          </label>
-          <label className="flex items-center gap-2 rounded-2xl border border-border bg-muted/40 px-4 py-3 text-sm font-medium text-foreground">
-            <input type="checkbox" name="usmle" value="true" />
-            USMLE eligible
-          </label>
-          <Button type="submit" className="ml-auto">
-            Search catalog
-          </Button>
-        </div>
-      </form>
-
-      <Card>
-        <CardContent className="py-12 text-center text-muted-foreground">
-          Loading search results...
-        </CardContent>
-      </Card>
-    </>
+    </section>
   );
 }

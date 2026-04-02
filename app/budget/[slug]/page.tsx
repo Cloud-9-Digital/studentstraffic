@@ -4,13 +4,9 @@ import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
-import { ContentTrustPanel } from "@/components/site/content-trust-panel";
-import { SectionHeading } from "@/components/site/section-heading";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
-import {
-  catalogReviewedAt,
-} from "@/lib/content-governance";
+import { catalogReviewedAt } from "@/lib/content-governance";
 import {
   getBudgetGuideBySlug,
   getBudgetGuides,
@@ -24,7 +20,10 @@ import {
   getProgramItemListStructuredData,
   getStructuredDataGraph,
 } from "@/lib/structured-data";
-import { getBudgetGuideHref, getUniversityHref } from "@/lib/routes";
+import {
+  getBudgetGuideHref,
+  getCourseHref,
+} from "@/lib/routes";
 import { formatCurrencyUsd } from "@/lib/utils";
 
 export async function generateStaticParams() {
@@ -69,6 +68,7 @@ export default async function BudgetGuidePage({
     notFound();
   }
 
+  const budgetLabel = formatCurrencyUsd(guide.budgetUsd);
   const path = getBudgetGuideHref(guide.slug);
   const courseStructuredData = getCourseStructuredData(guide.course);
   const structuredDataItems = [
@@ -77,15 +77,15 @@ export default async function BudgetGuidePage({
       { name: "Guides", path: "/guides" },
       { name: "Budget guides", path: "/budget" },
       {
-        name: `${guide.course.shortName} under ${formatCurrencyUsd(guide.budgetUsd)}`,
+        name: `${guide.course.shortName} under ${budgetLabel}`,
         path,
       },
     ]),
     courseStructuredData,
     getCollectionPageStructuredData({
       path,
-      name: `${guide.course.shortName} universities under ${formatCurrencyUsd(guide.budgetUsd)}`,
-      description: `Budget-focused ${guide.course.shortName} options with annual tuition under ${formatCurrencyUsd(guide.budgetUsd)}.`,
+      name: `${guide.course.shortName} universities under ${budgetLabel}`,
+      description: `Budget-focused ${guide.course.shortName} options with annual tuition under ${budgetLabel}.`,
       aboutIds: [courseStructuredData["@id"]],
       mainEntityId: getItemListStructuredDataId(path),
       dateModified: catalogReviewedAt,
@@ -93,61 +93,65 @@ export default async function BudgetGuidePage({
     }),
     getProgramItemListStructuredData({
       path,
-      name: `${guide.course.shortName} budget options under ${formatCurrencyUsd(guide.budgetUsd)}`,
+      name: `${guide.course.shortName} budget options under ${budgetLabel}`,
       programs: guide.programs,
     }),
   ];
-  const countries = [...new Set(guide.programs.map((program) => program.country.name))];
+
   const finderHref = `/universities?course=${guide.course.slug}&fee_max=${guide.budgetUsd}`;
 
   return (
-    <section className="section-space">
-      <div className="container-shell space-y-10">
-        <div className="hero-panel px-6 py-8 md:px-10 md:py-10">
-          <div className="max-w-5xl space-y-5">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/55">
-              Budget guide
+    <>
+      <section className="relative overflow-hidden border-b border-border/70 bg-[linear-gradient(145deg,#f6efe7_0%,#fbfaf8_48%,#eef4fb_100%)]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(214,97,0,0.10),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(45,107,100,0.10),transparent_28%)]" />
+        <div className="container-shell relative py-14 md:py-18 lg:py-20">
+          <div className="max-w-4xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              Budget Guide
             </p>
-            <h1 className="font-display text-heading-contrast text-5xl font-semibold tracking-tight md:text-6xl">
-              {guide.course.shortName} universities under {formatCurrencyUsd(guide.budgetUsd)}
+            <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-heading sm:text-6xl">
+              {guide.course.shortName} under {budgetLabel} per year.
             </h1>
-            <p className="max-w-3xl text-base leading-8 text-white/80">
-              Explore current {guide.course.shortName} options with annual
-              tuition at or below {formatCurrencyUsd(guide.budgetUsd)} and use
-              this page as a starting point for a more affordable options.
+            <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground">
+              This page keeps the shortlist inside an annual tuition ceiling of{" "}
+              {budgetLabel}, so you can compare affordable options before you go
+              deeper into full university details.
             </p>
-            <div className="flex flex-wrap gap-3 text-sm text-white/70">
-              <span>{guide.programs.length} programs</span>
-              <span>{countries.length} countries</span>
-              <span>Sorted by affordability and featured priority</span>
-            </div>
-            <div className="flex flex-wrap gap-3">
+
+            <div className="mt-7 flex flex-wrap gap-3">
               <Button asChild size="lg" variant="accent">
-                <Link href={finderHref}>Explore all matching universities</Link>
+                <Link href={finderHref}>
+                  Browse all matching universities
+                  <ArrowRight className="size-4" />
+                </Link>
               </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white/20 bg-white/10 text-white hover:bg-white/18 hover:text-white"
-              >
-                <Link href="/contact">Get free counselling</Link>
+              <Button asChild size="lg" variant="outline">
+                <Link href={getCourseHref(guide.course.slug)}>
+                  Open {guide.course.shortName} guide
+                </Link>
               </Button>
             </div>
           </div>
         </div>
+      </section>
 
-        <ContentTrustPanel
-          lastReviewed={catalogReviewedAt}
-        />
+      <section className="section-space">
+        <div className="container-shell">
+          <div className="mb-8 flex flex-col gap-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              Matching Universities
+            </p>
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
+              {guide.programs.length} option{guide.programs.length === 1 ? "" : "s"} within this budget band.
+            </h2>
+            <p className="max-w-3xl text-sm leading-7 text-muted-foreground">
+              These results are limited to published programs with annual tuition
+              at or below {budgetLabel}. Open any university page for hostel,
+              city, recognition, and admissions details.
+            </p>
+          </div>
 
-        <div className="space-y-8">
-          <SectionHeading
-            eyebrow="Affordable options"
-            title={`Current ${guide.course.shortName} options under ${formatCurrencyUsd(guide.budgetUsd)}`}
-            description="Start with budget here, then open university pages for a deeper look at country, city, recognition, and support."
-          />
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 xl:grid-cols-3">
             {guide.programs.map((program, index) => (
               <UniversityCard
                 key={program.offering.slug}
@@ -156,30 +160,10 @@ export default async function BudgetGuidePage({
               />
             ))}
           </div>
-          <div className="flex flex-wrap gap-3">
-            {guide.programs.slice(0, 3).map((program) => (
-              <Button key={program.university.slug} asChild variant="outline">
-                <Link href={getUniversityHref(program.university.slug)}>
-                  {program.university.name}
-                  <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-            ))}
-          </div>
-          <div className="rounded-3xl border border-border bg-card px-8 py-10 md:px-10">
-            <SectionHeading
-              title="Want to explore more options beyond this budget page?"
-              description="Browse all matching universities in one place while keeping the budget filter active."
-              aside={
-                <Button asChild>
-                  <Link href={finderHref}>Explore all matching universities</Link>
-                </Button>
-              }
-            />
-          </div>
         </div>
-      </div>
+      </section>
+
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
-    </section>
+    </>
   );
 }

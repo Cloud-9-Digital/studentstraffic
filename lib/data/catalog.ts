@@ -46,6 +46,7 @@ import {
 } from "@/lib/utils";
 import { finderPageSize } from "@/lib/constants";
 import { getFinderSort } from "@/lib/filters";
+import { applyUniversityContentOverride } from "@/lib/data/university-content-overrides";
 import {
   buildWdomsUniversityLookup,
   matchWdomsSchoolToUniversity,
@@ -161,45 +162,48 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       courseRows.map((course) => [course.id, course.slug]),
     );
 
-    const universities: University[] = universityRows.map((university) => ({
-      slug: university.slug,
-      countrySlug: countrySlugsById.get(university.countryId) ?? "",
-      name: university.name,
-      city: university.city,
-      type: university.type as University["type"],
-      establishedYear: university.establishedYear,
-      summary: university.summary,
-      featured: university.featured,
-      published: university.published,
-      officialWebsite: university.officialWebsite,
-      logoUrl: university.logoUrl ?? undefined,
-      coverImageUrl: university.coverImageUrl ?? undefined,
-      campusLifestyle: university.campusLifestyle,
-      cityProfile: university.cityProfile,
-      clinicalExposure: university.clinicalExposure,
-      hostelOverview: university.hostelOverview,
-      indianFoodSupport: university.indianFoodSupport,
-      safetyOverview: university.safetyOverview,
-      studentSupport: university.studentSupport,
-      whyChoose: university.whyChoose as University["whyChoose"],
-      thingsToConsider:
-        university.thingsToConsider as University["thingsToConsider"],
-      bestFitFor: university.bestFitFor as University["bestFitFor"],
-      teachingHospitals: university.teachingHospitals,
-      recognitionBadges: university.recognitionBadges,
-      recognitionLinks:
-        university.recognitionLinks as University["recognitionLinks"],
-      faq: university.faq as University["faq"],
-      similarUniversitySlugs: university.similarUniversitySlugs,
-      lastVerifiedAt: university.lastVerifiedAt ?? undefined,
-      researchSources: university.researchSources as University["researchSources"],
-      researchNotes: university.researchNotes ?? undefined,
-      admissionsContent:
-        ("admissionsContent" in university
-          ? (university.admissionsContent as University["admissionsContent"])
-          : undefined) ?? undefined,
-      updatedAt: university.updatedAt?.toISOString(),
-    }));
+    const universities: University[] = universityRows.map((university) =>
+      applyUniversityContentOverride({
+        slug: university.slug,
+        countrySlug: countrySlugsById.get(university.countryId) ?? "",
+        name: university.name,
+        city: university.city,
+        type: university.type as University["type"],
+        establishedYear: university.establishedYear,
+        summary: university.summary,
+        featured: university.featured,
+        published: university.published,
+        officialWebsite: university.officialWebsite,
+        logoUrl: university.logoUrl ?? undefined,
+        coverImageUrl: university.coverImageUrl ?? undefined,
+        campusLifestyle: university.campusLifestyle,
+        cityProfile: university.cityProfile,
+        clinicalExposure: university.clinicalExposure,
+        hostelOverview: university.hostelOverview,
+        indianFoodSupport: university.indianFoodSupport,
+        safetyOverview: university.safetyOverview,
+        studentSupport: university.studentSupport,
+        whyChoose: university.whyChoose as University["whyChoose"],
+        thingsToConsider:
+          university.thingsToConsider as University["thingsToConsider"],
+        bestFitFor: university.bestFitFor as University["bestFitFor"],
+        teachingHospitals: university.teachingHospitals,
+        recognitionBadges: university.recognitionBadges,
+        recognitionLinks:
+          university.recognitionLinks as University["recognitionLinks"],
+        faq: university.faq as University["faq"],
+        similarUniversitySlugs: university.similarUniversitySlugs,
+        lastVerifiedAt: university.lastVerifiedAt ?? undefined,
+        researchSources:
+          university.researchSources as University["researchSources"],
+        researchNotes: university.researchNotes ?? undefined,
+        admissionsContent:
+          ("admissionsContent" in university
+            ? (university.admissionsContent as University["admissionsContent"])
+            : undefined) ?? undefined,
+        updatedAt: university.updatedAt?.toISOString(),
+      }),
+    );
 
     const universitySlugsById = new Map(
       universityRows.map((university) => [university.id, university.slug]),
@@ -298,42 +302,44 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
           courseRows.map((course) => [course.id, course.slug]),
         );
 
-        const universities: University[] = universityRows.map((university) => ({
-          slug: university.slug,
-          countrySlug: countrySlugsById.get(university.countryId) ?? "",
-          name: university.name,
-          city: university.city,
-          type: university.type as University["type"],
-          establishedYear: university.establishedYear,
-          summary: university.summary,
-          featured: university.featured,
-          published: university.published,
-          officialWebsite: university.officialWebsite,
-          logoUrl: university.logoUrl ?? undefined,
-          coverImageUrl: university.coverImageUrl ?? undefined,
-          campusLifestyle: university.campusLifestyle,
-          cityProfile: university.cityProfile,
-          clinicalExposure: university.clinicalExposure,
-          hostelOverview: university.hostelOverview,
-          indianFoodSupport: university.indianFoodSupport,
-          safetyOverview: university.safetyOverview,
-          studentSupport: university.studentSupport,
-          whyChoose: university.whyChoose as University["whyChoose"],
-          thingsToConsider:
-            university.thingsToConsider as University["thingsToConsider"],
-          bestFitFor: university.bestFitFor as University["bestFitFor"],
-          teachingHospitals: university.teachingHospitals,
-          recognitionBadges: university.recognitionBadges,
-          recognitionLinks:
-            university.recognitionLinks as University["recognitionLinks"],
-          faq: university.faq as University["faq"],
-          similarUniversitySlugs: university.similarUniversitySlugs,
-          lastVerifiedAt: university.lastVerifiedAt ?? undefined,
-          researchSources:
-            university.researchSources as University["researchSources"],
-          researchNotes: university.researchNotes ?? undefined,
-          updatedAt: university.updatedAt?.toISOString(),
-        }));
+        const universities: University[] = universityRows.map((university) =>
+          applyUniversityContentOverride({
+            slug: university.slug,
+            countrySlug: countrySlugsById.get(university.countryId) ?? "",
+            name: university.name,
+            city: university.city,
+            type: university.type as University["type"],
+            establishedYear: university.establishedYear,
+            summary: university.summary,
+            featured: university.featured,
+            published: university.published,
+            officialWebsite: university.officialWebsite,
+            logoUrl: university.logoUrl ?? undefined,
+            coverImageUrl: university.coverImageUrl ?? undefined,
+            campusLifestyle: university.campusLifestyle,
+            cityProfile: university.cityProfile,
+            clinicalExposure: university.clinicalExposure,
+            hostelOverview: university.hostelOverview,
+            indianFoodSupport: university.indianFoodSupport,
+            safetyOverview: university.safetyOverview,
+            studentSupport: university.studentSupport,
+            whyChoose: university.whyChoose as University["whyChoose"],
+            thingsToConsider:
+              university.thingsToConsider as University["thingsToConsider"],
+            bestFitFor: university.bestFitFor as University["bestFitFor"],
+            teachingHospitals: university.teachingHospitals,
+            recognitionBadges: university.recognitionBadges,
+            recognitionLinks:
+              university.recognitionLinks as University["recognitionLinks"],
+            faq: university.faq as University["faq"],
+            similarUniversitySlugs: university.similarUniversitySlugs,
+            lastVerifiedAt: university.lastVerifiedAt ?? undefined,
+            researchSources:
+              university.researchSources as University["researchSources"],
+            researchNotes: university.researchNotes ?? undefined,
+            updatedAt: university.updatedAt?.toISOString(),
+          }),
+        );
 
         const universitySlugsById = new Map(
           universityRows.map((university) => [university.id, university.slug]),

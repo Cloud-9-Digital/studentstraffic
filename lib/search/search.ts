@@ -15,9 +15,9 @@ import { buildSearchDocuments } from "@/lib/search/documents";
 
 function getTypeRank(documentType: SearchDocumentType) {
   switch (documentType) {
-    case "program":
-      return 0;
     case "university":
+      return 0;
+    case "program":
       return 1;
     case "landing_page":
       return 2;
@@ -28,6 +28,219 @@ function getTypeRank(documentType: SearchDocumentType) {
     default:
       return 5;
   }
+}
+
+function normalizeSearchValue(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getTokenCoverage(tokens: string[], haystack: string) {
+  if (!tokens.length) {
+    return 0;
+  }
+
+  let matched = 0;
+
+  for (const token of tokens) {
+    if (haystack.includes(token)) {
+      matched += 1;
+    }
+  }
+
+  return matched / tokens.length;
+}
+
+function getSearchSignals(result: SearchResult, query: string) {
+  const normalizedQuery = normalizeSearchValue(query);
+  const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
+  const normalizedTitle = normalizeSearchValue(result.title);
+  const normalizedSubtitle = normalizeSearchValue(result.subtitle ?? "");
+  const normalizedSearchText = normalizeSearchValue(result.searchText);
+
+  const titleExact = normalizedTitle === normalizedQuery;
+  const titleStartsWith =
+    normalizedQuery.length > 0 && normalizedTitle.startsWith(normalizedQuery);
+  const titleContains =
+    normalizedQuery.length > 0 && normalizedTitle.includes(normalizedQuery);
+  const subtitleContains =
+    normalizedQuery.length > 0 && normalizedSubtitle.includes(normalizedQuery);
+
+  const titleCoverage = getTokenCoverage(tokens, normalizedTitle);
+  const subtitleCoverage = getTokenCoverage(tokens, normalizedSubtitle);
+  const searchCoverage = getTokenCoverage(tokens, normalizedSearchText);
+
+  let directTitleTier = 0;
+  let boost = 0;
+
+  if (titleExact) {
+    directTitleTier = 4;
+    boost += 80;
+  } else if (titleStartsWith) {
+    directTitleTier = 3;
+    boost += 55;
+  } else if (titleContains) {
+    directTitleTier = 3;
+    boost += 42;
+  } else if (subtitleContains) {
+    directTitleTier = 2;
+    boost += 18;
+  }
+
+  if (titleCoverage === 1) {
+    directTitleTier = Math.max(directTitleTier, 2);
+    boost += 18;
+  } else if (titleCoverage >= 0.75) {
+    boost += 8;
+  }
+
+  if (subtitleCoverage === 1) {
+    boost += 6;
+  }
+
+  if (searchCoverage === 1) {
+    boost += 4;
+  }
+
+  switch (result.documentType) {
+    case "university":
+      if (directTitleTier >= 2 || titleCoverage >= 0.75) {
+        boost += 12;
+      }
+      break;
+    case "program":
+      if (directTitleTier >= 2 || subtitleCoverage === 1 || titleCoverage >= 0.75) {
+        boost += 10;
+      }
+      break;
+    case "landing_page":
+      if (directTitleTier === 0 && titleCoverage < 0.75) {
+        boost -= 10;
+      }
+      break;
+    case "country":
+    case "course":
+      if (directTitleTier === 0 && titleCoverage < 0.75) {
+        boost -= 6;
+      }
+      break;
+    default:
+      break;
+  }
+
+  return {
+    directTitleTier,
+    titleCoverage,
+    subtitleCoverage,
+    searchCoverage,
+    boost,
+  };
+}
+
+function hasStrongTitleMatch(signals: ReturnType<typeof getSearchSignals>) {
+  return signals.directTitleTier >= 3 || signals.titleCoverage === 1;
+}
+
+function rerankSearchResults(
+  results: SearchResult[],
+  filters: SearchFilters,
+  limit: number,
+) {
+  if (!filters.q) {
+    return results.slice(0, limit);
+  }
+
+  const rankedResults = results.map((result) => {
+    const signals = getSearchSignals(result, filters.q!);
+
+    return {
+      result: {
+        ...result,
+        score: result.score + signals.boost,
+      },
+      signals,
+    };
+  });
+
+  const hasStrongDirectMatch = rankedResults.some(
+    (entry) => entry.signals.directTitleTier >= 3,
+  );
+  const hasStrongEntityTitleMatch = rankedResults.some(
+    (entry) =>
+      (entry.result.documentType === "university" ||
+        entry.result.documentType === "program") &&
+      hasStrongTitleMatch(entry.signals),
+  );
+
+  let filteredResults = rankedResults;
+
+  if (hasStrongDirectMatch) {
+    filteredResults = filteredResults.filter(
+      (entry) =>
+        entry.signals.directTitleTier >= 1 ||
+        entry.signals.titleCoverage >= 0.75 ||
+        entry.signals.searchCoverage === 1,
+    );
+  }
+
+  if (hasStrongEntityTitleMatch) {
+    filteredResults = filteredResults.filter((entry) => {
+      switch (entry.result.documentType) {
+        case "university":
+          return (
+            entry.signals.directTitleTier >= 2 ||
+            entry.signals.titleCoverage >= 0.75
+          );
+        case "program":
+          return (
+            entry.signals.directTitleTier >= 2 ||
+            entry.signals.titleCoverage >= 0.75 ||
+            entry.signals.subtitleCoverage >= 0.75
+          );
+        case "landing_page":
+        case "country":
+        case "course":
+          return (
+            entry.signals.directTitleTier >= 2 ||
+            entry.signals.titleCoverage === 1
+          );
+        default:
+          return true;
+      }
+    });
+  }
+
+  return filteredResults
+    .sort((left, right) => {
+      if (right.result.score !== left.result.score) {
+        return right.result.score - left.result.score;
+      }
+
+      if (right.signals.directTitleTier !== left.signals.directTitleTier) {
+        return right.signals.directTitleTier - left.signals.directTitleTier;
+      }
+
+      if (right.result.featured !== left.result.featured) {
+        return Number(right.result.featured) - Number(left.result.featured);
+      }
+
+      if (
+        getTypeRank(left.result.documentType) !==
+        getTypeRank(right.result.documentType)
+      ) {
+        return (
+          getTypeRank(left.result.documentType) -
+          getTypeRank(right.result.documentType)
+        );
+      }
+
+      return left.result.title.localeCompare(right.result.title);
+    })
+    .slice(0, limit)
+    .map((entry) => entry.result);
 }
 
 function matchesStaticFilters(document: SearchDocument, filters: SearchFilters) {
@@ -99,7 +312,7 @@ async function searchInMemory(
     landingPages,
   });
 
-  return documents
+  const results = documents
     .filter((document) => matchesStaticFilters(document, filters))
     .filter((document) => {
       if (!filters.q) {
@@ -128,7 +341,9 @@ async function searchInMemory(
 
       return left.title.localeCompare(right.title);
     })
-    .slice(0, limit);
+    .slice(0, Math.max(limit * 3, 48));
+
+  return rerankSearchResults(results, filters, limit);
 }
 
 export async function searchCatalog(
@@ -158,6 +373,7 @@ export async function searchCatalog(
   try {
     if (filters.q) {
       const query = filters.q.trim();
+      const candidateLimit = Math.max(limit * 3, 48);
       const fuzzyDistance = query.length >= 10 ? 2 : 1;
       const exactMatchBoost = sql`
         CASE
@@ -167,18 +383,18 @@ export async function searchCatalog(
         END
       `;
       const businessBoost = sql`
-        CASE WHEN featured THEN 0.75 ELSE 0 END
+        CASE WHEN featured THEN 0.5 ELSE 0 END
         + CASE document_type
-            WHEN 'landing_page' THEN 0.8
-            WHEN 'university' THEN 0.2
-            WHEN 'program' THEN 0.1
+            WHEN 'university' THEN 0.9
+            WHEN 'program' THEN 0.6
+            WHEN 'landing_page' THEN 0.1
             ELSE 0
           END
       `;
       const typeRank = sql`
         CASE document_type
-          WHEN 'program' THEN 0
-          WHEN 'university' THEN 1
+          WHEN 'university' THEN 0
+          WHEN 'program' THEN 1
           WHEN 'landing_page' THEN 2
           WHEN 'country' THEN 3
           WHEN 'course' THEN 4
@@ -214,8 +430,8 @@ export async function searchCatalog(
               ARRAY[
                 paradedb.match('title', ${query}, conjunction_mode => true),
                 paradedb.match('subtitle', ${query}, conjunction_mode => true),
-                paradedb.match('summary', ${query}),
-                paradedb.match('search_text', ${query})
+                paradedb.match('summary', ${query}, conjunction_mode => true),
+                paradedb.match('search_text', ${query}, conjunction_mode => true)
               ],
               tie_breaker => 0.15
             )`,
@@ -223,11 +439,11 @@ export async function searchCatalog(
           sql` AND `
         )}
         ORDER BY score DESC, featured DESC, ${typeRank}, title ASC
-        LIMIT ${limit}
+        LIMIT ${candidateLimit}
       `);
 
       if (bm25Results.rows.length) {
-        return bm25Results.rows;
+        return rerankSearchResults(bm25Results.rows, filters, limit);
       }
 
       const fuzzyResults = await db.execute<SearchResult>(sql`
@@ -257,9 +473,9 @@ export async function searchCatalog(
             sql`id @@@ paradedb.disjunction_max(
               ARRAY[
                 paradedb.match('title', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
-                paradedb.match('subtitle', ${query}, distance => ${fuzzyDistance}),
-                paradedb.match('summary', ${query}, distance => ${fuzzyDistance}),
-                paradedb.match('search_text', ${query}, distance => ${fuzzyDistance})
+                paradedb.match('subtitle', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
+                paradedb.match('summary', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
+                paradedb.match('search_text', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true)
               ],
               tie_breaker => 0.1
             )`,
@@ -267,11 +483,11 @@ export async function searchCatalog(
           sql` AND `
         )}
         ORDER BY score DESC, featured DESC, ${typeRank}, title ASC
-        LIMIT ${limit}
+        LIMIT ${candidateLimit}
       `);
 
       if (fuzzyResults.rows.length) {
-        return fuzzyResults.rows;
+        return rerankSearchResults(fuzzyResults.rows, filters, limit);
       }
 
       const trigramResults = await db.execute<SearchResult>(sql`
@@ -315,10 +531,10 @@ export async function searchCatalog(
           sql` AND `
         )}
         ORDER BY score DESC, featured DESC, title ASC
-        LIMIT ${limit}
+        LIMIT ${candidateLimit}
       `);
 
-      return trigramResults.rows;
+      return rerankSearchResults(trigramResults.rows, filters, limit);
     }
 
     const browseResults = await db.execute<SearchResult>(sql`
@@ -346,8 +562,8 @@ export async function searchCatalog(
       ORDER BY
         featured DESC,
         CASE document_type
-          WHEN 'program' THEN 0
-          WHEN 'university' THEN 1
+          WHEN 'university' THEN 0
+          WHEN 'program' THEN 1
           WHEN 'landing_page' THEN 2
           WHEN 'country' THEN 3
           WHEN 'course' THEN 4
@@ -357,7 +573,7 @@ export async function searchCatalog(
       LIMIT ${limit}
     `);
 
-    return browseResults.rows;
+    return rerankSearchResults(browseResults.rows, filters, limit);
   } catch (error) {
     console.warn(
       "Falling back to in-memory search because the database search layer is not ready.",

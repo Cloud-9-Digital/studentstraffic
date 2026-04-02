@@ -625,6 +625,23 @@ export default async function CountryPage({
               </div>
             </div>
 
+            {countryContent.verificationChecklist?.length ? (
+              <div className="deferred-render py-14 md:py-18">
+                <SectionLabel icon={<CheckCircle2 className="size-3.5" />} text="Admissions Checks" />
+                <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
+                  What to verify before you pay
+                </h2>
+                <ul className="mt-8 space-y-3">
+                  {countryContent.verificationChecklist.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
+                      <span className="text-sm leading-7 text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
             {/* Hostel & Accommodation */}
             <div className="deferred-render py-14 md:py-18">
               <SectionLabel icon={<MapPin className="size-3.5" />} text="Hostel & Accommodation" />
@@ -1000,9 +1017,9 @@ function getCountryEditorialCopy({
     },
     vietnam: {
       heroLead:
-        "Vietnam is a closer-to-home destination for students who want shorter travel distance, growing English-medium medical options, and university choices concentrated in major urban centres.",
+        "Vietnam is a closer-to-home option for students comparing a smaller set of urban medical universities and shorter travel from India.",
       overviewLead:
-        "The most useful comparisons here are city, language support, and how quickly the academic environment is evolving from one university to another.",
+        "The most useful comparison points are city, teaching language support, and whether the full course structure fits your India-return plans.",
     },
     georgia: {
       heroLead:

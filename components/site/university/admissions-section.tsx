@@ -10,6 +10,10 @@ import {
 
 import type { CountryContent } from "@/lib/data/country-content";
 import type { FinderProgram, University, WdomsDirectoryEntry } from "@/lib/data/types";
+import {
+  getRussiaOfficialPageAudit,
+  getRussiaOfficialPageAuditSummary,
+} from "@/lib/data/russia-official-page-audit";
 
 import { InfoCard, SectionLabel } from "./shared";
 
@@ -54,6 +58,13 @@ export function UniversityAdmissionsSection({
 }) {
   const intakeMonths = primaryProgram?.offering.intakeMonths ?? [];
   const universityAdmissions = university.admissionsContent;
+  const russiaOfficialAudit =
+    university.countrySlug === "russia"
+      ? getRussiaOfficialPageAudit(university.slug)
+      : null;
+  const russiaOfficialAuditSummary = russiaOfficialAudit
+    ? getRussiaOfficialPageAuditSummary(russiaOfficialAudit)
+    : null;
   const admissionsIntro = primaryProgram
     ? universityAdmissions?.overview ??
       `Admissions to ${primaryProgram.course.shortName} at ${university.name} usually follow the ${university.type.toLowerCase()} university process used for international medical applicants in ${primaryProgram.country.name}. Always confirm the current cycle, seat availability, and document format directly with the university before applying.`
@@ -133,6 +144,28 @@ export function UniversityAdmissionsSection({
           </div>
         </div>
         <InfoCard
+          icon={<FileText className="size-4 text-accent" />}
+          title={russiaOfficialAuditSummary?.title ?? "Official admissions route"}
+          body={
+            russiaOfficialAuditSummary?.body ??
+            "Use the university's own admissions or program page to confirm the current foreign-applicant route before you apply."
+          }
+          linkHref={
+            russiaOfficialAudit?.classification === "ok"
+              ? (russiaOfficialAudit.finalUrl ??
+                russiaOfficialAudit.officialProgramUrl ??
+                primaryProgram?.offering.officialProgramUrl)
+              : (university.officialWebsite ??
+                russiaOfficialAudit?.officialProgramUrl ??
+                primaryProgram?.offering.officialProgramUrl)
+          }
+          linkLabel={
+            russiaOfficialAudit?.classification === "ok"
+              ? "Open mapped admissions page"
+              : "Open university website"
+          }
+        />
+        <InfoCard
           icon={<BookOpen className="size-4 text-accent" />}
           title="Primary program"
           body={
@@ -144,7 +177,11 @@ export function UniversityAdmissionsSection({
         <InfoCard
           icon={<ShieldCheck className="size-4 text-accent" />}
           title="Current-cycle check"
-          body="Admission cycles, seat availability, and invitation timelines can shift. Use this page for planning, then verify the active cycle before applying."
+          body={
+            russiaOfficialAudit?.classification && russiaOfficialAudit.classification !== "ok"
+              ? "This page includes planning guidance, but the mapped admissions link needs re-verification. Confirm the active foreign-applicant route directly on the university's main site before applying."
+              : "Admission cycles, seat availability, and invitation timelines can shift. Use this page for planning, then verify the active cycle before applying."
+          }
         />
       </div>
 
@@ -224,6 +261,20 @@ export function UniversityAdmissionsSection({
           />
         ))}
       </div>
+
+      {countryContent?.verificationChecklist?.length ? (
+        <div id="admissions-checks" className="scroll-mt-24 space-y-4">
+          <SectionLabel>Admissions Checks</SectionLabel>
+          <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
+            <h3 className="font-display text-xl font-semibold text-heading">
+              What to verify before you pay
+            </h3>
+            <div className="mt-5">
+              <CheckList items={countryContent.verificationChecklist} />
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       {/* ── Scholarships ─────────────────────────────────────────────── */}
       <div id="scholarships" className="scroll-mt-24 space-y-4">

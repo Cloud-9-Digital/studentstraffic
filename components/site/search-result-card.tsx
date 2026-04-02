@@ -1,106 +1,122 @@
 import Link from "next/link";
-import { ArrowUpRight, CircleDollarSign, SearchCheck } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import type { SearchDocumentType, SearchResult } from "@/lib/data/types";
 import { formatCurrencyUsd, hasPublishedUsdAmount } from "@/lib/utils";
 
-function getTypeLabel(documentType: SearchDocumentType) {
+function getActionLabel(documentType: SearchDocumentType) {
   switch (documentType) {
     case "country":
-      return "Country";
+      return "Open country guide";
     case "course":
-      return "Course";
-    case "university":
-      return "University";
-    case "program":
-      return "Program";
+      return "Open course guide";
     case "landing_page":
-      return "Landing Page";
+      return "Open guide";
+    case "program":
+    case "university":
+      return "Open university";
     default:
-      return "Result";
+      return "Open result";
   }
 }
 
-export function SearchResultCard({ result }: { result: SearchResult }) {
-  return (
-    <Card className="h-full">
-      <CardHeader className="space-y-3">
-        <div className="flex flex-wrap gap-2">
-          <Badge>{getTypeLabel(result.documentType)}</Badge>
-          {result.countrySlug ? (
-            <Badge variant="outline" className="bg-muted/50">
-              {result.countrySlug}
-            </Badge>
-          ) : null}
-          {result.courseSlug ? (
-            <Badge variant="outline" className="bg-muted/50">
-              {result.courseSlug}
-            </Badge>
-          ) : null}
-        </div>
-        <div className="space-y-2">
-          <CardTitle>{result.title}</CardTitle>
-          {result.subtitle ? <CardDescription>{result.subtitle}</CardDescription> : null}
-        </div>
-      </CardHeader>
-      <CardContent className="space-y-5">
-        <p className="text-sm leading-6 text-muted-foreground">
-          {result.summary}
-        </p>
+function humanizeSlug(slug: string) {
+  const specialLabels: Record<string, string> = {
+    mbbs: "MBBS",
+    bds: "BDS",
+    nursing: "Nursing",
+    "medical-pg": "Medical PG",
+  };
 
-        <div className="flex flex-wrap gap-2">
-          {result.highlights.slice(0, 4).map((highlight) => (
-            <span
-              key={highlight}
-              className="rounded-full border border-border bg-muted/50 px-3 py-1 text-xs font-medium text-foreground"
-            >
+  if (specialLabels[slug]) {
+    return specialLabels[slug];
+  }
+
+  return slug
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+function getMetaItems(result: SearchResult) {
+  const items: string[] = [];
+
+  if (result.countrySlug && result.documentType !== "country") {
+    items.push(humanizeSlug(result.countrySlug));
+  }
+
+  if (result.courseSlug && result.documentType !== "course") {
+    items.push(humanizeSlug(result.courseSlug));
+  }
+
+  if (result.city) {
+    items.push(result.city);
+  }
+
+  if (hasPublishedUsdAmount(result.annualTuitionUsd)) {
+    items.push(`${formatCurrencyUsd(result.annualTuitionUsd)} / yr`);
+  }
+
+  if (result.medium) {
+    items.push(result.medium);
+  }
+
+  if (result.intakeMonths.length) {
+    items.push(`Intake ${result.intakeMonths.slice(0, 2).join(", ")}`);
+  }
+
+  return items.slice(0, 4);
+}
+
+export function SearchResultCard({ result }: { result: SearchResult }) {
+  const metaItems = getMetaItems(result);
+  const highlights = result.highlights.filter(Boolean).slice(0, 2);
+
+  return (
+    <Link
+      href={result.path}
+      className="group block rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-md"
+    >
+      <div className="flex items-start justify-between gap-4">
+        <div className="min-w-0">
+          {result.subtitle ? (
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+              {result.subtitle}
+            </p>
+          ) : null}
+          <h2 className="mt-2 font-display text-2xl font-semibold tracking-tight text-heading transition-colors group-hover:text-primary">
+            {result.title}
+          </h2>
+        </div>
+
+        <ArrowUpRight className="mt-1 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+      </div>
+
+      <p className="mt-4 text-sm leading-7 text-muted-foreground">{result.summary}</p>
+
+      {metaItems.length ? (
+        <p className="mt-4 text-sm leading-7 text-muted-foreground">
+          {metaItems.join(" · ")}
+        </p>
+      ) : null}
+
+      {highlights.length ? (
+        <div className="mt-4 space-y-1.5">
+          {highlights.map((highlight) => (
+            <p key={highlight} className="text-sm text-foreground/75">
               {highlight}
-            </span>
+            </p>
           ))}
         </div>
+      ) : null}
 
-        {(hasPublishedUsdAmount(result.annualTuitionUsd) || result.medium) ? (
-          <div className="grid gap-3 text-sm text-muted-foreground md:grid-cols-2">
-            {hasPublishedUsdAmount(result.annualTuitionUsd) ? (
-              <div className="rounded-xl border border-border bg-muted/60 p-3">
-                <CircleDollarSign className="mb-2 h-4 w-4 text-accent" />
-                <p className="font-semibold text-foreground">
-                  {formatCurrencyUsd(result.annualTuitionUsd)}
-                </p>
-                <p>Annual tuition</p>
-              </div>
-            ) : null}
-
-            {result.medium ? (
-              <div className="rounded-xl border border-border bg-muted/60 p-3">
-                <SearchCheck className="mb-2 h-4 w-4 text-accent" />
-                <p className="font-semibold text-foreground">
-                  {result.medium}
-                </p>
-                <p>Medium</p>
-              </div>
-            ) : null}
-          </div>
-        ) : null}
-      </CardContent>
-      <CardFooter>
-        <Link
-          href={result.path}
-          className="inline-flex items-center gap-2 text-sm font-semibold text-foreground"
-        >
-          Open result
-          <ArrowUpRight className="h-4 w-4" />
-        </Link>
-      </CardFooter>
-    </Card>
+      <div className="mt-5 border-t border-border/70 pt-4">
+        <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
+          {getActionLabel(result.documentType)}
+          <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </span>
+      </div>
+    </Link>
   );
 }

@@ -78,18 +78,6 @@ export const navDestinations = [
     description: "Low cost of living, NMC eligible programs",
   },
   {
-    href: "/countries/philippines",
-    countryCode: "ph",
-    name: "Philippines",
-    description: "Full English medium, USMLE & NMC pathway",
-  },
-  {
-    href: "/countries/kazakhstan",
-    countryCode: "kz",
-    name: "Kazakhstan",
-    description: "Quality education, modern campuses",
-  },
-  {
     href: "/countries/uzbekistan",
     countryCode: "uz",
     name: "Uzbekistan",
@@ -124,9 +112,7 @@ export const footerPopularRoutes = [
   { label: "MBBS in Russia", href: "/mbbs-in-russia" },
   { label: "MBBS in Vietnam", href: "/mbbs-in-vietnam" },
   { label: "MBBS in Georgia", href: "/mbbs-in-georgia" },
-  { label: "MBBS in Philippines", href: "/mbbs-in-philippines" },
   { label: "MBBS in Kyrgyzstan", href: "/mbbs-in-kyrgyzstan" },
-  { label: "MBBS in Kazakhstan", href: "/mbbs-in-kazakhstan" },
   { label: "MBBS in Uzbekistan", href: "/mbbs-in-uzbekistan" },
 ] as const;
 

@@ -1,7 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { getCountries, getCourses, getUniversities, getAllLandingPages } from "@/lib/data/catalog";
-import { getUniversityHref, getCountryHref, getCourseHref } from "@/lib/routes";
+import {
+  getAllLandingPages,
+  getCountries,
+  getCourses,
+  getUniversities,
+} from "@/lib/data/catalog";
+import { getCountryHref, getCourseHref, getUniversityHref } from "@/lib/routes";
 
 export type Suggestion = {
   type: "university" | "country" | "course" | "landing_page";
@@ -10,14 +15,94 @@ export type Suggestion = {
   href: string;
 };
 
-function normalize(s: string) {
-  return s.toLowerCase().replace(/[^a-z0-9]/g, " ");
+type RankedSuggestion = Suggestion & {
+  score: number;
+  directLabelTier: number;
+  labelCoverage: number;
+  subtitleCoverage: number;
+};
+
+function normalize(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-function matches(query: string, text: string) {
-  const q = normalize(query);
-  const t = normalize(text);
-  return t.includes(q);
+function getTokenCoverage(tokens: string[], haystack: string) {
+  if (!tokens.length) {
+    return 0;
+  }
+
+  let matched = 0;
+
+  for (const token of tokens) {
+    if (haystack.includes(token)) {
+      matched += 1;
+    }
+  }
+
+  return matched / tokens.length;
+}
+
+function getSuggestionSignals(query: string, label: string, subtitle: string) {
+  const normalizedQuery = normalize(query);
+  const normalizedLabel = normalize(label);
+  const normalizedSubtitle = normalize(subtitle);
+  const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
+
+  let score = 0;
+  let directLabelTier = 0;
+
+  if (normalizedLabel === normalizedQuery) {
+    directLabelTier = 4;
+    score += 80;
+  } else if (normalizedLabel.startsWith(normalizedQuery)) {
+    directLabelTier = 3;
+    score += 55;
+  } else if (normalizedLabel.includes(normalizedQuery)) {
+    directLabelTier = 3;
+    score += 42;
+  } else if (normalizedSubtitle.includes(normalizedQuery)) {
+    directLabelTier = 2;
+    score += 12;
+  }
+
+  const labelCoverage = getTokenCoverage(tokens, normalizedLabel);
+  const subtitleCoverage = getTokenCoverage(tokens, normalizedSubtitle);
+
+  if (labelCoverage === 1) {
+    score += 18;
+  } else if (labelCoverage >= 0.75) {
+    score += 8;
+  }
+
+  if (subtitleCoverage === 1) {
+    score += 4;
+  }
+
+  return {
+    score,
+    directLabelTier,
+    labelCoverage,
+    subtitleCoverage,
+  };
+}
+
+function getTypeRank(type: Suggestion["type"]) {
+  switch (type) {
+    case "university":
+      return 0;
+    case "landing_page":
+      return 1;
+    case "country":
+      return 2;
+    case "course":
+      return 3;
+    default:
+      return 4;
+  }
 }
 
 export async function GET(req: NextRequest) {
@@ -34,53 +119,145 @@ export async function GET(req: NextRequest) {
     getAllLandingPages(),
   ]);
 
-  const countryMap = new Map(countries.map((c) => [c.slug, c.name]));
-  const results: Suggestion[] = [];
+  const countryMap = new Map(countries.map((country) => [country.slug, country.name]));
+  const rankedResults: RankedSuggestion[] = [];
 
-  for (const u of universities) {
-    if (matches(q, u.name) || matches(q, u.city)) {
-      const countryName = countryMap.get(u.countrySlug) ?? "";
-      results.push({
+  for (const university of universities) {
+    const countryName = countryMap.get(university.countrySlug) ?? "";
+    const subtitle = `${university.city}${countryName ? `, ${countryName}` : ""}`;
+    const primarySignals = getSuggestionSignals(q, university.name, subtitle);
+    const secondarySignals = getSuggestionSignals(q, university.city, university.name);
+    const strongestSignals =
+      primarySignals.score >= secondarySignals.score ? primarySignals : secondarySignals;
+    const score = Math.max(
+      primarySignals.score,
+      secondarySignals.score,
+    );
+
+    if (score > 0) {
+      rankedResults.push({
         type: "university",
-        label: u.name,
-        subtitle: `${u.city}${countryName ? `, ${countryName}` : ""}`,
-        href: getUniversityHref(u.slug),
+        label: university.name,
+        subtitle,
+        href: getUniversityHref(university.slug),
+        score: score + 10,
+        directLabelTier: strongestSignals.directLabelTier,
+        labelCoverage: strongestSignals.labelCoverage,
+        subtitleCoverage: strongestSignals.subtitleCoverage,
       });
     }
   }
 
-  for (const c of countries) {
-    if (matches(q, c.name) || matches(q, c.region)) {
-      results.push({
+  for (const country of countries) {
+    const label = `Study in ${country.name}`;
+    const primarySignals = getSuggestionSignals(q, label, country.region);
+    const secondarySignals = getSuggestionSignals(q, country.name, country.region);
+    const strongestSignals =
+      primarySignals.score >= secondarySignals.score ? primarySignals : secondarySignals;
+    const score = Math.max(
+      primarySignals.score,
+      secondarySignals.score,
+    );
+
+    if (score > 0) {
+      rankedResults.push({
         type: "country",
-        label: `Study in ${c.name}`,
-        subtitle: c.region,
-        href: getCountryHref(c.slug),
+        label,
+        subtitle: country.region,
+        href: getCountryHref(country.slug),
+        score,
+        directLabelTier: strongestSignals.directLabelTier,
+        labelCoverage: strongestSignals.labelCoverage,
+        subtitleCoverage: strongestSignals.subtitleCoverage,
       });
     }
   }
 
-  for (const c of courses) {
-    if (matches(q, c.name) || matches(q, c.shortName)) {
-      results.push({
+  for (const course of courses) {
+    const primarySignals = getSuggestionSignals(q, course.shortName, course.name);
+    const secondarySignals = getSuggestionSignals(q, course.name, course.shortName);
+    const strongestSignals =
+      primarySignals.score >= secondarySignals.score ? primarySignals : secondarySignals;
+    const score = Math.max(
+      primarySignals.score,
+      secondarySignals.score,
+    );
+
+    if (score > 0) {
+      rankedResults.push({
         type: "course",
-        label: c.shortName,
-        subtitle: c.name,
-        href: getCourseHref(c.slug),
+        label: course.shortName,
+        subtitle: course.name,
+        href: getCourseHref(course.slug),
+        score,
+        directLabelTier: strongestSignals.directLabelTier,
+        labelCoverage: strongestSignals.labelCoverage,
+        subtitleCoverage: strongestSignals.subtitleCoverage,
       });
     }
   }
 
-  for (const lp of landingPages) {
-    if (matches(q, lp.title) || matches(q, lp.slug)) {
-      results.push({
+  for (const landingPage of landingPages) {
+    const signals = getSuggestionSignals(q, landingPage.title, landingPage.kicker);
+    const score = signals.score - 4;
+
+    if (score > 0) {
+      rankedResults.push({
         type: "landing_page",
-        label: lp.title,
+        label: landingPage.title,
         subtitle: "Curated guide",
-        href: `/${lp.slug}`,
+        href: `/${landingPage.slug}`,
+        score,
+        directLabelTier: signals.directLabelTier,
+        labelCoverage: signals.labelCoverage,
+        subtitleCoverage: signals.subtitleCoverage,
       });
     }
   }
 
-  return NextResponse.json<Suggestion[]>(results.slice(0, 8));
+  const hasStrongUniversityMatch = rankedResults.some(
+    (result) =>
+      result.type === "university" &&
+      (result.directLabelTier >= 3 || result.labelCoverage === 1),
+  );
+
+  const filteredResults = hasStrongUniversityMatch
+    ? rankedResults.filter((result) => {
+        switch (result.type) {
+          case "university":
+            return result.directLabelTier >= 2 || result.labelCoverage >= 0.75;
+          case "landing_page":
+          case "country":
+          case "course":
+            return result.directLabelTier >= 2 || result.labelCoverage === 1;
+          default:
+            return true;
+        }
+      })
+    : rankedResults;
+
+  return NextResponse.json<Suggestion[]>(
+    filteredResults
+      .sort((left, right) => {
+        if (right.score !== left.score) {
+          return right.score - left.score;
+        }
+
+        if (getTypeRank(left.type) !== getTypeRank(right.type)) {
+          return getTypeRank(left.type) - getTypeRank(right.type);
+        }
+
+        return left.label.localeCompare(right.label);
+      })
+      .slice(0, 8)
+      .map(
+        ({
+          score: _score,
+          directLabelTier: _directLabelTier,
+          labelCoverage: _labelCoverage,
+          subtitleCoverage: _subtitleCoverage,
+          ...suggestion
+        }) => suggestion,
+      ),
+  );
 }

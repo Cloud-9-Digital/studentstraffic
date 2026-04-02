@@ -4,20 +4,17 @@ import { and, desc, eq, lt, gt, ne } from "drizzle-orm";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { unstable_cache } from "next/cache";
-import { CalendarDays, Clock, ArrowLeft, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { CalendarDays, Clock, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import readingTime from "reading-time";
 
-import { EditorialTrustCard } from "@/components/site/editorial-trust-card";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 import { MarkdownContent } from "@/components/site/markdown-content";
-import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
 import { categoryToSlug } from "@/app/blog/category/[slug]/page";
 import { buildLinkRules, linkifyMarkdown } from "@/lib/blog-autolinks";
 import { ReadingProgress } from "@/components/blog/reading-progress";
 import {
-  catalogReviewedAt,
   contentAuthorName,
   contentAuthorSlug,
 } from "@/lib/content-governance";
@@ -147,94 +144,6 @@ const fmtDate = new Intl.DateTimeFormat("en-IN", {
   day: "numeric", month: "long", year: "numeric",
 });
 
-const BLOG_NEXT_STEPS: Record<
-  string,
-  Array<{ href: string; label: string; title: string; description: string }>
-> = {
-  "MBBS Abroad": [
-    {
-      href: "/countries",
-      label: "Destinations",
-      title: "Compare countries",
-      description: "Review fees, recognition, and student-life tradeoffs before you shortlist universities.",
-    },
-    {
-      href: "/universities",
-      label: "Finder",
-      title: "Browse universities",
-      description: "Move from article research into actual university comparisons and fee filters.",
-    },
-    {
-      href: "/compare",
-      label: "Comparisons",
-      title: "Read side-by-side comparisons",
-      description: "See how similar universities stack up on cost, city, and student fit.",
-    },
-    {
-      href: "/contact",
-      label: "Guidance",
-      title: "Get shortlist help",
-      description: "Talk to a counsellor when you want help narrowing the list around your budget and goals.",
-    },
-  ],
-  "Country Guide": [
-    {
-      href: "/countries",
-      label: "Destinations",
-      title: "Explore all country guides",
-      description: "Compare major MBBS destinations side by side before committing to one market.",
-    },
-    {
-      href: "/guides",
-      label: "Guides",
-      title: "Open the guide hub",
-      description: "Continue into comparisons, course guides, and budget-led research paths.",
-    },
-    {
-      href: "/budget",
-      label: "Budget",
-      title: "Browse by budget",
-      description: "Filter options by affordability once you know which countries fit your range.",
-    },
-    {
-      href: "/universities",
-      label: "Universities",
-      title: "See matching universities",
-      description: "Jump from country-level research into real university listings and fee tables.",
-    },
-  ],
-  "NMC & Licensing": [
-    {
-      href: "/countries",
-      label: "Countries",
-      title: "See NMC-relevant destinations",
-      description: "Compare countries where families usually begin NMC-compliance research.",
-    },
-    {
-      href: "/universities",
-      label: "Universities",
-      title: "Check individual university pages",
-      description: "Review recognition context, program details, and linked sources on specific universities.",
-    },
-    {
-      href: "/compare",
-      label: "Compare",
-      title: "Compare similar options",
-      description: "Use comparisons to avoid choosing based on rankings alone.",
-    },
-    {
-      href: "/contact",
-      label: "Guidance",
-      title: "Ask for eligibility help",
-      description: "Get help interpreting recognition, eligibility, and return-to-India planning.",
-    },
-  ],
-};
-
-function getBlogNextSteps(category: string | null) {
-  return BLOG_NEXT_STEPS[category ?? ""] ?? BLOG_NEXT_STEPS["MBBS Abroad"];
-}
-
 function extractFaqs(content: string): Array<{ question: string; answer: string }> {
   const faqs: Array<{ question: string; answer: string }> = [];
   // Match **Q: question text?** followed by answer paragraphs
@@ -268,18 +177,6 @@ export default async function BlogPostPage({
   const linkedContent = linkifyMarkdown(post.content, linkRules);
   const shareUrl = absoluteUrl(`/blog/${post.slug}`);
   const waHref = `https://wa.me/?text=${encodeURIComponent(`${post.title} — ${shareUrl}`)}`;
-  const lastReviewed =
-    post.updatedAt
-      ? new Date(post.updatedAt).toISOString().slice(0, 10)
-      : post.publishedAt
-        ? new Date(post.publishedAt).toISOString().slice(0, 10)
-        : catalogReviewedAt;
-  const nextSteps = getBlogNextSteps(post.category);
-  const editorialNotes = [
-    "This article is designed to help Indian students move from general reading into clearer destination and university comparisons.",
-    "We update articles when admissions context, recognition, or planning factors materially change.",
-    "Use this article with the university finder, country guides, and comparison pages before making a shortlist.",
-  ];
 
   return (
     <main className="min-h-screen bg-background">
@@ -365,15 +262,6 @@ export default async function BlogPostPage({
 
       {/* ── Article wrapper ───────────────────────────────────────── */}
       <div className="mx-auto max-w-[720px] px-5 pb-24 md:px-6 pt-10">
-        <div className="mb-10">
-          <EditorialTrustCard
-            title="How this article fits your research"
-            description="Use this page as part of a larger research path: article, destination, university, comparison, then shortlist. We keep that journey clear so students can make calmer decisions."
-            lastReviewed={lastReviewed}
-            notes={editorialNotes}
-          />
-        </div>
-
         {/* ── Article body ──────────────────────────────────────────── */}
         <article className="mb-14">
           <MarkdownContent content={linkedContent} />
@@ -471,14 +359,6 @@ export default async function BlogPostPage({
             ) : <div />}
           </nav>
         )}
-
-        <div className="mb-14">
-          <ResearchNextSteps
-            title="Where to continue your research next"
-            description="The strongest organic pages on this site work best together: start with a question, compare destinations, inspect universities, then narrow into shortlist-ready options."
-            items={nextSteps}
-          />
-        </div>
 
         {/* ── Related posts ─────────────────────────────────────────── */}
         {related.length > 0 && (
