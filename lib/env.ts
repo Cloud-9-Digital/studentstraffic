@@ -7,6 +7,7 @@ const envSchema = z.object({
   NEXT_PUBLIC_SITE_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_SECRET: z.string().min(1).optional(),
+  REVALIDATE_SECRET: z.string().min(1).optional(),
   PABBLY_LEAD_WEBHOOK_URL: z.string().url().optional(),
   NEXTAUTH_SECRET: z.string().min(1).optional(),
   BREVO_API_KEY: z.string().min(1).optional(),
@@ -20,6 +21,7 @@ const parsedEnv = envSchema.safeParse({
   NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
   CRM_LEAD_INTAKE_URL: process.env.CRM_LEAD_INTAKE_URL,
   CRM_LEAD_INTAKE_SECRET: process.env.CRM_LEAD_INTAKE_SECRET,
+  REVALIDATE_SECRET: process.env.REVALIDATE_SECRET,
   PABBLY_LEAD_WEBHOOK_URL: process.env.PABBLY_LEAD_WEBHOOK_URL,
   NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
   BREVO_API_KEY: process.env.BREVO_API_KEY,
@@ -52,6 +54,7 @@ export const env = {
   siteUrl: parsedEnv.data.NEXT_PUBLIC_SITE_URL ?? defaultSiteUrl,
   crmLeadIntakeUrl: parsedEnv.data.CRM_LEAD_INTAKE_URL,
   crmLeadIntakeSecret: parsedEnv.data.CRM_LEAD_INTAKE_SECRET,
+  revalidateSecret: parsedEnv.data.REVALIDATE_SECRET,
   pabblyLeadWebhookUrl: parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL,
   nextAuthSecret: parsedEnv.data.NEXTAUTH_SECRET,
   brevoApiKey: parsedEnv.data.BREVO_API_KEY,
@@ -62,6 +65,7 @@ export const env = {
   hasCrmLeadSyncConfig: Boolean(
     parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET
   ),
+  hasRevalidateSecret: Boolean(parsedEnv.data.REVALIDATE_SECRET),
   hasPabblyLeadWebhook: Boolean(parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL),
   hasAdminAuthConfig: Boolean(parsedEnv.data.NEXTAUTH_SECRET),
   hasBrevo: Boolean(parsedEnv.data.BREVO_API_KEY),
