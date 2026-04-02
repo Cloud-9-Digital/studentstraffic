@@ -19,7 +19,6 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
-import { EditorialTrustCard } from "@/components/site/editorial-trust-card";
 import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { UniversityCard } from "@/components/site/university-card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -272,18 +271,6 @@ export default async function LandingPageRoute({
           </div>
         </div>
       </section>
-
-      <section className="deferred-render border-b border-border py-14">
-        <div className="container-shell">
-          <EditorialTrustCard
-            title={`Why this ${page.title.toLowerCase()} guide is structured this way`}
-            description="This guide is built to move students from broad destination interest into clearer comparisons, realistic cost expectations, and shortlist-ready next steps."
-            lastReviewed={catalogReviewedAt}
-            notes={page.editorialNotes}
-          />
-        </div>
-      </section>
-
 
       {/* ── Universities ─────────────────────────────────────────────────── */}
       <section className="deferred-render border-b border-border py-14 md:py-20">

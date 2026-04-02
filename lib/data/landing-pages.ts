@@ -20,11 +20,6 @@ export const landingPages: LandingPage[] = [
       "Long-standing Indian student familiarity and medical brand recognition",
       "Useful when families want structured, legacy-heavy options",
     ],
-    editorialNotes: [
-      "Best for families who value institutional history over trendiness.",
-      "Strong destination when you want multiple public MBBS options in one market.",
-      "Important to compare city, language support, and winter lifestyle before final selection.",
-    ],
     featuredUniversitySlugs: [
       "altai-state-medical-university",
       "astrakhan-state-medical-university",
@@ -235,11 +230,6 @@ export const landingPages: LandingPage[] = [
       "A rapidly growing Indian student community across Can Tho, Da Nang, Hanoi, and Ho Chi Minh City means established Indian food, cultural support, and peer networks from day one.",
       "Diverse city choices — from the coastal lifestyle of Da Nang to the Mekong Delta calm of Can Tho — let students match their personality and lifestyle preferences.",
     ],
-    editorialNotes: [
-      "Before paying any fees, check whether the university follows NMC guidelines on the official NMC website — not all universities marketed to Indian students meet the requirements.",
-      "Can Tho University of Medicine and Pharmacy is the most established public university, also listed with WHO and FAIMER.",
-      "Duy Tan and Phan Chau Trinh are among the stronger private options — verify their compliance with NMC guidelines independently before enrolling.",
-    ],
     featuredUniversitySlugs: [
       "dong-a-university-college-of-medicine",
       "can-tho-university-medicine-pharmacy",
@@ -427,11 +417,6 @@ export const landingPages: LandingPage[] = [
       "Established public universities in Hanoi, Hue, Thai Nguyen, and Ho Chi Minh City continue to run master's, specialist, and residency-style clinical training with real hospital depth.",
       "Vietnam's major referral-hospital ecosystems make this route attractive for doctors prioritizing specialist exposure over generic study-abroad branding.",
     ],
-    editorialNotes: [
-      "This track is for qualified doctors after their primary medical degree, not for first-degree MBBS applicants.",
-      "Language matters much more here: apart from VNU-UMP's English master's launch, many clinical postgraduate routes remain Vietnamese-medium.",
-      "Specialty list, fee notice, and training language can change by cycle, so doctors should verify the current official notice before committing.",
-    ],
     featuredUniversitySlugs: [
       "vnu-university-of-medicine-and-pharmacy-hanoi",
       "hanoi-medical-university",
@@ -483,11 +468,6 @@ export const landingPages: LandingPage[] = [
       "Strong option for students who want English-medium delivery from day one",
       "Useful for families who value city safety and daily convenience",
       "Often chosen by students prioritizing urban living over ultra-low fees",
-    ],
-    editorialNotes: [
-      "Georgia is best evaluated through city fit, medium, and academic support quality.",
-      "Do not compare only by tuition; lifestyle and long-term academic fit matter more here.",
-      "A smaller, better Georgian admissions plan usually converts better than a wide one.",
     ],
     featuredUniversitySlugs: [
       "alte-university",
@@ -578,11 +558,6 @@ export const landingPages: LandingPage[] = [
       "Helps students compare lower-fee options without losing hostel visibility",
       "Best for families where total cost is the main decision driver",
     ],
-    editorialNotes: [
-      "Kyrgyzstan university choices should be quality-checked carefully, not decided only by low fees.",
-      "Support, recognition, and student environment still matter even in budget-led planning.",
-      "This destination performs best when paired with structured eligibility and hostel filters.",
-    ],
     featuredUniversitySlugs: [
       "adam-university",
       "asian-medical-institute",
@@ -671,11 +646,6 @@ export const landingPages: LandingPage[] = [
       "Offers lower total costs compared to many established European destinations",
       "Focuses on English-medium instruction from the first year",
       "Provides straightforward admission pathways without complex entry exams",
-    ],
-    editorialNotes: [
-      "Ensure you evaluate the availability of Indian hostels and food while choosing.",
-      "Check university-level recognition on the NMC portal before making a final commitment.",
-      "A great option for students optimizing for budget without compromising on English medium.",
     ],
     featuredUniversitySlugs: [
       "andijan-state-medical-institute",

@@ -74,7 +74,6 @@ export default function ContactPage() {
               submitLabel="Request guidance"
               qualificationMode="detailed"
               contextBadge="Personalised Guidance"
-              responsePromise="Usually within a few hours"
             />
 
             {/* Right — contact methods + trust */}

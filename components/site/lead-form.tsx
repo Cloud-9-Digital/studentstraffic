@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useId, useRef, useState } from "react";
-import { ChevronDown, Clock3, ShieldCheck, Sparkles } from "lucide-react";
+import { ChevronDown, Sparkles } from "lucide-react";
 
 import {
   type LeadFormState,
@@ -126,7 +126,6 @@ export type LeadFormProps = {
   stacked?: boolean;
   qualificationMode?: "compact" | "detailed";
   contextBadge?: string;
-  responsePromise?: string;
 };
 
 export function LeadForm({
@@ -142,7 +141,6 @@ export function LeadForm({
   stacked = false,
   qualificationMode = "compact",
   contextBadge,
-  responsePromise = "Usually within a few hours",
 }: LeadFormProps) {
   const [state, formAction, isPending] = useActionState(
     submitLeadAction,
@@ -383,22 +381,14 @@ export function LeadForm({
         {isPending ? "Submitting..." : submitLabel}
       </Button>
 
-      <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/30 px-3 py-1.5">
-          <Clock3 className="size-3.5" />
-          {responsePromise}
-        </span>
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/30 px-3 py-1.5">
-          <ShieldCheck className="size-3.5" />
-          No spam, no obligation
-        </span>
-        {detailedMode ? (
+      {detailedMode ? (
+        <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/30 px-3 py-1.5">
             <Sparkles className="size-3.5" />
             Tailored shortlist support
           </span>
-        ) : null}
-      </div>
+        </div>
+      ) : null}
     </form>
   );
 

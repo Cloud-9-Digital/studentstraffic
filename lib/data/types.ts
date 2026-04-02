@@ -289,7 +289,6 @@ export type LandingPage = {
   summary: string;
   heroHighlights: string[];
   reasonsToChoose: string[];
-  editorialNotes: string[];
   featuredUniversitySlugs: string[];
   faq: Faq[];
   metaTitle: string;

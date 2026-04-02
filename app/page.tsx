@@ -347,7 +347,6 @@ export default async function HomePage() {
                 description="Tell us about your budget, NEET status, and preferred destinations. We&apos;ll follow up with guidance that matches where you are."
                 qualificationMode="detailed"
                 contextBadge="Research Planner"
-                responsePromise="Usually within the same day"
               />
             </div>
           </div>

@@ -221,7 +221,6 @@ export function buildSearchDocuments({
         page.summary,
         page.heroHighlights,
         page.reasonsToChoose,
-        page.editorialNotes,
         page.faq.map((item) => `${item.question} ${item.answer}`),
       ]),
       highlights: page.heroHighlights.slice(0, 3),

@@ -25,13 +25,6 @@ export const methodologySteps = [
   "Review destination and admissions pages through our editorial team before publishing.",
 ];
 
-export const trustPageLinks = [
-  { label: "About", href: "/about" },
-  { label: "Editorial policy", href: "/editorial-policy" },
-  { label: "Methodology", href: "/methodology" },
-  { label: "Contact", href: "/contact" },
-] as const;
-
 export function formatContentDate(date: string) {
   return new Intl.DateTimeFormat("en-IN", {
     day: "numeric",
