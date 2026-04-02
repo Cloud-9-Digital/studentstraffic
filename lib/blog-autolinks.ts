@@ -34,6 +34,9 @@ const STATIC_RULES: LinkRule[] = [
   { text: "MBBS in Kyrgyzstan", href: "/blog/mbbs-in-kyrgyzstan-2026-complete-guide", priority: 10 },
   { text: "MBBS in Uzbekistan", href: "/blog/mbbs-in-uzbekistan-2026-complete-guide", priority: 10 },
   { text: "MBBS in Vietnam",    href: "/blog/mbbs-in-vietnam-2026-complete-guide",   priority: 10 },
+  { text: "best medical universities in Vietnam", href: "/blog/best-vietnam-medical-universities-for-indian-students-ranking", priority: 10 },
+  { text: "MBBS in Vietnam fees", href: "/blog/mbbs-in-vietnam-fees-2026-total-cost-guide", priority: 10 },
+  { text: "MBBS in Vietnam valid in India", href: "/blog/is-mbbs-in-vietnam-valid-in-india-nmc-next-neet", priority: 10 },
 ];
 
 // ─── Rule builder ─────────────────────────────────────────────────────────────
