@@ -6,7 +6,7 @@ import {
   formatProgramDuration,
 } from "@/lib/utils";
 
-import { Badge, ProgramMeta, SectionLabel } from "./shared";
+import { SectionLabel } from "./shared";
 
 export function UniversityProgramsSection({
   programs,
@@ -46,17 +46,7 @@ function ProgramOfferingsTable({
             className="group grid grid-cols-[2fr_1fr_1fr_1fr_1fr] items-center gap-4 border-b border-border/50 bg-card px-6 py-4 last:border-b-0 hover:bg-muted/20 transition-colors"
           >
             <div className="min-w-0">
-              <div className="flex items-center gap-2">
-                <span className="inline-flex items-center rounded border border-border px-1.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wide text-muted-foreground">
-                  {program.course.shortName}
-                </span>
-                {program.offering.featured && (
-                  <span className="inline-flex items-center rounded border border-emerald-300/70 bg-emerald-50 px-1.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wide text-emerald-700">
-                    Featured
-                  </span>
-                )}
-              </div>
-              <p className="mt-1.5 text-sm font-medium text-foreground leading-5">
+              <p className="text-sm font-medium text-foreground leading-5">
                 {program.offering.title}
               </p>
             </div>
@@ -83,19 +73,6 @@ function ProgramOfferingsTable({
             key={program.offering.slug}
             className="rounded-2xl border border-border bg-card overflow-hidden"
           >
-            <div className="flex items-center gap-2 border-b border-border/60 bg-muted/30 px-4 py-3">
-              <span className="inline-flex items-center rounded border border-border px-1.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wide text-muted-foreground">
-                {program.course.shortName}
-              </span>
-              <span className="text-[0.62rem] font-semibold uppercase tracking-wide text-muted-foreground">
-                {program.offering.medium}
-              </span>
-              {program.offering.featured && (
-                <span className="ml-auto inline-flex items-center rounded border border-emerald-300/70 bg-emerald-50 px-1.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wide text-emerald-700">
-                  Featured
-                </span>
-              )}
-            </div>
             <div className="p-4">
               <p className="text-sm font-semibold text-foreground leading-5">
                 {program.offering.title}

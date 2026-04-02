@@ -72,14 +72,9 @@ export function UniversityAcademicsSection({
                   {index + 1}
                 </div>
                 <div className="min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-sm font-semibold text-foreground">
-                      {phase.phase}
-                    </span>
-                    <span className="inline-flex items-center rounded border border-border px-1.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wide text-muted-foreground">
-                      {phase.language}
-                    </span>
-                  </div>
+                  <p className="text-sm font-semibold text-foreground">
+                    {phase.phase}
+                  </p>
                   <p className="mt-1 text-sm leading-6 text-muted-foreground">
                     {phase.details}
                   </p>
