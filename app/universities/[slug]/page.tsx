@@ -33,6 +33,10 @@ import {
   getCountryContent,
 } from "@/lib/data/country-content";
 import {
+  getCountryRegulatoryAdvisory,
+  getUniversityRegulatoryAdvisory,
+} from "@/lib/data/regulatory-advisories";
+import {
   getCountryBySlug,
   getProgramsForCountry,
   getProgramsForUniversity,
@@ -152,6 +156,11 @@ export default async function UniversityDetailPage({
     university.city,
   );
   const countryContent = getCountryContent(country.slug);
+  const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
+  const universityAdvisory = getUniversityRegulatoryAdvisory(
+    country.slug,
+    university.slug
+  );
   const cityMedia = getCityMedia(university.countrySlug, university.city);
   const countryMedia = getCountryMedia(country.slug);
   const primaryProgramHasPublishedFee = primaryProgram
@@ -257,6 +266,8 @@ export default async function UniversityDetailPage({
               university={university}
               primaryProgram={primaryProgram}
               countryContent={countryContent}
+              countryAdvisory={countryAdvisory}
+              universityAdvisory={universityAdvisory}
               wdomsEntry={wdomsEntry}
             />
 

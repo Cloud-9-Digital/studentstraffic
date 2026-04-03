@@ -19,6 +19,7 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
+import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
 import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { UniversityCard } from "@/components/site/university-card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -44,6 +45,7 @@ import {
   getLandingPageSlugs,
 } from "@/lib/data/catalog";
 import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
+import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import {
   getBudgetIndexHref,
   getCompareIndexHref,
@@ -99,6 +101,7 @@ export default async function LandingPageRoute({
 
   const country = context.country;
   const course = context.course;
+  const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
   const path = `/${page.slug}`;
   const previewPrograms = context.featuredPrograms;
   const feeStructures = getFeeStructuresForSlugs(page.featuredUniversitySlugs);
@@ -271,6 +274,14 @@ export default async function LandingPageRoute({
           </div>
         </div>
       </section>
+
+      {countryAdvisory ? (
+        <section className="border-b border-border bg-[#fff8f2] py-10 md:py-12">
+          <div className="container-shell">
+            <RegulatoryAdvisoryPanel advisory={countryAdvisory} />
+          </div>
+        </section>
+      ) : null}
 
       {/* ── Universities ─────────────────────────────────────────────────── */}
       <section className="deferred-render border-b border-border py-14 md:py-20">

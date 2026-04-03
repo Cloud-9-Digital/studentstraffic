@@ -17,24 +17,24 @@ const env = Object.fromEntries(
 );
 neonConfig.webSocketConstructor = WebSocket;
 
-// Highly authoritative, E-E-A-T and SEO-optimized content for Uzbekistan
+// Keep the country copy aligned with the latest NMC/MEA advisories.
 const uzbekistanContent = {
-  summary: `Uzbekistan has rapidly emerged as one of the most secure and budget-friendly destinations for Indian students pursuing an MBBS abroad in 2026. Following extensive modernizing reforms in its medical education sector, Uzbekistan offers a curriculum that is entirely aligned with the NMC (National Medical Commission) guidelines, including a 6-year English-medium program. With a growing ecosystem of both state-run historical institutes like Samarkand State Medical University and modernized campuses in Tashkent, the country sits in a "sweet spot" of affordability—typically ranging from ₹22 Lakhs to ₹26 Lakhs in total costs for the entire degree. The presence of direct, short flights from Delhi and a highly welcoming, low-crime environment makes it particularly appealing for Indian families.`,
+  summary: `Uzbekistan can still look affordable to Indian MBBS applicants, but it is no longer a destination that should be described as low-risk by default. In its alert dated 1 April 2026, the National Medical Commission warned students to exercise extreme caution before taking admission in Uzbekistan and reiterated that any failure on course duration, English-medium delivery, clinical training, or internship structure can make the India-return pathway fail under the Foreign Medical Graduate Licentiate Regulations, 2021.`,
   
-  whyStudentsChooseIt: `### 1. The Strongest Budget-to-Quality Ratio
-With total 6-year costs frequently falling under ₹25 Lakhs (including tuition and hostel), Uzbekistan provides a modern alternative to Kyrgyzstan, maintaining strict academic standards without the premium price tag of top-tier Russian universities.
+  whyStudentsChooseIt: `### 1. The India-return pathway must be checked first
+Before fees, flights, or city comparisons, families should verify whether the exact university and branch can satisfy FMGL 2021 on study duration, English-medium teaching, clinical training, and internship in the same institution.
 
-### 2. 100% NMC Compliance & English Medium
-The 6-year MD (MBBS equivalent) curriculum strictly adheres to the NMC's Foreign Medical Graduate Licentiate Regulations. All primary universities offer clinical exposure and instruction entirely in English, paired with local language classes for hospital interactions.
+### 2. Low fees are not enough
+Uzbekistan may still appear in lower-budget shortlists, but NMC's warning means cost should come after compliance, not before it. Cheap admission is not a useful outcome if the degree later fails the India-return test.
 
-### 3. Exceptional Safety for International Students
-Uzbekistan ranks exceptionally high for safety, boasting very low violent crime rates. The society is culturally conservative but highly welcoming to Indians, with a heavy police presence ensuring strict public order. It is consistently rated by Indian female students as one of the most secure destinations in Central Asia.
+### 3. University-by-university verification is mandatory
+The country cannot be treated as uniformly compliant. Students should use direct university documents, NMC alerts, and the Indian Embassy in Tashkent together rather than relying on agents or brochure claims.
 
-### 4. Seamless Connectivity
-Direct flights run multiple times a week between New Delhi and Tashkent, dramatically reducing travel fatigue (approx. 3-hour flight times) compared to navigating internal regional flights in larger countries like Russia.`,
+### 4. Branch, offshore, and agent-led models need extra caution
+NMC's April 2026 alert specifically references complaints involving TSMU's Termez Branch offshore model and wider Embassy concerns on standards, language, and agent malpractice. Any similar setup should be verified in writing before payment.`,
 
-  metaTitle: `MBBS in Uzbekistan 2026: Cost, Universities & Admission Guide`,
-  metaDescription: `Discover the reality of studying MBBS in Uzbekistan in 2026. Compare Samarkand, Tashkent & Bukhara universities, check honest fee structures under 25 Lakhs, and verify NMC compliance.`
+  metaTitle: `MBBS in Uzbekistan 2026: NMC Alert, Universities & FMGL Checks`,
+  metaDescription: `Review MBBS in Uzbekistan with the 1 April 2026 NMC alert in mind. Compare universities only after checking FMGL 2021 compliance, English-medium training, and internship structure.`
 };
 
 async function run() {

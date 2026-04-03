@@ -633,19 +633,19 @@ export const landingPages: LandingPage[] = [
     courseSlug: "mbbs",
     countrySlug: "uzbekistan",
     title: "MBBS in Uzbekistan",
-    kicker: "Emerging, affordable English-medium programs",
+    kicker: "High-caution destination after NMC alert",
     summary:
-      "A fast-growing destination offering NMC-compliant medical universities, English-medium coursework, and a highly affordable fee structure in safe, modern cities.",
+      "Uzbekistan may look affordable, but NMC's 1 April 2026 alert says Indian students should exercise extreme caution and verify FMGL 2021 compliance university by university before paying any fee.",
     heroHighlights: [
-      "Highly affordable fee bands",
-      "English-medium medical programs",
-      "NMC-compliant options",
-      "Safe and modern campus lifestyle",
+      "NMC alert dated 1 Apr 2026",
+      "FMGL 2021 compliance must be verified",
+      "Agent-led admissions carry added risk",
+      "Institution quality varies sharply",
     ],
     reasonsToChoose: [
-      "Offers lower total costs compared to many established European destinations",
-      "Focuses on English-medium instruction from the first year",
-      "Provides straightforward admission pathways without complex entry exams",
+      "Published fee bands can still be lower than many older MBBS destinations.",
+      "Some universities market English-medium pathways and shorter travel from India.",
+      "Families still considering Uzbekistan should treat affordability as secondary to compliance and clinical-training verification.",
     ],
     featuredUniversitySlugs: [
       "andijan-state-medical-institute",
@@ -656,12 +656,12 @@ export const landingPages: LandingPage[] = [
       {
         question: "Is MBBS in Uzbekistan valid in India?",
         answer:
-          "Yes — graduates from NMC-compliant Uzbekistani universities can sit FMGE/NExT to practise medicine in India. Uzbekistan is a newer destination, so university-level NMC compliance varies. Andijan State Medical Institute and Bukhara State Medical Institute are among the more established options. Always verify the specific university on the NMC portal before committing.",
+          "Not automatically. NMC's alert dated 1 April 2026 tells Indian students to exercise extreme caution before taking MBBS-equivalent admission in Uzbekistan. The India-return pathway depends on FMGL 2021 compliance at the exact university and branch level, including course duration, English-medium instruction, clinical training, and internship at the same institution.",
       },
       {
         question: "What is the fee range for MBBS in Uzbekistan?",
         answer:
-          "Annual tuition at NMC-compliant Uzbekistani universities typically ranges from $3,000 to $4,500. Hostel costs are $50–100/month and living expenses $100–200/month. The total 6-year all-in cost typically falls between ₹22–38 lakh — making it one of the most affordable English-medium MBBS options available.",
+          "Published tuition figures often fall in the $3,000 to $4,500 annual range, which is why Uzbekistan keeps appearing in low-budget shortlists. But NMC's warning means students should not choose this destination on fee alone. The first filter now is regulatory compliance, not price.",
       },
       {
         question: "Is NEET required for MBBS in Uzbekistan?",
@@ -671,57 +671,58 @@ export const landingPages: LandingPage[] = [
       {
         question: "What language is MBBS taught in at Uzbekistan universities?",
         answer:
-          "Most international MBBS programs in Uzbekistan are taught in English from year one. Uzbek or Russian language classes are part of the curriculum to help students communicate with patients during clinical postings. Students generally reach workable patient communication ability by year three.",
+          "Brochure-level English-medium claims are not enough. In its 1 April 2026 alert, NMC says students must verify the actual medium of instruction and bedside clinical training carefully. If patient-facing training depends heavily on non-English communication without adequate support, the India-return pathway can become risky.",
       },
       {
         question: "Is Uzbekistan safe for Indian students?",
         answer:
-          "Yes — Uzbekistan is consistently rated among the safest countries in Central Asia. Cities like Tashkent, Samarkand, and Andijan are stable with low crime. The country has a large Indian diaspora and growing Indian student community. Female Indian students report feeling safe on and off campus. University hostels provide structured, secure accommodation especially in the first year.",
+          "Personal safety and academic-regulatory safety are two different questions. MEA's Uzbekistan advisory asks students to verify institute reputation and degree validity in India before admission, and NMC's April 2026 alert raises separate concerns about standards, language, training quality, and agents. Families should evaluate both dimensions together.",
       },
       {
         question: "How does Uzbekistan compare to Kazakhstan or Kyrgyzstan for MBBS?",
         answer:
-          "Uzbekistan sits between Kyrgyzstan (cheaper, more established) and Kazakhstan (pricier, more modern) in terms of fees and infrastructure. It offers lower fees than Kazakhstan with more modern cities than Kyrgyzstan. The main consideration is that Uzbekistan's track record for India-return FMGE outcomes is shorter — making university selection and early NExT preparation more important than in older destinations.",
+          "The old comparison used to focus on cost and city comfort. After the April 2026 NMC alert, the more important comparison is regulatory risk. If your shortlist includes Kazakhstan, Kyrgyzstan, or Russia too, compare each university on FMGL compliance, English-medium clinical training, and internship structure before comparing tuition.",
       },
       {
         question: "What intake months are available in Uzbekistan?",
         answer:
-          "Most Uzbekistan universities offer both September and February intakes for international MBBS students — one of the few destinations with a mid-year option. September is the primary intake; February suits students who missed the main cycle or need more time to arrange documents and NEET scores.",
+          "September is the most common intake marketed for Indian students, and some universities also advertise February admission. Because the compliance question is now central, students should verify intake, branch, and curriculum directly with the university before treating any mid-year option as safe to join.",
       },
     ],
-    metaTitle: "MBBS in Uzbekistan 2026 | Fees, Universities & Admission",
+    metaTitle: "MBBS in Uzbekistan 2026 | NMC Alert, Fees & FMGL Checks",
     metaDescription:
-      "Compare MBBS in Uzbekistan's affordable fee structures, NMC-compliant English-medium medical programs, and step-by-step admissions context.",
+      "Review MBBS in Uzbekistan with the 1 April 2026 NMC alert in mind. Compare fees only after checking FMGL 2021 compliance, English-medium training, and internship structure.",
     atAGlance: [
       { label: "Program", value: "MBBS (6-year MD-equivalent)" },
-      { label: "Annual tuition", value: "$3,000 – $4,500" },
+      { label: "Annual tuition", value: "$3,000 – $4,500 published by some universities" },
       { label: "Living costs", value: "$1,500 – $2,500/year" },
       { label: "Total 6-year cost", value: "$27,000 – $40,000 approx." },
-      { label: "Intake", value: "September / February" },
-      { label: "Medium", value: "English" },
+      { label: "Intake", value: "September usually; verify February directly" },
+      { label: "Medium", value: "Must be verified in classroom and clinical years" },
       { label: "NEET required", value: "Yes (mandatory for Indian practice)" },
-      { label: "Recognition", value: "NMC, WHO, FAIMER (university-specific)" },
+      { label: "Recognition", value: "Must be verified institution by institution under FMGL 2021" },
     ],
     eligibility: {
       intro:
-        "Indian students applying for MBBS in Uzbekistan must fulfill the basic criteria set by the National Medical Commission (NMC).",
+        "For Uzbekistan, Indian students should treat admission eligibility and India-return eligibility as two separate checks. Both need to work before you commit.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology",
         "Minimum 50% aggregate in PCB",
         "Cleared NEET-UG",
         "Age 17 or above during the admission year",
         "Valid Indian passport",
+        "Written proof that the chosen university, branch, and course structure satisfy FMGL 2021",
       ],
     },
     admissionSteps: [
-      "Qualify NEET-UG and obtain your official scorecard",
-      "Shortlist NMC-compliant universities in Uzbekistan focusing on your fee bandwidth",
-      "Apply online with scanned copies of necessary academic documents",
-      "Receive the official admission or invitation letter",
-      "Apply for the student visa at the Embassy of Uzbekistan",
-      "Draft pre-departure requirements including medical check-ups",
-      "Fly to Uzbekistan and wrap up university registration",
-      "Commence your English-medium MBBS classes",
+      "Qualify NEET-UG and save the scorecard before the course begins",
+      "Read the current NMC alert and FMGL 2021 requirements before shortlisting any Uzbekistan institution",
+      "Ask the university for written confirmation on course duration, English-medium delivery, clinical training, and internship structure",
+      "Cross-check the exact institution or branch with NMC and the Indian Embassy if there is any doubt",
+      "Apply only through the official university route with scanned academic and passport documents",
+      "Receive the offer or invitation letter and verify the institution name again before transferring money",
+      "Proceed with visa and medical formalities only after the India-return pathway is documented clearly enough for your family",
+      "Travel and register after all core compliance questions are settled, not before",
     ],
     documentsRequired: {
       educational: [
@@ -788,14 +789,14 @@ export const landingPages: LandingPage[] = [
       { criterion: "Return pathway", india: "Direct NMC licence", abroad: "Must clear FMGE/NExT to practise in India" },
     ],
     hostelInfo:
-      "Most medical universities in Uzbekistan provide well-maintained on-campus or affiliated off-campus hostels. The hostels offer essential amenities, and many campuses host dedicated Indian canteens or messes to cater to the growing demographic of Indian students. Monthly accommodation costs typically range from $50–$100 depending on the city and room configuration.",
+      "Hostel availability varies sharply by university and city. Ask for room-sharing, kitchen access, deposit, and move-in details in writing. For Uzbekistan specifically, do not let hostel comfort override the larger FMGL-compliance questions.",
     scholarshipInfo:
-      "Government-funded scholarships for international medical students are relatively rare in Uzbekistan, as the baseline tuition fees are already heavily subsidized. However, certain universities may offer merit-bound tuition reductions or performance-based grants after the first academic year. Verify current policies with the university's international affairs office.",
+      "Any scholarship or fee discount should be treated as secondary to compliance. If a university offers a concession, ask for the written net payable amount and verify that the exact institution and branch still remain acceptable for your India-return plan.",
     careerOpportunities: [
-      "Return to India to practise medicine after clearing the FMGE/NExT examination",
-      "Pursue postgraduate studies (MD/MS/DNB) in India with a valid screening test score",
-      "Evaluate clinical specialisation or residency programs globally depending on licensing requirements",
-      "Aim for positions combining clinical work and academic research globally",
+      "Return to India only if the full FMGL 2021 pathway remains compliant and you later clear FMGE or NExT as applicable",
+      "Pursue postgraduate studies in India only after the base foreign degree remains valid for Indian registration",
+      "Evaluate global residency or licensing plans only after the university, branch, and internship pathway are verified properly",
+      "Keep written records of curriculum and internship structure throughout the course in case future verification is needed",
     ],
     intakeTimeline: [
       { milestone: "Application Opens", timeline: "June", details: "Submit academic documents." },
@@ -811,12 +812,16 @@ export const landingPages: LandingPage[] = [
     ],
     challenges: [
       {
-        title: "Emerging Destination Status",
-        realityCheck: "Uzbekistan is relatively new for Indian students compared to Russia. This means smaller senior Indian batches in some cities.",
+        title: "NMC alert and Embassy concerns",
+        realityCheck: "NMC's 1 April 2026 alert says students should exercise extreme caution in Uzbekistan because Embassy-reported issues include weak hands-on training, non-English teaching realities, intake beyond capacity, and agent malpractice.",
       },
       {
-        title: "Bilingual Clinicals",
-        realityCheck: "Like all CIS countries, clinical interactions with patients require learning the local language (Uzbek/Russian).",
+        title: "English-medium claims need proof",
+        realityCheck: "If the real classroom or bedside language shifts away from English during clinical years, the FMGL pathway can become risky. Ask for written clarification before admission.",
+      },
+      {
+        title: "Branch and offshore models need extra caution",
+        realityCheck: "NMC says complaints were received around the TSMU Termez Branch offshore model linked to TIT Institute of Medical Sciences, Bangalore. Treat any branch, transfer, or split-campus setup as a red-flag item until verified directly.",
       },
     ],
   },

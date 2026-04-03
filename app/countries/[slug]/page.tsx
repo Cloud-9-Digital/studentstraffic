@@ -20,6 +20,7 @@ import {
 import { JsonLd } from "@/components/shared/json-ld";
 import { DeferredCurrencyConverter } from "@/components/site/deferred-currency-converter";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
+import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
 import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
 import { catalogReviewedAt } from "@/lib/content-governance";
@@ -47,6 +48,7 @@ import { isValidRecognitionBadge } from "@/lib/data/recognition-bodies";
 import { getInrExchangeRate } from "@/lib/exchange-rate";
 import { getLandingPageHref } from "@/lib/routes";
 import { getCountryContent } from "@/lib/data/country-content";
+import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import {
   cn,
   formatCurrencyUsd,
@@ -226,6 +228,7 @@ export default async function CountryPage({
     courseCount: uniqueCourses.length,
   });
   const countryContent = getCountryContent(country.slug);
+  const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
   const db = getDb();
   const landingPagePromise = curatedLandingPageHref
     ? getLandingPageBySlug(curatedLandingPageHref.slice(1))
@@ -340,6 +343,14 @@ export default async function CountryPage({
         </div>
       </section>
 
+      {countryAdvisory ? (
+        <section className="border-b border-border/60 bg-[#fff8f2] py-8 md:py-10">
+          <div className="container-shell">
+            <RegulatoryAdvisoryPanel advisory={countryAdvisory} />
+          </div>
+        </section>
+      ) : null}
+
       {/* ── BODY ────────────────────────────────────────────────── */}
       <div className="container-shell space-y-0 divide-y divide-border/60 pb-24">
 
@@ -352,7 +363,9 @@ export default async function CountryPage({
           </h2>
           <div className="mt-6 max-w-3xl space-y-4 text-base leading-8 text-muted-foreground md:text-[1.04rem] [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-1 [&_strong]:font-semibold [&_strong]:text-foreground">
             <p>{editorialCopy.overviewLead}</p>
-            {country.whyStudentsChooseIt && editorialCopy.overviewLead !== country.whyStudentsChooseIt && (
+            {!countryAdvisory &&
+            country.whyStudentsChooseIt &&
+            editorialCopy.overviewLead !== country.whyStudentsChooseIt && (
               <ReactMarkdown>{country.whyStudentsChooseIt}</ReactMarkdown>
             )}
           </div>
@@ -1035,9 +1048,9 @@ function getCountryEditorialCopy({
     },
     uzbekistan: {
       heroLead:
-        "Uzbekistan provides an affordable, rapidly growing English-medium medical track with NMC-compliant universities and straightforward admissions.",
+        "Uzbekistan may still look affordable on paper, but Indian students now need much tighter due diligence after the 1 April 2026 NMC alert and Embassy-reported concerns on standards, training, and agent-led admissions.",
       overviewLead:
-        "This destination balances modern campuses, highly affordable tuition, and safe environments without overwhelming complexity.",
+        "The real question is no longer just fees. It is whether the exact university, branch, teaching medium, clinical training, and internship pathway stay aligned with FMGL 2021 and the India-return licensing route.",
     },
   };
 

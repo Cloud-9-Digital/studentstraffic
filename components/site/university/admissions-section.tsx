@@ -9,11 +9,17 @@ import {
 } from "lucide-react";
 
 import type { CountryContent } from "@/lib/data/country-content";
+import type {
+  CountryRegulatoryAdvisory,
+  UniversityRegulatoryAdvisory,
+} from "@/lib/data/regulatory-advisories";
 import type { FinderProgram, University, WdomsDirectoryEntry } from "@/lib/data/types";
 import {
   getRussiaOfficialPageAudit,
   getRussiaOfficialPageAuditSummary,
 } from "@/lib/data/russia-official-page-audit";
+
+import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
 
 import { InfoCard, SectionLabel } from "./shared";
 
@@ -49,11 +55,15 @@ export function UniversityAdmissionsSection({
   university,
   primaryProgram,
   countryContent,
+  countryAdvisory,
+  universityAdvisory,
   wdomsEntry,
 }: {
   university: University;
   primaryProgram: FinderProgram | undefined;
   countryContent: CountryContent | null;
+  countryAdvisory: CountryRegulatoryAdvisory | null;
+  universityAdvisory: UniversityRegulatoryAdvisory | null;
   wdomsEntry: WdomsDirectoryEntry | null;
 }) {
   const intakeMonths = primaryProgram?.offering.intakeMonths ?? [];
@@ -122,6 +132,15 @@ export function UniversityAdmissionsSection({
 
   return (
     <div className="deferred-render space-y-10 py-10">
+      {countryAdvisory ? (
+        <div id="regulatory-alert" className="scroll-mt-24">
+          <RegulatoryAdvisoryPanel
+            advisory={countryAdvisory}
+            universityNote={universityAdvisory}
+            titleLevel="h3"
+          />
+        </div>
+      ) : null}
 
       {/* ── Admissions overview ──────────────────────────────────────── */}
       <div id="admissions" className="scroll-mt-24 space-y-4">

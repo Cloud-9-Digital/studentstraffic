@@ -311,6 +311,89 @@ const countryContentMap: Record<string, CountryContent> = {
       "Continue specialisation in Kyrgyzstan or neighbouring Central Asian countries",
     ],
   },
+  uzbekistan: {
+    quickFacts: [
+      { label: "Capital", value: "Tashkent" },
+      { label: "Official language", value: "Uzbek" },
+      { label: "Time zone", value: "UTC+5" },
+      { label: "Population", value: "~37 million" },
+      { label: "Climate", value: "Continental — hot summers, cold winters" },
+      { label: "Currency", value: "Uzbekistani Som (UZS)" },
+      { label: "Common intake", value: "Usually September; some universities also market February intake" },
+      { label: "Regulatory context", value: "NMC alert dated 1 Apr 2026 urges extreme caution" },
+    ],
+    eligibility: {
+      intro:
+        "For Indian students, Uzbekistan is now a verification-first destination. Admission alone is not enough. You need the exact university and course structure to stay aligned with NMC's FMGL Regulations, 2021 if you want the India-return pathway to remain open.",
+      items: [
+        "Passed Class 12 with Physics, Chemistry, and Biology",
+        "Minimum 50% aggregate in PCB (45% where the current Indian rule set allows it)",
+        "Qualified NEET-UG before the foreign medical course begins",
+        "Age 17 or above by 31 December of the admission year",
+        "Written proof that the full course keeps at least 54 months of study and a 12-month internship in the same foreign institution",
+        "Written proof that the actual medium of instruction and clinical training remain compliant with FMGL 2021",
+      ],
+    },
+    admissionSteps: [
+      "Read the latest NMC alert and FMGL 2021 requirements before shortlisting any Uzbekistan university or branch campus.",
+      "Avoid agent-only recommendations. Contact the university directly and ask for the current English-medium curriculum, clinical training plan, and internship structure in writing.",
+      "Check whether the exact institution or branch has been named in any NMC alert, Embassy communication, or other regulatory warning before paying any registration amount.",
+      "Verify that the course is run in one institution, that clinical training is not split informally across locations, and that the internship is completed at the same foreign university.",
+      "Prepare passport, Class 10 and 12 records, NEET scorecard, photographs, and any legalization or notarization required by the university.",
+      "Apply only through the university's official process and wait for the written offer or invitation before making transfer plans.",
+      "Cross-check the final admission letter, institution name, and course structure one more time with NMC and the Indian Embassy if anything looks unclear.",
+      "Proceed to visa, travel, and post-arrival registration only after the FMGL pathway is documented clearly enough for your family to accept the risk.",
+    ],
+    verificationChecklist: [
+      "Confirm the exact institution and branch name, not just the parent university brand, before paying any fee.",
+      "Ask for written confirmation that teaching, exams, and bedside clinical training actually run in English, not only the brochure or first-year classes.",
+      "Verify that the course runs for at least 54 months in one institution and includes a 12-month internship in the same foreign university.",
+      "Check whether the university's actual patient-facing training depends heavily on Uzbek or Russian communication despite English-medium marketing.",
+      "Use NMC alerts, the Indian Embassy in Tashkent, and direct university documents together; do not rely on agents or informal student groups alone.",
+      "Treat any offshore, transfer-style, or split-campus arrangement as a red-flag item until NMC compliance is proven in writing.",
+    ],
+    documentsRequired: {
+      educational: [
+        "Passport copy",
+        "Class 10 marksheet and certificate",
+        "Class 12 marksheet and certificate with Physics, Chemistry, and Biology",
+        "NEET-UG scorecard",
+        "Passport-size photographs in the quantity requested by the university",
+        "Any notarized, apostilled, or legalized versions requested by the university",
+        "Written university confirmation on course duration, internship, and medium of instruction",
+      ],
+      visa: [
+        "Official offer letter or invitation from the university",
+        "Valid passport",
+        "Completed visa form and photographs",
+        "Medical and insurance documents requested for the visa process",
+        "Financial proof if requested for your case",
+        "Copies of academic and identity documents supporting the admission",
+      ],
+    },
+    hostelInfo:
+      "Accommodation quality varies widely by city and institution. Ask for the current hostel tariff, room-sharing pattern, kitchen access, and whether first-year housing is genuinely guaranteed. For Uzbekistan specifically, do not let hostel promises distract from the larger FMGL-compliance questions.",
+    scholarshipInfo:
+      "Treat scholarships and fee discounts as secondary. The higher-value question is whether the full academic and licensing pathway is compliant. If a scholarship is offered, ask for the written net payable amount and confirm that the university, branch, and course structure remain acceptable for your India-return plan.",
+    costOfLiving: {
+      intro:
+        "Uzbekistan can still look affordable in tuition-led comparisons, but families should now budget for verification work, contingency travel, and possible transfer risk if a course later turns out to be non-compliant.",
+      items: [
+        { category: "Hostel accommodation", range: "$50 – $120/month", notes: "Varies by city, branch, and room type" },
+        { category: "Food & groceries", range: "$90 – $160/month", notes: "Depends on cooking access and Indian-food availability" },
+        { category: "Local transport", range: "$10 – $25/month", notes: "Capital-city costs are usually higher" },
+        { category: "Phone & internet", range: "$8 – $15/month", notes: "" },
+        { category: "Miscellaneous", range: "$40 – $90/month", notes: "Daily setup, local documents, personal spending" },
+        { category: "Monthly total estimate", range: "$198 – $410/month", notes: "Planning range excluding tuition and one-time arrival costs" },
+      ],
+    },
+    careerOpportunities: [
+      "For India-return plans, registration depends on full FMGL 2021 compliance, not just on holding a foreign medical degree.",
+      "If the university, branch, or training pathway fails the FMGL conditions, the India-return route can collapse even after graduation.",
+      "Students who still choose Uzbekistan should plan NExT or FMGE preparation from year one and keep a written record of course and internship structure.",
+      "Any postgraduate or international licensing plan should be evaluated only after the base medical degree pathway is verified institution by institution.",
+    ],
+  },
 };
 
 export function getCountryContent(slug: string): CountryContent | null {
