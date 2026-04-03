@@ -101,7 +101,6 @@ export function CounsellingDialog({
             submitLabel={submitLabel}
             countrySlug={countrySlug}
             courseSlug={courseSlug}
-            qualificationMode="compact"
             embedded
             stacked
           />

@@ -72,8 +72,6 @@ export default function ContactPage() {
               title="Tell us where you are in the process"
               description="Share a little context and a counsellor will reply with more relevant guidance, not a generic callback."
               submitLabel="Request guidance"
-              qualificationMode="detailed"
-              contextBadge="Personalised Guidance"
             />
 
             {/* Right — contact methods + trust */}

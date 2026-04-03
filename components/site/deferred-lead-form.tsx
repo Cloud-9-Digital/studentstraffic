@@ -57,6 +57,7 @@ export function DeferredLeadForm(props: LeadFormProps) {
           embedded={props.embedded}
           title={props.title}
           description={props.description}
+          className={props.className}
         />
       )}
     </div>

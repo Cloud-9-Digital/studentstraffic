@@ -250,26 +250,16 @@ export default async function LandingPageRoute({
               </div>
             </div>
 
-            {/* ── Right: white form card ── */}
-            <div className="hidden lg:block">
-              <div className="rounded-2xl bg-white p-8 shadow-dialog">
-                <p className="mb-0.5 text-[0.7rem] font-semibold uppercase tracking-widest text-muted-foreground">
-                  Free counselling
-                </p>
-                <h2 className="mb-6 font-display text-2xl font-semibold leading-snug text-primary">
-                  Get guidance on {page.title}
-                </h2>
-                <DeferredLeadForm
-                  sourcePath={path}
-                  ctaVariant="landing_sidebar"
-                  title=""
-                  description=""
-                  countrySlug={country.slug}
-                  courseSlug={course.slug}
-                  embedded
-                  stacked
-                />
-              </div>
+            {/* ── Right: standard lead form ── */}
+            <div className="hidden lg:block lg:justify-self-end">
+              <DeferredLeadForm
+                sourcePath={path}
+                ctaVariant="landing_sidebar"
+                title={`Get guidance on ${page.title}`}
+                description="Share your details and our counsellors will help you compare options and next steps clearly."
+                countrySlug={country.slug}
+                courseSlug={course.slug}
+              />
             </div>
           </div>
         </div>

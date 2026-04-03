@@ -3,12 +3,9 @@ import Link from "next/link";
 import {
   ArrowRight,
   BookOpen,
-  Clock3,
   Compass,
-  FileCheck2,
   GraduationCap,
   ShieldCheck,
-  Sparkles,
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -104,30 +101,6 @@ const trustPoints = [
   {
     title: "Talk to current students directly",
     body: "Connect with Indian students already at the university before you apply. Unfiltered answers on fees, hostels, and clinical training — from peers, not agents.",
-  },
-] as const;
-
-const counsellingSignals = [
-  "Shortlist recommendations matched to your budget and goals",
-  "Clear guidance on NMC recognition, eligibility, and intake timing",
-  "Support across applications, documents, and visa preparation",
-] as const;
-
-const counsellingAssurances = [
-  {
-    Icon: Clock3,
-    title: "Fast human response",
-    body: "Most enquiries are answered the same day, often within a few hours.",
-  },
-  {
-    Icon: FileCheck2,
-    title: "Advice with context",
-    body: "We use your destination preference, intake timing, and budget to guide the shortlist.",
-  },
-  {
-    Icon: Sparkles,
-    title: "Built for research-first students",
-    body: "You can come to us early, compare calmly, and decide only when you're ready.",
   },
 ] as const;
 
@@ -305,48 +278,14 @@ export default async function HomePage() {
                   with clear next steps, realistic budget guidance, and a more
                   confident plan.
                 </p>
-
-                <div className="mt-8 grid gap-3">
-                  {counsellingSignals.map((signal) => (
-                    <div
-                      key={signal}
-                      className="flex items-start gap-3 rounded-2xl border border-white/12 bg-white/7 px-4 py-3 backdrop-blur-sm"
-                    >
-                      <div className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-white/14 text-white">
-                        <ShieldCheck className="size-4" />
-                      </div>
-                      <p className="text-sm leading-6 text-white/86">{signal}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-8 grid gap-3 md:grid-cols-3">
-                  {counsellingAssurances.map(({ Icon, title, body }) => (
-                    <div
-                      key={title}
-                      className="rounded-2xl border border-white/12 bg-black/10 p-4"
-                    >
-                      <div className="flex size-10 items-center justify-center rounded-xl bg-white/12 text-white">
-                        <Icon className="size-4.5" />
-                      </div>
-                      <h3 className="mt-4 text-sm font-semibold text-white">
-                        {title}
-                      </h3>
-                      <p className="mt-2 text-sm leading-6 text-white/65">
-                        {body}
-                      </p>
-                    </div>
-                  ))}
-                </div>
               </div>
 
               <DeferredLeadForm
                 sourcePath="/"
                 ctaVariant="home_cta"
                 title="Get your personalised shortlist"
-                description="Tell us about your budget, NEET status, and preferred destinations. We&apos;ll follow up with guidance that matches where you are."
-                qualificationMode="detailed"
-                contextBadge="Research Planner"
+                description="Share your details and we&apos;ll follow up with guidance that matches where you are."
+                className="lg:justify-self-end"
               />
             </div>
           </div>
