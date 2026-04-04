@@ -5,11 +5,6 @@ import { Maximize2, Pause, Play, Volume2, VolumeX } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
-function fmt(sec: number) {
-  const m = Math.floor(sec / 60);
-  const s = Math.floor(sec % 60);
-  return `${m}:${String(s).padStart(2, "0")}`;
-}
 
 export function YouTubePlayer({
   videoId,
@@ -28,8 +23,6 @@ export function YouTubePlayer({
   const [ready, setReady] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(startMuted);
-  const [elapsed, setElapsed] = useState(0);
-  const [duration, setDuration] = useState(0);
   const [showControls, setShowControls] = useState(true);
 
   const params = new URLSearchParams({
@@ -79,8 +72,6 @@ export function YouTubePlayer({
       if (data.event === "infoDelivery") {
         const info = data.info as Record<string, unknown> | undefined;
         if (!info) return;
-        if (typeof info.currentTime === "number") setElapsed(info.currentTime);
-        if (typeof info.duration === "number" && info.duration > 0) setDuration(info.duration);
         if (typeof info.muted === "boolean") setMuted(info.muted);
       }
     }
@@ -113,20 +104,11 @@ export function YouTubePlayer({
     else { send("mute"); setMuted(true); }
   };
 
-  const seek = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.stopPropagation();
-    if (!duration) return;
-    const t = Number(e.target.value) * duration;
-    send("seekTo", [t, true]);
-    setElapsed(t);
-  };
-
   const goFullscreen = (e: React.MouseEvent) => {
     e.stopPropagation();
     (e.currentTarget.closest("[data-yt-player]") as HTMLElement)?.requestFullscreen?.();
   };
 
-  const progress = duration > 0 ? Math.min(elapsed / duration, 1) : 0;
   const aspectClass = isShort ? "aspect-[9/16]" : "aspect-video";
 
   return (
@@ -135,7 +117,7 @@ export function YouTubePlayer({
       className={cn("relative w-full overflow-hidden bg-black select-none cursor-pointer", className ?? aspectClass)}
       onMouseMove={nudge}
       onTouchStart={nudge}
-      onClick={togglePlay}
+      onPointerUp={togglePlay}
     >
       {/* iframe — pointer-events none so clicks hit our overlay */}
       <iframe
@@ -182,12 +164,6 @@ export function YouTubePlayer({
           )}
           onClick={(e) => e.stopPropagation()}
         >
-          <input
-            type="range" min={0} max={1} step={0.001} value={progress}
-            onChange={seek}
-            className="h-0.5 w-full cursor-pointer appearance-none rounded-full bg-white/30 accent-white"
-            aria-label="Seek"
-          />
           <div className="flex items-center justify-between gap-2">
             <div className="flex items-center gap-1">
               <button type="button" onClick={(e) => { e.stopPropagation(); togglePlay(); }}
@@ -200,11 +176,6 @@ export function YouTubePlayer({
                 className="flex size-7 items-center justify-center text-white/90 hover:text-white">
                 {muted ? <VolumeX className="size-4" /> : <Volume2 className="size-4" />}
               </button>
-              {duration > 0 && (
-                <span className="text-[0.6rem] tabular-nums text-white/70">
-                  {fmt(elapsed)} / {fmt(duration)}
-                </span>
-              )}
             </div>
             <button type="button" onClick={goFullscreen} aria-label="Fullscreen"
               className="flex size-7 items-center justify-center text-white/90 hover:text-white">

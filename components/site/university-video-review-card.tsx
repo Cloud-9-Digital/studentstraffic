@@ -52,20 +52,41 @@ export function UniversityVideoReviewCard({ review }: { review: UniversityReview
         </div>
       </div>
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-2xl gap-0 overflow-hidden p-0">
+        <DialogContent className={`gap-0 overflow-hidden p-0 ${review.isShort ? "max-w-xs flex flex-col max-h-[90vh]" : "max-w-2xl"}`}>
           <DialogTitle className="sr-only">{review.reviewerName} video review</DialogTitle>
-          <YouTubePlayer videoId={review.youtubeVideoId} isShort={review.isShort} />
-          <div className="px-4 py-3">
-            <div className="flex items-center gap-1.5 leading-none">
-              <span className="truncate text-sm font-semibold text-foreground">{review.reviewerName}</span>
-              {review.verificationStatus === "verified" && (
-                <Badge className="shrink-0 rounded-full px-1.5 py-0 text-[0.6rem]">Verified</Badge>
-              )}
-            </div>
-            {review.reviewerContext && (
-              <p className="mt-0.5 text-[0.7rem] leading-none text-muted-foreground">{review.reviewerContext}</p>
-            )}
-          </div>
+          {review.isShort ? (
+            <>
+              <div className="min-h-0 flex-1 overflow-hidden">
+                <YouTubePlayer videoId={review.youtubeVideoId} isShort className="h-full w-full aspect-[9/16]" />
+              </div>
+              <div className="shrink-0 px-4 py-3">
+                <div className="flex items-center gap-1.5 leading-none">
+                  <span className="truncate text-sm font-semibold text-foreground">{review.reviewerName}</span>
+                  {review.verificationStatus === "verified" && (
+                    <Badge className="shrink-0 rounded-full px-1.5 py-0 text-[0.6rem]">Verified</Badge>
+                  )}
+                </div>
+                {review.reviewerContext && (
+                  <p className="mt-0.5 text-[0.7rem] leading-none text-muted-foreground">{review.reviewerContext}</p>
+                )}
+              </div>
+            </>
+          ) : (
+            <>
+              <YouTubePlayer videoId={review.youtubeVideoId} isShort={false} />
+              <div className="px-4 py-3">
+                <div className="flex items-center gap-1.5 leading-none">
+                  <span className="truncate text-sm font-semibold text-foreground">{review.reviewerName}</span>
+                  {review.verificationStatus === "verified" && (
+                    <Badge className="shrink-0 rounded-full px-1.5 py-0 text-[0.6rem]">Verified</Badge>
+                  )}
+                </div>
+                {review.reviewerContext && (
+                  <p className="mt-0.5 text-[0.7rem] leading-none text-muted-foreground">{review.reviewerContext}</p>
+                )}
+              </div>
+            </>
+          )}
         </DialogContent>
       </Dialog>
     </>
