@@ -30,13 +30,23 @@ const STATIC_RULES: LinkRule[] = [
   { text: "FMGE",               href: "/blog/fmge-nmc-screening-test-2026-complete-preparation-guide", priority: 10 },
   { text: "NMC Screening Test", href: "/blog/fmge-nmc-screening-test-2026-complete-preparation-guide", priority: 10 },
   { text: "MBBS in Russia",     href: "/blog/mbbs-in-russia-2026-complete-guide",    priority: 10 },
+  { text: "best Russian medical universities", href: "/blog/best-russian-medical-universities-for-indian-students-ranking", priority: 10 },
+  { text: "MBBS in Russia admission", href: "/blog/mbbs-in-russia-admission-2026-eligibility-documents-timeline", priority: 10 },
+  { text: "MBBS in Russia fees", href: "/blog/mbbs-in-russia-fees-2026-total-cost-guide", priority: 10 },
+  { text: "MBBS in Russia valid in India", href: "/blog/is-mbbs-in-russia-valid-in-india-nmc-next-neet", priority: 10 },
   { text: "MBBS in Georgia",    href: "/blog/mbbs-in-georgia-2026-complete-guide",   priority: 10 },
   { text: "MBBS in Kyrgyzstan", href: "/blog/mbbs-in-kyrgyzstan-2026-complete-guide", priority: 10 },
   { text: "MBBS in Uzbekistan", href: "/blog/mbbs-in-uzbekistan-2026-complete-guide", priority: 10 },
   { text: "MBBS in Vietnam",    href: "/blog/mbbs-in-vietnam-2026-complete-guide",   priority: 10 },
   { text: "best medical universities in Vietnam", href: "/blog/best-vietnam-medical-universities-for-indian-students-ranking", priority: 10 },
+  { text: "MBBS in Vietnam admission", href: "/blog/mbbs-in-vietnam-admission-2026-eligibility-documents-timeline", priority: 10 },
   { text: "MBBS in Vietnam fees", href: "/blog/mbbs-in-vietnam-fees-2026-total-cost-guide", priority: 10 },
   { text: "MBBS in Vietnam valid in India", href: "/blog/is-mbbs-in-vietnam-valid-in-india-nmc-next-neet", priority: 10 },
+  { text: "best cities in Vietnam for Indian medical students", href: "/blog/best-cities-in-vietnam-for-indian-medical-students", priority: 10 },
+  { text: "MBBS in Vietnam student life", href: "/blog/mbbs-in-vietnam-student-life-hostel-food-safety-budget", priority: 10 },
+  { text: "MBBS in Vietnam vs Russia vs Georgia", href: "/blog/mbbs-in-vietnam-vs-russia-vs-georgia-for-indian-students", priority: 10 },
+  { text: "MBBS in Vietnam clinical rotations", href: "/blog/mbbs-in-vietnam-clinical-rotations-language-internship-guide", priority: 10 },
+  { text: "MBBS in Vietnam pre-departure checklist", href: "/blog/mbbs-in-vietnam-pre-departure-checklist-2026", priority: 10 },
 ];
 
 // ─── Rule builder ─────────────────────────────────────────────────────────────

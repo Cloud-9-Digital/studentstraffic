@@ -386,6 +386,8 @@ export async function getUniversityReviews(
 
 export type ReviewWithUniversity = UniversityReview & {
   universityName: string;
+  countryName: string;
+  isShort: boolean;
 };
 
 export async function getAllLiveReviews(): Promise<ReviewWithUniversity[]> {
@@ -402,6 +404,7 @@ export async function getAllLiveReviews(): Promise<ReviewWithUniversity[]> {
         id: universityReviews.id,
         universitySlug: universities.slug,
         universityName: universities.name,
+        countryName: countries.name,
         reviewType: universityReviews.reviewType,
         reviewerName: universityReviews.reviewerName,
         reviewerContext: universityReviews.reviewerContext,
@@ -411,11 +414,13 @@ export async function getAllLiveReviews(): Promise<ReviewWithUniversity[]> {
         visibilityStatus: universityReviews.visibilityStatus,
         verificationStatus: universityReviews.verificationStatus,
         isFeatured: universityReviews.isFeatured,
+        isShort: universityReviews.isShort,
         starRating: universityReviews.starRating,
         createdAt: universityReviews.createdAt,
       })
       .from(universityReviews)
       .innerJoin(universities, eq(universityReviews.universityId, universities.id))
+      .innerJoin(countries, eq(universities.countryId, countries.id))
       .where(eq(universityReviews.visibilityStatus, "live"))
       .orderBy(desc(universityReviews.isFeatured), desc(universityReviews.createdAt));
 
@@ -423,6 +428,7 @@ export async function getAllLiveReviews(): Promise<ReviewWithUniversity[]> {
       id: r.id,
       universitySlug: r.universitySlug,
       universityName: r.universityName,
+      countryName: r.countryName,
       reviewType: r.reviewType,
       reviewerName: r.reviewerName,
       reviewerContext: r.reviewerContext ?? undefined,
@@ -432,6 +438,7 @@ export async function getAllLiveReviews(): Promise<ReviewWithUniversity[]> {
       visibilityStatus: r.visibilityStatus,
       verificationStatus: r.verificationStatus,
       isFeatured: r.isFeatured,
+      isShort: r.isShort,
       starRating: r.starRating ?? undefined,
       createdAt: toIsoString(r.createdAt),
     }));

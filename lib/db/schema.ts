@@ -440,6 +440,7 @@ export const universityReviews = pgTable(
       .notNull()
       .default("unverified"),
     isFeatured: boolean("is_featured").notNull().default(false),
+    isShort: boolean("is_short").notNull().default(false),
     starRating: integer("star_rating"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),

@@ -41,6 +41,8 @@ neonConfig.webSocketConstructor = WebSocket;
 const styleReferenceUrl =
   "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1775127931/studentstraffic/blog/mbbs-vietnam-fees-2026-total-cost-guide.jpg";
 
+const requestedSlugs = new Set(process.argv.slice(2));
+
 const covers = [
   {
     slug: "best-vietnam-medical-universities-for-indian-students-ranking",
@@ -98,6 +100,157 @@ Important:
 - no dense paragraphs, no logos, no watermarks
 - avoid political or legal poster style; keep it modern and informative
 - text must remain legible on mobile`,
+  },
+  {
+    slug: "mbbs-in-vietnam-admission-2026-eligibility-documents-timeline",
+    publicId:
+      "studentstraffic/blog/mbbs-in-vietnam-admission-2026-eligibility-documents-timeline",
+    filename: "mbbs-vietnam-admission-cover.jpg",
+    prompt: `Create a premium 16:9 website blog cover for an education consultancy article.
+Use the attached Vietnam fees cover as a style reference only for visual tone, spacing, and clean editorial infographic quality.
+
+Required exact visible text:
+MBBS in Vietnam Admission 2026
+Eligibility • Documents • Timeline
+
+Visual direction:
+- warm white or light ivory background
+- bold navy headline
+- subtle Vietnam map silhouette in the background
+- admissions and processing theme with document stack, checklist, passport, calendar, hospital building, and admission file icons
+- visual feel should suggest structure, clarity, and momentum
+- polished editorial infographic style, trustworthy and premium
+
+Important:
+- keep the text spelled exactly as written
+- no logos, no watermarks, no fake seals
+- no dense paragraphs or tiny unreadable labels
+- text must remain highly legible on mobile`,
+  },
+  {
+    slug: "best-cities-in-vietnam-for-indian-medical-students",
+    publicId:
+      "studentstraffic/blog/best-cities-in-vietnam-for-indian-medical-students",
+    filename: "best-cities-vietnam-medical-students-cover.jpg",
+    prompt: `Create a premium 16:9 website blog cover for an education consultancy article.
+Use the attached Vietnam fees cover as a style reference only for overall design polish and editorial consistency.
+
+Required exact visible text:
+Best Cities in Vietnam for Indian Medical Students
+Hanoi • Da Nang • Can Tho • Buon Ma Thuot
+
+Visual direction:
+- warm white or light ivory background
+- bold navy headline
+- elegant Vietnam map in the background
+- four color-coded city comparison panels or destination markers
+- visual cues of skyline, airport, hospital, campus, location pins, and travel arrows
+- feel like a serious city-comparison editorial cover, not a tourism poster
+- premium, credible, and highly legible
+
+Important:
+- keep the text spelled exactly as written
+- do not add logos, flags dominating the design, or watermarks
+- avoid clutter and small unreadable text`,
+  },
+  {
+    slug: "mbbs-in-vietnam-student-life-hostel-food-safety-budget",
+    publicId:
+      "studentstraffic/blog/mbbs-in-vietnam-student-life-hostel-food-safety-budget",
+    filename: "mbbs-vietnam-student-life-cover.jpg",
+    prompt: `Create a premium 16:9 website blog cover for an education consultancy article.
+Use the attached Vietnam fees cover as a style reference only for design quality and infographic balance.
+
+Required exact visible text:
+MBBS in Vietnam Student Life 2026
+Hostel • Food • Safety • Budget
+
+Visual direction:
+- warm white or light ivory background
+- bold navy headline
+- subtle Vietnam map silhouette in the background
+- clean student-life collage with hostel bed, meal tray, grocery bag, stethoscope, notebook, shield, and calculator
+- should feel helpful, calm, and realistic rather than flashy
+- premium editorial infographic style with generous negative space
+
+Important:
+- keep the text spelled exactly as written
+- no logos, no watermarks, no dense tiny text
+- text must remain clearly readable on mobile`,
+  },
+  {
+    slug: "mbbs-in-vietnam-vs-russia-vs-georgia-for-indian-students",
+    publicId:
+      "studentstraffic/blog/mbbs-in-vietnam-vs-russia-vs-georgia-for-indian-students",
+    filename: "mbbs-vietnam-vs-russia-vs-georgia-cover.jpg",
+    prompt: `Create a premium 16:9 website blog cover for an education consultancy article.
+Use the attached Vietnam fees cover as a style reference only for tone, spacing, and clean editorial infographic quality.
+
+Required exact visible text:
+MBBS in Vietnam vs Russia vs Georgia 2026
+Which Is Better for Indian Students?
+
+Visual direction:
+- warm white or light ivory background
+- bold navy headline
+- elegant three-country comparison layout with clean country markers or map silhouettes
+- subtle medical and study-abroad cues like hospital, airplane path, documents, stethoscope, and comparison arrows
+- clear visual contrast between the three options without using heavy flag designs
+- should feel authoritative, balanced, and editorial, not flashy
+
+Important:
+- keep the text spelled exactly as written
+- no logos, no watermarks, no cluttered tiny labels
+- maintain strong mobile legibility`,
+  },
+  {
+    slug: "mbbs-in-vietnam-clinical-rotations-language-internship-guide",
+    publicId:
+      "studentstraffic/blog/mbbs-in-vietnam-clinical-rotations-language-internship-guide",
+    filename: "mbbs-vietnam-clinical-rotations-cover.jpg",
+    prompt: `Create a premium 16:9 website blog cover for an education consultancy article.
+Use the attached Vietnam fees cover as a style reference only for visual polish and infographic balance.
+
+Required exact visible text:
+MBBS in Vietnam Clinical Rotations 2026
+Language • Patient Exposure • Internship
+
+Visual direction:
+- warm white or light ivory background
+- bold navy headline
+- modern teaching-hospital scene with subtle Vietnam map silhouette
+- visual cues of patient rounds, hospital building, simulation mannequin, clipboard, stethoscope, and language or communication icons
+- should communicate serious medical training rather than generic campus life
+- premium editorial infographic style, clean and trustworthy
+
+Important:
+- keep the text spelled exactly as written
+- no logos, no watermarks, no tiny unreadable labels
+- text must remain highly legible on mobile`,
+  },
+  {
+    slug: "mbbs-in-vietnam-pre-departure-checklist-2026",
+    publicId:
+      "studentstraffic/blog/mbbs-in-vietnam-pre-departure-checklist-2026",
+    filename: "mbbs-vietnam-pre-departure-checklist-cover.jpg",
+    prompt: `Create a premium 16:9 website blog cover for an education consultancy article.
+Use the attached Vietnam fees cover as a style reference only for editorial consistency, spacing, and color discipline.
+
+Required exact visible text:
+MBBS in Vietnam Pre-Departure Checklist 2026
+Visa • Payments • Packing • Forex
+
+Visual direction:
+- warm white or light ivory background
+- bold navy headline
+- structured travel-and-documents visual with passport, visa page, payment receipt, suitcase, forex card, airplane, and checklist icons
+- subtle Vietnam map silhouette in the background
+- should feel practical, organized, and reassuring rather than like a travel advertisement
+
+Important:
+- keep the text spelled exactly as written
+- no logos, no watermarks, no fake seals
+- avoid clutter and keep text highly legible on mobile`,
   },
 ];
 
@@ -185,9 +338,16 @@ async function uploadAndUpdate({ slug, publicId }, outputFile, client) {
 async function main() {
   const pool = new Pool({ connectionString: process.env.DATABASE_URL });
   const client = await pool.connect();
+  const selectedCovers = requestedSlugs.size
+    ? covers.filter((cover) => requestedSlugs.has(cover.slug))
+    : covers;
 
   try {
-    for (const cover of covers) {
+    if (requestedSlugs.size > 0 && selectedCovers.length === 0) {
+      throw new Error("No matching cover definitions found for the requested slugs.");
+    }
+
+    for (const cover of selectedCovers) {
       const outputFile = join(outDir, cover.filename);
       console.log(`Generating ${cover.slug}...`);
       await generateImage(cover.prompt, outputFile);

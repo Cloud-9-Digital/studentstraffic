@@ -16,7 +16,7 @@ import { getDb } from "@/lib/db/server";
 import { universities, universityReviews } from "@/lib/db/schema";
 import { consumePublicFormRateLimits } from "@/lib/security/public-form-guard";
 import { getUniversityReviewsTag } from "@/lib/university-community";
-import { getYouTubeVideoId, getYouTubeWatchUrl } from "@/lib/youtube";
+import { getYouTubeIsShort, getYouTubeVideoId, getYouTubeWatchUrl } from "@/lib/youtube";
 
 export type UniversityReviewFormState = {
   error?: string;
@@ -201,6 +201,9 @@ export async function submitUniversityReviewAction(
       ? getYouTubeVideoId(data.youtubeUrl)
       : null;
 
+  const isShort =
+    youtubeVideoId ? (await getYouTubeIsShort(youtubeVideoId)) ?? false : false;
+
   if (data.reviewType === "youtube_video" && youtubeVideoId) {
     const [duplicateVideo] = await db
       .select({ id: universityReviews.id })
@@ -260,6 +263,7 @@ export async function submitUniversityReviewAction(
       visibilityStatus: "hidden",
       verificationStatus: "unverified",
       isFeatured: false,
+      isShort,
       starRating: data.reviewType === "text" ? (data.starRating ?? null) : null,
       createdAt: submittedAt,
       updatedAt: submittedAt,
