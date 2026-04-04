@@ -1,15 +1,14 @@
-import Link from "next/link";
-import { ArrowUpRight, Star } from "lucide-react";
+import { Star } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { UniversityReviewForm } from "@/components/site/university-review-form";
+import { UniversityVideoReviewCard } from "@/components/site/university-video-review-card";
 import { Badge } from "@/components/ui/badge";
 import type { UniversityReview } from "@/lib/data/types";
 import { getUniversityReviews } from "@/lib/university-community";
 import { absoluteUrl } from "@/lib/metadata";
 import { getUniversityHref } from "@/lib/routes";
 import { getUniversityStructuredDataId } from "@/lib/structured-data";
-import { getYouTubeEmbedUrl } from "@/lib/youtube";
 
 function formatReviewDate(value: string) {
   return new Intl.DateTimeFormat("en-IN", {
@@ -66,47 +65,6 @@ function StarDisplay({ rating, size = "sm" }: { rating: number; size?: "sm" | "x
   );
 }
 
-function VideoReviewCard({ review }: { review: UniversityReview }) {
-  if (!review.youtubeVideoId || !review.youtubeUrl) return null;
-
-  return (
-    <div className="overflow-hidden rounded-xl border border-border/60 bg-card">
-      <div className="aspect-video overflow-hidden bg-muted">
-        <iframe
-          src={getYouTubeEmbedUrl(review.youtubeVideoId)}
-          title={`${review.reviewerName} video review`}
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          className="h-full w-full border-0"
-        />
-      </div>
-      <div className="flex items-center gap-2.5 px-4 py-3">
-        <ReviewerAvatar name={review.reviewerName} />
-        <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-1.5">
-            <p className="truncate text-sm font-semibold text-foreground">{review.reviewerName}</p>
-            {review.verificationStatus === "verified" && (
-              <Badge className="rounded-full px-1.5 py-0 text-[0.6rem]">Verified</Badge>
-            )}
-          </div>
-          {review.reviewerContext && (
-            <p className="text-xs text-muted-foreground">{review.reviewerContext}</p>
-          )}
-        </div>
-        <Link
-          href={review.youtubeUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="flex shrink-0 items-center gap-0.5 text-xs font-medium text-accent hover:underline"
-        >
-          Watch
-          <ArrowUpRight className="size-3" />
-        </Link>
-      </div>
-    </div>
-  );
-}
 
 function TextReviewRow({ review, isLast }: { review: UniversityReview; isLast: boolean }) {
   return (
@@ -115,15 +73,15 @@ function TextReviewRow({ review, isLast }: { review: UniversityReview; isLast: b
         <ReviewerAvatar name={review.reviewerName} />
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-0.5">
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-1.5 leading-none">
               <span className="text-sm font-semibold text-foreground">{review.reviewerName}</span>
               {review.verificationStatus === "verified" && (
-                <Badge className="rounded-full px-1.5 py-0 text-[0.6rem]">Verified</Badge>
+                <Badge className="shrink-0 rounded-full px-1.5 py-0 text-[0.6rem]">Verified</Badge>
               )}
             </div>
             {review.starRating ? <StarDisplay rating={review.starRating} size="sm" /> : null}
           </div>
-          <p className="text-[0.7rem] text-muted-foreground">
+          <p className="mt-0.5 text-[0.7rem] leading-none text-muted-foreground">
             {review.reviewerContext ? `${review.reviewerContext} · ` : ""}
             {formatReviewDate(review.createdAt)}
           </p>
@@ -250,9 +208,11 @@ export async function UniversityReviewsSection({
           <p className="mb-2.5 text-[0.7rem] font-semibold uppercase tracking-widest text-muted-foreground">
             Video reviews
           </p>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="flex gap-3 overflow-x-auto pb-1 -mx-1 px-1 snap-x snap-mandatory">
             {videoReviews.map((review) => (
-              <VideoReviewCard key={review.id} review={review} />
+              <div key={review.id} className={`shrink-0 snap-start ${review.isShort ? "w-44" : "w-[32.5rem]"}`}>
+                <UniversityVideoReviewCard review={review} />
+              </div>
             ))}
           </div>
         </div>

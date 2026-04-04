@@ -22,14 +22,13 @@ export function VideoReviewCard({
   if (!review.youtubeVideoId) return null;
 
   const thumbUrl = `https://i.ytimg.com/vi/${review.youtubeVideoId}/hqdefault.jpg`;
-  const aspectClass = review.isShort
-    ? "aspect-[4/5] max-h-[17rem] lg:max-h-[14.5rem]"
-    : "aspect-[4/3] sm:aspect-video";
+  const aspectClass = review.isShort ? "aspect-[4/5]" : "aspect-[8/5]";
 
   return (
     <div
       className={cn(
         "min-w-0 overflow-hidden rounded-2xl border border-border/70 bg-card shadow-sm transition-shadow hover:shadow-md",
+        !review.isShort && "col-span-2",
         isPlayingInline && "col-span-2 lg:col-span-1",
         className
       )}
@@ -40,8 +39,7 @@ export function VideoReviewCard({
             <YouTubePlayer
               videoId={review.youtubeVideoId}
               isShort={review.isShort}
-              className={cn("rounded-xl", aspectClass)}
-              startMuted={false}
+              className={cn("rounded-xl overflow-hidden", aspectClass)}
             />
             <button
               type="button"

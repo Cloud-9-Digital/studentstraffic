@@ -35,7 +35,8 @@ const reviewSchema = z.object({
     .refine((value) => !value || /\S+@\S+\.\S+/.test(value), {
       message: "Please enter a valid email address.",
     }),
-  reviewerContext: z.string().trim().max(120).optional(),
+  course: z.string().trim().max(60).optional(),
+  year: z.string().trim().max(60).optional(),
   reviewBody: z.string().trim().optional(),
   youtubeUrl: z.string().trim().optional(),
   starRating: z.coerce.number().int().min(1).max(5).optional(),
@@ -77,7 +78,8 @@ export async function submitUniversityReviewAction(
     reviewType: getFormString(formData, "reviewType"),
     reviewerName: getFormString(formData, "reviewerName"),
     reviewerEmail: getFormString(formData, "reviewerEmail"),
-    reviewerContext: getFormString(formData, "reviewerContext"),
+    course: getFormString(formData, "course"),
+    year: getFormString(formData, "year"),
     reviewBody: getFormString(formData, "reviewBody"),
     youtubeUrl: getFormString(formData, "youtubeUrl"),
     starRating: getFormString(formData, "starRating"),
@@ -249,7 +251,7 @@ export async function submitUniversityReviewAction(
       reviewType: data.reviewType,
       reviewerName: data.reviewerName,
       reviewerEmail: emptyToUndefined(data.reviewerEmail),
-      reviewerContext: emptyToUndefined(data.reviewerContext),
+      reviewerContext: [data.course, data.year].filter(Boolean).join(" · ") || null,
       reviewBody:
         data.reviewType === "text" ? emptyToUndefined(data.reviewBody) : null,
       youtubeUrl:

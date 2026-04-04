@@ -212,6 +212,7 @@ export type UniversityReview = {
   visibilityStatus: UniversityReviewVisibilityStatus;
   verificationStatus: UniversityReviewVerificationStatus;
   isFeatured: boolean;
+  isShort: boolean;
   createdAt: string;
   updatedAt?: string;
 };

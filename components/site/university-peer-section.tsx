@@ -16,10 +16,10 @@ export async function UniversityPeerSection({
 
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-card">
-      <div className="grid md:grid-cols-[5fr_6fr]">
+      <div className="grid md:grid-cols-[5fr_6fr] md:items-stretch">
 
         {/* Left — student list */}
-        <div className="border-b border-border bg-muted/20 p-5 md:border-b-0 md:border-r">
+        <div className="flex flex-col border-b border-border bg-muted/20 p-5 md:border-b-0 md:border-r">
           <div className="mb-1 flex items-center gap-2">
             <Users className="size-4 text-accent" />
             <p className="text-sm font-semibold text-foreground">
@@ -30,12 +30,15 @@ export async function UniversityPeerSection({
             These students studied here and can answer your real questions about academics, hostel life, and daily experience.
           </p>
           {availability.hasPeers ? (
-            <Suspense fallback={null}>
-              <PeersGrid
-                universitySlug={universitySlug}
-                universityName={universityName}
-              />
-            </Suspense>
+            <div className="flex-1 overflow-y-auto min-h-0">
+              <Suspense fallback={null}>
+                <PeersGrid
+                  universitySlug={universitySlug}
+                  universityName={universityName}
+                  cols={2}
+                />
+              </Suspense>
+            </div>
           ) : (
             <p className="text-sm text-muted-foreground">
               No student contacts listed yet for this university.
@@ -44,7 +47,7 @@ export async function UniversityPeerSection({
         </div>
 
         {/* Right — request form */}
-        <div className="p-5">
+        <div className="p-5 flex flex-col justify-center">
           <p className="mb-4 text-sm font-semibold text-foreground">
             Request a student conversation
           </p>

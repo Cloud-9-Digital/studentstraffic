@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useEffect, useRef, useState } from "react";
-import { Film, PencilLine, Star } from "lucide-react";
+import { ChevronDown, Film, PencilLine, Star } from "lucide-react";
 
 import {
   submitUniversityReviewAction,
@@ -193,15 +193,54 @@ export function UniversityReviewForm({
             </div>
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="review-context">
-              Course / batch / context <span className="font-normal text-muted-foreground">(optional)</span>
-            </Label>
-            <Input
-              id="review-context"
-              name="reviewerContext"
-              placeholder="MBBS, 3rd year, graduate, parent..."
-            />
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div className="space-y-2">
+              <Label htmlFor="review-course">
+                Course <span className="font-normal text-muted-foreground">(optional)</span>
+              </Label>
+              <div className="relative">
+                <select
+                  id="review-course"
+                  name="course"
+                  defaultValue=""
+                  className="h-10 w-full appearance-none rounded-lg border border-input bg-background pl-3 pr-8 text-sm text-foreground outline-none focus:border-ring focus:ring-2 focus:ring-ring/20 transition-colors"
+                >
+                  <option value="">Select course</option>
+                  <option>MBBS</option>
+                  <option>MD</option>
+                  <option>BDS</option>
+                  <option>BAMS</option>
+                  <option>BHMS</option>
+                  <option>Other</option>
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="review-year">
+                Year / status <span className="font-normal text-muted-foreground">(optional)</span>
+              </Label>
+              <div className="relative">
+                <select
+                  id="review-year"
+                  name="year"
+                  defaultValue=""
+                  className="h-10 w-full appearance-none rounded-lg border border-input bg-background pl-3 pr-8 text-sm text-foreground outline-none focus:border-ring focus:ring-2 focus:ring-ring/20 transition-colors"
+                >
+                  <option value="">Select year</option>
+                  <option>1st Year</option>
+                  <option>2nd Year</option>
+                  <option>3rd Year</option>
+                  <option>4th Year</option>
+                  <option>5th Year</option>
+                  <option>6th Year</option>
+                  <option>Intern</option>
+                  <option>Graduate</option>
+                  <option>Parent</option>
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              </div>
+            </div>
           </div>
 
           {reviewType === "text" ? (
