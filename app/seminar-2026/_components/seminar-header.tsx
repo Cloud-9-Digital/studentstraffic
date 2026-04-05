@@ -24,6 +24,7 @@ export function SeminarHeader() {
             width={180}
             height={24}
             className="h-5 w-auto sm:h-6"
+            style={{ width: "auto" }}
             priority
           />
         </Link>

@@ -26,6 +26,7 @@ export function SeminarFooter() {
                 width={160}
                 height={22}
                 className="h-6 w-auto opacity-80"
+                style={{ width: "auto" }}
               />
             </Link>
             <p className="mt-4 text-sm leading-6 text-white/40">
@@ -78,7 +79,7 @@ export function SeminarFooter() {
       <div className="border-t border-white/[0.07]">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-4 py-5 sm:flex-row">
           <p className="text-xs text-white/20">
-            © {new Date().getFullYear()} Students Traffic · Free MBBS Seminar 2026
+            © 2026 Students Traffic · Free MBBS Seminar 2026
           </p>
           <div className="flex gap-5 text-xs text-white/25">
             <Link href="/privacy" className="hover:text-white/50 transition">Privacy</Link>
