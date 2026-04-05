@@ -1,0 +1,133 @@
+import { BookOpen, GraduationCap, ShieldCheck, Users, Stethoscope, Trophy } from "lucide-react";
+
+export const EVENTS = [
+  { date: "17 May 2026", day: "Sunday",   city: "Madurai",         venue: "Royal Court",                state: "TN", time: "5:30 PM" },
+  { date: "24 May 2026", day: "Sunday",   city: "Dindigul",        venue: "Parson's Court",             state: "TN", time: "5:30 PM" },
+  { date: "31 May 2026", day: "Sunday",   city: "Tirunelveli",     venue: "RR Inn Group's of Hotel",    state: "TN", time: "5:30 PM" },
+  { date: "7 Jun 2026",  day: "Sunday",   city: "Nagercoil",       venue: "Hotel Lance International",  state: "TN", time: "5:30 PM" },
+  { date: "13 Jun 2026", day: "Saturday", city: "Madurai",         venue: "Royal Court",                state: "TN", time: "5:30 PM" },
+  { date: "14 Jun 2026", day: "Sunday",   city: "Trichy",          venue: "Breeze Residency",           state: "TN", time: "5:30 PM" },
+  { date: "20 Jun 2026", day: "Saturday", city: "Pollachi",        venue: "Sakthi Hotel",               state: "TN", time: "5:30 PM" },
+  { date: "21 Jun 2026", day: "Sunday",   city: "Karaikudi",       venue: "APS Hall",                   state: "TN", time: "5:30 PM" },
+  { date: "28 Jun 2026", day: "Sunday",   city: "Sivakasi",        venue: "RSR Residency",              state: "TN", time: "5:30 PM" },
+  { date: "4 Jul 2026",  day: "Saturday", city: "Ramanathapuram",  venue: "Daiwik Hotel",               state: "TN", time: "5:30 PM" },
+  { date: "5 Jul 2026",  day: "Sunday",   city: "Thoothukudi",     venue: "Hotel Raj",                  state: "TN", time: "5:30 PM" },
+  { date: "12 Jul 2026", day: "Sunday",   city: "Theni",           venue: "Hotel Theni International",  state: "TN", time: "5:30 PM" },
+  { date: "18 Jul 2026", day: "Saturday", city: "Erode",           venue: "Hotel Royal Embassy",        state: "TN", time: "5:30 PM" },
+  { date: "19 Jul 2026", day: "Sunday",   city: "Tiruppur",        venue: "The Mayberry",               state: "TN", time: "5:30 PM" },
+] as const;
+
+export const FREE_INCLUSIONS = [
+  {
+    icon: BookOpen,
+    title: "FMGE Prep Roadmap",
+    desc: "Which books, which subjects, how to prepare month-by-month — structured by doctors who passed.",
+  },
+  {
+    icon: GraduationCap,
+    title: "University Selection Help",
+    desc: "NMC-approved universities in Russia, Georgia, Kyrgyzstan — ranked honestly by our doctors.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "NMC Registration Guidance",
+    desc: "Step-by-step walkthrough of registering with the National Medical Commission after clearing FMGE.",
+  },
+  {
+    icon: Users,
+    title: "Ongoing Peer Mentorship",
+    desc: "Access to a mentor — a real doctor — from the day you enroll until the day you practise in India.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Clinical Internship Advice",
+    desc: "How to make the most of your rotations abroad and build experience that counts for NMC.",
+  },
+  {
+    icon: Trophy,
+    title: "FMGE Coaching Support",
+    desc: "Coaching resources, mock tests, and structured guidance — completely free for students enrolled through us.",
+  },
+] as const;
+
+export const DIFFERENTIATORS = [
+  {
+    number: "01",
+    title: "Talk to doctors, not sales agents",
+    body: "Every seminar features FMGE-cleared doctors who studied in Russia and Georgia and are now practising in India. Their advice comes from experience, not commission.",
+  },
+  {
+    number: "02",
+    title: "Ask the hard questions openly",
+    body: "Will you get clinical exposure? Is the degree respected? Can you actually clear FMGE? Get unfiltered answers in the room — not scripted brochure language.",
+  },
+  {
+    number: "03",
+    title: "Free support from enrollment to practice",
+    body: "If you enroll through us, a mentor stays with you throughout your degree, FMGE prep, and NMC registration. One relationship, not a hand-off.",
+  },
+] as const;
+
+export const SPEAKER_COUNTRIES = [
+  {
+    country: "Russia",
+    countryCode: "ru",
+    detail: "FMGE-cleared doctors from KSMU, PSMU, Kazan State, and other NMC-approved universities.",
+    hasFmgeGraduates: true,
+  },
+  {
+    country: "Georgia",
+    countryCode: "ge",
+    detail: "FMGE-cleared graduates from TSMU, David Tvildiani, University of Georgia, and more.",
+    hasFmgeGraduates: true,
+  },
+  {
+    country: "Kyrgyzstan",
+    countryCode: "kg",
+    detail: "FMGE-cleared doctors from KSMA, Osh State, and International School of Medicine.",
+    hasFmgeGraduates: true,
+  },
+  {
+    country: "Uzbekistan",
+    countryCode: "uz",
+    detail: "FMGE-cleared graduates from Tashkent Medical Academy and other NMC-listed institutions.",
+    hasFmgeGraduates: true,
+  },
+  {
+    country: "Vietnam",
+    countryCode: "vn",
+    detail: "Student representatives sharing firsthand experience of studying MBBS in Vietnam.",
+    hasFmgeGraduates: false,
+  },
+] as const;
+
+export const FAQ = [
+  {
+    q: "What time does the seminar start and how long does it last?",
+    a: "Seminars begin at 5:30 PM and typically run for 2–3 hours. We recommend arriving 10–15 minutes early. Your WhatsApp confirmation will include the exact schedule for your city.",
+  },
+  {
+    q: "Is there a registration fee?",
+    a: "No. Entry is completely free. There are no hidden charges for attending the seminar.",
+  },
+  {
+    q: "Who should attend — students or parents?",
+    a: "Both. Students can interact directly with doctors. Parents are encouraged to bring questions about NMC recognition, costs, and long-term career outcomes.",
+  },
+  {
+    q: "Which countries will the doctors represent?",
+    a: "Primarily Russia and Georgia — the two most popular NMC-approved destinations for Indian MBBS students. All speakers have completed their degrees, cleared FMGE, and are practising in India.",
+  },
+  {
+    q: "What if my city isn't on the list?",
+    a: "Register anyway. We'll add cities based on demand and personally notify you when one is scheduled near you.",
+  },
+  {
+    q: "What happens after I register?",
+    a: "Our team will WhatsApp you the nearest seminar date, exact venue address, and timing — and answer any advance questions.",
+  },
+  {
+    q: "Is the mentorship truly free?",
+    a: "Yes — for students who enroll through Students Traffic. From university selection to FMGE coaching to NMC registration, a dedicated mentor supports you at every stage.",
+  },
+] as const;
