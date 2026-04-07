@@ -28,11 +28,15 @@ import {
 } from "@/lib/structured-data";
 import { getComparisonHref, getUniversityHref } from "@/lib/routes";
 import type { FinderProgram } from "@/lib/data/types";
+import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 // formatCurrencyUsd moved to ComparisonTable component
 
 export async function generateStaticParams() {
   const guides = await getComparisonGuides();
-  return guides.map((guide) => ({ slug: guide.slug }));
+  return ensureNonEmptyStaticParams(
+    guides.map((guide) => ({ slug: guide.slug })),
+    { slug: "__comparison-fallback__" },
+  );
 }
 
 export async function generateMetadata({

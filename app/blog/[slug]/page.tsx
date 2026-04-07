@@ -18,6 +18,7 @@ import {
   contentAuthorName,
   contentAuthorSlug,
 } from "@/lib/content-governance";
+import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 const getPost = unstable_cache(
   async (slug: string) => {
@@ -87,12 +88,17 @@ const getPrevNext = unstable_cache(
 
 export async function generateStaticParams() {
   const db = getDb();
-  if (!db) return [];
+  if (!db) {
+    return [{ slug: "__blog-fallback__" }];
+  }
   const posts = await db
     .select({ slug: blogPosts.slug })
     .from(blogPosts)
     .where(eq(blogPosts.status, "published"));
-  return posts.map((p) => ({ slug: p.slug }));
+  return ensureNonEmptyStaticParams(
+    posts.map((p) => ({ slug: p.slug })),
+    { slug: "__blog-fallback__" },
+  );
 }
 
 const authorPath = `/authors/${contentAuthorSlug}`;

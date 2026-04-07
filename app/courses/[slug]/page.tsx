@@ -31,10 +31,14 @@ import {
   getStructuredDataGraph,
 } from "@/lib/structured-data";
 import { getCountryHref } from "@/lib/routes";
+import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 export async function generateStaticParams() {
   const courses = await getCourses();
-  return courses.map((course) => ({ slug: course.slug }));
+  return ensureNonEmptyStaticParams(
+    courses.map((course) => ({ slug: course.slug })),
+    { slug: "__course-fallback__" },
+  );
 }
 
 export async function generateMetadata({

@@ -55,11 +55,15 @@ import {
   formatProgramDuration,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
+import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 
 export async function generateStaticParams() {
   const countries = await getCountries();
-  return countries.map((country) => ({ slug: country.slug }));
+  return ensureNonEmptyStaticParams(
+    countries.map((country) => ({ slug: country.slug })),
+    { slug: "__country-fallback__" },
+  );
 }
 
 export async function generateMetadata({

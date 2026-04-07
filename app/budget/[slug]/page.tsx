@@ -25,10 +25,14 @@ import {
   getCourseHref,
 } from "@/lib/routes";
 import { formatCurrencyUsd } from "@/lib/utils";
+import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 export async function generateStaticParams() {
   const guides = await getBudgetGuides();
-  return guides.map((guide) => ({ slug: guide.slug }));
+  return ensureNonEmptyStaticParams(
+    guides.map((guide) => ({ slug: guide.slug })),
+    { slug: "__budget-fallback__" },
+  );
 }
 
 export async function generateMetadata({

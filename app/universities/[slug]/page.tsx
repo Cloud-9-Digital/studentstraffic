@@ -70,14 +70,14 @@ import {
   hasPublishedUsdAmount,
   hasRenderableProgramAnnualFee,
 } from "@/lib/utils";
+import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 export async function generateStaticParams() {
   const universities = await getUniversities();
-  if (universities.length === 0) {
-    return [{ slug: "__catalog-fallback__" }];
-  }
-
-  return universities.map((university) => ({ slug: university.slug }));
+  return ensureNonEmptyStaticParams(
+    universities.map((university) => ({ slug: university.slug })),
+    { slug: "__catalog-fallback__" },
+  );
 }
 
 export async function generateMetadata({
