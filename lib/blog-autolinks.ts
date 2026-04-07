@@ -37,7 +37,7 @@ const STATIC_RULES: LinkRule[] = [
   { text: "MBBS in Georgia",    href: "/blog/mbbs-in-georgia-2026-complete-guide",   priority: 10 },
   { text: "MBBS in Kyrgyzstan", href: "/blog/mbbs-in-kyrgyzstan-2026-complete-guide", priority: 10 },
   { text: "MBBS in Uzbekistan", href: "/blog/mbbs-in-uzbekistan-2026-complete-guide", priority: 10 },
-  { text: "MBBS in Vietnam",    href: "/blog/mbbs-in-vietnam-2026-complete-guide",   priority: 10 },
+  { text: "MBBS in Vietnam",    href: "/mbbs-in-vietnam",   priority: 10 },
   { text: "best medical universities in Vietnam", href: "/blog/best-vietnam-medical-universities-for-indian-students-ranking", priority: 10 },
   { text: "MBBS in Vietnam admission", href: "/blog/mbbs-in-vietnam-admission-2026-eligibility-documents-timeline", priority: 10 },
   { text: "MBBS in Vietnam fees", href: "/blog/mbbs-in-vietnam-fees-2026-total-cost-guide", priority: 10 },

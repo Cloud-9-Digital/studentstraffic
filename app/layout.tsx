@@ -9,6 +9,7 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { Toaster } from "@/components/ui/sonner";
 import { defaultMetadata } from "@/lib/metadata";
 import {
+  getAuthorStructuredData,
   getOrganizationStructuredData,
   getStructuredDataGraph,
   getWebsiteStructuredData,
@@ -62,6 +63,7 @@ export default function RootLayout({
         <JsonLd
           data={getStructuredDataGraph([
             getOrganizationStructuredData(),
+            getAuthorStructuredData(),
             getWebsiteStructuredData(),
           ])}
         />

@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { unstable_cache } from "next/cache";
 import { CalendarDays, Clock, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import readingTime from "reading-time";
+import { cache } from "react";
 
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
@@ -20,23 +21,32 @@ import {
 } from "@/lib/content-governance";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
-const getPost = unstable_cache(
-  async (slug: string) => {
-    const db = getDb();
-    if (!db) return null;
-    const [post] = await db
-      .select()
-      .from(blogPosts)
-      .where(eq(blogPosts.slug, slug))
-      .limit(1);
-    return post ?? null;
-  },
-  ["blog-post"],
-  { tags: ["blog"], revalidate: 3600 }
-);
+const PLACEHOLDER_BLOG_SLUG = "__blog-fallback__";
+
+type RelatedPost = {
+  id: number;
+  title: string;
+  slug: string;
+  excerpt: string | null;
+  coverUrl: string | null;
+  category: string | null;
+  publishedAt: Date | string | null;
+  readingTimeMinutes: number | null;
+};
+
+const getPost = cache(async (slug: string) => {
+  const db = getDb();
+  if (!db) return null;
+  const [post] = await db
+    .select()
+    .from(blogPosts)
+    .where(eq(blogPosts.slug, slug))
+    .limit(1);
+  return post ?? null;
+});
 
 const getRelatedPosts = unstable_cache(
-  async (slug: string, category: string | null) => {
+  async (slug: string, category: string | null): Promise<RelatedPost[]> => {
     const db = getDb();
     if (!db) return [];
     // Try same category first, fall back to any recent posts
@@ -87,18 +97,7 @@ const getPrevNext = unstable_cache(
 );
 
 export async function generateStaticParams() {
-  const db = getDb();
-  if (!db) {
-    return [{ slug: "__blog-fallback__" }];
-  }
-  const posts = await db
-    .select({ slug: blogPosts.slug })
-    .from(blogPosts)
-    .where(eq(blogPosts.status, "published"));
-  return ensureNonEmptyStaticParams(
-    posts.map((p) => ({ slug: p.slug })),
-    { slug: "__blog-fallback__" },
-  );
+  return ensureNonEmptyStaticParams([], { slug: PLACEHOLDER_BLOG_SLUG });
 }
 
 const authorPath = `/authors/${contentAuthorSlug}`;
@@ -109,6 +108,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  if (slug === PLACEHOLDER_BLOG_SLUG) return {};
   const post = await getPost(slug);
   if (!post) return {};
 
@@ -169,6 +169,9 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  if (slug === PLACEHOLDER_BLOG_SLUG) {
+    notFound();
+  }
   const post = await getPost(slug);
 
   if (!post || post.status !== "published") notFound();
@@ -376,7 +379,7 @@ export default async function BlogPostPage({
               <div className="flex-1 h-px bg-border" />
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map((r) => (
+              {related.map((r: RelatedPost) => (
                 <Link
                   key={r.slug}
                   href={`/blog/${r.slug}`}

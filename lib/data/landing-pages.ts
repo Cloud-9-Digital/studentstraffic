@@ -214,13 +214,14 @@ export const landingPages: LandingPage[] = [
     title: "MBBS in Vietnam",
     kicker: "Follows NMC guidelines · English-medium · Affordable fees",
     summary:
-      "Vietnam has emerged as one of the most credible and affordable MBBS destinations for Indian students — with universities following NMC guidelines, English-medium programs, and fees starting from $2,833/year. Students Traffic has sent 1,000+ students to Vietnam and handles the entire process for you, from application to landing.",
+      "MBBS in Vietnam is best suited to Indian students who want a lower-cost, English-medium, closer-to-home alternative to private MBBS in India or colder destinations like Russia. The right university can offer workable fees, growing Indian student support, and a credible India-return pathway, but university-level checking matters far more here than broad country-level marketing claims.",
     heroHighlights: [
       "Fees from $2,833/year",
       "Follows NMC guidelines",
       "English-medium programs",
-      "Hostel with Indian food",
-      "Closer to India",
+      "3–5 hour flight from India",
+      "Hostel and Indian food support",
+      "September intake",
     ],
     reasonsToChoose: [
       "Significantly lower fees than Indian private medical colleges — total 6-year costs can be ₹15–45 lakh all-in, well below comparable programs in Russia or Eastern Europe.",
@@ -289,23 +290,23 @@ export const landingPages: LandingPage[] = [
     ],
     metaTitle: "MBBS in Vietnam 2026 | Universities, Fees & Admissions for Indian Students",
     metaDescription:
-      "Complete guide to MBBS in Vietnam for Indian students — universities following NMC guidelines, fees from $2,833/year, English-medium programs, hostel details, and free expert counselling.",
+      "Compare MBBS in Vietnam for Indian students with updated fees, top universities, eligibility, hostel details, English-medium options, and the India-return pathway.",
     atAGlance: [
       { label: "Program", value: "MBBS (6-year international MD program)" },
       { label: "Annual tuition", value: "$2,833 – $9,000" },
-      { label: "Living costs", value: "$2,400 – $4,800/year" },
-      { label: "Total 6-year cost", value: "$31,000 – $75,000 approx." },
+      { label: "Living costs", value: "$2,400 – $4,800 per year" },
+      { label: "Total 6-year cost", value: "Roughly ₹15 lakh – ₹45 lakh all-in" },
       { label: "Intake", value: "September" },
       { label: "Medium", value: "English (with Vietnamese clinical orientation)" },
       { label: "NEET required", value: "Not for admission — required before program start if practising in India" },
-      { label: "Recognition", value: "NMC, WHO, FAIMER (university-specific)" },
+      { label: "Recognition", value: "WDOMS / WHO listing and India-return fit are university-specific" },
     ],
     eligibility: {
       intro:
         "Indian students applying for MBBS in Vietnam must meet the standard NMC requirements for overseas medical education, as confirmed in the 2022 NMC Screening Test Regulations.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology as core subjects",
-        "Minimum 60% aggregate in PCB in Class 12",
+        "Usually 50% to 60% aggregate in PCB depending on the university; stronger options may expect better academic consistency",
         "NEET-UG not required for admission — but must have qualified NEET-UG before the program starts if you intend to practise medicine in India after graduation",
         "Age 17 or above at the time of admission",
         "Valid Indian passport",
@@ -313,7 +314,7 @@ export const landingPages: LandingPage[] = [
     },
     admissionSteps: [
       "If you plan to practise in India, ensure you have a valid NEET-UG score before your MBBS program begins",
-      "Check that your optionsed Vietnam universities follow NMC guidelines — verify on the official NMC website",
+      "Check that your shortlisted Vietnam universities fit current NMC expectations for the India-return pathway — verify on official sources before paying",
       "Submit your application with required documents to the university or an authorised representative",
       "Receive the university's official admission offer letter",
       "Apply for a Vietnam student visa at the Vietnamese Embassy in India",

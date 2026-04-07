@@ -20,12 +20,15 @@ import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
-import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { UniversityCard } from "@/components/site/university-card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import {
   catalogReviewedAt,
+  contentAuthorName,
+  contentAuthorRole,
+  contentAuthorSlug,
+  formatContentDate,
 } from "@/lib/content-governance";
 import { navDestinations, siteConfig } from "@/lib/constants";
 import {
@@ -47,11 +50,61 @@ import {
 import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
 import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import {
-  getBudgetIndexHref,
-  getCompareIndexHref,
   getCountryHref,
   getUniversityHref,
 } from "@/lib/routes";
+import { formatProgramAnnualFee } from "@/lib/utils";
+
+type PageDecisionGuide = {
+  intro: string;
+  idealFor: string[];
+  rethinkIf: string[];
+  verificationChecks: string[];
+  sources: Array<{
+    label: string;
+    href: string;
+    note: string;
+  }>;
+};
+
+const pageDecisionGuides: Record<string, PageDecisionGuide> = {
+  "mbbs-in-vietnam": {
+    intro:
+      "Vietnam can be an excellent MBBS route for Indian students, but it is not a blanket yes for everyone. The strongest-fit students usually care about cost control, proximity to India, and English-medium delivery more than they care about legacy brand names alone.",
+    idealFor: [
+      "Students who want a lower-cost alternative to Indian private medical colleges without moving too far from home.",
+      "Families who value English-medium teaching and easier travel over cold-weather destinations with longer flight times.",
+      "Applicants who are willing to compare universities carefully instead of choosing on generic country-level marketing claims.",
+    ],
+    rethinkIf: [
+      "You want the strongest possible legacy brand or the deepest long-track India-return data regardless of cost.",
+      "You are not prepared for local-language adjustment during patient-facing clinical exposure in later years.",
+      "You have not cleared NEET-UG and still plan to return to India for licensing after graduation.",
+    ],
+    verificationChecks: [
+      "Whether the exact university and program structure fit current NMC screening requirements for the India-return pathway.",
+      "Whether tuition, hostel charges, and one-time fees are documented recently enough to plan a real 6-year budget.",
+      "Whether the university's city, clinical language environment, and Indian student support match the applicant's personality and needs.",
+    ],
+    sources: [
+      {
+        label: "National Medical Commission",
+        href: "https://www.nmc.org.in/",
+        note: "For India-return rules, foreign medical graduate regulations, and licensing pathway context.",
+      },
+      {
+        label: "World Directory of Medical Schools",
+        href: "https://search.wdoms.org/",
+        note: "For school-level directory checks and baseline institution verification.",
+      },
+      {
+        label: "Embassy of Vietnam in India",
+        href: "https://vnembassy-newdelhi.mofa.gov.vn/",
+        note: "For visa and consular guidance alongside the university's own admissions communication.",
+      },
+    ],
+  },
+};
 
 export async function generateStaticParams() {
   const slugs = await getLandingPageSlugs();
@@ -105,35 +158,18 @@ export default async function LandingPageRoute({
   const path = `/${page.slug}`;
   const previewPrograms = context.featuredPrograms;
   const feeStructures = getFeeStructuresForSlugs(page.featuredUniversitySlugs);
-  const nextSteps = [
-    {
-      href: getCountryHref(country.slug),
-      label: "Destination",
-      title: `Explore ${country.name}`,
-      description: `Step back from this guide and review the broader destination context before finalising a shortlist.`,
-    },
-    {
-      href: previewPrograms[0]
-        ? getUniversityHref(previewPrograms[0].university.slug)
-        : `/universities?country=${country.slug}&course=${course.slug}`,
-      label: "Universities",
-      title: "Inspect individual universities",
-      description: "Move from destination-level research into actual university profiles, fees, and student perspective.",
-    },
-    {
-      href: getCompareIndexHref(),
-      label: "Compare",
-      title: "Read comparison guides",
-      description: "Use side-by-side comparisons when your shortlist starts narrowing and rankings stop being useful.",
-    },
-    {
-      href: getBudgetIndexHref(),
-      label: "Budget",
-      title: "Browse budget-led options",
-      description: "Check lower-cost routes once you know the course and destination band that fits your plan.",
-    },
-  ];
-
+  const authorPath = `/authors/${contentAuthorSlug}`;
+  const pageDecisionGuide = pageDecisionGuides[page.slug];
+  const heroQuickFacts = page.atAGlance?.slice(0, 4) ?? [];
+  const jumpLinks = [
+    previewPrograms.length
+      ? { href: "#university-compare", label: "University comparison" }
+      : null,
+    feeStructures.length ? { href: "#fees", label: "Fees" } : null,
+    page.eligibility ? { href: "#eligibility", label: "Eligibility" } : null,
+    page.hostelInfo ? { href: "#hostel", label: "Hostel & food" } : null,
+    page.faq.length ? { href: "#faq", label: "FAQs" } : null,
+  ].filter(Boolean) as Array<{ href: string; label: string }>;
   const countryCode = navDestinations.find(
     (d) => d.href === `/countries/${country.slug}`
   )?.countryCode;
@@ -168,6 +204,69 @@ export default async function LandingPageRoute({
       : null,
     page.faq.length ? getFaqStructuredData(page.faq, path) : null,
   ];
+  const serviceSupportSection = (
+    <section className="deferred-render border-b border-border bg-primary py-14 md:py-20">
+      <div className="container-shell">
+        <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-16">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+              Students Traffic
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-4xl">
+              We handle everything, but only after the shortlist makes sense.
+            </h2>
+            <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
+              Once you know Vietnam is the right destination and the university
+              is the right fit, we manage the operational work from application
+              through landing. That lets this page stay decision-first instead
+              of turning into generic counselling copy.
+            </p>
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  icon: <Plane className="size-5 text-white/80" />,
+                  label: "Flight ticket",
+                  desc: `We book your travel to ${country.name}`,
+                },
+                { icon: <IdCard className="size-5 text-white/80" />, label: "Student visa", desc: "Full visa application handled by us" },
+                { icon: <ShieldPlus className="size-5 text-white/80" />, label: "Health insurance", desc: "Arranged before you depart" },
+                { icon: <FileCheck className="size-5 text-white/80" />, label: "Document legalisation", desc: "Apostille and ministry authentication handled" },
+                { icon: <GraduationCap className="size-5 text-white/80" />, label: "University application", desc: "Submitted directly on your behalf" },
+                { icon: <Home className="size-5 text-white/80" />, label: "Hostel booking", desc: "Accommodation sorted before arrival" },
+              ].map((item) => (
+                <div key={item.label} className="flex gap-3 rounded-xl border border-white/10 bg-white/8 px-4 py-4">
+                  <span className="mt-0.5 shrink-0">{item.icon}</span>
+                  <div>
+                    <p className="text-sm font-semibold text-white">{item.label}</p>
+                    <p className="mt-0.5 text-xs leading-5 text-white/60">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="shrink-0 lg:text-right">
+            <div className="inline-flex flex-col items-center justify-center rounded-2xl border border-white/15 bg-white/10 px-10 py-8 text-center">
+              <span className="font-display text-5xl font-bold text-white">3,000+</span>
+              <span className="mt-2 text-sm text-white/60">students guided abroad</span>
+              <div className="mt-5 border-t border-white/15 pt-5">
+                <CounsellingDialog
+                  triggerContent={<>Start your application <ArrowRight className="size-4" /></>}
+                  triggerSize="lg"
+                  triggerClassName="bg-accent text-white hover:bg-accent-strong"
+                  title="Start your application"
+                  description="We handle everything from application to landing — visa, flight, health insurance, document legalisation, and hostel. Share your details and we'll be in touch within 24 hours."
+                  submitLabel="Start my application"
+                  ctaVariant="landing_service_cta"
+                  countrySlug={country.slug}
+                  courseSlug={course.slug}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 
   return (
     <>
@@ -208,6 +307,73 @@ export default async function LandingPageRoute({
               <p className="mt-6 max-w-lg text-base leading-7 text-white/62">
                 {page.summary}
               </p>
+
+              {page.heroHighlights.length ? (
+                <div className="mt-6 flex flex-wrap gap-2.5">
+                  {page.heroHighlights.map((highlight) => (
+                    <span
+                      key={highlight}
+                      className="rounded-full border border-white/14 bg-white/8 px-3 py-1.5 text-xs font-semibold tracking-[0.04em] text-white/80 backdrop-blur-sm"
+                    >
+                      {highlight}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+
+              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/55">
+                <span>Reviewed {formatContentDate(catalogReviewedAt)}</span>
+                <span className="hidden h-1 w-1 rounded-full bg-white/25 sm:inline-block" />
+                <span>
+                  By{" "}
+                  <Link href={authorPath} className="text-white/72 underline underline-offset-4 hover:text-white">
+                    {contentAuthorName}
+                  </Link>
+                  {`, ${contentAuthorRole.toLowerCase()}`}
+                </span>
+                <span className="hidden h-1 w-1 rounded-full bg-white/25 sm:inline-block" />
+                <Link
+                  href="/editorial-policy"
+                  className="text-white/72 underline underline-offset-4 hover:text-white"
+                >
+                  Editorial policy
+                </Link>
+              </div>
+
+              {heroQuickFacts.length ? (
+                <div className="mt-7 grid gap-3 sm:grid-cols-2">
+                  {heroQuickFacts.map((row) => (
+                    <div
+                      key={row.label}
+                      className="rounded-2xl border border-white/12 bg-white/8 px-4 py-4 backdrop-blur-sm"
+                    >
+                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white/45">
+                        {row.label}
+                      </p>
+                      <p className="mt-1.5 text-sm font-semibold leading-6 text-white">
+                        {row.value}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+
+              {jumpLinks.length ? (
+                <div className="mt-7 flex flex-wrap items-center gap-2.5">
+                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white/45">
+                    Jump to
+                  </span>
+                  {jumpLinks.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className="rounded-full border border-white/14 px-3 py-1.5 text-xs font-semibold text-white/75 transition-colors hover:bg-white/10 hover:text-white"
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
 
               <div className="mt-9 flex flex-wrap gap-3">
                 <CounsellingDialog
@@ -273,8 +439,166 @@ export default async function LandingPageRoute({
         </section>
       ) : null}
 
+      {pageDecisionGuide ? (
+        <section className="deferred-render border-b border-border bg-[#f7f4ed] py-14 md:py-18">
+          <div className="container-shell">
+            <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                  Decision fit
+                </p>
+                <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading sm:text-4xl">
+                  Who should seriously consider {page.title}, and who should pause
+                </h2>
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground">
+                  {pageDecisionGuide.intro}
+                </p>
+
+                <div className="mt-8 grid gap-4 md:grid-cols-2">
+                  <div className="rounded-[1.5rem] border border-emerald-200 bg-white px-6 py-6 shadow-sm">
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-emerald-700">
+                      Strong fit if
+                    </p>
+                    <ul className="mt-4 space-y-3">
+                      {pageDecisionGuide.idealFor.map((item) => (
+                        <li key={item} className="flex gap-3">
+                          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-700" />
+                          <span className="text-sm leading-6 text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="rounded-[1.5rem] border border-amber-200 bg-white px-6 py-6 shadow-sm">
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-amber-700">
+                      Think twice if
+                    </p>
+                    <ul className="mt-4 space-y-3">
+                      {pageDecisionGuide.rethinkIf.map((item) => (
+                        <li key={item} className="flex gap-3">
+                          <AlertTriangle className="mt-0.5 size-4 shrink-0 text-amber-700" />
+                          <span className="text-sm leading-6 text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-border bg-white px-6 py-6 shadow-sm">
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                  What we verify
+                </p>
+                <ul className="mt-4 space-y-3">
+                  {pageDecisionGuide.verificationChecks.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <FileCheck className="mt-0.5 size-4 shrink-0 text-primary" />
+                      <span className="text-sm leading-6 text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-8 rounded-2xl border border-border bg-[#faf8f4] p-5">
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    Official starting points
+                  </p>
+                  <div className="mt-4 space-y-3">
+                    {pageDecisionGuide.sources.map((source) => (
+                      <a
+                        key={source.label}
+                        href={source.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block rounded-xl border border-border bg-white px-4 py-4 transition-colors hover:border-primary/30 hover:bg-primary/5"
+                      >
+                        <p className="text-sm font-semibold text-heading">{source.label}</p>
+                        <p className="mt-1 text-xs leading-5 text-muted-foreground">{source.note}</p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {previewPrograms.length ? (
+        <section id="university-compare" className="deferred-render border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <div className="mb-8">
+              <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+                Compare top MBBS universities in {country.name} quickly
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground">
+                This is the scan-friendly view most families want before they
+                open individual university pages. Use it to narrow your shortlist,
+                then go deeper into fees, hostel, support, and city fit.
+              </p>
+            </div>
+
+            <div className="overflow-hidden rounded-[1.75rem] border border-border shadow-sm">
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y divide-border">
+                  <thead className="bg-[#f7f5f0]">
+                    <tr>
+                      {["University", "Type", "Annual fee", "Medium", "Best for", "Verified"].map((label) => (
+                        <th
+                          key={label}
+                          className="px-5 py-4 text-left text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground"
+                        >
+                          {label}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border bg-white">
+                    {previewPrograms.map((program) => (
+                      <tr key={program.offering.slug} className="align-top">
+                        <td className="px-5 py-4">
+                          <Link
+                            href={getUniversityHref(program.university.slug)}
+                            className="font-semibold text-heading transition-colors hover:text-primary"
+                          >
+                            {program.university.name}
+                          </Link>
+                          <p className="mt-1 text-xs leading-5 text-muted-foreground">
+                            {program.university.city}, {program.country.name}
+                          </p>
+                        </td>
+                        <td className="px-5 py-4 text-sm text-muted-foreground">
+                          {program.university.type}
+                        </td>
+                        <td className="px-5 py-4">
+                          <span className="text-sm font-semibold text-foreground">
+                            {formatProgramAnnualFee(program.offering)}
+                          </span>
+                        </td>
+                        <td className="px-5 py-4 text-sm text-muted-foreground">
+                          {program.offering.medium}
+                        </td>
+                        <td className="px-5 py-4 text-sm leading-6 text-muted-foreground">
+                          {program.university.bestFitFor[0] ??
+                            "Students comparing fit by budget, city, and support quality."}
+                        </td>
+                        <td className="px-5 py-4 text-sm text-muted-foreground">
+                          {formatContentDate(
+                            program.offering.feeVerifiedAt ??
+                              program.university.lastVerifiedAt ??
+                              catalogReviewedAt
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {/* ── Universities ─────────────────────────────────────────────────── */}
-      <section className="deferred-render border-b border-border py-14 md:py-20">
+      <section id="universities" className="deferred-render border-b border-border py-14 md:py-20">
         <div className="container-shell">
           <div className="mb-10">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -302,7 +626,7 @@ export default async function LandingPageRoute({
 
       {/* ── Fee Structures ───────────────────────────────────────────────── */}
       {feeStructures.length > 0 && (
-        <section className="deferred-render border-b border-border py-14 md:py-20">
+        <section id="fees" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Fee structures — 2026
@@ -405,70 +729,6 @@ export default async function LandingPageRoute({
           </div>
         </section>
       )}
-
-      {/* ── How We Help ──────────────────────────────────────────────────── */}
-      <section className="deferred-render border-b border-border bg-primary py-14 md:py-20">
-        <div className="container-shell">
-          <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-16">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
-                Students Traffic
-              </p>
-              <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-4xl">
-                We handle everything — you don&apos;t need to leave home.
-              </h2>
-              <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
-                We have already guided{" "}
-                <span className="font-semibold text-white">3,000+ students</span>{" "}
-                through overseas medical admissions. From shortlisting through
-                landing, every step is managed by our team at no extra cost to
-                you.
-              </p>
-              <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {[
-                  {
-                    icon: <Plane className="size-5 text-white/80" />,
-                    label: "Flight ticket",
-                    desc: `We book your travel to ${country.name}`,
-                  },
-                  { icon: <IdCard className="size-5 text-white/80" />, label: "Student visa", desc: "Full visa application handled by us" },
-                  { icon: <ShieldPlus className="size-5 text-white/80" />, label: "Health insurance", desc: "Arranged before you depart" },
-                  { icon: <FileCheck className="size-5 text-white/80" />, label: "Document legalisation", desc: "Apostille & ministry authentication" },
-                  { icon: <GraduationCap className="size-5 text-white/80" />, label: "University application", desc: "Submitted directly on your behalf" },
-                  { icon: <Home className="size-5 text-white/80" />, label: "Hostel booking", desc: "Accommodation sorted before arrival" },
-                ].map((item) => (
-                  <div key={item.label} className="flex gap-3 rounded-xl border border-white/10 bg-white/8 px-4 py-4">
-                    <span className="mt-0.5 shrink-0">{item.icon}</span>
-                    <div>
-                      <p className="text-sm font-semibold text-white">{item.label}</p>
-                      <p className="mt-0.5 text-xs leading-5 text-white/60">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="shrink-0 lg:text-right">
-              <div className="inline-flex flex-col items-center justify-center rounded-2xl border border-white/15 bg-white/10 px-10 py-8 text-center">
-                <span className="font-display text-5xl font-bold text-white">3,000+</span>
-                <span className="mt-2 text-sm text-white/60">students guided abroad</span>
-                <div className="mt-5 border-t border-white/15 pt-5">
-                  <CounsellingDialog
-                    triggerContent={<>Start your application <ArrowRight className="size-4" /></>}
-                    triggerSize="lg"
-                    triggerClassName="bg-accent text-white hover:bg-accent-strong"
-                    title="Start your application"
-                    description="We handle everything from application to landing — visa, flight, health insurance, document legalisation, and hostel. Share your details and we'll be in touch within 24 hours."
-                    submitLabel="Start my application"
-                    ctaVariant="landing_service_cta"
-                    countrySlug={country.slug}
-                    courseSlug={course.slug}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── Why this destination ─────────────────────────────────────────── */}
       <section className="deferred-render border-b border-border py-14 md:py-20">
@@ -596,7 +856,7 @@ export default async function LandingPageRoute({
 
       {/* ── Eligibility Criteria ─────────────────────────────────────────── */}
       {page.eligibility ? (
-        <section className="deferred-render border-b border-border py-14 md:py-20">
+        <section id="eligibility" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Eligibility criteria for Indian students
@@ -818,7 +1078,7 @@ export default async function LandingPageRoute({
 
       {/* ── Hostel & Accommodation ───────────────────────────────────────── */}
       {page.hostelInfo ? (
-        <section className="deferred-render border-b border-border py-14 md:py-20">
+        <section id="hostel" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Hostel &amp; accommodation
@@ -863,19 +1123,11 @@ export default async function LandingPageRoute({
         </section>
       ) : null}
 
-      <section className="deferred-render border-b border-border py-14 md:py-20">
-        <div className="container-shell">
-          <ResearchNextSteps
-            title={`Use ${page.title} as one step in a bigger research path`}
-            description="Search performance grows when pages are tightly connected around the user journey. This guide should lead naturally into destination context, university-level review, comparison pages, and budget planning."
-            items={nextSteps}
-          />
-        </div>
-      </section>
+      {serviceSupportSection}
 
       {/* ── FAQ ──────────────────────────────────────────────────────────── */}
       {page.faq.length > 0 && (
-        <section className="deferred-render border-b border-border py-14 md:py-20">
+        <section id="faq" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <div className="mb-10">
               <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">

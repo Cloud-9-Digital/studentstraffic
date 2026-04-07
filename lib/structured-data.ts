@@ -5,7 +5,13 @@ import type {
   University,
 } from "@/lib/data/types";
 import { siteConfig } from "@/lib/constants";
-import { contentAuthorName } from "@/lib/content-governance";
+import {
+  contentAuthorAreas,
+  contentAuthorBio,
+  contentAuthorName,
+  contentAuthorRole,
+  contentAuthorSlug,
+} from "@/lib/content-governance";
 import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
 import {
   getCountryHref,
@@ -58,6 +64,8 @@ function getAbsoluteMediaUrls(urls: Array<string | undefined>) {
   return uniqueValues(urls).map((url) => absoluteUrl(url));
 }
 
+const contentAuthorPath = `/authors/${contentAuthorSlug}`;
+
 function getProgramCourseStructuredData(program: FinderProgram) {
   const universityUrl = absoluteUrl(getUniversityHref(program.university.slug));
   const hasPublishedFee = hasPublishedUsdAmount(program.offering.annualTuitionUsd);
@@ -102,6 +110,10 @@ export function getOrganizationStructuredDataId() {
 
 export function getWebsiteStructuredDataId() {
   return withFragment("/", "website");
+}
+
+export function getAuthorStructuredDataId() {
+  return withFragment(contentAuthorPath, "person");
 }
 
 export function getWebPageStructuredDataId(path: string) {
@@ -185,6 +197,21 @@ export function getWebsiteStructuredData() {
   };
 }
 
+export function getAuthorStructuredData() {
+  return {
+    "@type": "Person",
+    "@id": getAuthorStructuredDataId(),
+    name: contentAuthorName,
+    jobTitle: contentAuthorRole,
+    description: contentAuthorBio,
+    url: absoluteUrl(contentAuthorPath),
+    worksFor: {
+      "@id": getOrganizationStructuredDataId(),
+    },
+    knowsAbout: contentAuthorAreas,
+  };
+}
+
 export function getWebPageStructuredData(input: WebPageSchemaInput) {
   return {
     "@type": input.pageType ?? "WebPage",
@@ -198,9 +225,7 @@ export function getWebPageStructuredData(input: WebPageSchemaInput) {
       "@id": getWebsiteStructuredDataId(),
     },
     author: {
-      "@type": "Person",
-      name: contentAuthorName,
-      url: absoluteUrl("/about"),
+      "@id": getAuthorStructuredDataId(),
     },
     publisher: {
       "@id": getOrganizationStructuredDataId(),

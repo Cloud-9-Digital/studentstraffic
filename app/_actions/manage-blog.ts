@@ -89,6 +89,7 @@ export async function createBlogPostAction(
   }).returning({ id: blogPosts.id });
 
   revalidatePath("/blog");
+  revalidatePath(`/blog/${slug}`);
   revalidateTag("blog", "hours");
 
   return { success: true, postId: inserted.id };
@@ -120,7 +121,11 @@ export async function updateBlogPostAction(
   if (!db) return { error: "Database unavailable." };
 
   const [existing] = await db
-    .select({ publishedAt: blogPosts.publishedAt, status: blogPosts.status })
+    .select({
+      slug: blogPosts.slug,
+      publishedAt: blogPosts.publishedAt,
+      status: blogPosts.status,
+    })
     .from(blogPosts)
     .where(eq(blogPosts.id, postId))
     .limit(1);
@@ -152,9 +157,11 @@ export async function updateBlogPostAction(
       ? null
       : existing.publishedAt;
 
+  const nextSlug = parsed.data.slug || generateSlug(parsed.data.title);
+
   await db.update(blogPosts).set({
     title: parsed.data.title,
-    slug: parsed.data.slug || generateSlug(parsed.data.title),
+    slug: nextSlug,
     excerpt: parsed.data.excerpt ?? null,
     content: parsed.data.content ?? "",
     ...(coverUrl !== undefined ? { coverUrl } : {}),
@@ -167,7 +174,10 @@ export async function updateBlogPostAction(
   }).where(eq(blogPosts.id, postId));
 
   revalidatePath("/blog");
-  revalidatePath(`/blog/${parsed.data.slug}`);
+  if (existing.slug !== nextSlug) {
+    revalidatePath(`/blog/${existing.slug}`);
+  }
+  revalidatePath(`/blog/${nextSlug}`);
   revalidateTag("blog", "hours");
 
   return { success: true, postId };
