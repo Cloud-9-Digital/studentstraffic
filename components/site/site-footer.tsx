@@ -4,6 +4,7 @@ import { ArrowRight, Mail, Phone } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import {
+  footerCityGuides,
   footerPopularRoutes,
   guideNav,
   navCourses,
@@ -18,15 +19,13 @@ export function SiteFooter() {
         <div className="container-shell flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/45">
-              Free Guidance
+              Free expert counselling
             </p>
             <h2 className="mt-1.5 font-display text-2xl font-semibold text-heading-contrast sm:text-3xl">
-              Get clearer information and expert support.
+              Know which university to apply to — before the cycle closes.
             </h2>
             <p className="mt-2 max-w-xl text-sm text-white/60">
-              Explore universities, read detailed guides, and reach out when
-              you want help understanding fees, recognition, countries, or the
-              next admissions step.
+              Our counsellors have placed Indian students in universities across Georgia, Kyrgyzstan, Uzbekistan, Russia, and Vietnam. Book a free call and get a direct answer for your NEET score and budget.
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-3">
@@ -43,7 +42,7 @@ export function SiteFooter() {
               href="/universities"
               className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/18"
             >
-              Explore universities
+              Browse universities
             </Link>
           </div>
         </div>
@@ -219,6 +218,27 @@ export function SiteFooter() {
                   </span>
                 ))}
               </div>
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">
+              City Guides
+            </p>
+            <div className="flex flex-wrap gap-x-1 gap-y-1">
+              {footerCityGuides.map((city, index) => (
+                <span key={city.href} className="flex items-center">
+                  <Link
+                    href={city.href}
+                    className="text-sm text-white/65 transition-colors hover:text-white"
+                  >
+                    {city.name}
+                  </Link>
+                  {index < footerCityGuides.length - 1 ? (
+                    <span className="mx-2.5 text-white/15">·</span>
+                  ) : null}
+                </span>
+              ))}
             </div>
           </div>
         </div>

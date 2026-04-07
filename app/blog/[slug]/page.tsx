@@ -280,13 +280,13 @@ export default async function BlogPostPage({
         <div className="mb-10 overflow-hidden rounded-2xl bg-surface-dark">
           <div className="px-7 py-8 md:px-10 md:py-10">
             <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">
-              Free counselling
+              We get you admitted
             </p>
             <h3 className="font-display text-2xl font-bold text-white md:text-3xl">
-              Ready to apply for<br />MBBS abroad?
+              Ready to secure your MBBS seat?
             </h3>
             <p className="mt-2 text-[13px] leading-relaxed text-white/60">
-              Talk to a student already studying there — no cost, ever.
+              Book a free call — our counsellors will tell you exactly which university fits your NEET score and budget.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link

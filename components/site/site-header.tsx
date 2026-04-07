@@ -257,7 +257,7 @@ export function SiteHeader() {
               triggerClassName="gap-1.5 px-5 shadow-cta hover:shadow-cta-hover"
               triggerContent={
                 <>
-                  Free Counselling
+                  Book my free call
                   <ArrowRight className="size-3.5" />
                 </>
               }
@@ -386,7 +386,7 @@ export function SiteHeader() {
               onTriggerClick={closeMobile}
               triggerContent={
                 <>
-                  Free Counselling
+                  Book my free call
                   <ArrowRight className="size-4" />
                 </>
               }

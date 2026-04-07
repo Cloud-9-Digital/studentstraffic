@@ -41,9 +41,14 @@ import {
   getWdomsSchoolHref,
 } from "@/lib/routes";
 import {
+  createSlug,
   getSortableUsdValue,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
+
+export function cityNameToSlug(city: string) {
+  return createSlug(city);
+}
 import { finderPageSize } from "@/lib/constants";
 import { getFinderSort } from "@/lib/filters";
 import { applyUniversityContentOverride } from "@/lib/data/university-content-overrides";
@@ -1134,6 +1139,41 @@ export async function getProgramsForUniversity(universitySlug: string) {
   return programs.filter(
     (program) => program.university.slug === universitySlug,
   );
+}
+
+export async function getProgramsForCity(citySlug: string) {
+  const programs = await getFinderProgramsBase();
+  return programs.filter(
+    (program) => cityNameToSlug(program.university.city) === citySlug,
+  );
+}
+
+export async function getUniqueCities() {
+  const programs = await getFinderProgramsBase();
+
+  const cityMeta = new Map<string, { slug: string; name: string; countrySlug: string; countryName: string }>();
+  const uniSetsPerCity = new Map<string, Set<string>>();
+
+  for (const program of programs) {
+    const slug = cityNameToSlug(program.university.city);
+    if (!cityMeta.has(slug)) {
+      cityMeta.set(slug, {
+        slug,
+        name: program.university.city,
+        countrySlug: program.country.slug,
+        countryName: program.country.name,
+      });
+    }
+    if (!uniSetsPerCity.has(slug)) uniSetsPerCity.set(slug, new Set());
+    uniSetsPerCity.get(slug)!.add(program.university.slug);
+  }
+
+  return Array.from(cityMeta.values())
+    .map((entry) => ({
+      ...entry,
+      universityCount: uniSetsPerCity.get(entry.slug)?.size ?? 0,
+    }))
+    .sort((a, b) => b.universityCount - a.universityCount);
 }
 
 export async function getRelatedLandingPages(

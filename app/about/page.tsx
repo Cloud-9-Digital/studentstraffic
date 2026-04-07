@@ -44,8 +44,8 @@ const journey = [
   {
     Icon: Globe,
     step: "01",
-    heading: "Explore your options",
-    body: "Browse universities across Russia, Vietnam, Georgia, and more. Compare fees, programs, cities, and recognition side by side.",
+    heading: "See every option, priced and ranked for your goals",
+    body: "Browse universities across Russia, Vietnam, Georgia, Kyrgyzstan, and Uzbekistan — with real fees, NMC recognition status, and city-by-city comparison.",
   },
   {
     Icon: MessageCircle,

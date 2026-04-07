@@ -57,21 +57,18 @@ export default function UniversitiesPage({
                 Free Counselling
               </p>
               <h2 className="font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Need help planning the right path?
+                Tell us your NEET score — we&apos;ll tell you where to apply.
               </h2>
               <p className="max-w-2xl text-base leading-8 text-muted-foreground">
-                Share your NEET score, budget, and destination preference and
-                our counsellors will help you narrow down to the universities
-                that actually match — comparing total fees, recognition status,
-                and admission requirements, all free.
+                Share your NEET score, budget, and destination preference. Our counsellors will call you with a direct recommendation — the right university, the right country, and the exact next step to secure your seat.
               </p>
             </div>
 
             <DeferredLeadForm
               sourcePath="/universities"
               ctaVariant="finder_cta"
-              title="Talk through your options"
-              description="Share your details and our counsellors will help you compare universities, destinations, fees, and next steps."
+              title="Get your admission plan"
+              description="Leave your number — we call you, not the other way around. Our experts have placed students in universities across 5 countries this cycle."
             />
           </div>
         </div>

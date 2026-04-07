@@ -757,8 +757,8 @@ export default async function CountryPage({
             <DeferredLeadForm
               sourcePath={`/countries/${country.slug}`}
               ctaVariant="country_sidebar"
-              title={`Talk through studying in ${country.name}`}
-              description="Tell us what you are comparing and our counsellors will help you evaluate your options more clearly."
+              title={`Apply to study in ${country.name}`}
+              description="Leave your number — our counsellors know every university in this country and will call you with a direct recommendation for your NEET score and budget."
               countrySlug={country.slug}
               courseSlug={primaryProgram?.course.slug}
             />

@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 export function LeadFormSkeleton({
   embedded = false,
   title = "Talk to an admissions expert",
-  description = "Share your details and our counsellors will reach out to understand your goals and guide you through your options.",
+  description = "Leave your number — an expert will call you and tell you exactly which university to apply to, based on your NEET score, budget, and destination.",
   className,
 }: {
   embedded?: boolean;

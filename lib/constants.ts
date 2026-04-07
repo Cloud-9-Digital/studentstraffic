@@ -50,6 +50,11 @@ export const guideNav = [
     label: "Budget Guides",
     description: "Plan by tuition range before moving into university pages",
   },
+  {
+    href: "/cities",
+    label: "City Guides",
+    description: "Compare universities within each city — fees, community, and lifestyle",
+  },
 ] as const;
 
 export const navDestinations = [
@@ -106,6 +111,19 @@ export const navCourses = [
     name: "Nursing",
     description: "BSc & MSc Nursing Abroad",
   },
+] as const;
+
+export const footerCityGuides = [
+  { href: "/cities/tbilisi", name: "MBBS in Tbilisi" },
+  { href: "/cities/bishkek", name: "MBBS in Bishkek" },
+  { href: "/cities/tashkent", name: "MBBS in Tashkent" },
+  { href: "/cities/batumi", name: "MBBS in Batumi" },
+  { href: "/cities/osh", name: "MBBS in Osh" },
+  { href: "/cities/bukhara", name: "MBBS in Bukhara" },
+  { href: "/cities/moscow", name: "MBBS in Moscow" },
+  { href: "/cities/st-petersburg", name: "MBBS in St. Petersburg" },
+  { href: "/cities/hanoi", name: "MBBS in Hanoi" },
+  { href: "/cities/da-nang", name: "MBBS in Da Nang" },
 ] as const;
 
 export const footerPopularRoutes = [

@@ -38,12 +38,12 @@ export function MobileStickyBar() {
       }}
     >
       <div className="flex items-center gap-2.5 px-4 py-3">
-        {/* Free Counselling — primary CTA */}
+        {/* Book call — primary CTA */}
         <CounsellingDialog
           triggerContent={
             <span className="flex items-center justify-center gap-2 text-white!">
               <Headphones className="size-4 shrink-0" strokeWidth={1.75} />
-              Free Counselling
+              Book my free call
             </span>
           }
           triggerClassName="flex-1 rounded-xl bg-accent py-2.5 text-sm! font-semibold! text-white! shadow-sm shadow-accent/30 transition-all active:scale-[0.97]"

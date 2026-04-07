@@ -197,14 +197,14 @@ const steps = [
       "If we need to follow up on your request, we'll use the contact details you just shared.",
   },
   {
-    title: "Save your options",
+    title: "Have your details ready",
     description:
-      "It helps to keep your preferred universities, course goals, and questions ready for the next conversation.",
+      "Your NEET score, PCB percentage, passport status, and budget range — the counsellor will ask for these to give you a specific recommendation.",
   },
   {
-    title: "Keep exploring",
+    title: "Keep reading",
     description:
-      "You can keep comparing universities, countries, and guides while you wait for the next update.",
+      "Use the time to go through the university and country guides — the more you know, the faster the call goes.",
   },
 ] as const;
 
@@ -223,8 +223,8 @@ async function DynamicSub({
   return (
     <p className="ty-sub mx-auto mt-5 max-w-md text-lg leading-relaxed text-white/55">
       {interest
-        ? `Our team will be in touch soon about ${interest}.`
-        : "Our team will be in touch shortly to walk you through your options."}
+        ? `Our counsellor will call you about ${interest} — usually within one business day.`
+        : "Our counsellor will call you — usually within one business day."}
     </p>
   );
 }
@@ -232,7 +232,7 @@ async function DynamicSub({
 function DefaultSub() {
   return (
     <p className="ty-sub mx-auto mt-5 max-w-md text-lg leading-relaxed text-white/55">
-      Our team will be in touch shortly to walk you through your options.
+      Our counsellor will call you — usually within one business day.
     </p>
   );
 }

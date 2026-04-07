@@ -241,12 +241,12 @@ export default async function LandingPageRoute({
 
               <div className="mt-9 flex flex-wrap gap-3">
                 <CounsellingDialog
-                  triggerContent={<>Free counselling <ArrowRight className="size-4" /></>}
+                  triggerContent={<>Book my seat <ArrowRight className="size-4" /></>}
                   triggerSize="lg"
                   triggerClassName="bg-accent text-white shadow-cta hover:bg-accent-strong hover:shadow-cta-hover"
-                  title="Get free counselling"
-                  description={`Tell us your goals and we'll guide you through your options for ${page.title} — and handle the entire admissions process for you.`}
-                  submitLabel="Request counselling"
+                  title={`Get admitted — ${page.title}`}
+                  description={`Leave your number and our counsellors will call you. We handle the application, documents, and visa — you show up ready.`}
+                  submitLabel="Book my free call"
                   ctaVariant="landing_hero_cta"
                   countrySlug={country.slug}
                   courseSlug={course.slug}
@@ -899,7 +899,7 @@ export default async function LandingPageRoute({
             <div className="px-8 py-12 md:px-14 md:py-16 lg:flex lg:items-center lg:justify-between lg:gap-12">
               <div className="lg:max-w-xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
-                  Free counselling
+                  We get you admitted
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-4xl">
                   Ready to apply? We handle everything, free of charge.
@@ -926,13 +926,13 @@ export default async function LandingPageRoute({
               </div>
               <div className="mt-10 shrink-0 space-y-3 lg:mt-0 lg:w-80">
                 <CounsellingDialog
-                  triggerContent="Get free counselling"
+                  triggerContent="Start my application"
                   triggerVariant="accent"
                   triggerSize="lg"
                   triggerClassName="w-full"
-                  title="Ready to apply?"
-                  description={`3,000+ students have trusted us with their ${page.title} journey. We handle everything, from application through departure planning, so you stay home until it is time to board your flight.`}
-                  submitLabel="Yes, get me started"
+                  title="Start your application"
+                  description={`Leave your number — we call you within one business day and handle everything from there. Application, documents, visa, departure. You just show up.`}
+                  submitLabel="Yes, call me"
                   ctaVariant="landing_bottom_cta"
                   countrySlug={country.slug}
                   courseSlug={course.slug}

@@ -144,11 +144,11 @@ export default async function CoursePage({
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 w-full sm:w-auto mt-2">
               <Button asChild size="lg">
-                <Link href={finderHref}>Explore universities <ArrowRight className="ml-2 size-4" /></Link>
+                <Link href={finderHref}>Browse universities <ArrowRight className="ml-2 size-4" /></Link>
               </Button>
               <CounsellingDialog
                 courseSlug={course.slug}
-                triggerContent="Get free counselling"
+                triggerContent="Book my free call"
                 triggerVariant="outline"
                 triggerSize="lg"
               />

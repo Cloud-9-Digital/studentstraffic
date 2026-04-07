@@ -40,7 +40,7 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     admissionSteps: [
-      "Shortlist Russian universities by official program page, current teaching medium, course duration, and whether the university is still accepting foreign applicants for your cycle.",
+      "Identify which Russian universities match your NEET score, budget, and teaching medium preference — check the official program page, course duration, and whether the university is accepting foreign applicants for your cycle.",
       "Check your NEET status, PCB marks, passport validity, and whether the university uses an internal exam or interview for foreign applicants.",
       "Prepare your passport and education documents, then confirm whether your marksheets need apostille or legalization and notarized Russian translation.",
       "Submit the application through the university admissions system or other official route accepted by that university.",
@@ -120,7 +120,7 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     admissionSteps: [
-      "Shortlist universities by teaching language, city, total cost, and whether the full course structure fits your India-return plans",
+      "Identify which universities match your NEET score, budget, teaching language preference, and India-return licensing plan — then confirm your target before proceeding",
       "Check NEET status, passport validity, and the exact admissions checklist used by your chosen university",
       "Submit the application with academic documents and any university-specific forms",
       "Wait for the official offer letter and visa-support paperwork from the university",

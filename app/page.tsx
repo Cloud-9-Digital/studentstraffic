@@ -143,14 +143,14 @@ export default async function HomePage() {
             <CounsellingDialog
               triggerContent={
                 <>
-                  Get Free Counselling
+                  Book my free call
                   <ArrowRight className="size-4" />
                 </>
               }
               triggerSize="lg"
             />
             <Button asChild size="lg" variant="outline">
-              <Link href="/universities">Explore universities</Link>
+              <Link href="/universities">Browse universities</Link>
             </Button>
           </div>
 
@@ -268,23 +268,21 @@ export default async function HomePage() {
             <div className="relative grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/60">
-                  Free Counselling
+                  We get you admitted
                 </p>
                 <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-5xl">
-                  Want the right university with admission support from start to finish?
+                  Tell us your NEET score. We&apos;ll tell you exactly where to apply.
                 </h2>
                 <p className="mt-4 max-w-2xl text-base leading-8 text-white/75">
-                  Share a few details and we&apos;ll guide you toward the right
-                  university, support your application, and help you move all the
-                  way to enrolment.
+                  Our counsellors have placed students across Georgia, Kyrgyzstan, Uzbekistan, Russia, and Vietnam. Leave your number — we call you with a direct recommendation and handle everything from application to departure.
                 </p>
               </div>
 
               <DeferredLeadForm
                 sourcePath="/"
                 ctaVariant="home_cta"
-                title="Get free admission guidance"
-                description="Share your details and our team will help you choose the right university and next step."
+                title="Get your admission plan"
+                description="Leave your number — we call you within one business day with a direct recommendation for your NEET score, budget, and destination."
                 className="lg:justify-self-end"
               />
             </div>

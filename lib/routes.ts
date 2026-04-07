@@ -49,3 +49,11 @@ export function getWdomsDirectoryHref(countrySlug: string) {
 export function getWdomsSchoolHref(countrySlug: string, schoolSlug: string) {
   return `/wdoms/${countrySlug}/${schoolSlug}`;
 }
+
+export function getCitiesIndexHref() {
+  return "/cities";
+}
+
+export function getCityHref(citySlug: string) {
+  return `/cities/${citySlug}`;
+}
