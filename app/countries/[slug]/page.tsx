@@ -1064,7 +1064,7 @@ function getCountryEditorialCopy({
     heroLead: override?.heroLead ?? summary,
     overviewLead:
       override?.overviewLead ??
-      `${whyStudentsChooseIt} Country-level research is most useful when it helps you understand the structure of the destination before you move into university-level differences.`,
+      `${whyStudentsChooseIt} Country-level guidance is most useful when it helps you understand the structure of the destination before you move into university-level differences.`,
     directoryLead:
       courseCount > 1
         ? `Compare the ${programCount} listed options across ${cityCount} cities and ${courseCount} study tracks.`

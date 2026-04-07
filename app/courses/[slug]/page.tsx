@@ -204,7 +204,7 @@ export default async function CoursePage({
                 {programs.length} listed option{programs.length === 1 ? "" : "s"}
               </h2>
               <p className="mt-3 text-base leading-7 text-muted-foreground group-hover:text-foreground/80 transition-colors">
-                Browse these options when you want to move from course research to
+                Browse these options when you want to move from course guidance to
                 actual university comparison.
               </p>
             </div>
@@ -215,8 +215,8 @@ export default async function CoursePage({
             <div>
               <SectionHeading
                 eyebrow="Destination Hub"
-                title={`Where students research ${course.shortName}`}
-                description="Open these destination pages if you want more context on cost, recognition, student life, and country-level differences."
+                title={`Where students choose ${course.shortName}`}
+                description="Open these destination pages for more context on cost, recognition, student life, and country-level differences."
               />
               <div className="flex flex-wrap gap-3 mt-8">
                 {countries.map((country) => {

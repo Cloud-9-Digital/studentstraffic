@@ -69,12 +69,12 @@ export default async function CompareIndexPage() {
               Comparison Guides
             </p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-heading sm:text-6xl">
-              Compare the shortlist side by side.
+              Compare the right universities side by side.
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
               Browse {sortedGuides.length} ready-made university comparisons from
-              the live catalog, or start from the university finder if you want a
-              custom shortlist.
+              the live catalog, or start from the university finder if you want
+              to compare your own options before applying.
             </p>
 
             <div className="mt-7">
@@ -103,8 +103,8 @@ export default async function CompareIndexPage() {
                 No comparison guides yet
               </h2>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground">
-                Start from the university finder to build a shortlist, then come
-                back once there are side-by-side comparisons available.
+                Start from the university finder to pick a few matching options,
+                then come back once there are side-by-side comparisons available.
               </p>
               <div className="mt-6">
                 <Button asChild variant="outline">

@@ -27,7 +27,7 @@ export const metadata: Metadata = buildIndexableMetadata({
 const termsSections = [
   {
     title: "Using the website",
-    body: "Students Traffic is intended to help students and families research universities abroad, compare options, and request admissions support. You should use the site lawfully and avoid submitting false, misleading, or unauthorized information.",
+    body: "Students Traffic is intended to help students and families choose universities abroad, evaluate options, and request admissions support. You should use the site lawfully and avoid submitting false, misleading, or unauthorized information.",
   },
   {
     title: "Admissions guidance scope",

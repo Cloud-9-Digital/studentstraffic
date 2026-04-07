@@ -117,9 +117,9 @@ export default async function BudgetGuidePage({
               {guide.course.shortName} under {budgetLabel} per year.
             </h1>
             <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground">
-              This page keeps the shortlist inside an annual tuition ceiling of{" "}
-              {budgetLabel}, so you can compare affordable options before you go
-              deeper into full university details.
+              This page keeps your options inside an annual tuition ceiling of{" "}
+              {budgetLabel}, so you can focus on affordable universities before
+              moving into full admission details.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3">

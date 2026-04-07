@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS Abroad Guides | Countries, Courses, Comparisons & Budgets",
   description:
-    "Browse country guides, course guides, university comparisons, and budget planning guides to support your MBBS abroad options.",
+    "Browse country guides, course guides, university comparisons, and budget planning guides to help you choose the right MBBS abroad path.",
   path: "/guides",
 });
 
@@ -47,7 +47,7 @@ const guideTypes = [
     Icon: BookOpen,
     title: "Comparison Guides",
     description:
-      "Use side-by-side university comparisons once your shortlist is getting tighter.",
+      "Use side-by-side university comparisons when you are choosing between final options.",
     href: "/compare",
     cta: "Open comparisons",
     theme:
@@ -101,7 +101,7 @@ export default async function GuidesPage() {
       path,
       name: "Study abroad guides",
       description:
-        "Guide hub for country, course, comparison, budget, and editorial research pages.",
+        "Guide hub for country, course, comparison, and budget guidance pages.",
     }),
   ];
 
@@ -112,13 +112,13 @@ export default async function GuidesPage() {
         <div className="container-shell relative py-14 md:py-18 lg:py-20">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-              Research Guides
+              Admission Guides
             </p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-heading sm:text-6xl">
               Start with the right guide type.
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
-              Use this hub to jump into country research, course research,
+              Use this hub to move into country guidance, course guidance,
               comparison pages, or budget-first planning.
             </p>
           </div>

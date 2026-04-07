@@ -30,10 +30,10 @@ export function WdomsPreviewSection({
             Official directory coverage
           </div>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            Research-backed university profiles from WDOMS
+            Verified university profiles from WDOMS
           </h2>
           <p className="mt-3 text-base leading-8 text-muted-foreground">
-            These are public research profiles built from the World Directory
+            These are public university profiles built from the World Directory
             of Medical Schools and official school websites linked there. They
             make universities visible on the site before we publish fee-led
             program cards in the main explorer.

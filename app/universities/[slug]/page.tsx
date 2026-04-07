@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 import { JsonLd } from "@/components/shared/json-ld";
-import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
 import { ComparisonCard } from "@/components/site/comparison-card";
 import { UniversityPeerSection } from "@/components/site/university-peer-section";
@@ -57,10 +56,6 @@ import {
   getWebPageStructuredData,
   getUniversityStructuredData,
 } from "@/lib/structured-data";
-import {
-  getCompareIndexHref,
-  getCountryHref,
-} from "@/lib/routes";
 import {
   getUniversityCoverImage,
   getUniversityInitials,
@@ -382,41 +377,6 @@ async function UniversityRelatedSection({
 
   return (
     <>
-      <div className="py-10">
-        <ResearchNextSteps
-          title="Continue researching before you decide"
-          description="Strong university pages should lead you into the next useful comparison, not trap you on one profile. Use these paths to validate destination fit, compare alternatives, and widen the shortlist when needed."
-          items={[
-            {
-              href: getCountryHref(countrySlug),
-              label: "Destination",
-              title: `Explore ${countryName}`,
-              description: `Review country-level costs, eligibility, and student-planning context around ${countryName}.`,
-            },
-            {
-              href: getCompareIndexHref(),
-              label: "Compare",
-              title: "Open comparison guides",
-              description: "See similar universities side by side once your shortlist starts narrowing.",
-            },
-            {
-              href: courseSlug ? `/universities?country=${countrySlug}&course=${courseSlug}` : `/universities?country=${countrySlug}`,
-              label: "Finder",
-              title: courseShortName
-                ? `Browse more ${courseShortName} options`
-                : `Browse more universities in ${countryName}`,
-              description: "Return to the finder to compare fees, city, and intake across multiple options.",
-            },
-            {
-              href: "/students",
-              label: "Students",
-              title: "Talk to current students",
-              description: "Add peer perspective once you have fee and recognition context from the profile.",
-            },
-          ]}
-        />
-      </div>
-
       {comparisonGuides.length > 0 && (
         <div className="py-10">
           <CardCarousel heading="Compare with similar">

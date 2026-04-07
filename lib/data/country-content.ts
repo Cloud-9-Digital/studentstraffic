@@ -335,7 +335,7 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     admissionSteps: [
-      "Read the latest NMC alert and FMGL 2021 requirements before shortlisting any Uzbekistan university or branch campus.",
+      "Read the latest NMC alert and FMGL 2021 requirements before choosing any Uzbekistan university or branch campus.",
       "Avoid agent-only recommendations. Contact the university directly and ask for the current English-medium curriculum, clinical training plan, and internship structure in writing.",
       "Check whether the exact institution or branch has been named in any NMC alert, Embassy communication, or other regulatory warning before paying any registration amount.",
       "Verify that the course is run in one institution, that clinical training is not split informally across locations, and that the internship is completed at the same foreign university.",

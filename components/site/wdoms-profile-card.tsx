@@ -15,7 +15,7 @@ export function WdomsProfileCard({
         <div className="space-y-2">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/8 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-primary">
             <FileSearch className="size-3.5" />
-            WDOMS research
+            WDOMS profile
           </span>
           <h3 className="text-base font-semibold leading-7 text-foreground">
             <Link
@@ -50,7 +50,7 @@ export function WdomsProfileCard({
           href={getWdomsSchoolHref(entry.countrySlug, entry.routeSlug)}
           className="inline-flex items-center rounded-full bg-primary px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-primary/90"
         >
-          Research profile
+          View profile
         </Link>
 
         {entry.matchedUniversitySlug ? (

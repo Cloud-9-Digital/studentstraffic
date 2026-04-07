@@ -2,26 +2,26 @@ export const catalogReviewedAt = "2026-03-27";
 export const governancePublishedAt = "2026-03-27";
 export const contentAuthorName = "Bharath";
 export const contentAuthorSlug = "bharath";
-export const contentAuthorRole = "Editorial lead";
+export const contentAuthorRole = "Admissions content lead";
 export const contentAuthorBio =
-  "Bharath leads Students Traffic's editorial work on MBBS abroad research, university comparisons, admissions planning, and student decision support for Indian families.";
+  "Bharath leads Students Traffic's admissions content for MBBS abroad, covering university selection, fee clarity, compliance checks, and application guidance for Indian families.";
 export const contentAuthorAreas = [
-  "MBBS abroad destination research",
-  "University comparison and shortlist planning",
-  "Admissions, fees, and student-planning guidance",
+  "MBBS abroad destinations and university selection",
+  "Admissions, fees, and compliance guidance",
+  "Application planning and student onboarding support",
 ] as const;
 
 export const editorialPrinciples = [
   "Prefer university-specific academic context, fee clarity, and admissions guidance over generic brochure summaries.",
   "Review every admissions page against current university and public admissions materials before publishing updates.",
   "Revise or remove content when the underlying fee, intake, recognition, or student-planning context changes.",
-  "Separate editorial guidance from promotional claims so students can compare options clearly.",
+  "Keep every page useful for students who want to choose the right university and move into admission with clarity.",
 ];
 
 export const methodologySteps = [
-  "Collect program, fee, intake, location, and student-planning data from current university and public admissions materials.",
-  "Normalize data into a consistent catalog so students can compare universities on the same criteria.",
-  "Highlight important student decision factors such as tuition, city, medium, recognition, clinical environment, and fit.",
+  "Collect program, fee, intake, location, and admission data from current university and public admissions materials.",
+  "Normalize data into a consistent catalog so students can evaluate universities on the same criteria.",
+  "Highlight important admission factors such as tuition, city, medium, recognition, clinical environment, and fit.",
   "Review destination and admissions pages through our editorial team before publishing.",
 ];
 

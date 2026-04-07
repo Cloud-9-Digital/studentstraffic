@@ -45,23 +45,23 @@ export const metadata: Metadata = buildIndexableMetadata({
 const journeySteps = [
   {
     step: "01",
-    title: "Research destinations",
-    body: "Country guides covering costs, recognition, cities, and student life — before you choose a single university.",
+    title: "Choose your destination",
+    body: "See costs, recognition, cities, and student life across countries before you commit to a university.",
   },
   {
     step: "02",
     title: "Compare universities",
-    body: "Filter 500+ programs by country, fees, intake, and medium. Explore your options in minutes.",
+    body: "Filter 500+ programs by country, fees, intake, and medium to find the right-fit universities faster.",
   },
   {
     step: "03",
-    title: "Hear from real students",
-    body: "Read reviews, watch videos, and message enrolled peers. Get answers agents won't give you.",
+    title: "Get expert guidance",
+    body: "Talk to our team about the right university, budget, compliance, and admission route before you apply.",
   },
   {
     step: "04",
-    title: "Apply with free support",
-    body: "Our counsellors handle admissions, applications, documents, and visa — completely free.",
+    title: "Secure admission",
+    body: "Our counsellors handle applications, documents, admission follow-up, and visa support at no extra cost.",
   },
 ] as const;
 
@@ -83,7 +83,7 @@ const startingPoints = [
   {
     Icon: GraduationCap,
     title: "MBBS & Planning Guides",
-    description: "Eligibility, NEET cutoffs, FMGE prep, and total cost breakdowns by country.",
+    description: "Eligibility, NEET, FMGE/NExT, and total cost guidance for students ready to act.",
     href: "/guides",
     cta: "Read the guides",
   },
@@ -202,7 +202,7 @@ export default async function HomePage() {
         <div className="container-shell">
           <SectionHeading
             title="Where do you want to start?"
-            description="Pick the section that matches where you are in your research."
+            description="Pick the section that matches where you are in your admission journey."
           />
           <div className="grid gap-4 lg:grid-cols-3">
             {startingPoints.map(({ Icon, title, description, href, cta }) => (
@@ -235,7 +235,7 @@ export default async function HomePage() {
         <div className="container-shell">
           <SectionHeading
             title="Why students choose us"
-            description="Real information. Real reviews. Real support."
+            description="Real guidance, real support, and real admission help."
             align="center"
           />
           <div className="grid gap-4 lg:grid-cols-3">
@@ -271,20 +271,20 @@ export default async function HomePage() {
                   Free Counselling
                 </p>
                 <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-5xl">
-                  Want a shortlist that actually fits your budget and goals?
+                  Want the right university with admission support from start to finish?
                 </h2>
                 <p className="mt-4 max-w-2xl text-base leading-8 text-white/75">
-                  Share a few details and we&apos;ll help you narrow your options
-                  with clear next steps, realistic budget guidance, and a more
-                  confident plan.
+                  Share a few details and we&apos;ll guide you toward the right
+                  university, support your application, and help you move all the
+                  way to enrolment.
                 </p>
               </div>
 
               <DeferredLeadForm
                 sourcePath="/"
                 ctaVariant="home_cta"
-                title="Get your personalised shortlist"
-                description="Share your details and we&apos;ll follow up with guidance that matches where you are."
+                title="Get free admission guidance"
+                description="Share your details and our team will help you choose the right university and next step."
                 className="lg:justify-self-end"
               />
             </div>

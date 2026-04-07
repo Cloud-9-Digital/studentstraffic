@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { ArrowRight, BadgeCheck, BookOpen, FileSearch, Sparkles } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
-import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { Button } from "@/components/ui/button";
 import {
   catalogReviewedAt,
@@ -25,7 +24,7 @@ const authorPath = `/authors/${contentAuthorSlug}`;
 
 export const metadata: Metadata = buildIndexableMetadata({
   title: `${contentAuthorName} | ${contentAuthorRole} at Students Traffic`,
-  description: `${contentAuthorName} writes and reviews Students Traffic content on MBBS abroad destinations, university research, admissions planning, and shortlist support for Indian students.`,
+  description: `${contentAuthorName} writes and reviews Students Traffic content on MBBS abroad destinations, university selection, admissions planning, and application support for Indian students.`,
   path: authorPath,
 });
 
@@ -109,18 +108,18 @@ export default async function AuthorPage({
                 {[
                   {
                     Icon: FileSearch,
-                    title: "Research focus",
-                    body: "Country guides, admissions planning, shortlist logic, and decision support for Indian students.",
+                    title: "Content focus",
+                    body: "Country guides, university selection, admissions planning, and application guidance for Indian students.",
                   },
                   {
                     Icon: BadgeCheck,
-                    title: "Editorial role",
-                    body: "Reviews content for clarity, traceability, and practical usefulness before it reaches students.",
+                    title: "Admissions role",
+                    body: "Reviews content for clarity, traceability, and practical usefulness before it reaches students and families.",
                   },
                   {
                     Icon: Sparkles,
-                    title: "Reader goal",
-                    body: "Help families compare calmly, avoid bad-fit options, and move into action only when ready.",
+                    title: "Student goal",
+                    body: "Help families choose the right university, avoid bad-fit options, and move confidently into admission.",
                   },
                 ].map(({ Icon, title, body }) => (
                   <div key={title} className="rounded-2xl border border-border bg-background px-5 py-4">
@@ -154,41 +153,6 @@ export default async function AuthorPage({
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="section-space">
-        <div className="container-shell">
-          <ResearchNextSteps
-            title="Continue into the strongest research paths on the site"
-            description="This author profile should help readers jump into the main content clusters that drive better decisions: countries, universities, comparisons, and broader editorial guidance."
-            items={[
-              {
-                href: "/countries",
-                label: "Destinations",
-                title: "Explore country guides",
-                description: "Compare fees, recognition, and student-planning context across major MBBS destinations.",
-              },
-              {
-                href: "/universities",
-                label: "Finder",
-                title: "Browse universities",
-                description: "Move from broad research into actual university profiles and fee comparisons.",
-              },
-              {
-                href: "/compare",
-                label: "Compare",
-                title: "Read comparison guides",
-                description: "See how similar universities stack up once you have a rough shortlist.",
-              },
-              {
-                href: "/editorial-policy",
-                label: "Trust",
-                title: "Review editorial policy",
-                description: "Understand how Students Traffic approaches updates, sourcing, and decision-support content.",
-              },
-            ]}
-          />
         </div>
       </section>
 

@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS Country Guides for Indian Students | Fees & NMC Recognition",
   description:
-    "Compare live study-abroad country guides for Indian students, covering destination fit, fee direction, recognition context, and admissions planning before you shortlist universities.",
+    "Compare live study-abroad country guides for Indian students, covering destination fit, fee direction, recognition context, and admission planning before choosing universities.",
   path: "/countries",
 });
 
@@ -97,7 +97,7 @@ export default async function CountriesPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
               Compare destination fit, fee direction, recognition context, and
-              admissions practicality before you shortlist universities.
+              admissions practicality before you choose universities.
             </p>
           </div>
         </div>

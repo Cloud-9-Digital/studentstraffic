@@ -214,7 +214,7 @@ export const landingPages: LandingPage[] = [
     title: "MBBS in Vietnam",
     kicker: "Follows NMC guidelines · English-medium · Affordable fees",
     summary:
-      "MBBS in Vietnam is best suited to Indian students who want a lower-cost, English-medium, closer-to-home alternative to private MBBS in India or colder destinations like Russia. The right university can offer workable fees, growing Indian student support, and a credible India-return pathway, but university-level checking matters far more here than broad country-level marketing claims.",
+      "MBBS in Vietnam is a strong option for Indian students who want a lower-cost, English-medium, closer-to-home alternative to private MBBS in India or colder destinations like Russia. The right university can offer workable fees, growing Indian student support, and a credible India-return pathway, and our team helps you choose and secure the right option instead of leaving you to figure it out alone.",
     heroHighlights: [
       "Fees from $2,833/year",
       "Follows NMC guidelines",
@@ -314,7 +314,7 @@ export const landingPages: LandingPage[] = [
     },
     admissionSteps: [
       "If you plan to practise in India, ensure you have a valid NEET-UG score before your MBBS program begins",
-      "Check that your shortlisted Vietnam universities fit current NMC expectations for the India-return pathway — verify on official sources before paying",
+      "Check that your chosen Vietnam university fits current NMC expectations for the India-return pathway before you pay any fees",
       "Submit your application with required documents to the university or an authorised representative",
       "Receive the university's official admission offer letter",
       "Apply for a Vietnam student visa at the Vietnamese Embassy in India",
@@ -511,7 +511,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "What matters most when choosing an MBBS university in Georgia?",
         answer:
-          "NMC compliance, actual medium of instruction (not just stated), hospital affiliation quality for clinical years, hostel availability, the size of the Indian student community, and fee transparency matter more than brochure rankings or marketing claims. Georgia's smaller universities vary significantly in quality — shortlisting two or three carefully evaluated options is better than applying broadly.",
+          "NMC compliance, actual medium of instruction (not just stated), hospital affiliation quality for clinical years, hostel availability, the size of the Indian student community, and fee transparency matter more than brochure rankings or marketing claims. Georgia's smaller universities vary significantly in quality, so choosing two or three carefully evaluated options is better than applying broadly.",
       },
     ],
     metaTitle: "MBBS in Georgia 2026 | Fees, Universities, English Medium",
@@ -662,7 +662,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "What is the fee range for MBBS in Uzbekistan?",
         answer:
-          "Published tuition figures often fall in the $3,000 to $4,500 annual range, which is why Uzbekistan keeps appearing in low-budget shortlists. But NMC's warning means students should not choose this destination on fee alone. The first filter now is regulatory compliance, not price.",
+          "Published tuition figures often fall in the $3,000 to $4,500 annual range, which is why Uzbekistan keeps appearing in low-budget fee comparisons. But NMC's warning means students should not choose this destination on fee alone. The first filter now is regulatory compliance, not price.",
       },
       {
         question: "Is NEET required for MBBS in Uzbekistan?",
@@ -682,7 +682,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "How does Uzbekistan compare to Kazakhstan or Kyrgyzstan for MBBS?",
         answer:
-          "The old comparison used to focus on cost and city comfort. After the April 2026 NMC alert, the more important comparison is regulatory risk. If your shortlist includes Kazakhstan, Kyrgyzstan, or Russia too, compare each university on FMGL compliance, English-medium clinical training, and internship structure before comparing tuition.",
+          "The old comparison used to focus on cost and city comfort. After the April 2026 NMC alert, the more important comparison is regulatory risk. If you are also considering Kazakhstan, Kyrgyzstan, or Russia, compare each university on FMGL compliance, English-medium clinical training, and internship structure before comparing tuition.",
       },
       {
         question: "What intake months are available in Uzbekistan?",
@@ -717,7 +717,7 @@ export const landingPages: LandingPage[] = [
     },
     admissionSteps: [
       "Qualify NEET-UG and save the scorecard before the course begins",
-      "Read the current NMC alert and FMGL 2021 requirements before shortlisting any Uzbekistan institution",
+      "Read the current NMC alert and FMGL 2021 requirements before choosing any Uzbekistan institution",
       "Ask the university for written confirmation on course duration, English-medium delivery, clinical training, and internship structure",
       "Cross-check the exact institution or branch with NMC and the Indian Embassy if there is any doubt",
       "Apply only through the official university route with scanned academic and passport documents",

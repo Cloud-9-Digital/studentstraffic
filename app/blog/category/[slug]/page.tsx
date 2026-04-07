@@ -7,11 +7,9 @@ import { unstable_cache } from "next/cache";
 import { CalendarDays, Clock, ArrowLeft } from "lucide-react";
 import readingTime from "reading-time";
 
-import { ResearchNextSteps } from "@/components/site/research-next-steps";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 import { absoluteUrl } from "@/lib/metadata";
-import { contentAuthorName, contentAuthorSlug } from "@/lib/content-governance";
 
 // Canonical category definitions — slug → display name
 const CATEGORIES: Record<string, string> = {
@@ -94,75 +92,6 @@ const fmtDate = new Intl.DateTimeFormat("en-IN", {
   day: "numeric", month: "long", year: "numeric",
 });
 
-function getCategoryNextSteps(slug: string, categoryName: string) {
-  const common = [
-    {
-      href: "/universities",
-      label: "Finder",
-      title: "Browse universities",
-      description: "Move from article reading into actual university comparison pages and fee data.",
-    },
-    {
-      href: `/authors/${contentAuthorSlug}`,
-      label: "Author",
-      title: `About ${contentAuthorName}`,
-      description: "See who writes and reviews the editorial content across the site.",
-    },
-  ];
-
-  if (slug === "country-guide") {
-    return [
-      {
-        href: "/countries",
-        label: "Destinations",
-        title: "Explore country guides",
-        description: "Compare multiple destination pages before narrowing to a country.",
-      },
-      {
-        href: "/budget",
-        label: "Budget",
-        title: "Browse by budget",
-        description: "Use tuition bands to find countries and universities that fit your range.",
-      },
-      ...common,
-    ];
-  }
-
-  if (slug === "nmc-licensing") {
-    return [
-      {
-        href: "/countries",
-        label: "Countries",
-        title: "See NMC-relevant destinations",
-        description: "Review country-level context before evaluating individual universities.",
-      },
-      {
-        href: "/compare",
-        label: "Compare",
-        title: "Open comparison guides",
-        description: "Use side-by-side pages when recognition and fit questions overlap.",
-      },
-      ...common,
-    ];
-  }
-
-  return [
-    {
-      href: "/guides",
-      label: "Guides",
-      title: `Continue from ${categoryName}`,
-      description: "Open the full guide hub to branch into countries, comparisons, and budget research.",
-    },
-    {
-      href: "/compare",
-      label: "Compare",
-      title: "Read comparison guides",
-      description: "Compare similar options when one article is no longer enough to decide.",
-    },
-    ...common,
-  ];
-}
-
 export default async function CategoryPage({
   params,
 }: {
@@ -204,12 +133,6 @@ export default async function CategoryPage({
           </p>
         ) : (
           <div className="space-y-10">
-            <ResearchNextSteps
-              title={`Use ${categoryName} as a bridge into the next research step`}
-              description="Category pages should not be dead ends. These routes help readers move from one topic cluster into deeper destination, university, and comparison research."
-              items={getCategoryNextSteps(slug, categoryName)}
-            />
-
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {posts.map((post) => (
                 <Link

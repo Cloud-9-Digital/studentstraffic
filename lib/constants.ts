@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Students Traffic",
   shortName: "Students Traffic",
   description:
-    "Students Traffic helps Indian students research medical study-abroad options, compare universities, and get guided admissions support when they are ready to apply.",
+    "Students Traffic helps Indian students choose the right medical university abroad, secure admission with end-to-end guidance, and move confidently toward enrolment.",
   copyrightYear: 2026,
   email: "hello@studentstraffic.com",
   phone: "+91 91761 62888",
@@ -28,7 +28,7 @@ export const guideNav = [
     href: "/guides",
     label: "All Guides",
     description:
-      "Country, course, comparison, and budget research in one place",
+      "Country, course, comparison, and budget guidance in one place",
   },
   {
     href: "/countries",
@@ -43,12 +43,12 @@ export const guideNav = [
   {
     href: "/compare",
     label: "Comparison Guides",
-    description: "Side-by-side university evaluations for admissions decisions",
+    description: "Side-by-side university comparisons for confident admissions choices",
   },
   {
     href: "/budget",
     label: "Budget Guides",
-    description: "Research by tuition range before opening university pages",
+    description: "Plan by tuition range before moving into university pages",
   },
 ] as const;
 

@@ -106,8 +106,8 @@ export function UniversityAdmissionsSection({
       title: "When to start",
       body:
         intakeMonths.length > 0
-          ? `Start shortlisting and document preparation at least 3–6 months before the ${intakeMonths[0]} intake.`
-          : "Start shortlisting and document preparation early in the cycle and confirm exact timelines with the university.",
+          ? `Start document preparation and application planning at least 3–6 months before the ${intakeMonths[0]} intake.`
+          : "Start document preparation and application planning early in the cycle and confirm exact timelines with the university.",
     },
     {
       title: "What to verify",
