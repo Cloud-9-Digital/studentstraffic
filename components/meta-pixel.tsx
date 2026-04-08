@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const PIXEL_ID = "1702517386867719";
 
@@ -19,9 +19,14 @@ declare global {
 
 export function MetaPixel() {
   const pathname = usePathname();
+  const hasTrackedInitialPage = useRef(false);
 
   useEffect(() => {
     if (typeof window.fbq !== "function") return;
+    if (!hasTrackedInitialPage.current) {
+      hasTrackedInitialPage.current = true;
+      return;
+    }
     window.fbq("track", "PageView");
   }, [pathname]);
 
