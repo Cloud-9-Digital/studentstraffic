@@ -19,10 +19,6 @@ mkdirSync(artifactDir, { recursive: true });
 
 neonConfig.webSocketConstructor = WebSocket;
 
-if (!process.env.GEMINI_API_KEY) {
-  process.env.GEMINI_API_KEY = "REMOVED_GEMINI_API_KEY";
-}
-
 const hasDatabase = Boolean(process.env.DATABASE_URL);
 const hasGemini = Boolean(process.env.GEMINI_API_KEY);
 const hasCloudinary = Boolean(
