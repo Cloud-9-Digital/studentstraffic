@@ -8,7 +8,6 @@ import { z } from "zod";
 import {
   ClientContext,
   emptyToUndefined,
-  getFirstQueryValue,
   getFormString,
   getIpAddress,
   minutesAgo,
@@ -20,6 +19,7 @@ import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { syncLeadDestinations } from "@/lib/lead-sync";
+import { getTrackingSnapshot } from "@/lib/tracking";
 import {
   consumePublicFormRateLimits,
   normalizePhoneIdentifier,
@@ -88,22 +88,7 @@ export async function submitSeminarLeadAction(
   const submittedAt = new Date();
   const sourceQuery = parseJsonObject<QueryParamMap>(data.sourceQuery);
   const clientContext = parseJsonObject<ClientContext>(data.clientContext);
-
-  const utmSource =
-    cookieStore.get("utm_source")?.value ??
-    getFirstQueryValue(sourceQuery, "utm_source");
-  const utmMedium =
-    cookieStore.get("utm_medium")?.value ??
-    getFirstQueryValue(sourceQuery, "utm_medium");
-  const utmCampaign =
-    cookieStore.get("utm_campaign")?.value ??
-    getFirstQueryValue(sourceQuery, "utm_campaign");
-  const utmTerm =
-    cookieStore.get("utm_term")?.value ??
-    getFirstQueryValue(sourceQuery, "utm_term");
-  const utmContent =
-    cookieStore.get("utm_content")?.value ??
-    getFirstQueryValue(sourceQuery, "utm_content");
+  const tracking = getTrackingSnapshot(cookieStore, sourceQuery);
   const ipAddress = getIpAddress(headerStore);
 
   try {
@@ -161,14 +146,24 @@ export async function submitSeminarLeadAction(
           sourcePath: data.sourcePath,
           sourceUrl: emptyToUndefined(data.sourceUrl),
           sourceQuery,
+          visitorId: tracking.visitorId,
+          initialLandingPath: tracking.initialLandingPath,
+          initialLandingUrl: tracking.initialLandingUrl,
+          initialReferrer: tracking.initialReferrer,
+          initialUtmLandingUrl: tracking.initialUtmLandingUrl,
           pageTitle: emptyToUndefined(data.pageTitle),
           ctaVariant: data.ctaVariant,
           documentReferrer: emptyToUndefined(data.documentReferrer),
-          utmSource,
-          utmMedium,
-          utmCampaign,
-          utmTerm,
-          utmContent,
+          utmSource: tracking.utmSource,
+          utmMedium: tracking.utmMedium,
+          utmCampaign: tracking.utmCampaign,
+          utmTerm: tracking.utmTerm,
+          utmContent: tracking.utmContent,
+          gclid: tracking.gclid,
+          fbclid: tracking.fbclid,
+          gbraid: tracking.gbraid,
+          wbraid: tracking.wbraid,
+          ttclid: tracking.ttclid,
           referrer: headerStore.get("referer") ?? null,
           userAgent: headerStore.get("user-agent") ?? null,
           ipAddress,
@@ -195,11 +190,11 @@ export async function submitSeminarLeadAction(
         pageTitle: emptyToUndefined(data.pageTitle),
         ctaVariant: data.ctaVariant,
         documentReferrer: emptyToUndefined(data.documentReferrer),
-        utmSource,
-        utmMedium,
-        utmCampaign,
-        utmTerm,
-        utmContent,
+        utmSource: tracking.utmSource,
+        utmMedium: tracking.utmMedium,
+        utmCampaign: tracking.utmCampaign,
+        utmTerm: tracking.utmTerm,
+        utmContent: tracking.utmContent,
         referrer: headerStore.get("referer") ?? undefined,
         userAgent: headerStore.get("user-agent") ?? undefined,
         ipAddress: ipAddress ?? undefined,

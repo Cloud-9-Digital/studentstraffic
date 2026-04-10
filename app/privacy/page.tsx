@@ -4,6 +4,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/shared/json-ld";
 import { ContentTrustPanel } from "@/components/site/content-trust-panel";
 import { SectionHeading } from "@/components/site/section-heading";
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   catalogReviewedAt,
@@ -109,12 +110,14 @@ export default function PrivacyPage() {
                 {siteConfig.email}
               </Link>{" "}
               or call{" "}
-              <Link
+              <TrackedContactLink
+                channel="call"
+                location="privacy_page_call"
                 href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
                 className="font-medium text-primary underline-offset-2 hover:underline"
               >
                 {siteConfig.phone}
-              </Link>
+              </TrackedContactLink>
               .
             </p>
           </CardContent>

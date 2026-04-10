@@ -1,5 +1,6 @@
 import { Calendar, Phone } from "lucide-react";
 
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { siteConfig } from "@/lib/constants";
 import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
 
@@ -15,14 +16,18 @@ export function SeminarMobileCta() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-[#0c1a35]/96 px-4 py-3 backdrop-blur-md lg:hidden">
       <div className="flex items-center gap-2">
-        <a
+        <TrackedContactLink
+          channel="call"
+          location="seminar_mobile_call"
           href={`tel:${siteConfig.phone}`}
           aria-label="Call us"
           className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white transition hover:bg-white/20"
         >
           <Phone className="size-5" />
-        </a>
-        <a
+        </TrackedContactLink>
+        <TrackedContactLink
+          channel="whatsapp"
+          location="seminar_mobile_whatsapp"
           href={`https://wa.me/${siteConfig.whatsappNumber}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -30,7 +35,7 @@ export function SeminarMobileCta() {
           className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#25d366]/15 text-[#25d366] transition hover:bg-[#25d366]/25"
         >
           <WhatsAppIcon className="size-5" />
-        </a>
+        </TrackedContactLink>
         <SeminarDialogTrigger className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#c17f3b] py-3.5 text-sm font-semibold text-white transition hover:bg-[#a86d2f] active:scale-[0.98]">
           <Calendar className="size-4" />
           Reserve My Free Seat

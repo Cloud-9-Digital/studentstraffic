@@ -9,6 +9,7 @@ import { ArrowRight, ChevronDown, Menu, Phone, X } from "lucide-react";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { CountryFlag } from "@/components/site/country-flag";
 import { SearchPalette } from "@/components/site/search-palette";
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { cn } from "@/lib/utils";
 import { navDestinations, siteConfig } from "@/lib/constants";
 
@@ -235,14 +236,18 @@ export function SiteHeader() {
           {/* Desktop actions */}
           <div className="ml-auto hidden items-center gap-2 lg:flex">
             <SearchPalette />
-            <a
+            <TrackedContactLink
+              channel="call"
+              location="site_header_desktop_call"
               href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
               aria-label="Call us"
               className="flex h-9 w-9 items-center justify-center rounded-xl border border-primary/20 bg-primary/8 text-primary transition-all hover:bg-primary/14 hover:border-primary/30"
             >
               <Phone className="size-[18px]" strokeWidth={1.75} />
-            </a>
-            <a
+            </TrackedContactLink>
+            <TrackedContactLink
+              channel="whatsapp"
+              location="site_header_desktop_whatsapp"
               href={`https://wa.me/${siteConfig.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -250,7 +255,7 @@ export function SiteHeader() {
               className="flex h-9 w-9 items-center justify-center rounded-xl border border-whatsapp/25 bg-whatsapp/10 text-whatsapp-dark transition-all hover:bg-whatsapp/18 hover:border-whatsapp/35"
             >
               <WhatsAppIcon className="size-[18px]" />
-            </a>
+            </TrackedContactLink>
             <CounsellingDialog
               triggerVariant="accent"
               triggerSize="sm"
@@ -371,7 +376,9 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex-shrink-0 space-y-2.5 border-t border-border p-4">
-            <a
+            <TrackedContactLink
+              channel="whatsapp"
+              location="site_header_mobile_whatsapp"
               href={`https://wa.me/${siteConfig.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -379,7 +386,7 @@ export function SiteHeader() {
             >
               <WhatsAppIcon className="size-4" />
               Chat on WhatsApp
-            </a>
+            </TrackedContactLink>
             <CounsellingDialog
               triggerVariant="accent"
               triggerClassName="w-full gap-2"

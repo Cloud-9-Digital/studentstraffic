@@ -73,6 +73,7 @@ async function LeadDetail({ id }: { id: string }) {
         <Field label="CTA variant" value={lead.ctaVariant} />
         <Field label="Source path" value={lead.sourcePath} />
         <Field label="Source URL" value={lead.sourceUrl} />
+        <Field label="Visitor ID" value={lead.visitorId} />
         <Field label="Page title" value={lead.pageTitle} />
         <Field label="Document referrer" value={lead.documentReferrer} />
         <Field label="Referrer" value={lead.referrer} />
@@ -84,6 +85,18 @@ async function LeadDetail({ id }: { id: string }) {
         <Field label="utm_campaign" value={lead.utmCampaign} />
         <Field label="utm_term" value={lead.utmTerm} />
         <Field label="utm_content" value={lead.utmContent} />
+        <Field label="gclid" value={lead.gclid} />
+        <Field label="fbclid" value={lead.fbclid} />
+        <Field label="gbraid" value={lead.gbraid} />
+        <Field label="wbraid" value={lead.wbraid} />
+        <Field label="ttclid" value={lead.ttclid} />
+      </Section>
+
+      <Section title="First touch">
+        <Field label="Initial landing path" value={lead.initialLandingPath} />
+        <Field label="Initial landing URL" value={lead.initialLandingUrl} />
+        <Field label="Initial referrer" value={lead.initialReferrer} />
+        <Field label="Initial UTM landing URL" value={lead.initialUtmLandingUrl} />
       </Section>
 
       <Section title="CRM sync">

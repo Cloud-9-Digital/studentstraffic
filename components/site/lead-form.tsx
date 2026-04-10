@@ -13,6 +13,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PhoneInputField } from "@/components/ui/phone-input";
+import { trackLeadFormSubmit } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 const INDIAN_STATES = [
@@ -91,6 +92,7 @@ export function LeadForm({
   const fieldPrefix = useId();
   const formRef = useRef<HTMLFormElement>(null);
   const startedAtInputRef = useRef<HTMLInputElement>(null);
+  const hasTrackedSubmitRef = useRef(false);
 
   const armStartedAt = () => {
     syncLeadTrackingFields(formRef.current);
@@ -98,6 +100,23 @@ export function LeadForm({
     if (startedAtInputRef.current && startedAtInputRef.current.value === "0") {
       startedAtInputRef.current.value = String(Date.now());
     }
+  };
+
+  const trackSubmit = () => {
+    if (hasTrackedSubmitRef.current) {
+      return;
+    }
+
+    hasTrackedSubmitRef.current = true;
+    trackLeadFormSubmit({
+      source_path: sourcePath,
+      cta_variant: ctaVariant,
+      course_slug: courseSlug,
+      country_slug: countrySlug,
+      university_slug: universitySlug,
+      page_path:
+        typeof window !== "undefined" ? window.location.pathname : undefined,
+    });
   };
 
   const fields = (
@@ -108,7 +127,10 @@ export function LeadForm({
       onFocusCapture={armStartedAt}
       onPointerDownCapture={armStartedAt}
       onKeyDownCapture={armStartedAt}
-      onSubmitCapture={armStartedAt}
+      onSubmitCapture={() => {
+        armStartedAt();
+        trackSubmit();
+      }}
     >
       <input type="hidden" name="sourcePath" value={sourcePath} />
       <input type="hidden" name="ctaVariant" value={ctaVariant} />

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { siteConfig } from "@/lib/constants";
 import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
 
@@ -30,14 +31,18 @@ export function SeminarHeader() {
         </Link>
 
         <div className="flex items-center gap-2">
-          <a
+          <TrackedContactLink
+            channel="call"
+            location="seminar_header_call"
             href={`tel:${siteConfig.phone}`}
             aria-label="Call us"
             className="hidden sm:flex size-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
           >
             <Phone className="size-4" />
-          </a>
-          <a
+          </TrackedContactLink>
+          <TrackedContactLink
+            channel="whatsapp"
+            location="seminar_header_whatsapp"
             href={`https://wa.me/${siteConfig.whatsappNumber}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -45,7 +50,7 @@ export function SeminarHeader() {
             className="hidden sm:flex size-9 items-center justify-center rounded-full bg-[#25d366]/15 text-[#25d366] transition hover:bg-[#25d366]/25"
           >
             <WhatsAppIcon className="size-4" />
-          </a>
+          </TrackedContactLink>
           <SeminarDialogTrigger className="rounded-full bg-[#c17f3b] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#a86d2f] active:scale-95">
             Register Free
           </SeminarDialogTrigger>

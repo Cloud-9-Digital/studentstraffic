@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { siteConfig } from "@/lib/constants";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -51,7 +52,9 @@ export function SeminarFooter() {
               Contact
             </p>
             <div className="space-y-3">
-              <a
+              <TrackedContactLink
+                channel="call"
+                location="seminar_footer_call"
                 href={`tel:${siteConfig.phone}`}
                 className="flex items-center gap-3 text-sm text-white/50 transition hover:text-white"
               >
@@ -59,8 +62,10 @@ export function SeminarFooter() {
                   <Phone className="size-3.5" />
                 </span>
                 {siteConfig.phone}
-              </a>
-              <a
+              </TrackedContactLink>
+              <TrackedContactLink
+                channel="whatsapp"
+                location="seminar_footer_whatsapp"
                 href={`https://wa.me/${siteConfig.whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,7 +75,7 @@ export function SeminarFooter() {
                   <WhatsAppIcon className="size-3.5 text-[#25d366]" />
                 </span>
                 WhatsApp us
-              </a>
+              </TrackedContactLink>
             </div>
           </div>
         </div>

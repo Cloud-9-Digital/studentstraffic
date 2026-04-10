@@ -2,6 +2,7 @@
 
 import { Phone } from "lucide-react";
 
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { useLpDialog } from "./lp-dialog";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -18,14 +19,18 @@ export function LpMobileCta() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-gray-100 bg-white px-4 py-3 shadow-2xl md:hidden">
       <div className="flex items-center gap-2">
-        <a
+        <TrackedContactLink
+          channel="call"
+          location="mbbs_lp_mobile_call"
           href="tel:+919176162888"
           className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gray-200 text-gray-600 transition active:scale-95"
         >
           <Phone className="size-4.5" />
-        </a>
+        </TrackedContactLink>
 
-        <a
+        <TrackedContactLink
+          channel="whatsapp"
+          location="mbbs_lp_mobile_whatsapp"
           href="https://wa.me/919176162888?text=Hi%2C+I%27m+interested+in+MBBS+abroad.+Can+you+help+me%3F"
           target="_blank"
           rel="noopener noreferrer"
@@ -33,7 +38,7 @@ export function LpMobileCta() {
           style={{ background: "#25D366" }}
         >
           <WhatsAppIcon className="size-4.5 text-white" />
-        </a>
+        </TrackedContactLink>
 
         <button
           onClick={open}

@@ -4,6 +4,7 @@ import { ArrowRight, Mail, Phone } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { LeadForm } from "@/components/site/lead-form";
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { Button } from "@/components/ui/button";
 import {
   catalogReviewedAt,
@@ -97,14 +98,16 @@ export default function ContactPage() {
                         Fastest way to reach us — we respond daily, including weekends.
                       </p>
                       <Button asChild size="sm" className="mt-2.5">
-                        <Link
+                        <TrackedContactLink
+                          channel="whatsapp"
+                          location="contact_page_whatsapp"
                           href={`https://wa.me/${siteConfig.whatsappNumber}`}
                           target="_blank"
                           rel="noreferrer"
                         >
                           Message us
                           <ArrowRight className="size-3.5" />
-                        </Link>
+                        </TrackedContactLink>
                       </Button>
                     </div>
                   </div>
@@ -122,10 +125,14 @@ export default function ContactPage() {
                         Available Mon – Sat, 9 am to 7 pm IST.
                       </p>
                       <Button asChild size="sm" variant="outline" className="mt-2.5">
-                        <Link href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}>
+                        <TrackedContactLink
+                          channel="call"
+                          location="contact_page_call"
+                          href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                        >
                           Call us
                           <ArrowRight className="size-3.5" />
-                        </Link>
+                        </TrackedContactLink>
                       </Button>
                     </div>
                   </div>

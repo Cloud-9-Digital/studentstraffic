@@ -237,6 +237,11 @@ export const leads = pgTable(
       .$type<LeadSourceQuery>()
       .notNull()
       .default({}),
+    visitorId: text("visitor_id"),
+    initialLandingPath: text("initial_landing_path"),
+    initialLandingUrl: text("initial_landing_url"),
+    initialReferrer: text("initial_referrer"),
+    initialUtmLandingUrl: text("initial_utm_landing_url"),
     pageTitle: text("page_title"),
     ctaVariant: text("cta_variant").notNull(),
     notes: text("notes"),
@@ -246,6 +251,11 @@ export const leads = pgTable(
     utmCampaign: text("utm_campaign"),
     utmTerm: text("utm_term"),
     utmContent: text("utm_content"),
+    gclid: text("gclid"),
+    fbclid: text("fbclid"),
+    gbraid: text("gbraid"),
+    wbraid: text("wbraid"),
+    ttclid: text("ttclid"),
     referrer: text("referrer"),
     userAgent: text("user_agent"),
     ipAddress: text("ip_address"),
@@ -265,7 +275,48 @@ export const leads = pgTable(
     pabblySyncError: text("pabbly_sync_error"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
   },
-  (table) => [index("leads_source_path_idx").on(table.sourcePath)]
+  (table) => [
+    index("leads_source_path_idx").on(table.sourcePath),
+    index("leads_visitor_id_idx").on(table.visitorId),
+    index("leads_gclid_idx").on(table.gclid),
+    index("leads_fbclid_idx").on(table.fbclid),
+  ]
+);
+
+export const contactClickEvents = pgTable(
+  "contact_click_events",
+  {
+    id: serial("id").primaryKey(),
+    visitorId: text("visitor_id"),
+    channel: text("channel").notNull(),
+    location: text("location").notNull(),
+    href: text("href"),
+    pagePath: text("page_path").notNull(),
+    pageUrl: text("page_url"),
+    referrer: text("referrer"),
+    initialLandingPath: text("initial_landing_path"),
+    initialLandingUrl: text("initial_landing_url"),
+    initialReferrer: text("initial_referrer"),
+    initialUtmLandingUrl: text("initial_utm_landing_url"),
+    utmSource: text("utm_source"),
+    utmMedium: text("utm_medium"),
+    utmCampaign: text("utm_campaign"),
+    utmTerm: text("utm_term"),
+    utmContent: text("utm_content"),
+    gclid: text("gclid"),
+    fbclid: text("fbclid"),
+    gbraid: text("gbraid"),
+    wbraid: text("wbraid"),
+    ttclid: text("ttclid"),
+    userAgent: text("user_agent"),
+    ipAddress: text("ip_address"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("contact_click_events_created_at_idx").on(table.createdAt),
+    index("contact_click_events_visitor_id_idx").on(table.visitorId),
+    index("contact_click_events_channel_idx").on(table.channel),
+  ]
 );
 
 export const adminUsers = pgTable(

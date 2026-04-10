@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 
+import { ThankYouAnalytics } from "@/components/site/thank-you-analytics";
 import { buildNoIndexMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildNoIndexMetadata(
@@ -216,16 +217,20 @@ async function DynamicSub({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const params = await searchParams;
+  const source = Array.isArray(params.source) ? params.source[0] : params.source;
   const interest = Array.isArray(params.interest)
     ? params.interest[0]
     : params.interest;
 
   return (
-    <p className="ty-sub mx-auto mt-5 max-w-md text-lg leading-relaxed text-white/55">
-      {interest
-        ? `Our counsellor will call you about ${interest} — usually within one business day.`
-        : "Our counsellor will call you — usually within one business day."}
-    </p>
+    <>
+      <ThankYouAnalytics source={source} interest={interest} />
+      <p className="ty-sub mx-auto mt-5 max-w-md text-lg leading-relaxed text-white/55">
+        {interest
+          ? `Our counsellor will call you about ${interest} — usually within one business day.`
+          : "Our counsellor will call you — usually within one business day."}
+      </p>
+    </>
   );
 }
 

@@ -3,6 +3,13 @@ import { getToken } from "next-auth/jwt";
 
 import { findActiveAdminById } from "@/lib/auth/admin-access";
 import { env } from "@/lib/env";
+import {
+  ATTRIBUTION_COOKIE_MAX_AGE,
+  CLICK_ID_KEYS,
+  TRACKING_COOKIE_MAX_AGE,
+  trackingCookieNames,
+  UTM_KEYS,
+} from "@/lib/tracking";
 
 const OWNER_ONLY_ADMIN_PATHS = ["/admin/admins"];
 const preferredSiteUrl = new URL(env.siteUrl);
@@ -57,19 +64,131 @@ function getLoginRedirect(request: NextRequest) {
   return loginUrl;
 }
 
+function applyAttributionCookies(
+  request: NextRequest,
+  response: NextResponse
+) {
+  let hasCampaignParams = false;
+
+  if (!request.cookies.get(trackingCookieNames.visitorId)?.value) {
+    response.cookies.set(trackingCookieNames.visitorId, crypto.randomUUID(), {
+      path: "/",
+      maxAge: ATTRIBUTION_COOKIE_MAX_AGE,
+      sameSite: "lax",
+      httpOnly: false,
+      secure: preferredSiteUrl.protocol === "https:",
+    });
+  }
+
+  for (const key of UTM_KEYS) {
+    const value = request.nextUrl.searchParams.get(key);
+
+    if (!value) {
+      continue;
+    }
+
+    hasCampaignParams = true;
+    response.cookies.set(key, value, {
+      path: "/",
+      maxAge: ATTRIBUTION_COOKIE_MAX_AGE,
+      sameSite: "lax",
+      httpOnly: false,
+      secure: preferredSiteUrl.protocol === "https:",
+    });
+  }
+
+  for (const key of CLICK_ID_KEYS) {
+    const value = request.nextUrl.searchParams.get(key);
+
+    if (!value) {
+      continue;
+    }
+
+    hasCampaignParams = true;
+    response.cookies.set(key, value, {
+      path: "/",
+      maxAge: ATTRIBUTION_COOKIE_MAX_AGE,
+      sameSite: "lax",
+      httpOnly: false,
+      secure: preferredSiteUrl.protocol === "https:",
+    });
+  }
+
+  if (!request.cookies.get(trackingCookieNames.initialLandingPath)?.value) {
+    response.cookies.set(
+      trackingCookieNames.initialLandingPath,
+      request.nextUrl.pathname,
+      {
+      path: "/",
+      maxAge: TRACKING_COOKIE_MAX_AGE,
+      sameSite: "lax",
+      httpOnly: false,
+      secure: preferredSiteUrl.protocol === "https:",
+      }
+    );
+  }
+
+  if (!request.cookies.get(trackingCookieNames.initialLandingUrl)?.value) {
+    response.cookies.set(
+      trackingCookieNames.initialLandingUrl,
+      request.nextUrl.toString(),
+      {
+      path: "/",
+      maxAge: TRACKING_COOKIE_MAX_AGE,
+      sameSite: "lax",
+      httpOnly: false,
+      secure: preferredSiteUrl.protocol === "https:",
+      }
+    );
+  }
+
+  if (!request.cookies.get(trackingCookieNames.initialReferrer)?.value) {
+    const referrer = request.headers.get("referer");
+
+    if (referrer) {
+      response.cookies.set(trackingCookieNames.initialReferrer, referrer, {
+        path: "/",
+        maxAge: TRACKING_COOKIE_MAX_AGE,
+        sameSite: "lax",
+        httpOnly: false,
+        secure: preferredSiteUrl.protocol === "https:",
+      });
+    }
+  }
+
+  if (
+    hasCampaignParams &&
+    !request.cookies.get(trackingCookieNames.initialUtmLandingUrl)?.value
+  ) {
+    response.cookies.set(
+      trackingCookieNames.initialUtmLandingUrl,
+      request.nextUrl.toString(),
+      {
+        path: "/",
+        maxAge: ATTRIBUTION_COOKIE_MAX_AGE,
+        sameSite: "lax",
+        httpOnly: false,
+        secure: preferredSiteUrl.protocol === "https:",
+      }
+    );
+  }
+
+  return response;
+}
+
 export async function proxy(request: NextRequest) {
   const hostRedirect = getHostRedirect(request);
 
   if (hostRedirect) {
-    return hostRedirect;
+    return applyAttributionCookies(request, hostRedirect);
   }
 
   if (!request.nextUrl.pathname.startsWith("/admin")) {
-    return NextResponse.next();
+    return applyAttributionCookies(request, NextResponse.next());
   }
 
   if (request.nextUrl.pathname === "/admin/login") {
-    return NextResponse.next();
+    return applyAttributionCookies(request, NextResponse.next());
   }
 
   const token = await getToken({
@@ -78,13 +197,19 @@ export async function proxy(request: NextRequest) {
   });
 
   if (token?.role !== "admin" || typeof token.adminUserId !== "number") {
-    return NextResponse.redirect(getLoginRedirect(request));
+    return applyAttributionCookies(
+      request,
+      NextResponse.redirect(getLoginRedirect(request))
+    );
   }
 
   const adminUser = await findActiveAdminById(token.adminUserId);
 
   if (!adminUser) {
-    return NextResponse.redirect(getLoginRedirect(request));
+    return applyAttributionCookies(
+      request,
+      NextResponse.redirect(getLoginRedirect(request))
+    );
   }
 
   if (
@@ -93,10 +218,13 @@ export async function proxy(request: NextRequest) {
     ) &&
     adminUser.role !== "owner"
   ) {
-    return NextResponse.redirect(new URL("/admin", request.url));
+    return applyAttributionCookies(
+      request,
+      NextResponse.redirect(new URL("/admin", request.url))
+    );
   }
 
-  return NextResponse.next();
+  return applyAttributionCookies(request, NextResponse.next());
 }
 
 export const config = {

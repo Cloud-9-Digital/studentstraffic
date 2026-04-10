@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useEffect, useId, useMemo, useRef, useState } from "react";
+import { useActionState, useId, useMemo, useRef } from "react";
 import { City } from "country-state-city";
 import { ChevronDown, Loader2 } from "lucide-react";
 
@@ -13,6 +13,7 @@ import { syncLeadTrackingFields } from "@/components/site/lead-tracking";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PhoneInputField } from "@/components/ui/phone-input";
+import { trackLeadFormSubmit } from "@/lib/analytics";
 
 const TN_CITIES = City.getCitiesOfState("IN", "TN").map((c) => c.name);
 
@@ -48,10 +49,10 @@ export function SeminarLeadForm({
     submitSeminarLeadAction,
     initialState
   );
-  const [reserving, setReserving] = useState(false);
   const fieldPrefix = useId();
   const formRef = useRef<HTMLFormElement>(null);
   const startedAtRef = useRef<HTMLInputElement>(null);
+  const hasTrackedSubmitRef = useRef(false);
 
   // Filter out events whose date has already passed
   const upcomingEvents = useMemo(() => {
@@ -60,19 +61,31 @@ export function SeminarLeadForm({
     return EVENTS.filter((e) => parseEventDate(e.date) >= today);
   }, []);
 
-  useEffect(() => {
-    if (isPending) {
-      setReserving(true);
-    } else if (state.error) {
-      setReserving(false);
-    }
-  }, [isPending, state.error]);
-
   const armStartedAt = () => {
     syncLeadTrackingFields(formRef.current);
     if (startedAtRef.current && startedAtRef.current.value === "0") {
       startedAtRef.current.value = String(Date.now());
     }
+  };
+
+  const trackSubmit = () => {
+    if (hasTrackedSubmitRef.current) {
+      return;
+    }
+
+    const seminarEventField = formRef.current?.elements.namedItem("seminarEvent");
+
+    hasTrackedSubmitRef.current = true;
+    trackLeadFormSubmit({
+      source_path: sourcePath,
+      cta_variant: ctaVariant,
+      page_path:
+        typeof window !== "undefined" ? window.location.pathname : undefined,
+      seminar_event:
+        seminarEventField instanceof HTMLSelectElement
+          ? seminarEventField.value
+          : undefined,
+    });
   };
 
   return (
@@ -83,7 +96,10 @@ export function SeminarLeadForm({
       onFocusCapture={armStartedAt}
       onPointerDownCapture={armStartedAt}
       onKeyDownCapture={armStartedAt}
-      onSubmitCapture={armStartedAt}
+      onSubmitCapture={() => {
+        armStartedAt();
+        trackSubmit();
+      }}
     >
       {/* Hidden tracking fields */}
       <input type="hidden" name="sourcePath" value={sourcePath} />
@@ -172,10 +188,10 @@ export function SeminarLeadForm({
       {/* Submit */}
       <button
         type="submit"
-        disabled={isPending || reserving || upcomingEvents.length === 0}
+        disabled={isPending || upcomingEvents.length === 0}
         className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#c17f3b] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#a86d2f] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-80"
       >
-        {reserving ? (
+        {isPending ? (
           <>
             <Loader2 className="size-4 animate-spin" />
             Reserving your seat for seminar…

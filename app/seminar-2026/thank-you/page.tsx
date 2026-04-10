@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Users, HelpCircle, ArrowLeft, Phone } from "lucide-react";
 
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
+import { ThankYouAnalytics } from "@/components/site/thank-you-analytics";
 import { SeminarDialogProvider } from "../_components/seminar-dialog-context";
 import { SeminarHeader } from "../_components/seminar-header";
 import { SeminarFooter } from "../_components/seminar-footer";
@@ -45,6 +47,7 @@ const NEXT_STEPS = [
 export default function SeminarThankYouPage() {
   return (
     <SeminarDialogProvider>
+    <ThankYouAnalytics source="/seminar-2026" interest="seminar" variant="seminar_lead" />
     <div className="min-h-screen">
       <SeminarHeader />
 
@@ -124,11 +127,13 @@ export default function SeminarThankYouPage() {
           </h1>
 
           <p className="ty-sub mx-auto mt-5 max-w-md text-base leading-7 text-white/60">
-            We've received your registration. Our team will WhatsApp you the venue details, date, and timing for the seminar nearest to your city.
+            We&apos;ve received your registration. Our team will WhatsApp you the venue details, date, and timing for the seminar nearest to your city.
           </p>
 
           <div className="ty-cta mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a
+            <TrackedContactLink
+              channel="whatsapp"
+              location="seminar_thank_you_whatsapp"
               href={`https://wa.me/${siteConfig.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -136,14 +141,16 @@ export default function SeminarThankYouPage() {
             >
               <WhatsAppIcon className="size-4" />
               Message us on WhatsApp
-            </a>
-            <a
+            </TrackedContactLink>
+            <TrackedContactLink
+              channel="call"
+              location="seminar_thank_you_call"
               href={`tel:${siteConfig.phone}`}
               className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/20 active:scale-95"
             >
               <Phone className="size-4" />
               {siteConfig.phone}
-            </a>
+            </TrackedContactLink>
           </div>
         </div>
       </section>

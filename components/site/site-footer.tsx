@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Mail, Phone } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import {
   footerCityGuides,
   footerPopularRoutes,
@@ -67,13 +68,15 @@ export function SiteFooter() {
               admissions journey.
             </p>
             <div className="space-y-2">
-              <a
+              <TrackedContactLink
+                channel="call"
+                location="site_footer_call"
                 href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
                 className="flex items-center gap-2.5 text-sm text-white/75 transition-colors hover:text-white"
               >
                 <Phone className="size-3.5 shrink-0" />
                 {siteConfig.phone}
-              </a>
+              </TrackedContactLink>
               <a
                 href={`mailto:${siteConfig.email}`}
                 className="flex items-center gap-2.5 text-sm text-white/75 transition-colors hover:text-white"

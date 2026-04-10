@@ -4,17 +4,6 @@ import Script from "next/script";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-declare global {
-  interface Window {
-    gtag: (
-      command: string,
-      targetId: string,
-      config?: Record<string, unknown>
-    ) => void;
-    dataLayer: unknown[];
-  }
-}
-
 const GA_ID = "G-D7WE61F5SM";
 
 export function GoogleAnalytics() {

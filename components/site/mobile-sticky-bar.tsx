@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Headphones, Phone } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { siteConfig } from "@/lib/constants";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -52,16 +53,20 @@ export function MobileStickyBar() {
         />
 
         {/* Call */}
-        <a
+        <TrackedContactLink
+          channel="call"
+          location="mobile_sticky_call"
           href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
           aria-label={`Call ${siteConfig.phone}`}
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-black/8 bg-white/80 text-primary! transition-colors active:bg-black/8"
         >
           <Phone className="size-[18px]" />
-        </a>
+        </TrackedContactLink>
 
         {/* WhatsApp */}
-        <a
+        <TrackedContactLink
+          channel="whatsapp"
+          location="mobile_sticky_whatsapp"
           href={`https://wa.me/${siteConfig.whatsappNumber}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -69,7 +74,7 @@ export function MobileStickyBar() {
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-whatsapp/25 bg-whatsapp/10 text-whatsapp-dark! transition-colors active:bg-whatsapp/20"
         >
           <WhatsAppIcon className="size-[18px]" />
-        </a>
+        </TrackedContactLink>
       </div>
     </div>
   );

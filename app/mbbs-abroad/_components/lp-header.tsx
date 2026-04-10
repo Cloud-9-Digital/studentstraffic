@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Phone } from "lucide-react";
 
+import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { useLpDialog } from "./lp-dialog";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -30,16 +31,20 @@ export function LpHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a
+          <TrackedContactLink
+            channel="call"
+            location="mbbs_lp_header_call"
             href="tel:+919176162888"
             className="flex items-center gap-1.5 rounded-full border border-white/15 px-3 py-2 text-xs font-semibold text-white/80 transition hover:border-white/30 hover:text-white"
           >
             <Phone className="size-3.5" />
             <span className="hidden sm:inline">+91 91761 62888</span>
             <span className="sm:hidden">Call</span>
-          </a>
+          </TrackedContactLink>
 
-          <a
+          <TrackedContactLink
+            channel="whatsapp"
+            location="mbbs_lp_header_whatsapp"
             href="https://wa.me/919176162888?text=Hi%2C+I%27m+interested+in+MBBS+abroad.+Can+you+help+me%3F"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +52,7 @@ export function LpHeader() {
           >
             <WhatsAppIcon className="size-3.5" />
             <span className="hidden sm:inline">WhatsApp</span>
-          </a>
+          </TrackedContactLink>
 
           <button
             onClick={open}
