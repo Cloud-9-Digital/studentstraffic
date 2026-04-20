@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { SeminarCitiesTicker } from "./_components/seminar-cities-ticker";
 import { SeminarCta } from "./_components/seminar-cta";
 import { SeminarDialogProvider } from "./_components/seminar-dialog-context";
 import { SeminarDifferentiators } from "./_components/seminar-differentiators";
@@ -11,6 +12,7 @@ import { SeminarHero } from "./_components/seminar-hero";
 import { SeminarInclusions } from "./_components/seminar-inclusions";
 import { SeminarInterest } from "./_components/seminar-interest";
 import { SeminarMobileCta } from "./_components/seminar-mobile-cta";
+import { SeminarNextEvent } from "./_components/seminar-next-event";
 import { SeminarSpeakers } from "./_components/seminar-speakers";
 import { SeminarTagline } from "./_components/seminar-tagline";
 import { SeminarTrust } from "./_components/seminar-trust";
@@ -34,6 +36,8 @@ export default function SeminarPage() {
       <div className="min-h-screen">
         <SeminarHeader />
         <SeminarHero />
+        <SeminarCitiesTicker />
+        <SeminarNextEvent />
         <SeminarTrust />
         <SeminarTagline />
         <SeminarDifferentiators />

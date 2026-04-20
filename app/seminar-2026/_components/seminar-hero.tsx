@@ -26,21 +26,13 @@ export function SeminarHero() {
       />
 
       <div className="relative mx-auto max-w-5xl px-4 pb-16 pt-14 md:pt-20">
-        {/* Badge */}
-        <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#c17f3b]/35 bg-[#c17f3b]/10 px-4 py-1.5">
-          <span className="size-1.5 animate-pulse rounded-full bg-[#c17f3b]" />
-          <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#d4954a]">
-            Free Seminar · May – July 2026 · Tamil Nadu
-          </span>
-        </div>
-
-        <div className="grid gap-12 lg:grid-cols-[1fr_370px] lg:items-start lg:gap-16">
+        <div className="grid gap-12 lg:grid-cols-[1fr_370px] lg:items-center lg:gap-16">
           {/* Left: copy */}
           <div>
             <h1 className="text-[2.6rem] font-bold leading-[1.08] text-white sm:text-5xl md:text-[3.25rem]">
-              Your MBBS questions,{" "}
-              <em className="not-italic text-[#d4954a]">answered by doctors</em>{" "}
-              who&apos;ve done it.
+              Talk to{" "}
+              <em className="not-italic text-[#d4954a]">doctors who cleared FMGE</em>,{" "}
+              not sales agents
             </h1>
 
             <p className="mt-5 text-[15px] leading-7 text-white/55 sm:text-base">

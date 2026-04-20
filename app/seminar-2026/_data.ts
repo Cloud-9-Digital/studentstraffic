@@ -1,6 +1,7 @@
 import { BookOpen, GraduationCap, ShieldCheck, Users, Stethoscope, Trophy } from "lucide-react";
 
 export const EVENTS = [
+  { date: "10 May 2026", day: "Sunday",   city: "Chennai",         venue: "Hotel Hilton",               state: "TN", time: "5:30 PM" },
   { date: "17 May 2026", day: "Sunday",   city: "Madurai",         venue: "Royal Court",                state: "TN", time: "5:30 PM" },
   { date: "24 May 2026", day: "Sunday",   city: "Dindigul",        venue: "Parson's Court",             state: "TN", time: "5:30 PM" },
   { date: "31 May 2026", day: "Sunday",   city: "Tirunelveli",     venue: "RR Inn Group's of Hotel",    state: "TN", time: "5:30 PM" },

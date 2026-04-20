@@ -250,7 +250,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "What are the total fees for MBBS in Vietnam?",
         answer:
-          "Annual tuition ranges from approximately $2,833/year at public universities like Thai Binh University to $8,000–$9,000/year at premium private institutions like Duy Tan or Hong Bang. Adding hostel ($1,000–$2,000/year) and living costs ($1,600–$3,000/year), the total 6-year cost typically falls between ₹15 lakh and ₹45 lakh — significantly below Indian private medical college fees.",
+          "Annual tuition ranges from approximately $2,833/year at public universities like Thai Binh University to around $8,000/year at premium private institutions like Duy Tan, while Hong Bang is $6,000/year. Adding hostel ($1,000–$2,000/year) and living costs ($1,600–$3,000/year), the total 6-year cost typically falls between ₹15 lakh and ₹45 lakh — significantly below Indian private medical college fees.",
       },
       {
         question: "Is NEET required for MBBS in Vietnam?",
@@ -293,7 +293,7 @@ export const landingPages: LandingPage[] = [
       "Compare MBBS in Vietnam for Indian students with updated fees, top universities, eligibility, hostel details, English-medium options, and the India-return pathway.",
     atAGlance: [
       { label: "Program", value: "MBBS (6-year international MD program)" },
-      { label: "Annual tuition", value: "$2,833 – $9,000" },
+      { label: "Annual tuition", value: "$2,833 – $8,000" },
       { label: "Living costs", value: "$2,400 – $4,800 per year" },
       { label: "Total 6-year cost", value: "Roughly ₹15 lakh – ₹45 lakh all-in" },
       { label: "Intake", value: "September" },
@@ -379,7 +379,7 @@ export const landingPages: LandingPage[] = [
       },
     ],
     indiaComparison: [
-      { criterion: "Annual tuition", india: "₹10–25 lakh (private colleges)", abroad: "$2,833–$9,000" },
+      { criterion: "Annual tuition", india: "₹10–25 lakh (private colleges)", abroad: "$2,833–$8,000" },
       { criterion: "NEET requirement", india: "Yes — mandatory", abroad: "Yes — mandatory" },
       { criterion: "Program duration", india: "5.5 years (incl. 1 year internship)", abroad: "6 years (incl. internship)" },
       { criterion: "Medium", india: "English", abroad: "English (with Vietnamese clinical orientation)" },
