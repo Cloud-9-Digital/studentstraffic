@@ -80,6 +80,12 @@ function buildBroadcastName(parts: string[]) {
   return `${parts.map(sanitizeBroadcastPart).join("-")}-${Date.now()}`.slice(0, 80);
 }
 
+function getSeminarEventCity(seminarEvent: string, fallbackCity: string) {
+  const [eventCity] = seminarEvent.split("—");
+  const normalized = eventCity?.trim();
+  return normalized || fallbackCity.trim() || "NA";
+}
+
 function getInterest(payload: LeadWhatsAppPayload) {
   return (
     payload.universitySlug?.trim() ||
@@ -113,14 +119,17 @@ const watiTemplates: Record<WatiTemplateKey, WatiTemplateConfig> = {
     buildBroadcastName: (payload) =>
       buildBroadcastName([
         "seminar",
-        (payload as SeminarWhatsAppPayload).city,
+        getSeminarEventCity(
+          (payload as SeminarWhatsAppPayload).seminarEvent,
+          (payload as SeminarWhatsAppPayload).city
+        ),
         (payload as SeminarWhatsAppPayload).seminarEvent,
       ]),
     buildParameters: (payload) => {
       const seminarPayload = payload as SeminarWhatsAppPayload;
       return buildTemplateParameters([
         seminarPayload.fullName,
-        seminarPayload.city,
+        getSeminarEventCity(seminarPayload.seminarEvent, seminarPayload.city),
         seminarPayload.seminarEvent,
       ]);
     },
@@ -130,7 +139,10 @@ const watiTemplates: Record<WatiTemplateKey, WatiTemplateConfig> = {
     buildBroadcastName: (payload) =>
       buildBroadcastName([
         "seminar-registration",
-        (payload as SeminarWhatsAppPayload).city,
+        getSeminarEventCity(
+          (payload as SeminarWhatsAppPayload).seminarEvent,
+          (payload as SeminarWhatsAppPayload).city
+        ),
         (payload as SeminarWhatsAppPayload).seminarEvent,
       ]),
     buildParameters: (payload) => {
@@ -138,7 +150,7 @@ const watiTemplates: Record<WatiTemplateKey, WatiTemplateConfig> = {
       return buildTemplateParameters([
         seminarPayload.fullName,
         "MBBS Abroad Seminar 2026",
-        seminarPayload.city,
+        getSeminarEventCity(seminarPayload.seminarEvent, seminarPayload.city),
         seminarPayload.seminarEvent,
       ]);
     },

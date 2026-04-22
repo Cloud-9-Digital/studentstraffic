@@ -102,17 +102,17 @@ export async function submitSeminarLeadAction(
             ? {
                 scope: "public:lead:ip",
                 identifier: ipAddress,
-                limit: 6,
+                limit: 12,
                 windowMs: 30 * 60_000,
-                blockMs: 2 * 60 * 60_000,
+                blockMs: 60 * 60_000,
               }
             : null,
           {
             scope: "public:lead:phone",
             identifier: normalizePhoneIdentifier(data.phone),
-            limit: 4,
+            limit: 10,
             windowMs: 6 * 60 * 60_000,
-            blockMs: 12 * 60 * 60_000,
+            blockMs: 2 * 60 * 60_000,
           },
         ],
         "enquiries"
