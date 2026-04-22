@@ -36,7 +36,7 @@ export function SeminarHero() {
             </h1>
 
             <p className="mt-5 text-[15px] leading-7 text-white/55 sm:text-base">
-              A free seminar across 14 cities in Tamil Nadu. Whether you&apos;re considering MBBS in India or abroad — sit with FMGE-cleared doctors who studied overseas and practise in India today. No scripts. No sales pitch. Just honest answers.
+              A free seminar across 14 cities in Tamil Nadu for students exploring MBBS abroad. Sit with FMGE-cleared doctors who studied overseas and understand the real questions around countries, universities, fees, and long-term outcomes. No scripts. No sales pitch. Just honest answers.
             </p>
 
             {/* Stats */}

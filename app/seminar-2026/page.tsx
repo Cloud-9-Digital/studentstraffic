@@ -15,6 +15,7 @@ import { SeminarMobileCta } from "./_components/seminar-mobile-cta";
 import { SeminarNextEvent } from "./_components/seminar-next-event";
 import { SeminarSpeakers } from "./_components/seminar-speakers";
 import { SeminarTagline } from "./_components/seminar-tagline";
+import { SeminarTopUniversities } from "./_components/seminar-top-universities";
 import { SeminarTrust } from "./_components/seminar-trust";
 
 export const metadata: Metadata = {
@@ -42,6 +43,7 @@ export default function SeminarPage() {
         <SeminarTagline />
         <SeminarDifferentiators />
         <SeminarSpeakers />
+        <SeminarTopUniversities />
         <SeminarInterest />
         <SeminarInclusions />
         <SeminarEvents />

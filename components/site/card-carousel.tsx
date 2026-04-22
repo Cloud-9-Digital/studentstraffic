@@ -1,13 +1,15 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function CardCarousel({
   heading,
+  autoScroll = false,
   children,
 }: {
   heading: string;
+  autoScroll?: boolean;
   children: React.ReactNode;
 }) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -29,6 +31,30 @@ export function CardCarousel({
       el.scrollBy({ left: dir === "right" ? amount : -amount, behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    if (!autoScroll) {
+      return;
+    }
+
+    const el = scrollRef.current;
+    if (!el || typeof window === "undefined") {
+      return;
+    }
+
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
+    if (!mediaQuery.matches) {
+      return;
+    }
+
+    const interval = window.setInterval(() => {
+      scroll("right");
+    }, 2800);
+
+    return () => {
+      window.clearInterval(interval);
+    };
+  }, [autoScroll]);
 
   return (
     <div className="space-y-3">
