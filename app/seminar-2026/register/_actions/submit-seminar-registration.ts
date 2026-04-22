@@ -22,7 +22,7 @@ import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import { getTrackingSnapshot } from "@/lib/tracking";
-import { sendSeminarLeadWhatsAppMessage } from "@/lib/wati";
+import { sendSeminarRegistrationWhatsAppMessage } from "@/lib/wati";
 import {
   consumePublicFormRateLimits,
   normalizePhoneIdentifier,
@@ -264,7 +264,7 @@ export async function submitSeminarRegistrationAction(
           acceptLanguage: headerStore.get("accept-language") ?? undefined,
           clientContext,
         }),
-        sendSeminarLeadWhatsAppMessage({
+        sendSeminarRegistrationWhatsAppMessage({
           fullName: data.studentName,
           phone: data.studentPhone,
           seminarEvent: data.seminarEvent,

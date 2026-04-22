@@ -38,7 +38,7 @@ type SeminarWhatsAppPayload = {
   city: string;
 };
 
-type WatiTemplateKey = "standardLead" | "seminarLead";
+type WatiTemplateKey = "standardLead" | "seminarLead" | "seminarRegistration";
 
 type WatiTemplateConfig = {
   templateName: string;
@@ -120,6 +120,24 @@ const watiTemplates: Record<WatiTemplateKey, WatiTemplateConfig> = {
       const seminarPayload = payload as SeminarWhatsAppPayload;
       return buildTemplateParameters([
         seminarPayload.fullName,
+        seminarPayload.city,
+        seminarPayload.seminarEvent,
+      ]);
+    },
+  },
+  seminarRegistration: {
+    templateName: "mbbs_seminar_2026_registration_confirmation",
+    buildBroadcastName: (payload) =>
+      buildBroadcastName([
+        "seminar-registration",
+        (payload as SeminarWhatsAppPayload).city,
+        (payload as SeminarWhatsAppPayload).seminarEvent,
+      ]),
+    buildParameters: (payload) => {
+      const seminarPayload = payload as SeminarWhatsAppPayload;
+      return buildTemplateParameters([
+        seminarPayload.fullName,
+        "MBBS Abroad Seminar 2026",
         seminarPayload.city,
         seminarPayload.seminarEvent,
       ]);
@@ -297,6 +315,21 @@ export async function sendSeminarLeadWhatsAppMessage(
   leadId?: number
 ) {
   const template = watiTemplates.seminarLead;
+
+  return sendTemplateMessage({
+    leadId,
+    whatsappNumber: payload.phone,
+    templateName: template.templateName,
+    broadcastName: template.buildBroadcastName(payload),
+    parameters: template.buildParameters(payload),
+  });
+}
+
+export async function sendSeminarRegistrationWhatsAppMessage(
+  payload: SeminarWhatsAppPayload,
+  leadId?: number
+) {
+  const template = watiTemplates.seminarRegistration;
 
   return sendTemplateMessage({
     leadId,
