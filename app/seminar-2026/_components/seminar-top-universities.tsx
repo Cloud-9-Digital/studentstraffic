@@ -26,7 +26,7 @@ const UNIVERSITY_GROUPS = [
     countrySlug: "russia",
     universities: [
       { slug: "samara-state-medical-university", label: "Samara State Medical University" },
-      { slug: null, label: "N.P. Ogarev Mordovia State Medical University" },
+      { slug: "mordovia-state-university", label: "Mordovia State University" },
       { slug: "crimea-federal-university", label: "Crimea Federal Medical University" },
       { slug: "izhevsk-state-medical-academy", label: "Izhevsk State Medical University" },
     ],
@@ -35,9 +35,9 @@ const UNIVERSITY_GROUPS = [
     country: "Georgia",
     countrySlug: "georgia",
     universities: [
-      { slug: null, label: "Georgian National Medical University (SEU)" },
+      { slug: "georgian-national-university-seu", label: "Georgian National University SEU" },
       { slug: "university-of-georgia", label: "University of Georgia" },
-      { slug: null, label: "Batumi International University (BAU)" },
+      { slug: "bau-international-university-batumi", label: "BAU International University" },
     ],
   },
   {
@@ -53,12 +53,63 @@ const UNIVERSITY_GROUPS = [
     country: "Kyrgyzstan",
     countrySlug: "kyrgyzstan",
     universities: [
-      { slug: "kyrgyz-uzbek-university", label: "Kyrgyz - Uzbek International University" },
-      { slug: null, label: "Jalalabad State Medical University" },
-      { slug: null, label: "Jalalabad International University" },
+      { slug: "kyrgyz-uzbek-university", label: "Kyrgyz-Uzbek University Medical Faculty" },
+      { slug: "jalal-abad-peoples-friendship-university", label: "Jalal-Abad State University Medical Faculty" },
+      { slug: "jalal-abad-international-university", label: "Jalal-Abad International University Medical Faculty" },
     ],
   },
 ] as const;
+
+const SEMINAR_COVER_OVERRIDES: Record<string, { url: string; alt: string }> = {
+  "samara-state-medical-university": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890210/studentstraffic/images/universities/samara-state-medical-university-campus.webp",
+    alt: "Samara State Medical University campus overview",
+  },
+  "mordovia-state-university": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890213/studentstraffic/images/universities/mordovia-state-university-campus.jpg",
+    alt: "Mordovia State University campus overview",
+  },
+  "crimea-federal-university": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890257/studentstraffic/images/universities/crimea-federal-university-campus.jpg",
+    alt: "Crimea Federal University campus overview",
+  },
+  "izhevsk-state-medical-academy": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890323/studentstraffic/images/universities/izhevsk-state-medical-academy-campus.webp",
+    alt: "Izhevsk State Medical Academy campus overview",
+  },
+  "georgian-national-university-seu": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890398/studentstraffic/images/universities/georgian-national-university-seu-campus.webp",
+    alt: "Georgian National University SEU campus overview",
+  },
+  "university-of-georgia": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890459/studentstraffic/images/universities/university-of-georgia-campus.jpg",
+    alt: "University of Georgia campus overview",
+  },
+  "bau-international-university-batumi": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890474/studentstraffic/images/universities/bau-international-university-batumi-campus.jpg",
+    alt: "BAU International University campus overview",
+  },
+  "samarkand-state-medical-university": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890535/studentstraffic/images/universities/samarkand-state-medical-university-campus.jpg",
+    alt: "Samarkand State Medical University campus overview",
+  },
+  "kyrgyz-uzbek-university": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776891656/studentstraffic/images/universities/kyrgyz-uzbek-university-campus.jpg",
+    alt: "Kyrgyz-Uzbek University Medical Faculty campus overview",
+  },
+  "jalal-abad-peoples-friendship-university": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776891759/studentstraffic/images/universities/jalal-abad-peoples-friendship-university-campus.jpg",
+    alt: "Jalal-Abad State University Medical Faculty campus overview",
+  },
+  "jalal-abad-international-university": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776891835/studentstraffic/images/universities/jalal-abad-international-university-campus.webp",
+    alt: "Jalal-Abad International University Medical Faculty campus overview",
+  },
+  "Tashkent State Medical University": {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1776890509/studentstraffic/images/universities/tashkent-state-medical-university-campus.jpg",
+    alt: "Tashkent State Medical University campus overview",
+  },
+};
 
 export async function SeminarTopUniversities() {
   const universities = await getUniversities();
@@ -75,7 +126,10 @@ export async function SeminarTopUniversities() {
 
   const renderCard = (item: (typeof allUniversities)[number]) => {
     const university = item.slug ? universitiesBySlug.get(item.slug) : null;
-    const coverImage = university
+    const overrideKey = item.slug ?? item.label;
+    const coverImage = SEMINAR_COVER_OVERRIDES[overrideKey]
+      ? SEMINAR_COVER_OVERRIDES[overrideKey]
+      : university
       ? getUniversityCoverImage({
           slug: university.slug,
           name: university.name,

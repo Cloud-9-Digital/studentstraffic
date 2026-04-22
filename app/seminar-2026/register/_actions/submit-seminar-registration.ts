@@ -50,15 +50,15 @@ export type SeminarRegistrationFormState = {
 
 const seminarRegistrationSchema = z.object({
   studentName: z.string().trim().min(2, "Please enter the student's name."),
-  fatherName: z.string().trim().min(2, "Please enter the father's name."),
+  fatherName: z.string().trim().optional(),
   studentPhone: z.string().trim().min(7, "Please enter a valid phone number."),
   alternatePhone: z.string().trim().optional(),
   city: z.string().trim().min(2, "Please select your city."),
   seminarEvent: z.string().trim().min(2, "Please select the seminar you'd like to attend."),
-  interestedCountry: z.string().trim().min(2, "Please select a country."),
-  budgetRange: z.string().trim().min(1, "Please select your budget range."),
-  needsFmgeSession: z.string().trim().min(2, "Please select if you need a 1-on-1 session."),
-  documentType: z.string().trim().min(2, "Please select document type."),
+  interestedCountry: z.string().trim().optional(),
+  budgetRange: z.string().trim().optional(),
+  needsFmgeSession: z.string().trim().optional(),
+  documentType: z.string().trim().optional(),
   sourcePath: z.string().trim().min(1),
   ctaVariant: z.string().trim().min(1),
   startedAt: z.string().trim().min(1),
@@ -76,14 +76,14 @@ export async function submitSeminarRegistrationAction(
 ): Promise<SeminarRegistrationFormState> {
   const submittedValues = {
     studentName: getRequiredFormString(formData, "studentName"),
-    fatherName: getRequiredFormString(formData, "fatherName"),
+    fatherName: getFormString(formData, "fatherName") ?? "",
     studentPhone: getRequiredFormString(formData, "studentPhone"),
     alternatePhone: getFormString(formData, "alternatePhone"),
     city: getRequiredFormString(formData, "city"),
     seminarEvent: getRequiredFormString(formData, "seminarEvent"),
-    interestedCountry: getRequiredFormString(formData, "interestedCountry"),
-    budgetRange: getRequiredFormString(formData, "budgetRange"),
-    needsFmgeSession: getRequiredFormString(formData, "needsFmgeSession"),
+    interestedCountry: getFormString(formData, "interestedCountry") ?? "",
+    budgetRange: getFormString(formData, "budgetRange") ?? "",
+    needsFmgeSession: getFormString(formData, "needsFmgeSession") ?? "",
     documentType: getFormString(formData, "documentType") ?? "",
   };
 
@@ -118,14 +118,14 @@ export async function submitSeminarRegistrationAction(
     return { error: "Please take a moment and submit again.", values: submittedValues };
   }
 
-  // Handle file upload (only required if they need 1-on-1 session)
-  const needsSession = data.needsFmgeSession === "yes";
   let documentUrl: string | undefined;
+  const documentFile = formData.get("document");
+  const hasDocument =
+    documentFile instanceof File && documentFile.size > 0 && documentFile.name.trim().length > 0;
 
-  if (needsSession) {
-    const documentFile = formData.get("document");
-    if (!documentFile || !(documentFile instanceof File)) {
-      return { error: "Please upload a document for the 1-on-1 session.", values: submittedValues };
+  if (hasDocument) {
+    if (!data.documentType || data.documentType.trim().length < 2) {
+      return { error: "Please select document type.", values: submittedValues };
     }
 
     if (!isAllowedProofType(documentFile.type)) {
