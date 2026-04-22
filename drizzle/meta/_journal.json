@@ -120,6 +120,20 @@
       "when": 1775808000000,
       "tag": "0021_tracking_attribution",
       "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1776614400000,
+      "tag": "0022_seminar_registration_fields",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1776700800000,
+      "tag": "0023_additional_registration_fields",
+      "breakpoints": true
     }
   ]
 }

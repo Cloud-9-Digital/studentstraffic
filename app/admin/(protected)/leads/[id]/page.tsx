@@ -63,6 +63,32 @@ async function LeadDetail({ id }: { id: string }) {
         <Field label="State" value={lead.userState} />
       </Section>
 
+      {(lead.fatherName || lead.alternatePhone || lead.city || lead.seminarEvent || lead.interestedCountry || lead.budgetRange || lead.needsFmgeSession !== null || lead.documentUrl) && (
+        <Section title="Seminar Registration">
+          <Field label="Father's name" value={lead.fatherName} />
+          <Field label="Alternate phone" value={lead.alternatePhone} />
+          <Field label="City" value={lead.city} />
+          <Field label="Event interested" value={lead.seminarEvent} />
+          <Field label="Country interested" value={lead.interestedCountry} />
+          <Field label="Budget range" value={lead.budgetRange ? `₹${lead.budgetRange} Lakhs` : null} />
+          <Field label="Needs 1-on-1 FMGE session" value={lead.needsFmgeSession === true ? "Yes" : lead.needsFmgeSession === false ? "No" : null} />
+          <Field label="Document type" value={lead.documentType ? lead.documentType === "aadhar" ? "Aadhar Card" : lead.documentType === "10th" ? "10th Marks Sheet" : "12th Marks Sheet" : null} />
+          <Field
+            label="Document"
+            value={lead.documentUrl ? (
+              <a
+                href={lead.documentUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 hover:underline"
+              >
+                View Document →
+              </a>
+            ) : null}
+          />
+        </Section>
+      )}
+
       <Section title="Interest">
         <Field label="Course" value={lead.courseSlug} />
         <Field label="Country" value={lead.countrySlug} />

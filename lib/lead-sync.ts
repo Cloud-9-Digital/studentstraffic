@@ -37,6 +37,15 @@ export type LeadSyncPayload = {
   fullName: string;
   phone: string;
   email?: string;
+  fatherName?: string;
+  alternatePhone?: string;
+  city?: string;
+  seminarEvent?: string;
+  interestedCountry?: string;
+  budgetRange?: string;
+  needsFmgeSession?: boolean;
+  documentUrl?: string;
+  documentType?: string;
   userState?: string;
   courseSlug?: string;
   countrySlug?: string;
@@ -66,6 +75,15 @@ const SYNC_PLACEHOLDER = "NA";
 type LeadSyncTransportPayload = Omit<
   LeadSyncPayload,
   | "email"
+  | "fatherName"
+  | "alternatePhone"
+  | "city"
+  | "seminarEvent"
+  | "interestedCountry"
+  | "budgetRange"
+  | "needsFmgeSession"
+  | "documentUrl"
+  | "documentType"
   | "userState"
   | "courseSlug"
   | "countrySlug"
@@ -85,6 +103,15 @@ type LeadSyncTransportPayload = Omit<
   | "acceptLanguage"
 > & {
   email: string;
+  fatherName: string;
+  alternatePhone: string;
+  city: string;
+  seminarEvent: string;
+  interestedCountry: string;
+  budgetRange: string;
+  needsFmgeSession: string;
+  documentUrl: string;
+  documentType: string;
   userState: string;
   courseSlug: string;
   countrySlug: string;
@@ -121,6 +148,15 @@ function buildTransportPayload(
   return {
     ...payload,
     email: withPlaceholder(payload.email),
+    fatherName: withPlaceholder(payload.fatherName),
+    alternatePhone: withPlaceholder(payload.alternatePhone),
+    city: withPlaceholder(payload.city),
+    seminarEvent: withPlaceholder(payload.seminarEvent),
+    interestedCountry: withPlaceholder(payload.interestedCountry),
+    budgetRange: withPlaceholder(payload.budgetRange),
+    needsFmgeSession: payload.needsFmgeSession ? "Yes" : "No",
+    documentUrl: withPlaceholder(payload.documentUrl),
+    documentType: withPlaceholder(payload.documentType),
     userState: withPlaceholder(payload.userState),
     courseSlug: withPlaceholder(payload.courseSlug),
     countrySlug: withPlaceholder(payload.countrySlug),
