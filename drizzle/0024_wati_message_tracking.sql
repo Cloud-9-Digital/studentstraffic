@@ -1,0 +1,12 @@
+ALTER TABLE "leads" ADD COLUMN "wati_message_status" text DEFAULT 'not_attempted' NOT NULL;
+ALTER TABLE "leads" ADD COLUMN "wati_template_name" text;
+ALTER TABLE "leads" ADD COLUMN "wati_local_message_id" text;
+ALTER TABLE "leads" ADD COLUMN "wati_whatsapp_message_id" text;
+ALTER TABLE "leads" ADD COLUMN "wati_last_event" text;
+ALTER TABLE "leads" ADD COLUMN "wati_status_updated_at" timestamp with time zone;
+ALTER TABLE "leads" ADD COLUMN "wati_accepted_at" timestamp with time zone;
+ALTER TABLE "leads" ADD COLUMN "wati_delivered_at" timestamp with time zone;
+ALTER TABLE "leads" ADD COLUMN "wati_read_at" timestamp with time zone;
+ALTER TABLE "leads" ADD COLUMN "wati_failed_at" timestamp with time zone;
+ALTER TABLE "leads" ADD COLUMN "wati_message_error" text;
+CREATE INDEX "leads_wati_local_message_id_idx" ON "leads" USING btree ("wati_local_message_id");

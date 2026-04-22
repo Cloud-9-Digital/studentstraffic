@@ -20,6 +20,7 @@ import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import { getTrackingSnapshot } from "@/lib/tracking";
+import { sendSeminarLeadWhatsAppMessage } from "@/lib/wati";
 import {
   consumePublicFormRateLimits,
   normalizePhoneIdentifier,
@@ -177,30 +178,38 @@ export async function submitSeminarLeadAction(
 
       insertedLeadId = insertedLead?.id;
 
-      await syncLeadDestinations(insertedLeadId, {
-        websiteLeadId: insertedLeadId,
-        submittedAt: submittedAt.toISOString(),
-        fullName: data.fullName,
-        phone: data.phone,
-        userState: "Tamil Nadu",
-        notes: `Attending: ${data.seminarEvent} | Home city: ${data.city}`,
-        sourcePath: data.sourcePath,
-        sourceUrl: emptyToUndefined(data.sourceUrl),
-        sourceQuery,
-        pageTitle: emptyToUndefined(data.pageTitle),
-        ctaVariant: data.ctaVariant,
-        documentReferrer: emptyToUndefined(data.documentReferrer),
-        utmSource: tracking.utmSource,
-        utmMedium: tracking.utmMedium,
-        utmCampaign: tracking.utmCampaign,
-        utmTerm: tracking.utmTerm,
-        utmContent: tracking.utmContent,
-        referrer: headerStore.get("referer") ?? undefined,
-        userAgent: headerStore.get("user-agent") ?? undefined,
-        ipAddress: ipAddress ?? undefined,
-        acceptLanguage: headerStore.get("accept-language") ?? undefined,
-        clientContext,
-      });
+      await Promise.allSettled([
+        syncLeadDestinations(insertedLeadId, {
+          websiteLeadId: insertedLeadId,
+          submittedAt: submittedAt.toISOString(),
+          fullName: data.fullName,
+          phone: data.phone,
+          userState: "Tamil Nadu",
+          notes: `Attending: ${data.seminarEvent} | Home city: ${data.city}`,
+          sourcePath: data.sourcePath,
+          sourceUrl: emptyToUndefined(data.sourceUrl),
+          sourceQuery,
+          pageTitle: emptyToUndefined(data.pageTitle),
+          ctaVariant: data.ctaVariant,
+          documentReferrer: emptyToUndefined(data.documentReferrer),
+          utmSource: tracking.utmSource,
+          utmMedium: tracking.utmMedium,
+          utmCampaign: tracking.utmCampaign,
+          utmTerm: tracking.utmTerm,
+          utmContent: tracking.utmContent,
+          referrer: headerStore.get("referer") ?? undefined,
+          userAgent: headerStore.get("user-agent") ?? undefined,
+          ipAddress: ipAddress ?? undefined,
+          acceptLanguage: headerStore.get("accept-language") ?? undefined,
+          clientContext,
+        }),
+        sendSeminarLeadWhatsAppMessage({
+          fullName: data.fullName,
+          phone: data.phone,
+          seminarEvent: data.seminarEvent,
+          city: data.city,
+        }, insertedLeadId),
+      ]);
     } else {
       console.warn(
         "Seminar lead submission skipped DB persistence because DATABASE_URL is missing."

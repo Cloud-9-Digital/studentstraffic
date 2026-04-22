@@ -46,6 +46,13 @@ async function LeadDetail({ id }: { id: string }) {
     status === "failed" ? "text-red-600" :
     status === "pending" ? "text-amber-600" : "text-slate-500";
 
+  const whatsappTone = (status: string | null) =>
+    status === "read" ? "text-emerald-700" :
+    status === "delivered" || status === "sent" || status === "accepted" ? "text-blue-700" :
+    status === "replied" ? "text-violet-700" :
+    status === "failed" ? "text-red-600" :
+    status === "skipped" ? "text-amber-600" : "text-slate-500";
+
   return (
     <div className="space-y-4">
       <div>
@@ -136,6 +143,20 @@ async function LeadDetail({ id }: { id: string }) {
         <Field label="Status" value={<span className={syncTone(lead.pabblySyncStatus)}>{lead.pabblySyncStatus}</span>} />
         <Field label="Synced at" value={lead.pabblySyncedAt ? fmt.format(lead.pabblySyncedAt) : undefined} />
         <Field label="Error" value={lead.pabblySyncError} />
+      </Section>
+
+      <Section title="WhatsApp">
+        <Field label="Status" value={<span className={whatsappTone(lead.watiMessageStatus)}>{lead.watiMessageStatus}</span>} />
+        <Field label="Template" value={lead.watiTemplateName} />
+        <Field label="Local message ID" value={lead.watiLocalMessageId} />
+        <Field label="WhatsApp message ID" value={lead.watiWhatsappMessageId} />
+        <Field label="Last event" value={lead.watiLastEvent} />
+        <Field label="Accepted at" value={lead.watiAcceptedAt ? fmt.format(lead.watiAcceptedAt) : undefined} />
+        <Field label="Delivered at" value={lead.watiDeliveredAt ? fmt.format(lead.watiDeliveredAt) : undefined} />
+        <Field label="Read at" value={lead.watiReadAt ? fmt.format(lead.watiReadAt) : undefined} />
+        <Field label="Failed at" value={lead.watiFailedAt ? fmt.format(lead.watiFailedAt) : undefined} />
+        <Field label="Status updated at" value={lead.watiStatusUpdatedAt ? fmt.format(lead.watiStatusUpdatedAt) : undefined} />
+        <Field label="Error" value={lead.watiMessageError} />
       </Section>
 
       <Section title="Technical">

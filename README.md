@@ -86,6 +86,40 @@ The interface is intentionally light-only. The visual direction should stay mode
 - PostgreSQL `pg_trgm`
 - `react-phone-number-input`
 
+## Integrations
+
+### WATI WhatsApp
+
+The app can send outbound WhatsApp template messages after lead submissions.
+
+Required environment variables:
+
+- `WATI_API_BASE_URL` - WATI base API URL ending in your account's `/api/v1`
+- `WATI_ACCESS_TOKEN` - bearer token generated from WATI API Docs
+- `WATI_CHANNEL_NUMBER` - optional override for the sending number; defaults to the site's main WhatsApp number
+- `WATI_WEBHOOK_TOKEN` - shared token appended to the webhook URL for securing callbacks
+
+Template mapping is hardcoded in `lib/wati.ts` so multiple WhatsApp flows can use different approved template names.
+
+Current template parameter order expected by the code:
+
+- Standard lead template: `1=fullName`, `2=interest`, `3=sourcePath`
+- Seminar template: `1=fullName`, `2=city`, `3=seminarEvent`
+
+If WATI config is missing, submissions still succeed and WhatsApp sending is skipped.
+
+To track delivery, configure a WATI webhook that points to:
+
+- `/api/wati/webhook?token=YOUR_WATI_WEBHOOK_TOKEN`
+
+Recommended WATI events:
+
+- `templateMessageSent_v2`
+- `sentMessageDELIVERED_v2`
+- `sentMessageREAD_v2`
+- `sentMessageREPLIED_v2`
+- `templateMessageFailed`
+
 ## Current Architecture
 
 ### Rendering model

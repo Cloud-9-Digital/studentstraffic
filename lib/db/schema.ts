@@ -282,6 +282,19 @@ export const leads = pgTable(
       .default("not_attempted"),
     pabblySyncedAt: timestamp("pabbly_synced_at", { withTimezone: true }),
     pabblySyncError: text("pabbly_sync_error"),
+    watiMessageStatus: text("wati_message_status")
+      .notNull()
+      .default("not_attempted"),
+    watiTemplateName: text("wati_template_name"),
+    watiLocalMessageId: text("wati_local_message_id"),
+    watiWhatsappMessageId: text("wati_whatsapp_message_id"),
+    watiLastEvent: text("wati_last_event"),
+    watiStatusUpdatedAt: timestamp("wati_status_updated_at", { withTimezone: true }),
+    watiAcceptedAt: timestamp("wati_accepted_at", { withTimezone: true }),
+    watiDeliveredAt: timestamp("wati_delivered_at", { withTimezone: true }),
+    watiReadAt: timestamp("wati_read_at", { withTimezone: true }),
+    watiFailedAt: timestamp("wati_failed_at", { withTimezone: true }),
+    watiMessageError: text("wati_message_error"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
   },
   (table) => [
@@ -289,6 +302,7 @@ export const leads = pgTable(
     index("leads_visitor_id_idx").on(table.visitorId),
     index("leads_gclid_idx").on(table.gclid),
     index("leads_fbclid_idx").on(table.fbclid),
+    index("leads_wati_local_message_id_idx").on(table.watiLocalMessageId),
   ]
 );
 

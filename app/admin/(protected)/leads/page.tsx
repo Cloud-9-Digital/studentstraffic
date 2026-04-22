@@ -16,6 +16,25 @@ const fmtDate = new Intl.DateTimeFormat("en-IN", {
 
 const ITEMS_PER_PAGE = 50;
 
+function whatsappStatusTone(status: string | null) {
+  switch (status) {
+    case "read":
+      return "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200";
+    case "delivered":
+    case "sent":
+    case "accepted":
+      return "bg-blue-50 text-blue-700 ring-1 ring-blue-200";
+    case "replied":
+      return "bg-violet-50 text-violet-700 ring-1 ring-violet-200";
+    case "failed":
+      return "bg-red-50 text-red-700 ring-1 ring-red-200";
+    case "skipped":
+      return "bg-amber-50 text-amber-700 ring-1 ring-amber-200";
+    default:
+      return "bg-slate-100 text-slate-600 ring-1 ring-slate-200";
+  }
+}
+
 type SearchParams = Promise<{
   page?: string;
   search?: string;
@@ -88,6 +107,8 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
           seminarEvent: leads.seminarEvent,
           interestedCountry: leads.interestedCountry,
           sourcePath: leads.sourcePath,
+          watiMessageStatus: leads.watiMessageStatus,
+          watiTemplateName: leads.watiTemplateName,
           createdAt: leads.createdAt,
         })
         .from(leads)
@@ -175,6 +196,7 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
                   <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">City</th>
                   <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">Event</th>
                   <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">Country</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">WhatsApp</th>
                   <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">Date</th>
                   <th className="px-6 py-3" />
                 </tr>
@@ -193,6 +215,16 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
                       )}
                     </td>
                     <td className="px-6 py-3.5 text-slate-500">{lead.interestedCountry || "—"}</td>
+                    <td className="px-6 py-3.5">
+                      <div className="flex flex-col gap-1">
+                        <span className={`inline-flex w-fit rounded-full px-2 py-0.5 text-[11px] font-medium ${whatsappStatusTone(lead.watiMessageStatus)}`}>
+                          {lead.watiMessageStatus.replaceAll("_", " ")}
+                        </span>
+                        {lead.watiTemplateName ? (
+                          <span className="text-[11px] text-slate-400">{lead.watiTemplateName}</span>
+                        ) : null}
+                      </div>
+                    </td>
                     <td className="px-6 py-3.5 text-slate-400">{lead.createdAt ? fmtDate.format(lead.createdAt) : "—"}</td>
                     <td className="px-6 py-3.5 text-right">
                       <Link
@@ -205,7 +237,7 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
                   </tr>
                 ))}
                 {rows.length === 0 && (
-                  <tr><td colSpan={7} className="px-6 py-16 text-center text-sm text-slate-400">
+                  <tr><td colSpan={8} className="px-6 py-16 text-center text-sm text-slate-400">
                     {hasActiveFilters ? "No leads match your filters." : "No leads yet."}
                   </td></tr>
                 )}
@@ -229,6 +261,11 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
                       <span>{lead.interestedCountry}</span>
                     </>
                   )}
+                </div>
+                <div className="mt-2">
+                  <span className={`inline-flex rounded-full px-2 py-0.5 text-[11px] font-medium ${whatsappStatusTone(lead.watiMessageStatus)}`}>
+                    WhatsApp: {lead.watiMessageStatus.replaceAll("_", " ")}
+                  </span>
                 </div>
               </div>
               <div className="flex shrink-0 items-center gap-2">

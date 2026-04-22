@@ -14,6 +14,10 @@ const envSchema = z.object({
   BREVO_SENDER_EMAIL: z.string().email().optional(),
   BREVO_REPLY_TO_EMAIL: z.string().email().optional(),
   BREVO_ADMIN_EMAIL: z.string().email().optional(),
+  WATI_API_BASE_URL: z.string().url().optional(),
+  WATI_ACCESS_TOKEN: z.string().min(1).optional(),
+  WATI_CHANNEL_NUMBER: z.string().min(1).optional(),
+  WATI_WEBHOOK_TOKEN: z.string().min(1).optional(),
 });
 
 const parsedEnv = envSchema.safeParse({
@@ -28,6 +32,10 @@ const parsedEnv = envSchema.safeParse({
   BREVO_SENDER_EMAIL: process.env.BREVO_SENDER_EMAIL,
   BREVO_REPLY_TO_EMAIL: process.env.BREVO_REPLY_TO_EMAIL,
   BREVO_ADMIN_EMAIL: process.env.BREVO_ADMIN_EMAIL,
+  WATI_API_BASE_URL: process.env.WATI_API_BASE_URL,
+  WATI_ACCESS_TOKEN: process.env.WATI_ACCESS_TOKEN,
+  WATI_CHANNEL_NUMBER: process.env.WATI_CHANNEL_NUMBER,
+  WATI_WEBHOOK_TOKEN: process.env.WATI_WEBHOOK_TOKEN,
 });
 
 if (!parsedEnv.success) {
@@ -61,6 +69,10 @@ export const env = {
   brevoSenderEmail: parsedEnv.data.BREVO_SENDER_EMAIL ?? "updates@studentstraffic.com",
   brevoReplyToEmail: parsedEnv.data.BREVO_REPLY_TO_EMAIL ?? "hello@studentstraffic.com",
   brevoAdminEmail: parsedEnv.data.BREVO_ADMIN_EMAIL ?? "hello@studentstraffic.com",
+  watiApiBaseUrl: parsedEnv.data.WATI_API_BASE_URL,
+  watiAccessToken: parsedEnv.data.WATI_ACCESS_TOKEN,
+  watiChannelNumber: parsedEnv.data.WATI_CHANNEL_NUMBER,
+  watiWebhookToken: parsedEnv.data.WATI_WEBHOOK_TOKEN,
   hasDatabase: Boolean(parsedEnv.data.DATABASE_URL),
   hasCrmLeadSyncConfig: Boolean(
     parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET
@@ -69,4 +81,9 @@ export const env = {
   hasPabblyLeadWebhook: Boolean(parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL),
   hasAdminAuthConfig: Boolean(parsedEnv.data.NEXTAUTH_SECRET),
   hasBrevo: Boolean(parsedEnv.data.BREVO_API_KEY),
+  hasWati: Boolean(
+    parsedEnv.data.WATI_API_BASE_URL &&
+      parsedEnv.data.WATI_ACCESS_TOKEN &&
+      parsedEnv.data.WATI_CHANNEL_NUMBER
+  ),
 };
