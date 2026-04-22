@@ -26,8 +26,18 @@ import {
   normalizePhoneIdentifier,
 } from "@/lib/security/public-form-guard";
 
+function getRequiredFormString(formData: FormData, key: string) {
+  return getFormString(formData, key) ?? "";
+}
+
 export type SeminarLeadFormState = {
   error?: string;
+  values?: {
+    fullName?: string;
+    phone?: string;
+    seminarEvent?: string;
+    city?: string;
+  };
 };
 
 const seminarLeadSchema = z.object({
@@ -50,14 +60,18 @@ export async function submitSeminarLeadAction(
   _prevState: SeminarLeadFormState,
   formData: FormData
 ): Promise<SeminarLeadFormState> {
+  const submittedValues = {
+    fullName: getRequiredFormString(formData, "fullName"),
+    phone: getRequiredFormString(formData, "phone"),
+    seminarEvent: getRequiredFormString(formData, "seminarEvent"),
+    city: getRequiredFormString(formData, "city"),
+  };
+
   const parsed = seminarLeadSchema.safeParse({
-    fullName: getFormString(formData, "fullName"),
-    phone: getFormString(formData, "phone"),
-    seminarEvent: getFormString(formData, "seminarEvent"),
-    city: getFormString(formData, "city"),
-    sourcePath: getFormString(formData, "sourcePath"),
-    ctaVariant: getFormString(formData, "ctaVariant"),
-    startedAt: getFormString(formData, "startedAt"),
+    ...submittedValues,
+    sourcePath: getRequiredFormString(formData, "sourcePath"),
+    ctaVariant: getRequiredFormString(formData, "ctaVariant"),
+    startedAt: getRequiredFormString(formData, "startedAt"),
     sourceUrl: getFormString(formData, "sourceUrl"),
     sourceQuery: getFormString(formData, "sourceQuery"),
     pageTitle: getFormString(formData, "pageTitle"),
@@ -70,17 +84,18 @@ export async function submitSeminarLeadAction(
     return {
       error:
         parsed.error.issues[0]?.message ?? "Please check the form and try again.",
+      values: submittedValues,
     };
   }
 
   const data = parsed.data;
 
   if (data.website) {
-    return { error: "Spam detection triggered. Please try again." };
+    return { error: "Spam detection triggered. Please try again.", values: submittedValues };
   }
 
   if (wasSubmittedTooFast(data.startedAt)) {
-    return { error: "Please take a moment and submit again." };
+    return { error: "Please take a moment and submit again.", values: submittedValues };
   }
 
   const db = getDb();
@@ -119,7 +134,7 @@ export async function submitSeminarLeadAction(
       );
 
       if (rateLimitError) {
-        return { error: rateLimitError };
+        return { error: rateLimitError, values: submittedValues };
       }
 
       const [recentLead] = await db
@@ -134,6 +149,7 @@ export async function submitSeminarLeadAction(
         return {
           error:
             "We already received your enquiry recently. Please wait a few minutes before submitting again.",
+          values: submittedValues,
         };
       }
 
@@ -218,6 +234,7 @@ export async function submitSeminarLeadAction(
   } catch {
     return {
       error: "We could not save your enquiry right now. Please try once more.",
+      values: submittedValues,
     };
   }
 

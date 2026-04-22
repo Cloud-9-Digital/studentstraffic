@@ -28,8 +28,24 @@ import {
   normalizePhoneIdentifier,
 } from "@/lib/security/public-form-guard";
 
+function getRequiredFormString(formData: FormData, key: string) {
+  return getFormString(formData, key) ?? "";
+}
+
 export type SeminarRegistrationFormState = {
   error?: string;
+  values?: {
+    studentName?: string;
+    fatherName?: string;
+    studentPhone?: string;
+    alternatePhone?: string;
+    city?: string;
+    seminarEvent?: string;
+    interestedCountry?: string;
+    budgetRange?: string;
+    needsFmgeSession?: string;
+    documentType?: string;
+  };
 };
 
 const seminarRegistrationSchema = z.object({
@@ -58,20 +74,24 @@ export async function submitSeminarRegistrationAction(
   _prevState: SeminarRegistrationFormState,
   formData: FormData
 ): Promise<SeminarRegistrationFormState> {
-  const parsed = seminarRegistrationSchema.safeParse({
-    studentName: getFormString(formData, "studentName"),
-    fatherName: getFormString(formData, "fatherName"),
-    studentPhone: getFormString(formData, "studentPhone"),
+  const submittedValues = {
+    studentName: getRequiredFormString(formData, "studentName"),
+    fatherName: getRequiredFormString(formData, "fatherName"),
+    studentPhone: getRequiredFormString(formData, "studentPhone"),
     alternatePhone: getFormString(formData, "alternatePhone"),
-    city: getFormString(formData, "city"),
-    seminarEvent: getFormString(formData, "seminarEvent"),
-    interestedCountry: getFormString(formData, "interestedCountry"),
-    budgetRange: getFormString(formData, "budgetRange"),
-    needsFmgeSession: getFormString(formData, "needsFmgeSession"),
-    documentType: getFormString(formData, "documentType"),
-    sourcePath: getFormString(formData, "sourcePath"),
-    ctaVariant: getFormString(formData, "ctaVariant"),
-    startedAt: getFormString(formData, "startedAt"),
+    city: getRequiredFormString(formData, "city"),
+    seminarEvent: getRequiredFormString(formData, "seminarEvent"),
+    interestedCountry: getRequiredFormString(formData, "interestedCountry"),
+    budgetRange: getRequiredFormString(formData, "budgetRange"),
+    needsFmgeSession: getRequiredFormString(formData, "needsFmgeSession"),
+    documentType: getFormString(formData, "documentType") ?? "",
+  };
+
+  const parsed = seminarRegistrationSchema.safeParse({
+    ...submittedValues,
+    sourcePath: getRequiredFormString(formData, "sourcePath"),
+    ctaVariant: getRequiredFormString(formData, "ctaVariant"),
+    startedAt: getRequiredFormString(formData, "startedAt"),
     sourceUrl: getFormString(formData, "sourceUrl"),
     sourceQuery: getFormString(formData, "sourceQuery"),
     pageTitle: getFormString(formData, "pageTitle"),
@@ -84,17 +104,18 @@ export async function submitSeminarRegistrationAction(
     return {
       error:
         parsed.error.issues[0]?.message ?? "Please check the form and try again.",
+      values: submittedValues,
     };
   }
 
   const data = parsed.data;
 
   if (data.website) {
-    return { error: "Spam detection triggered. Please try again." };
+    return { error: "Spam detection triggered. Please try again.", values: submittedValues };
   }
 
   if (wasSubmittedTooFast(data.startedAt)) {
-    return { error: "Please take a moment and submit again." };
+    return { error: "Please take a moment and submit again.", values: submittedValues };
   }
 
   // Handle file upload (only required if they need 1-on-1 session)
@@ -104,15 +125,15 @@ export async function submitSeminarRegistrationAction(
   if (needsSession) {
     const documentFile = formData.get("document");
     if (!documentFile || !(documentFile instanceof File)) {
-      return { error: "Please upload a document for the 1-on-1 session." };
+      return { error: "Please upload a document for the 1-on-1 session.", values: submittedValues };
     }
 
     if (!isAllowedProofType(documentFile.type)) {
-      return { error: "Invalid file type. Please upload PDF, JPG, or PNG." };
+      return { error: "Invalid file type. Please upload PDF, JPG, or PNG.", values: submittedValues };
     }
 
     if (documentFile.size > 5 * 1024 * 1024) {
-      return { error: "File is too large. Maximum size is 5MB." };
+      return { error: "File is too large. Maximum size is 5MB.", values: submittedValues };
     }
 
     try {
@@ -124,7 +145,7 @@ export async function submitSeminarRegistrationAction(
       documentUrl = uploaded.url;
     } catch (uploadError) {
       console.error("Document upload failed:", uploadError);
-      return { error: "Failed to upload document. Please try again." };
+      return { error: "Failed to upload document. Please try again.", values: submittedValues };
     }
   }
 
@@ -164,7 +185,7 @@ export async function submitSeminarRegistrationAction(
       );
 
       if (rateLimitError) {
-        return { error: rateLimitError };
+        return { error: rateLimitError, values: submittedValues };
       }
 
       const [recentLead] = await db
@@ -179,6 +200,7 @@ export async function submitSeminarRegistrationAction(
         return {
           error:
             "We already received your enquiry recently. Please wait a few minutes before submitting again.",
+          values: submittedValues,
         };
       }
 
@@ -279,6 +301,7 @@ export async function submitSeminarRegistrationAction(
   } catch {
     return {
       error: "We could not save your registration right now. Please try once more.",
+      values: submittedValues,
     };
   }
 

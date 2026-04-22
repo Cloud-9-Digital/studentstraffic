@@ -120,6 +120,7 @@ export function SeminarLeadForm({
           name="fullName"
           placeholder="Your name"
           autoComplete="name"
+          defaultValue={state.values?.fullName ?? ""}
           required
         />
       </div>
@@ -127,7 +128,12 @@ export function SeminarLeadForm({
       {/* Phone */}
       <div className="space-y-2">
         <Label htmlFor={`${fieldPrefix}-phone`}>Phone number</Label>
-        <PhoneInputField id={`${fieldPrefix}-phone`} name="phone" required />
+        <PhoneInputField
+          id={`${fieldPrefix}-phone`}
+          name="phone"
+          defaultValue={state.values?.phone}
+          required
+        />
       </div>
 
       {/* Seminar event selector */}
@@ -143,7 +149,7 @@ export function SeminarLeadForm({
               id={`${fieldPrefix}-event`}
               name="seminarEvent"
               required
-              defaultValue={defaultEvent ?? ""}
+              defaultValue={state.values?.seminarEvent ?? defaultEvent ?? ""}
               className={SELECT_CLASS}
             >
               <option value="" disabled>Select a city & date</option>
@@ -166,7 +172,7 @@ export function SeminarLeadForm({
             id={`${fieldPrefix}-city`}
             name="city"
             required
-            defaultValue=""
+            defaultValue={state.values?.city ?? ""}
             className={SELECT_CLASS}
           >
             <option value="" disabled>Select your city</option>

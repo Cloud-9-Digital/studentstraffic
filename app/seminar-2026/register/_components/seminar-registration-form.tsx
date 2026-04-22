@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useId, useMemo, useRef, useState } from "react";
+import { useActionState, useEffect, useId, useMemo, useRef, useState } from "react";
 import { City } from "country-state-city";
 import { ChevronDown, Loader2 } from "lucide-react";
 
@@ -66,7 +66,17 @@ export function SeminarRegistrationForm({
   const formRef = useRef<HTMLFormElement>(null);
   const startedAtRef = useRef<HTMLInputElement>(null);
   const hasTrackedSubmitRef = useRef(false);
-  const [needsSession, setNeedsSession] = useState<string>("");
+  const [needsSession, setNeedsSession] = useState<string>(
+    initialState.values?.needsFmgeSession ?? ""
+  );
+
+  const values = state.values;
+
+  useEffect(() => {
+    if (values?.needsFmgeSession !== undefined) {
+      setNeedsSession(values.needsFmgeSession);
+    }
+  }, [values?.needsFmgeSession]);
 
   // Filter out events whose date has already passed
   const upcomingEvents = useMemo(() => {
@@ -134,6 +144,7 @@ export function SeminarRegistrationForm({
           name="studentName"
           placeholder="Full name of the student"
           autoComplete="name"
+          defaultValue={values?.studentName ?? ""}
           required
         />
       </div>
@@ -146,6 +157,7 @@ export function SeminarRegistrationForm({
           name="fatherName"
           placeholder="Father's full name"
           autoComplete="off"
+          defaultValue={values?.fatherName ?? ""}
           required
         />
       </div>
@@ -153,7 +165,12 @@ export function SeminarRegistrationForm({
       {/* Student phone */}
       <div className="space-y-2">
         <Label htmlFor={`${fieldPrefix}-student-phone`}>Student phone number</Label>
-        <PhoneInputField id={`${fieldPrefix}-student-phone`} name="studentPhone" required />
+        <PhoneInputField
+          id={`${fieldPrefix}-student-phone`}
+          name="studentPhone"
+          defaultValue={values?.studentPhone}
+          required
+        />
       </div>
 
       {/* Alternate phone */}
@@ -162,6 +179,7 @@ export function SeminarRegistrationForm({
         <PhoneInputField
           id={`${fieldPrefix}-alternate-phone`}
           name="alternatePhone"
+          defaultValue={values?.alternatePhone}
           required={false}
         />
         <p className="text-xs text-muted-foreground">
@@ -177,7 +195,7 @@ export function SeminarRegistrationForm({
             id={`${fieldPrefix}-city`}
             name="city"
             required
-            defaultValue=""
+            defaultValue={values?.city ?? ""}
             className={SELECT_CLASS}
           >
             <option value="" disabled>Select your city</option>
@@ -202,7 +220,7 @@ export function SeminarRegistrationForm({
               id={`${fieldPrefix}-event`}
               name="seminarEvent"
               required
-              defaultValue={defaultEvent ?? ""}
+              defaultValue={values?.seminarEvent ?? defaultEvent ?? ""}
               className={SELECT_CLASS}
             >
               <option value="" disabled>Select a city & date</option>
@@ -225,7 +243,7 @@ export function SeminarRegistrationForm({
             id={`${fieldPrefix}-country`}
             name="interestedCountry"
             required
-            defaultValue=""
+            defaultValue={values?.interestedCountry ?? ""}
             className={SELECT_CLASS}
           >
             <option value="" disabled>Select a country</option>
@@ -248,7 +266,7 @@ export function SeminarRegistrationForm({
             id={`${fieldPrefix}-budget`}
             name="budgetRange"
             required
-            defaultValue=""
+            defaultValue={values?.budgetRange ?? ""}
             className={SELECT_CLASS}
           >
             <option value="" disabled>Select budget range</option>
@@ -296,7 +314,7 @@ export function SeminarRegistrationForm({
                 id={`${fieldPrefix}-document-type`}
                 name="documentType"
                 required
-                defaultValue=""
+                defaultValue={values?.documentType ?? ""}
                 className={SELECT_CLASS}
               >
                 <option value="" disabled>Select document type</option>
