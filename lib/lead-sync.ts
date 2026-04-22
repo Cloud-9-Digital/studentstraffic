@@ -109,7 +109,7 @@ type LeadSyncTransportPayload = Omit<
   seminarEvent: string;
   interestedCountry: string;
   budgetRange: string;
-  needsFmgeSession: string;
+  needsFmgeSession: boolean;
   documentUrl: string;
   documentType: string;
   userState: string;
@@ -154,7 +154,7 @@ function buildTransportPayload(
     seminarEvent: withPlaceholder(payload.seminarEvent),
     interestedCountry: withPlaceholder(payload.interestedCountry),
     budgetRange: withPlaceholder(payload.budgetRange),
-    needsFmgeSession: payload.needsFmgeSession ? "Yes" : "No",
+    needsFmgeSession: payload.needsFmgeSession ?? false,
     documentUrl: withPlaceholder(payload.documentUrl),
     documentType: withPlaceholder(payload.documentType),
     userState: withPlaceholder(payload.userState),
