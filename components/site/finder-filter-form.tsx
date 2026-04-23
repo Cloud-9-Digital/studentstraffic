@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ChevronDown, Search, SlidersHorizontal, X } from "lucide-react";
 
 import { Label } from "@/components/ui/label";
@@ -13,6 +13,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { sortCountryOptionObjects } from "@/lib/country-order";
 import type {
   FinderCountryOption,
   FinderCourseOption,
@@ -201,6 +202,11 @@ function FilterFields({
     options?: FinderFilterChangeOptions,
   ) => void;
 }) {
+  const orderedCountries = useMemo(
+    () => sortCountryOptionObjects(countries),
+    [countries]
+  );
+
   function navigate(overrides: Partial<FinderFilters>) {
     onFiltersChange(mergeFilters(filters, overrides), { history: "replace" });
     onNavigate?.();
@@ -227,7 +233,7 @@ function FilterFields({
               className={selectClassName()}
             >
               <option value="">All countries</option>
-              {countries.map((country) => (
+              {orderedCountries.map((country) => (
                 <option key={country.slug} value={country.slug}>
                   {country.name}
                 </option>

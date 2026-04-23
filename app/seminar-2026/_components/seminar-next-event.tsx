@@ -90,7 +90,7 @@ export function SeminarNextEvent() {
               <div className="mt-8 pt-6 border-t border-[#e8e0d5]">
                 <SeminarDialogTrigger
                   className="w-full rounded-xl bg-[#c17f3b] px-8 py-4 text-[15px] font-semibold text-white shadow-lg transition hover:bg-[#a86d2f] active:scale-[0.98]"
-                  preselectedEvent={`${city} — ${date} at ${time}`}
+                  preselectedEvent={`${city} — ${date}`}
                 >
                   Reserve Your Free Seat
                 </SeminarDialogTrigger>

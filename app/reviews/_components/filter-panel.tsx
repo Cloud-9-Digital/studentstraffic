@@ -1,5 +1,6 @@
 import { X } from "lucide-react";
 
+import { sortCountryNames } from "@/lib/country-order";
 import { FilterSelect } from "./filter-select";
 import type { ReviewFilters } from "./types";
 
@@ -24,7 +25,7 @@ export function FilterPanel({
         label="Country"
         value={filters.country}
         onChange={(v) => onSet("country", v)}
-        options={countries.map((c) => ({ value: c, label: c }))}
+        options={sortCountryNames(countries).map((c) => ({ value: c, label: c }))}
         placeholder="All countries"
       />
       <FilterSelect

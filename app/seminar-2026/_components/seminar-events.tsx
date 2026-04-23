@@ -54,7 +54,7 @@ export function SeminarEvents() {
                 <div className="border-t border-[#e8e0d5] px-4 py-2.5">
                   <SeminarDialogTrigger
                     className="w-full rounded-lg bg-[#c17f3b]/8 py-2 text-xs font-semibold text-[#c17f3b] transition hover:bg-[#c17f3b] hover:text-white active:scale-[0.98]"
-                    preselectedEvent={`${city} — ${date} at ${time}`}
+                    preselectedEvent={`${city} — ${date}`}
                   >
                     Register for this event
                   </SeminarDialogTrigger>

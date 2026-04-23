@@ -7,6 +7,7 @@ import { ChevronDown, ChevronLeft, ChevronRight, Search, SlidersHorizontal, User
 const PAGE_SIZE = 24;
 
 import { StudentCard } from "@/components/site/student-card";
+import { sortCountryNames } from "@/lib/country-order";
 import {
   Sheet,
   SheetContent,
@@ -206,7 +207,7 @@ export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
 
   // Derived filter options
   const countries = useMemo(
-    () => [...new Set(peers.map((p) => p.countryName))].sort(),
+    () => sortCountryNames([...new Set(peers.map((p) => p.countryName))]),
     [peers]
   );
 

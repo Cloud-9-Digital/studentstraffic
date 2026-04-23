@@ -86,10 +86,11 @@ function getSeminarEventCity(seminarEvent: string, fallbackCity: string) {
   return normalized || fallbackCity.trim() || "NA";
 }
 
-function getSeminarEventDateTime(seminarEvent: string) {
+function getSeminarEventDate(seminarEvent: string) {
   const [, ...rest] = seminarEvent.split("—");
   const normalized = rest.join("—").trim();
-  return normalized || seminarEvent.trim() || "NA";
+  const [dateOnly] = normalized.split(/\s+at\s+/i);
+  return dateOnly?.trim() || normalized || seminarEvent.trim() || "NA";
 }
 
 function getInterest(payload: LeadWhatsAppPayload) {
@@ -157,7 +158,7 @@ const watiTemplates: Record<WatiTemplateKey, WatiTemplateConfig> = {
         seminarPayload.fullName,
         "MBBS Abroad Seminar 2026",
         getSeminarEventCity(seminarPayload.seminarEvent, seminarPayload.city),
-        getSeminarEventDateTime(seminarPayload.seminarEvent),
+        getSeminarEventDate(seminarPayload.seminarEvent),
       ]);
     },
   },

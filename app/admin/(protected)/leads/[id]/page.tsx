@@ -5,8 +5,10 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
 
+import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
+import { LeadDetailDeleteButton } from "../_components/leads-table";
 
 const fmt = new Intl.DateTimeFormat("en-IN", {
   day: "numeric", month: "long", year: "numeric",
@@ -34,6 +36,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 async function LeadDetail({ id }: { id: string }) {
   await connection();
+  const session = await requireAdminSession();
 
   const db = getDb();
   if (!db) notFound();
@@ -61,6 +64,11 @@ async function LeadDetail({ id }: { id: string }) {
         </Link>
         <h1 className="mt-3 font-display text-2xl font-semibold text-[#0b312b] md:text-3xl">{lead.fullName}</h1>
         <p className="mt-1 text-sm text-slate-400">{lead.createdAt ? fmt.format(lead.createdAt) : "—"} · Lead #{lead.id}</p>
+        {session.user.adminRole === "owner" ? (
+          <div className="mt-4">
+            <LeadDetailDeleteButton leadId={lead.id} leadName={lead.fullName} />
+          </div>
+        ) : null}
       </div>
 
       <Section title="Contact">

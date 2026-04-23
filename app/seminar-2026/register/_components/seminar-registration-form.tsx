@@ -250,8 +250,8 @@ export function SeminarRegistrationForm({
             >
               <option value="" disabled>Select a city & date</option>
               {upcomingEvents.map((e) => (
-                <option key={`${e.date}-${e.city}`} value={`${e.city} — ${e.date} at ${e.time}`}>
-                  {e.city} — {e.date} · {e.time}
+                <option key={`${e.date}-${e.city}`} value={`${e.city} — ${e.date}`}>
+                  {e.city} — {e.date}
                 </option>
               ))}
             </select>

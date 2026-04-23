@@ -71,6 +71,12 @@ export const DIFFERENTIATORS = [
 
 export const SPEAKER_COUNTRIES = [
   {
+    country: "Vietnam",
+    countryCode: "vn",
+    detail: "Student representatives sharing firsthand experience of studying MBBS in Vietnam.",
+    hasFmgeGraduates: false,
+  },
+  {
     country: "Russia",
     countryCode: "ru",
     detail: "FMGE-cleared doctors from KSMU, PSMU, Kazan State, and other NMC-approved universities.",
@@ -93,12 +99,6 @@ export const SPEAKER_COUNTRIES = [
     countryCode: "uz",
     detail: "FMGE-cleared graduates from Tashkent Medical Academy and other NMC-listed institutions.",
     hasFmgeGraduates: true,
-  },
-  {
-    country: "Vietnam",
-    countryCode: "vn",
-    detail: "Student representatives sharing firsthand experience of studying MBBS in Vietnam.",
-    hasFmgeGraduates: false,
   },
 ] as const;
 
