@@ -12,12 +12,43 @@ export const analyticsEvents = {
 export type AnalyticsEvent =
   (typeof analyticsEvents)[keyof typeof analyticsEvents];
 
+type MetaTrackMethod = "track" | "trackCustom";
+
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
     fbq?: (...args: unknown[]) => void;
     _fbq?: unknown;
   }
+}
+
+function cleanParams(params?: Record<string, unknown>) {
+  if (!params) return undefined;
+
+  return Object.fromEntries(
+    Object.entries(params).filter(([, value]) => value !== undefined && value !== null)
+  );
+}
+
+function trackMetaEvent(
+  method: MetaTrackMethod,
+  event: string,
+  params?: Record<string, unknown>,
+  attempt = 0
+) {
+  if (typeof window === "undefined") return;
+
+  if (typeof window.fbq === "function") {
+    window.fbq(method, event, cleanParams(params));
+    return;
+  }
+
+  if (attempt >= 20) return;
+
+  window.setTimeout(
+    () => trackMetaEvent(method, event, params, attempt + 1),
+    attempt < 5 ? 100 : 250
+  );
 }
 
 export function trackEvent(
@@ -32,16 +63,14 @@ export function trackMetaStandardEvent(
   event: string,
   params?: Record<string, unknown>
 ) {
-  if (typeof window === "undefined" || typeof window.fbq !== "function") return;
-  window.fbq("track", event, params);
+  trackMetaEvent("track", event, params);
 }
 
 export function trackMetaCustomEvent(
   event: AnalyticsEvent,
   params?: Record<string, unknown>
 ) {
-  if (typeof window === "undefined" || typeof window.fbq !== "function") return;
-  window.fbq("trackCustom", event, params);
+  trackMetaEvent("trackCustom", event, params);
 }
 
 export function trackLeadFormSubmit(params?: Record<string, unknown>) {
@@ -52,7 +81,11 @@ export function trackLeadFormSubmit(params?: Record<string, unknown>) {
 export function trackLeadFormSuccess(params?: Record<string, unknown>) {
   trackEvent(analyticsEvents.leadFormSuccess, params);
   trackMetaCustomEvent(analyticsEvents.leadFormSuccess, params);
-  trackMetaStandardEvent("Lead", params);
+  trackMetaStandardEvent("Lead", {
+    ...params,
+    content_name: "Lead form submitted",
+    content_category: "Website lead",
+  });
 }
 
 export function trackContactClick(
