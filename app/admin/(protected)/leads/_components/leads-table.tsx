@@ -349,16 +349,19 @@ export function LeadsTable({
                     />
                   </th>
                 ) : null}
-                <th className="w-64 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-56 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Data
                 </th>
-                <th className="w-40 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-36 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Source
                 </th>
-                <th className="w-44 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-32 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                  City
+                </th>
+                <th className="w-40 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Event
                 </th>
-                <th className="w-32 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-28 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Country
                 </th>
                 <th className="w-36 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
@@ -387,16 +390,17 @@ export function LeadsTable({
                   <td className="px-6 py-3.5">
                     <div className="min-w-0">
                       <p className="font-medium text-[#0b312b]">{lead.fullName}</p>
-                      <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-slate-500">
-                        <span>{lead.phone}</span>
-                        <span>•</span>
-                        <span>{lead.city || lead.userState || "—"}</span>
-                      </div>
+                      <p className="mt-1 text-xs text-slate-500">{lead.phone}</p>
                     </div>
                   </td>
                   <td className="px-6 py-3.5">
                     <span className="text-xs text-slate-500">
                       {lead.sourcePath}
+                    </span>
+                  </td>
+                  <td className="px-6 py-3.5 text-slate-500">
+                    <span className="text-xs">
+                      {lead.city || "—"}
                     </span>
                   </td>
                   <td className="px-6 py-3.5 text-slate-500">
@@ -441,7 +445,7 @@ export function LeadsTable({
               {rows.length === 0 ? (
                 <tr>
                   <td
-                    colSpan={canDelete ? 8 : 7}
+                    colSpan={canDelete ? 9 : 8}
                     className="px-6 py-16 text-center text-sm text-slate-400"
                   >
                     {hasActiveFilters
