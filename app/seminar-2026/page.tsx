@@ -39,6 +39,7 @@ export default function SeminarPage() {
         <SeminarHero />
         <SeminarCitiesTicker />
         <SeminarNextEvent />
+        <SeminarEvents />
         <SeminarTrust />
         <SeminarTagline />
         <SeminarDifferentiators />
@@ -46,7 +47,6 @@ export default function SeminarPage() {
         <SeminarTopUniversities />
         <SeminarInterest />
         <SeminarInclusions />
-        <SeminarEvents />
         <SeminarCta />
         <SeminarFaq />
         <SeminarFooter />
