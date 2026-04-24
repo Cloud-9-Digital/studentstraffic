@@ -20,7 +20,7 @@ export function SeminarCta() {
             Reserve My Free Seat
             <ArrowRight className="size-4" />
           </SeminarDialogTrigger>
-          <p className="text-sm text-white/30">Starts 5:30 PM · 2–3 hours · 14 cities</p>
+          <p className="text-sm text-white/30">Chennai 10:00 AM · Other timings soon · 16 cities</p>
         </div>
       </div>
     </section>

@@ -2,20 +2,22 @@ import { BookOpen, GraduationCap, ShieldCheck, Users, Stethoscope, Trophy } from
 
 export const EVENTS = [
   { date: "10 May 2026", day: "Sunday",   city: "Chennai",         venue: "Hotel Hilton",               state: "TN", time: "10:00 AM" },
-  { date: "17 May 2026", day: "Sunday",   city: "Madurai",         venue: "Royal Court",                state: "TN", time: "5:30 PM" },
-  { date: "24 May 2026", day: "Sunday",   city: "Dindigul",        venue: "Parson's Court",             state: "TN", time: "5:30 PM" },
-  { date: "31 May 2026", day: "Sunday",   city: "Tirunelveli",     venue: "RR Inn Group's of Hotel",    state: "TN", time: "5:30 PM" },
-  { date: "7 Jun 2026",  day: "Sunday",   city: "Nagercoil",       venue: "Hotel Lance International",  state: "TN", time: "5:30 PM" },
-  { date: "13 Jun 2026", day: "Saturday", city: "Madurai",         venue: "Royal Court",                state: "TN", time: "5:30 PM" },
-  { date: "14 Jun 2026", day: "Sunday",   city: "Trichy",          venue: "Breeze Residency",           state: "TN", time: "5:30 PM" },
-  { date: "20 Jun 2026", day: "Saturday", city: "Pollachi",        venue: "Sakthi Hotel",               state: "TN", time: "5:30 PM" },
-  { date: "21 Jun 2026", day: "Sunday",   city: "Karaikudi",       venue: "APS Hall",                   state: "TN", time: "5:30 PM" },
-  { date: "28 Jun 2026", day: "Sunday",   city: "Sivakasi",        venue: "RSR Residency",              state: "TN", time: "5:30 PM" },
-  { date: "4 Jul 2026",  day: "Saturday", city: "Ramanathapuram",  venue: "Daiwik Hotel",               state: "TN", time: "5:30 PM" },
-  { date: "5 Jul 2026",  day: "Sunday",   city: "Thoothukudi",     venue: "Hotel Raj",                  state: "TN", time: "5:30 PM" },
-  { date: "12 Jul 2026", day: "Sunday",   city: "Theni",           venue: "Hotel Theni International",  state: "TN", time: "5:30 PM" },
-  { date: "18 Jul 2026", day: "Saturday", city: "Erode",           venue: "Hotel Royal Embassy",        state: "TN", time: "5:30 PM" },
-  { date: "19 Jul 2026", day: "Sunday",   city: "Tiruppur",        venue: "The Mayberry",               state: "TN", time: "5:30 PM" },
+  { date: "17 May 2026", day: "Sunday",   city: "Madurai",         venue: "Royal Court",                state: "TN" },
+  { date: "23 May 2026", day: "Saturday", city: "Dindigul",        venue: "Parson's Court",             state: "TN" },
+  { date: "24 May 2026", day: "Sunday",   city: "Coimbatore",      venue: "TBD",                        state: "TN" },
+  { date: "28 May 2026", day: "Thursday", city: "Salem",           venue: "Shrie Shaanth Hotel",        state: "TN", time: "10:00 AM" },
+  { date: "31 May 2026", day: "Sunday",   city: "Tirunelveli",     venue: "RR Inn Group's of Hotel",    state: "TN" },
+  { date: "7 Jun 2026",  day: "Sunday",   city: "Nagercoil",       venue: "Hotel Lance International",  state: "TN" },
+  { date: "13 Jun 2026", day: "Saturday", city: "Madurai",         venue: "Royal Court",                state: "TN" },
+  { date: "14 Jun 2026", day: "Sunday",   city: "Trichy",          venue: "Breeze Residency",           state: "TN" },
+  { date: "20 Jun 2026", day: "Saturday", city: "Pollachi",        venue: "Sakthi Mahal Hotel",         state: "TN", time: "10:00 AM" },
+  { date: "21 Jun 2026", day: "Sunday",   city: "Karaikudi",       venue: "APS Hall",                   state: "TN" },
+  { date: "28 Jun 2026", day: "Sunday",   city: "Sivakasi",        venue: "RSR Residency",              state: "TN" },
+  { date: "4 Jul 2026",  day: "Saturday", city: "Ramanathapuram",  venue: "Daiwik Hotel",               state: "TN" },
+  { date: "5 Jul 2026",  day: "Sunday",   city: "Thoothukudi",     venue: "Hotel Raj",                  state: "TN" },
+  { date: "12 Jul 2026", day: "Sunday",   city: "Theni",           venue: "Hotel Theni International",  state: "TN" },
+  { date: "18 Jul 2026", day: "Saturday", city: "Erode",           venue: "Royal Embassy Hotel",        state: "TN", time: "10:00 AM" },
+  { date: "19 Jul 2026", day: "Sunday",   city: "Tirupur",         venue: "May Berry Hotel",            state: "TN", time: "10:00 AM" },
 ] as const;
 
 export const FREE_INCLUSIONS = [
@@ -105,7 +107,7 @@ export const SPEAKER_COUNTRIES = [
 export const FAQ = [
   {
     q: "What time does the seminar start and how long does it last?",
-    a: "Seminars begin at 5:30 PM and typically run for 2–3 hours. We recommend arriving 10–15 minutes early. Your WhatsApp confirmation will include the exact schedule for your city.",
+    a: "The Chennai seminar starts at 10:00 AM. Timings for other cities are being finalized and will be shared in your WhatsApp confirmation.",
   },
   {
     q: "Is there a registration fee?",

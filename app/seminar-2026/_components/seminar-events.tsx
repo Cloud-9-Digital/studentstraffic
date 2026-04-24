@@ -16,12 +16,13 @@ export function SeminarEvents() {
           Upcoming seminar dates
         </h2>
         <p className="mt-3 text-sm text-[#5a6270]">
-          All seminars start at <strong className="text-[#0c1a35]">5:30 PM</strong> and run for 2–3 hours. Entry is free — register and we&apos;ll WhatsApp you venue details.
+          Chennai timing is confirmed. Other city timings will be shared once finalized — register and we&apos;ll WhatsApp you the details.
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {EVENTS.map(({ date, day, city, venue, state, time }) => {
+          {EVENTS.map(({ date, day, city, venue, time }) => {
             const [dayNum, month, year] = date.split(" ");
+            const displayTime = time ?? "Timing to be confirmed";
             return (
               <div
                 key={`${date}-${city}`}
@@ -46,7 +47,7 @@ export function SeminarEvents() {
                     </div>
                     <div className="mt-0.5 truncate text-[15px] font-bold text-[#0c1a35]">{city}</div>
                     <div className="mt-0.5 truncate text-xs text-[#5a6270]">{venue}</div>
-                    <div className="mt-0.5 text-xs text-[#5a6270]/60">{day} · {time}</div>
+                    <div className="mt-0.5 text-xs text-[#5a6270]/60">{day} · {displayTime}</div>
                   </div>
                 </div>
 

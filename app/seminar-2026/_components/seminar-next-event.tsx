@@ -13,6 +13,7 @@ export function SeminarNextEvent() {
   if (!nextEvent) return null;
 
   const { date, day, city, venue, time } = nextEvent;
+  const displayTime = time ?? "Timing to be confirmed";
 
   return (
     <section className="bg-gradient-to-b from-white to-[#faf8f5] py-16 md:py-20">
@@ -72,7 +73,7 @@ export function SeminarNextEvent() {
                   </div>
                   <div>
                     <div className="text-xs font-medium uppercase tracking-wide text-[#5a6270]/60">Time</div>
-                    <div className="text-sm font-semibold text-[#0c1a35]">{time}</div>
+                    <div className="text-sm font-semibold text-[#0c1a35]">{displayTime}</div>
                   </div>
                 </div>
 

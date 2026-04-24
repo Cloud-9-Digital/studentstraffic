@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Free MBBS guidance seminar across Tamil Nadu. Meet FMGE-cleared doctors from Russia, Georgia, Kyrgyzstan & more. Get honest peer guidance — not a sales pitch. Free entry, free mentorship.",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Free MBBS Seminar 2026 — 14 Cities across Tamil Nadu",
+    title: "Free MBBS Seminar 2026 — 16 Cities across Tamil Nadu",
     description:
       "Meet FMGE-cleared doctors from 5 countries. Get honest peer guidance — not a sales pitch. Free entry, free mentorship.",
     type: "website",
