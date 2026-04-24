@@ -1,7 +1,6 @@
 "use client";
 
 import { useActionState, useId, useMemo, useRef } from "react";
-import { City } from "country-state-city";
 import { ChevronDown, Loader2 } from "lucide-react";
 
 import {
@@ -12,10 +11,9 @@ import { EVENTS } from "../_data";
 import { syncLeadTrackingFields } from "@/components/site/lead-tracking";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { PhoneInputField } from "@/components/ui/phone-input";
 import { trackLeadFormSubmit } from "@/lib/analytics";
-
-const TN_CITIES = City.getCitiesOfState("IN", "TN").map((c) => c.name);
+import { TN_CITIES } from "../_data/tn-cities";
+import { SeminarPhoneInput } from "./seminar-phone-input";
 
 const MONTH_MAP: Record<string, number> = {
   Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
@@ -128,7 +126,7 @@ export function SeminarLeadForm({
       {/* Phone */}
       <div className="space-y-2">
         <Label htmlFor={`${fieldPrefix}-phone`}>Phone number</Label>
-        <PhoneInputField
+        <SeminarPhoneInput
           id={`${fieldPrefix}-phone`}
           name="phone"
           defaultValue={state.values?.phone}

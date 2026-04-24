@@ -1,7 +1,6 @@
 "use client";
 
 import { useActionState, useEffect, useId, useMemo, useRef, useState } from "react";
-import { City } from "country-state-city";
 import { ChevronDown, Loader2 } from "lucide-react";
 
 import {
@@ -9,6 +8,8 @@ import {
   submitSeminarRegistrationAction,
 } from "../_actions/submit-seminar-registration";
 import { EVENTS, SPEAKER_COUNTRIES } from "../../_data";
+import { TN_CITIES } from "../../_data/tn-cities";
+import { SeminarPhoneInput } from "../../_components/seminar-phone-input";
 
 const BUDGET_RANGES = [
   { value: "20-30", label: "₹20-30 Lakhs" },
@@ -25,10 +26,7 @@ const DOCUMENT_TYPES = [
 import { syncLeadTrackingFields } from "@/components/site/lead-tracking";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { PhoneInputField } from "@/components/ui/phone-input";
 import { trackLeadFormSubmit } from "@/lib/analytics";
-
-const TN_CITIES = City.getCitiesOfState("IN", "TN").map((c) => c.name);
 
 const MONTH_MAP: Record<string, number> = {
   Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
@@ -187,7 +185,7 @@ export function SeminarRegistrationForm({
         <Label htmlFor={`${fieldPrefix}-student-phone`}>
           Student phone number <span className="text-destructive">*</span>
         </Label>
-        <PhoneInputField
+        <SeminarPhoneInput
           id={`${fieldPrefix}-student-phone`}
           name="studentPhone"
           defaultValue={values?.studentPhone}
@@ -198,7 +196,7 @@ export function SeminarRegistrationForm({
       {/* Alternate phone */}
       <div className="space-y-2">
         <Label htmlFor={`${fieldPrefix}-alternate-phone`}>Alternate phone number</Label>
-        <PhoneInputField
+        <SeminarPhoneInput
           id={`${fieldPrefix}-alternate-phone`}
           name="alternatePhone"
           defaultValue={values?.alternatePhone}
