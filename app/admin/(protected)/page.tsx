@@ -3,6 +3,7 @@ import { count, desc, eq, ne } from "drizzle-orm";
 import {
   AlertCircle,
   ArrowRight,
+  BarChart3,
   Download,
   FileText,
   Star,
@@ -208,6 +209,29 @@ export default async function AdminDashboardPage() {
             </div>
           );
         })}
+      </div>
+
+      <div className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-2xl">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
+              Seminar funnel
+            </p>
+            <h2 className="mt-1 text-lg font-semibold text-[#0b312b]">
+              Open seminar analytics
+            </h2>
+            <p className="mt-1 text-sm text-slate-500">
+              View registrations by event, top cities, CTA performance, CRM sync health, and
+              WhatsApp delivery in one place.
+            </p>
+          </div>
+          <Button asChild className="shrink-0 bg-primary !text-white hover:bg-surface-dark-2">
+            <Link href="/admin/seminars">
+              <BarChart3 className="size-4" />
+              Seminar Analytics
+            </Link>
+          </Button>
+        </div>
       </div>
 
       <div className="rounded-2xl border border-slate-200 bg-white">

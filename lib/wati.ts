@@ -191,6 +191,29 @@ async function updateLeadWatiState(
 }
 
 async function sendTemplateMessage(options: SendWatiTemplateOptions) {
+  // Skip sending WhatsApp messages for WATI inbound leads
+  if (options.leadId) {
+    const db = getDb();
+    if (db) {
+      const [lead] = await db
+        .select({ ctaVariant: leads.ctaVariant })
+        .from(leads)
+        .where(eq(leads.id, options.leadId))
+        .limit(1);
+
+      if (lead?.ctaVariant === "wati_inbound") {
+        console.warn("[wati] Skipping WhatsApp send for WATI inbound lead.");
+        await updateLeadWatiState(options.leadId, {
+          watiMessageStatus: "skipped",
+          watiTemplateName: options.templateName,
+          watiLastEvent: "wati_inbound_skip",
+          watiStatusUpdatedAt: new Date(),
+        });
+        return { ok: false, status: "skipped", error: "wati_inbound_skip" } satisfies WatiSendResult;
+      }
+    }
+  }
+
   if (!env.hasWati || !env.watiApiBaseUrl || !env.watiAccessToken) {
     console.warn("[wati] Missing WATI configuration — skipping WhatsApp send.");
     await updateLeadWatiState(options.leadId, {

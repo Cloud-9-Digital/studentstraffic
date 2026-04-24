@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
-import { syncLeadDestinations } from "@/lib/lead-sync";
+import { syncLeadToCrm } from "@/lib/lead-sync";
 import { fetchLatestWatiMessages } from "@/lib/wati";
 
 type WatiWebhookPayload = {
@@ -343,7 +343,8 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
       notes,
       clientContext,
       crmSyncStatus: env.hasCrmLeadSyncConfig ? "pending" : "skipped",
-      pabblySyncStatus: env.hasPabblyLeadWebhook ? "pending" : "skipped",
+      pabblySyncStatus: "skipped",
+      pabblySyncError: "wati_inbound_message",
       watiMessageStatus: "received",
       watiWhatsappMessageId: messageId,
       watiLastEvent: eventType,
@@ -354,18 +355,24 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
 
   const insertedLeadId = insertedLead?.id;
 
-  await syncLeadDestinations(insertedLeadId, {
-    websiteLeadId: insertedLeadId,
-    submittedAt: submittedAt.toISOString(),
-    fullName,
-    phone: normalizedPhone,
-    sourcePath: "/wati",
-    sourceUrl: env.siteUrl ? `${env.siteUrl.replace(/\/+$/, "")}/wati` : undefined,
-    sourceQuery,
-    ctaVariant: "wati_inbound",
-    notes,
-    clientContext,
-  });
+  // Sync to CRM only (skip Pabbly to avoid triggering new lead notifications)
+  if (insertedLeadId) {
+    syncLeadToCrm(insertedLeadId, {
+      websiteLeadId: insertedLeadId,
+      submittedAt: submittedAt.toISOString(),
+      fullName,
+      phone: normalizedPhone,
+      userState: "NA",
+      sourcePath: "/wati",
+      sourceUrl: env.siteUrl ? `${env.siteUrl.replace(/\/+$/, "")}/wati` : undefined,
+      sourceQuery,
+      ctaVariant: "wati_inbound",
+      notes,
+      clientContext,
+    }).catch((error) => {
+      console.error("[wati] Failed to sync lead to CRM:", error);
+    });
+  }
 
   return { created: Boolean(insertedLeadId), skipped: false };
 }

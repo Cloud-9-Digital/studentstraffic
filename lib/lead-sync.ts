@@ -229,7 +229,7 @@ async function postJson(url: string, body: unknown, headers?: HeadersInit) {
   }
 }
 
-async function syncLeadToCrm(
+export async function syncLeadToCrm(
   leadId: number | undefined,
   payload: LeadSyncPayload
 ) {
