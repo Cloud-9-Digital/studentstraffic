@@ -1,5 +1,14 @@
 import { BookOpen, GraduationCap, ShieldCheck, Users, Stethoscope, Trophy } from "lucide-react";
 
+export type SeminarEvent = {
+  date: string;
+  day: string;
+  city: string;
+  venue: string;
+  state: string;
+  time?: string;
+};
+
 export const EVENTS = [
   { date: "10 May 2026", day: "Sunday",   city: "Chennai",         venue: "Hotel Hilton",               state: "TN", time: "10:00 AM" },
   { date: "17 May 2026", day: "Sunday",   city: "Madurai",         venue: "Royal Court",                state: "TN" },
@@ -18,7 +27,7 @@ export const EVENTS = [
   { date: "12 Jul 2026", day: "Sunday",   city: "Theni",           venue: "Hotel Theni International",  state: "TN" },
   { date: "18 Jul 2026", day: "Saturday", city: "Erode",           venue: "Royal Embassy Hotel",        state: "TN", time: "10:00 AM" },
   { date: "19 Jul 2026", day: "Sunday",   city: "Tirupur",         venue: "May Berry Hotel",            state: "TN", time: "10:00 AM" },
-] as const;
+] satisfies readonly SeminarEvent[];
 
 export const FREE_INCLUSIONS = [
   {

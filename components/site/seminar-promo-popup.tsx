@@ -147,7 +147,7 @@ export function SeminarPromoPopup() {
                     <span className="text-[13px] font-semibold text-white">{nextEvent.city}</span>
                   </div>
                   <p className="mt-0.5 truncate text-[11px] text-white/35">
-                    {nextEvent.venue} · {nextEvent.time}
+                    {nextEvent.venue} · {nextEvent.time ?? "Timing TBC"}
                   </p>
                 </div>
               </div>

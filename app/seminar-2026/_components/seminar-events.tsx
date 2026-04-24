@@ -20,7 +20,8 @@ export function SeminarEvents() {
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {EVENTS.map(({ date, day, city, venue, time }) => {
+          {EVENTS.map((event) => {
+            const { date, day, city, venue, time } = event;
             const [dayNum, month, year] = date.split(" ");
             const displayTime = time ?? "Timing to be confirmed";
             return (

@@ -56,6 +56,12 @@ type WatiSendResult = {
   error?: string;
 };
 
+type WatiMessageListResult = {
+  ok: boolean;
+  messages: unknown[];
+  error?: string;
+};
+
 function normalizePhoneNumber(phone: string) {
   return phone.replace(/\D/g, "");
 }
@@ -309,6 +315,78 @@ async function sendTemplateMessage(options: SendWatiTemplateOptions) {
       status: "failed",
       error: message.slice(0, 1000),
     } satisfies WatiSendResult;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+export async function fetchLatestWatiMessages(
+  whatsappNumber: string,
+  options?: { pageSize?: number; pageNumber?: number }
+) {
+  if (!env.hasWati || !env.watiApiBaseUrl || !env.watiAccessToken) {
+    return { ok: false, messages: [], error: "config_missing" } satisfies WatiMessageListResult;
+  }
+
+  const normalizedNumber = normalizePhoneNumber(whatsappNumber);
+  if (!normalizedNumber) {
+    return { ok: false, messages: [], error: "invalid_phone" } satisfies WatiMessageListResult;
+  }
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), WATI_TIMEOUT_MS);
+
+  try {
+    const baseUrl = env.watiApiBaseUrl.replace(/\/+$/, "");
+    const url = new URL(`${baseUrl}/getMessages/${normalizedNumber}`);
+    url.searchParams.set("pageSize", String(options?.pageSize ?? 10));
+    url.searchParams.set("pageNumber", String(options?.pageNumber ?? 1));
+
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        Authorization: `Bearer ${normalizeAccessToken(env.watiAccessToken)}`,
+      },
+      cache: "no-store",
+      signal: controller.signal,
+    });
+
+    const payload = await response.json().catch(() => null);
+
+    if (!response.ok) {
+      return {
+        ok: false,
+        messages: [],
+        error:
+          typeof payload === "object" && payload && "message" in payload
+            ? String(payload.message)
+            : `wati_messages_failed_${response.status}`,
+      } satisfies WatiMessageListResult;
+    }
+
+    const messages =
+      Array.isArray(payload)
+        ? payload
+        : typeof payload === "object" && payload
+          ? ([
+              "messages",
+              "items",
+              "data",
+              "messageList",
+              "result",
+            ].map((key) => (payload as Record<string, unknown>)[key])
+              .find(Array.isArray) as unknown[] | undefined) ?? []
+          : [];
+
+    return { ok: true, messages } satisfies WatiMessageListResult;
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return {
+      ok: false,
+      messages: [],
+      error: message.slice(0, 500),
+    } satisfies WatiMessageListResult;
   } finally {
     clearTimeout(timeout);
   }

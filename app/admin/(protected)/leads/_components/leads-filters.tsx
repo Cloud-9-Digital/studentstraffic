@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import { Search } from "lucide-react";
+import { ChevronDown, Search } from "lucide-react";
 import { useTransition } from "react";
 
 type Props = {
@@ -70,46 +70,55 @@ export function LeadsFilters({ sourcePathOptions, seminarEventOptions = [], coun
           </div>
 
           {/* Source Path */}
-          <select
-            value={sourcePath}
-            onChange={(e) => updateFilters({ sourcePath: e.target.value })}
-            className="h-10 rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-800 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
-          >
-            <option value="">All sources</option>
-            {sourcePathOptions.map((opt) => (
-              <option key={opt.value} value={opt.value || ""}>
-                {opt.value}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              value={sourcePath}
+              onChange={(e) => updateFilters({ sourcePath: e.target.value })}
+              className="h-10 w-full appearance-none rounded-lg border border-slate-200 bg-white px-3 pr-10 text-sm text-slate-800 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
+            >
+              <option value="">All sources</option>
+              {sourcePathOptions.map((opt) => (
+                <option key={opt.value} value={opt.value || ""}>
+                  {opt.value}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-slate-400" />
+          </div>
 
           {/* Seminar Event */}
-          <select
-            value={seminarEvent}
-            onChange={(e) => updateFilters({ seminarEvent: e.target.value })}
-            className="h-10 rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-800 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
-          >
-            <option value="">All events</option>
-            {(seminarEventOptions || []).map((opt) => (
-              <option key={opt.value} value={opt.value || ""}>
-                {opt.value}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              value={seminarEvent}
+              onChange={(e) => updateFilters({ seminarEvent: e.target.value })}
+              className="h-10 w-full appearance-none rounded-lg border border-slate-200 bg-white px-3 pr-10 text-sm text-slate-800 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
+            >
+              <option value="">All events</option>
+              {(seminarEventOptions || []).map((opt) => (
+                <option key={opt.value} value={opt.value || ""}>
+                  {opt.value}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-slate-400" />
+          </div>
 
           {/* Country */}
-          <select
-            value={interestedCountry}
-            onChange={(e) => updateFilters({ interestedCountry: e.target.value })}
-            className="h-10 rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-800 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
-          >
-            <option value="">All countries</option>
-            {countryOptions.map((opt) => (
-              <option key={opt.value} value={opt.value || ""}>
-                {opt.value}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              value={interestedCountry}
+              onChange={(e) => updateFilters({ interestedCountry: e.target.value })}
+              className="h-10 w-full appearance-none rounded-lg border border-slate-200 bg-white px-3 pr-10 text-sm text-slate-800 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
+            >
+              <option value="">All countries</option>
+              {countryOptions.map((opt) => (
+                <option key={opt.value} value={opt.value || ""}>
+                  {opt.value}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-slate-400" />
+          </div>
         </div>
 
         {/* Clear Filters */}
