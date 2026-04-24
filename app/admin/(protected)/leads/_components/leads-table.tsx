@@ -341,7 +341,7 @@ export function LeadsTable({
             <thead>
               <tr className="border-b border-slate-100 bg-slate-50/60">
                 {canDelete ? (
-                  <th className="px-4 py-3 text-left">
+                  <th className="w-12 px-4 py-3 text-left">
                     <SelectionCheckbox
                       checked={allSelected}
                       onCheckedChange={toggleAll}
@@ -349,22 +349,25 @@ export function LeadsTable({
                     />
                   </th>
                 ) : null}
-                <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-64 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Data
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-40 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                  Source
+                </th>
+                <th className="w-44 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Event
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-32 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Country
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-36 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   WhatsApp
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-32 px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Date
                 </th>
-                <th className="px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <th className="w-24 px-6 py-3 text-right text-xs font-semibold uppercase tracking-wider text-slate-400">
                   Actions
                 </th>
               </tr>
@@ -390,6 +393,11 @@ export function LeadsTable({
                         <span>{lead.city || lead.userState || "—"}</span>
                       </div>
                     </div>
+                  </td>
+                  <td className="px-6 py-3.5">
+                    <span className="text-xs text-slate-500">
+                      {lead.sourcePath}
+                    </span>
                   </td>
                   <td className="px-6 py-3.5 text-slate-500">
                     {lead.seminarEvent ? (
@@ -433,7 +441,7 @@ export function LeadsTable({
               {rows.length === 0 ? (
                 <tr>
                   <td
-                    colSpan={canDelete ? 7 : 6}
+                    colSpan={canDelete ? 8 : 7}
                     className="px-6 py-16 text-center text-sm text-slate-400"
                   >
                     {hasActiveFilters

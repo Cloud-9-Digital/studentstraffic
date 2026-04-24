@@ -6,10 +6,11 @@ import { useTransition } from "react";
 
 type Props = {
   sourcePathOptions: { value: string | null }[];
+  seminarEventOptions?: { value: string | null }[];
   countryOptions: { value: string | null }[];
 };
 
-export function LeadsFilters({ sourcePathOptions, countryOptions }: Props) {
+export function LeadsFilters({ sourcePathOptions, seminarEventOptions = [], countryOptions }: Props) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition();
@@ -83,13 +84,18 @@ export function LeadsFilters({ sourcePathOptions, countryOptions }: Props) {
           </select>
 
           {/* Seminar Event */}
-          <input
-            type="text"
-            placeholder="Event (Chennai...)"
-            defaultValue={seminarEvent}
+          <select
+            value={seminarEvent}
             onChange={(e) => updateFilters({ seminarEvent: e.target.value })}
-            className="h-10 rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-800 placeholder-slate-400 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
-          />
+            className="h-10 rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-800 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
+          >
+            <option value="">All events</option>
+            {(seminarEventOptions || []).map((opt) => (
+              <option key={opt.value} value={opt.value || ""}>
+                {opt.value}
+              </option>
+            ))}
+          </select>
 
           {/* Country */}
           <select

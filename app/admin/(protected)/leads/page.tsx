@@ -111,6 +111,14 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
         .orderBy(leads.interestedCountry)
     : [];
 
+  const seminarEventOptions = db
+    ? await db
+        .selectDistinct({ value: leads.seminarEvent })
+        .from(leads)
+        .where(sql`${leads.seminarEvent} IS NOT NULL`)
+        .orderBy(leads.seminarEvent)
+    : [];
+
   const buildQueryString = (updates: Record<string, string | undefined>) => {
     const newParams = new URLSearchParams();
     const current = {
@@ -156,6 +164,7 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
       {/* Filters and Search */}
       <LeadsFilters
         sourcePathOptions={sourcePathOptions}
+        seminarEventOptions={seminarEventOptions}
         countryOptions={countryOptions}
       />
 

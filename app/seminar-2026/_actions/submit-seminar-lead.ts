@@ -158,6 +158,8 @@ export async function submitSeminarLeadAction(
         .values({
           fullName: data.fullName,
           phone: data.phone,
+          city: data.city,
+          seminarEvent: data.seminarEvent,
           userState: "Tamil Nadu",
           notes: `Attending: ${data.seminarEvent} | Home city: ${data.city}`,
           sourcePath: data.sourcePath,
@@ -200,6 +202,8 @@ export async function submitSeminarLeadAction(
           submittedAt: submittedAt.toISOString(),
           fullName: data.fullName,
           phone: data.phone,
+          city: data.city,
+          seminarEvent: data.seminarEvent,
           userState: "Tamil Nadu",
           notes: `Attending: ${data.seminarEvent} | Home city: ${data.city}`,
           sourcePath: data.sourcePath,
