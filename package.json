@@ -15,6 +15,7 @@
     "db:import:guide-drafts": "tsx scripts/import-university-guide-drafts.ts",
     "db:import:wdoms": "tsx scripts/import-wdoms-directory.ts",
     "db:studio": "drizzle-kit studio",
+    "crm:backfill:seminars": "node scripts/backfill-crm-seminar-fields.mjs",
     "seo:indexnow": "tsx scripts/submit-indexnow.ts",
     "cache:revalidate:blog": "node scripts/revalidate-blog-cache.mjs"
   },
