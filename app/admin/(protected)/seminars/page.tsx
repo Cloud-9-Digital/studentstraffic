@@ -26,6 +26,7 @@ import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { formatNumber } from "@/lib/utils";
+import { EVENTS } from "@/app/seminar-2026/_data";
 
 const fmtDate = new Intl.DateTimeFormat("en-IN", {
   day: "numeric",
@@ -51,6 +52,10 @@ type BreakdownRow = {
   label: string;
   count: number;
 };
+
+function getConfiguredSeminarLabel(event: (typeof EVENTS)[number]) {
+  return `${event.city} — ${event.date}`;
+}
 
 function parseStartDate(value?: string) {
   if (!value) return null;
@@ -274,6 +279,18 @@ export default async function AdminSeminarAnalyticsPage({
 
   const totalLeads = summary.totalLeads ?? 0;
   const dailyMax = Math.max(...dailyRows.map((row) => row.count), 0);
+  const eventCountByLabel = new Map(eventRows.map((row) => [row.label, row.count]));
+  const configuredEventRows: BreakdownRow[] = EVENTS.map((event) => {
+    const label = getConfiguredSeminarLabel(event);
+    return {
+      label,
+      count: eventCountByLabel.get(label) ?? 0,
+    };
+  });
+  const extraEventRows = eventRows.filter(
+    (row) => !configuredEventRows.some((configuredRow) => configuredRow.label === row.label)
+  );
+  const allEventRows = [...configuredEventRows, ...extraEventRows];
 
   const topCards = [
     {
@@ -474,8 +491,8 @@ export default async function AdminSeminarAnalyticsPage({
 
         <BreakdownTable
           title="Top Seminar Events"
-          subtitle="Which seminar dates are driving the most demand."
-          rows={eventRows}
+          subtitle="Configured seminar dates, including events with no leads yet."
+          rows={allEventRows}
           total={totalLeads}
         />
       </div>
