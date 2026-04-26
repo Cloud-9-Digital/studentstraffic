@@ -3,7 +3,7 @@
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { isValidPhoneNumber, parsePhoneNumber } from "react-phone-number-input";
+import { isValidPhoneNumber, parsePhoneNumber } from "libphonenumber-js/min";
 import { z } from "zod";
 
 import {
