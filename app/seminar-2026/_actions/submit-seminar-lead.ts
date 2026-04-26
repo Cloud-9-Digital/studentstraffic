@@ -3,6 +3,7 @@
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { isValidPhoneNumber, parsePhoneNumber } from "react-phone-number-input";
 import { z } from "zod";
 
 import {
@@ -30,6 +31,20 @@ function getRequiredFormString(formData: FormData, key: string) {
   return getFormString(formData, key) ?? "";
 }
 
+function normalizePhone(value: string) {
+  const trimmedValue = value.trim();
+
+  if (!trimmedValue || !isValidPhoneNumber(trimmedValue)) {
+    return null;
+  }
+
+  try {
+    return parsePhoneNumber(trimmedValue)?.number ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export type SeminarLeadFormState = {
   error?: string;
   values?: {
@@ -42,7 +57,7 @@ export type SeminarLeadFormState = {
 
 const seminarLeadSchema = z.object({
   fullName: z.string().trim().min(2, "Please enter your full name."),
-  phone: z.string().trim().min(7, "Please enter a valid phone number."),
+  phone: z.string().trim().min(1, "Please enter a valid phone number."),
   seminarEvent: z.string().trim().min(2, "Please select the seminar you'd like to attend."),
   city: z.string().trim().min(2, "Please select your city."),
   sourcePath: z.string().trim().min(1),
@@ -89,9 +104,17 @@ export async function submitSeminarLeadAction(
   }
 
   const data = parsed.data;
+  const normalizedPhone = normalizePhone(data.phone);
 
   if (data.website) {
     return { error: "Spam detection triggered. Please try again.", values: submittedValues };
+  }
+
+  if (!normalizedPhone) {
+    return {
+      error: "Please enter a valid phone number.",
+      values: submittedValues,
+    };
   }
 
   if (wasSubmittedTooFast(data.startedAt)) {
@@ -124,7 +147,7 @@ export async function submitSeminarLeadAction(
             : null,
           {
             scope: "public:lead:phone",
-            identifier: normalizePhoneIdentifier(data.phone),
+            identifier: normalizePhoneIdentifier(normalizedPhone),
             limit: 10,
             windowMs: 6 * 60 * 60_000,
             blockMs: 2 * 60 * 60_000,
@@ -141,7 +164,7 @@ export async function submitSeminarLeadAction(
         .select({ id: leads.id })
         .from(leads)
         .where(
-          and(eq(leads.phone, data.phone), gte(leads.createdAt, minutesAgo(15)))
+          and(eq(leads.phone, normalizedPhone), gte(leads.createdAt, minutesAgo(15)))
         )
         .limit(1);
 
@@ -157,7 +180,7 @@ export async function submitSeminarLeadAction(
         .insert(leads)
         .values({
           fullName: data.fullName,
-          phone: data.phone,
+          phone: normalizedPhone,
           city: data.city,
           seminarEvent: data.seminarEvent,
           userState: "Tamil Nadu",
@@ -201,7 +224,7 @@ export async function submitSeminarLeadAction(
           websiteLeadId: insertedLeadId,
           submittedAt: submittedAt.toISOString(),
           fullName: data.fullName,
-          phone: data.phone,
+          phone: normalizedPhone,
           city: data.city,
           seminarEvent: data.seminarEvent,
           userState: "Tamil Nadu",
@@ -225,7 +248,7 @@ export async function submitSeminarLeadAction(
         }),
         sendSeminarRegistrationWhatsAppMessage({
           fullName: data.fullName,
-          phone: data.phone,
+          phone: normalizedPhone,
           seminarEvent: data.seminarEvent,
           city: data.city,
         }, insertedLeadId),

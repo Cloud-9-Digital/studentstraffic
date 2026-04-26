@@ -3,6 +3,7 @@
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { isValidPhoneNumber, parsePhoneNumber } from "react-phone-number-input";
 import { z } from "zod";
 
 import { uploadFileToCloudinary, isAllowedProofType } from "@/lib/cloudinary-upload";
@@ -32,6 +33,20 @@ function getRequiredFormString(formData: FormData, key: string) {
   return getFormString(formData, key) ?? "";
 }
 
+function normalizePhone(value: string) {
+  const trimmedValue = value.trim();
+
+  if (!trimmedValue || !isValidPhoneNumber(trimmedValue)) {
+    return null;
+  }
+
+  try {
+    return parsePhoneNumber(trimmedValue)?.number ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export type SeminarRegistrationFormState = {
   error?: string;
   values?: {
@@ -51,7 +66,7 @@ export type SeminarRegistrationFormState = {
 const seminarRegistrationSchema = z.object({
   studentName: z.string().trim().min(2, "Please enter the student's name."),
   fatherName: z.string().trim().optional(),
-  studentPhone: z.string().trim().min(7, "Please enter a valid phone number."),
+  studentPhone: z.string().trim().min(1, "Please enter a valid phone number."),
   alternatePhone: z.string().trim().optional(),
   city: z.string().trim().min(2, "Please select your city."),
   seminarEvent: z.string().trim().min(2, "Please select the seminar you'd like to attend."),
@@ -109,9 +124,27 @@ export async function submitSeminarRegistrationAction(
   }
 
   const data = parsed.data;
+  const normalizedStudentPhone = normalizePhone(data.studentPhone);
+  const normalizedAlternatePhone = data.alternatePhone
+    ? normalizePhone(data.alternatePhone)
+    : null;
 
   if (data.website) {
     return { error: "Spam detection triggered. Please try again.", values: submittedValues };
+  }
+
+  if (!normalizedStudentPhone) {
+    return {
+      error: "Please enter a valid student phone number.",
+      values: submittedValues,
+    };
+  }
+
+  if (data.alternatePhone && !normalizedAlternatePhone) {
+    return {
+      error: "Please enter a valid alternate phone number.",
+      values: submittedValues,
+    };
   }
 
   if (wasSubmittedTooFast(data.startedAt)) {
@@ -175,7 +208,7 @@ export async function submitSeminarRegistrationAction(
             : null,
           {
             scope: "public:lead:phone",
-            identifier: normalizePhoneIdentifier(data.studentPhone),
+            identifier: normalizePhoneIdentifier(normalizedStudentPhone),
             limit: 10,
             windowMs: 6 * 60 * 60_000,
             blockMs: 2 * 60 * 60_000,
@@ -192,7 +225,7 @@ export async function submitSeminarRegistrationAction(
         .select({ id: leads.id })
         .from(leads)
         .where(
-          and(eq(leads.phone, data.studentPhone), gte(leads.createdAt, minutesAgo(15)))
+          and(eq(leads.phone, normalizedStudentPhone), gte(leads.createdAt, minutesAgo(15)))
         )
         .limit(1);
 
@@ -208,9 +241,9 @@ export async function submitSeminarRegistrationAction(
         .insert(leads)
         .values({
           fullName: data.studentName,
-          phone: data.studentPhone,
+          phone: normalizedStudentPhone,
           fatherName: data.fatherName,
-          alternatePhone: data.alternatePhone || null,
+          alternatePhone: normalizedAlternatePhone,
           city: data.city,
           seminarEvent: data.seminarEvent,
           interestedCountry: data.interestedCountry,
@@ -258,9 +291,9 @@ export async function submitSeminarRegistrationAction(
           websiteLeadId: insertedLeadId,
           submittedAt: submittedAt.toISOString(),
           fullName: data.studentName,
-          phone: data.studentPhone,
+          phone: normalizedStudentPhone,
           fatherName: data.fatherName,
-          alternatePhone: data.alternatePhone || undefined,
+          alternatePhone: normalizedAlternatePhone || undefined,
           city: data.city,
           seminarEvent: data.seminarEvent,
           interestedCountry: data.interestedCountry,
@@ -288,7 +321,7 @@ export async function submitSeminarRegistrationAction(
         }),
         sendSeminarRegistrationWhatsAppMessage({
           fullName: data.studentName,
-          phone: data.studentPhone,
+          phone: normalizedStudentPhone,
           seminarEvent: data.seminarEvent,
           city: data.city,
         }, insertedLeadId),
