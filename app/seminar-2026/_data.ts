@@ -113,6 +113,23 @@ export const SPEAKER_COUNTRIES = [
   },
 ] as const;
 
+export const FMGE_DOCTORS = [
+  {
+    name: "Dr. Shilpa",
+    country: "Moldova",
+    countryCode: "md",
+    image: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1777108814/seminar/doctors/seminar/doctors/dr-shilpa-moldova.png",
+    credentials: "FMGE Cleared",
+  },
+  {
+    name: "Dr. Hemanth Kumar",
+    country: "Russia",
+    countryCode: "ru",
+    image: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1777108819/seminar/doctors/seminar/doctors/dr-hemanth-kumar-russia.png",
+    credentials: "FMGE Cleared",
+  },
+] as const;
+
 export const FAQ = [
   {
     q: "What time does the seminar start and how long does it last?",

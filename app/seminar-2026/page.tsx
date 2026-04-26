@@ -4,6 +4,7 @@ import { SeminarCitiesTicker } from "./_components/seminar-cities-ticker";
 import { SeminarCta } from "./_components/seminar-cta";
 import { SeminarDialogProvider } from "./_components/seminar-dialog-context";
 import { SeminarDifferentiators } from "./_components/seminar-differentiators";
+import { SeminarDoctors } from "./_components/seminar-doctors";
 import { SeminarEvents } from "./_components/seminar-events";
 import { SeminarFaq } from "./_components/seminar-faq";
 import { SeminarFooter } from "./_components/seminar-footer";
@@ -44,6 +45,7 @@ export default function SeminarPage() {
         <SeminarTagline />
         <SeminarDifferentiators />
         <SeminarSpeakers />
+        <SeminarDoctors />
         <SeminarTopUniversities />
         <SeminarInterest />
         <SeminarInclusions />
