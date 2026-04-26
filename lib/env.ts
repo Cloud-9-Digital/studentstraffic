@@ -7,6 +7,10 @@ const envSchema = z.object({
   NEXT_PUBLIC_SITE_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_SECRET: z.string().min(1).optional(),
+  GOOGLE_SHEETS_SPREADSHEET_ID: z.string().min(1).optional(),
+  GOOGLE_SHEETS_SHEET_NAME: z.string().min(1).optional(),
+  GOOGLE_SHEETS_CLIENT_EMAIL: z.string().email().optional(),
+  GOOGLE_SHEETS_PRIVATE_KEY: z.string().min(1).optional(),
   REVALIDATE_SECRET: z.string().min(1).optional(),
   PABBLY_LEAD_WEBHOOK_URL: z.string().url().optional(),
   NEXTAUTH_SECRET: z.string().min(1).optional(),
@@ -25,6 +29,10 @@ const parsedEnv = envSchema.safeParse({
   NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
   CRM_LEAD_INTAKE_URL: process.env.CRM_LEAD_INTAKE_URL,
   CRM_LEAD_INTAKE_SECRET: process.env.CRM_LEAD_INTAKE_SECRET,
+  GOOGLE_SHEETS_SPREADSHEET_ID: process.env.GOOGLE_SHEETS_SPREADSHEET_ID,
+  GOOGLE_SHEETS_SHEET_NAME: process.env.GOOGLE_SHEETS_SHEET_NAME,
+  GOOGLE_SHEETS_CLIENT_EMAIL: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
+  GOOGLE_SHEETS_PRIVATE_KEY: process.env.GOOGLE_SHEETS_PRIVATE_KEY,
   REVALIDATE_SECRET: process.env.REVALIDATE_SECRET,
   PABBLY_LEAD_WEBHOOK_URL: process.env.PABBLY_LEAD_WEBHOOK_URL,
   NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
@@ -62,6 +70,10 @@ export const env = {
   siteUrl: parsedEnv.data.NEXT_PUBLIC_SITE_URL ?? defaultSiteUrl,
   crmLeadIntakeUrl: parsedEnv.data.CRM_LEAD_INTAKE_URL,
   crmLeadIntakeSecret: parsedEnv.data.CRM_LEAD_INTAKE_SECRET,
+  googleSheetsSpreadsheetId: parsedEnv.data.GOOGLE_SHEETS_SPREADSHEET_ID,
+  googleSheetsSheetName: parsedEnv.data.GOOGLE_SHEETS_SHEET_NAME,
+  googleSheetsClientEmail: parsedEnv.data.GOOGLE_SHEETS_CLIENT_EMAIL,
+  googleSheetsPrivateKey: parsedEnv.data.GOOGLE_SHEETS_PRIVATE_KEY,
   revalidateSecret: parsedEnv.data.REVALIDATE_SECRET,
   pabblyLeadWebhookUrl: parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL,
   nextAuthSecret: parsedEnv.data.NEXTAUTH_SECRET,
@@ -76,6 +88,12 @@ export const env = {
   hasDatabase: Boolean(parsedEnv.data.DATABASE_URL),
   hasCrmLeadSyncConfig: Boolean(
     parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET
+  ),
+  hasGoogleSheetsSyncConfig: Boolean(
+    parsedEnv.data.GOOGLE_SHEETS_SPREADSHEET_ID &&
+      parsedEnv.data.GOOGLE_SHEETS_SHEET_NAME &&
+      parsedEnv.data.GOOGLE_SHEETS_CLIENT_EMAIL &&
+      parsedEnv.data.GOOGLE_SHEETS_PRIVATE_KEY
   ),
   hasRevalidateSecret: Boolean(parsedEnv.data.REVALIDATE_SECRET),
   hasPabblyLeadWebhook: Boolean(parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL),

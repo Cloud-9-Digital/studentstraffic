@@ -7,6 +7,7 @@
     "build": "npm run typecheck && next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "node --import tsx --test tests/**/*.test.ts",
     "typecheck": "rm -rf .next/dev/types && next typegen && tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -16,6 +17,7 @@
     "db:import:wdoms": "tsx scripts/import-wdoms-directory.ts",
     "db:studio": "drizzle-kit studio",
     "crm:backfill:seminars": "node scripts/backfill-crm-seminar-fields.mjs",
+    "sheets:backfill:seminars": "tsx scripts/backfill-google-sheets-seminar-leads.ts",
     "seo:indexnow": "tsx scripts/submit-indexnow.ts",
     "cache:revalidate:blog": "node scripts/revalidate-blog-cache.mjs"
   },
@@ -29,6 +31,7 @@
     "clsx": "^2.1.1",
     "country-state-city": "^3.2.1",
     "drizzle-orm": "^0.45.1",
+    "google-auth-library": "^10.6.2",
     "lucide-react": "^1.7.0",
     "next": "16.2.1",
     "next-auth": "^4.24.13",

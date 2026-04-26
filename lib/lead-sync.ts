@@ -5,12 +5,8 @@ import { eq } from "drizzle-orm";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
-
-type QueryParamValue = string | string[];
-type ClientContext = Record<
-  string,
-  string | number | boolean | null | string[]
->;
+import { appendSeminarLeadToGoogleSheets } from "@/lib/google-sheets";
+import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 
 type LeadSyncUpdate = {
   crmSyncStatus?: string;
@@ -29,44 +25,6 @@ type CrmSyncResponse = {
   updated?: boolean;
   error?: string;
   message?: string;
-};
-
-export type LeadSyncPayload = {
-  websiteLeadId?: number;
-  submittedAt: string;
-  fullName: string;
-  phone: string;
-  email?: string;
-  fatherName?: string;
-  alternatePhone?: string;
-  city?: string;
-  seminarEvent?: string;
-  interestedCountry?: string;
-  budgetRange?: string;
-  needsFmgeSession?: boolean;
-  documentUrl?: string;
-  documentType?: string;
-  userState?: string;
-  courseSlug?: string;
-  countrySlug?: string;
-  universitySlug?: string;
-  sourcePath: string;
-  sourceUrl?: string;
-  sourceQuery: Record<string, QueryParamValue>;
-  pageTitle?: string;
-  ctaVariant: string;
-  notes?: string;
-  documentReferrer?: string;
-  utmSource?: string;
-  utmMedium?: string;
-  utmCampaign?: string;
-  utmTerm?: string;
-  utmContent?: string;
-  referrer?: string;
-  userAgent?: string;
-  ipAddress?: string;
-  acceptLanguage?: string;
-  clientContext: ClientContext;
 };
 
 const SYNC_TIMEOUT_MS = 8_000;
@@ -321,6 +279,10 @@ async function syncLeadToPabbly(
   }
 }
 
+async function syncLeadToGoogleSheets(payload: LeadSyncPayload) {
+  await appendSeminarLeadToGoogleSheets(payload);
+}
+
 export async function syncLeadDestinations(
   leadId: number | undefined,
   payload: LeadSyncPayload
@@ -328,5 +290,6 @@ export async function syncLeadDestinations(
   await Promise.allSettled([
     syncLeadToCrm(leadId, payload),
     syncLeadToPabbly(leadId, payload),
+    syncLeadToGoogleSheets(payload),
   ]);
 }
