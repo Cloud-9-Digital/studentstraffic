@@ -66,6 +66,10 @@ type CatalogSnapshot = {
   programOfferings: ProgramOffering[];
 };
 
+const globalForCatalogWarnings = globalThis as typeof globalThis & {
+  __catalogDbWarningShown?: boolean;
+};
+
 function isMissingAdmissionsContentColumn(error: unknown) {
   if (!(error instanceof Error)) {
     return false;
@@ -73,6 +77,46 @@ function isMissingAdmissionsContentColumn(error: unknown) {
 
   const message = `${error.message} ${"cause" in error ? String((error as { cause?: unknown }).cause) : ""}`;
   return message.includes('column "admissions_content" does not exist');
+}
+
+function isDatabaseConnectivityError(error: unknown) {
+  if (!(error instanceof Error)) {
+    return false;
+  }
+
+  const message = `${error.message} ${"cause" in error ? String((error as { cause?: unknown }).cause) : ""}`.toLowerCase();
+  return (
+    message.includes("error connecting to database") ||
+    message.includes("fetch failed") ||
+    message.includes("neondberror")
+  );
+}
+
+function isVercelProductionBuild() {
+  return (
+    process.env.VERCEL === "1" &&
+    process.env.NEXT_PHASE === "phase-production-build"
+  );
+}
+
+function logCatalogDatabaseFallback(error: unknown) {
+  if (globalForCatalogWarnings.__catalogDbWarningShown) {
+    return;
+  }
+
+  globalForCatalogWarnings.__catalogDbWarningShown = true;
+
+  if (isDatabaseConnectivityError(error)) {
+    const context = isVercelProductionBuild()
+      ? " during Vercel build"
+      : "";
+    console.warn(
+      `Catalog database is unavailable${context}. Falling back to bundled/static catalog data.`,
+    );
+    return;
+  }
+
+  console.error("Failed to read catalog from database:", error);
 }
 
 async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
@@ -405,7 +449,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         );
       }
     }
-    console.error("Failed to read catalog from database:", error);
+    logCatalogDatabaseFallback(error);
     return null;
   }
 }
