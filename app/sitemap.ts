@@ -11,6 +11,7 @@ import {
   getAllLandingPages,
   getCatalogSnapshot,
 } from "@/lib/data/catalog";
+import { getTamilNaduCityPages } from "@/lib/data/tamil-nadu-local";
 import { getBudgetGuides, getComparisonGuides } from "@/lib/discovery-pages";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
@@ -24,6 +25,8 @@ import {
   getCoursesIndexHref,
   getCourseHref,
   getLandingPageHref,
+  getTamilNaduCityHref,
+  getTamilNaduHubHref,
   getUniversityHref,
 } from "@/lib/routes";
 import { getIndexableUniversityImageUrls } from "@/lib/university-media";
@@ -34,6 +37,7 @@ function uniqueUrls(urls: Array<string | undefined>) {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const db = getDb();
+  const tamilNaduCityPages = getTamilNaduCityPages();
   const [snapshot, landingPages, comparisonGuides, budgetGuides, publishedPosts] =
     await Promise.all([
       getCatalogSnapshot(),
@@ -144,6 +148,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
       changeFrequency: "weekly",
       lastModified: publishedPosts[0]?.publishedAt ? new Date(publishedPosts[0].publishedAt) : new Date(),
+    },
+    {
+      url: absoluteUrl(getTamilNaduHubHref()),
+      priority: 0.76,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
     },
     {
       url: absoluteUrl("/blog/feed.xml"),
@@ -271,6 +281,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           program.offering.updatedAt,
         ]),
       ]),
+    })),
+    ...tamilNaduCityPages.map((page) => ({
+      url: absoluteUrl(getTamilNaduCityHref(page.slug)),
+      priority: 0.72,
+      changeFrequency: "weekly" as const,
+      lastModified: governanceLastModified,
     })),
   ];
 }

@@ -57,3 +57,11 @@ export function getCitiesIndexHref() {
 export function getCityHref(citySlug: string) {
   return `/cities/${citySlug}`;
 }
+
+export function getTamilNaduHubHref() {
+  return "/tamil-nadu";
+}
+
+export function getTamilNaduCityHref(citySlug: string) {
+  return `/tamil-nadu/${citySlug}`;
+}

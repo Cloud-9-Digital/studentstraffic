@@ -118,7 +118,10 @@ export function SiteFooter() {
               Guides
             </p>
             <ul className="space-y-2.5">
-              {guideNav.filter((item) => item.href !== "/guides").map((item) => (
+              {[
+                ...guideNav.filter((item) => item.href !== "/guides"),
+                { href: "/tamil-nadu", label: "Tamil Nadu MBBS Guides" },
+              ].map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
