@@ -20,6 +20,7 @@ import { countries, leads, peerRequests, studentPeers, universities } from "@/li
 import { env } from "@/lib/env";
 import { sendPeerConnectionSentEmail } from "@/lib/email/templates/peer-connection-sent";
 import { sendPeerNewRequestEmail } from "@/lib/email/templates/peer-new-request";
+import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import {
   consumePublicFormRateLimits,
@@ -248,7 +249,8 @@ export async function connectToPeerAction(
     return { error: "We could not save your request. Please try once more." };
   }
 
-  await syncLeadDestinations(insertedLeadId, {
+  await syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+    leadKind: "peer_connection",
     websiteLeadId: insertedLeadId,
     submittedAt: submittedAt.toISOString(),
     fullName: data.fullName,
@@ -271,7 +273,7 @@ export async function connectToPeerAction(
     ipAddress: ipAddress ?? undefined,
     acceptLanguage: headerStore.get("accept-language") ?? undefined,
     clientContext,
-  });
+  }));
 
   // Fire-and-forget emails to both parties
   void Promise.all([

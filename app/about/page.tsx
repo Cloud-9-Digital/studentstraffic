@@ -45,7 +45,7 @@ const journey = [
     Icon: Globe,
     step: "01",
     heading: "See every option, priced and ranked for your goals",
-    body: "Browse universities across Russia, Vietnam, Georgia, Kyrgyzstan, and Uzbekistan — with real fees, NMC recognition status, and city-by-city comparison.",
+    body: "Browse colleges across Russia, Vietnam, Georgia, Kyrgyzstan, and Uzbekistan — with real fees, NMC recognition status, and city-by-city comparison.",
   },
   {
     Icon: MessageCircle,
@@ -115,7 +115,7 @@ export default function AboutPage() {
                   triggerVariant="accent"
                 />
                 <Button asChild variant="outline">
-                  <Link href="/universities">Explore universities</Link>
+                  <Link href="/universities">Explore colleges</Link>
                 </Button>
               </div>
 
@@ -306,14 +306,14 @@ export default function AboutPage() {
               <CounsellingDialog
                 triggerContent={
                   <>
-                    Get free counselling{" "}
+                    Request free counselling{" "}
                     <ArrowRight className="size-4" />
                   </>
                 }
                 triggerVariant="accent"
               />
               <Button asChild variant="outline">
-                <Link href="/universities">Browse universities</Link>
+                <Link href="/universities">Browse colleges</Link>
               </Button>
             </div>
           </div>

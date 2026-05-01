@@ -32,6 +32,8 @@ const SYNC_PLACEHOLDER = "NA";
 
 type LeadSyncTransportPayload = Omit<
   LeadSyncPayload,
+  | "leadKind"
+  | "primaryInterestType"
   | "email"
   | "fatherName"
   | "alternatePhone"
@@ -60,6 +62,12 @@ type LeadSyncTransportPayload = Omit<
   | "ipAddress"
   | "acceptLanguage"
 > & {
+  handoffVersion: string;
+  leadKind: string;
+  sourceCategory: string;
+  acquisitionChannel: string;
+  primaryInterestType: string;
+  primaryInterestValue: string;
   email: string;
   fatherName: string;
   alternatePhone: string;
@@ -105,6 +113,12 @@ function buildTransportPayload(
 ): LeadSyncTransportPayload {
   return {
     ...payload,
+    handoffVersion: withPlaceholder(payload.handoffVersion),
+    leadKind: withPlaceholder(payload.leadKind),
+    sourceCategory: withPlaceholder(payload.sourceCategory),
+    acquisitionChannel: withPlaceholder(payload.acquisitionChannel),
+    primaryInterestType: withPlaceholder(payload.primaryInterestType),
+    primaryInterestValue: withPlaceholder(payload.primaryInterestValue),
     email: withPlaceholder(payload.email),
     fatherName: withPlaceholder(payload.fatherName),
     alternatePhone: withPlaceholder(payload.alternatePhone),

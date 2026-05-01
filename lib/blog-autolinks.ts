@@ -7,11 +7,8 @@
  * skipping code blocks and existing links.
  */
 
-import { desc, eq, ne } from "drizzle-orm";
 import { unstable_cache } from "next/cache";
 
-import { getDb } from "@/lib/db/server";
-import { blogPosts } from "@/lib/db/schema";
 import { getCountries, getUniversities } from "@/lib/data/catalog";
 import { getCountryHref, getUniversityHref } from "@/lib/routes";
 
@@ -53,19 +50,9 @@ const STATIC_RULES: LinkRule[] = [
 
 export const buildLinkRules = unstable_cache(
   async (currentSlug: string): Promise<LinkRule[]> => {
-  const db = getDb();
-
-  const [countries, universities, posts] = await Promise.all([
+  const [countries, universities] = await Promise.all([
     getCountries(),
     getUniversities(),
-    db
-      ? db
-          .select({ slug: blogPosts.slug, title: blogPosts.title })
-          .from(blogPosts)
-          .where(eq(blogPosts.status, "published"))
-          // exclude current post — never self-link
-          .then((rows) => rows.filter((r) => r.slug !== currentSlug))
-      : Promise.resolve([]),
   ]);
 
   const rules: LinkRule[] = [...STATIC_RULES];

@@ -36,11 +36,11 @@ if (hasCloudinary) {
 
 const studentsTrafficGeorgiaCta = `---
 
-## How Students Traffic Can Help With Your Georgia Shortlist
+## How Students Traffic Can Help With Your Georgia Selection
 
-Students Traffic helps Indian families move from broad interest to an actually usable Georgia shortlist. That means comparing university quality, city fit, English-medium reality, hostel options, total six-year cost, and the India-return pathway before any fee is paid.
+Students Traffic helps Indian families move from broad interest to an actually usable Georgia selection. That means comparing university quality, city fit, English-medium reality, hostel options, total six-year cost, and the India-return pathway before any fee is paid.
 
-If you want help choosing between private Tbilisi campuses, Batumi options, or a safer two- or three-university shortlist, use [Students Traffic's counselling support](/contact) and [peer connect](/students) to speak with students who have already made the same decision.`;
+If you want help choosing between private Tbilisi campuses, Batumi options, or a safer two- or three-university selection, use [Students Traffic's counselling support](/contact) and [peer connect](/students) to speak with students who have already made the same decision.`;
 
 const studentsTrafficKyrgyzstanCta = `---
 
@@ -48,7 +48,7 @@ const studentsTrafficKyrgyzstanCta = `---
 
 The cheapest brochure is not always the cheapest six-year outcome. Students Traffic helps families compare tuition, hostel, mess, visa, forex, and India-return planning before the first payment, so low-fee countries do not become high-stress mistakes.
 
-If you want a Kyrgyzstan shortlist that balances affordability with credibility, speak with [Students Traffic](/contact) for admissions guidance and use [peer connect](/students) to hear from students already studying abroad.`;
+If you want a Kyrgyzstan selection that balances affordability with credibility, speak with [Students Traffic](/contact) for admissions guidance and use [peer connect](/students) to hear from students already studying abroad.`;
 
 const studentsTrafficUzbekistanCta = `---
 
@@ -112,7 +112,7 @@ The reason families get confused is that "MBBS in Georgia" is discussed as if ev
 - some suit disciplined academic performers, while others suit students who need more guided support
 - some feel affordable at admission stage but become expensive once housing and capital-city living are included
 
-That is why a serious Georgia shortlist should be built university by university, not country by country.
+That is why a serious Georgia selection should be built university by university, not country by country.
 
 This ranking is not trying to imitate a global league table. Indian families choosing a six-year medical route need a much more practical filter:
 
@@ -131,7 +131,7 @@ This article should be read alongside [MBBS in Georgia 2026](/blog/mbbs-in-georg
 
 ## Quick Ranking: The Georgia Universities Most Indian Families Should Compare First
 
-| Rank | University | City | Type | Approx annual tuition | Why it stays on serious shortlists |
+| Rank | University | City | Type | Approx annual tuition | Why it stays on serious selections |
 |---|---|---|---|---|---|
 | 1 | [Alte University](/universities/alte-university-georgia) | Tbilisi | Private | $5,500 | Strong clinical-network story and modern infrastructure |
 | 2 | [Georgian National University SEU](/universities/seu-georgian-national-university) | Tbilisi | Private | $6,000 | Premium campus, big Indian cohort, strong support ecosystem |
@@ -341,7 +341,7 @@ Its biggest advantage is not glamour. It is the combination of:
 
 That can create a more grounded option for students who are academically steady and who do not need the fully premium private-campus experience.
 
-### Why it still deserves a serious shortlist position
+### Why it still deserves a serious selection position
 
 - public-university identity matters for many families
 - Batumi can be a friendlier lifestyle fit than the capital for some students
@@ -360,7 +360,7 @@ State universities can feel more traditional and less polished in the way they p
 
 ## The Real Georgia Comparison: Tbilisi vs Batumi
 
-Many Georgia shortlists become easier once the family first answers a city question rather than a university question.
+Many Georgia selections become easier once the family first answers a city question rather than a university question.
 
 ### Tbilisi is usually better for:
 
@@ -423,7 +423,7 @@ Tuition comparison alone creates budgeting mistakes. Georgia needs a six-year fi
 
 Families should ask how communication works when students move deeper into patient settings. That question matters more than the brochure headline.
 
-### Mistake 5: Applying too widely without a real shortlist strategy
+### Mistake 5: Applying too widely without a real selection strategy
 
 Most families do not need ten applications. They need two or three carefully chosen options matched to budget, city fit, and academic temperament.
 
@@ -441,7 +441,7 @@ Most families do not need ten applications. They need two or three carefully cho
 
 - the student still wants the capital
 - the family wants better cost discipline
-- the shortlist is being built around value rather than prestige signalling
+- the selection is being built around value rather than prestige signalling
 
 ### Choose a Batumi option if:
 
@@ -468,11 +468,11 @@ Most families do not need ten applications. They need two or three carefully cho
 7. What are the university's promotion rules, attendance expectations, and repeat-year risks?
 8. What is the difference between the glossy sales pitch and the everyday reality on campus?
 
-Families that ask those questions early usually build better shortlists and avoid emotional admissions decisions.
+Families that ask those questions early usually build better selections and avoid emotional admissions decisions.
 
 ---
 
-## A Practical Georgia Shortlist Framework Families Can Use Tonight
+## A Practical Georgia Selection Framework Families Can Use Tonight
 
 If a family is feeling overloaded, a simpler framework helps.
 
@@ -504,9 +504,9 @@ Every family should rank these from most important to least:
 - campus infrastructure
 - public versus private institutional style
 
-### Step 4: Build a final 3-university shortlist
+### Step 4: Build a final 3-university selection
 
-Most families do not need six active options. A focused shortlist of three is usually stronger:
+Most families do not need six active options. A focused selection of three is usually stronger:
 
 - one first-choice fit
 - one value alternative
@@ -522,7 +522,7 @@ Georgia remains one of the most attractive MBBS-abroad destinations for Indian s
 
 But the winning strategy is not "choose Georgia." The winning strategy is "choose the right Georgia university for the right student."
 
-For many families, the shortlist will start with Alte, SEU, EEU, European University, BAU Batumi, and Batumi Shota Rustaveli. The right answer depends on:
+For many families, the selection will start with Alte, SEU, EEU, European University, BAU Batumi, and Batumi Shota Rustaveli. The right answer depends on:
 
 - whether the student prefers Tbilisi or Batumi
 - whether the family wants premium private support or public-university discipline
@@ -592,7 +592,7 @@ Important:
 - avoid flashy tourism aesthetics`,
     content: `## Why Families Need a Real Kyrgyzstan Cost Guide
 
-Kyrgyzstan enters many Indian MBBS shortlists for one reason first: affordability.
+Kyrgyzstan enters many Indian MBBS selections for one reason first: affordability.
 
 That is not a small reason. For thousands of families, budget is the main filter. Kyrgyzstan keeps appearing because the headline tuition figures often look far lower than:
 
@@ -628,7 +628,7 @@ This article should be read alongside [MBBS in Kyrgyzstan 2026](/blog/mbbs-in-ky
 
 ## The One-Line Answer
 
-For many Indian families, Kyrgyzstan remains one of the lowest-cost MBBS-abroad routes that still stays on the shortlist. But there is a huge difference between:
+For many Indian families, Kyrgyzstan remains one of the lowest-cost MBBS-abroad routes that still stays on the selection. But there is a huge difference between:
 
 - a disciplined, realistic low-cost plan
 - and an unrealistically low quote designed to secure admission quickly
@@ -641,7 +641,7 @@ That difference can easily become several lakhs over the full course.
 
 | Cost bucket | Typical range |
 |---|---|
-| Annual tuition | $3,000 to $4,500 at many shortlisted universities |
+| Annual tuition | $3,000 to $4,500 at many selected universities |
 | Hostel or shared accommodation | $400 to $1,200 per year depending on city and type |
 | Food and Indian mess | $900 to $1,800 per year |
 | Local transport and daily living | $400 to $900 per year |
@@ -1215,7 +1215,7 @@ The right order is:
 
 1. verify
 2. compare
-3. shortlist
+3. selection
 4. document
 5. pay
 
@@ -1277,14 +1277,14 @@ If the counsellor is trying to skip these questions and move directly to payment
 
 Families usually experience admission in the following stages.
 
-### Stage 1: Counselling and shortlist building
+### Stage 1: Counselling and selection building
 
 This is where most mistakes happen because many families treat counselling as sales rather than due diligence.
 
 At this stage, the family should compare:
 
 - at least two or three Uzbekistan options
-- whether another country belongs in the same shortlist
+- whether another country belongs in the same selection
 - total budget, not only tuition
 - university maturity and transparency
 
@@ -1298,7 +1298,7 @@ The family should also ask for:
 
 ### Stage 2: Document readiness
 
-Once a shortlist exists, the student usually prepares:
+Once a selection exists, the student usually prepares:
 
 - passport
 - Class 10 marksheet and certificate
@@ -1397,7 +1397,7 @@ Instead of asking, "How fast can we finish admission?", families should ask, "Wh
 
 This is when the family compares countries, universities, budget, and the student's long-term plan. Rushed decisions made here cause the biggest regret later.
 
-#### Shortlist and document phase
+#### Selection and document phase
 
 This is when the family finalises 2-3 options and prepares the file properly.
 
@@ -1608,15 +1608,15 @@ Seat urgency can be real, but bad-fit admissions create six-year consequences. I
 
 ---
 
-## When Uzbekistan Should Stay on the Shortlist and When It Should Not
+## When Uzbekistan Should Stay on the Selection and When It Should Not
 
-Uzbekistan may stay on the shortlist when:
+Uzbekistan may stay on the selection when:
 
 - the family has identified a specific university worth deeper verification
 - budget pressure is real but the family is still willing to verify carefully
 - the student is prepared for a documentation-heavy, cautious decision process
 
-Uzbekistan should probably drop from the shortlist when:
+Uzbekistan should probably drop from the selection when:
 
 - the family is being pushed to pay without clear answers
 - the exact university story remains vague
@@ -1688,7 +1688,7 @@ It prevents expensive mistakes.
 
 ## Final Verdict
 
-Uzbekistan may remain on the shortlist for some Indian families because the fee range looks accessible and admission may appear simpler than many alternatives. But simplicity should increase caution, not reduce it.
+Uzbekistan may remain on the selection for some Indian families because the fee range looks accessible and admission may appear simpler than many alternatives. But simplicity should increase caution, not reduce it.
 
 The most important Uzbekistan admission rule is this:
 

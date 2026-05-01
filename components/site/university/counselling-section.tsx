@@ -14,13 +14,13 @@ export function UniversityCounsellingSection({
       <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent/80">
-            Ready to apply?
+            Ready for the next step?
           </p>
           <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading">
-            Get admitted to {universityName}
+            Get guidance for {universityName}
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
-            Our counsellors handle the full admissions process — application, documents, and visa. Book your call and we&apos;ll walk you through the next steps today.
+            Our counsellors help with the full admissions process, including application, documents, and visa support. Request a call and we&apos;ll walk you through the next steps clearly.
           </p>
         </div>
         <div className="shrink-0">

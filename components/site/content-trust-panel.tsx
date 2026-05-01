@@ -20,7 +20,7 @@ export function ContentTrustPanel({
             className={cn("size-4", inverse ? "text-white/45" : "text-accent")}
           />
         }
-        label="Updated"
+        label="Last updated"
         value={formatContentDate(lastReviewed)}
         inverse={inverse}
       />
@@ -30,7 +30,7 @@ export function ContentTrustPanel({
             className={cn("size-4", inverse ? "text-white/45" : "text-accent")}
           />
         }
-        label="Author"
+        label="Reviewed by"
         value={contentAuthorName}
         inverse={inverse}
       />

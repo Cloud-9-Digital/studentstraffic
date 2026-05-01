@@ -18,6 +18,7 @@ import {
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import { getTrackingSnapshot } from "@/lib/tracking";
 import { sendLeadWhatsAppMessage } from "@/lib/wati";
@@ -202,7 +203,8 @@ export async function submitLeadAction(
       insertedLeadId = insertedLead?.id;
 
       await Promise.allSettled([
-        syncLeadDestinations(insertedLeadId, {
+        syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+          leadKind: "general_enquiry",
           websiteLeadId: insertedLeadId,
           submittedAt: submittedAt.toISOString(),
           fullName: data.fullName,
@@ -229,7 +231,7 @@ export async function submitLeadAction(
           ipAddress: ipAddress ?? undefined,
           acceptLanguage: headerStore.get("accept-language") ?? undefined,
           clientContext,
-        }),
+        })),
         sendLeadWhatsAppMessage({
           fullName: data.fullName,
           phone: data.phone,

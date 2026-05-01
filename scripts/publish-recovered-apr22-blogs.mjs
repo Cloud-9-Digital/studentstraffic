@@ -113,7 +113,7 @@ const bosniaCta = `---
 
 Bosnia can look attractive because it sits inside Europe, offers English-medium medicine at selected universities, and still feels less over-marketed than some crowded MBBS abroad destinations. But that does not make it self-explanatory. Students Traffic helps families compare the exact university, tuition structure, admission realism, student-support setup, and India-return fit before any commitment is made.
 
-If Bosnia is on your shortlist, use [Students Traffic counselling support](/contact), our [country guides](/blog), and [student connect](/students) before paying any booking amount.`;
+If Bosnia is on your selection, use [Students Traffic counselling support](/contact), our [country guides](/blog), and [student connect](/students) before paying any booking amount.`;
 
 const malaysiaCta = `---
 
@@ -121,7 +121,7 @@ const malaysiaCta = `---
 
 Malaysia is not a low-cost MBBS abroad route. It is a premium English-medium option that may work well for the right family and feel financially heavy for the wrong one. Students Traffic helps families compare total tuition burden, campus model, student-fit, university quality, and post-degree planning before prestige turns into pressure.
 
-If Malaysia is on your shortlist, use [Students Traffic counselling support](/contact), our [fee comparison guides](/blog/mbbs-abroad-fees-country-comparison-2026), and [peer conversations](/students) before moving money.`;
+If Malaysia is on your selection, use [Students Traffic counselling support](/contact), our [fee comparison guides](/blog/mbbs-abroad-fees-country-comparison-2026), and [peer conversations](/students) before moving money.`;
 
 const postNeetCta = `---
 
@@ -237,7 +237,7 @@ ${bullets([
   "the family can fund the route without stretching into chronic financial anxiety"
 ])}
 
-In those cases, Bosnia can become a serious shortlist candidate. A student who wants a structured campus environment, can manage a smaller support circle, and has a family willing to verify things properly may find Bosnia attractive.`
+In those cases, Bosnia can become a serious selection candidate. A student who wants a structured campus environment, can manage a smaller support circle, and has a family willing to verify things properly may find Bosnia attractive.`
     ),
     section(
       "Who Should Be More Cautious",
@@ -305,7 +305,7 @@ None of these steps are unusual by global standards. What matters is whether the
     ),
     section(
       "Questions to Ask Current Students Before You Believe the Brochure",
-      `No Bosnia shortlist should become final without student conversations wherever possible. When a destination is less crowded in the Indian market, real student feedback becomes even more valuable because the family has fewer peer-level assumptions to rely on.
+      `No Bosnia selection should become final without student conversations wherever possible. When a destination is less crowded in the Indian market, real student feedback becomes even more valuable because the family has fewer peer-level assumptions to rely on.
 
 The most useful questions are not vague ones like Is it good? Better questions include:
 
@@ -321,7 +321,7 @@ Families should also try to understand who the university is a weak fit for. Tha
     ),
     section(
       "Bosnia vs More Popular MBBS Abroad Destinations",
-      `Bosnia enters the shortlist as a different type of decision from Russia, Kazakhstan, or Kyrgyzstan.
+      `Bosnia enters the selection as a different type of decision from Russia, Kazakhstan, or Kyrgyzstan.
 
 Compared with more popular destinations, Bosnia may offer:
 
@@ -343,7 +343,7 @@ That is why Bosnia is rarely a default option. It is a comparison option. A good
     ),
     section(
       "A Practical Bosnia Decision Checklist",
-      `Before Bosnia reaches your final shortlist, the family should be able to answer all of these clearly:
+      `Before Bosnia reaches your final selection, the family should be able to answer all of these clearly:
 
 ${numbered([
   "Which exact Bosnia university are we evaluating, and why that one?",
@@ -378,7 +378,7 @@ Families who want a Europe-based option, can fund it honestly, and are willing t
       "Final Take",
       `Bosnia in 2026 is best understood as a niche European medical option for Indian students who are willing to compare carefully. It is not a panic choice, not an auto-premium choice, and not a universal bargain. It becomes interesting only when the exact university, fee structure, language reality, and India-return pathway all look defensible together.
 
-If your family approaches Bosnia with evidence, it can become a meaningful shortlist candidate. If your family approaches it with assumption, it can become just another expensive MBBS abroad mistake dressed up as a less common idea. The quality of the decision therefore depends less on Bosnia itself and more on how rigorously you evaluate it.`
+If your family approaches Bosnia with evidence, it can become a meaningful selection candidate. If your family approaches it with assumption, it can become just another expensive MBBS abroad mistake dressed up as a less common idea. The quality of the decision therefore depends less on Bosnia itself and more on how rigorously you evaluate it.`
     ),
     "",
     bosniaCta,
@@ -544,7 +544,7 @@ ${numbered([
 That framework changes the conversation. It stops Malaysia from being evaluated as good or bad and starts evaluating it as proportionate or disproportionate.`
     ),
     section(
-      "Questions Every Family Should Ask Before Shortlisting Malaysia",
+      "Questions Every Family Should Ask Before Selection Malaysia",
       `Before Malaysia becomes a serious option, the family should ask:
 
 ${bullets([
@@ -560,7 +560,7 @@ Weak answers to these questions usually mean the family is attracted to the imag
     ),
     section(
       "A Simple Malaysia Suitability Test for Families",
-      `Before placing Malaysia on the final shortlist, families should run a blunt suitability test.
+      `Before placing Malaysia on the final selection, families should run a blunt suitability test.
 
 Ask:
 
@@ -614,7 +614,7 @@ Families that can afford a premium route calmly and students who will genuinely 
 
 If your family can fund Malaysia honestly and the student will benefit materially from the environment it offers, it may be worth serious consideration. But if the attraction is mostly emotional while the budget is fragile, Malaysia can become one of the costliest forms of hesitation in the MBBS abroad market. The right decision is therefore not whether Malaysia looks attractive. It is whether Malaysia remains sensible after the numbers and the long-term plan are fully visible.
 
-In practical terms, Malaysia belongs on the shortlist only after the family has accepted the premium band fully, compared it against India and other serious options, and still believes the value holds. That is the standard a premium destination should meet.`
+In practical terms, Malaysia belongs on the selection only after the family has accepted the premium band fully, compared it against India and other serious options, and still believes the value holds. That is the standard a premium destination should meet.`
     ),
     "",
     malaysiaCta,
@@ -796,7 +796,7 @@ ${numbered([
   "What level of recurring yearly pressure can we carry without constant household conflict?"
 ])}
 
-If the budget conversation is postponed, every later option looks superficially possible. Once the budget is written honestly, the shortlist improves immediately.`
+If the budget conversation is postponed, every later option looks superficially possible. Once the budget is written honestly, the selection improves immediately.`
     ),
     section(
       "How to Handle Counsellors, Agents, and Unsolicited Advice",
@@ -868,7 +868,7 @@ ${numbered([
   "Days 3 to 4: organize documents and write budget reality.",
   "Days 5 to 7: compare private MBBS, MBBS abroad, and drop year on the same sheet.",
   "Days 8 to 10: eliminate obviously weak options and identify what still needs verification.",
-  "Days 11 to 14: speak only to serious advisors, ask written questions, and refine the shortlist."
+  "Days 11 to 14: speak only to serious advisors, ask written questions, and refine the selection."
 ])}
 
 This plan works because it follows emotional reality. It does not demand that the family become perfectly logical overnight.`
@@ -924,7 +924,7 @@ const posts = [
     title:
       "MBBS in Bosnia 2026: Complete Guide for Indian Students on Fees, English Medical Programs, Eligibility, and Long-Term Fit",
     excerpt:
-      "A detailed MBBS in Bosnia 2026 guide for Indian students covering English-medium medicine, Sarajevo and Mostar fee signals, recognition checks, student fit, living costs, and whether Bosnia deserves a place on your shortlist.",
+      "A detailed MBBS in Bosnia 2026 guide for Indian students covering English-medium medicine, Sarajevo and Mostar fee signals, recognition checks, student fit, living costs, and whether Bosnia deserves a place on your selection.",
     category: "MBBS Abroad",
     metaTitle: "MBBS in Bosnia 2026 for Indian Students | Fees & Fit Guide",
     metaDescription:

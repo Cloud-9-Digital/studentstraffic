@@ -1,28 +1,43 @@
 import { desc, eq } from "drizzle-orm";
+import { unstable_cache } from "next/cache";
 
 import { siteConfig } from "@/lib/constants";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 import { absoluteUrl } from "@/lib/metadata";
+import { logPublicRouteRequest } from "@/lib/route-observability";
 
+const getFeedPosts = unstable_cache(
+  async () => {
+    const db = getDb();
+    if (!db) return [];
 
-export async function GET() {
-  const db = getDb();
-  const posts = db
-    ? await db
-        .select({
-          slug: blogPosts.slug,
-          title: blogPosts.title,
-          excerpt: blogPosts.excerpt,
-          category: blogPosts.category,
-          publishedAt: blogPosts.publishedAt,
-          updatedAt: blogPosts.updatedAt,
-        })
-        .from(blogPosts)
-        .where(eq(blogPosts.status, "published"))
-        .orderBy(desc(blogPosts.publishedAt))
-        .limit(50)
-    : [];
+    return db
+      .select({
+        slug: blogPosts.slug,
+        title: blogPosts.title,
+        excerpt: blogPosts.excerpt,
+        category: blogPosts.category,
+        publishedAt: blogPosts.publishedAt,
+        updatedAt: blogPosts.updatedAt,
+      })
+      .from(blogPosts)
+      .where(eq(blogPosts.status, "published"))
+      .orderBy(desc(blogPosts.publishedAt))
+      .limit(50);
+  },
+  ["blog-feed-posts"],
+  { tags: ["blog"], revalidate: 3600 }
+);
+
+export async function GET(request: Request) {
+  logPublicRouteRequest({
+    route: "blog/feed.xml",
+    request,
+    sampleRate: 1,
+  });
+
+  const posts = await getFeedPosts();
 
   const siteUrl = absoluteUrl("/");
   const blogUrl = absoluteUrl("/blog");

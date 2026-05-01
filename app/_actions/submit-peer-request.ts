@@ -19,6 +19,7 @@ import {
 import { getDb } from "@/lib/db/server";
 import { countries, leads, peerRequests, universities } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import {
   consumePublicFormRateLimits,
@@ -284,7 +285,8 @@ export async function submitPeerRequestAction(
     };
   }
 
-  await syncLeadDestinations(insertedLeadId, {
+  await syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+    leadKind: "peer_request",
     websiteLeadId: insertedLeadId,
     submittedAt: submittedAt.toISOString(),
     fullName: data.fullName,
@@ -310,7 +312,7 @@ export async function submitPeerRequestAction(
     ipAddress: ipAddress ?? undefined,
     acceptLanguage: headerStore.get("accept-language") ?? undefined,
     clientContext,
-  });
+  }));
 
   redirect(
     `/thank-you?source=${encodeURIComponent(data.sourcePath)}&interest=${encodeURIComponent(universityRecord.name)}`

@@ -20,20 +20,20 @@ export function SiteFooter() {
         <div className="container-shell flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/45">
-              Free expert counselling
+              Free counselling support
             </p>
             <h2 className="mt-1.5 font-display text-2xl font-semibold text-heading-contrast sm:text-3xl">
-              Know which university to apply to — before the cycle closes.
+              Get clarity on colleges, fees, and admission steps before you decide.
             </h2>
             <p className="mt-2 max-w-xl text-sm text-white/60">
-              Our counsellors have placed Indian students in universities across Georgia, Kyrgyzstan, Uzbekistan, Russia, and Vietnam. Book a free call and get a direct answer for your NEET score and budget.
+              Our counsellors have supported Indian students and parents across Georgia, Kyrgyzstan, Uzbekistan, Russia, and Vietnam. Request counselling and get practical guidance for your NEET score, budget, and next admission step.
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-3">
             <CounsellingDialog
               triggerContent={
                 <>
-                  Get Free Counselling
+                  Request Free Counselling
                   <ArrowRight className="size-4" />
                 </>
               }
@@ -43,7 +43,7 @@ export function SiteFooter() {
               href="/universities"
               className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/18"
             >
-              Browse universities
+              Browse colleges
             </Link>
           </div>
         </div>
@@ -93,11 +93,11 @@ export function SiteFooter() {
             </p>
             <ul className="space-y-2.5">
               {[
-                { label: "Universities", href: "/universities" },
+                { label: "Colleges", href: "/universities" },
                 { label: "Talk to Students", href: "/students" },
                 { label: "Reviews", href: "/reviews" },
                 { label: "Become a Student Guide", href: "/join" },
-                { label: "All Guides", href: "/guides" },
+                { label: "Admission Tools", href: "/guides" },
                 { label: "Contact", href: "/contact" },
                 { label: "Search", href: "/search" },
               ].map((item) => (
@@ -115,7 +115,7 @@ export function SiteFooter() {
 
           <div>
             <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/55">
-              Guides
+              Planning
             </p>
             <ul className="space-y-2.5">
               {[
@@ -141,8 +141,8 @@ export function SiteFooter() {
             <ul className="space-y-2.5">
               {[
                 { label: "About Us", href: "/about" },
-                { label: "How it works", href: "/methodology" },
-                { label: "Editorial policy", href: "/editorial-policy" },
+                { label: "How We Work", href: "/methodology" },
+                { label: "How We Check Information", href: "/editorial-policy" },
                 { label: "Privacy Policy", href: "/privacy" },
                 { label: "Terms of Service", href: "/terms" },
               ].map((item) => (

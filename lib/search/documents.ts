@@ -6,6 +6,7 @@ import type {
   SearchDocument,
   University,
 } from "@/lib/data/types";
+import { buildCatalogIndexes } from "@/lib/catalog/indexes";
 import {
   getCountryHref,
   getCourseHref,
@@ -38,20 +39,23 @@ export function buildSearchDocuments({
   programOfferings,
   landingPages,
 }: SearchCatalogInput): SearchDocument[] {
-  const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
-  const courseBySlug = new Map(courses.map((course) => [course.slug, course]));
-  const offeringsByUniversitySlug = new Map<string, ProgramOffering[]>();
-
-  for (const offering of programOfferings) {
-    const current = offeringsByUniversitySlug.get(offering.universitySlug) ?? [];
-    current.push(offering);
-    offeringsByUniversitySlug.set(offering.universitySlug, current);
-  }
+  const {
+    countryBySlug,
+    courseBySlug,
+    universityBySlug,
+    universitiesByCountrySlug,
+    programsByCourseSlug,
+    programsByUniversitySlug,
+  } = buildCatalogIndexes({
+    countries,
+    courses,
+    universities,
+    programOfferings,
+  });
 
   const countryDocuments: SearchDocument[] = countries.map((country) => {
-    const countryUniversities = universities.filter(
-      (university) => university.countrySlug === country.slug
-    );
+    const countryUniversities =
+      universitiesByCountrySlug.get(country.slug) ?? [];
 
     return {
       documentType: "country",
@@ -77,9 +81,7 @@ export function buildSearchDocuments({
   });
 
   const courseDocuments: SearchDocument[] = courses.map((course) => {
-    const coursePrograms = programOfferings.filter(
-      (offering) => offering.courseSlug === course.slug
-    );
+    const coursePrograms = programsByCourseSlug.get(course.slug) ?? [];
 
     return {
       documentType: "course",
@@ -104,11 +106,11 @@ export function buildSearchDocuments({
   const universityDocuments: SearchDocument[] = universities.map((university) => {
     const country = countryBySlug.get(university.countrySlug);
     const universityPrograms =
-      offeringsByUniversitySlug.get(university.slug)?.sort(
+      [...(programsByUniversitySlug.get(university.slug) ?? [])].sort(
         (a, b) =>
           getSortableUsdValue(a.annualTuitionUsd) -
-          getSortableUsdValue(b.annualTuitionUsd)
-      ) ?? [];
+          getSortableUsdValue(b.annualTuitionUsd),
+      );
     const courseSlugs = [...new Set(universityPrograms.map((program) => program.courseSlug))];
     const courseNames = courseSlugs
       .map((slug) => courseBySlug.get(slug)?.shortName)
@@ -159,9 +161,7 @@ export function buildSearchDocuments({
   });
 
   const programDocuments: SearchDocument[] = programOfferings.map((offering) => {
-    const university = universities.find(
-      (candidate) => candidate.slug === offering.universitySlug
-    );
+    const university = universityBySlug.get(offering.universitySlug);
     const course = courseBySlug.get(offering.courseSlug);
     const country = university ? countryBySlug.get(university.countrySlug) : undefined;
 

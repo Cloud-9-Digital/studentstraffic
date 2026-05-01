@@ -18,11 +18,11 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
 const studentsTrafficRussiaCta = `---
 
-## How Students Traffic Can Support Your Russia Shortlist
+## How Students Traffic Can Support Your Russia Selection
 
 Students Traffic works as an admission support partner for Indian families comparing MBBS in Russia. The focus is not to push one university blindly. It is to help students compare city fit, fees, banking practicality, language transition, and India-return planning before money is committed.
 
-If you want a cleaner shortlist, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
+If you want a cleaner selection, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
 
 const posts = [
   {
@@ -154,7 +154,7 @@ Russia often compares well on:
 
 This is why universities like [Sechenov University](/universities/sechenov-university), [RUDN University](/universities/rudn-university), [Kazan Federal University](/universities/kazan-federal-university), and [Kursk State Medical University](/universities/kursk-state-medical-university) stay relevant in serious counselling conversations.
 
-Families can still make bad choices inside Russia, but the country has enough institutional depth that stronger shortlists are possible.
+Families can still make bad choices inside Russia, but the country has enough institutional depth that stronger selections are possible.
 
 ---
 
@@ -761,7 +761,7 @@ Russia can still be:
 - good value
 - or budget
 
-It depends entirely on the shortlist.
+It depends entirely on the selection.
 
 That is why the most useful Russia budgeting question is not:
 
@@ -887,8 +887,8 @@ It is about what that offer letter commits the family to.
 
 Most Russia counselling conversations move through these stages:
 
-1. country shortlisting
-2. university shortlist
+1. country selection
+2. university selection
 3. document collection
 4. application or nomination stage
 5. offer / admission confirmation
@@ -902,11 +902,11 @@ Each stage should be clean before the next one begins.
 
 ---
 
-## Step 1: Build the Right Russia Shortlist
+## Step 1: Build the Right Russia Selection
 
 Before any documents are submitted, the family should decide what kind of Russia path they are actually considering.
 
-### Premium-city shortlist
+### Premium-city selection
 
 Examples:
 
@@ -919,7 +919,7 @@ Usually chosen for:
 - larger city ecosystem
 - stronger institutional familiarity
 
-### Strong-value shortlist
+### Strong-value selection
 
 Examples:
 
@@ -933,7 +933,7 @@ Usually chosen for:
 - manageable city life
 - lower financial pressure than Moscow
 
-### Budget-first shortlist
+### Budget-first selection
 
 Examples:
 
@@ -945,7 +945,7 @@ Usually chosen for:
 
 But this path needs the most careful filtering because lower cost does not automatically mean better fit.
 
-This is why the first real admissions step is not paperwork. It is shortlist discipline.
+This is why the first real admissions step is not paperwork. It is selection discipline.
 
 ---
 
@@ -1064,7 +1064,7 @@ They work backward from the likely departure window.
 
 ### Good admission timing usually means:
 
-- shortlist early
+- selection early
 - documents ready early
 - offer stage not delayed
 - visa stage not compressed unnecessarily
@@ -1094,7 +1094,7 @@ Russia is easier when started early and harder when rushed.
 
 ### April to June
 
-- lock shortlist
+- lock selection
 - submit documents
 - compare offer pathways
 - start fee and hostel clarity

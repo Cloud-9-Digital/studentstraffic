@@ -298,6 +298,7 @@ export const leads = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
   },
   (table) => [
+    index("leads_phone_created_at_idx").on(table.phone, table.createdAt),
     index("leads_source_path_idx").on(table.sourcePath),
     index("leads_visitor_id_idx").on(table.visitorId),
     index("leads_gclid_idx").on(table.gclid),

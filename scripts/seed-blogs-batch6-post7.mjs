@@ -63,9 +63,9 @@ Do not let an agent pick your country and university. This is your career — yo
 
 **Research framework:**
 1. Set your total budget (6-year all-in cap)
-2. Shortlist countries that fit the budget (see our [fees comparison guide](/blog/mbbs-abroad-fees-country-comparison-2026))
+2. Selection countries that fit the budget (see our [fees comparison guide](/blog/mbbs-abroad-fees-country-comparison-2026))
 3. Within each country, look up NMC-approved universities at nmc.org.in
-4. Check WDOMS listing at wdoms.org for each shortlisted university
+4. Check WDOMS listing at wdoms.org for each selected university
 5. Research FMGE/NExT pass rate data for each university (coaching institute data, student forums)
 6. Talk to current students at those universities (Students Traffic peer connect)
 

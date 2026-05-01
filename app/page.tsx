@@ -45,62 +45,62 @@ export const metadata: Metadata = buildIndexableMetadata({
 const journeySteps = [
   {
     step: "01",
-    title: "Choose your destination",
-    body: "See costs, recognition, cities, and student life across countries before you commit to a university.",
+    title: "Pick the right country",
+    body: "See fees, recognition, climate, safety, and student life across countries before you move to a university list.",
   },
   {
     step: "02",
-    title: "Compare universities",
-    body: "Filter 500+ programs by country, fees, intake, and medium to find the right-fit universities faster.",
+    title: "Compare college options",
+    body: "Filter 500+ programs by country, fees, intake, and medium to narrow down the colleges that fit you best.",
   },
   {
     step: "03",
-    title: "Get expert guidance",
+    title: "Get counselling support",
     body: "Talk to our team about the right university, budget, compliance, and admission route before you apply.",
   },
   {
     step: "04",
-    title: "Secure admission",
-    body: "Our counsellors handle applications, documents, admission follow-up, and visa support at no extra cost.",
+    title: "Complete admission smoothly",
+    body: "Our counsellors help with applications, documents, admission follow-up, and visa support at no extra cost.",
   },
 ] as const;
 
 const startingPoints = [
   {
     Icon: Compass,
-    title: "University Finder",
-    description: "500+ MBBS programs. Filter by country, fees, intake, and NMC recognition.",
+    title: "College Finder",
+    description: "500+ MBBS programs. Filter by country, fees, intake, and NMC recognition fit.",
     href: "/universities",
-    cta: "Browse universities",
+    cta: "Browse colleges",
   },
   {
     Icon: BookOpen,
-    title: "Study Destinations",
-    description: "Country guides for Russia, Georgia, Vietnam, Kyrgyzstan & more — fees, cities, recognition.",
+    title: "Country Options",
+    description: "Move from country research to budget fit, compare flows, and the next admission step.",
     href: "/countries",
-    cta: "Explore destinations",
+    cta: "Explore countries",
   },
   {
     Icon: GraduationCap,
-    title: "MBBS & Planning Guides",
-    description: "Eligibility, NEET, FMGE/NExT, and total cost guidance for students ready to act.",
+    title: "Fees & Eligibility Tools",
+    description: "Eligibility, NEET, FMGE/NExT, and total-cost planning for students ready to move ahead.",
     href: "/guides",
-    cta: "Read the guides",
+    cta: "Open tools",
   },
 ] as const;
 
 const trustPoints = [
   {
-    title: "500+ programs, fully detailed",
-    body: "Fees, hostel costs, NMC recognition, intake dates, and eligibility — all on one page per program. No chasing information across multiple sources.",
+    title: "Fees and facts in one place",
+    body: "Fees, hostel costs, NMC recognition, intake dates, and eligibility are brought together clearly, so students and parents do not have to keep cross-checking ten different pages.",
   },
   {
-    title: "Real reviews from real students",
-    body: "Text and video reviews from enrolled students on academics, hostels, faculty, and city life. See what the experience actually looks like.",
+    title: "Real student feedback",
+    body: "Text and video reviews from enrolled students cover academics, hostels, faculty, and city life, so families get a more practical picture of the experience.",
   },
   {
     title: "Talk to current students directly",
-    body: "Connect with Indian students already at the university before you apply. Unfiltered answers on fees, hostels, and clinical training — from peers, not agents.",
+    body: "Connect with Indian students already at the university before you apply. Ask direct questions on fees, hostels, safety, and clinical training without sales pressure.",
   },
 ] as const;
 
@@ -112,7 +112,7 @@ export default async function HomePage() {
       path,
       name: "Students Traffic Home",
       description:
-        "Homepage for Students Traffic, helping Indian students explore study-abroad options, compare universities, and get free admissions guidance.",
+        "Homepage for Students Traffic, helping Indian students evaluate universities, compare options, and get admissions guidance.",
       datePublished: governancePublishedAt,
       dateModified: catalogReviewedAt,
     }),
@@ -123,16 +123,16 @@ export default async function HomePage() {
       <section className="py-20 md:py-28 lg:py-32">
         <div className="container-shell text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
-            India&apos;s Most Transparent MBBS Abroad Platform
+            Trusted MBBS Abroad Guidance for Indian Students
           </p>
 
           <h1 className="mx-auto mt-4 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            Study MBBS abroad —{" "}
-            <span className="italic text-accent">the right way.</span>
+            Find the right MBBS abroad college{" "}
+            <span className="italic text-accent">before you commit.</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-muted-foreground sm:text-lg">
-            Compare fees. Read real reviews. Talk to enrolled peers.
+            Compare colleges, check total cost, talk to enrolled students, and get guided admission support.
           </p>
 
           <div className="mt-8">
@@ -143,14 +143,14 @@ export default async function HomePage() {
             <CounsellingDialog
               triggerContent={
                 <>
-                  Book my free call
+                  Request a free counselling call
                   <ArrowRight className="size-4" />
                 </>
               }
               triggerSize="lg"
             />
             <Button asChild size="lg" variant="outline">
-              <Link href="/universities">Browse universities</Link>
+              <Link href="/universities">Browse colleges</Link>
             </Button>
           </div>
 
@@ -173,8 +173,8 @@ export default async function HomePage() {
       <section className="border-t border-border py-16 md:py-20">
         <div className="container-shell">
           <SectionHeading
-            title="How it works"
-            description="From first search to enrolment — every step covered."
+            title="How students usually move ahead"
+            description="From first search to final admission support, every step is designed around clearer decisions."
             align="center"
           />
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -201,7 +201,7 @@ export default async function HomePage() {
       <section className="border-t border-border py-16 md:py-20">
         <div className="container-shell">
           <SectionHeading
-            title="Where do you want to start?"
+            title="Where would you like to begin?"
             description="Pick the section that matches where you are in your admission journey."
           />
           <div className="grid gap-4 lg:grid-cols-3">
@@ -234,8 +234,8 @@ export default async function HomePage() {
       <section className="border-t border-border py-16 md:py-20">
         <div className="container-shell">
           <SectionHeading
-            title="Why students choose us"
-            description="Real guidance, real support, and real admission help."
+            title="Why Indian students choose us"
+            description="A platform built to help students and parents evaluate options clearly and move into admission with confidence."
             align="center"
           />
           <div className="grid gap-4 lg:grid-cols-3">
@@ -268,21 +268,21 @@ export default async function HomePage() {
             <div className="relative grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/60">
-                  We get you admitted
+                  Counselling with clarity
                 </p>
                 <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-5xl">
-                  Tell us your NEET score. We&apos;ll tell you exactly where to apply.
+                  Tell us your NEET score. We&apos;ll help you choose the right college options.
                 </h2>
                 <p className="mt-4 max-w-2xl text-base leading-8 text-white/75">
-                  Our counsellors have placed students across Georgia, Kyrgyzstan, Uzbekistan, Russia, and Vietnam. Leave your number — we call you with a direct recommendation and handle everything from application to departure.
+                  Our counsellors have helped Indian students across Georgia, Kyrgyzstan, Uzbekistan, Russia, and Vietnam. Leave your number and we will guide you on budget, eligibility, college options, and the next admission step. Parents can join the conversation too.
                 </p>
               </div>
 
               <DeferredLeadForm
                 sourcePath="/"
                 ctaVariant="home_cta"
-                title="Get your admission plan"
-                description="Leave your number — we call you within one business day with a direct recommendation for your NEET score, budget, and destination."
+                title="Get your admission guidance"
+                description="Leave your number and we will call you within one business day with college options matched to your NEET score, budget, and preferred country."
                 className="lg:justify-self-end"
               />
             </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cacheLife, cacheTag } from "next/cache";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
@@ -67,12 +68,54 @@ import {
 } from "@/lib/utils";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
+const STATIC_UNIVERSITY_SAMPLE_SIZE = 24;
+
 export async function generateStaticParams() {
   const universities = await getUniversities();
   return ensureNonEmptyStaticParams(
-    universities.map((university) => ({ slug: university.slug })),
+    // With Cache Components enabled, we only need a non-empty sample here.
+    // The rest of the catalog can be rendered on first request and cached,
+    // which keeps production builds from timing out on the entire university set.
+    universities
+      .slice(0, STATIC_UNIVERSITY_SAMPLE_SIZE)
+      .map((university) => ({ slug: university.slug })),
     { slug: "__catalog-fallback__" },
   );
+}
+
+async function getUniversityPageData(slug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("universities");
+
+  const university = await getUniversityBySlug(slug);
+
+  if (!university) {
+    return {
+      university: null,
+      programs: [],
+      country: null,
+      wdomsEntry: null,
+      allUniversities: [],
+    };
+  }
+
+  const [programs, country, wdomsEntry, allUniversities] = await Promise.all([
+    getProgramsForUniversity(university.slug),
+    getCountryBySlug(university.countrySlug),
+    getWdomsDirectoryEntryForUniversity(university.slug),
+    getUniversities(),
+  ]);
+
+  return {
+    university,
+    programs,
+    country,
+    wdomsEntry,
+    allUniversities,
+  };
 }
 
 export async function generateMetadata({
@@ -81,16 +124,12 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const university = await getUniversityBySlug(slug);
+  const { university, country, programs } = await getUniversityPageData(slug);
 
   if (!university) {
     return { title: "University Not Found" };
   }
 
-  const [country, programs] = await Promise.all([
-    getCountryBySlug(university.countrySlug),
-    getProgramsForUniversity(university.slug),
-  ]);
   const primaryProgram =
     programs.find((p) => p.offering.featured) ?? programs[0];
   const primaryProgramHasPublishedFee = primaryProgram
@@ -130,16 +169,10 @@ export default async function UniversityDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const university = await getUniversityBySlug(slug);
+  const { university, programs, country, wdomsEntry, allUniversities } =
+    await getUniversityPageData(slug);
 
   if (!university) notFound();
-
-  const [programs, country, wdomsEntry, allUniversities] = await Promise.all([
-    getProgramsForUniversity(university.slug),
-    getCountryBySlug(university.countrySlug),
-    getWdomsDirectoryEntryForUniversity(university.slug),
-    getUniversities(),
-  ]);
 
   if (!country) notFound();
 

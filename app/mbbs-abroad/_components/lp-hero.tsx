@@ -128,7 +128,7 @@ export function LpHero() {
               >
                 <p className="text-lg font-bold text-white">Book a Free Counselling Call</p>
                 <p className="mt-1 text-xs text-white/40">
-                  We call you back and tell you exactly where to apply.
+                  We call you back and help you compare the right college options.
                 </p>
               </div>
               <div className="bg-white p-6">
@@ -137,7 +137,7 @@ export function LpHero() {
                   ctaVariant="mbbs-abroad-hero"
                   title=""
                   description=""
-                  submitLabel="Book My Free Call"
+                  submitLabel="Request Free Counselling"
                   stacked
                   embedded
                 />

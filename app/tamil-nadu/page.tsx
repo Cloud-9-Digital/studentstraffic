@@ -76,7 +76,7 @@ export default function TamilNaduHubPage() {
     {
       question: "What NEET score is required for MBBS abroad?",
       answer:
-        "For NMC recognition, you need to pass NEET (qualifying percentile: 50th for General, 40th for SC/ST/OBC). There is no minimum NEET score requirement for admission to most foreign universities. However, having a higher score improves your chances at top universities. We help you shortlist universities based on your actual NEET score.",
+        "For NMC recognition, you need to pass NEET (qualifying percentile: 50th for General, 40th for SC/ST/OBC). There is no minimum NEET score requirement for admission to most foreign universities. However, having a higher score improves your chances at top universities. We help you choose universities based on your actual NEET score.",
     },
     {
       question: "Is the MBBS degree from abroad valid in India?",
@@ -187,7 +187,7 @@ export default function TamilNaduHubPage() {
               </div>
               <h3 className="mt-4 font-semibold text-heading">University Selection & Admission</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Personalized university shortlisting based on your NEET score, budget, preferred language medium, city preferences, and long-term medical specialization goals.
+                Personalized college selection based on your NEET score, budget, preferred language medium, city preferences, and long-term medical specialization goals.
               </p>
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function TamilNaduHubPage() {
               },
               {
                 step: "2",
-                title: "University Shortlisting & Admission",
+                title: "University Selection & Admission",
                 description: "Receive personalized university recommendations based on your profile. Review detailed information about each university including fees structure, hostel facilities, teaching medium, clinical exposure, and pass rates. Submit applications with required documents: NEET scorecard, 12th marksheet, passport, and photographs. Receive admission confirmation within 2-4 weeks.",
                 icon: <FileText className="size-6 text-primary" />,
               },
@@ -456,7 +456,7 @@ export default function TamilNaduHubPage() {
                   <CheckCircle className="size-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-heading">NEET Score-Based University Shortlisting</h3>
+                  <h3 className="font-semibold text-heading">NEET Score-Based University Selection</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     Personalized university recommendations matched to your actual NEET score, budget constraints, preferred language medium (English vs Russian),
                     city size preferences (metropolitan vs smaller cities), and long-term medical specialization aspirations. We consider your complete academic profile
@@ -623,15 +623,15 @@ export default function TamilNaduHubPage() {
             Ready to Start Your MBBS Abroad Journey from Tamil Nadu?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-            Book a free counselling session with our MBBS abroad experts. Get personalized guidance on country selection, university shortlisting,
-            cost planning, NMC recognition verification, and complete admission support. We help Tamil Nadu students achieve their dream of becoming doctors through affordable MBBS abroad programs.
+            Request a free counselling session with our MBBS abroad experts. Get personalized guidance on country selection, college options,
+            cost planning, NMC recognition verification, and complete admission support. We help Tamil Nadu students and parents move ahead with more confidence.
           </p>
           <div className="mt-8">
             <CounsellingDialog
               triggerContent={
                 <>
                   <Phone className="size-5" />
-                  Book Free Counselling Now
+                  Request Free Counselling
                 </>
               }
               triggerVariant="accent"

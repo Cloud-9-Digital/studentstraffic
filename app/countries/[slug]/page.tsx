@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { cacheLife, cacheTag } from "next/cache";
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { Suspense } from "react";
+import { unstable_cache } from "next/cache";
 import {
   ArrowRight,
   BookOpen,
@@ -66,19 +68,42 @@ export async function generateStaticParams() {
   );
 }
 
+async function getCountryPageData(slug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("countries");
+
+  const country = await getCountryBySlug(slug);
+
+  if (!country) {
+    return {
+      country: null,
+      programs: [],
+    };
+  }
+
+  const programs = await getProgramsForCountry(country.slug);
+
+  return {
+    country,
+    programs,
+  };
+}
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const country = await getCountryBySlug(slug);
+  const { country, programs } = await getCountryPageData(slug);
 
   if (!country) {
     return { title: "Country Not Found" };
   }
 
-  const programs = await getProgramsForCountry(country.slug);
   const primaryCourse = programs[0]?.course.shortName;
   const title = primaryCourse
     ? `Study ${primaryCourse} in ${country.name} | Universities, Fees, Cities & Teaching`
@@ -107,13 +132,11 @@ export default async function CountryPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const country = await getCountryBySlug(slug);
+  const { country, programs } = await getCountryPageData(slug);
 
   if (!country) {
     notFound();
   }
-
-  const programs = await getProgramsForCountry(country.slug);
   const primaryProgram = programs[0];
   const curatedLandingPageHref = primaryProgram
     ? getLandingPageHref(primaryProgram.course.slug, country.slug)
@@ -233,25 +256,9 @@ export default async function CountryPage({
   });
   const countryContent = getCountryContent(country.slug);
   const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
-  const db = getDb();
   const landingPagePromise = curatedLandingPageHref
     ? getLandingPageBySlug(curatedLandingPageHref.slice(1))
     : Promise.resolve(null);
-  const relatedBlogPostPromise = db
-    ? db
-        .select({ title: blogPosts.title, slug: blogPosts.slug, excerpt: blogPosts.excerpt })
-        .from(blogPosts)
-        .where(
-          and(
-            eq(blogPosts.status, "published"),
-            ilike(blogPosts.slug, `%${country.slug}%`)
-          )
-        )
-        .limit(1)
-        .then((rows) => rows[0] ?? null)
-    : Promise.resolve(null);
-
-  const relatedBlogPost = await relatedBlogPostPromise;
 
   return (
     <>
@@ -301,7 +308,7 @@ export default async function CountryPage({
                     className="!bg-white !text-[#0d1f1d] hover:!bg-white/90 hover:!text-[#0d1f1d] shadow-none"
                   >
                     <Link href={heroPrimaryHref}>
-                      Browse universities
+                      Browse colleges
                       <ArrowRight className="size-4" />
                     </Link>
                   </Button>
@@ -526,7 +533,7 @@ export default async function CountryPage({
             <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Finder Preview" />
 
             <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-              Browse universities in {country.name}
+              Browse colleges in {country.name}
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground">
               If you want to browse all currently listed universities in
@@ -700,30 +707,9 @@ export default async function CountryPage({
         )}
 
         {/* ── RELATED BLOG POST ───────────────────────────────── */}
-        {relatedBlogPost && (
-          <div className="py-8 border-t border-border">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-3">
-              From the blog
-            </p>
-            <Link
-              href={`/blog/${relatedBlogPost.slug}`}
-              className="group flex items-start gap-4 rounded-xl border border-border bg-card p-4 hover:bg-muted transition-colors"
-            >
-              <BookOpen className="mt-0.5 size-5 shrink-0 text-primary" />
-              <div>
-                <p className="font-semibold text-foreground group-hover:text-primary transition-colors text-sm leading-snug">
-                  {relatedBlogPost.title}
-                </p>
-                {relatedBlogPost.excerpt && (
-                  <p className="mt-1 text-xs text-muted-foreground line-clamp-2">
-                    {relatedBlogPost.excerpt}
-                  </p>
-                )}
-              </div>
-              <ChevronRight className="ml-auto mt-0.5 size-4 shrink-0 text-muted-foreground group-hover:text-primary transition-colors" />
-            </Link>
-          </div>
-        )}
+        <Suspense fallback={null}>
+          <CountryRelatedBlogPost countrySlug={country.slug} />
+        </Suspense>
 
         {/* ── NEXT STEP ───────────────────────────────────────── */}
         <div className="deferred-render py-14 md:py-18">
@@ -747,10 +733,10 @@ export default async function CountryPage({
           <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-start">
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link href={heroPrimaryHref}>Explore universities</Link>
+                <Link href={heroPrimaryHref}>Explore colleges</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="/contact">Talk to the team</Link>
+                <Link href="/contact">Talk to our team</Link>
               </Button>
             </div>
 
@@ -758,7 +744,7 @@ export default async function CountryPage({
               sourcePath={`/countries/${country.slug}`}
               ctaVariant="country_sidebar"
               title={`Apply to study in ${country.name}`}
-              description="Leave your number — our counsellors know every university in this country and will call you with a direct recommendation for your NEET score and budget."
+              description="Leave your number and our counsellors will call you with college options in this country that fit your NEET score, budget, and priorities."
               countrySlug={country.slug}
               courseSlug={primaryProgram?.course.slug}
             />
@@ -766,6 +752,72 @@ export default async function CountryPage({
         </div>
       </div>
     </>
+  );
+}
+
+const getRelatedBlogPostForCountry = unstable_cache(
+  async (countrySlug: string) => {
+    const db = getDb();
+
+    if (!db) {
+      return null;
+    }
+
+    const [relatedBlogPost] = await db
+      .select({
+        title: blogPosts.title,
+        slug: blogPosts.slug,
+        excerpt: blogPosts.excerpt,
+      })
+      .from(blogPosts)
+      .where(
+        and(
+          eq(blogPosts.status, "published"),
+          ilike(blogPosts.slug, `%${countrySlug}%`)
+        )
+      )
+      .limit(1);
+
+    return relatedBlogPost ?? null;
+  },
+  ["country-related-blog-post"],
+  { tags: ["blog"], revalidate: 3600 }
+);
+
+async function CountryRelatedBlogPost({
+  countrySlug,
+}: {
+  countrySlug: string;
+}) {
+  const relatedBlogPost = await getRelatedBlogPostForCountry(countrySlug);
+
+  if (!relatedBlogPost) {
+    return null;
+  }
+
+  return (
+    <div className="border-t border-border py-8">
+      <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+        From the blog
+      </p>
+      <Link
+        href={`/blog/${relatedBlogPost.slug}`}
+        className="group flex items-start gap-4 rounded-xl border border-border bg-card p-4 transition-colors hover:bg-muted"
+      >
+        <BookOpen className="mt-0.5 size-5 shrink-0 text-primary" />
+        <div>
+          <p className="text-sm font-semibold leading-snug text-foreground transition-colors group-hover:text-primary">
+            {relatedBlogPost.title}
+          </p>
+          {relatedBlogPost.excerpt && (
+            <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">
+              {relatedBlogPost.excerpt}
+            </p>
+          )}
+        </div>
+        <ChevronRight className="ml-auto mt-0.5 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+      </Link>
+    </div>
   );
 }
 

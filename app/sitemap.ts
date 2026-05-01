@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { cacheLife, cacheTag } from "next/cache";
 import { eq, desc } from "drizzle-orm";
 
 import { getLatestDate } from "@/lib/content-dates";
@@ -35,8 +36,35 @@ function uniqueUrls(urls: Array<string | undefined>) {
   return [...new Set(urls.filter(Boolean))];
 }
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+async function getPublishedSitemapPosts() {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("blog");
+  cacheTag("sitemap");
+
   const db = getDb();
+
+  if (!db) {
+    return [] as Array<{
+      slug: string;
+      publishedAt: Date | null;
+      updatedAt: Date | null;
+    }>;
+  }
+
+  return db
+    .select({
+      slug: blogPosts.slug,
+      publishedAt: blogPosts.publishedAt,
+      updatedAt: blogPosts.updatedAt,
+    })
+    .from(blogPosts)
+    .where(eq(blogPosts.status, "published"))
+    .orderBy(desc(blogPosts.publishedAt));
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const tamilNaduCityPages = getTamilNaduCityPages();
   const [snapshot, landingPages, comparisonGuides, budgetGuides, publishedPosts] =
     await Promise.all([
@@ -44,12 +72,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       getAllLandingPages(),
       getComparisonGuides(),
       getBudgetGuides(),
-      db
-        ? db.select({ slug: blogPosts.slug, publishedAt: blogPosts.publishedAt, updatedAt: blogPosts.updatedAt })
-            .from(blogPosts)
-            .where(eq(blogPosts.status, "published"))
-            .orderBy(desc(blogPosts.publishedAt))
-        : Promise.resolve([]),
+      getPublishedSitemapPosts(),
     ]);
   const { countries, courses, universities, programOfferings } = snapshot;
   const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
@@ -90,6 +113,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     governancePublishedAt,
     catalogReviewedAt,
   ]);
+  const latestBlogModified =
+    getLatestDate(
+      publishedPosts.flatMap((post) => [post.updatedAt, post.publishedAt]),
+    ) ?? governanceLastModified;
 
   function getUniversityLastModified(universitySlug: string) {
     const university = universityBySlug.get(universitySlug);
@@ -166,7 +193,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl(`/blog/category/${cat}`),
       priority: 0.65,
       changeFrequency: "weekly" as const,
-      lastModified: new Date(),
+      lastModified: latestBlogModified,
     })),
     ...publishedPosts.map((post) => ({
       url: absoluteUrl(`/blog/${post.slug}`),

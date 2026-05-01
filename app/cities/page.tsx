@@ -144,13 +144,13 @@ export default async function CitiesIndexPage() {
             Not sure which city is right for you?
           </h2>
           <p className="mx-auto mb-6 max-w-lg text-sm text-muted-foreground leading-7">
-            Climate, cost, Indian community presence, and FMGE coaching availability vary significantly city by city. Our counsellors have placed students across all these destinations — book a free call and get a direct answer.
+            Climate, cost, Indian community presence, and FMGE coaching availability vary significantly city by city. Our counsellors can help you compare these options based on your budget and priorities.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
           >
-            Book your free counselling call
+            Request counselling
             <ArrowRight className="size-4" />
           </Link>
         </div>

@@ -75,9 +75,9 @@ export type LeadFormProps = {
 export function LeadForm({
   sourcePath,
   ctaVariant,
-  title = "Talk to an admissions expert",
-  description = "Leave your number — an expert will call you and tell you exactly which university to apply to, based on your NEET score, budget, and destination.",
-  submitLabel = "Book my free call",
+  title = "Talk to an admissions counsellor",
+  description = "Leave your number and our team will call you with college options that fit your NEET score, budget, and country preference. Parents can join the call too.",
+  submitLabel = "Request a free counselling call",
   courseSlug,
   countrySlug,
   universitySlug,
@@ -152,7 +152,7 @@ export function LeadForm({
           <Input
             id={`${fieldPrefix}-name`}
             name="fullName"
-            placeholder="Your name"
+            placeholder="Student or parent name"
             required
           />
         </div>

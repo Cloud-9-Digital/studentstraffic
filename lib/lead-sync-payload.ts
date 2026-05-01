@@ -4,8 +4,22 @@ type ClientContext = Record<
   string | number | boolean | null | string[]
 >;
 
+export type LeadKind =
+  | "general_enquiry"
+  | "seminar_enquiry"
+  | "seminar_registration"
+  | "peer_request"
+  | "peer_connection"
+  | "wati_inbound";
+
 export type LeadSyncPayload = {
   websiteLeadId?: number;
+  handoffVersion?: string;
+  leadKind?: LeadKind;
+  sourceCategory?: string;
+  acquisitionChannel?: string;
+  primaryInterestType?: "university" | "country" | "course" | "seminar" | "general";
+  primaryInterestValue?: string;
   submittedAt: string;
   fullName: string;
   phone: string;

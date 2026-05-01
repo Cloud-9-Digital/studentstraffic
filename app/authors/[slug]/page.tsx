@@ -24,7 +24,7 @@ const authorPath = `/authors/${contentAuthorSlug}`;
 
 export const metadata: Metadata = buildIndexableMetadata({
   title: `${contentAuthorName} | ${contentAuthorRole} at Students Traffic`,
-  description: `${contentAuthorName} writes and reviews Students Traffic content on MBBS abroad destinations, university selection, admissions planning, and application support for Indian students.`,
+  description: `${contentAuthorName} writes and reviews Students Traffic content on MBBS abroad destinations, college selection, admissions planning, and application support for Indian students.`,
   path: authorPath,
 });
 
@@ -93,12 +93,12 @@ export default async function AuthorPage({
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button asChild>
                   <Link href="/blog">
-                    Read the latest articles
+                    Read the latest advice
                     <ArrowRight className="size-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline">
-                  <Link href="/editorial-policy">Editorial policy</Link>
+                  <Link href="/editorial-policy">How We Check Information</Link>
                 </Button>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default async function AuthorPage({
                   {
                     Icon: FileSearch,
                     title: "Content focus",
-                    body: "Country guides, university selection, admissions planning, and application guidance for Indian students.",
+                    body: "Country guides, college selection, admissions planning, and application guidance for Indian students.",
                   },
                   {
                     Icon: BadgeCheck,
@@ -119,7 +119,7 @@ export default async function AuthorPage({
                   {
                     Icon: Sparkles,
                     title: "Student goal",
-                    body: "Help families choose the right university, avoid bad-fit options, and move confidently into admission.",
+                    body: "Help families choose the right college options, avoid bad-fit choices, and move confidently into admission.",
                   },
                 ].map(({ Icon, title, body }) => (
                   <div key={title} className="rounded-2xl border border-border bg-background px-5 py-4">

@@ -37,19 +37,19 @@ if (hasCloudinary) {
 
 const studentsTrafficRussiaCta = `---
 
-## How Students Traffic Can Support Your Russia Shortlist
+## How Students Traffic Can Support Your Russia Selection
 
 Students Traffic works as an admission support partner for Indian families comparing MBBS in Russia. The focus is not to push one university blindly. It is to help students compare city fit, fees, banking practicality, language transition, and India-return planning before money is committed.
 
-If you want a cleaner shortlist, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
+If you want a cleaner selection, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
 
 const studentsTrafficVietnamCta = `---
 
-## How Students Traffic Can Support Your Vietnam Shortlist
+## How Students Traffic Can Support Your Vietnam Selection
 
 Students Traffic works as an admission support partner for Indian families comparing MBBS in Vietnam. The focus is not to push one university blindly. It is to help students compare cities, fee structures, clinical pathways, and paperwork before money is committed.
 
-If you want a cleaner shortlist, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
+If you want a cleaner selection, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
 
 const studentsTrafficNeetCta = `---
 
@@ -57,7 +57,7 @@ const studentsTrafficNeetCta = `---
 
 Students Traffic helps students turn a NEET score into a practical decision, not a panic decision. That means comparing private MBBS in India, Russia, Georgia, Vietnam, Kyrgyzstan, and other options through the lens of total cost, document readiness, India-return planning, and university-level risk.
 
-If you want a shortlist built around your likely score, budget, and long-term plan, use [Students Traffic's counselling support](/contact) and [peer connect](/students) before you pay any booking amount.`;
+If you want a selection built around your likely score, budget, and long-term plan, use [Students Traffic's counselling support](/contact) and [peer connect](/students) before you pay any booking amount.`;
 
 const russiaAdmissionAddendum = `## Offer Letter, Invitation Letter, and Visa Reality: Where Families Usually Get Confused
 
@@ -200,7 +200,7 @@ Families stop reading carefully because every step starts feeling time-bound.
 
 ### 2. University comparison quality drops
 
-Instead of comparing the best-fit shortlist, the family compares only what is still moving quickly.
+Instead of comparing the best-fit selection, the family compares only what is still moving quickly.
 
 ### 3. Travel cost can worsen
 
@@ -292,7 +292,7 @@ Families who want a calmer Russia process can think in three blocks.
 
 Goals:
 
-- shortlist 2 to 4 universities
+- selection 2 to 4 universities
 - compare city, cost, hostel, and support fit
 - decide whether Russia is genuinely the right country for this student
 
@@ -539,7 +539,7 @@ Those questions should be asked at the beginning, not only at the end.
 
 ## Red Flags Families Should Not Ignore
 
-Vietnam can be a strong shortlist country, but families should slow down if they hear only vague answers on:
+Vietnam can be a strong selection country, but families should slow down if they hear only vague answers on:
 
 - hospital names and affiliations
 - year-wise clinical progression
@@ -600,13 +600,13 @@ The most useful advice often comes from students already in years 3 to 6, not on
 
 ---
 
-## Final Addition: Clinical Reality Should Decide the Shortlist
+## Final Addition: Clinical Reality Should Decide the Selection
 
 Tuition attracts families. Hostel comforts families. English-medium branding reassures families.
 
 But clinical reality is what decides whether the student's six-year journey feels medically serious.
 
-That is why Vietnam should be shortlisted not just by cost or city appeal, but by:
+That is why Vietnam should be selected not just by cost or city appeal, but by:
 
 - hospital depth
 - language honesty
@@ -723,7 +723,7 @@ For MBBS abroad aspirants, NEET is not just an exam date on the calendar. It is 
 
 - a rushed and emotional admissions scramble
 - a calm comparison between India and abroad
-- a smart shortlist built around your likely score and budget
+- a smart selection built around your likely score and budget
 - or a series of expensive mistakes made under pressure
 
 That is why a genuine NEET 2026 update should do more than repeat one line like "the exam is on 3 May."
@@ -804,7 +804,7 @@ A stronger NEET result gives a family better negotiating power with reality. It 
 - private MBBS in India vs abroad
 - gap year vs immediate admission
 - premium country vs budget country
-- safer shortlist vs desperation shortlist
+- safer selection vs desperation selection
 
 ### 3. Counselling psychology
 
@@ -964,7 +964,7 @@ The students who use that runway well usually work on two tracks at the same tim
 
 ### Track B: Post-exam readiness
 
-- shortlist likely abroad destinations
+- selection likely abroad destinations
 - keep passport and identity documents ready
 - gather Class 10, Class 12, NEET, and personal records
 - understand budget bands instead of relying on one verbal quote
@@ -1030,7 +1030,7 @@ For example:
 | Likely score situation | Better family response |
 |---|---|
 | Stronger-than-expected outcome | Compare India options carefully before rushing abroad |
-| Mid-range outcome | Compare private India cost against safer abroad shortlists |
+| Mid-range outcome | Compare private India cost against safer abroad selections |
 | Lower-than-expected outcome | Decide early between repeat attempt, abroad, or alternate health-science path |
 
 Why does this matter?
@@ -1147,7 +1147,7 @@ Since the exam is on **03 May 2026**, students should think in short windows.
 - reduce information overload
 - keep your documents organized
 - avoid committing to any university out of fear
-- shortlist likely countries quietly in the background
+- selection likely countries quietly in the background
 
 ### Immediately after the exam
 
@@ -1158,7 +1158,7 @@ Since the exam is on **03 May 2026**, students should think in short windows.
 ### Around answer key and score phase
 
 - compare actual likely score against your earlier plan
-- start country shortlisting only after your decision framework is clear
+- start country selection only after your decision framework is clear
 - if considering abroad, evaluate 3 to 5 universities seriously, not 20 names casually
 
 ### Around counselling season
@@ -1231,7 +1231,7 @@ Low fee does not automatically mean good value. Sometimes the cheapest option be
 2. Keep every academic and identity document clean and consistent.
 3. Build a score-based decision plan before results.
 4. Compare full six-year costs, not headline tuition alone.
-5. Shortlist universities only after comparing country-level fit and student-level fit.
+5. Selection universities only after comparing country-level fit and student-level fit.
 6. Refuse pressure selling built around artificial urgency.
 
 That combination gives students the best chance of making a calmer and safer decision after the NEET cycle moves forward.

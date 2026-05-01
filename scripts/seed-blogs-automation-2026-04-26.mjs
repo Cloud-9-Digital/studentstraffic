@@ -83,7 +83,7 @@ function renderFallbackSvg(post) {
   <rect x="1164" y="308" width="232" height="1" fill="#46627D"/>
   <text x="1164" y="386" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Built for real decisions</text>
   <text x="1164" y="438" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Useful comparisons.</text>
-  <text x="1164" y="474" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Cleaner shortlists.</text>
+  <text x="1164" y="474" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Cleaner selections.</text>
   <text x="1164" y="510" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Fewer expensive mistakes.</text>
   <rect x="1164" y="590" width="198" height="56" rx="18" fill="${post.accent}"/>
   <text x="1263" y="626" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">${escapeXml(post.badge)}</text>
@@ -227,11 +227,11 @@ function article(title, intro, sections, cta, related) {
 
 const nepalCta = `---
 
-## How Students Traffic Can Help With MBBS in Nepal Shortlisting
+## How Students Traffic Can Help With MBBS in Nepal Selection
 
 Nepal attracts many Indian families because it feels familiar, nearby, and academically safer than more distant options. That comfort can become expensive if the family picks on brand emotion instead of real seat availability, fee clarity, hostel conditions, and India-return planning. Students Traffic helps families compare Nepal against Bangladesh, Russia, Georgia, Uzbekistan, and other destinations with a realistic budget lens before money gets locked in.
 
-If you want your Nepal shortlist reviewed before you pay any booking amount, use [Students Traffic counselling support](/contact) and [peer connect](/students) to compare universities, budgets, and compliance steps with more confidence.`;
+If you want your Nepal selection reviewed before you pay any booking amount, use [Students Traffic counselling support](/contact) and [peer connect](/students) to compare universities, budgets, and compliance steps with more confidence.`;
 
 const egyptCta = `---
 
@@ -239,13 +239,13 @@ const egyptCta = `---
 
 Egypt often enters the conversation when families want an academically serious destination but do not want to jump into a random low-fee sales funnel. The right Egypt decision depends on whether the student can handle the academic environment, total budget, paperwork pace, and long-term India-return plan. Students Traffic helps families compare Egypt with Georgia, Russia, Bangladesh, and other options using practical decision criteria rather than brochure language.
 
-If you want an honest Egypt vs alternatives shortlist before you commit, use [Students Traffic counselling support](/contact) and [peer connect](/students) to check fit, budget, and risk before paying anything substantial.`;
+If you want an honest Egypt vs alternatives selection before you commit, use [Students Traffic counselling support](/contact) and [peer connect](/students) to check fit, budget, and risk before paying anything substantial.`;
 
 const neetCta = `---
 
 ## How Students Traffic Can Help After the NEET 2026 City Intimation Stage
 
-The city intimation phase is where many students suddenly feel the exam becoming real. That emotional spike leads some families into bad decisions: panic booking of crash counselling, random calls with agents, and early assumptions that one test day will decide the entire future. Students Traffic helps families convert NEET season into a decision framework that covers score scenarios, private MBBS in India, MBBS abroad, country shortlists, and the next documents to keep ready.
+The city intimation phase is where many students suddenly feel the exam becoming real. That emotional spike leads some families into bad decisions: panic booking of crash counselling, random calls with agents, and early assumptions that one test day will decide the entire future. Students Traffic helps families convert NEET season into a decision framework that covers score scenarios, private MBBS in India, MBBS abroad, country selections, and the next documents to keep ready.
 
 If you want a post-exam decision plan built around your likely score and actual budget, use [Students Traffic counselling support](/contact) and [peer connect](/students) before you commit to any college package or counselling pitch.`;
 
@@ -260,7 +260,7 @@ const nepalContent = article(
     section(
       "Why Nepal Keeps Entering the MBBS Abroad Conversation",
       paragraphs(
-        "Nepal enters the shortlist for reasons that are understandable and not superficial. Families like the geographic proximity, the ability to travel without feeling fully disconnected from India, the broad cultural comfort, and the idea that the teaching environment may feel more relatable than destinations where language and climate shifts are harsher. For many parents, Nepal reduces psychological resistance before it reduces academic uncertainty.",
+        "Nepal enters the selection for reasons that are understandable and not superficial. Families like the geographic proximity, the ability to travel without feeling fully disconnected from India, the broad cultural comfort, and the idea that the teaching environment may feel more relatable than destinations where language and climate shifts are harsher. For many parents, Nepal reduces psychological resistance before it reduces academic uncertainty.",
         "That said, psychological comfort should not be confused with automatic seat quality or automatic affordability. One of the most common mistakes in the Nepal market is that families assume every Nepal option is naturally safer just because the country feels closer. In practice, the student still has to evaluate college quality, fee structure, hostel conditions, academic seriousness, and long-term documentation discipline exactly as carefully as in any other destination.",
         "Nepal is therefore best understood as a high-interest destination that deserves careful filtering. It is neither an obvious yes for every Indian medical aspirant nor a destination to reject casually because fees can stretch. For the right student, it can be a strong fit. For the wrong budget or the wrong expectations, it can become an emotionally chosen but financially stressful option."
       )
@@ -312,7 +312,7 @@ const nepalContent = article(
     section(
       "Admission Timeline: What a Cleaner Nepal Process Looks Like",
       paragraphs(
-        "The smoothest Nepal admissions follow a disciplined sequence. First comes serious shortlisting, then document readiness, then college-level comparison, then payment decisions, then the operational steps that turn admission into actual movement. When families skip straight from enquiry to payment, they lose the only phase where rational comparison is still possible.",
+        "The smoothest Nepal admissions follow a disciplined sequence. First comes serious selection, then document readiness, then college-level comparison, then payment decisions, then the operational steps that turn admission into actual movement. When families skip straight from enquiry to payment, they lose the only phase where rational comparison is still possible.",
         "A good Nepal timeline leaves room for document correction, fee confirmation, family discussion, and cross-checking of the exact seat type being offered. The student should know what is being promised, by whom, and with what written backing. Parents should know whether the quoted fee is all-inclusive or partly illustrative. Small ambiguities at this stage become major arguments later.",
         bullets([
           "Build the document file before the first payment conversation becomes serious.",
@@ -385,7 +385,7 @@ const nepalContent = article(
       "Final Verdict: Is MBBS in Nepal Worth It in 2026",
       paragraphs(
         "MBBS in Nepal can absolutely be worth it in 2026, but only when families stop treating Nepal as an emotional shortcut and start treating it as a college-level investment decision. The right Nepal choice is about more than country comfort. It is about whether the student can secure a credible seat, manage the budget, handle the academic expectations, and keep the India-return path disciplined from the beginning.",
-        "If the family values proximity, cultural familiarity, and a calmer transition strongly enough, Nepal may be one of the most sensible shortlists to explore. If the family is forcing the choice because of fear while ignoring cost or seat quality, the answer may be different. The country should fit the student, not the parent’s anxiety.",
+        "If the family values proximity, cultural familiarity, and a calmer transition strongly enough, Nepal may be one of the most sensible selections to explore. If the family is forcing the choice because of fear while ignoring cost or seat quality, the answer may be different. The country should fit the student, not the parent’s anxiety.",
         "That is the core principle. Nepal is a serious option, not a magical one. When approached with realism, it can be a strong destination. When approached through assumptions, it becomes just another expensive counselling story."
       )
     ),
@@ -444,7 +444,7 @@ const egyptContent = article(
         "The Egypt admission process should be treated as an exercise in verification, not in emotional acceleration. Because the destination sounds substantial, families sometimes get impressed too early. They stop interrogating practical details and start relying on the overall reputation story. That is how they miss the specifics that matter most: what college, what seat, what payment stage, what hostel arrangement, and what exact documents are needed when.",
         "A cleaner admission path begins with university-level comparison. Families should understand the institution being offered, the fee flow, the expected timelines, and the exact role of the consultant or representative in the process. Every payment should connect to a clearly understood step. Every promised outcome should be backed by something written, not just by voice-note confidence.",
         bullets([
-          "Shortlist the institution before falling in love with the country label.",
+          "Selection the institution before falling in love with the country label.",
           "Ask what the quoted amount covers and what it does not cover.",
           "Read the timeline in terms of document quality and operational readiness, not only seat urgency."
         ])

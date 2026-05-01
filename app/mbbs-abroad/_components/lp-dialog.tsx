@@ -31,10 +31,10 @@ export function LpDialogProvider({ children }: { children: React.ReactNode }) {
             <div className="flex items-start justify-between border-b border-gray-100 px-6 py-4">
               <div>
                 <Dialog.Title className="text-lg font-bold" style={{ color: "#0f3d37" }}>
-                  Book a Free Counselling Call
+                  Request Free Counselling
                 </Dialog.Title>
                 <Dialog.Description className="mt-0.5 text-xs text-gray-400">
-                  We call you back and tell you exactly where to apply.
+                  We call you back and help you compare the right college options.
                 </Dialog.Description>
               </div>
               <Dialog.Close className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-gray-400 transition hover:bg-gray-100 hover:text-gray-600">
@@ -47,7 +47,7 @@ export function LpDialogProvider({ children }: { children: React.ReactNode }) {
               <LeadForm
                 sourcePath="/mbbs-abroad"
                 ctaVariant="mbbs-abroad-dialog"
-                submitLabel="Book My Free Call →"
+                submitLabel="Request Free Counselling →"
                 stacked
                 embedded
               />

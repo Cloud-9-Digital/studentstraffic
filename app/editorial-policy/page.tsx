@@ -17,9 +17,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Editorial Policy | Students Traffic",
+  title: "How We Check University Information | Students Traffic",
   description:
-    "The editorial standards Students Traffic uses for university, destination, fee, and admissions content.",
+    "How Students Traffic verifies university, destination, fee, and admissions information before publishing it.",
   path: "/editorial-policy",
 });
 
@@ -28,13 +28,13 @@ export default function EditorialPolicyPage() {
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
-      { name: "Editorial Policy", path },
+      { name: "How We Check Information", path },
     ]),
     getWebPageStructuredData({
       path,
-      name: "Students Traffic Editorial Policy",
+      name: "How Students Traffic Checks University Information",
       description:
-        "Editorial principles for catalog, comparison, and destination content on Students Traffic.",
+        "Verification principles for catalog, comparison, and destination information on Students Traffic.",
       datePublished: governancePublishedAt,
       dateModified: catalogReviewedAt,
     }),
@@ -44,9 +44,9 @@ export default function EditorialPolicyPage() {
     <section className="section-space">
       <div className="container-shell space-y-12">
         <SectionHeading
-          eyebrow="Editorial Policy"
-          title="How we decide what gets published and updated"
-          description="Students Traffic is designed to help students compare options clearly, so the editorial standard is built around usefulness, traceability, and revision discipline."
+          eyebrow="Information Check Process"
+          title="How we check information before students rely on it"
+          description="Students Traffic is designed to help students make admissions decisions with confidence, so our publishing standard is built around usefulness, traceability, and revision discipline."
         />
 
         <ContentTrustPanel
@@ -66,15 +66,15 @@ export default function EditorialPolicyPage() {
         <div className="grid gap-6 lg:grid-cols-3">
           {[
             {
-              title: "Research preference",
-              body: "We prefer current university and public admissions materials over recycled brochure language or derivative summaries.",
+              title: "Preferred sources",
+              body: "We prefer current university and public admissions materials over recycled brochure language or copied summaries.",
             },
             {
-              title: "Revision rule",
-              body: "When important facts change, our preferred action is to revise or remove the affected content instead of leaving stale guidance live.",
+              title: "Update discipline",
+              body: "When important facts change, our preferred action is to revise or remove the affected information instead of leaving stale guidance live.",
             },
             {
-              title: "Reader priority",
+              title: "Student-first use",
               body: "Pages should help students make a decision: compare options, understand tradeoffs, and know what to verify next.",
             },
           ].map((item) => (

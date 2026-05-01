@@ -194,7 +194,7 @@ function renderFallbackSvg(cover) {
   <rect x="1186" y="310" width="256" height="1" fill="#46627D"/>
   <text x="1186" y="382" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Why this guide matters</text>
   <text x="1186" y="432" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Clearer decisions.</text>
-  <text x="1186" y="468" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Cleaner shortlists.</text>
+  <text x="1186" y="468" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Cleaner selections.</text>
   <text x="1186" y="504" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Fewer costly mistakes.</text>
   <rect x="1186" y="584" width="210" height="56" rx="18" fill="${cover.accent}"/>
   <text x="1291" y="620" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Russia 2026</text>

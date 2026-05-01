@@ -280,10 +280,10 @@ export default async function ComparisonGuidePage({
                 </p>
                 <div className="mt-6 space-y-3">
                   <Button asChild className="w-full">
-                    <Link href={finderHref}>Browse more universities</Link>
+                    <Link href={finderHref}>Browse more colleges</Link>
                   </Button>
                   <Button asChild variant="outline" className="w-full">
-                    <Link href="/contact">Talk to the team</Link>
+                    <Link href="/contact">Talk to our team</Link>
                   </Button>
                 </div>
               </div>

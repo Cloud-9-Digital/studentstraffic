@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { cacheLife, cacheTag } from "next/cache";
 
 import {
   getAllLandingPages,
@@ -6,6 +7,7 @@ import {
   getCourses,
   getUniversities,
 } from "@/lib/data/catalog";
+import { logPublicRouteRequest } from "@/lib/route-observability";
 import { getCountryHref, getCourseHref, getUniversityHref } from "@/lib/routes";
 
 export type Suggestion = {
@@ -20,6 +22,13 @@ type RankedSuggestion = Suggestion & {
   directLabelTier: number;
   labelCoverage: number;
   subtitleCoverage: number;
+};
+
+type SuggestionSource = {
+  countries: Awaited<ReturnType<typeof getCountries>>;
+  courses: Awaited<ReturnType<typeof getCourses>>;
+  universities: Awaited<ReturnType<typeof getUniversities>>;
+  landingPages: Awaited<ReturnType<typeof getAllLandingPages>>;
 };
 
 function normalize(value: string) {
@@ -105,12 +114,12 @@ function getTypeRank(type: Suggestion["type"]) {
   }
 }
 
-export async function GET(req: NextRequest) {
-  const q = req.nextUrl.searchParams.get("q")?.trim() ?? "";
+async function getSuggestionSource(): Promise<SuggestionSource> {
+  "use cache";
 
-  if (q.length < 2) {
-    return NextResponse.json<Suggestion[]>([]);
-  }
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
 
   const [countries, courses, universities, landingPages] = await Promise.all([
     getCountries(),
@@ -118,6 +127,30 @@ export async function GET(req: NextRequest) {
     getUniversities(),
     getAllLandingPages(),
   ]);
+
+  return {
+    countries,
+    courses,
+    universities,
+    landingPages,
+  };
+}
+
+export async function GET(req: NextRequest) {
+  logPublicRouteRequest({
+    route: "api/suggestions",
+    request: req,
+    sampleRate: 0.05,
+  });
+
+  const q = req.nextUrl.searchParams.get("q")?.trim() ?? "";
+
+  if (q.length < 2) {
+    return NextResponse.json<Suggestion[]>([]);
+  }
+
+  const { countries, courses, universities, landingPages } =
+    await getSuggestionSource();
 
   const countryMap = new Map(countries.map((country) => [country.slug, country.name]));
   const rankedResults: RankedSuggestion[] = [];
@@ -259,5 +292,10 @@ export async function GET(req: NextRequest) {
           ...suggestion
         }) => suggestion,
       ),
+    {
+      headers: {
+        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=3600",
+      },
+    },
   );
 }

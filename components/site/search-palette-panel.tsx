@@ -42,7 +42,7 @@ const quickLinks = [
     heading: "Start Here",
     items: [
       { label: "Universities", href: "/universities", flag: null },
-      { label: "All Guides", href: "/guides", flag: null },
+      { label: "Admission Tools", href: "/guides", flag: null },
       { label: "Contact", href: "/contact", flag: null },
     ],
   },
@@ -77,6 +77,8 @@ export function SearchPalettePanel({
   const [loading, setLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const abortRef = useRef<AbortController | null>(null);
+  const requestIdRef = useRef(0);
 
   useEffect(() => {
     if (open) {
@@ -87,6 +89,8 @@ export function SearchPalettePanel({
     setQuery("");
     setSuggestions([]);
     setLoading(false);
+    abortRef.current?.abort();
+    abortRef.current = null;
   }, [open]);
 
   useEffect(() => {
@@ -98,6 +102,8 @@ export function SearchPalettePanel({
 
   useEffect(() => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
+    abortRef.current?.abort();
+    abortRef.current = null;
 
     if (!open || query.length < 2) {
       setSuggestions([]);
@@ -107,19 +113,38 @@ export function SearchPalettePanel({
 
     setLoading(true);
     debounceRef.current = setTimeout(async () => {
+      const controller = new AbortController();
+      const requestId = requestIdRef.current + 1;
+      requestIdRef.current = requestId;
+      abortRef.current = controller;
+
       try {
-        const res = await fetch(`/api/suggestions?q=${encodeURIComponent(query)}`);
+        const res = await fetch(`/api/suggestions?q=${encodeURIComponent(query)}`, {
+          signal: controller.signal,
+        });
         const data: Suggestion[] = await res.json();
+        if (requestIdRef.current !== requestId || controller.signal.aborted) {
+          return;
+        }
         setSuggestions(data);
       } catch {
+        if (controller.signal.aborted) {
+          return;
+        }
         setSuggestions([]);
       } finally {
-        setLoading(false);
+        if (requestIdRef.current === requestId && !controller.signal.aborted) {
+          setLoading(false);
+        }
+        if (abortRef.current === controller) {
+          abortRef.current = null;
+        }
       }
     }, 250);
 
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
+      abortRef.current?.abort();
     };
   }, [open, query]);
 

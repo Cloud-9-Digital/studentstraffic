@@ -19,6 +19,7 @@ import {
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import { getTrackingSnapshot } from "@/lib/tracking";
 import { sendSeminarRegistrationWhatsAppMessage } from "@/lib/wati";
@@ -220,7 +221,8 @@ export async function submitSeminarLeadAction(
       insertedLeadId = insertedLead?.id;
 
       await Promise.allSettled([
-        syncLeadDestinations(insertedLeadId, {
+        syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+          leadKind: "seminar_enquiry",
           websiteLeadId: insertedLeadId,
           submittedAt: submittedAt.toISOString(),
           fullName: data.fullName,
@@ -250,7 +252,7 @@ export async function submitSeminarLeadAction(
           ipAddress: ipAddress ?? undefined,
           acceptLanguage: headerStore.get("accept-language") ?? undefined,
           clientContext,
-        }),
+        })),
         sendSeminarRegistrationWhatsAppMessage({
           fullName: data.fullName,
           phone: normalizedPhone,

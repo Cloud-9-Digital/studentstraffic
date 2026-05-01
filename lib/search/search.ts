@@ -1,5 +1,6 @@
 import "server-only";
 
+import { cacheLife, cacheTag } from "next/cache";
 import { sql } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
@@ -306,11 +307,7 @@ async function searchInMemory(
   filters: SearchFilters,
   limit: number
 ): Promise<SearchResult[]> {
-  const snapshot = await getCatalogSnapshot();
-  const documents = buildSearchDocuments({
-    ...snapshot,
-    landingPages,
-  });
+  const documents = await getCachedSearchDocuments();
 
   const results = documents
     .filter((document) => matchesStaticFilters(document, filters))
@@ -344,6 +341,21 @@ async function searchInMemory(
     .slice(0, Math.max(limit * 3, 48));
 
   return rerankSearchResults(results, filters, limit);
+}
+
+async function getCachedSearchDocuments(): Promise<SearchDocument[]> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("search");
+
+  const snapshot = await getCatalogSnapshot();
+
+  return buildSearchDocuments({
+    ...snapshot,
+    landingPages,
+  });
 }
 
 export async function searchCatalog(

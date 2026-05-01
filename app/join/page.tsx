@@ -1,5 +1,6 @@
-import { asc } from "drizzle-orm";
 import type { Metadata } from "next";
+import { cacheLife, cacheTag } from "next/cache";
+import { asc } from "drizzle-orm";
 
 import { JoinForm } from "@/components/site/join-form";
 import { getDb } from "@/lib/db/server";
@@ -11,14 +12,27 @@ export const metadata: Metadata = {
     "Are you studying MBBS abroad? Help fellow Indian students make the right choice. Share your experience and connect with aspiring students.",
 };
 
-export default async function JoinPage() {
+async function getJoinUniversities() {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("student-peers");
+
   const db = getDb();
-  const universityList = db
-    ? await db
-        .select({ id: universities.id, name: universities.name })
-        .from(universities)
-        .orderBy(asc(universities.name))
-    : [];
+
+  if (!db) {
+    return [] as Array<{ id: number; name: string }>;
+  }
+
+  return db
+    .select({ id: universities.id, name: universities.name })
+    .from(universities)
+    .orderBy(asc(universities.name));
+}
+
+export default async function JoinPage() {
+  const universityList = await getJoinUniversities();
 
   return (
     <main className="min-h-screen bg-slate-50">

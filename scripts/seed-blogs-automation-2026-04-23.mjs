@@ -84,7 +84,7 @@ function renderFallbackSvg(post) {
   <text x="1164" y="386" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">What families need</text>
   <text x="1164" y="438" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Rules explained clearly.</text>
   <text x="1164" y="474" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Admissions decisions de-risked.</text>
-  <text x="1164" y="510" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Better shortlists before payment.</text>
+  <text x="1164" y="510" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Better selections before payment.</text>
   <rect x="1164" y="590" width="198" height="56" rx="18" fill="${post.accent}"/>
   <text x="1263" y="626" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">${escapeXml(post.badge)}</text>
 </svg>`;
@@ -215,7 +215,7 @@ const eligibilityCta = `---
 
 The NMC Eligibility Certificate is a simple step when the family is organized and a stressful step when documents are scattered, university claims are vague, or deadlines are already slipping. Students Traffic helps families translate the regulation into a practical action list: which documents to collect, what to verify before paying any advance, and how to time EC filing so the student does not lose an intake window.
 
-If you want your university shortlist checked before you start the EC process, use [Students Traffic counselling support](/contact) and [peer connect](/students) to compare countries, documents, and timelines before money is committed.`;
+If you want your university selection checked before you start the EC process, use [Students Traffic counselling support](/contact) and [peer connect](/students) to compare countries, documents, and timelines before money is committed.`;
 
 const crmiCta = `---
 
@@ -358,7 +358,7 @@ If the family wants the student to preserve the ability to return to India for t
 
 The safest timing is straightforward:
 
-- shortlist the country and university seriously
+- selection the country and university seriously
 - obtain the official offer or invitation from the university
 - verify the university properly
 - apply for the EC immediately after that, without unnecessary delay
@@ -471,7 +471,7 @@ Even if a consultant helps, the family should know the login, understand the doc
 
 Here is the workflow that tends to produce the cleanest outcomes.
 
-### Step 1: Shortlist the university properly
+### Step 1: Selection the university properly
 
 Do not apply for the EC around a random brochure. The family should already know the probable country and institution, and should have done basic verification on the university's legitimacy, course structure, and suitability.
 
@@ -545,7 +545,7 @@ The answer in practical counselling terms is that the family should first move b
 
 That does not mean every downstream detail must be frozen permanently. But it does mean the family should not treat the EC as an abstract placeholder while still bouncing between completely different destinations and institutions.
 
-If the university-level information is still too vague, the first job is not EC filing. The first job is better shortlisting.
+If the university-level information is still too vague, the first job is not EC filing. The first job is better selection.
 
 ## How long does the EC process take
 

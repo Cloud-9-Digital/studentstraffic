@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, BookOpen, Building2, Globe2, Lightbulb, Map as MapIcon, TrendingUp } from "lucide-react";
@@ -41,19 +42,47 @@ export async function generateStaticParams() {
   );
 }
 
+async function getCoursePageData(slug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("courses");
+
+  const course = await getCourseBySlug(slug);
+
+  if (!course) {
+    return {
+      course: null,
+      programs: [],
+      budgetGuides: [],
+    };
+  }
+
+  const [programs, budgetGuides] = await Promise.all([
+    getProgramsForCourse(course.slug),
+    getBudgetGuidesForCourse(course.slug),
+  ]);
+
+  return {
+    course,
+    programs,
+    budgetGuides,
+  };
+}
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const course = await getCourseBySlug(slug);
+  const { course, programs } = await getCoursePageData(slug);
 
   if (!course) {
     return { title: "Course Not Found" };
   }
 
-  const programs = await getProgramsForCourse(course.slug);
   const countries = [...new Set(programs.map((program) => program.country.name))];
 
   return buildIndexableMetadata({
@@ -78,14 +107,11 @@ export default async function CoursePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const course = await getCourseBySlug(slug);
+  const { course, programs, budgetGuides } = await getCoursePageData(slug);
 
   if (!course) {
     notFound();
   }
-
-  const programs = await getProgramsForCourse(course.slug);
-  const budgetGuides = await getBudgetGuidesForCourse(course.slug);
   const countries = Array.from(
     new Map(programs.map((program) => [program.country.slug, program.country])).values()
   );
@@ -144,11 +170,11 @@ export default async function CoursePage({
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 w-full sm:w-auto mt-2">
               <Button asChild size="lg">
-                <Link href={finderHref}>Browse universities <ArrowRight className="ml-2 size-4" /></Link>
+                <Link href={finderHref}>Browse colleges <ArrowRight className="ml-2 size-4" /></Link>
               </Button>
               <CounsellingDialog
                 courseSlug={course.slug}
-                triggerContent="Book my free call"
+                triggerContent="Request counselling"
                 triggerVariant="outline"
                 triggerSize="lg"
               />

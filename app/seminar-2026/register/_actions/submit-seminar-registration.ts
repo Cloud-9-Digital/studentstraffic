@@ -21,6 +21,7 @@ import {
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import { getTrackingSnapshot } from "@/lib/tracking";
 import { sendSeminarRegistrationWhatsAppMessage } from "@/lib/wati";
@@ -287,7 +288,8 @@ export async function submitSeminarRegistrationAction(
       insertedLeadId = insertedLead?.id;
 
       await Promise.allSettled([
-        syncLeadDestinations(insertedLeadId, {
+        syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+          leadKind: "seminar_registration",
           websiteLeadId: insertedLeadId,
           submittedAt: submittedAt.toISOString(),
           fullName: data.studentName,
@@ -323,7 +325,7 @@ export async function submitSeminarRegistrationAction(
           ipAddress: ipAddress ?? undefined,
           acceptLanguage: headerStore.get("accept-language") ?? undefined,
           clientContext,
-        }),
+        })),
         sendSeminarRegistrationWhatsAppMessage({
           fullName: data.studentName,
           phone: normalizedStudentPhone,

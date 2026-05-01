@@ -53,7 +53,7 @@ const navLinks = [
   { href: "/universities", label: "Universities" },
   { href: "/students",     label: "Talk to Students" },
   { href: "/reviews",      label: "Reviews" },
-  { href: "/blog",         label: "Blog" },
+  { href: "/blog",         label: "Advice & Updates" },
 ] as const;
 
 export function SiteHeader() {
@@ -210,7 +210,7 @@ export function SiteHeader() {
                     onClick={() => setCountriesOpen(false)}
                     className="flex items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-muted hover:text-primary"
                   >
-                    View all country guides
+                    View all countries
                     <ArrowRight className="size-4" />
                   </Link>
                 </div>
@@ -262,7 +262,7 @@ export function SiteHeader() {
               triggerClassName="gap-1.5 px-5 shadow-cta hover:shadow-cta-hover"
               triggerContent={
                 <>
-                  Book my free call
+                  Request counselling
                   <ArrowRight className="size-3.5" />
                 </>
               }
@@ -393,7 +393,7 @@ export function SiteHeader() {
               onTriggerClick={closeMobile}
               triggerContent={
                 <>
-                  Book my free call
+                  Request counselling
                   <ArrowRight className="size-4" />
                 </>
               }

@@ -1,4 +1,5 @@
 import { eq, desc } from "drizzle-orm";
+import { unstable_cache } from "next/cache";
 
 import { siteConfig } from "@/lib/constants";
 import {
@@ -10,6 +11,7 @@ import {
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 import { absoluteUrl } from "@/lib/metadata";
+import { logPublicRouteRequest } from "@/lib/route-observability";
 import {
   getCountryHref,
   getCourseHref,
@@ -17,26 +19,43 @@ import {
 } from "@/lib/routes";
 import { hasPublishedUsdAmount } from "@/lib/utils";
 
-export async function GET() {
-  const db = getDb();
+const getPublishedBlogIndex = unstable_cache(
+  async () => {
+    const db = getDb();
+    if (!db) {
+      return [];
+    }
+
+    return db
+      .select({
+        slug: blogPosts.slug,
+        title: blogPosts.title,
+        category: blogPosts.category,
+        excerpt: blogPosts.excerpt,
+        publishedAt: blogPosts.publishedAt,
+        readingTimeMinutes: blogPosts.readingTimeMinutes,
+      })
+      .from(blogPosts)
+      .where(eq(blogPosts.status, "published"))
+      .orderBy(desc(blogPosts.publishedAt));
+  },
+  ["llms-full-blog-index"],
+  { tags: ["blog"], revalidate: 3600 }
+);
+
+export async function GET(request: Request) {
+  logPublicRouteRequest({
+    route: "llms-full.txt",
+    request,
+    sampleRate: 1,
+  });
+
   const [universities, countries, courses, offerings, posts] = await Promise.all([
     getUniversities(),
     getCountries(),
     getCourses(),
     getProgramOfferings(),
-    db
-      ? db.select({
-          slug: blogPosts.slug,
-          title: blogPosts.title,
-          category: blogPosts.category,
-          excerpt: blogPosts.excerpt,
-          publishedAt: blogPosts.publishedAt,
-          content: blogPosts.content,
-        })
-        .from(blogPosts)
-        .where(eq(blogPosts.status, "published"))
-        .orderBy(desc(blogPosts.publishedAt))
-      : Promise.resolve([]),
+    getPublishedBlogIndex(),
   ]);
 
   const countryMap = new Map(countries.map((c) => [c.slug, c]));
@@ -47,7 +66,7 @@ export async function GET() {
     "",
     `> ${siteConfig.description}`,
     "",
-    "This file provides a structured index of all content on Students Traffic for use by AI agents and LLMs. For navigation guidance see /llms.txt.",
+    "This file provides a lightweight structured index of Students Traffic content for AI agents and LLMs. For navigation guidance see /llms.txt.",
     "",
     "---",
     "",
@@ -121,8 +140,7 @@ export async function GET() {
     lines.push("---", "", "## Blog Posts", "");
     for (const post of posts) {
       const url = absoluteUrl(`/blog/${post.slug}`);
-      const wordCount = post.content.split(/\s+/).length;
-      const readingMinutes = Math.ceil(wordCount / 200);
+      const readingMinutes = post.readingTimeMinutes ?? 5;
       lines.push(`### ${post.title}`);
       lines.push(`- URL: ${url}`);
       if (post.category) lines.push(`- Category: ${post.category}`);
@@ -140,6 +158,7 @@ export async function GET() {
   return new Response(lines.join("\n"), {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
     },
   });
 }

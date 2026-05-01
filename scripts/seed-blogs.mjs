@@ -225,9 +225,9 @@ For Philippines or Georgia, add approximately ₹5–10 lakh to the total due to
 
 Most universities abroad follow either a September/October intake or a February/March intake. The admission cycle for a September 2025 intake typically looks like this:
 
-- **January–March 2026:** Research countries and universities, shortlist 3–5 options
+- **January–March 2026:** Research countries and universities, selection 3–5 options
 - **April–May 2026:** NEET exam
-- **June 2026:** NEET results; confirm shortlist
+- **June 2026:** NEET results; confirm selection
 - **June–July 2026:** Apply to universities, submit documents
 - **July–August 2026:** Receive admission letters, arrange finances
 - **August 2026:** Apply for student visa (allow 4–6 weeks processing time)

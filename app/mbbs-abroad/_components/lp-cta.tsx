@@ -20,8 +20,8 @@ export function LpCta() {
             </h2>
             <p className="mt-4 max-w-lg text-[15px] leading-7 text-white/55">
               Call us or fill the form. We will call you back, understand your
-              situation, and tell you exactly which university to apply to.
-              Based on your NEET score and budget. No pressure.
+              situation, and guide you toward the right college options based
+              on your NEET score and budget. No pressure.
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -41,9 +41,9 @@ export function LpCta() {
 
           <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
             <div className="border-b border-white/10 px-6 py-4" style={{ background: "rgba(255,255,255,0.05)" }}>
-              <p className="text-lg font-bold text-white">Book a Free Call</p>
+              <p className="text-lg font-bold text-white">Request Free Counselling</p>
               <p className="mt-1 text-xs text-white/40">
-                We call you back and guide you to the right university.
+                We call you back and guide you to the right college options.
               </p>
             </div>
             <div className="bg-white p-6">
@@ -52,7 +52,7 @@ export function LpCta() {
                 ctaVariant="mbbs-abroad-bottom-cta"
                 title=""
                 description=""
-                submitLabel="Book My Free Call"
+                submitLabel="Request Free Counselling"
                 stacked
                 embedded
               />

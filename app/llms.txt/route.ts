@@ -1,11 +1,18 @@
 import { footerPopularRoutes, navCourses, navDestinations, siteConfig } from "@/lib/constants";
 import { absoluteUrl } from "@/lib/metadata";
+import { logPublicRouteRequest } from "@/lib/route-observability";
 
 function toBulletList(items: Array<{ label: string; href: string }>) {
   return items.map((item) => `- ${item.label}: ${absoluteUrl(item.href)}`);
 }
 
-export async function GET() {
+export async function GET(request: Request) {
+  logPublicRouteRequest({
+    route: "llms.txt",
+    request,
+    sampleRate: 1,
+  });
+
   const lines = [
     `# ${siteConfig.name}`,
     "",
@@ -15,7 +22,6 @@ export async function GET() {
     "",
     "## Preferred URLs",
     `- Home: ${absoluteUrl("/")}`,
-    `- Full content index (all universities, fees, programs): ${absoluteUrl("/llms-full.txt")}`,
     `- University catalog: ${absoluteUrl("/universities")}`,
     `- Countries: ${absoluteUrl("/countries")}`,
     `- Courses: ${absoluteUrl("/courses")}`,
@@ -71,6 +77,7 @@ export async function GET() {
   return new Response(lines.join("\n"), {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
     },
   });
 }

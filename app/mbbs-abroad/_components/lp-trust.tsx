@@ -11,7 +11,7 @@ const testimonials = [
     name: "Rahul S.",
     state: "Uttar Pradesh",
     detail: "Kazan Federal University, Russia. 3rd Year",
-    quote: "My score was 280. Everyone said I cannot do anything. Students Traffic shortlisted Kazan for me. It is NMC recognized, English medium, and total cost under 35 lakhs. They handled everything.",
+    quote: "My score was 280. Everyone said I cannot do anything. Students Traffic selected Kazan for me. It is NMC recognized, English medium, and total cost under 35 lakhs. They handled everything.",
   },
   {
     name: "Sneha P.",

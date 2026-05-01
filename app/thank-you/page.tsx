@@ -120,7 +120,7 @@ export default async function ThankYouPage({
               href="/universities"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white! transition-all duration-150 hover:scale-[1.02] hover:bg-accent-strong active:scale-[0.98]"
             >
-              Explore universities
+              Explore colleges
               <svg
                 className="h-4 w-4"
                 viewBox="0 0 16 16"

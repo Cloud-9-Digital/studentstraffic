@@ -14,53 +14,53 @@ import { getLandingPageHref } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Abroad Guides | Countries, Courses, Comparisons & Budgets",
+  title: "MBBS Abroad Admission Tools | Countries, Fees, Eligibility & Comparisons",
   description:
-    "Browse country guides, course guides, university comparisons, and budget planning guides to help you choose the right MBBS abroad path.",
+    "Use country planning, course planning, college comparisons, and budget tools to choose the right MBBS abroad path.",
   path: "/guides",
 });
 
 const guideTypes = [
   {
     Icon: Compass,
-    title: "Country Guides",
-    description:
-      "Compare destination fit, recognition context, city life, and admissions practicality.",
+    title: "Country Planning",
+      description:
+        "Evaluate destination fit, recognition context, city life, and admissions practicality.",
     href: "/countries",
-    cta: "Open countries",
+    cta: "See country options",
     theme:
       "border-[#2d6b64]/15 bg-[linear-gradient(180deg,rgba(45,107,100,0.06)_0%,#ffffff_40%)] hover:border-[#2d6b64]/30",
     action: "text-[#235b55]",
   },
   {
     Icon: GraduationCap,
-    title: "Course Guides",
-    description:
-      "Understand the route first, then compare where and how to study it abroad.",
+    title: "Course Planning",
+      description:
+        "Understand the route first, then decide where and how to study it abroad.",
     href: "/courses",
-    cta: "Open courses",
+    cta: "See course options",
     theme:
       "border-[#355e8a]/15 bg-[linear-gradient(180deg,rgba(53,94,138,0.06)_0%,#ffffff_40%)] hover:border-[#355e8a]/30",
     action: "text-[#2f5a86]",
   },
   {
     Icon: BookOpen,
-    title: "Comparison Guides",
-    description:
-      "Use side-by-side university comparisons when you are choosing between final options.",
+    title: "College Comparison",
+      description:
+        "Use side-by-side college comparisons when you are narrowing final options.",
     href: "/compare",
-    cta: "Open comparisons",
+    cta: "Compare colleges",
     theme:
       "border-[#7b5d3d]/15 bg-[linear-gradient(180deg,rgba(123,93,61,0.06)_0%,#ffffff_40%)] hover:border-[#7b5d3d]/30",
     action: "text-[#6d5132]",
   },
   {
     Icon: Wallet,
-    title: "Budget Guides",
+    title: "Budget Planning",
     description:
-      "Start with a yearly tuition ceiling before moving into university-level detail.",
+      "Start with a yearly tuition ceiling before moving into college-level detail.",
     href: "/budget",
-    cta: "Open budget guides",
+    cta: "Check budget fit",
     theme:
       "border-primary/15 bg-[linear-gradient(180deg,rgba(11,49,43,0.05)_0%,#ffffff_40%)] hover:border-primary/30",
     action: "text-primary",
@@ -95,13 +95,13 @@ export default async function GuidesPage() {
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
-      { name: "Guides", path },
+      { name: "Admission Tools", path },
     ]),
     getCollectionPageStructuredData({
       path,
-      name: "Study abroad guides",
+      name: "MBBS abroad admission tools",
       description:
-        "Guide hub for country, course, comparison, and budget guidance pages.",
+        "Planning hub for country, course, comparison, and budget decision pages.",
     }),
   ];
 
@@ -112,14 +112,14 @@ export default async function GuidesPage() {
         <div className="container-shell relative py-14 md:py-18 lg:py-20">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-              Admission Guides
+              Admission Planning Tools
             </p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-heading sm:text-6xl">
-              Start with the right guide type.
+              Start with the right tool for your admission journey.
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
-              Use this hub to move into country guidance, course guidance,
-              comparison pages, or budget-first planning.
+              Use this hub to move into country planning, course planning,
+              college comparisons, or budget-first decision support.
             </p>
           </div>
         </div>
@@ -172,10 +172,10 @@ export default async function GuidesPage() {
         <div className="container-shell">
           <div className="mb-8">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-              Popular Reads
+              Popular Admission Paths
             </p>
             <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-              In-depth guides people open often.
+              Useful pages students check often.
             </h2>
           </div>
 
@@ -197,7 +197,7 @@ export default async function GuidesPage() {
                 </p>
                 <div className="mt-5 border-t border-border/70 pt-4">
                   <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
-                    Read guide
+                    Check details
                     <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </div>

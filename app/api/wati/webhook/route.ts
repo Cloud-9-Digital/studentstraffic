@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { syncLeadToCrm } from "@/lib/lead-sync";
 import { fetchLatestWatiMessages } from "@/lib/wati";
 
@@ -357,7 +358,8 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
 
   // Sync to CRM only (skip Pabbly to avoid triggering new lead notifications)
   if (insertedLeadId) {
-    syncLeadToCrm(insertedLeadId, {
+    syncLeadToCrm(insertedLeadId, buildLeadHandoffPayload({
+      leadKind: "wati_inbound",
       websiteLeadId: insertedLeadId,
       submittedAt: submittedAt.toISOString(),
       fullName,
@@ -369,7 +371,7 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
       ctaVariant: "wati_inbound",
       notes,
       clientContext,
-    }).catch((error) => {
+    })).catch((error) => {
       console.error("[wati] Failed to sync lead to CRM:", error);
     });
   }

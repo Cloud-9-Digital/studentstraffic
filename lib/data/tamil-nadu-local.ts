@@ -34,7 +34,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
     metaDescription:
       "MBBS abroad counselling for Chennai students and parents. Compare Russia, Georgia, Vietnam, Kyrgyzstan and more with fee clarity, NMC context, and seminar support.",
     heroSummary:
-      "Students in Chennai usually come in with sharper shortlist questions: country fit, return-to-India pathway, total cost, and whether a university is actually a safe long-term choice. This page is designed to rank for that decision-stage intent without pretending to be a generic consultant directory.",
+      "Students in Chennai usually come in with sharper selection questions: country fit, return-to-India pathway, total cost, and whether a university is actually a safe long-term choice. This page is designed to rank for that decision-stage intent without pretending to be a generic consultant directory.",
     localAngle:
       "Chennai is the strongest local intent market for the site right now because it combines parent research depth, early counselling demand, and seminar traction.",
     audience: [
@@ -49,7 +49,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
     ],
     whyStudentsAskFromHere: [
       "Families in Chennai often compare MBBS abroad directly against private-college fee pressure in South India.",
-      "Students usually want structured country shortlists rather than broad study-abroad sales language.",
+      "Students usually want structured country selections rather than broad study-abroad sales language.",
       "Parents tend to ask more detailed regulatory and long-term outcome questions before moving forward.",
     ],
     destinationFocus: [
@@ -76,7 +76,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
       {
         question: "What do Chennai parents usually ask first?",
         answer:
-          "Most start with total budget, NMC recognition context, return-to-India licensing, and whether the shortlisted university is genuinely safe for a 6-year medical journey.",
+          "Most start with total budget, NMC recognition context, return-to-India licensing, and whether the selected university is genuinely safe for a 6-year medical journey.",
       },
     ],
   },
@@ -103,11 +103,11 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
     ],
     whyStudentsAskFromHere: [
       "Coimbatore demand tends to be cost-sensitive but quality-aware.",
-      "Students often want a narrower shortlist quickly instead of exploring every country.",
+      "Students often want a narrower selection quickly instead of exploring every country.",
       "Seminar-based credibility matters because many families prefer meeting someone before committing.",
     ],
     destinationFocus: [
-      { country: "Russia", slug: "russia", reason: "frequent shortlisting for public university value" },
+      { country: "Russia", slug: "russia", reason: "frequent selection for public university value" },
       { country: "Kyrgyzstan", slug: "kyrgyzstan", reason: "interest from families comparing lower-fee pathways" },
       { country: "Vietnam", slug: "vietnam", reason: "regional proximity and growing curiosity" },
     ],
@@ -125,7 +125,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
       {
         question: "Why does this page focus so much on costs?",
         answer:
-          "Because Coimbatore demand is often budget-led. Families usually want a realistic fee range, hidden-cost context, and a safer shortlist before anything else.",
+          "Because Coimbatore demand is often budget-led. Families usually want a realistic fee range, hidden-cost context, and a safer selection before anything else.",
       },
       {
         question: "Do I need to attend a seminar before applying?",
@@ -161,7 +161,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
       "Students want practical clarity on hostel, food, and adaptation in addition to fees.",
     ],
     destinationFocus: [
-      { country: "Russia", slug: "russia", reason: "commonly shortlisted for scale and public university options" },
+      { country: "Russia", slug: "russia", reason: "commonly selected for scale and public university options" },
       { country: "Georgia", slug: "georgia", reason: "strong interest from families focused on city environment and branding" },
       { country: "Uzbekistan", slug: "uzbekistan", reason: "seen as a budget-check destination by some families" },
     ],
@@ -233,7 +233,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
       {
         question: "What should Trichy students compare first?",
         answer:
-          "Start with country fit, budget range, return-to-India implications, and whether your shortlist is based on real university quality or just agent preference.",
+          "Start with country fit, budget range, return-to-India implications, and whether your selection is based on real university quality or just agent preference.",
       },
       {
         question: "Can I move forward without visiting Chennai?",
@@ -261,7 +261,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
     commonQuestions: [
       "Which countries are affordable without taking on too much risk?",
       "How much should we budget in full, not just tuition?",
-      "Can we speak to someone before finalising the shortlist?",
+      "Can we speak to someone before finalising the selection?",
     ],
     whyStudentsAskFromHere: [
       "Budget-led intent is stronger here than prestige-led intent.",
@@ -302,11 +302,11 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
     regionLabel: "Far South Tamil Nadu",
     metaTitle: "MBBS Abroad Support in Tirunelveli | Fees, Countries and Counselling",
     metaDescription:
-      "MBBS abroad guidance for students in Tirunelveli. Explore countries, fees, recognition context, and seminar-backed counselling before shortlisting universities.",
+      "MBBS abroad guidance for students in Tirunelveli. Explore countries, fees, recognition context, and seminar-backed counselling before choosing universities.",
     heroSummary:
       "Students from Tirunelveli often want clarity on whether MBBS abroad is truly worth pursuing from their current options. The page is framed to answer that carefully and locally.",
     localAngle:
-      "This page leans into decision reassurance, because the search intent here often starts with uncertainty rather than a finished shortlist.",
+      "This page leans into decision reassurance, because the search intent here often starts with uncertainty rather than a finished selection.",
     audience: [
       "Students still deciding whether to pursue MBBS abroad",
       "Parents looking for a slower, more trust-led counselling process",
@@ -358,11 +358,11 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
     metaDescription:
       "MBBS abroad counselling for Erode students and parents. Compare countries, fees, recognition, and seminar support before choosing a medical university abroad.",
     heroSummary:
-      "Erode queries tend to be shortlist-driven: families want quick clarity on which countries make sense and whether the expected cost or risk is acceptable.",
+      "Erode queries tend to be selection-driven: families want quick clarity on which countries make sense and whether the expected cost or risk is acceptable.",
     localAngle:
       "This page is built to answer high-intent comparison queries with stronger trust and specificity than a generic consultant directory page.",
     audience: [
-      "Students seeking shortlist support rather than broad study-abroad education",
+      "Students seeking selection support rather than broad study-abroad education",
       "Families comparing risk and fee tradeoffs quickly",
       "Users looking for local seminar-backed trust signals",
     ],
@@ -372,12 +372,12 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
       "Is there any local seminar or city-specific support near Erode?",
     ],
     whyStudentsAskFromHere: [
-      "Searchers often want a practical shortlist fast.",
+      "Searchers often want a practical selection fast.",
       "Families still want proof and reassurance before acting.",
       "Seminar-based local validation helps consultant-style queries convert more honestly.",
     ],
     destinationFocus: [
-      { country: "Russia", slug: "russia", reason: "commonly shortlisted for depth and familiarity" },
+      { country: "Russia", slug: "russia", reason: "commonly selected for depth and familiarity" },
       { country: "Kyrgyzstan", slug: "kyrgyzstan", reason: "strong comparison interest on affordability" },
       { country: "Vietnam", slug: "vietnam", reason: "growing alternative-interest market" },
     ],
@@ -449,7 +449,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
       {
         question: "Can I start with WhatsApp instead of a full call?",
         answer:
-          "Yes. Many families begin with WhatsApp to understand the process, fee range, and country shortlist before scheduling a longer call.",
+          "Yes. Many families begin with WhatsApp to understand the process, fee range, and country selection before scheduling a longer call.",
       },
       {
         question: "Will this page keep getting updated?",
@@ -508,7 +508,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
       {
         question: "What should Vellore students read next?",
         answer:
-          "Usually the next step is a country comparison page, a fees guide, and the India-return or NExT guidance pages before moving into university-level shortlists.",
+          "Usually the next step is a country comparison page, a fees guide, and the India-return or NExT guidance pages before moving into university-level selections.",
       },
     ],
   },

@@ -118,7 +118,7 @@ export function UniversityHeroSection({
 
             <div className="flex flex-wrap gap-3">
               <CounsellingDialog
-                triggerContent="Apply — book my call"
+                triggerContent="Get admission guidance"
                 triggerVariant="accent"
                 triggerSize="default"
               />

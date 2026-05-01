@@ -20,9 +20,9 @@ export const editorialPrinciples = [
 
 export const methodologySteps = [
   "Collect program, fee, intake, location, and admission data from current university and public admissions materials.",
-  "Normalize data into a consistent catalog so students can evaluate universities on the same criteria.",
+  "Normalize data into a consistent catalog so students and parents can evaluate universities on the same criteria.",
   "Highlight important admission factors such as tuition, city, medium, recognition, clinical environment, and fit.",
-  "Review destination and admissions pages through our editorial team before publishing.",
+  "Review destination and admissions pages through our admissions research team before publishing.",
 ];
 
 export function formatContentDate(date: string) {

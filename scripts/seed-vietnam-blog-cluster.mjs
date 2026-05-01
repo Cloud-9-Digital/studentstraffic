@@ -18,11 +18,11 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
 const studentsTrafficVietnamCta = `---
 
-## How Students Traffic Can Support Your Vietnam Shortlist
+## How Students Traffic Can Support Your Vietnam Selection
 
 Students Traffic works as an admission support partner for Indian families comparing MBBS in Vietnam. The focus is not to push one university blindly. It is to help students compare cities, fee structures, clinical pathways, and paperwork before money is committed.
 
-If you want a cleaner shortlist, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
+If you want a cleaner selection, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
 
 const posts = [
   {
@@ -40,7 +40,7 @@ const posts = [
       "Compare the best medical universities in Vietnam for Indian students in 2026. Ranked by recognition stack, clinical exposure, city fit, language reality, and total cost.",
     content: `## Why This Ranking Matters
 
-Vietnam is no longer a fringe MBBS-abroad option. It has become a serious shortlist country for Indian families who want a closer geography than Eastern Europe, warmer weather than Russia, and a university mix that includes both established public schools and fast-moving private medical campuses.
+Vietnam is no longer a fringe MBBS-abroad option. It has become a serious selection country for Indian families who want a closer geography than Eastern Europe, warmer weather than Russia, and a university mix that includes both established public schools and fast-moving private medical campuses.
 
 The problem is that many families still compare Vietnam at the country level instead of the university level. That is where mistakes happen.
 
@@ -66,9 +66,9 @@ This article should be read together with [MBBS in Vietnam 2026: Universities, F
 
 ---
 
-## Quick Shortlist: The Universities Most Indian Families End Up Comparing
+## Quick Selection: The Universities Most Indian Families End Up Comparing
 
-| Rank | University | Type | City | Approx annual tuition | Why it keeps getting shortlisted |
+| Rank | University | Type | City | Approx annual tuition | Why it keeps getting selected |
 |---|---|---|---|---|---|
 | 1 | [Hanoi Medical University](/universities/hanoi-medical-university) | Public | Hanoi | $4,000 | Prestige, national-hospital depth, strongest public-school signal |
 | 2 | [University of Medicine and Pharmacy of Ho Chi Minh City](/universities/ump-ho-chi-minh-city) | Public | Ho Chi Minh City | $4,200 | Southern flagship with very strong hospital ecosystem |
@@ -186,7 +186,7 @@ For families that want a private university but do not want a small or obscure c
 - one of the more visible private medicine brands in Vietnam
 - Da Nang is arguably the easiest major Vietnamese city for student life
 - better institutional scale than many private alternatives
-- often shortlisted by families balancing city quality, brand, and infrastructure
+- often selected by families balancing city quality, brand, and infrastructure
 
 ### Trade-off
 
@@ -317,7 +317,7 @@ Hong Bang remains relevant for one reason: it is a premium private Ho Chi Minh C
 
 ---
 
-## The Mistakes Families Make in Vietnam Shortlisting
+## The Mistakes Families Make in Vietnam Selection
 
 ### 1. Treating all English-medium claims as equal
 
@@ -1092,7 +1092,7 @@ The exact bundle should always be finalized university by university. But famili
 
 The most efficient families start early enough to make good decisions without panic.
 
-### April to June 2026: shortlist and screening
+### April to June 2026: selection and screening
 
 This is the best phase for:
 
@@ -1137,7 +1137,7 @@ Usually, the opposite is true.
 
 A practical admissions journey often looks like this:
 
-1. university shortlist is finalized
+1. university selection is finalized
 2. documents are submitted for academic screening
 3. eligibility is reviewed
 4. offer or admission communication is issued
@@ -1401,7 +1401,7 @@ It can work very well for the right student, especially one who does not need th
 - smaller city means fewer fallback comforts
 - families should ask even harder questions about student support and long-term clinical continuity
 
-**Best for:** students who are comfortable outside the usual big-city shortlist and want a more compact, focused day-to-day environment.
+**Best for:** students who are comfortable outside the usual big-city selection and want a more compact, focused day-to-day environment.
 
 ---
 
@@ -1815,7 +1815,7 @@ ${studentsTrafficVietnamCta}`,
       "Compare MBBS in Vietnam, Russia, and Georgia for Indian students in 2026 by fees, climate, flights, daily life, hospital exposure, language pressure, and India-return risk.",
     content: `## Why This Three-Country Comparison Matters
 
-For Indian families, the shortlist rarely begins with only one destination.
+For Indian families, the selection rarely begins with only one destination.
 
 It usually becomes some version of this:
 
@@ -1936,7 +1936,7 @@ Because the market is so large, Russia can be both a value country and a mistake
 
 ### Georgia
 
-Georgia often enters the shortlist with strong English-medium appeal, but it is not always the cheapest route once total university pricing and city life are considered.
+Georgia often enters the selection with strong English-medium appeal, but it is not always the cheapest route once total university pricing and city life are considered.
 
 That is where families sometimes get surprised. Georgia can feel easy on paper but premium in actual multi-year budgeting.
 
@@ -1944,7 +1944,7 @@ That is where families sometimes get surprised. Georgia can feel easy on paper b
 
 If the family wants:
 
-- **lowest-feeling entry point** within a disciplined shortlist, Vietnam often performs well
+- **lowest-feeling entry point** within a disciplined selection, Vietnam often performs well
 - **maximum option volume**, Russia offers the broadest fee range
 - **first-impression comfort**, Georgia may look attractive, but it needs harder cost scrutiny
 
@@ -2021,7 +2021,7 @@ It is:
 
 "What language maturity will the student need by the time they start handling real patients, records, rounds, and hospital routines?"
 
-That question improves shortlist quality immediately.
+That question improves selection quality immediately.
 
 ---
 
@@ -2076,7 +2076,7 @@ Vietnam often becomes the right call for students who:
 - care about climate and day-to-day livability
 - want a middle path between budget discipline and practical comfort
 - are open to adapting gradually to local language for clinical years
-- prefer a shortlist that includes both public and fast-evolving private options
+- prefer a selection that includes both public and fast-evolving private options
 
 Vietnam is especially strong for the student who wants a calmer, more balanced study-abroad life rather than the most legacy-driven or most heavily marketed route.
 

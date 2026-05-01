@@ -44,19 +44,19 @@ if (hasCloudinary) {
 
 const studentsTrafficVietnamCta = `---
 
-## How Students Traffic Can Support Your Vietnam Shortlist
+## How Students Traffic Can Support Your Vietnam Selection
 
 Students Traffic works as an admission support partner for Indian families comparing MBBS in Vietnam. The focus is not to push one university blindly. It is to help students compare cities, fee structures, clinical pathways, and paperwork before money is committed.
 
-If you want a cleaner shortlist, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
+If you want a cleaner selection, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
 
 const studentsTrafficRussiaCta = `---
 
-## How Students Traffic Can Support Your Russia Shortlist
+## How Students Traffic Can Support Your Russia Selection
 
 Students Traffic works as an admission support partner for Indian families comparing MBBS in Russia. The focus is not to push one university blindly. It is to help students compare city fit, fees, banking practicality, language transition, and India-return planning before money is committed.
 
-If you want a cleaner shortlist, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
+If you want a cleaner selection, use [Students Traffic's peer connect](/students) to speak with students already studying abroad and reach out for admissions guidance when you are ready to move from research to application.`;
 
 const russiaValidityAddendum = `
 ---
@@ -252,7 +252,7 @@ const vietnamRankingAddendum = `
 
 The biggest mistake families make with rankings is assuming rank 1 automatically means best fit.
 
-That is not how this shortlist should be used.
+That is not how this selection should be used.
 
 A better method is to create three buckets:
 
@@ -292,9 +292,9 @@ That improves decision quality much faster than arguing whether rank 3 is "bette
 
 ---
 
-## A Budget-Based Shortlisting Framework
+## A Budget-Based Selection Framework
 
-Here is a more useful way to shortlist Vietnam universities by financial reality:
+Here is a more useful way to selection Vietnam universities by financial reality:
 
 | Budget posture | Best comparison type |
 |---|---|
@@ -305,7 +305,7 @@ Here is a more useful way to shortlist Vietnam universities by financial reality
 
 This matters because a family that can realistically afford one kind of university should not waste weeks emotionally attached to another kind of university it may not finally choose.
 
-The right shortlist is one the family can actually sustain for six years.
+The right selection is one the family can actually sustain for six years.
 
 ---
 
@@ -538,7 +538,7 @@ function renderFallbackSvg(post) {
   <rect x="1160" y="308" width="236" height="1" fill="#46627D"/>
   <text x="1160" y="386" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Why this guide matters</text>
   <text x="1160" y="438" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Smarter comparisons.</text>
-  <text x="1160" y="474" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Cleaner shortlists.</text>
+  <text x="1160" y="474" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Cleaner selections.</text>
   <text x="1160" y="510" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#D7E1EA">Better admissions decisions.</text>
   <rect x="1160" y="590" width="214" height="56" rx="18" fill="${post.accent}"/>
   <text x="1267" y="626" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">${escapeXml(post.badge)}</text>

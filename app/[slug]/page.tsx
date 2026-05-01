@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -55,17 +56,38 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
+async function getLandingPageRouteData(slug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+
+  const page = await getLandingPageBySlug(slug);
+
+  if (!page) {
+    return {
+      page: null,
+      context: null,
+    };
+  }
+
+  const context = await getLandingPageContext(page);
+
+  return {
+    page,
+    context,
+  };
+}
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const page = await getLandingPageBySlug(slug);
+  const { page, context } = await getLandingPageRouteData(slug);
 
   if (!page) return { title: "Page Not Found" };
-
-  const context = await getLandingPageContext(page);
   const keywords = [
     page.title,
     `${page.courseSlug} in ${page.countrySlug}`,
@@ -88,11 +110,9 @@ export default async function LandingPageRoute({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const page = await getLandingPageBySlug(slug);
+  const { page, context } = await getLandingPageRouteData(slug);
 
   if (!page) notFound();
-
-  const context = await getLandingPageContext(page);
 
   if (!context.country || !context.course) notFound();
 
@@ -242,12 +262,12 @@ export default async function LandingPageRoute({
 
               <div className="mt-9 flex flex-wrap gap-3">
                 <CounsellingDialog
-                  triggerContent={<>Book my seat <ArrowRight className="size-4" /></>}
+                  triggerContent={<>Get admission guidance <ArrowRight className="size-4" /></>}
                   triggerSize="lg"
                   triggerClassName="bg-accent text-white shadow-cta hover:bg-accent-strong hover:shadow-cta-hover"
                   title={`Get admitted — ${page.title}`}
-                  description={`Leave your number and our counsellors will call you. We handle the application, documents, and visa — you show up ready.`}
-                  submitLabel="Book my free call"
+                  description={`Leave your number and our counsellors will call you. We help with applications, documents, and the next admission steps for students and parents.`}
+                  submitLabel="Request a free counselling call"
                   ctaVariant="landing_hero_cta"
                   countrySlug={country.slug}
                   courseSlug={course.slug}
@@ -293,7 +313,7 @@ export default async function LandingPageRoute({
                 sourcePath={path}
                 ctaVariant="landing_sidebar"
                 title={`Get guidance on ${page.title}`}
-                description="Share your details and our counsellors will guide you toward the right university and handle the next steps with you."
+                description="Share your details and our counsellors will guide you toward the right college options and the next admission steps."
                 countrySlug={country.slug}
                 courseSlug={course.slug}
               />
@@ -906,7 +926,7 @@ export default async function LandingPageRoute({
             <div className="px-8 py-12 md:px-14 md:py-16 lg:flex lg:items-center lg:justify-between lg:gap-12">
               <div className="lg:max-w-xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
-                  We get you admitted
+                  Admission support
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-semibold leading-tight tracking-tight text-heading-contrast md:text-4xl">
                   Ready to apply? We handle everything, free of charge.
@@ -938,7 +958,7 @@ export default async function LandingPageRoute({
                   triggerSize="lg"
                   triggerClassName="w-full"
                   title="Start your application"
-                  description={`Leave your number — we call you within one business day and handle everything from there. Application, documents, visa, departure. You just show up.`}
+                  description={`Leave your number and we will call you within one business day. We help with application, documents, visa, and departure planning for students and parents.`}
                   submitLabel="Yes, call me"
                   ctaVariant="landing_bottom_cta"
                   countrySlug={country.slug}
@@ -946,7 +966,7 @@ export default async function LandingPageRoute({
                 />
                 <Button asChild size="lg" variant="outline" className="w-full border-white/20 bg-white/8 text-white hover:bg-white/18 hover:text-white">
                   <Link href={`/universities?country=${country.slug}&course=${course.slug}`}>
-                    See all universities
+                    See all colleges
                   </Link>
                 </Button>
               </div>

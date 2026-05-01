@@ -8,26 +8,27 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/llms-full.txt"],
       },
       {
         userAgent: ["Googlebot", "Bingbot", "GoogleOther", "Applebot"],
         allow: "/",
       },
       {
-        userAgent: ["GPTBot", "OAI-SearchBot", "ChatGPT-User"],
-        allow: "/",
+        userAgent: ["GPTBot", "OAI-SearchBot"],
+        disallow: ["/"],
       },
       {
-        userAgent: ["Claude-SearchBot", "Claude-User"],
-        allow: "/",
+        userAgent: ["Claude-SearchBot"],
+        disallow: ["/"],
       },
       {
         userAgent: ["PerplexityBot"],
-        allow: "/",
+        disallow: ["/"],
       },
       {
         userAgent: ["Google-Extended"],
-        allow: "/",
+        disallow: ["/"],
       },
     ],
     sitemap: absoluteUrl("/sitemap.xml"),

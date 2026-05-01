@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 import { unstable_cache } from "next/cache";
 import { CalendarDays, Clock, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import readingTime from "reading-time";
-import { cache } from "react";
 
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
@@ -34,16 +33,20 @@ type RelatedPost = {
   readingTimeMinutes: number | null;
 };
 
-const getPost = cache(async (slug: string) => {
-  const db = getDb();
-  if (!db) return null;
-  const [post] = await db
-    .select()
-    .from(blogPosts)
-    .where(eq(blogPosts.slug, slug))
-    .limit(1);
-  return post ?? null;
-});
+const getPost = unstable_cache(
+  async (slug: string) => {
+    const db = getDb();
+    if (!db) return null;
+    const [post] = await db
+      .select()
+      .from(blogPosts)
+      .where(eq(blogPosts.slug, slug))
+      .limit(1);
+    return post ?? null;
+  },
+  ["blog-post-by-slug"],
+  { tags: ["blog"], revalidate: 3600 }
+);
 
 const getRelatedPosts = unstable_cache(
   async (slug: string, category: string | null): Promise<RelatedPost[]> => {
@@ -280,20 +283,20 @@ export default async function BlogPostPage({
         <div className="mb-10 overflow-hidden rounded-2xl bg-surface-dark">
           <div className="px-7 py-8 md:px-10 md:py-10">
             <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">
-              We get you admitted
+              Admission support
             </p>
             <h3 className="font-display text-2xl font-bold text-white md:text-3xl">
-              Ready to secure your MBBS seat?
+              Want help choosing the right MBBS option?
             </h3>
             <p className="mt-2 text-[13px] leading-relaxed text-white/60">
-              Book a free call — our counsellors will tell you exactly which university fits your NEET score and budget.
+              Request a counselling call and our team will help you understand which colleges may fit your NEET score and budget.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
                 href="/universities"
                 className="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-surface-dark hover:bg-white/90 transition-colors"
               >
-                Browse universities
+                Browse colleges
                 <ArrowRight className="size-4" />
               </Link>
               <Link

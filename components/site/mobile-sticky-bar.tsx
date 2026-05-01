@@ -44,7 +44,7 @@ export function MobileStickyBar() {
           triggerContent={
             <span className="flex items-center justify-center gap-2 text-white!">
               <Headphones className="size-4 shrink-0" strokeWidth={1.75} />
-              Book my free call
+              Request counselling
             </span>
           }
           triggerClassName="flex-1 rounded-xl bg-accent py-2.5 text-sm! font-semibold! text-white! shadow-sm shadow-accent/30 transition-all active:scale-[0.97]"

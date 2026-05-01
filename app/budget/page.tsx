@@ -113,7 +113,7 @@ export default async function BudgetIndexPage() {
             <div className="mt-7">
               <Button asChild size="lg" variant="accent">
                 <Link href="/universities">
-                  Browse universities
+                  Browse colleges
                   <ArrowRight className="size-4" />
                 </Link>
               </Button>

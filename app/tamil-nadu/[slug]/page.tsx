@@ -236,7 +236,7 @@ export default async function TamilNaduCityPageRoute({
                 <h3 className="font-semibold text-heading">Country & University Selection</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   Compare Russia, Georgia, Vietnam, Kyrgyzstan based on budget, climate, language, and career outcomes.
-                  Shortlist universities matching your NEET score and preferences.
+                  Selection universities matching your NEET score and preferences.
                 </p>
               </div>
             </div>
@@ -362,15 +362,15 @@ export default async function TamilNaduCityPageRoute({
             Ready to Plan Your MBBS Abroad from {page.city}?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-            Get expert guidance on country selection, university shortlisting, cost planning, and NMC recognition.
-            Book your free counselling session now.
+            Get guidance on country selection, college options, cost planning, and NMC recognition.
+            Students and parents can both join the counselling call.
           </p>
           <div className="mt-8">
             <CounsellingDialog
               triggerContent={
                 <>
                   <Phone className="size-5" />
-                  Book Free Counselling Now
+                  Request Free Counselling
                 </>
               }
               triggerVariant="accent"

@@ -147,7 +147,7 @@ export function LpCountries() {
             className="mt-3 inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-bold text-white transition hover:opacity-90"
             style={{ background: "#0f3d37" } as React.CSSProperties}
           >
-            Talk to our team. Book a free call.
+            Talk to our team. Request counselling.
             <ArrowRight className="size-4" />
           </LpDialogTrigger>
         </div>

@@ -223,27 +223,27 @@ async function uploadCover(post, localPath) {
 
 const bangladeshCta = `---
 
-## How Students Traffic Can Support Your Bangladesh Shortlist
+## How Students Traffic Can Support Your Bangladesh Selection
 
 Bangladesh works best when the family goes beyond the headline that it is "close to India" and checks the college-level details carefully. Students Traffic helps families compare tuition structure, hostel reality, documentation quality, city lifestyle, English support, and India-return readiness before any booking amount is paid.
 
-If you want a cleaner Bangladesh shortlist, use [Students Traffic counselling support](/contact) and [peer connect](/students) to speak with current students and compare real budgets before locking a college.`;
+If you want a cleaner Bangladesh selection, use [Students Traffic counselling support](/contact) and [peer connect](/students) to speak with current students and compare real budgets before locking a college.`;
 
 const nmcCta = `---
 
 ## How Students Traffic Can Help You Apply the NMC Rules Correctly
 
-Most mistakes do not happen because families never heard of NMC rules. They happen because someone gives them a half-true explanation and pushes them to move fast anyway. Students Traffic helps families translate regulations into a practical shortlist: course duration, internship structure, language pathway, registration risk, and document checks before admission money is sent abroad.
+Most mistakes do not happen because families never heard of NMC rules. They happen because someone gives them a half-true explanation and pushes them to move fast anyway. Students Traffic helps families translate regulations into a practical selection: course duration, internship structure, language pathway, registration risk, and document checks before admission money is sent abroad.
 
-If you want your shortlist stress-tested against NMC and India-return reality, use [Students Traffic counselling support](/contact) and [peer connect](/students) before you decide on any university.`;
+If you want your selection stress-tested against NMC and India-return reality, use [Students Traffic counselling support](/contact) and [peer connect](/students) before you decide on any university.`;
 
 const budgetCta = `---
 
-## How Students Traffic Can Help You Build a Budget-First Shortlist
+## How Students Traffic Can Help You Build a Budget-First Selection
 
 Budget-based decision-making is where Students Traffic can add the most value. Instead of starting with a random country name, we help families compare total cost, academic match, language fit, risk level, hostel reality, and India-return practicality across multiple destinations in one place.
 
-If you want a shortlist that matches your actual budget instead of a sales pitch, use [Students Traffic counselling support](/contact) and [peer connect](/students) to compare real options before paying an admission amount.`;
+If you want a selection that matches your actual budget instead of a sales pitch, use [Students Traffic counselling support](/contact) and [peer connect](/students) to compare real options before paying an admission amount.`;
 
 const posts = [
   {
@@ -412,7 +412,7 @@ This shift from country-level thinking to institution-level thinking can save fa
 
 ## How to evaluate colleges in Bangladesh
 
-When shortlisting Bangladesh colleges, families should not begin with glossy brochures. They should begin with due diligence.
+When selection Bangladesh colleges, families should not begin with glossy brochures. They should begin with due diligence.
 
 Here are the questions that matter more than marketing.
 
@@ -574,7 +574,7 @@ Families often become reactive because they do not plan the timeline in advance.
 
 This is where the student confirms that MBBS abroad is genuinely required and the family defines the budget honestly. At this stage the family should not commit to a country emotionally. It should compare Bangladesh with realistic alternatives.
 
-### Stage 2: shortlist stage
+### Stage 2: selection stage
 
 This is where the family moves from "Bangladesh sounds good" to "these are the exact institutions we are willing to evaluate." At this stage, fee structure, city fit, hostel reality, and university credibility all matter.
 
@@ -1027,7 +1027,7 @@ For example, when comparing two countries, parents should ask:
 - which specific universities look more transparent about academic structure?
 - where are we being asked to trust verbal promises the most?
 
-This approach often changes the shortlist. A country that looked exciting in the first call may start looking fragile once the regulatory lens is applied. That is good. The filter is working.
+This approach often changes the selection. A country that looked exciting in the first call may start looking fragile once the regulatory lens is applied. That is good. The filter is working.
 
 ## What a healthy decision sounds like
 
@@ -1127,19 +1127,19 @@ Related: [MBBS Abroad](/mbbs-abroad) | [Contact Students Traffic](/contact) | [T
     title:
       "Best MBBS Abroad Countries Under 30 Lakhs in 2026: Practical Comparison Guide for Indian Students",
     excerpt:
-      "A budget-first MBBS abroad comparison for Indian students in 2026 covering what under-30-lakh planning really means, which countries deserve consideration, what trade-offs families should expect, and how to shortlist without falling for cheap-package marketing.",
+      "A budget-first MBBS abroad comparison for Indian students in 2026 covering what under-30-lakh planning really means, which countries deserve consideration, what trade-offs families should expect, and how to selection without falling for cheap-package marketing.",
     category: "Comparison Guide",
     metaTitle:
       "Best MBBS Abroad Countries Under 30 Lakhs 2026 | Guide for Indian Students",
     metaDescription:
-      "Compare the best MBBS abroad countries under 30 lakhs in 2026 for Indian students with a practical guide to total budget, trade-offs, and shortlist strategy.",
+      "Compare the best MBBS abroad countries under 30 lakhs in 2026 for Indian students with a practical guide to total budget, trade-offs, and selection strategy.",
     publicId:
       "studentstraffic/blog/best-mbbs-abroad-countries-under-30-lakhs-2026-indian-students",
     filename: "best-mbbs-abroad-countries-under-30-lakhs-2026-cover.jpg",
     styleReferenceUrl,
     kicker: "Budget Comparison Guide",
     titleLines: ["Best MBBS Abroad Countries", "Under 30 Lakhs in 2026"],
-    chips: ["Budget", "Comparison", "Shortlist"],
+    chips: ["Budget", "Comparison", "Selection"],
     accent: "#2E6A4B",
     badge: "Under 30L",
     coverPrompt: `Create a premium 16:9 website blog cover for an education consultancy article.
@@ -1148,7 +1148,7 @@ Use the attached reference image only for editorial tone, spacing, and clean com
 Required exact visible text:
 Best MBBS Abroad Countries Under 30 Lakhs in 2026
 Indian Students Comparison Guide
-Budget • Trade-offs • Shortlist
+Budget • Trade-offs • Selection
 
 Visual direction:
 - warm ivory background
@@ -1388,9 +1388,9 @@ Some lower-budget pathways become stressful not because the tuition was wrong, b
 
 A poor fit wastes not only money, but also time, confidence, and career momentum.
 
-## How families should shortlist under-30-lakh options in 2026
+## How families should selection under-30-lakh options in 2026
 
-A smart shortlist should include no more than a few serious candidates at first.
+A smart selection should include no more than a few serious candidates at first.
 
 Use this process.
 
@@ -1450,7 +1450,7 @@ This family may begin by searching under 30 lakhs, but after comparison they rea
 
 These profiles show why no budget article should be read as a universal ranking.
 
-## A budgeting worksheet families should complete before shortlisting
+## A budgeting worksheet families should complete before selection
 
 Create a simple worksheet and compare every country using the same headings:
 
@@ -1483,7 +1483,7 @@ Real counselling starts with:
 - budget truth
 - family risk tolerance
 - regulation awareness
-- shortlisting by fit
+- selection by fit
 
 That difference matters because the under-30-lakh search segment is full of emotionally vulnerable families. They are often worried, hopeful, and afraid of missing the MBBS dream. Good counselling protects them from being sold urgency when what they really need is structure.
 
@@ -1509,7 +1509,7 @@ Yes, but it depends heavily on the exact university and the student's discipline
 
 Yes. If the counselling process barely discusses language, hostel life, clinical learning, or India-return planning, the family is not seeing the full picture.
 
-## What families should do after creating the first shortlist
+## What families should do after creating the first selection
 
 Once the family has identified a few countries in budget, the work is only half done.
 
@@ -1535,7 +1535,7 @@ Some families can handle uncertainty better than others. That matters. A country
 
 Do you prefer lower cost with simpler living conditions? Slightly higher cost with better comfort? Lower travel friction? Better city environment? Clarity here makes the final choice easier.
 
-## Final shortlist rule: never let the cheapest option win by default
+## Final selection rule: never let the cheapest option win by default
 
 The cheapest option should win only if it also survives the fit test.
 

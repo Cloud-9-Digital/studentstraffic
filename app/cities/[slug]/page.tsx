@@ -309,7 +309,7 @@ export default async function CityPage({
               <CounsellingDialog
                 triggerContent={
                   <>
-                    Book my free call
+                    Request counselling
                     <ArrowRight className="size-4" />
                   </>
                 }
@@ -318,7 +318,7 @@ export default async function CityPage({
                 countrySlug={country.slug}
                 ctaVariant="city_hero"
                 title={`Study MBBS in ${cityName}`}
-                description={`Leave your number — we'll call you and tell you exactly which university in ${cityName} fits your NEET score and budget.`}
+                description={`Leave your number and we will call you with college options in ${cityName} that fit your NEET score, budget, and priorities.`}
               />
               <Button
                 asChild
@@ -680,14 +680,14 @@ export default async function CityPage({
                   Know which {cityName} university fits your NEET score.
                 </h2>
                 <p className="mt-2 max-w-lg text-sm leading-7 text-white/65">
-                  Our counsellors have placed Indian students in universities across {country.name} this cycle. Book a free call — we call you with a direct recommendation.
+                  Our counsellors have supported Indian students across {country.name} this cycle. Request counselling and we will help you compare the right college options.
                 </p>
               </div>
               <div className="shrink-0">
                 <CounsellingDialog
                   triggerContent={
                     <>
-                      Book my free call
+                      Request counselling
                       <ArrowRight className="size-4" />
                     </>
                   }
@@ -697,7 +697,7 @@ export default async function CityPage({
                   countrySlug={country.slug}
                   ctaVariant="city_mid"
                   title={`Apply — ${cityName}`}
-                  description={`Leave your number and we'll call you. Our experts know every university in ${cityName} and will match you to the right one based on your NEET score and budget.`}
+                  description={`Leave your number and we'll call you. Our experts know the colleges in ${cityName} and will help you compare the right options based on your NEET score and budget.`}
                 />
               </div>
             </div>
@@ -787,12 +787,12 @@ export default async function CityPage({
             Application, documents, and visa — all done for you.
           </h2>
           <p className="mx-auto mt-3 mb-7 max-w-lg text-sm leading-7 text-muted-foreground">
-            Our counsellors work with Indian students every admission cycle and know exactly which university in {cityName} fits your NEET score, budget, and NExT pathway. Book a free call and get a direct answer today.
+            Our counsellors work with Indian students every admission cycle and can help you compare the colleges in {cityName} based on NEET score, budget, and NExT pathway. Request a counselling call and get practical guidance today.
           </p>
           <CounsellingDialog
             triggerContent={
               <>
-                Book my free call
+                Request counselling
                 <ArrowRight className="size-4" />
               </>
             }

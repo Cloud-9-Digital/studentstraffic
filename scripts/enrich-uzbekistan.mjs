@@ -25,7 +25,7 @@ const uzbekistanContent = {
 Before fees, flights, or city comparisons, families should verify whether the exact university and branch can satisfy FMGL 2021 on study duration, English-medium teaching, clinical training, and internship in the same institution.
 
 ### 2. Low fees are not enough
-Uzbekistan may still appear in lower-budget shortlists, but NMC's warning means cost should come after compliance, not before it. Cheap admission is not a useful outcome if the degree later fails the India-return test.
+Uzbekistan may still appear in lower-budget selections, but NMC's warning means cost should come after compliance, not before it. Cheap admission is not a useful outcome if the degree later fails the India-return test.
 
 ### 3. University-by-university verification is mandatory
 The country cannot be treated as uniformly compliant. Students should use direct university documents, NMC alerts, and the Indian Embassy in Tashkent together rather than relying on agents or brochure claims.

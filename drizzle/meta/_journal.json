@@ -134,6 +134,20 @@
       "when": 1776700800000,
       "tag": "0023_additional_registration_fields",
       "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1775126400000,
+      "tag": "0024_wati_message_tracking",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1777740000000,
+      "tag": "0025_lead_lookup_indexes",
+      "breakpoints": true
     }
   ]
 }
