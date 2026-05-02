@@ -1,15 +1,21 @@
 "use client";
 
 import { Calendar } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 import { EVENTS } from "../_data";
 
-export function SeminarCitiesTicker() {
+export function SeminarCitiesTicker({ className }: { className?: string }) {
   // Duplicate events array multiple times for seamless infinite scroll
   const tickerEvents = [...EVENTS, ...EVENTS];
 
   return (
-    <div className="overflow-hidden bg-gradient-to-r from-[#0c1a35] via-[#0f2440] to-[#0c1a35] py-4">
+    <div
+      className={cn(
+        "overflow-hidden bg-gradient-to-r from-[#0c1a35] via-[#0f2440] to-[#0c1a35] py-4",
+        className,
+      )}
+    >
       {/* Scrolling content */}
       <div className="flex animate-scroll gap-3" style={{ width: 'max-content' }}>
         {tickerEvents.map((event, idx) => {

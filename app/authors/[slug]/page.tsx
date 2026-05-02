@@ -98,7 +98,7 @@ export default async function AuthorPage({
                   </Link>
                 </Button>
                 <Button asChild variant="outline">
-                  <Link href="/editorial-policy">How We Check Information</Link>
+                  <Link href="/editorial-policy">Editorial Policy</Link>
                 </Button>
               </div>
             </div>

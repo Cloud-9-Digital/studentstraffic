@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
+import { SeminarCitiesTicker } from "./seminar-cities-ticker";
 import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
 import { SeminarLeadForm } from "./seminar-lead-form";
 
@@ -25,55 +27,58 @@ export function SeminarHero() {
         style={{ background: "#c17f3b" }}
       />
 
-      <div className="relative mx-auto max-w-5xl px-4 pb-16 pt-14 md:pt-20">
-        <div className="grid gap-12 lg:grid-cols-[1fr_370px] lg:items-center lg:gap-16">
+      <div className="relative mx-auto max-w-6xl px-5 pb-10 pt-6 sm:px-6 md:pb-16 md:pt-20">
+        {/* Mobile hero image */}
+        <div className="relative -mx-5 mb-6 h-[200px] overflow-hidden sm:-mx-6 sm:mb-8 sm:h-[240px] lg:hidden">
+          <Image
+            src="/images/seminar-2026/students-traffic-panel.png"
+            alt="Students Traffic seminar speakers and FMGE-cleared doctors"
+            fill
+            priority
+            sizes="100vw"
+            className="object-contain object-bottom drop-shadow-[0_24px_40px_rgba(0,0,0,0.28)]"
+            style={{
+              WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 78%, transparent 100%)",
+              maskImage: "linear-gradient(to bottom, black 0%, black 78%, transparent 100%)",
+            }}
+          />
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(440px,0.92fr)] lg:items-center lg:gap-16">
           {/* Left: copy */}
-          <div>
-            <h1 className="text-[2.6rem] font-bold leading-[1.08] text-white sm:text-5xl md:text-[3.25rem]">
-              Talk to{" "}
-              <em className="not-italic text-[#d4954a]">doctors who cleared FMGE</em>,{" "}
-              not sales agents
+          <div className="min-w-0">
+            <h1 className="break-words text-3xl font-bold leading-tight text-white sm:text-5xl sm:leading-[1.08] md:text-[3.25rem]">
+              Tamil Nadu&apos;s Biggest{" "}
+              <em className="not-italic text-[#d4954a]">MBBS Abroad Seminar</em>{" "}
+              by FMGE Doctors
             </h1>
 
-            <p className="mt-5 text-[15px] leading-7 text-white/55 sm:text-base">
-              A free seminar across 16 cities in Tamil Nadu for students exploring MBBS abroad. Sit with FMGE-cleared doctors who studied overseas and understand the real questions around countries, universities, fees, and long-term outcomes. No scripts. No sales pitch. Just honest answers.
+            <p className="mt-5 text-sm leading-relaxed text-white/55 sm:text-base sm:leading-7">
+              Meet FMGE-cleared doctors who studied abroad. Get honest answers about countries, universities, fees, and outcomes. Free entry across 16 cities.
             </p>
 
-            {/* Stats */}
-            <div className="mt-8 flex flex-wrap gap-8 border-t border-white/10 pt-8">
-              {[
-                { value: "14", label: "Cities" },
-                { value: "Free", label: "Entry" },
-                { value: "May – Jul", label: "2026" },
-              ].map(({ value, label }) => (
-                <div key={label}>
-                  <div className="text-2xl font-bold text-[#d4954a]">{value}</div>
-                  <div className="mt-0.5 text-xs font-medium uppercase tracking-widest text-white/35">{label}</div>
-                </div>
-              ))}
+            <div className="-mx-5 sm:-mx-6 lg:mx-0">
+              <SeminarCitiesTicker className="mt-6 bg-transparent py-3 lg:hidden" />
             </div>
 
-            {/* Mobile CTA */}
-            <SeminarDialogTrigger className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#c17f3b] px-6 py-4 text-[15px] font-semibold text-white shadow-lg transition hover:bg-[#a86d2f] active:scale-[0.98] lg:hidden">
+            {/* Desktop CTA */}
+            <SeminarDialogTrigger className="mt-8 hidden items-center gap-2 rounded-xl bg-[#c17f3b] px-8 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-[#a86d2f] active:scale-[0.98] lg:inline-flex">
               Reserve Your Free Seat
-              <ArrowRight className="size-4" />
+              <ArrowRight className="size-5" />
             </SeminarDialogTrigger>
           </div>
 
-          {/* Right: lead form — desktop only */}
-          <div className="hidden lg:block">
-            <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] shadow-2xl backdrop-blur-sm">
-              <div className="border-b border-white/10 px-6 py-4">
-                <p className="text-xl font-bold text-white">Reserve your free seat</p>
-                <p className="mt-1 text-sm text-white/40">We'll confirm your city and venue on WhatsApp.</p>
-              </div>
-              <div className="bg-white p-6">
-                <SeminarLeadForm
-                  sourcePath="/seminar-2026"
-                  ctaVariant="seminar-2026-hero"
-                  submitLabel="Reserve my seat →"
-                />
-              </div>
+          {/* Right: hero image */}
+          <div className="relative hidden lg:block">
+            <div className="relative h-[400px]">
+              <Image
+                src="/images/seminar-2026/students-traffic-panel.png"
+                alt="Students Traffic seminar speakers and FMGE-cleared doctors"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                className="object-contain object-top drop-shadow-[0_28px_46px_rgba(0,0,0,0.32)]"
+              />
             </div>
           </div>
         </div>

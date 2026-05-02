@@ -97,7 +97,7 @@ export function SiteFooter() {
                 { label: "Talk to Students", href: "/students" },
                 { label: "Reviews", href: "/reviews" },
                 { label: "Become a Student Guide", href: "/join" },
-                { label: "Admission Tools", href: "/guides" },
+                { label: "Guides", href: "/guides" },
                 { label: "Contact", href: "/contact" },
                 { label: "Search", href: "/search" },
               ].map((item) => (
@@ -142,7 +142,7 @@ export function SiteFooter() {
               {[
                 { label: "About Us", href: "/about" },
                 { label: "How We Work", href: "/methodology" },
-                { label: "How We Check Information", href: "/editorial-policy" },
+                { label: "Editorial Policy", href: "/editorial-policy" },
                 { label: "Privacy Policy", href: "/privacy" },
                 { label: "Terms of Service", href: "/terms" },
               ].map((item) => (

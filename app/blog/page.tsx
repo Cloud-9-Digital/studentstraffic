@@ -63,9 +63,9 @@ export async function generateMetadata({
 
   return {
     title: page === 1
-      ? "MBBS Abroad Advice & Updates | Students Traffic"
-      : `MBBS Abroad Advice & Updates — Page ${page} of ${totalPages} | Students Traffic`,
-    description: "Practical MBBS abroad advice, fee clarity, comparison help, and admission updates for Indian students and parents.",
+      ? "MBBS Abroad Blog | Students Traffic"
+      : `MBBS Abroad Blog — Page ${page} of ${totalPages} | Students Traffic`,
+    description: "Practical MBBS abroad guidance, fee clarity, comparison help, and admission updates for Indian students and parents.",
     alternates: {
       canonical,
       types: { "application/rss+xml": absoluteUrl("/blog/feed.xml") },
@@ -77,13 +77,13 @@ export async function generateMetadata({
       locale: "en_IN",
       siteName: "Students Traffic",
       url: canonical,
-      title: "MBBS Abroad Advice & Updates | Students Traffic",
-      description: "Practical MBBS abroad advice, fee clarity, comparison help, and admission updates for Indian students and parents.",
+      title: "MBBS Abroad Blog | Students Traffic",
+      description: "Practical MBBS abroad guidance, fee clarity, comparison help, and admission updates for Indian students and parents.",
     },
     twitter: {
       card: "summary_large_image",
-      title: "MBBS Abroad Advice & Updates | Students Traffic",
-      description: "Practical MBBS abroad advice, fee clarity, comparison help, and admission updates for Indian students and parents.",
+      title: "MBBS Abroad Blog | Students Traffic",
+      description: "Practical MBBS abroad guidance, fee clarity, comparison help, and admission updates for Indian students and parents.",
     },
   };
 }

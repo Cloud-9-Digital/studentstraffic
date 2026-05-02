@@ -2,9 +2,63 @@
 
 import { Calendar, Clock, MapPin } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import { EVENTS } from "../_data";
 import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
+
+function Countdown({ targetDate }: { targetDate: Date }) {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date().getTime();
+      const target = targetDate.getTime();
+      const difference = target - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+        });
+      }
+    };
+
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDate]);
+
+  return (
+    <div className="my-6 flex justify-center gap-3 sm:gap-4">
+      {[
+        { label: "Days", value: timeLeft.days },
+        { label: "Hours", value: timeLeft.hours },
+        { label: "Minutes", value: timeLeft.minutes },
+        { label: "Seconds", value: timeLeft.seconds },
+      ].map(({ label, value }) => (
+        <div key={label} className="flex flex-col items-center">
+          <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-[#c17f3b] shadow-lg sm:h-20 sm:w-20">
+            <span className="text-2xl font-bold text-white sm:text-3xl">
+              {value.toString().padStart(2, "0")}
+            </span>
+          </div>
+          <span className="mt-2 text-xs font-semibold uppercase tracking-wider text-[#5a6270]/60">
+            {label}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export function SeminarNextEvent() {
   // Get the next upcoming event (first in the array)
@@ -14,6 +68,9 @@ export function SeminarNextEvent() {
 
   const { date, day, city, venue, time } = nextEvent;
   const displayTime = time ?? "Timing to be confirmed";
+
+  // Parse event date and time
+  const eventDateTime = new Date(`${date} ${time ?? "10:00 AM"}`);
 
   return (
     <section className="bg-gradient-to-b from-white to-[#faf8f5] py-10 md:py-12">
@@ -26,6 +83,8 @@ export function SeminarNextEvent() {
             Join us in {city}
           </h2>
         </div>
+
+        <Countdown targetDate={eventDateTime} />
 
         <div className="mt-6 overflow-hidden rounded-xl border border-[#e8e0d5] bg-white shadow-lg">
           <div className="grid gap-0 lg:grid-cols-[280px_1fr]">

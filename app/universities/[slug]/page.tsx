@@ -98,15 +98,13 @@ async function getUniversityPageData(slug: string) {
       programs: [],
       country: null,
       wdomsEntry: null,
-      allUniversities: [],
     };
   }
 
-  const [programs, country, wdomsEntry, allUniversities] = await Promise.all([
+  const [programs, country, wdomsEntry] = await Promise.all([
     getProgramsForUniversity(university.slug),
     getCountryBySlug(university.countrySlug),
     getWdomsDirectoryEntryForUniversity(university.slug),
-    getUniversities(),
   ]);
 
   return {
@@ -114,7 +112,6 @@ async function getUniversityPageData(slug: string) {
     programs,
     country,
     wdomsEntry,
-    allUniversities,
   };
 }
 
@@ -169,7 +166,7 @@ export default async function UniversityDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const { university, programs, country, wdomsEntry, allUniversities } =
+  const { university, programs, country, wdomsEntry } =
     await getUniversityPageData(slug);
 
   if (!university) notFound();
@@ -178,11 +175,6 @@ export default async function UniversityDetailPage({
 
   const primaryProgram =
     programs.find((p) => p.offering.featured) ?? programs[0];
-  const cityProfile = getSharedCityProfile(
-    allUniversities,
-    university.countrySlug,
-    university.city,
-  );
   const countryContent = getCountryContent(country.slug);
   const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
   const universityAdvisory = getUniversityRegulatoryAdvisory(
@@ -338,22 +330,17 @@ export default async function UniversityDetailPage({
             {/* Location context — kept compact, placed near end */}
             <div className="deferred-render space-y-5 py-10">
               <SectionLabel>Location context</SectionLabel>
-              <div className="space-y-5">
-                {cityProfile ? (
-                  <UniversityCitySection
-                    cityProfile={cityProfile}
-                    city={university.city}
-                    countryName={country.name}
-                    universityName={university.name}
-                    cityMedia={cityMedia}
-                  />
-                ) : null}
-                <UniversityCountrySection
+              <Suspense fallback={<UniversityCountrySection country={country} countryContent={countryContent} countryMedia={countryMedia} />}>
+                <UniversityLocationContextSection
                   country={country}
                   countryContent={countryContent}
                   countryMedia={countryMedia}
+                  countrySlug={university.countrySlug}
+                  city={university.city}
+                  universityName={university.name}
+                  cityMedia={cityMedia}
                 />
-              </div>
+              </Suspense>
             </div>
 
             <UniversityFaqSection faq={university.faq} />
@@ -378,6 +365,82 @@ export default async function UniversityDetailPage({
   );
 }
 
+async function getSharedCityProfileForUniversity(countrySlug: string, city: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("universities");
+  cacheTag(`city-profile:${countrySlug}:${city.toLowerCase()}`);
+
+  const universities = await getUniversities();
+  return getSharedCityProfile(universities, countrySlug, city);
+}
+
+async function UniversityLocationContextSection({
+  country,
+  countryContent,
+  countryMedia,
+  countrySlug,
+  city,
+  universityName,
+  cityMedia,
+}: {
+  country: Awaited<ReturnType<typeof getCountryBySlug>>;
+  countryContent: ReturnType<typeof getCountryContent>;
+  countryMedia: ReturnType<typeof getCountryMedia>;
+  countrySlug: string;
+  city: string;
+  universityName: string;
+  cityMedia: ReturnType<typeof getCityMedia>;
+}) {
+  const cityProfile = await getSharedCityProfileForUniversity(countrySlug, city);
+
+  return (
+    <div className="space-y-5">
+      {cityProfile ? (
+        <UniversityCitySection
+          cityProfile={cityProfile}
+          city={city}
+          countryName={country!.name}
+          universityName={universityName}
+          cityMedia={cityMedia}
+        />
+      ) : null}
+      <UniversityCountrySection
+        country={country!}
+        countryContent={countryContent}
+        countryMedia={countryMedia}
+      />
+    </div>
+  );
+}
+
+async function getUniversityRelatedData(universitySlug: string, countrySlug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("comparison-guides");
+  cacheTag(`university-related:${universitySlug}`);
+  cacheTag(`country-programs:${countrySlug}`);
+
+  const [comparisonGuides, countryPrograms] = await Promise.all([
+    getComparisonGuidesForUniversity(universitySlug, 10),
+    getProgramsForCountry(countrySlug),
+  ]);
+
+  const otherCountryPrograms = Array.from(
+    new Map(
+      countryPrograms
+        .filter((program) => program.university.slug !== universitySlug)
+        .map((program) => [program.university.slug, program])
+    ).values()
+  ).slice(0, 12);
+
+  return { comparisonGuides, otherCountryPrograms };
+}
+
 async function UniversityRelatedSection({
   universitySlug,
   countrySlug,
@@ -391,18 +454,8 @@ async function UniversityRelatedSection({
   courseSlug?: string;
   courseShortName?: string;
 }) {
-  const [comparisonGuides, countryPrograms] = await Promise.all([
-    getComparisonGuidesForUniversity(universitySlug, 10),
-    getProgramsForCountry(countrySlug),
-  ]);
-
-  const otherCountryPrograms = Array.from(
-    new Map(
-      countryPrograms
-        .filter((program) => program.university.slug !== universitySlug)
-        .map((program) => [program.university.slug, program])
-    ).values()
-  );
+  const { comparisonGuides, otherCountryPrograms } =
+    await getUniversityRelatedData(universitySlug, countrySlug);
 
   if (comparisonGuides.length === 0 && otherCountryPrograms.length === 0) {
     return null;

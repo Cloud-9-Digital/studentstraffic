@@ -14,7 +14,7 @@ import { getLandingPageHref } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Abroad Admission Tools | Countries, Fees, Eligibility & Comparisons",
+  title: "MBBS Abroad Guides | Countries, Fees, Eligibility & Comparisons",
   description:
     "Use country planning, course planning, college comparisons, and budget tools to choose the right MBBS abroad path.",
   path: "/guides",
@@ -95,11 +95,11 @@ export default async function GuidesPage() {
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
-      { name: "Admission Tools", path },
+      { name: "Guides", path },
     ]),
     getCollectionPageStructuredData({
       path,
-      name: "MBBS abroad admission tools",
+      name: "MBBS abroad guides",
       description:
         "Planning hub for country, course, comparison, and budget decision pages.",
     }),
@@ -112,7 +112,7 @@ export default async function GuidesPage() {
         <div className="container-shell relative py-14 md:py-18 lg:py-20">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-              Admission Planning Tools
+              Study Abroad Guides
             </p>
             <h1 className="mt-5 font-display text-5xl font-semibold leading-[1.02] tracking-tight text-heading sm:text-6xl">
               Start with the right tool for your admission journey.

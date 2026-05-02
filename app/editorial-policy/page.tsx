@@ -17,7 +17,7 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "How We Check University Information | Students Traffic",
+  title: "Editorial Policy | Students Traffic",
   description:
     "How Students Traffic verifies university, destination, fee, and admissions information before publishing it.",
   path: "/editorial-policy",
@@ -28,11 +28,11 @@ export default function EditorialPolicyPage() {
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
-      { name: "How We Check Information", path },
+      { name: "Editorial Policy", path },
     ]),
     getWebPageStructuredData({
       path,
-      name: "How Students Traffic Checks University Information",
+      name: "Students Traffic Editorial Policy",
       description:
         "Verification principles for catalog, comparison, and destination information on Students Traffic.",
       datePublished: governancePublishedAt,
@@ -45,7 +45,7 @@ export default function EditorialPolicyPage() {
       <div className="container-shell space-y-12">
         <SectionHeading
           eyebrow="Information Check Process"
-          title="How we check information before students rely on it"
+          title="How we verify information before students rely on it"
           description="Students Traffic is designed to help students make admissions decisions with confidence, so our publishing standard is built around usefulness, traceability, and revision discipline."
         />
 

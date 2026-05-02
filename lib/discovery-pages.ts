@@ -1,3 +1,5 @@
+import { cacheLife, cacheTag } from "next/cache";
+
 import type { Course, FinderProgram } from "@/lib/data/types";
 import { getCourses, listFinderPrograms } from "@/lib/data/catalog";
 
@@ -41,7 +43,7 @@ function getPrimaryProgramsByUniversity(programs: FinderProgram[]) {
   return primaryPrograms;
 }
 
-export async function getComparisonGuides() {
+async function buildComparisonGuides() {
   const programs = await listFinderPrograms({});
   const primaryPrograms = getPrimaryProgramsByUniversity(programs);
   const seenPairs = new Set<string>();
@@ -86,13 +88,27 @@ export async function getComparisonGuides() {
   return guides.sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
+async function getCachedComparisonGuides() {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("comparison-guides");
+
+  return buildComparisonGuides();
+}
+
+export async function getComparisonGuides() {
+  return getCachedComparisonGuides();
+}
+
 export async function getComparisonGuideBySlug(slug: string) {
-  const guides = await getComparisonGuides();
+  const guides = await getCachedComparisonGuides();
   return guides.find((guide) => guide.slug === slug) ?? null;
 }
 
 export async function getComparisonGuidesForUniversity(universitySlug: string, limit = 2) {
-  const guides = await getComparisonGuides();
+  const guides = await getCachedComparisonGuides();
   return guides
     .filter(
       (guide) =>
@@ -102,7 +118,7 @@ export async function getComparisonGuidesForUniversity(universitySlug: string, l
     .slice(0, limit);
 }
 
-export async function getBudgetGuides() {
+async function buildBudgetGuides() {
   const [courses, programs] = await Promise.all([getCourses(), listFinderPrograms({})]);
   const guides: BudgetGuide[] = [];
 
@@ -140,13 +156,27 @@ export async function getBudgetGuides() {
   });
 }
 
+async function getCachedBudgetGuides() {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("budget-guides");
+
+  return buildBudgetGuides();
+}
+
+export async function getBudgetGuides() {
+  return getCachedBudgetGuides();
+}
+
 export async function getBudgetGuideBySlug(slug: string) {
-  const guides = await getBudgetGuides();
+  const guides = await getCachedBudgetGuides();
   return guides.find((guide) => guide.slug === slug) ?? null;
 }
 
 export async function getBudgetGuidesForCourse(courseSlug: string) {
-  const guides = await getBudgetGuides();
+  const guides = await getCachedBudgetGuides();
   return guides.filter((guide) => guide.course.slug === courseSlug);
 }
 

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -42,7 +42,7 @@ const quickLinks = [
     heading: "Start Here",
     items: [
       { label: "Universities", href: "/universities", flag: null },
-      { label: "Admission Tools", href: "/guides", flag: null },
+      { label: "Guides", href: "/guides", flag: null },
       { label: "Contact", href: "/contact", flag: null },
     ],
   },
@@ -72,6 +72,8 @@ export function SearchPalettePanel({
   onOpenChange: (open: boolean) => void;
 }) {
   const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
   const [loading, setLoading] = useState(false);
@@ -79,6 +81,7 @@ export function SearchPalettePanel({
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const abortRef = useRef<AbortController | null>(null);
   const requestIdRef = useRef(0);
+  const routeKeyRef = useRef("");
 
   useEffect(() => {
     if (open) {
@@ -99,6 +102,21 @@ export function SearchPalettePanel({
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  useEffect(() => {
+    const routeKey = `${pathname}?${searchParams.toString()}`;
+
+    if (!open) {
+      routeKeyRef.current = routeKey;
+      return;
+    }
+
+    if (routeKeyRef.current && routeKeyRef.current !== routeKey) {
+      onOpenChange(false);
+    }
+
+    routeKeyRef.current = routeKey;
+  }, [open, onOpenChange, pathname, searchParams]);
 
   useEffect(() => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
@@ -152,11 +170,15 @@ export function SearchPalettePanel({
     onOpenChange(false);
   }
 
+  function navigateTo(href: string) {
+    closePalette();
+    router.push(href);
+  }
+
   function handleSubmit(e?: React.FormEvent) {
     e?.preventDefault();
     if (!query.trim()) return;
-    router.push(`/search?q=${encodeURIComponent(query.trim())}`);
-    closePalette();
+    navigateTo(`/search?q=${encodeURIComponent(query.trim())}`);
   }
 
   if (!open || typeof document === "undefined") {
@@ -217,7 +239,10 @@ export function SearchPalettePanel({
                       <Link
                         key={suggestion.href}
                         href={suggestion.href}
-                        onClick={closePalette}
+                        onClick={(event) => {
+                          event.preventDefault();
+                          navigateTo(suggestion.href);
+                        }}
                         className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-muted"
                       >
                         <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-muted group-hover:bg-background">
@@ -283,7 +308,10 @@ export function SearchPalettePanel({
                       <Link
                         key={item.href}
                         href={item.href}
-                        onClick={closePalette}
+                        onClick={(event) => {
+                          event.preventDefault();
+                          navigateTo(item.href);
+                        }}
                         className="flex items-center gap-3 rounded-xl px-3 py-2 text-sm transition-colors hover:bg-muted"
                       >
                         {item.flag ? (
@@ -306,7 +334,10 @@ export function SearchPalettePanel({
               <div className="mt-3 border-t border-border pt-3">
                 <Link
                   href="/search"
-                  onClick={closePalette}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    navigateTo("/search");
+                  }}
                   className="group flex items-center gap-2 rounded-xl px-3 py-2.5 text-sm font-medium text-primary transition-colors hover:bg-primary/5"
                 >
                   <Search className="size-3.5" />

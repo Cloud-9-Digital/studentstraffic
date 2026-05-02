@@ -38,7 +38,7 @@ export default function SeminarPage() {
         {/* Hook & Urgency */}
         <SeminarHeader />
         <SeminarHero />
-        <SeminarCitiesTicker />
+        <SeminarCitiesTicker className="hidden lg:block" />
         <SeminarNextEvent />
         <SeminarEvents />
 
