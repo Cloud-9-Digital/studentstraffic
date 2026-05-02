@@ -22,9 +22,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Best MBBS Abroad Consultant in Tamil Nadu | Expert Guidance for Medical Students",
+  title: "MBBS Abroad Consultant in Tamil Nadu | Fees, Colleges, NMC Guidance",
   description:
-    "Leading MBBS abroad consultant in Tamil Nadu. Expert guidance for studying medicine in Russia, Georgia, Vietnam, Kyrgyzstan. Compare countries, costs, NMC recognition. Free counselling.",
+    "MBBS abroad counselling in Tamil Nadu for students and parents. Compare countries, colleges, fees, and NMC recognition with free guidance.",
   path: getTamilNaduHubHref(),
   keywords: [
     "best MBBS abroad consultant Tamil Nadu",

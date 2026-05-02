@@ -14,14 +14,14 @@ import { LpTrust } from "./_components/lp-trust";
 import { LpWhyAbroad } from "./_components/lp-why-abroad";
 
 export const metadata: Metadata = {
-  title: "MBBS Abroad Admission 2026 | Free Counselling for Indian Students | Students Traffic",
+  title: "MBBS Abroad Admission 2026 for Indian Students | Fees, Eligibility, NMC",
   description:
-    "Get MBBS abroad admission in Russia, Georgia, Philippines, Kyrgyzstan & more. NMC recognized universities. Free admissions counselling. 3,000+ students admitted since 2014. Call us today.",
+    "Get MBBS abroad admission for Indian students in Russia, Georgia, Kyrgyzstan, Vietnam and more. Check fees, eligibility, and NMC recognition with free counselling.",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "MBBS Abroad 2026 | Admissions for Indian Students",
+    title: "MBBS Abroad Admission 2026 for Indian Students",
     description:
-      "Compare MBBS abroad fees, NMC recognition, and eligibility across 10 countries. Free admissions counselling from India's most trusted platform.",
+      "Compare MBBS abroad fees, NMC recognition, and eligibility across top countries for Indian students.",
     type: "website",
   },
   keywords: [

@@ -14,9 +14,9 @@ import { getLandingPageHref } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Abroad Guides | Countries, Fees, Eligibility & Comparisons",
+  title: "MBBS Abroad Guides for Indian Students | Fees, Eligibility, Countries",
   description:
-    "Use country planning, course planning, college comparisons, and budget tools to choose the right MBBS abroad path.",
+    "Read MBBS abroad guides on fees, eligibility, countries, NMC recognition, and college comparison for Indian students and parents.",
   path: "/guides",
 });
 

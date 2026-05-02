@@ -16,9 +16,9 @@ import { getCountryFlagCode } from "@/lib/university-media";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Country Guides for Indian Students | Fees & NMC Recognition",
+  title: "MBBS Abroad Countries for Indian Students | Fees, NMC Recognition",
   description:
-    "Compare live study-abroad country guides for Indian students, covering destination fit, fee direction, recognition context, and admission planning before choosing universities.",
+    "Compare MBBS abroad countries for Indian students with fees, NMC recognition, climate, safety, and admission information before choosing a college.",
   path: "/countries",
 });
 

@@ -90,9 +90,29 @@ export async function generateMetadata({
   if (!page) return { title: "Page Not Found" };
   const keywords = [
     page.title,
-    `${page.courseSlug} in ${page.countrySlug}`,
+    context.country && context.course
+      ? `${context.course.shortName} in ${context.country.name}`
+      : `${page.courseSlug} in ${page.countrySlug}`,
     context.country ? `study in ${context.country.name}` : undefined,
     context.course ? `${context.course.shortName} abroad` : undefined,
+    context.country && context.course
+      ? `${context.course.shortName} in ${context.country.name} for Indian students`
+      : undefined,
+    context.country && context.course
+      ? `${context.course.shortName} fees in ${context.country.name}`
+      : undefined,
+    context.country && context.course
+      ? `${context.course.shortName} eligibility in ${context.country.name}`
+      : undefined,
+    context.country && context.course
+      ? `top colleges for ${context.course.shortName} in ${context.country.name}`
+      : undefined,
+    context.country && context.course
+      ? `${context.course.shortName} admission in ${context.country.name}`
+      : undefined,
+    context.country && context.course
+      ? `NMC recognition ${context.course.shortName} in ${context.country.name}`
+      : undefined,
     ...page.heroHighlights,
   ].filter(Boolean) as string[];
 
@@ -123,6 +143,42 @@ export default async function LandingPageRoute({
   const previewPrograms = context.featuredPrograms;
   const feeStructures = getFeeStructuresForSlugs(page.featuredUniversitySlugs);
   const heroQuickFacts = page.atAGlance?.slice(0, 4) ?? [];
+  const pageSearchTopics = [
+    previewPrograms.length
+      ? { href: "#universities", label: `Top colleges in ${country.name}` }
+      : null,
+    heroQuickFacts.length || feeStructures.length
+      ? { href: heroQuickFacts.length ? "#quick-facts" : "#fees", label: `${page.title} fees` }
+      : null,
+    page.eligibility ? { href: "#eligibility", label: "Eligibility" } : null,
+    page.admissionSteps?.length ? { href: "#admission", label: "Admission process" } : null,
+    page.hostelInfo || page.livingCostBreakdown?.length
+      ? { href: page.hostelInfo ? "#hostel" : "#living-cost", label: "Hostel & living cost" }
+      : null,
+    page.faq.length ? { href: "#faq", label: "FAQ" } : null,
+  ].filter(Boolean) as { href: string; label: string }[];
+  const relatedSearchLinks = [
+    {
+      href: getCountryHref(country.slug),
+      title: `Study in ${country.name}`,
+      description: `Country guide, visa basics, student life, safety, and practical planning for Indian students.`,
+    },
+    {
+      href: `/universities?country=${country.slug}&course=${course.slug}`,
+      title: `${course.shortName} colleges in ${country.name}`,
+      description: `See the full college list, fees, city filters, and college details before you apply.`,
+    },
+    {
+      href: "/budget",
+      title: `${course.shortName} fees and budget planning`,
+      description: "Compare fee bands, total budget, and affordability before choosing colleges.",
+    },
+    {
+      href: "/compare",
+      title: `Compare ${course.shortName} options`,
+      description: `Compare countries and colleges before choosing the right ${course.shortName} pathway.`,
+    },
+  ];
   const countryCode = navDestinations.find(
     (d) => d.href === `/countries/${country.slug}`
   )?.countryCode;
@@ -260,6 +316,17 @@ export default async function LandingPageRoute({
                 {page.summary}
               </p>
 
+              <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-white/55">
+                <span>
+                  Updated{" "}
+                  <span className="font-medium text-white/72">
+                    {formatContentDate(catalogReviewedAt)}
+                  </span>
+                </span>
+                <span className="hidden text-white/25 sm:inline">•</span>
+                <span>Made for Indian students and parents</span>
+              </div>
+
               <div className="mt-9 flex flex-wrap gap-3">
                 <CounsellingDialog
                   triggerContent={<>Get admission guidance <ArrowRight className="size-4" /></>}
@@ -305,6 +372,25 @@ export default async function LandingPageRoute({
                   </TrackedContactLink>
                 </Button>
               </div>
+
+              {pageSearchTopics.length ? (
+                <div className="mt-8 max-w-2xl">
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white/50">
+                    Most searched on this page
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2.5">
+                    {pageSearchTopics.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="rounded-full border border-white/12 bg-white/7 px-4 py-2 text-sm text-white/82 transition-colors hover:border-white/25 hover:bg-white/12 hover:text-white"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
             </div>
 
             {/* ── Right: standard lead form ── */}
@@ -323,7 +409,7 @@ export default async function LandingPageRoute({
       </section>
 
       {heroQuickFacts.length ? (
-        <section className="border-b border-border bg-[#f7f4ed] py-10 md:py-12">
+        <section id="quick-facts" className="border-b border-border bg-[#f7f4ed] py-10 md:py-12">
           <div className="container-shell">
               <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                 <div>
@@ -367,15 +453,15 @@ export default async function LandingPageRoute({
       ) : null}
 
       {/* ── Universities ─────────────────────────────────────────────────── */}
-      <section id="universities" className="deferred-render border-b border-border py-14 md:py-20">
+        <section id="universities" className="deferred-render border-b border-border py-14 md:py-20">
         <div className="container-shell">
           <div className="mb-10">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Top universities for {page.title}
+              Top colleges for {page.title}
             </h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
-              These listings can help you move from information gathering into
-              actual university comparison.
+              Compare college options, fee levels, and city choices before you
+              decide where to apply.
             </p>
           </div>
 
@@ -398,10 +484,12 @@ export default async function LandingPageRoute({
         <section id="fees" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Fee structures — 2026
+              {page.title} fees in 2026
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground">
-              Verified fee breakdowns for universities that have shared their 2026 structure. Amounts in USD unless stated. One-time charges are shared across all universities.
+              Verified fee breakdowns for colleges that have shared their 2026
+              structure. Amounts are in USD unless stated otherwise, so families
+              can compare tuition, hostel, and one-time charges clearly.
             </p>
 
             <div className="mt-10 space-y-6">
@@ -503,7 +591,7 @@ export default async function LandingPageRoute({
       <section className="deferred-render border-b border-border py-14 md:py-20">
         <div className="container-shell">
           <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-            Why students choose {page.title}
+            Why Indian students choose {page.title}
           </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {page.reasonsToChoose.map((reason, i) => (
@@ -649,10 +737,10 @@ export default async function LandingPageRoute({
 
       {/* ── Admission Process ────────────────────────────────────────────── */}
       {page.admissionSteps?.length ? (
-        <section className="deferred-render border-b border-border py-14 md:py-20">
+        <section id="admission" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Admission process
+              {page.title} admission process
             </h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
               A step-by-step overview of how Indian students apply for {page.title}.
@@ -676,7 +764,7 @@ export default async function LandingPageRoute({
         <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Documents required
+              Documents required for {page.title}
             </h2>
             <div className="mt-8 grid gap-8 sm:grid-cols-2">
               <div>
@@ -715,7 +803,7 @@ export default async function LandingPageRoute({
         <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Syllabus overview
+              {page.title} syllabus overview
             </h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
               How the {page.title} curriculum is structured across the program.
@@ -748,10 +836,10 @@ export default async function LandingPageRoute({
       ) : null}
       {/* ── Intake Timeline ──────────────────────────────────────────────── */}
       {page.intakeTimeline?.length ? (
-        <section className="deferred-render border-b border-border bg-[#faf8f4] py-14 md:py-20">
+        <section id="timeline" className="deferred-render border-b border-border bg-[#faf8f4] py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Application & intake timeline
+              {page.title} application and intake timeline
             </h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
               A month-by-month guide on when to apply and prepare for {country.name}.
@@ -782,10 +870,10 @@ export default async function LandingPageRoute({
 
       {/* ── Itemized Living Costs ────────────────────────────────────────── */}
       {page.livingCostBreakdown?.length ? (
-        <section className="deferred-render border-b border-border py-14 md:py-20">
+        <section id="living-cost" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Monthly living costs in {country.name}
+              {page.title} living cost per month
             </h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
               An itemized breakdown of typical student expenses.
@@ -850,7 +938,7 @@ export default async function LandingPageRoute({
         <section id="hostel" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Hostel &amp; accommodation
+              {page.title} hostel and accommodation
             </h2>
             <p className="mt-6 max-w-3xl text-sm leading-7 text-muted-foreground">
               {page.hostelInfo}
@@ -864,7 +952,7 @@ export default async function LandingPageRoute({
         <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Scholarships &amp; financial support
+              Scholarships and financial support for {page.title}
             </h2>
             <p className="mt-6 max-w-3xl text-sm leading-7 text-muted-foreground">
               {page.scholarshipInfo}
@@ -878,7 +966,7 @@ export default async function LandingPageRoute({
         <section className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Career opportunities after {page.title}
+              Career after {page.title}
             </h2>
             <ul className="mt-8 space-y-3">
               {page.careerOpportunities.map((item) => (
@@ -891,6 +979,43 @@ export default async function LandingPageRoute({
           </div>
         </section>
       ) : null}
+
+      <section className="deferred-render border-b border-border bg-[#faf8f4] py-14 md:py-20">
+        <div className="container-shell">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              Students also search for
+            </p>
+            <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight text-heading sm:text-4xl">
+              Related pages to check before applying
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-muted-foreground">
+              These pages help students move from a country-level search into
+              actual college comparison, fee planning, and next-step decisions.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {relatedSearchLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group rounded-2xl border border-border bg-white px-5 py-5 transition-colors hover:border-primary/30 hover:bg-primary/[0.03]"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <h3 className="font-display text-lg font-semibold text-heading">
+                    {item.title}
+                  </h3>
+                  <ArrowRight className="mt-1 size-4 shrink-0 text-primary transition-transform group-hover:translate-x-0.5" />
+                </div>
+                <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                  {item.description}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {serviceSupportSection}
 

@@ -120,7 +120,7 @@ export function ComparisonCard({ guide }: { guide: ComparisonGuide }) {
 
         <div className="mt-auto flex items-center justify-between border-t border-border pt-3">
           <div className="flex flex-col gap-0.5">
-            <span className="text-[0.6rem] text-muted-foreground">Tuition range</span>
+            <span className="text-[0.6rem] text-muted-foreground">Fee range</span>
             <span className="text-xs font-semibold text-foreground">
               {hasComparableFees
                 ? `${formatCurrencyUsd(
@@ -128,7 +128,7 @@ export function ComparisonCard({ guide }: { guide: ComparisonGuide }) {
                   )} – ${formatCurrencyUsd(
                     Math.max(left.offering.annualTuitionUsd, right.offering.annualTuitionUsd)
                   )}`
-                : "Check official fee"}
+                : "Check fee details"}
             </span>
           </div>
           <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />

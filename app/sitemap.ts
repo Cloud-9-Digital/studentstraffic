@@ -13,7 +13,7 @@ import {
   getCatalogSnapshot,
 } from "@/lib/data/catalog";
 import { getTamilNaduCityPages } from "@/lib/data/tamil-nadu-local";
-import { getBudgetGuides, getComparisonGuides } from "@/lib/discovery-pages";
+import { getAllComparisonPages, getBudgetGuides } from "@/lib/discovery-pages";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 import {
@@ -66,11 +66,11 @@ async function getPublishedSitemapPosts() {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const tamilNaduCityPages = getTamilNaduCityPages();
-  const [snapshot, landingPages, comparisonGuides, budgetGuides, publishedPosts] =
+  const [snapshot, landingPages, comparisonPages, budgetGuides, publishedPosts] =
     await Promise.all([
       getCatalogSnapshot(),
       getAllLandingPages(),
-      getComparisonGuides(),
+      getAllComparisonPages(),
       getBudgetGuides(),
       getPublishedSitemapPosts(),
     ]);
@@ -214,6 +214,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: governanceLastModified,
     },
     {
+      url: absoluteUrl("/seminar-2026"),
+      priority: 0.82,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
       url: absoluteUrl("/editorial-policy"),
       priority: 0.7,
       changeFrequency: "monthly",
@@ -282,18 +288,48 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         page.countrySlug
       ),
     })),
-    ...comparisonGuides.map((guide) => ({
+    ...comparisonPages.map((guide) => ({
       url: absoluteUrl(getComparisonHref(guide.slug)),
       priority: 0.78,
       changeFrequency: "weekly" as const,
       lastModified: getLatestDate([
         catalogReviewedAt,
-        guide.left.course.updatedAt,
-        guide.right.course.updatedAt,
-        guide.left.university.updatedAt,
-        guide.right.university.updatedAt,
-        guide.left.offering.updatedAt,
-        guide.right.offering.updatedAt,
+        guide.kind === "university"
+          ? guide.left.course.updatedAt
+          : guide.course.updatedAt,
+        ...(guide.kind === "university"
+          ? [
+              guide.right.course.updatedAt,
+              guide.left.university.updatedAt,
+              guide.right.university.updatedAt,
+              guide.left.offering.updatedAt,
+              guide.right.offering.updatedAt,
+            ]
+          : guide.kind === "country"
+            ? [
+                guide.leftCountry.updatedAt,
+                guide.rightCountry.updatedAt,
+                ...guide.leftPrograms.flatMap((program) => [
+                  program.university.updatedAt,
+                  program.offering.updatedAt,
+                ]),
+                ...guide.rightPrograms.flatMap((program) => [
+                  program.university.updatedAt,
+                  program.offering.updatedAt,
+                ]),
+              ]
+            : [
+                guide.leftCountry.updatedAt,
+                guide.rightCountry.updatedAt,
+                ...guide.leftPrograms.flatMap((program) => [
+                  program.university.updatedAt,
+                  program.offering.updatedAt,
+                ]),
+                ...guide.rightPrograms.flatMap((program) => [
+                  program.university.updatedAt,
+                  program.offering.updatedAt,
+                ]),
+              ]),
       ]),
     })),
     ...budgetGuides.map((guide) => ({

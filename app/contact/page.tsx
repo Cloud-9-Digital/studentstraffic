@@ -19,9 +19,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Contact Students Traffic | Free MBBS Abroad Counselling",
+  title: "Contact for MBBS Abroad Counselling | Students Traffic",
   description:
-    "Get free university admissions guidance, MBBS abroad guidance, and admissions support from Students Traffic. We respond within 24 hours.",
+    "Contact Students Traffic for MBBS abroad counselling, college selection, fees guidance, and admission support for Indian students.",
   path: "/contact",
 });
 

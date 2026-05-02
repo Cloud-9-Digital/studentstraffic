@@ -8,9 +8,9 @@ import { buildIndexableMetadata } from "@/lib/metadata";
 import { getCitiesIndexHref, getCityHref, getCountryHref } from "@/lib/routes";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS by City 2026 | Compare Medical Universities in Each City",
+  title: "MBBS Abroad by City | Compare Colleges, Fees and Student Life",
   description:
-    "Browse MBBS destinations by city — Tbilisi, Bishkek, Tashkent, Hanoi, and more. Compare universities, fees, and student life within each city before deciding where to apply.",
+    "Compare MBBS abroad cities like Tbilisi, Bishkek, Tashkent, Hanoi, and more by colleges, fees, and student life before applying.",
   path: getCitiesIndexHref(),
   keywords: [
     "MBBS abroad cities",

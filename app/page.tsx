@@ -19,6 +19,7 @@ import {
   catalogReviewedAt,
   governancePublishedAt,
 } from "@/lib/content-governance";
+import { getHomeStats } from "@/lib/data/catalog";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
@@ -27,9 +28,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Abroad | Compare 500+ Universities for Indian Students",
+  title: "MBBS Abroad for Indian Students | Fees, Colleges, NMC Recognition",
   description:
-    "Compare 500+ MBBS universities across Russia, Georgia, Kazakhstan, Vietnam, and Kyrgyzstan — fees, NMC recognition, eligibility, and free admissions counselling.",
+    "Compare MBBS abroad fees, colleges, NMC recognition, eligibility, and admission guidance for Indian students across Russia, Georgia, Vietnam, Kyrgyzstan, and more.",
   path: "/",
   keywords: [
     "MBBS abroad for Indian students",
@@ -106,6 +107,7 @@ const trustPoints = [
 
 export default async function HomePage() {
   const path = "/";
+  const stats = await getHomeStats();
   const structuredDataItems = [
     getBreadcrumbStructuredData([{ name: "Home", path }]),
     getCollectionPageStructuredData({
@@ -157,9 +159,9 @@ export default async function HomePage() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
             {[
               { value: "3,000+", label: "Students enrolled" },
-              { value: "500+", label: "Universities listed" },
-              { value: "10+", label: "Countries covered" },
-              { value: "100%", label: "Free service" },
+              { value: `${stats.universitiesCount}+`, label: "Universities listed" },
+              { value: `${stats.countriesCount}+`, label: "Countries covered" },
+              { value: "100%", label: "Free counselling" },
             ].map(({ value, label }) => (
               <div key={label} className="flex items-center gap-2">
                 <span className="font-semibold text-heading">{value}</span>

@@ -26,9 +26,9 @@ export async function generateMetadata({
   const page = parseFinderPage(pageParam);
 
   const base: Metadata = {
-    title: "MBBS Abroad Universities | Fees, NMC Recognition & Eligibility",
+    title: "MBBS Abroad Colleges for Indian Students | Fees, NMC Recognition",
     description:
-      "Browse 500+ MBBS universities across Russia, Georgia, Vietnam, Kyrgyzstan, and Kazakhstan. Filter by country, fees, intake, teaching medium, and NMC recognition status.",
+      "Browse MBBS abroad colleges by country, fees, intake, teaching medium, and NMC recognition for Indian students.",
   };
 
   if (hasFinderFilters(filters) || page > 1) {
