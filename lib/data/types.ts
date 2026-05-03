@@ -398,12 +398,55 @@ export type FinderCardProgramsPage = {
   hasNextPage: boolean;
 };
 
+export type IndiaMbbsFilters = {
+  q?: string;
+  course?: string;
+  state?: string;
+  management?: string;
+  sort?: IndiaMbbsSort;
+};
+
+export type IndiaMbbsSort =
+  | "recommended"
+  | "name_asc"
+  | "seats_desc"
+  | "year_desc";
+
+export type IndiaMbbsCard = {
+  slug: string;
+  collegeName: string;
+  programName: string;
+  stateName: string;
+  cityName?: string;
+  managementType?: string;
+  universityName?: string;
+  yearOfInception?: number;
+  annualIntakeSeats?: number;
+};
+
+export type IndiaMbbsOptions = {
+  courses: string[];
+  states: string[];
+  managementTypes: string[];
+};
+
+export type IndiaMbbsPage = {
+  colleges: IndiaMbbsCard[];
+  totalItems: number;
+  totalPages: number;
+  currentPage: number;
+  pageSize: number;
+  hasPreviousPage: boolean;
+  hasNextPage: boolean;
+};
+
 export type SearchDocumentType =
   | "country"
   | "course"
   | "university"
   | "program"
-  | "landing_page";
+  | "landing_page"
+  | "india_college";
 
 export type SearchDocument = {
   documentType: SearchDocumentType;

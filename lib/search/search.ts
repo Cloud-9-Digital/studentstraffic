@@ -18,16 +18,18 @@ function getTypeRank(documentType: SearchDocumentType) {
   switch (documentType) {
     case "university":
       return 0;
-    case "program":
+    case "india_college":
       return 1;
-    case "landing_page":
+    case "program":
       return 2;
-    case "country":
+    case "landing_page":
       return 3;
-    case "course":
+    case "country":
       return 4;
-    default:
+    case "course":
       return 5;
+    default:
+      return 6;
   }
 }
 
@@ -112,6 +114,11 @@ function getSearchSignals(result: SearchResult, query: string) {
         boost += 12;
       }
       break;
+    case "india_college":
+      if (directTitleTier >= 2 || titleCoverage >= 0.75) {
+        boost += 11;
+      }
+      break;
     case "program":
       if (directTitleTier >= 2 || subtitleCoverage === 1 || titleCoverage >= 0.75) {
         boost += 10;
@@ -172,6 +179,7 @@ function rerankSearchResults(
   const hasStrongEntityTitleMatch = rankedResults.some(
     (entry) =>
       (entry.result.documentType === "university" ||
+        entry.result.documentType === "india_college" ||
         entry.result.documentType === "program") &&
       hasStrongTitleMatch(entry.signals),
   );
@@ -191,6 +199,7 @@ function rerankSearchResults(
     filteredResults = filteredResults.filter((entry) => {
       switch (entry.result.documentType) {
         case "university":
+        case "india_college":
           return (
             entry.signals.directTitleTier >= 2 ||
             entry.signals.titleCoverage >= 0.75
@@ -349,6 +358,7 @@ async function getCachedSearchDocuments(): Promise<SearchDocument[]> {
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("search");
+  cacheTag("india-colleges");
 
   const snapshot = await getCatalogSnapshot();
 
@@ -398,6 +408,7 @@ export async function searchCatalog(
         CASE WHEN featured THEN 0.5 ELSE 0 END
         + CASE document_type
             WHEN 'university' THEN 0.9
+            WHEN 'india_college' THEN 0.85
             WHEN 'program' THEN 0.6
             WHEN 'landing_page' THEN 0.1
             ELSE 0
@@ -406,11 +417,12 @@ export async function searchCatalog(
       const typeRank = sql`
         CASE document_type
           WHEN 'university' THEN 0
-          WHEN 'program' THEN 1
-          WHEN 'landing_page' THEN 2
-          WHEN 'country' THEN 3
-          WHEN 'course' THEN 4
-          ELSE 5
+          WHEN 'india_college' THEN 1
+          WHEN 'program' THEN 2
+          WHEN 'landing_page' THEN 3
+          WHEN 'country' THEN 4
+          WHEN 'course' THEN 5
+          ELSE 6
         END
       `;
 
@@ -575,11 +587,12 @@ export async function searchCatalog(
         featured DESC,
         CASE document_type
           WHEN 'university' THEN 0
-          WHEN 'program' THEN 1
-          WHEN 'landing_page' THEN 2
-          WHEN 'country' THEN 3
-          WHEN 'course' THEN 4
-          ELSE 5
+          WHEN 'india_college' THEN 1
+          WHEN 'program' THEN 2
+          WHEN 'landing_page' THEN 3
+          WHEN 'country' THEN 4
+          WHEN 'course' THEN 5
+          ELSE 6
         END,
         title ASC
       LIMIT ${limit}

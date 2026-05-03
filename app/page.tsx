@@ -28,18 +28,19 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Abroad for Indian Students | Fees, Colleges, NMC Recognition",
+  title: "MBBS Colleges in India & Abroad | Fees, NMC Recognition, Admission",
   description:
-    "Compare MBBS abroad fees, colleges, NMC recognition, eligibility, and admission guidance for Indian students across Russia, Georgia, Vietnam, Kyrgyzstan, and more.",
+    "Compare MBBS colleges in India and abroad. Check fees, NMC recognition, eligibility, and get admission guidance for Indian students. Browse medical colleges across Russia, Georgia, Vietnam, and India.",
   path: "/",
   keywords: [
+    "MBBS colleges in India",
     "MBBS abroad for Indian students",
+    "NMC recognized medical colleges",
+    "MBBS fees India and abroad",
     "study abroad universities India",
     "medical universities abroad fees",
-    "MBBS abroad NMC recognized",
-    "study abroad university finder India",
-    "MBBS Russia Georgia Vietnam Kyrgyzstan",
-    "low cost MBBS abroad",
+    "MBBS Russia Georgia Vietnam",
+    "government medical colleges India",
   ],
 });
 
@@ -52,7 +53,7 @@ const journeySteps = [
   {
     step: "02",
     title: "Compare college options",
-    body: "Filter 500+ programs by country, fees, intake, and medium to narrow down the colleges that fit you best.",
+    body: "Filter programs in India and abroad by country, state, fees, intake, and medium to find colleges that fit your budget and goals.",
   },
   {
     step: "03",
@@ -70,7 +71,7 @@ const startingPoints = [
   {
     Icon: Compass,
     title: "College Finder",
-    description: "500+ MBBS programs. Filter by country, fees, intake, and NMC recognition fit.",
+    description: "Browse MBBS programs in India and abroad. Filter by country, fees, intake, and NMC recognition.",
     href: "/universities",
     cta: "Browse colleges",
   },
@@ -129,12 +130,12 @@ export default async function HomePage() {
           </p>
 
           <h1 className="mx-auto mt-4 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            Find the right MBBS abroad college{" "}
-            <span className="italic text-accent">before you commit.</span>
+            Find the right MBBS college{" "}
+            <span className="italic text-accent">in India or abroad.</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-muted-foreground sm:text-lg">
-            Compare colleges, check total cost, talk to enrolled students, and get guided admission support.
+            Compare {stats.universitiesCount}+ MBBS colleges in India and abroad. Check fees, eligibility, and get admission guidance.
           </p>
 
           <div className="mt-8">
@@ -159,7 +160,7 @@ export default async function HomePage() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
             {[
               { value: "3,000+", label: "Students enrolled" },
-              { value: `${stats.universitiesCount}+`, label: "Universities listed" },
+              { value: `${stats.universitiesCount}+`, label: "Colleges (India + Abroad)" },
               { value: `${stats.countriesCount}+`, label: "Countries covered" },
               { value: "100%", label: "Free counselling" },
             ].map(({ value, label }) => (

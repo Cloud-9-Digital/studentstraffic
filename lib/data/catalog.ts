@@ -16,6 +16,7 @@ import type {
   FinderProgram,
   FinderProgramsPage,
   FinderSort,
+  IndiaMbbsCard,
   LandingPage,
   ProgramOffering,
   University,
@@ -25,6 +26,8 @@ import { getDb } from "@/lib/db/server";
 import {
   countries as countriesTable,
   courses as coursesTable,
+  indiaMedicalColleges,
+  indiaMedicalPrograms,
   programOfferings as programOfferingsTable,
   universities as universitiesTable,
   wdomsDirectoryEntries as wdomsDirectoryEntriesTable,
@@ -64,6 +67,7 @@ type CatalogSnapshot = {
   courses: Course[];
   universities: University[];
   programOfferings: ProgramOffering[];
+  indiaColleges: IndiaMbbsCard[];
 };
 
 const globalForCatalogWarnings = globalThis as typeof globalThis & {
@@ -169,7 +173,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       .where(eq(universitiesTable.published, true));
 
   try {
-    const [countryRows, courseRows, universityRows, programRows] =
+    const [countryRows, courseRows, universityRows, programRows, indiaCollegeRows] =
       await Promise.all([
         db.select().from(countriesTable),
         db.select().from(coursesTable),
@@ -178,6 +182,24 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
           .select()
           .from(programOfferingsTable)
           .where(eq(programOfferingsTable.published, true)),
+        db
+          .select({
+            slug: indiaMedicalColleges.slug,
+            collegeName: indiaMedicalColleges.collegeName,
+            programName: indiaMedicalPrograms.courseName,
+            stateName: indiaMedicalColleges.stateName,
+            cityName: indiaMedicalColleges.cityName,
+            managementType: indiaMedicalColleges.managementType,
+            universityName: indiaMedicalColleges.universityName,
+            yearOfInception: indiaMedicalPrograms.yearOfInception,
+            annualIntakeSeats: indiaMedicalPrograms.annualIntakeSeats,
+          })
+          .from(indiaMedicalColleges)
+          .innerJoin(
+            indiaMedicalPrograms,
+            eq(indiaMedicalPrograms.collegeId, indiaMedicalColleges.id),
+          )
+          .limit(1000),
       ]);
 
     const countries: Country[] = countryRows.map((country) => ({
@@ -300,16 +322,29 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       }];
     });
 
+    const indiaColleges: IndiaMbbsCard[] = indiaCollegeRows.map((row) => ({
+      slug: row.slug,
+      collegeName: row.collegeName,
+      programName: row.programName,
+      stateName: row.stateName,
+      cityName: row.cityName ?? undefined,
+      managementType: row.managementType ?? undefined,
+      universityName: row.universityName ?? undefined,
+      yearOfInception: row.yearOfInception ?? undefined,
+      annualIntakeSeats: row.annualIntakeSeats ?? undefined,
+    }));
+
     return {
       countries,
       courses,
       universities,
       programOfferings,
+      indiaColleges,
     };
   } catch (error) {
     if (isMissingAdmissionsContentColumn(error)) {
       try {
-        const [countryRows, courseRows, universityRows, programRows] =
+        const [countryRows, courseRows, universityRows, programRows, indiaCollegeRows] =
           await Promise.all([
             db.select().from(countriesTable),
             db.select().from(coursesTable),
@@ -318,6 +353,24 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
               .select()
               .from(programOfferingsTable)
               .where(eq(programOfferingsTable.published, true)),
+            db
+              .select({
+                slug: indiaMedicalColleges.slug,
+                collegeName: indiaMedicalColleges.collegeName,
+                programName: indiaMedicalPrograms.courseName,
+                stateName: indiaMedicalColleges.stateName,
+                cityName: indiaMedicalColleges.cityName,
+                managementType: indiaMedicalColleges.managementType,
+                universityName: indiaMedicalColleges.universityName,
+                yearOfInception: indiaMedicalPrograms.yearOfInception,
+                annualIntakeSeats: indiaMedicalPrograms.annualIntakeSeats,
+              })
+              .from(indiaMedicalColleges)
+              .innerJoin(
+                indiaMedicalPrograms,
+                eq(indiaMedicalPrograms.collegeId, indiaMedicalColleges.id),
+              )
+              .limit(1000),
           ]);
 
         const countries: Country[] = countryRows.map((country) => ({
@@ -436,11 +489,24 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
           }];
         });
 
+        const indiaColleges: IndiaMbbsCard[] = indiaCollegeRows.map((row) => ({
+          slug: row.slug,
+          collegeName: row.collegeName,
+          programName: row.programName,
+          stateName: row.stateName,
+          cityName: row.cityName ?? undefined,
+          managementType: row.managementType ?? undefined,
+          universityName: row.universityName ?? undefined,
+          yearOfInception: row.yearOfInception ?? undefined,
+          annualIntakeSeats: row.annualIntakeSeats ?? undefined,
+        }));
+
         return {
           countries,
           courses,
           universities,
           programOfferings,
+          indiaColleges,
         };
       } catch (fallbackError) {
         console.error(
@@ -463,6 +529,7 @@ export async function getCatalogSnapshot() {
   cacheTag("courses");
   cacheTag("universities");
   cacheTag("program-offerings");
+  cacheTag("india-colleges");
 
   return (
     (await readCatalogFromDatabase()) ?? {
@@ -470,6 +537,7 @@ export async function getCatalogSnapshot() {
       courses: [],
       universities: [],
       programOfferings: [],
+      indiaColleges: [],
     }
   );
 }
@@ -1242,22 +1310,22 @@ export async function getFeaturedUniversities(limit = 4) {
 }
 
 export async function getHomeStats() {
-  const [countries, universities, programs] = await Promise.all([
-    getCountries(),
-    getUniversities(),
-    getProgramOfferings(),
-  ]);
+  const snapshot = await getCatalogSnapshot();
+  const { countries, universities, programOfferings, indiaColleges } = snapshot;
 
   const cheapestAnnualTuitionUsd = Math.min(
-    ...programs
+    ...programOfferings
       .map((program) => program.annualTuitionUsd)
       .filter((fee) => hasPublishedUsdAmount(fee)),
   );
 
+  // Get unique India colleges count (some colleges may have multiple programs)
+  const uniqueIndiaColleges = new Set(indiaColleges.map((college) => college.slug));
+
   return {
     countriesCount: countries.length,
-    universitiesCount: universities.length,
-    programsCount: programs.length,
+    universitiesCount: universities.length + uniqueIndiaColleges.size,
+    programsCount: programOfferings.length,
     cheapestAnnualTuitionUsd: Number.isFinite(cheapestAnnualTuitionUsd)
       ? cheapestAnnualTuitionUsd
       : 0,

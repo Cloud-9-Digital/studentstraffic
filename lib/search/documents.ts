@@ -1,6 +1,7 @@
 import type {
   Country,
   Course,
+  IndiaMbbsCard,
   LandingPage,
   ProgramOffering,
   SearchDocument,
@@ -21,6 +22,7 @@ type SearchCatalogInput = {
   universities: University[];
   programOfferings: ProgramOffering[];
   landingPages: LandingPage[];
+  indiaColleges?: IndiaMbbsCard[];
 };
 
 function normalizeText(parts: Array<string | undefined | null | string[]>) {
@@ -38,6 +40,7 @@ export function buildSearchDocuments({
   universities,
   programOfferings,
   landingPages,
+  indiaColleges = [],
 }: SearchCatalogInput): SearchDocument[] {
   const {
     countryBySlug,
@@ -231,10 +234,39 @@ export function buildSearchDocuments({
     };
   });
 
+  const indiaCollegeDocuments: SearchDocument[] = indiaColleges.map((college) => {
+    return {
+      documentType: "india_college",
+      sourceSlug: college.slug,
+      path: `/india-mbbs-colleges?q=${encodeURIComponent(college.collegeName)}`,
+      title: college.collegeName,
+      subtitle: college.cityName
+        ? `${college.cityName}, ${college.stateName}`
+        : college.stateName,
+      summary: `${college.programName} program at ${college.collegeName}${college.universityName ? ` affiliated to ${college.universityName}` : ""}`,
+      searchText: normalizeText([
+        college.collegeName,
+        college.universityName,
+        college.cityName,
+        college.stateName,
+        college.programName,
+        college.managementType,
+      ]),
+      highlights: [
+        college.managementType ?? "Medical College",
+        college.programName,
+        ...(college.annualIntakeSeats ? [`${college.annualIntakeSeats} seats`] : []),
+      ],
+      featured: false,
+      intakeMonths: [],
+    };
+  });
+
   return [
     ...countryDocuments,
     ...courseDocuments,
     ...universityDocuments,
+    ...indiaCollegeDocuments,
     ...programDocuments,
     ...landingPageDocuments,
   ];
