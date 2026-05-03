@@ -159,6 +159,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: catalogLastModified,
     },
     {
+      url: absoluteUrl("/neet-college-predictor"),
+      priority: 0.8,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
       url: absoluteUrl(getCountriesIndexHref()),
       priority: 0.85,
       changeFrequency: "weekly",
@@ -229,6 +235,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl("/methodology"),
       priority: 0.7,
       changeFrequency: "monthly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/guides/neet-2026-paper-analysis-expected-cutoff"),
+      priority: 0.82,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/guides/neet-2026-expected-cut-off"),
+      priority: 0.78,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/guides/neet-2026-marks-vs-rank"),
+      priority: 0.78,
+      changeFrequency: "weekly",
       lastModified: governanceLastModified,
     },
     {

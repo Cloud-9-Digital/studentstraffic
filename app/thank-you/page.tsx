@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Suspense } from "react";
 
 import { ThankYouAnalytics } from "@/components/site/thank-you-analytics";
 import { buildNoIndexMetadata } from "@/lib/metadata";
@@ -20,6 +19,14 @@ export default async function ThankYouPage({
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
+  const params = await searchParams;
+  const source = Array.isArray(params.source) ? params.source[0] : params.source;
+  const interest = Array.isArray(params.interest)
+    ? params.interest[0]
+    : params.interest;
+  const isNeetPredictor = source === "/neet-college-predictor";
+  const steps = isNeetPredictor ? predictorSteps : defaultSteps;
+
   return (
     <>
       <style>{`
@@ -109,10 +116,14 @@ export default async function ThankYouPage({
             You&apos;re in good hands.
           </h1>
 
-          {/* Dynamic subtitle */}
-          <Suspense fallback={<DefaultSub />}>
-            <DynamicSub searchParams={searchParams} />
-          </Suspense>
+          <ThankYouAnalytics source={source} interest={interest} />
+          <p className="ty-sub mx-auto mt-5 max-w-md text-lg leading-relaxed text-white/55">
+            {isNeetPredictor
+              ? "Your NEET college prediction request is in. Predicted colleges will be sent to your email."
+              : interest
+                ? `Our counsellor will call you about ${interest} — usually within one business day.`
+                : "Our counsellor will call you — usually within one business day."}
+          </p>
 
           {/* Actions */}
           <div className="ty-btns mt-10 flex items-center justify-center">
@@ -191,7 +202,7 @@ export default async function ThankYouPage({
 
 /* ── Data ──────────────────────────────────────────────────────────────────── */
 
-const steps = [
+const defaultSteps = [
   {
     title: "Keep an eye on your phone",
     description:
@@ -209,35 +220,15 @@ const steps = [
   },
 ] as const;
 
-/* ── Sub-components ────────────────────────────────────────────────────────── */
-
-async function DynamicSub({
-  searchParams,
-}: {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-}) {
-  const params = await searchParams;
-  const source = Array.isArray(params.source) ? params.source[0] : params.source;
-  const interest = Array.isArray(params.interest)
-    ? params.interest[0]
-    : params.interest;
-
-  return (
-    <>
-      <ThankYouAnalytics source={source} interest={interest} />
-      <p className="ty-sub mx-auto mt-5 max-w-md text-lg leading-relaxed text-white/55">
-        {interest
-          ? `Our counsellor will call you about ${interest} — usually within one business day.`
-          : "Our counsellor will call you — usually within one business day."}
-      </p>
-    </>
-  );
-}
-
-function DefaultSub() {
-  return (
-    <p className="ty-sub mx-auto mt-5 max-w-md text-lg leading-relaxed text-white/55">
-      Our counsellor will call you — usually within one business day.
-    </p>
-  );
-}
+const predictorSteps = [
+  {
+    title: "Your request has been received",
+    description:
+      "Your NEET college predictor request has been successfully submitted.",
+  },
+  {
+    title: "Predicted colleges will be sent by email",
+    description:
+      "Your likely college options will be shared on the email address from your submission.",
+  },
+] as const;

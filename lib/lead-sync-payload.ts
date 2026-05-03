@@ -34,6 +34,7 @@ export type LeadSyncPayload = {
   documentUrl?: string;
   documentType?: string;
   userState?: string;
+  neetScore?: number;
   courseSlug?: string;
   countrySlug?: string;
   universitySlug?: string;

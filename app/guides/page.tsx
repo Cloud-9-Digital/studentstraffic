@@ -4,6 +4,7 @@ import { ArrowRight, BookOpen, Compass, GraduationCap, Wallet } from "lucide-rea
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { getLandingPages } from "@/lib/data/catalog";
+import { Button } from "@/components/ui/button";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
@@ -170,6 +171,62 @@ export default async function GuidesPage() {
 
       <section className="pb-24">
         <div className="container-shell">
+          <div className="mb-8 rounded-3xl border border-border bg-card p-6 md:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              Latest NEET Update
+            </p>
+            <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+              <div className="max-w-3xl">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
+                  NEET 2026 paper analysis, expected cutoff, and what students should do next.
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                  A practical exam-day guide for students and parents who want
+                  clearer next steps, not just noise around answer keys and
+                  cutoff guesses.
+                </p>
+              </div>
+              <Button asChild>
+                <Link href="/guides/neet-2026-paper-analysis-expected-cutoff">
+                  Read the guide
+                  <ArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+
+          <div className="mb-8 grid gap-4 md:grid-cols-2">
+            <Link
+              href="/guides/neet-2026-expected-cut-off"
+              className="rounded-3xl border border-border bg-card p-6 transition-colors hover:border-primary/20"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                NEET 2026 Guide
+              </p>
+              <h3 className="mt-3 font-display text-2xl font-semibold tracking-tight text-heading">
+                NEET 2026 Expected Cut Off
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                Understand how students should read expected cut off talk and use it properly for counselling planning.
+              </p>
+            </Link>
+
+            <Link
+              href="/guides/neet-2026-marks-vs-rank"
+              className="rounded-3xl border border-border bg-card p-6 transition-colors hover:border-primary/20"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                NEET 2026 Guide
+              </p>
+              <h3 className="mt-3 font-display text-2xl font-semibold tracking-tight text-heading">
+                NEET 2026 Marks vs Rank
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                Use marks vs rank in the right way after the exam and prepare realistic college buckets.
+              </p>
+            </Link>
+          </div>
+
           <div className="mb-8">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
               Popular Admission Paths

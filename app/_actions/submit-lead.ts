@@ -43,6 +43,20 @@ const leadSchema = z.object({
       message: "Please enter a valid email address.",
     }),
   userState: z.string().trim().min(2, "Please enter your state."),
+  neetScore: z
+    .string()
+    .trim()
+    .min(1, "Please enter your NEET score.")
+    .transform((value) => {
+      const parsed = parseInt(value, 10);
+      if (isNaN(parsed)) {
+        throw new Error("Invalid NEET score");
+      }
+      return parsed;
+    })
+    .refine((value) => value >= 0 && value <= 720, {
+      message: "Please enter a valid NEET score between 0 and 720.",
+    }),
   courseSlug: z.string().trim().optional(),
   countrySlug: z.string().trim().optional(),
   universitySlug: z.string().trim().optional(),
@@ -67,6 +81,7 @@ export async function submitLeadAction(
     phone: getFormString(formData, "phone"),
     email: getFormString(formData, "email"),
     userState: getFormString(formData, "userState"),
+    neetScore: getFormString(formData, "neetScore"),
     courseSlug: getFormString(formData, "courseSlug"),
     countrySlug: getFormString(formData, "countrySlug"),
     universitySlug: getFormString(formData, "universitySlug"),
@@ -163,6 +178,7 @@ export async function submitLeadAction(
         phone: data.phone,
         email: emptyToUndefined(data.email),
         userState: data.userState,
+        neetScore: data.neetScore,
         courseSlug: emptyToUndefined(data.courseSlug),
         countrySlug: emptyToUndefined(data.countrySlug),
         universitySlug: emptyToUndefined(data.universitySlug),
@@ -211,6 +227,7 @@ export async function submitLeadAction(
           phone: data.phone,
           email: emptyToUndefined(data.email),
           userState: data.userState,
+          neetScore: data.neetScore,
           courseSlug: emptyToUndefined(data.courseSlug),
           countrySlug: emptyToUndefined(data.countrySlug),
           universitySlug: emptyToUndefined(data.universitySlug),
@@ -244,7 +261,8 @@ export async function submitLeadAction(
     } else {
       console.warn("Lead submission skipped DB persistence because DATABASE_URL is missing.");
     }
-  } catch {
+  } catch (error) {
+    console.error("Lead submission error:", error);
     return {
       error: "We could not save your enquiry right now. Please try once more.",
     };

@@ -1,5 +1,6 @@
 "use client";
 
+import type React from "react";
 import { useActionState, useId, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -64,12 +65,15 @@ export type LeadFormProps = {
   title?: string;
   description?: string;
   submitLabel?: string;
+  emailRequired?: boolean;
+  notes?: string;
   courseSlug?: string;
   countrySlug?: string;
   universitySlug?: string;
   embedded?: boolean;
   stacked?: boolean;
   className?: string;
+  children?: React.ReactNode;
 };
 
 export function LeadForm({
@@ -78,12 +82,15 @@ export function LeadForm({
   title = "Talk to an admissions counsellor",
   description = "Leave your number and our team will call you with college options that fit your NEET score, budget, and country preference. Parents can join the call too.",
   submitLabel = "Request a free counselling call",
+  emailRequired = false,
+  notes,
   courseSlug,
   countrySlug,
   universitySlug,
   embedded = false,
   stacked = false,
   className,
+  children,
 }: LeadFormProps) {
   const [state, formAction, isPending] = useActionState(
     submitLeadAction,
@@ -139,7 +146,7 @@ export function LeadForm({
       <input type="hidden" name="pageTitle" />
       <input type="hidden" name="documentReferrer" />
       <input type="hidden" name="clientContext" defaultValue="{}" />
-      <input type="hidden" name="notes" value="" />
+      <input type="hidden" name="notes" value={notes ?? ""} />
       <input type="hidden" name="courseSlug" value={courseSlug ?? ""} />
       <input type="hidden" name="countrySlug" value={countrySlug ?? ""} />
       <input type="hidden" name="universitySlug" value={universitySlug ?? ""} />
@@ -165,13 +172,17 @@ export function LeadForm({
       <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
         <div className="space-y-2">
           <Label htmlFor={`${fieldPrefix}-email`}>
-            Email <span className="font-normal text-muted-foreground">(optional)</span>
+            Email{" "}
+            {!emailRequired ? (
+              <span className="font-normal text-muted-foreground">(optional)</span>
+            ) : null}
           </Label>
           <Input
             id={`${fieldPrefix}-email`}
             name="email"
             type="email"
             placeholder="you@email.com"
+            required={emailRequired}
           />
         </div>
         <div className="space-y-2">
@@ -193,6 +204,8 @@ export function LeadForm({
           </div>
         </div>
       </div>
+
+      {children}
 
       {state.error && (
         <p className="rounded-2xl border border-destructive/20 bg-destructive/10 px-4 py-3 text-sm text-destructive">

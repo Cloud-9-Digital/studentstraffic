@@ -94,12 +94,11 @@ export function SiteFooter() {
             <ul className="space-y-2.5">
               {[
                 { label: "Colleges", href: "/universities" },
+                { label: "NEET College Predictor", href: "/neet-college-predictor" },
                 { label: "Talk to Students", href: "/students" },
-                { label: "Reviews", href: "/reviews" },
                 { label: "Become a Student Guide", href: "/join" },
                 { label: "Guides", href: "/guides" },
                 { label: "Contact", href: "/contact" },
-                { label: "Search", href: "/search" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link

@@ -237,6 +237,7 @@ export const leads = pgTable(
     documentUrl: text("document_url"),
     documentType: text("document_type"),
     userState: text("user_state"),
+    neetScore: integer("neet_score"),
     courseSlug: text("course_slug"),
     countrySlug: text("country_slug"),
     universitySlug: text("university_slug"),
