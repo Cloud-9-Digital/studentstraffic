@@ -24,65 +24,7 @@ type SeoImageInput = {
   tags?: string[];
 };
 
-async function loadGoogleFont(
-  family: string,
-  variant: string
-): Promise<ArrayBuffer | null> {
-  try {
-    const css = await fetch(
-      `https://fonts.googleapis.com/css2?family=${family}:${variant}&display=swap`,
-      {
-        headers: {
-          "User-Agent":
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        },
-      }
-    ).then((r) => r.text());
-
-    const matches = [...css.matchAll(/url\(([^)]+\.woff2)\)/g)];
-    if (!matches.length) return null;
-    const url = matches[matches.length - 1][1];
-    return fetch(url).then((r) => r.arrayBuffer());
-  } catch {
-    return null;
-  }
-}
-
 export async function createSeoImage(input: SeoImageInput) {
-  const [jakartaBold, frauncesNormal, frauncesItalic] = await Promise.all([
-    loadGoogleFont("Plus+Jakarta+Sans", "wght@800"),
-    loadGoogleFont("Fraunces", "ital,wght@0,600"),
-    loadGoogleFont("Fraunces", "ital,wght@1,600"),
-  ]);
-
-  const fonts: {
-    name: string;
-    data: ArrayBuffer;
-    weight: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
-    style: "normal" | "italic";
-  }[] = [];
-  if (jakartaBold)
-    fonts.push({
-      name: "Plus Jakarta Sans",
-      data: jakartaBold,
-      weight: 800,
-      style: "normal",
-    });
-  if (frauncesNormal)
-    fonts.push({
-      name: "Fraunces",
-      data: frauncesNormal,
-      weight: 600,
-      style: "normal",
-    });
-  if (frauncesItalic)
-    fonts.push({
-      name: "Fraunces",
-      data: frauncesItalic,
-      weight: 600,
-      style: "italic",
-    });
-
   const tags = input.tags?.slice(0, 4) ?? [];
   const isHeroLayout = !!input.accentTitle;
 
@@ -95,7 +37,7 @@ export async function createSeoImage(input: SeoImageInput) {
           height: "100%",
           background: "#ffffff",
           color: PRIMARY,
-          fontFamily: '"Plus Jakarta Sans", system-ui, sans-serif',
+          fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
           position: "relative",
         }}
       >
@@ -189,7 +131,7 @@ export async function createSeoImage(input: SeoImageInput) {
                   fontWeight: 600,
                   lineHeight: 1.0,
                   color: HEADING,
-                  fontFamily: '"Fraunces", Georgia, serif',
+                  fontFamily: 'Georgia, "Times New Roman", serif',
                   letterSpacing: "-0.03em",
                 }}
               >
@@ -202,7 +144,7 @@ export async function createSeoImage(input: SeoImageInput) {
                   fontStyle: "italic",
                   lineHeight: 1.05,
                   color: ACCENT,
-                  fontFamily: '"Fraunces", Georgia, serif',
+                  fontFamily: 'Georgia, "Times New Roman", serif',
                   letterSpacing: "-0.03em",
                 }}
               >
@@ -237,7 +179,7 @@ export async function createSeoImage(input: SeoImageInput) {
                   fontWeight: 600,
                   lineHeight: 1.02,
                   color: HEADING,
-                  fontFamily: '"Fraunces", Georgia, serif',
+                  fontFamily: 'Georgia, "Times New Roman", serif',
                   letterSpacing: "-0.03em",
                 }}
               >
@@ -299,6 +241,6 @@ export async function createSeoImage(input: SeoImageInput) {
         </div>
       </div>
     ),
-    { ...ogImageSize, fonts }
+    { ...ogImageSize }
   );
 }

@@ -220,7 +220,7 @@ export async function submitSeminarLeadAction(
 
       insertedLeadId = insertedLead?.id;
 
-      await Promise.allSettled([
+      void Promise.allSettled([
         syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
           leadKind: "seminar_enquiry",
           websiteLeadId: insertedLeadId,

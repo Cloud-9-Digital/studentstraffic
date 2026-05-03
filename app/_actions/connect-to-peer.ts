@@ -249,7 +249,7 @@ export async function connectToPeerAction(
     return { error: "We could not save your request. Please try once more." };
   }
 
-  await syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+  void syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
     leadKind: "peer_connection",
     websiteLeadId: insertedLeadId,
     submittedAt: submittedAt.toISOString(),

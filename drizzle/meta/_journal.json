@@ -148,6 +148,41 @@
       "when": 1777740000000,
       "tag": "0025_lead_lookup_indexes",
       "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1777841570000,
+      "tag": "0026_neet_score_field",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1777841571000,
+      "tag": "0027_india_mbbs_colleges",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1777841572000,
+      "tag": "0028_india_mbbs_college_details",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1777920000000,
+      "tag": "0029_india_medical_directory",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1777930200000,
+      "tag": "0030_drop_india_mbbs_colleges",
+      "breakpoints": true
     }
   ]
 }

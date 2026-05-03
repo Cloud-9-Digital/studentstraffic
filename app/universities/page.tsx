@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Suspense } from "react";
 
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
@@ -48,6 +49,35 @@ export default function UniversitiesPage({
       <Suspense fallback={<UniversitiesExplorerFallback />}>
         <UniversitiesExplorerSection searchParams={searchParams} />
       </Suspense>
+
+      <section className="border-b border-border/70 bg-background py-8">
+        <div className="container-shell">
+          <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+              <div className="space-y-2">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                  Looking for India colleges?
+                </p>
+                <h2 className="font-display text-2xl font-semibold tracking-tight text-heading md:text-3xl">
+                  This page is for abroad universities only.
+                </h2>
+                <p className="max-w-3xl text-sm leading-7 text-muted-foreground md:text-base">
+                  If you want MBBS colleges in India, use our separate India
+                  catalogue so your India and abroad research stay cleanly
+                  separated.
+                </p>
+              </div>
+
+              <Link
+                href="/india-mbbs-colleges"
+                className="inline-flex h-12 items-center justify-center rounded-xl bg-primary px-5 text-sm font-semibold text-primary-foreground transition hover:opacity-95"
+              >
+                Browse India MBBS colleges
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="pb-10 md:pb-14">
         <div className="container-shell">

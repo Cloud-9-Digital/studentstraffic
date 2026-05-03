@@ -6,7 +6,6 @@ import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { syncLeadToCrm } from "@/lib/lead-sync";
-import { fetchLatestWatiMessages } from "@/lib/wati";
 
 type WatiWebhookPayload = {
   eventType?: string;
@@ -163,57 +162,6 @@ function getConversationId(payload: WatiWebhookPayload) {
   ]);
 }
 
-function truncateText(value: string, maxLength: number) {
-  return value.length > maxLength ? `${value.slice(0, maxLength - 3)}...` : value;
-}
-
-function getMessageRecordString(message: unknown, keys: string[]) {
-  if (!message || typeof message !== "object") {
-    return null;
-  }
-
-  for (const key of keys) {
-    const value = (message as Record<string, unknown>)[key];
-    if (typeof value === "string" && value.trim()) {
-      return value.trim();
-    }
-  }
-
-  return null;
-}
-
-function summarizeWatiMessages(messages: unknown[]) {
-  return messages
-    .slice(0, 5)
-    .map((message) => {
-      const text = getMessageRecordString(message, [
-        "text",
-        "message",
-        "body",
-        "content",
-      ]);
-      if (!text) {
-        return null;
-      }
-
-      const direction =
-        getMessageRecordString(message, ["direction", "type", "eventType"]) ?? "message";
-      const timestamp =
-        getMessageRecordString(message, [
-          "createdAt",
-          "created_at",
-          "timestamp",
-          "receivedAt",
-        ]) ?? "";
-
-      return truncateText(
-        `${timestamp ? `${timestamp} ` : ""}${direction}: ${text}`,
-        220
-      );
-    })
-    .filter(Boolean);
-}
-
 function mapWebhookToLeadUpdate(payload: WatiWebhookPayload) {
   const eventType = getEventType(payload);
   const status = payload.statusString ?? payload.status ?? "";
@@ -303,13 +251,6 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
   const conversationId = getConversationId(payload);
   const messageId = getInboundMessageId(payload);
   const eventType = getEventType(payload);
-  const latestMessages = await fetchLatestWatiMessages(normalizedPhone, {
-    pageSize: 10,
-    pageNumber: 1,
-  });
-  const recentMessageSummary = latestMessages.ok
-    ? summarizeWatiMessages(latestMessages.messages)
-    : [];
   const sourceQuery: Record<string, string | string[]> = {};
   const clientContext = {
     channel: "wati",
@@ -318,16 +259,10 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
     messageId,
     messageType: payload.type ?? getString(payload.data, "type"),
     originalPhone: phone,
-    latestMessagesFetched: latestMessages.ok,
-    latestMessagesError: latestMessages.error ?? null,
-    latestMessagesCount: latestMessages.messages.length,
   };
   const notes = [
     "Inbound WATI WhatsApp conversation.",
     messageText ? `First message: ${messageText}` : null,
-    recentMessageSummary.length
-      ? `Recent WATI messages:\n${recentMessageSummary.join("\n")}`
-      : null,
     conversationId ? `Conversation ID: ${conversationId}` : null,
     messageId ? `Message ID: ${messageId}` : null,
   ].filter(Boolean).join("\n");

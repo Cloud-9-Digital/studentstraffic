@@ -25,6 +25,7 @@ import {
   getCountryHref,
   getCoursesIndexHref,
   getCourseHref,
+  getIndiaMbbsCollegesHref,
   getLandingPageHref,
   getTamilNaduCityHref,
   getTamilNaduHubHref,
@@ -163,6 +164,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
       changeFrequency: "weekly",
       lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl(getIndiaMbbsCollegesHref()),
+      priority: 0.82,
+      changeFrequency: "weekly",
+      lastModified: catalogLastModified,
     },
     {
       url: absoluteUrl(getCountriesIndexHref()),

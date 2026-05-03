@@ -17,7 +17,8 @@ export const finderPageSize = 12;
 
 export const marketingNav = [
   { href: "/", label: "Home" },
-  { href: "/universities", label: "University Finder" },
+  { href: "/universities", label: "MBBS Abroad" },
+  { href: "/india-mbbs-colleges", label: "India MBBS Colleges" },
   { href: "/guides", label: "Guides" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

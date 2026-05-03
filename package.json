@@ -15,6 +15,8 @@
     "db:seed": "tsx scripts/seed.ts",
     "db:import:guide-drafts": "tsx scripts/import-university-guide-drafts.ts",
     "db:import:wdoms": "tsx scripts/import-wdoms-directory.ts",
+    "db:import:india-mbbs": "tsx scripts/import-india-mbbs-colleges.ts",
+    "db:import:india-medical-programs": "tsx scripts/import-india-medical-programs.ts",
     "db:studio": "drizzle-kit studio",
     "crm:backfill:seminars": "node scripts/backfill-crm-seminar-fields.mjs",
     "sheets:backfill:seminars": "tsx scripts/backfill-google-sheets-seminar-leads.ts",

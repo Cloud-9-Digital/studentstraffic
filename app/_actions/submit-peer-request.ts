@@ -285,7 +285,7 @@ export async function submitPeerRequestAction(
     };
   }
 
-  await syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+  void syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
     leadKind: "peer_request",
     websiteLeadId: insertedLeadId,
     submittedAt: submittedAt.toISOString(),

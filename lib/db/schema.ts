@@ -34,6 +34,7 @@ type LeadClientContext = Record<
   JsonValue
 >;
 type AdminAuditLogMetadata = Record<string, JsonValue>;
+type IndiaMedicalSourceRow = Record<string, string | number | boolean | null>;
 
 export type AdminUserRole = "owner" | "admin";
 
@@ -218,6 +219,66 @@ export const wdomsDirectoryEntries = pgTable(
     uniqueIndex("wdoms_directory_entries_school_id_idx").on(table.schoolId),
     index("wdoms_directory_entries_country_idx").on(table.countrySlug),
   ]
+);
+
+export const indiaMedicalColleges = pgTable(
+  "india_medical_colleges",
+  {
+    id: serial("id").primaryKey(),
+    slug: text("slug").notNull(),
+    collegeCode: text("college_code"),
+    collegeName: text("college_name").notNull(),
+    stateName: text("state_name").notNull(),
+    cityName: text("city_name"),
+    managementType: text("management_type"),
+    universityName: text("university_name"),
+    sourceAuthority: text("source_authority").notNull().default("NMC"),
+    sourceFileName: text("source_file_name"),
+    importBatch: text("import_batch"),
+    sourceUrl: text("source_url"),
+    rawRow: jsonb("raw_row")
+      .$type<IndiaMedicalSourceRow>()
+      .notNull()
+      .default({}),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("india_medical_colleges_slug_idx").on(table.slug),
+    uniqueIndex("india_medical_colleges_code_idx").on(table.collegeCode),
+    index("india_medical_colleges_state_idx").on(table.stateName),
+    index("india_medical_colleges_management_idx").on(table.managementType),
+  ],
+);
+
+export const indiaMedicalPrograms = pgTable(
+  "india_medical_programs",
+  {
+    id: serial("id").primaryKey(),
+    collegeId: integer("college_id")
+      .notNull()
+      .references(() => indiaMedicalColleges.id, { onDelete: "cascade" }),
+    slug: text("slug").notNull(),
+    courseName: text("course_name").notNull(),
+    yearOfInception: integer("year_of_inception"),
+    annualIntakeSeats: integer("annual_intake_seats"),
+    sourceAuthority: text("source_authority").notNull().default("NMC"),
+    sourceFileName: text("source_file_name"),
+    sourceRowNumber: integer("source_row_number"),
+    importBatch: text("import_batch"),
+    sourceUrl: text("source_url"),
+    rawRow: jsonb("raw_row")
+      .$type<IndiaMedicalSourceRow>()
+      .notNull()
+      .default({}),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("india_medical_programs_slug_idx").on(table.slug),
+    index("india_medical_programs_college_idx").on(table.collegeId),
+    index("india_medical_programs_course_idx").on(table.courseName),
+  ],
 );
 
 export const leads = pgTable(

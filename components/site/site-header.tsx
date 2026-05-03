@@ -50,7 +50,6 @@ function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; show
 }
 
 const navLinks = [
-  { href: "/universities", label: "Universities" },
   { href: "/students",     label: "Talk to Students" },
   { href: "/reviews",      label: "Reviews" },
   { href: "/blog",         label: "Blog" },
@@ -61,8 +60,11 @@ export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [countriesOpen, setCountriesOpen] = useState(false);
+  const [universitiesOpen, setUniversitiesOpen] = useState(false);
   const [mobileCountriesOpen, setMobileCountriesOpen] = useState(false);
+  const [mobileUniversitiesOpen, setMobileUniversitiesOpen] = useState(false);
   const countriesMenuRef = useRef<HTMLDivElement | null>(null);
+  const universitiesMenuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 6);
@@ -80,11 +82,13 @@ export function SiteHeader() {
   useEffect(() => {
     setMobileOpen(false);
     setCountriesOpen(false);
+    setUniversitiesOpen(false);
     setMobileCountriesOpen(false);
+    setMobileUniversitiesOpen(false);
   }, [pathname]);
 
   useEffect(() => {
-    if (!countriesOpen) {
+    if (!countriesOpen && !universitiesOpen) {
       return;
     }
 
@@ -92,11 +96,15 @@ export function SiteHeader() {
       if (!countriesMenuRef.current?.contains(event.target as Node)) {
         setCountriesOpen(false);
       }
+      if (!universitiesMenuRef.current?.contains(event.target as Node)) {
+        setUniversitiesOpen(false);
+      }
     };
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setCountriesOpen(false);
+        setUniversitiesOpen(false);
       }
     };
 
@@ -107,7 +115,7 @@ export function SiteHeader() {
       document.removeEventListener("mousedown", handlePointerDown);
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [countriesOpen]);
+  }, [countriesOpen, universitiesOpen]);
 
   const closeMobile = useCallback(() => setMobileOpen(false), []);
 
@@ -117,6 +125,8 @@ export function SiteHeader() {
       : pathname === href || pathname.startsWith(href + "/");
 
   const countriesActive = isActive("/countries");
+  const universitiesActive =
+    isActive("/universities") || isActive("/india-mbbs-colleges");
 
   return (
     <>
@@ -213,6 +223,81 @@ export function SiteHeader() {
                     View all countries
                     <ArrowRight className="size-4" />
                   </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative" ref={universitiesMenuRef}>
+              <button
+                type="button"
+                className={cn(
+                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                  universitiesActive || universitiesOpen
+                    ? "bg-primary/8 text-primary"
+                    : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+                )}
+                aria-expanded={universitiesOpen}
+                aria-haspopup="menu"
+                onClick={() => setUniversitiesOpen((open) => !open)}
+              >
+                Universities
+                <ChevronDown
+                  className={cn(
+                    "size-4 transition-transform",
+                    universitiesOpen ? "rotate-180" : "",
+                  )}
+                />
+              </button>
+
+              <div
+                className={cn(
+                  "absolute left-0 top-full mt-2 w-[23rem] overflow-hidden rounded-2xl border border-border bg-background p-2 shadow-xl transition-all duration-200",
+                  universitiesOpen
+                    ? "pointer-events-auto translate-y-0 opacity-100"
+                    : "pointer-events-none -translate-y-1 opacity-0",
+                )}
+              >
+                <div className="flex items-center justify-between gap-4 border-b border-border/60 px-3 py-2">
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-primary/70">
+                      Explore Colleges
+                    </p>
+                    <h3 className="mt-0.5 text-sm font-semibold text-heading">
+                      Choose a college finder
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="py-2">
+                  {[
+                    {
+                      href: "/universities",
+                      label: "Abroad Colleges",
+                      description: "Browse universities across top study-abroad destinations",
+                    },
+                    {
+                      href: "/india-mbbs-colleges",
+                      label: "India MBBS Colleges",
+                      description: "Browse government and private MBBS colleges in India",
+                    },
+                  ].map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setUniversitiesOpen(false)}
+                      className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-muted"
+                    >
+                      <div className="min-w-0 flex-1">
+                        <p className="text-sm font-medium text-foreground">
+                          {item.label}
+                        </p>
+                        <p className="text-xs leading-5 text-muted-foreground">
+                          {item.description}
+                        </p>
+                      </div>
+                      <ArrowRight className="size-3.5 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary" />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
@@ -315,6 +400,46 @@ export function SiteHeader() {
 
         <div className="flex flex-1 flex-col overflow-y-auto">
           <nav className="flex-1 space-y-0.5 p-3">
+            <div className="rounded-2xl">
+              <button
+                type="button"
+                onClick={() => setMobileUniversitiesOpen((open) => !open)}
+                className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
+                aria-expanded={mobileUniversitiesOpen}
+              >
+                <span>Universities</span>
+                <ChevronDown
+                  className={cn(
+                    "size-4 text-muted-foreground transition-transform",
+                    mobileUniversitiesOpen ? "rotate-180" : "",
+                  )}
+                />
+              </button>
+
+              <div
+                className={cn(
+                  "overflow-hidden transition-all duration-200",
+                  mobileUniversitiesOpen ? "max-h-44 opacity-100" : "max-h-0 opacity-0",
+                )}
+              >
+                <div className="space-y-1 px-2 pb-2">
+                  {[
+                    { href: "/universities", label: "Abroad Colleges" },
+                    { href: "/india-mbbs-colleges", label: "India MBBS Colleges" },
+                  ].map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={closeMobile}
+                      className="flex items-center rounded-xl px-3 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             <div className="rounded-2xl">
               <button
                 type="button"

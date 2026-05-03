@@ -20,11 +20,15 @@ function isBotUserAgent(userAgent: string) {
 }
 
 function shouldLogRequest(userAgent: string, sampleRate: number) {
-  if (isBotUserAgent(userAgent)) {
-    return true;
+  if (sampleRate <= 0) {
+    return false;
   }
 
-  return sampleRate > 0 && Math.random() < sampleRate;
+  const adjustedSampleRate = isBotUserAgent(userAgent)
+    ? Math.min(sampleRate, 0.005)
+    : sampleRate;
+
+  return Math.random() < adjustedSampleRate;
 }
 
 export function logPublicRouteRequest({

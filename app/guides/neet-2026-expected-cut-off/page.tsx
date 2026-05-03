@@ -1,0 +1,325 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, CalendarDays, Clock3 } from "lucide-react";
+
+import { JsonLd } from "@/components/shared/json-ld";
+import { ContentTrustPanel } from "@/components/site/content-trust-panel";
+import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
+import { Button } from "@/components/ui/button";
+import { absoluteUrl } from "@/lib/metadata";
+import {
+  getBreadcrumbStructuredData,
+  getStructuredDataGraph,
+  getWebPageStructuredData,
+} from "@/lib/structured-data";
+import {
+  contentAuthorName,
+  contentAuthorSlug,
+} from "@/lib/content-governance";
+
+const path = "/guides/neet-2026-expected-cut-off";
+const title = "NEET 2026 Expected Cut Off: What Students Should Understand";
+const description =
+  "NEET 2026 expected cut off guide for students and parents. Understand category-wise planning, why expected cut off is only a range, and what to do next for MBBS admission in India.";
+const publishedAt = "2026-05-04";
+const updatedAt = "2026-05-04";
+const canonicalUrl = absoluteUrl(path);
+const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
+
+export const metadata: Metadata = {
+  title: `${title} | Students Traffic`,
+  description,
+  alternates: { canonical: canonicalUrl },
+  openGraph: {
+    title,
+    description,
+    type: "article",
+    url: canonicalUrl,
+    locale: "en_IN",
+    siteName: "Students Traffic",
+    publishedTime: `${publishedAt}T00:00:00.000Z`,
+    modifiedTime: `${updatedAt}T00:00:00.000Z`,
+    authors: [contentAuthorName],
+    section: "Admissions",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+};
+
+const keyPoints = [
+  "Expected cut off is a planning tool, not a final result.",
+  "Category, quota, domicile, and seat movement matter as much as broad paper difficulty.",
+  "Students should work in score ranges and college buckets, not one imaginary exact college.",
+] as const;
+
+const faqs = [
+  {
+    question: "Can NEET 2026 expected cut off be trusted fully?",
+    answer:
+      "No. Expected cut off should be used only as an early planning range. Final counselling outcomes depend on category, quota, state rules, seat matrix, and round-wise competition.",
+  },
+  {
+    question: "Why does expected cut off discussion vary so much?",
+    answer:
+      "Different assumptions are used around paper difficulty, candidate performance spread, and category behaviour. That is why students should not rely on one number alone.",
+  },
+  {
+    question: "What should students do with expected cut off information?",
+    answer:
+      "They should use it to prepare safer, possible, and ambitious college buckets and to decide how seriously they need to evaluate private or deemed options.",
+  },
+] as const;
+
+export default function Neet2026ExpectedCutOffPage() {
+  const structuredDataItems = [
+    getBreadcrumbStructuredData([
+      { name: "Home", path: "/" },
+      { name: "Guides", path: "/guides" },
+      { name: "NEET 2026 Expected Cut Off", path },
+    ]),
+    getWebPageStructuredData({
+      path,
+      name: title,
+      description,
+      datePublished: publishedAt,
+      dateModified: updatedAt,
+    }),
+    {
+      "@type": "BlogPosting",
+      "@id": canonicalUrl,
+      url: canonicalUrl,
+      headline: title,
+      description,
+      datePublished: `${publishedAt}T00:00:00.000Z`,
+      dateModified: `${updatedAt}T00:00:00.000Z`,
+      inLanguage: "en-IN",
+      articleSection: "Admissions",
+      author: {
+        "@type": "Person",
+        name: contentAuthorName,
+        url: authorUrl,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Students Traffic",
+        url: absoluteUrl("/"),
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalUrl,
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${canonicalUrl}#faq`,
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+  ];
+
+  return (
+    <>
+      <main className="min-h-screen bg-background">
+        <section className="relative overflow-hidden bg-surface-dark">
+          <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
+          <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
+          <div className="container-shell relative py-12 md:py-16 lg:py-18">
+            <div className="space-y-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                NEET 2026 Expected Cut Off
+              </p>
+              <h1 className="max-w-4xl font-display text-4xl font-semibold leading-[1.06] tracking-tight text-white md:text-5xl lg:text-6xl">
+                {title}
+              </h1>
+              <p className="max-w-3xl text-base leading-8 text-white/72 md:text-lg">
+                Students keep asking the same question after the exam: what
+                will be the NEET 2026 expected cut off? The right answer is not
+                one fixed number. It is a planning range that should be read
+                with category, quota, domicile, and college reality in mind.
+              </p>
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/60">
+                <span className="flex items-center gap-2">
+                  <CalendarDays className="size-4 text-accent" />
+                  Updated May 4, 2026
+                </span>
+                <span className="flex items-center gap-2">
+                  <Clock3 className="size-4 text-accent" />
+                  7 min read
+                </span>
+                <Link href={`/authors/${contentAuthorSlug}`} className="hover:text-white/82">
+                  By {contentAuthorName}
+                </Link>
+              </div>
+              <div className="flex flex-wrap items-center gap-3">
+                <Button asChild size="lg" variant="accent">
+                  <Link href="/neet-college-predictor">
+                    Get my college prediction
+                    <ArrowRight className="size-4" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="border-white/18 bg-white/6 text-white hover:bg-white/12 hover:text-white"
+                >
+                  <Link href="/guides/neet-2026-paper-analysis-expected-cutoff">
+                    Open latest update page
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <article className="py-12 md:py-16">
+          <div className="container-shell">
+            <div className="mx-auto max-w-4xl space-y-12">
+              <section className="space-y-5">
+                <ContentTrustPanel lastReviewed={updatedAt} />
+                <div className="grid gap-3">
+                  {keyPoints.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-2xl border border-border bg-card px-5 py-4 text-sm leading-7 text-muted-foreground"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <section className="space-y-5">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
+                  Why expected cut off should not be treated as final
+                </h2>
+                <p className="text-base leading-8 text-muted-foreground">
+                  NEET expected cut off becomes a popular topic immediately
+                  after the exam because families want direction. That is
+                  natural. But expected cut off is still an estimate. It does
+                  not automatically translate into final college allotment.
+                </p>
+                <p className="text-base leading-8 text-muted-foreground">
+                  Even when paper difficulty feels similar for most students,
+                  actual outcomes can still shift due to category behaviour,
+                  state quota strength, number of high scorers, seat changes,
+                  and round-wise counselling movement.
+                </p>
+              </section>
+
+              <section className="space-y-5">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
+                  How students should use expected cut off properly
+                </h2>
+                <p className="text-base leading-8 text-muted-foreground">
+                  The best use of expected cut off is not prediction theatre. It
+                  is planning discipline. Students should use it to create three
+                  buckets:
+                </p>
+                <div className="grid gap-4 md:grid-cols-3">
+                  <div className="rounded-3xl border border-border bg-card p-6">
+                    <h3 className="font-semibold text-heading">Safer range</h3>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                      Colleges or routes that still look realistic if the final
+                      outcome is slightly weaker than expected.
+                    </p>
+                  </div>
+                  <div className="rounded-3xl border border-border bg-card p-6">
+                    <h3 className="font-semibold text-heading">Possible range</h3>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                      Colleges that may become realistic depending on final
+                      result, category, and quota movement.
+                    </p>
+                  </div>
+                  <div className="rounded-3xl border border-border bg-card p-6">
+                    <h3 className="font-semibold text-heading">Ambitious range</h3>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                      Colleges students may keep on the list, but should not rely
+                      on without strong backup planning.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section className="space-y-5">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
+                  Why category and quota matter so much
+                </h2>
+                <p className="text-base leading-8 text-muted-foreground">
+                  Two students with a similar broad score range may still have
+                  very different counselling outcomes because category, domicile
+                  state, quota, and college type can change the practical
+                  college list significantly. That is why students should avoid
+                  asking only one question: what will be the cut off?
+                </p>
+                <p className="text-base leading-8 text-muted-foreground">
+                  The better question is: what may this likely score range mean
+                  for my category, my quota path, and my realistic college
+                  options?
+                </p>
+              </section>
+
+              <section className="space-y-5">
+                <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                    Need your range?
+                  </p>
+                  <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading">
+                    Request your NEET college prediction.
+                  </h2>
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                    Share your details and we&apos;ll send your predicted college
+                    list on email.
+                  </p>
+                  <div className="mt-6">
+                    <DeferredLeadForm
+                      sourcePath={path}
+                      ctaVariant="neet_2026_expected_cutoff_inline"
+                      title="Get your college prediction"
+                      description="Enter your email, phone number, and state. Your predicted college list will be sent on email."
+                      submitLabel="Get my prediction"
+                      emailRequired
+                      notes="NEET 2026 expected cut off guide CTA. Promise predictor results by email; no email automation wired yet."
+                    />
+                  </div>
+                </div>
+              </section>
+
+              <section id="faq" className="space-y-5">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
+                  FAQs
+                </h2>
+                <div className="space-y-3">
+                  {faqs.map((faq) => (
+                    <div
+                      key={faq.question}
+                      className="rounded-3xl border border-border bg-card p-6"
+                    >
+                      <h3 className="text-lg font-semibold text-heading">
+                        {faq.question}
+                      </h3>
+                      <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
+    </>
+  );
+}

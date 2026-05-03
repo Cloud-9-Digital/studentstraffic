@@ -287,7 +287,7 @@ export async function submitSeminarRegistrationAction(
 
       insertedLeadId = insertedLead?.id;
 
-      await Promise.allSettled([
+      void Promise.allSettled([
         syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
           leadKind: "seminar_registration",
           websiteLeadId: insertedLeadId,

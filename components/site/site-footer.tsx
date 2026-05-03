@@ -93,7 +93,8 @@ export function SiteFooter() {
             </p>
             <ul className="space-y-2.5">
               {[
-                { label: "Colleges", href: "/universities" },
+                { label: "MBBS Abroad Colleges", href: "/universities" },
+                { label: "India MBBS Colleges", href: "/india-mbbs-colleges" },
                 { label: "NEET College Predictor", href: "/neet-college-predictor" },
                 { label: "Talk to Students", href: "/students" },
                 { label: "Become a Student Guide", href: "/join" },
