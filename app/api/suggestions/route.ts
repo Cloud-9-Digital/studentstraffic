@@ -3,15 +3,20 @@ import { cacheLife, cacheTag } from "next/cache";
 
 import {
   getAllLandingPages,
+  getCatalogSnapshot,
   getCountries,
   getCourses,
   getUniversities,
 } from "@/lib/data/catalog";
 import { logPublicRouteRequest } from "@/lib/route-observability";
-import { getCountryHref, getCourseHref, getUniversityHref } from "@/lib/routes";
+import {
+  getCountryHref,
+  getCourseHref,
+  getUniversityHref,
+} from "@/lib/routes";
 
 export type Suggestion = {
-  type: "university" | "country" | "course" | "landing_page";
+  type: "university" | "india_college" | "country" | "course" | "landing_page";
   label: string;
   subtitle: string;
   href: string;
@@ -28,8 +33,30 @@ type SuggestionSource = {
   countries: Awaited<ReturnType<typeof getCountries>>;
   courses: Awaited<ReturnType<typeof getCourses>>;
   universities: Awaited<ReturnType<typeof getUniversities>>;
+  indiaColleges: Awaited<ReturnType<typeof getCatalogSnapshot>>["indiaColleges"];
   landingPages: Awaited<ReturnType<typeof getAllLandingPages>>;
 };
+
+function dedupeIndiaColleges(
+  colleges: Awaited<ReturnType<typeof getCatalogSnapshot>>["indiaColleges"],
+) {
+  const uniqueBySlug = new Map<string, (typeof colleges)[number]>();
+
+  for (const college of colleges) {
+    const existing = uniqueBySlug.get(college.slug);
+
+    if (!existing) {
+      uniqueBySlug.set(college.slug, college);
+      continue;
+    }
+
+    if (existing.programName !== "MBBS" && college.programName === "MBBS") {
+      uniqueBySlug.set(college.slug, college);
+    }
+  }
+
+  return [...uniqueBySlug.values()];
+}
 
 function normalize(value: string) {
   return value
@@ -103,14 +130,16 @@ function getTypeRank(type: Suggestion["type"]) {
   switch (type) {
     case "university":
       return 0;
-    case "landing_page":
+    case "india_college":
       return 1;
-    case "country":
+    case "landing_page":
       return 2;
-    case "course":
+    case "country":
       return 3;
-    default:
+    case "course":
       return 4;
+    default:
+      return 5;
   }
 }
 
@@ -121,10 +150,11 @@ async function getSuggestionSource(): Promise<SuggestionSource> {
   cacheTag("catalog");
   cacheTag("finder");
 
-  const [countries, courses, universities, landingPages] = await Promise.all([
+  const [countries, courses, universities, catalogSnapshot, landingPages] = await Promise.all([
     getCountries(),
     getCourses(),
     getUniversities(),
+    getCatalogSnapshot(),
     getAllLandingPages(),
   ]);
 
@@ -132,6 +162,7 @@ async function getSuggestionSource(): Promise<SuggestionSource> {
     countries,
     courses,
     universities,
+    indiaColleges: dedupeIndiaColleges(catalogSnapshot.indiaColleges),
     landingPages,
   };
 }
@@ -149,7 +180,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json<Suggestion[]>([]);
   }
 
-  const { countries, courses, universities, landingPages } =
+  const { countries, courses, universities, indiaColleges, landingPages } =
     await getSuggestionSource();
 
   const countryMap = new Map(countries.map((country) => [country.slug, country.name]));
@@ -174,6 +205,34 @@ export async function GET(req: NextRequest) {
         subtitle,
         href: getUniversityHref(university.slug),
         score: score + 10,
+        directLabelTier: strongestSignals.directLabelTier,
+        labelCoverage: strongestSignals.labelCoverage,
+        subtitleCoverage: strongestSignals.subtitleCoverage,
+      });
+    }
+  }
+
+  for (const college of indiaColleges) {
+    const subtitle = college.cityName
+      ? `${college.cityName}, ${college.stateName}`
+      : college.stateName;
+    const primarySignals = getSuggestionSignals(q, college.collegeName, subtitle);
+    const secondarySignals = getSuggestionSignals(
+      q,
+      college.universityName ?? college.stateName,
+      `${college.collegeName} ${college.programName}`,
+    );
+    const strongestSignals =
+      primarySignals.score >= secondarySignals.score ? primarySignals : secondarySignals;
+    const score = Math.max(primarySignals.score, secondarySignals.score);
+
+    if (score > 0) {
+      rankedResults.push({
+        type: "india_college",
+        label: college.collegeName,
+        subtitle,
+        href: `/india-mbbs-colleges?q=${encodeURIComponent(college.collegeName)}`,
+        score: score + 8,
         directLabelTier: strongestSignals.directLabelTier,
         labelCoverage: strongestSignals.labelCoverage,
         subtitleCoverage: strongestSignals.subtitleCoverage,

@@ -1,6 +1,7 @@
 import "server-only";
 
 import { and, asc, count, desc, eq, ilike, or } from "drizzle-orm";
+import { cacheLife, cacheTag } from "next/cache";
 
 import type {
   IndiaMbbsCard,
@@ -70,6 +71,13 @@ function applySort(sort?: IndiaMbbsFilters["sort"]) {
 export async function getIndiaMbbsFilterOptions(): Promise<
   IndiaMbbsOptions & { totalColleges: number }
 > {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("india-medical-colleges");
+  cacheTag("india-medical-programs");
+  cacheTag("india-mbbs-finder");
+
   const db = getDb();
 
   if (!db) {
@@ -129,6 +137,13 @@ export async function queryIndiaMbbsCollegesPage(
   page = 1,
   pageSize = 12,
 ): Promise<IndiaMbbsPage> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("india-medical-colleges");
+  cacheTag("india-medical-programs");
+  cacheTag("india-mbbs-finder");
+
   const db = getDb();
 
   if (!db) {

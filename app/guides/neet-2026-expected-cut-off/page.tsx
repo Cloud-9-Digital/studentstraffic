@@ -18,9 +18,10 @@ import {
 } from "@/lib/content-governance";
 
 const path = "/guides/neet-2026-expected-cut-off";
-const title = "NEET 2026 Expected Cut Off: What Students Should Understand";
+const title =
+  "NEET 2026 Expected Cut Off: Category-Wise Planning, Estimates, Next Steps";
 const description =
-  "NEET 2026 expected cut off guide for students and parents. Understand category-wise planning, why expected cut off is only a range, and what to do next for MBBS admission in India.";
+  "NEET 2026 expected cut off guide for students and parents, with official-status context, category-wise planning, and practical next steps for MBBS counselling.";
 const publishedAt = "2026-05-04";
 const updatedAt = "2026-05-04";
 const canonicalUrl = absoluteUrl(path);
@@ -51,8 +52,16 @@ export const metadata: Metadata = {
 
 const keyPoints = [
   "Expected cut off is a planning tool, not a final result.",
+  "Any NEET 2026 expected cut off discussion right now is still unofficial and should be checked against the official NEET update cycle.",
   "Category, quota, domicile, and seat movement matter as much as broad paper difficulty.",
   "Students should work in score ranges and college buckets, not one imaginary exact college.",
+] as const;
+
+const officialContextPoints = [
+  "The official NEET website shows that NEET (UG) 2026 was conducted on May 3, 2026.",
+  "The same site also shows the advance city intimation update published on April 12, 2026 and the admit card update published on April 26, 2026.",
+  "As of our May 4, 2026, 11:59 AM IST review, we did not see an official 2026 answer key or result notice on the NEET main page or documents listing.",
+  "The visible 2026 entries on the documents page were still pre-result items such as the admit card notice, advance city intimation, bulletin, syllabus, and application notices.",
 ] as const;
 
 const faqs = [
@@ -67,9 +76,39 @@ const faqs = [
       "Different assumptions are used around paper difficulty, candidate performance spread, and category behaviour. That is why students should not rely on one number alone.",
   },
   {
+    question: "Is there any official NEET 2026 cut off notice yet?",
+    answer:
+      "No official expected cut off notice is how this stage usually works. As of Monday, May 4, 2026, 11:59 AM IST, our check of the official NEET site did not show a 2026 answer key or result notice yet either, so expected cut off discussion should still be treated as unofficial planning content.",
+  },
+  {
     question: "What should students do with expected cut off information?",
     answer:
       "They should use it to prepare safer, possible, and ambitious college buckets and to decide how seriously they need to evaluate private or deemed options.",
+  },
+  {
+    question: "Should category-wise planning start before the official answer key?",
+    answer:
+      "Yes. Students should start planning by category, quota, domicile, and fee level early, but they should keep their shortlist flexible until official answer key and result stages bring more clarity.",
+  },
+  {
+    question: "What official pages should students keep checking?",
+    answer:
+      "Students should keep checking the official NEET homepage, the NEET documents page, and the NEET helpdesk page. On our May 4, 2026, 11:59 AM IST review, the documents page was still showing visible 2026 pre-result items rather than a 2026 answer key or result posting.",
+  },
+] as const;
+
+const relatedGuides = [
+  {
+    title: "NEET 2026 latest update page",
+    description:
+      "Track dated official-status checks on answer key, result visibility, and immediate next steps after the exam.",
+    href: "/guides/neet-2026-paper-analysis-expected-cutoff",
+  },
+  {
+    title: "NEET 2026 marks vs rank guide",
+    description:
+      "Use marks vs rank in score ranges so your expected cut off reading turns into a realistic counselling plan.",
+    href: "/guides/neet-2026-marks-vs-rank",
   },
 ] as const;
 
@@ -149,7 +188,7 @@ export default function Neet2026ExpectedCutOffPage() {
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/60">
                 <span className="flex items-center gap-2">
                   <CalendarDays className="size-4 text-accent" />
-                  Updated May 4, 2026
+                  Updated May 4, 2026, 11:59 AM IST
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock3 className="size-4 text-accent" />
@@ -196,6 +235,43 @@ export default function Neet2026ExpectedCutOffPage() {
                     </div>
                   ))}
                 </div>
+              </section>
+
+              <section className="space-y-5">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
+                  Official context students should keep in mind
+                </h2>
+                <div className="grid gap-3">
+                  {officialContextPoints.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-2xl border border-border bg-card px-5 py-4 text-sm leading-7 text-muted-foreground"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+                <p className="text-sm leading-7 text-muted-foreground">
+                  Source checks:
+                  {" "}
+                  <a
+                    href="https://neet.nta.nic.in/"
+                    className="font-medium text-primary underline-offset-4 hover:underline"
+                  >
+                    official NEET website
+                  </a>
+                  {" "}
+                  and
+                  {" "}
+                  <a
+                    href="https://neet.nta.nic.in/documents/"
+                    className="font-medium text-primary underline-offset-4 hover:underline"
+                  >
+                    documents page
+                  </a>
+                  . The answer-key status note here is an inference from those
+                  pages.
+                </p>
               </section>
 
               <section className="space-y-5">
@@ -266,6 +342,28 @@ export default function Neet2026ExpectedCutOffPage() {
                   for my category, my quota path, and my realistic college
                   options?
                 </p>
+              </section>
+
+              <section className="space-y-5">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
+                  Keep the cluster open while you plan
+                </h2>
+                <div className="grid gap-4 md:grid-cols-2">
+                  {relatedGuides.map((guide) => (
+                    <Link
+                      key={guide.href}
+                      href={guide.href}
+                      className="rounded-3xl border border-border bg-card p-6 transition-colors hover:border-primary/25"
+                    >
+                      <h3 className="text-lg font-semibold text-heading">
+                        {guide.title}
+                      </h3>
+                      <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                        {guide.description}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
               </section>
 
               <section className="space-y-5">

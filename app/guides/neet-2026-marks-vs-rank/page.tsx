@@ -18,9 +18,10 @@ import {
 } from "@/lib/content-governance";
 
 const path = "/guides/neet-2026-marks-vs-rank";
-const title = "NEET 2026 Marks vs Rank: How Students Should Use It Properly";
+const title =
+  "NEET 2026 Marks vs Rank: Score Ranges, Rank Estimates, Counselling Use";
 const description =
-  "NEET 2026 marks vs rank guide for students and parents. Understand how to think in ranges, why exact rank assumptions can mislead, and how to use marks vs rank for MBBS counselling planning.";
+  "NEET 2026 marks vs rank guide for students and parents, including official-status context, score-range planning, and practical use for MBBS counselling.";
 const publishedAt = "2026-05-04";
 const updatedAt = "2026-05-04";
 const canonicalUrl = absoluteUrl(path);
@@ -51,8 +52,16 @@ export const metadata: Metadata = {
 
 const rangePoints = [
   "Marks vs rank should be read as a practical range, not a guaranteed exact rank.",
+  "Any NEET 2026 rank estimate right now remains unofficial until the official process moves ahead.",
   "Even a small score swing can feel emotionally huge after the exam, but students still need broad planning discipline.",
   "Counselling decisions should be built on category, quota, domicile, and college type along with likely rank range.",
+] as const;
+
+const officialContextPoints = [
+  "The official NEET site shows exam-conduct messaging for May 3, 2026, along with the earlier April 12 city intimation and April 26 admit card updates.",
+  "As of our May 4, 2026, 11:59 AM IST review, we did not see an official 2026 answer key or result notice on the main NEET page or documents listing.",
+  "The visible 2026 entries on the documents page were still the admit card, city-intimation, bulletin, syllabus, and earlier application notices rather than a 2026 answer key or result item.",
+  "That means current marks vs rank discussion should still be used only as a planning estimate, not as a confirmed rank outcome.",
 ] as const;
 
 const faqs = [
@@ -67,9 +76,39 @@ const faqs = [
       "Because it helps students move from raw marks anxiety to counselling planning. A useful range can help them prepare safer, possible, and ambitious college buckets.",
   },
   {
+    question: "Is any NEET 2026 rank estimate official right now?",
+    answer:
+      "No. As of Monday, May 4, 2026, 11:59 AM IST, our review of the official NEET site did not show a 2026 answer key or result notice yet. So current rank discussions should be treated as unofficial estimates for planning only.",
+  },
+  {
     question: "What should students do if their expected marks put them in a grey zone?",
     answer:
       "They should avoid overconfidence and avoid panic. This is the stage to shortlist government, private, and deemed possibilities realistically and prepare a proper counselling strategy.",
+  },
+  {
+    question: "What is the safest way to use marks vs rank after the exam?",
+    answer:
+      "Treat it as a range, connect that range to category and quota realities, and keep updating your shortlist as official NEET updates arrive.",
+  },
+  {
+    question: "Why should students keep checking the documents page as well as the homepage?",
+    answer:
+      "Because official answer-key and result material is often easiest to confirm from the document listing. In our May 4, 2026, 11:59 AM IST review, the visible 2026 entries there were still pre-result items, so marks-vs-rank estimates should remain unofficial planning tools for now.",
+  },
+] as const;
+
+const relatedGuides = [
+  {
+    title: "NEET 2026 latest update page",
+    description:
+      "Check the main NEET 2026 update page for dated official-status checks and answer-key context.",
+    href: "/guides/neet-2026-paper-analysis-expected-cutoff",
+  },
+  {
+    title: "NEET 2026 expected cut off guide",
+    description:
+      "Pair marks vs rank ranges with expected cut off thinking so your shortlist is grounded, not emotional.",
+    href: "/guides/neet-2026-expected-cut-off",
   },
 ] as const;
 
@@ -149,7 +188,7 @@ export default function Neet2026MarksVsRankPage() {
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/60">
                 <span className="flex items-center gap-2">
                   <CalendarDays className="size-4 text-accent" />
-                  Updated May 4, 2026
+                  Updated May 4, 2026, 11:59 AM IST
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock3 className="size-4 text-accent" />
@@ -196,6 +235,43 @@ export default function Neet2026MarksVsRankPage() {
                     </div>
                   ))}
                 </div>
+              </section>
+
+              <section className="space-y-5">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
+                  Official context before you estimate rank
+                </h2>
+                <div className="grid gap-3">
+                  {officialContextPoints.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-2xl border border-border bg-card px-5 py-4 text-sm leading-7 text-muted-foreground"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+                <p className="text-sm leading-7 text-muted-foreground">
+                  Source checks:
+                  {" "}
+                  <a
+                    href="https://neet.nta.nic.in/"
+                    className="font-medium text-primary underline-offset-4 hover:underline"
+                  >
+                    official NEET website
+                  </a>
+                  {" "}
+                  and
+                  {" "}
+                  <a
+                    href="https://neet.nta.nic.in/documents/"
+                    className="font-medium text-primary underline-offset-4 hover:underline"
+                  >
+                    documents page
+                  </a>
+                  . The answer-key status line above is an inference from those
+                  pages.
+                </p>
               </section>
 
               <section className="space-y-5">
@@ -260,6 +336,28 @@ export default function Neet2026MarksVsRankPage() {
                   intelligently. Students who do this are usually much better
                   placed when counselling opens.
                 </p>
+              </section>
+
+              <section className="space-y-5">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
+                  Keep the planning pages together
+                </h2>
+                <div className="grid gap-4 md:grid-cols-2">
+                  {relatedGuides.map((guide) => (
+                    <Link
+                      key={guide.href}
+                      href={guide.href}
+                      className="rounded-3xl border border-border bg-card p-6 transition-colors hover:border-primary/25"
+                    >
+                      <h3 className="text-lg font-semibold text-heading">
+                        {guide.title}
+                      </h3>
+                      <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                        {guide.description}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
               </section>
 
               <section className="space-y-5">

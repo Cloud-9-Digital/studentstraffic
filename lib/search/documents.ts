@@ -34,6 +34,25 @@ function normalizeText(parts: Array<string | undefined | null | string[]>) {
     .trim();
 }
 
+function dedupeIndiaColleges(indiaColleges: IndiaMbbsCard[]) {
+  const uniqueBySlug = new Map<string, IndiaMbbsCard>();
+
+  for (const college of indiaColleges) {
+    const existing = uniqueBySlug.get(college.slug);
+
+    if (!existing) {
+      uniqueBySlug.set(college.slug, college);
+      continue;
+    }
+
+    if (existing.programName !== "MBBS" && college.programName === "MBBS") {
+      uniqueBySlug.set(college.slug, college);
+    }
+  }
+
+  return [...uniqueBySlug.values()];
+}
+
 export function buildSearchDocuments({
   countries,
   courses,
@@ -234,7 +253,7 @@ export function buildSearchDocuments({
     };
   });
 
-  const indiaCollegeDocuments: SearchDocument[] = indiaColleges.map((college) => {
+  const indiaCollegeDocuments: SearchDocument[] = dedupeIndiaColleges(indiaColleges).map((college) => {
     return {
       documentType: "india_college",
       sourceSlug: college.slug,

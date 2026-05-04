@@ -25,6 +25,7 @@ import {
 
 const typeIcon = {
   university: Building2,
+  india_college: Building2,
   country: MapPin,
   course: GraduationCap,
   landing_page: BookOpen,
@@ -32,6 +33,7 @@ const typeIcon = {
 
 const typeLabel = {
   university: "University",
+  india_college: "India MBBS College",
   country: "Country",
   course: "Course",
   landing_page: "Guide",
@@ -206,7 +208,7 @@ export function SearchPalettePanel({
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search universities, countries, courses..."
+              placeholder="Search Indian colleges, universities, countries, courses..."
               className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none"
             />
             <div className="flex items-center gap-2">
