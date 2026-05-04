@@ -40,7 +40,7 @@ const howItWorks = [
   },
   {
     title: "Get personalized college list",
-    description: "Receive MBBS/BDS college predictions via email within 24 hours, categorized by safety, target, and reach colleges",
+    description: "Get a personalized MBBS/BDS college list based on your NEET profile, category, quota, and state counselling path",
   },
 ];
 
@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: "When will I receive my NEET college prediction?",
-    a: "You'll receive your detailed college prediction report via email within 24 hours of submission. The report includes college names, cutoffs, fees, and admission chances based on MCC counselling trends.",
+    a: "Once you submit your NEET details, our team will review your profile and share your college list by email. The report is built around category, quota, state, cutoff trends, fees, and realistic admission chances.",
   },
   {
     q: "Is this NEET College Predictor free?",
@@ -148,7 +148,7 @@ export default function NeetCollegePredictorPage() {
                 sourcePath="/neet-college-predictor"
                 ctaVariant="neet_predictor_waitlist"
                 title="Get your college list"
-                description="Takes 30 seconds. We'll send your personalized prediction to your email within 24 hours."
+                description="Takes 30 seconds. Share your details and request your personalized college list."
                 submitLabel="Send Me My College List"
                 emailRequired
                 notes="NEET college predictor submission. Show confirmation that predicted colleges will be sent by email later; no email automation wired yet."
@@ -201,82 +201,6 @@ export default function NeetCollegePredictorPage() {
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Sample Result Preview */}
-      <section className="border-b border-gray-200 bg-gray-50 px-6 py-12 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-[1000px]">
-          <div className="mb-6 text-center">
-            <span className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
-              Sample Prediction
-            </span>
-            <h2 className="mt-4 font-display text-xl font-bold text-gray-900 sm:text-2xl">
-              Here's what your prediction looks like
-            </h2>
-          </div>
-
-          <div className="overflow-hidden rounded-xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white shadow-sm">
-            <div className="border-b border-gray-200 bg-white px-6 py-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-gray-600">NEET Score</p>
-                  <p className="text-xl font-bold text-gray-900">580/720</p>
-                </div>
-                <div>
-                  <p className="text-sm text-gray-600">Home State</p>
-                  <p className="text-xl font-bold text-gray-900">Karnataka</p>
-                </div>
-                <div>
-                  <p className="text-sm text-gray-600">Category</p>
-                  <p className="text-xl font-bold text-gray-900">General</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-6">
-              <div className="mb-4">
-                <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-emerald-700">
-                  Safety Colleges (High Chance)
-                </h3>
-                <div className="space-y-2">
-                  <div className="flex items-start justify-between rounded-lg bg-white p-3 text-sm">
-                    <div>
-                      <p className="font-medium text-gray-900">JSS Medical College, Mysore</p>
-                      <p className="text-xs text-gray-600">Private • 2024 Cutoff: 565</p>
-                    </div>
-                    <span className="rounded-full bg-emerald-100 px-2 py-1 text-xs font-medium text-emerald-700">Match</span>
-                  </div>
-                  <div className="flex items-start justify-between rounded-lg bg-white p-3 text-sm">
-                    <div>
-                      <p className="font-medium text-gray-900">Kasturba Medical College, Manipal</p>
-                      <p className="text-xs text-gray-600">Deemed • 2024 Cutoff: 570</p>
-                    </div>
-                    <span className="rounded-full bg-emerald-100 px-2 py-1 text-xs font-medium text-emerald-700">Match</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mb-4">
-                <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-blue-700">
-                  Target Colleges (Good Chance)
-                </h3>
-                <div className="space-y-2">
-                  <div className="flex items-start justify-between rounded-lg bg-white p-3 text-sm">
-                    <div>
-                      <p className="font-medium text-gray-900">Bangalore Medical College</p>
-                      <p className="text-xs text-gray-600">Govt • State Quota • 2024 Cutoff: 585</p>
-                    </div>
-                    <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-medium text-blue-700">Possible</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="rounded-lg bg-amber-50 p-3 text-xs text-gray-700">
-                <span className="font-semibold">Note:</span> Actual result includes 15-20 colleges with detailed cutoff analysis
-              </div>
-            </div>
           </div>
         </div>
       </section>
