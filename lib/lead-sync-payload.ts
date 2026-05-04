@@ -28,6 +28,7 @@ export type LeadSyncPayload = {
   alternatePhone?: string;
   city?: string;
   seminarEvent?: string;
+  seminarAttendeeCount?: number;
   interestedCountry?: string;
   budgetRange?: string;
   needsFmgeSession?: boolean;

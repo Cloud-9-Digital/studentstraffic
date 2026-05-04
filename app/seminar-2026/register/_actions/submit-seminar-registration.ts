@@ -57,6 +57,7 @@ export type SeminarRegistrationFormState = {
     alternatePhone?: string;
     city?: string;
     seminarEvent?: string;
+    seminarAttendeeCount?: string;
     interestedCountry?: string;
     budgetRange?: string;
     needsFmgeSession?: string;
@@ -71,6 +72,11 @@ const seminarRegistrationSchema = z.object({
   alternatePhone: z.string().trim().optional(),
   city: z.string().trim().min(2, "Please select your city."),
   seminarEvent: z.string().trim().min(2, "Please select the seminar you'd like to attend."),
+  seminarAttendeeCount: z.coerce
+    .number()
+    .int()
+    .min(1, "Please enter how many people will attend.")
+    .max(10, "Please enter a realistic attendee count."),
   interestedCountry: z.string().trim().optional(),
   budgetRange: z.string().trim().optional(),
   needsFmgeSession: z.string().trim().optional(),
@@ -97,6 +103,7 @@ export async function submitSeminarRegistrationAction(
     alternatePhone: getFormString(formData, "alternatePhone"),
     city: getRequiredFormString(formData, "city"),
     seminarEvent: getRequiredFormString(formData, "seminarEvent"),
+    seminarAttendeeCount: getRequiredFormString(formData, "seminarAttendeeCount"),
     interestedCountry: getFormString(formData, "interestedCountry") ?? "",
     budgetRange: getFormString(formData, "budgetRange") ?? "",
     needsFmgeSession: getFormString(formData, "needsFmgeSession") ?? "",
@@ -247,6 +254,7 @@ export async function submitSeminarRegistrationAction(
           alternatePhone: normalizedAlternatePhone,
           city: data.city,
           seminarEvent: data.seminarEvent,
+          seminarAttendeeCount: data.seminarAttendeeCount,
           interestedCountry: data.interestedCountry,
           budgetRange: data.budgetRange,
           needsFmgeSession: data.needsFmgeSession === "yes",
@@ -298,6 +306,7 @@ export async function submitSeminarRegistrationAction(
           alternatePhone: normalizedAlternatePhone || undefined,
           city: data.city,
           seminarEvent: data.seminarEvent,
+          seminarAttendeeCount: data.seminarAttendeeCount,
           interestedCountry: data.interestedCountry,
           budgetRange: data.budgetRange,
           needsFmgeSession: data.needsFmgeSession === "yes",

@@ -292,6 +292,7 @@ export const leads = pgTable(
     alternatePhone: text("alternate_phone"),
     city: text("city"),
     seminarEvent: text("seminar_event"),
+    seminarAttendeeCount: integer("seminar_attendee_count"),
     interestedCountry: text("interested_country"),
     budgetRange: text("budget_range"),
     needsFmgeSession: boolean("needs_fmge_session"),

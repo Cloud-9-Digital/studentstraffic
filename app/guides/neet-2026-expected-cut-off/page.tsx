@@ -24,6 +24,7 @@ const description =
   "NEET 2026 expected cut off guide for students and parents, with official-status context, category-wise planning, and practical next steps for MBBS counselling.";
 const publishedAt = "2026-05-04";
 const updatedAt = "2026-05-04";
+const reviewedAt = "May 4, 2026, 5:59 PM IST";
 const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
@@ -60,7 +61,7 @@ const keyPoints = [
 const officialContextPoints = [
   "The official NEET website shows that NEET (UG) 2026 was conducted on May 3, 2026.",
   "The same site also shows the advance city intimation update published on April 12, 2026 and the admit card update published on April 26, 2026.",
-  "As of our May 4, 2026, 11:59 AM IST review, we did not see an official 2026 answer key or result notice on the NEET main page or documents listing.",
+  "As of our May 4, 2026, 5:59 PM IST review, we did not see an official 2026 answer key or result notice on the NEET main page or documents listing.",
   "The visible 2026 entries on the documents page were still pre-result items such as the admit card notice, advance city intimation, bulletin, syllabus, and application notices.",
 ] as const;
 
@@ -78,7 +79,7 @@ const faqs = [
   {
     question: "Is there any official NEET 2026 cut off notice yet?",
     answer:
-      "No official expected cut off notice is how this stage usually works. As of Monday, May 4, 2026, 11:59 AM IST, our check of the official NEET site did not show a 2026 answer key or result notice yet either, so expected cut off discussion should still be treated as unofficial planning content.",
+      "No official expected cut off notice is how this stage usually works. As of Monday, May 4, 2026, 5:59 PM IST, our check of the official NEET site did not show a 2026 answer key or result notice yet either, so expected cut off discussion should still be treated as unofficial planning content.",
   },
   {
     question: "What should students do with expected cut off information?",
@@ -93,7 +94,12 @@ const faqs = [
   {
     question: "What official pages should students keep checking?",
     answer:
-      "Students should keep checking the official NEET homepage, the NEET documents page, and the NEET helpdesk page. On our May 4, 2026, 11:59 AM IST review, the documents page was still showing visible 2026 pre-result items rather than a 2026 answer key or result posting.",
+      "Students should keep checking the official NEET homepage, the NEET documents page, and the NEET helpdesk page. On our May 4, 2026, 5:59 PM IST review, the documents page was still showing visible 2026 pre-result items rather than a 2026 answer key or result posting.",
+  },
+  {
+    question: "Has any official NEET 2026 answer key challenge notice appeared yet?",
+    answer:
+      "Not in our May 4, 2026, 5:59 PM IST source check. We did not see a 2026 answer key challenge notice on the official NEET homepage or the documents listing, so any challenge-window discussion should still be treated cautiously until NTA publishes it.",
   },
 ] as const;
 
@@ -188,7 +194,7 @@ export default function Neet2026ExpectedCutOffPage() {
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/60">
                 <span className="flex items-center gap-2">
                   <CalendarDays className="size-4 text-accent" />
-                  Updated May 4, 2026, 11:59 AM IST
+                  Updated {reviewedAt}
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock3 className="size-4 text-accent" />

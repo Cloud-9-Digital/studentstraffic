@@ -67,6 +67,7 @@ export function SeminarRegistrationForm({
   const values = state.values;
   const [selectedCity, setSelectedCity] = useState(values?.city ?? "");
   const [selectedEvent, setSelectedEvent] = useState(values?.seminarEvent ?? defaultEvent ?? "");
+  const [attendeeCount, setAttendeeCount] = useState(values?.seminarAttendeeCount ?? "");
   const [selectedCountry, setSelectedCountry] = useState(values?.interestedCountry ?? "");
   const [selectedBudget, setSelectedBudget] = useState(values?.budgetRange ?? "");
   const [needsSession, setNeedsSession] = useState(values?.needsFmgeSession ?? "");
@@ -75,12 +76,14 @@ export function SeminarRegistrationForm({
   useEffect(() => {
     setSelectedCity(values?.city ?? "");
     setSelectedEvent(values?.seminarEvent ?? defaultEvent ?? "");
+    setAttendeeCount(values?.seminarAttendeeCount ?? "");
     setSelectedCountry(values?.interestedCountry ?? "");
     setSelectedBudget(values?.budgetRange ?? "");
     setNeedsSession(values?.needsFmgeSession ?? "");
     setSelectedDocumentType(values?.documentType ?? "");
   }, [
     defaultEvent,
+    values?.seminarAttendeeCount,
     values?.budgetRange,
     values?.city,
     values?.documentType,
@@ -204,29 +207,6 @@ export function SeminarRegistrationForm({
         />
       </div>
 
-      {/* City */}
-      <div className="space-y-2">
-        <Label htmlFor={`${fieldPrefix}-city`}>
-          Your city <span className="text-destructive">*</span>
-        </Label>
-        <div className="relative">
-          <select
-            id={`${fieldPrefix}-city`}
-            name="city"
-            required
-            value={selectedCity}
-            onChange={(event) => setSelectedCity(event.target.value)}
-            className={SELECT_CLASS}
-          >
-            <option value="" disabled>Select your city</option>
-            {TN_CITIES.map((city) => (
-              <option key={city} value={city}>{city}</option>
-            ))}
-          </select>
-          <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-        </div>
-      </div>
-
       {/* Seminar event selector */}
       <div className="space-y-2">
         <Label htmlFor={`${fieldPrefix}-event`}>
@@ -256,6 +236,47 @@ export function SeminarRegistrationForm({
             <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
           </div>
         )}
+      </div>
+
+      {/* City */}
+      <div className="space-y-2">
+        <Label htmlFor={`${fieldPrefix}-city`}>
+          Your city <span className="text-destructive">*</span>
+        </Label>
+        <div className="relative">
+          <select
+            id={`${fieldPrefix}-city`}
+            name="city"
+            required
+            value={selectedCity}
+            onChange={(event) => setSelectedCity(event.target.value)}
+            className={SELECT_CLASS}
+          >
+            <option value="" disabled>Select your city</option>
+            {TN_CITIES.map((city) => (
+              <option key={city} value={city}>{city}</option>
+            ))}
+          </select>
+          <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+        </div>
+      </div>
+
+      <div className="space-y-2">
+        <Label htmlFor={`${fieldPrefix}-attendee-count`}>
+          How many people will attend? <span className="text-destructive">*</span>
+        </Label>
+        <Input
+          id={`${fieldPrefix}-attendee-count`}
+          name="seminarAttendeeCount"
+          type="number"
+          min={1}
+          max={10}
+          inputMode="numeric"
+          value={attendeeCount}
+          onChange={(event) => setAttendeeCount(event.target.value)}
+          placeholder="Enter attendee count"
+          required
+        />
       </div>
 
       {/* Interested Country */}

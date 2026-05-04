@@ -25,11 +25,12 @@ import {
 
 const path = "/guides/neet-2026-paper-analysis-expected-cutoff";
 const title =
-  "NEET 2026 Latest Update: Answer Key, Paper Analysis, Expected Cut Off";
+  "NEET 2026 Answer Key Update: Paper Analysis, Expected Cut Off, Next Steps";
 const description =
-  "NEET 2026 latest update after the May 3 exam, including an official-source check on answer key and result notices, expected cut off planning, marks vs rank thinking, and next steps for MBBS admission.";
+  "NEET 2026 answer key update after the May 3 exam, including our May 4, 2026 official-source check on answer key and result notices, expected cut off planning, marks vs rank thinking, and next steps for MBBS admission.";
 const publishedAt = "2026-05-03";
 const updatedAt = "2026-05-04";
+const reviewedAt = "May 4, 2026, 5:59 PM IST";
 const coverPath = "/guides/raster/neet-2026-paper-analysis-cover.svg.png";
 const coverUrl = absoluteUrl(coverPath);
 const canonicalUrl = absoluteUrl(path);
@@ -70,8 +71,8 @@ export const metadata: Metadata = {
 };
 
 const quickTakeaways = [
-  "As of Monday, May 4, 2026, 11:59 AM IST, our source check found that the official NEET website was still showing exam-cycle notices, but not an official 2026 answer key or result notice yet.",
-  "The NEET documents page was still listing 2026 application, bulletin, city-intimation, and admit-card documents, while the visible answer-key and result entries were for NEET 2025.",
+  "As of Monday, May 4, 2026, 5:59 PM IST, our source check found that the official NEET website was still showing exam-cycle notices, but not an official 2026 answer key or result notice yet.",
+  "The official home page was still highlighting admit-card and exam-conduct notices, while the documents page was still showing visible 2026 pre-result items and visible 2025 answer-key and result entries.",
   "Unofficial coaching answer keys may help students estimate a score range, but they are not the same as the official provisional key, final answer key, or result.",
   "The biggest post-exam mistake is taking one unofficial score estimate and turning it into a final admission decision.",
 ] as const;
@@ -85,19 +86,25 @@ const nextSteps = [
 
 const updateLog = [
   {
-    timestamp: "May 4, 2026, 11:59 AM IST",
+    timestamp: reviewedAt,
     title: "Official-source check completed",
     body:
-      "We checked the official NEET website, documents page, and helpdesk details again. At the time of review, the exam had already been conducted, but no official 2026 answer key or result notice was visible on the main NEET page or document listing.",
+      "We checked the official NEET website, documents page, helpdesk page, and the NTA home page again. At the time of review, the exam had already been conducted, but no official 2026 answer key or result notice was visible on the main NEET page or document listing.",
   },
   {
-    timestamp: "May 4, 2026, 11:54 AM IST",
+    timestamp: reviewedAt,
     title: "Documents page still shows pre-result 2026 items",
     body:
-      "The visible 2026 document entries were still centered on the admit card, advance city intimation, application-stage notices, bulletin, and syllabus, while the visible answer-key and result entries on that page were still for 2025.",
+      "The visible 2026 document entries were still centred on advance city intimation, correction, application-stage notices, information bulletin, syllabus, and related exam-cycle communication, while the visible answer-key and result entries on that page were still for 2025.",
   },
   {
-    timestamp: "May 4, 2026, 11:47 AM IST",
+    timestamp: reviewedAt,
+    title: "Official helpdesk details remain visible for candidate queries",
+    body:
+      "The NEET helpdesk page is currently showing the 2026 email address neetug2026@nta.ac.in and the contact numbers 011-40759000 and 011-69227700 for candidate support.",
+  },
+  {
+    timestamp: reviewedAt,
     title: "Marks vs rank planning remains important",
     body:
       "Students who are estimating their score should start preparing a realistic counselling list based on category, quota, domicile, and fee affordability.",
@@ -108,12 +115,12 @@ const liveUpdateRows = [
   {
     label: "Exam status",
     value:
-      "The official NEET site showed NEET (UG) 2026 exam-conduct messaging for Sunday, May 3, 2026.",
+      "The official NEET site showed NEET (UG) 2026 exam-conduct messaging for Sunday, May 3, 2026, along with the latest admit-card and public-notice updates.",
   },
   {
     label: "Official answer key and result status",
     value:
-      "As of our May 4, 2026, 11:59 AM IST check, we did not see an official 2026 answer key or result notice on the main NEET page or the documents list.",
+      "As of our Monday, May 4, 2026, 5:59 PM IST check, we did not see an official 2026 answer key or result notice on the main NEET page or the documents list.",
   },
   {
     label: "Best use of exam-day content",
@@ -145,7 +152,13 @@ const officialSourceLinks = [
     title: "NTA helpdesk for NEET 2026",
     href: "https://neet.nta.nic.in/nta-helpdesk/",
     description:
-      "The NEET helpdesk page lists the official email and phone numbers for candidate queries.",
+      "The NEET helpdesk page lists the official email neetug2026@nta.ac.in and the contact numbers 011-40759000 and 011-69227700 for candidate queries.",
+  },
+  {
+    title: "NTA main website",
+    href: "https://www.nta.ac.in/",
+    description:
+      "Use the parent NTA website to cross-check whether any NEET 2026 press release or notice has also been mirrored there.",
   },
 ] as const;
 
@@ -160,7 +173,7 @@ const faqs = [
   {
     question: "Has the official NEET 2026 answer key been released?",
     answer:
-      "As of Monday, May 4, 2026, 11:59 AM IST, our check of the official NEET website and documents page did not show an official 2026 answer key notice yet. That is an inference from the pages we checked, so students should still verify directly before acting on any update.",
+      "As of Monday, May 4, 2026, 5:59 PM IST, our check of the official NEET website and documents page did not show an official 2026 answer key notice yet. That is an inference from the pages we checked, so students should still verify directly before acting on any update.",
   },
   {
     question: "Should students trust expected cutoff discussions on exam day?",
@@ -185,7 +198,17 @@ const faqs = [
   {
     question: "What does the NEET documents page show right now?",
     answer:
-      "In our May 4, 2026, 11:59 AM IST review, the visible 2026 entries were still pre-result items such as the admit card notice, advance city intimation, information bulletin, syllabus, and earlier application notices. The visible answer-key and result entries on that page were still for NEET 2025, which is why students should keep checking for a new 2026 posting instead of assuming one is already out.",
+      "In our Monday, May 4, 2026, 5:59 PM IST review, the visible 2026 entries were still pre-result items such as advance city intimation, correction, information bulletin, syllabus, and earlier application notices. The visible answer-key and result entries on that page were still for NEET 2025, which is why students should keep checking for a new 2026 posting instead of assuming one is already out.",
+  },
+  {
+    question: "What are the official NEET 2026 helpdesk details right now?",
+    answer:
+      "The official NEET helpdesk page currently shows the email neetug2026@nta.ac.in and the contact numbers 011-40759000 and 011-69227700. Students should use those official details if they need exam-related support.",
+  },
+  {
+    question: "Has NTA announced a NEET 2026 answer key challenge window yet?",
+    answer:
+      "We did not see any official NEET 2026 answer key challenge notice on the NEET homepage, documents page, or NTA homepage during our May 4, 2026, 5:59 PM IST review. Students should wait for an official notice before trusting any challenge dates being circulated elsewhere.",
   },
   {
     question: "Should students start checking private and deemed college options now?",
@@ -298,7 +321,7 @@ export default function Neet2026PaperAnalysisPage() {
                 </span>
                 <span className="flex items-center gap-2">
                   <CalendarDays className="size-4 text-accent" />
-                  Updated May 4, 2026, 11:59 AM IST
+                  Updated {reviewedAt}
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock3 className="size-4 text-accent" />
@@ -412,16 +435,16 @@ export default function Neet2026PaperAnalysisPage() {
                     What the official situation looks like on May 4, 2026
                   </h2>
                   <p className="text-base leading-8 text-muted-foreground">
-                    As of Monday, May 4, 2026, 11:59 AM IST, the safest approach
+                    As of Monday, May 4, 2026, 5:59 PM IST, the safest approach
                     is still to separate official communication from unofficial
                     exam-day discussion. The official NEET website still shows
                     exam-cycle notices such as the May 3, 2026 exam-conduct
-                    messaging, while the documents page still shows visible 2026
-                    entries like the admit card notice, advance city intimation,
-                    information bulletin, syllabus, and application-stage
-                    notices. At the same time, we did not see a published 2026
-                    answer key or result notice on the main page or the document
-                    listing during this review.
+                    messaging and the April 26, 2026 admit-card update, while
+                    the documents page still shows visible 2026 entries like
+                    advance city intimation, correction, information bulletin,
+                    syllabus, and application-stage notices. At the same time,
+                    we did not see a published 2026 answer key or result notice
+                    on the main page or the document listing during this review.
                   </p>
                   <div className="grid gap-3">
                     {quickTakeaways.map((item) => (
@@ -462,6 +485,15 @@ export default function Neet2026PaperAnalysisPage() {
                       className="font-medium text-primary underline-offset-4 hover:underline"
                     >
                       NEET helpdesk
+                    </a>
+                    {" "}
+                    and
+                    {" "}
+                    <a
+                      href="https://www.nta.ac.in/"
+                      className="font-medium text-primary underline-offset-4 hover:underline"
+                    >
+                      NTA website
                     </a>
                     . The answer-key status line above is an inference from
                     those official pages.

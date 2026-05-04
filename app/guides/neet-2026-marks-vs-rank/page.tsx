@@ -24,6 +24,7 @@ const description =
   "NEET 2026 marks vs rank guide for students and parents, including official-status context, score-range planning, and practical use for MBBS counselling.";
 const publishedAt = "2026-05-04";
 const updatedAt = "2026-05-04";
+const reviewedAt = "May 4, 2026, 5:59 PM IST";
 const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
@@ -59,7 +60,7 @@ const rangePoints = [
 
 const officialContextPoints = [
   "The official NEET site shows exam-conduct messaging for May 3, 2026, along with the earlier April 12 city intimation and April 26 admit card updates.",
-  "As of our May 4, 2026, 11:59 AM IST review, we did not see an official 2026 answer key or result notice on the main NEET page or documents listing.",
+  "As of our May 4, 2026, 5:59 PM IST review, we did not see an official 2026 answer key or result notice on the main NEET page or documents listing.",
   "The visible 2026 entries on the documents page were still the admit card, city-intimation, bulletin, syllabus, and earlier application notices rather than a 2026 answer key or result item.",
   "That means current marks vs rank discussion should still be used only as a planning estimate, not as a confirmed rank outcome.",
 ] as const;
@@ -78,7 +79,7 @@ const faqs = [
   {
     question: "Is any NEET 2026 rank estimate official right now?",
     answer:
-      "No. As of Monday, May 4, 2026, 11:59 AM IST, our review of the official NEET site did not show a 2026 answer key or result notice yet. So current rank discussions should be treated as unofficial estimates for planning only.",
+      "No. As of Monday, May 4, 2026, 5:59 PM IST, our review of the official NEET site did not show a 2026 answer key or result notice yet. So current rank discussions should be treated as unofficial estimates for planning only.",
   },
   {
     question: "What should students do if their expected marks put them in a grey zone?",
@@ -93,7 +94,12 @@ const faqs = [
   {
     question: "Why should students keep checking the documents page as well as the homepage?",
     answer:
-      "Because official answer-key and result material is often easiest to confirm from the document listing. In our May 4, 2026, 11:59 AM IST review, the visible 2026 entries there were still pre-result items, so marks-vs-rank estimates should remain unofficial planning tools for now.",
+      "Because official answer-key and result material is often easiest to confirm from the document listing. In our May 4, 2026, 5:59 PM IST review, the visible 2026 entries there were still pre-result items, so marks-vs-rank estimates should remain unofficial planning tools for now.",
+  },
+  {
+    question: "Should students change their rank estimate if an unofficial answer key goes viral?",
+    answer:
+      "Only carefully, and only as a planning range. Until NTA publishes an official answer-key notice, students should avoid rebuilding their entire rank expectation around one unofficial key or one social-media claim.",
   },
 ] as const;
 
@@ -188,7 +194,7 @@ export default function Neet2026MarksVsRankPage() {
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/60">
                 <span className="flex items-center gap-2">
                   <CalendarDays className="size-4 text-accent" />
-                  Updated May 4, 2026, 11:59 AM IST
+                  Updated {reviewedAt}
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock3 className="size-4 text-accent" />
