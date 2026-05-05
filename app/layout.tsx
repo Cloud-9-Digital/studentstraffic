@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 import { AppChrome } from "@/components/app/app-chrome";
 import { GoogleAnalytics } from "@/components/google-analytics";
@@ -59,6 +60,7 @@ export default function RootLayout({
           <MetaPixel />
           <AppChrome>{children}</AppChrome>
         </Suspense>
+        <Analytics />
         <Toaster position="top-center" />
         <JsonLd
           data={getStructuredDataGraph([
