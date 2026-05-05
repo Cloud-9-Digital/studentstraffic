@@ -1,4 +1,4 @@
-import { desc, eq, inArray } from "drizzle-orm";
+import { and, desc, eq, inArray, isNull, ne, or } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 
 import { getDb } from "@/lib/db/server";
@@ -221,6 +221,38 @@ function mapWebhookToLeadUpdate(payload: WatiWebhookPayload) {
   }
 }
 
+function buildChangedWatiStatusWhere(
+  localMessageId: string,
+  payload: WatiWebhookPayload,
+  update: ReturnType<typeof mapWebhookToLeadUpdate>
+) {
+  const eventType = getEventType(payload);
+  const whatsappMessageId = getWhatsappMessageId(payload);
+  const templateName = getTemplateName(payload);
+  const changeChecks = [
+    isNull(leads.watiLastEvent),
+    ne(leads.watiLastEvent, eventType),
+    ne(leads.watiMessageStatus, update.watiMessageStatus),
+  ];
+
+  if (whatsappMessageId) {
+    changeChecks.push(
+      or(
+        isNull(leads.watiWhatsappMessageId),
+        ne(leads.watiWhatsappMessageId, whatsappMessageId)
+      )!
+    );
+  }
+
+  if (templateName) {
+    changeChecks.push(
+      or(isNull(leads.watiTemplateName), ne(leads.watiTemplateName, templateName))!
+    );
+  }
+
+  return and(eq(leads.watiLocalMessageId, localMessageId), or(...changeChecks));
+}
+
 async function syncInboundMessageLead(payload: WatiWebhookPayload) {
   const db = getDb();
   if (!db) {
@@ -230,6 +262,19 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
   const phone = getInboundPhone(payload);
   if (!phone) {
     return { created: false, skipped: true };
+  }
+
+  const messageId = getInboundMessageId(payload);
+  if (messageId) {
+    const [existingMessage] = await db
+      .select({ id: leads.id })
+      .from(leads)
+      .where(eq(leads.watiWhatsappMessageId, messageId))
+      .limit(1);
+
+    if (existingMessage) {
+      return { created: false, skipped: false };
+    }
   }
 
   const phoneCandidates = buildPhoneCandidates(phone);
@@ -249,7 +294,6 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
   const fullName = getInboundName(payload) ?? "WhatsApp Lead";
   const messageText = getInboundMessageText(payload);
   const conversationId = getConversationId(payload);
-  const messageId = getInboundMessageId(payload);
   const eventType = getEventType(payload);
   const sourceQuery: Record<string, string | string[]> = {};
   const clientContext = {
@@ -364,10 +408,11 @@ export async function POST(request: NextRequest) {
       continue;
     }
 
+    const update = mapWebhookToLeadUpdate(payload);
     await db
       .update(leads)
-      .set(mapWebhookToLeadUpdate(payload))
-      .where(eq(leads.watiLocalMessageId, localMessageId));
+      .set(update)
+      .where(buildChangedWatiStatusWhere(localMessageId, payload, update));
 
     processed += 1;
   }

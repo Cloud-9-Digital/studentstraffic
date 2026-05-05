@@ -190,6 +190,13 @@
       "when": 1777939800000,
       "tag": "0031_seminar_attendee_count",
       "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1777980600000,
+      "tag": "0032_wati_webhook_lookup_index",
+      "breakpoints": true
     }
   ]
 }

@@ -1,6 +1,6 @@
 import "server-only";
 
-import { and, eq } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import { securityRateLimits } from "@/lib/db/schema";
@@ -106,39 +106,60 @@ export async function consumeRateLimit(
   }
 
   const now = new Date();
-  const [row] = await db
-    .select({
-      id: securityRateLimits.id,
-      attemptCount: securityRateLimits.attemptCount,
-      windowStartedAt: securityRateLimits.windowStartedAt,
-      blockedUntil: securityRateLimits.blockedUntil,
-    })
-    .from(securityRateLimits)
-    .where(
-      and(
-        eq(securityRateLimits.scope, rule.scope),
-        eq(securityRateLimits.identifier, rule.identifier)
-      )
+  const blockUntil = new Date(now.getTime() + getBlockMs(rule));
+  const windowSeconds = rule.windowMs / 1000;
+  const { rows } = await db.execute<{
+    attemptCount: number;
+    windowStartedAt: Date;
+    blockedUntil: Date | null;
+  }>(sql`
+    INSERT INTO security_rate_limits (
+      scope,
+      identifier,
+      attempt_count,
+      window_started_at,
+      blocked_until,
+      updated_at
     )
-    .limit(1);
-
-  if (!row) {
-    await db.insert(securityRateLimits).values({
-      scope: rule.scope,
-      identifier: rule.identifier,
-      attemptCount: 1,
-      windowStartedAt: now,
-      blockedUntil: null,
-      updatedAt: now,
-    });
-
-    return {
-      allowed: true,
-      attemptCount: 1,
-      remaining: Math.max(rule.limit - 1, 0),
-      retryAfterMs: 0,
-    };
-  }
+    VALUES (${rule.scope}, ${rule.identifier}, 1, ${now}, NULL, ${now})
+    ON CONFLICT (scope, identifier) DO UPDATE SET
+      attempt_count = CASE
+        WHEN security_rate_limits.blocked_until IS NOT NULL
+          AND security_rate_limits.blocked_until > ${now}
+          THEN security_rate_limits.attempt_count
+        WHEN security_rate_limits.window_started_at + make_interval(secs => ${windowSeconds}) <= ${now}
+          THEN 1
+        ELSE security_rate_limits.attempt_count + 1
+      END,
+      window_started_at = CASE
+        WHEN security_rate_limits.blocked_until IS NOT NULL
+          AND security_rate_limits.blocked_until > ${now}
+          THEN security_rate_limits.window_started_at
+        WHEN security_rate_limits.window_started_at + make_interval(secs => ${windowSeconds}) <= ${now}
+          THEN ${now}
+        ELSE security_rate_limits.window_started_at
+      END,
+      blocked_until = CASE
+        WHEN security_rate_limits.blocked_until IS NOT NULL
+          AND security_rate_limits.blocked_until > ${now}
+          THEN security_rate_limits.blocked_until
+        WHEN security_rate_limits.window_started_at + make_interval(secs => ${windowSeconds}) > ${now}
+          AND security_rate_limits.attempt_count + 1 > ${rule.limit}
+          THEN ${blockUntil}
+        ELSE NULL
+      END,
+      updated_at = CASE
+        WHEN security_rate_limits.blocked_until IS NOT NULL
+          AND security_rate_limits.blocked_until > ${now}
+          THEN security_rate_limits.updated_at
+        ELSE ${now}
+      END
+    RETURNING
+      attempt_count AS "attemptCount",
+      window_started_at AS "windowStartedAt",
+      blocked_until AS "blockedUntil"
+  `);
+  const [row] = rows;
 
   const blockedUntilTime = row.blockedUntil?.getTime() ?? 0;
   if (blockedUntilTime > now.getTime()) {
@@ -150,37 +171,10 @@ export async function consumeRateLimit(
     };
   }
 
-  const windowExpired =
-    row.windowStartedAt.getTime() + rule.windowMs <= now.getTime();
-  const nextAttemptCount = windowExpired ? 1 : row.attemptCount + 1;
-  const nextBlockedUntil =
-    !windowExpired && nextAttemptCount > rule.limit
-      ? new Date(now.getTime() + getBlockMs(rule))
-      : null;
-
-  await db
-    .update(securityRateLimits)
-    .set({
-      attemptCount: nextAttemptCount,
-      windowStartedAt: windowExpired ? now : row.windowStartedAt,
-      blockedUntil: nextBlockedUntil,
-      updatedAt: now,
-    })
-    .where(eq(securityRateLimits.id, row.id));
-
-  if (nextBlockedUntil) {
-    return {
-      allowed: false,
-      attemptCount: nextAttemptCount,
-      remaining: 0,
-      retryAfterMs: nextBlockedUntil.getTime() - now.getTime(),
-    };
-  }
-
   return {
     allowed: true,
-    attemptCount: nextAttemptCount,
-    remaining: Math.max(rule.limit - nextAttemptCount, 0),
+    attemptCount: row.attemptCount,
+    remaining: Math.max(rule.limit - row.attemptCount, 0),
     retryAfterMs: 0,
   };
 }

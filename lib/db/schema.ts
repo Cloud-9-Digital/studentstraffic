@@ -367,6 +367,7 @@ export const leads = pgTable(
     index("leads_gclid_idx").on(table.gclid),
     index("leads_fbclid_idx").on(table.fbclid),
     index("leads_wati_local_message_id_idx").on(table.watiLocalMessageId),
+    index("leads_wati_whatsapp_message_id_idx").on(table.watiWhatsappMessageId),
   ]
 );
 
