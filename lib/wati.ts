@@ -16,10 +16,15 @@ type WatiTemplateParameter = {
 
 type SendWatiTemplateOptions = {
   leadId?: number;
+  skipInboundLeadCheck?: boolean;
   whatsappNumber: string;
   templateName: string;
   broadcastName: string;
   parameters: WatiTemplateParameter[];
+};
+
+type WatiDispatchOptions = {
+  skipInboundLeadCheck?: boolean;
 };
 
 type LeadWhatsAppPayload = {
@@ -192,7 +197,7 @@ async function updateLeadWatiState(
 
 async function sendTemplateMessage(options: SendWatiTemplateOptions) {
   // Skip sending WhatsApp messages for WATI inbound leads
-  if (options.leadId) {
+  if (options.leadId && !options.skipInboundLeadCheck) {
     const db = getDb();
     if (db) {
       const [lead] = await db
@@ -417,12 +422,14 @@ export async function fetchLatestWatiMessages(
 
 export async function sendLeadWhatsAppMessage(
   payload: LeadWhatsAppPayload,
-  leadId?: number
+  leadId?: number,
+  options?: WatiDispatchOptions
 ) {
   const template = watiTemplates.standardLead;
 
   return sendTemplateMessage({
     leadId,
+    skipInboundLeadCheck: options?.skipInboundLeadCheck,
     whatsappNumber: payload.phone,
     templateName: template.templateName,
     broadcastName: template.buildBroadcastName(payload),
@@ -432,12 +439,14 @@ export async function sendLeadWhatsAppMessage(
 
 export async function sendSeminarLeadWhatsAppMessage(
   payload: SeminarWhatsAppPayload,
-  leadId?: number
+  leadId?: number,
+  options?: WatiDispatchOptions
 ) {
   const template = watiTemplates.seminarLead;
 
   return sendTemplateMessage({
     leadId,
+    skipInboundLeadCheck: options?.skipInboundLeadCheck,
     whatsappNumber: payload.phone,
     templateName: template.templateName,
     broadcastName: template.buildBroadcastName(payload),
@@ -447,12 +456,14 @@ export async function sendSeminarLeadWhatsAppMessage(
 
 export async function sendSeminarRegistrationWhatsAppMessage(
   payload: SeminarWhatsAppPayload,
-  leadId?: number
+  leadId?: number,
+  options?: WatiDispatchOptions
 ) {
   const template = watiTemplates.seminarRegistration;
 
   return sendTemplateMessage({
     leadId,
+    skipInboundLeadCheck: options?.skipInboundLeadCheck,
     whatsappNumber: payload.phone,
     templateName: template.templateName,
     broadcastName: template.buildBroadcastName(payload),

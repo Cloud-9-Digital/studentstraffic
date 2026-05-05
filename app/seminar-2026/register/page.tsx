@@ -47,7 +47,7 @@ export default function SeminarRegistrationPage() {
             <div className="mb-6 space-y-2">
               <h2 className="text-xl font-semibold">Student Registration</h2>
               <p className="text-sm text-muted-foreground">
-                Fill in your details below. We'll send you the venue address and timing on
+                Fill in your details below. We&apos;ll send you the venue address and timing on
                 WhatsApp.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function SeminarRegistrationPage() {
               <li className="flex gap-3">
                 <span className="text-[#c17f3b]">✓</span>
                 <span>
-                  You'll receive WhatsApp confirmation with exact venue address and timing
+                  You&apos;ll receive WhatsApp confirmation with exact venue address and timing
                 </span>
               </li>
               <li className="flex gap-3">

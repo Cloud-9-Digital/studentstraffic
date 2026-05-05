@@ -3,6 +3,7 @@
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { after } from "next/server";
 import { z } from "zod";
 
 import {
@@ -218,8 +219,7 @@ export async function submitLeadAction(
 
       insertedLeadId = insertedLead?.id;
 
-      void Promise.allSettled([
-        syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+      const handoffPayload = buildLeadHandoffPayload({
           leadKind: "general_enquiry",
           websiteLeadId: insertedLeadId,
           submittedAt: submittedAt.toISOString(),
@@ -248,7 +248,10 @@ export async function submitLeadAction(
           ipAddress: ipAddress ?? undefined,
           acceptLanguage: headerStore.get("accept-language") ?? undefined,
           clientContext,
-        })),
+        });
+
+      after(() => Promise.allSettled([
+        syncLeadDestinations(insertedLeadId, handoffPayload),
         sendLeadWhatsAppMessage({
           fullName: data.fullName,
           phone: data.phone,
@@ -256,8 +259,8 @@ export async function submitLeadAction(
           countrySlug: emptyToUndefined(data.countrySlug),
           universitySlug: emptyToUndefined(data.universitySlug),
           sourcePath: data.sourcePath,
-        }, insertedLeadId),
-      ]);
+        }, insertedLeadId, { skipInboundLeadCheck: true }),
+      ]));
     } else {
       console.warn("Lead submission skipped DB persistence because DATABASE_URL is missing.");
     }

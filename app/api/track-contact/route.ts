@@ -1,3 +1,4 @@
+import { after } from "next/server";
 import { z } from "zod";
 
 import { getIpAddress } from "@/app/_actions/form-helpers";
@@ -13,17 +14,43 @@ const trackContactSchema = z.object({
   pageUrl: z.string().trim().optional(),
 });
 
+const botUserAgentPattern =
+  /bot|crawl|crawler|spider|slurp|preview|facebookexternalhit|whatsapp|telegram|discord|linkedinbot|google-extended|gpt|claude|perplexity/i;
+
+function isTrustedBrowserRequest(request: Request) {
+  const userAgent = request.headers.get("user-agent") ?? "";
+  if (botUserAgentPattern.test(userAgent)) {
+    return false;
+  }
+
+  const requestUrl = new URL(request.url);
+  const origin = request.headers.get("origin");
+  const referrer = request.headers.get("referer");
+
+  try {
+    if (origin && new URL(origin).origin !== requestUrl.origin) {
+      return false;
+    }
+
+    if (referrer && new URL(referrer).origin !== requestUrl.origin) {
+      return false;
+    }
+  } catch {
+    return false;
+  }
+
+  return Boolean(origin || referrer);
+}
+
 export async function POST(request: Request) {
+  if (!isTrustedBrowserRequest(request)) {
+    return new Response(null, { status: 204 });
+  }
+
   const parsed = trackContactSchema.safeParse(await request.json().catch(() => null));
 
   if (!parsed.success) {
     return new Response(null, { status: 400 });
-  }
-
-  const db = getDb();
-
-  if (!db) {
-    return new Response(null, { status: 204 });
   }
 
   const cookieStore = {
@@ -40,35 +67,46 @@ export async function POST(request: Request) {
   };
 
   const tracking = getTrackingSnapshot(cookieStore, {});
+  const ipAddress = getIpAddress({
+    get(name: string) {
+      return request.headers.get(name);
+    },
+  });
+  const userAgent = request.headers.get("user-agent");
+  const referrer = request.headers.get("referer");
 
-  await db.insert(contactClickEvents).values({
-    visitorId: tracking.visitorId,
-    channel: parsed.data.channel,
-    location: parsed.data.location,
-    href: parsed.data.href,
-    pagePath: parsed.data.pagePath,
-    pageUrl: parsed.data.pageUrl,
-    referrer: request.headers.get("referer"),
-    initialLandingPath: tracking.initialLandingPath,
-    initialLandingUrl: tracking.initialLandingUrl,
-    initialReferrer: tracking.initialReferrer,
-    initialUtmLandingUrl: tracking.initialUtmLandingUrl,
-    utmSource: tracking.utmSource,
-    utmMedium: tracking.utmMedium,
-    utmCampaign: tracking.utmCampaign,
-    utmTerm: tracking.utmTerm,
-    utmContent: tracking.utmContent,
-    gclid: tracking.gclid,
-    fbclid: tracking.fbclid,
-    gbraid: tracking.gbraid,
-    wbraid: tracking.wbraid,
-    ttclid: tracking.ttclid,
-    userAgent: request.headers.get("user-agent"),
-    ipAddress: getIpAddress({
-      get(name: string) {
-        return request.headers.get(name);
-      },
-    }),
+  after(async () => {
+    const db = getDb();
+
+    if (!db) {
+      return;
+    }
+
+    await db.insert(contactClickEvents).values({
+      visitorId: tracking.visitorId,
+      channel: parsed.data.channel,
+      location: parsed.data.location,
+      href: parsed.data.href,
+      pagePath: parsed.data.pagePath,
+      pageUrl: parsed.data.pageUrl,
+      referrer,
+      initialLandingPath: tracking.initialLandingPath,
+      initialLandingUrl: tracking.initialLandingUrl,
+      initialReferrer: tracking.initialReferrer,
+      initialUtmLandingUrl: tracking.initialUtmLandingUrl,
+      utmSource: tracking.utmSource,
+      utmMedium: tracking.utmMedium,
+      utmCampaign: tracking.utmCampaign,
+      utmTerm: tracking.utmTerm,
+      utmContent: tracking.utmContent,
+      gclid: tracking.gclid,
+      fbclid: tracking.fbclid,
+      gbraid: tracking.gbraid,
+      wbraid: tracking.wbraid,
+      ttclid: tracking.ttclid,
+      userAgent,
+      ipAddress,
+    });
   });
 
   return new Response(null, { status: 204 });

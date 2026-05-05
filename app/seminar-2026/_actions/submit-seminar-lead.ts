@@ -3,6 +3,7 @@
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { after } from "next/server";
 import { isValidPhoneNumber, parsePhoneNumber } from "libphonenumber-js/min";
 import { z } from "zod";
 
@@ -220,8 +221,7 @@ export async function submitSeminarLeadAction(
 
       insertedLeadId = insertedLead?.id;
 
-      void Promise.allSettled([
-        syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
+      const handoffPayload = buildLeadHandoffPayload({
           leadKind: "seminar_enquiry",
           websiteLeadId: insertedLeadId,
           submittedAt: submittedAt.toISOString(),
@@ -252,14 +252,17 @@ export async function submitSeminarLeadAction(
           ipAddress: ipAddress ?? undefined,
           acceptLanguage: headerStore.get("accept-language") ?? undefined,
           clientContext,
-        })),
+        });
+
+      after(() => Promise.allSettled([
+        syncLeadDestinations(insertedLeadId, handoffPayload),
         sendSeminarRegistrationWhatsAppMessage({
           fullName: data.fullName,
           phone: normalizedPhone,
           seminarEvent: data.seminarEvent,
           city: data.city,
-        }, insertedLeadId),
-      ]);
+        }, insertedLeadId, { skipInboundLeadCheck: true }),
+      ]));
     } else {
       console.warn(
         "Seminar lead submission skipped DB persistence because DATABASE_URL is missing."
