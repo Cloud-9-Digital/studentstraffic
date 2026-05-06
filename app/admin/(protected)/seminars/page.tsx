@@ -196,8 +196,7 @@ export default async function AdminSeminarAnalyticsPage({
           .from(leads)
           .where(whereClause)
           .groupBy(eventExpr)
-          .orderBy(desc(sql`count(*)`), asc(eventExpr))
-          .limit(8),
+          .orderBy(desc(sql`count(*)`), asc(eventExpr)),
         db
           .select({
             label: cityExpr,
@@ -490,7 +489,7 @@ export default async function AdminSeminarAnalyticsPage({
         </section>
 
         <BreakdownTable
-          title="Top Seminar Events"
+          title="Seminar Events"
           subtitle="Configured seminar dates, including events with no leads yet."
           rows={allEventRows}
           total={totalLeads}

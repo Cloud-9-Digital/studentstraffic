@@ -19,12 +19,12 @@ import {
 
 const path = "/guides/neet-2026-expected-cut-off";
 const title =
-  "NEET 2026 Expected Cut Off: Unofficial Category-Wise Estimates After Exam";
+  "NEET 2026 Expected Cut Off: Category-Wise Estimate While Official Answer Key Is Awaited";
 const description =
-  "NEET 2026 expected cut off guide for students and parents, updated after our May 5, 2026, 12:02 PM IST official-source check, with unofficial estimate context, no official answer key or result notice yet, category-wise planning, and practical next steps for MBBS counselling.";
+  "NEET 2026 expected cut off guide for students and parents, updated after our May 6, 2026, 6:08 PM IST official-source check, with unofficial estimate context, no official 2026 answer key or result notice visible yet, category-wise planning, and practical next steps for MBBS counselling.";
 const publishedAt = "2026-05-04";
-const updatedAt = "2026-05-05";
-const reviewedAt = "May 5, 2026, 12:02 PM IST";
+const updatedAt = "2026-05-06";
+const reviewedAt = "May 6, 2026, 6:08 PM IST";
 const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
@@ -61,8 +61,9 @@ const keyPoints = [
 const officialContextPoints = [
   "The official NEET website shows that NEET (UG) 2026 was conducted on May 3, 2026.",
   "The same site also shows the advance city intimation update published on April 12, 2026, the admit card update published on April 26, 2026, and visible public notices around dress code, biometric exception, and scribe support.",
-  "As of our May 5, 2026, 12:02 PM IST review, we did not see an official 2026 answer key or result notice on the NEET main page or documents listing.",
-  "The visible 2026 entries on the documents page were still pre-result items such as the exam-conduct notice, dress-code advisory, biometric-exception advisory, admit-card notice, scribe portal notice, advance city intimation, bulletin, syllabus, and application notices, while the visible answer-key and result entries there were still for 2025.",
+  "As of our May 6, 2026, 6:08 PM IST review, we did not see an official 2026 answer key or result notice on the NEET main page, documents listing, or NTA homepage.",
+  "The current page-one visible 2026 entries on the documents page include the admit-card notice, the scribe-support notice, advance city intimation, correction window, application notices, the information bulletin, syllabus, and the document-updation advisory, while the visible answer-key and result entries there were still for 2025.",
+  "The separate NEET public-notices page was still showing older pre-exam notices and a Last Updated date of Apr 12, 2026 during our review, so students should cross-check the homepage and documents page too.",
   "We also checked the main NTA website and did not find a separate NEET 2026 answer-key or result release notice mirrored there.",
 ] as const;
 
@@ -80,7 +81,7 @@ const faqs = [
   {
     question: "Is there any official NEET 2026 cut off notice yet?",
     answer:
-      "No official expected cut off notice is how this stage usually works. As of Tuesday, May 5, 2026, 12:02 PM IST, our check of the official NEET site did not show a 2026 answer key or result notice yet either, so expected cut off discussion should still be treated as unofficial planning content.",
+      "No official expected cut off notice is how this stage usually works. As of Wednesday, May 6, 2026, 6:08 PM IST, our check of the official NEET site and NTA homepage did not show a 2026 answer key or result notice yet either, so expected cut off discussion should still be treated as unofficial planning content.",
   },
   {
     question: "What should students do with expected cut off information?",
@@ -95,12 +96,17 @@ const faqs = [
   {
     question: "What official pages should students keep checking?",
     answer:
-      "Students should keep checking the official NEET homepage, the NEET documents page, the NEET helpdesk page, and the NTA homepage. On our May 5, 2026, 12:02 PM IST review, the documents page was still showing visible 2026 pre-result items rather than a 2026 answer key or result posting.",
+      "Students should keep checking the official NEET homepage, the NEET documents page, the NEET public notices page, the NEET helpdesk page, and the NTA homepage. On our May 6, 2026, 6:08 PM IST review, the documents page was visibly carrying the admit-card notice, the scribe-support notice, and earlier 2026 application-stage items, but not a 2026 answer key or result posting. The separate public-notices page still looked older, with pre-exam items and a footer date of Apr 12, 2026.",
   },
   {
     question: "Has any official NEET 2026 answer key challenge notice appeared yet?",
     answer:
-      "Not in our May 5, 2026, 12:02 PM IST source check. We did not see a 2026 answer key challenge notice on the official NEET homepage or the documents listing, so any challenge-window discussion should still be treated cautiously until NTA publishes it.",
+      "Not in our May 6, 2026, 6:08 PM IST source check. We did not see a 2026 answer key challenge notice on the official NEET homepage, the documents listing, or the NTA homepage, so any challenge-window discussion should still be treated cautiously until NTA publishes it.",
+  },
+  {
+    question: "Has NTA announced the NEET 2026 result date or official cut off yet?",
+    answer:
+      "We did not see a separate NEET 2026 result-date notice, result notice, or official cut off posting on the official NEET homepage, documents page, or NTA homepage during our May 6, 2026, 6:08 PM IST review. Right now, expected cut off remains planning guidance, not official NTA communication.",
   },
   {
     question: "Why should students avoid calling today’s cut off estimate official?",
@@ -110,12 +116,17 @@ const faqs = [
   {
     question: "Which latest official notices are visible while students wait?",
     answer:
-      "In our May 5, 2026, 12:02 PM IST review, the official NEET site was visibly carrying the May 3 exam-conduct notice along with notices on dress code, biometric exception, admit cards, and scribe support. Those notices are official and useful, but they do not change the fact that expected cut off discussion is still unofficial planning content.",
+      "In our May 6, 2026, 6:08 PM IST review, the official NEET site was visibly carrying the May 3 exam-conduct notice along with notices on dress code, biometric exception, admit cards, and scribe support, while the documents page was showing the admit-card notice, scribe-support notice, and earlier 2026 city-intimation and application-stage entries. Those notices are official and useful, but they do not change the fact that expected cut off discussion is still unofficial planning content.",
   },
   {
     question: "Should students use a college predictor with expected cut off ranges?",
     answer:
       "Yes. A college predictor becomes more useful when students enter a realistic score range instead of one optimistic number. That helps families compare safer, possible, and ambitious options while official NEET updates are still pending.",
+  },
+  {
+    question: "What is the latest visible status on the NEET documents page?",
+    answer:
+      "In our May 6, 2026, 6:08 PM IST review, the page-one visible 2026 entries on the NEET documents page included the admit-card notice, the scribe-support notice, advance city intimation, correction in particulars, application notices, the information bulletin, the syllabus, and the document-updation advisory. The visible provisional answer key, final answer key, and result items on that listing were still for NEET 2025.",
   },
 ] as const;
 
@@ -290,6 +301,15 @@ export default function Neet2026ExpectedCutOffPage() {
                     className="font-medium text-primary underline-offset-4 hover:underline"
                   >
                     documents page
+                  </a>
+                  {" "}
+                  and
+                  {" "}
+                  <a
+                    href="https://www.nta.ac.in/"
+                    className="font-medium text-primary underline-offset-4 hover:underline"
+                  >
+                    NTA homepage
                   </a>
                   . The answer-key status note here is an inference from those
                   pages.
