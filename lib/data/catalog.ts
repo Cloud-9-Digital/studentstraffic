@@ -1,7 +1,7 @@
 import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
-import { and, asc, desc, eq, gte, ilike, lte, or, sql } from "drizzle-orm";
+import { and, asc, eq } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
 import type {
@@ -911,6 +911,13 @@ export async function listFinderPrograms(filters: FinderFilters) {
       return false;
     }
 
+    if (
+      filters.universityType &&
+      program.university.type !== filters.universityType
+    ) {
+      return false;
+    }
+
     if (filters.course && program.course.slug !== filters.course) {
       return false;
     }
@@ -980,21 +987,36 @@ export async function getFinderProgramsPage(
   };
 }
 
-const EMPTY_CARD_PAGE: FinderCardProgramsPage = {
-  programs: [],
-  totalItems: 0,
-  totalPages: 1,
-  currentPage: 1,
-  pageSize: finderPageSize,
-  hasPreviousPage: false,
-  hasNextPage: false,
-};
+function toFinderCardProgram(program: FinderProgram): FinderCardProgram {
+  return {
+    university: {
+      slug: program.university.slug,
+      name: program.university.name,
+      city: program.university.city,
+      type: program.university.type,
+      logoUrl: program.university.logoUrl,
+      coverImageUrl: program.university.coverImageUrl,
+      featured: program.university.featured,
+    },
+    country: {
+      slug: program.country.slug,
+      name: program.country.name,
+    },
+    course: {
+      slug: program.course.slug,
+      shortName: program.course.shortName,
+    },
+    offering: {
+      slug: program.offering.slug,
+      annualTuitionUsd: program.offering.annualTuitionUsd,
+      officialFeeCurrency: program.offering.officialFeeCurrency,
+      officialAnnualTuitionAmount:
+        program.offering.officialAnnualTuitionAmount,
+      featured: program.offering.featured,
+    },
+  };
+}
 
-/**
- * DB-level finder query — filters, sorts, and paginates in Postgres.
- * Returns only the slim FinderCardProgram fields needed for the card list.
- * Replaces the in-memory getFinderProgramsPage for the /universities explorer.
- */
 export async function queryFinderCardProgramsPage(
   filters: FinderFilters,
   page = 1,
@@ -1006,162 +1028,14 @@ export async function queryFinderCardProgramsPage(
   cacheTag("catalog");
   cacheTag("finder");
 
-  const db = getDb();
-  if (!db) return { ...EMPTY_CARD_PAGE, pageSize };
-
-  // Build WHERE conditions
-  const conditions = [
-    eq(universitiesTable.published, true),
-    eq(programOfferingsTable.published, true),
-  ];
-
-  if (filters.country) {
-    conditions.push(eq(countriesTable.slug, filters.country));
-  }
-  if (filters.course) {
-    conditions.push(eq(coursesTable.slug, filters.course));
-  }
-  if (filters.medium) {
-    conditions.push(eq(programOfferingsTable.medium, filters.medium));
-  }
-  if (filters.feeMin != null) {
-    conditions.push(gte(programOfferingsTable.annualTuitionUsd, filters.feeMin));
-  }
-  if (filters.feeMax != null) {
-    conditions.push(lte(programOfferingsTable.annualTuitionUsd, filters.feeMax));
-  }
-  if (filters.intake) {
-    // Postgres array contains
-    conditions.push(
-      sql`${programOfferingsTable.intakeMonths} @> ARRAY[${filters.intake}]::text[]`,
-    );
-  }
-  if (filters.universityType) {
-    conditions.push(eq(universitiesTable.type, filters.universityType));
-  }
-  if (filters.q) {
-    const q = `%${filters.q}%`;
-    const searchCondition = or(
-      ilike(universitiesTable.name, q),
-      ilike(universitiesTable.city, q),
-      ilike(countriesTable.name, q),
-      ilike(coursesTable.shortName, q),
-    );
-
-    if (searchCondition) {
-      conditions.push(searchCondition);
-    }
-  }
-
-  const where = conditions.length > 0 ? and(...conditions) : undefined;
-
-  // Sort order — replicate JS sort logic in SQL
-  const sort = getFinderSort(filters.sort);
-  // Push rows with annualTuitionUsd = 0 (TBD) to end for all sort modes
-  const tbd = sql`CASE WHEN ${programOfferingsTable.annualTuitionUsd} = 0 THEN 1 ELSE 0 END`;
-
-  let orderClauses;
-  switch (sort) {
-    case "tuition_asc":
-      orderClauses = [asc(tbd), asc(programOfferingsTable.annualTuitionUsd), asc(universitiesTable.name)];
-      break;
-    case "tuition_desc":
-      orderClauses = [asc(tbd), desc(programOfferingsTable.annualTuitionUsd), asc(universitiesTable.name)];
-      break;
-    case "name_asc":
-      orderClauses = [asc(universitiesTable.name), asc(coursesTable.shortName)];
-      break;
-    default: // recommended: featured first, then cheapest, then name
-      orderClauses = [
-        desc(programOfferingsTable.featured),
-        asc(tbd),
-        asc(programOfferingsTable.annualTuitionUsd),
-        asc(universitiesTable.name),
-      ];
-  }
-
-  const currentPage = Math.max(page, 1);
-  const offset = (currentPage - 1) * pageSize;
-
-  const rows = await db
-    .select({
-      offeringSlug: programOfferingsTable.slug,
-      annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
-      officialFeeCurrency: programOfferingsTable.officialFeeCurrency,
-      officialAnnualTuitionAmount:
-        programOfferingsTable.officialAnnualTuitionAmount,
-      offeringFeatured: programOfferingsTable.featured,
-      uniSlug: universitiesTable.slug,
-      uniName: universitiesTable.name,
-      uniCity: universitiesTable.city,
-      uniType: universitiesTable.type,
-      uniLogoUrl: universitiesTable.logoUrl,
-      uniCoverImageUrl: universitiesTable.coverImageUrl,
-      uniFeatured: universitiesTable.featured,
-      countrySlug: countriesTable.slug,
-      countryName: countriesTable.name,
-      courseSlug: coursesTable.slug,
-      courseShortName: coursesTable.shortName,
-      totalCount: sql<number>`count(*) over()`,
-    })
-    .from(programOfferingsTable)
-    .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
-    .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
-    .where(where)
-    .orderBy(...orderClauses)
-    .limit(pageSize)
-    .offset(offset);
-
-  const totalItems =
-    rows.length > 0
-      ? Number(rows[0]?.totalCount ?? 0)
-      : currentPage > 1
-        ? Number(
-            (
-              await db
-                .select({ total: sql<string>`count(*)` })
-                .from(programOfferingsTable)
-                .innerJoin(
-                  universitiesTable,
-                  eq(programOfferingsTable.universityId, universitiesTable.id),
-                )
-                .innerJoin(
-                  countriesTable,
-                  eq(universitiesTable.countryId, countriesTable.id),
-                )
-                .innerJoin(
-                  coursesTable,
-                  eq(programOfferingsTable.courseId, coursesTable.id),
-                )
-                .where(where)
-            )[0]?.total ?? 0,
-          )
-        : 0;
+  const allPrograms = await listFinderPrograms(filters);
+  const totalItems = allPrograms.length;
   const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
-  const safePage = Math.min(currentPage, totalPages);
-
-  const programs: FinderCardProgram[] = rows.map((row) => ({
-    university: {
-      slug: row.uniSlug,
-      name: row.uniName,
-      city: row.uniCity,
-      type: row.uniType as "Public" | "Private",
-      logoUrl: row.uniLogoUrl ?? undefined,
-      coverImageUrl: row.uniCoverImageUrl ?? undefined,
-      featured: row.uniFeatured,
-    },
-    country: { slug: row.countrySlug, name: row.countryName },
-    course: { slug: row.courseSlug, shortName: row.courseShortName },
-    offering: {
-        slug: row.offeringSlug,
-        annualTuitionUsd: row.annualTuitionUsd,
-        officialFeeCurrency: row.officialFeeCurrency ?? undefined,
-        officialAnnualTuitionAmount:
-          row.officialAnnualTuitionAmount ?? undefined,
-        featured: row.offeringFeatured,
-      },
-  }));
+  const safePage = Math.min(Math.max(page, 1), totalPages);
+  const start = (safePage - 1) * pageSize;
+  const programs = allPrograms
+    .slice(start, start + pageSize)
+    .map(toFinderCardProgram);
 
   return {
     programs,
@@ -1181,94 +1055,39 @@ export async function getFinderOptions(): Promise<FinderOptions> {
   cacheTag("catalog");
   cacheTag("finder");
 
-  const db = getDb();
-  if (!db) {
-    return {
-      countries: [],
-      courses: [],
-      mediums: [],
-      intakes: [],
-    };
+  const programs = await getFinderProgramsBase();
+  const countriesBySlug = new Map<string, FinderCountryOption>();
+  const coursesBySlug = new Map<string, FinderCourseOption>();
+  const mediums = new Set<ProgramOffering["medium"]>();
+  const intakes = new Set<string>();
+
+  for (const program of programs) {
+    countriesBySlug.set(program.country.slug, {
+      slug: program.country.slug,
+      name: program.country.name,
+    });
+    coursesBySlug.set(program.course.slug, {
+      slug: program.course.slug,
+      shortName: program.course.shortName,
+    });
+    mediums.add(program.offering.medium);
+    for (const intake of program.offering.intakeMonths) {
+      intakes.add(intake);
+    }
   }
 
-  const [countryRows, courseRows, mediumRows, intakeRows] = await Promise.all([
-    db
-      .selectDistinct({
-        slug: countriesTable.slug,
-        name: countriesTable.name,
-      })
-      .from(countriesTable)
-      .innerJoin(universitiesTable, eq(universitiesTable.countryId, countriesTable.id))
-      .innerJoin(programOfferingsTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-      .where(
-        and(
-          eq(universitiesTable.published, true),
-          eq(programOfferingsTable.published, true),
-        ),
-      )
-      .orderBy(asc(countriesTable.name)),
-    db
-      .selectDistinct({
-        slug: coursesTable.slug,
-        shortName: coursesTable.shortName,
-      })
-      .from(coursesTable)
-      .innerJoin(programOfferingsTable, eq(programOfferingsTable.courseId, coursesTable.id))
-      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-      .where(
-        and(
-          eq(universitiesTable.published, true),
-          eq(programOfferingsTable.published, true),
-        ),
-      )
-      .orderBy(asc(coursesTable.shortName)),
-    db
-      .selectDistinct({
-        medium: programOfferingsTable.medium,
-      })
-      .from(programOfferingsTable)
-      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-      .where(
-        and(
-          eq(universitiesTable.published, true),
-          eq(programOfferingsTable.published, true),
-        ),
-      )
-      .orderBy(asc(programOfferingsTable.medium)),
-    db
-      .select({
-        intakeMonths: programOfferingsTable.intakeMonths,
-      })
-      .from(programOfferingsTable)
-      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-      .where(
-        and(
-          eq(universitiesTable.published, true),
-          eq(programOfferingsTable.published, true),
-        ),
-      ),
-  ]);
-
-  const countries: FinderCountryOption[] = countryRows.map((country) => ({
-    slug: country.slug,
-    name: country.name,
-  }));
-
-  const courses: FinderCourseOption[] = courseRows.map((course) => ({
-    slug: course.slug,
-    shortName: course.shortName,
-  }));
-
-  const mediums = mediumRows.map(
-    (row) => row.medium as ProgramOffering["medium"],
+  const countries = [...countriesBySlug.values()].sort((left, right) =>
+    left.name.localeCompare(right.name),
   );
-  const intakes = [...new Set(intakeRows.flatMap((row) => row.intakeMonths))].sort();
+  const courses = [...coursesBySlug.values()].sort((left, right) =>
+    left.shortName.localeCompare(right.shortName),
+  );
 
   return {
     countries,
     courses,
-    mediums,
-    intakes,
+    mediums: [...mediums].sort(),
+    intakes: [...intakes].sort(),
   };
 }
 
