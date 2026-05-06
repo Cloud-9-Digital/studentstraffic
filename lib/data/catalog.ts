@@ -70,11 +70,16 @@ type CatalogSnapshot = {
   indiaColleges: IndiaMbbsCard[];
 };
 
-type DatabaseClient = NonNullable<ReturnType<typeof getDb>>;
-
 const globalForCatalogWarnings = globalThis as typeof globalThis & {
   __catalogDbWarningShown?: boolean;
+  __catalogSnapshotCache?: {
+    value: CatalogSnapshot;
+    expiresAt: number;
+  };
+  __catalogSnapshotPromise?: Promise<CatalogSnapshot>;
 };
+
+const catalogSnapshotTtlMs = 12 * 60 * 60 * 1000;
 
 function isMissingAdmissionsContentColumn(error: unknown) {
   if (!(error instanceof Error)) {
@@ -123,227 +128,6 @@ function logCatalogDatabaseFallback(error: unknown) {
   }
 
   console.error("Failed to read catalog from database:", error);
-}
-
-function mapCountryRow(row: {
-  slug: string;
-  name: string;
-  region: string | null;
-  summary: string;
-  whyStudentsChooseIt: string | null;
-  climate: string | null;
-  currencyCode: string | null;
-  metaTitle: string | null;
-  metaDescription: string | null;
-  updatedAt: Date | null;
-}): Country {
-  return {
-    slug: row.slug,
-    name: row.name,
-    region: row.region ?? "",
-    summary: row.summary,
-    whyStudentsChooseIt: row.whyStudentsChooseIt ?? "",
-    climate: row.climate ?? "",
-    currencyCode: row.currencyCode ?? "",
-    metaTitle: row.metaTitle ?? "",
-    metaDescription: row.metaDescription ?? "",
-    updatedAt: row.updatedAt?.toISOString(),
-  };
-}
-
-function mapUniversityRow(
-  row: {
-    countrySlug: string;
-    slug: string;
-    name: string;
-    city: string;
-    type: string;
-    establishedYear: number | null;
-    summary: string;
-    featured: boolean;
-    published: boolean;
-    officialWebsite: string | null;
-    logoUrl: string | null;
-    coverImageUrl: string | null;
-    campusLifestyle: string | null;
-    cityProfile: string | null;
-    clinicalExposure: string | null;
-    hostelOverview: string | null;
-    indianFoodSupport: string | null;
-    safetyOverview: string | null;
-    studentSupport: string | null;
-    whyChoose: unknown;
-    thingsToConsider: unknown;
-    bestFitFor: unknown;
-    teachingHospitals: string[] | null;
-    recognitionBadges: string[] | null;
-    recognitionLinks: unknown;
-    faq: unknown;
-    similarUniversitySlugs: string[] | null;
-    lastVerifiedAt: Date | string | null;
-    researchSources: unknown;
-    researchNotes: string | null;
-    admissionsContent?: unknown;
-    updatedAt: Date | null;
-  },
-) {
-  return applyUniversityContentOverride({
-    slug: row.slug,
-    countrySlug: row.countrySlug,
-    name: row.name,
-    city: row.city,
-    type: row.type as University["type"],
-    establishedYear: row.establishedYear ?? 0,
-    summary: row.summary,
-    featured: row.featured,
-    published: row.published,
-    officialWebsite: row.officialWebsite ?? "",
-    logoUrl: row.logoUrl ?? undefined,
-    coverImageUrl: row.coverImageUrl ?? undefined,
-    campusLifestyle: row.campusLifestyle ?? "",
-    cityProfile: row.cityProfile ?? "",
-    clinicalExposure: row.clinicalExposure ?? "",
-    hostelOverview: row.hostelOverview ?? "",
-    indianFoodSupport: row.indianFoodSupport ?? "",
-    safetyOverview: row.safetyOverview ?? "",
-    studentSupport: row.studentSupport ?? "",
-    whyChoose: (row.whyChoose as University["whyChoose"] | null) ?? [],
-    thingsToConsider:
-      (row.thingsToConsider as University["thingsToConsider"] | null) ?? [],
-    bestFitFor: (row.bestFitFor as University["bestFitFor"] | null) ?? [],
-    teachingHospitals: row.teachingHospitals ?? [],
-    recognitionBadges: row.recognitionBadges ?? [],
-    recognitionLinks: row.recognitionLinks as University["recognitionLinks"],
-    faq: row.faq as University["faq"],
-    similarUniversitySlugs: row.similarUniversitySlugs ?? [],
-    lastVerifiedAt:
-      typeof row.lastVerifiedAt === "string"
-        ? row.lastVerifiedAt
-        : row.lastVerifiedAt?.toISOString(),
-    researchSources:
-      (row.researchSources as University["researchSources"] | null) ?? [],
-    researchNotes: row.researchNotes ?? undefined,
-    admissionsContent:
-      (row.admissionsContent as University["admissionsContent"] | undefined) ??
-      undefined,
-    updatedAt: row.updatedAt?.toISOString(),
-  });
-}
-
-function mapProgramOfferingRow(
-  row: {
-    slug: string;
-    title: string;
-    durationYears: number | null;
-    annualTuitionUsd: number | null;
-    totalTuitionUsd: number | null;
-    livingUsd: number | null;
-    officialFeeCurrency: string | null;
-    officialAnnualTuitionAmount: number | null;
-    officialTotalTuitionAmount: number | null;
-    officialProgramUrl: string | null;
-    medium: string;
-    published: boolean;
-    teachingPhases: unknown;
-    yearlyCostBreakdown: unknown;
-    licenseExamSupport: unknown;
-    intakeMonths: string[] | null;
-    feeVerifiedAt: Date | string | null;
-    fxRateDate: string | null;
-    fxRateSourceUrl: string | null;
-    feeNotes: string | null;
-    sourceUrls: string[] | null;
-    featured: boolean;
-    updatedAt: Date | null;
-  },
-  universitySlug: string,
-  courseSlug: string,
-): ProgramOffering {
-  return {
-    slug: row.slug,
-    universitySlug,
-    courseSlug,
-    title: row.title,
-    durationYears: row.durationYears ?? 0,
-    annualTuitionUsd: row.annualTuitionUsd ?? 0,
-    totalTuitionUsd: row.totalTuitionUsd ?? 0,
-    livingUsd: row.livingUsd ?? 0,
-    officialFeeCurrency: row.officialFeeCurrency ?? undefined,
-    officialAnnualTuitionAmount: row.officialAnnualTuitionAmount ?? undefined,
-    officialTotalTuitionAmount: row.officialTotalTuitionAmount ?? undefined,
-    officialProgramUrl: row.officialProgramUrl ?? "",
-    medium: row.medium as ProgramOffering["medium"],
-    published: row.published,
-    teachingPhases: row.teachingPhases as ProgramOffering["teachingPhases"],
-    yearlyCostBreakdown:
-      row.yearlyCostBreakdown as ProgramOffering["yearlyCostBreakdown"],
-    licenseExamSupport:
-      row.licenseExamSupport as ProgramOffering["licenseExamSupport"],
-    intakeMonths: row.intakeMonths ?? [],
-    feeVerifiedAt:
-      typeof row.feeVerifiedAt === "string"
-        ? row.feeVerifiedAt
-        : row.feeVerifiedAt?.toISOString(),
-    fxRateDate: row.fxRateDate ?? undefined,
-    fxRateSourceUrl: row.fxRateSourceUrl ?? undefined,
-    feeNotes: row.feeNotes ?? undefined,
-    sourceUrls: row.sourceUrls ?? [],
-    featured: row.featured,
-    updatedAt: row.updatedAt?.toISOString(),
-  };
-}
-
-function selectPublishedUniversityBySlug(
-  db: DatabaseClient,
-  slug: string,
-  includeAdmissionsContent: boolean,
-) {
-  return db
-    .select({
-      countrySlug: countriesTable.slug,
-      slug: universitiesTable.slug,
-      name: universitiesTable.name,
-      city: universitiesTable.city,
-      type: universitiesTable.type,
-      establishedYear: universitiesTable.establishedYear,
-      summary: universitiesTable.summary,
-      featured: universitiesTable.featured,
-      published: universitiesTable.published,
-      officialWebsite: universitiesTable.officialWebsite,
-      logoUrl: universitiesTable.logoUrl,
-      coverImageUrl: universitiesTable.coverImageUrl,
-      campusLifestyle: universitiesTable.campusLifestyle,
-      cityProfile: universitiesTable.cityProfile,
-      clinicalExposure: universitiesTable.clinicalExposure,
-      hostelOverview: universitiesTable.hostelOverview,
-      indianFoodSupport: universitiesTable.indianFoodSupport,
-      safetyOverview: universitiesTable.safetyOverview,
-      studentSupport: universitiesTable.studentSupport,
-      whyChoose: universitiesTable.whyChoose,
-      thingsToConsider: universitiesTable.thingsToConsider,
-      bestFitFor: universitiesTable.bestFitFor,
-      teachingHospitals: universitiesTable.teachingHospitals,
-      recognitionBadges: universitiesTable.recognitionBadges,
-      recognitionLinks: universitiesTable.recognitionLinks,
-      faq: universitiesTable.faq,
-      similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
-      lastVerifiedAt: universitiesTable.lastVerifiedAt,
-      researchSources: universitiesTable.researchSources,
-      researchNotes: universitiesTable.researchNotes,
-      ...(includeAdmissionsContent
-        ? { admissionsContent: universitiesTable.admissionsContent }
-        : {}),
-      updatedAt: universitiesTable.updatedAt,
-    })
-    .from(universitiesTable)
-    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
-    .where(
-      and(
-        eq(universitiesTable.slug, slug),
-        eq(universitiesTable.published, true),
-      ),
-    )
-    .limit(1);
 }
 
 async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
@@ -754,15 +538,36 @@ export async function getCatalogSnapshot() {
   cacheTag("program-offerings");
   cacheTag("india-colleges");
 
-  return (
-    (await readCatalogFromDatabase()) ?? {
-      countries: [],
-      courses: [],
-      universities: [],
-      programOfferings: [],
-      indiaColleges: [],
-    }
-  );
+  const now = Date.now();
+  const cachedSnapshot = globalForCatalogWarnings.__catalogSnapshotCache;
+
+  if (cachedSnapshot && cachedSnapshot.expiresAt > now) {
+    return cachedSnapshot.value;
+  }
+
+  if (!globalForCatalogWarnings.__catalogSnapshotPromise) {
+    globalForCatalogWarnings.__catalogSnapshotPromise = (async () => {
+      const snapshot =
+        (await readCatalogFromDatabase()) ?? {
+          countries: [],
+          courses: [],
+          universities: [],
+          programOfferings: [],
+          indiaColleges: [],
+        };
+
+      globalForCatalogWarnings.__catalogSnapshotCache = {
+        value: snapshot,
+        expiresAt: Date.now() + catalogSnapshotTtlMs,
+      };
+
+      return snapshot;
+    })().finally(() => {
+      globalForCatalogWarnings.__catalogSnapshotPromise = undefined;
+    });
+  }
+
+  return globalForCatalogWarnings.__catalogSnapshotPromise;
 }
 
 export async function getCountries() {
@@ -776,24 +581,6 @@ export async function getCountryBySlug(slug: string) {
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("countries");
-
-  const db = getDb();
-
-  if (db) {
-    try {
-      const [country] = await db
-        .select()
-        .from(countriesTable)
-        .where(eq(countriesTable.slug, slug))
-        .limit(1);
-
-      if (country) {
-        return mapCountryRow(country);
-      }
-    } catch (error) {
-      logCatalogDatabaseFallback(error);
-    }
-  }
 
   const countries = await getCountries();
   return countries.find((country) => country.slug === slug) ?? null;
@@ -821,27 +608,6 @@ export async function getUniversityBySlug(slug: string) {
   cacheTag("catalog");
   cacheTag("universities");
   cacheTag(`university:${slug}`);
-
-  const db = getDb();
-
-  if (db) {
-    try {
-      const [university] = await selectPublishedUniversityBySlug(db, slug, true);
-
-      if (university) {
-        return mapUniversityRow(university);
-      }
-
-      return null;
-    } catch (error) {
-      if (isMissingAdmissionsContentColumn(error)) {
-        const [university] = await selectPublishedUniversityBySlug(db, slug, false);
-        return university ? mapUniversityRow(university) : null;
-      }
-
-      logCatalogDatabaseFallback(error);
-    }
-  }
 
   const universities = await getUniversities();
   return universities.find((university) => university.slug === slug) ?? null;
@@ -1531,126 +1297,6 @@ export async function getProgramsForUniversity(universitySlug: string) {
   cacheTag("courses");
   cacheTag("universities");
   cacheTag(`university-programs:${universitySlug}`);
-
-  const [university, db] = await Promise.all([
-    getUniversityBySlug(universitySlug),
-    Promise.resolve(getDb()),
-  ]);
-
-  if (!university) {
-    return [];
-  }
-
-  const country = await getCountryBySlug(university.countrySlug);
-
-  if (!country) {
-    return [];
-  }
-
-  if (db) {
-    try {
-      const rows = await db
-        .select({
-          courseSlug: coursesTable.slug,
-          courseName: coursesTable.name,
-          courseShortName: coursesTable.shortName,
-          courseDurationYears: coursesTable.durationYears,
-          courseSummary: coursesTable.summary,
-          courseMetaTitle: coursesTable.metaTitle,
-          courseMetaDescription: coursesTable.metaDescription,
-          courseUpdatedAt: coursesTable.updatedAt,
-          offeringSlug: programOfferingsTable.slug,
-          offeringTitle: programOfferingsTable.title,
-          offeringDurationYears: programOfferingsTable.durationYears,
-          annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
-          totalTuitionUsd: programOfferingsTable.totalTuitionUsd,
-          livingUsd: programOfferingsTable.livingUsd,
-          officialFeeCurrency: programOfferingsTable.officialFeeCurrency,
-          officialAnnualTuitionAmount:
-            programOfferingsTable.officialAnnualTuitionAmount,
-          officialTotalTuitionAmount:
-            programOfferingsTable.officialTotalTuitionAmount,
-          officialProgramUrl: programOfferingsTable.officialProgramUrl,
-          medium: programOfferingsTable.medium,
-          published: programOfferingsTable.published,
-          teachingPhases: programOfferingsTable.teachingPhases,
-          yearlyCostBreakdown: programOfferingsTable.yearlyCostBreakdown,
-          licenseExamSupport: programOfferingsTable.licenseExamSupport,
-          intakeMonths: programOfferingsTable.intakeMonths,
-          feeVerifiedAt: programOfferingsTable.feeVerifiedAt,
-          fxRateDate: programOfferingsTable.fxRateDate,
-          fxRateSourceUrl: programOfferingsTable.fxRateSourceUrl,
-          feeNotes: programOfferingsTable.feeNotes,
-          sourceUrls: programOfferingsTable.sourceUrls,
-          featured: programOfferingsTable.featured,
-          offeringUpdatedAt: programOfferingsTable.updatedAt,
-        })
-        .from(programOfferingsTable)
-        .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
-        .innerJoin(
-          universitiesTable,
-          eq(programOfferingsTable.universityId, universitiesTable.id),
-        )
-        .where(
-          and(
-            eq(universitiesTable.slug, universitySlug),
-            eq(universitiesTable.published, true),
-            eq(programOfferingsTable.published, true),
-          ),
-        )
-        .orderBy(
-          desc(programOfferingsTable.featured),
-          asc(coursesTable.shortName),
-          asc(programOfferingsTable.title),
-        );
-
-      return rows.map((row) => ({
-        country,
-        university,
-        course: {
-          slug: row.courseSlug,
-          name: row.courseName,
-          shortName: row.courseShortName,
-          durationYears: row.courseDurationYears,
-          summary: row.courseSummary,
-          metaTitle: row.courseMetaTitle,
-          metaDescription: row.courseMetaDescription,
-          updatedAt: row.courseUpdatedAt?.toISOString(),
-        },
-        offering: mapProgramOfferingRow(
-          {
-            slug: row.offeringSlug,
-            title: row.offeringTitle,
-            durationYears: row.offeringDurationYears,
-            annualTuitionUsd: row.annualTuitionUsd,
-            totalTuitionUsd: row.totalTuitionUsd,
-            livingUsd: row.livingUsd,
-            officialFeeCurrency: row.officialFeeCurrency,
-            officialAnnualTuitionAmount: row.officialAnnualTuitionAmount,
-            officialTotalTuitionAmount: row.officialTotalTuitionAmount,
-            officialProgramUrl: row.officialProgramUrl,
-            medium: row.medium,
-            published: row.published,
-            teachingPhases: row.teachingPhases,
-            yearlyCostBreakdown: row.yearlyCostBreakdown,
-            licenseExamSupport: row.licenseExamSupport,
-            intakeMonths: row.intakeMonths,
-            feeVerifiedAt: row.feeVerifiedAt,
-            fxRateDate: row.fxRateDate,
-            fxRateSourceUrl: row.fxRateSourceUrl,
-            feeNotes: row.feeNotes,
-            sourceUrls: row.sourceUrls,
-            featured: row.featured,
-            updatedAt: row.offeringUpdatedAt,
-          },
-          university.slug,
-          row.courseSlug,
-        ),
-      }));
-    } catch (error) {
-      logCatalogDatabaseFallback(error);
-    }
-  }
 
   const programs = await getFinderProgramsBase();
   return programs.filter((program) => program.university.slug === universitySlug);
