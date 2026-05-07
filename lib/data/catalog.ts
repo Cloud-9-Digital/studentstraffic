@@ -81,15 +81,6 @@ const globalForCatalogWarnings = globalThis as typeof globalThis & {
 
 const catalogSnapshotTtlMs = 12 * 60 * 60 * 1000;
 
-function isMissingAdmissionsContentColumn(error: unknown) {
-  if (!(error instanceof Error)) {
-    return false;
-  }
-
-  const message = `${error.message} ${"cause" in error ? String((error as { cause?: unknown }).cause) : ""}`;
-  return message.includes('column "admissions_content" does not exist');
-}
-
 function isDatabaseConnectivityError(error: unknown) {
   if (!(error instanceof Error)) {
     return false;
@@ -137,54 +128,51 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
     return null;
   }
 
-  const getUniversitySelect = (includeAdmissionsContent: boolean) =>
-    db
-      .select({
-        id: universitiesTable.id,
-        countryId: universitiesTable.countryId,
-        slug: universitiesTable.slug,
-        name: universitiesTable.name,
-        city: universitiesTable.city,
-        type: universitiesTable.type,
-        establishedYear: universitiesTable.establishedYear,
-        summary: universitiesTable.summary,
-        featured: universitiesTable.featured,
-        published: universitiesTable.published,
-        officialWebsite: universitiesTable.officialWebsite,
-        logoUrl: universitiesTable.logoUrl,
-        coverImageUrl: universitiesTable.coverImageUrl,
-        campusLifestyle: universitiesTable.campusLifestyle,
-        cityProfile: universitiesTable.cityProfile,
-        clinicalExposure: universitiesTable.clinicalExposure,
-        hostelOverview: universitiesTable.hostelOverview,
-        indianFoodSupport: universitiesTable.indianFoodSupport,
-        safetyOverview: universitiesTable.safetyOverview,
-        studentSupport: universitiesTable.studentSupport,
-        whyChoose: universitiesTable.whyChoose,
-        thingsToConsider: universitiesTable.thingsToConsider,
-        bestFitFor: universitiesTable.bestFitFor,
-        teachingHospitals: universitiesTable.teachingHospitals,
-        recognitionBadges: universitiesTable.recognitionBadges,
-        recognitionLinks: universitiesTable.recognitionLinks,
-        faq: universitiesTable.faq,
-        similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
-        lastVerifiedAt: universitiesTable.lastVerifiedAt,
-        researchSources: universitiesTable.researchSources,
-        researchNotes: universitiesTable.researchNotes,
-        ...(includeAdmissionsContent
-          ? { admissionsContent: universitiesTable.admissionsContent }
-          : {}),
-        updatedAt: universitiesTable.updatedAt,
-      })
-      .from(universitiesTable)
-      .where(eq(universitiesTable.published, true));
+  const universityRowsQuery = db
+    .select({
+      id: universitiesTable.id,
+      countryId: universitiesTable.countryId,
+      slug: universitiesTable.slug,
+      name: universitiesTable.name,
+      city: universitiesTable.city,
+      type: universitiesTable.type,
+      establishedYear: universitiesTable.establishedYear,
+      summary: universitiesTable.summary,
+      featured: universitiesTable.featured,
+      published: universitiesTable.published,
+      officialWebsite: universitiesTable.officialWebsite,
+      logoUrl: universitiesTable.logoUrl,
+      coverImageUrl: universitiesTable.coverImageUrl,
+      campusLifestyle: universitiesTable.campusLifestyle,
+      cityProfile: universitiesTable.cityProfile,
+      clinicalExposure: universitiesTable.clinicalExposure,
+      hostelOverview: universitiesTable.hostelOverview,
+      indianFoodSupport: universitiesTable.indianFoodSupport,
+      safetyOverview: universitiesTable.safetyOverview,
+      studentSupport: universitiesTable.studentSupport,
+      whyChoose: universitiesTable.whyChoose,
+      thingsToConsider: universitiesTable.thingsToConsider,
+      bestFitFor: universitiesTable.bestFitFor,
+      teachingHospitals: universitiesTable.teachingHospitals,
+      recognitionBadges: universitiesTable.recognitionBadges,
+      recognitionLinks: universitiesTable.recognitionLinks,
+      faq: universitiesTable.faq,
+      similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
+      lastVerifiedAt: universitiesTable.lastVerifiedAt,
+      researchSources: universitiesTable.researchSources,
+      researchNotes: universitiesTable.researchNotes,
+      admissionsContent: universitiesTable.admissionsContent,
+      updatedAt: universitiesTable.updatedAt,
+    })
+    .from(universitiesTable)
+    .where(eq(universitiesTable.published, true));
 
   try {
     const [countryRows, courseRows, universityRows, programRows, indiaCollegeRows] =
       await Promise.all([
         db.select().from(countriesTable),
         db.select().from(coursesTable),
-        getUniversitySelect(true),
+        universityRowsQuery,
         db
           .select()
           .from(programOfferingsTable)
@@ -276,9 +264,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
           university.researchSources as University["researchSources"],
         researchNotes: university.researchNotes ?? undefined,
         admissionsContent:
-          ("admissionsContent" in university
-            ? (university.admissionsContent as University["admissionsContent"])
-            : undefined) ?? undefined,
+          (university.admissionsContent as University["admissionsContent"]) ?? undefined,
         updatedAt: university.updatedAt?.toISOString(),
       }),
     );
@@ -349,179 +335,6 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       indiaColleges,
     };
   } catch (error) {
-    if (isMissingAdmissionsContentColumn(error)) {
-      try {
-        const [countryRows, courseRows, universityRows, programRows, indiaCollegeRows] =
-          await Promise.all([
-            db.select().from(countriesTable),
-            db.select().from(coursesTable),
-            getUniversitySelect(false),
-            db
-              .select()
-              .from(programOfferingsTable)
-              .where(eq(programOfferingsTable.published, true)),
-            db
-              .select({
-                slug: indiaMedicalColleges.slug,
-                collegeName: indiaMedicalColleges.collegeName,
-                programName: indiaMedicalPrograms.courseName,
-                stateName: indiaMedicalColleges.stateName,
-                cityName: indiaMedicalColleges.cityName,
-                managementType: indiaMedicalColleges.managementType,
-                universityName: indiaMedicalColleges.universityName,
-                yearOfInception: indiaMedicalPrograms.yearOfInception,
-                annualIntakeSeats: indiaMedicalPrograms.annualIntakeSeats,
-              })
-              .from(indiaMedicalColleges)
-              .innerJoin(
-                indiaMedicalPrograms,
-                eq(indiaMedicalPrograms.collegeId, indiaMedicalColleges.id),
-              )
-              .limit(1000),
-          ]);
-
-        const countries: Country[] = countryRows.map((country) => ({
-          slug: country.slug,
-          name: country.name,
-          region: country.region,
-          summary: country.summary,
-          whyStudentsChooseIt: country.whyStudentsChooseIt,
-          climate: country.climate,
-          currencyCode: country.currencyCode,
-          metaTitle: country.metaTitle,
-          metaDescription: country.metaDescription,
-          updatedAt: country.updatedAt?.toISOString(),
-        }));
-
-        const courses: Course[] = courseRows.map((course) => ({
-          slug: course.slug,
-          name: course.name,
-          shortName: course.shortName,
-          durationYears: course.durationYears,
-          summary: course.summary,
-          metaTitle: course.metaTitle,
-          metaDescription: course.metaDescription,
-          updatedAt: course.updatedAt?.toISOString(),
-        }));
-
-        const countrySlugsById = new Map(
-          countryRows.map((country) => [country.id, country.slug]),
-        );
-        const courseSlugsById = new Map(
-          courseRows.map((course) => [course.id, course.slug]),
-        );
-
-        const universities: University[] = universityRows.map((university) =>
-          applyUniversityContentOverride({
-            slug: university.slug,
-            countrySlug: countrySlugsById.get(university.countryId) ?? "",
-            name: university.name,
-            city: university.city,
-            type: university.type as University["type"],
-            establishedYear: university.establishedYear,
-            summary: university.summary,
-            featured: university.featured,
-            published: university.published,
-            officialWebsite: university.officialWebsite,
-            logoUrl: university.logoUrl ?? undefined,
-            coverImageUrl: university.coverImageUrl ?? undefined,
-            campusLifestyle: university.campusLifestyle,
-            cityProfile: university.cityProfile,
-            clinicalExposure: university.clinicalExposure,
-            hostelOverview: university.hostelOverview,
-            indianFoodSupport: university.indianFoodSupport,
-            safetyOverview: university.safetyOverview,
-            studentSupport: university.studentSupport,
-            whyChoose: university.whyChoose as University["whyChoose"],
-            thingsToConsider:
-              university.thingsToConsider as University["thingsToConsider"],
-            bestFitFor: university.bestFitFor as University["bestFitFor"],
-            teachingHospitals: university.teachingHospitals,
-            recognitionBadges: university.recognitionBadges,
-            recognitionLinks:
-              university.recognitionLinks as University["recognitionLinks"],
-            faq: university.faq as University["faq"],
-            similarUniversitySlugs: university.similarUniversitySlugs,
-            lastVerifiedAt: university.lastVerifiedAt ?? undefined,
-            researchSources:
-              university.researchSources as University["researchSources"],
-            researchNotes: university.researchNotes ?? undefined,
-            updatedAt: university.updatedAt?.toISOString(),
-          }),
-        );
-
-        const universitySlugsById = new Map(
-          universityRows.map((university) => [university.id, university.slug]),
-        );
-
-        const programOfferings: ProgramOffering[] = programRows.flatMap((program) => {
-          const universitySlug = universitySlugsById.get(program.universityId);
-          const courseSlug = courseSlugsById.get(program.courseId);
-
-          if (!universitySlug || !courseSlug) {
-            return [];
-          }
-
-          return [{
-            slug: program.slug,
-            universitySlug,
-            courseSlug,
-            title: program.title,
-            durationYears: program.durationYears,
-            annualTuitionUsd: program.annualTuitionUsd,
-            totalTuitionUsd: program.totalTuitionUsd,
-            livingUsd: program.livingUsd,
-            officialFeeCurrency: program.officialFeeCurrency ?? undefined,
-            officialAnnualTuitionAmount:
-              program.officialAnnualTuitionAmount ?? undefined,
-            officialTotalTuitionAmount:
-              program.officialTotalTuitionAmount ?? undefined,
-            officialProgramUrl: program.officialProgramUrl,
-            medium: program.medium as ProgramOffering["medium"],
-            published: program.published,
-            teachingPhases:
-              program.teachingPhases as ProgramOffering["teachingPhases"],
-            yearlyCostBreakdown:
-              program.yearlyCostBreakdown as ProgramOffering["yearlyCostBreakdown"],
-            licenseExamSupport:
-              program.licenseExamSupport as ProgramOffering["licenseExamSupport"],
-            intakeMonths: program.intakeMonths,
-            feeVerifiedAt: program.feeVerifiedAt ?? undefined,
-            fxRateDate: program.fxRateDate ?? undefined,
-            fxRateSourceUrl: program.fxRateSourceUrl ?? undefined,
-            feeNotes: program.feeNotes ?? undefined,
-            sourceUrls: program.sourceUrls,
-            featured: program.featured,
-            updatedAt: program.updatedAt?.toISOString(),
-          }];
-        });
-
-        const indiaColleges: IndiaMbbsCard[] = indiaCollegeRows.map((row) => ({
-          slug: row.slug,
-          collegeName: row.collegeName,
-          programName: row.programName,
-          stateName: row.stateName,
-          cityName: row.cityName ?? undefined,
-          managementType: row.managementType ?? undefined,
-          universityName: row.universityName ?? undefined,
-          yearOfInception: row.yearOfInception ?? undefined,
-          annualIntakeSeats: row.annualIntakeSeats ?? undefined,
-        }));
-
-        return {
-          countries,
-          courses,
-          universities,
-          programOfferings,
-          indiaColleges,
-        };
-      } catch (fallbackError) {
-        console.error(
-          "Failed to read catalog from database after admissions_content fallback:",
-          fallbackError,
-        );
-      }
-    }
     logCatalogDatabaseFallback(error);
     return null;
   }
@@ -1044,7 +857,7 @@ type FinderProgramRow = {
   universityLastVerifiedAt: string | null;
   universityResearchSources: University["researchSources"];
   universityResearchNotes: string | null;
-  universityAdmissionsContent?: University["admissionsContent"];
+  universityAdmissionsContent: University["admissionsContent"];
   offeringSlug: string;
   offeringTitle: string;
   offeringDurationYears: number;
@@ -1211,6 +1024,7 @@ async function selectFinderProgramsFromDatabase(
       universityLastVerifiedAt: universitiesTable.lastVerifiedAt,
       universityResearchSources: universitiesTable.researchSources,
       universityResearchNotes: universitiesTable.researchNotes,
+      universityAdmissionsContent: universitiesTable.admissionsContent,
       offeringSlug: programOfferingsTable.slug,
       offeringTitle: programOfferingsTable.title,
       offeringDurationYears: programOfferingsTable.durationYears,
@@ -1241,9 +1055,7 @@ async function selectFinderProgramsFromDatabase(
     .where(whereClause)
     .orderBy(...getFinderProgramOrder(undefined));
 
-  return rows.map((row) =>
-    mapFinderProgramRow({ ...row, universityAdmissionsContent: undefined } as FinderProgramRow),
-  );
+  return rows.map((row) => mapFinderProgramRow(row as FinderProgramRow));
 }
 
 function compareRecommendedPrograms(left: FinderProgram, right: FinderProgram) {

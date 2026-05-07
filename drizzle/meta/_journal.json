@@ -204,6 +204,13 @@
       "when": 1778112000000,
       "tag": "0033_lead_admin_query_indexes",
       "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1778121000000,
+      "tag": "0034_repair_university_admissions_content",
+      "breakpoints": true
     }
   ]
 }
