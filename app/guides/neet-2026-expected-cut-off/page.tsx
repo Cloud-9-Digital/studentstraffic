@@ -19,12 +19,12 @@ import {
 
 const path = "/guides/neet-2026-expected-cut-off";
 const title =
-  "NEET 2026 Expected Cut Off After Official Provisional Answer Key: Category-Wise Estimate";
+  "NEET 2026 Expected Cut Off After Official Answer Key Release: Category-Wise Estimate";
 const description =
-  "NEET 2026 expected cut off guide for students and parents, updated after our May 7, 2026, 8:07 AM IST official-source check, with the official provisional answer key now live, final result and official cut off still awaited, and category-wise planning for MBBS counselling.";
+  "NEET 2026 expected cut off guide for students and parents, updated after our May 7, 2026, 12:22 PM IST official-source check, with the official provisional answer key now live, no official result or cut off notice visible yet, and category-wise planning for MBBS counselling.";
 const publishedAt = "2026-05-04";
 const updatedAt = "2026-05-07";
-const reviewedAt = "May 7, 2026, 8:07 AM IST";
+const reviewedAt = "May 7, 2026, 12:22 PM IST";
 const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
@@ -65,7 +65,7 @@ const officialContextPoints = [
   "That official notice says candidates can challenge the provisional answer keys only after the scanned OMR answer sheet is uploaded, and the schedule for OMR upload plus the challenge round will be notified separately.",
   "The current page-one visible 2026 entries on the documents page still include the admit-card notice, the scribe-support notice, advance city intimation, correction window, application notices, the information bulletin, syllabus, and the document-updation advisory rather than the 2026 answer key posting.",
   "The separate NEET public-notices page was still showing older pre-exam notices and a Last Updated date of Apr 12, 2026 during our review, so students should cross-check the homepage and the direct official notice PDF too.",
-  "We also checked the main NTA website and did not find a separate NEET 2026 result notice mirrored there.",
+  "We also checked the main NTA website, where the same answer key item was visible in Latest @ NTA, but no separate NEET 2026 result notice was visible there.",
 ] as const;
 
 const faqs = [

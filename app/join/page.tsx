@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { cacheLife, cacheTag } from "next/cache";
-import { asc } from "drizzle-orm";
 
 import { JoinForm } from "@/components/site/join-form";
-import { getDb } from "@/lib/db/server";
-import { universities } from "@/lib/db/schema";
+import { getJoinUniversityOptions } from "@/lib/data/catalog";
 
 export const metadata: Metadata = {
   title: "Become a Student Guide | Students Traffic",
@@ -14,21 +11,7 @@ export const metadata: Metadata = {
 
 async function getJoinUniversities() {
   "use cache";
-
-  cacheLife("hours");
-  cacheTag("catalog");
-  cacheTag("student-peers");
-
-  const db = getDb();
-
-  if (!db) {
-    return [] as Array<{ id: number; name: string }>;
-  }
-
-  return db
-    .select({ id: universities.id, name: universities.name })
-    .from(universities)
-    .orderBy(asc(universities.name));
+  return getJoinUniversityOptions();
 }
 
 export default async function JoinPage() {

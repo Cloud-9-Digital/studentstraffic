@@ -25,14 +25,13 @@ import {
 
 const path = "/guides/neet-2026-paper-analysis-expected-cutoff";
 const title =
-  "NEET 2026 Official Provisional Answer Key Live: Result Awaited, Expected Cut Off";
+  "NEET 2026 Official Answer Key Released: Result, OMR Challenge, Expected Cut Off";
 const description =
-  "NEET 2026 answer key live update after the May 3 exam, refreshed from our May 7, 2026, 8:07 AM IST official-source check across NEET and NTA pages, with the official provisional answer key notice dated May 6, 2026 now live, result still awaited, and practical expected cut off, marks vs rank, and counselling planning guidance.";
+  "NEET 2026 answer key live update after the May 3 exam, refreshed from our May 7, 2026, 12:22 PM IST official-source check across NEET and NTA pages, with the official provisional answer key notice dated May 6, 2026 live on official pages, no official OMR challenge window or result notice visible yet, and practical expected cut off, marks vs rank, and counselling planning guidance.";
 const publishedAt = "2026-05-03";
 const updatedAt = "2026-05-07";
-const reviewedAt = "May 7, 2026, 8:07 AM IST";
+const reviewedAt = "May 7, 2026, 12:22 PM IST";
 const reviewedDateLabel = "May 7, 2026";
-const reviewedDayLabel = "Wednesday, May 7, 2026";
 const coverPath = "/guides/raster/neet-2026-paper-analysis-cover.svg.png";
 const coverUrl = absoluteUrl(coverPath);
 const canonicalUrl = absoluteUrl(path);
@@ -73,9 +72,10 @@ export const metadata: Metadata = {
 };
 
 const quickTakeaways = [
-  `In our ${reviewedDayLabel}, 8:07 AM IST check, the official NEET homepage was clearly listing the public notice titled Provisional Answer Keys of NEET (UG) 2026 dated May 6, 2026.`,
+  `In our ${reviewedAt} check, the official NEET homepage was clearly listing the public notice titled Provisional Answer Keys of NEET (UG) 2026 dated May 6, 2026.`,
   "The public notice says the provisional answer keys for the question paper, all series, are uploaded on the NTA-NEET website.",
   "The same notice says candidates can challenge the provisional answer keys only after the scanned OMR answer sheet is uploaded, and the OMR upload plus challenge schedule will be notified separately.",
+  "The main NTA homepage was also carrying the same NEET provisional answer key item in its Latest @ NTA feed during our check.",
   "The separate NEET public-notices page still looked older, with a footer date of Apr 12, 2026, and the documents page page-one view still did not visibly surface the 2026 answer key posting during our check.",
   "The official provisional key is useful for score estimation, but it is still not the final answer key, final result, or final counselling outcome.",
 ] as const;
@@ -92,7 +92,7 @@ const updateLog = [
     timestamp: reviewedAt,
     title: "Official-source check completed",
     body:
-      `We checked the official NEET homepage, the NEET documents page, the NEET public-notices page, the NEET helpdesk page, and the main NTA homepage again. In this ${reviewedAt} review, the official NEET homepage was visibly showing a public notice for the provisional answer keys dated May 6, 2026.`,
+      `We checked the official NEET homepage, the NEET documents page, the NEET public-notices page, the NEET helpdesk page, and the main NTA homepage again. In this ${reviewedAt} review, the official NEET homepage and the Latest @ NTA feed were both visibly showing the provisional answer key notice dated May 6, 2026.`,
   },
   {
     timestamp: reviewedAt,
@@ -129,7 +129,7 @@ const liveUpdateRows = [
   {
     label: "Official answer key and result status",
     value:
-      `As of our ${reviewedDayLabel}, 8:07 AM IST check, the official provisional answer key notice dated May 6, 2026 was live on the NEET homepage, while no official result notice was visible yet.`,
+      `As of our ${reviewedAt} check, the official provisional answer key notice dated May 6, 2026 was live on the NEET homepage, while no official result notice was visible yet.`,
   },
   {
     label: "Documents page status",
@@ -195,7 +195,7 @@ const officialSourceLinks = [
     title: "NTA main website",
     href: "https://www.nta.ac.in/",
     description:
-      "Use the parent NTA website to cross-check whether any NEET 2026 press release or result notice has also been mirrored there. In our latest review, we did not see a separate NEET result notice there.",
+      "Use the parent NTA website to cross-check whether the NEET answer key notice is mirrored in Latest @ NTA and whether any separate NEET 2026 result notice appears there. In our latest review, the answer key item was visible there, but no separate NEET result notice was.",
   },
 ] as const;
 
@@ -210,7 +210,7 @@ const faqs = [
   {
     question: "Has the official NEET 2026 answer key been released?",
     answer:
-      `Yes. In our ${reviewedDayLabel}, 8:07 AM IST official-source check, the NEET homepage was listing the provisional answer key public notice dated May 6, 2026, along with a separate provisional answer key PDF link.`,
+      `Yes. In our ${reviewedAt} official-source check, the NEET homepage was listing the provisional answer key public notice dated May 6, 2026, along with a separate provisional answer key PDF link.`,
   },
   {
     question: "Should students trust expected cutoff discussions on exam day?",
@@ -235,7 +235,7 @@ const faqs = [
   {
     question: "What does the NEET documents page show right now?",
     answer:
-      `In our ${reviewedDayLabel}, 8:07 AM IST review, the page-one visible 2026 entries still included the admit-card notice, the scribe-support notice, advance city intimation, correction in particulars, extension of application date, the main application notice, the information bulletin, syllabus, and the document-updation advisory. That is why students should not depend on the documents page alone when the homepage is already surfacing the answer key notice.`,
+      `In our ${reviewedAt} review, the page-one visible 2026 entries still included the admit-card notice, the scribe-support notice, advance city intimation, correction in particulars, extension of application date, the main application notice, the information bulletin, syllabus, and the document-updation advisory. That is why students should not depend on the documents page alone when the homepage is already surfacing the answer key notice.`,
   },
   {
     question: "Why does the NEET public notices page look older than the homepage?",
@@ -260,7 +260,7 @@ const faqs = [
   {
     question: "Is the NTA website showing any separate NEET 2026 answer key release notice?",
     answer:
-      `Not in our ${reviewedAt} check. We checked the main NTA website as a cross-reference and did not see a separate NEET 2026 answer-key headline or result notice there.`,
+      `Yes, the main NTA homepage was carrying the NEET 2026 provisional answer key item in its Latest @ NTA feed during our ${reviewedAt} check. But we still did not see a separate NEET 2026 result notice there.`,
   },
   {
     question: "Which latest official notices are visible on the NEET 2026 site now?",
@@ -497,7 +497,7 @@ export default function Neet2026PaperAnalysisPage() {
                     What the official situation looks like as of {reviewedDateLabel}
                   </h2>
                   <p className="text-base leading-8 text-muted-foreground">
-                    As of {reviewedDayLabel}, 8:07 AM IST, the official
+                    As of {reviewedAt}, the official
                     picture is more useful than it was a day earlier. The main
                     NEET homepage is now surfacing the provisional answer key
                     notice dated May 6, 2026, along with a separate official
@@ -506,7 +506,9 @@ export default function Neet2026PaperAnalysisPage() {
                     clarifies that candidates can challenge them only after the
                     scanned OMR answer sheet is uploaded. NTA says the OMR
                     upload schedule and challenge round will be notified
-                    separately. At the same time, the documents page page-one
+                    separately. The main NTA homepage was also carrying the same
+                    answer key item in its Latest @ NTA feed during our check.
+                    At the same time, the documents page page-one
                     view was still showing older 2026 pre-result entries rather
                     than the 2026 answer key posting, and the separate public
                     notices page was still showing older entries with a footer

@@ -19,12 +19,12 @@ import {
 
 const path = "/guides/neet-2026-marks-vs-rank";
 const title =
-  "NEET 2026 Marks vs Rank After Official Provisional Answer Key: Expected Rank Range";
+  "NEET 2026 Marks vs Rank After Official Answer Key Release: Expected Rank Range";
 const description =
-  "NEET 2026 marks vs rank guide for students and parents, updated after our May 7, 2026, 8:07 AM IST official-source check, with the official provisional answer key now live, result still awaited, and score-range planning for MBBS counselling.";
+  "NEET 2026 marks vs rank guide for students and parents, updated after our May 7, 2026, 12:22 PM IST official-source check, with the official provisional answer key now live, no official result notice visible yet, and score-range planning for MBBS counselling.";
 const publishedAt = "2026-05-04";
 const updatedAt = "2026-05-07";
-const reviewedAt = "May 7, 2026, 8:07 AM IST";
+const reviewedAt = "May 7, 2026, 12:22 PM IST";
 const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
@@ -65,7 +65,7 @@ const officialContextPoints = [
   "That official notice says candidates can challenge the provisional answer keys only after the scanned OMR answer sheet is uploaded, and the OMR upload plus challenge schedule will be notified separately.",
   "The visible 2026 entries on the documents page page-one view still include the admit-card notice, the scribe-support notice, city intimation, correction, extension of application date, the main application notice, bulletin, syllabus, and the document-updation advisory rather than the 2026 answer key posting.",
   "The separate public-notices page was still showing older pre-exam notices and a Last Updated date of Apr 12, 2026 during our review, so students should not rely on that page alone for post-exam timing.",
-  "We also checked the main NTA website and did not find a separate NEET 2026 result notice mirrored there.",
+  "We also checked the main NTA website, where the same answer key item was visible in Latest @ NTA, but no separate NEET 2026 result notice was visible there.",
   "That means current marks vs rank discussion should still be used only as a planning estimate, not as a confirmed rank outcome.",
 ] as const;
 

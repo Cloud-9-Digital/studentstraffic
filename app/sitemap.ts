@@ -1,7 +1,4 @@
 import type { MetadataRoute } from "next";
-import { cacheLife, cacheTag } from "next/cache";
-import { eq, desc } from "drizzle-orm";
-
 import { getLatestDate } from "@/lib/content-dates";
 import {
   catalogReviewedAt,
@@ -11,11 +8,10 @@ import { absoluteUrl } from "@/lib/metadata";
 import {
   getAllLandingPages,
   getCatalogSnapshot,
+  getPublishedBlogPostMetadata,
 } from "@/lib/data/catalog";
 import { getTamilNaduCityPages } from "@/lib/data/tamil-nadu-local";
 import { getAllComparisonPages, getBudgetGuides } from "@/lib/discovery-pages";
-import { getDb } from "@/lib/db/server";
-import { blogPosts } from "@/lib/db/schema";
 import {
   getBudgetGuideHref,
   getBudgetIndexHref,
@@ -37,34 +33,6 @@ function uniqueUrls(urls: Array<string | undefined>) {
   return [...new Set(urls.filter(Boolean))];
 }
 
-async function getPublishedSitemapPosts() {
-  "use cache";
-
-  cacheLife("hours");
-  cacheTag("blog");
-  cacheTag("sitemap");
-
-  const db = getDb();
-
-  if (!db) {
-    return [] as Array<{
-      slug: string;
-      publishedAt: Date | null;
-      updatedAt: Date | null;
-    }>;
-  }
-
-  return db
-    .select({
-      slug: blogPosts.slug,
-      publishedAt: blogPosts.publishedAt,
-      updatedAt: blogPosts.updatedAt,
-    })
-    .from(blogPosts)
-    .where(eq(blogPosts.status, "published"))
-    .orderBy(desc(blogPosts.publishedAt));
-}
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const tamilNaduCityPages = getTamilNaduCityPages();
   const [snapshot, landingPages, comparisonPages, budgetGuides, publishedPosts] =
@@ -73,7 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       getAllLandingPages(),
       getAllComparisonPages(),
       getBudgetGuides(),
-      getPublishedSitemapPosts(),
+      getPublishedBlogPostMetadata(),
     ]);
   const { countries, courses, universities, programOfferings } = snapshot;
   const countryBySlug = new Map(countries.map((country) => [country.slug, country]));

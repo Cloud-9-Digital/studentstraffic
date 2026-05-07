@@ -1,5 +1,8 @@
 import "server-only";
 
+import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
+import path from "node:path";
+
 import { cacheLife, cacheTag } from "next/cache";
 import { and, asc, count, desc, eq, gte, ilike, lte, or, sql } from "drizzle-orm";
 
@@ -29,6 +32,7 @@ import {
   indiaMedicalColleges,
   indiaMedicalPrograms,
   programOfferings as programOfferingsTable,
+  blogPosts,
   universities as universitiesTable,
   wdomsDirectoryEntries as wdomsDirectoryEntriesTable,
 } from "@/lib/db/schema";
@@ -68,6 +72,12 @@ type CatalogSnapshot = {
   universities: University[];
   programOfferings: ProgramOffering[];
   indiaColleges: IndiaMbbsCard[];
+  joinUniversities: Array<{ id: number; name: string }>;
+  publishedPosts: Array<{
+    slug: string;
+    publishedAt?: string;
+    updatedAt?: string;
+  }>;
 };
 
 const globalForCatalogWarnings = globalThis as typeof globalThis & {
@@ -80,6 +90,97 @@ const globalForCatalogWarnings = globalThis as typeof globalThis & {
 };
 
 const catalogSnapshotTtlMs = 12 * 60 * 60 * 1000;
+const buildCatalogSnapshotPath = path.join(
+  process.cwd(),
+  ".next",
+  "cache",
+  "catalog-snapshot.json",
+);
+const buildCatalogSnapshotLockPath = `${buildCatalogSnapshotPath}.lock`;
+
+function isProductionBuildPhase() {
+  return process.env.NEXT_PHASE === "phase-production-build";
+}
+
+function shouldUseBuildCatalogSnapshot() {
+  return isProductionBuildPhase();
+}
+
+async function readBuildCatalogSnapshotFromDisk() {
+  try {
+    const serialized = await readFile(buildCatalogSnapshotPath, "utf8");
+    const parsed = JSON.parse(serialized) as Partial<CatalogSnapshot>;
+    return {
+      countries: parsed.countries ?? [],
+      courses: parsed.courses ?? [],
+      universities: parsed.universities ?? [],
+      programOfferings: parsed.programOfferings ?? [],
+      indiaColleges: parsed.indiaColleges ?? [],
+      joinUniversities: parsed.joinUniversities ?? [],
+      publishedPosts: parsed.publishedPosts ?? [],
+    };
+  } catch {
+    return null;
+  }
+}
+
+async function writeBuildCatalogSnapshotToDisk(snapshot: CatalogSnapshot) {
+  await mkdir(path.dirname(buildCatalogSnapshotPath), { recursive: true });
+  const tempPath = `${buildCatalogSnapshotPath}.${process.pid}.tmp`;
+  await writeFile(tempPath, JSON.stringify(snapshot), "utf8");
+  await rename(tempPath, buildCatalogSnapshotPath);
+}
+
+async function waitForBuildCatalogSnapshotFromDisk(timeoutMs = 30_000) {
+  const startedAt = Date.now();
+
+  while (Date.now() - startedAt < timeoutMs) {
+    const snapshot = await readBuildCatalogSnapshotFromDisk();
+    if (snapshot) {
+      return snapshot;
+    }
+
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+
+  return null;
+}
+
+async function createBuildCatalogSnapshot() {
+  await mkdir(path.dirname(buildCatalogSnapshotPath), { recursive: true });
+
+  try {
+    await mkdir(buildCatalogSnapshotLockPath);
+  } catch (error) {
+    const snapshot = await waitForBuildCatalogSnapshotFromDisk();
+    if (snapshot) {
+      return snapshot;
+    }
+
+    throw error;
+  }
+
+  try {
+    const existingSnapshot = await readBuildCatalogSnapshotFromDisk();
+    if (existingSnapshot) {
+      return existingSnapshot;
+    }
+
+    const snapshot =
+      (await readCatalogFromDatabase()) ?? {
+        countries: [],
+        courses: [],
+        universities: [],
+        programOfferings: [],
+        indiaColleges: [],
+      };
+
+    await writeBuildCatalogSnapshotToDisk(snapshot);
+    return snapshot;
+  } finally {
+    await rm(buildCatalogSnapshotLockPath, { recursive: true, force: true });
+  }
+}
 
 function isDatabaseConnectivityError(error: unknown) {
   if (!(error instanceof Error)) {
@@ -168,7 +269,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
     .where(eq(universitiesTable.published, true));
 
   try {
-    const [countryRows, courseRows, universityRows, programRows, indiaCollegeRows] =
+    const [countryRows, courseRows, universityRows, programRows, indiaCollegeRows, publishedPostRows] =
       await Promise.all([
         db.select().from(countriesTable),
         db.select().from(coursesTable),
@@ -195,6 +296,15 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
             eq(indiaMedicalPrograms.collegeId, indiaMedicalColleges.id),
           )
           .limit(1000),
+        db
+          .select({
+            slug: blogPosts.slug,
+            publishedAt: blogPosts.publishedAt,
+            updatedAt: blogPosts.updatedAt,
+          })
+          .from(blogPosts)
+          .where(eq(blogPosts.status, "published"))
+          .orderBy(desc(blogPosts.publishedAt)),
       ]);
 
     const countries: Country[] = countryRows.map((country) => ({
@@ -327,12 +437,27 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       annualIntakeSeats: row.annualIntakeSeats ?? undefined,
     }));
 
+    const joinUniversities = universityRows
+      .map((university) => ({
+        id: university.id,
+        name: university.name,
+      }))
+      .sort((left, right) => left.name.localeCompare(right.name));
+
+    const publishedPosts = publishedPostRows.map((post) => ({
+      slug: post.slug,
+      publishedAt: post.publishedAt?.toISOString(),
+      updatedAt: post.updatedAt?.toISOString(),
+    }));
+
     return {
       countries,
       courses,
       universities,
       programOfferings,
       indiaColleges,
+      joinUniversities,
+      publishedPosts,
     };
   } catch (error) {
     logCatalogDatabaseFallback(error);
@@ -360,14 +485,17 @@ export async function getCatalogSnapshot() {
 
   if (!globalForCatalogWarnings.__catalogSnapshotPromise) {
     globalForCatalogWarnings.__catalogSnapshotPromise = (async () => {
-      const snapshot =
-        (await readCatalogFromDatabase()) ?? {
-          countries: [],
-          courses: [],
-          universities: [],
-          programOfferings: [],
-          indiaColleges: [],
-        };
+      const snapshot = shouldUseBuildCatalogSnapshot()
+        ? ((await readBuildCatalogSnapshotFromDisk()) ?? (await createBuildCatalogSnapshot()))
+        : ((await readCatalogFromDatabase()) ?? {
+            countries: [],
+            courses: [],
+            universities: [],
+            programOfferings: [],
+            indiaColleges: [],
+            joinUniversities: [],
+            publishedPosts: [],
+          });
 
       globalForCatalogWarnings.__catalogSnapshotCache = {
         value: snapshot,
@@ -429,6 +557,16 @@ export async function getUniversityBySlug(slug: string) {
 export async function getProgramOfferings() {
   const snapshot = await getCatalogSnapshot();
   return snapshot.programOfferings;
+}
+
+export async function getJoinUniversityOptions() {
+  const snapshot = await getCatalogSnapshot();
+  return snapshot.joinUniversities;
+}
+
+export async function getPublishedBlogPostMetadata() {
+  const snapshot = await getCatalogSnapshot();
+  return snapshot.publishedPosts;
 }
 
 export async function getFeaturedLandingPages() {
@@ -727,6 +865,10 @@ async function queryFinderProgramsFromDatabase(
   page: number,
   pageSize: number,
 ): Promise<FinderCardProgramsPage | null> {
+  if (shouldUseBuildCatalogSnapshot()) {
+    return null;
+  }
+
   const db = getDb();
 
   if (!db) {
@@ -971,6 +1113,10 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
 async function selectFinderProgramsFromDatabase(
   whereClause?: ReturnType<typeof and>,
 ): Promise<FinderProgram[] | null> {
+  if (shouldUseBuildCatalogSnapshot()) {
+    return null;
+  }
+
   const db = getDb();
 
   if (!db) {
@@ -1293,7 +1439,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
 
   const db = getDb();
 
-  if (db) {
+  if (db && !shouldUseBuildCatalogSnapshot()) {
     const [countryRows, courseRows, mediumRows, intakeRows] = await Promise.all([
       db
         .selectDistinct({ slug: countriesTable.slug, name: countriesTable.name })
@@ -1462,6 +1608,37 @@ export async function getProgramsForCity(citySlug: string) {
 }
 
 export async function getUniqueCities() {
+  if (shouldUseBuildCatalogSnapshot()) {
+    const programs = await getFinderProgramsBase();
+
+    const cityMeta = new Map<string, { slug: string; name: string; countrySlug: string; countryName: string }>();
+    const uniSetsPerCity = new Map<string, Set<string>>();
+
+    for (const program of programs) {
+      const key = `${program.country.slug}:${program.university.city}`;
+      const slug = cityNameToSlug(program.university.city);
+      if (!cityMeta.has(key)) {
+        cityMeta.set(key, {
+          slug,
+          name: program.university.city,
+          countrySlug: program.country.slug,
+          countryName: program.country.name,
+        });
+      }
+      if (!uniSetsPerCity.has(key)) {
+        uniSetsPerCity.set(key, new Set());
+      }
+      uniSetsPerCity.get(key)!.add(program.university.slug);
+    }
+
+    return Array.from(cityMeta.entries())
+      .map(([key, entry]) => ({
+        ...entry,
+        universityCount: uniSetsPerCity.get(key)?.size ?? 0,
+      }))
+      .sort((a, b) => b.universityCount - a.universityCount);
+  }
+
   const db = getDb();
 
   if (db) {
@@ -1488,7 +1665,6 @@ export async function getUniqueCities() {
       universityCount: row.universityCount,
     }));
   }
-
   const programs = await getFinderProgramsBase();
 
   const cityMeta = new Map<string, { slug: string; name: string; countrySlug: string; countryName: string }>();
