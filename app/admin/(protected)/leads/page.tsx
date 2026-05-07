@@ -3,6 +3,7 @@ import { and, desc, eq, ilike, or, sql } from "drizzle-orm";
 import { ChevronLeft, ChevronRight, Download } from "lucide-react";
 
 import { requireAdminSession } from "@/lib/auth";
+import { getCachedLeadFilterOptions } from "@/lib/admin/leads";
 import { Button } from "@/components/ui/button";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
@@ -51,7 +52,7 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
   }
 
   if (seminarEvent) {
-    conditions.push(ilike(leads.seminarEvent, `%${seminarEvent}%`));
+    conditions.push(eq(leads.seminarEvent, seminarEvent));
   }
 
   if (interestedCountry) {
@@ -60,64 +61,46 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
 
   const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
 
-  // Get total count
-  const [countResult] = db
-    ? await db
-        .select({ count: sql<number>`count(*)::int` })
-        .from(leads)
-        .where(whereClause)
-    : [{ count: 0 }];
+  const [{ countResult, rows }, { sourcePathOptions, countryOptions, seminarEventOptions }] =
+    await Promise.all([
+      db
+        ? Promise.all([
+            db
+              .select({ count: sql<number>`count(*)::int` })
+              .from(leads)
+              .where(whereClause),
+            db
+              .select({
+                id: leads.id,
+                fullName: leads.fullName,
+                phone: leads.phone,
+                userState: leads.userState,
+                city: leads.city,
+                seminarEvent: leads.seminarEvent,
+                interestedCountry: leads.interestedCountry,
+                sourcePath: leads.sourcePath,
+                watiMessageStatus: leads.watiMessageStatus,
+                watiTemplateName: leads.watiTemplateName,
+                createdAt: leads.createdAt,
+              })
+              .from(leads)
+              .where(whereClause)
+              .orderBy(desc(leads.createdAt))
+              .limit(ITEMS_PER_PAGE)
+              .offset(offset),
+          ]).then(([countRows, leadRows]) => ({
+            countResult: countRows[0],
+            rows: leadRows,
+          }))
+        : Promise.resolve({
+            countResult: { count: 0 },
+            rows: [],
+          }),
+      getCachedLeadFilterOptions(),
+    ]);
 
   const totalCount = countResult?.count ?? 0;
   const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
-
-  // Get leads for current page
-  const rows = db
-    ? await db
-        .select({
-          id: leads.id,
-          fullName: leads.fullName,
-          phone: leads.phone,
-          userState: leads.userState,
-          city: leads.city,
-          seminarEvent: leads.seminarEvent,
-          interestedCountry: leads.interestedCountry,
-          sourcePath: leads.sourcePath,
-          watiMessageStatus: leads.watiMessageStatus,
-          watiTemplateName: leads.watiTemplateName,
-          createdAt: leads.createdAt,
-        })
-        .from(leads)
-        .where(whereClause)
-        .orderBy(desc(leads.createdAt))
-        .limit(ITEMS_PER_PAGE)
-        .offset(offset)
-    : [];
-
-  // Get unique values for filters
-  const sourcePathOptions = db
-    ? await db
-        .selectDistinct({ value: leads.sourcePath })
-        .from(leads)
-        .where(sql`${leads.sourcePath} IS NOT NULL`)
-        .orderBy(leads.sourcePath)
-    : [];
-
-  const countryOptions = db
-    ? await db
-        .selectDistinct({ value: leads.interestedCountry })
-        .from(leads)
-        .where(sql`${leads.interestedCountry} IS NOT NULL`)
-        .orderBy(leads.interestedCountry)
-    : [];
-
-  const seminarEventOptions = db
-    ? await db
-        .selectDistinct({ value: leads.seminarEvent })
-        .from(leads)
-        .where(sql`${leads.seminarEvent} IS NOT NULL`)
-        .orderBy(leads.seminarEvent)
-    : [];
 
   const buildQueryString = (updates: Record<string, string | undefined>) => {
     const newParams = new URLSearchParams();

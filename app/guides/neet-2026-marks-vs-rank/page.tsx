@@ -19,12 +19,12 @@ import {
 
 const path = "/guides/neet-2026-marks-vs-rank";
 const title =
-  "NEET 2026 Marks vs Rank: Expected Rank Range While Official Answer Key Is Awaited";
+  "NEET 2026 Marks vs Rank After Official Provisional Answer Key: Expected Rank Range";
 const description =
-  "NEET 2026 marks vs rank guide for students and parents, updated after our May 6, 2026, 6:08 PM IST official-source check, including unofficial rank-estimate context, no official 2026 answer key or result notice visible yet, score-range planning, and practical use for MBBS counselling.";
+  "NEET 2026 marks vs rank guide for students and parents, updated after our May 7, 2026, 8:07 AM IST official-source check, with the official provisional answer key now live, result still awaited, and score-range planning for MBBS counselling.";
 const publishedAt = "2026-05-04";
-const updatedAt = "2026-05-06";
-const reviewedAt = "May 6, 2026, 6:08 PM IST";
+const updatedAt = "2026-05-07";
+const reviewedAt = "May 7, 2026, 8:07 AM IST";
 const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
@@ -53,19 +53,19 @@ export const metadata: Metadata = {
 
 const rangePoints = [
   "Marks vs rank should be read as a practical range, not a guaranteed exact rank.",
-  "Any NEET 2026 rank estimate right now remains unofficial until the official process moves ahead.",
+  "The official provisional answer key is now live, but marks-vs-rank estimates still remain unofficial until the later stages of the official process.",
   "Even a small score swing can feel emotionally huge after the exam, but students still need broad planning discipline.",
   "Counselling decisions should be built on category, quota, domicile, and college type along with likely rank range.",
 ] as const;
 
 const officialContextPoints = [
   "The official NEET site shows exam-conduct messaging for May 3, 2026, along with the earlier April 12 city intimation and April 26 admit card updates.",
-  "The official NEET site also visibly shows dress-code, biometric-exception, and scribe-support notices around the May 3, 2026 exam cycle.",
-  "As of our May 6, 2026, 6:08 PM IST review, we did not see an official 2026 answer key or result notice on the main NEET page, documents listing, or NTA homepage.",
-  "The visible 2026 entries on the documents page page-one view currently include the admit-card notice, the scribe-support notice, city intimation, correction, extension of application date, the main application notice, bulletin, syllabus, and the document-updation advisory rather than a 2026 answer key or result item.",
-  "The visible answer-key and result items on that listing were still for NEET 2025, so current marks-vs-rank talk remains unofficial estimation.",
+  "The official NEET site also visibly shows dress-code, biometric-exception, and scribe-support notices around the May 3, 2026 exam cycle plus the May 6, 2026 provisional answer key notice.",
+  `In our ${reviewedAt} review, the NEET homepage was visibly surfacing the official provisional answer key notice and a separate provisional answer key PDF link.`,
+  "That official notice says candidates can challenge the provisional answer keys only after the scanned OMR answer sheet is uploaded, and the OMR upload plus challenge schedule will be notified separately.",
+  "The visible 2026 entries on the documents page page-one view still include the admit-card notice, the scribe-support notice, city intimation, correction, extension of application date, the main application notice, bulletin, syllabus, and the document-updation advisory rather than the 2026 answer key posting.",
   "The separate public-notices page was still showing older pre-exam notices and a Last Updated date of Apr 12, 2026 during our review, so students should not rely on that page alone for post-exam timing.",
-  "We also checked the main NTA website and did not find a separate NEET 2026 answer-key or result release notice mirrored there.",
+  "We also checked the main NTA website and did not find a separate NEET 2026 result notice mirrored there.",
   "That means current marks vs rank discussion should still be used only as a planning estimate, not as a confirmed rank outcome.",
 ] as const;
 
@@ -83,7 +83,7 @@ const faqs = [
   {
     question: "Is any NEET 2026 rank estimate official right now?",
     answer:
-      "No. As of Wednesday, May 6, 2026, 6:08 PM IST, our review of the official NEET site and NTA homepage did not show a 2026 answer key or result notice yet. So current rank discussions should be treated as unofficial estimates for planning only.",
+      "No. The official provisional answer key is now out, but that does not make any marks-vs-rank calculator official. Current rank discussions should still be treated as unofficial estimates for planning only.",
   },
   {
     question: "What should students do if their expected marks put them in a grey zone?",
@@ -98,12 +98,12 @@ const faqs = [
   {
     question: "Why should students keep checking the documents page as well as the homepage?",
     answer:
-      "Because official answer-key and result material is often easiest to confirm from the document listing. In our May 6, 2026, 6:08 PM IST review, the visible 2026 entries there included the admit-card notice, the scribe-support notice, and city-intimation and application-stage items, while the visible answer-key and result items were still for 2025, so marks-vs-rank estimates should remain unofficial planning tools for now.",
+      `Because the official pages do not always update in the same way at the same time. In our ${reviewedAt} review, the homepage had already surfaced the provisional answer key notice, while the documents page page-one view was still showing city-intimation and application-stage items. Cross-checking helps students avoid missing or misreading official updates.`,
   },
   {
     question: "Should students change their rank estimate if an unofficial answer key goes viral?",
     answer:
-      "Only carefully, and only as a planning range. Until NTA publishes an official answer-key notice, students should avoid rebuilding their entire rank expectation around one unofficial key or one social-media claim.",
+      "Students should now prefer the official provisional answer key over viral unofficial copies. Even then, they should use it only for a planning range because the OMR upload, challenge process, final key, and result can still change the picture.",
   },
   {
     question: "What should students do if two unofficial rank calculators give different outputs?",
@@ -113,7 +113,7 @@ const faqs = [
   {
     question: "Has NTA announced the NEET 2026 result date or rank list yet?",
     answer:
-      "We did not see a separate NEET 2026 result-date notice, result notice, or rank-list posting on the official NEET homepage, NEET documents page, or NTA homepage during our May 6, 2026, 6:08 PM IST review. Until an official notice appears, marks-vs-rank discussion should stay in estimate mode.",
+      `We did not see a separate NEET 2026 result-date notice, result notice, or rank-list posting on the official NEET homepage, NEET documents page, or NTA homepage during our ${reviewedAt} review. Until an official notice appears, marks-vs-rank discussion should stay in estimate mode.`,
   },
   {
     question: "Should students use marks vs rank estimates with a college predictor?",
@@ -123,7 +123,7 @@ const faqs = [
   {
     question: "Which latest official NEET notices are visible while rank estimates remain unofficial?",
     answer:
-      "In our May 6, 2026, 6:08 PM IST review, the official NEET pages were visibly carrying the exam-conduct notice along with dress-code, biometric-exception, admit-card, and scribe-support notices, while the documents page was showing the admit-card notice, the scribe-support notice, and earlier 2026 city-intimation and application-stage entries. These notices are official, but they do not make current marks-vs-rank estimates official.",
+      `In our ${reviewedAt} review, the official NEET pages were visibly carrying the provisional answer key notice dated May 6, 2026, the exam-conduct notice, and the dress-code, biometric-exception, admit-card, and scribe-support notices. These notices are official, but they do not make current marks-vs-rank estimates official.`,
   },
 ] as const;
 

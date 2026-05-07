@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { ChevronDown, Search } from "lucide-react";
-import { useTransition } from "react";
+import { useCallback, useEffect, useState, useTransition } from "react";
 
 type Props = {
   sourcePathOptions: { value: string | null }[];
@@ -19,8 +19,13 @@ export function LeadsFilters({ sourcePathOptions, seminarEventOptions = [], coun
   const sourcePath = searchParams.get("sourcePath") || "";
   const seminarEvent = searchParams.get("seminarEvent") || "";
   const interestedCountry = searchParams.get("interestedCountry") || "";
+  const [searchDraft, setSearchDraft] = useState(search);
 
-  const updateFilters = (updates: Record<string, string>) => {
+  useEffect(() => {
+    setSearchDraft(search);
+  }, [search]);
+
+  const updateFilters = useCallback((updates: Record<string, string>) => {
     const params = new URLSearchParams(searchParams);
 
     // Reset to page 1 when filters change
@@ -37,7 +42,19 @@ export function LeadsFilters({ sourcePathOptions, seminarEventOptions = [], coun
     startTransition(() => {
       router.push(`/admin/leads?${params.toString()}`);
     });
-  };
+  }, [router, searchParams]);
+
+  useEffect(() => {
+    const timeoutId = window.setTimeout(() => {
+      if (searchDraft === search) {
+        return;
+      }
+
+      updateFilters({ search: searchDraft });
+    }, 300);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [searchDraft, search, updateFilters]);
 
   const hasActiveFilters = search || sourcePath || seminarEvent || interestedCountry;
 
@@ -58,8 +75,8 @@ export function LeadsFilters({ sourcePathOptions, seminarEventOptions = [], coun
             <input
               type="text"
               placeholder="Search by name, phone, email, father's name..."
-              defaultValue={search}
-              onChange={(e) => updateFilters({ search: e.target.value })}
+              value={searchDraft}
+              onChange={(e) => setSearchDraft(e.target.value)}
               className="h-10 w-full rounded-lg border border-slate-200 bg-white pl-10 pr-4 text-sm text-slate-800 placeholder-slate-400 outline-none transition focus:border-[#0b312b] focus:ring-2 focus:ring-[#0b312b]/10"
             />
             {isPending && (

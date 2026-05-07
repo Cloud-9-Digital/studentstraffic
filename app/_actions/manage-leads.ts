@@ -1,6 +1,6 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { headers } from "next/headers";
 import { eq, inArray } from "drizzle-orm";
 import { z } from "zod";
@@ -31,6 +31,7 @@ const bulkLeadSchema = z.object({
 async function revalidateLeadAdminPaths(leadIds: number[]) {
   revalidatePath("/admin");
   revalidatePath("/admin/leads");
+  revalidateTag("admin-leads", "minutes");
 
   for (const leadId of leadIds) {
     revalidatePath(`/admin/leads/${leadId}`);
@@ -38,9 +39,10 @@ async function revalidateLeadAdminPaths(leadIds: number[]) {
 }
 
 export async function deleteLeadAction(
-  _prevState: ManageLeadsState = initialManageLeadsState,
+  prevState: ManageLeadsState = initialManageLeadsState,
   formData: FormData
 ): Promise<ManageLeadsState> {
+  void prevState;
   const session = await requireAdminSession({ minimumRole: "owner" });
   const parsed = singleLeadSchema.safeParse({
     leadId: formData.get("leadId"),
@@ -60,20 +62,17 @@ export async function deleteLeadAction(
 
   const leadId = parsed.data.leadId;
   const [lead] = await db
-    .select({
+    .delete(leads)
+    .where(eq(leads.id, leadId))
+    .returning({
       id: leads.id,
       fullName: leads.fullName,
       phone: leads.phone,
-    })
-    .from(leads)
-    .where(eq(leads.id, leadId))
-    .limit(1);
+    });
 
   if (!lead) {
     return { status: "error", message: "Lead not found." };
   }
-
-  await db.delete(leads).where(eq(leads.id, leadId));
 
   await recordAdminAuditLog({
     actorAdminId: session.user.adminUserId,
@@ -99,9 +98,10 @@ export async function deleteLeadAction(
 }
 
 export async function bulkDeleteLeadsAction(
-  _prevState: ManageLeadsState = initialManageLeadsState,
+  prevState: ManageLeadsState = initialManageLeadsState,
   formData: FormData
 ): Promise<ManageLeadsState> {
+  void prevState;
   const session = await requireAdminSession({ minimumRole: "owner" });
   const parsed = bulkLeadSchema.safeParse({
     leadIds: formData.getAll("leadIds"),
@@ -121,20 +121,18 @@ export async function bulkDeleteLeadsAction(
 
   const leadIds = Array.from(new Set(parsed.data.leadIds));
   const records = await db
-    .select({
+    .delete(leads)
+    .where(inArray(leads.id, leadIds))
+    .returning({
       id: leads.id,
       fullName: leads.fullName,
-    })
-    .from(leads)
-    .where(inArray(leads.id, leadIds));
+    });
 
   if (records.length === 0) {
     return { status: "error", message: "No matching leads found." };
   }
 
   const matchedIds = records.map((record) => record.id);
-
-  await db.delete(leads).where(inArray(leads.id, matchedIds));
 
   await recordAdminAuditLog({
     actorAdminId: session.user.adminUserId,

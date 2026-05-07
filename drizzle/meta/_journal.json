@@ -197,6 +197,13 @@
       "when": 1777980600000,
       "tag": "0032_wati_webhook_lookup_index",
       "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1778112000000,
+      "tag": "0033_lead_admin_query_indexes",
+      "breakpoints": true
     }
   ]
 }

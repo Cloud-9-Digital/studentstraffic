@@ -2,7 +2,7 @@
 
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { and, eq, gte } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 import { z } from "zod";
 
 import {
@@ -199,85 +199,139 @@ export async function submitPeerRequestAction(
     };
   }
 
-  const [recentRequest] = await db
-    .select({ id: peerRequests.id })
-    .from(peerRequests)
-    .where(
-      and(
-        eq(peerRequests.universityId, universityRecord.id),
-        eq(peerRequests.phone, data.phone),
-        gte(peerRequests.createdAt, minutesAgo(30))
-      )
-    )
-    .limit(1);
-
-  if (recentRequest) {
-    return {
-      error: "You already sent a recent peer request here. Please wait a bit before trying again.",
-    };
-  }
-
   let insertedLeadId: number | undefined;
 
   try {
-    const [insertedLead] = await db
-      .insert(leads)
-      .values({
-        fullName: data.fullName,
-        phone: data.phone,
-        email: emptyToUndefined(data.email),
-        userState: data.userState,
-        countrySlug: universityRecord.countrySlug,
-        universitySlug: universityRecord.slug,
-        sourcePath: data.sourcePath,
-        sourceUrl: emptyToUndefined(data.sourceUrl),
-        sourceQuery,
-        pageTitle: emptyToUndefined(data.pageTitle),
-        ctaVariant: "peer_request",
-        notes: leadNotes,
-        documentReferrer: emptyToUndefined(data.documentReferrer),
-        utmSource,
-        utmMedium,
-        utmCampaign,
-        utmTerm,
-        utmContent,
-        referrer: headerStore.get("referer") ?? null,
-        userAgent: headerStore.get("user-agent") ?? null,
-        ipAddress,
-        acceptLanguage: headerStore.get("accept-language") ?? null,
-        clientContext,
-        crmSyncStatus: env.hasCrmLeadSyncConfig ? "pending" : "skipped",
-        pabblySyncStatus: env.hasPabblyLeadWebhook ? "pending" : "skipped",
-        createdAt: submittedAt,
-      })
-      .returning({ id: leads.id });
+    const result = await db.execute<{ leadId: number }>(sql`
+      WITH recent_request AS (
+        SELECT 1
+        FROM ${peerRequests}
+        WHERE ${peerRequests.universityId} = ${universityRecord.id}
+          AND ${peerRequests.phone} = ${data.phone}
+          AND ${peerRequests.createdAt} >= ${minutesAgo(30)}
+        LIMIT 1
+      ),
+      inserted_lead AS (
+        INSERT INTO ${leads} (
+          ${leads.fullName},
+          ${leads.phone},
+          ${leads.email},
+          ${leads.userState},
+          ${leads.countrySlug},
+          ${leads.universitySlug},
+          ${leads.sourcePath},
+          ${leads.sourceUrl},
+          ${leads.sourceQuery},
+          ${leads.pageTitle},
+          ${leads.ctaVariant},
+          ${leads.notes},
+          ${leads.documentReferrer},
+          ${leads.utmSource},
+          ${leads.utmMedium},
+          ${leads.utmCampaign},
+          ${leads.utmTerm},
+          ${leads.utmContent},
+          ${leads.referrer},
+          ${leads.userAgent},
+          ${leads.ipAddress},
+          ${leads.acceptLanguage},
+          ${leads.clientContext},
+          ${leads.crmSyncStatus},
+          ${leads.pabblySyncStatus},
+          ${leads.createdAt}
+        )
+        SELECT
+          ${data.fullName},
+          ${data.phone},
+          ${emptyToUndefined(data.email)},
+          ${data.userState},
+          ${universityRecord.countrySlug},
+          ${universityRecord.slug},
+          ${data.sourcePath},
+          ${emptyToUndefined(data.sourceUrl)},
+          ${sourceQuery},
+          ${emptyToUndefined(data.pageTitle)},
+          ${"peer_request"},
+          ${leadNotes},
+          ${emptyToUndefined(data.documentReferrer)},
+          ${utmSource},
+          ${utmMedium},
+          ${utmCampaign},
+          ${utmTerm},
+          ${utmContent},
+          ${headerStore.get("referer") ?? null},
+          ${headerStore.get("user-agent") ?? null},
+          ${ipAddress},
+          ${headerStore.get("accept-language") ?? null},
+          ${clientContext},
+          ${env.hasCrmLeadSyncConfig ? "pending" : "skipped"},
+          ${env.hasPabblyLeadWebhook ? "pending" : "skipped"},
+          ${submittedAt}
+        WHERE NOT EXISTS (SELECT 1 FROM recent_request)
+        RETURNING ${leads.id}
+      ),
+      inserted_peer_request AS (
+        INSERT INTO ${peerRequests} (
+          ${peerRequests.universityId},
+          ${peerRequests.leadId},
+          ${peerRequests.fullName},
+          ${peerRequests.phone},
+          ${peerRequests.email},
+          ${peerRequests.userState},
+          ${peerRequests.userCity},
+          ${peerRequests.courseInterest},
+          ${peerRequests.languagePreference},
+          ${peerRequests.message},
+          ${peerRequests.sourcePath},
+          ${peerRequests.sourceUrl},
+          ${peerRequests.sourceQuery},
+          ${peerRequests.pageTitle},
+          ${peerRequests.documentReferrer},
+          ${peerRequests.userAgent},
+          ${peerRequests.ipAddress},
+          ${peerRequests.acceptLanguage},
+          ${peerRequests.clientContext},
+          ${peerRequests.status},
+          ${peerRequests.createdAt},
+          ${peerRequests.updatedAt}
+        )
+        SELECT
+          ${universityRecord.id},
+          inserted_lead.id,
+          ${data.fullName},
+          ${data.phone},
+          ${emptyToUndefined(data.email)},
+          ${data.userState},
+          ${emptyToUndefined(data.userCity)},
+          ${emptyToUndefined(data.courseInterest)},
+          ${emptyToUndefined(data.languagePreference)},
+          ${emptyToUndefined(data.message)},
+          ${data.sourcePath},
+          ${emptyToUndefined(data.sourceUrl)},
+          ${sourceQuery},
+          ${emptyToUndefined(data.pageTitle)},
+          ${emptyToUndefined(data.documentReferrer)},
+          ${headerStore.get("user-agent") ?? null},
+          ${ipAddress},
+          ${headerStore.get("accept-language") ?? null},
+          ${clientContext},
+          ${"new"},
+          ${submittedAt},
+          ${submittedAt}
+        FROM inserted_lead
+        RETURNING ${peerRequests.leadId}
+      )
+      SELECT lead_id AS "leadId"
+      FROM inserted_peer_request
+    `);
 
-    insertedLeadId = insertedLead?.id;
+    insertedLeadId = result.rows[0]?.leadId;
 
-    await db.insert(peerRequests).values({
-      universityId: universityRecord.id,
-      leadId: insertedLeadId,
-      fullName: data.fullName,
-      phone: data.phone,
-      email: emptyToUndefined(data.email),
-      userState: data.userState,
-      userCity: emptyToUndefined(data.userCity),
-      courseInterest: emptyToUndefined(data.courseInterest),
-      languagePreference: emptyToUndefined(data.languagePreference),
-      message: emptyToUndefined(data.message),
-      sourcePath: data.sourcePath,
-      sourceUrl: emptyToUndefined(data.sourceUrl),
-      sourceQuery,
-      pageTitle: emptyToUndefined(data.pageTitle),
-      documentReferrer: emptyToUndefined(data.documentReferrer),
-      userAgent: headerStore.get("user-agent") ?? null,
-      ipAddress,
-      acceptLanguage: headerStore.get("accept-language") ?? null,
-      clientContext,
-      status: "new",
-      createdAt: submittedAt,
-      updatedAt: submittedAt,
-    });
+    if (!insertedLeadId) {
+      return {
+        error: "You already sent a recent peer request here. Please wait a bit before trying again.",
+      };
+    }
   } catch (err) {
     console.error("[submit-peer-request] insert failed:", err);
     return {

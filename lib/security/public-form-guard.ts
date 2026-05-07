@@ -15,16 +15,17 @@ export async function consumePublicFormRateLimits(
   rules: Array<RateLimitRule | null | undefined>,
   label = "submissions"
 ) {
-  for (const rule of rules) {
-    if (!rule) {
-      continue;
-    }
+  const validRules = rules.filter((rule): rule is RateLimitRule => Boolean(rule));
 
-    const status = await consumeRateLimit(rule);
+  if (validRules.length === 0) {
+    return null;
+  }
 
-    if (!status.allowed) {
-      return `Too many ${label}. Please try again in ${formatRetryAfterMs(status.retryAfterMs)}.`;
-    }
+  const statuses = await Promise.all(validRules.map((rule) => consumeRateLimit(rule)));
+  const blockedStatus = statuses.find((status) => !status.allowed);
+
+  if (blockedStatus) {
+    return `Too many ${label}. Please try again in ${formatRetryAfterMs(blockedStatus.retryAfterMs)}.`;
   }
 
   return null;

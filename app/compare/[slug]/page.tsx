@@ -41,7 +41,6 @@ import {
   getWebPageStructuredData,
 } from "@/lib/structured-data";
 import { getComparisonHref, getUniversityHref } from "@/lib/routes";
-import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 import {
   formatCurrencyUsd,
   formatProgramAnnualFee,
@@ -1087,14 +1086,6 @@ function BudgetComparisonDetail({
         </div>
       </section>
     </>
-  );
-}
-
-export async function generateStaticParams() {
-  const pages = await getAllComparisonPages();
-  return ensureNonEmptyStaticParams(
-    pages.map((page) => ({ slug: page.slug })),
-    { slug: "__comparison-fallback__" }
   );
 }
 

@@ -110,6 +110,27 @@ export function trackContactClickServer(params: {
 }) {
   if (typeof window === "undefined") return;
 
+  const dedupeKey = [
+    "contact-click",
+    params.channel,
+    params.location,
+    params.pagePath,
+    params.href ?? "",
+  ].join(":");
+
+  try {
+    const previousTrackedAt = window.sessionStorage.getItem(dedupeKey);
+    const now = Date.now();
+
+    if (previousTrackedAt && now - Number(previousTrackedAt) < 30 * 60 * 1000) {
+      return;
+    }
+
+    window.sessionStorage.setItem(dedupeKey, String(now));
+  } catch {
+    // Ignore storage failures and continue to best-effort tracking.
+  }
+
   void fetch("/api/track-contact", {
     method: "POST",
     headers: {

@@ -25,12 +25,14 @@ import {
 
 const path = "/guides/neet-2026-paper-analysis-expected-cutoff";
 const title =
-  "NEET 2026 Answer Key Live Update: No Official Answer Key Yet, Paper Analysis, Expected Cut Off";
+  "NEET 2026 Official Provisional Answer Key Live: Result Awaited, Expected Cut Off";
 const description =
-  "NEET 2026 answer key live update after the May 3 exam, refreshed from our May 6, 2026, 6:08 PM IST official-source check across NEET and NTA pages, with no official 2026 answer key or result notice visible yet, plus expected cut off planning, marks vs rank context, and next steps for MBBS admission.";
+  "NEET 2026 answer key live update after the May 3 exam, refreshed from our May 7, 2026, 8:07 AM IST official-source check across NEET and NTA pages, with the official provisional answer key notice dated May 6, 2026 now live, result still awaited, and practical expected cut off, marks vs rank, and counselling planning guidance.";
 const publishedAt = "2026-05-03";
-const updatedAt = "2026-05-06";
-const reviewedAt = "May 6, 2026, 6:08 PM IST";
+const updatedAt = "2026-05-07";
+const reviewedAt = "May 7, 2026, 8:07 AM IST";
+const reviewedDateLabel = "May 7, 2026";
+const reviewedDayLabel = "Wednesday, May 7, 2026";
 const coverPath = "/guides/raster/neet-2026-paper-analysis-cover.svg.png";
 const coverUrl = absoluteUrl(coverPath);
 const canonicalUrl = absoluteUrl(path);
@@ -71,11 +73,11 @@ export const metadata: Metadata = {
 };
 
 const quickTakeaways = [
-  "As of Wednesday, May 6, 2026, 6:08 PM IST, our source check found no official NEET 2026 answer key or result notice on the official NEET homepage, documents page, or NTA homepage.",
-  "The official NEET homepage was visibly surfacing exam-conduct, dress-code, biometric-exception, admit-card, and scribe-support notices, while the documents page was still showing visible 2026 pre-result items rather than a 2026 answer key or result posting.",
-  "The separate NEET public-notices page was still showing older pre-exam notices and a Last Updated date of April 12, 2026, so students should not use that one page alone to judge whether the latest post-exam update is out.",
-  "Unofficial coaching answer keys may help students estimate a score range, but they are not the same as the official provisional key, final answer key, or result.",
-  "The biggest post-exam mistake is taking one unofficial score estimate and turning it into a final admission decision.",
+  `In our ${reviewedDayLabel}, 8:07 AM IST check, the official NEET homepage was clearly listing the public notice titled Provisional Answer Keys of NEET (UG) 2026 dated May 6, 2026.`,
+  "The public notice says the provisional answer keys for the question paper, all series, are uploaded on the NTA-NEET website.",
+  "The same notice says candidates can challenge the provisional answer keys only after the scanned OMR answer sheet is uploaded, and the OMR upload plus challenge schedule will be notified separately.",
+  "The separate NEET public-notices page still looked older, with a footer date of Apr 12, 2026, and the documents page page-one view still did not visibly surface the 2026 answer key posting during our check.",
+  "The official provisional key is useful for score estimation, but it is still not the final answer key, final result, or final counselling outcome.",
 ] as const;
 
 const nextSteps = [
@@ -90,25 +92,25 @@ const updateLog = [
     timestamp: reviewedAt,
     title: "Official-source check completed",
     body:
-      "We checked the official NEET homepage, the NEET documents page, the NEET helpdesk page, and the main NTA homepage again. At the time of review, the exam had already been conducted, but no official 2026 answer key, challenge notice, result-date notice, or result notice was visible on the NEET homepage, the NEET document listing, or the main NTA website.",
+      `We checked the official NEET homepage, the NEET documents page, the NEET public-notices page, the NEET helpdesk page, and the main NTA homepage again. In this ${reviewedAt} review, the official NEET homepage was visibly showing a public notice for the provisional answer keys dated May 6, 2026.`,
   },
   {
     timestamp: reviewedAt,
-    title: "Documents page still shows pre-result 2026 items",
+    title: "Official provisional answer key notice is now live",
     body:
-      "In our current page-one view, the visible 2026 document entries include the admit-card notice, the scribe-support notice, the advance city-intimation notice, the correction window notice, the application-date extension, the main application notice, the information bulletin, the syllabus, and the document-updation advisory. Lower on the same listing, the visible provisional answer key, final answer key, and result items were still for NEET 2025. The documents page footer was still showing Last Updated: May 02, 2026 during our review.",
+      "The homepage was listing the public notice titled Provisional Answer Keys of National Eligibility cum Entrance Test [NEET (UG)] 2026 (3rd May 2026) and also a separate provisional answer key PDF link. The notice itself is dated 06 May 2026 and confirms that the provisional answer keys have been uploaded on the NTA-NEET website.",
   },
   {
     timestamp: reviewedAt,
-    title: "NEET homepage still shows exam-stage notices",
+    title: "Challenge schedule is still pending",
     body:
-      "The NEET homepage was still featuring the admit-card live link plus public notices on smooth and secure conduct of the exam, dress code, biometric exception, and scribe support. The homepage footer was still showing Last Updated: May 02, 2026. The main NTA homepage was also carrying NEET exam-cycle items, but in the same review we still did not find a separate NEET 2026 answer-key or result release notice there.",
+      "The official notice does not give the answer-key challenge dates yet. Instead, it says candidates can challenge the provisional answer keys after the scanned OMR answer sheet is uploaded, and that the uploading schedule plus challenge round will be notified separately.",
   },
   {
     timestamp: reviewedAt,
-    title: "Public notices page still looks older than the homepage",
+    title: "Official pages are not fully in sync",
     body:
-      "The separate NEET public-notices page was still listing older pre-exam notices such as city intimation, correction, application extension, application invite, syllabus, and document-updation guidance, and its footer was still showing Last Updated: Apr 12, 2026 during our review.",
+      "During the same check, the separate NEET public-notices page still showed older pre-exam items and a Last Updated date of Apr 12, 2026, while the documents page page-one view still showed pre-result 2026 entries rather than the 2026 answer key posting. That is why students should cross-check the homepage, the notice PDF, and the answer-key PDF together.",
   },
   {
     timestamp: reviewedAt,
@@ -127,22 +129,22 @@ const liveUpdateRows = [
   {
     label: "Official answer key and result status",
     value:
-      "As of our Wednesday, May 6, 2026, 6:08 PM IST check, we did not see an official 2026 answer key, result-date notice, or result notice on the NEET homepage, the documents list, or the NTA homepage.",
+      `As of our ${reviewedDayLabel}, 8:07 AM IST check, the official provisional answer key notice dated May 6, 2026 was live on the NEET homepage, while no official result notice was visible yet.`,
   },
   {
     label: "Documents page status",
     value:
-      "The visible 2026 entries on page one include the admit-card notice, scribe-support notice, city-intimation notice, correction window, application notices, the bulletin, syllabus, and document-updation advisory. The visible provisional answer key, final answer key, and result entries were still for NEET 2025.",
+      "The documents page page-one view was still showing the admit-card notice, scribe-support notice, city-intimation notice, correction window, application notices, bulletin, syllabus, and document-updation advisory rather than the 2026 answer key posting.",
   },
   {
     label: "Public notices page status",
     value:
-      "The separate NEET public-notices page was still showing older pre-exam notices and a footer date of April 12, 2026, so it was not the best standalone page for checking fresh post-exam answer-key movement.",
+      "The separate NEET public-notices page was still showing older pre-exam notices and a footer date of April 12, 2026, so it was not the best standalone page for tracking the new answer-key release.",
   },
   {
-    label: "Best use of exam-day content",
+    label: "Challenge status",
     value:
-      "Use it to build a planning range for counselling, not to make a final admission decision.",
+      "The notice says the answer-key challenge process will begin after the scanned OMR answer sheet is uploaded, and NTA will notify that schedule separately.",
   },
 ] as const;
 
@@ -157,7 +159,19 @@ const officialSourceLinks = [
     title: "NEET documents page",
     href: "https://neet.nta.nic.in/documents/",
     description:
-      "Use the document listing to confirm whether a 2026 provisional answer key, final answer key, result, or new public notice has actually been published.",
+      "Use the document listing as a secondary cross-check, but note that its page-one view still did not visibly surface the 2026 answer key posting in our latest review.",
+  },
+  {
+    title: "Official provisional answer key notice",
+    href: "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/05/202605062073055515.pdf",
+    description:
+      "This May 6, 2026 public notice confirms that the provisional answer keys are uploaded and says the OMR upload plus challenge schedule will be notified separately.",
+  },
+  {
+    title: "Official provisional answer key PDF",
+    href: "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/05/202605061448997112.pdf",
+    description:
+      "Use the official PDF to check the provisional answer key booklet-wise instead of relying only on coaching copies.",
   },
   {
     title: "NEET public notices page",
@@ -181,7 +195,7 @@ const officialSourceLinks = [
     title: "NTA main website",
     href: "https://www.nta.ac.in/",
     description:
-      "Use the parent NTA website to cross-check whether any NEET 2026 press release or notice has also been mirrored there. In our latest review, we did not see a separate answer-key or result release notice there.",
+      "Use the parent NTA website to cross-check whether any NEET 2026 press release or result notice has also been mirrored there. In our latest review, we did not see a separate NEET result notice there.",
   },
 ] as const;
 
@@ -196,7 +210,7 @@ const faqs = [
   {
     question: "Has the official NEET 2026 answer key been released?",
     answer:
-      "As of Wednesday, May 6, 2026, 6:08 PM IST, our check of the official NEET homepage, documents page, and NTA homepage did not show an official 2026 answer key notice yet. That is an inference from the pages we checked, so students should still verify directly before acting on any update.",
+      `Yes. In our ${reviewedDayLabel}, 8:07 AM IST official-source check, the NEET homepage was listing the provisional answer key public notice dated May 6, 2026, along with a separate provisional answer key PDF link.`,
   },
   {
     question: "Should students trust expected cutoff discussions on exam day?",
@@ -206,7 +220,7 @@ const faqs = [
   {
     question: "What should students do right after the NEET 2026 exam?",
     answer:
-      "They should estimate a broad score range, gather category and state-quota details, review realistic college buckets, and avoid making final admission decisions from one unofficial answer key.",
+      "They should use the official provisional answer key to estimate a broad score range, gather category and state-quota details, review realistic college buckets, and avoid making final admission decisions before OMR upload, challenge processing, and the final result.",
   },
   {
     question: "When can students expect more clarity on NEET 2026 result and counselling planning?",
@@ -216,22 +230,22 @@ const faqs = [
   {
     question: "Which official NEET 2026 dates are already visible on the NEET website?",
     answer:
-      "The official NEET site currently shows the advance city intimation update published on April 12, 2026, the admit card update published on April 26, 2026, and exam-conduct messaging for May 3, 2026. During our May 6, 2026, 6:08 PM IST review, the homepage was also displaying dress-code, biometric-exception, and scribe-related notices, while the homepage footer was still showing Last Updated: May 02, 2026. Students should keep tracking the same official site for any answer key or result notice.",
+      `The official NEET site currently shows the advance city intimation update published on April 12, 2026, the admit card update published on April 26, 2026, exam-conduct messaging for May 3, 2026, and a provisional answer key public notice dated May 6, 2026. In our ${reviewedAt} review, the homepage footer was also showing Last Updated: May 06, 2026.`,
   },
   {
     question: "What does the NEET documents page show right now?",
     answer:
-      "In our Wednesday, May 6, 2026, 6:08 PM IST review, the page-one visible 2026 entries included the admit-card notice, the scribe-support notice, advance city intimation, correction in particulars, extension of application date, the main application notice, the information bulletin, syllabus, and the document-updation advisory. The visible provisional answer key, final answer key, and result entries on that page were still for NEET 2025, which is why students should keep checking for a new 2026 posting instead of assuming one is already out.",
+      `In our ${reviewedDayLabel}, 8:07 AM IST review, the page-one visible 2026 entries still included the admit-card notice, the scribe-support notice, advance city intimation, correction in particulars, extension of application date, the main application notice, the information bulletin, syllabus, and the document-updation advisory. That is why students should not depend on the documents page alone when the homepage is already surfacing the answer key notice.`,
   },
   {
     question: "Why does the NEET public notices page look older than the homepage?",
     answer:
-      "In our May 6, 2026, 6:08 PM IST review, the separate NEET public-notices page was still showing older pre-exam notices and a footer date of Apr 12, 2026, while the homepage and documents page were surfacing different parts of the 2026 exam cycle. That is why students should cross-check more than one official page before assuming there is no fresh update.",
+      `In our ${reviewedAt} review, the separate NEET public-notices page was still showing older pre-exam notices and a footer date of Apr 12, 2026, while the homepage had already surfaced the provisional answer key notice. That is why students should cross-check more than one official page before concluding that nothing has changed.`,
   },
   {
     question: "Has NTA announced the NEET 2026 result date yet?",
     answer:
-      "We did not see a separate NEET 2026 result-date notice on the official NEET homepage, the NEET documents page, or the NTA homepage during our May 6, 2026, 6:08 PM IST review. Students should wait for an official notice instead of trusting forwarded timelines.",
+      `We did not see a separate NEET 2026 result-date notice on the official NEET homepage, the NEET documents page, or the NTA homepage during our ${reviewedAt} review. Students should wait for an official notice instead of trusting forwarded timelines.`,
   },
   {
     question: "What are the official NEET 2026 helpdesk details right now?",
@@ -241,17 +255,17 @@ const faqs = [
   {
     question: "Has NTA announced a NEET 2026 answer key challenge window yet?",
     answer:
-      "We did not see any official NEET 2026 answer key challenge notice on the NEET homepage, documents page, or NTA homepage during our May 6, 2026, 6:08 PM IST review. Students should wait for an official notice before trusting any challenge dates being circulated elsewhere.",
+      "Not yet in the notice we checked. The May 6, 2026 provisional answer key notice says candidates can challenge the keys after the scanned OMR answer sheet is uploaded, and the uploading schedule plus challenge round will be notified separately.",
   },
   {
     question: "Is the NTA website showing any separate NEET 2026 answer key release notice?",
     answer:
-      "Not in our May 6, 2026, 6:08 PM IST check. We checked the main NTA website as a cross-reference and did not see a separate NEET 2026 answer-key or result release notice there.",
+      `Not in our ${reviewedAt} check. We checked the main NTA website as a cross-reference and did not see a separate NEET 2026 answer-key headline or result notice there.`,
   },
   {
     question: "Which latest official notices are visible on the NEET 2026 site now?",
     answer:
-      "In our May 6, 2026, 6:08 PM IST review, the NEET homepage was visibly surfacing the May 3 exam-conduct notice, the dress-code advisory, the biometric-exception advisory, the admit-card release notice, and the scribe portal notice. The documents page was showing the admit-card notice, the scribe portal notice, and earlier 2026 city-intimation and application-stage items. These are official notices, but they are not the same thing as an answer key or result release.",
+      `In our ${reviewedAt} review, the NEET homepage was visibly surfacing the provisional answer key notice dated May 6, 2026, the May 3 exam-conduct notice, the dress-code advisory, the biometric-exception advisory, the admit-card release notice, and the scribe portal notice. The documents page was still showing the admit-card notice, the scribe portal notice, and earlier 2026 city-intimation and application-stage items.`,
   },
   {
     question: "How should students use a NEET college predictor at this stage?",
@@ -480,29 +494,26 @@ export default function Neet2026PaperAnalysisPage() {
 
                 <section className="space-y-5">
                   <h2 className="font-display text-3xl font-semibold tracking-tight text-heading">
-                    What the official situation looks like as of May 6, 2026
+                    What the official situation looks like as of {reviewedDateLabel}
                   </h2>
                   <p className="text-base leading-8 text-muted-foreground">
-                    As of Wednesday, May 6, 2026, 6:08 PM IST, the safest
-                    approach is still to separate official communication from
-                    unofficial post-exam discussion. The official NEET website
-                    still shows exam-cycle notices such as the May 3, 2026
-                    exam-conduct messaging, the April 26, 2026 admit-card
-                    update, and current public notices around dress code,
-                    biometric exception, and scribe support. The documents page
-                    was still showing page-one visible 2026 pre-result items
-                    such as the admit-card notice, the scribe-support notice,
-                    city intimation, correction, application notices, bulletin,
-                    syllabus, and document advisories. At the same time, the
-                    visible provisional answer key, final answer key, and
-                    result entries on that listing were still for 2025, and we
-                    did not see a published 2026 answer key, result-date
-                    notice, or result notice on the main NEET page, the
-                    document listing, or the main NTA website during this
-                    review. The separate public-notices page was still showing
-                    older pre-exam entries with a footer date of Apr 12, 2026,
-                    so it was not the strongest single page for tracking fresh
-                    post-exam movement.
+                    As of {reviewedDayLabel}, 8:07 AM IST, the official
+                    picture is more useful than it was a day earlier. The main
+                    NEET homepage is now surfacing the provisional answer key
+                    notice dated May 6, 2026, along with a separate official
+                    provisional answer key PDF link. The notice confirms that
+                    the provisional answer keys have been uploaded and also
+                    clarifies that candidates can challenge them only after the
+                    scanned OMR answer sheet is uploaded. NTA says the OMR
+                    upload schedule and challenge round will be notified
+                    separately. At the same time, the documents page page-one
+                    view was still showing older 2026 pre-result entries rather
+                    than the 2026 answer key posting, and the separate public
+                    notices page was still showing older entries with a footer
+                    date of Apr 12, 2026. The result notice was still not
+                    visible in the official pages we checked, so students
+                    should use the provisional key for planning, not for false
+                    certainty.
                   </p>
                   <div className="grid gap-3">
                     {quickTakeaways.map((item) => (
@@ -553,8 +564,9 @@ export default function Neet2026PaperAnalysisPage() {
                     >
                       NTA website
                     </a>
-                    . The answer-key status line above is an inference from
-                    those official pages.
+                    . We also checked the official provisional notice PDF and
+                    the official provisional answer key PDF linked from the
+                    NEET homepage.
                   </p>
                 </section>
 

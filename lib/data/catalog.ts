@@ -1,7 +1,7 @@
 import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
-import { and, asc, eq } from "drizzle-orm";
+import { and, asc, count, desc, eq, gte, ilike, lte, or, sql } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
 import type {
@@ -825,6 +825,427 @@ function compareFinderProgramNames(left: FinderProgram, right: FinderProgram) {
   return left.country.name.localeCompare(right.country.name);
 }
 
+function buildFinderProgramConditions(filters: FinderFilters) {
+  const conditions = [
+    eq(programOfferingsTable.published, true),
+    eq(universitiesTable.published, true),
+  ];
+
+  if (filters.q) {
+    const query = `%${filters.q.toLowerCase()}%`;
+    conditions.push(
+      or(
+        ilike(universitiesTable.name, query),
+        ilike(universitiesTable.city, query),
+        ilike(countriesTable.name, query),
+        ilike(coursesTable.shortName, query),
+      )!,
+    );
+  }
+
+  if (filters.country) {
+    conditions.push(eq(countriesTable.slug, filters.country));
+  }
+
+  if (filters.course) {
+    conditions.push(eq(coursesTable.slug, filters.course));
+  }
+
+  if (filters.universityType) {
+    conditions.push(eq(universitiesTable.type, filters.universityType));
+  }
+
+  if (filters.medium) {
+    conditions.push(eq(programOfferingsTable.medium, filters.medium as ProgramOffering["medium"]));
+  }
+
+  if (filters.intake) {
+    conditions.push(sql`${programOfferingsTable.intakeMonths} @> ARRAY[${filters.intake}]::text[]`);
+  }
+
+  if (filters.feeMin != null) {
+    conditions.push(gte(programOfferingsTable.annualTuitionUsd, filters.feeMin));
+  }
+
+  if (filters.feeMax != null) {
+    conditions.push(lte(programOfferingsTable.annualTuitionUsd, filters.feeMax));
+  }
+
+  return and(...conditions);
+}
+
+function getFinderProgramOrder(sort?: FinderSort) {
+  switch (getFinderSort(sort)) {
+    case "tuition_asc":
+      return [
+        sql`CASE WHEN ${programOfferingsTable.annualTuitionUsd} > 0 THEN 0 ELSE 1 END`,
+        asc(programOfferingsTable.annualTuitionUsd),
+        asc(universitiesTable.name),
+        asc(coursesTable.shortName),
+        asc(countriesTable.name),
+      ] as const;
+    case "tuition_desc":
+      return [
+        sql`CASE WHEN ${programOfferingsTable.annualTuitionUsd} > 0 THEN 0 ELSE 1 END`,
+        desc(programOfferingsTable.annualTuitionUsd),
+        asc(universitiesTable.name),
+        asc(coursesTable.shortName),
+        asc(countriesTable.name),
+      ] as const;
+    case "name_asc":
+      return [
+        asc(universitiesTable.name),
+        asc(coursesTable.shortName),
+        asc(countriesTable.name),
+      ] as const;
+    default:
+      return [
+        desc(programOfferingsTable.featured),
+        sql`CASE WHEN ${programOfferingsTable.annualTuitionUsd} > 0 THEN ${programOfferingsTable.annualTuitionUsd} ELSE 2147483647 END`,
+        asc(universitiesTable.name),
+        asc(coursesTable.shortName),
+        asc(countriesTable.name),
+      ] as const;
+  }
+}
+
+async function queryFinderProgramsFromDatabase(
+  filters: FinderFilters,
+  page: number,
+  pageSize: number,
+): Promise<FinderCardProgramsPage | null> {
+  const db = getDb();
+
+  if (!db) {
+    return null;
+  }
+
+  const whereClause = buildFinderProgramConditions(filters);
+  const [countRow] = await db
+    .select({ value: count() })
+    .from(programOfferingsTable)
+    .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+    .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+    .where(whereClause);
+
+  const totalItems = countRow?.value ?? 0;
+  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+  const safePage = Math.min(Math.max(page, 1), totalPages);
+  const offset = (safePage - 1) * pageSize;
+
+  const rows = await db
+    .select({
+      universitySlug: universitiesTable.slug,
+      universityName: universitiesTable.name,
+      universityCity: universitiesTable.city,
+      universityType: universitiesTable.type,
+      universityLogoUrl: universitiesTable.logoUrl,
+      universityCoverImageUrl: universitiesTable.coverImageUrl,
+      universityFeatured: universitiesTable.featured,
+      countrySlug: countriesTable.slug,
+      countryName: countriesTable.name,
+      courseSlug: coursesTable.slug,
+      courseShortName: coursesTable.shortName,
+      offeringSlug: programOfferingsTable.slug,
+      annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
+      officialFeeCurrency: programOfferingsTable.officialFeeCurrency,
+      officialAnnualTuitionAmount: programOfferingsTable.officialAnnualTuitionAmount,
+      offeringFeatured: programOfferingsTable.featured,
+    })
+    .from(programOfferingsTable)
+    .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+    .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+    .where(whereClause)
+    .orderBy(...getFinderProgramOrder(filters.sort))
+    .limit(pageSize)
+    .offset(offset);
+
+  return {
+    programs: rows.map((row) => ({
+      university: {
+        slug: row.universitySlug,
+        name: row.universityName,
+        city: row.universityCity,
+        type: row.universityType as FinderCardProgram["university"]["type"],
+        logoUrl: row.universityLogoUrl ?? undefined,
+        coverImageUrl: row.universityCoverImageUrl ?? undefined,
+        featured: row.universityFeatured,
+      },
+      country: {
+        slug: row.countrySlug,
+        name: row.countryName,
+      },
+      course: {
+        slug: row.courseSlug,
+        shortName: row.courseShortName,
+      },
+      offering: {
+        slug: row.offeringSlug,
+        annualTuitionUsd: row.annualTuitionUsd,
+        officialFeeCurrency: row.officialFeeCurrency ?? undefined,
+        officialAnnualTuitionAmount: row.officialAnnualTuitionAmount ?? undefined,
+        featured: row.offeringFeatured,
+      },
+    })),
+    totalItems,
+    totalPages,
+    currentPage: safePage,
+    pageSize,
+    hasPreviousPage: safePage > 1,
+    hasNextPage: safePage < totalPages,
+  };
+}
+
+type FinderProgramRow = {
+  countrySlug: string;
+  countryName: string;
+  countryRegion: string;
+  countrySummary: string;
+  countryWhyStudentsChooseIt: string;
+  countryClimate: string;
+  countryCurrencyCode: string;
+  countryMetaTitle: string;
+  countryMetaDescription: string;
+  courseSlug: string;
+  courseName: string;
+  courseShortName: string;
+  courseDurationYears: number;
+  courseSummary: string;
+  courseMetaTitle: string;
+  courseMetaDescription: string;
+  universitySlug: string;
+  universityName: string;
+  universityCity: string;
+  universityType: University["type"];
+  universityLogoUrl: string | null;
+  universityCoverImageUrl: string | null;
+  universityEstablishedYear: number;
+  universitySummary: string;
+  universityFeatured: boolean;
+  universityPublished: boolean;
+  universityOfficialWebsite: string;
+  universityCampusLifestyle: string;
+  universityCityProfile: string;
+  universityClinicalExposure: string;
+  universityHostelOverview: string;
+  universityIndianFoodSupport: string;
+  universitySafetyOverview: string;
+  universityStudentSupport: string;
+  universityWhyChoose: University["whyChoose"];
+  universityThingsToConsider: University["thingsToConsider"];
+  universityBestFitFor: University["bestFitFor"];
+  universityTeachingHospitals: University["teachingHospitals"];
+  universityRecognitionBadges: University["recognitionBadges"];
+  universityRecognitionLinks: University["recognitionLinks"];
+  universityFaq: University["faq"];
+  universitySimilarUniversitySlugs: University["similarUniversitySlugs"];
+  universityLastVerifiedAt: string | null;
+  universityResearchSources: University["researchSources"];
+  universityResearchNotes: string | null;
+  universityAdmissionsContent?: University["admissionsContent"];
+  offeringSlug: string;
+  offeringTitle: string;
+  offeringDurationYears: number;
+  offeringAnnualTuitionUsd: number;
+  offeringTotalTuitionUsd: number;
+  offeringLivingUsd: number;
+  offeringOfficialFeeCurrency: string | null;
+  offeringOfficialAnnualTuitionAmount: number | null;
+  offeringOfficialTotalTuitionAmount: number | null;
+  offeringOfficialProgramUrl: string;
+  offeringMedium: ProgramOffering["medium"];
+  offeringPublished: boolean;
+  offeringTeachingPhases: ProgramOffering["teachingPhases"];
+  offeringYearlyCostBreakdown: ProgramOffering["yearlyCostBreakdown"];
+  offeringLicenseExamSupport: ProgramOffering["licenseExamSupport"];
+  offeringIntakeMonths: ProgramOffering["intakeMonths"];
+  offeringFeeVerifiedAt: string | null;
+  offeringFxRateDate: string | null;
+  offeringFxRateSourceUrl: string | null;
+  offeringFeeNotes: string | null;
+  offeringSourceUrls: ProgramOffering["sourceUrls"];
+  offeringFeatured: boolean;
+};
+
+function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
+  const university = applyUniversityContentOverride({
+    slug: row.universitySlug,
+    countrySlug: row.countrySlug,
+    name: row.universityName,
+    city: row.universityCity,
+    type: row.universityType,
+    logoUrl: row.universityLogoUrl ?? undefined,
+    coverImageUrl: row.universityCoverImageUrl ?? undefined,
+    establishedYear: row.universityEstablishedYear,
+    summary: row.universitySummary,
+    featured: row.universityFeatured,
+    published: row.universityPublished,
+    officialWebsite: row.universityOfficialWebsite,
+    campusLifestyle: row.universityCampusLifestyle,
+    cityProfile: row.universityCityProfile,
+    clinicalExposure: row.universityClinicalExposure,
+    hostelOverview: row.universityHostelOverview,
+    indianFoodSupport: row.universityIndianFoodSupport,
+    safetyOverview: row.universitySafetyOverview,
+    studentSupport: row.universityStudentSupport,
+    whyChoose: row.universityWhyChoose,
+    thingsToConsider: row.universityThingsToConsider,
+    bestFitFor: row.universityBestFitFor,
+    teachingHospitals: row.universityTeachingHospitals,
+    recognitionBadges: row.universityRecognitionBadges,
+    recognitionLinks: row.universityRecognitionLinks,
+    faq: row.universityFaq,
+    similarUniversitySlugs: row.universitySimilarUniversitySlugs,
+    lastVerifiedAt: row.universityLastVerifiedAt ?? undefined,
+    researchSources: row.universityResearchSources,
+    researchNotes: row.universityResearchNotes ?? undefined,
+    admissionsContent: row.universityAdmissionsContent ?? undefined,
+  });
+
+  return {
+    country: {
+      slug: row.countrySlug,
+      name: row.countryName,
+      region: row.countryRegion,
+      summary: row.countrySummary,
+      whyStudentsChooseIt: row.countryWhyStudentsChooseIt,
+      climate: row.countryClimate,
+      currencyCode: row.countryCurrencyCode,
+      metaTitle: row.countryMetaTitle,
+      metaDescription: row.countryMetaDescription,
+    },
+    course: {
+      slug: row.courseSlug,
+      name: row.courseName,
+      shortName: row.courseShortName,
+      durationYears: row.courseDurationYears,
+      summary: row.courseSummary,
+      metaTitle: row.courseMetaTitle,
+      metaDescription: row.courseMetaDescription,
+    },
+    university,
+    offering: {
+      slug: row.offeringSlug,
+      universitySlug: row.universitySlug,
+      courseSlug: row.courseSlug,
+      title: row.offeringTitle,
+      durationYears: row.offeringDurationYears,
+      annualTuitionUsd: row.offeringAnnualTuitionUsd,
+      totalTuitionUsd: row.offeringTotalTuitionUsd,
+      livingUsd: row.offeringLivingUsd,
+      officialFeeCurrency: row.offeringOfficialFeeCurrency ?? undefined,
+      officialAnnualTuitionAmount: row.offeringOfficialAnnualTuitionAmount ?? undefined,
+      officialTotalTuitionAmount: row.offeringOfficialTotalTuitionAmount ?? undefined,
+      officialProgramUrl: row.offeringOfficialProgramUrl,
+      medium: row.offeringMedium,
+      published: row.offeringPublished,
+      teachingPhases: row.offeringTeachingPhases,
+      yearlyCostBreakdown: row.offeringYearlyCostBreakdown,
+      licenseExamSupport: row.offeringLicenseExamSupport,
+      intakeMonths: row.offeringIntakeMonths,
+      feeVerifiedAt: row.offeringFeeVerifiedAt ?? undefined,
+      fxRateDate: row.offeringFxRateDate ?? undefined,
+      fxRateSourceUrl: row.offeringFxRateSourceUrl ?? undefined,
+      feeNotes: row.offeringFeeNotes ?? undefined,
+      sourceUrls: row.offeringSourceUrls,
+      featured: row.offeringFeatured,
+    },
+  };
+}
+
+async function selectFinderProgramsFromDatabase(
+  whereClause?: ReturnType<typeof and>,
+): Promise<FinderProgram[] | null> {
+  const db = getDb();
+
+  if (!db) {
+    return null;
+  }
+
+  const rows = await db
+    .select({
+      countrySlug: countriesTable.slug,
+      countryName: countriesTable.name,
+      countryRegion: countriesTable.region,
+      countrySummary: countriesTable.summary,
+      countryWhyStudentsChooseIt: countriesTable.whyStudentsChooseIt,
+      countryClimate: countriesTable.climate,
+      countryCurrencyCode: countriesTable.currencyCode,
+      countryMetaTitle: countriesTable.metaTitle,
+      countryMetaDescription: countriesTable.metaDescription,
+      courseSlug: coursesTable.slug,
+      courseName: coursesTable.name,
+      courseShortName: coursesTable.shortName,
+      courseDurationYears: coursesTable.durationYears,
+      courseSummary: coursesTable.summary,
+      courseMetaTitle: coursesTable.metaTitle,
+      courseMetaDescription: coursesTable.metaDescription,
+      universitySlug: universitiesTable.slug,
+      universityName: universitiesTable.name,
+      universityCity: universitiesTable.city,
+      universityType: universitiesTable.type,
+      universityLogoUrl: universitiesTable.logoUrl,
+      universityCoverImageUrl: universitiesTable.coverImageUrl,
+      universityEstablishedYear: universitiesTable.establishedYear,
+      universitySummary: universitiesTable.summary,
+      universityFeatured: universitiesTable.featured,
+      universityPublished: universitiesTable.published,
+      universityOfficialWebsite: universitiesTable.officialWebsite,
+      universityCampusLifestyle: universitiesTable.campusLifestyle,
+      universityCityProfile: universitiesTable.cityProfile,
+      universityClinicalExposure: universitiesTable.clinicalExposure,
+      universityHostelOverview: universitiesTable.hostelOverview,
+      universityIndianFoodSupport: universitiesTable.indianFoodSupport,
+      universitySafetyOverview: universitiesTable.safetyOverview,
+      universityStudentSupport: universitiesTable.studentSupport,
+      universityWhyChoose: universitiesTable.whyChoose,
+      universityThingsToConsider: universitiesTable.thingsToConsider,
+      universityBestFitFor: universitiesTable.bestFitFor,
+      universityTeachingHospitals: universitiesTable.teachingHospitals,
+      universityRecognitionBadges: universitiesTable.recognitionBadges,
+      universityRecognitionLinks: universitiesTable.recognitionLinks,
+      universityFaq: universitiesTable.faq,
+      universitySimilarUniversitySlugs: universitiesTable.similarUniversitySlugs,
+      universityLastVerifiedAt: universitiesTable.lastVerifiedAt,
+      universityResearchSources: universitiesTable.researchSources,
+      universityResearchNotes: universitiesTable.researchNotes,
+      offeringSlug: programOfferingsTable.slug,
+      offeringTitle: programOfferingsTable.title,
+      offeringDurationYears: programOfferingsTable.durationYears,
+      offeringAnnualTuitionUsd: programOfferingsTable.annualTuitionUsd,
+      offeringTotalTuitionUsd: programOfferingsTable.totalTuitionUsd,
+      offeringLivingUsd: programOfferingsTable.livingUsd,
+      offeringOfficialFeeCurrency: programOfferingsTable.officialFeeCurrency,
+      offeringOfficialAnnualTuitionAmount: programOfferingsTable.officialAnnualTuitionAmount,
+      offeringOfficialTotalTuitionAmount: programOfferingsTable.officialTotalTuitionAmount,
+      offeringOfficialProgramUrl: programOfferingsTable.officialProgramUrl,
+      offeringMedium: programOfferingsTable.medium,
+      offeringPublished: programOfferingsTable.published,
+      offeringTeachingPhases: programOfferingsTable.teachingPhases,
+      offeringYearlyCostBreakdown: programOfferingsTable.yearlyCostBreakdown,
+      offeringLicenseExamSupport: programOfferingsTable.licenseExamSupport,
+      offeringIntakeMonths: programOfferingsTable.intakeMonths,
+      offeringFeeVerifiedAt: programOfferingsTable.feeVerifiedAt,
+      offeringFxRateDate: programOfferingsTable.fxRateDate,
+      offeringFxRateSourceUrl: programOfferingsTable.fxRateSourceUrl,
+      offeringFeeNotes: programOfferingsTable.feeNotes,
+      offeringSourceUrls: programOfferingsTable.sourceUrls,
+      offeringFeatured: programOfferingsTable.featured,
+    })
+    .from(programOfferingsTable)
+    .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+    .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+    .where(whereClause)
+    .orderBy(...getFinderProgramOrder(undefined));
+
+  return rows.map((row) =>
+    mapFinderProgramRow({ ...row, universityAdmissionsContent: undefined } as FinderProgramRow),
+  );
+}
+
 function compareRecommendedPrograms(left: FinderProgram, right: FinderProgram) {
   if (left.offering.featured !== right.offering.featured) {
     return Number(right.offering.featured) - Number(left.offering.featured);
@@ -1028,17 +1449,20 @@ export async function queryFinderCardProgramsPage(
   cacheTag("catalog");
   cacheTag("finder");
 
+  const databasePage = await queryFinderProgramsFromDatabase(filters, page, pageSize);
+
+  if (databasePage) {
+    return databasePage;
+  }
+
   const allPrograms = await listFinderPrograms(filters);
   const totalItems = allPrograms.length;
   const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
   const safePage = Math.min(Math.max(page, 1), totalPages);
   const start = (safePage - 1) * pageSize;
-  const programs = allPrograms
-    .slice(start, start + pageSize)
-    .map(toFinderCardProgram);
 
   return {
-    programs,
+    programs: allPrograms.slice(start, start + pageSize).map(toFinderCardProgram),
     totalItems,
     totalPages,
     currentPage: safePage,
@@ -1054,6 +1478,49 @@ export async function getFinderOptions(): Promise<FinderOptions> {
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("finder");
+
+  const db = getDb();
+
+  if (db) {
+    const [countryRows, courseRows, mediumRows, intakeRows] = await Promise.all([
+      db
+        .selectDistinct({ slug: countriesTable.slug, name: countriesTable.name })
+        .from(programOfferingsTable)
+        .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+        .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+        .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
+        .orderBy(asc(countriesTable.name)),
+      db
+        .selectDistinct({ slug: coursesTable.slug, shortName: coursesTable.shortName })
+        .from(programOfferingsTable)
+        .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+        .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+        .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
+        .orderBy(asc(coursesTable.shortName)),
+      db
+        .selectDistinct({ medium: programOfferingsTable.medium })
+        .from(programOfferingsTable)
+        .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+        .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
+        .orderBy(asc(programOfferingsTable.medium)),
+      db.execute<{ intake: string }>(sql`
+        SELECT DISTINCT unnest(${programOfferingsTable.intakeMonths}) AS intake
+        FROM ${programOfferingsTable}
+        INNER JOIN ${universitiesTable}
+          ON ${programOfferingsTable.universityId} = ${universitiesTable.id}
+        WHERE ${programOfferingsTable.published} = true
+          AND ${universitiesTable.published} = true
+        ORDER BY intake ASC
+      `),
+    ]);
+
+    return {
+      countries: countryRows.map((row) => ({ slug: row.slug, name: row.name })),
+      courses: courseRows.map((row) => ({ slug: row.slug, shortName: row.shortName })),
+      mediums: mediumRows.map((row) => row.medium as ProgramOffering["medium"]),
+      intakes: intakeRows.rows.map((row) => row.intake).filter(Boolean),
+    };
+  }
 
   const programs = await getFinderProgramsBase();
   const countriesBySlug = new Map<string, FinderCountryOption>();
@@ -1076,16 +1543,13 @@ export async function getFinderOptions(): Promise<FinderOptions> {
     }
   }
 
-  const countries = [...countriesBySlug.values()].sort((left, right) =>
-    left.name.localeCompare(right.name),
-  );
-  const courses = [...coursesBySlug.values()].sort((left, right) =>
-    left.shortName.localeCompare(right.shortName),
-  );
-
   return {
-    countries,
-    courses,
+    countries: [...countriesBySlug.values()].sort((left, right) =>
+      left.name.localeCompare(right.name),
+    ),
+    courses: [...coursesBySlug.values()].sort((left, right) =>
+      left.shortName.localeCompare(right.shortName),
+    ),
     mediums: [...mediums].sort(),
     intakes: [...intakes].sort(),
   };
@@ -1099,10 +1563,34 @@ export async function getFeaturedPrograms(limit = 4) {
 }
 
 export async function getProgramsForCountry(countrySlug: string) {
+  const databasePrograms = await selectFinderProgramsFromDatabase(
+    and(
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+      eq(countriesTable.slug, countrySlug),
+    ),
+  );
+
+  if (databasePrograms) {
+    return databasePrograms;
+  }
+
   return listFinderPrograms({ country: countrySlug });
 }
 
 export async function getProgramsForCourse(courseSlug: string) {
+  const databasePrograms = await selectFinderProgramsFromDatabase(
+    and(
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+      eq(coursesTable.slug, courseSlug),
+    ),
+  );
+
+  if (databasePrograms) {
+    return databasePrograms;
+  }
+
   return listFinderPrograms({ course: courseSlug });
 }
 
@@ -1117,41 +1605,104 @@ export async function getProgramsForUniversity(universitySlug: string) {
   cacheTag("universities");
   cacheTag(`university-programs:${universitySlug}`);
 
+  const databasePrograms = await selectFinderProgramsFromDatabase(
+    and(
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+      eq(universitiesTable.slug, universitySlug),
+    ),
+  );
+
+  if (databasePrograms) {
+    return databasePrograms;
+  }
+
   const programs = await getFinderProgramsBase();
   return programs.filter((program) => program.university.slug === universitySlug);
 }
 
 export async function getProgramsForCity(citySlug: string) {
+  const city = (await getUniqueCities()).find((entry) => entry.slug === citySlug);
+
+  if (!city) {
+    return [];
+  }
+
+  const databasePrograms = await selectFinderProgramsFromDatabase(
+    and(
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+      eq(countriesTable.slug, city.countrySlug),
+      eq(universitiesTable.city, city.name),
+    ),
+  );
+
+  if (databasePrograms) {
+    return databasePrograms;
+  }
+
   const programs = await getFinderProgramsBase();
   return programs.filter(
-    (program) => cityNameToSlug(program.university.city) === citySlug,
+    (program) =>
+      program.country.slug === city.countrySlug &&
+      program.university.city === city.name,
   );
 }
 
 export async function getUniqueCities() {
+  const db = getDb();
+
+  if (db) {
+    const rows = await db
+      .select({
+        cityName: universitiesTable.city,
+        countrySlug: countriesTable.slug,
+        countryName: countriesTable.name,
+        universityCount: sql<number>`count(distinct ${universitiesTable.slug})::int`,
+      })
+      .from(programOfferingsTable)
+      .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+      .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+      .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+      .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
+      .groupBy(universitiesTable.city, countriesTable.slug, countriesTable.name)
+      .orderBy(desc(sql`count(distinct ${universitiesTable.slug})::int`), asc(universitiesTable.city));
+
+    return rows.map((row) => ({
+      slug: cityNameToSlug(row.cityName),
+      name: row.cityName,
+      countrySlug: row.countrySlug,
+      countryName: row.countryName,
+      universityCount: row.universityCount,
+    }));
+  }
+
   const programs = await getFinderProgramsBase();
 
   const cityMeta = new Map<string, { slug: string; name: string; countrySlug: string; countryName: string }>();
   const uniSetsPerCity = new Map<string, Set<string>>();
 
   for (const program of programs) {
+    const key = `${program.country.slug}:${program.university.city}`;
     const slug = cityNameToSlug(program.university.city);
-    if (!cityMeta.has(slug)) {
-      cityMeta.set(slug, {
+    if (!cityMeta.has(key)) {
+      cityMeta.set(key, {
         slug,
         name: program.university.city,
         countrySlug: program.country.slug,
         countryName: program.country.name,
       });
     }
-    if (!uniSetsPerCity.has(slug)) uniSetsPerCity.set(slug, new Set());
-    uniSetsPerCity.get(slug)!.add(program.university.slug);
+    if (!uniSetsPerCity.has(key)) {
+      uniSetsPerCity.set(key, new Set());
+    }
+    uniSetsPerCity.get(key)!.add(program.university.slug);
   }
 
-  return Array.from(cityMeta.values())
-    .map((entry) => ({
+  return Array.from(cityMeta.entries())
+    .map(([key, entry]) => ({
       ...entry,
-      universityCount: uniSetsPerCity.get(entry.slug)?.size ?? 0,
+      universityCount: uniSetsPerCity.get(key)?.size ?? 0,
     }))
     .sort((a, b) => b.universityCount - a.universityCount);
 }

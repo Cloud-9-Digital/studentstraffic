@@ -2,6 +2,7 @@
 
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
+import { revalidateTag } from "next/cache";
 import { redirect } from "next/navigation";
 import { after } from "next/server";
 import { isValidPhoneNumber, parsePhoneNumber } from "libphonenumber-js/min";
@@ -204,39 +205,45 @@ export async function submitSeminarRegistrationAction(
     let insertedLeadId: number | undefined;
 
     if (db) {
-      const rateLimitError = await consumePublicFormRateLimits(
-        [
-          ipAddress
-            ? {
-                scope: "public:lead:ip",
-                identifier: ipAddress,
-                limit: 12,
-                windowMs: 30 * 60_000,
-                blockMs: 60 * 60_000,
-              }
-            : null,
-          {
-            scope: "public:lead:phone",
-            identifier: normalizePhoneIdentifier(normalizedStudentPhone),
-            limit: 10,
-            windowMs: 6 * 60 * 60_000,
-            blockMs: 2 * 60 * 60_000,
-          },
-        ],
-        "enquiries"
-      );
+      const [rateLimitError, recentLeadRows] = await Promise.all([
+        consumePublicFormRateLimits(
+          [
+            ipAddress
+              ? {
+                  scope: "public:lead:ip",
+                  identifier: ipAddress,
+                  limit: 12,
+                  windowMs: 30 * 60_000,
+                  blockMs: 60 * 60_000,
+                }
+              : null,
+            {
+              scope: "public:lead:phone",
+              identifier: normalizePhoneIdentifier(normalizedStudentPhone),
+              limit: 10,
+              windowMs: 6 * 60 * 60_000,
+              blockMs: 2 * 60 * 60_000,
+            },
+          ],
+          "enquiries"
+        ),
+        db
+          .select({ id: leads.id })
+          .from(leads)
+          .where(
+            and(
+              eq(leads.phone, normalizedStudentPhone),
+              gte(leads.createdAt, minutesAgo(15))
+            )
+          )
+          .limit(1),
+      ]);
 
       if (rateLimitError) {
         return { error: rateLimitError, values: submittedValues };
       }
 
-      const [recentLead] = await db
-        .select({ id: leads.id })
-        .from(leads)
-        .where(
-          and(eq(leads.phone, normalizedStudentPhone), gte(leads.createdAt, minutesAgo(15)))
-        )
-        .limit(1);
+      const [recentLead] = recentLeadRows;
 
       if (recentLead) {
         return {
@@ -295,6 +302,8 @@ export async function submitSeminarRegistrationAction(
         .returning({ id: leads.id });
 
       insertedLeadId = insertedLead?.id;
+
+      revalidateTag("admin-leads", "minutes");
 
       const handoffPayload = buildLeadHandoffPayload({
           leadKind: "seminar_registration",

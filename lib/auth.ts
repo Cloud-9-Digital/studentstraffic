@@ -81,10 +81,9 @@ function getRateLimitErrorMessage(retryAfterMs: number) {
 
 async function assertLoginRateLimit(email: string, ipAddress: string | null) {
   const rules = getLoginRateLimitRules(email, ipAddress);
+  const statuses = await Promise.all(rules.map((rule) => getRateLimitStatus(rule)));
 
-  for (const rule of rules) {
-    const status = await getRateLimitStatus(rule);
-
+  for (const status of statuses) {
     if (!status.allowed) {
       throw new Error(getRateLimitErrorMessage(status.retryAfterMs));
     }
@@ -93,10 +92,9 @@ async function assertLoginRateLimit(email: string, ipAddress: string | null) {
 
 async function recordFailedLoginAttempt(email: string, ipAddress: string | null) {
   const rules = getLoginRateLimitRules(email, ipAddress);
+  const statuses = await Promise.all(rules.map((rule) => consumeRateLimit(rule)));
 
-  for (const rule of rules) {
-    const status = await consumeRateLimit(rule);
-
+  for (const status of statuses) {
     if (!status.allowed) {
       throw new Error(getRateLimitErrorMessage(status.retryAfterMs));
     }

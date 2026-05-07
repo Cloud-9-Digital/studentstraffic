@@ -2,6 +2,7 @@
 
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
+import { revalidateTag } from "next/cache";
 import { redirect } from "next/navigation";
 import { after } from "next/server";
 import { z } from "zod";
@@ -133,39 +134,42 @@ export async function submitLeadAction(
     let insertedLeadId: number | undefined;
 
     if (db) {
-      const rateLimitError = await consumePublicFormRateLimits(
-        [
-          ipAddress
-            ? {
-                scope: "public:lead:ip",
-                identifier: ipAddress,
-                limit: 6,
-                windowMs: 30 * 60_000,
-                blockMs: 2 * 60 * 60_000,
-              }
-            : null,
-          {
-            scope: "public:lead:phone",
-            identifier: normalizePhoneIdentifier(data.phone),
-            limit: 4,
-            windowMs: 6 * 60 * 60_000,
-            blockMs: 12 * 60 * 60_000,
-          },
-        ],
-        "enquiries"
-      );
+      const [rateLimitError, recentLeadRows] = await Promise.all([
+        consumePublicFormRateLimits(
+          [
+            ipAddress
+              ? {
+                  scope: "public:lead:ip",
+                  identifier: ipAddress,
+                  limit: 6,
+                  windowMs: 30 * 60_000,
+                  blockMs: 2 * 60 * 60_000,
+                }
+              : null,
+            {
+              scope: "public:lead:phone",
+              identifier: normalizePhoneIdentifier(data.phone),
+              limit: 4,
+              windowMs: 6 * 60 * 60_000,
+              blockMs: 12 * 60 * 60_000,
+            },
+          ],
+          "enquiries"
+        ),
+        db
+          .select({ id: leads.id })
+          .from(leads)
+          .where(
+            and(eq(leads.phone, data.phone), gte(leads.createdAt, minutesAgo(15)))
+          )
+          .limit(1),
+      ]);
 
       if (rateLimitError) {
         return { error: rateLimitError };
       }
 
-      const [recentLead] = await db
-        .select({ id: leads.id })
-        .from(leads)
-        .where(
-          and(eq(leads.phone, data.phone), gte(leads.createdAt, minutesAgo(15)))
-        )
-        .limit(1);
+      const [recentLead] = recentLeadRows;
 
       if (recentLead) {
         return {
@@ -218,6 +222,8 @@ export async function submitLeadAction(
       });
 
       insertedLeadId = insertedLead?.id;
+
+      revalidateTag("admin-leads", "minutes");
 
       const handoffPayload = buildLeadHandoffPayload({
           leadKind: "general_enquiry",
