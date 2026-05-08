@@ -62,11 +62,6 @@ test("buildWatiInboundGoogleSheetsLeadRow maps the WATI inbound columns in order
       "2026-04-26 12:00:45",
       "Arun Kumar",
       "+919876543210",
-      "Hi, I need details",
-      "conv-123",
-      "msg-123",
-      "WATI Inbound",
-      "messageReceived",
     ]
   );
 });
@@ -193,7 +188,7 @@ test("appendWatiInboundLeadToGoogleSheets appends a row through the Sheets API",
   );
 
   assert.equal(result.status, "synced");
-  assert.match(requestUrl, /spreadsheets\/sheet123\/values\/Seminar%20Leads!A%3AH:append/);
+  assert.match(requestUrl, /spreadsheets\/sheet123\/values\/Seminar%20Leads!A%3AC:append/);
   assert.equal(requestInit?.method, "POST");
 
   const body = JSON.parse(String(requestInit?.body));
@@ -201,10 +196,5 @@ test("appendWatiInboundLeadToGoogleSheets appends a row through the Sheets API",
     "2026-04-26 12:00:45",
     "Arun Kumar",
     "+919876543210",
-    "Hi, I need details",
-    "conv-123",
-    "msg-123",
-    "WATI Inbound",
-    "messageReceived",
   ]);
 });

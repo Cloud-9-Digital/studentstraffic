@@ -145,11 +145,6 @@ export function buildWatiInboundGoogleSheetsLeadRow(payload: LeadSyncPayload) {
     formatDateForSheet(payload.submittedAt),
     withDefault(payload.fullName),
     withDefault(payload.phone),
-    withDefault(getClientContextValue(payload, "firstMessageText")),
-    withDefault(getClientContextValue(payload, "conversationId")),
-    withDefault(getClientContextValue(payload, "messageId")),
-    "WATI Inbound",
-    withDefault(getClientContextValue(payload, "eventType")),
   ];
 }
 
@@ -242,6 +237,6 @@ export async function appendWatiInboundLeadToGoogleSheets(
 
   const row = buildWatiInboundGoogleSheetsLeadRow(payload);
   return appendLeadRowToGoogleSheets(row, config, deps, {
-    range: "A:H",
+    range: "A:C",
   });
 }
