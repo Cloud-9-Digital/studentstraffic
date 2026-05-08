@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { appendWatiInboundLeadToGoogleSheets } from "@/lib/google-sheets";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { syncLeadToCrm } from "@/lib/lead-sync";
 
@@ -301,6 +302,7 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
     eventType,
     conversationId,
     messageId,
+    firstMessageText: messageText,
     messageType: payload.type ?? getString(payload.data, "type"),
     originalPhone: phone,
   };
@@ -337,7 +339,7 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
 
   // Sync to CRM only (skip Pabbly to avoid triggering new lead notifications)
   if (insertedLeadId) {
-    syncLeadToCrm(insertedLeadId, buildLeadHandoffPayload({
+    const handoffPayload = buildLeadHandoffPayload({
       leadKind: "wati_inbound",
       websiteLeadId: insertedLeadId,
       submittedAt: submittedAt.toISOString(),
@@ -350,8 +352,14 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
       ctaVariant: "wati_inbound",
       notes,
       clientContext,
-    })).catch((error) => {
+    });
+
+    syncLeadToCrm(insertedLeadId, handoffPayload).catch((error) => {
       console.error("[wati] Failed to sync lead to CRM:", error);
+    });
+
+    appendWatiInboundLeadToGoogleSheets(handoffPayload).catch((error) => {
+      console.error("[wati] Failed to sync lead to Google Sheets:", error);
     });
   }
 

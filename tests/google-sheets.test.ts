@@ -3,8 +3,10 @@ import assert from "node:assert/strict";
 
 import {
   appendSeminarLeadToGoogleSheets,
+  appendWatiInboundLeadToGoogleSheets,
   buildGoogleSheetsLeadRow,
   buildGoogleSheetsSource,
+  buildWatiInboundGoogleSheetsLeadRow,
   type GoogleSheetsConfig,
 } from "../lib/google-sheets-core";
 import type { LeadSyncPayload } from "../lib/lead-sync-payload";
@@ -40,6 +42,33 @@ test("buildGoogleSheetsLeadRow maps the seminar columns in order", () => {
     "Madurai",
     "Google Ad",
   ]);
+});
+
+test("buildWatiInboundGoogleSheetsLeadRow maps the WATI inbound columns in order", () => {
+  assert.deepEqual(
+    buildWatiInboundGoogleSheetsLeadRow({
+      ...basePayload,
+      sourcePath: "/wati",
+      ctaVariant: "wati_inbound",
+      seminarEvent: undefined,
+      clientContext: {
+        eventType: "messageReceived",
+        conversationId: "conv-123",
+        messageId: "msg-123",
+        firstMessageText: "Hi, I need details",
+      },
+    }),
+    [
+      "2026-04-26 12:00:45",
+      "Arun Kumar",
+      "+919876543210",
+      "Hi, I need details",
+      "conv-123",
+      "msg-123",
+      "WATI Inbound",
+      "messageReceived",
+    ]
+  );
 });
 
 test("buildGoogleSheetsSource identifies instagram ads", () => {
@@ -120,4 +149,62 @@ test("appendSeminarLeadToGoogleSheets returns a failed result when Google reject
     status: "failed",
     error: "invalid range",
   });
+});
+
+test("appendWatiInboundLeadToGoogleSheets skips non-WATI leads", async () => {
+  const result = await appendWatiInboundLeadToGoogleSheets(basePayload, config, {});
+
+  assert.deepEqual(result, {
+    status: "skipped",
+    reason: "not_wati_inbound",
+  });
+});
+
+test("appendWatiInboundLeadToGoogleSheets appends a row through the Sheets API", async () => {
+  let requestUrl = "";
+  let requestInit: RequestInit | undefined;
+
+  const result = await appendWatiInboundLeadToGoogleSheets(
+    {
+      ...basePayload,
+      sourcePath: "/wati",
+      ctaVariant: "wati_inbound",
+      seminarEvent: undefined,
+      clientContext: {
+        eventType: "messageReceived",
+        conversationId: "conv-123",
+        messageId: "msg-123",
+        firstMessageText: "Hi, I need details",
+      },
+    },
+    config,
+    {
+      getAccessToken: async () => "token-123",
+      fetchFn: async (input, init) => {
+        requestUrl = String(input);
+        requestInit = init;
+
+        return new Response(JSON.stringify({ updates: { updatedRows: 1 } }), {
+          status: 200,
+          headers: { "content-type": "application/json" },
+        });
+      },
+    }
+  );
+
+  assert.equal(result.status, "synced");
+  assert.match(requestUrl, /spreadsheets\/sheet123\/values\/Seminar%20Leads!A%3AH:append/);
+  assert.equal(requestInit?.method, "POST");
+
+  const body = JSON.parse(String(requestInit?.body));
+  assert.deepEqual(body.values[0], [
+    "2026-04-26 12:00:45",
+    "Arun Kumar",
+    "+919876543210",
+    "Hi, I need details",
+    "conv-123",
+    "msg-123",
+    "WATI Inbound",
+    "messageReceived",
+  ]);
 });

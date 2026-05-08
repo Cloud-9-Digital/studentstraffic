@@ -22,6 +22,10 @@ export type GoogleSheetsSyncResult =
   | { status: "synced"; row: string[] }
   | { status: "failed"; error: string };
 
+type GoogleSheetsRowOptions = {
+  range: string;
+};
+
 function trimOrUndefined(value?: string | null) {
   const trimmed = value?.trim();
   return trimmed ? trimmed : undefined;
@@ -79,6 +83,14 @@ function formatDateForSheet(value: string) {
   return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute}:${parts.second}`;
 }
 
+function getClientContextValue(
+  payload: LeadSyncPayload,
+  key: string
+) {
+  const value = payload.clientContext?.[key];
+  return typeof value === "string" && value.trim() ? value.trim() : undefined;
+}
+
 export function buildGoogleSheetsSource(payload: LeadSyncPayload) {
   const utmSource = trimOrUndefined(payload.utmSource)?.toLowerCase();
   const utmMedium = trimOrUndefined(payload.utmMedium)?.toLowerCase();
@@ -128,8 +140,21 @@ export function buildGoogleSheetsLeadRow(payload: LeadSyncPayload) {
   ];
 }
 
-function getAppendUrl(config: GoogleSheetsConfig) {
-  const range = encodeURIComponent(`${config.sheetName}!${GOOGLE_SHEETS_RANGE}`);
+export function buildWatiInboundGoogleSheetsLeadRow(payload: LeadSyncPayload) {
+  return [
+    formatDateForSheet(payload.submittedAt),
+    withDefault(payload.fullName),
+    withDefault(payload.phone),
+    withDefault(getClientContextValue(payload, "firstMessageText")),
+    withDefault(getClientContextValue(payload, "conversationId")),
+    withDefault(getClientContextValue(payload, "messageId")),
+    "WATI Inbound",
+    withDefault(getClientContextValue(payload, "eventType")),
+  ];
+}
+
+function getAppendUrl(config: GoogleSheetsConfig, rangeValue: string) {
+  const range = encodeURIComponent(`${config.sheetName}!${rangeValue}`);
   const params = new URLSearchParams({
     valueInputOption: "USER_ENTERED",
     insertDataOption: "INSERT_ROWS",
@@ -138,20 +163,16 @@ function getAppendUrl(config: GoogleSheetsConfig) {
   return `https://sheets.googleapis.com/v4/spreadsheets/${config.spreadsheetId}/values/${range}:append?${params.toString()}`;
 }
 
-export async function appendSeminarLeadToGoogleSheets(
-  payload: LeadSyncPayload,
+async function appendLeadRowToGoogleSheets(
+  row: string[],
   config: GoogleSheetsConfig | null,
-  deps: GoogleSheetsSyncDeps
+  deps: GoogleSheetsSyncDeps,
+  options: GoogleSheetsRowOptions
 ): Promise<GoogleSheetsSyncResult> {
-  if (!trimOrUndefined(payload.seminarEvent)) {
-    return { status: "skipped", reason: "missing_seminar_event" };
-  }
-
   if (!config) {
     return { status: "skipped", reason: "missing_google_sheets_config" };
   }
 
-  const row = buildGoogleSheetsLeadRow(payload);
   const fetchFn = deps.fetchFn ?? fetch;
   const getAccessToken = deps.getAccessToken;
 
@@ -164,7 +185,7 @@ export async function appendSeminarLeadToGoogleSheets(
 
   try {
     const accessToken = await getAccessToken(config);
-    const response = await fetchFn(getAppendUrl(config), {
+    const response = await fetchFn(getAppendUrl(config, options.range), {
       method: "POST",
       headers: {
         authorization: `Bearer ${accessToken}`,
@@ -193,4 +214,34 @@ export async function appendSeminarLeadToGoogleSheets(
   } finally {
     clearTimeout(timeout);
   }
+}
+
+export async function appendSeminarLeadToGoogleSheets(
+  payload: LeadSyncPayload,
+  config: GoogleSheetsConfig | null,
+  deps: GoogleSheetsSyncDeps
+): Promise<GoogleSheetsSyncResult> {
+  if (!trimOrUndefined(payload.seminarEvent)) {
+    return { status: "skipped", reason: "missing_seminar_event" };
+  }
+
+  const row = buildGoogleSheetsLeadRow(payload);
+  return appendLeadRowToGoogleSheets(row, config, deps, {
+    range: GOOGLE_SHEETS_RANGE,
+  });
+}
+
+export async function appendWatiInboundLeadToGoogleSheets(
+  payload: LeadSyncPayload,
+  config: GoogleSheetsConfig | null,
+  deps: GoogleSheetsSyncDeps
+): Promise<GoogleSheetsSyncResult> {
+  if (payload.sourcePath !== "/wati") {
+    return { status: "skipped", reason: "not_wati_inbound" };
+  }
+
+  const row = buildWatiInboundGoogleSheetsLeadRow(payload);
+  return appendLeadRowToGoogleSheets(row, config, deps, {
+    range: "A:H",
+  });
 }

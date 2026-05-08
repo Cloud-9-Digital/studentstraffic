@@ -5,23 +5,28 @@ import { GoogleAuth } from "google-auth-library";
 import { env } from "@/lib/env";
 import {
   appendSeminarLeadToGoogleSheets as appendSeminarLeadToGoogleSheetsCore,
+  appendWatiInboundLeadToGoogleSheets as appendWatiInboundLeadToGoogleSheetsCore,
   type GoogleSheetsConfig,
   type GoogleSheetsSyncResult,
 } from "@/lib/google-sheets-core";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 
 const GOOGLE_SHEETS_SCOPE = "https://www.googleapis.com/auth/spreadsheets";
+const WATI_GOOGLE_SHEETS_SPREADSHEET_ID = "1Cs0BfdToaSFh-Pqrhoy0234If7BgIM3PtkmgXpXehVU";
+const WATI_GOOGLE_SHEETS_SHEET_NAME = "Main";
 
 function trimOrUndefined(value?: string | null) {
   const trimmed = value?.trim();
   return trimmed ? trimmed : undefined;
 }
 
-function getGoogleSheetsConfig(): GoogleSheetsConfig | null {
+function createGoogleSheetsConfig(
+  spreadsheetId?: string | null,
+  sheetName?: string | null
+) {
   if (
-    !env.hasGoogleSheetsSyncConfig ||
-    !env.googleSheetsSpreadsheetId ||
-    !env.googleSheetsSheetName ||
+    !spreadsheetId ||
+    !sheetName ||
     !env.googleSheetsClientEmail ||
     !env.googleSheetsPrivateKey
   ) {
@@ -29,11 +34,29 @@ function getGoogleSheetsConfig(): GoogleSheetsConfig | null {
   }
 
   return {
-    spreadsheetId: env.googleSheetsSpreadsheetId,
-    sheetName: env.googleSheetsSheetName,
+    spreadsheetId,
+    sheetName,
     clientEmail: env.googleSheetsClientEmail,
     privateKey: env.googleSheetsPrivateKey.replace(/\\n/g, "\n"),
   };
+}
+
+function getGoogleSheetsConfig(): GoogleSheetsConfig | null {
+  if (!env.hasGoogleSheetsSyncConfig) {
+    return null;
+  }
+
+  return createGoogleSheetsConfig(
+    env.googleSheetsSpreadsheetId,
+    env.googleSheetsSheetName
+  );
+}
+
+function getWatiGoogleSheetsConfig(): GoogleSheetsConfig | null {
+  return createGoogleSheetsConfig(
+    WATI_GOOGLE_SHEETS_SPREADSHEET_ID,
+    WATI_GOOGLE_SHEETS_SHEET_NAME
+  );
 }
 
 async function getGoogleSheetsAccessToken(config: GoogleSheetsConfig) {
@@ -70,6 +93,22 @@ export async function appendSeminarLeadToGoogleSheets(
 
   if (result.status === "failed") {
     console.error("Google Sheets lead sync failed.", result.error);
+  }
+
+  return result;
+}
+
+export async function appendWatiInboundLeadToGoogleSheets(
+  payload: LeadSyncPayload
+): Promise<GoogleSheetsSyncResult> {
+  const result = await appendWatiInboundLeadToGoogleSheetsCore(
+    payload,
+    getWatiGoogleSheetsConfig(),
+    { getAccessToken: getGoogleSheetsAccessToken }
+  );
+
+  if (result.status === "failed") {
+    console.error("WATI inbound Google Sheets lead sync failed.", result.error);
   }
 
   return result;
