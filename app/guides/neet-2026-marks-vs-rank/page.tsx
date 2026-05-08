@@ -19,12 +19,12 @@ import {
 
 const path = "/guides/neet-2026-marks-vs-rank";
 const title =
-  "NEET 2026 Marks vs Rank After Official Answer Key Release: Expected Rank Range";
+  "NEET 2026 Marks vs Rank After Provisional Answer Key: Expected Rank Range";
 const description =
-  "NEET 2026 marks vs rank guide for students and parents, updated after our May 7, 2026, 12:22 PM IST official-source check, with the official provisional answer key now live, no official result notice visible yet, and score-range planning for MBBS counselling.";
+  "NEET 2026 marks vs rank guide for students and parents, updated after our May 8, 2026, 12:39 PM IST official-source check, with the official provisional answer key still live on the NEET homepage, no official result notice visible yet, and score-range planning for MBBS counselling.";
 const publishedAt = "2026-05-04";
-const updatedAt = "2026-05-07";
-const reviewedAt = "May 7, 2026, 12:22 PM IST";
+const updatedAt = "2026-05-08";
+const reviewedAt = "May 8, 2026, 12:39 PM IST";
 const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
@@ -63,9 +63,9 @@ const officialContextPoints = [
   "The official NEET site also visibly shows dress-code, biometric-exception, and scribe-support notices around the May 3, 2026 exam cycle plus the May 6, 2026 provisional answer key notice.",
   `In our ${reviewedAt} review, the NEET homepage was visibly surfacing the official provisional answer key notice and a separate provisional answer key PDF link.`,
   "That official notice says candidates can challenge the provisional answer keys only after the scanned OMR answer sheet is uploaded, and the OMR upload plus challenge schedule will be notified separately.",
-  "The visible 2026 entries on the documents page page-one view still include the admit-card notice, the scribe-support notice, city intimation, correction, extension of application date, the main application notice, bulletin, syllabus, and the document-updation advisory rather than the 2026 answer key posting.",
+  "The visible entries on the documents page page-one view are still led by the May 2 exam-conduct notice, the NTA preparedness note, dress-code and biometric advisories, admit-card release, scribe-support, and city-intimation items rather than the 2026 answer key posting.",
   "The separate public-notices page was still showing older pre-exam notices and a Last Updated date of Apr 12, 2026 during our review, so students should not rely on that page alone for post-exam timing.",
-  "We also checked the main NTA website, where the same answer key item was visible in Latest @ NTA, but no separate NEET 2026 result notice was visible there.",
+  "We also checked the main NTA website, which was still showing NEET 2026 items such as the May 3 conduct note and exam-day advisories during this review, but it was not clearly surfacing the answer-key item in Latest @ NTA.",
   "That means current marks vs rank discussion should still be used only as a planning estimate, not as a confirmed rank outcome.",
 ] as const;
 
@@ -98,7 +98,12 @@ const faqs = [
   {
     question: "Why should students keep checking the documents page as well as the homepage?",
     answer:
-      `Because the official pages do not always update in the same way at the same time. In our ${reviewedAt} review, the homepage had already surfaced the provisional answer key notice, while the documents page page-one view was still showing city-intimation and application-stage items. Cross-checking helps students avoid missing or misreading official updates.`,
+      `Because the official pages do not always update in the same way at the same time. In our ${reviewedAt} review, the homepage had already surfaced the provisional answer key notice, while the documents page page-one view was still led by exam-conduct and advisory items. Cross-checking helps students avoid missing or misreading official updates.`,
+  },
+  {
+    question: "What did the NTA homepage show in the latest check?",
+    answer:
+      `In our ${reviewedAt} review, the main NTA homepage was still showing NEET 2026 items such as the May 3 conduct notice, dress-code advisory, and biometric-exception advisory, but we did not see the provisional answer-key item clearly listed in Latest @ NTA. The dedicated NEET homepage remained the stronger page for checking the notice PDF and answer-key PDF together.`,
   },
   {
     question: "Should students change their rank estimate if an unofficial answer key goes viral?",
@@ -124,6 +129,16 @@ const faqs = [
     question: "Which latest official NEET notices are visible while rank estimates remain unofficial?",
     answer:
       `In our ${reviewedAt} review, the official NEET pages were visibly carrying the provisional answer key notice dated May 6, 2026, the exam-conduct notice, and the dress-code, biometric-exception, admit-card, and scribe-support notices. These notices are official, but they do not make current marks-vs-rank estimates official.`,
+  },
+  {
+    question: "Why should students keep rank planning flexible even after the official answer key?",
+    answer:
+      "Because the official process has not finished at the answer-key stage. The scanned OMR upload, challenge round, final answer key, and result can still change the score picture slightly, so marks-vs-rank should still be used as a range and not as a locked rank.",
+  },
+  {
+    question: "Which page should students trust first for NEET 2026 answer-key tracking?",
+    answer:
+      `Students should trust the dedicated NEET homepage first, then cross-check the direct notice PDF and answer key PDF. In our ${reviewedAt} review, that page was still clearly surfacing the answer-key update, while the NTA homepage was not clearly surfacing the answer-key item in Latest @ NTA.`,
   },
 ] as const;
 

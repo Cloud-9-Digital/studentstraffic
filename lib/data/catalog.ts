@@ -80,6 +80,18 @@ type CatalogSnapshot = {
   }>;
 };
 
+function createEmptyCatalogSnapshot(): CatalogSnapshot {
+  return {
+    countries: [],
+    courses: [],
+    universities: [],
+    programOfferings: [],
+    indiaColleges: [],
+    joinUniversities: [],
+    publishedPosts: [],
+  };
+}
+
 const globalForCatalogWarnings = globalThis as typeof globalThis & {
   __catalogDbWarningShown?: boolean;
   __catalogSnapshotCache?: {
@@ -106,7 +118,7 @@ function shouldUseBuildCatalogSnapshot() {
   return isProductionBuildPhase();
 }
 
-async function readBuildCatalogSnapshotFromDisk() {
+async function readBuildCatalogSnapshotFromDisk(): Promise<CatalogSnapshot | null> {
   try {
     const serialized = await readFile(buildCatalogSnapshotPath, "utf8");
     const parsed = JSON.parse(serialized) as Partial<CatalogSnapshot>;
@@ -131,7 +143,9 @@ async function writeBuildCatalogSnapshotToDisk(snapshot: CatalogSnapshot) {
   await rename(tempPath, buildCatalogSnapshotPath);
 }
 
-async function waitForBuildCatalogSnapshotFromDisk(timeoutMs = 30_000) {
+async function waitForBuildCatalogSnapshotFromDisk(
+  timeoutMs = 30_000
+): Promise<CatalogSnapshot | null> {
   const startedAt = Date.now();
 
   while (Date.now() - startedAt < timeoutMs) {
@@ -146,7 +160,7 @@ async function waitForBuildCatalogSnapshotFromDisk(timeoutMs = 30_000) {
   return null;
 }
 
-async function createBuildCatalogSnapshot() {
+async function createBuildCatalogSnapshot(): Promise<CatalogSnapshot> {
   await mkdir(path.dirname(buildCatalogSnapshotPath), { recursive: true });
 
   try {
@@ -167,13 +181,7 @@ async function createBuildCatalogSnapshot() {
     }
 
     const snapshot =
-      (await readCatalogFromDatabase()) ?? {
-        countries: [],
-        courses: [],
-        universities: [],
-        programOfferings: [],
-        indiaColleges: [],
-      };
+      (await readCatalogFromDatabase()) ?? createEmptyCatalogSnapshot();
 
     await writeBuildCatalogSnapshotToDisk(snapshot);
     return snapshot;
@@ -465,7 +473,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
   }
 }
 
-export async function getCatalogSnapshot() {
+export async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
   "use cache";
 
   cacheLife("hours");
@@ -487,15 +495,7 @@ export async function getCatalogSnapshot() {
     globalForCatalogWarnings.__catalogSnapshotPromise = (async () => {
       const snapshot = shouldUseBuildCatalogSnapshot()
         ? ((await readBuildCatalogSnapshotFromDisk()) ?? (await createBuildCatalogSnapshot()))
-        : ((await readCatalogFromDatabase()) ?? {
-            countries: [],
-            courses: [],
-            universities: [],
-            programOfferings: [],
-            indiaColleges: [],
-            joinUniversities: [],
-            publishedPosts: [],
-          });
+        : ((await readCatalogFromDatabase()) ?? createEmptyCatalogSnapshot());
 
       globalForCatalogWarnings.__catalogSnapshotCache = {
         value: snapshot,
