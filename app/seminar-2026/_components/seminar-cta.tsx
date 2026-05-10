@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
+import { EVENTS } from "../_data";
 import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
 
 export function SeminarCta() {
@@ -20,7 +21,7 @@ export function SeminarCta() {
             Reserve My Free Seat
             <ArrowRight className="size-4" />
           </SeminarDialogTrigger>
-          <p className="text-sm text-white/30">Chennai 10:00 AM · Other timings soon · 16 cities</p>
+          <p className="text-sm text-white/30">Timings shared on WhatsApp · {EVENTS.length} cities across Tamil Nadu</p>
         </div>
       </div>
     </section>

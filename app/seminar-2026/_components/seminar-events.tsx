@@ -2,10 +2,12 @@
 
 import { MapPin } from "lucide-react";
 
-import { EVENTS, isEventCompleted } from "../_data";
+import { EVENTS, getEventsForDisplay, isEventCompleted } from "../_data";
 import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
 
 export function SeminarEvents() {
+  const displayEvents = getEventsForDisplay(EVENTS);
+
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="mx-auto max-w-5xl px-4">
@@ -16,11 +18,11 @@ export function SeminarEvents() {
           Upcoming seminar dates
         </h2>
         <p className="mt-3 text-sm text-[#5a6270]">
-          Chennai has been completed. Upcoming city timings will be shared once finalized — register and we&apos;ll WhatsApp you the details.
+          Upcoming city timings will be shared once finalized. Completed events are listed at the end for reference.
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {EVENTS.map((event) => {
+          {displayEvents.map((event) => {
             const { date, day, city, venue, time } = event;
             const [dayNum, month, year] = date.split(" ");
             const displayTime = time ?? "Timing to be confirmed";

@@ -97,6 +97,12 @@ export function getNextRegisterableEvent(events: readonly SeminarEvent[], now = 
   return getRegisterableEvents(events, now)[0];
 }
 
+export function getEventsForDisplay(events: readonly SeminarEvent[], now = new Date()) {
+  const registerableEvents = getRegisterableEvents(events, now);
+  const completedEvents = events.filter((event) => isEventCompleted(event, now));
+  return [...registerableEvents, ...completedEvents];
+}
+
 export const FREE_INCLUSIONS = [
   {
     icon: BookOpen,
@@ -201,7 +207,7 @@ export const FMGE_DOCTORS = [
 export const FAQ = [
   {
     q: "What time does the seminar start and how long does it last?",
-    a: "The Chennai seminar starts at 10:00 AM. Timings for other cities are being finalized and will be shared in your WhatsApp confirmation.",
+    a: "Some seminars begin at 10:00 AM. Your exact city timing will be shared in your WhatsApp confirmation after registration.",
   },
   {
     q: "Is there a registration fee?",
