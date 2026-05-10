@@ -4,7 +4,7 @@ import { Calendar, Clock, MapPin } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import { EVENTS } from "../_data";
+import { EVENTS, getNextRegisterableEvent, parseEventDateTime } from "../_data";
 import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
 
 function Countdown({ targetDate }: { targetDate: Date }) {
@@ -61,8 +61,7 @@ function Countdown({ targetDate }: { targetDate: Date }) {
 }
 
 export function SeminarNextEvent() {
-  // Get the next upcoming event (first in the array)
-  const nextEvent = EVENTS[0];
+  const nextEvent = getNextRegisterableEvent(EVENTS);
 
   if (!nextEvent) return null;
 
@@ -70,7 +69,7 @@ export function SeminarNextEvent() {
   const displayTime = time ?? "Timing to be confirmed";
 
   // Parse event date and time
-  const eventDateTime = new Date(`${date} ${time ?? "10:00 AM"}`);
+  const eventDateTime = parseEventDateTime(nextEvent);
 
   return (
     <section className="bg-gradient-to-b from-white to-[#faf8f5] py-10 md:py-12">
@@ -91,8 +90,8 @@ export function SeminarNextEvent() {
             {/* Left: Image */}
             <div className="relative h-48 lg:h-auto">
               <Image
-                src="/seminar-venue-hilton-chennai.jpg"
-                alt={`${venue}, ${city}`}
+                src="/images/seminar-2026/students-traffic-panel.png"
+                alt={`Students Traffic seminar in ${city}`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 280px"

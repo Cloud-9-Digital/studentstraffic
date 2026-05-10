@@ -4,17 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { ArrowRight, MapPin, X } from "lucide-react";
 import Link from "next/link";
 
-import { EVENTS } from "@/app/seminar-2026/_data";
-
-const MONTH_MAP: Record<string, number> = {
-  Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
-  Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
-};
-
-function parseEventDate(dateStr: string): Date {
-  const [day, month, year] = dateStr.split(" ");
-  return new Date(Number(year), MONTH_MAP[month]!, Number(day));
-}
+import { EVENTS, getNextRegisterableEvent, getRegisterableEvents } from "@/app/seminar-2026/_data";
 
 const SESSION_KEY = "seminar_popup_count";
 const MAX_AUTO_SHOWS = 2;
@@ -25,16 +15,11 @@ export function SeminarPromoPopup() {
   const [pillVisible, setPillVisible] = useState(false);
 
   const nextEvent = useMemo(() => {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    return EVENTS.find((e) => parseEventDate(e.date) >= today) ?? null;
+    return getNextRegisterableEvent(EVENTS) ?? null;
   }, []);
 
-  // Count remaining upcoming events
   const upcomingCount = useMemo(() => {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    return EVENTS.filter((e) => parseEventDate(e.date) >= today).length;
+    return getRegisterableEvents(EVENTS).length;
   }, []);
 
   useEffect(() => {

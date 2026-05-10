@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { connection } from "next/server";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { buildIndexableMetadata, absoluteUrl } from "@/lib/metadata";
@@ -25,7 +26,7 @@ import { SeminarNextEvent } from "./_components/seminar-next-event";
 import { SeminarTagline } from "./_components/seminar-tagline";
 import { SeminarTopUniversities } from "./_components/seminar-top-universities";
 import { SeminarTrust } from "./_components/seminar-trust";
-import { EVENTS, FAQ } from "./_data";
+import { EVENTS, FAQ, getNextRegisterableEvent, getRegisterableEvents } from "./_data";
 
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS Abroad Seminar in Tamil Nadu | FMGE Doctors Seminar",
@@ -45,9 +46,12 @@ function getEventIso(date: string, time = "10:00 AM") {
   return new Date(`${date} ${time} GMT+0530`).toISOString();
 }
 
-export default function SeminarPage() {
+export default async function SeminarPage() {
+  await connection();
+
   const path = "/seminar-2026";
-  const primaryEvent = EVENTS[0];
+  const primaryEvent = getNextRegisterableEvent(EVENTS) ?? EVENTS[0];
+  const registerableEvents = getRegisterableEvents(EVENTS);
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
@@ -96,7 +100,7 @@ export default function SeminarPage() {
         "@type": "Audience",
         audienceType: "Students and parents exploring MBBS abroad",
       },
-      subEvent: EVENTS.slice(1).map((event) => ({
+      subEvent: registerableEvents.slice(1).map((event) => ({
         "@type": "EducationEvent",
         name: `MBBS Abroad Seminar — ${event.city}`,
         startDate: getEventIso(event.date, event.time ?? "10:00 AM"),

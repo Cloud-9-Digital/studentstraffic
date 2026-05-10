@@ -2,7 +2,7 @@
 
 import { MapPin } from "lucide-react";
 
-import { EVENTS } from "../_data";
+import { EVENTS, isEventCompleted } from "../_data";
 import { SeminarDialogTrigger } from "./seminar-dialog-trigger";
 
 export function SeminarEvents() {
@@ -16,7 +16,7 @@ export function SeminarEvents() {
           Upcoming seminar dates
         </h2>
         <p className="mt-3 text-sm text-[#5a6270]">
-          Chennai timing is confirmed. Other city timings will be shared once finalized — register and we&apos;ll WhatsApp you the details.
+          Chennai has been completed. Upcoming city timings will be shared once finalized — register and we&apos;ll WhatsApp you the details.
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -24,6 +24,7 @@ export function SeminarEvents() {
             const { date, day, city, venue, time } = event;
             const [dayNum, month, year] = date.split(" ");
             const displayTime = time ?? "Timing to be confirmed";
+            const completed = isEventCompleted(event);
             return (
               <div
                 key={`${date}-${city}`}
@@ -49,17 +50,28 @@ export function SeminarEvents() {
                     <div className="mt-0.5 truncate text-[15px] font-bold text-[#0c1a35]">{city}</div>
                     <div className="mt-0.5 truncate text-xs text-[#5a6270]">{venue}</div>
                     <div className="mt-0.5 text-xs text-[#5a6270]/60">{day} · {displayTime}</div>
+                    {completed ? (
+                      <div className="mt-2 inline-flex rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-emerald-700">
+                        Completed
+                      </div>
+                    ) : null}
                   </div>
                 </div>
 
                 {/* Register button */}
                 <div className="border-t border-[#e8e0d5] px-4 py-2.5">
-                  <SeminarDialogTrigger
-                    className="w-full rounded-lg bg-[#c17f3b]/8 py-2 text-xs font-semibold text-[#c17f3b] transition hover:bg-[#c17f3b] hover:text-white active:scale-[0.98]"
-                    preselectedEvent={`${city} — ${date}`}
-                  >
-                    Register for this event
-                  </SeminarDialogTrigger>
+                  {completed ? (
+                    <div className="w-full rounded-lg bg-slate-100 py-2 text-center text-xs font-semibold text-slate-500">
+                      Event completed
+                    </div>
+                  ) : (
+                    <SeminarDialogTrigger
+                      className="w-full rounded-lg bg-[#c17f3b]/8 py-2 text-xs font-semibold text-[#c17f3b] transition hover:bg-[#c17f3b] hover:text-white active:scale-[0.98]"
+                      preselectedEvent={`${city} — ${date}`}
+                    >
+                      Register for this event
+                    </SeminarDialogTrigger>
+                  )}
                 </div>
               </div>
             );

@@ -7,23 +7,13 @@ import {
   type SeminarLeadFormState,
   submitSeminarLeadAction,
 } from "../_actions/submit-seminar-lead";
-import { EVENTS } from "../_data";
+import { EVENTS, getRegisterableEvents } from "../_data";
 import { syncLeadTrackingFields } from "@/components/site/lead-tracking";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { trackLeadFormSubmit } from "@/lib/analytics";
 import { TN_CITIES } from "../_data/tn-cities";
 import { SeminarPhoneInput } from "./seminar-phone-input";
-
-const MONTH_MAP: Record<string, number> = {
-  Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
-  Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
-};
-
-function parseEventDate(dateStr: string): Date {
-  const [day, month, year] = dateStr.split(" ");
-  return new Date(Number(year), MONTH_MAP[month]!, Number(day));
-}
 
 const SELECT_CLASS =
   "h-11 w-full appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50";
@@ -52,12 +42,7 @@ export function SeminarLeadForm({
   const startedAtRef = useRef<HTMLInputElement>(null);
   const hasTrackedSubmitRef = useRef(false);
 
-  // Filter out events whose date has already passed
-  const upcomingEvents = useMemo(() => {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    return EVENTS.filter((e) => parseEventDate(e.date) >= today);
-  }, []);
+  const upcomingEvents = useMemo(() => getRegisterableEvents(EVENTS), []);
 
   const armStartedAt = () => {
     syncLeadTrackingFields(formRef.current);

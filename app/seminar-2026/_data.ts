@@ -29,6 +29,74 @@ export const EVENTS = [
   { date: "19 Jul 2026", day: "Sunday",   city: "Tirupur",         venue: "May Berry Hotel",            state: "TN", time: "10:00 AM" },
 ] satisfies readonly SeminarEvent[];
 
+const MONTH_MAP: Record<string, number> = {
+  Jan: 0,
+  Feb: 1,
+  Mar: 2,
+  Apr: 3,
+  May: 4,
+  Jun: 5,
+  Jul: 6,
+  Aug: 7,
+  Sep: 8,
+  Oct: 9,
+  Nov: 10,
+  Dec: 11,
+};
+
+export function parseEventDate(dateStr: string): Date {
+  const [day, month, year] = dateStr.split(" ");
+  return new Date(Number(year), MONTH_MAP[month]!, Number(day));
+}
+
+export function parseEventDateTime(event: SeminarEvent): Date {
+  const baseDate = parseEventDate(event.date);
+  const timeString = event.time ?? "10:00 AM";
+  const [timePart, meridiemPart] = timeString.split(" ");
+  const [hourString, minuteString] = timePart.split(":");
+
+  let hours = Number(hourString);
+  const minutes = Number(minuteString ?? "0");
+  const meridiem = meridiemPart?.toUpperCase();
+
+  if (meridiem === "PM" && hours < 12) {
+    hours += 12;
+  }
+
+  if (meridiem === "AM" && hours === 12) {
+    hours = 0;
+  }
+
+  return new Date(
+    baseDate.getFullYear(),
+    baseDate.getMonth(),
+    baseDate.getDate(),
+    hours,
+    minutes,
+    0,
+    0
+  );
+}
+
+function startOfToday(now = new Date()): Date {
+  const today = new Date(now);
+  today.setHours(0, 0, 0, 0);
+  return today;
+}
+
+export function isEventCompleted(event: SeminarEvent, now = new Date()): boolean {
+  return parseEventDate(event.date) <= startOfToday(now);
+}
+
+export function getRegisterableEvents(events: readonly SeminarEvent[], now = new Date()) {
+  const today = startOfToday(now);
+  return events.filter((event) => parseEventDate(event.date) > today);
+}
+
+export function getNextRegisterableEvent(events: readonly SeminarEvent[], now = new Date()) {
+  return getRegisterableEvents(events, now)[0];
+}
+
 export const FREE_INCLUSIONS = [
   {
     icon: BookOpen,
