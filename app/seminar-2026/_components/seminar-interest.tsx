@@ -59,15 +59,15 @@ export function SeminarInterest() {
         : `I want answers to these ${count}`;
 
   return (
-    <section className="bg-[#faf6ef] py-16 md:py-20">
+    <section className="bg-gray-50 py-16 md:py-20">
       <div className="mx-auto max-w-3xl px-4">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#c17f3b]">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-green-600">
           Is this you?
         </p>
-        <h2 className="mt-3 text-3xl font-bold leading-snug text-[#0c1a35] sm:text-4xl">
+        <h2 className="mt-3 text-3xl font-bold leading-snug text-gray-900 sm:text-4xl">
           Tick what you want to walk away knowing
         </h2>
-        <p className="mt-3 text-[15px] text-[#5a6270]">
+        <p className="mt-3 text-[15px] text-gray-600">
           Select everything that applies — our doctors will cover it all at the seminar.
         </p>
 
@@ -82,8 +82,8 @@ export function SeminarInterest() {
                 className={[
                   "group w-full rounded-xl border px-5 py-4 text-left transition-all",
                   isChecked
-                    ? "border-[#c17f3b] bg-white shadow-sm"
-                    : "border-[#e8d5b7] bg-white hover:border-[#c17f3b]/50",
+                    ? "border-green-600 bg-white shadow-sm"
+                    : "border-gray-200 bg-white hover:border-green-600/50",
                 ].join(" ")}
               >
                 <div className="flex items-start gap-4">
@@ -91,8 +91,8 @@ export function SeminarInterest() {
                     className={[
                       "mt-0.5 flex size-5 shrink-0 items-center justify-center rounded border-2 transition-all",
                       isChecked
-                        ? "border-[#c17f3b] bg-[#c17f3b]"
-                        : "border-[#c8b99a] bg-white",
+                        ? "border-green-600 bg-green-600"
+                        : "border-gray-300 bg-white",
                     ].join(" ")}
                   >
                     {isChecked && (
@@ -108,10 +108,10 @@ export function SeminarInterest() {
                     )}
                   </div>
                   <div className="min-w-0">
-                    <p className={["text-[15px] font-semibold leading-snug", isChecked ? "text-[#0c1a35]" : "text-[#2a3545]"].join(" ")}>
+                    <p className={["text-[15px] font-semibold leading-snug", isChecked ? "text-gray-900" : "text-gray-700"].join(" ")}>
                       {label}
                     </p>
-                    <p className="mt-0.5 text-sm text-[#5a6270]">{detail}</p>
+                    <p className="mt-0.5 text-sm text-gray-600">{detail}</p>
                   </div>
                 </div>
               </button>
@@ -120,11 +120,11 @@ export function SeminarInterest() {
         </div>
 
         <div className="mt-8">
-          <SeminarDialogTrigger className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#c17f3b] px-6 py-4 text-[15px] font-semibold text-white shadow-sm transition hover:bg-[#a86d2f] active:scale-[0.98]">
+          <SeminarDialogTrigger className="flex w-full items-center justify-center gap-2 rounded-xl bg-green-600 px-6 py-4 text-[15px] font-semibold text-white shadow-sm transition hover:bg-green-700 active:scale-[0.98]">
             {ctaLabel}
             <ArrowRight className="size-4" />
           </SeminarDialogTrigger>
-          <p className="mt-3 text-center text-xs text-[#8a7a6a]">
+          <p className="mt-3 text-center text-xs text-gray-500">
             Free entry · No commitment · Honest answers from practising doctors
           </p>
         </div>

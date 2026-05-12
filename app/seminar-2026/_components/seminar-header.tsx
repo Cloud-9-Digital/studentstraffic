@@ -16,11 +16,11 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export function SeminarHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0c1a35]/96 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/96 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3">
         <Link href="/" className="shrink-0">
           <Image
-            src="/logo-white.png"
+            src="/logo.webp"
             alt="Students Traffic"
             width={180}
             height={24}
@@ -36,7 +36,7 @@ export function SeminarHeader() {
             location="seminar_header_call"
             href={`tel:${siteConfig.phone}`}
             aria-label="Call us"
-            className="hidden sm:flex size-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
+            className="hidden sm:flex size-9 items-center justify-center rounded-full bg-gray-100 text-gray-700 transition hover:bg-gray-200"
           >
             <Phone className="size-4" />
           </TrackedContactLink>
@@ -51,7 +51,7 @@ export function SeminarHeader() {
           >
             <WhatsAppIcon className="size-4" />
           </TrackedContactLink>
-          <SeminarDialogTrigger className="rounded-full bg-[#c17f3b] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#a86d2f] active:scale-95">
+          <SeminarDialogTrigger className="rounded-full bg-green-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-green-700 active:scale-95">
             Register Free
           </SeminarDialogTrigger>
         </div>

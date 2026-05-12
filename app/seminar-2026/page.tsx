@@ -132,16 +132,8 @@ export default async function SeminarPage() {
         <SeminarNextEvent />
         <SeminarEvents />
 
-        {/* Trust & Credibility */}
-        <SeminarTrust />
-        <SeminarTagline />
-        <SeminarAtEvent />
-        <SeminarDoctors />
-
         {/* Value Proposition */}
-        <SeminarDifferentiators />
         <SeminarTopUniversities />
-        <SeminarInterest />
 
         {/* Conversion */}
         <SeminarCta />

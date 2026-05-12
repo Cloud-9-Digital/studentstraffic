@@ -142,7 +142,7 @@ export async function SeminarTopUniversities() {
     return (
       <article
         key={`${item.country}-${item.label}`}
-        className="overflow-hidden rounded-2xl border border-[#eadfce] bg-white shadow-[0_18px_40px_rgba(12,26,53,0.05)]"
+        className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-[0_18px_40px_rgba(0,0,0,0.05)]"
       >
         <div
           className="relative h-40 w-full overflow-hidden"
@@ -184,22 +184,22 @@ export async function SeminarTopUniversities() {
         </div>
 
         <div className="p-4">
-          <h4 className="text-sm font-semibold leading-6 text-[#0c1a35]">{item.label}</h4>
+          <h4 className="text-sm font-semibold leading-6 text-gray-900">{item.label}</h4>
         </div>
       </article>
     );
   };
 
   return (
-    <section className="bg-[#fffaf3] py-16 md:py-20">
+    <section className="bg-white py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#c17f3b]">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-yellow-600">
           Top Universities
         </p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold leading-snug text-[#0c1a35] sm:text-4xl">
+        <h2 className="mt-3 max-w-3xl text-3xl font-bold leading-snug text-gray-900 sm:text-4xl">
           Explore top universities across the countries students ask about most
         </h2>
-        <p className="mt-3 max-w-3xl text-[15px] leading-7 text-[#5a6270]">
+        <p className="mt-3 max-w-3xl text-[15px] leading-7 text-gray-600">
           Get clarity on the universities students and parents most often compare for MBBS abroad. At the seminar,
           we help you understand country options, university choices, fees, and which path fits your budget,
           NEET score, and long-term plan.

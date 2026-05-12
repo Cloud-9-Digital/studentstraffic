@@ -15,14 +15,24 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export function SeminarFooter() {
   return (
-    <footer className="bg-[#0c1a35]">
-      <div className="mx-auto max-w-5xl px-4 py-12">
+    <footer className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
+      {/* Subtle grid pattern */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-[0.02]"
+        style={{
+          backgroundImage: "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      <div className="relative z-10 mx-auto max-w-5xl px-4 py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
             <Link href="/">
               <Image
-                src="/logo-white.png"
+                src="/logo.webp"
                 alt="Students Traffic"
                 width={160}
                 height={22}
@@ -30,25 +40,25 @@ export function SeminarFooter() {
                 style={{ width: "auto" }}
               />
             </Link>
-            <p className="mt-4 text-sm leading-6 text-white/40">
+            <p className="mt-4 text-sm leading-6 text-gray-600">
               Helping Indian students make informed decisions about MBBS — through honest guidance and real doctor interactions.
             </p>
           </div>
 
           {/* Seminar links */}
           <div>
-            <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-white/25">
+            <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-gray-400">
               Seminar 2026
             </p>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/seminar-2026" className="text-white/50 hover:text-white transition">Back to seminar</Link></li>
-              <li><Link href="/seminar-2026#register" className="text-white/50 hover:text-white transition">Register free</Link></li>
+              <li><Link href="/seminar-2026" className="text-gray-600 hover:text-gray-900 transition">Back to seminar</Link></li>
+              <li><Link href="/seminar-2026#register" className="text-gray-600 hover:text-gray-900 transition">Register free</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-white/25">
+            <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-gray-400">
               Contact
             </p>
             <div className="space-y-3">
@@ -56,9 +66,9 @@ export function SeminarFooter() {
                 channel="call"
                 location="seminar_footer_call"
                 href={`tel:${siteConfig.phone}`}
-                className="flex items-center gap-3 text-sm text-white/50 transition hover:text-white"
+                className="flex items-center gap-3 text-sm text-gray-600 transition hover:text-gray-900"
               >
-                <span className="flex size-8 items-center justify-center rounded-lg bg-white/8">
+                <span className="flex size-8 items-center justify-center rounded-lg bg-gray-200">
                   <Phone className="size-3.5" />
                 </span>
                 {siteConfig.phone}
@@ -69,7 +79,7 @@ export function SeminarFooter() {
                 href={`https://wa.me/${siteConfig.whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-sm text-white/50 transition hover:text-white"
+                className="flex items-center gap-3 text-sm text-gray-600 transition hover:text-gray-900"
               >
                 <span className="flex size-8 items-center justify-center rounded-lg bg-[#25d366]/10">
                   <WhatsAppIcon className="size-3.5 text-[#25d366]" />
@@ -81,15 +91,15 @@ export function SeminarFooter() {
         </div>
       </div>
 
-      <div className="border-t border-white/[0.07]">
+      <div className="border-t border-gray-200">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-4 py-5 sm:flex-row">
-          <p className="text-xs text-white/20">
+          <p className="text-xs text-gray-500">
             © 2026 Students Traffic · Free MBBS Seminar 2026
           </p>
-          <div className="flex gap-5 text-xs text-white/25">
-            <Link href="/privacy" className="hover:text-white/50 transition">Privacy</Link>
-            <Link href="/terms" className="hover:text-white/50 transition">Terms</Link>
-            <Link href="/" className="hover:text-white/50 transition">Main Site</Link>
+          <div className="flex gap-5 text-xs text-gray-500">
+            <Link href="/privacy" className="hover:text-gray-700 transition">Privacy</Link>
+            <Link href="/terms" className="hover:text-gray-700 transition">Terms</Link>
+            <Link href="/" className="hover:text-gray-700 transition">Main Site</Link>
           </div>
         </div>
       </div>

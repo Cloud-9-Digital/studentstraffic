@@ -24,18 +24,25 @@ const TRUST_POINTS = [
 ] as const;
 
 export function SeminarTrust() {
+  const colors = [
+    { bg: "bg-red-50", icon: "text-red-600" },
+    { bg: "bg-yellow-50", icon: "text-yellow-600" },
+    { bg: "bg-green-50", icon: "text-green-600" },
+    { bg: "bg-red-50", icon: "text-red-600" },
+  ];
+
   return (
-    <section className="border-b border-[#e8e0d5] bg-white py-12">
+    <section className="border-b border-gray-200 bg-white py-12">
       <div className="mx-auto max-w-5xl px-4">
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-          {TRUST_POINTS.map(({ icon: Icon, stat, label }) => (
+          {TRUST_POINTS.map(({ icon: Icon, stat, label }, index) => (
             <div key={stat} className="flex flex-col gap-3">
-              <div className="flex size-10 items-center justify-center rounded-xl bg-[#faf6ef]">
-                <Icon className="size-5 text-[#c17f3b]" />
+              <div className={`flex size-10 items-center justify-center rounded-xl ${colors[index].bg}`}>
+                <Icon className={`size-5 ${colors[index].icon}`} />
               </div>
               <div>
-                <div className="text-base font-bold text-[#0c1a35]">{stat}</div>
-                <p className="mt-1 text-sm leading-5 text-[#5a6270]">{label}</p>
+                <div className="text-base font-bold text-gray-900">{stat}</div>
+                <p className="mt-1 text-sm leading-5 text-gray-600">{label}</p>
               </div>
             </div>
           ))}

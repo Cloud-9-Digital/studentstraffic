@@ -14,14 +14,14 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export function SeminarMobileCta() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-[#0c1a35]/96 px-4 py-3 backdrop-blur-md lg:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-gray-200 bg-white/96 px-4 py-3 backdrop-blur-md lg:hidden">
       <div className="flex items-center gap-2">
         <TrackedContactLink
           channel="call"
           location="seminar_mobile_call"
           href={`tel:${siteConfig.phone}`}
           aria-label="Call us"
-          className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white transition hover:bg-white/20"
+          className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-gray-100 text-gray-700 transition hover:bg-gray-200"
         >
           <Phone className="size-5" />
         </TrackedContactLink>
@@ -36,7 +36,7 @@ export function SeminarMobileCta() {
         >
           <WhatsAppIcon className="size-5" />
         </TrackedContactLink>
-        <SeminarDialogTrigger className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[#c17f3b] py-3.5 text-sm font-semibold text-white transition hover:bg-[#a86d2f] active:scale-[0.98]">
+        <SeminarDialogTrigger className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-green-600 py-3.5 text-sm font-semibold text-white transition hover:bg-green-700 active:scale-[0.98]">
           <Calendar className="size-4" />
           Reserve My Free Seat
         </SeminarDialogTrigger>

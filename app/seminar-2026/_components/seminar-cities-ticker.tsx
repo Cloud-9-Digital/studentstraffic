@@ -12,7 +12,7 @@ export function SeminarCitiesTicker({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "overflow-hidden bg-gradient-to-r from-[#0c1a35] via-[#0f2440] to-[#0c1a35] py-4",
+        "overflow-hidden py-4",
         className,
       )}
     >
@@ -20,24 +20,29 @@ export function SeminarCitiesTicker({ className }: { className?: string }) {
       <div className="flex animate-scroll gap-3" style={{ width: 'max-content' }}>
         {tickerEvents.map((event, idx) => {
           const [day, month] = event.date.split(" ");
+          const colors = ['bg-red-50 border-red-200', 'bg-yellow-50 border-yellow-200', 'bg-green-50 border-green-200'];
+          const textColors = ['text-red-600', 'text-yellow-600', 'text-green-600'];
+          const iconBgColors = ['bg-red-100', 'bg-yellow-100', 'bg-green-100'];
+          const colorIndex = idx % 3;
+
           return (
             <div
               key={`${event.city}-${event.date}-${idx}`}
-              className="flex shrink-0 items-center gap-3 rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 backdrop-blur-sm"
+              className={`flex shrink-0 items-center gap-3 rounded-lg border ${colors[colorIndex]} px-4 py-2.5`}
             >
               {/* Date badge */}
-              <div className="flex items-center gap-1.5 rounded bg-[#c17f3b]/15 px-2 py-1">
-                <Calendar className="size-3 text-[#d4954a]" />
-                <span className="text-xs font-bold text-[#d4954a]">
+              <div className={`flex items-center gap-1.5 rounded ${iconBgColors[colorIndex]} px-2 py-1`}>
+                <Calendar className={`size-3 ${textColors[colorIndex]}`} />
+                <span className={`text-xs font-bold ${textColors[colorIndex]}`}>
                   {day} {month}
                 </span>
               </div>
 
               {/* Divider */}
-              <div className="h-4 w-px bg-white/10" />
+              <div className="h-4 w-px bg-gray-300" />
 
               {/* City */}
-              <span className="text-sm font-semibold text-white">{event.city}</span>
+              <span className="text-sm font-semibold text-gray-900">{event.city}</span>
             </div>
           );
         })}
