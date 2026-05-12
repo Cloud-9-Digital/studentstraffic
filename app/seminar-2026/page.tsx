@@ -23,6 +23,7 @@ import { SeminarHero } from "./_components/seminar-hero";
 import { SeminarInterest } from "./_components/seminar-interest";
 import { SeminarMobileCta } from "./_components/seminar-mobile-cta";
 import { SeminarNextEvent } from "./_components/seminar-next-event";
+import { SeminarPostponedNotice } from "./_components/seminar-postponed-notice";
 import { SeminarTagline } from "./_components/seminar-tagline";
 import { SeminarTopUniversities } from "./_components/seminar-top-universities";
 import { SeminarTrust } from "./_components/seminar-trust";
@@ -129,8 +130,9 @@ export default async function SeminarPage() {
         <SeminarHeader />
         <SeminarHero />
         <SeminarCitiesTicker className="hidden lg:block" />
-        <SeminarNextEvent />
-        <SeminarEvents />
+
+        {/* Important Notice */}
+        <SeminarPostponedNotice />
 
         {/* Value Proposition */}
         <SeminarTopUniversities />
