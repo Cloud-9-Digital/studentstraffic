@@ -128,11 +128,12 @@ export default async function SeminarPage() {
       <div className="min-h-screen">
         {/* Hook & Urgency */}
         <SeminarHeader />
-        <SeminarHero />
-        <SeminarCitiesTicker className="hidden lg:block" />
 
         {/* Important Notice */}
         <SeminarPostponedNotice />
+
+        <SeminarHero />
+        <SeminarCitiesTicker className="hidden lg:block" />
 
         {/* Value Proposition */}
         <SeminarTopUniversities />
