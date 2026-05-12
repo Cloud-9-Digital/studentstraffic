@@ -25,10 +25,10 @@ const TRUST_POINTS = [
 
 export function SeminarTrust() {
   const colors = [
-    { bg: "bg-red-50", icon: "text-red-600" },
-    { bg: "bg-yellow-50", icon: "text-yellow-600" },
-    { bg: "bg-green-50", icon: "text-green-600" },
-    { bg: "bg-red-50", icon: "text-red-600" },
+    { bg: "bg-red-50", icon: "text-red-700" },
+    { bg: "bg-yellow-50", icon: "text-amber-600" },
+    { bg: "bg-green-50", icon: "text-green-700" },
+    { bg: "bg-red-50", icon: "text-red-700" },
   ];
 
   return (

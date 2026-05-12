@@ -24,7 +24,7 @@ export function SeminarCta() {
       />
 
       <div className="relative z-10 mx-auto max-w-2xl px-4 text-center">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-yellow-600">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-amber-600">
           Free entry · No obligation
         </p>
         <h2 className="mt-4 text-3xl font-bold leading-snug text-gray-900 sm:text-4xl">
@@ -34,7 +34,7 @@ export function SeminarCta() {
           Reserve your seat in under a minute. We&apos;ll WhatsApp you the nearest venue, date, and what to bring.
         </p>
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-          <SeminarDialogTrigger className="inline-flex items-center gap-2 rounded-xl bg-green-600 px-8 py-4 text-[15px] font-semibold text-white shadow-lg transition hover:bg-green-700 active:scale-[0.98]">
+          <SeminarDialogTrigger className="inline-flex items-center gap-2 rounded-xl bg-green-700 px-8 py-4 text-[15px] font-semibold text-white shadow-lg transition hover:bg-green-800 active:scale-[0.98]">
             Reserve My Free Seat
             <ArrowRight className="size-4" />
           </SeminarDialogTrigger>

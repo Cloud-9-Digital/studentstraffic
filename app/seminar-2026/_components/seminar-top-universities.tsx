@@ -193,7 +193,7 @@ export async function SeminarTopUniversities() {
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-yellow-600">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-amber-600">
           Top Universities
         </p>
         <h2 className="mt-3 max-w-3xl text-3xl font-bold leading-snug text-gray-900 sm:text-4xl">

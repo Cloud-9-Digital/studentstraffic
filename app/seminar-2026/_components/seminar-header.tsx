@@ -51,7 +51,7 @@ export function SeminarHeader() {
           >
             <WhatsAppIcon className="size-4" />
           </TrackedContactLink>
-          <SeminarDialogTrigger className="rounded-full bg-green-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-green-700 active:scale-95">
+          <SeminarDialogTrigger className="rounded-full bg-green-700 px-5 py-2 text-sm font-semibold text-white transition hover:bg-green-800 active:scale-95">
             Register Free
           </SeminarDialogTrigger>
         </div>

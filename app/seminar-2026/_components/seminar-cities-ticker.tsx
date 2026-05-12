@@ -21,7 +21,7 @@ export function SeminarCitiesTicker({ className }: { className?: string }) {
         {tickerEvents.map((event, idx) => {
           const [day, month] = event.date.split(" ");
           const colors = ['bg-red-50 border-red-200', 'bg-yellow-50 border-yellow-200', 'bg-green-50 border-green-200'];
-          const textColors = ['text-red-600', 'text-yellow-600', 'text-green-600'];
+          const textColors = ['text-red-700', 'text-amber-600', 'text-green-700'];
           const iconBgColors = ['bg-red-100', 'bg-yellow-100', 'bg-green-100'];
           const colorIndex = idx % 3;
 

@@ -36,7 +36,7 @@ export function SeminarEvents() {
       />
 
       <div className="relative z-10 mx-auto max-w-5xl px-4">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-yellow-600">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-amber-600">
           Find your city
         </p>
         <h2 className="mt-3 text-3xl font-bold leading-snug text-gray-900 sm:text-4xl">
@@ -52,13 +52,13 @@ export function SeminarEvents() {
             const [dayNum, month, year] = date.split(" ");
             const displayTime = time ?? "Timing to be confirmed";
             const completed = isEventCompleted(event);
-            const colors = ["bg-red-600", "bg-yellow-500", "bg-green-600"];
+            const colors = ["bg-red-700", "bg-amber-600", "bg-green-700"];
             const colorIndex = index % 3;
 
             return (
               <div
                 key={`${date}-${city}`}
-                className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white transition hover:border-green-600/40 hover:shadow-sm"
+                className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white transition hover:border-green-700/40 hover:shadow-sm"
               >
                 {/* Top: date + info */}
                 <div className="flex flex-1 items-stretch">
@@ -72,8 +72,8 @@ export function SeminarEvents() {
                   {/* Info */}
                   <div className="flex min-w-0 flex-1 flex-col px-4 py-3">
                     <div className="flex items-center gap-1">
-                      <MapPin className="size-3 shrink-0 text-green-600" />
-                      <span className="text-[10px] font-semibold uppercase tracking-wider text-green-600">
+                      <MapPin className="size-3 shrink-0 text-green-700" />
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-green-700">
                         {"Tamil Nadu"}
                       </span>
                     </div>
@@ -91,7 +91,7 @@ export function SeminarEvents() {
                     </div>
                   ) : (
                     <SeminarDialogTrigger
-                      className="w-full rounded-lg bg-green-600/8 py-2 text-xs font-semibold text-green-600 transition hover:bg-green-600 hover:text-white active:scale-[0.98]"
+                      className="w-full rounded-lg bg-green-700/8 py-2 text-xs font-semibold text-green-700 transition hover:bg-green-800 hover:text-white active:scale-[0.98]"
                       preselectedEvent={`${city} — ${date}`}
                     >
                       Register for this event

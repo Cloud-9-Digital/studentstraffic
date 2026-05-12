@@ -62,9 +62,9 @@ export function SeminarHero() {
           {/* Left: copy - desktop only */}
           <div className="hidden min-w-0 lg:block">
             <h1 className="break-words text-3xl font-bold leading-tight text-gray-900 lg:text-4xl xl:text-5xl xl:leading-[1.08]">
-              <span className="text-red-600">Tamil Nadu&apos;s Biggest</span>{" "}
-              <em className="not-italic text-yellow-500">MBBS Abroad Seminar</em>{" "}
-              <span className="text-green-600">by FMGE Doctors</span>
+              <span className="text-red-700">Tamil Nadu&apos;s Biggest</span>{" "}
+              <em className="not-italic text-amber-600">MBBS Abroad Seminar</em>{" "}
+              <span className="text-green-700">by FMGE Doctors</span>
             </h1>
 
             <p className="mt-5 text-sm leading-relaxed text-gray-600 lg:text-base lg:leading-7">
@@ -72,7 +72,7 @@ export function SeminarHero() {
             </p>
 
             {/* Desktop CTA */}
-            <SeminarDialogTrigger className="mt-8 inline-flex items-center gap-2 rounded-xl bg-green-600 px-8 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-green-700 active:scale-[0.98]">
+            <SeminarDialogTrigger className="mt-8 inline-flex items-center gap-2 rounded-xl bg-green-700 px-8 py-4 text-base font-semibold text-white shadow-lg transition hover:bg-green-800 active:scale-[0.98]">
               Reserve Your Free Seat
               <ArrowRight className="size-5" />
             </SeminarDialogTrigger>

@@ -19,12 +19,12 @@ import {
 
 const path = "/guides/neet-2026-expected-cut-off";
 const title =
-  "NEET 2026 Expected Cut Off After Provisional Answer Key: Category-Wise Estimate";
+  "NEET 2026 Expected Cut Off: Category-Wise Estimate After Provisional Answer Key";
 const description =
-  "NEET 2026 expected cut off guide for students and parents, updated after our May 8, 2026, 12:39 PM IST official-source check, with the official provisional answer key still live on the NEET homepage, no official result or cut off notice visible yet, and category-wise planning for MBBS counselling.";
+  "NEET 2026 expected cut off guide for students and parents, updated after our May 12, 2026, 10:54 AM IST official-source check, with the official provisional answer key still live on the NEET homepage, the public notices page now showing the answer-key items, and no official result or cut off notice visible yet.";
 const publishedAt = "2026-05-04";
-const updatedAt = "2026-05-08";
-const reviewedAt = "May 8, 2026, 12:39 PM IST";
+const updatedAt = "2026-05-12";
+const reviewedAt = "May 12, 2026, 10:54 AM IST";
 const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
@@ -54,18 +54,20 @@ export const metadata: Metadata = {
 const keyPoints = [
   "Expected cut off is a planning tool, not a final result.",
   "The official provisional answer key is now live, but expected cut off discussion is still unofficial planning content.",
+  "The official NEET homepage is also carrying a May 10, 2026 press release, but that does not amount to an official cut off or result update.",
   "Category, quota, domicile, and seat movement matter as much as broad paper difficulty.",
   "Students should work in score ranges and college buckets, not one imaginary exact college.",
 ] as const;
 
 const officialContextPoints = [
   "The official NEET website shows that NEET (UG) 2026 was conducted on May 3, 2026.",
-  "The same site also shows the advance city intimation update published on April 12, 2026, the admit card update published on April 26, 2026, exam-conduct messaging for May 3, 2026, and a provisional answer key notice dated May 6, 2026.",
+  "The same site also shows the advance city intimation update published on April 12, 2026, the admit card update published on April 26, 2026, exam-conduct messaging for May 3, 2026, a provisional answer key notice dated May 6, 2026, and a press release dated May 10, 2026.",
   `In our ${reviewedAt} review, the NEET homepage was visibly surfacing the provisional answer key notice and a separate official provisional answer key PDF link.`,
+  "The May 10 press release says reports around alleged irregularities are under investigation and says any necessary next step will be examined after agency findings.",
   "That official notice says candidates can challenge the provisional answer keys only after the scanned OMR answer sheet is uploaded, and the schedule for OMR upload plus the challenge round will be notified separately.",
-  "The current page-one visible entries on the documents page are still led by the May 2 exam-conduct notice, the NTA preparedness note, dress-code and biometric advisories, admit-card release, scribe-support, and city-intimation items rather than the 2026 answer key posting.",
-  "The separate NEET public-notices page was still showing older pre-exam notices and a Last Updated date of Apr 12, 2026 during our review, so students should cross-check the homepage and the direct official notice PDF too.",
-  "We also checked the main NTA website, which was still showing NEET 2026 items such as the May 3 conduct note and exam-day advisories during this review, but it was not clearly surfacing the answer-key item in Latest @ NTA.",
+  "In the same review, the NEET public-notices category page was visibly listing the provisional answer key notice and the separate provisional answer key PDF on page one, and its footer was showing Last Updated: May 06, 2026.",
+  "We still treated the documents page as a secondary source because the homepage, public notices, direct PDFs, and helpdesk page gave a clearer answer-key trail.",
+  "We also checked the NTA Notice Board Archive, which in this review was listing the NEET 2026 provisional answer key item as a parent-site cross-check.",
 ] as const;
 
 const faqs = [
@@ -97,7 +99,7 @@ const faqs = [
   {
     question: "What official pages should students keep checking?",
     answer:
-      `Students should keep checking the official NEET homepage, the direct provisional answer key notice PDF, the provisional answer key PDF, the NEET documents page, the NEET helpdesk page, and the NTA homepage. In our ${reviewedAt} review, the NEET homepage was the clearest answer-key source, while the documents page and separate public-notices page were less current and the NTA homepage was not clearly surfacing the answer-key item in Latest @ NTA.`,
+      `Students should keep checking the official NEET homepage, the direct provisional answer key notice PDF, the provisional answer key PDF, the May 10 press release PDF, the NEET documents page, the NEET helpdesk page, the public-notices category page, and the NTA Notice Board Archive. In our ${reviewedAt} review, the homepage plus the public-notices page and direct PDFs gave the clearest official answer-key picture.`,
   },
   {
     question: "Has any official NEET 2026 answer key challenge notice appeared yet?",
@@ -107,7 +109,12 @@ const faqs = [
   {
     question: "Has NTA announced the NEET 2026 result date or official cut off yet?",
     answer:
-      `We did not see a separate NEET 2026 result-date notice, result notice, or official cut off posting on the official NEET homepage, documents page, or NTA homepage during our ${reviewedAt} review. Right now, expected cut off remains planning guidance, not official NTA communication.`,
+      `We did not see a separate NEET 2026 result-date notice, result notice, or official cut off posting on the official NEET homepage, documents page, or NTA Notice Board Archive during our ${reviewedAt} review. Right now, expected cut off remains planning guidance, not official NTA communication.`,
+  },
+  {
+    question: "Does the May 10, 2026 press release change the expected cut off discussion?",
+    answer:
+      "No. The press release is important official context because it says reports around alleged irregularities are under investigation, but it does not announce an official cut off, result date, or answer-key challenge window. Students should keep expected cut off in estimate mode.",
   },
   {
     question: "Why should students avoid calling today’s cut off estimate official?",
@@ -117,7 +124,7 @@ const faqs = [
   {
     question: "Which latest official notices are visible while students wait?",
     answer:
-      `In our ${reviewedAt} review, the official NEET site was visibly carrying the May 6 provisional answer key notice, the May 3 exam-conduct notice, and notices on dress code, biometric exception, admit cards, and scribe support. Those notices are official and useful, but they do not make expected cut off discussion official.`,
+      `In our ${reviewedAt} review, the official NEET site was visibly carrying the May 10 press release, the May 6 provisional answer key notice, the May 3 exam-conduct notice, and notices on dress code, biometric exception, admit cards, and scribe support. Those notices are official and useful, but they do not make expected cut off discussion official.`,
   },
   {
     question: "Should students use a college predictor with expected cut off ranges?",
@@ -127,17 +134,22 @@ const faqs = [
   {
     question: "What is the latest visible status on the NEET documents page?",
     answer:
-      `In our ${reviewedAt} review, the page-one visible entries on the NEET documents page were still led by the May 2 exam-conduct notice, the NTA preparedness note, dress-code and biometric advisories, admit-card release, scribe-support, and city-intimation items. So students should not rely on that listing alone when the homepage is already carrying the answer key release.`,
+      `In our ${reviewedAt} review, we treated the NEET documents page as a secondary cross-check rather than the fastest post-exam update surface. It was still visibly showing older 2026 items such as the exam-conduct update, dress-code advisory, biometric-exception advisory, and admit-card notice, not the May 6 answer-key notice in the visible listing we checked.`,
   },
   {
     question: "Why does the NEET homepage matter more than the documents page right now?",
     answer:
-      `Because in our ${reviewedAt} review the homepage was still clearly surfacing the May 6, 2026 provisional answer key notice and the official answer key PDF link, while the documents page page-one view was still led by exam-conduct and advisory items. For post-exam updates, students should check the homepage first and then cross-check the direct PDFs.`,
+      `Because in our ${reviewedAt} review the homepage was clearly surfacing the May 10, 2026 press release, the May 6, 2026 provisional answer key notice, and the official answer key PDF link. The documents page was still not the fastest surface in its visible listing, so students should check the homepage first and then cross-check the public-notices page plus the direct PDFs.`,
   },
   {
     question: "Does the NTA homepage currently show the NEET 2026 answer-key item clearly?",
     answer:
-      `Not in our ${reviewedAt} review. The NTA homepage was still showing some NEET 2026 entries such as the May 3 conduct note and exam-day advisories, but we did not see the provisional answer-key item clearly listed in Latest @ NTA. For this update, the dedicated NEET homepage was more reliable.`,
+      `The firmer parent-site cross-check in our ${reviewedAt} review was the NTA Notice Board Archive, which was listing the NEET 2026 provisional answer key item. The dedicated NEET homepage was still more useful because it kept the exam-page notice, answer-key PDF, and press release together.`,
+  },
+  {
+    question: "What is the latest visible status on the NEET public notices page?",
+    answer:
+      `In our ${reviewedAt} review, the public-notices category page was visibly listing the provisional answer key notice and the separate answer key PDF on page one. Its footer was also showing Last Updated: May 06, 2026.`,
   },
 ] as const;
 

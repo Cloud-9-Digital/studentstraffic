@@ -7,7 +7,7 @@ export function SeminarDifferentiators() {
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="mx-auto max-w-5xl px-4">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-red-600">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-red-700">
           Why this seminar is different
         </p>
         <h2 className="mt-3 text-3xl font-bold leading-snug text-gray-900 sm:text-4xl">

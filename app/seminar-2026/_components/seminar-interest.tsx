@@ -61,7 +61,7 @@ export function SeminarInterest() {
   return (
     <section className="bg-gray-50 py-16 md:py-20">
       <div className="mx-auto max-w-3xl px-4">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-green-600">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-green-700">
           Is this you?
         </p>
         <h2 className="mt-3 text-3xl font-bold leading-snug text-gray-900 sm:text-4xl">
@@ -82,8 +82,8 @@ export function SeminarInterest() {
                 className={[
                   "group w-full rounded-xl border px-5 py-4 text-left transition-all",
                   isChecked
-                    ? "border-green-600 bg-white shadow-sm"
-                    : "border-gray-200 bg-white hover:border-green-600/50",
+                    ? "border-green-700 bg-white shadow-sm"
+                    : "border-gray-200 bg-white hover:border-green-700/50",
                 ].join(" ")}
               >
                 <div className="flex items-start gap-4">
@@ -91,7 +91,7 @@ export function SeminarInterest() {
                     className={[
                       "mt-0.5 flex size-5 shrink-0 items-center justify-center rounded border-2 transition-all",
                       isChecked
-                        ? "border-green-600 bg-green-600"
+                        ? "border-green-700 bg-green-700"
                         : "border-gray-300 bg-white",
                     ].join(" ")}
                   >
@@ -120,7 +120,7 @@ export function SeminarInterest() {
         </div>
 
         <div className="mt-8">
-          <SeminarDialogTrigger className="flex w-full items-center justify-center gap-2 rounded-xl bg-green-600 px-6 py-4 text-[15px] font-semibold text-white shadow-sm transition hover:bg-green-700 active:scale-[0.98]">
+          <SeminarDialogTrigger className="flex w-full items-center justify-center gap-2 rounded-xl bg-green-700 px-6 py-4 text-[15px] font-semibold text-white shadow-sm transition hover:bg-green-800 active:scale-[0.98]">
             {ctaLabel}
             <ArrowRight className="size-4" />
           </SeminarDialogTrigger>

@@ -36,7 +36,7 @@ export function SeminarMobileCta() {
         >
           <WhatsAppIcon className="size-5" />
         </TrackedContactLink>
-        <SeminarDialogTrigger className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-green-600 py-3.5 text-sm font-semibold text-white transition hover:bg-green-700 active:scale-[0.98]">
+        <SeminarDialogTrigger className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-green-700 py-3.5 text-sm font-semibold text-white transition hover:bg-green-800 active:scale-[0.98]">
           <Calendar className="size-4" />
           Reserve My Free Seat
         </SeminarDialogTrigger>

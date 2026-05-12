@@ -37,7 +37,7 @@ function Countdown({ targetDate }: { targetDate: Date }) {
     return () => clearInterval(timer);
   }, [targetDate]);
 
-  const colors = ["bg-red-600", "bg-yellow-500", "bg-green-600", "bg-red-600"];
+  const colors = ["bg-red-700", "bg-amber-600", "bg-green-700", "bg-red-700"];
 
   return (
     <div className="my-6 flex justify-center gap-3 sm:gap-4">
@@ -99,7 +99,7 @@ export function SeminarNextEvent() {
 
       <div className="relative z-10 mx-auto max-w-6xl px-4">
         <div className="text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-green-600">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-green-700">
             Next Event
           </p>
           <h2 className="mt-2 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl">
@@ -111,9 +111,9 @@ export function SeminarNextEvent() {
 
         <div className="mt-6 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg">
           <div className="flex flex-col justify-center p-6 lg:p-8">
-              <div className="inline-flex items-center gap-2 self-start rounded-full bg-yellow-500/10 px-3 py-1">
-                <span className="size-1.5 animate-pulse rounded-full bg-yellow-500" />
-                <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-yellow-600">
+              <div className="inline-flex items-center gap-2 self-start rounded-full bg-amber-600/10 px-3 py-1">
+                <span className="size-1.5 animate-pulse rounded-full bg-amber-600" />
+                <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-600">
                   Upcoming
                 </span>
               </div>
@@ -122,8 +122,8 @@ export function SeminarNextEvent() {
 
               <div className="mt-5 grid gap-3 sm:grid-cols-3">
                 <div className="flex items-center gap-2.5">
-                  <div className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-red-600/10">
-                    <Calendar className="size-4 text-red-600" />
+                  <div className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-red-700/10">
+                    <Calendar className="size-4 text-red-700" />
                   </div>
                   <div className="min-w-0">
                     <div className="text-[10px] font-medium uppercase tracking-wide text-gray-500">Date</div>
@@ -132,8 +132,8 @@ export function SeminarNextEvent() {
                 </div>
 
                 <div className="flex items-center gap-2.5">
-                  <div className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-yellow-500/10">
-                    <Clock className="size-4 text-yellow-600" />
+                  <div className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-amber-600/10">
+                    <Clock className="size-4 text-amber-600" />
                   </div>
                   <div className="min-w-0">
                     <div className="text-[10px] font-medium uppercase tracking-wide text-gray-500">Time</div>
@@ -142,8 +142,8 @@ export function SeminarNextEvent() {
                 </div>
 
                 <div className="flex items-center gap-2.5">
-                  <div className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-green-600/10">
-                    <MapPin className="size-4 text-green-600" />
+                  <div className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-green-700/10">
+                    <MapPin className="size-4 text-green-700" />
                   </div>
                   <div className="min-w-0">
                     <div className="text-[10px] font-medium uppercase tracking-wide text-gray-500">Venue</div>
@@ -157,7 +157,7 @@ export function SeminarNextEvent() {
                   Free entry · Details via WhatsApp
                 </p>
                 <SeminarDialogTrigger
-                  className="rounded-lg bg-green-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-green-700 active:scale-[0.98] sm:order-1"
+                  className="rounded-lg bg-green-700 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-green-800 active:scale-[0.98] sm:order-1"
                   preselectedEvent={`${city} — ${date}`}
                 >
                   Reserve Your Seat
