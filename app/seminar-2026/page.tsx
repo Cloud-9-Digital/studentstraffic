@@ -134,6 +134,7 @@ export default async function SeminarPage() {
 
         <SeminarHero />
         <SeminarCitiesTicker className="hidden lg:block" />
+        <SeminarEvents />
 
         {/* Value Proposition */}
         <SeminarTopUniversities />
