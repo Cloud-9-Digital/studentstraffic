@@ -11,6 +11,9 @@ const MAX_AUTO_SHOWS = 2;
 const DELAY_MS = 5000;
 
 export function SeminarPromoPopup() {
+  // Hidden due to NEET 2026 cancellation and event postponement
+  return null;
+
   const [isOpen, setIsOpen] = useState(false);
   const [pillVisible, setPillVisible] = useState(false);
 
