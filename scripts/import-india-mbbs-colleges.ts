@@ -5,8 +5,11 @@ import { basename, resolve } from "node:path";
 import { eq, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/core";
+import {
+  buildIndiaCollegeSlug,
+  buildIndiaProgramSlug,
+} from "@/lib/india-mbbs-slugs";
 import { indiaMedicalColleges, indiaMedicalPrograms } from "@/lib/db/schema";
-import { createSlug } from "@/lib/utils";
 
 type ParsedArgs = {
   filePath: string;
@@ -275,32 +278,6 @@ function sanitizeCityName(cityName?: string, collegeName?: string) {
   return cleaned || inferCityName(collegeName) || undefined;
 }
 
-function buildCollegeSlug(input: {
-  collegeCode?: string;
-  collegeName: string;
-  stateName: string;
-}) {
-  if (input.collegeCode) {
-    return createSlug(`${input.collegeCode}-india-medical-college`);
-  }
-
-  return createSlug(
-    `${input.collegeName}-${input.stateName}-india-medical-college`,
-  );
-}
-
-function buildProgramSlug(input: {
-  collegeCode?: string;
-  collegeName: string;
-  stateName: string;
-}) {
-  const base = input.collegeCode
-    ? `${input.collegeCode}-MBBS`
-    : `${input.collegeName}-${input.stateName}-MBBS`;
-
-  return createSlug(`${base}-india-medical-program`);
-}
-
 function normalizeCourseName(courseName?: string) {
   const cleaned = courseName?.replace(/[^a-z]/gi, "").toUpperCase();
 
@@ -344,15 +321,16 @@ async function main() {
       continue;
     }
 
-    const collegeSlug = buildCollegeSlug({
-      collegeCode: normalized.collegeCode,
-      collegeName: normalized.collegeName,
-      stateName: normalized.stateName,
-    });
     const cityName = sanitizeCityName(
       normalized.cityName,
       normalized.collegeName,
     );
+    const collegeSlug = buildIndiaCollegeSlug({
+      collegeCode: normalized.collegeCode,
+      collegeName: normalized.collegeName,
+      cityName,
+      stateName: normalized.stateName,
+    });
     const managementType = normalizeManagementType(normalized.managementType);
 
     await db
@@ -402,11 +380,7 @@ async function main() {
       continue;
     }
 
-    const programSlug = buildProgramSlug({
-      collegeCode: normalized.collegeCode,
-      collegeName: normalized.collegeName,
-      stateName: normalized.stateName,
-    });
+    const programSlug = buildIndiaProgramSlug(collegeSlug, courseName);
 
     await db
       .insert(indiaMedicalPrograms)

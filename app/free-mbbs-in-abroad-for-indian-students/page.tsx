@@ -10,8 +10,6 @@ import {
   getWebPageStructuredData,
 } from "@/lib/structured-data";
 
-export const revalidate = 86400;
-
 const pagePath = "/free-mbbs-in-abroad-for-indian-students";
 const publishedDate = "2026-05-21";
 

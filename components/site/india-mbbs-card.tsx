@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { Building2, Calendar, MapPin } from "lucide-react";
 
 import type { IndiaMbbsCard } from "@/lib/data/types";
+import { getIndiaMbbsCollegeHref } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
 function getInitials(name: string) {
@@ -39,7 +41,10 @@ export function IndiaMbbsCardView({ college }: { college: IndiaMbbsCard }) {
   );
 
   return (
-    <div className="group flex h-full flex-col rounded-2xl border border-border/80 bg-card shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-md">
+    <Link
+      href={getIndiaMbbsCollegeHref(college.slug)}
+      className="group flex h-full flex-col rounded-2xl border border-border/80 bg-card shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-md"
+    >
       <div className="relative flex items-start gap-3 p-3 pb-2.5">
         <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[linear-gradient(145deg,#fff2c7_0%,#f7d46b_100%)] ring-1 ring-black/5">
           <span className="font-display text-[0.9rem] font-bold tracking-[0.08em] text-slate-800">
@@ -85,6 +90,6 @@ export function IndiaMbbsCardView({ college }: { college: IndiaMbbsCard }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
