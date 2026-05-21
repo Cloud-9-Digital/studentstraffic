@@ -6,10 +6,13 @@ import { eq, inArray, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/core";
 import {
+  buildIndiaCollegeSlug,
+  buildIndiaProgramSlug,
+} from "@/lib/india-mbbs-slugs";
+import {
   indiaMedicalColleges,
   indiaMedicalPrograms,
 } from "@/lib/db/schema";
-import { createSlug } from "@/lib/utils";
 
 type ParsedArgs = {
   filePath: string;
@@ -216,31 +219,6 @@ function normalizeProgramRow(row: ParsedRow): NormalizedProgramRow {
   return normalized;
 }
 
-function buildCollegeSlug(input: {
-  collegeCode?: string;
-  collegeName: string;
-  stateName: string;
-}) {
-  if (input.collegeCode) {
-    return createSlug(`${input.collegeCode}-india-medical-college`);
-  }
-
-  return createSlug(`${input.collegeName}-${input.stateName}-india-medical-college`);
-}
-
-function buildProgramSlug(input: {
-  collegeCode?: string;
-  collegeName: string;
-  stateName: string;
-  courseName: string;
-}) {
-  const base = input.collegeCode
-    ? `${input.collegeCode}-${input.courseName}`
-    : `${input.collegeName}-${input.stateName}-${input.courseName}`;
-
-  return createSlug(`${base}-india-medical-program`);
-}
-
 function sanitizeCityName(cityName?: string, collegeName?: string) {
   const fallback = collegeName?.split(",").map((part) => part.trim()).filter(Boolean).at(-1);
   const cleaned = (cityName || fallback || "")
@@ -331,9 +309,10 @@ async function main() {
     const universityName =
       masterCollege.universityName ?? normalized.universityName;
 
-    const collegeSlug = buildCollegeSlug({
+    const collegeSlug = buildIndiaCollegeSlug({
       collegeCode: normalized.collegeCode,
       collegeName,
+      cityName,
       stateName,
     });
 
@@ -386,12 +365,7 @@ async function main() {
       continue;
     }
 
-    const programSlug = buildProgramSlug({
-      collegeCode: normalized.collegeCode,
-      collegeName,
-      stateName,
-      courseName: normalized.courseName,
-    });
+    const programSlug = buildIndiaProgramSlug(collegeSlug, normalized.courseName);
 
     await db
       .insert(indiaMedicalPrograms)

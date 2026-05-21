@@ -11,6 +11,7 @@ import { buildCatalogIndexes } from "@/lib/catalog/indexes";
 import {
   getCountryHref,
   getCourseHref,
+  getIndiaMbbsCollegeHref,
   getLandingPageHref,
   getUniversityHref,
 } from "@/lib/routes";
@@ -257,7 +258,7 @@ export function buildSearchDocuments({
     return {
       documentType: "india_college",
       sourceSlug: college.slug,
-      path: `/india-mbbs-colleges?q=${encodeURIComponent(college.collegeName)}`,
+      path: getIndiaMbbsCollegeHref(college.slug),
       title: college.collegeName,
       subtitle: college.cityName
         ? `${college.cityName}, ${college.stateName}`

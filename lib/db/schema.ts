@@ -11,6 +11,7 @@ import {
 } from "drizzle-orm/pg-core";
 import type {
   Faq,
+  IndiaMbbsCollegeEditorialContent,
   LinkItem,
   PeerRequestStatus,
   SearchDocument,
@@ -236,6 +237,10 @@ export const indiaMedicalColleges = pgTable(
     sourceUrl: text("source_url"),
     rawRow: jsonb("raw_row")
       .$type<IndiaMedicalSourceRow>()
+      .notNull()
+      .default({}),
+    editorialContent: jsonb("editorial_content")
+      .$type<IndiaMbbsCollegeEditorialContent>()
       .notNull()
       .default({}),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),

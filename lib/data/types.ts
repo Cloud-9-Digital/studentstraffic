@@ -424,6 +424,45 @@ export type IndiaMbbsCard = {
   annualIntakeSeats?: number;
 };
 
+export type IndiaMbbsCollegeEditorialContent = {
+  overview?: string;
+  whyChoose?: string[];
+  admissionProcess?: string[];
+  campusFacilities?: string[];
+  hostelInfo?: string;
+  internshipInfo?: string;
+  feesNote?: string;
+  cutoffNote?: string;
+  faq?: Faq[];
+  reviewedAt?: string;
+};
+
+export type IndiaMbbsCollegeProgram = {
+  slug: string;
+  courseName: string;
+  yearOfInception?: number;
+  annualIntakeSeats?: number;
+  sourceUrl?: string;
+};
+
+export type IndiaMbbsCollegeDetail = {
+  id: number;
+  slug: string;
+  collegeCode?: string;
+  collegeName: string;
+  stateName: string;
+  cityName?: string;
+  managementType?: string;
+  universityName?: string;
+  sourceAuthority: string;
+  sourceFileName?: string;
+  sourceUrl?: string;
+  rawRow: Record<string, unknown>;
+  editorialContent: IndiaMbbsCollegeEditorialContent;
+  programs: IndiaMbbsCollegeProgram[];
+  updatedAt?: string;
+};
+
 export type IndiaMbbsOptions = {
   courses: string[];
   states: string[];
