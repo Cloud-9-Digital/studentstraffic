@@ -10,6 +10,7 @@ import {
   getCatalogSnapshot,
   getPublishedBlogPostMetadata,
 } from "@/lib/data/catalog";
+import { getAllIndiaMbbsCollegeEntries } from "@/lib/data/india-mbbs";
 import { getTamilNaduCityPages } from "@/lib/data/tamil-nadu-local";
 import { getAllComparisonPages, getBudgetGuides } from "@/lib/discovery-pages";
 import {
@@ -19,6 +20,7 @@ import {
   getComparisonHref,
   getCountriesIndexHref,
   getCountryHref,
+  getIndiaMbbsCollegeHref,
   getCoursesIndexHref,
   getCourseHref,
   getIndiaMbbsCollegesHref,
@@ -35,13 +37,14 @@ function uniqueUrls(urls: Array<string | undefined>) {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const tamilNaduCityPages = getTamilNaduCityPages();
-  const [snapshot, landingPages, comparisonPages, budgetGuides, publishedPosts] =
+  const [snapshot, landingPages, comparisonPages, budgetGuides, publishedPosts, indiaCollegeEntries] =
     await Promise.all([
       getCatalogSnapshot(),
       getAllLandingPages(),
       getAllComparisonPages(),
       getBudgetGuides(),
       getPublishedBlogPostMetadata(),
+      getAllIndiaMbbsCollegeEntries(),
     ]);
   const { countries, courses, universities, programOfferings } = snapshot;
   const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
@@ -81,6 +84,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const governanceLastModified = getLatestDate([
     governancePublishedAt,
     catalogReviewedAt,
+  ]);
+  const indiaCollegesLastModified = getLatestDate([
+    catalogReviewedAt,
+    ...indiaCollegeEntries.map((college) => college.updatedAt),
   ]);
   const latestBlogModified =
     getLatestDate(
@@ -137,8 +144,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl(getIndiaMbbsCollegesHref()),
       priority: 0.82,
       changeFrequency: "weekly",
-      lastModified: catalogLastModified,
+      lastModified: indiaCollegesLastModified ?? catalogLastModified,
     },
+    ...indiaCollegeEntries.map((college) => ({
+      url: absoluteUrl(getIndiaMbbsCollegeHref(college.slug)),
+      priority: 0.72,
+      changeFrequency: "weekly" as const,
+      lastModified: college.updatedAt
+        ? new Date(college.updatedAt)
+        : indiaCollegesLastModified ?? new Date(),
+    })),
     {
       url: absoluteUrl(getCountriesIndexHref()),
       priority: 0.85,
@@ -192,6 +207,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl("/contact"),
       priority: 0.7,
       changeFrequency: "monthly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/free-mbbs-in-abroad-for-indian-students"),
+      priority: 0.78,
+      changeFrequency: "weekly",
       lastModified: governanceLastModified,
     },
     {
