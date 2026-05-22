@@ -1,5 +1,3 @@
-import "server-only";
-
 import { neonConfig } from "@neondatabase/serverless";
 
 const DB_QUERY_TIMEOUT_MS = 15_000;

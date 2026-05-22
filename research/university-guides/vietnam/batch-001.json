@@ -1,0 +1,732 @@
+{
+  "batchId": "vietnam-batch-001",
+  "countrySlug": "vietnam",
+  "notes": "Official-source refresh batch for five high-impact Vietnam university pages. Built to replace weak homepage-only sourcing and missing verification metadata.",
+  "universities": [
+    {
+      "slug": "hanoi-medical-university",
+      "name": "Hanoi Medical University",
+      "city": "Hanoi",
+      "type": "Public",
+      "establishedYear": 1902,
+      "summary": "A flagship public medical university in Hanoi with a six-year Medicine Doctor program, a large domestic clinical ecosystem, and a clearly published 2025-2026 projected tuition figure for the regular undergraduate medicine track.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://hmu.edu.vn",
+      "campusLifestyle": "Hanoi Medical University presents itself as a major domestic medical school embedded in the capital rather than a boutique international campus. The official LMS and university channels show a structured six-year program with a large institutional footprint and the pace of a high-volume public medical school.",
+      "cityProfile": "Hanoi gives students access to a dense capital-city healthcare environment and a broad academic ecosystem. For applicants, the city's advantage is the concentration of hospitals, faculty depth, and a traditional public-university setting rather than resort-style or low-intensity student life.",
+      "clinicalExposure": "The official medicine-program materials describe a six-year professional Doctor of Medicine path and point to a competency-based clinical structure rather than a light preclinical course. As a major Vietnamese public medical school, HMU's value proposition is its domestic teaching-hospital ecosystem and long-standing role in physician training.",
+      "hostelOverview": "The reviewed HMU sources in this refresh pass do not provide one clean public hostel explainer with room types, pricing, and rules on the same page. That means housing should be verified directly with the university before relying on generic Vietnam hostel assumptions.",
+      "indianFoodSupport": "The reviewed official HMU sources do not advertise Indian food support or a dedicated international dining setup. Families should treat food adaptation as a city-level question in Hanoi rather than a university-provided guarantee.",
+      "safetyOverview": "The official sources used for this refresh focus more on curriculum, tuition, and academic administration than on a dedicated student-safety page. In practice, the strongest official signal is that HMU operates as a long-established public medical university with formal academic systems rather than as a lightly documented private recruitment site.",
+      "studentSupport": "The official HMU LMS and university pages point students toward the admissions portal, university systems, and academic resources, but this refresh did not surface a highly marketed international-student support page. Applicants should expect a serious academic environment first and should verify any extra support needs directly.",
+      "whyChoose": [
+        "HMU's official LMS describes the Medicine Doctor program as a six-year undergraduate medical degree with a clearly documented curriculum structure.",
+        "The university's 2025 admissions materials publish a projected tuition figure for medicine, which is stronger than the vague pricing currently used on many Vietnam pages.",
+        "As a public flagship in Hanoi, HMU's biggest draw is institutional depth and clinical prestige inside Vietnam rather than marketing-heavy international positioning."
+      ],
+      "thingsToConsider": [
+        "HMU's official medicine-program page lists the language of training as Vietnamese, which is a major fit question for non-Vietnamese-speaking applicants.",
+        "The reviewed official sources are not built around international MBBS recruitment, so applicants must verify language, patient-contact expectations, and adaptation support carefully.",
+        "Housing and daily-life logistics are not made especially transparent on the pages reviewed in this refresh pass."
+      ],
+      "bestFitFor": [
+        "Students who prioritize public-university prestige in Vietnam over recruitment-driven marketing.",
+        "Applicants who are specifically evaluating whether a Vietnamese-medium flagship is realistic for their long-term plan.",
+        "Families who want a conservative fact-based profile rather than an inflated international-admissions pitch."
+      ],
+      "teachingHospitals": [
+        "Hanoi Medical University teaching-hospital ecosystem"
+      ],
+      "recognitionBadges": [
+        "Public medical university",
+        "Medicine Doctor program",
+        "Published 2025-2026 undergraduate tuition table"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "HMU medicine LMS page",
+          "url": "https://lms.hmu.edu.vn/course/index.php?categoryid=64&lang=en"
+        },
+        {
+          "label": "HMU 2025 admissions tuition PDF",
+          "url": "https://apiwebhmu.hmu.edu.vn/Upload/Images/c90c1ee8-b6d1-4609-b6a1-e1d37a43791f.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long is the Hanoi Medical University medicine program?",
+          "answer": "The official HMU LMS page describes the Medicine Doctor program as a six-year undergraduate program."
+        },
+        {
+          "question": "What language does the official HMU medicine page list for the program?",
+          "answer": "The official HMU LMS page lists the language of training for the Medicine Doctor program as Vietnamese."
+        },
+        {
+          "question": "What tuition does HMU publish for medicine in the 2025-2026 admissions material?",
+          "answer": "HMU's 2025 admissions tuition table lists medicine at 62,200,000 VND per academic year."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "HMU's public-facing materials in this refresh pass are strongest on curriculum structure and published tuition rather than on international recruitment detail. Applicants should use the university's official admissions portal for current intake mechanics.",
+        "licensingPathway": [
+          "HMU trains domestic medical graduates through a Vietnamese-medium Medicine Doctor pathway.",
+          "Students considering India return should verify current NMC and language-related suitability before treating this as an easy MBBS-abroad option."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "HMU official website",
+            "url": "https://hmu.edu.vn",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "HMU medicine LMS page",
+            "url": "https://lms.hmu.edu.vn/course/index.php?categoryid=64&lang=en",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "HMU 2025 admissions tuition PDF",
+            "url": "https://apiwebhmu.hmu.edu.vn/Upload/Images/c90c1ee8-b6d1-4609-b6a1-e1d37a43791f.pdf",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official HMU program and admissions materials. Important correction: the current official program page lists Vietnamese as the training language."
+      },
+      "programs": [
+        {
+          "slug": "hanoi-medical-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 62200000,
+          "officialTotalTuitionAmount": 373200000,
+          "annualTuitionUsd": 2440,
+          "totalTuitionUsd": 14640,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://lms.hmu.edu.vn/course/index.php?categoryid=64&lang=en",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Undergraduate Medicine Doctor program",
+              "language": "Vietnamese",
+              "details": "HMU's official LMS page lists a six-year Medicine Doctor program taught in Vietnamese."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Applicants should not assume an English-medium India-return path. The official program page lists Vietnamese as the language of training."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "HMU's 2025 admissions tuition table lists medicine at 62,200,000 VND per academic year. USD estimates here are approximate conversions for comparison only.",
+          "sourceUrls": [
+            "https://lms.hmu.edu.vn/course/index.php?categoryid=64&lang=en",
+            "https://apiwebhmu.hmu.edu.vn/Upload/Images/c90c1ee8-b6d1-4609-b6a1-e1d37a43791f.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ump-ho-chi-minh-city",
+      "name": "University of Medicine and Pharmacy at Ho Chi Minh City",
+      "city": "Ho Chi Minh City",
+      "type": "Public",
+      "establishedYear": 1947,
+      "summary": "A major public medical university in Ho Chi Minh City with a six-year doctor training pathway, a broad affiliated-hospital network, and a clearly published 2025 projected tuition figure for the undergraduate medicine track.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://ump.edu.vn/",
+      "campusLifestyle": "UMP's official materials present a large, serious urban medical school rather than an international lifestyle product. The emphasis is on medical education scale, faculty depth, simulation, and hospital exposure inside Ho Chi Minh City.",
+      "cityProfile": "Ho Chi Minh City gives UMP students access to one of Vietnam's densest medical ecosystems. The city fit here is best understood through hospital access, academic intensity, and urban pace rather than through low-cost-student-town framing.",
+      "clinicalExposure": "Clinical exposure is one of UMP's clearest strengths on official pages. The School of Medicine highlights the university hospital plus a long list of partner hospitals across internal medicine, surgery, pediatrics, obstetrics, oncology, infectious disease, orthopedics, psychiatry, ENT, ophthalmology, and more.",
+      "hostelOverview": "The reviewed UMP pages show that dormitory resources exist through a dedicated site link, but this refresh pass did not produce one clean public page with room categories, fees, and booking conditions. Students should verify current accommodation availability directly.",
+      "indianFoodSupport": "The official UMP pages reviewed here do not market any India-specific dining or food support. This should be treated as a Ho Chi Minh City lifestyle question rather than a university-provided promise.",
+      "safetyOverview": "The reviewed official UMP pages focus on training quality, hospital links, and academic organization rather than publishing a standalone safety guide. The strongest official signal is the scale and institutional maturity of the school and its hospital network.",
+      "studentSupport": "UMP's official materials point to structured academic organization, hospital-linked training, simulation resources, and scholarship administration. This refresh did not surface a dedicated international-student support microsite, so applicants needing heavy transition support should ask detailed questions directly.",
+      "whyChoose": [
+        "UMP's School of Medicine officially describes a six-year doctor-training pathway with a competency-based curriculum history and broad clinical partnerships.",
+        "The university's 2025 undergraduate admissions document publishes a projected tuition figure for medicine instead of leaving fees vague.",
+        "Official pages show one of the strongest hospital ecosystems in the Vietnam catalog, including the university hospital and many major specialist institutions."
+      ],
+      "thingsToConsider": [
+        "The reviewed official medicine pages are not built as a clear English-medium international MBBS funnel, so language expectations should be verified directly before any decision.",
+        "The page set reviewed here is strongest on hospital breadth and curriculum structure, but weaker on simple international-student logistics like housing and adaptation support.",
+        "Families should be careful not to treat domestic public prestige inside Vietnam as automatically equivalent to a smooth India-return pathway."
+      ],
+      "bestFitFor": [
+        "Applicants prioritizing a large public medical institution and major hospital exposure in southern Vietnam.",
+        "Families comparing Vietnam public-school reputation more than marketing convenience.",
+        "Students comfortable doing deeper direct verification instead of relying on agent-style summaries."
+      ],
+      "teachingHospitals": [
+        "University Medical Center Ho Chi Minh City",
+        "Cho Ray Hospital",
+        "Children's Hospital 1",
+        "Children's Hospital 2",
+        "Tu Du Hospital",
+        "Gia Dinh People's Hospital"
+      ],
+      "recognitionBadges": [
+        "Public medical university",
+        "Six-year doctor training pathway",
+        "AUN-QA recognized medicine program"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UMP School of Medicine training page",
+          "url": "https://med.ump.edu.vn/dao-tao/dai-hoc/y-khoa"
+        },
+        {
+          "label": "UMP 2025 admissions tuition PDF",
+          "url": "https://admin.ump.edu.vn/uploads/ckeditor/files/Truong/DaoTaoDaiHoc/TuyenSinh/2025/2461_10062025_ThongBao_XetTuyenDHCQ.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long is the UMP medicine program?",
+          "answer": "UMP's School of Medicine materials describe a six-year doctor-training program."
+        },
+        {
+          "question": "What tuition does UMP publish for medicine in the 2025 admissions material?",
+          "answer": "UMP's 2025 undergraduate admissions PDF lists medicine at 82,200,000 VND per academic year."
+        },
+        {
+          "question": "Why is UMP considered strong on clinical exposure?",
+          "answer": "The official School of Medicine page lists the university hospital plus a long network of major affiliated hospitals used for clinical training."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "UMP's reviewed public materials are strongest on medicine-program structure, tuition, and hospital depth. Applicants should use the university's admissions pages for current intake mechanics and confirm exact language expectations directly.",
+        "licensingPathway": [
+          "The public materials show a domestic doctor-training pathway with a very large clinical ecosystem.",
+          "Students planning India return should separately verify current NMC and language-related suitability."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "UMP official website",
+            "url": "https://ump.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "UMP School of Medicine training page",
+            "url": "https://med.ump.edu.vn/dao-tao/dai-hoc/y-khoa",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "UMP School of Medicine profile",
+            "url": "https://med.ump.edu.vn/gioi-thieu/lich-su-phat-trien",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "UMP 2025 undergraduate admissions tuition PDF",
+            "url": "https://admin.ump.edu.vn/uploads/ckeditor/files/Truong/DaoTaoDaiHoc/TuyenSinh/2025/2461_10062025_ThongBao_XetTuyenDHCQ.pdf",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official School of Medicine and admissions documents. Hospital-network detail is much stronger than the old homepage-only source."
+      },
+      "programs": [
+        {
+          "slug": "ump-ho-chi-minh-city-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 82200000,
+          "officialTotalTuitionAmount": 493200000,
+          "annualTuitionUsd": 3225,
+          "totalTuitionUsd": 19350,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://med.ump.edu.vn/dao-tao/dai-hoc/y-khoa",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine training pathway",
+              "language": "Vietnamese",
+              "details": "UMP's School of Medicine page presents the doctor-training curriculum as a six-year undergraduate pathway inside the domestic medical-education framework."
+            },
+            {
+              "phase": "Hospital-based clinical training",
+              "language": "Vietnamese",
+              "details": "The School of Medicine profile highlights the university hospital and a large affiliated-hospital network used for clinical practice."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Applicants should verify the practical implications of a Vietnam-based public medical track before treating it as a straightforward English-medium abroad-MBBS route."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "UMP's 2025 undergraduate admissions PDF lists medicine at 82,200,000 VND per academic year. USD estimates here are approximate conversions for comparison only.",
+          "sourceUrls": [
+            "https://med.ump.edu.vn/dao-tao/dai-hoc/y-khoa",
+            "https://med.ump.edu.vn/gioi-thieu/lich-su-phat-trien",
+            "https://admin.ump.edu.vn/uploads/ckeditor/files/Truong/DaoTaoDaiHoc/TuyenSinh/2025/2461_10062025_ThongBao_XetTuyenDHCQ.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hue-university-medicine-pharmacy",
+      "name": "Hue University of Medicine and Pharmacy",
+      "city": "Hue",
+      "type": "Public",
+      "establishedYear": 1957,
+      "summary": "A long-established public medical university in central Vietnam with a six-year General Medicine curriculum, a linked university hospital environment, and published 2025-2026 tuition notices for the undergraduate medicine track.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://huemed-univ.edu.vn/",
+      "campusLifestyle": "Hue UMP's official material projects a more traditional academic environment than the big-city intensity of Hanoi or Ho Chi Minh City. The fit is best for students who value a historic university culture and a calmer city context rather than a fast commercial metro.",
+      "cityProfile": "Hue offers a slower and more academic city environment than Vietnam's two biggest metros. For families, the city appeal is lower day-to-day intensity and a classic university setting, not a highly internationalized urban lifestyle.",
+      "clinicalExposure": "The official medicine-program page confirms a six-year General Medicine curriculum, and other official Hue UMP pages show the university hospital as an active clinical base. That makes the school more grounded in an integrated university-and-hospital model than in a loosely sourced recruitment pitch.",
+      "hostelOverview": "The reviewed Hue UMP pages in this refresh pass did not surface one simple public hostel page with room pricing and booking instructions. Students should verify current housing and whether any university-managed hostel option is active before making assumptions.",
+      "indianFoodSupport": "The official Hue UMP sources reviewed for this update do not advertise India-specific food support. Families should not assume dedicated Indian dining services from the university itself.",
+      "safetyOverview": "The official materials reviewed here focus on program structure, hospital activity, and tuition notices rather than on a dedicated safety page. The main confidence signal is the school's long institutional history and public-university framework.",
+      "studentSupport": "Hue UMP's public information in this refresh pass is more academic than recruitment-driven. It clearly surfaces training structure and formal notices, but applicants needing detailed international transition support should verify those services directly rather than inferring them.",
+      "whyChoose": [
+        "The official program page shows a six-year General Medicine curriculum approved in 2025 rather than a vague or outdated course description.",
+        "The university has an established public medical-school identity and a linked teaching-hospital context in central Vietnam.",
+        "Official 2025-2026 fee notices exist, which makes this page materially stronger than the old homepage-only sourcing."
+      ],
+      "thingsToConsider": [
+        "The reviewed public materials do not position Hue UMP as a clear English-medium international MBBS pathway.",
+        "Housing and international-student lifestyle information remain less transparent than academic and tuition notices.",
+        "Students considering India return should verify current language, licensing, and internship implications before assuming suitability."
+      ],
+      "bestFitFor": [
+        "Applicants who want a public medical university in central Vietnam rather than the largest metros.",
+        "Families who value a calmer city profile and established domestic academic identity.",
+        "Students who are comfortable verifying language and adaptation details carefully."
+      ],
+      "teachingHospitals": [
+        "Hue University of Medicine and Pharmacy Hospital"
+      ],
+      "recognitionBadges": [
+        "Public medical university",
+        "General Medicine curriculum updated in 2025",
+        "University-hospital clinical base"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Hue UMP General Medicine page",
+          "url": "https://huemed-univ.edu.vn/dao-tao/dai-hoc/y-khoa-1"
+        },
+        {
+          "label": "Hue UMP 2025-2026 fee regulation notice",
+          "url": "https://huemed-univ.edu.vn/thong-bao/truong-dh-y-duoc/quyet-dinh-ban-hanh-quy-dinh-muc-thu-hoc-phi-dao-tao-dai-hoc-nam-hoc-2025-2026-949"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long is Hue UMP's General Medicine program?",
+          "answer": "Hue UMP's official General Medicine page lists the training duration as six years."
+        },
+        {
+          "question": "What degree does Hue UMP's medicine page list for graduates?",
+          "answer": "The official page lists the graduation outcome as Bác sĩ Y khoa, which corresponds to the General Medicine doctor-training pathway."
+        },
+        {
+          "question": "What tuition signal is publicly available for 2025-2026?",
+          "answer": "Hue UMP publishes a 2025-2026 undergraduate tuition regulation notice, and the 2025 enrollment notice lists a provisional first-semester payment of 30,000,000 VND for medicine-related majors including Y khoa."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "Hue UMP's public materials are strongest on official notices and program structure rather than on international-marketing simplification. Applicants should use the admissions microsite for current enrollment mechanics.",
+        "licensingPathway": [
+          "This is a domestic General Medicine training route in Vietnam's public-university system.",
+          "Students planning India return should separately assess language and regulatory fit."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Hue UMP official website",
+            "url": "https://huemed-univ.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Hue UMP General Medicine page",
+            "url": "https://huemed-univ.edu.vn/dao-tao/dai-hoc/y-khoa-1",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Hue UMP 2025-2026 tuition regulation notice",
+            "url": "https://huemed-univ.edu.vn/thong-bao/truong-dh-y-duoc/quyet-dinh-ban-hanh-quy-dinh-muc-thu-hoc-phi-dao-tao-dai-hoc-nam-hoc-2025-2026-949",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Hue UMP 2025 enrollment payment notice PDF",
+            "url": "https://tuyensinh.huemed-univ.edu.vn/2025/nhaphoc/TB-nhap-hoc-2025.pdf",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from current official curriculum and fee notices. Public language details remain less explicit than duration and degree structure."
+      },
+      "programs": [
+        {
+          "slug": "hue-university-medicine-pharmacy-mbbs",
+          "courseSlug": "mbbs",
+          "title": "General Medicine / Doctor of Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 60000000,
+          "officialTotalTuitionAmount": 360000000,
+          "annualTuitionUsd": 2350,
+          "totalTuitionUsd": 14100,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://huemed-univ.edu.vn/dao-tao/dai-hoc/y-khoa-1",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "General Medicine curriculum",
+              "language": "Vietnamese",
+              "details": "Hue UMP's official General Medicine page describes a six-year regular undergraduate medical curriculum approved in 2025."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Applicants should verify language suitability and downstream licensing fit rather than assuming a simple English-medium abroad-MBBS route."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Hue UMP publishes a 2025-2026 tuition regulation notice. A 2025 enrollment PDF lists a provisional first-semester payment of 30,000,000 VND for Y khoa, so the annual comparison figure here uses an estimated two-semester academic year total of 60,000,000 VND.",
+          "sourceUrls": [
+            "https://huemed-univ.edu.vn/dao-tao/dai-hoc/y-khoa-1",
+            "https://huemed-univ.edu.vn/thong-bao/truong-dh-y-duoc/quyet-dinh-ban-hanh-quy-dinh-muc-thu-hoc-phi-dao-tao-dai-hoc-nam-hoc-2025-2026-949",
+            "https://tuyensinh.huemed-univ.edu.vn/2025/nhaphoc/TB-nhap-hoc-2025.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "can-tho-university-medicine-pharmacy",
+      "name": "Can Tho University of Medicine and Pharmacy",
+      "city": "Can Tho",
+      "type": "Public",
+      "establishedYear": 1979,
+      "summary": "A major public medical university in the Mekong Delta with an undergraduate Medical Doctor pathway, a university hospital, visible student-support offices, and a current official tuition notice for international students in 2025-2026.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://ctump.edu.vn",
+      "campusLifestyle": "CTUMP feels more regionally rooted than Hanoi or Ho Chi Minh City flagships. The official pages show a full medical campus structure with medicine buildings, student clubs, support offices, and a university hospital environment tied closely to the Mekong Delta healthcare context.",
+      "cityProfile": "Can Tho offers a southern regional-city environment rather than the largest metropolitan pace of Ho Chi Minh City. For students, the key city advantage is a more grounded regional setting paired with a serious medical campus and university hospital.",
+      "clinicalExposure": "CTUMP's official pages explicitly tie the Faculty of Medicine to university-hospital and clinical training functions. The contact page lists the university hospital, and the faculty history notes clinical training support from major hospital partners from the school's early years onward.",
+      "hostelOverview": "This refresh pass did not surface one clear official international-student hostel pricing page for CTUMP. Students should verify current accommodation options directly, including whether any university-arranged housing is available and how close it is to the medical buildings.",
+      "indianFoodSupport": "The reviewed CTUMP sources do not advertise India-specific food support. This should be treated as a city-and-self-management question rather than a guaranteed university service.",
+      "safetyOverview": "The official CTUMP pages reviewed here focus more on formal administration, tuition rules, and campus offices than on marketing-style safety claims. The university's structured campus offices and student-services setup are the clearest official support signals in this refresh pass.",
+      "studentSupport": "CTUMP's official contact page publicly lists Student Affairs, Student Support and Services Center, Skills Lab Unit, the university hospital, and multiple student clubs. The English site also has an International Students Support section and current notices specifically for international-student tuition payment.",
+      "whyChoose": [
+        "CTUMP publicly lists an undergraduate Medical Doctor track and shows a more visible administrative structure for students than many weakly sourced Vietnam pages.",
+        "The university publishes a current 2025-2026 international-student tuition notice with semester and annual payment figures.",
+        "Official pages show a university hospital, skills lab, student-support offices, and a full medicine-faculty structure inside the Mekong Delta regional hub."
+      ],
+      "thingsToConsider": [
+        "CTUMP's official materials show international medical activity and current Indian students, but they do not cleanly spell out one simple all-English curriculum claim for the full program.",
+        "Applicants should verify the actual classroom-and-clinical language mix before assuming an English-medium path.",
+        "Housing detail is still much weaker on public pages than tuition and faculty structure."
+      ],
+      "bestFitFor": [
+        "Students who want a public medical university in southern Vietnam outside Ho Chi Minh City.",
+        "Families who prefer universities with visible current international-student fee notices and support offices.",
+        "Applicants who are comfortable clarifying the language mix directly before enrolling."
+      ],
+      "teachingHospitals": [
+        "Can Tho University of Medicine and Pharmacy Hospital",
+        "Can Tho General Hospital"
+      ],
+      "recognitionBadges": [
+        "Public medical university",
+        "International-student fee notice published for 2025-2026",
+        "University hospital and skills lab"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "CTUMP Faculty of Medicine page",
+          "url": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html"
+        },
+        {
+          "label": "CTUMP 2025-2026 international tuition announcement",
+          "url": "https://engtdhydct.ctump.edu.vn/annoucement.html"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What annual tuition does CTUMP publish for international students in 2025-2026?",
+          "answer": "CTUMP's official 2025-2026 announcement for international students lists an annual tuition option of 119,900,000 VND, with a full-program option of 719,400,000 VND for new 2025-2026 entrants."
+        },
+        {
+          "question": "Does CTUMP officially show a Medical Doctor undergraduate pathway?",
+          "answer": "Yes. The Faculty of Medicine page lists Undergraduate (Medical Doctor) among its training programs."
+        },
+        {
+          "question": "What official signs show CTUMP has real student support infrastructure?",
+          "answer": "The contact page publicly lists Student Affairs, a Student Support and Services Center, a Skills Lab Unit, and the university hospital, alongside a large set of student clubs."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "CTUMP's public English-facing materials are stronger than many Vietnam pages because they include specific international-student fee notices and support sections. Applicants should still verify the language mix and housing details directly.",
+        "licensingPathway": [
+          "CTUMP clearly supports international students financially and administratively, but applicants should confirm exactly how much of the doctor training route is delivered in English versus Vietnamese.",
+          "Students planning India return should separately verify current NMC and language-related suitability."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "CTUMP official website",
+            "url": "https://ctump.edu.vn",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "CTUMP Faculty of Medicine page",
+            "url": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "CTUMP contact and location page",
+            "url": "https://engtdhydct.ctump.edu.vn/contact-location.html",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "CTUMP 2025-2026 international tuition announcement",
+            "url": "https://engtdhydct.ctump.edu.vn/annoucement.html",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "CTUMP international medical education update",
+            "url": "https://engtdhydct.ctump.edu.vn/an-initial-development-in-international-medical-education-department-of-orthopaedic-surgery-successfully-introduces-english-language-undergraduate-tex.html",
+            "kind": "recognition",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from CTUMP official English-facing pages. Key nuance: international-student activity is real, but applicants still need direct confirmation of the exact teaching-language mix for General Medicine."
+      },
+      "programs": [
+        {
+          "slug": "can-tho-university-medicine-pharmacy-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Medical Doctor / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 119900000,
+          "officialTotalTuitionAmount": 719400000,
+          "annualTuitionUsd": 4700,
+          "totalTuitionUsd": 28200,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html",
+          "medium": "English + Local Support",
+          "teachingPhases": [
+            {
+              "phase": "Undergraduate Medical Doctor track",
+              "language": "English + Local Support",
+              "details": "CTUMP officially lists an undergraduate Medical Doctor pathway and publishes dedicated international-student tuition notices. It also shows international undergraduate medical activity, including English-language resources for Indian students, but applicants should still confirm the exact teaching-language mix."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Before treating CTUMP as an English-medium MBBS option, applicants should confirm the exact language mix during classroom and clinical years."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "CTUMP's official 2025-2026 international-student announcement lists 39,966,666.7 VND per semester, 119,900,000 VND per academic year, and 719,400,000 VND for the full program for new 2025-2026 entrants. USD estimates here are approximate conversions for comparison only.",
+          "sourceUrls": [
+            "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html",
+            "https://engtdhydct.ctump.edu.vn/contact-location.html",
+            "https://engtdhydct.ctump.edu.vn/annoucement.html",
+            "https://engtdhydct.ctump.edu.vn/an-initial-development-in-international-medical-education-department-of-orthopaedic-surgery-successfully-introduces-english-language-undergraduate-tex.html"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vinuniversity-college-health-sciences",
+      "name": "VinUniversity College of Health Sciences",
+      "city": "Hanoi",
+      "type": "Private",
+      "establishedYear": 2019,
+      "summary": "A private Hanoi university with a six-year English-language Doctor of Medicine program, a clearly documented curriculum framework, Vinmec-linked and national-hospital clinical placements, and a much higher fee structure than Vietnam's public medical schools.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://vinuni.edu.vn/",
+      "campusLifestyle": "VinUniversity positions itself very differently from Vietnam's traditional public medical schools. The official pages show a premium residential-university model with modern facilities, a structured student-services environment, and a more internationally branded campus experience.",
+      "cityProfile": "VinUniversity is based in Hanoi but is best evaluated as a self-contained modern private-university environment within the city rather than as a classic dense urban public-campus model. The practical question for families is less 'Is Hanoi good?' and more 'Is VinUni's premium model worth the price difference?'",
+      "clinicalExposure": "VinUni's official MD FAQs say students will attend clinical placements at Vinmec hospitals and other top hospitals in Vietnam, including Military Hospital 108 and the Children's Hospital in Hanoi. The program also emphasizes simulation-based learning before and during clinical development.",
+      "hostelOverview": "VinUni's official financial policy is unusually clear on housing. It lists on-campus dormitory pricing at 3,200,000 VND per month for 4-8 students per room and 4,000,000 VND per month for 2 students per room, with off-campus dormitory pricing at 4,500,000 VND per month.",
+      "indianFoodSupport": "The reviewed official VinUni pages do not market India-specific dining services. The stronger official signal is the structured residential environment rather than a country-specific food promise.",
+      "safetyOverview": "VinUni's official FAQ and financial policy reflect a structured campus environment with supervised clinical training, simulation before real-patient responsibility, and formal residential rules. It communicates student well-being through systems and supervision rather than through generic safety slogans.",
+      "studentSupport": "VinUni's official pages show a much more formalized support structure than most Vietnam pages, including academic advising, feedback systems, simulation resources, scholarship and financial-aid frameworks, health-insurance handling, and transparent dormitory and payment policies.",
+      "whyChoose": [
+        "The official curriculum framework clearly states a six-year Doctor of Medicine program delivered in English with 228 credits.",
+        "VinUni publicly explains clinical placements at Vinmec hospitals and other top hospitals in Vietnam, along with a strong simulation-based training environment.",
+        "Compared with many Vietnam pages, VinUni's tuition, dormitory, grant, and financial-aid policies are unusually transparent on official sources."
+      ],
+      "thingsToConsider": [
+        "VinUni is dramatically more expensive than Vietnam's public medical universities, even after taking the 35% Educational Development Grant into account.",
+        "The MD FAQ explicitly says some components of the curriculum, especially patient-facing clinical interaction, will be delivered in Vietnamese.",
+        "Students should separately evaluate whether VinUni's premium private model fits their budget and their long-term licensing plan."
+      ],
+      "bestFitFor": [
+        "Students who want a premium private medical-school environment with strong official documentation and English-language academic structure.",
+        "Families comfortable with a far higher budget than Vietnam's public universities.",
+        "Applicants who value modern facilities, transparent policy pages, and structured residential options."
+      ],
+      "teachingHospitals": [
+        "Vinmec hospitals",
+        "Military Hospital 108",
+        "Children's Hospital in Hanoi"
+      ],
+      "recognitionBadges": [
+        "English-language Doctor of Medicine program",
+        "Official curriculum framework published",
+        "Transparent dormitory and tuition policy"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "VinUni MD curriculum framework PDF",
+          "url": "https://policy.vinuni.edu.vn/wp-content/uploads/2025/08/Cohort-2020_-CurriculumFramework_AY25.26_Final.pdf"
+        },
+        {
+          "label": "VinUni tuition rates and fees",
+          "url": "https://experience.vinuni.edu.vn/new-students/tuition-rates-and-fees/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What language does VinUni officially list for the MD program?",
+          "answer": "VinUni's MD curriculum framework lists the language of delivery as English, but the official FAQ says some clinical components and patient-facing interaction will be in Vietnamese."
+        },
+        {
+          "question": "What listed tuition does VinUni publish for Doctor of Medicine?",
+          "answer": "VinUni's tuition page lists Doctor of Medicine at 815,850,000 VND per academic year, while the university's policy also states that students enrolled until 2030 receive a 35% Educational Development Grant against listed tuition."
+        },
+        {
+          "question": "Does VinUni publish dormitory pricing?",
+          "answer": "Yes. VinUni's official financial policy lists on-campus dormitory pricing at 3,200,000 VND per month for 4-8 students per room and 4,000,000 VND per month for 2 students per room."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "VinUni's official MD pages are strong on curriculum, academic structure, and financial policy transparency. Applicants should still study the language and licensing implications carefully before assuming the English label removes all clinical-language barriers.",
+        "licensingPathway": [
+          "VinUni explicitly says that graduating from the MD program does not automatically qualify a student to practice everywhere and that each graduate must meet country-specific licensing requirements.",
+          "For India-return planning, applicants should verify the latest NMC requirements directly rather than relying on marketing assumptions."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "VinUni official website",
+            "url": "https://vinuni.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "VinUni tuition rates and fees",
+            "url": "https://experience.vinuni.edu.vn/new-students/tuition-rates-and-fees/",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "VinUni financial regulations and tariff policy",
+            "url": "https://policy.vinuni.edu.vn/all-policies/financial-regulations-and-tariff-for-student-2/",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "VinUni MD curriculum framework PDF",
+            "url": "https://policy.vinuni.edu.vn/wp-content/uploads/2025/08/Cohort-2020_-CurriculumFramework_AY25.26_Final.pdf",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "VinUni MD FAQ",
+            "url": "https://chs.vinuni.edu.vn/medical-doctor-program/faqs-doctor-of-medicine/",
+            "kind": "recognition",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from current official tuition, policy, curriculum, and MD FAQ pages. Important correction: the MD is English-language academically, but the official FAQ says some clinical components will be delivered in Vietnamese."
+      },
+      "programs": [
+        {
+          "slug": "vinuniversity-college-health-sciences-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 815850000,
+          "officialTotalTuitionAmount": 4895100000,
+          "annualTuitionUsd": 20800,
+          "totalTuitionUsd": 124800,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://policy.vinuni.edu.vn/wp-content/uploads/2025/08/Cohort-2020_-CurriculumFramework_AY25.26_Final.pdf",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine academic curriculum",
+              "language": "English",
+              "details": "VinUni's official curriculum framework lists the Doctor of Medicine program as six years, full-time, and delivered in English."
+            },
+            {
+              "phase": "Clinical placements and patient interaction",
+              "language": "English",
+              "details": "VinUni's official MD FAQ says some components of the curriculum, especially patient and clinical-faculty interaction during placements, will be delivered in Vietnamese and students are expected to improve Vietnamese before clinical practice."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "VinUni's official MD FAQ explicitly says that graduation does not automatically qualify a student to practice medicine anywhere in the world and that country-specific licensing rules still apply."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "VinUni's tuition page lists Doctor of Medicine at 815,850,000 VND per academic year. The university's financial policy states that all students successfully enrolled until 2030 receive a 35% Educational Development Grant on listed tuition, so the comparison USD figure here reflects the approximate post-grant payable amount rather than the full listed sticker price.",
+          "sourceUrls": [
+            "https://experience.vinuni.edu.vn/new-students/tuition-rates-and-fees/",
+            "https://policy.vinuni.edu.vn/all-policies/financial-regulations-and-tariff-for-student-2/",
+            "https://policy.vinuni.edu.vn/wp-content/uploads/2025/08/Cohort-2020_-CurriculumFramework_AY25.26_Final.pdf",
+            "https://chs.vinuni.edu.vn/medical-doctor-program/faqs-doctor-of-medicine/"
+          ]
+        }
+      ]
+    }
+  ]
+}

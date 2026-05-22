@@ -1,0 +1,212 @@
+{
+  "batchId": "georgia-batch-002",
+  "countrySlug": "georgia",
+  "notes": "Official-source research draft for East European University. Keep unpublished until reviewed through the research queue workflow.",
+  "universities": [
+    {
+      "slug": "east-european-university-eeu",
+      "name": "East European University",
+      "city": "Tbilisi",
+      "type": "Private",
+      "establishedYear": 2012,
+      "summary": "A private Tbilisi university with an English-medium six-year MD, a visible clinical-skills center, published international-student accommodation support, and a student-services stack that is easier to verify on official pages than on many Georgia competitors.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://eeu.edu.ge/",
+      "campusLifestyle": "EEU's official materials present a modern two-campus setup in Tbilisi rather than a single isolated medical campus. The university repeatedly highlights contemporary classrooms, conference halls, library and digital resources, sports and recreational spaces, and a student-oriented environment for local and international students.",
+      "cityProfile": "The official EEU pages frame Tbilisi as Georgia's capital and biggest city, with a large international-student environment and everyday access to the university's two campuses. For families evaluating Georgia, EEU's own material emphasizes the practical city advantage more than destination-style marketing.",
+      "clinicalExposure": "EEU's strongest official medicine signal is its training infrastructure. The faculty pages and orientation materials point to the Open Heart-University Hospital, affiliated clinics, other clinical training sites, and a Clinical and Practical Skills Development Center with simulation laboratories, OSCE stations, anatomy, microbiology, histology, and biochemistry facilities.",
+      "hostelOverview": "EEU publicly says it supports students in finding accommodation in Tbilisi and offers accommodation near the university campus. Its visa and accommodation page lists a shared-room hostel option at USD 2,500 per year including three meals and utility bills, alongside arrival transport support from Tbilisi International Airport.",
+      "indianFoodSupport": "The reviewed official EEU sources do not promise an Indian mess or India-specific food support. The accommodation and student-services pages talk more about hostel, transport, insurance, and adaptation support than about dedicated cuisine arrangements.",
+      "safetyOverview": "The reviewed official pages do not publish a standalone campus safety note, but they do show a structured support environment with legal help for residence permits, adaptation support, health insurance, psychological support, and a campus infrastructure section that mentions fire-safety systems and disability-access adaptations.",
+      "studentSupport": "Student support is one of EEU's clearer official strengths. The university advertises adaptation support, orientation days, legal help for residence permits, individual payment schedules, psychological support, health insurance, free Georgian language courses, and multiple student clubs and student-governance channels.",
+      "whyChoose": [
+        "EEU's official medicine materials describe a six-year, 360-ECTS English-medium MD with clinical-skills training, OSCE-style assessment support, and international-student admissions pathways.",
+        "The university publicly publishes accommodation support near campus, including a hostel-style shared-room option with meals and utilities included.",
+        "Official student-services pages make support unusually visible, including adaptation help, legal residence-permit support, psychological support, and free Georgian language courses."
+      ],
+      "thingsToConsider": [
+        "EEU's own pages show different tuition figures across medicine-related sections, so applicants should request the latest official fee letter before paying.",
+        "The university's public pages highlight support and infrastructure more clearly than day-to-day long-form clinical placement detail, so families should ask for the latest hospital-rotation breakdown.",
+        "Accommodation is presented as supported hostel or nearby options rather than one clearly standardized medical dorm for every student."
+      ],
+      "bestFitFor": [
+        "Students who want an English-medium MD in Tbilisi with visible official support services.",
+        "Applicants who value simulation labs, OSCE-style practical training, and a structured clinical-skills center.",
+        "Families who prefer a university that publicly explains accommodation, visa support, and student-services processes."
+      ],
+      "teachingHospitals": [
+        "Open Heart-University Hospital"
+      ],
+      "recognitionBadges": [
+        "Authorized by the Ministry of Education and Science of Georgia",
+        "Faculty cites WHO and AMEE links",
+        "English-medium MD for international students"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Faculty of Healthcare Sciences page",
+          "url": "https://eeu.edu.ge/learning-in-eeu/faculties/faculty-of-healthcare-scineces/?lang=en"
+        },
+        {
+          "label": "Medical Doctor Educational Programme (ENG)",
+          "url": "https://eeu.edu.ge/portfolio/medical-doctor-educational-programme-eng/?lang=en"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does East European University teach medicine in English?",
+          "answer": "Yes. EEU's official admission and program pages describe an English-language one-cycle Medical Doctor program."
+        },
+        {
+          "question": "What tuition does EEU officially publish for medicine?",
+          "answer": "EEU's official international tuition page lists the English-medium MD at USD 5,500 per year, but medicine-related pages on the site are not perfectly consistent, so students should ask the university for the latest written fee confirmation."
+        },
+        {
+          "question": "What accommodation support does EEU officially mention?",
+          "answer": "EEU's visa and accommodation page says the university supports students in finding accommodation near campus and lists a shared-room hostel option at USD 2,500 per year including three meals and utility bills."
+        },
+        {
+          "question": "What admission requirement does EEU specifically mention for Indian MD applicants?",
+          "answer": "EEU's admission page says NEET test results are required for MD students with Indian citizenship."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "EEU's international admission page says applicants should complete the university application form and submit the required documents to the university by post or email.",
+        "eligibility": {
+          "intro": "For the English-medium MD route, the official pages describe the following entry expectations:",
+          "items": [
+            "Full general education or equivalent school completion for entry into the one-cycle MD track.",
+            "Proof of English proficiency through an accepted certificate or the university's language assessment when needed.",
+            "NEET result for Indian-citizenship applicants to the MD program."
+          ]
+        },
+        "admissionSteps": [
+          "Complete the EEU application process and submit the required documents.",
+          "Wait for admission confirmation from the university's international office.",
+          "Use EEU's support documents for visa and later residence-permit formalities in Georgia."
+        ],
+        "documentsRequired": {
+          "educational": [
+            "Copies of all passport pages or citizenship document.",
+            "High school certificate with grades for undergraduate medicine applicants.",
+            "English-language certificate if applicable.",
+            "NEET result for Indian MD applicants."
+          ],
+          "visa": [
+            "Visa application form and passport.",
+            "Proof of accommodation and sufficient financial means.",
+            "Travel and health insurance.",
+            "University-issued acceptance and supporting status documents."
+          ]
+        },
+        "deadlinesNote": "The official medicine page says enrollment for eligible entrants can happen twice a year within timelines set by the Georgian authorities and university procedures.",
+        "licensingPathway": [
+          "EEU's public materials focus on delivering a one-cycle MD aligned to contemporary medical-education standards.",
+          "Students planning India return should separately verify current NMC, internship, and licensing requirements at decision time."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Medical Doctor Educational Programme (ENG)",
+            "url": "https://eeu.edu.ge/portfolio/medical-doctor-educational-programme-eng/?lang=en",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Tuition Fees for Overseas Students",
+            "url": "https://eeu.edu.ge/learning-in-eeu/tuition-fees-2/?lang=en",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "International Admission page",
+            "url": "https://eeu.edu.ge/portfolio/admission/?lang=en",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Visa and Accommodation",
+            "url": "https://eeu.edu.ge/portfolio/visa-and-accommodation/?lang=en",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Services",
+            "url": "https://eeu.edu.ge/portfolio/services/?lang=en",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Faculty of Healthcare Sciences",
+            "url": "https://eeu.edu.ge/learning-in-eeu/faculties/faculty-of-healthcare-scineces/?lang=en",
+            "kind": "recognition",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Clinical and Practical Skills Development Center",
+            "url": "https://eeu.edu.ge/portfolio/clinical-and-practical-skills-development-center/?lang=en",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Orientation Days for First-Semester Students of the MD Program",
+            "url": "https://eeu.edu.ge/portfolio/orientation-days/?lang=en",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Drafted from EEU official English pages and current publicly accessible materials only."
+      },
+      "programs": [
+        {
+          "slug": "east-european-university-eeu-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 5500,
+          "officialTotalTuitionAmount": 33000,
+          "annualTuitionUsd": 5500,
+          "totalTuitionUsd": 33000,
+          "livingUsd": 2500,
+          "officialProgramUrl": "https://eeu.edu.ge/portfolio/medical-doctor-educational-programme-eng/?lang=en",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Integrated one-cycle MD",
+              "language": "English",
+              "details": "The official medicine page describes a one-cycle Medical Doctor educational programme lasting 12 semesters and measured at 360 ECTS."
+            },
+            {
+              "phase": "Clinical-skills and hospital-linked training",
+              "language": "English",
+              "details": "Official faculty and orientation materials point to the Clinical and Practical Skills Development Center, Open Heart-University Hospital, affiliated clinics, and other clinical training sites."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "The public pages emphasize contemporary medical-education standards and clinical-skills development rather than country-specific license coaching promises."
+          ],
+          "intakeMonths": [
+            "Spring",
+            "Fall"
+          ],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "EEU's official overseas tuition page lists medicine at USD 5,500 per year and says the fee includes health insurance. The accommodation page separately lists a hostel-style shared room at USD 2,500 per year including three meals and utilities. Medicine-related site sections are not perfectly consistent on tuition, so applicants should ask for the latest fee letter before payment.",
+          "sourceUrls": [
+            "https://eeu.edu.ge/portfolio/medical-doctor-educational-programme-eng/?lang=en",
+            "https://eeu.edu.ge/learning-in-eeu/tuition-fees-2/?lang=en",
+            "https://eeu.edu.ge/portfolio/admission/?lang=en",
+            "https://eeu.edu.ge/portfolio/visa-and-accommodation/?lang=en"
+          ]
+        }
+      ]
+    }
+  ]
+}
