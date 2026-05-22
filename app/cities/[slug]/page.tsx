@@ -40,7 +40,11 @@ import {
   getStructuredDataGraph,
 } from "@/lib/structured-data";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
-import { formatCurrencyUsd, hasPublishedUsdAmount } from "@/lib/utils";
+import {
+  formatCurrencyUsd,
+  formatProgramMedium,
+  hasPublishedUsdAmount,
+} from "@/lib/utils";
 import { isValidRecognitionBadge } from "@/lib/data/recognition-bodies";
 
 export async function generateStaticParams() {
@@ -170,7 +174,13 @@ export default async function CityPage({
         .filter(isValidRecognitionBadge),
     ),
   ];
-  const allMediums = [...new Set(programs.map((p) => p.offering.medium))];
+  const allMediums = [
+    ...new Set(
+      programs.map((p) =>
+        formatProgramMedium(p.offering.medium, p.country.slug),
+      ),
+    ),
+  ];
   const allIntakeMonths = [...new Set(programs.flatMap((p) => p.offering.intakeMonths))].sort();
 
   const allCities = await getUniqueCities();
@@ -437,7 +447,7 @@ export default async function CityPage({
                           )}
                       </td>
                       <td className="px-5 py-4 text-xs text-muted-foreground">
-                        {program.offering.medium}
+                        {formatProgramMedium(program.offering.medium, program.country.slug)}
                       </td>
                       <td className="px-5 py-4">
                         {badges.length > 0 ? (

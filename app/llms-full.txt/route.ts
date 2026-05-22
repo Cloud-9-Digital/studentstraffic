@@ -17,7 +17,7 @@ import {
   getCourseHref,
   getUniversityHref,
 } from "@/lib/routes";
-import { hasPublishedUsdAmount } from "@/lib/utils";
+import { formatProgramMedium, hasPublishedUsdAmount } from "@/lib/utils";
 
 const getPublishedBlogIndex = unstable_cache(
   async () => {
@@ -133,7 +133,10 @@ export async function GET(request: Request) {
           ? `, $${offering.totalTuitionUsd.toLocaleString("en-US")} total`
           : "";
         programLines.push(
-          `  - ${courseName}: ${fee}${totalFee}, ${offering.durationYears} years, ${offering.medium}`,
+          `  - ${courseName}: ${fee}${totalFee}, ${offering.durationYears} years, ${formatProgramMedium(
+            offering.medium,
+            university.countrySlug,
+          )}`,
         );
       }
       lines.push(`- Programs:`);

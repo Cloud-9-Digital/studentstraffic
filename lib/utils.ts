@@ -101,6 +101,21 @@ export function formatProgramAnnualFee(
   return fallback;
 }
 
+export function hasRenderableProgramLivingFee(
+  offering: Pick<ProgramOffering, "livingUsd">
+) {
+  return hasPublishedUsdAmount(offering.livingUsd);
+}
+
+export function formatProgramLivingFee(
+  offering: Pick<ProgramOffering, "livingUsd">,
+  fallback = "Check with university",
+) {
+  return hasPublishedUsdAmount(offering.livingUsd)
+    ? formatCurrencyUsd(offering.livingUsd)
+    : fallback;
+}
+
 export function getSortableUsdValue(value: number | null | undefined) {
   return hasPublishedUsdAmount(value) ? value : Number.POSITIVE_INFINITY;
 }
@@ -119,6 +134,33 @@ export function formatProgramDuration(durationYears: number) {
 
   const totalMonths = Math.round(durationYears * 12);
   return `${totalMonths} months`;
+}
+
+const LOCAL_LANGUAGE_BY_COUNTRY: Record<string, string> = {
+  vietnam: "Vietnamese",
+  russia: "Russian",
+  georgia: "Georgian",
+  kyrgyzstan: "Kyrgyz",
+  uzbekistan: "Uzbek",
+};
+
+export function formatProgramMedium(
+  medium: string,
+  countrySlug?: string | null,
+) {
+  if (medium === "English + Vietnamese Support") {
+    return "English, Vietnamese";
+  }
+
+  if (medium === "English + Local Support") {
+    const localLanguage = countrySlug
+      ? LOCAL_LANGUAGE_BY_COUNTRY[countrySlug]
+      : null;
+
+    return localLanguage ? `English, ${localLanguage}` : "English + Local Support";
+  }
+
+  return medium;
 }
 
 export function formatNumber(value: number) {

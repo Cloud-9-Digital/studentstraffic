@@ -124,19 +124,21 @@
           "totalTuitionUsd": 11410,
           "livingUsd": 0,
           "officialProgramUrl": "https://pqldt.pnt.edu.vn/vi/tuyen-sinh-dai-hoc",
-          "medium": "Vietnamese",
+          "medium": "English + Local Support",
           "teachingPhases": [
             {
               "phase": "Undergraduate Y khoa pathway",
-              "language": "Vietnamese",
-              "details": "PNT's official admissions and fee materials support a domestic undergraduate Y khoa route rather than a separate international English-track medicine product."
+              "language": "English + Local Support",
+              "details": "PNT's official admissions and fee materials support a full undergraduate Y khoa route, and Students Traffic's current university tie-up confirms an English-medium medicine pathway for international students with Vietnamese language support in the local ecosystem."
             }
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [
             "Students should evaluate how a Vietnamese public-medicine pathway fits their intended licensing route after graduation."
           ],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -254,9 +256,9 @@
           "officialFeeCurrency": "VND",
           "officialAnnualTuitionAmount": 85994000,
           "officialTotalTuitionAmount": 525129000,
-          "annualTuitionUsd": 3375,
-          "totalTuitionUsd": 20600,
-          "livingUsd": 0,
+          "annualTuitionUsd": 4500,
+          "totalTuitionUsd": 27000,
+          "livingUsd": 2500,
           "officialProgramUrl": "https://y.donga.edu.vn/en/news-events/detail/medical-program-admission-information-for-regular-system-2025-37508",
           "medium": "English + Local Support",
           "teachingPhases": [
@@ -271,15 +273,66 @@
               "details": "The university's fee notice says that for medicine the per-credit tuition increases by 10% from year four onward in the specialized phase, which signals a different cost stage later in training."
             }
           ],
-          "yearlyCostBreakdown": [],
+          "yearlyCostBreakdown": [
+            {
+              "yearLabel": "1st Year",
+              "tuitionUsd": 4500,
+              "hostelUsd": 2500,
+              "livingUsd": 0,
+              "totalUsd": 7000,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "2nd Year",
+              "tuitionUsd": 4500,
+              "hostelUsd": 2500,
+              "livingUsd": 0,
+              "totalUsd": 7000,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "3rd Year",
+              "tuitionUsd": 4500,
+              "hostelUsd": 2500,
+              "livingUsd": 0,
+              "totalUsd": 7000,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "4th Year",
+              "tuitionUsd": 4500,
+              "hostelUsd": 2500,
+              "livingUsd": 0,
+              "totalUsd": 7000,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "5th Year",
+              "tuitionUsd": 4500,
+              "hostelUsd": 2500,
+              "livingUsd": 0,
+              "totalUsd": 7000,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "6th Year",
+              "tuitionUsd": 4500,
+              "hostelUsd": 2500,
+              "livingUsd": 0,
+              "totalUsd": 7000,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            }
+          ],
           "licenseExamSupport": [
             "Students should verify how Dong A's international-facing Doctor of Medicine route aligns with their target licensing path after graduation."
           ],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
-          "feeNotes": "Dong A's 2025 undergraduate fee page lists medicine at 42,997,000 VND for semester 1, based on 221 total credits across 12 semesters and a published per-credit rate. The annual figure here uses two equal semesters, while the total comparison figure models the published 10% per-credit increase that applies from year four onward in the specialized phase.",
+          "feeNotes": "Students Traffic Vietnam partner fee sheet for 2026 uses tuition-only planning at USD 2,250 per semester across 2 semesters per year, which equals USD 4,500 yearly. Estimated hostel plus food for 4-sharing is USD 2,500 per year. This simplified display intentionally excludes registration and one-time charges so students can compare tuition and hostel costs cleanly.",
           "sourceUrls": [
             "https://y.donga.edu.vn/en/news-events/detail/medical-program-admission-information-for-regular-system-2025-37508",
             "https://donga.edu.vn/tuyensinh/ts-chi-tiet/dai-hoc-dong-a-cong-bo-hoc-phi-nam-2025-bac-dai-hoc-chinh-quy-40992"
