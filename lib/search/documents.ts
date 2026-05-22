@@ -143,6 +143,9 @@ export function buildSearchDocuments({
       .map((slug) => courseBySlug.get(slug)?.shortName)
       .filter(Boolean) as string[];
     const cheapestProgram = universityPrograms[0];
+    const formattedMedium = cheapestProgram
+      ? formatProgramMedium(cheapestProgram.medium, university.countrySlug)
+      : undefined;
 
     return {
       documentType: "university",
@@ -180,7 +183,7 @@ export function buildSearchDocuments({
       annualTuitionUsd: hasPublishedUsdAmount(cheapestProgram?.annualTuitionUsd)
         ? cheapestProgram?.annualTuitionUsd
         : undefined,
-      medium: cheapestProgram?.medium,
+      medium: formattedMedium,
       intakeMonths: [
         ...new Set(universityPrograms.flatMap((program) => program.intakeMonths)),
       ],

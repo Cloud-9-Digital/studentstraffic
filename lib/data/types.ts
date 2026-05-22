@@ -155,6 +155,8 @@ export type ProgramOffering = {
     | "English"
     | "English + Local Support"
     | "English + Vietnamese Support"
+    | "English + Russian Support"
+    | "English + Kyrgyz Support"
     | "Vietnamese";
   published: boolean;
   teachingPhases: TeachingPhase[];

@@ -148,9 +148,9 @@ export function formatProgramMedium(
   medium: string,
   countrySlug?: string | null,
 ) {
-  if (medium === "English + Vietnamese Support") {
-    return "English, Vietnamese";
-  }
+  if (medium === "English + Vietnamese Support") return "English, Vietnamese";
+  if (medium === "English + Russian Support") return "English, Russian";
+  if (medium === "English + Kyrgyz Support") return "English, Kyrgyz";
 
   if (medium === "English + Local Support") {
     const localLanguage = countrySlug

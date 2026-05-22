@@ -13,6 +13,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { formatProgramMedium } from "@/lib/utils";
 import { sortCountryOptionObjects } from "@/lib/country-order";
 import type {
   FinderCountryOption,
@@ -283,7 +284,7 @@ function FilterFields({
               <option value="">Any medium</option>
               {mediums.map((medium) => (
                 <option key={medium} value={medium}>
-                  {medium}
+                  {formatProgramMedium(medium)}
                 </option>
               ))}
             </select>
