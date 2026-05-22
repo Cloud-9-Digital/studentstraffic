@@ -5,10 +5,10 @@ export const landingPages: LandingPage[] = [
     slug: "mbbs-in-russia",
     courseSlug: "mbbs",
     countrySlug: "russia",
-    title: "MBBS in Russia",
-    kicker: "Established public medical universities",
+    title: "MBBS in Russia for Indian Students",
+    kicker: "Established public medical universities · Indian-student planning",
     summary:
-      "Compare public Russian medical universities, hostel-backed campuses, and fee bands to plan a confident MBBS pathway.",
+      "MBBS in Russia remains one of the biggest search and decision categories for Indian students because it combines large public medical universities, broad fee ranges, established Indian student communities, and a long-running India-return planning pathway. This page helps you compare Russian options properly before shortlisting a university.",
     heroHighlights: [
       "Public university options",
       "Strong university legacy",
@@ -74,9 +74,9 @@ export const landingPages: LandingPage[] = [
           "No — rankings are a poor filter for MBBS decisions. What matters more is NMC compliance, English-medium delivery quality, hospital affiliation for clinical training, Indian student support infrastructure, hostel availability, city livability, and total cost over 6 years. Evaluate these factors with your specific budget and NExT preparation strategy in mind.",
       },
     ],
-    metaTitle: "MBBS in Russia 2026 | Fees, Universities, Eligibility",
+    metaTitle: "MBBS in Russia for Indian Students 2026 | Fees, Universities, Eligibility",
     metaDescription:
-      "Explore MBBS in Russia with admission-ready university data, fee bands, hostel filters, and a lead capture flow built for Indian applicants.",
+      "Explore MBBS in Russia for Indian students with admission-ready university data, fee bands, hostel context, eligibility, and India-return planning.",
     atAGlance: [
       { label: "Program", value: "MBBS (6-year MD-equivalent)" },
       { label: "Annual tuition", value: "$3,500 – $9,000" },
@@ -211,7 +211,7 @@ export const landingPages: LandingPage[] = [
     slug: "mbbs-in-vietnam",
     courseSlug: "mbbs",
     countrySlug: "vietnam",
-    title: "MBBS in Vietnam",
+    title: "MBBS in Vietnam for Indian Students",
     kicker: "Follows NMC guidelines · English-medium · Affordable fees",
     summary:
       "MBBS in Vietnam is a strong option for Indian students who want a lower-cost, English-medium, closer-to-home alternative to private MBBS in India or colder destinations like Russia. The right university can offer workable fees, growing Indian student support, and a credible India-return pathway, and our team helps you choose and secure the right option instead of leaving you to figure it out alone.",
@@ -288,7 +288,7 @@ export const landingPages: LandingPage[] = [
           "Yes — Vietnam's proximity to India (3–5 hour direct flights to major Indian cities) makes it one of the most home-accessible MBBS destinations. Return tickets during semester breaks typically cost ₹15,000–₹30,000, which is significantly cheaper than flying back from Russia, Kazakhstan, or Eastern Europe.",
       },
     ],
-    metaTitle: "MBBS in Vietnam 2026 | Universities, Fees & Admissions for Indian Students",
+    metaTitle: "MBBS in Vietnam for Indian Students 2026 | Universities, Fees & Admissions",
     metaDescription:
       "Compare MBBS in Vietnam for Indian students with updated fees, top universities, eligibility, hostel details, English-medium options, and the India-return pathway.",
     atAGlance: [
