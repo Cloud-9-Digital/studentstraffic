@@ -10,7 +10,6 @@ import {
   getCatalogSnapshot,
   getPublishedBlogPostMetadata,
 } from "@/lib/data/catalog";
-import { getAllIndiaMbbsCollegeEntries } from "@/lib/data/india-mbbs";
 import { getTamilNaduCityPages } from "@/lib/data/tamil-nadu-local";
 import { getAllComparisonPages, getBudgetGuides } from "@/lib/discovery-pages";
 import {
@@ -20,7 +19,6 @@ import {
   getComparisonHref,
   getCountriesIndexHref,
   getCountryHref,
-  getIndiaMbbsCollegeHref,
   getCoursesIndexHref,
   getCourseHref,
   getIndiaMbbsCollegesHref,
@@ -37,14 +35,13 @@ function uniqueUrls(urls: Array<string | undefined>) {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const tamilNaduCityPages = getTamilNaduCityPages();
-  const [snapshot, landingPages, comparisonPages, budgetGuides, publishedPosts, indiaCollegeEntries] =
+  const [snapshot, landingPages, comparisonPages, budgetGuides, publishedPosts] =
     await Promise.all([
       getCatalogSnapshot(),
       getAllLandingPages(),
       getAllComparisonPages(),
       getBudgetGuides(),
       getPublishedBlogPostMetadata(),
-      getAllIndiaMbbsCollegeEntries(),
     ]);
   const { countries, courses, universities, programOfferings } = snapshot;
   const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
@@ -87,7 +84,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]);
   const indiaCollegesLastModified = getLatestDate([
     catalogReviewedAt,
-    ...indiaCollegeEntries.map((college) => college.updatedAt),
   ]);
   const latestBlogModified =
     getLatestDate(
@@ -146,14 +142,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       lastModified: indiaCollegesLastModified ?? catalogLastModified,
     },
-    ...indiaCollegeEntries.map((college) => ({
-      url: absoluteUrl(getIndiaMbbsCollegeHref(college.slug)),
-      priority: 0.72,
-      changeFrequency: "weekly" as const,
-      lastModified: college.updatedAt
-        ? new Date(college.updatedAt)
-        : indiaCollegesLastModified ?? new Date(),
-    })),
     {
       url: absoluteUrl(getCountriesIndexHref()),
       priority: 0.85,
@@ -255,41 +243,89 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl("/disadvantages-of-studying-mbbs-in-russia"),
       priority: 0.86,
       changeFrequency: "weekly",
-      lastModified: governanceLastModified,
+      lastModified: catalogLastModified,
     },
     {
       url: absoluteUrl("/is-mbbs-in-russia-worth-it"),
       priority: 0.86,
       changeFrequency: "weekly",
-      lastModified: governanceLastModified,
+      lastModified: catalogLastModified,
     },
     {
       url: absoluteUrl("/is-neet-required-for-mbbs-in-russia"),
       priority: 0.86,
       changeFrequency: "weekly",
-      lastModified: governanceLastModified,
+      lastModified: catalogLastModified,
     },
     {
       url: absoluteUrl("/disadvantages-of-studying-mbbs-in-vietnam"),
       priority: 0.86,
       changeFrequency: "weekly",
-      lastModified: governanceLastModified,
+      lastModified: catalogLastModified,
     },
     {
       url: absoluteUrl("/is-mbbs-in-vietnam-good-for-indian-students"),
       priority: 0.86,
       changeFrequency: "weekly",
-      lastModified: governanceLastModified,
+      lastModified: catalogLastModified,
     },
     {
       url: absoluteUrl("/is-mbbs-in-vietnam-valid-in-india"),
       priority: 0.86,
       changeFrequency: "weekly",
-      lastModified: governanceLastModified,
+      lastModified: catalogLastModified,
     },
     {
       url: absoluteUrl("/is-neet-required-for-mbbs-in-vietnam"),
       priority: 0.86,
+      changeFrequency: "weekly",
+      lastModified: catalogLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-admission-in-russia"),
+      priority: 0.8,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-from-russia-valid-in-india"),
+      priority: 0.8,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-in-russia-with-scholarship"),
+      priority: 0.78,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-in-russia-duration"),
+      priority: 0.78,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/top-mbbs-colleges-in-russia"),
+      priority: 0.8,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-in-russia-eligibility-for-indian-students"),
+      priority: 0.78,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/lowest-mbbs-fees-in-russia"),
+      priority: 0.78,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-in-russia-fees-in-rupees"),
+      priority: 0.78,
       changeFrequency: "weekly",
       lastModified: governanceLastModified,
     },
