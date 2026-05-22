@@ -502,6 +502,17 @@ async function main() {
     asString(structuredFacts.researchNotes) ??
     asString(record.reviewNotes) ??
     "Published from internal research draft workflow.";
+  const incomingLogoUrl = asString(structuredFacts.logoUrl);
+  const incomingCoverImageUrl = asString(structuredFacts.coverImageUrl);
+  const existingRows = await db
+    .select({
+      logoUrl: universities.logoUrl,
+      coverImageUrl: universities.coverImageUrl,
+    })
+    .from(universities)
+    .where(eq(universities.slug, slug))
+    .limit(1);
+  const existingUniversity = existingRows[0];
 
   const [savedUniversity] = await db
     .insert(universities)
@@ -516,8 +527,9 @@ async function main() {
       featured: asBoolean(structuredFacts.featured),
       published: true,
       officialWebsite: validation.officialWebsite!,
-      logoUrl: asString(structuredFacts.logoUrl) ?? null,
-      coverImageUrl: asString(structuredFacts.coverImageUrl) ?? null,
+      logoUrl: incomingLogoUrl ?? existingUniversity?.logoUrl ?? null,
+      coverImageUrl:
+        incomingCoverImageUrl ?? existingUniversity?.coverImageUrl ?? null,
       campusLifestyle: asString(draftContent.campusLifestyle)!,
       cityProfile: asString(draftContent.cityProfile)!,
       clinicalExposure: asString(draftContent.clinicalExposure)!,
@@ -550,8 +562,9 @@ async function main() {
         featured: asBoolean(structuredFacts.featured),
         published: true,
         officialWebsite: validation.officialWebsite!,
-        logoUrl: asString(structuredFacts.logoUrl) ?? null,
-        coverImageUrl: asString(structuredFacts.coverImageUrl) ?? null,
+        logoUrl: incomingLogoUrl ?? existingUniversity?.logoUrl ?? null,
+        coverImageUrl:
+          incomingCoverImageUrl ?? existingUniversity?.coverImageUrl ?? null,
         campusLifestyle: asString(draftContent.campusLifestyle)!,
         cityProfile: asString(draftContent.cityProfile)!,
         clinicalExposure: asString(draftContent.clinicalExposure)!,

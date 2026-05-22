@@ -7,6 +7,7 @@ import { getUniversityHref } from "@/lib/routes";
 import { getUniversityInitials } from "@/lib/university-media";
 import {
   formatProgramAnnualFee,
+  formatProgramMedium,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
 
@@ -71,7 +72,9 @@ function buildRows(programs: FinderProgram[]): Row[] {
     },
     {
       label: "Teaching medium",
-      values: programs.map((p) => p.offering.medium),
+      values: programs.map((p) =>
+        formatProgramMedium(p.offering.medium, p.country.slug),
+      ),
     },
     {
       label: "Recognition",

@@ -7,9 +7,12 @@ import {
 
 import type { FinderProgram, University } from "@/lib/data/types";
 import {
-  cn,
+  formatProgramAnnualFee,
   formatUsdAmountOrTbd,
+  formatProgramLivingFee,
+  formatProgramMedium,
   formatProgramDuration,
+  hasRenderableProgramLivingFee,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
 
@@ -28,6 +31,9 @@ export function UniversityAcademicsSection({
       hasPublishedUsdAmount(year.hostelUsd) ||
       hasPublishedUsdAmount(year.totalUsd),
   );
+  const hasAnnualFeeSummary =
+    hasPublishedUsdAmount(primaryProgram.offering.annualTuitionUsd) ||
+    hasRenderableProgramLivingFee(primaryProgram.offering);
 
   return (
     <div id="academics" className="deferred-render scroll-mt-24 space-y-5 py-10">
@@ -47,7 +53,7 @@ export function UniversityAcademicsSection({
           <span className="text-sm text-muted-foreground">
             <span className="font-medium text-foreground">Medium</span>
             <span className="mx-1.5 text-border">—</span>
-            {primaryProgram.offering.medium}
+            {formatProgramMedium(primaryProgram.offering.medium, university.countrySlug)}
           </span>
           <span className="text-sm text-muted-foreground">
             <span className="font-medium text-foreground">Intake</span>
@@ -55,6 +61,26 @@ export function UniversityAcademicsSection({
             {primaryProgram.offering.intakeMonths.join(", ")}
           </span>
         </div>
+        {hasAnnualFeeSummary ? (
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            <div className="rounded-2xl border border-border bg-muted/30 px-4 py-3">
+              <p className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+                Tuition fee
+              </p>
+              <p className="mt-1 text-base font-semibold text-foreground">
+                {formatProgramAnnualFee(primaryProgram.offering)}
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-muted/30 px-4 py-3">
+              <p className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+                Estimated hostel fee with food
+              </p>
+              <p className="mt-1 text-base font-semibold text-foreground">
+                {formatProgramLivingFee(primaryProgram.offering)}
+              </p>
+            </div>
+          </div>
+        ) : null}
       </div>
 
       {/* ── Teaching phases ─────────────────────────────────────────── */}
@@ -89,7 +115,7 @@ export function UniversityAcademicsSection({
       <div className="rounded-2xl border border-border bg-card overflow-hidden">
         <div className="border-b border-border bg-muted/30 px-6 py-3">
           <p className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
-            Year-wise cost breakdown
+            Tuition fee and hostel estimate
           </p>
         </div>
         {hasAnyCostData ? (

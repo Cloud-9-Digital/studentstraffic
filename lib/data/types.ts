@@ -151,7 +151,11 @@ export type ProgramOffering = {
   officialAnnualTuitionAmount?: number;
   officialTotalTuitionAmount?: number;
   officialProgramUrl: string;
-  medium: "English" | "English + Local Support" | "Vietnamese";
+  medium:
+    | "English"
+    | "English + Local Support"
+    | "English + Vietnamese Support"
+    | "Vietnamese";
   published: boolean;
   teachingPhases: TeachingPhase[];
   yearlyCostBreakdown: YearlyCostBreakdown[];

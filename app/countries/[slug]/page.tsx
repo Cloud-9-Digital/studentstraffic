@@ -54,6 +54,7 @@ import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import {
   cn,
   formatCurrencyUsd,
+  formatProgramMedium,
   formatProgramDuration,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
@@ -223,7 +224,13 @@ export default async function CountryPage({
 
   const uniqueCourses = [...new Set(programs.map((p) => p.course.shortName))];
   const uniqueCities = [...new Set(programs.map((p) => p.university.city))];
-  const uniqueMediums = [...new Set(programs.map((p) => p.offering.medium))];
+  const uniqueMediums = [
+    ...new Set(
+      programs.map((p) =>
+        formatProgramMedium(p.offering.medium, p.country.slug),
+      ),
+    ),
+  ];
   const intakeMonths = [...new Set(programs.flatMap((p) => p.offering.intakeMonths))];
   const licenseExams = [...new Set(programs.flatMap((p) => p.offering.licenseExamSupport))];
   const allRecognitionBadges = [

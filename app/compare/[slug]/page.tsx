@@ -44,6 +44,7 @@ import { getComparisonHref, getUniversityHref } from "@/lib/routes";
 import {
   formatCurrencyUsd,
   formatProgramAnnualFee,
+  formatProgramMedium,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
 
@@ -126,7 +127,13 @@ function getWinnerByStartingFee(
 }
 
 function getTeachingMediumSummary(programs: FinderProgram[]) {
-  const mediums = [...new Set(programs.map((program) => program.offering.medium))];
+  const mediums = [
+    ...new Set(
+      programs.map((program) =>
+        formatProgramMedium(program.offering.medium, program.country.slug),
+      ),
+    ),
+  ];
 
   if (!mediums.length) {
     return "Check program details";
@@ -282,7 +289,12 @@ function getUniversityDecisionPoints(program: FinderProgram) {
     points.push(program.university.thingsToConsider[0]);
   }
 
-  points.push(`Teaching medium: ${program.offering.medium}`);
+  points.push(
+    `Teaching medium: ${formatProgramMedium(
+      program.offering.medium,
+      program.country.slug,
+    )}`,
+  );
 
   if (program.offering.intakeMonths.length) {
     points.push(`Main intake: ${program.offering.intakeMonths.join(", ")}`);
@@ -693,7 +705,10 @@ function UniversityComparisonDetail({
                   <p className="text-sm font-semibold text-heading">{guide.left.university.name}</p>
                   <p className="mt-2 text-sm leading-6 text-muted-foreground">
                     Annual fee: {formatProgramAnnualFee(guide.left.offering)}. Teaching medium:{" "}
-                    {guide.left.offering.medium}. Intake months:{" "}
+                    {formatProgramMedium(
+                      guide.left.offering.medium,
+                      guide.left.country.slug,
+                    )}. Intake months:{" "}
                     {guide.left.offering.intakeMonths.join(", ") || "Check with university"}.
                   </p>
                 </div>
@@ -701,7 +716,10 @@ function UniversityComparisonDetail({
                   <p className="text-sm font-semibold text-heading">{guide.right.university.name}</p>
                   <p className="mt-2 text-sm leading-6 text-muted-foreground">
                     Annual fee: {formatProgramAnnualFee(guide.right.offering)}. Teaching medium:{" "}
-                    {guide.right.offering.medium}. Intake months:{" "}
+                    {formatProgramMedium(
+                      guide.right.offering.medium,
+                      guide.right.country.slug,
+                    )}. Intake months:{" "}
                     {guide.right.offering.intakeMonths.join(", ") || "Check with university"}.
                   </p>
                 </div>

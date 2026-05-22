@@ -15,7 +15,11 @@ import {
   getLandingPageHref,
   getUniversityHref,
 } from "@/lib/routes";
-import { getSortableUsdValue, hasPublishedUsdAmount } from "@/lib/utils";
+import {
+  formatProgramMedium,
+  getSortableUsdValue,
+  hasPublishedUsdAmount,
+} from "@/lib/utils";
 
 type SearchCatalogInput = {
   countries: Country[];
@@ -187,6 +191,10 @@ export function buildSearchDocuments({
     const university = universityBySlug.get(offering.universitySlug);
     const course = courseBySlug.get(offering.courseSlug);
     const country = university ? countryBySlug.get(university.countrySlug) : undefined;
+    const formattedMedium = formatProgramMedium(
+      offering.medium,
+      country?.slug,
+    );
 
     return {
       documentType: "program",
@@ -203,14 +211,14 @@ export function buildSearchDocuments({
         university?.name,
         university?.summary,
         university?.clinicalExposure,
-        offering.medium,
+        formattedMedium,
         offering.licenseExamSupport,
         offering.teachingPhases.map(
           (phase) => `${phase.phase} ${phase.language} ${phase.details}`
         ),
       ]),
       highlights: [
-        offering.medium,
+        formattedMedium,
         "Verify licensing fit",
       ],
       countrySlug: university?.countrySlug,
@@ -221,7 +229,7 @@ export function buildSearchDocuments({
       annualTuitionUsd: hasPublishedUsdAmount(offering.annualTuitionUsd)
         ? offering.annualTuitionUsd
         : undefined,
-      medium: offering.medium,
+      medium: formattedMedium,
       intakeMonths: offering.intakeMonths,
     };
   });

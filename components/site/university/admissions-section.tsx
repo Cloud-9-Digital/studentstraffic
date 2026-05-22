@@ -18,6 +18,7 @@ import {
   getRussiaOfficialPageAudit,
   getRussiaOfficialPageAuditSummary,
 } from "@/lib/data/russia-official-page-audit";
+import { formatProgramMedium } from "@/lib/utils";
 
 import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
 
@@ -79,6 +80,9 @@ export function UniversityAdmissionsSection({
     ? universityAdmissions?.overview ??
       `Admissions to ${primaryProgram.course.shortName} at ${university.name} usually follow the ${university.type.toLowerCase()} university process used for international medical applicants in ${primaryProgram.country.name}. Always confirm the current cycle, seat availability, and document format directly with the university before applying.`
     : `Admissions to ${university.name} should be confirmed directly with the university's international office for the current academic cycle.`;
+  const formattedMedium = primaryProgram
+    ? formatProgramMedium(primaryProgram.offering.medium, university.countrySlug)
+    : null;
 
   const defaultSteps = primaryProgram
     ? [
@@ -121,8 +125,8 @@ export function UniversityAdmissionsSection({
     wdomsEntry
       ? `${university.name} has a mapped WDOMS entry, which helps students cross-check the institution in an official medical directory.`
       : `Check whether ${university.name} appears in WDOMS and current recognition databases before relying on third-party claims.`,
-    primaryProgram?.offering.medium
-      ? `The published teaching medium for the featured program is ${primaryProgram.offering.medium}. Students planning to practise in India should verify that the current course structure continues to align with NMC expectations.`
+    formattedMedium
+      ? `The published teaching medium for the featured program is ${formattedMedium}. Students planning to practise in India should verify that the current course structure continues to align with NMC expectations.`
       : "Verify the current teaching medium and program structure directly with the university.",
     primaryProgram?.offering.licenseExamSupport.length
       ? `Published support includes: ${primaryProgram.offering.licenseExamSupport.join("; ")}.`
@@ -189,7 +193,7 @@ export function UniversityAdmissionsSection({
           title="Primary program"
           body={
             primaryProgram
-              ? `${primaryProgram.offering.title} with ${primaryProgram.offering.medium} delivery and ${intakeMonths.join(", ") || "current-cycle"} intake guidance.`
+              ? `${primaryProgram.offering.title} with ${formattedMedium} delivery and ${intakeMonths.join(", ") || "current-cycle"} intake guidance.`
               : "Program-specific admissions details should be confirmed directly with the university."
           }
         />

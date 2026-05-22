@@ -20,6 +20,7 @@ import type { LocationMedia } from "@/lib/location-media";
 import {
   formatProgramAnnualFee,
   formatProgramDuration,
+  formatProgramMedium,
   getProgramAnnualFeeLabel,
 } from "@/lib/utils";
 
@@ -52,7 +53,7 @@ export function UniversitySnapshotSection({
     {
       icon: <Languages className="size-3.5" />,
       label: "Medium",
-      value: primaryProgram.offering.medium,
+      value: formatProgramMedium(primaryProgram.offering.medium, country.slug),
     },
     {
       icon: <CalendarDays className="size-3.5" />,

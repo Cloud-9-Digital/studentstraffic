@@ -121,7 +121,9 @@
           "licenseExamSupport": [
             "Students should verify how an HIU Doctor of Medicine degree maps to their intended licensing route after graduation."
           ],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -237,9 +239,9 @@
           "officialFeeCurrency": "VND",
           "officialAnnualTuitionAmount": 96000000,
           "officialTotalTuitionAmount": 576000000,
-          "annualTuitionUsd": 3765,
-          "totalTuitionUsd": 22590,
-          "livingUsd": 0,
+          "annualTuitionUsd": 4098,
+          "totalTuitionUsd": 24588,
+          "livingUsd": 2200,
           "officialProgramUrl": "https://dainam.edu.vn/en/majors/medical",
           "medium": "English + Local Support",
           "teachingPhases": [
@@ -254,15 +256,66 @@
               "details": "A separate official university article says Dai Nam planned a 2025-2026 English medicine path for Indian students, but applicants should still verify how fully that pathway is operational in classroom and clinical settings."
             }
           ],
-          "yearlyCostBreakdown": [],
+          "yearlyCostBreakdown": [
+            {
+              "yearLabel": "1st Year",
+              "tuitionUsd": 4098,
+              "hostelUsd": 2200,
+              "livingUsd": 0,
+              "totalUsd": 6298,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "2nd Year",
+              "tuitionUsd": 4098,
+              "hostelUsd": 2200,
+              "livingUsd": 0,
+              "totalUsd": 6298,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "3rd Year",
+              "tuitionUsd": 4098,
+              "hostelUsd": 2200,
+              "livingUsd": 0,
+              "totalUsd": 6298,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "4th Year",
+              "tuitionUsd": 4098,
+              "hostelUsd": 2200,
+              "livingUsd": 0,
+              "totalUsd": 6298,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "5th Year",
+              "tuitionUsd": 4098,
+              "hostelUsd": 2200,
+              "livingUsd": 0,
+              "totalUsd": 6298,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "6th Year",
+              "tuitionUsd": 4098,
+              "hostelUsd": 2200,
+              "livingUsd": 0,
+              "totalUsd": 6298,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            }
+          ],
           "licenseExamSupport": [
             "Students should clarify whether they are joining the mainstream Vietnamese medicine track or the separately described English-track international initiative before making licensing assumptions."
           ],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
-          "feeNotes": "Dai Nam's 2025 admissions FAQ lists medicine tuition at 32 million VND per term with three terms per school year, so the annual figure here uses 96 million VND. The university also separately published an India-focused article describing an English medicine initiative at about USD 5,000 per year, which students should verify directly as a distinct track.",
+          "feeNotes": "Students Traffic Vietnam partner fee sheet for 2026 uses tuition-only planning at USD 1,366 per semester across 3 semesters per year, which equals USD 4,098 yearly. Estimated hostel plus food for 4-sharing is USD 2,200 per year. This simplified display intentionally excludes registration and one-time charges so students can compare tuition and hostel costs cleanly.",
           "sourceUrls": [
             "https://dainam.edu.vn/en/majors/medical",
             "https://betatuyensinh.dainam.edu.vn/vi/tin-tuc/cau-hoi-thuong-gap",
@@ -392,7 +445,9 @@
           "licenseExamSupport": [
             "Applicants should not assume an English-medium pathway. The university explicitly states Vietnamese-language study and proficiency requirements."
           ],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -538,7 +593,9 @@
           "licenseExamSupport": [
             "Students should verify how the VNU-HCM Doctor of Medicine program aligns with their intended licensing route, especially if they plan to return to India."
           ],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -685,7 +742,9 @@
           "licenseExamSupport": [
             "Students should verify the implications of joining a Vietnamese public medicine route before treating it as a straightforward India-return MBBS path."
           ],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",

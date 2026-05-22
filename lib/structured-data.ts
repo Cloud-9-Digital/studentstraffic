@@ -19,7 +19,7 @@ import {
   getUniversityHref,
 } from "@/lib/routes";
 import { getIndexableUniversityImageUrls } from "@/lib/university-media";
-import { hasPublishedUsdAmount } from "@/lib/utils";
+import { formatProgramMedium, hasPublishedUsdAmount } from "@/lib/utils";
 
 type BreadcrumbItem = {
   name: string;
@@ -86,7 +86,10 @@ function getProgramCourseStructuredData(program: FinderProgram) {
       },
     },
     courseCode: program.course.shortName,
-    courseMode: program.offering.medium,
+    courseMode: formatProgramMedium(
+      program.offering.medium,
+      program.country.slug,
+    ),
     educationalCredentialAwarded: program.course.shortName,
     inLanguage: "en",
     timeRequired: Number.isInteger(program.offering.durationYears)

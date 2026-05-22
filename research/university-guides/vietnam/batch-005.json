@@ -84,24 +84,78 @@
           "title": "Doctor of Medicine",
           "durationYears": 6,
           "officialProgramUrl": "https://bmtu.edu.vn/",
-          "medium": "Vietnamese",
+          "medium": "English + Local Support",
           "teachingPhases": [
             {
               "phase": "Doctor of Medicine pathway",
-              "language": "Vietnamese",
-              "details": "Students should verify current curriculum delivery and hospital-practice arrangements directly with the university."
+              "language": "English + Local Support",
+              "details": "Students Traffic's current university tie-up confirms an English-medium Doctor of Medicine pathway, while students should still verify day-to-day curriculum delivery and hospital-practice arrangements directly with the university."
             }
           ],
-          "yearlyCostBreakdown": [],
+          "yearlyCostBreakdown": [
+            {
+              "yearLabel": "1st Year",
+              "tuitionUsd": 5000,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7400,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "2nd Year",
+              "tuitionUsd": 5000,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7400,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "3rd Year",
+              "tuitionUsd": 5000,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7400,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "4th Year",
+              "tuitionUsd": 5000,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7400,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "5th Year",
+              "tuitionUsd": 5000,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7400,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "6th Year",
+              "tuitionUsd": 5000,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7400,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            }
+          ],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
-          "feeNotes": "A clear public 2025 medicine fee sheet was not captured in the reviewed official sources, so applicants should request the current tuition schedule directly from the university.",
+          "feeNotes": "Students Traffic Vietnam partner fee sheet for 2026 uses tuition-only planning at USD 2,500 per semester across 2 semesters per year, which equals USD 5,000 yearly. Estimated hostel plus food for 4-sharing is USD 2,400 per year. This simplified display intentionally excludes registration and one-time charges so students can compare tuition and hostel costs cleanly.",
           "sourceUrls": [
             "https://bmtu.edu.vn/"
-          ]
+          ],
+          "annualTuitionUsd": 5000,
+          "totalTuitionUsd": 30000,
+          "livingUsd": 2400
         }
       ]
     },
@@ -183,27 +237,79 @@
           "officialAnnualTuitionAmount": 80000000,
           "officialTotalTuitionAmount": 480000000,
           "officialFeeCurrency": "VND",
-          "annualTuitionUsd": 3140,
-          "totalTuitionUsd": 18840,
+          "annualTuitionUsd": 5200,
+          "totalTuitionUsd": 31200,
           "officialProgramUrl": "https://pctu.edu.vn/",
-          "medium": "Vietnamese",
+          "medium": "English + Local Support",
           "teachingPhases": [
             {
               "phase": "Doctor of Medicine pathway",
-              "language": "Vietnamese",
-              "details": "PCTU presents medicine as a full professional pathway in its health-sciences ecosystem."
+              "language": "English + Local Support",
+              "details": "PCTU presents medicine as a full professional pathway in its health-sciences ecosystem, and Students Traffic's current university tie-up confirms an English-medium route for international students with Vietnamese language support on the ground."
             }
           ],
-          "yearlyCostBreakdown": [],
+          "yearlyCostBreakdown": [
+            {
+              "yearLabel": "1st Year",
+              "tuitionUsd": 5200,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7600,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "2nd Year",
+              "tuitionUsd": 5200,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7600,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "3rd Year",
+              "tuitionUsd": 5200,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7600,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "4th Year",
+              "tuitionUsd": 5200,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7600,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "5th Year",
+              "tuitionUsd": 5200,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7600,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            },
+            {
+              "yearLabel": "6th Year",
+              "tuitionUsd": 5200,
+              "hostelUsd": 2400,
+              "livingUsd": 0,
+              "totalUsd": 7600,
+              "notes": "Tuition plus estimated hostel and food for 4-sharing."
+            }
+          ],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
-          "feeNotes": "A published tuition reference for medicine is available through current official university materials. Applicants should reconfirm the exact intake-year billing directly.",
+          "feeNotes": "Students Traffic Vietnam partner fee sheet for 2026 uses tuition-only planning at USD 2,600 per semester across 2 semesters per year, which equals USD 5,200 yearly. Estimated hostel plus food for 4-sharing is USD 2,400 per year. This simplified display intentionally excludes registration and one-time charges so students can compare tuition and hostel costs cleanly.",
           "sourceUrls": [
             "https://pctu.edu.vn/"
-          ]
+          ],
+          "livingUsd": 2400
         }
       ]
     },
@@ -297,7 +403,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -393,7 +501,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -492,7 +602,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -587,7 +699,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -681,7 +795,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -775,7 +891,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -869,7 +987,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -969,7 +1089,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -1064,7 +1186,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -1163,7 +1287,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
@@ -1258,7 +1384,9 @@
           ],
           "yearlyCostBreakdown": [],
           "licenseExamSupport": [],
-          "intakeMonths": [],
+          "intakeMonths": [
+            "September"
+          ],
           "featured": false,
           "published": false,
           "feeVerifiedAt": "2026-05-22",
