@@ -1,0 +1,291 @@
+{
+  "batchId": "vietnam-batch-003",
+  "countrySlug": "vietnam",
+  "notes": "Official-source refresh batch for Pham Ngoc Thach University of Medicine and Dong A University College of Medicine.",
+  "universities": [
+    {
+      "slug": "pham-ngoc-thach-university-medicine",
+      "name": "Pham Ngoc Thach University of Medicine Faculty of Medicine",
+      "city": "Ho Chi Minh City",
+      "type": "Public",
+      "establishedYear": 1989,
+      "summary": "A public Ho Chi Minh City medical university with a current 2025 undergraduate admissions route, a published 2025-2026 fee structure for medicine, and a domestic Doctor of Medicine pathway rooted in the city's healthcare system rather than international-agent marketing.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://www.pnt.edu.vn/",
+      "campusLifestyle": "Pham Ngoc Thach feels like a serious city medical school embedded in Ho Chi Minh City's public-health environment rather than a polished international campus product. The official materials emphasize structured admissions, public-sector training, and academic seriousness more than student-lifestyle messaging.",
+      "cityProfile": "Ho Chi Minh City gives PNT students access to one of Vietnam's largest hospital ecosystems and a fast-moving healthcare environment. The university's strongest city advantage is clinical context and medical-network depth rather than a low-cost or lightly competitive student-life image.",
+      "clinicalExposure": "The university's public materials position PNT as a medicine-focused training institution for Ho Chi Minh City and the broader healthcare system. Its training identity is much more grounded in domestic medical education and city-hospital integration than in consultant-style 'MBBS abroad' positioning.",
+      "hostelOverview": "The reviewed official PNT sources are much stronger on admissions and tuition than on a clean hostel explainer. Students should verify accommodation options directly and not assume a simple residential package from generic Vietnam-school comparisons.",
+      "indianFoodSupport": "The official sources reviewed here do not advertise India-specific food support. Families should treat this as a Ho Chi Minh City lifestyle question rather than a university-provided service.",
+      "safetyOverview": "PNT's official documents communicate institutional seriousness through admissions rules, fee notifications, and formal academic systems rather than marketing language. That tone is generally a stronger signal than glossy recruitment copy.",
+      "studentSupport": "PNT's admissions and administrative pages are formal and source-rich, but they are not designed like a concierge-style international microsite. Students who need special support should be prepared to ask direct questions rather than assume a highly packaged onboarding experience.",
+      "whyChoose": [
+        "PNT publishes current 2025 admissions information and clear first-year fee guidance for medicine instead of leaving tuition vague.",
+        "The university is a public medical school in Ho Chi Minh City, which gives it a stronger domestic medical identity than many thin Vietnam catalog pages.",
+        "PNT's recent official news also shows students winning competitive external medicine scholarships, which is a useful signal of academic quality."
+      ],
+      "thingsToConsider": [
+        "This is a domestic Vietnamese medical-school pathway, not a simple private English-track recruitment funnel.",
+        "The official sources reviewed here are much stronger on administration and tuition than on lifestyle or international-student hand-holding.",
+        "Students planning India return should verify language, internship, and licensing suitability directly rather than treating city prestige as enough."
+      ],
+      "bestFitFor": [
+        "Students who want a public Ho Chi Minh City medical school with stronger official fee and admissions documentation.",
+        "Families comparing serious domestic Vietnam medical institutions rather than marketing-heavy private options.",
+        "Applicants comfortable doing direct verification around language and support needs."
+      ],
+      "teachingHospitals": [
+        "Ho Chi Minh City medical training ecosystem"
+      ],
+      "recognitionBadges": [
+        "Public medical university",
+        "2025 undergraduate admissions notice published",
+        "2025-2026 undergraduate fee structure published"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "PNT 2025 undergraduate admissions page",
+          "url": "https://pqldt.pnt.edu.vn/vi/tuyen-sinh-dai-hoc"
+        },
+        {
+          "label": "PNT 2025 admissions enrollment instructions PDF",
+          "url": "https://pnt.edu.vn/Resources/Docs/SubDomain/pqldt/Tuyen%20sinh%20Dai%20hoc/TS2025/TB_HuongDan_thuTuc_NhapHoc_TS2025-PDFs.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What tuition does PNT publish for medicine for the 2025-2026 intake?",
+          "answer": "PNT's 2025 enrollment instructions say that Y khoa, Y học cổ truyền, Răng Hàm Mặt, and Dược học are charged 55,200,000 VND for the 2025-2026 academic year for newly admitted students."
+        },
+        {
+          "question": "Does PNT show a different fee structure in later years of medicine study?",
+          "answer": "Yes. The university's 2025-2026 fee appendix shows Y khoa at 27.6 million VND per semester for earlier years and 17.525 million VND per semester from year five onward."
+        },
+        {
+          "question": "Why is PNT treated as a serious university page and not just a directory listing?",
+          "answer": "Because the current page is now based on official admissions, fee, and institutional sources rather than on a generic homepage-only description."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "PNT's official sources are strongest on admissions administration and fee structure rather than on simplified international recruitment language. Students should use these documents to verify the program route and cost, then clarify operational details directly.",
+        "licensingPathway": [
+          "PNT trains doctors inside Vietnam's public medical education framework in Ho Chi Minh City.",
+          "Students planning India return should verify current NMC, language, and internship compatibility separately."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "PNT official university introduction page",
+            "url": "https://www.pnt.edu.vn/vi/gioi-thieu/truong-dai-hoc-y-khoa-pham-ngoc-thach",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "PNT 2025 undergraduate admissions page",
+            "url": "https://pqldt.pnt.edu.vn/vi/tuyen-sinh-dai-hoc",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "PNT 2025 admissions enrollment instructions PDF",
+            "url": "https://pnt.edu.vn/Resources/Docs/SubDomain/pqldt/Tuyen%20sinh%20Dai%20hoc/TS2025/TB_HuongDan_thuTuc_NhapHoc_TS2025-PDFs.pdf",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "PNT 2025-2026 undergraduate fee appendix PDF",
+            "url": "https://www.pnt.edu.vn/Resources/Docs/SubDomain/HomePage/Thong%20Bao/2025/08/18/PH%E1%BB%A4%20L%E1%BB%A4C%2001.pdf",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "PNT scholarship news for medicine students",
+            "url": "https://en.pnt.edu.vn/vi/event-1304/two-students-from-pham-ngoc-thach-university-of-medicine-awarded-full-scholarships-to-study-medicine-in-japan",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official PNT admissions and fee documents. Important correction: the medicine fee structure is now tied to actual 2025-2026 PNT sources instead of generic Vietnam pricing."
+      },
+      "programs": [
+        {
+          "slug": "pham-ngoc-thach-university-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine / Y khoa",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 55200000,
+          "officialTotalTuitionAmount": 290900000,
+          "annualTuitionUsd": 2165,
+          "totalTuitionUsd": 11410,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://pqldt.pnt.edu.vn/vi/tuyen-sinh-dai-hoc",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Undergraduate Y khoa pathway",
+              "language": "Vietnamese",
+              "details": "PNT's official admissions and fee materials support a domestic undergraduate Y khoa route rather than a separate international English-track medicine product."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Students should evaluate how a Vietnamese public-medicine pathway fits their intended licensing route after graduation."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "PNT's 2025 enrollment instructions list medicine at 55,200,000 VND for the 2025-2026 academic year for newly admitted students. The fee appendix also shows Y khoa at 27.6 million VND per semester in earlier years and 17.525 million VND per semester from year five onward, so the total comparison figure here uses that official multi-year structure.",
+          "sourceUrls": [
+            "https://pqldt.pnt.edu.vn/vi/tuyen-sinh-dai-hoc",
+            "https://pnt.edu.vn/Resources/Docs/SubDomain/pqldt/Tuyen%20sinh%20Dai%20hoc/TS2025/TB_HuongDan_thuTuc_NhapHoc_TS2025-PDFs.pdf",
+            "https://www.pnt.edu.vn/Resources/Docs/SubDomain/HomePage/Thong%20Bao/2025/08/18/PH%E1%BB%A4%20L%E1%BB%A4C%2001.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dong-a-university-college-of-medicine",
+      "name": "Dong A University College of Medicine",
+      "city": "Da Nang",
+      "type": "Private",
+      "establishedYear": 2002,
+      "summary": "A private Da Nang university that actively markets a 2025 Doctor of Medicine pathway, publishes a detailed undergraduate medicine fee table, and is building a visible English-track medicine narrative for international applicants including Indian students.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://donga.edu.vn/",
+      "campusLifestyle": "Dong A presents a more openly recruitment-oriented private-university experience than Vietnam's traditional public medical schools. Its official pages are easy to read, fee-transparent, and more international-facing than many universities in the Vietnam catalog.",
+      "cityProfile": "Da Nang offers a less overwhelming urban environment than Ho Chi Minh City while still functioning as a real regional medical and education center. For many students, the city's appeal is its balance of livability and professional access rather than sheer institutional scale.",
+      "clinicalExposure": "Dong A's medicine pages describe the Doctor of Medicine route as a full six-year undergraduate track and frame it as a serious professional program rather than a casual health-science major. The university also speaks directly about later-stage specialized training and a more expensive clinical phase from year four onward.",
+      "hostelOverview": "The reviewed official pages are strong on tuition and admissions but weaker on a simple accommodation explainer. Students should verify residence options directly with the university.",
+      "indianFoodSupport": "Dong A publicly markets its medicine pathway to Indian students and has official English medicine content, but the sources reviewed here do not give a detailed India-specific food-services promise.",
+      "safetyOverview": "The official pages emphasize infrastructure, scholarships, admissions procedures, and structured program design rather than broad safety slogans. The strongest official signal is the unusual level of fee and program transparency.",
+      "studentSupport": "Dong A's official materials are notably readable for international applicants. The university clearly explains program length, interview-based international admission handling, fee structure, and scholarship offers for medical students.",
+      "whyChoose": [
+        "Dong A publishes one of the clearest official fee tables for medicine in the Vietnam catalog, including credit load, first-semester tuition, and later-phase fee rules.",
+        "The university openly describes a six-year Doctor of Medicine pathway and has English-facing admissions content for medicine.",
+        "Official sources show specific scholarships for medicine students, including a 20% first-year scholarship allocation in 2025."
+      ],
+      "thingsToConsider": [
+        "Dong A is a private university, so students should weigh its international-facing presentation against long-term reputation and hospital depth.",
+        "The school states that from year four onward, medicine tuition increases by 10% per credit in the specialized phase, so students need to budget beyond the headline first-semester fee.",
+        "Students should verify the exact language and clinical-delivery model for the English-track medicine pathway rather than assuming the entire route is frictionless."
+      ],
+      "bestFitFor": [
+        "Students who want a private Vietnam medical option with unusually transparent official fee disclosure.",
+        "Applicants looking at Da Nang rather than Hanoi or Ho Chi Minh City.",
+        "Families comparing English-facing medicine pages and scholarship messaging across private universities."
+      ],
+      "teachingHospitals": [
+        "Da Nang clinical training ecosystem"
+      ],
+      "recognitionBadges": [
+        "Private medical university",
+        "Official 2025 medicine fee table published",
+        "English-facing Doctor of Medicine admissions page"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Dong A English Doctor of Medicine admissions page",
+          "url": "https://y.donga.edu.vn/en/news-events/detail/medical-program-admission-information-for-regular-system-2025-37508"
+        },
+        {
+          "label": "Dong A 2025 undergraduate fee page",
+          "url": "https://donga.edu.vn/tuyensinh/ts-chi-tiet/dai-hoc-dong-a-cong-bo-hoc-phi-nam-2025-bac-dai-hoc-chinh-quy-40992"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long is Dong A's Doctor of Medicine program?",
+          "answer": "Dong A's official English admissions page describes the Medical Doctor program as a six-year undergraduate pathway."
+        },
+        {
+          "question": "What first-semester fee does Dong A publish for medicine in 2025?",
+          "answer": "The university's 2025 undergraduate fee page lists Y khoa at 42,997,000 VND for semester 1 based on the published credit structure."
+        },
+        {
+          "question": "Does Dong A say medicine fees rise in later years?",
+          "answer": "Yes. The university says that for medicine, tuition per credit rises by 10% from year four onward during the specialized phase."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "Dong A's medicine pages are stronger on fee mechanics and admissions transparency than many Vietnam university pages. Students should still verify how the English-facing pathway works in practice during clinical years.",
+        "licensingPathway": [
+          "Dong A presents a six-year Doctor of Medicine route with international-facing admissions handling and specific scholarship options.",
+          "Students planning India return should verify language, internship, and recognition fit directly before treating the private English-facing page as enough."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Dong A English Doctor of Medicine admissions page",
+            "url": "https://y.donga.edu.vn/en/news-events/detail/medical-program-admission-information-for-regular-system-2025-37508",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Dong A 2025 undergraduate fee page",
+            "url": "https://donga.edu.vn/tuyensinh/ts-chi-tiet/dai-hoc-dong-a-cong-bo-hoc-phi-nam-2025-bac-dai-hoc-chinh-quy-40992",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Dong A international medicine white coat ceremony page",
+            "url": "https://y.donga.edu.vn/en/news-events/detail/white-coat-ceremony-for-students-of-the-international-doctor-of-medicine-program-%E2%80%93-dong-a-university-42739",
+            "kind": "other",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from Dong A's official English medicine admissions content and the university's 2025 fee table. Important correction: this page now uses the real published medicine fee structure instead of a generic private-university estimate."
+      },
+      "programs": [
+        {
+          "slug": "dong-a-university-college-of-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine / Medical Doctor",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 85994000,
+          "officialTotalTuitionAmount": 525129000,
+          "annualTuitionUsd": 3375,
+          "totalTuitionUsd": 20600,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://y.donga.edu.vn/en/news-events/detail/medical-program-admission-information-for-regular-system-2025-37508",
+          "medium": "English + Local Support",
+          "teachingPhases": [
+            {
+              "phase": "General medicine undergraduate pathway",
+              "language": "English + Local Support",
+              "details": "Dong A's official English admissions page presents a six-year Doctor of Medicine pathway and handles international applications through a dedicated admissions process."
+            },
+            {
+              "phase": "Specialized clinical phase",
+              "language": "English + Local Support",
+              "details": "The university's fee notice says that for medicine the per-credit tuition increases by 10% from year four onward in the specialized phase, which signals a different cost stage later in training."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Students should verify how Dong A's international-facing Doctor of Medicine route aligns with their target licensing path after graduation."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Dong A's 2025 undergraduate fee page lists medicine at 42,997,000 VND for semester 1, based on 221 total credits across 12 semesters and a published per-credit rate. The annual figure here uses two equal semesters, while the total comparison figure models the published 10% per-credit increase that applies from year four onward in the specialized phase.",
+          "sourceUrls": [
+            "https://y.donga.edu.vn/en/news-events/detail/medical-program-admission-information-for-regular-system-2025-37508",
+            "https://donga.edu.vn/tuyensinh/ts-chi-tiet/dai-hoc-dong-a-cong-bo-hoc-phi-nam-2025-bac-dai-hoc-chinh-quy-40992"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import {
+  bigint,
   boolean,
   index,
   integer,
@@ -34,6 +35,17 @@ type LeadClientContext = Record<
 >;
 type AdminAuditLogMetadata = Record<string, JsonValue>;
 type IndiaMedicalSourceRow = Record<string, string | number | boolean | null>;
+type UniversityResearchQueuePriority = "high" | "medium" | "low";
+type UniversityResearchQueueStatus =
+  | "new"
+  | "researching"
+  | "draft_ready"
+  | "published"
+  | "hold"
+  | "rejected";
+type UniversityResearchSourceBundle = Record<string, unknown>;
+type UniversityResearchStructuredFacts = Record<string, unknown>;
+type UniversityResearchDraftContent = Record<string, unknown>;
 
 export type AdminUserRole = "owner" | "admin";
 
@@ -151,8 +163,12 @@ export const programOfferings = pgTable(
     totalTuitionUsd: integer("total_tuition_usd").notNull(),
     livingUsd: integer("living_usd").notNull(),
     officialFeeCurrency: text("official_fee_currency"),
-    officialAnnualTuitionAmount: integer("official_annual_tuition_amount"),
-    officialTotalTuitionAmount: integer("official_total_tuition_amount"),
+    officialAnnualTuitionAmount: bigint("official_annual_tuition_amount", {
+      mode: "number",
+    }),
+    officialTotalTuitionAmount: bigint("official_total_tuition_amount", {
+      mode: "number",
+    }),
     officialProgramUrl: text("official_program_url").notNull(),
     medium: text("medium").notNull(),
     published: boolean("published").notNull().default(true),
@@ -699,6 +715,86 @@ export const blogPosts = pgTable(
   ]
 );
 
+export const universityResearchQueue = pgTable(
+  "university_research_queue",
+  {
+    id: serial("id").primaryKey(),
+    wdomsSchoolId: text("wdoms_school_id").notNull(),
+    countrySlug: text("country_slug").notNull(),
+    schoolName: text("school_name").notNull(),
+    cityName: text("city_name"),
+    priority: text("priority")
+      .$type<UniversityResearchQueuePriority>()
+      .notNull()
+      .default("medium"),
+    status: text("status")
+      .$type<UniversityResearchQueueStatus>()
+      .notNull()
+      .default("new"),
+    matchedUniversityId: integer("matched_university_id").references(
+      () => universities.id,
+      { onDelete: "set null" }
+    ),
+    publishedUniversitySlug: text("published_university_slug"),
+    notes: text("notes"),
+    lastAttemptedAt: timestamp("last_attempted_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("university_research_queue_wdoms_school_id_idx").on(
+      table.wdomsSchoolId
+    ),
+    index("university_research_queue_country_idx").on(table.countrySlug),
+    index("university_research_queue_priority_idx").on(table.priority),
+    index("university_research_queue_status_idx").on(table.status),
+    index("university_research_queue_matched_university_idx").on(
+      table.matchedUniversityId
+    ),
+  ]
+);
+
+export const universityResearchDrafts = pgTable(
+  "university_research_drafts",
+  {
+    id: serial("id").primaryKey(),
+    queueId: integer("queue_id")
+      .notNull()
+      .references(() => universityResearchQueue.id, { onDelete: "cascade" }),
+    wdomsSchoolId: text("wdoms_school_id").notNull(),
+    officialWebsite: text("official_website"),
+    programUrl: text("program_url"),
+    feesUrl: text("fees_url"),
+    hostelUrl: text("hostel_url"),
+    admissionUrl: text("admission_url"),
+    wdomsUrl: text("wdoms_url"),
+    sourceBundle: jsonb("source_bundle")
+      .$type<UniversityResearchSourceBundle>()
+      .notNull()
+      .default({}),
+    structuredFacts: jsonb("structured_facts")
+      .$type<UniversityResearchStructuredFacts>()
+      .notNull()
+      .default({}),
+    draftContent: jsonb("draft_content")
+      .$type<UniversityResearchDraftContent>()
+      .notNull()
+      .default({}),
+    qualityScore: integer("quality_score"),
+    reviewNotes: text("review_notes"),
+    verifiedAt: timestamp("verified_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("university_research_drafts_queue_id_idx").on(table.queueId),
+    index("university_research_drafts_wdoms_school_id_idx").on(
+      table.wdomsSchoolId
+    ),
+    index("university_research_drafts_verified_at_idx").on(table.verifiedAt),
+  ]
+);
+
 export type CountryRow = typeof countries.$inferSelect;
 export type CourseRow = typeof courses.$inferSelect;
 export type UniversityRow = typeof universities.$inferSelect;
@@ -716,3 +812,5 @@ export type UniversityReviewRow = typeof universityReviews.$inferSelect;
 export type SearchDocumentRow = typeof searchDocuments.$inferSelect;
 export type StudentPeerApplicationInsert = typeof studentPeerApplications.$inferInsert;
 export type StudentPeerApplicationRow = typeof studentPeerApplications.$inferSelect;
+export type UniversityResearchQueueRow = typeof universityResearchQueue.$inferSelect;
+export type UniversityResearchDraftRow = typeof universityResearchDrafts.$inferSelect;

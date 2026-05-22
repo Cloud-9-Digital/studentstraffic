@@ -1,0 +1,526 @@
+{
+  "batchId": "vietnam-batch-004",
+  "countrySlug": "vietnam",
+  "notes": "Official-source refresh batch for Nam Can Tho University, Tra Vinh University, Nguyen Tat Thanh University, and Phenikaa University.",
+  "universities": [
+    {
+      "slug": "nam-can-tho-university-faculty-of-medicine",
+      "name": "Nam Can Tho University Faculty of Medicine",
+      "city": "Can Tho",
+      "type": "Private",
+      "establishedYear": 2013,
+      "summary": "A private Can Tho university that publicly markets an International Medicine pathway, publishes a 2025 international tuition table, and presents medicine as part of a broader English-facing admissions funnel rather than a hidden or vague catalog listing.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://nctu.edu.vn/eng/",
+      "campusLifestyle": "Nam Can Tho feels more like a modern regional private university with a structured international admissions layer than a legacy public medical school. Its official English pages focus on admissions, tuition, and program access rather than deep student-life storytelling.",
+      "cityProfile": "Can Tho gives students a major Mekong Delta city environment with lower headline living pressure than Ho Chi Minh City while still offering a real healthcare and university ecosystem. The location makes more sense for students prioritizing regional affordability and a calmer city profile.",
+      "clinicalExposure": "The university's official materials clearly position medicine as a six-year undergraduate pathway and treat it as a full professional program rather than a light pre-med track. The strongest current official signal is the existence of a dedicated medicine program document alongside active international admissions content.",
+      "hostelOverview": "The reviewed English sources are much stronger on tuition and admissions than on a simple hostel explainer. Students should verify current housing, room types, and off-campus living arrangements directly with the university.",
+      "indianFoodSupport": "Nam Can Tho has English-facing international admissions pages, but the sources reviewed here do not make a specific India-focused food-services promise. Families should treat food and community support as a city-level question to verify directly.",
+      "safetyOverview": "The university is comparatively transparent on international tuition and eligibility requirements, which is a better trust signal than generic recruitment copy. At the same time, students should still clarify clinical delivery and billing mechanics before assuming a frictionless international medicine path.",
+      "studentSupport": "Nam Can Tho's English admissions pages are practical and readable for international applicants. They explain eligibility, medicine-related thresholds, and tuition references more clearly than many Vietnam university catalog pages.",
+      "whyChoose": [
+        "Nam Can Tho publishes a dedicated 2025 international tuition table that explicitly includes International Medicine.",
+        "The university also provides an English admissions overview and a medicine program document instead of relying only on a homepage mention.",
+        "Can Tho can appeal to students who want a major Vietnamese city without the same cost and scale profile as Ho Chi Minh City."
+      ],
+      "thingsToConsider": [
+        "The tuition page says fees are invoiced in VND on a per-course basis, so students should verify the exact year-by-year billing logic directly.",
+        "This is a private university with international-facing recruitment pages, so applicants should ask detailed questions about clinical training delivery and language use.",
+        "Students planning India return should independently verify licensing, internship, and recognition fit rather than relying on the International Medicine label alone."
+      ],
+      "bestFitFor": [
+        "Students looking at private Vietnam medicine options outside Hanoi and Ho Chi Minh City.",
+        "Families who want clearer English admissions pages and a published international tuition reference.",
+        "Applicants open to a regional-city study environment in the Mekong Delta."
+      ],
+      "teachingHospitals": [
+        "Can Tho regional healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Official 2025 international tuition table published",
+        "English admissions page available",
+        "Dedicated medicine program document available"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Nam Can Tho international tuition by program page",
+          "url": "https://nctu.edu.vn/eng/tuition-and-fees/international-tuition-by-program"
+        },
+        {
+          "label": "Nam Can Tho undergraduate admissions page",
+          "url": "https://www.nctu.edu.vn/eng/undergraduate-programs"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What tuition does Nam Can Tho publish for International Medicine in 2025?",
+          "answer": "The university's 2025 international tuition page lists International Medicine at 156,060,000 VND with an indicative overseas-payment reference of 6,000 USD."
+        },
+        {
+          "question": "Does Nam Can Tho clearly show medicine in its admissions materials?",
+          "answer": "Yes. The English undergraduate admissions page lists Medicine among the health-sciences programs and includes health-specific eligibility thresholds."
+        },
+        {
+          "question": "Is the published medicine fee clearly described as yearly or full-course tuition?",
+          "answer": "Not perfectly. The university says fees are set and invoiced in VND on a per-course basis, so students should verify how the published 2025 figure maps to annual billing before enrolling."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "Nam Can Tho has one of the more readable English-facing admissions setups among private Vietnam options. Students should still ask direct questions about billing structure, clinical phases, and teaching language before treating the published international tuition figure as the whole story.",
+        "licensingPathway": [
+          "The university publicly presents medicine inside an international admissions framework and provides a dedicated medicine program document.",
+          "Students planning India return should verify current NMC, language, internship, and post-graduation licensing fit independently."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Nam Can Tho international tuition by program page",
+            "url": "https://nctu.edu.vn/eng/tuition-and-fees/international-tuition-by-program",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Nam Can Tho undergraduate admissions page",
+            "url": "https://www.nctu.edu.vn/eng/undergraduate-programs",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Nam Can Tho medicine program document",
+            "url": "https://nctu.edu.vn/eng/pdf/programs/Medicine.pdf",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from Nam Can Tho's English admissions and international tuition pages. Important correction: the page now uses the published International Medicine tuition reference instead of leaving medicine fees blank."
+      },
+      "programs": [
+        {
+          "slug": "nam-can-tho-university-faculty-of-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "International Medicine / Doctor of Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 156060000,
+          "officialTotalTuitionAmount": 936360000,
+          "annualTuitionUsd": 6000,
+          "totalTuitionUsd": 36000,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://www.nctu.edu.vn/eng/undergraduate-programs",
+          "medium": "English + Local Support",
+          "teachingPhases": [
+            {
+              "phase": "International Medicine pathway",
+              "language": "English + Local Support",
+              "details": "Nam Can Tho presents medicine through its English international admissions pages, but students should verify how classroom and clinical language work in practice."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Students should verify licensing and internship compatibility directly before treating the international track label as enough."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Nam Can Tho's 2025 international tuition page lists International Medicine at 156,060,000 VND with an indicative 6,000 USD figure. The same page also says fees are set and invoiced in VND on a per-course basis, so the six-year total shown here is a comparison estimate built from the current published annual-style reference and should be rechecked directly with the university.",
+          "sourceUrls": [
+            "https://nctu.edu.vn/eng/tuition-and-fees/international-tuition-by-program",
+            "https://www.nctu.edu.vn/eng/undergraduate-programs",
+            "https://nctu.edu.vn/eng/pdf/programs/Medicine.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tra-vinh-university-medicine-pharmacy",
+      "name": "Tra Vinh University School of Medicine and Pharmacy",
+      "city": "Tra Vinh",
+      "type": "Public",
+      "establishedYear": 2006,
+      "summary": "A public regional university with an official English admissions page for the 2025-2026 cycle, a clear General Medicine program page, and a directly published tuition reference for international students instead of a vague brochure-style medicine profile.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://en.tvu.edu.vn/",
+      "campusLifestyle": "Tra Vinh University reads like a broad public university that also runs a serious medicine-and-pharmacy college, not a single-focus recruitment machine. Its official pages emphasize structured admissions, language requirements, and practical student support more than glossy branding.",
+      "cityProfile": "Tra Vinh offers a smaller-city study environment than Hanoi or Ho Chi Minh City, which can suit students who want a lower-intensity daily lifestyle while still staying inside a public university system. The tradeoff is that the city profile is quieter and less internationally visible.",
+      "clinicalExposure": "The General Medicine page describes a full six-year, 234-credit doctor-of-medicine pathway with application-oriented training and evidence-based medicine framing. The official university narrative positions medicine as a genuine long-form professional degree rather than a marketing add-on.",
+      "hostelOverview": "The international admissions page is clearer on tuition, Vietnamese language preparation, and application logistics than on a hostel-by-hostel breakdown. Students should verify current accommodation and residence costs directly with the university.",
+      "indianFoodSupport": "The reviewed official materials do not advertise India-specific food or student support. Students should plan around a Vietnamese-medium public-university lifestyle rather than expect consultant-style Indian community packaging.",
+      "safetyOverview": "Tra Vinh's official pages are comparatively straightforward about language requirements, tuition references, and duration. That transparency is useful, especially because the university does not oversell General Medicine as an easy English-only route.",
+      "studentSupport": "The admissions page gives concrete instructions for international applicants, including Vietnamese-language preparation and tuition references. This is a stronger operational signal than a generic homepage with no entry details.",
+      "whyChoose": [
+        "Tra Vinh clearly publishes a 2025-2026 international admissions page with a direct tuition reference for General Medicine.",
+        "The university also has a dedicated General Medicine page that states the program lasts six years and 234 credits.",
+        "Its public-university profile can appeal to families who prefer a more institutional and less aggressively marketed medicine option."
+      ],
+      "thingsToConsider": [
+        "All undergraduate programs are taught in Vietnamese according to the university's admissions page.",
+        "International students must factor in Vietnamese-language preparation before the medical degree pathway.",
+        "Students planning India return should independently verify how a Vietnamese-medium route fits their licensing and internship plans."
+      ],
+      "bestFitFor": [
+        "Students who are comfortable with a Vietnamese-medium public-university medicine pathway.",
+        "Families seeking a source-transparent regional public institution rather than a polished private-city brand.",
+        "Applicants comparing lower-profile but operationally clearer Vietnam medicine options."
+      ],
+      "teachingHospitals": [
+        "Tra Vinh regional healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Official 2025-2026 international admissions page published",
+        "Dedicated General Medicine program page",
+        "Public university medicine pathway"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Tra Vinh 2025-2026 international undergraduate admissions page",
+          "url": "https://en.tvu.edu.vn/undergraduate-applications-are-now-open-for-the-academic-year-2024-2025-2/"
+        },
+        {
+          "label": "Tra Vinh General Medicine program page",
+          "url": "https://en.tvu.edu.vn/general-medicine/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How long is Tra Vinh University's General Medicine program?",
+          "answer": "The university's General Medicine page states that the degree lasts six years across 12 semesters and 234 credits."
+        },
+        {
+          "question": "What tuition reference does Tra Vinh publish for General Medicine in 2025-2026?",
+          "answer": "The official 2025-2026 international admissions page lists General Medicine at 65,000,000 VND per year, with a stated reference of about 2,610 USD per year."
+        },
+        {
+          "question": "Is General Medicine taught in English at Tra Vinh University?",
+          "answer": "No. The university's international admissions page says all undergraduate programs are taught in Vietnamese."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "Tra Vinh is clearer than many universities about the fact that international applicants enter a Vietnamese-medium system and may need language preparation before starting their intended major. That honesty makes the page more useful than a generic 'MBBS abroad' summary.",
+        "licensingPathway": [
+          "The official university pathway is a six-year Vietnamese-medium General Medicine degree with international admissions support.",
+          "Students planning India return should verify NMC, internship, and language suitability independently before making a decision."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Tra Vinh 2025-2026 international undergraduate admissions page",
+            "url": "https://en.tvu.edu.vn/undergraduate-applications-are-now-open-for-the-academic-year-2024-2025-2/",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Tra Vinh General Medicine program page",
+            "url": "https://en.tvu.edu.vn/general-medicine/",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from Tra Vinh's international admissions and General Medicine pages. Important correction: the page now clearly reflects that undergraduate programs are taught in Vietnamese and that General Medicine carries a published 65,000,000 VND yearly tuition reference."
+      },
+      "programs": [
+        {
+          "slug": "tra-vinh-university-medicine-pharmacy-mbbs",
+          "courseSlug": "mbbs",
+          "title": "General Medicine / Doctor of Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 65000000,
+          "officialTotalTuitionAmount": 390000000,
+          "annualTuitionUsd": 2610,
+          "totalTuitionUsd": 15660,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://en.tvu.edu.vn/general-medicine/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "General Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Tra Vinh's international admissions page states that undergraduate programs are taught in Vietnamese, with language preparation required before moving into the major."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Students should assess how a Vietnamese-medium medical route fits their intended licensing destination."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Tra Vinh's 2025-2026 international admissions page lists General Medicine at 65,000,000 VND per year and notes a separate Vietnamese-language program fee before major study begins.",
+          "sourceUrls": [
+            "https://en.tvu.edu.vn/undergraduate-applications-are-now-open-for-the-academic-year-2024-2025-2/",
+            "https://en.tvu.edu.vn/general-medicine/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nguyen-tat-thanh-university-medicine",
+      "name": "Nguyen Tat Thanh University Faculty of Medicine",
+      "city": "Ho Chi Minh City",
+      "type": "Private",
+      "establishedYear": 2011,
+      "summary": "A private Ho Chi Minh City university with a six-year medicine pathway, an official 2025 fee table for the health-sciences group, and a current program explainer that ties Y khoa to simulation facilities and partner hospitals rather than leaving the page as a bare seed listing.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://ntt.edu.vn/",
+      "campusLifestyle": "Nguyen Tat Thanh feels like a large private multi-disciplinary university with an actively promoted health-sciences arm rather than a traditional standalone medical university. Its medicine messaging combines recruitment, scholarships, and practical-training infrastructure in a way that is easier for applicants to evaluate.",
+      "cityProfile": "Ho Chi Minh City gives NTT students access to a dense hospital and healthcare network, along with the pace and cost profile of Vietnam's largest city. The city's biggest academic advantage is practical exposure and institutional connectivity rather than low living costs.",
+      "clinicalExposure": "NTTU's current medicine page emphasizes simulation labs, clinical-practice preparation, and partner-hospital exposure. The university explicitly links Y khoa training to named hospital collaborations, which makes the page more operationally useful than a generic private-university profile.",
+      "hostelOverview": "The reviewed official pages focus on admissions, tuition, facilities, and training outcomes more than on housing. Students should verify accommodation availability and commuting expectations directly with the university.",
+      "indianFoodSupport": "The official sources reviewed here do not advertise India-specific food support. Students should treat lifestyle planning as part of studying in Ho Chi Minh City rather than expect consultant-style Indian services.",
+      "safetyOverview": "NTTU's strongest trust signal is not prestige language but the fact that it publishes a concrete 2025 health-sciences fee entry and a detailed medicine-program explainer. Families should still verify clinical execution details rather than rely on marketing tone alone.",
+      "studentSupport": "The university publicly combines fee transparency, scholarship messaging, and practical program information. It is more applicant-friendly than many catalog pages, especially for students who want to understand how medicine is taught beyond a simple course title.",
+      "whyChoose": [
+        "NTTU publishes a 2025 fee table for the health-sciences group and says tuition does not increase across the course.",
+        "The university's current medicine page explicitly states the training duration is six years.",
+        "Official content highlights simulation training and hospital partnerships rather than describing medicine in generic brochure language."
+      ],
+      "thingsToConsider": [
+        "The published 15.2 million VND figure is a first-semester reference for the wider health-sciences group, not a complete line-by-line medicine cost sheet.",
+        "Students should verify exact semester billing, clinical-year structure, and any additional practical fees directly.",
+        "Applicants planning India return should independently assess language, internship, and recognition fit."
+      ],
+      "bestFitFor": [
+        "Students who want a private Ho Chi Minh City medicine option with visible simulation and hospital-training messaging.",
+        "Families looking for a university that at least publishes a 2025 health-group fee reference instead of leaving medicine pricing blank.",
+        "Applicants comfortable studying inside a larger private multi-disciplinary university system."
+      ],
+      "teachingHospitals": [
+        "Cho Ray Hospital",
+        "115 People's Hospital",
+        "Nguyen Tri Phuong Hospital",
+        "District-level and partner healthcare facilities in Ho Chi Minh City"
+      ],
+      "recognitionBadges": [
+        "Official 2025 health-sciences tuition reference published",
+        "Current Y khoa program explainer published",
+        "Six-year medicine pathway stated"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "NTTU 2025 tuition page",
+          "url": "https://tuyensinh.ntt.edu.vn/hoc-phi-nttu-2025-dang-ky-cang-som-hoc-bong-cang-to-p573.html"
+        },
+        {
+          "label": "NTTU Y khoa program page",
+          "url": "https://ntt.edu.vn/nganh-y-khoa-tai-truong-dai-hoc-nguyen-tat-thanh-moi-truong-dao-tao-bac-si-gan-voi-thuc-tien/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What tuition reference does NTTU publish for health-sciences programs in 2025?",
+          "answer": "NTTU's 2025 tuition page lists the health-sciences group, which includes Y khoa, at 15.2 million VND for semester 1 and says tuition does not increase across the full course."
+        },
+        {
+          "question": "How long is the Y khoa pathway at Nguyen Tat Thanh University?",
+          "answer": "The university's current medicine page states the training duration is six years."
+        },
+        {
+          "question": "What practical training strengths does NTTU highlight for medicine?",
+          "answer": "The official page emphasizes simulation facilities and hospital partnerships, including major Ho Chi Minh City hospitals used in training cooperation."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "NTTU is easier to assess than many Vietnam private universities because it pairs a current fee reference with a more detailed medicine explainer. Students should still confirm exact semester billing and clinical-delivery details before making a final decision.",
+        "licensingPathway": [
+          "The university presents medicine as a six-year doctor-training route backed by simulation facilities and partner hospitals.",
+          "Students planning India return should verify licensing, internship, and language implications directly rather than rely on broad health-sciences marketing."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "NTTU 2025 tuition page",
+            "url": "https://tuyensinh.ntt.edu.vn/hoc-phi-nttu-2025-dang-ky-cang-som-hoc-bong-cang-to-p573.html",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "NTTU Y khoa program page",
+            "url": "https://ntt.edu.vn/nganh-y-khoa-tai-truong-dai-hoc-nguyen-tat-thanh-moi-truong-dao-tao-bac-si-gan-voi-thuc-tien/",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from Nguyen Tat Thanh University's 2025 tuition page and current Y khoa explainer. Important correction: the page now uses a live 2025 health-sciences tuition reference and a current six-year medicine source instead of remaining a generic private-university seed profile."
+      },
+      "programs": [
+        {
+          "slug": "nguyen-tat-thanh-university-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine / Y khoa",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 30400000,
+          "officialTotalTuitionAmount": 182400000,
+          "annualTuitionUsd": 1190,
+          "totalTuitionUsd": 7140,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://ntt.edu.vn/nganh-y-khoa-tai-truong-dai-hoc-nguyen-tat-thanh-moi-truong-dao-tao-bac-si-gan-voi-thuc-tien/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Y khoa pathway",
+              "language": "Vietnamese",
+              "details": "NTTU positions medicine as a six-year domestic doctor-training pathway with simulation and hospital-linked practice."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Students should independently verify how a Vietnamese domestic doctor-training route fits their intended licensing destination."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "NTTU's 2025 tuition page lists the health-sciences group, including Y khoa, at 15.2 million VND for semester 1 and states that tuition does not increase across the course. The annual and total comparison figures here are modeled from that semester reference and should be rechecked directly with the university for exact medicine billing by term.",
+          "sourceUrls": [
+            "https://tuyensinh.ntt.edu.vn/hoc-phi-nttu-2025-dang-ky-cang-som-hoc-bong-cang-to-p573.html",
+            "https://ntt.edu.vn/nganh-y-khoa-tai-truong-dai-hoc-nguyen-tat-thanh-moi-truong-dao-tao-bac-si-gan-voi-thuc-tien/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "phenikaa-university-faculty-of-medicine",
+      "name": "Phenikaa University Faculty of Medicine",
+      "city": "Hanoi",
+      "type": "Private",
+      "establishedYear": 2017,
+      "summary": "A private Hanoi university whose official 2025 admissions notice explicitly references medicine tuition, and whose medicine-school content emphasizes simulation, integrated healthcare infrastructure, and a structured six-year-plus-practice pathway rather than a thin catalog entry.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://phenikaa-uni.edu.vn/",
+      "campusLifestyle": "Phenikaa presents medicine inside a larger, well-funded private university ecosystem with a strong technology and healthcare narrative. The tone is more research-and-infrastructure focused than many private recruitment pages, especially because the medical school is tied to a broader health ecosystem.",
+      "cityProfile": "Hanoi gives Phenikaa students access to a large academic and healthcare environment, but with the daily intensity and cost tradeoffs of Vietnam's capital. The city's advantage is network depth and institutional density rather than a low-cost student-life profile.",
+      "clinicalExposure": "Phenikaa's official medicine-program page goes beyond a generic degree listing: it describes structured clinical training, simulation, and even a post-graduation 18-month practice route within the university's health ecosystem and partner hospitals. That makes the page materially more useful than older seed content.",
+      "hostelOverview": "The reviewed official pages are much stronger on admissions and medical training than on a simple accommodation explainer. Students should verify hostel availability, commuting distance, and practical-year logistics directly.",
+      "indianFoodSupport": "The official sources reviewed here do not make an India-specific food-support promise. Students should treat daily lifestyle planning as part of living in Hanoi rather than as a university-delivered service.",
+      "safetyOverview": "Phenikaa's strongest signal is the combination of a public tuition reference, active medicine-school content, and a healthcare ecosystem that includes university-linked facilities. Families should still verify year-by-year billing and clinical execution directly before over-weighting branding.",
+      "studentSupport": "The university's admissions and medicine-school pages are richer than average for Vietnam. They give applicants a better sense of how the medical pathway is structured and what infrastructure supports training.",
+      "whyChoose": [
+        "Phenikaa's 2025 admissions notice explicitly references average medicine tuition at about 150 million VND per year.",
+        "The medicine-program page describes a six-year doctor-training route and mentions an additional 18-month post-graduation practice opportunity inside the wider healthcare ecosystem.",
+        "The university's broader health-system buildout gives the page more substance than a standard private-university medicine listing."
+      ],
+      "thingsToConsider": [
+        "The 150 million VND figure is presented as an average medicine tuition reference, and the admissions notice says the 2025 cohort has a specific applied arrangement, so students should verify the exact intake billing directly.",
+        "Phenikaa's polished infrastructure story should be checked against real clinical-language and hospital-delivery details.",
+        "Students planning India return should independently verify licensing, internship, and recognition fit."
+      ],
+      "bestFitFor": [
+        "Students looking at private Hanoi medicine options with stronger infrastructure and ecosystem positioning.",
+        "Families who value a clearer official tuition reference and a more developed program page.",
+        "Applicants comparing research-oriented private universities rather than older regional public schools."
+      ],
+      "teachingHospitals": [
+        "Phenikaa University Hospital ecosystem",
+        "Partner hospitals linked to the Phenikaa health network"
+      ],
+      "recognitionBadges": [
+        "Official 2025 medicine tuition reference published",
+        "Dedicated Bác sĩ Y khoa program page",
+        "University-linked healthcare ecosystem"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Phenikaa 2025 admissions notice",
+          "url": "https://phenikaa-uni.edu.vn/vi/post/thong-bao-tuyen-sinh/dai-hoc-phenikaa-chinh-thuc-cong-bo-thong-tin-tuyen-sinh-dai-hoc-he-chinh-quy-nam-2025"
+        },
+        {
+          "label": "Phenikaa Bác sĩ Y khoa program page",
+          "url": "https://hs.phenikaa-uni.edu.vn/vi/post/dao-tao/dao-tao-dai-hoc/chuong-trinh-dao-tao-bac-si-y-khoa"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What tuition reference does Phenikaa publish for medicine for the 2025 intake?",
+          "answer": "Phenikaa's 2025 admissions notice says the average tuition for Y khoa is about 150 million VND per year and notes that the 2025 intake has a specific applied arrangement."
+        },
+        {
+          "question": "How is the medical pathway structured at Phenikaa?",
+          "answer": "The official medicine page presents a six-year doctor-of-medicine pathway and says graduates may continue with an 18-month post-graduation practice route within the university's healthcare ecosystem and partner hospitals."
+        },
+        {
+          "question": "Why is Phenikaa stronger than a thin medicine seed page?",
+          "answer": "Because the current refresh is based on a live admissions notice and a substantial medicine-program page, not just a university homepage mention."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "Phenikaa is one of the stronger private Vietnam medicine pages to refresh because the university actually publishes both a medicine tuition reference and a detailed program page. Students should still verify exact 2025 billing and clinical-language execution directly before finalizing anything.",
+        "licensingPathway": [
+          "The university presents medicine as a six-year doctor-training route inside a broader healthcare ecosystem, with an additional 18-month practice pathway described on the official program page.",
+          "Students planning India return should verify NMC, language, internship, and post-graduation licensing suitability independently."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Phenikaa 2025 admissions notice",
+            "url": "https://phenikaa-uni.edu.vn/vi/post/thong-bao-tuyen-sinh/dai-hoc-phenikaa-chinh-thuc-cong-bo-thong-tin-tuyen-sinh-dai-hoc-he-chinh-quy-nam-2025",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "Phenikaa Bác sĩ Y khoa program page",
+            "url": "https://hs.phenikaa-uni.edu.vn/vi/post/dao-tao/dao-tao-dai-hoc/chuong-trinh-dao-tao-bac-si-y-khoa",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from Phenikaa's 2025 admissions notice and the university's medicine-program page. Important correction: the page now reflects a current medicine tuition reference and the official description of the six-year plus post-graduation practice pathway."
+      },
+      "programs": [
+        {
+          "slug": "phenikaa-university-faculty-of-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine / Bác sĩ Y khoa",
+          "durationYears": 6,
+          "officialFeeCurrency": "VND",
+          "officialAnnualTuitionAmount": 150000000,
+          "officialTotalTuitionAmount": 900000000,
+          "annualTuitionUsd": 5880,
+          "totalTuitionUsd": 35280,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://hs.phenikaa-uni.edu.vn/vi/post/dao-tao/dao-tao-dai-hoc/chuong-trinh-dao-tao-bac-si-y-khoa",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Bác sĩ Y khoa pathway",
+              "language": "Vietnamese",
+              "details": "Phenikaa's official medicine page describes a six-year doctor-training route and an additional 18-month practice pathway within the university's healthcare ecosystem and partner hospitals."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "Students should independently verify how a Vietnamese doctor-training route fits their intended licensing destination."
+          ],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Phenikaa's 2025 admissions notice says the average tuition for Y khoa is about 150 million VND per year and notes that the 2025 cohort has a specifically applied arrangement. The total shown here is a comparison estimate using that annual reference and should be confirmed directly for the intake year.",
+          "sourceUrls": [
+            "https://phenikaa-uni.edu.vn/vi/post/thong-bao-tuyen-sinh/dai-hoc-phenikaa-chinh-thuc-cong-bo-thong-tin-tuyen-sinh-dai-hoc-he-chinh-quy-nam-2025",
+            "https://hs.phenikaa-uni.edu.vn/vi/post/dao-tao/dao-tao-dai-hoc/chuong-trinh-dao-tao-bac-si-y-khoa"
+          ]
+        }
+      ]
+    }
+  ]
+}

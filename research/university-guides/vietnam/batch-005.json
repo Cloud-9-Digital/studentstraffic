@@ -1,0 +1,1273 @@
+{
+  "batchId": "vietnam-batch-005",
+  "countrySlug": "vietnam",
+  "notes": "Final Vietnam refresh batch for the remaining universities, using official university and admissions sources with cautious fee handling where public billing pages are limited.",
+  "universities": [
+    {
+      "slug": "buon-ma-thuot-medical-university",
+      "name": "Buon Ma Thuot Medical University",
+      "city": "Buon Ma Thuot",
+      "type": "Private",
+      "establishedYear": 2014,
+      "summary": "A newer Buon Ma Thuot medical university that positions itself as a regional training center for the Central Highlands, with official medicine content and an institution built around health-sciences programs rather than a generic multi-discipline catalog.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://bmtu.edu.vn/",
+      "campusLifestyle": "Buon Ma Thuot Medical University feels local and profession-focused rather than international-brand heavy. Its appeal is strongest for students who want a regional medical campus environment instead of a giant city setting.",
+      "cityProfile": "Buon Ma Thuot offers a smaller-city study environment in the Central Highlands, which can be calmer and less expensive day to day than Vietnam's biggest urban centers.",
+      "clinicalExposure": "The university's public identity is centered on health-sciences training in the region. Students should confirm hospital-network depth and clinical language arrangements directly because the strongest accessible public materials are more institutional than marketing-driven.",
+      "hostelOverview": "The reviewed official materials are stronger on institutional identity than on a detailed hostel explainer. Students should verify current accommodation options directly.",
+      "indianFoodSupport": "The official sources reviewed here do not advertise India-specific food support.",
+      "safetyOverview": "The university reads as a focused regional medical institution, but students should verify practical support and clinical placements carefully because public international-facing detail is lighter than on some larger universities.",
+      "studentSupport": "The strongest current signal is that the university is medicine-focused and regionally embedded. Students who need more structured onboarding should ask direct questions.",
+      "whyChoose": [
+        "The university is built specifically around medical and health-sciences education rather than adding medicine as a side offering.",
+        "Buon Ma Thuot can suit students who prefer a smaller regional city.",
+        "The school is positioned inside the Central Highlands healthcare context, which can matter for regional clinical exposure."
+      ],
+      "thingsToConsider": [
+        "Public fee detail is less straightforward than at the strongest Vietnam pages.",
+        "Students should verify clinical-hospital partnerships and language arrangements directly.",
+        "Applicants planning India return should independently verify licensing and internship fit."
+      ],
+      "bestFitFor": [
+        "Students open to a regional-city medical campus.",
+        "Families comparing newer Vietnam medicine providers outside Hanoi and Ho Chi Minh City.",
+        "Applicants who are comfortable verifying operational details directly."
+      ],
+      "teachingHospitals": [
+        "Central Highlands regional healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Medicine-focused university",
+        "Regional Central Highlands medical campus"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Buon Ma Thuot Medical University website",
+          "url": "https://bmtu.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Buon Ma Thuot Medical University a broad multi-disciplinary university?",
+          "answer": "No. Its public identity is built around medicine and health-sciences training rather than a very broad academic portfolio."
+        },
+        {
+          "question": "What is the main attraction of this university?",
+          "answer": "Its main attraction is a regionally focused medical campus in Buon Ma Thuot rather than a big-city brand."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "This page is best read as a cautious regional medical-school profile rather than a heavily commercial international-student funnel.",
+        "licensingPathway": [
+          "Students should verify current licensing and language fit directly before treating the regional campus profile as enough."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Buon Ma Thuot Medical University website",
+            "url": "https://bmtu.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials. Public admissions and tuition detail is lighter than on the strongest Vietnam university pages, so this profile remains more cautious."
+      },
+      "programs": [
+        {
+          "slug": "buon-ma-thuot-medical-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialProgramUrl": "https://bmtu.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify current curriculum delivery and hospital-practice arrangements directly with the university."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "A clear public 2025 medicine fee sheet was not captured in the reviewed official sources, so applicants should request the current tuition schedule directly from the university.",
+          "sourceUrls": [
+            "https://bmtu.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "phan-chau-trinh-university",
+      "name": "Phan Chau Trinh University",
+      "city": "Da Nang",
+      "type": "Private",
+      "establishedYear": 2007,
+      "summary": "A Da Nang private university with a clearly promoted health-sciences identity, medicine-linked clinical ecosystem messaging, and official tuition references that are stronger than many smaller private Vietnam schools.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://pctu.edu.vn/",
+      "campusLifestyle": "Phan Chau Trinh presents itself as a practical private university with a noticeable healthcare and hospital-training orientation rather than a generic city campus.",
+      "cityProfile": "Da Nang offers a more livable urban environment than Vietnam's two biggest metros while still providing access to a meaningful healthcare ecosystem.",
+      "clinicalExposure": "The university publicly emphasizes its hospital-linked medical training environment and treats medicine as a serious long-duration professional program rather than a casual add-on.",
+      "hostelOverview": "The reviewed sources are better on tuition and training identity than on accommodation detail, so students should verify housing directly.",
+      "indianFoodSupport": "The official sources reviewed here do not advertise India-specific food support.",
+      "safetyOverview": "PCTU is clearer than many smaller private schools about medicine fees and training focus, which is a useful trust signal.",
+      "studentSupport": "The university provides more operational information than many lightly detailed private-school pages, especially around tuition and health-sciences positioning.",
+      "whyChoose": [
+        "The university actively positions medicine inside a healthcare-linked training model.",
+        "Official tuition references are easier to find than on many comparable private schools.",
+        "Da Nang is a practical alternative to Hanoi or Ho Chi Minh City."
+      ],
+      "thingsToConsider": [
+        "Students should verify exact clinical delivery and language use in practice.",
+        "As with other private Vietnam options, applicants should independently assess long-term reputation and India-return fit.",
+        "Published tuition should still be rechecked for the exact intake year."
+      ],
+      "bestFitFor": [
+        "Students looking at private Da Nang medicine options.",
+        "Families who want a more visible healthcare-training identity than a generic private campus offers."
+      ],
+      "teachingHospitals": [
+        "Da Nang healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Private university with medicine pathway",
+        "Official tuition reference available"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "PCTU admissions and tuition page",
+          "url": "https://pctu.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does Phan Chau Trinh University publicly discuss medicine tuition?",
+          "answer": "Yes. Public PCTU materials include tuition references for medicine, which is stronger than many smaller private-school listings."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "PCTU is best understood as a healthcare-oriented private university rather than a broad generic college with a medicine label.",
+        "licensingPathway": [
+          "Students should verify current licensing, internship, and clinical-language fit independently."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "PCTU official website",
+            "url": "https://pctu.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials and admissions references."
+      },
+      "programs": [
+        {
+          "slug": "phan-chau-trinh-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialAnnualTuitionAmount": 80000000,
+          "officialTotalTuitionAmount": 480000000,
+          "officialFeeCurrency": "VND",
+          "annualTuitionUsd": 3140,
+          "totalTuitionUsd": 18840,
+          "officialProgramUrl": "https://pctu.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "PCTU presents medicine as a full professional pathway in its health-sciences ecosystem."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "A published tuition reference for medicine is available through current official university materials. Applicants should reconfirm the exact intake-year billing directly.",
+          "sourceUrls": [
+            "https://pctu.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tan-tao-university-school-of-medicine",
+      "name": "Tan Tao University School of Medicine",
+      "city": "Duc Hoa Ha",
+      "type": "Private",
+      "establishedYear": 2010,
+      "summary": "A private Long An university with a visible School of Medicine identity, English-facing institutional material, and a medicine route that has historically been marketed as a premium, internationally oriented program.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://ttu.edu.vn/en/",
+      "campusLifestyle": "Tan Tao presents a more internationally styled private-campus image than many regional universities. Its medicine profile feels designed for students comparing premium private options rather than public domestic routes.",
+      "cityProfile": "The Long An location is quieter than Ho Chi Minh City while still sitting within reach of the broader southern Vietnam healthcare and education corridor.",
+      "clinicalExposure": "The strongest public signal is the existence of a distinct School of Medicine and English-facing institutional presentation. Students should still verify current hospital-practice delivery and cohort scale directly.",
+      "hostelOverview": "Tan Tao's public-facing materials are stronger on institutional positioning than on a simple up-to-date hostel explainer.",
+      "indianFoodSupport": "The official sources reviewed here do not make an India-specific food-services promise.",
+      "safetyOverview": "Tan Tao should be treated as a premium private medicine option that still requires careful verification around present-day fee policy and training execution.",
+      "studentSupport": "The university is more international-facing than many Vietnam medical schools, but students should still ask direct practical questions instead of assuming packaged support.",
+      "whyChoose": [
+        "Tan Tao has a distinct medicine-school identity.",
+        "The university is more English-facing than many comparable regional schools.",
+        "It can appeal to families comparing premium private medicine options."
+      ],
+      "thingsToConsider": [
+        "Students should verify current cohort strength, hospital training, and language delivery directly.",
+        "Private premium positioning does not automatically answer India-return questions.",
+        "Fee policy should be reconfirmed for the current intake."
+      ],
+      "bestFitFor": [
+        "Students comparing premium private medicine routes in southern Vietnam."
+      ],
+      "teachingHospitals": [
+        "Southern Vietnam healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Distinct School of Medicine",
+        "English-facing institutional website"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Tan Tao University School of Medicine",
+          "url": "https://ttu.edu.vn/en/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How should students interpret Tan Tao University's medicine positioning?",
+          "answer": "It is best treated as a premium private-school medicine option with a distinct institutional identity, not as a low-cost public pathway."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "Tan Tao's medicine appeal is mostly in its private-campus positioning and English-facing institutional presentation.",
+        "licensingPathway": [
+          "Students should independently verify current licensing, internship, and post-graduation fit."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Tan Tao University official English website",
+            "url": "https://ttu.edu.vn/en/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "tan-tao-university-school-of-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine / MD",
+          "durationYears": 6,
+          "officialAnnualTuitionAmount": 150000000,
+          "officialTotalTuitionAmount": 900000000,
+          "officialFeeCurrency": "VND",
+          "annualTuitionUsd": 5880,
+          "totalTuitionUsd": 35280,
+          "officialProgramUrl": "https://ttu.edu.vn/en/",
+          "medium": "English + Vietnamese Support",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "English + Vietnamese Support",
+              "details": "Students should verify the present-day teaching and clinical language model directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Tan Tao has historically been positioned as a premium private medicine option. Applicants should verify the exact current medicine billing schedule directly with the university for the intake year.",
+          "sourceUrls": [
+            "https://ttu.edu.vn/en/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vietnam-military-medical-university",
+      "name": "Vietnam Military Medical University Faculty of Medicine",
+      "city": "Hanoi",
+      "type": "Public",
+      "establishedYear": 1949,
+      "summary": "A historic military medical academy in Hanoi whose training identity is tied to the armed-forces system and national healthcare service rather than a standard international-student recruitment model.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://hvqy.edu.vn/",
+      "campusLifestyle": "This is not a typical private or civilian-campus study environment. The academy should be understood through its military structure and discipline first.",
+      "cityProfile": "Hanoi gives the academy access to a dense medical ecosystem, but the defining characteristic here is military training culture rather than city lifestyle.",
+      "clinicalExposure": "The academy's value comes from its deep military-medical identity and long institutional history. International students and civilians should verify exactly which pathways are open to them before assuming the page functions like a standard university catalog.",
+      "hostelOverview": "Accommodation and student-life assumptions should not be made here because the academy runs inside a distinct military framework.",
+      "indianFoodSupport": "The official sources reviewed here do not position the academy as an India-focused or broad international lifestyle product.",
+      "safetyOverview": "The main caution is fit, not legitimacy. This institution has a strong historical identity, but it is not structured like a normal consultant-driven MBBS-abroad option.",
+      "studentSupport": "Students must clarify eligibility, civilian entry pathways, and practical enrollment conditions directly with the academy.",
+      "whyChoose": [
+        "The academy has a long military-medical history.",
+        "Its training identity is stronger and more specialized than a generic medicine page.",
+        "It can appeal to students specifically looking for a disciplined public-service medical institution."
+      ],
+      "thingsToConsider": [
+        "This is not a typical international medicine route.",
+        "Students should verify whether the relevant pathway is actually open to them.",
+        "Civilian tuition and entry conditions should be confirmed directly."
+      ],
+      "bestFitFor": [
+        "Students specifically researching military-medical education in Vietnam."
+      ],
+      "teachingHospitals": [
+        "Military medical training ecosystem"
+      ],
+      "recognitionBadges": [
+        "Historic military medical academy",
+        "Public institution"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Vietnam Military Medical University website",
+          "url": "https://hvqy.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Vietnam Military Medical University a standard MBBS-abroad option?",
+          "answer": "No. It should be evaluated as a military medical academy with distinct admission and training conditions rather than as a generic international university listing."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "This page is intentionally cautious because fit and pathway eligibility matter more here than generic sales-style summaries.",
+        "licensingPathway": [
+          "Students should verify civilian eligibility, funding, and licensing implications directly."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Vietnam Military Medical University website",
+            "url": "https://hvqy.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official academy materials. This remains a cautious profile because it operates in a military framework rather than a standard international recruitment model."
+      },
+      "programs": [
+        {
+          "slug": "vietnam-military-medical-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialProgramUrl": "https://hvqy.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Military medical pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify current civilian-access conditions directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "A clear civilian medicine fee schedule was not captured in the reviewed public sources. Applicants should verify the applicable pathway and funding structure directly with the academy.",
+          "sourceUrls": [
+            "https://hvqy.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vinh-medical-university",
+      "name": "Vinh Medical University Faculty of Medicine",
+      "city": "Vinh",
+      "type": "Public",
+      "establishedYear": 2007,
+      "summary": "A public medical university in Vinh with a direct institutional health-sciences identity and a regional role in training healthcare professionals for north-central Vietnam.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://vmu.edu.vn/",
+      "campusLifestyle": "Vinh Medical University is a straightforward public medical campus rather than a lifestyle-first international brand.",
+      "cityProfile": "Vinh gives students a regional-city environment with a public medical-school feel and less internationalized daily life than the major metros.",
+      "clinicalExposure": "The university's strength is its role as a dedicated public medical institution rather than its polished international recruitment materials.",
+      "hostelOverview": "Students should verify accommodation directly because the most visible public materials are more institutional than lifestyle-focused.",
+      "indianFoodSupport": "No India-specific food support is advertised in the reviewed sources.",
+      "safetyOverview": "This is best read as a public regional medical-school option with a more domestic profile.",
+      "studentSupport": "Applicants should expect a practical public-university environment and verify support needs directly.",
+      "whyChoose": [
+        "Dedicated public medical university identity.",
+        "Regional training role in north-central Vietnam.",
+        "Can suit students comparing domestic public-school pathways."
+      ],
+      "thingsToConsider": [
+        "International-facing information is lighter than at the strongest Vietnam pages.",
+        "Students should verify exact current fee rules and clinical arrangements directly."
+      ],
+      "bestFitFor": [
+        "Students open to a regional public medical-school environment."
+      ],
+      "teachingHospitals": [
+        "North-central Vietnam healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Public medical university"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Vinh Medical University website",
+          "url": "https://vmu.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How should students view Vinh Medical University?",
+          "answer": "As a regional public medical university with a domestic training profile rather than a highly packaged international-student offering."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "Vinh Medical University fits students who are comfortable with a more domestic public-school environment.",
+        "licensingPathway": [
+          "Students should independently verify licensing and language fit for their destination country."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Vinh Medical University website",
+            "url": "https://vmu.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "vinh-medical-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialAnnualTuitionAmount": 34850000,
+          "officialTotalTuitionAmount": 209100000,
+          "officialFeeCurrency": "VND",
+          "annualTuitionUsd": 1370,
+          "totalTuitionUsd": 8220,
+          "officialProgramUrl": "https://vmu.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify term-by-term billing and current curriculum delivery directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Public Vinh Medical University materials support a regulated-fee public-school profile. Applicants should reconfirm the current year-by-year billing directly with the university.",
+          "sourceUrls": [
+            "https://vmu.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tay-nguyen-university-medicine-pharmacy",
+      "name": "Tay Nguyen University Faculty of Medicine and Pharmacy",
+      "city": "Buon Ma Thuot",
+      "type": "Public",
+      "establishedYear": 1977,
+      "summary": "A long-established public university in the Central Highlands with a domestic medical-school pathway and a stronger regional-service identity than a polished international recruitment profile.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://ttn.edu.vn/",
+      "campusLifestyle": "Tay Nguyen University is a broad regional public university, so medicine sits inside a more traditional public-campus framework.",
+      "cityProfile": "Buon Ma Thuot offers a calmer Central Highlands setting that can appeal to students who do not want the pace of the largest cities.",
+      "clinicalExposure": "The university's strength is regional healthcare relevance and public-institution continuity rather than aggressive international marketing.",
+      "hostelOverview": "Students should verify accommodation directly because public detail is stronger on academics than on lifestyle.",
+      "indianFoodSupport": "The reviewed official sources do not advertise India-specific support.",
+      "safetyOverview": "Tay Nguyen University should be read as a domestic public-school medicine option rooted in regional service.",
+      "studentSupport": "International applicants should verify operational details directly rather than assume a concierge-style admissions process.",
+      "whyChoose": [
+        "Long-established public university in the Central Highlands.",
+        "Regional-service identity can matter for public healthcare training.",
+        "Can suit students comparing traditional public-school options."
+      ],
+      "thingsToConsider": [
+        "International-facing detail is lighter than at the best-refreshed Vietnam pages.",
+        "Students should verify exact billing and clinical-language arrangements directly."
+      ],
+      "bestFitFor": [
+        "Students open to a domestic public-university medicine route in a regional city."
+      ],
+      "teachingHospitals": [
+        "Central Highlands regional healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Public university",
+        "Regional medical training role"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Tay Nguyen University website",
+          "url": "https://ttn.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What kind of medicine environment does Tay Nguyen University offer?",
+          "answer": "It offers a more domestic, public, regionally rooted training environment rather than a polished international-track experience."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "This is a public regional-university medicine page, so students should value fit and verification over glossy branding.",
+        "licensingPathway": [
+          "Applicants should independently verify licensing, language, and internship fit."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Tay Nguyen University website",
+            "url": "https://ttn.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "tay-nguyen-university-medicine-pharmacy-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialProgramUrl": "https://ttn.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify current tuition and training delivery directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Current official sources reviewed for this refresh did not yield a clean medicine fee sheet suitable for direct quotation, so applicants should request the present tuition schedule from the university.",
+          "sourceUrls": [
+            "https://ttn.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "da-nang-university-medical-technology-pharmacy",
+      "name": "Da Nang University of Medical Technology and Pharmacy",
+      "city": "Da Nang",
+      "type": "Public",
+      "establishedYear": 2013,
+      "summary": "A specialized public health-sciences university in Da Nang that should be read as a profession-focused institution rather than a broad multi-faculty campus, with medicine and applied clinical fields linked to a practical healthcare training context.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://dhktyduocdn.edu.vn/",
+      "campusLifestyle": "The school reads as a focused professional campus where health sciences are central rather than peripheral.",
+      "cityProfile": "Da Nang gives the university access to a strong regional healthcare environment while remaining more manageable than the largest Vietnamese metros.",
+      "clinicalExposure": "Its specialization is the core strength. Students should verify the exact structure of the medicine pathway and the hospital training network directly.",
+      "hostelOverview": "Accommodation detail is lighter than admissions and academics in the reviewed public material.",
+      "indianFoodSupport": "No India-specific support is advertised in the reviewed official sources.",
+      "safetyOverview": "This is best read as a focused public health-sciences institution rather than a marketing-heavy international option.",
+      "studentSupport": "Students who want high-touch international onboarding should verify expectations directly.",
+      "whyChoose": [
+        "Specialized health-sciences institutional identity.",
+        "Da Nang regional healthcare environment.",
+        "Public-school profile rather than a generic private sales page."
+      ],
+      "thingsToConsider": [
+        "Students should verify the exact medicine-specific route because the university also has strong non-medicine health programs.",
+        "Current tuition should be reconfirmed directly for the intake year."
+      ],
+      "bestFitFor": [
+        "Students looking for a specialized public health-sciences university in Da Nang."
+      ],
+      "teachingHospitals": [
+        "Da Nang regional healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Specialized public health-sciences university"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Da Nang University of Medical Technology and Pharmacy website",
+          "url": "https://dhktyduocdn.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How should students interpret this university compared with broad private campuses?",
+          "answer": "It is a more specialized public health-sciences institution, so its value lies in professional focus rather than lifestyle branding."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "This is a profession-focused public-school option for students who care more about specialization than marketing polish.",
+        "licensingPathway": [
+          "Students should independently verify the precise medicine route and destination-country licensing fit."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Da Nang University of Medical Technology and Pharmacy website",
+            "url": "https://dhktyduocdn.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "da-nang-university-medical-technology-pharmacy-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialProgramUrl": "https://dhktyduocdn.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify medicine-specific curriculum and tuition directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "A clean medicine fee sheet suitable for direct quotation was not captured in the reviewed public sources. Applicants should request the current tuition schedule directly.",
+          "sourceUrls": [
+            "https://dhktyduocdn.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hai-phong-university-medicine-pharmacy",
+      "name": "Hai Phong University of Medicine and Pharmacy",
+      "city": "Hai Phong",
+      "type": "Public",
+      "establishedYear": 1979,
+      "summary": "A long-established public medical university in Hai Phong with a strong domestic training profile and a straightforward institutional identity rooted in medicine, pharmacy, and public health professions.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://hpmu.edu.vn/hpmu/",
+      "campusLifestyle": "Hai Phong University of Medicine and Pharmacy feels like a traditional public medical university rather than an international-product campus.",
+      "cityProfile": "Hai Phong offers a major northern city environment with more domestic character than Hanoi's central private-university scene.",
+      "clinicalExposure": "The university's value lies in its long institutional continuity and clear public medical-school role rather than in international marketing.",
+      "hostelOverview": "The most visible public pages are stronger on institutional content than on a simple accommodation guide.",
+      "indianFoodSupport": "The reviewed official sources do not advertise India-specific support.",
+      "safetyOverview": "This is a solid public domestic medicine profile, but international applicants should expect to verify practical details directly.",
+      "studentSupport": "Students should approach HPMU as a traditional public medical university and clarify support expectations directly.",
+      "whyChoose": [
+        "Long-established public medical university.",
+        "Domestic institutional depth in northern Vietnam.",
+        "Clear medicine-and-pharmacy identity."
+      ],
+      "thingsToConsider": [
+        "International-facing detail is lighter than on the strongest refreshed private pages.",
+        "Students should verify fee rules and practical entry details directly."
+      ],
+      "bestFitFor": [
+        "Students open to a traditional public medical-university environment in northern Vietnam."
+      ],
+      "teachingHospitals": [
+        "Hai Phong regional healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Long-established public medical university"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Hai Phong University of Medicine and Pharmacy website",
+          "url": "https://hpmu.edu.vn/hpmu/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What kind of medical-school profile does HPMU represent?",
+          "answer": "It represents a traditional domestic public medical-university model rather than a heavily internationalized recruitment brand."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "HPMU suits students who value public-school continuity and can work with a more domestic information environment.",
+        "licensingPathway": [
+          "Students should independently verify language, licensing, and internship implications."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Hai Phong University of Medicine and Pharmacy website",
+            "url": "https://hpmu.edu.vn/hpmu/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "hai-phong-university-medicine-pharmacy-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialProgramUrl": "https://hpmu.edu.vn/hpmu/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify current fee schedules and curriculum delivery directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "A clean current medicine fee sheet was not captured from the reviewed public sources for direct quotation in this refresh. Applicants should request the latest tuition schedule from the university.",
+          "sourceUrls": [
+            "https://hpmu.edu.vn/hpmu/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "thai-binh-university-medicine-pharmacy",
+      "name": "Thai Binh University of Medicine and Pharmacy",
+      "city": "Thai Binh",
+      "type": "Public",
+      "establishedYear": 1968,
+      "summary": "A long-established public medical university with a domestic academic profile, strong institutional history, and a traditional medicine-and-pharmacy identity rather than a sales-oriented international-student presence.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://tbump.edu.vn/",
+      "campusLifestyle": "Thai Binh University of Medicine and Pharmacy reads as a classic public professional university with more institutional seriousness than lifestyle marketing.",
+      "cityProfile": "Thai Binh offers a quieter provincial-city environment that suits students who are comfortable with a less internationally styled campus experience.",
+      "clinicalExposure": "Its value comes from long public-institution continuity and domestic healthcare training relevance.",
+      "hostelOverview": "Students should verify housing directly because the most accessible public detail is more institutional than lifestyle-focused.",
+      "indianFoodSupport": "The reviewed official sources do not advertise India-specific support.",
+      "safetyOverview": "This is a traditional public medical-university option, so fit matters more than branding.",
+      "studentSupport": "Applicants should expect a domestic public-university environment and verify practical support directly.",
+      "whyChoose": [
+        "Long-established public medical university.",
+        "Traditional medicine-and-pharmacy identity.",
+        "Can suit students comparing domestic public-school pathways."
+      ],
+      "thingsToConsider": [
+        "International-facing detail is limited.",
+        "Students should independently verify current tuition and operational details."
+      ],
+      "bestFitFor": [
+        "Students open to a traditional public medical-school environment in northern Vietnam."
+      ],
+      "teachingHospitals": [
+        "Thai Binh regional healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Long-established public medical university"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Thai Binh University of Medicine and Pharmacy website",
+          "url": "https://tbump.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How should students interpret TBUMP compared with private Vietnam options?",
+          "answer": "It is better understood as a traditional public professional university with a domestic training profile rather than a highly marketed private alternative."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "TBUMP fits students who prioritize public-school continuity and can navigate a more domestic information environment.",
+        "licensingPathway": [
+          "Students should independently verify licensing and language fit for their plans."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Thai Binh University of Medicine and Pharmacy website",
+            "url": "https://tbump.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "thai-binh-university-medicine-pharmacy-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialProgramUrl": "https://tbump.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify the present fee schedule and delivery structure directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "A clean current public medicine fee sheet was not captured in the reviewed sources for this refresh, so applicants should request the latest tuition schedule directly from the university.",
+          "sourceUrls": [
+            "https://tbump.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "university-of-danang-medicine-pharmacy",
+      "name": "University of Danang Faculty of Medicine and Pharmacy",
+      "city": "Da Nang",
+      "type": "Public",
+      "establishedYear": 2012,
+      "summary": "A public medicine-and-pharmacy faculty inside the University of Danang system, with a clear six-year medicine route and a strong fit for students who want a public university framework in a major central Vietnam city.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://smp.udn.vn/",
+      "campusLifestyle": "This is a public faculty inside a larger university system, so the environment feels more academic and structured than commercial.",
+      "cityProfile": "Da Nang gives the faculty access to a major central Vietnam urban and healthcare environment while staying more manageable than the largest cities.",
+      "clinicalExposure": "The faculty's value comes from public-system medicine training and a serious academic profile inside the University of Danang network.",
+      "hostelOverview": "Students should verify housing through current university channels because the strongest public sources are more academic than lifestyle-driven.",
+      "indianFoodSupport": "The reviewed official sources do not advertise India-specific support.",
+      "safetyOverview": "This is one of the clearer public-faculty medicine options in central Vietnam, especially for students who prefer university-system credibility over private branding.",
+      "studentSupport": "Students should still verify admissions operations and clinical practice details directly.",
+      "whyChoose": [
+        "Public-system medicine faculty inside the University of Danang.",
+        "Strong Da Nang location for healthcare access.",
+        "A good fit for students who prefer structured public-university medicine."
+      ],
+      "thingsToConsider": [
+        "The faculty environment is more academic and domestic than an international-product page.",
+        "Students should independently verify licensing and language fit."
+      ],
+      "bestFitFor": [
+        "Students who want a public-system medicine faculty in Da Nang."
+      ],
+      "teachingHospitals": [
+        "Da Nang regional healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Public-system medicine faculty",
+        "University of Danang member unit"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "University of Danang School of Medicine and Pharmacy",
+          "url": "https://smp.udn.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How should students view this faculty compared with private medicine schools?",
+          "answer": "It is a public university-system option with more academic structure and less commercial marketing than many private pages."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "This profile suits students who value a public-system medicine faculty in Da Nang over a more branded private offering.",
+        "licensingPathway": [
+          "Students should independently verify destination-country licensing and language fit."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "University of Danang School of Medicine and Pharmacy website",
+            "url": "https://smp.udn.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official faculty materials."
+      },
+      "programs": [
+        {
+          "slug": "university-of-danang-medicine-pharmacy-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialAnnualTuitionAmount": 31110000,
+          "officialTotalTuitionAmount": 186660000,
+          "officialFeeCurrency": "VND",
+          "annualTuitionUsd": 1220,
+          "totalTuitionUsd": 7320,
+          "officialProgramUrl": "https://smp.udn.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify exact intake-year billing and curriculum delivery directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Current public admissions references support a regulated public-school tuition profile for medicine. Applicants should reconfirm the exact intake-year billing directly.",
+          "sourceUrls": [
+            "https://smp.udn.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vietnam-university-of-traditional-medicine",
+      "name": "Vietnam University of Traditional Medicine",
+      "city": "Hanoi",
+      "type": "Public",
+      "establishedYear": 1964,
+      "summary": "A public Hanoi institution centered on traditional medicine and related health disciplines, best understood as a specialist university with a distinct academic identity rather than a generic MBBS-abroad option.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://hvydct.edu.vn/",
+      "campusLifestyle": "The university has a specialized academic identity that is narrower and more tradition-rooted than most broad medical universities.",
+      "cityProfile": "Hanoi gives the institution a major academic and healthcare-city context, but the defining factor is its traditional-medicine focus rather than city lifestyle.",
+      "clinicalExposure": "Students should treat this as a specialized traditional-medicine university and verify how that aligns with their career and licensing goals before shortlisting it as a general medicine alternative.",
+      "hostelOverview": "Students should verify housing directly because the institution's strongest public materials are academic and administrative.",
+      "indianFoodSupport": "The reviewed official sources do not advertise India-specific support.",
+      "safetyOverview": "The key issue here is fit. This is a specialist institution, so students should not treat it as interchangeable with a standard general-medicine school.",
+      "studentSupport": "Applicants should ask direct questions about program focus, career outcomes, and licensing suitability.",
+      "whyChoose": [
+        "Distinct specialist identity in traditional medicine.",
+        "Public university setting in Hanoi.",
+        "Useful for students intentionally researching traditional-medicine education."
+      ],
+      "thingsToConsider": [
+        "This should not be confused with a generic general-medicine school.",
+        "Students should independently verify professional and licensing fit for their goals."
+      ],
+      "bestFitFor": [
+        "Students specifically interested in traditional medicine and related specialist pathways."
+      ],
+      "teachingHospitals": [
+        "Traditional medicine training ecosystem in Hanoi"
+      ],
+      "recognitionBadges": [
+        "Specialist public university",
+        "Traditional medicine focus"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Vietnam University of Traditional Medicine website",
+          "url": "https://hvydct.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Should students treat this like a normal general-medicine university?",
+          "answer": "No. It is a specialist traditional-medicine institution and should be evaluated on that basis."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "This page is intentionally specialist and cautious because fit matters more than broad appeal here.",
+        "licensingPathway": [
+          "Students should verify destination-country recognition and pathway suitability independently."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Vietnam University of Traditional Medicine website",
+            "url": "https://hvydct.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "vietnam-university-of-traditional-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Traditional Medicine / Related Medical Pathway",
+          "durationYears": 6,
+          "officialProgramUrl": "https://hvydct.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Traditional medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should confirm the exact program and its recognition relevance for their goals."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Applicants should request the current tuition schedule for the exact traditional-medicine pathway they are considering.",
+          "sourceUrls": [
+            "https://hvydct.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vo-truong-toan-university",
+      "name": "Vo Truong Toan University Faculty of Medicine",
+      "city": "Tan Phu Thanh",
+      "type": "Private",
+      "establishedYear": 2011,
+      "summary": "A private Mekong Delta university with a visible medicine pathway and a more regionally grounded private-campus profile than the best-known Hanoi or Ho Chi Minh City brands.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://vttu.edu.vn/",
+      "campusLifestyle": "Vo Truong Toan feels like a regionally focused private university with a practical campus identity rather than a luxury brand image.",
+      "cityProfile": "Its Mekong Delta location can appeal to students who want a quieter setting than Vietnam's biggest cities.",
+      "clinicalExposure": "Students should verify current hospital-network depth and clinical-delivery details directly, because the strongest public information is institutional rather than highly detailed.",
+      "hostelOverview": "Students should confirm accommodation directly with the university.",
+      "indianFoodSupport": "No India-specific support is advertised in the reviewed official sources.",
+      "safetyOverview": "This is best read as a regional private medicine option that requires direct operational verification.",
+      "studentSupport": "Applicants should ask practical questions directly instead of assuming packaged international support.",
+      "whyChoose": [
+        "Private regional-campus alternative in the Mekong Delta.",
+        "Distinct medicine presence inside the university portfolio.",
+        "Can suit students who prefer a quieter setting."
+      ],
+      "thingsToConsider": [
+        "Students should verify current medicine fees and clinical delivery directly.",
+        "Private regional positioning should be weighed against long-term recognition and destination-country plans."
+      ],
+      "bestFitFor": [
+        "Students open to a regional private-campus medicine route in southern Vietnam."
+      ],
+      "teachingHospitals": [
+        "Mekong Delta healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Private regional medicine option"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Vo Truong Toan University website",
+          "url": "https://vttu.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What kind of option is Vo Truong Toan University for medicine?",
+          "answer": "It is a regional private-university option in southern Vietnam rather than a major-metro public-school route."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "This profile suits students comparing quieter regional private-campus options in the Mekong Delta.",
+        "licensingPathway": [
+          "Students should independently verify licensing and internship fit."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Vo Truong Toan University website",
+            "url": "https://vttu.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "vo-truong-toan-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialAnnualTuitionAmount": 61500000,
+          "officialTotalTuitionAmount": 369000000,
+          "officialFeeCurrency": "VND",
+          "annualTuitionUsd": 2410,
+          "totalTuitionUsd": 14460,
+          "officialProgramUrl": "https://vttu.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify current billing and clinical arrangements directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Public university references support a medicine tuition benchmark around 61.5 million VND per student per year. Applicants should confirm the exact intake-year schedule directly.",
+          "sourceUrls": [
+            "https://vttu.edu.vn/"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "duy-tan-university-faculty-of-medicine",
+      "name": "Duy Tan University Faculty of Medicine",
+      "city": "Da Nang",
+      "type": "Private",
+      "establishedYear": 2013,
+      "summary": "A well-known private Da Nang university whose medicine faculty benefits from a stronger institutional brand, broader research ecosystem, and more visible healthcare partnerships than many regional private competitors.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://duytan.edu.vn/",
+      "campusLifestyle": "Duy Tan feels more mature and better resourced than many private university pages in the Vietnam catalog. The broader university ecosystem is one of its main strengths.",
+      "cityProfile": "Da Nang is a major advantage here, offering a strong city base without the same scale and living pressure as Hanoi or Ho Chi Minh City.",
+      "clinicalExposure": "Duy Tan's medical appeal comes partly from the university's wider academic network and stronger institutional visibility. Students should still verify exact medicine-track delivery and billing directly for the intake year.",
+      "hostelOverview": "Accommodation details should be confirmed directly through the university's current channels.",
+      "indianFoodSupport": "The reviewed official sources do not advertise India-specific support.",
+      "safetyOverview": "Duy Tan is one of the more credible private university brands in Da Nang, but students should still verify medicine-specific operational details rather than relying only on overall university reputation.",
+      "studentSupport": "The broader university brand is stronger than many peers, which can improve administrative confidence, but medicine-specific support should still be checked directly.",
+      "whyChoose": [
+        "Stronger overall university brand than many private Vietnam competitors.",
+        "Good Da Nang location.",
+        "Broader academic and research ecosystem can strengthen the medicine environment."
+      ],
+      "thingsToConsider": [
+        "Students should verify exact medicine tuition and clinical delivery directly for the intake year.",
+        "Overall university reputation should not replace medicine-specific due diligence."
+      ],
+      "bestFitFor": [
+        "Students looking for a stronger-brand private university in Da Nang."
+      ],
+      "teachingHospitals": [
+        "Da Nang healthcare ecosystem"
+      ],
+      "recognitionBadges": [
+        "Established private university brand",
+        "Da Nang location"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Duy Tan University website",
+          "url": "https://duytan.edu.vn/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the main appeal of Duy Tan University for medicine?",
+          "answer": "The main appeal is the broader university's stronger brand and ecosystem in Da Nang, combined with a private medicine pathway."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "Duy Tan is one of the more credible private-brand options in central Vietnam, but medicine-specific verification still matters.",
+        "licensingPathway": [
+          "Students should independently verify licensing, language, and internship fit."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "Duy Tan University website",
+            "url": "https://duytan.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Refreshed from official university materials."
+      },
+      "programs": [
+        {
+          "slug": "duy-tan-university-faculty-of-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialProgramUrl": "https://duytan.edu.vn/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Doctor of Medicine pathway",
+              "language": "Vietnamese",
+              "details": "Students should verify the present-day tuition and clinical-delivery model directly."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [],
+          "intakeMonths": [],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "Applicants should request the current medicine fee schedule directly from the university for the relevant intake year.",
+          "sourceUrls": [
+            "https://duytan.edu.vn/"
+          ]
+        }
+      ]
+    }
+  ]
+}

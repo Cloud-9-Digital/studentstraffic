@@ -1,0 +1,188 @@
+{
+  "batchId": "georgia-batch-003",
+  "countrySlug": "georgia",
+  "notes": "Official-source research draft for Georgian National University SEU. Keep unpublished until reviewed through the research queue workflow.",
+  "universities": [
+    {
+      "slug": "seu-georgian-national-university",
+      "name": "Georgian National University SEU",
+      "city": "Tbilisi",
+      "type": "Private",
+      "establishedYear": 2001,
+      "summary": "A private Tbilisi university with an English-medium six-year Medical Doctor program, a current published 2025 international fee sheet, visible student-life and safety infrastructure, and a medicine curriculum built around 360 ECTS across 12 semesters.",
+      "featured": false,
+      "published": false,
+      "officialWebsite": "https://www.seu.edu.ge/",
+      "campusLifestyle": "SEU's official international-student materials present an active metropolitan campus with student clubs, conferences, sports, cultural activities, and a large student-affairs structure rather than a quiet standalone medical campus. The orientation guide repeatedly emphasizes organized student life, funded initiatives, and ongoing extracurricular participation.",
+      "cityProfile": "SEU is positioned in Tbilisi, Georgia's capital, and its international-student documents frame the location in practical commuter terms, including proximity to the 300 Aragveli metro area and regular day-to-day access to the city's broader academic and social environment.",
+      "clinicalExposure": "SEU's medicine program documents describe a 6-year, 360-ECTS one-cycle MD with core clinical clerkships, professional-skills development, and agreements with clinics where curriculum-linked clinical courses are delivered. The program resources section also points to simulation laboratories, anatomy, microbiology, histology, chemistry, and biochemistry labs that support preclinical and clinical-skills training.",
+      "hostelOverview": "The reviewed current SEU sources do not publish one clear international-student hostel page with fixed room pricing in the way some other Georgian universities do. Because the public material is lighter on standardized housing detail, applicants should ask SEU directly for the latest accommodation options, distance from campus, and whether any university-supported hostel arrangement is currently active.",
+      "indianFoodSupport": "The reviewed official SEU materials do not advertise an Indian mess, Indian canteen, or India-specific dining support. Official student-facing pages focus more on campus life, student services, health and safety, and admissions procedure than on cuisine guarantees.",
+      "safetyOverview": "SEU's 2025 orientation guide is unusually explicit on safety. It says a medical office is available on campus for first aid and that the university has a security system meeting international standards, adapted infrastructure, and a 24/7 security service that also assists persons with disabilities when needed.",
+      "studentSupport": "Student support is highly visible in SEU's current public materials. The university describes a Students Affairs Department, student self-government, international-relations support, exchange opportunities, funding for student initiatives, and a public admissions workflow that guides applicants from document submission through interview, recognition, payment, and portal activation.",
+      "whyChoose": [
+        "SEU publishes a current 2025 admissions guideline showing the Medical Doctor program as a 6-year, 12-semester course with an annual fee of USD 5,900.",
+        "The official orientation guide and medicine-program documents make student life, health support, and 24/7 campus security much more visible than many competing university pages.",
+        "The medicine curriculum documents describe a 360-ECTS one-cycle MD with simulation labs, subject-specific science labs, and clinic-linked delivery of clinical courses."
+      ],
+      "thingsToConsider": [
+        "SEU's current public sources are stronger on admissions workflow and student life than on one centralized hostel/accommodation page, so housing should be clarified directly before enrollment.",
+        "Much of the detailed medicine material is still distributed through PDF documents rather than a fully transparent modern program microsite, so applicants should request the latest official academic pack.",
+        "Students planning India return or another licensing route should still independently verify current recognition, internship, and exam requirements at decision time."
+      ],
+      "bestFitFor": [
+        "Students who want a private English-medium MD in Tbilisi with clearly published current admissions pricing.",
+        "Applicants who care about visible campus safety, student life, and organized student-affairs support.",
+        "Families comfortable asking follow-up questions directly when accommodation details are less standardized on the public site."
+      ],
+      "teachingHospitals": [
+        "SEU partner clinics for clinical curriculum delivery"
+      ],
+      "recognitionBadges": [
+        "Private Georgian university",
+        "English-medium Medical Doctor program",
+        "Program documents cite WDOMS and international medical-education links"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "SEU 2025 admission guidelines",
+          "url": "https://cc.seu.edu.ge/custom-files/1749810494_ADMISSION%20GUIDELINES%202025.13.Jun%20update%20%281%29.pdf"
+        },
+        {
+          "label": "SEU medicine program PDF",
+          "url": "https://cc.seu.edu.ge/custom-files/66f154299125e.pdf"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does Georgian National University SEU teach medicine in English?",
+          "answer": "Yes. SEU's public medicine and admissions documents describe an English-medium Medical Doctor program."
+        },
+        {
+          "question": "What annual tuition does SEU currently publish for medicine?",
+          "answer": "SEU's June 2025 admission guidelines list the Medical Doctor program at USD 5,900 per year."
+        },
+        {
+          "question": "What does SEU officially say about the MD program length?",
+          "answer": "SEU's current admissions guide and medicine-program documents describe the program as 6 years across 12 semesters, with a 360-ECTS one-cycle structure."
+        },
+        {
+          "question": "What student safety support does SEU publicly describe?",
+          "answer": "SEU's orientation guide says the campus has a medical office for first aid, a security system meeting international standards, adapted infrastructure, and a 24/7 security service."
+        }
+      ],
+      "similarUniversitySlugs": [],
+      "admissionsContent": {
+        "overview": "SEU's current 2025 international admissions guide describes a step-based process that begins by emailing scanned documents to the admissions office and then moves through interview, recognition, payment, and final enrollment.",
+        "eligibility": {
+          "intro": "The reviewed official SEU materials indicate the following baseline requirements for international one-cycle applicants:",
+          "items": [
+            "School completion certificate suitable for one-cycle medical admission.",
+            "English language proficiency document at minimum B1, or else the university-administered English test after a successful interview.",
+            "Interview as part of the admissions workflow before documentation proceeds."
+          ]
+        },
+        "admissionSteps": [
+          "Send scanned passport, school certificate, application form, and English-proficiency evidence to admissions@seu.edu.ge.",
+          "Attend the university interview, and if needed complete the university English test.",
+          "Complete translated and notarized paperwork and recognition formalities after admission approval.",
+          "Pay tuition after ministry-related processing is completed and activate the student portal through Student Affairs."
+        ],
+        "documentsRequired": {
+          "educational": [
+            "Copy of passport.",
+            "School certificate suitable for one-cycle admission.",
+            "Filled SEU application form.",
+            "English language proficiency proof at minimum B1, if available."
+          ],
+          "visa": [
+            "Translated and notarized passport copy.",
+            "Translated and notarized school certificate.",
+            "Recognition-related documents for submission to the National Center for Educational Quality Enhancement.",
+            "Additional service and travel formalities as instructed by SEU after admission approval."
+          ]
+        },
+        "deadlinesNote": "SEU's published process says ministry-order timing can take roughly 4 to 5 weeks after educational recognition is received, so applicants should build extra buffer time before intake.",
+        "licensingPathway": [
+          "The official medicine documents emphasize residency progression, clinical competencies, and internationally aware curriculum design.",
+          "Students targeting India or other foreign licensing pathways should separately verify current destination-country rules before committing."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-05-22",
+        "sources": [
+          {
+            "label": "SEU 2025 admission guidelines",
+            "url": "https://cc.seu.edu.ge/custom-files/1749810494_ADMISSION%20GUIDELINES%202025.13.Jun%20update%20%281%29.pdf",
+            "kind": "official-fee",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "SEU orientation guide for international students",
+            "url": "https://cc.seu.edu.ge/custom-files/1744824767_Orientation%20Guide%20for%20International%20Student.pdf",
+            "kind": "official-university",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "SEU medicine programme PDF",
+            "url": "https://cc.seu.edu.ge/custom-files/66f154299125e.pdf",
+            "kind": "official-program",
+            "checkedAt": "2026-05-22"
+          },
+          {
+            "label": "SEU MD Programme PDF",
+            "url": "https://cc.seu.edu.ge/custom-files/1729511490_MD%20Programme.pdf",
+            "kind": "recognition",
+            "checkedAt": "2026-05-22"
+          }
+        ],
+        "notes": "Drafted from currently accessible official SEU PDFs and admissions materials only."
+      },
+      "programs": [
+        {
+          "slug": "seu-georgian-national-university-mbbs",
+          "courseSlug": "mbbs",
+          "title": "MBBS / General Medicine",
+          "durationYears": 6,
+          "officialFeeCurrency": "USD",
+          "officialAnnualTuitionAmount": 5900,
+          "officialTotalTuitionAmount": 35400,
+          "annualTuitionUsd": 5900,
+          "totalTuitionUsd": 35400,
+          "livingUsd": 0,
+          "officialProgramUrl": "https://seu.edu.ge/programs/83?lang=en",
+          "medium": "English",
+          "teachingPhases": [
+            {
+              "phase": "Integrated one-cycle Medical Doctor programme",
+              "language": "English",
+              "details": "SEU's current admissions guide describes Medical Doctor as a 6-year, 12-semester course, while the medicine programme PDF describes it as a 360-ECTS one-cycle structure."
+            },
+            {
+              "phase": "Clinical clerkships and professional-skills development",
+              "language": "English",
+              "details": "The medicine documents describe core clinical clerkships, professional-skills development, and delivery of clinical courses through agreements with clinics."
+            }
+          ],
+          "yearlyCostBreakdown": [],
+          "licenseExamSupport": [
+            "The reviewed official SEU sources emphasize curriculum quality and internationalization, but do not make a clear current public promise of dedicated India-specific or US-specific license-exam coaching."
+          ],
+          "intakeMonths": [
+            "Spring",
+            "Fall"
+          ],
+          "featured": false,
+          "published": false,
+          "feeVerifiedAt": "2026-05-22",
+          "feeNotes": "SEU's June 13, 2025 admission guidelines list the Medical Doctor program at USD 5,900 annually. The reviewed official sources do not provide one standardized public living-cost figure for international medical students.",
+          "sourceUrls": [
+            "https://cc.seu.edu.ge/custom-files/1749810494_ADMISSION%20GUIDELINES%202025.13.Jun%20update%20%281%29.pdf",
+            "https://cc.seu.edu.ge/custom-files/66f154299125e.pdf",
+            "https://cc.seu.edu.ge/custom-files/1729511490_MD%20Programme.pdf"
+          ]
+        }
+      ]
+    }
+  ]
+}
