@@ -136,33 +136,6 @@ const faqItems = [
   },
 ];
 
-const officialSources = [
-  {
-    label: "Study in Russia official portal",
-    href: "https://www.studyinrussia.ru/en/",
-    note:
-      "Official portal used to understand the broad admission flow, applicant status, document preparation, and university choice process.",
-  },
-  {
-    label: "Study in Russia applicant instruction guide",
-    href: "https://education-in-russia.com/settings/static/media/Instruction%28en%29.pdf",
-    note:
-      "Shows the practical application flow on the official Russia admissions platform, including profile completion, application creation, document upload, and verification steps.",
-  },
-  {
-    label: "NMC information desk for students studying abroad",
-    href: "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad",
-    note:
-      "Primary India-side reference for students planning foreign medical education and wanting to preserve the pathway back to India.",
-  },
-  {
-    label: "NMC FMGL 2021 FAQ",
-    href: "https://www.nmc.org.in/MCIRest/open/getDocument?path=%2FDocuments%2FPublic%2FPortal%2FLatestNews%2F20220222165635.pdf",
-    note:
-      "Useful for understanding the rules that matter later when an Indian student returns after a foreign medical degree.",
-  },
-];
-
 export default function MbbsAdmissionInRussiaPage() {
   return (
     <CommercialSeoGuidePage
@@ -175,12 +148,10 @@ export default function MbbsAdmissionInRussiaPage() {
       countrySlug="russia"
       primaryHref="/mbbs-in-russia"
       primaryLabel="Explore MBBS in Russia"
-      secondaryHref="/contact"
       secondaryLabel="Talk to admissions team"
       keyTakeaways={keyTakeaways}
       sections={sections}
       faqItems={faqItems}
-      officialSources={officialSources}
       leadTitle="Get a Russia admission shortlist"
       leadDescription="We can help you filter Russian universities by budget, NEET status, medium, city, and India-return fit before you start paying registration charges."
       notes="Interest: MBBS admission in Russia"

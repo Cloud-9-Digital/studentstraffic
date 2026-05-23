@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { CounsellingCtaButton } from "@/components/site/counselling-cta-button";
 import { JsonLd } from "@/components/shared/json-ld";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {

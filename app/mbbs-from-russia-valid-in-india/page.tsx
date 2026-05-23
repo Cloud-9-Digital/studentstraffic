@@ -117,33 +117,6 @@ const faqItems = [
   },
 ];
 
-const officialSources = [
-  {
-    label: "NMC rules and regulations hub",
-    href: "https://www.nmc.org.in/rules-regulations-nmc/",
-    note:
-      "Primary official rules hub for students checking the foreign-medical regulatory framework that affects India-return validity.",
-  },
-  {
-    label: "NMC FMGL 2021 FAQ",
-    href: "https://www.nmc.org.in/MCIRest/open/getDocument?path=%2FDocuments%2FPublic%2FPortal%2FLatestNews%2F20220222165635.pdf",
-    note:
-      "The clearest official explanatory document for families trying to understand foreign-medical graduate expectations without reading only consultant summaries.",
-  },
-  {
-    label: "NMC information desk for students planning to study abroad",
-    href: "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad",
-    note:
-      "Important official page reminding students to verify the foreign pathway carefully before leaving India.",
-  },
-  {
-    label: "NMC advisory for admission in foreign universities",
-    href: "https://www.nmc.org.in/MCIRest/open/getDocument?path=%2FDocuments%2FPublic%2FPortal%2FLatestNews%2FAdveisry_merged_admninforeignUniv.pdf",
-    note:
-      "Useful official advisory for students evaluating whether a foreign medical pathway will remain workable later in India.",
-  },
-];
-
 export default function MbbsFromRussiaValidInIndiaPage() {
   return (
     <CommercialSeoGuidePage
@@ -156,12 +129,10 @@ export default function MbbsFromRussiaValidInIndiaPage() {
       countrySlug="russia"
       primaryHref="/mbbs-in-russia"
       primaryLabel="Compare MBBS in Russia"
-      secondaryHref="/contact"
       secondaryLabel="Check my Russia pathway"
       keyTakeaways={keyTakeaways}
       sections={sections}
       faqItems={faqItems}
-      officialSources={officialSources}
       leadTitle="Need a Russia validity check?"
       leadDescription="We can help review whether your shortlisted Russia university looks sensible for India-return planning before you commit to the seat."
       notes="Interest: MBBS from Russia valid in India"

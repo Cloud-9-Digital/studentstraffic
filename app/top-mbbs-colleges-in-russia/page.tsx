@@ -146,39 +146,6 @@ const faqItems = [
   },
 ];
 
-const officialSources = [
-  {
-    label: "Study in Russia university catalog",
-    href: "https://studyinrussia.ru/en/university?lang=en",
-    note:
-      "Official Russia higher-education catalog useful for checking which universities are visible in the central admissions ecosystem.",
-  },
-  {
-    label: "Study in Russia: Why Russia — medicine section",
-    href: "https://studyinrussia.ru/en/why-russia?lang=en",
-    note:
-      "Official overview explaining how Russia positions its medical education environment and student-support basics.",
-  },
-  {
-    label: "Volga Research Medical University official overview on Study in Russia",
-    href: "https://studyinrussia.ru/en/university-show/356/about",
-    note:
-      "A useful official example of how a Russia medical university describes practice-oriented training, student scale, and international positioning.",
-  },
-  {
-    label: "Volgograd State Medical University overview on Study in Russia",
-    href: "https://studyinrussia.ru/en/university-show/431/about",
-    note:
-      "Helpful for understanding the kind of institutional detail students should verify when comparing Russian medical universities.",
-  },
-  {
-    label: "RAEX subject rankings reference",
-    href: "https://raex-rr.com/files/presentation/RAEX_subject_rankings_2025_webinar.pdf",
-    note:
-      "Useful context when families want ranking inputs, though rankings should never be the only filter for an Indian MBBS decision.",
-  },
-];
-
 export default function TopMbbsCollegesInRussiaPage() {
   return (
     <CommercialSeoGuidePage
@@ -191,12 +158,10 @@ export default function TopMbbsCollegesInRussiaPage() {
       countrySlug="russia"
       primaryHref="/mbbs-in-russia"
       primaryLabel="Compare MBBS in Russia"
-      secondaryHref="/contact"
       secondaryLabel="Get a Russia shortlist"
       keyTakeaways={keyTakeaways}
       sections={sections}
       faqItems={faqItems}
-      officialSources={officialSources}
       leadTitle="Need a Russia university shortlist?"
       leadDescription="We can help narrow your Russia options by budget, city, university profile, and India-return goals instead of leaving you with a generic top-10 list."
       notes="Interest: Top MBBS colleges in Russia"

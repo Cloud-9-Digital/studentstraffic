@@ -124,33 +124,6 @@ const faqItems = [
   },
 ];
 
-const officialSources = [
-  {
-    label: "Study in Russia education overview",
-    href: "https://studyinrussia.ru/en/education",
-    note:
-      "Useful official reference showing how Russian higher-education timelines are described, including the broad 5–6 year medicine track.",
-  },
-  {
-    label: "NMC FMGL 2021 FAQ",
-    href: "https://www.nmc.org.in/MCIRest/open/getDocument?path=%2FDocuments%2FPublic%2FPortal%2FLatestNews%2F20220222165635.pdf",
-    note:
-      "Important official India-side reference because duration, internship, and whole-course completion matter for foreign medical graduates.",
-  },
-  {
-    label: "Recent NMC FMG public notice",
-    href: "https://www.nmc.org.in/MCIRest/open/getDocument?path=%2FDocuments%2FPublic%2FPortal%2FLatestNews%2FMergedPublicNotice_FMG_18_3_26.pdf",
-    note:
-      "Useful for students evaluating whether the structure, duration, and internship format of a foreign program remain compatible with the India-return pathway.",
-  },
-  {
-    label: "Study in Russia general medicine program examples",
-    href: "https://www.studyinrussia.ru/en/university-show/226/programm-trainings/1625",
-    note:
-      "An example official program page showing how general medicine tracks are presented on the official Russia admissions platform.",
-  },
-];
-
 export default function MbbsInRussiaDurationPage() {
   return (
     <CommercialSeoGuidePage
@@ -163,12 +136,10 @@ export default function MbbsInRussiaDurationPage() {
       countrySlug="russia"
       primaryHref="/mbbs-in-russia"
       primaryLabel="See MBBS in Russia guide"
-      secondaryHref="/contact"
       secondaryLabel="Ask about university fit"
       keyTakeaways={keyTakeaways}
       sections={sections}
       faqItems={faqItems}
-      officialSources={officialSources}
       leadTitle="Need help comparing the Russia timeline?"
       leadDescription="We can help you compare Russia universities by structure, city, clinical setup, budget, and India-return fit instead of relying on brochure summaries."
       notes="Interest: MBBS in Russia duration"

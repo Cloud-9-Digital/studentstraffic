@@ -21,6 +21,7 @@ export function CounsellingDialog({
   ctaVariant = "header_dialog",
   countrySlug,
   courseSlug,
+  notes,
 }: {
   triggerContent: React.ReactNode;
   triggerClassName?: string;
@@ -34,6 +35,7 @@ export function CounsellingDialog({
   ctaVariant?: string;
   countrySlug?: string;
   courseSlug?: string;
+  notes?: string;
 }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -101,6 +103,7 @@ export function CounsellingDialog({
             submitLabel={submitLabel}
             countrySlug={countrySlug}
             courseSlug={courseSlug}
+            notes={notes}
             embedded
             stacked
           />

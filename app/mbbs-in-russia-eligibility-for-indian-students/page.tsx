@@ -123,33 +123,6 @@ const faqItems = [
   },
 ];
 
-const officialSources = [
-  {
-    label: "NMC notice on qualifying NEET for studying medicine abroad",
-    href: "https://www.nmc.org.in/wp-content/uploads/Eligibility-Notice/20210319060622.pdf",
-    note:
-      "Important official notice because NEET is a major part of foreign-medical eligibility planning for Indian students.",
-  },
-  {
-    label: "NMC information desk for students planning to study abroad",
-    href: "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad",
-    note:
-      "Useful official guidance page for students checking their pathway before choosing a foreign medical program.",
-  },
-  {
-    label: "Study in Russia admissions platform",
-    href: "https://www.studyinrussia.ru/en/",
-    note:
-      "Official Russia-facing platform that helps students understand how university choice, deadlines, and application steps are handled.",
-  },
-  {
-    label: "Study in Russia applicant instruction guide",
-    href: "https://education-in-russia.com/settings/static/media/Instruction%28en%29.pdf",
-    note:
-      "Shows how the official Russia-side applicant workflow works once the student is actually ready to apply.",
-  },
-];
-
 export default function MbbsInRussiaEligibilityPage() {
   return (
     <CommercialSeoGuidePage
@@ -162,12 +135,10 @@ export default function MbbsInRussiaEligibilityPage() {
       countrySlug="russia"
       primaryHref="/mbbs-in-russia"
       primaryLabel="Explore MBBS in Russia"
-      secondaryHref="/contact"
       secondaryLabel="Check my eligibility"
       keyTakeaways={keyTakeaways}
       sections={sections}
       faqItems={faqItems}
-      officialSources={officialSources}
       leadTitle="Need a Russia eligibility check?"
       leadDescription="We can review your marks, NEET status, passport readiness, and shortlist fit before you move into the Russia admission process."
       notes="Interest: MBBS in Russia eligibility for Indian students"
