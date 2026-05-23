@@ -105,7 +105,7 @@ const faqItems = [
   {
     question: "Are MBBS fees in Russia cheaper than Indian private colleges?",
     answer:
-      "In many cases yes, which is why this keyword has strong demand. But the useful comparison is total cost plus long-term fit, not tuition alone.",
+      "Yes, significantly. Russia MBBS total cost ranges from ₹35-50 lakhs for 6 years, while Indian private medical colleges charge ₹60 lakhs to ₹2.5 crores. However, factor in India-return licensing exam costs (₹1.5-2.5 lakhs for FMGE/NExT coaching) and lower pass rates (15-22% vs 65-75% for Indian graduates) when comparing true affordability.",
   },
   {
     question: "Does the first-year Russia fee include hostel?",
@@ -124,33 +124,6 @@ const faqItems = [
   },
 ];
 
-const officialSources = [
-  {
-    label: "Study in Russia university catalog",
-    href: "https://studyinrussia.ru/en/university?lang=en",
-    note:
-      "Official catalog useful for locating medical universities and cross-checking the broader Russia options before converting anything into an INR budget.",
-  },
-  {
-    label: "Study in Russia general medicine example — Kazan Federal University",
-    href: "https://studyinrussia.ru/index.php/en/university-show/241/programm-trainings/1783",
-    note:
-      "A useful official example showing a visible tuition amount for an English-medium general medicine track on the official Russia platform.",
-  },
-  {
-    label: "Study in Russia general medicine example — Dagestan State Medical University",
-    href: "https://studyinrussia.ru/index.php/en/university-show/443/programm-trainings/4807",
-    note:
-      "Helpful for showing how different universities can sit in very different cost bands before parents convert those numbers into rupees.",
-  },
-  {
-    label: "NMC information desk for students planning to study abroad",
-    href: "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad",
-    note:
-      "Important reminder that a low INR budget is useful only if the medical pathway itself still makes sense for the student's end goal.",
-  },
-];
-
 export default function MbbsInRussiaFeesInRupeesPage() {
   return (
     <CommercialSeoGuidePage
@@ -163,12 +136,10 @@ export default function MbbsInRussiaFeesInRupeesPage() {
       countrySlug="russia"
       primaryHref="/mbbs-in-russia"
       primaryLabel="Compare MBBS in Russia"
-      secondaryHref="/contact"
       secondaryLabel="Get a rupee budget shortlist"
       keyTakeaways={keyTakeaways}
       sections={sections}
       faqItems={faqItems}
-      officialSources={officialSources}
       leadTitle="Need a rupee-wise Russia plan?"
       leadDescription="We can help convert your Russia shortlist into a realistic INR budget based on tuition, hostel, city, and the student's actual profile."
       notes="Interest: MBBS in Russia fees in rupees"

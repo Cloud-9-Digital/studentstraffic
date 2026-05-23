@@ -1,13 +1,27 @@
+"use client";
+
+import React from "react";
 import Link from "next/link";
 
+import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { JsonLd } from "@/components/shared/json-ld";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
+import { LowFeeUniversitiesShowcase } from "@/components/site/low-fee-universities-showcase";
 import {
   getBreadcrumbStructuredData,
   getFaqStructuredData,
   getStructuredDataGraph,
   getWebPageStructuredData,
 } from "@/lib/structured-data";
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/--+/g, "-")
+    .trim();
+}
 
 type GuideSectionCard = {
   title: string;
@@ -26,12 +40,6 @@ type GuideFaq = {
   answer: string;
 };
 
-type GuideSource = {
-  label: string;
-  href: string;
-  note: string;
-};
-
 type CommercialSeoGuidePageProps = {
   path: string;
   title: string;
@@ -43,15 +51,14 @@ type CommercialSeoGuidePageProps = {
   courseSlug?: string;
   primaryHref: string;
   primaryLabel: string;
-  secondaryHref: string;
   secondaryLabel: string;
   keyTakeaways: string[];
   sections: GuideSection[];
   faqItems: GuideFaq[];
-  officialSources: GuideSource[];
   leadTitle: string;
   leadDescription: string;
   notes: string;
+  showUniversities?: boolean;
 };
 
 export function CommercialSeoGuidePage({
@@ -65,15 +72,14 @@ export function CommercialSeoGuidePage({
   courseSlug = "mbbs",
   primaryHref,
   primaryLabel,
-  secondaryHref,
   secondaryLabel,
   keyTakeaways,
   sections,
   faqItems,
-  officialSources,
   leadTitle,
   leadDescription,
   notes,
+  showUniversities = false,
 }: CommercialSeoGuidePageProps) {
   const structuredData = getStructuredDataGraph([
     getWebPageStructuredData({
@@ -92,174 +98,294 @@ export function CommercialSeoGuidePage({
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-accent/10 via-background to-background px-6 py-16 sm:px-8 lg:px-12">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.12),transparent_30%),linear-gradient(to_right,rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:auto,28px_28px,28px_28px]" />
+      <section className="relative overflow-hidden bg-background px-6 py-20 sm:px-8 lg:px-12 lg:py-32">
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-accent/5 via-transparent to-transparent" />
+
         <div className="relative mx-auto max-w-5xl">
-          <div className="mb-5 inline-flex rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
+          <div className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-accent">
+            <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+            </svg>
             {updatedOn}
           </div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+
+          <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-accent/80">
             {kicker}
-          </p>
-          <h1 className="mt-3 max-w-4xl font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+          </div>
+
+          <h1 className="max-w-4xl font-display text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
             {title}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
+
+          <p className="mt-8 max-w-3xl text-xl leading-relaxed text-muted-foreground">
             {summary}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3 text-sm">
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <CounsellingDialog
+              triggerContent={
+                <>
+                  {secondaryLabel}
+                  <svg className="h-5 w-5 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </>
+              }
+              triggerClassName="group inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3.5 text-base font-semibold text-background transition hover:opacity-90"
+              plainTrigger
+              title={leadTitle}
+              description={leadDescription}
+              submitLabel="Request callback"
+              ctaVariant="seo-guide-hero"
+              countrySlug={countrySlug}
+              courseSlug={courseSlug}
+            />
             <Link
               href={primaryHref}
-              className="rounded-full bg-foreground px-5 py-3 font-medium text-background transition hover:opacity-90"
+              className="inline-flex items-center gap-2 rounded-lg border-2 border-border px-6 py-3.5 text-base font-semibold text-foreground transition hover:bg-muted"
             >
               {primaryLabel}
-            </Link>
-            <Link
-              href={secondaryHref}
-              className="rounded-full border border-border bg-background px-5 py-3 font-medium text-foreground transition hover:bg-muted"
-            >
-              {secondaryLabel}
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-14 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
-          <article className="min-w-0">
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm sm:p-8">
-              <h2 className="font-display text-2xl font-semibold text-foreground">
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-4xl">
+          <article>
+            {/* Quick Answer - Clean, no cards */}
+            <div className="border-l-4 border-accent pl-6">
+              <h2 className="font-display text-3xl font-bold text-foreground">
                 Quick answer
               </h2>
-              <div className="mt-6 space-y-4">
-                {keyTakeaways.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-border/70 bg-background p-4 text-base leading-7 text-foreground"
-                  >
-                    {item}
+              <div className="mt-8 space-y-6">
+                {keyTakeaways.map((item, idx) => (
+                  <div key={item} className="flex gap-4">
+                    <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
+                      {idx + 1}
+                    </div>
+                    <p className="flex-1 pt-0.5 text-lg leading-relaxed text-foreground">
+                      {item}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
 
-            {sections.map((section) => (
-              <section key={section.title} className="mt-12">
-                <h2 className="font-display text-3xl font-semibold text-foreground">
-                  {section.title}
-                </h2>
-                {section.paragraphs ? (
-                  <div className="mt-6 space-y-5 text-base leading-8 text-muted-foreground">
-                    {section.paragraphs.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
-                  </div>
-                ) : null}
-                {section.bullets?.length ? (
-                  <div className="mt-6 grid gap-3">
-                    {section.bullets.map((bullet) => (
-                      <div
-                        key={bullet}
-                        className="rounded-2xl border border-border bg-card px-5 py-4 text-base leading-7 text-foreground shadow-sm"
-                      >
-                        {bullet}
-                      </div>
-                    ))}
-                  </div>
-                ) : null}
-                {section.cards?.length ? (
-                  <div className="mt-6 grid gap-5 md:grid-cols-2">
-                    {section.cards.map((card) => (
-                      <div
-                        key={card.title}
-                        className="rounded-3xl border border-border bg-card p-6 shadow-sm"
-                      >
-                        <h3 className="font-display text-xl font-semibold text-foreground">
-                          {card.title}
-                        </h3>
-                        <p className="mt-3 text-base leading-7 text-muted-foreground">
-                          {card.body}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                ) : null}
-              </section>
-            ))}
+            {/* Table of Contents - Compact, clean */}
+            <nav className="mt-16" aria-label="Table of contents">
+              <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                On this page
+              </h2>
+              <div className="mt-4 grid gap-2 sm:grid-cols-2">
+                {sections.map((section, idx) => (
+                  <a
+                    key={section.title}
+                    href={`#${slugify(section.title)}`}
+                    className="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition hover:bg-muted"
+                  >
+                    <span className="text-xs font-medium text-accent">
+                      {String(idx + 1).padStart(2, "0")}
+                    </span>
+                    <span className="flex-1 text-muted-foreground group-hover:text-foreground">
+                      {section.title}
+                    </span>
+                  </a>
+                ))}
+                <a
+                  href="#frequently-asked-questions"
+                  className="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition hover:bg-muted"
+                >
+                  <span className="text-xs font-medium text-accent">
+                    {String(sections.length + 1).padStart(2, "0")}
+                  </span>
+                  <span className="flex-1 text-muted-foreground group-hover:text-foreground">
+                    Frequently asked questions
+                  </span>
+                </a>
+              </div>
+            </nav>
 
-            <section className="mt-12">
-              <h2 className="font-display text-3xl font-semibold text-foreground">
+            {sections.map((section, sectionIdx) => {
+              const isEven = sectionIdx % 2 === 0;
+              const showUniversitiesAfterThis = showUniversities && sectionIdx === 1;
+
+              return (
+                <React.Fragment key={section.title}>
+                  <section
+                    id={slugify(section.title)}
+                    className="mt-20 scroll-mt-6"
+                  >
+                  {/* Section Header */}
+                  <div className={isEven ? "border-l-4 border-accent pl-6" : ""}>
+                    <h2 className="font-display text-3xl font-bold text-foreground lg:text-4xl">
+                      {section.title}
+                    </h2>
+                  </div>
+
+                  {/* Paragraphs - Clean typography */}
+                  {section.paragraphs ? (
+                    <div className="prose prose-lg mt-8 max-w-none space-y-6">
+                      {section.paragraphs.map((paragraph) => (
+                        <p key={paragraph} className="text-lg leading-relaxed text-muted-foreground">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  ) : null}
+
+                  {/* Bullets - Checklist style, no cards */}
+                  {section.bullets?.length ? (
+                    <div className="mt-8 space-y-4">
+                      {section.bullets.map((bullet, idx) => (
+                        <div key={bullet} className="flex gap-4 border-b border-border/30 pb-4 last:border-0">
+                          <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-accent/10 text-xs font-bold text-accent">
+                            {idx + 1}
+                          </div>
+                          <p className="flex-1 text-base leading-relaxed text-foreground">
+                            {bullet}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
+
+                  {/* Cards - Magazine-style grid, minimal borders */}
+                  {section.cards?.length ? (
+                    <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                      {section.cards.map((card, cardIdx) => (
+                        <div
+                          key={card.title}
+                          className="group relative"
+                        >
+                          {/* Number badge */}
+                          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-lg font-bold text-accent transition group-hover:bg-accent group-hover:text-white">
+                            {card.title.split(".")[0] || cardIdx + 1}
+                          </div>
+
+                          <h3 className="font-display text-xl font-bold text-foreground">
+                            {card.title.includes(".")
+                              ? card.title.split(".").slice(1).join(".").trim()
+                              : card.title}
+                          </h3>
+
+                          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                            {card.body}
+                          </p>
+
+                          {/* Subtle accent line */}
+                          <div className="mt-4 h-1 w-12 rounded-full bg-accent/20 transition-all group-hover:w-20 group-hover:bg-accent" />
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
+                  </section>
+
+                  {/* Show university showcase after second section */}
+                  {showUniversitiesAfterThis ? (
+                    <LowFeeUniversitiesShowcase className="mt-20" />
+                  ) : null}
+                </React.Fragment>
+              );
+            })}
+
+            {/* FAQ Section - Traditional FAQ styling */}
+            <section
+              id="frequently-asked-questions"
+              className="mt-20 scroll-mt-6"
+            >
+              <div className="mb-3 inline-flex items-center gap-2 rounded-lg bg-accent/10 px-3 py-1.5 text-sm font-semibold text-accent">
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                FAQs
+              </div>
+
+              <h2 className="font-display text-3xl font-bold text-foreground lg:text-4xl">
                 Frequently asked questions
               </h2>
-              <div className="mt-6 space-y-4">
-                {faqItems.map((item) => (
-                  <div
-                    key={item.question}
-                    className="rounded-3xl border border-border bg-card p-6 shadow-sm"
-                  >
-                    <h3 className="font-display text-xl font-semibold text-foreground">
-                      {item.question}
-                    </h3>
-                    <p className="mt-3 text-base leading-7 text-muted-foreground">
-                      {item.answer}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </section>
 
-            <section className="mt-12">
-              <h2 className="font-display text-3xl font-semibold text-foreground">
-                Official sources to verify before you apply
-              </h2>
-              <div className="mt-6 grid gap-4">
-                {officialSources.map((source) => (
-                  <a
-                    key={source.href}
-                    href={source.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-3xl border border-border bg-card p-6 shadow-sm transition hover:border-accent/40 hover:bg-accent/5"
+              <div className="mt-10 space-y-4">
+                {faqItems.map((item) => (
+                  <details
+                    key={item.question}
+                    className="group rounded-xl border border-border bg-card transition hover:border-accent/30"
                   >
-                    <h3 className="font-display text-xl font-semibold text-foreground">
-                      {source.label}
-                    </h3>
-                    <p className="mt-2 text-sm text-accent">{source.href}</p>
-                    <p className="mt-3 text-base leading-7 text-muted-foreground">
-                      {source.note}
-                    </p>
-                  </a>
+                    <summary className="flex cursor-pointer items-start justify-between gap-4 px-6 py-5 font-display text-lg font-semibold text-foreground transition group-hover:text-accent">
+                      <span className="flex-1">{item.question}</span>
+                      <svg
+                        className="h-5 w-5 flex-shrink-0 text-accent transition group-open:rotate-180"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </summary>
+                    <div className="border-t border-border/50 px-6 pb-5 pt-4">
+                      <p className="text-base leading-relaxed text-muted-foreground">
+                        {item.answer}
+                      </p>
+                    </div>
+                  </details>
                 ))}
               </div>
             </section>
           </article>
+        </div>
+      </section>
 
-          <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-accent">
-                Need a shortlist?
-              </p>
-              <h2 className="mt-3 font-display text-2xl font-semibold text-foreground">
+      {/* CTA Section - Full width, embedded naturally with proper spacing */}
+      <section className="border-y border-border bg-muted/30 px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+        <div className="mx-auto max-w-4xl">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            <div>
+              <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-accent/10 px-3 py-1.5 text-sm font-semibold text-accent">
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Ready to start?
+              </div>
+              <h2 className="font-display text-3xl font-bold text-foreground lg:text-4xl">
                 {leadTitle}
               </h2>
-              <p className="mt-3 text-sm leading-7 text-muted-foreground">
+              <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
                 {leadDescription}
               </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link
+                  href={primaryHref}
+                  className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
+                >
+                  {primaryLabel}
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
 
-            <DeferredLeadForm
-              sourcePath={path}
-              ctaVariant="seo-guide-sidebar"
-              title="Talk to an admissions counsellor"
-              description="Share your budget, NEET status, and timeline. We will call you with Russia options that actually fit your profile."
-              submitLabel="Request free counselling"
-              countrySlug={countrySlug}
-              courseSlug={courseSlug}
-              notes={notes}
-              embedded
-              stacked
-            />
-          </aside>
+            <div>
+              <DeferredLeadForm
+                sourcePath={path}
+                ctaVariant="seo-guide-inline"
+                title="Get free counselling"
+                description="Share your details and we'll call you back with a personalized shortlist."
+                submitLabel="Request callback"
+                countrySlug={countrySlug}
+                courseSlug={courseSlug}
+                notes={notes}
+                embedded
+                stacked
+              />
+            </div>
+          </div>
         </div>
       </section>
 

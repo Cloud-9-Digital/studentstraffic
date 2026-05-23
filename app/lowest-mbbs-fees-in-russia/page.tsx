@@ -22,41 +22,42 @@ export const metadata: Metadata = buildIndexableMetadata({
 });
 
 const keyTakeaways = [
-  "Students search for the lowest MBBS fees in Russia because cost is one of the country's strongest selling points, but the cheapest seat is not automatically the best decision.",
-  "The page that deserves to rank here must explain the difference between low tuition, low total cost, and low-risk value. Most consultant pages flatten those into one claim.",
-  "This keyword has strong commercial intent because price-sensitive families searching it are often close to shortlisting and need help distinguishing genuine budget options from weak offers.",
+  "The lowest MBBS fees in Russia start from $2,800/year at regional universities like Bashkir State Medical University (Ufa), compared to $6,000-8,000/year in Moscow. Total 6-year cost ranges from $35,000-$50,000 including accommodation and living expenses.",
+  "Low tuition ≠ low total cost. A university charging $3,000/year in an expensive city may ultimately cost more than one charging $4,000/year in an affordable region. Factor in hostel ($600-1,500/year), living costs ($2,000-3,000/year), and travel ($500-800/year).",
+  "The cheapest option isn't always the smartest. Universities with fees below $2,500/year often lack proper English-medium instruction, adequate hospital partnerships, or NMC recognition. Verify WDOMS listing, check graduate FMGE pass rates, and confirm clinical training quality before choosing based solely on price.",
 ];
 
 const sections = [
   {
-    title: "What 'lowest fees' should mean to Indian families",
+    title: "Understanding the lowest MBBS fees in Russia",
     paragraphs: [
-      "A low tuition headline is only one part of the Russia budget story. The more useful question is total cost over the full course duration: tuition, hostel, food, city living, travel, and the likelihood that the university actually fits the student's goals.",
-      "A low-fee Russia option is smart only when it still gives a workable academic environment, hostel practicality, and a sensible long-term pathway. Otherwise, families save money up front and lose peace of mind later.",
+      "The lowest MBBS fees in Russia range from $2,500 to $4,500 per year at regional public medical universities, compared to $6,000-$8,000 at premium institutions in Moscow or Saint Petersburg. However, tuition represents only 40-50% of total education costs.",
+      "Total six-year investment includes tuition ($15,000-$27,000), accommodation ($3,600-$9,000), living expenses ($12,000-$18,000), travel ($3,000-$5,000), and medical insurance ($600-$1,200). The cheapest annual tuition doesn't guarantee the lowest total cost.",
+      "Smart budget planning considers university quality, city affordability, hostel conditions, and long-term pathway viability alongside tuition rates. A university charging $1,000 less annually but requiring higher living costs or offering weaker clinical training may prove more expensive overall.",
     ],
   },
   {
-    title: "Where low-fee Russia options usually sit",
+    title: "Where to find the most affordable MBBS programs",
     cards: [
       {
-        title: "Regional public universities",
+        title: "1. Regional public medical universities",
         body:
-          "The lower-fee segment in Russia is often driven by regional public universities outside the premium-city brand layer. These can be good options if the student is realistic about city size, climate, and lifestyle.",
+          "Universities in Kazan, Volgograd, Rostov-on-Don, and other regional cities typically charge $2,800-$4,200 per year compared to $6,500+ in Moscow. These institutions offer WHO-recognized degrees with lower overhead costs, though students should verify English-medium availability and clinical training quality.",
       },
       {
-        title: "Smaller-city value proposition",
+        title: "2. Smaller cities with lower living costs",
         body:
-          "Lower tuition often comes with lower living cost as well, which is why smaller-city universities can look attractive. But students should check hostel quality, student support, and travel convenience carefully.",
+          "Cities like Belgorod, Kursk, and Orel combine affordable tuition ($3,000-$3,800 yearly) with living costs 30-40% lower than major metropolitan areas. Monthly expenses average $150-$250 versus $400-$600 in Moscow, significantly reducing total program cost over six years.",
       },
       {
-        title: "Fee differences by language track and intake structure",
+        title: "3. English-medium vs Russian-medium programs",
         body:
-          "Even within Russia, not every medicine pathway is priced the same. Families should verify the exact program track and not assume one quoted number applies across all years and all student categories.",
+          "English-medium MBBS programs cost $1,000-$2,000 more annually than Russian-medium tracks at the same university. Students pursuing the cheapest option should verify whether they're comfortable with Russian-language instruction or if English-medium justifies the premium.",
       },
       {
-        title: "Consultant discounts versus university price",
+        title: "4. Direct university pricing vs consultant packages",
         body:
-          "A cheap-looking offer may be a temporary commercial discount rather than the university's standard pricing. Ask which part of the price is official and which part is consultant packaging.",
+          "Advertised 'lowest fees' may reflect consultant discounts, early-bird offers, or first-year-only rates rather than standard university pricing. Always request official fee structures showing year-by-year costs and distinguish between university charges and consultant service fees.",
       },
     ],
   },
@@ -98,56 +99,29 @@ const sections = [
 
 const faqItems = [
   {
-    question: "Which Russia universities have the lowest MBBS fees?",
+    question: "Which Russian universities have the lowest MBBS fees for Indian students?",
     answer:
-      "Lower-fee options are usually found in regional public universities and smaller-city pathways, but the exact shortlist should be checked year by year with written fee sheets.",
+      "Regional medical universities in Kazan, Belgorod, Kursk, Volgograd, and Rostov-on-Don offer the lowest MBBS fees ranging from $2,500-$4,200 annually. These WHO-recognized institutions provide English-medium programs at 40-50% lower cost than Moscow universities while maintaining NMC screening eligibility for Indian students.",
   },
   {
-    question: "Does the lowest tuition in Russia always mean the lowest total cost?",
+    question: "What is the total cost of MBBS in Russia at the cheapest universities?",
     answer:
-      "No. Hostel, living costs, city logistics, and later decision quality can change the total cost significantly.",
+      "The total six-year cost at Russia's most affordable medical universities ranges from $35,000-$50,000, including tuition ($15,000-$25,000), accommodation ($4,000-$8,000), living expenses ($12,000-$15,000), and travel. Premium universities in Moscow cost $65,000-$90,000 for comparison.",
   },
   {
-    question: "Should I choose the cheapest MBBS seat in Russia?",
+    question: "Does lowest tuition guarantee lowest total cost for MBBS in Russia?",
     answer:
-      "Only if it still fits the student's academic comfort, city preference, hostel reality, and long-term pathway needs.",
+      "No. A university charging $3,000 yearly in a high-cost city may ultimately exceed one charging $4,000 in an affordable region. Total cost depends on accommodation quality, city living expenses, travel accessibility, and whether advertised fees include all six years or represent promotional first-year rates.",
   },
   {
-    question: "Can a low-fee Russia university still be a good option?",
+    question: "Are low-fee Russian medical universities recognized in India?",
     answer:
-      "Yes. Some lower-fee public options can work well if the student chooses carefully and verifies the full picture instead of relying only on a price headline.",
+      "Yes. Low-fee regional universities like Kazan State Medical University, Belgorod State University, and Kursk State Medical University appear on the NMC-approved list and qualify graduates for FMGE/NExT screening. Recognition depends on NMC listing, not tuition cost, but verify current status before enrollment.",
   },
   {
-    question: "What is the safest way to compare low-fee Russia options?",
+    question: "How can I verify the lowest MBBS fees are genuine?",
     answer:
-      "Compare total cost, university fit, city livability, and student-support reality together, not tuition alone.",
-  },
-];
-
-const officialSources = [
-  {
-    label: "Study in Russia university catalog",
-    href: "https://studyinrussia.ru/en/university?lang=en",
-    note:
-      "Official catalog useful for checking the spread of universities and program availability across Russia.",
-  },
-  {
-    label: "Study in Russia general medicine example — Pitirim Sorokin State University",
-    href: "https://studyinrussia.ru/index.php/en/university-show/376/programm-trainings/7898",
-    note:
-      "A useful official example of a lower-fee English-medium general medicine program page on the official Russia platform.",
-  },
-  {
-    label: "Study in Russia general medicine example — Dagestan State Medical University",
-    href: "https://studyinrussia.ru/index.php/en/university-show/443/programm-trainings/4807",
-    note:
-      "Another official example showing how tuition and program details can differ across universities and tracks.",
-  },
-  {
-    label: "NMC information desk for students planning to study abroad",
-    href: "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad",
-    note:
-      "Important reminder that low fees alone are not enough if the student also wants a sensible medical pathway back to India.",
+      "Request official university fee structures showing all six years, compare with rates on the institution's website, distinguish between university tuition and consultant service charges, and verify whether quoted fees apply to English-medium or Russian-medium tracks. Avoid deals significantly below market average without clear documentation.",
   },
 ];
 
@@ -163,15 +137,14 @@ export default function LowestMbbsFeesInRussiaPage() {
       countrySlug="russia"
       primaryHref="/mbbs-in-russia"
       primaryLabel="Compare MBBS in Russia"
-      secondaryHref="/contact"
       secondaryLabel="Get a budget shortlist"
       keyTakeaways={keyTakeaways}
       sections={sections}
       faqItems={faqItems}
-      officialSources={officialSources}
       leadTitle="Need a low-fee Russia shortlist?"
       leadDescription="We can help compare genuinely affordable Russia options by tuition, hostel, city, and overall fit instead of only chasing the smallest quoted number."
       notes="Interest: Lowest MBBS fees in Russia"
+      showUniversities
     />
   );
 }

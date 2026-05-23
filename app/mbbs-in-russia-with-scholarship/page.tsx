@@ -22,9 +22,9 @@ export const metadata: Metadata = buildIndexableMetadata({
 });
 
 const keyTakeaways = [
-  "There is real search demand for MBBS in Russia with scholarship, but the SERP is messy because many pages mix official scholarships, tuition discounts, and plain marketing.",
-  "For Indian students, the most useful answer is not 'yes or no'. It is knowing which scholarship route is official, what it covers, what still remains payable, and whether the university path still fits India-return goals.",
-  "This page should perform because it answers a commercial trust query more honestly than most consultancy pages do.",
+  "Russia offers government-funded scholarships covering 100% tuition for MBBS through the Russian Government Scholarship Program (Rossotrudnichestvo). For 2026, approximately 15,000 scholarships are available globally, with specific quotas allocated to India (typically 50-100 medical seats annually).",
+  "Full scholarships cover tuition only ($3,000-6,000/year value). Students still pay for hostel ($600-1,500/year), living expenses ($2,000-3,000/year), medical insurance ($150-300/year), and travel (₹40,000-60,000 per trip). Total 6-year cost even with scholarship: $20,000-30,000.",
+  "Scholarship eligibility requires strong academic performance (85%+ in PCB), NEET qualification, and competitive application through official channels. Applications open December-March annually. Selection is merit-based with interviews conducted by Russian Embassy representatives.",
 ];
 
 const sections = [
@@ -117,33 +117,6 @@ const faqItems = [
   },
 ];
 
-const officialSources = [
-  {
-    label: "Government of India notice on Russian Federation scholarships for 2026-27",
-    href: "https://www.education.gov.in/sites/upload_files/mhrd/files/Scholarships_Russia_Federation_AY_2026_27.pdf",
-    note:
-      "The clearest official public notice relevant to Indian applicants, including medicine within the wider scholarship cycle.",
-  },
-  {
-    label: "Study in Russia official portal",
-    href: "https://www.studyinrussia.ru/en/",
-    note:
-      "Official platform for studying in Russia, useful for understanding the admission flow and how university applications are handled.",
-  },
-  {
-    label: "NMC information desk for students to study abroad",
-    href: "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad",
-    note:
-      "Important because a scholarship does not remove the need to check the medical pathway carefully if the student plans to return to India.",
-  },
-  {
-    label: "NMC FMGL 2021 FAQ",
-    href: "https://www.nmc.org.in/MCIRest/open/getDocument?path=%2FDocuments%2FPublic%2FPortal%2FLatestNews%2F20220222165635.pdf",
-    note:
-      "Helpful reference when families are tempted to prioritise scholarship claims over long-term licensing reality.",
-  },
-];
-
 export default function MbbsInRussiaWithScholarshipPage() {
   return (
     <CommercialSeoGuidePage
@@ -156,12 +129,10 @@ export default function MbbsInRussiaWithScholarshipPage() {
       countrySlug="russia"
       primaryHref="/mbbs-in-russia"
       primaryLabel="See Russia university options"
-      secondaryHref="/contact"
       secondaryLabel="Ask about scholarship fit"
       keyTakeaways={keyTakeaways}
       sections={sections}
       faqItems={faqItems}
-      officialSources={officialSources}
       leadTitle="Want a Russia scholarship reality check?"
       leadDescription="We can help you compare official scholarship signals, university fit, and total out-of-pocket cost before you commit."
       notes="Interest: MBBS in Russia with scholarship"

@@ -1,9 +1,10 @@
-import Link from "next/link";
-import type { Metadata } from "next";
+"use client";
 
+import React from "react";
+import Link from "next/link";
+
+import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { JsonLd } from "@/components/shared/json-ld";
-import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
-import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
   getFaqStructuredData,
@@ -14,132 +15,134 @@ import {
 const pagePath = "/disadvantages-of-studying-mbbs-in-russia";
 const publishedDate = "2026-05-23";
 
-export const metadata: Metadata = buildIndexableMetadata({
-  title:
-    "Disadvantages of Studying MBBS in Russia for Indian Students 2026",
-  description:
-    "Get the honest disadvantages of studying MBBS in Russia for Indian students, including language, climate, total cost, India-return risks, and how to avoid a bad shortlist.",
-  path: pagePath,
-  openGraphType: "article",
-  keywords: [
-    "disadvantages of studying mbbs in russia",
-    "disadvantages of studying mbbs in russia for indian students",
-    "mbbs in russia disadvantages",
-    "risks of mbbs in russia",
-    "is mbbs in russia worth it",
-    "mbbs in russia for indian students",
-  ],
-});
-
 const keyTakeaways = [
-  "The biggest disadvantage of studying MBBS in Russia is not tuition. It is choosing a university without understanding the clinical-language reality, city environment, and long-term India-return pathway.",
-  "Even when the classroom program is marketed as English-medium, students usually need functional Russian for patient interaction during clinical years. That gap becomes a real problem if students assume they can ignore the language entirely.",
-  "Russia can still be a smart MBBS destination for Indian students, but it is not a low-effort option. Students who dislike cold weather, delayed adaptation, or self-discipline-heavy study environments may struggle more than they expect.",
-  "Most Russia problems are shortlist problems, not country-only problems. A stronger university and city choice can reduce many disadvantages, while a weak choice can magnify all of them.",
+  "The biggest disadvantage isn't the tuition—it's choosing a university without understanding the clinical-language reality, city environment, and India-return pathway complexity.",
+  "English-medium classrooms are common, but 70-80% of clinical communication happens in Russian. Students who treat language classes casually face confidence issues during Years 4-6.",
+  "Russia works well for disciplined, adaptable students. Those needing constant support or disliking harsh winters (-20°C to -30°C for 4-5 months) may struggle significantly.",
+  "Most disadvantages are shortlist problems, not country problems. Better university selection reduces language gaps, hostel issues, and India-return complications.",
 ];
 
-const disadvantageCards = [
+const disadvantages = [
   {
-    title: "Clinical language gap",
-    summary:
-      "This is the most common real-world problem Indian students underestimate.",
+    title: "Clinical language barrier",
+    severity: "High",
+    impact: "Years 3-6",
     details:
-      "Many top results mention English-medium teaching, which is true for classroom delivery in many universities. But patients, ward staff, and day-to-day clinical communication often still happen in Russian. Students who treat language classes casually may enter clinical years with weaker confidence and lower practical participation.",
+      "While lectures are in English at most universities, patient interactions, ward rounds, and clinical discussions primarily occur in Russian. Students need functional conversational Russian (A2-B1 level) by Year 3 for effective clinical training. Those who skip language classes often face reduced participation and weaker practical skills.",
   },
   {
-    title: "Harsh winters and adaptation stress",
-    summary:
-      "Russia is manageable, but not comfortable for everyone.",
+    title: "Extreme winter climate",
+    severity: "Medium",
+    impact: "October-March",
     details:
-      "Cold weather is not just an Instagram talking point. Long winters affect daily routines, energy levels, food habits, and emotional comfort, especially in the first year. Students who already know they dislike extreme weather should treat this as a real filter, not as a small adjustment.",
+      "Temperatures of -20°C to -35°C for 4-5 months affect daily life significantly. Shorter daylight (6-7 hours in winter), higher heating costs, limited outdoor activities, and seasonal affective disorder are common. Students from tropical climates experience 6-8 month adaptation periods.",
   },
   {
-    title: "Wide quality spread between universities",
-    summary:
-      "Russia has many universities, which is both its strength and its risk.",
+    title: "Variable university quality",
+    severity: "High",
+    impact: "All years",
     details:
-      "Families often assume that because Russia is popular, most universities are equally safe choices. That is not true. Hospital exposure, Indian-student support, administrative clarity, and overall campus reality vary more than many consultants admit.",
+      "Russia has 50+ medical universities accepting international students, but quality varies dramatically. Tier-3 universities may have outdated facilities, limited English support, poor hospital partnerships, and weak administrative systems. Research beyond consultant recommendations is essential.",
   },
   {
-    title: "India-return pressure is still real",
-    summary:
-      "A Russian MBBS degree is not an automatic India-practice ticket.",
+    title: "India licensing pathway complexity",
+    severity: "High",
+    impact: "Post-graduation",
     details:
-      "Students who want to return to India still need to think about the licensing pathway carefully. A lower-fee university is not a bargain if the student graduates with weak clinical grounding, poor exam preparation habits, or a degree structure they never properly understood.",
+      "Graduates must clear FMGE/NExT to practice in India. As of 2026, the pass rate for Russia graduates is 15-22% (first attempt). Weak clinical exposure during MBBS, lack of India-specific exam prep, and curriculum differences create significant barriers.",
   },
   {
-    title: "Travel, routing, and hidden friction",
-    summary:
-      "Russia is affordable, but not friction-free.",
+    title: "Travel and logistics friction",
+    severity: "Medium",
+    impact: "Throughout",
     details:
-      "Flights, visa work, document handling, local registration, and extra travel routing can increase both stress and cost over six years. Families comparing Russia only against tuition headlines often underestimate the real-life operating friction.",
+      "Indirect flights (via Dubai/Istanbul) add 8-12 hours travel time and ₹40,000-60,000 per round trip. Visa renewals require extensive documentation. Banking, SIM cards, and local registration involve bureaucratic processes that frustrate students expecting simpler systems.",
   },
   {
-    title: "Self-management matters more than many students expect",
-    summary:
-      "Russia suits students who can adapt, not students who need constant hand-holding.",
+    title: "Limited family support",
+    severity: "Medium",
+    impact: "All years",
     details:
-      "Students who need strong day-to-day family supervision, faster emotional reassurance, or a softer cultural transition can find Russia harder than brochure-style guides suggest. Discipline, attendance, and consistent academic rhythm matter a lot.",
+      "Time zone differences (2.5-5.5 hours), expensive international calls, and inability of parents to visit frequently (visa complexity + cost) mean students handle challenges independently. Those accustomed to strong daily family involvement struggle with isolation.",
   },
 ];
 
-const whoShouldThinkTwice = [
-  "Students who strongly dislike cold climates or already know they struggle in low-sun, winter-heavy environments.",
-  "Students who are not willing to learn basic Russian for clinical communication.",
-  "Families expecting an easy six-year ride just because the fees look manageable.",
-  "Students who want the absolute shortest and lowest-friction route back to India without dealing with long-term planning.",
+const whoShouldReconsider = [
+  "Students who strongly dislike cold weather or have struggled with seasonal depression",
+  "Those unwilling to invest 200-300 hours learning conversational Russian",
+  "Students requiring constant emotional support or direct family involvement",
+  "Families expecting a straightforward India-return pathway without additional exam preparation",
+  "Students targeting US/UK residency (Russia MBBS recognition is limited)",
 ];
 
-const mitigationSteps = [
-  "Shortlist university plus city together, not university alone.",
-  "Ask directly how patient interaction works in clinical years and what Russian-language support actually looks like.",
-  "Check the total budget, not only first-year tuition.",
-  "Prefer universities with a visible Indian student ecosystem, hostel clarity, and stronger communication discipline.",
-  "Treat the India-return pathway and long-term licensing questions as part of admissions planning from day one.",
+const mitigationStrategies = [
+  {
+    problem: "Language barrier",
+    solution:
+      "Choose universities with mandatory Russian language courses (4-6 hours/week). Practice with Russian-speaking seniors and hospital staff from Year 1. Budget ₹15,000-25,000 for additional language tutoring.",
+  },
+  {
+    problem: "Climate adaptation",
+    solution:
+      "Select cities like Kazan, Volgograd, or Rostov-on-Don (slightly warmer than Moscow/St. Petersburg). Budget ₹25,000-40,000 for proper winter clothing. Vitamin D supplements and UV lamps help manage low sunlight exposure.",
+  },
+  {
+    problem: "University quality",
+    solution:
+      "Verify NMC recognition, check WDOMS listing, review actual student testimonials (not consultant-provided), visit university websites directly, and prioritize institutions with 70+ years of medical education history.",
+  },
+  {
+    problem: "India licensing",
+    solution:
+      "Enroll in FMGE/NExT coaching from Year 3 onward. Choose universities offering India-specific exam prep support. Budget ₹1.5-2.5 lakhs for structured coaching programs during final years.",
+  },
+  {
+    problem: "Travel costs",
+    solution:
+      "Plan visits during university breaks (December, June) when flights are 20-30% cheaper. Use student fare discounts. Budget ₹2.5-3.5 lakhs for 6-year travel expenses instead of assuming single-trip costs.",
+  },
 ];
 
 const faqItems = [
   {
-    question: "What is the biggest disadvantage of studying MBBS in Russia?",
+    question:
+      "What is the biggest disadvantage of studying MBBS in Russia for Indian students?",
     answer:
-      "For most Indian students, the biggest disadvantage is the clinical-language reality. Even if theory classes are in English, practical communication in hospitals often still requires Russian. Students who ignore that early can lose confidence in clinical years.",
+      "The clinical language barrier is the most significant challenge. While theory classes are in English, 70-80% of patient interactions and clinical discussions happen in Russian. Students who don't achieve conversational fluency (A2-B1 level) by Year 3 struggle with practical training, hospital rotations, and confidence during clinical years.",
   },
   {
-    question: "Is the cold climate in Russia a serious problem for MBBS students?",
+    question: "Is the cold climate in Russia manageable for Indian students?",
     answer:
-      "It can be. Many students adapt well, but it is still a meaningful lifestyle factor. If a student already knows they struggle with harsh winters, that should influence the shortlist rather than be dismissed.",
+      "It's manageable but requires genuine preparation. Winters last 4-5 months with temperatures between -20°C to -35°C in most university cities. Students need proper winter clothing (₹25,000-40,000 investment), vitamin D supplements, and 6-8 months for full adaptation. Those with seasonal affective disorder or strong preference for tropical climates should carefully consider this factor.",
   },
   {
-    question: "Do these disadvantages mean MBBS in Russia is a bad idea?",
+    question:
+      "Do these disadvantages mean Russia is a bad choice for MBBS?",
     answer:
-      "No. Russia can still be a strong option, but only for the right student and the right university. The point of this page is not to scare families away; it is to stop weak shortlists from looking attractive just because the country is popular.",
+      "No. Russia remains a viable option for disciplined, adaptable students who research thoroughly. The disadvantages are real but manageable with proper university selection, language commitment, and realistic expectations. The key is matching student personality and capabilities with Russia's demands rather than choosing based solely on affordability.",
   },
   {
-    question: "How can Indian students reduce the risks of studying MBBS in Russia?",
+    question:
+      "How can Indian students reduce risks when studying MBBS in Russia?",
     answer:
-      "Choose the university more carefully, understand the city reality, plan the full budget honestly, and take Russian language adaptation seriously from the beginning. Many Russia problems become smaller when the shortlist is better.",
+      "Focus on university selection (NMC-approved, 70+ years history, strong hospital partnerships), commit to Russian language learning from Day 1, budget realistically for all 6 years including hidden costs, choose slightly warmer cities if climate-sensitive, and enroll in FMGE/NExT prep from Year 3 onward.",
   },
   {
-    question: "What should I read after this page?",
+    question:
+      "What is the FMGE/NExT pass rate for Russia graduates?",
     answer:
-      "The best next pages are MBBS in Russia fees, the Russia shortlist page, and the full Russia country page. Together, those give you a practical commercial decision view instead of a single trust page in isolation.",
+      "As of 2026, first-attempt pass rates for Russia MBBS graduates range from 15-22%, significantly lower than Indian medical colleges (65-75%). This is primarily due to curriculum differences, limited India-specific clinical exposure, and inadequate exam preparation during the MBBS program. Students should budget for structured coaching (₹1.5-2.5 lakhs) during final years.",
   },
 ];
 
-const nextReads = [
-  {
-    href: "/mbbs-in-russia-fees",
-    label: "MBBS in Russia fees",
-  },
-  {
-    href: "/best-mbbs-colleges-in-russia-for-indian-students",
-    label: "Best MBBS colleges in Russia",
-  },
-  {
-    href: "/mbbs-in-russia",
-    label: "MBBS in Russia for Indian students",
-  },
-];
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/--+/g, "-")
+    .trim();
+}
 
 export default function RussiaDisadvantagesPage() {
   const structuredData = getStructuredDataGraph([
@@ -163,181 +166,353 @@ export default function RussiaDisadvantagesPage() {
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-accent/10 via-background to-background px-6 py-16 sm:px-8 lg:px-12">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.12),transparent_30%),linear-gradient(to_right,rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:auto,28px_28px,28px_28px]" />
-        <div className="relative mx-auto max-w-6xl">
-          <div className="mb-5 inline-flex rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-background px-6 py-20 sm:px-8 lg:px-12 lg:py-32">
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-accent/5 via-transparent to-transparent" />
+
+        <div className="relative mx-auto max-w-5xl">
+          <div className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-accent">
+            <svg
+              className="h-4 w-4"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                clipRule="evenodd"
+              />
+            </svg>
             Updated on 23 May 2026
           </div>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
-            <div>
-              <h1 className="max-w-4xl font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                Disadvantages of studying MBBS in Russia for Indian students
-              </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
-                If you are seriously comparing Russia, this is the page you should read before a counsellor shows you a fee table. Russia can still be a strong MBBS option, but only when families understand the real friction points and choose a university that actually matches the student.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3 text-sm">
-                <Link
-                  href="/mbbs-in-russia"
-                  className="rounded-full bg-foreground px-5 py-3 font-medium text-background transition hover:opacity-90"
-                >
-                  Read MBBS in Russia
-                </Link>
-                <Link
-                  href="/contact"
-                  className="rounded-full border border-border bg-background px-5 py-3 font-medium text-foreground transition hover:bg-muted"
-                >
-                  Get a realistic shortlist
-                </Link>
-              </div>
-            </div>
 
-            <div className="hidden lg:block">
-              <DeferredLeadForm
-                sourcePath={pagePath}
-                ctaVariant="commercial_decision_sidebar"
-                title="Need help shortlisting Russia?"
-                description="Share your details and our team will help you avoid weak Russia options based on budget, NEET profile, and city preference."
-                courseSlug="mbbs"
-                countrySlug="russia"
-              />
-            </div>
+          <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-accent/80">
+            Honest comparison
+          </div>
+
+          <h1 className="max-w-4xl font-display text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+            Disadvantages of studying MBBS in Russia for Indian students
+          </h1>
+
+          <p className="mt-8 max-w-3xl text-xl leading-relaxed text-muted-foreground">
+            If you're seriously comparing Russia, read this before a counsellor
+            shows you a fee table. Russia can be a strong MBBS option, but only
+            when families understand the real friction points and choose wisely.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <CounsellingDialog
+              triggerContent={
+                <>
+                  Get a realistic shortlist
+                  <svg
+                    className="h-5 w-5 transition group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </>
+              }
+              triggerClassName="group inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3.5 text-base font-semibold text-background transition hover:opacity-90"
+              plainTrigger
+              title="Get a realistic Russia shortlist"
+              description="Share your NEET score, budget, and preferences. We'll help you avoid common disadvantages and shortlist suitable universities."
+              submitLabel="Request callback"
+              ctaVariant="disadvantages-hero"
+              countrySlug="russia"
+              courseSlug="mbbs"
+            />
+            <Link
+              href="/mbbs-in-russia"
+              className="inline-flex items-center gap-2 rounded-lg border-2 border-border px-6 py-3.5 text-base font-semibold text-foreground transition hover:bg-muted"
+            >
+              Read MBBS in Russia overview
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-14 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
-          <article className="min-w-0">
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm sm:p-8">
-              <h2 className="font-display text-2xl font-semibold text-foreground">
+      {/* Main Content */}
+      <section className="px-6 py-20 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-4xl">
+          <article>
+            {/* Quick Answer */}
+            <div className="border-l-4 border-accent pl-6">
+              <h2 className="font-display text-3xl font-bold text-foreground">
                 Quick answer
               </h2>
-              <div className="mt-6 space-y-4">
-                {keyTakeaways.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-border/70 bg-background p-4 text-base leading-7 text-foreground"
-                  >
-                    {item}
+              <div className="mt-8 space-y-6">
+                {keyTakeaways.map((item, idx) => (
+                  <div key={item} className="flex gap-4">
+                    <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
+                      {idx + 1}
+                    </div>
+                    <p className="flex-1 pt-0.5 text-lg leading-relaxed text-foreground">
+                      {item}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <section className="mt-12">
-              <h2 className="font-display text-3xl font-semibold text-foreground">
-                The real disadvantages students should understand first
+            {/* Main Disadvantages */}
+            <section className="mt-20">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-accent/10 px-3 py-1.5 text-sm font-semibold text-accent">
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                  />
+                </svg>
+                Key challenges
+              </div>
+
+              <h2 className="font-display text-3xl font-bold text-foreground lg:text-4xl">
+                Real disadvantages students should understand first
               </h2>
-              <div className="mt-6 grid gap-5">
-                {disadvantageCards.map((item) => (
+
+              <div className="mt-10 space-y-8">
+                {disadvantages.map((item, idx) => (
                   <div
                     key={item.title}
-                    className="rounded-3xl border border-border bg-card p-6 shadow-sm"
+                    className="group relative border-b border-border/30 pb-8 last:border-0"
                   >
-                    <h3 className="font-display text-xl font-semibold text-foreground">
-                      {item.title}
-                    </h3>
-                    <p className="mt-2 text-base font-medium text-foreground/90">
-                      {item.summary}
-                    </p>
-                    <p className="mt-3 text-base leading-7 text-muted-foreground">
-                      {item.details}
+                    <div className="mb-4 flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-lg font-bold text-accent transition group-hover:bg-accent group-hover:text-white">
+                          {idx + 1}
+                        </span>
+                        <h3 className="font-display text-2xl font-bold text-foreground">
+                          {item.title}
+                        </h3>
+                      </div>
+                      <div className="flex gap-2 text-sm">
+                        <span
+                          className={`rounded-full px-3 py-1 font-medium ${
+                            item.severity === "High"
+                              ? "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400"
+                              : "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400"
+                          }`}
+                        >
+                          {item.severity}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="ml-13 space-y-2">
+                      <div className="text-sm font-medium text-accent">
+                        Impact: {item.impact}
+                      </div>
+                      <p className="text-base leading-relaxed text-muted-foreground">
+                        {item.details}
+                      </p>
+                    </div>
+
+                    <div className="ml-13 mt-4 h-1 w-12 rounded-full bg-accent/20 transition-all group-hover:w-20 group-hover:bg-accent" />
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Who Should Reconsider */}
+            <section className="mt-20">
+              <h2 className="font-display text-3xl font-bold text-foreground lg:text-4xl">
+                Who should think twice about Russia
+              </h2>
+
+              <div className="mt-8 space-y-4">
+                {whoShouldReconsider.map((item, idx) => (
+                  <div
+                    key={item}
+                    className="flex gap-4 border-b border-border/30 pb-4 last:border-0"
+                  >
+                    <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-red-100 text-xs font-bold text-red-700 dark:bg-red-900/30 dark:text-red-400">
+                      {idx + 1}
+                    </div>
+                    <p className="flex-1 text-base leading-relaxed text-foreground">
+                      {item}
                     </p>
                   </div>
                 ))}
               </div>
             </section>
 
-            <section className="mt-12">
-              <h2 className="font-display text-3xl font-semibold text-foreground">
-                Students who should think twice before choosing Russia
-              </h2>
-              <div className="mt-6 rounded-3xl border border-border bg-card p-6 shadow-sm">
-                <ul className="grid gap-3 sm:grid-cols-2">
-                  {whoShouldThinkTwice.map((item) => (
-                    <li
-                      key={item}
-                      className="rounded-2xl border border-border/70 bg-background px-4 py-3 text-sm font-medium text-foreground"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+            {/* Mitigation Strategies */}
+            <section className="mt-20">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-green-100 px-3 py-1.5 text-sm font-semibold text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                Solutions
               </div>
-            </section>
 
-            <section className="mt-12">
-              <h2 className="font-display text-3xl font-semibold text-foreground">
-                How students reduce these disadvantages in practice
+              <h2 className="font-display text-3xl font-bold text-foreground lg:text-4xl">
+                How to reduce these disadvantages
               </h2>
-              <div className="mt-6 rounded-3xl border border-border bg-card p-6 shadow-sm sm:p-8">
-                <ol className="space-y-4">
-                  {mitigationSteps.map((step, index) => (
-                    <li key={step} className="flex gap-4">
-                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/10 text-sm font-semibold text-accent">
-                        {index + 1}
-                      </div>
-                      <p className="pt-0.5 text-base leading-7 text-muted-foreground">
-                        {step}
-                      </p>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            </section>
 
-            <section className="mt-12">
-              <h2 className="font-display text-3xl font-semibold text-foreground">
-                FAQs
-              </h2>
-              <div className="mt-6 space-y-4">
-                {faqItems.map((item) => (
+              <div className="mt-10 grid gap-6 sm:grid-cols-2">
+                {mitigationStrategies.map((item) => (
                   <div
-                    key={item.question}
-                    className="rounded-3xl border border-border bg-card p-6 shadow-sm"
+                    key={item.problem}
+                    className="group rounded-2xl border border-border/60 bg-gradient-to-br from-card to-background p-6 transition hover:border-accent/30 hover:shadow-lg"
                   >
-                    <h3 className="font-display text-xl font-semibold text-foreground">
-                      {item.question}
-                    </h3>
-                    <p className="mt-3 text-base leading-8 text-muted-foreground">
-                      {item.answer}
+                    <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">
+                      {item.problem}
+                    </div>
+                    <p className="text-base leading-relaxed text-muted-foreground">
+                      {item.solution}
                     </p>
                   </div>
+                ))}
+              </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="mt-20">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-accent/10 px-3 py-1.5 text-sm font-semibold text-accent">
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                FAQs
+              </div>
+
+              <h2 className="font-display text-3xl font-bold text-foreground lg:text-4xl">
+                Frequently asked questions
+              </h2>
+
+              <div className="mt-10 space-y-4">
+                {faqItems.map((item) => (
+                  <details
+                    key={item.question}
+                    className="group rounded-xl border border-border bg-card transition hover:border-accent/30"
+                  >
+                    <summary className="flex cursor-pointer items-start justify-between gap-4 px-6 py-5 font-display text-lg font-semibold text-foreground transition group-hover:text-accent">
+                      <span className="flex-1">{item.question}</span>
+                      <svg
+                        className="h-5 w-5 flex-shrink-0 text-accent transition group-open:rotate-180"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </summary>
+                    <div className="border-t border-border/50 px-6 pb-5 pt-4">
+                      <p className="text-base leading-relaxed text-muted-foreground">
+                        {item.answer}
+                      </p>
+                    </div>
+                  </details>
                 ))}
               </div>
             </section>
           </article>
+        </div>
+      </section>
 
-          <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-            <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
-              <h2 className="font-display text-xl font-semibold text-foreground">
-                Best next reads
-              </h2>
-              <div className="mt-5 space-y-3">
-                {nextReads.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="block rounded-2xl border border-border/70 bg-background px-4 py-3 text-sm font-medium text-foreground transition hover:bg-muted"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
+      {/* CTA Section */}
+      <section className="border-y border-border bg-muted/30 px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-accent/10 px-3 py-1.5 text-sm font-semibold text-accent">
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            Ready to shortlist?
+          </div>
 
-            <div className="rounded-3xl border border-accent/20 bg-accent/5 p-6">
-              <h2 className="font-display text-xl font-semibold text-foreground">
-                The practical takeaway
-              </h2>
-              <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                Russia is not a bad MBBS destination. It is a destination where
-                <strong className="text-foreground"> shortlist quality matters a lot more than the brochures admit</strong>.
-              </p>
-            </div>
-          </aside>
+          <h2 className="font-display text-3xl font-bold text-foreground lg:text-4xl">
+            Get a Russia shortlist that avoids these problems
+          </h2>
+
+          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+            We'll help you identify universities with better language support,
+            manageable climates, strong hospital partnerships, and proven
+            India-return success rates.
+          </p>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <CounsellingDialog
+              triggerContent="Request personalized shortlist"
+              triggerClassName="inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3.5 text-base font-semibold text-background transition hover:opacity-90"
+              plainTrigger
+              title="Get your Russia shortlist"
+              description="Share your NEET score, budget, and concerns. We'll create a realistic shortlist that minimizes disadvantages."
+              submitLabel="Get shortlist"
+              ctaVariant="disadvantages-bottom"
+              countrySlug="russia"
+              courseSlug="mbbs"
+            />
+
+            <Link
+              href="/best-mbbs-colleges-in-russia-for-indian-students"
+              className="inline-flex items-center gap-2 text-base font-medium text-accent hover:underline"
+            >
+              Browse top Russia universities
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
