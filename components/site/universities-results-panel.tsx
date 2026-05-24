@@ -181,7 +181,7 @@ export function UniversitiesResultsPanel({
               <UniversityCard
                 key={program.offering.slug}
                 program={program}
-                imagePriority={index < 2}
+                imagePriority={index < 6}
               />
             ))}
           </div>

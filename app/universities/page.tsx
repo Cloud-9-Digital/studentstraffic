@@ -116,10 +116,15 @@ async function UniversitiesExplorerSection({
   const filters = parseFinderFilters(raw);
   const pageParam = Array.isArray(raw.page) ? raw.page[0] : raw.page;
   const page = parseFinderPage(pageParam);
-  const [options, initialResults] = await Promise.all([
-    getFinderOptions(),
-    queryFinderCardProgramsPage(filters, page, finderPageSize),
-  ]);
+
+  // Fetch options immediately (fast - typically <100ms)
+  const options = await getFinderOptions();
+
+  // Start fetching results but don't await (allows streaming)
+  const initialResultsPromise = queryFinderCardProgramsPage(filters, page, finderPageSize);
+
+  // Stream results as they come
+  const initialResults = await initialResultsPromise;
 
   return (
     <UniversitiesExplorer

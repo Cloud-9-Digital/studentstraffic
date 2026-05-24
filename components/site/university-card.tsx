@@ -4,6 +4,7 @@ import { Building2 } from "lucide-react";
 
 import { AddToCompareButton } from "@/components/site/add-to-compare-button";
 import type { FinderCardProgram } from "@/lib/data/types";
+import { universityImageBlurDataURL, universityLogoBlurDataURL } from "@/lib/image-placeholder";
 import { getUniversityHref } from "@/lib/routes";
 import { getCountryFlagCode, getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
 import {
@@ -46,7 +47,9 @@ export function UniversityCard({
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             priority={imagePriority}
-            loading={imagePriority ? "eager" : undefined}
+            loading={imagePriority ? "eager" : "lazy"}
+            placeholder="blur"
+            blurDataURL={universityImageBlurDataURL}
             className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
         ) : (
@@ -92,6 +95,9 @@ export function UniversityCard({
                   alt={`${university.name} logo`}
                   fill
                   sizes="40px"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={universityLogoBlurDataURL}
                   className="object-contain p-1.5"
                 />
               </span>
