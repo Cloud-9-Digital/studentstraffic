@@ -15,7 +15,6 @@ import * as Haptics from "expo-haptics";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { StatusPill } from "../../src/components/StatusPill";
-import { FLOATING_TAB_INSET } from "../../src/components/FloatingTabBar";
 import { colors, shadow } from "../../src/theme/tokens";
 
 const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
@@ -25,7 +24,7 @@ const STATUS_COLORS: Record<string, string> = {
   submitted:    colors.primarySoft,
   under_review: colors.blueSoft,
   accepted:     "#e7f6ef",
-  rejected:     "#fff0f0",
+  rejected:     colors.coralSoft,
   waitlisted:   colors.amberSoft,
 };
 
@@ -48,24 +47,16 @@ export default function ApplicationsScreen() {
 
   return (
     <View style={[s.root, { backgroundColor: BG }]}>
-      {/* ── Fixed header ── */}
       <SafeAreaView edges={["top"]} style={[s.headerSafe, { backgroundColor: BG }]}>
         <View style={s.headerRow}>
           <Text style={s.title}>Applications</Text>
-          <Pressable
-            onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light); router.push("/application/start"); }}
-            style={({ pressed }) => [s.addBtn, pressed && s.addBtnPressed]}
-          >
-            <Ionicons name="add" size={20} color={colors.primary} />
-          </Pressable>
         </View>
       </SafeAreaView>
 
-      {/* ── Content ── */}
       <ScrollView
         contentContainerStyle={[
           s.scroll,
-          { paddingBottom: Platform.OS === "ios" ? FLOATING_TAB_INSET + 16 : insets.bottom + 80 },
+          { paddingBottom: insets.bottom + 90 },
         ]}
         showsVerticalScrollIndicator={false}
       >
@@ -76,20 +67,14 @@ export default function ApplicationsScreen() {
             </View>
             <Text style={s.emptyTitle}>No applications yet</Text>
             <Text style={s.emptySub}>
-              Start your MBBS application — our counsellors guide you through every step at no cost.
+              Talk to our free counsellors — they'll guide you through the entire application process.
             </Text>
             <Pressable
-              onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium); router.push("/application/start"); }}
-              style={({ pressed }) => [s.startBtn, pressed && s.startBtnPressed]}
+              onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium); router.push("/counselling"); }}
+              style={({ pressed }) => [s.ctaBtn, pressed && s.ctaBtnPressed]}
             >
-              <Ionicons name="add-circle" size={16} color="#fff" />
-              <Text style={s.startBtnLabel}>Start an application</Text>
-            </Pressable>
-            <Pressable
-              onPress={() => { Haptics.selectionAsync(); router.push("/counselling"); }}
-              style={({ pressed }) => [s.counselBtn, pressed && s.counselBtnPressed]}
-            >
-              <Text style={s.counselBtnLabel}>Talk to counsellor first</Text>
+              <Ionicons name="chatbubble-ellipses" size={16} color="#fff" />
+              <Text style={s.ctaBtnLabel}>Talk to a counsellor</Text>
             </Pressable>
           </View>
         ) : (
@@ -101,12 +86,10 @@ export default function ApplicationsScreen() {
               {data.map((app) => (
                 <Pressable
                   key={app.id}
-                  onPress={() => { Haptics.selectionAsync(); router.push(`/application/${app.id}`); }}
+                  onPress={() => { Haptics.selectionAsync(); router.push("/counselling"); }}
                   style={({ pressed }) => [s.card, pressed && s.cardPressed]}
                 >
-                  {/* Status colour strip */}
                   <View style={[s.cardStrip, { backgroundColor: STATUS_COLORS[app.status] ?? colors.line }]} />
-
                   <View style={s.cardBody}>
                     <View style={s.cardTop}>
                       <View style={[s.cardIconWrap, { backgroundColor: STATUS_COLORS[app.status] ?? colors.primarySoft }]}>
@@ -114,10 +97,8 @@ export default function ApplicationsScreen() {
                       </View>
                       <StatusPill status={app.status} />
                     </View>
-
                     <Text style={s.cardName} numberOfLines={2}>{app.universityName}</Text>
                     <Text style={s.cardMeta}>{app.course} · {app.countryName}</Text>
-
                     <View style={s.cardFooter}>
                       <Text style={s.cardNext} numberOfLines={2}>{app.nextStep}</Text>
                       <Ionicons name="chevron-forward" size={16} color={colors.faint} />
@@ -127,15 +108,18 @@ export default function ApplicationsScreen() {
               ))}
             </View>
 
-            {/* Start new CTA */}
+            {/* Counsellor nudge */}
             <Pressable
-              onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light); router.push("/application/start"); }}
-              style={({ pressed }) => [s.newAppRow, pressed && s.newAppRowPressed]}
+              onPress={() => { Haptics.selectionAsync(); router.push("/counselling"); }}
+              style={({ pressed }) => [s.nudge, pressed && s.nudgePressed]}
             >
-              <View style={s.newAppIcon}>
-                <Ionicons name="add" size={18} color={colors.primary} />
+              <View style={s.nudgeIcon}>
+                <Ionicons name="chatbubble-ellipses-outline" size={20} color={colors.primary} />
               </View>
-              <Text style={s.newAppLabel}>Start another application</Text>
+              <View style={{ flex: 1 }}>
+                <Text style={s.nudgeTitle}>Need help with your application?</Text>
+                <Text style={s.nudgeSub}>Our counsellors are free and available now.</Text>
+              </View>
               <Ionicons name="chevron-forward" size={16} color={colors.faint} />
             </Pressable>
           </>
@@ -150,9 +134,6 @@ const s = StyleSheet.create({
 
   headerSafe: {},
   headerRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
     paddingHorizontal: 20,
     paddingTop: 10,
     paddingBottom: 16,
@@ -163,12 +144,6 @@ const s = StyleSheet.create({
     color: colors.ink,
     letterSpacing: -0.4,
   },
-  addBtn: {
-    width: 36, height: 36, borderRadius: 11,
-    backgroundColor: colors.primarySoft,
-    alignItems: "center", justifyContent: "center",
-  },
-  addBtnPressed: { opacity: 0.75 },
 
   scroll: { paddingHorizontal: 20 },
   subtitle: {
@@ -179,7 +154,6 @@ const s = StyleSheet.create({
   },
   list: { gap: 12 },
 
-  // Application card
   card: {
     flexDirection: "row",
     backgroundColor: colors.surface,
@@ -222,32 +196,26 @@ const s = StyleSheet.create({
     lineHeight: 19,
   },
 
-  // New app row
-  newAppRow: {
+  nudge: {
     flexDirection: "row",
     alignItems: "center",
     gap: 12,
-    marginTop: 12,
-    backgroundColor: colors.surface,
-    borderRadius: 16,
+    marginTop: 16,
+    backgroundColor: colors.primarySoft,
+    borderRadius: 18,
     borderWidth: 1,
-    borderColor: colors.line,
+    borderColor: "rgba(15,61,55,0.10)",
     padding: 16,
   },
-  newAppRowPressed: { opacity: 0.8 },
-  newAppIcon: {
-    width: 32, height: 32, borderRadius: 9,
-    backgroundColor: colors.primarySoft,
+  nudgePressed: { opacity: 0.85 },
+  nudgeIcon: {
+    width: 40, height: 40, borderRadius: 12,
+    backgroundColor: "rgba(15,61,55,0.10)",
     alignItems: "center", justifyContent: "center",
   },
-  newAppLabel: {
-    flex: 1,
-    fontFamily: "PlusJakartaSans-SemiBold",
-    fontSize: 14,
-    color: colors.ink,
-  },
+  nudgeTitle: { fontFamily: "PlusJakartaSans-Bold", fontSize: 14, color: colors.ink },
+  nudgeSub: { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, color: colors.muted, marginTop: 2 },
 
-  // Empty state
   emptyWrap: { paddingTop: 40, alignItems: "center", gap: 12, paddingHorizontal: 16 },
   emptyIconWrap: {
     width: 80, height: 80, borderRadius: 24,
@@ -257,14 +225,11 @@ const s = StyleSheet.create({
   },
   emptyTitle: { fontFamily: "Fraunces-SemiBold", fontSize: 24, color: colors.ink, textAlign: "center" },
   emptySub: { fontFamily: "PlusJakartaSans-Regular", fontSize: 14, color: colors.muted, textAlign: "center", lineHeight: 22 },
-  startBtn: {
+  ctaBtn: {
     flexDirection: "row", alignItems: "center", gap: 8,
     backgroundColor: colors.primary, paddingHorizontal: 20, paddingVertical: 12,
     borderRadius: 14, marginTop: 4,
   },
-  startBtnPressed: { opacity: 0.85 },
-  startBtnLabel: { fontFamily: "PlusJakartaSans-Bold", fontSize: 14, color: "#fff" },
-  counselBtn: { paddingVertical: 10 },
-  counselBtnPressed: { opacity: 0.7 },
-  counselBtnLabel: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 14, color: colors.primary },
+  ctaBtnPressed: { opacity: 0.85 },
+  ctaBtnLabel: { fontFamily: "PlusJakartaSans-Bold", fontSize: 14, color: "#fff" },
 });

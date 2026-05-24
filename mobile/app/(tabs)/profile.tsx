@@ -1,20 +1,23 @@
 import {
+  KeyboardAvoidingView,
+  Modal,
   Platform,
   Pressable,
   ScrollView,
   StyleSheet,
   Text,
+  TextInput,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useQuery } from "@tanstack/react-query";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
+import { LinearGradient } from "expo-linear-gradient";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useEffect, useRef, useState } from "react";
 import * as Haptics from "expo-haptics";
 
 import { mobileClient } from "../../src/api/mobileClient";
-import { FLOATING_TAB_INSET } from "../../src/components/FloatingTabBar";
 import { colors, shadow } from "../../src/theme/tokens";
 
 const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
@@ -23,9 +26,121 @@ function initials(name: string) {
   return name.split(" ").slice(0, 2).map((w) => w[0]).join("").toUpperCase();
 }
 
+// ── Field edit modal ──────────────────────────────────────────────────────────
+
+type FieldConfig = {
+  key: "name" | "phone" | "neetScore" | "budgetUsd";
+  title: string;
+  hint?: string;
+  keyboardType: "default" | "phone-pad" | "numeric";
+  placeholder: string;
+  autoCapitalize?: "none" | "words" | "sentences";
+};
+
+const FIELD_CONFIGS: FieldConfig[] = [
+  { key: "name",      title: "Full name",    keyboardType: "default", placeholder: "Your full name", autoCapitalize: "words" },
+  { key: "phone",     title: "Phone number", hint: "We'll use this to call you back", keyboardType: "phone-pad", placeholder: "+91 98765 43210", autoCapitalize: "none" },
+  { key: "neetScore", title: "NEET Score",   hint: "Enter your score out of 720", keyboardType: "numeric", placeholder: "e.g. 520" },
+  { key: "budgetUsd", title: "Annual budget", hint: "Your total budget per year in USD", keyboardType: "numeric", placeholder: "e.g. 6000" },
+];
+
+type EditModalProps = {
+  field: FieldConfig | null;
+  initialValue: string;
+  onClose: () => void;
+  onSave: (value: string) => Promise<void>;
+};
+
+function FieldEditModal({ field, initialValue, onClose, onSave }: EditModalProps) {
+  const insets = useSafeAreaInsets();
+  const inputRef = useRef<TextInput>(null);
+  const [value, setValue] = useState(initialValue);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    setValue(initialValue);
+    setError(null);
+  }, [initialValue, field]);
+
+  async function handleSave() {
+    setSaving(true);
+    setError(null);
+    try {
+      await onSave(value);
+      onClose();
+    } catch {
+      setError("Couldn't save. Please try again.");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  if (!field) return null;
+
+  return (
+    <Modal
+      visible={!!field}
+      transparent
+      animationType="slide"
+      onRequestClose={onClose}
+      onShow={() => setTimeout(() => inputRef.current?.focus(), 100)}
+    >
+      {/* Backdrop */}
+      <Pressable style={m.backdrop} onPress={onClose} />
+
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        style={m.sheet}
+      >
+        <View style={[m.card, { paddingBottom: Math.max(insets.bottom, 16) }]}>
+          {/* Handle */}
+          <View style={m.handle} />
+
+          {/* Header */}
+          <View style={m.header}>
+            <Text style={m.title}>{field.title}</Text>
+            <Pressable onPress={onClose} hitSlop={12} style={m.closeBtn}>
+              <Ionicons name="close" size={18} color={colors.muted} />
+            </Pressable>
+          </View>
+
+          {field.hint && <Text style={m.hint}>{field.hint}</Text>}
+
+          {/* Input */}
+          <TextInput
+            ref={inputRef}
+            value={value}
+            onChangeText={setValue}
+            placeholder={field.placeholder}
+            placeholderTextColor={colors.faint}
+            keyboardType={field.keyboardType}
+            autoCapitalize={field.autoCapitalize ?? "none"}
+            returnKeyType="done"
+            onSubmitEditing={handleSave}
+            style={m.input}
+          />
+
+          {error && <Text style={m.error}>{error}</Text>}
+
+          {/* Save */}
+          <Pressable
+            onPress={handleSave}
+            disabled={saving}
+            style={({ pressed }) => [m.saveBtn, (pressed || saving) && m.saveBtnPressed]}
+          >
+            <Text style={m.saveBtnLabel}>{saving ? "Saving…" : "Save"}</Text>
+          </Pressable>
+        </View>
+      </KeyboardAvoidingView>
+    </Modal>
+  );
+}
+
+// ── Settings rows ─────────────────────────────────────────────────────────────
+
 type RowProps = {
   icon: keyof typeof Ionicons.glyphMap;
-  iconBg: string;
   label: string;
   value?: string | null;
   onPress?: () => void;
@@ -33,19 +148,21 @@ type RowProps = {
   danger?: boolean;
 };
 
-function SettingsRow({ icon, iconBg, label, value, onPress, last, danger }: RowProps) {
+function SettingsRow({ icon, label, value, onPress, last, danger }: RowProps) {
+  const iconColor = danger ? "#dc2626" : colors.primary;
+  const iconBg    = danger ? "#fef2f2" : colors.primarySoft;
   return (
     <Pressable
       onPress={() => { if (onPress) { Haptics.selectionAsync(); onPress(); } }}
       style={({ pressed }) => [row.wrap, last && row.wrapLast, pressed && onPress && row.pressed]}
     >
       <View style={[row.iconWrap, { backgroundColor: iconBg }]}>
-        <Ionicons name={icon} size={17} color={danger ? "#dc2626" : colors.primary} />
+        <Ionicons name={icon} size={17} color={iconColor} />
       </View>
-      <Text style={[row.label, danger && row.danger]}>{label}</Text>
+      <Text style={[row.label, danger && row.dangerLabel]}>{label}</Text>
       <View style={row.right}>
         {value ? <Text style={row.value} numberOfLines={1}>{value}</Text> : null}
-        {onPress ? <Ionicons name="chevron-forward" size={16} color={colors.faint} /> : null}
+        {onPress && !danger ? <Ionicons name="chevron-forward" size={15} color={colors.faint} /> : null}
       </View>
       {!last && <View style={row.sep} />}
     </Pressable>
@@ -58,7 +175,7 @@ const row = StyleSheet.create({
     alignItems: "center",
     gap: 12,
     paddingHorizontal: 16,
-    paddingVertical: 13,
+    paddingVertical: 14,
     backgroundColor: colors.surface,
     position: "relative",
   },
@@ -66,6 +183,7 @@ const row = StyleSheet.create({
   pressed: { backgroundColor: colors.background },
   iconWrap: {
     width: 32, height: 32, borderRadius: 9,
+    backgroundColor: colors.primarySoft,
     alignItems: "center", justifyContent: "center",
   },
   label: {
@@ -74,7 +192,7 @@ const row = StyleSheet.create({
     fontSize: 15,
     color: colors.ink,
   },
-  danger: { color: "#dc2626" },
+  dangerLabel: { color: "#dc2626" },
   right: { flexDirection: "row", alignItems: "center", gap: 6 },
   value: {
     fontFamily: "PlusJakartaSans-Regular",
@@ -84,23 +202,17 @@ const row = StyleSheet.create({
   },
   sep: {
     position: "absolute",
-    bottom: 0,
-    left: 60,
-    right: 0,
+    bottom: 0, left: 60, right: 0,
     height: StyleSheet.hairlineWidth,
     backgroundColor: colors.line,
   },
 });
 
 function SettingsGroup({ children }: { children: React.ReactNode }) {
-  return (
-    <View style={group.wrap}>
-      {children}
-    </View>
-  );
+  return <View style={grp.wrap}>{children}</View>;
 }
 
-const group = StyleSheet.create({
+const grp = StyleSheet.create({
   wrap: {
     borderRadius: 18,
     overflow: "hidden",
@@ -110,211 +222,345 @@ const group = StyleSheet.create({
   },
 });
 
+// ── Screen ────────────────────────────────────────────────────────────────────
+
 export default function ProfileScreen() {
   const router = useRouter();
+  const queryClient = useQueryClient();
   const insets = useSafeAreaInsets();
+
   const { data: profile } = useQuery({
     queryKey: ["profile"],
     queryFn: () => mobileClient.getProfile(),
   });
 
+  const [activeField, setActiveField] = useState<FieldConfig | null>(null);
+
   const name = profile?.name ?? "Student";
   const email = profile?.email ?? "";
 
+  function openField(key: FieldConfig["key"]) {
+    Haptics.selectionAsync();
+    setActiveField(FIELD_CONFIGS.find(f => f.key === key) ?? null);
+  }
+
+  function getInitialValue(key: FieldConfig["key"]): string {
+    if (!profile) return "";
+    if (key === "name") return profile.name ?? "";
+    if (key === "phone") return profile.phone ?? "";
+    if (key === "neetScore") return profile.neetScore ? String(profile.neetScore) : "";
+    if (key === "budgetUsd") return profile.budgetUsd ? String(profile.budgetUsd) : "";
+    return "";
+  }
+
+  async function handleSave(value: string) {
+    if (!activeField) return;
+    const patch: Record<string, unknown> = {};
+    if (activeField.key === "name") patch.name = value;
+    else if (activeField.key === "phone") patch.phone = value;
+    else if (activeField.key === "neetScore") patch.neetScore = value ? Number(value) : null;
+    else if (activeField.key === "budgetUsd") patch.budgetUsd = value ? Number(value) : null;
+    await mobileClient.updateProfile(patch as Parameters<typeof mobileClient.updateProfile>[0]);
+    await queryClient.invalidateQueries({ queryKey: ["profile"] });
+    await queryClient.invalidateQueries({ queryKey: ["dashboard"] });
+  }
+
+  async function handleSignOut() {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    await mobileClient.logout();
+    queryClient.clear();
+    router.replace("/(auth)/welcome");
+  }
+
   return (
     <View style={[s.root, { backgroundColor: BG }]}>
-      {/* ── Fixed header ── */}
-      <SafeAreaView edges={["top"]} style={[s.headerSafe, { backgroundColor: BG }]}>
-        <View style={s.headerRow}>
-          <Text style={s.title}>Profile</Text>
-          <Pressable
-            onPress={() => { Haptics.selectionAsync(); router.push("/profile/edit"); }}
-            style={({ pressed }) => [s.editBtn, pressed && s.editBtnPressed]}
-          >
-            <Text style={s.editBtnLabel}>Edit</Text>
-          </Pressable>
-        </View>
-      </SafeAreaView>
-
-      {/* ── Scrollable content ── */}
       <ScrollView
-        contentContainerStyle={[
-          s.scroll,
-          { paddingBottom: Platform.OS === "ios" ? FLOATING_TAB_INSET + 16 : insets.bottom + 80 },
-        ]}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 90 }}
         showsVerticalScrollIndicator={false}
       >
-        {/* Avatar block */}
-        <View style={s.avatarBlock}>
-          <View style={s.avatarWrap}>
-            <View style={s.avatar}>
-              <Text style={s.avatarText}>{initials(name)}</Text>
+        {/* ── Branded header ── */}
+        <LinearGradient
+          colors={["#0a2620", "#0f3d37"]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={s.headerGrad}
+        >
+          <SafeAreaView edges={["top"]}>
+            <View style={s.headerInner}>
+              <View style={s.avatarRing}>
+                <Pressable
+                  onPress={() => openField("name")}
+                  style={s.avatar}
+                >
+                  <Text style={s.avatarText}>{initials(name)}</Text>
+                </Pressable>
+              </View>
+              <Text style={s.name}>{name}</Text>
+              <Text style={s.email}>{email}</Text>
+
+              <View style={s.statsRow}>
+                <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/shortlists"); }} style={s.statPill}>
+                  <Ionicons name="bookmark" size={13} color={colors.mint} />
+                  <Text style={s.statLabel}>Shortlisted</Text>
+                </Pressable>
+                <View style={s.statDot} />
+                <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/applications"); }} style={s.statPill}>
+                  <Ionicons name="document-text" size={13} color={colors.mint} />
+                  <Text style={s.statLabel}>Applications</Text>
+                </Pressable>
+              </View>
             </View>
-            <Pressable
-              style={s.avatarEditDot}
-              onPress={() => { Haptics.selectionAsync(); router.push("/profile/edit"); }}
-            >
-              <Ionicons name="pencil" size={10} color="#fff" />
-            </Pressable>
-          </View>
-          <Text style={s.name}>{name}</Text>
-          <Text style={s.email}>{email}</Text>
+          </SafeAreaView>
+        </LinearGradient>
+
+        {/* ── Settings ── */}
+        <View style={s.content}>
+          <Text style={s.sectionLabel}>MY DETAILS</Text>
+          <SettingsGroup>
+            <SettingsRow
+              icon="person-outline"
+              label="Name"
+              value={profile?.name ?? "Add name"}
+              onPress={() => openField("name")}
+            />
+            <SettingsRow
+              icon="call-outline"
+              label="Phone"
+              value={profile?.phone ?? "Add phone"}
+              onPress={() => openField("phone")}
+            />
+            <SettingsRow
+              icon="trophy-outline"
+              label="NEET Score"
+              value={profile?.neetScore ? String(profile.neetScore) : "Not added"}
+              onPress={() => openField("neetScore")}
+            />
+            <SettingsRow
+              icon="wallet-outline"
+              label="Budget"
+              value={profile?.budgetUsd ? `$${profile.budgetUsd.toLocaleString()}/yr` : "Not added"}
+              onPress={() => openField("budgetUsd")}
+              last
+            />
+          </SettingsGroup>
+
+          {(profile?.preferredCountries?.length ?? 0) > 0 && (
+            <>
+              <Text style={s.sectionLabel}>PREFERENCES</Text>
+              <SettingsGroup>
+                <SettingsRow
+                  icon="earth-outline"
+                  label="Preferred countries"
+                  value={(profile?.preferredCountries ?? []).join(", ")}
+                  last
+                />
+              </SettingsGroup>
+            </>
+          )}
+
+          <Text style={s.sectionLabel}>SUPPORT</Text>
+          <SettingsGroup>
+            <SettingsRow
+              icon="chatbubble-ellipses-outline"
+              label="Talk to counsellor"
+              onPress={() => router.push("/counselling")}
+            />
+            <SettingsRow
+              icon="help-circle-outline"
+              label="Help & FAQ"
+              onPress={() => {}}
+              last
+            />
+          </SettingsGroup>
+
+          <Text style={s.sectionLabel}>ACCOUNT</Text>
+          <SettingsGroup>
+            <SettingsRow
+              icon="log-out-outline"
+              label="Sign out"
+              onPress={handleSignOut}
+              danger
+              last
+            />
+          </SettingsGroup>
+
+          <Text style={s.version}>Students Traffic · v1.0.0</Text>
         </View>
-
-        {/* My details */}
-        <Text style={s.sectionLabel}>MY DETAILS</Text>
-        <SettingsGroup>
-          <SettingsRow
-            icon="call-outline" iconBg={colors.primarySoft}
-            label="Phone" value={profile?.phone ?? "Add phone"}
-            onPress={() => router.push("/profile/edit")}
-          />
-          <SettingsRow
-            icon="trophy-outline" iconBg={colors.amberSoft}
-            label="NEET Score" value={profile?.neetScore ? String(profile.neetScore) : "Not added"}
-            onPress={() => router.push("/profile/edit")}
-          />
-          <SettingsRow
-            icon="wallet-outline" iconBg={colors.blueSoft}
-            label="Budget" value={profile?.budgetUsd ? `$${profile.budgetUsd.toLocaleString()}` : "Not added"}
-            onPress={() => router.push("/profile/edit")}
-            last
-          />
-        </SettingsGroup>
-
-        {/* Preferences */}
-        {(profile?.preferredCountries?.length ?? 0) > 0 && (
-          <>
-            <Text style={s.sectionLabel}>PREFERENCES</Text>
-            <SettingsGroup>
-              <SettingsRow
-                icon="earth-outline" iconBg={colors.primarySoft}
-                label="Preferred countries"
-                value={(profile?.preferredCountries ?? []).join(", ")}
-                onPress={() => router.push("/profile/edit")}
-                last
-              />
-            </SettingsGroup>
-          </>
-        )}
-
-        {/* Support */}
-        <Text style={s.sectionLabel}>SUPPORT</Text>
-        <SettingsGroup>
-          <SettingsRow
-            icon="chatbubble-ellipses-outline" iconBg={colors.primarySoft}
-            label="Talk to counsellor"
-            onPress={() => router.push("/counselling")}
-          />
-          <SettingsRow
-            icon="help-circle-outline" iconBg={colors.blueSoft}
-            label="Help & FAQ"
-            onPress={() => {}}
-            last
-          />
-        </SettingsGroup>
-
-        {/* Account */}
-        <Text style={s.sectionLabel}>ACCOUNT</Text>
-        <SettingsGroup>
-          <SettingsRow
-            icon="create-outline" iconBg={colors.primarySoft}
-            label="Edit profile"
-            onPress={() => router.push("/profile/edit")}
-          />
-          <SettingsRow
-            icon="log-out-outline" iconBg="#fef2f2"
-            label="Sign out"
-            danger
-            onPress={async () => {
-              Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-              await mobileClient.logout();
-              router.replace("/(auth)/welcome");
-            }}
-            last
-          />
-        </SettingsGroup>
-
-        <Text style={s.version}>Students Traffic · v1.0.0</Text>
       </ScrollView>
+
+      {/* ── Field edit modal ── */}
+      <FieldEditModal
+        field={activeField}
+        initialValue={activeField ? getInitialValue(activeField.key) : ""}
+        onClose={() => setActiveField(null)}
+        onSave={handleSave}
+      />
     </View>
   );
 }
 
+// ── Styles ────────────────────────────────────────────────────────────────────
+
 const s = StyleSheet.create({
   root: { flex: 1 },
 
-  headerSafe: {},
-  headerRow: {
+  headerGrad: {},
+  headerInner: {
+    alignItems: "center",
+    paddingTop: 12,
+    paddingBottom: 28,
+    paddingHorizontal: 20,
+  },
+
+  avatarRing: {
+    width: 84, height: 84, borderRadius: 26,
+    borderWidth: 2,
+    borderColor: "rgba(124,207,191,0.35)",
+    alignItems: "center", justifyContent: "center",
+    marginBottom: 14,
+  },
+  avatar: {
+    width: 76, height: 76, borderRadius: 23,
+    backgroundColor: "rgba(255,255,255,0.12)",
+    alignItems: "center", justifyContent: "center",
+  },
+  avatarText: {
+    fontFamily: "PlusJakartaSans-Bold",
+    fontSize: 28,
+    color: "#fff",
+    letterSpacing: 1,
+  },
+
+  name: {
+    fontFamily: "Fraunces-SemiBold",
+    fontSize: 24,
+    color: "#fff",
+    letterSpacing: -0.3,
+    marginBottom: 4,
+  },
+  email: {
+    fontFamily: "PlusJakartaSans-Regular",
+    fontSize: 14,
+    color: "rgba(255,255,255,0.55)",
+    marginBottom: 20,
+  },
+
+  statsRow: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
-    paddingHorizontal: 20,
-    paddingTop: 10,
-    paddingBottom: 16,
+    gap: 12,
+    backgroundColor: "rgba(255,255,255,0.08)",
+    borderRadius: 14,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
   },
-  title: {
-    fontFamily: "Fraunces-SemiBold",
-    fontSize: 28,
-    color: colors.ink,
-    letterSpacing: -0.4,
-  },
-  editBtn: {
-    paddingHorizontal: 14,
-    paddingVertical: 7,
-    borderRadius: 999,
-    backgroundColor: colors.primarySoft,
-  },
-  editBtnPressed: { opacity: 0.75 },
-  editBtnLabel: {
+  statPill: { flexDirection: "row", alignItems: "center", gap: 6 },
+  statLabel: {
     fontFamily: "PlusJakartaSans-SemiBold",
     fontSize: 13,
-    color: colors.primary,
+    color: "rgba(255,255,255,0.75)",
   },
+  statDot: { width: 3, height: 3, borderRadius: 2, backgroundColor: "rgba(255,255,255,0.25)" },
 
-  scroll: { paddingHorizontal: 20, gap: 8 },
-
-  // Avatar block
-  avatarBlock: {
-    alignItems: "center",
-    paddingVertical: 24,
-    gap: 6,
-    marginBottom: 8,
-  },
-  avatarWrap: { position: "relative", marginBottom: 4 },
-  avatar: {
-    width: 80, height: 80, borderRadius: 24,
-    backgroundColor: colors.primary,
-    alignItems: "center", justifyContent: "center",
-  },
-  avatarText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 30, color: "#fff" },
-  avatarEditDot: {
-    position: "absolute",
-    bottom: -2, right: -2,
-    width: 22, height: 22, borderRadius: 11,
-    backgroundColor: colors.coral,
-    alignItems: "center", justifyContent: "center",
-    borderWidth: 2, borderColor: BG,
-  },
-  name: { fontFamily: "PlusJakartaSans-Bold", fontSize: 20, color: colors.ink },
-  email: { fontFamily: "PlusJakartaSans-Regular", fontSize: 14, color: colors.muted },
-
-  // Section labels
+  content: { paddingHorizontal: 20, gap: 8, paddingTop: 20 },
   sectionLabel: {
     fontFamily: "PlusJakartaSans-Bold",
     fontSize: 11,
     color: colors.faint,
     letterSpacing: 0.8,
-    marginTop: 12,
+    marginTop: 8,
     marginBottom: 6,
     marginLeft: 4,
   },
-
   version: {
     fontFamily: "PlusJakartaSans-Regular",
     fontSize: 12,
     color: colors.faint,
     textAlign: "center",
     marginTop: 16,
+    marginBottom: 4,
+  },
+});
+
+const m = StyleSheet.create({
+  backdrop: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0,0,0,0.45)",
+  },
+  sheet: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    justifyContent: "flex-end",
+  },
+  card: {
+    backgroundColor: colors.surface,
+    borderTopLeftRadius: 28,
+    borderTopRightRadius: 28,
+    paddingHorizontal: 24,
+    paddingTop: 12,
+  },
+  handle: {
+    alignSelf: "center",
+    width: 36, height: 4,
+    borderRadius: 2,
+    backgroundColor: colors.line,
+    marginBottom: 16,
+  },
+  header: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 6,
+  },
+  title: {
+    fontFamily: "Fraunces-SemiBold",
+    fontSize: 22,
+    color: colors.ink,
+    letterSpacing: -0.2,
+  },
+  closeBtn: {
+    width: 30, height: 30, borderRadius: 9,
+    backgroundColor: colors.background,
+    alignItems: "center", justifyContent: "center",
+  },
+  hint: {
+    fontFamily: "PlusJakartaSans-Regular",
+    fontSize: 13,
+    color: colors.muted,
+    marginBottom: 16,
+    lineHeight: 19,
+  },
+  input: {
+    height: 54,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: colors.line,
+    backgroundColor: colors.background,
+    paddingHorizontal: 16,
+    fontFamily: "PlusJakartaSans-Regular",
+    fontSize: 16,
+    color: colors.ink,
+    marginBottom: 12,
+  },
+  error: {
+    fontFamily: "PlusJakartaSans-Regular",
+    fontSize: 13,
+    color: colors.coral,
+    marginBottom: 8,
+  },
+  saveBtn: {
+    backgroundColor: colors.primary,
+    borderRadius: 14,
+    paddingVertical: 15,
+    alignItems: "center",
+    marginBottom: 4,
+  },
+  saveBtnPressed: { opacity: 0.8 },
+  saveBtnLabel: {
+    fontFamily: "PlusJakartaSans-Bold",
+    fontSize: 16,
+    color: "#fff",
   },
 });

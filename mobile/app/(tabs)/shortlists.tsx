@@ -19,7 +19,6 @@ import * as Haptics from "expo-haptics";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { UniversityCard } from "../../src/components/UniversityCard";
-import { FLOATING_TAB_INSET } from "../../src/components/FloatingTabBar";
 import { colors } from "../../src/theme/tokens";
 import type { University } from "../../src/types/domain";
 
@@ -120,7 +119,7 @@ export default function ShortlistsScreen() {
       <ScrollView
         contentContainerStyle={[
           s.scroll,
-          { paddingBottom: Platform.OS === "ios" ? FLOATING_TAB_INSET + 16 : insets.bottom + 80 },
+          { paddingBottom: insets.bottom + 90 },
         ]}
         showsVerticalScrollIndicator={false}
       >

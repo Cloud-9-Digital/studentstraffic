@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useLocalSearchParams } from "expo-router";
 import {
   ActivityIndicator,
   FlatList,
@@ -19,7 +20,6 @@ import { mobileClient } from "../../src/api/mobileClient";
 import { UniversityCard } from "../../src/components/UniversityCard";
 import { FiltersSheet, DEFAULT_FILTERS, FEE_RANGES } from "../../src/components/FiltersSheet";
 import type { FilterState } from "../../src/components/FiltersSheet";
-import { FLOATING_TAB_INSET } from "../../src/components/FloatingTabBar";
 import type { University } from "../../src/types/domain";
 import { colors } from "../../src/theme/tokens";
 
@@ -34,9 +34,25 @@ type Options = {
 
 export default function SearchScreen() {
   const insets = useSafeAreaInsets();
+  const { country: countryParam } = useLocalSearchParams<{ country?: string }>();
+
   const [query, setQuery] = useState("");
-  const [filters, setFilters] = useState<FilterState>(DEFAULT_FILTERS);
-  const [pendingFilters, setPendingFilters] = useState<FilterState>(DEFAULT_FILTERS);
+  const [filters, setFilters] = useState<FilterState>(() => ({
+    ...DEFAULT_FILTERS,
+    country: countryParam ?? "",
+  }));
+  const [pendingFilters, setPendingFilters] = useState<FilterState>(() => ({
+    ...DEFAULT_FILTERS,
+    country: countryParam ?? "",
+  }));
+
+  // React to param changes (user taps a different country card while tab is already mounted)
+  useEffect(() => {
+    if (countryParam !== undefined) {
+      setFilters(prev => ({ ...prev, country: countryParam }));
+      setPendingFilters(prev => ({ ...prev, country: countryParam }));
+    }
+  }, [countryParam]);
   const [sheetVisible, setSheetVisible] = useState(false);
 
   const [universities, setUniversities] = useState<University[]>([]);
@@ -114,7 +130,7 @@ export default function SearchScreen() {
   }
 
   const activeFilterCount = Object.values(filters).filter(Boolean).length;
-  const bottomInset = Platform.OS === "ios" ? FLOATING_TAB_INSET + 16 : insets.bottom + 80;
+  const bottomInset = insets.bottom + 90;
 
   return (
     <View style={[s.root, { backgroundColor: BG }]}>

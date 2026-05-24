@@ -10,19 +10,17 @@ import { colors } from "../theme/tokens";
 type IconName = keyof typeof Ionicons.glyphMap;
 
 const TAB_ICONS: Record<string, { active: IconName; inactive: IconName }> = {
-  index:        { active: "home",          inactive: "home-outline" },
-  search:       { active: "search",        inactive: "search-outline" },
-  shortlists:   { active: "bookmark",      inactive: "bookmark-outline" },
-  applications: { active: "document-text", inactive: "document-text-outline" },
-  profile:      { active: "person",        inactive: "person-outline" },
+  index:      { active: "home",     inactive: "home-outline" },
+  search:     { active: "search",   inactive: "search-outline" },
+  shortlists: { active: "bookmark", inactive: "bookmark-outline" },
+  profile:    { active: "person",   inactive: "person-outline" },
 };
 
 const TAB_LABELS: Record<string, string> = {
-  index:        "Home",
-  search:       "Search",
-  shortlists:   "Saved",
-  applications: "Apply",
-  profile:      "Profile",
+  index:      "Home",
+  search:     "Search",
+  shortlists: "Saved",
+  profile:    "Profile",
 };
 
 export const FLOATING_TAB_INSET = 88;
@@ -48,9 +46,9 @@ export function FloatingTabBar({ state, navigation }: BottomTabBarProps) {
           {/* Subtle inner border */}
           <View style={s.innerBorder} pointerEvents="none" />
 
-          {/* Tab items */}
-          {state.routes.map((route, index) => {
-            const focused = state.index === index;
+          {/* Tab items — skip hidden routes */}
+          {state.routes.filter(r => TAB_ICONS[r.name]).map((route, index) => {
+            const focused = state.index === state.routes.indexOf(route);
             const icons = TAB_ICONS[route.name];
             const label = TAB_LABELS[route.name] ?? route.name;
 

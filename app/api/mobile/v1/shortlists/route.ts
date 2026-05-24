@@ -1,7 +1,7 @@
-import { and, eq } from "drizzle-orm";
+import { and, asc, eq } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
-import { countries, universities, userShortlists } from "@/lib/db/schema";
+import { countries, programOfferings, universities, userShortlists } from "@/lib/db/schema";
 import { requireMobileSession } from "@/lib/mobile/auth";
 import { mobileError, mobileJson, mobileValidationError, readJson } from "@/lib/mobile/http";
 import { mobileShortlistSchema } from "@/lib/mobile/schemas";
@@ -24,15 +24,26 @@ export async function GET(request: Request) {
       universityLogoUrl: universities.logoUrl,
       universityCoverImageUrl: universities.coverImageUrl,
       countryName: countries.name,
+      annualTuitionUsd: programOfferings.annualTuitionUsd,
+      offeringSlug: programOfferings.slug,
     })
     .from(userShortlists)
     .leftJoin(universities, eq(universities.slug, userShortlists.universitySlug))
     .leftJoin(countries, eq(countries.id, universities.countryId))
+    .leftJoin(programOfferings, eq(programOfferings.universityId, universities.id))
     .where(eq(userShortlists.userId, session.user.id))
-    .orderBy(userShortlists.createdAt);
+    .orderBy(userShortlists.createdAt, asc(programOfferings.annualTuitionUsd));
+
+  // Dedup: multiple offerings per university → keep the first (lowest tuition)
+  const seen = new Set<string>();
+  const unique = rows.filter(row => {
+    if (seen.has(row.universitySlug)) return false;
+    seen.add(row.universitySlug);
+    return true;
+  });
 
   return mobileJson({
-    shortlists: rows.map((row) => ({
+    shortlists: unique.map((row) => ({
       id: String(row.id),
       slug: row.universitySlug,
       name: row.universityName ?? row.universitySlug,
@@ -40,6 +51,8 @@ export async function GET(request: Request) {
       country: row.countryName,
       logoUrl: row.universityLogoUrl,
       coverImageUrl: row.universityCoverImageUrl,
+      tuitionUsd: row.annualTuitionUsd ?? 0,
+      offeringSlug: row.offeringSlug,
       notes: row.notes,
       createdAt: row.createdAt.toISOString(),
     })),

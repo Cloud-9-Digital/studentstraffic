@@ -70,7 +70,7 @@ export default function TabsLayout() {
       />
       <Tabs.Screen
         name="applications"
-        options={{ title: "Apply", tabBarIcon: androidTabIcon("applications") }}
+        options={{ href: null }}
       />
       <Tabs.Screen
         name="profile"

@@ -77,7 +77,16 @@ export default function RootLayout() {
                 contentStyle: { backgroundColor: colors.background },
                 animation: "slide_from_right",
               }}
-            />
+            >
+              <Stack.Screen
+                name="counselling"
+                options={{
+                  presentation: "modal",
+                  animation: "slide_from_bottom",
+                  contentStyle: { backgroundColor: "transparent" },
+                }}
+              />
+            </Stack>
           </ToastProvider>
         </PaperProvider>
       </SafeAreaProvider>

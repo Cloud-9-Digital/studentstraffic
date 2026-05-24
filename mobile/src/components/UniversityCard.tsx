@@ -20,8 +20,7 @@ const TONE_GRADIENT: Record<Tone, [string, string]> = {
 };
 
 function formatFee(usd: number) {
-  if (usd >= 1000) return `$${Math.round(usd / 1000)}k/yr`;
-  return `$${usd}/yr`;
+  return `$${usd.toLocaleString("en-US")}/yr`;
 }
 
 function getInitials(name: string) {

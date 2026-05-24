@@ -2,6 +2,7 @@ import {
   Animated,
   Image,
   LayoutAnimation,
+  Linking,
   Platform,
   Pressable,
   ScrollView,
@@ -612,46 +613,29 @@ export default function UniversityDetailScreen() {
           <BlurView tint="systemChromeMaterial" intensity={80} style={StyleSheet.absoluteFill} />
         )}
         <View style={s.bottomInner}>
-          {/* Bookmark toggle */}
+          {/* Call */}
           <Pressable
-            onPress={handleBookmark}
-            style={[s.bookmarkBtn, saved && s.bookmarkBtnSaved]}
-            hitSlop={8}
+            onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium); Linking.openURL("tel:+919176162888"); }}
+            style={({ pressed }) => [s.counselBtn, pressed && s.counselBtnPressed]}
           >
-            <Ionicons
-              name={saved ? "bookmark" : "bookmark-outline"}
-              size={20}
-              color={saved ? "#fff" : colors.ink}
-            />
+            <Ionicons name="call" size={19} color={colors.primary} />
           </Pressable>
 
-          {/* Apply */}
+          {/* Talk to a counsellor */}
           <Pressable
             onPress={() => {
               Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-              router.push({
-                pathname: "/application/start",
-                params: {
-                  universitySlug: university.slug,
-                  courseSlug: o?.courseSlug ?? "mbbs",
-                },
-              });
+              router.push({ pathname: "/counselling", params: { universitySlug: university.slug } });
             }}
             style={({ pressed }) => [s.applyBtn, pressed && s.applyBtnPressed]}
           >
-            <Ionicons name="document-text-outline" size={17} color="#fff" />
-            <Text style={s.applyLabel}>Start Application</Text>
+            <Ionicons name="chatbubble-ellipses" size={17} color="#fff" />
+            <Text style={s.applyLabel}>Talk to a counsellor</Text>
           </Pressable>
 
-          {/* Counsellor */}
+          {/* WhatsApp */}
           <Pressable
-            onPress={() => {
-              Haptics.selectionAsync();
-              router.push({
-                pathname: "/counselling",
-                params: { universitySlug: university.slug },
-              });
-            }}
+            onPress={() => { Haptics.selectionAsync(); Linking.openURL("https://wa.me/919176162888?text=Hi%2C+I%27m+interested+in+MBBS+abroad.+Can+you+help+me%3F"); }}
             style={({ pressed }) => [s.counselBtn, pressed && s.counselBtnPressed]}
           >
             <Ionicons name="logo-whatsapp" size={19} color={colors.primary} />
@@ -1271,18 +1255,6 @@ const s = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 12,
     gap: 10,
-  },
-  bookmarkBtn: {
-    width: 46,
-    height: 46,
-    borderRadius: 14,
-    backgroundColor: colors.primarySoft,
-    alignItems: "center",
-    justifyContent: "center",
-    flexShrink: 0,
-  },
-  bookmarkBtnSaved: {
-    backgroundColor: colors.coral,
   },
   applyBtn: {
     flex: 1,

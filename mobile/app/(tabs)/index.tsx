@@ -15,12 +15,10 @@ import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import * as Haptics from "expo-haptics";
-import { useState } from "react";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { Button } from "../../src/components/Button";
 import { UniversityCard } from "../../src/components/UniversityCard";
-import { FLOATING_TAB_INSET } from "../../src/components/FloatingTabBar";
 import { colors, shadow } from "../../src/theme/tokens";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -36,26 +34,34 @@ function initials(name: string) {
   return name.split(" ").slice(0, 2).map((w) => w[0]).join("").toUpperCase();
 }
 
-const CDN = "https://www.studentstraffic.com/images/countries";
+const DEST_ORDER = ["vietnam", "russia", "georgia", "kyrgyzstan", "uzbekistan"];
 
-// Curated per-country metadata. Key = country slug from API.
-// Add photos to public/images/countries/<slug>.jpg on the web app — they'll be
-// served from the CDN URL above. Gradient is the fallback while loading or if the
-// image file hasn't been uploaded yet.
-const COUNTRY_META: Record<string, {
-  imageUri: string;
-  gradient: [string, string];
-}> = {
-  georgia:      { imageUri: `${CDN}/georgia.jpg`,      gradient: ["#1a3a6b", "#2a5298"] },
-  russia:       { imageUri: `${CDN}/russia.jpg`,       gradient: ["#6b1a1a", "#a03030"] },
-  philippines:  { imageUri: `${CDN}/philippines.jpg`,  gradient: ["#1a5276", "#2980b9"] },
-  kyrgyzstan:   { imageUri: `${CDN}/kyrgyzstan.jpg`,   gradient: ["#1a4a2a", "#27714a"] },
-  kazakhstan:   { imageUri: `${CDN}/kazakhstan.jpg`,   gradient: ["#154f3c", "#1e7a5f"] },
-  china:        { imageUri: `${CDN}/china.jpg`,        gradient: ["#6b1a1a", "#8b2a2a"] },
-  nepal:        { imageUri: `${CDN}/nepal.jpg`,        gradient: ["#4a1a5a", "#7a2a8a"] },
-  bangladesh:   { imageUri: `${CDN}/bangladesh.jpg`,   gradient: ["#1a3a6b", "#1a5276"] },
-  ukraine:      { imageUri: `${CDN}/ukraine.jpg`,      gradient: ["#1a4a6b", "#c69b14"] },
-  uzbekistan:   { imageUri: `${CDN}/uzbekistan.jpg`,   gradient: ["#7a4a1a", "#b06a2a"] },
+const COUNTRY_IMAGES: Record<string, ReturnType<typeof require>> = {
+  vietnam:     require("../../assets/vietnam.jpg"),
+  georgia:     require("../../assets/georgia.jpg"),
+  russia:      require("../../assets/russia.jpg"),
+  philippines: require("../../assets/philippines.jpg"),
+  kyrgyzstan:  require("../../assets/kyrgyzstan.jpg"),
+  kazakhstan:  require("../../assets/kazakhstan.jpg"),
+  china:       require("../../assets/china.jpg"),
+  nepal:       require("../../assets/nepal.jpg"),
+  bangladesh:  require("../../assets/bangladesh.jpg"),
+  ukraine:     require("../../assets/ukraine.jpg"),
+  uzbekistan:  require("../../assets/uzbekistan.jpg"),
+};
+
+const COUNTRY_GRADIENTS: Record<string, [string, string]> = {
+  vietnam:     ["#1a4a2a", "#2e7d52"],
+  georgia:     ["#1a3a6b", "#2a5298"],
+  russia:      ["#6b1a1a", "#a03030"],
+  philippines: ["#1a5276", "#2980b9"],
+  kyrgyzstan:  ["#1a4a2a", "#27714a"],
+  kazakhstan:  ["#154f3c", "#1e7a5f"],
+  china:       ["#6b1a1a", "#8b2a2a"],
+  nepal:       ["#4a1a5a", "#7a2a8a"],
+  bangladesh:  ["#1a3a6b", "#1a5276"],
+  ukraine:     ["#1a4a6b", "#c69b14"],
+  uzbekistan:  ["#7a4a1a", "#b06a2a"],
 };
 
 const FALLBACK_GRADIENTS: [string, string][] = [
@@ -65,11 +71,12 @@ const FALLBACK_GRADIENTS: [string, string][] = [
   ["#4a1a5a", "#7a2a8a"],
 ];
 
-const QUICK_ACTIONS = [
-  { icon: "wallet-outline" as const,           label: "Budget picks",    sub: "Under $5k/yr",       bg: colors.primarySoft, fg: colors.primary },
-  { icon: "shield-checkmark-outline" as const, label: "NMC recognised",  sub: "India-approved",     bg: colors.primarySoft, fg: colors.primary },
-  { icon: "language-outline" as const,         label: "English medium",  sub: "No language barrier", bg: colors.blueSoft,   fg: colors.blue },
-  { icon: "trophy-outline" as const,           label: "Top ranked",      sub: "QS & WHO listed",    bg: colors.amberSoft,  fg: colors.amber },
+type ActionItem = { icon: keyof typeof Ionicons.glyphMap; label: string; sub: string; gradient: [string, string] };
+const QUICK_ACTIONS: ActionItem[] = [
+  { icon: "wallet-outline",            label: "Budget picks",    sub: "Under $5k/yr",        gradient: ["#064e3b", "#0d9467"] },
+  { icon: "shield-checkmark-outline",  label: "NMC recognised",  sub: "India-approved",      gradient: ["#0c3547", "#0e6d9e"] },
+  { icon: "language-outline",          label: "English medium",  sub: "No language barrier", gradient: ["#1e1b4b", "#3730a3"] },
+  { icon: "trophy-outline",            label: "Top ranked",      sub: "QS & WHO listed",     gradient: ["#431407", "#9a3412"] },
 ];
 
 const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
@@ -82,45 +89,47 @@ function DestCard({ name, slug, index, onPress }: {
   index: number;
   onPress: () => void;
 }) {
-  const meta = COUNTRY_META[slug.toLowerCase()] ?? {
-    imageUri: null,
-    gradient: FALLBACK_GRADIENTS[index % FALLBACK_GRADIENTS.length],
-  };
-  const [imgFailed, setImgFailed] = useState(false);
-  const showImage = !!meta.imageUri && !imgFailed;
+  const key = slug.toLowerCase();
+  const localImage = COUNTRY_IMAGES[key];
+  const gradient = COUNTRY_GRADIENTS[key] ?? FALLBACK_GRADIENTS[index % FALLBACK_GRADIENTS.length];
 
   return (
     <Pressable
       onPress={onPress}
       style={({ pressed }) => [s.destCard, pressed && s.destPressed]}
     >
-      {/* Background: image or gradient */}
-      {showImage ? (
-        <Image
-          source={{ uri: meta.imageUri! }}
-          style={StyleSheet.absoluteFill}
-          resizeMode="cover"
-          onError={() => setImgFailed(true)}
-        />
+      <LinearGradient
+        colors={gradient}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={StyleSheet.absoluteFill}
+      />
+
+      {/* Image or gradient background */}
+      {localImage ? (
+        <View style={s.destImageFrame}>
+          <Image
+            source={localImage}
+            style={s.destImage}
+            resizeMode="cover"
+          />
+        </View>
       ) : (
         <LinearGradient
-          colors={meta.gradient}
+          colors={gradient}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           style={StyleSheet.absoluteFill}
         />
       )}
 
-      {/* Dark scrim from bottom */}
+      {/* Gradient footer overlay */}
       <LinearGradient
-        colors={["transparent", "rgba(0,0,0,0.72)"]}
-        style={StyleSheet.absoluteFill}
-      />
-
-      {/* Text overlay */}
-      <View style={s.destOverlay}>
-        <Text style={s.destCountry}>{name}</Text>
-      </View>
+        colors={["transparent", "rgba(0,0,0,0.85)"]}
+        style={s.destGradient}
+      >
+        <Text style={s.destCountry} numberOfLines={1}>{name}</Text>
+      </LinearGradient>
     </Pressable>
   );
 }
@@ -143,7 +152,12 @@ export default function HomeScreen() {
     staleTime: 10 * 60 * 1000,
   });
 
-  const countries = searchOptions?.countries ?? [];
+  const apiSlugs = new Set((searchOptions?.countries ?? []).map(c => c.slug.toLowerCase()));
+  const allCountryMap = Object.fromEntries((searchOptions?.countries ?? []).map(c => [c.slug.toLowerCase(), c]));
+  // Show pinned countries in fixed order (only if they exist in the API)
+  const countries = DEST_ORDER
+    .filter(slug => apiSlugs.has(slug) || COUNTRY_IMAGES[slug])
+    .map(slug => allCountryMap[slug] ?? { slug, name: slug.charAt(0).toUpperCase() + slug.slice(1) });
 
   if (isLoading) {
     return (
@@ -161,7 +175,7 @@ export default function HomeScreen() {
             <Image source={require("../../assets/logo.png")} style={s.logo} resizeMode="contain" />
           </View>
         </SafeAreaView>
-        <ScrollView contentContainerStyle={[s.scroll, { paddingBottom: Platform.OS === "ios" ? FLOATING_TAB_INSET + 16 : insets.bottom + 80 }]}>
+        <ScrollView contentContainerStyle={[s.scroll, { paddingBottom: insets.bottom + 90 }]}>
           <View style={s.emptyWrap}>
             <View style={s.emptyIcon}>
               <Ionicons name="school-outline" size={40} color={colors.primary} />
@@ -197,7 +211,7 @@ export default function HomeScreen() {
 
       {/* ── Scrollable content ── */}
       <ScrollView
-        contentContainerStyle={[s.scroll, { paddingBottom: Platform.OS === "ios" ? FLOATING_TAB_INSET + 16 : insets.bottom + 80 }]}
+        contentContainerStyle={[s.scroll, { paddingBottom: insets.bottom + 90 }]}
         showsVerticalScrollIndicator={false}
       >
         {/* ── Greeting ── */}
@@ -220,7 +234,7 @@ export default function HomeScreen() {
               showsHorizontalScrollIndicator={false}
               contentContainerStyle={s.destRow}
               decelerationRate="fast"
-              snapToInterval={138}
+              snapToInterval={170}
               snapToAlignment="start"
             >
               {countries.map((c, i) => (
@@ -231,53 +245,13 @@ export default function HomeScreen() {
                   index={i}
                   onPress={() => {
                     Haptics.selectionAsync();
-                    router.push("/(tabs)/search");
+                    router.push({ pathname: "/(tabs)/search", params: { country: c.slug } });
                   }}
                 />
               ))}
             </ScrollView>
           </>
         )}
-
-        {/* ── Stats strip ── */}
-        <View style={s.statsCard}>
-          <Pressable
-            onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/shortlists"); }}
-            style={({ pressed }) => [s.statItem, pressed && s.statPressed]}
-          >
-            <View style={[s.statIcon, { backgroundColor: colors.primarySoft }]}>
-              <Ionicons name="bookmark" size={14} color={colors.primary} />
-            </View>
-            <Text style={s.statNum}>{data.shortlistCount}</Text>
-            <Text style={s.statLbl}>Saved</Text>
-          </Pressable>
-
-          <View style={s.statDivider} />
-
-          <Pressable
-            onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/applications"); }}
-            style={({ pressed }) => [s.statItem, pressed && s.statPressed]}
-          >
-            <View style={[s.statIcon, { backgroundColor: colors.coralSoft }]}>
-              <Ionicons name="document-text" size={14} color={colors.coral} />
-            </View>
-            <Text style={s.statNum}>{data.applicationCount}</Text>
-            <Text style={s.statLbl}>Applied</Text>
-          </Pressable>
-
-          <View style={s.statDivider} />
-
-          <Pressable
-            onPress={() => { Haptics.selectionAsync(); router.push("/counselling"); }}
-            style={({ pressed }) => [s.statItem, pressed && s.statPressed]}
-          >
-            <View style={[s.statIcon, { backgroundColor: colors.amberSoft }]}>
-              <Ionicons name="chatbubble-ellipses" size={14} color={colors.amber} />
-            </View>
-            <Text style={s.statNum}>Free</Text>
-            <Text style={s.statLbl}>Counselling</Text>
-          </Pressable>
-        </View>
 
         {/* ── Recommended ── */}
         <View style={s.sectionRow}>
@@ -299,13 +273,19 @@ export default function HomeScreen() {
             <Pressable
               key={q.label}
               onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/search"); }}
-              style={({ pressed }) => [s.actionTile, { backgroundColor: q.bg }, pressed && s.actionPressed]}
+              style={({ pressed }) => [s.actionTile, pressed && s.actionPressed]}
             >
-              <View style={[s.actionIcon, { borderColor: q.fg + "22" }]}>
-                <Ionicons name={q.icon} size={18} color={q.fg} />
+              <LinearGradient
+                colors={q.gradient}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                style={[StyleSheet.absoluteFill, { borderRadius: 18 }]}
+              />
+              <View style={s.actionIcon}>
+                <Ionicons name={q.icon} size={18} color="rgba(255,255,255,0.9)" />
               </View>
-              <Text style={[s.actionLabel, { color: q.fg }]}>{q.label}</Text>
-              <Text style={[s.actionSub, { color: q.fg + "99" }]}>{q.sub}</Text>
+              <Text style={s.actionLabel}>{q.label}</Text>
+              <Text style={s.actionSub}>{q.sub}</Text>
             </Pressable>
           ))}
         </View>
@@ -395,58 +375,45 @@ const s = StyleSheet.create({
   // Destination cards
   destRow: { gap: 10, paddingRight: 4, marginBottom: 26 },
   destCard: {
-    width: 128,
-    height: 172,
+    width: 160,
+    height: 200,
     borderRadius: 20,
     overflow: "hidden",
-    justifyContent: "flex-end",
+    backgroundColor: "#0a1f1a",
+    flexDirection: "column",
     ...shadow,
   },
   destPressed: { opacity: 0.9, transform: [{ scale: 0.97 }] },
-  destOverlay: {
-    padding: 12,
-    paddingBottom: 14,
-    gap: 2,
+  destImageFrame: {
+    position: "absolute",
+    top: 10,
+    left: 10,
+    right: 10,
+    bottom: 48,
+    borderRadius: 16,
+    overflow: "hidden",
+    backgroundColor: "rgba(255,255,255,0.1)",
+  },
+  destImage: {
+    width: "100%",
+    height: "100%",
+  },
+  destGradient: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: 80,
+    justifyContent: "flex-end",
+    paddingHorizontal: 12,
+    paddingBottom: 12,
   },
   destCountry: {
     fontFamily: "Fraunces-SemiBold",
-    fontSize: 15,
+    fontSize: 14,
     color: "#fff",
     letterSpacing: -0.2,
   },
-  destLandmark: {
-    fontFamily: "PlusJakartaSans-Regular",
-    fontSize: 10,
-    color: "rgba(255,255,255,0.72)",
-    lineHeight: 14,
-  },
-
-  // Stats strip
-  statsCard: {
-    flexDirection: "row",
-    backgroundColor: colors.surface,
-    borderRadius: 18,
-    borderWidth: 1,
-    borderColor: colors.line,
-    marginBottom: 26,
-    overflow: "hidden",
-    ...shadow,
-  },
-  statItem: {
-    flex: 1,
-    alignItems: "center",
-    paddingVertical: 14,
-    gap: 4,
-  },
-  statPressed: { backgroundColor: colors.background },
-  statIcon: {
-    width: 30, height: 30, borderRadius: 9,
-    alignItems: "center", justifyContent: "center",
-    marginBottom: 2,
-  },
-  statNum: { fontFamily: "Fraunces-SemiBold", fontSize: 20, color: colors.ink, lineHeight: 24 },
-  statLbl: { fontFamily: "PlusJakartaSans-Regular", fontSize: 10, color: colors.muted },
-  statDivider: { width: 1, backgroundColor: colors.line, marginVertical: 12 },
 
   // University cards
   cardList: { gap: 12, marginBottom: 26 },
@@ -457,18 +424,19 @@ const s = StyleSheet.create({
     width: "47.5%",
     borderRadius: 18,
     padding: 16,
-    gap: 5,
+    gap: 6,
+    overflow: "hidden",
+    ...shadow,
   },
-  actionPressed: { opacity: 0.8, transform: [{ scale: 0.97 }] },
+  actionPressed: { opacity: 0.85, transform: [{ scale: 0.97 }] },
   actionIcon: {
     width: 36, height: 36, borderRadius: 11,
-    backgroundColor: "rgba(255,255,255,0.6)",
-    borderWidth: 1,
+    backgroundColor: "rgba(255,255,255,0.15)",
     alignItems: "center", justifyContent: "center",
-    marginBottom: 4,
+    marginBottom: 6,
   },
-  actionLabel: { fontFamily: "PlusJakartaSans-Bold", fontSize: 13, lineHeight: 18 },
-  actionSub: { fontFamily: "PlusJakartaSans-Regular", fontSize: 11, lineHeight: 15 },
+  actionLabel: { fontFamily: "PlusJakartaSans-Bold", fontSize: 13, color: "#fff", lineHeight: 18 },
+  actionSub: { fontFamily: "PlusJakartaSans-Regular", fontSize: 11, color: "rgba(255,255,255,0.65)", lineHeight: 15 },
 
   // Counsellor nudge
   nudge: { marginBottom: 8 },
