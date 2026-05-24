@@ -19,8 +19,8 @@ import {
 import { getDb } from "@/lib/db/server";
 import { countries, leads, peerRequests, universities } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { enqueueLeadDeliveryJob } from "@/lib/background-jobs";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
-import { syncLeadDestinations } from "@/lib/lead-sync";
 import {
   consumePublicFormRateLimits,
   normalizePhoneIdentifier,
@@ -339,34 +339,37 @@ export async function submitPeerRequestAction(
     };
   }
 
-  void syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
-    leadKind: "peer_request",
-    websiteLeadId: insertedLeadId,
-    submittedAt: submittedAt.toISOString(),
-    fullName: data.fullName,
-    phone: data.phone,
-    email: emptyToUndefined(data.email),
-    userState: data.userState,
-    countrySlug: universityRecord.countrySlug,
-    universitySlug: universityRecord.slug,
-    sourcePath: data.sourcePath,
-    sourceUrl: emptyToUndefined(data.sourceUrl),
-    sourceQuery,
-    pageTitle: emptyToUndefined(data.pageTitle),
-    ctaVariant: "peer_request",
-    notes: leadNotes,
-    documentReferrer: emptyToUndefined(data.documentReferrer),
-    utmSource,
-    utmMedium,
-    utmCampaign,
-    utmTerm,
-    utmContent,
-    referrer: headerStore.get("referer") ?? undefined,
-    userAgent: headerStore.get("user-agent") ?? undefined,
-    ipAddress: ipAddress ?? undefined,
-    acceptLanguage: headerStore.get("accept-language") ?? undefined,
-    clientContext,
-  }));
+  await enqueueLeadDeliveryJob({
+    leadId: insertedLeadId,
+    leadHandoffPayload: buildLeadHandoffPayload({
+      leadKind: "peer_request",
+      websiteLeadId: insertedLeadId,
+      submittedAt: submittedAt.toISOString(),
+      fullName: data.fullName,
+      phone: data.phone,
+      email: emptyToUndefined(data.email),
+      userState: data.userState,
+      countrySlug: universityRecord.countrySlug,
+      universitySlug: universityRecord.slug,
+      sourcePath: data.sourcePath,
+      sourceUrl: emptyToUndefined(data.sourceUrl),
+      sourceQuery,
+      pageTitle: emptyToUndefined(data.pageTitle),
+      ctaVariant: "peer_request",
+      notes: leadNotes,
+      documentReferrer: emptyToUndefined(data.documentReferrer),
+      utmSource,
+      utmMedium,
+      utmCampaign,
+      utmTerm,
+      utmContent,
+      referrer: headerStore.get("referer") ?? undefined,
+      userAgent: headerStore.get("user-agent") ?? undefined,
+      ipAddress: ipAddress ?? undefined,
+      acceptLanguage: headerStore.get("accept-language") ?? undefined,
+      clientContext,
+    }),
+  });
 
   redirect(
     `/thank-you?source=${encodeURIComponent(data.sourcePath)}&interest=${encodeURIComponent(universityRecord.name)}`

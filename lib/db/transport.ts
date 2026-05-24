@@ -8,7 +8,8 @@ const BUILD_SLOW_DB_QUERY_MS = 5_000;
 const DB_FETCH_RETRY_DELAYS_MS = [250, 750];
 
 function shouldLogSlowQueries() {
-  return env.logDbSlowQueries || process.env.NODE_ENV === "production";
+  // Always log in production for monitoring, or when explicitly enabled
+  return process.env.NODE_ENV === "production" || env.logDbSlowQueries;
 }
 
 function getSlowQueryThresholdMs() {
@@ -118,6 +119,21 @@ export function configureDatabaseTransport() {
         if (shouldLogSlowQueries() && durationMs >= slowQueryThresholdMs) {
           console.warn(
             "[db-slow]",
+            JSON.stringify({
+              durationMs,
+              thresholdMs: slowQueryThresholdMs,
+              status: response.status,
+              attempts: attempt + 1,
+              timestamp: new Date().toISOString(),
+              ...querySummary,
+            }),
+          );
+        }
+
+        // Also log all queries in production for basic metrics
+        if (process.env.NODE_ENV === "production") {
+          console.info(
+            "[db-query]",
             JSON.stringify({
               durationMs,
               status: response.status,

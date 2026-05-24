@@ -1,52 +1,73 @@
-import { type NextRequest, NextResponse } from "next/server";
-import { getToken } from "next-auth/jwt";
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-import { findActiveAdminById } from "@/lib/auth/admin-access";
-import { env } from "@/lib/env";
+import {
+  rateLimit,
+  rateLimitConfigs,
+  getRateLimitIdentifier,
+  createRateLimitResponse,
+} from "@/lib/rate-limit";
 
-const OWNER_ONLY_ADMIN_PATHS = ["/admin/admins"];
-
-function getLoginRedirect(request: NextRequest) {
-  const loginUrl = new URL("/login", request.url);
-  loginUrl.searchParams.set(
-    "callbackUrl",
-    `${request.nextUrl.pathname}${request.nextUrl.search}`
-  );
-  return loginUrl;
-}
+/**
+ * Edge Proxy for rate limiting API routes
+ * Runs on Vercel Edge Network (globally distributed)
+ *
+ * Note: In Next.js 16, middleware has been renamed to proxy
+ */
 
 export async function proxy(request: NextRequest) {
-  if (request.nextUrl.pathname === "/admin/login") {
-    return NextResponse.next();
-  }
+  const { pathname } = request.nextUrl;
 
-  const token = await getToken({
-    req: request,
-    secret: env.nextAuthSecret,
-  });
+  // Apply rate limiting to API routes
+  if (pathname.startsWith("/api/")) {
+    // Determine which rate limit config to use
+    let config: { limit: number; window: number } = rateLimitConfigs.api;
 
-  if (token?.role !== "admin" || typeof token.adminUserId !== "number") {
-    return NextResponse.redirect(getLoginRedirect(request));
-  }
+    if (pathname.startsWith("/api/track-contact")) {
+      config = rateLimitConfigs.tracking;
+    } else if (
+      pathname.startsWith("/api/suggestions") ||
+      pathname.startsWith("/api/finder") ||
+      pathname.startsWith("/api/india-mbbs-finder")
+    ) {
+      config = rateLimitConfigs.search;
+    } else if (
+      pathname.startsWith("/api/revalidate") ||
+      pathname.startsWith("/api/jobs/process")
+    ) {
+      config = rateLimitConfigs.admin;
+    } else if (pathname.includes("/lead")) {
+      config = rateLimitConfigs.leads;
+    }
 
-  const adminUser = await findActiveAdminById(token.adminUserId);
+    // Get identifier (IP address)
+    const identifier = getRateLimitIdentifier(request);
 
-  if (!adminUser) {
-    return NextResponse.redirect(getLoginRedirect(request));
-  }
+    // Apply rate limit
+    const result = await rateLimit(identifier, config);
 
-  if (
-    OWNER_ONLY_ADMIN_PATHS.some((path) =>
-      request.nextUrl.pathname.startsWith(path)
-    ) &&
-    adminUser.role !== "owner"
-  ) {
-    return NextResponse.redirect(new URL("/admin", request.url));
+    if (!result.success) {
+      return createRateLimitResponse(result);
+    }
+
+    // Add rate limit headers to response
+    const response = NextResponse.next();
+    response.headers.set("X-RateLimit-Limit", result.limit.toString());
+    response.headers.set("X-RateLimit-Remaining", result.remaining.toString());
+    response.headers.set("X-RateLimit-Reset", result.reset.toString());
+
+    return response;
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: [
+    /*
+     * Match all API routes
+     * - /api/*
+     */
+    "/api/:path*",
+  ],
 };

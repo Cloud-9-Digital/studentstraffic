@@ -23,7 +23,7 @@ type LeadWhatsAppJobPayload = {
 type LeadDeliveryJobPayload = {
   leadId: number;
   leadHandoffPayload: LeadSyncPayload;
-  whatsappPayload: LeadWhatsAppJobPayload;
+  whatsappPayload?: LeadWhatsAppJobPayload;
 };
 
 type ProcessJobsOptions = {
@@ -40,10 +40,15 @@ function isLeadDeliveryJobPayload(
   return (
     typeof payload.leadId === "number" &&
     isRecord(payload.leadHandoffPayload) &&
-    isRecord(payload.whatsappPayload) &&
-    typeof payload.whatsappPayload.fullName === "string" &&
-    typeof payload.whatsappPayload.phone === "string" &&
-    typeof payload.whatsappPayload.sourcePath === "string"
+    (
+      payload.whatsappPayload === undefined ||
+      (
+        isRecord(payload.whatsappPayload) &&
+        typeof payload.whatsappPayload.fullName === "string" &&
+        typeof payload.whatsappPayload.phone === "string" &&
+        typeof payload.whatsappPayload.sourcePath === "string"
+      )
+    )
   );
 }
 
@@ -80,12 +85,19 @@ async function processLeadDeliveryJob(payload: Record<string, unknown>) {
     throw new Error("Invalid lead delivery job payload.");
   }
 
-  await Promise.allSettled([
+  const deliveries: Array<Promise<unknown>> = [
     syncLeadDestinations(payload.leadId, payload.leadHandoffPayload),
-    sendLeadWhatsAppMessage(payload.whatsappPayload, payload.leadId, {
-      skipInboundLeadCheck: true,
-    }),
-  ]);
+  ];
+
+  if (payload.whatsappPayload) {
+    deliveries.push(
+      sendLeadWhatsAppMessage(payload.whatsappPayload, payload.leadId, {
+        skipInboundLeadCheck: true,
+      }),
+    );
+  }
+
+  await Promise.allSettled(deliveries);
 }
 
 async function processJob(job: typeof backgroundJobs.$inferSelect) {

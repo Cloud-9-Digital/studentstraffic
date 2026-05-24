@@ -60,7 +60,6 @@ import {
 } from "@/lib/utils";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
-
 export async function generateStaticParams() {
   const countries = await getCountries();
   return ensureNonEmptyStaticParams(

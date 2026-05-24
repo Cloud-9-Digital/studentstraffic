@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { withSentryConfig } from "@sentry/nextjs";
 
 const mediaHostnames = (process.env.MEDIA_HOSTNAMES ?? "")
   .split(",")
@@ -139,4 +140,32 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+// Sentry configuration
+export default withSentryConfig(nextConfig, {
+  // Sentry options
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+
+  // Only print logs for uploading source maps in CI
+  silent: !process.env.CI,
+
+  // Upload source maps during production builds
+  widenClientFileUpload: true,
+
+  // Route browser requests to Sentry through a Next.js rewrite
+  tunnelRoute: "/monitoring",
+
+  // Source maps configuration
+  sourcemaps: {
+    disable: false,
+  },
+
+  webpack: {
+    // Automatically tree-shake Sentry logger statements
+    treeshake: {
+      removeDebugLogging: true,
+    },
+    // Enables automatic instrumentation of Vercel Cron Monitors
+    automaticVercelMonitors: true,
+  },
+});

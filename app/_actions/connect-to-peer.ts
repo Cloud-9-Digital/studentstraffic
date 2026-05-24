@@ -20,8 +20,8 @@ import { countries, leads, peerRequests, studentPeers, universities } from "@/li
 import { env } from "@/lib/env";
 import { sendPeerConnectionSentEmail } from "@/lib/email/templates/peer-connection-sent";
 import { sendPeerNewRequestEmail } from "@/lib/email/templates/peer-new-request";
+import { enqueueLeadDeliveryJob } from "@/lib/background-jobs";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
-import { syncLeadDestinations } from "@/lib/lead-sync";
 import {
   consumePublicFormRateLimits,
   normalizePhoneIdentifier,
@@ -297,31 +297,34 @@ export async function connectToPeerAction(
     return { error: "We could not save your request. Please try once more." };
   }
 
-  void syncLeadDestinations(insertedLeadId, buildLeadHandoffPayload({
-    leadKind: "peer_connection",
-    websiteLeadId: insertedLeadId,
-    submittedAt: submittedAt.toISOString(),
-    fullName: data.fullName,
-    phone: data.phone,
-    countrySlug: universityRecord.countrySlug,
-    universitySlug: universityRecord.slug,
-    sourcePath: data.sourcePath,
-    sourceUrl: emptyToUndefined(data.sourceUrl),
-    sourceQuery,
-    pageTitle: emptyToUndefined(data.pageTitle),
-    ctaVariant: "peer_connect",
-    documentReferrer: emptyToUndefined(data.documentReferrer),
-    utmSource,
-    utmMedium,
-    utmCampaign,
-    utmTerm,
-    utmContent,
-    referrer: headerStore.get("referer") ?? undefined,
-    userAgent: headerStore.get("user-agent") ?? undefined,
-    ipAddress: ipAddress ?? undefined,
-    acceptLanguage: headerStore.get("accept-language") ?? undefined,
-    clientContext,
-  }));
+  await enqueueLeadDeliveryJob({
+    leadId: insertedLeadId,
+    leadHandoffPayload: buildLeadHandoffPayload({
+      leadKind: "peer_connection",
+      websiteLeadId: insertedLeadId,
+      submittedAt: submittedAt.toISOString(),
+      fullName: data.fullName,
+      phone: data.phone,
+      countrySlug: universityRecord.countrySlug,
+      universitySlug: universityRecord.slug,
+      sourcePath: data.sourcePath,
+      sourceUrl: emptyToUndefined(data.sourceUrl),
+      sourceQuery,
+      pageTitle: emptyToUndefined(data.pageTitle),
+      ctaVariant: "peer_connect",
+      documentReferrer: emptyToUndefined(data.documentReferrer),
+      utmSource,
+      utmMedium,
+      utmCampaign,
+      utmTerm,
+      utmContent,
+      referrer: headerStore.get("referer") ?? undefined,
+      userAgent: headerStore.get("user-agent") ?? undefined,
+      ipAddress: ipAddress ?? undefined,
+      acceptLanguage: headerStore.get("accept-language") ?? undefined,
+      clientContext,
+    }),
+  });
 
   // Fire-and-forget emails to both parties
   void Promise.all([
