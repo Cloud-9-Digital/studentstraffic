@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Building2 } from "lucide-react";
 
 import { AddToCompareButton } from "@/components/site/add-to-compare-button";
+import { ShortlistButton } from "@/components/site/shortlist-button";
 import type { FinderCardProgram } from "@/lib/data/types";
 import { universityImageBlurDataURL, universityLogoBlurDataURL } from "@/lib/image-placeholder";
 import { getUniversityHref } from "@/lib/routes";
@@ -146,8 +147,9 @@ export function UniversityCard({
             </div>
           </div>
 
-          {/* Compare button — z-10 so it intercepts clicks above the card link */}
-          <div className="relative z-10">
+          {/* Action buttons — z-10 so they intercept clicks above the card link */}
+          <div className="relative z-10 grid grid-cols-2 gap-1.5">
+            <ShortlistButton slug={university.slug} name={university.name} />
             <AddToCompareButton
               slug={university.slug}
               name={university.name}

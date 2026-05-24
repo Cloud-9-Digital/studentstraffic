@@ -10,7 +10,7 @@ const StandardAppChrome = dynamic(() =>
 export function AppChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
-  if (pathname.startsWith("/admin") || pathname === "/login" || pathname.startsWith("/seminar-2026") || pathname.startsWith("/mbbs-abroad")) {
+  if (pathname.startsWith("/admin") || pathname.startsWith("/dashboard") || pathname === "/login" || pathname === "/register" || pathname.startsWith("/login/") || pathname.startsWith("/seminar-2026") || pathname.startsWith("/mbbs-abroad")) {
     return <div className="relative flex min-h-full flex-col">{children}</div>;
   }
 

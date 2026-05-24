@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { ArrowRight, ChevronDown, Menu, Phone, X } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
+import { UserMenu, UserMenuMobile } from "@/components/site/user-menu";
 import { CountryFlag } from "@/components/site/country-flag";
 import { SearchPalette } from "@/components/site/search-palette";
 import { TrackedContactLink } from "@/components/site/tracked-contact-link";
@@ -320,6 +321,7 @@ export function SiteHeader() {
 
           {/* Desktop actions */}
           <div className="ml-auto hidden items-center gap-2 lg:flex">
+            <UserMenu />
             <SearchPalette />
             <TrackedContactLink
               channel="call"
@@ -499,6 +501,8 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
+
+          <UserMenuMobile onClose={closeMobile} />
 
           <div className="flex-shrink-0 space-y-2.5 border-t border-border p-4">
             <TrackedContactLink

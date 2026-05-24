@@ -5,10 +5,12 @@ import {
   integer,
   jsonb,
   pgTable,
+  primaryKey,
   serial,
   text,
   timestamp,
   uniqueIndex,
+  varchar,
 } from "drizzle-orm/pg-core";
 import type {
   Faq,
@@ -841,3 +843,119 @@ export type StudentPeerApplicationRow = typeof studentPeerApplications.$inferSel
 export type UniversityResearchQueueRow = typeof universityResearchQueue.$inferSelect;
 export type UniversityResearchDraftRow = typeof universityResearchDrafts.$inferSelect;
 export type BackgroundJobRow = typeof backgroundJobs.$inferSelect;
+
+// ─────────────────────────────────────────────────────────────────────────────
+// NextAuth.js Tables (for user authentication)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const users = pgTable("users", {
+  id: varchar("id", { length: 255 }).primaryKey().$defaultFn(() => crypto.randomUUID()),
+  name: varchar("name", { length: 255 }),
+  email: varchar("email", { length: 255 }).notNull().unique(),
+  emailVerified: timestamp("email_verified", { mode: "date" }),
+  image: text("image"),
+  passwordHash: text("password_hash"),
+  phone: varchar("phone", { length: 20 }),
+  neetScore: integer("neet_score"),
+  budgetUsd: integer("budget_usd"),
+  preferredCountries: jsonb("preferred_countries").$type<string[]>(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export const accounts = pgTable(
+  "accounts",
+  {
+    userId: varchar("user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    type: varchar("type", { length: 255 }).notNull(),
+    provider: varchar("provider", { length: 255 }).notNull(),
+    providerAccountId: varchar("provider_account_id", { length: 255 }).notNull(),
+    refresh_token: text("refresh_token"),
+    access_token: text("access_token"),
+    expires_at: integer("expires_at"),
+    token_type: varchar("token_type", { length: 255 }),
+    scope: varchar("scope", { length: 255 }),
+    id_token: text("id_token"),
+    session_state: varchar("session_state", { length: 255 }),
+  },
+  (table) => [
+    primaryKey({ columns: [table.provider, table.providerAccountId] }),
+  ]
+);
+
+export const sessions = pgTable("sessions", {
+  sessionToken: varchar("session_token", { length: 255 }).primaryKey(),
+  userId: varchar("user_id", { length: 255 })
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  expires: timestamp("expires", { mode: "date" }).notNull(),
+});
+
+export const verificationTokens = pgTable(
+  "verification_tokens",
+  {
+    identifier: varchar("identifier", { length: 255 }).notNull(),
+    token: varchar("token", { length: 255 }).notNull(),
+    expires: timestamp("expires", { mode: "date" }).notNull(),
+  },
+  (table) => [
+    primaryKey({ columns: [table.identifier, table.token] }),
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────────────────────
+// User Feature Tables (shortlists, applications, etc.)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const userShortlists = pgTable(
+  "user_shortlists",
+  {
+    id: serial("id").primaryKey(),
+    userId: varchar("user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    universitySlug: varchar("university_slug", { length: 255 }).notNull(),
+    notes: text("notes"),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("shortlists_user_idx").on(table.userId),
+    uniqueIndex("user_university_unique").on(table.userId, table.universitySlug),
+  ]
+);
+
+export const applications = pgTable(
+  "applications",
+  {
+    id: serial("id").primaryKey(),
+    userId: varchar("user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    universitySlug: varchar("university_slug", { length: 255 }).notNull(),
+    courseSlug: varchar("course_slug", { length: 255 }).notNull(),
+    status: varchar("status", { length: 50 }).default("draft").notNull(),
+    personalInfo: jsonb("personal_info").$type<Record<string, unknown>>(),
+    documents: jsonb("documents").$type<Record<string, string>>(),
+    applicationData: jsonb("application_data").$type<Record<string, unknown>>(),
+    submittedAt: timestamp("submitted_at"),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("applications_user_idx").on(table.userId),
+    index("applications_status_idx").on(table.status),
+    index("applications_university_idx").on(table.universitySlug),
+  ]
+);
+
+// Type exports for auth tables
+export type UserRow = typeof users.$inferSelect;
+export type UserInsert = typeof users.$inferInsert;
+export type AccountRow = typeof accounts.$inferSelect;
+export type SessionRow = typeof sessions.$inferSelect;
+export type UserShortlistRow = typeof userShortlists.$inferSelect;
+export type UserShortlistInsert = typeof userShortlists.$inferInsert;
+export type ApplicationRow = typeof applications.$inferSelect;
+export type ApplicationInsert = typeof applications.$inferInsert;

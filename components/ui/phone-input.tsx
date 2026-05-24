@@ -18,7 +18,6 @@ interface PhoneInputFieldProps {
   className?: string;
 }
 
-// Bare input rendered inside the wrapper — no own border
 const InnerInput = forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
   function InnerInput({ className, ...props }, ref) {
     return (
@@ -52,38 +51,35 @@ export function PhoneInputField({
     <div className="space-y-1">
       <div
         className={cn(
-          "flex h-11 w-full items-center gap-2 rounded-xl border bg-transparent px-4 py-3 text-sm shadow-xs transition-[color,box-shadow] outline-none",
+          "flex h-11 w-full items-center rounded-xl border bg-transparent text-sm shadow-xs transition-[color,box-shadow] outline-none",
           "border-border focus-within:border-ring focus-within:ring-[3px] focus-within:ring-ring/50",
           isInvalid && "border-destructive ring-[3px] ring-destructive/20",
           className,
+          "[&_.PhoneInputCountry]:flex [&_.PhoneInputCountry]:items-center [&_.PhoneInputCountry]:gap-1.5 [&_.PhoneInputCountry]:pl-3 [&_.PhoneInputCountry]:pr-3 [&_.PhoneInputCountry]:border-r [&_.PhoneInputCountry]:border-border [&_.PhoneInputCountry]:mr-3",
+          "[&_.PhoneInputCountrySelectArrow]:text-muted-foreground [&_.PhoneInputCountrySelectArrow]:opacity-70 [&_.PhoneInputCountrySelectArrow]:ml-0.5",
+          "[&_.PhoneInputCountryFlag]:overflow-hidden [&_.PhoneInputCountryFlag]:rounded-sm",
+          "[&_.PhoneInputCountryIcon]:size-5 [&_.PhoneInputCountryIcon]:shrink-0",
+          "[&_.PhoneInputCountryIconInternational]:size-5 [&_.PhoneInputCountryIconInternational]:text-muted-foreground",
         )}
       >
         <PhoneInput
           id={id}
           international
-          countryCallingCodeEditable={false}
+          countryCallingCodeEditable={true}
           defaultCountry={defaultCountry}
           value={value}
           onChange={setValue}
           onBlur={() => setTouched(true)}
           inputComponent={InnerInput}
-          className="flex w-full items-center"
+          className="flex w-full items-center pr-3"
           numberInputProps={{
-            placeholder: "98765 43210",
+            placeholder: "Phone number",
           }}
         />
       </div>
-      {/* Hidden input carries the E.164 value into FormData */}
-      <input
-        type="hidden"
-        name={name}
-        value={value ?? ""}
-        required={required}
-      />
+      <input type="hidden" name={name} value={value ?? ""} required={required} />
       {isInvalid && (
-        <p className="text-xs text-destructive">
-          Please enter a valid phone number.
-        </p>
+        <p className="text-xs text-destructive">Please enter a valid phone number.</p>
       )}
     </div>
   );

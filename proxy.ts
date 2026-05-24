@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { auth } from "@/lib/auth";
 
 import {
   rateLimit,
@@ -9,7 +10,7 @@ import {
 } from "@/lib/rate-limit";
 
 /**
- * Edge Proxy for rate limiting API routes
+ * Edge Proxy for rate limiting API routes and auth protection
  * Runs on Vercel Edge Network (globally distributed)
  *
  * Note: In Next.js 16, middleware has been renamed to proxy
@@ -17,6 +18,16 @@ import {
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Protect dashboard routes - require authentication
+  if (pathname.startsWith("/dashboard")) {
+    const session = await auth();
+    if (!session?.user) {
+      const loginUrl = new URL("/login", request.url);
+      loginUrl.searchParams.set("callbackUrl", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
 
   // Apply rate limiting to API routes
   if (pathname.startsWith("/api/")) {
@@ -65,9 +76,11 @@ export async function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Match all API routes
+     * Match all API routes and dashboard pages
      * - /api/*
+     * - /dashboard/*
      */
     "/api/:path*",
+    "/dashboard/:path*",
   ],
 };

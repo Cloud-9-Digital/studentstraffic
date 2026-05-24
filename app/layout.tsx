@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";
 
 import { AppChrome } from "@/components/app/app-chrome";
+import { Providers } from "@/components/app/providers";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
 import { JsonLd } from "@/components/shared/json-ld";
@@ -55,11 +56,13 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-full bg-background text-foreground"
       >
-        <Suspense fallback={null}>
-          <GoogleAnalytics />
-          <MetaPixel />
-          <AppChrome>{children}</AppChrome>
-        </Suspense>
+        <Providers>
+          <Suspense fallback={null}>
+            <GoogleAnalytics />
+            <MetaPixel />
+            <AppChrome>{children}</AppChrome>
+          </Suspense>
+        </Providers>
         <Analytics />
         <Toaster position="top-center" />
         <JsonLd

@@ -26,8 +26,9 @@ const Toaster = ({ ...props }: ToasterProps) => {
       }}
       toastOptions={{
         classNames: {
-          error: "!border-red-200 !bg-red-50 !text-red-700 [&>[data-icon]]:!text-red-500",
-          success: "!border-green-200 !bg-green-50 !text-green-700 [&>[data-icon]]:!text-green-500",
+          error: "!border-red-200 !bg-red-50 !text-red-700 [&>[data-icon]]:!text-red-500 [&_[data-description]]:!text-red-600",
+          success: "!border-green-200 !bg-green-50 !text-green-700 [&>[data-icon]]:!text-green-500 [&_[data-description]]:!text-green-700",
+          description: "!text-[#374151] !opacity-100",
         },
       }}
       style={

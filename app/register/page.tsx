@@ -1,27 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { GraduationCap, MessageCircle, ClipboardList } from "lucide-react";
 
 import { auth } from "@/lib/auth";
-import { LoginForm } from "@/components/login/login-form";
+import { RegisterForm } from "@/components/register/register-form";
 
-export default async function LoginPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ callbackUrl?: string; error?: string }>;
-}) {
+export default async function RegisterPage() {
   const session = await auth();
-  const { callbackUrl, error } = await searchParams;
-
-  if (session?.user) {
-    redirect(callbackUrl ?? "/dashboard");
-  }
+  if (session?.user) redirect("/dashboard");
 
   return (
     <div className="flex min-h-screen">
       {/* ── Left: brand panel ─────────────────────────────── */}
       <div className="relative hidden lg:flex lg:w-[44%] flex-col overflow-hidden bg-[#0b2e2a]">
-        {/* Subtle grid overlay */}
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -30,53 +22,44 @@ export default async function LoginPage({
             backgroundSize: "40px 40px",
           }}
         />
-        {/* Glow blobs */}
         <div className="absolute -top-32 -left-32 size-[500px] rounded-full bg-[#155e53]/50 blur-[120px]" />
         <div className="absolute bottom-0 right-0 size-[400px] rounded-full bg-[#c2410c]/15 blur-[100px]" />
 
         <div className="relative flex h-full flex-col justify-between p-12">
-          {/* Logo */}
           <Link href="/">
-            <Image
-              src="/logo-white.png"
-              alt="Students Traffic"
-              width={180}
-              height={44}
-              className="h-9 w-auto object-contain"
-            />
+            <Image src="/logo-white.png" alt="Students Traffic" width={180} height={44} className="h-9 w-auto object-contain" />
           </Link>
 
-          {/* Hero text + stats */}
           <div className="space-y-10">
             <div className="space-y-5">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#7ccfbf]">
-                Your study abroad companion
+                Join thousands of students
               </p>
               <h1 className="text-[2.6rem] font-bold leading-[1.15] tracking-tight text-white">
-                Find the right university.<br />
-                <span className="text-[#7ccfbf]">Start your journey.</span>
+                Create your free<br />
+                <span className="text-[#7ccfbf]">account today.</span>
               </h1>
               <p className="max-w-sm text-[15px] leading-relaxed text-[#7aada8]">
-                Compare MBBS programs across 15+ countries, get free expert counselling, and manage your entire application in one place.
+                Get access to verified university profiles, expert counselling, and a personalised application tracker — all for free.
               </p>
             </div>
 
-            {/* Stats row */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="space-y-3">
               {[
-                { value: "1,000+", label: "Universities" },
-                { value: "15+", label: "Countries" },
-                { value: "10K+", label: "Students helped" },
-              ].map(({ value, label }) => (
-                <div key={label} className="rounded-2xl border border-white/8 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-white">{value}</p>
-                  <p className="mt-0.5 text-xs text-[#7aada8]">{label}</p>
+                { icon: GraduationCap, text: "1,000+ verified university profiles" },
+                { icon: MessageCircle, text: "Free counselling from MBBS experts" },
+                { icon: ClipboardList, text: "Track applications end-to-end" },
+              ].map(({ icon: Icon, text }) => (
+                <div key={text} className="flex items-center gap-3">
+                  <div className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-[#155e53]/50">
+                    <Icon className="size-4 text-[#7ccfbf]" />
+                  </div>
+                  <span className="text-sm text-[#a8d5cf]">{text}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Testimonial */}
           <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-5">
             <div className="flex gap-0.5 mb-3">
               {Array.from({ length: 5 }).map((_, i) => (
@@ -86,44 +69,45 @@ export default async function LoginPage({
               ))}
             </div>
             <p className="text-sm leading-relaxed text-[#c0ddd9]">
-              "Students Traffic made it so easy to compare universities in Russia and Kazakhstan. Got into my first choice with their help!"
+              "I found my university in under 10 minutes. The counselling team was incredibly helpful throughout my application."
             </p>
             <div className="mt-3 flex items-center gap-2.5">
-              <div className="flex size-7 items-center justify-center rounded-full bg-[#155e53] text-xs font-bold text-white">
-                P
-              </div>
+              <div className="flex size-7 items-center justify-center rounded-full bg-[#155e53] text-xs font-bold text-white">R</div>
               <div>
-                <p className="text-xs font-semibold text-white">Priya Sharma</p>
-                <p className="text-[11px] text-[#7aada8]">MBBS student, Kazan Federal University</p>
+                <p className="text-xs font-semibold text-white">Rahul Mehta</p>
+                <p className="text-[11px] text-[#7aada8]">MBBS student, Tbilisi State Medical University</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ── Right: form panel ──────────────────────────────── */}
+      {/* ── Right: form panel ─────────────────────────────── */}
       <div className="flex flex-1 flex-col items-center justify-center bg-white px-6 py-12">
-        {/* Mobile logo */}
         <Link href="/" className="mb-10 lg:hidden">
           <Image src="/logo.webp" alt="Students Traffic" width={160} height={40} className="h-8 w-auto object-contain" />
         </Link>
 
         <div className="w-full max-w-[360px]">
-          {error && (
-            <div className="mb-6 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-              {error === "OAuthAccountNotLinked"
-                ? "This email is linked to a different sign-in method."
-                : "Something went wrong. Please try again."}
-            </div>
-          )}
+          <div className="mb-7">
+            <h2 className="text-2xl font-bold text-[#0f1f1c]">Create an account</h2>
+            <p className="mt-1 text-sm text-[#6b7280]">Start your study abroad journey today</p>
+          </div>
 
-          <LoginForm />
+          <RegisterForm />
 
-          <p className="mt-8 text-center text-xs text-[#9ca3af]">
-            By continuing, you agree to our{" "}
-            <Link href="/terms" className="hover:text-[#0f3d37] underline underline-offset-2">Terms</Link>
+          <p className="mt-6 text-center text-sm text-[#6b7280]">
+            Already have an account?{" "}
+            <Link href="/login" className="font-semibold text-[#0f3d37] hover:underline">
+              Sign in
+            </Link>
+          </p>
+
+          <p className="mt-6 text-center text-xs text-[#9ca3af]">
+            By registering, you agree to our{" "}
+            <Link href="/terms" className="underline hover:text-[#0f3d37]">Terms</Link>
             {" "}and{" "}
-            <Link href="/privacy" className="hover:text-[#0f3d37] underline underline-offset-2">Privacy Policy</Link>
+            <Link href="/privacy" className="underline hover:text-[#0f3d37]">Privacy Policy</Link>
           </p>
         </div>
       </div>
