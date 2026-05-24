@@ -15,7 +15,7 @@ const defaultRobots = {
   },
 };
 
-type IndexableMetadataInput = {
+export type IndexableMetadataInput = {
   title: string;
   description: string;
   path: string;

@@ -6,7 +6,11 @@ const validDocumentTypes = new Set<SearchDocumentType>([
   "university",
   "program",
   "landing_page",
+  "blog_post",
+  "india_college",
 ]);
+
+const maxSearchQueryLength = 120;
 
 export function parseSearchFilters(
   raw: Record<string, string | string[] | undefined>
@@ -22,9 +26,10 @@ export function parseSearchFilters(
   };
 
   const type = getFirst("type");
+  const query = getFirst("q")?.trim().slice(0, maxSearchQueryLength) || undefined;
 
   return {
-    q: getFirst("q")?.trim() || undefined,
+    q: query,
     type:
       type && validDocumentTypes.has(type as SearchDocumentType)
         ? (type as SearchDocumentType)

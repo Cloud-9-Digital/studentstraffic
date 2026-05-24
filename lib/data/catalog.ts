@@ -19,6 +19,7 @@ import type {
   FinderProgram,
   FinderProgramsPage,
   FinderSort,
+  BlogPostSearchMetadata,
   IndiaMbbsCard,
   LandingPage,
   ProgramOffering,
@@ -73,11 +74,7 @@ type CatalogSnapshot = {
   programOfferings: ProgramOffering[];
   indiaColleges: IndiaMbbsCard[];
   joinUniversities: Array<{ id: number; name: string }>;
-  publishedPosts: Array<{
-    slug: string;
-    publishedAt?: string;
-    updatedAt?: string;
-  }>;
+  publishedPosts: BlogPostSearchMetadata[];
 };
 
 function createEmptyCatalogSnapshot(): CatalogSnapshot {
@@ -307,6 +304,10 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         db
           .select({
             slug: blogPosts.slug,
+            title: blogPosts.title,
+            excerpt: blogPosts.excerpt,
+            content: blogPosts.content,
+            category: blogPosts.category,
             publishedAt: blogPosts.publishedAt,
             updatedAt: blogPosts.updatedAt,
           })
@@ -454,6 +455,10 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
 
     const publishedPosts = publishedPostRows.map((post) => ({
       slug: post.slug,
+      title: post.title,
+      excerpt: post.excerpt,
+      content: post.content,
+      category: post.category,
       publishedAt: post.publishedAt?.toISOString(),
       updatedAt: post.updatedAt?.toISOString(),
     }));
@@ -1514,6 +1519,13 @@ export async function getFinderOptions(): Promise<FinderOptions> {
 }
 
 export async function getFeaturedPrograms(limit = 4) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+  cacheTag("program-offerings");
+
   const featuredPrograms = await listFinderPrograms({});
   return featuredPrograms
     .filter((program) => program.offering.featured)
@@ -1521,6 +1533,15 @@ export async function getFeaturedPrograms(limit = 4) {
 }
 
 export async function getProgramsForCountry(countrySlug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+  cacheTag("program-offerings");
+  cacheTag("countries");
+  cacheTag(`country-programs:${countrySlug}`);
+
   const databasePrograms = await selectFinderProgramsFromDatabase(
     and(
       eq(programOfferingsTable.published, true),
@@ -1537,6 +1558,15 @@ export async function getProgramsForCountry(countrySlug: string) {
 }
 
 export async function getProgramsForCourse(courseSlug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+  cacheTag("program-offerings");
+  cacheTag("courses");
+  cacheTag(`course-programs:${courseSlug}`);
+
   const databasePrograms = await selectFinderProgramsFromDatabase(
     and(
       eq(programOfferingsTable.published, true),
@@ -1580,6 +1610,15 @@ export async function getProgramsForUniversity(universitySlug: string) {
 }
 
 export async function getProgramsForCity(citySlug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+  cacheTag("program-offerings");
+  cacheTag("universities");
+  cacheTag(`city-programs:${citySlug}`);
+
   const city = (await getUniqueCities()).find((entry) => entry.slug === citySlug);
 
   if (!city) {
@@ -1714,29 +1753,6 @@ export async function getFeaturedUniversities(limit = 4) {
   return universities
     .filter((university) => university.featured)
     .slice(0, limit);
-}
-
-export async function getHomeStats() {
-  const snapshot = await getCatalogSnapshot();
-  const { countries, universities, programOfferings, indiaColleges } = snapshot;
-
-  const cheapestAnnualTuitionUsd = Math.min(
-    ...programOfferings
-      .map((program) => program.annualTuitionUsd)
-      .filter((fee) => hasPublishedUsdAmount(fee)),
-  );
-
-  // Get unique India colleges count (some colleges may have multiple programs)
-  const uniqueIndiaColleges = new Set(indiaColleges.map((college) => college.slug));
-
-  return {
-    countriesCount: countries.length,
-    universitiesCount: universities.length + uniqueIndiaColleges.size,
-    programsCount: programOfferings.length,
-    cheapestAnnualTuitionUsd: Number.isFinite(cheapestAnnualTuitionUsd)
-      ? cheapestAnnualTuitionUsd
-      : 0,
-  };
 }
 
 export async function getSitemapStaticUrls() {

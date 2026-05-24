@@ -1,4 +1,5 @@
 import type {
+  BlogPostSearchMetadata,
   Country,
   Course,
   IndiaMbbsCard,
@@ -7,6 +8,7 @@ import type {
   SearchDocument,
   University,
 } from "@/lib/data/types";
+import type { StudyAbroadGuidePageProps } from "@/components/site/study-abroad-guide-page";
 import { buildCatalogIndexes } from "@/lib/catalog/indexes";
 import {
   getCountryHref,
@@ -27,6 +29,8 @@ type SearchCatalogInput = {
   universities: University[];
   programOfferings: ProgramOffering[];
   landingPages: LandingPage[];
+  studyAbroadGuides?: StudyAbroadGuidePageProps[];
+  blogPosts?: BlogPostSearchMetadata[];
   indiaColleges?: IndiaMbbsCard[];
 };
 
@@ -64,6 +68,8 @@ export function buildSearchDocuments({
   universities,
   programOfferings,
   landingPages,
+  studyAbroadGuides = [],
+  blogPosts = [],
   indiaColleges = [],
 }: SearchCatalogInput): SearchDocument[] {
   const {
@@ -265,6 +271,55 @@ export function buildSearchDocuments({
     };
   });
 
+  const studyAbroadGuideDocuments: SearchDocument[] = studyAbroadGuides.map((page) => {
+    return {
+      documentType: "landing_page",
+      sourceSlug: page.path.replace(/^\//, ""),
+      path: page.path,
+      title: page.title,
+      subtitle: page.kicker,
+      summary: page.summary,
+      searchText: normalizeText([
+        page.title,
+        page.kicker,
+        page.summary,
+        page.keyTakeaways,
+        page.sections.map((section) =>
+          normalizeText([
+            section.title,
+            section.paragraphs,
+            section.bullets,
+            section.cards?.map((card) => `${card.title} ${card.body}`),
+          ]),
+        ),
+        page.faqItems.map((item) => `${item.question} ${item.answer}`),
+      ]),
+      highlights: page.keyTakeaways.slice(0, 2),
+      countrySlug: page.countrySlug,
+      courseSlug: page.courseSlug,
+      featured: true,
+      intakeMonths: [],
+    };
+  });
+
+  const blogPostDocuments: SearchDocument[] = blogPosts.map((post) => ({
+    documentType: "blog_post",
+    sourceSlug: post.slug,
+    path: `/blog/${post.slug}`,
+    title: post.title,
+    subtitle: post.category ?? "Article",
+    summary: post.excerpt ?? post.title,
+    searchText: normalizeText([
+      post.title,
+      post.excerpt,
+      post.category,
+      post.content,
+    ]),
+    highlights: [post.category ?? "Article"].filter(Boolean),
+    featured: false,
+    intakeMonths: [],
+  }));
+
   const indiaCollegeDocuments: SearchDocument[] = dedupeIndiaColleges(indiaColleges).map((college) => {
     return {
       documentType: "india_college",
@@ -300,5 +355,7 @@ export function buildSearchDocuments({
     ...indiaCollegeDocuments,
     ...programDocuments,
     ...landingPageDocuments,
+    ...studyAbroadGuideDocuments,
+    ...blogPostDocuments,
   ];
 }

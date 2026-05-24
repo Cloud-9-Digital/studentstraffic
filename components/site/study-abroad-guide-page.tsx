@@ -23,24 +23,24 @@ function slugify(text: string): string {
     .trim();
 }
 
-type GuideSectionCard = {
+export type GuideSectionCard = {
   title: string;
   body: string;
 };
 
-type GuideSection = {
+export type GuideSection = {
   title: string;
   paragraphs?: string[];
   bullets?: string[];
   cards?: GuideSectionCard[];
 };
 
-type GuideFaq = {
+export type GuideFaq = {
   question: string;
   answer: string;
 };
 
-type CommercialSeoGuidePageProps = {
+export type StudyAbroadGuidePageProps = {
   path: string;
   title: string;
   updatedOn: string;
@@ -61,7 +61,7 @@ type CommercialSeoGuidePageProps = {
   showUniversities?: boolean;
 };
 
-export function CommercialSeoGuidePage({
+export function StudyAbroadGuidePage({
   path,
   title,
   updatedOn,
@@ -80,7 +80,7 @@ export function CommercialSeoGuidePage({
   leadDescription,
   notes,
   showUniversities = false,
-}: CommercialSeoGuidePageProps) {
+}: StudyAbroadGuidePageProps) {
   const structuredData = getStructuredDataGraph([
     getWebPageStructuredData({
       path,

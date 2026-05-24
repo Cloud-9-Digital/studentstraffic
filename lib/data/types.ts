@@ -491,6 +491,7 @@ export type SearchDocumentType =
   | "university"
   | "program"
   | "landing_page"
+  | "blog_post"
   | "india_college";
 
 export type SearchDocument = {
@@ -510,6 +511,16 @@ export type SearchDocument = {
   annualTuitionUsd?: number;
   medium?: string;
   intakeMonths: string[];
+};
+
+export type BlogPostSearchMetadata = {
+  slug: string;
+  title: string;
+  excerpt?: string | null;
+  content?: string | null;
+  category?: string | null;
+  publishedAt?: string;
+  updatedAt?: string;
 };
 
 export type SearchResult = SearchDocument & {

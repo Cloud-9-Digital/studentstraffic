@@ -58,6 +58,10 @@ const securityHeaders = [
 ] satisfies Array<{ key: string; value: string }>;
 
 const nextConfig: NextConfig = {
+  logging: {
+    browserToTerminal: "error",
+    serverFunctions: false,
+  },
   typescript: {
     // Type checking is done explicitly via `tsc --noEmit` in the build command.
     // This prevents Next.js from running its own cached TS check which can fail

@@ -5,8 +5,14 @@ import { WebSocket } from "ws";
 
 import { env } from "@/lib/env";
 import { landingPages } from "@/lib/data/landing-pages";
+import { studyAbroadGuides } from "@/lib/data/study-abroad-guides";
 import { buildSearchDocuments } from "@/lib/search/documents";
+import {
+  ensureTypesenseSearchCollection,
+  importTypesenseSearchDocuments,
+} from "@/lib/search/typesense";
 import type {
+  BlogPostSearchMetadata,
   Country,
   Course,
   ProgramOffering,
@@ -54,7 +60,7 @@ async function rebuildSearchIndexes(
 }
 
 async function readCatalogFromDb(client: PoolClient) {
-  const [countryRows, courseRows, universityRows, programRows] =
+  const [countryRows, courseRows, universityRows, programRows, blogRows] =
     await Promise.all([
       client.query(`SELECT * FROM countries`),
       client.query(`SELECT * FROM courses`),
@@ -71,6 +77,12 @@ async function readCatalogFromDb(client: PoolClient) {
         JOIN courses c ON c.id = po.course_id
         WHERE po.published = true
           AND u.published = true
+      `),
+      client.query(`
+        SELECT slug, title, excerpt, content, category, published_at, updated_at
+        FROM blog_posts
+        WHERE status = 'published'
+        ORDER BY published_at DESC
       `),
     ]);
 
@@ -162,7 +174,17 @@ async function readCatalogFromDb(client: PoolClient) {
     }];
   });
 
-  return { countries, courses, universities, programOfferings };
+  const blogPosts: BlogPostSearchMetadata[] = blogRows.rows.map((r) => ({
+    slug: r.slug,
+    title: r.title,
+    excerpt: r.excerpt,
+    content: r.content,
+    category: r.category,
+    publishedAt: r.published_at?.toISOString(),
+    updatedAt: r.updated_at?.toISOString(),
+  }));
+
+  return { countries, courses, universities, programOfferings, blogPosts };
 }
 
 async function seed() {
@@ -178,7 +200,7 @@ async function seed() {
   try {
     await setupSearchInfrastructure(client);
 
-    const { countries, courses, universities, programOfferings } =
+    const { countries, courses, universities, programOfferings, blogPosts } =
       await readCatalogFromDb(client);
 
     const searchDocuments = buildSearchDocuments({
@@ -187,6 +209,8 @@ async function seed() {
       universities,
       programOfferings,
       landingPages,
+      studyAbroadGuides: Object.values(studyAbroadGuides).map((guide) => guide.page),
+      blogPosts,
     });
 
     await client.query("BEGIN");
@@ -252,6 +276,11 @@ async function seed() {
 
     await client.query("COMMIT");
     await rebuildSearchIndexes(client);
+    if (env.hasTypesenseAdmin) {
+      await ensureTypesenseSearchCollection();
+      const result = await importTypesenseSearchDocuments(searchDocuments);
+      console.log(`Synced ${result.imported} documents to Typesense.`);
+    }
     console.log(`Seed complete. Indexed ${searchDocuments.length} documents.`);
   } catch (error) {
     await client.query("ROLLBACK");

@@ -40,6 +40,8 @@ const LOGIN_COMBO_LIMIT = {
   blockMs: 30 * 60_000,
 };
 
+process.env.NEXTAUTH_URL ??= env.nextAuthUrl;
+
 export type AdminSession = Session & {
   user: NonNullable<Session["user"]> & {
     role: "admin";

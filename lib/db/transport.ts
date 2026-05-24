@@ -1,9 +1,15 @@
 import { neonConfig } from "@neondatabase/serverless";
 
+import { env } from "@/lib/env";
+
 const DB_QUERY_TIMEOUT_MS = 15_000;
 const DEFAULT_SLOW_DB_QUERY_MS = 1_000;
 const BUILD_SLOW_DB_QUERY_MS = 5_000;
 const DB_FETCH_RETRY_DELAYS_MS = [250, 750];
+
+function shouldLogSlowQueries() {
+  return env.logDbSlowQueries || process.env.NODE_ENV === "production";
+}
 
 function getSlowQueryThresholdMs() {
   return process.env.NEXT_PHASE === "phase-production-build"
@@ -109,7 +115,7 @@ export function configureDatabaseTransport() {
 
         const durationMs = Math.round(getNowMs() - startedAt);
 
-        if (durationMs >= slowQueryThresholdMs) {
+        if (shouldLogSlowQueries() && durationMs >= slowQueryThresholdMs) {
           console.warn(
             "[db-slow]",
             JSON.stringify({

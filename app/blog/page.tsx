@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { desc, eq, sql } from "drizzle-orm";
 import type { Metadata } from "next";
-import { unstable_cache } from "next/cache";
+import { cacheLife, cacheTag } from "next/cache";
 import { Rss, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { getDb } from "@/lib/db/server";
@@ -14,38 +14,39 @@ const PAGE_SIZE = 12;
 
 // ── Data ──────────────────────────────────────────────────────────────────
 
-const getPostsPage = unstable_cache(
-  async (page: number) => {
-    const db = getDb();
-    if (!db) return { posts: [], total: 0 };
-    const offset = (page - 1) * PAGE_SIZE;
-    const [posts, [{ total }]] = await Promise.all([
-      db
-        .select({
-          id: blogPosts.id,
-          title: blogPosts.title,
-          slug: blogPosts.slug,
-          excerpt: blogPosts.excerpt,
-          coverUrl: blogPosts.coverUrl,
-          category: blogPosts.category,
-          readingTimeMinutes: blogPosts.readingTimeMinutes,
-          publishedAt: blogPosts.publishedAt,
-        })
-        .from(blogPosts)
-        .where(eq(blogPosts.status, "published"))
-        .orderBy(desc(blogPosts.publishedAt))
-        .limit(PAGE_SIZE)
-        .offset(offset),
-      db
-        .select({ total: sql<number>`cast(count(*) as int)` })
-        .from(blogPosts)
-        .where(eq(blogPosts.status, "published")),
-    ]);
-    return { posts, total };
-  },
-  ["blog-listing-page"],
-  { tags: ["blog"], revalidate: 3600 }
-);
+async function getPostsPage(page: number) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("blog");
+
+  const db = getDb();
+  if (!db) return { posts: [], total: 0 };
+  const offset = (page - 1) * PAGE_SIZE;
+  const [posts, [{ total }]] = await Promise.all([
+    db
+      .select({
+        id: blogPosts.id,
+        title: blogPosts.title,
+        slug: blogPosts.slug,
+        excerpt: blogPosts.excerpt,
+        coverUrl: blogPosts.coverUrl,
+        category: blogPosts.category,
+        readingTimeMinutes: blogPosts.readingTimeMinutes,
+        publishedAt: blogPosts.publishedAt,
+      })
+      .from(blogPosts)
+      .where(eq(blogPosts.status, "published"))
+      .orderBy(desc(blogPosts.publishedAt))
+      .limit(PAGE_SIZE)
+      .offset(offset),
+    db
+      .select({ total: sql<number>`cast(count(*) as int)` })
+      .from(blogPosts)
+      .where(eq(blogPosts.status, "published")),
+  ]);
+  return { posts, total };
+}
 
 // ── Metadata ──────────────────────────────────────────────────────────────
 

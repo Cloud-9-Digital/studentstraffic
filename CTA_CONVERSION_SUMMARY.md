@@ -10,7 +10,7 @@
 
 ### Pages Fully Updated
 
-#### Russia SEO Pages (CommercialSeoGuidePage)
+#### Russia SEO Pages (StudyAbroadGuidePage)
 - ✅ `/lowest-mbbs-fees-in-russia`
 - ✅ `/mbbs-admission-in-russia`
 - ✅ `/mbbs-from-russia-valid-in-india`
@@ -25,7 +25,7 @@
 - ✅ `/is-mbbs-in-russia-worth-it`
 
 **Changes:**
-- Removed `secondaryHref` prop from CommercialSeoGuidePage
+- Removed `secondaryHref` prop from StudyAbroadGuidePage
 - Main hero CTA triggers CounsellingDialog instead of navigating
 - Dialog pre-filled with page context (countrySlug, courseSlug)
 - Custom title/description for each page

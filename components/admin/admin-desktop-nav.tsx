@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart3, ClipboardList, FileSearch, GraduationCap, LayoutDashboard, MessageCircleMore, MessageSquareQuote, NotebookPen, Users, Users2, WalletCards } from "lucide-react";
+import { BarChart3, ClipboardList, FileSearch, GraduationCap, LayoutDashboard, MessageCircleMore, MessageSquareQuote, NotebookPen, SendHorizontal, Users, Users2, WalletCards } from "lucide-react";
 import type { AdminUserRole } from "@/lib/db/schema";
 
 const navigation = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard, ownerOnly: false },
   { href: "/admin/seminars", label: "Analytics", icon: BarChart3, ownerOnly: false },
   { href: "/admin/leads", label: "Leads", icon: WalletCards, ownerOnly: false },
+  { href: "/admin/lead-delivery", label: "Delivery", icon: SendHorizontal, ownerOnly: false },
   { href: "/admin/whatsapp-logs", label: "WhatsApp", icon: MessageCircleMore, ownerOnly: false },
   { href: "/admin/peers", label: "Students", icon: GraduationCap, ownerOnly: false },
   { href: "/admin/peer-applications", label: "Applications", icon: ClipboardList, ownerOnly: false },

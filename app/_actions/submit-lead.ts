@@ -8,6 +8,10 @@ import { after } from "next/server";
 import { z } from "zod";
 
 import {
+  enqueueLeadDeliveryJob,
+  processPendingBackgroundJobs,
+} from "@/lib/background-jobs";
+import {
   ClientContext,
   emptyToUndefined,
   getFormString,
@@ -21,9 +25,7 @@ import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
-import { syncLeadDestinations } from "@/lib/lead-sync";
 import { getTrackingSnapshot } from "@/lib/tracking";
-import { sendLeadWhatsAppMessage } from "@/lib/wati";
 import {
   consumePublicFormRateLimits,
   normalizePhoneIdentifier,
@@ -134,48 +136,45 @@ export async function submitLeadAction(
     let insertedLeadId: number | undefined;
 
     if (db) {
-      const [rateLimitError, recentLeadRows] = await Promise.all([
-        consumePublicFormRateLimits(
-          [
-            ipAddress
-              ? {
-                  scope: "public:lead:ip",
-                  identifier: ipAddress,
-                  limit: 6,
-                  windowMs: 30 * 60_000,
-                  blockMs: 2 * 60 * 60_000,
-                }
-              : null,
-            {
-              scope: "public:lead:phone",
-              identifier: normalizePhoneIdentifier(data.phone),
-              limit: 4,
-              windowMs: 6 * 60 * 60_000,
-              blockMs: 12 * 60 * 60_000,
-            },
-          ],
-          "enquiries"
-        ),
-        db
-          .select({ id: leads.id })
-          .from(leads)
-          .where(
-            and(eq(leads.phone, data.phone), gte(leads.createdAt, minutesAgo(15)))
-          )
-          .limit(1),
-      ]);
-
-      if (rateLimitError) {
-        return { error: rateLimitError };
-      }
-
-      const [recentLead] = recentLeadRows;
+      const [recentLead] = await db
+        .select({ id: leads.id })
+        .from(leads)
+        .where(
+          and(eq(leads.phone, data.phone), gte(leads.createdAt, minutesAgo(15)))
+        )
+        .limit(1);
 
       if (recentLead) {
         return {
           error:
             "We already received your enquiry recently. Please wait a few minutes before submitting again.",
         };
+      }
+
+      const rateLimitError = await consumePublicFormRateLimits(
+        [
+          ipAddress
+            ? {
+                scope: "public:lead:ip",
+                identifier: ipAddress,
+                limit: 6,
+                windowMs: 30 * 60_000,
+                blockMs: 2 * 60 * 60_000,
+              }
+            : null,
+          {
+            scope: "public:lead:phone",
+            identifier: normalizePhoneIdentifier(data.phone),
+            limit: 4,
+            windowMs: 6 * 60 * 60_000,
+            blockMs: 12 * 60 * 60_000,
+          },
+        ],
+        "enquiries"
+      );
+
+      if (rateLimitError) {
+        return { error: rateLimitError };
       }
 
       const [insertedLead] = await db.insert(leads).values({
@@ -226,47 +225,54 @@ export async function submitLeadAction(
       revalidateTag("admin-leads", "minutes");
 
       const handoffPayload = buildLeadHandoffPayload({
-          leadKind: "general_enquiry",
-          websiteLeadId: insertedLeadId,
-          submittedAt: submittedAt.toISOString(),
-          fullName: data.fullName,
-          phone: data.phone,
-          email: emptyToUndefined(data.email),
-          userState: data.userState,
-          neetScore: data.neetScore,
-          courseSlug: emptyToUndefined(data.courseSlug),
-          countrySlug: emptyToUndefined(data.countrySlug),
-          universitySlug: emptyToUndefined(data.universitySlug),
-          sourcePath: data.sourcePath,
-          sourceUrl: emptyToUndefined(data.sourceUrl),
-          sourceQuery,
-          pageTitle: emptyToUndefined(data.pageTitle),
-          ctaVariant: data.ctaVariant,
-          notes: emptyToUndefined(data.notes),
-          documentReferrer: emptyToUndefined(data.documentReferrer),
-          utmSource: tracking.utmSource,
-          utmMedium: tracking.utmMedium,
-          utmCampaign: tracking.utmCampaign,
-          utmTerm: tracking.utmTerm,
-          utmContent: tracking.utmContent,
-          referrer: headerStore.get("referer") ?? undefined,
-          userAgent: headerStore.get("user-agent") ?? undefined,
-          ipAddress: ipAddress ?? undefined,
-          acceptLanguage: headerStore.get("accept-language") ?? undefined,
-          clientContext,
+        leadKind: "general_enquiry",
+        websiteLeadId: insertedLeadId,
+        submittedAt: submittedAt.toISOString(),
+        fullName: data.fullName,
+        phone: data.phone,
+        email: emptyToUndefined(data.email),
+        userState: data.userState,
+        neetScore: data.neetScore,
+        courseSlug: emptyToUndefined(data.courseSlug),
+        countrySlug: emptyToUndefined(data.countrySlug),
+        universitySlug: emptyToUndefined(data.universitySlug),
+        sourcePath: data.sourcePath,
+        sourceUrl: emptyToUndefined(data.sourceUrl),
+        sourceQuery,
+        pageTitle: emptyToUndefined(data.pageTitle),
+        ctaVariant: data.ctaVariant,
+        notes: emptyToUndefined(data.notes),
+        documentReferrer: emptyToUndefined(data.documentReferrer),
+        utmSource: tracking.utmSource,
+        utmMedium: tracking.utmMedium,
+        utmCampaign: tracking.utmCampaign,
+        utmTerm: tracking.utmTerm,
+        utmContent: tracking.utmContent,
+        referrer: headerStore.get("referer") ?? undefined,
+        userAgent: headerStore.get("user-agent") ?? undefined,
+        ipAddress: ipAddress ?? undefined,
+        acceptLanguage: headerStore.get("accept-language") ?? undefined,
+        clientContext,
+      });
+
+      if (insertedLeadId) {
+        await enqueueLeadDeliveryJob({
+          leadId: insertedLeadId,
+          leadHandoffPayload: handoffPayload,
+          whatsappPayload: {
+            fullName: data.fullName,
+            phone: data.phone,
+            courseSlug: emptyToUndefined(data.courseSlug),
+            countrySlug: emptyToUndefined(data.countrySlug),
+            universitySlug: emptyToUndefined(data.universitySlug),
+            sourcePath: data.sourcePath,
+          },
         });
 
-      after(() => Promise.allSettled([
-        syncLeadDestinations(insertedLeadId, handoffPayload),
-        sendLeadWhatsAppMessage({
-          fullName: data.fullName,
-          phone: data.phone,
-          courseSlug: emptyToUndefined(data.courseSlug),
-          countrySlug: emptyToUndefined(data.countrySlug),
-          universitySlug: emptyToUndefined(data.universitySlug),
-          sourcePath: data.sourcePath,
-        }, insertedLeadId, { skipInboundLeadCheck: true }),
-      ]));
+        if (env.enableInlineJobProcessing) {
+          after(() => processPendingBackgroundJobs({ limit: 1 }));
+        }
+      }
     } else {
       console.warn("Lead submission skipped DB persistence because DATABASE_URL is missing.");
     }

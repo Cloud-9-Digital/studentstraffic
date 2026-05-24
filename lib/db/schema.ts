@@ -473,6 +473,32 @@ export const securityRateLimits = pgTable(
   ]
 );
 
+export const backgroundJobs = pgTable(
+  "background_jobs",
+  {
+    id: serial("id").primaryKey(),
+    kind: text("kind").notNull(),
+    status: text("status").notNull().default("pending"),
+    payload: jsonb("payload").$type<Record<string, unknown>>().notNull(),
+    attempts: integer("attempts").notNull().default(0),
+    maxAttempts: integer("max_attempts").notNull().default(5),
+    runAfter: timestamp("run_after", { withTimezone: true }).notNull().defaultNow(),
+    lockedAt: timestamp("locked_at", { withTimezone: true }),
+    completedAt: timestamp("completed_at", { withTimezone: true }),
+    lastError: text("last_error"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("background_jobs_pending_idx").on(
+      table.status,
+      table.runAfter,
+      table.createdAt
+    ),
+    index("background_jobs_kind_status_idx").on(table.kind, table.status),
+  ]
+);
+
 export const adminAuditLogs = pgTable(
   "admin_audit_logs",
   {
@@ -814,3 +840,4 @@ export type StudentPeerApplicationInsert = typeof studentPeerApplications.$infer
 export type StudentPeerApplicationRow = typeof studentPeerApplications.$inferSelect;
 export type UniversityResearchQueueRow = typeof universityResearchQueue.$inferSelect;
 export type UniversityResearchDraftRow = typeof universityResearchDrafts.$inferSelect;
+export type BackgroundJobRow = typeof backgroundJobs.$inferSelect;

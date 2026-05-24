@@ -328,7 +328,7 @@ Apply same improvements to all Russia/Vietnam pages:
 ### What Was Changed
 
 **Files Modified**:
-1. `/components/site/commercial-seo-guide-page.tsx` - Complete design overhaul
+1. `/components/site/study-abroad-guide-page.tsx` - Complete design overhaul
 2. `/app/lowest-mbbs-fees-in-russia/page.tsx` - Content optimization example
 
 **Key Additions**:

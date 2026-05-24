@@ -1,9 +1,10 @@
 import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
-import { sql } from "drizzle-orm";
+import { count, sql } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
+import { studyAbroadGuides } from "@/lib/data/study-abroad-guides";
 import { getCatalogSnapshot } from "@/lib/data/catalog";
 import type {
   SearchDocument,
@@ -13,6 +14,46 @@ import type {
 } from "@/lib/data/types";
 import { getDb } from "@/lib/db/server";
 import { buildSearchDocuments } from "@/lib/search/documents";
+import { searchTypesenseCatalog } from "@/lib/search/typesense";
+
+const globalSearchLoggingState = globalThis as typeof globalThis & {
+  __searchWarningKeys?: Set<string>;
+};
+
+function getSearchWarningKeys() {
+  globalSearchLoggingState.__searchWarningKeys ??= new Set<string>();
+  return globalSearchLoggingState.__searchWarningKeys;
+}
+
+function getCompactErrorDetails(error: unknown) {
+  const cause = error && typeof error === "object" && "cause" in error
+    ? (error as { cause?: unknown }).cause
+    : null;
+  const source = cause instanceof Error ? cause : error;
+  const rawMessage = source instanceof Error ? source.message : String(source);
+  const code =
+    source && typeof source === "object" && "code" in source
+      ? String((source as { code?: unknown }).code)
+      : undefined;
+
+  return {
+    code,
+    error: rawMessage.split("\n")[0] ?? rawMessage,
+  };
+}
+
+function warnSearchOnce(key: string, message: string, error: unknown) {
+  const warningKeys = getSearchWarningKeys();
+  const details = getCompactErrorDetails(error);
+  const warningKey = `${key}:${details.code ?? ""}:${details.error}`;
+
+  if (process.env.NODE_ENV !== "production" && warningKeys.has(warningKey)) {
+    return;
+  }
+
+  warningKeys.add(warningKey);
+  console.warn(`[search] ${message}`, JSON.stringify(details));
+}
 
 function getTypeRank(documentType: SearchDocumentType) {
   switch (documentType) {
@@ -22,14 +63,16 @@ function getTypeRank(documentType: SearchDocumentType) {
       return 1;
     case "program":
       return 2;
-    case "landing_page":
-      return 3;
-    case "country":
-      return 4;
-    case "course":
-      return 5;
-    default:
-      return 6;
+      case "landing_page":
+        return 3;
+      case "blog_post":
+        return 4;
+      case "country":
+        return 5;
+      case "course":
+        return 6;
+      default:
+        return 7;
   }
 }
 
@@ -365,13 +408,62 @@ async function getCachedSearchDocuments(): Promise<SearchDocument[]> {
   return buildSearchDocuments({
     ...snapshot,
     landingPages,
+    studyAbroadGuides: Object.values(studyAbroadGuides).map((guide) => guide.page),
+    blogPosts: snapshot.publishedPosts,
   });
 }
 
-export async function searchCatalog(
+type SearchCatalogResultSet = {
+  results: SearchResult[];
+  generatedAtMs: number;
+};
+
+function getMonotonicTimeMs() {
+  return Number(process.hrtime.bigint() / BigInt(1_000_000));
+}
+
+async function hasSearchBm25Index() {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("search");
+
+  const db = getDb();
+
+  if (!db) {
+    return false;
+  }
+
+  try {
+    const rows = await db
+      .select({ value: count() })
+      .from(sql`pg_indexes`)
+      .where(sql`schemaname = 'public' AND indexname = 'search_documents_bm25_idx'`);
+
+    return (rows[0]?.value ?? 0) > 0;
+  } catch {
+    return false;
+  }
+}
+
+async function executeSearchCatalog(
   filters: SearchFilters,
   limit = 24
 ): Promise<SearchResult[]> {
+  try {
+    const typesenseResults = await searchTypesenseCatalog(filters, limit);
+
+    if (typesenseResults) {
+      return rerankSearchResults(typesenseResults, filters, limit);
+    }
+  } catch (error) {
+    warnSearchOnce(
+      "typesense-fallback",
+      "Typesense failed; using Postgres fallback.",
+      error,
+    );
+  }
+
   const db = getDb();
 
   if (!db) {
@@ -397,6 +489,7 @@ export async function searchCatalog(
       const query = filters.q.trim();
       const candidateLimit = Math.max(limit * 3, 48);
       const fuzzyDistance = query.length >= 10 ? 2 : 1;
+      const canUseBm25 = await hasSearchBm25Index();
       const exactMatchBoost = sql`
         CASE
           WHEN lower(title) = lower(${query}) THEN 12
@@ -417,101 +510,104 @@ export async function searchCatalog(
       const typeRank = sql`
         CASE document_type
           WHEN 'university' THEN 0
-          WHEN 'india_college' THEN 1
-          WHEN 'program' THEN 2
-          WHEN 'landing_page' THEN 3
-          WHEN 'country' THEN 4
-          WHEN 'course' THEN 5
-          ELSE 6
+            WHEN 'india_college' THEN 1
+            WHEN 'program' THEN 2
+            WHEN 'landing_page' THEN 3
+            WHEN 'blog_post' THEN 4
+            WHEN 'country' THEN 5
+            WHEN 'course' THEN 6
+            ELSE 7
         END
       `;
 
-      const bm25Results = await db.execute<SearchResult>(sql`
-        SELECT
-          id,
-          document_type AS "documentType",
-          source_slug AS "sourceSlug",
-          path,
-          title,
-          subtitle,
-          summary,
-          search_text AS "searchText",
-          highlights,
-          country_slug AS "countrySlug",
-          course_slug AS "courseSlug",
-          university_slug AS "universitySlug",
-          city,
-          featured,
-          annual_tuition_usd AS "annualTuitionUsd",
-          medium,
-          intake_months AS "intakeMonths",
-          (coalesce(paradedb.score(id), 0) + ${exactMatchBoost} + ${businessBoost})::float AS score
-        FROM search_documents
-        WHERE ${sql.join(
-          [
-            ...conditions,
-            sql`id @@@ paradedb.disjunction_max(
-              ARRAY[
-                paradedb.match('title', ${query}, conjunction_mode => true),
-                paradedb.match('subtitle', ${query}, conjunction_mode => true),
-                paradedb.match('summary', ${query}, conjunction_mode => true),
-                paradedb.match('search_text', ${query}, conjunction_mode => true)
-              ],
-              tie_breaker => 0.15
-            )`,
-          ],
-          sql` AND `
-        )}
-        ORDER BY score DESC, featured DESC, ${typeRank}, title ASC
-        LIMIT ${candidateLimit}
-      `);
+      if (canUseBm25) {
+        const bm25Results = await db.execute<SearchResult>(sql`
+          SELECT
+            id,
+            document_type AS "documentType",
+            source_slug AS "sourceSlug",
+            path,
+            title,
+            subtitle,
+            summary,
+            search_text AS "searchText",
+            highlights,
+            country_slug AS "countrySlug",
+            course_slug AS "courseSlug",
+            university_slug AS "universitySlug",
+            city,
+            featured,
+            annual_tuition_usd AS "annualTuitionUsd",
+            medium,
+            intake_months AS "intakeMonths",
+            (coalesce(paradedb.score(id), 0) + ${exactMatchBoost} + ${businessBoost})::float AS score
+          FROM search_documents
+          WHERE ${sql.join(
+            [
+              ...conditions,
+              sql`id @@@ paradedb.disjunction_max(
+                ARRAY[
+                  paradedb.match('title', ${query}, conjunction_mode => true),
+                  paradedb.match('subtitle', ${query}, conjunction_mode => true),
+                  paradedb.match('summary', ${query}, conjunction_mode => true),
+                  paradedb.match('search_text', ${query}, conjunction_mode => true)
+                ],
+                tie_breaker => 0.15
+              )`,
+            ],
+            sql` AND `
+          )}
+          ORDER BY score DESC, featured DESC, ${typeRank}, title ASC
+          LIMIT ${candidateLimit}
+        `);
 
-      if (bm25Results.rows.length) {
-        return rerankSearchResults(bm25Results.rows, filters, limit);
-      }
+        if (bm25Results.rows.length) {
+          return rerankSearchResults(bm25Results.rows, filters, limit);
+        }
 
-      const fuzzyResults = await db.execute<SearchResult>(sql`
-        SELECT
-          id,
-          document_type AS "documentType",
-          source_slug AS "sourceSlug",
-          path,
-          title,
-          subtitle,
-          summary,
-          search_text AS "searchText",
-          highlights,
-          country_slug AS "countrySlug",
-          course_slug AS "courseSlug",
-          university_slug AS "universitySlug",
-          city,
-          featured,
-          annual_tuition_usd AS "annualTuitionUsd",
-          medium,
-          intake_months AS "intakeMonths",
-          (coalesce(paradedb.score(id), 0) + (${exactMatchBoost} * 0.25) + ${businessBoost})::float AS score
-        FROM search_documents
-        WHERE ${sql.join(
-          [
-            ...conditions,
-            sql`id @@@ paradedb.disjunction_max(
-              ARRAY[
-                paradedb.match('title', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
-                paradedb.match('subtitle', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
-                paradedb.match('summary', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
-                paradedb.match('search_text', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true)
-              ],
-              tie_breaker => 0.1
-            )`,
-          ],
-          sql` AND `
-        )}
-        ORDER BY score DESC, featured DESC, ${typeRank}, title ASC
-        LIMIT ${candidateLimit}
-      `);
+        const fuzzyResults = await db.execute<SearchResult>(sql`
+          SELECT
+            id,
+            document_type AS "documentType",
+            source_slug AS "sourceSlug",
+            path,
+            title,
+            subtitle,
+            summary,
+            search_text AS "searchText",
+            highlights,
+            country_slug AS "countrySlug",
+            course_slug AS "courseSlug",
+            university_slug AS "universitySlug",
+            city,
+            featured,
+            annual_tuition_usd AS "annualTuitionUsd",
+            medium,
+            intake_months AS "intakeMonths",
+            (coalesce(paradedb.score(id), 0) + (${exactMatchBoost} * 0.25) + ${businessBoost})::float AS score
+          FROM search_documents
+          WHERE ${sql.join(
+            [
+              ...conditions,
+              sql`id @@@ paradedb.disjunction_max(
+                ARRAY[
+                  paradedb.match('title', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
+                  paradedb.match('subtitle', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
+                  paradedb.match('summary', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true),
+                  paradedb.match('search_text', ${query}, distance => ${fuzzyDistance}, conjunction_mode => true)
+                ],
+                tie_breaker => 0.1
+              )`,
+            ],
+            sql` AND `
+          )}
+          ORDER BY score DESC, featured DESC, ${typeRank}, title ASC
+          LIMIT ${candidateLimit}
+        `);
 
-      if (fuzzyResults.rows.length) {
-        return rerankSearchResults(fuzzyResults.rows, filters, limit);
+        if (fuzzyResults.rows.length) {
+          return rerankSearchResults(fuzzyResults.rows, filters, limit);
+        }
       }
 
       const trigramResults = await db.execute<SearchResult>(sql`
@@ -590,9 +686,10 @@ export async function searchCatalog(
           WHEN 'india_college' THEN 1
           WHEN 'program' THEN 2
           WHEN 'landing_page' THEN 3
-          WHEN 'country' THEN 4
-          WHEN 'course' THEN 5
-          ELSE 6
+          WHEN 'blog_post' THEN 4
+          WHEN 'country' THEN 5
+          WHEN 'course' THEN 6
+          ELSE 7
         END,
         title ASC
       LIMIT ${limit}
@@ -600,11 +697,38 @@ export async function searchCatalog(
 
     return rerankSearchResults(browseResults.rows, filters, limit);
   } catch (error) {
-    console.warn(
-      "Falling back to in-memory search because the database search layer is not ready.",
-      error
+    warnSearchOnce(
+      "database-fallback",
+      "Database search failed; using in-memory fallback.",
+      error,
     );
 
     return searchInMemory(filters, limit);
   }
+}
+
+export async function searchCatalogResultSet(
+  filters: SearchFilters,
+  limit = 24
+): Promise<SearchCatalogResultSet> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("search");
+  cacheTag("india-colleges");
+
+  return {
+    results: await executeSearchCatalog(filters, limit),
+    generatedAtMs: getMonotonicTimeMs(),
+  };
+}
+
+export async function searchCatalog(
+  filters: SearchFilters,
+  limit = 24
+): Promise<SearchResult[]> {
+  const resultSet = await searchCatalogResultSet(filters, limit);
+
+  return resultSet.results;
 }
