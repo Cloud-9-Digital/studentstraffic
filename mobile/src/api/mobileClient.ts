@@ -136,7 +136,7 @@ export const mobileClient = {
       this.getProfile(),
       this.getShortlists().catch(() => []),
       this.getApplications().catch(() => []),
-      this.getUniversities("").catch(() => []),
+      this.getUniversities({}).then(r => r.universities).catch(() => []),
     ]);
 
     return {
@@ -148,13 +148,43 @@ export const mobileClient = {
     };
   },
 
-  async getUniversities(query = "") {
-    const params = new URLSearchParams({ pageSize: "20" });
-    if (query.trim()) params.set("q", query.trim());
-    const result = await request<{ universities: any[] }>(`/api/mobile/v1/universities?${params.toString()}`, {
-      auth: false,
-    });
-    return result.universities.map(toUniversity);
+  async getUniversities(filters: {
+    q?: string;
+    country?: string;
+    course?: string;
+    feeMin?: number;
+    feeMax?: number;
+    medium?: string;
+    universityType?: string;
+    sort?: string;
+  } = {}, page = 1) {
+    const params = new URLSearchParams({ pageSize: "30", page: String(page) });
+    if (filters.q?.trim())        params.set("q",               filters.q.trim());
+    if (filters.country)          params.set("country",          filters.country);
+    if (filters.course)           params.set("course",           filters.course);
+    if (filters.medium)           params.set("medium",           filters.medium);
+    if (filters.universityType)   params.set("university_type",  filters.universityType);
+    if (filters.sort)             params.set("sort",             filters.sort);
+    if (filters.feeMin != null)   params.set("fee_min",          String(filters.feeMin));
+    if (filters.feeMax != null)   params.set("fee_max",          String(filters.feeMax));
+
+    const result = await request<{
+      universities: any[];
+      pagination: { hasNextPage: boolean; totalItems: number; totalPages: number };
+      options: {
+        countries: { slug: string; name: string }[];
+        courses: { slug: string; shortName: string }[];
+        mediums: string[];
+        intakes: string[];
+      };
+    }>(`/api/mobile/v1/universities?${params.toString()}`, { auth: false });
+
+    return {
+      universities: result.universities.map(toUniversity),
+      hasNextPage: result.pagination.hasNextPage,
+      totalItems: result.pagination.totalItems,
+      options: result.options,
+    };
   },
 
   async getUniversity(slug: string) {
@@ -168,7 +198,7 @@ export const mobileClient = {
 
   async getShortlists() {
     const result = await request<{ shortlists: any[] }>("/api/mobile/v1/shortlists");
-    return result.shortlists.map(toUniversity);
+    return result.shortlists.map(u => ({ ...toUniversity(u), isShortlisted: true }));
   },
 
   async addShortlist(universitySlug: string) {

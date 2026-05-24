@@ -20,6 +20,41 @@ export type University = {
   imageTone: "green" | "blue" | "coral";
 };
 
+export type YearlyCost = {
+  yearLabel: string;
+  tuitionUsd: number;
+  hostelUsd: number;
+  livingUsd: number;
+  totalUsd: number;
+  notes?: string;
+};
+
+export type AdmissionsContent = {
+  overview?: string;
+  eligibility?: { intro: string; items: string[] };
+  admissionSteps?: string[];
+  documentsRequired?: { educational: string[]; visa: string[] };
+  deadlinesNote?: string;
+  scholarshipInfo?: string;
+  licensingPathway?: string[];
+};
+
+export type Offering = {
+  slug: string;
+  courseSlug: string;
+  title: string;
+  durationYears: number;
+  annualTuitionUsd: number;
+  totalTuitionUsd: number;
+  livingUsd: number;
+  officialProgramUrl?: string;
+  medium: string;
+  intakeMonths: string[];
+  yearlyCostBreakdown: YearlyCost[];
+  feeNotes?: string;
+  licenseExamSupport: string[];
+};
+
 export type UniversityDetail = University & {
   establishedYear?: number;
   officialWebsite?: string;
@@ -34,19 +69,12 @@ export type UniversityDetail = University & {
   thingsToConsider: string[];
   bestFitFor: string[];
   recognitionBadges: string[];
+  recognitionLinks: { label: string; url: string }[];
   teachingHospitals: string[];
-  primaryOffering: {
-    slug: string;
-    courseSlug: string;
-    title: string;
-    durationYears: number;
-    annualTuitionUsd: number;
-    totalTuitionUsd: number;
-    livingUsd: number;
-    medium: string;
-    intakeMonths: string[];
-  } | null;
-  offerings: Array<NonNullable<UniversityDetail["primaryOffering"]>>;
+  faq: { question: string; answer: string }[];
+  admissionsContent?: AdmissionsContent;
+  primaryOffering: Offering | null;
+  offerings: Offering[];
 };
 
 export type ApplicationStatus =

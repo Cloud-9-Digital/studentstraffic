@@ -24,6 +24,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { colors } from "../src/theme/tokens";
 import { paperTheme } from "../src/theme/paper-theme";
+import { ToastProvider } from "../src/components/Toast";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -68,14 +69,16 @@ export default function RootLayout() {
             ),
           }}
         >
-          <StatusBar style="dark" />
-          <Stack
-            screenOptions={{
-              headerShown: false,
-              contentStyle: { backgroundColor: colors.background },
-              animation: "slide_from_right",
-            }}
-          />
+          <ToastProvider>
+            <StatusBar style="dark" />
+            <Stack
+              screenOptions={{
+                headerShown: false,
+                contentStyle: { backgroundColor: colors.background },
+                animation: "slide_from_right",
+              }}
+            />
+          </ToastProvider>
         </PaperProvider>
       </SafeAreaProvider>
     </QueryClientProvider>

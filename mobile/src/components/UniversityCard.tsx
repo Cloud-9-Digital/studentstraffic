@@ -1,104 +1,254 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
+import { useEffect, useState } from "react";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import * as Haptics from "expo-haptics";
 
 import type { University } from "../types/domain";
+import { mobileClient } from "../api/mobileClient";
+import { useToast } from "./Toast";
 import { colors, shadow } from "../theme/tokens";
 
-const toneColors = {
-  green: colors.primarySoft,
-  blue: colors.blueSoft,
-  coral: colors.coralSoft,
+type Tone = "green" | "blue" | "coral";
+
+const TONE_GRADIENT: Record<Tone, [string, string]> = {
+  green: ["#0a2620", "#0f3d37"],
+  blue:  ["#0f3d37", "#1c6b5f"],
+  coral: ["#c04d28", "#d95f38"],
 };
 
-export function UniversityCard({ university }: { university: University }) {
+function formatFee(usd: number) {
+  if (usd >= 1000) return `$${Math.round(usd / 1000)}k/yr`;
+  return `$${usd}/yr`;
+}
+
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .filter(w => w.length > 2)
+    .slice(0, 2)
+    .map(w => w[0].toUpperCase())
+    .join("");
+}
+
+type Props = {
+  university: University;
+  onShortlistChange?: (slug: string, isShortlisted: boolean) => void;
+};
+
+export function UniversityCard({ university, onShortlistChange }: Props) {
   const router = useRouter();
+  const queryClient = useQueryClient();
+  const { showToast } = useToast();
+  const [imgError, setImgError] = useState(false);
+  const [toggling, setToggling] = useState(false);
+
+  // Initialize from shortlists cache if available, otherwise from prop
+  const [saved, setSaved] = useState(() => {
+    const cached = queryClient.getQueryData<University[]>(["shortlists"]);
+    return cached?.some(u => u.slug === university.slug) ?? (university.isShortlisted ?? false);
+  });
+
+  // Subscribe to shortlists cache updates reactively (enabled:false = read-only, no fetch)
+  const { data: shortlists } = useQuery({
+    queryKey: ["shortlists"],
+    queryFn: () => mobileClient.getShortlists(),
+    enabled: false,
+  });
+  useEffect(() => {
+    if (!toggling && shortlists !== undefined) {
+      setSaved(shortlists.some(u => u.slug === university.slug));
+    }
+  }, [shortlists, toggling, university.slug]);
+
+  const showImage = !imgError && !!university.logoUrl;
+  const tone = university.imageTone as Tone;
+
+  async function handleBookmark() {
+    if (toggling) return;
+    Haptics.impactAsync(saved ? Haptics.ImpactFeedbackStyle.Light : Haptics.ImpactFeedbackStyle.Medium);
+    const next = !saved;
+    setSaved(next); // optimistic
+    showToast(next ? "Added to shortlist" : "Removed from shortlist", next ? "add" : "remove");
+    onShortlistChange?.(university.slug, next);
+    setToggling(true);
+    try {
+      if (next) {
+        await mobileClient.addShortlist(university.slug);
+      } else {
+        await mobileClient.removeShortlist(university.slug);
+      }
+      queryClient.invalidateQueries({ queryKey: ["shortlists"] });
+      queryClient.invalidateQueries({ queryKey: ["dashboard"] });
+    } catch {
+      setSaved(!next); // revert on error
+      onShortlistChange?.(university.slug, !next);
+    } finally {
+      setToggling(false);
+    }
+  }
 
   return (
     <Pressable
-      onPress={() => router.push(`/university/${university.slug}`)}
-      style={({ pressed }) => [styles.card, pressed && styles.pressed]}
+      onPress={() => {
+        Haptics.selectionAsync();
+        router.push(`/university/${university.slug}`);
+      }}
+      style={({ pressed }) => [s.card, pressed && s.pressed]}
     >
-      <View style={[styles.visual, { backgroundColor: toneColors[university.imageTone] }]}>
-        <Ionicons name="school" size={28} color={colors.primary} />
-      </View>
-      <View style={styles.body}>
-        <View style={styles.header}>
-          <Text style={styles.name} numberOfLines={2}>
-            {university.name}
-          </Text>
-          <Ionicons name="bookmark" size={18} color={colors.coral} />
+      {/* ── Visual ── */}
+      {showImage ? (
+        <View style={s.visual}>
+          <Image
+            source={{ uri: university.logoUrl! }}
+            style={s.logo}
+            resizeMode="contain"
+            onError={() => setImgError(true)}
+          />
         </View>
-        <Text style={styles.meta}>
-          {university.city}, {university.country}
-        </Text>
-        <View style={styles.footer}>
-          <Text style={styles.fee}>${university.tuitionUsd.toLocaleString()}/yr</Text>
-          <Text style={styles.badge}>{university.medium}</Text>
+      ) : (
+        <LinearGradient
+          colors={TONE_GRADIENT[tone]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={s.visual}
+        >
+          <Text style={s.initials}>{getInitials(university.name)}</Text>
+        </LinearGradient>
+      )}
+
+      {/* ── Body ── */}
+      <View style={s.body}>
+        <View style={s.nameRow}>
+          <Text style={s.name} numberOfLines={2}>{university.name}</Text>
+
+          {/* Bookmark button */}
+          <Pressable
+            onPress={handleBookmark}
+            hitSlop={8}
+            style={[s.bookmarkBtn, saved && s.bookmarkBtnSaved]}
+          >
+            <Ionicons
+              name={saved ? "bookmark" : "bookmark-outline"}
+              size={15}
+              color={saved ? "#fff" : "rgba(255,255,255,0.7)"}
+            />
+          </Pressable>
+        </View>
+
+        <View style={s.locationRow}>
+          <Ionicons name="location-outline" size={12} color={colors.faint} />
+          <Text style={s.location} numberOfLines={1}>
+            {university.city}, {university.country}
+          </Text>
+        </View>
+
+        <View style={s.footer}>
+          <Text style={s.fee}>{formatFee(university.tuitionUsd)}</Text>
+          {university.course && (
+            <View style={s.badge}>
+              <Text style={s.badgeText}>{university.course}</Text>
+            </View>
+          )}
         </View>
       </View>
     </Pressable>
   );
 }
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
   card: {
     flexDirection: "row",
-    gap: 14,
-    borderRadius: 20,
+    alignItems: "center",
+    gap: 12,
+    borderRadius: 18,
     backgroundColor: colors.surface,
-    padding: 14,
+    padding: 12,
     borderWidth: 1,
     borderColor: colors.line,
     ...shadow,
   },
-  pressed: {
-    opacity: 0.9,
-  },
+  pressed: { opacity: 0.88, transform: [{ scale: 0.99 }] },
+
   visual: {
-    width: 78,
-    borderRadius: 16,
+    width: 64,
+    height: 64,
+    borderRadius: 14,
     alignItems: "center",
     justifyContent: "center",
+    flexShrink: 0,
+    overflow: "hidden",
   },
-  body: {
-    flex: 1,
-    gap: 7,
+  logo: { width: 48, height: 48 },
+  initials: {
+    fontFamily: "PlusJakartaSans-ExtraBold",
+    fontSize: 20,
+    color: "#fff",
+    letterSpacing: 1,
   },
-  header: {
+
+  body: { flex: 1, gap: 5 },
+
+  nameRow: {
     flexDirection: "row",
-    gap: 10,
     alignItems: "flex-start",
+    gap: 8,
   },
   name: {
     flex: 1,
+    fontFamily: "PlusJakartaSans-Bold",
+    fontSize: 14,
     color: colors.ink,
-    fontSize: 16,
-    lineHeight: 21,
-    fontWeight: "800",
+    lineHeight: 20,
   },
-  meta: {
-    color: colors.muted,
-    fontSize: 13,
+
+  bookmarkBtn: {
+    width: 30,
+    height: 30,
+    borderRadius: 9,
+    backgroundColor: colors.ink,
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: 0,
+    marginTop: -1,
+  },
+  bookmarkBtnSaved: {
+    backgroundColor: colors.coral,
+  },
+
+  locationRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 3,
+  },
+  location: {
+    fontFamily: "PlusJakartaSans-Regular",
+    fontSize: 12,
+    color: colors.faint,
+    flex: 1,
   },
   footer: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+    marginTop: 2,
   },
   fee: {
+    fontFamily: "PlusJakartaSans-Bold",
+    fontSize: 13,
     color: colors.primary,
-    fontSize: 14,
-    fontWeight: "900",
   },
   badge: {
-    overflow: "hidden",
-    borderRadius: 999,
     backgroundColor: colors.primarySoft,
+    borderRadius: 6,
+    paddingHorizontal: 7,
+    paddingVertical: 3,
+  },
+  badgeText: {
+    fontFamily: "PlusJakartaSans-Bold",
+    fontSize: 10,
     color: colors.primary,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    fontSize: 12,
-    fontWeight: "800",
   },
 });

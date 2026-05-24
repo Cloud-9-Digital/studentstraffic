@@ -51,7 +51,10 @@ export function mapUniversityDetail(
     thingsToConsider: university.thingsToConsider,
     bestFitFor: university.bestFitFor,
     recognitionBadges: university.recognitionBadges,
+    recognitionLinks: university.recognitionLinks,
     teachingHospitals: university.teachingHospitals,
+    faq: university.faq,
+    admissionsContent: university.admissionsContent,
     lastVerifiedAt: university.lastVerifiedAt,
     isShortlisted,
     primaryOffering: primaryOffering
@@ -63,8 +66,12 @@ export function mapUniversityDetail(
           annualTuitionUsd: primaryOffering.annualTuitionUsd,
           totalTuitionUsd: primaryOffering.totalTuitionUsd,
           livingUsd: primaryOffering.livingUsd,
+          officialProgramUrl: primaryOffering.officialProgramUrl,
           medium: primaryOffering.medium,
           intakeMonths: primaryOffering.intakeMonths,
+          yearlyCostBreakdown: primaryOffering.yearlyCostBreakdown,
+          feeNotes: primaryOffering.feeNotes,
+          licenseExamSupport: primaryOffering.licenseExamSupport,
         }
       : null,
     offerings: offerings.map((offering) => ({
@@ -75,8 +82,12 @@ export function mapUniversityDetail(
       annualTuitionUsd: offering.annualTuitionUsd,
       totalTuitionUsd: offering.totalTuitionUsd,
       livingUsd: offering.livingUsd,
+      officialProgramUrl: offering.officialProgramUrl,
       medium: offering.medium,
       intakeMonths: offering.intakeMonths,
+      yearlyCostBreakdown: offering.yearlyCostBreakdown,
+      feeNotes: offering.feeNotes,
+      licenseExamSupport: offering.licenseExamSupport,
     })),
   };
 }
