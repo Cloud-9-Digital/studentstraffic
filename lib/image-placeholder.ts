@@ -1,33 +1,18 @@
 /**
- * Generate a simple blur placeholder for Next.js Image
- * Creates a tiny base64-encoded SVG for instant blur effect
+ * Tiny blur placeholders for Next.js Image components
+ * Pre-encoded base64 SVGs to avoid runtime Buffer usage
  */
-
-export function getImageBlurDataURL(width = 8, height = 8): string {
-  // Create a simple gradient blur placeholder
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}">
-      <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#1a4a43;stop-opacity:1" />
-          <stop offset="45%" style="stop-color:#0f3d37;stop-opacity:1" />
-          <stop offset="100%" style="stop-color:#7c2610;stop-opacity:1" />
-        </linearGradient>
-      </defs>
-      <rect width="${width}" height="${height}" fill="url(#grad)" />
-    </svg>
-  `.trim();
-
-  const base64 = Buffer.from(svg).toString("base64");
-  return `data:image/svg+xml;base64,${base64}`;
-}
 
 /**
- * Get blur placeholder for university cover images
+ * Blur placeholder for university cover images
+ * A 8x8 gradient matching the university card design
  */
-export const universityImageBlurDataURL = getImageBlurDataURL(320, 180);
+export const universityImageBlurDataURL =
+  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4IDgiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzFhNGE0MyIvPjxzdG9wIG9mZnNldD0iNDUlIiBzdHlsZT0ic3RvcC1jb2xvcjojMGYzZDM3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojN2MyNjEwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjgiIGhlaWdodD0iOCIgZmlsbD0idXJsKCNnKSIvPjwvc3ZnPg==";
 
 /**
- * Get blur placeholder for university logos
+ * Blur placeholder for university logos
+ * A 40x40 white square for logo backgrounds
  */
-export const universityLogoBlurDataURL = getImageBlurDataURL(40, 40);
+export const universityLogoBlurDataURL =
+  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmIi8+PC9zdmc+";
