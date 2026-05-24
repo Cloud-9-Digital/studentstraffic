@@ -1,0 +1,58 @@
+import { MD3LightTheme } from "react-native-paper";
+
+const fonts = {
+  displayLarge:  { fontFamily: "Fraunces-SemiBold",       fontSize: 57, lineHeight: 64, letterSpacing: -0.25, fontWeight: "400" as const },
+  displayMedium: { fontFamily: "Fraunces-SemiBold",       fontSize: 45, lineHeight: 52, letterSpacing: 0,     fontWeight: "400" as const },
+  displaySmall:  { fontFamily: "Fraunces-Regular",        fontSize: 36, lineHeight: 44, letterSpacing: 0,     fontWeight: "400" as const },
+  headlineLarge: { fontFamily: "Fraunces-SemiBold",       fontSize: 32, lineHeight: 40, letterSpacing: 0,     fontWeight: "400" as const },
+  headlineMedium:{ fontFamily: "Fraunces-Regular",        fontSize: 28, lineHeight: 36, letterSpacing: 0,     fontWeight: "400" as const },
+  headlineSmall: { fontFamily: "Fraunces-Regular",        fontSize: 24, lineHeight: 32, letterSpacing: 0,     fontWeight: "400" as const },
+  titleLarge:    { fontFamily: "PlusJakartaSans-Bold",    fontSize: 22, lineHeight: 28, letterSpacing: 0,     fontWeight: "400" as const },
+  titleMedium:   { fontFamily: "PlusJakartaSans-SemiBold",fontSize: 16, lineHeight: 24, letterSpacing: 0.15,  fontWeight: "500" as const },
+  titleSmall:    { fontFamily: "PlusJakartaSans-Medium",  fontSize: 14, lineHeight: 20, letterSpacing: 0.1,   fontWeight: "500" as const },
+  bodyLarge:     { fontFamily: "PlusJakartaSans-Regular", fontSize: 16, lineHeight: 24, letterSpacing: 0.5,   fontWeight: "400" as const },
+  bodyMedium:    { fontFamily: "PlusJakartaSans-Regular", fontSize: 14, lineHeight: 20, letterSpacing: 0.25,  fontWeight: "400" as const },
+  bodySmall:     { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, lineHeight: 16, letterSpacing: 0.4,   fontWeight: "400" as const },
+  labelLarge:    { fontFamily: "PlusJakartaSans-Bold",    fontSize: 14, lineHeight: 20, letterSpacing: 0.1,   fontWeight: "500" as const },
+  labelMedium:   { fontFamily: "PlusJakartaSans-SemiBold",fontSize: 12, lineHeight: 16, letterSpacing: 0.5,   fontWeight: "500" as const },
+  labelSmall:    { fontFamily: "PlusJakartaSans-Medium",  fontSize: 11, lineHeight: 16, letterSpacing: 0.5,   fontWeight: "500" as const },
+};
+
+export const paperTheme = {
+  ...MD3LightTheme,
+  fonts: {
+    ...MD3LightTheme.fonts,
+    ...fonts,
+  },
+  colors: {
+    ...MD3LightTheme.colors,
+    primary:              "#0f3d37",
+    onPrimary:            "#ffffff",
+    primaryContainer:     "#e7f3ef",
+    onPrimaryContainer:   "#0f3d37",
+    secondary:            "#d95f38",
+    onSecondary:          "#ffffff",
+    secondaryContainer:   "#fff0e9",
+    onSecondaryContainer: "#9a3412",
+    tertiary:             "#7ccfbf",
+    onTertiary:           "#0f3d37",
+    background:           "#f7faf8",
+    onBackground:         "#0f1f1c",
+    surface:              "#ffffff",
+    onSurface:            "#0f1f1c",
+    surfaceVariant:       "#e7f3ef",
+    onSurfaceVariant:     "#65736f",
+    outline:              "rgba(0,0,0,0.10)",
+    outlineVariant:       "rgba(0,0,0,0.06)",
+    error:                "#c75a43",
+    onError:              "#ffffff",
+    elevation: {
+      level0: "transparent",
+      level1: "#f2f8f5",
+      level2: "#edf5f1",
+      level3: "#e7f3ef",
+      level4: "#e5f2ed",
+      level5: "#e2f0ea",
+    },
+  },
+};

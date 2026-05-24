@@ -893,6 +893,32 @@ export const sessions = pgTable("sessions", {
   expires: timestamp("expires", { mode: "date" }).notNull(),
 });
 
+export const mobileSessions = pgTable(
+  "mobile_sessions",
+  {
+    id: varchar("id", { length: 255 }).primaryKey().$defaultFn(() => crypto.randomUUID()),
+    userId: varchar("user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    tokenHash: varchar("token_hash", { length: 255 }).notNull(),
+    tokenPrefix: varchar("token_prefix", { length: 16 }).notNull(),
+    deviceName: varchar("device_name", { length: 255 }),
+    platform: varchar("platform", { length: 50 }),
+    appVersion: varchar("app_version", { length: 50 }),
+    pushToken: text("push_token"),
+    lastUsedAt: timestamp("last_used_at", { mode: "date" }).defaultNow().notNull(),
+    expiresAt: timestamp("expires_at", { mode: "date" }).notNull(),
+    revokedAt: timestamp("revoked_at", { mode: "date" }),
+    createdAt: timestamp("created_at", { mode: "date" }).defaultNow().notNull(),
+    updatedAt: timestamp("updated_at", { mode: "date" }).defaultNow().notNull(),
+  },
+  (table) => [
+    uniqueIndex("mobile_sessions_token_hash_idx").on(table.tokenHash),
+    index("mobile_sessions_user_idx").on(table.userId),
+    index("mobile_sessions_expires_idx").on(table.expiresAt),
+  ]
+);
+
 export const verificationTokens = pgTable(
   "verification_tokens",
   {
@@ -955,6 +981,7 @@ export type UserRow = typeof users.$inferSelect;
 export type UserInsert = typeof users.$inferInsert;
 export type AccountRow = typeof accounts.$inferSelect;
 export type SessionRow = typeof sessions.$inferSelect;
+export type MobileSessionRow = typeof mobileSessions.$inferSelect;
 export type UserShortlistRow = typeof userShortlists.$inferSelect;
 export type UserShortlistInsert = typeof userShortlists.$inferInsert;
 export type ApplicationRow = typeof applications.$inferSelect;
