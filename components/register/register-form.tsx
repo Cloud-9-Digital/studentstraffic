@@ -67,22 +67,25 @@ function PasswordStrength({ password }: { password: string }) {
   );
 }
 
-function SuccessScreen() {
+function SuccessScreen({ callbackUrl }: { callbackUrl?: string | null }) {
   const router = useRouter();
   const [countdown, setCountdown] = useState(5);
+  const loginUrl = callbackUrl
+    ? `/login?callbackUrl=${encodeURIComponent(callbackUrl)}`
+    : "/login";
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCountdown((n) => {
         if (n <= 1) {
           clearInterval(interval);
-          router.push("/login");
+          router.push(loginUrl);
         }
         return n - 1;
       });
     }, 1000);
     return () => clearInterval(interval);
-  }, [router]);
+  }, [router, loginUrl]);
 
   return (
     <div className="space-y-6 py-4 text-center">
@@ -98,7 +101,7 @@ function SuccessScreen() {
       </div>
       <button
         type="button"
-        onClick={() => router.push("/login")}
+        onClick={() => router.push(loginUrl)}
         className="flex w-full items-center justify-center rounded-xl bg-[#0f3d37] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#184a43]"
       >
         Sign in now
@@ -107,7 +110,7 @@ function SuccessScreen() {
   );
 }
 
-export function RegisterForm() {
+export function RegisterForm({ callbackUrl }: { callbackUrl?: string | null }) {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -119,7 +122,7 @@ export function RegisterForm() {
   const allRulesMet = rules.every((r) => r.test(password));
 
   if (state.status === "success") {
-    return <SuccessScreen />;
+    return <SuccessScreen callbackUrl={callbackUrl} />;
   }
 
   return (

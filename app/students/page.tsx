@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { StudentsExplorer } from "@/components/site/students-explorer";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import { getAllActivePeers } from "@/lib/university-community";
+import { auth } from "@/lib/auth";
 
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Talk to Students Studying Abroad | Students Traffic",
@@ -13,10 +14,13 @@ export const metadata: Metadata = buildIndexableMetadata({
 });
 
 export default async function StudentsPage() {
-  const peers = await getAllActivePeers();
+  const [peers, session] = await Promise.all([
+    getAllActivePeers(),
+    auth(),
+  ]);
   return (
     <Suspense>
-      <StudentsExplorer peers={peers} />
+      <StudentsExplorer peers={peers} isLoggedIn={!!session?.user} />
     </Suspense>
   );
 }

@@ -160,7 +160,7 @@ function FilterPanel({
 
 // ─── Main explorer ──────────────────────────────────────────────────────────
 
-export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
+export function StudentsExplorer({ peers, isLoggedIn = false }: { peers: PeerWithUniversity[]; isLoggedIn?: boolean }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -276,9 +276,22 @@ export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
     });
   }, [peers, filters]);
 
+  // When returning from auth with ?peer=<id>, jump to the page containing that peer
+  const autoOpenPeerId = searchParams.get("peer")
+    ? parseInt(searchParams.get("peer")!, 10)
+    : null;
+
+  const effectivePage = useMemo(() => {
+    if (autoOpenPeerId !== null) {
+      const idx = filtered.findIndex((p) => p.id === autoOpenPeerId);
+      if (idx !== -1) return Math.ceil((idx + 1) / PAGE_SIZE);
+    }
+    return page;
+  }, [filtered, autoOpenPeerId, page]);
+
   const activeFilterCount = countActive(filters);
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const paginated = filtered.slice((effectivePage - 1) * PAGE_SIZE, effectivePage * PAGE_SIZE);
 
   return (
     <>
@@ -421,7 +434,12 @@ export function StudentsExplorer({ peers }: { peers: PeerWithUniversity[] }) {
                 <>
                   <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
                     {paginated.map((peer) => (
-                      <StudentCard key={peer.id} peer={peer} />
+                      <StudentCard
+                        key={peer.id}
+                        peer={peer}
+                        isLoggedIn={isLoggedIn}
+                        autoOpen={peer.id === autoOpenPeerId}
+                      />
                     ))}
                   </div>
 

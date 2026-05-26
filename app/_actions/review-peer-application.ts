@@ -46,12 +46,17 @@ export async function approvePeerApplicationAction(applicationId: number) {
 
   await db.insert(studentPeers).values({
     universityId: application.universityId,
+    countryId: application.countryId ?? null,
     fullName: application.fullName,
     photoUrl: application.photoUrl ?? null,
     courseName: application.courseName,
     currentYearOrBatch: application.currentYearOrBatch,
     contactPhone: application.phone,
     contactEmail: application.email,
+    homeState: application.homeState ?? null,
+    homeCity: application.homeCity ?? null,
+    languages: application.languages ?? null,
+    peerUserId: application.peerUserId ?? null,
     status: "active",
   });
 

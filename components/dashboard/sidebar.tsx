@@ -14,6 +14,9 @@ import {
   LogOut,
   AlertCircle,
   ExternalLink,
+  Star,
+  Users,
+  UserCog,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -54,11 +57,17 @@ function SignOutDialog({ open, onConfirm, onCancel }: { open: boolean; onConfirm
   );
 }
 
-const navItems = [
+const studentNavItems = [
   { href: "/dashboard",              icon: LayoutDashboard, label: "Overview" },
   { href: "/dashboard/shortlists",   icon: BookmarkCheck,   label: "Shortlists" },
   { href: "/dashboard/applications", icon: FileText,        label: "Applications" },
   { href: "/dashboard/settings",     icon: Settings,        label: "Settings" },
+];
+
+const peerNavItems = [
+  { href: "/dashboard/peer",          icon: Star,    label: "Overview" },
+  { href: "/dashboard/peer/students", icon: Users,   label: "My Students" },
+  { href: "/dashboard/peer/edit",     icon: UserCog, label: "Edit Profile" },
 ];
 
 function Avatar({ name, image }: { name?: string | null; image?: string | null }) {
@@ -79,7 +88,9 @@ export function DashboardSidebar() {
   const [confirmSignOut, setConfirmSignOut] = useState(false);
 
   const isActive = (href: string) =>
-    href === "/dashboard" ? pathname === "/dashboard" : pathname.startsWith(href);
+    href === "/dashboard" || href === "/dashboard/peer"
+      ? pathname === href
+      : pathname.startsWith(href);
 
   return (
     <aside className="flex w-64 shrink-0 flex-col border-r border-[#e5e7eb] bg-white h-screen sticky top-0 overflow-hidden">
@@ -91,22 +102,46 @@ export function DashboardSidebar() {
       </div>
 
       {/* Nav */}
-      <nav className="flex-1 space-y-0.5 p-3">
-        {navItems.map(({ href, icon: Icon, label }) => (
-          <Link
-            key={href}
-            href={href}
-            className={cn(
-              "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors",
-              isActive(href)
-                ? "bg-[#0f3d37] text-white"
-                : "text-[#374151] hover:bg-[#f3f4f6] hover:text-[#0f1f1c]"
-            )}
-          >
-            <Icon className={cn("size-4 shrink-0", isActive(href) ? "text-white" : "text-[#9ca3af]")} />
-            {label}
-          </Link>
-        ))}
+      <nav className="flex-1 p-3 space-y-4 overflow-y-auto">
+        {/* Student section */}
+        <div className="space-y-0.5">
+          <p className="px-3 pb-1 text-[10px] font-semibold uppercase tracking-widest text-[#9ca3af]">Student</p>
+          {studentNavItems.map(({ href, icon: Icon, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={cn(
+                "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors",
+                isActive(href)
+                  ? "bg-[#0f3d37] text-white"
+                  : "text-[#374151] hover:bg-[#f3f4f6] hover:text-[#0f1f1c]"
+              )}
+            >
+              <Icon className={cn("size-4 shrink-0", isActive(href) ? "text-white" : "text-[#9ca3af]")} />
+              {label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Guide section */}
+        <div className="space-y-0.5">
+          <p className="px-3 pb-1 text-[10px] font-semibold uppercase tracking-widest text-[#9ca3af]">Guide</p>
+          {peerNavItems.map(({ href, icon: Icon, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={cn(
+                "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors",
+                isActive(href)
+                  ? "bg-[#0f3d37] text-white"
+                  : "text-[#374151] hover:bg-[#f3f4f6] hover:text-[#0f1f1c]"
+              )}
+            >
+              <Icon className={cn("size-4 shrink-0", isActive(href) ? "text-white" : "text-[#9ca3af]")} />
+              {label}
+            </Link>
+          ))}
+        </div>
       </nav>
 
       {/* Back to site — above separator */}
@@ -193,11 +228,13 @@ export function DashboardBottomNav() {
   const pathname = usePathname();
 
   const isActive = (href: string) =>
-    href === "/dashboard" ? pathname === "/dashboard" : pathname.startsWith(href);
+    href === "/dashboard" || href === "/dashboard/peer"
+      ? pathname === href
+      : pathname.startsWith(href);
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-40 flex border-t border-[#e5e7eb] bg-white lg:hidden">
-      {navItems.map(({ href, icon: Icon, label }) => (
+      {[...studentNavItems, ...peerNavItems].map(({ href, icon: Icon, label }) => (
         <Link
           key={href}
           href={href}

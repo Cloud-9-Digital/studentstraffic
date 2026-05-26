@@ -4,11 +4,18 @@ import { redirect } from "next/navigation";
 import { GraduationCap, MessageCircle, ClipboardList } from "lucide-react";
 
 import { auth } from "@/lib/auth";
+import { getSafeCallbackPath } from "@/lib/auth/safe-callback";
 import { RegisterForm } from "@/components/register/register-form";
 
-export default async function RegisterPage() {
-  const session = await auth();
-  if (session?.user) redirect("/dashboard");
+export default async function RegisterPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ callbackUrl?: string }>;
+}) {
+  const [session, { callbackUrl }] = await Promise.all([auth(), searchParams]);
+  if (session?.user) redirect(getSafeCallbackPath(callbackUrl) ?? "/dashboard");
+
+  const safeCallback = getSafeCallbackPath(callbackUrl);
 
   return (
     <div className="flex min-h-screen">
@@ -94,11 +101,14 @@ export default async function RegisterPage() {
             <p className="mt-1 text-sm text-[#6b7280]">Start your study abroad journey today</p>
           </div>
 
-          <RegisterForm />
+          <RegisterForm callbackUrl={safeCallback} />
 
           <p className="mt-6 text-center text-sm text-[#6b7280]">
             Already have an account?{" "}
-            <Link href="/login" className="font-semibold text-[#0f3d37] hover:underline">
+            <Link
+              href={safeCallback ? `/login?callbackUrl=${encodeURIComponent(safeCallback)}` : "/login"}
+              className="font-semibold text-[#0f3d37] hover:underline"
+            >
               Sign in
             </Link>
           </p>

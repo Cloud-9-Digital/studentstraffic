@@ -1,3 +1,4 @@
+import { auth } from "@/lib/auth";
 import { getActivePeersForUniversity } from "@/lib/university-community";
 
 import { StudentCard } from "./student-card";
@@ -10,7 +11,10 @@ export async function PeersGrid({
   universityName: string;
   cols?: 1 | 2 | 3;
 }) {
-  const peers = await getActivePeersForUniversity(universitySlug);
+  const [peers, session] = await Promise.all([
+    getActivePeersForUniversity(universitySlug),
+    auth(),
+  ]);
 
   if (peers.length === 0) return null;
 
@@ -20,10 +24,12 @@ export async function PeersGrid({
     ? "grid grid-cols-2 sm:grid-cols-3 gap-3 items-stretch"
     : "grid grid-cols-1 gap-2";
 
+  const isLoggedIn = !!session?.user;
+
   return (
     <div className={gridClass}>
       {peers.map((peer) => (
-        <StudentCard key={peer.id} peer={peer} />
+        <StudentCard key={peer.id} peer={peer} isLoggedIn={isLoggedIn} />
       ))}
     </div>
   );

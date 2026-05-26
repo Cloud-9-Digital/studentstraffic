@@ -544,13 +544,17 @@ export const studentPeers = pgTable(
     homeState: text("home_state"),
     homeCity: text("home_city"),
     languages: text("languages").array(),
+    countryId: integer("country_id").references(() => countries.id, { onDelete: "set null" }),
+    peerUserId: varchar("peer_user_id", { length: 255 }).references(() => users.id, { onDelete: "set null" }),
     status: text("status").$type<StudentPeerStatus>().notNull().default("active"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
   },
   (table) => [
     index("student_peers_university_idx").on(table.universityId),
+    index("student_peers_country_idx").on(table.countryId),
     index("student_peers_status_idx").on(table.status),
+    index("student_peers_user_idx").on(table.peerUserId),
   ]
 );
 
@@ -662,6 +666,8 @@ export const studentPeerApplications = pgTable(
     photoUrl: text("photo_url"),
     proofUrl: text("proof_url").notNull(),
     message: text("message"),
+    countryId: integer("country_id").references(() => countries.id, { onDelete: "set null" }),
+    peerUserId: varchar("peer_user_id", { length: 255 }).references(() => users.id, { onDelete: "set null" }),
     status: text("status")
       .$type<StudentPeerApplicationStatus>()
       .notNull()

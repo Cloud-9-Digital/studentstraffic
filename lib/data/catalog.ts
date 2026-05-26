@@ -73,7 +73,7 @@ type CatalogSnapshot = {
   universities: University[];
   programOfferings: ProgramOffering[];
   indiaColleges: IndiaMbbsCard[];
-  joinUniversities: Array<{ id: number; name: string }>;
+  joinUniversities: Array<{ id: number; name: string; countryId: number; countryName: string }>;
   publishedPosts: BlogPostSearchMetadata[];
 };
 
@@ -316,6 +316,8 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
           .orderBy(desc(blogPosts.publishedAt)),
       ]);
 
+    const countryNamesById = new Map(countryRows.map((c) => [c.id, c.name]));
+
     const countries: Country[] = countryRows.map((country) => ({
       slug: country.slug,
       name: country.name,
@@ -450,6 +452,8 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       .map((university) => ({
         id: university.id,
         name: university.name,
+        countryId: university.countryId,
+        countryName: countryNamesById.get(university.countryId) ?? "",
       }))
       .sort((left, right) => left.name.localeCompare(right.name));
 
