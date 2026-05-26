@@ -11,6 +11,7 @@ import {
   UIManager,
   View,
 } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
 import { BlurView } from "expo-blur";
@@ -27,7 +28,7 @@ if (Platform.OS === "android" && UIManager.setLayoutAnimationEnabledExperimental
 import { mobileClient } from "../../src/api/mobileClient";
 import { useToast } from "../../src/components/Toast";
 import { colors, shadow } from "../../src/theme/tokens";
-import type { UniversityDetail } from "../../src/types/domain";
+import type { University, UniversityDetail } from "../../src/types/domain";
 
 // ── Gradient map (same as UniversityCard) ────────────────────────────────────
 
@@ -133,16 +134,53 @@ export default function UniversityDetailScreen() {
     queryKey: ["university", slug],
     queryFn: () => mobileClient.getUniversity(slug),
     enabled: Boolean(slug),
+    staleTime: 10 * 60 * 1000,
+    gcTime: 30 * 60 * 1000,
+  });
+  const { data: shortlists } = useQuery({
+    queryKey: ["shortlists"],
+    queryFn: () => mobileClient.getShortlists(),
+    enabled: false,
   });
 
-  const scrollY = useRef(new Animated.Value(0)).current;
-  const [saved, setSaved] = useState(false);
-  const [toggling, setToggling] = useState(false);
-  const [imgError, setImgError] = useState(false);
+  const scrollY    = useRef(new Animated.Value(0)).current;
+  const shimmerAnim = useRef(new Animated.Value(0)).current;
+  const [saved, setSaved]               = useState(false);
+  const [toggling, setToggling]         = useState(false);
+  const [imgError, setImgError]         = useState(false);
+  // status bar: light (white icons) over the dark hero, dark once sticky header appears
+  const [statusBarStyle, setStatusBarStyle] = useState<"light" | "dark">("light");
 
   useEffect(() => {
-    if (university) setSaved(university.isShortlisted ?? false);
-  }, [university?.isShortlisted]);
+    if (shortlists !== undefined && slug) {
+      setSaved(shortlists.some((item: University) => item.slug === slug));
+      return;
+    }
+    if (university) {
+      const cached = queryClient.getQueryData<University[]>(["shortlists"]);
+      setSaved(cached?.some((item) => item.slug === university.slug) ?? false);
+    }
+  }, [queryClient, shortlists, slug, university]);
+
+  // Shimmer loop — runs while loading
+  useEffect(() => {
+    const loop = Animated.loop(
+      Animated.sequence([
+        Animated.timing(shimmerAnim, { toValue: 1, duration: 850, useNativeDriver: true }),
+        Animated.timing(shimmerAnim, { toValue: 0, duration: 850, useNativeDriver: true }),
+      ]),
+    );
+    if (isLoading) loop.start();
+    return () => loop.stop();
+  }, [isLoading]);
+
+  // Status bar: white icons over dark hero → dark icons once white sticky header slides in
+  useEffect(() => {
+    const listenerId = scrollY.addListener(({ value }) => {
+      setStatusBarStyle(value > HERO_H - 80 ? "dark" : "light");
+    });
+    return () => scrollY.removeListener(listenerId);
+  }, [scrollY]);
 
   const HERO_H = 300;
 
@@ -168,7 +206,6 @@ export default function UniversityDetailScreen() {
       if (next) await mobileClient.addShortlist(university.slug);
       else await mobileClient.removeShortlist(university.slug);
       queryClient.invalidateQueries({ queryKey: ["shortlists"] });
-      queryClient.invalidateQueries({ queryKey: ["university", slug] });
       queryClient.invalidateQueries({ queryKey: ["dashboard"] });
     } catch {
       setSaved(!next);
@@ -177,14 +214,54 @@ export default function UniversityDetailScreen() {
     }
   }
 
-  // ── Loading ──────────────────────────────────────────────────────────────
+  // ── Loading skeleton ─────────────────────────────────────────────────────
   if (isLoading) {
+    const shimmerOpacity = shimmerAnim.interpolate({
+      inputRange: [0, 1],
+      outputRange: [0.45, 1],
+    });
     return (
-      <View style={[s.root, s.center]}>
-        <View style={s.loadingHero} />
-        <View style={s.loadingBody}>
-          {[1, 2, 3].map(i => <View key={i} style={s.loadingLine} />)}
-        </View>
+      <View style={s.root}>
+        <StatusBar style="light" />
+        <Animated.View style={{ opacity: shimmerOpacity }}>
+          {/* Hero */}
+          <View style={sk.hero} />
+          {/* Floating back + bookmark placeholder */}
+          <View style={[sk.floatBtn, { top: insets.top + 10, left: 16 }]} />
+          <View style={[sk.floatBtn, { top: insets.top + 10, right: 16 }]} />
+
+          <View style={sk.body}>
+            {/* Est. pill */}
+            <View style={sk.pill} />
+
+            {/* Recognition badges row */}
+            <View style={sk.row}>
+              {[96, 110, 82].map((w, i) => (
+                <View key={i} style={[sk.badge, { width: w }]} />
+              ))}
+            </View>
+
+            {/* 3 fact tiles */}
+            <View style={sk.factRow}>
+              {[1, 2, 3].map(i => <View key={i} style={sk.factTile} />)}
+            </View>
+
+            {/* "About" section */}
+            <View style={sk.sectionTitle} />
+            <View style={[sk.line, { width: "100%" }]} />
+            <View style={[sk.line, { width: "88%" }]} />
+            <View style={[sk.line, { width: "72%" }]} />
+
+            {/* "Why Choose" section */}
+            <View style={[sk.sectionTitle, { marginTop: 20, width: 130 }]} />
+            {[1, 2, 3].map(i => (
+              <View key={i} style={sk.bulletRow}>
+                <View style={sk.bulletDot} />
+                <View style={[sk.line, { flex: 1 }]} />
+              </View>
+            ))}
+          </View>
+        </Animated.View>
       </View>
     );
   }
@@ -220,6 +297,9 @@ export default function UniversityDetailScreen() {
 
   return (
     <View style={s.root}>
+      {/* Dynamic status bar: light over dark hero, dark once white header slides in */}
+      <StatusBar style={statusBarStyle} />
+
       {/* ── Animated sticky header ── */}
       <Animated.View style={[s.stickyHeader, { opacity: headerOpacity, paddingTop: insets.top }]} pointerEvents="box-none">
         {Platform.OS === "ios" ? (
@@ -300,6 +380,14 @@ export default function UniversityDetailScreen() {
 
         {/* ── Content ── */}
         <View style={s.content}>
+
+          {/* Established */}
+          {university.establishedYear && (
+            <View style={s.estPill}>
+              <Ionicons name="business-outline" size={13} color={colors.faint} />
+              <Text style={s.estText}>Established {university.establishedYear}</Text>
+            </View>
+          )}
 
           {/* Recognition badges */}
           {university.recognitionBadges?.length > 0 && (
@@ -586,23 +674,6 @@ export default function UniversityDetailScreen() {
             </View>
           )}
 
-          {/* Established + website */}
-          {(university.establishedYear || university.officialWebsite) && (
-            <View style={s.metaRow}>
-              {university.establishedYear && (
-                <View style={s.metaItem}>
-                  <Ionicons name="calendar-outline" size={13} color={colors.faint} />
-                  <Text style={s.metaText}>Est. {university.establishedYear}</Text>
-                </View>
-              )}
-              {university.officialWebsite && (
-                <View style={s.metaItem}>
-                  <Ionicons name="globe-outline" size={13} color={colors.faint} />
-                  <Text style={s.metaText} numberOfLines={1}>{university.officialWebsite.replace(/^https?:\/\//, "")}</Text>
-                </View>
-              )}
-            </View>
-          )}
 
         </View>
       </Animated.ScrollView>
@@ -645,6 +716,89 @@ export default function UniversityDetailScreen() {
     </View>
   );
 }
+
+// ── Skeleton styles ───────────────────────────────────────────────────────────
+
+const sk = StyleSheet.create({
+  // Hero: dark tinted rectangle matching the actual gradient feel
+  hero: {
+    width: "100%",
+    height: 300,
+    backgroundColor: "#1a2e28",
+  },
+  // Circular placeholder for floating back / bookmark buttons
+  floatBtn: {
+    position: "absolute",
+    width: 38,
+    height: 38,
+    borderRadius: 12,
+    backgroundColor: "rgba(255,255,255,0.18)",
+  },
+  body: {
+    paddingHorizontal: 20,
+    paddingTop: 14,
+    gap: 10,
+  },
+  // Est. pill
+  pill: {
+    height: 32,
+    width: 130,
+    borderRadius: 999,
+    backgroundColor: colors.line,
+  },
+  // Generic flex row
+  row: {
+    flexDirection: "row",
+    gap: 8,
+    marginTop: 4,
+  },
+  // Recognition badge placeholder
+  badge: {
+    height: 32,
+    borderRadius: 8,
+    backgroundColor: colors.line,
+  },
+  // Fact tiles row
+  factRow: {
+    flexDirection: "row",
+    gap: 10,
+    marginTop: 6,
+  },
+  factTile: {
+    flex: 1,
+    height: 88,
+    borderRadius: 16,
+    backgroundColor: colors.line,
+  },
+  // Section heading placeholder
+  sectionTitle: {
+    height: 22,
+    width: 110,
+    borderRadius: 6,
+    backgroundColor: colors.line,
+    marginTop: 18,
+    marginBottom: 10,
+  },
+  // Text line placeholder
+  line: {
+    height: 14,
+    borderRadius: 7,
+    backgroundColor: colors.line,
+  },
+  // Bullet list row
+  bulletRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+  },
+  bulletDot: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    backgroundColor: colors.line,
+    flexShrink: 0,
+  },
+});
 
 // ── Shared helper styles ──────────────────────────────────────────────────────
 
@@ -817,22 +971,6 @@ const s = StyleSheet.create({
   root: { flex: 1, backgroundColor: colors.background },
   center: { alignItems: "center", justifyContent: "center" },
 
-  // Loading skeleton
-  loadingHero: {
-    width: "100%",
-    height: 300,
-    backgroundColor: colors.line,
-  },
-  loadingBody: {
-    padding: 20,
-    gap: 14,
-    width: "100%",
-  },
-  loadingLine: {
-    height: 16,
-    borderRadius: 8,
-    backgroundColor: colors.line,
-  },
 
   missing: {
     fontFamily: "PlusJakartaSans-Regular",
@@ -963,6 +1101,24 @@ const s = StyleSheet.create({
   content: {
     paddingHorizontal: 20,
     paddingTop: 16,
+  },
+  estPill: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignSelf: "flex-start",
+    gap: 6,
+    marginTop: 2,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 999,
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.line,
+  },
+  estText: {
+    fontFamily: "PlusJakartaSans-SemiBold",
+    fontSize: 12,
+    color: colors.faint,
   },
   section: {
     marginTop: 28,

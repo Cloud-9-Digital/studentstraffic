@@ -788,16 +788,6 @@ function UniversityComparisonDetail({
             <Button asChild variant="accent">
               <Link href={finderHref}>Compare more universities</Link>
             </Button>
-            <Button asChild variant="outline">
-              <Link href={guide.left.university.officialWebsite} target="_blank" rel="noreferrer">
-                {guide.left.university.name} website
-              </Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href={guide.right.university.officialWebsite} target="_blank" rel="noreferrer">
-                {guide.right.university.name} website
-              </Link>
-            </Button>
           </div>
 
           <RelatedComparisonLinks pages={relatedPages} />

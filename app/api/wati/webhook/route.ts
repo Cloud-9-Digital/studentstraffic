@@ -1,3 +1,4 @@
+import { timingSafeEqual } from "node:crypto";
 import { and, desc, eq, inArray, isNull, ne, or } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -161,6 +162,36 @@ function getConversationId(payload: WatiWebhookPayload) {
     getString(payload.data, "conversationId"),
     getString(payload.data, "conversation_id"),
   ]);
+}
+
+function getWebhookToken(request: NextRequest) {
+  const authHeader = request.headers.get("authorization");
+  if (authHeader?.startsWith("Bearer ")) {
+    return authHeader.slice("Bearer ".length).trim() || null;
+  }
+
+  const headerToken = request.headers.get("x-wati-token");
+  if (headerToken?.trim()) {
+    return headerToken.trim();
+  }
+
+  const queryToken = request.nextUrl.searchParams.get("token");
+  return queryToken?.trim() || null;
+}
+
+function tokensMatch(input: string | null, expected: string) {
+  if (!input) {
+    return false;
+  }
+
+  const inputBuffer = Buffer.from(input);
+  const expectedBuffer = Buffer.from(expected);
+
+  if (inputBuffer.length !== expectedBuffer.length) {
+    return false;
+  }
+
+  return timingSafeEqual(inputBuffer, expectedBuffer);
 }
 
 function mapWebhookToLeadUpdate(payload: WatiWebhookPayload) {
@@ -367,8 +398,15 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
 }
 
 export async function POST(request: NextRequest) {
-  const token = request.nextUrl.searchParams.get("token");
-  if (env.watiWebhookToken && token !== env.watiWebhookToken) {
+  if (!env.watiWebhookToken) {
+    return NextResponse.json(
+      { ok: false, error: "webhook_not_configured" },
+      { status: 503 }
+    );
+  }
+
+  const token = getWebhookToken(request);
+  if (!tokensMatch(token, env.watiWebhookToken)) {
     return NextResponse.json({ ok: false, error: "unauthorized" }, { status: 401 });
   }
 

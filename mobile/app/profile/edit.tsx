@@ -11,7 +11,12 @@ import { colors } from "../../src/theme/tokens";
 export default function EditProfileScreen() {
   const router = useRouter();
   const queryClient = useQueryClient();
-  const { data: profile } = useQuery({ queryKey: ["profile"], queryFn: () => mobileClient.getProfile() });
+  const { data: profile } = useQuery({
+    queryKey: ["profile"],
+    queryFn: () => mobileClient.getProfile(),
+    staleTime: 2 * 60 * 1000,
+    gcTime: 15 * 60 * 1000,
+  });
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [neetScore, setNeetScore] = useState("");

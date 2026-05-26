@@ -26,7 +26,7 @@ export function SiteFooter() {
               Get clarity on colleges, fees, and admission steps before you decide.
             </h2>
             <p className="mt-2 max-w-xl text-sm text-white/60">
-              Our counsellors have supported Indian students and parents across Georgia, Kyrgyzstan, Uzbekistan, Russia, and Vietnam. Request counselling and get practical guidance for your NEET score, budget, and next admission step.
+              Our counsellors help Indian students and parents compare countries, shortlist universities, understand scholarships, and move forward with the right admission plan. Request counselling and get practical guidance for your profile, budget, and next step.
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-3">
@@ -63,9 +63,9 @@ export function SiteFooter() {
             </Link>
             <p className="max-w-sm text-sm leading-6 text-white/70">
               Students Traffic helps Indian students and parents explore
-              medical study-abroad options, understand the differences between
-              countries and universities, and get guidance throughout the
-              admissions journey.
+              study-abroad options, compare countries and universities, and get
+              trusted guidance through counseling, shortlisting, applications,
+              and admissions.
             </p>
             <div className="space-y-2">
               <TrackedContactLink
@@ -120,6 +120,10 @@ export function SiteFooter() {
             <ul className="space-y-2.5">
               {[
                 ...guideNav.filter((item) => item.href !== "/guides"),
+                {
+                  href: "/scholarships-for-indian-students-to-study-abroad",
+                  label: "Study Abroad Scholarships",
+                },
                 { href: "/tamil-nadu", label: "Tamil Nadu MBBS Guides" },
               ].map((item) => (
                 <li key={item.href}>

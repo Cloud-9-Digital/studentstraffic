@@ -5,8 +5,16 @@ import { usePathname } from "next/navigation";
 import { Dialog } from "radix-ui";
 import { X } from "lucide-react";
 
+import type { LeadFormProps } from "@/components/site/lead-form";
 import { LeadForm } from "@/components/site/lead-form";
 import { Button } from "@/components/ui/button";
+
+// Reads pathname at the moment the dialog opens (client-only) so the
+// usePathname() call never runs during static prerendering.
+function DialogLeadForm(props: Omit<LeadFormProps, "sourcePath">) {
+  const pathname = usePathname();
+  return <LeadForm sourcePath={pathname} {...props} />;
+}
 
 export function CounsellingDialog({
   triggerContent,
@@ -16,9 +24,10 @@ export function CounsellingDialog({
   plainTrigger = false,
   onTriggerClick,
   title = "Request your admissions counselling call",
-  description = "Leave your number and we will call you with college options based on your NEET score, budget, and country preference. Parents are welcome on the call.",
+  description = "Leave your number and we will call you with guidance on countries, universities, scholarships, and the next admission step that fits your profile. Parents are welcome on the call.",
   submitLabel,
   ctaVariant = "header_dialog",
+  formVariant = "mbbs",
   countrySlug,
   courseSlug,
   notes,
@@ -33,12 +42,12 @@ export function CounsellingDialog({
   description?: string;
   submitLabel?: string;
   ctaVariant?: string;
+  formVariant?: "mbbs" | "scholarship";
   countrySlug?: string;
   courseSlug?: string;
   notes?: string;
 }) {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
   const contentId = useId();
 
   const openDialog = () => {
@@ -81,7 +90,7 @@ export function CounsellingDialog({
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 duration-200" />
         <Dialog.Content
           id={contentId}
-          className="fixed left-1/2 top-1/2 z-50 w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-xl bg-background p-6 shadow-dialog outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200"
+          className="fixed left-1/2 top-1/2 z-50 max-h-[min(88vh,760px)] w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-xl bg-background p-6 shadow-dialog outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200"
         >
           <div className="mb-5 flex items-start justify-between gap-4">
             <div>
@@ -97,12 +106,13 @@ export function CounsellingDialog({
             </Dialog.Close>
           </div>
 
-          <LeadForm
-            sourcePath={pathname}
+          <DialogLeadForm
+            key={`${ctaVariant}:${formVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}`}
             ctaVariant={ctaVariant}
             submitLabel={submitLabel}
             countrySlug={countrySlug}
             courseSlug={courseSlug}
+            formVariant={formVariant}
             notes={notes}
             embedded
             stacked

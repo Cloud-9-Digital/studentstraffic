@@ -9,6 +9,7 @@ import * as Haptics from "expo-haptics";
 import type { University } from "../types/domain";
 import { mobileClient } from "../api/mobileClient";
 import { useToast } from "./Toast";
+import { useCompare } from "../context/CompareContext";
 import { colors, shadow } from "../theme/tokens";
 
 type Tone = "green" | "blue" | "coral";
@@ -41,6 +42,8 @@ export function UniversityCard({ university, onShortlistChange }: Props) {
   const router = useRouter();
   const queryClient = useQueryClient();
   const { showToast } = useToast();
+  const { add: compareAdd, remove: compareRemove, isIn: compareIsIn, items: compareItems } = useCompare();
+  const inCompare = compareIsIn(university.slug);
   const [imgError, setImgError] = useState(false);
   const [toggling, setToggling] = useState(false);
 
@@ -123,18 +126,42 @@ export function UniversityCard({ university, onShortlistChange }: Props) {
         <View style={s.nameRow}>
           <Text style={s.name} numberOfLines={2}>{university.name}</Text>
 
-          {/* Bookmark button */}
-          <Pressable
-            onPress={handleBookmark}
-            hitSlop={8}
-            style={[s.bookmarkBtn, saved && s.bookmarkBtnSaved]}
-          >
-            <Ionicons
-              name={saved ? "bookmark" : "bookmark-outline"}
-              size={15}
-              color={saved ? "#fff" : "rgba(255,255,255,0.7)"}
-            />
-          </Pressable>
+          <View style={s.actionBtns}>
+            {/* Compare toggle — always visible */}
+            <Pressable
+              onPress={() => {
+                Haptics.selectionAsync();
+                if (inCompare) {
+                  compareRemove(university.slug);
+                } else if (compareItems.length < 3) {
+                  compareAdd({ slug: university.slug, name: university.name, country: university.country, tuitionUsd: university.tuitionUsd });
+                } else {
+                  showToast("Max 3 universities to compare", "remove");
+                }
+              }}
+              hitSlop={8}
+              style={[s.compareBtn, inCompare && s.compareBtnActive]}
+            >
+              <Ionicons
+                name={inCompare ? "git-compare" : "git-compare-outline"}
+                size={14}
+                color={inCompare ? colors.primary : "rgba(255,255,255,0.7)"}
+              />
+            </Pressable>
+
+            {/* Bookmark button */}
+            <Pressable
+              onPress={handleBookmark}
+              hitSlop={8}
+              style={[s.bookmarkBtn, saved && s.bookmarkBtnSaved]}
+            >
+              <Ionicons
+                name={saved ? "bookmark" : "bookmark-outline"}
+                size={15}
+                color={saved ? "#fff" : "rgba(255,255,255,0.7)"}
+              />
+            </Pressable>
+          </View>
         </View>
 
         <View style={s.locationRow}>
@@ -194,6 +221,23 @@ const s = StyleSheet.create({
     flexDirection: "row",
     alignItems: "flex-start",
     gap: 8,
+  },
+  actionBtns: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
+    flexShrink: 0,
+  },
+  compareBtn: {
+    width: 28,
+    height: 28,
+    borderRadius: 8,
+    backgroundColor: colors.ink,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  compareBtnActive: {
+    backgroundColor: colors.primarySoft,
   },
   name: {
     flex: 1,

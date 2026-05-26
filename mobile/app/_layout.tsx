@@ -25,6 +25,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { colors } from "../src/theme/tokens";
 import { paperTheme } from "../src/theme/paper-theme";
 import { ToastProvider } from "../src/components/Toast";
+import { CompareProvider } from "../src/context/CompareContext";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -44,7 +45,13 @@ export default function RootLayout() {
 
   const [queryClient] = useState(
     () => new QueryClient({
-      defaultOptions: { queries: { staleTime: 60_000, retry: 1 } },
+      defaultOptions: {
+        queries: {
+          staleTime: 30_000,
+          gcTime: 15 * 60_000,
+          retry: 1,
+        },
+      },
     })
   );
 
@@ -70,6 +77,7 @@ export default function RootLayout() {
           }}
         >
           <ToastProvider>
+            <CompareProvider>
             <StatusBar style="dark" />
             <Stack
               screenOptions={{
@@ -86,7 +94,20 @@ export default function RootLayout() {
                   contentStyle: { backgroundColor: "transparent" },
                 }}
               />
+              <Stack.Screen
+                name="country/[slug]"
+                options={{ animation: "slide_from_right" }}
+              />
+              <Stack.Screen
+                name="neet-match"
+                options={{
+                  presentation: "modal",
+                  animation: "slide_from_bottom",
+                  contentStyle: { backgroundColor: "transparent" },
+                }}
+              />
             </Stack>
+            </CompareProvider>
           </ToastProvider>
         </PaperProvider>
       </SafeAreaProvider>

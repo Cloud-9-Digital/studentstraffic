@@ -1,4 +1,12 @@
 const countryHeroImages: Record<string, { url: string; alt: string }> = {
+  australia: {
+    url: "/images/countries/australia-hero.webp",
+    alt: "University-style campus building in Australia",
+  },
+  germany: {
+    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1779736142/studentstraffic/countries/germany-scholarship-hero.jpg",
+    alt: "Students celebrating a study abroad scholarship outcome for Germany",
+  },
   russia: {
     url: "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=900&q=85",
     alt: "Saint Basil's Cathedral, Moscow, Russia",

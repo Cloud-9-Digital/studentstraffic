@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { signIn } from "next-auth/react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { Loader2, Eye, EyeOff } from "lucide-react";
 import { toast } from "sonner";
 
@@ -11,10 +11,8 @@ const inputClass =
 
 const labelClass = "block text-xs font-medium text-[#374151] mb-1.5";
 
-export function LoginForm() {
+export function LoginForm({ callbackUrl }: { callbackUrl: string }) {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl");
 
   const [loginPending, setLoginPending] = useState(false);
   const [googlePending, setGooglePending] = useState(false);
@@ -23,7 +21,7 @@ export function LoginForm() {
 
   async function handleGoogleSignIn() {
     setGooglePending(true);
-    await signIn("google", { callbackUrl: callbackUrl ?? "/dashboard" });
+    await signIn("google", { callbackUrl });
   }
 
   async function handleLogin(e: React.FormEvent<HTMLFormElement>) {
@@ -47,7 +45,7 @@ export function LoginForm() {
     }
 
     startTransition(() => {
-      router.replace(result.url ?? callbackUrl ?? "/dashboard");
+      router.replace(result.url ?? callbackUrl);
       router.refresh();
     });
   }

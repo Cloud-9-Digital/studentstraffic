@@ -11,6 +11,25 @@ export function mobileJson<T>(data: T, init?: ResponseInit) {
   });
 }
 
+export function mobilePublicJson<T>(
+  data: T,
+  init?: ResponseInit & {
+    sMaxAge?: number;
+    staleWhileRevalidate?: number;
+  }
+) {
+  const sMaxAge = init?.sMaxAge ?? 300;
+  const staleWhileRevalidate = init?.staleWhileRevalidate ?? 86_400;
+
+  return NextResponse.json(data, {
+    ...init,
+    headers: {
+      "Cache-Control": `public, s-maxage=${sMaxAge}, stale-while-revalidate=${staleWhileRevalidate}`,
+      ...init?.headers,
+    },
+  });
+}
+
 export function mobileError(
   code: string,
   message: string,

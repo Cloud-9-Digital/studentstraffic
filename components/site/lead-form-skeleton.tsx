@@ -3,8 +3,8 @@ import { cn } from "@/lib/utils";
 
 export function LeadFormSkeleton({
   embedded = false,
-  title = "Talk to an admissions counsellor",
-  description = "Leave your number and our team will call you with college options that fit your NEET score, budget, and country preference. Parents can join the call too.",
+  title = "Talk to a Students Traffic counsellor",
+  description = "Leave your number and our team will call you with guidance on country options, scholarships, shortlisting, and the next admission step that fits your profile. Parents can join the call too.",
   className,
 }: {
   embedded?: boolean;

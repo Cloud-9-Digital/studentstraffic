@@ -17,6 +17,8 @@ import { useRouter } from "expo-router";
 import { useEffect, useRef, useState } from "react";
 import * as Haptics from "expo-haptics";
 
+import { StatusBar } from "expo-status-bar";
+
 import { mobileClient } from "../../src/api/mobileClient";
 import { colors, shadow } from "../../src/theme/tokens";
 
@@ -232,6 +234,22 @@ export default function ProfileScreen() {
   const { data: profile } = useQuery({
     queryKey: ["profile"],
     queryFn: () => mobileClient.getProfile(),
+    staleTime: 2 * 60 * 1000,
+    gcTime: 15 * 60 * 1000,
+  });
+
+  const { data: shortlists } = useQuery({
+    queryKey: ["shortlists"],
+    queryFn: () => mobileClient.getShortlists(),
+    staleTime: 30 * 1000,
+    gcTime: 10 * 60 * 1000,
+  });
+
+  const { data: applications } = useQuery({
+    queryKey: ["applications"],
+    queryFn: () => mobileClient.getApplications(),
+    staleTime: 60 * 1000,
+    gcTime: 10 * 60 * 1000,
   });
 
   const [activeField, setActiveField] = useState<FieldConfig | null>(null);
@@ -274,6 +292,8 @@ export default function ProfileScreen() {
 
   return (
     <View style={[s.root, { backgroundColor: BG }]}>
+      {/* Dark gradient header — light status bar icons */}
+      <StatusBar style="light" />
       <ScrollView
         contentContainerStyle={{ paddingBottom: insets.bottom + 90 }}
         showsVerticalScrollIndicator={false}
@@ -301,12 +321,16 @@ export default function ProfileScreen() {
               <View style={s.statsRow}>
                 <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/shortlists"); }} style={s.statPill}>
                   <Ionicons name="bookmark" size={13} color={colors.mint} />
-                  <Text style={s.statLabel}>Shortlisted</Text>
+                  <Text style={s.statLabel}>
+                    {shortlists !== undefined ? shortlists.length : "–"} Saved
+                  </Text>
                 </Pressable>
                 <View style={s.statDot} />
                 <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/applications"); }} style={s.statPill}>
                   <Ionicons name="document-text" size={13} color={colors.mint} />
-                  <Text style={s.statLabel}>Applications</Text>
+                  <Text style={s.statLabel}>
+                    {applications !== undefined ? applications.length : "–"} Applications
+                  </Text>
                 </Pressable>
               </View>
             </View>

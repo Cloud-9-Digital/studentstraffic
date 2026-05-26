@@ -10,16 +10,18 @@ type CounsellingCtaButtonProps = {
   countrySlug?: string;
   courseSlug?: string;
   ctaVariant?: string;
+  formVariant?: "mbbs" | "scholarship";
 };
 
 export function CounsellingCtaButton({
   label,
   title = "Request your admissions counselling call",
-  description = "Leave your number and we will call you with college options based on your NEET score, budget, and country preference.",
+  description = "Leave your number and we will call you with guidance on countries, universities, scholarships, and the next admission step that fits your profile.",
   className = "rounded-full border border-border bg-background px-5 py-3 font-medium text-foreground transition hover:bg-muted",
   countrySlug,
   courseSlug,
   ctaVariant = "page-cta",
+  formVariant = "mbbs",
 }: CounsellingCtaButtonProps) {
   return (
     <CounsellingDialog
@@ -32,6 +34,7 @@ export function CounsellingCtaButton({
       ctaVariant={ctaVariant}
       countrySlug={countrySlug}
       courseSlug={courseSlug}
+      formVariant={formVariant}
     />
   );
 }

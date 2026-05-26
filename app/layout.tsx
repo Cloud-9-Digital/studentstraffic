@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 import { Suspense } from "react";
+import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 
 import { AppChrome } from "@/components/app/app-chrome";
@@ -57,11 +57,9 @@ export default function RootLayout({
         className="min-h-full bg-background text-foreground"
       >
         <Providers>
-          <Suspense fallback={null}>
-            <GoogleAnalytics />
-            <MetaPixel />
-            <AppChrome>{children}</AppChrome>
-          </Suspense>
+          <Suspense><GoogleAnalytics /></Suspense>
+          <Suspense><MetaPixel /></Suspense>
+          <AppChrome>{children}</AppChrome>
         </Providers>
         <Analytics />
         <Toaster position="top-center" />

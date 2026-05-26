@@ -39,6 +39,8 @@ export default function ShortlistsScreen() {
   const { data: shortlistData } = useQuery({
     queryKey: ["shortlists"],
     queryFn: () => mobileClient.getShortlists(),
+    staleTime: 30 * 1000,
+    gcTime: 10 * 60 * 1000,
   });
 
   // Local copy so we control when items disappear (animation)

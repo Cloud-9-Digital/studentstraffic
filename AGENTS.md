@@ -3,3 +3,7 @@
 
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
+
+## Project standards
+
+Before writing or revising admissions, scholarship, or SEO landing-page content, review `docs/project-standards.md` and follow its content, conversion, and editorial guidance.

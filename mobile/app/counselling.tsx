@@ -25,6 +25,8 @@ export default function CounsellingScreen() {
   const { data: profile } = useQuery({
     queryKey: ["profile"],
     queryFn: () => mobileClient.getProfile(),
+    staleTime: 2 * 60 * 1000,
+    gcTime: 15 * 60 * 1000,
   });
 
   const hasPhone = !!(profile?.phone?.trim());

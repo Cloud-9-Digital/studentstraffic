@@ -18,6 +18,7 @@ import * as Haptics from "expo-haptics";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { Button } from "../../src/components/Button";
+import { CountryFlag } from "../../src/components/CountryFlag";
 import { UniversityCard } from "../../src/components/UniversityCard";
 import { colors, shadow } from "../../src/theme/tokens";
 
@@ -34,7 +35,7 @@ function initials(name: string) {
   return name.split(" ").slice(0, 2).map((w) => w[0]).join("").toUpperCase();
 }
 
-const DEST_ORDER = ["vietnam", "russia", "georgia", "kyrgyzstan", "uzbekistan"];
+const DEST_ORDER = ["vietnam", "russia", "georgia", "kyrgyzstan", "uzbekistan", "india"];
 
 const COUNTRY_IMAGES: Record<string, ReturnType<typeof require>> = {
   vietnam:     require("../../assets/vietnam.jpg"),
@@ -50,6 +51,7 @@ const COUNTRY_IMAGES: Record<string, ReturnType<typeof require>> = {
   uzbekistan:  require("../../assets/uzbekistan.jpg"),
 };
 
+
 const COUNTRY_GRADIENTS: Record<string, [string, string]> = {
   vietnam:     ["#1a4a2a", "#2e7d52"],
   georgia:     ["#1a3a6b", "#2a5298"],
@@ -62,6 +64,8 @@ const COUNTRY_GRADIENTS: Record<string, [string, string]> = {
   bangladesh:  ["#1a3a6b", "#1a5276"],
   ukraine:     ["#1a4a6b", "#c69b14"],
   uzbekistan:  ["#7a4a1a", "#b06a2a"],
+  // India: saffron → green (flag colours, darkened for card background)
+  india:       ["#7a3000", "#1a5200"],
 };
 
 const FALLBACK_GRADIENTS: [string, string][] = [
@@ -71,12 +75,18 @@ const FALLBACK_GRADIENTS: [string, string][] = [
   ["#4a1a5a", "#7a2a8a"],
 ];
 
-type ActionItem = { icon: keyof typeof Ionicons.glyphMap; label: string; sub: string; gradient: [string, string] };
+type ActionItem = {
+  icon: keyof typeof Ionicons.glyphMap;
+  label: string;
+  sub: string;
+  gradient: [string, string];
+  params: Record<string, string>;
+};
 const QUICK_ACTIONS: ActionItem[] = [
-  { icon: "wallet-outline",            label: "Budget picks",    sub: "Under $5k/yr",        gradient: ["#064e3b", "#0d9467"] },
-  { icon: "shield-checkmark-outline",  label: "NMC recognised",  sub: "India-approved",      gradient: ["#0c3547", "#0e6d9e"] },
-  { icon: "language-outline",          label: "English medium",  sub: "No language barrier", gradient: ["#1e1b4b", "#3730a3"] },
-  { icon: "trophy-outline",            label: "Top ranked",      sub: "QS & WHO listed",     gradient: ["#431407", "#9a3412"] },
+  { icon: "wallet-outline",            label: "Budget picks",    sub: "Under $5k/yr",        gradient: ["#064e3b", "#0d9467"], params: { feeRange: "u5k" } },
+  { icon: "shield-checkmark-outline",  label: "NMC recognised",  sub: "India-approved",      gradient: ["#0c3547", "#0e6d9e"], params: { sort: "" } },
+  { icon: "language-outline",          label: "English medium",  sub: "No language barrier", gradient: ["#1e1b4b", "#3730a3"], params: { medium: "English" } },
+  { icon: "trophy-outline",            label: "Lowest fees",     sub: "Sort by fee",         gradient: ["#431407", "#9a3412"], params: { sort: "tuition_asc" } },
 ];
 
 const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
@@ -90,6 +100,7 @@ function DestCard({ name, slug, index, onPress }: {
   onPress: () => void;
 }) {
   const key = slug.toLowerCase();
+  const isIndia = key === "india";
   const localImage = COUNTRY_IMAGES[key];
   const gradient = COUNTRY_GRADIENTS[key] ?? FALLBACK_GRADIENTS[index % FALLBACK_GRADIENTS.length];
 
@@ -98,6 +109,7 @@ function DestCard({ name, slug, index, onPress }: {
       onPress={onPress}
       style={({ pressed }) => [s.destCard, pressed && s.destPressed]}
     >
+      {/* Dark gradient background (always present) */}
       <LinearGradient
         colors={gradient}
         start={{ x: 0, y: 0 }}
@@ -105,23 +117,16 @@ function DestCard({ name, slug, index, onPress }: {
         style={StyleSheet.absoluteFill}
       />
 
-      {/* Image or gradient background */}
-      {localImage ? (
-        <View style={s.destImageFrame}>
-          <Image
-            source={localImage}
-            style={s.destImage}
-            resizeMode="cover"
-          />
+      {/* Photo (abroad) or tricolour flag (India) */}
+      {isIndia ? (
+        <View style={s.destFlagFrame}>
+          <CountryFlag country="India" width={70} height={48} borderRadius={6} />
         </View>
-      ) : (
-        <LinearGradient
-          colors={gradient}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 1 }}
-          style={StyleSheet.absoluteFill}
-        />
-      )}
+      ) : localImage ? (
+        <View style={s.destImageFrame}>
+          <Image source={localImage} style={s.destImage} resizeMode="cover" />
+        </View>
+      ) : null}
 
       {/* Gradient footer overlay */}
       <LinearGradient
@@ -143,21 +148,27 @@ export default function HomeScreen() {
   const { data, isLoading, error } = useQuery({
     queryKey: ["dashboard"],
     queryFn: () => mobileClient.getDashboard(),
+    staleTime: 2 * 60 * 1000,
+    gcTime: 10 * 60 * 1000,
   });
 
   // Countries from the API — drives the destination cards
   const { data: searchOptions } = useQuery({
     queryKey: ["searchOptions"],
     queryFn: () => mobileClient.getUniversities({}, 1).then(r => r.options),
-    staleTime: 10 * 60 * 1000,
+    staleTime: 30 * 60 * 1000,
+    gcTime: 60 * 60 * 1000,
   });
 
   const apiSlugs = new Set((searchOptions?.countries ?? []).map(c => c.slug.toLowerCase()));
   const allCountryMap = Object.fromEntries((searchOptions?.countries ?? []).map(c => [c.slug.toLowerCase(), c]));
-  // Show pinned countries in fixed order (only if they exist in the API)
+  // Show pinned countries in fixed order; India is always appended regardless of API
   const countries = DEST_ORDER
-    .filter(slug => apiSlugs.has(slug) || COUNTRY_IMAGES[slug])
-    .map(slug => allCountryMap[slug] ?? { slug, name: slug.charAt(0).toUpperCase() + slug.slice(1) });
+    .filter(slug => slug === "india" || apiSlugs.has(slug) || COUNTRY_IMAGES[slug])
+    .map(slug => {
+      if (slug === "india") return { slug: "india", name: "India" };
+      return allCountryMap[slug] ?? { slug, name: slug.charAt(0).toUpperCase() + slug.slice(1) };
+    });
 
   if (isLoading) {
     return (
@@ -220,6 +231,23 @@ export default function HomeScreen() {
           <Text style={s.greetName}>{firstName} 👋</Text>
         </View>
 
+        {/* ── NEET Match banner ── */}
+        <Pressable
+          onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light); router.push("/neet-match"); }}
+          style={({ pressed }) => [s.neetBanner, pressed && s.neetBannerPressed]}
+        >
+          <View style={s.neetLeft}>
+            <View style={s.neetIconWrap}>
+              <Ionicons name="school-outline" size={18} color={colors.primary} />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={s.neetTitle}>Find your MBBS matches</Text>
+              <Text style={s.neetSub}>Enter your NEET score → get ranked universities</Text>
+            </View>
+          </View>
+          <Ionicons name="chevron-forward" size={16} color={colors.primary} />
+        </Pressable>
+
         {/* ── Study destinations ── */}
         {countries.length > 0 && (
           <>
@@ -245,7 +273,12 @@ export default function HomeScreen() {
                   index={i}
                   onPress={() => {
                     Haptics.selectionAsync();
-                    router.push({ pathname: "/(tabs)/search", params: { country: c.slug } });
+                    if (c.slug === "india") {
+                      // Open the Search tab pre-selected on India mode
+                      router.push({ pathname: "/(tabs)/search", params: { india: "1" } });
+                    } else {
+                      router.push({ pathname: "/country/[slug]", params: { slug: c.slug, name: c.name } });
+                    }
                   }}
                 />
               ))}
@@ -272,7 +305,7 @@ export default function HomeScreen() {
           {QUICK_ACTIONS.map((q) => (
             <Pressable
               key={q.label}
-              onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/search"); }}
+              onPress={() => { Haptics.selectionAsync(); router.push({ pathname: "/(tabs)/search", params: q.params }); }}
               style={({ pressed }) => [s.actionTile, pressed && s.actionPressed]}
             >
               <LinearGradient
@@ -341,6 +374,30 @@ const s = StyleSheet.create({
 
   scroll: { paddingHorizontal: 20 },
 
+  // NEET Match banner
+  neetBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    backgroundColor: colors.primarySoft,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: "rgba(15,61,55,0.12)",
+    padding: 14,
+    marginBottom: 22,
+    ...shadow,
+  },
+  neetBannerPressed: { opacity: 0.85 },
+  neetLeft: { flexDirection: "row", alignItems: "center", gap: 12, flex: 1 },
+  neetIconWrap: {
+    width: 38, height: 38, borderRadius: 11,
+    backgroundColor: "#fff",
+    alignItems: "center", justifyContent: "center",
+    flexShrink: 0,
+  },
+  neetTitle: { fontFamily: "PlusJakartaSans-Bold", fontSize: 13, color: colors.ink, lineHeight: 18 },
+  neetSub: { fontFamily: "PlusJakartaSans-Regular", fontSize: 11, color: colors.muted, marginTop: 2 },
+
   // Greeting
   greetBlock: { marginBottom: 20 },
   greetLine: { fontFamily: "PlusJakartaSans-Regular", fontSize: 13, color: colors.muted },
@@ -393,6 +450,16 @@ const s = StyleSheet.create({
     borderRadius: 16,
     overflow: "hidden",
     backgroundColor: "rgba(255,255,255,0.1)",
+  },
+  // Flag frame: absolute, centred, no image container needed
+  destFlagFrame: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 48,
+    alignItems: "center",
+    justifyContent: "center",
   },
   destImage: {
     width: "100%",

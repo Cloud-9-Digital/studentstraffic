@@ -330,6 +330,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: governanceLastModified,
     },
     {
+      url: absoluteUrl("/study-in-germany-with-scholarship"),
+      priority: 0.78,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/study-in-australia-for-indian-students"),
+      priority: 0.78,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/scholarships-for-indian-students-to-study-abroad"),
+      priority: 0.79,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
       url: absoluteUrl("/seminar-2026"),
       priority: 0.82,
       changeFrequency: "weekly",

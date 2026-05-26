@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -56,7 +56,7 @@ const navLinks = [
   { href: "/blog",         label: "Blog" },
 ] as const;
 
-export function SiteHeader() {
+function SiteHeaderInner() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -531,5 +531,33 @@ export function SiteHeader() {
         </div>
       </div>
     </>
+  );
+}
+
+// Minimal static shell rendered as the Suspense fallback during prerendering.
+// It matches the header's height and frosted-glass appearance so there is no
+// layout shift, but carries no interactive or pathname-dependent state.
+function SiteHeaderShell() {
+  return (
+    <header
+      className="sticky top-0 z-50 border-b border-white/60"
+      style={{
+        background: "rgba(255, 255, 255, 0.60)",
+        backdropFilter: "blur(24px) saturate(180%) brightness(1.06)",
+        WebkitBackdropFilter: "blur(24px) saturate(180%) brightness(1.06)",
+      }}
+    >
+      <div className="relative flex h-16 items-center px-4 sm:px-6 lg:px-8">
+        <SiteLogo showTagline />
+      </div>
+    </header>
+  );
+}
+
+export function SiteHeader() {
+  return (
+    <Suspense fallback={<SiteHeaderShell />}>
+      <SiteHeaderInner />
+    </Suspense>
   );
 }

@@ -24,8 +24,7 @@ export function mapFinderCardProgram(program: FinderCardProgram) {
 export function mapUniversityDetail(
   university: University,
   countryName: string | undefined,
-  offerings: ProgramOffering[],
-  isShortlisted = false
+  offerings: ProgramOffering[]
 ) {
   const primaryOffering = offerings[0];
   return {
@@ -56,7 +55,6 @@ export function mapUniversityDetail(
     faq: university.faq,
     admissionsContent: university.admissionsContent,
     lastVerifiedAt: university.lastVerifiedAt,
-    isShortlisted,
     primaryOffering: primaryOffering
       ? {
           slug: primaryOffering.slug,

@@ -43,6 +43,8 @@ export default function ApplicationsScreen() {
   const { data = [] } = useQuery({
     queryKey: ["applications"],
     queryFn: () => mobileClient.getApplications(),
+    staleTime: 60 * 1000,
+    gcTime: 10 * 60 * 1000,
   });
 
   return (

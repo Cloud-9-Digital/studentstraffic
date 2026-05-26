@@ -4,7 +4,7 @@ import { finderPageSize } from "@/lib/constants";
 import { getFinderOptions, queryFinderCardProgramsPage } from "@/lib/data/catalog";
 import { parseFinderFilters, parseFinderPage } from "@/lib/filters";
 import { mapFinderCardProgram } from "@/lib/mobile/mappers";
-import { mobileJson } from "@/lib/mobile/http";
+import { mobilePublicJson } from "@/lib/mobile/http";
 
 export async function GET(request: NextRequest) {
   const filters = parseFinderFilters(request.nextUrl.searchParams);
@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
     getFinderOptions(),
   ]);
 
-  return mobileJson({
+  return mobilePublicJson({
     universities: results.programs.map(mapFinderCardProgram),
     pagination: {
       totalItems: results.totalItems,

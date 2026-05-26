@@ -65,6 +65,7 @@ export function getUniversityCoverImage(input: UniversityMediaInput) {
 
 // ISO 3166-1 alpha-2 codes for flagcdn.com
 const COUNTRY_FLAG_CODES: Record<string, string> = {
+  germany:    "de",
   russia:     "ru",
   vietnam:    "vn",
   georgia:    "ge",

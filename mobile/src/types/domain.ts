@@ -103,6 +103,18 @@ export type StudentApplication = {
   updatedAt: string;
 };
 
+export type IndiaCollege = {
+  slug: string;
+  collegeName: string;
+  programName: string;
+  stateName: string;
+  cityName?: string;
+  managementType?: string;
+  universityName?: string;
+  yearOfInception?: number;
+  annualIntakeSeats?: number;
+};
+
 export type StudentProfile = {
   name: string;
   email: string;

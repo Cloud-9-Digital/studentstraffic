@@ -596,6 +596,7 @@ export const studyAbroadGuides = {
       leadTitle: "Want a Russia scholarship reality check?",
       leadDescription: "We can help you compare official scholarship signals, university fit, and total out-of-pocket cost before you commit.",
       notes: "Interest: MBBS in Russia with scholarship",
+      formVariant: "scholarship",
       keyTakeaways: [
   "Russia offers government-funded scholarships covering 100% tuition for MBBS through the Russian Government Scholarship Program (Rossotrudnichestvo). For 2026, approximately 15,000 scholarships are available globally, with specific quotas allocated to India (typically 50-100 medical seats annually).",
   "Full scholarships cover tuition only ($3,000-6,000/year value). Students still pay for hostel ($600-1,500/year), living expenses ($2,000-3,000/year), medical insurance ($150-300/year), and travel (₹40,000-60,000 per trip). Total 6-year cost even with scholarship: $20,000-30,000.",
@@ -687,6 +688,496 @@ export const studyAbroadGuides = {
     question: "What is the safest next step if I want MBBS in Russia with scholarship?",
     answer:
       "Get a shortlist of universities where the scholarship claim, total cost, and long-term pathway all make sense together.",
+  },
+],
+    },
+  },
+  "study-in-germany-with-scholarship": {
+    metadata: {
+  title: "Study in Germany with Scholarship | Real Funding, Costs & Eligibility",
+  description:
+    "Understand how to study in Germany with scholarship for Indian students, including what scholarships really cover, what costs remain, and how Germany funding works.",
+  path: "/study-in-germany-with-scholarship",
+  openGraphType: "article",
+  keywords: [
+    "study in germany with scholarship",
+    "germany scholarship for indian students",
+    "how to get scholarship to study in germany",
+    "scholarship in germany for international students",
+    "study in germany scholarship requirements",
+  ],
+},
+    page: {
+      path: "/study-in-germany-with-scholarship",
+      title: "Scholarships for studying in Germany",
+      updatedOn: "Updated on 25 May 2026",
+      kicker: "Germany scholarships and funding",
+      summary: "Understand the real scholarship options, total cost, and admission path for Indian students planning to study in Germany.",
+      publishedDate: "2026-05-25",
+      countrySlug: "germany",
+      courseSlug: "",
+      formVariant: "scholarship",
+      primaryHref: "/countries/germany",
+      primaryLabel: "Explore Germany universities",
+      secondaryLabel: "Get scholarship counselling",
+      leadTitle: "Need a Germany scholarship shortlist?",
+      leadDescription: "Talk to our Students Traffic counsellors for help with Germany scholarships, university shortlisting, budget planning, and starting your application. Parents can join the call too.",
+      leadSubmitLabel: "Book my counselling call",
+      notes: "Interest: Study in Germany with scholarship",
+      keyTakeaways: [
+  "Germany is attractive because affordability often starts with the system itself. Many public universities do not charge the kind of headline tuition fees students see in other countries, which makes even partial scholarship support meaningful.",
+  "Scholarships are real and valuable, especially through DAAD, foundations, and selected universities, but students should not expect every programme to offer full funding from day one. The strongest results usually come from targeted applications and a good academic profile.",
+  "A Germany plan only becomes workable when funding and visa preparation are handled together. Students still need to plan for living expenses, health insurance, semester contribution, and proof of financial means such as a blocked account or qualifying scholarship support, with official thresholds checked before applying.",
+],
+      sections: [
+  {
+    title: "Germany scholarships for Indian students: the real opportunity",
+    paragraphs: [
+      "Germany stands out because students are not relying only on scholarships to make the destination affordable. In many cases, the public-university structure itself reduces the fee burden, and scholarships then improve the overall funding picture further.",
+      "For Indian students, this makes Germany a serious option for bachelor's, master's, and research-focused pathways, especially when the goal is a respected degree with better cost control than many English-speaking high-tuition destinations.",
+    ],
+  },
+  {
+    title: "What a scholarship in Germany usually means",
+    paragraphs: [
+      "In Germany, scholarship support can mean different things depending on the provider and the level of study. It may mean a monthly stipend, partial funding, a research grant, a university award, or a programme-specific support structure rather than a dramatic 100 percent fee waiver headline.",
+      "The most important point for families is this: Germany is strong because the overall funding equation can work even when the scholarship is partial. A student with a good admit, realistic city budget, and the right financing plan may still have an excellent outcome without relying on an unrealistic 'fully free' expectation.",
+    ],
+  },
+  {
+    title: "Costs you still need to plan for",
+    bullets: [
+      "Semester contribution, even at universities where standard tuition is not the main expense.",
+      "Monthly living costs including rent, food, transport, books, and personal spending.",
+      "Health insurance, which is a core part of Germany student budgeting.",
+      "Visa financing compliance if the scholarship does not fully satisfy proof-of-funds requirements.",
+      "Possible tuition charges in some cases depending on programme type, university category, or state-level rules.",
+    ],
+  },
+  {
+    title: "Top scholarship routes students should know",
+    cards: [
+      {
+        title: "DAAD scholarships",
+        body:
+          "DAAD is the best-known official funding route for international students in Germany. It is especially important for postgraduate, doctoral, and research-oriented applicants, and it should be one of the first places serious students check.",
+      },
+      {
+        title: "Foundations and specialist funding bodies",
+        body:
+          "Germany has a strong culture of foundation-based support. Political, business-linked, and social-sector organizations can fund students with strong academics, leadership, social commitment, or subject alignment.",
+      },
+      {
+        title: "University and programme scholarships",
+        body:
+          "Some universities and individual programmes offer scholarships, fee relief, or monthly support. These opportunities become much more visible once the student has a clear shortlist rather than a broad country-level interest.",
+      },
+      {
+        title: "Exchange and mobility funding",
+        body:
+          "Students moving through exchange routes may find support through schemes such as Erasmus+. This matters more for mobility-based study than for a full independent degree path from India.",
+      },
+    ],
+  },
+  {
+    title: "Named scholarship examples worth checking",
+    cards: [
+      {
+        title: "DAAD study scholarships",
+        body:
+          "DAAD is one of the strongest official routes for international students heading to Germany, especially at master's, doctoral, and research level. The key cue is that students should search by programme type and origin country rather than assuming there is one universal DAAD scholarship for everyone.",
+      },
+      {
+        title: "Deutschlandstipendium",
+        body:
+          "The Deutschlandstipendium is a well-known scholarship worth EUR 300 per month and is typically administered through individual universities in Germany. It is generally aimed at high-performing students who are already enrolled or about to begin at a German university, so it matters most after a serious shortlist is in place.",
+      },
+      {
+        title: "Heinrich Böll Foundation",
+        body:
+          "The Heinrich Böll Foundation is a serious name for international applicants, especially graduates and doctoral candidates. A practical filter is that undergraduate entry is not the main route for international applicants, and German-language ability is part of the application reality.",
+      },
+      {
+        title: "Konrad-Adenauer-Stiftung",
+        body:
+          "Konrad-Adenauer-Stiftung supports international students and doctoral candidates with strong academic performance and visible social or civic engagement. This is the kind of scholarship students should look at if they have leadership, values-based commitment, and a profile that goes beyond grades alone.",
+      },
+    ],
+  },
+  {
+    title: "Top scholarship examples by student type",
+    cards: [
+      {
+        title: "Bachelor's applicants",
+        body:
+          "Bachelor's students should be cautious with expectations. Germany can still be a strong value destination, but scholarship depth is usually thinner at first-entry undergraduate level than many students assume. Deutschlandstipendium and university-level awards can matter here, but they usually come into play after admission or through the university itself.",
+      },
+      {
+        title: "Master's applicants",
+        body:
+          "Master's students often have the best mix of affordability and scholarship visibility in Germany. DAAD-linked opportunities, selected foundations, and program-specific awards become more realistic at this level, especially for students with strong academics and a focused application story.",
+      },
+      {
+        title: "Doctoral and research applicants",
+        body:
+          "PhD and research-track students usually see the strongest funding landscape. DAAD, foundations, university-led research environments, and supervisor-linked opportunities make Germany especially attractive for students with a serious academic or research profile.",
+      },
+      {
+        title: "Leadership and social-impact profiles",
+        body:
+          "Students with visible social engagement, leadership, political awareness, or values-driven work should actively check foundations such as Heinrich Böll Foundation or Konrad-Adenauer-Stiftung. These routes often reward the full profile, not only marks.",
+      },
+    ],
+  },
+  {
+    title: "Who has a stronger chance of getting funded",
+    bullets: [
+      "Students targeting master's, doctoral, and research pathways usually see stronger scholarship depth than students expecting automatic funding at undergraduate entry.",
+      "Strong grades, a clear academic direction, and a well-matched course shortlist improve scholarship competitiveness significantly.",
+      "A serious statement of purpose, relevant projects, research interest, internships, or work experience can make a major difference depending on the programme.",
+      "Funding success in Germany depends heavily on programme fit, not just the fact that the student wants to study in Germany.",
+    ],
+  },
+  {
+    title: "How to plan your Germany scholarship application",
+    cards: [
+      {
+        title: "1. Build the right shortlist",
+        body:
+          "Start by identifying the right course, degree level, and universities. Germany rewards students who choose well-matched programmes, not students who apply blindly to every scholarship-shaped opportunity.",
+      },
+      {
+        title: "2. Map the funding options",
+        body:
+          "Check early whether the funding route is postgraduate-focused, subject-specific, exchange-based, or university-level. This prevents wasted applications and helps you prioritize realistic options.",
+      },
+      {
+        title: "3. Prepare a competitive application file",
+        body:
+          "Germany applications often demand more than marks alone. Students should be ready with language evidence where needed, a strong CV, a focused SOP, references where required, and a financing plan that still works if decisions take time.",
+      },
+      {
+        title: "4. Keep the visa plan ready",
+        body:
+      "An admission offer is only part of the process. The student should already know how proof of funds, blocked account planning, scholarship documentation, and health insurance will be handled before the visa stage begins.",
+      },
+    ],
+  },
+  {
+    title: "Real cost of studying in Germany after scholarship",
+    paragraphs: [
+      "One of the biggest reasons Germany performs so well for Indian students is that the cost equation can remain workable even when scholarship support is only partial. The student may still be saving far more overall than they would in a high-tuition destination.",
+      "That said, families should budget honestly. A scholarship does not remove the need to think about city-wise living costs, visa preparation, and recurring expenses that continue every semester.",
+    ],
+    bullets: [
+      "Semester contribution remains part of the budget even when tuition is low or absent.",
+      "Rent is usually the single most important living-cost variable, and city choice changes the budget significantly.",
+      "Food, transport, books, and everyday costs still need monthly planning.",
+      "Health insurance remains a core expense in the Germany student budget.",
+      "Proof of financial means may still be required if the scholarship does not fully cover visa expectations.",
+    ],
+  },
+  {
+    title: "Why Germany can still be worth it without full funding",
+    paragraphs: [
+      "Germany often outperforms more expensive destinations even when the student does not win a full scholarship. The combination of a respected university system, lower structural tuition pressure, and selective funding options gives students more room to build a workable plan.",
+      "For many Indian families, the strongest outcome is not a miracle scholarship. It is a realistic Germany admit, a city that fits the budget, credible course quality, and a financing structure that stays stable through the entire degree.",
+    ],
+  },
+  {
+    title: "Who should choose Germany for scholarship-based study",
+    cards: [
+      {
+        title: "Students who care about value",
+        body:
+          "Germany is a strong fit for students who want a respected degree and a rational budget rather than a destination chosen mainly for brand glamour.",
+      },
+      {
+        title: "Students open to structured systems",
+        body:
+          "Germany rewards students who can work with formal application processes, documentation, deadlines, and a more process-driven academic environment.",
+      },
+      {
+        title: "Students targeting master's or research routes",
+        body:
+          "If the student is aiming for master's, research, or long-term academic depth, Germany usually becomes much more attractive from both scholarship and career-value perspectives.",
+      },
+      {
+        title: "Students who can think beyond tuition",
+        body:
+          "Germany suits students and families who understand that the right choice is based on total pathway value, not just a search for the biggest scholarship headline.",
+      },
+    ],
+  },
+  {
+    title: "Common mistakes that weaken scholarship chances",
+    bullets: [
+      "Assuming Germany is automatically free and failing to plan for living expenses properly.",
+      "Treating random scholarship lists as proof of actual eligibility.",
+      "Confusing exchange funding with full-degree funding routes.",
+      "Searching for scholarships before identifying the right programme and university fit.",
+      "Reaching the visa stage without a clean proof-of-financing plan.",
+    ],
+  },
+],
+      faqItems: [
+  {
+    question: "Can Indian students study in Germany on a full scholarship?",
+    answer:
+      "Sometimes, but not as a default expectation. Official Germany guidance makes it clear that scholarships exist, but full-path funding from first semester to last is not the standard outcome for most students.",
+  },
+  {
+    question: "Is Germany still affordable without a full scholarship?",
+    answer:
+      "Often yes. Germany can remain attractive because many public universities do not follow the same high-tuition model seen in other countries, although students still need to plan for semester contribution, living costs, and insurance.",
+  },
+  {
+    question: "What is the biggest hidden cost when students search for Germany scholarships?",
+    answer:
+      "Living expenses and proof of financing are the biggest reality checks. Students often focus on tuition and ignore the money they still need to show or spend for day-to-day life in Germany.",
+  },
+  {
+    question: "Is DAAD the only scholarship route for Germany?",
+    answer:
+      "No. DAAD is the best-known official route, but there are also foundations, programme-level opportunities, and some university-specific funding paths depending on the course and level of study.",
+  },
+  {
+    question: "Should I search scholarships first or universities first for Germany?",
+    answer:
+      "Start with the course and university shortlist first, then map scholarships onto that shortlist. Germany funding is too dependent on programme type and student profile to search well in reverse.",
+  },
+],
+    },
+  },
+  "study-in-australia-for-indian-students": {
+    metadata: {
+  title: "Study in Australia for Indian Students | Costs, Scholarships, Courses & Admissions",
+  description:
+    "A practical guide for Indian students planning to study in Australia, covering real costs, scholarships, admissions, work rights, and how to choose the right course and city.",
+  path: "/study-in-australia-for-indian-students",
+  openGraphType: "article",
+  keywords: [
+    "study in australia for indian students",
+    "australia education for indian students",
+    "cost of studying in australia for indian students",
+    "australia scholarships for indian students",
+    "how to study in australia from india",
+  ],
+},
+    page: {
+      path: "/study-in-australia-for-indian-students",
+      title: "Study in Australia for Indian students",
+      updatedOn: "Updated on 26 May 2026",
+      kicker: "Australia study planning",
+      summary: "Australia attracts Indian students because it combines recognised universities, English-speaking study, and strong career appeal. The real question is not whether Australia is popular. It is whether the course, city, budget, and long-term plan make sense for your profile.",
+      publishedDate: "2026-05-26",
+      countrySlug: "australia",
+      courseSlug: "",
+      primaryHref: "/countries",
+      primaryLabel: "Explore study destinations",
+      secondaryLabel: "Get Australia counselling",
+      leadTitle: "Need an Australia shortlist?",
+      leadDescription: "Talk to our Students Traffic counsellors for help choosing the right Australia course, city, university, scholarship path, and admission timeline. Parents can join the call too.",
+      leadSubmitLabel: "Book my counselling call",
+      notes: "Interest: Study in Australia for Indian students",
+      keyTakeaways: [
+  "Australia is strong for Indian students because the value equation is broader than rankings alone. Students are usually weighing university quality, English-medium learning, employability, city lifestyle, and post-study direction together.",
+  "The biggest mistake is treating Australia like a one-number decision based only on tuition. The real budget depends on course type, city, living cost, scholarship support, and how well the student plans the full pathway before applying.",
+  "Students who do best with Australia usually start with course fit and budget realism, then shortlist universities. That leads to better admission decisions than chasing brand names first and solving affordability later.",
+],
+      sections: [
+  {
+    title: "Why Australia stays high on the shortlist",
+    paragraphs: [
+      "Australia remains one of the most attractive destinations for Indian students because it offers a familiar language environment, globally recognised universities, and a broad range of courses across business, IT, engineering, health, design, and research pathways.",
+      "For many families, Australia feels easier to understand than some non-English destinations. But that should not create false simplicity. Australia can be a very strong choice when the course, budget, and long-term outcome are aligned, not just because the country is popular.",
+    ],
+  },
+  {
+    title: "Who should seriously consider Australia",
+    cards: [
+      {
+        title: "Students who want English-medium learning",
+        body:
+          "Australia is naturally attractive for students who want to study, communicate, and adapt academically in English without the extra friction of a non-English academic system.",
+      },
+      {
+        title: "Students comparing quality and employability together",
+        body:
+          "If the goal is not only a degree but also stronger academic infrastructure, industry exposure, and a more internationally legible qualification, Australia often deserves serious comparison.",
+      },
+      {
+        title: "Students ready for a premium budget destination",
+        body:
+          "Australia is not usually a low-cost country choice. It suits families who can plan carefully for tuition and living costs, or students who are balancing higher cost against long-term value and scholarship support.",
+      },
+      {
+        title: "Students with a clear course goal",
+        body:
+          "Australia works best when the student already has a direction such as business analytics, nursing, computer science, public health, engineering, education, or research. Clearer intent usually leads to better shortlisting and stronger applications.",
+      },
+    ],
+  },
+  {
+    title: "What studying in Australia usually costs",
+    paragraphs: [
+      "Australia should be treated as a premium destination in most cases. Tuition varies widely by university and programme, and living cost changes materially between cities. Sydney and Melbourne usually need a different budgeting mindset than smaller or more cost-controlled cities.",
+      "Families should avoid asking only, 'What is the fee?' The better question is, 'What is the full annual and total cost once tuition, housing, food, transport, insurance, and visa-related preparation are all included?'",
+    ],
+    bullets: [
+      "Tuition depends heavily on course type, with business, engineering, IT, design, and health pathways often sitting in different fee bands.",
+      "Living cost is a major decision factor, especially for students comparing Sydney or Melbourne with Adelaide, Perth, Brisbane, Canberra, or regional options.",
+      "Overseas student health insurance is part of the planning, not an optional extra.",
+      "Students also need to account for visa expenses, travel, deposit timing, and settling-in costs.",
+      "Scholarships can improve the equation, but most families should still budget as if some meaningful self-funding will be required.",
+    ],
+  },
+  {
+    title: "Scholarships in Australia: what students should expect",
+    paragraphs: [
+      "Australia does offer scholarships for Indian students, but the strongest planning mindset is realism. Many students will see partial tuition reduction, merit awards, or university-level support rather than a guaranteed fully funded path from the start.",
+      "That does not make scholarships unimportant. In a premium destination, even a partial award can materially change the affordability of the overall plan, especially when the student has already chosen the right course and city.",
+    ],
+    cards: [
+      {
+        title: "University merit scholarships",
+        body:
+          "Many Australia universities offer merit-based scholarships tied to academic performance, programme fit, or the student's application profile. These are often the most practical scholarships for taught-degree applicants.",
+      },
+      {
+        title: "Research-focused funding",
+        body:
+          "Students applying for research, doctoral, or higher-degree research pathways may find stronger funding depth than standard undergraduate or taught postgraduate applicants.",
+      },
+      {
+        title: "Faculty and programme-specific awards",
+        body:
+          "Some scholarships exist at course or faculty level rather than country-wide level. These become easier to identify once the shortlist is precise.",
+      },
+      {
+        title: "Government-linked prestige routes",
+        body:
+          "Certain government or prestige scholarship programmes exist, but students should treat them as highly competitive rather than as the default way to afford Australia.",
+      },
+    ],
+  },
+  {
+    title: "How admissions in Australia usually work",
+    cards: [
+      {
+        title: "1. Choose the right course first",
+        body:
+          "Australia decisions go wrong when students begin with logos instead of course fit. Start with what you want to study and what outcome you want after graduation.",
+      },
+      {
+        title: "2. Shortlist by city, budget, and profile fit",
+        body:
+          "A strong Australia shortlist balances academic fit with living cost, scholarship possibility, and admission realism. The best-ranked university is not automatically the best-fit university.",
+      },
+      {
+        title: "3. Prepare the application file",
+        body:
+          "Students usually need academic transcripts, passport, English-language evidence where required, statement materials, and any programme-specific documents such as portfolio, CV, or references.",
+      },
+      {
+        title: "4. Review offer and cost structure carefully",
+        body:
+          "Families should understand the tuition deposit, scholarship condition, refund rules, and any offer conditions before confirming the seat.",
+      },
+      {
+        title: "5. Move to visa and financial readiness",
+        body:
+          "The visa stage becomes smoother when the funding story, documentation, insurance, and genuine study plan are already well organised.",
+      },
+    ],
+  },
+  {
+    title: "Best-fit courses many Indian students consider in Australia",
+    paragraphs: [
+      "Australia is not only about one or two prestige degrees. It attracts students across academic and professional pathways, and course choice should always come before country glamour.",
+    ],
+    bullets: [
+      "Business, finance, marketing, and management pathways.",
+      "Computer science, data, AI, cybersecurity, and software-related courses.",
+      "Engineering fields including civil, mechanical, electrical, and related applied areas.",
+      "Public health, nursing, allied health, and selected clinical-adjacent study options.",
+      "Education, design, communication, and social-sciences pathways depending on the student's goals.",
+    ],
+  },
+  {
+    title: "What makes one Australia city a better choice than another",
+    paragraphs: [
+      "Students often talk about Australia as if every city offers the same academic and financial experience. In reality, city choice changes both lifestyle and affordability in major ways.",
+      "A strong counselling conversation for Australia should compare city feel, living cost pressure, course availability, travel convenience, and the student's personal comfort with pace and distance from home.",
+    ],
+    cards: [
+      {
+        title: "Premium metro appeal",
+        body:
+          "Cities such as Sydney and Melbourne attract students because of visibility, opportunity, and campus variety, but they also demand a more robust financial plan.",
+      },
+      {
+        title: "Balanced alternatives",
+        body:
+          "Cities such as Brisbane, Perth, Adelaide, and Canberra can offer a different value balance depending on the course and the student's budget expectations.",
+      },
+      {
+        title: "Regional and lower-pressure options",
+        body:
+          "Some students perform better academically and financially in less intense city environments. The right choice depends on fit, not only familiarity with famous names.",
+      },
+    ],
+  },
+  {
+    title: "Common mistakes Indian students make with Australia planning",
+    bullets: [
+      "Choosing a university mainly for brand recognition without checking whether the course itself is the right fit.",
+      "Underestimating living cost and planning only around tuition.",
+      "Assuming a scholarship will automatically make an otherwise unaffordable plan comfortable.",
+      "Applying too late and reducing both course choice and scholarship visibility.",
+      "Treating Australia as a generic destination instead of comparing cities and course structures properly.",
+    ],
+  },
+  {
+    title: "When Australia is a strong choice and when it is not",
+    paragraphs: [
+      "Australia is a strong choice when the student wants an English-speaking environment, a recognised qualification, a serious academic setup, and can support the financial plan with or without partial scholarship help.",
+      "It is not the right default answer for every family. If the student needs a low-cost destination above all else, or is choosing without clarity on course, budget, and long-term direction, a different country may fit better. Good counselling matters precisely because Australia can be excellent for the right student and unnecessarily expensive for the wrong one.",
+    ],
+  },
+  {
+    title: "How Students Traffic can help with Australia admissions",
+    paragraphs: [
+      "If you are serious about Australia, the right next step is not just downloading random university brochures. It is building a shortlist that matches your academics, budget, course goals, and scholarship reality.",
+      "Students Traffic can help you compare universities, review admission chances, map scholarship options, and plan the application and visa timeline with more structure than a generic enquiry-form process.",
+    ],
+  },
+],
+      faqItems: [
+  {
+    question: "Is Australia a good option for Indian students?",
+    answer:
+      "Yes, for the right profile. Australia is especially attractive for students who want English-medium study, recognised universities, and broad course choice, but it works best when the budget and course fit are already clear.",
+  },
+  {
+    question: "Is studying in Australia expensive for Indian students?",
+    answer:
+      "In many cases, yes. Australia should usually be treated as a premium destination, which is why tuition, city cost, scholarship support, and the full yearly budget need to be planned together.",
+  },
+  {
+    question: "Can Indian students get scholarships in Australia?",
+    answer:
+      "Yes, but many students should expect partial or merit-based support rather than guaranteed full funding. The most practical opportunities are often tied to the university or the programme shortlist.",
+  },
+  {
+    question: "Which courses are popular in Australia for Indian students?",
+    answer:
+      "Business, IT, data, engineering, nursing, public health, design, and related professional pathways are commonly explored, but the right course depends on the student's actual goals and profile.",
+  },
+  {
+    question: "What is the safest next step if I want to study in Australia?",
+    answer:
+      "Build a serious shortlist. The strongest next step is to compare course, city, cost, and scholarship fit together before paying deposits or applying widely.",
   },
 ],
     },

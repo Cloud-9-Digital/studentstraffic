@@ -1,7 +1,7 @@
-import type { StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
+import type { IndiaCollege, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
 import { clearToken, getToken, setToken } from "./tokenStore";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:3000";
+const API_URL = (process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:3000").replace(/\/$/, "");
 
 type ApiErrorBody = {
   error?: {
@@ -239,6 +239,30 @@ export const mobileClient = {
       body: JSON.stringify(input),
     });
     return toApplication(result.application);
+  },
+
+  async getIndiaColleges(
+    filters: { q?: string; state?: string; management?: string; sort?: string } = {},
+    page = 1,
+  ) {
+    const params = new URLSearchParams({ page: String(page), pageSize: "20" });
+    if (filters.q?.trim())     params.set("q",          filters.q.trim());
+    if (filters.state)         params.set("state",      filters.state);
+    if (filters.management)    params.set("management", filters.management);
+    if (filters.sort)          params.set("sort",       filters.sort);
+
+    const result = await request<{
+      colleges: IndiaCollege[];
+      totalItems: number;
+      totalPages: number;
+      hasNextPage: boolean;
+    }>(`/api/india-mbbs-finder?${params.toString()}`, { auth: false });
+
+    return {
+      colleges: result.colleges,
+      totalItems: result.totalItems,
+      hasNextPage: result.hasNextPage,
+    };
   },
 
   async requestCounselling(input: {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import { auth } from "@/lib/auth";
+import { getSafeCallbackPath } from "@/lib/auth/safe-callback";
 import { LoginForm } from "@/components/login/login-form";
 
 export default async function LoginPage({
@@ -12,9 +13,10 @@ export default async function LoginPage({
 }) {
   const session = await auth();
   const { callbackUrl, error } = await searchParams;
+  const safeCallbackUrl = getSafeCallbackPath(callbackUrl);
 
   if (session?.user) {
-    redirect(callbackUrl ?? "/dashboard");
+    redirect(safeCallbackUrl);
   }
 
   return (
@@ -117,7 +119,7 @@ export default async function LoginPage({
             </div>
           )}
 
-          <LoginForm />
+          <LoginForm callbackUrl={safeCallbackUrl} />
 
           <p className="mt-8 text-center text-xs text-[#9ca3af]">
             By continuing, you agree to our{" "}

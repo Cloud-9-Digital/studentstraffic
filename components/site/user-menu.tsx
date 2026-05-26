@@ -74,9 +74,14 @@ function Avatar({ name, image, size = 8 }: { name?: string | null; image?: strin
 export function UserMenu() {
   const { data: session, status } = useSession();
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
   const [open, setOpen] = useState(false);
   const [confirmSignOut, setConfirmSignOut] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => { setOpen(false); }, [pathname]);
 
@@ -94,7 +99,7 @@ export function UserMenu() {
     };
   }, [open]);
 
-  if (status === "loading") {
+  if (!mounted || status === "loading") {
     return <div className="size-8 animate-pulse rounded-full bg-black/8" />;
   }
 
@@ -181,9 +186,14 @@ export function UserMenu() {
 /** Compact version for mobile drawer */
 export function UserMenuMobile({ onClose }: { onClose: () => void }) {
   const { data: session, status } = useSession();
+  const [mounted, setMounted] = useState(false);
   const [confirmSignOut, setConfirmSignOut] = useState(false);
 
-  if (status === "loading") return null;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || status === "loading") return null;
 
   if (!session?.user) {
     return (

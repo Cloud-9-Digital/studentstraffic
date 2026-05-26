@@ -4,8 +4,18 @@ import { and, eq, gt, isNull } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import { mobileSessions, users, type UserRow } from "@/lib/db/schema";
+import {
+  consumeRateLimit,
+  formatRetryAfterMs,
+  getRateLimitStatus,
+  resetRateLimit,
+  type RateLimitRule,
+} from "@/lib/security/rate-limit";
 
 const MOBILE_SESSION_DAYS = 60;
+const MOBILE_LOGIN_EMAIL_LIMIT = { limit: 5, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
+const MOBILE_LOGIN_IP_LIMIT = { limit: 12, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
+const MOBILE_LOGIN_COMBO_LIMIT = { limit: 6, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
 
 export type MobileUser = Pick<
   UserRow,
@@ -31,6 +41,65 @@ function createToken() {
 
 function hashToken(token: string) {
   return createHash("sha256").update(token).digest("hex");
+}
+
+export function normalizeMobileEmail(value: string) {
+  return value.trim().toLowerCase();
+}
+
+function getMobileLoginRateLimitRules(email: string, ipAddress: string | null): RateLimitRule[] {
+  const rules: RateLimitRule[] = [
+    { scope: "mobile:auth:login:email", identifier: email, ...MOBILE_LOGIN_EMAIL_LIMIT },
+  ];
+
+  if (ipAddress) {
+    rules.push(
+      { scope: "mobile:auth:login:ip", identifier: ipAddress, ...MOBILE_LOGIN_IP_LIMIT },
+      {
+        scope: "mobile:auth:login:combo",
+        identifier: `${ipAddress}:${email}`,
+        ...MOBILE_LOGIN_COMBO_LIMIT,
+      }
+    );
+  }
+
+  return rules;
+}
+
+export async function assertMobileLoginRateLimit(email: string, ipAddress: string | null) {
+  const statuses = await Promise.all(
+    getMobileLoginRateLimitRules(email, ipAddress).map(getRateLimitStatus)
+  );
+
+  for (const status of statuses) {
+    if (!status.allowed) {
+      return `Too many sign-in attempts. Try again in ${formatRetryAfterMs(status.retryAfterMs)}.`;
+    }
+  }
+
+  return null;
+}
+
+export async function recordFailedMobileLoginAttempt(email: string, ipAddress: string | null) {
+  const statuses = await Promise.all(
+    getMobileLoginRateLimitRules(email, ipAddress).map(consumeRateLimit)
+  );
+
+  for (const status of statuses) {
+    if (!status.allowed) {
+      return `Too many sign-in attempts. Try again in ${formatRetryAfterMs(status.retryAfterMs)}.`;
+    }
+  }
+
+  return null;
+}
+
+export async function resetMobileLoginAttempts(email: string, ipAddress: string | null) {
+  await Promise.all(
+    getMobileLoginRateLimitRules(email, ipAddress).map((rule) =>
+      resetRateLimit(rule.scope, rule.identifier)
+    )
+  );
 }
 
 export async function createMobileSession(
@@ -134,7 +203,8 @@ export async function loginMobileUser(
   const db = getDb();
   if (!db) return { error: "unavailable" as const };
 
-  const [user] = await db.select().from(users).where(eq(users.email, email)).limit(1);
+  const normalizedEmail = normalizeMobileEmail(email);
+  const [user] = await db.select().from(users).where(eq(users.email, normalizedEmail)).limit(1);
   if (!user?.passwordHash) return { error: "invalid" as const };
 
   const valid = await compare(password, user.passwordHash);
@@ -155,10 +225,12 @@ export async function registerMobileUser(input: {
   const db = getDb();
   if (!db) return { error: "unavailable" as const };
 
+  const normalizedEmail = normalizeMobileEmail(input.email);
+
   const [existing] = await db
     .select({ id: users.id })
     .from(users)
-    .where(eq(users.email, input.email))
+    .where(eq(users.email, normalizedEmail))
     .limit(1);
 
   if (existing) return { error: "exists" as const };
@@ -168,7 +240,7 @@ export async function registerMobileUser(input: {
     .insert(users)
     .values({
       name: input.name,
-      email: input.email,
+      email: normalizedEmail,
       phone: input.phone,
       passwordHash,
       updatedAt: new Date(),

@@ -173,20 +173,6 @@ export function UniversityAdmissionsSection({
             russiaOfficialAuditSummary?.body ??
             "Use the university's own admissions or program page to confirm the current foreign-applicant route before you apply."
           }
-          linkHref={
-            russiaOfficialAudit?.classification === "ok"
-              ? (russiaOfficialAudit.finalUrl ??
-                russiaOfficialAudit.officialProgramUrl ??
-                primaryProgram?.offering.officialProgramUrl)
-              : (university.officialWebsite ??
-                russiaOfficialAudit?.officialProgramUrl ??
-                primaryProgram?.offering.officialProgramUrl)
-          }
-          linkLabel={
-            russiaOfficialAudit?.classification === "ok"
-              ? "Open mapped admissions page"
-              : "Open university website"
-          }
         />
         <InfoCard
           icon={<BookOpen className="size-4 text-accent" />}

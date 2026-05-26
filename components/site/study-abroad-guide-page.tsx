@@ -1,18 +1,21 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { JsonLd } from "@/components/shared/json-ld";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { LowFeeUniversitiesShowcase } from "@/components/site/low-fee-universities-showcase";
+import { getCountryHeroImage } from "@/lib/country-media";
 import {
   getBreadcrumbStructuredData,
   getFaqStructuredData,
   getStructuredDataGraph,
   getWebPageStructuredData,
 } from "@/lib/structured-data";
+import { getCountryFlagCode } from "@/lib/university-media";
 
 function slugify(text: string): string {
   return text
@@ -21,6 +24,18 @@ function slugify(text: string): string {
     .replace(/\s+/g, "-")
     .replace(/--+/g, "-")
     .trim();
+}
+
+function getCardNumber(cardTitle: string, index: number) {
+  const match = cardTitle.match(/^(\d+)\.\s*(.*)$/);
+
+  return match?.[1] ?? String(index + 1);
+}
+
+function getCardHeading(cardTitle: string) {
+  const match = cardTitle.match(/^\d+\.\s*(.*)$/);
+
+  return match?.[1] ?? cardTitle;
 }
 
 export type GuideSectionCard = {
@@ -57,7 +72,9 @@ export type StudyAbroadGuidePageProps = {
   faqItems: GuideFaq[];
   leadTitle: string;
   leadDescription: string;
+  leadSubmitLabel?: string;
   notes: string;
+  formVariant?: "mbbs" | "scholarship";
   showUniversities?: boolean;
 };
 
@@ -78,9 +95,13 @@ export function StudyAbroadGuidePage({
   faqItems,
   leadTitle,
   leadDescription,
+  leadSubmitLabel = "Request callback",
   notes,
+  formVariant = "mbbs",
   showUniversities = false,
 }: StudyAbroadGuidePageProps) {
+  const heroImage = countrySlug ? getCountryHeroImage(countrySlug) : null;
+  const hasHeroPanel = Boolean(countrySlug);
   const structuredData = getStructuredDataGraph([
     getWebPageStructuredData({
       path,
@@ -98,56 +119,81 @@ export function StudyAbroadGuidePage({
 
   return (
     <>
-      <section className="relative overflow-hidden bg-background px-6 py-20 sm:px-8 lg:px-12 lg:py-32">
+      <section className="relative overflow-hidden border-b border-border/60 bg-[linear-gradient(180deg,rgba(233,123,59,0.08)_0%,rgba(255,255,255,0.96)_18%,rgba(255,255,255,1)_100%)] px-6 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-accent/5 via-transparent to-transparent" />
+        <div className="absolute inset-x-0 top-0 -z-10 h-40 bg-[radial-gradient(circle_at_top_left,rgba(233,123,59,0.18),transparent_58%),radial-gradient(circle_at_top_right,rgba(15,61,55,0.10),transparent_52%)]" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-b from-transparent to-background/60" />
 
-        <div className="relative mx-auto max-w-5xl">
-          <div className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-accent">
-            <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-            </svg>
-            {updatedOn}
+        <div
+          className={[
+            "relative mx-auto max-w-5xl",
+            hasHeroPanel ? "lg:grid lg:max-w-6xl lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-12" : "",
+          ].join(" ")}
+        >
+          <div className="flex flex-col justify-center">
+            <div className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-accent/85">
+              {kicker}
+            </div>
+
+            <h1 className="max-w-4xl text-balance font-display text-[clamp(2.5rem,5vw,4.2rem)] font-bold tracking-tight text-foreground lg:leading-[1.02]">
+              {title}
+            </h1>
+
+            <p className="mt-5 max-w-3xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
+              {summary}
+            </p>
+
+            <div className="mt-7 flex flex-wrap gap-3">
+              <CounsellingDialog
+                triggerContent={
+                  <>
+                    {secondaryLabel}
+                    <svg className="h-5 w-5 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </>
+                }
+                triggerClassName="group inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3.5 text-base font-semibold text-background transition hover:opacity-90"
+                plainTrigger
+                title={leadTitle}
+                description={leadDescription}
+                submitLabel={leadSubmitLabel}
+                ctaVariant="seo-guide-hero"
+                formVariant={formVariant}
+                countrySlug={countrySlug}
+                courseSlug={courseSlug}
+              />
+              <Link
+                href={primaryHref}
+                className="inline-flex items-center gap-2 rounded-lg border-2 border-border px-6 py-3.5 text-base font-semibold text-foreground transition hover:bg-muted"
+              >
+                {primaryLabel}
+              </Link>
+            </div>
           </div>
 
-          <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-accent/80">
-            {kicker}
-          </div>
-
-          <h1 className="max-w-4xl font-display text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            {title}
-          </h1>
-
-          <p className="mt-8 max-w-3xl text-xl leading-relaxed text-muted-foreground">
-            {summary}
-          </p>
-
-          <div className="mt-10 flex flex-wrap gap-4">
-            <CounsellingDialog
-              triggerContent={
-                <>
-                  {secondaryLabel}
-                  <svg className="h-5 w-5 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </>
-              }
-              triggerClassName="group inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3.5 text-base font-semibold text-background transition hover:opacity-90"
-              plainTrigger
-              title={leadTitle}
-              description={leadDescription}
-              submitLabel="Request callback"
-              ctaVariant="seo-guide-hero"
-              countrySlug={countrySlug}
-              courseSlug={courseSlug}
-            />
-            <Link
-              href={primaryHref}
-              className="inline-flex items-center gap-2 rounded-lg border-2 border-border px-6 py-3.5 text-base font-semibold text-foreground transition hover:bg-muted"
-            >
-              {primaryLabel}
-            </Link>
-          </div>
+          {hasHeroPanel ? (
+            <div className="mt-8 self-center lg:mt-0">
+              <div className="overflow-hidden rounded-[1.75rem] border border-border/70 bg-background/80 shadow-[0_24px_60px_-32px_rgba(15,61,55,0.35)] backdrop-blur">
+                <div className="relative aspect-[4/4.9] overflow-hidden">
+                  {heroImage ? (
+                    <Image
+                      src={heroImage.url}
+                      alt={heroImage.alt}
+                      fill
+                      priority
+                      sizes="(min-width: 1024px) 360px, 100vw"
+                      unoptimized={heroImage.url.startsWith("/")}
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(15,61,55,0.14)_0%,rgba(233,123,59,0.12)_55%,rgba(255,255,255,0.9)_100%)]" />
+                  )}
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,61,55,0.02)_0%,rgba(15,61,55,0.18)_100%)]" />
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
       </section>
 
@@ -173,39 +219,91 @@ export function StudyAbroadGuidePage({
               </div>
             </div>
 
-            {/* Table of Contents - Compact, clean */}
-            <nav className="mt-16" aria-label="Table of contents">
-              <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                On this page
-              </h2>
-              <div className="mt-4 grid gap-2 sm:grid-cols-2">
-                {sections.map((section, idx) => (
+            {/* Table of Contents - Collapsed by default to keep the top of long pages tighter */}
+            <details className="group mt-16 rounded-xl border border-border bg-card">
+              <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 list-none">
+                <div>
+                  <h2 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    On this page
+                  </h2>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    Jump to sections without the long scroll.
+                  </p>
+                </div>
+                <svg
+                  className="h-5 w-5 flex-shrink-0 text-accent transition group-open:rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <nav
+                aria-label="Table of contents"
+                className="border-t border-border/50 px-3 py-3"
+              >
+                <div className="grid gap-2 sm:grid-cols-2">
+                  {sections.map((section, idx) => (
+                    <a
+                      key={section.title}
+                      href={`#${slugify(section.title)}`}
+                      className="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition hover:bg-muted"
+                    >
+                      <span className="text-xs font-medium text-accent">
+                        {String(idx + 1).padStart(2, "0")}
+                      </span>
+                      <span className="flex-1 text-muted-foreground group-hover:text-foreground">
+                        {section.title}
+                      </span>
+                    </a>
+                  ))}
                   <a
-                    key={section.title}
-                    href={`#${slugify(section.title)}`}
+                    href="#frequently-asked-questions"
                     className="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition hover:bg-muted"
                   >
                     <span className="text-xs font-medium text-accent">
-                      {String(idx + 1).padStart(2, "0")}
+                      {String(sections.length + 1).padStart(2, "0")}
                     </span>
                     <span className="flex-1 text-muted-foreground group-hover:text-foreground">
-                      {section.title}
+                      Frequently asked questions
                     </span>
                   </a>
-                ))}
-                <a
-                  href="#frequently-asked-questions"
-                  className="group flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition hover:bg-muted"
-                >
-                  <span className="text-xs font-medium text-accent">
-                    {String(sections.length + 1).padStart(2, "0")}
-                  </span>
-                  <span className="flex-1 text-muted-foreground group-hover:text-foreground">
-                    Frequently asked questions
-                  </span>
-                </a>
+                </div>
+              </nav>
+            </details>
+
+            {formVariant === "scholarship" ? (
+              <div className="mt-8 rounded-2xl border border-accent/20 bg-[linear-gradient(145deg,rgba(233,123,59,0.07)_0%,rgba(15,61,55,0.03)_100%)] p-5 sm:p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                  Scholarship Planning Hub
+                </p>
+                <div className="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                  <div className="max-w-2xl">
+                    <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground">
+                      Compare more scholarship routes before you decide.
+                    </h2>
+                    <p className="mt-2 text-sm leading-7 text-muted-foreground">
+                      Use our broader scholarship hub to move between Germany, Russia MBBS, and other funding-focused study abroad pages without losing the bigger planning picture.
+                    </p>
+                  </div>
+                  <Link
+                    href="/scholarships-for-indian-students-to-study-abroad"
+                    className="inline-flex items-center gap-2 self-start rounded-full border border-accent/20 bg-background px-4 py-2.5 text-sm font-semibold text-foreground transition hover:bg-muted"
+                  >
+                    Explore scholarship hub
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
               </div>
-            </nav>
+            ) : null}
 
             {sections.map((section, sectionIdx) => {
               const isEven = sectionIdx % 2 === 0;
@@ -261,13 +359,11 @@ export function StudyAbroadGuidePage({
                         >
                           {/* Number badge */}
                           <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-lg font-bold text-accent transition group-hover:bg-accent group-hover:text-white">
-                            {card.title.split(".")[0] || cardIdx + 1}
+                            {getCardNumber(card.title, cardIdx)}
                           </div>
 
                           <h3 className="font-display text-xl font-bold text-foreground">
-                            {card.title.includes(".")
-                              ? card.title.split(".").slice(1).join(".").trim()
-                              : card.title}
+                            {getCardHeading(card.title)}
                           </h3>
 
                           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
@@ -377,7 +473,8 @@ export function StudyAbroadGuidePage({
                 ctaVariant="seo-guide-inline"
                 title="Get free counselling"
                 description="Share your details and we'll call you back with a personalized shortlist."
-                submitLabel="Request callback"
+                submitLabel={leadSubmitLabel}
+                formVariant={formVariant}
                 countrySlug={countrySlug}
                 courseSlug={courseSlug}
                 notes={notes}

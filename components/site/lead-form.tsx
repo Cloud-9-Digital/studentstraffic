@@ -67,6 +67,7 @@ export type LeadFormProps = {
   submitLabel?: string;
   emailRequired?: boolean;
   notes?: string;
+  formVariant?: "mbbs" | "scholarship";
   courseSlug?: string;
   countrySlug?: string;
   universitySlug?: string;
@@ -79,11 +80,12 @@ export type LeadFormProps = {
 export function LeadForm({
   sourcePath,
   ctaVariant,
-  title = "Talk to an admissions counsellor",
-  description = "Leave your number and our team will call you with college options that fit your NEET score, budget, and country preference. Parents can join the call too.",
+  title = "Talk to a Students Traffic counsellor",
+  description = "Leave your number and our team will call you with guidance on country options, scholarships, shortlisting, and the next admission step that fits your profile. Parents can join the call too.",
   submitLabel = "Request a free counselling call",
   emailRequired = false,
   notes,
+  formVariant = "mbbs",
   courseSlug,
   countrySlug,
   universitySlug,
@@ -147,6 +149,7 @@ export function LeadForm({
       <input type="hidden" name="documentReferrer" />
       <input type="hidden" name="clientContext" defaultValue="{}" />
       <input type="hidden" name="notes" value={notes ?? ""} />
+      <input type="hidden" name="formVariant" value={formVariant} />
       <input type="hidden" name="courseSlug" value={courseSlug ?? ""} />
       <input type="hidden" name="countrySlug" value={countrySlug ?? ""} />
       <input type="hidden" name="universitySlug" value={universitySlug ?? ""} />
@@ -204,6 +207,22 @@ export function LeadForm({
           </div>
         </div>
       </div>
+
+      {formVariant === "mbbs" ? (
+        <div className="space-y-2">
+          <Label htmlFor={`${fieldPrefix}-neet`}>NEET score</Label>
+          <Input
+            id={`${fieldPrefix}-neet`}
+            name="neetScore"
+            type="number"
+            inputMode="numeric"
+            min={0}
+            max={720}
+            placeholder="Enter NEET score"
+            required
+          />
+        </div>
+      ) : null}
 
       {children}
 

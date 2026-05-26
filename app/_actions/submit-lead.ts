@@ -47,20 +47,13 @@ const leadSchema = z.object({
       message: "Please enter a valid email address.",
     }),
   userState: z.string().trim().min(2, "Please enter your state."),
-  neetScore: z
-    .string()
-    .trim()
-    .min(1, "Please enter your NEET score.")
-    .transform((value) => {
-      const parsed = parseInt(value, 10);
-      if (isNaN(parsed)) {
-        throw new Error("Invalid NEET score");
-      }
-      return parsed;
-    })
-    .refine((value) => value >= 0 && value <= 720, {
-      message: "Please enter a valid NEET score between 0 and 720.",
-    }),
+  formVariant: z.enum(["mbbs", "scholarship"]).default("mbbs"),
+  neetScore: z.string().trim().optional(),
+  targetDegreeLevel: z.string().trim().optional(),
+  preferredIntake: z.string().trim().optional(),
+  currentAcademics: z.string().trim().optional(),
+  scholarshipBudgetNeed: z.string().trim().optional(),
+  preferredCourse: z.string().trim().optional(),
   courseSlug: z.string().trim().optional(),
   countrySlug: z.string().trim().optional(),
   universitySlug: z.string().trim().optional(),
@@ -85,7 +78,13 @@ export async function submitLeadAction(
     phone: getFormString(formData, "phone"),
     email: getFormString(formData, "email"),
     userState: getFormString(formData, "userState"),
+    formVariant: getFormString(formData, "formVariant") || "mbbs",
     neetScore: getFormString(formData, "neetScore"),
+    targetDegreeLevel: getFormString(formData, "targetDegreeLevel"),
+    preferredIntake: getFormString(formData, "preferredIntake"),
+    currentAcademics: getFormString(formData, "currentAcademics"),
+    scholarshipBudgetNeed: getFormString(formData, "scholarshipBudgetNeed"),
+    preferredCourse: getFormString(formData, "preferredCourse"),
     courseSlug: getFormString(formData, "courseSlug"),
     countrySlug: getFormString(formData, "countrySlug"),
     universitySlug: getFormString(formData, "universitySlug"),
@@ -110,6 +109,46 @@ export async function submitLeadAction(
   }
 
   const data = parsed.data;
+  const trimmedNeetScore = data.neetScore?.trim();
+  let neetScore: number | undefined;
+
+  if (data.formVariant === "mbbs") {
+    if (!trimmedNeetScore) {
+      return { error: "Please enter your NEET score." };
+    }
+
+    const parsedNeetScore = parseInt(trimmedNeetScore, 10);
+
+    if (isNaN(parsedNeetScore) || parsedNeetScore < 0 || parsedNeetScore > 720) {
+      return {
+        error: "Please enter a valid NEET score between 0 and 720.",
+      };
+    }
+
+    neetScore = parsedNeetScore;
+  }
+
+  const scholarshipNotes = [
+    data.formVariant === "scholarship" && data.targetDegreeLevel
+      ? `Target degree level: ${data.targetDegreeLevel}`
+      : null,
+    data.formVariant === "scholarship" && data.preferredIntake
+      ? `Preferred intake: ${data.preferredIntake}`
+      : null,
+    data.formVariant === "scholarship" && data.currentAcademics
+      ? `Current academics: ${data.currentAcademics}`
+      : null,
+    data.formVariant === "scholarship" && data.scholarshipBudgetNeed
+      ? `Scholarship or budget need: ${data.scholarshipBudgetNeed}`
+      : null,
+    data.formVariant === "scholarship" && data.preferredCourse
+      ? `Preferred course: ${data.preferredCourse}`
+      : null,
+  ].filter(Boolean);
+
+  const combinedNotes = [data.notes?.trim(), ...scholarshipNotes]
+    .filter(Boolean)
+    .join("\n");
 
   if (data.website) {
     return {
@@ -182,7 +221,7 @@ export async function submitLeadAction(
         phone: data.phone,
         email: emptyToUndefined(data.email),
         userState: data.userState,
-        neetScore: data.neetScore,
+        neetScore,
         courseSlug: emptyToUndefined(data.courseSlug),
         countrySlug: emptyToUndefined(data.countrySlug),
         universitySlug: emptyToUndefined(data.universitySlug),
@@ -196,7 +235,7 @@ export async function submitLeadAction(
         initialUtmLandingUrl: tracking.initialUtmLandingUrl,
         pageTitle: emptyToUndefined(data.pageTitle),
         ctaVariant: data.ctaVariant,
-        notes: emptyToUndefined(data.notes),
+        notes: emptyToUndefined(combinedNotes),
         documentReferrer: emptyToUndefined(data.documentReferrer),
         utmSource: tracking.utmSource,
         utmMedium: tracking.utmMedium,
@@ -232,7 +271,7 @@ export async function submitLeadAction(
         phone: data.phone,
         email: emptyToUndefined(data.email),
         userState: data.userState,
-        neetScore: data.neetScore,
+        neetScore,
         courseSlug: emptyToUndefined(data.courseSlug),
         countrySlug: emptyToUndefined(data.countrySlug),
         universitySlug: emptyToUndefined(data.universitySlug),
@@ -241,7 +280,7 @@ export async function submitLeadAction(
         sourceQuery,
         pageTitle: emptyToUndefined(data.pageTitle),
         ctaVariant: data.ctaVariant,
-        notes: emptyToUndefined(data.notes),
+        notes: emptyToUndefined(combinedNotes),
         documentReferrer: emptyToUndefined(data.documentReferrer),
         utmSource: tracking.utmSource,
         utmMedium: tracking.utmMedium,
