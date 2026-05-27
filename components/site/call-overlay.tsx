@@ -74,6 +74,13 @@ export function CallOverlay({
 
   const timer = useCallTimer(phase === "connected");
 
+  // Lock background scroll while overlay is open
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = prev; };
+  }, []);
+
   useEffect(() => {
     mountedRef.current = true;
     let cancelled = false;
@@ -172,9 +179,26 @@ export function CallOverlay({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-[#0a1f1c] px-6 py-16 sm:py-20">
+    <div
+      className="fixed inset-0 z-50 flex h-dvh flex-col items-center justify-between overflow-hidden px-6 py-14 sm:py-20"
+      style={{
+        background:
+          "radial-gradient(ellipse 80% 60% at 50% 0%, #1d6b5f33 0%, transparent 70%), linear-gradient(160deg, #0d3530 0%, #071a17 45%, #020c0b 100%)",
+      }}
+    >
+      {/* subtle noise texture overlay */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\")",
+          backgroundRepeat: "repeat",
+          backgroundSize: "128px",
+        }}
+      />
+
       {/* Top: identity */}
-      <div className="flex flex-col items-center gap-6 text-center">
+      <div className="relative flex flex-col items-center gap-6 text-center">
         {/* Avatar with pulse rings when ringing */}
         <div className="relative flex items-center justify-center">
           {phase === "ringing" && (
@@ -215,7 +239,7 @@ export function CallOverlay({
       </div>
 
       {/* Bottom: controls */}
-      <div className="flex flex-col items-center gap-10 w-full">
+      <div className="relative flex w-full flex-col items-center gap-10">
         {phase !== "ended" && phase !== "error" && (
           <div className="flex items-center gap-10">
             {/* Mute */}
