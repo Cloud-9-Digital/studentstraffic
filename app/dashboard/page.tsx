@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { eq, count, and, sql } from "drizzle-orm";
+import { eq, count } from "drizzle-orm";
 import {
   BookmarkCheck,
   FileText,
@@ -12,9 +12,7 @@ import {
 } from "lucide-react";
 
 import { auth } from "@/lib/auth";
-import { StartPeerCallCard } from "@/components/dashboard/start-peer-call-card";
 import { getDb } from "@/lib/db/server";
-import { env } from "@/lib/env";
 import {
   applications,
   peerRequests,
@@ -36,29 +34,13 @@ type PeerStatus =
   | { kind: "rejected" }
   | { kind: "none" };
 
-export default async function DashboardPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ peer?: string }>;
-}) {
+export default async function DashboardPage() {
   const session = await auth();
   const firstName = session?.user?.name?.split(" ")[0] ?? "there";
-  const { peer: requestedPeerId } = await searchParams;
 
   let shortlistCount = 0;
   let applicationCount = 0;
   let peerStatus: PeerStatus = { kind: "none" };
-  let selectedPeerForCall:
-    | {
-        id: number;
-        fullName: string;
-        universityName: string;
-        universitySlug: string;
-        courseName: string | null;
-        currentYearOrBatch: string | null;
-        canReceiveCalls: boolean;
-      }
-    | null = null;
 
   const db = getDb();
   if (db && session?.user?.id) {
@@ -113,30 +95,6 @@ export default async function DashboardPage({
           ? { kind: "rejected" }
           : { kind: "pending", universityName: app.universityName };
     }
-
-    if (env.hasAgoraVoice && requestedPeerId && /^\d+$/.test(requestedPeerId)) {
-      const [peerCandidate] = await db
-        .select({
-          id: studentPeers.id,
-          fullName: studentPeers.fullName,
-          courseName: studentPeers.courseName,
-          currentYearOrBatch: studentPeers.currentYearOrBatch,
-          universityName: universities.name,
-          universitySlug: universities.slug,
-          canReceiveCalls: sql<boolean>`${studentPeers.peerUserId} is not null`.mapWith(Boolean),
-        })
-        .from(studentPeers)
-        .innerJoin(universities, eq(studentPeers.universityId, universities.id))
-        .where(
-          and(
-            eq(studentPeers.id, Number(requestedPeerId)),
-            eq(studentPeers.status, "active")
-          )
-        )
-        .limit(1);
-
-      selectedPeerForCall = peerCandidate ?? null;
-    }
   }
 
   const stats = [
@@ -174,8 +132,6 @@ export default async function DashboardPage({
 
       {/* Guide profile section — conditional */}
       <PeerSection status={peerStatus} />
-
-      {selectedPeerForCall ? <StartPeerCallCard peer={selectedPeerForCall} /> : null}
 
       {/* Recent activity */}
       <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-sm">

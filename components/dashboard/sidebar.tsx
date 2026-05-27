@@ -17,6 +17,7 @@ import {
   Star,
   Users,
   UserCog,
+  PhoneCall,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -59,6 +60,7 @@ function SignOutDialog({ open, onConfirm, onCancel }: { open: boolean; onConfirm
 
 const studentNavItems = [
   { href: "/dashboard",              icon: LayoutDashboard, label: "Overview" },
+  { href: "/dashboard/calls",        icon: PhoneCall,       label: "My Calls" },
   { href: "/dashboard/shortlists",   icon: BookmarkCheck,   label: "Shortlists" },
   { href: "/dashboard/applications", icon: FileText,        label: "Applications" },
   { href: "/dashboard/settings",     icon: Settings,        label: "Settings" },

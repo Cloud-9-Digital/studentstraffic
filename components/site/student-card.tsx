@@ -19,6 +19,7 @@ import {
   type ConnectToPeerState,
 } from "@/app/_actions/connect-to-peer";
 import { quickConnectToPeerAction } from "@/app/_actions/quick-connect-to-peer";
+import { bookPeerCallAction } from "@/app/_actions/book-peer-call";
 import {
   Dialog,
   DialogContent,
@@ -252,7 +253,7 @@ function PeerProfileDialog({
 }) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
-  const [result, setResult] = useState<{ error?: string; success?: boolean } | null>(null);
+  const [result, setResult] = useState<{ error?: string; success?: boolean; booked?: boolean } | null>(null);
   const firstName = peer.fullName.split(" ")[0];
   const callbackUrl = encodeURIComponent(`/students?peer=${peer.id}`);
   const location = [peer.homeCity, peer.homeState].filter(Boolean).join(", ");
@@ -264,14 +265,23 @@ function PeerProfileDialog({
 
   const canStartVoiceCall = voiceCallsEnabled && peer.canReceiveCalls;
 
-  const handleVoiceCallClick = () => {
+  const handleBookCallClick = () => {
     if (!canStartVoiceCall) return;
     if (!isLoggedIn) {
-      router.push(`/login?callbackUrl=${encodeURIComponent(`/dashboard?peer=${peer.id}`)}`);
+      router.push(`/login?callbackUrl=${encodeURIComponent(`/students?peer=${peer.id}`)}`);
       return;
     }
-    onOpenChange(false);
-    router.push(`/dashboard?peer=${peer.id}`);
+    startTransition(async () => {
+      const res = await bookPeerCallAction(peer.id);
+      if (res.success) {
+        setResult({ booked: true });
+      } else if (res.alreadyBooked) {
+        router.push("/dashboard/calls");
+        onOpenChange(false);
+      } else {
+        setResult({ error: res.error ?? "Unable to book the call." });
+      }
+    });
   };
 
   const handleTalkClick = () => {
@@ -432,17 +442,33 @@ function PeerProfileDialog({
                       {result.error}
                     </p>
                   )}
-                  {canStartVoiceCall ? (
+                  {result?.booked && (
+                    <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2.5 text-xs text-emerald-800">
+                      <p className="font-semibold">Call booked!</p>
+                      <p className="mt-0.5">
+                        {firstName} is saved in your{" "}
+                        <button
+                          type="button"
+                          onClick={() => { router.push("/dashboard/calls"); onOpenChange(false); }}
+                          className="font-semibold underline"
+                        >
+                          My Calls
+                        </button>{" "}
+                        dashboard. Start the call whenever you&apos;re ready.
+                      </p>
+                    </div>
+                  )}
+                  {canStartVoiceCall && !result?.booked ? (
                     <button
                       type="button"
-                      onClick={handleVoiceCallClick}
+                      onClick={handleBookCallClick}
                       disabled={isPending}
                       className="w-full rounded-xl bg-accent py-2.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent-strong disabled:opacity-70 flex items-center justify-center gap-2"
                     >
-                      <PhoneCall className="size-4" />
+                      {isPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-4" />}
                       {isLoggedIn
-                        ? `Open call dashboard for ${firstName}`
-                        : `Sign in to call ${firstName}`}
+                        ? isPending ? "Booking…" : `Book a call with ${firstName}`
+                        : `Sign in to book a call`}
                     </button>
                   ) : null}
                   {peer.hasWhatsApp ? (

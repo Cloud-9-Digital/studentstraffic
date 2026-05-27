@@ -643,6 +643,26 @@ export const peerCallSessions = pgTable(
   ]
 );
 
+export const peerCallBookings = pgTable(
+  "peer_call_bookings",
+  {
+    id: serial("id").primaryKey(),
+    studentUserId: varchar("student_user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    peerId: integer("peer_id")
+      .notNull()
+      .references(() => studentPeers.id, { onDelete: "cascade" }),
+    status: text("status").notNull().default("active"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("peer_call_bookings_student_idx").on(table.studentUserId),
+    index("peer_call_bookings_peer_idx").on(table.peerId),
+    uniqueIndex("peer_call_bookings_unique_idx").on(table.studentUserId, table.peerId),
+  ]
+);
+
 export const universityReviews = pgTable(
   "university_reviews",
   {
@@ -878,6 +898,7 @@ export type StudentPeerRow = typeof studentPeers.$inferSelect;
 export type PeerRequestInsert = typeof peerRequests.$inferInsert;
 export type PeerRequestRow = typeof peerRequests.$inferSelect;
 export type PeerCallSessionRow = typeof peerCallSessions.$inferSelect;
+export type PeerCallBookingRow = typeof peerCallBookings.$inferSelect;
 export type UniversityReviewInsert = typeof universityReviews.$inferInsert;
 export type UniversityReviewRow = typeof universityReviews.$inferSelect;
 export type SearchDocumentRow = typeof searchDocuments.$inferSelect;
