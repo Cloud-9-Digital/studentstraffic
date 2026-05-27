@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import * as Haptics from "expo-haptics";
 
 import { useCompare } from "../context/CompareContext";
+import { useCall } from "../context/CallContext";
 import { colors } from "../theme/tokens";
 
 type IconName = keyof typeof Ionicons.glyphMap;
@@ -16,6 +17,7 @@ const TAB_ICONS: Record<string, { active: IconName; inactive: IconName }> = {
   search:     { active: "search",      inactive: "search-outline" },
   compare:    { active: "git-compare", inactive: "git-compare-outline" },
   shortlists: { active: "bookmark",    inactive: "bookmark-outline" },
+  calls:      { active: "call",        inactive: "call-outline" },
   profile:    { active: "person",      inactive: "person-outline" },
 };
 
@@ -24,6 +26,7 @@ const TAB_LABELS: Record<string, string> = {
   search:     "Search",
   compare:    "Compare",
   shortlists: "Saved",
+  calls:      "Calls",
   profile:    "Profile",
 };
 
@@ -161,6 +164,7 @@ const tb = StyleSheet.create({
 export function FloatingTabBar({ state, navigation }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
   const { items: compareItems } = useCompare();
+  const { incomingCall } = useCall();
 
   const visibleRoutes = state.routes.filter(r => TAB_ICONS[r.name]);
 
@@ -194,7 +198,10 @@ export function FloatingTabBar({ state, navigation }: BottomTabBarProps) {
                 key={route.key}
                 routeName={route.name}
                 focused={focused}
-                compareBadge={route.name === "compare" && !focused ? compareItems.length : 0}
+                compareBadge={
+                  (route.name === "compare" && !focused ? compareItems.length : 0) +
+                  (route.name === "calls" && !focused && incomingCall ? 1 : 0)
+                }
                 onPress={() => {
                   Haptics.selectionAsync();
                   if (!focused) navigation.navigate(route.name);

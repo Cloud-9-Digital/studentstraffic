@@ -123,3 +123,39 @@ export type StudentProfile = {
   budgetUsd?: number | null;
   preferredCountries: string[];
 };
+
+export type CallBooking = {
+  bookingId: number;
+  peerId: number;
+  fullName: string;
+  courseName?: string | null;
+  currentYearOrBatch?: string | null;
+  photoUrl?: string | null;
+  universityName: string;
+  universitySlug: string;
+  bookingStatus: string;
+  createdAt?: string | null;
+};
+
+export type CallTokenResponse = {
+  appId: string;
+  channelName: string;
+  token: string;
+  uid: number;
+  call: {
+    id: string;
+    status: string;
+    peerName: string;
+    callerName: string | null;
+    universityName: string;
+    isPeerParticipant: boolean;
+  };
+};
+
+export type IncomingCall = {
+  id: string;
+  peerName: string;
+  universityName: string;
+  createdAt: string | null;
+  status: string;
+};

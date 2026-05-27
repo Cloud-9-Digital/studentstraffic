@@ -1,4 +1,4 @@
-import type { IndiaCollege, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
+import type { CallBooking, CallTokenResponse, IndiaCollege, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
 import { clearToken, getToken, setToken } from "./tokenStore";
 
 const API_URL = (process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:3000").replace(/\/$/, "");
@@ -263,6 +263,42 @@ export const mobileClient = {
       totalItems: result.totalItems,
       hasNextPage: result.hasNextPage,
     };
+  },
+
+  async getCallBookings() {
+    const result = await request<{ bookings: CallBooking[] }>("/api/mobile/v1/calls");
+    return result.bookings;
+  },
+
+  async startCall(bookingId: number) {
+    return request<{ callId: string }>("/api/mobile/v1/calls", {
+      method: "POST",
+      body: JSON.stringify({ bookingId }),
+    });
+  },
+
+  async getCallToken(callId: string) {
+    return request<CallTokenResponse>(`/api/mobile/v1/calls/${callId}/token`, {
+      method: "POST",
+    });
+  },
+
+  async endCall(callId: string) {
+    return request<{ success: boolean }>(`/api/mobile/v1/calls/${callId}/end`, {
+      method: "POST",
+    });
+  },
+
+  async getIncomingCalls() {
+    const result = await request<{ calls: IncomingCall[] }>("/api/mobile/v1/calls/incoming");
+    return result.calls;
+  },
+
+  async updatePushToken(pushToken: string) {
+    return request<{ success: boolean }>("/api/mobile/v1/me/push-token", {
+      method: "PATCH",
+      body: JSON.stringify({ pushToken }),
+    });
   },
 
   async requestCounselling(input: {

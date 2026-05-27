@@ -7,6 +7,7 @@ import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { peerCallBookings, peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
 import { resolveDbUserId } from "@/lib/server-session";
+import { sendCallPushNotification } from "@/lib/push-notifications";
 
 export type StartCallAsPeerResult = {
   callId?: string;
@@ -59,6 +60,8 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
       id: studentPeers.id,
       peerUserId: studentPeers.peerUserId,
       universityId: studentPeers.universityId,
+      universityName: universities.name,
+      fullName: studentPeers.fullName,
     })
     .from(studentPeers)
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
@@ -74,9 +77,9 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
     return { error: "You are not authorised to start this call." };
   }
 
-  // Verify the student exists
+  // Verify the student exists and get their name for the push notification
   const [studentUser] = await db
-    .select({ id: users.id })
+    .select({ id: users.id, name: users.name })
     .from(users)
     .where(eq(users.id, booking.studentUserId))
     .limit(1);
@@ -122,6 +125,13 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
     createdAt: now,
     updatedAt: now,
   });
+
+  // Notify the student that their guide is calling
+  sendCallPushNotification(booking.studentUserId, {
+    callId,
+    callerDisplayName: peer.fullName?.trim() || "Your guide",
+    universityName: peer.universityName,
+  }).catch(() => null);
 
   return { callId };
 }

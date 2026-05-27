@@ -1,0 +1,122 @@
+import { useCallback, useEffect, useRef, useState } from "react";
+
+// Lazy-load Agora so the app doesn't crash in Expo Go (native module not linked there).
+// In a dev build / production build this will always be available.
+function loadAgora() {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("react-native-agora");
+    return {
+      createAgoraRtcEngine: mod.createAgoraRtcEngine as ((...args: any[]) => any),
+      ChannelProfileType:   mod.ChannelProfileType   as Record<string, number>,
+      ClientRoleType:       mod.ClientRoleType        as Record<string, number>,
+    };
+  } catch {
+    return null;
+  }
+}
+
+const agora = loadAgora();
+
+type AgoraCallState = "idle" | "connecting" | "ringing" | "connected" | "ended" | "error" | "unavailable";
+
+type UseAgoraCallParams = {
+  appId: string;
+  channelName: string;
+  token: string;
+  uid: number;
+  onEnd?: () => void;
+};
+
+export function useAgoraCall({ appId, channelName, token, uid, onEnd }: UseAgoraCallParams) {
+  const engineRef = useRef<any>(null);
+  const [callState, setCallState] = useState<AgoraCallState>(agora ? "idle" : "unavailable");
+  const [remoteJoined, setRemoteJoined] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const [isSpeakerOn, setIsSpeakerOn] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const mountedRef = useRef(true);
+
+  const safe = useCallback((fn: () => void) => {
+    if (mountedRef.current) fn();
+  }, []);
+
+  useEffect(() => {
+    if (!agora) return; // Expo Go — skip
+
+    mountedRef.current = true;
+
+    const engine = agora.createAgoraRtcEngine();
+    engineRef.current = engine;
+
+    engine.initialize({
+      appId,
+      channelProfile: agora.ChannelProfileType.ChannelProfileCommunication,
+    });
+    engine.enableAudio();
+    engine.setEnableSpeakerphone(true);
+
+    engine.registerEventHandler({
+      onJoinChannelSuccess: () => {
+        safe(() => setCallState("ringing"));
+      },
+      onUserJoined: (_connection: any, _remoteUid: any) => {
+        safe(() => {
+          setRemoteJoined(true);
+          setCallState("connected");
+        });
+      },
+      onUserOffline: (_connection: any, _remoteUid: any, _reason: any) => {
+        safe(() => {
+          setRemoteJoined(false);
+          setCallState("ended");
+          onEnd?.();
+        });
+      },
+      onError: (_err: any, msg: any) => {
+        safe(() => {
+          setError(msg ?? "Call error");
+          setCallState("error");
+        });
+      },
+    });
+
+    safe(() => setCallState("connecting"));
+
+    engine.joinChannel(token, channelName, uid, {
+      clientRoleType: agora.ClientRoleType.ClientRoleBroadcaster,
+      autoSubscribeAudio: true,
+      publishMicrophoneTrack: true,
+    });
+
+    return () => {
+      mountedRef.current = false;
+      engine.leaveChannel();
+      engine.release();
+      engineRef.current = null;
+    };
+  }, [appId, channelName, token, uid]);
+
+  const toggleMute = useCallback(() => {
+    const engine = engineRef.current;
+    if (!engine) return;
+    const next = !isMuted;
+    engine.muteLocalAudioStream(next);
+    setIsMuted(next);
+  }, [isMuted]);
+
+  const toggleSpeaker = useCallback(() => {
+    const engine = engineRef.current;
+    if (!engine) return;
+    const next = !isSpeakerOn;
+    engine.setEnableSpeakerphone(next);
+    setIsSpeakerOn(next);
+  }, [isSpeakerOn]);
+
+  const leaveChannel = useCallback(() => {
+    engineRef.current?.leaveChannel();
+    safe(() => setCallState("ended"));
+  }, [safe]);
+
+  return { callState, remoteJoined, isMuted, isSpeakerOn, toggleMute, toggleSpeaker, leaveChannel, error };
+}
