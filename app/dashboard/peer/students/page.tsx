@@ -1,12 +1,15 @@
 import { redirect } from "next/navigation";
 import { Users, Phone, PhoneOff, PhoneMissed, Clock } from "lucide-react";
-import { desc, eq } from "drizzle-orm";
+import { count, desc, eq } from "drizzle-orm";
 
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { peerCallSessions, peerRequests, studentPeers, users } from "@/lib/db/schema";
 import { resolveDbUserId } from "@/lib/server-session";
+import { DataPagination } from "@/components/ui/data-pagination";
+
+const HISTORY_PER_PAGE = 10;
 
 function callStatusIcon(status: string) {
   if (status === "ended" || status === "active") return <Phone className="size-3.5 text-emerald-500" />;
@@ -33,7 +36,11 @@ function callDuration(start: Date | null, end: Date | null): string | null {
   return `${m}m ${s}s`;
 }
 
-export default async function PeerStudentsPage() {
+export default async function PeerStudentsPage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
   const session = await auth();
   if (!session?.user?.email) redirect("/login");
 
@@ -51,7 +58,12 @@ export default async function PeerStudentsPage() {
 
   if (!peer) redirect("/join");
 
-  const [students, callHistory] = await Promise.all([
+  const params = await searchParams;
+  const rawPage = Array.isArray(params.page) ? params.page[0] : params.page;
+  const historyPage = Math.max(1, parseInt(rawPage ?? "1", 10));
+  const historyOffset = (historyPage - 1) * HISTORY_PER_PAGE;
+
+  const [students, callHistory, historyCountResult] = await Promise.all([
     db
       .select({
         id: peerRequests.id,
@@ -81,9 +93,20 @@ export default async function PeerStudentsPage() {
           .leftJoin(users, eq(peerCallSessions.callerUserId, users.id))
           .where(eq(peerCallSessions.peerId, peer.id))
           .orderBy(desc(peerCallSessions.createdAt))
-          .limit(50)
+          .limit(HISTORY_PER_PAGE)
+          .offset(historyOffset)
       : Promise.resolve([]),
+
+    env.hasAgoraVoice
+      ? db
+          .select({ total: count() })
+          .from(peerCallSessions)
+          .where(eq(peerCallSessions.peerId, peer.id))
+      : Promise.resolve([{ total: 0 }]),
   ]);
+
+  const historyTotal = historyCountResult[0]?.total ?? 0;
+  const historyTotalPages = Math.max(1, Math.ceil(historyTotal / HISTORY_PER_PAGE));
 
   return (
     <div className="space-y-8">
@@ -174,11 +197,11 @@ export default async function PeerStudentsPage() {
           <div>
             <h2 className="text-lg font-bold text-[#0f1f1c]">Call activity</h2>
             <p className="mt-1 text-sm text-[#6b7280]">
-              {callHistory.length === 0 ? "No calls yet." : `${callHistory.length} call${callHistory.length === 1 ? "" : "s"} recorded.`}
+              {historyTotal === 0 ? "No calls yet." : `${historyTotal} call${historyTotal === 1 ? "" : "s"} recorded.`}
             </p>
           </div>
 
-          {callHistory.length === 0 ? (
+          {historyTotal === 0 ? (
             <div className="rounded-xl border border-dashed border-[#e5e7eb] bg-white p-8 text-center">
               <Phone className="mx-auto size-7 text-[#d1d5db] mb-3" />
               <p className="text-sm text-[#374151]">No calls yet</p>
@@ -242,6 +265,12 @@ export default async function PeerStudentsPage() {
                 </tbody>
               </table>
             </div>
+
+            <DataPagination
+              page={historyPage}
+              totalPages={historyTotalPages}
+              buildHref={(p) => `/dashboard/peer/students?page=${p}`}
+            />
             </>
           )}
         </div>

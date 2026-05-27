@@ -5,10 +5,11 @@ import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { studentPeers } from "@/lib/db/schema";
-import { getIncomingPeerCalls, getActivePeerCallForUser } from "@/lib/peer-calls";
+import { getIncomingPeerCalls, getActivePeerCallForUser, getIncomingStudentCalls } from "@/lib/peer-calls";
 import { resolveDbUserId } from "@/lib/server-session";
 import { DashboardSidebar, DashboardBottomNav, DashboardMobileHeader } from "@/components/dashboard/sidebar";
 import { IncomingCallsFloating } from "@/components/dashboard/incoming-calls-floating";
+import { IncomingStudentCallsFloating } from "@/components/dashboard/incoming-student-calls";
 import { RejoinCallBanner } from "@/components/dashboard/rejoin-call-banner";
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
@@ -17,6 +18,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
 
   let isPeerWithVoice = false;
   let initialCalls: Awaited<ReturnType<typeof getIncomingPeerCalls>> = [];
+  let initialStudentCalls: Awaited<ReturnType<typeof getIncomingStudentCalls>> = [];
   let activeCall: Awaited<ReturnType<typeof getActivePeerCallForUser>> = null;
 
   if (env.hasAgoraVoice && session.user.email) {
@@ -29,8 +31,9 @@ export default async function DashboardLayout({ children }: { children: React.Re
         .where(eq(studentPeers.peerUserId, userId))
         .limit(1);
 
-      const [incomingResult, activeCallResult] = await Promise.all([
+      const [incomingResult, studentIncomingResult, activeCallResult] = await Promise.all([
         peer ? getIncomingPeerCalls(userId) : Promise.resolve([]),
+        getIncomingStudentCalls(userId),
         getActivePeerCallForUser(userId),
       ]);
 
@@ -38,6 +41,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
         isPeerWithVoice = true;
         initialCalls = incomingResult;
       }
+      initialStudentCalls = studentIncomingResult;
       activeCall = activeCallResult;
     }
   }
@@ -66,6 +70,11 @@ export default async function DashboardLayout({ children }: { children: React.Re
       {/* Floating incoming-call dialog — only for peer guides with voice enabled */}
       {isPeerWithVoice && (
         <IncomingCallsFloating initialCalls={initialCalls} />
+      )}
+
+      {/* Floating incoming-call dialog for students — when a guide calls them */}
+      {env.hasAgoraVoice && initialStudentCalls.length > 0 && (
+        <IncomingStudentCallsFloating initialCalls={initialStudentCalls} />
       )}
     </div>
   );

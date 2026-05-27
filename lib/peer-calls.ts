@@ -161,6 +161,51 @@ export async function getIncomingPeerCalls(userId: string): Promise<IncomingPeer
   }));
 }
 
+export type IncomingStudentCallSummary = {
+  id: string;
+  peerName: string;
+  universityName: string;
+  createdAt: string | null;
+  status: PeerCallStatus;
+};
+
+export async function getIncomingStudentCalls(studentUserId: string): Promise<IncomingStudentCallSummary[]> {
+  await expireStaleRingingCalls(studentUserId);
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      id: peerCallSessions.id,
+      status: peerCallSessions.status,
+      createdAt: peerCallSessions.createdAt,
+      universityName: universities.name,
+      peerName: studentPeers.fullName,
+    })
+    .from(peerCallSessions)
+    .innerJoin(studentPeers, eq(peerCallSessions.peerId, studentPeers.id))
+    .innerJoin(universities, eq(peerCallSessions.universityId, universities.id))
+    .where(
+      and(
+        eq(peerCallSessions.callerUserId, studentUserId),
+        // "active" means the peer has already joined and is waiting — the student hasn't seen this
+        inArray(peerCallSessions.status, ["active" as PeerCallStatus]),
+        gt(peerCallSessions.expiresAt, new Date())
+      )
+    )
+    .orderBy(desc(peerCallSessions.createdAt))
+    .limit(5);
+
+  return rows.map((row) => ({
+    id: row.id,
+    peerName: row.peerName?.trim() || "Your guide",
+    universityName: row.universityName,
+    createdAt: row.createdAt?.toISOString() ?? null,
+    status: row.status,
+  }));
+}
+
 export type ActiveCallSummary = {
   id: string;
   displayName: string;

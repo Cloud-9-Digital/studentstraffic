@@ -8,11 +8,11 @@ import type {
   IRemoteAudioTrack,
 } from "agora-rtc-sdk-ng";
 import {
+  ChevronUp,
   Loader2,
   Mic, MicOff,
   PhoneOff,
   Volume2, VolumeX,
-  Wifi, WifiOff,
 } from "lucide-react";
 
 type Phase = "connecting" | "ringing" | "connected" | "ended" | "error";
@@ -35,7 +35,7 @@ type AgoraJoinPayload = {
   };
 };
 
-type OutputDevice = { deviceId: string; label: string };
+type AudioDevice = { deviceId: string; label: string };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -56,21 +56,61 @@ function Avatar({ name }: { name: string }) {
   return <span className="text-4xl font-bold text-white">{initials}</span>;
 }
 
-function NetworkDots({ quality }: { quality: NetQuality }) {
+function SignalBars({ quality }: { quality: NetQuality }) {
   if (quality === 0) return null;
-  if (quality >= 5) return <WifiOff className="size-3.5 text-red-400" />;
+  const poor = quality >= 5;
   const color = quality <= 2 ? "bg-emerald-400" : quality === 3 ? "bg-amber-400" : "bg-red-400";
   const filled = quality <= 2 ? 3 : quality === 3 ? 2 : 1;
+  if (poor) return <span className="text-[10px] font-medium text-red-400">No signal</span>;
   return (
-    <span className="flex items-end gap-0.5 h-3.5">
+    <span className="flex items-end gap-[2px] h-3">
       {[1, 2, 3].map((i) => (
         <span
           key={i}
           className={`w-1 rounded-sm transition-all ${i <= filled ? color : "bg-white/20"}`}
-          style={{ height: `${i * 33}%` }}
+          style={{ height: `${30 + i * 23}%` }}
         />
       ))}
     </span>
+  );
+}
+
+function DeviceList({
+  devices,
+  selected,
+  onSelect,
+  label,
+  icon: Icon,
+}: {
+  devices: AudioDevice[];
+  selected: string;
+  onSelect: (id: string) => void;
+  label: string;
+  icon: React.ElementType;
+}) {
+  if (devices.length <= 1) return null;
+  return (
+    <div className="space-y-1.5">
+      <span className="text-xs font-medium text-white/60">{label}</span>
+      <div className="space-y-1">
+        {devices.map((d) => (
+          <button
+            key={d.deviceId}
+            type="button"
+            onClick={() => onSelect(d.deviceId)}
+            className={`flex w-full items-center gap-2 rounded-xl px-3 py-2 text-xs font-medium transition ${
+              selected === d.deviceId
+                ? "bg-emerald-500/20 text-emerald-300"
+                : "text-white/60 hover:bg-white/10"
+            }`}
+          >
+            <Icon className="size-3.5 shrink-0" />
+            <span className="truncate">{d.label}</span>
+            {selected === d.deviceId && <span className="ml-auto size-1.5 rounded-full bg-emerald-400" />}
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -92,34 +132,36 @@ export function CallOverlay({
   const remoteAudioTracksRef = useRef<Map<string | number, IRemoteAudioTrack>>(new Map());
   const mountedRef = useRef(true);
 
-  // Refs that mirror state for use inside async closures / event handlers
   const volumeRef = useRef(100);
-  const selectedDeviceIdRef = useRef<string>("default");
+  const selectedOutputIdRef = useRef<string>("default");
 
   const [phase, setPhase] = useState<Phase>("connecting");
   const [isMuted, setIsMuted] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [isEnding, setIsEnding] = useState(false);
 
-  // Audio output
+  // Speaker output
   const [volume, setVolumeState] = useState(100);
-  const [outputDevices, setOutputDevices] = useState<OutputDevice[]>([]);
-  const [selectedDeviceId, setSelectedDeviceId] = useState("default");
-  const [showAudioPanel, setShowAudioPanel] = useState(false);
+  const [outputDevices, setOutputDevices] = useState<AudioDevice[]>([]);
+  const [selectedOutputId, setSelectedOutputId] = useState("default");
+  const [showSpeakerPanel, setShowSpeakerPanel] = useState(false);
 
-  // Network quality (uplink of local user)
+  // Mic input
+  const [inputDevices, setInputDevices] = useState<AudioDevice[]>([]);
+  const [selectedInputId, setSelectedInputId] = useState("default");
+  const [showMicPanel, setShowMicPanel] = useState(false);
+
+  // Network quality
   const [netQuality, setNetQuality] = useState<NetQuality>(0);
 
   const timer = useCallTimer(phase === "connected");
 
-  // Lock background scroll
   useEffect(() => {
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = prev; };
   }, []);
 
-  // Warn before accidental page refresh / navigation away during an active call
   useEffect(() => {
     if (phase !== "connected" && phase !== "ringing") return;
     const guard = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = ""; };
@@ -157,8 +199,8 @@ export function CallOverlay({
             if (track) {
               remoteAudioTracksRef.current.set(user.uid, track);
               track.setVolume(volumeRef.current);
-              if (selectedDeviceIdRef.current !== "default") {
-                await track.setPlaybackDevice(selectedDeviceIdRef.current).catch(() => undefined);
+              if (selectedOutputIdRef.current !== "default") {
+                await track.setPlaybackDevice(selectedOutputIdRef.current).catch(() => undefined);
               }
               track.play();
             }
@@ -219,20 +261,27 @@ export function CallOverlay({
         localTrackRef.current = localTrack;
         await client.publish([localTrack]);
 
-        // Enumerate output devices once connected
+        // Enumerate devices once connected
         if (!cancelled && mountedRef.current) {
           try {
-            const devices = await AgoraRTC.getPlaybackDevices();
-            const mapped: OutputDevice[] = devices.map((d) => ({
-              deviceId: d.deviceId,
-              label: d.label || `Speaker ${d.deviceId.slice(0, 6)}`,
-            }));
-            if (mountedRef.current) setOutputDevices(mapped);
+            const [outputList, inputList] = await Promise.all([
+              AgoraRTC.getPlaybackDevices(),
+              AgoraRTC.getMicrophones(),
+            ]);
+            if (mountedRef.current) {
+              setOutputDevices(outputList.map((d) => ({
+                deviceId: d.deviceId,
+                label: d.label || `Speaker ${d.deviceId.slice(0, 6)}`,
+              })));
+              setInputDevices(inputList.map((d) => ({
+                deviceId: d.deviceId,
+                label: d.label || `Microphone ${d.deviceId.slice(0, 6)}`,
+              })));
+            }
           } catch { /* device enumeration not supported */ }
         }
       } catch (err) {
         console.error("[agora] join failed", err);
-        // Leave the channel so the timed-out join doesn't keep running in the background
         const client = clientRef.current;
         if (client) {
           clientRef.current = null;
@@ -269,6 +318,15 @@ export function CallOverlay({
     setIsMuted(next);
   }
 
+  function toggleSpeaker() {
+    const next = volume === 0 ? 100 : 0;
+    setVolumeState(next);
+    volumeRef.current = next;
+    for (const track of remoteAudioTracksRef.current.values()) {
+      track.setVolume(next);
+    }
+  }
+
   async function endCall() {
     if (isEnding) return;
     setIsEnding(true);
@@ -285,12 +343,24 @@ export function CallOverlay({
     }
   }
 
-  async function handleDeviceChange(deviceId: string) {
-    setSelectedDeviceId(deviceId);
-    selectedDeviceIdRef.current = deviceId;
+  async function handleOutputDeviceChange(deviceId: string) {
+    setSelectedOutputId(deviceId);
+    selectedOutputIdRef.current = deviceId;
     for (const track of remoteAudioTracksRef.current.values()) {
       await track.setPlaybackDevice(deviceId).catch(() => undefined);
     }
+  }
+
+  async function handleInputDeviceChange(deviceId: string) {
+    setSelectedInputId(deviceId);
+    const track = localTrackRef.current;
+    if (!track) return;
+    await (track as IMicrophoneAudioTrack & { setDevice?: (id: string) => Promise<void> }).setDevice?.(deviceId).catch(() => undefined);
+  }
+
+  function closePanels() {
+    setShowSpeakerPanel(false);
+    setShowMicPanel(false);
   }
 
   const statusLine = () => {
@@ -302,7 +372,7 @@ export function CallOverlay({
   };
 
   const isLive = phase !== "ended" && phase !== "error";
-  const isMutedOutput = volume === 0;
+  const isSpeakerMuted = volume === 0;
 
   return (
     <div
@@ -311,7 +381,7 @@ export function CallOverlay({
         background:
           "radial-gradient(ellipse 80% 60% at 50% 0%, #1d6b5f33 0%, transparent 70%), linear-gradient(160deg, #0d3530 0%, #071a17 45%, #020c0b 100%)",
       }}
-      onClick={() => setShowAudioPanel(false)}
+      onClick={closePanels}
     >
       {/* Noise texture */}
       <div
@@ -326,13 +396,6 @@ export function CallOverlay({
 
       {/* Top: identity */}
       <div className="relative flex flex-col items-center gap-6 text-center">
-        {/* Network quality — top right */}
-        {phase === "connected" && netQuality > 0 && (
-          <div className="absolute -top-8 right-0 flex items-center gap-1.5">
-            <NetworkDots quality={netQuality} />
-          </div>
-        )}
-
         {/* Avatar */}
         <div className="relative flex items-center justify-center">
           {phase === "ringing" && (
@@ -354,26 +417,25 @@ export function CallOverlay({
           <p className="text-sm text-white/50">{universityName}</p>
         </div>
 
-        {/* Status */}
-        <div className="flex min-h-[28px] items-center gap-2">
+        {/* Status + signal strength together */}
+        <div className="flex min-h-[28px] items-center gap-3">
           {phase === "connecting" && <Loader2 className="size-4 animate-spin text-white/40" />}
           {phase === "connected" && <span className="size-1.5 animate-pulse rounded-full bg-emerald-400" />}
           <p className={`text-base font-medium tabular-nums ${phase === "error" ? "text-red-400" : "text-white/60"}`}>
             {statusLine()}
           </p>
+          {phase === "connected" && netQuality > 0 && (
+            <SignalBars quality={netQuality} />
+          )}
         </div>
       </div>
 
-      {/* Bottom: controls — fixed height so audio panel doesn't cause layout shift */}
-      <div className="relative flex w-full flex-col items-center">
+      {/* Bottom: controls */}
+      <div className="relative flex w-full flex-col items-center" onClick={(e) => e.stopPropagation()}>
 
-        {/* Audio panel — absolutely positioned above buttons, no effect on layout */}
-        {showAudioPanel && isLive && (
-          <div
-            className="absolute bottom-full mb-4 w-full max-w-xs rounded-2xl bg-white/10 backdrop-blur-sm p-4 space-y-4 ring-1 ring-white/10"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Volume slider */}
+        {/* Speaker panel */}
+        {showSpeakerPanel && isLive && (
+          <div className="absolute bottom-full mb-4 left-0 w-64 rounded-2xl bg-white/10 backdrop-blur-sm p-4 space-y-4 ring-1 ring-white/10">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-medium text-white/60">Volume</span>
@@ -392,79 +454,65 @@ export function CallOverlay({
                 <Volume2 className="size-4 shrink-0 text-white/30" />
               </div>
             </div>
+            <DeviceList
+              devices={outputDevices}
+              selected={selectedOutputId}
+              onSelect={(id) => void handleOutputDeviceChange(id)}
+              label="Audio output"
+              icon={Volume2}
+            />
+          </div>
+        )}
 
-            {/* Output device picker — only if multiple devices found */}
-            {outputDevices.length > 1 && (
-              <div className="space-y-1.5">
-                <span className="text-xs font-medium text-white/60">Audio output</span>
-                <div className="space-y-1">
-                  {outputDevices.map((d) => (
-                    <button
-                      key={d.deviceId}
-                      type="button"
-                      onClick={() => void handleDeviceChange(d.deviceId)}
-                      className={`flex w-full items-center gap-2 rounded-xl px-3 py-2 text-xs font-medium transition ${
-                        selectedDeviceId === d.deviceId
-                          ? "bg-emerald-500/20 text-emerald-300"
-                          : "text-white/60 hover:bg-white/10"
-                      }`}
-                    >
-                      <Volume2 className="size-3.5 shrink-0" />
-                      <span className="truncate">{d.label}</span>
-                      {selectedDeviceId === d.deviceId && (
-                        <span className="ml-auto size-1.5 rounded-full bg-emerald-400" />
-                      )}
-                    </button>
-                  ))}
-                </div>
-              </div>
+        {/* Mic panel */}
+        {showMicPanel && isLive && (
+          <div className="absolute bottom-full mb-4 right-0 w-64 rounded-2xl bg-white/10 backdrop-blur-sm p-4 ring-1 ring-white/10">
+            <DeviceList
+              devices={inputDevices}
+              selected={selectedInputId}
+              onSelect={(id) => void handleInputDeviceChange(id)}
+              label="Microphone input"
+              icon={Mic}
+            />
+            {inputDevices.length <= 1 && (
+              <p className="text-xs text-white/40">Only one microphone detected.</p>
             )}
           </div>
         )}
 
         {isLive && (
-          <div className="flex w-full items-center justify-center gap-8 py-2" onClick={(e) => e.stopPropagation()}>
-            {/* Speaker / Volume */}
-            <div className="flex flex-col items-center gap-2">
-              <button
-                type="button"
-                onClick={() => {
-                  if (!showAudioPanel && volume === 0) {
-                    handleVolumeChange(100);
-                  }
-                  setShowAudioPanel((p) => !p);
-                }}
-                disabled={phase === "connecting"}
-                className={`flex size-16 items-center justify-center rounded-full transition-all disabled:opacity-30 ${
-                  showAudioPanel
-                    ? "bg-white text-[#0a1f1c] shadow-lg shadow-white/20"
-                    : isMutedOutput
-                    ? "bg-white/20 text-white/50"
-                    : "bg-white/10 text-white hover:bg-white/20"
-                }`}
-              >
-                {isMutedOutput ? <VolumeX className="size-6" /> : <Volume2 className="size-6" />}
-              </button>
-              <span className="text-xs text-white/40">
-                {isMutedOutput ? "Unmute" : "Speaker"}
-              </span>
-            </div>
+          <div className="flex w-full items-end justify-center gap-8 py-2">
 
-            {/* Mute mic */}
+            {/* Speaker group */}
             <div className="flex flex-col items-center gap-2">
-              <button
-                type="button"
-                onClick={() => void toggleMute()}
-                disabled={phase === "connecting"}
-                className={`flex size-16 items-center justify-center rounded-full transition-all disabled:opacity-30 ${
-                  isMuted
-                    ? "bg-white text-[#0a1f1c] shadow-lg shadow-white/20"
-                    : "bg-white/10 text-white hover:bg-white/20"
-                }`}
-              >
-                {isMuted ? <MicOff className="size-6" /> : <Mic className="size-6" />}
-              </button>
-              <span className="text-xs text-white/40">{isMuted ? "Unmute mic" : "Mute"}</span>
+              <div className="relative">
+                {/* Chevron pill — opens speaker panel */}
+                <button
+                  type="button"
+                  onClick={() => { setShowMicPanel(false); setShowSpeakerPanel((p) => !p); }}
+                  disabled={phase === "connecting"}
+                  className="absolute -top-3 left-1/2 -translate-x-1/2 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 px-2 py-0.5 disabled:opacity-30 transition"
+                  aria-label="Speaker options"
+                >
+                  <ChevronUp className={`size-3 text-white/60 transition-transform ${showSpeakerPanel ? "rotate-180" : ""}`} />
+                </button>
+                {/* Main button: mute/unmute speaker */}
+                <button
+                  type="button"
+                  onClick={toggleSpeaker}
+                  disabled={phase === "connecting"}
+                  className={`mt-4 flex size-16 items-center justify-center rounded-full transition-all disabled:opacity-30 ${
+                    isSpeakerMuted
+                      ? "bg-white text-[#0a1f1c] shadow-lg shadow-white/20"
+                      : "bg-white/10 text-white hover:bg-white/20"
+                  }`}
+                >
+                  {isSpeakerMuted ? <VolumeX className="size-6" /> : <Volume2 className="size-6" />}
+                </button>
+              </div>
+              <span className="text-xs text-white/40">
+                {isSpeakerMuted ? "Unmute" : "Speaker"}
+              </span>
             </div>
 
             {/* End call */}
@@ -479,6 +527,37 @@ export function CallOverlay({
               </button>
               <span className="text-xs text-white/40">End call</span>
             </div>
+
+            {/* Mic group */}
+            <div className="flex flex-col items-center gap-2">
+              <div className="relative">
+                {/* Chevron pill — opens mic panel */}
+                <button
+                  type="button"
+                  onClick={() => { setShowSpeakerPanel(false); setShowMicPanel((p) => !p); }}
+                  disabled={phase === "connecting"}
+                  className="absolute -top-3 left-1/2 -translate-x-1/2 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 px-2 py-0.5 disabled:opacity-30 transition"
+                  aria-label="Mic options"
+                >
+                  <ChevronUp className={`size-3 text-white/60 transition-transform ${showMicPanel ? "rotate-180" : ""}`} />
+                </button>
+                {/* Main button: mute/unmute mic */}
+                <button
+                  type="button"
+                  onClick={() => void toggleMute()}
+                  disabled={phase === "connecting"}
+                  className={`mt-4 flex size-16 items-center justify-center rounded-full transition-all disabled:opacity-30 ${
+                    isMuted
+                      ? "bg-white text-[#0a1f1c] shadow-lg shadow-white/20"
+                      : "bg-white/10 text-white hover:bg-white/20"
+                  }`}
+                >
+                  {isMuted ? <MicOff className="size-6" /> : <Mic className="size-6" />}
+                </button>
+              </div>
+              <span className="text-xs text-white/40">{isMuted ? "Unmute mic" : "Mute"}</span>
+            </div>
+
           </div>
         )}
 
