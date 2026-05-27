@@ -195,7 +195,11 @@ export function DashboardMobileHeader() {
 
   return (
     <>
-      <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-[#e5e7eb] bg-white px-4 lg:hidden">
+      <header
+        className="sticky top-0 z-30 flex flex-col border-b border-[#e5e7eb] bg-white lg:hidden"
+        style={{ paddingTop: "env(safe-area-inset-top)" }}
+      >
+      <div className="flex h-14 items-center justify-between px-4">
         <Link href="/">
           <Image src="/logo.webp" alt="Students Traffic" width={120} height={28} className="h-5 w-auto object-contain" />
         </Link>
@@ -216,6 +220,7 @@ export function DashboardMobileHeader() {
             <LogOut className="size-4" />
           </button>
         </div>
+      </div>
       </header>
 
       <SignOutDialog
@@ -264,9 +269,12 @@ export function DashboardBottomNav() {
         />
       )}
 
-      {/* More drawer */}
+      {/* More drawer — sits above the nav bar; bottom offset = nav height + home-indicator */}
       {drawerOpen && (
-        <div className="fixed bottom-[57px] left-0 right-0 z-50 rounded-t-2xl border-t border-[#e5e7eb] bg-white px-4 py-4 shadow-2xl lg:hidden">
+        <div
+          className="fixed left-0 right-0 z-50 rounded-t-2xl border-t border-[#e5e7eb] bg-white px-4 py-4 shadow-2xl lg:hidden"
+          style={{ bottom: "calc(57px + env(safe-area-inset-bottom))" }}
+        >
           <div className="mb-3 flex items-center justify-between">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">More</p>
             <button
@@ -309,8 +317,11 @@ export function DashboardBottomNav() {
         </div>
       )}
 
-      {/* Bottom bar */}
-      <nav className="fixed bottom-0 left-0 right-0 z-40 flex border-t border-[#e5e7eb] bg-white lg:hidden">
+      {/* Bottom bar — padding-bottom pushes items above the iOS home indicator */}
+      <nav
+        className="fixed bottom-0 left-0 right-0 z-40 flex border-t border-[#e5e7eb] bg-white lg:hidden"
+        style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+      >
         {bottomNavItems.map(({ href, icon: Icon, label }) => (
           <Link
             key={href}

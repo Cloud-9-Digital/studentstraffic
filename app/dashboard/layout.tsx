@@ -52,7 +52,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
       {/* Main content */}
       <div className="flex flex-1 flex-col min-w-0">
         <DashboardMobileHeader />
-        <main className="flex-1 p-6 pb-24 lg:p-8 lg:pb-8">
+        <main className="flex-1 p-6 pb-nav-safe lg:p-8 lg:pb-8">
           {children}
         </main>
       </div>

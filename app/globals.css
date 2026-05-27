@@ -3,6 +3,12 @@
 @import "react-phone-number-input/style.css";
 @plugin "@tailwindcss/typography";
 
+/* ── iOS safe-area utilities ─────────────────────────────────────────────── */
+/* nav height (~57px) + home-indicator inset; used by the dashboard main area */
+.pb-nav-safe {
+  padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+}
+
 /* ── Third-party overrides ───────────────────────────────────────────────── */
 :root {
   --PhoneInput-color--focus: var(--accent);
