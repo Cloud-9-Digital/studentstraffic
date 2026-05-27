@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { Loader2, PhoneCall, Radio } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 import { startPeerCallAction } from "@/app/_actions/start-peer-call";
 
@@ -19,25 +18,28 @@ export function StartPeerCallCard({
     canReceiveCalls: boolean;
   };
 }) {
-  const router = useRouter();
-  const [isPending, startTransition] = useTransition();
+  const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const firstName = peer.fullName.split(" ")[0] || peer.fullName;
 
-  function handleStartCall() {
-    startTransition(async () => {
-      setError(null);
-      const result = await startPeerCallAction(peer.id, peer.universitySlug);
+  async function handleStartCall() {
+    if (isPending) return;
+    setIsPending(true);
+    setError(null);
 
-      if (result.callId) {
-        router.push(`/calls/${result.callId}`);
-        router.refresh();
-        return;
-      }
+    const result = await startPeerCallAction(peer.id, peer.universitySlug);
 
-      setError(result.error ?? "Unable to start the call right now.");
-    });
+    if (result.callId) {
+      // Hard navigation so the call page works regardless of the current origin
+      // (e.g., 192.168.1.x in dev) — router.push inside startTransition can hang
+      // when the session cookie domain differs from the current host.
+      window.location.href = `/calls/${result.callId}`;
+      return;
+    }
+
+    setIsPending(false);
+    setError(result.error ?? "Unable to start the call right now.");
   }
 
   return (
