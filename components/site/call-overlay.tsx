@@ -5,10 +5,18 @@ import type {
   IAgoraRTCClient,
   IAgoraRTCRemoteUser,
   IMicrophoneAudioTrack,
+  IRemoteAudioTrack,
 } from "agora-rtc-sdk-ng";
-import { Loader2, Mic, MicOff, PhoneOff } from "lucide-react";
+import {
+  Loader2,
+  Mic, MicOff,
+  PhoneOff,
+  Volume2, VolumeX,
+  Wifi, WifiOff,
+} from "lucide-react";
 
 type Phase = "connecting" | "ringing" | "connected" | "ended" | "error";
+type NetQuality = 0 | 1 | 2 | 3 | 4 | 5 | 6; // 0=unknown, 1=excellent … 6=disconnected
 
 const JOIN_TIMEOUT_MS = 30_000;
 
@@ -27,6 +35,10 @@ type AgoraJoinPayload = {
   };
 };
 
+type OutputDevice = { deviceId: string; label: string };
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
 function useCallTimer(active: boolean) {
   const [seconds, setSeconds] = useState(0);
   useEffect(() => {
@@ -40,16 +52,29 @@ function useCallTimer(active: boolean) {
 }
 
 function Avatar({ name }: { name: string }) {
-  const initials = name
-    .split(" ")
-    .map((n) => n[0])
-    .slice(0, 2)
-    .join("")
-    .toUpperCase();
+  const initials = name.split(" ").map((n) => n[0]).slice(0, 2).join("").toUpperCase();
+  return <span className="text-4xl font-bold text-white">{initials}</span>;
+}
+
+function NetworkDots({ quality }: { quality: NetQuality }) {
+  if (quality === 0) return null;
+  if (quality >= 5) return <WifiOff className="size-3.5 text-red-400" />;
+  const color = quality <= 2 ? "bg-emerald-400" : quality === 3 ? "bg-amber-400" : "bg-red-400";
+  const filled = quality <= 2 ? 3 : quality === 3 ? 2 : 1;
   return (
-    <span className="text-4xl font-bold text-white">{initials}</span>
+    <span className="flex items-end gap-0.5 h-3.5">
+      {[1, 2, 3].map((i) => (
+        <span
+          key={i}
+          className={`w-1 rounded-sm transition-all ${i <= filled ? color : "bg-white/20"}`}
+          style={{ height: `${i * 33}%` }}
+        />
+      ))}
+    </span>
   );
 }
+
+// ── Main component ────────────────────────────────────────────────────────────
 
 export function CallOverlay({
   callId,
@@ -64,23 +89,37 @@ export function CallOverlay({
 }) {
   const clientRef = useRef<IAgoraRTCClient | null>(null);
   const localTrackRef = useRef<IMicrophoneAudioTrack | null>(null);
+  const remoteAudioTracksRef = useRef<Map<string | number, IRemoteAudioTrack>>(new Map());
   const mountedRef = useRef(true);
-  const remoteTracksRef = useRef<Map<string | number, boolean>>(new Map());
+
+  // Refs that mirror state for use inside async closures / event handlers
+  const volumeRef = useRef(100);
+  const selectedDeviceIdRef = useRef<string>("default");
 
   const [phase, setPhase] = useState<Phase>("connecting");
   const [isMuted, setIsMuted] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [isEnding, setIsEnding] = useState(false);
 
+  // Audio output
+  const [volume, setVolumeState] = useState(100);
+  const [outputDevices, setOutputDevices] = useState<OutputDevice[]>([]);
+  const [selectedDeviceId, setSelectedDeviceId] = useState("default");
+  const [showAudioPanel, setShowAudioPanel] = useState(false);
+
+  // Network quality (uplink of local user)
+  const [netQuality, setNetQuality] = useState<NetQuality>(0);
+
   const timer = useCallTimer(phase === "connected");
 
-  // Lock background scroll while overlay is open
+  // Lock background scroll
   useEffect(() => {
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = prev; };
   }, []);
 
+  // ── Agora join ──────────────────────────────────────────────────────────────
   useEffect(() => {
     mountedRef.current = true;
     let cancelled = false;
@@ -97,18 +136,24 @@ export function CallOverlay({
         if (cancelled) return;
 
         const AgoraRTC = (await import("agora-rtc-sdk-ng")).default;
-        // Maximum SDK verbosity so browser console captures all Agora events
         AgoraRTC.setLogLevel(0);
         console.log("[agora] joining channel", payload.channelName, "uid", payload.uid, "appId", payload.appId);
 
         const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
         clientRef.current = client;
 
-        // Helper: subscribe and play a remote user's audio
         async function subscribeAudio(user: IAgoraRTCRemoteUser) {
           try {
             await client.subscribe(user, "audio");
-            user.audioTrack?.play();
+            const track = user.audioTrack as IRemoteAudioTrack | undefined;
+            if (track) {
+              remoteAudioTracksRef.current.set(user.uid, track);
+              track.setVolume(volumeRef.current);
+              if (selectedDeviceIdRef.current !== "default") {
+                await track.setPlaybackDevice(selectedDeviceIdRef.current).catch(() => undefined);
+              }
+              track.play();
+            }
           } catch { /* ignore */ }
         }
 
@@ -120,22 +165,23 @@ export function CallOverlay({
           }
         });
 
-        // Immediately mark connected when any remote audio appears — don't
-        // wait for subscribe/play to finish, so the UI updates instantly.
+        client.on("network-quality", (stats: { uplinkNetworkQuality: NetQuality }) => {
+          if (mountedRef.current) setNetQuality(stats.uplinkNetworkQuality);
+        });
+
         client.on("user-published", (user: IAgoraRTCRemoteUser, mediaType) => {
           if (mediaType !== "audio") return;
-          remoteTracksRef.current.set(user.uid, true);
           if (!cancelled && mountedRef.current) setPhase("connected");
           void subscribeAudio(user);
         });
 
         client.on("user-unpublished", (user: IAgoraRTCRemoteUser, mediaType) => {
-          if (mediaType === "audio") remoteTracksRef.current.delete(user.uid);
+          if (mediaType === "audio") remoteAudioTracksRef.current.delete(user.uid);
         });
 
         client.on("user-left", (user: IAgoraRTCRemoteUser) => {
-          remoteTracksRef.current.delete(user.uid);
-          if (mountedRef.current && remoteTracksRef.current.size === 0) {
+          remoteAudioTracksRef.current.delete(user.uid);
+          if (mountedRef.current && remoteAudioTracksRef.current.size === 0) {
             setPhase("ended");
             setTimeout(() => { if (mountedRef.current) onClose(); }, 2000);
           }
@@ -150,32 +196,36 @@ export function CallOverlay({
 
         if (cancelled) return;
 
-        // After joining, immediately check for users already in the channel.
-        // user-published fires for pre-existing publishers but can race with
-        // our handler registration — this guarantees we don't miss them.
         for (const user of client.remoteUsers) {
-          if (user.hasAudio && !remoteTracksRef.current.has(user.uid)) {
-            remoteTracksRef.current.set(user.uid, true);
+          if (user.hasAudio && !remoteAudioTracksRef.current.has(user.uid)) {
             void subscribeAudio(user);
           }
         }
 
-        // Transition state before touching the mic — mic permission can block
-        // for several seconds, but we already know connection status by now.
         if (!cancelled && mountedRef.current) {
-          setPhase(remoteTracksRef.current.size > 0 ? "connected" : "ringing");
+          setPhase(remoteAudioTracksRef.current.size > 0 ? "connected" : "ringing");
         }
 
-        // Acquire mic and publish (may show browser permission dialog)
         const localTrack = await AgoraRTC.createMicrophoneAudioTrack();
         if (cancelled) { localTrack.stop(); localTrack.close(); return; }
         localTrackRef.current = localTrack;
         await client.publish([localTrack]);
+
+        // Enumerate output devices once connected
+        if (!cancelled && mountedRef.current) {
+          try {
+            const devices = await AgoraRTC.getPlaybackDevices();
+            const mapped: OutputDevice[] = devices.map((d) => ({
+              deviceId: d.deviceId,
+              label: d.label || `Speaker ${d.deviceId.slice(0, 6)}`,
+            }));
+            if (mountedRef.current) setOutputDevices(mapped);
+          } catch { /* device enumeration not supported */ }
+        }
       } catch (err) {
         console.error("[agora] join failed", err);
         if (mountedRef.current) {
-          const msg = err instanceof Error ? err.message : "Unable to join the call.";
-          setErrorMsg(msg);
+          setErrorMsg(err instanceof Error ? err.message : "Unable to join the call.");
           setPhase("error");
         }
       }
@@ -191,8 +241,11 @@ export function CallOverlay({
       localTrackRef.current = null;
       void clientRef.current?.leave().catch(() => undefined);
       clientRef.current = null;
+      remoteAudioTracksRef.current.clear();
     };
   }, [callId]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // ── Control handlers ────────────────────────────────────────────────────────
 
   async function toggleMute() {
     const track = localTrackRef.current;
@@ -210,6 +263,22 @@ export function CallOverlay({
     setTimeout(onClose, 1800);
   }
 
+  function handleVolumeChange(v: number) {
+    setVolumeState(v);
+    volumeRef.current = v;
+    for (const track of remoteAudioTracksRef.current.values()) {
+      track.setVolume(v);
+    }
+  }
+
+  async function handleDeviceChange(deviceId: string) {
+    setSelectedDeviceId(deviceId);
+    selectedDeviceIdRef.current = deviceId;
+    for (const track of remoteAudioTracksRef.current.values()) {
+      await track.setPlaybackDevice(deviceId).catch(() => undefined);
+    }
+  }
+
   const statusLine = () => {
     if (phase === "connecting") return null;
     if (phase === "ringing")   return "Ringing…";
@@ -218,6 +287,9 @@ export function CallOverlay({
     return errorMsg ?? "Something went wrong";
   };
 
+  const isLive = phase !== "ended" && phase !== "error";
+  const isMutedOutput = volume === 0;
+
   return (
     <div
       className="fixed inset-0 z-50 flex h-dvh flex-col items-center justify-between overflow-hidden px-6 py-14 sm:py-20"
@@ -225,8 +297,9 @@ export function CallOverlay({
         background:
           "radial-gradient(ellipse 80% 60% at 50% 0%, #1d6b5f33 0%, transparent 70%), linear-gradient(160deg, #0d3530 0%, #071a17 45%, #020c0b 100%)",
       }}
+      onClick={() => setShowAudioPanel(false)}
     >
-      {/* subtle noise texture overlay */}
+      {/* Noise texture */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{
@@ -239,7 +312,14 @@ export function CallOverlay({
 
       {/* Top: identity */}
       <div className="relative flex flex-col items-center gap-6 text-center">
-        {/* Avatar with pulse rings when ringing */}
+        {/* Network quality — top right */}
+        {phase === "connected" && netQuality > 0 && (
+          <div className="absolute -top-8 right-0 flex items-center gap-1.5">
+            <NetworkDots quality={netQuality} />
+          </div>
+        )}
+
+        {/* Avatar */}
         <div className="relative flex items-center justify-center">
           {phase === "ringing" && (
             <>
@@ -262,27 +342,98 @@ export function CallOverlay({
 
         {/* Status */}
         <div className="flex min-h-[28px] items-center gap-2">
-          {phase === "connecting" && (
-            <Loader2 className="size-4 animate-spin text-white/40" />
-          )}
-          {phase === "connected" && (
-            <span className="size-1.5 animate-pulse rounded-full bg-emerald-400" />
-          )}
-          <p
-            className={`text-base font-medium tabular-nums ${
-              phase === "error" ? "text-red-400" : "text-white/60"
-            }`}
-          >
+          {phase === "connecting" && <Loader2 className="size-4 animate-spin text-white/40" />}
+          {phase === "connected" && <span className="size-1.5 animate-pulse rounded-full bg-emerald-400" />}
+          <p className={`text-base font-medium tabular-nums ${phase === "error" ? "text-red-400" : "text-white/60"}`}>
             {statusLine()}
           </p>
         </div>
       </div>
 
       {/* Bottom: controls */}
-      <div className="relative flex w-full flex-col items-center gap-10">
-        {phase !== "ended" && phase !== "error" && (
-          <div className="flex items-center gap-10">
-            {/* Mute */}
+      <div className="relative flex w-full flex-col items-center gap-6" onClick={(e) => e.stopPropagation()}>
+
+        {/* Audio panel — slides up above the controls */}
+        {showAudioPanel && isLive && (
+          <div className="w-full max-w-xs rounded-2xl bg-white/10 backdrop-blur-sm p-4 space-y-4 ring-1 ring-white/10">
+            {/* Volume slider */}
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-medium text-white/60">Volume</span>
+                <span className="text-xs tabular-nums text-white/40">{volume}%</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <VolumeX className="size-4 shrink-0 text-white/30" />
+                <input
+                  type="range"
+                  min={0}
+                  max={100}
+                  value={volume}
+                  onChange={(e) => handleVolumeChange(Number(e.target.value))}
+                  className="flex-1 h-1.5 appearance-none rounded-full bg-white/20 accent-emerald-400 cursor-pointer"
+                />
+                <Volume2 className="size-4 shrink-0 text-white/30" />
+              </div>
+            </div>
+
+            {/* Output device picker — only if multiple devices found */}
+            {outputDevices.length > 1 && (
+              <div className="space-y-1.5">
+                <span className="text-xs font-medium text-white/60">Audio output</span>
+                <div className="space-y-1">
+                  {outputDevices.map((d) => (
+                    <button
+                      key={d.deviceId}
+                      type="button"
+                      onClick={() => void handleDeviceChange(d.deviceId)}
+                      className={`flex w-full items-center gap-2 rounded-xl px-3 py-2 text-xs font-medium transition ${
+                        selectedDeviceId === d.deviceId
+                          ? "bg-emerald-500/20 text-emerald-300"
+                          : "text-white/60 hover:bg-white/10"
+                      }`}
+                    >
+                      <Volume2 className="size-3.5 shrink-0" />
+                      <span className="truncate">{d.label}</span>
+                      {selectedDeviceId === d.deviceId && (
+                        <span className="ml-auto size-1.5 rounded-full bg-emerald-400" />
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {isLive && (
+          <div className="flex w-full items-end justify-center gap-8">
+            {/* Speaker / Volume */}
+            <div className="flex flex-col items-center gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  if (!showAudioPanel && volume === 0) {
+                    handleVolumeChange(100);
+                  }
+                  setShowAudioPanel((p) => !p);
+                }}
+                disabled={phase === "connecting"}
+                className={`flex size-16 items-center justify-center rounded-full transition-all disabled:opacity-30 ${
+                  showAudioPanel
+                    ? "bg-white text-[#0a1f1c] shadow-lg shadow-white/20"
+                    : isMutedOutput
+                    ? "bg-white/20 text-white/50"
+                    : "bg-white/10 text-white hover:bg-white/20"
+                }`}
+              >
+                {isMutedOutput ? <VolumeX className="size-6" /> : <Volume2 className="size-6" />}
+              </button>
+              <span className="text-xs text-white/40">
+                {isMutedOutput ? "Unmute" : "Speaker"}
+              </span>
+            </div>
+
+            {/* Mute mic */}
             <div className="flex flex-col items-center gap-2">
               <button
                 type="button"
@@ -296,7 +447,7 @@ export function CallOverlay({
               >
                 {isMuted ? <MicOff className="size-6" /> : <Mic className="size-6" />}
               </button>
-              <span className="text-xs text-white/40">{isMuted ? "Unmute" : "Mute"}</span>
+              <span className="text-xs text-white/40">{isMuted ? "Unmute mic" : "Mute"}</span>
             </div>
 
             {/* End call */}
@@ -307,10 +458,7 @@ export function CallOverlay({
                 disabled={isEnding}
                 className="flex size-20 items-center justify-center rounded-full bg-red-500 text-white shadow-xl shadow-red-500/30 transition-all hover:scale-105 hover:bg-red-600 disabled:opacity-60"
               >
-                {isEnding
-                  ? <Loader2 className="size-7 animate-spin" />
-                  : <PhoneOff className="size-7" />
-                }
+                {isEnding ? <Loader2 className="size-7 animate-spin" /> : <PhoneOff className="size-7" />}
               </button>
               <span className="text-xs text-white/40">End call</span>
             </div>
