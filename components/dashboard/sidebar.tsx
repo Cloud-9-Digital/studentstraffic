@@ -18,6 +18,8 @@ import {
   Users,
   UserCog,
   PhoneCall,
+  MoreHorizontal,
+  X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -225,37 +227,121 @@ export function DashboardMobileHeader() {
   );
 }
 
+const bottomNavItems = [
+  { href: "/dashboard",              icon: LayoutDashboard, label: "Home" },
+  { href: "/dashboard/calls",        icon: PhoneCall,       label: "Calls" },
+  { href: "/dashboard/shortlists",   icon: BookmarkCheck,   label: "Shortlists" },
+  { href: "/dashboard/applications", icon: FileText,        label: "Applications" },
+];
+
 /** Mobile bottom nav */
 export function DashboardBottomNav() {
   const pathname = usePathname();
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [confirmSignOut, setConfirmSignOut] = useState(false);
 
   const isActive = (href: string) =>
-    href === "/dashboard" || href === "/dashboard/peer"
-      ? pathname === href
-      : pathname.startsWith(href);
+    href === "/dashboard" ? pathname === href : pathname.startsWith(href);
+
+  const drawerItems = [
+    { href: "/dashboard/settings",     icon: Settings,        label: "Settings" },
+    { href: "/dashboard/peer",          icon: Star,            label: "Guide Overview" },
+    { href: "/dashboard/peer/students", icon: Users,           label: "My Students" },
+    { href: "/dashboard/peer/edit",     icon: UserCog,         label: "Edit Guide Profile" },
+    { href: "/",                        icon: ExternalLink,    label: "Back to main site" },
+  ];
+
+  const isDrawerItemActive = (href: string) =>
+    href === "/dashboard/peer" ? pathname === href : pathname.startsWith(href);
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 flex border-t border-[#e5e7eb] bg-white lg:hidden">
-      {[...studentNavItems, ...peerNavItems].map(({ href, icon: Icon, label }) => (
-        <Link
-          key={href}
-          href={href}
+    <>
+      {/* Backdrop */}
+      {drawerOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/30 lg:hidden"
+          onClick={() => setDrawerOpen(false)}
+        />
+      )}
+
+      {/* More drawer */}
+      {drawerOpen && (
+        <div className="fixed bottom-[57px] left-0 right-0 z-50 rounded-t-2xl border-t border-[#e5e7eb] bg-white px-4 py-4 shadow-2xl lg:hidden">
+          <div className="mb-3 flex items-center justify-between">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">More</p>
+            <button
+              type="button"
+              onClick={() => setDrawerOpen(false)}
+              className="flex size-7 items-center justify-center rounded-full text-[#9ca3af] hover:bg-[#f3f4f6]"
+            >
+              <X className="size-4" />
+            </button>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            {drawerItems.map(({ href, icon: Icon, label }) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setDrawerOpen(false)}
+                className={cn(
+                  "flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors",
+                  isDrawerItemActive(href) && href !== "/"
+                    ? "bg-[#0f3d37] text-white"
+                    : "text-[#374151] hover:bg-[#f3f4f6]"
+                )}
+              >
+                <Icon className={cn(
+                  "size-4 shrink-0",
+                  isDrawerItemActive(href) && href !== "/" ? "text-white" : "text-[#9ca3af]"
+                )} />
+                {label}
+              </Link>
+            ))}
+            <button
+              type="button"
+              onClick={() => { setDrawerOpen(false); setConfirmSignOut(true); }}
+              className="flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium text-red-600 transition-colors hover:bg-red-50"
+            >
+              <LogOut className="size-4 shrink-0 text-red-400" />
+              Sign out
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Bottom bar */}
+      <nav className="fixed bottom-0 left-0 right-0 z-40 flex border-t border-[#e5e7eb] bg-white lg:hidden">
+        {bottomNavItems.map(({ href, icon: Icon, label }) => (
+          <Link
+            key={href}
+            href={href}
+            className={cn(
+              "flex flex-1 flex-col items-center gap-1 py-3 text-[10px] font-medium transition-colors",
+              isActive(href) ? "text-[#0f3d37]" : "text-[#9ca3af]"
+            )}
+          >
+            <Icon className="size-5" />
+            {label}
+          </Link>
+        ))}
+        <button
+          type="button"
+          onClick={() => setDrawerOpen((o) => !o)}
           className={cn(
             "flex flex-1 flex-col items-center gap-1 py-3 text-[10px] font-medium transition-colors",
-            isActive(href) ? "text-[#0f3d37]" : "text-[#9ca3af]"
+            drawerOpen ? "text-[#0f3d37]" : "text-[#9ca3af]"
           )}
         >
-          <Icon className="size-5" />
-          {label}
-        </Link>
-      ))}
-      <Link
-        href="/"
-        className="flex flex-1 flex-col items-center gap-1 py-3 text-[10px] font-medium text-[#9ca3af] transition-colors hover:text-[#0f3d37]"
-      >
-        <ExternalLink className="size-5" />
-        Main site
-      </Link>
-    </nav>
+          <MoreHorizontal className="size-5" />
+          More
+        </button>
+      </nav>
+
+      <SignOutDialog
+        open={confirmSignOut}
+        onConfirm={() => signOut({ callbackUrl: "/" })}
+        onCancel={() => setConfirmSignOut(false)}
+      />
+    </>
   );
 }
