@@ -232,6 +232,12 @@ export function CallOverlay({
         }
       } catch (err) {
         console.error("[agora] join failed", err);
+        // Leave the channel so the timed-out join doesn't keep running in the background
+        const client = clientRef.current;
+        if (client) {
+          clientRef.current = null;
+          void client.leave().catch(() => undefined);
+        }
         if (mountedRef.current) {
           setErrorMsg(err instanceof Error ? err.message : "Unable to join the call.");
           setPhase("error");
