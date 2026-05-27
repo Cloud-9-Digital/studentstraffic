@@ -100,13 +100,21 @@ export function CallOverlay({
         const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
         clientRef.current = client;
 
-        client.on("user-published", async (user: IAgoraRTCRemoteUser, mediaType) => {
-          await client.subscribe(user, mediaType);
-          if (mediaType === "audio" && user.audioTrack) {
-            user.audioTrack.play();
-            remoteTracksRef.current.set(user.uid, true);
-            if (!cancelled && mountedRef.current) setPhase("connected");
-          }
+        // Helper: subscribe and play a remote user's audio
+        async function subscribeAudio(user: IAgoraRTCRemoteUser) {
+          try {
+            await client.subscribe(user, "audio");
+            user.audioTrack?.play();
+          } catch { /* ignore */ }
+        }
+
+        // Immediately mark connected when any remote audio appears — don't
+        // wait for subscribe/play to finish, so the UI updates instantly.
+        client.on("user-published", (user: IAgoraRTCRemoteUser, mediaType) => {
+          if (mediaType !== "audio") return;
+          remoteTracksRef.current.set(user.uid, true);
+          if (!cancelled && mountedRef.current) setPhase("connected");
+          void subscribeAudio(user);
         });
 
         client.on("user-unpublished", (user: IAgoraRTCRemoteUser, mediaType) => {
@@ -128,11 +136,29 @@ export function CallOverlay({
           ),
         ]);
 
+        if (cancelled) return;
+
+        // After joining, immediately check for users already in the channel.
+        // user-published fires for pre-existing publishers but can race with
+        // our handler registration — this guarantees we don't miss them.
+        for (const user of client.remoteUsers) {
+          if (user.hasAudio && !remoteTracksRef.current.has(user.uid)) {
+            remoteTracksRef.current.set(user.uid, true);
+            void subscribeAudio(user);
+          }
+        }
+
+        // Transition state before touching the mic — mic permission can block
+        // for several seconds, but we already know connection status by now.
+        if (!cancelled && mountedRef.current) {
+          setPhase(remoteTracksRef.current.size > 0 ? "connected" : "ringing");
+        }
+
+        // Acquire mic and publish (may show browser permission dialog)
         const localTrack = await AgoraRTC.createMicrophoneAudioTrack();
+        if (cancelled) { localTrack.stop(); localTrack.close(); return; }
         localTrackRef.current = localTrack;
         await client.publish([localTrack]);
-
-        if (!cancelled && mountedRef.current) setPhase("ringing");
       } catch (err) {
         if (mountedRef.current) {
           setErrorMsg(err instanceof Error ? err.message : "Unable to join the call.");
