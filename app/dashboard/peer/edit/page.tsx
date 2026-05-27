@@ -5,13 +5,17 @@ import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { studentPeers, universities } from "@/lib/db/schema";
 import { PeerEditForm } from "@/components/dashboard/peer-edit-form";
+import { resolveDbUserId } from "@/lib/server-session";
 
 export default async function PeerEditPage() {
   const session = await auth();
-  if (!session?.user?.id) redirect("/login");
+  if (!session?.user?.email) redirect("/login");
 
   const db = getDb();
   if (!db) return <p className="text-sm text-[#6b7280]">Service temporarily unavailable.</p>;
+
+  const userId = await resolveDbUserId(session.user.email);
+  if (!userId) redirect("/login");
 
   const [peer] = await db
     .select({
@@ -27,7 +31,7 @@ export default async function PeerEditPage() {
     })
     .from(studentPeers)
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
-    .where(eq(studentPeers.peerUserId, session.user.id))
+    .where(eq(studentPeers.peerUserId, userId))
     .limit(1);
 
   if (!peer) redirect("/join");

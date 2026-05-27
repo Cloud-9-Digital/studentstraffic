@@ -36,6 +36,8 @@ const envSchema = z.object({
   // Error tracking (Sentry)
   NEXT_PUBLIC_SENTRY_DSN: z.string().url().optional(),
   SENTRY_AUTH_TOKEN: z.string().min(1).optional(),
+  NEXT_PUBLIC_AGORA_APP_ID: z.string().min(1).optional(),
+  AGORA_APP_CERTIFICATE: z.string().min(1).optional(),
 });
 
 function optionalEnv(value: string | undefined) {
@@ -74,6 +76,8 @@ const parsedEnv = envSchema.safeParse({
   UPSTASH_REDIS_REST_TOKEN: optionalEnv(process.env.UPSTASH_REDIS_REST_TOKEN),
   NEXT_PUBLIC_SENTRY_DSN: optionalEnv(process.env.NEXT_PUBLIC_SENTRY_DSN),
   SENTRY_AUTH_TOKEN: optionalEnv(process.env.SENTRY_AUTH_TOKEN),
+  NEXT_PUBLIC_AGORA_APP_ID: optionalEnv(process.env.NEXT_PUBLIC_AGORA_APP_ID),
+  AGORA_APP_CERTIFICATE: optionalEnv(process.env.AGORA_APP_CERTIFICATE),
 });
 
 if (!parsedEnv.success) {
@@ -159,8 +163,13 @@ export const env = {
   upstashRedisRestToken: parsedEnv.data.UPSTASH_REDIS_REST_TOKEN,
   sentryDsn: parsedEnv.data.NEXT_PUBLIC_SENTRY_DSN,
   sentryAuthToken: parsedEnv.data.SENTRY_AUTH_TOKEN,
+  agoraAppId: parsedEnv.data.NEXT_PUBLIC_AGORA_APP_ID,
+  agoraAppCertificate: parsedEnv.data.AGORA_APP_CERTIFICATE,
   hasUpstashRedis: Boolean(
     parsedEnv.data.UPSTASH_REDIS_REST_URL && parsedEnv.data.UPSTASH_REDIS_REST_TOKEN
   ),
   hasSentry: Boolean(parsedEnv.data.NEXT_PUBLIC_SENTRY_DSN),
+  hasAgoraVoice: Boolean(
+    parsedEnv.data.NEXT_PUBLIC_AGORA_APP_ID && parsedEnv.data.AGORA_APP_CERTIFICATE
+  ),
 };

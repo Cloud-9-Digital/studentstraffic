@@ -12,6 +12,8 @@ Complete list of all environment variables used in the application.
 | `UPSTASH_REDIS_REST_URL` | Upstash | ⚠️ Optional* | - | Rate limiting, caching |
 | `UPSTASH_REDIS_REST_TOKEN` | Upstash | ⚠️ Optional* | - | Rate limiting, caching |
 | `NEXT_PUBLIC_SENTRY_DSN` | Sentry | ⚠️ Optional | - | Error tracking |
+| `NEXT_PUBLIC_AGORA_APP_ID` | Agora | ⚠️ Optional | - | Browser/mobile voice calls |
+| `AGORA_APP_CERTIFICATE` | Agora | ⚠️ Optional | - | Server-side Agora token minting |
 | `SENTRY_ORG` | Sentry | ⚠️ Optional | - | Source map uploads |
 | `SENTRY_PROJECT` | Sentry | ⚠️ Optional | - | Source map uploads |
 | `SENTRY_AUTH_TOKEN` | Sentry | ❌ No | - | Source map uploads |
@@ -178,6 +180,39 @@ NEXT_PUBLIC_SENTRY_DSN=https://key@org-id.ingest.sentry.io/project-id
 - Client-side error tracking
 - Server-side error tracking
 - Edge runtime error tracking
+
+---
+
+## 📞 Voice Calling
+
+### NEXT_PUBLIC_AGORA_APP_ID
+```bash
+NEXT_PUBLIC_AGORA_APP_ID=your-agora-app-id
+```
+
+**Purpose**: Public Agora application identifier used by the web client when joining voice calls.
+
+**Required**: Optional overall, but required if you want in-app voice calling enabled.
+
+**Where it's used**:
+- `/calls/[callId]` voice room
+- Agora web client initialization
+
+---
+
+### AGORA_APP_CERTIFICATE
+```bash
+AGORA_APP_CERTIFICATE=your-agora-app-certificate
+```
+
+**Purpose**: Private Agora certificate used only on the server to generate RTC tokens.
+
+**Required**: Optional overall, but required together with `NEXT_PUBLIC_AGORA_APP_ID` for voice calling.
+
+**Security**: Keep secret, never expose it in browser code.
+
+**Where it's used**:
+- `/api/peer-calls/[callId]/token`
 
 ---
 

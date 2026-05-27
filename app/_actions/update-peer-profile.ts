@@ -5,6 +5,7 @@ import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { studentPeers } from "@/lib/db/schema";
 import { isAllowedPhotoType, uploadFileToCloudinary } from "@/lib/cloudinary-upload";
+import { resolveDbUserId } from "@/lib/server-session";
 
 export type UpdatePeerProfileState = { status: "idle" | "success" | "error"; message?: string };
 
@@ -13,15 +14,18 @@ export async function updatePeerProfileAction(
   formData: FormData
 ): Promise<UpdatePeerProfileState> {
   const session = await auth();
-  if (!session?.user?.id) return { status: "error", message: "Not signed in." };
+  if (!session?.user?.email) return { status: "error", message: "Not signed in." };
 
   const db = getDb();
   if (!db) return { status: "error", message: "Service unavailable. Please try again." };
 
+  const userId = await resolveDbUserId(session.user.email);
+  if (!userId) return { status: "error", message: "Account not found. Please sign in again." };
+
   const [peer] = await db
     .select({ id: studentPeers.id, photoUrl: studentPeers.photoUrl })
     .from(studentPeers)
-    .where(eq(studentPeers.peerUserId, session.user.id))
+    .where(eq(studentPeers.peerUserId, userId))
     .limit(1);
 
   if (!peer) return { status: "error", message: "Guide profile not found." };

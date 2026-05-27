@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { desc, eq, count } from "drizzle-orm";
 
+import { IncomingCallsPanel } from "@/components/dashboard/incoming-calls-panel";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import {
@@ -21,15 +22,19 @@ import {
   studentPeers,
   universities,
 } from "@/lib/db/schema";
+import { env } from "@/lib/env";
+import { getIncomingPeerCalls } from "@/lib/peer-calls";
+import { resolveDbUserId } from "@/lib/server-session";
 
 export default async function PeerOverviewPage() {
   const session = await auth();
-  if (!session?.user?.id) redirect("/login");
+  if (!session?.user?.email) redirect("/login");
 
   const db = getDb();
   if (!db) return <p className="text-sm text-[#6b7280]">Service temporarily unavailable.</p>;
 
-  const userId = session.user.id;
+  const userId = await resolveDbUserId(session.user.email);
+  if (!userId) redirect("/login");
 
   const [peer] = await db
     .select({
@@ -72,6 +77,7 @@ export default async function PeerOverviewPage() {
       .orderBy(desc(peerRequests.createdAt))
       .limit(5),
   ]);
+  const incomingCalls = env.hasAgoraVoice ? await getIncomingPeerCalls(userId) : [];
 
   const totalConnections = totalResult?.count ?? 0;
 
@@ -83,6 +89,8 @@ export default async function PeerOverviewPage() {
 
   return (
     <div className="space-y-6">
+      {env.hasAgoraVoice ? <IncomingCallsPanel initialCalls={incomingCalls} /> : null}
+
       {/* Profile header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-6 border-b border-[#f3f4f6]">
         <div className="flex items-center gap-4">

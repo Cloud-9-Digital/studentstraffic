@@ -5,18 +5,22 @@ import { desc, eq } from "drizzle-orm";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { peerRequests, studentPeers } from "@/lib/db/schema";
+import { resolveDbUserId } from "@/lib/server-session";
 
 export default async function PeerStudentsPage() {
   const session = await auth();
-  if (!session?.user?.id) redirect("/login");
+  if (!session?.user?.email) redirect("/login");
 
   const db = getDb();
   if (!db) return <p className="text-sm text-[#6b7280]">Service temporarily unavailable.</p>;
 
+  const userId = await resolveDbUserId(session.user.email);
+  if (!userId) redirect("/login");
+
   const [peer] = await db
     .select({ id: studentPeers.id })
     .from(studentPeers)
-    .where(eq(studentPeers.peerUserId, session.user.id))
+    .where(eq(studentPeers.peerUserId, userId))
     .limit(1);
 
   if (!peer) redirect("/join");

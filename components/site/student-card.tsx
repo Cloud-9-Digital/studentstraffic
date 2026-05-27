@@ -3,7 +3,16 @@
 import { useActionState, useEffect, useRef, useState, useTransition } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { BadgeCheck, Loader2, MapPin, Languages, GraduationCap, X, Mail } from "lucide-react";
+import {
+  BadgeCheck,
+  Loader2,
+  MapPin,
+  Languages,
+  GraduationCap,
+  X,
+  Mail,
+  PhoneCall,
+} from "lucide-react";
 
 import {
   connectToPeerAction,
@@ -232,12 +241,14 @@ function PeerProfileDialog({
   onOpenChange,
   isLoggedIn,
   onNeedForm,
+  voiceCallsEnabled,
 }: {
   peer: PeerWithUniversity;
   open: boolean;
   onOpenChange: (open: boolean) => void;
   isLoggedIn: boolean;
   onNeedForm: () => void;
+  voiceCallsEnabled: boolean;
 }) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -250,6 +261,18 @@ function PeerProfileDialog({
   useEffect(() => {
     if (!open) setResult(null);
   }, [open]);
+
+  const canStartVoiceCall = voiceCallsEnabled && peer.canReceiveCalls;
+
+  const handleVoiceCallClick = () => {
+    if (!canStartVoiceCall) return;
+    if (!isLoggedIn) {
+      router.push(`/login?callbackUrl=${encodeURIComponent(`/dashboard?peer=${peer.id}`)}`);
+      return;
+    }
+    onOpenChange(false);
+    router.push(`/dashboard?peer=${peer.id}`);
+  };
 
   const handleTalkClick = () => {
     if (!peer.hasWhatsApp) return;
@@ -272,6 +295,7 @@ function PeerProfileDialog({
   return (
     <Dialog open={open} onOpenChange={isPending ? undefined : onOpenChange}>
       <DialogContent className="max-w-sm p-0 overflow-hidden gap-0">
+        <DialogTitle className="sr-only">Call {peer.fullName}</DialogTitle>
 
         {result?.success ? (
           // ── Success ────────────────────────────────────────────────────
@@ -401,24 +425,43 @@ function PeerProfileDialog({
 
             {/* CTA */}
             <div className="px-4 py-5 space-y-2.5">
-              {peer.hasWhatsApp ? (
+              {canStartVoiceCall || peer.hasWhatsApp ? (
                 <>
                   {result?.error && (
                     <p className="rounded-xl border border-destructive/20 bg-destructive/10 px-3 py-2 text-xs text-destructive">
                       {result.error}
                     </p>
                   )}
-                  <button
-                    type="button"
-                    onClick={handleTalkClick}
-                    disabled={isPending}
-                    className="w-full rounded-xl bg-accent py-2.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent-strong disabled:opacity-70 flex items-center justify-center gap-2"
-                  >
-                    {isPending && <Loader2 className="size-4 animate-spin" />}
-                    {isLoggedIn
-                      ? isPending ? "Connecting…" : `Talk to ${firstName}`
-                      : `Sign in to talk to ${firstName}`}
-                  </button>
+                  {canStartVoiceCall ? (
+                    <button
+                      type="button"
+                      onClick={handleVoiceCallClick}
+                      disabled={isPending}
+                      className="w-full rounded-xl bg-accent py-2.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent-strong disabled:opacity-70 flex items-center justify-center gap-2"
+                    >
+                      <PhoneCall className="size-4" />
+                      {isLoggedIn
+                        ? `Open call dashboard for ${firstName}`
+                        : `Sign in to call ${firstName}`}
+                    </button>
+                  ) : null}
+                  {peer.hasWhatsApp ? (
+                    <button
+                      type="button"
+                      onClick={handleTalkClick}
+                      disabled={isPending}
+                      className={`w-full rounded-xl py-2.5 text-sm font-semibold transition-colors disabled:opacity-70 flex items-center justify-center gap-2 ${
+                        canStartVoiceCall
+                          ? "border border-border bg-background text-foreground hover:bg-muted"
+                          : "bg-accent text-accent-foreground hover:bg-accent-strong"
+                      }`}
+                    >
+                      {isPending && !canStartVoiceCall ? <Loader2 className="size-4 animate-spin" /> : null}
+                      {isLoggedIn
+                        ? isPending && !canStartVoiceCall ? "Connecting…" : `Request contact instead`
+                        : `Sign in to request contact`}
+                    </button>
+                  ) : null}
                   {!isLoggedIn && (
                     <p className="text-center text-xs text-muted-foreground">
                       Don&apos;t have an account?{" "}
@@ -450,10 +493,12 @@ function PeerProfileDialog({
 export function StudentCard({
   peer,
   isLoggedIn = false,
+  voiceCallsEnabled = false,
   autoOpen = false,
 }: {
   peer: PeerWithUniversity;
   isLoggedIn?: boolean;
+  voiceCallsEnabled?: boolean;
   autoOpen?: boolean;
 }) {
   const router = useRouter();
@@ -521,13 +566,13 @@ export function StudentCard({
 
         {/* CTA */}
         <div className="mt-auto border-t border-border px-4 py-3.5">
-          {peer.hasWhatsApp ? (
+          {peer.hasWhatsApp || (voiceCallsEnabled && peer.canReceiveCalls) ? (
             <button
               type="button"
               onClick={() => setProfileOpen(true)}
               className="w-full rounded-xl bg-accent py-2 text-xs font-semibold text-accent-foreground transition-colors hover:bg-accent-strong group-hover:shadow-sm"
             >
-              Talk to {firstName}
+              {voiceCallsEnabled && peer.canReceiveCalls ? `Call ${firstName}` : `Talk to ${firstName}`}
             </button>
           ) : (
             <p className="py-1 text-center text-[11px] text-muted-foreground">
@@ -544,6 +589,7 @@ export function StudentCard({
         onOpenChange={setProfileOpen}
         isLoggedIn={isLoggedIn}
         onNeedForm={() => setConnectOpen(true)}
+        voiceCallsEnabled={voiceCallsEnabled}
       />
 
       {/* Fallback form — only shown when user has no phone number on file */}

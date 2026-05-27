@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { ChevronDown, ChevronLeft, ChevronRight, Search, SlidersHorizontal, Users, X } from "lucide-react";
 
@@ -160,11 +160,40 @@ function FilterPanel({
 
 // ─── Main explorer ──────────────────────────────────────────────────────────
 
-export function StudentsExplorer({ peers, isLoggedIn = false }: { peers: PeerWithUniversity[]; isLoggedIn?: boolean }) {
+export function StudentsExplorer({
+  peers,
+  isLoggedIn = false,
+  voiceCallsEnabled = false,
+}: {
+  peers: PeerWithUniversity[];
+  isLoggedIn?: boolean;
+  voiceCallsEnabled?: boolean;
+}) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [searchInput, setSearchInput] = useState(searchParams.get("q") ?? "");
+
+  // Debounce search — push to URL 400ms after the user stops typing
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const current = searchParams.get("q") ?? "";
+      if (searchInput === current) return;
+      const params = new URLSearchParams(searchParams.toString());
+      if (searchInput) params.set("q", searchInput);
+      else params.delete("q");
+      params.delete("page");
+      const qs = params.toString();
+      router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [searchInput]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Keep local input in sync if URL param changes externally (e.g. clear button)
+  useEffect(() => {
+    setSearchInput(searchParams.get("q") ?? "");
+  }, [searchParams]);
 
   // Read state from URL
   const filters: Filters = {
@@ -317,8 +346,8 @@ export function StudentsExplorer({ peers, isLoggedIn = false }: { peers: PeerWit
               Talk to students studying abroad
             </h1>
             <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base md:leading-7">
-              Connect directly on WhatsApp with Indian students already at these
-              universities. Unfiltered answers from peers who&apos;ve been there.
+              Connect with Indian students already at these universities through
+              secure in-app conversations and voice calls. Unfiltered answers from peers who&apos;ve been there.
             </p>
           </div>
 
@@ -328,14 +357,14 @@ export function StudentsExplorer({ peers, isLoggedIn = false }: { peers: PeerWit
               <Search className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-white/40" />
               <input
                 type="text"
-                value={filters.search}
-                onChange={(e) => set("search", e.target.value)}
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
                 placeholder="Search by name or university…"
                 className="h-12 w-full rounded-xl border border-white/10 bg-white/10 pl-11 pr-10 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25 focus:bg-white/15 transition-colors"
               />
-              {filters.search && (
+              {searchInput && (
                 <button
-                  onClick={() => set("search", "")}
+                  onClick={() => setSearchInput("")}
                   className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md p-1 text-white/40 hover:text-white/70 transition-colors"
                 >
                   <X className="size-4" />
@@ -438,6 +467,7 @@ export function StudentsExplorer({ peers, isLoggedIn = false }: { peers: PeerWit
                         key={peer.id}
                         peer={peer}
                         isLoggedIn={isLoggedIn}
+                        voiceCallsEnabled={voiceCallsEnabled}
                         autoOpen={peer.id === autoOpenPeerId}
                       />
                     ))}

@@ -42,7 +42,7 @@ const securityHeaders = [
   },
   {
     key: "Permissions-Policy",
-    value: "camera=(), microphone=(), geolocation=()",
+    value: "camera=(), microphone=(self), geolocation=()",
   },
   {
     key: "Cross-Origin-Opener-Policy",
@@ -59,6 +59,7 @@ const securityHeaders = [
 ] satisfies Array<{ key: string; value: string }>;
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ["192.168.1.8"],
   logging: {
     browserToTerminal: "error",
     serverFunctions: false,

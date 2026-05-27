@@ -104,6 +104,14 @@ export type PeerPreferredContactMode = "Call" | "WhatsApp" | "Either";
 
 export type PeerRequestStatus = "new" | "contacted" | "matched" | "closed";
 
+export type PeerCallStatus =
+  | "ringing"
+  | "active"
+  | "missed"
+  | "declined"
+  | "ended"
+  | "expired";
+
 export type StudentPeer = {
   id: number;
   universitySlug: string;

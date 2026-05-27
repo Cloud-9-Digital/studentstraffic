@@ -17,6 +17,7 @@ import type {
   IndiaMbbsCollegeEditorialContent,
   LinkItem,
   PeerRequestStatus,
+  PeerCallStatus,
   SearchDocument,
   StudentPeerApplicationStatus,
   StudentPeerStatus,
@@ -607,6 +608,41 @@ export const peerRequests = pgTable(
   ]
 );
 
+export const peerCallSessions = pgTable(
+  "peer_call_sessions",
+  {
+    id: text("id").primaryKey(),
+    channelName: text("channel_name").notNull(),
+    universityId: integer("university_id")
+      .notNull()
+      .references(() => universities.id, { onDelete: "cascade" }),
+    peerId: integer("peer_id")
+      .notNull()
+      .references(() => studentPeers.id, { onDelete: "cascade" }),
+    peerUserId: varchar("peer_user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    callerUserId: varchar("caller_user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    status: text("status").$type<PeerCallStatus>().notNull().default("ringing"),
+    startedAt: timestamp("started_at", { withTimezone: true }),
+    answeredAt: timestamp("answered_at", { withTimezone: true }),
+    endedAt: timestamp("ended_at", { withTimezone: true }),
+    expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("peer_call_sessions_peer_idx").on(table.peerId),
+    index("peer_call_sessions_peer_user_idx").on(table.peerUserId),
+    index("peer_call_sessions_caller_user_idx").on(table.callerUserId),
+    index("peer_call_sessions_status_idx").on(table.status),
+    index("peer_call_sessions_created_at_idx").on(table.createdAt),
+    uniqueIndex("peer_call_sessions_channel_idx").on(table.channelName),
+  ]
+);
+
 export const universityReviews = pgTable(
   "university_reviews",
   {
@@ -841,6 +877,7 @@ export type AdminAuditLogRow = typeof adminAuditLogs.$inferSelect;
 export type StudentPeerRow = typeof studentPeers.$inferSelect;
 export type PeerRequestInsert = typeof peerRequests.$inferInsert;
 export type PeerRequestRow = typeof peerRequests.$inferSelect;
+export type PeerCallSessionRow = typeof peerCallSessions.$inferSelect;
 export type UniversityReviewInsert = typeof universityReviews.$inferInsert;
 export type UniversityReviewRow = typeof universityReviews.$inferSelect;
 export type SearchDocumentRow = typeof searchDocuments.$inferSelect;

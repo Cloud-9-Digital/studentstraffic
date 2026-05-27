@@ -92,6 +92,7 @@ export type PublicPeer = {
   courseName: string | null;
   currentYearOrBatch: string | null;
   hasWhatsApp: boolean;
+  canReceiveCalls: boolean;
   homeState: string | null;
   homeCity: string | null;
   languages: string[] | null;
@@ -118,6 +119,7 @@ export async function getActivePeersForUniversity(
         courseName: studentPeers.courseName,
         currentYearOrBatch: studentPeers.currentYearOrBatch,
         hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+        canReceiveCalls: sql<boolean>`${studentPeers.peerUserId} is not null`.mapWith(Boolean),
         homeState: studentPeers.homeState,
         homeCity: studentPeers.homeCity,
         languages: studentPeers.languages,
@@ -169,6 +171,7 @@ export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
         courseName: studentPeers.courseName,
         currentYearOrBatch: studentPeers.currentYearOrBatch,
         hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+        canReceiveCalls: sql<boolean>`${studentPeers.peerUserId} is not null`.mapWith(Boolean),
         homeState: studentPeers.homeState,
         homeCity: studentPeers.homeCity,
         languages: studentPeers.languages,
@@ -227,6 +230,7 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
         peerCourseName: studentPeers.courseName,
         peerCurrentYearOrBatch: studentPeers.currentYearOrBatch,
         hasWhatsApp: sql<boolean>`${studentPeers.contactPhone} is not null`.mapWith(Boolean),
+        canReceiveCalls: sql<boolean>`${studentPeers.peerUserId} is not null`.mapWith(Boolean),
         homeState: studentPeers.homeState,
         homeCity: studentPeers.homeCity,
         languages: studentPeers.languages,
@@ -258,6 +262,7 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
         courseName: row.peerCourseName,
         currentYearOrBatch: row.peerCurrentYearOrBatch,
         hasWhatsApp: row.hasWhatsApp,
+        canReceiveCalls: row.canReceiveCalls,
         homeState: row.homeState,
         homeCity: row.homeCity,
         languages: row.languages,

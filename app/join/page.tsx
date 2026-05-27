@@ -28,7 +28,7 @@ export default async function JoinPage() {
 
   if (db) {
     const [userResult, uniRows] = await Promise.all([
-      db.select({ phone: users.phone }).from(users).where(eq(users.id, session.user.id)).limit(1),
+      db.select({ phone: users.phone }).from(users).where(eq(users.email, session.user.email ?? "")).limit(1),
       db
         .select({
           id: universities.id,

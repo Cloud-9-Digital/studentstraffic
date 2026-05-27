@@ -80,11 +80,12 @@ export async function joinAsPeerAction(formData: FormData): Promise<JoinAsPeerSt
   const db = getDb();
   if (!db) return { error: "Service temporarily unavailable. Try again shortly." };
 
-  // Fetch user profile
+  // Fetch user profile by email — more reliable than ID (admin sessions use numeric IDs)
+  if (!session.user.email) return { error: "Please sign in again." };
   const [user] = await db
-    .select({ name: users.name, email: users.email, phone: users.phone })
+    .select({ id: users.id, name: users.name, email: users.email, phone: users.phone })
     .from(users)
-    .where(eq(users.id, session.user.id))
+    .where(eq(users.email, session.user.email))
     .limit(1);
 
   if (!user) return { error: "Your account could not be found. Please sign in again." };
@@ -102,7 +103,7 @@ export async function joinAsPeerAction(formData: FormData): Promise<JoinAsPeerSt
     await db
       .update(users)
       .set({ phone: data.phone, updatedAt: new Date() })
-      .where(eq(users.id, session.user.id));
+      .where(eq(users.id, user.id));
   }
 
   const headerStore = await headers();
@@ -185,7 +186,7 @@ export async function joinAsPeerAction(formData: FormData): Promise<JoinAsPeerSt
     .values({
       universityId: data.universityId,
       countryId: university.countryId ?? null,
-      peerUserId: session.user.id,
+      peerUserId: user.id,
       fullName: applicantName,
       email: applicantEmail,
       phone: applicantPhone,

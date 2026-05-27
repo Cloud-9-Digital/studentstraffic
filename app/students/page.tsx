@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 
 import { StudentsExplorer } from "@/components/site/students-explorer";
+import { env } from "@/lib/env";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import { getAllActivePeers } from "@/lib/university-community";
 import { auth } from "@/lib/auth";
@@ -20,7 +21,11 @@ export default async function StudentsPage() {
   ]);
   return (
     <Suspense>
-      <StudentsExplorer peers={peers} isLoggedIn={!!session?.user} />
+      <StudentsExplorer
+        peers={peers}
+        isLoggedIn={!!session?.user}
+        voiceCallsEnabled={env.hasAgoraVoice}
+      />
     </Suspense>
   );
 }
