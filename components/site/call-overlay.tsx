@@ -97,6 +97,10 @@ export function CallOverlay({
         if (cancelled) return;
 
         const AgoraRTC = (await import("agora-rtc-sdk-ng")).default;
+        // Maximum SDK verbosity so browser console captures all Agora events
+        AgoraRTC.setLogLevel(0);
+        console.log("[agora] joining channel", payload.channelName, "uid", payload.uid, "appId", payload.appId);
+
         const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
         clientRef.current = client;
 
@@ -108,9 +112,10 @@ export function CallOverlay({
           } catch { /* ignore */ }
         }
 
-        client.on("connection-state-change", (curState: string) => {
+        client.on("connection-state-change", (curState: string, prevState: string, reason?: string) => {
+          console.log("[agora] connection-state-change", prevState, "→", curState, reason ?? "");
           if (curState === "FAILED" && !cancelled && mountedRef.current) {
-            setErrorMsg("Connection failed. Check your network and try again.");
+            setErrorMsg(`Connection failed${reason ? `: ${reason}` : ""}. Check your network and try again.`);
             setPhase("error");
           }
         });
@@ -167,8 +172,10 @@ export function CallOverlay({
         localTrackRef.current = localTrack;
         await client.publish([localTrack]);
       } catch (err) {
+        console.error("[agora] join failed", err);
         if (mountedRef.current) {
-          setErrorMsg(err instanceof Error ? err.message : "Unable to join the call.");
+          const msg = err instanceof Error ? err.message : "Unable to join the call.";
+          setErrorMsg(msg);
           setPhase("error");
         }
       }
