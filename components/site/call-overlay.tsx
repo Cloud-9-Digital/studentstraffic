@@ -10,7 +10,7 @@ import { Loader2, Mic, MicOff, PhoneOff } from "lucide-react";
 
 type Phase = "connecting" | "ringing" | "connected" | "ended" | "error";
 
-const JOIN_TIMEOUT_MS = 15_000;
+const JOIN_TIMEOUT_MS = 30_000;
 
 type AgoraJoinPayload = {
   appId: string;
@@ -107,6 +107,13 @@ export function CallOverlay({
             user.audioTrack?.play();
           } catch { /* ignore */ }
         }
+
+        client.on("connection-state-change", (curState: string) => {
+          if (curState === "FAILED" && !cancelled && mountedRef.current) {
+            setErrorMsg("Connection failed. Check your network and try again.");
+            setPhase("error");
+          }
+        });
 
         // Immediately mark connected when any remote audio appears — don't
         // wait for subscribe/play to finish, so the UI updates instantly.

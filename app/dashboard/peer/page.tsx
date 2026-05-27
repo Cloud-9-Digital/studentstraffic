@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import { desc, eq, count } from "drizzle-orm";
 
-import { IncomingCallsPanel } from "@/components/dashboard/incoming-calls-panel";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import {
@@ -22,8 +21,7 @@ import {
   studentPeers,
   universities,
 } from "@/lib/db/schema";
-import { env } from "@/lib/env";
-import { getIncomingPeerCalls } from "@/lib/peer-calls";
+
 import { resolveDbUserId } from "@/lib/server-session";
 
 export default async function PeerOverviewPage() {
@@ -77,7 +75,6 @@ export default async function PeerOverviewPage() {
       .orderBy(desc(peerRequests.createdAt))
       .limit(5),
   ]);
-  const incomingCalls = env.hasAgoraVoice ? await getIncomingPeerCalls(userId) : [];
 
   const totalConnections = totalResult?.count ?? 0;
 
@@ -89,8 +86,6 @@ export default async function PeerOverviewPage() {
 
   return (
     <div className="space-y-6">
-      {env.hasAgoraVoice ? <IncomingCallsPanel initialCalls={incomingCalls} /> : null}
-
       {/* Profile header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-6 border-b border-[#f3f4f6]">
         <div className="flex items-center gap-4">
