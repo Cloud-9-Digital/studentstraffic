@@ -17,6 +17,7 @@ import {
   Star,
   Users,
   UserCog,
+  Inbox,
   PhoneCall,
   MoreHorizontal,
   X,
@@ -69,9 +70,10 @@ const studentNavItems = [
 ];
 
 const peerNavItems = [
-  { href: "/dashboard/peer",          icon: Star,    label: "Overview" },
-  { href: "/dashboard/peer/students", icon: Users,   label: "My Students" },
-  { href: "/dashboard/peer/edit",     icon: UserCog, label: "Edit Profile" },
+  { href: "/dashboard/peer",           icon: Star,    label: "Overview" },
+  { href: "/dashboard/peer/requests",  icon: Inbox,   label: "Requests" },
+  { href: "/dashboard/peer/students",  icon: Users,   label: "My Students" },
+  { href: "/dashboard/peer/edit",      icon: UserCog, label: "Edit Profile" },
 ];
 
 function Avatar({ name, image }: { name?: string | null; image?: string | null }) {
@@ -249,11 +251,12 @@ export function DashboardBottomNav() {
     href === "/dashboard" ? pathname === href : pathname.startsWith(href);
 
   const drawerItems = [
-    { href: "/dashboard/settings",     icon: Settings,        label: "Settings" },
-    { href: "/dashboard/peer",          icon: Star,            label: "Guide Overview" },
-    { href: "/dashboard/peer/students", icon: Users,           label: "My Students" },
-    { href: "/dashboard/peer/edit",     icon: UserCog,         label: "Edit Guide Profile" },
-    { href: "/",                        icon: ExternalLink,    label: "Back to main site" },
+    { href: "/dashboard/settings",      icon: Settings,     label: "Settings" },
+    { href: "/dashboard/peer",          icon: Star,         label: "Guide Overview" },
+    { href: "/dashboard/peer/requests", icon: Inbox,        label: "Requests" },
+    { href: "/dashboard/peer/students", icon: Users,        label: "My Students" },
+    { href: "/dashboard/peer/edit",     icon: UserCog,      label: "Edit Guide Profile" },
+    { href: "/",                        icon: ExternalLink, label: "Back to main site" },
   ];
 
   const isDrawerItemActive = (href: string) =>

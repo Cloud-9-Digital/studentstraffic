@@ -4,6 +4,7 @@ import { useActionState, useEffect, useRef, useState, useTransition } from "reac
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import {
+  ArrowLeft,
   BadgeCheck,
   Loader2,
   MapPin,
@@ -11,6 +12,7 @@ import {
   GraduationCap,
   X,
   Mail,
+  MessageSquare,
   PhoneCall,
 } from "lucide-react";
 
@@ -236,6 +238,20 @@ function ConnectDialog({
 
 // ─── Peer profile dialog ─────────────────────────────────────────────────────
 
+const SUCCESS_ANIMATION_STYLES = `
+  @keyframes pop-in {
+    0%   { transform: scale(0.4); opacity: 0; }
+    65%  { transform: scale(1.18); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+  @keyframes ring-out {
+    0%   { transform: scale(1); opacity: 0.5; }
+    100% { transform: scale(1.9); opacity: 0; }
+  }
+  .animate-pop-in { animation: pop-in 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+  .animate-ring-out { animation: ring-out 0.7s ease-out forwards; }
+`;
+
 function PeerProfileDialog({
   peer,
   open,
@@ -253,14 +269,19 @@ function PeerProfileDialog({
 }) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
-  const [result, setResult] = useState<{ error?: string; success?: boolean; booked?: boolean } | null>(null);
+  const [step, setStep] = useState<"profile" | "booking-form" | "whatsapp-success" | "booking-success">("profile");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState<string | null>(null);
   const firstName = peer.fullName.split(" ")[0];
   const callbackUrl = encodeURIComponent(`/students?peer=${peer.id}`);
   const location = [peer.homeCity, peer.homeState].filter(Boolean).join(", ");
 
-  // Reset result whenever the dialog is reopened
   useEffect(() => {
-    if (!open) setResult(null);
+    if (!open) {
+      setStep("profile");
+      setMessage("");
+      setError(null);
+    }
   }, [open]);
 
   const canStartVoiceCall = voiceCallsEnabled && peer.canReceiveCalls;
@@ -271,15 +292,21 @@ function PeerProfileDialog({
       router.push(`/login?callbackUrl=${encodeURIComponent(`/students?peer=${peer.id}`)}`);
       return;
     }
+    setError(null);
+    setStep("booking-form");
+  };
+
+  const handleSubmitBooking = () => {
+    setError(null);
     startTransition(async () => {
-      const res = await bookPeerCallAction(peer.id);
+      const res = await bookPeerCallAction(peer.id, message);
       if (res.success) {
-        setResult({ booked: true });
+        setStep("booking-success");
       } else if (res.alreadyBooked) {
         router.push("/dashboard/calls");
         onOpenChange(false);
       } else {
-        setResult({ error: res.error ?? "Unable to book the call." });
+        setError(res.error ?? "Unable to send request. Please try again.");
       }
     });
   };
@@ -290,39 +317,31 @@ function PeerProfileDialog({
       router.push(`/login?callbackUrl=${callbackUrl}`);
       return;
     }
+    setError(null);
     startTransition(async () => {
       const res = await quickConnectToPeerAction(peer.id, peer.universitySlug);
       if (res.missingPhone) {
-        // User has no phone on file — fall back to the manual form
         onOpenChange(false);
         onNeedForm();
         return;
       }
-      setResult(res);
+      if (res.success) {
+        setStep("whatsapp-success");
+      } else {
+        setError(res.error ?? "Unable to connect. Please try again.");
+      }
     });
   };
 
   return (
     <Dialog open={open} onOpenChange={isPending ? undefined : onOpenChange}>
       <DialogContent className="max-w-sm p-0 overflow-hidden gap-0">
-        <DialogTitle className="sr-only">Call {peer.fullName}</DialogTitle>
+        <DialogTitle className="sr-only">Connect with {peer.fullName}</DialogTitle>
 
-        {result?.success ? (
-          // ── Success ────────────────────────────────────────────────────
+        {/* ── WhatsApp success ── */}
+        {step === "whatsapp-success" && (
           <div className="p-6 text-center">
-            <style>{`
-              @keyframes pop-in {
-                0%   { transform: scale(0.4); opacity: 0; }
-                65%  { transform: scale(1.18); opacity: 1; }
-                100% { transform: scale(1); }
-              }
-              @keyframes ring-out {
-                0%   { transform: scale(1); opacity: 0.5; }
-                100% { transform: scale(1.9); opacity: 0; }
-              }
-              .animate-pop-in { animation: pop-in 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
-              .animate-ring-out { animation: ring-out 0.7s ease-out forwards; }
-            `}</style>
+            <style>{SUCCESS_ANIMATION_STYLES}</style>
             <div className="relative mx-auto mb-5 size-20">
               <span className="absolute inset-0 rounded-full bg-primary animate-ring-out" />
               <div className="animate-pop-in flex size-20 items-center justify-center rounded-full bg-gradient-to-br from-primary to-surface-dark-2 shadow-lg shadow-primary/20">
@@ -356,8 +375,104 @@ function PeerProfileDialog({
               Done
             </button>
           </div>
-        ) : (
-          // ── Profile view ───────────────────────────────────────────────
+        )}
+
+        {/* ── Booking success ── */}
+        {step === "booking-success" && (
+          <div className="p-6 text-center">
+            <style>{SUCCESS_ANIMATION_STYLES}</style>
+            <div className="relative mx-auto mb-5 size-20">
+              <span className="absolute inset-0 rounded-full bg-primary animate-ring-out" />
+              <div className="animate-pop-in flex size-20 items-center justify-center rounded-full bg-gradient-to-br from-primary to-surface-dark-2 shadow-lg shadow-primary/20">
+                <BadgeCheck className="size-10 text-primary-foreground" strokeWidth={1.75} />
+              </div>
+            </div>
+            <h3 className="mb-1 text-base font-semibold text-foreground">Request sent!</h3>
+            <p className="mb-4 text-sm text-muted-foreground leading-relaxed">
+              {firstName} has been notified. You&apos;ll get an email once they accept and can start your call.
+            </p>
+            <div className="rounded-xl border border-border bg-muted p-4 text-left space-y-2 mb-5">
+              <p className="text-xs font-semibold text-foreground">What happens next</p>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                1. {firstName} reviews your request in their dashboard.
+              </p>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                2. Once accepted, you can call from{" "}
+                <button
+                  type="button"
+                  onClick={() => { router.push("/dashboard/calls"); onOpenChange(false); }}
+                  className="font-semibold text-accent hover:underline"
+                >
+                  My Calls
+                </button>.
+              </p>
+            </div>
+            <button
+              onClick={() => onOpenChange(false)}
+              className="w-full rounded-xl bg-accent py-2.5 text-sm font-semibold text-accent-foreground hover:bg-accent-strong transition-colors"
+            >
+              Got it
+            </button>
+          </div>
+        )}
+
+        {/* ── Booking form ── */}
+        {step === "booking-form" && (
+          <div className="p-6">
+            <div className="mb-5 flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => { setStep("profile"); setError(null); }}
+                className="flex size-7 shrink-0 items-center justify-center rounded-full border border-border text-muted-foreground hover:bg-muted transition-colors"
+                aria-label="Back"
+              >
+                <ArrowLeft className="size-3.5" />
+              </button>
+              <div className="flex min-w-0 items-center gap-2.5">
+                <Avatar peer={peer} size={36} />
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-semibold text-foreground">{peer.fullName}</p>
+                  <p className="truncate text-xs text-muted-foreground">{peer.universityName}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mb-5">
+              <label className="mb-1.5 flex items-center gap-1.5 text-xs font-semibold text-foreground">
+                <MessageSquare className="size-3.5 text-muted-foreground" />
+                What would you like to discuss with {firstName}?
+              </label>
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder={`E.g. I'm interested in ${peer.courseName ?? "your course"} and want to know about the application process, accommodation, and life in ${peer.countryName ?? "your city"}.`}
+                rows={4}
+                maxLength={1000}
+                className="w-full resize-none rounded-xl border border-border bg-muted px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-accent/40"
+              />
+              <p className="mt-1 text-right text-[11px] text-muted-foreground/60">{message.length}/1000</p>
+            </div>
+
+            {error && (
+              <p className="mb-4 rounded-xl border border-destructive/20 bg-destructive/10 px-3 py-2 text-xs text-destructive">
+                {error}
+              </p>
+            )}
+
+            <button
+              type="button"
+              onClick={handleSubmitBooking}
+              disabled={isPending || message.trim().length === 0}
+              className="w-full rounded-xl bg-accent py-2.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent-strong disabled:opacity-60 flex items-center justify-center gap-2"
+            >
+              {isPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-4" />}
+              {isPending ? "Sending…" : `Request a call with ${firstName}`}
+            </button>
+          </div>
+        )}
+
+        {/* ── Profile view ── */}
+        {step === "profile" && (
           <>
             {/* Dark header band */}
             <div className="relative bg-gradient-to-br from-[#0b2e2a] to-[#155e53] px-6 pt-8 pb-16">
@@ -437,38 +552,20 @@ function PeerProfileDialog({
             <div className="px-4 py-5 space-y-2.5">
               {canStartVoiceCall || peer.hasWhatsApp ? (
                 <>
-                  {result?.error && (
+                  {error && (
                     <p className="rounded-xl border border-destructive/20 bg-destructive/10 px-3 py-2 text-xs text-destructive">
-                      {result.error}
+                      {error}
                     </p>
                   )}
-                  {result?.booked && (
-                    <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2.5 text-xs text-emerald-800">
-                      <p className="font-semibold">Call booked!</p>
-                      <p className="mt-0.5">
-                        {firstName} is saved in your{" "}
-                        <button
-                          type="button"
-                          onClick={() => { router.push("/dashboard/calls"); onOpenChange(false); }}
-                          className="font-semibold underline"
-                        >
-                          My Calls
-                        </button>{" "}
-                        dashboard. Start the call whenever you&apos;re ready.
-                      </p>
-                    </div>
-                  )}
-                  {canStartVoiceCall && !result?.booked ? (
+                  {canStartVoiceCall ? (
                     <button
                       type="button"
                       onClick={handleBookCallClick}
                       disabled={isPending}
                       className="w-full rounded-xl bg-accent py-2.5 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent-strong disabled:opacity-70 flex items-center justify-center gap-2"
                     >
-                      {isPending ? <Loader2 className="size-4 animate-spin" /> : <PhoneCall className="size-4" />}
-                      {isLoggedIn
-                        ? isPending ? "Booking…" : `Book a call with ${firstName}`
-                        : `Sign in to book a call`}
+                      <PhoneCall className="size-4" />
+                      {isLoggedIn ? `Request a call with ${firstName}` : `Sign in to request a call`}
                     </button>
                   ) : null}
                   {peer.hasWhatsApp ? (

@@ -112,7 +112,7 @@ export default async function PeerStudentsPage() {
                 <div className="flex items-start justify-between gap-2">
                   <p className="font-semibold text-sm text-[#0f1f1c]">{s.fullName}</p>
                   <p className="text-xs text-[#9ca3af] shrink-0">
-                    {s.createdAt?.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) ?? "—"}
+                    {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
                   </p>
                 </div>
                 {(s.userCity || s.userState) && (
@@ -157,7 +157,7 @@ export default async function PeerStudentsPage() {
                         : "—"}
                     </td>
                     <td className="px-4 py-3 text-[#9ca3af] whitespace-nowrap">
-                      {s.createdAt?.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) ?? "—"}
+                      {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
                     </td>
                   </tr>
                 ))}
@@ -192,7 +192,7 @@ export default async function PeerStudentsPage() {
                   <div className="flex items-center justify-between gap-2">
                     <p className="font-medium text-sm text-[#0f1f1c]">{c.callerName ?? "Unknown student"}</p>
                     <p className="text-xs text-[#9ca3af] shrink-0">
-                      {c.createdAt?.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) ?? "—"}
+                      {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
                     </p>
                   </div>
                   <div className="mt-1.5 flex items-center gap-2 text-xs text-[#6b7280]">
@@ -235,7 +235,7 @@ export default async function PeerStudentsPage() {
                         {callDuration(c.answeredAt, c.endedAt) ?? "—"}
                       </td>
                       <td className="px-4 py-3 text-[#9ca3af] whitespace-nowrap">
-                        {c.createdAt?.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) ?? "—"}
+                        {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
                       </td>
                     </tr>
                   ))}

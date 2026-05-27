@@ -653,7 +653,8 @@ export const peerCallBookings = pgTable(
     peerId: integer("peer_id")
       .notNull()
       .references(() => studentPeers.id, { onDelete: "cascade" }),
-    status: text("status").notNull().default("active"),
+    status: text("status").notNull().default("pending"),
+    message: text("message"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
   },
   (table) => [
