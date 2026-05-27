@@ -105,7 +105,34 @@ export default async function PeerStudentsPage() {
             <p className="mt-1 text-xs text-[#9ca3af]">When students contact you, they will appear here.</p>
           </div>
         ) : (
-          <div className="rounded-xl border border-[#e5e7eb] bg-white overflow-hidden">
+          <>
+          <div className="md:hidden space-y-3">
+            {students.map((s) => (
+              <div key={s.id} className="rounded-xl border border-[#e5e7eb] bg-white p-4">
+                <div className="flex items-start justify-between gap-2">
+                  <p className="font-semibold text-sm text-[#0f1f1c]">{s.fullName}</p>
+                  <p className="text-xs text-[#9ca3af] shrink-0">
+                    {s.createdAt?.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) ?? "—"}
+                  </p>
+                </div>
+                {(s.userCity || s.userState) && (
+                  <p className="mt-1 text-xs text-[#6b7280]">
+                    {s.userCity ? `${s.userCity}, ${s.userState}` : s.userState}
+                  </p>
+                )}
+                {s.courseInterest && (
+                  <p className="mt-1 text-xs text-[#6b7280]">{s.courseInterest}</p>
+                )}
+                {s.email && (
+                  <a href={`mailto:${s.email}`} className="mt-1.5 block text-xs font-medium text-[#0f3d37] hover:underline">
+                    {s.email}
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="hidden md:block rounded-xl border border-[#e5e7eb] bg-white overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
@@ -137,6 +164,7 @@ export default async function PeerStudentsPage() {
               </tbody>
             </table>
           </div>
+          </>
         )}
       </div>
 
@@ -157,7 +185,31 @@ export default async function PeerStudentsPage() {
               <p className="mt-1 text-xs text-[#9ca3af]">When students call you, the history appears here.</p>
             </div>
           ) : (
-            <div className="rounded-xl border border-[#e5e7eb] bg-white overflow-hidden">
+            <>
+            <div className="md:hidden divide-y divide-[#f3f4f6] rounded-xl border border-[#e5e7eb] bg-white overflow-hidden">
+              {callHistory.map((c) => (
+                <div key={c.id} className="p-4">
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="font-medium text-sm text-[#0f1f1c]">{c.callerName ?? "Unknown student"}</p>
+                    <p className="text-xs text-[#9ca3af] shrink-0">
+                      {c.createdAt?.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) ?? "—"}
+                    </p>
+                  </div>
+                  <div className="mt-1.5 flex items-center gap-2 text-xs text-[#6b7280]">
+                    <span className="inline-flex items-center gap-1">
+                      {callStatusIcon(c.status)}
+                      {callStatusLabel(c.status)}
+                    </span>
+                    {callDuration(c.answeredAt, c.endedAt) && (
+                      <span>· {callDuration(c.answeredAt, c.endedAt)}</span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Desktop table */}
+            <div className="hidden md:block rounded-xl border border-[#e5e7eb] bg-white overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
@@ -190,6 +242,7 @@ export default async function PeerStudentsPage() {
                 </tbody>
               </table>
             </div>
+            </>
           )}
         </div>
       )}

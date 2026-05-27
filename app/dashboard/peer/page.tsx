@@ -177,7 +177,30 @@ export default async function PeerOverviewPage() {
               <p className="mt-1 text-xs text-[#9ca3af]">When students contact you, they will appear here.</p>
             </div>
           ) : (
-            <div className="rounded-xl border border-[#e5e7eb] bg-white overflow-hidden">
+            <>
+            <div className="md:hidden divide-y divide-[#f3f4f6] rounded-xl border border-[#e5e7eb] bg-white overflow-hidden">
+              {recentConnections.map((c) => (
+                <div key={c.id} className="flex items-center justify-between gap-2 px-4 py-3">
+                  <div className="min-w-0">
+                    <p className="text-sm font-medium text-[#0f1f1c] truncate">{c.fullName}</p>
+                    {c.userState && <p className="text-xs text-[#6b7280]">{c.userState}</p>}
+                  </div>
+                  <p className="text-xs text-[#9ca3af] shrink-0">
+                    {c.createdAt?.toLocaleDateString("en-IN", { day: "numeric", month: "short" }) ?? "—"}
+                  </p>
+                </div>
+              ))}
+              {totalConnections > 5 && (
+                <div className="px-4 py-3">
+                  <Link href="/dashboard/peer/students" className="flex items-center gap-1 text-xs font-medium text-[#0f3d37] hover:underline">
+                    View all {totalConnections} students <ArrowRight className="size-3" />
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Desktop table */}
+            <div className="hidden md:block rounded-xl border border-[#e5e7eb] bg-white overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
@@ -209,6 +232,7 @@ export default async function PeerOverviewPage() {
                 </div>
               )}
             </div>
+            </>
           )}
         </div>
       </div>
