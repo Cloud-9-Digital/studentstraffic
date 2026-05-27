@@ -39,25 +39,40 @@ async function expireStaleRingingCalls(userId?: string) {
   const db = getDb();
   if (!db) return;
 
-  const whereClause = userId
+  const now = new Date();
+
+  // Expire ringing calls past their TTL
+  const ringingWhere = userId
     ? and(
         eq(peerCallSessions.status, "ringing"),
-        lt(peerCallSessions.expiresAt, new Date()),
+        lt(peerCallSessions.expiresAt, now),
         or(
           eq(peerCallSessions.peerUserId, userId),
           eq(peerCallSessions.callerUserId, userId)
         )
       )
-    : and(eq(peerCallSessions.status, "ringing"), lt(peerCallSessions.expiresAt, new Date()));
+    : and(eq(peerCallSessions.status, "ringing"), lt(peerCallSessions.expiresAt, now));
 
-  await db
-    .update(peerCallSessions)
-    .set({
-      status: "expired",
-      endedAt: new Date(),
-      updatedAt: new Date(),
-    })
-    .where(whereClause);
+  // Also end "active" calls that are past their TTL (e.g. caller closed browser without ending)
+  const activeWhere = userId
+    ? and(
+        eq(peerCallSessions.status, "active"),
+        lt(peerCallSessions.expiresAt, now),
+        or(
+          eq(peerCallSessions.peerUserId, userId),
+          eq(peerCallSessions.callerUserId, userId)
+        )
+      )
+    : and(eq(peerCallSessions.status, "active"), lt(peerCallSessions.expiresAt, now));
+
+  await Promise.all([
+    db.update(peerCallSessions)
+      .set({ status: "expired", endedAt: now, updatedAt: now })
+      .where(ringingWhere),
+    db.update(peerCallSessions)
+      .set({ status: "ended", endedAt: now, updatedAt: now })
+      .where(activeWhere),
+  ]);
 }
 
 export async function getAuthorizedPeerCallSession(
@@ -144,4 +159,54 @@ export async function getIncomingPeerCalls(userId: string): Promise<IncomingPeer
     createdAt: row.createdAt?.toISOString() ?? null,
     status: row.status,
   }));
+}
+
+export type ActiveCallSummary = {
+  id: string;
+  displayName: string;
+  universityName: string;
+};
+
+export async function getActivePeerCallForUser(userId: string): Promise<ActiveCallSummary | null> {
+  await expireStaleRingingCalls(userId);
+
+  const db = getDb();
+  if (!db) return null;
+
+  // Join from both sides: caller OR peer participant
+  const [row] = await db
+    .select({
+      id: peerCallSessions.id,
+      status: peerCallSessions.status,
+      universityName: universities.name,
+      peerName: studentPeers.fullName,
+      callerName: users.name,
+      callerUserId: peerCallSessions.callerUserId,
+      peerUserId: peerCallSessions.peerUserId,
+    })
+    .from(peerCallSessions)
+    .innerJoin(studentPeers, eq(peerCallSessions.peerId, studentPeers.id))
+    .innerJoin(universities, eq(peerCallSessions.universityId, universities.id))
+    .leftJoin(users, eq(peerCallSessions.callerUserId, users.id))
+    .where(
+      and(
+        inArray(peerCallSessions.status, OPEN_CALL_STATUSES),
+        gt(peerCallSessions.expiresAt, new Date()),
+        or(
+          eq(peerCallSessions.callerUserId, userId),
+          eq(peerCallSessions.peerUserId, userId)
+        )
+      )
+    )
+    .orderBy(desc(peerCallSessions.createdAt))
+    .limit(1);
+
+  if (!row) return null;
+
+  const isPeer = row.peerUserId === userId;
+  const displayName = isPeer
+    ? (row.callerName?.trim() || "A student")
+    : row.peerName;
+
+  return { id: row.id, displayName, universityName: row.universityName };
 }

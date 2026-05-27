@@ -119,6 +119,14 @@ export function CallOverlay({
     return () => { document.body.style.overflow = prev; };
   }, []);
 
+  // Warn before accidental page refresh / navigation away during an active call
+  useEffect(() => {
+    if (phase !== "connected" && phase !== "ringing") return;
+    const guard = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = ""; };
+    window.addEventListener("beforeunload", guard);
+    return () => window.removeEventListener("beforeunload", guard);
+  }, [phase]);
+
   // ── Agora join ──────────────────────────────────────────────────────────────
   useEffect(() => {
     mountedRef.current = true;
@@ -350,12 +358,15 @@ export function CallOverlay({
         </div>
       </div>
 
-      {/* Bottom: controls */}
-      <div className="relative flex w-full flex-col items-center gap-6" onClick={(e) => e.stopPropagation()}>
+      {/* Bottom: controls — fixed height so audio panel doesn't cause layout shift */}
+      <div className="relative flex w-full flex-col items-center">
 
-        {/* Audio panel — slides up above the controls */}
+        {/* Audio panel — absolutely positioned above buttons, no effect on layout */}
         {showAudioPanel && isLive && (
-          <div className="w-full max-w-xs rounded-2xl bg-white/10 backdrop-blur-sm p-4 space-y-4 ring-1 ring-white/10">
+          <div
+            className="absolute bottom-full mb-4 w-full max-w-xs rounded-2xl bg-white/10 backdrop-blur-sm p-4 space-y-4 ring-1 ring-white/10"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Volume slider */}
             <div className="space-y-2">
               <div className="flex items-center justify-between">
@@ -406,7 +417,7 @@ export function CallOverlay({
         )}
 
         {isLive && (
-          <div className="flex w-full items-end justify-center gap-8">
+          <div className="flex w-full items-center justify-center gap-8 py-2" onClick={(e) => e.stopPropagation()}>
             {/* Speaker / Volume */}
             <div className="flex flex-col items-center gap-2">
               <button
@@ -456,9 +467,9 @@ export function CallOverlay({
                 type="button"
                 onClick={() => void endCall()}
                 disabled={isEnding}
-                className="flex size-20 items-center justify-center rounded-full bg-red-500 text-white shadow-xl shadow-red-500/30 transition-all hover:scale-105 hover:bg-red-600 disabled:opacity-60"
+                className="flex size-16 items-center justify-center rounded-full bg-red-500 text-white shadow-xl shadow-red-500/30 transition-all hover:scale-105 hover:bg-red-600 disabled:opacity-60"
               >
-                {isEnding ? <Loader2 className="size-7 animate-spin" /> : <PhoneOff className="size-7" />}
+                {isEnding ? <Loader2 className="size-6 animate-spin" /> : <PhoneOff className="size-6" />}
               </button>
               <span className="text-xs text-white/40">End call</span>
             </div>

@@ -5,10 +5,11 @@ import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { studentPeers } from "@/lib/db/schema";
-import { getIncomingPeerCalls } from "@/lib/peer-calls";
+import { getIncomingPeerCalls, getActivePeerCallForUser } from "@/lib/peer-calls";
 import { resolveDbUserId } from "@/lib/server-session";
 import { DashboardSidebar, DashboardBottomNav, DashboardMobileHeader } from "@/components/dashboard/sidebar";
 import { IncomingCallsFloating } from "@/components/dashboard/incoming-calls-floating";
+import { RejoinCallBanner } from "@/components/dashboard/rejoin-call-banner";
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
@@ -16,6 +17,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
 
   let isPeerWithVoice = false;
   let initialCalls: Awaited<ReturnType<typeof getIncomingPeerCalls>> = [];
+  let activeCall: Awaited<ReturnType<typeof getActivePeerCallForUser>> = null;
 
   if (env.hasAgoraVoice && session.user.email) {
     const db = getDb();
@@ -27,10 +29,16 @@ export default async function DashboardLayout({ children }: { children: React.Re
         .where(eq(studentPeers.peerUserId, userId))
         .limit(1);
 
+      const [incomingResult, activeCallResult] = await Promise.all([
+        peer ? getIncomingPeerCalls(userId) : Promise.resolve([]),
+        getActivePeerCallForUser(userId),
+      ]);
+
       if (peer) {
         isPeerWithVoice = true;
-        initialCalls = await getIncomingPeerCalls(userId);
+        initialCalls = incomingResult;
       }
+      activeCall = activeCallResult;
     }
   }
 
@@ -51,6 +59,9 @@ export default async function DashboardLayout({ children }: { children: React.Re
 
       {/* Mobile bottom nav */}
       <DashboardBottomNav />
+
+      {/* Rejoin banner — shown to any user (caller or peer) with an active call after a refresh */}
+      {activeCall && <RejoinCallBanner call={activeCall} />}
 
       {/* Floating incoming-call dialog — only for peer guides with voice enabled */}
       {isPeerWithVoice && (
