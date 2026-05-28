@@ -239,6 +239,7 @@ export default function RegisterScreen() {
   const allRulesMet = RULES.every(r => r.test(password));
 
   async function handleCreate() {
+    if (loading) return;
     if (!allRulesMet) { Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error); return; }
     setLoading(true); setError(null);
     try {

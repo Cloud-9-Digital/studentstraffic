@@ -210,6 +210,25 @@ export async function loginMobileUser(
   const valid = await compare(password, user.passwordHash);
   if (!valid) return { error: "invalid" as const };
 
+  // Revoke old sessions beyond the 5 most recent, to prevent unbounded accumulation
+  const existingSessions = await db
+    .select({ id: mobileSessions.id })
+    .from(mobileSessions)
+    .where(and(eq(mobileSessions.userId, user.id), isNull(mobileSessions.revokedAt)))
+    .orderBy(mobileSessions.createdAt);
+
+  if (existingSessions.length >= 5) {
+    const toRevoke = existingSessions.slice(0, existingSessions.length - 4);
+    const now = new Date();
+    await Promise.all(
+      toRevoke.map((s) =>
+        db.update(mobileSessions)
+          .set({ revokedAt: now, updatedAt: now })
+          .where(eq(mobileSessions.id, s.id))
+      )
+    );
+  }
+
   const session = await createMobileSession(user.id, metadata);
   if (!session) return { error: "unavailable" as const };
 

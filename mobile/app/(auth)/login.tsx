@@ -202,6 +202,7 @@ export default function LoginScreen() {
   const [loading, setLoading] = useState(false);
 
   async function handleSignIn() {
+    if (loading) return;
     setError(null);
     setLoading(true);
     try {

@@ -8,6 +8,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { useEffect, useState } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useQuery } from "@tanstack/react-query";
@@ -17,6 +18,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import * as Haptics from "expo-haptics";
 
 import { mobileClient } from "../../src/api/mobileClient";
+import { getToken } from "../../src/api/tokenStore";
 import { Button } from "../../src/components/Button";
 import { CountryFlag } from "../../src/components/CountryFlag";
 import { UniversityCard } from "../../src/components/UniversityCard";
@@ -144,12 +146,18 @@ function DestCard({ name, slug, index, onPress }: {
 export default function HomeScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const [hasToken, setHasToken] = useState<boolean | null>(null);
 
-  const { data, isLoading, error } = useQuery({
+  useEffect(() => {
+    getToken().then(t => setHasToken(!!t));
+  }, []);
+
+  const { data, isLoading, error, refetch } = useQuery({
     queryKey: ["dashboard"],
     queryFn: () => mobileClient.getDashboard(),
     staleTime: 2 * 60 * 1000,
     gcTime: 10 * 60 * 1000,
+    enabled: hasToken === true,
   });
 
   // Countries from the API — drives the destination cards
@@ -170,7 +178,8 @@ export default function HomeScreen() {
       return allCountryMap[slug] ?? { slug, name: slug.charAt(0).toUpperCase() + slug.slice(1) };
     });
 
-  if (isLoading) {
+  // Still reading token from SecureStore or loading data
+  if (hasToken === null || (hasToken && isLoading)) {
     return (
       <View style={[s.root, { backgroundColor: BG }]}>
         <View style={s.center}><ActivityIndicator color={colors.primary} /></View>
@@ -178,7 +187,8 @@ export default function HomeScreen() {
     );
   }
 
-  if (error || !data) {
+  // No token — genuinely signed out
+  if (!hasToken) {
     return (
       <View style={[s.root, { backgroundColor: BG }]}>
         <SafeAreaView edges={["top"]} style={{ backgroundColor: BG }}>
@@ -197,6 +207,42 @@ export default function HomeScreen() {
             <Button label="Create free account" variant="secondary" icon="person-add" onPress={() => router.replace("/(auth)/register")} />
           </View>
         </ScrollView>
+      </View>
+    );
+  }
+
+  // Has token but API failed — connection/server error, not a sign-out
+  if (error || !data) {
+    const isAuthError = error instanceof Error && (
+      error.message.includes("sign in") || error.message.includes("401") || error.message.includes("unauthorized")
+    );
+    if (isAuthError) {
+      return (
+        <View style={[s.root, { backgroundColor: BG }]}>
+          <SafeAreaView edges={["top"]} style={{ backgroundColor: BG }}>
+            <View style={s.header}>
+              <Image source={require("../../assets/logo.png")} style={s.logo} resizeMode="contain" />
+            </View>
+          </SafeAreaView>
+          <ScrollView contentContainerStyle={[s.scroll, { paddingBottom: insets.bottom + 90 }]}>
+            <View style={s.emptyWrap}>
+              <View style={s.emptyIcon}><Ionicons name="school-outline" size={40} color={colors.primary} /></View>
+              <Text style={s.emptyTitle}>Session expired</Text>
+              <Text style={s.emptySub}>Please sign in again to continue.</Text>
+              <Button label="Sign in" icon="log-in" onPress={() => router.replace("/(auth)/login")} />
+            </View>
+          </ScrollView>
+        </View>
+      );
+    }
+    return (
+      <View style={[s.root, { backgroundColor: BG }]}>
+        <View style={s.center}>
+          <Ionicons name="wifi-outline" size={40} color={colors.faint} />
+          <Text style={[s.emptyTitle, { marginTop: 12 }]}>Connection error</Text>
+          <Text style={s.emptySub}>Check your internet connection and try again.</Text>
+          <Button label="Retry" icon="refresh" onPress={() => refetch()} />
+        </View>
       </View>
     );
   }
