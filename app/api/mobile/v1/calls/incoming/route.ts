@@ -7,5 +7,5 @@ export async function GET(request: Request) {
   if (!session) return mobileError("unauthorized", "Please sign in again.", 401);
 
   const calls = await getIncomingStudentCalls(session.user.id);
-  return mobileJson({ calls });
+  return mobileJson({ calls }, { headers: { "Cache-Control": "no-store, no-cache, must-revalidate" } });
 }

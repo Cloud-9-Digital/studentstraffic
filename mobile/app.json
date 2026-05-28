@@ -8,9 +8,9 @@
     "scheme": "studentstraffic",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0f3d37"
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0a4a3a"
     },
     "ios": {
       "supportsTablet": true,
@@ -20,6 +20,9 @@
       }
     },
     "android": {
+      "package": "com.studentstraffic.app",
+      "googleServicesFile": "./google-services.json",
+      "enableProguardInReleaseBuilds": true,
       "adaptiveIcon": {
         "backgroundColor": "#0f3d37",
         "foregroundImage": "./assets/android-icon-foreground.png"
@@ -29,7 +32,14 @@
         "android.permission.RECORD_AUDIO",
         "android.permission.BLUETOOTH",
         "android.permission.BLUETOOTH_CONNECT",
-        "android.permission.MODIFY_AUDIO_SETTINGS"
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.USE_FULL_SCREEN_INTENT",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.POST_NOTIFICATIONS"
       ]
     },
     "web": {
@@ -37,15 +47,9 @@
     },
     "plugins": [
       "expo-font",
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/icon.png",
-          "color": "#0f3d37",
-          "sounds": [],
-          "iosDisplayInForeground": true
-        }
-      ]
+      "@react-native-firebase/app",
+      "@react-native-firebase/messaging",
+      "./notifee.plugin.js"
     ],
     "extra": {
       "eas": {

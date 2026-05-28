@@ -290,7 +290,7 @@ export const mobileClient = {
   },
 
   async getIncomingCalls() {
-    const result = await request<{ calls: IncomingCall[] }>("/api/mobile/v1/calls/incoming");
+    const result = await request<{ calls: IncomingCall[] }>(`/api/mobile/v1/calls/incoming?_t=${Date.now()}`);
     return result.calls;
   },
 

@@ -3,6 +3,11 @@ import { AppState } from "react-native";
 
 import { mobileClient } from "../api/mobileClient";
 import type { IncomingCall } from "../types/domain";
+import {
+  cancelIncomingCallNotification,
+  startCallForegroundService,
+  stopCallForegroundService,
+} from "../services/callNotificationService";
 
 type ActiveCall = {
   callId: string;
@@ -37,15 +42,22 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
   const pollingRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const appStateRef = useRef(AppState.currentState);
 
-  // Poll for incoming calls every 8 seconds when app is active
+  // Poll for incoming calls every 3 seconds when app is active
   useEffect(() => {
+    if (activeCall) return; // don't poll while in a call
+
     const poll = async () => {
-      if (activeCall) return; // don't poll if already in a call
       try {
         const calls = await mobileClient.getIncomingCalls();
-        if (calls.length > 0 && !incomingCall) {
-          setIncomingCall(calls[0]);
-        } else if (calls.length === 0) {
+        if (calls.length > 0) {
+          setIncomingCall((prev) => {
+            // only update if it's a new call or status changed
+            if (!prev || prev.id !== calls[0].id || prev.status !== calls[0].status) {
+              return calls[0];
+            }
+            return prev;
+          });
+        } else {
           setIncomingCall(null);
         }
       } catch {
@@ -53,7 +65,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
       }
     };
 
-    pollingRef.current = setInterval(poll, 8000);
+    pollingRef.current = setInterval(poll, 3000);
     poll(); // immediate first check
 
     const sub = AppState.addEventListener("change", (state) => {
@@ -65,7 +77,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
       if (pollingRef.current) clearInterval(pollingRef.current);
       sub.remove();
     };
-  }, [activeCall, incomingCall]);
+  }, [activeCall]);
 
   const startCall = useCallback(async (bookingId: number, peerName: string, universityName: string) => {
     setIsStarting(true);
@@ -73,7 +85,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
     try {
       const { callId } = await mobileClient.startCall(bookingId);
       const tokenData = await mobileClient.getCallToken(callId);
-      setActiveCall({
+      const call: ActiveCall = {
         callId,
         appId: tokenData.appId,
         channelName: tokenData.channelName,
@@ -82,7 +94,9 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
         displayName: peerName,
         universityName,
         isPeerParticipant: tokenData.call.isPeerParticipant,
-      });
+      };
+      setActiveCall(call);
+      startCallForegroundService(call.callId, call.displayName).catch(() => {});
     } catch (e: any) {
       setCallError(e?.message ?? "Failed to start call.");
     } finally {
@@ -96,7 +110,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
     setCallError(null);
     try {
       const tokenData = await mobileClient.getCallToken(incomingCall.id);
-      setActiveCall({
+      const call: ActiveCall = {
         callId: incomingCall.id,
         appId: tokenData.appId,
         channelName: tokenData.channelName,
@@ -105,8 +119,11 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
         displayName: tokenData.call.peerName,
         universityName: tokenData.call.universityName,
         isPeerParticipant: false,
-      });
+      };
+      setActiveCall(call);
       setIncomingCall(null);
+      cancelIncomingCallNotification(incomingCall.id).catch(() => {});
+      startCallForegroundService(call.callId, call.displayName).catch(() => {});
     } catch (e: any) {
       setCallError(e?.message ?? "Failed to join call.");
     } finally {
@@ -134,12 +151,14 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
 
   const endCall = useCallback(async () => {
     if (!activeCall) return;
+    const { callId } = activeCall;
+    setActiveCall(null);
+    stopCallForegroundService(callId).catch(() => {});
     try {
-      await mobileClient.endCall(activeCall.callId);
+      await mobileClient.endCall(callId);
     } catch {
       // ignore — call is ended locally regardless
     }
-    setActiveCall(null);
   }, [activeCall]);
 
   return (

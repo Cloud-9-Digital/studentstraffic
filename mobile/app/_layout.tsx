@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Modal, NativeModules } from "react-native";
+import { Modal, Platform } from "react-native";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import * as SplashScreen from "expo-splash-screen";
@@ -13,15 +13,16 @@ import {
   PlusJakartaSans_800ExtraBold,
 } from "@expo-google-fonts/plus-jakarta-sans";
 import {
-  Fraunces_300Light,
   Fraunces_400Regular,
   Fraunces_500Medium,
   Fraunces_600SemiBold,
-  Fraunces_400Regular_Italic,
 } from "@expo-google-fonts/fraunces";
 import { PaperProvider } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient } from "@tanstack/react-query";
+import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
+import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { colors } from "../src/theme/tokens";
@@ -32,6 +33,11 @@ import { CallProvider, useCall } from "../src/context/CallContext";
 import { CallOverlay } from "../src/features/calls/CallOverlay";
 import { IncomingCallBanner } from "../src/features/calls/IncomingCallBanner";
 import { usePushToken } from "../src/hooks/usePushToken";
+import { registerBackgroundHandlers } from "../src/services/callNotificationService";
+
+// ─── Register background handlers before React mounts ───────────────────────
+// This runs when the module is loaded, covering killed-state scenarios.
+registerBackgroundHandlers();
 
 SplashScreen.preventAutoHideAsync();
 
@@ -42,11 +48,9 @@ export default function RootLayout() {
     "PlusJakartaSans-SemiBold":  PlusJakartaSans_600SemiBold,
     "PlusJakartaSans-Bold":      PlusJakartaSans_700Bold,
     "PlusJakartaSans-ExtraBold": PlusJakartaSans_800ExtraBold,
-    "Fraunces-Light":            Fraunces_300Light,
     "Fraunces-Regular":          Fraunces_400Regular,
     "Fraunces-Medium":           Fraunces_500Medium,
     "Fraunces-SemiBold":         Fraunces_600SemiBold,
-    "Fraunces-Italic":           Fraunces_400Regular_Italic,
   });
 
   const [queryClient] = useState(
@@ -54,10 +58,18 @@ export default function RootLayout() {
       defaultOptions: {
         queries: {
           staleTime: 30_000,
-          gcTime: 15 * 60_000,
+          gcTime: 24 * 60 * 60_000,
           retry: 1,
         },
       },
+    })
+  );
+
+  const [persister] = useState(
+    () => createAsyncStoragePersister({
+      storage: AsyncStorage,
+      key: "ST_QUERY_CACHE_V1",
+      throttleTime: 1000,
     })
   );
 
@@ -68,7 +80,10 @@ export default function RootLayout() {
   if (!fontsLoaded && !fontError) return null;
 
   return (
-    <QueryClientProvider client={queryClient}>
+    <PersistQueryClientProvider
+      client={queryClient}
+      persistOptions={{ persister, maxAge: 24 * 60 * 60_000 }}
+    >
       <SafeAreaProvider>
         <PaperProvider
           theme={paperTheme}
@@ -86,7 +101,8 @@ export default function RootLayout() {
             <CompareProvider>
             <CallProvider>
             <PushNotificationSetup />
-            <NotificationTapHandler />
+            <FCMForegroundHandler />
+            <NotifeeEventHandler />
             <StatusBar style="dark" />
             <Stack
               screenOptions={{
@@ -123,7 +139,7 @@ export default function RootLayout() {
           </ToastProvider>
         </PaperProvider>
       </SafeAreaProvider>
-    </QueryClientProvider>
+    </PersistQueryClientProvider>
   );
 }
 
@@ -150,27 +166,63 @@ function PushNotificationSetup() {
   return null;
 }
 
-function NotificationTapHandler() {
+// Handles FCM messages while the app is in the foreground.
+// Background / killed state is handled by registerBackgroundHandlers() above.
+function FCMForegroundHandler() {
   const { openIncomingCallById } = useCall();
 
   useEffect(() => {
-    if (!NativeModules.ExpoPushTokenManager) return; // not linked (Expo Go)
-    let sub: { remove: () => void } | undefined;
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Notifications = require("expo-notifications");
-    sub = Notifications.addNotificationResponseReceivedListener((response: any) => {
-      const data = response.notification.request.content.data as Record<string, unknown>;
-      if (
-        data?.type === "incoming_call" &&
-        typeof data?.callId === "string" &&
-        typeof data?.callerDisplayName === "string" &&
-        typeof data?.universityName === "string"
-      ) {
-        openIncomingCallById(data.callId, data.callerDisplayName, data.universityName);
-      }
-    });
-    return () => sub?.remove();
+    if (Platform.OS !== "android") return;
+    let unsub: (() => void) | undefined;
+    try {
+      const messaging = require("@react-native-firebase/messaging").default;
+      unsub = messaging().onMessage(async (message: any) => {
+        const data = message.data as Record<string, string>;
+        if (data?.type === "incoming_call") {
+          // App is open — the polling banner will show within 3s.
+          // Immediately show it without waiting for next poll.
+          openIncomingCallById(data.callId, data.callerDisplayName, data.universityName);
+        }
+      });
+    } catch {}
+    return () => unsub?.();
   }, [openIncomingCallById]);
+
+  return null;
+}
+
+// Handles Accept / Decline taps on notifee notifications while app is in the foreground,
+// AND processes pending actions stored from background / killed state button taps.
+function NotifeeEventHandler() {
+  const { openIncomingCallById, declineIncomingCall, incomingCall, acceptIncomingCall } = useCall();
+
+  useEffect(() => {
+    // Check for pending action stored while app was killed
+    import("../src/services/callNotificationService").then(({ consumePendingCallAction }) => {
+      consumePendingCallAction().then((pending) => {
+        if (!pending) return;
+        if (pending.action === "accept") {
+          openIncomingCallById(pending.callId, pending.callerDisplayName, pending.universityName);
+        }
+        // Decline: server TTL cleans up. Optionally call endCall API here.
+      }).catch(() => {});
+    });
+
+    // Foreground notifee events (Accept / Decline tapped while app is open)
+    let unsub: (() => void) | undefined;
+    try {
+      const notifee = require("@notifee/react-native").default;
+      const { EventType } = require("@notifee/react-native");
+      unsub = notifee.onForegroundEvent(({ type, detail }: any) => {
+        if (type !== EventType.ACTION_PRESS) return;
+        const actionId = detail.pressAction?.id;
+        if (actionId === "accept") acceptIncomingCall();
+        if (actionId === "decline") declineIncomingCall();
+      });
+    } catch {}
+
+    return () => unsub?.();
+  }, [openIncomingCallById, acceptIncomingCall, declineIncomingCall]);
 
   return null;
 }

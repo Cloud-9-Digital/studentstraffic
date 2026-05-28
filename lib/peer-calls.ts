@@ -175,13 +175,36 @@ export async function getIncomingStudentCalls(studentUserId: string): Promise<In
   const db = getDb();
   if (!db) return [];
 
-  const rows = await db
+  // Case 1: counsellor/admin initiated the call — student is peerUserId (ringing or active)
+  const counsellorInitiated = db
     .select({
       id: peerCallSessions.id,
       status: peerCallSessions.status,
       createdAt: peerCallSessions.createdAt,
       universityName: universities.name,
-      peerName: studentPeers.fullName,
+      displayName: users.name,
+    })
+    .from(peerCallSessions)
+    .innerJoin(universities, eq(peerCallSessions.universityId, universities.id))
+    .leftJoin(users, eq(peerCallSessions.callerUserId, users.id))
+    .where(
+      and(
+        eq(peerCallSessions.peerUserId, studentUserId),
+        inArray(peerCallSessions.status, OPEN_CALL_STATUSES),
+        gt(peerCallSessions.expiresAt, new Date())
+      )
+    )
+    .orderBy(desc(peerCallSessions.createdAt))
+    .limit(5);
+
+  // Case 2: student initiated the call — reconnect when peer has joined (active)
+  const studentInitiated = db
+    .select({
+      id: peerCallSessions.id,
+      status: peerCallSessions.status,
+      createdAt: peerCallSessions.createdAt,
+      universityName: universities.name,
+      displayName: studentPeers.fullName,
     })
     .from(peerCallSessions)
     .innerJoin(studentPeers, eq(peerCallSessions.peerId, studentPeers.id))
@@ -189,7 +212,6 @@ export async function getIncomingStudentCalls(studentUserId: string): Promise<In
     .where(
       and(
         eq(peerCallSessions.callerUserId, studentUserId),
-        // "active" means the peer has already joined and is waiting — the student hasn't seen this
         inArray(peerCallSessions.status, ["active" as PeerCallStatus]),
         gt(peerCallSessions.expiresAt, new Date())
       )
@@ -197,13 +219,18 @@ export async function getIncomingStudentCalls(studentUserId: string): Promise<In
     .orderBy(desc(peerCallSessions.createdAt))
     .limit(5);
 
-  return rows.map((row) => ({
-    id: row.id,
-    peerName: row.peerName?.trim() || "Your guide",
-    universityName: row.universityName,
-    createdAt: row.createdAt?.toISOString() ?? null,
-    status: row.status,
-  }));
+  const [counsellorRows, studentRows] = await Promise.all([counsellorInitiated, studentInitiated]);
+
+  const seen = new Set<string>();
+  return [...counsellorRows, ...studentRows]
+    .filter(row => { if (seen.has(row.id)) return false; seen.add(row.id); return true; })
+    .map((row) => ({
+      id: row.id,
+      peerName: row.displayName?.trim() || "Your counsellor",
+      universityName: row.universityName,
+      createdAt: row.createdAt?.toISOString() ?? null,
+      status: row.status,
+    }));
 }
 
 export type ActiveCallSummary = {

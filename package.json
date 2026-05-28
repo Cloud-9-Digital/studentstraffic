@@ -46,6 +46,7 @@
     "country-state-city": "^3.2.1",
     "drizzle-orm": "^0.45.1",
     "expo-server-sdk": "^6.1.0",
+    "firebase-admin": "^13.10.0",
     "google-auth-library": "^10.6.2",
     "lucide-react": "^1.7.0",
     "next": "16.2.1",

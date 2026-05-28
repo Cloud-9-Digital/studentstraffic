@@ -1,0 +1,30 @@
+{
+  "_INSTRUCTIONS": "Download your real google-services.json from Firebase Console → Project Settings → Your Android app (com.studentstraffic.app) → Download google-services.json. Rename it to google-services.json in this folder.",
+  "project_info": {
+    "project_number": "REPLACE",
+    "project_id": "REPLACE",
+    "storage_bucket": "REPLACE.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REPLACE",
+        "android_client_info": {
+          "package_name": "com.studentstraffic.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "REPLACE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

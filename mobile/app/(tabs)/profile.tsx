@@ -21,6 +21,7 @@ import { StatusBar } from "expo-status-bar";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { colors, shadow } from "../../src/theme/tokens";
+import { Skeleton } from "../../src/components/Skeleton";
 
 const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
 
@@ -231,7 +232,7 @@ export default function ProfileScreen() {
   const queryClient = useQueryClient();
   const insets = useSafeAreaInsets();
 
-  const { data: profile } = useQuery({
+  const { data: profile, isLoading: profileLoading } = useQuery({
     queryKey: ["profile"],
     queryFn: () => mobileClient.getProfile(),
     staleTime: 2 * 60 * 1000,
@@ -251,6 +252,8 @@ export default function ProfileScreen() {
     staleTime: 60 * 1000,
     gcTime: 10 * 60 * 1000,
   });
+
+  const loadingProfile = profileLoading && !profile;
 
   const [activeField, setActiveField] = useState<FieldConfig | null>(null);
 
@@ -307,78 +310,120 @@ export default function ProfileScreen() {
         >
           <SafeAreaView edges={["top"]}>
             <View style={s.headerInner}>
-              <View style={s.avatarRing}>
-                <Pressable
-                  onPress={() => openField("name")}
-                  style={s.avatar}
-                >
-                  <Text style={s.avatarText}>{initials(name)}</Text>
-                </Pressable>
-              </View>
-              <Text style={s.name}>{name}</Text>
-              <Text style={s.email}>{email}</Text>
+              {loadingProfile ? (
+                <>
+                  <Skeleton width={76} height={76} borderRadius={23} light style={{ marginBottom: 14 }} />
+                  <Skeleton width={160} height={22} borderRadius={6} light style={{ marginBottom: 8 }} />
+                  <Skeleton width={120} height={14} borderRadius={5} light style={{ marginBottom: 20 }} />
+                  <View style={[s.statsRow, { gap: 24 }]}>
+                    <Skeleton width={90} height={16} borderRadius={5} light />
+                    <Skeleton width={110} height={16} borderRadius={5} light />
+                  </View>
+                </>
+              ) : (
+                <>
+                  <View style={s.avatarRing}>
+                    <Pressable
+                      onPress={() => openField("name")}
+                      style={s.avatar}
+                    >
+                      <Text style={s.avatarText}>{initials(name)}</Text>
+                    </Pressable>
+                  </View>
+                  <Text style={s.name}>{name}</Text>
+                  <Text style={s.email}>{email}</Text>
 
-              <View style={s.statsRow}>
-                <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/shortlists"); }} style={s.statPill}>
-                  <Ionicons name="bookmark" size={13} color={colors.mint} />
-                  <Text style={s.statLabel}>
-                    {shortlists !== undefined ? shortlists.length : "–"} Saved
-                  </Text>
-                </Pressable>
-                <View style={s.statDot} />
-                <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/applications"); }} style={s.statPill}>
-                  <Ionicons name="document-text" size={13} color={colors.mint} />
-                  <Text style={s.statLabel}>
-                    {applications !== undefined ? applications.length : "–"} Applications
-                  </Text>
-                </Pressable>
-              </View>
+                  <View style={s.statsRow}>
+                    <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/shortlists"); }} style={s.statPill}>
+                      <Ionicons name="bookmark" size={13} color={colors.mint} />
+                      <Text style={s.statLabel}>
+                        {shortlists !== undefined ? shortlists.length : "–"} Saved
+                      </Text>
+                    </Pressable>
+                    <View style={s.statDot} />
+                    <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/applications"); }} style={s.statPill}>
+                      <Ionicons name="document-text" size={13} color={colors.mint} />
+                      <Text style={s.statLabel}>
+                        {applications !== undefined ? applications.length : "–"} Applications
+                      </Text>
+                    </Pressable>
+                  </View>
+                </>
+              )}
             </View>
           </SafeAreaView>
         </LinearGradient>
 
         {/* ── Settings ── */}
         <View style={s.content}>
-          <Text style={s.sectionLabel}>MY DETAILS</Text>
-          <SettingsGroup>
-            <SettingsRow
-              icon="person-outline"
-              label="Name"
-              value={profile?.name ?? "Add name"}
-              onPress={() => openField("name")}
-            />
-            <SettingsRow
-              icon="call-outline"
-              label="Phone"
-              value={profile?.phone ?? "Add phone"}
-              onPress={() => openField("phone")}
-            />
-            <SettingsRow
-              icon="trophy-outline"
-              label="NEET Score"
-              value={profile?.neetScore ? String(profile.neetScore) : "Not added"}
-              onPress={() => openField("neetScore")}
-            />
-            <SettingsRow
-              icon="wallet-outline"
-              label="Budget"
-              value={profile?.budgetUsd ? `$${profile.budgetUsd.toLocaleString()}/yr` : "Not added"}
-              onPress={() => openField("budgetUsd")}
-              last
-            />
-          </SettingsGroup>
-
-          {(profile?.preferredCountries?.length ?? 0) > 0 && (
+          {loadingProfile ? (
             <>
-              <Text style={s.sectionLabel}>PREFERENCES</Text>
+              <Skeleton width={80} height={10} borderRadius={4} style={{ marginTop: 8, marginBottom: 10, marginLeft: 4 }} />
+              <View style={grp.wrap}>
+                {[0, 1, 2, 3].map(i => (
+                  <View key={i} style={[sk.row, i < 3 && sk.rowBorder]}>
+                    <Skeleton width={32} height={32} borderRadius={9} />
+                    <View style={sk.rowText}>
+                      <Skeleton width={90} height={13} borderRadius={4} />
+                      <Skeleton width={70} height={11} borderRadius={4} style={{ marginTop: 5 }} />
+                    </View>
+                  </View>
+                ))}
+              </View>
+              <Skeleton width={80} height={10} borderRadius={4} style={{ marginTop: 16, marginBottom: 10, marginLeft: 4 }} />
+              <View style={grp.wrap}>
+                {[0, 1].map(i => (
+                  <View key={i} style={[sk.row, i < 1 && sk.rowBorder]}>
+                    <Skeleton width={32} height={32} borderRadius={9} />
+                    <Skeleton width={120} height={13} borderRadius={4} />
+                  </View>
+                ))}
+              </View>
+            </>
+          ) : (
+            <>
+              <Text style={s.sectionLabel}>MY DETAILS</Text>
               <SettingsGroup>
                 <SettingsRow
-                  icon="earth-outline"
-                  label="Preferred countries"
-                  value={(profile?.preferredCountries ?? []).join(", ")}
+                  icon="person-outline"
+                  label="Name"
+                  value={profile?.name ?? "Add name"}
+                  onPress={() => openField("name")}
+                />
+                <SettingsRow
+                  icon="call-outline"
+                  label="Phone"
+                  value={profile?.phone ?? "Add phone"}
+                  onPress={() => openField("phone")}
+                />
+                <SettingsRow
+                  icon="trophy-outline"
+                  label="NEET Score"
+                  value={profile?.neetScore ? String(profile.neetScore) : "Not added"}
+                  onPress={() => openField("neetScore")}
+                />
+                <SettingsRow
+                  icon="wallet-outline"
+                  label="Budget"
+                  value={profile?.budgetUsd ? `$${profile.budgetUsd.toLocaleString()}/yr` : "Not added"}
+                  onPress={() => openField("budgetUsd")}
                   last
                 />
               </SettingsGroup>
+
+              {(profile?.preferredCountries?.length ?? 0) > 0 && (
+                <>
+                  <Text style={s.sectionLabel}>PREFERENCES</Text>
+                  <SettingsGroup>
+                    <SettingsRow
+                      icon="earth-outline"
+                      label="Preferred countries"
+                      value={(profile?.preferredCountries ?? []).join(", ")}
+                      last
+                    />
+                  </SettingsGroup>
+                </>
+              )}
             </>
           )}
 
@@ -504,6 +549,22 @@ const s = StyleSheet.create({
     marginTop: 16,
     marginBottom: 4,
   },
+});
+
+const sk = StyleSheet.create({
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    backgroundColor: colors.surface,
+  },
+  rowBorder: {
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.line,
+  },
+  rowText: { gap: 0 },
 });
 
 const m = StyleSheet.create({

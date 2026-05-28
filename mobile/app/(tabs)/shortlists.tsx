@@ -19,6 +19,7 @@ import * as Haptics from "expo-haptics";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { UniversityCard } from "../../src/components/UniversityCard";
+import { Skeleton } from "../../src/components/Skeleton";
 import { colors } from "../../src/theme/tokens";
 import type { University } from "../../src/types/domain";
 
@@ -36,7 +37,7 @@ export default function ShortlistsScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   // Use the raw query value (undefined while loading) so the ref is stable
-  const { data: shortlistData } = useQuery({
+  const { data: shortlistData, isLoading: shortlistsLoading } = useQuery({
     queryKey: ["shortlists"],
     queryFn: () => mobileClient.getShortlists(),
     staleTime: 30 * 1000,
@@ -125,7 +126,24 @@ export default function ShortlistsScreen() {
         ]}
         showsVerticalScrollIndicator={false}
       >
-        {localData.length === 0 ? (
+        {shortlistsLoading && shortlistData === undefined ? (
+          <View style={{ gap: 12, paddingTop: 4 }}>
+            {[0, 1, 2].map(i => (
+              <View key={i} style={sk.card}>
+                <Skeleton width="100%" height={110} borderRadius={0} style={sk.cardImg} />
+                <View style={sk.cardBody}>
+                  <Skeleton width="65%" height={16} borderRadius={5} />
+                  <Skeleton width="45%" height={12} borderRadius={4} style={{ marginTop: 6 }} />
+                  <View style={sk.cardRow}>
+                    <Skeleton width={72} height={24} borderRadius={8} />
+                    <Skeleton width={72} height={24} borderRadius={8} />
+                    <Skeleton width={72} height={24} borderRadius={8} />
+                  </View>
+                </View>
+              </View>
+            ))}
+          </View>
+        ) : localData.length === 0 ? (
           <View style={s.emptyWrap}>
             <View style={s.emptyIconWrap}>
               <Ionicons name="bookmark-outline" size={40} color={colors.primary} />
@@ -189,6 +207,7 @@ export default function ShortlistsScreen() {
           </>
         )}
       </ScrollView>
+
     </View>
   );
 }
@@ -280,4 +299,27 @@ const s = StyleSheet.create({
   },
   emptyBtnPressed: { opacity: 0.85 },
   emptyBtnLabel: { fontFamily: "PlusJakartaSans-Bold", fontSize: 14, color: "#fff" },
+});
+
+const sk = StyleSheet.create({
+  card: {
+    backgroundColor: colors.surface,
+    borderRadius: 18,
+    overflow: "hidden",
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+  },
+  cardImg: {
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
+  },
+  cardBody: {
+    padding: 14,
+    gap: 4,
+  },
+  cardRow: {
+    flexDirection: "row",
+    gap: 8,
+    marginTop: 10,
+  },
 });
