@@ -25,9 +25,7 @@ import {
   getLandingPageHref,
   getTamilNaduCityHref,
   getTamilNaduHubHref,
-  getUniversityHref,
 } from "@/lib/routes";
-import { getIndexableUniversityImageUrls } from "@/lib/university-media";
 
 function uniqueUrls(urls: Array<string | undefined>) {
   return [...new Set(urls.filter(Boolean))];
@@ -89,18 +87,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getLatestDate(
       publishedPosts.flatMap((post) => [post.updatedAt, post.publishedAt]),
     ) ?? governanceLastModified;
-
-  function getUniversityLastModified(universitySlug: string) {
-    const university = universityBySlug.get(universitySlug);
-
-    return getLatestDate([
-      catalogReviewedAt,
-      university?.updatedAt,
-      ...(programsByUniversity.get(universitySlug) ?? []).map(
-        (offering) => offering.updatedAt
-      ),
-    ]);
-  }
 
   function getLandingPageLastModified(courseSlug: string, countrySlug: string) {
     const relatedPrograms =
@@ -418,18 +404,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
       changeFrequency: "weekly" as const,
       lastModified: getLatestDate([catalogReviewedAt, course.updatedAt]),
-    })),
-    ...universities.map((university) => ({
-      url: absoluteUrl(getUniversityHref(university.slug)),
-      priority: 0.85,
-      changeFrequency: "weekly" as const,
-      lastModified: getUniversityLastModified(university.slug),
-      images: uniqueUrls(
-        getIndexableUniversityImageUrls([
-          university.logoUrl,
-          university.coverImageUrl,
-        ])
-      ).map((url) => absoluteUrl(url)),
     })),
     ...landingPages.map((page) => ({
       url: absoluteUrl(getLandingPageHref(page.courseSlug, page.countrySlug)),
