@@ -33,10 +33,14 @@ import { CallProvider, useCall } from "../src/context/CallContext";
 import { CallOverlay } from "../src/features/calls/CallOverlay";
 import { IncomingCallBanner } from "../src/features/calls/IncomingCallBanner";
 import { usePushToken } from "../src/hooks/usePushToken";
-import { registerBackgroundHandlers } from "../src/services/callNotificationService";
+import {
+  registerBackgroundHandlers,
+  setupCallKeep,
+  consumePendingCallData,
+  endCallKeepCall,
+} from "../src/services/callNotificationService";
 
-// ─── Register background handlers before React mounts ───────────────────────
-// This runs when the module is loaded, covering killed-state scenarios.
+// Covers foreground/background scenarios; killed-state is handled by index.js entry point.
 registerBackgroundHandlers();
 
 SplashScreen.preventAutoHideAsync();
@@ -102,7 +106,7 @@ export default function RootLayout() {
             <CallProvider>
             <PushNotificationSetup />
             <FCMForegroundHandler />
-            <NotifeeEventHandler />
+            <CallKeepEventHandler />
             <StatusBar style="dark" />
             <Stack
               screenOptions={{
@@ -191,37 +195,47 @@ function FCMForegroundHandler() {
   return null;
 }
 
-// Handles Accept / Decline taps on notifee notifications while app is in the foreground,
-// AND processes pending actions stored from background / killed state button taps.
-function NotifeeEventHandler() {
-  const { openIncomingCallById, declineIncomingCall, incomingCall, acceptIncomingCall } = useCall();
+// Handles CallKeep events (Accept / Decline on native call screen)
+// and processes pending call data stored when app was killed.
+function CallKeepEventHandler() {
+  const { openIncomingCallById, acceptIncomingCall, declineIncomingCall } = useCall();
 
   useEffect(() => {
-    // Check for pending action stored while app was killed
-    import("../src/services/callNotificationService").then(({ consumePendingCallAction }) => {
-      consumePendingCallAction().then((pending) => {
-        if (!pending) return;
-        if (pending.action === "accept") {
-          openIncomingCallById(pending.callId, pending.callerDisplayName, pending.universityName);
-        }
-        // Decline: server TTL cleans up. Optionally call endCall API here.
-      }).catch(() => {});
-    });
+    if (Platform.OS !== "android") return;
 
-    // Foreground notifee events (Accept / Decline tapped while app is open)
-    let unsub: (() => void) | undefined;
+    setupCallKeep();
+
+    // If app was launched by user accepting a call from native UI (killed state),
+    // pending call data was stored in AsyncStorage by the background handler.
+    consumePendingCallData().then((pending) => {
+      if (!pending) return;
+      openIncomingCallById(pending.callId, pending.callerDisplayName, pending.universityName);
+    }).catch(() => {});
+
+    let RNCallKeep: any;
     try {
-      const notifee = require("@notifee/react-native").default;
-      const { EventType } = require("@notifee/react-native");
-      unsub = notifee.onForegroundEvent(({ type, detail }: any) => {
-        if (type !== EventType.ACTION_PRESS) return;
-        const actionId = detail.pressAction?.id;
-        if (actionId === "accept") acceptIncomingCall();
-        if (actionId === "decline") declineIncomingCall();
-      });
-    } catch {}
+      RNCallKeep = require("react-native-callkeep").default;
+    } catch {
+      return;
+    }
 
-    return () => unsub?.();
+    const onAnswer = ({ callUUID }: { callUUID: string }) => {
+      endCallKeepCall(callUUID); // dismiss native call UI
+      acceptIncomingCall();
+    };
+
+    const onDecline = ({ callUUID }: { callUUID: string }) => {
+      endCallKeepCall(callUUID);
+      declineIncomingCall();
+    };
+
+    const answerSub = RNCallKeep.addEventListener("answerCall", onAnswer);
+    const declineSub = RNCallKeep.addEventListener("endCall", onDecline);
+
+    return () => {
+      answerSub?.remove?.();
+      declineSub?.remove?.();
+    };
   }, [openIncomingCallById, acceptIncomingCall, declineIncomingCall]);
 
   return null;

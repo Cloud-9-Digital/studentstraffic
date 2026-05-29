@@ -1,7 +1,7 @@
 {
   "name": "mobile",
   "version": "1.0.0",
-  "main": "expo-router/entry",
+  "main": "index.js",
   "dependencies": {
     "@expo-google-fonts/fraunces": "^0.4.1",
     "@expo-google-fonts/plus-jakarta-sans": "^0.4.2",
@@ -29,6 +29,7 @@
     "react-dom": "^19.1.0",
     "react-native": "^0.81.5",
     "react-native-agora": "^4.5.4",
+    "react-native-callkeep": "^4.3.16",
     "react-native-country-flag": "^2.0.2",
     "react-native-paper": "^5.15.2",
     "react-native-safe-area-context": "~5.6.2",

@@ -1,7 +1,8 @@
 import { Platform } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const PENDING_ACTION_KEY = "ST_PENDING_CALL_ACTION_V2";
+const PENDING_CALL_KEY = "ST_PENDING_CALL_DATA_V3";
+const CHANNEL_ACTIVE   = "active_call";
 
 export type PendingCallAction = {
   action: "accept" | "decline";
@@ -10,97 +11,106 @@ export type PendingCallAction = {
   universityName: string;
 };
 
-// ─── Channels ───────────────────────────────────────────────────────────────
+// ─── CallKeep setup ──────────────────────────────────────────────────────────
 
-const CHANNEL_INCOMING = "incoming_calls";
-const CHANNEL_ACTIVE   = "active_call";
-
-async function ensureChannels(notifee: any) {
-  const { AndroidImportance } = require("@notifee/react-native");
-  await Promise.all([
-    notifee.createChannel({
-      id: CHANNEL_INCOMING,
-      name: "Incoming Calls",
-      importance: AndroidImportance.HIGH,
-      vibration: true,
-      sound: "default",
-      bypassDnd: true,
-    }),
-    notifee.createChannel({
-      id: CHANNEL_ACTIVE,
-      name: "Active Call",
-      importance: AndroidImportance.LOW,
-      sound: "",
-      vibration: false,
-    }),
-  ]);
+export async function setupCallKeep() {
+  if (Platform.OS !== "android") return;
+  try {
+    const RNCallKeep = require("react-native-callkeep").default;
+    await RNCallKeep.setup({
+      android: {
+        alertTitle: "Phone account permission",
+        alertDescription: "Students Traffic needs access to your phone accounts to receive calls",
+        cancelButton: "Cancel",
+        okButton: "Allow",
+        additionalPermissions: [],
+        foregroundService: {
+          channelId: "incoming_calls",
+          channelName: "Incoming Calls",
+          notificationTitle: "Waiting for calls",
+        },
+      },
+    });
+  } catch {}
 }
 
-// ─── Show / cancel call notification ────────────────────────────────────────
+// ─── Show incoming call via ConnectionService (works even when app is killed) ─
 
-export async function showIncomingCallNotification(data: {
+export function displayIncomingCall(callId: string, callerDisplayName: string) {
+  if (Platform.OS !== "android") return;
+  try {
+    const RNCallKeep = require("react-native-callkeep").default;
+    RNCallKeep.displayIncomingCall(callId, callerDisplayName, callerDisplayName, "generic", false);
+  } catch {}
+}
+
+export function endCallKeepCall(callId: string) {
+  if (Platform.OS !== "android") return;
+  try {
+    const RNCallKeep = require("react-native-callkeep").default;
+    RNCallKeep.endCall(callId);
+  } catch {}
+}
+
+// ─── Pending call data (for killed-app accept flow) ──────────────────────────
+
+export async function storePendingCallData(data: {
   callId: string;
   callerDisplayName: string;
   universityName: string;
 }) {
-  if (Platform.OS !== "android") return;
-  try {
-    const notifee = require("@notifee/react-native").default;
-    const { AndroidCategory, AndroidImportance } = require("@notifee/react-native");
-    await ensureChannels(notifee);
+  await AsyncStorage.setItem(PENDING_CALL_KEY, JSON.stringify(data));
+}
 
-    await notifee.displayNotification({
-      id: data.callId,
-      title: `📞 ${data.callerDisplayName}`,
-      body: `Calling about ${data.universityName}`,
-      data: {
-        type: "incoming_call",
-        callId: data.callId,
-        callerDisplayName: data.callerDisplayName,
-        universityName: data.universityName,
-      },
-      android: {
-        channelId: CHANNEL_INCOMING,
-        importance: AndroidImportance.HIGH,
-        category: AndroidCategory.CALL,
-        // Shows on lock screen even when phone is asleep
-        fullScreenAction: { id: "default" },
-        actions: [
-          { title: "✗  Decline", pressAction: { id: "decline" } },
-          { title: "✓  Accept",  pressAction: { id: "accept",  launchActivity: "default" } },
-        ],
-        sound: "default",
-        // Stays visible — user must explicitly act
-        ongoing: false,
-        timeoutAfter: 60000, // auto-dismiss after 60s if no response
-        pressAction: { id: "default" },
-      },
-    });
+export async function consumePendingCallData() {
+  try {
+    const raw = await AsyncStorage.getItem(PENDING_CALL_KEY);
+    if (!raw) return null;
+    await AsyncStorage.removeItem(PENDING_CALL_KEY);
+    return JSON.parse(raw) as { callId: string; callerDisplayName: string; universityName: string };
   } catch {
-    // notifee not available
+    return null;
   }
 }
 
-export async function cancelIncomingCallNotification(callId: string) {
-  if (Platform.OS !== "android") return;
+// Keep old name for compatibility with CallContext
+export async function storePendingCallAction(action: PendingCallAction) {
+  await AsyncStorage.setItem(PENDING_CALL_KEY, JSON.stringify(action));
+}
+
+export async function consumePendingCallAction(): Promise<PendingCallAction | null> {
   try {
-    const notifee = require("@notifee/react-native").default;
-    await notifee.cancelNotification(callId);
-  } catch {}
+    const raw = await AsyncStorage.getItem(PENDING_CALL_KEY);
+    if (!raw) return null;
+    await AsyncStorage.removeItem(PENDING_CALL_KEY);
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
 }
 
 // ─── Foreground service (keeps app alive during active call) ─────────────────
+
+async function ensureActiveChannel(notifee: any) {
+  const { AndroidImportance } = require("@notifee/react-native");
+  await notifee.createChannel({
+    id: CHANNEL_ACTIVE,
+    name: "Active Call",
+    importance: AndroidImportance.LOW,
+    sound: "",
+    vibration: false,
+  });
+}
 
 export async function startCallForegroundService(callId: string, displayName: string) {
   if (Platform.OS !== "android") return;
   try {
     const notifee = require("@notifee/react-native").default;
     const { AndroidImportance } = require("@notifee/react-native");
-    await ensureChannels(notifee);
-
+    await ensureActiveChannel(notifee);
     await notifee.displayNotification({
       id: `fs_${callId}`,
-      title: "📞 Call in progress",
+      title: "Call in progress",
       body: `With ${displayName}`,
       android: {
         channelId: CHANNEL_ACTIVE,
@@ -122,72 +132,39 @@ export async function stopCallForegroundService(callId: string) {
   } catch {}
 }
 
-// ─── Pending action (Accept/Decline from killed-state notification) ──────────
-
-export async function storePendingCallAction(action: PendingCallAction) {
-  await AsyncStorage.setItem(PENDING_ACTION_KEY, JSON.stringify(action));
+export async function cancelIncomingCallNotification(_callId: string) {
+  // With CallKeep, calls are ended via endCallKeepCall — nothing to cancel here
 }
 
-export async function consumePendingCallAction(): Promise<PendingCallAction | null> {
-  try {
-    const raw = await AsyncStorage.getItem(PENDING_ACTION_KEY);
-    if (!raw) return null;
-    await AsyncStorage.removeItem(PENDING_ACTION_KEY);
-    return JSON.parse(raw);
-  } catch {
-    return null;
-  }
-}
-
-// ─── Background handlers (module-level, before React mounts) ────────────────
-// Call this once from the entry module.
+// ─── Background handlers (must run in index.js before React mounts) ──────────
 
 export function registerBackgroundHandlers() {
   if (Platform.OS !== "android") return;
 
-  // Firebase FCM background / killed state message handler
   try {
     const messaging = require("@react-native-firebase/messaging").default;
     messaging().setBackgroundMessageHandler(async (message: any) => {
       const data = message.data as Record<string, string>;
-      if (data?.type === "incoming_call") {
-        await showIncomingCallNotification({
-          callId: data.callId,
-          callerDisplayName: data.callerDisplayName,
-          universityName: data.universityName,
-        });
-      }
+      if (data?.type !== "incoming_call") return;
+
+      // Store call data so the app can use it when it opens after user accepts
+      await storePendingCallData({
+        callId: data.callId,
+        callerDisplayName: data.callerDisplayName,
+        universityName: data.universityName,
+      });
+
+      // Ensure phone account is registered before showing call UI
+      await setupCallKeep();
+
+      // Show native Android incoming call screen via ConnectionService
+      displayIncomingCall(data.callId, data.callerDisplayName);
     });
   } catch {}
 
-  // Notifee background event handler (Accept / Decline button presses)
+  // Notifee background event — only needed for active-call foreground service dismissal
   try {
     const notifee = require("@notifee/react-native").default;
-    const { EventType } = require("@notifee/react-native");
-
-    notifee.onBackgroundEvent(async ({ type, detail }: any) => {
-      if (type !== EventType.ACTION_PRESS) return;
-
-      const d = detail.notification?.data as Record<string, string> | undefined;
-      if (!d?.callId) return;
-
-      const actionId = detail.pressAction?.id;
-      if (actionId === "accept") {
-        await storePendingCallAction({
-          action: "accept",
-          callId: d.callId,
-          callerDisplayName: d.callerDisplayName ?? "Your guide",
-          universityName: d.universityName ?? "",
-        });
-      } else if (actionId === "decline") {
-        await storePendingCallAction({
-          action: "decline",
-          callId: d.callId,
-          callerDisplayName: d.callerDisplayName ?? "",
-          universityName: d.universityName ?? "",
-        });
-      }
-      await notifee.cancelNotification(detail.notification?.id);
-    });
+    notifee.onBackgroundEvent(async () => {});
   } catch {}
 }

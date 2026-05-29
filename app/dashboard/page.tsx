@@ -1,38 +1,36 @@
 import Link from "next/link";
-import { eq, count } from "drizzle-orm";
+import { count, eq } from "drizzle-orm";
 import {
+  ArrowRight,
   BookmarkCheck,
   FileText,
   GraduationCap,
-  ArrowRight,
-  Clock,
-  Users,
-  CheckCircle,
+  PhoneCall,
   Star,
+  Clock,
+  CheckCircle,
+  Inbox,
 } from "lucide-react";
 
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
+import { resolveDbUserId } from "@/lib/server-session";
 import {
   applications,
-  peerRequests,
+  peerCallBookings,
   studentPeerApplications,
   studentPeers,
   universities,
   userShortlists,
 } from "@/lib/db/schema";
 
-const quickLinks = [
-  { label: "Browse universities", description: "Explore 1,000+ programs across 15+ countries", href: "/universities", icon: GraduationCap },
-  { label: "View my shortlists",  description: "See universities you've saved for later",       href: "/dashboard/shortlists", icon: BookmarkCheck },
-  { label: "My applications",     description: "Track the status of all your applications",      href: "/dashboard/applications", icon: FileText },
-];
+export const metadata = { title: "Dashboard | Students Traffic" };
 
-type PeerStatus =
-  | { kind: "active"; peerName: string; universityName: string; connectionCount: number; peerId: number }
-  | { kind: "pending"; universityName: string }
-  | { kind: "rejected" }
-  | { kind: "none" };
+function greeting(name: string) {
+  const h = new Date().getHours();
+  const time = h < 12 ? "Good morning" : h < 17 ? "Good afternoon" : "Good evening";
+  return `${time}, ${name}`;
+}
 
 export default async function DashboardPage() {
   const session = await auth();
@@ -40,229 +38,258 @@ export default async function DashboardPage() {
 
   let shortlistCount = 0;
   let applicationCount = 0;
-  let peerStatus: PeerStatus = { kind: "none" };
+  let bookings: {
+    id: number;
+    status: string;
+    peerName: string;
+    universityName: string;
+    universitySlug: string;
+  }[] = [];
+  let peerKind: "active" | "pending" | "rejected" | "none" = "none";
 
   const db = getDb();
-  if (db && session?.user?.id) {
-    const userId = session.user.id;
+  if (db && session?.user?.email) {
+    const userId = await resolveDbUserId(session.user.email);
 
-    const [shortlistResult, applicationResult, peerResult, pendingAppResult] =
-      await Promise.all([
-        db.select({ count: count() }).from(userShortlists).where(eq(userShortlists.userId, userId)),
-        db.select({ count: count() }).from(applications).where(eq(applications.userId, userId)),
-        db
-          .select({
-            id: studentPeers.id,
-            fullName: studentPeers.fullName,
-            universityName: universities.name,
-          })
-          .from(studentPeers)
-          .innerJoin(universities, eq(studentPeers.universityId, universities.id))
-          .where(eq(studentPeers.peerUserId, userId))
-          .limit(1),
-        db
-          .select({
-            status: studentPeerApplications.status,
-            universityName: universities.name,
-          })
-          .from(studentPeerApplications)
-          .innerJoin(universities, eq(studentPeerApplications.universityId, universities.id))
-          .where(eq(studentPeerApplications.peerUserId, userId))
-          .limit(1),
-      ]);
+    if (userId) {
+      const [shortlistResult, applicationResult, peerResult, pendingAppResult, bookingRows] =
+        await Promise.all([
+          db.select({ total: count() }).from(userShortlists).where(eq(userShortlists.userId, userId)),
+          db.select({ total: count() }).from(applications).where(eq(applications.userId, userId)),
+          db
+            .select({ id: studentPeers.id })
+            .from(studentPeers)
+            .where(eq(studentPeers.peerUserId, userId))
+            .limit(1),
+          db
+            .select({ status: studentPeerApplications.status })
+            .from(studentPeerApplications)
+            .where(eq(studentPeerApplications.peerUserId, userId))
+            .limit(1),
+          db
+            .select({
+              id: peerCallBookings.id,
+              status: peerCallBookings.status,
+              peerName: studentPeers.fullName,
+              universityName: universities.name,
+              universitySlug: universities.slug,
+            })
+            .from(peerCallBookings)
+            .innerJoin(studentPeers, eq(peerCallBookings.peerId, studentPeers.id))
+            .innerJoin(universities, eq(studentPeers.universityId, universities.id))
+            .where(eq(peerCallBookings.studentUserId, userId))
+            .orderBy(peerCallBookings.createdAt)
+            .limit(3),
+        ]);
 
-    shortlistCount = shortlistResult[0]?.count ?? 0;
-    applicationCount = applicationResult[0]?.count ?? 0;
+      shortlistCount = shortlistResult[0]?.total ?? 0;
+      applicationCount = applicationResult[0]?.total ?? 0;
+      bookings = bookingRows;
 
-    const peer = peerResult[0];
-    if (peer) {
-      const [connectionResult] = await db
-        .select({ count: count() })
-        .from(peerRequests)
-        .where(eq(peerRequests.matchedPeerId, peer.id));
-
-      peerStatus = {
-        kind: "active",
-        peerName: peer.fullName,
-        universityName: peer.universityName,
-        connectionCount: connectionResult?.count ?? 0,
-        peerId: peer.id,
-      };
-    } else if (pendingAppResult[0]) {
-      const app = pendingAppResult[0];
-      peerStatus =
-        app.status === "rejected"
-          ? { kind: "rejected" }
-          : { kind: "pending", universityName: app.universityName };
+      if (peerResult[0]) {
+        peerKind = "active";
+      } else if (pendingAppResult[0]) {
+        peerKind = pendingAppResult[0].status === "rejected" ? "rejected" : "pending";
+      }
     }
   }
 
-  const stats = [
-    { label: "Shortlisted universities", value: String(shortlistCount), icon: BookmarkCheck, href: "/dashboard/shortlists", color: "bg-blue-50 text-blue-600" },
-    { label: "Applications",             value: String(applicationCount), icon: FileText,       href: "/dashboard/applications", color: "bg-orange-50 text-orange-600" },
-  ];
+  const acceptedBookings = bookings.filter((b) => b.status === "accepted" || b.status === "active");
+  const hasCallReady = acceptedBookings.length > 0;
 
   return (
-    <div className="max-w-4xl space-y-8">
-      {/* Welcome */}
-      <div>
-        <h1 className="text-2xl font-bold text-[#0f1f1c]">Welcome back, {firstName}</h1>
-        <p className="mt-1 text-sm text-[#6b7280]">Here&apos;s an overview of your journey.</p>
+    <div className="space-y-6 pb-8">
+
+      {/* Greeting */}
+      <div className="pt-1">
+        <h1 className="text-2xl font-bold text-[#0f1f1c]">{greeting(firstName)}</h1>
+        <p className="mt-0.5 text-sm text-[#6b7280]">Here&apos;s your journey at a glance.</p>
       </div>
 
-      {/* Stats */}
-      <div className="grid grid-cols-2 gap-4">
-        {stats.map(({ label, value, icon: Icon, href, color }) => (
-          <Link
-            key={href}
-            href={href}
-            className="group flex items-center gap-4 rounded-2xl border border-[#e5e7eb] bg-white p-5 shadow-sm transition hover:border-[#0f3d37]/30 hover:shadow-md"
-          >
-            <div className={`flex size-12 shrink-0 items-center justify-center rounded-xl ${color}`}>
-              <Icon className="size-6" />
-            </div>
-            <div>
-              <p className="text-2xl font-bold text-[#0f1f1c]">{value}</p>
-              <p className="text-sm text-[#6b7280]">{label}</p>
-            </div>
-            <ArrowRight className="ml-auto size-4 text-[#d1d5db] transition-transform group-hover:translate-x-0.5 group-hover:text-[#0f3d37]" />
-          </Link>
-        ))}
-      </div>
-
-      {/* Guide profile section — conditional */}
-      <PeerSection status={peerStatus} />
-
-      {/* Recent activity */}
-      <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-sm">
-        <h2 className="mb-4 text-sm font-semibold text-[#0f1f1c]">Recent activity</h2>
-        <div className="flex flex-col items-center gap-3 py-8 text-center">
-          <div className="flex size-12 items-center justify-center rounded-full bg-[#f3f4f6]">
-            <Clock className="size-5 text-[#9ca3af]" />
+      {/* Call-ready alert — most urgent action */}
+      {hasCallReady && (
+        <Link
+          href="/dashboard/calls"
+          className="flex items-center gap-4 rounded-2xl bg-[#0f3d37] px-5 py-4 shadow-md transition hover:bg-[#184a43] active:scale-[0.98]"
+        >
+          <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-emerald-400/20">
+            <PhoneCall className="size-5 text-emerald-300" />
           </div>
-          <p className="text-sm font-medium text-[#374151]">No activity yet</p>
-          <p className="text-xs text-[#9ca3af]">Start by exploring universities and shortlisting your favourites.</p>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-bold text-white">
+              {acceptedBookings.length === 1
+                ? `${acceptedBookings[0].peerName.split(" ")[0]} is ready to chat`
+                : `${acceptedBookings.length} guides ready for a call`}
+            </p>
+            <p className="text-xs text-emerald-300 mt-0.5">Tap to start your call</p>
+          </div>
+          <ArrowRight className="size-5 shrink-0 text-emerald-400" />
+        </Link>
+      )}
+
+      {/* Stats row */}
+      <div className="grid grid-cols-2 gap-3">
+        <Link
+          href="/dashboard/shortlists"
+          className="group flex flex-col gap-1 rounded-2xl border border-[#e5e7eb] bg-white p-4 shadow-sm transition hover:border-[#0f3d37]/30 active:scale-[0.98]"
+        >
+          <div className="flex items-center justify-between">
+            <BookmarkCheck className="size-4 text-[#9ca3af]" />
+            <ArrowRight className="size-3.5 text-[#d1d5db] transition-transform group-hover:translate-x-0.5 group-hover:text-[#0f3d37]" />
+          </div>
+          <p className="text-3xl font-bold text-[#0f1f1c] mt-1">{shortlistCount}</p>
+          <p className="text-xs text-[#6b7280]">Shortlisted</p>
+        </Link>
+
+        <Link
+          href="/dashboard/applications"
+          className="group flex flex-col gap-1 rounded-2xl border border-[#e5e7eb] bg-white p-4 shadow-sm transition hover:border-[#0f3d37]/30 active:scale-[0.98]"
+        >
+          <div className="flex items-center justify-between">
+            <FileText className="size-4 text-[#9ca3af]" />
+            <ArrowRight className="size-3.5 text-[#d1d5db] transition-transform group-hover:translate-x-0.5 group-hover:text-[#0f3d37]" />
+          </div>
+          <p className="text-3xl font-bold text-[#0f1f1c] mt-1">{applicationCount}</p>
+          <p className="text-xs text-[#6b7280]">Applications</p>
+        </Link>
+      </div>
+
+      {/* My guides */}
+      <div className="space-y-3">
+        <div className="flex items-center justify-between">
+          <p className="text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">My Guides</p>
+          {bookings.length > 0 && (
+            <Link href="/dashboard/calls" className="flex items-center gap-1 text-xs font-medium text-[#0f3d37] hover:underline">
+              View all <ArrowRight className="size-3" />
+            </Link>
+          )}
+        </div>
+
+        {bookings.length === 0 ? (
           <Link
             href="/universities"
-            className="mt-2 inline-flex items-center gap-1.5 rounded-xl bg-[#0f3d37] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#184a43]"
+            className="group flex items-center gap-4 rounded-2xl border border-dashed border-[#e5e7eb] bg-white px-5 py-5 transition hover:border-[#0f3d37]/40 active:scale-[0.98]"
           >
-            Browse universities
-            <ArrowRight className="size-3.5" />
+            <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-[#f0f7f5]">
+              <PhoneCall className="size-5 text-[#0f3d37]" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-[#374151]">Talk to a student guide</p>
+              <p className="text-xs text-[#9ca3af] mt-0.5">Get first-hand advice from someone who&apos;s been there.</p>
+            </div>
+            <ArrowRight className="size-4 shrink-0 text-[#d1d5db] transition-transform group-hover:translate-x-0.5 group-hover:text-[#0f3d37]" />
           </Link>
-        </div>
+        ) : (
+          <div className="divide-y divide-[#f3f4f6] rounded-2xl border border-[#e5e7eb] bg-white overflow-hidden shadow-sm">
+            {bookings.map((b) => {
+              const isAccepted = b.status === "accepted" || b.status === "active";
+              const isPending = b.status === "pending";
+              return (
+                <Link
+                  key={b.id}
+                  href="/dashboard/calls"
+                  className="flex items-center gap-3 px-4 py-3.5 transition hover:bg-[#fafafa] active:bg-[#f3f4f6]"
+                >
+                  <div className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#f0f7f5] text-xs font-bold text-[#0f3d37]">
+                    {b.peerName.split(" ").map((n) => n[0]).slice(0, 2).join("").toUpperCase()}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-semibold text-[#0f1f1c]">{b.peerName}</p>
+                    <p className="truncate text-xs text-[#9ca3af]">{b.universityName}</p>
+                  </div>
+                  {isAccepted ? (
+                    <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-emerald-50 border border-emerald-200 px-2.5 py-1 text-xs font-semibold text-emerald-700">
+                      <CheckCircle className="size-3" /> Ready
+                    </span>
+                  ) : isPending ? (
+                    <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-amber-50 border border-amber-200 px-2.5 py-1 text-xs font-medium text-amber-700">
+                      <Clock className="size-3" /> Pending
+                    </span>
+                  ) : (
+                    <span className="shrink-0 text-xs text-[#9ca3af]">Declined</span>
+                  )}
+                </Link>
+              );
+            })}
+          </div>
+        )}
       </div>
 
-      {/* Quick links */}
-      <div>
-        <h2 className="mb-3 text-sm font-semibold text-[#0f1f1c]">Quick links</h2>
-        <div className="space-y-2">
-          {quickLinks.map(({ label, description, href, icon: Icon }) => (
+      {/* Guide profile section */}
+      {peerKind === "active" && (
+        <Link
+          href="/dashboard/peer"
+          className="flex items-center gap-4 rounded-2xl border border-emerald-200 bg-emerald-50 px-5 py-4 shadow-sm transition hover:border-emerald-300 active:scale-[0.98]"
+        >
+          <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-emerald-100">
+            <CheckCircle className="size-5 text-emerald-600" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold text-[#0f1f1c]">Your guide profile is live</p>
+            <p className="text-xs text-emerald-700 mt-0.5">Manage requests and connect with students</p>
+          </div>
+          <ArrowRight className="size-4 shrink-0 text-emerald-400" />
+        </Link>
+      )}
+
+      {peerKind === "pending" && (
+        <div className="flex items-center gap-4 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 shadow-sm">
+          <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber-100">
+            <Clock className="size-5 text-amber-600" />
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-semibold text-[#0f1f1c]">Guide application under review</p>
+            <p className="text-xs text-amber-700 mt-0.5">We&apos;ll email you once approved</p>
+          </div>
+        </div>
+      )}
+
+      {peerKind === "none" && (
+        <div className="rounded-2xl border border-dashed border-[#e5e7eb] bg-white px-5 py-5 shadow-sm">
+          <div className="flex items-center gap-4">
+            <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-[#f0f7f5]">
+              <Star className="size-5 text-[#0f3d37]" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-[#0f1f1c]">Become a student guide</p>
+              <p className="text-xs text-[#6b7280] mt-0.5">
+                Studying abroad? Help other students by sharing your experience.
+              </p>
+            </div>
+            <Link
+              href="/join"
+              className="shrink-0 rounded-xl border border-[#0f3d37] px-3.5 py-2 text-xs font-semibold text-[#0f3d37] hover:bg-[#0f3d37] hover:text-white transition"
+            >
+              Join
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Quick actions */}
+      <div className="space-y-3">
+        <p className="text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">Quick actions</p>
+        <div className="grid grid-cols-2 gap-3">
+          {[
+            { href: "/universities",            icon: GraduationCap, label: "Browse universities", color: "bg-[#f0f7f5] text-[#0f3d37]" },
+            { href: "/dashboard/calls",         icon: PhoneCall,      label: "My Calls",            color: "bg-blue-50 text-blue-600"    },
+            { href: "/dashboard/shortlists",    icon: BookmarkCheck,  label: "Shortlists",          color: "bg-orange-50 text-orange-600" },
+            { href: "/dashboard/applications",  icon: FileText,       label: "Applications",        color: "bg-purple-50 text-purple-600" },
+          ].map(({ href, icon: Icon, label, color }) => (
             <Link
               key={href}
               href={href}
-              className="group flex items-center gap-4 rounded-2xl border border-[#e5e7eb] bg-white px-5 py-4 shadow-sm transition hover:border-[#0f3d37]/30 hover:shadow-md"
+              className="group flex items-center gap-3 rounded-2xl border border-[#e5e7eb] bg-white px-4 py-4 shadow-sm transition hover:border-[#0f3d37]/20 hover:shadow-md active:scale-[0.98]"
             >
-              <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-[#f0f7f5]">
-                <Icon className="size-5 text-[#0f3d37]" />
+              <div className={`flex size-9 shrink-0 items-center justify-center rounded-xl ${color}`}>
+                <Icon className="size-4" />
               </div>
-              <div className="min-w-0">
-                <p className="text-sm font-semibold text-[#0f1f1c]">{label}</p>
-                <p className="text-xs text-[#6b7280]">{description}</p>
-              </div>
-              <ArrowRight className="ml-auto size-4 shrink-0 text-[#d1d5db] transition-transform group-hover:translate-x-0.5 group-hover:text-[#0f3d37]" />
+              <p className="text-sm font-semibold text-[#0f1f1c] leading-tight">{label}</p>
             </Link>
           ))}
         </div>
       </div>
-    </div>
-  );
-}
 
-// ── Guide profile card ────────────────────────────────────────────────────────
-
-function PeerSection({ status }: { status: PeerStatus }) {
-  if (status.kind === "active") {
-    return (
-      <div>
-        <h2 className="mb-3 text-sm font-semibold text-[#0f1f1c]">Your guide profile</h2>
-        <Link
-          href="/dashboard/peer"
-          className="group flex items-center gap-5 rounded-2xl border border-emerald-200 bg-emerald-50 px-5 py-4 shadow-sm transition hover:border-emerald-300 hover:shadow-md"
-        >
-          <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100">
-            <CheckCircle className="size-6 text-emerald-600" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 flex-wrap">
-              <p className="text-sm font-semibold text-[#0f1f1c]">Profile live</p>
-              <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[11px] font-semibold text-emerald-700">Active</span>
-            </div>
-            <p className="text-xs text-[#6b7280] mt-0.5">{status.universityName}</p>
-          </div>
-          <div className="text-right shrink-0">
-            <p className="text-xl font-bold text-[#0f1f1c]">{status.connectionCount}</p>
-            <p className="text-xs text-[#6b7280]">students contacted you</p>
-          </div>
-          <ArrowRight className="ml-2 size-4 shrink-0 text-emerald-400 transition-transform group-hover:translate-x-0.5" />
-        </Link>
-      </div>
-    );
-  }
-
-  if (status.kind === "pending") {
-    return (
-      <div>
-        <h2 className="mb-3 text-sm font-semibold text-[#0f1f1c]">Your guide profile</h2>
-        <div className="flex items-center gap-5 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 shadow-sm">
-          <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-amber-100">
-            <Clock className="size-6 text-amber-600" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-semibold text-[#0f1f1c]">Application under review</p>
-            <p className="text-xs text-[#6b7280] mt-0.5">{status.universityName} · We will email you once approved</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (status.kind === "rejected") {
-    return (
-      <div>
-        <h2 className="mb-3 text-sm font-semibold text-[#0f1f1c]">Your guide profile</h2>
-        <div className="flex items-center justify-between gap-4 rounded-2xl border border-red-200 bg-red-50 px-5 py-4 shadow-sm">
-          <p className="text-sm text-red-700">Your application was not approved. You can apply again with a clearer college ID.</p>
-          <Link
-            href="/join"
-            className="shrink-0 rounded-xl bg-red-600 px-4 py-2 text-xs font-semibold text-white hover:bg-red-700 transition"
-          >
-            Apply again
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
-  // kind === "none" — show a soft CTA
-  return (
-    <div className="rounded-2xl border border-dashed border-[#e5e7eb] bg-white px-5 py-5 shadow-sm">
-      <div className="flex items-center gap-4">
-        <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#f0f7f5]">
-          <Star className="size-6 text-[#0f3d37]" />
-        </div>
-        <div className="flex-1 min-w-0">
-          <p className="text-sm font-semibold text-[#0f1f1c]">Help other students</p>
-          <p className="text-xs text-[#6b7280] mt-0.5">
-            Studying or studied MBBS abroad? Share your experience and guide students who need it.
-          </p>
-        </div>
-        <Link
-          href="/join"
-          className="shrink-0 inline-flex items-center gap-1.5 rounded-xl border border-[#0f3d37] px-4 py-2 text-xs font-semibold text-[#0f3d37] hover:bg-[#0f3d37] hover:text-white transition"
-        >
-          Become a guide <ArrowRight className="size-3" />
-        </Link>
-      </div>
     </div>
   );
 }
