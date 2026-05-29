@@ -31,6 +31,9 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/"],
       },
     ],
-    sitemap: absoluteUrl("/sitemap.xml"),
+    sitemap: [
+      absoluteUrl("/sitemap.xml"),
+      absoluteUrl("/universities/sitemap/0.xml"),
+    ],
   };
 }
