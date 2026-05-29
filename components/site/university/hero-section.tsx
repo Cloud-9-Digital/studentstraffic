@@ -7,13 +7,32 @@ import {
   MapPinned,
 } from "lucide-react";
 
+import { AddToCompareButton } from "@/components/site/add-to-compare-button";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { ScrollToButton } from "@/components/site/scroll-to-button";
+import { ShortlistButton } from "@/components/site/shortlist-button";
+import { ShareButton } from "@/components/site/university/share-button";
 import { UniversityLogoBadge } from "@/components/site/university/shared";
+import type { UniversitySection } from "@/lib/university-sections";
 import { formatProgramDuration } from "@/lib/utils";
+
+const SECTION_HEADINGS: Record<UniversitySection, string> = {
+  programs: "Programs & Courses",
+  academics: "Academics & Curriculum",
+  admissions: "Admissions Process",
+  eligibility: "Eligibility & Requirements",
+  "student-life": "Student Life",
+  fees: "Fee Structure",
+  recognition: "Recognition & Accreditation",
+  hostel: "Hostel & Accommodation",
+  country: "About the Country",
+  city: "About the City",
+  faq: "Frequently Asked Questions",
+};
 
 export function UniversityHeroSection({
   universityName,
+  universitySlug,
   universitySummary,
   city,
   establishedYear,
@@ -25,8 +44,10 @@ export function UniversityHeroSection({
   primaryProgramHasRenderableFee,
   primaryProgramDurationYears,
   primaryProgramShortName,
+  activeSection,
 }: {
   universityName: string;
+  universitySlug: string;
   universitySummary: string;
   city: string;
   establishedYear: number;
@@ -38,6 +59,7 @@ export function UniversityHeroSection({
   primaryProgramHasRenderableFee: boolean;
   primaryProgramDurationYears?: number;
   primaryProgramShortName?: string;
+  activeSection?: UniversitySection | null;
 }) {
   return (
     <div className="relative overflow-hidden bg-surface-dark">
@@ -75,7 +97,9 @@ export function UniversityHeroSection({
 
             <div className="space-y-3">
               <h1 className="font-display text-4xl font-semibold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
-                {universityName}
+                {activeSection
+                  ? `${universityName}: ${SECTION_HEADINGS[activeSection]}`
+                  : universityName}
               </h1>
               <p className="max-w-2xl text-sm leading-7 text-white/65 md:text-base md:leading-8">
                 {universitySummary}
@@ -128,6 +152,16 @@ export function UniversityHeroSection({
               >
                 Talk to a student
               </ScrollToButton>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="w-36">
+                <ShortlistButton slug={universitySlug} name={universityName} />
+              </div>
+              <div className="w-36">
+                <AddToCompareButton slug={universitySlug} name={universityName} logoUrl={logoUrl} />
+              </div>
+              <ShareButton title={universityName} />
             </div>
           </div>
 

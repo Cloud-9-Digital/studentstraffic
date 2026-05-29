@@ -11,7 +11,7 @@ export function getCourseHref(courseSlug: string) {
 }
 
 export function getUniversityHref(universitySlug: string) {
-  return `/universities/${universitySlug}`;
+  return `/university/${universitySlug}`;
 }
 
 export function getIndiaMbbsCollegesHref() {

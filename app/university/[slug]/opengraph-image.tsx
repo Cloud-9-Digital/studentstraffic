@@ -10,6 +10,7 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/og";
+import { parseUniversitySlug } from "@/lib/university-sections";
 
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
@@ -20,7 +21,8 @@ export default async function Image({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
+  const { slug: rawSlug } = await params;
+  const { universitySlug: slug } = parseUniversitySlug(rawSlug);
   const university = await getUniversityBySlug(slug);
 
   if (!university) {

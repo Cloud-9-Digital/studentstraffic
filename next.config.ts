@@ -76,6 +76,15 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "15mb",
     },
   },
+  async redirects() {
+    return [
+      {
+        source: "/universities/:slug([^/]+)",
+        destination: "/university/:slug",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

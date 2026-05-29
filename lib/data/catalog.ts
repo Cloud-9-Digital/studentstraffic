@@ -503,16 +503,20 @@ export async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
 
   if (!globalForCatalogWarnings.__catalogSnapshotPromise) {
     globalForCatalogWarnings.__catalogSnapshotPromise = (async () => {
-      const snapshot = shouldUseBuildCatalogSnapshot()
+      const dbSnapshot = shouldUseBuildCatalogSnapshot()
         ? ((await readBuildCatalogSnapshotFromDisk()) ?? (await createBuildCatalogSnapshot()))
-        : ((await readCatalogFromDatabase()) ?? createEmptyCatalogSnapshot());
+        : await readCatalogFromDatabase();
 
-      globalForCatalogWarnings.__catalogSnapshotCache = {
-        value: snapshot,
-        expiresAt: Date.now() + catalogSnapshotTtlMs,
-      };
+      if (dbSnapshot) {
+        // Only cache when we got real data — don't freeze an empty fallback in-memory for 12h
+        globalForCatalogWarnings.__catalogSnapshotCache = {
+          value: dbSnapshot,
+          expiresAt: Date.now() + catalogSnapshotTtlMs,
+        };
+        return dbSnapshot;
+      }
 
-      return snapshot;
+      return createEmptyCatalogSnapshot();
     })().finally(() => {
       globalForCatalogWarnings.__catalogSnapshotPromise = undefined;
     });
