@@ -1,6 +1,9 @@
 import "server-only";
 
-import type { University } from "@/lib/data/types";
+import { and, count, eq, sql } from "drizzle-orm";
+
+import { getDb } from "@/lib/db/server";
+import { cityProfiles, universities, countries } from "@/lib/db/schema";
 
 export type SharedCityProfile = {
   city: string;
@@ -14,35 +17,40 @@ function normalizeCity(value: string) {
   return value.trim().toLowerCase();
 }
 
-export function getSharedCityProfile(
-  universities: University[],
+export async function getSharedCityProfile(
   countrySlug: string,
   city: string,
-): SharedCityProfile | null {
-  const sameCityUniversities = universities
-    .filter(
-      (university) =>
-        university.countrySlug === countrySlug &&
-        normalizeCity(university.city) === normalizeCity(city),
-    )
-    .sort((left, right) => {
-      if (left.featured !== right.featured) {
-        return Number(right.featured) - Number(left.featured);
-      }
+): Promise<SharedCityProfile | null> {
+  const db = getDb();
+  if (!db) return null;
 
-      if (left.establishedYear !== right.establishedYear) {
-        return right.establishedYear - left.establishedYear;
-      }
+  const [profileRow, universityRows] = await Promise.all([
+    db
+      .select({ content: cityProfiles.content })
+      .from(cityProfiles)
+      .where(
+        and(
+          eq(cityProfiles.countrySlug, countrySlug),
+          sql`lower(${cityProfiles.city}) = ${normalizeCity(city)}`
+        )
+      )
+      .limit(1),
+    db
+      .select({ slug: universities.slug })
+      .from(universities)
+      .innerJoin(countries, eq(countries.id, universities.countryId))
+      .where(
+        and(
+          eq(countries.slug, countrySlug),
+          sql`lower(${universities.city}) = ${normalizeCity(city)}`,
+          eq(universities.published, true)
+        )
+      ),
+  ]);
 
-      return left.name.localeCompare(right.name);
-    });
+  if (!profileRow[0]) return null;
 
-  if (sameCityUniversities.length === 0) {
-    return null;
-  }
-
-  const leadUniversity = sameCityUniversities[0];
-  const universityCount = sameCityUniversities.length;
+  const universityCount = universityRows.length;
   const sharedTail =
     universityCount > 1
       ? ` ${city} currently has ${universityCount} listed universities in this catalog, so students comparing this city can focus on academic structure, institution type, and campus fit without relearning the same city context on every page.`
@@ -51,8 +59,8 @@ export function getSharedCityProfile(
   return {
     city,
     countrySlug,
-    summary: `${leadUniversity.cityProfile}${sharedTail}`,
+    summary: `${profileRow[0].content}${sharedTail}`,
     universityCount,
-    relatedUniversitySlugs: sameCityUniversities.map((university) => university.slug),
+    relatedUniversitySlugs: universityRows.map((u) => u.slug),
   };
 }

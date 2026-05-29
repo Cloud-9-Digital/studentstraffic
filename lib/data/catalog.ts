@@ -335,6 +335,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       slug: course.slug,
       name: course.name,
       shortName: course.shortName,
+      stream: course.stream,
       durationYears: course.durationYears,
       summary: course.summary,
       metaTitle: course.metaTitle,
@@ -975,6 +976,7 @@ type FinderProgramRow = {
   courseSlug: string;
   courseName: string;
   courseShortName: string;
+  courseStream: string;
   courseDurationYears: number;
   courseSummary: string;
   courseMetaTitle: string;
@@ -1084,6 +1086,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       slug: row.courseSlug,
       name: row.courseName,
       shortName: row.courseShortName,
+      stream: row.courseStream as import("@/lib/data/types").CourseStream,
       durationYears: row.courseDurationYears,
       summary: row.courseSummary,
       metaTitle: row.courseMetaTitle,
@@ -1146,6 +1149,7 @@ async function selectFinderProgramsFromDatabase(
       courseSlug: coursesTable.slug,
       courseName: coursesTable.name,
       courseShortName: coursesTable.shortName,
+      courseStream: coursesTable.stream,
       courseDurationYears: coursesTable.durationYears,
       courseSummary: coursesTable.summary,
       courseMetaTitle: coursesTable.metaTitle,

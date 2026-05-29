@@ -13,6 +13,7 @@ import {
   varchar,
 } from "drizzle-orm/pg-core";
 import type {
+  CourseStream,
   Faq,
   IndiaMbbsCollegeEditorialContent,
   LinkItem,
@@ -29,6 +30,55 @@ import type {
   UniversityAdmissionsContent,
   YearlyCostBreakdown,
 } from "@/lib/data/types";
+
+export type UniversityResearchStructuredFacts = {
+  universityName?: string;
+  country?: string;
+  city?: string;
+  universityType?: "Public" | "Private";
+  establishedYear?: number;
+  officialWebsite?: string;
+  programName?: string;
+  programDurationYears?: number;
+  mediumOfInstruction?: string;
+  intakeMonths?: string[];
+  annualTuitionLocal?: number;
+  annualTuitionUsd?: number;
+  totalTuitionUsd?: number;
+  officialFeeCurrency?: string;
+  hostelNote?: string;
+  clinicalTrainingNote?: string;
+  admissionRequirements?: string;
+  recognitionNotes?: string;
+  teachingHospitals?: string[];
+  sourceUrls?: string[];
+  lastVerifiedDate?: string;
+  confidenceLevel?: "high" | "medium" | "low";
+  researcherNotes?: string;
+};
+
+export type UniversityResearchDraftContent = {
+  summary?: string;
+  whyChoose?: string[];
+  thingsToConsider?: string[];
+  bestFitFor?: string[];
+  campusLifestyle?: string;
+  hostelOverview?: string;
+  indianFoodSupport?: string;
+  safetyOverview?: string;
+  studentSupport?: string;
+  clinicalExposure?: string;
+  admissionsContent?: Record<string, unknown>;
+  faq?: { question: string; answer: string }[];
+  yearlyCostBreakdown?: {
+    yearLabel: string;
+    tuitionUsd: number;
+    hostelUsd: number;
+    livingUsd: number;
+    totalUsd: number;
+    notes?: string;
+  }[];
+};
 
 type JsonValue = string | number | boolean | null | string[];
 type LeadSourceQuery = Record<string, string | string[]>;
@@ -47,8 +97,6 @@ type UniversityResearchQueueStatus =
   | "hold"
   | "rejected";
 type UniversityResearchSourceBundle = Record<string, unknown>;
-type UniversityResearchStructuredFacts = Record<string, unknown>;
-type UniversityResearchDraftContent = Record<string, unknown>;
 
 export type AdminUserRole = "owner" | "admin";
 
@@ -78,6 +126,7 @@ export const courses = pgTable(
     slug: text("slug").notNull(),
     name: text("name").notNull(),
     shortName: text("short_name").notNull(),
+    stream: text("stream").$type<CourseStream>().notNull().default("medicine"),
     durationYears: integer("duration_years").notNull(),
     summary: text("summary").notNull(),
     metaTitle: text("meta_title").notNull(),
@@ -85,7 +134,10 @@ export const courses = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
   },
-  (table) => [uniqueIndex("courses_slug_idx").on(table.slug)]
+  (table) => [
+    uniqueIndex("courses_slug_idx").on(table.slug),
+    index("courses_stream_idx").on(table.stream),
+  ]
 );
 
 export const universities = pgTable(
@@ -203,6 +255,22 @@ export const programOfferings = pgTable(
     index("program_offerings_course_idx").on(table.courseId),
     index("program_offerings_fee_idx").on(table.annualTuitionUsd),
     index("program_offerings_medium_idx").on(table.medium),
+  ]
+);
+
+export const cityProfiles = pgTable(
+  "city_profiles",
+  {
+    id: serial("id").primaryKey(),
+    countrySlug: text("country_slug").notNull(),
+    city: text("city").notNull(),
+    content: text("content").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("city_profiles_country_city_idx").on(table.countrySlug, table.city),
+    index("city_profiles_country_idx").on(table.countrySlug),
   ]
 );
 
@@ -907,6 +975,7 @@ export type StudentPeerApplicationInsert = typeof studentPeerApplications.$infer
 export type StudentPeerApplicationRow = typeof studentPeerApplications.$inferSelect;
 export type UniversityResearchQueueRow = typeof universityResearchQueue.$inferSelect;
 export type UniversityResearchDraftRow = typeof universityResearchDrafts.$inferSelect;
+export type CityProfileRow = typeof cityProfiles.$inferSelect;
 export type BackgroundJobRow = typeof backgroundJobs.$inferSelect;
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1007,13 +1076,15 @@ export const userShortlists = pgTable(
     userId: varchar("user_id", { length: 255 })
       .notNull()
       .references(() => users.id, { onDelete: "cascade" }),
-    universitySlug: varchar("university_slug", { length: 255 }).notNull(),
+    universityId: integer("university_id")
+      .notNull()
+      .references(() => universities.id, { onDelete: "cascade" }),
     notes: text("notes"),
     createdAt: timestamp("created_at").defaultNow().notNull(),
   },
   (table) => [
     index("shortlists_user_idx").on(table.userId),
-    uniqueIndex("user_university_unique").on(table.userId, table.universitySlug),
+    uniqueIndex("user_university_unique").on(table.userId, table.universityId),
   ]
 );
 

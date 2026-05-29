@@ -370,11 +370,9 @@ async function getSharedCityProfileForUniversity(countrySlug: string, city: stri
 
   cacheLife("hours");
   cacheTag("catalog");
-  cacheTag("universities");
   cacheTag(`city-profile:${countrySlug}:${city.toLowerCase()}`);
 
-  const universities = await getUniversities();
-  return getSharedCityProfile(universities, countrySlug, city);
+  return getSharedCityProfile(countrySlug, city);
 }
 
 async function UniversityLocationContextSection({

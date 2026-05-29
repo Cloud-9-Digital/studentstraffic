@@ -16,7 +16,7 @@ export async function GET(request: Request) {
   const rows = await db
     .select({
       id: userShortlists.id,
-      universitySlug: userShortlists.universitySlug,
+      universitySlug: universities.slug,
       notes: userShortlists.notes,
       createdAt: userShortlists.createdAt,
       universityName: universities.name,
@@ -28,7 +28,7 @@ export async function GET(request: Request) {
       offeringSlug: programOfferings.slug,
     })
     .from(userShortlists)
-    .leftJoin(universities, eq(universities.slug, userShortlists.universitySlug))
+    .innerJoin(universities, eq(universities.id, userShortlists.universityId))
     .leftJoin(countries, eq(countries.id, universities.countryId))
     .leftJoin(programOfferings, eq(programOfferings.universityId, universities.id))
     .where(eq(userShortlists.userId, session.user.id))
@@ -69,11 +69,19 @@ export async function POST(request: Request) {
   const db = getDb();
   if (!db) return mobileError("unavailable", "Service unavailable.", 503);
 
+  const [university] = await db
+    .select({ id: universities.id })
+    .from(universities)
+    .where(eq(universities.slug, parsed.data.universitySlug))
+    .limit(1);
+
+  if (!university) return mobileError("not_found", "University not found.", 404);
+
   await db
     .insert(userShortlists)
     .values({
       userId: session.user.id,
-      universitySlug: parsed.data.universitySlug,
+      universityId: university.id,
       notes: parsed.data.notes,
     })
     .onConflictDoNothing();
@@ -91,14 +99,22 @@ export async function DELETE(request: Request) {
   const db = getDb();
   if (!db) return mobileError("unavailable", "Service unavailable.", 503);
 
-  await db
-    .delete(userShortlists)
-    .where(
-      and(
-        eq(userShortlists.userId, session.user.id),
-        eq(userShortlists.universitySlug, parsed.data.universitySlug)
-      )
-    );
+  const [university] = await db
+    .select({ id: universities.id })
+    .from(universities)
+    .where(eq(universities.slug, parsed.data.universitySlug))
+    .limit(1);
+
+  if (university) {
+    await db
+      .delete(userShortlists)
+      .where(
+        and(
+          eq(userShortlists.userId, session.user.id),
+          eq(userShortlists.universityId, university.id)
+        )
+      );
+  }
 
   return mobileJson({ success: true });
 }

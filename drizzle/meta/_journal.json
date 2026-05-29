@@ -211,6 +211,13 @@
       "when": 1778121000000,
       "tag": "0034_repair_university_admissions_content",
       "breakpoints": true
+    },
+    {
+      "idx": 44,
+      "version": "7",
+      "when": 1748476800000,
+      "tag": "0044_schema_improvements",
+      "breakpoints": true
     }
   ]
 }

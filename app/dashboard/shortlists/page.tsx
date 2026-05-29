@@ -23,7 +23,7 @@ export default async function ShortlistsPage() {
     const rows = await db
       .select({
         id: userShortlists.id,
-        universitySlug: userShortlists.universitySlug,
+        universitySlug: universities.slug,
         notes: userShortlists.notes,
         createdAt: userShortlists.createdAt,
         universityName: universities.name,
@@ -33,7 +33,7 @@ export default async function ShortlistsPage() {
         countryName: countries.name,
       })
       .from(userShortlists)
-      .leftJoin(universities, eq(universities.slug, userShortlists.universitySlug))
+      .innerJoin(universities, eq(universities.id, userShortlists.universityId))
       .leftJoin(countries, eq(countries.id, universities.countryId))
       .where(eq(userShortlists.userId, session.user.id))
       .orderBy(userShortlists.createdAt);

@@ -11,10 +11,13 @@ export type Country = {
   updatedAt?: string;
 };
 
+export type CourseStream = "medicine" | "nursing" | "dental" | "pharmacy" | "physiotherapy" | "engineering" | "other";
+
 export type Course = {
   slug: string;
   name: string;
   shortName: string;
+  stream: CourseStream;
   durationYears: number;
   summary: string;
   metaTitle: string;

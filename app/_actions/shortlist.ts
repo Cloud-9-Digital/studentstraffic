@@ -4,7 +4,7 @@ import { and, eq } from "drizzle-orm";
 
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
-import { userShortlists } from "@/lib/db/schema";
+import { universities, userShortlists } from "@/lib/db/schema";
 
 export async function addShortlistAction(universitySlug: string) {
   const session = await auth();
@@ -13,10 +13,18 @@ export async function addShortlistAction(universitySlug: string) {
   const db = getDb();
   if (!db) return { error: "unavailable" as const };
 
+  const [university] = await db
+    .select({ id: universities.id })
+    .from(universities)
+    .where(eq(universities.slug, universitySlug))
+    .limit(1);
+
+  if (!university) return { error: "not_found" as const };
+
   try {
     await db
       .insert(userShortlists)
-      .values({ userId: session.user.id, universitySlug })
+      .values({ userId: session.user.id, universityId: university.id })
       .onConflictDoNothing();
     return { success: true as const };
   } catch (err) {
@@ -32,12 +40,20 @@ export async function removeShortlistAction(universitySlug: string) {
   const db = getDb();
   if (!db) return { error: "unavailable" as const };
 
+  const [university] = await db
+    .select({ id: universities.id })
+    .from(universities)
+    .where(eq(universities.slug, universitySlug))
+    .limit(1);
+
+  if (!university) return { success: true as const };
+
   await db
     .delete(userShortlists)
     .where(
       and(
         eq(userShortlists.userId, session.user.id),
-        eq(userShortlists.universitySlug, universitySlug)
+        eq(userShortlists.universityId, university.id)
       )
     );
 

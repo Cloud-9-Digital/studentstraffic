@@ -4,7 +4,7 @@ import { eq } from "drizzle-orm";
 
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
-import { userShortlists } from "@/lib/db/schema";
+import { universities, userShortlists } from "@/lib/db/schema";
 
 export async function getUserShortlistSlugs(): Promise<string[]> {
   const session = await auth();
@@ -14,9 +14,10 @@ export async function getUserShortlistSlugs(): Promise<string[]> {
   if (!db) return [];
 
   const rows = await db
-    .select({ universitySlug: userShortlists.universitySlug })
+    .select({ slug: universities.slug })
     .from(userShortlists)
+    .innerJoin(universities, eq(universities.id, userShortlists.universityId))
     .where(eq(userShortlists.userId, session.user.id));
 
-  return rows.map((r) => r.universitySlug);
+  return rows.map((r) => r.slug);
 }
