@@ -40,11 +40,6 @@ type HeroProps = {
   coverImage: { url: string; alt: string } | null;
   logoUrl?: string;
   logoInitials: string;
-  primaryProgramFeeDisplay: string | null;
-  primaryProgramHasPublishedFee: boolean;
-  primaryProgramHasRenderableFee: boolean;
-  primaryProgramDurationYears?: number;
-  primaryProgramShortName?: string;
 };
 
 type Props = HeroProps & {
@@ -63,6 +58,7 @@ type Props = HeroProps & {
   countryMedia: LocationMedia | null;
   cityProfile: SharedCityProfile | null;
   lastVerifiedAt: string;
+  primaryProgramShortName?: string;
 };
 
 function getSectionSummary(
@@ -118,10 +114,6 @@ export function UniversitySectionShell({
   coverImage,
   logoUrl,
   logoInitials,
-  primaryProgramFeeDisplay,
-  primaryProgramHasPublishedFee,
-  primaryProgramHasRenderableFee,
-  primaryProgramDurationYears,
   primaryProgramShortName,
   lastVerifiedAt,
 }: Props) {
@@ -170,16 +162,9 @@ export function UniversitySectionShell({
         universityName={university.name}
         universitySlug={universitySlug}
         universitySummary={summary}
-        city={university.city}
-        establishedYear={university.establishedYear}
         logoUrl={logoUrl}
         coverImage={coverImage}
         logoInitials={logoInitials}
-        primaryProgramFeeDisplay={primaryProgramFeeDisplay}
-        primaryProgramHasPublishedFee={primaryProgramHasPublishedFee}
-        primaryProgramHasRenderableFee={primaryProgramHasRenderableFee}
-        primaryProgramDurationYears={primaryProgramDurationYears}
-        primaryProgramShortName={primaryProgramShortName}
         activeSection={activeSection}
         lastVerifiedAt={lastVerifiedAt}
       />

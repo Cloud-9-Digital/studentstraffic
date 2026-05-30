@@ -1,12 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  CalendarDays,
-  CircleDollarSign,
-  GraduationCap,
-  MapPinned,
-  ShieldCheck,
-} from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 
 import { AddToCompareButton } from "@/components/site/add-to-compare-button";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
@@ -15,7 +9,6 @@ import { ShortlistButton } from "@/components/site/shortlist-button";
 import { ShareButton } from "@/components/site/university/share-button";
 import { UniversityLogoBadge } from "@/components/site/university/shared";
 import type { UniversitySection } from "@/lib/university-sections";
-import { formatProgramDuration } from "@/lib/utils";
 
 const SECTION_VERIFIED_LABELS: Record<UniversitySection, string> = {
   programs: "Program details",
@@ -57,32 +50,18 @@ export function UniversityHeroSection({
   universityName,
   universitySlug,
   universitySummary,
-  city,
-  establishedYear,
   logoUrl,
   coverImage,
   logoInitials,
-  primaryProgramFeeDisplay,
-  primaryProgramHasPublishedFee,
-  primaryProgramHasRenderableFee,
-  primaryProgramDurationYears,
-  primaryProgramShortName,
   activeSection,
   lastVerifiedAt,
 }: {
   universityName: string;
   universitySlug: string;
   universitySummary: string;
-  city: string;
-  establishedYear: number;
   logoUrl?: string;
   coverImage: { url: string; alt: string } | null;
   logoInitials: string;
-  primaryProgramFeeDisplay: string | null;
-  primaryProgramHasPublishedFee: boolean;
-  primaryProgramHasRenderableFee: boolean;
-  primaryProgramDurationYears?: number;
-  primaryProgramShortName?: string;
   activeSection?: UniversitySection | null;
   lastVerifiedAt: string;
 }) {
@@ -140,40 +119,6 @@ export function UniversityHeroSection({
                 <span className="text-white/25">·</span>
                 <span>Updated {formatVerifiedDate(lastVerifiedAt)}</span>
               </div>
-            </div>
-
-            <div className="flex flex-wrap gap-4">
-              <div className="flex items-center gap-2">
-                <MapPinned className="size-4 text-white/50" />
-                <span className="text-sm font-medium text-white/80">{city}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CalendarDays className="size-4 text-white/50" />
-                <span className="text-sm font-medium text-white/80">
-                  Est. {establishedYear}
-                </span>
-              </div>
-              {primaryProgramShortName ? (
-                <div className="flex items-center gap-2">
-                  <CircleDollarSign className="size-4 text-white/50" />
-                  <span className="text-sm font-medium text-white/80">
-                    {(primaryProgramHasPublishedFee ||
-                      primaryProgramHasRenderableFee) &&
-                    primaryProgramFeeDisplay
-                        ? `${primaryProgramFeeDisplay} / year`
-                        : "Fee on official notice"}
-                  </span>
-                </div>
-              ) : null}
-              {primaryProgramDurationYears && primaryProgramShortName ? (
-                <div className="flex items-center gap-2">
-                  <GraduationCap className="size-4 text-white/50" />
-                  <span className="text-sm font-medium text-white/80">
-                    {formatProgramDuration(primaryProgramDurationYears)}{" "}
-                    {primaryProgramShortName}
-                  </span>
-                </div>
-              ) : null}
             </div>
 
             <div className="flex flex-wrap gap-3">

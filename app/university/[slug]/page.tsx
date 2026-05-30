@@ -312,10 +312,6 @@ export default async function UniversityDetailPage({
         coverImage={coverImage}
         logoUrl={university.logoUrl ?? undefined}
         logoInitials={getUniversityInitials(university.name)}
-        primaryProgramFeeDisplay={primaryProgramFeeDisplay}
-        primaryProgramHasPublishedFee={primaryProgramHasPublishedFee}
-        primaryProgramHasRenderableFee={primaryProgramHasRenderableFee}
-        primaryProgramDurationYears={primaryProgram?.offering.durationYears}
         primaryProgramShortName={primaryProgram?.course.shortName}
         lastVerifiedAt={pageReviewedAt}
       >
