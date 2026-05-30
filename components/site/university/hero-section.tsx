@@ -5,6 +5,7 @@ import {
   CircleDollarSign,
   GraduationCap,
   MapPinned,
+  ShieldCheck,
 } from "lucide-react";
 
 import { AddToCompareButton } from "@/components/site/add-to-compare-button";
@@ -15,6 +16,28 @@ import { ShareButton } from "@/components/site/university/share-button";
 import { UniversityLogoBadge } from "@/components/site/university/shared";
 import type { UniversitySection } from "@/lib/university-sections";
 import { formatProgramDuration } from "@/lib/utils";
+
+const SECTION_VERIFIED_LABELS: Record<UniversitySection, string> = {
+  programs: "Program details",
+  academics: "Academic information",
+  admissions: "Admissions information",
+  eligibility: "Eligibility criteria",
+  "student-life": "Student life information",
+  fees: "Fee data",
+  recognition: "Recognition status",
+  hostel: "Hostel information",
+  country: "Country guide",
+  city: "City guide",
+  faq: "FAQs",
+};
+
+function formatVerifiedDate(dateStr: string): string {
+  return new Date(dateStr).toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
 
 const SECTION_HEADINGS: Record<UniversitySection, string> = {
   programs: "Programs & Courses",
@@ -45,6 +68,7 @@ export function UniversityHeroSection({
   primaryProgramDurationYears,
   primaryProgramShortName,
   activeSection,
+  lastVerifiedAt,
 }: {
   universityName: string;
   universitySlug: string;
@@ -60,6 +84,7 @@ export function UniversityHeroSection({
   primaryProgramDurationYears?: number;
   primaryProgramShortName?: string;
   activeSection?: UniversitySection | null;
+  lastVerifiedAt: string;
 }) {
   return (
     <div className="relative overflow-hidden bg-surface-dark">
@@ -104,6 +129,17 @@ export function UniversityHeroSection({
               <p className="max-w-2xl text-sm leading-7 text-white/65 md:text-base md:leading-8">
                 {universitySummary}
               </p>
+              <div className="flex items-center gap-2 pt-1 text-xs text-white/40">
+                <ShieldCheck className="size-3.5 shrink-0 text-accent/70" />
+                <span>
+                  {activeSection
+                    ? `${SECTION_VERIFIED_LABELS[activeSection]} verified`
+                    : "University profile verified"} by{" "}
+                  <span className="text-white/60">StudentsTraffic Research Team</span>
+                </span>
+                <span className="text-white/25">·</span>
+                <span>Updated {formatVerifiedDate(lastVerifiedAt)}</span>
+              </div>
             </div>
 
             <div className="flex flex-wrap gap-4">

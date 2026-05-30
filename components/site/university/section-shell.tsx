@@ -62,6 +62,7 @@ type Props = HeroProps & {
   cityMedia: LocationMedia | null;
   countryMedia: LocationMedia | null;
   cityProfile: SharedCityProfile | null;
+  lastVerifiedAt: string;
 };
 
 function getSectionSummary(
@@ -122,6 +123,7 @@ export function UniversitySectionShell({
   primaryProgramHasRenderableFee,
   primaryProgramDurationYears,
   primaryProgramShortName,
+  lastVerifiedAt,
 }: Props) {
   const [activeSection, setActiveSection] = useState(initialSection);
 
@@ -179,6 +181,7 @@ export function UniversitySectionShell({
         primaryProgramDurationYears={primaryProgramDurationYears}
         primaryProgramShortName={primaryProgramShortName}
         activeSection={activeSection}
+        lastVerifiedAt={lastVerifiedAt}
       />
 
       <UniversityPageNav

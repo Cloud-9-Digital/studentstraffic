@@ -317,6 +317,7 @@ export default async function UniversityDetailPage({
         primaryProgramHasRenderableFee={primaryProgramHasRenderableFee}
         primaryProgramDurationYears={primaryProgram?.offering.durationYears}
         primaryProgramShortName={primaryProgram?.course.shortName}
+        lastVerifiedAt={pageReviewedAt}
       >
         {/* Overview content — server-rendered, shown when no section is active */}
         <div className="min-w-0 space-y-0">
