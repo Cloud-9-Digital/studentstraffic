@@ -1,10 +1,10 @@
 export const catalogReviewedAt = "2026-03-27";
 export const governancePublishedAt = "2026-03-27";
-export const contentAuthorName = "Bharath";
-export const contentAuthorSlug = "bharath";
-export const contentAuthorRole = "Admissions content lead";
+export const contentAuthorName = "Bharat Vasireddy";
+export const contentAuthorSlug = "bharat-vasireddy";
+export const contentAuthorRole = "Co-Founder, StudentsTraffic";
 export const contentAuthorBio =
-  "Bharath leads Students Traffic's admissions content for MBBS abroad, covering university selection, fee clarity, compliance checks, and application guidance for Indian families.";
+  "Bharat Vasireddy is the co-founder of StudentsTraffic, helping Indian students navigate MBBS admissions abroad with honest, verified, commission-free guidance.";
 export const contentAuthorAreas = [
   "MBBS abroad destinations and university selection",
   "Admissions, fees, and compliance guidance",

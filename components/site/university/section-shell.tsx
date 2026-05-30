@@ -2,6 +2,7 @@
 
 import { type ReactNode, useEffect, useState } from "react";
 
+import type { Author } from "@/lib/authors";
 import type { CountryContent } from "@/lib/data/country-content";
 import type { SharedCityProfile } from "@/lib/data/city-content";
 import type { CountryRegulatoryAdvisory, UniversityRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
@@ -59,6 +60,7 @@ type Props = HeroProps & {
   cityProfile: SharedCityProfile | null;
   lastVerifiedAt: string;
   primaryProgramShortName?: string;
+  author?: Author | null;
 };
 
 function getSectionSummary(
@@ -116,6 +118,7 @@ export function UniversitySectionShell({
   logoInitials,
   primaryProgramShortName,
   lastVerifiedAt,
+  author,
 }: Props) {
   const [activeSection, setActiveSection] = useState(initialSection);
 
@@ -167,6 +170,7 @@ export function UniversitySectionShell({
         logoInitials={logoInitials}
         activeSection={activeSection}
         lastVerifiedAt={lastVerifiedAt}
+        author={author}
       />
 
       <UniversityPageNav

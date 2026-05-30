@@ -8,24 +8,13 @@ import { ScrollToButton } from "@/components/site/scroll-to-button";
 import { ShortlistButton } from "@/components/site/shortlist-button";
 import { ShareButton } from "@/components/site/university/share-button";
 import { UniversityLogoBadge } from "@/components/site/university/shared";
+import type { Author } from "@/lib/authors";
 import type { UniversitySection } from "@/lib/university-sections";
 
-const SECTION_VERIFIED_LABELS: Record<UniversitySection, string> = {
-  programs: "Program details",
-  academics: "Academic information",
-  admissions: "Admissions information",
-  eligibility: "Eligibility criteria",
-  "student-life": "Student life information",
-  fees: "Fee data",
-  recognition: "Recognition status",
-  hostel: "Hostel information",
-  country: "Country guide",
-  city: "City guide",
-  faq: "FAQs",
-};
-
 function formatVerifiedDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString("en-IN", {
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("en-IN", {
     day: "numeric",
     month: "short",
     year: "numeric",
@@ -55,6 +44,7 @@ export function UniversityHeroSection({
   logoInitials,
   activeSection,
   lastVerifiedAt,
+  author,
 }: {
   universityName: string;
   universitySlug: string;
@@ -64,6 +54,7 @@ export function UniversityHeroSection({
   logoInitials: string;
   activeSection?: UniversitySection | null;
   lastVerifiedAt: string;
+  author?: Author | null;
 }) {
   return (
     <div className="relative overflow-hidden bg-surface-dark">
@@ -111,13 +102,24 @@ export function UniversityHeroSection({
               <div className="flex items-center gap-2 pt-1 text-xs text-white/40">
                 <ShieldCheck className="size-3.5 shrink-0 text-accent/70" />
                 <span>
-                  {activeSection
-                    ? `${SECTION_VERIFIED_LABELS[activeSection]} verified`
-                    : "University profile verified"} by{" "}
-                  <span className="text-white/60">StudentsTraffic Research Team</span>
+                  Written by{" "}
+                  {author ? (
+                    <Link
+                      href={`/author/${author.slug}`}
+                      className="text-white/70 underline underline-offset-2 hover:text-white transition-colors"
+                    >
+                      {author.name}
+                    </Link>
+                  ) : (
+                    <span className="text-white/60">StudentsTraffic Research Team</span>
+                  )}
                 </span>
-                <span className="text-white/25">·</span>
-                <span>Updated {formatVerifiedDate(lastVerifiedAt)}</span>
+                {formatVerifiedDate(lastVerifiedAt) && (
+                  <>
+                    <span className="text-white/25">·</span>
+                    <span>Updated On: {formatVerifiedDate(lastVerifiedAt)}</span>
+                  </>
+                )}
               </div>
             </div>
 

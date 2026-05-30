@@ -26,7 +26,9 @@ import { UniversityRecognitionSection } from "@/components/site/university/recog
 import { UniversitySectionShell } from "@/components/site/university/section-shell";
 import { SectionLabel } from "@/components/site/university/shared";
 import { UniversityStudentLifeSection } from "@/components/site/university/student-life-section";
+import { getAuthor } from "@/lib/authors";
 import { catalogReviewedAt } from "@/lib/content-governance";
+import { getUniversityAuthorSlug } from "@/lib/university-authors";
 import {
   getComparisonGuidesForUniversity,
 } from "@/lib/discovery-pages";
@@ -245,7 +247,9 @@ export default async function UniversityDetailPage({
     ? formatProgramAnnualFee(primaryProgram.offering)
     : null;
   const coverImage = getUniversityCoverImage(university);
-  const pageReviewedAt = university.lastVerifiedAt ?? catalogReviewedAt;
+  const pageReviewedAt = university.lastVerifiedAt || catalogReviewedAt;
+  const authorSlug = getUniversityAuthorSlug(university.slug);
+  const author = authorSlug ? getAuthor(authorSlug) : null;
   const path = section
     ? `/university/${university.slug}-${section}`
     : `/university/${university.slug}`;
@@ -314,6 +318,7 @@ export default async function UniversityDetailPage({
         logoInitials={getUniversityInitials(university.name)}
         primaryProgramShortName={primaryProgram?.course.shortName}
         lastVerifiedAt={pageReviewedAt}
+        author={author}
       >
         {/* Overview content — server-rendered, shown when no section is active */}
         <div className="min-w-0 space-y-0">

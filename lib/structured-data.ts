@@ -64,7 +64,7 @@ function getAbsoluteMediaUrls(urls: Array<string | undefined>) {
   return uniqueValues(urls).map((url) => absoluteUrl(url));
 }
 
-const contentAuthorPath = `/authors/${contentAuthorSlug}`;
+const contentAuthorPath = `/author/${contentAuthorSlug}`;
 
 function getProgramCourseStructuredData(program: FinderProgram) {
   const universityUrl = absoluteUrl(getUniversityHref(program.university.slug));
@@ -213,6 +213,55 @@ export function getAuthorStructuredData() {
     },
     knowsAbout: contentAuthorAreas,
   };
+}
+
+export function getProfilePageStructuredData(author: {
+  slug: string;
+  name: string;
+  title: string;
+  bio: string;
+  longBio: string[];
+}) {
+  const path = `/author/${author.slug}`;
+  const personId = `${absoluteUrl(path)}#person`;
+
+  const person = {
+    "@type": "Person",
+    "@id": personId,
+    name: author.name,
+    jobTitle: author.title,
+    description: author.bio,
+    url: absoluteUrl(path),
+    worksFor: {
+      "@id": getOrganizationStructuredDataId(),
+    },
+  };
+
+  const profilePage = {
+    "@type": "ProfilePage",
+    "@id": getWebPageStructuredDataId(path),
+    url: absoluteUrl(path),
+    name: `${author.name} — ${author.title}`,
+    description: author.bio,
+    inLanguage: "en-IN",
+    isPartOf: { "@id": getWebsiteStructuredDataId() },
+    publisher: { "@id": getOrganizationStructuredDataId() },
+    breadcrumb: { "@id": getBreadcrumbStructuredDataId(path) },
+    mainEntity: { "@id": personId },
+  };
+
+  const breadcrumb = getBreadcrumbStructuredData([
+    { name: "Home", path: "/" },
+    { name: author.name, path },
+  ]);
+
+  return getStructuredDataGraph([
+    getOrganizationStructuredData(),
+    getWebsiteStructuredData(),
+    person,
+    profilePage,
+    breadcrumb,
+  ]);
 }
 
 export function getWebPageStructuredData(input: WebPageSchemaInput) {
