@@ -23,6 +23,7 @@ const keyTakeaways = [
 const universityFees = [
   {
     university: "Sevastopol State University",
+    slug: null,
     city: "Sevastopol",
     tier: "Budget",
     annualTuition: "₹2,60,000",
@@ -33,6 +34,7 @@ const universityFees = [
   },
   {
     university: "Ural State Medical University",
+    slug: "ural-state-medical-university",
     city: "Yekaterinburg",
     tier: "Budget",
     annualTuition: "₹2,95,000",
@@ -43,6 +45,7 @@ const universityFees = [
   },
   {
     university: "North Ossetian State Medical Academy",
+    slug: "north-ossetian-state-medical-academy",
     city: "Vladikavkaz",
     tier: "Budget",
     annualTuition: "₹3,10,000",
@@ -53,6 +56,7 @@ const universityFees = [
   },
   {
     university: "Tula State University",
+    slug: "tula-state-university",
     city: "Tula",
     tier: "Budget",
     annualTuition: "₹2,80,000",
@@ -63,6 +67,7 @@ const universityFees = [
   },
   {
     university: "Crimea Federal University",
+    slug: "crimea-federal-university",
     city: "Simferopol",
     tier: "Mid-range",
     annualTuition: "₹3,54,000",
@@ -73,6 +78,7 @@ const universityFees = [
   },
   {
     university: "St. Petersburg State Medical University",
+    slug: "pavlov-first-saint-petersburg-state-medical-university",
     city: "St. Petersburg",
     tier: "Mid-range",
     annualTuition: "₹3,30,000",
@@ -83,6 +89,7 @@ const universityFees = [
   },
   {
     university: "Bashkir State Medical University",
+    slug: "bashkir-state-medical-university",
     city: "Ufa",
     tier: "Mid-range",
     annualTuition: "₹4,32,000",
@@ -93,6 +100,7 @@ const universityFees = [
   },
   {
     university: "Kursk State Medical University",
+    slug: "kursk-state-medical-university",
     city: "Kursk",
     tier: "Mid-range",
     annualTuition: "₹4,50,000",
@@ -103,6 +111,7 @@ const universityFees = [
   },
   {
     university: "Volgograd State Medical University",
+    slug: "volgograd-state-medical-university",
     city: "Volgograd",
     tier: "Mid-range",
     annualTuition: "₹4,00,000",
@@ -113,6 +122,7 @@ const universityFees = [
   },
   {
     university: "Perm State Medical University",
+    slug: "perm-state-medical-university",
     city: "Perm",
     tier: "Mid-range",
     annualTuition: "₹4,00,000",
@@ -123,6 +133,7 @@ const universityFees = [
   },
   {
     university: "Kazan Federal University",
+    slug: "kazan-federal-university",
     city: "Kazan",
     tier: "Federal",
     annualTuition: "₹5,94,000",
@@ -133,6 +144,7 @@ const universityFees = [
   },
   {
     university: "RUDN University",
+    slug: null,
     city: "Moscow",
     tier: "Premium",
     annualTuition: "₹8,50,000",
@@ -143,6 +155,7 @@ const universityFees = [
   },
   {
     university: "First Moscow State Medical University",
+    slug: "sechenov-first-moscow-state-medical-university",
     city: "Moscow",
     tier: "Premium",
     annualTuition: "₹10,00,000",
@@ -567,7 +580,16 @@ export default function RussiaMbbsFeesPage() {
                   {universityFees.map((row, idx) => (
                     <tr key={idx} className="hover:bg-muted/30">
                       <td className="px-6 py-4 text-sm font-medium text-foreground">
-                        {row.university}
+                        {row.slug ? (
+                          <Link
+                            href={`/university/${row.slug}`}
+                            className="hover:text-accent hover:underline"
+                          >
+                            {row.university}
+                          </Link>
+                        ) : (
+                          row.university
+                        )}
                       </td>
                       <td className="px-6 py-4 text-sm text-muted-foreground">
                         {row.city}

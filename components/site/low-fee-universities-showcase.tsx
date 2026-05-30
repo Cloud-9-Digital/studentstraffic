@@ -29,6 +29,7 @@ const lowFeeUniversities: LowFeeUniversity[] = [
     city: "Kemerovo",
     annualFeeUsd: 3200,
     sixYearTotalUsd: 19200,
+    slug: "kemerovo-state-medical-university",
     established: 1955,
     highlights: [
       "Budget-friendly Siberian location",
@@ -52,6 +53,7 @@ const lowFeeUniversities: LowFeeUniversity[] = [
     city: "Simferopol",
     annualFeeUsd: 3500,
     sixYearTotalUsd: 21000,
+    slug: "crimea-federal-university",
     highlights: [
       "Very competitive rates",
       "Modern campus infrastructure",
@@ -63,6 +65,7 @@ const lowFeeUniversities: LowFeeUniversity[] = [
     city: "Volgograd",
     annualFeeUsd: 3700,
     sixYearTotalUsd: 22200,
+    slug: "volgograd-state-medical-university",
     established: 1935,
     highlights: [
       "Government-funded institution",
@@ -75,6 +78,7 @@ const lowFeeUniversities: LowFeeUniversity[] = [
     city: "Smolensk",
     annualFeeUsd: 4200,
     sixYearTotalUsd: 25200,
+    slug: "smolensk-state-medical-university",
     established: 1920,
     highlights: [
       "Century-old medical institution",
@@ -165,7 +169,7 @@ export function LowFeeUniversitiesShowcase({
                       <div className="flex-1">
                         {uni.slug ? (
                           <Link
-                            href={`/universities/${uni.slug}`}
+                            href={`/university/${uni.slug}`}
                             className="font-semibold text-foreground hover:text-accent hover:underline"
                           >
                             {uni.name}
