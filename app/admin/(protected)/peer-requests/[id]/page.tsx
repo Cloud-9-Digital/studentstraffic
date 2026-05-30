@@ -72,7 +72,7 @@ async function PeerRequestDetail({ id }: { id: string }) {
             <h1 className="font-display text-2xl font-semibold text-[#0b312b] md:text-3xl">{req.fullName}</h1>
             <p className="mt-1 text-sm text-slate-400">
               Requesting a peer at{" "}
-              <a href={`/universities/${universitySlug}`} target="_blank" rel="noreferrer" className="text-[#0b312b] hover:underline">
+              <a href={`/university/${universitySlug}`} target="_blank" rel="noreferrer" className="text-[#0b312b] hover:underline">
                 {universityName}
               </a>
               {" "}· Request #{req.id}
@@ -93,7 +93,7 @@ async function PeerRequestDetail({ id }: { id: string }) {
 
       <Section title="Interest">
         <Field label="University" value={
-          <a href={`/universities/${universitySlug}`} target="_blank" rel="noreferrer" className="text-[#0b312b] hover:underline">
+          <a href={`/university/${universitySlug}`} target="_blank" rel="noreferrer" className="text-[#0b312b] hover:underline">
             {universityName}
           </a>
         } />

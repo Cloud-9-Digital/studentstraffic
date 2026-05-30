@@ -73,6 +73,51 @@ export const landingPages: LandingPage[] = [
         answer:
           "No — rankings are a poor filter for MBBS decisions. What matters more is NMC compliance, English-medium delivery quality, hospital affiliation for clinical training, Indian student support infrastructure, hostel availability, city livability, and total cost over 6 years. Evaluate these factors with your specific budget and NExT preparation strategy in mind.",
       },
+      {
+        question: "What is the cost of living in Russia for Indian MBBS students?",
+        answer:
+          "Monthly living costs in Russia vary sharply by city. In regional cities like Kazan, Volgograd, and Orenburg, Indian students typically spend ₹17,000–27,000/month on hostel, food, transport, and utilities. Moscow is significantly more expensive at ₹35,000–55,000/month. See our detailed city-by-city breakdown at studentstraffic.com/cost-of-living-in-russia-for-indian-students for a full budget planner.",
+      },
+      {
+        question: "What is the MBBS syllabus in Russia and how does it compare to the NExT exam?",
+        answer:
+          "The 6-year Russian MBBS covers pre-clinical sciences (Years 1–2), para-clinical subjects including Pathology and Pharmacology (Years 3–4), clinical rotations (Years 5–6), and a final state examination. The syllabus maps well onto the NExT exam structure, particularly in basic sciences. See the full year-by-year syllabus breakdown at studentstraffic.com/mbbs-in-russia-syllabus.",
+      },
+      {
+        question: "Can students do MBBS in Russia without NEET?",
+        answer:
+          "Russian universities themselves do not require NEET for admission. However, if you intend to practise medicine in India, NEET-UG is mandatory — the NMC requires a valid NEET score for the Eligibility Certificate that must be obtained before departure. Students who enrol without a NEET score cannot sit the NExT exam or register with any Indian State Medical Council.",
+      },
+      {
+        question: "Is MBBS in Russia good for Indian students?",
+        answer:
+          "MBBS in Russia is a well-established, legitimate pathway for Indian students who clear NEET but do not get a government seat in India and cannot afford private college fees of ₹80 lakh–₹2 crore. Russian universities are government-run, English-medium, and NMC-recognised. The trade-offs are real — you'll be 6 years away from home, need to learn basic Russian for clinical years, and must clear FMGE/NExT on return. Whether it is 'good' depends on which university you choose, how seriously you prepare for FMGE, and your budget.",
+      },
+      {
+        question: "What are the fees of MBBS in Russia in total?",
+        answer:
+          "Total MBBS fees in Russia depend on the university and city. Annual tuition ranges from $3,500 (budget universities like Chuvash) to $10,500 (Sechenov Moscow). Over 6 years, total tuition is approximately ₹17–52 lakh. Adding hostel (₹6,500–25,000/month), living costs, and travel, the all-in 6-year budget is ₹33–65 lakh for most regional cities — 50–70% less than Indian private medical college management quota seats.",
+      },
+      {
+        question: "Which city in Russia is best for MBBS for Indian students?",
+        answer:
+          "Kazan is the most popular among Indian students for its large Indian community, Indian mess options, and strong university (Kazan State Medical University, est. 1814). Volgograd and Orenburg are popular for lower costs and high FMGE pass rates — Orenburg's FMGE rate of 43.4% (2024) is the highest among commonly chosen Russian cities. Avoid Moscow unless specifically targeting Sechenov — the cost of living is 2–3x higher than regional cities.",
+      },
+      {
+        question: "How many years is MBBS in Russia?",
+        answer:
+          "MBBS in Russia is a 6-year programme, including a final clinical internship year. The 6-year structure is: Years 1–2 (pre-clinical sciences), Years 3–4 (para-clinical and clinical transition), Years 5–6 (full clinical rotations and internship). After returning to India, graduates must complete a 1-year internship in India as required by NMC before appearing for NExT.",
+      },
+      {
+        question: "Which Russian medical colleges are approved by NMC (formerly MCI)?",
+        answer:
+          "The NMC (National Medical Commission) maintains an official list of recognised foreign medical colleges. As of 2026, 46 Russian medical universities are NMC-listed. Key approved colleges include: Sechenov First Moscow State Medical University, Kazan State Medical University, Volgograd State Medical University, Orenburg State Medical University, Kemerovo State Medical University, Bashkir State Medical University, and Samara State Medical University, among others. Always verify directly at nmc.org.in before enrolling — the list is updated periodically.",
+      },
+      {
+        question: "What is the hostel facility like for Indian MBBS students in Russia?",
+        answer:
+          "Russian university hostels cost $80–150/month and are the default option for Year 1 students. They are shared rooms (2–4 students), centrally heated, and within walking distance of campus. Indian mess (home-cooked Indian food by senior students) is available in cities like Kazan, Volgograd, Orenburg, and Kemerovo. By Year 2, most students move to shared private apartments for more independence. See our full hostel and accommodation guide at studentstraffic.com/mbbs-in-russia-hostel.",
+      },
     ],
     metaTitle: "MBBS in Russia for Indian Students 2026 | Fees, Universities, Eligibility",
     metaDescription:

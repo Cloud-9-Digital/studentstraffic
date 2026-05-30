@@ -297,7 +297,7 @@ export default async function AdminUniversityResearchPage() {
                   {row.publishedUniversitySlug ? (
                     <>
                       <a
-                        href={`/universities/${row.publishedUniversitySlug}`}
+                        href={`/university/${row.publishedUniversitySlug}`}
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center gap-1 rounded-lg border border-slate-200 px-2.5 py-1 text-xs font-medium text-slate-700 hover:border-[#0b312b]/20 hover:text-[#0b312b]"
@@ -328,7 +328,7 @@ export default async function AdminUniversityResearchPage() {
 
                   {row.matchedUniversitySlug ? (
                     <a
-                      href={`/universities/${row.matchedUniversitySlug}`}
+                      href={`/university/${row.matchedUniversitySlug}`}
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center gap-1 rounded-lg border border-slate-200 px-2.5 py-1 text-xs font-medium text-slate-700 hover:border-[#0b312b]/20 hover:text-[#0b312b]"

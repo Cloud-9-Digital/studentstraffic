@@ -250,7 +250,7 @@ export function CountryShortlistPage({
                     <tr key={program.offering.slug} className="border-b border-border/60 align-top">
                       <td className="px-4 py-4">
                         <Link
-                          href={`/universities/${program.university.slug}`}
+                          href={`/university/${program.university.slug}`}
                           className="font-medium text-foreground hover:text-primary"
                         >
                           {program.university.name}

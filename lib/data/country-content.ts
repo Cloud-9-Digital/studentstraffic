@@ -30,7 +30,7 @@ const countryContentMap: Record<string, CountryContent> = {
     ],
     eligibility: {
       intro:
-        "Indian students planning MBBS in Russia should first clear the Indian-side eligibility checks and then verify the exact university-side admissions route, because Russian universities can use their own internal tests, interviews, and document formats for foreign applicants.",
+        "Russia has 46 NMC-approved medical colleges and universities accepting Indian students. Before shortlisting a medical college in Russia, confirm the Indian-side eligibility requirements and then verify the exact university-side admissions route — each institution uses its own document formats, interview processes, and enrollment timelines.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology as core subjects",
         "Minimum 50% aggregate in PCB (45% for eligible reserved-category candidates under the current Indian rule set)",

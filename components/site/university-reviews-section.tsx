@@ -235,7 +235,7 @@ export async function UniversityReviewsSection({
       {/* Add review */}
       <div className="mt-6 section-tint rounded-[1.75rem] p-5 sm:p-6">
         <UniversityReviewForm
-          sourcePath={`/universities/${universitySlug}`}
+          sourcePath={`/university/${universitySlug}`}
           universitySlug={universitySlug}
           universityName={universityName}
         />

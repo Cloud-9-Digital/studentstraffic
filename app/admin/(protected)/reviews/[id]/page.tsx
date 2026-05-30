@@ -91,7 +91,7 @@ async function ReviewDetail({ id }: { id: string }) {
         <h1 className="mt-3 font-display text-2xl font-semibold text-[#0b312b] md:text-3xl">{review.reviewerName}</h1>
         <p className="mt-1 text-sm text-slate-400">
           Review for{" "}
-          <a href={`/universities/${universitySlug}#reviews`} target="_blank" rel="noreferrer" className="text-[#0b312b] hover:underline">
+          <a href={`/university/${universitySlug}#reviews`} target="_blank" rel="noreferrer" className="text-[#0b312b] hover:underline">
             {universityName}
           </a>
           {" "}· Review #{review.id}

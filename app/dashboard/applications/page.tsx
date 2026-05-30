@@ -165,7 +165,7 @@ export default async function ApplicationsPage() {
               </div>
 
               <Link
-                href={`/universities/${app.universitySlug}`}
+                href={`/university/${app.universitySlug}`}
                 className="flex shrink-0 items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3 py-1.5 text-xs font-medium text-[#374151] transition hover:border-[#0f3d37]/30 hover:text-[#0f3d37]"
               >
                 View

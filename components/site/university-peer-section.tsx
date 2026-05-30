@@ -55,7 +55,7 @@ export async function UniversityPeerSection({
             Share your details and we&apos;ll match you with a registered student who can answer your questions directly.
           </p>
           <PeerRequestForm
-            sourcePath={`/universities/${universitySlug}`}
+            sourcePath={`/university/${universitySlug}`}
             universitySlug={universitySlug}
             universityName={universityName}
           />

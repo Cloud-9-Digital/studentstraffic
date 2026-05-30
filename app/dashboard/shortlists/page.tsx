@@ -127,7 +127,7 @@ export default async function ShortlistsPage() {
             {/* Info */}
             <div className="min-w-0 flex-1">
               <Link
-                href={`/universities/${universitySlug}`}
+                href={`/university/${universitySlug}`}
                 className="text-sm font-semibold text-[#0f1f1c] hover:text-[#0f3d37] hover:underline"
               >
                 {university?.name ?? universitySlug}
@@ -147,7 +147,7 @@ export default async function ShortlistsPage() {
             {/* Actions */}
             <div className="flex shrink-0 items-center gap-2">
               <Link
-                href={`/universities/${universitySlug}`}
+                href={`/university/${universitySlug}`}
                 className="flex items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3 py-1.5 text-xs font-medium text-[#374151] transition hover:border-[#0f3d37]/30 hover:text-[#0f3d37]"
               >
                 View
