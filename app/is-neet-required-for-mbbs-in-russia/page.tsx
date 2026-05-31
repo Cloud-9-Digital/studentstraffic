@@ -77,23 +77,23 @@ const mythVsReality = [
 const verificationChecklist = [
   {
     item: "NEET validity period",
-    whatToCheck: "Ensure NEET result is less than 3 years old from intended admission date. Result dated June 2024 valid until June 2027 admission cycles.",
+    whatToCheck: "We confirm that the NEET scorecard is within the valid window for the intended admission year before processing any application.",
   },
   {
-    item: "NMC eligibility criteria",
-    whatToCheck: "Verify university appears on NMC's approved foreign medical institutions list. Check current regulations at nmc.org.in before payment.",
+    item: "NMC guideline compliance",
+    whatToCheck: "Every university we process admissions for is assessed against NMC's FMGL guidelines and verified via WDOMS listing before any offer is accepted.",
   },
   {
-    item: "Consultant misleading claims",
-    whatToCheck: "If told 'NEET not required', ask specifically: 'Will I be able to register with NMC and practice in India without NEET?' Demand written clarification.",
+    item: "NEET compliance clarity",
+    whatToCheck: "We do not process admissions for students who intend to practice in India without a valid NEET scorecard — NMC's requirement is non-negotiable and we apply it without exception.",
   },
   {
     item: "Class 12 requirements",
-    whatToCheck: "Minimum 50% aggregate in Physics, Chemistry, Biology (40% for SC/ST in some universities). Russian admission primarily depends on this, not NEET score.",
+    whatToCheck: "Minimum 50% aggregate in Physics, Chemistry, and Biology is the NMC-linked threshold for Indian students applying to foreign medical universities.",
   },
   {
-    item: "Long-term career plans",
-    whatToCheck: "Decide now if India practice is a possibility. Keeping options open requires NEET compliance upfront; cannot be added retroactively.",
+    item: "India-return pathway",
+    whatToCheck: "NEET compliance must be established before enrollment — it cannot be added retroactively. We confirm this is in place before the admission is finalised.",
   },
 ];
 

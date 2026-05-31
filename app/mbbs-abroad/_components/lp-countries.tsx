@@ -82,7 +82,7 @@ export function LpCountries() {
             Choose your country
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-sm leading-7 text-gray-500">
-            All NMC-recognized. All English medium. Seats available for 2026 intake.
+            All meeting NMC guidelines. All English medium. Seats available for 2026 intake.
           </p>
         </div>
 

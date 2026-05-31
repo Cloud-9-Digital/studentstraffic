@@ -37,7 +37,7 @@ export const studyAbroadGuides = {
       leadDescription: "We can help you filter Russian universities by budget, NEET status, medium, city, and India-return fit before you start paying registration charges.",
       notes: "Interest: MBBS admission in Russia",
       keyTakeaways: [
-  "MBBS admission in Russia is simpler than India private-college admission, but it is not a random seat-booking process. The real work is checking university fit, documents, visa timing, and India-return compliance before you pay.",
+  "MBBS admission in Russia is simpler than India private-college admission, but it is not a random seat-booking process. The real work is verifying university fit, documents, visa timing, and India-return compliance — and we handle this before any payment is made.",
   "For Indian students, the biggest practical filters are Class 12 PCB marks, a valid passport, clean documents, and NEET if you want the option to practise in India after graduation.",
   "The commercial SERP for this keyword is full of vague consultant pages. A page that gives the actual sequence, document list, and timeline has a real chance to rank and convert.",
 ],
@@ -53,7 +53,7 @@ export const studyAbroadGuides = {
     title: "Basic eligibility for Indian students",
     bullets: [
       "Class 12 with Physics, Chemistry, and Biology as core subjects.",
-      "Minimum PCB percentage depends on the university and your reservation category, but the safe working assumption is to meet the usual NMC-linked overseas-medical threshold before shortlisting.",
+      "Minimum 50% aggregate in PCB (Physics, Chemistry, Biology) in Class 12 — this is the NMC-linked threshold for Indian students applying to foreign medical universities.",
       "A valid NEET-UG score is essential if you want to preserve the India-return pathway after graduating abroad.",
       "A valid passport with enough remaining validity for invitation, visa, and travel processing.",
       "A student profile that matches the university's intake timing, document rules, and hostel availability.",
@@ -313,7 +313,7 @@ export const studyAbroadGuides = {
       keyTakeaways: [
   "The lowest MBBS fees in Russia start from $2,800/year at regional universities like Bashkir State Medical University (Ufa), compared to $6,000-8,000/year in Moscow. Total 6-year cost ranges from $35,000-$50,000 including accommodation and living expenses.",
   "Low tuition ≠ low total cost. A university charging $3,000/year in an expensive city may ultimately cost more than one charging $4,000/year in an affordable region. Factor in hostel ($600-1,500/year), living costs ($2,000-3,000/year), and travel ($500-800/year).",
-  "The cheapest option isn't always the smartest. Universities with fees below $2,500/year often lack proper English-medium instruction, adequate hospital partnerships, or NMC recognition. Verify WDOMS listing, check graduate FMGE pass rates, and confirm clinical training quality before choosing based solely on price.",
+  "The cheapest option isn't always the smartest. Universities with fees below $2,500/year often lack proper English-medium instruction, adequate hospital partnerships, or WDOMS recognition. Check graduate FMGE pass rates and confirm clinical training quality before choosing based solely on price.",
 ],
       sections: [
   {
@@ -403,7 +403,7 @@ export const studyAbroadGuides = {
   {
     question: "Are low-fee Russian medical universities recognized in India?",
     answer:
-      "Yes. Low-fee regional universities like Kazan State Medical University, Belgorod State University, and Kursk State Medical University appear on the NMC-approved list and qualify graduates for FMGE/NExT screening. Recognition depends on NMC listing, not tuition cost, but verify current status before enrollment.",
+      "Yes. Low-fee regional universities like Kazan State Medical University, Belgorod State University, and Kursk State Medical University are WDOMS-listed and meet NMC's FMGL guidelines, qualifying their graduates for FMGE/NExT screening. NMC compliance is based on meeting published guidelines, not tuition cost — we verify each university's status before shortlisting.",
   },
   {
     question: "How can I verify the lowest MBBS fees are genuine?",
@@ -598,7 +598,7 @@ export const studyAbroadGuides = {
       notes: "Interest: MBBS in Russia with scholarship",
       formVariant: "scholarship",
       keyTakeaways: [
-  "Russia offers government-funded scholarships covering 100% tuition for MBBS through the Russian Government Scholarship Program (Rossotrudnichestvo). For 2026, approximately 15,000 scholarships are available globally, with specific quotas allocated to India (typically 50-100 medical seats annually).",
+  "Russia allocates a limited number of fully funded seats to Indian students each year through a federal government quota programme. Competition is high — seats are merit-based and the application window is fixed annually. We assess quota eligibility early in the admissions cycle and manage the application process for families where this route is viable.",
   "Full scholarships cover tuition only ($3,000-6,000/year value). Students still pay for hostel ($600-1,500/year), living expenses ($2,000-3,000/year), medical insurance ($150-300/year), and travel (₹40,000-60,000 per trip). Total 6-year cost even with scholarship: $20,000-30,000.",
   "Scholarship eligibility requires strong academic performance (85%+ in PCB), NEET qualification, and competitive application through official channels. Applications open December-March annually. Selection is merit-based with interviews conducted by Russian Embassy representatives.",
 ],
@@ -648,11 +648,11 @@ export const studyAbroadGuides = {
   {
     title: "How Indian families should evaluate a Russia scholarship offer",
     bullets: [
-      "Ask for the official notice or university-issued scholarship policy.",
-      "Check whether the scholarship is for tuition only or for tuition plus living support.",
-      "Confirm whether the benefit applies only in year one or across the full program.",
-      "Check whether the university itself is the right fit before getting excited about the discount.",
-      "Compare the scholarship route against a safer low-cost Russia option or another country route, not against fantasy pricing.",
+      "The official university-issued scholarship policy is obtained in writing — not from agent communications.",
+      "We confirm whether the scholarship covers tuition only or includes living support.",
+      "We confirm whether the benefit applies to all years or only year one.",
+      "University fit — NMC compliance, clinical quality, Indian community — is assessed before any scholarship offer is factored into a cost plan.",
+      "We compare the scholarship route against other viable low-cost options rather than accepting discounted pricing at face value.",
     ],
   },
   {
@@ -677,7 +677,7 @@ export const studyAbroadGuides = {
   {
     question: "How can I tell if a Russia scholarship offer is genuine?",
     answer:
-      "Ask for the official scholarship notice or university-issued written fee policy. If the entire offer lives only in WhatsApp messages or verbal counselling, treat it as unverified.",
+      "We obtain the official university-issued scholarship notice or written fee policy. Any offer that exists only in WhatsApp messages or verbal form is treated as unverified and is not presented to families.",
   },
   {
     question: "Should I pick a weaker university because it offers a scholarship?",
@@ -1293,7 +1293,7 @@ export const studyAbroadGuides = {
   {
     question: "Are MBBS fees in Russia cheaper than Indian private colleges?",
     answer:
-      "Yes, significantly. Russia MBBS total cost ranges from ₹35-50 lakhs for 6 years, while Indian private medical colleges charge ₹60 lakhs to ₹2.5 crores. However, factor in India-return licensing exam costs (₹1.5-2.5 lakhs for FMGE/NExT coaching) and lower pass rates (15-22% vs 65-75% for Indian graduates) when comparing true affordability.",
+      "Yes, significantly. Russia MBBS total cost ranges from ₹35-50 lakhs for 6 years, while Indian private medical colleges charge ₹60 lakhs to ₹2.5 crores. Factor in lower pass rates (15-22% vs 65-75% for Indian graduates) when comparing true affordability. Students Traffic provides free FMGE/NExT coaching for students who join through us, removing the typical ₹1.5-2.5 lakh post-graduation coaching cost.",
   },
   {
     question: "Does the first-year Russia fee include hostel?",
@@ -1430,9 +1430,9 @@ export const studyAbroadGuides = {
       "Yes, if you want the option to practise in India later. Families should treat NEET as part of pathway planning, not an optional detail.",
   },
   {
-    question: "What should I verify before paying for a Russian MBBS seat?",
+    question: "What is verified before paying for a Russian MBBS seat?",
     answer:
-      "Verify the university, the English-medium track, total duration, internship structure, and the student's India-return fit before paying any non-refundable amount.",
+      "We confirm the university's NMC status, English-medium track, total duration, internship structure, and the student's India-return fit before any non-refundable payment is processed.",
   },
 ],
     },
@@ -1921,7 +1921,7 @@ export const studyAbroadGuides = {
         {
           question: "What is the total cost of MBBS in Russia including living expenses?",
           answer:
-            "Total all-in cost (tuition + hostel + living + travel + insurance) ranges from ₹30–45 lakhs for a 6-year program in a Tier 3 regional city to ₹45–65 lakhs in a Tier 2 city. Add ₹10–15 lakhs for FMGE/NExT coaching and preparation after graduation if returning to practice in India.",
+            "Total all-in cost (tuition + hostel + living + travel + insurance) ranges from ₹30–45 lakhs for a 6-year program in a Tier 3 regional city to ₹45–65 lakhs in a Tier 2 city. Students Traffic provides free FMGE/NExT coaching for students who join through us — the typical ₹10–15 lakh post-graduation coaching cost is covered.",
         },
       ],
     },
@@ -1931,7 +1931,7 @@ export const studyAbroadGuides = {
     metadata: {
       title: "Russian Medical Colleges Approved by NMC 2026 | Full University List for Indian Students",
       description:
-        "Complete list of Russian medical colleges approved by NMC (formerly MCI) — 46 universities with NMC/WDOMS status, fees, city, and what to verify before enrolling. Official NMC verification guide included.",
+        "Complete list of Russian medical colleges meeting NMC guidelines — 50+ universities with WDOMS listing, fees, city, and what to verify before enrolling. NMC compliance guide included.",
       path: "/russia-medical-university-list",
       openGraphType: "article",
       keywords: [
@@ -1950,7 +1950,7 @@ export const studyAbroadGuides = {
       title: "Russian Medical Colleges Approved by NMC: Which Universities Are Safe to Enrol In",
       updatedOn: "Updated on 30 May 2026",
       kicker: "NMC-approved university directory",
-      summary: "Russia has 46 medical colleges approved by India's National Medical Commission (NMC, formerly MCI). This page lists them, explains the difference between NMC approval and WDOMS listing, and shows you how to verify any university's status independently before paying an admission fee.",
+      summary: "Russia has 50+ medical colleges meeting India's National Medical Commission (NMC) guidelines. This page lists them, explains what NMC compliance means versus WDOMS listing, and shows you how to verify any university's status before paying an admission fee.",
       publishedDate: "2026-05-30",
       countrySlug: "russia",
       primaryHref: "/mbbs-in-russia",
@@ -1969,19 +1969,19 @@ export const studyAbroadGuides = {
           title: "How many Russian medical universities are there?",
           paragraphs: [
             "Russia has approximately 50–60 government medical universities operating under the Ministry of Health or Ministry of Education. The total includes dedicated medical universities (which teach only health sciences), medical faculties within larger federal universities, and specialized research medical institutions.",
-            "Of these, around 30–35 universities actively recruit Indian students into English-medium MBBS programs. The rest either do not offer English-medium instruction, do not have significant international student infrastructure, or are not on the NMC-recognised list.",
+            "Of these, around 30–35 universities actively recruit Indian students into English-medium MBBS programs. The rest either do not offer English-medium instruction, do not have significant international student infrastructure, or do not meet NMC's FMGL guidelines.",
           ],
         },
         {
-          title: "How to verify a university is NMC-approved",
+          title: "How to verify a university meets NMC guidelines",
           cards: [
             {
               title: "Check WDOMS (WHO Directory of Medical Schools)",
               body: "The starting point is the WDOMS database, which lists medical schools worldwide that meet WHO's basic recognition criteria. Go to wdoms.org, search for Russia, and verify your target university appears. This is the foundation for NMC eligibility — but WDOMS listing alone does not guarantee NMC approval.",
             },
             {
-              title: "Check the NMC's Foreign Medical Institutions list",
-              body: "The National Medical Commission (India) maintains a separate list of foreign medical institutions from which graduates are eligible to appear for NExT. Check nmc.org.in directly before enrolling. The list is updated periodically. Do not rely on a consultant's statement that a university is 'NMC approved' — verify it yourself on the official site.",
+              title: "Verify NMC guideline compliance",
+              body: "NMC publishes the Foreign Medical Graduate Licentiate (FMGL) 2021 guidelines that foreign universities must meet for graduates to appear for NExT. NMC does not maintain a curated approved-university list — compliance is assessed against published criteria. The practical verification mechanism is the NMC Eligibility Certificate at nmc.org.in — NMC will only issue the certificate if the university meets current guidelines. We assess each university's WDOMS status and FMGL compliance before shortlisting.",
             },
             {
               title: "NMC Eligibility Certificate",
@@ -1992,8 +1992,8 @@ export const studyAbroadGuides = {
         {
           title: "What the university list tells you — and what it doesn't",
           paragraphs: [
-            "The WDOMS/NMC list tells you that a university exists, is government-recognised in Russia, and meets baseline international medical education standards. It does not tell you anything about English delivery quality, hospital affiliation depth, hostel infrastructure, Indian student community, or FMGE pass rate outcomes for graduates of that specific institution.",
-            "Two universities can both be on the NMC list — one with 500 Indian students, an Indian mess, a 200-bed teaching hospital on campus, and a 35% FMGE pass rate; the other with 20 Indian students, no Indian food, a teaching hospital 40 minutes away, and no documented pass rate data. The list gives you the first filter; everything else requires research.",
+            "WDOMS listing tells you that a university exists, is government-recognised in Russia, and meets baseline international medical education standards. It does not tell you anything about English delivery quality, hospital affiliation depth, hostel infrastructure, Indian student community, or FMGE pass rate outcomes for graduates of that specific institution.",
+            "Two WDOMS-listed universities can both meet NMC guidelines — one with 500 Indian students, an Indian mess, a 200-bed teaching hospital on campus, and a 35% FMGE pass rate; the other with 20 Indian students, no Indian food, a teaching hospital 40 minutes away, and no documented pass rate data. WDOMS and NMC compliance give you the first filter; everything else requires research.",
           ],
         },
         {
@@ -2012,8 +2012,8 @@ export const studyAbroadGuides = {
         {
           title: "What to verify per university before shortlisting",
           bullets: [
-            "WDOMS listing: wdoms.org → Russia → confirm university name appears.",
-            "NMC list: nmc.org.in → Foreign Medical Institutions → confirm university is listed.",
+            "WDOMS listing: wdoms.org → Russia → confirm university name appears. This is the baseline international recognition required for NMC guideline compliance.",
+            "NMC guideline compliance: verified through the NMC Eligibility Certificate process at nmc.org.in — NMC will only issue the certificate for a university meeting current FMGL guidelines.",
             "English-medium program: ask the university directly for the English-medium MBBS program brochure and fee schedule. Not all programs at WDOMS-listed universities are in English.",
             "Hospital affiliation: how many teaching hospitals, what is the bed count, how far from campus, do students rotate there from Year 3 or only Year 5.",
             "Indian student count: ask current Indian students through social media groups, not through the consultant who profits from the referral.",
@@ -2031,11 +2031,11 @@ export const studyAbroadGuides = {
         {
           title: "Red flags when evaluating the university list",
           bullets: [
-            "A university not appearing on WDOMS or the NMC Foreign Medical Institutions list — do not enrol regardless of what a consultant says.",
+            "A university not appearing on WDOMS — do not enrol regardless of what a consultant says. WDOMS listing is the baseline international recognition required for NMC guideline compliance.",
             "A consultant who cannot provide the official university fee schedule (not a custom 'package price') for the program.",
             "A university with fees significantly below the market range ($2,000/year or less) for an English-medium program — investigate why before paying anything.",
             "No documented Indian student community, no verifiable alumni, no social media presence of Indian students at that institution.",
-            "A university that was recently added to the NMC list — younger additions have shorter track records, which matters for FMGE outcome data.",
+            "A university with no documented Indian FMGE/NExT graduate history — recently internationalised programs have shorter track records, which matters for outcome data.",
           ],
         },
       ],
@@ -2043,17 +2043,17 @@ export const studyAbroadGuides = {
         {
           question: "How many medical universities are there in Russia?",
           answer:
-            "Russia has approximately 50–60 government medical universities recognised by WHO/WFME. Of these, around 30–35 actively accept Indian students into English-medium programs. Not all 50+ are on the NMC's Foreign Medical Institutions list — always verify at nmc.org.in before enrolling.",
+            "Russia has approximately 50–60 government medical universities recognised by WHO/WFME. Of these, around 30–35 actively accept Indian students into English-medium programs. We verify each university's WDOMS status and NMC guideline compliance before recommending it.",
         },
         {
           question: "Which Russian medical universities are approved by NMC?",
           answer:
-            "NMC maintains an official list of foreign medical institutions at nmc.org.in under 'Foreign Medical Institutions'. Universities commonly on this list include Kazan State Medical University, Bashkir State Medical University, Kemerovo State Medical University, Volgograd State Medical University, Kursk State Medical University, Sechenov First Moscow State Medical University, and others. Always verify current status on the official site — the list updates periodically.",
+            "NMC publishes guidelines (FMGL 2021 / Screening Test Regulations 2022) that foreign universities must meet for their graduates to qualify for NExT — NMC does not maintain a curated approved-university list. Universities that are WDOMS-listed and meet these guidelines include Kazan State Medical University, Bashkir State Medical University, Kemerovo State Medical University, Volgograd State Medical University, Kursk State Medical University, Sechenov First Moscow State Medical University, and others. We assess each university's WDOMS status and FMGL compliance before shortlisting.",
         },
         {
           question: "Is WDOMS listing the same as NMC approval for Russian universities?",
           answer:
-            "Not exactly. WDOMS (WHO Directory of Medical Schools) listing is a necessary condition for NMC recognition but not sufficient on its own. NMC has its own separate Foreign Medical Institutions list that students must check. A university can be on WDOMS but not yet on the NMC list, or may have had its recognition status change. Verify on both databases.",
+            "Not exactly. WDOMS (WHO Directory of Medical Schools) listing confirms a university meets international standards and is the baseline for NMC guideline compliance. NMC compliance is assessed against published guidelines (FMGL 2021 / Screening Test Regulations 2022) — the practical verification is through the NMC Eligibility Certificate process, where NMC will only issue the certificate for universities meeting current guidelines. We verify WDOMS status and NMC guideline compliance as part of our shortlisting process.",
         },
         {
           question: "Are all Russian medical universities government institutions?",
@@ -2061,9 +2061,9 @@ export const studyAbroadGuides = {
             "The overwhelming majority of medical universities commonly recommended for Indian students are government (state-funded) institutions under the Russian Ministry of Health. There are a small number of private medical institutions in Russia, but they are not commonly part of Indian student shortlists. Government institutions have more stable fee structures and longer operational track records.",
         },
         {
-          question: "How do I confirm whether a specific Russian university is NMC-listed?",
+          question: "How do I confirm whether a specific Russian university meets NMC guidelines?",
           answer:
-            "Go to nmc.org.in → click 'For Doctors/Students' → 'Foreign Medical Institutions' → select Country: Russia. The list shows all recognised institutions. If the university you are considering is not on this list, do not enrol. Do not accept a consultant's word as a substitute for this verification — check it yourself, and screenshot the result with date for your records.",
+            "The primary verification mechanism is the NMC Eligibility Certificate process at nmc.org.in. NMC will only issue the Eligibility Certificate for a university whose graduates are eligible for NExT — a rejection at this stage is a definitive signal the university does not meet NMC guidelines. We also cross-check WDOMS listing (wdoms.org) as the baseline before this step. Do not rely on a consultant's claim of NMC compliance — the Eligibility Certificate process is the authoritative verification.",
         },
       ],
       showUniversities: true,
@@ -2117,19 +2117,19 @@ export const studyAbroadGuides = {
           cards: [
             {
               title: "Kazan State Medical University",
-              body: "One of Russia's oldest dedicated medical universities (founded 1814), with 300–500 Indian students. Kazan has an active Indian mess, Indian grocery stores, and a strong senior-student NExT preparation culture. Annual tuition: $4,000–5,500. City is well-connected, cold but manageable winters (-15°C average). NMC-listed and WDOMS-registered.",
+              body: "One of Russia's oldest dedicated medical universities (founded 1814), with 300–500 Indian students. Kazan has an active Indian mess, Indian grocery stores, and a strong senior-student NExT preparation culture. Annual tuition: $4,000–5,500. City is well-connected, cold but manageable winters (-15°C average). WDOMS-registered and meets NMC guidelines.",
             },
             {
               title: "Bashkir State Medical University (Ufa)",
-              body: "Frequently cited by Indian students as one of the most comfortable Russian cities — moderate winters compared to Siberian cities, established Indian community, on-campus Indian mess. Annual tuition: $3,500–4,500 — among the lower-cost options in the Tier 1 group. Strong affiliation with City Hospital No. 21 and other Ufa hospitals. NMC-listed.",
+              body: "Frequently cited by Indian students as one of the most comfortable Russian cities — moderate winters compared to Siberian cities, established Indian community, on-campus Indian mess. Annual tuition: $3,500–4,500 — among the lower-cost options in the Tier 1 group. Strong affiliation with City Hospital No. 21 and other Ufa hospitals. Meets NMC guidelines.",
             },
             {
               title: "Volgograd State Medical University",
-              body: "Large Indian student population (200–350 students) with an established community. One of the warmer Russian MBBS cities (summers are hot, winters milder than Moscow). Annual tuition: $4,000–5,000. Known for strong clinical exposure — affiliated with several large regional hospitals. Indian mess available. NMC-listed.",
+              body: "Large Indian student population (200–350 students) with an established community. One of the warmer Russian MBBS cities (summers are hot, winters milder than Moscow). Annual tuition: $4,000–5,000. Known for strong clinical exposure — affiliated with several large regional hospitals. Indian mess available. Meets NMC guidelines.",
             },
             {
               title: "Orenburg State Medical University",
-              body: "Mid-sized Indian community (150–250 students). Affordable fees ($3,500–4,500/year) and living costs — one of the most budget-friendly Tier 1 options. Indian mess available. Close to Kazakh border — some students note the food options are better than expected. Cold winters (-20°C). NMC-listed.",
+              body: "Mid-sized Indian community (150–250 students). Affordable fees ($3,500–4,500/year) and living costs — one of the most budget-friendly Tier 1 options. Indian mess available. Close to Kazakh border — some students note the food options are better than expected. Cold winters (-20°C). Meets NMC guidelines.",
             },
           ],
         },
@@ -2138,19 +2138,19 @@ export const studyAbroadGuides = {
           cards: [
             {
               title: "Kursk State Medical University",
-              body: "One of Russia's most recognised medical universities with international students (students from 100+ countries). Indian cohort: 200–400. Relatively mild winters (southwestern Russia). Known for strong anatomy teaching. Annual tuition: $4,500–5,500. Indian mess available. NMC-listed. Slightly higher fees than Orenburg or Kemerovo but established reputation.",
+              body: "One of Russia's most recognised medical universities with international students (students from 100+ countries). Indian cohort: 200–400. Relatively mild winters (southwestern Russia). Known for strong anatomy teaching. Annual tuition: $4,500–5,500. Indian mess available. Meets NMC guidelines. Slightly higher fees than Orenburg or Kemerovo but established reputation.",
             },
             {
               title: "Kemerovo State Medical University",
-              body: "Smaller but dedicated medical university in Siberia. Indian cohort: 100–200. Low fees ($3,000–4,200/year) and low living costs make it one of the most affordable options. Very cold winters (-25°C or below). Indian community present but smaller than in Kazan or Volgograd. Good for budget-first families who are comfortable with cold and prefer a quieter environment. NMC-listed.",
+              body: "Smaller but dedicated medical university in Siberia. Indian cohort: 100–200. Low fees ($3,000–4,200/year) and low living costs make it one of the most affordable options. Very cold winters (-25°C or below). Indian community present but smaller than in Kazan or Volgograd. Good for budget-first families who are comfortable with cold and prefer a quieter environment. Meets NMC guidelines.",
             },
             {
               title: "Rostov State Medical University",
-              body: "Located in Rostov-on-Don in southern Russia — one of the warmer MBBS cities with mild winters. Indian cohort: 150–250. Annual tuition: $4,000–5,500. Good clinical hospital infrastructure. Active Indian student community. NMC-listed.",
+              body: "Located in Rostov-on-Don in southern Russia — one of the warmer MBBS cities with mild winters. Indian cohort: 150–250. Annual tuition: $4,000–5,500. Good clinical hospital infrastructure. Active Indian student community. Meets NMC guidelines.",
             },
             {
               title: "Smolensk State Medical University",
-              body: "Smaller city, smaller Indian cohort (80–150 students). Annual tuition: $3,500–4,500. Located in western Russia — geographically closer to Europe, with relatively mild climate. Less established Indian community than Tier 1 universities. Good for students who prefer a quieter, smaller-campus environment. NMC-listed.",
+              body: "Smaller city, smaller Indian cohort (80–150 students). Annual tuition: $3,500–4,500. Located in western Russia — geographically closer to Europe, with relatively mild climate. Less established Indian community than Tier 1 universities. Good for students who prefer a quieter, smaller-campus environment. Meets NMC guidelines.",
             },
           ],
         },
@@ -2159,22 +2159,22 @@ export const studyAbroadGuides = {
           cards: [
             {
               title: "Sechenov First Moscow State Medical University",
-              body: "Russia's most prestigious medical university — ranked in top 200 globally in medical sciences. Primarily a research institution. Indian cohort is smaller relative to overall student body. Annual tuition: $6,000–8,000 — significantly higher than regional options. Moscow living costs add further. Better suited for students with a larger budget who value prestige or plan to pursue research pathways. NMC-listed.",
+              body: "Russia's most prestigious medical university — ranked in top 200 globally in medical sciences. Primarily a research institution. Indian cohort is smaller relative to overall student body. Annual tuition: $6,000–8,000 — significantly higher than regional options. Moscow living costs add further. Better suited for students with a larger budget who value prestige or plan to pursue research pathways. Meets NMC guidelines.",
             },
             {
               title: "Tver State Medical University",
-              body: "Located 2 hours from Moscow, with a modest Indian student population (80–150). Annual tuition: $3,500–4,500. NMC-listed. Growing international student numbers. Less established Indian community infrastructure compared to Tier 1 universities — verify mess availability for current year before deciding.",
+              body: "Located 2 hours from Moscow, with a modest Indian student population (80–150). Annual tuition: $3,500–4,500. Meets NMC guidelines. Growing international student numbers. Less established Indian community infrastructure compared to Tier 1 universities — verify mess availability for current year before deciding.",
             },
             {
               title: "Perm State Medical University",
-              body: "Located in the Ural region. NMC-listed. Indian cohort: 80–150. Annual tuition: $3,500–4,500. Cold winters. Known for strong preclinical teaching. Indian community smaller but functional. Good for students who research thoroughly and are willing to self-organise their NExT preparation without a large peer group.",
+              body: "Located in the Ural region. Meets NMC guidelines. Indian cohort: 80–150. Annual tuition: $3,500–4,500. Cold winters. Known for strong preclinical teaching. Indian community smaller but functional. Good for students who research thoroughly and are willing to self-organise their NExT preparation without a large peer group.",
             },
           ],
         },
         {
           title: "What to verify before finalising any shortlist",
           bullets: [
-            "Confirm WDOMS listing at wdoms.org and NMC listing at nmc.org.in — do this yourself, not through the consultant.",
+            "Confirm WDOMS listing at wdoms.org — and verify NMC guideline compliance through the Eligibility Certificate process at nmc.org.in.",
             "Ask current Indian students directly (Facebook groups, YouTube channels by Indian students at that university) — not through the university's own testimonials.",
             "Get the official year-by-year fee schedule from the university website or directly from the international admissions office.",
             "Confirm hostel availability for Year 1 international students — including room sharing, distance to campus, and utility inclusion.",
@@ -2185,7 +2185,7 @@ export const studyAbroadGuides = {
         {
           title: "One question that filters shortlists quickly",
           paragraphs: [
-            "Ask yourself: do I have a contact who is currently studying at this university in Year 4 or above? If yes — talk to them before paying anything. If no — the research task before committing is to find someone who is.",
+            "We connect families with current Indian students at Year 4 or above before an admission is confirmed. A university with a real Indian student community self-documents — there are student-run YouTube channels, Instagram pages, and Facebook groups for the major universities. We use these alongside our own institutional knowledge, not agent testimonials.",
             "Universities with strong Indian student communities self-document. There are YouTube channels, Instagram pages, and Facebook groups run by Indian students at Kazan, Volgograd, Kursk, Orenburg, and Kemerovo. If you cannot find any student-run content for a university being recommended to you, that absence tells you something.",
           ],
         },
@@ -2214,7 +2214,7 @@ export const studyAbroadGuides = {
         {
           question: "How do I know if a Russian medical college is genuinely good for Indian students?",
           answer:
-            "Look for: NMC/WDOMS listing (non-negotiable), active Indian student community (verify through student-run social media, not university testimonials), confirmed Indian mess availability, clinical hospital affiliation details, and alumni NExT/FMGE outcomes. Talk to at least one current student in Year 4 or above before committing.",
+            "We assess: NMC/WDOMS listing (non-negotiable), active Indian student community verified through student-run sources not university marketing, confirmed Indian mess availability, clinical hospital affiliation quality, and alumni NExT/FMGE outcomes. We also connect families with current students in Year 4 or above as part of the shortlisting process.",
         },
       ],
     },
@@ -2251,7 +2251,7 @@ export const studyAbroadGuides = {
       leadDescription: "We walk students and families through each step — from university shortlisting to visa processing — so nothing gets missed and you start on the right pathway.",
       notes: "Interest: Study MBBS in Russia process",
       keyTakeaways: [
-        "To study MBBS in Russia and retain the India-return pathway, three things are non-negotiable before you depart: a valid NEET-UG scorecard, an NMC Eligibility Certificate, and an offer from an NMC-listed university. Skip any of these and the Russia MBBS does not qualify you to appear for NExT or practise medicine in India.",
+        "To study MBBS in Russia and retain the India-return pathway, three things are non-negotiable before you depart: a valid NEET-UG scorecard, an NMC Eligibility Certificate, and an offer from a university meeting NMC guidelines. Skip any of these and the Russia MBBS does not qualify you to appear for NExT or practise medicine in India.",
         "The September intake is the primary entry point. Students who start the process in July or August for a September intake are cutting it very close — university shortlisting, document preparation, offer letter processing, NMC certificate application (3–6 weeks), and visa (2–4 weeks) all need to happen in sequence. Start by April for a September intake.",
         "University selection is the most consequential decision in the entire process. A student who picks the wrong university — one with poor English delivery, weak clinical affiliation, or an FMGE track record they did not research — cannot easily transfer after Year 1. Take longer on this step than on any other.",
       ],
@@ -2260,7 +2260,7 @@ export const studyAbroadGuides = {
           title: "Before you begin: the non-negotiables",
           bullets: [
             "Valid NEET-UG score: You must have appeared for and qualified NEET-UG before enrolling in an MBBS program abroad if you intend to practise in India after graduation. The NEET score does not have a cutoff for foreign universities, but it must exist and be qualifying. NMC will not issue an Eligibility Certificate without it.",
-            "Class 12 with PCB: Physics, Chemistry, and Biology as core subjects with at least 50% aggregate in PCB (45% for reserved categories as per NMC norms). This is the baseline academic requirement.",
+            "Class 12 with PCB: Physics, Chemistry, and Biology as core subjects with at least 50% aggregate in PCB. This is the baseline academic requirement for Indian students applying to foreign medical universities.",
             "Valid passport: Minimum 18 months remaining validity at the time of visa application is recommended. Apply for or renew passport before starting the university process.",
             "Age: NMC guidelines specify a minimum age of 17 years at the time of admission. There is no upper age limit for foreign university MBBS enrollment.",
           ],
@@ -2268,8 +2268,8 @@ export const studyAbroadGuides = {
         {
           title: "Step 1 — Shortlist the right university",
           paragraphs: [
-            "University selection is where most mistakes happen. The shortlist criteria that matter for Indian students: NMC-listed status (verify at nmc.org.in yourself), English-medium program confirmed in writing, hospital affiliation details (which hospitals, how far, from which year), Indian student community size, city liveability and climate, and total 6-year cost including living.",
-            "Do not start with the cheapest option and work up. Start with the NMC list, eliminate universities you cannot verify, then compare the remaining options on quality, location, and cost. A shortlist of 3–5 universities that all pass the non-negotiable filters is more useful than 20 options with no quality threshold.",
+            "University selection is where most mistakes happen. The shortlist criteria that matter for Indian students: WDOMS listing and NMC guideline compliance (verified through the Eligibility Certificate process), English-medium program confirmed in writing, hospital affiliation details (which hospitals, how far, from which year), Indian student community size, city liveability and climate, and total 6-year cost including living.",
+            "Do not start with the cheapest option and work up. Start with WDOMS-listed institutions, eliminate universities you cannot verify against NMC guidelines, then compare the remaining options on quality, location, and cost. A shortlist of 3–5 universities that all pass the non-negotiable filters is more useful than 20 options with no quality threshold.",
           ],
         },
         {
@@ -2422,7 +2422,7 @@ export const studyAbroadGuides = {
           cards: [
             {
               title: "NMC Eligibility Certificate",
-              body: "Since 2021, NMC has made it mandatory for Indian students to obtain an Eligibility Certificate before departing India to join any foreign MBBS program. This certificate is issued only after NMC verifies: Class 12 PCB eligibility, a valid NEET-UG scorecard (not just appearing — qualifying), a valid passport, and an offer from an NMC-listed university. Without a NEET score, this certificate cannot be issued.",
+              body: "Since 2021, NMC has made it mandatory for Indian students to obtain an Eligibility Certificate before departing India to join any foreign MBBS program. This certificate is issued only after NMC verifies: Class 12 PCB eligibility, a valid NEET-UG scorecard (not just appearing — qualifying), a valid passport, and an offer from a university meeting NMC guidelines. Without a NEET score, this certificate cannot be issued.",
             },
             {
               title: "NExT eligibility",
@@ -2447,7 +2447,7 @@ export const studyAbroadGuides = {
             "There is no cutoff or minimum NEET score required for foreign university MBBS eligibility. You do not need to score 600 or even 500.",
             "You must have appeared for NEET-UG and qualified (received a scorecard). Qualifying means appearing and passing the basic qualifying threshold — not meeting any specific rank cutoff.",
             "The NEET scorecard must be from before you enrol in the MBBS program abroad. A student cannot do two years in Russia and then appear for NEET to retroactively qualify.",
-            "Students from reserved categories face the same NEET qualifying requirement for foreign MBBS — the 45% vs 50% PCB threshold applies to eligibility; NEET qualification is the same for all.",
+            "All Indian students applying for foreign MBBS face the same NEET qualifying requirement regardless of category.",
           ],
         },
         {
@@ -2639,7 +2639,7 @@ export const studyAbroadGuides = {
         {
           question: "Is university hostel accommodation guaranteed at Russian medical universities?",
           answer:
-            "Not always. Most universities prioritise first-year international students for hostel allocation, but availability varies by intake size. Always confirm hostel availability and cost in writing before paying any admission fee. Some universities guarantee a hostel seat in your offer letter; others allocate on a first-come basis after arrival.",
+            "Not always. Most universities prioritise first-year international students for hostel allocation, but availability varies by intake size. We confirm hostel availability and the current tariff in writing before any admission fee is collected. Some universities guarantee a hostel seat in the offer letter; others allocate on a first-come basis after arrival — we flag this distinction clearly to families.",
         },
         {
           question: "Can Indian students cook their own food in Russian hostels?",

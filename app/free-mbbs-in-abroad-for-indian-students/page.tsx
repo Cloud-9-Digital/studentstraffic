@@ -89,12 +89,12 @@ const redFlags = [
 ];
 
 const actionPlan = [
-  "Start with the question: do you need a realistic India-return pathway after graduation? If yes, make FMGL/NMC checks non-negotiable.",
-  "Shortlist 3 countries by total budget, not only by tuition headline.",
-  "Check whether the 'free' or scholarship route is official, recurring, and documented for the current cycle.",
-  "Ask what costs remain even after the scholarship: hostel, food, visa, insurance, language, exams, and travel.",
-  "Compare that option against safer low-cost MBBS abroad routes instead of assuming the scholarship path is automatically better.",
-  "Keep every promise in writing before paying any seat-booking amount.",
+  "The India-return pathway is assessed first. FMGL and NMC compliance are non-negotiable before any other factor is considered.",
+  "We shortlist by total 6-year cost — not only by tuition headline.",
+  "Every 'free' or scholarship route is verified to be official, recurring, and documented for the current cycle before it is presented to a family.",
+  "The full cost after the scholarship — hostel, food, visa, insurance, language, exams, and travel — is modelled and presented alongside the headline saving.",
+  "Scholarship routes are compared against low-cost MBBS abroad alternatives so families make a decision based on the full picture.",
+  "Every financial commitment is confirmed in writing before any seat-booking amount is collected.",
 ];
 
 const faqItems = [

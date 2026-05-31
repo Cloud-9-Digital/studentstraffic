@@ -55,7 +55,7 @@ const disadvantages = [
     details:
       "Vietnam is often marketed as easier than Russia because of warmer climate (25-35°C year-round vs Russia's -20°C to -35°C winters), closer proximity to India (4-6 hour flights vs 8-10 hours), and lower fees ($3,500-5,500/year vs $4,000-7,000/year). This comfort-focused marketing can lead families to underestimate the need for rigorous university verification, clinical training quality assessment, and FMGE preparation planning. 'Easy' geography doesn't guarantee easy medical education or India-return success.",
     mitigation:
-      "Evaluate Vietnam universities using the same rigor as Russia: verify NMC recognition, check clinical training hospital quality, understand actual FMGE coaching availability, and assess whether the specific university (not just the country) fits your student's academic profile.",
+      "Evaluate Vietnam universities using the same rigor as Russia: verify NMC guideline compliance, check clinical training hospital quality, understand actual FMGE coaching availability, and assess whether the specific university (not just the country) fits your student's academic profile.",
   },
   {
     title: "Thinner public information landscape",
@@ -91,7 +91,7 @@ const mitigationStrategies = [
   {
     strategy: "FMGE outcome validation",
     action:
-      "Ask for specific FMGE pass rate data from the university's Indian graduates (not aggregate Vietnam data). Verify availability of FMGE coaching programs, practice materials, and India-return counselling.",
+      "We assess cohort-specific NExT/FMGE outcomes for Indian graduates from that institution — not aggregate Vietnam data — as part of our university shortlisting process. NExT coaching availability and India-return counselling infrastructure are assessed alongside recognition status.",
   },
   {
     strategy: "Independent information sourcing",
@@ -142,7 +142,7 @@ const faqItems = [
   {
     question: "How can students reduce the risks of studying MBBS in Vietnam?",
     answer:
-      "Research universities individually (establishment date, hospital partnerships, faculty credentials), verify NMC recognition status, contact current Indian students directly (not consultant-selected testimonials), start Vietnamese language learning from Year 1, validate FMGE preparation programs, and choose based on total education quality rather than lowest fees alone. Demand written documentation for all claims before payment.",
+      "Research universities individually (establishment date, hospital partnerships, faculty credentials), verify NMC guideline compliance status, contact current Indian students directly (not consultant-selected testimonials), start Vietnamese language learning from Year 1, validate FMGE preparation programs, and choose based on total education quality rather than lowest fees alone. Demand written documentation for all claims before payment.",
   },
   {
     question:

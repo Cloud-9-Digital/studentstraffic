@@ -105,16 +105,16 @@ const DEFAULT_FACTS: Fact[] = [
 
 const COUNTRY_ABOUT: Record<string, string> = {
   vietnam:
-    "Vietnam offers one of the most affordable English-medium MBBS programs in Asia. The tropical climate, vibrant street life, and a well-established Indian student community make settling in comfortable. All listed colleges carry NMC recognition, providing a clear pathway back to Indian medical practice.",
+    "Vietnam offers one of the most affordable English-medium MBBS programs in Asia. The tropical climate, vibrant street life, and a well-established Indian student community make settling in comfortable. Listed colleges meet NMC guidelines, providing a clear pathway back to Indian medical practice.",
 
   russia:
-    "Russia's medical universities — many over a century old — are respected globally, with WHO and NMC approval across top institutions. The cold continental climate is offset by a very large Indian student presence in cities like Kazan and Volgograd. Strong clinical exposure and a rigorous research culture define the academic experience.",
+    "Russia's medical universities — many over a century old — are respected globally, with WHO recognition and strong NMC guideline compliance across top institutions. The cold continental climate is offset by a very large Indian student presence in cities like Kazan and Volgograd. Strong clinical exposure and a rigorous research culture define the academic experience.",
 
   georgia:
     "Georgia combines European-standard medical education with affordable fees, entirely in English and within a safe, modern country. Tbilisi campuses offer a high quality of life in a temperate climate, and a growing Indian student community makes peer support readily available.",
 
   kyrgyzstan:
-    "Kyrgyzstan is among the most budget-friendly MBBS destinations globally — no donation fees, no capitation, just straightforward English-medium programs with NMC approval. The continental climate brings warm summers and cold winters, which most students from India adjust to quickly.",
+    "Kyrgyzstan is among the most budget-friendly MBBS destinations globally — no donation fees, no capitation, just straightforward English-medium programs meeting NMC guidelines. The continental climate brings warm summers and cold winters, which most students from India adjust to quickly.",
 
   uzbekistan:
     "Uzbekistan's medical education sector is modernising rapidly, backed by government investment and international partnerships. Fees are competitive, programs are English-medium, and cultural familiarity with South Asia makes daily life comfortable. The climate is warm in summer and cold in winter.",

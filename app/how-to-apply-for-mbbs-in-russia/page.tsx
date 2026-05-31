@@ -25,12 +25,12 @@ const applicationTimeline = [
     phase: "Planning Phase",
     timeline: "May-December (Year Before Intake)",
     tasks: [
-      "Research NMC-approved Russian medical universities",
+      "Research Russian medical universities meeting NMC guidelines",
       "Prepare for NEET examination (mandatory for India return)",
       "Start gathering academic documents (Class 10, 12 certificates)",
       "Verify university recognition status on NMC website",
     ],
-    criticalAction: "Verify NMC approval before shortlisting universities",
+    criticalAction: "Verify NMC guideline compliance before shortlisting universities",
   },
   {
     phase: "Application Phase",
@@ -188,9 +188,9 @@ const requiredDocumentCategories = [
 
 const commonMistakes = [
   {
-    mistake: "Applying to non-NMC approved universities",
+    mistake: "Applying to universities not meeting NMC guidelines",
     consequence: "Degree invalid in India despite 6 years investment and ₹35-50 lakh cost",
-    howToAvoid: "Verify university on NMC's approved foreign medical institutions list at nmc.org.in before payment. Students Traffic maintains updated NMC-approved Russia university database verified monthly.",
+    howToAvoid: "Verify university meets NMC's FMGL guidelines through the Eligibility Certificate process at nmc.org.in before payment. We assess WDOMS listing and NMC compliance for every university we shortlist.",
     severity: "Critical",
   },
   {
@@ -312,7 +312,7 @@ const faqItems = [
   {
     question: "How to apply for MBBS in Russia for Indian students?",
     answer:
-      "The application process involves: (1) Research and shortlist NMC-approved universities (January-March ideal window); (2) Prepare documents including apostilled Class 10/12 certificates, NEET scorecard (50th/40th percentile), passport (18 months validity), and HIV-negative certificate (within 3 months); (3) Submit online application with translated documents; (4) Receive admission letter (5-10 days); (5) Pay first semester tuition fee; (6) Obtain invitation letter (20-45 days); (7) Apply for student visa (2-3 weeks); (8) Book flight after visa approval; (9) Arrive 1 week before classes for registration. Total timeline: 5-7 months from application to arrival.",
+      "The application process involves: (1) Research and shortlist universities meeting NMC guidelines (January-March ideal window); (2) Prepare documents including apostilled Class 10/12 certificates, NEET scorecard (50th/40th percentile), passport (18 months validity), and HIV-negative certificate (within 3 months); (3) Submit online application with translated documents; (4) Receive admission letter (5-10 days); (5) Pay first semester tuition fee; (6) Obtain invitation letter (20-45 days); (7) Apply for student visa (2-3 weeks); (8) Book flight after visa approval; (9) Arrive 1 week before classes for registration. Total timeline: 5-7 months from application to arrival.",
   },
   {
     question: "When should I start the application process for Russia MBBS?",
@@ -332,7 +332,7 @@ const faqItems = [
   {
     question: "Can I apply directly to Russian universities or do I need an agent?",
     answer:
-      "Direct application is possible but comes with challenges: navigating Russian systems, language barriers, time differences, slow bureaucratic processes, and extensive documentation requirements. Agency-assisted applications provide: NMC-approved university verification, complete documentation support (apostille, translation), visa application guidance, pre-departure briefings, airport pickup arrangements, and ongoing support throughout the course. While not mandatory, agencies are highly recommended especially for first-time international students. At Students Traffic, we maintain updated NMC compliance databases and have processed 1,200+ Russia MBBS applications with 95%+ visa success rate.",
+      "Direct application is possible but comes with challenges: navigating Russian systems, language barriers, time differences, slow bureaucratic processes, and extensive documentation requirements. Agency-assisted applications provide: NMC guideline compliance verification, complete documentation support (apostille, translation), visa application guidance, pre-departure briefings, airport pickup arrangements, and ongoing support throughout the course. While not mandatory, agencies are highly recommended especially for first-time international students. At Students Traffic, we maintain updated NMC compliance assessments and have processed 1,200+ Russia MBBS applications with 95%+ visa success rate.",
   },
   {
     question: "How long does the Russia student visa take to process?",
@@ -342,12 +342,12 @@ const faqItems = [
   {
     question: "What are the most common mistakes in Russia MBBS applications?",
     answer:
-      "Critical mistakes to avoid: (1) Applying to non-NMC approved universities (makes degree invalid in India despite ₹35-50 lakh investment); (2) Proceeding without valid NEET qualification (cannot obtain NMC registration for India practice); (3) Missing apostille or incorrect Russian translation (application rejection); (4) Expired HIV certificate (most common visa rejection - must be within 3 months, valid only 15-30 days); (5) Leaving visa application to last minute (rushed processing, potential admission year loss); (6) Trusting fake agents claiming '100% assured admission', 'no NEET required', or 'guaranteed FMGE clearance'; (7) Underestimating total costs (budget ₹2-3 lakhs for application process excluding tuition).",
+      "Critical mistakes to avoid: (1) Applying to universities not meeting NMC guidelines (makes degree invalid in India despite ₹35-50 lakh investment); (2) Proceeding without valid NEET qualification (cannot obtain NMC registration for India practice); (3) Missing apostille or incorrect Russian translation (application rejection); (4) Expired HIV certificate (most common visa rejection - must be within 3 months, valid only 15-30 days); (5) Leaving visa application to last minute (rushed processing, potential admission year loss); (6) Trusting fake agents claiming '100% assured admission', 'no NEET required', or 'guaranteed FMGE clearance'; (7) Underestimating total costs (budget ₹2-3 lakhs for application process excluding tuition).",
   },
   {
     question: "How does Students Traffic help with Russia MBBS applications?",
     answer:
-      "Students Traffic provides end-to-end application support: (1) NMC-approved university verification (monthly updated database); (2) Academic profile assessment and university shortlisting based on budget (₹35-50 lakhs total) and career goals; (3) Complete documentation guidance (apostille, translation, attestation) with checklist tracking; (4) Visa application support with 95%+ success rate; (5) Pre-departure briefings covering cultural adaptation, packing, Russian winter preparation; (6) Airport pickup coordination and on-arrival hostel assistance; (7) Connection to 1,200+ Russia MBBS graduates for first-hand insights. Our focus is NMC compliance verification and realistic expectation-setting rather than over-promising unrealistic outcomes.",
+      "Students Traffic provides end-to-end application support: (1) NMC guideline compliance assessment for every shortlisted university; (2) Academic profile assessment and university shortlisting based on budget (₹35-50 lakhs total) and career goals; (3) Complete documentation guidance (apostille, translation, attestation) with checklist tracking; (4) Visa application support with 95%+ success rate; (5) Pre-departure briefings covering cultural adaptation, packing, Russian winter preparation; (6) Airport pickup coordination and on-arrival hostel assistance; (7) Connection to 1,200+ Russia MBBS graduates for first-hand insights. Our focus is NMC compliance verification and realistic expectation-setting rather than over-promising unrealistic outcomes.",
   },
 ];
 
@@ -406,7 +406,7 @@ export default function RussiaMbbsApplicationPage() {
               triggerClassName="rounded-full border border-border bg-background px-7 py-4 text-base font-semibold text-foreground shadow-sm transition hover:bg-muted"
               plainTrigger
               title="Need Russia MBBS application guidance?"
-              description="Our team will help you verify NMC-approved universities, prepare complete documentation (apostille, translation), and navigate the visa process with 95%+ success rate."
+              description="Our team will help you verify universities meet NMC guidelines, prepare complete documentation (apostille, translation), and navigate the visa process with 95%+ success rate."
               ctaVariant="application-russia-hero"
               courseSlug="mbbs"
               countrySlug="russia"
@@ -450,7 +450,7 @@ export default function RussiaMbbsApplicationPage() {
                   Students Traffic's application verification approach
                 </p>
                 <p className="mt-1 text-sm leading-6 text-blue-800">
-                  At Students Traffic, we maintain a monthly-updated database of NMC-approved Russian medical universities and have processed 1,200+ Russia MBBS applications with 95%+ visa success rate. Our application support includes NMC compliance verification, complete documentation guidance (apostille, translation), visa processing assistance, and connection to current Russia MBBS students for first-hand campus insights. We verify every university against NMC's Foreign Medical Institutions list before shortlisting to avoid the critical mistake of admission to unrecognized institutions.
+                  At Students Traffic, we assess each Russian medical university against NMC's FMGL guidelines and WDOMS listing before shortlisting — and have processed 1,200+ Russia MBBS applications with 95%+ visa success rate. Our application support includes NMC compliance verification, complete documentation guidance (apostille, translation), visa processing assistance, and connection to current Russia MBBS students for first-hand campus insights. We do not shortlist universities that do not meet current NMC guidelines.
                 </p>
               </div>
             </div>
@@ -729,7 +729,7 @@ export default function RussiaMbbsApplicationPage() {
               triggerClassName="rounded-full bg-foreground px-7 py-4 text-base font-semibold text-background shadow-lg transition hover:opacity-90"
               plainTrigger
               title="Russia MBBS application consultation"
-              description="Share your academic profile (Class 12 marks, NEET score) and budget. We'll help you with NMC-approved university shortlisting, complete documentation, and visa processing."
+              description="Share your academic profile (Class 12 marks, NEET score) and budget. We'll help you shortlist universities meeting NMC guidelines, prepare complete documentation, and process the visa."
               ctaVariant="application-russia-bottom"
               courseSlug="mbbs"
               countrySlug="russia"

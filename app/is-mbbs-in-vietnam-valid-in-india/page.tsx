@@ -15,16 +15,16 @@ const pagePath = "/is-mbbs-in-vietnam-valid-in-india";
 const publishedDate = "2026-05-23";
 
 const keyTakeaways = [
-  "Yes, MBBS degrees from NMC-recognized Vietnamese universities are valid in India for medical practice - but 'valid' requires meeting three criteria: (1) University listed in NMC's approved foreign medical institutions directory, (2) NEET qualification at admission (mandatory from 2019-20), and (3) passing FMGE/NExT screening exam (15-25% pass rate for foreign graduates vs 65-75% for Indian MBBS).",
-  "Key Vietnamese medical universities with NMC recognition include Hanoi Medical University (established 1902), Hue University of Medicine and Pharmacy (1957), Pham Ngoc Thach University of Medicine (1947), and University of Medicine and Pharmacy at Ho Chi Minh City (1947). Always verify current listing at nmc.org.in before admission as recognition status can change.",
-  "India practice timeline: 6 years Vietnam MBBS + 1 year internship + 6-12 months FMGE preparation + 2-3 attempts average = 8-9 years total to Indian medical registration vs 5.5-6 years for Indian MBBS graduates. Budget additional ₹1.5-2.5 lakhs for FMGE coaching and exam attempts.",
+  "Yes, MBBS degrees from Vietnamese universities meeting NMC guidelines are valid in India for medical practice - but 'valid' requires meeting three criteria: (1) University meets NMC's FMGL guidelines, (2) NEET qualification at admission (mandatory from 2019-20), and (3) passing FMGE/NExT screening exam (15-25% pass rate for foreign graduates vs 65-75% for Indian MBBS).",
+  "Key Vietnamese medical universities with NMC guideline compliance include Hanoi Medical University (established 1902), Hue University of Medicine and Pharmacy (1957), Pham Ngoc Thach University of Medicine (1947), and University of Medicine and Pharmacy at Ho Chi Minh City (1947). Always verify current listing at nmc.org.in before admission as recognition status can change.",
+  "India practice timeline: 6 years Vietnam MBBS + 1 year internship + 6-12 months FMGE preparation + 2-3 attempts average = 8-9 years total to Indian medical registration vs 5.5-6 years for Indian MBBS graduates. Students who join through Students Traffic receive free FMGE/NExT coaching — the typical ₹1.5-2.5 lakh coaching cost is covered.",
 ];
 
 const whatValidityActuallyMeans = [
   {
     component: "University recognition",
-    requirement: "Must appear on NMC's list of approved foreign medical institutions",
-    verification: "Check nmc.org.in > Information Desk > List of Colleges Recognized for the Purpose of Screening Test. Verify exact university name, not group/trust name.",
+    requirement: "Must meet NMC's FMGL guidelines for graduate NExT eligibility",
+    verification: "Verify through the NMC Eligibility Certificate process at nmc.org.in — NMC will only issue the certificate for universities meeting current guidelines.",
     critical: true,
   },
   {
@@ -42,7 +42,7 @@ const whatValidityActuallyMeans = [
   {
     component: "FMGE/NExT screening exam",
     requirement: "Pass Foreign Medical Graduate Examination or National Exit Test to obtain practice license",
-    verification: "15-25% pass rate for foreign graduates (first attempt). Budget 6-12 months dedicated preparation, ₹1.5-2.5 lakhs for coaching.",
+    verification: "15-25% pass rate for foreign graduates (first attempt). Budget 6-12 months dedicated preparation. Students Traffic provides free FMGE/NExT coaching for students who join through us.",
     critical: true,
   },
   {
@@ -61,43 +61,43 @@ const validityVsRecognition = {
   },
   validity: {
     what: "Complete pathway from admission to India medical registration",
-    means: "NEET compliance + NMC-recognized university + FMGE pass + internship = India practice permission",
+    means: "NEET compliance + meeting NMC guidelines university + FMGE pass + internship = India practice permission",
     doesNotMean: "Just having a degree certificate is sufficient for medical practice",
   },
 };
 
 const verificationChecklist = [
   {
-    step: "Verify NMC listing",
-    action: "Visit nmc.org.in > Information Desk > List of Colleges Recognized for the Purpose of Screening Test. Search for exact university name (e.g., 'Hanoi Medical University', not 'Hanoi University Group'). Screenshot the listing confirmation.",
-    why: "NMC listing is the primary indicator of India recognition. Consultant claims without official verification can be misleading.",
+    step: "NMC guideline compliance confirmed",
+    action: "We verify the exact institution meets NMC's FMGL guidelines — not assuming country-level approval or relying on a consultant's claim.",
+    why: "NMC guideline compliance is institution-specific. A university not on the list produces a degree that cannot be used for India medical registration.",
   },
   {
-    step: "Confirm NEET validity",
-    action: "Ensure NEET result is less than 3 years old from intended admission date. NEET dated June 2024 valid until June 2027 admissions. Verify qualifying percentile: 50th (General) or 40th (Reserved).",
-    why: "NEET compliance is mandatory from 2019-20 academic year onwards. Cannot be added after admission to make degree 'valid' retrospectively.",
+    step: "NEET compliance confirmed",
+    action: "We confirm a valid NEET scorecard exists before processing any admission. NEET compliance must be in place before enrolment — it cannot be added retroactively.",
+    why: "Without valid NEET qualification at the time of admission, NExT eligibility and NMC registration are both blocked regardless of the degree's other merits.",
   },
   {
-    step: "Check degree structure",
-    action: "Request official curriculum showing 6-year program (Years 1-3 pre-clinical/para-clinical, Years 4-6 clinical rotations) + 1-year internship. Verify clinical training occurs at university's teaching hospitals, not external facilities.",
-    why: "Some newer Vietnamese private universities lack adequate clinical infrastructure. Weak clinical training affects both FMGE preparation and actual medical competence.",
+    step: "Degree structure verified",
+    action: "We obtain the official curriculum confirming the 6-year programme structure and verify that clinical rotations run at the university's own teaching hospitals — not external facilities.",
+    why: "Some newer Vietnamese private universities lack adequate clinical infrastructure. This directly affects NExT preparation and actual clinical competence.",
   },
   {
-    step: "Research FMGE outcomes",
-    action: "Ask university for FMGE pass rates of Vietnamese graduates (not aggregate foreign graduate data). Verify availability of FMGE coaching, practice materials, and India-return counseling.",
-    why: "FMGE pass rate is the ultimate validity test. A degree that doesn't prepare students for FMGE is 'valid' on paper but unusable for India practice.",
+    step: "NExT outcomes assessed",
+    action: "We assess cohort-level NExT/FMGE outcomes for Vietnamese graduates from that institution — not aggregate foreign graduate statistics — as part of university shortlisting.",
+    why: "Pass rates are the practical test of a degree's utility for India practice. We factor this into every recommendation we make.",
   },
   {
-    step: "Understand full timeline",
-    action: "Calculate realistic timeline: 6 years MBBS + 1 year internship + 6-12 months FMGE prep + potential 2-3 exam attempts = 8-9 years total to India registration vs 5.5-6 years for Indian MBBS.",
-    why: "Families often compare only 6-year tuition costs without factoring additional years and coaching expenses for India pathway completion.",
+    step: "Full timeline modelled",
+    action: "We present families with a realistic 8–9 year timeline to India registration (6 years MBBS + 1 year internship + NExT preparation and attempts) — not just the headline 6-year tuition figure.",
+    why: "Families who compare only tuition costs routinely underestimate the total commitment. We model the full picture before admission is confirmed.",
   },
 ];
 
 const commonMisconceptions = [
   {
     myth: "'Vietnam is NMC-approved' means all universities are valid",
-    reality: "NMC recognizes specific Vietnamese universities individually, not the country as a whole. Always verify exact university listing.",
+    reality: "NMC guideline compliance is institution-specific, not country-wide. Verify each institution individually through the NMC Eligibility Certificate process.",
     risk: "High",
   },
   {
@@ -107,12 +107,12 @@ const commonMisconceptions = [
   },
   {
     myth: "Newer universities offer easier admission and equivalent validity",
-    reality: "Established universities (Hanoi Medical 1902, Hue 1957) typically have better clinical infrastructure and FMGE preparation than institutions founded 2010-2018, despite equivalent 'NMC recognition' status.",
+    reality: "Established universities (Hanoi Medical 1902, Hue 1957) typically have better clinical infrastructure and FMGE preparation than institutions founded 2010-2018, despite equivalent 'NMC guideline compliance' status.",
     risk: "High",
   },
   {
     myth: "FMGE is a formality after 6-year MBBS",
-    reality: "FMGE has 15-25% pass rate for foreign graduates. It's a rigorous exam requiring 6-12 months dedicated preparation, ₹1.5-2.5 lakhs coaching, and often 2-3 attempts.",
+    reality: "FMGE has 15-25% pass rate for foreign graduates. It's a rigorous exam requiring 6-12 months dedicated preparation and often 2-3 attempts. Students Traffic provides free FMGE/NExT coaching for students who join through us.",
     risk: "Critical",
   },
 ];
@@ -121,22 +121,22 @@ const faqItems = [
   {
     question: "Is MBBS in Vietnam valid in India for Indian students in 2026?",
     answer:
-      "Yes, when three conditions are met: (1) University appears on NMC's approved foreign medical institutions list (check nmc.org.in), (2) Student had valid NEET qualification at admission time (within 3 years of result date), and (3) Graduate passes FMGE/NExT screening exam (15-25% pass rate). 'Valid' means recognized degree pathway, not automatic practice permission. Budget 8-9 years total (6 years MBBS + 1 year internship + 1-2 years FMGE preparation/attempts) vs 5.5-6 years for Indian MBBS.",
+      "Yes, when three conditions are met: (1) University meets NMC's FMGL guidelines (verified through the Eligibility Certificate process at nmc.org.in), (2) Student had valid NEET qualification at admission time (within 3 years of result date), and (3) Graduate passes FMGE/NExT screening exam (15-25% pass rate). 'Valid' means recognized degree pathway, not automatic practice permission. Budget 8-9 years total (6 years MBBS + 1 year internship + 1-2 years FMGE preparation/attempts) vs 5.5-6 years for Indian MBBS.",
   },
   {
     question: "Which Vietnamese universities are NMC-approved for Indian students?",
     answer:
-      "Key NMC-recognized Vietnamese medical universities include Hanoi Medical University (est. 1902), Hue University of Medicine and Pharmacy (1957), Pham Ngoc Thach University of Medicine (1947), and University of Medicine and Pharmacy at Ho Chi Minh City (1947). Always verify current listing at nmc.org.in before admission as recognition status can change. Search for exact university name in NMC's 'List of Colleges Recognized for the Purpose of Screening Test' - not group/trust names or affiliated institutions.",
+      "Key Vietnamese medical universities meeting NMC guidelines include Hanoi Medical University (est. 1902), Hue University of Medicine and Pharmacy (1957), Pham Ngoc Thach University of Medicine (1947), and University of Medicine and Pharmacy at Ho Chi Minh City (1947). Verify each institution through the NMC Eligibility Certificate process at nmc.org.in — compliance is institution-specific.",
   },
   {
     question: "Does WDOMS listing mean MBBS in Vietnam is valid in India?",
     answer:
-      "No. WDOMS (World Directory of Medical Schools) is a WHO database confirming the medical school exists globally. WDOMS listing does NOT mean: (1) graduates can practice in India without FMGE, (2) NMC recognizes the institution, or (3) the degree pathway satisfies India medical council requirements. Always verify NMC's specific approved institutions list - WDOMS alone is insufficient for India validity determination.",
+      "No. WDOMS (World Directory of Medical Schools) is a WHO database confirming the medical school exists globally. WDOMS listing does NOT mean: (1) graduates can practice in India without FMGE, (2) the university meets NMC's FMGL guidelines, or (3) the degree pathway satisfies India medical council requirements. WDOMS is a necessary baseline but not sufficient — NMC guideline compliance is verified separately through the Eligibility Certificate process.",
   },
   {
     question: "What is the complete India practice pathway for Vietnam MBBS graduates?",
     answer:
-      "Complete pathway: (1) Obtain NEET qualification before Vietnam admission, (2) Complete 6-year MBBS from NMC-recognized Vietnamese university, (3) Finish 1-year rotating internship, (4) Prepare for FMGE (6-12 months + ₹1.5-2.5 lakhs coaching), (5) Pass FMGE exam (typically 2-3 attempts, 15-25% pass rate), (6) Complete medical registration with State Medical Council, (7) Eligible for residency or practice. Total timeline: 8-9 years vs 5.5-6 years for Indian MBBS graduates.",
+      "Complete pathway: (1) Obtain NEET qualification before Vietnam admission, (2) Complete 6-year MBBS from a Vietnamese university meeting NMC guidelines, (3) Finish 1-year rotating internship, (4) Prepare for FMGE (6-12 months — free for Students Traffic students), (5) Pass FMGE exam (typically 2-3 attempts, 15-25% pass rate), (6) Complete medical registration with State Medical Council, (7) Eligible for residency or practice. Total timeline: 8-9 years vs 5.5-6 years for Indian MBBS graduates.",
   },
   {
     question: "Can I make my Vietnam MBBS 'valid' by taking NEET after graduation?",
@@ -184,7 +184,7 @@ export default function VietnamValidityPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-xl leading-9 text-muted-foreground sm:text-2xl sm:leading-10">
-            The direct answer: <strong className="text-foreground">Yes, from NMC-recognized universities with NEET compliance.</strong> But "validity" requires understanding the full pathway - not just degree recognition, but FMGE clearance and India medical registration.
+            The direct answer: <strong className="text-foreground">Yes, from meeting NMC guidelines universities with NEET compliance.</strong> But "validity" requires understanding the full pathway - not just degree recognition, but FMGE clearance and India medical registration.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -192,14 +192,14 @@ export default function VietnamValidityPage() {
               href="/medical-colleges-in-vietnam"
               className="rounded-full bg-foreground px-7 py-4 text-base font-semibold text-background shadow-lg transition hover:opacity-90"
             >
-              See NMC-recognized universities
+              See meeting NMC guidelines universities
             </Link>
             <CounsellingDialog
               triggerContent={<>Get validity verification help</>}
               triggerClassName="rounded-full border border-border bg-background px-7 py-4 text-base font-semibold text-foreground shadow-sm transition hover:bg-muted"
               plainTrigger
               title="Need Vietnam validity verification?"
-              description="Our team will help verify specific university NMC recognition, check NEET compliance, and explain the complete India practice pathway."
+              description="Our team will help verify specific university NMC guideline compliance, check NEET compliance, and explain the complete India practice pathway."
               ctaVariant="vietnam-validity-hero"
               courseSlug="mbbs"
               countrySlug="vietnam"
@@ -498,7 +498,7 @@ export default function VietnamValidityPage() {
             Need help verifying Vietnam university validity?
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
-            Our team can help verify specific university NMC recognition, check your NEET compliance status, and explain the complete India practice pathway with realistic timelines and costs.
+            Our team can help verify specific university NMC guideline compliance, check your NEET compliance status, and explain the complete India practice pathway with realistic timelines and costs.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <CounsellingDialog
@@ -506,7 +506,7 @@ export default function VietnamValidityPage() {
               triggerClassName="rounded-full bg-foreground px-7 py-4 text-base font-semibold text-background shadow-lg transition hover:opacity-90"
               plainTrigger
               title="Vietnam validity consultation"
-              description="Share your shortlisted universities, NEET score, and timeline. We'll verify NMC recognition, assess FMGE preparation requirements, and clarify the complete India registration pathway."
+              description="Share your shortlisted universities, NEET score, and timeline. We'll verify NMC guideline compliance, assess FMGE preparation requirements, and clarify the complete India registration pathway."
               ctaVariant="vietnam-validity-bottom"
               courseSlug="mbbs"
               countrySlug="vietnam"

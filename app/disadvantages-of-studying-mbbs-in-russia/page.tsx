@@ -89,12 +89,12 @@ const mitigationStrategies = [
   {
     problem: "University quality",
     solution:
-      "Verify NMC recognition, check WDOMS listing, review actual student testimonials (not consultant-provided), visit university websites directly, and prioritize institutions with 70+ years of medical education history.",
+      "Verify NMC guideline compliance and WDOMS listing, review actual student testimonials (not consultant-provided), visit university websites directly, and prioritize institutions with 70+ years of medical education history.",
   },
   {
     problem: "India licensing",
     solution:
-      "Enroll in FMGE/NExT coaching from Year 3 onward. Choose universities offering India-specific exam prep support. Budget ₹1.5-2.5 lakhs for structured coaching programs during final years.",
+      "Enroll in FMGE/NExT coaching from Year 3 onward. Choose universities offering India-specific exam prep support. Students Traffic provides free FMGE/NExT coaching for students who join through us — the typical ₹1.5-2.5 lakh coaching cost is covered.",
   },
   {
     problem: "Travel costs",
@@ -125,13 +125,13 @@ const faqItems = [
     question:
       "How can Indian students reduce risks when studying MBBS in Russia?",
     answer:
-      "Focus on university selection (NMC-approved, 70+ years history, strong hospital partnerships), commit to Russian language learning from Day 1, budget realistically for all 6 years including hidden costs, choose slightly warmer cities if climate-sensitive, and enroll in FMGE/NExT prep from Year 3 onward.",
+      "Focus on university selection (meeting NMC guidelines, 70+ years history, strong hospital partnerships), commit to Russian language learning from Day 1, budget realistically for all 6 years including hidden costs, choose slightly warmer cities if climate-sensitive, and enroll in FMGE/NExT prep from Year 3 onward.",
   },
   {
     question:
       "What is the FMGE/NExT pass rate for Russia graduates?",
     answer:
-      "As of 2026, first-attempt pass rates for Russia MBBS graduates range from 15-22%, significantly lower than Indian medical colleges (65-75%). This is primarily due to curriculum differences, limited India-specific clinical exposure, and inadequate exam preparation during the MBBS program. Students should budget for structured coaching (₹1.5-2.5 lakhs) during final years.",
+      "As of 2026, first-attempt pass rates for Russia MBBS graduates range from 15-22%, significantly lower than Indian medical colleges (65-75%). This is primarily due to curriculum differences, limited India-specific clinical exposure, and inadequate exam preparation during the MBBS program. Students Traffic provides free FMGE/NExT coaching for students who join through us — structured preparation from Year 3 onward is included.",
   },
 ];
 

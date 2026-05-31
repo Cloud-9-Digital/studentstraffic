@@ -19,8 +19,8 @@ export function UniversityRecognitionDetailSection({
         <p className="flex items-start gap-2.5 text-sm leading-6 text-blue-800">
           <Info className="mt-0.5 size-4 shrink-0 text-blue-600" />
           Recognition determines whether your degree is valid for medical
-          licensing in India (NMC) and internationally. Verify current
-          recognition status directly with the respective body before applying.
+          licensing in India (NMC) and internationally. We verify current
+          recognition status against official sources before shortlisting any university.
         </p>
       </div>
 

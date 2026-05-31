@@ -31,7 +31,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Is MBBS in Russia valid in India?",
         answer:
-          "Yes — graduates from NMC-compliant Russian universities can sit the FMGE/NExT screening exam to obtain an NMC licence and practise medicine in India. Recognition is university-specific, not country-wide, so always verify your chosen university's status on the official NMC website before enrolling.",
+          "Yes — graduates from Russian universities meeting NMC guidelines can sit the FMGE/NExT screening exam to obtain an NMC licence and practise medicine in India. Compliance is university-specific, not country-wide. Every university we process admissions for is assessed against NMC's FMGL guidelines before shortlisting.",
       },
       {
         question: "Is MBBS in Russia affordable for Indian students?",
@@ -91,7 +91,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Is MBBS in Russia good for Indian students?",
         answer:
-          "MBBS in Russia is a well-established, legitimate pathway for Indian students who clear NEET but do not get a government seat in India and cannot afford private college fees of ₹80 lakh–₹2 crore. Russian universities are government-run, English-medium, and NMC-recognised. The trade-offs are real — you'll be 6 years away from home, need to learn basic Russian for clinical years, and must clear FMGE/NExT on return. Whether it is 'good' depends on which university you choose, how seriously you prepare for FMGE, and your budget.",
+          "MBBS in Russia is a well-established, legitimate pathway for Indian students who clear NEET but do not get a government seat in India and cannot afford private college fees of ₹80 lakh–₹2 crore. Russian universities are government-run, English-medium, and WDOMS-listed. The trade-offs are real — you'll be 6 years away from home, need to learn basic Russian for clinical years, and must clear FMGE/NExT on return. Whether it is 'good' depends on which university you choose, how seriously you prepare for FMGE, and your budget.",
       },
       {
         question: "What are the fees of MBBS in Russia in total?",
@@ -111,7 +111,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Which Russian medical colleges are approved by NMC (formerly MCI)?",
         answer:
-          "The NMC (National Medical Commission) maintains an official list of recognised foreign medical colleges. As of 2026, 46 Russian medical universities are NMC-listed. Key approved colleges include: Sechenov First Moscow State Medical University, Kazan State Medical University, Volgograd State Medical University, Orenburg State Medical University, Kemerovo State Medical University, Bashkir State Medical University, and Samara State Medical University, among others. Always verify directly at nmc.org.in before enrolling — the list is updated periodically.",
+          "NMC publishes guidelines (FMGL 2021 / Screening Test Regulations 2022) that foreign universities must meet for graduates to qualify for NExT — NMC does not maintain a curated approved-university list. As of 2026, 50+ Russian medical universities are WDOMS-listed and meet NMC's FMGL criteria, including Sechenov First Moscow State Medical University, Kazan State Medical University, Volgograd State Medical University, Orenburg State Medical University, Kemerovo State Medical University, Bashkir State Medical University, and Samara State Medical University. We assess each university's compliance before shortlisting.",
       },
       {
         question: "What is the hostel facility like for Indian MBBS students in Russia?",
@@ -137,7 +137,7 @@ export const landingPages: LandingPage[] = [
         "Indian students applying for MBBS in Russia must meet the criteria set by the National Medical Commission (NMC) for overseas medical education.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology as core subjects",
-        "Minimum 50% aggregate in PCB (45% for SC/ST/OBC candidates)",
+        "Minimum 50% aggregate in PCB subjects",
         "Cleared NEET-UG (mandatory since 2018)",
         "Age 17 or above at the time of admission",
         "Valid Indian passport",
@@ -221,7 +221,7 @@ export const landingPages: LandingPage[] = [
     hostelInfo:
       "Most Russian medical universities provide dedicated hostel accommodation for international students in separate blocks close to campus. Indian student communities in cities like Kazan, Volgograd, and Orenburg have established Indian mess facilities. Monthly hostel costs range from $80–150/month including utilities. Private housing is available in most cities for students who prefer independent arrangements after the first year.",
     scholarshipInfo:
-      "The Russian Government offers limited fully or partially funded seats each year through Rossotrudnichestvo (the Russian Agency for International Cooperation). Some universities also offer merit-based tuition reductions of 10–20% for academically strong students. Scholarship availability changes each academic cycle — verify through the official Rossotrudnichestvo portal or the Russian Embassy in India well before the September intake deadline.",
+      "The Russian Government allocates a limited number of fully funded seats to Indian students each year through a competitive federal quota process. Separately, some universities offer merit-based fee reductions for academically strong applicants. We assess scholarship eligibility as part of our admissions planning and handle the quota application process for families where it is a realistic option.",
     careerOpportunities: [
       "Clear FMGE/NExT to obtain NMC registration and practise medicine in India",
       "Apply for postgraduate MD/MS or DNB programmes in India with a valid FMGE/NExT score",
@@ -290,7 +290,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Is MBBS in Vietnam valid in India?",
         answer:
-          "NMC does not approve or recognise universities — it publishes guidelines under the 2022 NMC Screening Test Regulations. If a student studies at a university that follows these guidelines, their degree is valid in India and they can sit the FMGE/NExT screening test to obtain a licence to practise. Compliance is specific to each university, not the country. Always check the individual university's status on the official NMC website before enrolling.",
+          "NMC does not approve or recognise universities — it publishes guidelines under the 2022 NMC Screening Test Regulations. If a student studies at a university that follows these guidelines, their degree is valid in India and they can sit the FMGE/NExT screening test to obtain a licence to practise. Compliance is specific to each university, not the country. We verify each institution's current compliance status before presenting it as an option.",
       },
       {
         question: "What are the total fees for MBBS in Vietnam?",
@@ -315,7 +315,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Which are the best Vietnam universities for Indian students?",
         answer:
-          "Can Tho University of Medicine and Pharmacy (public, WHO and FAIMER listed), Hue University of Medicine and Pharmacy, and Duy Tan University are among the well-established options. Thai Binh University and Nam Can Tho University are more affordable alternatives. Always verify the specific university's NMC compliance status before enrolling — do not rely on general country-level claims.",
+          "Can Tho University of Medicine and Pharmacy (public, WHO and FAIMER listed), Hue University of Medicine and Pharmacy, and Duy Tan University are among the well-established options. Thai Binh University and Nam Can Tho University are more affordable alternatives. NMC compliance is institution-specific — we verify each university's current status before recommending it.",
       },
       {
         question: "What intake months are available for MBBS in Vietnam?",
@@ -358,8 +358,8 @@ export const landingPages: LandingPage[] = [
       ],
     },
     admissionSteps: [
-      "If you plan to practise in India, ensure you have a valid NEET-UG score before your MBBS program begins",
-      "Check that your chosen Vietnam university fits current NMC expectations for the India-return pathway before you pay any fees",
+      "A valid NEET-UG score must exist before the MBBS programme begins — this is confirmed as part of every admission we process",
+      "NMC compliance for the India-return pathway is verified for each Vietnam university before any fees are collected",
       "Submit your application with required documents to the university or an authorised representative",
       "Receive the university's official admission offer letter",
       "Apply for a Vietnam student visa at the Vietnamese Embassy in India",
@@ -435,9 +435,9 @@ export const landingPages: LandingPage[] = [
     hostelInfo:
       "Vietnam universities typically provide on-campus or adjacent hostel accommodation for international students with monthly costs from $80–180/month. Universities in Can Tho, Da Nang, Hanoi, and Ho Chi Minh City have Indian student communities with dedicated Indian food options. Phan Chau Trinh University and Duy Tan University both offer modern student residential facilities. Private housing in larger cities is affordable and gives students more independence after the first year.",
     scholarshipInfo:
-      "Vietnam does not have a large-scale government scholarship programme specifically for Indian MBBS students. Public universities like Can Tho University of Medicine and Pharmacy occasionally offer partial fee waivers on a case-by-case basis for strong applicants. Bilateral education agreements between India and Vietnam cover a small number of sponsored seats annually — verify current availability with the Vietnamese Embassy in India or the university's international admissions team before applying.",
+      "Vietnam does not have a large-scale government scholarship programme specifically for Indian MBBS students. Public universities like Can Tho University of Medicine and Pharmacy occasionally offer partial fee waivers for strong applicants. Bilateral education agreements cover a small number of sponsored seats annually — we confirm current availability with the university directly before presenting it as an option.",
     careerOpportunities: [
-      "Clear FMGE/NExT to obtain NMC registration and practise in India — several Vietnam universities are NMC-recognised for this pathway",
+      "Clear FMGE/NExT to obtain NMC registration and practise in India — several Vietnam universities meet NMC's FMGL guidelines for this pathway",
       "Apply for postgraduate DNB or MD/MS programmes in India with a valid FMGE/NExT score",
       "Explore PG clinical specialisation in Vietnam or nearby Southeast Asian medical institutions",
       "Vietnam's location gives graduates proximity to Singapore, Malaysia, and other regional medical markets",
@@ -526,7 +526,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Is MBBS in Georgia valid in India?",
         answer:
-          "Yes — graduates from NMC-compliant Georgian universities can sit FMGE/NExT to practise medicine in India. Georgia has several universities that follow NMC guidelines, but compliance is university-specific. Always verify the exact university on the official NMC portal before paying any fees.",
+          "Yes — graduates from NMC-compliant Georgian universities can sit FMGE/NExT to practise medicine in India. Georgia has several universities that follow NMC guidelines, but compliance is university-specific. We verify each institution's current NMC status before shortlisting.",
       },
       {
         question: "Is Georgia a good MBBS destination for English-medium study?",
@@ -615,7 +615,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Is MBBS in Kyrgyzstan valid in India?",
         answer:
-          "Yes — graduates from NMC-compliant Kyrgyzstan universities can sit FMGE/NExT to practise in India. Recognition is university-specific, not country-wide. Some low-fee universities in Kyrgyzstan do not meet NMC guidelines — always verify on the NMC portal before enrolling.",
+          "Yes — graduates from NMC-compliant Kyrgyzstan universities can sit FMGE/NExT to practise in India. Recognition is university-specific, not country-wide. Some low-fee universities in Kyrgyzstan do not meet NMC guidelines — we assess compliance for each institution before recommending it.",
       },
       {
         question: "Why is Kyrgyzstan often chosen for MBBS?",
@@ -645,7 +645,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Should students choose only by the lowest fee?",
         answer:
-          "No. The better choice balances affordability with NMC recognition, hospital affiliation quality for clinical years, hostel infrastructure, city support, and documented FMGE pass rates. A university that costs $500/year less but has poor clinical training and low pass rates is a worse investment than one that costs slightly more with strong outcomes.",
+          "No. The better choice balances affordability with NMC guideline compliance, hospital affiliation quality for clinical years, hostel infrastructure, city support, and documented FMGE pass rates. A university that costs $500/year less but has poor clinical training and low pass rates is a worse investment than one that costs slightly more with strong outcomes.",
       },
     ],
     metaTitle: "MBBS in Kyrgyzstan 2026 | Affordable Universities & Fees",
@@ -681,7 +681,7 @@ export const landingPages: LandingPage[] = [
     title: "MBBS in Uzbekistan",
     kicker: "High-caution destination after NMC alert",
     summary:
-      "Uzbekistan may look affordable, but NMC's 1 April 2026 alert says Indian students should exercise extreme caution and verify FMGL 2021 compliance university by university before paying any fee.",
+      "Uzbekistan may look affordable, but NMC's 1 April 2026 alert flags serious FMGL 2021 compliance concerns. We assess each institution individually against the alert before progressing any Uzbekistan admission.",
     heroHighlights: [
       "NMC alert dated 1 Apr 2026",
       "FMGL 2021 compliance must be verified",
@@ -835,9 +835,9 @@ export const landingPages: LandingPage[] = [
       { criterion: "Return pathway", india: "Direct NMC licence", abroad: "Must clear FMGE/NExT to practise in India" },
     ],
     hostelInfo:
-      "Hostel availability varies sharply by university and city. Ask for room-sharing, kitchen access, deposit, and move-in details in writing. For Uzbekistan specifically, do not let hostel comfort override the larger FMGL-compliance questions.",
+      "Hostel availability varies sharply by university and city in Uzbekistan. Room-sharing policy, kitchen access, deposit, and move-in details are confirmed in writing — but hostel quality is never weighed against FMGL-compliance. Compliance comes first, always.",
     scholarshipInfo:
-      "Any scholarship or fee discount should be treated as secondary to compliance. If a university offers a concession, ask for the written net payable amount and verify that the exact institution and branch still remain acceptable for your India-return plan.",
+      "Any scholarship or fee concession is secondary to the compliance question. Where a university offers a discount, we obtain the written net payable amount and confirm that the exact institution and branch remain acceptable for the India-return pathway before presenting the offer.",
     careerOpportunities: [
       "Return to India only if the full FMGL 2021 pathway remains compliant and you later clear FMGE or NExT as applicable",
       "Pursue postgraduate studies in India only after the base foreign degree remains valid for Indian registration",
@@ -863,7 +863,7 @@ export const landingPages: LandingPage[] = [
       },
       {
         title: "English-medium claims need proof",
-        realityCheck: "If the real classroom or bedside language shifts away from English during clinical years, the FMGL pathway can become risky. Ask for written clarification before admission.",
+        realityCheck: "If the real classroom or bedside language shifts away from English during clinical years, the FMGL pathway is at risk. We obtain written confirmation of the year-by-year language structure before any admission is progressed.",
       },
       {
         title: "Branch and offshore models need extra caution",

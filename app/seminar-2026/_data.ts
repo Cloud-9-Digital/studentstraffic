@@ -112,7 +112,7 @@ export const FREE_INCLUSIONS = [
   {
     icon: GraduationCap,
     title: "University Selection Help",
-    desc: "NMC-approved universities in Russia, Georgia, Kyrgyzstan — ranked honestly by our doctors.",
+    desc: "Universities meeting NMC guidelines in Russia, Georgia, Kyrgyzstan — ranked honestly by our doctors.",
   },
   {
     icon: ShieldCheck,
@@ -164,7 +164,7 @@ export const SPEAKER_COUNTRIES = [
   {
     country: "Russia",
     countryCode: "ru",
-    detail: "FMGE-cleared doctors from KSMU, PSMU, Kazan State, and other NMC-approved universities.",
+    detail: "FMGE-cleared doctors from KSMU, PSMU, Kazan State, and other universities meeting NMC guidelines.",
     hasFmgeGraduates: true,
   },
   {
@@ -182,7 +182,7 @@ export const SPEAKER_COUNTRIES = [
   {
     country: "Uzbekistan",
     countryCode: "uz",
-    detail: "FMGE-cleared graduates from Tashkent Medical Academy and other NMC-listed institutions.",
+    detail: "FMGE-cleared graduates from Tashkent Medical Academy and other institutions meeting NMC guidelines.",
     hasFmgeGraduates: true,
   },
 ] as const;
@@ -219,7 +219,7 @@ export const FAQ = [
   },
   {
     q: "Which countries will the doctors represent?",
-    a: "Primarily Russia and Georgia — the two most popular NMC-approved destinations for Indian MBBS students. All speakers have completed their degrees, cleared FMGE, and are practising in India.",
+    a: "Primarily Russia and Georgia — the two most popular destinations for Indian MBBS students with strong NMC guideline compliance. All speakers have completed their degrees, cleared FMGE, and are practising in India.",
   },
   {
     q: "What if my city isn't on the list?",

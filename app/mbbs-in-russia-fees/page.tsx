@@ -15,7 +15,7 @@ const pagePath = "/mbbs-in-russia-fees";
 const publishedDate = "2026-05-23";
 
 const keyTakeaways = [
-  "MBBS in Russia fees range from ₹2.6-15 lakhs per year tuition across 50+ NMC-approved universities. Budget universities (Sevastopol ₹2.6L, Ural State ₹2.95L, North Ossetian ₹3.1L) offer the lowest fees, mid-range universities (Bashkir ₹4.32L, Kursk ₹4.5L, Volgograd ₹4L) provide balanced cost-quality, while premium universities (Kazan Federal ₹5.94L, RUDN ₹8.5L, First Moscow State ₹10L) command higher fees for top rankings and Moscow/St. Petersburg location.",
+  "MBBS in Russia fees range from ₹2.6-15 lakhs per year tuition across 50+ universities meeting NMC guidelines. Budget universities (Sevastopol ₹2.6L, Ural State ₹2.95L, North Ossetian ₹3.1L) offer the lowest fees, mid-range universities (Bashkir ₹4.32L, Kursk ₹4.5L, Volgograd ₹4L) provide balanced cost-quality, while premium universities (Kazan Federal ₹5.94L, RUDN ₹8.5L, First Moscow State ₹10L) command higher fees for top rankings and Moscow/St. Petersburg location.",
   "Total 6-year cost including tuition, hostel, food, travel, and expenses: ₹28-34 lakhs (budget scenario in tier-2 cities), ₹43-52 lakhs (medium budget at federal universities), or ₹71-103 lakhs (premium Moscow/SPB universities). This is 50-70% cheaper than Indian private medical colleges charging ₹60 lakhs-₹2.2 crores, making Russia the most cost-effective MBBS option for students who didn't secure government college seats.",
   "Hidden costs families must budget: one-time Year 1 expenses (₹2-3.7 lakhs for visa, document attestation, flights, winter clothing, settlement), annual recurring costs (₹58,000-1.3 lakhs for insurance, study materials, travel home), city-specific variations (Moscow living costs ₹36-59 lakhs over 6 years vs Crimea ₹13-21 lakhs), and currency fluctuation impacts (5-7% annual USD-INR variation affecting total cost by ₹1.6-3.2 lakhs).",
 ];
@@ -271,7 +271,7 @@ const hiddenCosts = [
       "Crimea: ₹13-21L over 6 years",
     ],
     total: "₹17-38 lakhs difference",
-    notes: "Choosing tier-2 city over Moscow saves ₹17-38 lakhs in living costs alone over 6 years. This doesn't compromise NMC recognition.",
+    notes: "Choosing tier-2 city over Moscow saves ₹17-38 lakhs in living costs alone over 6 years. This doesn't compromise NMC guideline compliance.",
   },
   {
     category: "Clinical Years (Years 5-6)",
@@ -317,7 +317,7 @@ const indiaComparison = [
     annualFees: "₹12-40 lakhs/year",
     totalCost: "₹60 lakhs-₹1.5 crores (5.5 years)",
     accessibility: "Moderate NEET rank, capitation fees, limited transparency",
-    comparison: "Russia offers better value at ₹28-52L with NMC recognition",
+    comparison: "Russia offers better value at ₹28-52L with NMC guideline compliance",
   },
   {
     category: "Russia MBBS (Budget)",
@@ -341,7 +341,7 @@ const costSavingStrategies = [
   {
     strategy: "Choose Tier-2 City University",
     savings: "₹17-38 lakhs over 6 years",
-    how: "Select universities in Kazan, Volgograd, Crimea, Ufa instead of Moscow/St. Petersburg. NMC recognition remains same but living costs drop 50-70%.",
+    how: "Select universities in Kazan, Volgograd, Crimea, Ufa instead of Moscow/St. Petersburg. NMC guideline compliance remains same but living costs drop 50-70%.",
     examples: "Bashkir (Ufa) vs RUDN (Moscow): Save ₹32L over 6 years",
   },
   {
@@ -397,12 +397,12 @@ const faqItems = [
   {
     question: "Which Russian university has the lowest MBBS fees for Indian students?",
     answer:
-      "Sevastopol State University has the lowest annual MBBS fees at ₹2,60,000/year (265,000 RUB / $3,300), totaling ₹15.6 lakhs for 6-year tuition. With hostel (₹36,000-60,000/year) and living expenses, the total 6-year cost is ₹17.76-20.16 lakhs tuition + hostel only. Other low-cost options include Ural State Medical University (₹2.95L/year), Tula State University (₹2.8L/year), North Ossetian State Medical Academy (₹3.1L/year). All are NMC-approved and offer English-medium MBBS. However, students should verify clinical training quality and FMGE pass rates alongside fees before finalizing.",
+      "Sevastopol State University has the lowest annual MBBS fees at ₹2,60,000/year (265,000 RUB / $3,300), totaling ₹15.6 lakhs for 6-year tuition. With hostel (₹36,000-60,000/year) and living expenses, the total 6-year cost is ₹17.76-20.16 lakhs tuition + hostel only. Other low-cost options include Ural State Medical University (₹2.95L/year), Tula State University (₹2.8L/year), North Ossetian State Medical Academy (₹3.1L/year). All are meeting NMC guidelines and offer English-medium MBBS. However, students should verify clinical training quality and FMGE pass rates alongside fees before finalizing.",
   },
   {
     question: "How does MBBS in Russia fees compare with Indian private medical colleges?",
     answer:
-      "MBBS in Russia (₹28-52 lakhs total for 6 years) is 50-70% cheaper than Indian private medical colleges charging ₹60 lakhs-₹2.2 crores for 5.5 years. Specific comparison: Russia budget option (₹28-34L) saves ₹31-70L vs Indian private colleges (₹60L-1.65Cr), Russia medium option (₹43-52L) saves ₹17-62L, Russia premium (₹71-103L) is comparable to lower-end Indian private but with international exposure. Indian government colleges (₹30,000-5.5L) remain cheapest but require NEET rank 1-20,000 (< 5% acceptance), while Russia accepts qualifying NEET score (50th/40th percentile) without rank competition. Same NMC recognition and FMGE requirement applies to both.",
+      "MBBS in Russia (₹28-52 lakhs total for 6 years) is 50-70% cheaper than Indian private medical colleges charging ₹60 lakhs-₹2.2 crores for 5.5 years. Specific comparison: Russia budget option (₹28-34L) saves ₹31-70L vs Indian private colleges (₹60L-1.65Cr), Russia medium option (₹43-52L) saves ₹17-62L, Russia premium (₹71-103L) is comparable to lower-end Indian private but with international exposure. Indian government colleges (₹30,000-5.5L) remain cheapest but require NEET rank 1-20,000 (< 5% acceptance), while Russia accepts qualifying NEET score (50th/40th percentile) without rank competition. Same NMC guideline compliance and FMGE requirement applies to both.",
   },
   {
     question: "What are the hidden costs in MBBS in Russia fees that families should know?",
@@ -422,12 +422,12 @@ const faqItems = [
   {
     question: "How can I save money on MBBS in Russia fees?",
     answer:
-      "Top cost-saving strategies: (1) Choose tier-2 city university (Kazan, Volgograd, Crimea) instead of Moscow/SPB: save ₹17-38L over 6 years; (2) Self-cooking vs Indian mess: save ₹1.44-2.88L; (3) University hostel vs private accommodation: save ₹5-10.8L; (4) Early flight booking & off-season travel: save ₹90,000-2.4L; (5) Apply for Russian Government Scholarship (100% tuition + stipend): save ₹24L+; (6) Student transport pass: save ₹48,000-72,000; (7) Bulk purchase spices/snacks from India: save ₹30,000-60,000; (8) Education loan with Section 80E tax benefit: save ₹2.4-6.4L over 8 years. Total potential savings: ₹25-50L by choosing budget university in tier-2 city with smart living strategies, without compromising NMC recognition or education quality.",
+      "Top cost-saving strategies: (1) Choose tier-2 city university (Kazan, Volgograd, Crimea) instead of Moscow/SPB: save ₹17-38L over 6 years; (2) Self-cooking vs Indian mess: save ₹1.44-2.88L; (3) University hostel vs private accommodation: save ₹5-10.8L; (4) Early flight booking & off-season travel: save ₹90,000-2.4L; (5) Apply for Russian Government Scholarship (100% tuition + stipend): save ₹24L+; (6) Student transport pass: save ₹48,000-72,000; (7) Bulk purchase spices/snacks from India: save ₹30,000-60,000; (8) Education loan with Section 80E tax benefit: save ₹2.4-6.4L over 8 years. Total potential savings: ₹25-50L by choosing budget university in tier-2 city with smart living strategies, without compromising NMC guideline compliance or education quality.",
   },
   {
     question: "How does Students Traffic help with Russia MBBS fees planning?",
     answer:
-      "Students Traffic provides comprehensive fee planning support: (1) Total cost modeling across low/medium/high budget scenarios (₹28-103L) based on family's financial profile and city preferences; (2) University fee comparison across 50+ NMC-approved options with exact annual tuition (₹2.6-15L range) and 6-year projections; (3) Hidden cost identification including one-time Year 1 expenses (₹2-3.7L), annual recurring costs (₹58,000-1.3L), currency fluctuation impacts (±₹1.6-3.2L), and city-specific variations (Moscow ₹36-59L vs Crimea ₹13-21L living costs); (4) Education loan facilitation connecting families with 15+ lenders (SBI, HDFC, Credila) offering optimal rates (8.25-17% p.a.) and terms; (5) Cost-saving strategy counseling identifying ₹25-50L potential savings through tier-2 city selection, hostel choices, cooking arrangements, scholarship applications, and tax optimization. Our fee planning ensures families budget accurately for 6-year commitment rather than reacting only to first-year quotes.",
+      "Students Traffic provides comprehensive fee planning support: (1) Total cost modeling across low/medium/high budget scenarios (₹28-103L) based on family's financial profile and city preferences; (2) University fee comparison across 50+ meeting NMC guidelines options with exact annual tuition (₹2.6-15L range) and 6-year projections; (3) Hidden cost identification including one-time Year 1 expenses (₹2-3.7L), annual recurring costs (₹58,000-1.3L), currency fluctuation impacts (±₹1.6-3.2L), and city-specific variations (Moscow ₹36-59L vs Crimea ₹13-21L living costs); (4) Education loan facilitation connecting families with 15+ lenders (SBI, HDFC, Credila) offering optimal rates (8.25-17% p.a.) and terms; (5) Cost-saving strategy counseling identifying ₹25-50L potential savings through tier-2 city selection, hostel choices, cooking arrangements, scholarship applications, and tax optimization. Our fee planning ensures families budget accurately for 6-year commitment rather than reacting only to first-year quotes.",
   },
 ];
 
@@ -472,7 +472,7 @@ export default function RussiaMbbsFeesPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-xl leading-9 text-muted-foreground sm:text-2xl sm:leading-10">
-            Comprehensive fees guide covering 50+ NMC-approved universities: annual tuition (₹2.6-15L), total 6-year costs (₹28-103L including living expenses), India comparison (50-70% savings vs private colleges), hidden costs families miss, city-wise variations, and cost-saving strategies.
+            Comprehensive fees guide covering 50+ universities meeting NMC guidelines: annual tuition (₹2.6-15L), total 6-year costs (₹28-103L including living expenses), India comparison (50-70% savings vs private colleges), hidden costs families miss, city-wise variations, and cost-saving strategies.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -531,7 +531,7 @@ export default function RussiaMbbsFeesPage() {
                   Students Traffic's fee planning approach
                 </p>
                 <p className="mt-1 text-sm leading-6 text-blue-800">
-                  At Students Traffic, we help families model total 6-year costs across low/medium/high budget scenarios (₹28-103L) based on city preferences (Moscow vs tier-2), living arrangements (hostel vs private), and lifestyle choices (self-cooking vs mess). Our fee planning includes hidden cost identification (one-time ₹2-3.7L Year 1, recurring ₹58,000-1.3L annually, currency fluctuation ±₹1.6-3.2L risk), education loan facilitation connecting with 15+ lenders (8.25-17% p.a. rates), and cost-saving strategy counseling identifying ₹25-50L potential savings through tier-2 city selection, scholarship applications, and smart living strategies. We compare 50+ NMC-approved universities with exact fees rather than relying on generic Russia cost estimates.
+                  At Students Traffic, we help families model total 6-year costs across low/medium/high budget scenarios (₹28-103L) based on city preferences (Moscow vs tier-2), living arrangements (hostel vs private), and lifestyle choices (self-cooking vs mess). Our fee planning includes hidden cost identification (one-time ₹2-3.7L Year 1, recurring ₹58,000-1.3L annually, currency fluctuation ±₹1.6-3.2L risk), education loan facilitation connecting with 15+ lenders (8.25-17% p.a. rates), and cost-saving strategy counseling identifying ₹25-50L potential savings through tier-2 city selection, scholarship applications, and smart living strategies. We compare 50+ universities meeting NMC guidelines with exact fees rather than relying on generic Russia cost estimates.
                 </p>
               </div>
             </div>
@@ -542,10 +542,10 @@ export default function RussiaMbbsFeesPage() {
       <section className="border-t border-border px-6 py-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
-            University-wise MBBS fees: 13 NMC-approved examples
+            University-wise MBBS fees: 13 meeting NMC guidelines examples
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
-            Exact annual tuition and total costs for budget, mid-range, federal, and premium Russian medical universities. All are NMC-approved and offer English-medium MBBS. Fees shown are for 2026-27 academic year.
+            Exact annual tuition and total costs for budget, mid-range, federal, and premium Russian medical universities. All are meeting NMC guidelines and offer English-medium MBBS. Fees shown are for 2026-27 academic year.
           </p>
 
           <div className="mt-10 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
@@ -761,7 +761,7 @@ export default function RussiaMbbsFeesPage() {
             Russia vs India: Complete cost comparison
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
-            Russia MBBS (₹28-52L for mid-tier options) costs 50-70% less than Indian private colleges (₹60L-₹2.2Cr) while offering same NMC recognition and FMGE requirement. Only Indian government colleges (under 5% acceptance rate) are cheaper.
+            Russia MBBS (₹28-52L for mid-tier options) costs 50-70% less than Indian private colleges (₹60L-₹2.2Cr) while offering same NMC guideline compliance and FMGE requirement. Only Indian government colleges (under 5% acceptance rate) are cheaper.
           </p>
 
           <div className="mt-10 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
@@ -822,7 +822,7 @@ export default function RussiaMbbsFeesPage() {
                     Russia advantage
                   </p>
                   <p className="mt-1 text-sm leading-6 text-green-800">
-                    Budget Russia universities (₹28-34L) save ₹31-70L vs Indian private colleges while maintaining NMC recognition. No donations, no capitation fees, transparent pricing.
+                    Budget Russia universities (₹28-34L) save ₹31-70L vs Indian private colleges while maintaining NMC guideline compliance. No donations, no capitation fees, transparent pricing.
                   </p>
                 </div>
               </div>
@@ -852,7 +852,7 @@ export default function RussiaMbbsFeesPage() {
             Cost-saving strategies: Save ₹25-50 lakhs
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-8 text-muted-foreground">
-            Smart decisions on city selection, accommodation, food arrangements, travel booking, and scholarship applications can reduce total 6-year costs by ₹25-50 lakhs without compromising NMC recognition or education quality.
+            Smart decisions on city selection, accommodation, food arrangements, travel booking, and scholarship applications can reduce total 6-year costs by ₹25-50 lakhs without compromising NMC guideline compliance or education quality.
           </p>
 
           <div className="mt-10 space-y-6">
@@ -945,7 +945,7 @@ export default function RussiaMbbsFeesPage() {
             Need personalized Russia MBBS fee planning?
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
-            Students Traffic provides complete fee modeling across low/medium/high budget scenarios (₹28-103L), university-wise fee comparison for 50+ NMC-approved options, hidden cost identification (₹8-15L often missed), education loan facilitation (8.25-17% p.a. rates), and cost-saving strategy counseling identifying ₹25-50L potential savings.
+            Students Traffic provides complete fee modeling across low/medium/high budget scenarios (₹28-103L), university-wise fee comparison for 50+ meeting NMC guidelines options, hidden cost identification (₹8-15L often missed), education loan facilitation (8.25-17% p.a. rates), and cost-saving strategy counseling identifying ₹25-50L potential savings.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <CounsellingDialog

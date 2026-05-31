@@ -37,10 +37,10 @@ const countryRegulatoryAdvisories: Record<string, CountryRegulatoryAdvisory> = {
       "NMC says failure to meet these conditions can result in ineligibility for registration to practise medicine in India.",
     ],
     actionItems: [
-      "Ask for written proof of course duration, English-medium delivery, clinical rotations, and internship structure before paying any advance.",
-      "Verify the exact university or branch directly with NMC and the Indian Embassy instead of relying on agents or WhatsApp claims.",
-      "Avoid offshore, split-campus, transfer-style, or branch arrangements that can break the single-institution FMGL pathway.",
-      "Treat low fees as secondary until the India-return licensing pathway is documented clearly in writing.",
+      "Written proof of course duration, English-medium delivery, clinical rotations, and internship structure is obtained from the university before any payment is processed.",
+      "Every institution and branch is verified directly against NMC and Indian Embassy records — not agent materials or informal communications.",
+      "Offshore, split-campus, transfer-style, and branch arrangements that break the single-institution FMGL pathway are disqualifying — we do not process admissions through these routes.",
+      "Fee competitiveness is assessed only after the India-return licensing pathway is confirmed in writing.",
     ],
     sources: [
       {

@@ -16,7 +16,7 @@ const publishedDate = "2026-05-23";
 
 const keyTakeaways = [
   "Russia MBBS total cost (₹35-50 lakhs for 6 years) is fundable through secured loans (₹7.5 lakhs+, 8.25-11.5% p.a. interest with property/FD collateral) or unsecured loans (up to ₹7.5 lakhs from PSU banks, ₹50 lakhs-₹1 crore from private banks/NBFCs at 11-17% p.a.). Government schemes like PM-Vidyalaxmi offer collateral-free loans with 3% interest subsidy for families earning up to ₹8 lakhs annually on loans up to ₹10 lakhs.",
-  "Loan approval requires NMC-approved university admission letter (impossible to get loan without this), minimum 50% Class 12 PCB marks, valid NEET scorecard, co-applicant with ₹30,000-50,000+ monthly income, and CIBIL score 685+ (ideally 750+). Application timeline: 2-4 weeks for public sector banks (SBI, Bank of Baroda), 2-3 weeks for private banks (HDFC, ICICI), 7-14 days for NBFCs (Credila, Avanse, Auxilo).",
+  "Loan approval requires university meeting NMC guidelines admission letter (impossible to get loan without this), minimum 50% Class 12 PCB marks, valid NEET scorecard, co-applicant with ₹30,000-50,000+ monthly income, and CIBIL score 685+ (ideally 750+). Application timeline: 2-4 weeks for public sector banks (SBI, Bank of Baroda), 2-3 weeks for private banks (HDFC, ICICI), 7-14 days for NBFCs (Credila, Avanse, Auxilo).",
   "Repayment begins after course completion plus 6 months-1 year moratorium, with 10-15 year tenure typical. For a ₹40 lakh loan at 10% p.a. over 15 years, EMI is approximately ₹43,000/month. Section 80E tax benefit allows full interest deduction (no upper limit) for up to 8 years, saving ₹30,000-80,000 annually depending on tax bracket. Total interest paid over loan lifetime can be 40-70% of principal amount.",
 ];
 
@@ -41,7 +41,7 @@ const loanTypes = [
     type: "PM-Vidyalaxmi Scheme",
     loanAmount: "Up to full tuition + expenses",
     interestRate: "Market rates - 3% subsidy (families earning ≤₹8 lakhs on loans ≤₹10 lakhs)",
-    requirements: "Collateral-free, guarantor-free, NMC-approved university admission, family income documentation",
+    requirements: "Collateral-free, guarantor-free, university meeting NMC guidelines admission, family income documentation",
     bestFor: "Families earning up to ₹8 lakhs annually seeking subsidized loans without collateral",
     examples: "₹3,600 crore outlay (2024-31), unified portal for streamlined application",
   },
@@ -122,12 +122,12 @@ const majorLenders = [
     interestRate: "Competitive floating rates",
     processing: "48 hours for priority universities, 2-3 weeks standard",
     highlights: [
-      "Covers WFME-listed universities (includes NMC-approved Russia)",
+      "Covers WFME-listed universities (includes Russia universities meeting NMC guidelines)",
       "48-hour processing for priority list",
       "Up to 10-year repayment",
       "Specialized MBBS abroad expertise",
     ],
-    suitable: "Urgent funding needs with NMC-approved university admission, seeking NBFC speed with competitive rates",
+    suitable: "Urgent funding needs with university meeting NMC guidelines admission, seeking NBFC speed with competitive rates",
   },
   {
     lender: "Avanse / Auxilo / InCred",
@@ -185,9 +185,9 @@ const loanCoverageBreakdown = [
 
 const approvalChecklist = [
   {
-    requirement: "NMC-approved university admission",
+    requirement: "Admission from a university meeting NMC guidelines",
     why: "Loan impossible without admission letter from recognized institution",
-    howToVerify: "Check university on NMC's Foreign Medical Institutions list at nmc.org.in before applying",
+    howToVerify: "Verify university meets NMC's FMGL guidelines through the Eligibility Certificate process at nmc.org.in before applying",
     impact: "Critical - Application rejected immediately without proper admission proof",
   },
   {
@@ -280,12 +280,12 @@ const faqItems = [
   {
     question: "What documents are required for Russia MBBS education loan?",
     answer:
-      "Required documents include: (1) Admission: NMC-approved university offer letter (impossible to get loan without this), fee structure, academic transcripts; (2) Student: Class 10/12 mark sheets (minimum 50% PCB), NEET scorecard (mandatory for India return), passport, identity/address proof; (3) Financial: Co-applicant's last 3 months salary slips + 6-month bank statements + ITRs (2-3 years), or business proof + ITRs for self-employed; (4) Collateral (if applicable): Property title deed + tax receipts + valuation report + encumbrance certificate, or FD/LIC/NSC certificates; (5) Co-borrower/guarantor: Identity proof, address proof, income proof, credit history. Complete documentation is critical - missing papers delay approval by 2-4 weeks.",
+      "Required documents include: (1) Admission: university meeting NMC guidelines offer letter (impossible to get loan without this), fee structure, academic transcripts; (2) Student: Class 10/12 mark sheets (minimum 50% PCB), NEET scorecard (mandatory for India return), passport, identity/address proof; (3) Financial: Co-applicant's last 3 months salary slips + 6-month bank statements + ITRs (2-3 years), or business proof + ITRs for self-employed; (4) Collateral (if applicable): Property title deed + tax receipts + valuation report + encumbrance certificate, or FD/LIC/NSC certificates; (5) Co-borrower/guarantor: Identity proof, address proof, income proof, credit history. Complete documentation is critical - missing papers delay approval by 2-4 weeks.",
   },
   {
     question: "How long does education loan approval take for Russia MBBS?",
     answer:
-      "Approval timeline varies by lender: (1) Public sector banks: 2-4 weeks after complete document submission (SBI 4-8 weeks, Bank of Baroda 3-6 weeks); (2) Private banks: 2-3 weeks (HDFC, ICICI); (3) NBFCs: 7-14 days standard (Avanse, Auxilo), 24-48 hours for priority universities (HDFC Credila for NMC-approved institutions). Disbursement adds 1-2 weeks: tuition transferred directly to university, living expenses to student account per agreed schedule. Start application immediately upon receiving admission letter (don't wait for fee deadline) to allow 6-8 week buffer for approval, disbursement, and university payment confirmation before departure.",
+      "Approval timeline varies by lender: (1) Public sector banks: 2-4 weeks after complete document submission (SBI 4-8 weeks, Bank of Baroda 3-6 weeks); (2) Private banks: 2-3 weeks (HDFC, ICICI); (3) NBFCs: 7-14 days standard (Avanse, Auxilo), 24-48 hours for priority universities (HDFC Credila for institutions meeting NMC guidelines). Disbursement adds 1-2 weeks: tuition transferred directly to university, living expenses to student account per agreed schedule. Start application immediately upon receiving admission letter (don't wait for fee deadline) to allow 6-8 week buffer for approval, disbursement, and university payment confirmation before departure.",
   },
   {
     question: "What is the EMI for ₹40 lakh education loan for Russia MBBS?",

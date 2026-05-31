@@ -77,7 +77,7 @@ export function LpHero() {
 
             <p className="mt-4 max-w-lg text-base leading-7 text-white/60">
               Trusted by 3,000+ Indian students since 2014. We help you get
-              admitted to NMC-recognized MBBS universities across 6 countries.
+              admitted to MBBS universities meeting NMC guidelines across 6 countries.
               Book a free counselling call and we will guide you.
             </p>
 

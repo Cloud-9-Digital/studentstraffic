@@ -33,7 +33,7 @@ const INTEREST_POINTS = [
   },
   {
     id: "right-university",
-    label: "Pick the right university — not just any NMC-approved one",
+    label: "Pick the right university — not just any that meets NMC guidelines",
     detail: "Infrastructure, faculty, FMGE coaching support on campus",
   },
 ] as const;

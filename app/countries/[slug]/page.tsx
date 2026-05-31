@@ -659,7 +659,7 @@ export default async function CountryPage({
               <div className="deferred-render py-14 md:py-18">
                 <SectionLabel icon={<CheckCircle2 className="size-3.5" />} text="Admissions Checks" />
                 <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                  What to verify before you pay
+                  How we handle admissions
                 </h2>
                 <ul className="mt-8 space-y-3">
                   {countryContent.verificationChecklist.map((item) => (

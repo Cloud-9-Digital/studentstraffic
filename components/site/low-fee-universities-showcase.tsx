@@ -97,7 +97,7 @@ type LowFeeUniversitiesShowcaseProps = {
 
 export function LowFeeUniversitiesShowcase({
   title = "Universities with the lowest MBBS fees in Russia",
-  description = "Based on 2026 official fee structures, these NMC-approved Russian medical universities offer the most affordable tuition rates for Indian students.",
+  description = "Based on 2026 official fee structures, these Russian medical universities meet NMC guidelines and offer the most affordable tuition rates for Indian students.",
   maxUniversities = 6,
   className = "",
 }: LowFeeUniversitiesShowcaseProps) {
@@ -267,7 +267,7 @@ export function LowFeeUniversitiesShowcase({
           <li className="flex items-start gap-2">
             <span className="text-accent">•</span>
             <span>
-              Fees may increase 6-12% annually. Confirm current rates with universities before applying.
+              Fees may increase 6-12% annually. We confirm the current fee notice with each university before presenting figures to families.
             </span>
           </li>
           <li className="flex items-start gap-2">

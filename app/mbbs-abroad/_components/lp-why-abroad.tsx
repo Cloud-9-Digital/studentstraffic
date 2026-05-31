@@ -8,7 +8,7 @@ const comparison = [
   { aspect: "Seat availability", india: "Very limited. 20 lakh students, 1 lakh seats", abroad: "Seats available across multiple universities", abroad_wins: true },
   { aspect: "Hostel and living cost", india: "₹3L to 6L per year", abroad: "₹1.5L to 3L per year", abroad_wins: true },
   { aspect: "Language of study", india: "English", abroad: "English (all listed universities)", abroad_wins: false },
-  { aspect: "NMC recognition", india: "Automatic", abroad: "All our listed universities are NMC recognized", abroad_wins: false },
+  { aspect: "NMC compliance", india: "Automatic", abroad: "All our listed universities meet NMC guidelines", abroad_wins: false },
   { aspect: "Exam to practice in India", india: "Not required", abroad: "FMGE / NExT exam required after return", abroad_wins: false },
 ];
 

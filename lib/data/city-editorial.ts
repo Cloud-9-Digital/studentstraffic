@@ -20,7 +20,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
     summary:
       "Tbilisi is the capital of Georgia and the single largest hub for Indian MBBS students in the South Caucasus. With over 30 private medical universities operating English-medium programs, it offers more choice per square kilometre than almost any comparable city. Students live in a European-style capital with a walkable old town, reliable public transport, and a growing international community.",
     whyStudentsChooseIt:
-      "The combination of relatively low tuition (many programs start around USD 4,000–6,000 per year at private universities), a fully English-medium curriculum, NMC-listed institutions, and straightforward student visa access makes Tbilisi a practical first choice. Unlike Central Asian options, Georgia is a stable liberal democracy with open movement rules for Indian passport holders, and Tbilisi's infrastructure is noticeably more developed than most comparable fee-range cities.",
+      "The combination of relatively low tuition (many programs start around USD 4,000–6,000 per year at private universities), a fully English-medium curriculum, institutions meeting NMC guidelines, and straightforward student visa access makes Tbilisi a practical first choice. Unlike Central Asian options, Georgia is a stable liberal democracy with open movement rules for Indian passport holders, and Tbilisi's infrastructure is noticeably more developed than most comparable fee-range cities.",
     indianCommunity:
       "Tbilisi has one of the largest concentrations of Indian medical students outside India itself. Purpose-built Indian messes, Hindi-speaking grocery stores near university zones, and active student associations exist across the city. WhatsApp groups for each university batch are well established, and peer mentoring from senior students is the norm. Students report feeling socially supported from day one.",
     monthlyCostRange: "$250–$450/month",
@@ -42,7 +42,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
       {
         question: "Are Tbilisi MBBS degrees recognised by NMC?",
         answer:
-          "NMC recognition is granted to individual institutions, not to the city or country as a whole. A number of Tbilisi universities hold NMC recognition, but you must verify the current status of the specific institution you are applying to on the NMC website directly, since the recognised institution list is updated periodically.",
+          "NMC compliance is assessed per institution against published FMGL guidelines, not by city or country. A number of Tbilisi universities meet NMC guidelines, but compliance is institution-specific — verify through the NMC Eligibility Certificate process at nmc.org.in before applying.",
       },
       {
         question: "How much does it cost to live in Tbilisi as a medical student?",
@@ -74,7 +74,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
     summary:
       "Bishkek is the capital of Kyrgyzstan and the dominant hub for Indian medical students in Central Asia, home to more than 20 medical universities. It is a post-Soviet city with tree-lined boulevards, affordable living costs, and a large established Indian student population that has grown steadily over the past decade. Clinical training is conducted in Russian-medium hospitals, giving students practical exposure to a second language alongside their English coursework.",
     whyStudentsChooseIt:
-      "Bishkek offers some of the most affordable MBBS programs available to Indian students with NMC-listed options, with annual tuition at many institutions falling between USD 2,500 and USD 5,000. Multiple FMGE and NExT coaching academies operate in the city, established specifically for Indian students preparing to return to India. The low cost of living and well-worn support infrastructure make it a pragmatic choice for middle-income families.",
+      "Bishkek offers some of the most affordable MBBS programs available to Indian students, with institutions meeting NMC guidelines and annual tuition at many falling between USD 2,500 and USD 5,000. Multiple FMGE and NExT coaching academies operate in the city, established specifically for Indian students preparing to return to India. The low cost of living and well-worn support infrastructure make it a pragmatic choice for middle-income families.",
     indianCommunity:
       "Bishkek has one of the largest and most established Indian student communities in the world outside India. Dedicated Indian messes, Indian grocery stores, Hindi film screenings, and cultural associations are embedded across the city's student zones. Senior students actively guide juniors through university enrollment, accommodation, and local administration. The community is large enough that Indian students rarely feel isolated.",
     monthlyCostRange: "$200–$350/month",
@@ -96,7 +96,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
       {
         question: "Are Bishkek medical universities NMC recognised?",
         answer:
-          "Several Bishkek universities appear in the NMC-approved directory, but the list changes. Always check the current NMC website for your specific target university before paying any fees. NMC recognition is a prerequisite for sitting the NExT exam and practising in India after returning.",
+          "Several Bishkek universities meet NMC's FMGL guidelines, but compliance is institution-specific. NMC guideline compliance is a prerequisite for sitting the NExT exam and practising in India. Verify through the Eligibility Certificate process at nmc.org.in before paying any fees.",
       },
       {
         question: "How cold does it get in Bishkek in winter?",
@@ -123,7 +123,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
     summary:
       "Tashkent is the capital of Uzbekistan and its most developed city, with broad modernised avenues, a functional metro system, and the highest concentration of medical universities in the country. Over the past five years, Uzbekistan has emerged as a growing destination for Indian MBBS students, and Tashkent leads that growth with over 14 published medical programs.",
     whyStudentsChooseIt:
-      "Tashkent's universities offer competitive annual tuition in the USD 3,000–6,000 range, and the city's infrastructure is more developed than other Uzbek study destinations. NMC-listed institutions are present, and the Uzbek government has actively sought to attract international medical students. Improving airline connectivity from major Indian cities makes logistics increasingly practical.",
+      "Tashkent's universities offer competitive annual tuition in the USD 3,000–6,000 range, and the city's infrastructure is more developed than other Uzbek study destinations. Institutions meeting NMC guidelines are present, and the Uzbek government has actively sought to attract international medical students. Improving airline connectivity from major Indian cities makes logistics increasingly practical.",
     indianCommunity:
       "The Indian student community in Tashkent is growing but less established than Bishkek or Tbilisi. Indian messes and community support exist, particularly at universities with larger Indian cohorts, but the city has fewer dedicated Indian student services than the two larger hubs.",
     monthlyCostRange: "$250–$400/month",
@@ -145,7 +145,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
       {
         question: "Are Tashkent medical universities NMC approved?",
         answer:
-          "Some Tashkent universities hold NMC recognition, but this changes. Always verify the current NMC-approved list directly on the NMC India website before making any payment. An outdated brochure or agent claim is not sufficient verification.",
+          "Some Tashkent universities meet NMC's FMGL guidelines, but compliance is institution-specific. Verify through the NMC Eligibility Certificate process at nmc.org.in — an agent brochure is not sufficient verification.",
       },
       {
         question: "How is Tashkent's infrastructure compared to other Uzbek cities?",
@@ -167,7 +167,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
     summary:
       "Batumi is Georgia's second-largest city on the Black Sea coast in the Adjara region. Three medical universities operate English-medium programs here, attracting Indian students who want a Georgian qualification with a calmer resort-city environment rather than the bustle of Tbilisi. The city is compact, walkable, and visually distinctive with its mix of modern seafront towers and Ottoman-influenced architecture.",
     whyStudentsChooseIt:
-      "Batumi offers slightly lower living costs than Tbilisi and a more relaxed pace of life. The same Georgian legal framework applies — Georgian student visas, Georgian university degrees, NMC-listed institutions subject to individual verification. For students who find Tbilisi overwhelming, Batumi provides a quieter alternative within Georgia.",
+      "Batumi offers slightly lower living costs than Tbilisi and a more relaxed pace of life. The same Georgian legal framework applies — Georgian student visas, Georgian university degrees, institutions subject to individual NMC guideline compliance verification. For students who find Tbilisi overwhelming, Batumi provides a quieter alternative within Georgia.",
     indianCommunity:
       "The Indian student community in Batumi is smaller but established. Indian messes and peer support exist at the larger universities. Those who prefer a tighter-knit community often appreciate this, while students wanting a large social network may find Tbilisi a better fit.",
     monthlyCostRange: "$220–$380/month",
@@ -293,7 +293,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
       {
         question: "Are Vietnamese MBBS degrees recognised by NMC?",
         answer:
-          "Some Vietnamese universities are listed in the NMC-approved institution directory. Students must verify the current NMC status of their specific target institution before enrolling, and should research the NExT exam pathway for Vietnam graduates independently.",
+          "Some Vietnamese universities meet NMC's FMGL guidelines. NMC compliance is institution-specific and must be verified — not assumed. Verify through the NMC Eligibility Certificate process at nmc.org.in before enrolling.",
       },
     ],
   },
@@ -357,7 +357,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
       {
         question: "Is Ho Chi Minh City or Hanoi better for MBBS in Vietnam?",
         answer:
-          "Hanoi has more university options. Ho Chi Minh City has a warmer climate, stronger English proficiency in everyday life, and better Indian community infrastructure. The right choice depends on your specific university target, since NMC recognition and program quality vary by institution rather than by city.",
+          "Hanoi has more university options. Ho Chi Minh City has a warmer climate, stronger English proficiency in everyday life, and better Indian community infrastructure. The right choice depends on your specific university target, since NMC guideline compliance and program quality vary by institution rather than by city.",
       },
     ],
   },
@@ -395,7 +395,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
       {
         question: "Is a Moscow MBBS degree recognised by NMC?",
         answer:
-          "Several Moscow universities appear on the NMC-approved list. Individual university recognition status must be verified on the NMC website, as it changes. A Moscow degree historically transfers well to the Indian licensing pathway for students who pass NExT.",
+          "Several Moscow universities meet NMC's FMGL guidelines. Compliance is institution-specific — verify through the Eligibility Certificate process at nmc.org.in. A Moscow degree historically transfers well to the Indian licensing pathway for students who pass NExT.",
       },
     ],
   },
@@ -567,7 +567,7 @@ const cityEditorialMap: Record<string, CityEditorial> = {
     summary:
       "Fergana city is the administrative centre of Fergana Region in eastern Uzbekistan's Fergana Valley. Three medical universities operate here. It is a planned Soviet-era city with slightly more urban character than Andijan while remaining much smaller and cheaper than Tashkent.",
     whyStudentsChooseIt:
-      "Low living costs within the Uzbek system and availability of NMC-listed institutions (subject to verification) at lower tuition than capital-city alternatives.",
+      "Low living costs within the Uzbek system and availability of institutions meeting NMC guidelines at lower tuition than capital-city alternatives.",
     indianCommunity:
       "Small. Basic peer support through individual university cohorts.",
     monthlyCostRange: "$180–$310/month",

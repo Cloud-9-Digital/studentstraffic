@@ -56,12 +56,12 @@ export default function TamilNaduHubPage() {
     {
       question: "Can I practice in Tamil Nadu after MBBS abroad?",
       answer:
-        "Yes. You must clear the NExT (National Exit Test) after graduation to get your medical license in India. All universities we recommend are NMC-approved and their graduates are eligible for NExT. After clearing NExT and completing mandatory internship, you can practice anywhere in India including Tamil Nadu.",
+        "Yes. You must clear the NExT (National Exit Test) after graduation to get your medical license in India. All universities we recommend meet NMC's FMGL guidelines and their graduates are eligible for NExT. After clearing NExT and completing mandatory internship, you can practice anywhere in India including Tamil Nadu.",
     },
     {
       question: "How does MBBS abroad cost compare to private medical colleges in Tamil Nadu?",
       answer:
-        "Private MBBS in Tamil Nadu costs ₹50L-₹1.5Cr for 5.5 years. MBBS abroad ranges from ₹12-30L total for 6 years depending on country. Countries like Russia, Kyrgyzstan, and Vietnam are significantly more affordable while maintaining NMC recognition and good education standards.",
+        "Private MBBS in Tamil Nadu costs ₹50L-₹1.5Cr for 5.5 years. MBBS abroad ranges from ₹12-30L total for 6 years depending on country. Countries like Russia, Kyrgyzstan, and Vietnam are significantly more affordable while meeting NMC guidelines and maintaining good education standards.",
     },
     {
       question: "What is the total cost including living expenses?",
@@ -69,19 +69,19 @@ export default function TamilNaduHubPage() {
         "Total 6-year cost includes: tuition fees, hostel, food, health insurance, visa, travel, and miscellaneous expenses. Budget countries: ₹12-20L (Kyrgyzstan, Uzbekistan). Mid-range: ₹15-25L (Russia, Vietnam). Premium: ₹20-30L (Georgia). We provide detailed year-wise cost breakdowns during counselling.",
     },
     {
-      question: "How do I verify if a university is NMC approved?",
+      question: "How do I verify if a university meets NMC guidelines?",
       answer:
-        "Check the NMC website's list of approved foreign medical institutions. We verify each university against both NMC and WDOMS (WHO database). During counselling, we show you exactly how to verify recognition status and explain what to look for in official documentation.",
+        "NMC publishes guidelines (FMGL 2021) that foreign universities must meet. The practical verification is the NMC Eligibility Certificate process at nmc.org.in — NMC will only issue the certificate for universities meeting current guidelines. We also cross-check WDOMS (WHO database) listing. During counselling, we show you exactly how this works.",
     },
     {
       question: "What NEET score is required for MBBS abroad?",
       answer:
-        "For NMC recognition, you need to pass NEET (qualifying percentile: 50th for General, 40th for SC/ST/OBC). There is no minimum NEET score requirement for admission to most foreign universities. However, having a higher score improves your chances at top universities. We help you choose universities based on your actual NEET score.",
+        "For NMC guideline compliance, you need to pass NEET (qualifying percentile: 50th for General, 40th for SC/ST/OBC). There is no minimum NEET score requirement for admission to most foreign universities. However, having a higher score improves your chances at top universities. We help you choose universities based on your actual NEET score.",
     },
     {
       question: "Is the MBBS degree from abroad valid in India?",
       answer:
-        "Yes, if the university is listed in the NMC (National Medical Commission) approved foreign institutions list. After graduation, you must clear NExT exam and complete mandatory internship to practice in India. We only recommend NMC-approved universities to ensure your degree is recognized.",
+        "Yes, if the university meets NMC guidelines (FMGL 2021). After graduation, you must clear NExT exam and complete mandatory internship to practice in India. We only recommend universities meeting NMC guidelines.",
     },
     {
       question: "What is the admission process and timeline?",
@@ -609,7 +609,7 @@ export default function TamilNaduHubPage() {
             <p className="mt-3 leading-relaxed text-muted-foreground">
               Private medical colleges in Tamil Nadu charge between ₹50 lakhs to ₹1.5 crores for the complete 5.5-year MBBS course.
               In comparison, MBBS abroad costs ₹12-30 lakhs total for 6 years including all expenses. This represents a savings of ₹20-90 lakhs
-              depending on the country chosen. All recommended foreign universities are NMC-approved and provide quality medical education
+              depending on the country chosen. All recommended foreign universities meet NMC guidelines and provide quality medical education
               with good clinical exposure and hospital infrastructure.
             </p>
           </div>

@@ -254,8 +254,8 @@ const planningSteps = [
     body: "Scholarship availability is country- and course-specific. Students who start with a destination and a program have a much clearer view of which awards are actually relevant — and which ones consultants recycle for every student regardless of fit.",
   },
   {
-    title: "Check whether the scholarship is real, current, and open to Indian nationals",
-    body: "Some awards have closed cycles, income conditions, or nationality restrictions that rule out most Indian applicants. Confirming this from the official program website — not from a consultant brochure — takes 10 minutes and saves months of misplaced effort.",
+    title: "We confirm whether the scholarship is real, current, and open to Indian nationals",
+    body: "Some awards have closed cycles, income conditions, or nationality restrictions that rule out most Indian applicants. We confirm this from the official programme source — not from agent materials — before a scholarship is presented to a family as a viable option.",
   },
   {
     title: "Work out your actual annual cost, not just the tuition number",
@@ -571,7 +571,7 @@ export default function ScholarshipsForIndianStudentsToStudyAbroadPage() {
               Scholarships Indian students actually use
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground">
-              Well-established programs with real funding and a track record. Each has genuine eligibility conditions — verify from the official source before applying.
+              Well-established programs with real funding and a track record. Each has genuine eligibility conditions — we confirm these from official sources before presenting any scholarship as an option.
             </p>
           </div>
 
@@ -615,7 +615,7 @@ export default function ScholarshipsForIndianStudentsToStudyAbroadPage() {
           </div>
 
           <p className="mt-5 text-xs leading-6 text-muted-foreground">
-            Scholarship cycles, eligibility conditions, and award values change. Verify from official program sources before applying.
+            Scholarship cycles, eligibility conditions, and award values change each year. We track these from official programme sources.
           </p>
         </div>
       </section>
@@ -687,15 +687,15 @@ export default function ScholarshipsForIndianStudentsToStudyAbroadPage() {
               {/* Quick checklist */}
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <p className="text-sm font-semibold text-heading">
-                  Ask these questions before shortlisting
+                  What we confirm before shortlisting
                 </p>
                 <div className="mt-4 space-y-3">
                   {[
-                    "Is this scholarship running this cycle?",
+                    "Is this scholarship running in the current cycle?",
                     "Does it cover tuition only, or living costs too?",
-                    "What will I still pay per year after the award?",
-                    "Do I meet the academic profile it selects for?",
-                    "Is the university worth it without the scholarship?",
+                    "What is the net annual cost after the award?",
+                    "Does the student's academic profile meet the selection criteria?",
+                    "Is the university the right fit independently of the scholarship?",
                   ].map((item) => (
                     <div key={item} className="flex gap-2.5">
                       <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
@@ -718,7 +718,7 @@ export default function ScholarshipsForIndianStudentsToStudyAbroadPage() {
             5-Step Planning Guide
           </p>
           <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-heading">
-            What to do before you apply for any scholarship abroad
+            How we evaluate every scholarship for Indian students abroad
           </h2>
 
           <div className="relative mt-12">

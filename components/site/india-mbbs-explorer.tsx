@@ -232,7 +232,7 @@ export function IndiaMbbsExplorer({
               Browse MBBS colleges in India
             </h1>
             <p className="mx-auto max-w-2xl text-sm leading-6 text-white/60 md:text-base md:leading-7">
-              Explore NMC-listed MBBS colleges by state, management type,
+              Explore MBBS colleges in India by state, management type,
               seats, and college name.
             </p>
           </div>
