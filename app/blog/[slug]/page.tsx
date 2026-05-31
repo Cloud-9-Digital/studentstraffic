@@ -18,6 +18,7 @@ import {
   contentAuthorName,
   contentAuthorSlug,
 } from "@/lib/content-governance";
+import { getAuthor, isValidAuthorSlug } from "@/lib/authors";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 const PLACEHOLDER_BLOG_SLUG = "__blog-fallback__";
@@ -103,7 +104,13 @@ export async function generateStaticParams() {
   return ensureNonEmptyStaticParams([], { slug: PLACEHOLDER_BLOG_SLUG });
 }
 
-const authorPath = `/authors/${contentAuthorSlug}`;
+function resolvePostAuthor(authorSlug: string | null | undefined) {
+  if (authorSlug && isValidAuthorSlug(authorSlug)) {
+    const a = getAuthor(authorSlug);
+    return { name: a.name, path: `/author/${a.slug}` };
+  }
+  return { name: contentAuthorName, path: `/author/${contentAuthorSlug}` };
+}
 
 export async function generateMetadata({
   params,
@@ -117,6 +124,7 @@ export async function generateMetadata({
 
   const title = post.metaTitle || post.title;
   const description = post.metaDescription || post.excerpt || undefined;
+  const author = resolvePostAuthor(post.authorSlug);
 
   const canonicalUrl = absoluteUrl(`/blog/${slug}`);
   const ogImage = post.coverUrl ?? getOgImageUrl("/");
@@ -125,7 +133,7 @@ export async function generateMetadata({
   return {
     title: `${title} | Students Traffic`,
     description,
-    authors: [{ name: contentAuthorName, url: absoluteUrl(authorPath) }],
+    authors: [{ name: author.name, url: absoluteUrl(author.path) }],
     alternates: { canonical: canonicalUrl },
     openGraph: {
       title,
@@ -137,7 +145,7 @@ export async function generateMetadata({
       publishedTime: post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined,
       modifiedTime: post.updatedAt ? new Date(post.updatedAt).toISOString() : undefined,
       section: post.category ?? "MBBS Abroad",
-      authors: [contentAuthorName],
+      authors: [author.name],
       images: coverImages,
     },
     twitter: {
@@ -181,6 +189,7 @@ export default async function BlogPostPage({
 
   const rt = readingTime(post.content);
   const faqs = extractFaqs(post.content);
+  const author = resolvePostAuthor(post.authorSlug);
   const [related, { prev, next }, linkRules] = await Promise.all([
     getRelatedPosts(post.slug, post.category),
     getPrevNext(post.slug, post.publishedAt),
@@ -249,8 +258,8 @@ export default async function BlogPostPage({
                   {Math.ceil(rt.minutes)} min read
                 </span>
                 <span>·</span>
-                <Link href={authorPath} className="hover:text-white/70 transition-colors">
-                  By {contentAuthorName}
+                <Link href={author.path} className="hover:text-white/70 transition-colors">
+                  By {author.name}
                 </Link>
               </div>
             </div>
@@ -454,8 +463,8 @@ export default async function BlogPostPage({
                   articleSection: post.category ?? "MBBS Abroad",
                   author: {
                     "@type": "Person",
-                    name: contentAuthorName,
-                    url: absoluteUrl(authorPath),
+                    name: author.name,
+                    url: absoluteUrl(author.path),
                   },
                   publisher: { "@type": "Organization", name: "Students Traffic", url: absoluteUrl("/") },
                   mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(`/blog/${post.slug}`) },

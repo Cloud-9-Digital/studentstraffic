@@ -707,6 +707,22 @@ export const peerCallSessions = pgTable(
     index("peer_call_sessions_caller_user_idx").on(table.callerUserId),
     index("peer_call_sessions_status_idx").on(table.status),
     index("peer_call_sessions_created_at_idx").on(table.createdAt),
+    index("peer_call_sessions_peer_status_expires_idx").on(
+      table.peerUserId,
+      table.status,
+      table.expiresAt
+    ),
+    index("peer_call_sessions_caller_status_expires_idx").on(
+      table.callerUserId,
+      table.status,
+      table.expiresAt
+    ),
+    index("peer_call_sessions_peer_caller_status_expires_idx").on(
+      table.peerId,
+      table.callerUserId,
+      table.status,
+      table.expiresAt
+    ),
     uniqueIndex("peer_call_sessions_channel_idx").on(table.channelName),
   ]
 );
@@ -729,6 +745,69 @@ export const peerCallBookings = pgTable(
     index("peer_call_bookings_student_idx").on(table.studentUserId),
     index("peer_call_bookings_peer_idx").on(table.peerId),
     uniqueIndex("peer_call_bookings_unique_idx").on(table.studentUserId, table.peerId),
+  ]
+);
+
+export const guideConversations = pgTable(
+  "guide_conversations",
+  {
+    id: serial("id").primaryKey(),
+    studentUserId: varchar("student_user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    peerId: integer("peer_id")
+      .notNull()
+      .references(() => studentPeers.id, { onDelete: "cascade" }),
+    peerUserId: varchar("peer_user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    lastMessageText: text("last_message_text"),
+    lastMessageAt: timestamp("last_message_at", { withTimezone: true }),
+    studentLastReadAt: timestamp("student_last_read_at", { withTimezone: true }),
+    peerLastReadAt: timestamp("peer_last_read_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("guide_conversations_student_peer_unique_idx").on(
+      table.studentUserId,
+      table.peerId
+    ),
+    index("guide_conversations_student_last_message_idx").on(
+      table.studentUserId,
+      table.lastMessageAt
+    ),
+    index("guide_conversations_peer_last_message_idx").on(
+      table.peerUserId,
+      table.lastMessageAt
+    ),
+  ]
+);
+
+export const guideMessages = pgTable(
+  "guide_messages",
+  {
+    id: serial("id").primaryKey(),
+    conversationId: integer("conversation_id")
+      .notNull()
+      .references(() => guideConversations.id, { onDelete: "cascade" }),
+    senderUserId: varchar("sender_user_id", { length: 255 })
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    messageType: text("message_type")
+      .$type<"text" | "system">()
+      .notNull()
+      .default("text"),
+    body: text("body").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+    editedAt: timestamp("edited_at", { withTimezone: true }),
+  },
+  (table) => [
+    index("guide_messages_conversation_created_idx").on(
+      table.conversationId,
+      table.createdAt
+    ),
+    index("guide_messages_sender_idx").on(table.senderUserId),
   ]
 );
 
@@ -861,6 +940,7 @@ export const blogPosts = pgTable(
     category: text("category"),
     metaTitle: text("meta_title"),
     metaDescription: text("meta_description"),
+    authorSlug: text("author_slug"),
     status: text("status").$type<"draft" | "published">().notNull().default("draft"),
     readingTimeMinutes: integer("reading_time_minutes"),
     publishedAt: timestamp("published_at", { withTimezone: true }),
