@@ -17,7 +17,7 @@ const publishedDate = "2026-05-23";
 const keyTakeaways = [
   "Total cost comparison: Vietnam MBBS costs ₹28-40 lakhs for 6 years (tuition $3,500-5,500/year + living $2,000-3,000/year) compared to Russia ₹35-50 lakhs and Indian private colleges ₹60 lakhs-₹2.5 crores. Cost savings of ₹20-210 lakhs make Vietnam financially attractive for budget-conscious families.",
   "Climate and proximity advantages: Vietnam offers year-round warm climate (25-35°C), short flight time (4-6 hours vs Russia's 8-10 hours), and easier family visits. No extreme winter adaptation (-20°C to -35°C in Russia) reduces settling-in stress significantly.",
-  "University quality variation requires careful selection: Vietnam's 15+ medical universities range from established public institutions (Hanoi Medical University, Hue University) to newer private colleges. Success depends on choosing specific universities with verified clinical training and NMC recognition, not selecting based on country reputation alone.",
+  "University quality variation requires careful selection: Vietnam's 15+ medical universities range from established public institutions (Hanoi Medical University, Hue University) to newer private colleges. Success depends on choosing specific universities with verified clinical training and NMC guideline compliance, not selecting based on country reputation alone.",
 ];
 
 const costBenefitAnalysis = {
@@ -47,7 +47,7 @@ const costBenefitAnalysis = {
 const vietnamGoodWhen = [
   {
     scenario: "Budget-conscious families",
-    details: "Family budget is ₹30-45 lakhs for full MBBS (including FMGE coaching). Vietnam offers quality medical education at 30-40% lower cost than Russia while maintaining NMC recognition.",
+    details: "Family budget is ₹28-40 lakhs for full MBBS tuition and living. Vietnam offers quality medical education at 30-40% lower cost than Russia while maintaining NMC guideline compliance. Students Traffic provides free FMGE/NExT coaching for students who join through us.",
     metrics: "Total 6-year cost: ₹28-40 lakhs vs Russia ₹35-50 lakhs",
   },
   {
@@ -133,7 +133,7 @@ const faqItems = [
   {
     question: "Is MBBS in Vietnam good for Indian students in 2026?",
     answer:
-      "Yes, Vietnam can be an excellent choice for Indian students prioritizing lower costs (₹28-40 lakhs vs ₹35-50 lakhs in Russia), warmer climate (25-35°C year-round), and shorter travel distance (4-6 hours). However, success requires careful university selection from Vietnam's varied medical education landscape (15+ institutions ranging from 70-year-old public universities to 6-year-old private colleges). Choose specific universities with verified clinical training and NMC recognition rather than selecting based solely on country reputation.",
+      "Yes, Vietnam can be an excellent choice for Indian students prioritizing lower costs (₹28-40 lakhs vs ₹35-50 lakhs in Russia), warmer climate (25-35°C year-round), and shorter travel distance (4-6 hours). However, success requires careful university selection from Vietnam's varied medical education landscape (15+ institutions ranging from 70-year-old public universities to 6-year-old private colleges). Choose specific universities with verified clinical training and NMC guideline compliance rather than selecting based solely on country reputation.",
   },
   {
     question: "Is MBBS in Vietnam better than Russia for Indian students?",
@@ -143,7 +143,7 @@ const faqItems = [
   {
     question: "Is MBBS in Vietnam better than private MBBS colleges in India?",
     answer:
-      "For families with budget constraints, yes. Vietnam offers 50-90% cost savings (₹28-40 lakhs vs ₹60 lakhs-₹2.5 crores for Indian private colleges) with WHO/NMC-recognized degrees and international exposure. However, India advantages include: no language barrier, higher FMGE pass rates (65-75% vs 15-25% for foreign graduates), no adaptation stress, and familiar medical practice patterns. Compare total value: tuition savings vs FMGE coaching costs (₹1.5-2.5 lakhs), lower pass rates, and 1-2 year additional timeline for India licensing.",
+      "For families with budget constraints, yes. Vietnam offers 50-90% cost savings (₹28-40 lakhs vs ₹60 lakhs-₹2.5 crores for Indian private colleges) with WDOMS-listed degrees meeting NMC guidelines and international exposure. Students Traffic provides free FMGE/NExT coaching for students who join through us, removing the typical ₹1.5-2.5 lakh coaching cost from the comparison. However, India advantages include: no language barrier, higher FMGE pass rates (65-75% vs 15-25% for foreign graduates), no adaptation stress, and familiar medical practice patterns.",
   },
   {
     question: "What makes Vietnam a poor choice despite lower fees?",
@@ -153,7 +153,7 @@ const faqItems = [
   {
     question: "How do I know if Vietnam is right for my student profile?",
     answer:
-      "Vietnam fits best if: (1) total budget is ₹30-45 lakhs including coaching, (2) student has qualifying NEET (50th/40th percentile) and 50%+ PCB marks, (3) climate comfort is priority (warm weather year-round), (4) family wants frequent visit accessibility (4-6 hour flights), (5) student is willing to learn conversational Vietnamese (200-300 hours by Year 4), and (6) family can research universities individually rather than relying on country reputation. If seeking longest established track record or unwilling to learn local language, consider Russia or Caribbean alternatives.",
+      "Vietnam fits best if: (1) total budget is ₹28-40 lakhs for tuition and living (Students Traffic provides free FMGE/NExT coaching), (2) student has qualifying NEET (50th/40th percentile) and 50%+ PCB marks, (3) climate comfort is priority (warm weather year-round), (4) family wants frequent visit accessibility (4-6 hour flights), (5) student is willing to learn conversational Vietnamese (200-300 hours by Year 4), and (6) family can research universities individually rather than relying on country reputation. If seeking longest established track record or unwilling to learn local language, consider Russia or Caribbean alternatives.",
   },
 ];
 

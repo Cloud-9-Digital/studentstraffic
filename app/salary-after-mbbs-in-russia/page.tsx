@@ -207,7 +207,7 @@ const faqItems = [
   {
     question: "How does Students Traffic help with career planning after Russia MBBS?",
     answer:
-      "Students Traffic provides realistic career pathway counselling based on tracked outcomes from 1,200+ Russia MBBS graduates in our network. We help families understand: (1) Actual FMGE pass rates and preparation timelines for India-return; (2) Gulf licensing requirements and realistic salary negotiations; (3) ROI modeling for different career pathways based on student's financial goals; (4) Connection to Russia graduates currently practicing in India/Gulf/Russia for first-hand career insights; (5) FMGE coaching partnerships and clinical posting arrangements for India-return students. Our focus is honest expectation-setting rather than over-promising unrealistic salary outcomes.",
+      "Students Traffic provides realistic career pathway counselling based on tracked outcomes from 1,200+ Russia MBBS graduates in our network. We help families understand: (1) Actual FMGE pass rates and preparation timelines for India-return; (2) Gulf licensing requirements and realistic salary negotiations; (3) ROI modeling for different career pathways based on student's financial goals; (4) Connection to Russia graduates currently practicing in India/Gulf/Russia for first-hand career insights; (5) Free FMGE/NExT coaching for students who join through us, removing the typical ₹1.5-2.5 lakh post-graduation coaching cost. Our focus is honest expectation-setting rather than over-promising unrealistic salary outcomes.",
   },
 ];
 

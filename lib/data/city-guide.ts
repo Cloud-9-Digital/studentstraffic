@@ -23,7 +23,7 @@ const cityGuideMap: Record<string, CityGuide> = {
     summary:
       "Tbilisi is the capital of Georgia and the single largest hub for Indian MBBS students in the South Caucasus. With over 30 private medical universities operating English-medium programs, it offers more choice per square kilometre than almost any comparable city. Students live in a European-style capital with a walkable old town, reliable public transport, and a growing international community.",
     whyStudentsChoose:
-      "The combination of relatively low tuition (many programs start around USD 4,000–6,000 per year at private universities), a fully English-medium curriculum, NMC-listed institutions, and straightforward student visa access makes Tbilisi a practical first choice. Unlike Central Asian options, Georgia is a stable liberal democracy with open movement rules for Indian passport holders, and Tbilisi's infrastructure is noticeably more developed than most comparable fee-range cities.",
+      "The combination of relatively low tuition (many programs start around USD 4,000–6,000 per year at private universities), a fully English-medium curriculum, institutions meeting NMC guidelines, and straightforward student visa access makes Tbilisi a practical first choice. Unlike Central Asian options, Georgia is a stable liberal democracy with open movement rules for Indian passport holders, and Tbilisi's infrastructure is noticeably more developed than most comparable fee-range cities.",
     indianCommunity:
       "Tbilisi has one of the largest concentrations of Indian medical students outside India itself. Purpose-built Indian messes, Hindi-speaking grocery stores near university zones, and active student associations exist across the city. WhatsApp groups for each university batch are well established, and peer mentoring from senior students is the norm. Students report feeling socially supported from day one.",
     monthlyCostRange: "$250–$450/month",
@@ -70,13 +70,13 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         label: "Estimated 6-year total",
         amount: "$38,000–$65,000",
-        notes: "All-in estimate including tuition, accommodation, food, and personal costs. Does not include FMGE/NExT coaching fees.",
+        notes: "All-in estimate including tuition, accommodation, food, and personal costs. Students Traffic provides free FMGE/NExT coaching for students who join through us.",
       },
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Check your target university on the live NMC-approved list at nmc.org.in — not the brochure or agent printout, which can be outdated. NMC recognition is granted per institution and is updated periodically.",
+        title: "Verify NMC guideline compliance",
+        detail: "NMC compliance is assessed per institution against published FMGL guidelines — not by country or city. Verify through the NMC Eligibility Certificate process at nmc.org.in, not through a brochure or agent printout.",
       },
       {
         title: "Submit your application",
@@ -105,7 +105,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         question: "Are Tbilisi MBBS degrees recognised by NMC?",
         answer:
-          "NMC recognition is granted to individual institutions, not to the city or country as a whole. A number of Tbilisi universities hold NMC recognition, but you must verify the current status of the specific institution you are applying to on the NMC website directly, since the recognised institution list is updated periodically.",
+          "NMC compliance is assessed per institution against published FMGL guidelines, not by city or country. A number of Tbilisi universities meet NMC guidelines, but compliance is institution-specific — verify through the NMC Eligibility Certificate process at nmc.org.in before applying.",
       },
       {
         question: "How much does it cost to live in Tbilisi as a medical student?",
@@ -137,7 +137,7 @@ const cityGuideMap: Record<string, CityGuide> = {
     summary:
       "Bishkek is the capital of Kyrgyzstan and the dominant hub for Indian medical students in Central Asia, home to more than 20 medical universities. It is a post-Soviet city with tree-lined boulevards, affordable living costs, and a large established Indian student population that has grown steadily over the past decade.",
     whyStudentsChoose:
-      "Bishkek offers some of the most affordable MBBS programs available to Indian students with NMC-listed options, with annual tuition at many institutions falling between USD 2,500 and USD 5,000. Multiple FMGE and NExT coaching academies operate in the city, established specifically for Indian students preparing to return to India. The low cost of living and well-worn support infrastructure make it a pragmatic choice for middle-income families.",
+      "Bishkek offers some of the most affordable MBBS programs available to Indian students, with institutions meeting NMC guidelines and annual tuition at many falling between USD 2,500 and USD 5,000. Multiple FMGE and NExT coaching academies operate in the city, established specifically for Indian students preparing to return to India. The low cost of living and well-worn support infrastructure make it a pragmatic choice for middle-income families.",
     indianCommunity:
       "Bishkek has one of the largest and most established Indian student communities in the world outside India. Dedicated Indian messes, Indian grocery stores, Hindi film screenings, and cultural associations are embedded across the city's student zones. Senior students actively guide juniors through university enrollment, accommodation, and local administration. The community is large enough that Indian students rarely feel isolated.",
     monthlyCostRange: "$200–$350/month",
@@ -159,7 +159,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         label: "Annual tuition",
         amount: "$2,500–$5,000",
-        notes: "One of the lowest tuition ranges for NMC-listed programs globally. Payable in USD.",
+        notes: "One of the lowest tuition ranges globally for programs meeting NMC guidelines. Payable in USD.",
       },
       {
         label: "University hostel",
@@ -184,13 +184,13 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         label: "Estimated 6-year total",
         amount: "$25,000–$48,000",
-        notes: "All-in estimate including tuition, accommodation, food, and personal costs. FMGE/NExT coaching fees are additional.",
+        notes: "All-in estimate including tuition, accommodation, food, and personal costs. Students Traffic provides free FMGE/NExT coaching for students who join through us.",
       },
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Confirm your target university appears on the current NMC-approved list at nmc.org.in. This is non-negotiable — an unlisted university means you cannot sit NExT and practice in India. Do not rely on agent brochures.",
+        title: "Verify NMC guideline compliance",
+        detail: "Confirm your target university meets NMC's FMGL guidelines — this is non-negotiable for sitting NExT and practising in India. Verify through the NMC Eligibility Certificate process at nmc.org.in, not through agent brochures.",
       },
       {
         title: "Apply to the university",
@@ -219,7 +219,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         question: "Are Bishkek medical universities NMC recognised?",
         answer:
-          "Several Bishkek universities appear in the NMC-approved directory, but the list changes. Always check the current NMC website for your specific target university before paying any fees. NMC recognition is a prerequisite for sitting the NExT exam and practising in India after returning.",
+          "Several Bishkek universities meet NMC's FMGL guidelines, but compliance is institution-specific and must be verified — not assumed. NMC compliance is a prerequisite for sitting the NExT exam and practising in India. Verify through the Eligibility Certificate process at nmc.org.in before paying any fees.",
       },
       {
         question: "How cold does it get in Bishkek in winter?",
@@ -246,7 +246,7 @@ const cityGuideMap: Record<string, CityGuide> = {
     summary:
       "Tashkent is the capital of Uzbekistan and its most developed city, with broad modernised avenues, a functional metro system, and the highest concentration of medical universities in the country. Over the past five years, Uzbekistan has emerged as a growing destination for Indian MBBS students, and Tashkent leads that growth with over 14 published medical programs.",
     whyStudentsChoose:
-      "Tashkent's universities offer competitive annual tuition in the USD 3,000–6,000 range, and the city's infrastructure is more developed than other Uzbek study destinations. NMC-listed institutions are present, and the Uzbek government has actively sought to attract international medical students. Improving airline connectivity from major Indian cities makes logistics increasingly practical.",
+      "Tashkent's universities offer competitive annual tuition in the USD 3,000–6,000 range, and the city's infrastructure is more developed than other Uzbek study destinations. Institutions meeting NMC guidelines are present, and the Uzbek government has actively sought to attract international medical students. Improving airline connectivity from major Indian cities makes logistics increasingly practical.",
     indianCommunity:
       "The Indian student community in Tashkent is growing but less established than Bishkek or Tbilisi. Indian messes and community support exist, particularly at universities with larger Indian cohorts, but the city has fewer dedicated Indian student services than the two larger hubs.",
     monthlyCostRange: "$250–$400/month",
@@ -293,13 +293,13 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         label: "Estimated 6-year total",
         amount: "$29,000–$57,000",
-        notes: "All-in estimate. Uzbekistan remains one of the more affordable destinations with comparable NMC-listed options.",
+        notes: "All-in estimate. Uzbekistan remains one of the more affordable destinations with comparable options meeting NMC guidelines.",
       },
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Uzbekistan has multiple NMC-listed institutions but also non-listed ones that actively recruit Indian students. Verify your specific target university on nmc.org.in before applying anywhere.",
+        title: "Verify NMC guideline compliance",
+        detail: "Uzbekistan has institutions that meet NMC guidelines but also others that actively recruit Indian students without meeting them. Verify your specific target university's compliance through the Eligibility Certificate process at nmc.org.in before applying.",
       },
       {
         title: "Submit your application",
@@ -328,7 +328,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         question: "Are Tashkent medical universities NMC approved?",
         answer:
-          "Some Tashkent universities hold NMC recognition, but this changes. Always verify the current NMC-approved list directly on the NMC India website before making any payment. An outdated brochure or agent claim is not sufficient verification.",
+          "Some Tashkent universities meet NMC's FMGL guidelines, but compliance is institution-specific. Verify through the NMC Eligibility Certificate process at nmc.org.in — an agent brochure is not sufficient verification.",
       },
       {
         question: "How is Tashkent's infrastructure compared to other Uzbek cities?",
@@ -350,7 +350,7 @@ const cityGuideMap: Record<string, CityGuide> = {
     summary:
       "Batumi is Georgia's second-largest city on the Black Sea coast in the Adjara region. Three medical universities operate English-medium programs here, attracting Indian students who want a Georgian qualification with a calmer resort-city environment rather than the bustle of Tbilisi. The city is compact, walkable, and visually distinctive with its mix of modern seafront towers and Ottoman-influenced architecture.",
     whyStudentsChoose:
-      "Batumi offers slightly lower living costs than Tbilisi and a more relaxed pace of life. The same Georgian legal framework applies — Georgian student visas, Georgian university degrees, NMC-listed institutions subject to individual verification. For students who find Tbilisi overwhelming, Batumi provides a quieter alternative within Georgia.",
+      "Batumi offers slightly lower living costs than Tbilisi and a more relaxed pace of life. The same Georgian legal framework applies — Georgian student visas, Georgian university degrees, institutions subject to individual NMC guideline compliance verification. For students who find Tbilisi overwhelming, Batumi provides a quieter alternative within Georgia.",
     indianCommunity:
       "The Indian student community in Batumi is smaller but established. Indian messes and peer support exist at the larger universities. Those who prefer a tighter-knit community often appreciate this, while students wanting a large social network may find Tbilisi a better fit.",
     monthlyCostRange: "$220–$380/month",
@@ -402,8 +402,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Batumi has fewer universities than Tbilisi — ensure your specific target institution appears on the current NMC-approved list at nmc.org.in before proceeding.",
+        title: "Verify NMC guideline compliance",
+        detail: "Batumi has fewer universities than Tbilisi — verify your specific target institution meets NMC's FMGL guidelines through the Eligibility Certificate process at nmc.org.in before proceeding.",
       },
       {
         title: "Submit your application",
@@ -423,11 +423,11 @@ const cityGuideMap: Record<string, CityGuide> = {
       },
       {
         title: "Plan for FMGE coaching",
-        detail: "Batumi has limited local FMGE/NExT coaching. Plan to join an online program from Year 3, or budget for periodic travel to Tbilisi for coaching access during holiday periods.",
+        detail: "Batumi has limited local FMGE/NExT coaching. Students Traffic provides free FMGE/NExT coaching for students who join through us. Otherwise, plan to join an online program from Year 3 or travel to Tbilisi for coaching access during holiday periods.",
       },
     ],
     clinicalTraining:
-      "Clinical rotations in Batumi take place at Adjara regional hospitals from Year 4. Patient language is Georgian throughout. Students should reach functional medical Georgian by Year 3 — universities provide Georgian language classes in Years 1 and 2. FMGE and NExT coaching infrastructure in Batumi is limited compared to Tbilisi; students relying on local coaching should factor in the additional cost of travel or online programs. The smaller hospital environment means a different case mix than in Tbilisi, with less specialist coverage.",
+      "Clinical rotations in Batumi take place at Adjara regional hospitals from Year 4. Patient language is Georgian throughout. Students should reach functional medical Georgian by Year 3 — universities provide Georgian language classes in Years 1 and 2. FMGE and NExT coaching infrastructure in Batumi is limited compared to Tbilisi; Students Traffic provides free FMGE/NExT coaching for students who join through us, regardless of city. The smaller hospital environment means a different case mix than in Tbilisi, with less specialist coverage.",
     faq: [
       {
         question: "Is Batumi a good alternative to Tbilisi for MBBS?",
@@ -500,8 +500,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Check the specific Osh university on nmc.org.in. Not all universities in Osh are NMC-listed.",
+        title: "Verify NMC guideline compliance",
+        detail: "Not all universities in Osh meet NMC's FMGL guidelines. Verify your specific target institution through the Eligibility Certificate process at nmc.org.in before applying.",
       },
       {
         title: "Apply to the university",
@@ -521,7 +521,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       },
       {
         title: "Plan for coaching access",
-        detail: "FMGE/NExT coaching in Osh is limited. Plan online coaching from Year 3, or budget for travel to Bishkek during holidays for in-person sessions.",
+        detail: "FMGE/NExT coaching in Osh is limited. Students Traffic provides free FMGE/NExT coaching for students who join through us. Otherwise, plan online coaching from Year 3.",
       },
     ],
     clinicalTraining:
@@ -593,8 +593,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Check each Bukhara university on nmc.org.in individually. Do not assume recognition based on the country — it is institution-specific.",
+        title: "Verify NMC guideline compliance",
+        detail: "NMC compliance is institution-specific — do not assume it based on country. Verify each Bukhara university through the Eligibility Certificate process at nmc.org.in individually.",
       },
       {
         title: "Apply to the university",
@@ -686,8 +686,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Vietnam has NMC-listed institutions but not all universities qualify. Verify your specific target institution on nmc.org.in before applying.",
+        title: "Verify NMC guideline compliance",
+        detail: "Not all Vietnam universities meet NMC's FMGL guidelines. Verify your specific target institution through the Eligibility Certificate process at nmc.org.in before applying.",
       },
       {
         title: "Apply to the university",
@@ -716,7 +716,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         question: "Are Vietnamese MBBS degrees recognised by NMC?",
         answer:
-          "Some Vietnamese universities are listed in the NMC-approved institution directory. Students must verify the current NMC status of their specific target institution before enrolling, and should research the NExT exam pathway for Vietnam graduates independently.",
+          "Some Vietnamese universities meet NMC's FMGL guidelines. NMC compliance is institution-specific and must be verified — not assumed. Verify through the NMC Eligibility Certificate process at nmc.org.in before enrolling.",
       },
     ],
   },
@@ -778,8 +778,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Check your specific target institution on nmc.org.in. Hanoi has multiple universities and not all are NMC-listed.",
+        title: "Verify NMC guideline compliance",
+        detail: "Hanoi has multiple universities and not all meet NMC's FMGL guidelines. Verify your specific target institution through the Eligibility Certificate process at nmc.org.in.",
       },
       {
         title: "Apply to the university",
@@ -870,8 +870,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Check your specific target institution on nmc.org.in before applying.",
+        title: "Verify NMC guideline compliance",
+        detail: "Verify your specific target institution meets NMC's FMGL guidelines through the Eligibility Certificate process at nmc.org.in before applying.",
       },
       {
         title: "Apply to the university",
@@ -900,7 +900,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         question: "Is Ho Chi Minh City or Hanoi better for MBBS in Vietnam?",
         answer:
-          "Hanoi has more university options. Ho Chi Minh City has a warmer climate, stronger English proficiency in everyday life, and better Indian community infrastructure. The right choice depends on your specific university target, since NMC recognition and program quality vary by institution rather than by city.",
+          "Hanoi has more university options. Ho Chi Minh City has a warmer climate, stronger English proficiency in everyday life, and better Indian community infrastructure. The right choice depends on your specific university target, since NMC guideline compliance and program quality vary by institution rather than by city.",
       },
     ],
   },
@@ -963,8 +963,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition AND transfer feasibility",
-        detail: "NMC recognition is only one consideration. Before applying, independently verify that tuition transfer from India to Russia is currently feasible via your bank. This is the most critical step in 2025–2026 and the one most students underestimate.",
+        title: "Verify NMC guideline compliance AND transfer feasibility",
+        detail: "NMC compliance is only one consideration. Before applying, independently verify that tuition transfer from India to Russia is currently feasible via your bank. This is the most critical step in 2025–2026 and the one most students underestimate.",
       },
       {
         title: "Apply to the university",
@@ -998,7 +998,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         question: "Is a Moscow MBBS degree recognised by NMC?",
         answer:
-          "Several Moscow universities appear on the NMC-approved list. Individual university recognition status must be verified on the NMC website, as it changes. A Moscow degree historically transfers well to the Indian licensing pathway for students who pass NExT.",
+          "Several Moscow universities meet NMC's FMGL guidelines. Compliance is institution-specific — verify through the Eligibility Certificate process at nmc.org.in. A Moscow degree historically transfers well to the Indian licensing pathway for students who pass NExT.",
       },
     ],
   },
@@ -1061,8 +1061,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition AND transfer feasibility",
-        detail: "Confirm the university is NMC-listed and that tuition transfer from India is currently possible. Both must be true before you proceed.",
+        title: "Verify NMC guideline compliance AND transfer feasibility",
+        detail: "Confirm the university meets NMC's FMGL guidelines and that tuition transfer from India is currently possible. Both must be true before you proceed.",
       },
       {
         title: "Apply to the university",
@@ -1138,7 +1138,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       {
         label: "Personal expenses",
         amount: "$60–$110/month",
-        notes: "Small city means lower transport costs. Budget for occasional Tbilisi trips (for coaching or consular needs).",
+        notes: "Small city means lower transport costs. Budget for occasional Tbilisi trips for consular needs. Students Traffic provides free FMGE/NExT coaching remotely for students who join through us.",
       },
       {
         label: "Visa & one-time arrival",
@@ -1153,8 +1153,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Check your specific Kutaisi university on nmc.org.in. Kutaisi has fewer institutions than Tbilisi.",
+        title: "Verify NMC guideline compliance",
+        detail: "Kutaisi has fewer institutions than Tbilisi. Verify your specific target university meets NMC's FMGL guidelines through the Eligibility Certificate process at nmc.org.in.",
       },
       {
         title: "Apply to the university",
@@ -1241,8 +1241,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Check your specific Samarkand university on nmc.org.in.",
+        title: "Verify NMC guideline compliance",
+        detail: "Verify your specific Samarkand university meets NMC's FMGL guidelines through the Eligibility Certificate process at nmc.org.in.",
       },
       {
         title: "Apply and receive invitation letter",
@@ -1329,8 +1329,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition AND transfer feasibility",
-        detail: "As with all Russian universities: confirm NMC listing AND confirm you can transfer money from India before committing.",
+        title: "Verify NMC guideline compliance AND transfer feasibility",
+        detail: "As with all Russian universities: confirm NMC guideline compliance AND confirm you can transfer money from India before committing.",
       },
       {
         title: "Apply and receive invitation letter",
@@ -1416,8 +1416,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Critical — not all Andijan universities are NMC-listed. Check nmc.org.in for each institution.",
+        title: "Verify NMC guideline compliance",
+        detail: "Critical — not all Andijan universities meet NMC's FMGL guidelines. Verify each institution through the Eligibility Certificate process at nmc.org.in.",
       },
       {
         title: "Apply and receive invitation letter",
@@ -1433,7 +1433,7 @@ const cityGuideMap: Record<string, CityGuide> = {
       },
       {
         title: "Plan for online coaching from Year 3",
-        detail: "No local NExT/FMGE coaching infrastructure. Online programs are essential.",
+        detail: "No local NExT/FMGE coaching infrastructure. Students Traffic provides free FMGE/NExT coaching for students who join through us; otherwise, online programs are essential.",
       },
     ],
     clinicalTraining:
@@ -1454,7 +1454,7 @@ const cityGuideMap: Record<string, CityGuide> = {
     summary:
       "Fergana city is the administrative centre of Fergana Region in eastern Uzbekistan's Fergana Valley. Three medical universities operate here. It is a planned Soviet-era city with slightly more urban character than Andijan while remaining much smaller and cheaper than Tashkent.",
     whyStudentsChoose:
-      "Low living costs within the Uzbek system and availability of NMC-listed institutions (subject to verification) at lower tuition than capital-city alternatives.",
+      "Low living costs within the Uzbek system and availability of institutions meeting NMC guidelines at lower tuition than capital-city alternatives.",
     indianCommunity:
       "Small. Basic peer support through individual university cohorts.",
     monthlyCostRange: "$180–$310/month",
@@ -1501,8 +1501,8 @@ const cityGuideMap: Record<string, CityGuide> = {
     ],
     admissionSteps: [
       {
-        title: "Verify NMC recognition",
-        detail: "Check each Fergana university individually on nmc.org.in.",
+        title: "Verify NMC guideline compliance",
+        detail: "Verify each Fergana university's NMC guideline compliance individually through the Eligibility Certificate process at nmc.org.in.",
       },
       {
         title: "Apply and receive invitation letter",

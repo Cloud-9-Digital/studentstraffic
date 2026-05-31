@@ -1,5 +1,4 @@
 import {
-  BookOpen,
   CalendarDays,
   CheckCircle2,
   CircleDollarSign,
@@ -7,6 +6,8 @@ import {
   GraduationCap,
   ShieldCheck,
 } from "lucide-react";
+
+import { CareerPathways } from "@/components/site/career-pathways";
 
 import type { CountryContent } from "@/lib/data/country-content";
 import type {
@@ -18,24 +19,28 @@ import {
   getRussiaOfficialPageAudit,
   getRussiaOfficialPageAuditSummary,
 } from "@/lib/data/russia-official-page-audit";
-import { formatProgramMedium } from "@/lib/utils";
 
 import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
 
 import { InfoCard, SectionLabel } from "./shared";
 
-function NumberedList({ items }: { items: string[] }) {
+function AdmissionSteps({ items }: { items: string[] }) {
   return (
-    <div className="space-y-3">
+    <ol className="space-y-0">
       {items.map((item, index) => (
-        <div key={item} className="flex gap-4">
-          <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">
-            {index + 1}
-          </span>
-          <p className="text-sm leading-7 text-muted-foreground">{item}</p>
-        </div>
+        <li key={index} className="relative flex gap-4 pb-6 last:pb-0">
+          <div className="flex flex-col items-center">
+            <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-primary text-[11px] font-bold text-white">
+              {index + 1}
+            </span>
+            {index < items.length - 1 && (
+              <div className="mt-1 w-px flex-1 bg-border" />
+            )}
+          </div>
+          <p className="pb-1 pt-0.5 text-sm leading-7 text-muted-foreground">{item}</p>
+        </li>
       ))}
-    </div>
+    </ol>
   );
 }
 
@@ -78,60 +83,17 @@ export function UniversityAdmissionsSection({
     : null;
   const admissionsIntro = primaryProgram
     ? universityAdmissions?.overview ??
-      `Admissions to ${primaryProgram.course.shortName} at ${university.name} usually follow the ${university.type.toLowerCase()} university process used for international medical applicants in ${primaryProgram.country.name}. Always confirm the current cycle, seat availability, and document format directly with the university before applying.`
-    : `Admissions to ${university.name} should be confirmed directly with the university's international office for the current academic cycle.`;
-  const formattedMedium = primaryProgram
-    ? formatProgramMedium(primaryProgram.offering.medium, university.countrySlug)
-    : null;
+      `Admissions to ${primaryProgram.course.shortName} at ${university.name} follow the ${university.type.toLowerCase()} university process for international medical applicants in ${primaryProgram.country.name}. We confirm the current cycle, seat availability, and document format as part of the admissions process.`
+    : `We confirm current intake availability and document requirements directly with ${university.name}'s international office before presenting an offer to families.`;
+  const countryName = primaryProgram?.country.name ?? "the study country";
 
-  const defaultSteps = primaryProgram
-    ? [
-        `Review the ${primaryProgram.course.shortName} structure, fee format, and intake timeline for ${university.name}.`,
-        `Check that your Class 12 and NEET profile align with the current eligibility rules for Indian students.`,
-        `Prepare academic, passport, and visa documents in the format requested by the university.`,
-        `Submit the application and wait for the official offer or invitation letter before making payments or travel plans.`,
-      ]
-    : [
-        `Confirm the current intake cycle and admissions route with ${university.name}.`,
-        "Prepare your academic and passport documents.",
-        "Submit the application through the official process.",
-        "Wait for the official admission confirmation before proceeding.",
-      ];
-
-  const deadlineCards = [
-    {
-      title: "Intake months",
-      body:
-        intakeMonths.length > 0
-          ? intakeMonths.join(", ")
-          : "The published intake month is not currently listed for this page.",
-    },
-    {
-      title: "When to start",
-      body:
-        intakeMonths.length > 0
-          ? `Start document preparation and application planning at least 3–6 months before the ${intakeMonths[0]} intake.`
-          : "Start document preparation and application planning early in the cycle and confirm exact timelines with the university.",
-    },
-    {
-      title: "What to verify",
-      body:
-        universityAdmissions?.deadlinesNote ??
-        "Seat availability, invitation timelines, fee notices, hostel options, and visa processing should be rechecked for the current cycle.",
-    },
-  ];
-
-  const licensingItems = [
-    wdomsEntry
-      ? `${university.name} has a mapped WDOMS entry, which helps students cross-check the institution in an official medical directory.`
-      : `Check whether ${university.name} appears in WDOMS and current recognition databases before relying on third-party claims.`,
-    formattedMedium
-      ? `The published teaching medium for the featured program is ${formattedMedium}. Students planning to practise in India should verify that the current course structure continues to align with NMC expectations.`
-      : "Verify the current teaching medium and program structure directly with the university.",
-    primaryProgram?.offering.licenseExamSupport.length
-      ? `Published support includes: ${primaryProgram.offering.licenseExamSupport.join("; ")}.`
-      : "Ask the university what support exists for FMGE, NExT, local licensing, or internship transition planning.",
-    "Before enrolment, confirm current recognition status, internship structure, medium of instruction, and eligibility to pursue licensing pathways after graduation.",
+  const defaultSteps = [
+    `We assess your NEET score, Class 12 PCB marks, budget, and preferences, then shortlist universities in ${countryName} that match your profile. Every university we present is WDOMS-listed, meets NMC guidelines, and confirmed open for foreign applicants in the current cycle.`,
+    `We prepare your complete application document set in the format required — academic records, NEET scorecard, passport copy, photographs, and medical fitness certificate. We confirm any apostille, legalisation, or translation requirements before submission.`,
+    `We submit your application through the university's official international admissions route and track the invitation or admission letter through to issue. We review the letter for accuracy before presenting it to you.`,
+    `We guide you through the NMC Eligibility Certificate application at nmc.org.in after the admission letter is received. This is mandatory before departure; NMC issues it only for universities meeting current FMGL guidelines.`,
+    `We prepare your ${countryName} student visa file and track the application through to grant. We confirm the exact document checklist for the relevant embassy before submission.`,
+    `We brief you before departure on post-arrival registration, enrollment formalities, and your first week on campus. We remain your contact through the settling-in period for any administrative follow-up.`,
   ];
 
   return (
@@ -149,64 +111,38 @@ export function UniversityAdmissionsSection({
       {/* ── Admissions overview ──────────────────────────────────────── */}
       <div id="admissions" className="scroll-mt-24 space-y-4">
         <SectionLabel>Admissions</SectionLabel>
-        <div className="section-tint rounded-2xl p-5 sm:p-6">
-          <h3 className="font-display text-xl font-semibold text-heading">
-            How admissions usually work
-          </h3>
-          <p className="mt-3 text-base leading-8 text-muted-foreground">
-            {admissionsIntro}
-          </p>
-          <div className="mt-6">
-            <NumberedList
-              items={
-                universityAdmissions?.admissionSteps ??
-                countryContent?.admissionSteps ??
-                defaultSteps
-              }
-            />
-          </div>
-        </div>
-        <InfoCard
-          icon={<FileText className="size-4 text-accent" />}
-          title={russiaOfficialAuditSummary?.title ?? "Official admissions route"}
-          body={
-            russiaOfficialAuditSummary?.body ??
-            "Use the university's own admissions or program page to confirm the current foreign-applicant route before you apply."
+        <p className="text-base leading-8 text-muted-foreground">
+          {admissionsIntro}
+        </p>
+        <AdmissionSteps
+          items={
+            universityAdmissions?.admissionSteps ??
+            countryContent?.admissionSteps ??
+            defaultSteps
           }
         />
-        <InfoCard
-          icon={<BookOpen className="size-4 text-accent" />}
-          title="Primary program"
-          body={
-            primaryProgram
-              ? `${primaryProgram.offering.title} with ${formattedMedium} delivery and ${intakeMonths.join(", ") || "current-cycle"} intake guidance.`
-              : "Program-specific admissions details should be confirmed directly with the university."
-          }
-        />
-        <InfoCard
-          icon={<ShieldCheck className="size-4 text-accent" />}
-          title="Current-cycle check"
-          body={
-            russiaOfficialAudit?.classification && russiaOfficialAudit.classification !== "ok"
-              ? "This page includes planning guidance, but the mapped admissions link needs re-verification. Confirm the active foreign-applicant route directly on the university's main site before applying."
-              : "Admission cycles, seat availability, and invitation timelines can shift. Use this page for planning, then verify the active cycle before applying."
-          }
-        />
+        {russiaOfficialAuditSummary && (
+          <InfoCard
+            icon={<FileText className="size-4 text-accent" />}
+            title={russiaOfficialAuditSummary.title}
+            body={russiaOfficialAuditSummary.body}
+          />
+        )}
       </div>
 
       {/* ── Eligibility & Documents ──────────────────────────────────── */}
       <div id="eligibility" className="scroll-mt-24 space-y-4">
         <SectionLabel>Eligibility &amp; Documents</SectionLabel>
-        <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
-          <h3 className="font-display text-xl font-semibold text-heading">
-            Eligibility for Indian students
-          </h3>
-          <p className="mt-3 text-base leading-8 text-muted-foreground">
-            {universityAdmissions?.eligibility?.intro ??
-              countryContent?.eligibility.intro ??
-              `Students considering ${university.name} should verify current PCB, NEET, age, passport, and university-specific academic requirements before applying.`}
-          </p>
-          <div className="mt-6">
+        <div className="overflow-hidden rounded-2xl border border-border bg-card divide-y divide-border">
+          <div className="p-5 sm:p-6">
+            <p className="mb-3 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+              Eligibility for Indian students
+            </p>
+            <p className="mb-5 text-sm leading-7 text-muted-foreground">
+              {universityAdmissions?.eligibility?.intro ??
+                countryContent?.eligibility.intro ??
+                `We confirm current PCB, NEET, age, passport, and university-specific academic requirements for ${university.name} before any application is submitted.`}
+            </p>
             <CheckList
               items={
                 universityAdmissions?.eligibility?.items ??
@@ -218,41 +154,41 @@ export function UniversityAdmissionsSection({
               }
             />
           </div>
-        </div>
-        <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
-          <h3 className="font-display text-xl font-semibold text-heading">
-            Documents required
-          </h3>
-          <div className="mt-5 grid gap-6 sm:grid-cols-2">
-            <div>
-              <p className="mb-3 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
-                Educational documents
-              </p>
-              <CheckList
-                items={
-                  universityAdmissions?.documentsRequired?.educational ??
-                  countryContent?.documentsRequired.educational ?? [
-                    "Class 10 and 12 academic records",
-                    "NEET scorecard, if required for your pathway",
-                    "Passport and photographs",
-                  ]
-                }
-              />
-            </div>
-            <div>
-              <p className="mb-3 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
-                Visa documents
-              </p>
-              <CheckList
-                items={
-                  universityAdmissions?.documentsRequired?.visa ??
-                  countryContent?.documentsRequired.visa ?? [
-                    "University offer or invitation letter",
-                    "Visa application documents",
-                    "Medical and financial proof as required by the destination",
-                  ]
-                }
-              />
+          <div className="p-5 sm:p-6">
+            <p className="mb-5 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+              Documents required
+            </p>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div>
+                <p className="mb-3 text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground/70">
+                  Educational
+                </p>
+                <CheckList
+                  items={
+                    universityAdmissions?.documentsRequired?.educational ??
+                    countryContent?.documentsRequired.educational ?? [
+                      "Class 10 and 12 academic records",
+                      "NEET scorecard, if required for your pathway",
+                      "Passport and photographs",
+                    ]
+                  }
+                />
+              </div>
+              <div>
+                <p className="mb-3 text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground/70">
+                  Visa
+                </p>
+                <CheckList
+                  items={
+                    universityAdmissions?.documentsRequired?.visa ??
+                    countryContent?.documentsRequired.visa ?? [
+                      "University offer or invitation letter",
+                      "Visa application documents",
+                      "Medical and financial proof as required by the destination",
+                    ]
+                  }
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -261,26 +197,48 @@ export function UniversityAdmissionsSection({
       {/* ── Deadlines & Intake ───────────────────────────────────────── */}
       <div id="deadlines" className="scroll-mt-24 space-y-4">
         <SectionLabel>Deadlines &amp; Intake</SectionLabel>
-        {deadlineCards.map((card) => (
-          <InfoCard
-            key={card.title}
-            icon={<CalendarDays className="size-4 text-accent" />}
-            title={card.title}
-            body={card.body}
-          />
-        ))}
+        <div className="overflow-hidden rounded-2xl border border-border bg-card divide-y divide-border">
+          <div className="flex gap-4 p-5 sm:p-6">
+            <CalendarDays className="mt-0.5 size-4 shrink-0 text-accent" />
+            <div className="flex-1">
+              <p className="mb-1 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+                Intake
+              </p>
+              <p className="text-sm font-semibold text-foreground">
+                {intakeMonths.length > 0
+                  ? intakeMonths.join(" · ")
+                  : "Not currently listed for this page"}
+              </p>
+            </div>
+          </div>
+          <div className="p-5 sm:p-6">
+            <p className="mb-1 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+              When to start
+            </p>
+            <p className="text-sm leading-6 text-muted-foreground">
+              {intakeMonths.length > 0
+                ? `Start document preparation and application planning at least 3–6 months before the ${intakeMonths[0]} intake.`
+                : "Start document preparation and application planning early in the cycle and confirm exact timelines with the university."}
+            </p>
+          </div>
+          <div className="p-5 sm:p-6">
+            <p className="mb-1 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+              Admissions notes
+            </p>
+            <p className="text-sm leading-6 text-muted-foreground">
+              {universityAdmissions?.deadlinesNote ??
+                "Seat availability, invitation timelines, fee notices, hostel options, and visa processing should be rechecked for the current cycle."}
+            </p>
+          </div>
+        </div>
       </div>
 
+      {/* ── Admissions Checks ────────────────────────────────────────── */}
       {countryContent?.verificationChecklist?.length ? (
         <div id="admissions-checks" className="scroll-mt-24 space-y-4">
           <SectionLabel>Admissions Checks</SectionLabel>
           <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
-            <h3 className="font-display text-xl font-semibold text-heading">
-              What to verify before you pay
-            </h3>
-            <div className="mt-5">
-              <CheckList items={countryContent.verificationChecklist} />
-            </div>
+            <CheckList items={countryContent.verificationChecklist} />
           </div>
         </div>
       ) : null}
@@ -288,26 +246,35 @@ export function UniversityAdmissionsSection({
       {/* ── Scholarships ─────────────────────────────────────────────── */}
       <div id="scholarships" className="scroll-mt-24 space-y-4">
         <SectionLabel>Scholarships</SectionLabel>
-        <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
-          <h3 className="font-display text-xl font-semibold text-heading">
-            Scholarships &amp; financial support
-          </h3>
-          <p className="mt-3 text-base leading-8 text-muted-foreground">
-            {universityAdmissions?.scholarshipInfo ??
-              countryContent?.scholarshipInfo ??
-              `Scholarship availability at ${university.name} should be confirmed directly with the university's international admissions or finance office.`}
-          </p>
+        <div className="overflow-hidden rounded-2xl border border-border bg-card divide-y divide-border">
+          <div className="p-5 sm:p-6">
+            <p className="text-sm leading-7 text-muted-foreground">
+              {universityAdmissions?.scholarshipInfo ??
+                countryContent?.scholarshipInfo ??
+                `Scholarship availability at ${university.name} should be confirmed directly with the university's international admissions or finance office.`}
+            </p>
+          </div>
+          <div className="grid gap-6 p-5 sm:grid-cols-2 sm:p-6">
+            <div className="flex gap-3">
+              <CircleDollarSign className="mt-0.5 size-4 shrink-0 text-accent" />
+              <div>
+                <p className="mb-1 text-sm font-semibold text-foreground">How we assess</p>
+                <p className="text-sm leading-6 text-muted-foreground">
+                  We confirm whether any fee waiver is merit-based, automatic, limited-seat, renewal-dependent, or deferred to later years before presenting it as part of a cost plan.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <FileText className="mt-0.5 size-4 shrink-0 text-accent" />
+              <div>
+                <p className="mb-1 text-sm font-semibold text-foreground">What we obtain in writing</p>
+                <p className="text-sm leading-6 text-muted-foreground">
+                  Written scholarship terms, net payable tuition after any waiver, and whether hostel or ancillary charges are excluded are confirmed before families make a financial decision.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <InfoCard
-          icon={<CircleDollarSign className="size-4 text-accent" />}
-          title="What to ask"
-          body="Ask whether fee waivers are merit-based, automatic, limited-seat, renewal-based, or only available in later years."
-        />
-        <InfoCard
-          icon={<FileText className="size-4 text-accent" />}
-          title="Before you rely on a scholarship"
-          body="Request the written scholarship terms, the net payable tuition, and whether hostel or other charges are excluded."
-        />
       </div>
 
       {/* ── Licensing Pathway ────────────────────────────────────────── */}
@@ -315,24 +282,16 @@ export function UniversityAdmissionsSection({
         <SectionLabel>Licensing Pathway</SectionLabel>
         <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
           <h3 className="font-display text-xl font-semibold text-heading">
-            Planning the licensing pathway after MBBS
+            Where can you practice after this degree?
           </h3>
           <p className="mt-3 text-base leading-8 text-muted-foreground">
-            For MBBS abroad, the key decision is not campus placement. It is whether
-            the university, course structure, teaching medium, clinical exposure,
-            and post-study pathway remain aligned with the licensing route you want
-            to pursue after graduation.
+            A WDOMS-listed MBBS opens six career pathways. India return via FMGE/NExT
+            is the most common, but the same degree qualifies you to sit licensing
+            exams for the USA, UK, Australia, Canada, and New Zealand — or stay for
+            PG in {primaryProgram?.country.name ?? "your study country"}.
           </p>
           <div className="mt-6">
-            <CheckList
-              items={
-                universityAdmissions?.licensingPathway?.length
-                  ? universityAdmissions.licensingPathway
-                  : countryContent?.careerOpportunities.length
-                    ? countryContent.careerOpportunities
-                    : licensingItems
-              }
-            />
+            <CareerPathways studyCountry={primaryProgram?.country.name} />
           </div>
         </div>
         <InfoCard
@@ -350,7 +309,7 @@ export function UniversityAdmissionsSection({
           body={
             wdomsEntry
               ? "This university has a mapped WDOMS record on the page, which gives you one more recognition checkpoint."
-              : "Use official recognition sources and the university itself to cross-check the institution before committing."
+              : "Recognition status is cross-checked against official sources before this university is recommended to any family."
           }
         />
       </div>

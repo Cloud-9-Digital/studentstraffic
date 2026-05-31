@@ -30,31 +30,30 @@ const countryContentMap: Record<string, CountryContent> = {
     ],
     eligibility: {
       intro:
-        "Russia has 46 NMC-approved medical colleges and universities accepting Indian students. Before shortlisting a medical college in Russia, confirm the Indian-side eligibility requirements and then verify the exact university-side admissions route — each institution uses its own document formats, interview processes, and enrollment timelines.",
+        "Russia has 50+ medical colleges meeting NMC guidelines and accepting Indian students. Before shortlisting a medical college in Russia, confirm the Indian-side eligibility requirements and then verify the exact university-side admissions route — each institution uses its own document formats, interview processes, and enrollment timelines.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology as core subjects",
-        "Minimum 50% aggregate in PCB (45% for eligible reserved-category candidates under the current Indian rule set)",
+        "Minimum 50% aggregate in PCB subjects",
         "Qualified NEET-UG before taking MBBS admission abroad if you want the India-return pathway to remain open",
         "Age 17 or above by 31 December of the admission year",
         "Valid passport and school documents in the format accepted by the university",
       ],
     },
     admissionSteps: [
-      "Identify which Russian universities match your NEET score, budget, and teaching medium preference — check the official program page, course duration, and whether the university is accepting foreign applicants for your cycle.",
-      "Check your NEET status, PCB marks, passport validity, and whether the university uses an internal exam or interview for foreign applicants.",
-      "Prepare your passport and education documents, then confirm whether your marksheets need apostille or legalization and notarized Russian translation.",
-      "Submit the application through the university admissions system or other official route accepted by that university.",
-      "Take the university's entrance test or interview if required. If you are applying for the Russian Government quota, follow the Rossotrudnichestvo or Education in Russia process instead of the paid-seat route.",
-      "Wait for the university's written admission decision, contract terms if applicable, and the official invitation needed for the study visa.",
-      "Apply for the Russian student visa using the invitation and the embassy or visa-centre checklist for your city.",
-      "After arrival, complete migration registration, local medical-insurance and medical-compliance formalities, and university enrollment steps before classes begin.",
+      "We assess your NEET score, Class 12 PCB marks, budget, and city preference, then shortlist 3–5 Russian universities that match your profile. Every university we present is WDOMS-listed, meets NMC guidelines, and confirmed open for foreign applicants in the current cycle.",
+      "We prepare your complete document set in the exact format required: Class 10 and 12 marksheets with apostille, notarised Russian translations of all academic records, NEET scorecard, photographs, and medical fitness certificate. Apostille and translation are mandatory for Russia — we manage this from your city.",
+      "We submit your application through the university's official international admissions route. For students eligible for the Russian Government Scholarship quota, we process through the Indian Ministry of Education pathway — a separate route we handle in parallel.",
+      "We obtain the university's official invitation letter on your behalf, typically within 2–4 weeks of a complete application. We review the invitation for accuracy — institution name, course, fee terms — before presenting it to you.",
+      "We guide you through the NMC Eligibility Certificate application at nmc.org.in. This is mandatory before departure; we confirm the university meets current FMGL guidelines before the application is submitted.",
+      "We prepare your Russian student visa file — original invitation letter, apostilled academic records, medical certificate, and the full embassy checklist for your city. We track the application through to visa grant, typically 5–15 working days.",
+      "We brief you before departure on migration registration (required within 3 days of arrival), mandatory Russian medical insurance, university health checks, and enrollment formalities. Your first week in Russia follows a clear sequence we walk you through in advance.",
     ],
     verificationChecklist: [
-      "Ask for the exact 2026-2027 annual tuition, hostel charge, payment schedule, and refund rules in writing before paying any advance.",
-      "Confirm whether the current MBBS pathway remains six years, what the teaching language is year by year, and whether clinical years require Russian communication.",
-      "Check whether your Class 12 documents need apostille or consular legalization, and whether the university wants notarized Russian translations before or after arrival.",
-      "Verify who issues the visa invitation, how long it usually takes, and what happens if the invitation arrives late in the cycle.",
-      "Budget for post-arrival compliance too, not just tuition: migration registration, medical insurance, local medical exams, and other university onboarding costs can sit outside the first tuition invoice.",
+      "We obtain the confirmed 2026-2027 fee schedule — annual tuition, hostel charges, payment timeline, and refund terms — in writing from the university before any payment is processed.",
+      "The MBBS pathway duration, year-by-year teaching language, and clinical-year language requirements are confirmed for the current intake before offer acceptance.",
+      "Document attestation requirements — apostille, consular legalisation, notarised Russian translations — are confirmed per university and handled as part of the admission process.",
+      "The visa invitation issuer, expected processing timeline, and contingency if the invitation is delayed are all confirmed before the application is submitted.",
+      "Our fee planning covers the full cost of arrival — migration registration, medical insurance, local compliance exams, and university onboarding — not just the first tuition invoice.",
     ],
     documentsRequired: {
       educational: [
@@ -76,9 +75,9 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     hostelInfo:
-      "Many Russian universities publish dormitory options for foreign students, but room type, tariff, deposit, and first-year allocation policy vary sharply by university. For admissions planning, ask for the current hostel tariff, whether utilities are included, whether a place is guaranteed for your intake, the kitchen and cooking setup, the move-in date, and the payment deadline linked to your admission letter.",
+      "Hostel arrangements vary sharply by university — room type, tariff, deposit, utility inclusion, and first-year allocation policy are all university-specific. We confirm the current hostel tariff, guaranteed availability for the intake, kitchen access, move-in date, and payment deadlines as part of the admissions package we present to every family.",
     scholarshipInfo:
-      "The official Study in Russia portal says foreign students can apply under the quota of the Government of the Russian Federation, with competitive selection run through Rossotrudnichestvo or the Education in Russia system. Students admitted under the quota are entitled to a dormitory place and receive a state academic scholarship during full-time study funded from the federal budget. Outside the quota route, treat fee waivers or discounts as university-specific and request the written terms directly from the admissions office.",
+      "The Russian Government allocates a limited number of fully funded seats each year to Indian students through its federal quota programme. Competition for these seats is high and the application window is fixed — we guide eligible students through the quota route as a separate, parallel process. For fee-paying seats, any university-specific discount or waiver is confirmed in writing from the admissions office before it is presented to the family as a firm offer.",
     costOfLiving: {
       intro:
         "Living costs in Russia vary heavily by city and by whether you stay in a university dormitory or private rental. Use these figures only as a first-pass planning range and rebuild your budget from the university's current hostel notice and the city you actually choose.",
@@ -113,19 +112,19 @@ const countryContentMap: Record<string, CountryContent> = {
       intro:
         "For Indian students, the key check is not just admission in Vietnam but whether the full course remains usable for the India-return pathway under current NMC rules.",
       items: [
-        "Passed Class 12 with Physics, Chemistry, and Biology; check the university's own marks threshold before applying",
+        "Passed Class 12 with Physics, Chemistry, and Biology with a minimum 50% aggregate in PCB",
         "Qualified NEET-UG before joining a foreign medical course if you want the India-return pathway to remain open",
         "Age 17 or above by the relevant admission year cut-off",
         "Valid passport and school documents in the format requested by the university",
       ],
     },
     admissionSteps: [
-      "Identify which universities match your NEET score, budget, teaching language preference, and India-return licensing plan — then confirm your target before proceeding",
-      "Check NEET status, passport validity, and the exact admissions checklist used by your chosen university",
-      "Submit the application with academic documents and any university-specific forms",
-      "Wait for the official offer letter and visa-support paperwork from the university",
-      "Apply for the student visa using the latest embassy or university guidance for your intake",
-      "After arrival, complete local registration, hostel formalities, and university enrollment before classes begin",
+      "We assess your profile and shortlist Vietnamese universities based on WDOMS listing, NMC guideline compliance, clinical training hospital quality, and 6-year budget. Vietnam's universities vary significantly — we only present institutions with a documented track record for Indian students.",
+      "We prepare your complete application documents: Class 10 and 12 marksheets with apostille, NEET scorecard, passport copy, photographs, and medical fitness certificate. Where the university requires Vietnamese translation of academic records, we arrange this as part of the process.",
+      "We submit your application to the university's international office. Vietnam has no government quota pathway — all admissions go through the university directly. Admission letters are typically issued within 2–4 weeks of a complete application, and we review them before presenting to you.",
+      "We guide you through the NMC Eligibility Certificate application at nmc.org.in after the admission letter is received. This is mandatory before departure.",
+      "We prepare your Vietnamese student visa (DL visa) file for the Vietnamese Embassy. A DL student visa is required — an e-visa is not valid for a 6-year programme. We compile the admission letter, apostilled academic records, and medical certificate for submission.",
+      "We brief you before departure on residence registration (required within the first week), university enrollment, and hostel check-in. We remain your point of contact through the first semester for any documentation or administrative issues.",
     ],
     documentsRequired: {
       educational: [
@@ -145,9 +144,9 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     hostelInfo:
-      "Most universities offer either campus housing or nearby student accommodation, but room type, deposit, meals, and first-year allocation vary by university. Ask for the current hostel tariff, sharing policy, kitchen access, and move-in timeline in writing before paying.",
+      "Most universities offer campus housing or nearby student accommodation. Room type, deposit, meals, and first-year allocation vary by university — we confirm the current tariff, sharing policy, kitchen access, and move-in timeline as part of the admissions package we present to families.",
     scholarshipInfo:
-      "Treat scholarships and fee waivers in Vietnam as university-specific unless you have written confirmation of a named scheme. Ask the admissions office for the current discount rules, eligibility criteria, and payment schedule before treating a scholarship as part of your budget.",
+      "Scholarships and fee waivers in Vietnam are university-specific. We obtain written confirmation of any named scheme — current discount rules, eligibility criteria, and payment schedule — before it is factored into a family's cost plan.",
     costOfLiving: {
       intro:
         "Vietnam is often a lower-cost option than many other study-abroad destinations, but Hanoi and Ho Chi Minh City usually cost more than Can Tho or Da Nang.",
@@ -182,21 +181,19 @@ const countryContentMap: Record<string, CountryContent> = {
         "Indian students applying for MBBS in Georgia must meet NMC requirements for overseas medical education.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology",
-        "Minimum 50% aggregate in PCB (45% for SC/ST/OBC candidates)",
+        "Minimum 50% aggregate in PCB subjects",
         "Cleared NEET-UG (mandatory)",
         "Age 17 or above at time of admission",
         "Valid Indian passport",
       ],
     },
     admissionSteps: [
-      "Clear NEET-UG and save your scorecard",
-      "Evaluate Georgian universities that follow NMC guidelines",
-      "Submit application with required documents",
-      "Receive admission offer letter",
-      "Apply for Georgia student visa",
-      "Complete pre-departure medical examination",
-      "Travel to Georgia and complete registration",
-      "Begin classes",
+      "We assess your profile and shortlist Georgian universities based on NMC guideline compliance, WDOMS listing, English-medium delivery, and 6-year cost. Georgia has 36+ private medical universities in Tbilisi alone — we present only institutions with a verified track record for Indian students and documented FMGE outcomes.",
+      "We prepare your application documents: Class 10 and 12 marksheets, NEET scorecard, passport copy, and photographs. Georgia does not require apostille on Indian academic documents, which simplifies preparation compared to Russia and Kyrgyzstan.",
+      "We submit your application through the university's official international admissions process. Most Georgian universities issue an admission letter within 1–3 weeks. Where the university conducts an entrance interview or English proficiency check, we prepare you in advance.",
+      "We guide you through the NMC Eligibility Certificate application at nmc.org.in after the admission letter is received. This is mandatory before departure.",
+      "We prepare your visa documentation. Indian nationals can enter Georgia visa-free for up to 365 days, but a student residence permit is required for the full 6-year programme. We coordinate with the university's international office on the residence permit conversion process through the Public Services Hall after arrival.",
+      "We brief you before departure on Public Services Hall registration, hostel check-in, health insurance (where not provided by the university), and university enrollment. We support you through the first weeks in Georgia for any administrative follow-up.",
     ],
     documentsRequired: {
       educational: [
@@ -254,21 +251,19 @@ const countryContentMap: Record<string, CountryContent> = {
         "Indian students applying for MBBS in Kyrgyzstan must meet the standard NMC requirements for overseas medical education.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology",
-        "Minimum 50% aggregate in PCB (45% for SC/ST/OBC)",
+        "Minimum 50% aggregate in PCB subjects",
         "Cleared NEET-UG (mandatory)",
         "Age 17 or above at time of admission",
         "Valid Indian passport",
       ],
     },
     admissionSteps: [
-      "Clear NEET-UG and save your scorecard",
-      "Evaluate universities in Kyrgyzstan that follow NMC guidelines",
-      "Submit application with required documents",
-      "Receive official admission offer letter",
-      "Apply for a Kyrgyzstan student visa",
-      "Complete pre-departure medical tests",
-      "Travel to Bishkek and complete university registration",
-      "Begin classes in September",
+      "We assess your profile and shortlist Kyrgyz universities based on WDOMS listing, NMC guideline compliance, and 6-year budget. We advise on city — Bishkek has the largest Indian student community and the most developed FMGE coaching infrastructure; Osh is cheaper but has fewer options.",
+      "We prepare your complete document set: Class 10 and 12 marksheets with apostille, NEET scorecard, passport copy, and photographs. Where the university requires notarised Russian or Kyrgyz translation of academic records, we arrange this as part of the process.",
+      "We submit your application to the university's international department and track the invitation letter, typically issued within 1–3 weeks. Where the university requires an entrance examination in biology and chemistry, we prepare you in advance — these can usually be taken online.",
+      "We guide you through the NMC Eligibility Certificate application at nmc.org.in after the invitation letter is received. This is mandatory before departure.",
+      "We prepare your Kyrgyz student visa file for the Embassy in New Delhi or Mumbai: original invitation letter, apostilled academic records, medical certificate, and HIV test. Visa processing typically takes 5–10 working days and we track it through to grant.",
+      "We brief you before departure on OVIR migration registration (required within 5 days of arrival, managed by the university), hostel check-in, medical insurance registration, and enrollment. Classes in Kyrgyzstan begin in September — we ensure your arrival timing and documentation are aligned.",
     ],
     documentsRequired: {
       educational: [
@@ -291,7 +286,7 @@ const countryContentMap: Record<string, CountryContent> = {
     hostelInfo:
       "Kyrgyzstan universities in Bishkek provide on-campus hostel accommodation for international students. Indian student communities in Bishkek have established food options with Indian mess facilities near major university campuses. Hostel costs typically range from $60–120/month including utilities.",
     scholarshipInfo:
-      "Some Kyrgyzstan universities offer merit-based fee reductions or partial scholarships for Indian students. The Kyrgyz Government offers a limited number of scholarships under bilateral agreements. Confirm current availability with the specific university before applying.",
+      "Some Kyrgyzstan universities offer merit-based fee reductions or partial scholarships for Indian students. The Kyrgyz Government offers a limited number of seats under bilateral agreements. We confirm current availability with the specific university and present only written, confirmed offers to families.",
     costOfLiving: {
       intro:
         "Bishkek is among the more affordable cities for Indian medical students. The lower cost of living is one of the primary reasons students choose Kyrgyzstan.",
@@ -327,7 +322,7 @@ const countryContentMap: Record<string, CountryContent> = {
         "For Indian students, Uzbekistan is now a verification-first destination. Admission alone is not enough. You need the exact university and course structure to stay aligned with NMC's FMGL Regulations, 2021 if you want the India-return pathway to remain open.",
       items: [
         "Passed Class 12 with Physics, Chemistry, and Biology",
-        "Minimum 50% aggregate in PCB (45% where the current Indian rule set allows it)",
+        "Minimum 50% aggregate in PCB subjects",
         "Qualified NEET-UG before the foreign medical course begins",
         "Age 17 or above by 31 December of the admission year",
         "Written proof that the full course keeps at least 54 months of study and a 12-month internship in the same foreign institution",
@@ -335,22 +330,21 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     admissionSteps: [
-      "Read the latest NMC alert and FMGL 2021 requirements before choosing any Uzbekistan university or branch campus.",
-      "Avoid agent-only recommendations. Contact the university directly and ask for the current English-medium curriculum, clinical training plan, and internship structure in writing.",
-      "Check whether the exact institution or branch has been named in any NMC alert, Embassy communication, or other regulatory warning before paying any registration amount.",
-      "Verify that the course is run in one institution, that clinical training is not split informally across locations, and that the internship is completed at the same foreign university.",
-      "Prepare passport, Class 10 and 12 records, NEET scorecard, photographs, and any legalization or notarization required by the university.",
-      "Apply only through the university's official process and wait for the written offer or invitation before making transfer plans.",
-      "Cross-check the final admission letter, institution name, and course structure one more time with NMC and the Indian Embassy if anything looks unclear.",
-      "Proceed to visa, travel, and post-arrival registration only after the FMGL pathway is documented clearly enough for your family to accept the risk.",
+      "We assess your profile and shortlist Uzbek universities with extra care — we verify the exact institution and branch name against NMC guideline compliance, not just the parent university brand. Several Uzbek universities have branch campuses whose compliance status differs from the main campus; we check current NMC alerts and Indian Embassy advisories before any university is presented to you.",
+      "We confirm in writing that the course is delivered in a single institution, that clinical training is not split across locations, and that the 12-month internship is completed at the same foreign university — all NMC requirements. We do not proceed with an admission until these are documented.",
+      "We prepare your application documents: Class 10 and 12 marksheets, NEET scorecard, passport copy, and photographs. Where notarised translation is required by the university, we arrange this before submission.",
+      "We submit your application through the university's official process and obtain the written admission letter confirming the institution name, course structure, and full fee schedule — tuition and hostel stated separately. We do not present an offer until this is in writing.",
+      "We guide you through the NMC Eligibility Certificate application at nmc.org.in after the admission letter is received. This is mandatory before departure.",
+      "We prepare your Uzbek student visa file for the Embassy in New Delhi: admission letter, academic records, and medical certificate. Processing typically takes 5–10 working days and we track it through to grant.",
+      "We brief you before departure on migration registration (required within 3 days of arrival), hostel check-in, and enrollment. We advise you to confirm the actual course structure and teaching schedule on arrival matches what was agreed in writing before making any further payments.",
     ],
     verificationChecklist: [
-      "Confirm the exact institution and branch name, not just the parent university brand, before paying any fee.",
-      "Ask for written confirmation that teaching, exams, and bedside clinical training actually run in English, not only the brochure or first-year classes.",
-      "Verify that the course runs for at least 54 months in one institution and includes a 12-month internship in the same foreign university.",
-      "Check whether the university's actual patient-facing training depends heavily on Uzbek or Russian communication despite English-medium marketing.",
-      "Use NMC alerts, the Indian Embassy in Tashkent, and direct university documents together; do not rely on agents or informal student groups alone.",
-      "Treat any offshore, transfer-style, or split-campus arrangement as a red-flag item until NMC compliance is proven in writing.",
+      "We confirm the exact institution and branch name against NMC guidelines — not just the parent university brand — before any fee is collected.",
+      "Written confirmation that teaching, exams, and bedside clinical training run in English through all six years is obtained from the university before offer acceptance.",
+      "Course duration, single-institution delivery of at least 54 months, and the 12-month internship structure are verified against current NMC requirements.",
+      "We assess whether patient-facing clinical training depends on local language despite English-medium marketing — and flag this clearly to families before they decide.",
+      "Every admission we process is cross-referenced against current NMC alerts and Indian Embassy advisories — not agent communications or student group posts.",
+      "Any offshore, transfer-style, or split-campus arrangement is treated as a disqualifying flag until NMC compliance is proven in writing.",
     ],
     documentsRequired: {
       educational: [
@@ -372,9 +366,9 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     hostelInfo:
-      "Accommodation quality varies widely by city and institution. Ask for the current hostel tariff, room-sharing pattern, kitchen access, and whether first-year housing is genuinely guaranteed. For Uzbekistan specifically, do not let hostel promises distract from the larger FMGL-compliance questions.",
+      "Accommodation quality varies widely by city and institution in Uzbekistan. We confirm the current hostel tariff, room-sharing policy, kitchen access, and genuine first-year allocation before presenting an offer — and we never let hostel terms distract from the more important FMGL-compliance assessment.",
     scholarshipInfo:
-      "Treat scholarships and fee discounts as secondary. The higher-value question is whether the full academic and licensing pathway is compliant. If a scholarship is offered, ask for the written net payable amount and confirm that the university, branch, and course structure remain acceptable for your India-return plan.",
+      "Scholarships and fee discounts in Uzbekistan are secondary to the compliance question. We assess whether the full academic and licensing pathway is FMGL-compliant first. Where a scholarship is offered, we obtain the written net payable amount and confirm that the university, branch, and course structure are acceptable for the India-return pathway before the offer is presented to a family.",
     costOfLiving: {
       intro:
         "Uzbekistan can still look affordable in tuition-led comparisons, but families should now budget for verification work, contingency travel, and possible transfer risk if a course later turns out to be non-compliant.",

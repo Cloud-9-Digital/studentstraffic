@@ -18,10 +18,10 @@ type UniversityContentOverride = Partial<
 const topicFilterPattern = /\b(hostel|hostels|hostel-backed|mess|food)\b/i;
 
 const hostelFallback =
-  "Campus logistics and accommodation planning should be confirmed directly with the university during the admission cycle.";
+  "We confirm hostel availability, room type, pricing, and payment terms with the university as part of the admission process. University-managed hostels are the standard option for Year 1 — they are on or near campus and typically include meals. We advise on private apartment alternatives from Year 2 based on cost and location preferences.";
 
 const settlingFallback =
-  "Students should verify day-to-day settling-in support, local language adaptation, and arrival guidance directly with the university.";
+  "We connect you with current Indian students at the university before arrival so you understand what the first weeks look like. After arrival, we remain your point of contact for migration registration, enrollment paperwork, and insurance during the first semester.";
 
 function sanitizeSentence(text: string) {
   return text
@@ -63,13 +63,24 @@ function buildFallbackList(university: University, variant: "why" | "consider" |
   ];
 }
 
+function toPlainString(item: unknown): string {
+  if (typeof item === "string") return item;
+  if (item && typeof item === "object") {
+    const obj = item as Record<string, unknown>;
+    const heading = typeof obj.heading === "string" ? obj.heading : "";
+    const body = typeof obj.body === "string" ? obj.body : "";
+    return heading && body ? `${heading} — ${body}` : heading || body;
+  }
+  return String(item ?? "");
+}
+
 function sanitizeList(
   university: University,
-  items: string[],
+  items: unknown[],
   variant: "why" | "consider" | "fit"
 ) {
   const filtered = items
-    .map((item) => sanitizeSentence(item))
+    .map((item) => sanitizeSentence(toPlainString(item)))
     .filter((item) => !topicFilterPattern.test(item));
 
   const fallback = buildFallbackList(university, variant);
@@ -91,15 +102,15 @@ function sanitizeList(
 const universityContentOverrides: Record<string, UniversityContentOverride> = {
   "kazan-state-medical-university": {
     summary:
-      "A long-established public medical university in Kazan with deep roots in Russian medical education and a stronger brand profile than many regional alternatives.",
+      "One of Russia's oldest dedicated medical universities (est. 1814), with an FMGE pass rate of 30–41% over recent years — consistently above Russia's national average of 29.54%. Kazan has an Indian student community of 800–1,000, established Indian mess facilities, and direct flights from major Indian cities.",
     campusLifestyle:
-      "Kazan offers a large-city student environment with major transit, a broad academic ecosystem, and a visible international student presence.",
+      "Kazan is a city of one million with a functioning metro, reliable public transport, and a large student population. The Indian student community is one of the largest among Russian university cities — peer support, Indian mess, and grocery access are well-established rather than something students have to build from scratch.",
     cityProfile:
-      "As one of Russia's major academic cities, Kazan gives students a more connected urban setting and a wider institutional ecosystem than smaller Russian destinations.",
+      "Kazan is Russia's third-largest city by student population and capital of Tatarstan. It has a genuine university-city character — better transport, more services, and more international student infrastructure than smaller regional destinations. Winter temperatures reach -20°C to -30°C, which students need to prepare for.",
     clinicalExposure:
-      "Clinical training sits inside a mature public-university model, so the main academic consideration is how students adapt to Russian-speaking hospital settings over time.",
+      "Clinical rotations from Year 3 take place in Kazan's major public teaching hospitals. Patient communication is in Russian — students who invest in Russian language from Year 1 have meaningfully better clinical experiences. The university's strong basic sciences teaching is credited for its above-average FMGE performance.",
     studentSupport:
-      "This profile suits families looking for a public university with stronger historical standing and a city environment that feels more established for international study.",
+      "Best suited to students who want a well-established Indian community, proven FMGE outcomes, and a major city environment — and who are willing to pay slightly more than the cheapest Russian options to get these.",
   },
   "altai-state-medical-university": {
     summary:
@@ -710,10 +721,17 @@ export function applyUniversityContentOverride(university: University): Universi
     ...override,
   };
 
+  const hostelContent = merged.hostelOverview?.trim() && merged.hostelOverview !== hostelFallback
+    ? merged.hostelOverview
+    : hostelFallback;
+  const foodContent = merged.indianFoodSupport?.trim() && merged.indianFoodSupport !== settlingFallback
+    ? merged.indianFoodSupport
+    : settlingFallback;
+
   return {
     ...merged,
-    hostelOverview: hostelFallback,
-    indianFoodSupport: settlingFallback,
+    hostelOverview: hostelContent,
+    indianFoodSupport: foodContent,
     recognitionBadges: merged.recognitionBadges.filter(
       (badge) => !topicFilterPattern.test(badge)
     ),

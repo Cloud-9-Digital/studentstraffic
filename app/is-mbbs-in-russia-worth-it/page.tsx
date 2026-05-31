@@ -17,7 +17,7 @@ const publishedDate = "2026-05-23";
 
 const quickAnswer = [
   "Russia MBBS costs ₹35-50 lakhs total (vs ₹60 lakhs-₹2.5 crores in Indian private colleges), making it financially worth it for budget-conscious families. However, the 15-22% FMGE pass rate (vs 65-75% for Indian graduates) and climate challenges mean it's not automatically worth it for everyone.",
-  "Worth it IF: You're disciplined, adaptable, willing to learn Russian (200-300 hours needed), can handle -20°C to -35°C winters for 4-5 months, and committed to FMGE/NExT prep from Year 3 onward (budget ₹1.5-2.5 lakhs for coaching).",
+  "Worth it IF: You're disciplined, adaptable, willing to learn Russian (200-300 hours needed), can handle -20°C to -35°C winters for 4-5 months, and committed to FMGE/NExT prep from Year 3 onward. Students who join through Students Traffic receive free FMGE/NExT coaching — this removes the typical ₹1.5-2.5 lakh coaching cost from your budget.",
   "Not worth it IF: You struggle with cold climates, need constant family support, want a frictionless path to Indian practice, or chose Russia solely because a consultant showed low fees without explaining clinical language requirements or licensing exam challenges.",
 ];
 
@@ -25,7 +25,7 @@ const worthItScenarios = [
   {
     scenario: "Budget-constrained with strong academics",
     details:
-      "Total 6-year cost of ₹35-50 lakhs (including travel, living, insurance) is 40-75% cheaper than most Indian private colleges. Worth it if you have 85%+ PCB, NEET qualified, and realistic about additional FMGE coaching investment (₹1.5-2.5 lakhs).",
+      "Total 6-year cost of ₹35-50 lakhs (including travel, living, insurance) is 40-75% cheaper than most Indian private colleges. Worth it if you have 85%+ PCB and NEET qualified. Students who join through Students Traffic receive free FMGE/NExT coaching, which eliminates the typical ₹1.5-2.5 lakh post-graduation coaching cost.",
   },
   {
     scenario: "Self-disciplined and adaptable students",
@@ -38,7 +38,7 @@ const worthItScenarios = [
       "Worth it if you're treating FMGE/NExT as mandatory from Day 1, planning structured exam prep from Year 3, and choosing universities with proven graduate pass rates. Budget 18-24 months for licensing exam preparation post-MBBS.",
   },
   {
-    scenario: "NMC-approved university selection",
+    scenario: "University selection — NMC guideline compliance",
     details:
       "Choose universities with 70+ years history, WDOMS listing, strong hospital partnerships (3+ teaching hospitals), and documented English-medium programs. Examples: Kazan State Medical, Bashkir State Medical, Privolzhsky Research Medical University.",
   },
@@ -53,7 +53,7 @@ const notWorthItScenarios = [
   {
     scenario: "Expecting easy India-return pathway",
     warning:
-      "FMGE/NExT pass rate for Russia graduates is only 15-22% (first attempt) vs 65-75% for Indian medical college graduates. If you're not prepared for rigorous self-study, additional coaching costs, and potential multiple exam attempts, factor this into your decision.",
+      "FMGE/NExT pass rate for Russia graduates is only 15-22% (first attempt) vs 65-75% for Indian medical college graduates. If you're not prepared for rigorous self-study and potential multiple exam attempts, factor this into your decision. Students Traffic provides free FMGE/NExT coaching for students who join through us.",
   },
   {
     scenario: "Chosen solely on low fee quotes",
@@ -74,7 +74,7 @@ const costBenefitAnalysis = {
     savings: "₹25 lakhs-₹2 crores",
   },
   hiddenCosts: {
-    fmgeCoaching: "₹1.5-2.5 lakhs",
+    fmgeCoaching: "₹1.5-2.5 lakhs (free for Students Traffic students)",
     winterClothing: "₹25,000-40,000",
     travelPerTrip: "₹40,000-60,000 (3-4 trips total)",
     languageTutoring: "₹15,000-25,000",
@@ -133,7 +133,7 @@ const faqItems = [
   {
     question: "How does MBBS in Russia compare cost-wise to Indian private colleges?",
     answer:
-      "Russia costs ₹35-50 lakhs total for 6 years (tuition + accommodation + living + travel), while Indian private colleges charge ₹60 lakhs to ₹2.5 crores for 5.5 years. However, factor in FMGE coaching (₹1.5-2.5 lakhs), lower pass rates (15-22% vs 65-75%), and potential exam retakes when calculating true value.",
+      "Russia costs ₹35-50 lakhs total for 6 years (tuition + accommodation + living + travel), while Indian private colleges charge ₹60 lakhs to ₹2.5 crores for 5.5 years. Factor in lower pass rates (15-22% vs 65-75%) and potential exam retakes. Students who join through Students Traffic receive free FMGE/NExT coaching — which removes the typical ₹1.5-2.5 lakh coaching cost from the comparison.",
   },
   {
     question: "What is the FMGE/NExT pass rate for Russia MBBS graduates?",

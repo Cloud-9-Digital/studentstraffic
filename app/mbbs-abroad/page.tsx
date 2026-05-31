@@ -9,6 +9,7 @@ import { LpFooter } from "./_components/lp-footer";
 import { LpHeader } from "./_components/lp-header";
 import { LpHero } from "./_components/lp-hero";
 import { LpMobileCta } from "./_components/lp-mobile-cta";
+import { LpPathways } from "./_components/lp-pathways";
 import { LpProcess } from "./_components/lp-process";
 import { LpTrust } from "./_components/lp-trust";
 import { LpWhyAbroad } from "./_components/lp-why-abroad";
@@ -47,6 +48,7 @@ export default function MbbsAbroadPage() {
       <LpHero />
       <LpCountries />
       <LpWhyAbroad />
+      <LpPathways />
       <LpEligibility />
       <LpProcess />
       <LpTrust />

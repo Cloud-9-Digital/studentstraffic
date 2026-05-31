@@ -2,40 +2,63 @@ import {
   BedDouble,
   ShieldCheck,
   UtensilsCrossed,
+  Trees,
 } from "lucide-react";
 
 import type { University } from "@/lib/data/types";
 
-import { InfoCard, SectionLabel } from "./shared";
+import { SectionLabel } from "./shared";
+
+type Cell = {
+  icon: React.ReactNode;
+  label: string;
+  body: string;
+};
+
+function LifeCell({ icon, label, body }: Cell) {
+  return (
+    <div className="bg-card p-5 space-y-2 sm:p-6">
+      <div className="flex items-center gap-2">
+        <span className="text-accent [&_svg]:size-3.5">{icon}</span>
+        <p className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+          {label}
+        </p>
+      </div>
+      <p className="text-sm leading-7 text-muted-foreground">{body}</p>
+    </div>
+  );
+}
 
 export function UniversityStudentLifeSection({
   university,
 }: {
   university: University;
 }) {
+  const safetyBody = `${university.safetyOverview} ${university.studentSupport}`.trim();
+
   return (
     <div id="living" className="deferred-render scroll-mt-24 space-y-6 py-10">
       <SectionLabel>Student living</SectionLabel>
-      <div className="space-y-3">
-        <InfoCard
-          icon={<BedDouble className="size-4 text-accent" />}
-          title="Campus environment"
+      <div className="overflow-hidden rounded-2xl border border-border bg-border grid gap-px sm:grid-cols-2">
+        <LifeCell
+          icon={<Trees />}
+          label="Campus environment"
           body={university.campusLifestyle}
         />
-        <InfoCard
-          icon={<BedDouble className="size-4 text-accent" />}
-          title="Accommodation"
+        <LifeCell
+          icon={<BedDouble />}
+          label="Accommodation"
           body={university.hostelOverview}
         />
-        <InfoCard
-          icon={<UtensilsCrossed className="size-4 text-accent" />}
-          title="Daily living support"
+        <LifeCell
+          icon={<UtensilsCrossed />}
+          label="Daily living support"
           body={university.indianFoodSupport}
         />
-        <InfoCard
-          icon={<ShieldCheck className="size-4 text-accent" />}
-          title="Safety and support"
-          body={`${university.safetyOverview} ${university.studentSupport}`.trim()}
+        <LifeCell
+          icon={<ShieldCheck />}
+          label="Safety and support"
+          body={safetyBody}
         />
       </div>
     </div>
