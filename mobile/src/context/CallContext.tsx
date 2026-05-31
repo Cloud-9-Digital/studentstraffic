@@ -39,45 +39,100 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
   const [incomingCall, setIncomingCall] = useState<IncomingCall | null>(null);
   const [callError, setCallError] = useState<string | null>(null);
   const [isStarting, setIsStarting] = useState(false);
-  const pollingRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const recoveryTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const recoveryUntilRef = useRef<number>(0);
+  const syncInFlightRef = useRef(false);
+  const lastSyncAtRef = useRef(0);
+  const activeCallRef = useRef<ActiveCall | null>(null);
   const appStateRef = useRef(AppState.currentState);
 
-  // Poll for incoming calls every 3 seconds when app is active
   useEffect(() => {
-    if (activeCall) return; // don't poll while in a call
+    activeCallRef.current = activeCall;
+  }, [activeCall]);
 
-    const poll = async () => {
-      try {
-        const calls = await mobileClient.getIncomingCalls();
-        if (calls.length > 0) {
-          setIncomingCall((prev) => {
-            // only update if it's a new call or status changed
-            if (!prev || prev.id !== calls[0].id || prev.status !== calls[0].status) {
-              return calls[0];
-            }
-            return prev;
-          });
-        } else {
-          setIncomingCall(null);
-        }
-      } catch {
-        // silently ignore polling errors
+  const stopRecoverySync = useCallback(() => {
+    recoveryUntilRef.current = 0;
+    if (recoveryTimeoutRef.current) {
+      clearTimeout(recoveryTimeoutRef.current);
+      recoveryTimeoutRef.current = null;
+    }
+  }, []);
+
+  const syncIncomingCalls = useCallback(async (options?: { force?: boolean }) => {
+    if (activeCallRef.current) return;
+    if (syncInFlightRef.current) return;
+
+    const now = Date.now();
+    if (!options?.force && now - lastSyncAtRef.current < 1500) return;
+
+    syncInFlightRef.current = true;
+    lastSyncAtRef.current = now;
+
+    try {
+      const calls = await mobileClient.getIncomingCalls();
+      if (calls.length > 0) {
+        setIncomingCall((prev) => {
+          if (!prev || prev.id !== calls[0].id || prev.status !== calls[0].status) {
+            return calls[0];
+          }
+          return prev;
+        });
+      } else {
+        setIncomingCall(null);
+      }
+    } catch {
+      // Ignore transient sync errors. Push delivery remains the primary path.
+    } finally {
+      syncInFlightRef.current = false;
+    }
+  }, []);
+
+  const startRecoverySync = useCallback((durationMs = 20_000, intervalMs = 5_000) => {
+    recoveryUntilRef.current = Date.now() + durationMs;
+    if (recoveryTimeoutRef.current) clearTimeout(recoveryTimeoutRef.current);
+
+    const tick = async () => {
+      if (activeCallRef.current || Date.now() >= recoveryUntilRef.current) {
+        stopRecoverySync();
+        return;
+      }
+
+      await syncIncomingCalls({ force: true });
+
+      if (!activeCallRef.current && Date.now() < recoveryUntilRef.current) {
+        recoveryTimeoutRef.current = setTimeout(tick, intervalMs);
+      } else {
+        stopRecoverySync();
       }
     };
 
-    pollingRef.current = setInterval(poll, 3000);
-    poll(); // immediate first check
+    recoveryTimeoutRef.current = setTimeout(tick, intervalMs);
+  }, [stopRecoverySync, syncIncomingCalls]);
+
+  useEffect(() => {
+    if (!activeCall) {
+      syncIncomingCalls({ force: true });
+    } else {
+      stopRecoverySync();
+      setIncomingCall(null);
+    }
 
     const sub = AppState.addEventListener("change", (state) => {
+      const prevState = appStateRef.current;
       appStateRef.current = state;
-      if (state === "active") poll();
+
+      if (state === "active" && prevState !== "active" && !activeCall) {
+        syncIncomingCalls({ force: true });
+        startRecoverySync(15_000, 5_000);
+      }
     });
 
     return () => {
-      if (pollingRef.current) clearInterval(pollingRef.current);
       sub.remove();
     };
-  }, [activeCall]);
+  }, [activeCall, startRecoverySync, stopRecoverySync, syncIncomingCalls]);
+
+  useEffect(() => () => stopRecoverySync(), [stopRecoverySync]);
 
   const startCall = useCallback(async (bookingId: number, peerName: string, universityName: string) => {
     setIsStarting(true);
@@ -96,6 +151,8 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
         isPeerParticipant: tokenData.call.isPeerParticipant,
       };
       setActiveCall(call);
+      setIncomingCall(null);
+      stopRecoverySync();
       startCallForegroundService(call.callId, call.displayName).catch(() => {});
     } catch (e: any) {
       setCallError(e?.message ?? "Failed to start call.");
@@ -122,6 +179,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
       };
       setActiveCall(call);
       setIncomingCall(null);
+      stopRecoverySync();
       cancelIncomingCallNotification(incomingCall.id).catch(() => {});
       startCallForegroundService(call.callId, call.displayName).catch(() => {});
     } catch (e: any) {
@@ -129,14 +187,15 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
     } finally {
       setIsStarting(false);
     }
-  }, [incomingCall]);
+  }, [incomingCall, stopRecoverySync]);
 
   const declineIncomingCall = useCallback(() => {
     if (incomingCall) {
       mobileClient.endCall(incomingCall.id).catch(() => null);
     }
     setIncomingCall(null);
-  }, [incomingCall]);
+    startRecoverySync(10_000, 5_000);
+  }, [incomingCall, startRecoverySync]);
 
   const openIncomingCallById = useCallback((callId: string, callerDisplayName: string, universityName: string) => {
     if (activeCall?.callId === callId) return;
@@ -147,7 +206,8 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
       createdAt: null,
       status: "ringing",
     });
-  }, [activeCall]);
+    startRecoverySync(20_000, 5_000);
+  }, [activeCall, startRecoverySync]);
 
   const endCall = useCallback(async () => {
     if (!activeCall) return;
@@ -159,7 +219,9 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
     } catch {
       // ignore — call is ended locally regardless
     }
-  }, [activeCall]);
+    syncIncomingCalls({ force: true });
+    startRecoverySync(10_000, 5_000);
+  }, [activeCall, startRecoverySync, syncIncomingCalls]);
 
   return (
     <CallContext.Provider
