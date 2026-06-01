@@ -217,6 +217,22 @@ export function ChatWorkspace({
     selectedConversationIdRef.current = selectedConversationId;
   }, [selectedConversationId]);
 
+  // Lock body scroll when mobile thread overlay is open to prevent background scroll leak
+  useEffect(() => {
+    const overlayOpen = !!selectedConversation && !isSidebarVisible;
+    if (overlayOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.touchAction = "none";
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.touchAction = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.touchAction = "";
+    };
+  }, [selectedConversation, isSidebarVisible]);
+
   const replaceUrl = useEffectEvent((conversationId: number | null) => {
     startTransition(() => {
       router.replace(
@@ -517,7 +533,7 @@ export function ChatWorkspace({
 
   function MessageBubbles({ listRef }: { listRef: React.RefObject<HTMLDivElement | null> }) {
     return (
-      <div ref={listRef} className="flex-1 overflow-y-auto bg-white">
+      <div ref={listRef} className="flex-1 overflow-y-auto overscroll-contain bg-white">
         {messages.length === 0 ? (
           <div className="flex h-full min-h-[200px] items-center justify-center px-6">
             <div className="max-w-xs text-center">
