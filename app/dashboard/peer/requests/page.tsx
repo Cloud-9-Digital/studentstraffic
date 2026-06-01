@@ -1,8 +1,10 @@
 import { redirect } from "next/navigation";
 import { and, count, desc, eq, ne } from "drizzle-orm";
-import { Inbox, Clock, Check, X } from "lucide-react";
+import { Inbox, Clock, Check, MessageCircle, X } from "lucide-react";
 
 import { auth } from "@/lib/auth";
+import { openGuideConversationFromBookingAction } from "@/app/_actions/guide-chat";
+import { FormSubmitButton } from "@/components/dashboard/chat/form-submit-button";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { peerCallBookings, studentPeers, universities, users } from "@/lib/db/schema";
@@ -40,23 +42,23 @@ function InitialsAvatar({ name, size = "md" }: { name: string; size?: "sm" | "md
   );
 }
 
-function statusBadge(status: string) {
+function statusLabel(status: string) {
   if (status === "accepted") {
     return (
-      <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">
+      <span className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600">
         <Check className="size-3" /> Accepted
       </span>
     );
   }
   if (status === "declined") {
     return (
-      <span className="inline-flex items-center gap-1 rounded-full border border-red-200 bg-red-50 px-2.5 py-0.5 text-xs font-medium text-red-600">
+      <span className="inline-flex items-center gap-1 text-xs font-medium text-red-500">
         <X className="size-3" /> Declined
       </span>
     );
   }
   return (
-    <span className="inline-flex items-center gap-1 rounded-full border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-700">
+    <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-600">
       <Clock className="size-3" /> Pending
     </span>
   );
@@ -140,14 +142,14 @@ export default async function PeerRequestsPage({
   const historyTotalPages = Math.max(1, Math.ceil(total / HISTORY_PER_PAGE));
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 pb-8">
 
-      {/* ── Pending requests ── */}
+      {/* Pending requests */}
       <div className="space-y-5">
         <div className="flex items-start justify-between gap-4">
           <div>
             <h1 className="text-2xl font-bold text-[#0f1f1c]">Call Requests</h1>
-            <p className="mt-1 text-sm text-[#6b7280]">
+            <p className="mt-0.5 text-sm text-[#6b7280]">
               {pendingRequests.length === 0
                 ? "No pending requests right now."
                 : `${pendingRequests.length} student${pendingRequests.length === 1 ? "" : "s"} waiting for your response.`}
@@ -161,8 +163,10 @@ export default async function PeerRequestsPage({
         </div>
 
         {pendingRequests.length === 0 ? (
-          <div className="rounded-2xl border border-dashed border-[#e5e7eb] bg-white p-14 text-center">
-            <Inbox className="mx-auto size-9 text-[#d1d5db] mb-3" />
+          <div className="py-14 text-center">
+            <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-[#f0f7f5]">
+              <Inbox className="size-7 text-[#0f3d37]" />
+            </div>
             <p className="text-sm font-semibold text-[#374151]">All clear</p>
             <p className="mt-1 text-xs text-[#9ca3af] max-w-xs mx-auto">
               When students request a call with you, they&apos;ll appear here for you to accept or decline.
@@ -171,11 +175,11 @@ export default async function PeerRequestsPage({
         ) : (
           <>
             {/* Mobile flat list */}
-            <div className="md:hidden divide-y divide-[#f3f4f6] rounded-2xl border border-[#e5e7eb] bg-white shadow-sm overflow-hidden">
+            <div className="md:hidden divide-y divide-[#eaeaea]">
               {pendingRequests.map((req) => {
                 const displayName = req.studentName ?? req.studentEmail.split("@")[0];
                 return (
-                  <div key={req.id} className="px-4 py-4">
+                  <div key={req.id} className="py-4">
                     <div className="flex items-center gap-3 mb-3">
                       <InitialsAvatar name={displayName} />
                       <div className="min-w-0 flex-1">
@@ -190,10 +194,7 @@ export default async function PeerRequestsPage({
                       <p className="shrink-0 text-[10px] text-[#9ca3af]">{formatDate(req.createdAt)}</p>
                     </div>
                     {req.message ? (
-                      <div className="mb-3 rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-3 py-2.5">
-                        <p className="mb-0.5 text-[10px] font-semibold uppercase tracking-wider text-[#9ca3af]">Message</p>
-                        <p className="text-sm text-[#374151] leading-relaxed">{req.message}</p>
-                      </div>
+                      <p className="mb-3 text-sm text-[#374151] leading-relaxed">{req.message}</p>
                     ) : (
                       <p className="mb-3 text-xs italic text-[#9ca3af]">No message included.</p>
                     )}
@@ -204,22 +205,22 @@ export default async function PeerRequestsPage({
             </div>
 
             {/* Desktop table */}
-            <div className="hidden md:block rounded-2xl border border-[#e5e7eb] bg-white shadow-sm overflow-hidden">
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
-                    <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Student</th>
-                    <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">What they want to discuss</th>
-                    <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Requested</th>
-                    <th className="px-5 py-3.5 text-right text-xs font-semibold text-[#6b7280]">Actions</th>
+                  <tr className="border-b border-[#eaeaea]">
+                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Student</th>
+                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">What they want to discuss</th>
+                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Requested</th>
+                    <th className="pb-3 text-right text-xs font-semibold text-[#9ca3af]">Actions</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#f3f4f6]">
+                <tbody className="divide-y divide-[#eaeaea]">
                   {pendingRequests.map((req) => {
                     const displayName = req.studentName ?? req.studentEmail.split("@")[0];
                     return (
                       <tr key={req.id} className="hover:bg-[#fafafa] transition-colors">
-                        <td className="px-5 py-4">
+                        <td className="py-4 pr-6">
                           <div className="flex items-center gap-3">
                             <InitialsAvatar name={displayName} />
                             <div className="min-w-0">
@@ -233,17 +234,17 @@ export default async function PeerRequestsPage({
                             </div>
                           </div>
                         </td>
-                        <td className="px-5 py-4 max-w-xs">
+                        <td className="py-4 pr-6 max-w-xs">
                           {req.message ? (
                             <p className="line-clamp-2 text-xs text-[#6b7280] leading-relaxed">{req.message}</p>
                           ) : (
                             <p className="text-xs italic text-[#9ca3af]">No message</p>
                           )}
                         </td>
-                        <td className="px-5 py-4 text-xs text-[#9ca3af] whitespace-nowrap">
+                        <td className="py-4 pr-6 text-xs text-[#9ca3af] whitespace-nowrap">
                           {formatDate(req.createdAt)}
                         </td>
-                        <td className="px-5 py-4">
+                        <td className="py-4">
                           <div className="flex justify-end">
                             <RequestActions bookingId={req.id} />
                           </div>
@@ -258,22 +259,22 @@ export default async function PeerRequestsPage({
         )}
       </div>
 
-      {/* ── History ── */}
+      {/* History */}
       {(respondedRequests.length > 0 || historyPage > 1) && (
         <div className="space-y-4">
           <div>
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">History</h2>
-            <p className="mt-0.5 text-xs text-[#9ca3af]">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">History</p>
+            <p className="mt-0.5 text-sm text-[#6b7280]">
               {total} responded request{total === 1 ? "" : "s"}
             </p>
           </div>
 
           {/* Mobile flat list */}
-          <div className="md:hidden divide-y divide-[#f3f4f6] rounded-2xl border border-[#e5e7eb] bg-white shadow-sm overflow-hidden">
+          <div className="md:hidden divide-y divide-[#eaeaea]">
             {respondedRequests.map((req) => {
               const displayName = req.studentName ?? req.studentEmail.split("@")[0];
               return (
-                <div key={req.id} className="flex items-center gap-3 px-4 py-3.5">
+                <div key={req.id} className="flex items-center gap-3 py-3.5">
                   <InitialsAvatar name={displayName} size="sm" />
                   <div className="min-w-0 flex-1">
                     <p className="truncate text-sm font-semibold text-[#0f1f1c]">{displayName}</p>
@@ -281,14 +282,27 @@ export default async function PeerRequestsPage({
                   </div>
                   <div className="shrink-0 flex items-center gap-2">
                     {req.status === "accepted" && env.hasAgoraVoice && (
-                      <PeerStartCallButton
-                        bookingId={req.id}
-                        studentName={displayName}
-                        universityName={peer.universityName}
-                      />
+                      <>
+                        <form action={openGuideConversationFromBookingAction}>
+                          <input type="hidden" name="bookingId" value={req.id} />
+                          <input type="hidden" name="redirectPath" value="/dashboard/peer/messages" />
+                          <FormSubmitButton
+                            className="inline-flex items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3 py-2 text-xs font-semibold text-[#374151] transition hover:bg-[#f9fafb]"
+                            pendingLabel="Opening…"
+                          >
+                            <MessageCircle className="size-3.5" />
+                            Message
+                          </FormSubmitButton>
+                        </form>
+                        <PeerStartCallButton
+                          bookingId={req.id}
+                          studentName={displayName}
+                          universityName={peer.universityName}
+                        />
+                      </>
                     )}
-                    {!env.hasAgoraVoice && statusBadge(req.status)}
-                    {env.hasAgoraVoice && req.status !== "accepted" && statusBadge(req.status)}
+                    {!env.hasAgoraVoice && statusLabel(req.status)}
+                    {env.hasAgoraVoice && req.status !== "accepted" && statusLabel(req.status)}
                   </div>
                 </div>
               );
@@ -296,25 +310,25 @@ export default async function PeerRequestsPage({
           </div>
 
           {/* Desktop table */}
-          <div className="hidden md:block rounded-2xl border border-[#e5e7eb] bg-white shadow-sm overflow-hidden">
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
-                  <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Student</th>
-                  <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Message</th>
-                  <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Status</th>
-                  <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Date</th>
+                <tr className="border-b border-[#eaeaea]">
+                  <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Student</th>
+                  <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Message</th>
+                  <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Status</th>
+                  <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Date</th>
                   {env.hasAgoraVoice && (
-                    <th className="px-5 py-3.5 text-right text-xs font-semibold text-[#6b7280]">Action</th>
+                    <th className="pb-3 text-right text-xs font-semibold text-[#9ca3af]">Action</th>
                   )}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#f3f4f6]">
+              <tbody className="divide-y divide-[#eaeaea]">
                 {respondedRequests.map((req) => {
                   const displayName = req.studentName ?? req.studentEmail.split("@")[0];
                   return (
                     <tr key={req.id} className="hover:bg-[#fafafa] transition-colors">
-                      <td className="px-5 py-4">
+                      <td className="py-4 pr-6">
                         <div className="flex items-center gap-3">
                           <InitialsAvatar name={displayName} size="sm" />
                           <div className="min-w-0">
@@ -323,24 +337,37 @@ export default async function PeerRequestsPage({
                           </div>
                         </div>
                       </td>
-                      <td className="px-5 py-4 max-w-xs">
+                      <td className="py-4 pr-6 max-w-xs">
                         <p className="line-clamp-2 text-xs text-[#6b7280]">{req.message ?? "—"}</p>
                       </td>
-                      <td className="px-5 py-4 whitespace-nowrap">
-                        {statusBadge(req.status)}
+                      <td className="py-4 pr-6 whitespace-nowrap">
+                        {statusLabel(req.status)}
                       </td>
-                      <td className="px-5 py-4 text-xs text-[#9ca3af] whitespace-nowrap">
+                      <td className="py-4 pr-6 text-xs text-[#9ca3af] whitespace-nowrap">
                         {formatDate(req.createdAt)}
                       </td>
                       {env.hasAgoraVoice && (
-                        <td className="px-5 py-4">
+                        <td className="py-4">
                           <div className="flex justify-end">
                             {req.status === "accepted" ? (
-                              <PeerStartCallButton
-                                bookingId={req.id}
-                                studentName={displayName}
-                                universityName={peer.universityName}
-                              />
+                              <div className="flex items-center gap-2">
+                                <form action={openGuideConversationFromBookingAction}>
+                                  <input type="hidden" name="bookingId" value={req.id} />
+                                  <input type="hidden" name="redirectPath" value="/dashboard/peer/messages" />
+                                  <FormSubmitButton
+                                    className="inline-flex items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3 py-2 text-xs font-semibold text-[#374151] transition hover:bg-[#f9fafb]"
+                                    pendingLabel="Opening…"
+                                  >
+                                    <MessageCircle className="size-3.5" />
+                                    Message
+                                  </FormSubmitButton>
+                                </form>
+                                <PeerStartCallButton
+                                  bookingId={req.id}
+                                  studentName={displayName}
+                                  universityName={peer.universityName}
+                                />
+                              </div>
                             ) : (
                               <span className="text-xs text-[#9ca3af]">—</span>
                             )}

@@ -38,6 +38,7 @@ const envSchema = z.object({
   SENTRY_AUTH_TOKEN: z.string().min(1).optional(),
   NEXT_PUBLIC_AGORA_APP_ID: z.string().min(1).optional(),
   AGORA_APP_CERTIFICATE: z.string().min(1).optional(),
+  ABLY_API_KEY: z.string().min(1).optional(),
 });
 
 function optionalEnv(value: string | undefined) {
@@ -78,6 +79,7 @@ const parsedEnv = envSchema.safeParse({
   SENTRY_AUTH_TOKEN: optionalEnv(process.env.SENTRY_AUTH_TOKEN),
   NEXT_PUBLIC_AGORA_APP_ID: optionalEnv(process.env.NEXT_PUBLIC_AGORA_APP_ID),
   AGORA_APP_CERTIFICATE: optionalEnv(process.env.AGORA_APP_CERTIFICATE),
+  ABLY_API_KEY: optionalEnv(process.env.ABLY_API_KEY),
 });
 
 if (!parsedEnv.success) {
@@ -165,6 +167,7 @@ export const env = {
   sentryAuthToken: parsedEnv.data.SENTRY_AUTH_TOKEN,
   agoraAppId: parsedEnv.data.NEXT_PUBLIC_AGORA_APP_ID,
   agoraAppCertificate: parsedEnv.data.AGORA_APP_CERTIFICATE,
+  ablyApiKey: parsedEnv.data.ABLY_API_KEY,
   hasUpstashRedis: Boolean(
     parsedEnv.data.UPSTASH_REDIS_REST_URL && parsedEnv.data.UPSTASH_REDIS_REST_TOKEN
   ),
@@ -172,4 +175,5 @@ export const env = {
   hasAgoraVoice: Boolean(
     parsedEnv.data.NEXT_PUBLIC_AGORA_APP_ID && parsedEnv.data.AGORA_APP_CERTIFICATE
   ),
+  hasAblyRealtime: Boolean(parsedEnv.data.ABLY_API_KEY),
 };

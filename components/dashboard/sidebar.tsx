@@ -19,6 +19,7 @@ import {
   UserCog,
   Inbox,
   PhoneCall,
+  MessageSquare,
   MoreHorizontal,
   X,
 } from "lucide-react";
@@ -63,6 +64,7 @@ function SignOutDialog({ open, onConfirm, onCancel }: { open: boolean; onConfirm
 
 const studentNavItems = [
   { href: "/dashboard",              icon: LayoutDashboard, label: "Overview" },
+  { href: "/dashboard/messages",     icon: MessageSquare,   label: "Messages" },
   { href: "/dashboard/calls",        icon: PhoneCall,       label: "My Calls" },
   { href: "/dashboard/shortlists",   icon: BookmarkCheck,   label: "Shortlists" },
   { href: "/dashboard/applications", icon: FileText,        label: "Applications" },
@@ -71,6 +73,7 @@ const studentNavItems = [
 
 const peerNavItems = [
   { href: "/dashboard/peer",           icon: Star,    label: "Overview" },
+  { href: "/dashboard/peer/messages",  icon: MessageSquare, label: "Messages" },
   { href: "/dashboard/peer/requests",  icon: Inbox,   label: "Requests" },
   { href: "/dashboard/peer/students",  icon: Users,   label: "My Students" },
   { href: "/dashboard/peer/edit",      icon: UserCog, label: "Edit Profile" },
@@ -236,9 +239,9 @@ export function DashboardMobileHeader() {
 
 const bottomNavItems = [
   { href: "/dashboard",              icon: LayoutDashboard, label: "Home" },
+  { href: "/dashboard/messages",     icon: MessageSquare,   label: "Messages" },
   { href: "/dashboard/calls",        icon: PhoneCall,       label: "Calls" },
   { href: "/dashboard/shortlists",   icon: BookmarkCheck,   label: "Shortlists" },
-  { href: "/dashboard/applications", icon: FileText,        label: "Applications" },
 ];
 
 /** Mobile bottom nav */
@@ -251,8 +254,10 @@ export function DashboardBottomNav() {
     href === "/dashboard" ? pathname === href : pathname.startsWith(href);
 
   const drawerItems = [
+    { href: "/dashboard/applications", icon: FileText,     label: "Applications" },
     { href: "/dashboard/settings",      icon: Settings,     label: "Settings" },
     { href: "/dashboard/peer",          icon: Star,         label: "Guide Overview" },
+    { href: "/dashboard/peer/messages", icon: MessageSquare,label: "Guide Messages" },
     { href: "/dashboard/peer/requests", icon: Inbox,        label: "Requests" },
     { href: "/dashboard/peer/students", icon: Users,        label: "My Students" },
     { href: "/dashboard/peer/edit",     icon: UserCog,      label: "Edit Guide Profile" },

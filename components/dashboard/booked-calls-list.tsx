@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Loader2, PhoneCall } from "lucide-react";
+import { Loader2, MessageCircle, PhoneCall } from "lucide-react";
 
+import { openStudentGuideConversationAction } from "@/app/_actions/guide-chat";
 import { startPeerCallAction } from "@/app/_actions/start-peer-call";
+import { FormSubmitButton } from "@/components/dashboard/chat/form-submit-button";
 import { CallOverlay } from "@/components/site/call-overlay";
 
 type BookedPeer = {
@@ -31,7 +33,7 @@ function PeerInitials({ name }: { name: string }) {
   const initials = name.split(" ").map((n) => n[0]).slice(0, 2).join("").toUpperCase();
   const color = AVATAR_COLORS[name.charCodeAt(0) % AVATAR_COLORS.length];
   return (
-    <div className={`flex size-8 shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${color}`}>
+    <div className={`flex size-9 shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${color}`}>
       {initials}
     </div>
   );
@@ -68,22 +70,60 @@ function PeerRow({
     setIsPending(false);
   }
 
-  const statusCell = canCall ? (
-    <button
-      type="button"
-      onClick={() => void handleStart()}
-      disabled={isPending}
-      className="inline-flex items-center gap-1.5 rounded-xl bg-[#0f3d37] px-3.5 py-2 text-xs font-semibold text-white transition hover:bg-[#184a43] disabled:opacity-60"
-    >
-      {isPending ? <Loader2 className="size-3.5 animate-spin" /> : <PhoneCall className="size-3.5" />}
-      {isPending ? "Starting…" : "Start call"}
-    </button>
+  const actions = canCall ? (
+    <div className="flex flex-wrap items-center gap-2">
+      <button
+        type="button"
+        onClick={() => void handleStart()}
+        disabled={isPending}
+        className="inline-flex items-center gap-1.5 rounded-xl bg-[#0f3d37] px-3.5 py-2 text-xs font-semibold text-white transition hover:bg-[#184a43] disabled:opacity-60"
+      >
+        {isPending ? <Loader2 className="size-3.5 animate-spin" /> : <PhoneCall className="size-3.5" />}
+        {isPending ? "Starting…" : "Call"}
+      </button>
+      <form action={openStudentGuideConversationAction}>
+        <input type="hidden" name="peerId" value={peer.peerId} />
+        <input type="hidden" name="redirectPath" value="/dashboard/messages" />
+        <FormSubmitButton
+          className="inline-flex items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3.5 py-2 text-xs font-semibold text-[#374151] transition hover:bg-[#f9fafb]"
+          pendingLabel="Opening…"
+        >
+          <MessageCircle className="size-3.5" />
+          Message
+        </FormSubmitButton>
+      </form>
+    </div>
   ) : isPendingStatus ? (
-    <span className="text-xs font-medium text-amber-600">Awaiting approval</span>
+    <div className="flex flex-wrap items-center gap-2">
+      <span className="text-xs font-medium text-amber-600">Awaiting approval</span>
+      <form action={openStudentGuideConversationAction}>
+        <input type="hidden" name="peerId" value={peer.peerId} />
+        <input type="hidden" name="redirectPath" value="/dashboard/messages" />
+        <FormSubmitButton
+          className="inline-flex items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3.5 py-2 text-xs font-semibold text-[#374151] transition hover:bg-[#f9fafb]"
+          pendingLabel="Opening…"
+        >
+          <MessageCircle className="size-3.5" />
+          Message
+        </FormSubmitButton>
+      </form>
+    </div>
   ) : isDeclined ? (
     <span className="text-xs font-medium text-red-500">Not available</span>
   ) : isAccepted ? (
-    <span className="text-xs text-[#9ca3af]">Calling not enabled</span>
+    <div className="flex flex-wrap items-center gap-2">
+      <form action={openStudentGuideConversationAction}>
+        <input type="hidden" name="peerId" value={peer.peerId} />
+        <input type="hidden" name="redirectPath" value="/dashboard/messages" />
+        <FormSubmitButton
+          className="inline-flex items-center gap-1.5 rounded-xl border border-[#e5e7eb] px-3.5 py-2 text-xs font-semibold text-[#374151] transition hover:bg-[#f9fafb]"
+          pendingLabel="Opening…"
+        >
+          <MessageCircle className="size-3.5" />
+          Message
+        </FormSubmitButton>
+      </form>
+    </div>
   ) : (
     <span className="text-xs text-[#9ca3af]">Offline</span>
   );
@@ -91,14 +131,14 @@ function PeerRow({
   return (
     <>
       {/* Mobile row */}
-      <div className="md:hidden flex items-center gap-3 px-4 py-3.5">
+      <div className="md:hidden flex items-center gap-3 py-4">
         <PeerInitials name={peer.fullName} />
         <div className="min-w-0 flex-1">
           <p className="truncate text-sm font-semibold text-[#0f1f1c]">{peer.fullName}</p>
           <p className="truncate text-xs text-[#6b7280]">{peer.universityName}</p>
+          {error && <p className="mt-1 text-[10px] text-red-600">{error}</p>}
         </div>
-        <div className="shrink-0">{statusCell}</div>
-        {error && <p className="mt-1 text-[10px] text-red-600">{error}</p>}
+        <div className="shrink-0">{actions}</div>
       </div>
 
       {/* Desktop row */}
@@ -114,7 +154,7 @@ function PeerRow({
         </td>
         <td className="px-5 py-4 text-sm text-[#6b7280] whitespace-nowrap">{peer.universityName}</td>
         <td className="px-5 py-4">
-          {statusCell}
+          {actions}
           {error && <p className="mt-1 text-[10px] text-red-600">{error}</p>}
         </td>
       </tr>
@@ -133,8 +173,8 @@ export function BookedCallsList({
 
   return (
     <>
-      {/* Mobile flat list */}
-      <div className="md:hidden divide-y divide-[#f3f4f6] rounded-2xl border border-[#e5e7eb] bg-white overflow-hidden shadow-sm">
+      {/* Mobile: flat list, no card wrapper */}
+      <div className="md:hidden divide-y divide-[#eaeaea]">
         {peers.map((peer) => (
           <PeerRow
             key={peer.bookingId}
@@ -145,17 +185,17 @@ export function BookedCallsList({
         ))}
       </div>
 
-      {/* Desktop table */}
-      <div className="hidden md:block rounded-2xl border border-[#e5e7eb] bg-white overflow-hidden shadow-sm">
+      {/* Desktop: clean table */}
+      <div className="hidden md:block overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
-              <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Guide</th>
-              <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">University</th>
-              <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Action</th>
+            <tr className="border-b border-[#eaeaea]">
+              <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Guide</th>
+              <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">University</th>
+              <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Action</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#f3f4f6]">
+          <tbody className="divide-y divide-[#eaeaea]">
             {peers.map((peer) => (
               <PeerRow
                 key={peer.bookingId}

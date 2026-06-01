@@ -1,4 +1,4 @@
-import { and, eq, inArray } from "drizzle-orm";
+import { and, eq, gt, inArray } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
@@ -113,6 +113,7 @@ export async function POST(request: Request) {
         eq(peerCallSessions.peerId, peer.id),
         eq(peerCallSessions.callerUserId, session.user.id),
         inArray(peerCallSessions.status, ["ringing", "active"]),
+        gt(peerCallSessions.expiresAt, now)
       )
     )
     .limit(1);

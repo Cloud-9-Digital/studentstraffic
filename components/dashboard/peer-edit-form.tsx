@@ -101,10 +101,10 @@ export function PeerEditForm({ peer }: { peer: Peer }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-xl border border-[#e5e7eb] bg-white divide-y divide-[#f3f4f6]">
+    <form onSubmit={handleSubmit} className="divide-y divide-[#eaeaea]">
 
       {/* Photo row */}
-      <div className="flex items-center gap-4 px-5 py-5">
+      <div className="flex items-center gap-4 py-5">
         <div className="flex size-16 shrink-0 items-center justify-center rounded-xl bg-[#0f3d37] text-xl font-bold text-white overflow-hidden">
           {photoPreview
             // eslint-disable-next-line @next/next/no-img-element
@@ -145,8 +145,8 @@ export function PeerEditForm({ peer }: { peer: Peer }) {
       </div>
 
       {/* Study details */}
-      <div className="px-5 py-5 space-y-4">
-        <p className="text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">Study details</p>
+      <div className="py-6 space-y-4">
+        <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Study details</p>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="space-y-1.5">
             <label className="text-xs font-medium text-[#374151]">Course</label>
@@ -168,8 +168,8 @@ export function PeerEditForm({ peer }: { peer: Peer }) {
       </div>
 
       {/* Home location */}
-      <div className="px-5 py-5 space-y-4">
-        <p className="text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">Home in India</p>
+      <div className="py-6 space-y-4">
+        <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Home in India</p>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="space-y-1.5">
             <label className="text-xs font-medium text-[#374151]">State</label>
@@ -198,8 +198,8 @@ export function PeerEditForm({ peer }: { peer: Peer }) {
       </div>
 
       {/* Languages */}
-      <div className="px-5 py-5 space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-wider text-[#9ca3af]">Languages you speak</p>
+      <div className="py-6 space-y-3">
+        <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Languages you speak</p>
         <div className="flex flex-wrap gap-2">
           {LANGUAGE_OPTIONS.map((lang) => {
             const active = languages.includes(lang);
@@ -222,7 +222,7 @@ export function PeerEditForm({ peer }: { peer: Peer }) {
       </div>
 
       {/* Submit */}
-      <div className="px-5 py-4 flex justify-end">
+      <div className="py-5 flex justify-end">
         <button
           type="submit"
           disabled={isPending}

@@ -122,24 +122,25 @@ export default async function MyCallsPage({
   const voiceEnabled = env.hasAgoraVoice;
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 pb-8">
+
       {/* Booked guides */}
       <div className="space-y-5">
         <div>
           <h1 className="text-2xl font-bold text-[#0f1f1c]">My Calls</h1>
-          <p className="mt-1 text-sm text-[#6b7280]">
-            Guides you&apos;ve booked a call with. Start a call when you&apos;re ready to connect.
+          <p className="mt-0.5 text-sm text-[#6b7280]">
+            Guides you&apos;ve booked a call with.
           </p>
         </div>
 
         {peers.length === 0 ? (
-          <div className="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-[#e5e7eb] bg-white px-6 py-14 text-center">
-            <div className="flex size-12 items-center justify-center rounded-full bg-[#f0f7f5]">
-              <PhoneCall className="size-5 text-[#0f3d37]" />
+          <div className="py-14 text-center">
+            <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-[#f0f7f5]">
+              <PhoneCall className="size-7 text-[#0f3d37]" />
             </div>
             <p className="text-sm font-semibold text-[#374151]">No calls booked yet</p>
-            <p className="text-xs text-[#9ca3af]">
-              Browse student guides and book a call to chat with someone who has been through it.
+            <p className="mt-1 text-xs text-[#9ca3af] max-w-xs mx-auto">
+              Browse student guides and book a call to chat with someone who&apos;s been through it.
             </p>
           </div>
         ) : (
@@ -151,32 +152,33 @@ export default async function MyCallsPage({
       {env.hasAgoraVoice && (
         <div className="space-y-4">
           <div>
-            <h2 className="text-lg font-bold text-[#0f1f1c]">Call history</h2>
-            <p className="mt-1 text-sm text-[#6b7280]">
-              {historyTotal === 0
-                ? "No calls yet."
-                : `${historyTotal} call${historyTotal === 1 ? "" : "s"} recorded.`}
-            </p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Call history</p>
+            {historyTotal > 0 && (
+              <p className="mt-0.5 text-sm text-[#6b7280]">
+                {historyTotal} call{historyTotal === 1 ? "" : "s"}
+              </p>
+            )}
           </div>
 
           {historyTotal === 0 ? (
-            <div className="rounded-2xl border border-dashed border-[#e5e7eb] bg-white p-8 text-center">
+            <div className="py-10 text-center">
               <Phone className="mx-auto size-7 text-[#d1d5db] mb-3" />
               <p className="text-sm text-[#374151]">No calls yet</p>
               <p className="mt-1 text-xs text-[#9ca3af]">Your call history will appear here.</p>
             </div>
           ) : (
             <>
-              <div className="md:hidden divide-y divide-[#f3f4f6] rounded-2xl border border-[#e5e7eb] bg-white overflow-hidden">
+              {/* Mobile list */}
+              <div className="md:hidden divide-y divide-[#eaeaea]">
                 {callHistory.map((c) => (
-                  <div key={c.id} className="p-4">
+                  <div key={c.id} className="py-4">
                     <div className="flex items-center justify-between gap-2">
                       <p className="font-semibold text-sm text-[#0f1f1c]">{c.peerName ?? "Unknown guide"}</p>
                       <p className="text-xs text-[#9ca3af] shrink-0">
-                        {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
+                        {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) ?? "—"}
                       </p>
                     </div>
-                    <div className="mt-1.5 flex items-center gap-2 text-xs text-[#6b7280]">
+                    <div className="mt-1 flex items-center gap-2 text-xs text-[#6b7280]">
                       <span className="inline-flex items-center gap-1">
                         {callStatusIcon(c.status)}
                         {callStatusLabel(c.status)}
@@ -189,32 +191,33 @@ export default async function MyCallsPage({
                 ))}
               </div>
 
-              <div className="hidden md:block rounded-2xl border border-[#e5e7eb] bg-white overflow-x-auto shadow-sm">
+              {/* Desktop table */}
+              <div className="hidden md:block overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
-                      <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Guide</th>
-                      <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Status</th>
-                      <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Duration</th>
-                      <th className="px-5 py-3.5 text-left text-xs font-semibold text-[#6b7280]">Date &amp; time</th>
+                    <tr className="border-b border-[#eaeaea]">
+                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Guide</th>
+                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Status</th>
+                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Duration</th>
+                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Date &amp; time</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#f3f4f6]">
+                  <tbody className="divide-y divide-[#eaeaea]">
                     {callHistory.map((c) => (
                       <tr key={c.id} className="hover:bg-[#fafafa] transition-colors">
-                        <td className="px-5 py-4 font-semibold text-[#0f1f1c] whitespace-nowrap">
+                        <td className="py-4 font-semibold text-[#0f1f1c] whitespace-nowrap pr-6">
                           {c.peerName ?? "Unknown guide"}
                         </td>
-                        <td className="px-5 py-4">
+                        <td className="py-4 pr-6">
                           <span className="inline-flex items-center gap-1.5">
                             {callStatusIcon(c.status)}
                             <span className="text-[#6b7280]">{callStatusLabel(c.status)}</span>
                           </span>
                         </td>
-                        <td className="px-5 py-4 text-[#6b7280]">
+                        <td className="py-4 text-[#6b7280] pr-6">
                           {callDuration(c.answeredAt, c.endedAt) ?? "—"}
                         </td>
-                        <td className="px-5 py-4 text-xs text-[#9ca3af] whitespace-nowrap">
+                        <td className="py-4 text-xs text-[#9ca3af] whitespace-nowrap">
                           {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
                         </td>
                       </tr>

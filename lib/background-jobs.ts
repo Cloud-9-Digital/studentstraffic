@@ -6,6 +6,7 @@ import { getDb } from "@/lib/db/server";
 import { backgroundJobs } from "@/lib/db/schema";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 import { syncLeadDestinations } from "@/lib/lead-sync";
+import { cleanupExpiredPeerCallSessions } from "@/lib/peer-calls";
 import { sendLeadWhatsAppMessage } from "@/lib/wati";
 
 const LEAD_DELIVERY_JOB_KIND = "lead.delivery";
@@ -112,11 +113,12 @@ export async function processPendingBackgroundJobs(options: ProcessJobsOptions =
   const db = getDb();
 
   if (!db) {
-    return { processed: 0, failed: 0 };
+    return { processed: 0, failed: 0, expiredCallsCleaned: 0 };
   }
 
   const now = new Date();
   const limit = Math.max(1, Math.min(options.limit ?? 10, 50));
+  const expiredCallsCleaned = await cleanupExpiredPeerCallSessions();
   const pendingJobs = await db
     .select()
     .from(backgroundJobs)
@@ -184,7 +186,7 @@ export async function processPendingBackgroundJobs(options: ProcessJobsOptions =
     }
   }
 
-  return { processed, failed };
+  return { processed, failed, expiredCallsCleaned };
 }
 
 export async function retryBackgroundJobs(jobIds: number[]) {

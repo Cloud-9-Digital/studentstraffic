@@ -60,6 +60,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["192.168.1.8"],
+  serverExternalPackages: ["ably"],
   logging: {
     browserToTerminal: "error",
     serverFunctions: false,

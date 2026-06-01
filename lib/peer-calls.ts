@@ -35,9 +35,9 @@ export type IncomingPeerCallSummary = {
   status: PeerCallStatus;
 };
 
-async function expireStaleRingingCalls(userId?: string) {
+export async function cleanupExpiredPeerCallSessions(userId?: string) {
   const db = getDb();
-  if (!db) return;
+  if (!db) return 0;
 
   const now = new Date();
 
@@ -65,7 +65,7 @@ async function expireStaleRingingCalls(userId?: string) {
       )
     : and(eq(peerCallSessions.status, "active"), lt(peerCallSessions.expiresAt, now));
 
-  await Promise.all([
+  const [expiredRingingCalls, endedActiveCalls] = await Promise.all([
     db.update(peerCallSessions)
       .set({ status: "expired", endedAt: now, updatedAt: now })
       .where(ringingWhere),
@@ -73,14 +73,14 @@ async function expireStaleRingingCalls(userId?: string) {
       .set({ status: "ended", endedAt: now, updatedAt: now })
       .where(activeWhere),
   ]);
+
+  return expiredRingingCalls.rowCount + endedActiveCalls.rowCount;
 }
 
 export async function getAuthorizedPeerCallSession(
   callId: string,
   userId: string
 ): Promise<AuthorizedPeerCallSession | null> {
-  await expireStaleRingingCalls(userId);
-
   const db = getDb();
   if (!db) return null;
 
@@ -126,8 +126,6 @@ export async function getAuthorizedPeerCallSession(
 }
 
 export async function getIncomingPeerCalls(userId: string): Promise<IncomingPeerCallSummary[]> {
-  await expireStaleRingingCalls(userId);
-
   const db = getDb();
   if (!db) return [];
 
@@ -170,8 +168,6 @@ export type IncomingStudentCallSummary = {
 };
 
 export async function getIncomingStudentCalls(studentUserId: string): Promise<IncomingStudentCallSummary[]> {
-  await expireStaleRingingCalls(studentUserId);
-
   const db = getDb();
   if (!db) return [];
 
@@ -240,8 +236,6 @@ export type ActiveCallSummary = {
 };
 
 export async function getActivePeerCallForUser(userId: string): Promise<ActiveCallSummary | null> {
-  await expireStaleRingingCalls(userId);
-
   const db = getDb();
   if (!db) return null;
 

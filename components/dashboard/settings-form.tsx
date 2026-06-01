@@ -55,8 +55,10 @@ export function SettingsForm({ name, email, phone, neetScore, budgetUsd, preferr
       <input type="hidden" name="preferredCountries" value={[...selected].join(",")} />
 
       {/* Personal info */}
-      <section className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-sm">
-        <h2 className="mb-5 text-sm font-semibold text-[#0f1f1c]">Personal information</h2>
+      <section className="space-y-5">
+        <div className="border-b border-[#eaeaea] pb-3">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Personal information</p>
+        </div>
         <div className="grid gap-5 sm:grid-cols-2">
           <div className="space-y-1.5">
             <label htmlFor="name" className="block text-xs font-semibold text-[#374151]">
@@ -98,9 +100,11 @@ export function SettingsForm({ name, email, phone, neetScore, budgetUsd, preferr
       </section>
 
       {/* Study preferences */}
-      <section className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-sm">
-        <h2 className="mb-1 text-sm font-semibold text-[#0f1f1c]">Study preferences</h2>
-        <p className="mb-5 text-xs text-[#6b7280]">Help us personalise recommendations for you.</p>
+      <section className="space-y-5">
+        <div className="border-b border-[#eaeaea] pb-3">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Study preferences</p>
+          <p className="mt-0.5 text-xs text-[#6b7280]">Help us personalise recommendations for you.</p>
+        </div>
 
         <div className="grid gap-5 sm:grid-cols-2">
           <div className="space-y-1.5">

@@ -109,12 +109,13 @@ export default async function PeerStudentsPage({
   const historyTotalPages = Math.max(1, Math.ceil(historyTotal / HISTORY_PER_PAGE));
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10 pb-8">
+
       {/* Students section */}
       <div className="space-y-5">
         <div>
           <h1 className="text-2xl font-bold text-[#0f1f1c]">My Students</h1>
-          <p className="mt-1 text-sm text-[#6b7280]">
+          <p className="mt-0.5 text-sm text-[#6b7280]">
             {students.length === 0
               ? "No students have contacted you yet."
               : `${students.length} student${students.length === 1 ? "" : "s"} have contacted you.`}
@@ -122,155 +123,162 @@ export default async function PeerStudentsPage({
         </div>
 
         {students.length === 0 ? (
-          <div className="rounded-xl border border-dashed border-[#e5e7eb] bg-white p-12 text-center">
-            <Users className="mx-auto size-8 text-[#d1d5db] mb-3" />
-            <p className="text-sm font-medium text-[#374151]">No students yet</p>
+          <div className="py-14 text-center">
+            <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-[#f0f7f5]">
+              <Users className="size-7 text-[#0f3d37]" />
+            </div>
+            <p className="text-sm font-semibold text-[#374151]">No students yet</p>
             <p className="mt-1 text-xs text-[#9ca3af]">When students contact you, they will appear here.</p>
           </div>
         ) : (
           <>
-          <div className="md:hidden space-y-3">
-            {students.map((s) => (
-              <div key={s.id} className="rounded-xl border border-[#e5e7eb] bg-white p-4">
-                <div className="flex items-start justify-between gap-2">
-                  <p className="font-semibold text-sm text-[#0f1f1c]">{s.fullName}</p>
-                  <p className="text-xs text-[#9ca3af] shrink-0">
-                    {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
-                  </p>
-                </div>
-                {(s.userCity || s.userState) && (
-                  <p className="mt-1 text-xs text-[#6b7280]">
-                    {s.userCity ? `${s.userCity}, ${s.userState}` : s.userState}
-                  </p>
-                )}
-                {s.courseInterest && (
-                  <p className="mt-1 text-xs text-[#6b7280]">{s.courseInterest}</p>
-                )}
-                {s.email && (
-                  <a href={`mailto:${s.email}`} className="mt-1.5 block text-xs font-medium text-[#0f3d37] hover:underline">
-                    {s.email}
-                  </a>
-                )}
-              </div>
-            ))}
-          </div>
-
-          <div className="hidden md:block rounded-xl border border-[#e5e7eb] bg-white overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Name</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Location</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Course interest</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Email</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Date</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-[#f3f4f6]">
-                {students.map((s) => (
-                  <tr key={s.id} className="hover:bg-[#fafafa]">
-                    <td className="px-4 py-3 font-medium text-[#0f1f1c] whitespace-nowrap">{s.fullName}</td>
-                    <td className="px-4 py-3 text-[#6b7280] whitespace-nowrap">
-                      {s.userCity ? `${s.userCity}, ${s.userState}` : s.userState}
-                    </td>
-                    <td className="px-4 py-3 text-[#6b7280]">{s.courseInterest ?? "—"}</td>
-                    <td className="px-4 py-3 text-[#6b7280]">
-                      {s.email
-                        ? <a href={`mailto:${s.email}`} className="hover:text-[#0f3d37] hover:underline">{s.email}</a>
-                        : "—"}
-                    </td>
-                    <td className="px-4 py-3 text-[#9ca3af] whitespace-nowrap">
-                      {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          </>
-        )}
-      </div>
-
-      {/* Call activity section */}
-      {env.hasAgoraVoice && (
-        <div className="space-y-4">
-          <div>
-            <h2 className="text-lg font-bold text-[#0f1f1c]">Call activity</h2>
-            <p className="mt-1 text-sm text-[#6b7280]">
-              {historyTotal === 0 ? "No calls yet." : `${historyTotal} call${historyTotal === 1 ? "" : "s"} recorded.`}
-            </p>
-          </div>
-
-          {historyTotal === 0 ? (
-            <div className="rounded-xl border border-dashed border-[#e5e7eb] bg-white p-8 text-center">
-              <Phone className="mx-auto size-7 text-[#d1d5db] mb-3" />
-              <p className="text-sm text-[#374151]">No calls yet</p>
-              <p className="mt-1 text-xs text-[#9ca3af]">When students call you, the history appears here.</p>
-            </div>
-          ) : (
-            <>
-            <div className="md:hidden divide-y divide-[#f3f4f6] rounded-xl border border-[#e5e7eb] bg-white overflow-hidden">
-              {callHistory.map((c) => (
-                <div key={c.id} className="p-4">
-                  <div className="flex items-center justify-between gap-2">
-                    <p className="font-medium text-sm text-[#0f1f1c]">{c.callerName ?? "Unknown student"}</p>
+            {/* Mobile flat list */}
+            <div className="md:hidden divide-y divide-[#eaeaea]">
+              {students.map((s) => (
+                <div key={s.id} className="py-4">
+                  <div className="flex items-start justify-between gap-2">
+                    <p className="font-semibold text-sm text-[#0f1f1c]">{s.fullName}</p>
                     <p className="text-xs text-[#9ca3af] shrink-0">
-                      {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
+                      {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric" }) ?? "—"}
                     </p>
                   </div>
-                  <div className="mt-1.5 flex items-center gap-2 text-xs text-[#6b7280]">
-                    <span className="inline-flex items-center gap-1">
-                      {callStatusIcon(c.status)}
-                      {callStatusLabel(c.status)}
-                    </span>
-                    {callDuration(c.answeredAt, c.endedAt) && (
-                      <span>· {callDuration(c.answeredAt, c.endedAt)}</span>
-                    )}
-                  </div>
+                  {(s.userCity || s.userState) && (
+                    <p className="mt-0.5 text-xs text-[#6b7280]">
+                      {s.userCity ? `${s.userCity}, ${s.userState}` : s.userState}
+                    </p>
+                  )}
+                  {s.courseInterest && (
+                    <p className="mt-0.5 text-xs text-[#6b7280]">{s.courseInterest}</p>
+                  )}
+                  {s.email && (
+                    <a href={`mailto:${s.email}`} className="mt-1 block text-xs font-medium text-[#0f3d37] hover:underline">
+                      {s.email}
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
 
             {/* Desktop table */}
-            <div className="hidden md:block rounded-xl border border-[#e5e7eb] bg-white overflow-x-auto">
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[#f3f4f6] bg-[#f9fafb]">
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Student</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Status</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Duration</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-[#6b7280]">Date</th>
+                  <tr className="border-b border-[#eaeaea]">
+                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Name</th>
+                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Location</th>
+                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Course interest</th>
+                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Email</th>
+                    <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Date</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#f3f4f6]">
-                  {callHistory.map((c) => (
-                    <tr key={c.id} className="hover:bg-[#fafafa]">
-                      <td className="px-4 py-3 font-medium text-[#0f1f1c] whitespace-nowrap">
-                        {c.callerName ?? "Unknown student"}
+                <tbody className="divide-y divide-[#eaeaea]">
+                  {students.map((s) => (
+                    <tr key={s.id} className="hover:bg-[#fafafa] transition-colors">
+                      <td className="py-4 pr-6 font-medium text-[#0f1f1c] whitespace-nowrap">{s.fullName}</td>
+                      <td className="py-4 pr-6 text-[#6b7280] whitespace-nowrap">
+                        {s.userCity ? `${s.userCity}, ${s.userState}` : (s.userState ?? "—")}
                       </td>
-                      <td className="px-4 py-3">
-                        <span className="inline-flex items-center gap-1.5">
-                          {callStatusIcon(c.status)}
-                          <span className="text-[#6b7280]">{callStatusLabel(c.status)}</span>
-                        </span>
+                      <td className="py-4 pr-6 text-[#6b7280]">{s.courseInterest ?? "—"}</td>
+                      <td className="py-4 pr-6 text-[#6b7280]">
+                        {s.email
+                          ? <a href={`mailto:${s.email}`} className="hover:text-[#0f3d37] hover:underline">{s.email}</a>
+                          : "—"}
                       </td>
-                      <td className="px-4 py-3 text-[#6b7280]">
-                        {callDuration(c.answeredAt, c.endedAt) ?? "—"}
-                      </td>
-                      <td className="px-4 py-3 text-[#9ca3af] whitespace-nowrap">
-                        {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
+                      <td className="py-4 text-[#9ca3af] whitespace-nowrap text-xs">
+                        {s.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
                       </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
+          </>
+        )}
+      </div>
 
-            <DataPagination
-              page={historyPage}
-              totalPages={historyTotalPages}
-              buildHref={(p) => `/dashboard/peer/students?page=${p}`}
-            />
+      {/* Call activity */}
+      {env.hasAgoraVoice && (
+        <div className="space-y-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#9ca3af]">Call activity</p>
+            {historyTotal > 0 && (
+              <p className="mt-0.5 text-sm text-[#6b7280]">
+                {historyTotal} call{historyTotal === 1 ? "" : "s"} recorded.
+              </p>
+            )}
+          </div>
+
+          {historyTotal === 0 ? (
+            <div className="py-10 text-center">
+              <Phone className="mx-auto size-7 text-[#d1d5db] mb-3" />
+              <p className="text-sm text-[#374151]">No calls yet</p>
+              <p className="mt-1 text-xs text-[#9ca3af]">When students call you, the history appears here.</p>
+            </div>
+          ) : (
+            <>
+              {/* Mobile list */}
+              <div className="md:hidden divide-y divide-[#eaeaea]">
+                {callHistory.map((c) => (
+                  <div key={c.id} className="py-4">
+                    <div className="flex items-center justify-between gap-2">
+                      <p className="font-semibold text-sm text-[#0f1f1c]">{c.callerName ?? "Unknown student"}</p>
+                      <p className="text-xs text-[#9ca3af] shrink-0">
+                        {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) ?? "—"}
+                      </p>
+                    </div>
+                    <div className="mt-1 flex items-center gap-2 text-xs text-[#6b7280]">
+                      <span className="inline-flex items-center gap-1">
+                        {callStatusIcon(c.status)}
+                        {callStatusLabel(c.status)}
+                      </span>
+                      {callDuration(c.answeredAt, c.endedAt) && (
+                        <span>· {callDuration(c.answeredAt, c.endedAt)}</span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Desktop table */}
+              <div className="hidden md:block overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-[#eaeaea]">
+                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Student</th>
+                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Status</th>
+                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Duration</th>
+                      <th className="pb-3 text-left text-xs font-semibold text-[#9ca3af]">Date</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-[#eaeaea]">
+                    {callHistory.map((c) => (
+                      <tr key={c.id} className="hover:bg-[#fafafa] transition-colors">
+                        <td className="py-4 pr-6 font-medium text-[#0f1f1c] whitespace-nowrap">
+                          {c.callerName ?? "Unknown student"}
+                        </td>
+                        <td className="py-4 pr-6">
+                          <span className="inline-flex items-center gap-1.5">
+                            {callStatusIcon(c.status)}
+                            <span className="text-[#6b7280]">{callStatusLabel(c.status)}</span>
+                          </span>
+                        </td>
+                        <td className="py-4 pr-6 text-[#6b7280]">
+                          {callDuration(c.answeredAt, c.endedAt) ?? "—"}
+                        </td>
+                        <td className="py-4 text-xs text-[#9ca3af] whitespace-nowrap">
+                          {c.createdAt?.toLocaleString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) ?? "—"}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <DataPagination
+                page={historyPage}
+                totalPages={historyTotalPages}
+                buildHref={(p) => `/dashboard/peer/students?page=${p}`}
+              />
             </>
           )}
         </div>
