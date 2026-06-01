@@ -3,6 +3,14 @@
 @import "react-phone-number-input/style.css";
 @plugin "@tailwindcss/typography";
 
+/* ── iOS zoom prevention (unlayered = overrides all Tailwind utilities) ──── */
+/* iOS WebKit auto-zooms any input with font-size < 16px; this prevents it   */
+input,
+textarea,
+select {
+  font-size: max(1rem, 16px);
+}
+
 /* ── iOS safe-area utilities ─────────────────────────────────────────────── */
 /* nav height (~57px) + home-indicator inset; used by the dashboard main area */
 .pb-nav-safe {
@@ -146,12 +154,6 @@
     scroll-behavior: smooth;
   }
 
-  /* Prevent iOS Safari from auto-zooming inputs with font-size < 16px */
-  input,
-  textarea,
-  select {
-    font-size: max(1rem, 16px);
-  }
 
   body {
     background-color: #ffffff;
