@@ -44,19 +44,19 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Colleges in India & Abroad | Fees, NMC Recognition, Admission",
+  title: "Medical Education Abroad for Indian Students | MBBS, MD & More",
   description:
-    "Compare MBBS colleges in India and abroad. Check fees, NMC recognition, eligibility, and get admission guidance for Indian students. Browse medical colleges across Russia, Georgia, Vietnam, and India.",
+    "Compare medical universities abroad for Indian students. Check fees, NMC recognition, and eligibility for MBBS, MD, and other medical programs in Russia, Georgia, Vietnam, Kyrgyzstan and more. Free counselling available.",
   path: "/",
   keywords: [
-    "MBBS colleges in India",
+    "medical education abroad for Indian students",
     "MBBS abroad for Indian students",
+    "MD abroad India",
     "NMC recognized medical colleges",
-    "MBBS fees India and abroad",
-    "study abroad universities India",
     "medical universities abroad fees",
+    "study medicine abroad India",
     "MBBS Russia Georgia Vietnam",
-    "government medical colleges India",
+    "medical degree abroad Indian students",
   ],
 });
 
@@ -64,7 +64,7 @@ const startingPoints = [
   {
     Icon: Compass,
     title: "Browse Colleges",
-    description: "Explore MBBS colleges in India and abroad. Compare fees, NMC recognition, intake dates, and admission requirements.",
+    description: "Explore medical colleges in India and abroad. Compare fees, NMC recognition, intake dates, and admission requirements.",
     href: "/universities",
     cta: "View all colleges",
   },
@@ -78,7 +78,7 @@ const startingPoints = [
   {
     Icon: BookOpen,
     title: "Admission Guides",
-    description: "Complete guides on NEET requirements, FMGE preparation, eligibility criteria, and total cost planning.",
+    description: "Complete guides on NEET requirements, FMGE preparation, program eligibility, and total cost planning for medical education abroad.",
     href: "/guides",
     cta: "Read guides",
   },
@@ -105,37 +105,24 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section - Above the fold */}
-      <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden bg-background">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(15,61,55,0.08)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(15,61,55,0.06)_0%,transparent_50%)]" />
-        <div className="absolute inset-0 opacity-[0.08]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%230f3d37\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }} />
+      <section className="relative flex min-h-[calc(100vh-4rem)] items-center bg-background">
+        {/* Background Pattern — clipped separately so dropdown isn't cut off */}
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(15,61,55,0.08)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(15,61,55,0.06)_0%,transparent_50%)]" />
+          <div className="absolute inset-0 opacity-[0.08]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%230f3d37\" fill-opacity=\"1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }} />
+        </div>
 
         <div className="container-shell relative px-4 py-12 text-center md:px-6 md:py-16">
           <div className="mx-auto max-w-5xl space-y-6 md:space-y-8">
             {/* Main Heading */}
-            <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold leading-[1.1] tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
-              Your complete partner for MBBS{" "}
-              <span className="relative inline-block">
-                <span className="relative z-10 italic text-accent">admission & success</span>
-                <svg
-                  className="absolute -bottom-2 left-0 w-full text-accent/20"
-                  viewBox="0 0 300 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 10C50 3 100 2 150 6C200 10 250 8 298 5"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </span>
+            <h1 className="font-display text-[2rem] font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+              <span className="block text-heading">Study medicine abroad</span>
+              <span className="mt-2 block italic text-accent">the right way</span>
             </h1>
 
             {/* Description */}
-            <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl">
-              From admission to graduation - we support Indian students with college selection, free FMGE coaching, and complete 6-year guidance with offices in every country we serve.
+            <p className="mx-auto max-w-[30ch] text-base leading-relaxed text-muted-foreground sm:max-w-lg sm:text-lg md:text-xl">
+              Free guidance for Indian students on MBBS, MD, and all medical degrees abroad — college selection, admissions, and FMGE coaching included.
             </p>
 
             {/* Search */}
