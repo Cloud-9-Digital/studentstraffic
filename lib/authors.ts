@@ -49,6 +49,19 @@ const AUTHORS = {
       "His focus at StudentsTraffic is on the decisions that shape a student's entire career — country selection, university shortlisting, NExT readiness, and the transition back to India after graduation. He works closely with the team to ensure that every major guide published on the platform reflects not just current data, but the kind of considered judgement that only comes with years of watching students navigate these systems.",
     ],
   },
+  "rajendra-kumar-deepak": {
+    slug: "rajendra-kumar-deepak",
+    name: "Rajendra Kumar Deepak",
+    initials: "RD",
+    title: "Co-Founder, StudentsTraffic",
+    bio: "Rajendra Kumar Deepak co-founded StudentsTraffic with over 15 years of experience guiding students and families through some of the most consequential decisions of their lives — where to study, which university to trust, and how to build a medical career that lasts.",
+    promise: "I have spent 15 years watching students get it right and get it wrong. The difference is almost always the quality of information they had at the start. Every resource on this platform exists to close that gap — and I take that responsibility personally.",
+    longBio: [
+      "Rajendra Kumar Deepak brings more than 15 years of hands-on experience in student advisory, institutional relations, and overseas education to his role as Co-Founder of StudentsTraffic. He has spent the better part of his career working directly with students and their families at the moment they need clarity most — when they are choosing a path that will define the next decade of their lives.",
+      "His background spans admissions consulting, university partnership development, and pre-departure student support across multiple countries. He has worked with medical universities in Russia, Georgia, Kyrgyzstan, and Vietnam, giving him an unusually detailed understanding of what the on-ground experience actually looks like for Indian students — beyond what any brochure or agent will tell you. That insider knowledge informs every piece of guidance StudentsTraffic publishes.",
+      "At StudentsTraffic, Rajendra oversees the practical, process-oriented content that students rely on most: fee structures, admission timelines, visa documentation, hostel realities, and what returning to India after six years abroad actually involves. He believes that a student who understands the process from day one is a student who finishes the degree, clears NExT, and builds a real career — and that is what every guide he contributes to is designed to deliver.",
+    ],
+  },
 } as const satisfies Record<string, Author>;
 
 export type AuthorSlug = keyof typeof AUTHORS;
