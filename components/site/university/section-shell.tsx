@@ -154,7 +154,7 @@ export function UniversitySectionShell({
     }
     setActiveSection(section);
     window.history.pushState({}, "", `/university/${universitySlug}-${section}`);
-    document.title = `${university.name}: ${SECTION_TITLES[section]} | StudentsTraffic`;
+    document.title = `${university.name}: ${SECTION_TITLES[section]} | Students Traffic`;
   };
 
   const summary = getSectionSummary(activeSection, university, country, primaryProgramShortName);

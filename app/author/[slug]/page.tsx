@@ -22,7 +22,7 @@ export async function generateMetadata({
   const author = getAuthor(slug);
   const url = absoluteUrl(`/author/${slug}`);
   return {
-    title: `${author.name} — ${author.title} | StudentsTraffic`,
+    title: `${author.name} — ${author.title} | Students Traffic`,
     description: author.bio,
     alternates: { canonical: url },
     openGraph: {
@@ -30,7 +30,7 @@ export async function generateMetadata({
       url,
       title: `${author.name} — ${author.title}`,
       description: author.bio,
-      siteName: "StudentsTraffic",
+      siteName: "Students Traffic",
     },
   };
 }

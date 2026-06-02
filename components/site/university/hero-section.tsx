@@ -111,7 +111,7 @@ export function UniversityHeroSection({
                       {author.name}
                     </Link>
                   ) : (
-                    <span className="text-white/60">StudentsTraffic Research Team</span>
+                    <span className="text-white/60">Students Traffic Research Team</span>
                   )}
                 </span>
                 {formatVerifiedDate(lastVerifiedAt) && (
