@@ -4,7 +4,9 @@ import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 
 import { AppChrome } from "@/components/app/app-chrome";
+import { NavCountriesClientProvider } from "@/components/app/nav-countries-client-provider";
 import { Providers } from "@/components/app/providers";
+import { getNavCountries } from "@/lib/data/nav-countries";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
 import { JsonLd } from "@/components/shared/json-ld";
@@ -42,11 +44,13 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navCountries = await getNavCountries();
+
   return (
     <html
       lang="en"
@@ -60,7 +64,9 @@ export default function RootLayout({
         <Providers>
           <Suspense><GoogleAnalytics /></Suspense>
           <Suspense><MetaPixel /></Suspense>
-          <AppChrome>{children}</AppChrome>
+          <NavCountriesClientProvider countries={navCountries}>
+            <AppChrome>{children}</AppChrome>
+          </NavCountriesClientProvider>
         </Providers>
         <Analytics />
         <Toaster position="top-center" />

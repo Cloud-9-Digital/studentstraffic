@@ -4,12 +4,14 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Search, MapPin, GraduationCap, ChevronDown } from "lucide-react";
 
-import { navDestinations, navCourses } from "@/lib/constants";
+import { navCourses } from "@/lib/constants";
 import { CountryFlag } from "@/components/site/country-flag";
+import { useNavCountries } from "@/components/app/nav-countries-client-provider";
 import { cn } from "@/lib/utils";
 
 export function HeroSearch() {
   const router = useRouter();
+  const navCountries = useNavCountries();
   const [country, setCountry] = useState("");
   const [course, setCourse] = useState("");
   const [activeField, setActiveField] = useState<"country" | "course" | null>(null);
@@ -33,7 +35,7 @@ export function HeroSearch() {
     router.push(`/universities${params.size ? `?${params}` : ""}`);
   }
 
-  const selectedDestination = navDestinations.find(
+  const selectedDestination = navCountries.find(
     (d) => d.href.split("/").pop() === country
   );
   const selectedCourse = navCourses.find(
@@ -63,7 +65,7 @@ export function HeroSearch() {
                 <div className="flex items-center gap-1.5">
                   {selectedDestination && (
                     <CountryFlag
-                      countryCode={selectedDestination.countryCode}
+                      countryCode={selectedDestination.isoCode}
                       alt={selectedDestination.name}
                       width={16}
                       height={12}
@@ -82,7 +84,7 @@ export function HeroSearch() {
             {activeField === "country" && (
               <div className="absolute left-0 top-full z-50 w-full min-w-[280px] rounded-b-xl border border-border bg-white p-3 shadow-xl sm:w-[340px]">
                 <div className="grid grid-cols-2 gap-1">
-                  {navDestinations.map((dest) => (
+                  {navCountries.map((dest) => (
                     <button
                       key={dest.href}
                       type="button"
@@ -93,7 +95,7 @@ export function HeroSearch() {
                       )}
                     >
                       <CountryFlag
-                        countryCode={dest.countryCode}
+                        countryCode={dest.isoCode}
                         alt={dest.name}
                         width={20}
                         height={15}

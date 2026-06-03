@@ -1,6 +1,7 @@
-import { footerPopularRoutes, navCourses, navDestinations, siteConfig } from "@/lib/constants";
+import { footerPopularRoutes, navCourses, siteConfig } from "@/lib/constants";
 import { absoluteUrl } from "@/lib/metadata";
 import { logPublicRouteRequest } from "@/lib/route-observability";
+import { getNavCountries } from "@/lib/data/nav-countries";
 
 function toBulletList(items: Array<{ label: string; href: string }>) {
   return items.map((item) => `- ${item.label}: ${absoluteUrl(item.href)}`);
@@ -12,6 +13,8 @@ export async function GET(request: Request) {
     request,
     sampleRate: 1,
   });
+
+  const navCountries = await getNavCountries();
 
   const lines = [
     `# ${siteConfig.name}`,
@@ -47,7 +50,7 @@ export async function GET(request: Request) {
     "",
     "## Key destinations",
     ...toBulletList(
-      navDestinations.map((destination) => ({
+      navCountries.map((destination) => ({
         label: destination.name,
         href: destination.href,
       }))

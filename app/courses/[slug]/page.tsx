@@ -12,7 +12,7 @@ import { SectionHeading } from "@/components/site/section-heading";
 import { UniversityCard } from "@/components/site/university-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { navDestinations } from "@/lib/constants";
+import { getCountryFlagCode } from "@/lib/university-media";
 import {
   catalogReviewedAt,
 } from "@/lib/content-governance";
@@ -246,22 +246,18 @@ export default async function CoursePage({
               />
               <div className="flex flex-wrap gap-3 mt-8">
                 {countries.map((country) => {
-                  const countryCode = navDestinations.find(
-                    (d) => d.href === getCountryHref(country.slug)
-                  )?.countryCode;
-                  
+                  const countryCode = getCountryFlagCode(country.slug);
+
                   return (
                     <Button key={country.slug} asChild variant="outline">
                       <Link href={getCountryHref(country.slug)} className="flex items-center gap-2">
-                        {countryCode && (
-                          <CountryFlag
-                            countryCode={countryCode}
-                            alt={country.name}
-                            width={20}
-                            height={15}
-                            className="rounded shadow-sm"
-                          />
-                        )}
+                        <CountryFlag
+                          countryCode={countryCode}
+                          alt={country.name}
+                          width={20}
+                          height={15}
+                          className="rounded shadow-sm"
+                        />
                         {country.name}
                       </Link>
                     </Button>

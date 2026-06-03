@@ -58,45 +58,6 @@ export const guideNav = [
   },
 ] as const;
 
-export const navDestinations = [
-  {
-    href: "/countries/russia",
-    countryCode: "ru",
-    name: "Russia",
-    description: "Established NMC pathways, top public universities",
-  },
-  {
-    href: "/countries/vietnam",
-    countryCode: "vn",
-    name: "Vietnam",
-    description: "Affordable fees, growing English-medium options",
-  },
-  {
-    href: "/countries/georgia",
-    countryCode: "ge",
-    name: "Georgia",
-    description: "WHO & NMC recognised, European standard",
-  },
-  {
-    href: "/countries/kyrgyzstan",
-    countryCode: "kg",
-    name: "Kyrgyzstan",
-    description: "Low cost of living, NMC eligible programs",
-  },
-  {
-    href: "/countries/uzbekistan",
-    countryCode: "uz",
-    name: "Uzbekistan",
-    description: "English medium programs, highly affordable",
-  },
-  {
-    href: "/countries/italy",
-    countryCode: "it",
-    name: "Italy",
-    description: "IMAT-based admission, WHO & NMC recognised public universities",
-  },
-] as const;
-
 export const navCourses = [
   {
     href: "/courses/mbbs",

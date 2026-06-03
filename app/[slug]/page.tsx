@@ -28,7 +28,8 @@ import {
   catalogReviewedAt,
   formatContentDate,
 } from "@/lib/content-governance";
-import { navDestinations, siteConfig } from "@/lib/constants";
+import { siteConfig } from "@/lib/constants";
+import { getCountryFlagCode } from "@/lib/university-media";
 import {
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
@@ -179,9 +180,7 @@ export default async function LandingPageRoute({
       description: `Compare countries and colleges before choosing the right ${course.shortName} pathway.`,
     },
   ];
-  const countryCode = navDestinations.find(
-    (d) => d.href === `/countries/${country.slug}`
-  )?.countryCode;
+  const countryCode = getCountryFlagCode(country.slug);
 
   const countryStructuredData = getCountryStructuredData(country);
   const courseStructuredData = getCourseStructuredData(course);

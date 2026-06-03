@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail, Phone } from "lucide-react";
@@ -9,11 +11,13 @@ import {
   footerPopularRoutes,
   guideNav,
   navCourses,
-  navDestinations,
   siteConfig,
 } from "@/lib/constants";
+import { useNavCountries } from "@/components/app/nav-countries-client-provider";
 
 export function SiteFooter() {
+  const navCountries = useNavCountries();
+
   return (
     <footer className="bg-surface-dark text-white">
       <div className="border-b border-white/10 bg-surface-dark-2">
@@ -193,7 +197,7 @@ export function SiteFooter() {
                 Country Guides
               </p>
               <div className="flex flex-wrap gap-x-1 gap-y-1">
-                {navDestinations.map((destination, index) => (
+                {navCountries.map((destination, index) => (
                   <span key={destination.href} className="flex items-center">
                     <Link
                       href={destination.href}
@@ -201,7 +205,7 @@ export function SiteFooter() {
                     >
                       {destination.name}
                     </Link>
-                    {index < navDestinations.length - 1 ? (
+                    {index < navCountries.length - 1 ? (
                       <span className="mx-2.5 text-white/15">·</span>
                     ) : null}
                   </span>

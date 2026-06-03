@@ -12,7 +12,8 @@ import { CountryFlag } from "@/components/site/country-flag";
 import { SearchPalette } from "@/components/site/search-palette";
 import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { cn } from "@/lib/utils";
-import { navDestinations, siteConfig } from "@/lib/constants";
+import { siteConfig } from "@/lib/constants";
+import { useNavCountries } from "@/components/app/nav-countries-client-provider";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -58,6 +59,7 @@ const navLinks = [
 
 function SiteHeaderInner() {
   const pathname = usePathname();
+  const navCountries = useNavCountries();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [countriesOpen, setCountriesOpen] = useState(false);
@@ -191,7 +193,7 @@ function SiteHeaderInner() {
                 </div>
 
                 <div className="py-2">
-                  {navDestinations.map((destination) => (
+                  {navCountries.map((destination) => (
                     <Link
                       key={destination.href}
                       href={destination.href}
@@ -199,7 +201,7 @@ function SiteHeaderInner() {
                       className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-muted"
                     >
                       <CountryFlag
-                        countryCode={destination.countryCode}
+                        countryCode={destination.isoCode}
                         alt={destination.name}
                         width={26}
                         height={18}
@@ -465,7 +467,7 @@ function SiteHeaderInner() {
                 )}
               >
                 <div className="space-y-1 px-2 pb-2">
-                  {navDestinations.map((destination) => (
+                  {navCountries.map((destination) => (
                     <Link
                       key={destination.href}
                       href={destination.href}
@@ -473,7 +475,7 @@ function SiteHeaderInner() {
                       className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition-colors hover:bg-black/5"
                     >
                       <CountryFlag
-                        countryCode={destination.countryCode}
+                        countryCode={destination.isoCode}
                         alt={destination.name}
                         width={24}
                         height={18}

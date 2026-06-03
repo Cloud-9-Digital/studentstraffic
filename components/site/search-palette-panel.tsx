@@ -20,8 +20,8 @@ import {
   footerPopularRoutes,
   guideNav,
   navCourses,
-  navDestinations,
 } from "@/lib/constants";
+import { useNavCountries } from "@/components/app/nav-countries-client-provider";
 
 const typeIcon = {
   university: Building2,
@@ -39,32 +39,28 @@ const typeLabel = {
   landing_page: "Guide",
 } as const;
 
-const quickLinks = [
+const staticQuickLinks = [
   {
     heading: "Start Here",
     items: [
-      { label: "Universities", href: "/universities", flag: null },
-      { label: "Guides", href: "/guides", flag: null },
-      { label: "Contact", href: "/contact", flag: null },
+      { label: "Universities", href: "/universities", flag: null as string | null },
+      { label: "Guides", href: "/guides", flag: null as string | null },
+      { label: "Contact", href: "/contact", flag: null as string | null },
     ],
   },
   {
-    heading: "Destinations",
-    items: navDestinations.map((d) => ({ label: d.name, href: d.href, flag: d.countryCode })),
-  },
-  {
     heading: "Courses",
-    items: navCourses.map((c) => ({ label: c.name, href: c.href, flag: null })),
+    items: navCourses.map((c) => ({ label: c.name, href: c.href, flag: null as string | null })),
   },
   {
     heading: "Popular Routes",
-    items: footerPopularRoutes.map((r) => ({ label: r.label, href: r.href, flag: null })),
+    items: footerPopularRoutes.map((r) => ({ label: r.label, href: r.href, flag: null as string | null })),
   },
   {
     heading: "Guide Types",
-    items: guideNav.slice(1).map((item) => ({ label: item.label, href: item.href, flag: null })),
+    items: guideNav.slice(1).map((item) => ({ label: item.label, href: item.href, flag: null as string | null })),
   },
-] as const;
+];
 
 export function SearchPalettePanel({
   open,
@@ -74,6 +70,15 @@ export function SearchPalettePanel({
   onOpenChange: (open: boolean) => void;
 }) {
   const router = useRouter();
+  const navCountries = useNavCountries();
+  const quickLinks = [
+    staticQuickLinks[0],
+    {
+      heading: "Destinations",
+      items: navCountries.map((d) => ({ label: d.name, href: d.href, flag: d.isoCode as string | null })),
+    },
+    ...staticQuickLinks.slice(1),
+  ];
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
