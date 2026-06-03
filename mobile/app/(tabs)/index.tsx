@@ -68,6 +68,8 @@ const COUNTRY_GRADIENTS: Record<string, [string, string]> = {
   uzbekistan:  ["#7a4a1a", "#b06a2a"],
   // India: saffron → green (flag colours, darkened for card background)
   india:       ["#7a3000", "#1a5200"],
+  // Italy: flag green → flag red (darkened for card background)
+  italy:       ["#1a5c2e", "#8b1a1a"],
 };
 
 const FALLBACK_GRADIENTS: [string, string][] = [

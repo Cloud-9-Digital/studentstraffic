@@ -89,6 +89,12 @@ export const navDestinations = [
     name: "Uzbekistan",
     description: "English medium programs, highly affordable",
   },
+  {
+    href: "/countries/italy",
+    countryCode: "it",
+    name: "Italy",
+    description: "IMAT-based admission, WHO & NMC recognised public universities",
+  },
 ] as const;
 
 export const navCourses = [

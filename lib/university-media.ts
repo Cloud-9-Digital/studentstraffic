@@ -74,6 +74,7 @@ const COUNTRY_FLAG_CODES: Record<string, string> = {
   bangladesh: "bd",
   ukraine:    "ua",
   china:      "cn",
+  italy:      "it",
 };
 
 export function getCountryFlagCode(countrySlug: string): string {
@@ -89,6 +90,7 @@ const COUNTRY_GRADIENTS: Record<string, { from: string; to: string; text: string
   kyrgyzstan: { from: "#a31c1c", to: "#2d3748", text: "#fca5a5" },
   uzbekistan: { from: "#0d6b61", to: "#1a2e5a", text: "#6ee7b7" },
   bangladesh: { from: "#145228", to: "#8b1a1a", text: "#bbf7d0" },
+  italy:      { from: "#1a5c2e", to: "#8b1a1a", text: "#fef3c7" },
 };
 const DEFAULT_GRADIENT = { from: "#1e3a5f", to: "#312e81", text: "#c7d2fe" };
 

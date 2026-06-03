@@ -47,6 +47,8 @@ const COUNTRY_GRADIENTS: Record<string, [string, string]> = {
   bangladesh:  ["#1a3a6b", "#1a5276"],
   ukraine:     ["#1a4a6b", "#c69b14"],
   uzbekistan:  ["#7a4a1a", "#b06a2a"],
+  // Italy: flag green → flag red (darkened for card background)
+  italy:       ["#1a5c2e", "#8b1a1a"],
 };
 
 // ── Country data ──────────────────────────────────────────────────────────────
