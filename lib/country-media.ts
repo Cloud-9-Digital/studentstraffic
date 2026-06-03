@@ -19,6 +19,10 @@ const countryHeroImages: Record<string, { url: string; alt: string }> = {
     url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1774970469/studentstraffic/countries/qsqrsidyb7w77xr4jpzy.jpg",
     alt: "Beautiful historical architecture in Samarkand, Uzbekistan at sunset",
   },
+  italy: {
+    url: "https://images.unsplash.com/photo-1533606688076-b6683a5f59f1?auto=format&fit=crop&w=900&q=85",
+    alt: "Historic University of Bologna courtyard, Italy — the world's oldest university",
+  },
 };
 
 export function getCountryHeroImage(slug: string) {

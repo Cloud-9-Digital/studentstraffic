@@ -316,6 +316,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: governanceLastModified,
     },
     {
+      url: absoluteUrl("/study-mbbs-in-italy"),
+      priority: 0.9,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-in-italy-fees"),
+      priority: 0.88,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/imat-exam-for-mbbs-in-italy"),
+      priority: 0.87,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/medical-colleges-in-italy"),
+      priority: 0.88,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
       url: absoluteUrl("/study-in-germany-with-scholarship"),
       priority: 0.78,
       changeFrequency: "weekly",
