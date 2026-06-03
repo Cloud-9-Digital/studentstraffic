@@ -316,6 +316,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: governanceLastModified,
     },
     {
+      url: absoluteUrl("/bsc-nursing-in-albania"),
+      priority: 0.9,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/bsc-nursing-in-albania-fees"),
+      priority: 0.88,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/germany-nursing-career-pathway"),
+      priority: 0.87,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/albania-student-visa-for-indian-students"),
+      priority: 0.86,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
       url: absoluteUrl("/study-mbbs-in-italy"),
       priority: 0.9,
       changeFrequency: "weekly",
