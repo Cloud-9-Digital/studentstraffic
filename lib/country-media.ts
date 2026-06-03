@@ -20,8 +20,8 @@ const countryHeroImages: Record<string, { url: string; alt: string }> = {
     alt: "Beautiful historical architecture in Samarkand, Uzbekistan at sunset",
   },
   italy: {
-    url: "https://images.unsplash.com/photo-1533606688076-b6683a5f59f1?auto=format&fit=crop&w=900&q=85",
-    alt: "Historic University of Bologna courtyard, Italy — the world's oldest university",
+    url: "/images/countries/italy.jpg",
+    alt: "Italy — study medicine in one of Europe's most celebrated academic destinations",
   },
 };
 
