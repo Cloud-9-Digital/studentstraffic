@@ -23,6 +23,10 @@ const countryHeroImages: Record<string, { url: string; alt: string }> = {
     url: "/images/countries/italy.jpg",
     alt: "Italy — study medicine in one of Europe's most celebrated academic destinations",
   },
+  canada: {
+    url: "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=85",
+    alt: "University campus in Ontario, Canada",
+  },
 };
 
 export function getCountryHeroImage(slug: string) {

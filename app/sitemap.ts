@@ -340,6 +340,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: governanceLastModified,
     },
     {
+      url: absoluteUrl("/bsc-nursing-in-canada"),
+      priority: 0.9,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/bsc-nursing-in-canada-fees"),
+      priority: 0.88,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/canada-study-permit-for-indian-students"),
+      priority: 0.87,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
+      url: absoluteUrl("/canada-nursing-pr-pathway"),
+      priority: 0.87,
+      changeFrequency: "weekly",
+      lastModified: governanceLastModified,
+    },
+    {
       url: absoluteUrl("/study-mbbs-in-italy"),
       priority: 0.9,
       changeFrequency: "weekly",
