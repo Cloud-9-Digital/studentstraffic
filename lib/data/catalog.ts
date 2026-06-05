@@ -106,6 +106,7 @@ const buildCatalogSnapshotPath = path.join(
   "catalog-snapshot.json",
 );
 const buildCatalogSnapshotLockPath = `${buildCatalogSnapshotPath}.lock`;
+const currentDeploymentId = process.env.VERCEL_DEPLOYMENT_ID;
 
 function isProductionBuildPhase() {
   return process.env.NEXT_PHASE === "phase-production-build";
@@ -118,7 +119,11 @@ function shouldUseBuildCatalogSnapshot() {
 async function readBuildCatalogSnapshotFromDisk(): Promise<CatalogSnapshot | null> {
   try {
     const serialized = await readFile(buildCatalogSnapshotPath, "utf8");
-    const parsed = JSON.parse(serialized) as Partial<CatalogSnapshot>;
+    const parsed = JSON.parse(serialized) as Partial<CatalogSnapshot & { _deploymentId?: string }>;
+    // Reject snapshots written for a different Vercel deployment — forces a fresh DB read
+    if (currentDeploymentId && parsed._deploymentId !== currentDeploymentId) {
+      return null;
+    }
     return {
       countries: parsed.countries ?? [],
       courses: parsed.courses ?? [],
@@ -136,7 +141,10 @@ async function readBuildCatalogSnapshotFromDisk(): Promise<CatalogSnapshot | nul
 async function writeBuildCatalogSnapshotToDisk(snapshot: CatalogSnapshot) {
   await mkdir(path.dirname(buildCatalogSnapshotPath), { recursive: true });
   const tempPath = `${buildCatalogSnapshotPath}.${process.pid}.tmp`;
-  await writeFile(tempPath, JSON.stringify(snapshot), "utf8");
+  const payload = currentDeploymentId
+    ? { _deploymentId: currentDeploymentId, ...snapshot }
+    : snapshot;
+  await writeFile(tempPath, JSON.stringify(payload), "utf8");
   await rename(tempPath, buildCatalogSnapshotPath);
 }
 
