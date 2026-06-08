@@ -24,6 +24,7 @@ Detailed guides for specific tasks.
 - **[Scaling Guide](./guides/scaling.md)** - Complete scaling implementation details
 - **[Troubleshooting](./guides/troubleshooting.md)** - Common issues and solutions
 - **[Performance Optimization](./guides/performance.md)** - Tips for maximum performance
+- **[Mobile Versioning](./mobile-versioning.md)** - App version, build numbers, and release workflow
 
 ### 📋 Reference
 Quick reference for configurations and APIs.

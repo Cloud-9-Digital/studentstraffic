@@ -10,23 +10,20 @@ export type SeminarEvent = {
 };
 
 export const EVENTS = [
-  { date: "10 May 2026", day: "Sunday",   city: "Chennai",         venue: "Hotel Hilton",               state: "TN", time: "9:30 AM" },
-  { date: "17 May 2026", day: "Sunday",   city: "Madurai",         venue: "Royal Court",                state: "TN", time: "9:30 AM" },
-  { date: "23 May 2026", day: "Saturday", city: "Dindigul",        venue: "Parson's Court",             state: "TN", time: "9:30 AM" },
-  { date: "24 May 2026", day: "Sunday",   city: "Coimbatore",      venue: "TBD",                        state: "TN", time: "9:30 AM" },
-  { date: "28 May 2026", day: "Thursday", city: "Salem",           venue: "Shrie Shaanth Hotel",        state: "TN", time: "9:30 AM" },
-  { date: "31 May 2026", day: "Sunday",   city: "Tirunelveli",     venue: "RR Inn Group's of Hotel",    state: "TN", time: "9:30 AM" },
-  { date: "7 Jun 2026",  day: "Sunday",   city: "Nagercoil",       venue: "Hotel Lance International",  state: "TN", time: "9:30 AM" },
-  { date: "13 Jun 2026", day: "Saturday", city: "Madurai",         venue: "Royal Court",                state: "TN", time: "9:30 AM" },
-  { date: "14 Jun 2026", day: "Sunday",   city: "Trichy",          venue: "Breeze Residency",           state: "TN", time: "9:30 AM" },
-  { date: "20 Jun 2026", day: "Saturday", city: "Pollachi",        venue: "Sakthi Mahal Hotel",         state: "TN", time: "9:30 AM" },
-  { date: "21 Jun 2026", day: "Sunday",   city: "Karaikudi",       venue: "APS Hall",                   state: "TN", time: "9:30 AM" },
-  { date: "28 Jun 2026", day: "Sunday",   city: "Sivakasi",        venue: "RSR Residency",              state: "TN", time: "9:30 AM" },
-  { date: "4 Jul 2026",  day: "Saturday", city: "Ramanathapuram",  venue: "Daiwik Hotel",               state: "TN", time: "9:30 AM" },
-  { date: "5 Jul 2026",  day: "Sunday",   city: "Thoothukudi",     venue: "Hotel Raj",                  state: "TN", time: "9:30 AM" },
-  { date: "12 Jul 2026", day: "Sunday",   city: "Theni",           venue: "Hotel Theni International",  state: "TN", time: "9:30 AM" },
-  { date: "18 Jul 2026", day: "Saturday", city: "Erode",           venue: "Royal Embassy Hotel",        state: "TN", time: "9:30 AM" },
-  { date: "19 Jul 2026", day: "Sunday",   city: "Tirupur",         venue: "May Berry Hotel",            state: "TN", time: "9:30 AM" },
+  { date: "26 Jun 2026", day: "Friday",   city: "Pollachi",        venue: "Sakthi Hotel",               state: "TN", time: "9:30 AM" },
+  { date: "27 Jun 2026", day: "Saturday", city: "Coimbatore",      venue: "Zone by the Park",           state: "TN", time: "9:30 AM" },
+  { date: "28 Jun 2026", day: "Sunday",   city: "Madurai",         venue: "Royal Court",                state: "TN", time: "9:30 AM" },
+  { date: "4 Jul 2026",  day: "Saturday", city: "Tirunelveli",     venue: "RR Inn Group's of Hotel",    state: "TN", time: "9:30 AM" },
+  { date: "5 Jul 2026",  day: "Sunday",   city: "Nagercoil",       venue: "Hotel Lance International",  state: "TN", time: "9:30 AM" },
+  { date: "11 Jul 2026", day: "Saturday", city: "Dindigul",        venue: "Parson's Court",             state: "TN", time: "9:30 AM" },
+  { date: "12 Jul 2026", day: "Sunday",   city: "Trichy",          venue: "Breeze Residency",           state: "TN", time: "9:30 AM" },
+  { date: "18 Jul 2026", day: "Saturday", city: "Erode",           venue: "Hotel Royal Embassy",        state: "TN", time: "9:30 AM" },
+  { date: "19 Jul 2026", day: "Sunday",   city: "Salem",           venue: "Hotel Shrie Shaanth",        state: "TN", time: "9:30 AM" },
+  { date: "25 Jul 2026", day: "Saturday", city: "Karur",           venue: "TBD",                        state: "TN", time: "9:30 AM" },
+  { date: "26 Jul 2026", day: "Sunday",   city: "Tiruvannamalai",  venue: "TBD",                        state: "TN", time: "9:30 AM" },
+  { date: "1 Aug 2026",  day: "Saturday", city: "Thiruppur",       venue: "The Mayberry",               state: "TN", time: "9:30 AM" },
+  { date: "2 Aug 2026",  day: "Sunday",   city: "Theni",           venue: "Hotel Theni International",  state: "TN", time: "9:30 AM" },
+  { date: "9 Aug 2026",  day: "Sunday",   city: "Chennai",         venue: "Hilton Hotel",               state: "TN", time: "9:30 AM" },
 ] satisfies readonly SeminarEvent[];
 
 const MONTH_MAP: Record<string, number> = {

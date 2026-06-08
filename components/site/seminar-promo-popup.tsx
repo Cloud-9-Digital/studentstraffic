@@ -11,9 +11,6 @@ const MAX_AUTO_SHOWS = 2;
 const DELAY_MS = 5000;
 
 export function SeminarPromoPopup() {
-  // Hidden due to NEET 2026 cancellation and event postponement
-  return null;
-
   const [isOpen, setIsOpen] = useState(false);
   const [pillVisible, setPillVisible] = useState(false);
 
@@ -142,7 +139,7 @@ export function SeminarPromoPopup() {
 
               {/* Divider with count */}
               <p className="mt-3 text-center text-[11px] text-white/25">
-                {upcomingCount} upcoming cities · May – Jul 2026
+                {upcomingCount} upcoming cities · Jun – Aug 2026
               </p>
 
               {/* CTA */}

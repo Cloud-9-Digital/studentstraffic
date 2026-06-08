@@ -42,6 +42,17 @@ npm run android
 
 This app is currently pinned to Expo SDK 54 so it can run in the App Store version of Expo Go on physical iPhones during Expo's 2026 SDK 55/56 transition. If Expo prints engine warnings or behaves oddly, use Node 20.19.4 or newer before debugging app code.
 
+## Versioning
+
+Use the shared release/versioning policy here:
+
+- [Mobile Versioning Guide](../docs/mobile-versioning.md)
+
+Quick rule:
+
+- update `version` in `mobile/app.json` only when users should see a new release version
+- let EAS auto-increment internal Android build numbers for production builds
+
 ## Current Architecture
 
 - `app/` contains Expo Router routes.
