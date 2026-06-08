@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowRight, MapPin, X } from "lucide-react";
 import Link from "next/link";
 
@@ -13,22 +13,18 @@ const DELAY_MS = 5000;
 export function SeminarPromoPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const [pillVisible, setPillVisible] = useState(false);
-
-  const nextEvent = useMemo(() => {
-    return getNextRegisterableEvent(EVENTS) ?? null;
-  }, []);
-
-  const upcomingCount = useMemo(() => {
-    return getRegisterableEvents(EVENTS).length;
-  }, []);
+  const [nextEvent, setNextEvent] = useState<(typeof EVENTS)[number] | null>(null);
+  const [upcomingCount, setUpcomingCount] = useState(0);
 
   useEffect(() => {
-    if (!nextEvent) return;
+    const event = getNextRegisterableEvent(EVENTS) ?? null;
+    setNextEvent(event);
+    setUpcomingCount(getRegisterableEvents(EVENTS).length);
 
-    // Pill appears after 1.5 s
+    if (!event) return;
+
     const pillTimer = setTimeout(() => setPillVisible(true), 1500);
 
-    // Auto-show popup based on session count
     const count = parseInt(sessionStorage.getItem(SESSION_KEY) ?? "0", 10);
     if (count < MAX_AUTO_SHOWS) {
       const popupTimer = setTimeout(() => {
@@ -42,7 +38,7 @@ export function SeminarPromoPopup() {
     }
 
     return () => clearTimeout(pillTimer);
-  }, [nextEvent]);
+  }, []);
 
   if (!nextEvent) return null;
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { ArrowRight, Clock, MapPin } from "lucide-react";
 
 import { EVENTS, getEventsForDisplay, isEventCompleted, parseEventDate } from "../_data";
@@ -11,8 +12,8 @@ const ACCENTS = [
   { bg: "bg-green-700", light: "bg-green-50",  text: "text-green-700" },
 ] as const;
 
-function daysFromNow(dateStr: string): number {
-  const today = new Date();
+function daysFromNow(dateStr: string, now: Date): number {
+  const today = new Date(now);
   today.setHours(0, 0, 0, 0);
   return Math.round((parseEventDate(dateStr).getTime() - today.getTime()) / 86_400_000);
 }
@@ -24,7 +25,11 @@ function daysLabel(days: number): string {
 }
 
 export function SeminarEvents() {
-  const displayEvents = getEventsForDisplay(EVENTS);
+  const [clientNow, setClientNow] = useState<Date | null>(null);
+  useEffect(() => setClientNow(new Date()), []);
+
+  // During SSR clientNow is null — show all events as upcoming with no completion state
+  const displayEvents = clientNow ? getEventsForDisplay(EVENTS, clientNow) : EVENTS;
 
   return (
     <section className="bg-gray-50 py-16 md:py-20">
@@ -42,10 +47,10 @@ export function SeminarEvents() {
         <div className="mt-8 grid grid-cols-2 gap-3 lg:grid-cols-3">
           {displayEvents.map((event, index) => {
             const { city, venue, date, day, time } = event;
-            const completed = isEventCompleted(event);
+            const completed = clientNow ? isEventCompleted(event, clientNow) : false;
             const accent = ACCENTS[index % 3];
             const [dayNum, month] = date.split(" ");
-            const days = daysFromNow(date);
+            const days = clientNow ? daysFromNow(date, clientNow) : null;
 
             return (
               <div
@@ -63,7 +68,7 @@ export function SeminarEvents() {
                       <span className="text-[11px] font-semibold text-white/70">{month}</span>
                     </div>
                     {/* Countdown pill */}
-                    {!completed && (
+                    {!completed && days !== null && (
                       <span className="rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-semibold text-white whitespace-nowrap">
                         {daysLabel(days)}
                       </span>
