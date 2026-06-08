@@ -30,8 +30,7 @@ const bodyFont = Plus_Jakarta_Sans({
 const displayFont = Fraunces({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
+  weight: ["400", "600"],
   display: "swap",
 });
 
