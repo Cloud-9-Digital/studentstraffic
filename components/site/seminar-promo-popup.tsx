@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, MapPin, X } from "lucide-react";
 import Link from "next/link";
 
-import { EVENTS, getNextRegisterableEvent, getRegisterableEvents } from "@/app/seminar-2026/_data";
+import { type SeminarEvent, EVENTS, getNextRegisterableEvent, getRegisterableEvents } from "@/app/seminar-2026/_data";
 
 const SESSION_KEY = "seminar_popup_count";
 const MAX_AUTO_SHOWS = 2;
@@ -13,7 +13,7 @@ const DELAY_MS = 5000;
 export function SeminarPromoPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const [pillVisible, setPillVisible] = useState(false);
-  const [nextEvent, setNextEvent] = useState<(typeof EVENTS)[number] | null>(null);
+  const [nextEvent, setNextEvent] = useState<SeminarEvent | null>(null);
   const [upcomingCount, setUpcomingCount] = useState(0);
 
   useEffect(() => {
