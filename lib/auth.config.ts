@@ -1,3 +1,4 @@
+import NextAuth from "next-auth";
 import type { NextAuthConfig } from "next-auth";
 import Google from "next-auth/providers/google";
 
@@ -22,3 +23,5 @@ export const authConfig = {
     },
   },
 } satisfies NextAuthConfig;
+
+export const { auth: edgeAuth } = NextAuth(authConfig);

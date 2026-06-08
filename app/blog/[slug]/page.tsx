@@ -217,6 +217,14 @@ export default async function BlogPostPage({
           }}
         />
 
+        {/* Mobile: cover image above text */}
+        {post.coverUrl && (
+          <div className="md:hidden px-5 sm:px-6 pt-6">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={post.coverUrl} alt={post.title} className="w-full h-auto block rounded-2xl" />
+          </div>
+        )}
+
         {/* Content */}
         <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
           {/* Two-column layout */}
@@ -224,18 +232,6 @@ export default async function BlogPostPage({
 
             {/* Left — text */}
             <div className="min-w-0">
-              {post.category && (
-                <div className="mb-4">
-                  <Link
-                    href={`/blog/category/${categoryToSlug(post.category)}`}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-accent/35 bg-accent/12 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-accent hover:bg-accent/20 transition-colors"
-                  >
-                    <span className="size-1.5 rounded-full bg-accent shrink-0" />
-                    {post.category}
-                  </Link>
-                </div>
-              )}
-
               <h1 className="font-display text-[1.75rem] font-bold leading-[1.12] tracking-tight text-white md:text-[2.1rem] lg:text-[2.5rem]">
                 {post.title}
               </h1>
@@ -264,16 +260,14 @@ export default async function BlogPostPage({
               </div>
             </div>
 
-            {/* Right — cover image */}
+            {/* Right — cover image (desktop only) */}
             {post.coverUrl && (
-              <div className="relative h-[220px] w-full overflow-hidden rounded-2xl md:h-[260px] md:w-[380px] lg:h-[300px] lg:w-[440px] shrink-0">
-                <Image
+              <div className="hidden md:block shrink-0 self-start w-[380px] lg:w-[440px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={post.coverUrl}
                   alt={post.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 440px, 440px"
-                  className="object-cover"
-                  priority
+                  className="w-full h-auto rounded-2xl block"
                 />
               </div>
             )}

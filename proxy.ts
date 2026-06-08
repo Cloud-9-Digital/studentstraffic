@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { auth } from "@/lib/auth";
+import { edgeAuth } from "@/lib/auth.config";
 
 import {
   rateLimit,
@@ -21,7 +21,7 @@ export async function proxy(request: NextRequest) {
 
   // Protect dashboard routes - require authentication
   if (pathname.startsWith("/dashboard")) {
-    const session = await auth();
+    const session = await edgeAuth();
     if (!session?.user) {
       const loginUrl = new URL("/login", request.url);
       loginUrl.searchParams.set("callbackUrl", pathname);
