@@ -4,6 +4,7 @@ import { and, desc, eq, lt, gt, ne } from "drizzle-orm";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { unstable_cache } from "next/cache";
+import { connection } from "next/server";
 import { CalendarDays, Clock, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import readingTime from "reading-time";
 
@@ -34,20 +35,16 @@ type RelatedPost = {
   readingTimeMinutes: number | null;
 };
 
-const getPost = unstable_cache(
-  async (slug: string) => {
-    const db = getDb();
-    if (!db) return null;
-    const [post] = await db
-      .select()
-      .from(blogPosts)
-      .where(eq(blogPosts.slug, slug))
-      .limit(1);
-    return post ?? null;
-  },
-  ["blog-post-by-slug"],
-  { tags: ["blog"], revalidate: 3600 }
-);
+async function getPost(slug: string) {
+  const db = getDb();
+  if (!db) return null;
+  const [post] = await db
+    .select()
+    .from(blogPosts)
+    .where(and(eq(blogPosts.slug, slug), eq(blogPosts.status, "published")))
+    .limit(1);
+  return post ?? null;
+}
 
 const getRelatedPosts = unstable_cache(
   async (slug: string, category: string | null): Promise<RelatedPost[]> => {
@@ -117,6 +114,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  await connection();
   const { slug } = await params;
   if (slug === PLACEHOLDER_BLOG_SLUG) return {};
   const post = await getPost(slug);
@@ -179,13 +177,14 @@ export default async function BlogPostPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  await connection();
   const { slug } = await params;
   if (slug === PLACEHOLDER_BLOG_SLUG) {
     notFound();
   }
   const post = await getPost(slug);
 
-  if (!post || post.status !== "published") notFound();
+  if (!post) notFound();
 
   const rt = readingTime(post.content);
   const faqs = extractFaqs(post.content);
