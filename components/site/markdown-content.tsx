@@ -1,7 +1,18 @@
 "use client";
 
+import type { ComponentPropsWithoutRef } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+
+function ScrollableTable({ children, ...props }: ComponentPropsWithoutRef<"table">) {
+  return (
+    <div className="my-6 w-full overflow-x-auto rounded-xl border border-border">
+      <table {...props} className="min-w-full text-sm">
+        {children}
+      </table>
+    </div>
+  );
+}
 
 export function MarkdownContent({ content }: { content: string }) {
   return (
@@ -20,9 +31,12 @@ export function MarkdownContent({ content }: { content: string }) {
       prose-pre:bg-muted prose-pre:rounded-xl prose-pre:border prose-pre:border-border
       prose-img:rounded-xl prose-img:border prose-img:border-border
       prose-hr:border-border prose-hr:my-8
-      prose-table:text-sm prose-th:bg-muted prose-th:text-foreground
+      prose-table:text-sm prose-th:bg-muted prose-th:text-foreground prose-table:my-0
     ">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{ table: ScrollableTable }}
+      >
         {content}
       </ReactMarkdown>
     </div>
