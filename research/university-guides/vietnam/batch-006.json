@@ -1,0 +1,471 @@
+{
+  "batchId": "vietnam-batch-006",
+  "countrySlug": "vietnam",
+  "notes": "Two universities added June 2026: Cuu Long University (first non-public university in the Mekong Delta, Vinh Long) and an enriched update for VNU-UHS (University of Health Sciences, Vietnam National University Ho Chi Minh City — formerly the School of Medicine, rebranded June 2024). Sources drawn from official university websites, Vietnam government education bulletins, and VNU-HCM institutional announcements.",
+  "universities": [
+    {
+      "slug": "cuu-long-university-medicine",
+      "name": "Cuu Long University Faculty of Medicine",
+      "city": "Vinh Long",
+      "type": "Private",
+      "establishedYear": 2000,
+      "summary": "The first non-public university in Vietnam's Mekong Delta, Cuu Long University operates a Doctor of Medicine (y khoa) program from its 22.5-hectare campus in Vinh Long Province. The university follows an 'on-demand' training model that partners with healthcare employers, keeping program intake tightly linked to actual workforce need. Tuition is among the most affordable for medicine in Southern Vietnam, and the Mekong Delta location gives students clinical exposure to tropical disease profiles directly relevant to Indian return-practice.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://cuulong.university/",
+      "campusLifestyle": "Cuu Long University's campus spans 22.5 hectares in Long Ho District, Vinh Long Province — a calm, mid-size Mekong Delta town rather than a crowded city. The environment is practical and community-oriented. Student life is quiet compared to Ho Chi Minh City; the focus is professional training rather than metropolitan campus culture. The university has grown rapidly since 2023, with 4,000 new students enrolled in 2025, a 150% increase over two years.",
+      "cityProfile": "Vinh Long is a provincial capital in the Mekong Delta, roughly 65 km from Can Tho and 135 km from Ho Chi Minh City. The city sits on the Tien River, with a cost of living significantly lower than Vietnam's major metros. Monthly expenses for a student average ₹8,000–12,000 (food, transport, essentials). The Mekong Delta environment — tropical climate, rice-growing region, river delta geography — exposes medical students to disease patterns (dengue, leptospirosis, tropical infections) highly relevant to Indian clinical practice.",
+      "clinicalExposure": "The university's on-demand training model means students enter employment-linked hospital ecosystems early. Cuu Long has formal healthcare employer partnerships where companies sponsor students for specific clinical roles post-graduation. The university's health sciences students have been documented in community medical outreach involving 4,000+ patients, which speaks to practical clinical exposure in the region. For specific teaching-hospital depth and rotation structure, students should verify directly.",
+      "hostelOverview": "The official Cuu Long University sources do not publish a detailed hostel explainer with per-room pricing. Vinh Long is a small enough city that most students arrange housing near campus privately, typically at very low cost compared to Hanoi or Ho Chi Minh City. Students should verify current accommodation options directly with the university.",
+      "indianFoodSupport": "There is no advertised India-specific dining at Cuu Long University. Vinh Long's Mekong Delta food culture is rice-based and vegetable-forward, which is generally easier for Indian students to adapt to than Northern or Central Vietnamese cuisine. Self-cooking with Indian staples is feasible given access to produce markets. A small Indian student community in this region is unlikely — students should plan independently.",
+      "safetyOverview": "Vinh Long is a low-crime provincial city. There is no documented safety concern for international students in this region of Vietnam. The campus environment is settled and community-facing. Road safety follows standard Vietnam precautions — motorbike traffic requires awareness when crossing streets.",
+      "studentSupport": "Cuu Long University has an active student welfare framework. In 2025, it offered 20–50% tuition reductions for new students in the first semester and has a scholarship program. The on-demand training model means some students receive a monthly living stipend of 3 million VND/month under employer-sponsored programs. International student infrastructure is not heavily marketed.",
+      "whyChoose": [
+        "First non-public university in the Mekong Delta — established 2000, with 25 years of operation and a clearly identified medicine program.",
+        "Tuition is among the most affordable for Doctor of Medicine in Southern Vietnam, at approximately 78 million VND/year (~$3,100 USD), with scholarships available.",
+        "Mekong Delta clinical environment exposes students to tropical disease patterns (dengue, leptospirosis, typhoid, tropical infections) identical to what Indian doctors treat in South India.",
+        "Employer-partnered training model with documented healthcare company MOU agreements, linking medicine graduates to post-graduation employment pathways.",
+        "Vinh Long cost of living is the lowest in any Vietnamese university city in the catalog, with monthly student expenses significantly below Hanoi or Ho Chi Minh City."
+      ],
+      "thingsToConsider": [
+        "The medicine program is taught in Vietnamese — international students need to account for a full language transition before and during clinical rotations.",
+        "NMC recognition status should be independently verified before applying; the university's WDOMS/FAIMER listing should be confirmed at wdoms.org.",
+        "The on-demand employer-partnership model means some intake slots are employer-reserved — applicants should verify open international seats for the relevant year.",
+        "Vinh Long has no established Indian student network and very limited English-language services outside campus academic structures.",
+        "As a private institution, Cuu Long's international standing for India-return licensing purposes (NExT/FMGE) requires direct verification rather than assumption."
+      ],
+      "bestFitFor": [
+        "Students who are comfortable with full-immersion Vietnamese-medium training and have already achieved a working level of Vietnamese or are committed to acquiring it quickly.",
+        "Families seeking the lowest total cost of study in Southern Vietnam and willing to prioritize cost over established Indian student community size.",
+        "Students interested in tropical and rural medicine who want clinical exposure to the Mekong Delta's disease environment.",
+        "Applicants exploring employer-sponsored or bonded medicine pathways where the university's company-partnership model could provide direct post-graduation placements."
+      ],
+      "teachingHospitals": [
+        "Vinh Long General Hospital",
+        "Mekong Delta regional healthcare network",
+        "TTH Group healthcare employer partners"
+      ],
+      "recognitionBadges": [
+        "Private medical university — Vinh Long",
+        "Vietnam Ministry of Education registered",
+        "Employer-partnered training model"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "Cuu Long University official site",
+          "url": "https://cuulong.university/"
+        },
+        {
+          "label": "Vietnam.vn: Cuu Long University 2026 enrollment in 38 majors",
+          "url": "https://www.vietnam.vn/en/nam-2026-truong-dh-cuu-long-tuyen-sinh-38-nganh"
+        },
+        {
+          "label": "Vietnam.vn: Cuu Long tuition affordability article",
+          "url": "https://www.vietnam.vn/en/muc-hoc-phi-truong-dh-cuu-long-phu-hop-voi-sinh-vien-dbscl"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where is Cuu Long University located?",
+          "answer": "Cuu Long University is in Long Ho District, Vinh Long Province — a Mekong Delta city about 135 km from Ho Chi Minh City."
+        },
+        {
+          "question": "When was Cuu Long University established?",
+          "answer": "In 2000, as the first non-public (private) university in Vietnam's Mekong Delta region."
+        },
+        {
+          "question": "What is the medicine tuition at Cuu Long University?",
+          "answer": "Approximately 78 million VND per academic year (~$3,100 USD) for the Doctor of Medicine program, with scholarships reducing costs for qualifying students."
+        },
+        {
+          "question": "Is Cuu Long University NMC-recognized for Indian students?",
+          "answer": "NMC recognition status must be independently verified at nmc.org.in before applying. Do not rely on generic Vietnam MBBS lists — always verify the specific institution."
+        },
+        {
+          "question": "What language is the medicine program taught in at Cuu Long?",
+          "answer": "Vietnamese is the primary language of instruction. Students must factor in full language transition before and during clinical years."
+        }
+      ],
+      "similarUniversitySlugs": [
+        "tra-vinh-university-medicine-pharmacy",
+        "nam-can-tho-university-faculty-of-medicine",
+        "can-tho-university-medicine-pharmacy"
+      ],
+      "admissionsContent": {
+        "overview": "Cuu Long University admits students to the Doctor of Medicine program through Vietnam's national university entrance system. For the 2026 intake, the university offers 38 majors including health sciences. The on-demand training model means some seats in the medicine program are allocated to employer-partner applicants. International student admissions should be confirmed directly with the university's admissions office.",
+        "licensingPathway": [
+          "Graduates from Cuu Long University's medicine program hold a Vietnamese Doctor of Medicine degree.",
+          "India-return licensing (NExT/FMGE) depends on NMC recognition of the specific institution — verify current status at nmc.org.in before applying.",
+          "The Vietnamese internship year is typically embedded in the sixth year of the program."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-06-11",
+        "sources": [
+          {
+            "label": "Cuu Long University official website",
+            "url": "https://cuulong.university/",
+            "kind": "official-university",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "Vietnam.vn: Cuu Long 2026 enrollment 38 majors",
+            "url": "https://www.vietnam.vn/en/nam-2026-truong-dh-cuu-long-tuyen-sinh-38-nganh",
+            "kind": "official-program",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "Vietnam.vn: Cuu Long tuition fees affordable for Mekong Delta students",
+            "url": "https://www.vietnam.vn/en/muc-hoc-phi-truong-dh-cuu-long-phu-hop-voi-sinh-vien-dbscl",
+            "kind": "official-fee",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "Vietnam.vn: Cuu Long University key events 2025",
+            "url": "https://www.vietnam.vn/en/loat-su-kien-tieu-bieu-nam-2025-cua-truong-dai-hoc-cuu-long",
+            "kind": "news",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "studyinvietnam.edu.vn: University of Cuu Long profile",
+            "url": "http://studyinvietnam.edu.vn/detail-university/school-mekong-private-university-236.html",
+            "kind": "directory",
+            "checkedAt": "2026-06-11"
+          }
+        ],
+        "notes": "Added June 2026. First non-public university in the Mekong Delta. Medicine program confirmed from 2025-2026 national enrollment data and employer-partnership reporting. Tuition ~78M VND/year confirmed from government education bulletin. NMC/WDOMS status not yet confirmed from primary sources — must be verified before promoting to India-return applicants."
+      },
+      "programs": [
+        {
+          "slug": "cuu-long-university-mbbs-2026",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine (Y khoa)",
+          "durationYears": 6,
+          "officialAnnualTuitionAmount": 78000000,
+          "officialTotalTuitionAmount": 468000000,
+          "officialFeeCurrency": "VND",
+          "annualTuitionUsd": 3100,
+          "totalTuitionUsd": 18600,
+          "livingUsd": 2000,
+          "officialProgramUrl": "https://cuulong.university/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Pre-clinical (Years 1–3)",
+              "language": "Vietnamese",
+              "details": "Foundation medical sciences — anatomy, physiology, biochemistry, pathology, pharmacology — delivered in Vietnamese with practical labs on the Vinh Long campus."
+            },
+            {
+              "phase": "Clinical (Years 4–6)",
+              "language": "Vietnamese",
+              "details": "Hospital rotations through Vinh Long General Hospital and Mekong Delta partner facilities. The on-demand employer-partnership model may place some students in employer-sponsored clinical settings."
+            }
+          ],
+          "yearlyCostBreakdown": [
+            {
+              "yearLabel": "1st Year",
+              "tuitionUsd": 3100,
+              "hostelUsd": 1200,
+              "livingUsd": 800,
+              "totalUsd": 5100,
+              "notes": "Tuition + estimated private accommodation near campus + food and transport in Vinh Long."
+            },
+            {
+              "yearLabel": "2nd Year",
+              "tuitionUsd": 3100,
+              "hostelUsd": 1200,
+              "livingUsd": 800,
+              "totalUsd": 5100,
+              "notes": "Same as Year 1 — Vinh Long costs remain stable."
+            },
+            {
+              "yearLabel": "3rd Year",
+              "tuitionUsd": 3100,
+              "hostelUsd": 1200,
+              "livingUsd": 800,
+              "totalUsd": 5100,
+              "notes": "Pre-clinical completion year."
+            },
+            {
+              "yearLabel": "4th Year",
+              "tuitionUsd": 3100,
+              "hostelUsd": 1200,
+              "livingUsd": 800,
+              "totalUsd": 5100,
+              "notes": "Clinical rotations begin — mainly at Vinh Long General Hospital."
+            },
+            {
+              "yearLabel": "5th Year",
+              "tuitionUsd": 3100,
+              "hostelUsd": 1200,
+              "livingUsd": 800,
+              "totalUsd": 5100,
+              "notes": "Advanced clinical rotations."
+            },
+            {
+              "yearLabel": "6th Year",
+              "tuitionUsd": 3100,
+              "hostelUsd": 1200,
+              "livingUsd": 800,
+              "totalUsd": 5100,
+              "notes": "Clinical internship year embedded in final year."
+            }
+          ],
+          "licenseExamSupport": [],
+          "intakeMonths": ["September"],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-06-11",
+          "feeNotes": "78 million VND/year confirmed from Vietnam government education bulletin for 2025-2026. USD equivalent calculated at 25,000 VND = $1. Living costs estimated for Vinh Long provincial city. Verify with the university for the exact intake year's fee schedule.",
+          "sourceUrls": [
+            "https://cuulong.university/",
+            "https://www.vietnam.vn/en/muc-hoc-phi-truong-dh-cuu-long-phu-hop-voi-sinh-vien-dbscl"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vnu-hcmc-school-of-medicine",
+      "name": "University of Health Sciences, Vietnam National University Ho Chi Minh City (VNU-UHS)",
+      "city": "Di An City",
+      "type": "Public",
+      "establishedYear": 2009,
+      "summary": "The University of Health Sciences (VNU-UHS) is the 8th member institution of Vietnam National University Ho Chi Minh City, officially established in June 2024 from the former School of Medicine — VNU-HCM. The school pioneered Vietnam's first integrated modular medical curriculum in 2010, modelled on the Medical University of Vienna's approach. Its six-year Doctor of Medicine program is AUN-QA accredited, linked to major Ho Chi Minh City teaching hospitals, and published an official year-by-year tuition roadmap — all making it one of the most verifiably structured medicine programs in Southern Vietnam.",
+      "featured": false,
+      "published": true,
+      "officialWebsite": "https://en.uhsvnu.edu.vn/",
+      "campusLifestyle": "VNU-UHS is based in the VNU-HCM Urban Area in Di An City, Binh Duong Province — a quieter academic zone on the northern edge of greater Ho Chi Minh City. The campus environment is institutional and research-oriented rather than lifestyle-marketed. Students get access to the broader VNU-HCM ecosystem (multiple universities, research centres, student infrastructure) while being somewhat shielded from the density of inner HCMC. For students who want serious academic structure with proximity to Southern Vietnam's medical hub, this campus profile fits well.",
+      "cityProfile": "Di An City is administratively part of Binh Duong Province but is functionally a northeastern extension of Ho Chi Minh City. The VNU-HCM urban area has its own shops, transport links, and student services. Students who want the full HCMC experience can access the city in 20–40 minutes. Cost of living inside the VNU-HCM urban area is moderate — lower than inner HCMC, higher than a provincial city like Vinh Long or Can Tho.",
+      "clinicalExposure": "VNU-UHS operates on a school-hospital model. Its major teaching hospital partnerships include Binh Dan Hospital (formalized since 2010 and re-cemented as a strategic alliance in 2024), Children's Hospital 2, the Ho Chi Minh City Hospital of Traditional Medicine, and regional clinical facilities across Southern Vietnam. The 6-year curriculum moves from integrated foundation sciences into long clinical-rotation phases, aligned to AUN-QA competency standards.",
+      "hostelOverview": "The VNU-HCM urban area has an integrated student accommodation ecosystem. On-campus housing options and off-campus private housing near the university are both available. Specific room types, pricing, and policies should be confirmed directly with VNU-UHS. Housing here is less expensive than accommodation in inner Ho Chi Minh City.",
+      "indianFoodSupport": "The official VNU-UHS materials do not advertise dedicated India-specific food support. Di An City and the VNU-HCM urban area have student-facing restaurants and convenience stores. Indian grocery items require a trip into Ho Chi Minh City proper. Students from South India generally adapt to Vietnamese food quickly — both cuisines are rice and vegetable-forward.",
+      "safetyOverview": "The VNU-HCM urban area is a planned university zone with controlled access and a generally safe campus environment. The university publishes structured academic and institutional materials rather than generic safety pledges — a reliable trust signal. Students report no significant safety concerns in the Di An City campus area.",
+      "studentSupport": "VNU-UHS provides a published tuition roadmap, structured admissions materials, and academic support through the VNU-HCM university system. Its LMS and student portals are well-established. International student infrastructure has expanded as UHS builds its post-2024 identity. The university does not operate a high-volume agent-driven international recruitment programme, which means prospective students get direct institutional information rather than agent-inflated pitches.",
+      "whyChoose": [
+        "AUN-QA accredited Doctor of Medicine programme — the first medical programme in the School of Medicine to achieve ASEAN-standard quality certification.",
+        "Pioneer of Vietnam's first integrated modular medical curriculum (since 2010), modelled on the Medical University of Vienna approach — a significantly more advanced curriculum structure than most Vietnam medical schools.",
+        "Official year-by-year tuition roadmap published at 62.2 million VND/year (~$2,450 USD) — one of the most transparent fee structures in the Vietnam catalog.",
+        "Strategic clinical partnerships with Binh Dan Hospital, Children's Hospital 2, and Ho Chi Minh City Hospital of Traditional Medicine — established since 2010.",
+        "Part of the VNU-HCM system, Vietnam's most prestigious university network, which provides research depth, faculty quality, and institutional infrastructure well above standalone private medical schools."
+      ],
+      "thingsToConsider": [
+        "The Doctor of Medicine programme is taught in Vietnamese. International students require a full language transition before and during clinical rotations.",
+        "Di An City is quieter than inner Ho Chi Minh City — students who want an urban lifestyle will need to commute.",
+        "The university was formally established as an independent institution only in June 2024; its brand identity as VNU-UHS is still new, which means some older sources still refer to it as the 'School of Medicine — VNU-HCM'.",
+        "NMC recognition status for India-return licensing should be independently verified at nmc.org.in for the current year.",
+        "The integrated modular curriculum is demanding — it is designed to produce high-quality graduates, not to minimise academic intensity for international fee-paying students."
+      ],
+      "bestFitFor": [
+        "Students who want the most rigorous and accredited public medical education available in Southern Vietnam.",
+        "Applicants from the VNU-HCM urban area or those who value proximity to Ho Chi Minh City's medical ecosystem while keeping costs lower than inner-city housing.",
+        "Students motivated by a Vienna-model integrated curriculum with documented AUN-QA accreditation rather than a generic textbook-lecture format.",
+        "Families who want verifiable fee documentation (the published tuition roadmap) and strong institutional transparency before committing."
+      ],
+      "teachingHospitals": [
+        "Binh Dan Hospital (strategic partner since 2010)",
+        "Children's Hospital 2, Ho Chi Minh City",
+        "Ho Chi Minh City Hospital of Traditional Medicine",
+        "115 People's Hospital, Ho Chi Minh City"
+      ],
+      "recognitionBadges": [
+        "AUN-QA Accredited — Doctor of Medicine programme",
+        "Public — VNU-HCM system member",
+        "Published official tuition roadmap",
+        "Vienna-model integrated modular curriculum"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "VNU-UHS official English site",
+          "url": "https://en.uhsvnu.edu.vn/"
+        },
+        {
+          "label": "VNU-UHS: History of the School of Medicine — VNUHCM",
+          "url": "https://en.uhsvnu.edu.vn/tin-tuc/history-of-school-of-medicine-vnuhcm/"
+        },
+        {
+          "label": "VNU-UHS: AUN-QA accreditation announcement",
+          "url": "https://en.uhsvnu.edu.vn/tin-tuc/school-of-medicine-vnuhcm-successfully-achieves-accreditation-of-doctor-of-medicine-programme-to-aun-qa-standards/"
+        },
+        {
+          "label": "VNU-UHS: Medical training programme 2023 curriculum document",
+          "url": "https://en.uhsvnu.edu.vn/medical-training-programme-academic-year-2023/"
+        },
+        {
+          "label": "VNU-UHS: Binh Dan Hospital strategic alliance",
+          "url": "https://en.uhsvnu.edu.vn/tin-tuc/university-of-health-sciences-vietnam-national-university-ho-chi-minh-city-and-binh-dan-hospital-cement-strategic-alliance-for-advanced-medical-training-and-interdisciplinary-research/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between VNU-UHS and the old 'School of Medicine — VNU-HCM'?",
+          "answer": "They are the same institution. On June 3rd, 2024, the Vietnamese Prime Minister signed Decision No. 472/QĐ-TTg officially establishing the University of Health Sciences (UHS) as an independent member of VNU-HCM. Before that, it operated as the School of Medicine — VNU-HCM since 2009."
+        },
+        {
+          "question": "What tuition does VNU-UHS charge for the Doctor of Medicine programme?",
+          "answer": "The published 2025-2026 tuition roadmap lists 62.2 million VND per academic year for General Medicine — approximately $2,450 USD at current exchange rates."
+        },
+        {
+          "question": "Is VNU-UHS accredited?",
+          "answer": "Yes. The Doctor of Medicine programme at VNU-UHS is AUN-QA accredited — the first programme in the institution to achieve ASEAN University Network quality certification."
+        },
+        {
+          "question": "What teaching hospitals does VNU-UHS use?",
+          "answer": "Primary partners include Binh Dan Hospital (strategic alliance since 2010), Children's Hospital 2, Ho Chi Minh City Hospital of Traditional Medicine, and 115 People's Hospital."
+        },
+        {
+          "question": "What curriculum model does VNU-UHS use?",
+          "answer": "An integrated modular curriculum modelled on the Medical University of Vienna — the first of its kind in Vietnam when introduced in 2009-2010. It integrates basic sciences, clinical reasoning, and patient exposure from early years rather than separating them into rigid phases."
+        }
+      ],
+      "similarUniversitySlugs": [
+        "ump-ho-chi-minh-city",
+        "vnu-university-of-medicine-and-pharmacy-hanoi",
+        "pham-ngoc-thach-university-medicine"
+      ],
+      "admissionsContent": {
+        "overview": "VNU-UHS admits students to the six-year Doctor of Medicine programme through Vietnam's national university entrance examination system (tuyển sinh đại học). Admission is score-based and competitive — as a VNU-HCM member institution, it typically draws high-scoring applicants. For the 2025-2026 year the university welcomed 1,065 new students across all programmes. International student applications should be directed to the VNU-HCM international admissions office.",
+        "licensingPathway": [
+          "Graduates hold a Doctor of Medicine (Bác sĩ y khoa) degree from VNU-UHS, a public VNU-HCM member institution.",
+          "India-return licensing under NExT/FMGE requires NMC recognition of the specific institution — verify at nmc.org.in before applying.",
+          "The AUN-QA accreditation and official published curriculum strengthen the institution's documentation trail compared to lightly verified private-school pages."
+        ]
+      },
+      "research": {
+        "lastVerifiedAt": "2026-06-11",
+        "sources": [
+          {
+            "label": "VNU-UHS official English website",
+            "url": "https://en.uhsvnu.edu.vn/",
+            "kind": "official-university",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "VNU-UHS: Medical training programme curriculum 2023",
+            "url": "https://en.uhsvnu.edu.vn/medical-training-programme-academic-year-2023/",
+            "kind": "official-program",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "Vietnam.vn: Health Sciences University tuition fees 2025-2026",
+            "url": "https://www.vietnam.vn/en/hoc-phi-dai-hoc-khoa-hoc-suc-khoe-nam-2025-2026",
+            "kind": "official-fee",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "VNU-UHS: AUN-QA accreditation of Doctor of Medicine",
+            "url": "https://en.uhsvnu.edu.vn/tin-tuc/school-of-medicine-vnuhcm-successfully-achieves-accreditation-of-doctor-of-medicine-programme-to-aun-qa-standards/",
+            "kind": "accreditation",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "VNU-UHS: History of School of Medicine VNUHCM",
+            "url": "https://en.uhsvnu.edu.vn/tin-tuc/history-of-school-of-medicine-vnuhcm/",
+            "kind": "official-university",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "VNU-UHS: Binh Dan Hospital strategic alliance",
+            "url": "https://en.uhsvnu.edu.vn/tin-tuc/university-of-health-sciences-vietnam-national-university-ho-chi-minh-city-and-binh-dan-hospital-cement-strategic-alliance-for-advanced-medical-training-and-interdisciplinary-research/",
+            "kind": "clinical",
+            "checkedAt": "2026-06-11"
+          },
+          {
+            "label": "VNU-UHS: 15 Years of Pride — School of Medicine to University of Health Sciences",
+            "url": "https://en.uhsvnu.edu.vn/tin-tuc/15-years-of-pride-the-school-of-medicine-at-vietnam-national-university-ho-chi-minh-city-2009-2024-and-the-beginning-of-a-new-journey-as-the-university-of-health-sciences/",
+            "kind": "official-university",
+            "checkedAt": "2026-06-11"
+          }
+        ],
+        "notes": "Updated June 2026. Entry updated from original 'vnu-hcmc-school-of-medicine' seed to reflect the June 2024 rebrand to University of Health Sciences (UHS). Tuition 62.2M VND/year confirmed from Vietnam.vn government bulletin. AUN-QA accreditation, Binh Dan Hospital partnership, and Vienna-model curriculum all confirmed from official UHS institutional pages. NMC recognition noted in third-party sources — verify current status at nmc.org.in."
+      },
+      "programs": [
+        {
+          "slug": "vnu-hcmc-school-of-medicine-mbbs",
+          "courseSlug": "mbbs",
+          "title": "Doctor of Medicine",
+          "durationYears": 6,
+          "officialAnnualTuitionAmount": 62200000,
+          "officialTotalTuitionAmount": 373200000,
+          "officialFeeCurrency": "VND",
+          "annualTuitionUsd": 2450,
+          "totalTuitionUsd": 14700,
+          "livingUsd": 2400,
+          "officialProgramUrl": "https://en.uhsvnu.edu.vn/medical-training-programme-academic-year-2023/",
+          "medium": "Vietnamese",
+          "teachingPhases": [
+            {
+              "phase": "Integrated Foundation Sciences (Years 1–3)",
+              "language": "Vietnamese",
+              "details": "Vienna-model integrated modular curriculum — basic and clinical sciences are woven together from Year 1 rather than separated into pure pre-clinical and clinical blocks. Anatomy, physiology, pathology, pharmacology and clinical reasoning are taught in integrated modules."
+            },
+            {
+              "phase": "Clinical Rotations (Years 4–6)",
+              "language": "Vietnamese",
+              "details": "Rotations through Binh Dan Hospital, Children's Hospital 2, Ho Chi Minh City Hospital of Traditional Medicine, and other Southern Vietnam teaching hospitals. The clinical phase is built around the school-hospital model linking VNU-UHS directly to major HCMC facilities."
+            }
+          ],
+          "yearlyCostBreakdown": [
+            {
+              "yearLabel": "1st Year",
+              "tuitionUsd": 2450,
+              "hostelUsd": 1500,
+              "livingUsd": 900,
+              "totalUsd": 4850,
+              "notes": "Tuition + estimated on-campus or near-campus accommodation in Di An City + food and transport."
+            },
+            {
+              "yearLabel": "2nd Year",
+              "tuitionUsd": 2450,
+              "hostelUsd": 1500,
+              "livingUsd": 900,
+              "totalUsd": 4850,
+              "notes": "Same cost structure."
+            },
+            {
+              "yearLabel": "3rd Year",
+              "tuitionUsd": 2450,
+              "hostelUsd": 1500,
+              "livingUsd": 900,
+              "totalUsd": 4850,
+              "notes": "Integrated pre-clinical completion year."
+            },
+            {
+              "yearLabel": "4th Year",
+              "tuitionUsd": 2450,
+              "hostelUsd": 1500,
+              "livingUsd": 900,
+              "totalUsd": 4850,
+              "notes": "Clinical rotations — hospital transport costs may increase marginally."
+            },
+            {
+              "yearLabel": "5th Year",
+              "tuitionUsd": 2450,
+              "hostelUsd": 1500,
+              "livingUsd": 900,
+              "totalUsd": 4850,
+              "notes": "Advanced clinical rotations."
+            },
+            {
+              "yearLabel": "6th Year",
+              "tuitionUsd": 2450,
+              "hostelUsd": 1500,
+              "livingUsd": 900,
+              "totalUsd": 4850,
+              "notes": "Final clinical year + graduation."
+            }
+          ],
+          "licenseExamSupport": [],
+          "intakeMonths": ["September"],
+          "featured": false,
+          "published": true,
+          "feeVerifiedAt": "2026-06-11",
+          "feeNotes": "62.2 million VND/year confirmed from Vietnam.vn government bulletin for 2025-2026 academic year. USD calculated at 25,400 VND = $1. Living costs estimated for Di An City / VNU-HCM urban area. Verify specific year's fee schedule with the university.",
+          "sourceUrls": [
+            "https://en.uhsvnu.edu.vn/medical-training-programme-academic-year-2023/",
+            "https://www.vietnam.vn/en/hoc-phi-dai-hoc-khoa-hoc-suc-khoe-nam-2025-2026"
+          ]
+        }
+      ]
+    }
+  ]
+}
