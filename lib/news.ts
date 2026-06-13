@@ -1,4 +1,4 @@
-import { cacheLife, cacheTag } from "next/cache";
+import { unstable_cache } from "next/cache";
 
 import { env } from "@/lib/env";
 
@@ -8,18 +8,30 @@ export type NewsArticle = {
   source: string;
   sourceDomain: string | null;
   imageUrl: string | null;
-  publishedAt: Date;
+  publishedAt: string; // ISO 8601
 };
 
-// Queries are intentionally narrow to avoid school/board/CBSE content.
-// Use -term exclusions for both GNews API and Google News RSS.
-const QUERIES = [
-  "NMC India medical university approved overseas license -cbse -school -board",
-  "medical university accreditation WDOMS WHO recognition overseas -cbse -school",
-  "FMGE NExT USMLE PLAB medical licensing exam India -school -board -class",
-  "overseas medical college India students policy -cbse -school -board -class",
-  "study abroad university visa India -cbse -school -board -class10 -class12",
-  "nursing engineering MBA university abroad India -school -board -cbse",
+export type NewsGroup = {
+  label: string;
+  slug: string;
+  articles: NewsArticle[];
+};
+
+// Each query is tied to a display section. Multiple queries can share a topic.
+const QUERIES: { q: string; topic: string }[] = [
+  { q: "NMC India medical university approved overseas license -cbse -school -board", topic: "MBBS & Medical" },
+  { q: "medical university accreditation WDOMS WHO recognition overseas -cbse -school", topic: "MBBS & Medical" },
+  { q: "overseas medical college India students policy -cbse -school -board -class", topic: "MBBS & Medical" },
+  { q: "FMGE NExT USMLE PLAB medical licensing exam India -school -board -class", topic: "Exams & Licensing" },
+  { q: "study abroad university visa India -cbse -school -board -class10 -class12", topic: "Study Abroad" },
+  { q: "nursing engineering MBA university abroad India -school -board -cbse", topic: "Other Programs" },
+];
+
+const TOPIC_ORDER: { label: string; slug: string }[] = [
+  { label: "MBBS & Medical", slug: "mbbs-medical" },
+  { label: "Study Abroad", slug: "study-abroad" },
+  { label: "Exams & Licensing", slug: "exams" },
+  { label: "Other Programs", slug: "other-programs" },
 ];
 
 // ── Promotional filter ────────────────────────────────────────────────────
@@ -89,7 +101,6 @@ const PROMO_DOMAINS = new Set([
   // PR wire / press release aggregators — not journalism
   "bignewsnetwork.com",
   "indiacalling.in",
-  "indiatoday.in",
   "newswire.com",
   "prnewswire.com",
   "businesswire.com",
@@ -128,7 +139,7 @@ async function fetchGNews(query: string, apiKey: string): Promise<NewsArticle[]>
         source: a.source.name,
         sourceDomain,
         imageUrl: a.image ?? null,
-        publishedAt: new Date(a.publishedAt),
+        publishedAt: a.publishedAt, // GNews returns ISO strings
       };
     });
   } catch {
@@ -175,9 +186,10 @@ function parseRssItems(xml: string): NewsArticle[] {
     try { if (sourceUrlRaw) sourceDomain = new URL(sourceUrlRaw).hostname.replace(/^www\./, ""); } catch {}
 
     const pubDateStr = extractTagText(item, "pubDate");
-    const publishedAt = pubDateStr ? new Date(pubDateStr) : new Date(0);
+    const pubDate = pubDateStr ? new Date(pubDateStr) : null;
+    const publishedAt = pubDate && !isNaN(pubDate.getTime()) ? pubDate.toISOString() : "";
 
-    if (title && source) {
+    if (title && source && publishedAt) {
       articles.push({ title, url: link, source, sourceDomain, imageUrl: null, publishedAt });
     }
   }
@@ -198,42 +210,66 @@ async function fetchRss(query: string): Promise<NewsArticle[]> {
   }
 }
 
-// ── Public API ────────────────────────────────────────────────────────────
+// ── Deduplication ─────────────────────────────────────────────────────────
 
 function normalizeTitle(title: string): string {
   return title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().slice(0, 80);
 }
 
-function dedupeAndSort(articles: NewsArticle[]): NewsArticle[] {
+// Fetches all queries and deduplicates globally across topics.
+// First occurrence wins — an article matching two topics stays in the first topic's group.
+async function fetchGrouped(apiKey: string | undefined): Promise<Map<string, NewsArticle[]>> {
+  const results = await Promise.all(
+    QUERIES.map(async ({ q, topic }) => {
+      const articles = apiKey ? await fetchGNews(q, apiKey) : await fetchRss(q);
+      return { topic, articles };
+    }),
+  );
+
   const seenUrls = new Set<string>();
   const seenTitles = new Set<string>();
-  return articles
-    .filter((a) => {
-      if (isNaN(a.publishedAt.getTime())) return false;
-      if (isPromotional(a)) return false;
-      if (seenUrls.has(a.url)) return false;
+  const grouped = new Map<string, NewsArticle[]>();
+
+  for (const { topic, articles } of results) {
+    for (const a of articles) {
+      if (!a.publishedAt) continue;
+      if (isPromotional(a)) continue;
+      if (seenUrls.has(a.url)) continue;
       const nt = normalizeTitle(a.title);
-      if (seenTitles.has(nt)) return false;
+      if (seenTitles.has(nt)) continue;
       seenUrls.add(a.url);
       seenTitles.add(nt);
-      return true;
-    })
-    .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime())
-    .slice(0, 60);
-}
-
-export async function getNewsArticles(): Promise<NewsArticle[]> {
-  "use cache";
-  cacheLife({ stale: 0, revalidate: 7200, expire: 86400 });
-  cacheTag("news");
-
-  const apiKey = env.gNewsApiKey;
-
-  if (apiKey) {
-    const results = await Promise.all(QUERIES.map((q) => fetchGNews(q, apiKey)));
-    return dedupeAndSort(results.flat());
+      const list = grouped.get(topic) ?? [];
+      list.push(a);
+      grouped.set(topic, list);
+    }
   }
 
-  const results = await Promise.all(QUERIES.map(fetchRss));
-  return dedupeAndSort(results.flat());
+  return grouped;
+}
+
+// ── Public API ────────────────────────────────────────────────────────────
+
+export const getNewsGroups = unstable_cache(
+  async (): Promise<NewsGroup[]> => {
+    const grouped = await fetchGrouped(env.gNewsApiKey);
+    return TOPIC_ORDER
+      .filter(({ label }) => grouped.has(label))
+      .map(({ label, slug }) => ({
+        label,
+        slug,
+        articles: (grouped.get(label) ?? [])
+          .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+          .slice(0, 12),
+      }));
+  },
+  ["news-groups"],
+  { revalidate: 7200, tags: ["news"] },
+);
+
+export async function getNewsArticles(): Promise<NewsArticle[]> {
+  const groups = await getNewsGroups();
+  return groups
+    .flatMap((g) => g.articles)
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }

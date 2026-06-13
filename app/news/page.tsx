@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { buildIndexableMetadata } from "@/lib/metadata";
-import { getNewsArticles } from "@/lib/news";
+import { getNewsGroups } from "@/lib/news";
 import { NewsFeed } from "@/components/site/news-feed";
 
 export const metadata: Metadata = buildIndexableMetadata({
@@ -13,7 +13,8 @@ export const metadata: Metadata = buildIndexableMetadata({
 });
 
 export default async function NewsPage() {
-  const articles = await getNewsArticles();
+  const groups = await getNewsGroups();
+  const hasArticles = groups.some((g) => g.articles.length > 0);
 
   return (
     <main>
@@ -34,19 +35,14 @@ export default async function NewsPage() {
       </section>
 
       <section className="py-8 md:py-12">
-        <div className="container-shell space-y-6">
-          {articles.length === 0 ? (
+        <div className="container-shell">
+          {!hasArticles ? (
             <p className="rounded-2xl border border-border bg-muted/30 px-6 py-10 text-center text-sm text-muted-foreground">
               No articles available right now. Check back soon.
             </p>
           ) : (
-            <NewsFeed articles={articles} />
+            <NewsFeed groups={groups} />
           )}
-
-          <p className="text-center text-xs text-muted-foreground/50">
-            News sourced from publicly available feeds. Content belongs to the
-            original publishers.
-          </p>
         </div>
       </section>
 
