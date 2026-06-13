@@ -54,6 +54,7 @@ function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; show
 const navLinks = [
   { href: "/students",     label: "Talk to Students" },
   { href: "/reviews",      label: "Reviews" },
+  { href: "/news",         label: "News" },
   { href: "/blog",         label: "Blog" },
 ] as const;
 

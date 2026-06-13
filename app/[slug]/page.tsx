@@ -50,6 +50,7 @@ import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
 import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import {
   getCountryHref,
+  getUniversityHref,
 } from "@/lib/routes";
 
 export async function generateStaticParams() {
@@ -142,12 +143,18 @@ export default async function LandingPageRoute({
   const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
   const path = `/${page.slug}`;
   const previewPrograms = context.featuredPrograms;
+  const allPrograms = context.allPrograms;
+  const nonFeaturedPrograms = allPrograms.filter(
+    (p) => !page.featuredUniversitySlugs.includes(p.university.slug),
+  );
   const feeStructures = getFeeStructuresForSlugs(page.featuredUniversitySlugs);
   const heroQuickFacts = page.atAGlance?.slice(0, 4) ?? [];
   const pageSearchTopics = [
     previewPrograms.length
       ? { href: "#universities", label: `Top colleges in ${country.name}` }
-      : null,
+      : allPrograms.length
+        ? { href: "#all-colleges", label: `All colleges in ${country.name}` }
+        : null,
     heroQuickFacts.length || feeStructures.length
       ? { href: heroQuickFacts.length ? "#quick-facts" : "#fees", label: `${page.title} fees` }
       : null,
@@ -473,10 +480,43 @@ export default async function LandingPageRoute({
               />
             ))}
           </div>
-
-
         </div>
       </section>
+
+      {/* ── All universities directory ────────────────────────────────────── */}
+      {nonFeaturedPrograms.length > 0 && (
+        <section id="all-colleges" className="border-b border-border py-14 md:py-20">
+          <div className="container-shell">
+            <div className="mb-8">
+              <h2 className="font-display text-heading text-2xl font-semibold tracking-tight sm:text-3xl">
+                All {course.shortName} colleges in {country.name}
+              </h2>
+              <p className="mt-2 max-w-xl text-sm leading-7 text-muted-foreground">
+                {allPrograms.length} colleges verified for Indian students — click any college for fees, admissions details, and student life.
+              </p>
+            </div>
+            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {allPrograms
+                .slice()
+                .sort((a, b) => a.university.name.localeCompare(b.university.name))
+                .map((program) => (
+                  <Link
+                    key={program.university.slug}
+                    href={getUniversityHref(program.university.slug)}
+                    className="group flex items-center gap-3 rounded-lg border border-border bg-background px-4 py-3 text-sm transition-colors hover:border-primary/40 hover:bg-accent/30"
+                  >
+                    <span className="min-w-0 flex-1 font-medium text-heading group-hover:text-primary leading-snug">
+                      {program.university.name}
+                    </span>
+                    <span className="shrink-0 text-xs text-muted-foreground">
+                      {program.university.city}
+                    </span>
+                  </Link>
+                ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── Fee Structures ───────────────────────────────────────────────── */}
       {feeStructures.length > 0 && (

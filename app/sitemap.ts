@@ -141,6 +141,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: catalogLastModified,
     },
     {
+      url: absoluteUrl("/news"),
+      priority: 0.75,
+      changeFrequency: "hourly",
+      lastModified: new Date(),
+    },
+    {
       url: absoluteUrl("/blog"),
       priority: 0.8,
       changeFrequency: "weekly",

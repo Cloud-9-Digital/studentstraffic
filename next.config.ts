@@ -143,6 +143,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "api.dicebear.com",
       },
+      {
+        protocol: "https",
+        hostname: "www.google.com",
+        pathname: "/s2/favicons**",
+      },
       ...mediaHostnames.map((hostname) => ({
         protocol: "https" as const,
         hostname,

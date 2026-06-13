@@ -1845,5 +1845,6 @@ export async function getLandingPageContext(page: LandingPage) {
     country,
     course,
     featuredPrograms,
+    allPrograms: finderPrograms,
   };
 }

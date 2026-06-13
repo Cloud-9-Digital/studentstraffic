@@ -75,17 +75,11 @@ import {
 } from "@/lib/utils";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
-const STATIC_UNIVERSITY_SAMPLE_SIZE = 24;
-
 export async function generateStaticParams() {
   const universities = await getUniversities();
-  const sample = universities.slice(0, STATIC_UNIVERSITY_SAMPLE_SIZE);
   const params: { slug: string }[] = [];
-  for (const university of sample) {
+  for (const university of universities) {
     params.push({ slug: university.slug });
-    for (const section of UNIVERSITY_SECTIONS) {
-      params.push({ slug: `${university.slug}-${section}` });
-    }
   }
   return ensureNonEmptyStaticParams(params, { slug: "__catalog-fallback__" });
 }
@@ -146,41 +140,42 @@ export async function generateMetadata({
   let title: string;
   let description: string;
 
+  const course = courseName ?? "MBBS";
+  const loc = country ? `${university.city}, ${country.name}` : university.city;
+
   if (section === "programs") {
-    title = `${university.name} Programs | ${courseName ?? "MBBS"} Courses & Duration`;
-    description = `View all programs offered at ${university.name}, ${university.city} — course duration, medium of instruction, annual intake, and official program details.`;
+    title = `${university.name} ${course} Programs | Courses, Duration & Intake for Indian Students`;
+    description = `All ${course} programs at ${university.name}, ${loc} — course duration, medium of instruction, annual intake, and official program details for Indian students.`;
   } else if (section === "academics") {
-    title = `${university.name} Academics | Curriculum, Teaching & Clinical Training`;
-    description = `Academic structure, teaching phases, clinical training, and medium of instruction at ${university.name}. Everything Indian students need to know about the curriculum.`;
+    title = `${university.name} ${course} Curriculum | Academic Structure & Clinical Training`;
+    description = `Year-wise ${course} curriculum, teaching phases, clinical hospital training, and medium of instruction at ${university.name}, ${loc}. Complete academic breakdown for Indian students.`;
   } else if (section === "admissions") {
-    title = `${university.name} Admissions | How to Apply for ${courseName ?? "MBBS"}`;
-    description = `Step-by-step admissions process for ${university.name} — documents required, application timeline, and important deadlines for Indian students applying for ${courseName ?? "MBBS"}.`;
+    title = `${university.name} ${course} Admissions 2026 | How to Apply for Indian Students`;
+    description = `Step-by-step ${course} admissions process for Indian students at ${university.name}, ${loc} — eligibility, documents, application timeline, NMC requirements, and visa process.`;
   } else if (section === "eligibility") {
-    title = `${university.name} Eligibility | NEET & Admission Requirements`;
-    description = `Eligibility criteria for ${university.name} — NEET score requirements, age limit, academic qualifications, and other conditions for Indian students applying for ${courseName ?? "MBBS"}.`;
+    title = `${university.name} ${course} Eligibility | NEET, PCB & Admission Requirements`;
+    description = `NEET score, PCB percentage, age limit, and full eligibility criteria for ${course} at ${university.name}, ${loc}. Complete admission requirements for Indian students 2026.`;
   } else if (section === "student-life") {
-    title = `${university.name} Student Life | Campus, Culture & Indian Community`;
-    description = `Campus life, student community, Indian food availability, extracurricular activities, and daily life at ${university.name}, ${university.city}.`;
+    title = `${university.name} Student Life | Indian Community, Food & Campus in ${university.city}`;
+    description = `Campus lifestyle, Indian food availability, accommodation, safety, and student support at ${university.name}, ${university.city}. Everything Indian students need to know before joining.`;
   } else if (section === "fees") {
-    title = courseName
-      ? `${university.name} ${courseName} Fee Structure | Tuition & Hostel Costs`
-      : `${university.name} Fee Structure | Tuition & Hostel Costs`;
-    description = `Detailed year-wise fee breakdown for ${university.name}${courseName ? ` ${courseName}` : ""} — annual tuition, hostel costs, and total program cost in USD. Verified fee data for ${university.city}.`;
+    title = `${university.name} ${course} Fees 2026 | Year-wise Tuition & Hostel Costs for Indian Students`;
+    description = `Complete year-wise ${course} fee breakdown at ${university.name}, ${loc} — annual tuition, hostel costs, total program cost in USD, and scholarship information for Indian students.`;
   } else if (section === "recognition") {
-    title = `${university.name} Recognition | NMC, WHO & International Accreditation`;
-    description = `Is ${university.name} recognised by NMC, WHO, and listed in WDOMS? View complete accreditation status, recognition badges, and official verification links.`;
+    title = `Is ${university.name} NMC Recognised? | WHO, WDOMS & Accreditation Status`;
+    description = `NMC, WHO, and WDOMS recognition status of ${university.name}, ${loc} — what each accreditation means for Indian students, FMGE/NExT eligibility, and official verification links.`;
   } else if (section === "hostel") {
-    title = `${university.name} Hostel | Accommodation, Food & Student Life`;
-    description = `Hostel facilities, Indian food availability, campus lifestyle, and safety at ${university.name}, ${university.city}. Everything Indian students need to know before applying.`;
+    title = `${university.name} Hostel & Accommodation | Indian Food, Campus Life & Costs`;
+    description = `Hostel facilities, Indian food options, room costs, campus environment, and safety at ${university.name}, ${university.city} — complete accommodation guide for Indian students.`;
   } else if (section === "country") {
-    title = `${university.name} | About ${country?.name ?? "the Country"} — Study Abroad Guide`;
-    description = `Learn about studying ${courseName ?? "medicine"} in ${country?.name ?? "this country"} — climate, culture, safety, currency, and why Indian students choose ${country?.name ?? "this destination"} for medical education.`;
+    title = `Studying ${course} in ${country?.name ?? "Abroad"} | Guide for Indian Students`;
+    description = `Why Indian students choose ${country?.name ?? "this country"} for ${course} — climate, culture, safety, currency, career opportunities, and India-return pathways. Complete country guide.`;
   } else if (section === "city") {
-    title = `${university.name} | About ${university.city} — City Guide for Students`;
-    description = `Everything Indian students need to know about living in ${university.city} — cost of living, safety, transport, food, and student life near ${university.name}.`;
+    title = `Living in ${university.city} as a ${course} Student | Cost, Safety & Indian Community`;
+    description = `Cost of living, safety, transport, Indian food, and student life in ${university.city} — everything Indian students need to know before studying at ${university.name}.`;
   } else if (section === "faq") {
-    title = `${university.name} FAQ | Common Questions from Indian Students`;
-    description = `Answers to the most common questions Indian students ask about ${university.name} — admissions, fees, recognition, hostel, and more.`;
+    title = `${university.name} ${course} FAQ | ${university.faq.length > 0 ? `${university.faq.length} Questions` : "Common Questions"} Answered for Indian Students`;
+    description = `Answers to the most common questions Indian students ask about ${course} at ${university.name}, ${loc} — admissions, fees, recognition, hostel, NEET requirements, and career outcomes.`;
   } else {
     title = primaryProgram
       ? `${university.name} | ${courseName} ${
@@ -206,6 +201,7 @@ export async function generateMetadata({
         : undefined,
       country ? `${university.name} ${country.name}` : undefined,
       `${university.city} medical university`,
+      country ? `${university.name} for Indian students` : undefined,
       ...university.recognitionBadges,
     ].filter(Boolean) as string[],
   });

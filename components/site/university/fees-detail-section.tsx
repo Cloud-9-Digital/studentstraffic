@@ -1,6 +1,6 @@
 import { CircleDollarSign, ExternalLink, Info } from "lucide-react";
 
-import type { FinderProgram } from "@/lib/data/types";
+import type { Country, FinderProgram, University } from "@/lib/data/types";
 import {
   formatProgramAnnualFee,
   formatProgramDuration,
@@ -16,15 +16,35 @@ import { SectionLabel } from "./shared";
 export function UniversityFeesDetailSection({
   programs,
   universityName,
+  university,
+  country,
 }: {
   programs: FinderProgram[];
   universityName: string;
+  university?: University;
+  country?: Country;
 }) {
   const publishedPrograms = programs.filter((p) => p.offering.published);
+  const primaryProgram = publishedPrograms[0];
+  const course = primaryProgram?.course.shortName ?? "MBBS";
+  const countryName = country?.name ?? "the country";
 
   return (
     <div className="space-y-6 py-10">
       <SectionLabel>Fee structure</SectionLabel>
+
+      <div className="space-y-3">
+        <h2 className="font-display text-2xl font-semibold text-heading">
+          {universityName} {course} fee structure 2026
+        </h2>
+        <p className="max-w-2xl text-base leading-8 text-muted-foreground">
+          Complete year-wise fee breakdown for {course} at {universityName} in{" "}
+          {university?.city ?? "the city"}, {countryName}. Includes annual
+          tuition, hostel and food costs, and the total program cost across all
+          years — all converted to USD for easy comparison with other
+          universities.
+        </p>
+      </div>
 
       <div className="rounded-2xl border border-amber-200 bg-amber-50/60 px-5 py-4">
         <p className="flex items-start gap-2.5 text-sm leading-6 text-amber-800">

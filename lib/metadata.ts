@@ -19,6 +19,7 @@ export type IndexableMetadataInput = {
   title: string;
   description: string;
   path: string;
+  canonicalPath?: string;
   keywords?: string[];
   category?: string;
   openGraphType?: "website" | "article";
@@ -47,7 +48,7 @@ export function buildIndexableMetadata(
     keywords: input.keywords,
     category: input.category ?? "education",
     alternates: {
-      canonical: absoluteUrl(input.path),
+      canonical: absoluteUrl(input.canonicalPath ?? input.path),
     },
     robots: defaultRobots,
     openGraph: {

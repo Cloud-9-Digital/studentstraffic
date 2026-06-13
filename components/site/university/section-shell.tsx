@@ -1,6 +1,8 @@
 "use client";
 
 import { type ReactNode, useEffect, useState } from "react";
+import Link from "next/link";
+import { MapPin, GraduationCap, ShieldCheck, Phone, ArrowRight } from "lucide-react";
 
 import type { Author } from "@/lib/authors";
 import type { CountryContent } from "@/lib/data/country-content";
@@ -8,8 +10,10 @@ import type { SharedCityProfile } from "@/lib/data/city-content";
 import type { CountryRegulatoryAdvisory, UniversityRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import type { Country, FinderProgram, University, WdomsDirectoryEntry } from "@/lib/data/types";
 import type { LocationMedia } from "@/lib/location-media";
-import { parseUniversitySlug, type UniversitySection } from "@/lib/university-sections";
+import { parseUniversitySlug, UNIVERSITY_SECTIONS, type UniversitySection } from "@/lib/university-sections";
 import { recordRecentlyViewed } from "@/lib/recently-viewed";
+import { formatProgramAnnualFee, hasRenderableProgramAnnualFee } from "@/lib/utils";
+import { getUniversityHref } from "@/lib/routes";
 
 const SECTION_TITLES: Record<UniversitySection, string> = {
   programs: "Programs & Courses",
@@ -182,7 +186,16 @@ export function UniversitySectionShell({
       <section className="py-10 md:py-14">
         <div className="container-shell">
           {activeSection ? (
-            <div className="min-w-0">
+            <div className="min-w-0 space-y-0">
+              {/* University context strip — shown on every section page */}
+              <UniversityContextStrip
+                university={university}
+                country={country}
+                primaryProgram={primaryProgram}
+                activeSection={activeSection}
+                universitySlug={universitySlug}
+              />
+
               {activeSection === "programs" && programs.length > 0 && (
                 <UniversityProgramsSection programs={programs} />
               )}
@@ -203,18 +216,26 @@ export function UniversitySectionShell({
                 />
               )}
               {activeSection === "student-life" && (
-                <UniversityStudentLifeSection university={university} />
+                <UniversityStudentLifeSection
+                  university={university}
+                  country={country}
+                  primaryProgram={primaryProgram}
+                />
               )}
               {activeSection === "fees" && (
                 <UniversityFeesDetailSection
                   programs={programs}
                   universityName={university.name}
+                  university={university}
+                  country={country}
                 />
               )}
               {activeSection === "recognition" && (
                 <UniversityRecognitionDetailSection
                   university={university}
                   wdomsEntry={wdomsEntry}
+                  country={country}
+                  primaryProgram={primaryProgram}
                 />
               )}
               {activeSection === "hostel" && (
@@ -240,8 +261,20 @@ export function UniversitySectionShell({
                 />
               )}
               {activeSection === "faq" && (
-                <UniversityFaqSection faq={university.faq} />
+                <UniversityFaqSection
+                  faq={university.faq}
+                  universityName={university.name}
+                  city={university.city}
+                  primaryProgramShortName={primaryProgramShortName}
+                />
               )}
+
+              {/* Counselling CTA — shown at bottom of every section page */}
+              <SectionCounsellingCta
+                universityName={university.name}
+                courseSlug={primaryProgram?.course.slug}
+                countrySlug={country.slug}
+              />
             </div>
           ) : (
             children
@@ -249,5 +282,113 @@ export function UniversitySectionShell({
         </div>
       </section>
     </>
+  );
+}
+
+function UniversityContextStrip({
+  university,
+  country,
+  primaryProgram,
+  activeSection,
+  universitySlug,
+}: {
+  university: University;
+  country: Country;
+  primaryProgram: FinderProgram | undefined;
+  activeSection: UniversitySection;
+  universitySlug: string;
+}) {
+  const hasFee = primaryProgram && hasRenderableProgramAnnualFee(primaryProgram.offering);
+  const course = primaryProgram?.course.shortName;
+  const topBadge = university.recognitionBadges[0];
+
+  return (
+    <div className="mb-6 overflow-hidden rounded-2xl border border-border bg-muted/30">
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-3 px-5 py-4 text-sm">
+        <span className="font-display font-semibold text-heading">
+          {university.name}
+        </span>
+        <span className="flex items-center gap-1.5 text-muted-foreground">
+          <MapPin className="size-3.5 shrink-0" />
+          {university.city}, {country.name}
+        </span>
+        {course && (
+          <span className="flex items-center gap-1.5 text-muted-foreground">
+            <GraduationCap className="size-3.5 shrink-0" />
+            {course} · {university.type}
+          </span>
+        )}
+        {hasFee && (
+          <span className="font-medium text-accent">
+            {formatProgramAnnualFee(primaryProgram.offering)}/yr
+          </span>
+        )}
+        {topBadge && (
+          <span className="flex items-center gap-1 text-xs font-medium text-primary">
+            <ShieldCheck className="size-3.5 shrink-0" />
+            {topBadge}
+          </span>
+        )}
+      </div>
+      <div className="flex flex-wrap gap-2 border-t border-border/60 bg-background/50 px-5 py-2.5">
+        <Link
+          href={getUniversityHref(universitySlug)}
+          className="text-xs text-muted-foreground hover:text-primary hover:underline"
+        >
+          Overview
+        </Link>
+        {UNIVERSITY_SECTIONS.filter((s) => s !== activeSection).map((s) => (
+          <Link
+            key={s}
+            href={`/university/${universitySlug}-${s}`}
+            className="text-xs capitalize text-muted-foreground hover:text-primary hover:underline"
+          >
+            {s.replace("-", " ")}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function SectionCounsellingCta({
+  universityName,
+  courseSlug,
+  countrySlug,
+}: {
+  universityName: string;
+  courseSlug?: string;
+  countrySlug: string;
+}) {
+  return (
+    <div className="mt-10 overflow-hidden rounded-2xl border border-primary/20 bg-primary/5 px-6 py-7">
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+        <div className="space-y-1.5">
+          <p className="font-display text-lg font-semibold text-heading">
+            Applying to {universityName}?
+          </p>
+          <p className="max-w-md text-sm leading-6 text-muted-foreground">
+            Students Traffic verifies seat availability, checks current recognition status, and prepares your complete application for{" "}
+            {universityName}. The consultation is free.
+          </p>
+        </div>
+        <div className="flex shrink-0 flex-wrap gap-3">
+          <a
+            href="tel:+919176162888"
+            className="flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-medium text-foreground transition hover:border-primary/30 hover:text-primary"
+          >
+            <Phone className="size-3.5" />
+            Call us
+          </a>
+          <Link
+            href={`/universities?country=${countrySlug}${courseSlug ? `&course=${courseSlug}` : ""}`}
+            className="flex items-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-sm font-medium text-white transition hover:bg-primary/90"
+          >
+            Compare colleges
+            <ArrowRight className="size-3.5" />
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 }

@@ -39,6 +39,7 @@ const envSchema = z.object({
   NEXT_PUBLIC_AGORA_APP_ID: z.string().min(1).optional(),
   AGORA_APP_CERTIFICATE: z.string().min(1).optional(),
   ABLY_API_KEY: z.string().min(1).optional(),
+  GNEWS_API_KEY: z.string().min(1).optional(),
 });
 
 function optionalEnv(value: string | undefined) {
@@ -80,6 +81,7 @@ const parsedEnv = envSchema.safeParse({
   NEXT_PUBLIC_AGORA_APP_ID: optionalEnv(process.env.NEXT_PUBLIC_AGORA_APP_ID),
   AGORA_APP_CERTIFICATE: optionalEnv(process.env.AGORA_APP_CERTIFICATE),
   ABLY_API_KEY: optionalEnv(process.env.ABLY_API_KEY),
+  GNEWS_API_KEY: optionalEnv(process.env.GNEWS_API_KEY),
 });
 
 if (!parsedEnv.success) {
@@ -168,6 +170,7 @@ export const env = {
   agoraAppId: parsedEnv.data.NEXT_PUBLIC_AGORA_APP_ID,
   agoraAppCertificate: parsedEnv.data.AGORA_APP_CERTIFICATE,
   ablyApiKey: parsedEnv.data.ABLY_API_KEY,
+  gNewsApiKey: parsedEnv.data.GNEWS_API_KEY,
   hasUpstashRedis: Boolean(
     parsedEnv.data.UPSTASH_REDIS_REST_URL && parsedEnv.data.UPSTASH_REDIS_REST_TOKEN
   ),

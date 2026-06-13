@@ -443,7 +443,7 @@ export default async function BlogPostPage({
                   })),
                 }] : []),
                 {
-                  "@type": "BlogPosting",
+                  "@type": "NewsArticle",
                   "@id": absoluteUrl(`/blog/${post.slug}`),
                   url: absoluteUrl(`/blog/${post.slug}`),
                   headline: post.title,
