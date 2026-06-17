@@ -21,6 +21,8 @@ import {
   UniversitySnapshotSection,
 } from "@/components/site/university/content-sections";
 import { UniversityFaqSection } from "@/components/site/university/faq-section";
+import { TabbedFaqSection } from "@/components/site/university/tabbed-faq-section";
+import { getUniversityFaqSections } from "@/lib/data/university-faq-sections";
 import { UniversityProgramsSection } from "@/components/site/university/programs-section";
 import { UniversityRecognitionSection } from "@/components/site/university/recognition-section";
 import { UniversitySectionShell } from "@/components/site/university/section-shell";
@@ -399,7 +401,19 @@ export default async function UniversityDetailPage({
             </Suspense>
           </div>
 
-          <UniversityFaqSection faq={university.faq} />
+          {(() => {
+            const faqSections = getUniversityFaqSections(university.slug);
+            return faqSections ? (
+              <TabbedFaqSection
+                sections={faqSections}
+                universityName={university.name}
+                city={university.city}
+                primaryProgramShortName={primaryProgram?.course.shortName}
+              />
+            ) : (
+              <UniversityFaqSection faq={university.faq} />
+            );
+          })()}
 
           <div className="deferred-render">
             <Suspense fallback={null}>

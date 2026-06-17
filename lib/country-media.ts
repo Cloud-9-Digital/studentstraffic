@@ -27,6 +27,14 @@ const countryHeroImages: Record<string, { url: string; alt: string }> = {
     url: "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=85",
     alt: "University campus in Ontario, Canada",
   },
+  albania: {
+    url: "https://images.unsplash.com/photo-1558642369-e4a03cc80b26?auto=format&fit=crop&w=900&q=85",
+    alt: "Tirana, Albania — colourful city centre with Skanderbeg Square",
+  },
+  lithuania: {
+    url: "https://images.unsplash.com/photo-1599422094275-57cb54a4dbb2?auto=format&fit=crop&w=900&q=85",
+    alt: "Kaunas, Lithuania — Town Hall Square and historic old town",
+  },
 };
 
 export function getCountryHeroImage(slug: string) {

@@ -24,7 +24,6 @@ neonConfig.webSocketConstructor = WebSocket;
 async function setupSearchInfrastructure(
   client: PoolClient
 ) {
-  await client.query(`CREATE EXTENSION IF NOT EXISTS pg_search`);
   await client.query(`CREATE EXTENSION IF NOT EXISTS pg_trgm`);
   await client.query(`CREATE EXTENSION IF NOT EXISTS vector`);
 }
@@ -32,21 +31,6 @@ async function setupSearchInfrastructure(
 async function rebuildSearchIndexes(
   client: PoolClient
 ) {
-  await client.query(`DROP INDEX IF EXISTS search_documents_bm25_idx`);
-  await client.query(`
-    CREATE INDEX search_documents_bm25_idx
-    ON search_documents
-    USING bm25 (
-      id,
-      title,
-      subtitle,
-      summary,
-      search_text
-    )
-    WITH (
-      key_field='id'
-    )
-  `);
   await client.query(`
     CREATE INDEX IF NOT EXISTS search_documents_title_trgm_idx
     ON search_documents

@@ -32,6 +32,21 @@ const cityMediaMap: Record<string, LocationMedia> = {
     sourceLabel: "Pexels",
     sourceUrl: "https://www.pexels.com/photo/city-skyline-across-body-of-water-12162281/",
   },
+  "albania::tirana": {
+    url: "https://images.unsplash.com/photo-1558642369-e4a03cc80b26?auto=format&fit=crop&w=900&q=85",
+    alt: "Skanderbeg Square, Tirana, Albania",
+    sourceLabel: "Unsplash",
+  },
+  "lithuania::kaunas": {
+    url: "https://images.unsplash.com/photo-1599422094275-57cb54a4dbb2?auto=format&fit=crop&w=900&q=85",
+    alt: "Town Hall Square (Rotušės aikštė), Kaunas, Lithuania",
+    sourceLabel: "Unsplash",
+  },
+  "lithuania::vilnius": {
+    url: "https://images.unsplash.com/photo-1549893073-0a10b51cde7a?auto=format&fit=crop&w=900&q=85",
+    alt: "Vilnius Old Town skyline and cathedral, Lithuania",
+    sourceLabel: "Unsplash",
+  },
 };
 
 function normalize(value: string) {
