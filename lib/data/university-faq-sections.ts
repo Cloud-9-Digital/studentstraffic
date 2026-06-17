@@ -1609,12 +1609,310 @@ const smkLithuaniaFaqSections: FaqSection[] = [
   },
 ];
 
+const vuLithuaniaFaqSections: FaqSection[] = [
+  {
+    label: "About VU",
+    slug: "about",
+    faqs: [
+      {
+        question: "What is Vilnius University and why is it significant for nursing education?",
+        answer:
+          "Vilnius University (VU) is Lithuania's oldest university, founded in 1579 — making it over 446 years old and one of the oldest academic institutions in Eastern Europe. It is Lithuania's highest-ranked public research university: QS World University Rankings #446 (2026), #1 in Lithuania, and #19 in the QS Emerging Europe and Central Asia (EECA) region. VU is a comprehensive research university with 12 faculties in Vilnius and a branch campus in Kaunas, enrolling approximately 15,000–20,000 students including 750+ new international students annually from 90+ nationalities. It is a member of the Arqus European University Alliance (a network of elite European research universities) and the European University Association (EUA). The Bachelor of Health Sciences (General Practice Nurse) is offered by VU's Faculty of Medicine, Department of Midwifery and Nursing — launched in September 2019 with English-taught instruction. Clinical training is conducted at Vilnius University Hospital Santaros Klinikos, VU's own teaching hospital. For Indian students, VU offers the most prestigious nursing qualification available from Lithuania.",
+      },
+      {
+        question: "What university ranking does VU hold and why does it matter for Indian students?",
+        answer:
+          "Vilnius University ranks QS #446 globally (2026) — #1 in Lithuania, #19 in QS EECA. THE World Ranking: #801 (2026). ARWU Shanghai: #501 (2025). These rankings matter significantly for Indian students for two concrete reasons. First, Indian education loan approval: banks like SBI, HDFC Credila, Axis, and Avanse prioritise loans for QS-ranked public universities — VU's QS #446 ranking makes it one of the strongest international nursing loan files available. Second, German Anerkennung (credential recognition): Germany's nursing regulatory bodies assess the standing of the awarding institution when evaluating foreign nursing qualifications — VU's QS ranking and public research university status carry more recognition weight than college-level Professional Bachelor qualifications from unranked institutions.",
+      },
+      {
+        question: "What is Santaros Klinikos and what makes it a superior clinical training environment?",
+        answer:
+          "Vilnius University Hospital Santaros Klinikos is VU's own teaching hospital, jointly operated with Lithuania's Ministry of Health. It is the leading clinical institution in the Baltic region: 1,409 doctors, 1,978 nurses, 5,372 total employees, 370+ professors and doctorates providing direct patient care, and 35 specialised medical centres. The hospital operates across 7 clinical groups: Surgery, Therapy, Diagnostics, Heart and Vascular, Mother and Child, Outpatient, and Clinical Services. Affiliated divisions include the National Cancer Centre (oncology) and Zalgirio Klinikos (odontology). The critical distinction: Santaros Klinikos is not an external partner hospital — it is VU's own clinical infrastructure. Academic and clinical roles are fully integrated: the same professors who teach your nursing theory also conduct rounds and publish clinical research. VU nursing students at Santaros Klinikos are exposed to the latest evidence-based practice rather than routine clinical procedures alone.",
+      },
+      {
+        question: "Is VU's nursing degree a university BSc or a college Professional Bachelor — and does the distinction matter?",
+        answer:
+          "VU's degree is a full university Bachelor of Health Sciences (BSc), a 240 ECTS university-level qualification at EQF Level 6 awarded by Lithuania's oldest and highest-ranked public research university. This is distinct from the Professional Bachelor in Health Sciences (also EQF Level 6) awarded by nursing colleges like SMK or LSMU college. Both meet EU Directive 2005/36/EC nursing standards for EU-wide practice recognition. However, the distinction matters in three specific contexts: (1) German Anerkennung — Germany's nursing authorities assess the institutional standing of the awarding university; a QS-ranked research university BSc carries more weight. (2) PhD pathway — a university BSc directly opens VU's MSc in Advanced Practice Nursing and PhD in nursing and biomedical sciences; Professional Bachelor holders must complete supplementary studies first. (3) Academic and policy careers — research and academic positions in nursing typically require a university BSc foundation. For direct clinical nursing practice in Europe, both qualifications work. For career tracks involving research, teaching, or policy, the VU university BSc is significantly stronger.",
+      },
+      {
+        question: "What is the Arqus European University Alliance and why does VU's membership matter?",
+        answer:
+          "Arqus is a European University Alliance of seven elite research-intensive universities: Vilnius University (Lithuania), University of Granada (Spain), Leipzig University (Germany), University of Graz (Austria), University of Lyon (France), Ghent University (Belgium), and University of Bergen (Norway). Membership reflects that VU is peer-recognised by major Western European universities as a genuine research institution. For VU nursing students, this means: (1) Erasmus+ exchanges at Arqus partner universities in Germany, Spain, France, Belgium, Austria, and Norway — invaluable clinical and language exposure. (2) Joint research and academic programmes. (3) A network of European university peers that strengthens the VU credential's standing during recognition processes in Western Europe. VU is the only Lithuanian university in an alliance with German, French, Belgian, and Norwegian research universities.",
+      },
+      {
+        question: "When was VU's English-taught nursing programme established, and how mature is it now?",
+        answer:
+          "VU launched its English-taught Bachelor of Health Sciences (General Practice Nurse) in September 2019 — now entering its 8th intake cycle. The Department of Nursing subsequently expanded in September 2025 with the launch of an English-taught Bachelor of Midwifery — reflecting the programme's successful growth. By 2026, VU has full cohorts across all four year groups, an established curriculum, experienced faculty in English-medium instruction, and a trackable first-cohort graduation record. Students entering in September 2026 will graduate alongside VU Nursing's established international alumni network — the programme is no longer new, it is proven.",
+      },
+    ],
+  },
+  {
+    label: "Programme & Qualification",
+    slug: "qualification",
+    faqs: [
+      {
+        question: "What is the full name and duration of the VU nursing programme?",
+        answer:
+          "Bachelor of Health Sciences (General Practice Nurse). Duration: 4 years full-time (8 semesters). Total: 240 ECTS credits (European Credit Transfer and Accumulation System). This is a full EQF Level 6 university bachelor's degree, fully Bologna Process compliant. Programme code: 6121GX019. The professional qualification conferred on graduation: General Practice Nurse (registered with VASPVT, Lithuania). Language of instruction: English (100% English-taught). Annual tuition for non-EU students: EUR 6,000. One intake per year: September 1.",
+      },
+      {
+        question: "What subjects are taught across the 4 years of the VU nursing programme?",
+        answer:
+          "Year 1 — Biomedical Foundations (60 ECTS): Anatomy and Physiology, Histology, Microbiology, Biochemistry, Biophysics, Introduction to Nursing Science, Professional Ethics, Health Psychology, Medical Terminology. Introductory clinical observation at Santaros Klinikos. Year 2 — Pathophysiology and Core Nursing (60 ECTS): Pathophysiology, Pharmacology, Health Assessment, General Nursing Theory and Practice, Nursing Procedures and Techniques, Community Health foundations. Supervised direct patient care begins at Santaros Klinikos medical and surgical wards. Year 3 — Specialised Clinical Nursing (60 ECTS): Adult (Medical and Surgical), Mental Health, Maternal and Obstetric, Paediatric, Geriatric, Rehabilitation Nursing, Research Methods. Intensive specialty clinical rotations. Year 4 — Advanced Practice and Thesis (60 ECTS): Critical Care and ICU Nursing, Anaesthesiology Nursing (dedicated advanced module at Santaros Klinikos), Nursing Leadership and Management. Extended preceptorship placement. Bachelor's Thesis defence.",
+      },
+      {
+        question: "What professional qualification does a VU nursing graduate receive and where can they work?",
+        answer:
+          "Graduates receive: (1) Academic title — Bachelor of Health Sciences. (2) Professional qualification — General Practice Nurse, registered with VASPVT (State Health Care Accreditation Agency), Lithuania. This enables immediate nursing practice in Lithuania. (3) EU-wide recognition — under EU Directive 2005/36/EC, the qualification is automatically recognised across all 27 EU member states for nursing practice. (4) Further pathway — the VU university BSc enables direct entry to VU's MSc in Advanced Practice Nursing, and then to PhD programmes in nursing and biomedical sciences. Compared to college Professional Bachelor holders, VU BSc graduates skip the Supplementary Studies bridge step entirely when pursuing postgraduate nursing education.",
+      },
+      {
+        question: "How does the VU BSc Nursing compare to a college Professional Bachelor — what is the practical difference for Indian students?",
+        answer:
+          "For clinical nursing practice in EU countries: both are equally valid under Directive 2005/36/EC — the directive accepts all EQF Level 6 nursing qualifications meeting its content requirements. For German Anerkennung: the VU university BSc from a QS #446 institution carries more recognition weight than a Professional Bachelor from an unranked college. For UK NMC: VU's ranking is better received. For Indian education loans: VU's QS rank gives stronger loan approval prospects. For academic and research careers: VU BSc opens the MSc and PhD directly. For cost: VU is EUR 1,600–1,700/year more expensive than SMK or LSMU. The practical summary: if you meet VU's requirements (IELTS 6.5+, Biology+English+Science Class 12, within 5-year gap), VU is the stronger choice for career ambition and prestige. If IELTS is below 6.5 or the gap rule applies, SMK or LSMU are excellent alternatives.",
+      },
+      {
+        question: "What is the Supplementary Studies pathway and who is it for?",
+        answer:
+          "VU's Supplementary Studies pathway (Pathway 6) is a bridge programme for holders of a Professional Bachelor in nursing (EQF Level 6 college qualification — e.g., from SMK, LSMU college, or equivalent). Completing VU's Supplementary Studies brings Professional Bachelor holders to full university BSc competency standards. After Supplementary Studies, they can enrol in VU's MSc in Advanced Practice Nursing and then PhD — achieving master-level qualification from Lithuania's top university. The strategic implication for Indian students: it is possible to complete SMK's 3.5-year Professional Bachelor programme (lower IELTS threshold, lower tuition) and then transition to VU's Supplementary Studies + MSc pathway — achieving a VU master's degree at a lower total cost than doing VU's 4-year BSc + MSc directly. Students Traffic can model this multi-year strategy for families interested in the most cost-efficient route to a VU postgraduate qualification.",
+      },
+    ],
+  },
+  {
+    label: "Entry Pathways",
+    slug: "pathways",
+    faqs: [
+      {
+        question: "What are the 6 entry pathways for Indian students at Vilnius University?",
+        answer:
+          "Pathway 1 — Standard Class 12 Entry: Indian Class 12 (CBSE/CISCE/State Board) with Biology + English + Chemistry/Physics/Maths within the 5-year gap rule + IELTS 6.5+. This is the direct route for recent Indian school leavers meeting all requirements. Pathway 2 — A-Level or IB Diploma: International A-Level or International Baccalaureate Diploma with Biology, English, and one science/maths subject. Pathway 3 — Second Degree Entry: An existing bachelor's degree (any discipline) bypasses the 5-year Class 12 gap rule. Indian BSc Nursing, BScN, or any bachelor's graduates apply using their degree, not Class 12. Pathway 4 — Professional Bachelor Entry: Holders of a Lithuanian Professional Bachelor in nursing (from SMK, LSMU college, etc.) can apply to VU directly. Pathway 5 — Foundation Year Entry: Complete a Foundation Year programme (SMK or equivalent, available with IELTS 5.5) and apply to VU with the resulting IELTS 6.5 and foundation certificate. Pathway 6 — Supplementary Studies: Specifically for Professional Bachelor holders wanting access to VU's MSc in Advanced Practice Nursing, bypassing the VU BSc entirely.",
+      },
+      {
+        question: "What is the 5-year gap rule and which Indian students does it affect?",
+        answer:
+          "VU applies a 5-year gap rule for non-EU applicants applying via the standard Class 12 pathway: the gap between completing secondary school (Class 12) and the intended year of enrolment must not exceed 5 years. For September 2026 intake, this means students who completed Class 12 in 2021 or later are eligible via the standard pathway. Students who completed Class 12 in 2020 or earlier have exceeded the 5-year gap and must use an alternate pathway — either Pathway 3 (existing bachelor's degree), Pathway 4 (Professional Bachelor from a Lithuanian college), or Pathway 5 (Foundation Year). The gap rule catches many Indian students by surprise — it is different from LSMU (no stated gap limit for the standard pathway) and SMK (no stated gap rule). Verify your gap year status with Students Traffic before paying the EUR 100 application fee.",
+      },
+      {
+        question: "I completed my Class 12 in 2018 — can I still apply to VU Nursing?",
+        answer:
+          "Not via the standard Class 12 pathway. Your 2018 Class 12 is now 8 years old — well beyond VU's 5-year gap rule for non-EU applicants. However, you have options. Pathway 3 (Second Degree Entry): if you have subsequently completed or are near completing any bachelor's degree (BSc Nursing, B.Com, BBA, BA, Engineering — any discipline), you can apply to VU using your bachelor's degree as your primary qualification, bypassing the Class 12 gap entirely. Pathway 5 (Foundation Year): complete a 1-year Foundation Year at SMK or equivalent with IELTS 5.5 — this resets the academic entry requirement and allows you to apply to VU with foundation qualifications + IELTS 6.5. Pathway 6 (SMK route + VU Supplementary Studies): study the SMK Professional Bachelor (3.5 years, IELTS 5.5) then transition to VU's Supplementary Studies and MSc. Each pathway has different time horizons and costs — contact Students Traffic for a personalised gap-year pathway map.",
+      },
+      {
+        question: "I am an Indian BSc Nursing graduate. Can I get direct admission to VU and skip Year 1?",
+        answer:
+          "You can apply to VU via Pathway 3 (second degree entry) using your Indian BSc Nursing degree. This bypasses the 5-year Class 12 gap rule. Credit transfer for any part of your Indian BSc Nursing towards the VU programme is at VU's discretion — you should directly request credit assessment from VU's Faculty of Medicine during the application process. VU may grant partial credit for equivalent foundational nursing subjects already completed, potentially reducing the total duration from 4 years. Students Traffic can help you frame this credit transfer request appropriately. Note: IELTS 6.5+ and the motivation letter + interview requirements still apply regardless of pathway.",
+      },
+      {
+        question: "My IELTS is 5.5 — should I wait for 6.5 or go to SMK now and switch to VU later?",
+        answer:
+          "This depends on your gap year situation and timeline. Option A — Wait: Invest 6–12 months improving IELTS from 5.5 to 6.5 and then apply to VU directly. Best if you are within the 5-year gap window and willing to delay one year. Option B — SMK + VU Supplementary Studies: Start SMK immediately (IELTS 5.5 accepted, lower tuition at EUR 4,400/year vs EUR 6,000/year). After completing SMK's Professional Bachelor (3.5 years), use VU's Supplementary Studies pathway to access the VU MSc in Advanced Practice Nursing. You reach master level at VU without ever getting IELTS 6.5 for direct VU BSc entry. Option C — Foundation Year: Complete a 1-year Foundation Year at SMK (IELTS 5.5), bring IELTS to 6.5 during the year, and apply to VU BSc for Year 1 the following September. Students Traffic models all three pathways with exact timelines and costs — request a free pathway assessment.",
+      },
+    ],
+  },
+  {
+    label: "Admission & Eligibility",
+    slug: "admission",
+    faqs: [
+      {
+        question: "What are the exact eligibility requirements for Indian students applying to VU Nursing?",
+        answer:
+          "For the standard Class 12 pathway: (1) Class 10+2 passed with Biology (mandatory subject — non-negotiable), English, and ONE of: Chemistry, Physics, or Mathematics. (2) 5-year gap rule: time since completing Class 12 must not exceed 5 years for non-EU applicants — students who passed Class 12 before 2021 must use an alternate pathway. (3) English proficiency: IELTS Academic 6.5+ / TOEFL iBT 81+ / PTE Academic 59+ / Duolingo 120+ / Cambridge English 176+. (4) Motivation letter (7 required questions — VU states this carries tremendous value in the shortlisting assessment). (5) Motivational interview (individual, typically online, after shortlisting). (6) All documents in English or with authorised translations + MEA Apostille. (7) Applications not accepted from Bangladesh, Nepal, or Pakistan citizens. (8) EUR 100 non-refundable application fee paid via Flywire only before the application is reviewed.",
+      },
+      {
+        question: "What is the deadline for Indian students applying to VU Nursing?",
+        answer:
+          "1 May 2026 for non-EU/Indian applicants applying for the September 2026 intake. This is significantly earlier than LSMU (6 July) or SMK (1 July). The timeline compounds: after applying and being shortlisted, VU conducts a motivational interview and then issues a Pre-Acceptance Letter. After receiving the Pre-Acceptance Letter, you have only 15 calendar days to pay EUR 6,000 first-year tuition. Only after tuition payment does VU issue the full Acceptance Letter needed for the TRP application. TRP processing takes up to 2 months. Working backwards, Indian students applying for September 2026 should submit their completed application by 15 March 2026 at the latest to safely complete every step before the September 1 start date. Students Traffic recommends beginning the process in January or February 2026.",
+      },
+      {
+        question: "What is the motivation letter for VU Nursing and what are the 7 required questions?",
+        answer:
+          "VU's motivation letter is a mandatory application document that VU describes as having tremendous value in the shortlisting and selection process. It is not a generic personal statement — VU specifies exactly 7 questions that must be answered: (1) Why have I chosen this programme? (2) What do I expect to gain from studying here? (3) Why does my personal and academic background make me suitable for this programme? (4) How will the programme help me achieve my goals? (5) What are my strengths? (6) What are my weaknesses? (7) How do I plan to finance my studies? Answers should be genuine, specific, and demonstrate nursing motivation beyond vague statements like wanting to help people. Students Traffic coaches VU motivation letters — the coaching focuses on answering each question with concrete, differentiated content that reflects the student's specific background and goals.",
+      },
+      {
+        question: "What documents need to be Apostilled and how does MEA Apostille work for Indian students?",
+        answer:
+          "All Indian academic documents require MEA (Ministry of External Affairs) Apostille to be valid for European university admission. Required documents: Class 10 marksheet and certificate, Class 12 marksheet and certificate, degree certificates if applying via Pathway 3. The Apostille process: (1) Get original documents attested by the State Education Board. (2) Submit to MEA for Apostille via RPOD (Regional Passport Office) or via private Apostille service providers. Processing time: 7–15 business days via regular channel, 2–4 business days via tatkal. Documents not originally in English also require authorised English translation before Apostille. Students Traffic connects students with established Apostille coordination services to manage this process efficiently — do not leave Apostille to the last week before the application deadline.",
+      },
+      {
+        question: "What happens after I submit my VU application?",
+        answer:
+          "Step 1: VU receives your application at apply.vu.lt and confirms receipt of the EUR 100 Flywire fee. Step 2: VU assesses all documents and the motivation letter for shortlisting (typically 1–3 weeks). Step 3: Shortlisted applicants are invited to a motivational interview — individual, online, in English. The interview assesses academic suitability, nursing motivation, and English communication ability. Step 4: VU issues an admission decision (typically within 1–2 weeks of the interview). Step 5: On admission, VU issues a Pre-Acceptance Letter. You have 15 calendar days from this letter to pay EUR 6,000 first-year tuition via Flywire. Step 6: After tuition payment, VU issues the full Acceptance Letter (Letter of Acceptance — LOA) — the document you need to initiate the TRP application. Step 7: Begin TRP process with VU's LOA. Students Traffic monitors every step and keeps your timeline on track.",
+      },
+      {
+        question: "My class 12 had Biology and English but not Chemistry, Physics, or Mathematics. Am I eligible?",
+        answer:
+          "No. VU's stated requirement is Biology + English + one of Chemistry, Physics, or Mathematics. If your Class 12 record does not include at least one of Chemistry, Physics, or Mathematics alongside Biology and English, you do not meet the standard Class 12 pathway requirement. This typically affects students from arts or commerce streams and some students from boards where these three sciences are not compulsory for Biology students. Options: (1) A-Level route (Pathway 2) — complete an A-Level in Chemistry or Physics and apply using A-Level qualifications. (2) Second degree route (Pathway 3) — a subsequent bachelor's degree in any scientific discipline may bypass this requirement — check with VU directly. (3) Apply to LSMU or SMK instead, which have different subject prerequisites. Students Traffic can review your Class 12 subjects and recommend the correct pathway.",
+      },
+    ],
+  },
+  {
+    label: "Fees & Costs",
+    slug: "fees",
+    faqs: [
+      {
+        question: "What is the total cost of studying nursing at Vilnius University for an Indian student?",
+        answer:
+          "Total tuition over 4 years: EUR 24,000 (EUR 6,000 x 4). Application fee: EUR 100 (non-refundable, paid via Flywire — one time). Living costs in Vilnius: EUR 535–1,135/month, approximately EUR 25,680–54,480 over 4 years depending on accommodation (VU dormitory EUR 70–180/month vs private shared room EUR 200–450/month). Visa/TRP costs: EUR 120/year (regular) for 4 years = EUR 480, plus MIGRIS and VFS service fees totalling approximately EUR 200. Health insurance: EUR 25–55/month = EUR 1,200–2,640 over 4 years. Grand total all-in: approximately EUR 51,460–81,500 (approximately INR 46–73 lakhs, using EUR 1 = INR 90). Monthly budget breakdown: VU dormitory EUR 70–180 + food EUR 150–280 + transport EUR 20–30 + health insurance EUR 25–55 + phone EUR 20–40 + miscellaneous EUR 50–100 = EUR 335–685/month living (ex-tuition).",
+      },
+      {
+        question: "How must the EUR 6,000 first-year tuition be paid and when is the deadline?",
+        answer:
+          "First-year tuition of EUR 6,000 must be paid via Flywire only — VU does not accept direct bank transfers or other payment services for tuition. The payment must be completed within 15 calendar days of receiving the Pre-Acceptance Letter. This is a hard deadline — VU will not extend it. Only after tuition payment does VU issue the full Acceptance Letter (LOA) required to initiate the TRP application. The practical implication: you and your family must have EUR 6,000 readily accessible at the moment the Pre-Acceptance Letter arrives — there is no time to arrange funds after it arrives. Students Traffic monitors this deadline and alerts families before the Pre-Acceptance Letter is expected so funds are prepared in advance.",
+      },
+      {
+        question: "Are scholarships available at Vilnius University for Indian nursing students?",
+        answer:
+          "VU does not offer automatic, widely publicised merit scholarships exclusively for non-EU nursing bachelor's students. However, several paths exist: (1) VU Talent Scholarships based on academic merit — criteria and availability change each year, check vu.lt/en/students/services-for-students/finance for current terms. (2) Lithuanian Government scholarships via studyin.lt — available to some eligible non-EU students in specified fields and nationalities. (3) Erasmus+ exchange semesters — available to enrolled VU students at 750+ partner institutions, including a EUR 350–700/month living stipend during the exchange semester. (4) VU Dormitory access — at EUR 70–180/month, dormitory accommodation saves EUR 1,440–3,240/year vs private accommodation. (5) Part-time work in Vilnius — 20 hours/week at EUR 5.65/hour minimum generates EUR 450–490/month gross. Vilnius has the best part-time job market in Lithuania. (6) Indian education loans — SBI, HDFC Credila, Axis, Avanse accept QS-ranked public universities like VU.",
+      },
+      {
+        question: "How does VU's tuition compare to LSMU and SMK?",
+        answer:
+          "Annual tuition: LSMU EUR 4,300/year | SMK EUR 4,400/year | VU EUR 6,000/year. Over 4 years: LSMU EUR 17,200 | SMK EUR 15,400 | VU EUR 24,000. VU's 4-year tuition is EUR 6,800–8,600 more than the alternatives. In return, VU offers: Lithuania's #1 QS-ranked public research university (QS #446 globally), Santaros Klinikos teaching hospital with 1,409 doctors and 35 specialised centres, capital city location (Vilnius — better part-time work, Indian community, career connections), direct MSc/PhD pathway without supplementary studies, and stronger credentials for German Anerkennung and UK NMC. The EUR 6,800–8,600 premium over 4 years is approximately EUR 1,700–2,150/year — equivalent to 3–4 months of part-time work income. For families who can budget for it, the prestige premium is well-justified. For families who cannot, LSMU Kaunas or SMK are academically strong alternatives with the same EU Directive recognition.",
+      },
+      {
+        question: "Can I take an education loan for VU Nursing and which banks accept VU?",
+        answer:
+          "Yes. VU's QS #446 global ranking and public university status make it a strong file for Indian bank education loans. Banks that accept QS-ranked public universities for international nursing programmes include: State Bank of India (SBI) — check Study Abroad loan schemes; HDFC Credila — education loan specialist with international programme coverage; Axis Bank Education Loan; Avanse Financial Services — education loan NBFC with wide international programme acceptance. The loan typically covers tuition and can partially cover living costs. Interest rates typically range from 9–12% per annum (floating). Students Traffic provides a VU university confirmation letter and fee structure documentation to support loan applications. Begin the loan process at least 3 months before the application deadline — bank processing times are long and must not delay your EUR 100 application fee or the 15-day tuition payment window.",
+      },
+    ],
+  },
+  {
+    label: "Visa & Immigration",
+    slug: "visa",
+    faqs: [
+      {
+        question: "What visa or residence permit do I need to study nursing at VU in Lithuania?",
+        answer:
+          "Indian students need a Lithuanian National Visa D (long-stay student visa) followed by a Temporary Residence Permit (TRP) for study purposes, issued under the Lithuanian Law on the Legal Status of Aliens. The TRP is processed through Lithuania's Migration Department (MIGRIS) and the application is submitted via VFS Global in India. The TRP is valid for up to 1 year and must be renewed annually for the duration of your studies. Critically: you receive your TRP only after arriving in Lithuania, not before. You enter Lithuania on the National Visa D, then convert to TRP. As a Lithuanian TRP holder, you can travel visa-free within all 26 Schengen Area countries during semester breaks — giving you access to travel across Europe.",
+      },
+      {
+        question: "What is MIGRIS and how does it work for the VU student TRP application?",
+        answer:
+          "MIGRIS (migris.lt) is Lithuania's Migration Information System — the online portal where all TRP applications are initiated. The TRP application process for Indian VU students: (1) Receive the full VU Acceptance Letter (LOA) — issued only after EUR 6,000 tuition payment. (2) Register on MIGRIS at migris.lt, complete the student residence permit application form, and receive your MIGRIS application number. (3) Request a VU mediation number from the VU Faculty of Medicine admissions office — this number is required for booking your VFS Global appointment in India. (4) Book VFS Global appointment in India (Bangalore, Chennai, Delhi, Hyderabad, Kolkata, Mumbai, or Pune — check vfsglobal.com for Lithuania Visa Centres). (5) Attend VFS appointment: submit physical documents, biometrics (fingerprints, photo). (6) Pay visa fee: EUR 120 (regular) or EUR 240 (urgent processing). Processing time: up to 2 months. Collect visa/notification and travel to Lithuania.",
+      },
+      {
+        question: "What documents do I need for the Lithuania student TRP application?",
+        answer:
+          "Core documents required for the TRP application: (1) VU full Acceptance Letter (LOA) — issued only after tuition payment. (2) Proof of first-year tuition payment (EUR 6,000 via Flywire). (3) MIGRIS application number (from online registration). (4) VU mediation number (from VU Faculty admissions office). (5) Bank statement showing minimum EUR 3,648 for Year 1 living costs (EUR 304/month x 12 months — official Lithuanian financial sufficiency requirement). (6) Accommodation confirmation — VU dormitory booking or private accommodation address in Vilnius. (7) Valid health insurance covering all Schengen countries — minimum EUR 6,000 sum insured. (8) Passport photograph (3x4 cm). (9) Police Clearance Certificate (PCC) from India. (10) Valid passport (validity extending well beyond programme end date). (11) Visa fee payment receipt: EUR 120 regular or EUR 240 urgent. Students Traffic prepares and verifies the complete document package.",
+      },
+      {
+        question: "How long does the Lithuania student TRP take to be approved?",
+        answer:
+          "The Lithuanian Migration Department processes student TRP applications in up to 2 months (60 days) from the date of complete submission. Urgent processing (EUR 240 fee instead of EUR 120) reduces this to approximately 30 days but is not guaranteed. Given VU's May 1 application deadline, the 15-day tuition payment window after Pre-Acceptance Letter, and the 2-month TRP processing time, you must submit your TRP application by late June at the very latest for a September 1 start — ideally by mid-June. This is why Students Traffic recommends Indian students begin the VU application process in February or March 2026. Working backwards: submit TRP by June 15 → means submit tuition by June 1 → means receive Pre-Acceptance Letter by mid-May → means VU processing completed by late April → means VU application submitted by March 2026.",
+      },
+      {
+        question: "Can I work part-time in Lithuania while studying at VU?",
+        answer:
+          "Yes. Non-EU international students enrolled at Lithuanian universities are permitted to work up to 20 hours per week during term time (and full-time during official study breaks such as summer vacations). Lithuania's minimum wage: EUR 1,038/month gross (2026), translating to approximately EUR 5.65/hour minimum. At 20 hours/week, you earn EUR 450–490/month gross part-time. In Vilnius (Lithuania's capital), the part-time job market is the most developed in the country — hospitality, retail, warehouse, and international BPO companies regularly employ multilingual students. EUR 450–490/month covers a significant portion of monthly living costs (EUR 535–1,135/month total), particularly if accommodated in a VU dormitory at EUR 70–180/month. Students Traffic provides Vilnius job market guidance and student job application tips during pre-departure briefings.",
+      },
+      {
+        question: "Do I need health insurance in Lithuania and what kind?",
+        answer:
+          "Yes. Health insurance is mandatory for the Lithuania student TRP application. Requirements: coverage across all Schengen Area countries, minimum EUR 6,000 sum insured, minimum 3-month validity (recommended: 12 months). After the first year, you become eligible for Lithuania's state health insurance system as an enrolled student — registration is done through the State Social Insurance Fund Board (SODRA) — which may reduce or eliminate private insurance costs in subsequent years. Check with VU's International Office on SODRA registration timing. In the first year, purchase an international student health insurance plan — Students Traffic recommends cost-effective plans from international student health insurance providers covering Schengen requirements at EUR 25–55/month.",
+      },
+    ],
+  },
+  {
+    label: "Career After Graduation",
+    slug: "career",
+    faqs: [
+      {
+        question: "What career options does a VU BSc Nursing graduate have?",
+        answer:
+          "A VU Bachelor of Health Sciences (General Practice Nurse) opens multiple structured career tracks: (1) Lithuania: Register with VASPVT, work immediately as a General Practice Nurse at Santaros Klinikos or any Lithuanian hospital or clinic. Entry salary EUR 1,292/month gross (public hospital, growing with experience). (2) EU-wide clinical practice: Directive 2005/36/EC recognition across all 27 EU member states — apply to nursing regulatory body in target country + meet language requirement. (3) Germany: Anerkennung (credential recognition) + German B2 language = strongest near-term EU destination salary-wise at EUR 2,800–3,800/month gross. (4) UK NMC registration: IELTS 7.0 + CBT + OSCE = Band 5 NHS salary GBP 29,970–36,483/year. (5) USA/Canada: CGFNS credential evaluation + NCLEX-RN = USD 4,000–7,000/month entry salary. (6) VU MSc in Advanced Practice Nursing — direct entry for VU BSc graduates, upgrading to specialist/advanced practice level. (7) PhD in nursing or biomedical sciences — research and academic careers.",
+      },
+      {
+        question: "Is Germany a realistic destination for VU nursing graduates and what does the process involve?",
+        answer:
+          "Germany is the most widely pursued career destination for Lithuanian nursing graduates. The path from VU graduation to German employment: (1) German language: Begin German B2 from Year 1 of the VU programme. There are 4 years to achieve B2 — fully achievable with consistent effort (3–5 hours/week). Goethe-Institut and online platforms (Duolingo, Babbel, Chatterbug) provide structured learning. VU also offers German language courses on campus. (2) After graduation: Submit the VU BSc Nursing certificate + transcripts + VASPVT licence + German B2 certificate to the German state nursing authority (Landesamt fur Gesundheit und Soziales or equivalent) for Anerkennung (credential recognition). (3) VU's QS-ranked research university BSc is well-received in Anerkennung processes — significantly better than college Professional Bachelor qualifications from unranked institutions. (4) With Anerkennung complete, apply to German hospitals and nursing agencies actively recruiting internationally (Diakonie, Caritas, Deutsche Bahn Healthcare, large university hospital systems). German nursing demand: 150,000+ additional nurses needed by 2027. (5) Obtain an Anerkennungsberatung Blue Card or skilled worker visa and relocate. Entry salary: EUR 2,800–3,800/month gross = approximately INR 2.52–3.42 lakhs/month.",
+      },
+      {
+        question: "What is the UK NMC registration process for VU graduates?",
+        answer:
+          "Nursing and Midwifery Council (NMC) UK registration for VU graduates: (1) IELTS 7.0 Academic (mandatory — 7.0 overall with no band below 7.0 — note: higher than VU's admission requirement of 6.5). Alternatively: OET 350 across all four components. (2) Submit qualification to NMC for assessment via the international registration route. VU's QS-ranked university BSc is well-received by NMC assessors. (3) NMC Computer-Based Test (CBT) — theoretical nursing knowledge assessment (passmark 67%). (4) Objective Structured Clinical Examination (OSCE) — practical nursing skills assessment at an NMC-approved OSCE centre (held in the UK). (5) On passing both, NMC registration is issued. NHS Band 5 salary: GBP 29,970–36,483/year (approximately INR 31–38 lakhs/year). Band progression to Band 6 with experience. Recommendation: begin IELTS 7.0 preparation from Year 3 if the UK is your target. Students Traffic provides an NMC assessment pathway timeline for VU graduates.",
+      },
+      {
+        question: "Can a VU nursing graduate work in the USA or Canada?",
+        answer:
+          "USA: VU BSc Nursing is eligible for CGFNS (Commission on Graduates of Foreign Nursing Schools) credential evaluation — the required first step for US nursing licensure. After CGFNS certification, pass the NCLEX-RN examination. Then apply for a US nursing work visa (typically H-1B or sponsored EB-3 through a US hospital employer). Entry-level US RN salary: USD 4,000–7,000/month (state dependent — California and New York are highest; Texas and Florida are more accessible for international nurses). Canada: CGFNS credential evaluation + NCLEX-RN (required in most Canadian provinces since 2024) + IELTS 7.0 = provincial nursing registration. Canadian RN salary: CAD 3,500–5,500/month. Important: Canada Express Entry for skilled workers (including nurses) is a PR pathway. However, it is a long, competitive process. Students Traffic recommends against choosing Lithuania nursing solely to target Canada PR via nursing — this is a high-uncertainty multi-year proposition. Germany is a more reliable career-entry strategy from Lithuania.",
+      },
+      {
+        question: "Can I pursue a Master's degree after the VU BSc Nursing?",
+        answer:
+          "Yes. VU BSc Nursing graduates can directly enrol in VU's Master of Advanced Practice Nursing — no supplementary studies required (that bridge step is only for Professional Bachelor holders from colleges). VU's MSc is research-active, aligned with the Arqus Alliance, and produces graduates who practise at the nurse specialist/advanced practitioner level. After the MSc, PhD programmes in nursing and biomedical sciences are open — research careers at Lithuanian hospitals, EU policy organisations, or academic positions at VU and partner universities become accessible. This full academic trajectory from BSc to MSc to PhD is only possible for VU university BSc holders — it is one of the defining advantages of choosing VU over college-level nursing programmes in Lithuania.",
+      },
+    ],
+  },
+  {
+    label: "VU vs LSMU vs SMK",
+    slug: "comparison",
+    faqs: [
+      {
+        question: "How do Vilnius University, LSMU, and SMK compare for Indian nursing students?",
+        answer:
+          "VU: QS #446, public research university, founded 1579, Santaros Klinikos teaching hospital, 240 ECTS BSc, EUR 6,000/year, IELTS 6.5+, Vilnius. LSMU: Lithuania's specialist health sciences university, AUN-QA accredited, Kaunas Clinical Hospital (950+ beds), 240 ECTS BSc, EUR 4,300/year, IELTS 5.5+, Kaunas. SMK: European-network private college, QAA-accredited from the UK, modern clinical skills centres, 210 ECTS Professional Bachelor, EUR 4,400/year (with 40% scholarship option), IELTS 5.5+, Vilnius/Kaunas/Klaipeda (3 campuses). Career outcomes for EU nursing are substantially the same — all three qualify under Directive 2005/36/EC. The key differences: VU gives Lithuania's most prestigious academic credential and the strongest QS ranking, but costs EUR 1,600–1,700/year more and requires IELTS 6.5. LSMU gives a dedicated health sciences university experience and the lowest tuition. SMK gives a 3.5-year programme (finishing 6 months before VU/LSMU), a scholarship option, and 3-campus flexibility.",
+      },
+      {
+        question: "If I get into all three — VU, LSMU, and SMK — which should I choose?",
+        answer:
+          "This depends entirely on your goals, academic background, and financial situation. Choose VU if: you meet all requirements (IELTS 6.5+, Biology+English+Science Class 12, within 5-year gap), your family can budget EUR 6,000/year, and you want Lithuania's most prestigious degree with the strongest QS ranking for German Anerkennung, UK NMC, and future MSc/PhD. Choose LSMU if: your IELTS is 5.5+ but below 6.5, or your tuition budget caps at EUR 4,300/year, and you want the clinical depth of a dedicated health sciences university in the city where Lithuanian nursing education was built. Choose SMK if: you want the fastest route to EU nursing registration (3.5 years, 6 months faster than VU/LSMU), your IELTS is 5.5+, you want the 40% scholarship (if you qualify), or you want Klaipeda or Kaunas campus. Students Traffic can help you model the exact career outcome of each pathway for your specific profile — request a free comparison.",
+      },
+      {
+        question: "Is VU's teaching hospital Santaros Klinikos better than LSMU's Kaunas Clinical Hospital?",
+        answer:
+          "Both are excellent clinical training environments. Santaros Klinikos (VU): 1,409 doctors, 1,978 nurses, 35 specialised centres, 5,372 staff, 370+ professors providing patient care, research-intensive. The largest and most specialised teaching hospital in the Baltic region. VU's own institution — academic and clinical roles are fully integrated. LSMU Kaunas Clinical Hospital (LSMU): 950+ beds, major Kaunas teaching hospital, strong in surgery, internal medicine, maternal health. LSMU specialises entirely in health sciences — every faculty member, every professor is in the health field, creating a more focused medical culture. In pure size and specialisation breadth, Santaros Klinikos is larger. In terms of specialised health sciences culture and cohesion, LSMU's clinical environment is arguably more medically focused. For most clinical nursing training purposes, both are more than adequate. The hospital-as-differentiation argument slightly favours VU purely on scale; the medical culture argument slightly favours LSMU.",
+      },
+      {
+        question: "I want to work in Germany after graduation — is VU better than LSMU or SMK for German Anerkennung?",
+        answer:
+          "VU has a marginal advantage in German Anerkennung recognition processes due to its QS #446 public research university status. German state nursing authorities are generally more familiar with established research universities than with specialist health science universities or private colleges, and QS ranking is a positive signal in the assessment. However, LSMU's AUN-QA accreditation, professional health sciences focus, and strong clinical curriculum have also been recognised successfully in German Anerkennung by Lithuanian nursing graduates. SMK Professional Bachelor holders have also successfully obtained German Anerkennung — the process is more documentation-intensive for college-level qualifications but not blocked. For practical purposes: all three Lithuanian nursing qualifications can lead to German employment. The German B2 language requirement is the same for all three. VU's advantage is real but not absolute — LSMU and SMK graduates are not disadvantaged in Germany, they just face slightly more administrative effort in the recognition process.",
+      },
+      {
+        question: "Can a SMK or LSMU nursing graduate later upgrade to a VU Master's degree?",
+        answer:
+          "Yes — this is Pathway 6 (VU Supplementary Studies) and Pathway 4 (Professional Bachelor to VU BSc entry). SMK Professional Bachelor graduates can access VU's Supplementary Studies programme, which brings their Professional Bachelor competencies to university BSc standard, enabling enrolment in VU's MSc in Advanced Practice Nursing. LSMU BSc graduates can directly apply to VU's MSc — their university BSc is equivalent to VU's BSc at postgraduate entry level. The strategic combination of SMK (3.5 years, EUR 4,400/year, IELTS 5.5) + VU Supplementary Studies + VU MSc achieves a master-level qualification from Lithuania's #1 ranked university at total lower cost than doing VU BSc + VU MSc directly. Students Traffic can model the complete timeline and cost comparison for families evaluating this multi-step strategy.",
+      },
+    ],
+  },
+  {
+    label: "Parent Questions",
+    slug: "parents",
+    faqs: [
+      {
+        question: "As a parent, how confident should I be about sending my child to Vilnius University for nursing?",
+        answer:
+          "Highly confident — with proper preparation. Vilnius University is Lithuania's oldest (1579) and highest-ranked (QS #446, 2026) public university and a member of the Arqus European University Alliance. It is not a commercial recruitment-driven institution — it is a 446-year-old academic institution with the same standing in Europe as established public universities in Eastern and Central Europe. The nursing programme is housed in the Faculty of Medicine, delivered by full-time academic faculty, with clinical training at VU's own teaching hospital Santaros Klinikos. Lithuania is an EU and NATO member state with stable governance, a very low crime rate, and European safety standards. The currency is the Euro. Indian students studying at Vilnius University — including female students — consistently report feeling safe and well-supported. Students Traffic has student and parent contacts in Vilnius for direct reference conversations before enrolment.",
+      },
+      {
+        question: "My child has never lived abroad. Will they cope with studying in English in Lithuania?",
+        answer:
+          "VU's nursing programme is 100% English-taught — your child will not need to learn Lithuanian to study or complete clinical placements (nursing instructions, patient communication, and examinations are all in English). IELTS 6.5+ at admission ensures a solid English baseline. The international student community (750+ new students from 90+ countries annually at VU) means your child will always have English-speaking peers, classmates, and support around them. VU's International Office runs orientation programmes, academic support services, and peer mentoring for international students. The Faculty of Medicine has dedicated staff supporting international nursing students. Students Traffic provides pre-departure briefings and connects all enrolled students with Indian students already at VU who can guide them on the first weeks of life in Vilnius. First-year adjustment is normal and expected — it is not unique to Lithuania or VU.",
+      },
+      {
+        question: "Is the VU nursing degree really recognised in Germany and the UK — or is this just marketing?",
+        answer:
+          "It is factually verified, not marketing. EU Directive 2005/36/EC mandates that all EU member states automatically recognise professional nursing qualifications that meet the directive's standards — including those from Lithuanian universities like VU. This is enforceable EU law. German healthcare associations (Bundesagentur fur Arbeit, Diakonie, DKG) actively recruit nurses from Lithuania, Poland, Czech Republic, and other EU member states using this directive as the legal basis. The NMC (UK's nursing regulator) has an established international route for EU-educated nurses — VU graduates have used this route. These are not promises — they are documented, established regulatory pathways with published requirements. What Students Traffic will always tell you honestly: the pathway is real and accessible, but it requires individual action from your child (German B2 language, UK IELTS 7.0, active job applications) — it is not automatic just by graduating.",
+      },
+      {
+        question: "How will my child manage money in Lithuania and is EUR 6,000/year tuition the only expense?",
+        answer:
+          "No — tuition is one of several costs. Full year cost breakdown: Tuition EUR 6,000 + Dormitory EUR 840–2,160 + Food EUR 1,800–3,360 + Transport EUR 240–360 + Health insurance EUR 300–660 + Phone EUR 240–480 + Miscellaneous EUR 600–1,200 = Total approximately EUR 10,020–14,220/year (INR 9–12.8 lakhs/year). One-time first year setup: Winter clothing EUR 300–500. Visa/TRP: EUR 120/year. The good news: your child can work part-time (20 hours/week) in Vilnius generating EUR 450–490/month gross — covering EUR 5,400–5,880/year toward living costs. Over 4 years, consistent part-time work can offset EUR 20,000+ of total costs. Students Traffic provides families with a year-by-year budget model and connects students with part-time job guidance in Vilnius during pre-departure briefing. Students Traffic recommends that families prepare year-by-year rather than trying to fund all 4 years upfront.",
+      },
+      {
+        question: "What happens if my child wants to return to India after graduation — is the VU nursing degree valid in India?",
+        answer:
+          "Yes. Indian students who return to India after graduating from VU can practise nursing in India by submitting the VU EU university degree to the Indian Nursing Council (INC) for verification and endorsement. The INC process for foreign-educated nurses typically involves submitting original degree certificates, transcripts, and a statement of equivalency request. VU's QS #446 ranking, EU university status, and 240 ECTS BSc makes it one of the strongest international nursing credentials for return applicants. Indian private hospitals (Fortis, Apollo, Narayana Health, Max Healthcare) actively recruit internationally educated nurses with EU degrees for specialty nursing positions. However, the primary value proposition of studying at VU is the EU, German, and UK career pathways — returning to India to work in nursing typically means starting at government hospital salaries, which are lower than Lithuanian nursing salaries. Students Traffic is transparent about this: VU is primarily a gateway to European nursing careers, not an Indian nursing career upgrade.",
+      },
+    ],
+  },
+];
+
 const universityFaqSectionsMap: Record<string, FaqSection[]> = {
   "european-university-of-tirana-bscn": uetAlbaniaFaqSections,
   "western-balkans-university-bscn": wbuAlbaniaFaqSections,
   "mediterranean-university-of-albania": muaAlbaniaFaqSections,
   "lithuanian-university-of-health-sciences-bscn": lsmuLithuaniaFaqSections,
   "smk-college-applied-sciences-bscn": smkLithuaniaFaqSections,
+  "vilnius-university-bscn": vuLithuaniaFaqSections,
 };
 
 export function getUniversityFaqSections(universitySlug: string): FaqSection[] | null {
