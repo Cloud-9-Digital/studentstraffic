@@ -11,7 +11,13 @@ const BARE_PREFIXES = [
   "/seminar-2026",
   "/mbbs-abroad",
 ];
-const BARE_EXACT = new Set(["/login", "/register"]);
+const BARE_EXACT = new Set([
+  "/login",
+  "/register",
+  "/mbbs-in-russia-admission",
+  "/mbbs-in-vietnam-admission",
+  "/mbbs-in-georgia-admission",
+]);
 
 function AppChromeInner({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

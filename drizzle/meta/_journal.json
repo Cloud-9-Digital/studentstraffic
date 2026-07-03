@@ -232,6 +232,13 @@
       "when": 1780275600000,
       "tag": "0046_guide_chat",
       "breakpoints": true
+    },
+    {
+      "idx": 47,
+      "version": "7",
+      "when": 1782996480000,
+      "tag": "0048_blog_post_query_indexes",
+      "breakpoints": true
     }
   ]
 }

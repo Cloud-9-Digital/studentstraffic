@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { cacheLife, cacheTag } from "next/cache";
 import { connection } from "next/server";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -87,7 +86,6 @@ export async function generateStaticParams() {
 }
 
 async function getUniversityPageData(slug: string) {
-
   const university = await getUniversityBySlug(slug);
 
   if (!university) {
@@ -393,8 +391,7 @@ export default async function UniversityDetailPage({
                 country={country}
                 countryContent={countryContent}
                 countryMedia={countryMedia}
-                countrySlug={university.countrySlug}
-                city={university.city}
+                cityProfile={cityProfile}
                 universityName={university.name}
                 cityMedia={cityMedia}
               />
@@ -436,38 +433,27 @@ export default async function UniversityDetailPage({
   );
 }
 
-async function getSharedCityProfileForUniversity(countrySlug: string, city: string) {
-  "use cache";
-  cacheTag(`city-profile:${countrySlug}:${city.toLowerCase()}`);
-
-  return getSharedCityProfile(countrySlug, city);
-}
-
 async function UniversityLocationContextSection({
   country,
   countryContent,
   countryMedia,
-  countrySlug,
-  city,
+  cityProfile,
   universityName,
   cityMedia,
 }: {
   country: Awaited<ReturnType<typeof getCountryBySlug>>;
   countryContent: ReturnType<typeof getCountryContent>;
   countryMedia: ReturnType<typeof getCountryMedia>;
-  countrySlug: string;
-  city: string;
+  cityProfile: Awaited<ReturnType<typeof getSharedCityProfile>>;
   universityName: string;
   cityMedia: ReturnType<typeof getCityMedia>;
 }) {
-  const cityProfile = await getSharedCityProfileForUniversity(countrySlug, city);
-
   return (
     <div className="space-y-5">
       {cityProfile ? (
         <UniversityCitySection
           cityProfile={cityProfile}
-          city={city}
+          city={cityProfile.city}
           countryName={country!.name}
           universityName={universityName}
           cityMedia={cityMedia}
@@ -483,7 +469,6 @@ async function UniversityLocationContextSection({
 }
 
 async function getUniversityRelatedData(universitySlug: string, countrySlug: string) {
-
   const [comparisonGuides, countryPrograms] = await Promise.all([
     getComparisonGuidesForUniversity(universitySlug, 10),
     getProgramsForCountry(countrySlug),

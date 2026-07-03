@@ -529,7 +529,12 @@ export type BlogPostSearchMetadata = {
   title: string;
   excerpt?: string | null;
   content?: string | null;
+  coverUrl?: string | null;
   category?: string | null;
+  metaTitle?: string | null;
+  metaDescription?: string | null;
+  authorSlug?: string | null;
+  readingTimeMinutes?: number | null;
   publishedAt?: string;
   updatedAt?: string;
 };

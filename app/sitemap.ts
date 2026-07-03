@@ -196,6 +196,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: governanceLastModified,
     },
     {
+      url: absoluteUrl("/mbbs-in-russia-admission"),
+      priority: 0.9,
+      changeFrequency: "weekly",
+      lastModified: catalogLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-in-vietnam-admission"),
+      priority: 0.9,
+      changeFrequency: "weekly",
+      lastModified: catalogLastModified,
+    },
+    {
+      url: absoluteUrl("/mbbs-in-georgia-admission"),
+      priority: 0.9,
+      changeFrequency: "weekly",
+      lastModified: catalogLastModified,
+    },
+    {
       url: absoluteUrl("/mbbs-in-russia-fees"),
       priority: 0.9,
       changeFrequency: "weekly",

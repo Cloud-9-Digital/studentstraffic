@@ -1,18 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { and, desc, eq, lt, gt, ne } from "drizzle-orm";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { unstable_cache } from "next/cache";
-import { connection } from "next/server";
 import { CalendarDays, Clock, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import readingTime from "reading-time";
 
-import { getDb } from "@/lib/db/server";
-import { blogPosts } from "@/lib/db/schema";
 import { MarkdownContent } from "@/components/site/markdown-content";
 import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
-import { categoryToSlug } from "@/app/blog/category/[slug]/page";
 import { buildLinkRules, linkifyMarkdown } from "@/lib/blog-autolinks";
 import { ReadingProgress } from "@/components/blog/reading-progress";
 import {
@@ -20,12 +14,15 @@ import {
   contentAuthorSlug,
 } from "@/lib/content-governance";
 import { getAuthor, isValidAuthorSlug } from "@/lib/authors";
+import {
+  getPublishedBlogPostMetadata,
+} from "@/lib/data/catalog";
+import type { BlogPostSearchMetadata } from "@/lib/data/types";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 const PLACEHOLDER_BLOG_SLUG = "__blog-fallback__";
 
 type RelatedPost = {
-  id: number;
   title: string;
   slug: string;
   excerpt: string | null;
@@ -35,67 +32,88 @@ type RelatedPost = {
   readingTimeMinutes: number | null;
 };
 
-async function getPost(slug: string) {
-  const db = getDb();
-  if (!db) return null;
-  const [post] = await db
-    .select()
-    .from(blogPosts)
-    .where(and(eq(blogPosts.slug, slug), eq(blogPosts.status, "published")))
-    .limit(1);
-  return post ?? null;
+async function getPublishedPosts() {
+  return getPublishedBlogPostMetadata();
 }
 
-const getRelatedPosts = unstable_cache(
-  async (slug: string, category: string | null): Promise<RelatedPost[]> => {
-    const db = getDb();
-    if (!db) return [];
-    // Try same category first, fall back to any recent posts
-    const sameCat = category
-      ? await db
-          .select({ id: blogPosts.id, title: blogPosts.title, slug: blogPosts.slug, excerpt: blogPosts.excerpt, coverUrl: blogPosts.coverUrl, category: blogPosts.category, publishedAt: blogPosts.publishedAt, readingTimeMinutes: blogPosts.readingTimeMinutes })
-          .from(blogPosts)
-          .where(and(eq(blogPosts.status, "published"), eq(blogPosts.category, category), ne(blogPosts.slug, slug)))
-          .orderBy(desc(blogPosts.publishedAt))
-          .limit(3)
-      : [];
-    if (sameCat.length >= 2) return sameCat;
-    // top up with any recent posts
-    const recent = await db
-      .select({ id: blogPosts.id, title: blogPosts.title, slug: blogPosts.slug, excerpt: blogPosts.excerpt, coverUrl: blogPosts.coverUrl, category: blogPosts.category, publishedAt: blogPosts.publishedAt, readingTimeMinutes: blogPosts.readingTimeMinutes })
-      .from(blogPosts)
-      .where(and(eq(blogPosts.status, "published"), ne(blogPosts.slug, slug)))
-      .orderBy(desc(blogPosts.publishedAt))
-      .limit(3);
-    const seen = new Set(sameCat.map((p) => p.slug));
-    return [...sameCat, ...recent.filter((p) => !seen.has(p.slug))].slice(0, 3);
-  },
-  ["blog-related"],
-  { tags: ["blog"], revalidate: 3600 }
-);
+async function getPost(slug: string) {
+  const posts = await getPublishedPosts();
+  return posts.find((post) => post.slug === slug) ?? null;
+}
 
-const getPrevNext = unstable_cache(
-  async (slug: string, publishedAt: Date | string | null) => {
-    const db = getDb();
-    if (!db || !publishedAt) return { prev: null, next: null };
-    const ts = new Date(publishedAt);
-    const [prev] = await db
-      .select({ title: blogPosts.title, slug: blogPosts.slug })
-      .from(blogPosts)
-      .where(and(eq(blogPosts.status, "published"), lt(blogPosts.publishedAt, ts)))
-      .orderBy(desc(blogPosts.publishedAt))
-      .limit(1);
-    const [next] = await db
-      .select({ title: blogPosts.title, slug: blogPosts.slug })
-      .from(blogPosts)
-      .where(and(eq(blogPosts.status, "published"), gt(blogPosts.publishedAt, ts)))
-      .orderBy(blogPosts.publishedAt)
-      .limit(1);
-    return { prev: prev ?? null, next: next ?? null };
-  },
-  ["blog-prevnext"],
-  { tags: ["blog"], revalidate: 3600 }
-);
+async function getRelatedPosts(
+  slug: string,
+  category: string | null | undefined,
+): Promise<RelatedPost[]> {
+  const posts = await getPublishedPosts();
+  const sameCategory = category
+    ? posts.filter((post) => post.slug !== slug && post.category === category)
+    : [];
+
+  const candidates =
+    sameCategory.length >= 2
+      ? sameCategory
+      : [
+          ...sameCategory,
+          ...posts.filter(
+            (post) =>
+              post.slug !== slug &&
+              !sameCategory.some(
+                (sameCategoryPost) => sameCategoryPost.slug === post.slug,
+              ),
+          ),
+        ];
+
+  return candidates.slice(0, 3).map(mapRelatedPost);
+}
+
+async function getPrevNext(
+  slug: string,
+  publishedAt: string | Date | null | undefined,
+) {
+  if (!publishedAt) {
+    return { prev: null, next: null };
+  }
+
+  const posts = await getPublishedPosts();
+  const publishedAtMs = new Date(publishedAt).getTime();
+
+  const currentIndex = posts.findIndex((post) => post.slug === slug);
+  if (currentIndex === -1) {
+    return { prev: null, next: null };
+  }
+
+  // posts is sorted by publishedAt descending, so the immediately preceding
+  // (older) post sits at the next index, and the immediately following
+  // (newer) post sits at the previous index.
+  const previousPost = posts
+    .slice(currentIndex + 1)
+    .find((post) => getPublishedAtMs(post) < publishedAtMs);
+  const nextPost = [...posts.slice(0, currentIndex)]
+    .reverse()
+    .find((post) => getPublishedAtMs(post) > publishedAtMs);
+
+  return {
+    prev: previousPost ? { title: previousPost.title, slug: previousPost.slug } : null,
+    next: nextPost ? { title: nextPost.title, slug: nextPost.slug } : null,
+  };
+}
+
+function getPublishedAtMs(post: BlogPostSearchMetadata) {
+  return post.publishedAt ? new Date(post.publishedAt).getTime() : 0;
+}
+
+function mapRelatedPost(post: BlogPostSearchMetadata): RelatedPost {
+  return {
+    title: post.title,
+    slug: post.slug,
+    excerpt: post.excerpt ?? null,
+    coverUrl: post.coverUrl ?? null,
+    category: post.category ?? null,
+    publishedAt: post.publishedAt ?? null,
+    readingTimeMinutes: post.readingTimeMinutes ?? null,
+  };
+}
 
 export async function generateStaticParams() {
   return ensureNonEmptyStaticParams([], { slug: PLACEHOLDER_BLOG_SLUG });
@@ -114,7 +132,6 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  await connection();
   const { slug } = await params;
   if (slug === PLACEHOLDER_BLOG_SLUG) return {};
   const post = await getPost(slug);
@@ -177,7 +194,6 @@ export default async function BlogPostPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  await connection();
   const { slug } = await params;
   if (slug === PLACEHOLDER_BLOG_SLUG) {
     notFound();
@@ -186,15 +202,16 @@ export default async function BlogPostPage({
 
   if (!post) notFound();
 
-  const rt = readingTime(post.content);
-  const faqs = extractFaqs(post.content);
+  const content = post.content ?? "";
+  const rt = readingTime(content);
+  const faqs = extractFaqs(content);
   const author = resolvePostAuthor(post.authorSlug);
   const [related, { prev, next }, linkRules] = await Promise.all([
     getRelatedPosts(post.slug, post.category),
     getPrevNext(post.slug, post.publishedAt),
     buildLinkRules(post.slug),
   ]);
-  const linkedContent = linkifyMarkdown(post.content, linkRules);
+  const linkedContent = linkifyMarkdown(content, linkRules);
   const shareUrl = absoluteUrl(`/blog/${post.slug}`);
   const waHref = `https://wa.me/?text=${encodeURIComponent(`${post.title} — ${shareUrl}`)}`;
 
@@ -452,7 +469,7 @@ export default async function BlogPostPage({
                   datePublished: post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined,
                   dateModified: post.updatedAt ? new Date(post.updatedAt).toISOString() : undefined,
                   inLanguage: "en-IN",
-                  wordCount: post.content.split(/\s+/).length,
+                  wordCount: content.split(/\s+/).length,
                   articleSection: post.category ?? "MBBS Abroad",
                   author: {
                     "@type": "Person",

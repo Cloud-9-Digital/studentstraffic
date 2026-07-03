@@ -951,6 +951,15 @@ export const blogPosts = pgTable(
     uniqueIndex("blog_posts_slug_idx").on(table.slug),
     index("blog_posts_status_idx").on(table.status),
     index("blog_posts_published_at_idx").on(table.publishedAt),
+    index("blog_posts_status_published_at_idx").on(
+      table.status,
+      table.publishedAt,
+    ),
+    index("blog_posts_status_category_published_at_idx").on(
+      table.status,
+      table.category,
+      table.publishedAt,
+    ),
   ]
 );
 
