@@ -20,11 +20,13 @@ export default async function DashboardLayout({ children }: { children: React.Re
   let initialCalls: Awaited<ReturnType<typeof getIncomingPeerCalls>> = [];
   let initialStudentCalls: Awaited<ReturnType<typeof getIncomingStudentCalls>> = [];
   let activeCall: Awaited<ReturnType<typeof getActivePeerCallForUser>> = null;
+  let voiceUserId: string | null = null;
 
   if (env.hasAgoraVoice && session.user.email) {
     const db = getDb();
     const userId = await resolveDbUserId(session.user.email);
     if (db && userId) {
+      voiceUserId = userId;
       const [peer] = await db
         .select({ id: studentPeers.id })
         .from(studentPeers)
@@ -68,13 +70,13 @@ export default async function DashboardLayout({ children }: { children: React.Re
       {activeCall && <RejoinCallBanner call={activeCall} />}
 
       {/* Floating incoming-call dialog — only for peer guides with voice enabled */}
-      {isPeerWithVoice && (
-        <IncomingCallsFloating initialCalls={initialCalls} />
+      {isPeerWithVoice && voiceUserId && (
+        <IncomingCallsFloating initialCalls={initialCalls} userId={voiceUserId} />
       )}
 
       {/* Floating incoming-call dialog for students — when a guide calls them */}
-      {env.hasAgoraVoice && initialStudentCalls.length > 0 && (
-        <IncomingStudentCallsFloating initialCalls={initialStudentCalls} />
+      {env.hasAgoraVoice && initialStudentCalls.length > 0 && voiceUserId && (
+        <IncomingStudentCallsFloating initialCalls={initialStudentCalls} userId={voiceUserId} />
       )}
     </div>
   );

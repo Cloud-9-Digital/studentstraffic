@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { peerCallSessions } from "@/lib/db/schema";
-import { getAuthorizedPeerCallSession } from "@/lib/peer-calls";
+import { getAuthorizedPeerCallSession, notifyPeerCallParticipants } from "@/lib/peer-calls";
 import { resolveDbUserId } from "@/lib/server-session";
 
 export async function POST(
@@ -48,6 +48,8 @@ export async function POST(
         inArray(peerCallSessions.status, ["ringing", "active"])
       )
     );
+
+  notifyPeerCallParticipants([call.peerUserId, call.callerUserId], "ended");
 
   return NextResponse.json({ success: true });
 }

@@ -5,8 +5,21 @@ import { and, desc, eq, gt, inArray, lt, or } from "drizzle-orm";
 import { getDb } from "@/lib/db/server";
 import { peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
 import type { PeerCallStatus } from "@/lib/data/types";
+import { publishPeerCallsUserEvent } from "@/lib/realtime/ably";
 
 const OPEN_CALL_STATUSES: PeerCallStatus[] = ["ringing", "active"];
+
+// Tells a participant's dashboard/mobile client to refetch its incoming-calls
+// list, replacing 8s polling with a push-then-pull refresh.
+export function notifyPeerCallParticipants(
+  participants: Array<string | null | undefined>,
+  reason: string
+) {
+  const userIds = new Set(participants.filter((id): id is string => Boolean(id)));
+  for (const userId of userIds) {
+    publishPeerCallsUserEvent(userId, "calls.changed", { reason }).catch(() => undefined);
+  }
+}
 
 export type AuthorizedPeerCallSession = {
   id: string;
@@ -65,6 +78,17 @@ export async function cleanupExpiredPeerCallSessions(userId?: string) {
       )
     : and(eq(peerCallSessions.status, "active"), lt(peerCallSessions.expiresAt, now));
 
+  const [affectedRinging, affectedActive] = await Promise.all([
+    db
+      .select({ peerUserId: peerCallSessions.peerUserId, callerUserId: peerCallSessions.callerUserId })
+      .from(peerCallSessions)
+      .where(ringingWhere),
+    db
+      .select({ peerUserId: peerCallSessions.peerUserId, callerUserId: peerCallSessions.callerUserId })
+      .from(peerCallSessions)
+      .where(activeWhere),
+  ]);
+
   const [expiredRingingCalls, endedActiveCalls] = await Promise.all([
     db.update(peerCallSessions)
       .set({ status: "expired", endedAt: now, updatedAt: now })
@@ -73,6 +97,10 @@ export async function cleanupExpiredPeerCallSessions(userId?: string) {
       .set({ status: "ended", endedAt: now, updatedAt: now })
       .where(activeWhere),
   ]);
+
+  for (const row of [...affectedRinging, ...affectedActive]) {
+    notifyPeerCallParticipants([row.peerUserId, row.callerUserId], "expired");
+  }
 
   return expiredRingingCalls.rowCount + endedActiveCalls.rowCount;
 }

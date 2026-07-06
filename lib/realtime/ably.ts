@@ -24,6 +24,10 @@ export function getGuideChatUserChannelName(userId: string) {
   return `guide-chat:user:${userId}`;
 }
 
+export function getPeerCallsUserChannelName(userId: string) {
+  return `peer-calls:user:${userId}`;
+}
+
 export async function createGuideChatTokenRequest(userId: string) {
   const client = getAblyRestClient();
   if (!client) {
@@ -34,6 +38,7 @@ export async function createGuideChatTokenRequest(userId: string) {
     clientId: userId,
     capability: JSON.stringify({
       [getGuideChatUserChannelName(userId)]: ["subscribe"],
+      [getPeerCallsUserChannelName(userId)]: ["subscribe"],
     }),
   });
 }
@@ -49,4 +54,17 @@ export async function publishGuideChatUserEvent(
   }
 
   await client.channels.get(getGuideChatUserChannelName(userId)).publish(eventName, data);
+}
+
+export async function publishPeerCallsUserEvent(
+  userId: string,
+  eventName: string,
+  data: Record<string, unknown>
+) {
+  const client = getAblyRestClient();
+  if (!client) {
+    return;
+  }
+
+  await client.channels.get(getPeerCallsUserChannelName(userId)).publish(eventName, data);
 }

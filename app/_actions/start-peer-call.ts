@@ -6,6 +6,7 @@ import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
+import { notifyPeerCallParticipants } from "@/lib/peer-calls";
 
 const REUSABLE_CALL_STATUSES = ["ringing", "active"] as const;
 const CALL_TTL_MS = 60 * 60 * 1000;
@@ -106,6 +107,8 @@ export async function startPeerCallAction(
     createdAt: now,
     updatedAt: now,
   });
+
+  notifyPeerCallParticipants([peer.peerUserId], "ringing");
 
   return { callId };
 }

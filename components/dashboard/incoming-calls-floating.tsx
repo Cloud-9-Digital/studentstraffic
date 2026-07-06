@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Loader2, PhoneCall, PhoneOff } from "lucide-react";
 
+import { getGuideChatRealtimeClient } from "@/lib/realtime/ably-browser";
 import { CallOverlay } from "@/components/site/call-overlay";
 
 type IncomingCall = {
@@ -95,8 +96,10 @@ function CallDialog({
 
 export function IncomingCallsFloating({
   initialCalls,
+  userId,
 }: {
   initialCalls: IncomingCall[];
+  userId: string;
 }) {
   const [calls, setCalls] = useState<IncomingCall[]>(initialCalls);
   const [activeCall, setActiveCall] = useState<ActiveCall | null>(null);
@@ -106,7 +109,7 @@ export function IncomingCallsFloating({
   useEffect(() => {
     cancelledRef.current = false;
 
-    async function poll() {
+    async function refresh() {
       try {
         const res = await fetch("/api/peer-calls/incoming", { cache: "no-store" });
         if (!res.ok || cancelledRef.current) return;
@@ -115,9 +118,29 @@ export function IncomingCallsFloating({
       } catch { /* ignore */ }
     }
 
-    const id = window.setInterval(() => void poll(), 8_000);
-    return () => { cancelledRef.current = true; window.clearInterval(id); };
-  }, []);
+    // Ably pushes a "calls.changed" event whenever a call is created, accepted,
+    // or ended — we refetch once instead of polling on a timer.
+    const client = getGuideChatRealtimeClient(userId);
+    const channel = client?.channels.get(`peer-calls:user:${userId}`);
+    const onEvent = () => void refresh();
+    channel?.subscribe("calls.changed", onEvent).catch(() => undefined);
+
+    // Safety net in case a realtime event is missed (e.g. brief disconnect).
+    function handleVisibilityChange() {
+      if (document.visibilityState === "visible") void refresh();
+    }
+    window.addEventListener("focus", refresh);
+    window.addEventListener("online", refresh);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      cancelledRef.current = true;
+      if (channel) void channel.unsubscribe("calls.changed", onEvent);
+      window.removeEventListener("focus", refresh);
+      window.removeEventListener("online", refresh);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [userId]);
 
   async function handleDecline(callId: string) {
     setIsEnding(callId);

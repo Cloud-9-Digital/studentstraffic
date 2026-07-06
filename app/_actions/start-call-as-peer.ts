@@ -6,6 +6,7 @@ import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { peerCallBookings, peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
+import { notifyPeerCallParticipants } from "@/lib/peer-calls";
 import { resolveDbUserId } from "@/lib/server-session";
 import { sendCallPushNotification } from "@/lib/push-notifications";
 
@@ -125,6 +126,8 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
     createdAt: now,
     updatedAt: now,
   });
+
+  notifyPeerCallParticipants([peerUserId, booking.studentUserId], "ringing");
 
   // Notify the student that their guide is calling
   sendCallPushNotification(booking.studentUserId, {

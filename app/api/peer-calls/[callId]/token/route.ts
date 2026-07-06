@@ -6,7 +6,7 @@ import { buildAgoraRtcToken } from "@/lib/agora";
 import { getDb } from "@/lib/db/server";
 import { peerCallSessions } from "@/lib/db/schema";
 import { env } from "@/lib/env";
-import { getAuthorizedPeerCallSession } from "@/lib/peer-calls";
+import { getAuthorizedPeerCallSession, notifyPeerCallParticipants } from "@/lib/peer-calls";
 import { resolveDbUserId } from "@/lib/server-session";
 
 export async function POST(
@@ -59,6 +59,7 @@ export async function POST(
             eq(peerCallSessions.status, "ringing")
           )
         );
+      notifyPeerCallParticipants([call.peerUserId, call.callerUserId], "active");
     }
   }
 
