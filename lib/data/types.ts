@@ -11,7 +11,7 @@ export type Country = {
   updatedAt?: string;
 };
 
-export type CourseStream = "medicine" | "nursing" | "dental" | "pharmacy" | "physiotherapy" | "engineering" | "other";
+export type CourseStream = "medicine" | "nursing" | "dental" | "pharmacy" | "physiotherapy" | "engineering" | "vocational" | "other";
 
 export type Course = {
   slug: string;

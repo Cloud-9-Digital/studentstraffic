@@ -30,6 +30,8 @@ import type {
   UniversityAdmissionsContent,
   YearlyCostBreakdown,
 } from "@/lib/data/types";
+import type { IndexableMetadataInput } from "@/lib/metadata";
+import type { StudyAbroadGuidePageProps } from "@/components/site/study-abroad-guide-page";
 
 export type UniversityResearchStructuredFacts = {
   universityName?: string;
@@ -198,6 +200,7 @@ export const universities = pgTable(
   (table) => [
     uniqueIndex("universities_slug_idx").on(table.slug),
     index("universities_country_idx").on(table.countryId),
+    index("universities_country_city_idx").on(table.countryId, table.city),
   ]
 );
 
@@ -960,6 +963,31 @@ export const blogPosts = pgTable(
       table.category,
       table.publishedAt,
     ),
+  ]
+);
+
+export const studyAbroadGuides = pgTable(
+  "study_abroad_guides",
+  {
+    id: serial("id").primaryKey(),
+    slug: text("slug").notNull(),
+    stream: text("stream").$type<CourseStream>().notNull().default("medicine"),
+    courseSlug: text("course_slug"),
+    countrySlug: text("country_slug"),
+    metadata: jsonb("metadata").$type<IndexableMetadataInput>().notNull(),
+    page: jsonb("page").$type<StudyAbroadGuidePageProps>().notNull(),
+    published: boolean("published").notNull().default(false),
+    lastVerifiedAt: timestamp("last_verified_at", { withTimezone: true }),
+    sourceUrls: jsonb("source_urls").$type<string[]>(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex("study_abroad_guides_slug_idx").on(table.slug),
+    index("study_abroad_guides_stream_idx").on(table.stream),
+    index("study_abroad_guides_published_idx").on(table.published),
+    index("study_abroad_guides_course_slug_idx").on(table.courseSlug),
+    index("study_abroad_guides_country_slug_idx").on(table.countrySlug),
   ]
 );
 

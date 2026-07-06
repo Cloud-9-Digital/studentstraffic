@@ -20,6 +20,7 @@ import { CountryFlag } from "@/components/site/country-flag";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
+import { StudyAbroadGuidePage } from "@/components/site/study-abroad-guide-page";
 import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { UniversityCard } from "@/components/site/university-card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -46,6 +47,12 @@ import {
   getLandingPageContext,
   getLandingPageSlugs,
 } from "@/lib/data/catalog";
+import {
+  getPublishedStudyAbroadGuideSlugs,
+  getStudyAbroadGuideBySlug,
+} from "@/lib/data/study-abroad-guides-db";
+import { getRelatedContent } from "@/lib/data/related-content";
+import { RelatedContentSection } from "@/components/site/related-content-section";
 import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
 import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import {
@@ -54,8 +61,12 @@ import {
 } from "@/lib/routes";
 
 export async function generateStaticParams() {
-  const slugs = await getLandingPageSlugs();
-  return slugs.map((slug) => ({ slug }));
+  const [landingPageSlugs, guideSlugs] = await Promise.all([
+    getLandingPageSlugs(),
+    getPublishedStudyAbroadGuideSlugs(),
+  ]);
+  const slugs = new Set([...landingPageSlugs, ...guideSlugs]);
+  return Array.from(slugs).map((slug) => ({ slug }));
 }
 
 async function getLandingPageRouteData(slug: string) {
@@ -89,7 +100,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const { page, context } = await getLandingPageRouteData(slug);
 
-  if (!page) return { title: "Page Not Found" };
+  if (!page) {
+    const guide = await getStudyAbroadGuideBySlug(slug);
+    if (guide) return buildIndexableMetadata(guide.metadata);
+    return { title: "Page Not Found" };
+  }
   const keywords = [
     page.title,
     context.country && context.course
@@ -134,7 +149,23 @@ export default async function LandingPageRoute({
   const { slug } = await params;
   const { page, context } = await getLandingPageRouteData(slug);
 
-  if (!page) notFound();
+  if (!page) {
+    const guide = await getStudyAbroadGuideBySlug(slug);
+    if (guide) {
+      const related = await getRelatedContent({
+        countrySlug: guide.page.countrySlug,
+        courseSlug: guide.page.courseSlug,
+        excludeSlug: guide.slug,
+      });
+      return (
+        <>
+          <StudyAbroadGuidePage {...guide.page} />
+          <RelatedContentSection items={related} />
+        </>
+      );
+    }
+    notFound();
+  }
 
   if (!context.country || !context.course) notFound();
 

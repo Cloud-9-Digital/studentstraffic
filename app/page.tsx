@@ -10,7 +10,6 @@ import {
   Search,
   FileCheck,
   Users,
-  Star,
   CheckCircle2,
   Sparkles,
 } from "lucide-react";
@@ -32,6 +31,7 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { HeroSearch } from "@/components/site/hero-search";
 import { Button } from "@/components/ui/button";
+import { getCountries } from "@/lib/data/catalog";
 import {
   catalogReviewedAt,
   governancePublishedAt,
@@ -84,11 +84,9 @@ const startingPoints = [
   },
 ] as const;
 
-const homeStats = {
-  countriesCount: 5,
-} as const;
-
-export default function HomePage() {
+export default async function HomePage() {
+  const countries = await getCountries();
+  const countriesCount = countries.length;
   const path = "/";
   const structuredDataItems = [
     getBreadcrumbStructuredData([{ name: "Home", path }]),
@@ -159,7 +157,7 @@ export default function HomePage() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { value: "3,000+", label: "Students Successfully Placed", icon: Users },
-              { value: `${homeStats.countriesCount}+`, label: "Countries with Our Offices", icon: Globe },
+              { value: `${countriesCount}+`, label: "Countries with Our Offices", icon: Globe },
               { value: "6 Years", label: "Complete Student Support", icon: ShieldCheck },
               { value: "100%", label: "Free FMGE Coaching", icon: BookOpen },
             ].map(({ value, label, icon: Icon }) => (
@@ -176,6 +174,10 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+
+          <p className="mt-10 text-center text-sm text-muted-foreground md:text-base">
+            Every college listing includes verified fees, NMC recognition status, and honest reviews from real students — no hidden charges.
+          </p>
         </div>
       </section>
 
@@ -325,90 +327,6 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Students Trust Us */}
-      <section className="relative overflow-hidden py-16 md:py-24">
-        {/* Decorative shapes */}
-        <div className="absolute -right-24 -top-24 h-80 w-80 opacity-40">
-          <div className="size-full rounded-full border-2 border-dashed border-primary/30" />
-        </div>
-        <div className="absolute -bottom-16 -left-16 h-64 w-64 opacity-40">
-          <div className="size-full rounded-full border-2 border-dashed border-accent/30" />
-        </div>
-
-        <div className="container-shell relative px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-3xl font-bold tracking-tight text-heading md:text-4xl lg:text-5xl">
-              What makes us different
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-              A complete admission and student welfare partner, not just a listing platform
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-8 md:mt-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
-            <div className="relative min-h-[320px] overflow-hidden rounded-3xl border border-border/60 bg-muted/50 shadow-sm md:min-h-[420px]">
-              <Image
-                src="/images/home/why-students-trust-us.jpg"
-                alt="Students discussing MBBS admission guidance with a counsellor"
-                fill
-                sizes="(min-width: 1024px) 42vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                {
-                  icon: BookOpen,
-                  title: "Free FMGE Coaching",
-                  description: "Every student who joins through us receives complimentary FMGE coaching - a ₹2+ lakh value absolutely free.",
-                },
-                {
-                  icon: Globe,
-                  title: "Physical Offices Abroad",
-                  description: "We have dedicated offices and staff in every country we work with - Russia, Georgia, Vietnam, Kyrgyzstan, and more.",
-                },
-                {
-                  icon: ShieldCheck,
-                  title: "6-Year Student Support",
-                  description: "From admission to graduation, we take care of student wellbeing, academics, and career guidance throughout the MBBS journey.",
-                },
-                {
-                  icon: Users,
-                  title: "End-to-End Admission",
-                  description: "Complete admission process - counseling, documentation, visa assistance, and university coordination handled by our team.",
-                },
-                {
-                  icon: CheckCircle2,
-                  title: "Transparent Information",
-                  description: "Verified fees, NMC recognition status, and honest reviews from real students. No hidden charges or surprises.",
-                },
-                {
-                  icon: Star,
-                  title: "3,000+ Success Stories",
-                  description: "Thousands of Indian students are successfully studying MBBS abroad with our complete support and guidance.",
-                },
-              ].map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-2xl border border-border/60 bg-card p-5 transition-all hover:border-primary/30 hover:shadow-md"
-                >
-                  <div className="mb-4 inline-flex size-11 items-center justify-center rounded-xl bg-primary text-white">
-                    <item.icon className="size-5" />
-                  </div>
-                  <h3 className="font-display text-lg font-semibold tracking-tight text-heading">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>

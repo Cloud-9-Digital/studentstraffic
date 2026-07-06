@@ -14,6 +14,14 @@ export function getUniversityHref(universitySlug: string) {
   return `/university/${universitySlug}`;
 }
 
+export function getUniversityProgramHref(universitySlug: string, courseSlug: string) {
+  return `/university/${universitySlug}/programs/${courseSlug}`;
+}
+
+export function getStudyAbroadGuideHref(guideSlug: string) {
+  return `/${guideSlug}`;
+}
+
 export function getIndiaMbbsCollegesHref() {
   return "/india-mbbs-colleges";
 }

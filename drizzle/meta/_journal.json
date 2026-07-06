@@ -239,6 +239,20 @@
       "when": 1782996480000,
       "tag": "0048_blog_post_query_indexes",
       "breakpoints": true
+    },
+    {
+      "idx": 48,
+      "version": "7",
+      "when": 1783334969485,
+      "tag": "0049_add_study_abroad_guides",
+      "breakpoints": true
+    },
+    {
+      "idx": 49,
+      "version": "7",
+      "when": 1783337400000,
+      "tag": "0050_study_abroad_guides_facet_indexes",
+      "breakpoints": true
     }
   ]
 }

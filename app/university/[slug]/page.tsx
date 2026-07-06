@@ -49,6 +49,8 @@ import {
   getWdomsDirectoryEntryForUniversity,
 } from "@/lib/data/catalog";
 import { getSharedCityProfile } from "@/lib/data/city-content";
+import { getRelatedContent } from "@/lib/data/related-content";
+import { RelatedContentSection } from "@/components/site/related-content-section";
 import { getCityMedia, getCountryMedia } from "@/lib/location-media";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
@@ -76,10 +78,20 @@ import {
 } from "@/lib/utils";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
+// Cap build-time enumeration so build times stay bounded as the catalog grows —
+// this project uses Cache Components, where slugs outside generateStaticParams
+// already render on-demand by default (dynamicParams isn't available under
+// cacheComponents) and get cached by the existing cacheLife("hours")/cacheTag()
+// machinery below.
+const MAX_STATIC_UNIVERSITY_PARAMS = 300;
+
 export async function generateStaticParams() {
   const universities = await getUniversities();
+  const capped = [...universities]
+    .sort((a, b) => Number(b.featured) - Number(a.featured))
+    .slice(0, MAX_STATIC_UNIVERSITY_PARAMS);
   const params: { slug: string }[] = [];
-  for (const university of universities) {
+  for (const university of capped) {
     params.push({ slug: university.slug });
   }
   return ensureNonEmptyStaticParams(params, { slug: "__catalog-fallback__" });
@@ -468,10 +480,15 @@ async function UniversityLocationContextSection({
   );
 }
 
-async function getUniversityRelatedData(universitySlug: string, countrySlug: string) {
-  const [comparisonGuides, countryPrograms] = await Promise.all([
+async function getUniversityRelatedData(
+  universitySlug: string,
+  countrySlug: string,
+  courseSlug?: string,
+) {
+  const [comparisonGuides, countryPrograms, relatedContent] = await Promise.all([
     getComparisonGuidesForUniversity(universitySlug, 10),
     getProgramsForCountry(countrySlug),
+    getRelatedContent({ countrySlug, courseSlug, excludeSlug: universitySlug, limit: 6 }),
   ]);
 
   const otherCountryPrograms = Array.from(
@@ -482,7 +499,9 @@ async function getUniversityRelatedData(universitySlug: string, countrySlug: str
     ).values()
   ).slice(0, 12);
 
-  return { comparisonGuides, otherCountryPrograms };
+  const relatedGuides = relatedContent.filter((item) => item.type === "guide");
+
+  return { comparisonGuides, otherCountryPrograms, relatedGuides };
 }
 
 async function UniversityRelatedSection({
@@ -498,10 +517,10 @@ async function UniversityRelatedSection({
   courseSlug?: string;
   courseShortName?: string;
 }) {
-  const { comparisonGuides, otherCountryPrograms } =
-    await getUniversityRelatedData(universitySlug, countrySlug);
+  const { comparisonGuides, otherCountryPrograms, relatedGuides } =
+    await getUniversityRelatedData(universitySlug, countrySlug, courseSlug);
 
-  if (comparisonGuides.length === 0 && otherCountryPrograms.length === 0) {
+  if (comparisonGuides.length === 0 && otherCountryPrograms.length === 0 && relatedGuides.length === 0) {
     return null;
   }
 
@@ -530,6 +549,8 @@ async function UniversityRelatedSection({
           </CardCarousel>
         </div>
       )}
+
+      <RelatedContentSection items={relatedGuides} />
     </>
   );
 }

@@ -11,7 +11,10 @@ import {
   universityResearchDrafts,
   universityResearchQueue,
 } from "@/lib/db/schema";
+import { env } from "@/lib/env";
+import { syncTypesenseSearchIndex } from "@/lib/search/admin";
 import { createSlug } from "@/lib/utils";
+import { triggerRevalidate } from "./lib/trigger-revalidate";
 
 type DraftRecord = {
   draftId: number;
@@ -721,6 +724,15 @@ async function main() {
   console.log(`Published university: ${savedUniversity.slug}`);
   console.log(`Programs published: ${publishedPrograms}`);
   console.log(`Queue item updated: ${record.queueId}`);
+
+  if (env.hasTypesenseAdmin) {
+    const result = await syncTypesenseSearchIndex();
+    console.log(`Typesense search sync complete. Indexed ${result.imported} documents.`);
+  } else {
+    console.warn("Skipping Typesense sync: TYPESENSE_HOST/TYPESENSE_API_KEY are not configured.");
+  }
+
+  await triggerRevalidate(["catalog", "universities", "program-offerings"]);
 }
 
 main().catch((error) => {
