@@ -5,7 +5,6 @@ import { defaultSiteUrl } from "@/lib/constants";
 const envSchema = z.object({
   DATABASE_URL: z.string().url().optional(),
   NEXT_PUBLIC_SITE_URL: z.string().url().optional(),
-  NEXTAUTH_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_URL: z.string().url().optional(),
   CRM_LEAD_INTAKE_SECRET: z.string().min(1).optional(),
   GOOGLE_SHEETS_SPREADSHEET_ID: z.string().min(1).optional(),
@@ -49,7 +48,6 @@ function optionalEnv(value: string | undefined) {
 const parsedEnv = envSchema.safeParse({
   DATABASE_URL: optionalEnv(process.env.DATABASE_URL),
   NEXT_PUBLIC_SITE_URL: optionalEnv(process.env.NEXT_PUBLIC_SITE_URL),
-  NEXTAUTH_URL: optionalEnv(process.env.NEXTAUTH_URL),
   CRM_LEAD_INTAKE_URL: optionalEnv(process.env.CRM_LEAD_INTAKE_URL),
   CRM_LEAD_INTAKE_SECRET: optionalEnv(process.env.CRM_LEAD_INTAKE_SECRET),
   GOOGLE_SHEETS_SPREADSHEET_ID: optionalEnv(process.env.GOOGLE_SHEETS_SPREADSHEET_ID),
@@ -106,10 +104,6 @@ if (
 export const env = {
   databaseUrl: parsedEnv.data.DATABASE_URL,
   siteUrl: parsedEnv.data.NEXT_PUBLIC_SITE_URL ?? defaultSiteUrl,
-  nextAuthUrl:
-    parsedEnv.data.NEXTAUTH_URL ??
-    parsedEnv.data.NEXT_PUBLIC_SITE_URL ??
-    defaultSiteUrl,
   crmLeadIntakeUrl: parsedEnv.data.CRM_LEAD_INTAKE_URL,
   crmLeadIntakeSecret: parsedEnv.data.CRM_LEAD_INTAKE_SECRET,
   googleSheetsSpreadsheetId: parsedEnv.data.GOOGLE_SHEETS_SPREADSHEET_ID,

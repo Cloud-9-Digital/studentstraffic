@@ -2,7 +2,11 @@ import NextAuth from "next-auth";
 import type { NextAuthConfig } from "next-auth";
 import Google from "next-auth/providers/google";
 
+import { env } from "@/lib/env";
+
 export const authConfig = {
+  trustHost: true,
+  secret: env.nextAuthSecret,
   providers: [
     Google({
       clientId: process.env.GOOGLE_CLIENT_ID,

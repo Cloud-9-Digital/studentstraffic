@@ -33,8 +33,6 @@ const LOGIN_EMAIL_LIMIT = { limit: 5, windowMs: 15 * 60_000, blockMs: 30 * 60_00
 const LOGIN_IP_LIMIT = { limit: 12, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
 const LOGIN_COMBO_LIMIT = { limit: 6, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
 
-process.env.NEXTAUTH_URL ??= env.nextAuthUrl;
-
 export type AdminSession = Session & {
   user: NonNullable<Session["user"]> & {
     role: "admin";
