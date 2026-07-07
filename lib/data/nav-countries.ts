@@ -16,6 +16,17 @@ export type NavCountry = {
   description: string;
 };
 
+export type NavCountryRegionGroup = {
+  region: string;
+  countries: NavCountry[];
+};
+
+// Re-exported for backwards compatibility with existing server-side importers.
+// Client Components should import this directly from "@/lib/data/nav-constants"
+// instead, since this file also contains "use cache" functions that must never
+// be bundled into client code.
+export { FEATURED_NAV_COUNTRY_SLUG } from "@/lib/data/nav-constants";
+
 // Short nav descriptions keyed by slug; new countries fall back to first
 // sentence of their DB summary — no manual update needed.
 const NAV_DESCRIPTIONS: Record<string, string> = {
@@ -57,4 +68,46 @@ export async function getNavCountries(): Promise<NavCountry[]> {
     isoCode: getCountryFlagCode(r.slug),
     description: deriveDescription(r.slug, r.summary),
   }));
+}
+
+export async function getNavCountriesByRegion(): Promise<NavCountryRegionGroup[]> {
+  "use cache";
+  cacheLife("hours");
+  cacheTag("countries");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      slug: countriesTable.slug,
+      name: countriesTable.name,
+      summary: countriesTable.summary,
+      region: countriesTable.region,
+    })
+    .from(countriesTable)
+    .orderBy(asc(countriesTable.region), asc(countriesTable.name));
+
+  const groupsByRegion = new Map<string, NavCountry[]>();
+
+  for (const row of rows) {
+    const navCountry: NavCountry = {
+      slug: row.slug,
+      name: row.name,
+      href: getCountryHref(row.slug),
+      isoCode: getCountryFlagCode(row.slug),
+      description: deriveDescription(row.slug, row.summary),
+    };
+
+    const existing = groupsByRegion.get(row.region);
+    if (existing) {
+      existing.push(navCountry);
+    } else {
+      groupsByRegion.set(row.region, [navCountry]);
+    }
+  }
+
+  return Array.from(groupsByRegion.entries())
+    .map(([region, countries]) => ({ region, countries }))
+    .sort((left, right) => left.region.localeCompare(right.region));
 }

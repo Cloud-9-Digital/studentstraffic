@@ -5,8 +5,12 @@ import { Analytics } from "@vercel/analytics/next";
 
 import { AppChrome } from "@/components/app/app-chrome";
 import { NavCountriesClientProvider } from "@/components/app/nav-countries-client-provider";
+import { NavCoursesClientProvider } from "@/components/app/nav-courses-client-provider";
+import { NavUniversitiesClientProvider } from "@/components/app/nav-universities-client-provider";
 import { Providers } from "@/components/app/providers";
-import { getNavCountries } from "@/lib/data/nav-countries";
+import { getNavCountries, getNavCountriesByRegion } from "@/lib/data/nav-countries";
+import { getNavCourses } from "@/lib/data/nav-courses";
+import { getNavUniversitiesByCountry } from "@/lib/data/nav-universities";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
 import { JsonLd } from "@/components/shared/json-ld";
@@ -48,7 +52,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navCountries = await getNavCountries();
+  const [navCountries, navCountriesByRegion, navUniversitiesByCountry, navCourses] = await Promise.all([
+    getNavCountries(),
+    getNavCountriesByRegion(),
+    getNavUniversitiesByCountry(),
+    getNavCourses(),
+  ]);
 
   return (
     <html
@@ -63,8 +72,12 @@ export default async function RootLayout({
         <Providers>
           <Suspense><GoogleAnalytics /></Suspense>
           <Suspense><MetaPixel /></Suspense>
-          <NavCountriesClientProvider countries={navCountries}>
-            <AppChrome>{children}</AppChrome>
+          <NavCountriesClientProvider countries={navCountries} regionGroups={navCountriesByRegion}>
+            <NavCoursesClientProvider courses={navCourses}>
+              <NavUniversitiesClientProvider countryGroups={navUniversitiesByCountry}>
+                <AppChrome>{children}</AppChrome>
+              </NavUniversitiesClientProvider>
+            </NavCoursesClientProvider>
           </NavCountriesClientProvider>
         </Providers>
         <Analytics />
