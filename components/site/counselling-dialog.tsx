@@ -31,6 +31,7 @@ export function CounsellingDialog({
   countrySlug,
   courseSlug,
   notes,
+  showInterestSelects = false,
 }: {
   triggerContent: React.ReactNode;
   triggerClassName?: string;
@@ -46,7 +47,18 @@ export function CounsellingDialog({
   countrySlug?: string;
   courseSlug?: string;
   notes?: string;
+  /**
+   * When true, the form shows "Interested course" and "Interested country"
+   * selects (in place of the NEET field) that map to courseSlug/countrySlug.
+   * Because NEET is then not collected, the form is submitted with the
+   * non-mbbs variant so the server action does not require a NEET score.
+   */
+  showInterestSelects?: boolean;
 }) {
+  // With interest selects, NEET is not collected — submit as the non-mbbs
+  // variant so submitLeadAction does not require a NEET score. Callers that
+  // rely on the NEET (mbbs) flow simply leave showInterestSelects off.
+  const effectiveFormVariant = showInterestSelects ? "scholarship" : formVariant;
   const [open, setOpen] = useState(false);
   const contentId = useId();
 
@@ -90,33 +102,35 @@ export function CounsellingDialog({
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 duration-200" />
         <Dialog.Content
           id={contentId}
-          className="fixed left-1/2 top-1/2 z-50 max-h-[min(88vh,760px)] w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-xl bg-background p-6 shadow-dialog outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200"
+          className="fixed left-1/2 top-1/2 z-50 max-h-[min(92vh,780px)] w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl bg-background shadow-dialog outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200 lg:max-w-lg"
         >
-          <div className="mb-5 flex items-start justify-between gap-4">
-            <div>
+          <Dialog.Close className="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-black/6 hover:text-foreground">
+            <X className="size-4" />
+            <span className="sr-only">Close</span>
+          </Dialog.Close>
+
+          <div className="p-6 sm:p-7">
+            <div className="mb-6 flex flex-col gap-1.5 border-b border-border pb-5 pr-8">
               <Dialog.Title className="text-xl font-semibold text-heading">
                 {title}
               </Dialog.Title>
-              <Dialog.Description className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              <Dialog.Description className="text-sm leading-relaxed text-muted-foreground">
                 {description}
               </Dialog.Description>
             </div>
-            <Dialog.Close className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-black/6 hover:text-foreground">
-              <X className="size-4" />
-            </Dialog.Close>
-          </div>
 
-          <DialogLeadForm
-            key={`${ctaVariant}:${formVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}`}
-            ctaVariant={ctaVariant}
-            submitLabel={submitLabel}
-            countrySlug={countrySlug}
-            courseSlug={courseSlug}
-            formVariant={formVariant}
-            notes={notes}
-            embedded
-            stacked
-          />
+            <DialogLeadForm
+              key={`${ctaVariant}:${effectiveFormVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}`}
+              ctaVariant={ctaVariant}
+              submitLabel={submitLabel}
+              countrySlug={countrySlug}
+              courseSlug={courseSlug}
+              formVariant={effectiveFormVariant}
+              notes={notes}
+              showInterestSelects={showInterestSelects}
+              embedded
+            />
+          </div>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>

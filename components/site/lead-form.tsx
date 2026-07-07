@@ -1,13 +1,15 @@
 "use client";
 
 import type React from "react";
-import { useActionState, useId, useRef } from "react";
+import { useActionState, useId, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 import {
   type LeadFormState,
   submitLeadAction,
 } from "@/app/_actions/submit-lead";
+import { useNavCountries } from "@/components/app/nav-countries-client-provider";
+import { useNavCourses } from "@/components/app/nav-courses-client-provider";
 import { syncLeadTrackingFields } from "@/components/site/lead-tracking";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -73,6 +75,14 @@ export type LeadFormProps = {
   universitySlug?: string;
   embedded?: boolean;
   stacked?: boolean;
+  /**
+   * When true, renders visible "Interested course" and "Interested country"
+   * selects (wired to courseSlug/countrySlug) and hides the NEET field
+   * regardless of formVariant. Used by the counselling dialog. Other surfaces
+   * (mbbs/scholarship landing pages) leave this off so their behaviour — and
+   * the NEET field — are unchanged.
+   */
+  showInterestSelects?: boolean;
   className?: string;
   children?: React.ReactNode;
 };
@@ -91,6 +101,7 @@ export function LeadForm({
   universitySlug,
   embedded = false,
   stacked = false,
+  showInterestSelects = false,
   className,
   children,
 }: LeadFormProps) {
@@ -102,6 +113,18 @@ export function LeadForm({
   const formRef = useRef<HTMLFormElement>(null);
   const startedAtInputRef = useRef<HTMLInputElement>(null);
   const hasTrackedSubmitRef = useRef(false);
+
+  // Course/country options for the visible interest selects. Sourced from the
+  // same catalog data (via the nav client providers) used across the site.
+  const navCourses = useNavCourses();
+  const navCountries = useNavCountries();
+  // Selected interest values feed the existing courseSlug/countrySlug fields
+  // the server action already validates and stores. Seeded from props so any
+  // caller-provided context still preselects the right option.
+  const [selectedCourseSlug, setSelectedCourseSlug] = useState(courseSlug ?? "");
+  const [selectedCountrySlug, setSelectedCountrySlug] = useState(
+    countrySlug ?? ""
+  );
 
   const armStartedAt = () => {
     syncLeadTrackingFields(formRef.current);
@@ -120,8 +143,12 @@ export function LeadForm({
     trackLeadFormSubmit({
       source_path: sourcePath,
       cta_variant: ctaVariant,
-      course_slug: courseSlug,
-      country_slug: countrySlug,
+      course_slug: showInterestSelects
+        ? selectedCourseSlug || undefined
+        : courseSlug,
+      country_slug: showInterestSelects
+        ? selectedCountrySlug || undefined
+        : countrySlug,
       university_slug: universitySlug,
       page_path:
         typeof window !== "undefined" ? window.location.pathname : undefined,
@@ -150,8 +177,15 @@ export function LeadForm({
       <input type="hidden" name="clientContext" defaultValue="{}" />
       <input type="hidden" name="notes" value={notes ?? ""} />
       <input type="hidden" name="formVariant" value={formVariant} />
-      <input type="hidden" name="courseSlug" value={courseSlug ?? ""} />
-      <input type="hidden" name="countrySlug" value={countrySlug ?? ""} />
+      {/* When the visible interest selects are shown, they carry the
+          courseSlug/countrySlug names themselves — so we omit the hidden
+          inputs here to avoid duplicate form fields. */}
+      {!showInterestSelects ? (
+        <>
+          <input type="hidden" name="courseSlug" value={courseSlug ?? ""} />
+          <input type="hidden" name="countrySlug" value={countrySlug ?? ""} />
+        </>
+      ) : null}
       <input type="hidden" name="universitySlug" value={universitySlug ?? ""} />
       <input ref={startedAtInputRef} type="hidden" name="startedAt" defaultValue="0" />
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" />
@@ -196,7 +230,7 @@ export function LeadForm({
               name="userState"
               required
               defaultValue=""
-              className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-3 pr-9 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+              className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
             >
               <option value="" disabled className="text-muted-foreground">Select state</option>
               {INDIAN_STATES.map((s) => (
@@ -208,7 +242,54 @@ export function LeadForm({
         </div>
       </div>
 
-      {formVariant === "mbbs" ? (
+      {showInterestSelects ? (
+        <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
+          <div className="space-y-2">
+            <Label htmlFor={`${fieldPrefix}-course`}>Interested course</Label>
+            <div className="relative">
+              <select
+                id={`${fieldPrefix}-course`}
+                name="courseSlug"
+                value={selectedCourseSlug}
+                onChange={(event) => setSelectedCourseSlug(event.target.value)}
+                className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <option value="" className="text-muted-foreground">
+                  Select a course
+                </option>
+                {navCourses.map((course) => (
+                  <option key={course.slug} value={course.slug}>
+                    {course.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+            </div>
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor={`${fieldPrefix}-country`}>Interested country</Label>
+            <div className="relative">
+              <select
+                id={`${fieldPrefix}-country`}
+                name="countrySlug"
+                value={selectedCountrySlug}
+                onChange={(event) => setSelectedCountrySlug(event.target.value)}
+                className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <option value="" className="text-muted-foreground">
+                  Select a country
+                </option>
+                {navCountries.map((country) => (
+                  <option key={country.slug} value={country.slug}>
+                    {country.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+            </div>
+          </div>
+        </div>
+      ) : formVariant === "mbbs" ? (
         <div className="space-y-2">
           <Label htmlFor={`${fieldPrefix}-neet`}>NEET score</Label>
           <Input
