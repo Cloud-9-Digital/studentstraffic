@@ -1,0 +1,150 @@
+{
+  "countrySlug": "germany",
+  "schoolName": "UMCH – University Targu Mures Medical Campus Hamburg",
+  "cityName": "Hamburg",
+  "priority": "medium",
+  "officialWebsite": "https://edu.umch.de/en",
+  "programUrl": "https://edu.umch.de/en/the-medicine-degree-program",
+  "feesUrl": "https://edu.umch.de/en/tuition-fees",
+  "hostelUrl": "https://edu.umch.de/en/the-medicine-degree-program",
+  "admissionUrl": "https://edu.umch.de/en/the-medicine-degree-program",
+  "wdomsUrl": "https://www.wdoms.org/",
+  "reviewNotes": "Multi-source: official UMCH/UMFST site (edu.umch.de) + independent admissions aggregator (Medlink Students) + Wikipedia (parent university, George Emil Palade UMFST Targu Mures). Tuition fees, curriculum structure, accreditation and hostel details are corroborated across official and third-party sources. NMC/FMGE recognition status for this specific branch campus could not be independently corroborated on an official Indian regulator list as of research date, so it is NOT asserted; students are told to verify directly with NMC before applying. Established year reflects the 2019 founding of the Hamburg branch campus (UMCH), not the 1948 founding of the parent Romanian university (Targu Mures), which is stated separately in the narrative.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UMCH official site — University & facts",
+        "url": "https://edu.umch.de/en/university",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UMCH official site — The Medicine Degree Program (curriculum, admissions, FAQ)",
+        "url": "https://edu.umch.de/en/the-medicine-degree-program",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UMCH official site — Tuition Fees & Financing",
+        "url": "https://edu.umch.de/en/tuition-fees",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UMCH official site — The Campus (housing, sports, student life)",
+        "url": "https://edu.umch.de/en/the-campus",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UMCH official site — Teaching Hospitals and Practices",
+        "url": "https://edu.umch.de/en/teaching-hospitals-and-practices",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UMCH official news — Visit of Indian Consul General Soumya Gupta",
+        "url": "https://edu.umch.de/en/news/indian-consul-general-soumya-gupta-en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UMCH official news — UMFST-UMCH strengthens school partnerships in India",
+        "url": "https://edu.umch.de/en/news/umfst-umch-strengthens-school-partnerships-in-india-en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Medlink Students — University of Targu Mures Medical Campus Hamburg (UMCH) profile",
+        "url": "https://www.medlinkstudents.com/universities/university-targu-mures-medical-campus-hamburg/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia — George Emil Palade University of Medicine, Pharmacy, Science and Technology of Târgu Mureș",
+        "url": "https://en.wikipedia.org/wiki/George_Emil_Palade_University_of_Medicine,_Pharmacy,_Science_and_Technology_of_T%C3%A2rgu_Mure%C8%99",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "UMCH – University Targu Mures Medical Campus Hamburg",
+    "city": "Hamburg",
+    "type": "Public",
+    "establishedYear": 2019,
+    "officialWebsite": "https://edu.umch.de/en",
+    "bestFitFor": [
+      "Indian students who want an English-medium MBBS-equivalent medical degree taught in Germany rather than travelling to Eastern Europe or Central Asia",
+      "Students who want an EU-recognised medical degree with a clear route into German residency (Facharztausbildung) and a large, structured network of teaching hospitals",
+      "Students comfortable committing to learning German (to B2/C1 level) during their studies, since bedside teaching from year 3 onward is conducted in German/English",
+      "Applicants who prefer a rolling, non-grade-based admission process (interview + MCQ evaluation) over a single high-stakes entrance exam",
+      "Families who value a small-batch, high-touch teaching model (small groups, named-professor contact) over a large public-university lecture-hall format"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Medicine (6-Year Program, MD-equivalent, awarded by George Emil Palade UMFST Târgu Mureș)",
+        "officialProgramUrl": "https://edu.umch.de/en/the-medicine-degree-program",
+        "medium": "English (pre-clinical years 1-2 fully English; clinical bedside teaching years 3-6 in German/English at partner teaching hospitals)",
+        "durationYears": 6
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "UMCH – University Targu Mures Medical Campus Hamburg is the German branch campus of the George Emil Palade University of Medicine, Pharmacy, Science and Technology of Târgu Mureș (Romania), a state medical university founded in 1948. Opened in Hamburg-Bahrenfeld in 2019, UMCH delivers a six-year, English-medium Medicine program (360 ECTS) that follows the same curriculum and awards the same Romanian medical degree as the Târgu Mureș main campus, while all pre-clinical teaching (years 1-2) and much of the clinical theory takes place on the Hamburg campus. From the third year onward, students complete clinical rotations at one of more than 30 partner teaching hospitals across Germany (plus a small number in Spain), where bedside instruction is conducted in German and English — this is why UMCH strongly recommends building German language proficiency during the pre-clinical years. The university is listed in the World Directory of Medical Schools (WDOMS, FAIMER school ID F0000226), is accredited by the Romanian Agency for Quality Assurance in Higher Education (ARACIS) and by IAAR (recognised by the World Federation for Medical Education), and holds the highest \"H+\" status from Germany's anabin foreign-qualification database. Indian applicants should independently verify current NMC screening-test/FMGE eligibility for this specific branch campus before enrolling, since India-specific regulatory recognition was not found on an official government list at the time of this review.",
+    "campusLifestyle": "The Hamburg campus sits in Bahrenfeld's \"Science City\" district, alongside the University of Hamburg and the DESY research centre, and covers more than 6,000 sqm of teaching space including high-tech lecture halls, seminar rooms, wet labs for biology, chemistry and microscopy, and a virtual-reality Anatomage table for 3D anatomy study in place of (or alongside) traditional dissection. Classes are taught in small groups, and the university markets a high-touch model where professors know students individually. Students come from more than 50 nations, and the university runs an on-campus cafeteria (daily vegetarian/vegan option, sandwiches, salads, soup), a free two-year German-language course building toward B2/C1, mandatory sports classes in the first two years at a partner recreational facility (25m pool, gyms, spinning studio) with a student discount, a counselling and career-guidance department, an e-learning platform and a 24/7 digital library. A Medical Foundation Track (pre-med style preparatory course) is offered for students who want extra preparation before the entrance evaluation.",
+    "cityProfile": "Hamburg is Germany's second-largest city and a major port on the Elbe River, historically part of the Hanseatic League and today one of the country's wealthiest and greenest metropolitan areas, with more than 100,000 university students citywide. The city has extensive parks (including the central Planten un Blomen), an active international and English-speaking community, and strong public transport connectivity. The UMCH campus is specifically located in the Bahrenfeld/Altona area, described by independent sources as one of the safer, greener parts of the city with good access to the rest of Hamburg by car and public transit. As a large Western European capital-scale city, Hamburg offers considerably more established multicultural and religious infrastructure (mosques, halal and vegetarian restaurants, established South Asian and international communities) than smaller regional German university towns.",
+    "clinicalExposure": "Clinical training starts formally in year 3 and runs through year 6, with 8 weeks of clinical placement in year 3 rising to 12-16 weeks per year in years 4-6, delivered through a network of more than 30 teaching hospitals and over 100 teaching practices across Germany (plus limited placements in Spain). Students choose their preferred teaching hospital in year 2, with placement decided by academic ranking where a hospital is oversubscribed; hospitals are spread nationally, so many students can be placed close to a preferred home region. Core clinical rotations cover cardiology, general surgery, orthopedics, pediatrics, neurology, ophthalmology, ENT, gynecology, urology, oncology and emergency medicine, alongside imaging modalities (CT, ultrasound, X-ray). Bedside teaching in these hospitals is conducted in German and English, which is the reason the university requires building German proficiency toward B2 by the start of year 3 and recommends C1-level medical German by graduation for anyone planning to practise in Germany.",
+    "hostelOverview": "UMCH does not operate its own on-campus dormitory; instead it partners with private student-housing providers — Uninest (Navale residence, 328 fully furnished studio apartments with private kitchen/kitchenette), THE FIZZ in Altona-Nord (roof terrace, lobby, movie lounge, community areas) and Urban Living in Ottensen (apartments with private kitchen/bathroom and balcony or terrace) — plus the accommodation platform HousingAnywhere, on which enrolled UMCH students receive priority \"VIP\" status. Independent sources describe UMCH-affiliated student housing in the Hamburg-Wandsbek area as modern studio-style apartments with private bathrooms and small kitchens, generally located 20-45 minutes from campus by public transport. Because this is privately brokered housing rather than a university-run hostel, students should confirm current availability, exact monthly rent and lease terms directly with UMCH's housing partners before travel.",
+    "indianFoodSupport": "UMCH's own cafeteria offers a limited daily menu (two main dishes, always including one vegetarian/vegan option, plus sandwiches, salads and soup) rather than dedicated Indian catering. However, Hamburg is a large, diverse metropolitan city with an established South Asian population and a growing number of Indian, other South Asian and halal/vegetarian restaurants and grocery stores, particularly in areas with significant international communities — considerably more food diversity than is typically available in smaller German university towns. Vegetarian and halal dining options are explicitly available both on campus and across the city. Students who need daily home-style Indian food should expect to cook for themselves using ingredients from Asian/Indian grocery stores in Hamburg, supplemented by the city's Indian restaurants for occasional dining out; UMCH does not publish a dedicated Indian-mess or Indian-catering service.",
+    "safetyOverview": "Hamburg is consistently described by independent education-abroad sources as one of Germany's safer and greener major cities, and the Bahrenfeld/Altona district where the UMCH campus sits is specifically noted for its safety and quality of living environment. Germany as a whole has a well-developed public safety, healthcare and emergency-response infrastructure, and international students are required to hold German student health insurance for the duration of study. As with any large city, students should take ordinary personal-safety precautions (secure accommodation, standard awareness while travelling at night, registering their address with local authorities as required for the residence permit). No specific safety incidents or advisories tied to the UMCH campus were identified in this review; students should still consult current government travel advisories before departure.",
+    "studentSupport": "UMCH provides a Department of Counseling and Career Guidance (DCPG) offering psychological and career support, an admissions team that runs interviews and evaluations online (no travel to Hamburg required to apply), a free German-language course track designed to bring students to B2 within two years and toward C1 with medical-terminology focus, and direct outreach to Indian and other international school communities through campus visits and \"Med Insights\" information sessions for Indian students and parents. The university has hosted the Indian Consul General on campus and runs India-focused counsellor and school-outreach tours, indicating an active, ongoing India recruitment and support relationship, though this is separate from confirmation of India's medical regulator (NMC) recognising the specific Hamburg-taught degree — that should be verified independently. Support for visa and residence-permit processes (documentation, invitation letters) is also offered through the admissions office.",
+    "whyChoose": [
+      "English-medium, six-year Medicine program awarded by a 1948-founded Romanian state medical university (George Emil Palade UMFST Târgu Mureș), taught on a purpose-built campus in Germany rather than Eastern Europe",
+      "No entrance-exam cutoff tied to school grades for EU-recognised diploma holders — admission is via an online motivation interview plus a biology/chemistry/general-knowledge multiple-choice evaluation, with results in 48 hours",
+      "Large, structured clinical network of 30+ teaching hospitals and 100+ teaching practices across Germany (plus Spain) for years 3-6, offering broad specialty exposure and hospitals distributed across multiple German regions",
+      "Listed in the World Directory of Medical Schools (WDOMS/FAIMER) and accredited by ARACIS and IAAR (WFME-recognised), giving the degree a documented, verifiable accreditation trail",
+      "Location in Hamburg — a major, cosmopolitan German city with strong international community infrastructure, extensive public transport, and considerably more diversity/amenities than smaller German university towns",
+      "Built-in free German-language pathway (toward B2/C1) integrated into the program, directly addressing the language requirement for later clinical work and German medical licensing"
+    ],
+    "thingsToConsider": [
+      "Tuition is significant: EUR 14,900/semester for EU/EEA/UK/Swiss nationals or EUR 17,400/semester for all other nationals (including Indian applicants) for years 1-6 in Hamburg, plus a one-time EUR 595 application fee and EUR 4,500 enrollment fee — students should budget for the full six years and confirm current rates directly with UMCH before applying",
+      "German-language proficiency is not optional in practice: bedside/clinical teaching from year 3 onward is conducted in German/English, and B2 German is expected by the start of year 3, with C1 medical German recommended for anyone pursuing licensure in Germany afterward",
+      "This is a private branch campus (operated by CPE Europe GmbH) of a Romanian public university, not a German public university in the traditional sense — degrees are issued by and enrollment is formally with George Emil Palade UMFST Târgu Mureș",
+      "NMC/FMGE recognition status specifically for UMCH Hamburg graduates could not be independently confirmed against an official Indian regulator list as of this review; Indian applicants must verify current NMC screening-test eligibility for this exact institution before committing",
+      "Housing is arranged through private partner residences (Uninest, THE FIZZ, Urban Living, HousingAnywhere) rather than a university-run hostel, so costs and availability can vary and should be confirmed directly closer to enrollment",
+      "Students who complete only years 1-2 in Hamburg and transfer the remainder to the Târgu Mureș campus in Romania (a lower-cost option from year 3 at EUR 3,000/semester) should plan for relocation to Romania partway through the degree"
+    ],
+    "faq": [
+      {
+        "question": "Is UMCH – University Targu Mures Medical Campus Hamburg a recognised medical university?",
+        "answer": "UMCH is the Hamburg branch of George Emil Palade UMFST Târgu Mureș, a Romanian state medical university founded in 1948. The Hamburg program is listed in the World Directory of Medical Schools (WDOMS, FAIMER school ID F0000226), is accredited by Romania's ARACIS (a full ENQA member) and by IAAR (WFME-recognised), and holds the highest \"H+\" status from Germany's anabin foreign-qualification database. Students should still independently verify recognition status with any specific licensing authority (including India's NMC) relevant to where they intend to practise."
+      },
+      {
+        "question": "What language is the MBBS-equivalent Medicine program taught in at UMCH Hamburg?",
+        "answer": "Pre-clinical years 1-2 are taught fully in English on the Hamburg campus. From year 3 onward, clinical bedside teaching at partner teaching hospitals is conducted in German and English, so UMCH expects students to reach roughly B2-level German by the start of year 3, building toward C1 (with medical terminology) by graduation."
+      },
+      {
+        "question": "What are the tuition fees for Indian students at UMCH Hamburg?",
+        "answer": "As of this review, applicants from outside the EU/EEA/UK/Switzerland (including India) pay EUR 17,400 per semester for years 1-6 in Hamburg, plus a one-time EUR 595 application fee and EUR 4,500 enrollment fee. A lower-cost pathway exists for students who complete years 1-2 in Hamburg and transfer the remaining years to the Târgu Mureș campus in Romania (EUR 3,000/semester from year 3). Students should confirm current fees directly with UMCH's admissions office, since fees can change year to year."
+      },
+      {
+        "question": "Is NMC/FMGE recognition confirmed for UMCH Hamburg graduates?",
+        "answer": "This could not be independently confirmed against an official NMC list at the time of this review. UMCH's own materials reference alignment with \"the framework of the National Medical Commission\" in its India outreach communications, and the university is WDOMS-listed (a baseline FMGE eligibility requirement), but Indian applicants must verify current NMC screening-test/FMGE eligibility for this specific institution directly with NMC before enrolling."
+      },
+      {
+        "question": "Where do UMCH students live in Hamburg?",
+        "answer": "UMCH does not run its own hostel. It partners with private student-housing providers (Uninest, THE FIZZ, Urban Living) and the platform HousingAnywhere, offering fully furnished studio apartments generally 20-45 minutes from campus by public transport. Students should confirm current rents and availability directly with these partners, as pricing is not fixed by the university."
+      },
+      {
+        "question": "How does clinical training work after the Hamburg years?",
+        "answer": "From year 3, students undertake clinical placements at one of more than 30 partner teaching hospitals across Germany (with a few in Spain), chosen partly by student preference and partly by academic ranking. Clinical placement length grows from 8 weeks in year 3 to 12-16 weeks per year in years 4-6, covering major specialties such as internal medicine, surgery, pediatrics, neurology, gynecology, urology and emergency medicine."
+      },
+      {
+        "question": "What are the admission requirements for UMCH Hamburg?",
+        "answer": "Applicants need a higher-education-entrance-qualifying school diploma (e.g., Abitur, International Baccalaureate, American High School Diploma, or A-Levels) and complete an online application, a 15-20 minute motivation-based interview, and a 90-minute, 75-question multiple-choice evaluation (biology, chemistry, general knowledge, equally weighted). No minimum grade average is required for EU-recognised diplomas; results are typically issued within 48 hours."
+      }
+    ]
+  }
+}

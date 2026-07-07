@@ -1,0 +1,241 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "Lakehead University",
+  "cityName": "Thunder Bay",
+  "priority": "medium",
+  "officialWebsite": "https://www.lakeheadu.ca/",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Lakehead University - Bachelor of Science in Nursing (BScN) - Four-Year Program (official; overview, clinical practice structure, NCLEX-RN eligibility, career paths, FAQ)",
+        "url": "https://www.lakeheadu.ca/programs/departments/nursing/BScN_programs/bscn4-program",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University - BScN Undergraduate Programs (official; program list, School of Nursing contact)",
+        "url": "https://www.lakeheadu.ca/programs/departments/nursing/BScN_programs",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University - International Student Admission Requirements (official; general eligibility, 70% overall average, WES/ICAP, application process)",
+        "url": "https://www.lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University - Undergraduate Admission Requirements by Country: India (official; accepted 12th-grade credentials - State Board, CBSE, ICSE)",
+        "url": "https://www.lakeheadu.ca/studentcentral/applying/general-admission-requirements/international-student/admission-requirements-by-country",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University - English Language Proficiency Requirements (official; confirms IELTS 7.0/TOEFL 103 minimums specifically for Nursing, higher than the general-program minimum)",
+        "url": "https://www.lakeheadu.ca/studentcentral/applying/english-language-proficiency-requirements",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University - Future International Students: Dates and Fees (official; September-only undergraduate intake, Nursing excluded from January intake, application/document fees, UHIP cost, housing deadlines)",
+        "url": "https://www.lakeheadu.ca/international/future/dates-and-fees",
+        "kind": "official-admissions",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University - Newly Accepted International Students: Tuition & Fees (official; UHIP cost 2026-2027, residence/meal-plan fee structure, fee calculator guidance)",
+        "url": "https://www.lakeheadu.ca/international/newly-accepted/tuition-fees",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University - Undergraduate Fees List 2025-2026 (official fee schedule; confirms international undergraduate tuition bands roughly CAD 29,800-30,300/year across most Thunder Bay Honours programs, though the standalone BScN program is not broken out as its own listed row)",
+        "url": "https://www.lakeheadu.ca/students/finances/student-fees/fees/undergraduate-fees/2025-2026",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University - Housing & Accommodations for Future International Students (official; residence guarantee deadlines, off-campus housing guidance, temporary accommodation options)",
+        "url": "https://www.lakeheadu.ca/international/future/housing",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University news - \"Lakehead University announces four-year standalone nursing program for fall 2023\" (official; program relaunch date, CASN-accredited curriculum, Northern/rural/Indigenous health focus, enrolment figures)",
+        "url": "https://www.lakeheadu.ca/about/news-and-events/news/archive/2022/node/74018",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lakehead University news - \"Lakehead University School of Nursing Receives Seven-Year CASN Accreditation\" (official; independent-body accreditation confirmation)",
+        "url": "https://www.lakeheadu.ca/about/news-and-events/news/archive/2021/node/63983",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Lakehead University (founding history 1946 Lakehead Technical Institute to 1965 university charter, public status, enrolment, faculties, Bora Laskin Faculty of Law, Northern Ontario School of Medicine partnership)",
+        "url": "https://en.wikipedia.org/wiki/Lakehead_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Thunder Bay (city profile, population, Lake Superior location, economic history)",
+        "url": "https://en.wikipedia.org/wiki/Thunder_Bay",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "World Population Review - Thunder Bay Population 2026 (independent corroboration of 2021 census population ~108,843 and 2024 estimate ~113,834)",
+        "url": "https://worldpopulationreview.com/cities/canada/thunder-bay",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "TBNewsWatch - \"Thunder Bay tops violent crime chart in 2024\" (independent local-news corroboration of Statistics Canada's 2024 Crime Severity Index findings for Thunder Bay)",
+        "url": "https://www.tbnewswatch.com/local-news/thunder-bay-tops-violent-crime-chart-in-2024-10985140",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Statistics Canada - \"Police-reported Crime Severity Index and crime rate, by census metropolitan area, 2024\" (official government data table; primary source for Thunder Bay's crime severity ranking)",
+        "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250722/t004a-eng.htm",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "CBC News - \"Thunder Bay, Ont., once again reports the highest homicide rate in Canada\" (independent national-news corroboration)",
+        "url": "https://www.cbc.ca/news/canada/thunder-bay/thunder-bay-homicide-rate-9.7031472",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Thunder Bay Regional Health Sciences Centre - official site (395-bed acute care hospital serving Northwestern Ontario; primary teaching/clinical-placement hospital referenced for Lakehead health-science students)",
+        "url": "https://tbrhsc.net/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Thunder Bay Regional Health Sciences Centre (395 acute-care beds, formed 2004, one of Canada's busiest emergency departments)",
+        "url": "https://en.wikipedia.org/wiki/Thunder_Bay_Regional_Health_Sciences_Centre",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Vedic Cultural Centre (ISKCON) Thunder Bay - official site (Hindu temple, weekly vegetarian feast programs, registered non-profit serving the local Indian/Hindu community)",
+        "url": "https://www.vccthunderbay.com/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Chronicle Journal - \"Gurdwara open to people of all faiths\" (independent local-news corroboration of the Thunder Bay Sikh Society's Gurdwara, opened on Spring Street)",
+        "url": "https://www.chroniclejournal.com/news/local/gurdwara-open-to-people-of-all-faiths/article_a5c9e834-8a7b-11ee-a18f-5b20e6933511.html",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "TBNewsWatch - \"Thunder Bay Sikh Society celebrates opening of new Gurdwara\" (independent local-news corroboration, additional detail on community and langar/free-food tradition)",
+        "url": "https://www.tbnewswatch.com/local-news/thunder-bay-sikh-society-celebrates-opening-of-new-gurdwara-7854203",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "College of Nurses of Ontario - Outside Canada registration guides (official regulator; clarifies CNO/NCLEX-RN is the Ontario licensing pathway for BScN graduates, distinct from India's Indian Nursing Council)",
+        "url": "https://www.cno.org/become-a-nurse/registration-guides/outside-canada",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Lakehead University",
+    "city": "Thunder Bay",
+    "type": "Public",
+    "establishedYear": 1965,
+    "officialWebsite": "https://www.lakeheadu.ca/",
+    "bestFitFor": [
+      "Indian students seeking a direct-entry, internationally open four-year Bachelor of Science in Nursing (BScN) that leads to NCLEX-RN eligibility and Ontario RN registration, without requiring a separate pre-professional admission year",
+      "Students comfortable with a smaller Northern Ontario city (Thunder Bay, population roughly 108,000-114,000) rather than a large metro, in exchange for a close-knit campus and a CASN-accredited curriculum with clinical practice built into every year of study",
+      "Students who want early, incremental clinical exposure (placements from Year 1 onward, at Thunder Bay Regional Health Sciences Centre and other Northwestern Ontario sites) rather than clinical training concentrated only in the final years",
+      "Applicants who can meet Lakehead's Nursing-specific English-proficiency bar, which is set higher than most other programs (IELTS 7.0 overall or TOEFL iBT 103), and who are applying for a September start, since Nursing has no January intake"
+    ],
+    "recognitionBadges": ["CASN-accredited BScN curriculum", "College of Nurses of Ontario (CNO) NCLEX-RN eligible upon graduation"],
+    "recognitionLinks": [
+      "https://www.lakeheadu.ca/about/news-and-events/news/archive/2021/node/63983",
+      "https://www.lakeheadu.ca/programs/departments/nursing/BScN_programs/bscn4-program"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "Bachelor of Science in Nursing (BScN) - Four-Year Program",
+        "officialProgramUrl": "https://www.lakeheadu.ca/programs/departments/nursing/BScN_programs/bscn4-program",
+        "medium": "English (Nursing applicants must meet Lakehead's higher Nursing-specific English-proficiency minimums: IELTS Academic overall 7.0 with no band below 6.5/7.0 per component, or TOEFL iBT 103 with component minimums of Writing 28, Speaking 28, Reading 24, Listening 24; these are higher than Lakehead's general-program minimums of IELTS 6.5/TOEFL 80)",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "licenseExamSupport": [
+          "National Council Licensure Examination for Registered Nurses (NCLEX-RN), followed by registration with the College of Nurses of Ontario (CNO)"
+        ],
+        "feeNotes": "Lakehead's own 2025-2026 undergraduate fee schedule lists international tuition at roughly CAD 29,800-30,300 per year across nearly all Thunder Bay Honours programs (e.g., Year 1 Arts & Science international tuition is CAD 30,236; Year 4 is CAD 29,826), but the standalone four-year BScN program is not broken out as its own named row in that public fee table, so an exact Nursing-specific tuition figure could not be independently confirmed at the time of research. On top of tuition, international undergraduates pay compulsory ancillary fees (roughly CAD 1,100-1,500/year depending on program and year) and mandatory University Health Insurance Plan (UHIP) coverage - CAD 948 for 12 months for a September start in 2026-2027. Applicants should use Lakehead's official Cost Estimator/fee calculator tool, filtering for the Nursing program and their specific year, to get a current, program-specific total before budgeting.",
+        "sourceUrls": [
+          "https://www.lakeheadu.ca/programs/departments/nursing/BScN_programs/bscn4-program",
+          "https://www.lakeheadu.ca/students/finances/student-fees/fees/undergraduate-fees/2025-2026",
+          "https://www.lakeheadu.ca/international/future/dates-and-fees"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Lakehead University is a public research university that traces its roots to Lakehead Technical Institute (established 1946) and received its university charter in 1965; its main campus sits in Thunder Bay, Ontario, on the shore of Lake Superior, with a second campus in Orillia. For Indian students interested in nursing, Lakehead's most directly relevant program is the four-year Bachelor of Science in Nursing (BScN), a standalone program that resumed intake in fall 2023 after Lakehead's School of Nursing - which has taught nursing since 1965 - redesigned it as an independent degree with a curriculum fully accredited by the Canadian Association of Schools of Nursing (CASN). The program builds in clinical practice from Year 1 through Year 4, with a focus on Northern, rural, and Indigenous health issues reflecting Thunder Bay's role as the main hospital and health-care hub for Northwestern Ontario. International applicants are considered on the same general admission framework as other Lakehead international students (minimum 70% overall average, program prerequisites in English, Biology, Chemistry, and Math at a minimum of 60% each, and an 80% admission average for competitive entry), but must clear a higher English-proficiency bar specific to Nursing (IELTS 7.0 or TOEFL iBT 103) and can only start in September, since Nursing is excluded from Lakehead's limited January undergraduate intake. Graduates become eligible to write the NCLEX-RN licensing exam and register with the College of Nurses of Ontario (CNO) - a Canadian licensing pathway distinct from India's Indian Nursing Council (INC), so students planning an eventual return to Indian practice should separately verify INC recognition of a Canadian nursing degree.",
+    "campusLifestyle": "Lakehead's Thunder Bay campus enrolls roughly 7,900-9,700 students (figures vary by year and whether full-time-equivalent counts are used) across nine faculties, including Business Administration, Engineering, the Bora Laskin Faculty of Law, and the Faculty of Health and Behavioural Sciences that houses the School of Nursing. The School of Nursing operates four dedicated nursing labs plus a nursing simulation lab on campus, supporting the incremental, every-year clinical model the BScN is built around. International students made up about 4.4% of Lakehead's undergraduate population as of the most recently published demographic breakdown, smaller than at some larger Canadian universities, which typically means a more intimate cohort experience. The Lakehead University Student Union (LUSU) runs student clubs, an on-campus pub (The Outpost) and coffeehouse, and the student newspaper (The Argus); Lakehead also fields varsity teams (the Lakehead Thunderwolves) in U Sports/Ontario University Athletics across sports including hockey, basketball, and Nordic skiing, with two main athletic facilities (the Fieldhouse and the Hangar) on the Thunder Bay campus.",
+    "cityProfile": "Thunder Bay is the largest city in Northwestern Ontario, with a 2021 census population of about 108,843 (independent 2024 estimates put it closer to 113,800) and a census metropolitan area population of roughly 123,000. It sits on the northern shore of Lake Superior, the world's largest freshwater lake by surface area, and has historically been a major grain-shipping and transportation hub; more recently its economy has diversified into a health-care and education-driven \"knowledge economy,\" anchored partly by Lakehead and the Northern Ontario School of Medicine's western campus. An honest and important caveat for prospective students: Statistics Canada's 2024 Crime Severity Index data (independently reported by CBC News and TBNewsWatch) placed Thunder Bay's violent-crime severity index at more than double the national average - the highest of the 42 Canadian metropolitan areas measured - while its overall (combined violent and non-violent) crime severity ranked sixth-highest nationally. This does not mean typical day-to-day student and campus life is unsafe, but it is a materially higher big-picture safety statistic than most other Canadian university cities, and students and families should weigh it honestly alongside the program's academic strengths.",
+    "clinicalExposure": "Clinical practice is built into every year of the BScN, starting with foundational relational-practice placements in long-term care during Year 1, moving through medical-surgical adult care in Year 2, nursing specialties (maternal-infant, child-youth, mental health and addictions, older-adult care) in Year 3, and three six-week clinical placements in Year 4 covering acute care, community, and other sectors, with at least one of those three placements required to take place in the Thunder Bay region. The primary regional clinical site is Thunder Bay Regional Health Sciences Centre, a roughly 395-bed acute-care hospital serving all of Northwestern Ontario with one of the busiest emergency departments in Canada; the hospital's own materials describe supporting the clinical-placement needs of more than 1,200 students per year across 25-plus health-related disciplines, including nursing. Fourth-year students can also seek out-of-town placements elsewhere in Canada or internationally, though all costs for those optional placements are the student's own responsibility. An \"Early Finisher\" option lets qualifying Year 4 students begin their final clinical preceptorship six weeks early, potentially completing all degree requirements by mid-February rather than at the normal spring finish.",
+    "hostelOverview": "Lakehead's Thunder Bay residence system includes roughly 1,196 beds across residence halls, apartments, and townhouses in a residence village on the banks of the McIntyre River, a five-minute walk from academic buildings, with three on-site cafeteria/dining halls. Lakehead states it offers guaranteed on-campus housing to students (not limited to domestic students) who submit their residence application and required down payment by the relevant deadline - June 1 for a September start - though space beyond that deadline is offered only if still available. Lakehead does not offer on-campus housing for students with families. Students who do not secure or prefer residence can pursue off-campus rentals, and Lakehead explicitly advises international students to view off-campus accommodation in person (or have a trusted contact do so) before signing any lease, and to arrive in Thunder Bay as early as possible if house-hunting, since accommodation near campus is described as being in high demand and harder to find after the first week of September. For students who arrive without confirmed housing, Lakehead lists temporary options such as local hotels/motels (roughly CAD 90-170/night) or hostels (roughly CAD 40-100/night).",
+    "indianFoodSupport": "Thunder Bay has an established, multi-faith Indian-heritage community. The Vedic Cultural Centre, a registered non-profit ISKCON-affiliated Hindu temple, runs weekly vegetarian Sunday Feast programs and stocks puja items and other devotional goods for the local Hindu community. The Thunder Bay Sikh Society operates a Gurdwara (Sikh temple) on Spring Street - reported by both the Chronicle Journal and TBNewsWatch as opening to the public in a former church building - which, in line with Sikh tradition, serves free food (langar) to visitors of all faiths and backgrounds. Together these communities point to an organized, if modest-sized, South Asian cultural and religious support network in a city of Thunder Bay's size, though students should expect a smaller community than in major Canadian metros like Toronto or Vancouver, and should independently confirm current Indian grocery and restaurant options locally before arrival.",
+    "safetyOverview": "Lakehead's campus offers standard Canadian-university safety and student-support infrastructure through its Thunder Bay residence and student-services systems. At a city level, prospective students need to weigh a serious, well-corroborated caveat: Statistics Canada's official 2024 Crime Severity Index data (independently reported by CBC News and TBNewsWatch, drawing on the same government dataset) shows Thunder Bay recording the highest violent-crime severity index of any of the 42 Canadian census metropolitan areas measured that year - more than double the national average - alongside CBC's continued reporting of Thunder Bay having Canada's highest homicide rate in recent years. Thunder Bay's overall (combined violent and non-violent) Crime Severity Index ranked sixth-highest nationally in the same 2024 data. This is a materially more serious safety statistic than most other Canadian university cities carry, and Indian applicants and their families should factor it into their decision honestly, even though everyday campus life is generally organized around standard safety practices and most crime is concentrated in specific circumstances rather than spread evenly across all city areas and times.",
+    "studentSupport": "International students at Lakehead can access dedicated International Student Services, general orientation programming (including a Fall International Welcome Day held each September at the Thunder Bay campus), and academic advising through the School of Nursing and the Faculty of Health and Behavioural Sciences specifically. Lakehead's application process requires international applicants to submit official transcripts and, where required, a WES/ICAP credential evaluation and English-language proficiency test results; nursing transfer applicants specifically must also submit a consent form and reference letter. Students can use Lakehead's online Cost Estimator tool to model tuition, ancillary fees, housing, food, and UHIP costs before committing, and can direct fee-specific questions to the university's International Accounts Officer. Given Lakehead's comparatively large Indigenous student population and Indigenous-focused programming (including the Indigenous Nursing Entry Program and dedicated Indigenous Student Services Centre), the campus also has established infrastructure for culturally specific student supports, though these programs are structured primarily around Indigenous student needs rather than international/Indian students specifically.",
+    "whyChoose": [
+      "A standalone, CASN-accredited four-year BScN (relaunched fall 2023) with clinical practice built into every year of the program, rather than clinical exposure concentrated only in later years",
+      "Direct-entry structure: unlike some Canadian nursing programs that require a separate competitive pre-professional year before admission to the professional program, Lakehead's four-year BScN is a single continuous degree",
+      "Primary clinical placement access to Thunder Bay Regional Health Sciences Centre, a roughly 395-bed regional hospital serving all of Northwestern Ontario with one of the busiest emergency departments in the country",
+      "An \"Early Finisher\" option that lets qualifying final-year students complete their degree up to six weeks ahead of the standard schedule",
+      "An established, multi-faith Indian-heritage community in Thunder Bay, including an ISKCON-affiliated Hindu temple (Vedic Cultural Centre) and a Sikh Gurdwara offering free community meals (langar), despite the city's smaller overall size"
+    ],
+    "thingsToConsider": [
+      "Statistics Canada's official 2024 Crime Severity Index data shows Thunder Bay with the highest violent-crime severity index of any Canadian metropolitan area measured that year (more than double the national average), and CBC News has separately and repeatedly reported Thunder Bay as recording Canada's highest homicide rate - a materially more serious city-safety statistic than most other Canadian university towns, and one that Indian applicants and families should weigh carefully",
+      "Nursing has a higher English-proficiency bar than most other Lakehead programs (IELTS Academic 7.0 overall / TOEFL iBT 103), rather than the general-program minimum of IELTS 6.5 / TOEFL 80",
+      "Nursing is excluded from Lakehead's limited January undergraduate intake, so international applicants must plan around a September-only start for this program",
+      "The publicly posted 2025-2026 undergraduate fee schedule does not break out a Nursing-specific tuition row, so applicants cannot get an exact BScN tuition figure from that public table alone and must use Lakehead's Cost Estimator/fee calculator (filtered to Nursing) or contact the university directly for a confirmed number before budgeting",
+      "Thunder Bay is a smaller, more remote Northern Ontario city than Toronto, Vancouver, or Montreal, meaning fewer direct flight options, a smaller South Asian community overall, and a more limited off-campus rental market that Lakehead itself describes as competitive and difficult to secure after early September",
+      "The College of Nurses of Ontario (CNO)/NCLEX-RN licensing pathway that Lakehead graduates follow is a Canadian registration route, separate from India's Indian Nursing Council (INC) - students who may want to eventually practise nursing in India should independently verify INC's recognition requirements for a Canadian BScN before enrolling"
+    ],
+    "faq": [
+      {
+        "question": "Is Lakehead University's BScN program open to international students from India?",
+        "answer": "Yes. Lakehead considers international applicants under its general international-admission framework (minimum 70% overall average, program-specific prerequisites in English, Biology, Chemistry, and Math at a minimum of 60% each, and a competitive admission average of at least 80% for Nursing), and Lakehead's own India-specific admission page lists accepted Indian credentials, including State Board Higher Secondary Certificates, the CBSE All India/Delhi Senior School Certificate, and the ICSE Indian School Certificate."
+      },
+      {
+        "question": "What English-language test scores does a Nursing applicant need?",
+        "answer": "Lakehead sets a higher English-proficiency bar for Nursing (as well as its Juris Doctor and Consecutive Education programs) than for most other programs: IELTS Academic overall 7.0 with no individual band below roughly 6.5-7.0 per Lakehead's published component minimums, or TOEFL iBT 103 with component minimums of Writing 28, Speaking 28, Reading 24, and Listening 24. This is notably higher than Lakehead's general-program minimum of IELTS 6.5 / TOEFL 80."
+      },
+      {
+        "question": "Can an international student start the BScN program in January?",
+        "answer": "No. Lakehead's own international dates-and-fees page explicitly excludes Nursing from its limited January undergraduate intake (alongside programs like Consecutive Education, Environmental Management, and Forestry), so Nursing applicants must plan for a September start."
+      },
+      {
+        "question": "What does the BScN cost for an international student?",
+        "answer": "An exact, Nursing-specific tuition figure could not be confirmed from Lakehead's published 2025-2026 undergraduate fee table, which does not list Nursing as its own row. For context, most other Thunder Bay Honours undergraduate programs list international tuition of roughly CAD 29,800-30,300 per year in that same table, plus ancillary fees (roughly CAD 1,100-1,500/year) and mandatory UHIP health insurance (CAD 948 for a 12-month September-start policy in 2026-2027). Applicants should use Lakehead's official Cost Estimator, selecting the Nursing program, to get a confirmed current total."
+      },
+      {
+        "question": "What licensing exam do BScN graduates need to become a registered nurse in Canada?",
+        "answer": "Lakehead states BScN graduates are eligible to write the National Council Licensure Examination for Registered Nurses (NCLEX-RN) upon graduation, after which they register with the College of Nurses of Ontario (CNO) or the equivalent regulator in the province where they intend to practise. This is a Canadian licensing pathway distinct from India's Indian Nursing Council (INC) - students who may want to eventually practise in India should separately verify INC's recognition of a Canadian nursing degree."
+      },
+      {
+        "question": "Is Thunder Bay a safe city for international students?",
+        "answer": "This requires an honest, direct answer: Statistics Canada's official 2024 Crime Severity Index data - independently corroborated by CBC News and TBNewsWatch - shows Thunder Bay with the highest violent-crime severity index of any of the 42 Canadian metropolitan areas measured that year, more than double the national average, and CBC has separately and repeatedly reported Thunder Bay recording Canada's highest homicide rate. Day-to-day campus and student life follows standard safety practices, but this is a materially more serious city-level safety statistic than most other Canadian university towns carry, and applicants and families should factor it into their decision."
+      },
+      {
+        "question": "Is on-campus housing guaranteed for international BScN students?",
+        "answer": "Lakehead states it offers guaranteed on-campus housing to students who submit their residence application and down payment by the relevant deadline (June 1 for a September start), with space beyond that deadline offered only if still available. Lakehead does not offer on-campus housing for students with families, and it advises students pursuing off-campus housing to view accommodations in person (or via a trusted contact) before signing a lease, since it describes off-campus housing near campus as being in high demand and harder to find after the first week of September."
+      }
+    ]
+  }
+}

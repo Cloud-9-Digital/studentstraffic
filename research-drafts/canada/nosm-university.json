@@ -1,0 +1,86 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "NOSM University (Northern Ontario School of Medicine University)",
+  "cityName": "Sudbury / Thunder Bay",
+  "priority": "low",
+  "officialWebsite": "https://www.nosm.ca/",
+  "publishStatus": "HOLD_NOT_PUBLISHABLE",
+  "holdReason": "Every verifiable NOSM University degree program (MD/UME and the Physician Assistant BScPA) is restricted by NOSM's own official admissions pages, corroborated by independent third-party sources, to Canadian citizens or permanent residents only. There is no international/Indian-student admission stream for any NOSM University program, so no structuredFacts.programs entry with a valid courseSlug (mbbs, medical-pg, bsc-nursing, pharmacy, bds) can be honestly populated. Fabricating one would violate the no-fabrication rule. See nosm-university.md in this folder for full sourced detail.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "NOSM University - Minimum Requirements (official; MD/UME program - states applicants must be Canadian citizens or permanent residents)",
+        "url": "https://www.nosm.ca/nosm-university-admissions-learner-recruitment/ume-program-md-degree-admissions/application-information-requirements/minimum-requirements/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "NOSM University - Frequently Asked Questions (official; MD/UME program)",
+        "url": "https://www.nosm.ca/nosm-university-admissions-learner-recruitment/ume-program-md-degree-admissions/frequently-asked-questions/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "NOSM University - Physician Assistant Program (official)",
+        "url": "https://www.nosm.ca/education/physician-assistant-program/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "NOSM University - About NOSM University (official; history, founding, DCEL model)",
+        "url": "https://www.nosm.ca/about/about-nosm/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "NOSM University - Thunder Bay and Sudbury Campuses (official)",
+        "url": "https://www.nosm.ca/our-community/campuses/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "NOSM University - IMG Support and Resources (official; postgraduate residency, not a direct-entry international admissions stream)",
+        "url": "https://www.nosm.ca/pgme-office/current-residents/img-support/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - NOSM University (independent corroboration of founding, 2022 independence, campuses)",
+        "url": "https://en.wikipedia.org/wiki/NOSM_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "CBC News - \"NOSM University marks 20 years\" (independent corroboration of history)",
+        "url": "https://www.cbc.ca/news/canada/sudbury/nosm-university-20-years-1.7630226",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "BeMo Academic Consulting - \"Northern Ontario School of Medicine: How to Get In\" (independent third-party admissions consultant; corroborates citizen/PR-only MD eligibility)",
+        "url": "https://bemoacademicconsulting.com/blog/northern-ontario-school-of-medicine",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "CanadianPA.ca - \"Can an IMG become a Physician Assistant?\" (independent corroboration of PA program's Canadian citizen/PR-only eligibility)",
+        "url": "https://canadianpa.ca/img/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "NOSM University (Northern Ontario School of Medicine University)",
+    "city": "Sudbury / Thunder Bay",
+    "type": "Public",
+    "establishedYear": 2002,
+    "officialWebsite": "https://www.nosm.ca/",
+    "bestFitFor": [],
+    "programs": [],
+    "note": "No programs array populated - every NOSM University degree program (MD/UME, Physician Assistant BScPA) is restricted to Canadian citizens/permanent residents only per official and independent sources. Postgraduate residency training accepts IMGs but is a post-MD CaRMS-matching process, not a direct-entry study-abroad program comparable to mbbs/medical-pg/bsc-nursing/pharmacy/bds course slugs."
+  },
+  "draftContent": {
+    "note": "Narrative fields intentionally left unpopulated. Writing summary/campusLifestyle/clinicalExposure/hostelOverview/indianFoodSupport/safetyOverview/studentSupport copy framed for prospective Indian students would misrepresent an institution whose only degree programs categorically exclude that audience. See nosm-university.md for full research record and sourcing."
+  }
+}

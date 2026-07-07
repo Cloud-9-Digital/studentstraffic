@@ -1,0 +1,179 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "Trent University",
+  "cityName": "Peterborough",
+  "priority": "medium",
+  "officialWebsite": "https://www.trentu.ca/",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Trent/Fleming School of Nursing (TFSON) - Programs (official; three BScN pathways overview)",
+        "url": "https://www.trentu.ca/nursing/programs",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "TFSON - Undergraduate Admissions (official; Collaborative/Compressed/RPN-to-BScN admission requirements, OUAC codes, intake numbers)",
+        "url": "https://www.trentu.ca/nursing/undergraduate-admissions",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "TFSON - The Experience: TFSON Trent Simulation Hub (official; \"Canada's only university nursing program with a fully internationally accredited simulation centre\")",
+        "url": "https://www.trentu.ca/nursing/experience/tfson-trent-simulation-hub",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "TFSON - The Placement Experience (official; year-by-year clinical placement structure, Peterborough-area sites)",
+        "url": "https://www.trentu.ca/nursing/placement-experience",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Trent Future Students - English Language Proficiency Requirements for Undergraduate Applicants (official; IELTS/TOEFL/Duolingo score tables and exemption rules)",
+        "url": "https://www.trentu.ca/futurestudents/admissions/international-students/english-proficiency",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Trent International - Financial Information for International Students (official; tuition/cost-of-living/scholarship resource hub, entrance scholarships up to $160,000 CAD)",
+        "url": "https://www.trentu.ca/international/finance-scholarships",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Trent International - Who We Are (official; Trent International central support office, RISIA-credentialed advisors)",
+        "url": "https://www.trentu.ca/currentstudents/trent-international",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Trent Student Housing - Welcome to Student Housing (official; residence options, off-campus housing partnership via Places4Students.com)",
+        "url": "https://www.trentu.ca/housing/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "College of Nurses of Ontario - Approved Nursing Programs: Baccalaureate Nursing (RN) Programs (independent regulator; confirms Trent/Fleming Honours BScN, Compressed BScN, and Post-RPN Bridging Pathway are all CNO-Approved)",
+        "url": "https://www.cno.org/become-a-nurse/approved-nursing-programs/baccalaureate-nursing-rn-programs",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Trent University (independent corroboration of founding year 1964, public university status, enrolment figures)",
+        "url": "https://en.wikipedia.org/wiki/Trent_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Statistics Canada - Safe Cities Profile Series: Key Indicators by Census Metropolitan Area, Peterborough, Ontario (independent government source; population, immigrant share, violent-crime rate, safety perception data)",
+        "url": "https://www150.statcan.gc.ca/n1/pub/85-002-x/2020001/article/00001/peterborough-eng.htm",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Peterborough Currents - \"We worship all the gods here\": Hindu temple opens in downtown Peterborough (independent local news; Bhojan Hindu Temple Society opened July 2024 specifically in response to requests from South Asian international students, quotes Trent international students)",
+        "url": "https://peterboroughcurrents.ca/community/hindu-temple-opens/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Trent University",
+    "city": "Peterborough",
+    "type": "Public",
+    "establishedYear": 1964,
+    "officialWebsite": "https://www.trentu.ca/",
+    "bestFitFor": [
+      "Indian students who want a direct-entry, internationally open Bachelor of Science in Nursing (BScN) pathway at a CNO-approved Ontario program leading toward Canadian RN registration",
+      "Applicants who have completed Class 12 (with the required Biology, Chemistry, English and Math subjects) and want to enter a four-year Collaborative BScN straight from secondary school rather than needing prior Canadian post-secondary credits",
+      "Students who prefer a smaller university town over Toronto or Vancouver, with lower relative cost of living, a compact campus, and an emerging but genuine South Asian community and place of worship within walking distance of downtown",
+      "Students who value hands-on clinical training, since Trent/Fleming's Simulation Hub is described by the university as Canada's only fully internationally accredited nursing simulation centre, paired with placements at hospitals and community agencies across the Peterborough area from Year 1 onward"
+    ],
+    "recognitionBadges": ["CNO-Approved Baccalaureate Nursing Program", "Internationally Accredited Simulation Centre (TFSON Trent Simulation Hub)"],
+    "recognitionLinks": [
+      "https://www.cno.org/become-a-nurse/approved-nursing-programs/baccalaureate-nursing-rn-programs",
+      "https://www.trentu.ca/nursing/experience/tfson-trent-simulation-hub"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "Bachelor of Science in Nursing (BScN) - Collaborative Program",
+        "officialProgramUrl": "https://www.trentu.ca/nursing/undergraduate-admissions",
+        "medium": "English (Trent's general undergraduate English-proficiency policy applies: applicants whose first language is not English must generally submit IELTS 6.5 with no band below 6.0, or TOEFL iBT 4.5 with a minimum of 4.0 in writing from 2026 onward, unless exempt - e.g. through at least 3 years of full-time secondary schooling with English as the sole medium of instruction and no ESL coursework)",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "licenseExamSupport": [
+          "Program is approved by the College of Nurses of Ontario (CNO), and Trent/Fleming states graduates are eligible to apply for registration as a Registered Nurse in Ontario; Canadian RN registration in most provinces is completed via the NCLEX-RN examination administered under CNO/provincial regulator processes"
+        ],
+        "feeNotes": "Trent publishes an online \"Trent Cost Estimator\" tool (by campus, residency status, program and admission average) rather than a fixed published international tuition figure for Nursing on its public pages, and archived/current fee schedules are distributed as downloadable documents rather than a simple public table; prospective Indian applicants should use the official cost estimator or contact international@trentu.ca directly for a current, program-specific international tuition quote before budgeting. Trent separately advertises international entrance and in-course scholarships worth up to $160,000 CAD in total across a student's studies, though eligibility and amounts depend on admission average and program.",
+        "sourceUrls": [
+          "https://www.trentu.ca/nursing/undergraduate-admissions",
+          "https://www.trentu.ca/nursing/programs",
+          "https://www.trentu.ca/international/finance-scholarships"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Trent University is a public research university founded in 1964 in Peterborough, Ontario, with a second campus (Trent Durham GTA) in Oshawa; Wikipedia lists total enrolment at roughly 15,060 students, including about 13,825 undergraduates. Its Trent/Fleming School of Nursing (TFSON), delivered in partnership with Fleming College, offers a Bachelor of Science in Nursing (BScN) through three admission pathways: a four-year Collaborative program open to secondary-school applicants and those with limited post-secondary credit, a 28-month Compressed program for students with substantial transfer credit, and an RPN-to-BScN pathway delivered at George Brown College in Toronto for registered practical nurses already licensed in Ontario. All three pathways are approved by the College of Nurses of Ontario (CNO), the province's nursing regulator, according to CNO's own published list of approved baccalaureate nursing programs. For Indian applicants, the Collaborative program is the most directly relevant route, since it is designed to admit students straight from secondary school (equivalent Indian Class 12 marks in English, Biology, Chemistry and Math are used to calculate the admission average) without requiring prior Canadian post-secondary study. Trent's general international undergraduate admission rules - English-proficiency testing (IELTS/TOEFL/Duolingo, or a documented exemption), a WES course-by-course credential evaluation for post-secondary applicants, and the standard Ontario Universities' Application Centre (OUAC) process - apply to Nursing applicants as they do to other programs. Trent does not publish a simple fixed international tuition figure for Nursing on its public pages; applicants should use the university's own online Cost Estimator or contact Trent's international office directly for a current, program-specific quote before budgeting, and should independently verify Indian nursing-regulator (Indian Nursing Council) recognition requirements if they plan to eventually practise in India.",
+    "campusLifestyle": "Trent's primary Symons Campus sits on the Otonabee River in Peterborough and is organized into several residential colleges (including Champlain, Lady Eaton, Otonabee, Peter Gzowski and Gidigaa Migizi), a model Trent describes as fostering small, close-knit academic communities within a larger university. Nursing students specifically train in the TFSON: Trent Simulation Hub, which the university states is Canada's only fully internationally accredited nursing simulation centre, giving students structured lab and simulation practice (skills stations, standardized-patient scenarios) before and alongside hospital and community placements. Trent International, the university's dedicated international-student office, is staffed by advisors credentialed as Regulated International Student Immigration Advisors (RISIAs) and runs a Global Ambassador Program alongside immigration, health-insurance, finance and document-request services specifically for international students.",
+    "cityProfile": "Peterborough is a mid-sized Ontario city roughly 90 minutes northeast of Toronto; Statistics Canada's Safe Cities profile (drawing on 2016-2018 data) recorded a Peterborough census metropolitan area population of about 131,283, a median household after-tax income of $50,610 (2017), and an unemployment rate of 4.8% (2018) - all comparisons that suggest a smaller, more affordable city than Toronto or Vancouver. The same Statistics Canada profile notes immigrants made up a relatively small share of Peterborough's population (8.5%, versus 29.1% for Ontario overall) and visible minorities made up 4.8% of residents (versus 29.3% for Ontario), reflecting a much smaller and less diverse population base than Canada's largest metros - an honest planning consideration for students weighing community size against cost of living. A locally reported and directly relevant development is the July 2024 opening of the Bhojan Hindu Temple Society in downtown Peterborough, which Peterborough Currents reported was opened by the Khera family specifically in response to requests from South Asian international students who had no local place of worship; the same article quotes Trent international students describing the temple as an important, walkable community space, alongside references to an existing Sikh community holding events such as a Vaisakhi parade with langar.",
+    "clinicalExposure": "Trent/Fleming's BScN curriculum builds clinical placement hours from Year 1: first-year students complete a weekly placement (often one day per week) in a long-term-care home or retirement community alongside foundational skills training in the Simulation Hub; second-year students complete an independent community-based placement (public health units, clinics, schools) and a family-focused placement in maternal/child or mental-health settings; third-year students move into acute-care placements in medical/surgical inpatient units (commonly two shifts per week, covering skills like medication administration, IV starts and pre/post-operative assessment) plus a chronic-disease/palliative placement in settings such as complex continuing care or rehabilitation. Placements at these levels typically take place in Peterborough and the surrounding region (including Durham, Northumberland County and the City of Kawartha Lakes), and students cannot guarantee a specific site or schedule preference. Fourth-year students meet individually with a Placement Coordinator to plan a capstone clinical experience, which may include rural or remote settings. Trent describes its Simulation Hub as Canada's only fully internationally accredited university nursing simulation centre, used to prepare students for these placements through demonstrators, simulationists and structured skills practice.",
+    "hostelOverview": "Trent's Student Housing office manages on-campus residences at both the Peterborough Symons Campus and the Trent Durham GTA campus in Oshawa, offering a choice of traditional and suite-style residence buildings, as well as themed living-learning communities and dining plan options, according to the university's own housing pages. Students who prefer or need off-campus accommodation are supported through Trent's partnership with Places4Students.com, a listing service the university links directly from its housing site; Trent's own housing pages do not commit to a guaranteed placement for every international student, so applicants should apply for residence as early as possible and treat off-campus search support as a genuine backup rather than the primary plan. Specific fee amounts, meal-plan structures and first-year guarantee policies are managed through Trent's residence application system rather than published in a single static overview, so applicants should confirm current details directly through the Residence & Housing pages once admitted.",
+    "indianFoodSupport": "Downtown Peterborough gained a dedicated Hindu place of worship in July 2024 when the Khera family (who also own the Bhojan restaurant and Indian grocery store across the street) opened the Bhojan Hindu Temple Society, according to Peterborough Currents; the article reports the family opened the temple specifically after South Asian international students asked for a local space to pray, since the nearest alternative previously required travel to another city. The same reporting describes the temple hosting a free community Diwali dinner for around 200 guests, aimed partly at international students separated from family during the festival, and quotes both a Sikh Trent student and another international Trent student describing the temple as an accessible, calming space downtown. The article also references an existing Sikh community in the city. Compared with Toronto, Vancouver or other larger Canadian metros, Peterborough's South Asian community and Indian food/retail infrastructure remain modest in scale (Statistics Canada data shows visible minorities were just 4.8% of the city's population as of the mid-2010s), so students should expect a smaller, closer-knit community rather than a large ethnic-enclave experience, even as that community visibly continues to grow.",
+    "safetyOverview": "Statistics Canada's Safe Cities profile of Peterborough (based on 2014-2018 data, the most recent full profile of this kind published for the city) reported a police-reported violent-crime rate of 839 per 100,000 population in 2018, lower than the Ontario rate of 899 and well below the national rate of 1,143, and noted police-reported crime in Peterborough fell 21% between 2008 and 2018 (a larger decline than Ontario's 16% or Canada's 17% over the same period). The same report found 56% of Peterborough residents said they felt very safe walking alone after dark (similar to Ontario's 51% and the national provincial average of 52%), though - consistent with patterns seen across most Canadian cities - women reported feeling far less safe walking alone after dark than men (37% versus 75%). Because this Statistics Canada profile reflects data through 2018 rather than the present day, students should treat it as a general historical baseline rather than a current-year figure, and should follow standard urban safety precautions and any orientation guidance provided by Trent International and campus security on arrival.",
+    "studentSupport": "Trent International operates as the university's central support office for all international and exchange students, and states its advisors are credentialed Regulated International Student Immigration Advisors (RISIAs) - the legally recognized category of professional in Canada for student immigration advice. Its services span immigration-basics guidance, document requests (for immigration or insurance purposes), health-insurance enrolment support, finance guidance (tuition payment, scholarships, on-campus employment eligibility), and a Global Ambassador Program connecting new international students with peer mentors. Trent also promotes generous international entrance and in-course scholarships (the university's own marketing states up to $160,000 CAD is available across a student's studies, though eligibility, amounts and renewal conditions depend on admission average and program and should be confirmed directly). Nursing-specific student support, including placement coordination from Year 1 through the Year 4 capstone placement, runs through the Trent/Fleming School of Nursing's own administration alongside general Trent International services.",
+    "whyChoose": [
+      "All three Trent/Fleming BScN pathways (Collaborative, Compressed, and the RPN-to-BScN pathway with George Brown College) are confirmed as CNO-Approved on the College of Nurses of Ontario's own published list of approved baccalaureate nursing programs",
+      "The Collaborative BScN is designed for direct entry from secondary school, so Indian Class 12 students with the required English, Biology, Chemistry and Math grades can apply without first needing separate Canadian post-secondary credit, unlike some Canadian nursing programs that require prior university study",
+      "Trent describes its TFSON Simulation Hub as Canada's only fully internationally accredited university nursing simulation centre, and the program builds structured clinical placement experience from Year 1 (long-term care) through to a Year 4 capstone placement",
+      "A newly established (2024) Hindu temple in downtown Peterborough was opened specifically in response to requests from South Asian international students, alongside an existing Sikh community, giving new arrivals an accessible, walkable place of community and worship in a city that is otherwise still building out its South Asian infrastructure",
+      "Trent International's advisors hold the formal Regulated International Student Immigration Advisor (RISIA) credential, and the university advertises entrance/in-course scholarships worth up to $160,000 CAD across a student's studies (eligibility and amounts vary and should be confirmed at the point of admission)"
+    ],
+    "thingsToConsider": [
+      "Trent does not publish a single fixed international tuition figure for the BScN program on its public pages; figures are distributed via a dynamic online cost estimator and downloadable fee schedules, so applicants must request or generate a current program-specific quote directly from Trent (e.g. via international@trentu.ca) before finalizing a budget - this page intentionally omits an unconfirmed number rather than estimate one",
+      "Peterborough is a considerably smaller and less diverse city than Toronto or Vancouver: Statistics Canada data (2016) put visible minorities at just 4.8% of the population and immigrants at 8.5%, both well below Ontario-wide averages, so the South Asian community, while genuinely present and growing, is smaller and more concentrated than in Canada's largest metros",
+      "Clinical placements for the Collaborative BScN are assigned across Peterborough and the wider region (Durham, Northumberland County, City of Kawartha Lakes); students can state location preferences but the program does not guarantee a specific placement site or schedule, and students must arrange their own transport to placements",
+      "English-proficiency requirements are a real, enforced gate for applicants whose secondary or post-secondary education was not entirely in English: Trent's official 2026-onward threshold is TOEFL iBT 4.5 (minimum 4.0 in writing) or IELTS 6.5 with no band below 6.0, and international post-secondary applicants must also submit a WES course-by-course credential evaluation",
+      "Canadian BScN graduates pursuing Registered Nurse licensure go through Canadian regulatory processes (CNO approval and Canadian RN registration exams); this is a distinct pathway from India's Indian Nursing Council (INC) registration, so students who intend to eventually practise nursing in India should independently confirm INC recognition requirements for a Canadian nursing degree before enrolling",
+      "The Statistics Canada safety and demographic data cited on this page reflects a 2014-2018 reporting window (the most recent full \"Safe Cities\" profile Statistics Canada has published for Peterborough); students should treat it as a general historical baseline and check for more recent municipal or provincial crime data if they want current-year figures"
+    ],
+    "faq": [
+      {
+        "question": "Is Trent University's BScN program recognized by Ontario's nursing regulator?",
+        "answer": "Yes. The College of Nurses of Ontario (CNO) - the province's official nursing regulator - lists the Trent/Fleming School of Nursing's Honours BScN (Collaborative), Compressed BScN, and Post-RPN Bridging Pathway (with George Brown College) as CNO-Approved on its own published list of approved baccalaureate nursing programs."
+      },
+      {
+        "question": "Can an Indian student apply to Trent's BScN directly from Class 12?",
+        "answer": "Yes, through the Collaborative Program pathway, which is open to secondary-school applicants. Admission is calculated on required course equivalents (English, Biology, Chemistry, and Math, each with minimum grades) plus the applicant's next-best two courses, with a minimum calculated average - per Trent/Fleming's own undergraduate admissions page. International post-secondary applicants applying with prior college/university study instead follow separate university-transfer or Compressed Program criteria and must also submit a WES course-by-course credential evaluation."
+      },
+      {
+        "question": "What English-language test scores does Trent require for international nursing applicants?",
+        "answer": "Trent's general undergraduate English-proficiency policy applies to Nursing applicants: from 2026 onward, a TOEFL iBT score of 4.5 or higher (minimum 4.0 in writing), or an IELTS score of 6.5 with no band below 6.0 (other tests like Duolingo, CAEL, and Cambridge C1/C2 are also accepted at listed thresholds). Applicants may be exempt if they completed at least 3 years of secondary schooling, 2 years of college, or 1 year of university entirely in English with no ESL coursework, per Trent's official English Language Proficiency Requirements page."
+      },
+      {
+        "question": "How much does it cost an international/Indian student to study BScN at Trent?",
+        "answer": "Trent does not publish a single fixed international tuition figure for Nursing on its public admissions pages; instead it offers an online Trent Cost Estimator tool and distributes fee schedules as downloadable documents that vary by campus, term, and program. Prospective applicants should use the official cost estimator or contact Trent's international admissions office (international@trentu.ca) directly for a current, program-specific quote before finalizing a budget. Trent separately advertises entrance and in-course scholarships worth up to $160,000 CAD across a student's studies, though eligibility and amounts vary by admission average and program."
+      },
+      {
+        "question": "What clinical training does the BScN provide, and where do placements happen?",
+        "answer": "Clinical placement hours begin in Year 1 (typically a weekly shift in a long-term-care home) and build through Year 2 (community and family-focused placements), Year 3 (acute-care and chronic-disease/palliative placements, commonly two shifts per week), and a Year 4 capstone placement planned individually with a Placement Coordinator, which may include rural or remote settings. Placements at the 1000-3000 levels typically occur in Peterborough and the surrounding region (Durham, Northumberland County, City of Kawartha Lakes); students can state preferences but are not guaranteed a specific site, and must arrange their own transport. Trent also describes its Simulation Hub as Canada's only fully internationally accredited university nursing simulation centre, used to prepare students before and alongside these placements."
+      },
+      {
+        "question": "Is there an Indian or South Asian community near Trent's Peterborough campus?",
+        "answer": "Yes, though it is smaller than in cities like Toronto or Vancouver. Peterborough Currents (a local news outlet) reported that the Bhojan Hindu Temple Society opened in downtown Peterborough in July 2024, specifically after South Asian international students asked for a local place of worship; the article also references an existing Sikh community in the city. Statistics Canada data from the mid-2010s shows visible minorities made up under 5% of Peterborough's population at that time, well below the Ontario average, so students should expect a modest but genuinely present and growing South Asian community rather than a large ethnic enclave."
+      },
+      {
+        "question": "Is Peterborough a safe city for international students?",
+        "answer": "Statistics Canada's most recent full \"Safe Cities\" profile of Peterborough (covering 2014-2018 data) recorded a lower police-reported violent-crime rate than both the Ontario and Canada-wide averages in 2018, and noted crime had fallen 21% in the city over the prior decade - a larger decline than the provincial or national trend. The same report found just over half of residents felt very safe walking alone after dark, similar to provincial and national averages, though women reported feeling notably less safe than men doing so - a pattern common across Canadian cities. Because this data is from 2018, students should treat it as a general historical baseline and check more recent municipal crime data for current-year figures, while still following standard safety precautions."
+      },
+      {
+        "question": "Does a Trent BScN lead to nursing registration in India?",
+        "answer": "Not automatically. Trent's BScN is a Canadian degree oriented toward Canadian Registered Nurse (RN) licensure through the province's regulator, the College of Nurses of Ontario (CNO), and Canadian registration examinations - a separate system from India's Indian Nursing Council (INC) registration. Students who plan to eventually practise nursing in India after graduating from a Canadian program should independently verify current INC recognition and equivalency requirements for a foreign nursing degree before enrolling, as this page does not make any claim about INC recognition."
+      }
+    ]
+  }
+}

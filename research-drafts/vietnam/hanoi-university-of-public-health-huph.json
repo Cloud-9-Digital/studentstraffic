@@ -1,0 +1,95 @@
+{
+  "countrySlug": "vietnam",
+  "universitySlug": "hanoi-university-of-public-health-huph",
+  "schoolName": "Hanoi University of Public Health (HUPH)",
+  "cityName": "Hanoi",
+  "priority": "low",
+  "officialWebsite": "https://huph.edu.vn/english/",
+  "status": "hold",
+  "reviewNotes": "HOLD - not publish-ready. HUPH (Truong Dai hoc Y te cong cong) is a Vietnamese Ministry of Health public university specializing in public health training and research, not a clinical medicine/nursing/pharmacy/dentistry school. Multi-source research (official site huph.edu.vn incl. About Us history page, official 2026 admissions decree Quyet dinh so 314/QD-DHYTCC on tuyensinh.huph.edu.vn, en.wikipedia.org, tropEd network member profile, standyou.com aggregator, uniranks.com) found: (1) HUPH's own 2026 admissions decree lists ONLY Vietnamese-medium, domestic-track admissions across 6 undergraduate majors (Public Health, Nutrition, Social Work, Rehabilitation Technique, Medical Laboratory Technique, Data Science), 5 master's majors, 2 doctoral majors and 2 specialist programs -- none of which is mbbs, medical-pg (in the sense of a clinical postgraduate medical degree), bsc-nursing, pharmacy, or bds, and none of which has any stated English-medium or international/foreign-applicant admissions pathway. (2) HUPH IS a member institution of the international tropEd Network for Education in International Health (joined May 2008 per its own About Us timeline) and runs student exchange programs with partner schools (e.g. Simon Fraser University, plus historic exchanges referenced with Tulane/Emory/Johns Hopkins), which corroborates some international academic engagement, but this is exchange/network participation, not a distinct degree program with its own officialProgramUrl, explicit medium of instruction, and duration that could be entered as a structuredFacts.programs item. (3) A widely-surfacing 'Master of Public Health International Program' (English-taught, IELTS 5.5 admission requirement) that repeatedly appears in searches for 'Hanoi public health MPH international' was cross-checked and confirmed via spmph.edu.vn and sdh.hmu.edu.vn to belong to Hanoi MEDICAL University's School of Preventive Medicine and Public Health (SPMPH, at 1 Ton That Tung, Dong Da district) -- a separate institution from HUPH (at 1A Duc Thang Road, Bac Tu Liem district) -- so it must NOT be attributed to HUPH. (4) A single lower-confidence aggregator (standyou.com) lists a 'B.Sc in Public Health' and 'B.Sc in Genetics' as English-medium, 4-year, Class-12-entry courses for HUPH, but this contradicts HUPH's own official 2026 admissions decree (which shows only Vietnamese-medium THPT-based domestic admission for the equivalent Cu nhan Y te cong cong program) and could not be corroborated on the official site or any second independent source, so per the no-fabrication rule it is NOT used to populate structuredFacts.programs. Because no courseSlug-eligible program (mbbs/medical-pg/bsc-nursing/pharmacy/bds) can be honestly populated with a corroborated officialProgramUrl, medium of instruction, and duration for an India-facing audience, this draft cannot pass the publish gate. Held as a local research record only; do not seed or publish. Revisit if/when HUPH publishes a confirmed English-medium admissions track open to international/Indian applicants in one of the required course categories.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Hanoi University of Public Health - official website home page",
+        "url": "https://huph.edu.vn/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Vietnamese-language home page; confirms address (So 1A, duong Duc Thang, P. Dong Ngac, TP. Ha Noi), phone 024 62 66 22 99, current 2026 admissions notices (undergraduate, graduate), faculty/center structure. No English-medium or international-admissions program found."
+      },
+      {
+        "label": "HUPH official site - About Us / history page",
+        "url": "https://huph.edu.vn/page/about-us",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Primary structured-facts source. Confirms predecessor 'Health Management Cadre School' founded 1976; Public Health Faculty established 1990 (joined Asia-Pacific Academic Consortium for Public Health); first Vietnamese public-health Master's cohort 1997 (with Rockefeller Foundation / US CDC support); university formally established 26 April 2001 by Prime Ministerial decision; renamed to English name 'Hanoi University of Public Health (HUPH)' in October 2016; joined the international tropEd network in May 2008 and began receiving international students, with exchanges referenced with Tulane, Emory and Johns Hopkins; moved to new Bac Tu Liem district campus on 1 November 2016 (Atlantic Philanthropies-supported); ~19 training programs from undergraduate to postgraduate; core values SMART (Standard, Mutuality, Accountability, Reliability, Technology)."
+      },
+      {
+        "label": "HUPH official 2026 undergraduate admissions notice (tuyensinh.huph.edu.vn)",
+        "url": "https://tuyensinh.huph.edu.vn/post/thong-tin-tuyen-sinh-dai-hoc-chinh-quy-nam-2026",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official 2026 admissions scheme (Quyet dinh so 314/QD-DHYTCC, 28 May 2026). Confirms training scope: 7 undergraduate majors, 5 master's majors, 2 doctoral majors, 2 specialist programs. 2026 regular-track undergraduate intake limited to 6 majors: Public Health, Nutrition, Social Work, Rehabilitation Technique, Medical Laboratory Technique, Data Science -- all via Vietnamese domestic admission routes (direct admission, THPT transcript-based, 2026 national high-school exam, or (Data Science only) Hanoi National University aptitude test). No English-medium or international-applicant admissions route stated anywhere in this official decree."
+      },
+      {
+        "label": "Hanoi University of Public Health - Wikipedia (English)",
+        "url": "https://en.wikipedia.org/wiki/Hanoi_University_of_Public_Health",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Stub article. Confirms name, Vietnamese name (Truong Dai hoc Y te cong cong), specialization in public health training and research, established 2001, located on Thang Road (Duc Thang), Dong Ngac, Hanoi."
+      },
+      {
+        "label": "tropEd (Network for Education in International Health) - HUPH member institution profile",
+        "url": "https://troped.org/2020/08/06/hanoi-university-of-public-health-huph/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms HUPH is a genuine member institution of the Munich-secretariat-based tropEd international Master's network; lists address 1A Duc Thang Road, North Tu Liem District, Hanoi; contact for the tropEd institutional representative. Corroborates genuine (if limited/exchange-based) international academic engagement, but tropEd itself is a member consortium/quality framework, not a distinct HUPH degree program with its own official program page, so it is not used to populate structuredFacts.programs."
+      },
+      {
+        "label": "Standyou.com - Hanoi University of Public Health, Vietnam study-abroad listing",
+        "url": "https://www.standyou.com/study-abroad/hanoi-university-of-public-health-vietnam/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Lower-confidence third-party study-abroad aggregator. Lists 'B.Sc in Public Health' and 'B.Sc in Genetics' as English-medium, 4-year, Class-12-entry courses, and describes MPH/Master of Hospital Management/PhD programs. This English-medium undergraduate claim is NOT corroborated by HUPH's own official 2026 admissions decree (which shows Vietnamese-medium, domestic-only undergraduate admission) or by any second independent source, so it is treated as unverified and NOT used in structuredFacts.programs, per the no-fabrication rule."
+      },
+      {
+        "label": "Hanoi Medical University - School of Preventive Medicine and Public Health (SPMPH) - Master of Public Health International Program",
+        "url": "https://spmph.edu.vn/en-GB/article/news/call-for-application-academic-year-2023-2025-master-of-public-health-international-program",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Used NEGATIVELY / for disambiguation: confirms the widely-circulated English-medium 'Master of Public Health International Program' (IELTS 5.5 requirement, One Health/Health Economics/Reproductive Health tracks, established 2015) belongs to Hanoi MEDICAL University's School of Preventive Medicine and Public Health at 1 Ton That Tung, Dong Da district -- a separate institution from Hanoi University of Public Health (1A Duc Thang Road, Bac Tu Liem district). This program must not be attributed to HUPH."
+      },
+      {
+        "label": "HUPH official site - 'Why did you choose HUPH' (enrollment page)",
+        "url": "https://huph.edu.vn/post/why-did-you-choose-huph",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates ~160 faculty (mostly Master's/PhD holders, many trained abroad), curriculum informed by US/France/Australia partner universities, problem-based and scenario-based learning methods, a credit system allowing flexible pacing, annual student exchange programs (e.g. with Simon Fraser University, Canada), on-campus dormitory facilities for Vietnamese and overseas students, and scholarship policies. No explicit English-medium admissions program for international/Indian applicants stated."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Hanoi University of Public Health (HUPH)",
+    "city": "Hanoi",
+    "type": "Public",
+    "establishedYear": 2001,
+    "officialWebsite": "https://huph.edu.vn/english/",
+    "bestFitFor": [],
+    "programs": [],
+    "notes": "establishedYear=2001 reflects the Prime Ministerial decision of 26 April 2001 formally establishing the university (predecessor Health Management Cadre School dates to 1976; Public Health Faculty within it dates to 1990; English name 'HUPH' adopted October 2016), corroborated across the official About Us page and Wikipedia. No programs array populated: HUPH's own official 2026 admissions decree confirms all current undergraduate/graduate/doctoral programs are Vietnamese-medium with domestic-only admission routes; no courseSlug-eligible program (mbbs/medical-pg/bsc-nursing/pharmacy/bds) with a corroborated officialProgramUrl, medium of instruction, and duration for an India-facing/English-medium track could be found. A third-party aggregator's claim of English-medium B.Sc programs was not corroborated by the official site and is treated as unverified. bestFitFor intentionally left empty rather than fabricated, since no India-audience-relevant program is confirmed."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "All narrative fields intentionally left empty. HUPH is a Vietnamese Ministry of Health public-health specialist university whose current, officially confirmed programs (2026 admissions decree) are all Vietnamese-medium with domestic-only admission; no corroborated English-medium program or general international/Indian-student admissions pathway exists in any of the site's required course categories (MBBS, postgraduate medicine, BSc Nursing, Pharmacy, BDS). HUPH is genuinely a tropEd network member and runs student-exchange arrangements with partner universities, but that is not the same as an open-admission English-medium degree program for Indian students. Writing India-audience narrative content (hostel life framed for foreign MBBS/nursing/pharmacy students, clinical exposure claims, NMC/PCI/INC-relevant recognition framing, etc.) would require fabrication, which is disallowed. This page should not be published until/unless HUPH is confirmed to run an English-medium program, in one of the required course categories, open to international/Indian applicants."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "Conestoga College",
+  "cityName": "Kitchener",
+  "priority": "low",
+  "officialWebsite": "https://www.conestogac.on.ca/fulltime/bachelor-of-science-nursing-honours",
+  "programUrl": "https://www.conestogac.on.ca/fulltime/bachelor-of-science-nursing-honours",
+  "admissionUrl": "https://www.conestogac.on.ca/fulltime/bachelor-of-science-nursing-honours/admissions",
+  "reviewNotes": "HOLD - DO NOT PUBLISH. This Bachelor of Science - Nursing (Honours) is a direct-entry, Ontario-residents-only degree at Conestoga College. Multiple corroborated sources indicate international (including Indian) applicants are not eligible to apply directly to this program; the official apply flow routes to a 'domestic/Canadian applicant' phone/online path only, and international applicants are directed to indirect pathways (e.g. Pre-Health Sciences Pathway) instead. Publishing an India-audience recruitment page for a program Indian students cannot enroll in would be misleading. See accompanying .md for full corroboration and source list. This JSON intentionally does NOT meet the publish gate (draftContent narrative fields are left empty/omitted rather than fabricated) and must not be seeded/published as-is.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Conestoga College - Bachelor of Science - Nursing (Honours), official program page",
+        "url": "https://www.conestogac.on.ca/fulltime/bachelor-of-science-nursing-honours",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Conestoga College - Bachelor of Science - Nursing (Honours), official admissions page",
+        "url": "https://www.conestogac.on.ca/fulltime/bachelor-of-science-nursing-honours/admissions",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Conestoga College International - Admission requirements (general)",
+        "url": "https://www.conestogac.on.ca/international/apply-to-conestoga/admission-requirements",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "CourseCompare.ca - Conestoga College Kitchener-Waterloo BScN (Honours) listing",
+        "url": "https://www.coursecompare.ca/courses/kitchener-waterloo/conestoga-college/bachelor-of-science-nursing-honours/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Conestoga College",
+    "city": "Kitchener",
+    "type": "Public",
+    "officialWebsite": "https://www.conestogac.on.ca/fulltime/bachelor-of-science-nursing-honours",
+    "bestFitFor": [],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "Bachelor of Science - Nursing (Honours)",
+        "officialProgramUrl": "https://www.conestogac.on.ca/fulltime/bachelor-of-science-nursing-honours",
+        "medium": "English",
+        "durationYears": 4
+      }
+    ],
+    "eligibilityHold": "Direct-entry program restricted to Ontario residents / domestic (Canadian) applicants per official apply flow and corroborating secondary sources; not confirmed open to international (Indian) applicants. See reviewNotes and accompanying .md."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": []
+  }
+}

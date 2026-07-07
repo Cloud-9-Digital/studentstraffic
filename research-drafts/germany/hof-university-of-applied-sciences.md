@@ -1,0 +1,49 @@
+# Hof University of Applied Sciences (Hochschule Hof) - Cross Cultural Nursing Practice M.Sc.
+
+Research date: 2026-07-07
+Country: Germany | City: Hof, Bavaria (Upper Franconia)
+Draft status: gate-passing (ok=true), with a prominent "programme under revision" caveat baked into the content itself (see below)
+
+## Key facts (corroborated)
+
+- **University**: Hof University of Applied Sciences (Hochschule Hof), a public Bavarian state university, founded 1994, located in Hof, Bavaria (Upper Franconia region, on the Saale river, near the Czech border). Roughly 3,700 students (2018 figure per Wikipedia), students from 60+ countries per the university's own flyer.
+- **Programme**: "Cross Cultural Nursing Practice" (M.Sc./M.A.) — launched 2024, described by Hof University as the only programme of its kind in Germany at launch. Offered through the Faculty/Department of Interdisciplinary and Innovative Sciences (INWISS).
+- **Degree**: Master of Science (M.Sc.), 4 semesters (120 ECTS total per the official module plan), including the Master's thesis.
+- **Entry requirement**: Completed Bachelor's degree in Nursing (min. 180 ECTS) — this is a postgraduate/advanced-practice programme, not a first nursing qualification.
+- **Language**: Semester 1 taught in English; semester 2 onward (core modules, both internships, most of the thesis) in German. Thesis may be written in German or English. Entry requires English (TOEFL 90+/IELTS 6.5+) plus German at only A2 (CEFR) at entry, built to B2 during the programme.
+- **Fees**: Tuition-free; only an administrative/semester fee of approx. EUR 150, per the official flyer. No official itemised living-cost or hostel fee figure found.
+- **Clinical component**: Two internships (Internship 1 + Internship 2, semester 3, continuing into semester 4 per the module table) totalling a minimum of 900 hours of direct patient-facing work, at a hospital, long-term inpatient, or home-care institution. Master's thesis completed in cooperation with a healthcare facility.
+- **Core modules**: German B1/B2 language training, Intercultural Trainings, Culturally Sensitive Care, Sector-Specific Assessments/Diagnostics/Interventions, Evidence Based Nursing Research Workshop, Healing Competences Basics/I/II, Clinical Leadership.
+- **Outcomes**: Governmental recognition of nursing qualification in Germany; preparation for the statutory nursing knowledge exam (Kenntnisprüfung, Section 45 PflAPrV); entry roles cited include Advanced Practice Nurse, Evidence-based Nursing Project Manager, Nursing Specialist, Nursing Practitioner, Case Manager.
+- **India focus**: Hof University's own 2024 launch announcement states more than 800 Indian students have already been integrated at the university (about two-thirds remaining in Germany as workers afterward), cites an existing Hof University office in Bangalore, and ties to the Bavarian-Indian Centre for Business and Higher Education. The university explicitly frames India (including outreach via the Catholic youth organisation Don Bosco in southern India) as a priority recruitment region for this programme.
+- **Admissions (as last officially published for "Cross Cultural Nursing Practice")**: Applications via the Primuss portal. WiSe window 15 April-31 May (admission letters in June, enrolment in September, Orientation Week last two weeks of September); SuSe window 5-30 Nov (admission letters in December, enrolment in March, Orientation Week first two weeks of March). Programme head: Prof. Dr. Matthias Drossel (matthias.drossel@hof-university.de). Welcome Center contact: Carolin Huttner (welcome@hof-university.de).
+
+## IMPORTANT: programme status caveat
+
+Multiple sources found during research (Hof University's own current programme-search context, plus mastersportal/master-and-more aggregator pages and Studis Online) state that this Master's programme is currently being revised and adapted to new nursing-law developments, and is expected to **relaunch under a new name, "Advanced Nursing Practice (M.Sc.)", for winter semester 2026/27**. Finalised/updated admission requirements were stated to be published on Hof University's site closer to the April 2026 application window; these updated details were not independently available/corroborated at time of writing (research date 2026-07-07 — i.e., before that window opens).
+
+Because of this, the draft:
+- Uses the most recent official materials available (2025 flyer + official module/ECTS plan for "Cross Cultural Nursing Practice") as the substantive factual basis, since these represent the last-published, corroborated version of the programme design.
+- Explicitly flags the relaunch/rename in the program title, summary, thingsToConsider, studentSupport, and a dedicated FAQ — telling students to verify the current programme name and requirements directly with Hof University (admission@hof-university.de) before applying.
+- Does NOT assert or fabricate any details of the "Advanced Nursing Practice" relaunch beyond the fact that a rename/revision is expected — no invented curriculum, fees, or requirements for the new version.
+
+## What was OMITTED and why
+
+- **Tuition/annual cost figures (annualTuitionUsd/totalTuitionUsd)**: Omitted entirely. The programme is confirmed tuition-free (only a ~EUR150/semester administrative fee per the official flyer); no fake "0" tuition value was inserted. This is stated narratively in feeNotes with a source instead.
+- **Hostel/on-campus accommodation fee schedule**: Omitted. No official Hof University hostel fee schedule was found; the university's own materials only mention "assistance in finding accommodation" as a support service. Students are told to confirm current housing costs/options directly with the Welcome Center.
+- **Named clinical placement partner hospitals/clinics**: Omitted. The officially published materials reviewed (flyer, module plan, launch announcement) do not name specific partner institutions. Students are told to ask the programme office (Prof. Dr. Matthias Drossel) directly.
+- **INC (Indian Nursing Council) recognition claim**: Not asserted. INC evaluates foreign nursing qualifications case-by-case; the draft explicitly tells students to verify current INC equivalency requirements themselves rather than claiming automatic recognition for practice in India.
+- **Finalised "Advanced Nursing Practice" (2026/27 relaunch) curriculum/fees/requirements**: Omitted/not fabricated, since Hof University itself had not yet published these at time of writing. Only the fact of the expected rename/relaunch (independently reported by aggregator sites) is mentioned, with a clear instruction to verify directly with the university.
+- **Specific Indian food/grocery options in the town of Hof**: Not fabricated with invented restaurant/store names. The draft states what is corroborated (an established Indian student presence at the university per its own 800+ figure) and tells students to verify current food/grocery specifics with the International Office or current Indian students, since Hof is a smaller town rather than a major city with an obviously large South Asian retail footprint.
+
+## Full list of sources (labelled URLs)
+
+1. **Hof University - Cross Cultural Nursing Practice M.Sc. official recruitment flyer (PDF)** — https://www.hof-university.com/fileadmin/user_upload/ask/Flyer_internat_Stdg/Flyer_CCN_web_01-2025.pdf — official-program. Primary source for degree structure, language of instruction, fees, admission requirements, module list, internship/thesis requirements, career outcomes, university founding year, and support services.
+2. **Hof University - Cross Cultural Nursing Practice M.Sc. official module plan / ECTS breakdown (Studienverlaufsplan, Faculty INWISS, PDF)** — https://www.hof-university.com/fileadmin/user_upload/ask/Flyer_internat_Stdg/230919_Studienverlaufsplan_M.Sc._englisch.pdf — official-program. Confirms the 120-ECTS module-by-module/semester-by-semester breakdown.
+3. **Hof University - official news article announcing the programme's 2024 launch** — https://www.hof-university.com/news-detail/hochschule-hof-will-auslaendische-pflegekraefte-anwerben-deren-kompetenzen-staerken-und-sie-integrieren.html — official-university. Confirms India-focused recruitment strategy, 800+ Indian students already integrated, Bangalore office, 900-hours internship requirement, statutory knowledge-exam prep, and Bavarian state government recognition-process context.
+4. **Campuls (Hof University's own news portal) - English republication of the launch announcement** — https://campuls.hof-university.com/teaching/neuartiger-studiengang-gegen-den-pflegenotstand-cross-cultural-nursing-practice-2/ — official-university. English-language corroboration of source 3.
+5. **Bibliomed Pflege (independent German nursing trade press) - "Erster Studiengang gegen den Pflegenotstand in Hof"** — https://www.bibliomed-pflege.de/news/47703-erster-studiengang-gegen-den-pflegenotstadt-in-hof — other (independent). Independent, non-university confirmation of the programme's 2024 launch, tuition-free structure, India focus, and entry requirements.
+6. **Wikipedia - Hof University** — https://en.wikipedia.org/wiki/Hof_University — other (independent). Corroborates founding year (1994), location, and approximate student/staff numbers.
+7. **Wikipedia - Hof, Bavaria** — https://en.wikipedia.org/wiki/Hof,_Bavaria — other (independent). Corroborates city population, geography, and general historical/textile-industry context used for neutral city-profile framing.
+
+Additional sources consulted but not cited as primary evidence (used only to identify the programme's revision/relaunch status): mastersportal.com, master-and-more.eu, and studis-online.de aggregator listings, and general web search summaries referencing the expected "Advanced Nursing Practice (M.Sc.)" relaunch for winter semester 2026/27.

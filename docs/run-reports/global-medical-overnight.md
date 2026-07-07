@@ -1,282 +1,222 @@
-# Overnight Global Medical/Health University Auto-Publish — End-of-Run Report
+# Global Medical/Health University Overnight Run — End-of-Run Report
 
-**Run scope:** Net-new medical/health university research and auto-publish across all codebase countries (Russia, Georgia, Uzbekistan, Vietnam, Germany, Italy, Lithuania, Malta, Albania, Canada).
+**Run scope:** Net-new medical/health-related university research and auto-publish pass across all codebase countries.
 **Report generated:** 2026-07-07
 
 ---
 
-## 1. Summary
+## Summary
 
 | Metric | Count |
 |---|---|
-| Total universities processed | 33 |
-| Published | 7 |
-| Held (research complete, not publish-ready) | 22 |
-| Failed (DB/technical error, not a content gate failure) | 4 |
+| Total universities processed | 22 |
+| Published (live) | 5 |
+| Held / not published | 16 |
+| Failed (technical error, not held on editorial grounds) | 1 |
 
-**Per-country breakdown** (published / held / failed / total):
+**Per-country breakdown:**
 
-| Country | Published | Held | Failed | Total |
-|---|---|---|---|---|
-| Russia | 0 | 2 | 0 | 2 |
-| Georgia | 0 | 1 | 0 | 1 |
-| Uzbekistan | 0 | 1 | 0 | 1 |
-| Vietnam | 0 | 2 | 0 | 2 |
-| Germany | 1 | 1 | 0 | 2 |
-| Italy | 1 | 4 | 0 | 5 |
-| Lithuania | 0 | 0 | 2 | 2 (both PASS-gate but DB-error blocked) |
-| Malta | 2 | 2 | 1 | 5 |
-| Albania | 1 | 3 | 0 | 4 |
-| Canada | 1 | 8 | 0 | 9 |
+| Country | Processed | Published | Held/Failed |
+|---|---|---|---|
+| Georgia | 2 | 0 | 2 (held) |
+| Kyrgyzstan | 2 | 1 | 1 (failed — DB type error) |
+| Uzbekistan | 1 | 1 | 0 |
+| Vietnam | 5 | 0 | 5 (held) |
+| Germany | 1 | 0 | 1 (held) |
+| Italy | 3 | 0 | 3 (held) |
+| Lithuania | 2 | 0 | 2 (held) |
+| Albania | 3 | 2 | 1 (held) |
+| Canada | 3 | 0 | 3 (held) |
 
-Note on Lithuania: both entries passed the content/validation gate (verdict "PASS") but the publish step aborted on a database schema error unrelated to content quality (see Failed section). They are not content holds.
+Note: one Vietnam entry (HUTECH — Medicine and Traditional Medicine Program) is the same institution as a previously-researched sibling draft (HUTECH Faculty of Medicine) and is counted once here as its own processed item per the run data provided.
 
 ---
 
-## 2. Published universities (live on site)
+## Published (live)
 
-### Germany
-- **European University Cyprus (EUC) School of Medicine – Frankfurt Branch**
-  Live: `/university/european-university-cyprus-euc-school-of-medicine-frankfurt-branch`
-  Sources cited in draft:
-  - https://euc.ac.cy/en/academics/schools-departments/school-of-medicine/school-of-medicine-frankfurt-branch/
-  - https://euc.ac.cy/en/frankfurt/
-  - https://euc.ac.cy/en/campus-life/student-accommodation-in-frankfurt/
-  - https://en.wikipedia.org/wiki/European_University_Cyprus
-  - https://thepienews.com/study-medicine-in-english-in-the-heart-of-europe-euc-school-of-medicine-frankfurt/
-  - https://www.desire2study.com/euc-school-of-medicine-frankfurt
-  - https://becomeadoctor.eu/germany/european-university-cyprus-frankfurt-branch/
+### Kyrgyzstan
+- **Jalal-Abad State University named after B.Osmonov, Medical Faculty**
+  Live: `/university/jalal-abad-state-university-named-after-b-osmonov-medical-faculty`
+  Draft: `research-drafts/kyrgyzstan/jalal-abad-state-university-named-after-b-osmonov-medical-faculty.json`
+  Sources:
+  - https://jasu.kg/
+  - https://jasu.kg/about-medical-faculty/
+  - https://jasu.kg/about-us/
+  - https://jasu.kg/hostel/
+  - https://jasu.kg/admission/
+  - https://jasu.kg/academic-council-fmge-pmdc-bmdc-nmc-classesacademic-council/
+  - https://jasu.kg/jasu-scholarship-program/
+  - https://jasu.kg/contact/
+  - https://search.wdoms.org/Home/SchoolDetail/F0000580
+  - https://www.ruseducation.in/university/jalal-abad-state-medical-university-in-kyrgyzstan/
+  - https://www.selectyouruniversity.com/college/jalalabad-state-university-cid-300150
+  - https://en.wikipedia.org/wiki/Jalal-Abad
 
-### Italy
-- **Università Cattolica del Sacro Cuore – Faculty of Medicine and Surgery (Rome campus / Gemelli)**
-  Live: `/university/universita-cattolica-del-sacro-cuore-faculty-of-medicine-and-surgery-rome-campus-gemelli`
-  Sources cited in draft:
-  - https://international.unicatt.it/ucscinternational-undergraduate-programs-medicine-and-surgery
-  - https://international.unicatt.it/ucscinternational-medicine-and-surgery-application-procedures
-  - https://international.unicatt.it/ucscinternational-applications-tuitions-tuition-fees-and-scholarships-3074
-  - https://international.unicatt.it/ucscinternational-roma-accommodation
-  - https://www.unicatt.it/corsi/triennale/medicine-and-surgery-roma.html
-  - https://www.unicatt.it/corsi/triennale/medicine-and-surgery-roma/cattolica-md-international-programme/policlinico-gemelli-university-hospital.html
-  - https://roma.unicatt.it/il-campus-storia-del-campus
-  - https://www.policlinicogemelli.it/en/information/history-future/
-  - https://en.wikipedia.org/wiki/Gemelli_University_Hospital
-  - https://en.wikipedia.org/wiki/Universit%C3%A0_Cattolica_del_Sacro_Cuore
-  - https://www.medlinkstudents.com/universities/catholic-university-sacred-heart-medicine/
-  - https://www.topuniversities.com/universities/universita-cattolica-del-sacro-cuore/undergrad/medicine-surgery-rome-campus
-  - https://www.wantedinrome.com/area/balduina-monte-mario
-  - https://anamericaninrome.com/2017/09/best-rome-neighborhoods-students/
-  - https://www.numbeo.com/crime/in/Rome
-
-### Malta
-- **ASOMI College of Sciences (ACS)**
-  Live: `/university/asomi-college-of-sciences-acs`
-  Sources cited in draft:
-  - https://www.acs-college.com/about-us
-  - https://www.acs-college.com/course-doctor-of-medicine-surgery
-  - https://www.acs-college.com/course-doctor-of-dental-medicine
-  - https://www.acs-college.com/medica-university-of-plovdiv
-  - https://www.acs-college.com/programmes
-  - https://www.acs-college.com/accommodation
-  - https://euroguidance.gov.mt/euro_schools/asomi-college-of-sciences/
-  - https://www.maltaquality.education/portfolio/asomi-college-of-sciences/
-  - https://www.medlinkstudents.com/universities/asomi-college-of-sciences-malta/
-  - https://search.wdoms.org/home/SchoolDetail/F0000373
-
-- **MediCampus Europeo (MCE) – Faculty of Medicine, in partnership with Trakia University**
-  Live: `/university/medicampus-europeo-mce-faculty-of-medicine-in-partnership-with-trakia-university`
-  Sources cited in draft:
-  - https://medicampus.edu.mt/faculty-of-medicine
-  - https://www.medicampus.edu.mt/overview
-  - https://medicampus.edu.mt/accreditation-and-recognition
-  - https://www.medicampus.edu.mt/campus
-  - https://medicampus.edu.mt/housing-and-cafeteria
-  - https://medicampus.edu.mt/international-student-services
-  - https://trakia-uni.bg/en/about-us/faculties/faculty-of-medicine/
-  - https://en.wikipedia.org/wiki/Trakia_University
-  - https://en.wikipedia.org/wiki/Floriana
-  - https://www.eatoutmalta.com/listing/cuisine-type/indian
-  - https://www.numbeo.com/crime/rankings_by_country.jsp
-  - https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/
+### Uzbekistan
+- **AKFA University Medical School**
+  Live: `/university/akfa-university-medical-school`
+  Draft: `research-drafts/uzbekistan/akfa-university-medical-school.json`
+  Sources:
+  - https://centralasian.uz/
+  - https://centralasian.uz/medical
+  - https://centralasian.uz/medica-faculty
+  - https://centralasian.uz/facility
+  - https://centralasian.uz/internationalstudents
+  - https://centralasian.uz/admissionregulations
+  - https://centralasian.uz/tpost/r6zxlm9km1-akfa-university-is-becoming-central-asia
+  - https://centralasian.uz/tpost/09x5uc3kg1-akfa-medline-becomes-part-of-central-asi
+  - https://search.wdoms.org/home/SchoolDetail/F0006802
+  - https://en.wikipedia.org/wiki/Central_Asian_University
 
 ### Albania
-- **Albanian University**
-  Live: `/university/albanian-university`
-  Sources cited in draft:
-  - https://albanianuniversity.edu.al/en/
-  - https://albanianuniversity.edu.al/en/faculty-of-medical-sciences/
-  - https://albanianuniversity.edu.al/en/pharmacy-department/
-  - https://albanianuniversity.edu.al/en/department-of-dentistry/
-  - https://albanianuniversity.edu.al/en/the-admission-criteria/
-  - https://en.wikipedia.org/wiki/Albanian_University
-  - https://www.ascal.al/en/about-us/mission-and-activity
-  - https://www.numbeo.com/cost-of-living/in/Tirana
+- **Aldent University**
+  Live: `/university/aldent-university`
+  Draft: `research-drafts/albania/aldent-university.json`
+  Sources:
+  - https://ual.edu.al/
+  - https://ual.edu.al/about-us/
+  - https://ual.edu.al/accreditation/
+  - https://ual.edu.al/bachelor-programs/
+  - https://ual.edu.al/master-programs/
+  - https://ual.edu.al/rt-program/master-of-science-in-dentistry/
+  - https://ual.edu.al/rt-program/general-nursing/
+  - https://ual.edu.al/rt-program/master-of-science-in-pharmacy/
+  - https://www.ascal.al/en/hei-list/hei/universiteti-aldent-2
+  - https://en.wikipedia.org/wiki/Aldent_University
 
-### Canada
-- **Dalhousie University**
-  Live: `/university/dalhousie-university`
-  Sources cited in draft:
-  - https://www.dal.ca/
-  - https://www.dal.ca/about/our-story/history.html
-  - https://en.wikipedia.org/wiki/Dalhousie_University
-  - https://www.thecanadianencyclopedia.ca/en/article/dalhousie-university
-  - https://cdn.dal.ca/content/dam/dalhousie/pdf/dentistry/DENT-DDS-Fact-sheet-Sept-2025.pdf
-  - https://www.dal.ca/study/programs/graduate-professional/dentistry-dds.html
-  - https://cdn.dal.ca/content/dam/dalhousie/pdf/admissions/MoneyMatters/Dentistry%20and%20Medicine%202026-2027.pdf
-  - https://bemoacademicconsulting.com/blog/dalhousie-medical-school
-  - https://medicine.dal.ca/departments/core-units/admissions.html
-  - https://www.dal.ca/faculty/health/pharmacy.html
-  - https://www.dal.ca/faculty/health/nursing/undergraduate-program/admission-requirements.html
-  - https://www.dal.ca/dal/india.html
-  - https://www.dal.ca/campus_life/international-centre/new-students/housing.html
-  - https://www.dal.ca/life-at-dal/student-support/international-students.html
-  - https://ndeb-bned.ca/
-  - https://www.cbc.ca/news/canada/nova-scotia/growing-asian-population-grocery-stores-1.7070358
-  - https://southasianmart.ca/
-  - https://www150.statcan.gc.ca/n1/pub/85-002-x/2020001/article/00001/halifax-eng.htm
+- **University of Medicine, Tirana (UMT)**
+  Live: `/university/university-of-medicine-tirana`
+  Draft: `research-drafts/albania/university-of-medicine-tirana.json`
+  Sources:
+  - https://umed.edu.al/en/
+  - https://umed.edu.al/en/rreth-nesh/historiku/
+  - https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-mjekesise/
+  - https://umed.edu.al/en/edukimi/pranimet-dhe-regjistrimet/
+  - https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-mjekesise-dentare-2/
+  - https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-shkencave-mjekesore-teknike/
+  - https://en.wikipedia.org/wiki/University_of_Medicine,_Tirana
+  - https://search.wdoms.org/home/SchoolDetail/F0001900
+  - https://www.unipage.net/en/4798/university_of_medicine_tirana
+  - https://mbbsmithram.com/universities/university-of-medicine-tirana/
+  - https://indembtirana.gov.in/bilateral-relations
 
 ---
 
-## 3. Held / needs attention (research complete, NOT published)
-
-### Russia
-
-**S.M. Kirov Military Medical Academy** — `research-drafts/russia/s-m-kirov-military-medical-academy.json`
-Reason: Resumed from an existing draft (not re-researched, per resume-check rule). This is a Russian MoD military institution (est. 1798); its foreign-student faculty trains military-medical specialists of foreign armies under intergovernmental/MoD quotas, not a civilian MBBS pathway for Indian NEET students. No source corroborates a civilian admission route. Held intentionally, not a fixable gate failure.
-
-**Russian Medical Academy of Continuous Professional Education (RMANPO)** — `research-drafts/russia/russian-medical-academy-of-continuous-professional-education.json`
-Reason: Postgraduate-only medical academy (residency/PhD/CME for already-qualified doctors). No undergraduate MBBS/specialitet program exists, so no program maps to the required courseSlug set. Omitted rather than fabricated.
+## Held / needs attention
 
 ### Georgia
 
-**Telavi Iakob Gogebashvili State University – Faculty of Healthcare (Public Health)** — `research-drafts/georgia/telavi-iakob-gogebashvili-state-university-faculty-of-healthcare.json`
-Reason: Could not corroborate a currently active "Faculty of Healthcare." Only trace found is archived PDFs (2007/2011) for a Pharmacy curriculum and a Public Health PhD document not linked from any current page. All program/narrative fields left empty per never-fabricate rule.
+**Georgian-American Nursing College (GANC)** — HOLD
+Draft: `research-drafts/georgia/georgian-american-nursing-college.json`
+Reason: GANC is a Georgian VET/vocational college, not a higher-education university. Its official program catalogue confirms the only active program is a Georgian-language modular "Practical Nurse" vocational program (EQF level 5). No English-medium track, international/Indian-student admissions, or INC/foreign-council recognition found anywhere. Does not fit the site's bsc-nursing/India-audience template.
+Sources: http://ganc.ge/en/about-us, http://ganc.ge/assets/[program-catalogue].pdf, http://ganc.ge/en/about-us/administration, http://ganc.ge/en/about-us/aim
 
-### Uzbekistan
+**Batumi Medical Academy (BMEDA)** — HOLD
+Draft: `research-drafts/georgia/batumi-medical-academy-bmeda.json`
+Reason: Confirmed via its own official site to be a vocational-education (VET) college (Pharmacy, Dental Technician, Nursing at vocational/certificate level only), regulated by the Board of Authorization of Vocational Education Institutions. No MBBS/medical-pg/BSc Nursing/Pharmacy degree/BDS program exists. Actual MBBS-granting institutions in Batumi are separate entities (Batumi Shota Rustaveli State University, Avicenna Batumi Medical University).
+Sources: https://www.bmeda.edu.ge/en, https://bmeda.edu.ge/en/history, https://bmeda.edu.ge/en/courses/educational-programs, https://bmeda.edu.ge/en/authorizationDecision, https://www.justmbbs.com/mbbs-college/georgia/batumi-shota-rustaveli-state-medical-university, https://avicennabatumi.edu.ge/
 
-**Jizzakh State Pedagogical University Faculty of Medicine** — `research-drafts/uzbekistan/jizzakh-state-pedagogical-university-faculty-of-medicine.json`
-Reason: Source-verification integrity issue — reviewNotes misrepresent the cited Leverage Edu source (which does list "Jizzakh State Medical Institute" with a tuition figure). Needs corrected reasoning (no NMC official list exists; identity of the institute vs. this university is unverified) before it can be reconsidered. Also flagged: hostelOverview contains unconfirmed specific physical details.
+### Kyrgyzstan
+
+**International Medical University (IMU)** — FAILED (technical, not editorial)
+Draft: `research-drafts/kyrgyzstan/international-medical-university.json`
+Reason: Seed step succeeded (queue-id 80, draft-id 86). Publish step failed with a database type error: the program "Doctor of Medicine / General Medicine (MBBS-equivalent)" has `duration_years = 5.5`, but the `program_offerings.duration_years` column is an integer type in the DB, so Postgres rejected the insert (`invalid input syntax for type integer: "5.5"`). This is a schema/data-type mismatch, not a content/verification failure. No live row was published; no workaround was attempted. Queue entry (queue-id 80, draft-id 86) remains in the review queue awaiting a schema fix (e.g., migrate `duration_years` to numeric/decimal) or a data-rounding decision.
+Sources: https://imu.edu.kg/en/about-us, https://search.wdoms.org/home/SchoolDetail/F0005118, https://imu.edu.kg/en/education/faculties-of-the-university/general-medicine, https://imu.edu.kg/en/to-the-applicant/welcome-to-imu, https://imu.edu.kg/en
 
 ### Vietnam
 
-**Nam Dinh University of Nursing** — `research-drafts/vietnam/nam-dinh-university-of-nursing.json`
-Reason: Confirmed real Vietnamese public university (MOH), but all programs are Vietnamese-medium (Nursing/Midwifery/Nutrition); no English-taught or international-admissions pathway corroborated. Official site (ndun.edu.vn) had TLS fetch errors; mirror site's inner routes returned only template boilerplate. Programs/narrative fields left empty.
+**Nam Dinh University of Nursing** — HOLD
+Draft: `research-drafts/vietnam/nam-dinh-university-of-nursing.json`
+Reason: No corroborated English-taught program or international/Indian-student admissions pathway. All sources describe Vietnamese-medium domestic bachelor's programs only. Only international activity found was a narrow 2019 Lao government-cooperation cohort, not a general admissions track.
+Sources: https://vi.wikipedia.org/wiki/Truong_Dai_hoc_Dieu_duong_Nam_Dinh, https://vnur.vn/truong-dai-hoc-dieu-duong-nam-dinh/, http://new.ndun.edu.vn/, http://studyinvietnam.edu.vn/detail-university/university-of-nam-dinh-nursing-511.html, https://www.heraldopenaccess.us/openaccess/training-master-s-in-nursing-program-of-nam-dinh-university-of-nursing-and-university-of-medicine-and-pharmacy-ho-chi-minh-city
 
-**Hai Duong Medical Technical University** — `research-drafts/vietnam/hai-duong-medical-technical-university.json`
-Reason: MOH public university (est. 1960) training Vietnamese-medium nursing/midwifery/physiotherapy/lab-tech staff. No English-medium program or international-admissions track found across 6 sources and multiple targeted searches. Fails the publish gate (no valid program, empty narrative fields).
+**Hai Duong Medical Technical University (HMTU)** — HOLD
+Draft: `research-drafts/vietnam/hai-duong-medical-technical-university.json`
+Reason: Vietnamese Ministry of Health public university whose official site and all findable pages are Vietnamese-only. Multi-source research found no English-medium program and no international/Indian-student admissions track. All narrative fields correctly left empty per exhaustive-then-omit rules.
+Sources: https://hmtu.edu.vn/, http://www.hmtu.edu.vn/Desktop.aspx/Introduction/Introduction/ (404), https://en.moet.gov.vn/recognised-higher-education-institutions/Pages/Universities.aspx, http://studyinvietnam.edu.vn/detail-university/university-of-hai-duong-medical-technical-279.html, https://www.university.me/university/hai-duong-medical-technical-university/programs, https://wholenursecatalog.com/listings/hai-duong-vietnam-hai-duong-medical-and-technical-university-hmtu/
+
+**Yersin University of Da Lat (Faculty of Pharmacy and Nursing)** — HOLD
+Draft: `research-drafts/vietnam/yersin-university-of-da-lat-faculty-of-pharmacy-and-nursing.json`
+Reason: Confirmed 4-year Pharmacy and 3-year Nursing programs exist, but exhaustive research found no English-medium instruction (curricula are Vietnamese-medium, English/Japanese are language subjects only) and no international/Indian-student admissions pathway (all 4 admission methods are domestic-only). Official "International Cooperation" page covers only outbound exchange for Yersin's own students.
+Sources: https://yersin.edu.vn/en/pharmacy/, https://yersin.edu.vn/en/nursing/, https://yersin.edu.vn/en/introducing-yersinuni/, https://yersin.edu.vn/en/qa/, https://yersin.edu.vn/en/news/international-cooperation/, https://www.ttcgroup.vn/en-US/news/ttcs-news/advantages-of-yersin-university-dalat-when-belonging-to-ttc-group, https://www.vietnam.vn/en/truong-dai-hoc-yersin-da-lat-don-nhan-huan-chuong-lao-dong-hang-ba-va-khai-giang-nam-hoc-2025-2026, https://www.vietnam.vn/en/diem-san-xet-tuyen-dai-hoc-chinh-quy-nam-2025-truong-dai-hoc-yersin-da-lat-la-15-5-diem
+
+**Ton Duc Thang University (Faculty of Pharmacy)** — HOLD
+Draft: `research-drafts/vietnam/ton-duc-thang-university-faculty-of-pharmacy.json`
+Reason: TDTU's own official admission portal confirms Pharmacy (5-year, code 7720201) is on the Vietnamese-taught list, not the English-taught or 50/50 lists. No English-medium Pharmacy track and no PCI recognition could be corroborated.
+Sources: https://pharmacy.tdtu.edu.vn/en, https://pharmacy.tdtu.edu.vn/en/academics/academic-program, https://admission.tdtu.edu.vn/en/undergraduate/course/Undergraduate-programs-taught-in-English-language, https://admission.tdtu.edu.vn/en/undergraduate/course/Undergraduate-programs-taught-in-Vietnamese-and-English-language, https://admission.tdtu.edu.vn/en/undergraduate/course/Undergraduate-programs-taught-in-Vietnamese-language, https://admission.tdtu.edu.vn/en/undergraduate/Admission-requirements, https://www.standyou.com/study-abroad/ton-duc-thang-university-vietnam/, https://pci.gov.in/en/approved-institute/approved-degree-institutions-us-12/
+
+**Ho Chi Minh City University of Technology (HUTECH) — Medicine and Traditional Medicine Program** — HOLD
+Draft: `research-drafts/vietnam/ho-chi-minh-city-university-of-technology-hutech-medicine-and-traditional-medicine-program.json`
+Reason: Same institution as previously-researched sibling draft (HUTECH Faculty of Medicine), already held for lacking English-medium instruction/India-specific pathway. This pass additionally found that Traditional Medicine is not yet an actively admitting 2026 program at all — press sources confirm it and Dentistry are planned once quality-assurance conditions are met; only Medicine, Pharmacy, Nursing, and Medical Lab Technology are enrolling in 2026.
+Sources: https://www.hutech.edu.vn/khoa-hoc-suc-khoe, https://nld.com.vn/tp-hcm-co-them-truong-dh-dao-tao-nganh-y-khoa-va-y-hoc-co-truyen-196251228183234958.htm, https://doisongphapluat.com.vn/truong-dai-hoc-hutech-du-kien-mo-nganh-y-khoa-va-y-hoc-co-truyen-tu-nam-2026-a708373.html, https://huongnghiep.hocmai.vn/hutech-ra-mat-truong-y-va-khoa-hoc-suc-khoe-buoc-tien-moi-trong-dao-tao-nhan-luc-y-te-chat-luong-cao, sibling draft: `research-drafts/vietnam/ho-chi-minh-city-university-of-technology-hutech-faculty-of-medicine.json`
 
 ### Germany
 
-**UMCH – University Medicine Campus Hamburg** — `research-drafts/germany/umch-university-medicine-campus-hamburg.json`
-Reason: One factual error — thingsToConsider/FAQ assert NExT "has replaced FMGE for graduates from 2025 onward" as unqualified fact; current sources (checked 2026-07-07) show NMC has deferred NExT rollout by 3-4 years and FMGE remains operative. All other facts (13 URLs, tuition, accreditation, campus details) verified accurate. Needs this one correction before publish.
+**Bremen University of Applied Sciences (HSB) — International Degree Programme in Nursing (B.Sc.)** — HOLD
+Draft: `research-drafts/germany/hochschule-bremen-city-university-of-applied-sciences-bremen-international-degree-programme-in-nursing-bsc.json`
+Reason: Fabricated/misattributed sourcing on the semester-contribution figure. The draft cites a source about the wrong university (Universität Bremen, not HSB) for a EUR 443 figure that doesn't appear in that source (which discusses a proposed EUR 425.40 figure for Uni Bremen, not HSB). All other material claims (German-medium instruction, B1.2 English entry requirement, degree structure, tuition-free status, blocked-account figures) were independently verified as correct. Fix required: correct or drop the semester-fee figure/citation before publishing.
+Sources: https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/, https://www.hs-bremen.de/en/study/before/application-and-admission/international-applications/, https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/detail/university-of-applied-sciences-bremen-international-course-in-nursing-g2752108/?hec-id=g2752108, https://www.hs-bremen.de/en/hsb/faculties/school-of-social-sciences/, https://en.wikipedia.org/wiki/City_University_of_Applied_Sciences, https://www.butenunbinnen.de/nachrichten/erhoehung-semesterbeitrag-bremen-100.html (mismatched citation), https://www.indianstudentsgermany.org/room/details/25, https://en.wikipedia.org/wiki/Bremen
 
 ### Italy
 
-**Vita-Salute San Raffaele University (UniSR)** — `research-drafts/italy/vita-salute-san-raffaele-university.json`
-Reason: Multiple fabricated/misattributed details in indianFoodSupport (invented grocery store name "Krishna Indian Bazaar," invented restaurant "Saravanaa Bhavan" not in cited sources), unsupported specific neighborhoods in safetyOverview ("San Siro, Corvetto" not in cited source), and unsupported demographic specifics in cityProfile (Indian population figures not in any cited source). Core program/fee/accreditation facts verified accurate.
+**Humanitas University** — HOLD
+Draft: `research-drafts/italy/humanitas-university.json`
+Reason: Two broken URLs found — official homepage `hunimed.eu/en/` and `hunimed.eu/campus-and-accomodation/` both return HTTP 404 (correct live URLs: `hunimed.eu/` root and `hunimed.eu/campus/`). Minor secondary note: draft slightly overstates Nobel-laureate faculty integration (they are visiting professors/advisory-board, not core resident faculty).
+Sources: https://www.hunimed.eu/en/ (404), https://www.hunimed.eu/course/medicine/, https://www.hunimed.eu/admissions-med-schools/, https://www.hunimed.eu/campus-and-accomodation/ (404), https://en.wikipedia.org/wiki/Humanitas_University, https://www.camplus.it/en/city/milan/camplus-humanitas-university/, https://en.wikipedia.org/wiki/Pieve_Emanuele, https://www.shiksha.com/studyabroad/italy/universities/humanitas-university/fees, https://www.standyou.com/blog/is-mbbs-in-italy-valid-in-india/
 
-**Humanitas University (Hunimed)** — `research-drafts/italy/humanitas-university-hunimed.json`
-Reason: Citation mismatch in indianFoodSupport (named venues not in the cited source, though independently confirmed real); one dead/inaccessible sourceBundle citation (better.medicaltourism.com, 403); unverified specific hostel unit-count details (62 apartments + 23 rooms vs. official page's 240 beds figure); uncited Indian-population and "Economist safety ranking" claims.
+**Università Campus Bio-Medico di Roma (UCBM)** — HOLD
+Draft: `research-drafts/italy/universita-campus-bio-medico-di-roma.json`
+Reason: Wrong establishedYear. Draft states 1991; both the official site and cited Wikipedia article state the university was established/born in 1993 (with the promoting association formed in 1990). The 1991 figure traces to an unreliable secondary source (MedlinkStudents) that the draft's own review notes had already flagged as not a primary source. Fix: change establishedYear to 1993 and adjust founding narrative.
+Sources: https://www.unicampus.it/en/, https://www.unicampus.it/en/courses/training-offer/master-s-degree-courses/departmental-faculty-of-medicine-and-surgery/cdlm-medicine-and-surgery-lm-41/, https://www.unicampus.it/en/corsi/how-to-apply/, https://www.unicampus.it/en/external-student-services/tuition-fees-and-financial-aid/, https://www.unicampus.it/en/services/right-to-study/student-accommodation/, https://en.wikipedia.org/wiki/Universit%C3%A0_Campus_Bio-Medico, https://www.topuniversities.com/universities/universita-campus-bio-medico-di-roma, https://www.medlinkstudents.com/universities/campus-bio-medico-university-rome/ (source of the erroneous 1991 date)
 
-**Saint Camillus International University of Health and Medical Sciences (UniCamillus)** — `research-drafts/italy/unicamillus-saint-camillus-international-university-of-health-and-medical-sciences.json`
-Reason: hostelOverview/thingsToConsider incorrectly state no discounted accommodation could be confirmed — an official page (unicamillus.org/en/students/benefits/) lists named discount housing partners (Sakura Dormitory, Sant'Alessandro Residence, UniCampus Apartments) that were missed. Minor: "8 business days" for residence permit not supported by cited source wording ("8 days").
+**Vita-Salute San Raffaele University** — HOLD
+Draft: `research-drafts/italy/vita-salute-san-raffaele-university.json`
+Reason: Several sourcing mismatches: (1) indianFoodSupport cites a source that does not mention "Krishna Indian Bazaar" or "Saravanaa Bhavan" (both real, but uncited); (2) safetyOverview names "San Siro"/"Corvetto" as higher-crime areas, not supported by the cited source (only "Quarto Oggiaro" is named there); (3) OSAP recognition and Lombardy DSU scholarship claims are true but sourced from a page not included in the sourceBundle; (4) one general source (karangupta.com) returned empty SPA content and could not be verified, though it wasn't load-bearing.
+Sources: https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program, https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program/ammissioni-mdprogram, https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program/imdp-curriculum, https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/tuition-fees, https://www.unisr.it/en/servizi/international-students/accomodation, https://en.wikipedia.org/wiki/Vita-Salute_San_Raffaele_University, https://www.rentalmilan.com/is-it-safe-in-milan/ (cited but doesn't support all safety claims), https://italystudycentre.com/indian-food-grocery-milan-bicocca/ (cited but doesn't support all restaurant names), https://www.karangupta.com/blog/mbbs-in-italy-for-indian-students-imat-exam-and-english-taught-medical-programme (unverifiable, empty content)
 
-**Campus Bio-Medico University of Rome (UCBM)** — `research-drafts/italy/campus-bio-medico-university-of-rome-ucbm.json`
-Reason: The cited WDOMS URL (search.wdoms.org/home/SchoolDetail/F0000269) does not resolve to UCBM — it shows an unrelated Brazilian school, reproduced across 3 fresh fetches. This affects a recognition claim in whyChoose and an FAQ answer. Needs a working WDOMS link or the claim softened/removed. All other facts verified.
+### Lithuania
 
-### Lithuania (content passed gate — see Failed section for why not live)
+**Kauno Kolegija (Kaunas University of Applied Sciences) — Faculty of Medicine** — HOLD
+Draft: `research-drafts/lithuania/kauno-kolegija-kaunas-university-of-applied-sciences.json`
+Reason: Two dead sourceBundle links (`/en/about-us/`, `/en/main-facts/` — correct path uses `/english/` not `/en/`). Minor numeric inaccuracy repeated 5 times: dormitory pricing stated as "roughly EUR 75" but the official page confirms the actual floor price is EUR 80/month. Both are fixable citation/figure corrections, not fundamental disqualifiers.
+Sources: https://apply.kaunokolegija.lt/courses/course/25-general-practice-nursing, https://www.kaunokolegija.lt/en/about-us/ (dead — use /english/about-us/), https://www.kaunokolegija.lt/en/main-facts/ (dead — use /english/main-facts/), https://www.kaunokolegija.lt/en/dormitories-2/, https://kaunokolegija.lt/english/why-kauno-kolegija/, https://studyin.lt/programs/general-practice-nursing/, https://studyin.lt/institutions/kauno-kolegija-higher-education-institution/, https://en.wikipedia.org/wiki/Kaunas
 
-**Klaipėda State University of Applied Sciences** — verdict PASS, not yet published (queue/DB step not reported as run in this batch; no error logged for this entry specifically — treat as pending re-run)
-Sources cited in draft:
-- https://www.kvk.lt/en/program/general-practice-nursing/
-- https://www.kvk.lt/en/about-kvk/
-- https://www.kvk.lt/en/dormitories/
-- https://studyin.lt/institutions/klaipedos-valstybine-kolegija-higher-education-institution/
-- https://www.mastersportal.com/universities/9493/klaipdos-valstybin-kolegija-higher-education-institution.html
-- https://www.britannica.com/place/Klaipeda
-
-### Malta
-
-**University of Malta – Faculty of Medicine and Surgery** — `research-drafts/malta/university-of-malta-faculty-of-medicine-and-surgery.json`
-Reason: Misattributed and stale accreditation claim — draft asserts current AMSE/ASIIN accreditation as fact, but this was a 5-year term valid only through 30 September 2024, nearly two years before this draft's verification date. Needs re-verification of current status or removal/caveat.
-
-**Queen Mary University of London, Malta Campus (Barts and The London)** — `research-drafts/malta/queen-mary-university-of-london-malta-campus-barts-and-the-london-school-of-medicine-and-dentistry.json`
-Reason: Dead source URL cited for a cost-of-living claim (404; correct live URL identified). Repeated naming error "BSLA Malta" instead of "BLSA" (4 occurrences). IELTS 7.0 requirement attributed to a source page that doesn't mention IELTS at all (correct source not cited).
+**Vilnius University of Applied Sciences (VIKO) — General Care Nursing** — HOLD
+Draft: `research-drafts/lithuania/vilnius-university-of-applied-sciences-viko-general-care-nursing.json`
+Reason: Core premise ("English-taught") could not be corroborated and is contradicted by primary sources. VIKO's official "Degree programmes in English" list (10 programmes) does not include General Care Nursing; the programme's official page lives under the Lithuanian-medium URL path, with English listed only as a taught subject. No source confirms English-medium delivery. All content correctly left null; institutional facts (scale, admissions process, campus) preserved for future reuse if VIKO launches an English-medium track.
+Sources: https://en.viko.lt/for-students/degree-programmes-in-lt/general-care-nursing/, https://en.viko.lt/for-students/degree-programmes-in-en/, https://en.viko.lt/for-students/tuition-fees/, https://en.viko.lt/about-us/facts-and-figures/, https://en.viko.lt/admissions/admission-requirements/, https://en.viko.lt/for-students/how-to-apply/, https://en.spf.viko.lt/, https://studyin.lt/institutions/vilniaus-kolegija-higher-education-institution/, https://studyin.lt/programs/general-care-nursing/ (404)
 
 ### Albania
 
-**University of Medicine, Tirana (UMT)** — `research-drafts/albania/university-of-medicine-tirana.json`
-Reason: Draft misstates its own cited source — claims Indian community is "well under a few hundred," but the cited Indian Embassy source states approximately 700 (including 294 students). Single factual correction needed.
-
-**Catholic University "Our Lady of Good Counsel" (UNIZKM)** — `research-drafts/albania/catholic-university-our-lady-of-good-counsel-unizkm.json`
-Reason: Material omission — an active English-medium Medicine program (separate from the Italian-medium track cited) appears to exist at a distinct official URL, and an official tuition-fee page (EUR 5,360/year) was missed; draft explicitly stated fees were unconfirmed. Both should be verified and incorporated; they materially affect the draft's NMC-eligibility/cost framing. Minor: suboptimal officialProgramUrl for Dentistry; hostel claim slightly overstated as unconfirmed.
-
-**Aldent University** — `research-drafts/albania/aldent-university.json`
-Reason: Draft flatly asserts "Aldent does not offer a general-medicine/MBBS programme," but the university's own cited ASCAL accreditation registry lists a 13th program — an Integrated Master of Science in General Medicine under a Medical Education Department — not disclosed anywhere in the draft. All other facts (12 sources, 3 programs, fees) verified accurate.
+**Catholic University "Our Lady of Good Counsel" (UNIZKM) — Faculty of Medicine and Surgery** — HOLD
+Draft: `research-drafts/albania/catholic-university-our-lady-of-good-counsel-unizkm.json`
+Reason: Material factual error — draft asserts no English-medium track exists for Medicine, contradicted by a live official UNIZKM page for an English-taught "Cycle Degree Course in Medicine and Surgery" (founded AY2023-2024, joint Tor Vergata diploma), corroborated independently by a third-party consultancy. Also a material omission: draft claims no official tuition figures exist, but an official UNIZKM tuition page states EUR 5,360/year for Medicine plus scholarship tiers. Both must be corrected — this is the single most important fact for the target audience and is currently stated backwards.
+Sources: https://www.unizkm.al/en, https://www.unizkm.al/study/course/corso-di-laurea-in-medicina-e-chirurgia/en (Italian-medium page currently used as officialProgramUrl), https://www.unizkm.al/study/course/corso-di-laurea-magistrale-a-ciclo-unico-quinquennale-in-farmacia/en, https://www.unizkm.al/study/course/corso-di-laurea-in-infiermieristica/en, https://unizkm.al/posts/slug/universita-cattolica-nostra-signora-del-buon-consiglio-sede-di-elbasan/en, https://en.wikipedia.org/wiki/Our_Lady_of_Good_Counsel_University, https://www.unipage.net/en/4787/catholic_university_our_lady_of_good_counsel, https://www.unirank.org/al/uni/catholic-university-our-lady-of-good-counsel/, https://en.wikipedia.org/wiki/Elbasan
+Missing from sourceBundle but should be added: `https://www.unizkm.al/study/course/cycle-degree-course-in-medicine-and-surgery/en` (English-taught program page) and `https://www.unizkm.al/study/tax/taksat-dhe-kontributet-per-programin-e-studimit-ne-mjekesi-te-pergjithshme/en` (tuition page)
 
 ### Canada
 
-**University of British Columbia** — `research-drafts/canada/university-of-british-columbia.json`
-Reason: False/uncited claim that QS Best Student Cities ranks Vancouver "Canada's top student city" (actually 3rd, behind Montreal and Toronto). Citation mismatch on a nursing-eligibility claim (correct underlying fact, wrong source cited). Minor unsourced stats (housing count inference, DMD cohort size). Editorial/taxonomy concern: mapping graduate-entry DMD to "bds" courseSlug may mislead Class-12 direct-entry expectations.
+**Western University (Schulich School of Medicine & Dentistry)** — HOLD
+Draft: `research-drafts/canada/western-university-schulich-school-of-medicine-dentistry.json`
+Reason: No program maps honestly to the platform's course catalog. MD is citizenship/PR-gated by default (only 3 international supernumerary seats/year, requires completed North American undergrad degree + MCAT). DDS international seats require a completed undergrad degree + DAT/Casper and exclude fresh BDS-equivalent entry. IMG/CaRMS residency requires citizenship/PR. No nursing or pharmacy program exists.
+Sources: https://www.schulich.uwo.ca/med-dent-admissions/medicine/application-pathways.html, https://www.schulich.uwo.ca/med-dent-admissions/dentistry/frequently-asked-questions.html, https://www.schulich.uwo.ca/medicine/postgraduate/future_learners/international_medical_graduates.html, https://en.wikipedia.org/wiki/Schulich_School_of_Medicine_and_Dentistry
 
-**University of Calgary (Cumming School of Medicine)** — `research-drafts/canada/university-of-calgary-cumming-school-of-medicine.json`
-Reason: MD program restricted to Canadian citizens/PR/Convention refugees only; no BDS/Pharmacy/BSc Nursing offered; PG/Graduate Science Education divisions don't map to allowed courseSlugs. All programs and narrative fields correctly left empty — fails gate honestly, not fixable under current course taxonomy.
+**University of Manitoba (Dr. Gerald Niznick College of Dentistry)** — HOLD
+Draft: `research-drafts/canada/university-of-manitoba-dr-gerald-niznick-college-of-dentistry.json`
+Reason: Entry-level 4-year DMD program restricted to Canadian Citizens/Permanent Residents. The only international-applicant pathway (IDDP) is a 2-2.5 year degree-completion/upgrading program for those who already hold a foreign dental degree (entering Year 3), not an entry-level program for NEET-stage students. Does not map to the platform's `bds` course slug.
+Sources: https://umanitoba.ca/dentistry/, https://umanitoba.ca/explore/undergraduate-admissions/requirements/dentistry, https://umanitoba.ca/explore/undergraduate-admissions/requirements/iddp, https://catalog.umanitoba.ca/undergraduate-studies/health-sciences/dentistry/dental-medicine-dmd-international-dentists-degree-program/
 
-**Western University (Schulich School of Medicine & Dentistry)** — `research-drafts/canada/western-university-schulich-school-of-medicine-dentistry.json`
-Reason: No program maps honestly to site course slugs — MD/DDS both require citizenship/PR or a completed North American undergrad degree plus MCAT/DAT/Casper (not 12th-pass entry); IMG residency requires citizenship/PR or government sponsorship. All programs omitted.
-
-**University of Saskatchewan** — `research-drafts/canada/university-of-saskatchewan.json`
-Reason: Fabricated eligibility detail — draft repeatedly claims MD eligibility extends to "Convention refugee status," which does not appear in either official source cited (both state citizenship/PR + 3-years-residency only). Needs removal/correction throughout. Minor unsourced stats also flagged (international student count, advising-scope wording).
-
-**Simon Fraser University (Stephens Family School of Medicine)** — `research-drafts/canada/simon-fraser-university-stephens-family-school-of-medicine.json`
-Reason: Official admissions page explicitly states the MD program "is unable to accept applications from international applicants." Correctly held with disqualifying fact/source recorded; all narrative fields left empty by design.
-
-**Université Laval (Faculté de médecine)** — `research-drafts/canada/universite-laval-faculte-de-medecine.json`
-Reason: French-language-only MD requiring Quebec CEGEP/DEC credential; ~1 seat/year available to international applicants; no standalone nursing/pharmacy/dentistry program under this faculty. No honest program mapping possible.
-
-**Université de Montréal (Faculté de médecine)** — `research-drafts/canada/universite-de-montreal-faculte-de-medecine.json`
-Reason: Same structural finding as Laval — citizenship/PR required, ~2 international seats/year, French-medium (C1 requirement from Winter 2026); Dentistry/Pharmacy doctoral programs also structurally barred to non-permit-holding international applicants.
-
-**Université de Sherbrooke (Faculté de médecine et des sciences de la santé)** — `research-drafts/canada/universite-de-sherbrooke-faculte-de-medecine-et-des-sciences-de-la-sante.json`
-Reason: Same structural pattern — French-medium (CASPer in French, C1 required), Quebec DEC/90-credit requirement, government quota leaving ~1 international seat/year; no accessible medical-pg/nursing/pharmacy/bds pathway found. Direct site fetch timed out; facts corroborated via WebSearch + secondary sources instead.
+**University of Saskatchewan (College of Dentistry)** — HOLD
+Draft: `research-drafts/canada/university-of-saskatchewan-college-of-dentistry.json`
+Reason: Entry-level D.M.D. program's own official Admissions Guide requires Canadian citizenship or landed-immigrant status. The only other route (IDDP) is explicitly restricted the same way and is a 2-year degree-completion program for those who already hold a foreign dental degree (entering Year 3), not an entry-level program. Mirrors the identical finding for Manitoba and Western. Note: a separate, already-published-ready draft for this university's Nursing/Pharmacy programs exists at `research-drafts/canada/university-of-saskatchewan.json` and is unaffected by this hold.
+Sources: https://dentistry.usask.ca/, https://admissions.usask.ca/dentistry.php, https://admissions.usask.ca/documents/dentistry-admissions-information-guide.pdf, https://admissions.usask.ca/international-dentistry.php, https://admissions.usask.ca/documents/IDDP.pdf, https://programs.usask.ca/dentistry/iddp/index.php, https://dentistry.usask.ca/programs.php
 
 ---
 
-## 4. Failed (technical/DB errors — not content gate failures)
+## Follow-ups
 
-**Šiauliai State University of Applied Sciences** (Lithuania) — jsonPath: `research-drafts/lithuania/siauliai-state-university-of-applied-sciences.json`
-Verdict: PASS (content gate cleared). Seed succeeded (queue-id 72, draft-id 78). Publish step failed with `NeonDbError: invalid input syntax for type integer: "3.5"` — the General Practice Nursing program has `duration_years = 3.5`, but `program_offerings.duration_years` is an `integer` column. Nothing was committed. **Fix needed:** either round/adjust the duration value or migrate the column to a numeric/decimal type before retrying publish.
-
-**Utena University of Applied Sciences** (Lithuania) — jsonPath: `research-drafts/lithuania/utena-university-of-applied-sciences.json`
-Verdict: PASS (content gate cleared). Seed succeeded (queue-id 73, draft-id 79). Same root cause as Šiauliai: `duration_years = 3.5` rejected by the `integer` schema column (`drizzle/0000_adorable_black_bird.sql`). Nothing committed. Same fix needed.
-
-**EDU – Digital Education Holdings (EDU Medical, Faculty of Medicine)** (Malta) — jsonPath: `research-drafts/malta/edu-digital-education-holdings-edu-medical-faculty-of-medicine.json`
-Publish failed with the same class of DB error: `invalid input syntax for type integer: "5.5"` for the "Programme in Medicine: B.Med. + M.Med." program (duration_years = 5.5). Queue-id 76 / draft-id 82 seeded; publish aborted; nothing committed.
-Sources cited in draft (for reference/reconsideration):
-- https://web.archive.org/web/20231203194006/https://medical.edu.mt/faculty-of-medicine-and-health/medicine-programme/
-- https://web.archive.org/web/20241015175927/https://medical.edu.mt/admissions/
-- https://web.archive.org/web/20241205013313/https://medical.edu.mt/accreditation/
-- https://euroguidance.gov.mt/euro_schools/edu-operated-by-digital-education-holdings-ltd/
-- https://search.wdoms.org/
-- https://www.future-doctor.eu/medical-studies-malta/
-- https://en.wikipedia.org/wiki/Kalkara
-
-**Aleksandër Moisiu University of Durrës (UAMD)** (Albania) — no JSON draft written (by design)
-Not a technical failure in the DB sense — no Faculty of Medicine/Dentistry/Pharmacy/Nursing exists at this university (confirmed via official site navigation + Wikipedia + TopUniversities/UNIMED). Held as a genuine non-match; recommend excluding from future queue passes. Research record saved at `research-drafts/albania/aleksander-moisiu-university-of-durres.md`.
-
-**Recurring systemic issue:** Three separate entries (Šiauliai, Utena, EDU Malta) failed for the identical reason — fractional `duration_years` values (3.5, 3.5, 5.5) rejected by an `integer`-typed `program_offerings.duration_years` column. This is a schema limitation, not a content problem, and will block every future draft with a half-year program duration until fixed.
-
----
-
-## 5. Follow-ups
-
-1. **Schema fix (blocking, affects 3+ entries):** Change `program_offerings.duration_years` from `integer` to `numeric`/`decimal` (or round durations at seed time with an explicit convention) so Šiauliai, Utena, and EDU Malta can be retried and published without further research.
-2. **Germany — UMCH:** Correct the NExT-vs-FMGE claim (FMGE remains current; NExT rollout deferred), then republish.
-3. **Albania — Aldent University:** Add disclosure of the ASCAL-listed Integrated MSc in General Medicine program before publish.
-4. **Albania — UNIZKM:** Verify the apparent English-medium Medicine program and the EUR 5,360/year fee page; if confirmed, this changes the draft's core recommendation and should be re-authored before publish.
-5. **Albania — University of Medicine, Tirana:** One-line correction to the Indian-community-size figure (~700, not "under a few hundred"), then republish.
-6. **Italy (4 held items):** Each needs targeted citation/detail corrections (fabricated food/neighborhood specifics in UniSR and Hunimed drafts; missed official housing-benefits page for UniCamillus; broken WDOMS link for UCBM) — none require new research, only fixes to existing drafts.
-7. **Malta (2 held items):** University of Malta needs re-verification of AMSE/ASIIN accreditation currency; QMUL Malta needs a dead-link swap and 2 citation corrections.
-8. **Canada (7 held items):** Six of eight Canadian institutions (Calgary, Western, SFU, Laval, Montréal, Sherbrooke) are structurally blocked from an honest MBBS/BDS/PG/Nursing/Pharmacy mapping for Indian applicants (citizenship/PR requirements, French-medium instruction, or no matching program) — these are durable holds, not pending fixes, and should likely be excluded from future re-research passes. UBC and Saskatchewan need specific factual corrections (false QS ranking claim; fabricated "Convention refugee" eligibility clause) before they could pass.
-9. **Russia, Georgia, Uzbekistan, Vietnam (6 held items):** All are durable holds (no honest program mapping exists, or the source discrepancy needs resolving) except Jizzakh (Uzbekistan), which has a specific reviewNotes correction needed rather than a research gap.
-10. **Aleksandër Moisiu University of Durrës:** Recommend excluding permanently from the auto-publish queue (no health faculty exists).
-11. Re-run the publish step for **Klaipėda State University of Applied Sciences** (Lithuania) — verdict was PASS but no publish outcome/liveUrl was recorded in this run's data; status should be confirmed.
+1. **Schema fix needed (blocking):** `program_offerings.duration_years` is an integer column but at least one legitimate program (IMU Kyrgyzstan, 5.5-year MD) requires a fractional value. Migrate the column to numeric/decimal, or define a rounding/display convention, then re-attempt publishing IMU (queue-id 80, draft-id 86).
+2. **Quick-fix hold (low effort, high value):** UNIZKM (Albania) — swap in the correct English-medium program URL and the official tuition page; this could flip the verdict from HOLD to publishable once corrected.
+3. **Quick-fix holds (citation/figure corrections only):** Humanitas University (fix two 404 URLs), Università Campus Bio-Medico di Roma (fix establishedYear to 1993), Kauno Kolegija (fix two dead `/en/` links to `/english/`, correct dormitory floor price to EUR 80), Hochschule Bremen Nursing (fix/replace the semester-fee citation and figure), Vita-Salute San Raffaele (add missing citations for indianFoodSupport/safetyOverview/scholarship claims, drop or verify karangupta.com).
+4. **Correctly held, no action needed unless facts change:** Georgia (GANC, BMEDA — both vocational-only, no path to publish), Vietnam (5 institutions — all lack English-medium/international admissions tracks; revisit if any launches one), Lithuania VIKO (revisit only if an English-medium nursing track is confirmed), Canada (all 3 dentistry colleges — structurally citizenship/PR-gated at entry level; revisit only if IDDP-equivalent entry-level policy changes).
+5. All held drafts have companion `.md` research records alongside their `.json` files in `research-drafts/<country>/` for full audit trail and resumability without re-research.

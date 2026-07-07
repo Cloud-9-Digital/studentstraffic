@@ -1,0 +1,81 @@
+{
+  "_status": "HELD_NOT_PUBLISH_READY",
+  "_reason": "No verified English-medium, India-relevant program in the required course taxonomy (mbbs, medical-pg, bsc-nursing, pharmacy, bds). UW/H's Medicine (Staatsexamen) programme is German-medium requiring CEFR C1 German; there is no undergraduate BSc Nursing, Pharmacy, BDS, or Medical PG track. Only confirmed English-taught bachelor's is Management (non-medical, out of scope). See companion .md for full sourcing and rationale.",
+  "countrySlug": "germany",
+  "schoolName": "Witten/Herdecke University",
+  "cityName": "Witten",
+  "priority": "low",
+  "officialWebsite": "https://www.uni-wh.de/en/",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UW/H official site – International Students",
+        "url": "https://www.uni-wh.de/en/your-studies/international/international-students",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UW/H official site – Degree Programmes taught in English",
+        "url": "https://www.uni-wh.de/en/uwh-international/university/degree-programmes-taught-in-english/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UW/H official site – Medizin State Examination programme (German C1 requirement)",
+        "url": "https://www.uni-wh.de/en/studies/degree-programmes/state-examination-programmes/medizin-state-examination",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UW/H official site – Living in Witten",
+        "url": "https://www.uni-wh.de/en/our-vibe/student-life/living-in-witten",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia – Witten/Herdecke University",
+        "url": "https://en.wikipedia.org/wiki/Witten/Herdecke_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia – Witten (city)",
+        "url": "https://en.wikipedia.org/wiki/Witten",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "mygermanuniversity.com – Witten/Herdecke English-taught programmes",
+        "url": "https://www.mygermanuniversity.com/universities/Witten-Herdecke-University/english-programs",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "privathochschulen.net – Witten/Herdecke University fact sheet",
+        "url": "https://www.privathochschulen.net/en/universities/north-rhine-westphalia/witten-herdecke-university",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "medizinstudium.io – Medicine programme at Witten/Herdecke (German-medium)",
+        "url": "https://www.medizinstudium.io/universitaet/witten-herdecke/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Witten/Herdecke University",
+    "city": "Witten",
+    "type": "Private",
+    "establishedYear": 1982,
+    "officialWebsite": "https://www.uni-wh.de/en/",
+    "bestFitFor": [
+      "Not applicable — no verified English-medium MBBS/BDS/Pharmacy/BSc-Nursing/Medical-PG program exists at this institution for India-audience publication under this pipeline's taxonomy."
+    ],
+    "programs": []
+  },
+  "draftContent": {
+    "_note": "Narrative fields intentionally left unwritten. UW/H's health-faculty programs (Medicine Staatsexamen) are German-medium (CEFR C1 required) and there is no undergraduate BSc Nursing, Pharmacy, BDS, or Medical PG track suitable for this pipeline's India-facing course taxonomy. Writing full marketing narrative content would misrepresent language of instruction and program availability. See witten-herdecke-university.md for corroborated facts gathered (city, founding, faculties, housing, international support) that could seed a future non-medical (e.g. Management) listing if the codebase adds that scope."
+  }
+}

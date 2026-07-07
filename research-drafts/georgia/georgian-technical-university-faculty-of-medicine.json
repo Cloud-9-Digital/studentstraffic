@@ -1,0 +1,74 @@
+{
+  "ok": false,
+  "countrySlug": "georgia",
+  "schoolName": "Georgian Technical University (Faculty of Medicine)",
+  "cityName": "Tbilisi",
+  "status": "hold",
+  "holdReason": "COULD NOT CORROBORATE A GENUINE, ENGLISH-MEDIUM MBBS/MD/BDS/PHARMACY/NURSING DEGREE PROGRAM AT GEORGIAN TECHNICAL UNIVERSITY (GTU). GTU (est. 1922 as the Georgian Polytechnic Institute, granted university status 1990) is Georgia's flagship ENGINEERING/technical university in Tbilisi. Multiple third-party aggregator/agent sites (georgiatostudy.com, admissionex.com, alchetron.com, and others, apparently propagating a common Wikipedia-derived description) repeat a boilerplate claim that GTU 'has 14 faculties ... including Faculty of Medicine.' This claim was checked against GTU's OWN official sources and does not hold up: (1) GTU's official 'Facts & Figures' institutional leaflet (PDF, hosted via a partner university's site, sourced from GTU) explicitly lists '12 FACULTIES' by name -- Civil Engineering; Power Engineering and Telecommunications; Informatics and Control Systems; Transportation and Mechanical Engineering; Mining and Geology; Chemical Technology and Metallurgy; Architecture, Urban Planning and Design; International Design School; Business-Technologies; Engineering Economics, Media Technology and Social Sciences; Law and International Relations -- with NO Faculty of Medicine listed. (2) The same official leaflet's 'List of HE Programmes in Foreign Languages' (the authoritative list of GTU's English-medium degree programs across Bachelor's/Master's/PhD) contains NO medical degree of any kind -- only Design, Biomedical Engineering (an ENGINEERING degree under the Faculty of Informatics and Control Systems, not a clinical medical degree), Mechanical Engineering, Business Administration, Water Engineering, Viticulture and Enology, Agronomy, plus dual programs with San Diego State University (Electrical/Computer Engineering, Chemistry and Biochemistry, Civil/Construction Engineering). (3) GTU's own current live website (gtu.ge), both the English apply/programs pages and the Georgian-language 'Structural Units > Faculties' page, list the SAME 11-12 engineering/design/business/law faculties and contain zero occurrences of the word 'medicine' anywhere on the page. (4) 'Biomedical Engineering' -- GTU's ABET-accredited flagship English program that is sometimes conflated with 'medicine' -- is an ENGINEERING degree (medical instrumentation, biomaterials, medical imaging) housed in the Faculty of Informatics and Control Systems, not a clinical MBBS/MD/BDS/Pharmacy/Nursing qualification, and has no courseSlug match in {mbbs, medical-pg, bsc-nursing, pharmacy, bds}. (5) A recurring marketing blurb on agent sites claims GTU 'announces admission for Spring 2025 intake for Medical Doctor, Dentistry, and Computer Science Programs,' but this text could not be corroborated on any GTU official page, has no accompanying official program URL, curriculum, tuition, or faculty details, and reads as generic reused agent-site copy rather than a GTU-specific verified fact -- it may reflect confusion with another Georgian medical university (e.g., Tbilisi State Medical University, which does run a well-documented USMD/Emory-partnered MD program) or an unverifiable/outdated claim. Given the hard 'never fabricate' and 'exhaustive-then-omit' rules, and the India-audience requirement to only assert an NMC/PCI/INC-relevant medical degree when corroborated, this entry cannot be published as a medical/health university page. Recommendation: do not publish 'Georgian Technical University (Faculty of Medicine)' as a study-abroad medical destination; if GTU is to be covered at all on this site, it would need to be as a distinct ENGINEERING/technical-university entry (Biomedical Engineering, Mechanical Engineering, Computer Science, Architecture, Design) outside the medical-university content model, which is out of scope for this research task.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Georgian Technical University -- official 'Facts & Figures' institutional leaflet (PDF), listing GTU's 12 faculties by name and its official 'List of HE Programmes in Foreign Languages'",
+        "url": "https://dwm.prz.edu.pl/fcp/uGBUKOQtTKlQhbx08SlkTVgJQX2o8DAoHNiwFE1xVSG9PFRYqCl5tDXdAGHoV/56/code_4DlgUIg9YPBJhAAQqEk1UB0FcAyQ/aktualnosci/gtu_short_leaflet.pdf",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "GTU-produced 'Knowledge Is Power / Facts & Figures' PDF (hosted by a partner institution, Rzeszow University of Technology, as a GTU partnership document). Page 3 lists '12 FACULTIES' with no Faculty of Medicine. Page 5 lists all English/foreign-language HE programmes across Bachelor/Master/PhD -- no medical (MBBS/MD/BDS/Pharmacy/Nursing) degree appears; only Biomedical Engineering (an engineering degree), Mechanical Engineering, Design, Business Administration, Water Engineering, Viticulture and Enology, Agronomy, and San Diego State dual programs."
+      },
+      {
+        "label": "Georgian Technical University -- official 'Our Story / About' page (gtu.ge)",
+        "url": "https://gtu.ge/en/GTU/About/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Repeats the same '14 faculties ... Faculty of Medicine' boilerplate text in one paragraph, but the same page's detail on ABET accreditation is specifically for the Biomedical Engineering bachelor's programme under the Faculty of Informatics and Control Systems -- confirming Biomedical Engineering (an engineering degree) is what is actually offered, not a clinical medicine degree."
+      },
+      {
+        "label": "Georgian Technical University -- official English admissions 'Bachelor's programme' page (gtu.ge)",
+        "url": "https://gtu.ge/en/apply/bachelor.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Live official GTU admissions page; site-wide faculty navigation lists Construction, Power Engineering, Mining Geology and Sustainable Mountain Development, Agricultural Sciences and Chemical Technologies, Transport Systems and Mechanical Engineering, Architecture Urbanism and Design, Law and International Relations, Informatics and Control Systems, International Design School, Business Technologies, Social Sciences -- no Faculty of Medicine."
+      },
+      {
+        "label": "Georgian Technical University -- official 'Structural Units / Faculties' page, Georgian-language (gtu.ge)",
+        "url": "https://gtu.ge/en/GTU/Structure/StructuralUnits/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Current live faculties listing on GTU's own site; contains zero occurrences of 'medicine' (checked programmatically). Confirms the 11 non-medical faculties only."
+      },
+      {
+        "label": "Georgia To Study -- third-party study-abroad agent profile of GTU (context: source of the widely-copied '14 faculties incl. Faculty of Medicine' + 'Spring 2025 Medical Doctor, Dentistry' admissions blurb that could not be corroborated on GTU's own site)",
+        "url": "https://georgiatostudy.com/universities/georgian-technical-university/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Same page's own detailed English-language Bachelor/Master/PhD tuition tables list only Civil Engineering, Mechanical Engineering, Biomedical Engineering, Computer Science, Architecture, Design (Bachelor's) -- no MBBS/MD/BDS/Pharmacy/Nursing degree -- contradicting its own boilerplate 'Faculty of Medicine' line and generic 'Medical Doctor, Dentistry' admissions announcement."
+      },
+      {
+        "label": "Wikipedia -- Georgian Technical University (context: likely origin of the widely-copied '14 faculties' description reused across agent/aggregator sites)",
+        "url": "https://en.wikipedia.org/wiki/Georgian_Technical_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Georgian Technical University",
+    "city": "Tbilisi",
+    "type": "Public",
+    "establishedYear": 1922,
+    "officialWebsite": "https://gtu.ge/",
+    "institutionCategory": "Public technical/engineering university -- primary focus is engineering, architecture, design, business and law; no corroborated clinical medical (MBBS/MD/BDS/Pharmacy/Nursing) degree program for international students",
+    "programsOffered_nonMedical_forContext": [
+      "Biomedical Engineering (Bachelor's, Master's, PhD -- ABET-accredited engineering degree, NOT a clinical medicine degree)",
+      "Mechanical Engineering (Bachelor's)",
+      "Design (Bachelor's, Master's)",
+      "Business Administration (Master's)",
+      "Water Engineering (Master's, PhD)",
+      "Viticulture and Enology (Master's)",
+      "Agronomy (Master's)"
+    ],
+    "programs": [],
+    "bestFitFor": []
+  },
+  "draftContent": {},
+  "note": "OMITTED: all publish-ready narrative content (summary, campusLifestyle, cityProfile, clinicalExposure, hostelOverview, indianFoodSupport, safetyOverview, studentSupport), whyChoose, thingsToConsider, faq, and structuredFacts.programs were intentionally left empty because no genuine MBBS/medical-pg/BSc-Nursing(degree)/Pharmacy(degree)/BDS program at Georgian Technical University could be corroborated against GTU's own official sources (institutional leaflet, official website, official structural-units page) -- despite a widely-copied third-party claim (traceable to Wikipedia-style boilerplate reused across agent/aggregator sites) that GTU has a 'Faculty of Medicine.' GTU's own official program lists and faculty lists consistently show engineering/design/business/law faculties only, plus one health-adjacent ENGINEERING degree (Biomedical Engineering) that does not map to any of the required courseSlugs and carries no NMC/PCI/INC relevance. Fabricating a courseSlug-mapped clinical degree or India-regulator framing for this entity would violate the project's never-fabricate and honest-caveat rules. This entry is intentionally held in 'hold' / ok=false status and should NOT be published or seeded via scripts/seed-nonwdoms-draft.ts. If GTU coverage is desired for this site's non-medical content in the future, it would need a separate research pass scoped to engineering/technical programs (Biomedical Engineering, Mechanical Engineering, Computer Science, Architecture, Design) -- out of scope here."
+}

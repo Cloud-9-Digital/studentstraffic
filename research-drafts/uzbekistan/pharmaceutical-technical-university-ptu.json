@@ -1,0 +1,131 @@
+{
+  "countrySlug": "uzbekistan",
+  "schoolName": "Pharmaceutical Technical University (PTU)",
+  "cityName": "Tashkent",
+  "priority": "medium",
+  "officialWebsite": "https://ptu.uz/",
+  "programUrl": "https://ptu.uz/programme-details/4",
+  "wdomsUrl": null,
+  "qualityScore": 62,
+  "reviewNotes": "IMPORTANT SCOPE CAVEAT: Pharmaceutical Technical University (PTU) is a brand-new (first teaching year 2024/25) Uzbek STATE university built inside the government's 'Tashkent Pharma Park' pharmaceutical cluster (Presidential Decree PP-4574, 28 Jan 2020; Cabinet of Ministers resolution, 4 April 2022; financed partly via a Korea Eximbank EDCF loan). It is NOT a medical/MBBS school -- it teaches PHARMACY, life sciences, cosmetic science and related pharmaceutical-industry subjects, delivered in partnership with UK universities De Montfort University (DMU) and University of Sunderland (plus stated cooperation with Yonsei University, South Korea, and Purdue University, USA). The official ptu.uz and pharmatechuni.uz sites are JavaScript single-page apps that returned only an empty shell to curl/WebFetch-style static fetching (repeatedly verified: response body under 4KB, just script tags, no rendered text) despite multiple attempts and user-agent variants, so structured facts below are corroborated instead via (a) DMU's own official news article about attending PTU's opening with President Mirziyoyev, (b) Uzbek government/agency and international news sources on the founding decree and Pharma Park project, and (c) a business-directory listing for the campus address. WHY NO NMC/PCI CLAIM: this is a pharmacy-track institution, so the relevant Indian regulator would be the Pharmacy Council of India (PCI), not NMC. No PCI approval specific to PTU could be found on pci.gov.in or any official source, and PTU is too new (first cohort 2024/25) to plausibly appear on any approved-foreign-institution list yet; the draft explicitly tells students to verify PCI/regulatory recognition themselves before enrolling and does not assert any recognition. TUITION: no credible tuition figure for PTU could be corroborated from an official or reliable source (the only numbers surfaced in general search summaries were generic ranges for unrelated Uzbek medical universities), so tuition/fees are OMITTED entirely rather than estimated or fabricated. HOSTEL: the 2022 Cabinet resolution and pharma-park planning documents describe a 'hostel'/dormitory as part of the Phase I campus construction plan, but no source confirms it is complete and operational as of research date, so the hostel section is framed honestly as planned/under the master plan rather than as a confirmed current amenity. PROGRAM MAPPING: PTU's flagship offering found in research is a DMU-validated pharmacy 'foundation'/year-zero programme that progresses into DMU's MPharmacy and BSc (Hons) Cosmetic Science degrees (and into University of Sunderland's BSc Biomedical Science); this is mapped to the site's 'pharmacy' courseSlug since no mbbs/bds/nursing/medical-pg program exists here. LANGUAGE: DMU's own article states teaching partnership provides an internationally recognised British qualification; medium of instruction for the DMU-linked pharmacy pathway is English per DMU/PTU partnership framing, though this should be reconfirmed with admissions for each specific course year. Given the thinness of independently verifiable university-specific detail (a one-cohort-old institution), campus/hostel/food/safety narrative sections are grounded in corroborated Tashkent-city and Uzbekistan-context facts plus the specific Pharma Park/PTU facts that were verifiable, rather than invented campus specifics.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Pharmaceutical Technical University (PTU) official website - homepage (programs in Pharmacy, Life Sciences, Business Management, Data Analytics; partnership framing with De Montfort University and University of Sunderland)",
+        "url": "https://ptu.uz/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Pharmaceutical Technical University official website - Programme Details page (foundation/'year zero' pharmacy pathway progressing to DMU's MPharmacy and BSc (Hons) Cosmetic Science, and to University of Sunderland's Biomedical Science)",
+        "url": "https://ptu.uz/programme-details/4",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "De Montfort University (DMU) official news - 'DMU among guests as Uzbekistan President officially opens Pharmaceutical Technical University' (13 Feb 2025): confirms PTU founded by 2019 presidential decree, DMU involved since project start ~2019, 2024/25 is first year of teaching, MSci Pharmacy is the first DMU-validated degree in Uzbekistan, names Student Union president Anna An, quotes DMU staff Duncan Hepworth and Dr Neil Hart, names Yonsei University (South Korea) and Purdue University (USA) as other partners, describes PTU as part of the 20-hectare Tashkent Pharma Park cluster",
+        "url": "https://www.dmu.ac.uk/about-dmu/news/2025/february/dmu-among-guests-as-uzbekistan-president-officially-opens-pharmaceutical-technical-university.aspx",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UzDaily.uz - 'A project to create a scientific and educational part of \"Tashkent Pharma Park\" to be implemented in Uzbekistan' (6 April 2022): cites Presidential Resolution PP-4574 (28 Jan 2020) creating the Tashkent Pharma Park cluster in Zangiata district, confirms the cluster includes Pharmaceutical Technical University with research centers/laboratories/pharmacopoeial center, cites the 4 April 2022 Cabinet of Ministers resolution funding Phase I construction (university buildings, labs, library, sports complex, hostel) via an $83.7M Korea Eximbank EDCF loan",
+        "url": "https://www.uzdaily.uz/en/a-project-to-create-a-scientific-and-educational-part-of-tashkent-pharma-park-to-be-implemented-in-uzbekistan/",
+        "kind": "government",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Embassy of the Republic of Uzbekistan in India (uzbekembassy.in) - 'Tashkent Pharma Park pharmaceutical cluster is a territory of international standard quality': independent government-embassy corroboration of the 28 January 2020 presidential decree and the Korea Eximbank EDCF financing for the pharmaceutical cluster's scientific/educational structures",
+        "url": "https://www.uzbekembassy.in/tashkent-pharma-park-pharmaceutical-cluster-is-a-territory-of-international-standard-quality/",
+        "kind": "government",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Golden Pages Uzbekistan (business directory) - Pharmaceutical Technical University listing: confirms campus address in Tashkent's Yangihayot district on Tashkent Halqa Avtomobil Yuli (Ring Road), near the Zangiata-1/Zangiata-2 landmarks, listed as a private/state institute category with ptu.uz as official site",
+        "url": "https://www.goldenpages.uz/en/company/?Id=114830",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Educatly (international study-abroad platform) - Pharmaceutical Technical University profile: independently corroborates the foundation/'year zero' programme structure and its stated progression into MPharmacy and BSc (Hons) Cosmetic Science at De Montfort University and Biomedical Science at University of Sunderland",
+        "url": "https://www.educatly.com/university/65025/pharmaceutical-technical-university",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Pharmaceutical Technical University (PTU)",
+    "slug": "pharmaceutical-technical-university-ptu",
+    "city": "Tashkent",
+    "type": "Public",
+    "establishedYear": 2020,
+    "officialWebsite": "https://ptu.uz/",
+    "bestFitFor": [
+      "Students specifically interested in a Pharmacy, pharmaceutical sciences, or cosmetic-science career path rather than MBBS/clinical medicine, since PTU is a specialised pharmaceutical-industry university, not a medical school",
+      "Students who want a foundation-year pathway that leads into a UK-validated degree (De Montfort University's MPharmacy or BSc (Hons) Cosmetic Science, or University of Sunderland's BSc Biomedical Science) while living and studying in Uzbekistan at Uzbek-university cost levels",
+      "Students comfortable being among the earliest cohorts of a brand-new state university (first teaching year 2024/25) where campus infrastructure, hostel facilities, and support systems are still being built out under a government master plan, rather than a long-established institution with a mature track record",
+      "Students who will independently verify Pharmacy Council of India (PCI) or other home-country regulatory recognition before enrolling, since PTU is too new for any confirmed PCI listing to exist yet"
+    ],
+    "programs": [
+      {
+        "courseSlug": "pharmacy",
+        "title": "Pharmacy Foundation Programme (progression to De Montfort University MPharmacy / BSc (Hons) Cosmetic Science, or University of Sunderland BSc Biomedical Science)",
+        "officialProgramUrl": "https://ptu.uz/programme-details/4",
+        "medium": "English (delivered under PTU's partnership framework with UK-based De Montfort University; DMU's own materials describe the degree pathway as leading to an internationally recognised British qualification). Students should confirm the current year's language-of-instruction and any Uzbek/Russian-language components directly with PTU admissions.",
+        "durationYears": 1,
+        "feeNotes": "No official or independently corroborated tuition figure for this program could be verified at the time of research; PTU's official site did not render usable fee content via automated fetch, and no reliable secondary source published a specific PTU fee figure. Prospective students must request current tuition, scholarship eligibility, and payment terms directly from PTU admissions before budgeting.",
+        "intakeMonths": []
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Pharmaceutical Technical University (PTU) is a new Uzbek state university created specifically to train pharmacists and pharmaceutical-industry specialists, built as the educational core of the government's 'Tashkent Pharma Park' project -- an innovative scientific-production pharmaceutical cluster established by Presidential Decree PP-4574 on 28 January 2020 and expanded by a Cabinet of Ministers resolution on 4 April 2022, with Phase I construction financed in part through an approximately $83.7 million loan from South Korea's Eximbank Economic Development Cooperation Fund. Rather than developing its curriculum alone, PTU partnered from the project's early days (around 2019) with UK-based De Montfort University (DMU) and the University of Sunderland, and states cooperation with Yonsei University in South Korea and Purdue University in the United States; DMU's own official news coverage of PTU's formal opening (attended by Uzbekistan's President Shavkat Mirziyoyev in February 2025) confirms that 2024/25 was PTU's first year of teaching, with its first cohort enrolled in a DMU-validated pharmacy foundation programme intended to progress into De Montfort's MPharmacy and BSc (Hons) Cosmetic Science degrees, or the University of Sunderland's BSc Biomedical Science. Because PTU is this new, prospective students -- especially those researching it from India -- should treat it as an early-stage institution still building out its campus, hostel, and support infrastructure under a government master plan, and should independently confirm details such as current admission requirements, fee structure, and any home-country regulatory recognition (for pharmacy graduates in India, this means checking with the Pharmacy Council of India, PCI) directly with PTU admissions before applying, since PTU is too recently established to appear yet on any confirmed PCI-approved list.",
+    "campusLifestyle": "PTU's campus sits inside the wider Tashkent Pharma Park site, a roughly 20-hectare government-backed cluster in the Zangiata / Yangihayot area on Tashkent's Ring Road (Tashkent Halqa Avtomobil Yuli), which the master plan describes as eventually including PTU's academic buildings alongside a clinical research centre, an administrative centre, a separate R&D centre, and a vivarium once fully built out. DMU's own coverage of PTU's official opening describes a genuinely new-university atmosphere -- the first cohort's own elected Student Union president (Anna An, one of PTU's first students) speaks about being part of a 'brand-new institution' and looking forward to starting her own research within her degree programme, while PTU's own lecturers describe a multinational teaching culture drawing on UK, South Korean, and US academic partners. Because PTU only began teaching in the 2024/25 academic year, students should expect a smaller, still-forming campus community and evolving student-life programming rather than the decades of accumulated clubs, traditions, and facilities found at older Uzbek universities, and should ask admissions directly for the most current information on labs, libraries, and recreational facilities available to this year's cohort.",
+    "cityProfile": "Tashkent is Uzbekistan's capital and largest city, and the country's main hub for international transport, business, and education, with direct flight connections to major Indian cities. It has a continental climate with cold winters (January averages around 3 degrees Celsius, with occasional snow) and hot, dry summers (July averages around 28 degrees Celsius with little rainfall from June through September). The city combines wide Soviet-era boulevards, parks, and a metro system with a growing modern restaurant, retail, and cultural scene, including museums, an international film festival, and Navruz spring celebrations. Russian and Uzbek remain the most widely spoken languages for everyday life outside university settings, so international students -- even those on English-medium programs -- should expect to lean on university staff, translation apps, or basic local-language phrases for shopping, transport, and other errands around the city, and PTU's own location in the Zangiata/Yangihayot area on the city's outer ring road means students should budget time for travel into central Tashkent for anything not available on or immediately near the pharma park campus.",
+    "clinicalExposure": "PTU is a pharmacy and pharmaceutical-sciences university rather than a clinical medical school, so its practical training centres on pharmaceutical laboratories, research facilities, and (per the government's Tashkent Pharma Park master plan) a dedicated clinical research centre and pharmacopoeial centre planned within the wider cluster, rather than hospital ward rotations of the kind MBBS students undertake. The DMU-validated pharmacy foundation pathway is designed to progress into practically oriented degrees -- MPharmacy and BSc (Hons) Cosmetic Science at De Montfort University, or BSc Biomedical Science at the University of Sunderland -- and DMU's own coverage of the partnership describes hands-on, project-based teaching methods (real-world examples, team projects, and research opportunities from around the third year of study) as a deliberate feature the partner universities are working to replicate at PTU. Students specifically seeking hospital-based clinical exposure or a medical (MBBS) qualification should note that this is not what PTU offers, and should confirm the exact scope and location (Uzbekistan vs. UK) of any practical/laboratory placements directly with PTU or DMU admissions before enrolling.",
+    "hostelOverview": "Official planning documents for the Tashkent Pharma Park project -- specifically the April 2022 Cabinet of Ministers resolution on Phase I construction -- list a hostel/dormitory among the facilities being built alongside PTU's educational buildings, laboratories, library, and sports and recreation complex. However, no source found during research confirms that this hostel is complete, operational, and available to the current (2024/25-onward) cohort, so prospective students should treat on-campus accommodation as part of the government's planned build-out rather than a guaranteed, ready-to-use amenity, and should ask PTU admissions directly for the current accommodation situation -- including whether on-campus rooms are available yet, what alternative housing arrangements (e.g., off-campus rentals in Tashkent) existing international students are using in the meantime, and expected costs -- before finalising travel and budget plans.",
+    "indianFoodSupport": "No official PTU source describes a dedicated Indian mess, Indian-only dining facility, or named Indian-student association on this specific campus; as a brand-new university with its first cohort only enrolled from 2024/25, PTU's food and student-life infrastructure is still developing. Tashkent city itself, however, has an established and growing Indian community along with multiple independent Indian restaurants, so students who want Indian food can expect to rely on self-cooking (subject to whatever kitchen facilities the campus currently provides) supplemented by trips into central Tashkent for Indian restaurants, rather than an on-campus Indian kitchen; exact distance and commute time from PTU's Zangiata/Yangihayot campus location to specific Indian restaurants in central Tashkent was not verified during research and should be checked locally on arrival.",
+    "safetyOverview": "Uzbekistan is generally regarded by independent education-guide and travel sources as a politically stable, low-crime destination for international students, and Tashkent, as the capital, is typically cited as one of the more closely monitored and safer cities in Central Asia for this purpose. As a new state university built inside a purpose-planned government cluster, PTU's campus is part of an actively developing, officially backed project rather than an established residential neighbourhood, so students should ask admissions directly about current on-site security arrangements, since no PTU-specific security details were found during research. As with any study-abroad move to Uzbekistan, students should complete the country's mandatory visitor registration requirements on arrival (including stay registration within the required window and any applicable local ID/registration steps), keep digital and physical copies of passport and visa documents, and check the Indian Embassy in Tashkent's current travel advisories before departure.",
+    "studentSupport": "PTU's core student-support proposition, as described in DMU's own coverage of the partnership, is access to internationally validated qualifications -- an MSci/MPharmacy-track pharmacy degree recognised in the UK and, per DMU's framing, respected within Uzbekistan as well -- delivered through a structured partnership where PTU's own teaching staff have themselves trained at DMU in the UK (for example, two PTU lecturers completed an MSci in Pharmaceutical Quality by Design at DMU in 2021/22 specifically to prepare to teach at PTU). The university has an active, elected Student Union (led by its first president, Anna An, from the founding 2024/25 cohort), suggesting at least a basic student-governance structure is already in place despite the university's newness. Because PTU is only in its first few years of operation, prospective students -- particularly international applicants from India -- should contact PTU's admissions office directly for specifics on international-student onboarding, visa support, orientation programming, and academic advising, since detailed published information on these services (beyond the DMU partnership itself) was not available from the sources reviewed.",
+    "whyChoose": [
+      "Direct academic partnership with two established UK universities -- De Montfort University (MPharmacy, BSc (Hons) Cosmetic Science) and the University of Sunderland (BSc Biomedical Science) -- giving PTU's foundation pathway a route to an internationally recognised British degree rather than a purely domestic qualification",
+      "Purpose-built as the educational anchor of a national government project (the Tashkent Pharma Park pharmaceutical cluster, created by Presidential Decree PP-4574 and backed by long-term Korea Eximbank EDCF financing), signalling sustained state investment and industry linkage rather than a purely private, standalone institution",
+      "A specialised focus on pharmacy, pharmaceutical sciences, and cosmetic science -- a clear niche for students who specifically want a pharmacy-industry career path rather than clinical medicine",
+      "PTU's own teaching staff have trained directly at DMU in the UK before teaching at PTU, which the university and DMU both describe as part of a deliberate effort to bring UK teaching standards and hands-on, project-based methods to the Uzbekistan campus"
+    ],
+    "thingsToConsider": [
+      "PTU is an extremely new university -- 2024/25 was confirmed as its first year of teaching -- so it has no track record of graduate outcomes, established campus life, or long-run accreditation history yet; applicants are effectively joining one of the first few cohorts",
+      "PTU is a pharmacy/pharmaceutical-sciences university, not a medical school; students seeking an MBBS or clinical-medicine qualification should look elsewhere, and no NMC-relevant claim applies here at all",
+      "No Pharmacy Council of India (PCI) recognition specific to PTU could be confirmed from official sources at the time of research, and given how recently the university was founded, it is unlikely to appear yet on any approved-foreign-institution list; Indian students must check current PCI recognition status directly with PCI and with PTU admissions before enrolling",
+      "No official, verifiable tuition fee figure for PTU's programs could be found during research, and on-campus hostel accommodation -- while included in the government's Phase I construction plan -- could not be confirmed as complete and operational for the current cohort; both must be confirmed directly with PTU admissions before budgeting or finalising travel plans"
+    ],
+    "faq": [
+      {
+        "question": "Is Pharmaceutical Technical University (PTU) a medical school offering MBBS?",
+        "answer": "No. PTU is a specialised pharmacy and pharmaceutical-sciences university, not a medical school, and it does not offer an MBBS or general clinical-medicine degree. Its flagship pathway is a foundation programme that progresses into pharmacy-related degrees (MPharmacy, BSc (Hons) Cosmetic Science) validated by UK partner universities. Students seeking MBBS should look at Uzbekistan's dedicated medical universities instead."
+      },
+      {
+        "question": "When did PTU start teaching, and is it a government or private university?",
+        "answer": "PTU is a state (public) Uzbek university created under Presidential Decree PP-4574 (28 January 2020) as the educational core of the government's Tashkent Pharma Park pharmaceutical cluster. According to De Montfort University's own official news coverage of PTU's opening, the 2024/25 academic year was PTU's first year of teaching, making it a very new institution with only a small number of enrolled cohorts so far."
+      },
+      {
+        "question": "What international university partnerships does PTU have?",
+        "answer": "PTU's core academic partners are the UK's De Montfort University (DMU) and University of Sunderland, who validate its pharmacy-related degree pathways (MPharmacy and BSc (Hons) Cosmetic Science at DMU; BSc Biomedical Science at Sunderland). PTU also states cooperation with Yonsei University in South Korea and Purdue University in the United States, per DMU's own reporting on the partnership."
+      },
+      {
+        "question": "Is a PTU pharmacy degree recognised by the Pharmacy Council of India (PCI) for Indian students?",
+        "answer": "No PCI recognition specific to PTU could be confirmed from official sources at the time of research. Because PTU only began teaching in 2024/25, it is unlikely to appear yet on any PCI-approved foreign institution list. Indian students must independently verify current PCI recognition status directly with the Pharmacy Council of India and confirm with PTU admissions before enrolling, since practising as a registered pharmacist in India after a foreign pharmacy degree depends on this recognition."
+      },
+      {
+        "question": "What are the tuition fees and is on-campus hostel accommodation available?",
+        "answer": "No official or independently verifiable tuition fee figure for PTU could be found during research, so no fee amount is quoted here; prospective students should request current tuition and any scholarship information directly from PTU admissions. Similarly, while a hostel/dormitory is included in the government's Phase I construction plan for the Tashkent Pharma Park campus, no source confirms it is complete and operational for the current cohort, so accommodation arrangements should also be confirmed directly with the university before finalising travel plans."
+      },
+      {
+        "question": "What language is teaching conducted in at PTU?",
+        "answer": "The DMU-validated pharmacy pathway is described by both PTU's partner De Montfort University and independent education platforms as leading to an internationally recognised British qualification, implying English-medium instruction for this pathway. However, students should reconfirm the exact language of instruction and any Uzbek/Russian-language components for their specific intake year directly with PTU admissions, since this was not independently verified in full detail during research."
+      }
+    ]
+  }
+}

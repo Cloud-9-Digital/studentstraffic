@@ -1,0 +1,150 @@
+{
+  "countrySlug": "albania",
+  "schoolName": "University of Vlora \"Ismail Qemali\" (Faculty of Health - Nursing)",
+  "cityName": "Vlorë",
+  "priority": "medium",
+  "officialWebsite": "https://univlora.edu.al/",
+  "programUrl": "https://univlora.edu.al/departamenti-i-infermierise",
+  "admissionUrl": "https://univlora.edu.al/",
+  "qualityScore": 60,
+  "reviewNotes": "Non-WDOMS discovered university. Official site (univlora.edu.al) fetched directly via curl without issue. The Faculty of Health (Fakulteti i Shendetit, 'FSH') runs two departments: the Nursing Department (Departamenti i Infermierise), which offers the Bachelor in General Nursing (Bcs ne Infermieri te Pergjithshme), and the Healthcare Department (Departamenti i Kujdesit Shendetesor), which offers a separate Bachelor in Midwifery Nursing and a Master Professional in Pediatric Nursing. This draft focuses on the Bachelor in General Nursing, the program named in the research brief. The official, currently-in-force curriculum regulation for this program (Senate Decision No.26, dated 19.03.2025, approving the 'Bachelor ne Infermieri e Pergjithshme' 2025-2028 curriculum) was fetched directly from univlora.edu.al as a bilingual Albanian/English PDF and is the primary structured-facts source: 3 academic years / 6 semesters, 180 ECTS, Bcs diploma, originally approved by the Ministry of Education and Science in 1994 (VKM/Council of Ministers Decision No.105, dated 28-02-1994) and reformatted in 2011 and again in 2025. A separate official admissions-ranking PDF (list of accepted Matura applicants) labels the program 'Infermieri e pergjithshme (ne gjuhen shqipe dhe angleze)' -- i.e. officially offered in Albanian AND English -- which is corroborated by the curriculum PDF itself being issued bilingually and by the presence of dedicated 'ENGI 130 / ENGI 131' professional-English nursing-terminology courses in the curriculum, alongside optional German and Italian tracks. University-level facts (public status, 1994 founding, Vlore location, four faculties) were cross-checked against Wikipedia, the ASCAL (Albanian Quality Assurance Agency, ascal.al) official Higher-Education-Institution list -- which separately confirms 'Bachelor Infermieri e Pergjithshme' as an active accredited program under the Department of Nursing and 'Bachelor Infermieri-Mami' under the Department of Health Care -- and general profile pages (Times Higher Education, edarabia, rash.al). No official tuition-fee figure could be corroborated from any source for this specific program, so fees are omitted entirely rather than estimated. No confirmed WDOMS/INC (Indian Nursing Council) recognition status could be found for this institution; this is flagged explicitly rather than asserted. City/context facts about Vlore (population, coastline, cost of living) are drawn from Wikipedia and cost-of-living aggregator sites (International Living, Numbeo-style aggregator snapshots) since dedicated university-authored city content does not exist.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UNIVLORA official website (homepage)",
+        "url": "https://univlora.edu.al/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIVLORA official Nursing Department (Departamenti i Infermierise) page",
+        "url": "https://univlora.edu.al/departamenti-i-infermierise",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIVLORA official Healthcare Department (Departamenti i Kujdesit Shendetesor) page",
+        "url": "https://univlora.edu.al/departamenti-i-kujdesit-shendetesor",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIVLORA official Faculty of Health department listing (FSH - Departamentet)",
+        "url": "https://univlora.edu.al/fshp-departamentet/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIVLORA official Senate-approved curriculum regulation PDF: Bachelor ne Infermieri e Pergjithshme 2025-2028 (bilingual Albanian/English, Senate Decision Nr.26, 19.03.2025)",
+        "url": "https://old.univlora.edu.al/wp-content/uploads/2025/05/VSA26-1.pdf",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIVLORA official Matura-admissions ranking PDF for 'Infermieri e pergjithshme (ne gjuhen shqipe dhe angleze)' program, confirming Albanian+English medium of instruction",
+        "url": "https://univlora.edu.al/media/dokument/infermieri-e-pergjithshme.pdf",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Ismail Qemali University of Vlore - Wikipedia (founding date, public status, location)",
+        "url": "https://en.wikipedia.org/wiki/Ismail_Qemali_University_of_Vlor%C3%AB",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "ASCAL (Albanian Quality Assurance Agency in Higher Education) official HEI listing for University of Vlora 'Ismail Qemali' -- licensing decision, accredited-programs list including Bachelor Infermieri e Pergjithshme and Bachelor Infermieri-Mami",
+        "url": "https://www.ascal.al/en/hei-list/hei/universiteti-ismail-qemali-vlore-2",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Times Higher Education - University of Vlora \"Ismail Qemali\" world rankings profile",
+        "url": "https://www.timeshighereducation.com/world-university-rankings/university-vlora-ismail-qemali",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Vlore, Albania - Wikipedia (city context: population, geography, economy)",
+        "url": "https://en.wikipedia.org/wiki/Vlor%C3%AB",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "International Living - Vlore, Albania: Guide to Cost of Living, Safety, Things to Do",
+        "url": "https://internationalliving.com/vlore-albania/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of Vlora \"Ismail Qemali\" (Faculty of Health - Nursing)",
+    "city": "Vlorë",
+    "type": "Public",
+    "establishedYear": 1994,
+    "officialWebsite": "https://univlora.edu.al/",
+    "bestFitFor": [
+      "Students who want a public, government-recognised Albanian university with a nursing department that has been running continuously since the university's founding in 1994",
+      "Students interested in a program taught in both Albanian and English (the official Matura-admissions listing names the track 'Infermieri e pergjithshme (ne gjuhen shqipe dhe angleze)'), reducing the language barrier compared to Italian-medium or fully Albanian-medium alternatives elsewhere in Albania",
+      "Students who want a shorter, 3-year (6-semester, 180 ECTS) Bachelor route into general nursing rather than a 5-6 year single-cycle medical degree",
+      "Students who value a coastal, lower-cost-of-living city (Vlore, on the Albanian Riviera) over studying in the capital Tirana",
+      "Students prepared to independently verify INC (Indian Nursing Council) and WDOMS-equivalent recognition before enrolling, since this draft could not confirm that status for this specific institution"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "Bachelor in General Nursing (Bcs ne Infermieri te Pergjithshme)",
+        "officialProgramUrl": "https://univlora.edu.al/departamenti-i-infermierise",
+        "medium": "Albanian and English",
+        "durationYears": 3
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "The University of Vlora \"Ismail Qemali\" is a public Albanian university founded on 28 February 1994, originally opening with three faculties including a dedicated Faculty of Nursing, and now organised into four faculties covering technical sciences, economics, humanities, and health. Its Faculty of Health (Fakulteti i Shendetit, \"FSH\") runs the Nursing Department (Departamenti i Infermierise), one of the university's oldest departments, which offers the Bachelor in General Nursing (Bcs ne Infermieri te Pergjithshme) -- a three-year, six-semester, 180-ECTS first-cycle degree originally approved by Albania's Ministry of Education and Science in 1994 and most recently reorganised under a Senate-approved 2025-2028 curriculum. According to the university's own Matura-admissions documentation, this specific program is officially delivered in both Albanian and English, and the curriculum includes dedicated professional-English nursing-terminology courses (alongside optional German and Italian tracks), which is a notable point of difference from several other Albanian nursing programs that are Italian-medium only. Indian students considering this program should independently verify its current recognition status with the Indian Nursing Council (INC) and any relevant WDOMS-equivalent listing before applying, since this draft could not confirm that status from public sources.",
+    "campusLifestyle": "Nursing students at the University of Vlora study within the Faculty of Health's own buildings (referred to in official documents as buildings \"D\", \"B\" and \"C\"), which include five teaching laboratories and a dedicated Health Training Simulation Centre with a birth simulator used for practising maternal and newborn care procedures. Coursework combines classroom lectures and seminars with hands-on laboratory work and mandatory clinical placements at partner healthcare institutions; lecture attendance is required at 70%, seminar attendance at 80%, and laboratory and hospital-practice attendance at 100%, reflecting a fairly structured, attendance-driven learning culture typical of Albanian public universities. Teaching groups are kept relatively small for practical work (10-20 students per laboratory group, 20 students per clinical-practice group), even though lecture halls can host larger cohorts of 25-100 students. Student life in Vlore itself centres on a walkable coastal city rather than a large, self-contained campus town, so much of student social life happens off-campus in the city's cafes, promenades and beaches.",
+    "cityProfile": "Vlore is Albania's third-largest city and sits on the southern coast where the Adriatic and Ionian Seas meet, often described as the northern gateway to the Albanian Riviera. It is a port city with a Mediterranean climate, a compact and largely walkable centre, and a growing profile as an affordable coastal destination for both tourists and long-term residents. Cost of living in Vlore is markedly lower than in Western Europe and generally comparable to or below Tirana, with modest average monthly costs for rent, food and utilities reported by cost-of-living trackers, which keeps day-to-day student budgets manageable. The city's economy centres on tourism, fishing, and light industry, and English is commonly studied as a second foreign language in Albanian schools, so a baseline of English is often present among younger residents, though Albanian remains the primary language of daily life.",
+    "clinicalExposure": "The Nursing Department's curriculum builds in a substantial clinical component: students complete mandatory teaching and professional practice placements at primary and secondary healthcare institutions under the supervision of an assigned instructor, with a dedicated 10-ECTS Professional Practice module in the final year plus practical/laboratory hours embedded throughout modules such as Fundamentals of Nursing Care, Adult Diseases I-IV, Pediatrics, Obstetrics and Reproductive Health, and Nursing Care in Health Emergencies. The Faculty of Health's own Health Training Simulation Centre supplements hospital placements with simulated procedures (including obstetric/birth simulation), letting students practise techniques before working with real patients. Official Faculty of Health materials also reference cooperation agreements with a network of regional hospitals, including the Vlore Regional Hospital, for clinical-practice placements, though this draft could not independently verify the complete current list of partner hospitals or confirm placement details beyond what the university states; applicants should ask the Nursing Department directly for the current placement-hospital list before enrolling.",
+    "hostelOverview": "No official, itemised on-campus hostel or dormitory programme for the Nursing Department (or the Faculty of Health more broadly) could be independently corroborated from public sources for this draft. Students relocating to Vlore for this program should expect to rely on private rented apartments or shared flats, which is the common arrangement for students in Albanian cities without dedicated university dormitories for every faculty. Given Vlore's relatively affordable rental market compared to Tirana and especially to Western Europe, private accommodation is likely to remain within a manageable budget, but prospective students should contact the university's admissions office or the Nursing Department secretariat directly to ask about any partnered accommodation, landlord contacts, or guesthouse arrangements before travelling to Albania.",
+    "indianFoodSupport": "Vlore is a mid-sized coastal city with a food scene centred on Albanian and Mediterranean cuisine, seafood, and a growing international tourist-driven dining sector during the summer season; dedicated Indian restaurants or specialised Indian grocery stores could not be confirmed to exist in Vlore from the sources available for this draft. Indian students should plan to cook a significant share of their own meals using spices and staples that may need to be sourced from larger cities such as Tirana or ordered online, and should treat the local food landscape as unfamiliar rather than assume any existing Indian-student community infrastructure. This is a practical planning point rather than a settled feature of student life at this university, and prospective students should raise dietary questions directly with the Nursing Department or with any current international students they can contact before committing.",
+    "safetyOverview": "Albania is generally regarded as a safe country for international travellers and students, and Vlore, as a mid-sized regional coastal city rather than a dense capital, tends to have a comparatively quiet day-to-day environment outside the peak summer tourist season, when the city's population and traffic increase considerably along the coastline. As with any Albanian city, the main practical safety considerations for students are the usual precautions around petty theft, road safety (given generally less structured traffic patterns than in Western Europe), and being cautious in less-lit areas at night, rather than any specific elevated risk documented for Vlore in the sources reviewed for this draft. Students should register with their home country's embassy or consulate on arrival, keep copies of key identification and academic documents, and follow standard personal-safety practices, particularly if commuting between clinical-placement sites and the university campus.",
+    "studentSupport": "The University of Vlora maintains a general admissions and administrative structure (contactable via info@univlora.edu.al and the university's published address and phone line) and the Faculty of Health publishes department-level information for its academic staff, programmes, and the Nursing Department specifically, including its official curriculum regulation, syllabus structure, and student-facing rules on attendance, exams, and appeals. The curriculum's inclusion of dedicated professional-English coursework (ENGI 130/131) suggests at least some institutional attention to English-language capability for nursing students, though this draft found no dedicated international-student office, visa-support service, or Indian-student community documented publicly for this university. Indian applicants should proactively contact the Nursing Department (Departamenti i Infermierise) and the university's general admissions channel in writing to ask about visa-support documentation, English-medium delivery specifics for each course, and any INC or WDOMS-equivalent recognition documentation before committing, since these specifics were not independently verifiable from public sources at the time of this research.",
+    "whyChoose": [
+      "Public university status with a Nursing Department tracing back to the university's founding in 1994, giving the program roughly three decades of continuous operating history",
+      "Program officially delivered in Albanian and English per the university's own admissions documentation, with dedicated professional-English nursing-terminology coursework built into the curriculum -- a meaningful difference from Italian-medium-only nursing programs elsewhere in Albania",
+      "Relatively short, structured 3-year / 180-ECTS Bachelor pathway with a clearly published, Senate-approved curriculum regulation (most recently updated for 2025-2028), giving applicants unusual transparency into the exact course list and credit structure before enrolling",
+      "Dedicated Health Training Simulation Centre with laboratories and a birth simulator, supplementing hospital-based clinical placements with structured skills practice",
+      "Significantly lower cost of living in Vlore, a coastal city on the Albanian Riviera, compared to studying in Tirana or in Western Europe"
+    ],
+    "thingsToConsider": [
+      "No official tuition-fee figures could be confirmed from public sources for this draft; prospective students must request current, itemised tuition and fee information directly from the university's admissions office or the Faculty of Health",
+      "This draft could not confirm the program's recognition status with the Indian Nursing Council (INC) or any WDOMS-equivalent nursing directory; Indian applicants must verify this directly with INC and the university before enrolling if the goal is to practise nursing in India",
+      "No dedicated on-campus international-student hostel or dormitory programme could be confirmed; students should budget for private rented accommodation in Vlore",
+      "No dedicated Indian-student community, Indian restaurants, or Indian grocery infrastructure could be confirmed in Vlore; students should plan for self-catering and sourcing specialty ingredients from larger cities or online",
+      "As a smaller, regionally focused public university, this institution does not have the international rankings profile or long track record with Indian students that larger, more established study-abroad destinations have, so independent due diligence (contacting the department directly, verifying recognition status, and if possible speaking with current students) is especially important before applying"
+    ],
+    "faq": [
+      {
+        "question": "What nursing program does the University of Vlora \"Ismail Qemali\" offer, and how long does it take?",
+        "answer": "The Faculty of Health's Nursing Department offers a Bachelor in General Nursing (Bcs ne Infermieri te Pergjithshme), a first-cycle degree organised over three academic years (six semesters) requiring a minimum of 180 ECTS credits, per the university's own Senate-approved curriculum regulation."
+      },
+      {
+        "question": "What language is the Bachelor in General Nursing taught in at this university?",
+        "answer": "According to the university's own Matura-admissions documentation, the program is officially listed as 'Infermieri e pergjithshme (ne gjuhen shqipe dhe angleze)' -- General Nursing in the Albanian and English languages -- and the curriculum includes dedicated professional-English nursing-terminology courses (alongside optional German and Italian language tracks). Applicants should still confirm with the Nursing Department exactly which courses are delivered in English versus Albanian before enrolling."
+      },
+      {
+        "question": "Is the University of Vlora \"Ismail Qemali\" a public or private university, and when was it founded?",
+        "answer": "It is a public Albanian university, founded on 28 February 1994. Its Nursing Department is one of the university's oldest, tracing back to a Faculty of Nursing present from the university's earliest years."
+      },
+      {
+        "question": "Does a nursing degree from this university let Indian students practise nursing in India?",
+        "answer": "That depends on factors this draft could not independently confirm, including the program's recognition status with the Indian Nursing Council (INC) and any relevant WDOMS-equivalent directory listing. Indian applicants should treat this as an open question and verify it directly with INC and the university before enrolling if practising nursing in India is the end goal."
+      },
+      {
+        "question": "How much does the program cost, and is there student housing?",
+        "answer": "No official tuition-fee figures could be confirmed from public sources for this draft, so prospective students should request current, itemised costs directly from the university's admissions office. Similarly, no dedicated on-campus international-student hostel or dormitory programme could be confirmed, so students should plan to budget for private rented accommodation in Vlore, a coastal city with a comparatively affordable rental market."
+      }
+    ]
+  }
+}

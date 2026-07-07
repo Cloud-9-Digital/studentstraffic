@@ -1,0 +1,207 @@
+{
+  "countrySlug": "italy",
+  "schoolName": "University of Siena (Dentistry and Dental Prosthodontics, English-taught)",
+  "cityName": "Siena",
+  "priority": "medium",
+  "officialWebsite": "https://www.unisi.it/en",
+  "programUrl": "https://dentistry.unisi.it/en",
+  "admissionUrl": "https://apply.unisi.it/contents/content/10-dentistry-and-dental-prosthodontics",
+  "qualityScore": 74,
+  "reviewNotes": "Multi-source corroborated (University of Siena / Unisi official domain and Wikipedia infobox for institutional facts; dentistry-specific programme details corroborated across multiple independent study-abroad/IMAT-consultancy sources - AcadIMAT, IMATBuddy, Italy Medical Schools, Medlink Students, Bachelorsportal - since the official unisi.it and dentistry.unisi.it program pages are behind Cloudflare/AWS WAF bot-challenge pages that blocked direct curl fetches in this research session). Tuition OMITTED from structuredFacts as a hard confirmed number because sources disagree on precision (a public-university ISEE-banded fee scale, described as ranging roughly EUR 156 to a EUR 5,000 non-EU/no-discount ceiling) and none of the accessible pages showed the current official fee table; feeNotes captures the honest range with a verify-directly instruction instead. Non-EU seat count is flagged as small and volatile (multiple 2025-cycle IMAT-seat-tracking sources report Siena's non-EU-resident dentistry seats fell from about 12 to as few as 2 for the 2025/26 cycle while EU seats rose), so this is presented as a caveat rather than a fixed number to avoid publishing a stale seat count. Indian regulator framing uses the Dental Council of India (DCI) screening-test framework (BDS-equivalent regulator), not NMC/FMGE, since this is a dentistry-only programme; DCI-specific recognition status for this exact university's DMD/Dentistry degree could not be corroborated from an official DCI source, so it is presented as a verify-yourself caveat rather than asserted recognition.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "University of Siena - official homepage (Unisi, public university, Siena, Tuscany)",
+        "url": "https://www.unisi.it/en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Dentistry and Dental Prosthodontics (taught in English) - official Unisi degree-programme listing page",
+        "url": "https://en.unisi.it/planning-your-degree/biotechnologies-medicine-dentistry-health-professions/dentistry-and-dental",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Dentistry and Dental Prosthodontics - official course microsite (dentistry.unisi.it)",
+        "url": "https://dentistry.unisi.it/en",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Dentistry and Dental Prosthodontics - official Unisi admissions portal listing (apply.unisi.it)",
+        "url": "https://apply.unisi.it/contents/content/10-dentistry-and-dental-prosthodontics",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Tuition Fees and Costs - official Unisi international-admissions portal (ISEE-banded public-university fee system)",
+        "url": "https://apply.unisi.it/contents/content/8-tuition-fees-and-costs",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "University of Siena - Wikipedia (infobox: Public university, established 1240, Siena, Tuscany, Coimbra Group/IRUN affiliations)",
+        "url": "https://en.wikipedia.org/wiki/University_of_Siena",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Dentistry In Italy In English: Siena's Unique Programme - AcadIMAT (course structure, ADEE design, B2 English requirement, Italian needed for patient contact, seat trends)",
+        "url": "https://www.acadimat.com/dentistry-in-italy-in-english-ultimate-guide/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "University of Siena (Dentistry) - Italy Medical Schools (programme overview, worldwide degree recognition claims, ADEE agreement, first English-taught dentistry course in Italy)",
+        "url": "https://www.italymedicalschools.com/university-of-siena-dentistry/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Dentistry in University of Siena in Italy - Medlink Students (curriculum breakdown, clinical years, seat numbers)",
+        "url": "https://www.medlinkstudents.com/universities/university-of-siena/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "2025 Seats for Medicine, Dentistry and Vet-Med in Italy - AcadIMAT (Siena dentistry EU/non-EU seat-count changes across recent IMAT cycles)",
+        "url": "https://www.acadimat.com/2025-seats-for-medicine-dentistry-and-vetmed/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Accommodation - International Admissions @ University of Siena (official-affiliated admissions-office blog: DSU Toscana residences, private rentals)",
+        "url": "https://admission.unisi.it/?p=1670",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Is Siena a Safe City? - International Admissions @ University of Siena (official-affiliated admissions-office blog)",
+        "url": "https://admission.unisi.it/?p=1224",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Crime in Siena - Numbeo (independent crime-index data)",
+        "url": "https://www.numbeo.com/crime/in/Siena",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Historic Centre of Siena - UNESCO World Heritage Centre (city profile, UNESCO listing since 1995)",
+        "url": "https://whc.unesco.org/en/list/717/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Best Indian Grocery Store in Siena, Italy - Dookan (Indian grocery delivery serving Siena)",
+        "url": "https://eu.dookan.com/blogs/italy/best-indian-grocery-store-in-siena-italy",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Sindia Ristorante Indiano, Siena - Tripadvisor listing (Indian restaurant operating in Siena)",
+        "url": "https://www.tripadvisor.com/Restaurant_Review-g187902-d28286332-Reviews-or15-Sindia_Ristorante_Indiano-Siena_Tuscany.html",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Dental Council of India Screening Test Regulations, 2009 (official DCI regulatory framework for foreign dental graduates)",
+        "url": "https://dciindia.gov.in/Rule_Regulation/Screening_Test_Regulation_2009_alongwith_Amendment.pdf",
+        "kind": "government",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of Siena (Dentistry and Dental Prosthodontics, English-taught)",
+    "slug": "university-of-siena-dentistry-and-dental-prosthodontics-english-taught",
+    "city": "Siena",
+    "type": "Public",
+    "establishedYear": 1240,
+    "officialWebsite": "https://www.unisi.it/en",
+    "bestFitFor": [
+      "Indian students who specifically want a dentistry (not medicine) degree taught in English at a long-established Italian public university, rather than an English-medium MBBS program",
+      "Students prepared to sit the national IMAT entrance exam and compete for a small, sometimes single-digit, non-EU-resident seat quota that has shrunk in recent admission cycles",
+      "Students who can commit to reaching working Italian during the course, since clinical/patient-facing training is conducted in Italian even though classroom teaching is in English",
+      "Students who want to study in a compact, walkable, UNESCO World Heritage medieval city rather than a large metropolitan campus, and who are comfortable with Siena's smaller, quieter international-student community",
+      "Families comfortable with Italy's public-university, income-banded (ISEE) tuition model, where the exact annual fee is confirmed only after submitting income documentation rather than being a single fixed sticker price"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bds",
+        "title": "Dentistry and Dental Prosthodontics (Single-Cycle Degree, English-taught)",
+        "officialProgramUrl": "https://dentistry.unisi.it/en",
+        "medium": "English",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "feeNotes": "Tuition is NOT asserted as a fixed figure because this is a public Italian university operating an ISEE (family-income-based) fee-banding system rather than one flat international-student sticker price. Third-party admissions-consultancy sources describe a range from a low, income-subsidised fee (cited figures as low as roughly EUR 156/year for the most disadvantaged income bands) up to a ceiling around EUR 5,000/year for students who do not qualify for any income-based reduction, but this research could not pull the official current-year fee table (the university's fee pages were behind a bot-verification wall during this session). Prospective students must confirm the exact current-year fee band, any non-EU-specific charges, and the ISEE-equivalent documentation process directly with the University of Siena's international admissions office before budgeting.",
+        "sourceUrls": [
+          "https://apply.unisi.it/contents/content/8-tuition-fees-and-costs",
+          "https://apply.unisi.it/contents/content/10-dentistry-and-dental-prosthodontics",
+          "https://www.acadimat.com/dentistry-in-italy-in-english-ultimate-guide/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "The University of Siena is a public Italian university founded in 1240 as the Studium Senese, making it one of the oldest continuously operating universities in Europe, located in the Tuscan hill city of Siena. Its Dentistry and Dental Prosthodontics degree was the first dentistry course in Italy to be taught fully in English, designed in line with the recommendations of the Association for Dental Education in Europe (ADEE) and the Italian Ministry of Education, and runs as a six-year single-cycle programme combining pre-clinical science years with progressively hands-on clinical dental training. Admission is through Italy's national IMAT entrance exam, and non-EU-resident seats at Siena specifically have been reported as very limited in the most recent admission cycles (falling to single digits in some reported comparisons), so competition for international applicants is intense and seat numbers should be checked fresh for each admission year. Indian students considering Siena should independently confirm current tuition, seat availability, Italian-language expectations for clinical years, and how this specific dentistry degree is treated by India's Dental Council (DCI) screening-test framework before committing.",
+    "campusLifestyle": "Dentistry and Dental Prosthodontics students spend their first years on foundational medical and dental science subjects, including anatomy, histology, pathology, pharmacology, dental materials, physiology, and biochemistry, before moving into more clinically oriented subjects such as gnathology, oral surgery, prosthodontics, implantology, and periodontology in the later years. Supervised internships begin from the second year and increase in clinical responsibility through rotations in disciplines like oral surgery and orthodontics, culminating in a final year where students treat patients directly, including with digital-dentistry tools and modern dental materials. English is the language of classroom instruction throughout, and the university requires proof of English proficiency at a minimum B2 level by the end of the first year, but because clinical training involves direct patient interaction in Italian hospital and clinic settings, students are expected to build working Italian alongside their English-medium coursework. Student life is centred in Siena's compact historic core, a walkable medieval city rather than a sprawling urban campus, where university buildings, libraries, and student amenities are woven into the city's UNESCO-listed streets and piazzas rather than concentrated on a single suburban campus.",
+    "cityProfile": "Siena is a Tuscan hill city whose historic centre has been a UNESCO World Heritage Site since 1995, prized for its well-preserved medieval Gothic architecture, the shell-shaped Piazza del Campo, and its distinctive contrade (neighbourhood) culture built around the historic Palio horse race. The university is deeply embedded in city life: as of recent counts Siena's roughly 15,000-16,000 students make up close to a third of the city's total population of about 53,000, giving the city a strong student character despite its small size compared with Italy's larger university cities like Milan, Bologna, or Rome. This scale means a quieter, closer-knit international-student community than mega-city medical/dental schools offer, with most daily needs, libraries, and social spaces reachable on foot within the walled historic centre. Students should expect a slower-paced, tourism-and-heritage-oriented town rather than a large metropolitan hub, which shapes both the social scene and the size of any specific expatriate or Indian-origin community in the city itself.",
+    "clinicalExposure": "Clinical and pre-clinical dental training draws on Siena's teaching-hospital ecosystem, with internships beginning in the second year and progressing through specific clinical rotations (such as oral surgery and orthodontics) from the third year onward. By the final year, students are expected to manage patients directly on a daily basis as part of their supervised clinical practice, using contemporary tools including digital dentistry techniques and modern dental materials, consistent with the ADEE-aligned curriculum design the university states it follows. Because supervised clinical work involves real patients in an Italian-speaking clinical environment, functional Italian becomes practically necessary well before graduation, even though the program is marketed and taught in English; applicants should treat English B2 certification as the admission threshold, not as sufficient preparation for the patient-facing years.",
+    "hostelOverview": "The University of Siena does not run its own dedicated student residence halls for this programme; instead, most students access accommodation either through DSU Toscana (the regional public agency for university-student welfare, Azienda Regionale per il Diritto allo Studio Universitario), which manages university residences in and around Siena's historic centre and city walls with free wifi, or through private rental apartments and rooms sourced independently or via the university's partnered housing-search service. DSU Toscana dormitory places are allocated on a competitive, needs- and merit-based basis (tied to the regional DSU scholarship, borsa di studio), and students who do not secure a place may in some cases receive a housing stipend (borsa alloggio) instead; because places are limited, students who want a guaranteed room should apply as early as official guidance allows and have a private-rental backup plan. Typical residence-style accommodation in Siena has been described by third-party student-housing sources as costing roughly EUR 300/month for a shared room, though students should verify current rates and availability directly with DSU Toscana or the university's international admissions office rather than relying on this as a fixed figure.",
+    "indianFoodSupport": "Siena is a small city and does not have the large, established Indian community found in Italy's bigger student hubs like Milan or Rome, so students should expect a noticeably smaller local Indian food and grocery scene. That said, options do exist: Sindia Ristorante Indiano operates in Siena serving a range of Indian dishes and has drawn favourable reviews from diners on independent platforms, and Indian grocery essentials (basmati rice, chapati flour, spices, and ready-to-eat items) are accessible through delivery services such as Dookan that serve the Siena area. Students who want a wider variety of Indian restaurants and grocery stores, or a larger Indian peer community, may need to travel to nearby larger Tuscan cities such as Florence, roughly an hour away, for additional options; many students also rely on cooking for themselves using delivered or locally sourced ingredients supplemented by occasional trips to bigger cities.",
+    "safetyOverview": "Siena is widely described as one of the safer Italian cities for students and visitors, with a notably lower crime index than large metropolitan centres like Rome, Florence, or Milan on independent comparison sites such as Numbeo, and violent crime is described as rare. The University of Siena's own international-admissions materials characterise the city as generally safe, with the main practical risk being petty theft and pickpocketing in crowded tourist areas such as Piazza del Campo, the cathedral precinct, the train station, and around Palio-race crowds, rather than serious or violent crime. The compact, walled historic centre and comparatively small population (around 53,000, with students making up close to a third of that) contribute to a calmer, more contained night-time environment than in Italy's larger cities, though students should still take ordinary precautions in crowded tourist zones and around major public events.",
+    "studentSupport": "International applicants to the Dentistry and Dental Prosthodontics programme go through the university's international-admissions channels (apply.unisi.it and the affiliated international-admissions office), which publish guidance on tuition and cost structures, accommodation options, and forms specific to international students on the dedicated dentistry course microsite. Housing support is coordinated through DSU Toscana, the regional agency responsible for student-welfare services across Tuscany's public universities, including its scholarship (borsa di studio) and dormitory-allocation system, rather than through a university-run halls-of-residence office. Because English B2 proficiency is required for admission but working Italian becomes necessary for clinical training, prospective students should confirm what, if any, structured Italian-language support (courses, tutoring, or preparatory programmes) the university currently offers so they can plan language preparation well before their clinical years begin.",
+    "whyChoose": [
+      "Italy's first dentistry degree taught fully in English, at a public university founded in 1240 and among the oldest continuously operating universities in Europe",
+      "Six-year single-cycle Dentistry and Dental Prosthodontics curriculum designed in line with ADEE (Association for Dental Education in Europe) recommendations and Italian Ministry of Education standards, combining structured pre-clinical science years with progressively hands-on clinical dental training from the second year onward",
+      "Study in a UNESCO World Heritage medieval city where university life is woven into a compact, walkable historic centre rather than spread across a large metropolitan campus",
+      "Independent safety data (Numbeo) and the university's own admissions materials consistently describe Siena as a comparatively low-crime, calmer city than Italy's larger urban centres",
+      "Public-university ISEE-banded tuition model that can significantly reduce fees for students able to document lower family income, rather than one fixed high international-student sticker price"
+    ],
+    "thingsToConsider": [
+      "Non-EU-resident seats for this specific programme have been reported as very limited and volatile across recent IMAT admission cycles (multiple 2025-cycle seat-tracking sources describe a drop from around a dozen non-EU seats to as few as two), so applicants must verify the current year's exact non-EU quota directly rather than relying on prior-year numbers",
+      "Admission requires sitting Italy's national IMAT entrance exam, and non-EU applicants can generally apply through only one Italian university's non-EU quota per cycle, so this needs to be a deliberate, well-researched choice rather than a backup option",
+      "Tuition is NOT a single fixed figure - Siena uses a public-university, income-banded (ISEE) fee system, and this research could not confirm the exact current-year fee table directly from the official pages (which were behind a bot-verification wall), so applicants must get written confirmation of their expected fee band from the university before budgeting",
+      "English B2 proficiency covers admission and classroom teaching, but clinical training involves direct patient interaction conducted in Italian, so students need a realistic plan to reach working Italian well before their clinical years",
+      "Siena is a small city without an established Indian community comparable to Milan or Rome; while at least one Indian restaurant and Indian-grocery delivery service are available locally, students wanting broader Indian food/community options may need to travel to nearby larger cities"
+    ],
+    "faq": [
+      {
+        "question": "Is the University of Siena public or private?",
+        "answer": "It is a public Italian university, founded in 1240 as the Studium Senese and one of the oldest continuously operating universities in Europe, located in Siena, Tuscany."
+      },
+      {
+        "question": "What is the Dentistry and Dental Prosthodontics programme at Siena?",
+        "answer": "It is a six-year, English-taught single-cycle degree in Dentistry and Dental Prosthodontics, designed in line with ADEE (Association for Dental Education in Europe) recommendations, combining pre-clinical science years with progressively hands-on clinical dental training that begins with internships from the second year."
+      },
+      {
+        "question": "How do I apply, and how many non-EU seats are available?",
+        "answer": "Admission is through Italy's national IMAT entrance exam. Non-EU-resident seats at Siena for this programme have been reported as very limited and have shrunk in recent admission cycles according to third-party IMAT-tracking sources, so applicants must confirm the exact current-year non-EU quota on the official admissions portal (apply.unisi.it) before applying, rather than relying on prior years' numbers."
+      },
+      {
+        "question": "How much does the programme cost for international students?",
+        "answer": "As a public Italian university, Siena uses an income-banded (ISEE) fee system rather than one fixed international-student fee, with third-party sources describing a fee range but no single confirmed current-year figure available from the official fee pages at the time of this research. Applicants should request written confirmation of their expected fee band from the university's international admissions office before budgeting."
+      },
+      {
+        "question": "Is Italian language knowledge required for this English-medium programme?",
+        "answer": "Classroom teaching is in English, and the university requires proof of at least B2-level English by the end of the first year. However, clinical training involves direct interaction with patients in Italian, so students need working Italian by the time their clinical rotations begin, even though the course is marketed as English-taught."
+      },
+      {
+        "question": "Where do international students live in Siena?",
+        "answer": "The university does not run its own dedicated halls of residence for this programme; most students use DSU Toscana's regional student-housing system (competitive, tied to the regional study grant) or arrange private rental accommodation, in some cases through the university's partnered housing-search service."
+      },
+      {
+        "question": "Will this degree let me practice dentistry in India?",
+        "answer": "India's regulator for dentistry is the Dental Council of India (DCI), not the National Medical Commission (NMC), and DCI generally requires graduates of foreign dental degrees to pass its screening test and register with a state dental council before practising, with some exceptions. This research could not confirm a university-specific DCI recognition statement for Siena's Dentistry and Dental Prosthodontics degree, so Indian students should independently verify current DCI screening-test requirements and recognition status for this specific university well before enrolling."
+      },
+      {
+        "question": "Is Siena a safe city for international students?",
+        "answer": "Yes, generally. Independent crime-index comparisons (Numbeo) and the university's own international-admissions materials describe Siena as a comparatively low-crime city versus larger Italian centres like Rome, Florence, or Milan, with petty theft in crowded tourist areas being the main practical risk rather than violent crime."
+      }
+    ]
+  }
+}
