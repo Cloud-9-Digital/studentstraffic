@@ -1,0 +1,221 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "University of British Columbia (UBC)",
+  "cityName": "Vancouver",
+  "priority": "medium",
+  "officialWebsite": "https://www.ubc.ca/",
+  "programUrl": "https://www.dentistry.ubc.ca/education/dmd/applying-to-the-dmd-program/",
+  "feesUrl": "https://www.dentistry.ubc.ca/education/dmd/dmd-financial-info/international-student-fees/",
+  "hostelUrl": "https://vancouver.housing.ubc.ca/",
+  "admissionUrl": "https://www.dentistry.ubc.ca/education/dmd/dmd-admission-procedures/",
+  "qualityScore": 70,
+  "reviewNotes": "UBC is a major Canadian public research university (est. 1908, Vancouver + Okanagan campuses) that is corroborated across its own official site (ubc.ca) and independent sources (Wikipedia, Canadian Encyclopedia) for establishment year and public status. IMPORTANT SCOPE CAVEAT: this is not a typical India-outbound MBBS/nursing/pharmacy destination like the university's counterparts in Georgia, Russia or the Caribbean. Direct research on each health-professional program confirms: (1) the MD program (mdprogram.med.ubc.ca) is closed to international students entirely -- only Canadian citizens, permanent residents, or protected persons/refugees may apply; (2) the Vancouver BSN nursing program (nursing.ubc.ca / UBC Academic Calendar) is likewise restricted to Canadian citizens, permanent residents, or persons with refugee status -- international applicants cannot apply; (3) the entry-to-practice PharmD (pharmsci.ubc.ca) admissions pages describe eligibility for Canadian citizens and permanent residents with BC/territory residents preferred, and do not describe a direct international-applicant pathway, so it is omitted here as unconfirmed rather than asserted either way; (4) the Doctor of Dental Medicine (DMD) program is the ONE health-professional program confirmed to accept direct international applicants (dentistry.ubc.ca), assessed by the Faculty using the same criteria as the domestic pool, applying through ADEA AADSAS, requiring the Canadian/American DAT (not NEET), and requiring 90 transferable credits (~3 years of prior university study, not a direct high-school entry route). Because of this, the single program included here is the DMD (mapped to courseSlug 'bds' as the closest existing course-taxonomy match for a foreign dental degree, since UBC does not offer a BDS/dental program under that name -- this is an editorial mapping choice, not a claim of degree equivalence, and is stated as such in the content). Tuition figures for DMD international students are not published as a single headline figure on the fee page found (it point to the UBC Academic Calendar for the current year's rate) -- so no tuition amount is asserted; feeNotes explains this and directs students to the official calendar. The separate 'Internationally-Trained Dentists' pathway (IDDCP) was found to be explicitly CLOSED to new applications ('not accepting applications until further notice') and is mentioned only as a caveat, not offered as a route. No NMC/PCI/INC-style Indian regulator claim is made anywhere, since UBC's DMD is a Canadian professional degree governed by Canadian licensing bodies (NDEB), not an Indian-recognition pathway; content explicitly tells students to verify their own country's recognition needs. Given the very limited scope (one program, competitive/limited international seats, non-NEET entry test, multi-year prior study prerequisite), qualityScore is set at 70 (solid, multi-source corroboration) rather than higher, since this is a narrow-fit destination rather than a broad India-outbound MBBS/nursing pipeline school.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UBC - Official homepage (ubc.ca)",
+        "url": "https://www.ubc.ca/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms official domain and that UBC operates two major campuses, Vancouver and the Okanagan (Kelowna)."
+      },
+      {
+        "label": "UBC - About UBC / Campuses",
+        "url": "https://www.ubc.ca/about/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms UBC's two-campus structure (Vancouver and Okanagan) directly on the official site."
+      },
+      {
+        "label": "Wikipedia - University of British Columbia",
+        "url": "https://en.wikipedia.org/wiki/University_of_British_Columbia",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration that UBC is a public research university founded in 1908 by an Act of the BC provincial legislature, with the Vancouver (Point Grey) campus officially opening in 1925."
+      },
+      {
+        "label": "The Canadian Encyclopedia - University of British Columbia",
+        "url": "https://www.thecanadianencyclopedia.ca/en/article/university-of-british-columbia",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent cross-check of UBC's founding history and public-university status."
+      },
+      {
+        "label": "UBC MD Program - Admission Requirements",
+        "url": "https://mdprogram.med.ubc.ca/admissions/before-you-apply/admission-requirements/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms MD program eligibility is restricted to Canadian citizens, permanent residents of Canada, and persons with Canadian refugee status; international applicants cannot apply. Program is 4 years, offered across four BC sites (Vancouver-Fraser, Southern/Kelowna, Island/Victoria, Northern/Prince George)."
+      },
+      {
+        "label": "UBC Nursing - Admission Criteria (Vancouver BSN)",
+        "url": "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/school-nursing/bachelor-science-nursing/admission-criteria",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms only Canadian Citizens, Permanent Residents, and persons with Canadian refugee status may apply to the Vancouver BSN program; international applicants are not eligible to apply directly."
+      },
+      {
+        "label": "UBC Faculty of Pharmaceutical Sciences - PharmD Admission Information",
+        "url": "https://pharmsci.ubc.ca/programs/entry-practice-pharmd-degree/admissions-information",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "States eligibility for Canadian citizens and permanent residents of Canada, with preference to BC/Yukon/NWT/Nunavut residents; does not describe a direct international-applicant admissions route, so PharmD is omitted from structured programs as unconfirmed for direct international entry rather than asserted open or closed."
+      },
+      {
+        "label": "UBC Faculty of Dentistry - DMD Admission Procedures",
+        "url": "https://www.dentistry.ubc.ca/education/dmd/dmd-admission-procedures/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms the Faculty accepts applications from non-Canadian citizens/non-permanent residents to the DMD program, assessed using the same criteria as the domestic pool. Requires 90 UBC-transferable credits (~3 years of prior post-secondary study) with minimum 70%/2.8 GPA, prerequisite courses, and English-proficiency testing (TOEFL/IELTS) for applicants from non-English-medium education systems. International applicants must also meet Canadian study-permit and immigration requirements for health-care programs."
+      },
+      {
+        "label": "UBC Faculty of Dentistry - Applying to the DMD Program",
+        "url": "https://www.dentistry.ubc.ca/education/dmd/applying-to-the-dmd-program/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms applications go through ADEA AADSAS; DMD Class of 2031 cycle has applications opening 12 May 2026/submissions 3 June 2026, application deadline 10 Oct 2026, supporting documents deadline 23 Oct 2026, AADSAS verification deadline 31 Oct 2026, and a DAT (CDA/ADA) writing deadline of 31 Aug 2026. Confirms the Canadian/American Dental Aptitude Test (DAT) is required -- not the Indian NEET."
+      },
+      {
+        "label": "UBC Faculty of Dentistry - DMD FAQ",
+        "url": "https://www.dentistry.ubc.ca/education/dmd/dmd-faq/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Explicitly confirms 'the international pool is assessed using the same criteria as the domestic pool' for DMD applicants, and links to a dedicated International Student Fees page."
+      },
+      {
+        "label": "UBC Faculty of Dentistry - DMD International Student Fees",
+        "url": "https://www.dentistry.ubc.ca/education/dmd/dmd-financial-info/international-student-fees/",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07",
+        "notes": "Page states that projected tuition costs for the current year are published in the UBC Academic Calendar (Tuition Fees and Faculty Fees) rather than as a headline figure on this page itself; lists other estimated per-year costs (e.g. textbooks ~CAD 1,000-2,100, surgical loupes/lights ~CAD 3,000 in year 1, NDEB certification fee ~CAD 2,500 in year 4, accident insurance ~CAD 7/year). No specific international tuition amount is asserted here since it was not directly confirmed on this page."
+      },
+      {
+        "label": "UBC Faculty of Dentistry - Information for Internationally-Trained Dentists",
+        "url": "https://www.dentistry.ubc.ca/education/internationally-trained-dentists/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms the Faculty 'is not accepting applications to the International Dental Degree Completion Program (IDDCP) until further notice.' Also describes the National Dental Examining Board of Canada (NDEB) equivalency process for internationally-trained dentists seeking Canadian licensure generally (a separate pathway from the DMD entry program)."
+      },
+      {
+        "label": "UBC Student Services - International Student Advising",
+        "url": "https://students.ubc.ca/international-student-guide/international-student-advising/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms a dedicated International Student Advising office staffed by Regulated Canadian Immigration Consultants (RCICs)/Regulated International Student Immigration Advisors (RISIAs), offering visa/study-permit/work-permit guidance, health insurance information, and cultural-transition coaching, located in the UBC Life Building on the Vancouver campus."
+      },
+      {
+        "label": "UBC Student Housing and Community Services - Residences",
+        "url": "https://vancouver.housing.ubc.ca/residences-rooms/residences/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms UBC Vancouver houses close to 14,000 students across 15 residences, including 8-month first-year residences (e.g. Totem Park, Place Vanier) and year-round residences for upper-year/graduate students (e.g. Marine Drive, Walter Gage) plus family housing; on-campus housing is not guaranteed beyond the first-year guarantee cohort."
+      },
+      {
+        "label": "Destination Vancouver - Punjabi Market Guide",
+        "url": "https://www.destinationvancouver.com/inspirations/city/punjabi-market-guide",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent city-tourism source confirming Vancouver's Punjabi Market district (Main Street, Sunset neighbourhood) has served the South Asian community since the 1970s with numerous Indian restaurants, sweet shops and grocers."
+      },
+      {
+        "label": "Wikipedia - Punjabi Market, Vancouver",
+        "url": "https://en.wikipedia.org/wiki/Punjabi_Market,_Vancouver",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates the Punjabi Market's long history and the wider South Asian community's later suburbanization toward Surrey and Delta from the 1980s-2000s, expanding Indian grocery and restaurant options across Metro Vancouver."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of British Columbia (UBC)",
+    "city": "Vancouver",
+    "type": "Public",
+    "establishedYear": 1908,
+    "officialWebsite": "https://www.ubc.ca/",
+    "bestFitFor": [
+      "Students who already have roughly 3 years (90 transferable credits) of prior university-level study completed and are targeting a genuine four-year Doctor of Dental Medicine (DMD) degree in Canada, not a direct-from-high-school MBBS-style pathway",
+      "Applicants who can sit the Canadian/American Dental Aptitude Test (DAT) rather than relying on NEET, and who are comfortable with the ADEA AADSAS application system and Canadian study-permit requirements for health-care programs",
+      "Students prioritising a large, globally ranked, public research university in a major, safe, highly diverse Western city over a smaller specialised medical/dental campus",
+      "Applicants who are financially prepared for Canadian international-student living costs and understand that scholarships/bursaries for international students in health-care programs at UBC are limited"
+    ],
+    "recognitionBadges": [
+      "Public research university established in 1908 by an Act of the British Columbia provincial legislature",
+      "DMD graduates become eligible to write the National Dental Examining Board of Canada (NDEB) certification exams for Canadian licensure",
+      "DMD international applicant pool assessed using the same admissions criteria as the domestic pool (per the Faculty of Dentistry's own FAQ)"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "UBC Faculty of Dentistry - DMD Admission Procedures (official)",
+        "url": "https://www.dentistry.ubc.ca/education/dmd/dmd-admission-procedures/"
+      },
+      {
+        "label": "National Dental Examining Board of Canada (NDEB) - official",
+        "url": "https://ndeb-bned.ca/"
+      }
+    ],
+    "programs": [
+      {
+        "courseSlug": "bds",
+        "title": "Doctor of Dental Medicine (DMD)",
+        "officialProgramUrl": "https://www.dentistry.ubc.ca/education/dmd/applying-to-the-dmd-program/",
+        "medium": "English (TOEFL/IELTS required for applicants whose prior education was not in a primarily English-medium system)",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "licenseExamSupport": ["NDEB (National Dental Examining Board of Canada) certification exams after graduation"],
+        "feeNotes": "UBC's own DMD International Student Fees page does not publish a single confirmed international tuition figure; it directs applicants to the current UBC Academic Calendar (Tuition Fees and Faculty Fees) for the exact year-by-year rate, alongside separately confirmed estimated costs such as textbooks (roughly CAD 1,000-2,100/year), surgical loupes and lights (roughly CAD 3,000 in year 1), and an NDEB certification fee of roughly CAD 2,500 in the final year. No tuition amount is asserted here since it could not be directly corroborated on the fee page itself; students must confirm the current year's exact tuition with UBC Enrolment Services before budgeting.",
+        "sourceUrls": [
+          "https://www.dentistry.ubc.ca/education/dmd/dmd-admission-procedures/",
+          "https://www.dentistry.ubc.ca/education/dmd/applying-to-the-dmd-program/",
+          "https://www.dentistry.ubc.ca/education/dmd/dmd-financial-info/international-student-fees/",
+          "https://www.dentistry.ubc.ca/education/dmd/dmd-faq/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "The University of British Columbia (UBC) is a large public research university founded in 1908, with its main campus in Vancouver and a second campus in Kelowna (the Okanagan). UBC is one of Canada's most internationally recognised universities, but for Indian students researching health-professional degrees it is important to understand its actual access rules rather than assume it works like a typical MBBS-abroad destination. UBC's MD (medicine) program and its Vancouver BSN nursing program are both restricted to Canadian citizens, permanent residents, or persons with Canadian refugee status -- international applicants cannot apply to either directly. The entry-to-practice PharmD program's own admissions pages describe eligibility for Canadian citizens/permanent residents without detailing a direct international-applicant route. The one confirmed exception is the four-year Doctor of Dental Medicine (DMD) program, which the Faculty of Dentistry states it assesses using the same criteria for its international applicant pool as for domestic applicants -- making it the only UBC health-professional program covered in this profile. This information is compiled from UBC's own official websites (ubc.ca, mdprogram.med.ubc.ca, nursing.ubc.ca, pharmsci.ubc.ca, dentistry.ubc.ca) and independent sources (Wikipedia, The Canadian Encyclopedia, Destination Vancouver); Indian applicants should independently verify current eligibility, fees and licensing requirements directly with UBC before applying.",
+    "campusLifestyle": "UBC's Vancouver campus sits on the Point Grey peninsula, officially opened in 1925, and today houses close to 14,000 students across 15 on-campus residences, ranging from first-year dormitory-style halls (e.g. Totem Park, Place Vanier) to apartment-style residences for upper-year and graduate students (e.g. Marine Drive, Walter Gage) and family housing. As a large multi-faculty research university, UBC offers hundreds of clubs, societies and recreational facilities spanning academic, cultural and athletic interests, and hosts a genuinely international student population drawn from around the world. Because Dentistry's DMD is a small, cohort-based professional program (roughly 60-70 students per year) embedded within this much larger university, day-to-day student life for DMD students centres heavily on the Faculty of Dentistry building and its own clinics, labs and student groups rather than the wider undergraduate campus experience -- prospective applicants should confirm current DMD-specific student-life details directly with the Faculty.",
+    "cityProfile": "Vancouver is consistently ranked among the safest and most livable cities in Canada, and independent rankings such as QS Best Student Cities have placed it as Canada's top student city. It is one of the country's most ethnically diverse cities, with a well-established South Asian community concentrated historically around the Punjabi Market district on Main Street (serving the community since the 1970s with Indian restaurants, sweet shops and grocers) and, since the 1980s-2000s, increasingly in the neighbouring city of Surrey as the community grew and suburbanised. The city has an extensive public transit network (SkyTrain, buses) connecting most neighbourhoods to the university within a reasonable commute, though students should note that Vancouver's cost of living, particularly housing, is high relative to many other Canadian cities, and its climate is mild but notably wet for much of the year -- a significant adjustment from most parts of India.",
+    "clinicalExposure": "As a four-year professional Doctor of Dental Medicine (DMD) degree, the program combines pre-clinical coursework with hands-on clinical training delivered through the Faculty of Dentistry's own teaching clinics in Vancouver, where students treat patients under faculty supervision as they progress through the curriculum. The official DMD admissions and curriculum pages describe a structured progression of clinical competencies building toward independent practice-ready skills by graduation, in line with Canadian dental education standards. Because exact clinical rotation structures, patient-load requirements and any external placement partnerships can change between admission cycles, applicants should review the current DMD Curriculum page and confirm specifics directly with the Faculty of Dentistry before applying.",
+    "hostelOverview": "UBC Vancouver operates 15 on-campus residences housing close to 14,000 students in total, spanning traditional first-year residence halls and apartment-style buildings for continuing and graduate students, plus family accommodation. However, on-campus housing is not guaranteed for all students -- it is prioritised for first-year undergraduates under UBC's First Year Guarantee, and professional-program students such as those in the four-year DMD cohort should not assume automatic access to a campus residence for their full program length. Students who do not secure campus housing typically rent in nearby Vancouver neighbourhoods (Point Grey, Kitsilano, West Point Grey) or commute via public transit from other parts of Metro Vancouver, including areas like Surrey with a larger South Asian community. Because Vancouver's private rental market is competitive and expensive, DMD applicants should contact UBC Student Housing and Community Services directly, well in advance of enrolment, to understand current availability, costs and application timelines for professional-program students specifically.",
+    "indianFoodSupport": "Metro Vancouver has one of Canada's largest and most established South Asian communities, historically centred on the Punjabi Market district on Main Street in Vancouver (serving the community with Indian restaurants, sweet shops and grocers since the 1970s) and, since the 1980s-2000s, increasingly concentrated in the neighbouring city of Surrey as the community grew. Indian and South Asian grocery stores, restaurants and sweet shops are widely available across the region, making it realistic for students to maintain an Indian diet, including vegetarian options, through self-catering or dining out. UBC's own campus food services are not confirmed here to include a dedicated Indian mess or dining hall, so DMD students living off-campus in Vancouver or Surrey are likely to rely on the wider city's Indian food ecosystem rather than any specific university dining arrangement -- students should confirm current on-campus dining options directly with UBC Food Services.",
+    "safetyOverview": "Vancouver is widely regarded, including in independent city rankings, as one of the safer major cities in Canada and internationally, with well-developed policing, healthcare and public-transport infrastructure. UBC's Vancouver campus has its own campus security service and emergency resources typical of a large Canadian public university. As with any major city, students should take standard precautions around personal belongings and late-night travel, and should register with UBC's International Student Advising office on arrival for guidance on Canadian immigration rules, health insurance (British Columbia's provincial medical plan, MSP, plus any required supplemental coverage), and general settling-in support. Students should also review their home country's current travel advisories for Canada and keep study-permit and immigration documents up to date throughout their program.",
+    "studentSupport": "UBC Vancouver has a dedicated International Student Advising office, staffed by Regulated Canadian Immigration Consultants (RCICs) or Regulated International Student Immigration Advisors (RISIAs), providing guidance on study permits, work permits, health insurance and cultural transition, located in the UBC Life Building. Within the Faculty of Dentistry specifically, DMD applicants apply through the ADEA AADSAS centralized application system, and the Faculty publishes detailed admissions procedures, required-course lists and an admissions FAQ; the Faculty also states plainly that scholarships and bursaries for international students in the DMD program are limited, so applicants should plan to self-finance their studies and demonstrate the funds required for a Canadian study permit. Prospective Indian applicants should use these official UBC channels directly for all admissions, fee, and visa questions, and verify any information provided by third-party consultants or agents against UBC's own published pages before making financial commitments.",
+    "whyChoose": [
+      "A large, globally ranked, public research university (established 1908) with a genuine four-year Doctor of Dental Medicine (DMD) program whose international applicant pool is assessed using the same criteria as the domestic pool -- a rare direct pathway among Canadian dental schools for international applicants.",
+      "Located in Vancouver, a city with an extensive, long-established South Asian community and readily available Indian food, groceries and cultural community life alongside strong public transit and quality-of-life rankings.",
+      "Graduates become eligible to sit the National Dental Examining Board of Canada (NDEB) certification exams, the recognised route into Canadian dental licensure.",
+      "A dedicated International Student Advising office staffed by regulated immigration consultants, providing structured visa, health-insurance and settling-in support throughout the program."
+    ],
+    "thingsToConsider": [
+      "UBC's MD (medicine) and Vancouver BSN nursing programs are both closed to international applicants outright -- only the DMD (dentistry) program is confirmed open to direct international applications; students hoping for an MBBS-equivalent or nursing pathway at UBC specifically should look elsewhere.",
+      "DMD admission requires roughly 90 transferable university credits (about 3 years of prior post-secondary study) plus a minimum 70%/2.8 GPA and specific prerequisite courses -- this is not a direct-from-Class-12 entry route the way many MBBS-abroad programs are.",
+      "Applicants must sit the Canadian/American Dental Aptitude Test (DAT), not NEET, and apply through the ADEA AADSAS system with its own deadlines (recent cycles show application deadlines in October and DAT-writing deadlines by late August) -- plan the testing and application timeline well in advance.",
+      "No confirmed international tuition figure is published on UBC's own DMD international fees page (it refers applicants to the UBC Academic Calendar for the current year's rate), and the Faculty states scholarships/bursaries for international students in the program are limited -- get the exact current-year cost in writing from UBC before committing financially.",
+      "A DMD from UBC is a Canadian professional dental degree governed by Canadian licensing (NDEB); it is not an Indian dental degree, and students intending to practise in India afterward must independently verify current Dental Council/National Medical Commission-successor recognition and any additional Indian licensing requirements themselves before enrolling."
+    ],
+    "faq": [
+      {
+        "question": "Can Indian students apply for MBBS or nursing at UBC?",
+        "answer": "No. UBC's MD (medicine) program and its Vancouver BSN nursing program are both restricted to Canadian citizens, permanent residents of Canada, or persons with Canadian refugee status, per the university's own admission-requirements pages. International applicants, including Indian students, cannot apply directly to either program."
+      },
+      {
+        "question": "Which UBC health-professional program can international students actually apply to?",
+        "answer": "The four-year Doctor of Dental Medicine (DMD) program is the one confirmed to accept direct international applications -- the Faculty of Dentistry states its international applicant pool is assessed using the same criteria as its domestic pool. UBC's PharmD (pharmacy) admissions pages describe eligibility for Canadian citizens/permanent residents without detailing a direct international-applicant pathway, so it is not covered here as a confirmed option."
+      },
+      {
+        "question": "What are the entry requirements for UBC's DMD program for an Indian applicant?",
+        "answer": "Applicants need roughly 90 transferable university credits (about 3 years of prior post-secondary study) with a minimum 70% average or 2.8 GPA, completed prerequisite courses, a passing score on the Canadian/American Dental Aptitude Test (DAT, not NEET), an application through the ADEA AADSAS system, and an English-proficiency test (TOEFL/IELTS) if prior education was not in a primarily English-medium system. This is a graduate-entry-style pathway, not a direct-from-high-school route."
+      },
+      {
+        "question": "How much does the UBC DMD program cost for international students?",
+        "answer": "UBC's own DMD International Student Fees page does not publish a single confirmed tuition figure; it directs applicants to the current UBC Academic Calendar for the exact year's rate. Separately confirmed estimated costs include textbooks (roughly CAD 1,000-2,100 per year) and an NDEB certification fee of about CAD 2,500 in the final year. The Faculty also states scholarships and bursaries for international students in the program are limited, so applicants should confirm the exact current tuition and total cost in writing with UBC Enrolment Services before committing."
+      },
+      {
+        "question": "Will a UBC DMD degree let me practise dentistry in India?",
+        "answer": "A UBC DMD is a Canadian professional dental degree, and graduates become eligible to sit the National Dental Examining Board of Canada (NDEB) exams for Canadian licensure. This profile does not assert any Indian dental-council recognition for this degree; students intending to return and practise in India must independently verify current recognition and any additional licensing exam requirements with the relevant Indian regulatory authority before enrolling."
+      }
+    ]
+  }
+}

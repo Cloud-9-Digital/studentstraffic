@@ -1,0 +1,104 @@
+{
+  "countrySlug": "russia",
+  "universitySlug": "perm-state-pharmaceutical-academy",
+  "schoolName": "Perm State Pharmaceutical Academy",
+  "cityName": "Perm",
+  "priority": "medium",
+  "officialWebsite": "https://pfa.ru/",
+  "programUrl": "https://pfa.ru/",
+  "reviewNotes": "Corroborated across the official Ministry of Health institution site (pfa.ru) and English-language Wikipedia. Instruction is in Russian; the academy runs a preparatory/Russian-as-a-foreign-language track for international students. Tuition figures were omitted because no official fee page was corroborated. India-audience regulator framing (PCI) is presented as something students must independently verify, not asserted.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Perm State Pharmaceutical Academy - official website (Ministry of Health of the Russian Federation)",
+        "url": "https://pfa.ru/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms the institution as the Federal State Budgetary Educational Institution of Higher Education 'Perm State Pharmaceutical Academy' of the Ministry of Health of Russia (FGBOU VO PGFA Minzdrava Rossii). Site is Russian-language only."
+      },
+      {
+        "label": "Perm State Pharmaceutical Academy - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Perm_State_Pharmaceutical_Academy",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates establishment (1918 origins; pharmaceutical institute from 1936; academy status 1995), Perm location, Russian language of instruction, faculty structure, and international enrolment."
+      },
+      {
+        "label": "Perm, Russia - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Perm,_Russia",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates Perm city context: administrative centre of Perm Krai on the Kama River near the Ural Mountains, population around 1.08 million, continental climate, and its status as a multi-university student city."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Perm State Pharmaceutical Academy",
+    "city": "Perm",
+    "type": "Public",
+    "establishedYear": 1918,
+    "officialWebsite": "https://pfa.ru/",
+    "bestFitFor": [
+      "Students specifically focused on a pharmacy career rather than general medicine, at a dedicated specialist pharmaceutical institution",
+      "International applicants willing to learn Russian, since the academy teaches in Russian and provides a preparatory/Russian-language track",
+      "Students who prefer a mid-sized Russian university city (Perm) over the higher costs of Moscow or St. Petersburg",
+      "Applicants who value a state (public) institution operating under the Russian Ministry of Health"
+    ],
+    "programs": [
+      {
+        "courseSlug": "pharmacy",
+        "title": "Pharmacy (Specialist degree)",
+        "officialProgramUrl": "https://pfa.ru/",
+        "medium": "Russian (with a preparatory Russian-as-a-foreign-language track for international students)",
+        "durationYears": 5,
+        "feeNotes": "Official tuition figures were not corroborated from a primary fee page at the time of research and have therefore been omitted. Applicants should request current fees, intake dates, and the exact medium of instruction directly from the academy's admissions office before committing."
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Perm State Pharmaceutical Academy is a public, specialist pharmaceutical university in Perm, Russia, operating under the Russian Ministry of Health. Its roots trace to a pharmaceutical department founded within Perm State University in 1918; it became an independent pharmaceutical institute in 1936 and was granted academy status in 1995. Unlike general medical universities, the academy concentrates entirely on pharmacy and pharmaceutical sciences, offering specialist, bachelor's and master's level training across a structure of several faculties and departments. It enrols students from across Russia and a number of countries in Africa, the Middle East and Asia, and runs a dedicated faculty and preparatory track to support foreign citizens. The primary language of instruction is Russian, so international students are typically expected to complete a preparatory/Russian-as-a-foreign-language course before or alongside their degree. Indian students considering the academy should treat pharmacy-council recognition and eligibility as items to verify independently; this page presents sourced facts rather than admissions promises.",
+    "campusLifestyle": "The academy is a mid-sized, subject-focused institution rather than a sprawling multi-disciplinary campus, and its community is organised around pharmacy teaching, laboratories and departments. Student life sits within Perm, one of Russia's larger university cities, which is home to several major universities and a correspondingly active student population. Because the academy specialises in a single field, cohorts tend to be tightly focused on pharmaceutical study, giving international students a clear academic identity. Day-to-day life combines lectures and laboratory-based practical work with the wider cultural and social offering of Perm. Prospective students should confirm current details of clubs, societies and international-student activities directly with the academy, as this page focuses on corroborated facts rather than unverified campus claims.",
+    "cityProfile": "Perm is the administrative centre of Perm Krai, sitting on both banks of the Kama River in the European part of Russia near the Ural Mountains. It is one of the country's larger cities, with a population of roughly 1.08 million, and ranks among the most populous cities in Russia and the Volga Federal District. The city is a significant industrial and cultural hub, with strengths in energy, oil and gas refining, machine building and chemicals, and it hosts several universities, making it an established student destination. Perm has a continental climate: winters are long, snowy and cold, with temperatures frequently between about -10 and -25 degrees Celsius, while summers are mild and typically range from about +15 to +25 degrees Celsius. Students from warmer regions such as India should plan carefully for the cold winters.",
+    "clinicalExposure": "As a specialist pharmaceutical academy, the institution's practical training is centred on pharmaceutical and laboratory work rather than the bedside clinical rotations associated with an MBBS programme. Pharmacy education of this kind typically combines instruction in pharmaceutical chemistry, pharmacology, pharmacognosy, pharmaceutical technology and related disciplines with laboratory practice. Students focused on a pharmacy career should confirm the exact structure of practical training, internships and any pharmacy-placement components directly with the academy, since specific rotation and placement arrangements were not corroborated from a primary source during this research and are therefore not asserted here.",
+    "hostelOverview": "Russian state universities commonly provide hostel (dormitory) accommodation for their students, and the academy enrols students from other Russian regions and from abroad, which implies a need for student housing. However, precise details of the academy's hostel capacity, room types, amenities and charges were not corroborated from a primary source at the time of research. International applicants should request current hostel availability, allocation rules and costs directly from the academy's admissions or international office, and should confirm these in writing before travelling. This page deliberately avoids stating specific hostel figures that could not be verified.",
+    "indianFoodSupport": "Perm is a large city with a broad range of grocery stores, markets and restaurants, so students can generally source ingredients to cook for themselves, which is the most reliable way for Indian students to maintain a familiar diet abroad. Availability of dedicated Indian restaurants or Indian grocery suppliers in Perm was not corroborated during research and is not claimed here. Students with specific dietary requirements, including vegetarian or halal needs, should plan to cook independently and confirm what is available locally. Self-catering, along with international grocery options found in a city of this size, is the practical baseline students should expect.",
+    "safetyOverview": "Perm is an established, large Russian city with a substantial resident student population across several universities, which points to routine student life being feasible there. As with any move abroad, students should follow standard personal-safety practices, keep documentation in order, and register and comply with local residency and visa requirements. Given the broader geopolitical context affecting travel to and from Russia, Indian students and their families should also check current government travel advisories, banking and payment access, and consular support arrangements before committing. This page does not make guarantees about safety and instead directs students to official advisories for current conditions.",
+    "studentSupport": "The academy maintains a faculty and preparatory track specifically for the training of foreign citizens, including Russian-as-a-foreign-language preparation, which is the main formal support structure relevant to international students. Beyond language preparation, prospective students should confirm the availability of visa and registration assistance, orientation, and academic support directly with the academy's international office. Because the institution's website is published in Russian, applicants who do not read Russian may need translation help or an authorised representative when navigating admissions. Students are encouraged to correspond directly with the academy to confirm the current scope of student services.",
+    "whyChoose": [
+      "A dedicated, specialist pharmaceutical academy with origins dating to 1918 and academy status since 1995, focused entirely on pharmacy rather than general medicine",
+      "A public institution operating under the Russian Ministry of Health, with an established faculty and preparatory track for international students",
+      "Located in Perm, a large Ural university city of roughly 1.08 million people, generally more affordable than Moscow or St. Petersburg",
+      "Long-standing experience enrolling international students from Africa, the Middle East and Asia"
+    ],
+    "thingsToConsider": [
+      "The primary language of instruction is Russian; international students should expect to complete a preparatory Russian-language course and be prepared to study in Russian",
+      "This is a pharmacy-focused academy, not an MBBS/medical college, so applicants seeking a medical degree should look elsewhere",
+      "Tuition, hostel charges and exact intake dates could not be corroborated from a primary fee page during research and must be confirmed directly with the academy",
+      "Perm has long, cold winters that can be a significant adjustment for students from warmer climates such as India",
+      "Recognition for practising pharmacy in India (for example, Pharmacy Council of India requirements) must be independently verified before enrolling"
+    ],
+    "faq": [
+      {
+        "question": "Is Perm State Pharmaceutical Academy a government (public) institution?",
+        "answer": "Yes. It is a federal state budgetary institution of higher education operating under the Ministry of Health of the Russian Federation, based in Perm. This is confirmed on the academy's official website and corroborated by Wikipedia."
+      },
+      {
+        "question": "What language are courses taught in?",
+        "answer": "The primary language of instruction is Russian. The academy runs a preparatory faculty and a Russian-as-a-foreign-language course to help international students reach the required level before or alongside their degree studies. Applicants should confirm whether any English-taught option exists directly with the academy."
+      },
+      {
+        "question": "What does the academy specialise in?",
+        "answer": "It is a specialist pharmaceutical academy focused on pharmacy and pharmaceutical sciences, offering specialist, bachelor's and master's level training. It is not a general medical (MBBS) university."
+      },
+      {
+        "question": "How much does it cost to study there?",
+        "answer": "Official tuition and hostel figures were not corroborated from a primary fee page during this research, so no amounts are stated here. Prospective students should request current fees, hostel charges and intake dates directly from the academy's admissions office."
+      },
+      {
+        "question": "Will an Indian student be able to practise pharmacy in India after studying here?",
+        "answer": "Recognition and eligibility for practising in India, including any Pharmacy Council of India (PCI) requirements, are not confirmed on this page and must be independently verified. Students should check the current rules with the relevant Indian regulator before enrolling."
+      }
+    ]
+  }
+}

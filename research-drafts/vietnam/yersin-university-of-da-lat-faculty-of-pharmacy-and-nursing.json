@@ -1,0 +1,95 @@
+{
+  "countrySlug": "vietnam",
+  "universitySlug": "yersin-university-of-da-lat-faculty-of-pharmacy-and-nursing",
+  "schoolName": "Yersin University of Da Lat (Faculty of Pharmacy and Nursing)",
+  "cityName": "Da Lat",
+  "priority": "low",
+  "officialWebsite": "https://yersin.edu.vn/en/",
+  "status": "hold",
+  "reviewNotes": "HOLD - not publish-ready. Yersin University of Da Lat (Truong Dai hoc Yersin Da Lat) is a private university established 1 October 2004 under Prime Minister Decision No. 175/2004/QD-TTg -- the first non-public university in Vietnam's Central Highlands region, now a member of TTC Group (formerly Thanh Thanh Cong Group). It runs both a Pharmacy program (Duoc hoc, code 7720201, 4-year Bachelor of Pharmacy) and a Nursing program (Dieu duong, code 7720301, 3-year Bachelor of Nursing) at its Da Lat campus, 27 Ton That Tung, Ward Lam Vien, Da Lat, Lam Dong province. HOWEVER: (1) Medium of instruction -- both official program pages show curricula taught in Vietnamese, with 'English' (or 'Japanese') appearing only as language-subject courses (English 1-6 for Pharmacy; English/Japanese 1-5 for Nursing) alongside Vietnamese-only core courses (Marxist-Leninist Philosophy, Ho Chi Minh Thought, Vietnamese Ministry-mandated Physical Education/Military Education, etc.) -- there is no statement anywhere on the official site of an English-medium track for either program. (2) Admissions -- all four listed admission methods (high-school transcript average, 2026 National High School Graduation Examination, VNU-HCM Competency Assessment Test, direct admission per MOET regulations) are exclusively domestic Vietnamese pathways; no international/foreign-applicant admissions procedure, no India-specific pathway, and no equivalent of an NMC/PCI/INC-relevant recognition statement was found on the official site or via independent search. (3) International cooperation -- the official 'International cooperation' news page and Q&A/why-choose pages describe only outbound opportunities for Yersin's own (Vietnamese) students -- paid Business/Foreign Semester internships in Japan, Korea, Germany; MOUs with Suranaree University of Technology (Thailand), Muhammadiyah University of Yogyakarta (Indonesia), and Japanese/Korean partner institutions -- with no inbound admissions pathway for foreign students, and no mention of India or Indian students anywhere. Given (1) no confirmed English medium of instruction for Pharmacy or Nursing, (2) no confirmed international/Indian-student admissions pathway, and (3) no PCI/INC-relevant recognition information for a foreign (non-Vietnamese) cohort, none of the 8 required India-audience narrative fields can be honestly written without fabricating facts about an admissions pathway, medium of instruction, hostel arrangements for international students, Indian food access, or safety framed for an established study-abroad destination that this research could not corroborate. Per the exhaustive-then-omit rule, this draft is held rather than published. Revisit only if Yersin University publishes explicit English-medium admissions terms and a genuine international/Indian-student admissions pathway for Pharmacy or Nursing.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Yersin University official site (English) - Pharmacy program page",
+        "url": "https://yersin.edu.vn/en/pharmacy/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Confirms Pharmacy (code 7720201) is a 4-year Bachelor of Pharmacy program ('Graduate in just 4 years'); full year-by-year curriculum listing shows Vietnamese-medium core courses (Marxist-Leninist Philosophy, Ho Chi Minh Thought, Military Education, General Law) plus English 1-6 as language-subject courses -- no statement of an English-medium track. Lists 4 admission methods, all domestic Vietnamese pathways (Grade 10-12 transcript average, 2026 National High School Graduation Exam, VNU-HCM Competency Assessment Test, direct admission per MOET rules). No international/Indian-student admissions information present."
+      },
+      {
+        "label": "Yersin University official site (English) - Nursing program page",
+        "url": "https://yersin.edu.vn/en/nursing/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Confirms Nursing (code 7720301) is a 3-year Bachelor of Nursing program (54+57+47 = 158 total credits across 3 years); curriculum is Vietnamese-medium with 'English 1-5 / Japanese 1-5' as elective-language subject courses, not medium of instruction. Mentions a paid Japan internship opportunity (up to VND 200 million) for Nursing students and general international-employment aspirations, but no confirmed inbound international-student admissions pathway. Same 4 domestic-only admission methods as Pharmacy."
+      },
+      {
+        "label": "Yersin University official site (English) - About YersinUni / Introduction page",
+        "url": "https://yersin.edu.vn/en/introducing-yersinuni/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Confirms establishment 1 October 2004 under Prime Minister Decision No. 175/2004/QD-TTg, described as 'the first non-public university training facility in the Central Highlands' (i.e., private institution); mission/vision/core-values statements; ASK (Attitude-Skills-Knowledge) educational model; leadership (President Assoc. Prof. Dr. Pham Dinh Trung, Vice President Dr. Nguyen Thanh Son); official address 27 Ton That Tung, Ward Lam Vien, Da Lat; self-reported stats (~20,000 graduates, 96% immediate employment claim)."
+      },
+      {
+        "label": "Yersin University official site (English) - Q&A page",
+        "url": "https://yersin.edu.vn/en/qa/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Confirms Nursing admission threshold (Grade 12 rating 'good' or higher, or graduation-exam score >=6.5) and Pharmacy admission threshold (Grade 12 rating 'excellent' or graduation-exam score >=8.0); explains the 3-year university-degree structure per Vietnam's 2017 National Education System Framework; describes the 'Business Semester' (semesters 3/6/9 at 200+ partner companies) including a City-based hospital internship for Nursing students at 'University of Medicine and Pharmacy Hospital, HCM' and an optional 6-month Japan internship -- all framed for Yersin's own (Vietnamese-admitted) student body, not a separate international-student intake."
+      },
+      {
+        "label": "Yersin University official site (English) - International Cooperation news page",
+        "url": "https://yersin.edu.vn/en/news/international-cooperation/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Lists recent partnership news: MOU with Muhammadiyah University of Yogyakarta (Indonesia, Feb 2026), cooperation agreement with I-Scream Media (Korea), exchange with Anabuki College Group (Japan), MOU with Suranaree University of Technology (Thailand, July 2025). All items describe outbound exchange/partnership activity for Yersin's existing student body; none describe an inbound admissions pathway for foreign applicants, and no India-related partnership or admissions content appears anywhere on the official site."
+      },
+      {
+        "label": "TTC Group (Vietnamese conglomerate) official news - 'Advantages of Yersin University Dalat when belonging to TTC Group'",
+        "url": "https://www.ttcgroup.vn/en-US/news/ttcs-news/advantages-of-yersin-university-dalat-when-belonging-to-ttc-group",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration (via WebSearch summary) that Yersin University of Dalat is a member institution of TTC (Thanh Thanh Cong) Group, a diversified Vietnamese conglomerate; corroborates private/non-public ownership structure."
+      },
+      {
+        "label": "Vietnam.vn news aggregator - 'Truong Dai hoc Yersin Da Lat don nhan Huan chuong Lao dong hang Ba va khai giang nam hoc 2025-2026'",
+        "url": "https://www.vietnam.vn/en/truong-dai-hoc-yersin-da-lat-don-nhan-huan-chuong-lao-dong-hang-ba-va-khai-giang-nam-hoc-2025-2026",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent Vietnamese news corroboration (via WebSearch summary) that the university enrolled nearly 1,500 full-time students in academic year 2024-2025, with 4,000+ total students across 24 majors including Nursing and Pharmacy; corroborates active-institution status and Third-Class Labor Medal state recognition (a general institutional honor, not a program-level accreditation and not India-relevant)."
+      },
+      {
+        "label": "Vietnam.vn news aggregator - 2025 admission cut-off score article",
+        "url": "https://www.vietnam.vn/en/diem-san-xet-tuyen-dai-hoc-chinh-quy-nam-2025-truong-dai-hoc-yersin-da-lat-la-15-5-diem",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration (via WebSearch summary) of the university's general 2025 minimum admission score (15.5 points on Vietnam's domestic exam scale) and per-major thresholds consistent with the official Q&A page figures for Nursing/Pharmacy; confirms all cited admission routes are domestic Vietnamese examination-based pathways."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Yersin University of Da Lat (Faculty of Pharmacy and Nursing)",
+    "city": "Da Lat",
+    "type": "Private",
+    "establishedYear": 2004,
+    "officialWebsite": "https://yersin.edu.vn/en/",
+    "bestFitFor": [],
+    "programs": [],
+    "notes": "establishedYear=2004 reflects the university's own founding date (Prime Minister Decision No. 175/2004/QD-TTg, 1 October 2004), corroborated by the official site and independent Vietnamese news sources. Type=Private reflects the official site's own description as 'the first non-public university training facility in the Central Highlands' and independent corroboration that it is a member of TTC Group (a private Vietnamese conglomerate). Confirmed program facts NOT populated into the programs array: Pharmacy (code 7720201, 4-year Bachelor of Pharmacy, admission threshold Grade-12 'excellent' rating or graduation-exam score >=8.0) and Nursing (code 7720301, 3-year Bachelor of Nursing, admission threshold Grade-12 'good' rating or graduation-exam score >=6.5) both exist and have official program URLs, but neither has a confirmed English medium of instruction (curricula are Vietnamese-medium with English/Japanese only as language-subject courses) nor a confirmed international/Indian-student admissions pathway (all 4 listed admission methods are domestic Vietnamese examination/transcript routes). bestFitFor intentionally left empty rather than fabricated, since no India-audience-relevant, English-medium program track is confirmed for either faculty."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "All narrative fields intentionally left empty. Yersin University's Pharmacy (4-year) and Nursing (3-year) programs are Vietnamese-medium, domestic-admission-only programs (transcript average, National High School Graduation Exam, VNU-HCM Competency Assessment Test, or direct MOET-regulated admission) with no confirmed English-medium instruction and no confirmed international/Indian-student admissions pathway anywhere on the official site or in independent coverage. The university's international-cooperation activity (MOUs with institutions in Thailand, Indonesia, Japan, Korea; paid Japan internships for its own Nursing students) is exclusively outbound/exchange-oriented for Yersin's existing (Vietnamese-admitted) student body, not an inbound admissions channel for foreign applicants. Writing India-audience narrative content (campus lifestyle, clinical exposure framed for foreign nursing/pharmacy students, hostel arrangements for international students, Indian food support, safety framed as an established study-abroad destination, FAQ on PCI/INC recognition or NEET-equivalent requirements) would require fabricating facts this research could not corroborate from any official or independent source. This page should not be published until/unless Yersin University confirms an English-medium track and a genuine international/Indian-student admissions pathway for Pharmacy or Nursing."
+  }
+}

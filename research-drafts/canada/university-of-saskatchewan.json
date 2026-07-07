@@ -1,0 +1,183 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "University of Saskatchewan",
+  "cityName": "Saskatoon",
+  "priority": "medium",
+  "officialWebsite": "https://www.usask.ca/",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "USask Admissions - Nursing (B.S.N.) program page, including international-applicant policy and tuition estimates (official)",
+        "url": "https://admissions.usask.ca/nursing.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "College of Nursing - International Students (official)",
+        "url": "https://nursing.usask.ca/globalinitiatives/international-students.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "USask Admissions - Pharmacy (Pharm.D.) program page, admission quotas and tuition estimates (official)",
+        "url": "https://admissions.usask.ca/pharmacy.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "College of Medicine - Admission to the MD Program, How to Apply (official; confirms Canadian citizen/PR-only eligibility, excluded here)",
+        "url": "https://medicine.usask.ca/admission-to-the-md-program/how-to-apply.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "USask Students - International Student Guide (official; ISSAC, immigration, settling in)",
+        "url": "https://students.usask.ca/international/index.php",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "USask Residence - Who Can Live in Residence (official; Voyageur Place first-year/international guidance)",
+        "url": "https://livewithus.usask.ca/incomingresidents/whocanliveinresidence.php",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - University of Saskatchewan (founding year, U15 membership, overview)",
+        "url": "https://en.wikipedia.org/wiki/University_of_Saskatchewan",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "The Canadian Encyclopedia - University of Saskatchewan (independent corroboration of history and structure)",
+        "url": "https://www.thecanadianencyclopedia.ca/en/article/university-of-saskatchewan",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "CBC News - \"Saskatoon improves ranking on crime severity index but still sits in top 10\" (independent corroboration of city crime-severity ranking, referencing Statistics Canada data)",
+        "url": "https://www.cbc.ca/news/canada/saskatoon/saskatoon-police-stats-can-crime-severity-index-1.7276528",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "CBC News - \"Saskatchewan tops StatsCan crime severity list for 25th year in a row\" (independent corroboration, Statistics Canada-sourced)",
+        "url": "https://www.cbc.ca/news/canada/saskatchewan/saskatchewan-tops-statscan-crime-severity-list-for-25th-year-in-a-row-1.7275650",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "The Encyclopedia of Saskatchewan - Hindu Communities (independent corroboration of Saskatoon's Hindu temple/community, est. 1985)",
+        "url": "https://esask.uregina.ca/entry/hindu_communities.html",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of Saskatchewan",
+    "city": "Saskatoon",
+    "type": "Public",
+    "establishedYear": 1907,
+    "officialWebsite": "https://www.usask.ca/",
+    "bestFitFor": [
+      "Indian students who want a direct-entry, internationally open Bachelor of Science in Nursing (B.S.N.) pathway leading to Canadian RN licensure via NCLEX-RN",
+      "Students who prefer a mid-sized Canadian city with a lower cost of living than Toronto or Vancouver and an established, decades-old Indian/Hindu community",
+      "Students planning a longer-term Canada settlement path (study plus eventual RN registration and work in Saskatchewan's healthcare system)",
+      "Highly competitive applicants with strong grades and standardized-test scores who are prepared to complete two years of prerequisite coursework and compete for one of the small number of non-Saskatchewan-resident seats in the Doctor of Pharmacy (Pharm.D.) program"
+    ],
+    "recognitionBadges": ["U15 Group of Canadian Research Universities", "CASN-accredited Nursing program", "CRNS-approved Nursing program"],
+    "recognitionLinks": [
+      "https://en.wikipedia.org/wiki/University_of_Saskatchewan",
+      "https://admissions.usask.ca/nursing.php"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "Bachelor of Science in Nursing (B.S.N.)",
+        "officialProgramUrl": "https://admissions.usask.ca/nursing.php",
+        "medium": "English (proof of English proficiency required for applicants who self-identify as ESL/EAL; a Canadian-curriculum English-medium secondary record, e.g. India's CBSE or IGCSE, can also satisfy this if at least 24 credit units of prerequisite coursework are completed at a recognized English-medium post-secondary institution)",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "licenseExamSupport": [
+          "National Council Licensure Examination for Registered Nurses (NCLEX-RN), followed by registration with the College of Registered Nurses of Saskatchewan (CRNS)"
+        ],
+        "feeNotes": "USask's own Year-2 tuition estimate (2026-2027 Canadian-dollar rates) lists international B.S.N. tuition at approximately CAD 48,305 plus about CAD 1,484 in student fees and CAD 1,500 in books, for an estimated total of roughly CAD 51,289 for that year; this is markedly higher than the Canadian-resident estimate of about CAD 12,964. Tuition varies by course load and year of study, so applicants should confirm the current published estimate before budgeting. This is a four-year program: Year 1 is a pre-professional year of prerequisite courses (can be completed at USask's College of Arts and Science or select partner institutions in Saskatchewan), and admission to Years 2-4 in the College of Nursing is competitive and separate from Year-1 enrolment.",
+        "sourceUrls": [
+          "https://admissions.usask.ca/nursing.php",
+          "https://nursing.usask.ca/globalinitiatives/international-students.php"
+        ]
+      },
+      {
+        "courseSlug": "pharmacy",
+        "title": "Doctor of Pharmacy (Pharm.D.)",
+        "officialProgramUrl": "https://admissions.usask.ca/pharmacy.php",
+        "medium": "English (applicants whose primary language is not English must present evidence of English proficiency)",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "licenseExamSupport": [
+          "Pharmacy Examining Board of Canada (PEBC) qualifying exam, followed by registration with a provincial pharmacy regulatory body"
+        ],
+        "feeNotes": "This program requires two years of university-level prerequisite coursework (60 credit units) before admission, so it is a six-year path in total for most students. USask's own tuition estimates (2026-2027 Canadian-dollar rates) show Years 1-2 international tuition at about CAD 73,618 (versus about CAD 24,539 for Canadian residents) and Years 3-4 tuition at about CAD 21,679 for all students regardless of residency; add roughly CAD 1,332 in student fees and CAD 2,000 in books per year. Enrolment is capped at 90 first-year seats overall, and the College of Pharmacy and Nutrition's own admissions page states that up to only 9 of those 90 seats are reserved for non-Saskatchewan residents, a category that includes both other-province Canadians and all international applicants combined - making this an extremely competitive, seat-limited route for Indian applicants rather than an open-enrolment one. Admission is ranked on academic record (75%), a Test of Critical Skills/Casper situational-judgment test, and a personal video interview.",
+        "sourceUrls": [
+          "https://admissions.usask.ca/pharmacy.php"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "The University of Saskatchewan (USask) is a public research university founded in 1907 in Saskatoon, Saskatchewan, and is a member of the U15 Group of Canadian Research Universities. For Indian students, its most directly relevant route into Canadian healthcare education is the Bachelor of Science in Nursing (B.S.N.), a CASN-accredited, CRNS-approved four-year program that the College of Nursing explicitly states does not weigh Canadian-or-international residency status in its admission process - applications are accepted from residents of all Canadian provinces and international countries on the same competitive basis. USask also runs a Doctor of Pharmacy (Pharm.D.) program through its College of Pharmacy and Nutrition, but that program reserves only a small fraction of its 90 first-year seats (up to 9) for applicants from outside Saskatchewan, a pool that covers both other-province Canadians and all international students combined, and it requires two years of prerequisite coursework before the professional program even begins. USask does not offer a route into its MD program for Indian applicants: the College of Medicine's own admissions page requires Canadian citizenship, permanent residency, or Convention refugee status, so no medicine program is listed on this profile. Students considering USask should treat Nursing as the realistic, openly international pathway and Pharmacy as a long-shot, seat-limited option that still demands strong grades and a Canadian-recognized prerequisite record.",
+    "campusLifestyle": "USask's main campus sits on the banks of the South Saskatchewan River in Saskatoon and hosts more than 26,000 students from over 130 countries, including roughly 3,000 international students. The Health Science building links Nursing, Pharmacy, Medicine, Dentistry and other health programs together for interprofessional learning, and Nursing students get clinical placement access through the adjoining Royal University Hospital. Student life includes more than 130 clubs and organizations, historical buildings and art galleries on campus, a Physical Activity Complex, and dedicated international-student programming through the International Student and Study Abroad Centre (ISSAC), which runs orientation, advising and intercultural events specifically for newcomers.",
+    "cityProfile": "Saskatoon is Saskatchewan's largest city, with an urban population of roughly 257,000, and is known locally for its many hours of annual sunshine. It functions as the province's commercial, health-care and education hub, anchored by USask and Royal University Hospital. Cost of living in Saskatoon is generally lower than in Toronto or Vancouver, which matters for the multi-year, tuition-heavy programs on this campus. Prospective students should also weigh an honest caveat: Statistics Canada's crime severity index has placed Saskatchewan at the top of all provinces for 25 consecutive years, and CBC News reported Saskatoon itself ranking eighth of 41 Canadian metropolitan areas on the same index in the most recent reporting cycle (an improvement from sixth previously) - so while the city is livable and improving on this measure, it is not among Canada's lowest-crime cities, and students should take standard urban-safety precautions, particularly at night.",
+    "clinicalExposure": "B.S.N. students complete clinical placements in hospitals and community agencies, with more than half of program contact hours in USask's own account happening in lab and clinical settings; the primary Saskatoon clinical site is Royal University Hospital, directly connected to the Health Science building. Pharm.D. students complete forty weeks of practice experience across community pharmacies, hospital settings, and specialty practice sites such as research labs and clinical psychiatry practices, using the Apotex Pharmacy Professional Practice Centre's simulation labs for hands-on skills training before placements.",
+    "hostelOverview": "USask's Residence system includes several buildings; Voyageur Place is the option most commonly recommended for first-year, international and exchange students, sitting at the heart of campus with tunnel access to other buildings and a full dining meal plan at the Marquis Culinary Centre. A first-year guarantee applies to students coming directly from high school (age 25 or under, no dependent children) who apply and pay the application fee before January 31. Other buildings (College Quarter, Graduate House, Seager Wheeler, Assiniboine Hall, Wollaston Hall, Souris Hall) serve upper-year, graduate, or family-housing needs. Students who do not secure or prefer residence can also arrange off-campus rentals in Saskatoon, generally at lower cost than in larger Canadian cities, though private housing is not university-guaranteed and should be arranged well ahead of the September intake.",
+    "indianFoodSupport": "Saskatoon has an established Indian community, including the Lakshmi Narayan Temple (run by the Hindu Society of Saskatchewan, founded 1985), which holds daily aarti, weekly satsang, festival celebrations and Hindi classes, as well as an active Sikh community that holds an annual Vaisakhi Sikh Day Parade with langar. Multiple Indian restaurants operate in the city, and Indian grocery stores serve the community, so students can access familiar food and cultural events, though the community is more modest in size than in major metros like Toronto or Vancouver and students should expect a smaller, closer-knit network rather than a large ethnic-enclave experience.",
+    "safetyOverview": "USask's campus provides standard Canadian-university safety infrastructure, including Access and Equity Services for students with disabilities and general campus security resources referenced through Residence's own safety and security information. At a city level, students should weigh the honest caveat noted above: Saskatoon and Saskatchewan rank above the national average on Statistics Canada's crime severity index, with Saskatoon placing eighth among 41 metropolitan areas in the most recent CBC-reported data and Saskatchewan topping the provincial rankings for 25 straight years. This does not mean the city is unsafe for typical day-to-day student life - daytime safety is generally reported as good - but new students, especially those living off-campus, should take standard precautions at night, use campus and building security features, and follow orientation safety guidance from ISSAC and Residence staff.",
+    "studentSupport": "International students have access to the International Student and Study Abroad Centre (ISSAC) for advising on immigration documents, work eligibility, banking, taxes, health coverage, housing and cultural adjustment. The College of Nursing additionally runs the University of Saskatchewan Community of Indigenous Nursing (UCIN), which also extends advising support to international students and new Canadians, including referrals for tutoring, housing and culturally appropriate supports. Students with disabilities can register with Access and Equity Services (AES) for accommodations. Academic advising is available separately through each college (Nursing, Pharmacy and Nutrition, Arts and Science for prerequisite years).",
+    "whyChoose": [
+      "One of the few Canadian nursing programs that explicitly states Canadian-or-international residency status is not considered in admission - Indian applicants compete on the same footing as domestic applicants for B.S.N. Years 2-4 seats",
+      "CASN-accredited, CRNS-approved four-year B.S.N. leading directly to NCLEX-RN eligibility and Canadian RN registration",
+      "Lower cost of living than Canada's largest metros (Toronto, Vancouver), which can offset higher international tuition over a multi-year program",
+      "An established Hindu temple, Sikh community events (including langar), and multiple Indian restaurants/grocery options in Saskatoon, despite the city's smaller size",
+      "A single integrated Health Science building connecting Nursing, Pharmacy, Medicine, Dentistry and related colleges for interprofessional learning and clinical exposure at the adjoining Royal University Hospital"
+    ],
+    "thingsToConsider": [
+      "USask's MD program is closed to Indian and other international applicants - it requires Canadian citizenship, permanent residency, or Convention refugee status, so no medicine pathway exists here",
+      "The Doctor of Pharmacy (Pharm.D.) program reserves only up to 9 of 90 first-year seats for all non-Saskatchewan residents combined (out-of-province Canadians plus every international applicant), after two years of prerequisite coursework - an extremely competitive, seat-scarce route rather than a reliable direct-entry option",
+      "International B.S.N. tuition (about CAD 48,305 for a Year-2 course load, per USask's own 2026-2027 estimate) is roughly four times the Canadian-resident rate, and the program itself is four years including a pre-professional year",
+      "Saskatoon and Saskatchewan rank above the Canadian national average on Statistics Canada's crime severity index (Saskatchewan first among provinces for 25 straight years; Saskatoon eighth of 41 metro areas per the latest CBC-reported data) - students should factor this into their safety planning even though daytime campus life is generally described as safe",
+      "The B.S.N. program cannot be started directly from high school; a pre-professional year of prerequisite coursework (at USask or select partner institutions) is required before competitive admission into Year 2 of Nursing",
+      "The College of Nursing's B.S.N. delivery is distributed across multiple Saskatchewan sites (Saskatoon, Prince Albert, and several smaller communities); students should confirm which specific site their offer places them at, since class sizes and in-person access vary by location"
+    ],
+    "faq": [
+      {
+        "question": "Can Indian students apply directly to USask's MD program?",
+        "answer": "No. The College of Medicine's own admissions requirements restrict MD applicants to Canadian citizens, permanent residents, or Convention refugees living in Canada, so Indian citizens applying from India are not eligible for direct MD admission at USask."
+      },
+      {
+        "question": "Is the Bachelor of Science in Nursing (B.S.N.) open to international applicants?",
+        "answer": "Yes. USask's College of Nursing states that Canadian or international residency status is not considered in the standard application process for B.S.N. Years 2-4, and international applicants are explicitly described as welcomed. Applicants must still meet the same competitive academic and Casper situational-judgment test requirements as domestic applicants, plus English-proficiency requirements if they self-identify as ESL/EAL."
+      },
+      {
+        "question": "What does it cost an international/Indian student to study B.S.N. at USask?",
+        "answer": "USask's own Year-2 estimate (2026-2027 Canadian-dollar rates) lists international tuition at approximately CAD 48,305, plus about CAD 1,484 in student fees and CAD 1,500 in books/materials, totalling roughly CAD 51,289 for that year. Costs vary by course load and year of study, so applicants should check the current official tuition and fees estimator before finalizing budgets."
+      },
+      {
+        "question": "How competitive is the Doctor of Pharmacy (Pharm.D.) program for an Indian applicant?",
+        "answer": "Very competitive for non-Saskatchewan residents. The program admits 90 students per year in total, and the College of Pharmacy and Nutrition's own page states that up to only 9 of those seats go to all non-Saskatchewan-resident applicants combined (out-of-province Canadians and international applicants together). Applicants must also first complete two years (60 credit units) of prerequisite coursework, generally at a Canadian institution, before applying, and are ranked on academic record, a Test of Critical Skills, and a personal video interview."
+      },
+      {
+        "question": "What licensing exam do Nursing graduates need to take to practise in Canada?",
+        "answer": "USask's B.S.N. program prepares graduates to write the National Council Licensure Examination for Registered Nurses (NCLEX-RN), after which graduates register with the College of Registered Nurses of Saskatchewan (CRNS) or the equivalent regulatory body in the province where they intend to practise. This is a Canadian licensing pathway, distinct from India's Indian Nursing Council (INC) registration - students planning to eventually practise in India should separately verify INC recognition requirements for a Canadian nursing degree."
+      },
+      {
+        "question": "Is Saskatoon a safe city for international students?",
+        "answer": "Saskatoon is a livable mid-sized Canadian city with an active international student support system, but it is not among Canada's lowest-crime cities: Statistics Canada's crime severity index has ranked Saskatchewan first among provinces for 25 consecutive years, and CBC News reported Saskatoon ranking eighth among 41 Canadian metro areas in the most recent data (improved from sixth previously). Day-to-day campus and student life is generally described as safe, but students - especially those living off-campus - should follow standard urban safety precautions, particularly at night."
+      },
+      {
+        "question": "Is on-campus housing guaranteed for international students at USask?",
+        "answer": "A first-year residence guarantee exists at Voyageur Place for students coming directly from high school who are 25 or under, have no dependent children, and apply with the fee paid before January 31 - this guarantee is not exclusive to international students but does cover many of them. Beyond first year, or if the guarantee deadline is missed, residence space is not guaranteed, and students may need to arrange off-campus housing in Saskatoon."
+      }
+    ]
+  }
+}

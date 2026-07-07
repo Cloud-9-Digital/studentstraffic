@@ -1,0 +1,46 @@
+{
+  "_status": "HELD - not gate-passing",
+  "_reason": "The University of Manitoba's entry-level Doctor of Dental Medicine (DMD) program is restricted to Canadian Citizens and Permanent Residents (proof of citizenship/PR/refugee status is a mandatory application document). The only pathway open to internationally trained candidates is the International Dentist Degree Program (IDDP), but IDDP is a 2 to 2.5-year degree-COMPLETION/upgrading program for people who ALREADY hold a four-year university dental degree not accredited by the Commission on Dental Accreditation of Canada, and who have already passed NDEB's Assessment of Clinical Judgment (ACJ) and taken the National Dental Examination of Clinical Competence (NDECC), plus the ADA's Advanced Dental Admissions Test (ADAT). It admits successful applicants directly into year 3 of the DMD. This does not honestly map to this platform's entry-level 'bds' course slug, which is aimed at students who have not yet earned a dental degree (the NEET-UG/BDS-equivalent audience). There is no entry-level dentistry, medicine, nursing, or pharmacy program at this institution open to incoming international students straight out of school. See the accompanying .md file for the full research record and sourcing.",
+  "countrySlug": "canada",
+  "schoolName": "University of Manitoba (Dr. Gerald Niznick College of Dentistry)",
+  "cityName": "Winnipeg",
+  "officialWebsite": "https://umanitoba.ca/dentistry/",
+  "structuredFacts": {
+    "name": "University of Manitoba (Dr. Gerald Niznick College of Dentistry)",
+    "city": "Winnipeg",
+    "type": "Public",
+    "establishedYear": 1958,
+    "officialWebsite": "https://umanitoba.ca/dentistry/",
+    "bestFitFor": [],
+    "programs": []
+  },
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "University of Manitoba - Dr. Gerald Niznick College of Dentistry (official college site)",
+        "url": "https://umanitoba.ca/dentistry/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Explore UM - Dr. Gerald Niznick College of Dentistry Applicant Information (DMD, citizenship/PR requirement)",
+        "url": "https://umanitoba.ca/explore/undergraduate-admissions/requirements/dentistry",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Explore UM - International Dentist Degree Program (IDDP) Applicant Information (eligibility: must already hold a 4-year dental degree, ADAT/ACJ/NDECC requirements, Track A/B, fees)",
+        "url": "https://umanitoba.ca/explore/undergraduate-admissions/requirements/iddp",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "University of Manitoba Academic Calendar - Dental Medicine, D.M.D. International Dentists Degree Program (IDDP) program structure",
+        "url": "https://catalog.umanitoba.ca/undergraduate-studies/health-sciences/dentistry/dental-medicine-dmd-international-dentists-degree-program/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "draftContent": {}
+}

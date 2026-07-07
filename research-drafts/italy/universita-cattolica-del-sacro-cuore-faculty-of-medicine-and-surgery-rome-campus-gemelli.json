@@ -1,0 +1,203 @@
+{
+  "countrySlug": "italy",
+  "schoolName": "Università Cattolica del Sacro Cuore - Faculty of Medicine and Surgery (Rome campus / Gemelli)",
+  "cityName": "Rome (Monte Mario)",
+  "priority": "medium",
+  "officialWebsite": "https://www.unicatt.it/en/programmes/undergraduate-and-integrated-degree-programmes/medicine-and-surgery-it-rome.html",
+  "programUrl": "https://international.unicatt.it/ucscinternational-undergraduate-programs-medicine-and-surgery",
+  "feesUrl": "https://international.unicatt.it/ucscinternational-applications-tuitions-tuition-fees-and-scholarships-3074",
+  "hostelUrl": "https://international.unicatt.it/ucscinternational-roma-accommodation",
+  "admissionUrl": "https://international.unicatt.it/ucscinternational-medicine-and-surgery-application-procedures",
+  "wdomsUrl": "https://search.wdoms.org/",
+  "qualityScore": 75,
+  "reviewNotes": "Multi-source corroborated via WebSearch summaries of official Cattolica/Cattolica-International pages plus independent third-party admissions/consultancy sites (Medlink Students, TopUniversities, Bachelorsportal, AcadIMAT, edu-mentor, Wanted in Rome, An American in Rome) and Wikipedia/Policlinico Gemelli institutional pages, because direct curl fetches of unicatt.it and international.unicatt.it returned JS-rendered shells with no static text (only <title> tags resolved) - all unicatt.it/international.unicatt.it facts below are sourced through WebSearch's page summaries of those exact URLs, not raw curl output. Tuition (EUR 18,150/year, flat regardless of nationality) is corroborated by two independent third-party aggregators (TopUniversities/Bachelorsportal listing and Medlink Students) referencing the official fees page; treated as reasonably reliable but still flagged for the student to reconfirm for their intake year. Non-EU seat count is inconsistent across sources by year (Medlink cites 50 non-EU seats for an earlier cycle; a 2026/27-focused consultancy source cites 70 non-EU + 40 EU seats for AY 2025/26 and 70 non-EU for AY 2026/27) - both figures are reported with explicit per-cycle framing rather than asserting one current number, and students are told seats are set annually by Ministerial Decree. Scholarship information is also not fully reconciled: one source stated no scholarships/fee waivers are currently offered for this specific programme, while others describe a general Cattolica merit-based scholarship (up to 30% of tuition, renewed annually) and a separate \"UCSC International Scholarship\" (37% of tuition) available to international students; both are reported as unconfirmed-for-this-specific-programme and students are told to verify directly. WDOMS: could not confirm a specific school-detail record ID for this exact institution via curl (search.wdoms.org's results pages are client-side rendered and one candidate ID resolved to an unrelated Rome university, Tor Vergata); Italian medical schools are broadly WDOMS/WFME-listed and third-party sources (Medlink, edu-mentor) state UCSC's medical degree is WHO/WDOMS-recognised and UK GMC-recognised, but this is reported as a third-party claim, not a directly verified WDOMS record, and the general wdoms.org search homepage is used as the citation instead of a specific unverified school-ID page. NMC/FMGE-NExT treatment for this specific university could not be confirmed from an official Indian regulator source; only the general NMC framework (WHO/WDOMS listing plus the 2021 minimum-standards regulations: >=54 months training, 12-month internship, English medium) is mentioned, with an explicit verify-yourself caveat, per India-audience content rules.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Università Cattolica - Medicine and Surgery, Rome (official programme page, via international.unicatt.it 'Medicine and Surgery (Rome)': 6-year English-taught MD at Gemelli Hospital, 15+ nationalities/year, USMLE-aligned curriculum)",
+        "url": "https://international.unicatt.it/ucscinternational-undergraduate-programs-medicine-and-surgery",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Università Cattolica - Admission and tuition, Medicine and Surgery Rome (official; admission test structure, non-EU separate ranking list, minimum score 20/65)",
+        "url": "https://international.unicatt.it/ucscinternational-medicine-and-surgery-application-procedures",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Università Cattolica - Tuition fees and scholarships (official, Cattolica International)",
+        "url": "https://international.unicatt.it/ucscinternational-applications-tuitions-tuition-fees-and-scholarships-3074",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Università Cattolica - Accommodation in Rome (official, Cattolica International; EDUCatt off-campus/on-campus housing, partner platforms Dotstay/Roomtastic/Gromia, In-Domus/Camplus colleges)",
+        "url": "https://international.unicatt.it/ucscinternational-roma-accommodation",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Università Cattolica - Medicine and Surgery, Rome (official corso page, unicatt.it)",
+        "url": "https://www.unicatt.it/corsi/triennale/medicine-and-surgery-roma.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Università Cattolica - Policlinico Gemelli University Hospital (official course sub-page describing the teaching hospital)",
+        "url": "https://www.unicatt.it/corsi/triennale/medicine-and-surgery-roma/cattolica-md-international-programme/policlinico-gemelli-university-hospital.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Roma Unicatt - Il Campus di Roma (official Rome-campus history: property made available 1934, Faculty opened to students 5 November 1961, Monte Mario-Trionfale district)",
+        "url": "https://roma.unicatt.it/il-campus-storia-del-campus",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Policlinico Universitario Agostino Gemelli IRCCS - History and Future (official hospital history: construction from 1959/1962, inaugurated July 1964, largest private hospital setting in Rome)",
+        "url": "https://www.policlinicogemelli.it/en/information/history-future/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Gemelli University Hospital - Wikipedia (1,575 beds, second-largest hospital in Italy, largest in Rome, teaching hospital of Universita Cattolica)",
+        "url": "https://en.wikipedia.org/wiki/Gemelli_University_Hospital",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Universita Cattolica del Sacro Cuore - Wikipedia (founded 7 December 1921 by Fr. Agostino Gemelli; campuses in Milan, Rome, Brescia, Piacenza, Cremona, Bolzano; largest private non-profit university in Europe)",
+        "url": "https://en.wikipedia.org/wiki/Universit%C3%A0_Cattolica_del_Sacro_Cuore",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Universita Cattolica del Sacro Cuore Rome Campus - Medlink Students (third-party admissions summary: tuition EUR 18,150/year flat, 30 EU + 50 non-EU seats cited for an earlier admission cycle, WHO/WDOMS and UK GMC recognition claim)",
+        "url": "https://www.medlinkstudents.com/universities/catholic-university-sacred-heart-medicine/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Medicine and Surgery (Rome campus) - TopUniversities programme listing (third-party cross-check for tuition figure and 72-month/6-year duration)",
+        "url": "https://www.topuniversities.com/universities/universita-cattolica-del-sacro-cuore/undergrad/medicine-surgery-rome-campus",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wanted in Rome - Balduina and Monte Mario area guide (third-party neighbourhood profile: residential upper-middle-class district on Rome's highest hill, Monte Mario Nature Reserve, diplomats/senior professionals, ~15 min bus to Vatican / ~30 min to historic centre)",
+        "url": "https://www.wantedinrome.com/area/balduina-monte-mario",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "An American in Rome - Best Rome Neighborhoods for Students (third-party student-life context for Monte Mario campus area)",
+        "url": "https://anamericaninrome.com/2017/09/best-rome-neighborhoods-students/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Numbeo - Crime in Rome (independent city-level crime-index data used for general safety context)",
+        "url": "https://www.numbeo.com/crime/in/Rome",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Università Cattolica del Sacro Cuore - Faculty of Medicine and Surgery (Rome campus / Gemelli)",
+    "slug": "universita-cattolica-del-sacro-cuore-faculty-of-medicine-and-surgery-rome-campus-gemelli",
+    "city": "Rome (Monte Mario)",
+    "type": "Private",
+    "establishedYear": 1961,
+    "officialWebsite": "https://www.unicatt.it/en/programmes/undergraduate-and-integrated-degree-programmes/medicine-and-surgery-it-rome.html",
+    "bestFitFor": [
+      "Indian students who want a six-year, English-taught MD embedded inside a single major teaching hospital (Gemelli) from the early years of the course, rather than commuting between separate classroom and hospital sites",
+      "Students comfortable sitting a university-specific written admission test (biology, chemistry, physics, maths, critical thinking, plus a small number of Catholic-tradition-oriented questions) rather than the national IMAT used by most other Italian medical schools",
+      "Families who want a quieter, greener, more residential campus setting (Monte Mario) while still being inside metropolitan Rome, rather than a campus in the city's dense historic centre",
+      "Students who can commit to reaching working Italian for ward-based clinical training, since instruction is in English but hospital patients and staff communicate in Italian",
+      "Applicants targeting a larger non-EU intake among Italy's English-medium medical schools, while still treating exact seat numbers and fees as something to reconfirm for their specific admission year"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Medicine and Surgery (6-year Single-Cycle Degree, English-taught, Rome campus)",
+        "officialProgramUrl": "https://international.unicatt.it/ucscinternational-undergraduate-programs-medicine-and-surgery",
+        "medium": "English",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "feeVerifiedAt": "2026-07-07",
+        "feeNotes": "Tuition is reported at EUR 18,150/year, described in third-party sources (TopUniversities/Bachelorsportal listing and Medlink Students, both independently referencing the university's official fee schedule) as a flat fee applied regardless of nationality. This figure could not be cross-checked against a raw fetch of the official fees page itself (international.unicatt.it renders via JavaScript and returned no static fee text to curl), so it should be treated as reliable-but-unconfirmed-firsthand and reconfirmed on the official 'Tuition fees and scholarships' page before budgeting. Scholarship information is unreconciled: one source states no scholarships/waivers currently apply to this specific programme, while others describe a general Cattolica merit-based scholarship (up to 30% of tuition, renewable annually) and a separate 'UCSC International Scholarship' (37% of tuition) for international students; confirm current-year eligibility directly with the university.",
+        "sourceUrls": [
+          "https://international.unicatt.it/ucscinternational-applications-tuitions-tuition-fees-and-scholarships-3074",
+          "https://www.medlinkstudents.com/universities/catholic-university-sacred-heart-medicine/",
+          "https://www.topuniversities.com/universities/universita-cattolica-del-sacro-cuore/undergrad/medicine-surgery-rome-campus"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "The Faculty of Medicine and Surgery of Università Cattolica del Sacro Cuore's Rome campus offers a six-year, English-taught Medicine and Surgery degree built around the Fondazione Policlinico Universitario Agostino Gemelli, the faculty's own teaching hospital and one of the largest hospitals in Italy. The Rome campus and its Faculty of Medicine opened to students in November 1961, roughly four decades after the wider Università Cattolica del Sacro Cuore was founded in Milan in 1921 by Father Agostino Gemelli and a group of Catholic academics; the university is widely described as the largest private, non-profit university in Europe. The programme draws international students from more than a dozen countries each intake year and is described by the university as curriculum-aligned with European and US medical-education standards, including preparation relevant to exams such as the USMLE. Admission is through the university's own English-language written test (covering biology, chemistry, physics, maths, critical thinking, and a small number of questions on the Catholic tradition) rather than Italy's national IMAT, with a separate ranking list for non-EU applicants residing abroad. Indian students should independently verify the current year's non-EU seat allocation, tuition and scholarship terms, and how this specific MD is treated for NMC screening-test (FMGE/NExT) purposes before applying, since sources gathered for this research did not fully agree on year-to-year seat numbers or scholarship availability.",
+    "campusLifestyle": "The Rome campus sits in Monte Mario, a residential district on Rome's highest hill, and is organised around close physical integration with the Gemelli teaching hospital rather than a traditional standalone university quarter. Teaching for the Medicine and Surgery programme is in English throughout the six-year single-cycle course, combining frontal lectures with practical activities, clinical traineeships, and optional research projects; the university states the programme is designed to align with both European and US medical-curriculum expectations. Because the Faculty of Medicine sits alongside the Gemelli hospital complex, students describe moving between classroom-based study and hospital exposure without the longer commutes some other Italian medical schools require between separate teaching and clinical sites. Day-to-day student life is centred on the Monte Mario campus itself, with the historic centre of Rome and the Vatican a short bus ride away for the city's broader social and cultural life.",
+    "cityProfile": "Monte Mario is described by local-area guides as a quiet, established, largely residential district on Rome's highest hill, home to a mix of long-standing Roman families and professionals, and adjacent to the Monte Mario Nature Reserve, a large green area used for walking and outdoor time away from central-Rome traffic. It sits within metropolitan Rome, Italy's capital and largest city, roughly a 15-minute bus ride from Vatican City and about 30 minutes from the historic centre by public transport, according to local student-life guides. This gives students a quieter immediate campus setting while retaining easy access to Rome's transport network, embassies, and large international-student population. Rome carries a materially higher cost of living than smaller Italian university towns, so students should budget for one of Italy's more expensive cities in addition to university fees; exact current monthly living-cost figures were not independently corroborated for this research and should be checked against up-to-date student cost-of-living sources before planning a budget.",
+    "clinicalExposure": "Clinical training is anchored at the Fondazione Policlinico Universitario Agostino Gemelli, the Faculty of Medicine's own teaching hospital, which opened in 1964 and is documented as one of the largest hospitals in Italy (widely cited at around 1,575 beds) and one of the largest private hospitals in Europe. The university states that Medicine and Surgery students begin observing doctors and clinical procedures and taking part in hospital life from the early years of the course rather than only in the final clinical years, reflecting the close physical link between the faculty and the hospital. Because the programme is taught in English but Gemelli's patients and much of its day-to-day ward communication are in Italian, students need to build working Italian over the course of the degree to get full value from clinical placements. Independent, university-run admission testing (rather than the national IMAT) is also used specifically for entry into this clinical-training pathway, which students should factor in when comparing it against other English-medium Italian medical schools.",
+    "hostelOverview": "Housing for international students at the Rome campus is coordinated through Cattolica's official Rome accommodation channel and the university's EDUCatt housing service, which the university describes as offering both on-campus and off-campus options, with off-campus facilities described as well-linked to class venues and vetted for quality and safety standards. EDUCatt also works with partner housing-search platforms (including Dotstay, Roomtastic, and Gromia) and partner residence providers (such as In-Domus and Camplus colleges) to widen the pool of available student housing beyond what the university manages directly, since demand from both Italian and international students in a major capital city typically exceeds any single institution's own housing stock. Because Monte Mario is a distinct residential district rather than a dense student quarter, students should expect a mix of purpose-built residences and shared private apartments at varying distances from campus, and should contact the university's accommodation office early, given competition for housing in Rome generally.",
+    "indianFoodSupport": "Rome has an established international dining scene, and Indian restaurants and grocery stores are present across the city, including a notable concentration near the historic Esquilino/Piazza Vittorio Emanuele area, a traditionally multicultural district with South Asian, Chinese, and Middle Eastern shops that many international students in Rome use as their main source of Indian and South Asian ingredients. The Monte Mario campus itself is a bus or metro connection away from Esquilino rather than walking distance, so students living near campus should plan grocery runs, deliveries, or occasional trips into the city centre accordingly. Student community groups (WhatsApp/Facebook networks, common across international-student communities in Italian cities) are a practical way to find home-cooked meal-sharing arrangements and current recommendations, though this research did not identify a single authoritative directory specific to Cattolica Rome students.",
+    "safetyOverview": "Rome is generally regarded as a reasonably safe major European capital for everyday student life, with independent crime-index sources such as Numbeo tracking petty crime (pickpocketing and bag-snatching in crowded tourist and transit areas) as the more common risk rather than violent crime; students should check current Numbeo or equivalent city-safety data directly, since these indices are updated regularly and vary by neighbourhood and period. Monte Mario itself is described by local-area guides as a quiet, established residential district associated with long-term professional and diplomatic residents, which reduces routine day-to-day exposure to the crowded tourist-area risks that are more common in central Rome. Students travelling into the historic centre or the Vatican area for social life or sightseeing should take the ordinary precautions recommended for any large European capital: staying alert on crowded public transport, avoiding displaying valuables, and using licensed taxis or well-lit routes at night.",
+    "studentSupport": "The university's international office (Cattolica International) coordinates admissions, tuition and scholarship information, and accommodation support for non-Italian students through dedicated pages and services, including the EDUCatt housing service described above. General Cattolica-wide scholarship mechanisms reported by third-party sources include a merit-based reduction of up to 30% of tuition (renewable annually for the standard duration of the degree) and a separate international-student scholarship reported at around 37% of tuition, though availability specifically for the Medicine and Surgery programme was not fully reconciled across sources gathered for this research and should be confirmed directly with the university's international office. As one of Italy's largest private universities with a long-established Rome medical faculty (open since 1961) built around its own major teaching hospital, Cattolica's administrative structure for medical students is centred on the Faculty of Medicine and Surgery's own offices rather than a single university-wide international-student office; applicants should verify current-year orientation, language support, and visa/permesso di soggiorno assistance directly with the Faculty before enrolling.",
+    "whyChoose": [
+      "English-medium, six-year single-cycle Medicine and Surgery degree built directly around the Fondazione Policlinico Universitario Agostino Gemelli, one of the largest hospitals in Italy and the faculty's own teaching hospital since 1964",
+      "Clinical and hospital-based exposure described by the university as starting from the early years of the course, rather than being confined to the final clinical years",
+      "A long-established Rome medical faculty, open to students since November 1961, within one of Europe's largest private, non-profit universities (Università Cattolica del Sacro Cuore, founded 1921)",
+      "A comparatively large confirmed non-EU intake among Italy's English-medium medical schools in recent admission cycles, alongside a university-run English-language admission test rather than the national IMAT",
+      "A quieter, greener, residential campus setting in Monte Mario, on Rome's highest hill and next to the Monte Mario Nature Reserve, while remaining within easy reach of central Rome and the Vatican"
+    ],
+    "thingsToConsider": [
+      "Tuition (reported at EUR 18,150/year in third-party sources referencing the official fee schedule) and scholarship availability for this specific programme were not fully reconciled across the sources gathered for this research; get the current, written fee and scholarship terms directly from Cattolica International before budgeting",
+      "Non-EU seat numbers differ across sources by admission cycle (older sources cite 50 non-EU seats; more recent sources cite 70 non-EU seats for AY 2025/26 and 2026/27), since seats are set annually by Italian Ministerial Decree; confirm the current year's figure directly with the university",
+      "Admission is via Cattolica's own English-language written test (including a small number of Catholic-tradition-related questions), a different and separately competitive pathway from the national IMAT used at most other Italian medical schools",
+      "Although teaching is in English, clinical placements at Gemelli hospital involve Italian-speaking patients and staff, so functional Italian becomes practically necessary as training progresses",
+      "Students planning to practice in India after graduating should independently verify, close to their admission and graduation years, how this specific university's MD is treated for NMC screening-test (FMGE/NExT) purposes; this research found general WHO/WDOMS-recognition claims in third-party sources but could not confirm a university-specific statement from India's National Medical Commission"
+    ],
+    "faq": [
+      {
+        "question": "Is Università Cattolica del Sacro Cuore public or private?",
+        "answer": "It is a private, non-profit university, founded in 1921 in Milan and widely described as the largest private university in Europe; its Rome campus and Faculty of Medicine and Surgery have been open to students since November 1961."
+      },
+      {
+        "question": "What Medicine programme does the Rome campus offer in English?",
+        "answer": "A six-year, English-taught Medicine and Surgery single-cycle degree, built around the Fondazione Policlinico Universitario Agostino Gemelli, the faculty's own teaching hospital, with clinical and hospital-based exposure described as starting from the early years of the course."
+      },
+      {
+        "question": "Do I need to take the IMAT to apply?",
+        "answer": "No. Università Cattolica uses its own English-language written admission test (covering biology, chemistry, physics, maths, critical thinking, plus a small number of Catholic-tradition-related questions) rather than the national IMAT used by most other Italian medical schools; check the official admissions page for the current test format and dates."
+      },
+      {
+        "question": "How many seats are available for non-EU (Indian) applicants?",
+        "answer": "Reported non-EU seat numbers vary by admission cycle across the sources reviewed for this research: some cite around 50 seats in an earlier cycle, while more recent third-party sources cite about 70 non-EU seats for the 2025/26 and 2026/27 academic years, alongside a separate EU quota. Seats are set annually by Ministerial Decree, so confirm the current year's figure directly with the university."
+      },
+      {
+        "question": "How much does the Medicine and Surgery course cost for non-EU (Indian) students?",
+        "answer": "Third-party sources referencing the official fee schedule report a flat tuition of EUR 18,150 per year regardless of nationality. Scholarship availability for this specific programme was not fully confirmed: some sources describe general Cattolica merit-based (up to 30% of tuition) and international-student (around 37% of tuition) scholarships, while another states no scholarships currently apply to this programme. Confirm current fees and scholarship terms directly with Cattolica International before budgeting."
+      },
+      {
+        "question": "Is Italian language knowledge required for this English-medium programme?",
+        "answer": "Teaching is in English throughout the six-year programme, but clinical placements at Gemelli hospital involve Italian-speaking patients and staff, so students need to build working Italian as they progress into clinical years."
+      },
+      {
+        "question": "Where do international students live?",
+        "answer": "Housing is coordinated through the university's Cattolica International accommodation channel and its EDUCatt housing service, which offers a mix of on-campus and off-campus options and partners with housing-search platforms and residence providers (such as In-Domus and Camplus) to help students find accommodation in Rome, a city with generally high demand for student housing."
+      },
+      {
+        "question": "Will this degree let me practice medicine in India?",
+        "answer": "Third-party sources describe Università Cattolica's medical degree as WHO/World Directory of Medical Schools-recognised and UK GMC-recognised, but this research could not directly confirm a specific WDOMS school-record entry or a university-specific statement of NMC/FMGE-NExT treatment from India's National Medical Commission. Indian students should independently verify current NMC screening-test requirements for their intake year before enrolling."
+      },
+      {
+        "question": "Is the area around the campus safe for international students?",
+        "answer": "Rome generally scores reasonably on independent city-safety indices, with petty theft in crowded tourist and transit areas cited as the main practical risk rather than violent crime. The Rome campus sits in Monte Mario, described by local-area guides as a quiet, established residential district, which reduces routine exposure to the crowded-area risks more common in central Rome."
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "_status": "HELD - not gate-passing",
+  "_reason": "University of Saskatchewan College of Dentistry's entry-level Doctor of Dental Medicine (D.M.D.) program requires, per its own official 2027-2028 Admissions Information Guide: 'All applicants must be Canadian citizens or landed immigrants at the time of application.' Applicants who are neither are directed to apply via ADEA AADSAS, a route the admissions page describes as existing 'to facilitate qualified applicants from the United States' (US dental schools plus a few Canadian ones) - there is no described pathway for a general international/Indian applicant with no US dental-school affiliation and no Canadian citizenship/PR. The only other pathway open to internationally trained dentists, the International Dental Degree Program (IDDP), is even more explicit: 'Applicants must be citizens of Canada or have permanent residency status (landed immigrant) on the date of application... All applicants must be Canadian citizens or landed immigrants at the time of application.' IDDP is also a 2-year degree-COMPLETION/upgrading program for people who already hold a foreign dental degree not accredited by the Commission on Dental Accreditation of Canada (CDAC), entering directly into Year 3 of the D.M.D. clinical curriculum - not an entry-level program for students who have not yet earned a dental degree. Neither program honestly maps to this platform's entry-level 'bds' course slug (the NEET-UG/BDS-equivalent audience). No other College of Dentistry program (Dental Assisting, Dental Therapy, Dental Hygiene, DMD/MBA, or graduate research degrees) is a dental-surgeon degree comparable to BDS. A separate, already-published-ready draft for this university (Nursing B.S.N. and Pharmacy Pharm.D.) exists at research-drafts/canada/university-of-saskatchewan.json and correctly excludes dentistry/medicine. See the accompanying .md file for the full research record and sourcing.",
+  "countrySlug": "canada",
+  "schoolName": "University of Saskatchewan (College of Dentistry)",
+  "cityName": "Saskatoon",
+  "officialWebsite": "https://dentistry.usask.ca/",
+  "structuredFacts": {
+    "name": "University of Saskatchewan (College of Dentistry)",
+    "city": "Saskatoon",
+    "type": "Public",
+    "establishedYear": 1907,
+    "officialWebsite": "https://dentistry.usask.ca/",
+    "bestFitFor": [],
+    "programs": []
+  },
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "University of Saskatchewan - College of Dentistry (official college homepage)",
+        "url": "https://dentistry.usask.ca/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "USask Admissions - Dentistry (D.M.D.) program page (official; quick facts, tuition estimates, Categories of Applicants, citizenship/PR requirement, AADSAS pathway)",
+        "url": "https://admissions.usask.ca/dentistry.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "USask Admissions - College of Dentistry 2027-2028 Admissions Information Guide (official PDF; Section III 'Categories of Applicants' with explicit Canadian citizen/landed immigrant requirement and Year-1 tuition table)",
+        "url": "https://admissions.usask.ca/documents/dentistry-admissions-information-guide.pdf",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "USask Admissions - International Dentistry (IDDP) page (official; program overview)",
+        "url": "https://admissions.usask.ca/international-dentistry.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "USask Admissions - College of Dentistry IDDP Admissions Information Guide (official PDF; Categories of applicants section with explicit citizenship/PR requirement)",
+        "url": "https://admissions.usask.ca/documents/IDDP.pdf",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "University Catalogue - International Dental Degree Program (IDDP) entry (official; confirms Year-3 entry, 2-year degree-completion structure, NDEB exam eligibility)",
+        "url": "https://programs.usask.ca/dentistry/iddp/index.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "College of Dentistry - Programs overview page (official; confirms full program list, none an alternative entry-level dental-surgeon degree)",
+        "url": "https://dentistry.usask.ca/programs.php",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "draftContent": {}
+}

@@ -1,0 +1,132 @@
+{
+  "countrySlug": "russia",
+  "universitySlug": "pyatigorsk-medical-and-pharmaceutical-institute",
+  "schoolName": "Pyatigorsk Medical and Pharmaceutical Institute",
+  "cityName": "Pyatigorsk",
+  "priority": "medium",
+  "officialWebsite": "https://pmedpharm.ru/",
+  "programUrl": "https://pmedpharm.ru/abitur/special/",
+  "admissionUrl": "https://pmedpharm.ru/abitur/inost/",
+  "reviewNotes": "Corroborated via Wikipedia + Scholaro + official site (pmedpharm.ru English pages). Tuition omitted (not confirmed from official source). Medium of instruction stated with an honest caveat: the institute is a Russian institution that references Russian, English or French as intermediary languages for foreign applicants, but full English-medium delivery for each specialty is not confirmed on the official pages reviewed, so students are told to verify with the admission committee. NMC/regulatory recognition is NOT asserted for this specific branch; students are directed to verify on the NMC list.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Pyatigorsk Medical and Pharmaceutical Institute — Official website (English overview)",
+        "url": "https://pmedpharm.ru/sveden_eng/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official English overview: branch of Volgograd State Medical University; specialties Pharmacy, Dentistry, General Medicine, Medical Biochemistry; foreign-student support; hostel with 2-3 per room; Center for World Languages since 2013."
+      },
+      {
+        "label": "Pyatigorsk Medical and Pharmaceutical Institute — Foreign applicant admission steps (official)",
+        "url": "https://pmedpharm.ru/abitur/inost/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official foreign-admission procedure: document legalization/apostille, notarized translations, distance entrance tests in chemistry and biology plus an interview in Russian/English/French; references an intermediary language of study; invitation and visa steps."
+      },
+      {
+        "label": "Pyatigorsk Medical and Pharmaceutical Institute — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Pyatigorsk_Medical_and_Pharmaceutical_Institute",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Public higher medical school; established 1943 (as Pyatigorsk Pharmaceutical Institute); became Pyatigorsk State Pharmaceutical Academy in 1994; renamed and joined Volgograd State Medical University as a branch in 2012; located 11 Kalinina avenue, Pyatigorsk, Stavropol Krai."
+      },
+      {
+        "label": "Scholaro — Pyatigorsk Medical and Pharmaceutical Institute profile",
+        "url": "https://www.scholaro.com/u/Pyatigorsk-Medical-and-Pharmaceutical-Institu-29458",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent directory: type Public, founding date 1943, located in Russia."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Pyatigorsk Medical and Pharmaceutical Institute",
+    "city": "Pyatigorsk",
+    "type": "Public",
+    "establishedYear": 1943,
+    "officialWebsite": "https://pmedpharm.ru/",
+    "parentInstitution": "Volgograd State Medical University",
+    "bestFitFor": [
+      "Students specifically interested in pharmacy education, since the institute's core historical strength and identity is pharmaceutical science",
+      "International applicants who are comfortable studying in Russia and are prepared to confirm the language of instruction and complete any required preparatory year",
+      "Students who prefer a smaller, specialised medical-pharmaceutical institute in a calmer resort city over a large metropolitan campus",
+      "Applicants drawn to the North Caucasus spa-city setting of Pyatigorsk with its milder climate, mineral-water resorts and mountain surroundings"
+    ],
+    "programs": [
+      {
+        "courseSlug": "pharmacy",
+        "title": "Pharmacy (Specialist degree)",
+        "officialProgramUrl": "https://pmedpharm.ru/abitur/special/",
+        "medium": "Primarily Russian; the institute lists Russian, English or French as intermediary languages for foreign applicants — confirm the medium for this specialty with the admission committee",
+        "durationYears": 5,
+        "feeNotes": "Official tuition figures were not confirmed from a primary source at the time of research; request the current fee schedule and payment terms directly from the admission committee (admission.pmfi@mail.ru)."
+      },
+      {
+        "courseSlug": "bds",
+        "title": "Dentistry (Specialist degree)",
+        "officialProgramUrl": "https://pmedpharm.ru/abitur/special/",
+        "medium": "Primarily Russian; the institute lists Russian, English or French as intermediary languages for foreign applicants — confirm the medium for this specialty with the admission committee",
+        "durationYears": 5,
+        "feeNotes": "Official tuition figures were not confirmed from a primary source at the time of research; request the current fee schedule directly from the admission committee (admission.pmfi@mail.ru)."
+      },
+      {
+        "courseSlug": "mbbs",
+        "title": "General Medicine (Specialist degree)",
+        "officialProgramUrl": "https://pmedpharm.ru/abitur/special/",
+        "medium": "Primarily Russian; the institute lists Russian, English or French as intermediary languages for foreign applicants — Indian applicants should confirm the exact medium and any preparatory-year requirement with the admission committee",
+        "durationYears": 6,
+        "feeNotes": "Official tuition figures were not confirmed from a primary source at the time of research; request the current fee schedule directly from the admission committee (admission.pmfi@mail.ru). Indian students must independently verify the institute's recognition status on the NMC list before enrolling."
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Pyatigorsk Medical and Pharmaceutical Institute (PMPI) is a public medical and pharmaceutical institute in Pyatigorsk, a resort city in Russia's Stavropol Krai region in the North Caucasus. It traces its origins to 1943, grew into the Pyatigorsk State Pharmaceutical Academy in 1994, and since 2012 has operated as a branch of Volgograd State Medical University. Its academic identity centres on pharmaceutical science, with additional specialities in Dentistry, General Medicine and Medical Biochemistry. The institute has enrolled foreign students since 1962 and provides dedicated admission support for international applicants. Prospective students, particularly from India, should confirm the language of instruction, duration and regulatory recognition for their chosen speciality directly with the institute before applying.",
+    "campusLifestyle": "The institute describes an active campus community built around student clubs and creative and sporting life. According to the official site, students take part in music, dance, theatre and sports groups, and bodies such as the Council of Students and PhD Students, a Volunteer Center and an Ethnic Council support campus involvement. A dedicated sports center and student sports club provide facilities for various sports, and the institute participates in national student events such as the 'Student Spring' competition and a Student of the Year award. Since 2013 a Center for World Languages and Cultures has operated on campus, and the institute frames itself as a multicultural space intended to help students from different backgrounds adapt.",
+    "cityProfile": "Pyatigorsk is a city in Stavropol Krai in the North Caucasus region of southern Russia and is one of the best-known spa and mineral-water resort towns in the country. The institute itself highlights the city's resort setting, describing a combination of mineral waters, clean air and mountain scenery. For students this generally means a smaller, calmer environment than Russia's largest cities, set against a backdrop of hills and the surrounding Caucasus landscape. As with any move abroad, applicants should research the local climate, cost of living and transport links for themselves, and confirm current conditions before travelling.",
+    "clinicalExposure": "As a medical and pharmaceutical institute and a branch of Volgograd State Medical University, PMPI trains students for pharmacy, dentistry and medicine and awards a state diploma on graduation. Its historical strength is pharmaceutical science, including the development and testing of medicines. The specific structure of clinical and practical training - such as affiliated hospitals, dental clinics, pharmacy practice sites and the year-by-year clinical schedule for each speciality - was not detailed on the official pages reviewed. Applicants should ask the admission committee for the exact clinical-training arrangements, hospital or pharmacy tie-ups and internship requirements for their chosen programme.",
+    "hostelOverview": "The institute states that during their studies students live in a student hostel, or in hotels and apartments in the city, in fully furnished rooms designed for two to three people. Beyond this, precise details such as hostel fees, room categories, mess or catering arrangements and the allocation process for international students were not confirmed from a primary source. Students should request current hostel availability, charges and rules directly from the institute's admission committee and confirm them in writing before arrival.",
+    "indianFoodSupport": "The institute presents itself as a multicultural campus that pays close attention to helping foreign students adapt from their first days of arrival, and it has hosted students from Asia, Africa and Latin America since 1962. However, specific provision for Indian or vegetarian food - such as dedicated Indian messes, nearby Indian restaurants or self-catering facilities in the hostels - was not confirmed from official sources. Indian students who need particular dietary arrangements should ask the institute directly about kitchen access and local food options, and connect with current Indian students where possible.",
+    "safetyOverview": "The institute emphasises support for foreign students throughout their studies and describes a resort-city environment in the North Caucasus. As with any study-abroad decision, students should independently assess personal safety, campus security arrangements and current travel guidance for Russia and the Pyatigorsk region, and should consult their own government's latest travel advisories before committing. Specific campus-security details were not documented on the official pages reviewed, so applicants are encouraged to raise safety questions directly with the admission committee.",
+    "studentSupport": "PMPI states that it gives significant attention to the adaptation of foreign students and provides support from the first days of arrival through to graduation. A Center for World Languages and Cultures has operated since 2013, and a dedicated admission committee for international applicants (admission.pmfi@mail.ru) guides candidates through document legalisation, translation, entrance testing and visa-invitation steps. Graduates receive a state diploma and can request a Diploma Supplement to help with recognition abroad. For anything not covered here - including recognition for practice in a student's home country - applicants should confirm details directly with the institute.",
+    "whyChoose": [
+      "A public medical-pharmaceutical institute with roots going back to 1943 and a long-standing specialisation in pharmaceutical science, now operating as a branch of Volgograd State Medical University.",
+      "A track record of enrolling international students since 1962, with a dedicated admission committee for foreign applicants and support aimed at helping them adapt.",
+      "A calmer, smaller-city setting in the North Caucasus resort town of Pyatigorsk, with mineral-water resorts, milder climate and mountain surroundings that some students may prefer to a large metropolis.",
+      "A state diploma on graduation, with an optional Diploma Supplement intended to assist with recognition of the qualification in other countries."
+    ],
+    "thingsToConsider": [
+      "The language of instruction is a key open question: the institute is a Russian institution and lists Russian, English or French only as intermediary languages for foreign applicants, so confirm the exact medium and any preparatory-year requirement for your speciality before applying.",
+      "Tuition fees, hostel charges and total costs were not confirmed from a primary source during research - request the current, written fee schedule directly from the admission committee.",
+      "The institute's core strength is pharmacy and dentistry; the structure and clinical arrangements of the General Medicine programme, and its suitability for students planning to practise in India, should be verified carefully.",
+      "Indian applicants intending to practise medicine in India must independently confirm the institute's recognition status on the National Medical Commission (NMC) list and understand FMGE/NExT and NEET requirements before enrolling - do not rely on agent claims."
+    ],
+    "faq": [
+      {
+        "question": "Where is Pyatigorsk Medical and Pharmaceutical Institute located?",
+        "answer": "It is located in Pyatigorsk, a resort city in Stavropol Krai in the North Caucasus region of southern Russia, at 11 Kalinina Avenue. The institute is a branch of Volgograd State Medical University."
+      },
+      {
+        "question": "Is the institute public or private, and when was it established?",
+        "answer": "It is a public institute. It was established in 1943 as the Pyatigorsk Pharmaceutical Institute, became the Pyatigorsk State Pharmaceutical Academy in 1994, and since 2012 has operated as a branch of Volgograd State Medical University."
+      },
+      {
+        "question": "What programmes does the institute offer?",
+        "answer": "The institute's specialities include Pharmacy, Dentistry, General Medicine and Medical Biochemistry, along with postgraduate and pre-university training. Its historical strength is pharmaceutical science. Confirm the exact programme details, duration and medium of instruction with the admission committee."
+      },
+      {
+        "question": "What language are the programmes taught in?",
+        "answer": "The institute is a Russian institution and refers to Russian, English or French as intermediary languages for foreign applicants, including for the entrance interview. Full English-medium delivery for each speciality was not confirmed on the official pages reviewed, so applicants should confirm the medium of instruction and any preparatory-year requirement directly with the admission committee."
+      },
+      {
+        "question": "Can Indian students practise in India after studying here?",
+        "answer": "The institute is a branch of Volgograd State Medical University, but recognition status for this specific branch was not independently confirmed during research. Indian students planning to practise in India must verify the institute's current status on the National Medical Commission (NMC) list and meet NEET, FMGE/NExT and other Indian regulatory requirements. Verify this yourself before enrolling."
+      },
+      {
+        "question": "How do international students apply?",
+        "answer": "The institute runs a dedicated admission committee for foreign applicants (admission.pmfi@mail.ru). The published process includes collecting and legalising documents (apostille where required), notarised translations, distance entrance tests in chemistry and biology, and a language interview, followed by a study contract, invitation letter and visa. Confirm the current steps and deadlines with the committee."
+      }
+    ]
+  }
+}

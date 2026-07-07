@@ -1,0 +1,129 @@
+{
+  "countrySlug": "uzbekistan",
+  "schoolName": "Jizzakh State Pedagogical University - Faculty of Medicine",
+  "cityName": "Jizzakh",
+  "priority": "medium",
+  "officialWebsite": "https://jdpu.uz/en/",
+  "programUrl": "https://jdpu.uz/en/faculties/tibbiyot-fakulteti/",
+  "hostelUrl": "https://jdpu.uz/en/",
+  "admissionUrl": "https://jdpu.uz/en/department/xalqaro-hamkorlik-bolimi/",
+  "wdomsUrl": null,
+  "qualityScore": 62,
+  "reviewNotes": "Conservative honest draft. Official site confirms Medical Faculty (est. Dec 2020, first intake 2021), 'General Medicine' and 'Pediatrics' bachelor's directions, named clinical-training hospital partners, and university-wide dormitory. Third-party MBBS-consultancy sites (studyinuzbekistan.com, ensureeducation.com) claim NMC approval / English-medium MBBS for Indians, but this is NOT corroborated on the official JDPU site or by NMC/FMGE source lists searched (Leverage Edu's NMC-approved Uzbekistan list names only Tashkent, Samarkand, Bukhara, Andijan-tier institutes, not Jizzakh). Medium of instruction for the Medical Faculty is not confirmed as English on the official pages (site itself is trilingual Uzbek/Russian/English but faculty programs are named in Uzbek - 'Davolash ishi', 'Pediatriya ishi'). Therefore: NO NMC/FMGE/regulator claim asserted, NO tuition figure included (unconfirmed), and draft content explicitly tells students to verify medium of instruction and international-student admission pathway directly with the university before applying. courseSlug set to 'mbbs' since 'General Medicine' is the structural equivalent of an MBBS-track undergraduate medical degree in the Uzbekistan system, per gate's fixed slug taxonomy.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "JDPU official site - Medical Faculty page (history, programs, student/faculty numbers, clinical partners)",
+        "url": "https://jdpu.uz/en/faculties/tibbiyot-fakulteti/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "JDPU official site - homepage (official name, contacts, structure)",
+        "url": "https://jdpu.uz/en/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "JDPU official site - University History page (founding 1974, university status 2022, naming 1989)",
+        "url": "https://jdpu.uz/en/universitet/jizzax-davlat-pedagogika-universiteti-tarixi/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "JDPU official site - International Cooperation Department page",
+        "url": "https://jdpu.uz/en/department/xalqaro-hamkorlik-bolimi/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Jizzakh (city climate, geography, population context)",
+        "url": "https://en.wikipedia.org/wiki/Jizzakh",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Jizzakh State Pedagogical University (independent corroboration of founding/status)",
+        "url": "https://en.wikipedia.org/wiki/Jizzakh_State_Pedagogical_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Leverage Edu - List of NMC-Approved Medical Colleges in Uzbekistan for Indian Students (used to confirm Jizzakh is NOT on named NMC lists; regulator claim withheld accordingly)",
+        "url": "https://leverageedu.com/learn/list-of-nmc-approved-medical-colleges-in-uzbekistan-for-indian-students/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Jizzakh State Pedagogical University - Faculty of Medicine",
+    "slug": "jizzakh-state-pedagogical-university-faculty-of-medicine",
+    "city": "Jizzakh",
+    "type": "Public",
+    "establishedYear": 1974,
+    "officialWebsite": "https://jdpu.uz/en/",
+    "bestFitFor": [
+      "Students who want an affordable, government-run medical faculty in a smaller, quieter Uzbek city away from the bigger student hubs of Tashkent or Samarkand",
+      "Students comfortable studying in a Russian/Uzbek-medium academic environment and willing to build local-language proficiency alongside their medical coursework",
+      "Students prioritising close, personal clinical exposure through named regional hospitals rather than a large, crowded metropolitan teaching-hospital network",
+      "Students who want to independently verify (before committing) whether a specific international, English-medium admission track exists for their nationality"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "General Medicine (Davolash ishi) - Faculty of Medicine",
+        "officialProgramUrl": "https://jdpu.uz/en/faculties/tibbiyot-fakulteti/",
+        "medium": "Uzbek/Russian (official Medical Faculty program pages are published in Uzbek; the university has not published a confirmed English-medium track for this faculty - confirm directly before applying)",
+        "durationYears": 6,
+        "feeNotes": "No official tuition figure for international/contract-basis students on this program was found on the official site at the time of research; third-party education-consultancy sites quote general institutional ranges but none are specific to this Medical Faculty, so no fee is stated here. Contact the university's International Cooperation Department directly for current contract fees.",
+        "intakeMonths": ["September"]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Jizzakh State Pedagogical University, officially founded in 1974 and named after the Uzbek writer Abdulla Qodiriy (Kadyri) in 1989, was upgraded to full university status in 2022 by presidential decree. Its Faculty of Medicine is comparatively young: it was formally established in December 2020 and enrolled its first students in the 2021-22 academic year, building on medical-knowledge departments at the university that trace back to 1979. The faculty currently trains around 245 students across two bachelor's-level directions, General Medicine and Pediatrics, supported by roughly 65 professors and instructors. It sits inside a broader 13-faculty university in Jizzakh city, the administrative capital of Jizzakh Region in eastern Uzbekistan. Because the Medical Faculty is new and its official program pages are currently published in Uzbek rather than English, prospective international applicants - including Indian students - should treat this as an emerging, still-developing medical program and independently confirm the language of instruction, the international-student admission pathway, and any home-country regulatory recognition directly with the university before applying.",
+    "campusLifestyle": "The Faculty of Medicine operates within the main Jizzakh State Pedagogical University campus on Sharof Rashidov Street in Jizzakh city, alongside twelve other faculties spanning sciences, humanities, and education. Campus life is oriented around a traditional Uzbek state-university rhythm: lecture-based coursework, anatomy and simulation laboratories for medical students, a central library and information-resource center, a gym, and student clubs tied to the university's broader youth-policy and student-council programs. Because the university is primarily a pedagogical institution that only recently added medicine, medical students share general campus facilities and student life with a much larger population of education, science, and humanities students rather than a dedicated stand-alone medical-campus environment.",
+    "cityProfile": "Jizzakh is the administrative center of Jizzakh Region in eastern Uzbekistan, a mid-sized regional city rather than a major metropolitan hub like Tashkent or Samarkand. It has a sharply continental climate with cold winters (January lows around -4°C) and hot, dry summers (July highs near 35°C). The city is home to several other higher-education institutions, including a polytechnic institute and professional colleges, giving it a modest but genuine student-town character with affordable local eateries and services clustered around the university area. Students who prefer a quieter, lower-cost regional city over the noise and expense of Uzbekistan's larger student cities may find Jizzakh's pace of life comfortable, though it offers fewer big-city amenities, entertainment options, and direct international flight connections than Tashkent.",
+    "clinicalExposure": "The Medical Faculty has signed practical-training agreements with several healthcare institutions in Jizzakh region, named on the official faculty page as the Republican Specialized Cardiology Center, the Regional Multidisciplinary Hospital, the Emergency Medical Care Center, the Regional Perinatal Center, and an Oncology/Dermatology/Children's Hospital grouping. Ten classrooms have additionally been allocated for the faculty at the Abu Ali ibn Sino Jizzakh Public Health Technical College for teaching purposes. This gives General Medicine and Pediatrics students access to a reasonably diverse set of regional specialty centers for clinical rotations, though the network is regional in scale rather than the large multi-hospital teaching networks associated with Uzbekistan's older, larger medical universities in Tashkent, Samarkand, and Bukhara.",
+    "hostelOverview": "Jizzakh State Pedagogical University provides a renovated student dormitory (Student Residence) for enrolled students, with rooms typically organised as multi-person suites that include shared bathrooms, common kitchens on each floor or block, laundry and storage rooms, and shared common areas with seating for study or socialising. This dormitory information is published at the university level rather than specifically for the Medical Faculty, so exact room allocation, cost, and availability for international medical students should be confirmed directly with the university's International Cooperation Department or Student Residence office before arrival.",
+    "indianFoodSupport": "No official information was found describing dedicated Indian-food facilities, an Indian mess, or an Indian student community specifically at Jizzakh State Pedagogical University's Faculty of Medicine. Jizzakh is a smaller regional city rather than one of Uzbekistan's established Indian-student hubs, so students used to larger cities like Tashkent, Samarkand, or Bukhara - where organised Indian student associations and Indian-run eateries are more established - should expect to rely more on self-cooking in shared dormitory kitchens, local Uzbek and Russian cuisine, and any small international-student network they build on campus, and should verify current food-access options directly with the university before committing.",
+    "safetyOverview": "Uzbekistan is generally regarded as a safe destination for international students, and Jizzakh, as a smaller regional administrative center, has a slower pace and lower crime profile than larger cities. The university operates a dedicated unit for foreign students' safety as part of its International Relations structure, alongside standard university security, a hotline, and a rector's-office structure for student welfare (including a Student Residence psychologist role referenced in the university's organisational structure). As with any study-abroad destination, students should register with their embassy or consulate on arrival, keep copies of visa and passport documents, and follow standard personal-safety practices for living in a new country.",
+    "studentSupport": "The university's International Cooperation Department (Xalqaro hamkorlik bo'limi) is responsible for admission, registration, and advising of international students, monitoring their academic progress, and coordinating visa-related paperwork such as invitation and admission-confirmation letters. The university also references support structures such as tutors assigned to help students, a Student Residence psychologist, and general youth-policy programs covering student welfare. Because the Medical Faculty is new and its published pages are Uzbek-language, international applicants should expect to coordinate closely and directly with the International Cooperation Department by email or phone to confirm admission requirements, document checklists, and language-of-instruction arrangements before applying.",
+    "whyChoose": [
+      "A public, government-run university (est. 1974, university status since 2022) with an established institutional track record outside the medical faculty specifically",
+      "Named clinical-training partnerships with regional specialty hospitals in Jizzakh, including a cardiology center, a regional multidisciplinary hospital, an emergency care center, and a perinatal center",
+      "A smaller, quieter regional city setting that may suit students who prefer lower living costs and a slower pace over Uzbekistan's larger student cities",
+      "An active International Cooperation Department that already manages visa, invitation-letter, and international-student advising processes for the wider university"
+    ],
+    "thingsToConsider": [
+      "The Faculty of Medicine is very new (established December 2020, first intake 2021), so it has a much shorter track record than Uzbekistan's established medical universities in Tashkent, Samarkand, Bukhara, or Andijan",
+      "Official Medical Faculty program pages are currently published in Uzbek, and no confirmed English-medium track for international students was found - this must be verified directly with the university before applying",
+      "No confirmed NMC (or other home-country regulator) recognition was found for this specific Medical Faculty at the time of research - Indian students in particular should independently verify NMC-recognition and NExT/FMGE eligibility before enrolling, since this is required to practice in India after any MBBS-equivalent degree earned abroad",
+      "No official tuition/fee figures for international or contract-basis students were published on the official site at the time of research, so budgeting must wait for a direct quote from the university"
+    ],
+    "faq": [
+      {
+        "question": "Does Jizzakh State Pedagogical University's Faculty of Medicine teach in English?",
+        "answer": "The official Medical Faculty pages are currently published in Uzbek, and no confirmed English-medium program for international students was found during research. Prospective applicants, especially those from outside Uzbekistan, should contact the university's International Cooperation Department directly to confirm the language of instruction before applying."
+      },
+      {
+        "question": "Is this Medical Faculty recognised by India's National Medical Commission (NMC)?",
+        "answer": "No official confirmation of NMC recognition for this specific faculty was found at the time of research. Third-party education-consultancy websites list various Uzbek medical universities as NMC-approved, but Jizzakh State Pedagogical University did not appear on the NMC-approved lists checked. Indian students must independently verify current NMC recognition and NExT/FMGE eligibility with the National Medical Commission before enrolling in any MBBS-equivalent program abroad."
+      },
+      {
+        "question": "When was the Faculty of Medicine established?",
+        "answer": "The Faculty of Medicine was formally established on 14 December 2020 by order of the Ministry of Higher and Secondary Specialized Education, with its first students admitted to the General Medicine and Pediatrics programs in the 2021-22 academic year, building on medical-knowledge departments at the university dating back to 1979."
+      },
+      {
+        "question": "What medical programs are offered?",
+        "answer": "The faculty currently offers two bachelor's-level directions: General Medicine (Davolash ishi) and Pediatrics (Pediatriya ishi), taught by around 65 professors and instructors to roughly 245 students in total."
+      },
+      {
+        "question": "Where do medical students do their clinical training?",
+        "answer": "The faculty has signed practical-training agreements with several healthcare institutions in Jizzakh region, including the Republican Specialized Cardiology Center, the Regional Multidisciplinary Hospital, the Emergency Medical Care Center, the Regional Perinatal Center, and an Oncology/Dermatology/Children's Hospital grouping, plus allocated classrooms at the Abu Ali ibn Sino Jizzakh Public Health Technical College."
+      }
+    ]
+  }
+}

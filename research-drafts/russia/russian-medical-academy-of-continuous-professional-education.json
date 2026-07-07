@@ -1,0 +1,101 @@
+{
+  "countrySlug": "russia",
+  "schoolName": "Russian Medical Academy of Continuous Professional Education (RMANPO)",
+  "cityName": "Moscow",
+  "priority": "low",
+  "officialWebsite": "https://rmanpo.ru/",
+  "reviewNotes": "HELD - ok=false. RMANPO is a postgraduate-only medical academy (residency/ordinatura + PhD/aspirantura + continuing education for already-qualified doctors), founded 1930, Ministry of Health of Russia. No undergraduate MBBS/specialitet program exists, so no program maps honestly to the required courseSlug set (mbbs, medical-pg, bsc-nursing, pharmacy, bds) for this site's Indian pre-degree student audience. No English-medium program track was corroborated (the /en/ site paths returned a Russian-language 404). See accompanying .md for full source list and reasoning. Do not publish without a taxonomy change or new corroborating research.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "RMANPO official site (Russian, primary)",
+        "url": "https://rmanpo.ru/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "RMANPO - Information for Foreign Students",
+        "url": "https://rmapo.ru/mezhdunarodnaja-dejatelnost/8870-informacija-dlja-inostrannyh-obuchajuschihsja.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Russian Wikipedia - RMANPO institutional history and structure",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F_%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Russian Ministry of Health - subordinate organizations list (legal name confirmation)",
+        "url": "https://minzdrav.gov.ru/ministry/podvedy/110",
+        "kind": "government",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Medvestnik - RMANPO rector change news (2025)",
+        "url": "https://medvestnik.ru/content/news/V-RMANPO-dosrochno-smenili-rektora.html",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "ROR (Research Organization Registry) - RMANPO profile",
+        "url": "https://ror.org/01t6bjk79",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "RMANPO official site - Educational Programs (residency specialty catalogue)",
+        "url": "https://rmanpo.ru/en/admission/programs/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Russian Medical Academy of Continuous Professional Education (RMANPO)",
+    "city": "Moscow",
+    "type": "Public",
+    "establishedYear": 1930,
+    "officialWebsite": "https://rmanpo.ru/",
+    "bestFitFor": [
+      "NOT APPLICABLE - postgraduate-only institution, no undergraduate MBBS pathway for Indian pre-degree students",
+      "Would only fit already-qualified doctors seeking Russian residency/CPE, which is outside this site's current course taxonomy",
+      "Held pending a taxonomy update or new corroborating research"
+    ],
+    "programs": []
+  },
+  "draftContent": {
+    "summary": "HELD: RMANPO (est. 1930, Moscow) is a Russian Ministry of Health postgraduate medical academy offering residency (ordinatura), postgraduate/PhD study (aspirantura), and continuing education for already-qualified doctors. It has no undergraduate MBBS-equivalent program, so it cannot be published under this site's current MBBS/BDS/Pharmacy/Nursing course taxonomy without misrepresenting the institution to prospective Indian pre-degree students.",
+    "campusLifestyle": "HELD - not built out. RMANPO's student population is postgraduate/practicing-physician, not undergraduate international students, so a standard MBBS-style campus-life narrative would misrepresent the institution.",
+    "cityProfile": "HELD - not built out for this institution page. Moscow city context would need to be authored specifically for a program type this site actually lists.",
+    "clinicalExposure": "HELD - not built out. RMANPO's clinical training is residency-level (for licensed physicians), not equivalent to MBBS clinical postings for pre-degree students.",
+    "hostelOverview": "HELD - RMANPO lists hostels at Moscow ul. Smolnaya 40 and Leningradskoye Shosse 106 per its own site navigation, but full hostel content was not developed since the program-fit gate failed.",
+    "indianFoodSupport": "HELD - not researched in depth; program-fit gate failure meant this was not pursued to avoid wasted verification effort.",
+    "safetyOverview": "HELD - not built out for this institution page.",
+    "studentSupport": "HELD - not built out for this institution page.",
+    "whyChoose": [
+      "HELD - no gate-passing program identified",
+      "HELD - institution is postgraduate-only",
+      "HELD - do not publish without taxonomy fit"
+    ],
+    "thingsToConsider": [
+      "No undergraduate MBBS/specialitet program exists at RMANPO",
+      "Programs are in Russian; no English-medium track was corroborated",
+      "Only fits already-qualified doctors, not pre-degree Indian students"
+    ],
+    "faq": [
+      {
+        "question": "Does RMANPO offer an MBBS program for international students?",
+        "answer": "No. RMANPO is a postgraduate medical academy under Russia's Ministry of Health, offering only residency (ordinatura), postgraduate/PhD study (aspirantura), and continuing education for physicians who already hold a medical degree."
+      },
+      {
+        "question": "Why is this university not published on the site?",
+        "answer": "Its programs do not map to this site's current course categories (MBBS, BDS, Pharmacy, Nursing, or an equivalent pre-degree pathway), so no honest program listing could be created."
+      },
+      {
+        "question": "Could RMANPO be added in the future?",
+        "answer": "Yes, if the site adds a category for postgraduate medical residency/fellowship programs aimed at already-qualified doctors, RMANPO would be a well-documented candidate for that category."
+      }
+    ]
+  }
+}

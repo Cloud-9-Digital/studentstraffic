@@ -1,0 +1,82 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "University of Calgary (Cumming School of Medicine)",
+  "cityName": "Calgary",
+  "priority": "low",
+  "officialWebsite": "https://cumming.ucalgary.ca/",
+  "status": "hold",
+  "reviewNotes": "HOLD - do not publish. Cumming School of Medicine MD program admissions are restricted by official policy to Canadian citizens, permanent residents of Canada, and Convention refugees in Canada; international (including Indian) students are explicitly not eligible to apply (https://cumming.ucalgary.ca/mdprogram/future-students/admissions/am-i-eligible, corroborated by UCalgary Calendar 5.3.1 and BeMo Academic Consulting summary). The school does not offer BDS, Bachelor of Pharmacy, or BSc Nursing degrees. Its Graduate Science Education (PhD/MSc) and Postgraduate Medical Education (residency/fellowship for already-licensed physicians via AIMG/sponsored pathways) divisions do not map to this site's mbbs/medical-pg/bsc-nursing/pharmacy/bds courseSlug taxonomy for India-outbound undergraduate/postgraduate study-abroad seekers. No program entry is included because none can be honestly offered to this audience. See the accompanying .md research record for full source list and details.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Cumming School of Medicine - MD Program, 'Am I Eligible?' (official eligibility page)",
+        "url": "https://cumming.ucalgary.ca/mdprogram/future-students/admissions/am-i-eligible",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "University of Calgary Calendar - MD 5.3.1 Admission Eligibility",
+        "url": "https://calendar.ucalgary.ca/pages/QtA1GrhrkqzqEGtEnQO4",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "BeMo Academic Consulting - Cumming School of Medicine: How to Get In (independent corroboration of citizen/PR/refugee-only policy)",
+        "url": "https://bemoacademicconsulting.com/blog/cumming-school-medicine",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Cumming School of Medicine - Our History (official)",
+        "url": "https://cumming.ucalgary.ca/about/cumming-school-medicine/history",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Cumming School of Medicine",
+        "url": "https://en.wikipedia.org/wiki/Cumming_School_of_Medicine",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "University of Calgary - Graduate Science Education, Graduate Admissions (official)",
+        "url": "https://cumming.ucalgary.ca/gse/future-students/graduate-admissions",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Cumming School of Medicine - Postgraduate Medical Education, International Medical School Graduates (official)",
+        "url": "https://cumming.ucalgary.ca/pgme/future-trainees-2018/international-medical-school-graduates",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of Calgary (Cumming School of Medicine)",
+    "city": "Calgary",
+    "type": "Public",
+    "establishedYear": 1967,
+    "officialWebsite": "https://cumming.ucalgary.ca/",
+    "bestFitFor": [],
+    "programs": [],
+    "notes": "GATE NOT MET: no program with an allowed courseSlug (mbbs, medical-pg, bsc-nursing, pharmacy, bds) can be honestly listed. MD program is closed to international students by official policy (Canadian citizens/PRs/Convention refugees only). No BDS/Pharmacy/Nursing degrees offered by this school."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [
+      "The MD Program at the Cumming School of Medicine is open only to Canadian citizens, permanent residents of Canada, and Convention refugees in Canada -- international students, including Indian applicants, are not eligible to apply.",
+      "Canadian medical schools use a graduate-entry MD model, not an undergraduate MBBS-style route, so this school cannot be compared directly to MBBS-abroad destinations.",
+      "The university does not offer BDS, Bachelor of Pharmacy, or BSc Nursing degree programs, so it does not fit the site's other India-outbound course categories either."
+    ],
+    "faq": []
+  }
+}

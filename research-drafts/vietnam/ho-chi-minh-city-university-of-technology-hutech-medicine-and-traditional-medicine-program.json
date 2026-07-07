@@ -1,0 +1,72 @@
+{
+  "countrySlug": "vietnam",
+  "schoolName": "Ho Chi Minh City University of Technology (HUTECH) - Medicine and Traditional Medicine Program",
+  "cityName": "Ho Chi Minh City",
+  "priority": "low",
+  "officialWebsite": "https://www.hutech.edu.vn/khoa-hoc-suc-khoe",
+  "status": "hold",
+  "reviewNotes": "HOLD - not publish-ready, same underlying institution/faculty already researched and held as 'ho-chi-minh-city-university-of-technology-hutech-faculty-of-medicine' on 2026-07-07. This pass specifically re-checked the 'Traditional Medicine' (Y hoc co truyen) angle implied by this task's naming. Finding: Traditional Medicine at HUTECH is NOT an actively enrolling 2026 program -- fresh multi-source search (2026-07-07) confirms the programs actually admitting students in 2026 under HUTECH's new 'Truong Y va Khoa hoc Suc khoe' (School of Medicine and Health Sciences) are General Medicine (Y khoa, newly opened), Pharmacy (Duoc hoc), Nursing (Dieu duong), and Medical Laboratory Technology (Ky thuat xet nghiem y hoc). Traditional Medicine and Dentistry (Rang Ham Mat) are explicitly described in Vietnamese press as programs HUTECH plans to open once quality-assurance conditions are completed ('nha truong se tiep tuc chuan bi day du dieu kien bao dam chat luong de mo cac nganh y hoc co truyen va rang ham mat') -- i.e. pending/future, not yet admitting. This makes Traditional Medicine an even weaker candidate for publication than General Medicine, which was already held for lacking English-medium instruction and any India-specific admissions pathway. No new corroborated facts overturn the prior hold; if anything they reinforce it.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "HUTECH official site - Faculty/Field of Medicine and Health Sciences (Linh vuc Y va Khoa hoc suc khoe) landing page",
+        "url": "https://www.hutech.edu.vn/khoa-hoc-suc-khoe",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Page text includes repeated mentions of 'Y hoc co truyen' (Traditional Medicine) alongside Y khoa, Duoc hoc, Dieu duong, Ky thuat xet nghiem y hoc, but as of this check gives no confirmed 2026 admissions status, English-medium claim, or India-relevant pathway for Traditional Medicine specifically; page is Vietnamese-language only throughout."
+      },
+      {
+        "label": "nld.com.vn (Nguoi Lao Dong newspaper) - 'TP HCM co them truong DH dao tao nganh y khoa va y hoc co truyen'",
+        "url": "https://nld.com.vn/tp-hcm-co-them-truong-dh-dao-tao-nganh-y-khoa-va-y-hoc-co-truyen-196251228183234958.htm",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Via WebSearch summary. Independent news corroboration that HUTECH's expansion covers both Medicine and Traditional Medicine as subjects of its Ministry-approval process, but does not establish Traditional Medicine as an already-enrolling 2026 program."
+      },
+      {
+        "label": "doisongphapluat.com.vn - 'Truong dai hoc HUTECH du kien mo nganh Y khoa va Y hoc co truyen tu nam 2026'",
+        "url": "https://doisongphapluat.com.vn/truong-dai-hoc-hutech-du-kien-mo-nganh-y-khoa-va-y-hoc-co-truyen-tu-nam-2026-a708373.html",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Via WebSearch summary. Headline itself uses 'du kien' (planned/anticipated) for both programs; corroborates that Traditional Medicine was, at the time of reporting, a planned rather than confirmed-open program."
+      },
+      {
+        "label": "huongnghiep.hocmai.vn - 'HUTECH ra mat Truong Y va Khoa hoc suc khoe: Buoc tien moi trong dao tao nhan luc y te chat luong cao'",
+        "url": "https://huongnghiep.hocmai.vn/hutech-ra-mat-truong-y-va-khoa-hoc-suc-khoe-buoc-tien-moi-trong-dao-tao-nhan-luc-y-te-chat-luong-cao",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Via WebSearch summary. States the programs actually recruiting/training in 2026 under the new School of Medicine and Health Sciences are Y khoa (newly opened), Duoc hoc, Dieu duong, and Ky thuat xet nghiem y hoc -- and that HUTECH will continue preparing quality-assurance conditions before opening Y hoc co truyen (Traditional Medicine) and Rang Ham Mat (Dentistry), confirming those two are NOT yet active 2026 admissions programs."
+      },
+      {
+        "label": "Ho Chi Minh City University of Technology (HUTECH) - Faculty of Medicine [prior research draft, same institution]",
+        "url": "file:///C:/Users/LENOVO/Documents/studentstraffic/research-drafts/vietnam/ho-chi-minh-city-university-of-technology-hutech-faculty-of-medicine.json",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Internal reference to the same-day prior exhaustive research pass on HUTECH's General Medicine program (8 external sources cited there: HUTECH official pages, Thanh Nien, giaoduc.net.vn, Wikipedia), which independently reached the same hold conclusion for General Medicine: no English-medium instruction confirmed, no India-specific admissions pathway confirmed, program too new (first cohort 2026, 50 students) for honest student-life/clinical/hostel content."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Ho Chi Minh City University of Technology (HUTECH) - Medicine and Traditional Medicine Program",
+    "city": "Ho Chi Minh City",
+    "type": "Private",
+    "establishedYear": 1995,
+    "officialWebsite": "https://www.hutech.edu.vn/khoa-hoc-suc-khoe",
+    "bestFitFor": [],
+    "programs": [],
+    "notes": "establishedYear=1995 reflects HUTECH's own founding date (Prime Ministerial Decision No. 235/TTg, 26 April 1995). No programs populated: General Medicine (Y khoa) is a brand-new (approved 26 May 2026, first intake 2026, 50 students), Vietnamese-medium, domestic-admission-only program with no officialProgramUrl carrying a confirmed medium of instruction or India-relevant admissions pathway (see prior hold draft for full detail). Traditional Medicine (Y hoc co truyen) is even less mature: as of this research (2026-07-07) it is reported in Vietnamese press as a program HUTECH plans to open pending completion of quality-assurance conditions, not yet an actively admitting 2026 program. Neither qualifies for a courseSlug in {mbbs,medical-pg,bsc-nursing,pharmacy,bds} with honest, corroborated, India-audience content. bestFitFor intentionally left empty rather than fabricated."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "All narrative fields left empty. Publishing an India-audience page (student life, clinical exposure, hostel, Indian food access, safety, NMC/NEET/FMGE framing) for either HUTECH General Medicine or the not-yet-open Traditional Medicine program would require fabricating facts that cannot be corroborated from any official or independent source as of 2026-07-07. Held per project sourcing rules (exhaustive-then-omit, never fabricate)."
+  }
+}

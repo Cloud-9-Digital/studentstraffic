@@ -1,0 +1,68 @@
+{
+  "ok": false,
+  "countrySlug": "georgia",
+  "schoolName": "Batumi Medical Academy (BMEDA)",
+  "cityName": "Batumi",
+  "status": "hold",
+  "holdReason": "NOT A DEGREE-GRANTING HIGHER-EDUCATION MEDICAL UNIVERSITY. Batumi Medical Academy (BMEDA) is a Georgian VOCATIONAL EDUCATION (VET) college, licensed and regulated under Georgia's 'Board of Authorization of Vocational Education Institutions' (confirmed on BMEDA's own 'Authorization decision' page, listing VET authorization decisions from 2014-2019). It is a member of the Association of Private Colleges of Georgia. Its only programs (per its own 'Educational programs' page) are vocational/certificate-level: Pharmacy, Dental Technician Program, and Nursing education -- delivered as sub-degree vocational training in Georgian, aimed at the domestic Georgian healthcare workforce, not as internationally recognized bachelor's/professional degrees (no MBBS, no BSc Nursing bachelor's degree, no BDS, no Pharmacy degree, no medical-pg). There is therefore no valid courseSlug match in {mbbs, medical-pg, bsc-nursing, pharmacy, bds} for a genuine degree program here, and no basis to claim NMC/PCI/INC relevance for Indian students. Independent MBBS-abroad consultant sites confirm the actual MBBS-granting institutions in Batumi are separate entities: Batumi Shota Rustaveli State University and Avicenna Batumi Medical University -- NOT Batumi Medical Academy. Publishing a page for BMEDA under this site's India-outbound-degree-seeker content model would misrepresent a vocational college as a medical/degree university, which the sourcing rules and hard 'never fabricate' rule for this project prohibit. Recommendation: do not publish; if Batumi coverage is desired, research Batumi Shota Rustaveli State University or Avicenna Batumi Medical University instead as separate, distinct entries.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Batumi Medical Academy -- official homepage (English)",
+        "url": "https://www.bmeda.edu.ge/en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Batumi Medical Academy -- Academy History page",
+        "url": "https://bmeda.edu.ge/en/history",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "States academy has operated since 1992, is a member of the Association of Private Colleges of Georgia, and describes vocational/professional training focus."
+      },
+      {
+        "label": "Batumi Medical Academy -- Educational programs page (lists actual programs offered)",
+        "url": "https://bmeda.edu.ge/en/courses/educational-programs",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Lists only Pharmacy, Dental Technician Program, and Nursing education as programs -- no MBBS/MD/BDS degree program listed."
+      },
+      {
+        "label": "Batumi Medical Academy -- Authorization decision page (regulatory status)",
+        "url": "https://bmeda.edu.ge/en/authorizationDecision",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Explicitly lists 'Decision of the Board of Authorization of Vocational Education Institutions' (2014, 2015, 2018 x2, 2019) as the regulatory basis for BMEDA's operation -- confirms VET/vocational-college status, not higher-education medical-university status."
+      },
+      {
+        "label": "JustMBBS -- Batumi Shota Rustaveli State University MBBS page (context: confirms which Batumi institution actually offers MBBS)",
+        "url": "https://www.justmbbs.com/mbbs-college/georgia/batumi-shota-rustaveli-state-medical-university",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Avicenna Batumi Medical University -- official site (context: the other genuine MBBS-granting institution in Batumi, distinct from BMEDA)",
+        "url": "https://avicennabatumi.edu.ge/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Batumi Medical Academy (BMEDA)",
+    "city": "Batumi",
+    "type": "Private",
+    "establishedYear": 1992,
+    "officialWebsite": "https://www.bmeda.edu.ge/en",
+    "institutionCategory": "Vocational Education (VET) college -- NOT a higher-education medical university",
+    "programsOffered_vocationalOnly": [
+      "Pharmacy (vocational/certificate level)",
+      "Dental Technician Program (vocational/certificate level)",
+      "Nursing education (vocational/certificate level)"
+    ],
+    "programs": [],
+    "bestFitFor": []
+  },
+  "draftContent": {},
+  "note": "OMITTED: entire publish-ready content (summary, campusLifestyle, cityProfile, clinicalExposure, hostelOverview, indianFoodSupport, safetyOverview, studentSupport, whyChoose, thingsToConsider, faq, and structuredFacts.programs) was intentionally left empty/omitted because BMEDA has no genuine MBBS/medical-pg/BSc-Nursing(degree)/Pharmacy(degree)/BDS program to describe -- it is a vocational (VET) college per Georgia's own vocational-education authorization records. Fabricating a courseSlug-mapped degree program or India-regulator framing (NMC/PCI/INC) for this institution would violate the project's never-fabricate and honest-caveat rules. This entry is intentionally left in 'hold' / ok=false status and should NOT be published or seeded via scripts/seed-nonwdoms-draft.ts."
+}

@@ -1,0 +1,104 @@
+{
+  "countrySlug": "russia",
+  "schoolName": "Saint Petersburg State Chemical Pharmaceutical University",
+  "cityName": "Saint Petersburg",
+  "priority": "medium",
+  "officialWebsite": "https://spcpu.ru/english/",
+  "programUrl": "https://spcpu.ru/english/",
+  "verifiedAt": "2026-07-07",
+  "reviewNotes": "Corroborated from official English site (spcpu.ru/english), Wikipedia, and Russian-education portals. Tuition omitted entirely (no official confirmed figure). Pharmacy is the only program asserted, mapped to courseSlug 'pharmacy'. Clinical/hostel/food fields grounded in corroborated city and international-student context, not university-specific placeholders.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "SPCPU official website (English)",
+        "url": "https://spcpu.ru/english/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms founding year 1919, pharmacy focus, Saint Petersburg location, address ul. Professora Popova 14, contact info@pharminnotech.com."
+      },
+      {
+        "label": "Saint Petersburg State Chemical Pharmaceutical University — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Saint_Petersburg_State_Chemical_Pharmaceutical_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Type: public; Established 1919; located in Saint Petersburg; history of the institution."
+      },
+      {
+        "label": "SPCPU international-student profile (RUSVUZ higher-education portal)",
+        "url": "https://www.rusvuz.com/medical-universities/saint-petersburg-state-chemical-pharmaceutical-university/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates English/French/Russian medium of instruction, 50+ years of international training, dormitory accommodation, Dean's Office for Foreign Students."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Saint Petersburg State Chemical Pharmaceutical University",
+    "slug": "saint-petersburg-state-chemical-pharmaceutical-university",
+    "city": "Saint Petersburg",
+    "type": "Public",
+    "establishedYear": 1919,
+    "officialWebsite": "https://spcpu.ru/english/",
+    "bestFitFor": [
+      "Indian students set on a pharmacy career who want a dedicated pharmaceutical university rather than a general medical school",
+      "Applicants who prefer an English-medium track and are willing to verify the current language of instruction directly with the university",
+      "Students who value a long-established institution with decades of experience teaching international students"
+    ],
+    "recognitionBadges": [],
+    "recognitionLinks": [],
+    "teachingHospitals": [],
+    "similarUniversitySlugs": [],
+    "programs": [
+      {
+        "courseSlug": "pharmacy",
+        "title": "Pharmacy (Faculty of Pharmacy)",
+        "officialProgramUrl": "https://spcpu.ru/english/",
+        "medium": "English",
+        "durationYears": 5,
+        "feeNotes": "Tuition not confirmed from an official source at the time of research; applicants should request current fees directly from the Dean's Office for Foreign Students (foreign.dean@pharminnotech.com).",
+        "sourceUrls": [
+          "https://spcpu.ru/english/",
+          "https://www.rusvuz.com/medical-universities/saint-petersburg-state-chemical-pharmaceutical-university/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Saint Petersburg State Chemical Pharmaceutical University (SPCPU) is a public, pharmacy-focused university in Saint Petersburg, Russia, founded in 1919. It is widely described as one of Russia's leading institutions dedicated to general and industrial pharmacy, and it has taught international students for more than five decades. For Indian applicants, SPCPU stands out as a specialist pharmaceutical school rather than a general medical university, with pharmacy training offered in Russian, English and French. Prospective students should confirm the current English-medium intake, fees and admission requirements directly with the university's Dean's Office for Foreign Students before applying.",
+    "campusLifestyle": "SPCPU is a compact, subject-focused campus centred on pharmaceutical education, with teaching laboratories, research apparatus, reading rooms, computer classes and nurseries of medicinal plants supporting hands-on training. As a single-discipline institution, campus life is oriented around pharmacy and industrial-technology study rather than a large multi-faculty environment. International students make up a meaningful share of the student body, and the university describes an established community of foreign students from many countries. Applicants who want specifics on clubs, student council activity and day-to-day facilities should confirm current details with the university.",
+    "cityProfile": "The university is located in Saint Petersburg, at ul. Professora Popova 14 on the Petrogradsky side of the city. Saint Petersburg is Russia's second-largest city and a major cultural and educational centre, known for its historic architecture, museums, river-and-canal setting and a large population of students across many universities. The city has an extensive metro and public-transport network and a long winter season, so applicants should budget for cold-weather living. Its size and international student presence make it relatively familiar territory for newcomers, though students should independently research current travel, visa and living conditions.",
+    "clinicalExposure": "As a pharmaceutical university, SPCPU's practical training centres on pharmacy and industrial pharmaceutical technology rather than hospital-based clinical rotations typical of an MBBS. The university reports teaching laboratories, up-to-date research equipment, medicinal-plant nurseries and pharmacy-oriented facilities that support laboratory and technological practice. Students interested in the exact structure of internships, laboratory placements or industry practice should confirm the current curriculum and any practical-training partnerships directly with the Faculty of Pharmacy, as specific placement details were not confirmed from an official source during research.",
+    "hostelOverview": "The university states that international students are accommodated in a dormitory, and it operates a Dean's Office for Foreign Students that handles student support. Specific details such as room types, occupancy, amenities and hostel fees were not confirmed from an official source during research, so applicants should request current accommodation terms and costs directly from the university before making financial plans. Confirming allocation policy and proximity to campus in advance is advisable given Saint Petersburg's climate and city layout.",
+    "indianFoodSupport": "SPCPU has not published specific information about Indian or vegetarian catering on its English pages, so no on-campus Indian-food provision should be assumed. Saint Petersburg is a large city with supermarkets, international grocery options and restaurants, which generally makes self-catering and sourcing familiar ingredients feasible for Indian students living in dormitory or nearby housing. Applicants who rely on specific dietary or religious food requirements should verify kitchen access in the dormitory and nearby food options directly before arrival.",
+    "safetyOverview": "Saint Petersburg is a major metropolitan city with an established student population and standard urban-safety considerations. SPCPU operates a dedicated Dean's Office for Foreign Students that serves as a first point of contact for international-student matters. Because conditions relating to travel, visas and safety for Indian students in Russia can change, applicants and their families should consult current guidance from the Ministry of External Affairs and the Indian embassy, and confirm the university's own student-support and emergency arrangements before enrolling.",
+    "studentSupport": "The university has taught international students for over fifty years and maintains a Dean's Office for Foreign Students (foreign.dean@pharminnotech.com) as a dedicated support channel for admissions, accommodation and day-to-day queries. General enquiries are handled through the university's admissions office and central contacts (info@pharminnotech.com). For questions specific to Indian applicants — including recognition, English-medium availability and fees — students should correspond directly with this office and keep written confirmation of any commitments made.",
+    "whyChoose": [
+      "A specialist, public pharmaceutical university founded in 1919 that focuses on general and industrial pharmacy rather than general medicine.",
+      "More than fifty years of experience teaching international students, with a Dean's Office for Foreign Students dedicated to their needs.",
+      "Located in Saint Petersburg, a large cultural and educational city with extensive transport, amenities and an established international-student presence."
+    ],
+    "thingsToConsider": [
+      "Pharmacy instruction is offered in Russian, English and French; applicants must confirm the current English-medium intake in writing before applying rather than assuming it.",
+      "Tuition and hostel fees were not confirmed from an official source during research, so students should obtain current costs directly from the university before making financial commitments.",
+      "For practising pharmacy in India, students must independently verify recognition and licensing requirements with the Pharmacy Council of India (PCI); recognition is not asserted here and should be confirmed before enrolling."
+    ],
+    "faq": [
+      {
+        "question": "Where is Saint Petersburg State Chemical Pharmaceutical University located?",
+        "answer": "The university is in Saint Petersburg, Russia, at ul. Professora Popova 14. Saint Petersburg is Russia's second-largest city and a major educational centre with a large student population."
+      },
+      {
+        "question": "Is the pharmacy program taught in English?",
+        "answer": "The university indicates that pharmacy is taught in Russian, English and French. Because language-of-instruction and intake details can change, applicants should confirm the current English-medium track directly with the Dean's Office for Foreign Students before applying."
+      },
+      {
+        "question": "Will this degree let me practise pharmacy in India?",
+        "answer": "This page does not assert Indian recognition. Indian students should independently verify recognition, registration and any qualifying-exam requirements with the Pharmacy Council of India (PCI) before enrolling, and keep written confirmation from the university."
+      },
+      {
+        "question": "How much does it cost to study at SPCPU?",
+        "answer": "Tuition and accommodation fees were not confirmed from an official source at the time of research, so no figure is published here. Request current fees directly from the university's Dean's Office for Foreign Students (foreign.dean@pharminnotech.com)."
+      }
+    ]
+  }
+}

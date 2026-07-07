@@ -1,0 +1,160 @@
+{
+  "countrySlug": "albania",
+  "schoolName": "Catholic University \"Our Lady of Good Counsel\" (UNIZKM)",
+  "cityName": "Tirana",
+  "priority": "medium",
+  "officialWebsite": "https://www.unizkm.al/en",
+  "programUrl": "https://www.unizkm.al/study/course/corso-di-laurea-in-medicina-e-chirurgia/en",
+  "hostelUrl": "https://www.unizkm.al/en",
+  "admissionUrl": "https://unizkm.al/study/admissions/en",
+  "qualityScore": 62,
+  "reviewNotes": "Non-WDOMS discovered university. Official site (unizkm.al) is behind Cloudflare bot-challenge and could not be fetched directly via curl; content corroborated instead via search-engine cached snippets of the official program/faculty pages plus Wikipedia, UniPage, and unirank/edarabia. Medium of instruction for Medicine, Pharmacy, Dentistry and Nursing is consistently reported as Italian (with Albanian also used in some courses); one search snippet referencing an 'in English' 2023-2024 medicine cycle was contradicted by the same and other sources stating classes are taught in Italian with no English option, so English-medium was NOT asserted anywhere in this draft. Tuition fees omitted entirely: no official fee amount could be corroborated (UniPage explicitly states it does not display a fee figure for this institution and directs users to the official site). WDOMS/NMC listing status could not be confirmed, so no NMC/FMGE/PCI/INC regulatory claim is made; the language-of-instruction caveat is called out explicitly for Indian students because Italian-medium teaching does not meet NMC's English-medium requirement for FMGE eligibility as generally understood, and this is flagged as something students must verify with NMC/WDOMS directly before applying.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UNIZKM official website (homepage)",
+        "url": "https://www.unizkm.al/en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIZKM official Medicine and Surgery program page",
+        "url": "https://www.unizkm.al/study/course/corso-di-laurea-in-medicina-e-chirurgia/en",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIZKM official Faculty of Pharmacy / Master of Science in Pharmacy program page",
+        "url": "https://www.unizkm.al/study/course/corso-di-laurea-magistrale-a-ciclo-unico-quinquennale-in-farmacia/en",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIZKM official Bachelor in Nursing program page",
+        "url": "https://www.unizkm.al/study/course/corso-di-laurea-in-infiermieristica/en",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UNIZKM official Elbasan campus page",
+        "url": "https://unizkm.al/posts/slug/universita-cattolica-nostra-signora-del-buon-consiglio-sede-di-elbasan/en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Our Lady of Good Counsel University - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Our_Lady_of_Good_Counsel_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniPage - Catholic University \"Our Lady of Good Counsel\", Tirana: price of education",
+        "url": "https://www.unipage.net/en/4787/catholic_university_our_lady_of_good_counsel",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "unirank - Catholic University Our Lady of Good Counsel rankings and admissions profile",
+        "url": "https://www.unirank.org/al/uni/catholic-university-our-lady-of-good-counsel/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Elbasan - Wikipedia (city context)",
+        "url": "https://en.wikipedia.org/wiki/Elbasan",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Catholic University \"Our Lady of Good Counsel\" (UNIZKM)",
+    "city": "Tirana",
+    "type": "Private",
+    "establishedYear": 2004,
+    "officialWebsite": "https://www.unizkm.al/en",
+    "bestFitFor": [
+      "Students who want a Catholic, values-based campus culture within a European Union-oriented curriculum",
+      "Students open to learning Italian (or already comfortable with it) as the primary medium of instruction, since classes are not offered in English",
+      "Families prioritising a joint/double-diploma structure with an Italian public university (Rome Tor Vergata for Medicine/Dentistry/Nursing, Bari for Pharmacy) that is recognised in Albania, Italy and the EU",
+      "Students targeting EU-recognised Medicine, Dentistry, Pharmacy or Nursing degrees who are prepared to independently verify NMC/PCI/INC and WDOMS recognition before enrolling, since this is not an English-medium program",
+      "Students comfortable splitting study time between a smaller Albanian campus (Tirana/Elbasan) and periods of clinical or professional placement in Italy"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Single Cycle Degree Course in Medicine and Surgery",
+        "officialProgramUrl": "https://www.unizkm.al/study/course/corso-di-laurea-in-medicina-e-chirurgia/en",
+        "medium": "Italian",
+        "durationYears": 6
+      },
+      {
+        "courseSlug": "bds",
+        "title": "Single Cycle Degree Course in Dentistry and Dental Prosthodontics",
+        "officialProgramUrl": "https://www.unizkm.al/study/faculty/facolta-di-medicina/en",
+        "medium": "Italian",
+        "durationYears": 6
+      },
+      {
+        "courseSlug": "pharmacy",
+        "title": "Single Cycle Master's Degree in Pharmacy (Laurea Magistrale a Ciclo Unico in Farmacia)",
+        "officialProgramUrl": "https://www.unizkm.al/study/course/corso-di-laurea-magistrale-a-ciclo-unico-quinquennale-in-farmacia/en",
+        "medium": "Italian",
+        "durationYears": 5
+      },
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "Bachelor's Degree Course in Nursing",
+        "officialProgramUrl": "https://www.unizkm.al/study/course/corso-di-laurea-in-infiermieristica/en",
+        "medium": "Italian",
+        "durationYears": 3
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Catholic University \"Our Lady of Good Counsel\" (UNIZKM) is a private, Catholic-affiliated university established in 2004, with its main campus in the Albanian capital Tirana and a second campus in Elbasan, about an hour east of the capital. UNIZKM runs three faculties covering roughly 20 study programs, including Medicine and Surgery, Dentistry and Dental Prosthodontics, Pharmacy, Nursing and Physiotherapy, alongside Economics and Architecture. Its health-sciences programs are built as joint or double-diploma courses delivered with established Italian public universities — Medicine, Dentistry and Nursing with the University of Rome \"Tor Vergata\", and Pharmacy with the University of Bari — so graduates receive a diploma co-issued by UNIZKM and the partner Italian university, recognised in Albania, Italy and the wider EU. Teaching across these programs is carried out mainly in Italian by a mix of Italian and Albanian faculty, which is an important planning point for Indian applicants since it is not an English-medium university. Indian students considering UNIZKM for Medicine, Dentistry, Pharmacy or Nursing should independently verify the program's current listing in the World Directory of Medical Schools (WDOMS) and its standing with the relevant Indian regulator (NMC for Medicine, PCI for Pharmacy, INC for Nursing) before applying, since an Italian-medium course does not, by itself, satisfy NMC's English-medium requirement for FMGE/NExT eligibility.",
+    "campusLifestyle": "UNIZKM's Tirana campus sits in a European capital that has grown rapidly into one of the livelier student cities in the Balkans, with a compact, walkable centre, an active cafe culture, and a mix of Albanian and Italian influence that shows up in daily campus life given the university's academic partnerships with Italian institutions. Class sizes are relatively small compared to large public universities, and health-sciences students split time between classroom teaching, laboratory work, and clinical placements, with some clinical and professional-practice components carried out in Italy (for example, Pharmacy students complete a placement period partly in Albania and partly in Italy). Student life centres on faculty-organised activities rather than a large multi-faculty campus-town scene, reflecting UNIZKM's identity as a focused, mid-sized private university rather than a sprawling public one.",
+    "cityProfile": "Tirana is Albania's capital and largest city, and its main economic, administrative and cultural centre. It has undergone rapid redevelopment in the past two decades, with a walkable, mostly flat city centre, a growing cafe and restaurant scene, and neighbourhoods such as Bllok known for nightlife and cultural venues. Cost of living is markedly lower than in most Western European capitals, which keeps day-to-day student expenses manageable. UNIZKM's second location, Elbasan, is Albania's fourth-largest city, roughly an hour from Tirana in central Albania on the Shkumbin river; it has a long industrial history dating to the mid-20th century and today functions as a regional centre with its own university-level nursing tradition dating back to a nursing school founded there in 1994, which UNIZKM's Elbasan site continues.",
+    "clinicalExposure": "Clinical and laboratory training for Medicine and Dentistry students is delivered partly at UNIZKM's own teaching hospital facilities in Tirana and partly through the partnership with the University of Rome \"Tor Vergata\", with clinical rotations taking place at Tor Vergata's Policlinico and other affiliated hospitals in Italy in addition to Albanian clinical sites. Pharmacy students complete a mandatory final-year professional practice placement (around six months) split between community pharmacies in Albania and Italy under the University of Bari partnership. Nursing students undertake mandatory clinical placement hours alongside classroom study, with attendance requirements reported at roughly 75% of coursework and clinical hours. Applicants should confirm current placement-hospital details and any additional exposure requirements directly with the university before enrolling, as clinical-site arrangements can change between academic years.",
+    "hostelOverview": "UNIZKM's official channels do not publish a detailed, itemised on-campus hostel or dormitory program for international students of the kind seen at larger state universities, and no such facility could be independently corroborated for this draft. Students relocating to Tirana or Elbasan typically rely on private rented apartments or shared flats, which are common practice for students in both cities given Albania's relatively affordable rental market compared to Western Europe. Prospective students should contact UNIZKM's admissions or international office directly to ask about any partnered accommodation, guesthouse arrangements, or landlord contacts the university may be able to recommend, and should budget for private housing as the default expectation.",
+    "indianFoodSupport": "Tirana has a growing, internationally influenced food scene with South Asian and Indian grocery items increasingly available through general international/Asian grocery stores in the capital, though dedicated Indian restaurants are still limited compared to major Western European student hubs. Elbasan, being a smaller regional city, has a narrower range of international dining options. Indian students should expect to cook a significant share of their own meals, and can supplement Albanian and Italian-influenced local cuisine with spices and staples sourced from Tirana's general international grocers or occasional trips to bigger regional cities. This is a practical planning point for vegetarian or specifically Indian-diet students rather than a settled feature of student life at UNIZKM.",
+    "safetyOverview": "Albania is generally regarded as a safe country for international students, and Tirana in particular has a low rate of serious crime affecting foreign residents, with the usual precautions around petty theft and traffic safety in a busy capital city being the main practical concerns. Elbasan, as a smaller regional city, has an even quieter day-to-day environment for students, though its industrial history means some areas historically dealt with pollution rather than crime-related safety concerns. As with any study-abroad move, students should register with their embassy/consulate on arrival, keep copies of key documents, and follow standard personal-safety practices when travelling around either city or when travelling between Tirana, Elbasan and Italy for placements.",
+    "studentSupport": "UNIZKM maintains an admissions office (via unizkm.al/study/admissions) that handles applications, enrolment and general prospective-student queries, and the university publishes program-specific pages in English in addition to Italian and Albanian, indicating at least a baseline of international-facing support. Because health-sciences programs are run jointly with Italian partner universities (Tor Vergata for Medicine/Dentistry/Nursing, Bari for Pharmacy), students also gain access to some support structures and recognition pathways tied to those partner institutions. Indian applicants should proactively ask the admissions office about visa-support documentation, Italian-language preparation or support (since coursework is Italian-medium), and any regulator-recognition documentation (WDOMS listing, etc.) in writing before committing, as these specifics were not independently verifiable from public sources at the time of this research.",
+    "whyChoose": [
+      "Joint/double-diploma structure with established Italian public universities (Rome \"Tor Vergata\" for Medicine, Dentistry and Nursing; University of Bari for Pharmacy), giving graduates a degree recognised in Albania, Italy and the wider EU",
+      "Long-standing Catholic university (founded 2004) with a clear institutional identity, small-to-mid-sized class sizes, and dedicated health-sciences faculties rather than a single generalist medical school bolted onto a large university",
+      "Two-city presence (Tirana and Elbasan) gives applicants a choice between studying in Albania's capital or in a smaller regional city, with the Elbasan nursing tradition dating back to a nursing school founded in 1994",
+      "Relatively affordable cost of living in both Tirana and Elbasan compared to studying directly in Italy or Western Europe, while still following an Italian-partnered curriculum",
+      "Structured clinical/professional placement pathways that include time at Italian teaching hospitals and pharmacy networks (for Medicine, Dentistry and Pharmacy respectively), broadening clinical exposure beyond Albania alone"
+    ],
+    "thingsToConsider": [
+      "Teaching is Italian-medium, not English-medium — Indian applicants must be prepared to learn Italian to a functional academic level, since no source confirms an English-taught track for Medicine, Dentistry, Pharmacy or Nursing at UNIZKM",
+      "WDOMS listing and NMC/PCI/INC recognition status could not be independently confirmed for this draft; because the program is Italian-medium, it does not, on its face, meet NMC's English-medium requirement for FMGE/NExT eligibility, so students must verify this directly with NMC and WDOMS before applying if an Indian medical licence is the end goal",
+      "No official tuition-fee figures were available from corroborated sources at the time of research; prospective students must request current, itemised tuition and fee information directly from UNIZKM's admissions office",
+      "No dedicated on-campus international-student hostel/dormitory program could be confirmed; students should plan for private rental accommodation in Tirana or Elbasan",
+      "As a smaller private university, UNIZKM does not have the scale, global rankings profile, or long track record with Indian students that larger, more established MBBS-abroad destinations have, so due diligence (site visits, talking to current students, checking recognition status) is especially important"
+    ],
+    "faq": [
+      {
+        "question": "Is Catholic University \"Our Lady of Good Counsel\" (UNIZKM) a good option for Indian students seeking an MBBS-equivalent degree?",
+        "answer": "UNIZKM offers a six-year Single Cycle Degree Course in Medicine and Surgery run jointly with the University of Rome \"Tor Vergata\", producing a diploma recognised in Albania, Italy and the EU. However, teaching is in Italian, not English, and this draft could not independently confirm the program's current WDOMS listing or NMC recognition status. Indian students must verify WDOMS listing and NMC guidance directly before applying if their goal is to practise medicine in India via FMGE/NExT."
+      },
+      {
+        "question": "What language are UNIZKM's Medicine, Dentistry, Pharmacy and Nursing programs taught in?",
+        "answer": "Based on corroborated sources, these programs are taught primarily in Italian by a mix of Italian and Albanian faculty. No confirmed English-medium track exists for these programs at the time of this research, so applicants should plan for Italian-language study rather than assuming an English-taught course."
+      },
+      {
+        "question": "Where is UNIZKM located, and does it have more than one campus?",
+        "answer": "UNIZKM's main campus is in Tirana, Albania's capital, with a second campus in Elbasan, a regional city about an hour away that has its own long-running nursing education tradition dating to 1994. Some programs, including Nursing, run in parallel at both locations."
+      },
+      {
+        "question": "How much does it cost to study at UNIZKM, and is there on-campus accommodation?",
+        "answer": "Official, itemised tuition figures could not be confirmed from public sources for this draft — prospective students should request current tuition and fee details directly from UNIZKM's admissions office. Similarly, no dedicated international-student hostel or dormitory program is confirmed, so students should budget for private rented accommodation in Tirana or Elbasan."
+      },
+      {
+        "question": "Does a UNIZKM degree let me practise as a doctor, dentist, pharmacist or nurse in India?",
+        "answer": "That depends on factors this draft could not independently confirm, including the program's current listing in the World Directory of Medical Schools (WDOMS) and recognition by the relevant Indian regulator (NMC for Medicine, PCI for Pharmacy, INC for Nursing). Because UNIZKM's programs are Italian-medium, applicants should treat NMC's English-medium requirement for FMGE/NExT eligibility as a serious open question and confirm directly with NMC/WDOMS before enrolling."
+      }
+    ]
+  }
+}

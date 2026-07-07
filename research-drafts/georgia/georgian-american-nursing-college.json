@@ -1,0 +1,72 @@
+{
+  "countrySlug": "georgia",
+  "universitySlug": "georgian-american-nursing-college",
+  "schoolName": "Georgian-American Nursing College (GANC)",
+  "cityName": "Tbilisi",
+  "priority": "low",
+  "officialWebsite": "http://ganc.ge/en/",
+  "programUrl": "http://ganc.ge/en/programs",
+  "admissionUrl": "http://ganc.ge/en/",
+  "qualityScore": null,
+  "reviewNotes": "HOLD - NOT PUBLISH-READY. Research shows GANC is a Georgia-registered VOCATIONAL/PROFESSIONAL (VET) education college (LLC, founded Dec 2016), not a higher-education university, and its flagship, currently-registered program is a Georgian-language modular 'Practical Nurse' vocational program (registration no. 09101-p, EQF/National level 5, 149-179 credits, ~27-32 study months, admission requirement = completed general secondary education only). The college's own official program catalogue (PDF) lists Georgian-language modules (Georgian A2/B1, 15 credits each) as compulsory general modules, indicating instruction is in Georgian, not English. A second program - an Associate Degree in Nursing / Fifth-Level Vocational Qualification in Nursing, registration no. 09109-p, 180/210 credits - appears in the same official catalogue but is explicitly framed as something GANC 'will additionally implement... in case the program is added to the college' (conditional/authorized-but-not-confirmed-active), so it cannot be presented as a current, enrolling program without further confirmation from GANC directly. No evidence was found anywhere (official site, catalogue PDF, or third-party sources) of an English-medium track, international/Indian-student admissions pathway, or foreign nursing-council (India's INC) recognition; the institution is a domestic Georgian vocational college oriented at the Georgian labour market, with clinical placements at named Tbilisi hospitals (cardiology, surgery, mental health, children's infectious disease). Because the site's structured schema requires a Public/Private university with a bachelor's-level bsc-nursing program suited to an India-audience, English-medium framing, and because asserting INC/NMC recognition or an Indian-student pathway here would be unverifiable and misleading, this profile is being held rather than published. If GANC is confirmed in the future to run an active, English-medium Associate/Bachelor nursing pathway open to international students with a real accreditation and recognition story, this draft should be revisited.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "GANC - Georgian-American Nursing College, official website (About us)",
+        "url": "http://ganc.ge/en/about-us",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms GANC LLC was founded December 2016 in Tbilisi; co-founded with US-based corporation 'Partners for International Development' (established 2003 with support from Emory University and USAID); describes itself as a vocational nursing education institution equipped with computer-controlled training mannequins; has clinical-basis agreements with leading Georgian clinics."
+      },
+      {
+        "label": "GANC official educational-program catalogue (PDF, Georgian language, official)",
+        "url": "http://ganc.ge/assets/%E1%83%9E%E1%83%A0%E1%83%9D%E1%83%92%E1%83%A0%E1%83%90%E1%83%9B%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%99%E1%83%90%E1%83%A2%E1%83%90%E1%83%9A%E1%83%9D%E1%83%92%E1%83%98.pdf",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official 11-page program catalogue. Confirms director Maia Jashi; registration no. 09101-p for 'Practical Nurse' modular vocational program (EQF level 5, 149-179 credits, ~27-32 study months, admission precondition = complete general education, Georgian-language modules A2/B1 compulsory). Also lists a second, conditionally-described program (registration 09109-p) for Associate Degree in Nursing / Fifth-Level Vocational Qualification, 180/210 credits, framed as an addition GANC 'will implement in case the program is added to the college'. Lists clinical practice bases: Tbilisi Emergency Cardiology Center (Academician G. Chapidze), K. Eristavi National Center of Experimental and Clinical Surgery, Mental Health and Drug Abuse Prevention Center, Tbilisi Children's Infectious Clinical Hospital."
+      },
+      {
+        "label": "GANC official website - Administration page",
+        "url": "http://ganc.ge/en/about-us/administration",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Lists GANC's administrative staff: Maia Jashi MD (Director), Tamar Salia MD (Quality Assurance/Strategic Development), Tea Pachulia MD (Office of Education), and other operational roles; consistent with a small vocational-college administrative structure rather than a multi-faculty university."
+      },
+      {
+        "label": "GANC official website - Aim page",
+        "url": "http://ganc.ge/en/about-us/aim",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "States the aim of GANC's 'vocational education' is to give students the basic theoretical knowledge and clinical skills for nursing activity so they can fulfil a 'practicing nurse's' professional role - explicit self-description as vocational/professional (not higher) education."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Georgian-American Nursing College (GANC)",
+    "slug": "georgian-american-nursing-college",
+    "city": "Tbilisi",
+    "type": "Private",
+    "establishedYear": 2016,
+    "officialWebsite": "http://ganc.ge/en/",
+    "bestFitFor": [],
+    "programs": [],
+    "recognitionLinks": [],
+    "similarUniversitySlugs": [],
+    "notPublishable": true,
+    "notPublishableReason": "GANC is a Georgian VET (vocational/professional) college, not a higher-education university. Its confirmed, currently-registered offering is a Georgian-language modular 'Practical Nurse' vocational program (EQF level 5), which does not correspond to the bsc-nursing (bachelor's-level) courseSlug this pipeline requires, and there is no confirmed English-medium or international/Indian-student pathway."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": []
+  }
+}

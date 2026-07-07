@@ -1,0 +1,193 @@
+{
+  "countrySlug": "germany",
+  "schoolName": "UMCH - University Medicine Campus Hamburg (UMFST-UMCH)",
+  "cityName": "Hamburg",
+  "priority": "high",
+  "officialWebsite": "https://edu.umch.de/en",
+  "programUrl": "https://edu.umch.de/en/the-medicine-degree-program",
+  "feesUrl": "https://edu.umch.de/en/tuition-fees",
+  "hostelUrl": "https://edu.umch.de/en/accommodations",
+  "admissionUrl": "https://edu.umch.de/en/noneu",
+  "qualityScore": 85,
+  "reviewNotes": "Corroborated across the official UMCH/UMFST website (edu.umch.de, multiple sub-pages), the official DreamApply admissions portal (apply.umch.de), and independent India-facing/European study-abroad aggregators (Medhead, MedLink Students, TopUniversities, becomeadoctor.eu). UMCH is a privately operated German branch campus (in Hamburg-Bahrenfeld) of the Romanian public university G.E. Palade UMFST of Targu Mures; the Hamburg campus itself began teaching in October 2019, while the parent university was founded in 1945 - establishedYear below is set to the parent university's founding year (as officially stated on the UMCH facts-and-figures section) with this branch relationship made explicit in the content. Tuition is a verified official figure (Non-EU: EUR 17,400/semester = EUR 34,800/year per the tuition-fees page, and the admissions portal lists an all-in EUR 39,300/year for Non-EU applicants including the one-time enrollment fee spread notionally into year one); both figures are given as officially published, without conversion to INR since no official/verified FX date was provided by the university itself. Recognition messaging is deliberately cautious: the university's own accreditation page states the English-language Human Medicine programme has reached only the first ('Provisional Authorization') stage of a two-stage accreditation process, with full accreditation following two years after the first cohort graduates - so no unqualified NMC/FMGE/NExT recognition claim is made; students are told explicitly to verify current NMC screening test/NExT and FMGE status themselves before applying. No single-source facts were used for anything material.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UMCH University - Homepage (edu.umch.de/en)",
+        "url": "https://edu.umch.de/en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms tuition headline (EUR 14,900/semester EU, EUR 17,400/semester Non-EU), Hamburg-Bahrenfeld Science City location, and lists official accreditations (ARACIS, WFME/IAAR, ISO 9001:2015, WDOMS listing)."
+      },
+      {
+        "label": "UMCH University - University page (About UMFST-UMCH)",
+        "url": "https://edu.umch.de/en/university",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "States 1945 as the parent university's Year of Foundation, over 13,010 students across the wider UMFST system, campus located in Hamburg-Bahrenfeld's Science City next to the University of Hamburg and DESY research centre, programme running in Hamburg since October 2019, German Medical Award 2025 (Silver Medal, Health Communication) for its teaching-hospital network."
+      },
+      {
+        "label": "UMCH University - Tuition fees & financing",
+        "url": "https://edu.umch.de/en/tuition-fees",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07",
+        "notes": "Official published fees: EU/EEA/UK/CH/Andorra/Monaco/San Marino/Vatican applicants EUR 14,900/semester; all other (incl. Indian) applicants EUR 17,400/semester; one-time application fee EUR 595; one-time enrollment fee EUR 4,500. Also confirms optional transfer to the Targu Mures (Romania) campus from year 3 at EUR 3,000/year."
+      },
+      {
+        "label": "UMCH admissions portal (DreamApply) - [MBBS] Medicine course page",
+        "url": "https://apply.umch.de/courses/course/39-mbbs-medicine",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official course listing: 6-year/12-semester (360 ECTS) MBBS (Integrated MD) programme in Hamburg, English medium, no German required to start, Non-EU tuition fee stated as EUR 39,300/year (EUR 34,800 yearly fee + EUR 4,500 one-time enrollment fee bundled in the listing), application fee EUR 595, Fall 2026/27 intake with 31 Jul 2026 application deadline and studies commencing 21 Sept 2026, entry qualification = high school/secondary education, English proficiency tested at interview."
+      },
+      {
+        "label": "UMCH University - Accreditation and recognition",
+        "url": "https://edu.umch.de/en/accreditation-and-recognition",
+        "kind": "recognition",
+        "checkedAt": "2026-07-07",
+        "notes": "Parent university G.E. Palade UMFST accredited by Romanian ARACIS (ENQA member); anabin (Germany) status H+; the English-language Human Medicine programme has reached only the first stage ('Provisional Authorization') of accreditation, with the second/full stage following two years after the first cohort's graduation; parent university listed in WDOMS (FAIMER School ID F0000226), enabling USMLE eligibility; 360 ECTS total; degree stated by the university to correspond to Annex V of the EU Professional Recognition Directive for automatic EU recognition."
+      },
+      {
+        "label": "UMCH University - Teaching hospitals & practices",
+        "url": "https://edu.umch.de/en/teaching-hospitals-and-practices",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Clinical training from year 3 onward across 30+ named teaching hospitals in Germany (e.g. Elisabeth-Krankenhaus Essen, Helios Klinikum Hildesheim, Sana Klinikum Hameln-Pyrmont) plus 100+ teaching practices, and international teaching hospitals in Spain (Hospital del Vinalopo, Torrejon University Hospital, Union Murciana de Hospitales y Clinicas). Students get 8 weeks clinical phase in year 3, rising to 12-16 weeks/year in years 4-6."
+      },
+      {
+        "label": "UMCH University - Accommodations",
+        "url": "https://edu.umch.de/en/accommodations",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "UMCH does not run its own dormitory/hostel; it lists partner private student-housing providers near campus (e.g. THE FIZZ Altona from EUR 1,099/month, Felixx from EUR 635/month, Urban Living Ottensen from EUR 729/month, Yugo Wandsbek from EUR 889/month) plus flat-sharing portals (WG-Gesucht, HousingAnywhere)."
+      },
+      {
+        "label": "UMCH University - Student life",
+        "url": "https://edu.umch.de/en/student-life",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms a South Asian Student Society (SASS) student club explicitly serving the South Asian/Indian student community, Erasmus+ exchange option from semester 5, career counselling/psychological support (DCPC) free for all students, and city sports access via a SportsCard (200+ courses)."
+      },
+      {
+        "label": "UMCH University - The Campus",
+        "url": "https://edu.umch.de/en/the-campus",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "States students from 50+ nationalities on campus, small-group teaching, no pre-med/Studienkolleg/German-language requirement to start, and outlines the post-graduation route to German licensure (C1 German + medical language test) - explicitly a Germany-track path, distinct from returning to India."
+      },
+      {
+        "label": "Medhead - Study medicine at UMCH Targu Mures (branch Hamburg)",
+        "url": "https://medhead.eu/medical-university-targu-mures-hamburg/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent European study-abroad aggregator corroborating the branch-campus relationship with UMFST Targu Mures, the flexible Hamburg-only vs Hamburg-then-Romania study pathways, and English-medium teaching. Used only to cross-check facts already stated officially."
+      },
+      {
+        "label": "Wikipedia - George Emil Palade University of Medicine, Pharmacy, Science and Technology of Targu Mures",
+        "url": "https://en.wikipedia.org/wiki/George_Emil_Palade_University_of_Medicine,_Pharmacy,_Science_and_Technology_of_T%C3%A2rgu_Mure%C8%99",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration that the parent university was founded in 1945 as one of Romania's traditional medical schools, later renamed/merged in 2018; used to cross-check the establishedYear figure the official UMCH site also states."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "UMCH - University Medicine Campus Hamburg (UMFST-UMCH)",
+    "city": "Hamburg",
+    "type": "Private",
+    "establishedYear": 1945,
+    "officialWebsite": "https://edu.umch.de/en",
+    "bestFitFor": [
+      "Indian and other international students who want a fully English-medium MBBS/MD taught in Germany without first needing German-language proficiency or a Studienkolleg/foundation year",
+      "Students who prefer a small-group, closely mentored teaching style in a modern, digitally equipped campus over a very large lecture-hall university",
+      "Applicants planning a Germany- or EU-based medical career (with German-language upskilling built into the programme) rather than a straight return-to-India pathway, who understand the accreditation timeline and will independently verify current NMC/NExT recognition before enrolling",
+      "Students who want early, structured clinical exposure across a large, named network of German (and select Spanish) teaching hospitals from the third year onward"
+    ],
+    "recognitionBadges": [
+      "Parent university (G.E. Palade UMFST Targu Mures) accredited by the Romanian Agency for Quality Assurance in Higher Education (ARACIS), an ENQA member",
+      "Highest 'H+' status from anabin (Germany's foreign-qualification evaluation portal)",
+      "English-language Human Medicine programme reached first-stage ('Provisional Authorization') accreditation by IAAR in 2023; full second-stage accreditation follows two years after the first graduating cohort",
+      "Parent university listed in the World Directory of Medical Schools (WDOMS, FAIMER School ID F0000226), a prerequisite for USMLE eligibility",
+      "ISO 9001:2015 certified (TUV Austria)"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "UMCH - Accreditation and recognition (official)",
+        "url": "https://edu.umch.de/en/accreditation-and-recognition"
+      }
+    ],
+    "teachingHospitals": [
+      "30+ named teaching hospitals across Germany, including Elisabeth-Krankenhaus Essen, Helios Klinikum Hildesheim, Sana Klinikum Hameln-Pyrmont, Klinikum Luedenscheid and St. Vincenz Hospital Limburg",
+      "100+ affiliated teaching practices in Germany (general medicine, ophthalmology, dermatology)",
+      "International teaching hospitals in Spain (Hospital del Vinalopo, Torrejon University Hospital, Union Murciana de Hospitales y Clinicas) for students opting into an international clinical rotation"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "MBBS / Human Medicine (Integrated MD)",
+        "officialProgramUrl": "https://apply.umch.de/courses/course/39-mbbs-medicine",
+        "medium": "English (theory years 1-2 fully in English; clinical years 3-6 combine German/English in teaching hospitals, with a free university German course to reach C1 by graduation)",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "EUR",
+        "officialAnnualTuitionAmount": 34800,
+        "feeNotes": "Officially published Non-EU/Indian-applicant tuition is EUR 17,400 per semester (EUR 34,800/year) per the tuition-fees page, plus a one-time EUR 4,500 enrollment fee and a one-time EUR 595 application fee (the admissions portal bundles these into an approximate EUR 39,300 first-year figure). EU/EEA/UK/Swiss applicants pay a lower EUR 14,900/semester. Optional transfer to the parent campus in Targu Mures, Romania from year 3 reduces fees to EUR 3,000/year for years 3-6. No official INR conversion is published; convert at the current exchange rate and confirm directly with admissions before budgeting. Living costs and private student housing (see hostelOverview) are separate and not included in tuition.",
+        "sourceUrls": [
+          "https://edu.umch.de/en/tuition-fees",
+          "https://apply.umch.de/courses/course/39-mbbs-medicine",
+          "https://edu.umch.de/en/the-medicine-degree-program"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "UMCH - University Medicine Campus Hamburg (formally UMFST-UMCH) is a privately operated German branch campus of the Romanian public university G.E. Palade UMFST of Targu Mures, teaching a six-year, English-medium MBBS/Human Medicine (Integrated MD) programme in Hamburg since October 2019. The parent university itself was founded in 1945 and is one of Romania's long-established medical schools. UMCH sits in Hamburg-Bahrenfeld's Science City, next to the University of Hamburg and the DESY research centre, and describes itself as Germany's first complete English-language medical degree programme, drawing students from more than 50 nations. Applicants need no prior German and no Studienkolleg/foundation year; clinical training from year 3 runs across a network of more than 30 named teaching hospitals in Germany plus select hospitals in Spain. This profile is compiled from the official UMCH/UMFST website, the official DreamApply admissions portal and independent European study-abroad sources; Indian applicants should independently verify current NMC recognition, NExT/FMGE requirements and the university's accreditation stage before applying.",
+    "campusLifestyle": "UMCH describes its Hamburg campus as a modern, highly digital facility offering small-group, practice-oriented teaching in Hamburg-Bahrenfeld's Science City district, alongside the University of Hamburg and the DESY physics research centre. According to the university, professors know students by name and mandatory sports classes run through the first two years alongside a free German-language course building toward C1 level by graduation. Student clubs cover music (the UMFST-UMCH Band), women-in-academia (FEM Club), global health, junior research, and a dedicated South Asian Student Society (SASS) for South Asian and Indian students, plus regular German Red Cross blood-donation drives. Students can access the city's SportsCard (200+ courses across 80+ disciplines) and nearby clubs for golf, rugby, hockey and martial arts at partner rates. As with any campus, exact class sizes and club activity levels vary year to year, so applicants should confirm current details with admissions.",
+    "cityProfile": "Hamburg is Germany's second-largest city and a major port and business hub in the country's north, built around the Elbe river and the Alster lakes. The UMCH campus sits in Bahrenfeld, part of the emerging Science City Hamburg-Bahrenfeld district being developed around the DESY research centre and University of Hamburg science faculties - a roughly 125-hectare knowledge and innovation zone that, per public Hamburg city and DESY sources, is planned to eventually include thousands of new homes alongside labs and lecture halls. As a large Western European metropolitan city, Hamburg offers established public transport (the university notes the nearby S-Bahn Holstenstrasse station), a wide range of student housing options in surrounding districts (Altona, Ottensen, Hammerbrook, Wandsbek), and a large international population. Students should budget for a temperate but often wet, cooler-than-India climate, and confirm current visa, health-insurance and residence-registration requirements directly with the university and German authorities.",
+    "clinicalExposure": "Clinical-practical training begins in the third year of the six-year programme and runs through year six, delivered across a network the university states includes more than 30 named teaching hospitals in Germany (for example Elisabeth-Krankenhaus Essen, Helios Klinikum Hildesheim, Sana Klinikum Hameln-Pyrmont) and more than 100 affiliated teaching practices in fields such as general medicine, ophthalmology and dermatology. According to UMCH, students complete roughly 8 weeks of clinical phase in year 3, rising to 12-16 weeks per year in years 4 through 6, and can choose from among their preferred teaching hospitals from the second year. Students who opt for an international rotation can train at partner hospitals in Spain (Hospital del Vinalopo, Torrejon University Hospital, and the Union Murciana de Hospitales y Clinicas network), where local-language ability is required. Because rotation allocation and hospital availability can change year to year, applicants should confirm current placement policy with the university's teaching-hospital coordinator before enrolling.",
+    "hostelOverview": "UMCH does not operate its own student dormitories; instead, the university lists a curated set of private student-housing partners near the Hamburg campus, with officially stated indicative monthly rents from roughly EUR 635 (Felixx) and EUR 729 (Urban Living, Ottensen) up to EUR 1,099-1,349 for fully serviced options (THE FIZZ, HVNS), typically on 3-6 month minimum contracts. The university also points students to flat-share portals (WG-Gesucht) and international student-housing platforms (HousingAnywhere) for additional options, and lists nearby short-stay hotels (including one directly opposite campus) for arrival periods. Because these are independent third-party providers, not university-run halls, prices, availability and contract terms change regularly - students should confirm current rents and lease terms directly with each provider well before arrival, and budget for a security deposit in addition to monthly rent.",
+    "indianFoodSupport": "Hamburg is a large, diverse European city with a substantial international population, and UMCH's own materials point to an active South Asian Student Society (SASS) representing South Asian and Indian students on campus, alongside video testimonials from Indian students describing their experience there. As a major metropolitan area, Hamburg has Indian and South Asian grocery stores and restaurants in various districts, and student housing options generally include kitchen access for self-catering. UMCH's official materials do not describe a dedicated on-campus Indian mess or dining hall, so students who need consistent access to Indian, vegetarian or halal food should confirm current grocery and restaurant options in their specific housing neighbourhood (Altona, Ottensen, Bahrenfeld, Hammerbrook or Wandsbek) directly with current students or the SASS club before arrival.",
+    "safetyOverview": "Hamburg is one of Germany's largest and most established cities, with standard Western European public services, policing and healthcare infrastructure. UMCH highlights its international student population (50+ nationalities) and offers structured support such as psychological counselling and cognitive-behavioural therapy through its Department for Counseling and Career Guidance (DCPC), free and confidential for all students. As with any move abroad, students should register their residence with local authorities as required, keep visa and insurance documents current, use official university channels for housing and administrative questions, and review their home government's latest travel and safety guidance for Germany before departure. Specific neighbourhood safety varies by housing location, so students should also ask current students or SASS members about their chosen district before committing to a lease.",
+    "studentSupport": "UMCH's admissions process runs through its official DreamApply portal (apply.umch.de), with a stated Fall 2026/27 intake, an application deadline of 31 July 2026 for that intake, and studies commencing 21 September 2026; students are advised to contact admissions directly if applying after the deadline. The university offers WhatsApp chat, phone, email, online consultations and on-site campus tours for prospective applicants, and states an average response time of about two hours. Once enrolled, support includes the free German-language course (building toward C1 by graduation), the DCPC counselling and coaching service, an Erasmus+ exchange option from the fifth semester, and dedicated staff contacts for both student clubs and teaching-hospital placement. Prospective Indian students should use these official channels directly for all admissions, fee and recognition questions, and get any promises made by third-party agents confirmed in writing against the university's own website and admissions office.",
+    "whyChoose": [
+      "Fully English-medium, six-year MBBS/Human Medicine (Integrated MD) programme taught in Germany with no German-language requirement and no pre-med/Studienkolleg/foundation year needed to start.",
+      "Backed by a long-established Romanian public university (G.E. Palade UMFST Targu Mures, founded 1945) with ARACIS/ENQA accreditation, anabin 'H+' status in Germany, and listing in the World Directory of Medical Schools enabling USMLE eligibility for graduates who pursue that route.",
+      "Structured, extensive clinical training network of 30+ named teaching hospitals across Germany plus select hospitals in Spain, with defined weekly/annual clinical-phase hours from year 3 onward.",
+      "Small-group, personalised teaching model in a modern digital campus in Hamburg's emerging Science City district, alongside the University of Hamburg and DESY research centre, with a genuinely international student body from 50+ nations and a dedicated South Asian Student Society."
+    ],
+    "thingsToConsider": [
+      "The English-language Human Medicine programme has only reached the first ('Provisional Authorization') stage of accreditation as of the university's own 2023 update; full second-stage accreditation follows two years after the first graduating cohort. Confirm the current accreditation status directly with the university before applying.",
+      "Officially published Non-EU/Indian-applicant tuition is EUR 17,400 per semester (about EUR 34,800/year), plus one-time application (EUR 595) and enrollment (EUR 4,500) fees - materially higher than many other MBBS-abroad destinations - and no official INR conversion is published, so budget using a current exchange rate and get exact figures in writing.",
+      "Clinical years (3-6) are conducted using German alongside English in teaching hospitals, and the university's own materials describe German-language study (toward C1) as necessary for full integration into German clinical practice and any subsequent German licensure route - so English-only students should clarify exactly how much German proficiency is required for their clinical rotations.",
+      "Recognition for Indian practice is the student's responsibility to verify: check the current NMC-approved list, the NEET-qualification requirement for admission, and the NExT (which has replaced FMGE for graduates from 2025 onward) licensing requirement yourself, since recognition status can change and is not asserted here for this specific institution.",
+      "UMCH does not run its own hostel; housing is arranged through private partner providers or flat-share portals at market rents (roughly EUR 635-1,350/month), so factor this cost and lease logistics into your overall budget separately from tuition."
+    ],
+    "faq": [
+      {
+        "question": "Where is UMCH located and what type of institution is it?",
+        "answer": "UMCH (UMFST-UMCH) is a privately operated German branch campus located in Hamburg-Bahrenfeld, within Hamburg's emerging Science City district, next to the University of Hamburg and the DESY research centre. It is the German campus of the Romanian public university G.E. Palade UMFST of Targu Mures (founded 1945), teaching the same medical degree programme in English in Hamburg since October 2019."
+      },
+      {
+        "question": "Is the MBBS/medicine programme taught in English, and how long does it take?",
+        "answer": "The programme is a six-year (12-semester, 360 ECTS) MBBS/Human Medicine (Integrated MD) degree. Years 1-2 (theory) are taught fully in English with no German required to start. From year 3, clinical training in teaching hospitals uses a mix of German and English, and the university provides a free German course intended to bring students to C1 level by graduation."
+      },
+      {
+        "question": "How much does UMCH cost for Indian/Non-EU students, and are there other fees?",
+        "answer": "The officially published Non-EU tuition is EUR 17,400 per semester (about EUR 34,800 per year), plus a one-time application fee of EUR 595 and a one-time enrollment fee of EUR 4,500. Living costs and private student housing (roughly EUR 635-1,350/month depending on the provider) are separate from tuition. No official INR conversion is published, so confirm exact costs and current exchange rates directly with the admissions office before committing."
+      },
+      {
+        "question": "What clinical training does UMCH offer?",
+        "answer": "From the third year, students train across a network the university states includes more than 30 named teaching hospitals in Germany and 100+ teaching practices, plus optional international rotations at partner hospitals in Spain. Clinical-phase time is stated as about 8 weeks in year 3, rising to 12-16 weeks per year in years 4 through 6, with students able to select preferred teaching hospitals from year 2."
+      },
+      {
+        "question": "Will this degree let me practise in India, and what is the current accreditation status?",
+        "answer": "The university states its English-language Human Medicine programme has reached the first ('Provisional Authorization') stage of a two-stage accreditation process, with full accreditation following two years after the first cohort graduates. To practise in India after any foreign medical degree, you must have qualified NEET before admission and pass the NExT licensing exam (which replaced FMGE for graduates from 2025 onward) to register with the NMC. Recognition status can change and is not asserted here for this specific institution, so verify the current NMC list and requirements yourself before applying."
+      },
+      {
+        "question": "Is hostel accommodation provided, and is there an Indian student community?",
+        "answer": "UMCH does not run its own dormitories; it lists private partner student-housing providers near campus (with officially stated rents from about EUR 635 to EUR 1,350 per month) and points students to flat-share portals for other options. The university's official materials describe an active South Asian Student Society (SASS) representing South Asian and Indian students on campus, along with published video testimonials from Indian students, though a dedicated Indian mess/dining hall is not described - confirm current food and community options directly with SASS or admissions."
+      }
+    ]
+  }
+}

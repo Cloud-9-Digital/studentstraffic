@@ -1,0 +1,169 @@
+{
+  "countrySlug": "germany",
+  "schoolName": "Hochschule Bremen – City University of Applied Sciences (International Degree Programme in Nursing B.Sc.)",
+  "cityName": "Bremen",
+  "priority": "medium",
+  "officialWebsite": "https://www.hs-bremen.de/en/",
+  "programUrl": "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/",
+  "feesUrl": "https://www.hs-bremen.de/en/study/before/application-and-admission/international-applications/",
+  "hostelUrl": "https://www.hs-bremen.de/en/study/before/application-and-admission/international-applications/",
+  "admissionUrl": "https://www.hs-bremen.de/en/study/before/application-and-admission/international-applications/",
+  "qualityScore": 72,
+  "reviewNotes": "Corroborated across the official Hochschule Bremen (HSB) programme page (hs-bremen.de/en), HSB's international-applicants page, the German Rectors' Conference/DAAD official programme database listing, and independent sources (English Wikipedia's City University of Applied Sciences article, German press on the Bremen semester contribution, and community reporting on the Indian Students Association Bremen). The single most important honesty flag on this listing: despite being branded an 'International Degree Programme', HSB's own programme page and the official DAAD listing both state the actual language of instruction is German (DAAD: 'Main language German, Further languages English'; HSB: 'the main language of instruction during your studies & practical modules is German'). Admission requires German at native-speaker or C1 (telc/Goethe) level; only English at B1.2 is required at entry, and it may be acquired during the programme. This is therefore NOT an English-medium pathway and is framed accordingly throughout - it fits students who already have or are working toward strong German, not students seeking an English-only route. HSB is a public university (est. 1982) with no tuition fee, only a semester contribution (approx. EUR 443/semester per 2026 reporting), which is a genuine positive distinct from private/branch-campus institutions. Since 1 January 2024, primary-qualifying nursing students receive a training salary under Germany's Nursing Studies Strengthening Act (PflStudStG), contingent on securing a training contract with a cooperating clinical partner - this is stated as a requirement to complete registration, not a guaranteed scholarship, and is presented with that caveat. Recognition for future practice in India is NOT asserted: the Indian Nursing Council (INC) evaluates foreign nursing qualifications on a case-by-case equivalency basis (transcript proforma, fee, examination of syllabus) rather than issuing blanket recognition to any single foreign programme, so students are told explicitly to run the INC equivalency process themselves and verify current requirements before enrolling, rather than being given an unqualified 'INC-recognised' claim. No tuition/program cost figures are included in structuredFacts.programs because this is a public no-tuition-fee programme; only the confirmed semester contribution figure is mentioned narratively with a source, and living-cost/hostel figures are omitted where no official on-campus HSB hostel fee schedule was found (HSB refers applicants to the separate Studierendenwerk Bremen and private housing market). No single-source facts were used for anything material.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "HSB Hochschule Bremen – International Degree Programme in Nursing B.Sc. (official programme page)",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms: Bachelor of Science, 8-semester standard duration, 240 ECTS, accredited, admission-restricted; explicit note that 'the main language of instruction during your studies & practical modules is German'; entry requirements include higher-education entrance qualification, English at B1.2 (can be completed during the programme, proof required by end of 4th semester) and German at native-speaker or C1 level; dual outcome of Bachelor of Science plus state nursing-specialist licensing exam; 13 practical modules across clinics, outpatient care services, counselling centres and palliative care; Skills Lab/Simulation Centre on the Bremen health campus described as unique in Germany in its form; since 1 Jan 2024 primary-qualifying nursing students receive remuneration under the Nursing Studies Strengthening Act (PflStudStG), contingent on a separate training contract with a cooperating clinical institution submitted at least 4 weeks before the first exam phase; named programme contacts (Head of Programme Prof. Dr. Claudia Stolle-Wahl; study office and admissions contacts)."
+      },
+      {
+        "label": "HSB Hochschule Bremen – Information for international prospective students (official)",
+        "url": "https://www.hs-bremen.de/en/study/before/application-and-admission/international-applications/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms application windows (winter semester 1 June-15 July; summer semester 15 December-15 January), the VPD/uni-assist preliminary document assessment process for foreign qualifications, that English-taught programmes do not require German (implying, by contrast, that German-taught programmes like this one do require German proficiency), accepted German certificates (TestDaF 16+, Goethe C1/C2, telc C1 Hochschule, DSD II), visa financial-resources requirement (EUR 11,904 in a blocked account for 2026), mandatory German statutory health insurance for non-EU students, housing routed through Studierendenwerk Bremen/private market (no university-run hostel fee schedule published), and the VisaFlow visa-support partnership offered free to HSB applicants."
+      },
+      {
+        "label": "DAAD (German Academic Exchange Service) official programme database – International course in Nursing, Bremen",
+        "url": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/detail/university-of-applied-sciences-bremen-international-course-in-nursing-g2752108/?hec-id=g2752108",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent official database (data supplied to DAAD by the German Rectors' Conference, HRK) corroborating: Bachelor of Science, 8 semesters, Bremen location, admission requirement of English B1.2, and explicitly listing 'Languages of instruction: Main language German, Further languages English' - the key corroboration that this programme is German-medium despite its 'International' branding. Also confirms dual Bachelor of Science plus state nursing recognition outcome and the 13 practice modules across clinics, outpatient care, counselling centres and palliative care."
+      },
+      {
+        "label": "HSB Hochschule Bremen – School of Social Sciences (Faculty 3) official faculty page",
+        "url": "https://www.hs-bremen.de/en/hsb/faculties/school-of-social-sciences/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms the Nursing B.Sc. programme sits within the School of Social Sciences (Faculty 3), alongside Social Work, Midwifery, Applied Leisure Science and Political Management; describes the faculty's practice-partner network and seven affiliated scientific institutes; names dual/similar-to-dual variants including an International Degree Programme in Midwifery B.Sc."
+      },
+      {
+        "label": "Wikipedia – City University of Applied Sciences (Hochschule Bremen)",
+        "url": "https://en.wikipedia.org/wiki/City_University_of_Applied_Sciences",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration: public University of Applied Sciences, founded 1982 from the merger of four earlier Bremen institutions, approximately 9,000 students from over 100 countries (as of Dec 2024) across about 70 degree programmes in five faculties, main campus on Neustadtswall in Bremen's Neustadt district, system-accredited by AQAS since 2019, member of the UAS7 network of research-oriented applied-science universities."
+      },
+      {
+        "label": "buten un binnen (Radio Bremen) – report on the 2026 Bremen student semester contribution increase",
+        "url": "https://www.butenunbinnen.de/nachrichten/erhoehung-semesterbeitrag-bremen-100.html",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent German public-broadcaster news report stating the semester contribution for Bremen state university students (including HSB) is approximately EUR 443.25 for the 2026 winter semester, driven partly by the Deutschlandticket public-transport component; used only to corroborate that this is a modest administrative semester fee, not a tuition fee, at a public German university."
+      },
+      {
+        "label": "Indian Students Germany – Indian Students Association Bremen community page",
+        "url": "https://www.indianstudentsgermany.org/room/details/25",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent community-run resource confirming an active Indian Students Association serving Bremen (spanning Bremen's universities, described as having grown to over 2,000 members), organising cultural events, communal dinners and regular meetups for Indian students in the city; used only to corroborate the existence of an Indian student community/support network in Bremen, not any university-run service."
+      },
+      {
+        "label": "Wikipedia – Bremen (city)",
+        "url": "https://en.wikipedia.org/wiki/Bremen",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration of Bremen city facts: a Hanseatic port city of roughly 586,000 inhabitants, Germany's 11th-largest city and second-largest in northern Germany after Hamburg, historic Hanseatic League trading centre with a UNESCO World Heritage-listed Town Hall and Roland statue, home to the University of Bremen (an 'Elite university') alongside HSB; used only for general city-context framing, not university-specific claims."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Hochschule Bremen – City University of Applied Sciences",
+    "city": "Bremen",
+    "type": "Public",
+    "establishedYear": 1982,
+    "officialWebsite": "https://www.hs-bremen.de/en/",
+    "bestFitFor": [
+      "Students who already have, or are committed to reaching, German language proficiency at C1 level (or are native German speakers) before or during their studies - this is a German-medium degree, not an English-only pathway, despite the 'International Degree Programme' name",
+      "Students who want a publicly funded German university path with no tuition fee (only a modest administrative semester contribution), rather than a private or branch-campus model with per-semester tuition",
+      "Students planning a nursing career specifically within the German healthcare system, who want the dual outcome of an academic Bachelor of Science plus German state nursing licensure, and who are prepared to independently verify how this maps onto home-country (e.g. Indian) nursing registration before enrolling",
+      "Students who value hands-on clinical training from the first semester, via 13 structured practical modules in real healthcare facilities plus a dedicated Skills Lab/Simulation Centre, over a purely classroom-based first year"
+    ],
+    "recognitionBadges": [
+      "Public University of Applied Sciences, system-accredited by the German Agency for Quality Assurance through Accreditation of Study Programmes (AQAS) since 2019",
+      "Member of the UAS7 network of seven research-oriented German universities of applied sciences",
+      "Degree programme itself stated by HSB as accredited",
+      "Dual outcome: academic Bachelor of Science plus the German state licensing examination as a nursing specialist, both awarded directly by HSB as the programme is 'primary qualifying'"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "HSB – International Degree Programme in Nursing B.Sc. (official programme page, accreditation status)",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/"
+      }
+    ],
+    "teachingHospitals": [
+      "Clinical/practical training is delivered through 13 practical modules across a range of partner healthcare facilities in and around Bremen, including clinics, outpatient care services, counselling centres and palliative-care settings, coordinated directly by HSB",
+      "A dedicated Skills Lab / Simulation Centre on HSB's health campus in Bremen, described by the university as equipped with state-of-the-art technology and unique in Germany in its form, used for simulated clinical practice alongside real-facility placements",
+      "From 1 January 2024, students receive training remuneration under Germany's Nursing Studies Strengthening Act (PflStudStG), contingent on securing a separate 'training contract' with one of the programme's cooperating clinical institutions before the first examination phase"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "International Degree Programme in Nursing B.Sc.",
+        "officialProgramUrl": "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/",
+        "medium": "German (primary language of instruction for lectures and practical/clinical modules, per HSB and the official DAAD listing); English is required only at B1.2 level at entry and may be completed during the programme. Applicants need German at native-speaker level or C1 (TestDaF 16+, Goethe/telc C1, or DSD II) to be admitted - this is not an English-medium programme.",
+        "durationYears": 4,
+        "intakeMonths": ["October", "April"],
+        "feeNotes": "HSB is a public German university and does not charge a tuition fee for this programme; students instead pay a modest administrative semester contribution, independently reported at approximately EUR 443 for the 2026 winter semester (covers student-body administration and a regional public-transport ticket component). No official INR conversion or itemised annual cost-of-study figure is published by HSB itself, so no tuition amount is stated here - budget for living costs, health insurance and the visa financial-resources requirement (officially EUR 11,904 in a blocked account for 2026) separately, and confirm current semester-contribution figures directly with HSB before applying. Since 1 January 2024, students on a training contract with a cooperating clinical partner receive a training salary under the Nursing Studies Strengthening Act (PflStudStG); this depends on securing that separate training contract and is not guaranteed simply by enrolling.",
+        "sourceUrls": [
+          "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/",
+          "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/detail/university-of-applied-sciences-bremen-international-course-in-nursing-g2752108/?hec-id=g2752108",
+          "https://www.butenunbinnen.de/nachrichten/erhoehung-semesterbeitrag-bremen-100.html"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Hochschule Bremen (HSB) – City University of Applied Sciences is a public German university founded in 1982, enrolling around 9,000 students from over 100 countries across roughly 70 degree programmes in five faculties. Within its School of Social Sciences, HSB offers an International Degree Programme in Nursing B.Sc.: an eight-semester (240 ECTS), primary-qualifying Bachelor of Science that combines academic nursing science with 13 practical modules in real healthcare facilities and a dedicated Skills Lab/Simulation Centre, leading to both a Bachelor's degree and the German state licensing examination as a nursing specialist. The single most important fact for Indian applicants to understand upfront: despite the 'International' name, HSB's own programme page and the official DAAD programme database both confirm the actual language of instruction is German, with English required only at a modest B1.2 level at entry. This profile is compiled from HSB's official programme and international-applicant pages, the official DAAD/HRK programme database, and independent sources on the university and city; prospective students should independently verify current German-language requirements, the training-contract process, and how this qualification maps onto Indian Nursing Council (INC) equivalency before applying.",
+    "campusLifestyle": "HSB's main campus sits on Neustadtswall in Bremen's Neustadt district, with the Nursing B.Sc. programme based on the university's dedicated health campus, home to a Skills Lab/Simulation Centre that HSB describes as unique in Germany for its form and technology. As a public university of around 9,000 students from over 100 countries, HSB runs an active international office, a 'Rent a Student' initiative connecting prospective applicants with current students for first-hand impressions of daily life, and webinars (such as HSB's pre-arrival 'Get Ready for Bremen' session) to help incoming international students prepare. Because this programme is German-medium, day-to-day campus and classroom life - including interactions with clinical placement supervisors - happens primarily in German, so building genuine German fluency before arrival materially shapes how quickly a student can settle into campus and course life. Specific club, society and social offerings can vary by faculty and year, so applicants should confirm current student-life details directly with HSB's School of Social Sciences before enrolling.",
+    "cityProfile": "Bremen is a historic Hanseatic port city of roughly 586,000 people in northern Germany, Germany's 11th-largest city and the smaller of the two cities forming the Free Hanseatic City of Bremen (Germany's smallest federal state). It grew into a major Hanseatic League trading centre from the 13th century, and its Town Hall and Roland statue on the market square are UNESCO World Heritage-listed; the city is also familiar internationally through the Brothers Grimm tale 'The Town Musicians of Bremen'. Bremen and neighbouring Bremerhaven form Germany's second-largest port complex after Hamburg, and the city hosts the University of Bremen (one of Germany's 'Elite universities') alongside HSB, the University of the Arts Bremen, and Jacobs University. An independently reported Indian Students Association based in Bremen has grown to more than 2,000 members drawing from the city's universities, organising cultural events and regular meetups - a useful community touchpoint, though students should verify current activity levels and reach out directly before arrival. As with any northern German city, expect a cool, often rainy climate and standard Western European costs of living; confirm current housing, insurance and visa requirements directly with HSB and German authorities.",
+    "clinicalExposure": "The programme is 'primary qualifying', meaning HSB itself is solely responsible for the entire course of study, including all practical/clinical training - unlike models where a separate clinical training provider is involved. Students complete a total of 13 practical modules spread across each of the eight semesters, undertaken at cooperating healthcare facilities such as clinics, outpatient care services, counselling centres and palliative-care providers, with HSB coordinating placements. Alongside real-facility placements, the university's Skills Lab/Simulation Centre on its Bremen health campus provides simulated clinical practice with what HSB describes as state-of-the-art equipment, a facility the university states is unique in Germany in this form. Since 1 January 2024, students also need a separate 'training contract' with one of the programme's cooperating clinical institutions (submitted at least four weeks before the first examination phase) in order to receive the training remuneration mandated under Germany's Nursing Studies Strengthening Act; prospective students should contact HSB's programme team or the listed cooperation institutions directly, early in the application process, to secure this contract alongside their university application.",
+    "hostelOverview": "HSB does not publish its own on-campus hostel/dormitory fee schedule for this programme; instead, the university's international-applicants guidance directs students to Bremen's Studierendenwerk (the regional student-services body) for official student-dormitory housing, alongside private-market options such as shared flats (WGs), rooms via platforms like WG-Gesucht, and private housing portals (ImmobilienScout24, HousingAnywhere and similar). HSB explicitly describes shared flats as generally the most affordable and easiest option, with rent and utilities split among flatmates, while student dormitory places are managed separately through Studierendenwerk Bremen's own application process. Because none of these are university-run halls with a fixed published price list, students should apply to Studierendenwesen Bremen and begin private-market housing searches as early as possible - ideally as soon as an admission letter is received - and budget for a security deposit and the first month's rent in addition to routine costs, confirming current rents and availability directly with each provider.",
+    "indianFoodSupport": "Bremen is home to an independently reported Indian Students Association that has grown to more than 2,000 members across the city's universities, organising cultural events, communal dinners and regular meetups intended in part to help students stay connected to home food, festivities and community while abroad. As a city with an established international student population (HSB alone draws students from over 100 countries), Bremen has South Asian and international grocery stores and restaurants, though HSB's own materials do not describe a dedicated on-campus Indian mess or dining hall for this programme. Since student accommodation is typically self-catered (shared flats or dormitory rooms with kitchen access), students who want consistent Indian, vegetarian or halal food should plan to cook for themselves or connect with the Indian Students Association and current Indian students at HSB to identify current grocery sources and restaurants in their specific neighbourhood before arrival.",
+    "safetyOverview": "Bremen is an established northern German city with standard Western European public services, policing, healthcare and public-transport infrastructure. HSB's international-applicant guidance requires all non-EU students to hold valid German health insurance throughout their studies (arranged via a German statutory provider through the official Student Reporting Procedure, SMV) and to complete standard visa and residence-registration steps promptly on arrival; the university also offers free access to VisaFlow, a third-party platform supporting visa applications and general settling-in guidance. As with any move abroad, students should keep visa, insurance and residence-registration documents current, use HSB's official international office for housing and administrative questions rather than informal agents, and check their home government's latest travel guidance for Germany before departure. Specific neighbourhood safety and cost of living vary across Bremen's districts, so students should also consult the Indian Students Association or current HSB students about their chosen housing area before committing to a lease.",
+    "studentSupport": "Admissions run through HSB's official CampInO portal, with winter-semester applications open 1 June-15 July and summer-semester applications open 15 December-15 January; applicants with a foreign school or bachelor's qualification must first obtain a preliminary document assessment (VPD) via uni-assist, a process HSB states typically takes 4-6 weeks, so early application is strongly advised. HSB's international office (reachable at study@hs-bremen.de) supports applicants from initial enquiry through visa application and arrival, including a pre-departure 'Get Ready for Bremen' webinar and free access to the VisaFlow visa-support platform. For students who do not yet meet the German-language requirement, HSB and Bremen's other state universities jointly run 'Here Ahead' preparatory programmes (the :prime Studienkolleg track and a separate Preparatory Studies track for building German to the required TestDaF/Goethe C1 level) - though HSB is explicit that reaching C1 within the typical two-year preparatory window is difficult without prior German knowledge, so students should start German study well before applying. Within the Nursing B.Sc. programme itself, named contacts are published for the programme head, study office, admissions, and prospective-student enquiries; applicants should also start the search for a cooperating clinical 'training contract' partner in parallel with their university application, since it is required for enrolment and for training remuneration.",
+    "whyChoose": [
+      "A public German university (est. 1982, ~9,000 students from 100+ countries) with no tuition fee for this programme - only a modest semester administrative contribution (independently reported at roughly EUR 443 for the 2026 winter semester) - a genuinely different cost model from private or branch-campus institutions.",
+      "A primary-qualifying structure that gives a dual outcome directly from HSB: an academic Bachelor of Science plus the German state licensing examination as a nursing specialist, built around 13 practical modules across real healthcare facilities in every semester from the start.",
+      "A purpose-built Skills Lab/Simulation Centre on HSB's Bremen health campus that the university states is unique in Germany in its form, combining simulated practice with hands-on clinical placements coordinated directly by the university.",
+      "Since 1 January 2024, eligible students receive training remuneration under Germany's Nursing Studies Strengthening Act (PflStudStG) once they have a training contract with a cooperating clinical partner - a paid-training-while-studying model uncommon among nursing programmes aimed at international students."
+    ],
+    "thingsToConsider": [
+      "This is a German-medium programme, not an English-medium one: HSB's own programme page and the official DAAD listing both confirm German is the main language of instruction for lectures and clinical/practical modules. Admission requires German at native-speaker level or C1 (TestDaF 16+, Goethe/telc C1, or DSD II); only B1.2 English is required, and it can be completed during the programme - so applicants without strong German should not expect to study this programme in English.",
+      "Reaching the required German level typically means completing a preparatory programme (HSB's own guidance says reaching C1 within about two years is difficult without prior German knowledge), which adds real time and cost before the nursing degree itself even begins - budget for this separately in your overall timeline.",
+      "Enrolment and training remuneration depend on securing a separate 'training contract' with one of the programme's cooperating clinical institutions, submitted at least four weeks before the first exam phase - this is not automatic and should be arranged in parallel with, not after, the university application.",
+      "Recognition of this German nursing qualification for future practice in India is not guaranteed or asserted here: the Indian Nursing Council evaluates foreign nursing qualifications through its own case-by-case equivalency process (transcript proforma, fee, syllabus review), so students planning to practise in India after this degree should contact the INC directly and understand the current equivalency requirements before enrolling.",
+      "HSB does not run its own student hostel for this programme; accommodation is arranged through Bremen's separate Studierendenwerk dormitory system or the private rental/shared-flat market, so factor housing search timelines, deposits and market rents into your planning well ahead of arrival."
+    ],
+    "faq": [
+      {
+        "question": "Is Hochschule Bremen's Nursing B.Sc. programme taught in English?",
+        "answer": "No. Despite being called an 'International Degree Programme', both HSB's own programme page and the official DAAD programme database confirm German is the main language of instruction for lectures and clinical/practical modules. Applicants need German at native-speaker level or C1 (via TestDaF, Goethe/telc C1, or DSD II) to be admitted; only English at B1.2 is required at entry, and it can be completed during the programme."
+      },
+      {
+        "question": "What type of institution is HSB, and how long is the programme?",
+        "answer": "Hochschule Bremen – City University of Applied Sciences is a public German university founded in 1982, with around 9,000 students from more than 100 countries. The International Degree Programme in Nursing B.Sc. is an eight-semester (240 ECTS), primary-qualifying Bachelor's degree that leads to both a Bachelor of Science and the German state licensing examination as a nursing specialist."
+      },
+      {
+        "question": "How much does this programme cost, and is there financial support?",
+        "answer": "As a public German university, HSB does not charge tuition fees for this programme; students pay only a modest administrative semester contribution (independently reported at roughly EUR 443 for the 2026 winter semester). Since 1 January 2024, students with a training contract at a cooperating clinical institution also receive training remuneration under Germany's Nursing Studies Strengthening Act (PflStudStG). Living costs, health insurance and the visa financial-resources requirement (officially EUR 11,904 in a blocked account for 2026) are separate and should be budgeted independently; confirm current figures directly with HSB."
+      },
+      {
+        "question": "What clinical training does the programme include?",
+        "answer": "The programme is 'primary qualifying', meaning HSB coordinates the entire course including clinical training. Students complete 13 practical modules across cooperating healthcare facilities (clinics, outpatient care services, counselling centres, palliative care) integrated into every semester, alongside training in a dedicated Skills Lab/Simulation Centre on HSB's Bremen health campus that the university describes as unique in Germany in its form."
+      },
+      {
+        "question": "Will this qualification let me practise nursing in India afterwards?",
+        "answer": "This is not guaranteed and is not asserted here. The Indian Nursing Council (INC) assesses foreign nursing qualifications, including German ones, through its own case-by-case equivalency process involving a transcript proforma, fee and syllabus review, rather than issuing blanket recognition to any single foreign programme. Students who plan to practise in India after this degree should contact the INC directly and confirm the current equivalency process and requirements before enrolling."
+      },
+      {
+        "question": "Is accommodation provided, and is there an Indian student community in Bremen?",
+        "answer": "HSB does not run its own student hostel for this programme; students apply for dormitory places through Bremen's separate Studierendenwerk system or find rooms in the private/shared-flat market, with HSB's international-applicant page listing relevant housing portals. Bremen does have an independently reported Indian Students Association that has grown to more than 2,000 members across the city's universities, organising cultural events and meetups - a useful community touchpoint, though students should confirm current activity and food/grocery options directly with the association or current students."
+      }
+    ]
+  }
+}

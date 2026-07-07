@@ -1,0 +1,152 @@
+{
+  "countrySlug": "uzbekistan",
+  "schoolName": "AKFA University Medical School",
+  "cityName": "Tashkent",
+  "priority": "medium",
+  "officialWebsite": "https://centralasian.uz/",
+  "programUrl": "https://centralasian.uz/medical",
+  "feesUrl": "https://centralasian.uz/medical",
+  "hostelUrl": "https://centralasian.uz/facility",
+  "admissionUrl": "https://centralasian.uz/admissionregulations",
+  "wdomsUrl": "https://search.wdoms.org/home/SchoolDetail/F0006802",
+  "qualityScore": 74,
+  "reviewNotes": "IMPORTANT NAME/DOMAIN CHANGE FOUND DURING RESEARCH: 'AKFA University' (the name requested for this research task) officially renamed itself 'Central Asian University' (CAU) on 26 June 2023, per the university's own official notice and independent Wikipedia corroboration. The original akfauniversity.uz domain now shows a registrar 'redemption period' (expired domain) page and is NOT a live university website; the live official site is centralasian.uz. The World Directory of Medical Schools (WDOMS/FAIMER ID F0006802) lists the medical school as 'Central Asian University Medical School, Uzbekistan' with an explicit alternate-name note: 'Akfa University Medical School (2019 - 2023)', directly confirming this is the same institution under a new name, not a different school. This draft is filed under the requested slug/name 'AKFA University Medical School' per the task's naming instruction, but draftContent transparently explains the rename so students are not confused when they see 'Central Asian University' on official materials, diplomas, or WDOMS. All programs, fees, and facilities below reflect the CURRENT (2026) official CAU site, since the AKFA-branded pages/domain no longer exist to verify against. NMC RECOGNITION: No official NMC (India) source or the university's own site was found stating explicit NMC approval for this specific school; third-party Indian MBBS-consultancy sites make general 'NMC/WHO accredited' claims but none could be corroborated against nmc.org.in or an independent regulator list at the time of research (India's third-party NMC-approved-Uzbekistan-college lists found during research name Tashkent Medical Academy, Samarkand State Medical University, Bukhara State Medical Institute, Fergana Medical Institute, and Andijan State Medical Institute -- not AKFA/CAU). Therefore NO NMC/FMGE recognition claim is asserted; students are explicitly told to verify recognition status themselves with NMC before applying. ADMISSION PATHWAY NUANCE: the official CAU admission-regulations page describes CAU's OWN entrance exam (Maths/Chemistry/Biology/English) and an admissions interview as the standard pathway, with IELTS/TOEFL/SAT usable to exempt the English component for Medicine/Dentistry applicants; this differs from generic third-party claims that only 'NEET + TOEFL' are required, so the draft describes the university's own documented process and tells students to confirm NEET-specific requirements directly with admissions. TUITION: official MD program page states International Students (outside Central Asia) pay $11,000/year; this figure is used directly from the official site and is NOT a fabricated placeholder. HOSTEL: official Facility/Dormitory pages confirm ON-CAMPUS dormitory exists (single and triple rooms, priced separately for local vs. international students), contradicting older third-party pages that claimed 'no hostel, only nearby rentals' -- the current official information is used.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Central Asian University (formerly AKFA University) official site - homepage (student numbers, QS 4-star rating, academic programs list)",
+        "url": "https://centralasian.uz/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Central Asian University official site - M.D. Doctor of Medicine program page (curriculum, duration, tuition, clinical partnerships)",
+        "url": "https://centralasian.uz/medical",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Central Asian University official site - Medical Faculty / School of Medicine page (Dean, founding presidential decree #3450 of 29 Dec 2017, mission)",
+        "url": "https://centralasian.uz/medica-faculty",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Central Asian University official site - Facility page (on-campus dormitory details, room types and pricing, sports center, accessibility features)",
+        "url": "https://centralasian.uz/facility",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Central Asian University official site - International Students guide page (visa process, PINFL, first-week checklist, student support programs)",
+        "url": "https://centralasian.uz/internationalstudents",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Central Asian University official site - Admission Regulations page (entrance exam structure, exemptions, interview process)",
+        "url": "https://centralasian.uz/admissionregulations",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Central Asian University official site - official notice 'AKFA University is becoming Central Asian University (CAU)' (name-change announcement, effective 26 June 2023)",
+        "url": "https://centralasian.uz/tpost/r6zxlm9km1-akfa-university-is-becoming-central-asia",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Central Asian University official site - 'AKFA Medline Becomes Part of Central Asian University as a University Clinic' (clinical hospital partnership announcement)",
+        "url": "https://centralasian.uz/tpost/09x5uc3kg1-akfa-medline-becomes-part-of-central-asi",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "World Directory of Medical Schools (WDOMS/FAIMER) - School Detail F0006802: 'Central Asian University Medical School, Uzbekistan', alternate name 'Akfa University Medical School (2019-2023)', operational since 2019, MD/6-year/English, ECFMG-eligible 2025-current",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0006802",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Central Asian University (independent corroboration of founding 2019, Feb 2019 Cabinet of Ministers Resolution No. 130, June 2023 rename, enrollment, rankings, Cleveland Clinic partnership)",
+        "url": "https://en.wikipedia.org/wiki/Central_Asian_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "AKFA University Medical School",
+    "slug": "akfa-university-medical-school",
+    "city": "Tashkent",
+    "type": "Private",
+    "establishedYear": 2019,
+    "officialWebsite": "https://centralasian.uz/",
+    "bestFitFor": [
+      "Students who want a private, internationally structured English-medium MD program in Uzbekistan's capital, backed by an in-house teaching-hospital partnership rather than relying only on public regional hospitals",
+      "Students who are comfortable independently confirming home-country regulatory recognition (e.g. NMC for Indian applicants) before enrolling, since no official NMC listing for this specific school was found at the time of research",
+      "Students who prefer on-campus dormitory accommodation with modern facilities (accessibility features, sports center, cafeteria) over off-campus private rentals",
+      "Students drawn to a modern, growing university with international rankings recognition (QS Stars, THE Impact, RUR) and active Erasmus+/international partnerships rather than an older, larger legacy medical institute"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "M.D. Doctor of Medicine - School of Medicine",
+        "officialProgramUrl": "https://centralasian.uz/medical",
+        "medium": "English (confirmed on the official program page; the university's own admission-regulations page allows IELTS 6.0+/TOEFL iBT 60+/SAT English 585+ to exempt Medicine and Dentistry applicants from the English entrance exam)",
+        "durationYears": 6,
+        "feeNotes": "Official CAU tuition figures published on the MD program page: 135,000,000 UZS/year for local (Uzbekistan citizen) students, $10,000/year for international students from Central Asia, and $11,000/year for international students from outside Central Asia (the tier applicable to Indian applicants). These are official-site figures, not estimates, but students should reconfirm the current-year figure directly with admissions before budgeting, since fees are reviewed periodically.",
+        "intakeMonths": ["September"]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "AKFA University Medical School was launched in Tashkent, Uzbekistan in 2019 under presidential decree #3450 (29 December 2017) and a Cabinet of Ministers resolution (15 February 2019), founded by AKFA Group and AKFA Medline in academic partnership with South Korea's Gachon University Medical School. On 26 June 2023 the parent institution officially renamed itself Central Asian University (CAU) as it expanded its programs and regional ambitions beyond medicine into engineering, dentistry, business, architecture, and hospitality management; the medical school itself continued operating without interruption and is listed in the World Directory of Medical Schools as 'Central Asian University Medical School, Uzbekistan' with an explicit note that it was formerly named 'Akfa University Medical School (2019-2023).' Today the university enrolls more than 2,200 students across six schools, holds a QS Stars 4-star rating (the only private Uzbek university to do so as of 2025), and its Doctor of Medicine (M.D.) program is a six-year, English-medium course combining pre-clinical foundation sciences, systems-based clinical training, six supervised clinical internships, simulation-based learning, and a state licensing examination at the end. Because this school changed its public name partway through its history, prospective applicants -- particularly those researching it under its original 'AKFA' name -- should expect official communications, WDOMS records, and eventually diplomas to reference 'Central Asian University,' and should independently verify current NMC (India) or other home-country regulatory recognition before applying, since no such recognition was confirmed on official or regulator sources at the time of this research.",
+    "campusLifestyle": "CAU operates a centralized, purpose-built campus in Tashkent at 264 Milliy Bog Street, bringing academic buildings, laboratories, a library, student residences, a sports center, a cafeteria, a bookstore, coworking/meeting spaces, and a dedicated student 'chill zone' and social room together in one location. The university has invested specifically in accessibility -- tactile ground tiles, braille-marked lift buttons, and adapted bathrooms are called out on the official facilities page -- and runs a calendar of student-life programming, including a weekly 'Day of Spirituality and Enlightenment' cultural session and an annual 'Nations Day' festival where international students showcase their home cultures, food, and dress. Medical students share this general campus infrastructure with students from CAU's other five schools (Engineering, Dentistry, Business, Architecture & Design, and Hospitality Management & Tourism) rather than having an entirely separate medical-only campus, though the Medical School itself has named faculty (led by Dean Dr. Murodbek Ahrorov) and departments such as Anatomy & Neuroscience, Endocrinology, and a dedicated Simulation Center housed in the university's Avicenna Hall building.",
+    "cityProfile": "Tashkent is the capital and largest city of Uzbekistan, and functions as the country's principal hub for international education, business, and transport connections, including direct flights to major Indian cities. The city has a continental climate with cold, occasionally snowy winters (January averages around 3°C) and hot, dry summers (July averages around 28°C, with little rain from June to September). Modern Tashkent is known for wide boulevards, parks, fountains, and a metro system, alongside a growing restaurant and cafe scene, museums, and a busy cultural calendar including the Tashkent International Film Festival and Navruz celebrations. English is not as widely spoken among the general population as Russian or Uzbek, so students should expect to rely on university staff, translation apps, or basic local-language phrases for everyday errands outside campus, even though their coursework itself is taught in English.",
+    "clinicalExposure": "CAU's Doctor of Medicine curriculum introduces clinical exposure early through 'propaedeutics' and internships beginning alongside the foundational science years, then moves into full systems-based clinical rotations from year four onward -- covering internal medicine, surgery, obstetrics and gynaecology, paediatrics, cardiology, neurology, oncology, and family medicine -- supported by six structured supervised clinical internships and a dedicated Simulation Center for hands-on skills practice before students reach the ward. The university's core clinical partner is AKFA Medline, a JCI-accredited teaching hospital that was formally integrated into CAU's clinical framework as a 'University Clinic' per an official 2025 announcement, giving Medical School students structured access to a modern private hospital environment for training. CAU has also announced a cooperation agreement with the U.S.-based Cleveland Clinic (Cleveland Clinic Connected), which the university's own materials describe as part of a broader plan to develop hospital and clinical-training capacity in Uzbekistan; students should treat this Cleveland Clinic relationship as an institutional partnership under active development rather than assume it already provides rotations at Cleveland Clinic's US facilities, and should ask admissions for the current, concrete scope of this partnership before enrolling.",
+    "hostelOverview": "CAU provides on-campus dormitory accommodation for both local and international students, located within the campus grounds so students can reach academic facilities within a few minutes' walk. Rooms are offered as either a single room or a triple (three-bed) room, each including a bed, refrigerator, private bathroom and toilet, and Wi-Fi, with a shared kitchen on every floor for heating food or making tea/coffee, plus a free laundry service (students pay only for detergent). Official published per-academic-year pricing is 30,000,000 UZS (single) / 15,000,000 UZS (triple) for local students, and $3,000 USD (single) / $1,500 USD (triple) for international students; the dormitory is designed for roughly 600 residents in total and includes 24/7 security and dedicated residential staff. Students should confirm current-year room availability and exact pricing directly with the university before arrival, since capacity is shared across all six of CAU's schools, not reserved solely for medical students.",
+    "indianFoodSupport": "No official CAU page describes a dedicated Indian mess, Indian-only dining hall, or a named Indian-student association specifically at this university; the university's own international-student programming instead centers on a broad multicultural calendar (Nations Day, weekly cultural sessions, student clubs) where students from different countries, including India, showcase and share their own food and traditions rather than the university running a separate Indian kitchen. That said, Tashkent city itself has an established and growing Indian community and multiple stand-alone Indian restaurants (for example Curry House and other Indian eateries reviewed on travel platforms), so students accustomed to Indian food can expect to supplement dormitory self-cooking and the campus cafeteria with off-campus Indian restaurants in the city, though exact walking/commute distance from the CAU campus to specific restaurants was not verified and should be checked locally on arrival.",
+    "safetyOverview": "Uzbekistan is generally regarded as a politically stable, low-crime destination for international students, and Tashkent -- as the capital and most-monitored city -- is commonly cited by independent education-guide sources as one of the safer study destinations in Central Asia. CAU's own campus materials describe 24/7 security and dedicated residential staff at its dormitory, and the university's International Students page highlights a Student Well-Being Department that runs welcome and cultural-integration programming throughout the year. As with any study-abroad move, students should register their stay as required under Uzbekistan's mandatory visitor rules (the university's own international-student guide flags a mandatory 3-day stay registration and mobile IMEI registration on arrival, plus the need to obtain a PINFL personal identification number for legal residence), keep digital and physical copies of passport/visa documents, and check the Indian Embassy in Tashkent's current travel advisories before departure.",
+    "studentSupport": "CAU's International Students section of its official site is built specifically around onboarding logistics: guides to tuition and the special Central-Asia tuition tier, scholarship application steps (with scholarships covering up to 100% of tuition for qualifying first-year students in the 2025-2026 cycle per the official page), a step-by-step student-visa process including how to obtain the required TELEX number from the admissions team, a first-week checklist covering mandatory stay registration and IMEI registration, and guidance on the PINFL residence identifier. A dedicated Student Well-Being Department organizes recurring cultural and community events (weekly cultural sessions, the annual Nations Day festival, student clubs and a Students' Council) aimed at helping international students feel connected. Admissions itself runs through a structured entrance-exam-and-interview process described on the official Admission Regulations page (Mathematics, Chemistry, Biology and English subject tests, with English exemptions available via IELTS/TOEFL/SAT scores for Medicine and Dentistry applicants), so Indian applicants should contact CAU's admissions office directly to confirm exactly which of NEET, the university's own entrance exam, or another pathway is required for their specific application before assuming any one process applies.",
+    "whyChoose": [
+      "A private, English-medium six-year MD program in Uzbekistan's capital city, listed in the World Directory of Medical Schools (WDOMS/FAIMER F0006802) as operational since 2019 with ECFMG-eligible graduation years from 2025 onward",
+      "A named, integrated clinical partner -- AKFA Medline, a JCI-accredited teaching hospital formally brought into CAU's academic framework as a University Clinic -- plus an announced cooperation agreement with the Cleveland Clinic for future hospital development in Uzbekistan",
+      "On-campus dormitory accommodation with modern facilities (single/triple rooms, free laundry, 24/7 security, accessibility features) rather than requiring students to arrange private off-campus rentals",
+      "Recent institutional momentum and international recognition -- a QS Stars 4-star rating (the only private Uzbek university to hold one as of 2025), Times Higher Education Impact Rankings and Round University Ranking listings, and active Erasmus+ participation"
+    ],
+    "thingsToConsider": [
+      "The university changed its public name from 'AKFA University' to 'Central Asian University (CAU)' on 26 June 2023; students researching it under the older AKFA name should expect official records, WDOMS listings, and future paperwork to reference 'Central Asian University' instead, and the original akfauniversity.uz domain is no longer a live, functioning university website (it currently shows an expired-domain 'redemption period' notice)",
+      "No official NMC (India) recognition for this specific medical school was confirmed on regulator or university sources at the time of research; independent NMC-approved-college lists reviewed named other Uzbek institutions (Tashkent Medical Academy, Samarkand State Medical University, Bukhara State Medical Institute, and others) rather than AKFA/CAU, so Indian applicants must independently verify current NMC and FMGE/NExT eligibility before enrolling",
+      "Admission runs through CAU's own entrance exam (Mathematics, Chemistry, Biology, English) plus an admissions interview, which is a different documented pathway from the NEET-centric process assumed by some third-party MBBS-consultancy websites; applicants should confirm directly with CAU admissions exactly which exams and scores they will need to submit",
+      "International (non-Central-Asia) tuition for the MD program is officially quoted at $11,000/year on the university's own site; this is a private-university fee structure, and Indian families should budget for this plus dormitory and living costs and reconfirm the current-year figure with admissions, since the university's own pricing pages note fees are reviewed periodically"
+    ],
+    "faq": [
+      {
+        "question": "Is AKFA University Medical School the same as Central Asian University?",
+        "answer": "Yes. The institution founded in 2019 as 'AKFA University' officially renamed itself 'Central Asian University (CAU)' on 26 June 2023, as confirmed by the university's own official notice and independent Wikipedia sourcing. The World Directory of Medical Schools lists the medical school under its current name, 'Central Asian University Medical School, Uzbekistan,' with an explicit note that it was formerly called 'Akfa University Medical School (2019-2023).' It is the same school, not a different or newly created one."
+      },
+      {
+        "question": "Is the medical program taught in English?",
+        "answer": "Yes. The official CAU M.D. (Doctor of Medicine) program page confirms the language of study is English, and the university's admission regulations allow Medicine and Dentistry applicants to submit an IELTS score of 6.0+, a TOEFL iBT score of 60+, or an SAT English subject score of 585+ to be exempted from CAU's own English entrance exam."
+      },
+      {
+        "question": "Is this university recognised by India's National Medical Commission (NMC)?",
+        "answer": "No official confirmation of NMC recognition specifically for AKFA University / Central Asian University Medical School was found during research, either on the university's own site or on NMC/regulator sources checked. Some third-party MBBS-consultancy websites describe Uzbek medical degrees in general terms as 'NMC approved,' but independent NMC-approved-college lists reviewed did not name this specific university. Indian students must independently verify current NMC recognition and FMGE/NExT eligibility with the National Medical Commission before enrolling in any MBBS/MD-equivalent program abroad."
+      },
+      {
+        "question": "What is the tuition fee for international students?",
+        "answer": "According to the official CAU M.D. program page, tuition is 135,000,000 UZS/year for local (Uzbekistan citizen) students, $10,000/year for international students from Central Asia, and $11,000/year for international students from outside Central Asia -- the tier that applies to Indian applicants. Students should reconfirm the current-year figure directly with CAU admissions before finalising their budget."
+      },
+      {
+        "question": "Is on-campus accommodation available?",
+        "answer": "Yes. CAU's official Facility pages describe an on-campus dormitory (designed for roughly 600 students) offering single or triple rooms, each with a bed, refrigerator, private bathroom, and Wi-Fi, plus shared floor kitchens and free laundry (detergent cost only). Published official per-year pricing for international students is $3,000 for a single room and $1,500 for a triple room; students should confirm current availability and pricing with the university directly."
+      },
+      {
+        "question": "What clinical hospital does the Medical School work with?",
+        "answer": "The Medical School's primary named clinical partner is AKFA Medline, described by the university as a JCI-accredited teaching hospital that was formally integrated into CAU's academic and clinical framework as a University Clinic. CAU has also announced a cooperation agreement with the Cleveland Clinic focused on future hospital development in Uzbekistan; applicants should ask admissions for the current, concrete scope of any Cleveland Clinic-linked clinical training before assuming it is already part of day-to-day rotations."
+      }
+    ]
+  }
+}

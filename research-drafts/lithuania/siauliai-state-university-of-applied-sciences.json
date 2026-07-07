@@ -1,0 +1,175 @@
+{
+  "countrySlug": "lithuania",
+  "schoolName": "Šiauliai State University of Applied Sciences (Šiaulių valstybinė kolegija)",
+  "cityName": "Šiauliai",
+  "priority": "medium",
+  "officialWebsite": "https://svako.lt/en",
+  "programUrl": "https://svako.lt/en/degree-studies/study-programmes/health-sciences/general-practice-nursing",
+  "feesUrl": "https://svako.lt/en/degree-studies/admission",
+  "hostelUrl": "https://svako.lt/en/students-guide/accommodation-en",
+  "admissionUrl": "https://svako.lt/en/degree-studies/admission",
+  "qualityScore": 78,
+  "reviewNotes": "Corroborated across the official ŠVK/Šiaulių valstybinė kolegija website (svako.lt/en - programme page, official 2026 international-admission fee table, accommodation page, facts-and-figures and history pages) and independent sources (the government-backed Study in Lithuania portal studyin.lt, which independently lists the same General Practice Nursing programme, duration and institution facts). The only clearly relevant health/medical programme offered in English to international students is General Practice Nursing (bsc-nursing), a 3.5-year, 210-ECTS Professional Bachelor of Health Sciences programme delivered in Lithuanian and English per the official curriculum page, with English confirmed as the language of instruction for international-student admission on the official 2026 tuition table. The institution also runs a Lithuanian-only Odontological Care (dental-assistant/dental-nurse) programme and a Cosmetology programme, but neither is offered in English to international students nor matches a dentist-level (BDS) qualification, so only nursing is published as a program here - no fabricated MBBS/BDS/Pharmacy programme is asserted. No official INR tuition conversion is published; the officially listed EUR 3,400/year fee for General Practice Nursing (2026/27 admission) is reported as-is. Indian Nursing Council (INC) recognition of this specific foreign nursing qualification is NOT asserted; students are told to independently pursue INC's case-by-case equivalence process (Section 11(2)(a) of the INC Act) before assuming registration eligibility in India. No single-source facts were used for anything material.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "ŠVK - Homepage (svako.lt/en)",
+        "url": "https://svako.lt/en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms official name (Šiaulių valstybinė kolegija / Higher Education Institution, ŠVK), location in Šiauliai, Lithuania, and lists the Faculty of Health Care among its faculties."
+      },
+      {
+        "label": "ŠVK - Study Programmes (Health Sciences)",
+        "url": "https://svako.lt/en/degree-studies/study-programmes/health-sciences",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Lists all health-sciences programmes: Cosmetology, General Practice Nursing, Odontological Care and Physiotherapy, run by the Faculty of Health Care."
+      },
+      {
+        "label": "ŠVK - General Practice Nursing programme page",
+        "url": "https://svako.lt/en/degree-studies/study-programmes/health-sciences/general-practice-nursing",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official curriculum page: full-time, 3.5 years, national code 6531GX030, 210 ECTS credits, language of instruction Lithuanian and English, field Nursing and Midwifery, awarded qualification 'Professional Bachelor of Health Sciences, General Practice Nurse'. Details ten compulsory plus three elective clinical practices (geriatric, community, therapeutic, surgical, obstetric, child health, mental health, urgent/intensive care nursing) and lists graduate access to primary/secondary/tertiary health-care and social-service institutions, plus a Master's-study pathway via bridge courses."
+      },
+      {
+        "label": "ŠVK - Admission (International Students, 2026/2027 fee table)",
+        "url": "https://svako.lt/en/degree-studies/admission",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07",
+        "notes": "Official 2026 annual tuition-fee table for international students: General Practice Nursing, Faculty of Health Care, language of instruction English, EUR 3,400/year (duration 3.5 years). Also confirms admission is open to applicants with Senior/Higher Secondary Education, with academic recognition of that qualification handled by ŠVK itself as part of admission, applications via www.applyonline.svako.lt, and a non-refundable application fee payable only after admission-office approval."
+      },
+      {
+        "label": "ŠVK - Accommodation (Student's Guide)",
+        "url": "https://svako.lt/en/students-guide/accommodation-en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official page: ŠVK operates two dormitories (M. K. Čiurlionio str. 18 and 20) with double/triple rooms, shared kitchens and showers per floor, free laundry room, gym, table tennis/billiards, and a parking lot; 24/7 video surveillance and access control; officially stated price range EUR 55-130/month per person; includes bus-route guidance from the city centre."
+      },
+      {
+        "label": "ŠVK - History (About Us)",
+        "url": "https://svako.lt/en/about-us/history",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official institutional history: created in 2002 by order of the Lithuanian Minister of Education and Science, merging Šiauliai Higher School of Medicine and Šiauliai Higher Technical School into Šiauliai College; the medicine school traces back to a 1946 Nursing School (became Higher School of Medicine in 1991); awarded Erasmus University Charter in 2004; positively assessed by the Centre for Quality Assessment in Higher Education in 2006; granted professional bachelor's degree-awarding status in 2007; reorganized into public institution 'Šiauliai State College' in 2010 under Government Resolution No. 421."
+      },
+      {
+        "label": "ŠVK - Facts and Figures (About Us)",
+        "url": "https://svako.lt/en/about-us/facts-and-figures",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official statistics: 1,747 students as of 1 December 2024; 22 study programmes offered in 2024; 546 first-year students enrolled September 2024; about 60% of students study on state-funded places; roughly 40% of graduates already employed on graduation day; 98 teachers and 176 employees as of January 2024; more than 170 international cooperation agreements across 38 countries (as of December 2024); Erasmus+ Charter for Higher Education 2021-2027 awarded with a maximum evaluation score; founding member of the NEOLAiA European University Alliance (EUR 14m+ EU funding, 2023); a lecturer from the Faculty of Health Care won Sweden's Queen Silvia Nursing Award in September 2025 for a 24-hour caregiver helpline initiative; all students are offered dormitory accommodation, with fee deferral/installments available for those in financial difficulty; free student parking in central Šiauliai areas."
+      },
+      {
+        "label": "Study in Lithuania - ŠVK institution profile (government-backed national portal)",
+        "url": "https://studyin.lt/institutions/siauliaistateuas/",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent, government-backed (Research Council of Lithuania / Ministry of Education, Science and Sports) study-in-Lithuania portal, corroborating: ŠVK as the only state higher-education institution in Šiauliai county providing college-level education; General Practice Nursing listed among ŠVK's programmes at 3.5 years' duration; ŠVK membership in the NEOLAiA European University Alliance; describes Šiauliai as 'one of Lithuania's largest and most dynamic cities, offering a safe, welcoming, and affordable environment for students.'"
+      },
+      {
+        "label": "Indian Nursing Council - Equivalence (foreign nursing qualifications)",
+        "url": "https://www.indiannursingcouncil.org/equivalency",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Official Indian Nursing Council guidance confirming that Indian citizens holding foreign nursing qualifications must apply individually for equivalence/registration recognition under Section 11(2)(a) of the INC Act, submitting an attested transcript proforma from the awarding institution plus the prescribed equivalence fee; recognition is case-by-case, not automatic. Used only to ground the honest recognition caveat for this specific institution, not to assert recognition."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Šiauliai State University of Applied Sciences (Šiaulių valstybinė kolegija)",
+    "city": "Šiauliai",
+    "type": "Public",
+    "establishedYear": 2002,
+    "officialWebsite": "https://svako.lt/en",
+    "bestFitFor": [
+      "Indian and other international students seeking an affordable, English-medium Professional Bachelor's degree in General Practice Nursing at a public Lithuanian institution, without needing prior Lithuanian-language skills to be admitted",
+      "Students who want a practice-oriented nursing education with ten compulsory clinical practices (community, geriatric, surgical, therapeutic, obstetric, child, mental-health and urgent/intensive-care nursing) built into a structured 3.5-year curriculum",
+      "Students comfortable studying in a smaller, community-oriented Lithuanian city rather than a large capital, who value guaranteed dormitory accommodation and a lower cost of living",
+      "Students planning further study (bridge-course pathway to Master's level) or an EU/European nursing career, who understand they must independently verify Indian Nursing Council (INC) equivalence and any NEET/registration requirements before assuming the degree is automatically recognised for practice in India"
+    ],
+    "recognitionBadges": [
+      "Public (state) higher education institution established in 2002 under a decree of the Lithuanian Ministry of Education and Science",
+      "Erasmus+ Charter for Higher Education (2021-2027) awarded by the European Commission with a maximum evaluation score",
+      "Founding member institution of the NEOLAiA European University Alliance (European Commission-funded, 2023)",
+      "General Practice Nursing programme positively assessed as part of Lithuania's Centre for Quality Assessment in Higher Education (SKVC) external quality-assurance system, which underpins the institution's degree-awarding authority"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "ŠVK - Quality of Study Programmes (official)",
+        "url": "https://svako.lt/en/about-us/quality/quality-of-study-programmes"
+      }
+    ],
+    "teachingHospitals": [
+      "Clinical placements for General Practice Nursing are carried out across primary, secondary and tertiary-level personal health-care institutions and social-service/care-home institutions in the Šiauliai region, per the official programme page; the university does not name specific partner hospitals on its public programme pages, so applicants should ask the Nursing and Oral Care Department directly for the current list of clinical-placement sites before enrolling."
+    ],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "General Practice Nursing (Professional Bachelor of Health Sciences, General Practice Nurse)",
+        "officialProgramUrl": "https://svako.lt/en/degree-studies/study-programmes/health-sciences/general-practice-nursing",
+        "medium": "Lithuanian and English (official 2026 international-admission fee table lists English as the language of instruction for international students; the programme curriculum page itself states 'Lithuanian, English')",
+        "durationYears": 3.5,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "EUR",
+        "officialAnnualTuitionAmount": 3400,
+        "feeNotes": "Officially published 2026/2027 annual tuition for international students is EUR 3,400 (Faculty of Health Care, General Practice Nursing, English-medium admission track), per the official admission fee table. No official INR conversion is published - convert at a current exchange rate and confirm the exact current-year figure directly with the ŠVK Admission Office before budgeting. Dormitory accommodation (see hostelOverview) is a separate cost, officially stated at EUR 55-130/month per person.",
+        "sourceUrls": [
+          "https://svako.lt/en/degree-studies/admission",
+          "https://svako.lt/en/degree-studies/study-programmes/health-sciences/general-practice-nursing"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Šiauliai State University of Applied Sciences (Šiaulių valstybinė kolegija, ŠVK) is a public Lithuanian higher education institution in Šiauliai, established in 2002 when the Lithuanian Ministry of Education and Science merged the city's Higher School of Medicine and Higher Technical School into a single college. For Indian and other international students, its main health-related offering is General Practice Nursing, a 3.5-year, 210-ECTS Professional Bachelor of Health Sciences programme delivered in Lithuanian and English, with English confirmed as the medium of instruction on the official international-admission fee table. The officially published 2026/2027 annual tuition for international students is EUR 3,400. ŠVK also runs Lithuanian-only Odontological Care (dental-assistant) and Cosmetology programmes, which are not published here since they are not offered in English and are not dentist-level qualifications. This profile draws on the official ŠVK website and the independent, government-backed Study in Lithuania portal; Indian applicants should independently confirm current Indian Nursing Council (INC) equivalence requirements and any professional-registration steps before enrolling.",
+    "campusLifestyle": "ŠVK is a practice-oriented public institution built around two faculties - Business and Technologies, and Health Care - with more than 20 professionally focused study programmes across informatics, engineering, business, social sciences and health sciences, according to the university's own materials. The institution describes its environment as modern and democratic, with close cooperation between staff, students, and more than 300 social-partner organisations (employers who help shape curricula, supervise internships, and assess final theses). Official facts-and-figures data shows roughly 1,747 students (as of December 2024), about 60% studying on state-funded places, and student clubs and activities including student representation and sports teams (basketball, volleyball, football). The university is a founding member of the NEOLAiA European University Alliance and holds the Erasmus+ Charter for Higher Education (2021-2027), giving nursing students access to structured European exchange and mobility opportunities. As with any institution, exact club activity and class sizes vary by year, so applicants should confirm current details with the Faculty of Health Care before enrolling.",
+    "cityProfile": "Šiauliai is one of Lithuania's largest cities, located in the country's north, and is described by the government-backed Study in Lithuania portal as 'one of Lithuania's largest and most dynamic cities, offering a safe, welcoming, and affordable environment for students,' combining modern infrastructure with an active cultural life. ŠVK is the only state higher-education institution in Šiauliai county providing college-level (kolegija) education, per its own official history page, giving it a defined regional role rather than competing with multiple large universities in the same city. Compared to Vilnius or Kaunas, Šiauliai is a smaller, more community-oriented city, with local public bus transport (including routes serving the university dormitories) and a generally lower cost of living than Lithuania's capital. As with any move abroad, students should independently verify current visa, residence-registration, health-insurance and safety guidance for Lithuania before departure, and confirm specific neighbourhood details with current students or the international office.",
+    "clinicalExposure": "The General Practice Nursing curriculum builds in ten compulsory clinical practices plus three elective ones across its four years, per the official programme page: these include Community Nursing Practice, Geriatric Nursing Practice, Therapeutic Nursing Practice, Surgical Nursing Practice, Obstetric Nursing Practice, Child Health Care Practice, Mental Health Nursing Practice, and Intensive Care Practice, alongside a Final Practice and Graduation Paper in the last semester. The stated objective of the programme is to train a nurse able to 'innovatively, qualitatively organize and implement patient nursing and health training' and to 'recognize life-threatening conditions, initiate and independently provide immediate life-saving measures in cases of acute conditions, crises and disasters.' Clinical placements are carried out at primary, secondary and tertiary-level personal health-care institutions and social-service/care-home institutions, according to the official programme page, though the university does not publicly name specific partner hospitals - applicants should ask the Nursing and Oral Care Department (headed by Dr. Jurgita Vorevičienė) directly for the current list of clinical-placement sites and any language requirements for patient-facing practice hours.",
+    "hostelOverview": "ŠVK officially states that all its students are offered dormitory accommodation, run directly by the university at two locations (M. K. Čiurlionio str. 18 and 20). Rooms are double or triple occupancy, with kitchens and showers shared per floor, a free laundry room, gym access, table tennis and billiards, and a parking area outside the buildings; the university states 24/7 video surveillance and access control for resident security. The officially published price range is EUR 55-130 per person per month, and the university notes that students in financial difficulty can have dormitory fees deferred or paid in installments. Bus route 12 connects the dormitories to the city centre (get off at the 'Darbininkų' stop), and residents must follow standard dormitory rules (quiet hours 11pm-7am, visitor curfew, no alcohol/drugs, no unauthorised room changes). Since availability and exact room allocation can vary by intake year, applicants should confirm current dormitory availability and costs directly with the Admission Office before arrival.",
+    "indianFoodSupport": "ŠVK's official materials do not describe a dedicated Indian mess, dining hall, or Indian-specific student society on campus; the university's own published information focuses on general dormitory kitchen facilities (shared per floor, allowing self-catering) rather than any specific cuisine. Šiauliai is a mid-sized Lithuanian city rather than a large international metropolis, and public sources describe it as having a modest international/expat presence compared to Vilnius or Kaunas. Students who need consistent access to Indian, vegetarian or halal groceries and restaurants should independently research current options in Šiauliai (for example via local supermarkets and any South Asian community groups) and confirm with current international students or the ŠVK international relations office before committing to enrol, since food-access options in a smaller city can be more limited than in Lithuania's larger cities.",
+    "safetyOverview": "Šiauliai is described by the government-backed Study in Lithuania portal as offering 'a safe, welcoming, and affordable environment for students,' and ŠVK's own dormitory pages state that its two residence buildings operate 24/7 video surveillance and access control for resident security. As a smaller Lithuanian city, Šiauliai generally has a slower pace of life and lower crime profile than large European capitals, though - as in any city - students should still take standard precautions (staying in well-lit, populated areas at night, not walking alone late, keeping valuables secure). Students should register their residence with local authorities as required, keep visa and health-insurance documents current, and review their home country's latest travel and safety guidance for Lithuania before departure. Specific neighbourhood safety around the dormitories and any off-campus housing should be confirmed with current students or the international relations office before arrival.",
+    "studentSupport": "International applicants to ŠVK apply through the official portal www.applyonline.svako.lt, submitting required documents (including for academic recognition of Higher Secondary Education, which ŠVK itself carries out as part of the admission process) and emailing copies to admission@svako.lt, per the official 2026 international-admission rules. There is no entrance exam beyond the required Higher Secondary Education qualification, and the university's Admission Office (Aušros ave. 40, Šiauliai) can be reached by phone (+370 615 97 114) or email for guidance before and during the application. Once enrolled, students have access to the Erasmus+ mobility programme, the NEOLAiA European University Alliance network, career-consultation services, and financial/psychological support services, per the official Student's Guide pages. Prospective Indian students should use these official channels directly for all admissions, fee, and academic-recognition questions, and independently verify any promises made by third-party education agents against the university's own website and Admission Office before paying any fees.",
+    "whyChoose": [
+      "Officially published, budget-friendly EUR 3,400/year tuition (2026/27 international-admission table) for a public-university Professional Bachelor's degree in General Practice Nursing, taught in English to international students.",
+      "Structured, practice-heavy 3.5-year curriculum with ten compulsory and three elective clinical nursing practices spanning community, geriatric, surgical, therapeutic, obstetric, child-health, mental-health and intensive-care nursing.",
+      "Guaranteed dormitory accommodation directly from the university, officially priced at EUR 55-130/month per person, with fee deferral options for students facing financial hardship.",
+      "Access to the Erasmus+ Charter for Higher Education (2021-2027) and the NEOLAiA European University Alliance, giving nursing students a defined pathway into wider European academic mobility and exchange."
+    ],
+    "thingsToConsider": [
+      "The General Practice Nursing programme's official curriculum page lists 'Lithuanian, English' as the language of instruction; while the international-admission fee table confirms English as the track offered to international students, applicants should get written confirmation from the Nursing and Oral Care Department on exactly which modules or clinical placements may still require Lithuanian-language ability.",
+      "Šiauliai is a smaller Lithuanian city with, per available public sources, a comparatively modest international/expat community relative to Vilnius or Kaunas - students who want a larger, more cosmopolitan social scene or extensive Indian grocery/restaurant access should factor this in and verify current options directly before enrolling.",
+      "Indian Nursing Council (INC) recognition of this specific foreign nursing qualification is not automatic: Indian citizens with foreign nursing degrees must apply individually for equivalence under Section 11(2)(a) of the INC Act, submitting attested transcripts and paying the prescribed fee - verify current INC requirements yourself well before applying, since recognition outcomes are assessed case-by-case.",
+      "No official INR tuition conversion is published by the university; the EUR 3,400/year fee (and EUR 55-130/month dormitory cost) should be budgeted using a current exchange rate and reconfirmed directly with the Admission Office, since fees can change year to year.",
+      "The university does not publicly name specific partner teaching hospitals or clinics for clinical placements on its programme page, so applicants should request the current placement-site list and any related logistics (transport, language needs) directly from the department before committing."
+    ],
+    "faq": [
+      {
+        "question": "What type of institution is Šiauliai State University of Applied Sciences, and when was it established?",
+        "answer": "It is a public (state) higher education institution in Šiauliai, Lithuania, established in 2002 when the Lithuanian Ministry of Education and Science merged the city's Higher School of Medicine and Higher Technical School into a single college. It is officially described as the only state higher-education institution in Šiauliai county providing college-level education."
+      },
+      {
+        "question": "What health/medical programme can Indian students study here, and is it taught in English?",
+        "answer": "The relevant programme is General Practice Nursing, a 3.5-year, 210-ECTS Professional Bachelor of Health Sciences degree. The official curriculum page lists the language of instruction as Lithuanian and English, and the official 2026/2027 international-admission fee table confirms English as the track offered to international students. The university's other health-sciences programmes (Odontological Care, Cosmetology) are Lithuanian-medium only and are not covered in this profile."
+      },
+      {
+        "question": "How much does the General Practice Nursing programme cost for international students?",
+        "answer": "The officially published 2026/2027 annual tuition fee for international students is EUR 3,400. No official INR conversion is published, so convert at a current exchange rate and reconfirm the exact figure directly with the ŠVK Admission Office, since fees can be updated each academic year."
+      },
+      {
+        "question": "What clinical training does the nursing programme include?",
+        "answer": "The official curriculum lists ten compulsory clinical practices plus three electives across the four years, covering community, geriatric, therapeutic, surgical, obstetric, child-health, mental-health, and urgent/intensive-care nursing, delivered at primary, secondary and tertiary-level health-care and social-service institutions in the region. Specific partner-hospital names are not published, so applicants should confirm current placement sites with the Nursing and Oral Care Department."
+      },
+      {
+        "question": "Will this nursing degree be recognised for practice in India?",
+        "answer": "That is not guaranteed automatically. Indian citizens with foreign nursing qualifications must apply individually to the Indian Nursing Council (INC) for equivalence recognition under Section 11(2)(a) of the INC Act, submitting attested transcripts from the awarding institution and the prescribed fee; each case is assessed on its own syllabus and documentation. Prospective students should verify current INC requirements themselves before assuming recognition."
+      },
+      {
+        "question": "Is accommodation provided, and how much does it cost?",
+        "answer": "Yes - the university states that all students are offered accommodation in its own two dormitories, with double/triple rooms, shared kitchens and showers per floor, and 24/7 video surveillance. The officially published price range is EUR 55-130 per person per month, with fee deferral or installment options available for students in financial difficulty."
+      }
+    ]
+  }
+}

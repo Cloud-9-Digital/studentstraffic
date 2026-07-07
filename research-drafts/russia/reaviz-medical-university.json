@@ -1,0 +1,138 @@
+{
+  "countrySlug": "russia",
+  "schoolName": "Reaviz Medical University",
+  "cityName": "Samara",
+  "priority": "medium",
+  "officialWebsite": "https://www.reavizmedicaluniversity.com/",
+  "programUrl": "https://www.reavizmedicaluniversity.com/general-medicine/",
+  "feesUrl": "https://www.reavizmedicaluniversity.com/tuition-fee/",
+  "qualityScore": 78,
+  "reviewNotes": "Corroborated across the official Reaviz Medical University site and multiple India-facing study-abroad aggregators. Tuition omitted: no single authoritative official figure could be confirmed (aggregators disagree and the official tuition-fee page did not expose a verifiable public number). Medium of instruction stated cautiously: the official site says English is 'widely used in teaching' while several aggregators list English/Russian, so students are told to confirm the English-track status in writing. NMC/NEET/FMGE framing presented only as a student to-do, not as an assertion about this institution's current status.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Reaviz Medical University - Official website (home)",
+        "url": "https://www.reavizmedicaluniversity.com/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "First and only non-state medical university in Russia with state accreditation and licence; branches in Moscow, St. Petersburg, Saratov and abroad; own multidisciplinary clinic and 20+ clinical bases."
+      },
+      {
+        "label": "Reaviz Medical University - About University",
+        "url": "https://www.reavizmedicaluniversity.com/about-university/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Founded 1993 on the initiative of Samara State Medical University academicians; holds licence and state accreditation to issue state-recognised diplomas; English widely used in teaching; General Medicine, Dentistry, Pharmacy specialisations."
+      },
+      {
+        "label": "Reaviz Medical University - General Medicine faculty page",
+        "url": "https://www.reavizmedicaluniversity.com/general-medicine/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Describes the General Medicine (MBBS-equivalent) programme, classroom plus hospital-based clinical training and required practical training weeks."
+      },
+      {
+        "label": "MOKSH Overseas - Samara Medical Institute Reaviz profile",
+        "url": "https://www.moksh16.com/samara-medical-institute-reaviz",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "India-facing aggregator: 6-year MBBS incl. internship, September intake, NEET-qualified requirement, hostel and food-cost indications, established 1993, Samara city profile. Used only to corroborate widely-reported facts."
+      },
+      {
+        "label": "Reaviz Medical University - Tuition fee page",
+        "url": "https://www.reavizmedicaluniversity.com/tuition-fee/",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07",
+        "notes": "Official tuition-fee landing page for the 2025-2026 admission cycle; no single verifiable public per-year figure was extractable, so tuition is omitted from this draft."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Reaviz Medical University",
+    "city": "Samara",
+    "type": "Private",
+    "establishedYear": 1993,
+    "officialWebsite": "https://www.reavizmedicaluniversity.com/",
+    "bestFitFor": [
+      "Students who want a private, English-taught medical education in a large European-Russia city with an in-house teaching clinic",
+      "Applicants who value a compact, long-established institution over a very large state university and want close clinical mentoring",
+      "Indian NEET-qualified students planning to sit FMGE/NExT on return, who will independently verify current NMC recognition before enrolling",
+      "Learners who want a September-intake General Medicine, Dentistry or Pharmacy track at a school with its own clinics and multiple hospital bases"
+    ],
+    "recognitionBadges": [
+      "State accreditation and licence (Russian Federation)",
+      "Ranked by RAEX among leading Russian universities (self-reported)"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "Reaviz accreditation and licence information (official)",
+        "url": "https://www.reavizmedicaluniversity.com/about-university/"
+      }
+    ],
+    "teachingHospitals": [
+      "Reaviz multidisciplinary clinic (own clinical base)",
+      "Reaviz dental clinic (own clinical base)",
+      "20+ affiliated medical and pharmaceutical institutions and private clinics in Samara city and region"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "General Medicine (MBBS-equivalent)",
+        "officialProgramUrl": "https://www.reavizmedicaluniversity.com/general-medicine/",
+        "medium": "English (per the university; some aggregators list English/Russian — confirm the English track in writing)",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "feeNotes": "Tuition is not published here because a single authoritative official per-year figure could not be verified. Request the current tuition, hostel and mandatory fees directly from the university admissions office in writing before paying anything.",
+        "sourceUrls": [
+          "https://www.reavizmedicaluniversity.com/general-medicine/",
+          "https://www.reavizmedicaluniversity.com/about-university/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Reaviz Medical University is a private medical university in Samara, Russia, founded in 1993 as the country's first non-state medical school to hold both a state licence and state accreditation. It offers a six-year General Medicine (MBBS-equivalent) programme alongside Dentistry and Pharmacy tracks, with English widely used in teaching and clinical training delivered through the university's own multidisciplinary and dental clinics plus a network of more than twenty affiliated hospitals and clinics in the Samara region. Reaviz also operates branches in Moscow, St. Petersburg and Saratov. This profile is compiled from the university's official website and India-facing study-abroad sources; prospective Indian students should independently confirm current recognition and fees before applying.",
+    "campusLifestyle": "Reaviz is a compact, teaching-focused institution rather than a sprawling mega-campus, which many students describe as an advantage for close contact with faculty and clinical mentors. According to the university, English is widely used in teaching, and it runs student activities such as an English-language student magazine club alongside its academic programme. The main campus sits within Samara, a large city on the Volga, so day-to-day student life blends classroom and clinic time with access to a full metropolitan environment. As with any private institution abroad, applicants should verify class sizes, timetable structure and the language of each course directly with the admissions office.",
+    "cityProfile": "Samara is the administrative centre of Samara Oblast and one of Russia's largest cities, positioned on the Volga River in the country's European region. It is a significant economic, industrial and cultural hub with a continental climate of warm summers and cold winters. As a major regional capital, Samara offers established public transport, healthcare and student services, and its size gives international students access to a wide range of clinical settings for training. Students should budget for winter clothing and factor the continental climate into their planning.",
+    "clinicalExposure": "A distinguishing feature of Reaviz is that it operates its own clinical base rather than relying solely on external hospitals. According to the university, this includes a multidisciplinary clinic and a dental clinic, a research laboratory in morphology, and clinical training delivered across more than twenty affiliated medical and pharmaceutical institutions and several private clinics in Samara city and region. The General Medicine programme combines classroom teaching with hospital-based practical training, including dedicated blocks of supervised clinical practice. Students should confirm the exact rotation structure and the volume of hands-on clinical exposure available to international students with the university before enrolling.",
+    "hostelOverview": "Reaviz and India-facing sources describe hostel accommodation being available to both domestic and international students, with dormitory rooms typically shared and furnished. Reported dormitory capacity in the wider Reaviz/Samara system runs to several thousand beds across multiple blocks. Because room availability, occupancy per room and charges change year to year, students should request a written confirmation of hostel allocation, monthly or annual cost and what is included (utilities, internet, kitchen access) at the time of admission rather than relying on indicative figures.",
+    "indianFoodSupport": "Samara is a large Russian city with supermarkets, markets and a range of eateries, and its sizeable international-student population means vegetarian ingredients and some South Asian groceries are generally obtainable. Reaviz-linked sources indicate students commonly self-cater in hostel kitchens, which lets Indian students prepare familiar meals; availability of dedicated Indian restaurants or mess facilities on or near campus is not confirmed here. Students who require consistent access to Indian or vegetarian food, or halal options, should ask the admissions office and current Indian students about kitchen access and local grocery options before arriving.",
+    "safetyOverview": "As a long-established institution in a major regional capital, Reaviz provides hostel accommodation and student services typical of Russian medical universities, and Samara functions as a normal large European-Russia city for residents and students. International students should nonetheless follow standard precautions: keep documents and registration current, use official university and hostel channels, and stay informed about local regulations. Given the current geopolitical situation, Indian students and their families should also review their own government's latest travel advisories and consider banking, payment and travel logistics before committing.",
+    "studentSupport": "Reaviz lists an admissions process for international applicants covering admission requirements, official representatives, visa support and airport pickup, indicating a defined intake pathway for overseas students. As a private university it maintains its own admissions office for the 2025-2026 cycle. Prospective Indian students should use these official channels directly, obtain all offer terms, fees and recognition claims in writing, and cross-check any promises made by third-party agents against the university's official website and admissions office.",
+    "whyChoose": [
+      "Private medical university founded in 1993 and described by the university as the first non-state medical school in Russia to hold both a state licence and state accreditation, allowing it to issue state-recognised diplomas.",
+      "English is widely used in teaching in the General Medicine programme, with a six-year (MBBS-equivalent) structure including internship and a September intake.",
+      "Strong in-house clinical infrastructure: the university operates its own multidisciplinary and dental clinics plus a network of 20+ affiliated hospitals and clinics in the Samara region for practical training.",
+      "Located in Samara, one of Russia's largest cities on the Volga, offering a full metropolitan environment and established student services, with additional Reaviz branches in Moscow, St. Petersburg and Saratov."
+    ],
+    "thingsToConsider": [
+      "Tuition is not published in this profile because a single authoritative official per-year figure could not be verified; confirm current tuition, hostel and mandatory fees in writing with the admissions office before paying.",
+      "Medium of instruction should be confirmed: the university states English is widely used in teaching, but some aggregators list English/Russian, so applicants must confirm the English-track status and any Russian-language requirements for clinical years.",
+      "Recognition for Indian practice is your responsibility to verify: check the current NMC (formerly MCI) list, NEET eligibility and FMGE/NExT requirements yourself, as recognition status can change and is not asserted here for this institution.",
+      "Given the current geopolitical situation, review your government's latest travel advisories and confirm banking, visa and payment logistics before committing."
+    ],
+    "faq": [
+      {
+        "question": "Where is Reaviz Medical University located and what type of institution is it?",
+        "answer": "It is a private medical university based in Samara, a large city on the Volga in the European region of Russia. According to the university it was founded in 1993 and was the first non-state medical school in Russia to hold both a state licence and state accreditation. It also operates branches in Moscow, St. Petersburg and Saratov."
+      },
+      {
+        "question": "Is the MBBS / General Medicine programme taught in English and how long is it?",
+        "answer": "The General Medicine (MBBS-equivalent) programme runs for six years including internship, with a September intake. The university states English is widely used in teaching, but because some study-abroad sources list English/Russian, you should confirm the English-track status and any Russian-language requirements for clinical rotations directly with the admissions office in writing."
+      },
+      {
+        "question": "What clinical training does Reaviz offer?",
+        "answer": "The university operates its own clinical base, including a multidisciplinary clinic and a dental clinic, plus a morphology research laboratory, and it uses more than twenty affiliated medical and pharmaceutical institutions and private clinics in the Samara region for hospital-based practical training. Confirm the exact rotation structure for international students before enrolling."
+      },
+      {
+        "question": "How much does it cost to study at Reaviz, and is hostel accommodation available?",
+        "answer": "This profile does not publish a tuition figure because a single authoritative official number could not be verified; request the current tuition, hostel and mandatory fees in writing from the admissions office. Hostel accommodation is described as available to both domestic and international students, with shared, furnished rooms, but confirm the allocation and cost at the time of admission."
+      },
+      {
+        "question": "Will this degree let me practise in India?",
+        "answer": "To practise in India after a foreign medical degree you must meet the National Medical Commission (NMC) requirements, including NEET eligibility before admission and passing the FMGE/NExT licensing exam on return. Recognition status can change and is not asserted here for this institution, so verify the current NMC list and requirements yourself before applying."
+      }
+    ]
+  }
+}

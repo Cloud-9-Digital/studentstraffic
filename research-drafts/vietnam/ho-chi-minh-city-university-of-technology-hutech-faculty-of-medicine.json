@@ -1,0 +1,93 @@
+{
+  "countrySlug": "vietnam",
+  "schoolName": "Ho Chi Minh City University of Technology (HUTECH) - Faculty of Medicine",
+  "cityName": "Ho Chi Minh City",
+  "priority": "low",
+  "officialWebsite": "https://www.hutech.edu.vn/khoa-hoc-suc-khoe",
+  "status": "hold",
+  "reviewNotes": "HOLD - not publish-ready. HUTECH (Ho Chi Minh City University of Technology / Truong Dai hoc Cong nghe TP.HCM), a private university established 26 April 1995, was only just approved by Vietnam's Ministry of Education and Training (Decision No. 1372/QD-BGDDT dated 26 May 2026) to open a General Medicine (Y khoa, code 7720101) bachelor's/professional-doctor program, and on 2 June 2026 HUTECH announced establishment of an internal 'Truong Y va Khoa hoc Suc khoe' (School of Medicine and Health Sciences) grouping Medicine, Pharmacy, Nursing, and Medical Laboratory Technology. This is a brand-new, first-cohort program: enrollment for academic year 2026 is only 50 students, admitted via Vietnam's domestic pathways (2026 national high-school graduation exam scores, high-school transcripts/bachelor's-record method, V-SAT scores, VNU-HCM aptitude-test scores) or via international qualification equivalencies (SAT/ACT/A-Level/IB) that HUTECH accepts across its general admissions system -- NOT a dedicated Indian-student or English-medium admissions track. All official HUTECH pages describing this program (homepage, khoa-hoc-suc-khoe faculty page, admissions announcements) are Vietnamese-language only; no /en/ English-language page, no India-specific admissions guidance, and no statement that the Medicine program is taught in English could be found despite exhaustive search. The curriculum is a standard 6-year, 210-credit program leading to a 'Bac si Y khoa' (General Medicine Doctor) degree -- consistent with Vietnam's domestic MD structure, not an English-medium MBBS-for-foreigners program. Given (1) no confirmed English medium of instruction, (2) no confirmed international/Indian-student admissions pathway, (3) the program being unaccredited-by-track-record (zero graduating cohorts, approved matter of weeks before this research), and (4) no NMC/FMGE/WDOMS-relevant recognition information available for a program this new, none of the 8 required India-audience narrative fields can be honestly written without fabricating facts about student life, clinical exposure framed for foreign students, hostel arrangements for international students, Indian food access, or safety framed as an established study-abroad destination. Per the exhaustive-then-omit rule, this draft is held rather than published. Revisit only if HUTECH publishes explicit English-medium admissions terms and an international/Indian-student pathway for this program, and once the program has run long enough to have verifiable student-life and clinical-placement information.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "HUTECH official site - Faculty/Field of Medicine and Health Sciences (Linh vuc Y va Khoa hoc suc khoe) landing page",
+        "url": "https://www.hutech.edu.vn/khoa-hoc-suc-khoe",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Lists Y khoa (General Medicine), Duoc hoc (Pharmacy), Dieu duong (Nursing), and Ky thuat xet nghiem y hoc (Medical Laboratory Technology) as the programs in this field; states Y khoa is a 6-year program awarding 'Bac si Y khoa' (General Medicine Doctor); entire page is Vietnamese-language only with no English-medium or international-admissions content found."
+      },
+      {
+        "label": "HUTECH official site - Nursing and Medical Technology Faculty page (Khoa Dieu duong - Ky thuat Y hoc)",
+        "url": "https://www.hutech.edu.vn/khoadieuduong",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl to corroborate faculty structure around the health-sciences cluster; Vietnamese-language only, no English-medium program content."
+      },
+      {
+        "label": "HUTECH official site - main homepage",
+        "url": "https://www.hutech.edu.vn/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl to confirm current faculty/program navigation links; used to locate the khoa-hoc-suc-khoe page and confirm no dedicated 'khoaykhoa' or English Faculty-of-Medicine URL exists as a standalone page."
+      },
+      {
+        "label": "HUTECH official admissions announcement - 'HUTECH chinh thuc tuyen sinh dao tao nganh Y khoa, trao hoc bong 30% hoc phi toan khoa'",
+        "url": "https://www.hutech.edu.vn/tuyensinh/tin-tuyen-sinh/14633336-hutech-chinh-thuc-tuyen-sinh-dao-tao-nganh-y-khoa-trao-hoc-bong-30-hoc-phi-toan-khoa",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "URL surfaced via WebSearch summary (direct curl fetch returned an empty/JS-rendered body, so content is corroborated via search-result summary of this official page, not a direct page read). Search summary confirms: Ministry of Education and Training Decision No. 1372/QD-BGDDT dated 26 May 2026 approving the General Medicine program (code 7720101); 6-year, 210-credit program; 'Bac si Y khoa' degree; 2026 enrollment target of 50 students; admission via Vietnamese national exam score, high-school transcript, V-SAT, and VNU-HCM aptitude test methods; 30% full-course tuition scholarship for the first cohort."
+      },
+      {
+        "label": "Thanh Nien newspaper - 'Them mot truong DH tai TP.HCM duoc dao tao nganh y khoa, tuyen sinh tu 2026'",
+        "url": "https://thanhnien.vn/them-mot-truong-dh-tai-tphcm-duoc-dao-tao-nganh-y-khoa-tuyen-sinh-tu-2026-185260526211845487.htm",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent Vietnamese news corroboration (via WebSearch summary) of the Ministry's approval of HUTECH's General Medicine program and 2026 enrollment start; identifies HUTECH as a non-public (private) university newly authorised for medical training."
+      },
+      {
+        "label": "Thanh Nien newspaper - 'Mot truong DH thanh lap Truong Y va Khoa hoc suc khoe'",
+        "url": "https://thanhnien.vn/mot-truong-dh-thanh-lap-truong-y-va-khoa-hoc-suc-khoe-185260602113749805.htm",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration (via WebSearch summary) that HUTECH announced establishment of its internal 'School of Medicine and Health Sciences' on 2 June 2026, grouping Medicine, Pharmacy, Nursing and Medical Laboratory Technology under one school."
+      },
+      {
+        "label": "giaoduc.net.vn - 'HUTECH duoc phep dao tao Y khoa: Ho so mo nganh dap ung cac dieu kien ra sao?'",
+        "url": "https://giaoduc.net.vn/hutech-duoc-phep-dao-tao-y-khoa-ho-so-mo-nganh-dap-ung-cac-dieu-kien-ra-sao-post260400.gd",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent Vietnamese education-news corroboration (via WebSearch summary) discussing the conditions HUTECH's program-opening dossier had to satisfy for Ministry approval; reinforces the program's newness and domestic regulatory framing."
+      },
+      {
+        "label": "Wikipedia - Ho Chi Minh City University of Technology (HUTECH)",
+        "url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City_University_of_Technology",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent secondary corroboration (via WebSearch summary) of HUTECH's founding date (26 April 1995, Prime Ministerial Decision No. 235/TTg), private-university status, multiple Ho Chi Minh City campuses, ISO 9001:2015 and AUN-QA institutional/programme quality frameworks, and QS 4-Star overall rating (November 2022) / QS World University Rankings 2027 band 1401+."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Ho Chi Minh City University of Technology (HUTECH) - Faculty of Medicine",
+    "city": "Ho Chi Minh City",
+    "type": "Private",
+    "establishedYear": 1995,
+    "officialWebsite": "https://www.hutech.edu.vn/khoa-hoc-suc-khoe",
+    "bestFitFor": [],
+    "programs": [],
+    "notes": "establishedYear=1995 reflects HUTECH's own founding date (Prime Ministerial Decision No. 235/TTg, 26 April 1995), corroborated by the official site and Wikipedia; the Faculty/School of Medicine itself is far newer -- its General Medicine program was approved by MOET Decision No. 1372/QD-BGDDT on 26 May 2026, and the internal 'School of Medicine and Health Sciences' grouping was only announced 2 June 2026, with the first cohort (50 students) admitted for the 2026 intake. No programs array populated: while a General Medicine ('Y khoa') program does exist with a confirmed 6-year duration and 'Bac si Y khoa' degree, no officialProgramUrl could be retrieved with a confirmed medium of instruction (no English-medium statement found anywhere; all official pages are Vietnamese-language only) or a confirmed international/Indian-student admissions pathway -- admission is via Vietnam's domestic national-exam, transcript, V-SAT, and VNU-HCM aptitude-test methods, with SAT/ACT/A-Level/IB accepted only as alternate qualification-equivalency routes within HUTECH's general (not medicine-specific, not India-specific) admissions system. bestFitFor intentionally left empty rather than fabricated, since no India-audience-relevant, English-medium program track is confirmed for this brand-new faculty."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "All narrative fields intentionally left empty. HUTECH's General Medicine program is a newly Ministry-approved (26 May 2026), first-cohort (2026 intake, 50 students), Vietnamese-medium domestic-admission program with no confirmed English-medium instruction and no confirmed international/Indian-student admissions pathway. Writing India-audience narrative content (campus lifestyle, clinical exposure framed for foreign MBBS students, hostel arrangements for international students, Indian food support, safety framed as an established study-abroad destination, FAQ on NMC/NEET/FMGE recognition) would require fabricating facts this research could not corroborate from any official or independent source. This page should not be published until/unless HUTECH confirms an English-medium track and an international/Indian-student admissions pathway for this program, and the program has operated long enough to generate verifiable student-life and clinical-placement details."
+  }
+}

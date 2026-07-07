@@ -1,0 +1,189 @@
+{
+  "countrySlug": "malta",
+  "schoolName": "MediCampus Europeo (MCE) - Faculty of Medicine, in partnership with Trakia University",
+  "cityName": "Floriana",
+  "priority": "medium",
+  "officialWebsite": "https://www.medicampus.edu.mt/",
+  "programUrl": "https://medicampus.edu.mt/faculty-of-medicine",
+  "feesUrl": "https://medicampus.edu.mt/faculty-of-medicine",
+  "hostelUrl": "https://medicampus.edu.mt/housing-and-cafeteria",
+  "admissionUrl": "https://medicampus.edu.mt/how-to-apply",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "MediCampus Europeo official site - Faculty of Medicine (6-year Medicine programme overview, curriculum, fees, intakes)",
+        "url": "https://medicampus.edu.mt/faculty-of-medicine",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "6-year, 360-ECTS Doctor of General Medicine (MD) programme, 100% English-taught, degree issued by Trakia State University (Bulgaria) under a franchise/accreditation arrangement; clinical training from Year 3; tuition listed as EUR 14,500/year (one instalment) or EUR 15,500/year (two instalments); next intakes 25/26 July 2026 and 22/23 August 2026 (online, subject to availability); full year-by-year course/ECTS breakdown; admission requirements vary by nationality, non-EU applicants advised to contact Admissions Office to verify recognition of secondary qualifications; institution licensed by MFHEA (Licence No. 2024-020); EU recognition cited under Directive 2005/36/EC."
+      },
+      {
+        "label": "MediCampus Europeo official site - About MCE / Overview",
+        "url": "https://www.medicampus.edu.mt/overview",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms campus address (Triq L-Imhazen, Il-Furjana FRN 1200, Malta), hands-on/practical-from-Year-1 educational approach, hospital-network clerkships across the EU, and Dean Prof. Peter Labas (MD, PhD), formerly Dean of the Faculty of Medicine at Comenius University Bratislava for 8 years."
+      },
+      {
+        "label": "MediCampus Europeo official site - Accreditation and Recognition",
+        "url": "https://medicampus.edu.mt/accreditation-and-recognition",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "MFHEA licensed MCE as a Higher Education Institution on 26 June 2024 (Licence No. 2024-020; MFHEA is a full ENQA member); MD degree awarded by Trakia University (a Bulgarian state university) under EU Directive 2005/36/EC automatic recognition across EU/Norway/Switzerland/UK; states Trakia University is listed in the World Directory of Medical Schools (WDOMS) under FAIMER School ID F0001145, enabling ECFMG Certification/USMLE eligibility; Trakia University founded 1995, Stara Zagora, Bulgaria, ~9,000 students, 9 faculties, accredited by Bulgaria's NEAA (an ENQA member listed in EQAR)."
+      },
+      {
+        "label": "MediCampus Europeo official site - The Campus (Floriana)",
+        "url": "https://www.medicampus.edu.mt/campus",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Campus housed in Casa Leone, a historic Maltese building in Floriana, ~800 metres from Valletta, fully renovated in 2017; ~1,300 sqm across five floors; facilities include anatomy/chemistry/biology laboratories, lecture hall, library, study rooms, rooftop cafeteria with sea views; 50 study slots cited for the programme."
+      },
+      {
+        "label": "MediCampus Europeo official site - Housing and Cafeteria",
+        "url": "https://medicampus.edu.mt/housing-and-cafeteria",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "MCE does not run its own dormitory; the Student Office helps students find modern, affordable apartments in Floriana, Valletta and other student areas roughly 10 minutes away by bus, either living alone or sharing with other MCE students. On-campus cafe area with rooftop terrace for socialising."
+      },
+      {
+        "label": "MediCampus Europeo official site - International Student Services",
+        "url": "https://medicampus.edu.mt/international-student-services",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Orientation programme including a Valletta tour; Malta International Airport is 10 km from campus with taxi/Uber/Bolt/shuttle access; non-EU students require an approved entry visa before arrival, with the Admissions Office providing visa/deadline/document guidance; Student Office also coordinates counselling, financial-aid information, scholarships, payment plans and mentoring."
+      },
+      {
+        "label": "Trakia University official site - Faculty of Medicine",
+        "url": "https://trakia-uni.bg/en/about-us/faculties/faculty-of-medicine/",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent confirmation from the awarding institution: Trakia University's Faculty of Medicine (Stara Zagora, Bulgaria) hosts the parent Medicine programme; corroborates the 6-year structure and clinical/practical training components referenced on the MCE site."
+      },
+      {
+        "label": "Wikipedia - Trakia University",
+        "url": "https://en.wikipedia.org/wiki/Trakia_University",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration: Trakia University established 1995 in Stara Zagora, Bulgaria; state university; English-taught Medicine and Veterinary Medicine programmes; used to corroborate the awarding-university facts stated on MCE's own accreditation page."
+      },
+      {
+        "label": "Wikipedia - Floriana",
+        "url": "https://en.wikipedia.org/wiki/Floriana",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration: Floriana (Borgo Vilhena) is a fortified town directly adjoining Valletta, Malta's capital; origins trace to the Floriana Lines fortifications begun in 1636 and the Borgo Vilhena suburb founded in 1724; small population (~2,205 as of 2014); historic granaries, churches and gardens; used as general city/history context rather than a university claim."
+      },
+      {
+        "label": "EatOutMalta / FoodBlog Malta / TripAdvisor - Indian restaurants in Valletta",
+        "url": "https://www.eatoutmalta.com/listing/cuisine-type/indian",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration of multiple named Indian restaurants (e.g., Naan Bar, TukTuk) operating within Valletta, directly adjacent to Floriana, used as general food-access context rather than a university claim."
+      },
+      {
+        "label": "Numbeo - Crime Index by Country",
+        "url": "https://www.numbeo.com/crime/rankings_by_country.jsp",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent data point: Malta's crime index sits below the European average, used as general safety context rather than a university-specific claim."
+      },
+      {
+        "label": "National Medical Commission (India) - Information for Students to Study Abroad",
+        "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-abroad/",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Official Indian regulator confirmation of the generic outbound framework (NEET qualification required before enrolling in an MBBS-equivalent degree abroad; FMGE/NExT screening required to practise in India afterward). MCE/Trakia is not separately named on NMC's site; this source corroborates only the general regulatory framework, which this page applies as generic guidance rather than an MCE-specific approval claim."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "MediCampus Europeo (MCE) - Faculty of Medicine, in partnership with Trakia University",
+    "slug": "medicampus-europeo-mce-faculty-of-medicine-in-partnership-with-trakia-university",
+    "city": "Floriana",
+    "type": "Private",
+    "establishedYear": 2024,
+    "officialWebsite": "https://www.medicampus.edu.mt/",
+    "featured": false,
+    "bestFitFor": [
+      "Students who want a small, English-taught EU medical programme with a low, single-digit-per-cohort study-slot cap (50 study slots cited campus-wide) and close faculty contact, rather than a large-cohort medical school",
+      "Students drawn to a compact, walkable campus location directly beside Valletta -- Malta's UNESCO World Heritage capital -- rather than a large out-of-town campus",
+      "Students comfortable with a newly licensed institution (MFHEA Licence No. 2024-020, dated June 2024) whose degree is issued by an established partner, Trakia University in Bulgaria, rather than by MCE itself",
+      "Students who are prepared to independently verify current-year NMC/NEET/FMGE requirements and MFHEA/Trakia recognition status with Indian regulators before enrolling, given how recently this institution began operating",
+      "Students who want early hands-on laboratory and clinical exposure from Year 1, followed by clerkships across a network of partner teaching hospitals in multiple European countries from Year 3"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Doctor of General Medicine (MD) -- 6-Year Medicine Programme, delivered by MediCampus Europeo in franchise partnership with Trakia University",
+        "officialProgramUrl": "https://medicampus.edu.mt/faculty-of-medicine",
+        "medium": "English (100% English-taught programme, per the official course page)",
+        "durationYears": 6,
+        "notes": "360-ECTS, 6-year Doctor of General Medicine (MD) programme taught entirely in English at the Floriana campus, with the degree formally issued by Trakia University (Bulgaria) under a franchise/accreditation arrangement -- MCE itself is licensed by Malta's Further and Higher Education Authority (MFHEA, Licence No. 2024-020, dated 26 June 2024) as the teaching institution. Curriculum follows a standard pre-clinical-to-clinical structure: Years 1-2 cover Medical Biology, Physics, Chemistry, Anatomy & Histology, Biochemistry, Physiology, Microbiology and related foundation subjects; Years 3-6 progressively add Pathophysiology, Pharmacology, Internal Diseases, Surgery, Obstetrics & Gynaecology, Pediatrics, Psychiatry and other clinical disciplines, with Year 6 structured as state-exam and clerkship credits (Internal Diseases, Surgery, Obstetrics & Gynaecology, Pediatrics, Hygiene/Epidemiology/Infectious Diseases, Emergency Medicine and elective practice). Clinical training and hospital clerkships begin from Year 3, delivered across a network of partner teaching hospitals in the EU (secondary sourcing corroborates clinical-training availability in locations such as Bratislava from Year 3 in addition to Malta). Tuition is listed on the official course page as EUR 14,500/year if paid in a single instalment, or EUR 15,500/year if paid in two instalments; next cited intakes are 25/26 July 2026 and 22/23 August 2026 (both online, the second subject to availability). Admission requirements vary by nationality: EU applicants must meet the secondary-education entry requirements of their home country, while non-EU applicants (which includes Indian applicants) are directed to contact the MCE Admissions Office directly to verify recognition and eligibility of their specific secondary-school qualification -- the official site does not publish an India-specific admissions page or state a Class-XII-direct-entry policy, so this must be confirmed case-by-case with the Admissions Office rather than assumed. The MD is stated to carry automatic recognition across the EU, Norway, Switzerland and the UK under EU Directive 2005/36/EC, and MCE's own accreditation page states that Trakia University is listed in the World Directory of Medical Schools (WDOMS) under FAIMER School ID F0001145, which is the listing route generally required for NMC recognition consideration and for ECFMG/USMLE eligibility -- however, students must independently verify current NMC recognition status, NEET eligibility, and FMGE/NExT licensing requirements directly with India's National Medical Commission before enrolling, since this page does not assert blanket Indian recognition and MCE is a very recently licensed institution (2024) with no long track record of Indian graduates yet documented."
+      }
+    ],
+    "recognitionBadges": [],
+    "recognitionLinks": [],
+    "teachingHospitals": [],
+    "similarUniversitySlugs": [],
+    "researchNotes": "MediCampus Europeo (MCE) is a private medical faculty in Floriana, Malta (campus at Casa Leone, Triq L-Imhazen, Il-Furjana FRN 1200), operating under a franchise/accreditation partnership with Trakia University, a Bulgarian state university founded in 1995 and based in Stara Zagora. MCE itself was only licensed as a Higher Education Institution by Malta's Further and Higher Education Authority (MFHEA) on 26 June 2024 (Licence No. 2024-020) -- this is a genuinely new institution (established/licensed 2024), and this recency must be stated plainly rather than implied to be an old, established medical school. The 6-year, 360-ECTS Doctor of General Medicine (MD) degree is awarded by Trakia University upon graduation, not by MCE directly; MCE's own accreditation page states Trakia University is listed in WDOMS under FAIMER School ID F0001145, which independent Wikipedia sourcing corroborates as a genuine, established Bulgarian state university (founded 1995, ~9,000 students, 9 faculties, NEAA-accredited, NEAA being an ENQA member listed in EQAR). No India-specific admissions page, India-specific quota, or India-specific recognition statement was found anywhere on MCE's official site; non-EU admission requirements are handled case-by-case via direct Admissions Office contact per the official How-to-Apply and Faculty of Medicine pages. NMC/NEET/FMGE: standard India-outbound regulatory framework applies per NMC's own official 'Information for Students to Study Abroad' page (NEET qualification required before enrolling abroad; FMGE or its successor NExT required to practise in India afterward); NMC's site does not separately name MCE or Trakia University, so this page must instruct students to verify current recognition status directly with NMC rather than asserting approval. Campus: Casa Leone is a historic Maltese building fully renovated in 2017, ~1,300 sqm across five floors, located ~800 metres from Valletta (Malta's UNESCO World Heritage capital); facilities include anatomy, chemistry and biology laboratories, a lecture hall, library, study rooms and a rooftop cafeteria with sea views; 50 study slots are cited for the programme, implying a small cohort size. Housing: MCE does not operate its own dormitory; its Student Office helps students find apartments in Floriana, Valletta, and other areas roughly 10 minutes away by bus, living alone or sharing with classmates -- this must be presented as institution-facilitated private-market housing, not a university-run hostel. Location/city: Floriana (historically Borgo Vilhena) is a small fortified town directly adjoining Valletta, with origins tracing to the Floriana Lines fortifications begun in 1636 and the Borgo Vilhena suburb founded in 1724 by Grand Master de Vilhena; its population is small (article cites ~2,205 as of 2014), and it functions largely as Valletta's immediate garden/garrison suburb, per independent Wikipedia sourcing. Indian food access: independent sourcing (EatOutMalta, FoodBlog Malta, TripAdvisor) corroborates multiple named Indian restaurants (e.g., Naan Bar, TukTuk) operating within Valletta, an 800-metre walk from the Floriana campus -- framed honestly as present-but-modest rather than an extensive diaspora food scene, consistent with Malta's overall small Indian-student community size. Safety: Malta is broadly framed as a safe, low-to-moderate crime EU country per independent Numbeo-style indices, used as general country context rather than a university-specific claim. Fees: tuition is EUR 14,500/year (single instalment) or EUR 15,500/year (two instalments) per the official Faculty of Medicine page at time of research -- students should reconfirm the current-year figure directly with MCE. Teaching hospital network: the official site references clerkships 'across our partner teaching hospitals within the European Union' from Year 3 without itemising specific named hospitals on the pages retrieved during this research pass (a dedicated Teaching Hospitals page exists in the site's navigation but returned a 404/Not Found at the URL attempted); applicants should request the current list of specific partner teaching hospitals directly from MCE's Admissions Office before enrolling, since this could not be independently itemised.",
+    "recognitionNotes": null
+  },
+  "draftContent": {
+    "summary": "MediCampus Europeo (MCE) is a private medical faculty based in Floriana, Malta, just 800 metres from the capital, Valletta, offering a 6-year, 360-ECTS Doctor of General Medicine (MD) degree taught entirely in English. The programme is delivered by MCE in a franchise partnership with Trakia University, an established Bulgarian state university founded in 1995, which formally issues the MD degree on graduation. MCE itself is a genuinely new institution, licensed as a Higher Education Institution by Malta's Further and Higher Education Authority (MFHEA) only in June 2024, so it does not yet carry the multi-decade track record of older European medical schools. The curriculum follows a standard pre-clinical-to-clinical structure, with hands-on laboratory work from Year 1 and hospital clerkships across partner teaching hospitals in the EU from Year 3. Tuition is listed at EUR 14,500 to EUR 15,500 per year depending on payment plan. MCE's official site does not publish an India-specific admissions page; non-EU applicants, including Indian students, are directed to contact the Admissions Office directly to verify recognition of their secondary-school qualifications, and students should independently confirm current NMC, NEET and FMGE/NExT requirements with Indian regulators before applying, given the institution's recent licensing history.",
+    "campusLifestyle": "MCE's campus occupies Casa Leone, a historic Maltese building in Floriana that was fully renovated in 2017 and now combines traditional architecture with modern teaching facilities across roughly 1,300 square metres and five floors. Facilities include dedicated anatomy, chemistry and biology laboratories, a lecture hall, library, quiet study rooms, and a rooftop cafeteria with sea views used for breaks and informal gatherings. The programme is cited as having 50 study slots, pointing to a small, closely knit cohort rather than a large-scale medical school, which the university positions as enabling closer student-faculty interaction. Being just 800 metres from Valletta -- Malta's UNESCO World Heritage capital -- gives students walkable access to the country's main cultural, dining and institutional hub, while the campus itself hosts student clubs, well-being initiatives, and an international student support network to help newcomers settle in.",
+    "cityProfile": "Floriana, historically known as Borgo Vilhena, is a small, fortified town directly adjoining Valletta, separated mainly by the Floriana Lines fortifications whose construction began in 1636 as an outer defensive ring for the capital. The suburb itself was founded in 1724 by Grand Master António Manoel de Vilhena and developed with gardens and spacious buildings as a calmer counterpart to the density of Valletta; it later served as a British garrison town with several barracks. With a small resident population, Floriana functions today largely as Valletta's immediate garden suburb, hosting historic granaries, churches, and events such as the Isle of MTV festival, while offering quick walking or short bus access into Valletta itself and onward to other parts of Malta. As in the rest of Malta, English is one of the country's two official languages, which supports day-to-day communication for international students without requiring Maltese fluency, though students should still budget for EU-level costs of living typical of a small island nation.",
+    "clinicalExposure": "The 6-year MD curriculum builds from foundational science subjects in Years 1-2 (Medical Biology, Anatomy & Histology, Physiology, Biochemistry, Microbiology and related subjects) toward clinical disciplines from Year 3 onward, including Pathophysiology, Pharmacology, Internal Diseases, General and Operative Surgery, Obstetrics & Gynaecology, Pediatrics, Psychiatry, and Emergency Medicine, with Year 6 structured around state examinations paired with clerkship hours in Internal Diseases, Surgery, Obstetrics & Gynaecology, Pediatrics, and Hygiene/Epidemiology/Infectious Diseases. MCE describes practical training beginning from Year 1 in its own laboratories, followed by clerkships from Year 3 onward at partner teaching hospitals across multiple European countries -- with independent sourcing confirming at least one such partner clinical-training location in Bratislava. A specific, itemised list of all current partner teaching hospitals was not published on the pages available during this research pass (the site's dedicated Teaching Hospitals page returned a Not Found error at the URL attempted), so applicants should request the current hospital-network list directly from MCE's Admissions Office before enrolling.",
+    "hostelOverview": "MCE does not operate its own on-campus dormitory or halls of residence. Instead, its Student Office helps incoming students find modern, affordable apartments in Floriana, Valletta, and other student-friendly areas roughly 10 minutes away by bus, with the option to live independently or share accommodation with fellow MCE students. This means housing is arranged through the private rental market with institutional guidance and contacts rather than through a university-run hostel, so students should budget time to research neighbourhoods and confirm current rental costs and availability directly with the Student Office well before arrival.",
+    "indianFoodSupport": "Malta does not have a large, long-established Indian student or diaspora community, and MCE's own materials do not describe a dedicated Indian-student support network, so students should not expect an extensive Indian grocery and restaurant ecosystem comparable to bigger European study hubs. That said, a genuine, accessible option exists close to campus: independent restaurant listings confirm multiple named Indian restaurants, such as Naan Bar and TukTuk, operating within Valletta, roughly an 800-metre walk from the Floriana campus, giving students realistic options for eating out. Self-catering students can supplement home cooking with international-aisle staples from Maltese supermarkets, and should connect with any existing Indian or South Asian student community at MCE or elsewhere in Malta for current, first-hand advice on sourcing specific spices or ingredients.",
+    "safetyOverview": "Malta is broadly regarded as a safe European Union destination for international students, with independent crime-index data placing the country below the European average on measures of reported crime. Floriana's small, historic, largely residential character, combined with its direct adjacency to Valletta, keeps students close to Malta's main institutional and cultural centre while avoiding the busiest nightlife districts found elsewhere on the island. English-language signage and services across Malta make it straightforward for international students to navigate daily life, healthcare, and public administration. As with any destination, students should follow standard personal-safety practices, comply with Maltese visa and residence requirements as a non-EU national, and stay in touch with the nearest Indian diplomatic mission covering Malta for updated consular guidance specific to their stay.",
+    "studentSupport": "MCE's Student Office provides dedicated orientation for international students, including campus familiarisation, introductions to classmates and staff, and a guided Valletta tour to help newcomers settle in. Since Malta International Airport is only about 10 kilometres from the Floriana campus, arrival logistics are relatively straightforward via taxi, ride-hailing apps, or airport shuttle. Non-EU students, including those from India, need an approved entry visa before travelling to Malta, and the Admissions Office provides guidance on visa types, deadlines, and required documents; the Student Office additionally coordinates counselling, financial-aid information, scholarships, payment-plan options, and social and mentoring activities. Because MCE does not publish an India-specific admissions pathway, Indian applicants should contact the Admissions Office directly early in their planning to confirm qualification recognition, visa requirements, and current fee terms, and should separately verify NMC recognition status, NEET eligibility, and FMGE/NExT requirements with Indian regulators before enrolling."
+    ,
+    "whyChoose": [
+      "Compact, English-taught 6-year MD programme on a walkable campus just 800 metres from Valletta, Malta's UNESCO World Heritage capital, with a small stated cohort size (50 study slots) enabling closer faculty interaction",
+      "Degree formally issued by Trakia University, an established Bulgarian state university (founded 1995) with its own long-standing Faculty of Medicine, rather than a stand-alone unaccredited local diploma",
+      "MD recognition asserted under EU Directive 2005/36/EC across the EU, Norway, Switzerland and the UK, plus WDOMS listing (via Trakia University, FAIMER School ID F0001145) supporting ECFMG/USMLE eligibility for North American pathways",
+      "Modern, renovated campus (Casa Leone, restored 2017) with dedicated anatomy, chemistry and biology laboratories, hands-on training from Year 1, and clerkships across partner teaching hospitals in the EU from Year 3",
+      "Comparatively transparent, published tuition (EUR 14,500-15,500 per year) and flexible one- or two-instalment payment options stated directly on the official course page"
+    ],
+    "thingsToConsider": [
+      "MCE is a very recently licensed institution -- MFHEA granted its Higher Education Institution licence only on 26 June 2024 -- so it does not have the multi-decade track record of older, established medical schools, and its degree is awarded by its Bulgarian partner, Trakia University, rather than by MCE itself",
+      "No India-specific admissions page, quota, or direct Class-XII-entry policy is published on the official site; non-EU applicants, including Indian students, must contact the Admissions Office individually to verify recognition of their secondary-school qualification before applying",
+      "This page does not assert automatic Indian recognition of the MD degree: NMC recognition status, NEET eligibility before enrolling abroad, and the FMGE/NExT licensing exam requirement to practise in India afterward must all be verified directly with India's National Medical Commission, since NMC's own site does not separately list MCE or Trakia University by name",
+      "MCE does not operate its own student housing; accommodation is arranged through the private rental market in Floriana, Valletta and nearby areas with Student Office guidance, not through a university-run hostel",
+      "A specific, itemised list of partner teaching hospitals for Year-3-onward clerkships was not published on the pages reviewed during this research; applicants should request the current hospital network list directly from the Admissions Office",
+      "Malta has only a modest Indian student community and Indian food scene compared with larger European study hubs, though Indian restaurants are confirmed to be accessible a short walk away in neighbouring Valletta",
+      "Tuition (EUR 14,500-15,500/year) and admission requirements are subject to change; students should reconfirm current-year figures and entry criteria directly with MCE before budgeting or applying"
+    ],
+    "faq": [
+      {
+        "question": "Who actually awards the medical degree at MediCampus Europeo -- MCE or Trakia University?",
+        "answer": "The Doctor of General Medicine (MD) degree is formally issued by Trakia University, a Bulgarian state university, under a franchise/accreditation partnership with MediCampus Europeo. MCE, based in Floriana, Malta, delivers the teaching and holds its own licence from Malta's Further and Higher Education Authority (MFHEA, Licence No. 2024-020, dated 26 June 2024), but graduates receive their degree certificate from Trakia University upon completion of the 6-year, 360-ECTS programme."
+      },
+      {
+        "question": "Is MediCampus Europeo a new medical school?",
+        "answer": "Yes, in terms of its own institutional licence. MFHEA licensed MediCampus Europeo as a Higher Education Institution only on 26 June 2024. Its academic partner, Trakia University in Bulgaria, is a well-established state university founded in 1995 with its own long-standing Faculty of Medicine, and it is Trakia University's name that appears on the awarded degree. Prospective students should treat MCE itself as a new campus and verify current details directly with the Admissions Office rather than assuming a long institutional track record specific to MCE."
+      },
+      {
+        "question": "Can an Indian student join MCE's MD programme directly after Class XII?",
+        "answer": "This is not confirmed by MCE's official site, which does not publish an India-specific admissions page or a stated Class-XII-direct-entry policy. Non-EU applicants, which includes Indian students, are directed generally to contact the Admissions Office to verify the recognition and eligibility of their specific secondary-school qualification. Applicants should reach out directly and in writing to confirm exactly what is required for an Indian Class-XII / HSC qualification before assuming direct entry."
+      },
+      {
+        "question": "Will an MD from MediCampus Europeo / Trakia University be recognised in India, and can graduates practise there?",
+        "answer": "This page does not assert automatic recognition. MCE's own accreditation page states that Trakia University is listed in the World Directory of Medical Schools (WDOMS) under FAIMER School ID F0001145, which is generally relevant to international recognition pathways, but India's National Medical Commission (NMC) does not separately name MCE or Trakia University on its own published guidance. Indian students are required generally to qualify NEET before enrolling in a foreign medical degree and to clear the Foreign Medical Graduate Examination (FMGE) or its successor (NExT) to obtain a licence to practise in India afterward. Students must verify current NMC recognition status directly with the regulator before enrolling, rather than assuming approval based on WDOMS listing alone."
+      },
+      {
+        "question": "How much does the MediCampus Europeo Medicine programme cost, and when can students start?",
+        "answer": "The official Faculty of Medicine page lists tuition at EUR 14,500 per year if paid in a single instalment, or EUR 15,500 per year if paid in two instalments, for the 6-year, 360-ECTS MD programme, current at the time of research. Cited upcoming intake dates are 25/26 July 2026 and 22/23 August 2026 (both online, with the second subject to availability). Students should reconfirm the exact current-year fee and intake schedule directly with MCE's Admissions Office before applying."
+      },
+      {
+        "question": "Where do MediCampus Europeo students live, and does the university run its own hostel?",
+        "answer": "MCE does not operate its own dormitory or halls of residence. Its Student Office helps students find modern, affordable apartments in Floriana, Valletta, and nearby student areas roughly 10 minutes away by bus, either living independently or sharing with classmates. Students should treat this as private-market housing with institutional guidance rather than a university-run hostel, and should confirm current rental costs and availability directly with the Student Office."
+      },
+      {
+        "question": "What is Floriana like as a place to live while studying medicine?",
+        "answer": "Floriana is a small, historic, fortified town directly adjoining Valletta, Malta's capital, just 800 metres from MCE's campus. Its origins trace to the Floriana Lines fortifications begun in 1636 and the Borgo Vilhena suburb founded in 1724, and it retains a quieter, more residential character than the busiest parts of Valletta while offering walkable access to the capital's dining, cultural, and institutional hub. English is one of Malta's two official languages, easing everyday communication, though students should still budget for typical EU-level costs of living on this small island nation."
+      }
+    ]
+  }
+}

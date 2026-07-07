@@ -1,0 +1,148 @@
+{
+  "countrySlug": "albania",
+  "schoolName": "Albanian University",
+  "cityName": "Tirana",
+  "priority": "medium",
+  "officialWebsite": "https://albanianuniversity.edu.al/en/",
+  "programUrl": "https://albanianuniversity.edu.al/en/pharmacy-department/",
+  "admissionUrl": "https://albanianuniversity.edu.al/en/the-admission-criteria/",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Albanian University - official site (English)",
+        "url": "https://albanianuniversity.edu.al/en/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Albanian University - Faculty of Medical Sciences (official)",
+        "url": "https://albanianuniversity.edu.al/en/faculty-of-medical-sciences/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Albanian University - Department of Pharmacy (official)",
+        "url": "https://albanianuniversity.edu.al/en/pharmacy-department/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Albanian University - Department of Dentistry (official)",
+        "url": "https://albanianuniversity.edu.al/en/department-of-dentistry/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Albanian University - The Admission Criteria (official)",
+        "url": "https://albanianuniversity.edu.al/en/the-admission-criteria/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Albanian University - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Albanian_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Quality Assurance Agency in Higher Education (ASCAL), Albania - Mission and Activity",
+        "url": "https://www.ascal.al/en/about-us/mission-and-activity",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Albania's national higher-education accreditation body; accredits Albanian University's programs."
+      },
+      {
+        "label": "Cost of Living in Tirana - Numbeo",
+        "url": "https://www.numbeo.com/cost-of-living/in/Tirana",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Albanian University",
+    "slug": "albanian-university",
+    "city": "Tirana",
+    "type": "Private",
+    "establishedYear": 2004,
+    "officialWebsite": "https://albanianuniversity.edu.al/en/",
+    "bestFitFor": [
+      "Indian students seeking an affordable, EU-oriented pharmacy or dentistry degree in a small European capital",
+      "Students comfortable with a program taught primarily in Albanian who are willing to complete a preparatory Albanian-language track",
+      "Students who want a compact, walkable capital-city campus experience with a low cost of living",
+      "Students exploring pathway options in dentistry/pharmacy with later mobility toward EU postgraduate study"
+    ],
+    "programs": [
+      {
+        "courseSlug": "pharmacy",
+        "title": "Integrated Master of Science in Pharmacy",
+        "officialProgramUrl": "https://albanianuniversity.edu.al/en/pharmacy-department/",
+        "medium": "Albanian (foreign applicants generally complete an Albanian-language preparatory year; confirm current English-track availability directly with the university before applying)",
+        "durationYears": 5,
+        "intakeMonths": ["October"],
+        "sourceUrls": [
+          "https://albanianuniversity.edu.al/en/pharmacy-department/",
+          "https://albanianuniversity.edu.al/en/the-admission-criteria/"
+        ]
+      },
+      {
+        "courseSlug": "bds",
+        "title": "Integrated Master of Science in Dentistry",
+        "officialProgramUrl": "https://albanianuniversity.edu.al/en/department-of-dentistry/",
+        "medium": "Albanian (foreign applicants generally complete an Albanian-language preparatory year; confirm current English-track availability directly with the university before applying)",
+        "durationYears": 5,
+        "intakeMonths": ["October"],
+        "sourceUrls": [
+          "https://albanianuniversity.edu.al/en/department-of-dentistry/",
+          "https://albanianuniversity.edu.al/en/the-admission-criteria/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Albanian University is a private higher-education institution in Tirana, established in 2004 (initially licensed as \"UFO dental\" and renamed Albanian University in 2011). Its Faculty of Medical Sciences, opened in the 2010-2011 academic year, runs integrated second-cycle Master's programs in Pharmacy and Dentistry alongside Bachelor's programs in Nursing and Physiotherapy. Programs are accredited by Albania's Quality Assurance Agency in Higher Education (ASCAL). The university does not currently offer an MBBS/general-medicine program, so it is primarily relevant to Indian students exploring integrated Pharmacy or Dentistry degrees rather than MBBS. Instruction for these programs runs mainly in Albanian, so prospective Indian applicants should independently verify the current language track, any preparatory-year requirement, and program recognition pathway (PCI for pharmacy, dental council equivalence for dentistry) directly with the university before applying.",
+    "campusLifestyle": "Albanian University's Faculty of Medical Sciences is centred in Tirana, with its main faculty office on \"Durresi\" Street and teaching spread across several university-owned buildings in the city (including premises on \"Kajo Karafili\" Street, \"Kavaja\" Street, and \"Zogu I\" Boulevard). Because the university is distributed across multiple city-centre buildings rather than a single walled campus, day-to-day student life blends into Tirana itself: cafés, libraries, and study spaces are a short walk from most teaching buildings. Tirana is a compact, walkable European capital, which makes commuting between classes, home, and the city centre straightforward without needing a car.",
+    "cityProfile": "Tirana is the capital and largest city of Albania, a compact and increasingly lively Southern European capital known for its café culture (especially the Blloku district), urban art, and relatively low cost of living compared to Western Europe. A comfortable monthly student budget in Tirana, including rent, food, transport and essentials, typically runs in the range of roughly $900-1,500, and furnished one-bedroom apartments in central neighbourhoods can be found from around $250-400 per month, making it one of the more affordable European capitals for international students. Public transport (buses and minibuses) is inexpensive, and the city's small size keeps commute times short.",
+    "clinicalExposure": "The Department of Dentistry operates its training in two phases: a two-year pre-clinical foundation followed by three years of clinical, patient-facing practice in disciplines including oral surgery, therapy, paediatric dentistry, prosthetics and periodontology, with the curriculum influenced by international (including US) dental-education models. The Faculty of Medical Sciences also runs a University Clinic. The Pharmacy program is a 5-year, 300-ECTS integrated Master's track combining pharmaceutical sciences coursework with professional practice components such as public pharmacy placements. Applicants should confirm current placement-site details, patient-contact hours, and any additional licensing-exam preparation directly with the department before enrolling.",
+    "hostelOverview": "Albanian University's public materials reviewed do not describe a dedicated on-campus hostel or dormitory system for its Faculty of Medical Sciences students. International students in Tirana commonly rely on private rental apartments, which are relatively affordable by European standards (furnished one-bedroom units from roughly $250-400/month in central neighbourhoods, less on the outskirts). Prospective applicants should ask the university's admissions/international-relations office directly about any partner accommodation, hostel arrangements, or recommended housing agencies before booking travel.",
+    "indianFoodSupport": "Tirana has a small but growing selection of Indian restaurants, including Chakra Indian Fusion (in the Kinema building near Millennium Gardens) and Orkidea Lounge Indian Cuisine, both offering curries and other North Indian staples, plus delivery options through local platforms. The Indian dining scene is modest in size compared to larger European student hubs, so students who rely heavily on home-style Indian cooking should expect to supplement restaurant meals with self-cooking using ingredients from local supermarkets and any specialty/Asian grocery stores in the city.",
+    "safetyOverview": "Albania and Tirana are generally regarded as safe for international students and expatriates, with low rates of violent crime; the more common concerns are petty theft and pickpocketing in crowded tourist and nightlife areas, which can be managed with routine precautions. Tirana's traffic congestion is a practical, everyday safety consideration, and seasonal air-quality dips during the winter heating period have been noted by residents. As with any study-abroad destination, students should register with their embassy/consulate on arrival, keep copies of key documents, and follow standard personal-safety practices in a new city.",
+    "studentSupport": "Albanian University's official site lists a Coordination and Support Office for Students (tutoring and mentoring), a Career and Alumni Office, a Students' Council, student clubs, and an International Relations Office that manages partnerships and cooperation agreements with foreign universities and Erasmus+ mobility. The university has also signed cooperation agreements with foreign institutions, including a medical-sciences partnership with Leiden University Medical Center (Netherlands). Prospective Indian applicants should contact the International Relations Office directly to confirm the specific support available to non-EU foreign students, including visa-application guidance, language-preparation courses, and orientation programs.",
+    "whyChoose": [
+      "Established, accredited private university (ASCAL-accredited programs) with a dedicated Faculty of Medical Sciences running since 2010-2011",
+      "Integrated 5-year Master's-level Pharmacy and Dentistry programs with a structured pre-clinical-to-clinical curriculum",
+      "Located in Tirana, one of Europe's most affordable capital cities, keeping overall cost of living low relative to Western European study destinations",
+      "International cooperation agreements (including with Leiden University Medical Center) and Erasmus+ mobility options for eligible students"
+    ],
+    "thingsToConsider": [
+      "No MBBS/general-medicine program is currently offered here — this university is relevant mainly for Pharmacy and Dentistry, not medicine",
+      "Instruction for Pharmacy and Dentistry is primarily in Albanian; foreign applicants should confirm any English-track option, required Albanian-language preparation, and its duration before applying",
+      "No dedicated on-campus hostel/dormitory system was found in official materials reviewed — students should plan for private rental housing",
+      "Indian food options in Tirana are limited to a small number of restaurants rather than a large dedicated Indian community/grocery ecosystem",
+      "Students must independently verify degree-recognition pathways with the relevant Indian regulator (PCI for pharmacy) before enrolling, since recognition rules can change and were not independently confirmed as part of this research"
+    ],
+    "faq": [
+      {
+        "question": "Does Albanian University offer an MBBS program for Indian students?",
+        "answer": "No. Based on the university's official Faculty of Medical Sciences page, Albanian University offers integrated Master's programs in Pharmacy and Dentistry, plus Bachelor's programs in Nursing and Physiotherapy — but not a general-medicine/MBBS program. Indian students specifically seeking MBBS should look at other Albanian universities that run a dedicated medicine faculty."
+      },
+      {
+        "question": "What is the duration of the Pharmacy and Dentistry programs at Albanian University?",
+        "answer": "Both are integrated second-cycle (Master's-level) programs lasting 5 academic years: the Pharmacy program carries 300 ECTS credits, and the Dentistry program follows a 2-year pre-clinical plus 3-year clinical structure, per the university's official department pages."
+      },
+      {
+        "question": "Is the medium of instruction English?",
+        "answer": "Public admissions information indicates foreign applicants generally need to meet an Albanian-language requirement, and program pages do not advertise a dedicated English-medium track for Pharmacy or Dentistry. Indian applicants should confirm the current language of instruction and any preparatory-year requirement directly with the university's International Relations Office before applying."
+      },
+      {
+        "question": "Is Albanian University accredited?",
+        "answer": "Yes. Albanian University's Pharmacy and Dentistry programs have been accredited/re-accredited by Albania's national Quality Assurance Agency in Higher Education (ASCAL), the country's official higher-education accreditation body, according to the university's own department pages."
+      },
+      {
+        "question": "Does Albanian University provide student hostels?",
+        "answer": "The university's official materials reviewed for this profile do not describe a dedicated hostel or dormitory system. Most international students in Tirana arrange private rental accommodation, which is relatively affordable compared to major Western European cities. Applicants should ask the university directly about any partner housing arrangements."
+      }
+    ]
+  },
+  "reviewNotes": "Non-WDOMS discovered university. Multi-source research (official site + Wikipedia + ASCAL + cost-of-living/city sources). No MBBS program found — profile built around confirmed Pharmacy and Dentistry (BDS) integrated Master's programs only. Tuition fees omitted entirely (not corroborated on official pages during this research pass). Language-of-instruction and English-track availability flagged as an honest caveat rather than asserted either way, since official pages did not explicitly state it and this is a China/Balkans-style Albanian-medium institution unlike Western Balkans University or University of Medicine Tirana. No hostel/dormitory system found in official materials -- disclosed as an open item rather than fabricated."
+}

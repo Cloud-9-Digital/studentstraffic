@@ -1,0 +1,192 @@
+{
+  "countrySlug": "italy",
+  "schoolName": "Campus Bio-Medico University of Rome (UCBM)",
+  "cityName": "Rome (Trigoria)",
+  "priority": "medium",
+  "officialWebsite": "https://www.unicampus.it/en/",
+  "programUrl": "https://www.unicampus.it/en/courses/training-offer/master-s-degree-courses/departmental-faculty-of-medicine-and-surgery/",
+  "feesUrl": "https://www.unicampus.it/en/external-student-services/tuition-fees-and-financial-aid/",
+  "hostelUrl": "https://www.unicampus.it/en/servizi/diritto-allo-studio/alloggi-per-studenti/borgo-primo-centro/",
+  "admissionUrl": "https://www.unicampus.it/en/ammissioni-trasferim/admission-for-non-eu-citizens-not-resident-in-italy-medicine-and-surgery-a-y-2025-2026/",
+  "wdomsUrl": "https://search.wdoms.org/home/SchoolDetail/F0000269",
+  "qualityScore": 80,
+  "reviewNotes": "Multi-source corroborated (official UCBM admissions/fees/accommodation/history pages, WDOMS school listing, English Wikipedia infobox, third-party admissions-consultancy summaries for cross-check, Numbeo for general Rome safety context). Tuition figure held back from a firm India-facing number: the official Tuition Fees and Financial Aid page's visible body text states a flat 18,000 euro/year figure (paid in 3 instalments) for Medicine and Surgery, but multiple third-party consultancy sites (Medlink, Standyou) separately report a differentiated EU (EUR 20,000) / non-EU (EUR 25,000) schedule; because the two do not agree and neither could be cross-confirmed against a single authoritative fee-schedule PDF for the current admission cycle, tuition was reported with an explicit range/caveat rather than a single asserted figure, and students are told to verify on the official admission-cycle page before budgeting. Non-EU seat count (36 for standard Medicine and Surgery, ay 2025/2026) is directly confirmed on the official non-EU admission page. NMC/FMGE-NExT treatment for this specific university could not be confirmed from an official Indian regulator source, so only the general NMC screening-test framework is mentioned with a verify-yourself caveat; WDOMS lists the school as operational, which is noted as a separate, weaker signal.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UCBM - Departmental Faculty of Medicine and Surgery (official programme listing: Medicine and Surgery + Medicine and Surgery \"MedTech\")",
+        "url": "https://www.unicampus.it/en/courses/training-offer/master-s-degree-courses/departmental-faculty-of-medicine-and-surgery/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UCBM - Admission for non-EU citizens not resident in Italy, Medicine and Surgery ay 2025/2026 (official; confirms 36 non-EU places, English-language written admission test)",
+        "url": "https://www.unicampus.it/en/ammissioni-trasferim/admission-for-non-eu-citizens-not-resident-in-italy-medicine-and-surgery-a-y-2025-2026/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UCBM - Admission for non-EU citizens, Medicine and Surgery \"MedTech\" ay 2026/2027 (official)",
+        "url": "https://www.unicampus.it/en/ammissioni-trasferim/admission-for-non-eu-citizens-medicine-and-surgery-medtech-a-y-2026-2027/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UCBM - CdLM Medicine and Surgery \"MedTech\" (LM-41) official course page (biomedical-engineering-integrated MD track)",
+        "url": "https://www.unicampus.it/en/courses/training-offer/master-s-degree-courses/departmental-faculty-of-medicine-and-surgery/cdlm-medicine-and-surgery-medtech-lm-41/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UCBM - Tuition Fees and Financial Aid (official)",
+        "url": "https://www.unicampus.it/en/external-student-services/tuition-fees-and-financial-aid/",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UCBM - Borgo Primo Centro student accommodation (official, Trigoria campus, ~800m from University Hospital, Decima Malafede Nature Reserve)",
+        "url": "https://www.unicampus.it/en/servizi/diritto-allo-studio/alloggi-per-studenti/borgo-primo-centro/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UCBM - About Us / Mission and History (official)",
+        "url": "https://www.unicampus.it/en/ateneo/mission-e-storia/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "World Directory of Medical Schools - Universita Campus Bio-Medico di Roma (official regulator listing: status operational)",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0000269",
+        "kind": "recognition",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Universita Campus Bio-Medico di Roma - Wikipedia (infobox: established 1993, private, Catholic Church-affiliated, Rome/Trigoria, ~2,666 students)",
+        "url": "https://en.wikipedia.org/wiki/Universit%C3%A0_Campus_Bio-Medico_di_Roma",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Campus Bio-Medico University of Rome - Medlink Students (third-party admissions summary; cross-check for tuition/admission-test description)",
+        "url": "https://www.medlinkstudents.com/universities/campus-bio-medico-university-rome/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Numbeo - Crime in Rome (general city safety/crime index data used for the safety overview)",
+        "url": "https://www.numbeo.com/crime/in/Rome",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Campus Bio-Medico University of Rome (UCBM)",
+    "slug": "campus-bio-medico-university-of-rome-ucbm",
+    "city": "Rome (Trigoria)",
+    "type": "Private",
+    "establishedYear": 1993,
+    "officialWebsite": "https://www.unicampus.it/en/",
+    "bestFitFor": [
+      "Indian students who want an English-taught MD embedded on a single, purpose-built campus that co-locates classrooms, research labs, and a JCI-accredited teaching hospital in one location",
+      "Students who are drawn to biomedical technology and want the option of the MD-plus-biomedical-engineering \"MedTech\" track alongside the standard Medicine and Surgery degree",
+      "Students comfortable sitting a university-specific English-language admission test (rather than the national IMAT most other Italian medical schools use) for one of the smaller non-EU cohorts (36 seats) among Italy's English-medium medical schools",
+      "Students who can commit to reaching working Italian for clinical-year patient contact, since instruction is in English but hospital wards operate in Italian",
+      "Families able to plan for private-university tuition and Rome-area living costs, while treating exact current-year fee figures as something to confirm directly with the university before budgeting"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Medicine and Surgery (Single-Cycle Master's Degree, English-taught)",
+        "officialProgramUrl": "https://www.unicampus.it/en/ammissioni-trasferim/admission-for-non-eu-citizens-not-resident-in-italy-medicine-and-surgery-a-y-2025-2026/",
+        "medium": "English",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "feeVerifiedAt": "2026-07-07",
+        "feeNotes": "Tuition could not be confirmed as a single authoritative figure: the official Tuition Fees and Financial Aid page states a flat EUR 18,000/year (payable in 3 instalments), while separate third-party admissions-consultancy sources report a differentiated EUR 20,000/year (EU) vs EUR 25,000/year (non-EU) schedule for the Medicine and Surgery MD. The two do not reconcile from the sources gathered, so no single tuition amount is asserted here; merit- and income-based scholarships covering up to 50% of tuition are confirmed as available from the university, Lazio Region, and partner companies. Students should request the current-year fee schedule directly from UCBM's International Admissions Office before budgeting.",
+        "sourceUrls": [
+          "https://www.unicampus.it/en/external-student-services/tuition-fees-and-financial-aid/",
+          "https://www.unicampus.it/en/ammissioni-trasferim/admission-for-non-eu-citizens-not-resident-in-italy-medicine-and-surgery-a-y-2025-2026/"
+        ]
+      },
+      {
+        "courseSlug": "mbbs",
+        "title": "Medicine and Surgery \"MedTech\" (Single-Cycle Master's Degree, English-taught, biomedical-engineering-integrated)",
+        "officialProgramUrl": "https://www.unicampus.it/en/courses/training-offer/master-s-degree-courses/departmental-faculty-of-medicine-and-surgery/cdlm-medicine-and-surgery-medtech-lm-41/",
+        "medium": "English",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "feeVerifiedAt": "2026-07-07",
+        "feeNotes": "Same tuition-verification caveat as the standard Medicine and Surgery track applies; the university has not published a confirmed separate non-EU fee figure for MedTech in the sources gathered for this research.",
+        "sourceUrls": [
+          "https://www.unicampus.it/en/ammissioni-trasferim/admission-for-non-eu-citizens-medicine-and-surgery-medtech-a-y-2026-2027/",
+          "https://www.unicampus.it/en/courses/training-offer/master-s-degree-courses/departmental-faculty-of-medicine-and-surgery/cdlm-medicine-and-surgery-medtech-lm-41/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Campus Bio-Medico University of Rome (UCBM) is a private Italian university established in 1993 with backing from Opus Dei-linked founders, built around a single Trigoria campus in southern Rome that integrates teaching facilities, biomedical research labs, and its own university hospital. Its six-year, English-taught Medicine and Surgery degree admits students through a university-run English-language admission test rather than the national IMAT most other Italian medical schools use, with 36 confirmed seats for non-EU applicants not resident in Italy in the most recent admission cycle reviewed. UCBM also offers a distinctive Medicine and Surgery \"MedTech\" track that layers biomedical-engineering coursework (AI, robotics, bioprinting, biomaterials) onto the same MD curriculum for students who want both a medical degree and an engineering-adjacent skill set. The World Directory of Medical Schools lists the university as an operational medical school. Indian students should independently verify current tuition (official and third-party sources gave differing figures at the time of this research), current admission-test format and deadlines, and how this specific MD is treated for NMC/FMGE-NExT purposes before applying.",
+    "campusLifestyle": "UCBM's Trigoria campus sits in southern Rome, built as a single integrated site that brings together the university's academic buildings, biomedical research centre (PRABB), a university hospital, and a healthcare centre for the elderly (CESA) rather than spreading facilities across the city. The standard Medicine and Surgery course runs on a six-year single-cycle structure moving from pre-clinical foundation years into clinical training with direct hospital access; the MedTech variant layers additional technical modules (artificial intelligence, big data, tissue engineering, biomaterials, bioprinting, nanotechnology, biomedical and surgical robotics, virtual and augmented reality) onto the same medical curriculum, with some classes shared alongside engineering students. Teaching for both tracks is in English, but because clinical placements involve Italian-speaking patients and staff, students need to build working Italian over the course of the programme rather than relying on English throughout. Because the campus is a defined, self-contained site in Trigoria rather than embedded in Rome's historic centre, day-to-day student life is more campus-centred, with trips into central Rome for the city's broader social and cultural life.",
+    "cityProfile": "Trigoria is a southern district of Rome, best known outside academic circles as the location of a major football club's training centre, set within reach of the Decima Malafede Nature Reserve rather than in Rome's dense historic core. This gives UCBM students a quieter, greener immediate setting while still being part of metropolitan Rome, Italy's capital and largest city, with the transport links, embassies, and large international-student population that come with it. Rome carries a materially higher cost of living than smaller Italian university towns, so students should budget for one of Italy's more expensive cities in addition to university fees; exact current monthly living-cost figures were not independently corroborated for this research and should be checked against up-to-date student cost-of-living sources before planning a budget.",
+    "clinicalExposure": "Clinical training is anchored at the Campus Bio-Medico University Hospital on the Trigoria campus, which holds Joint Commission International (JCI) accreditation, confirmed for multiple three-year cycles, meaning its health, teaching, and research activities are assessed against internationally recognised quality and safety standards. Having the teaching hospital directly on campus means clinical-year students move between classrooms, labs, and hospital wards without long commutes, a structural feature of UCBM's single-site model. The MedTech track adds exposure to applied biomedical technology (robotics, AI-assisted diagnostics, bioprinting) alongside standard clinical rotations, giving students in that track a broader mix of clinical and technical training than the standard MD alone. As with clinical training at any Italian medical school, functional Italian becomes practically necessary once students are interacting with patients and hospital staff day to day.",
+    "hostelOverview": "UCBM's own accommodation option for students is Borgo Primo Centro, a university-managed residence and guesthouse property about 800 metres from the University Hospital, set within the greenery of the Decima Malafede Nature Reserve. It offers 21 accommodation units across four types (standard studio, medium studio, two-level duplex, and one-bedroom apartment), let on a periodic-contract basis directly with Campus Bio-Medico Spa, aimed at giving students both independent, quiet study space and opportunities to socialise with other residents. Beyond this university-managed option, UCBM's services pages also list affiliated third-party accommodation providers and rental listings in the Trigoria area for students who prefer private housing near campus. Students should contact UCBM's accommodation office directly for current availability and pricing, as unit numbers are limited relative to full intake size.",
+    "indianFoodSupport": "Rome has an established international dining scene, and Indian restaurants are present across the city, including several near the historic Esquilino/Piazza Vittorio Emanuele area, a traditionally multicultural district with South Asian, Chinese, and Middle Eastern grocery stores and restaurants that many international students in Rome use as their main source of Indian and South Asian ingredients. Compared to smaller Italian university towns, Rome's size and international-student population make it comparatively easier to find Indian groceries, restaurants, and takeaway options, though the Trigoria campus itself is a commute away from the Esquilino area rather than walking distance, so students living at Borgo Primo Centro should plan grocery runs or deliveries into the city accordingly. Student community groups (WhatsApp/Facebook, common across international-student networks in Italian cities) are a practical way to find home-cooked meal-sharing arrangements and up-to-date recommendations, though this research did not identify a single authoritative directory specific to UCBM students.",
+    "safetyOverview": "Rome is generally regarded as a reasonably safe major European capital for everyday student life, with independent crime-index sources such as Numbeo tracking petty crime (pickpocketing, bag-snatching in crowded tourist and transit areas) as the more common risk rather than violent crime; students should still check current Numbeo or equivalent city-safety data directly, since these indices are updated regularly and vary by neighbourhood and time period. UCBM's Trigoria campus is a quieter, greener, more suburban setting on Rome's southern edge, away from the dense tourist zones where petty theft is more concentrated, which reduces routine exposure to those crowded-area risks for day-to-day campus life. Students travelling into central Rome for social life or sightseeing should take the ordinary precautions recommended for any large European capital: staying alert on crowded public transport, avoiding displaying valuables, and using licensed taxis or well-lit routes at night.",
+    "studentSupport": "UCBM operates a structured financial-aid system alongside its degree programmes, with scholarship opportunities covering up to 50% of tuition awarded on a mix of merit and financial need, funded jointly by the university, the Lazio Region, and partner companies with agreements in place with the university; students should confirm current-year eligibility criteria and application deadlines directly with the university's financial-aid office. Housing support is available through the university-managed Borgo Primo Centro residence plus a list of vetted third-party accommodation providers in the Trigoria area, rather than a single centralised off-campus housing office covering all students. As a small, single-campus private university with its own hospital on-site, UCBM's academic and clinical-training pathways (including the distinct MedTech option) are administratively centralised, which students and consultants describe as giving more direct access to faculty and administration than is typical at larger, multi-campus Italian public universities; students should verify current international-student support offerings (language support, orientation, visa/permesso di soggiorno assistance) directly with the International Admissions Office before enrolling.",
+    "whyChoose": [
+      "English-medium, six-year single-cycle Medicine and Surgery degree on a single, purpose-built Trigoria campus that co-locates classrooms, biomedical research facilities, and a JCI-accredited university hospital",
+      "A distinctive Medicine and Surgery \"MedTech\" track layering biomedical-engineering training (AI, robotics, bioprinting, biomaterials) onto the standard MD curriculum, a differentiator not offered by most Italian medical schools",
+      "Admission through a university-run English-language test rather than the national IMAT, with a clearly confirmed non-EU seat count (36 seats for the standard track in the most recent cycle reviewed)",
+      "Listed as an operational medical school in the World Directory of Medical Schools (WDOMS), the WHO-affiliated global registry many countries' medical regulators reference to verify foreign medical qualifications",
+      "University-managed on-campus-adjacent housing (Borgo Primo Centro) set in a quiet, green, nature-reserve-adjacent part of Rome, plus confirmed merit- and need-based scholarships covering up to 50% of tuition"
+    ],
+    "thingsToConsider": [
+      "Tuition could not be confirmed as a single reliable figure for this research: the official fees page states a flat EUR 18,000/year while separate third-party sources report a differentiated EUR 20,000 (EU) / EUR 25,000 (non-EU) schedule; students must get the current, official fee schedule in writing from UCBM's admissions office before budgeting",
+      "Admission is via UCBM's own English-language test with a relatively small confirmed non-EU cohort (36 seats for the standard Medicine and Surgery track), a different and more competitive-per-seat pathway than the national IMAT used elsewhere in Italy",
+      "Although teaching is in English, functional Italian becomes practically necessary during clinical years since hospital patients and staff communicate in Italian",
+      "The Trigoria campus is a quieter, more suburban part of southern Rome rather than the historic centre, and is a commute away from areas like Esquilino with the strongest concentration of Indian and South Asian shops and restaurants",
+      "Students planning to practice in India after graduating should independently verify, close to their admission and graduation years, how this specific university's MD is treated for NMC screening-test (FMGE/NExT) purposes; this research found the university listed as operational in WDOMS but could not confirm a university-specific statement from India's National Medical Commission"
+    ],
+    "faq": [
+      {
+        "question": "Is Campus Bio-Medico University of Rome (UCBM) public or private?",
+        "answer": "It is a private university, established in 1993 and built around its own Trigoria campus in southern Rome, which includes a university hospital and biomedical research facilities on the same site."
+      },
+      {
+        "question": "What Medicine programmes does UCBM offer in English?",
+        "answer": "UCBM offers a standard six-year, English-taught Medicine and Surgery single-cycle Master's degree, and a distinct \"MedTech\" variant of the same MD that adds biomedical-engineering coursework (AI, robotics, bioprinting, biomaterials) for students who want both a medical degree and applied-technology training."
+      },
+      {
+        "question": "Do I need to take the IMAT to apply?",
+        "answer": "No. UCBM uses its own English-language written admission test for both Medicine and Surgery tracks rather than the national IMAT used by most other Italian medical schools; check the official non-EU admission page for the current test format and dates."
+      },
+      {
+        "question": "How many seats are available for non-EU (Indian) applicants?",
+        "answer": "The official non-EU admission page for the standard Medicine and Surgery track confirms 36 available places (Ministerial Decree allocation) for non-EU citizens not resident in Italy in the most recent cycle reviewed; seat numbers are set annually, so confirm the current year's figure directly with UCBM."
+      },
+      {
+        "question": "How much does the Medicine and Surgery course cost for non-EU (Indian) students?",
+        "answer": "This could not be confirmed as a single reliable figure: UCBM's official Tuition Fees and Financial Aid page states a flat EUR 18,000/year, while separate third-party sources report a differentiated EUR 20,000 (EU) / EUR 25,000 (non-EU) schedule. Because these do not agree, request the current, written fee schedule directly from UCBM's International Admissions Office before budgeting. Scholarships covering up to 50% of tuition (merit- and need-based) are confirmed as available."
+      },
+      {
+        "question": "Is Italian language knowledge required for this English-medium programme?",
+        "answer": "Teaching is in English throughout both the standard and MedTech tracks, but clinical-year training involves interacting with Italian-speaking patients and hospital staff, so students need to build working Italian over the course of the programme."
+      },
+      {
+        "question": "Where do international students live?",
+        "answer": "UCBM operates its own Borgo Primo Centro residence about 800 metres from the University Hospital, offering studio and duplex/apartment-style units on a periodic-contract basis, plus a list of vetted third-party accommodation providers in the Trigoria area for students who prefer private housing."
+      },
+      {
+        "question": "Will this degree let me practice medicine in India?",
+        "answer": "UCBM is listed as an operational medical school in the World Directory of Medical Schools (WDOMS), a WHO-affiliated global registry many countries use to verify foreign medical qualifications. This research could not confirm a university-specific statement of NMC/FMGE-NExT treatment from India's National Medical Commission, so Indian students should independently verify current NMC screening-test requirements for their intake year before enrolling."
+      },
+      {
+        "question": "Is the area around the campus safe for international students?",
+        "answer": "Rome generally scores reasonably on independent city-safety indices, with petty theft in crowded tourist and transit areas cited as the main practical risk rather than violent crime. UCBM's Trigoria campus is a quieter, greener, more suburban setting away from Rome's busiest tourist zones, which reduces routine exposure to those crowded-area risks."
+      }
+    ]
+  }
+}

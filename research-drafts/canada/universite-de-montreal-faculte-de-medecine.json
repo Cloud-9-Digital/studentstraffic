@@ -1,0 +1,89 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "Université de Montréal (Faculté de médecine)",
+  "cityName": "Montreal",
+  "priority": "low",
+  "officialWebsite": "https://medecine.umontreal.ca/",
+  "status": "hold",
+  "reviewNotes": "HOLD - do not publish. Université de Montréal's Faculté de médecine offers the Doctorat de 1er cycle en médecine (undergraduate-entry MD, 4 years). Admission requires Canadian citizenship or permanent-resident status (or, for a small re-entry stream, Convention refugee status) by the application deadline, per the program's own official admission-conditions page (admission.umontreal.ca/programmes/doctorat-de-1er-cycle-en-medecine/). The Faculty's own International FAQ page confirms in plain language that seats reserved for international students in 1st-cycle programs -- and the MD program specifically -- are limited/restricted ('les places réservées aux étudiants internationaux sont limitées'), while graduate RESEARCH programs (2nd/3rd cycle: M.Sc./Ph.D.) are described as much more flexible for international admission -- but those are research degrees, not a clinical MD/MBBS-equivalent or postgraduate clinical-specialty (residency) pathway, so they do not map to this site's mbbs/medical-pg/bsc-nursing/pharmacy/bds courseSlug taxonomy. Separately, the Faculty's 'Diplômés Internationaux en Médecine' (DIM) re-entry route for foreign-trained doctors seeking to (re)join the MD program is capped at about 2 seats/year, requires Quebec-resident status via a Certificat de sélection du Québec/CAQ process, and is not open to a general Indian applicant pool. Instruction is entirely in French (new French-proficiency requirement takes effect Winter 2026: CECRL level C1 on tests such as TEF/TCF for applicants who did not study entirely in French), a further honest barrier for most Indian applicants. The Faculty of Medicine does not itself offer BDS, Bachelor of Pharmacy, or BSc Nursing degrees (those are separate UdeM faculties -- Faculté de médecine dentaire, Faculté de pharmacie, Faculté des sciences infirmières -- outside the scope of this research target, 'Faculté de médecine'). For completeness, the same closed-to-international-study-permit-holders pattern was independently confirmed on UdeM's own Doctorate in Dentistry and Doctorate in Pharmacy admission pages ('Non offert aux candidats étrangers avec un permis d'études', citizenship/PR required) -- i.e., this is a university-wide pattern for UdeM's professional health degrees, not a one-off. No program entry is included because none can be honestly offered to an Indian-student MBBS/medical-study-abroad audience under this site's course taxonomy. See the accompanying .md research record for the full source list and details.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Université de Montréal Admission - Doctorat de 1er cycle en médecine (official program admission page: citizenship/PR requirement, French-proficiency requirement, DEC/prerequisite conditions)",
+        "url": "https://admission.umontreal.ca/programmes/doctorat-de-1er-cycle-en-medecine/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Faculté de médecine UdeM - International FAQ ('Je ne suis pas citoyen canadien... quelles sont mes chances d'être admis?' -- confirms limited international seats in 1st-cycle/MD, more flexibility in 2nd/3rd-cycle research programs, and the DIM re-entry pathway)",
+        "url": "https://medecine.umontreal.ca/international/foire-aux-questions/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Université de Montréal Admission - Doctorat de 1er cycle en médecine dentaire (official; corroborates the same 'Non offert aux candidats étrangers avec un permis d'études' + citizenship/PR pattern university-wide for UdeM professional health degrees)",
+        "url": "https://admission.umontreal.ca/programmes/doctorat-de-1er-cycle-en-medecine-dentaire/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Université de Montréal Admission - Doctorat de 1er cycle en pharmacie (official; same closed-to-study-permit-holders + citizenship/PR pattern)",
+        "url": "https://admission.umontreal.ca/programmes/doctorat-de-1er-cycle-en-pharmacie/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Faculté de médecine dentaire UdeM - Étudiants internationaux (official; states international students at graduate level are normally directed to M.Sc./Ph.D. oral-sciences research programs, since other programs require authorization to practise dentistry in Quebec)",
+        "url": "https://medecinedentaire.umontreal.ca/etudes/etudiants-internationaux/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "BeMo Academic Consulting - University of Montreal Medical School: How to Get In (independent corroboration: ~95% of MD seats reserved for Quebec residents, ~2 seats/year for visa-holding international students, ~5.3% international admit rate, French-fluency requirement)",
+        "url": "https://bemoacademicconsulting.com/blog/university-of-montreal-medical-school",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Wikipedia - Université de Montréal (independent corroboration of founding year 1878, public status, French-language instruction, Montreal location)",
+        "url": "https://en.wikipedia.org/wiki/Universit%C3%A9_de_Montr%C3%A9al",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Université de Sherbrooke - Contingent québécois, catégorie des diplômés internationaux en médecine (independent regional corroboration of the province-wide DIM/Quebec-contingent mechanics: requires Canadian citizenship/PR plus Quebec-resident status)",
+        "url": "https://www.usherbrooke.ca/etudes-medecine/programmes-detudes/doctorat-en-medecine/admission/contingent-quebecois-categorie-des-diplomes-internationaux-en-medecine",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Université de Montréal (Faculté de médecine)",
+    "city": "Montreal",
+    "type": "Public",
+    "establishedYear": 1878,
+    "officialWebsite": "https://medecine.umontreal.ca/",
+    "bestFitFor": [],
+    "programs": [],
+    "notes": "GATE NOT MET: no program with an allowed courseSlug (mbbs, medical-pg, bsc-nursing, pharmacy, bds) can be honestly listed. The Doctorat de 1er cycle en médecine (undergraduate MD) requires Canadian citizenship or permanent-resident status (a small DIM re-entry stream for foreign-trained doctors is Quebec-residency-gated and capped near 2 seats/year -- not a general Indian-applicant pathway). Instruction is entirely in French with a new C1-level French-proficiency bar from Winter 2026. The Faculty of Medicine does not offer BDS, Pharmacy, or Nursing degrees (those sit in separate UdeM faculties). UdeM's own Dentistry and Pharmacy doctoral programs were independently checked and show the identical 'not offered to international students holding a study permit' + citizenship/PR restriction, confirming this is a structural, university-wide pattern rather than a one-off for medicine."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [
+      "The Doctorat de 1er cycle en médecine (MD) at Université de Montréal's Faculté de médecine requires Canadian citizenship or permanent-resident status at the application deadline; only a small number of seats (roughly two per year, per independent reporting) go to genuinely international, visa-holding applicants, making it an extremely long shot for a typical Indian applicant.",
+      "All instruction is in French, and starting Winter 2026 the university applies a new C1-level (CECRL) French-proficiency bar for applicants who did not complete their prior studies entirely in French -- a further practical barrier beyond the citizenship restriction.",
+      "The Faculté de médecine does not offer BDS, Bachelor of Pharmacy, or BSc Nursing degrees -- those programs sit in separate UdeM faculties (Faculté de médecine dentaire, Faculté de pharmacie, Faculté des sciences infirmières), and this school's own dentistry and pharmacy doctoral programs were separately confirmed to carry the same 'not offered to international study-permit holders' restriction, so this university does not fit the site's other India-outbound course categories via the Faculty of Medicine either.",
+      "Université de Montréal's graduate research programs (Master's/PhD in biomedical or oral sciences) are described by the Faculty as much more open to international students than the 1st-cycle MD program, but these are research degrees, not a clinical MBBS-equivalent or postgraduate clinical-specialty (residency) route, so they cannot be honestly listed under this site's mbbs/medical-pg/bsc-nursing/pharmacy/bds taxonomy."
+    ],
+    "faq": []
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "countrySlug": "italy",
+  "schoolName": "Saint Camillus International University of Health and Medical Sciences (UniCamillus)",
+  "cityName": "Rome",
+  "priority": "medium",
+  "officialWebsite": "https://unicamillus.org/en/",
+  "programUrl": "https://unicamillus.org/courses/magistrale/medicina-e-chirurgia-roma/",
+  "feesUrl": "https://unicamillus.org/en/services/annual-tuition-fees/",
+  "admissionUrl": "https://unicamillus.org/en/services/admission-calls/",
+  "qualityScore": 80,
+  "reviewNotes": "Multi-source corroborated (official UniCamillus pages and official tuition-fee PDFs, Wikipedia, Italy-focused study-abroad/medical-school portals). Tuition CONFIRMED and current: official Rector's Decree PDFs for A.Y. 2025/2026 give EUR 21,000/year for the English-medium MSc Medicine and Surgery (Rome) and EUR 3,000/year for the English-medium BSc Nursing (Rome), both plus a small annual regional study tax (EUR 140 for 2024/2025). As of this research, the official MSc Medicine and Surgery (English, Rome) course page shows 'Registrations closed' for the current admission cycle, while BSc Nursing (English) shows 'Registrations open (EU candidates)'; this is flagged honestly in thingsToConsider/FAQ since admission-cycle status changes yearly and students must check the live admission calls page. No dedicated on-campus/university-run hostel could be corroborated from the official site (the international-students page covers visa/permit/tax-code steps, not housing); accommodation content is grounded in corroborated third-party info about the university-linked UniCampus Apartments residence and general Rome student-housing/safety guidance, with an honest caveat that UniCamillus does not appear to run its own halls of residence.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UniCamillus - Home (official site)",
+        "url": "https://unicamillus.org/en/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniCamillus - MSc Medicine and Surgery (LM-41), Rome, taught in English (official program page)",
+        "url": "https://unicamillus.org/courses/magistrale/medicina-e-chirurgia-roma/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniCamillus - BSc Nursing (L/SNT-1), Rome, taught in English (official program page)",
+        "url": "https://unicamillus.org/en/courses/bsc/nursing/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniCamillus - Annual tuition fees (official index page linking current fee regulations)",
+        "url": "https://unicamillus.org/en/services/annual-tuition-fees/",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniCamillus - Tuition Fees Regulation A.Y. 2025/2026, EU and Non-EU, Single-Cycle Master's Degree (Medicine and Surgery / Dentistry), Rome Campus (official PDF, EUR 21,000/year Medicine and Surgery in English)",
+        "url": "https://unicamillus.org/wp-content/uploads/regulations/146r-720-24dr-tuition-fees-and-contributions_single-cycle-2025-2026-rome-campus.pdf",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniCamillus - Tuition Fees Regulation A.Y. 2025/2026, EU and Non-EU, Bachelor's Degree Programs in the Health Professions, Rome Campus (official PDF, EUR 3,000/year Nursing in English)",
+        "url": "https://unicamillus.org/wp-content/uploads/regulations/149r-723-24dr-tuition-fees-and-contributions_bachelors-degree-program-2025-2026.pdf",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniCamillus - International Students (official visa, tax-code and residence-permit guidance)",
+        "url": "https://unicamillus.org/en/services/international-students/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniCamillus - Scholarships and Honours Student Loans (official)",
+        "url": "https://unicamillus.org/en/services/scholarships-and-honours-student-loans/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Saint Camillus International University of Health and Medical Sciences - Wikipedia (founding date, type, student numbers, degree list)",
+        "url": "https://en.wikipedia.org/wiki/Saint_Camillus_International_University_of_Health_and_Medical_Sciences",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Saint Camillus International University of Health Sciences - Medlink Students (recognition, hospital ties, curriculum overview)",
+        "url": "https://www.medlinkstudents.com/universities/saint-camillus-international-university-medicine/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Unicamillus Saint Camillus University, Rome Accommodation - Casita (third-party student housing near campus, incl. UniCampus Apartments)",
+        "url": "https://www.casita.com/student-accommodation/italy/rome/universita-unicamillus-saint-camillus-international-university-of-health-sciences",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Is Rome safe? 4 areas to avoid in Rome as a student or young professional - HousingAnywhere",
+        "url": "https://housinganywhere.com/Rome--Italy/areas-to-avoid-in-rome",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Indians in Italy - Wikipedia (Indian community size and distribution, incl. Rome/Lazio)",
+        "url": "https://en.wikipedia.org/wiki/Indians_in_Italy",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Saint Camillus International University of Health and Medical Sciences (UniCamillus)",
+    "slug": "unicamillus-saint-camillus-international-university-of-health-and-medical-sciences",
+    "city": "Rome",
+    "type": "Private",
+    "establishedYear": 2017,
+    "officialWebsite": "https://unicamillus.org/en/",
+    "bestFitFor": [
+      "Indian students who want an English-medium, six-year single-cycle MD program at a young, internationally oriented private university with a strong non-EU/international-student population",
+      "Students drawn to UniCamillus's stated humanitarian and global-health orientation (curriculum content on tropical/Global-South disease burden, partnerships in developing countries) alongside standard clinical training",
+      "Budget-conscious families comparing Italian medical universities, since UniCamillus's officially published Medicine and Surgery tuition (EUR 21,000/year) and Nursing tuition (EUR 3,000/year) are transparently published each year rather than estimated by agents",
+      "Students open to a newer university (founded 2017) rather than a century-old institution, trading long institutional history for a modern, internationally-focused campus and administration",
+      "Students who are comfortable confirming admission-cycle status directly with the university each year, since English-medium course registration windows (open/closed) can change between intakes"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "MSc Medicine and Surgery (LM-41) - Rome, taught in English",
+        "officialProgramUrl": "https://unicamillus.org/courses/magistrale/medicina-e-chirurgia-roma/",
+        "medium": "English",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "feeNotes": "Officially confirmed for A.Y. 2025/2026 (Rector's Decree no. 720, 19 December 2024): annual tuition EUR 21,000, payable in installments, plus a small annual regional study-right tax (EUR 140 for A.Y. 2024/2025; the exact figure is reset each year). A EUR 16 revenue stamp applies at enrollment and renewal, and a EUR 250 graduation fee plus a State Exam admission fee (about EUR 49.58) apply at the end of the program. As of this research, the official course page shows the current admission cycle as 'Registrations closed' - students should check UniCamillus's live Admission Calls page for the next open intake and current-year fee regulation before planning around this program.",
+        "sourceUrls": [
+          "https://unicamillus.org/courses/magistrale/medicina-e-chirurgia-roma/",
+          "https://unicamillus.org/wp-content/uploads/regulations/146r-720-24dr-tuition-fees-and-contributions_single-cycle-2025-2026-rome-campus.pdf",
+          "https://unicamillus.org/en/services/annual-tuition-fees/"
+        ]
+      },
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "BSc Nursing (L/SNT-1) - Rome, taught in English",
+        "officialProgramUrl": "https://unicamillus.org/en/courses/bsc/nursing/",
+        "medium": "English",
+        "durationYears": 3,
+        "intakeMonths": ["September"],
+        "feeNotes": "Officially confirmed for A.Y. 2025/2026 (Rector's Decree no. 723, 19 December 2024): annual tuition EUR 3,000 for both EU and non-EU students, payable in installments, plus the same small annual regional study-right tax (EUR 140 for A.Y. 2024/2025) and a EUR 16 revenue stamp at enrollment/renewal. As of this research, the official course page shows this program's current admission cycle as 'Registrations open (EU candidates)'; non-EU applicants should confirm current-cycle eligibility and deadlines on UniCamillus's Admission Calls page.",
+        "sourceUrls": [
+          "https://unicamillus.org/en/courses/bsc/nursing/",
+          "https://unicamillus.org/wp-content/uploads/regulations/149r-723-24dr-tuition-fees-and-contributions_bachelors-degree-program-2025-2026.pdf",
+          "https://unicamillus.org/en/services/annual-tuition-fees/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Saint Camillus International University of Health and Medical Sciences (UniCamillus) is a private university in Rome, officially established and accredited by the Italian Ministry of University and Research in November 2017 and reported to have grown to roughly 5,100 students by 2024, with an unusually large share of non-EU international enrollment for an Italian university. Its flagship program for Indian students is the six-year, English-medium MSc Medicine and Surgery (Rome campus), with tuition officially published at EUR 21,000 per year for A.Y. 2025/2026; the university also runs a three-year English-medium BSc Nursing program at EUR 3,000 per year. UniCamillus positions itself around a stated humanitarian mission, with curriculum content and research partnerships oriented toward diseases and health challenges common in the Global South (malaria, HIV/AIDS, tuberculosis, neglected tropical diseases) alongside standard Italian medical training. Because it is a newer institution (founded 2017) rather than a legacy university, and because English-medium course registration status can change by admission cycle, Indian students should independently verify the current year's intake status, NMC/FMGE(NExT) treatment of the degree, and Italian-language requirements for clinical rotations before committing.",
+    "campusLifestyle": "UniCamillus is a single-campus private university in Rome dedicated exclusively to medical and health sciences, structured around a Department of Medicine and Surgery alongside nursing, physiotherapy, dentistry and other allied-health departments. The English-medium MSc Medicine and Surgery is a 360-ECTS, six-year program combining formal lectures and seminars with non-formal, small-group problem-based learning, supervised vocational training (60 ECTS across internal medicine, general surgery, paediatrics, obstetrics/gynaecology and medical-surgical specialities), and elective activities; in the final stage of the program, once non-Italian students have sufficient language skills, some courses may shift to Italian. Language of instruction for the degree itself is English, but the language of instruction for practical clinical internships is Italian, which is an important workload consideration for international students. The university describes itself as having a strong international, non-EU-majority student body, with a dedicated Welcome/International Office that assists students with the formalities of studying and living in Italy (visa steps, tax code, residence permit, health-service registration).",
+    "cityProfile": "Rome is Italy's capital and largest city, a major hub for international students with well-developed public transport, including Metro Lines A and B. UniCamillus's Rome campus (Via di Sant'Alessandro 8) sits in the eastern part of the city, reachable via Metro Line B, with nearby stations including Bologna, Policlinico, Tiburtina, Monti Tiburtini and Pietralata cited as convenient access points for student housing searches. Italy has a large and growing Indian community - well over 150,000 Indians live in Italy overall, concentrated mainly in the central and northern regions including Lazio (Rome's region) - which supports a base of Indian grocery stores, restaurants, and informal community networks in the city, though Rome's Indian community is smaller and more dispersed than Milan's. Students should budget for Rome's cost of living (rent, food, and transport are generally moderate by major-European-capital standards, though prices vary sharply by neighbourhood) and independently research current rental costs and neighbourhood options before arrival.",
+    "clinicalExposure": "UniCamillus states that its degree programs place strong emphasis on clinical training through cooperation with hospitals and healthcare facilities in and around Rome, and that its Medicine and Surgery graduates gain progressive exposure to real patients through supervised vocational rotations across internal medicine, general surgery, paediatrics, obstetrics/gynaecology and medical-surgical specialities (60 ECTS of the 360-ECTS program), plus a dissertation-related internship in the final stage that can be completed at a university-affiliated or, with supervisor approval, non-affiliated facility. Because clinical internships are conducted in Italian even though the degree itself is taught in English, functional Italian is effectively required by the time rotations begin, not merely recommended. BSc Nursing students similarly combine classroom learning with workshops, simulations and hospital-based internships from the first year, needing 4,600 hours of theoretical and practical activity before the qualifying final exam. Independent sources note the university has stated recognition markers relevant to graduates (e.g. ECFMG and WDOMS-related listings cited by third-party admissions consultancies), but Indian students should verify current NMC/FMGE(NExT) and any other India-specific recognition requirements directly with NMC guidance for their intake year, since this research could not confirm an NMC-specific statement naming this university.",
+    "hostelOverview": "UniCamillus's official international-students page focuses on visa, tax-code and residence-permit procedures rather than describing a university-run halls-of-residence system, and this research could not corroborate a dedicated UniCamillus on-campus dormitory from official sources. In practice, students commonly use UniCampus Apartments, a private student residence in the Casal Monastero area north of the main campus, along with general Rome rental platforms (idealista.it, immobiliare.it and similar) recommended informally for private housing; some UniCamillus student-benefit arrangements reportedly include discounted rates at nearby residences and short-stay accommodation partners, though this could not be confirmed from an official, current source. Students should treat off-campus rental as the default expectation, budget for Rome's variable rental market (which differs sharply by neighbourhood), and verify current accommodation options and any university housing partnerships directly with UniCamillus's Welcome/International Office before arrival.",
+    "indianFoodSupport": "Rome's Indian community is smaller and more dispersed than Milan's, but Italy overall is home to a large Indian population (well over 150,000, concentrated mainly in central and northern regions), and Rome has a number of established Indian restaurants, including well-known options in the Termini station area and in Trastevere (such as Jaipur) and along Via Cavour near Cavour metro station (such as Sitar, close to an Indian/international grocery). Students relying on home-style food should expect to travel across the city for the best Indian grocery and restaurant options rather than finding them clustered near the eastern campus, and should use student community groups (WhatsApp/Facebook, university international-student networks) to find current recommendations, since specific shops and restaurants open and close over time.",
+    "safetyOverview": "Rome is generally considered a safe city for international students - one 2026 safety guide ranks it among the 30 safest cities globally - with violent crime against residents and visitors uncommon; the realistic day-to-day risk is petty theft and pickpocketing, concentrated around tourist landmarks, crowded public transport, and specific train/metro stations such as Termini, Tiburtina, and Ostiense, and in central Vittorio Square. A small number of neighbourhoods (Esquilino near Termini, and the more peripheral San Basilio, Corviale, and Tor Bella Monaca) are flagged by housing guides as having higher reported crime and are generally suggested as areas to approach with more caution for long-term student housing, with nearby alternatives (such as Monti, next to Esquilino) commonly recommended instead. Students are advised to take standard precautions on crowded transit and near major stations rather than expecting zero risk, consistent with safety guidance for any large European capital.",
+    "studentSupport": "UniCamillus's international-student services cover the practical steps of studying in Italy: pre-enrolment via the UniversItaly portal, visa application guidance, applying for the mandatory residence permit (Permesso di Soggiorno) within 8 business days of arrival, obtaining an Italian tax code (codice fiscale), and registering with Italy's National Health Service (SSN). Because UniCamillus does not receive Italian state funding (as a private university established under Ministerial Decree 927/2017), it explicitly states in its own tuition regulations that it does not participate in Italy's standard need-based state-scholarship exemption scheme available at public universities; instead, financial support comes through the university's own scholarship and honours-loan program (including merit-based awards for top-ranked admission-test performers and separate provisions for non-EU students in financial need via an affiliated foundation) - students should check the current year's scholarship terms directly, since amounts and eligibility criteria are reviewed annually.",
+    "whyChoose": [
+      "Officially published, transparent tuition for A.Y. 2025/2026 (EUR 21,000/year for the English-medium six-year MSc Medicine and Surgery; EUR 3,000/year for the English-medium BSc Nursing), set out in dated Rector's Decrees rather than only quoted by third-party agents",
+      "A stated humanitarian and global-health orientation, with curriculum content and research partnerships focused on diseases and health challenges common in the Global South (malaria, HIV/AIDS, tuberculosis, neglected tropical diseases), which may appeal to students interested in international or humanitarian medicine",
+      "A university built specifically around international and non-EU students, with a dedicated Welcome/International Office supporting visa, tax-code, residence-permit and national health-service registration steps",
+      "Location in Rome, Italy's capital, with access to Metro Line B and the depth of resources, hospitals, and cultural/professional opportunities that come with living in a major European capital rather than a smaller university town",
+      "Both a six-year MD pathway and a three-year English-medium BSc Nursing pathway are available at the same Rome campus, giving families more than one course-and-budget combination to evaluate"
+    ],
+    "thingsToConsider": [
+      "As of this research, the official MSc Medicine and Surgery (English, Rome) course page showed the current admission cycle as 'Registrations closed', while BSc Nursing (English) showed 'Registrations open (EU candidates)' - admission-cycle status changes yearly, so students must check UniCamillus's live Admission Calls page for the year they intend to apply",
+      "UniCamillus is a young university (founded 2017) rather than a long-established one; students weighing it against older Italian medical schools should factor in its shorter track record of graduate outcomes",
+      "Clinical/practical internships are conducted in Italian even though the MD program is taught in English, so functional Italian becomes necessary once rotations begin, not merely useful",
+      "No official, university-run halls-of-residence system could be confirmed for international students; most students appear to arrange private or third-party student housing (e.g. UniCampus Apartments) rather than a guaranteed on-campus room",
+      "As a private university receiving no Italian state funding, UniCamillus does not participate in Italy's standard state-scholarship exemption scheme available at public universities; financial support instead depends on the university's own scholarship/loan programs, so students needing aid should confirm current eligibility and amounts directly rather than assuming public-university-style state support",
+      "Students planning to practice in India after graduating should independently verify, close to their admission and graduation years, how this university's MD degree is treated for NMC/FMGE(NExT) purposes, since recognition frameworks and screening-test rules can change and this research could not find an NMC-specific confirmation naming this university"
+    ],
+    "faq": [
+      {
+        "question": "Is UniCamillus public or private?",
+        "answer": "It is a private university, officially recognised and accredited by the Italian Ministry of University and Research in November 2017, based in Rome (with additional campuses in Cefalu and Venice)."
+      },
+      {
+        "question": "What is the tuition fee for the English-medium MSc Medicine and Surgery?",
+        "answer": "For A.Y. 2025/2026, UniCamillus's official Rector's Decree sets annual tuition at EUR 21,000 for the six-year Rome-campus program taught in English, payable in installments, plus a small annual regional study-right tax (EUR 140 for A.Y. 2024/2025) and administrative stamp duties. Figures are set annually, so students should confirm the current year's regulation before applying."
+      },
+      {
+        "question": "What is the tuition fee for the English-medium BSc Nursing program?",
+        "answer": "For A.Y. 2025/2026, UniCamillus's official Rector's Decree sets annual tuition at EUR 3,000 for the three-year Rome-campus BSc Nursing program taught in English, for both EU and non-EU students, plus the same small annual regional study-right tax and administrative stamp duties."
+      },
+      {
+        "question": "Is the MD program currently accepting applications?",
+        "answer": "This varies by admission cycle. At the time of this research, UniCamillus's official course page showed the English-medium MSc Medicine and Surgery (Rome) as having its current registrations closed, while BSc Nursing (English) showed registrations open for EU candidates. Students should check UniCamillus's live Admission Calls page for the current status and next intake."
+      },
+      {
+        "question": "Do clinical rotations require knowledge of Italian?",
+        "answer": "Yes. While the MSc Medicine and Surgery and BSc Nursing programs are taught in English, practical clinical internships are conducted in Italian, since students work with Italian-speaking patients and staff at affiliated hospitals and facilities. Students should plan to build functional Italian ahead of their clinical years."
+      },
+      {
+        "question": "Does UniCamillus provide student housing?",
+        "answer": "This research could not confirm a dedicated, university-run halls-of-residence system from official sources. Students commonly use nearby private student residences (such as UniCampus Apartments) or general Rome rental platforms; prospective students should confirm current housing options and any university housing partnerships directly with UniCamillus's Welcome/International Office."
+      },
+      {
+        "question": "Will this degree let me practice medicine in India?",
+        "answer": "This could not be independently confirmed for NMC/FMGE(NExT) purposes as part of this research. Indian students should verify NMC screening-test requirements and current foreign-medical-degree recognition rules for their specific intake and graduation years directly with NMC guidance before enrolling."
+      },
+      {
+        "question": "Is Rome a safe city for international students?",
+        "answer": "Generally yes. Rome is considered a safe major city, with violent crime uncommon; the main practical risk cited by safety guides is petty theft and pickpocketing around tourist landmarks, crowded public transport, and certain stations (Termini, Tiburtina, Ostiense). Standard precautions on public transport and around busy stations are advised, similar to other large European capitals."
+      }
+    ]
+  }
+}

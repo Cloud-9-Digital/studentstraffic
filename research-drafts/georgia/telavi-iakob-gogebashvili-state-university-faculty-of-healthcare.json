@@ -1,0 +1,89 @@
+{
+  "countrySlug": "georgia",
+  "universitySlug": "telavi-iakob-gogebashvili-state-university-faculty-of-healthcare",
+  "schoolName": "Telavi Iakob Gogebashvili State University - Faculty of Healthcare (Public Health)",
+  "cityName": "Telavi",
+  "priority": "low",
+  "officialWebsite": "https://tesau.edu.ge/en/",
+  "qualityScore": 0,
+  "reviewNotes": "NOT PUBLISH-READY (ok=false). Multi-source research (official site current navigation/faculties/catalogue pages, English Wikipedia's exhaustive Bachelor/Master/PhD faculty listings, official state-funded-program announcement, and web searches) all agree TESAU currently has exactly 3 faculties - Education and Humanities; Social Sciences, Business and Law; Agrarian, Natural Sciences and Technologies - and NO current Faculty of Healthcare or Public Health faculty. The only trace of a 'jandacvis fakulteti' (Faculty of Healthcare) is inside archived PDFs on the official domain's static file directory (a 2007/2008-curriculum Bachelor of Pharmacy document and a 2011-dated PhD 'Public Health'/'PhD in Health Care' doctoral-program document delivered partly via Tbilisi State Medical University's International School of Public Health), none of which are linked from any current live page, current program catalogue, or current admissions page. No current tuition, enrollment status, or accreditation confirmation exists for any health-related program at this university. Per the exhaustive-then-omit / never-fabricate rule, no structuredFacts.programs or draftContent narrative fields have been populated, since doing so would misrepresent a possibly non-existent/defunct academic unit as a live study option for Indian students. See the companion .md file for the full source list and reasoning.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Telavi State University - official site, English homepage",
+        "url": "https://tesau.edu.ge/en/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Current navigation shows only 3 faculties; no healthcare/public-health faculty present."
+      },
+      {
+        "label": "Telavi State University - official current program catalogue (Georgian)",
+        "url": "https://tesau.edu.ge/saganmanatleblo-programebis-katalogi",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Full page text has zero occurrences of 'jandacva' (healthcare) or 'farmacia' (pharmacy)."
+      },
+      {
+        "label": "Telavi State University - official faculties page (Georgian)",
+        "url": "https://tesau.edu.ge/facultetebi",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Lists only Education & Humanities; Social Sciences/Business/Law; Agrarian/Natural Sciences/Technologies faculties, each with sub-menus (dean, programs, etc.); no healthcare faculty."
+      },
+      {
+        "label": "Telavi Iakob Gogebashvili State University - Wikipedia (English)",
+        "url": "https://en.wikipedia.org/wiki/Telavi_Iakob_Gogebashvili_State_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Cites TESAU's own Bachelor/Master/Doctoral program pages; exhaustive faculty list at all 3 degree levels contains no healthcare/medical/public-health/pharmacy faculty; confirms Georgian is the primary teaching language."
+      },
+      {
+        "label": "Telavi State University - official 'State-funded Educational Programs' announcement",
+        "url": "http://tesau.edu.ge/en/siaxle1/809-Statefunded-Educational-Programs-at-Telavi-State-University.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Lists state-funded programs (History, Georgian Language and Literature, Biology, Food Technology, Mathematics, Primary Education, Economics) with no health-related program."
+      },
+      {
+        "label": "Archived Bachelor of Pharmacy curriculum document (official domain, static file archive)",
+        "url": "https://tesau.edu.ge/failebi/jandacva/bakalavriati/programebi/farmacia%20baka.pdf",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Internally names a 'jandacvis fakulteti' (Faculty of Healthcare); Bachelor of Pharmacy, 240 ECTS; curriculum created 2007, updated 2008; not linked from any current live page; directory last-modified timestamp 2020-01-03."
+      },
+      {
+        "label": "Archived PhD 'Public Health' / 'PhD in Health Care' program document (official domain, static file archive)",
+        "url": "http://tesau.edu.ge/failebi/jandacva/bakalavriati/doqtorantura/doqt%20sazogadoebrivi%20jandacva.pdf",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Committee-approval pages dated 2011; delivered partly via memorandum with Tbilisi State Medical University's International School of Public Health; not linked from any current live page; directory last-modified timestamp 2020-01-03."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Telavi Iakob Gogebashvili State University - Faculty of Healthcare (Public Health)",
+    "slug": "telavi-iakob-gogebashvili-state-university-faculty-of-healthcare",
+    "city": "Telavi",
+    "type": "Public",
+    "officialWebsite": "https://tesau.edu.ge/en/",
+    "bestFitFor": [],
+    "programs": [],
+    "similarUniversitySlugs": [],
+    "notes": "No current, corroborated healthcare/public-health faculty or degree program found. See sourceBundle and companion .md for full reasoning. establishedYear intentionally omitted here (not applicable to a faculty that could not be confirmed as currently existing)."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "Narrative fields intentionally left blank - not populated - because no current healthcare faculty/program could be corroborated. Populating these would misrepresent a possibly defunct academic unit as a live study option. This draft is NOT publish-ready (ok=false) and must not be pushed through the publisher without further verification that TESAU has relaunched an active Faculty of Healthcare with a current program catalogue entry."
+  }
+}

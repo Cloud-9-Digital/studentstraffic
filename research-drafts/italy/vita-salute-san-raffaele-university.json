@@ -1,0 +1,160 @@
+{
+  "countrySlug": "italy",
+  "schoolName": "Vita-Salute San Raffaele University",
+  "cityName": "Milan",
+  "priority": "medium",
+  "officialWebsite": "https://www.unisr.it/en",
+  "programUrl": "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program",
+  "hostelUrl": "https://www.unisr.it/en/servizi/international-students/accomodation",
+  "admissionUrl": "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program/ammissioni-mdprogram",
+  "qualityScore": 82,
+  "reviewNotes": "Multi-source corroborated (official UniSR pages, Wikipedia, third-party study-abroad portals). Tuition fee OMITTED: the official tuition page's only stated figure (EUR 20,000/year) is dated to A.Y. 2021/2022 and the page itself says fees are reviewed annually and republished elsewhere, so no current confirmed figure exists. Third-party portals quote EUR ~18,000-22,000 or EUR 20,140 but these are unofficial and unverifiable against a current official source, so they were left out per the no-fabrication rule; feeNotes explains this honestly.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "UniSR - International Medical Doctor Program (official program page)",
+        "url": "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniSR - How to apply / Admissions (official)",
+        "url": "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program/ammissioni-mdprogram",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniSR - IMDP Curriculum (official)",
+        "url": "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program/imdp-curriculum",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniSR - Tuition fees (Medicine and Surgery, official, last published figures dated A.Y. 2021/2022)",
+        "url": "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/tuition-fees",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "UniSR - Accommodation for International Students (official)",
+        "url": "https://www.unisr.it/en/servizi/international-students/accomodation",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Vita-Salute San Raffaele University - Wikipedia (founding year, type, rankings)",
+        "url": "https://en.wikipedia.org/wiki/Vita-Salute_San_Raffaele_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Is Milan Safe for International Students? Areas, Tips & Housing Guide - RentalMilan",
+        "url": "https://www.rentalmilan.com/is-it-safe-in-milan/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Indian Food & Grocery Guide in Milan - Italy Study Centre",
+        "url": "https://italystudycentre.com/indian-food-grocery-milan-bicocca/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "MBBS in Italy for Indian Students: IMAT Exam and English-Taught Medical Programmes - Karan Gupta Consulting",
+        "url": "https://www.karangupta.com/blog/mbbs-in-italy-for-indian-students-imat-exam-and-english-taught-medical-programme",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Vita-Salute San Raffaele University",
+    "slug": "vita-salute-san-raffaele-university",
+    "city": "Milan",
+    "type": "Private",
+    "establishedYear": 1996,
+    "officialWebsite": "https://www.unisr.it/en",
+    "bestFitFor": [
+      "Indian students who want an English-medium MD program at a research-intensive private university attached to a major teaching hospital",
+      "Students comfortable with a rigorous, limited-seats entrance test (not the national IMAT) and a demanding, research-oriented curriculum",
+      "Students who are motivated to reach B1-level Italian by year 2, since clinical rotations require patient interaction in Italian",
+      "Students interested in specialization tracks such as Global Health or Translational Research alongside core clinical training",
+      "Families who can plan for Milan's cost of living, since the university does not run its own international scholarship scheme"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "International Medical Doctor Program (Single-Cycle Master's Degree in Medicine and Surgery, English)",
+        "officialProgramUrl": "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program",
+        "medium": "English",
+        "durationYears": 6,
+        "intakeMonths": ["October"],
+        "feeNotes": "UniSR's own tuition page states fees are reviewed by the university board each year and republished in May; the only figure on that official page (EUR 20,000/year plus a ~EUR 140 regional tax) is explicitly dated to A.Y. 2021/2022, so it is not a reliable current figure. Third-party portals cite figures in the EUR 18,000-22,000 range for more recent years, but these are unofficial. Students should confirm the current year's tuition directly from the official Call for Admission (Bando di Ammissione) published each December for the relevant academic year.",
+        "sourceUrls": [
+          "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program",
+          "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/tuition-fees",
+          "https://www.unisr.it/en/offerta-formativa/medicina-chirurgia/international-medical-doctor-program/ammissioni-mdprogram"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Vita-Salute San Raffaele University (UniSR) is a private university in Milan founded in 1996, built around its affiliation with the San Raffaele Hospital and IRCCS scientific research institute. Its International Medical Doctor Program (IMDP) is a six-year, 360-ECTS, English-medium single-cycle Medicine and Surgery degree with limited seats split between EU and non-EU quotas. Admission is through UniSR's own English-language entrance test (distinct from the national IMAT test most Italian medical schools use), and the university states its MD program has recognition from the World Health Organization, the UK General Medical Council, and the US ECFMG. Indian students choosing UniSR are joining a research-heavy, clinically integrated program in one of Europe's largest student and Indian-diaspora cities, but should independently verify current tuition, NMC-equivalence status for their intake year, and Italian-language requirements before committing.",
+    "campusLifestyle": "The IMDP curriculum is built around a shared preclinical foundation for the first five semesters, followed by a choice of four specialization tracks from year 2 onward: a General track, a Medicine and Surgery track with early clinical exposure, a Global Health track focused on healthcare management and access to medicine, and a Translational Research track centered on lab-based and bioinformatics work. The final semester is kept free of classes so students can complete an independent thesis project, which can be carried out at UniSR or at a partner institution abroad. English is the official language of instruction, but the university requires B1-level Italian proficiency by the end of year 2 because clinical rotations involve direct patient interaction in Italian, and an Italian course is provided to international students during the first two years. Campus life includes student sports teams (rugby and running teams are mentioned by current students), clubs, and an international student mix that current IMDP students describe as close-knit.",
+    "cityProfile": "Milan is Italy's financial and fashion capital and one of its largest cities, with a large international student population and one of the country's biggest South Asian and Indian communities (estimates put the Indian population in and around Milan/Lombardy in the tens of thousands, with roots mainly in Punjab, Gujarat, Rajasthan, Maharashtra, West Bengal, and southern India). The university's main campus sits alongside the San Raffaele Hospital in the Milan metropolitan area, with good public transport connections into the city center. Students should budget for Milan's relatively high cost of living compared with other Italian cities, but benefit from strong transport links, a dense healthcare and research ecosystem, and an active student-community network built up over decades of international enrolment.",
+    "clinicalExposure": "Clinical training is anchored at the San Raffaele Hospital and its affiliated IRCCS research centres, which sit on the same campus as the university. From the first year, students take an elective Nursing course with roughly 25 hours of immersive practical experience, and the curriculum progressively introduces exposure to the acute patient, including internal medicine, emergency surgery, and intensive care. Students who choose the Medicine and Surgery track get earlier and more comprehensive clinical rotations, while all students complete mandatory licensing rotations before graduation, which the university says allow IMDP graduates to be granted an Italian medical license immediately and to access postgraduate specialization courses. Because rotations involve real patients, functional Italian (B1 level) is a hard requirement by year 2, not just a recommendation.",
+    "hostelOverview": "UniSR maintains two dedicated student residences, Cascina Melghera and Cassinella, both converted historic Lombardy farmhouses. Cascina Melghera offers single rooms with private bathrooms and is close to the main university building, while Cassinella is a larger residence (around a 20-minute walk or short drive from campus, in Vimodrone) offering more rooms. Both halls provide furnished single rooms with a desk, wardrobe, safety box and mini-fridge, plus shared breakfast rooms, study rooms, a gym, and recreation space. Rooms are allocated through an annual application/call process and are offered for the full academic year rather than short stays; the university does not run its own accommodation office for off-campus housing, so students who don't secure a residence hall room are directed to general Milan rental resources (such as YesMilano) and Erasmus-partner platforms for private apartments.",
+    "indianFoodSupport": "Milan has one of Italy's largest Indian and South Asian communities, and students consistently describe it as the easiest Italian city for accessing Indian groceries and food. Indian grocery stores such as Krishna Indian Bazaar (Porta Venezia) stock staples like basmati rice, lentils, and spices, and the city has a number of established Indian restaurants (including long-running venues such as Rangoli and South Indian specialists like Saravanaa Bhavan) alongside newer chef-led options. Student WhatsApp and Facebook groups are commonly used to find home-cooked tiffin services from the local Indian community, which is a practical option for students who want regular home-style meals rather than eating out.",
+    "safetyOverview": "Milan is generally regarded as one of the safer major Italian cities for students, with violent crime uncommon; the more realistic day-to-day risk cited by residents and safety guides is petty theft and pickpocketing, particularly on crowded metro lines and around busy central areas like Stazione Centrale and the Duomo, especially after dark. Guides for international students and expats point to a few specific neighborhoods with higher reported crime (such as Quarto Oggiaro, San Siro, and Corvetto) that are generally avoided for housing. Students are advised to take standard city precautions (avoid displaying valuables on public transport, be alert in crowded tourist areas at night) rather than expecting rural-level safety, but overall Milan is not considered a high-risk city for international students.",
+    "studentSupport": "UniSR's International Office supports incoming students with pre-arrival guidance, help navigating Milan, and contacts for accommodation and other logistics, though it does not manage a dedicated housing office for off-campus apartments. The university provides academic tutoring, disability and learning-support tutoring, and career/placement guidance as part of its standard student services. Because UniSR does not offer its own international scholarship program, students needing financial aid are pointed toward external routes such as Lombardy regional scholarships (need- and merit-based, for first-time enrollees) or their home-country loan/scholarship schemes; the university notes it is recognized by Canada's Ontario Student Assistance Program (OSAP) for students using that route.",
+    "whyChoose": [
+      "English-medium, six-year single-cycle MD program at a private university built around a working research hospital (San Raffaele) and its IRCCS research centres, giving early exposure to a genuine clinical-research environment",
+      "University-stated recognition of the MD program from the World Health Organization, the UK General Medical Council, and the US ECFMG, which is relevant for graduates planning to work or take licensing exams outside Italy",
+      "Choice of specialization tracks from year 2 (General, Medicine and Surgery, Global Health, Translational Research), letting motivated students shape their training toward research, global health, or early clinical practice",
+      "Dedicated on-campus-adjacent student residences (Cascina Melghera and Cassinella) with single private rooms, rather than being left to navigate Milan's rental market from day one",
+      "Access to one of Europe's largest Indian diaspora communities in a single city, making everyday life (food, community, peer support) considerably easier than in smaller Italian university towns"
+    ],
+    "thingsToConsider": [
+      "Admission is through UniSR's own English-language entrance test with separate EU/non-EU quotas (86 EU and 64 non-EU seats for AY2026-27 per the official Call for Admission) - it is a different, university-specific test from the national IMAT used by most Italian public medical schools, so preparation resources differ",
+      "Current tuition could not be confirmed from an up-to-date official source at the time of this research; the only figure on UniSR's official tuition page is explicitly dated to A.Y. 2021/2022 (EUR 20,000/year plus a small regional tax), so students must check the live Call for Admission (Bando) for the year they are applying to",
+      "Italian language proficiency (B1 level) is mandatory by the end of year 2 because clinical rotations require direct patient communication in Italian - this is a real workload on top of the medical curriculum, not an optional extra",
+      "UniSR does not run its own international scholarship program; financial aid mainly comes through external and need-based Lombardy regional schemes or the student's own funding, so families should budget the full cost of a private Italian medical degree plus Milan's above-average cost of living",
+      "Students planning to practice in India after graduating should independently verify, close to their admission and graduation years, how Italian MD degrees from this university are treated for NMC/FMGE(NExT) purposes, since recognition frameworks and screening-test rules can change and this research could not find an NMC-specific confirmation naming this university"
+    ],
+    "faq": [
+      {
+        "question": "Is Vita-Salute San Raffaele University public or private?",
+        "answer": "It is a private university, founded in 1996 in Milan and closely affiliated with the San Raffaele Hospital and its IRCCS research institute."
+      },
+      {
+        "question": "What is the International Medical Doctor Program (IMDP)?",
+        "answer": "It is UniSR's six-year, 360-ECTS single-cycle Master's Degree in Medicine and Surgery, taught entirely in English, with limited seats split between EU and non-EU candidate quotas each year."
+      },
+      {
+        "question": "Do I need to take the IMAT to apply?",
+        "answer": "No. UniSR runs its own English-language admission test for the IMDP (a multiple-choice exam covering logic/reading comprehension and science subjects) rather than using the national IMAT that most other Italian medical schools use; check the official Call for Admission for the current year's format and dates."
+      },
+      {
+        "question": "How much is the tuition fee for the IMDP?",
+        "answer": "This could not be confirmed from a current official source. UniSR's official tuition page only publishes a figure dated to A.Y. 2021/2022 (EUR 20,000 per year plus a small regional tax) and states fees are reviewed annually by the university board; students should check the live Call for Admission (Bando di Ammissione) for their intake year for the confirmed current fee."
+      },
+      {
+        "question": "Is Italian language knowledge required for this English-medium program?",
+        "answer": "Yes, in practice. While teaching, exams, and lessons are in English, UniSR requires B1-level Italian proficiency by the end of year 2 because clinical rotations involve interacting with Italian-speaking patients, and the university provides an Italian course to international students during the first two years."
+      },
+      {
+        "question": "Where do international students live?",
+        "answer": "UniSR has two dedicated student residences, Cascina Melghera and Cassinella, offering furnished single rooms with private bathrooms, allocated through an annual application process for the full academic year. Students who don't get a residence hall room typically look for private apartments in Milan using general rental platforms, since the university does not run its own off-campus housing office."
+      },
+      {
+        "question": "Will this degree let me practice medicine in India?",
+        "answer": "UniSR states its MD program is recognized by the World Health Organization, the UK General Medical Council, and the US ECFMG, which supports international recognition, but this research could not confirm a specific, current statement of NMC/FMGE(NExT) treatment for this university. Indian students should verify NMC screening-test requirements for their intake year directly with NMC guidance before enrolling, since foreign medical degree recognition rules are reviewed periodically."
+      },
+      {
+        "question": "Is Milan a good, safe city for Indian students?",
+        "answer": "Yes, generally. Milan is considered one of the safer major Italian cities, with violent crime uncommon; the main practical risk cited by residents and safety guides is petty theft/pickpocketing in crowded areas like the metro and central tourist zones. Milan also has one of Italy's largest Indian communities, making it easier to find Indian groceries, restaurants, and peer support than in smaller Italian cities."
+      }
+    ]
+  }
+}

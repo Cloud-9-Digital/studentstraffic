@@ -1,0 +1,79 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "Simon Fraser University (Stephens Family School of Medicine)",
+  "cityName": "Surrey",
+  "priority": "low",
+  "officialWebsite": "https://www.sfu.ca/medicine.html",
+  "reviewNotes": "HELD, NOT PUBLISHABLE: official admissions eligibility page states the MD program 'is unable to accept applications from international applicants' and requires Canadian citizenship or permanent residency (https://www.sfu.ca/medicine/admissions/before-you-apply/general.html, fetched 2026-07-07). This disqualifies the school entirely for the site's India-audience MBBS/medical-abroad use case. Narrative fields below are intentionally left as neutral factual placeholders only (no bestFitFor/programs/whyChoose/faq authored) because writing India-applicant-facing content would require fabricating an eligibility path that does not exist. See the companion .md file for full sourcing and reasoning. Do not publish without a documented product decision to add a non-conversion 'not open to international applicants' informational entry, which is out of scope for the standard template used by this pipeline.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "SFU Stephens Family School of Medicine - Admissions - General Requirements (Citizenship)",
+        "url": "https://www.sfu.ca/medicine/admissions/before-you-apply/general.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "SFU Stephens Family School of Medicine - About",
+        "url": "https://www.sfu.ca/medicine/about.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "SFU Stephens Family School of Medicine - Our Campus",
+        "url": "https://www.sfu.ca/medicine/about/our-campus.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "SFU Stephens Family School of Medicine - MD Program Introduction",
+        "url": "https://www.sfu.ca/medicine/programs/md-program/introduction.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "SFU News - Historic $40M gift powers SFU's new School of Medicine",
+        "url": "https://www.sfu.ca/sfunews/stories/2026/06/historic--40m-gift-powers-sfu-s-new-school-of-medicine.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Global News - Historic $40 million donated to SFU's new medical school",
+        "url": "https://globalnews.ca/news/11892380/historic-40-million-donated-sfu-medical-school/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Surrey Now-Leader - Philanthropist couple donates $40M to Surrey's SFU school of medicine",
+        "url": "https://surreynowleader.com/2026/06/05/philanthropist-couple-donates-40m-to-surreys-sfu-school-of-medicine/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Simon Fraser University (Stephens Family School of Medicine)",
+    "city": "Surrey",
+    "type": "Public",
+    "establishedYear": 2026,
+    "officialWebsite": "https://www.sfu.ca/medicine.html",
+    "bestFitFor": [],
+    "programs": [],
+    "notPublishable": true,
+    "disqualifyingFact": "MD program admissions require Canadian citizenship or permanent residency; official source states the program cannot accept international applicants.",
+    "disqualifyingSourceUrl": "https://www.sfu.ca/medicine/admissions/before-you-apply/general.html"
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": []
+  }
+}

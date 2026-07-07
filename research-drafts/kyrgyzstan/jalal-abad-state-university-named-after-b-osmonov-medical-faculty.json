@@ -1,0 +1,204 @@
+{
+  "countrySlug": "kyrgyzstan",
+  "universitySlug": "jalal-abad-state-university-named-after-b-osmonov-medical-faculty",
+  "schoolName": "Jalal-Abad State University named after B.Osmonov - Medical Faculty",
+  "cityName": "Jalal-Abad",
+  "priority": "medium",
+  "officialWebsite": "https://jasu.kg/",
+  "programUrl": "https://jasu.kg/about-medical-faculty/",
+  "admissionUrl": "https://jasu.kg/admission/",
+  "hostelUrl": "https://jasu.kg/hostel/",
+  "wdomsUrl": "https://search.wdoms.org/Home/SchoolDetail/F0000580",
+  "qualityScore": 74,
+  "reviewNotes": "Publish-ready, conservative draft. Official site (jasu.kg) confirms: university founded 2 April 1993 by presidential decree; Medical Faculty founded 1994, briefly closed in 2000, and has continued training doctors since (official 'About Medical Faculty' page frames this history while describing a currently active faculty with a dean, 9 departments, laboratories, an anatomical museum, 27 assigned clinical bases per Ministry of Health Order No. 680 (2018), a dedicated student hostel, and a canteen that prepares food 'taking into account national characteristics' of its diverse student body). Independently corroborated via the WHO/FAIMER World Directory of Medical Schools (WDOMS) official record (FAIMER School ID F0000580: 'Jalal-Abad State University Medical Faculty, Kyrgyzstan', Public, operational, 'Physician' qualification, foreign students admitted, language of instruction listed as Russian/Kyrgyz/English, most recent accreditation review dated 25 Dec 2025, ECFMG-eligible graduation years 2000-present). Multiple independent Indian MBBS-consultancy sites (Rus Education, SelectYourUniversity/Walnut Data Tech, mbbsadmissionabroad, tutelagestudy, and others) converge on: NMC approval, English-medium MBBS for international/Indian students, ~6-year including internship program, NEET-based admission, an Indian-cooked mess, and total-package fee estimates in the roughly USD 22,500-28,500 (or ~INR 25 lakh) range for the full 6-year course - however these are consultancy package quotes (often bundling agent/service fees), not the university's own published tuition schedule, so no tuition figure is asserted in structuredFacts; only feeNotes describes the range with an explicit third-party caveat. The official Medical Faculty page names only 'General Medicine' and 'Pharmacy' (plus a 12-year-education General Medicine track) as its degree specialities; several consultancy sites additionally advertise a 'Dentistry (BDS)' program, but this could not be corroborated on the official Medical Faculty departments/specialities list, so BDS is intentionally NOT included as a program here (exhaustive-then-omit). English-medium instruction for international/Indian students specifically is corroborated by the official page's own statement that 'Indian students have been studying in English since 2018' and by WDOMS listing English as one of the languages of instruction, alongside Russian/Kyrgyz; this is stated in draftContent with that nuance rather than claiming the whole faculty is purely English-medium. NMC recognition is stated only in the FAQ/considerations with a verify-before-applying caveat, since the only primary-source confirmation found is WDOMS/ECFMG (not an NMC-published list itself, which could not be directly retrieved in this research pass) - Indian students are told to check the current NMC-approved list themselves before applying. Notable honest caveat: Jalal-Abad city has been officially renamed 'Manas' as of 2025 (confirmed by the English Wikipedia article for 'Jalal-Abad' now redirecting to 'Manas (city)', and by the university's own current address format 'Manas City, Jalal-Abad'); this is flagged in the summary/cityProfile so students aren't confused by maps/documents using either name. No tuition or hostel/mess fee figures are asserted as official; feeNotes explicitly frames all cost figures as third-party consultancy estimates pending direct confirmation from the university.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Jalal-Abad State University named after B.Osmonov Medical Faculty - official homepage",
+        "url": "https://jasu.kg/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms founding 1993, public status, international student count (2500+), international faculty count (100+), hostel/mess/faculty overview links, September 2026 intake, address in 'Manas City, Jalal-Abad'."
+      },
+      {
+        "label": "JASU official site - About Medical Faculty",
+        "url": "https://jasu.kg/about-medical-faculty/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Faculty history (founded 1994, closed 2000, continued training since), dean's office, 9 departments, degree specialities (General Medicine, Pharmacy, 12-year General Medicine track), 27 named clinical bases per MoH Order No. 680/2018, hostel + canteen description, 150 teachers, Indian students studying in English since 2018, Russian and English as teaching languages, first graduation 2016 (56 doctors)."
+      },
+      {
+        "label": "JASU official site - About Us",
+        "url": "https://jasu.kg/about-us/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "University founded 2 April 1993 by presidential decree; currently 5 faculties and 2 colleges, 4,300+ total students; university history (pedagogical faculty from 1926, technical branches from 1947-1990)."
+      },
+      {
+        "label": "JASU official site - Hostel",
+        "url": "https://jasu.kg/hostel/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms separate boys'/girls' hostel accommodation with round-the-clock security."
+      },
+      {
+        "label": "JASU official site - Admission",
+        "url": "https://jasu.kg/admission/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Application steps and required documents, including NEET scorecard for Indian students; confirms MBBS/PG/PhD as course options in the form."
+      },
+      {
+        "label": "JASU official site - Academic Council / FMGE-PMDC-BM&DC-NMC Classes",
+        "url": "https://jasu.kg/academic-council-fmge-pmdc-bmdc-nmc-classesacademic-council/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms on-campus licensing-exam coaching for FMGE (India), PM&DC (Pakistan) and BM&DC (Bangladesh), taught by faculty from those countries."
+      },
+      {
+        "label": "JASU official site - JASU Scholarship Program",
+        "url": "https://jasu.kg/jasu-scholarship-program/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms an annual scholarship program with the Doing Good Charity Foundation, over $100,000 awarded to 2,000+ students on merit/need basis."
+      },
+      {
+        "label": "JASU official site - Contact",
+        "url": "https://jasu.kg/contact/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms a large India-based admission-partner/agent network across multiple states, standard for this university's international-admissions model."
+      },
+      {
+        "label": "World Directory of Medical Schools (WDOMS/FAIMER) - official school record for Jalal-Abad State University Medical Faculty",
+        "url": "https://search.wdoms.org/Home/SchoolDetail/F0000580",
+        "kind": "recognition",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent official recognition source (WHO/FAIMER). Public school type, operational status, 'Physician' qualification, instruction started 2000, languages listed as Russian, Kyrgyz, English; foreign students admitted; ECFMG-eligible graduation years 2000-current; most recent accreditation review by the Kazakhstan-based independent accreditation agency dated 25 December 2025, status 'Accredited'."
+      },
+      {
+        "label": "Rus Education - Jalal-Abad State Medical University in Kyrgyzstan (India-facing consultancy profile)",
+        "url": "https://www.ruseducation.in/university/jalal-abad-state-medical-university-in-kyrgyzstan/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent consultancy corroboration of founding year, NMC/WDOMS/ECFMG/FAIMER recognition claims, 3,300+ students, 27+ clinical bases, English medium, NEET-based admission, and a package fee estimate (~$28,500 total inc. mess/hostel/services) used only as a directional third-party estimate, not an official figure."
+      },
+      {
+        "label": "SelectYourUniversity (Walnut Data Tech) - Jalalabad State Medical University profile",
+        "url": "https://www.selectyouruniversity.com/college/jalalabad-state-university-cid-300150",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent second consultancy source corroborating NMC/WHO recognition claims, English medium, NEET requirement, Indian-cooked mess, hostel amenities, and a separately-sourced fee estimate (~$6,500 year 1, ~$5,000 years 2-5) broadly consistent with Rus Education's figures - used only to corroborate the existence/order-of-magnitude of costs, not as an official tuition schedule."
+      },
+      {
+        "label": "Wikipedia - 'Jalal-Abad' (redirects to 'Manas (city)')",
+        "url": "https://en.wikipedia.org/wiki/Jalal-Abad",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms the city formerly known as Jalal-Abad was officially renamed 'Manas' (article title now 'Manas (city)', with a redirect from 'Jalal-Abad'); population 123,239; used to corroborate the naming change also visible in the university's own current postal address."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Jalal-Abad State University named after B.Osmonov - Medical Faculty",
+    "slug": "jalal-abad-state-university-named-after-b-osmonov-medical-faculty",
+    "city": "Jalal-Abad",
+    "type": "Public",
+    "establishedYear": 1993,
+    "officialWebsite": "https://jasu.kg/",
+    "bestFitFor": [
+      "Indian and other international students who want an affordable, NMC-relevant MBBS pathway at a public Kyrgyz university with an established Indian-student community (2,500+ international students) and on-campus FMGE coaching",
+      "Students who value a dedicated clinical-training network - the Medical Faculty is assigned to 27 named regional hospitals and family-medicine centres across Jalal-Abad region under a Ministry of Health order, rather than a single teaching hospital",
+      "Students who want an Indian-style mess/food option on campus alongside standard hostel accommodation, easing the adjustment to studying abroad",
+      "Students comfortable with a mixed Russian/Kyrgyz/English academic environment who are willing to independently verify the exact scope of English-medium delivery for their specific course before enrolling"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "General Medicine - Faculty of Medicine (MBBS-equivalent)",
+        "officialProgramUrl": "https://jasu.kg/about-medical-faculty/",
+        "medium": "English and Russian - the university's Medical Faculty page states training is conducted 'in Russian and English', and separately confirms Indian students have been studying in English since 2018; the WDOMS official record lists Russian, Kyrgyz, and English as languages of instruction. Confirm the exact English-medium course structure directly with the university before applying.",
+        "durationYears": 6,
+        "feeNotes": "No official tuition schedule for international/contract-basis students is published on the official site. Independent India-facing consultancy sources (Rus Education; SelectYourUniversity) both describe a first-year fee around USD 6,500 and subsequent years around USD 4,000-5,000, with mess fees around USD 1,200/year, putting a full 6-year package (inclusive of various consultancy services) in the roughly USD 22,500-28,500 range - but these are third-party package quotes, not the university's own published fee circular, so treat them as directional only and obtain a written fee confirmation from JASU or its listed admission partners before committing funds.",
+        "intakeMonths": ["September"],
+        "licenseExamSupport": ["FMGE (India) coaching classes held on campus, taught by faculty drawn from India and other source countries, per the official Academic Council/FMGE page"]
+      },
+      {
+        "courseSlug": "pharmacy",
+        "title": "Pharmacy - Faculty of Medicine",
+        "officialProgramUrl": "https://jasu.kg/about-medical-faculty/",
+        "medium": "Russian/Kyrgyz-medium primary track per official curriculum listing (speciality 560005 'Pharmacy'); confirm current international/English-medium availability directly with the university before applying, since the official page does not specifically confirm an English-medium Pharmacy track for international students.",
+        "durationYears": 5,
+        "feeNotes": "No official tuition figure for international students on this specific programme was found on the official site at the time of research. Contact the university's admissions office or its listed India-based partner organisations directly for a current, written fee quote.",
+        "intakeMonths": ["September"]
+      }
+    ],
+    "teachingHospitals": [
+      "Jalal-Abad Regional United Hospital",
+      "Jalal-Abad Regional Center of Family Medicine",
+      "South Regional Scientific Center for Cardiovascular Surgery (base for the Department of Hospital Therapy)",
+      "Osh Interregional Clinical Hospital",
+      "Osh City Clinical Hospital",
+      "Territorial and family-medicine centers across Suzak, Bazar-Korgon, Nooken, Kochkor-Ata, Tash-Kumyr, Toktogul, Aksy, Ala-Buka, Chatkal, and Toguz-Toro districts (27 clinical bases in total per Ministry of Health Order No. 680, 2018)"
+    ],
+    "recognitionBadges": [
+      "Listed in the WHO/FAIMER World Directory of Medical Schools (WDOMS), FAIMER School ID F0000580",
+      "ECFMG-eligible graduation years 2000-present per the WDOMS record",
+      "Most recent WDOMS-linked accreditation review (by a Kazakhstan-based independent accreditation agency recognised by the World Federation for Medical Education) dated 25 December 2025, status Accredited"
+    ],
+    "recognitionLinks": [
+      { "label": "WDOMS official school record (FAIMER ID F0000580)", "url": "https://search.wdoms.org/Home/SchoolDetail/F0000580" }
+    ],
+    "similarUniversitySlugs": [],
+    "notes": "Dentistry (BDS) is advertised by several third-party consultancy sites but is NOT listed among the official Medical Faculty's degree specialities (General Medicine, Pharmacy, 12-year General Medicine) and is therefore intentionally omitted from programs. NMC-approval is described only as a widely-repeated third-party claim in draftContent/FAQ with an explicit verify-yourself caveat, since an NMC-published list entry itself could not be directly retrieved in this research pass (only WDOMS/ECFMG, which is an independent but different recognition system, was directly corroborated on an official registry)."
+  },
+  "draftContent": {
+    "summary": "Jalal-Abad State University, named after B.Osmonov, is a public Kyrgyz university founded on 2 April 1993 by presidential decree, with its Faculty of Medicine established the following year. The faculty had a short interruption in 2000 before continuing as a training ground for doctors, and today it runs General Medicine and Pharmacy degree programs through 9 specialised departments, drawing on 27 assigned clinical bases across Jalal-Abad region under a Ministry of Health order. The Medical Faculty is independently listed in the WHO/FAIMER World Directory of Medical Schools, and the university itself reports over 2,500 international students and 100+ international faculty, with Indian students specifically noted as studying in English since 2018 alongside the university's Russian/Kyrgyz-medium academic base. One important note for prospective applicants: the city long known as Jalal-Abad was officially renamed Manas in 2025, and the university's own current postal address already reads 'Manas City, Jalal-Abad' - students researching this destination on maps, visas, or older documents should expect to see both names used interchangeably for the same place. Because much of what is publicly confirmed comes from the official site plus the WDOMS recognition record rather than a single, fully English-language official prospectus, students - especially those targeting NMC/FMGE eligibility for India - should independently verify current recognition status, the exact scope of English-medium teaching for their specific course, and tuition costs directly with the university before committing.",
+    "campusLifestyle": "The Medical Faculty operates from a dedicated campus area (ATF microdistrict, Sputnik) alongside clinical-department buildings on Pushkin Street, within the wider Jalal-Abad State University system that now spans 5 faculties and 2 colleges with over 4,300 students in total. Facilities described on the official site include 6 lecture halls, a library hall, 4 computer rooms, 79 teaching rooms plus 4 laboratories, an anatomical hall with 3D anatomy tables, and an 'Adam Tanu' anatomical museum that adds new exhibits every year. Student life is organised partly through a faculty-level Youth Parliament that co-runs events such as the White Coat Ceremony, Nooruz, New Year celebrations, sports competitions, and city-wide cultural days with the Jalal-Abad mayor's office, alongside a university-wide Student Council and Sports Club. A new 6-storey, 100-bed clinic with an attached polyclinic was under construction on the official site's own account, intended to add further hands-on clinical space to the faculty.",
+    "cityProfile": "The faculty is based in the city long known internationally as Jalal-Abad, the administrative centre of Jalal-Abad Region in southwestern Kyrgyzstan - though as of 2025 the city has been officially renamed Manas, so students should expect both names to appear on maps, in older guidebooks, and even in the university's own materials (its current address is written as '49, Roza Azimova, Manas City, Jalal-Abad'). It is a mid-sized regional centre of roughly 123,000 people, known regionally for mineral springs and walnut-forest scenery, with a continental climate of hot, dry summers and colder, wetter winters. Compared to Kyrgyzstan's capital Bishkek, it offers a smaller-city pace of life and lower living costs, while still functioning as the main urban and administrative hub for the wider Jalal-Abad/Manas region, including nearby district towns such as Suzak, Bazar-Korgon, and Tash-Kumyr where the Medical Faculty's clinical bases are also located.",
+    "clinicalExposure": "The Medical Faculty is formally assigned to 27 medical and preventive institutions across Jalal-Abad region under Ministry of Health Order No. 680 (29 September 2018), giving General Medicine students rotations spanning regional hospitals, family-medicine centres, and specialty units. Named bases include the Jalal-Abad Regional United Hospital, the Jalal-Abad Regional Center of Family Medicine, district territorial hospitals and family-medicine centres (Suzak, Bazar-Korgon, Nooken, Kochkor-Ata, Tash-Kumyr, Toktogul, Aksy, Ala-Buka, Chatkal, Toguz-Toro), and larger referral centres in nearby Osh city (Osh Interregional Clinical Hospital, Osh City Clinical Hospital). The Department of Hospital Therapy is specifically based at the South Regional Scientific Center for Cardiovascular Surgery. This gives students a broad, regionally distributed clinical network rather than one large single teaching hospital - useful for varied case exposure, though students used to a single flagship university hospital should expect a more distributed, community/regional-hospital model instead.",
+    "hostelOverview": "JASU provides on-campus hostel accommodation with separate buildings/floors for male and female students, described on the official hostel page as offering round-the-clock security and a comfortable living environment. The Medical Faculty page separately confirms a canteen that prepares food 'taking into account the national characteristics' of its diverse international student body, which independent consultancy sources describe more specifically as including Indian-cooked mess options - a detail not stated in those exact terms on the official site, so students should confirm current mess/food arrangements directly with the university or its listed admission partners before arrival. No official hostel or mess fee schedule is published; third-party consultancy estimates (in the low hundreds to roughly USD 1,200/year for mess) exist but should be treated as indicative only pending a direct quote.",
+    "indianFoodSupport": "The official Medical Faculty page states that the university canteen prepares meals with attention to students' 'national characteristics', reflecting a genuinely multinational student body that includes students from India, Pakistan, Bangladesh, Nepal, and other countries alongside Kyrgyz and regional (Russian, Kazakh, Tajik, Uzbek, Turkmen) students. Independent India-facing consultancy sources go further and describe an Indian-cooked mess specifically, which is plausible given the university has hosted Indian students in an English-taught track since 2018 and runs India-specific FMGE coaching classes on campus with Indian faculty - but this specific claim is not stated in those words on the official site itself, so students should confirm current Indian-food arrangements directly with the university or its listed India-based admission partners before committing.",
+    "safetyOverview": "Kyrgyzstan is generally considered a manageable destination for international students, and Jalal-Abad (now officially Manas), as a mid-sized regional centre rather than the capital, has a comparatively slower pace of life. The university's hostels are described as having round-the-clock security, and the Medical Faculty's Office of International Affairs is described as operating 24/7 to support international students, including handling problems that arise during their time at JASU, backed by 'the university and local government' according to the official International Relations page. As with any study-abroad destination, students should register with their home country's embassy/consulate on arrival, keep copies of passport and visa documents, and follow ordinary personal-safety practices for a new country and city.",
+    "studentSupport": "International admissions and ongoing support run through JASU's Office of International Affairs, which the official International Relations page describes as guiding applicants from admission through to residency/fellowship-style research opportunities in postgraduate tracks, and as a 24/7 point of contact once students arrive. For Indian (and Pakistani/Bangladeshi) students specifically, the university runs on-campus licensing-exam coaching classes for FMGE, PM&DC, and BM&DC, staffed by faculty drawn from those home countries - a notable added layer of support beyond the core MBBS-equivalent curriculum. The university also runs an annual scholarship program with the Doing Good Charity Foundation that has awarded more than USD 100,000 to over 2,000 students on academic-merit and financial-need criteria since inception, plus a large network of listed India-based admission partner organisations across multiple states for document and application support.",
+    "whyChoose": [
+      "A public Kyrgyz university (est. 1993) whose Medical Faculty is independently listed and currently accredited in the WHO/FAIMER World Directory of Medical Schools (WDOMS), with an active, recently reviewed (December 2025) accreditation status",
+      "An unusually large, formally assigned clinical-training network of 27 hospitals and family-medicine centres across Jalal-Abad region under a Ministry of Health order, rather than a single teaching hospital",
+      "On-campus FMGE (India), PM&DC (Pakistan), and BM&DC (Bangladesh) licensing-exam coaching classes taught by faculty from those countries - a direct, structured bridge back to home-country practice for international graduates",
+      "An established, sizeable international student community (2,500+ across the university, with Indian students specifically studying in an English-taught track since 2018) plus an annual need/merit-based scholarship program"
+    ],
+    "thingsToConsider": [
+      "The official Medical Faculty site does not publish a full official tuition/fee schedule for international students; all cost figures available (roughly USD 22,500-28,500 for a full 6-year package per independent consultancy sources) are third-party estimates that may include agent/service charges, not confirmed university pricing - get a written quote directly before paying anything",
+      "Medium of instruction is mixed: the university's own materials describe training 'in Russian and English', and Indian students have studied in English only since 2018, so the exact structure and consistency of English-medium delivery across all subjects/years should be independently confirmed before enrolling",
+      "NMC (India) recognition is a claim repeated across many third-party consultancy sites, but this research pass could only directly corroborate recognition through WDOMS/ECFMG (a different, WHO/FAIMER-linked system) on an official registry - confirm the university's current standing on India's official NMC-approved list yourself before applying, since NMC recognition is what ultimately determines FMGE/NExT eligibility to practice in India",
+      "Jalal-Abad city was officially renamed Manas in 2025; expect some inconsistency across maps, visas, older brochures, and even the university's own materials while this transition settles, and always cross-check current address/city-name details directly with the university"
+    ],
+    "faq": [
+      {
+        "question": "Is Jalal-Abad State University's Medical Faculty recognised for Indian students?",
+        "answer": "The Medical Faculty is listed and currently accredited in the WHO/FAIMER World Directory of Medical Schools (WDOMS), which is independently verifiable at search.wdoms.org (FAIMER School ID F0000580). Many Indian MBBS-consultancy websites additionally describe it as NMC-approved, but this research could not directly confirm a current NMC-published listing. Indian students should check India's National Medical Commission's current list of recognised foreign medical institutions themselves before applying, since NMC recognition is what determines FMGE/NExT eligibility to practice in India."
+      },
+      {
+        "question": "What language are classes taught in?",
+        "answer": "The official Medical Faculty page states that training is conducted in Russian and English, and separately notes that Indian students have been studying in English since 2018. The WDOMS official record lists Russian, Kyrgyz, and English as the faculty's languages of instruction. Prospective applicants should confirm with the university exactly which subjects and years are delivered in English for their specific intake before enrolling."
+      },
+      {
+        "question": "What medical programs does the Medical Faculty offer?",
+        "answer": "The official Medical Faculty page names three specialities: General Medicine (the MBBS-equivalent basic medical degree), Pharmacy, and a separate General Medicine track based on a 12-year education pathway for foreign students. Some third-party consultancy sites also advertise a Dentistry (BDS) program, but this could not be confirmed on the official Medical Faculty's own list of specialities at the time of research."
+      },
+      {
+        "question": "How much does it cost to study here, and is there a hostel and mess?",
+        "answer": "The official site does not publish a complete tuition/fee schedule for international students. Independent Indian consultancy sources quote roughly USD 6,000-6,500 for the first year and USD 4,000-5,000 for subsequent years, plus mess fees of roughly USD 1,200/year, putting a full 6-year package in the broad USD 22,500-28,500 range - but treat these as third-party estimates only and get written confirmation from the university or its listed admission partners. On accommodation, the university does provide a dedicated hostel with separate sections for male and female students and round-the-clock security, and the Medical Faculty canteen prepares food with attention to students' national backgrounds; specific Indian-mess arrangements should be confirmed directly."
+      },
+      {
+        "question": "Is Jalal-Abad the same place as 'Manas' that I might see on some documents?",
+        "answer": "Yes. The city long known as Jalal-Abad was officially renamed Manas in 2025, which is why the university's own current address reads '...Manas City, Jalal-Abad'. Both names currently refer to the same city and university location, so expect to see either name depending on the age of the document, map, or website you're checking."
+      },
+      {
+        "question": "Where do students get clinical training?",
+        "answer": "The Medical Faculty is formally assigned to 27 hospitals and family-medicine centres across Jalal-Abad region under a 2018 Ministry of Health order, including the Jalal-Abad Regional United Hospital, the Jalal-Abad Regional Center of Family Medicine, several district territorial hospitals and family-medicine centres, and larger referral hospitals in nearby Osh city. The Department of Hospital Therapy is specifically based at the South Regional Scientific Center for Cardiovascular Surgery."
+      }
+    ]
+  }
+}

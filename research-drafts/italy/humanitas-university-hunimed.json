@@ -1,0 +1,171 @@
+{
+  "countrySlug": "italy",
+  "schoolName": "Humanitas University (Hunimed)",
+  "cityName": "Pieve Emanuele (Milan)",
+  "priority": "medium",
+  "officialWebsite": "https://www.hunimed.eu/",
+  "programUrl": "https://www.hunimed.eu/course/medicine/",
+  "feesUrl": "https://www.hunimed.eu/fees-scholarships-med-schools/",
+  "hostelUrl": "https://www.hunimed.eu/campus/",
+  "admissionUrl": "https://www.hunimed.eu/course/medicine/apply/",
+  "wdomsUrl": "https://search.wdoms.org/home/SchoolDetail/F0003269",
+  "qualityScore": 84,
+  "reviewNotes": "Multi-source corroborated (official Hunimed program/fees/admissions/campus pages, WDOMS school listing, Wikipedia, Humanitas Research Hospital coverage, third-party Milan cost-of-living/safety/Indian-community sources). Tuition INCLUDED because the official Fees & Scholarships page publishes a current, explicit non-EU figure (EUR 23,206/year) for the a.y. 2026/2027 Medicine and Surgery course; EU-student fees are income-banded (ISEP Index) so a single EU figure was not asserted. NMC/FMGE-NExT treatment for this specific university could not be confirmed from an official Indian regulator source (only third-party admissions-consultancy sites claim NMC recognition), so that claim was NOT asserted as fact; the general NMC screening-test framework for foreign medical graduates is mentioned with a verify-yourself caveat instead.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Hunimed - Medicine and Surgery Degree Course (official program page)",
+        "url": "https://www.hunimed.eu/course/medicine/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Hunimed - Apply / HUMAT Admission Test (official)",
+        "url": "https://www.hunimed.eu/course/medicine/apply/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Hunimed - Fees & Scholarships (official, a.y. 2026/2027 figures)",
+        "url": "https://www.hunimed.eu/fees-scholarships-med-schools/",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Hunimed - Campus and Accommodation (official, Mario Luzzatto Student House / Camplus)",
+        "url": "https://www.hunimed.eu/campus/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Hunimed - Who We Are / About Us (official)",
+        "url": "https://www.hunimed.eu/who-we-are/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "World Directory of Medical Schools - Humanitas University Medical School (official regulator listing: private, instruction started 2014, currently operational)",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0003269",
+        "kind": "recognition",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Humanitas University - Wikipedia (founding date 20 June 2014, legal recognition decree, campus location)",
+        "url": "https://en.wikipedia.org/wiki/Humanitas_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Better MedicalTourism - Humanitas Research Hospital Review (IRCCS designation, JCI accreditation, specialty centres)",
+        "url": "https://www.better.medicaltourism.com/article/humanitas-research-hospital-review-a-premier-medical-hub-for-advanced-diagnostics-and-treatments",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Indian Food & Grocery Guide in Milan (Indian community, groceries, restaurants) - Italy Study Centre",
+        "url": "https://italystudycentre.com/indian-food-grocery-milan-bicocca/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Cost of Living in Milan for Students - University Living",
+        "url": "https://www.universityliving.com/blog/student-finances/cost-of-living-in-milan/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Humanitas University (Hunimed)",
+    "slug": "humanitas-university-hunimed",
+    "city": "Pieve Emanuele (Milan)",
+    "type": "Private",
+    "establishedYear": 2014,
+    "officialWebsite": "https://www.hunimed.eu/",
+    "bestFitFor": [
+      "Indian students who want an English-medium MD program embedded directly inside a working, internationally ranked research hospital campus (Humanitas Research Hospital, IRCCS)",
+      "Students comfortable preparing for a university-specific admission test (HUMAT) rather than the national IMAT most other Italian medical schools use",
+      "Students who can commit to reaching working Italian by year 3, since supervised clinical clerkships in Italian hospital wards begin that year",
+      "Students who want to live on a single, purpose-built campus (classrooms, simulation centre, hospital and student residence all co-located) rather than commuting across a large city",
+      "Families able to plan for private-university, non-EU tuition (a confirmed EUR 23,206 per year for Medicine and Surgery) plus Milan-area living costs"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Medicine and Surgery (Single-Cycle Master's Degree, English-taught)",
+        "officialProgramUrl": "https://www.hunimed.eu/course/medicine/",
+        "medium": "English",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "EUR",
+        "officialAnnualTuitionAmount": 23206,
+        "feeVerifiedAt": "2026-07-07",
+        "feeNotes": "Official, current figure from Hunimed's Fees & Scholarships page: non-EU students pay EUR 23,206/year for the a.y. 2026/2027 Medicine and Surgery course (does not include accommodation, food, books, or other services). EU-resident students are instead charged on an income-banded ISEP Index scale (EUR 10,206-23,206/year depending on family income category), so no single EU figure is asserted here. Merit-based partial scholarships (reducing cost to a flat EUR 5,206/year for top-ranked candidates) exist but are limited and competitive; students should confirm current-year figures and scholarship slots on the official page before budgeting.",
+        "sourceUrls": [
+          "https://www.hunimed.eu/fees-scholarships-med-schools/",
+          "https://www.hunimed.eu/course/medicine/",
+          "https://www.hunimed.eu/course/medicine/apply/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Humanitas University (Hunimed) is a private Italian medical university founded in 2014 and built directly inside the campus of the Humanitas Research Hospital in Pieve Emanuele (Rozzano), on the southern outskirts of Milan. Its six-year, English-taught Medicine and Surgery degree admits 200 students a year (150 EU, 50 non-EU) through the university's own HUMAT entrance test rather than the national IMAT used by most other Italian medical schools, and is listed as an operational medical school in the World Health Organization-affiliated World Directory of Medical Schools. Indian students choosing Hunimed are joining a hospital-embedded, simulation-heavy curriculum in one of Europe's largest cities with a sizeable Indian community, but should independently verify current tuition, scholarship availability, HUMAT preparation requirements, and how an Italian MD is treated for NMC/FMGE-NExT purposes before committing.",
+    "campusLifestyle": "The Medicine and Surgery course integrates interdisciplinary theoretical modules with hands-on simulation training from year one, using the university's dedicated Simulation Center for everything from basic procedural skills to complex, high-fidelity clinical scenarios. From the third year, students move into a structured professional-training pathway (built by Hunimed's Office of Medical Education, following the RIME pedagogical framework) that combines simulation, classroom-based clinical case discussion, and supervised clerkships in the adjoining hospital wards. English is the language of instruction throughout, but because clinical clerkships from year 3 involve direct interaction with Italian-speaking patients, the university strongly recommends incoming students already have CEFR B2 English and provides free Italian-language courses so students can build working Italian ahead of ward-based training. The 20,000 sq m campus places classrooms, laboratories, the Simulation Center, sports facilities, and student housing within walking distance of the hospital and research centre, so day-to-day student life is concentrated on one integrated site rather than spread across the city.",
+    "cityProfile": "Humanitas University's campus sits in Pieve Emanuele, within the Metropolitan City of Milan, with the Humanitas Research Hospital immediately adjacent; some official materials also refer to the location as Rozzano, the adjoining municipality where the hospital itself is address-registered. Milan is Italy's financial and fashion capital and one of its largest cities, with an extensive international student population and a substantial Indian community (Italy's Ministry of Labour and Social Policies has put the national Indian-origin population at roughly 162,000, with about a third concentrated in the Lombardy region around Milan). Students commute into central Milan for city life while the Pieve Emanuele/Rozzano area itself is a quieter, more residential southern suburb; overall student living costs in the Milan area run roughly EUR 1,100-1,800 per month excluding tuition, so families should budget for one of Italy's more expensive cities alongside the university's fees.",
+    "clinicalExposure": "Clinical training is anchored at Humanitas Research Hospital, an IRCCS-designated scientific research and treatment institute (Italy's highest official recognition for clinical-research hospitals) that also holds Joint Commission International accreditation and has been ranked the top-performing hospital in Italy by the national health-services evaluation agency in multiple recent years. The hospital runs more than 50 specialised clinical centres, with particular strength in oncology, cardiovascular medicine, orthopaedics, neuroscience, and robotic surgery, giving Medicine and Surgery students exposure to a genuinely high-volume, research-active clinical environment rather than a generic teaching hospital. Supervised clerkships begin in year 3 and progressively increase in complexity and clinical autonomy through to graduation, run in parallel with continued simulation-based training. Because clerkships require interacting with Italian-speaking patients, functional Italian becomes a practical necessity by year 3, not just a language-class requirement.",
+    "hostelOverview": "Hunimed's Mario Luzzatto Student House, opened in 2018 and operated in partnership with Camplus, sits inside the university campus itself, putting student accommodation a few steps from classrooms, the Simulation Center, and the hospital. The residence offers a mix of single and double rooms and mini-apartments (62 apartments plus 23 rooms, roughly 240 beds in total) with private bathrooms, shared kitchens and living rooms, plus communal spaces including a bar, restaurant, fitness room, and games room. Fees cover lodging, utilities, wifi, air conditioning, weekly linen changes, and 24-hour staffed reception; meals are available at an on-site canteen for an extra charge, or students can cook in shared kitchens. Rooms are allocated through an annual application process with Camplus College directly, and students who qualify for Italy's regional merit/need-based study grant (borsa di diritto allo studio regionale) and do not permanently live in the Milan metropolitan area are guaranteed a shared room at the Student House as part of that award.",
+    "indianFoodSupport": "Milan has one of Italy's largest Indian communities, and students consistently describe it as the most convenient Italian city for Indian groceries and food, considerably easier than smaller university towns elsewhere in the country. Dedicated Indian grocery stores such as Krishna Indian Bazaar (Porta Venezia) stock staples like basmati rice, lentils, and spices, and the city has a range of established Indian restaurants, from long-running venues like Rangoli (serving North Indian cuisine since 1997) to South Indian specialists such as Saravanaa Bhavan. Student WhatsApp and Facebook groups are commonly used across Milan's university community to find home-cooked tiffin services run by local Indian families, a practical option for students at a hospital-campus location like Hunimed who want regular home-style meals without commuting into the city center to eat out.",
+    "safetyOverview": "Milan is generally regarded as a comparatively safe major European city for international students; independent indices such as The Economist's safety rankings and Italian ISTAT/city-council data place it favourably against other large European metropolises, with the more realistic everyday risk being petty theft and pickpocketing in crowded areas (busy metro lines, central tourist zones) rather than violent crime. Hunimed's own campus in Pieve Emanuele/Rozzano is a quieter, more suburban setting than central Milan, with student accommodation, classrooms, and the hospital co-located on one site, which reduces the need for late-night travel across the city for classes or clinical training. Students commuting into central Milan for social life should still take ordinary city precautions (avoid displaying valuables on public transport, stay alert in crowded areas at night), the same standard advice given to international students anywhere in a large European city.",
+    "studentSupport": "Hunimed provides an integrated support structure built around its Office of Medical Education, which designs and oversees the RIME-framework clinical-training pathway students follow from year 3 onward, alongside academic and simulation-based learning support throughout the six-year course. The university runs a structured scholarship programme for both EU and non-EU students, including merit-based awards (such as the Fondazione Rocca scholarship for top-ranked HUMAT candidates) that can reduce annual tuition to a flat EUR 5,206, renewable each year subject to maintaining a minimum grade average; students should check current-year eligibility and seat numbers directly on the official Fees & Scholarships page since these are competitive and limited. Housing support is handled through the on-campus Camplus-operated Mario Luzzatto Student House rather than a separate off-campus housing office, and students who qualify for Italy's regional study grant receive a guaranteed room as part of that award.",
+    "whyChoose": [
+      "English-medium, six-year single-cycle Medicine and Surgery degree built directly inside the campus of Humanitas Research Hospital, an IRCCS-designated, JCI-accredited research hospital ranked as Italy's top-performing hospital in several recent national evaluations",
+      "Listed as an operational medical school in the World Directory of Medical Schools (WDOMS), the WHO-affiliated global registry used by many countries' medical regulators to verify foreign medical qualifications",
+      "Simulation-first teaching model from year one (dedicated Simulation Center) that progresses into structured, RIME-framework clinical clerkships from year 3, rather than delaying hands-on clinical exposure to later years",
+      "Purpose-built, on-campus student housing (Mario Luzzatto Student House) putting classrooms, simulation facilities, the hospital, and accommodation within walking distance of each other",
+      "Access to Milan's large, established Indian community for everyday food, groceries, and peer support, despite the campus itself being in a quieter suburban setting outside the city centre"
+    ],
+    "thingsToConsider": [
+      "Admission is through Hunimed's own HUMAT entrance test with separate EU/non-EU quotas (150 EU and 50 non-EU seats annually) - it is a different, university-specific test from the national IMAT used by most other Italian medical schools, so preparation resources and timelines differ",
+      "Confirmed non-EU tuition is EUR 23,206 per year (a.y. 2026/2027) for Medicine and Surgery, not including accommodation, food, books, or other costs - a private-university fee level that families should budget for in full alongside Milan-area living expenses",
+      "Although teaching is in English, functional Italian becomes practically necessary from year 3 onward because supervised hospital clerkships involve direct interaction with Italian-speaking patients; the university's B2-English recommendation for admission does not remove this later Italian requirement",
+      "The campus is in Pieve Emanuele/Rozzano, a quieter suburban area on Milan's southern outskirts rather than central Milan itself, so students wanting an active city-centre lifestyle will need to commute in for that",
+      "Students planning to practice in India after graduating should independently verify, close to their admission and graduation years, how this specific university's MD is treated for NMC screening-test (FMGE/NExT) purposes - this research found the university listed in the WHO-affiliated WDOMS registry, but could not confirm a university-specific statement from India's National Medical Commission, and recognition frameworks are reviewed periodically"
+    ],
+    "faq": [
+      {
+        "question": "Is Humanitas University (Hunimed) public or private?",
+        "answer": "It is a private university, founded in 2014 and built inside the campus of the Humanitas Research Hospital in Pieve Emanuele, part of the Metropolitan City of Milan."
+      },
+      {
+        "question": "What is the Medicine and Surgery course at Hunimed?",
+        "answer": "It is a six-year, English-taught single-cycle Master's Degree in Medicine and Surgery admitting 200 students annually (150 EU seats, 50 non-EU seats), with clerkships in the affiliated Humanitas Research Hospital starting in year 3."
+      },
+      {
+        "question": "Do I need to take the IMAT to apply?",
+        "answer": "No. Hunimed uses its own admission test, HUMAT, for both its Medicine and Surgery and MEDTEC School programs, rather than the national IMAT used by most other Italian medical schools; check the official Apply page for current test dates and format."
+      },
+      {
+        "question": "How much does the Medicine and Surgery course cost for non-EU (Indian) students?",
+        "answer": "The official Fees & Scholarships page confirms EUR 23,206 per year for non-EU students (a.y. 2026/2027), not including accommodation, food, books, or other services. Limited merit-based scholarships can reduce this to a flat EUR 5,206/year for top-ranked candidates; students should confirm current fees and scholarship availability on the official page before applying."
+      },
+      {
+        "question": "Is Italian language knowledge required for this English-medium program?",
+        "answer": "Teaching and exams are in English throughout, and CEFR B2 English is strongly recommended for admission, but supervised hospital clerkships from year 3 involve interacting with Italian-speaking patients, so students need working Italian by that point. The university provides free Italian courses to help students build this."
+      },
+      {
+        "question": "Where do international students live?",
+        "answer": "Most students live at the Mario Luzzatto Student House, a Camplus-operated residence located on the university campus itself, offering single/double rooms and mini-apartments with private bathrooms, shared kitchens, and 24-hour reception, allocated through an annual application process."
+      },
+      {
+        "question": "Will this degree let me practice medicine in India?",
+        "answer": "Humanitas University Medical School is listed as an operational medical school in the World Directory of Medical Schools (WDOMS), a WHO-affiliated global registry many countries use to verify foreign medical qualifications. However, this research could not confirm a university-specific statement of NMC/FMGE-NExT treatment from India's National Medical Commission, so Indian students should independently verify current NMC screening-test requirements for their intake year before enrolling."
+      },
+      {
+        "question": "Is the area around the campus safe for international students?",
+        "answer": "Yes, generally. Milan ranks favourably on independent safety indices compared with other large European cities, and the Pieve Emanuele/Rozzano campus area is a quieter, suburban setting outside the city centre. The main practical risk cited for the wider Milan area is petty theft in crowded central and transport areas, not violent crime."
+      }
+    ]
+  }
+}

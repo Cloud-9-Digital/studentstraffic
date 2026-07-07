@@ -1,0 +1,144 @@
+{
+  "countrySlug": "germany",
+  "schoolName": "European University Cyprus (EUC) School of Medicine – Frankfurt Branch",
+  "cityName": "Frankfurt",
+  "priority": "medium",
+  "officialWebsite": "https://euc.ac.cy/en/academics/schools-departments/school-of-medicine/school-of-medicine-frankfurt-branch/",
+  "programUrl": "https://euc.ac.cy/en/academics/schools-departments/school-of-medicine/school-of-medicine-frankfurt-branch/",
+  "hostelUrl": "https://euc.ac.cy/en/campus-life/student-accommodation-in-frankfurt/",
+  "qualityScore": 72,
+  "reviewNotes": "Multi-source draft (official EUC pages via search snippets + becomeadoctor.eu, desire2study.com, thepienews.com, Wikipedia cross-checked). euc.ac.cy is behind Cloudflare bot-protection so direct curl fetch returned only a challenge page; official facts below are corroborated via WebSearch result snippets of the official domain plus 4 independent third-party sources, satisfying multi-source rule. Tuition/fee figures are reported consistently by two independent education-agent sites (becomeadoctor.eu, desire2study.com) but NOT sourced from an official EUC fee schedule page directly viewed, so fees are omitted from structured facts per the no-fabrication rule; feeNotes carries the reported (unverified-official) figures as a caveat only. NMC/NEET/FMGE status not corroborated for this specific institution/branch — general Indian-regulator guidance included as a caveat, not an assertion of recognition.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "EUC official site – School of Medicine, Frankfurt Branch",
+        "url": "https://euc.ac.cy/en/academics/schools-departments/school-of-medicine/school-of-medicine-frankfurt-branch/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official EUC page confirming Frankfurt Branch of the School of Medicine, 6-year English-taught MD, WFME-recognised curriculum shared with the Cyprus main campus, modern anatomy/simulation facilities, and clinical rotations in partner German hospitals. Direct curl fetch returned a Cloudflare interstitial; content verified via search-engine cached snippet of this official URL."
+      },
+      {
+        "label": "EUC official site – Frankfurt campus overview",
+        "url": "https://euc.ac.cy/en/frankfurt/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official landing page for the Frankfurt campus; confirms 2022 opening, location near Frankfurt airport/main station and Nidda Park, and growth plans (2026 new Medical & Health Sciences programs; 2028 campus expansion). Verified via search snippet due to Cloudflare block on direct fetch."
+      },
+      {
+        "label": "EUC official site – Student accommodation in Frankfurt",
+        "url": "https://euc.ac.cy/en/campus-life/student-accommodation-in-frankfurt/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official housing page listing partner residences for Frankfurt students (THE FLAG Philosophicum, THE FIZZ, The Dorm, YOUNIQ) with EUC's Housing Office coordinating placement. Verified via search snippet."
+      },
+      {
+        "label": "Wikipedia – European University Cyprus",
+        "url": "https://en.wikipedia.org/wiki/European_University_Cyprus",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent encyclopedic source confirming EUC was established in 1961 (as Cyprus College, later university status), is private and part of Galileo Global Education, and that in 2022 the university opened a Frankfurt branch of its School of Medicine; also confirms a planned 2026 curriculum expansion and a 2028 campus infrastructure project (~EUR 22 million, ~10,000 sqm)."
+      },
+      {
+        "label": "The PIE News – Study medicine in English in the heart of Europe: EUC School of Medicine, Frankfurt",
+        "url": "https://thepienews.com/study-medicine-in-english-in-the-heart-of-europe-euc-school-of-medicine-frankfurt/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent international-education trade publication corroborating the English-taught MD, integrated 'spiral' curriculum, early clinical exposure from year one, simulation centres, and partnerships with Frankfurt-region hospitals."
+      },
+      {
+        "label": "Desire2Study – EUC School of Medicine, Frankfurt program page",
+        "url": "https://www.desire2study.com/euc-school-of-medicine-frankfurt",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent study-abroad counselling site corroborating WFME accreditation, CYQAA institutional evaluation of the Frankfurt branch, English medium of instruction, admissions criteria (Biology plus one science subject, MediTest-EU assessment and interview, no MCAT/IMAT-style entrance exam), THE/QS rankings context, and Frankfurt cultural/religious/food-scene notes used to ground city-profile content. Reports annual tuition of approx. EUR 25,000/year and living costs of EUR 900-1,200/month; used only for feeNotes caveat, not as a confirmed official fee figure."
+      },
+      {
+        "label": "BecomeADoctor.eu – European University Cyprus Frankfurt Branch",
+        "url": "https://becomeadoctor.eu/germany/european-university-cyprus-frankfurt-branch/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent medical-admissions consultancy page corroborating the 2022 campus opening, 6-year MD program, no standardised entrance exam (MediTest-EU + interview instead), clinical rotations at Frankfurt Red Cross Hospital and St. Elizabethen Hospital, and small class sizes. Also reports EUR 25,000/year (EUR 150,000 total) tuition -- consistent with Desire2Study but still a third-party/agent figure, so treated as unverified for structured facts and surfaced only as a caveat."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "European University Cyprus (EUC) School of Medicine – Frankfurt Branch",
+    "city": "Frankfurt",
+    "type": "Private",
+    "establishedYear": 2022,
+    "officialWebsite": "https://euc.ac.cy/en/academics/schools-departments/school-of-medicine/school-of-medicine-frankfurt-branch/",
+    "bestFitFor": [
+      "Students who want an EU-recognised, English-taught MD without relocating to a non-EU or lower-income-country campus",
+      "Applicants who prefer a school-based admissions route (grades, English proficiency, MediTest-EU assessment and interview) over a single high-stakes standardised entrance exam",
+      "Students who want early, hands-on clinical exposure from year one via simulation labs and partner-hospital rotations in a major German city",
+      "Students who value studying in a central, well-connected European hub (Frankfurt) with strong onward transport links across the EU",
+      "Families comfortable with a newer branch campus (opened 2022) that is still scaling its infrastructure, class sizes, and program range through the late 2020s"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Doctor of Medicine (MD) – 6-Year English-Taught Program, Frankfurt Branch",
+        "officialProgramUrl": "https://euc.ac.cy/en/academics/schools-departments/school-of-medicine/school-of-medicine-frankfurt-branch/",
+        "medium": "English",
+        "durationYears": 6,
+        "feeNotes": "EUC's official Frankfurt fee schedule was not directly accessible at research time (official site is behind bot-protection that blocked automated verification). Two independent education-consultancy sources (Desire2Study, BecomeADoctor.eu) both report tuition of approximately EUR 25,000 per academic year (roughly EUR 150,000 across the 6-year program) with living costs of roughly EUR 900-1,200 to EUR 2,200 per month in Frankfurt depending on lifestyle. Treat these as indicative only and confirm the current, official figure directly with EUC's admissions office before budgeting or paying any fees.",
+        "intakeMonths": ["October"]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "European University Cyprus (EUC) School of Medicine – Frankfurt Branch is a German campus of EUC, a private Cyprus-based university founded in 1961 and part of the Galileo Global Education network. The Frankfurt branch opened in 2022 and offers a 6-year Doctor of Medicine (MD) program taught fully in English, following the same WFME-recognised, integrated ('spiral') curriculum used on EUC's main Cyprus campus. The Frankfurt site combines EU-wide degree recognition with clinical training inside Germany's healthcare system, giving students hospital-based exposure in one of Europe's best-connected cities. As a relatively new branch, it is still growing its facilities, faculty, and program range (with further Medical and Health Sciences programs and a campus expansion publicly announced for the second half of this decade), so prospective students should weigh the benefits of a modern, EU-recognised MD against the trade-offs of a young, still-scaling campus.",
+    "campusLifestyle": "The Frankfurt campus is built around small class sizes and close faculty contact rather than large lecture-hall cohorts, with academics and practising physicians drawn from across Europe. Facilities highlighted by the university and independent reviewers include modern anatomy laboratories, simulation centres with manikins and digital radiography, and dedicated clinical-skills rooms designed to mirror real hospital environments. Because the branch is young (opened 2022), students should expect an intimate, still-developing campus culture rather than the scale of a long-established medical faculty, with EUC's own public statements pointing to further buildings, research space, and new Health Sciences programs being added through 2026-2028.",
+    "cityProfile": "Frankfurt am Main is Germany's financial capital and one of continental Europe's best-connected cities, with the country's largest commercial airport, major rail links, and efficient U-Bahn/S-Bahn/tram/bus networks tying the city together. Despite its business-hub reputation, Frankfurt is highly multicultural, with active Christian, Muslim, and Jewish communities (including the DITIB Zentralmoschee, Noor Mosque, and Jewish Community Frankfurt synagogues), plus large green spaces such as Palmengarten, Grüneburgpark, and the city forest for downtime away from studies. The Frankfurt medical/university district and hospital network give students proximity to Germany's advanced healthcare infrastructure alongside typical big-city amenities like the Zeil shopping street and diverse dining.",
+    "clinicalExposure": "Clinical training begins early, with hands-on work introduced from the first years through simulation labs, standardized-patient exercises, and skills centres before progressing to hospital-based rotations. Reported partner and affiliated hospitals in the Frankfurt region include Frankfurt Red Cross Hospital (Frankfurter Rotkreuz-Krankenhaus) and St. Elizabethen Hospital, alongside other clinical sites across Germany's healthcare network; EUC states that all clinical-training affiliations are approved by the relevant authorities. Students rotate through outpatient clinics, surgical theatres, internal medicine wards, and emergency units in later years, guided by clinical mentors, giving direct exposure to the German hospital system rather than only classroom-based teaching.",
+    "hostelOverview": "EUC's Housing Office helps Frankfurt students arrange accommodation through partner student-residence providers rather than a single on-campus dormitory. Options identified on EUC's own housing pages include THE FLAG Philosophicum (a renovated former university faculty building on the Bockenheim campus with a shared lounge and café), THE FIZZ (an all-in living concept a short bike ride from Goethe University), The Dorm (fully furnished apartments near the university with good transport links), and YOUNIQ in the Riedberg district. Broader Frankfurt student-housing costs typically run from roughly EUR 300-500 per month for a place in a student residence to around EUR 500+ for a private room, though students should confirm current availability and pricing directly with EUC's Housing Office and the residence providers, since rates change and demand in Frankfurt's rental market is high.",
+    "indianFoodSupport": "Frankfurt has an established Indian and South Asian food scene, with Indian and Pakistani restaurants concentrated in neighbourhoods such as Bornheim and Bockenheim (for example EatDOORI and Pak Kashmir have been cited by education counsellors covering the city), plus Middle Eastern and South Asian grocery shops in the Bahnhofsviertel district near the main station. As a major international city, Frankfurt also has larger supermarkets and specialty grocers carrying South Asian spices, rice, lentils, and other staples, though students coming from India should expect a more limited and pricier selection than in India itself, and may want to supplement with home-cooked meals using ingredients from South Asian grocers rather than relying only on restaurants.",
+    "safetyOverview": "Frankfurt is generally considered a safe, well-policed major European city with a functional public-transport network that makes it easy for students to avoid late-night walking. As with any large international city, students are advised to use standard precautions (secure housing, awareness in busy transit hubs like the main station area at night, keeping copies of documents, and registering with their home country's consulate on arrival in Germany). Prospective students and families should verify current safety guidance directly with EUC's international-student office and, for Indian nationals specifically, check the Indian Embassy in Berlin/Consulate General in Frankfurt for up-to-date advisories before travel.",
+    "studentSupport": "EUC's Frankfurt branch draws an international student body reported to include students from the UK, France, Germany, Greece, Sweden, Norway, Iceland, and Canada, among other countries, reflecting an English-medium, internationally oriented environment. The university's admissions process (MediTest-EU written assessment plus a motivational interview, evaluated alongside secondary-school grades in Biology and one additional science subject) is designed to be more holistic than a single standardised entrance exam, and prospective students report that internships or relevant medical exposure can support an application. Students should independently confirm current visa, residence-permit, and part-time-work rules for non-EU nationals (including Indian citizens) with the German embassy/consulate and EUC's international office, since these rules can change and were not independently verified for this draft.",
+    "whyChoose": [
+      "Fully English-taught, 6-year MD in the EU with a curriculum shared with EUC's established Cyprus main campus (WFME-recognised program)",
+      "School-based admissions (grades, English proficiency, MediTest-EU assessment and interview) rather than a single high-stakes standardised entrance exam",
+      "Early, hands-on clinical exposure from year one via simulation labs, skills centres, and rotations in Frankfurt-region partner hospitals",
+      "Central, extremely well-connected location in Frankfurt with easy air/rail access across Germany and the wider EU",
+      "Backed by Galileo Global Education, an established international higher-education group, giving the branch institutional scale beyond a single stand-alone campus"
+    ],
+    "thingsToConsider": [
+      "The Frankfurt branch is young (opened 2022), so facilities, class sizes, and track record are still developing compared with long-established European medical schools",
+      "Official, currently verified tuition figures were not independently confirmed for this draft; third-party sources report roughly EUR 25,000/year, but students must get the current figure directly from EUC before committing",
+      "Indian students must independently verify NMC/NEET-cum-eligibility requirements, WDOMS listing status, and FMGE/NExT screening-exam implications for this specific institution before enrolling, since this was not confirmed during research",
+      "Coursework is in English, but clinical rotations take place inside the German hospital system, so building conversational German ability will help with day-to-day patient interaction and life in Frankfurt",
+      "Student accommodation is arranged through partner residences rather than a single university dormitory, so housing costs and availability should be researched and budgeted separately"
+    ],
+    "faq": [
+      {
+        "question": "Is European University Cyprus (EUC) School of Medicine – Frankfurt Branch a public or private university?",
+        "answer": "It is a branch of European University Cyprus, a private university (founded in 1961, part of the Galileo Global Education group) whose School of Medicine expanded to Frankfurt, Germany in 2022."
+      },
+      {
+        "question": "What language is the MD program taught in at EUC's Frankfurt branch?",
+        "answer": "The 6-year Doctor of Medicine (MD) program is taught entirely in English, following the same curriculum as EUC's main Cyprus campus; German is not required for coursework, though building conversational German is useful for clinical rotations and daily life in Frankfurt."
+      },
+      {
+        "question": "Does EUC Frankfurt require an entrance exam like NEET, MCAT, or IMAT for admission?",
+        "answer": "EUC uses its own school-based admissions process rather than exams like MCAT or IMAT, evaluating secondary-school grades (particularly Biology plus one of Chemistry, Physics, or Mathematics), English proficiency, a written MediTest-EU assessment, and a motivational interview. Indian applicants should separately confirm with the Indian National Medical Commission (NMC) whether NEET qualification and other regulatory steps apply to studying MBBS/MD abroad, since this varies by student circumstance and was not confirmed specifically for this institution during research."
+      },
+      {
+        "question": "Where do students do clinical rotations, and when do they start?",
+        "answer": "Clinical exposure begins early through simulation labs and skills centres, with later-year rotations in partner and affiliated hospitals in the Frankfurt region, including Frankfurt Red Cross Hospital and St. Elizabethen Hospital, among others, per university and third-party reporting."
+      },
+      {
+        "question": "Is the MD degree recognised for practising medicine outside Germany?",
+        "answer": "The program follows EUC's WFME-recognised curriculum shared with the Cyprus main campus, which supports broad international recognition; however, recognition and licensing requirements (including any NMC/FMGE/NExT requirements for Indian students, or requirements in other target countries) vary by country and were not independently verified for every jurisdiction in this draft. Students should confirm their specific country's recognition and licensing pathway before enrolling."
+      },
+      {
+        "question": "What does tuition cost at EUC's Frankfurt medical branch?",
+        "answer": "An official, currently verified tuition figure was not directly accessible during this research (the official EUC website blocked automated verification). Independent education-consultancy sources report annual tuition of approximately EUR 25,000 (roughly EUR 150,000 over the 6-year program), plus living costs of roughly EUR 900 to EUR 2,200 per month depending on lifestyle. Prospective students should request the current, official fee schedule directly from EUC's admissions office."
+      },
+      {
+        "question": "Where do students live, and how much does accommodation cost?",
+        "answer": "EUC's Housing Office helps arrange placements in partner student residences in Frankfurt (such as THE FLAG Philosophicum, THE FIZZ, The Dorm, and YOUNIQ) rather than a single campus dormitory. General Frankfurt student-housing costs run roughly EUR 300-500+ per month for a residence room, though students should confirm current rates and availability directly with EUC and the residence providers."
+      }
+    ]
+  }
+}

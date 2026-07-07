@@ -1,0 +1,182 @@
+{
+  "countrySlug": "albania",
+  "schoolName": "University of Medicine, Tirana",
+  "cityName": "Tirana",
+  "priority": "medium",
+  "officialWebsite": "https://umed.edu.al/en/",
+  "programUrl": "https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-mjekesise/",
+  "feesUrl": "https://umed.edu.al/en/edukimi/pranimet-dhe-regjistrimet/",
+  "admissionUrl": "https://umed.edu.al/en/edukimi/pranimet-dhe-regjistrimet/",
+  "wdomsUrl": "https://search.wdoms.org/home/SchoolDetail/F0001900",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "University of Medicine, Tirana official site - homepage (English)",
+        "url": "https://umed.edu.al/en/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms official name (Universiteti i Mjekesise Tirane), three constituent faculties (Medicine, Dental Medicine, Technical Medical Sciences), address Rr. Dibres Nr 371, Tirane, and site is bilingual Albanian/English with most substantive content only in Albanian."
+      },
+      {
+        "label": "University of Medicine, Tirana official site - History",
+        "url": "https://umed.edu.al/en/rreth-nesh/historiku/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "States the Faculty of Medicine traces to the Higher Institute of Medicine (1952) and the 1957 Faculty of Medicine within the State University of Tirana, promoted to independent University of Medicine, Tirana status on 23 January 2013."
+      },
+      {
+        "label": "University of Medicine, Tirana official site - Faculty of Medicine",
+        "url": "https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-mjekesise/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms Faculty of Medicine has been part of University of Tirana since 1957 and part of UMT since 2013; describes curriculum as aligned with contemporary international standards; trains physicians, pharmacists and public-health professionals."
+      },
+      {
+        "label": "University of Medicine, Tirana official site - Admissions and registrations",
+        "url": "https://umed.edu.al/en/edukimi/pranimet-dhe-regjistrimet/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Describes the Bologna-style cycle structure (Bachelor, integrated Master of Science, Professional Master, Doctorate, Long-Term Specialization, Executive Master) and general eligibility criteria; does not itemise a separate international/English-medium admissions track or a specific tuition figure for foreign nationals on this page."
+      },
+      {
+        "label": "University of Medicine, Tirana official site - Faculty of Dental Medicine history",
+        "url": "https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-mjekesise-dentare-2/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms Dental Medicine roots to a 1959 Department of Stomatology, made an independent Faculty in 2013 (Council of Ministers decision VKM No. 43), now organised into three departments."
+      },
+      {
+        "label": "University of Medicine, Tirana official site - Faculty of Technical Medical Sciences",
+        "url": "https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-shkencave-mjekesore-teknike/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms this faculty covers nursing, midwifery, physiotherapy, laboratory technology, speech therapy and imaging technology across Bachelor/Master/Doctorate cycles, Bologna-aligned."
+      },
+      {
+        "label": "Wikipedia - University of Medicine, Tirana",
+        "url": "https://en.wikipedia.org/wiki/University_of_Medicine,_Tirana",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration: public university, established 23 January 2013, urban centralized campus inside University Hospital Center of Tirana 'Mother Teresa' (QSUT), ~7,500 students, 413 faculty, affiliations include WHO, Erasmus Mundus, Balkan Universities Network, IFMSA; lists Integrated Master of Science in General Medicine (6-year equivalent MBBS), Pharmacy, Dentistry, and Bachelor's/Master's in Nursing, Public Health and Laboratory Technician programmes."
+      },
+      {
+        "label": "FAIMER/WDOMS World Directory of Medical Schools - school listing",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0001900",
+        "kind": "recognition",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration that University of Medicine, Tirana is a listed medical school in the World Directory of Medical Schools (WDOMS/FAIMER) -- the directory that underpins ECFMG/USMLE eligibility and is generally relevant to NMC's own foreign-medical-school recognition process, though NMC's own current approved list was not directly retrievable in this research pass and must be verified independently."
+      },
+      {
+        "label": "UniPage - Price of education at University of Medicine, Tirana",
+        "url": "https://www.unipage.net/en/4798/university_of_medicine_tirana",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent secondary aggregator: public non-profit university, established 2013, ~8,999 students; cites international-student tuition 'from a minimum of 1,000 USD/year' with a note that fees vary and should be reconfirmed on the official site; describes urban Tirana campus and semester-based academic calendar."
+      },
+      {
+        "label": "MBBS Mithram - University of Medicine, Tirana programme page",
+        "url": "https://mbbsmithram.com/universities/university-of-medicine-tirana/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent education-consultancy corroboration (used only for cross-checking, not as a primary source): describes a 6-year, English-medium 'MBBS' (General Medicine) programme including clinical training, cites indicative tuition of roughly EUR 4,000/year, NEET as an Indian-applicant admission input, and lists WHO/ECFMG/GMC/USMLE among cited accreditation/recognition references. This page's blanket claim of 'NMC (India)' accreditation is a consultancy overstatement -- NMC does not itself accredit foreign universities -- and is NOT carried into this draft's own claims; it is treated only as a signal that graduates commonly pursue the standard FMGE/NExT screening pathway."
+      },
+      {
+        "label": "Embassy of India, Tirana - bilateral relations",
+        "url": "https://indembtirana.gov.in/bilateral-relations",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration that India operationalised a resident diplomatic Mission in Tirana in August 2024, reflecting a still-small but growing bilateral relationship and confirming a formal consular presence for Indian nationals studying in Albania."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "University of Medicine, Tirana",
+    "slug": "university-of-medicine-tirana",
+    "city": "Tirana",
+    "type": "Public",
+    "establishedYear": 2013,
+    "officialWebsite": "https://umed.edu.al/en/",
+    "featured": false,
+    "bestFitFor": [
+      "Indian and other international students seeking a public, Bologna-aligned EU-adjacent medical degree with a WDOMS-listed medical school and lower headline tuition than many Western European destinations",
+      "Students comfortable navigating a university whose official website content is still primarily Albanian-language, and who will independently confirm English-medium admission procedures, current fees, and seat availability directly with the international office before applying",
+      "Students who want early, structured clinical exposure inside a centralised campus attached to a major national teaching hospital (QSUT, 'Mother Teresa') from the pre-clinical years onward",
+      "Students planning to sit India's FMGE/NExT foreign-graduate screening exam after graduation and who will verify current NMC recognition status themselves, rather than assuming automatic Indian licensing recognition",
+      "Students who prioritise a compact, walkable Southeast European capital city with a lower cost of living than most EU study destinations, over a large or globally top-ranked university brand"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Integrated Master of Science in General Medicine (6-year MBBS-equivalent degree)",
+        "officialProgramUrl": "https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-mjekesise/",
+        "medium": "Albanian is the primary language of the official university website and most published programme documentation; independent education-consultancy sources describe an English-medium track for international students, but this was not directly confirmed on an official UMT programme page in this research pass -- applicants must independently verify the current language of instruction and any separate international-track curriculum with the Faculty of Medicine's international/admissions office before applying.",
+        "durationYears": 6,
+        "notes": "The Faculty of Medicine's Integrated Master of Science in General Medicine is the university's flagship physician-training programme, structured as a 6-year, Bologna-aligned integrated cycle per Wikipedia's programme listing (corroborating widely repeated consultancy figures of a 6-year, ~360-ECTS course). The Faculty of Medicine traces institutional roots to 1957 (as part of the University of Tirana) and became part of the independent University of Medicine, Tirana on 23 January 2013. Clinical training takes place at the University Hospital Center of Tirana 'Mother Teresa' (QSUT), which is physically integrated with the campus per Wikipedia. Tuition: sources disagree -- UniPage cites a minimum of roughly USD 1,000/year for international students, while independent consultancy sources cite figures nearer EUR 4,000-5,000/year; because these figures conflict and neither was confirmed on an official fee schedule during this research pass, no tuition figure is asserted here and applicants must obtain the current official fee directly from UMT's Admissions Office. NMC/FMGE: Albania is not among the countries exempted from India's Foreign Medical Graduate Examination (FMGE) / NExT screening requirement, so Indian graduates of this programme should expect to sit that screening exam to practise in India; the university's medical school is listed in the FAIMER/WDOMS World Directory of Medical Schools, which is generally relevant to NMC's own recognition process, but current NMC-approved-institution status was not directly retrievable from NMC's own site in this research pass and must be verified independently before enrolling."
+      }
+    ],
+    "recognitionBadges": [],
+    "recognitionLinks": [],
+    "teachingHospitals": [
+      "University Hospital Center of Tirana \"Mother Teresa\" (QSUT)"
+    ],
+    "similarUniversitySlugs": [],
+    "researchNotes": "University of Medicine, Tirana (UMT) is a public university formed on 23 January 2013 when the Faculty of Medicine (part of the University of Tirana since 1957, itself rooted in the 1952 Higher Institute of Medicine) was promoted to independent university status. It comprises three faculties -- Faculty of Medicine, Faculty of Dental Medicine (independent since 2013, rooted in a 1959 Department of Stomatology), and Faculty of Technical Medical Sciences (nursing, midwifery, physiotherapy, laboratory technology, speech therapy, imaging technology) -- confirmed via official faculty history pages. Campus is urban and centralised, physically integrated with the University Hospital Center of Tirana 'Mother Teresa' (QSUT), per Wikipedia. Student body is roughly 7,500-9,000 depending on source/year (Wikipedia: ~7,500; UniPage: ~8,999), with around 300+ academic staff and 78 full professors per Wikipedia. IMPORTANT CAVEAT carried through this draft: the official umed.edu.al website (including its /en/ English-language paths) is overwhelmingly Albanian-language in its substantive content -- navigation labels are translated but body text on faculty, admissions, and history pages is mostly Albanian, with only a few pages (e.g. faculty history, admissions overview) machine- or partially-translated into English. This draft therefore does NOT assert a confirmed official English-medium 'MBBS' track, even though multiple independent consultancy sources (MBBS Mithram, Medlink Students, Moksh16, Unique Education) describe a 6-year English-taught General Medicine programme for international students with tuition cited variously between roughly USD 1,000/year (UniPage, likely a floor/local-fee figure) and EUR 4,000-5,000/year (consultancy sources). Because these figures conflict and none could be confirmed on an official fee schedule, no tuition number is published in structuredFacts/programs; feeNotes-equivalent guidance instead tells students to confirm directly with UMT. NMC/FMGE framing: Albania is not on India's FMGE-exemption list (that list is limited to a small set of countries such as the US, UK, Canada, Australia, New Zealand), so Indian graduates of any Albanian medical degree, including this one, should expect to sit the FMGE/NExT screening exam to practise in India. UMT's medical school is independently confirmed as listed in the FAIMER/WDOMS World Directory of Medical Schools (school ID F0001900), which is a relevant but not sufficient signal for NMC recognition -- this draft explicitly avoids repeating the common consultancy claim that NMC 'accredits' or 'recognises' the university, since NMC does not accredit foreign institutions in that sense; it instead frames this honestly as 'verify current NMC status directly.' India-Albania context: India opened a resident diplomatic Mission in Tirana in August 2024, and the resident Indian community in Albania is small (widely cited at under a few hundred people), which is used honestly to frame consular support and Indian-food/cultural-support expectations as modest rather than absent.",
+    "recognitionNotes": "Listed in the FAIMER/WDOMS World Directory of Medical Schools (ID F0001900). Wikipedia also lists WHO among UMT's institutional affiliations. This draft does not assert NMC, ECFMG, GMC, or USMLE 'accreditation' of the university itself, since accreditation bodies for foreign medical schools and India's NMC recognition process work differently from how several consultancy sources describe them; students must independently verify current NMC recognition status and any FMGE/NExT requirements before enrolling."
+  },
+  "draftContent": {
+    "summary": "University of Medicine, Tirana (UMT) is Albania's dedicated public medical university, formed on 23 January 2013 when the country's long-standing Faculty of Medicine -- part of the University of Tirana since 1957 -- was promoted to independent university status. UMT today comprises three faculties: Medicine, Dental Medicine, and Technical Medical Sciences, on a centralised urban campus in Tirana that is physically integrated with the University Hospital Center of Tirana 'Mother Teresa' (QSUT). Its flagship physician-training programme is a 6-year Integrated Master of Science in General Medicine, structured on the Bologna model. The university's own English-language web pages remain limited in depth, so while independent consultancy sources describe an English-medium international track with tuition cited anywhere from roughly USD 1,000 to EUR 4,000-5,000 per year, this page does not assert a confirmed official figure or curriculum track -- applicants should verify current language of instruction, fees, and the international application process directly with UMT's Faculty of Medicine before applying. Indian applicants should also independently confirm current National Medical Commission (NMC) recognition status and plan for India's FMGE/NExT screening exam, since Albania is not on India's short list of FMGE-exempt countries.",
+    "campusLifestyle": "UMT's campus sits in central Tirana and is organised around its three faculties -- Medicine, Dental Medicine, and Technical Medical Sciences -- spread across 21 academic departments, with roughly 7,500-9,000 students in total depending on source and year. A defining feature is the campus's physical integration with the University Hospital Center of Tirana 'Mother Teresa' (QSUT), Albania's largest public teaching hospital, which places clinical environments within easy reach of lecture halls from the earliest years of study. The university participates in Erasmus+ and CEEPUS exchange programmes and networks such as the Balkan Universities Network and IFMSA (International Federation of Medical Students' Associations), giving students some exposure to regional and European student mobility even though the bulk of the student body is Albanian. Because the university's own English-language communications are limited, day-to-day campus administrative life should be expected to run substantially in Albanian, and international students should plan to build basic Albanian survival phrases alongside their academic English.",
+    "cityProfile": "Tirana is Albania's capital and largest city, a compact Southeast European capital known for its colourful post-communist redevelopment, a lively cafe culture, and a central Grand Park that gives the city green space within walking distance of the centre. Landmarks like the National Museum and the repurposed Pyramid of Tirana (a former Enver Hoxha mausoleum, now a youth and tech centre) anchor a city that mixes Ottoman, Italian, and socialist-era architecture with newer construction. Cost of living in Tirana is generally lower than in most Western and Northern European capitals, with independent city-cost data placing comfortable single-person budgets in a moderate range and more modest budgets achievable by living further from the centre and cooking at home. India's diplomatic presence in Albania is recent and still developing -- a resident Indian Mission in Tirana was formally operationalised only in August 2024 -- and the resident Indian community in the country is small, so students should expect a limited but not absent support network and should register with the Indian Mission on arrival for consular access.",
+    "clinicalExposure": "The Faculty of Medicine's General Medicine programme follows the widely used pattern for 6-year European integrated medical degrees: an initial preclinical phase covering foundational biomedical sciences, followed by progressively clinical years incorporating hospital-based teaching. UMT's campus being physically integrated with the University Hospital Center of Tirana 'Mother Teresa' (QSUT) -- Albania's principal public teaching hospital -- means clinical placements, ward teaching, and specialty rotations are logistically close to the main academic campus rather than requiring travel to a separate hospital site. Specific rotation schedules, named specialty departments, and current clinical-placement capacity for international students were not independently itemised from official sources in this research pass; applicants should request the current clinical training structure and any international-student-specific placement details directly from the Faculty of Medicine before enrolling.",
+    "hostelOverview": "Official, itemised details of UMT-run student housing (room types, on-campus capacity, pricing) were not found on the university's English-language web pages during this research pass, and no independent secondary source provided a verified description of a UMT-operated hostel. Applicants should treat student housing as an open item to confirm directly with UMT's admissions or international-student office, and should ask specifically whether the university offers dormitory placement for international students or whether they are expected to arrange private rental housing in Tirana, which is broadly available and moderately priced by European standards per independent cost-of-living sources.",
+    "indianFoodSupport": "Albania's resident Indian community is small -- independent sourcing puts it at well under a few hundred people nationally -- so students should not expect an extensive, established Indian grocery or restaurant network on the scale of larger European or Gulf study destinations. Tirana, as the capital, is the most likely place in the country to find at least a limited selection of South Asian or Indian-adjacent dining options and imported grocery staples, but this was not independently itemised restaurant-by-restaurant in this research pass. Self-catering students should expect to rely significantly on home cooking using internationally available staples and occasional specialty-store or online orders for specific Indian ingredients, and should connect with any existing Indian or South Asian student groups at UMT or in Tirana for current, first-hand guidance before arrival.",
+    "safetyOverview": "Albania is generally described in independent expat and relocation sources as not a dangerous destination for foreigners as of 2026, with violent crime against foreigners characterised as rare and overall safety broadly comparable to other Southern/Southeast European destinations; the more common concerns cited are petty theft such as pickpocketing in crowded areas and occasional tourist-targeted scams, alongside aggressive local driving habits. Neighbourhoods near the city centre and Tirana's Grand Park are generally described as comfortable for students and expats. As with any study-abroad destination, students should follow standard personal-safety practices, keep copies of key documents, register their stay with India's resident Mission in Tirana (operationalised in August 2024) for consular access, and independently check current government travel-advisory guidance before and during their stay, since this page reflects a snapshot from mid-2026 research rather than live safety data.",
+    "studentSupport": "International applicants should route enquiries through UMT's Faculty of Medicine and its central admissions and registrations office, since the university's public English-language pages describe general Bologna-cycle admission criteria (secondary-school completion and Senate-set grade-point thresholds) rather than a dedicated, separately documented international-student application pathway. The university participates in Erasmus+ and CEEPUS exchange frameworks, which may offer some institutional familiarity with incoming foreign students even outside formal exchange, but degree-seeking international applicants should still expect to coordinate directly with faculty administration for document requirements, any entrance assessment, and visa-supporting paperwork. Indian applicants should additionally plan to register with India's resident Mission in Tirana (operational since August 2024) for consular support, and must independently verify current NMC recognition status and FMGE/NExT screening requirements with Indian regulators, since this page does not assert automatic Indian recognition of the degree.",
+    "whyChoose": [
+      "A dedicated public medical university (not a general university's medical faculty) with institutional roots reaching back to 1952/1957, formally independent since 2013, giving it a long-standing base of Albanian medical teaching experience",
+      "Campus physically integrated with the University Hospital Center of Tirana 'Mother Teresa' (QSUT), Albania's largest public teaching hospital, keeping clinical exposure close to the main academic campus from early in the programme",
+      "Independently confirmed listing in the FAIMER/WDOMS World Directory of Medical Schools, a recognised international medical-school registry relevant to downstream licensing-exam eligibility",
+      "A compact, walkable, lower-cost Southeast European capital city (Tirana) compared with most Western European study destinations, with a developing (if still small) Indian diplomatic and community presence following India's August 2024 Mission opening",
+      "Membership in Erasmus+, CEEPUS, and networks such as the Balkan Universities Network and IFMSA, giving some structured exposure to regional and European academic mobility"
+    ],
+    "thingsToConsider": [
+      "The university's own English-language web pages remain limited and largely translate navigation rather than full page content; a confirmed official description of an English-medium international-student curriculum track was not found in this research pass, so applicants must verify current language of instruction directly with the Faculty of Medicine before applying",
+      "Tuition figures for international students conflict across independent sources (from roughly USD 1,000/year to EUR 4,000-5,000/year) and no figure could be confirmed on an official fee schedule; applicants must obtain the current, official fee in writing from UMT's admissions office before budgeting",
+      "Albania is not on India's short list of FMGE-exempt countries, so Indian graduates of this programme should expect to sit the FMGE/NExT screening exam to obtain an Indian medical licence, and should not assume automatic NMC recognition without independently verifying current status",
+      "No official, itemised description of university-run student housing (dormitory availability, pricing, room types) was found during this research pass; applicants should treat on-campus or university-arranged housing as unconfirmed and ask directly before assuming it exists",
+      "Albania's resident Indian community and Indian food/grocery ecosystem are small compared with larger, more established MBBS-abroad destinations, so day-to-day cultural and culinary familiarity will be more limited",
+      "Specific clinical rotation schedules, named specialty placements, and international-student-specific clinical arrangements were not independently itemised from official sources and should be confirmed directly with the Faculty of Medicine"
+    ],
+    "faq": [
+      {
+        "question": "Is the University of Medicine, Tirana's General Medicine programme taught in English?",
+        "answer": "This is not confirmed on the university's own official English-language web pages, which remain limited in depth and largely present Albanian-language content. Several independent education-consultancy sources describe an English-medium track for international students, but applicants should treat this as unverified until they receive written confirmation of the current language of instruction and international-track curriculum directly from UMT's Faculty of Medicine."
+      },
+      {
+        "question": "How much does University of Medicine, Tirana cost for international students?",
+        "answer": "Published figures conflict across independent sources -- one aggregator cites a minimum of roughly USD 1,000 per year, while education-consultancy sources cite figures closer to EUR 4,000-5,000 per year -- and no tuition figure could be confirmed on an official UMT fee schedule during this research. Applicants should request the current, official annual fee in writing from UMT's admissions office before making financial commitments."
+      },
+      {
+        "question": "Will a degree from University of Medicine, Tirana be recognised by India's National Medical Commission (NMC)?",
+        "answer": "This page does not assert automatic recognition. UMT's medical school is listed in the FAIMER/WDOMS World Directory of Medical Schools, which is relevant background for NMC's own recognition process, but current NMC-approved-institution status was not directly retrievable from NMC's own site during this research and can change. Albania is not on India's short FMGE-exemption list, so graduates should expect to sit the FMGE/NExT screening exam to practise in India, and should verify current NMC requirements directly with Indian regulators before enrolling."
+      },
+      {
+        "question": "How long is the medical degree at University of Medicine, Tirana?",
+        "answer": "The Integrated Master of Science in General Medicine is a 6-year programme, consistent with the standard structure for integrated European medical degrees and corroborated by independent programme listings, including Wikipedia's summary of UMT's academic offerings."
+      },
+      {
+        "question": "Does University of Medicine, Tirana provide student accommodation?",
+        "answer": "This was not confirmed during research. No official, itemised description of university-run housing (dormitory availability, room types, or pricing) was found on UMT's English-language pages, so applicants should ask the university directly whether on-campus or university-arranged housing exists, or whether they will need to arrange private rental housing in Tirana."
+      },
+      {
+        "question": "Is Tirana a safe city for international students?",
+        "answer": "Independent expat and relocation sources describe Albania, including Tirana, as generally not dangerous for foreigners as of 2026, with violent crime against foreigners characterised as rare; the more common concerns are petty theft and occasional tourist-targeted scams rather than serious violent crime. Students should still follow standard personal-safety practices and register with India's resident Mission in Tirana, which was formally operationalised in August 2024, for consular support during their stay."
+      },
+      {
+        "question": "Is there an established Indian student community at University of Medicine, Tirana or in Tirana generally?",
+        "answer": "Albania's resident Indian community is small -- independent sourcing suggests well under a few hundred people nationally -- so students should not expect the large, established Indian-student networks found in bigger MBBS-abroad destinations. Tirana, as the capital, is the most likely place to find at least limited South Asian dining and grocery options, but prospective students should reach out to any existing Indian or South Asian students at UMT directly for first-hand, current guidance before committing."
+      }
+    ]
+  }
+}

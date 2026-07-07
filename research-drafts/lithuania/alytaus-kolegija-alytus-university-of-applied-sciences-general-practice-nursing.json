@@ -1,0 +1,81 @@
+{
+  "status": "HELD_NOT_PUBLISHABLE",
+  "reason": "Alytaus Kolegija was reorganised into the Alytus Faculty of Kauno Kolegija HEI on 1 July 2024 and no longer exists as an independent university. The nursing programme taught in Alytus is Lithuanian-medium only (confirmed by the official AIKOS government registry: studying language 'lithuanian'). The English-medium 'General Practice Nursing' Bachelor's programme that international/Indian applicants would actually enrol in is delivered in Kaunas at Kauno Kolegija's Faculty of Medicine, not in Alytus. Publishing a page framed as 'Alytaus Kolegija - General Practice Nursing' for an India audience would misrepresent either the language of instruction or the actual study location, which the sourcing rules prohibit. See the accompanying .md file for full detail, all corroborated facts, and sources.",
+  "countrySlug": "lithuania",
+  "schoolName": "Alytaus Kolegija (Alytus University of Applied Sciences)",
+  "cityName": "Alytus",
+  "corroboratedFactsOnly": {
+    "currentLegalStatus": "Merged into Kauno Kolegija Higher Education Institution as 'Alytus Faculty' effective 1 July 2024",
+    "alytusFacultyStudyingLanguage": "Lithuanian only (per AIKOS government registry)",
+    "alytusFacultyHealthProgrammes": [
+      "Bendrosios praktikos slauga (General Practice Nursing, Lithuanian-medium)",
+      "Dietetika (Dietetics)",
+      "Kineziterapija (Physiotherapy)"
+    ],
+    "englishMediumGeneralPracticeNursing": {
+      "deliveredAt": "Kaunas, Faculty of Medicine, Kauno Kolegija Higher Education Institution",
+      "notAlytus": true,
+      "durationYears": 3.5,
+      "ects": 210,
+      "qualification": "Professional Bachelor of Health Sciences (General Practice Nurse)",
+      "tuitionPerYearEur": 3100,
+      "applicationFeeEur": 120,
+      "languageRequirement": "IELTS >= 5.5 / TOEFL >= 75 / PTE >= 59 / CEFR >= B2",
+      "officialProgramUrl": "https://kaunokolegija.lt/english/study-programmes/general-practice-nursing/",
+      "officialApplyUrl": "https://apply.kaunokolegija.lt/courses/course/25-general-practice-nursing"
+    }
+  },
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Kauno Kolegija official English programme page - General Practice Nursing",
+        "url": "https://kaunokolegija.lt/english/study-programmes/general-practice-nursing/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Kauno Kolegija official application portal - General Practice Nursing course listing",
+        "url": "https://apply.kaunokolegija.lt/courses/course/25-general-practice-nursing",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Alytus Faculty official news - reorganisation announcement (merger into Kauno Kolegija, 1 July 2024)",
+        "url": "https://alytus.kaunokolegija.lt/reorganisation-today-alytaus-kolegija-becomes-part-of-kauno-kolegija-higher-education-institution/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Alytus Faculty official programme catalogue (Lithuanian)",
+        "url": "https://alytus.kaunokolegija.lt/studiju-programos/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Alytus Faculty official 'Bendrosios praktikos slauga' programme page",
+        "url": "https://alytus.kaunokolegija.lt/bendrosios-praktikos-slauga/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lithuanian government education registry (AIKOS) - Alytus Faculty of Kauno Kolegija institutional record (studying language: lithuanian)",
+        "url": "https://www.aikos.smm.lt/en/study/_layouts/15/asw.aikos.registersearch/objectformresult.aspx?o=inst&f=insten&key=88888880900311&pt=of",
+        "kind": "government",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Lithuanian government education registry (AIKOS) - General Practice Nursing programme record (code 6531GX040, language anglu/lietuviu)",
+        "url": "https://www.aikos.smm.lt/registrai/studiju-programos/_layouts/15/asw.aikos.registersearch/objectformresult.aspx?o=prog&f=prog&key=1497&pt=of",
+        "kind": "government",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Alytus Faculty homepage news feed (confirms Alytus operates as Kauno Kolegija HEI faculty)",
+        "url": "https://alytus.kaunokolegija.lt/en/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "note": "This file intentionally does NOT include structuredFacts/draftContent in the publish-ready shape, because the gate requires an honest, corroborated, non-misleading page and no such page exists for 'Alytaus Kolegija - General Practice Nursing' as an English-medium India-facing offering. See the .md file in this folder for the full research record and recommended next steps."
+}

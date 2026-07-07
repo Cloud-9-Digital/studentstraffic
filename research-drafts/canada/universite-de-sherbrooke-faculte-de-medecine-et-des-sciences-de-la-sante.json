@@ -1,0 +1,70 @@
+{
+  "_status": "HELD - not gate-passing",
+  "_reason": "No program at Universite de Sherbrooke's Faculte de medecine et des sciences de la sante maps honestly to this platform's India/NEET-audience course catalog (mbbs, medical-pg, bsc-nursing, pharmacy, bds). Instruction is French-only (CASPer situational-judgment test must also be taken in French), the M.D. (Doctorat en medecine) is a DEC (Quebec CEGEP)-prerequisite or 90-credit entry program with roughly 80% of seats reserved for Quebec residents and ~12% for Maritime-province residents by government-set quota, and the international-applicant pool is effectively a single seat per year worldwide (about 5.5% acceptance rate among international applicants, with just 1 of 15-91 international applicants enrolling in recent cycles). See the .md file in this folder for the full research record and sourcing.",
+  "countrySlug": "canada",
+  "schoolName": "Universite de Sherbrooke (Faculte de medecine et des sciences de la sante)",
+  "cityName": "Sherbrooke",
+  "officialWebsite": "https://www.usherbrooke.ca/medecine/",
+  "structuredFacts": {
+    "name": "Universite de Sherbrooke (Faculte de medecine et des sciences de la sante)",
+    "city": "Sherbrooke",
+    "type": "Public",
+    "establishedYear": 1954,
+    "officialWebsite": "https://www.usherbrooke.ca/medecine/",
+    "bestFitFor": [],
+    "programs": []
+  },
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Faculte de medecine et des sciences de la sante - official faculty homepage",
+        "url": "https://www.usherbrooke.ca/medecine/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Programmes d'etudes en medecine - Contingent international (official, international quota policy)",
+        "url": "https://www.usherbrooke.ca/etudes-medecine/programmes-detudes/doctorat-en-medecine//admission/contingent-international",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Doctorat en medecine - Programmes et admission (official program/admission page)",
+        "url": "https://www.usherbrooke.ca/admission/programme/238/doctorat-en-medecine/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Etudiants internationaux - Faculte de medecine et des sciences de la sante (official)",
+        "url": "https://www.usherbrooke.ca/medecine/international/etudiants-internationaux",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "BeMo Academic Consulting - Sherbrooke Medical School: How to Get In (secondary corroboration of French-only instruction, CASPer-in-French, and international quota/acceptance figures)",
+        "url": "https://bemoacademicconsulting.com/blog/sherbrooke-medical-school",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "BeMo Academic Consulting - Medical Schools in Quebec (secondary corroboration of quota structure across Quebec med schools incl. Sherbrooke)",
+        "url": "https://bemoacademicconsulting.com/blog/medical-schools-in-quebec",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Faculte de medecine et des sciences de la sante - Decouvrir l'UdeS / Notre histoire (official, founding/history)",
+        "url": "https://www.usherbrooke.ca/decouvrir/a-propos/notre-histoire/facultes/fmss",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Faculte de medecine - Universite de Sherbrooke - Wikipedia (secondary corroboration of founding/history: Faculty announced 1961, first students 1966; university founded 1954)",
+        "url": "https://en.wikipedia.org/wiki/Facult%C3%A9_de_m%C3%A9decine_%E2%80%93_Universit%C3%A9_de_Sherbrooke",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "draftContent": {}
+}

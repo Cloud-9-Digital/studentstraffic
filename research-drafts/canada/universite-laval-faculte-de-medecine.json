@@ -1,0 +1,58 @@
+{
+  "_status": "HELD - not gate-passing",
+  "_reason": "No program at Universite Laval's Faculte de medecine maps honestly to this platform's India/NEET-audience course catalog (mbbs, medical-pg, bsc-nursing, pharmacy, bds). Instruction is French-only, the M.D. is a DEC (Quebec CEGEP)-prerequisite entry program with a government-decreed quota overwhelmingly reserved for Quebec residents, and the international-applicant pool is effectively a single seat per year. See the .md file in this folder for the full research record and sourcing.",
+  "countrySlug": "canada",
+  "schoolName": "Universite Laval (Faculte de medecine)",
+  "cityName": "Quebec City",
+  "officialWebsite": "https://www.fmed.ulaval.ca/accueil",
+  "structuredFacts": {
+    "name": "Universite Laval (Faculte de medecine)",
+    "city": "Quebec City",
+    "type": "Public",
+    "establishedYear": 1854,
+    "officialWebsite": "https://www.fmed.ulaval.ca/accueil",
+    "bestFitFor": [],
+    "programs": []
+  },
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Faculte de medecine - Candidates et candidats de l'international (official)",
+        "url": "https://www.fmed.ulaval.ca/candidates-et-candidats-de-linternational",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Universite Laval - Doctorat en medecine (M.D.) program page (official, admissions/quota/credits)",
+        "url": "https://www.ulaval.ca/etudes/programmes/doctorat-en-medecine",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Faculte de medecine - Doctorat de 1er cycle en medecine (official program landing page)",
+        "url": "https://www.fmed.ulaval.ca/etudes/doctorat-en-medecine",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "BeMo Academic Consulting - Medical Schools in Quebec (secondary corroboration of language/quota facts)",
+        "url": "https://bemoacademicconsulting.com/blog/medical-schools-in-quebec",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Universite Laval - Origin and history (official, founding of the university)",
+        "url": "https://www.ulaval.ca/en/about-us/origin-and-history",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Faculte de medecine de l'Universite Laval - Wikipedia (secondary corroboration of founding year 1854)",
+        "url": "https://fr.wikipedia.org/wiki/Facult%C3%A9_de_m%C3%A9decine_de_l'Universit%C3%A9_Laval",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "draftContent": {}
+}

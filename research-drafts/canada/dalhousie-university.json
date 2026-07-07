@@ -1,0 +1,239 @@
+{
+  "countrySlug": "canada",
+  "schoolName": "Dalhousie University",
+  "cityName": "Halifax",
+  "priority": "medium",
+  "officialWebsite": "https://www.dal.ca/",
+  "programUrl": "https://cdn.dal.ca/content/dam/dalhousie/pdf/dentistry/DENT-DDS-Fact-sheet-Sept-2025.pdf",
+  "feesUrl": "https://cdn.dal.ca/content/dam/dalhousie/pdf/admissions/MoneyMatters/Dentistry%20and%20Medicine%202026-2027.pdf",
+  "hostelUrl": "https://www.dal.ca/campus_life/international-centre/new-students/housing.html",
+  "admissionUrl": "https://www.dal.ca/study/programs/graduate-professional/dentistry-dds.html",
+  "qualityScore": 75,
+  "reviewNotes": "Dalhousie University is a large public research university founded in 1818 (became a degree-granting university in 1863), based in Halifax, Nova Scotia, corroborated across its own official site (dal.ca) and independent sources (Wikipedia, The Canadian Encyclopedia, Britannica). SCOPE CAVEAT (same pattern as other Canadian health-professional research on this site): directly researched each health-professional program's international-applicant access. (1) The MD program (medicine.dal.ca) is closed to international applicants -- restricted to Canadian citizens/permanent residents, with only a handful of government-sponsored supernumerary seats (Saudi/Kuwaiti-government sponsored, per BeMo's independent summary) rather than a general international pathway; omitted. (2) The College of Pharmacy's entry-to-practice PharmD (dal.ca/faculty/health/pharmacy) serves the Maritime provinces, with preference to Maritime residents and Canadian citizens/permanent residents, and does not describe a direct international-applicant admissions route; omitted as unconfirmed rather than asserted open or closed. (3) The School of Nursing's BScN program primarily serves permanent residents of Nova Scotia (with limited seats for qualified residents of other Canadian provinces); its own official pages state international students are not eligible for the direct-entry BScN; omitted. (4) The FOUR-YEAR Doctor of Dental Surgery (DDS) program is confirmed, directly from Dalhousie's own official 2025 DDS Admission Fact Sheet PDF, to reserve a defined number of INTERNATIONAL seats every year (18 of 44 total seats in the most recent published admission profile, alongside 26 Canadian seats) -- a rare, explicitly quota-confirmed international pathway among the Canadian dental schools researched for this site so far (stronger and more specific than the general 'assessed like domestic pool' language found at some peer schools). International DDS applicants apply via AADSAS or the Dalhousie portal by October 1, sit the Canadian/American DAT (not NEET), and applicants who completed post-secondary study outside Canada/the US must submit a course-by-course WES evaluation. Official 2026-2027 fee schedule PDF confirms international DDS tuition at CAD 62,751.74 per year (all 4 years), versus CAD 31,351.80/year for domestic/Canadian-seat students, plus a per-term International Student Society Fee and mandatory international health insurance -- these figures are asserted here because they are directly stated in Dalhousie's own published fee schedule. Because DDS requires a minimum of 60 university credit hours (roughly 3 years of prior post-secondary science-heavy coursework) completed before entry, it is a graduate-entry-style pathway, not a direct-from-Class-12 route like MBBS-abroad programs, and this is stated plainly in the content. No MBBS/BDS-equivalence or NMC/PCI/INC recognition claim is made; DDS graduates become eligible for NDEB (National Dental Examining Board of Canada) certification, a Canadian licensing pathway, and students are told to independently verify Indian dental-council recognition before enrolling. Given one confirmed program with an explicit, comparatively generous international quota and clear published international tuition (stronger evidence than UBC's DMD profile, which lacked a stated seat count or headline tuition figure), qualityScore is set at 75.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Dalhousie University - Official homepage (dal.ca)",
+        "url": "https://www.dal.ca/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms official domain; homepage states Dalhousie is one of Canada's top 15 research-intensive universities with roughly 21,000 students."
+      },
+      {
+        "label": "Dalhousie University - History (official)",
+        "url": "https://www.dal.ca/about/our-story/history.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official institutional history page."
+      },
+      {
+        "label": "Wikipedia - Dalhousie University",
+        "url": "https://en.wikipedia.org/wiki/Dalhousie_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration that Dalhousie is a public research university established in 1818 as Dalhousie College (non-sectarian, founded by Lieutenant Governor George Ramsay, 9th Earl of Dalhousie), becoming a degree-granting university in 1863; operates three campuses in Halifax plus a campus in Bible Hill (Truro) and satellite medical-school campuses in Saint John, New Brunswick and Cape Breton."
+      },
+      {
+        "label": "The Canadian Encyclopedia - Dalhousie University",
+        "url": "https://www.thecanadianencyclopedia.ca/en/article/dalhousie-university",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent cross-check of Dalhousie's founding history and public-university status."
+      },
+      {
+        "label": "Dalhousie Faculty of Dentistry - Doctor of Dental Surgery Admission Fact Sheet (official PDF, Sept 2025)",
+        "url": "https://cdn.dal.ca/content/dam/dalhousie/pdf/dentistry/DENT-DDS-Fact-sheet-Sept-2025.pdf",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official fact sheet confirms: 4-year DDS program; minimum 60 credit hours (10 full-year classes) of prerequisite university coursework required before entry; application via Dalhousie portal or AADSAS by October 1; DAT (Canadian/American) required with minimum PAT/SNS/RCT scores of 17 (most successful applicants score 20+); admission profile shows approximately 500 applications, 44 accepted, split as 26 Canadian seats and 18 international seats; international-seat applicants must pay international tuition for all 4 years; applicants whose first language is not English must meet an English-proficiency test requirement; applicants who studied outside Canada/US must submit a course-by-course WES evaluation report."
+      },
+      {
+        "label": "Dalhousie University - Dentistry (DDS) program overview (official)",
+        "url": "https://www.dal.ca/study/programs/graduate-professional/dentistry-dds.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official program landing page for the Doctor of Dental Surgery program, linking to admissions and faculty information."
+      },
+      {
+        "label": "Dalhousie University - 2026-2027 Medicine and Dentistry Fee Schedule (official PDF)",
+        "url": "https://cdn.dal.ca/content/dam/dalhousie/pdf/admissions/MoneyMatters/Dentistry%20and%20Medicine%202026-2027.pdf",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-07",
+        "notes": "Official fee schedule confirms DDS tuition of CAD 31,351.80 per year (Years 1-4) for domestic/Canadian-seat students, and CAD 62,751.74 per year (Years 1-4) for International Dentistry Students; also confirms a mandatory per-term International Student Society Fee and mandatory basic international health insurance plan (opt-out available with proof of comparable coverage)."
+      },
+      {
+        "label": "BeMo Academic Consulting - Dalhousie Faculty of Medicine: How to Get In",
+        "url": "https://bemoacademicconsulting.com/blog/dalhousie-medical-school",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent admissions-consulting source corroborating that Dalhousie's MD program is not open to a general international applicant pool, noting only a small number (no more than a handful) of government-sponsored supernumerary international seats (e.g. Saudi/Kuwaiti government-sponsored students) rather than a standard international pathway."
+      },
+      {
+        "label": "Dalhousie University - Medical School Admissions overview (official)",
+        "url": "https://medicine.dal.ca/departments/core-units/admissions.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official Faculty of Medicine admissions pages describe Canadian citizenship/permanent residency requirements for the standard MD admissions stream; used to confirm the MD program is omitted from this profile as not offering a general international-applicant route."
+      },
+      {
+        "label": "Dalhousie University - College of Pharmacy (official)",
+        "url": "https://www.dal.ca/faculty/health/pharmacy.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official college page; admissions-requirements pages describe the PharmD program as serving the Maritime provinces with preference to Maritime residents and Canadian citizens/permanent residents, without describing a direct international-applicant admissions pathway -- PharmD is therefore omitted from structured programs as unconfirmed for direct international entry."
+      },
+      {
+        "label": "Dalhousie University - School of Nursing, BScN Admission Requirements (official)",
+        "url": "https://www.dal.ca/faculty/health/nursing/undergraduate-program/admission-requirements.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Official admission-requirements page confirms the direct-entry BScN program primarily serves permanent residents of Nova Scotia, with limited seats for qualified residents of other Canadian provinces; international students are not eligible for this direct-entry undergraduate route, so BScN is omitted from structured programs."
+      },
+      {
+        "label": "Dalhousie University - Future Students: India (official)",
+        "url": "https://www.dal.ca/dal/india.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official India-facing recruitment page confirms Dalhousie is ranked 12th overall in Canada and in the Top 15 research-intensive universities in Canada (QS World University Rankings context cited on the page), states students from India will find cultural festivals and community events, Indian grocery stores and restaurants, student societies and peer networks, and a supportive campus environment in Halifax, and names a dedicated India recruitment advisor (Student Recruitment Manager, India) for prospective applicants."
+      },
+      {
+        "label": "Dalhousie University - International student housing overview (official)",
+        "url": "https://www.dal.ca/campus_life/international-centre/new-students/housing.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official housing page confirms Dalhousie offers 2,800+ residence spaces across its Halifax and Truro (Agricultural) campuses, with 11 residences to choose from, students in residence coming from 47 countries, and both traditional (single/double room) and non-traditional apartment-style residence options, plus dedicated off-campus living support resources for students who do not secure a residence space."
+      },
+      {
+        "label": "Dalhousie University - International student support (official)",
+        "url": "https://www.dal.ca/life-at-dal/student-support/international-students.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official page confirms a dedicated International Centre providing immigration information (study permits, permit extensions, temporary resident visas, electronic travel authorization), guidance on working in Canada (SIN, tax numbers), and family-member support for international students."
+      },
+      {
+        "label": "The National Dental Examining Board of Canada (NDEB) - official",
+        "url": "https://ndeb-bned.ca/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official national licensing body confirming that graduates of accredited Canadian dental programs (such as Dalhousie's DDS) become eligible for NDEB Certification via the Written Examination and OSCE/Virtual OSCE, the standard route into Canadian dental licensure; roughly 1,000 dentists are certified annually through NDEB processes."
+      },
+      {
+        "label": "CBC News - Nova Scotia's growing Asian population getting taste of home at new grocery stores",
+        "url": "https://www.cbc.ca/news/canada/nova-scotia/growing-asian-population-grocery-stores-1.7070358",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent news corroboration that Halifax/Nova Scotia has a fast-growing Asian population, with new Indian/South Asian and other Asian specialty grocery stores opening in the Halifax area and a temple serving the growing community, alongside longer-established stores."
+      },
+      {
+        "label": "South Asian Mart - Indian grocery store, Dartmouth/Halifax",
+        "url": "https://southasianmart.ca/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent local business listing confirming an established South Asian/Indian grocery store serving the Halifax metro area (Dartmouth), carrying groceries, produce, sweets, and halal meat."
+      },
+      {
+        "label": "Statistics Canada - Safe Cities profile series: Halifax, Nova Scotia",
+        "url": "https://www150.statcan.gc.ca/n1/pub/85-002-x/2020001/article/00001/halifax-eng.htm",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent federal statistical profile of crime and safety indicators for the Halifax census metropolitan area, used to corroborate general city-safety context (police-reported crime in Halifax has declined over the preceding decade per related Statistics Canada/HRP reporting) rather than asserting Halifax as a top-ranked 'safest city' superlative."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Dalhousie University",
+    "city": "Halifax",
+    "type": "Public",
+    "establishedYear": 1818,
+    "officialWebsite": "https://www.dal.ca/",
+    "bestFitFor": [
+      "Students who already have roughly 60 university credit hours (about 3 years) of prior post-secondary science-heavy coursework completed and are targeting a genuine four-year Doctor of Dental Surgery (DDS) degree in Canada, not a direct-from-high-school MBBS-style pathway",
+      "Applicants who can sit the Canadian/American Dental Aptitude Test (DAT) rather than relying on NEET, and who are comfortable applying through AADSAS or the Dalhousie portal, including submitting a WES course-by-course evaluation of prior international coursework",
+      "Students who want the comparative certainty of a published international-seat quota (18 of 44 DDS seats in the most recent admission profile) and a clearly stated international tuition figure, rather than an ambiguous or undisclosed international-admissions policy",
+      "Students prioritising a long-established (1818), public, research-intensive university in a smaller, safer, more affordable Canadian city over a larger metropolis, and who are comfortable with Halifax's Atlantic Canada climate and comparatively smaller (but growing) South Asian community"
+    ],
+    "recognitionBadges": [
+      "Public research university established in 1818, one of Canada's oldest universities and a top-15 research-intensive university in Canada",
+      "DDS graduates become eligible for National Dental Examining Board of Canada (NDEB) certification, the standard route into Canadian dental licensure",
+      "Dalhousie's own official Doctor of Dental Surgery admission fact sheet confirms a defined annual international-seat quota (18 of 44 total DDS seats in the most recently published profile)"
+    ],
+    "recognitionLinks": [
+      {
+        "label": "Dalhousie Faculty of Dentistry - DDS Admission Fact Sheet (official)",
+        "url": "https://cdn.dal.ca/content/dam/dalhousie/pdf/dentistry/DENT-DDS-Fact-sheet-Sept-2025.pdf"
+      },
+      {
+        "label": "National Dental Examining Board of Canada (NDEB) - official",
+        "url": "https://ndeb-bned.ca/"
+      }
+    ],
+    "programs": [
+      {
+        "courseSlug": "bds",
+        "title": "Doctor of Dental Surgery (DDS)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs/graduate-professional/dentistry-dds.html",
+        "medium": "English (English-language proficiency test required for applicants whose first language is not English)",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "licenseExamSupport": ["NDEB (National Dental Examining Board of Canada) certification exams after graduation"],
+        "feeNotes": "Dalhousie's official 2026-2027 Medicine and Dentistry Fee Schedule confirms International Dentistry Student tuition of CAD 62,751.74 per year across all 4 years of the DDS program (versus CAD 31,351.80 per year for domestic/Canadian-seat students), plus a mandatory per-term International Student Society Fee and a mandatory basic international health insurance plan (opt-out available with proof of comparable coverage). Students should confirm the exact current-year total cost, including ancillary fees, directly with Dalhousie's Registrar's Office before budgeting.",
+        "sourceUrls": [
+          "https://cdn.dal.ca/content/dam/dalhousie/pdf/dentistry/DENT-DDS-Fact-sheet-Sept-2025.pdf",
+          "https://www.dal.ca/study/programs/graduate-professional/dentistry-dds.html",
+          "https://cdn.dal.ca/content/dam/dalhousie/pdf/admissions/MoneyMatters/Dentistry%20and%20Medicine%202026-2027.pdf"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Dalhousie University is a large public research university founded in 1818, based in Halifax, Nova Scotia, and ranked among Canada's top 15 research-intensive universities. For Indian students researching health-professional degrees, it is important to understand Dalhousie's actual international-admissions rules program by program rather than assume a single blanket policy. Dalhousie's MD (medicine) program is not open to a general international applicant pool -- it is restricted to Canadian citizens and permanent residents, with only a small number of government-sponsored supernumerary seats for specific countries. The entry-to-practice PharmD (pharmacy) program primarily serves Maritime-province and Canadian-citizen/permanent-resident applicants without a described direct international pathway, and the direct-entry BScN (nursing) program is likewise restricted mainly to permanent residents of Nova Scotia. The one clearly confirmed exception is the four-year Doctor of Dental Surgery (DDS) program: Dalhousie's own official admission fact sheet states that 18 of the 44 total seats admitted in the most recent published cycle were reserved for international applicants, alongside a clearly published international tuition figure -- making this the one health-professional program covered in this profile. This information is compiled from Dalhousie's own official websites and PDFs (dal.ca, medicine.dal.ca, cdn.dal.ca) and independent sources (Wikipedia, The Canadian Encyclopedia, BeMo Academic Consulting, CBC News, Statistics Canada); Indian applicants should independently verify current eligibility, fees and licensing requirements directly with Dalhousie before applying.",
+    "campusLifestyle": "Dalhousie's main campuses sit in Halifax, Nova Scotia's capital and largest city, with an additional Agricultural Campus in Truro (Bible Hill). The university hosts roughly 21,000 students overall, including students from 47 countries living in its 11 residences, and offers hundreds of clubs, societies, and recreational facilities typical of a large multi-faculty research university. Because the DDS program is a small, cohort-based professional program (around 44 students admitted per year) embedded within this larger university, day-to-day student life for DDS students centres heavily on the Faculty of Dentistry building on the Halifax campus and its own clinics, labs, and student groups, rather than the wider undergraduate campus experience -- prospective applicants should confirm current DDS-specific student-life details directly with the Faculty of Dentistry.",
+    "cityProfile": "Halifax is the capital of Nova Scotia and the largest city in Atlantic Canada, with a metropolitan population of roughly 440,000 as of the 2021 census. It is a historic port city and a regional hub for education, healthcare, and government, generally considered more affordable and less congested than Canada's largest metropolitan centres, while offering a full range of city amenities. Halifax's South Asian and Indian community is smaller than in cities like Toronto or Vancouver but is actively growing, with independent local reporting (CBC News) confirming new Indian and other Asian specialty grocery stores have been opening in the Halifax area alongside longer-established stores, serving a fast-growing Asian population. Students should note Halifax's Atlantic Canada climate (cold, often snowy winters and a notable coastal-weather pattern) as a significant adjustment from most parts of India, and should independently review current cost-of-living estimates before committing.",
+    "clinicalExposure": "As a four-year professional Doctor of Dental Surgery (DDS) degree, the program combines pre-clinical coursework with hands-on clinical training delivered through the Faculty of Dentistry's own teaching clinics in Halifax, where students treat patients under faculty supervision as they progress through the curriculum, consistent with Canadian dental education standards. Because exact clinical rotation structures, patient-load requirements, and any external placement partnerships can change between admission cycles, applicants should review Dalhousie's current DDS curriculum information and confirm specifics directly with the Faculty of Dentistry before applying.",
+    "hostelOverview": "Dalhousie operates 2,800+ residence spaces across its Halifax and Truro campuses, spread across 11 residences that include both traditional single/double-room halls and non-traditional apartment-style living, with students in residence coming from 47 different countries. However, on-campus housing is not guaranteed for all students, particularly for a small professional-program cohort such as DDS, so applicants should not assume automatic access to a campus residence for their full four-year program. Students who do not secure campus housing typically rent off-campus in the Halifax area, and Dalhousie's International Centre and Off-Campus Living office provide dedicated resources, including apartment-finding guidance and moving resources, for students arranging their own accommodation. Because Halifax's rental market has tightened in recent years, DDS applicants should contact Dalhousie's housing offices directly, well in advance of enrolment, to understand current availability, costs, and application timelines for professional-program students specifically.",
+    "indianFoodSupport": "Halifax's Indian and South Asian community is smaller than in Canada's largest cities but is actively growing, and independent local reporting (CBC News) confirms new Indian and other Asian specialty grocery stores have opened in the Halifax area in recent years to serve this growing population, alongside established stores such as long-running Indian grocers in the region and dedicated South Asian grocery outlets in the Halifax-Dartmouth area carrying groceries, produce, sweets, and halal meat. Dalhousie's own India-facing recruitment page states that students from India will find Indian grocery stores and restaurants, cultural festivals and community events, and student societies and peer networks in Halifax. This makes it realistic for students to maintain an Indian diet, including vegetarian options, through self-catering or dining out, though the selection is more limited than in Toronto or Vancouver; students should confirm current on-campus dining options directly with Dalhousie Campus Dining, as no dedicated Indian mess or dining hall is confirmed here.",
+    "safetyOverview": "Halifax is generally regarded as a safer and more affordable city than many of Canada's largest metropolitan centres, with Statistics Canada's federal Safe Cities profile series providing detailed, regularly updated crime and safety indicators for the Halifax census metropolitan area; independent reporting has noted a declining trend in police-reported crime in Halifax over the preceding decade. As with any city, students should take standard precautions around personal belongings and late-night travel. Dalhousie's International Centre provides guidance on immigration documents (study permits, permit extensions, temporary resident visas, electronic travel authorization), and students should register with the International Centre on arrival, review Canadian and Nova Scotia health-insurance requirements, and keep their study-permit and immigration documents up to date throughout their program.",
+    "studentSupport": "Dalhousie's International Centre provides dedicated support for international students, including guidance on study permits and permit extensions, temporary resident visas, working in Canada (Social Insurance Number and tax registration), and family-member visit/join arrangements. Dalhousie also names a dedicated Student Recruitment Manager for India, offering direct guidance on programs, visas, scholarships, and life in Halifax specifically for Indian applicants and families, per the university's official India-facing recruitment page. Within the Faculty of Dentistry specifically, DDS applicants apply through AADSAS or the Dalhousie portal, and the Faculty publishes a detailed admission fact sheet covering academic and non-academic requirements, DAT score thresholds, and application deadlines; applicants who completed post-secondary study outside Canada or the US must also submit a course-by-course WES evaluation report. Prospective Indian applicants should use these official Dalhousie channels directly for all admissions, fee, and visa questions, and verify any information provided by third-party consultants or agents against Dalhousie's own published pages before making financial commitments.",
+    "whyChoose": [
+      "A long-established (1818), public, top-15 research-intensive Canadian university with a genuine four-year Doctor of Dental Surgery (DDS) program that publishes a defined annual international-seat quota (18 of 44 total seats in the most recent published admission profile) -- a clearer, quota-confirmed international pathway than is disclosed by some peer Canadian dental schools.",
+      "A dedicated official India-facing recruitment page and a named Student Recruitment Manager for India, offering direct guidance on programs, visas, scholarships, and life in Halifax.",
+      "DDS graduates become eligible to pursue National Dental Examining Board of Canada (NDEB) certification, the recognised route into Canadian dental licensure.",
+      "A more affordable, smaller-city alternative to Toronto or Vancouver, with a dedicated International Centre for immigration and settling-in support and 2,800+ residence spaces hosting students from 47 countries."
+    ],
+    "thingsToConsider": [
+      "Dalhousie's MD (medicine) program, PharmD (pharmacy) program, and direct-entry BScN (nursing) program are not confirmed as open general international-applicant pathways -- MD is restricted to Canadian citizens/permanent residents (with only a handful of government-sponsored international seats for specific countries), PharmD's admissions pages do not describe a direct international route, and BScN primarily serves Nova Scotia permanent residents; only the DDS (dentistry) program is confirmed here as a defined international-applicant pathway.",
+      "DDS admission requires roughly 60 university credit hours (about 3 years of prior post-secondary, science-heavy coursework) plus a minimum A- average (3.7/4.3) in the final 60 credit hours and higher science courses -- this is not a direct-from-Class-12 entry route the way many MBBS-abroad programs are.",
+      "Applicants must sit the Canadian/American Dental Aptitude Test (DAT), not NEET, with minimum component scores of 17 (most successful applicants score 20 or better), and apply through AADSAS or the Dalhousie portal by an October 1 deadline -- plan the testing and application timeline well in advance, and budget time for the required WES course-by-course evaluation if your prior study was outside Canada/the US.",
+      "Dalhousie's own 2026-2027 fee schedule confirms international DDS tuition at CAD 62,751.74 per year for all 4 years (roughly double the domestic rate), plus a mandatory International Student Society Fee and mandatory international health insurance -- confirm the exact current-year total cost, including ancillary fees, in writing with Dalhousie's Registrar's Office before committing financially.",
+      "A DDS from Dalhousie is a Canadian professional dental degree governed by Canadian licensing (NDEB); it is not an Indian dental degree, and students intending to practise in India afterward must independently verify current Dental Council/National Medical Commission-successor recognition and any additional Indian licensing requirements themselves before enrolling.",
+      "Halifax's Indian and South Asian community, while growing, is smaller than in Toronto, Vancouver, or Montreal, and its Atlantic Canada winters are a significant climate adjustment from most parts of India."
+    ],
+    "faq": [
+      {
+        "question": "Can Indian students apply for MBBS, pharmacy, or nursing at Dalhousie University?",
+        "answer": "Dalhousie's MD (medicine) program is restricted to Canadian citizens and permanent residents, with only a small number of government-sponsored supernumerary seats for specific countries rather than a general international pathway, per independent admissions-consulting sources corroborating the Faculty of Medicine's own admissions pages. The entry-to-practice PharmD program's own admissions pages describe eligibility for Maritime residents and Canadian citizens/permanent residents without detailing a direct international-applicant route, and the direct-entry BScN nursing program primarily serves permanent residents of Nova Scotia. None of these three are confirmed here as open international-applicant pathways for Indian students."
+      },
+      {
+        "question": "Which Dalhousie health-professional program can international students actually apply to?",
+        "answer": "The four-year Doctor of Dental Surgery (DDS) program is the one confirmed pathway. Dalhousie's own official admission fact sheet states that in the most recently published admission profile, 18 of the 44 total DDS seats were reserved for international applicants (alongside 26 Canadian seats), making eligibility and quota expectations unusually explicit compared to some peer Canadian dental schools."
+      },
+      {
+        "question": "What are the entry requirements for Dalhousie's DDS program for an Indian applicant?",
+        "answer": "Applicants need roughly 60 university credit hours (about 3 years of prior post-secondary study) including specific prerequisite science courses, a minimum A- average (3.7 on a 4.3 scale) in the final 60 credit hours and in higher science courses (biochemistry, microbiology, human physiology), a passing score on the Canadian/American Dental Aptitude Test (DAT, not NEET) with minimum component scores of 17, an application through AADSAS or the Dalhousie portal by October 1, and (for applicants who studied outside Canada/the US) a course-by-course World Education Services (WES) evaluation report. This is a graduate-entry-style pathway, not a direct-from-high-school route."
+      },
+      {
+        "question": "How much does the Dalhousie DDS program cost for international students?",
+        "answer": "Dalhousie's official 2026-2027 Medicine and Dentistry Fee Schedule confirms international DDS tuition of CAD 62,751.74 per year across all four years of the program (compared with CAD 31,351.80 per year for domestic/Canadian-seat students), plus a mandatory per-term International Student Society Fee and mandatory basic international health insurance (with an opt-out available if proof of comparable coverage is provided). Applicants should confirm the exact current-year total cost, including any ancillary fees, directly with Dalhousie's Registrar's Office before committing financially."
+      },
+      {
+        "question": "Will a Dalhousie DDS degree let me practise dentistry in India?",
+        "answer": "A Dalhousie DDS is a Canadian professional dental degree, and graduates become eligible to pursue National Dental Examining Board of Canada (NDEB) certification for Canadian licensure. This profile does not assert any Indian dental-council recognition for this degree; students intending to return and practise in India must independently verify current recognition and any additional licensing exam requirements with the relevant Indian regulatory authority before enrolling."
+      },
+      {
+        "question": "What is Halifax like for Indian students compared to Toronto or Vancouver?",
+        "answer": "Halifax is Nova Scotia's capital and Atlantic Canada's largest city, generally more affordable than Toronto or Vancouver, with a smaller but actively growing Indian and South Asian community. Independent local reporting (CBC News) confirms new Indian and other Asian grocery stores have opened in the Halifax area in recent years, and Dalhousie's own India-facing recruitment page confirms Indian grocery stores, restaurants, cultural festivals, and student societies are available in Halifax, though the range of options is narrower than in Canada's largest cities. Students should also plan for Atlantic Canada's cold, snowy winters, a significant climate adjustment from most parts of India."
+      }
+    ]
+  }
+}

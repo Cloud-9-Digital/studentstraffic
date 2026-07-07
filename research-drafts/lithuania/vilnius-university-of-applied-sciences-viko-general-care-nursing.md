@@ -1,0 +1,58 @@
+# Research record: Vilniaus Kolegija / Vilnius University of Applied Sciences (VIKO) — Faculty of Health Care, General Care Nursing
+
+Status: **HELD — not publish-ready.** Core premise in the research brief ("English-taught" General Care Nursing) could not be corroborated, and the best available primary-source evidence indicates the opposite (Lithuanian-medium programme). Per the exhaustive-then-omit / never-fabricate rule, this has not been converted into a publish-ready India-audience page claiming English medium of instruction.
+
+## What was researched
+
+- **Institution**: Vilniaus kolegija / Vilnius University of Applied Sciences (VIKO), Vilnius, Lithuania. Public higher professional education institution (university of applied sciences), the largest of its kind in Lithuania.
+- **Programme in question**: General Care Nursing (Bendrosios praktikos slauga), state code 6531GX012, run by the Faculty of Health Care (Faculty of Health Care / "SPF" — Sveikatos priežiūros fakultetas). Full-time, 3.5 years, 210 ECTS. Qualification: Professional Bachelor in Health Sciences; professional qualification of General Care Nurse.
+
+## Key finding: language of instruction is NOT corroborated as English
+
+The task brief asked to research this as an "English-taught" nursing programme. Multiple independent checks on VIKO's own official site contradict that premise:
+
+1. **VIKO's official "Degree programmes in English" page** (`https://en.viko.lt/for-students/degree-programmes-in-en/`) lists exactly 10 English-medium programmes across VIKO's faculties: Software Engineering, Information Systems and Cybersecurity, International Business, Tourism Management, Creativity and Business Innovations, Hotel and Restaurant Business, Banking, Business Economics, Civil Engineering, Transport Logistics, and Popular Music. **General Care Nursing is not on this list**, and no Faculty of Health Care programme appears on it at all.
+2. **The General Care Nursing programme page itself** lives at `https://en.viko.lt/for-students/degree-programmes-in-lt/general-care-nursing/` — i.e., under VIKO's own "**degree-programmes-in-lt**" (Lithuanian-medium programmes) URL path, not the "-in-en" path used for the 10 English programmes above.
+3. **The published curriculum** for the most recent intake (Degree Course 2026-2030) lists first-semester subjects including "Professional Language 1" (later "Professional Language 2"), not "English" as the base language of delivery. Earlier cohorts (2023-2027, 2024-2028, 2025-2029) list "English" itself as a *subject* in semester 1 — consistent with English being taught as a foreign-language course within an otherwise Lithuanian-medium curriculum, not the medium of instruction for the whole programme.
+4. No page checked (official VIKO site, Study in Lithuania national portal, or general web search) contains the phrases "taught in English," "English-medium," or "language of instruction: English" anywhere in connection with General Care Nursing.
+5. VIKO's general "Admission Requirements" page requires all international applicants to sit a B2-level English proficiency exam — but this is VIKO's blanket international-applicant screening requirement (also true for candidates to Lithuanian-medium programmes), not confirmation that a specific programme is delivered in English.
+6. Study in Lithuania's institutional profile page for VIKO (`https://studyin.lt/institutions/vilniaus-kolegija-higher-education-institution/`) lists VIKO's programme catalogue for prospective international/English-track students, and General Care Nursing does **not** appear in that list either (the list matches the same 10 English-taught VIKO programmes found on VIKO's own site).
+
+**Conclusion**: the weight of primary-source evidence indicates VIKO's General Care Nursing programme is Lithuanian-medium (with English taught only as a language subject), not an English-taught degree suitable for the India-outbound, English-medium-seeking audience this content library targets. Since this contradicts the task's stated premise and no corroborating source confirms English medium, the honest, non-fabricating action is to **not** publish a page describing it as English-taught.
+
+## Facts that WERE corroborated (for future reference / in case VIKO later launches an English track)
+
+- **Institution type**: Public (state) university of applied sciences.
+- **Scale**: 6,554 students (Oct 2025), 563 teaching staff, 58 study programmes (10 in English — none in Health Care), 9 faculties, 10 student dormitories, graduate employability 94%. Source: VIKO official "Facts and Figures" page.
+- **Location**: Vilnius, Lithuania's capital; main address Saltoniškių g. 58-1, LT-08105 Vilnius. Faculty of Health Care (SPF) is at Didlaukio Str. 45, 08303 Vilnius — a separate campus from the main building.
+- **Programme structure (Lithuanian-medium, per official curriculum pages)**: 3.5 years / 7 semesters / 210 ECTS. Subjects include Anatomy, Physiology, Microbiology, Pharmacology, General Pathology, Bioethics, Gerontology, and a dense internship sequence — Practice of General/Therapeutic/Geriatric/Pediatric/Community/Maternal/Surgical/Mental Health/Intensive Nursing — plus a Final Practice and Professional Bachelor Graduation Thesis in semester 7.
+- **Career outcomes** (per official programme page): graduates can work in surgical, therapeutic, pediatric, and other specialised units at personal healthcare facilities, addiction disease centres, social services, elderly/disability care homes, and private personal care facilities.
+- **Admissions (general, applies across VIKO)**: one intake per year (autumn); 2026 cycle: applications open 1 January 2026, deadline 31 March 2026 (note: source text renders this as "3 1 March 2026" due to a formatting artifact — should be re-confirmed directly, likely 31 March), studies begin 1 September 2026. Non-refundable application fee of EUR 100 (bank transfer to VIKO's SEB account). All international applicants sit a B2 English proficiency exam (written test + interview) as part of the general admissions process, regardless of the language of the specific programme.
+- **Tuition**: VIKO's official "Tuition Fees 2026" page lists explicit per-year tuition only for its 10 English-medium/international programmes (range EUR 2,900-9,500/year depending on programme). It does **not** list a tuition figure for General Care Nursing, consistent with that programme not being part of VIKO's international/English-track fee schedule. No tuition figure for this programme is asserted anywhere in this record — tuition is OMITTED as unconfirmed for this specific programme.
+- **Accommodation**: VIKO operates 10 student dormitories. Only Dormitory No. 6 (Giedraičių Str. 81, LT-08213 Vilnius, near the city centre) had a detailed official page located during this research; it is now reserved for exchange/Erasmus/intern students only (no longer accepts new first-year full-time students), with prices of EUR 180/month (single), EUR 145/month (double, per person), or EUR 260/month (double room used alone), plus a EUR 400 deposit. Since this is only one of 10 dormitories and it explicitly does not take first-year students, it cannot be used to characterise general first-year housing at VIKO without further research into the other 9 dormitories.
+
+## What was OMITTED and why
+
+- **Language of instruction / "English-taught" framing** — OMITTED (contradicted, not fabricated) per the finding above.
+- **Tuition fee for General Care Nursing** — OMITTED; not listed on VIKO's official fee schedule (which only covers the 10 international/English programmes).
+- **A definitive list of teaching hospitals / clinical placement sites** — OMITTED; the curriculum names internship subjects but no page identifies specific partner hospitals.
+- **First-year dormitory options and pricing** — OMITTED beyond Dormitory No. 6 (which excludes first-years); the other 9 VIKO dormitories were not individually located/verified in this pass.
+- **INC (Indian Nursing Council) recognition status** — would have been framed as "verify case-by-case," per standard practice, had the page been built; not applicable since the page was not built.
+
+## Sources checked (all fetched via curl with a browser user-agent; no WebFetch used)
+
+1. VIKO official site — General Care Nursing programme page: https://en.viko.lt/for-students/degree-programmes-in-lt/general-care-nursing/ (checked 2026-07-07). Curriculum, career prospects, learning outcomes, state code, qualification, duration/ECTS. URL path itself is evidence of Lithuanian-medium classification.
+2. VIKO official site — Degree programmes in English: https://en.viko.lt/for-students/degree-programmes-in-en/ (checked 2026-07-07). Authoritative list of the 10 English-medium VIKO programmes; General Care Nursing / Faculty of Health Care absent.
+3. VIKO official site — Tuition Fees 2026: https://en.viko.lt/for-students/tuition-fees/ (checked 2026-07-07). Per-programme tuition table covering only the 10 English/international programmes; no Health Care / nursing entry; general refund policy.
+4. VIKO official site — Facts and Figures: https://en.viko.lt/about-us/facts-and-figures/ (checked 2026-07-07). Institutional scale statistics (students, staff, programmes, faculties, dormitories, employability).
+5. VIKO official site — Admission Requirements: https://en.viko.lt/admissions/admission-requirements/ (checked 2026-07-07). General international-applicant requirements (secondary education, maths exam/knowledge test, B2 English exam) — applies institution-wide, not nursing-specific.
+6. VIKO official site — How to apply?: https://en.viko.lt/for-students/how-to-apply/ (checked 2026-07-07). Intake dates, application fee (EUR 100), document requirements, no-agents policy.
+7. VIKO official site — Accommodation at Dormitory No. 6: https://en.viko.lt/facilities-services/accommodation/ (checked 2026-07-07). Only dormitory with a detailed page found; explicitly excludes first-year full-time students.
+8. VIKO Faculty of Health Care (SPF) English micro-site: https://en.spf.viko.lt/ (checked 2026-07-07). Faculty address, contact, recent Erasmus/BIP mobility news; no programme language statement.
+9. Study in Lithuania — VIKO institutional profile: https://studyin.lt/institutions/vilniaus-kolegija-higher-education-institution/ (checked 2026-07-07). Independent national-portal corroboration of institutional scale and the same 10-programme English-track list (nursing absent).
+10. Study in Lithuania — general-care-nursing programme URL: https://studyin.lt/programs/general-care-nursing/ (checked 2026-07-07) — returned "Page not found," corroborating that this programme is not part of Study in Lithuania's promoted English-taught catalogue.
+11. General web search (WebSearch tool, multiple queries, checked 2026-07-07) for third-party corroboration (aggregators, Wikipedia, education portals) of English-medium status — none found a source stating General Care Nursing at VIKO is English-taught; only generic/boilerplate restatements of VIKO's overall "40 English-taught programmes" marketing claim (traceable back to the same 10-programme list above, likely a copywriting imprecision on third-party aggregator sites).
+
+## Recommendation
+
+Hold this university/programme out of the England-medium nursing content set. If VIKO later launches an English-medium nursing track (or if a future check finds updated evidence), re-run this research — the institutional facts above (scale, admissions process, application fee, Faculty of Health Care campus) remain valid and reusable. Do not publish a page implying INC-relevant, English-medium nursing study at VIKO based on current evidence.

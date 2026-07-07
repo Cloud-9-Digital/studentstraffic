@@ -1,0 +1,157 @@
+{
+  "countrySlug": "lithuania",
+  "schoolName": "Utena University of Applied Sciences",
+  "cityName": "Utena",
+  "priority": "medium",
+  "officialWebsite": "https://www.utenos-kolegija.lt/en",
+  "programUrl": "https://www.utenos-kolegija.lt/en/studies-program/general-practice-nursing",
+  "feesUrl": "https://www.utenos-kolegija.lt/en/international-students/admission/tuition-fees",
+  "hostelUrl": "https://www.utenos-kolegija.lt/en/international-students/accomodation",
+  "admissionUrl": "https://www.utenos-kolegija.lt/en/international-students/admission/how-to-apply",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Utenos kolegija official site - General Practice Nursing programme page",
+        "url": "https://www.utenos-kolegija.lt/en/studies-program/general-practice-nursing",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Qualification, credits (210 ECTS), duration (3.5 years), language of instruction, faculty, learning outcomes, module/subject breakdown, simulation training centre, placement cities, Erasmus+ partner countries."
+      },
+      {
+        "label": "Utenos kolegija official site - Institution page",
+        "url": "https://www.utenos-kolegija.lt/en/institution",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Institutional mission, Professional Bachelor/Diploma of Higher Education/Diploma Supplement award structure, 18 accredited programmes, Erasmus Charter for Higher Education 2021-2027, campus facilities (labs, e-learning centre, library)."
+      },
+      {
+        "label": "Utenos kolegija official site - Accommodation (international students)",
+        "url": "https://www.utenos-kolegija.lt/en/international-students/accomodation",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Student house locations (Maironio str. 18, Aukstaiciu str. 9, and Ausros str. 73 for Faculty of Medicine students), shared double/triple rooms, shared bathrooms/kitchen, free laundry, advance semester payment, application via Application Form."
+      },
+      {
+        "label": "Utenos kolegija official site - How to apply (international admissions)",
+        "url": "https://www.utenos-kolegija.lt/en/international-students/admission/how-to-apply",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Application steps, EUR 50 non-refundable registration fee, required documents, SKVC academic recognition requirement, English test thresholds (IELTS 5.5 / TOEFL iBT 72 / PTE 59 / CAE 160), foreign-national application window (15 September - 31 October)."
+      },
+      {
+        "label": "uniRank - Utenos kolegija (Utena University of Applied Sciences) institution profile",
+        "url": "https://www.unirank.org/lt/uni/utenos-kolegija/",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration: founded 2000, non-profit public control, officially recognised by Lithuania's Ministry of Education, Science and Sport, small-sized institution (2,000-2,999 students), address confirmation."
+      },
+      {
+        "label": "Study in Lithuania (national HE promotion portal) - Utenos kolegija institution profile",
+        "url": "https://studyin.lt/institutions/utenos-kolegija-higher-education-institution/",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration: 18 accredited study programmes, Professional Bachelor's/Diploma of Higher Education/Diploma Supplement award structure, Erasmus Charter 2021-2027, full programme list confirming General Practice Nursing (3.5 years) and Odontological Care (3 years) both sit under the Faculty of Medicine."
+      },
+      {
+        "label": "Lithuania Travel (national tourism board) - Utena Lakes",
+        "url": "https://lithuania.travel/en/where-to-visit/nature/waterside-recreation/utena-lakes",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "City/region context: Utena sits amid the Dauniskis and Vyzuonaitis lakes in the Aukstaitija region, gateway to Aukstaitija National Park and Lake Tauragnas (Lithuania's deepest lake)."
+      },
+      {
+        "label": "Wikipedia - Utena County",
+        "url": "https://en.wikipedia.org/wiki/Utena_County",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "City-context corroboration: Utena population approx. 25,600 (2023), located about 95 km from Vilnius, one of Lithuania's oldest towns (first mentioned 1261), regarded as a symbolic capital of the Aukstaitija region."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Utena University of Applied Sciences",
+    "slug": "utena-university-of-applied-sciences",
+    "city": "Utena",
+    "type": "Public",
+    "establishedYear": 2000,
+    "officialWebsite": "https://www.utenos-kolegija.lt/en",
+    "featured": false,
+    "bestFitFor": [
+      "Indian students who want an affordable, practice-oriented nursing Bachelor's degree in the EU with heavy simulation-based and real clinical training",
+      "Students comfortable in a small college-town setting rather than a large capital city, who value close faculty contact and small practical-training groups",
+      "Students who can commit to a 3.5-year, 210-credit programme with placements across several Lithuanian cities (Utena, Vilnius, Kaunas, Rokiskis, Anyksciai) as part of the curriculum",
+      "Students targeting EU/Erasmus+ mobility exposure (Portugal, Germany, Latvia, Italy, Greece, Norway, Poland, Czech Republic, Turkey) alongside their core nursing qualification"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "General Practice Nursing (Professional Bachelor of Health Sciences, General Nurse)",
+        "officialProgramUrl": "https://www.utenos-kolegija.lt/en/studies-program/general-practice-nursing",
+        "medium": "Lithuanian, with English available for Erasmus+ exchange students only (confirm current-intake medium of instruction for degree-seeking international students directly with admissions before applying)",
+        "durationYears": 3.5,
+        "notes": "210-credit, full-time Professional Bachelor's programme delivered by the Faculty of Medicine, built on a modular-cyclical study system and J. Bruner's spiral-curriculum concept, with simulation-based learning in a dedicated Nursing Simulation Training Centre using standardised clinical protocols and the ESCAPE assessment method. Professional placements run across healthcare institutions in Utena, Vilnius, Kaunas, Rokiskis, Anyksciai and other cities. Erasmus+ mobility placements are available in Portugal, Germany, Latvia, Italy, Greece, Norway, Poland, Czech Republic and Turkey. Tuition fee figures were not confirmed at time of research (the official tuition-fees page did not render a static figure); students must request current non-government-funded tuition fees directly from Utenos kolegija admissions."
+      }
+    ],
+    "recognitionBadges": [],
+    "recognitionLinks": [],
+    "teachingHospitals": [],
+    "similarUniversitySlugs": [],
+    "researchNotes": "Non-WDOMS discovered university, added via overnight research workflow. Utenos kolegija (Utena University of Applied Sciences) is a public, non-profit Lithuanian university of applied sciences (kolegija) founded in 2000, officially recognised by Lithuania's Ministry of Education, Science and Sport, and holding the Erasmus Charter for Higher Education 2021-2027. It runs 18 accredited programmes including General Practice Nursing (3.5 years, Faculty of Medicine) and Odontological Care (3 years, Faculty of Medicine) -- the latter is a dental-assistant/dental-team qualification (not a Bachelor of Dental Surgery/dentist qualification), so it is deliberately NOT mapped to the 'bds' course slug and is only mentioned as institutional context, not listed as a program. There is no MBBS/medicine or pharmacy programme at this institution, so only bsc-nursing is listed as a structured program. Indian Nursing Council (INC) recognition of any foreign nursing qualification, including this one, is handled case-by-case via INC's equivalence process rather than being automatic -- this page must tell students to verify eligibility with INC before enrolling, and must not assert automatic recognition. Tuition fees could not be confirmed: the official tuition-fees page (JS-rendered) did not return a static figure at time of research, so tuition is omitted entirely rather than fabricated; a feeNotes-style caveat is used instead. The official nursing programme page explicitly lists the language of instruction as Lithuanian, with English only for Erasmus+ exchange students -- this is an important caveat for India-outbound degree-seeking applicants and must not be glossed over."
+  },
+  "draftContent": {
+    "summary": "Utena University of Applied Sciences (Utenos kolegija) is a public, non-profit Lithuanian university of applied sciences founded in 2000 and officially recognised by Lithuania's Ministry of Education, Science and Sport. Based in Utena, a lake-district town in the Aukstaitija region about 95 km from Vilnius, the institution runs 18 accredited programmes across its Faculty of Business and Technologies and Faculty of Medicine. For students exploring healthcare study in Lithuania, Utenos kolegija's Faculty of Medicine offers a 3.5-year, 210-credit General Practice Nursing programme leading to a Professional Bachelor of Health Sciences (General Nurse) qualification, built around simulation-based learning in a dedicated Nursing Simulation Training Centre and clinical placements across several Lithuanian cities. Indian students considering this route should treat it as a nursing-specific option -- Utenos kolegija does not offer MBBS or pharmacy degrees, and its dental programme trains dental assistants rather than dentists -- and should independently confirm the current language of instruction, tuition fee, and Indian Nursing Council (INC) equivalence process before committing, since the official programme page lists Lithuanian as the language of instruction, with English available only for Erasmus+ exchange students, and foreign nursing qualifications are assessed by INC case-by-case rather than automatically recognised.",
+    "campusLifestyle": "Utenos kolegija's academic community is organised around two faculties -- Business and Technologies, and Medicine -- with nursing students training alongside peers in Odontological Care (dental assisting) and other health-sciences programmes. The institution emphasises practice-oriented, career-focused learning: professional placements and internships are positioned as essential components of every programme, and General Practice Nursing students train first in the Nursing Simulation Training Centre using real clinical scenarios and standardised procedural protocols before moving into hospital and community placements. Utenos kolegija holds the Erasmus Charter for Higher Education 2021-2027 and actively participates in Erasmus+ mobility, giving students access to study or placement periods in Portugal, Germany, Latvia, Italy, Greece, Norway, Poland, the Czech Republic, and Turkey. Campus infrastructure includes modern computer laboratories, wireless internet throughout the buildings, a Centre of E-Learning, and a library with access to major academic databases. As a small institution (in the low thousands of students), class sizes for practical training tend to be small, which the college positions as supporting closer faculty contact and more hands-on skill-building.",
+    "cityProfile": "Utena is one of Lithuania's oldest towns, first mentioned in historical chronicles in 1261, and is sometimes regarded as a symbolic capital of the Aukstaitija region in Lithuania's northeast. The town sits amid the Dauniskis and Vyzuonaitis lakes, and Utena district as a whole is exceptionally lake-rich, with Aukstaitija National Park and Lake Tauragnas -- Lithuania's deepest lake -- both a short trip away. With a population of roughly 25,600 (2023) and a location about 95 km from Vilnius, Utena is a compact, walkable town rather than a large city, with textile, food and timber processing, and power engineering among its main local industries. For international students, this means day-to-day life is quieter and slower-paced than in Vilnius or Kaunas, with easy access to lakes and nature but a smaller range of big-city amenities, entertainment, and part-time work options. Utena County is noted as Lithuania's second most popular tourism destination after the seaside, largely on the strength of its lakes and national park.",
+    "clinicalExposure": "The General Practice Nursing programme combines theoretical modules with structured, progressively deepening practical training, following a spiral-curriculum approach where core topics are revisited and built upon across the four years. Before entering real clinical settings, students train in the Nursing Simulation Training Centre, using standardised procedural protocols and objective structured clinical situations (assessed via the ESCAPE method) to build skills without risk to real patients. Professional placements then take place in healthcare institutions across Utena, Vilnius, Kaunas, Rokiskis, Anyksciai, and other Lithuanian cities, giving students exposure to varied hospital and community settings rather than a single site. The curriculum covers therapeutic, geriatric, palliative, oncology, surgical, intensive-care, maternal, paediatric, community, and mental-health nursing, with dedicated practice blocks attached to most clinical modules. Students interested in the specific hospital partnerships tied to a given intake should confirm current placement sites directly with the Faculty of Medicine, since clinical partner institutions can vary between academic years and placement cities.",
+    "hostelOverview": "Utenos kolegija offers international students accommodation in its 'Student house' facilities: at Maironio str. 18 and Aukstaiciu str. 9 in Utena, with students admitted to the Faculty of Medicine potentially housed at Ausros str. 73. Due to rising demand, only shared rooms are currently offered, split between two- and three-person configurations. Bathroom facilities are mostly shared between two rooms, there is one common-use kitchen per building, and a laundry room is available to international students at no extra charge; all rooms have free internet access. Students are required to pay for accommodation in advance for the full semester at arrival or during the introductory week, and are responsible for keeping shared kitchen and room areas clean and for any damage caused during their stay. Degree-seeking international students request a place by completing the relevant section of the official Application Form, while Erasmus+ exchange students reserve a place through the International Relations Department; students should confirm current room rates and availability directly with Utenos kolegija, as pricing was not published on the accommodation page at the time of research.",
+    "indianFoodSupport": "Utena is a small lake-district town rather than a major student hub, so it does not have an established Indian grocery, restaurant, or diaspora community comparable to Vilnius or Kaunas. Local supermarkets carry basic spices, rice, lentils, and general international-aisle staples that can support home cooking, and the shared kitchens in the Student house accommodation give students the ability to prepare their own meals. Students who rely heavily on Indian food should plan to stock staple spices and ingredients from home or from larger cities when travelling, and should reach out to Utenos kolegija's International Relations Department or any existing international/Erasmus+ student network before arrival to get current, first-hand guidance on food access and where to shop in Utena.",
+    "safetyOverview": "Utena is a small, quiet town, and general safety expectations are similar to other lower-density towns in Lithuania -- calmer day-to-day life than in Vilnius or Kaunas, with standard personal-safety practices (secure accommodation, awareness at night, keeping valuables secure) sufficient for most situations. The Student house accommodation is managed directly by the college, giving students a defined point of contact for residential concerns. As with any study-abroad move, students should register their arrival and residence status as required by Lithuanian immigration rules, keep travel/health insurance current as required for the student visa/residence permit, and stay in touch with Utenos kolegija's International Relations Department and the Embassy of India in Vilnius for updated safety and consular guidance specific to their stay.",
+    "studentSupport": "International admissions at Utenos kolegija are handled through a dedicated process: applicants submit the official Application Form and required documents by email to admission@utenos-kolegija.lt, pay a EUR 50 non-refundable registration fee, and receive application evaluation results before confirming acceptance and signing a study contract. The college's International Relations Department supports both Erasmus+ exchange students and degree-seeking international students, including accommodation requests and visa-process guidance. Foreign nationals must submit admission documents within a defined window (15 September to 31 October), and academic recognition of prior qualifications is verified either via a pre-obtained SKVC certificate or through the college's own recognition process at the point of application. Indian applicants should additionally plan to consult the Embassy of India in Vilnius for visa and consular support, confirm current English-language requirements (IELTS 5.5 / TOEFL iBT 72 / PTE 59 / CAE 160, or a remote assessment if no certificate is held) if applying as a degree-seeking student, and verify Indian Nursing Council (INC) equivalence requirements directly with INC before enrolling, since recognition of any foreign nursing qualification is assessed case-by-case rather than granted automatically.",
+    "whyChoose": [
+      "Public, non-profit Lithuanian university of applied sciences, officially recognised by the Ministry of Education, Science and Sport, with 18 accredited programmes across two faculties",
+      "General Practice Nursing programme built around a dedicated Nursing Simulation Training Centre and a spiral-curriculum teaching model, with placements spread across multiple Lithuanian cities for varied clinical exposure",
+      "Erasmus Charter for Higher Education 2021-2027 holder, giving nursing students access to Erasmus+ study or placement periods in nine partner countries",
+      "Small institution size supports closer faculty contact and smaller practical-training groups compared to larger universities",
+      "Quiet, lake-district town setting in Utena, with lower cost-of-living pressure than Vilnius or Kaunas and easy access to Aukstaitija National Park"
+    ],
+    "thingsToConsider": [
+      "Utenos kolegija offers only nursing among clinically relevant programmes for India-outbound students in the strict sense -- its Odontological Care programme trains dental assistants, not dentists, so it is not a BDS-equivalent pathway",
+      "The official General Practice Nursing programme page lists the language of instruction as Lithuanian, with English available only for Erasmus+ exchange students -- degree-seeking applicants must get written confirmation of the medium of instruction for their specific intake before applying",
+      "Indian Nursing Council (INC) recognition of this (or any) foreign nursing degree is assessed case-by-case through INC's equivalence process, not automatically granted -- students must verify eligibility with INC before enrolling",
+      "Tuition fees for the non-government-funded international-student place were not published as a static figure at the time of research; students must request current fees directly from Utenos kolegija admissions before budgeting",
+      "Utena is a small lake-district town with a much smaller Indian and international student community than Vilnius, Kaunas, or Klaipeda, so day-to-day food access, peer community, and part-time work options will be limited compared to bigger cities",
+      "Accommodation is currently offered only in shared (two- or three-person) rooms, with room rates not published online -- students should confirm current pricing and availability directly before committing"
+    ],
+    "faq": [
+      {
+        "question": "Does Utena University of Applied Sciences (Utenos kolegija) offer MBBS or medical degree programmes?",
+        "answer": "No. Utenos kolegija is a university of applied sciences (kolegija) with two faculties -- Business and Technologies, and Medicine -- and does not run an MBBS or Doctor of Medicine programme. Its only clinically relevant health programme for India-outbound students is the 3.5-year General Practice Nursing Professional Bachelor's degree. Students specifically seeking MBBS should look at Lithuania's dedicated medical universities instead."
+      },
+      {
+        "question": "Does Utenos kolegija's Odontological Care programme lead to a dentist qualification?",
+        "answer": "No. Odontological Care at Utenos kolegija is a 3-year Professional Bachelor's programme that trains dental assistants who support dentists and dental hygienists during procedures -- it is not a Bachelor of Dental Surgery (BDS) and does not qualify graduates to practise as dentists. Students seeking a dentistry (BDS-equivalent) qualification should look elsewhere."
+      },
+      {
+        "question": "What qualification do students receive after the General Practice Nursing programme at Utenos kolegija?",
+        "answer": "Graduates receive a Professional Bachelor of Health Sciences degree with the qualification of General Practice Nurse after completing the full-time, 3.5-year (210-credit) programme, as listed on the official programme page. Training combines simulation-based learning in a dedicated Nursing Simulation Training Centre with clinical placements across several Lithuanian cities."
+      },
+      {
+        "question": "Is the Utenos kolegija nursing programme taught in English?",
+        "answer": "The official programme page lists the language of instruction as Lithuanian, with English available only for Erasmus+ exchange students. Degree-seeking international applicants should get written confirmation from Utenos kolegija admissions on the medium of instruction for their intended intake before applying, rather than assuming an English-medium track is available."
+      },
+      {
+        "question": "Will a nursing degree from Utenos kolegija be recognised by the Indian Nursing Council (INC)?",
+        "answer": "There is no automatic recognition. The Indian Nursing Council evaluates foreign nursing qualifications individually through its equivalence process, reviewing the syllabus and confirming details with the awarding institution before granting registration eligibility in India. Students should start this verification with INC directly, ideally before enrolling, rather than assuming eligibility."
+      },
+      {
+        "question": "What does accommodation look like for international students at Utenos kolegija?",
+        "answer": "Utenos kolegija offers international students shared rooms (two or three students per room) in its 'Student house' facilities at Maironio str. 18 and Aukstaiciu str. 9, with Faculty of Medicine students potentially housed at Ausros str. 73. Rooms include free internet and laundry access, with bathrooms and kitchens mostly shared. Room rates were not published online at the time of research, so students should confirm current pricing and availability directly with the college before committing."
+      },
+      {
+        "question": "What is Utena like as a town for international students?",
+        "answer": "Utena is a small, quiet town in Lithuania's lake-rich Aukstaitija region, about 95 km from Vilnius, with a population of roughly 25,600. It offers a calmer pace of life and easy access to Aukstaitija National Park and Lithuania's deepest lake, Tauragnas, but has a much smaller international and Indian student community than bigger Lithuanian cities like Vilnius or Kaunas, which affects food access, peer community, and part-time work options."
+      }
+    ]
+  }
+}

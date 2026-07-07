@@ -1,0 +1,164 @@
+{
+  "countrySlug": "kyrgyzstan",
+  "universitySlug": "international-medical-university",
+  "schoolName": "International Medical University",
+  "cityName": "Bishkek",
+  "priority": "medium",
+  "officialWebsite": "https://imu.edu.kg/en",
+  "programUrl": "https://imu.edu.kg/en/education/faculties-of-the-university/general-medicine",
+  "admissionUrl": "https://imu.edu.kg/en/to-the-applicant/admission-procedures",
+  "qualityScore": 80,
+  "reviewNotes": "Auto-researched from IMU's official website (about-us, general medicine/dentistry/pharmacy faculty pages, welcome-to-IMU page) and the World Directory of Medical Schools (WDOMS) direct school-detail record (FAIMER School ID F0005118), cross-checked against multiple independent Indian MBBS-abroad consultancy pages for triangulation only (not used as a standalone source for any fact). Founding year is taken from the official site (general meeting of founders on 18 July 2016; first license 2017), which is corroborated by IMU's own '10 years' anniversary news post dated 28 May 2026 and by WDOMS's 'Year Instruction Started: 2017'. Some third-party agent portals claim earlier founding years (2003, 2013) - these appear to conflate IMU with other, differently named Bishkek medical institutions (e.g. International School of Medicine / International Higher School of Medicine, both founded 2003) and were disregarded in favour of the official/WDOMS-corroborated 2016 founding + 2017 first-license figures. Tuition is omitted entirely: no verified, current official fee figures could be corroborated from the official site (fees are not published there) and agent-portal fee figures were not treated as reliable per project sourcing rules. NMC recognition is not asserted outright: WDOMS confirms the school is listed and shows ECFMG-eligible graduation years from 2021, and a 5.5-year 'Doctor of Medicine (With Clinical Rotation)' track specifically for Indian students (started 2023) is listed directly on WDOMS, but no NMC-branded confirmation page naming this university was found, so students are told to verify current NMC/NEET/FMGE-NExT eligibility for their intended intake year directly with NMC and the university before applying.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "International Medical University - About us / History of the University (official)",
+        "url": "https://imu.edu.kg/en/about-us",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms founding on 18 July 2016 (general meeting of founders), first license and first intake in 2017 (General Medicine), first graduation 2019, private status, 3 faculties (General Medicine, Dentistry, Pharmacy), ~1500 students, own 225-bed University Clinic, address 32/2 Isakeev Street Bishkek, listings in WDOMS/ECFMG/FAIMER/EUA, and graduates sitting PLAB (UK) and FMGE (India)."
+      },
+      {
+        "label": "International Medical University Kyrgyzstan - World Directory of Medical Schools (WDOMS) school detail record",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0005118",
+        "kind": "recognition",
+        "checkedAt": "2026-07-07",
+        "notes": "Direct regulator-adjacent listing (FAIMER/WFME-sponsored global directory). Confirms: School Type Private; Year Instruction Started 2017; address 32/2 Isakeev Street, Bishkek 720048; three medical programs on file - 'Medical program for international students' (5 years, started 2017), 'Medical program for students of CIS countries' (6 years, started 2017), and 'Doctor of Medicine (With Clinical Rotation)' (5.5 years, English medium, started 2023, described as for Indian students, entrance exam required); AAEPO (Kyrgyzstan) accreditation status 'Accredited' as of 10 June 2022; ECFMG-Certification-eligible graduation years listed as 2021-current."
+      },
+      {
+        "label": "International Medical University - Faculty pages: General Medicine, Dentistry, Pharmacy (official)",
+        "url": "https://imu.edu.kg/en/education/faculties-of-the-university/general-medicine",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms General Medicine curriculum offered in both 5-year and 6-year tracks; Dentistry and Pharmacy each have Russian-group and English-group / full-time and evening curriculum variants; medicine, dentistry and pharmacy are the university's three degree faculties."
+      },
+      {
+        "label": "International Medical University - Welcome to IMU (official, applicant-facing)",
+        "url": "https://imu.edu.kg/en/to-the-applicant/welcome-to-imu",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official applicant-facing statement that IMU graduates 'successfully confirm their qualifications and work in India, Pakistan, the UK, and CIS countries', supporting India-audience relevance directly from the university rather than a third-party agent."
+      },
+      {
+        "label": "IMU homepage - news, FAQ and quick facts (official)",
+        "url": "https://imu.edu.kg/en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms IMU offers dormitory accommodation for students from other regions, teaching in Kyrgyz/Russian/English depending on programme, address (Isakeeva str. 32/2, Bishkek), and a news item dated 28 May 2026 marking '10 years' since establishment (attended by the Consul of India in Kyrgyzstan), consistent with the 2016 founding date."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "International Medical University",
+    "slug": "international-medical-university",
+    "city": "Bishkek",
+    "type": "Private",
+    "establishedYear": 2016,
+    "officialWebsite": "https://imu.edu.kg/en",
+    "bestFitFor": [
+      "Indian students seeking an English-medium MBBS-equivalent pathway with a program track specifically structured for Indian applicants (WDOMS-listed 5.5-year 'Doctor of Medicine with Clinical Rotation')",
+      "Students who want hands-on clinical exposure at a university that runs its own 225-bed teaching clinic rather than relying solely on external teaching hospitals",
+      "Students who prefer a smaller, newer private medical university over Kyrgyzstan's older, larger state medical institutes",
+      "Applicants comfortable independently verifying current NMC/NEET/FMGE-NExT eligibility rather than relying on agent claims, given IMU's relatively recent (2016) founding"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Doctor of Medicine / General Medicine (MBBS-equivalent)",
+        "officialProgramUrl": "https://imu.edu.kg/en/education/faculties-of-the-university/general-medicine",
+        "medium": "English",
+        "durationYears": 5.5,
+        "intakeMonths": ["September"],
+        "feeNotes": "No verified, current tuition figure is published on IMU's official website, so no fee amount is stated here. WDOMS records a dedicated 5.5-year 'Doctor of Medicine (With Clinical Rotation)' English-medium track for Indian students (started 2023) alongside a 5-year international-student track and a 6-year CIS-student track; confirm which track, its current duration, and its tuition/living-cost figures directly with IMU admissions before applying.",
+        "sourceUrls": [
+          "https://imu.edu.kg/en/education/faculties-of-the-university/general-medicine",
+          "https://search.wdoms.org/home/SchoolDetail/F0005118"
+        ]
+      },
+      {
+        "courseSlug": "bds",
+        "title": "Dentistry",
+        "officialProgramUrl": "https://imu.edu.kg/en/education/faculties-of-the-university/dentistry",
+        "medium": "English",
+        "durationYears": 5,
+        "intakeMonths": ["September"],
+        "feeNotes": "No verified, current tuition figure is published on IMU's official website, so no fee amount is stated here. The Dentistry faculty page lists separate Russian-group and English-group curricula; confirm current duration and fees directly with IMU admissions.",
+        "sourceUrls": [
+          "https://imu.edu.kg/en/education/faculties-of-the-university/dentistry"
+        ]
+      },
+      {
+        "courseSlug": "pharmacy",
+        "title": "Pharmacy",
+        "officialProgramUrl": "https://imu.edu.kg/en/education/faculties-of-the-university/pharmacy",
+        "medium": "English",
+        "durationYears": 5,
+        "intakeMonths": ["September"],
+        "feeNotes": "No verified, current tuition figure is published on IMU's official website, so no fee amount is stated here. The Pharmacy faculty page lists full-time and evening curriculum variants; confirm current duration and fees directly with IMU admissions.",
+        "sourceUrls": [
+          "https://imu.edu.kg/en/education/faculties-of-the-university/pharmacy"
+        ]
+      }
+    ],
+    "recognitionLinks": [
+      {
+        "label": "WDOMS school detail record for International Medical University Kyrgyzstan",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0005118"
+      },
+      {
+        "label": "IMU - About us (official, lists WDOMS/ECFMG/FAIMER/EUA registration)",
+        "url": "https://imu.edu.kg/en/about-us"
+      }
+    ],
+    "similarUniversitySlugs": []
+  },
+  "draftContent": {
+    "summary": "International Medical University (IMU) is a private medical university in Bishkek, Kyrgyzstan, founded on 18 July 2016 by a group of private founders and licensed to begin teaching in 2017 with its first specialty, General Medicine. It has since grown to around 1,500 students across three faculties - General Medicine, Dentistry and Pharmacy - a significant share of whom are international students. A distinguishing feature is IMU's own 225-bed University Clinic, which functions as both a working hospital and a primary clinical teaching site, giving students bedside exposure alongside classroom study. IMU is listed in the World Directory of Medical Schools (WDOMS) and reports registration with ECFMG/FAIMER and the European University Association (EUA); WDOMS also records a 5.5-year, English-medium 'Doctor of Medicine (With Clinical Rotation)' track introduced in 2023 that is specifically structured for Indian students, alongside separate 5-year (international) and 6-year (CIS-student) medical tracks. Because IMU is a comparatively young university, Indian applicants should independently confirm current NMC eligibility, NEET/FMGE-NExT requirements, and program duration for their intended intake before enrolling.",
+    "campusLifestyle": "IMU operates from a single main site at 32/2 Isakeev Street in Bishkek, combining teaching facilities, a simulation center (which the university describes as featuring an interactive 'Pirogov' table and simulator manikins), a digital learning-management system for coursework, and a library with access to international academic databases. Campus life centers on the university's three faculties (General Medicine, Dentistry, Pharmacy) plus a Medical College and postgraduate/residency programs, with an active student senate and academic, scientific and cultural events such as international conferences, Olympiads, and Nowruz (spring) celebrations held jointly with neighbouring institutions. As a mid-sized, relatively new private university, IMU's campus culture is more intimate than Kyrgyzstan's larger state medical academies, with international students forming a substantial share of the student body.",
+    "cityProfile": "Bishkek is the capital and largest city of Kyrgyzstan, with a metro-area population of roughly 1.1-1.2 million people. It sits in the Chüy Valley near the Kazakhstan border and has a humid continental climate with cold winters (average daily highs around 3°C in January) and warm summers (highs around 31°C in July). As the country's administrative, educational and transport hub, Bishkek hosts several other higher-education institutions and offers a lower cost of living than most European or South Asian capital cities, which is a common draw for international medical students. The city has an international airport with connections to Russia, the Gulf and parts of Asia, and a compact, walkable central grid that keeps housing, markets and university areas within easy reach of each other.",
+    "clinicalExposure": "IMU's most distinctive clinical asset is its own University Clinic, established in 2017 and operating under a Kyrgyz Ministry of Health license, with roughly 225 beds and expert-class equipment (including video gastroscopes and laparoscopic towers described on the university's official clinic page) across more than 2,300 square meters. Because the clinic is university-owned and on-site, medical, dentistry and pharmacy students get integrated, mentor-supervised exposure to real patients rather than relying solely on rotations at unaffiliated external hospitals. The official general-medicine curriculum spans either 5 or 6 years depending on the track, moving from foundational pre-clinical sciences into clinical training in the later years; applicants should ask IMU admissions for the specific rotation schedule, external teaching-hospital partners (if any), and simulation-versus-bedside training balance for their chosen track.",
+    "hostelOverview": "IMU's official FAQ confirms that the university provides dormitory accommodation for students who come from other regions or countries, though detailed, verified specifics on room types, capacity, and current charges are not published on the official site. Prospective students - especially those travelling from India - should request IMU's current hostel options, costs, occupancy rules and application process directly from the admissions office, and confirm whether housing is guaranteed for first-year international students before making travel plans.",
+    "indianFoodSupport": "Bishkek has a range of markets, supermarkets and restaurants where staple ingredients such as rice, lentils, spices and vegetables are available, and the city's sizeable community of Indian and South Asian medical students at various Bishkek universities has, over time, supported small Indian-run eateries and grocery stores catering to that demand. Because IMU's official site does not itself publish details of an on-campus Indian mess or catering arrangement, students who need specific Indian food options should confirm current on-campus or nearby catering arrangements directly with IMU admissions or current students, and plan for some degree of self-catering, which is common practice among international students living in Bishkek hostels.",
+    "safetyOverview": "Kyrgyzstan is generally considered manageable for international students in terms of day-to-day safety, though, as in any foreign country, students should take routine precautions: keeping copies of passports and visa/residence documents, avoiding unlicensed transport late at night, and staying alert in crowded public areas. International students should register with local authorities as required under Kyrgyz immigration rules, keep their university and residence documentation current, and maintain contact with IMU's international-student support office and, where relevant, the Indian embassy or consulate for consular assistance. Political and social conditions in Kyrgyzstan can shift, so students and families should monitor current government travel guidance in the period before and during their studies.",
+    "studentSupport": "IMU positions itself explicitly as an exporter of medical education, stating on its official applicant-facing page that its graduates go on to confirm their qualifications and practise in India, Pakistan, the UK and CIS countries. Teaching is delivered in Kyrgyz, Russian or English depending on the program, which allows English-medium international students to study without needing local-language fluency for coursework. The university maintains a Dean's Office, subject-specific academic chairs (including pediatrics/obstetrics/gynaecology, internal medicine/family medicine, morphology/pathology/public health, surgical disciplines, dentistry and pharmacy), an Admissions Committee that publishes yearly work plans and applicant brochures, and a student senate for student representation. Because published detail on international-student-specific services (visa assistance, orientation, mentoring) is limited on the public site, applicants should ask IMU's admissions office directly what structured support is available to international and Indian students from arrival through registration.",
+    "whyChoose": [
+      "A program track (5.5-year 'Doctor of Medicine with Clinical Rotation') that WDOMS records as specifically structured for Indian students, alongside standard international and CIS-student medical tracks",
+      "Its own 225-bed University Clinic on campus, giving students integrated, mentor-led clinical exposure rather than relying only on outside teaching hospitals",
+      "English-medium instruction available across General Medicine, Dentistry and Pharmacy, so classes do not require Kyrgyz or Russian fluency",
+      "Direct WDOMS listing with recorded ECFMG-eligible graduation years from 2021 onward, giving a verifiable third-party record of the school's standing"
+    ],
+    "thingsToConsider": [
+      "IMU is a relatively young university (founded 2016, first license and intake in 2017), so it has a shorter track record than Kyrgyzstan's older state medical academies",
+      "No official, current tuition or living-cost figures are published by IMU, so all fee information must be confirmed directly with the university rather than taken from third-party agent websites",
+      "NMC recognition is not asserted here: WDOMS confirms the school's listing and an India-oriented program track, but applicants must independently verify current NMC/NEET/FMGE-NExT eligibility for their specific intake year with NMC and the university before enrolling",
+      "Details on hostel accommodation, mess/catering arrangements and international-student support services are limited on the official website and should be confirmed directly with IMU admissions before applying"
+    ],
+    "faq": [
+      {
+        "question": "Is International Medical University (IMU) in Bishkek a government or private university, and when was it founded?",
+        "answer": "IMU is a private university. According to its official history page, it was founded on 18 July 2016 by a general meeting of founders, received its first teaching license in 2017, and enrolled its first General Medicine students that same year."
+      },
+      {
+        "question": "Is the medical program at IMU taught in English?",
+        "answer": "IMU teaches in Kyrgyz, Russian or English depending on the program. Its General Medicine faculty offers English-medium options, and the World Directory of Medical Schools separately records a 5.5-year, English-medium 'Doctor of Medicine (With Clinical Rotation)' track introduced in 2023 that is described as designed for Indian students."
+      },
+      {
+        "question": "Is IMU listed in the World Directory of Medical Schools (WDOMS)?",
+        "answer": "Yes. IMU's school detail record on WDOMS (FAIMER School ID F0005118) confirms it as a private school with instruction starting in 2017, lists three medical program tracks (5-year, 6-year, and 5.5-year), and shows ECFMG-Certification-eligible graduation years from 2021 onward, based on Kyrgyzstan's AAEPO accreditation status."
+      },
+      {
+        "question": "Can Indian students study MBBS at IMU and return to practise in India?",
+        "answer": "IMU states that its graduates go on to confirm their qualifications and work in India, Pakistan, the UK and CIS countries, and WDOMS lists a program track specifically structured for Indian students. However, eligibility to practise in India depends on NMC requirements, qualifying NEET, and clearing the FMGE/NExT screening exam, so Indian applicants should verify current NMC eligibility for IMU and their intake year directly with NMC before enrolling, rather than relying on agent claims."
+      },
+      {
+        "question": "Does IMU have its own hospital for clinical training?",
+        "answer": "Yes. IMU operates its own University Clinic, established in 2017 under a Kyrgyz Ministry of Health license, with about 225 beds and expert-class medical equipment, which the university uses as a primary site for hands-on clinical teaching alongside classroom study."
+      },
+      {
+        "question": "How much does it cost to study at IMU, and is hostel accommodation available?",
+        "answer": "IMU's official website does not publish current, verified tuition or hostel-fee figures, so no amount is stated here. The university does confirm on its FAQ page that dormitory accommodation is available for students from other regions, but exact room types, availability and current costs should be confirmed directly with IMU admissions before applying."
+      }
+    ]
+  }
+}

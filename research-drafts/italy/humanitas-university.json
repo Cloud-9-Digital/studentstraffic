@@ -1,0 +1,153 @@
+{
+  "countrySlug": "italy",
+  "schoolName": "Humanitas University",
+  "cityName": "Pieve Emanuele (Milan)",
+  "priority": "medium",
+  "officialWebsite": "https://www.hunimed.eu/en/",
+  "programUrl": "https://www.hunimed.eu/course/medicine/",
+  "hostelUrl": "https://www.hunimed.eu/campus-and-accomodation/",
+  "admissionUrl": "https://www.hunimed.eu/admissions-med-schools/",
+  "qualityScore": 80,
+  "reviewNotes": "Researched via WebSearch across official hunimed.eu pages, Wikipedia, Camplus (residence operator), and independent Indian study-abroad consultancy sources. Tuition presented as an indicative range with a feeNotes caveat rather than a fixed number, since non-EU tuition varies by scholarship/merit outcome. NEET/NMC framing included per corroborated general Italy-MBBS guidance, with explicit advice for students to verify current NMC status directly.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Humanitas University - official homepage (Hunimed)",
+        "url": "https://www.hunimed.eu/en/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Humanitas University - Medicine and Surgery degree course (official)",
+        "url": "https://www.hunimed.eu/course/medicine/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Humanitas University - Admissions, Medical Schools (official)",
+        "url": "https://www.hunimed.eu/admissions-med-schools/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Humanitas University - Campus and Accommodation (official)",
+        "url": "https://www.hunimed.eu/campus-and-accomodation/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Humanitas University - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Humanitas_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Camplus Humanitas Milan - University Residence (Mario Luzzatto Student House)",
+        "url": "https://www.camplus.it/en/city/milan/camplus-humanitas-university/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Pieve Emanuele - Wikipedia (city profile)",
+        "url": "https://en.wikipedia.org/wiki/Pieve_Emanuele",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Humanitas University Fees & Cost for Indian Students - Shiksha",
+        "url": "https://www.shiksha.com/studyabroad/italy/universities/humanitas-university/fees",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Is MBBS in Italy Valid in India? Eligibility & Recognition Explained - Standyou",
+        "url": "https://www.standyou.com/blog/is-mbbs-in-italy-valid-in-india/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Humanitas University",
+    "slug": "humanitas-university",
+    "city": "Pieve Emanuele (Milan)",
+    "type": "Private",
+    "establishedYear": 2014,
+    "officialWebsite": "https://www.hunimed.eu/en/",
+    "bestFitFor": [
+      "Indian students who want an English-taught MBBS equivalent (Medicine and Surgery) inside a working research-hospital campus rather than a purely teaching-hospital setup",
+      "Students who want hands-on clinical exposure starting from the third year at Humanitas Research Hospital and its affiliated hospitals",
+      "Students who prefer a compact, single-campus setup with on-site accommodation instead of a scattered city campus",
+      "Families comfortable with private-university tuition levels in exchange for a modern, purpose-built medical campus near Milan"
+    ],
+    "teachingHospitals": [
+      "Humanitas Research Hospital (Rozzano/Pieve Emanuele campus)",
+      "Other Humanitas Group affiliated hospitals used for clerkships from Year 3 onward"
+    ],
+    "recognitionBadges": [],
+    "recognitionLinks": [],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Medicine and Surgery (MD equivalent, English-taught)",
+        "officialProgramUrl": "https://www.hunimed.eu/course/medicine/",
+        "medium": "English",
+        "durationYears": 6,
+        "feeNotes": "Multiple sources (official Hunimed fee/scholarship pages and independent Indian consultancy sites) indicate non-EU annual tuition in roughly the EUR 20,000-23,000 range, with EU-resident fees on an income-linked sliding scale (roughly EUR 10,000-20,000) and a range of merit- and need-based scholarships (from partial reductions up to full-tuition awards). Because the exact figure a given applicant pays depends on scholarship outcome and the specific admission year, students should confirm the current year's exact tuition and scholarship terms directly on the official Hunimed fees/admissions pages before applying.",
+        "intakeMonths": ["September"],
+        "licenseExamSupport": []
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Humanitas University (Hunimed) is a private Italian medical university established in 2014, built on and integrated with the Humanitas Research Hospital campus in Pieve Emanuele, roughly 13 km south of central Milan. It offers a six-year, English-taught Medicine and Surgery degree that blends classroom study with early simulation training and hospital-based clerkships from the third year onward, drawing on a research hospital environment rather than a traditional standalone medical faculty. For Indian students, it is one of a small number of Italian medical universities that teaches entirely in English on a single, modern, purpose-built campus with its own student residence.",
+    "campusLifestyle": "The Humanitas University campus in Pieve Emanuele spans roughly 42,000 square metres across six buildings, combining teaching centres, a simulation centre of about 1,000 square metres, research laboratories, an international canteen, sports facilities, and an on-campus student residence, all seamlessly connected to the adjacent Humanitas Research Hospital. This single-site design means lectures, simulation training, the library, and hospital-based learning are all within walking distance of student housing, which is a distinctive feature compared with universities spread across a city. The compact, campus-style setup makes day-to-day student life straightforward, though it also means social and city life is more concentrated around the campus and nearby Milan rather than a dense historic university-town centre.",
+    "cityProfile": "Pieve Emanuele is a municipality of roughly 16,000 residents in the Lombardy region, located about 13 km south of Milan's city centre and well connected to it by regional transport. Milan itself is Italy's second-largest city and its financial and design capital, home to a large, well-established international student community across universities such as Bocconi, Politecnico di Milano, and the University of Milan, along with extensive public transport, international food options, and typical big-city amenities. Students at Humanitas benefit from Pieve Emanuele's quieter, more residential setting for day-to-day campus life while having full access to Milan's international city life a short commute away.",
+    "clinicalExposure": "Clinical training begins early: from the first year, theoretical modules are paired with hands-on simulation activities in the campus Simulation Centre, and structured clerkships begin in the third year at Humanitas Research Hospital and other Humanitas Group-affiliated hospitals, under supervision from clinical tutors. Humanitas Research Hospital is a large, research-oriented teaching hospital directly attached to the university campus, giving students routine exposure to a working clinical environment rather than periodic hospital visits. The university states its faculty includes internationally recognised clinicians and researchers, including Nobel Prize-winning faculty, supporting the clinical and research training pathway alongside standard coursework.",
+    "hostelOverview": "On-campus accommodation is provided through the Mario Luzzatto Student House, a purpose-built university residence with 240 beds located inside the Humanitas University campus in Pieve Emanuele, managed by Camplus, Italy's largest university-residence operator. Rooms are organised as shared apartments (for two or four residents) with private bedrooms, air conditioning, and utilities included, and the residence includes common facilities such as a bar, restaurant, gym, games room, study rooms, library access, terrace, garden, and 24/7 reception. Because the residence sits inside the same campus as the teaching buildings and hospital, students can live within a short walk of classes, simulation labs, and clinical placements; students should confirm current room availability and pricing directly with Camplus/Hunimed before committing, since residence capacity is limited relative to total enrolment.",
+    "indianFoodSupport": "Pieve Emanuele itself is a small residential town without a large Indian food scene, but Milan, a short commute away, has an established Indian restaurant and grocery presence, including multiple Indian restaurants across the city and online Indian grocery delivery services that serve the Milan area. Students typically rely on the campus international canteen for daily meals and travel into Milan, or use grocery delivery, for Indian ingredients and occasional dining out; this is a genuine trade-off compared with Italian cities that have a larger, more walkable Indian-student and Indian-restaurant cluster, and prospective students should factor in this commute for consistent access to Indian food.",
+    "safetyOverview": "Milan is generally regarded as safe for international students and residents, with violent crime being rare; the most common issues reported are property crime such as theft, consistent with any large European city, rather than violent crime targeting students. Pieve Emanuele itself is a smaller, quieter residential municipality outside central Milan, and the Humanitas campus is a controlled, purpose-built environment with on-site security and 24/7 reception at the student residence. As with any study-abroad destination, students should follow standard city-safety precautions (secure belongings on public transport, avoid poorly lit areas late at night) and register with their institution's international student office on arrival.",
+    "studentSupport": "Humanitas University runs a structured admissions and onboarding process for its Medicine and Surgery programme via its official admissions portal, including online entrance testing and application support for international applicants. On campus, students have access to the international canteen, sports facilities, library, simulation centre, and residence-based support services provided by Camplus (including 24/7 reception and community common areas). The university also offers enrichment tracks such as the Virgilio research programme and mobility opportunities including Erasmus and travel grants, which give students additional academic and international-exposure support beyond the core curriculum; Indian applicants should also connect with the university's international admissions office directly for country-specific guidance on document requirements and visa support.",
+    "whyChoose": [
+      "Single, purpose-built campus (about 42,000 sq m) that integrates teaching buildings, a simulation centre, and the student residence directly with Humanitas Research Hospital, so classes, simulation training, and hospital-based learning are all close together.",
+      "Early and structured clinical exposure: hands-on simulation from year one and hospital clerkships beginning in year three at Humanitas Research Hospital and affiliated Humanitas Group hospitals.",
+      "Fully English-taught six-year Medicine and Surgery programme, removing the need for Italian-language fluency to follow coursework (though everyday and clinical-setting Italian is still useful).",
+      "On-campus student residence (Mario Luzzatto Student House, 240 beds) professionally managed by Camplus, Italy's largest university-housing operator, reducing the hassle of finding private accommodation in Milan.",
+      "Access to research and enrichment tracks (e.g., the Virgilio biomedical research programme) and international mobility options such as Erasmus and travel grants."
+    ],
+    "thingsToConsider": [
+      "As a private university, tuition is materially higher than Italy's public medical universities; non-EU annual tuition is generally reported in the roughly EUR 20,000-23,000 range (before any scholarship), so budgeting and scholarship research matter well before applying.",
+      "The campus sits in Pieve Emanuele, a quieter town about 13 km from central Milan, so students wanting dense city life and a large ready-made Indian-student/restaurant cluster will need to commute into Milan regularly.",
+      "On-campus residence capacity (240 beds) is limited relative to total student numbers, so not every student is guaranteed on-campus housing and some will need to arrange accommodation nearby.",
+      "Indian students must independently confirm current NEET, NMC screening/licensing requirements, and FMGE eligibility for this specific university and admission year directly with NMC/official sources, since these rules and approved-university lists are periodically updated.",
+      "Admission is competitive and test-based (online entrance testing via the official admissions portal), so applicants should prepare for the specific entrance test format Humanitas uses rather than assuming automatic admission on NEET score alone."
+    ],
+    "faq": [
+      {
+        "question": "Is Humanitas University a public or private university?",
+        "answer": "Humanitas University is a private Italian university, established in 2014 and built on the Humanitas Research Hospital campus in Pieve Emanuele, near Milan."
+      },
+      {
+        "question": "What language is the Medicine and Surgery programme taught in at Humanitas University?",
+        "answer": "The six-year Medicine and Surgery degree is taught entirely in English, though students will encounter Italian in daily life and in some clinical/patient-facing settings during hospital clerkships."
+      },
+      {
+        "question": "Where do Humanitas University students live during their studies?",
+        "answer": "Many students live in the on-campus Mario Luzzatto Student House, a 240-bed residence managed by Camplus that sits inside the university campus alongside the teaching buildings and hospital. Because capacity is limited, some students arrange accommodation nearby instead; current availability should be confirmed directly with Camplus/Hunimed."
+      },
+      {
+        "question": "Do Indian students need NEET to apply to Humanitas University's MBBS-equivalent programme?",
+        "answer": "Indian students pursuing medical study in Italy are generally expected to hold a valid NEET qualification as part of India's regulatory framework for studying medicine abroad, in addition to the university's own entrance test. Because NMC rules and recognition status can change, applicants should verify current requirements directly with the National Medical Commission and with Humanitas University's admissions office before applying."
+      },
+      {
+        "question": "How much does the Medicine and Surgery programme at Humanitas University cost?",
+        "answer": "Reported non-EU annual tuition generally falls in the roughly EUR 20,000-23,000 range, with EU-resident students on an income-linked sliding scale and various merit- and need-based scholarships available (from partial fee reductions up to full-tuition awards). Because the exact amount depends on the admission year and scholarship outcome, applicants should confirm current tuition and scholarship terms on the official Hunimed fees and admissions pages."
+      },
+      {
+        "question": "When does clinical/hospital exposure start at Humanitas University?",
+        "answer": "Simulation-based hands-on training starts from the first year, and structured hospital clerkships begin in the third year at Humanitas Research Hospital and other Humanitas Group-affiliated hospitals, continuing through the rest of the six-year programme."
+      }
+    ]
+  }
+}

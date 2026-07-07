@@ -1,0 +1,93 @@
+{
+  "countrySlug": "vietnam",
+  "schoolName": "Ton Duc Thang University Faculty of Pharmacy",
+  "cityName": "Ho Chi Minh City",
+  "priority": "low",
+  "officialWebsite": "https://pharmacy.tdtu.edu.vn/en",
+  "status": "hold",
+  "reviewNotes": "HOLD - not publish-ready. Ton Duc Thang University (TDTU) is a large public university in Ho Chi Minh City whose Faculty of Pharmacy (Room C008, 19 Nguyen Huu Tho Street, Tan Hung Ward, Ho Chi Minh City) trains pharmacists on a Vietnamese-medium, 5-year Bachelor of Pharmacy program (code 7720201). Multi-source research (TDTU's own official admission portal admission.tdtu.edu.vn, the Faculty of Pharmacy site pharmacy.tdtu.edu.vn, and independent aggregator/search summaries) CONFIRMS that Pharmacy is NOT one of TDTU's English-taught or 50%-English-taught undergraduate majors. TDTU's official 'Undergraduate Programs Taught in English Language' list (11 majors: Business Administration variants, Finance-Banking, Accounting, Automation & Control Engineering, IT, Software Engineering, Computer Science, Civil Engineering, English Language, Biotechnology) and its 'Vietnamese and English (50/50)' list (19 majors) BOTH omit Pharmacy. Pharmacy appears ONLY on the 'Undergraduate Programs Taught in Vietnamese Language' list (52 majors), under Health Science > Pharmacy > Pharmacy, with an explicit official note: 'The Major of Pharmacy requires 05 years of study duration' and a Vietnamese-language proficiency certificate at B2 CEFR level is a hard admission requirement for international applicants (with a compulsory ~1-year Vietnamese-language preparatory course for those who do not already hold B2). TDTU's official international-admission requirements page additionally requires, specifically for Pharmacy applicants who graduated abroad or from international schools in Vietnam: last-year high-school GPA marked 'Good' or above, and average Chemistry score >=7.0/10 in the final year of senior high school. No PCI (Pharmacy Council of India) recognition, no NMC/INC-equivalent regulator statement, and no officialProgramUrl offering an English-medium track could be corroborated for this course. Per the sourcing rules (exhaustive-then-omit, never fabricate, correct regulator only if corroborated), a structuredFacts.programs entry with courseSlug='pharmacy' cannot be honestly populated with an English-medium officialProgramUrl for the India/international-student audience this site targets, so this draft cannot pass the publish gate as an India-audience Pharmacy destination. Held as a local research record only; do not seed or publish. Revisit only if TDTU launches (and publicly documents) an English-medium Pharmacy track open to international/Indian applicants.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "TDTU Faculty of Pharmacy - official homepage (English)",
+        "url": "https://pharmacy.tdtu.edu.vn/en",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Confirms faculty mission, 36 lecturers, 1646 students, address (Room C008, 19 Nguyen Huu Tho Street, Tan Hung Ward, Ho Chi Minh City), contact pharmacy@tdtu.edu.vn / (028) 37761043. Page contains unrelated third-party spam/SEO injection text interleaved with legitimate content; only the legitimate faculty content was used."
+      },
+      {
+        "label": "TDTU Faculty of Pharmacy - Academic program page (English)",
+        "url": "https://pharmacy.tdtu.edu.vn/en/academics/academic-program",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Shows the 2019 Pharmacy curriculum (code 7720201, standard program, 151 specialized credits) with subject titles given bilingually (Vietnamese subject name plus English translation) and taught by Faculty of Pharmacy staff -- consistent with a Vietnamese-medium program, not an English-medium international track."
+      },
+      {
+        "label": "TDTU Admission - Undergraduate Programs Taught in English Language (official list)",
+        "url": "https://admission.tdtu.edu.vn/en/undergraduate/course/Undergraduate-programs-taught-in-English-language",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Official list of the 11 undergraduate majors TDTU teaches fully in English for 2026-2027. Pharmacy is ABSENT from this list."
+      },
+      {
+        "label": "TDTU Admission - Undergraduate Programs Taught in Vietnamese and English Language (50/50 list)",
+        "url": "https://admission.tdtu.edu.vn/en/undergraduate/course/Undergraduate-programs-taught-in-Vietnamese-and-English-language",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Official list of the 19 majors taught 50% Vietnamese / 50% English. Pharmacy is ABSENT from this list."
+      },
+      {
+        "label": "TDTU Admission - Undergraduate Programs Taught in Vietnamese Language (official list, includes Pharmacy)",
+        "url": "https://admission.tdtu.edu.vn/en/undergraduate/course/Undergraduate-programs-taught-in-Vietnamese-language",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Official list of the 52 majors taught in Vietnamese. Pharmacy is listed under 'HEALTH SCIENCE > Pharmacy > Pharmacy' with an explicit key-fact note: 'The Major of Pharmacy requires 05 years of study duration.' Confirms Vietnamese-medium instruction for this major."
+      },
+      {
+        "label": "TDTU Admission - Entry Requirements for undergraduate international students (official)",
+        "url": "https://admission.tdtu.edu.vn/en/undergraduate/Admission-requirements",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Confirms Pharmacy-specific extra requirements for international applicants (GPA 'Good' or above; Chemistry average >=7.0/10) and that Vietnamese-medium programs require a B2 CEFR Vietnamese-language certificate (or a ~1-year compulsory preparatory Vietnamese course) -- this requirement applies to Pharmacy since it is Vietnamese-medium."
+      },
+      {
+        "label": "WebSearch aggregation of TDTU Pharmacy admission/tuition summaries (Standyou, GoToUniversity, general search)",
+        "url": "https://www.standyou.com/study-abroad/ton-duc-thang-university-vietnam/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates via independent secondary aggregators that Pharmacy is a 5-year program with the same GPA/Chemistry admission notes as the official site; used only as corroboration, not as a source of new facts."
+      },
+      {
+        "label": "Pharmacy Council of India (PCI) - approved foreign institutions listings",
+        "url": "https://pci.gov.in/en/approved-institute/approved-degree-institutions-us-12/",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Checked for any PCI recognition of Ton Duc Thang University; no listing found. Used to confirm the absence of a PCI-recognition claim rather than to support one -- no regulator statement is made in this draft."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Ton Duc Thang University Faculty of Pharmacy",
+    "city": "Ho Chi Minh City",
+    "type": "Public",
+    "establishedYear": 1997,
+    "officialWebsite": "https://pharmacy.tdtu.edu.vn/en",
+    "bestFitFor": [],
+    "programs": [],
+    "notes": "establishedYear=1997 is Ton Duc Thang University's own founding year (as a trade-union-affiliated public university in Ho Chi Minh City); the Faculty of Pharmacy itself is a more recently established faculty within TDTU (exact faculty-founding year not corroborated across independent sources, so it is omitted from narrative claims). No programs array populated: TDTU's own official admission pages confirm Pharmacy (code 7720201, 5-year Bachelor of Pharmacy) is taught ONLY in Vietnamese -- it appears on TDTU's 'Vietnamese language' major list, not on its 'English language' or 'Vietnamese+English' lists. No English-medium officialProgramUrl, no PCI recognition, and no India-audience admissions track could be corroborated. Populating a pharmacy courseSlug program entry framed for Indian/international English-speaking applicants would misrepresent the confirmed Vietnamese-medium reality, so it is omitted per the exhaustive-then-omit rule. bestFitFor intentionally left empty for the same reason."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "All narrative fields intentionally left empty. Ton Duc Thang University's Faculty of Pharmacy runs a Vietnamese-medium, 5-year Bachelor of Pharmacy program with a hard B2 CEFR Vietnamese-language admission requirement for international students (confirmed on TDTU's own official admission portal). No English-medium Pharmacy track, and no PCI/India-recognition pathway, could be corroborated across the official TDTU sites or independent aggregators. Writing India-audience narrative content (hostel life, Indian food support, clinical exposure framed for English-speaking Indian pharmacy students, PCI-relevant regulator guidance, etc.) would require fabricating a program pathway that does not exist, which is disallowed. This page should not be published unless/until TDTU documents an English-medium Pharmacy admissions track open to international/Indian applicants."
+  }
+}

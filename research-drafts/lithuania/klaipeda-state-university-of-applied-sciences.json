@@ -1,0 +1,139 @@
+{
+  "countrySlug": "lithuania",
+  "schoolName": "Klaipėda State University of Applied Sciences",
+  "cityName": "Klaipėda",
+  "priority": "medium",
+  "officialWebsite": "https://www.kvk.lt/en/",
+  "programUrl": "https://www.kvk.lt/en/program/general-practice-nursing/",
+  "feesUrl": "https://www.kvk.lt/en/program/general-practice-nursing/",
+  "hostelUrl": "https://www.kvk.lt/en/dormitories/",
+  "admissionUrl": "https://www.kvk.lt/en/program/general-practice-nursing/",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "KVK official site - General Practice Nursing programme page",
+        "url": "https://www.kvk.lt/en/program/general-practice-nursing/",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Qualification, duration, language of instruction, annual tuition fee, subjects, admissions weighting."
+      },
+      {
+        "label": "KVK official site - About KVK",
+        "url": "https://www.kvk.lt/en/about-kvk/",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Institutional history summary and century-long tradition claim."
+      },
+      {
+        "label": "KVK official site - Dormitories",
+        "url": "https://www.kvk.lt/en/dormitories/",
+        "kind": "official",
+        "checkedAt": "2026-07-07",
+        "notes": "Debreceno Taikos dormitory layout, price range (80-140 EUR/month), facilities, international-student placement process."
+      },
+      {
+        "label": "Study in Lithuania (national HE promotion portal) - KVK institution profile",
+        "url": "https://studyin.lt/institutions/klaipedos-valstybine-kolegija-higher-education-institution/",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent corroboration: third-largest HEI in Lithuania, three faculties, program list and durations, Erasmus University Charter, address."
+      },
+      {
+        "label": "Mastersportal/Bachelorsportal - KVK institution listing",
+        "url": "https://www.mastersportal.com/universities/9493/klaipdos-valstybin-kolegija-higher-education-institution.html",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates 2009 merger of Klaipėda College and Klaipėda Business and Technology College forming KVK."
+      },
+      {
+        "label": "Encyclopaedia Britannica - Klaipėda (city)",
+        "url": "https://www.britannica.com/place/Klaipeda",
+        "kind": "secondary",
+        "checkedAt": "2026-07-07",
+        "notes": "City-context facts: Lithuania's main seaport, location at the mouth of the Curonian Lagoon on the Baltic Sea."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Klaipėda State University of Applied Sciences",
+    "slug": "klaipeda-state-university-of-applied-sciences",
+    "city": "Klaipėda",
+    "type": "Public",
+    "establishedYear": 2009,
+    "officialWebsite": "https://www.kvk.lt/en/",
+    "featured": false,
+    "bestFitFor": [
+      "Indian students who want an affordable, practice-oriented nursing Bachelor's degree in the EU with heavy hands-on clinical training",
+      "Students comfortable pursuing a program that is taught in Lithuanian or English depending on the cohort, and who are ready to verify the medium of instruction before applying",
+      "Students who prefer a smaller port city with a lower cost of living over a large capital city",
+      "Students targeting EU/Erasmus mobility exposure alongside their core nursing qualification"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "General Practice Nursing (Professional Bachelor of Health Sciences, General Nurse)",
+        "officialProgramUrl": "https://www.kvk.lt/en/program/general-practice-nursing/",
+        "medium": "Lithuanian or English (confirm current intake's language of instruction with KVK admissions before applying)",
+        "durationYears": 3.5,
+        "notes": "108-credit core curriculum spans anatomy & physiology, pharmacology, medical/surgical/child/community/mental-health nursing, emergency and intensive care, and applied research; roughly 50% of study time is practical training in clinical simulation labs and real healthcare settings. Admissions weighting per KVK: Biology 40%, Chemistry/Mathematics/IT/Physics 20%, a non-overlapping subject 20%, English language 20%. Annual tuition fee listed by KVK: EUR 3,540 (verify current-year figure directly with KVK, as fees are reviewed annually)."
+      }
+    ],
+    "recognitionBadges": [],
+    "recognitionLinks": [],
+    "teachingHospitals": [],
+    "similarUniversitySlugs": [],
+    "researchNotes": "Non-WDOMS discovered university, added via overnight research workflow. KVK (Klaipėdos valstybinė kolegija) is a public Lithuanian university of applied sciences (kolegija) formed in 2009 from the merger of Klaipėda College and Klaipėda Business and Technology College; KVK also traces roots to a teacher-training school founded in 1902. It runs three faculties (Business, Technologies, Health Sciences) and is the third-largest HEI in Lithuania. Its only clinically relevant program for the India-outbound audience is the 3.5-year General Practice Nursing Professional Bachelor's — there is no MBBS/medicine, pharmacy, or BDS program at this institution, so only bsc-nursing is listed. INC (Indian Nursing Council) recognition of any foreign nursing qualification, including this one, is handled case-by-case via INC's equivalence process (Section 11(2)(a) of the INC Act) rather than being automatic — this page must tell students to verify eligibility with INC before enrolling, and must not assert automatic recognition. Tuition (EUR 3,540/year, as listed on the official program page at time of research) and dormitory pricing (EUR 80-140/month) are stated as observed at check time and should be treated as indicative, reviewed annually by KVK."
+  },
+  "draftContent": {
+    "summary": "Klaipėda State University of Applied Sciences (KVK) is a public Lithuanian university of applied sciences in the port city of Klaipėda, formed in 2009 through the merger of Klaipėda College and Klaipėda Business and Technology College, with roots reaching back to a teacher-training school founded in 1902. KVK is organised into three faculties — Business, Technologies, and Health Sciences — and is recognised as the third-largest higher education institution in Lithuania. For students exploring healthcare study in the Baltics, KVK's Faculty of Health Sciences runs a 3.5-year General Practice Nursing programme leading to a Professional Bachelor of Health Sciences qualification, with roughly half of study time spent in clinical simulation labs and real hospital or community-care settings. Indian students considering this route should treat it as a nursing-specific option — KVK does not offer MBBS, pharmacy, or dental programmes — and should independently confirm the current language of instruction, tuition fee, and Indian Nursing Council (INC) equivalence process before committing, since foreign nursing qualifications are assessed by INC case-by-case rather than automatically recognised.",
+    "campusLifestyle": "KVK's campus community centres on its three faculties, with Health Sciences students training alongside peers in Physiotherapy, Dental Hygiene, Midwifery, and Social Work. The university emphasises practice-oriented learning: roughly half of the General Practice Nursing curriculum is hands-on, using clinical simulation laboratories with mannequins and practice equipment before students move into real hospital, healthcare-centre, and community placements. KVK holds an Erasmus University Charter and is an active Erasmus+ participant, so students can pursue a paid exchange semester or paid internship abroad as part of their studies. Campus facilities include sports halls at the faculties, a stadium, and student associations for leisure and community life. As a smaller kolegija-style institution rather than a large multi-campus university, class sizes for practical training tend to be small, which KVK positions as a benefit for individual clinical skill-building.",
+    "cityProfile": "Klaipėda is Lithuania's third-largest city and its only major seaport, sitting at the point where the Curonian Lagoon meets the Baltic Sea. It is the country's busiest port and a hub for shipping, logistics, shipbuilding, and fishing-fleet industries, alongside amber jewellery and timber trades that give the city its maritime character. The historic Old Town retains half-timbered Prussian-era architecture, and the city is the gateway to the Curonian Spit, a UNESCO World Heritage sand-dune peninsula reached by a short ferry ride from the city centre. Compared to Vilnius, Klaipėda is generally described as smaller-paced and more affordable, with a compact city centre that is easy to navigate on foot, by bicycle, or by local bus. For international students, this means day-to-day city life is calmer than in Lithuania's capital, with the seaside, port views, and beach access at nearby Smiltynė as a distinctive backdrop to student life.",
+    "clinicalExposure": "The General Practice Nursing programme is built around a mix of theoretical coursework and structured practical placements. Before entering real clinical settings, students train in KVK's clinical simulation laboratories, using mannequins and simulated care scenarios to practise procedures without risk to real patients. Practical training then continues in hospitals of varying profiles, healthcare centres, community settings, and patient-home environments, with KVK stating that practical training makes up about half of the overall programme. The curriculum covers medical, surgical, child, obstetric, community, and mental-health nursing as well as emergency and intensive care, giving students exposure across multiple care settings rather than a single specialism. Students interested in the specific teaching-hospital partnerships tied to a given intake should confirm current placement sites directly with KVK's Nursing and Social Welfare Department, since clinical partner hospitals can change between academic years.",
+    "hostelOverview": "KVK offers international students a limited number of places in its Debreceno Taikos dormitory in the southern part of Klaipėda city. Rooms are arranged in double and triple configurations within shared blocks, each block having its own hallway and toilet, with showers and kitchens shared per floor. The dormitory includes a small gym, recreation areas with table tennis and board games, a self-service laundry with free-to-use washing and drying machines, and secure bicycle storage, plus video surveillance for safety. Listed pricing at the time of research was EUR 80-140 per month depending on room type, though students should confirm current rates and availability directly with KVK's Accommodation Services Department, since dormitory placement for international students is limited and allocated on request rather than guaranteed automatically.",
+    "indianFoodSupport": "Klaipėda does not have the large, established Indian student or diaspora community found in bigger European university cities, so students should not expect a ready-made Indian grocery or restaurant scene comparable to major Indian-student hubs. Independent supermarkets in the city carry basic spices, rice, lentils, and international-aisle staples that can support home cooking, and dormitory kitchens give students the ability to prepare their own meals. Students who rely heavily on Indian food should plan to stock staple spices from home or from larger cities like Vilnius when travelling, and should connect with any existing Indian or South Asian student groups at KVK or in Klaipėda through university international-office contacts before arrival to get current, first-hand guidance on food access.",
+    "safetyOverview": "Klaipėda is generally regarded as a manageable, walkable city for students, with a calmer pace of daily life than Vilnius. As with any port city, common-sense precautions around the harbour and industrial areas at night are advisable, and students should follow standard personal-safety practices used across Lithuania. KVK's dormitory has video surveillance and on-site administration contacts, which supports day-to-day residential safety. Students should register their arrival and residence status as required by Lithuanian immigration rules and keep in touch with KVK's international office and the Indian Embassy in Vilnius for updated safety and consular guidance specific to their stay.",
+    "studentSupport": "KVK's international-facing support runs through its Admissions office (priemimas@kvk.lt / admissions@kvk.lt) for application queries, and through named staff for accommodation (Head of the Accommodation Services Department) and dormitory administration. The Faculty of Health Sciences' Nursing and Social Welfare Department, headed by Dr. Akvilė Virbalienė, is the direct contact point for programme-specific questions on General Practice Nursing. As an Erasmus University Charter holder, KVK also runs an Erasmus+ office supporting incoming and outgoing student mobility. Indian applicants should additionally plan to consult the Embassy of India in Vilnius for visa, residence-permit, and consular support, and should verify Indian Nursing Council (INC) equivalence requirements directly with INC before enrolling, since recognition of any foreign nursing qualification is assessed case-by-case rather than granted automatically.",
+    "whyChoose": [
+      "Public Lithuanian university of applied sciences with a century-long institutional heritage and recognised status as the third-largest HEI in the country",
+      "General Practice Nursing programme built around heavy practical training (around half of study time), including clinical simulation labs before real hospital and community placements",
+      "Erasmus University Charter holder, giving nursing students access to paid Erasmus+ exchange semesters and paid internships abroad",
+      "Lower cost of living and a calmer, more compact city environment in Klaipėda compared to Lithuania's larger capital, Vilnius",
+      "Direct, named departmental contacts (Nursing and Social Welfare Department, Accommodation Services) rather than only a general admissions inbox"
+    ],
+    "thingsToConsider": [
+      "KVK offers only nursing among clinically relevant programmes for India-outbound students — there is no MBBS, pharmacy, or BDS pathway at this institution",
+      "The programme's language of instruction is listed by KVK as 'Lithuanian or English' depending on the cohort; students must confirm in writing which language applies to their specific intake before applying",
+      "Indian Nursing Council (INC) recognition of this (or any) foreign nursing degree is assessed case-by-case through INC's equivalence process, not automatically granted — students must verify eligibility with INC before enrolling",
+      "Dormitory placements for international students are limited in number and allocated on request, not guaranteed, so early accommodation planning matters",
+      "Klaipėda has a much smaller Indian student community than major European study hubs, so day-to-day Indian food access and peer community will be limited compared to bigger cities",
+      "Tuition and dormitory fees are reviewed annually by KVK; the figures referenced here (EUR 3,540/year tuition; EUR 80-140/month dormitory) were current at the time of research and must be re-confirmed for the intake year in question"
+    ],
+    "faq": [
+      {
+        "question": "Does Klaipėda State University of Applied Sciences (KVK) offer MBBS or medical degree programmes?",
+        "answer": "No. KVK is a university of applied sciences (kolegija) with three faculties — Business, Technologies, and Health Sciences — and does not run an MBBS or Doctor of Medicine programme. Its only clinically relevant health programme for India-outbound students is the 3.5-year General Practice Nursing Professional Bachelor's degree. Students specifically seeking MBBS should look at Lithuania's dedicated medical universities instead."
+      },
+      {
+        "question": "What qualification do students receive after the General Practice Nursing programme at KVK?",
+        "answer": "Graduates receive a Professional Bachelor of Health Sciences (General Nurse) qualification after completing the full-time, 3.5-year programme, as listed on KVK's official programme page. About half of the coursework is practical training, including clinical simulation labs and placements in hospitals, healthcare centres, and community settings."
+      },
+      {
+        "question": "Is the KVK nursing programme taught in English?",
+        "answer": "KVK's official programme page lists the language of instruction as 'Lithuanian or English,' which typically depends on the specific intake or cohort. Students should get written confirmation from KVK admissions on which language applies to their target intake before applying, rather than assuming an English-medium cohort is guaranteed every year."
+      },
+      {
+        "question": "Will a nursing degree from KVK be recognised by the Indian Nursing Council (INC)?",
+        "answer": "There is no automatic recognition. The Indian Nursing Council evaluates foreign nursing qualifications individually through its equivalence process under the INC Act, reviewing the syllabus and confirming details with the awarding institution before granting registration eligibility in India. Students should start this verification with INC directly, ideally before enrolling, rather than assuming eligibility."
+      },
+      {
+        "question": "What does accommodation cost for international students at KVK?",
+        "answer": "KVK's Debreceno Taikos dormitory, as listed on the official site at the time of research, charges roughly EUR 80-140 per month depending on room type, with shared kitchens, showers, and laundry facilities per floor. Placements for international students are limited, so early requests to KVK's Accommodation Services Department are advisable. Students should confirm current pricing and availability for their intake year."
+      },
+      {
+        "question": "What is Klaipėda like as a city for international students?",
+        "answer": "Klaipėda is Lithuania's third-largest city and its main seaport, located where the Curonian Lagoon meets the Baltic Sea. It offers a calmer pace of life and generally lower living costs than Vilnius, along with easy ferry access to the UNESCO-listed Curonian Spit. It has a smaller international and Indian student community than bigger European study destinations, which students should factor into expectations around food access and peer community."
+      }
+    ]
+  }
+}

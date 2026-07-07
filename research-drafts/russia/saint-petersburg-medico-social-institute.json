@@ -1,0 +1,112 @@
+{
+  "countrySlug": "russia",
+  "universitySlug": "saint-petersburg-medico-social-institute",
+  "schoolName": "Saint Petersburg Medico-Social Institute",
+  "cityName": "Saint Petersburg",
+  "priority": "medium",
+  "officialWebsite": "https://medinstitut.ru/",
+  "programUrl": "https://medinstitut.ru/medical-fakultet/",
+  "admissionUrl": "https://medinstitut.ru/obrazovatelnye-programmy-na-inostrannom-yazyke/",
+  "qualityScore": 78,
+  "reviewNotes": "Corroborated across the official institute site (medinstitut.ru: faculty/program pages confirming Лечебное дело / General Medicine, specialty code 31.05.01, specialist degree, 6 years, English-language track) and independent aggregators (SMAPSE, university-guidance portals). Tuition omitted: no figure confirmed on an official page. Language caveat included per SMAPSE (instruction predominantly Russian, with English used for some groups in the early years). NMC/FMGE recognition is reported by third-party guidance portals and framed as something students must verify with the NMC directly rather than asserted as fact.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Saint Petersburg Medico-Social Institute — official site (СПбМСИ), homepage",
+        "url": "https://medinstitut.ru/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "СПбМСИ — Medical Faculty / General Medicine (Лечебное дело, 31.05.01, специалитет, 6 лет, English track)",
+        "url": "https://medinstitut.ru/medical-fakultet/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "СПбМСИ — Educational programs taught in a foreign language",
+        "url": "https://medinstitut.ru/obrazovatelnye-programmy-na-inostrannom-yazyke/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "SMAPSE — St. Petersburg Medical and Social Institute (SPbMSI): founded 2004, private, ~1100 students, Russian/English instruction, campus and accommodation profile",
+        "url": "https://smapse.com/st-petersburg-medical-and-social-institute-spbmsi/",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Saint Petersburg Medico-Social Institute",
+    "city": "Saint Petersburg",
+    "type": "Private",
+    "establishedYear": 2004,
+    "officialWebsite": "https://medinstitut.ru/",
+    "bestFitFor": [
+      "Indian students seeking a private medical-profile institute in Saint Petersburg with an English-language track for the General Medicine (Лечебное дело) specialist programme",
+      "Applicants who want a smaller, city-centre institute (roughly 1,100 students across specialty and residency programmes) rather than a very large state university",
+      "Students who plan to sit the FMGE/NExT and are willing to independently confirm NMC eligibility with the regulator before enrolling",
+      "Learners comfortable with a Russian-speaking city environment who will use the early years to build clinical Russian for ward-based work"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "General Medicine (Лечебное дело, specialty 31.05.01) — Specialist degree",
+        "officialProgramUrl": "https://medinstitut.ru/medical-fakultet/",
+        "medium": "English-language track available; instruction is otherwise predominantly Russian (students build clinical Russian for later ward-based years)",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "feeNotes": "Tuition is not published as a confirmed figure on an official institute page, so no fee is stated here. Applicants should request the current General Medicine tuition, hostel charges and payment schedule in writing from the institute's admissions office before committing.",
+        "sourceUrls": [
+          "https://medinstitut.ru/medical-fakultet/",
+          "https://medinstitut.ru/obrazovatelnye-programmy-na-inostrannom-yazyke/",
+          "https://smapse.com/st-petersburg-medical-and-social-institute-spbmsi/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Saint Petersburg Medico-Social Institute (СПбМСИ) is a private medical-profile higher education institution founded in 2004 and located on Kondratyevsky Prospekt in Saint Petersburg, Russia. Its Medical Faculty runs the six-year General Medicine specialist programme (Лечебное дело, specialty code 31.05.01), the Russian equivalent of an MBBS, and the institute lists General Medicine among its foreign-language teaching programmes, giving international applicants access to an English-language track. It is a comparatively small institution — public profiles put enrolment at roughly 1,100 students across specialist and residency programmes, with a sizeable international share drawn from countries including Brazil, Egypt, Italy, Syria and the CIS. Indian applicants considering it for FMGE/NExT purposes should independently confirm current NMC eligibility and the exact language of instruction before enrolling.",
+    "campusLifestyle": "The institute occupies a city campus on Kondratyevsky Prospekt in the northern part of Saint Petersburg, with teaching organised across roughly 18 departments and around 200 teaching staff. Third-party profiles describe classroom buildings sized for groups of about 40 to 80 students and dedicated laboratories for subjects such as microbiology, biochemistry, immunology and virology, alongside an anatomy facility. As a smaller private institute of a little over a thousand students, day-to-day life is closer-knit than at the very large state universities in the city. Around 30 percent of the student body is international, so incoming students join an established multinational cohort. Prospective applicants should confirm the current facilities, laboratory access and any sports or extracurricular provision directly with the institute, as these details come from secondary profiles rather than an official facilities inventory.",
+    "cityProfile": "Saint Petersburg is Russia's second-largest city and is widely described as its cultural capital, sitting on the Neva River at the head of the Gulf of Finland. With a metropolitan population of over five million, it is a major education hub hosting many established medical and general universities. The city is known for its imperial architecture, canals (earning it the nickname 'Venice of the North'), museums and a dense network of metro, tram and bus transport that makes a city-centre campus easy to reach. The climate is markedly seasonal: long, cold, wet winters and short, mild summers, with the famous 'white nights' around midsummer — a meaningful adjustment for students arriving from India, who should plan for warm winter clothing and shorter winter daylight.",
+    "clinicalExposure": "The General Medicine programme is a six-year specialist degree, and Russian medical curricula place clinical training in hospital and polyclinic settings in the later years after pre-clinical sciences. Because ward-based clinical work in Russia is conducted with Russian-speaking patients and staff, functional clinical Russian becomes important as students progress, even where earlier coursework is delivered in English. Applicants should ask the institute directly for the list of affiliated clinical bases and teaching hospitals, the point at which clinical rotations begin, and how English-track students are supported during patient-facing training, as the institute's public materials do not enumerate specific hospital affiliations for the English cohort.",
+    "hostelOverview": "Secondary education profiles indicate the institute assists international students with accommodation, and student-facing descriptions mention meal and housing arrangements. However, specific hostel capacity, room configurations, amenities and charges are not confirmed on an official institute page. Students should request written confirmation of what accommodation is offered (institute hostel versus assisted private rental), the cost, deposit terms and proximity to the Kondratyevsky Prospekt campus before making any payment, and should treat any hostel figures quoted by third-party agents as unverified until confirmed by the institute.",
+    "indianFoodSupport": "Saint Petersburg is a large, diverse city with grocery stores, markets and restaurants that make self-catering practical, and international student communities in the city commonly cook their own meals; some Indian and South Asian restaurants and grocery options exist across the city. The institute itself has not published details of a dedicated Indian mess or vegetarian catering, so students who require Indian or vegetarian food should confirm on-campus catering options directly and be prepared to self-cater, budgeting for ingredients from local supermarkets and specialty stores. Any claim of a dedicated 'Indian mess' from agent websites should be verified with the institute before relying on it.",
+    "safetyOverview": "Saint Petersburg is a major metropolitan city with standard urban safety considerations; international students typically manage well by taking the usual precautions common to any large city — safeguarding documents and valuables, using registered transport, and staying aware of surroundings at night. International students in Russia must complete migration registration and maintain a valid visa and residency documentation, and the institute's international office is the correct point of contact for these formalities. Students and families should also check their own government's current travel advisories for Russia before finalising plans, as advisory guidance can change.",
+    "studentSupport": "As a private institute with a substantial international enrolment (about 30 percent of students), СПбМСИ operates an admissions and international-student function that handles applications for its foreign-language programmes, and public profiles note support with arrival and accommodation. The most reliable channel for prospective Indian students is the institute's official admissions contacts listed on medinstitut.ru, through which applicants should confirm the English-track curriculum structure, language-of-instruction details by year, tuition and hostel costs, document requirements and visa-invitation procedures. Because several figures circulating online originate from third-party agents, students are advised to verify all commitments in writing with the institute itself.",
+    "whyChoose": [
+      "Six-year General Medicine specialist programme (Лечебное дело, 31.05.01) with an English-language track listed among the institute's official foreign-language programmes",
+      "Located in Saint Petersburg, Russia's cultural capital and a major education hub with strong public transport and an established international student presence",
+      "Smaller private institute (around 1,100 students) with a multinational cohort — roughly 30 percent international — which can suit students who prefer a less crowded environment than large state universities"
+    ],
+    "thingsToConsider": [
+      "Language of instruction: independent profiles indicate teaching is predominantly Russian with English used for some groups, so confirm exactly how much of your programme is in English and plan to learn clinical Russian for later ward-based years",
+      "Recognition: NMC/FMGE eligibility is reported by third-party guidance sites, not asserted here — verify current NMC recognition and screening-test eligibility directly with the National Medical Commission before enrolling",
+      "Costs: tuition and hostel fees are not confirmed on an official page in this research, so obtain the current fee schedule and accommodation charges in writing from the institute before making any payment"
+    ],
+    "faq": [
+      {
+        "question": "Is Saint Petersburg Medico-Social Institute a public or private institution?",
+        "answer": "It is a private medical-profile higher education institution, founded in 2004, located in Saint Petersburg, Russia."
+      },
+      {
+        "question": "What medical programme does it offer and how long is it?",
+        "answer": "Its Medical Faculty runs the General Medicine specialist programme (Лечебное дело, specialty code 31.05.01), a six-year degree that is the Russian equivalent of an MBBS. The institute lists General Medicine among its foreign-language teaching programmes, providing an English-language track."
+      },
+      {
+        "question": "Is the programme taught in English?",
+        "answer": "An English-language track is available, but independent profiles indicate instruction is otherwise predominantly Russian, with English used for some groups. Confirm the exact language split by year with the institute, and expect to build clinical Russian for hospital-based training in the later years."
+      },
+      {
+        "question": "Is it recognised for Indian students (NMC/FMGE/NExT)?",
+        "answer": "Third-party guidance portals report that the institute is recognised and that graduates can sit the FMGE/NExT, but this should not be taken as guaranteed. Indian applicants must independently verify current NMC recognition and screening-test eligibility with the National Medical Commission before enrolling."
+      },
+      {
+        "question": "What does it cost to study there?",
+        "answer": "This research did not find tuition or hostel fees confirmed on an official institute page, so no figure is stated here. Request the current General Medicine tuition, accommodation charges and payment schedule in writing from the institute's admissions office before committing."
+      }
+    ]
+  }
+}

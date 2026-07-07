@@ -1,0 +1,184 @@
+{
+  "countrySlug": "albania",
+  "schoolName": "Aldent University",
+  "cityName": "Tirana",
+  "priority": "medium",
+  "officialWebsite": "https://ual.edu.al/",
+  "programUrl": "https://ual.edu.al/rt-program/master-of-science-in-dentistry/",
+  "feesUrl": "https://ual.edu.al/tuition-fee/",
+  "admissionUrl": "https://ual.edu.al/admission-process/",
+  "wdomsUrl": null,
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Aldent University official site - homepage",
+        "url": "https://ual.edu.al/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms official English name 'Aldent University' (Albanian: Universiteti Aldent), address Rr. Dibres Nr 235 (Selvia area, Tirana), a second campus location (Lunder), three constituent faculties (Dental Sciences, Medical Sciences, Technical Medical Sciences), and 'ACCREDITED SINCE 2009' banner. Site content is delivered in English by default (no separate /en/ path; that path 404s)."
+      },
+      {
+        "label": "Aldent University official site - History & Institutional Profile",
+        "url": "https://ual.edu.al/about-us/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "States 'Founded in 2003, UAL has grown into a dynamic higher education institution...' and describes itself as the only private higher-education institution in Albania with 100% orientation toward clinical health sciences."
+      },
+      {
+        "label": "Aldent University official site - Accreditation",
+        "url": "https://ual.edu.al/accreditation/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "States Aldent University is a private higher education institution licensed by Decision of the Council of Ministers No. 673, dated 27.09.2006; offers 9 study programmes across three cycles of study; institutionally accredited by an Order of the Minister of Education and Science; all programmes accredited by the Accreditation Board."
+      },
+      {
+        "label": "Aldent University official site - Bachelor Programs listing",
+        "url": "https://ual.edu.al/bachelor-programs/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Lists the 5 bachelor's programmes: Medical Imaging Technician and Radiotherapy, Medical Laboratory Technician, Nursing, Dental Laboratory Technician, Bachelor in Physiotherapy."
+      },
+      {
+        "label": "Aldent University official site - Master Programs listing",
+        "url": "https://ual.edu.al/master-programs/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Lists integrated/master's programmes: Master of Science in Medical Imaging Technician, Master of Science in Dentistry (Dept. of Dentistry, Faculty of Dental Sciences), Master of Science in Pharmacy (Dept. of Pharmacy, Faculty of Medical Sciences), Master of Science in Clinical Nursing, Master of Science in Medical Laboratory Technician, Master of Science in Physiotherapy."
+      },
+      {
+        "label": "Aldent University official site - Master of Science in Dentistry programme page",
+        "url": "https://ual.edu.al/rt-program/master-of-science-in-dentistry/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Integrated Master of Science in Dentistry: 300 ECTS, 5 years, full-time, Study Language: Albanian, Faculty of Dental Sciences / Department of Dentistry, Accreditation Status: Accredited. Admission requirement listed: High School Diploma with weighted average grade > 8. Full 10-semester course table published (clinical practice and diploma thesis in final year)."
+      },
+      {
+        "label": "Aldent University official site - General Nursing (Bachelor) programme page",
+        "url": "https://ual.edu.al/rt-program/general-nursing/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Bachelor's in General Nursing: 180 ECTS, 3 years, full-time, Study Language: Albanian, Faculty of Technical Medical Sciences / Department of Nursing and Physiotherapy. States the programme is licensed under Decision of the Council of Ministers No. 794, dated 22 July 2009 (first-cycle, 3 academic years), with initial accreditation Order No. 240 (26 May 2011) and subsequent re-accreditations (Decision No. 24, 19 May 2017; Decision No. 209, 14 December 2024)."
+      },
+      {
+        "label": "Aldent University official site - Master of Science in Pharmacy programme page",
+        "url": "https://ual.edu.al/rt-program/master-of-science-in-pharmacy/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Integrated Pharmacy programme (page's own 'Study Program Details' box lists Degree: Bachelor, Credits: 300 ECTS, Duration: 5 Years, Study Language: Albanian), Faculty of Medical Sciences / Department of Pharmacy. States the programme is licensed by Order of the Ministry of Education and Science No. 519, dated 19.11.2010, accredited in 2013, re-accredited in 2019 and 2024."
+      },
+      {
+        "label": "ASCAL (Albanian Quality Assurance Agency in Higher Education) - HEI listing for Universiteti Aldent",
+        "url": "https://www.ascal.al/en/hei-list/hei/universiteti-aldent-2",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent Albanian government QA-agency record. Confirms: Licensing Document VKM Nr. 673, date 27.09.2006; Accreditation Document Vendim BA Nr.01, date 27.01.2023; Category: University; Type: Private; Status: Active; Address: Rruga e Dibres, nr. 235, Tirane; Website www.ual.edu.al. Lists accredited programmes including Master i shkencave (PI) Dentistry, Master i shkencave (PI) Pharmacy, Bachelor Nursing, Bachelor Physiotherapy, Bachelor Dental Laboratory Techniques, Bachelor/Master Medical Laboratory and Imaging, Studime Specializuese Afatgjata Dentistry (Oral Surgery, Orthodontics), matching the official site's programme list."
+      },
+      {
+        "label": "Wikipedia - Aldent University",
+        "url": "https://en.wikipedia.org/wiki/Aldent_University",
+        "kind": "reference",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent secondary source corroborating: private institution in Tirana specializing in medical/dental sciences; founded 2006 via Council of Ministers Decision No. 673 (27 Sept 2006), began as a 2-year pre-university dental-lab-technique programme in 2003; address Rruga e Dibres No. 235, Te Selvia area; three faculties (Dental Sciences, Medical Technical Sciences, Medical Sciences/Pharmacy); international partnerships with Nicolaus Copernicus University (Poland), Palacky University (Czechia), Ankara University and Hacettepe University (Turkey), Acibadem University (Turkey). Infobox separately lists 'Established September 27, 2003.'"
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Aldent University",
+    "slug": "aldent-university",
+    "city": "Tirana",
+    "type": "Private",
+    "establishedYear": 2003,
+    "officialWebsite": "https://ual.edu.al/",
+    "featured": false,
+    "bestFitFor": [
+      "Students specifically seeking dentistry, pharmacy, nursing, or allied-health (medical imaging/radiotherapy, medical laboratory technology, physiotherapy) degrees from a private, nationally accredited Albanian institution -- Aldent does not offer a general-medicine/MBBS programme",
+      "Students who are fluent in, or willing to reach working fluency in, Albanian before enrolling, since every degree programme reviewed is taught in Albanian and no official English-medium track was found for international applicants",
+      "Students comfortable with an admissions process built around Albania's own State Matura secondary-leaving qualification, who will contact the university's international/admissions office directly to confirm an equivalent pathway and required document set for a foreign (including Indian) secondary-school qualification before applying",
+      "Students who want hands-on, clinic-integrated training in a small, single-city private university with dedicated dental/medical simulation and clinical labs rather than a large public-university campus",
+      "Students prepared to independently verify, in writing from Aldent and the relevant Indian regulator, home-country recognition of the specific degree (dentistry via the Dental Council/NDC-successor body, pharmacy via the Pharmacy Council of India, nursing via the Indian Nursing Council) before committing, given the very small existing Indian student presence in Albania to draw on for reference"
+    ],
+    "programs": [
+      {
+        "courseSlug": "bds",
+        "title": "Integrated Master of Science in Dentistry (5-year integrated dental degree, 300 ECTS)",
+        "officialProgramUrl": "https://ual.edu.al/rt-program/master-of-science-in-dentistry/",
+        "medium": "Albanian -- the official programme page lists 'Study Language: Albanian' explicitly; no official English-medium version of this programme was found. International applicants should independently confirm current language-of-instruction and any foundation/language-year options directly with Aldent before applying.",
+        "durationYears": 5
+      },
+      {
+        "courseSlug": "pharmacy",
+        "title": "Integrated Master of Science in Pharmacy (5-year integrated pharmacy degree, 300 ECTS)",
+        "officialProgramUrl": "https://ual.edu.al/rt-program/master-of-science-in-pharmacy/",
+        "medium": "Albanian -- the official programme page lists 'Study Language: Albanian' explicitly. No official English-medium track for international students was found; applicants should verify directly with Aldent before applying.",
+        "durationYears": 5
+      },
+      {
+        "courseSlug": "bsc-nursing",
+        "title": "Bachelor's Degree in General Nursing (3-year first-cycle degree, 180 ECTS)",
+        "officialProgramUrl": "https://ual.edu.al/rt-program/general-nursing/",
+        "medium": "Albanian -- the official programme page lists 'Study Language: Albanian' explicitly. No official English-medium track for international students was found; applicants should verify directly with Aldent before applying.",
+        "durationYears": 3
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Aldent University (Universiteti Aldent, commonly abbreviated UAL) is a private, nationally accredited higher-education institution in Tirana, Albania, founded in 2003 and formally licensed as a university in 2006 under Decision of the Council of Ministers No. 673. It is a specialist health-sciences institution -- its official site describes it as the only private HEI in Albania with a 100% clinical health-sciences orientation -- built around three faculties: the Faculty of Dental Sciences, the Faculty of Medical Sciences (pharmacy), and the Faculty of Technical Medical Sciences (nursing, physiotherapy, medical imaging/radiotherapy, medical laboratory technology). Aldent does not run a general-medicine (MBBS-equivalent) programme; its flagship clinical degree is a 5-year, 300-ECTS integrated Master of Science in Dentistry, alongside an equally structured integrated Pharmacy degree and a 3-year Bachelor's in Nursing. Every degree-programme page reviewed in this research states the language of instruction as Albanian, and Aldent's published admission process is built around verification of Albania's own State Matura secondary-school qualification rather than a dedicated international-student track -- so Indian and other foreign applicants should treat language of instruction, an equivalent admission pathway for non-Albanian school-leaving qualifications, current tuition, and home-country degree recognition as items to confirm in writing directly with the university's admissions office before applying, not as settled facts.",
+    "campusLifestyle": "Aldent University's main campus sits on Rruga e Dibres in the Selvia area of central Tirana, with a second site at Lunder on the city's outskirts; both addresses are listed on the official site alongside Google Maps links, and the university also promotes a dedicated shuttle/mobility service between locations. The official Campus Environment gallery highlights dental laboratories, nursing simulation classrooms, an imaging laboratory, and general teaching labs, consistent with the university's clinical, hands-on training focus. As a small, single-purpose health-sciences institution rather than a large multi-faculty university, day-to-day student life centres on lecture halls, simulation/clinical labs, and the practical placements that are built into each programme from the later years onward. Aldent lists Erasmus+ and partner-university mobility (named partners include Nicolaus Copernicus University in Poland, Palacky University in Czechia, and Ankara, Hacettepe and Acibadem universities in Turkey) as an active part of student life, with graduate testimonials on the official site describing Erasmus+ clinical placements abroad as part of their training.",
+    "cityProfile": "Tirana is Albania's capital and largest city, a compact Southeast European capital that has undergone rapid redevelopment over the past two decades, with a walkable central core, a growing café and restaurant scene, and a lower cost of living than most Western and Central European capitals. It is Albania's main transport hub, served by Tirana International Airport (Rinas), and is the seat of most national government institutions, universities, and hospitals, including the major public teaching hospital complex that anchors the country's clinical training system. For a foreign student, Tirana offers city-centre convenience -- most academic, administrative, and daily-living needs reachable on foot or by short taxi/bus rides -- rather than the scale of a major Western European or Indian metro; students used to very large cities should expect a considerably smaller urban environment.",
+    "clinicalExposure": "Aldent's dentistry programme is structured so that, per the official curriculum outline, clinical involvement builds from preclinical laboratory work in the first two years toward direct patient treatment under faculty supervision from the third year onward, culminating in supervised practicum rotations and a diploma thesis in the fifth year; the university's Patient Safety Standards and Clinical & Simulation Labs pages (linked from the main site navigation) indicate a formal clinical-training and patient-safety framework sits behind this. The nursing programme similarly combines theoretical coursework with integrated clinical nursing placements across internal medicine, surgical, pediatric, and obstetric-gynecological rotations, per its published curriculum. The pharmacy programme includes mandatory professional internships in community pharmacies, hospitals, and pharmaceutical institutions. Applicants should ask Aldent directly which specific teaching hospitals and clinics host these placements and how clinical hours are scheduled, since the official pages describe the structure and learning outcomes of clinical training but do not name specific partner hospitals in the pages reviewed.",
+    "hostelOverview": "Aldent's official site does not describe university-run student halls or dormitories; instead, it operates a 'Housing Support' service that provides guidance, checklists, and advice for finding private rented accommodation in Tirana (covering what to check before signing a lease, tenant rights, and emergency housing guidance), rather than offering or guaranteeing university-managed housing itself. Prospective students, especially those relocating from abroad, should budget for private rental housing and use Aldent's Housing Support office as a first point of contact for lease guidance, while independently verifying current rental costs and neighbourhood options in Tirana before arrival.",
+    "indianFoodSupport": "Albania has a very small resident Indian community -- India's own diplomatic reporting has historically put the total number of Indian nationals in the country (workers, project staff, and students combined) at under 100 -- so Tirana does not have an established Indian-student ecosystem, dedicated Indian grocery stores, or a cluster of Indian restaurants comparable to larger European or Central Asian study destinations. Tirana's food scene is dominated by Albanian, Italian, and broader Mediterranean/Balkan cuisine, with some international and South Asian restaurant options in the city centre, though availability and consistency should be confirmed locally rather than assumed. Prospective Indian students should plan for a genuinely different food environment, budget time to source spices and staples (e.g., via international supermarkets or occasional imports), and connect with any existing informal student networks in Tirana before travel, since campus-provided Indian-specific food support was not found on Aldent's official site.",
+    "safetyOverview": "Albania is generally regarded as a low-crime destination for international students relative to violent crime, and Tirana as its capital carries the country's standard advisories: petty theft and pickpocketing in crowded areas, normal road-safety caution (including for pedestrians, given variable driving standards), and the usual guidance to use registered transport and avoid unlit areas late at night. Aldent's official Housing Support materials include a pre-lease safety checklist for students renting privately, and the university's Student Support services (Counseling & Wellbeing, Health Services) are listed on the official navigation as part of general student welfare provision. As with any study-abroad destination, students should register with their home country's nearest diplomatic mission, keep standard travel/health insurance in place, and follow official Albanian and Indian government travel-advisory guidance rather than relying solely on university materials for safety information.",
+    "studentSupport": "Aldent's official site lists a defined Student Support structure covering Academic Advising, Counseling & Wellbeing, a Career Center, Health Services, and Transport Services (including a student shuttle between its Selvia and Lunder sites), alongside Alumni Network and student-organisation/club pages. Academic administration runs through a Student Portal and an LMS (branded 'UAL LMS'), with a Digital Library and physical library also listed as student resources. However, none of the official pages reviewed describe dedicated international-student or foreign-admissions support staff, a visa/residence-permit assistance service, or English-language orientation programming for incoming foreign students -- applicants from India should ask Aldent's admissions office directly what support exists for visa applications, residence permits, and settling in, since this research pass found only general (domestic-oriented) student-support services on the public site.",
+    "whyChoose": [
+      "A specialist, 100%-clinical-health-sciences private university (per its own description) with a narrower, more focused portfolio -- dentistry, pharmacy, nursing, and allied-health -- than large multi-faculty public universities",
+      "Officially accredited by Albania's national accreditation framework, independently corroborated on the ASCAL (Albanian Quality Assurance Agency) government website, which lists Aldent as an active, licensed private university with specific accreditation decisions for each programme",
+      "A compact, single-city footprint (two campus sites in and near Tirana) with an official student shuttle service, small-cohort clinical/simulation labs, and hands-on training built into each curriculum from an early stage",
+      "Active international mobility partnerships (Erasmus+ and named partner universities in Poland, Czechia, and Turkey) that give students at least some structured route to clinical or academic experience abroad during their studies",
+      "Lower cost-of-living context of Tirana relative to most Western European capital-city study destinations, which can meaningfully offset day-to-day living expenses even where tuition itself must be separately verified"
+    ],
+    "thingsToConsider": [
+      "No MBBS/general-medicine programme exists at Aldent -- students seeking a medical (not dental) degree should look elsewhere; Aldent's strongest, most clinically detailed offering is its integrated Dentistry degree",
+      "Every programme reviewed (Dentistry, Pharmacy, Nursing) is taught in Albanian per the official curriculum pages, with no confirmed official English-medium track for international students -- this is a major practical barrier that must be resolved (language preparation, a foundation year, or written confirmation from Aldent of an alternate track) before applying",
+      "Aldent's published admission process is built around Albania's own State Matura secondary-leaving exam; no official page describes an equivalent international-admissions pathway, so applicants with an Indian (or other non-Albanian) secondary qualification must confirm directly with Aldent how their qualification will be evaluated and what the actual application route is",
+      "No official tuition-fee figures for these programmes were found on the public site in this research pass (the tuition page describes policies -- installment options, an early-payment discount -- but not published per-programme rates); get current, written fee figures directly from Aldent's Finance Office before budgeting",
+      "No university-operated student housing/dormitories were found; students should budget for private rental housing via Aldent's Housing Support guidance service rather than assuming on-campus accommodation is available",
+      "Home-country professional recognition (Dental Council body, Pharmacy Council of India, Indian Nursing Council as applicable) for a degree earned at Aldent was not independently confirmed in this research pass and must be verified directly with the relevant Indian regulator before enrolling, given how small the existing pool of Indian graduates from Albanian dental/pharmacy/nursing programmes appears to be"
+    ],
+    "faq": [
+      {
+        "question": "Does Aldent University offer an MBBS (general medicine) degree?",
+        "answer": "No. Based on the official programme listings reviewed, Aldent University's clinical degrees are in Dentistry (integrated Master of Science, 5 years), Pharmacy (integrated Master of Science, 5 years), and Nursing (Bachelor's, 3 years), plus allied-health bachelor's/master's programmes in medical imaging/radiotherapy, medical laboratory technology, and physiotherapy. There is no general-medicine/MBBS-equivalent programme in Aldent's official course catalogue as reviewed."
+      },
+      {
+        "question": "What language are Aldent University's programmes taught in?",
+        "answer": "Every official programme page reviewed for this research (Dentistry, Pharmacy, Nursing) lists 'Study Language: Albanian' in its published programme details. No official page describing an English-medium track for international students was found. Prospective non-Albanian-speaking applicants should confirm directly with Aldent's admissions office whether any alternative language arrangement (foundation year, translated instruction, etc.) exists before applying."
+      },
+      {
+        "question": "How is Aldent University accredited, and is this independently verifiable?",
+        "answer": "Aldent University is licensed as a private university under Decision of the Council of Ministers No. 673 (dated 27 September 2006) and is institutionally accredited under Albania's national quality-assurance system. This is independently corroborated on the website of ASCAL, Albania's Quality Assurance Agency in Higher Education, which lists Aldent (as 'Universiteti Aldent') as an active, licensed private university with a specific institutional accreditation decision (Vendim BA Nr.01, dated 27.01.2023) and individually accredited study programmes."
+      },
+      {
+        "question": "Can Indian students apply to Aldent University, and how does admission work?",
+        "answer": "Aldent's official Admission Process page describes an application route built around verification of Albania's own State Matura secondary-school examination results and national admission criteria; it does not describe a separate international-student admissions track on the pages reviewed. Indian applicants should contact Aldent's admissions office directly to ask how a foreign (Indian) secondary-school qualification is evaluated for equivalence, what additional documents are required, and whether any language requirement or preparatory step applies, since this was not detailed on the public site."
+      },
+      {
+        "question": "What does dentistry (Integrated Master of Science in Dentistry) at Aldent involve?",
+        "answer": "It is a 5-year, 300-ECTS integrated programme combining biomedical science foundations in years one and two with progressively more clinical training from year three onward, including supervised patient treatment, a practicum, and a diploma thesis in the final year. The official curriculum lists modules such as Oral Surgery, Orthodontics, Periodontology, Endodontics, Fixed and Full Prosthodontics, and Pedodontics across the later years. Admission on the official programme page is listed as requiring a High School Diploma with a weighted average grade above 8."
+      },
+      {
+        "question": "Does Aldent University provide student housing or dormitories?",
+        "answer": "No university-operated dormitories or halls of residence were described on the official site in this research pass. Aldent instead runs a 'Housing Support' service that gives students guidance on finding and safely renting private accommodation in Tirana -- including a pre-lease checklist, tenant-rights information, and help if a housing problem arises -- rather than providing or guaranteeing on-campus housing itself."
+      },
+      {
+        "question": "What is the tuition fee for Aldent University's programmes?",
+        "answer": "This research pass could not find published per-programme tuition figures on Aldent's official Tuition & Fees page; the page describes payment policies (installment options and an early-payment discount for full payment by December) rather than listing rates. Prospective students should request current, written tuition figures for their specific programme and intake year directly from Aldent's Finance Office before making any financial commitment."
+      },
+      {
+        "question": "Will an Aldent University degree be recognised in India?",
+        "answer": "This was not independently confirmed in this research pass and should not be assumed. Indian students should verify, in writing and before enrolling, how a dentistry, pharmacy, or nursing degree from Aldent University would be evaluated by the relevant Indian regulator (the dental regulatory body, the Pharmacy Council of India, or the Indian Nursing Council, as applicable) for the purpose of practicing or pursuing further studies in India, since Albania's small existing pool of graduates from these specific programmes means there is little established precedent to rely on."
+      }
+    ]
+  }
+}

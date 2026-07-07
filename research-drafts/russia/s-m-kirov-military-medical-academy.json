@@ -1,0 +1,97 @@
+{
+  "_hold": true,
+  "_holdReason": "Ministry of Defence military academy; foreign training is for foreign ARMIES (military-medical specialists) under intergovernmental/MoD quotas, not a civilian commercial MBBS pathway for Indian NEET students. No official civilian MBBS program URL, medium, or fees could be corroborated. Publishing as an 'MBBS in Russia' destination would be mis-framing / fabrication. Held as honest local draft.",
+  "countrySlug": "russia",
+  "universitySlug": "s-m-kirov-military-medical-academy",
+  "schoolName": "S. M. Kirov Military Medical Academy",
+  "cityName": "Saint Petersburg",
+  "priority": "low",
+  "officialWebsite": "https://www.vmeda.org/",
+  "programUrl": "https://www.vmeda.org/education/faculties/ds-01-05/",
+  "verifiedAt": "2026-07-07",
+  "reviewNotes": "HELD (not publishable). Military institution of the Russian Ministry of Defence. Corroborated facts captured below, but no honest civilian MBBS admission pathway for Indian students could be verified. See .md document for full reasoning and sources.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "S. M. Kirov Military Medical Academy - official website (Ministry of Defence)",
+        "url": "https://www.vmeda.org/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Site title: 'Военно-медицинская Академия имени С. М. Кирова'. Confirms it is a federal state budgetary MILITARY educational institution of the Ministry of Defence of the Russian Federation, located in Saint Petersburg."
+      },
+      {
+        "label": "Official website - 5th Faculty for training military-medical specialists of foreign armies",
+        "url": "https://www.vmeda.org/education/faculties/ds-01-05/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Foreign-student faculty explicitly trains military-medical specialists of FOREIGN ARMIES (established as a faculty in 1955; historical intake e.g. Mongolian military doctors). Foreign citizens may study specialitet/master/residency/DPO/postgraduate programs. Not a civilian MBBS commercial pathway."
+      },
+      {
+        "label": "S. M. Kirov Military Medical Academy - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/S._M._Kirov_Military_Medical_Academy",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Type Public; Medico-Surgical Academy established by order of Emperor Paul I in 1798 (official); named after Sergey Kirov in 1934; trains senior medical staff for the Russian Armed Forces; official website www.vmeda.org."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "S. M. Kirov Military Medical Academy",
+    "city": "Saint Petersburg",
+    "type": "Public",
+    "establishedYear": 1798,
+    "officialWebsite": "https://www.vmeda.org/",
+    "bestFitFor": [
+      "Foreign military-medical personnel sponsored under intergovernmental or Ministry of Defence agreements",
+      "Postgraduate and residency candidates pursuing military-medicine specialisation with official sponsorship",
+      "Researchers interested in Russian military medical science and history"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "General Medicine (specialitet) - foreign-student faculty",
+        "officialProgramUrl": "https://www.vmeda.org/education/faculties/ds-01-05/",
+        "medium": "Russian",
+        "durationYears": 6,
+        "feeNotes": "Tuition and admission terms for civilian foreign students are NOT confirmed on the official Ministry of Defence site. Foreign intake is restricted and primarily via intergovernmental/MoD quotas rather than standard commercial admission. Students must verify directly with the academy and their national regulator before proceeding.",
+        "sourceUrls": [
+          "https://www.vmeda.org/education/faculties/ds-01-05/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "The S. M. Kirov Military Medical Academy in Saint Petersburg is a federal military educational institution of the Russian Ministry of Defence, tracing its origins to the Medico-Surgical Academy established in 1798. It trains senior medical staff for the Russian Armed Forces and conducts military-medical research. Foreign training at the academy is delivered through its faculty for military-medical specialists of foreign armies and has historically served foreign servicemen under intergovernmental agreements. A verifiable civilian, commercial MBBS admission pathway for Indian students could not be confirmed from official sources.",
+    "campusLifestyle": "The academy occupies a historic campus on the bank of the Neva River in central Saint Petersburg, with clinics, research laboratories and departments spread across the site. As a Ministry of Defence institution, campus life is structured around military discipline alongside medical training. Prospective students should note that day-to-day life follows military-academy norms rather than those of a civilian university.",
+    "cityProfile": "Saint Petersburg is Russia's second-largest city and its historic cultural capital, known for its imperial architecture, museums and the Neva River waterfront. It has a large student population and established public transport. As with any overseas destination, applicants should independently review current visa, safety and travel advisories for Russia before making decisions.",
+    "clinicalExposure": "The academy operates numerous clinics and teaching hospitals attached to its departments, historically including dozens of clinical departments spanning surgical and therapeutic specialties. Clinical training is oriented toward military medicine and the needs of the Russian Armed Forces. Specific clinical-rotation arrangements for foreign civilian students are not documented on official sources.",
+    "hostelOverview": "As a military academy, accommodation is provided within the institution's own structures. Details of hostel facilities, costs and conditions for foreign civilian students are not published on the official Ministry of Defence website and should be confirmed directly with the academy.",
+    "indianFoodSupport": "There is no information on official sources about Indian food or catering support at the academy. Saint Petersburg is a large city with a range of restaurants and grocery options, but applicants should verify availability of familiar food and any dietary support independently.",
+    "safetyOverview": "The academy is a secured Ministry of Defence institution in central Saint Petersburg. Students should independently consult up-to-date government travel and safety advisories for Russia, as conditions and advisories can change.",
+    "studentSupport": "Support structures at the academy are geared toward military trainees and sponsored foreign servicemen. The scope of support for civilian foreign students is not documented on official sources; prospective applicants should confirm what support, if any, is available directly with the academy's foreign-students faculty.",
+    "whyChoose": [
+      "Historic institution founded in 1798 with a long tradition in Russian military medicine",
+      "Located in Saint Petersburg, a major cultural and academic centre",
+      "Extensive network of clinics, teaching hospitals and research laboratories"
+    ],
+    "thingsToConsider": [
+      "This is a Ministry of Defence MILITARY academy, not a civilian medical university; foreign training is oriented to military-medical specialists.",
+      "Foreign intake is restricted and primarily arranged through intergovernmental or Ministry of Defence quotas rather than standard commercial admission.",
+      "Medium of instruction, tuition fees and any Indian-student MBBS pathway are NOT confirmed by official sources - verify directly with the academy and with the NMC before making any commitment."
+    ],
+    "faq": [
+      {
+        "question": "Is the S. M. Kirov Military Medical Academy a civilian medical university?",
+        "answer": "No. It is a federal military educational institution of the Russian Ministry of Defence in Saint Petersburg, established from the Medico-Surgical Academy of 1798, that trains medical staff for the Russian Armed Forces."
+      },
+      {
+        "question": "Can Indian students take an MBBS here through normal admission?",
+        "answer": "This could not be confirmed. The academy's foreign faculty trains military-medical specialists of foreign armies, and foreign intake is reported to be restricted and primarily via intergovernmental or Ministry of Defence quotas rather than commercial admission. Verify directly with the academy before considering it."
+      },
+      {
+        "question": "Is the program taught in English and is it NMC-recognised for India?",
+        "answer": "Official sources indicate Russian-language military-medical training; an English-medium civilian MBBS and NMC recognition for Indian licensing could not be corroborated from official sources. Students must confirm the current recognition status with the National Medical Commission (NMC) themselves."
+      }
+    ]
+  }
+}

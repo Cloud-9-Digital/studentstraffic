@@ -1,0 +1,162 @@
+{
+  "countrySlug": "malta",
+  "schoolName": "Queen Mary University of London, Malta Campus (Barts and The London School of Medicine and Dentistry)",
+  "cityName": "Victoria, Gozo",
+  "priority": "medium",
+  "officialWebsite": "https://www.qmul.ac.uk/malta/",
+  "programUrl": "https://studymedicinemalta.com/learning/frequently-asked-questions-about-the-mbbs-programme-at-queen-mary-malta/",
+  "hostelUrl": "https://studymedicinemalta.com/location/accommodation-in-malta/",
+  "admissionUrl": "https://www.qmul.ac.uk/malta/admissions/entry-requirements/",
+  "qualityScore": 82,
+  "reviewNotes": "Multi-source draft built from Queen Mary's own Malta-programme recruitment site (studymedicinemalta.com, run by QMUL's Malta Campus admissions/marketing team) plus independent aggregator and press corroboration, since qmul.ac.uk itself returned a CloudFront 403 to automated fetches. This is a UK-awarded MBBS (GMC-approved), not a typical non-UK 'MBBS abroad' programme, so NMC/FMGE framing is deliberately cautious: told students to verify with NMC directly rather than asserting a status. Tuition fee (EUR39,500/year from Sept 2026 intake) is stated with source and date since it was explicitly confirmed on the official FAQ; no living-cost or hostel numeric fee is asserted as an official structured fee since QMUL does not run halls of residence (private rental market only) -- cost-of-living figures are given as an illustrative student account, clearly attributed, not as an official fee schedule.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Queen Mary, Malta Campus -- official site (qmul.ac.uk/malta)",
+        "url": "https://www.qmul.ac.uk/malta/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirmed via Google/Bing search snippets and secondary citations; direct automated fetch was blocked by a CloudFront 403 on qmul.ac.uk, so facts were cross-checked against QMUL's own Malta-programme recruitment microsite (studymedicinemalta.com) and independent sources below before inclusion."
+      },
+      {
+        "label": "Study Medicine Malta -- FAQs about the MBBS Programme at Queen Mary, Malta (official QMUL Malta Campus recruitment site, contact smd-mbbs-malta@qmul.ac.uk)",
+        "url": "https://studymedicinemalta.com/learning/frequently-asked-questions-about-the-mbbs-programme-at-queen-mary-malta/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched successfully via curl. Confirms 5-year MBBS, GMC approval, UCAT requirement, IELTS 7.0, EUR39,500/year fee for Sept 2026 entry, ~80 students/year intake, English-medium teaching, hospital placements list, no transfer between Malta and London tracks."
+      },
+      {
+        "label": "Study Medicine Malta -- Location / Why Study Medicine in Malta",
+        "url": "https://studymedicinemalta.com/location/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Describes Gozo campus setting, 300 days of sunshine claim, and student-life framing."
+      },
+      {
+        "label": "Study Medicine Malta -- Student accommodation in Malta",
+        "url": "https://studymedicinemalta.com/location/accommodation-in-malta/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. Confirms QMUL Malta has no halls of residence; students find private rentals, mostly in Victoria, via a student WhatsApp group and residency-malta@qmul.ac.uk support."
+      },
+      {
+        "label": "Study Medicine Malta -- Cost of living (student account)",
+        "url": "https://studymedicinemalta.com/location/cost-of-living-in-malta/",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl (source page: 'What I spend in a day as a Malta medical student'). First-person student account citing roughly GBP500-600/month all-in spending and a two-bedroom Victoria apartment at about GBP430/month; used only as an illustrative, attributed figure, not as an official fee schedule."
+      },
+      {
+        "label": "WebSearch aggregation of Queen Mary Malta MBBS overview, GMC accreditation and outcomes (studyinternational.com, medicaldoorway.com, NCUK, DIFC, Medistudents)",
+        "url": "https://studyinternational.com/news/queen-mary-university-of-london-malta-campus-evolving-medical-students-into-globally-competitive-practitioners/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent press/education-portal coverage corroborating: medical school building opened October 2019, four-storey ~8,100 sqm facility adjacent to Gozo General Hospital, GMC approval, and strong Foundation Year progression for graduates."
+      },
+      {
+        "label": "Barts and The London School of Medicine and Dentistry -- Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Barts_and_The_London_School_of_Medicine_and_Dentistry",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Used to corroborate Barts and The London's founding history (St Bartholomew's Hospital, founded 1123) and its status as QMUL's Faculty of Medicine and Dentistry."
+      },
+      {
+        "label": "WebSearch aggregation on Victoria/Gozo Indian food options (Trishna's, Cardamom Gozo, 'That Vegan Indian Food Guy') and Gozo travel guides",
+        "url": "https://cardamomgozo.com/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates presence of multiple Indian-cuisine restaurants in/near Victoria, Gozo (Trishna's, Cardamom, a vegan Indian food stall in Gharb); no dedicated Indian grocery store confirmed, only a general African/international shop -- reflected honestly as limited, not absent."
+      },
+      {
+        "label": "WebSearch aggregation on Malta safety rankings (MaltaToday / World Justice Project Rule of Law Index, angel-jobs.mt, lovinmalta.com)",
+        "url": "https://www.maltatoday.com.mt/news/national/138038/malta_ranks_12th_safest_country_globally_in_world_justice_project_index",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates Malta's ranking as 12th safest country globally in the World Justice Project Rule of Law Index, and a general declining-crime-rate trend; used for the safety overview with attribution rather than an unqualified 'very safe' claim."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "slug": "queen-mary-university-of-london-malta-campus-barts-and-the-london-school-of-medicine-and-dentistry",
+    "name": "Queen Mary University of London, Malta Campus (Barts and The London School of Medicine and Dentistry)",
+    "city": "Victoria, Gozo",
+    "type": "Public",
+    "establishedYear": 2019,
+    "officialWebsite": "https://www.qmul.ac.uk/malta/",
+    "bestFitFor": [
+      "Indian and international students who want a genuine UK-awarded, GMC-approved MBBS but prefer a smaller Mediterranean campus over London",
+      "Students who have already sat the UCAT and can meet the third-decile-and-above cutoff (SJT Band 4 not considered)",
+      "Students targeting UK Foundation-Year training after graduation, since the Malta cohort sits identical assessments to Queen Mary's London MBBS",
+      "Students comfortable with English-medium teaching in a small-island setting (Gozo, pop. under 40,000) rather than a large city campus",
+      "Families who want a public Russell Group university's name behind the degree rather than a private for-profit medical school"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Medicine MBBS (Malta, 5-Year Programme)",
+        "officialProgramUrl": "https://www.qmul.ac.uk/malta/malta-track/",
+        "medium": "English",
+        "durationYears": 5,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "EUR",
+        "officialAnnualTuitionAmount": 39500,
+        "feeVerifiedAt": "2026-07-07",
+        "feeNotes": "Per Queen Mary's own Malta-programme FAQ page, annual University fees for students starting from September 2026 are EUR39,500 for all students (UK, EU, and international) -- there is no separate international-student fee tier. No application fee is charged. Figure not converted to USD here since no fee-specific FX source/date was corroborated; students should confirm the current year's fee directly with the QMUL Malta admissions team before applying.",
+        "sourceUrls": [
+          "https://studymedicinemalta.com/learning/frequently-asked-questions-about-the-mbbs-programme-at-queen-mary-malta/"
+        ]
+      }
+    ]
+  },
+  "draftContent": {
+    "summary": "Queen Mary University of London, Malta Campus is the first international campus of Queen Mary's Barts and The London School of Medicine and Dentistry, delivering a five-year MBBS in Victoria, Gozo, that leads to the same UK, GMC-approved medical degree awarded in London. The purpose-built, four-storey medical school opened in October 2019 next to Gozo General Hospital, and the programme follows an identical curriculum, assessments and problem-based learning approach to Queen Mary's London MBBS, taught by Barts and The London academic staff alongside locally trained clinicians. Students should independently verify recognition of a UK MBBS with their home-country medical regulator (in India, the National Medical Commission) before applying, since this is a UK-awarded degree route rather than a typical private medical school abroad.",
+    "campusLifestyle": "The Malta Campus is a single, modern four-storey building of roughly 8,100 square metres, housing a clinical skills simulation centre, communication skills suite, lecture theatre, PC labs, seminar and problem-based-learning rooms, an anatomy and physiology centre with a dissection suite, a library, student support offices, and rooftop dining and social areas. Cohorts are small by medical-school standards -- Queen Mary looks to recruit around 80 students per year for the Malta track -- so students get close contact with faculty rather than lecture halls of several hundred. The university does not run halls of residence; students describe an active, campus-adjacent social life centred on Victoria, including student societies (a QMUL student has written about running the Cricket Society, for example) and the student union BSLA Malta, which helps new students connect before term starts.",
+    "cityProfile": "Victoria (known locally as Rabat) is Gozo's small, walkable unofficial capital, at the centre of an island only about 67 square kilometres in size -- small enough to cross end to end in roughly half an hour. Most Queen Mary Malta students choose to live in or near Victoria for its short commute to campus, its shops, restaurants and its historic Citadel, while a public bus network (with a Tallinja card offering free travel for eligible users) and ride-hailing apps like Bolt connect the rest of the island. Gozo is markedly quieter and more rural than Malta's main island, with a regular ferry service linking it to Malta and, from there, to Malta International Airport -- students note this island rhythm as a deliberate trade-off against the pace of a big city like London.",
+    "clinicalExposure": "Clinical exposure begins early: first-year students get GP placements alongside teaching mainly based on the Gozo campus. From year one, students also rotate through Gozo General Hospital, right next to the medical school, and St Vincent de Paul in Malta. In the third, fourth and fifth years, placements expand to wards and clinics across Gozo General Hospital, Karen Grech Hospital, St Vincent de Paul and Mater Dei Hospital -- Malta's main tertiary referral hospital -- plus other primary and secondary care sites, giving students exposure to both a smaller island hospital system and Malta's larger national hospital. High-performing students may also apply for an intercalated science degree year in London, subject to academic criteria and UK study eligibility.",
+    "hostelOverview": "Queen Mary, Malta Campus does not provide university halls of residence; the university has said this is something it is working towards as a young, growing institution, but for now all students arrange private rental accommodation. Most students live in shared apartments in or close to Victoria, typically with two to three flatmates, and QMUL's student experience team plus the BSLA Malta student union help incoming students connect via a pre-term WhatsApp group to find flatmates and available rooms. Students are advised to start their accommodation search three to six months before arrival (some start as early as October for a September intake), and the university's residency team (residency-malta@qmul.ac.uk) is available to answer questions throughout the process.",
+    "indianFoodSupport": "Gozo is a small island and does not have a large dedicated Indian grocery scene, but Victoria and its surrounds do have Indian-cuisine dining options students can rely on, including Cardamom (an Indian-inspired restaurant in Victoria) and Trishna's, alongside a vegan-focused Indian food stall in nearby Gharb. Students wanting specific Indian grocery staples generally rely on general international/African grocery shops on the island or occasional trips to Malta's main island, which has a broader range of South Asian shops and restaurants; this is a genuine limitation of island life that prospective students should weigh against the convenience of larger university cities.",
+    "safetyOverview": "Malta is consistently rated among the safer countries in Europe -- it was ranked 12th safest country globally in the World Justice Project's Rule of Law Index, and national crime-rate data shows a long-run decline over the past two decades. Gozo, and Victoria in particular, is generally regarded by students and locals as calm and low-crime relative to larger European cities, helped by its small population and close-knit island community; as with any destination, students should still take standard personal-safety precautions (secure accommodation, know local emergency numbers, register with their embassy/consulate) rather than assume zero risk.",
+    "studentSupport": "Students have access to a dedicated Student, Academic and Pastoral Support Office in Malta, which handles welfare, physical and mental health support, and academic guidance throughout the programme, backed by a link to the wider Faculty of Medicine and Dentistry support network in London. The office follows GMC guidance on pastoral support for medical students. Beyond formal support services, the BSLA Malta student union and informal peer networks (WhatsApp groups, student societies) play a large role in day-to-day settling-in support, particularly around accommodation and orientation for new international students.",
+    "whyChoose": [
+      "A genuinely UK-awarded, GMC-approved MBBS (identical curriculum and assessments to Queen Mary's London programme) delivered on a Mediterranean campus rather than a stand-alone private medical school",
+      "Early and structured clinical exposure across multiple hospitals (Gozo General Hospital, Mater Dei, Karen Grech, St Vincent de Paul) starting from year one",
+      "Small annual intake (around 80 students) on a purpose-built, well-equipped campus, offering closer staff contact than very large medical schools",
+      "Backing of Barts and The London School of Medicine and Dentistry, one of Europe's oldest medical education lineages, tracing back to St Bartholomew's Hospital (founded 1123)",
+      "English-medium teaching in a bilingual country where English is an official language and the primary language of tertiary education and patient communication for clinical training"
+    ],
+    "thingsToConsider": [
+      "No university halls of residence: all accommodation is private-rental, arranged by students themselves (with university support), so budgeting and lead time for the housing search matter",
+      "Tuition is set in euros (EUR39,500/year for Sept 2026 entry, per the official FAQ) with no separate scholarship or fee-waiver scheme confirmed in official sources reviewed -- students must independently confirm the exact current-year fee and any payment-plan options",
+      "Gozo is a small, quiet island (about 67 sq km) with a limited big-city nightlife/shopping scene compared with London or a large capital city -- a deliberate lifestyle trade-off, not a drawback for every student",
+      "Indian grocery and specialist food options are limited on Gozo itself; students relying heavily on home-country ingredients may need occasional trips to Malta's main island",
+      "As a UK degree, recognition abroad depends entirely on the destination country's own medical regulator -- Indian applicants must verify NMC recognition and FMGE/NExT requirements directly with the National Medical Commission before assuming automatic eligibility to practise in India"
+    ],
+    "faq": [
+      {
+        "question": "Is the Queen Mary Malta MBBS the same degree as the London MBBS?",
+        "answer": "Yes. Per Queen Mary's own Malta programme FAQ, the Malta MBBS uses the identical core curriculum, problem-based learning structure and assessments as the A100 MBBS delivered in London, and Malta students sit the same exams at the same time as their London counterparts. However, the two tracks are administratively separate: students must apply to each separately, and transfers between Malta and London are not permitted after enrolment."
+      },
+      {
+        "question": "What are the entry requirements, and is UCAT required?",
+        "answer": "Yes, all candidates must sit the University Clinical Aptitude Test (UCAT) and score in the third decile or above (SJT Band 4 is not considered), plus an IELTS score of 7.0 overall taken within the last two years for non-native English speakers. Applicants must be at least 18 years old at course start and apply directly to the university rather than through UCAS."
+      },
+      {
+        "question": "What is the annual tuition fee, and is there an application fee?",
+        "answer": "According to Queen Mary's official Malta programme FAQ, annual university fees for students starting from September 2026 are EUR39,500 for all students -- UK, EU and international alike -- with no separate application fee. Students should confirm the exact fee for their intended entry year directly with the QMUL Malta admissions team, since fees are reviewed periodically."
+      },
+      {
+        "question": "Will an MBBS from Queen Mary, Malta Campus be recognised in India, and what about FMGE?",
+        "answer": "The programme itself is GMC-approved as a genuine UK medical degree, but recognition in India is governed entirely by India's National Medical Commission (NMC), not by Queen Mary or Malta. Indian students should independently verify current NMC screening/eligibility rules (including any FMGE or NExT licensing requirement) before applying, rather than assuming automatic recognition -- this verification step is essential and should not be skipped."
+      },
+      {
+        "question": "Where do students live, since there are no university halls of residence?",
+        "answer": "Queen Mary, Malta Campus does not offer halls of residence; students arrange private rental accommodation, most commonly shared apartments in or near Victoria, Gozo's unofficial capital and the town closest to campus. The university's student experience team and the BSLA Malta student union support incoming students via a pre-arrival WhatsApp group to help find flatmates, and recommend starting the accommodation search three to six months ahead of arrival."
+      },
+      {
+        "question": "What clinical placements will I get during the course?",
+        "answer": "Placements begin in year one with GP experience and rotations at Gozo General Hospital and St Vincent de Paul (Malta). From year three onward, students rotate through Gozo General Hospital, Mater Dei Hospital (Malta's main tertiary hospital), Karen Grech Hospital, St Vincent de Paul and other primary/secondary care sites, giving exposure to both island and national-level hospital care."
+      }
+    ]
+  }
+}

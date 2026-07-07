@@ -1,0 +1,79 @@
+{
+  "countrySlug": "vietnam",
+  "schoolName": "Hai Duong Medical Technical University",
+  "cityName": "Hai Duong",
+  "priority": "low",
+  "officialWebsite": "https://hmtu.edu.vn/",
+  "status": "hold",
+  "reviewNotes": "HOLD - not publish-ready. HMTU (Truong Dai hoc Ky thuat Y te Hai Duong) is a Vietnamese Ministry of Health public university training Vietnamese-medium nursing, midwifery, medical laboratory technology, medical imaging technology, physiotherapy and (per some secondary listings) general medicine staff for Vietnam's domestic health system. Multi-source web research (official site hmtu.edu.vn, MOET recognised-institutions list, studyinvietnam.edu.vn listing, university.me, WholeNurseCatalog, general search aggregation) found NO evidence of: (1) an English-medium program of any kind, (2) an international/overseas-student admissions track, (3) any officialProgramUrl for a courseSlug in {mbbs, medical-pg, bsc-nursing, pharmacy, bds} with confirmed medium of instruction and duration, or (4) any NMC/PCI/INC-relevant recognition statement for Indian students. The official homepage and program pages are Vietnamese-only; no /en/ English section could be found or fetched (attempts to hmtu.edu.vn and legacy www.hmtu.edu.vn/Desktop.aspx paths were tried; the legacy path 404s). Per the sourcing rules (exhaustive-then-omit, never fabricate), no structuredFacts.programs entry can be honestly populated with the required officialProgramUrl/medium/durationYears for an India-audience course slug, so this draft cannot pass the publish gate. Held as a local research record only; do not seed or publish. Revisit if/when HMTU publishes an English-medium admissions track for international students.",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "HMTU official website (Vietnamese, home page)",
+        "url": "https://hmtu.edu.vn/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Fetched via curl. No English-language section found; no international/foreign-student admissions content found."
+      },
+      {
+        "label": "HMTU legacy site introduction page (404, could not verify)",
+        "url": "http://www.hmtu.edu.vn/Desktop.aspx/Introduction/Introduction/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Legacy domain path returned HTTP 404 Not Found on fetch; used only to corroborate the current domain is hmtu.edu.vn."
+      },
+      {
+        "label": "Vietnam Ministry of Education and Training (MOET) - recognised higher education institutions list",
+        "url": "https://en.moet.gov.vn/recognised-higher-education-institutions/Pages/Universities.aspx",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Lists HMTU among MOET-recognised institutions; used to corroborate public/government status."
+      },
+      {
+        "label": "studyinvietnam.edu.vn - Hai Duong Medical Technical University profile",
+        "url": "http://studyinvietnam.edu.vn/detail-university/university-of-hai-duong-medical-technical-279.html",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Surfaced in search results describing HMTU's founding in 1960 and 2007 university upgrade; direct fetch of this URL failed (connection error), so content is corroborated only via search-result summary, not a direct page read."
+      },
+      {
+        "label": "university.me - HMTU programs listing",
+        "url": "https://www.university.me/university/hai-duong-medical-technical-university/programs",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Aggregator listing of HMTU programs; fetched via curl but contained no explicit English-medium or international-student program details usable for structuredFacts.programs."
+      },
+      {
+        "label": "WholeNurseCatalog - HMTU listing",
+        "url": "https://wholenursecatalog.com/listings/hai-duong-vietnam-hai-duong-medical-and-technical-university-hmtu/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates HMTU's public, Ministry of Health-governed status and its nursing/medical-technology training mission; surfaced via search only."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Hai Duong Medical Technical University",
+    "city": "Hai Duong",
+    "type": "Public",
+    "establishedYear": 1960,
+    "officialWebsite": "https://hmtu.edu.vn/",
+    "bestFitFor": [],
+    "programs": [],
+    "notes": "establishedYear=1960 reflects the institution's founding as a Secondary Medical Technical School; it was upgraded to full university status in 2007 by Prime Ministerial decision (both facts corroborated across search summaries of the official site and MOET-adjacent listings). No programs array populated: no courseSlug-eligible program (mbbs/medical-pg/bsc-nursing/pharmacy/bds) could be corroborated with an explicit officialProgramUrl, medium of instruction, and duration for an English-medium or international-student track. bestFitFor intentionally left empty rather than fabricated, since no India-audience-relevant program is confirmed."
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": [],
+    "notes": "All narrative fields intentionally left empty. HMTU is a Vietnamese Ministry of Health institution training Vietnamese-medium nursing/medical-technology staff for the domestic workforce; no corroborated English-medium program or international-admissions pathway exists for Indian students, so writing India-audience narrative content (hostel life, Indian food support, clinical exposure framed for foreign MBBS/nursing students, etc.) would require fabrication, which is disallowed. This page should not be published until/unless HMTU is confirmed to run an English-medium program open to international/Indian applicants."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_status": "HELD - not gate-passing",
+  "_reason": "No program at Schulich School of Medicine & Dentistry (Western University) maps honestly to this platform's India/NEET-audience course catalog (mbbs, medical-pg, bsc-nursing, pharmacy, bds). See .md file in this folder for full research record and sourcing.",
+  "countrySlug": "canada",
+  "schoolName": "Western University (Schulich School of Medicine & Dentistry)",
+  "cityName": "London",
+  "officialWebsite": "https://www.schulich.uwo.ca/index.html",
+  "structuredFacts": {
+    "name": "Western University (Schulich School of Medicine & Dentistry)",
+    "city": "London",
+    "type": "Public",
+    "establishedYear": 1881,
+    "officialWebsite": "https://www.schulich.uwo.ca/index.html",
+    "bestFitFor": [],
+    "programs": []
+  },
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Schulich Medicine & Dentistry Admissions - International Pathway (MD)",
+        "url": "https://www.schulich.uwo.ca/med-dent-admissions/medicine/application-pathways.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Schulich Dentistry Admissions - Frequently Asked Questions (International applicants, DDS)",
+        "url": "https://www.schulich.uwo.ca/med-dent-admissions/dentistry/frequently-asked-questions.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Postgraduate Medical Education - International Medical Graduate (IMG)",
+        "url": "https://www.schulich.uwo.ca/medicine/postgraduate/future_learners/international_medical_graduates.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Schulich School of Medicine and Dentistry - Wikipedia (history/founding)",
+        "url": "https://en.wikipedia.org/wiki/Schulich_School_of_Medicine_and_Dentistry",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      }
+    ]
+  },
+  "draftContent": {}
+}

@@ -1,0 +1,75 @@
+{
+  "countrySlug": "vietnam",
+  "universitySlug": "nam-dinh-university-of-nursing",
+  "schoolName": "Nam Dinh University of Nursing",
+  "cityName": "Nam Dinh",
+  "priority": "low",
+  "officialWebsite": "https://ndun.edu.vn",
+  "qualityScore": null,
+  "reviewNotes": "HELD - NOT PUBLISH READY. ok=false. No corroborated evidence of an English-taught program or an international/Indian-student admissions pathway was found anywhere (official site content could not be fully retrieved due to TLS errors; secondary sources - Vietnamese Wikipedia, VNUR, studyinvietnam.edu.vn aggregator - all describe only Vietnamese-medium domestic Cu nhan (Bachelor) programs in Nursing/Midwifery/Nutrition). Only confirmed international-student activity is a 2019 Lao (Oudomxay Province) government-cooperation cohort, not a general international admissions track. Per the no-fabrication rule, structuredFacts.programs is left empty rather than inventing a courseSlug/medium/officialProgramUrl for an India-facing bsc-nursing entry that cannot be corroborated. See the companion .md file for full research notes, access-issue log, and sources.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Truong Dai hoc Dieu duong Nam Dinh - Wikipedia tieng Viet",
+        "url": "https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90i%E1%BB%81u_d%C6%B0%E1%BB%A1ng_Nam_%C4%90%E1%BB%8Bnh",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Primary structured-facts source: founding lineage (1960 predecessor school; upgraded to university status 26 Feb 2004 by PM Decision 24/2004/QD-TTg); address 257 Han Thuyen, Nam Dinh ward, Ninh Binh province (post-2025 provincial merger); public university under Ministry of Health; current rector; undergraduate programs (Nursing 7720301, Midwifery 7720302, Nutrition 7720401); postgraduate programs; faculties list."
+      },
+      {
+        "label": "VNUR.VN (Vietnam University Ranking) - Truong Dai hoc Dieu duong Nam Dinh profile",
+        "url": "https://vnur.vn/truong-dai-hoc-dieu-duong-nam-dinh/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Corroborates founding year 2004, public ('Cong lap') institution type, official website URL, admission code YDD, address."
+      },
+      {
+        "label": "Nam Dinh University of Nursing - newer official site mirror (nav/homepage)",
+        "url": "http://new.ndun.edu.vn/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms faculty list including Khoa Dieu duong - Ho sinh (Nursing-Midwifery Faculty) and site navigation structure (Tuyen sinh Dai hoc / undergraduate admissions, Hop tac quoc te / international cooperation). Inner content pages (admissions, international cooperation) returned only shared template boilerplate with no route-specific body text when fetched, so could not be used to confirm any English-medium or international-admissions program details."
+      },
+      {
+        "label": "studyinvietnam.edu.vn - Nam Dinh University of Nursing detail page (via search index)",
+        "url": "http://studyinvietnam.edu.vn/detail-university/university-of-nam-dinh-nursing-511.html",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Secondary/lower-confidence source (direct fetch timed out repeatedly; content accessed only via search-engine index summary). States NDUN training scale (~2000 full-time students in Nursing/Midwifery/Public Health/Nutrition plus bridging programs), staffing (306 staff, 194 faculty, 73 visiting lecturers), and a claim that the university was 'upgraded' again in 2014 as the first public nursing university in Vietnam. Not used as authoritative establishedYear since the Wikipedia/VNUR government-decision-cited 2004 date is treated as more primary."
+      },
+      {
+        "label": "Herald Open Access Journal - Training Master's in Nursing Program of Nam Dinh University of Nursing and University of Medicine and Pharmacy, Ho Chi Minh City",
+        "url": "https://www.heraldopenaccess.us/openaccess/training-master-s-in-nursing-program-of-nam-dinh-university-of-nursing-and-university-of-medicine-and-pharmacy-ho-chi-minh-city",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms existence of a joint Master's in Nursing program with University of Medicine and Pharmacy, Ho Chi Minh City (2017-2018 cohort study). Postgraduate-only; no undergraduate/international-admissions information."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Nam Dinh University of Nursing",
+    "slug": "nam-dinh-university-of-nursing",
+    "city": "Nam Dinh",
+    "type": "Public",
+    "establishedYear": 2004,
+    "officialWebsite": "https://ndun.edu.vn",
+    "bestFitFor": [],
+    "programs": [],
+    "recognitionLinks": [],
+    "similarUniversitySlugs": []
+  },
+  "draftContent": {
+    "summary": "",
+    "campusLifestyle": "",
+    "cityProfile": "",
+    "clinicalExposure": "",
+    "hostelOverview": "",
+    "indianFoodSupport": "",
+    "safetyOverview": "",
+    "studentSupport": "",
+    "whyChoose": [],
+    "thingsToConsider": [],
+    "faq": []
+  }
+}

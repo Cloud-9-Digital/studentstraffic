@@ -1,0 +1,182 @@
+{
+  "countrySlug": "malta",
+  "schoolName": "ASOMI College of Sciences (ACS)",
+  "cityName": "Pembroke",
+  "priority": "medium",
+  "officialWebsite": "https://www.acs-college.com/",
+  "programUrl": "https://www.acs-college.com/course-doctor-of-medicine-surgery",
+  "feesUrl": "https://www.acs-college.com/course-doctor-of-medicine-surgery",
+  "hostelUrl": "https://www.acs-college.com/accommodation",
+  "admissionUrl": "https://www.acs-college.com/admission",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "ACS - ASOMI College of Sciences official site - About Us",
+        "url": "https://www.acs-college.com/about-us",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "ACS - ASOMI College of Sciences is a Higher Education Institution licensed by the Malta Further and Higher Education Authority (MFHEA), Licence Number 2020-009, able to deliver programmes from MQF/EQF Level 5 to Level 8. Registered office: Navi Building, Pantar Road, Lija, Malta. Educational campuses at Pembroke (Giorgio Mitrovich Street), Swieqi (Triq Is-Sirk 121) and St Julian's (Triq Elija Zammit)."
+      },
+      {
+        "label": "ACS official site - Degree Program in Medicine (Doctor of Medicine / MD)",
+        "url": "https://www.acs-college.com/course-doctor-of-medicine-surgery",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "6-year, 360-ECTS MD delivered on ACS's Malta campus, entirely in English, in academic partnership with the Medical University of Plovdiv (Bulgaria), which awards the final degree. On-campus delivery; clinical rotations in Malta or at accredited partner hospitals/institutions across Europe. Academic fee listed as EUR 15,500/year; intake window given as 5 February 2026 - 24 September 2026 (October 2026 start referenced on the homepage). FAQ section on the program page is explicitly marked as still being updated."
+      },
+      {
+        "label": "ACS official site - Degree Program in Dental Medicine",
+        "url": "https://www.acs-college.com/course-doctor-of-dental-medicine",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "6-year, 360-ECTS Dental Medicine degree, English-medium, same Medical University of Plovdiv partnership and degree-award structure as the MD. On-campus in Malta; clinical training in Malta or at accredited partner clinics elsewhere in Europe. Academic fee listed as EUR 15,500/year; same intake window as the MD programme. FAQ section explicitly marked as still being updated."
+      },
+      {
+        "label": "ACS official site - Medical University of Plovdiv partnership page",
+        "url": "https://www.acs-college.com/medica-university-of-plovdiv",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms the Medicine and Dental Medicine degrees are delivered on ACS's Malta campus but are awarded directly by the Medical University of Plovdiv, described as operating since 1945; ACS frames this as students earning the qualification 'without needing to relocate to Bulgaria.'"
+      },
+      {
+        "label": "ACS official site - Programmes overview page",
+        "url": "https://www.acs-college.com/programmes",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms MQF Level 7, 360 ECTS, 6-year duration and EUR 15,500/year fee for both the Medicine (MD) and Dental Medicine degrees; lists other ACS programmes (Dental Hygiene, Osteopathy, Physiotherapy, Psychology, Sport Physiotherapy, MBAs) that are separate from the health/clinical-regulator-tracked programmes covered on this page."
+      },
+      {
+        "label": "ACS official site - Accommodation page",
+        "url": "https://www.acs-college.com/accommodation",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "ACS operates dedicated student accommodation (Single Room, Twin Room, and limited-availability Studio options) with 24/7 security, on-site support, Wi-Fi, and utilities typically included; positioned as an ACS-supported option rather than open-market private rental."
+      },
+      {
+        "label": "Malta Government - Euroguidance Malta school profile: ASOMI College of Sciences",
+        "url": "https://euroguidance.gov.mt/euro_schools/asomi-college-of-sciences/",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent government-portal corroboration (Euroguidance Malta, under Malta's national guidance network) listing ASOMI College of Sciences under the 'Sciences / Health Care' sector, locality Pembroke, confirming its institutional description matches the college's own self-description."
+      },
+      {
+        "label": "Malta Quality Education - ASOMI College of Sciences Erasmus Charter case study",
+        "url": "https://www.maltaquality.education/portfolio/asomi-college-of-sciences/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent third-party consultancy case study confirming ASOMI College of Sciences (based in Malta) was awarded the Erasmus Charter for Higher Education (ECHE) 2021-2027 by the European Education and Culture Executive Agency (EACEA) on 16 July 2025, corroborating the ECHE claim made on ACS's own site."
+      },
+      {
+        "label": "Medlink Students - university directory listing (Malta / Medicine, Dentistry destinations)",
+        "url": "https://www.medlinkstudents.com/universities/asomi-college-of-sciences-malta/",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Independent study-abroad directory listing ASOMI College of Sciences under Malta with Medicine and Dentistry as its offered clinical programme areas, consistent with ACS's own programme pages."
+      },
+      {
+        "label": "WDOMS (World Directory of Medical Schools) - Medical University of Plovdiv school record",
+        "url": "https://search.wdoms.org/home/SchoolDetail/F0000373",
+        "kind": "recognition",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms the Medical University of Plovdiv (main location: Plovdiv, Bulgaria) is a WDOMS-listed medical school. WDOMS listing and related sourcing describe the university's location as Plovdiv, Bulgaria; no campus location in Malta is reflected in the medical school's own WDOMS/home-institution record, since the degree-awarding institution's recognised location is Bulgaria, not the ACS teaching site in Malta."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "ASOMI College of Sciences (ACS)",
+    "slug": "asomi-college-of-sciences-acs",
+    "city": "Pembroke",
+    "type": "Private",
+    "establishedYear": 2020,
+    "officialWebsite": "https://www.acs-college.com/",
+    "featured": false,
+    "bestFitFor": [
+      "Students who specifically want to study on ACS's Malta campus while being examined and graduated under the Medical University of Plovdiv's degree structure, and who are willing to independently verify how this cross-border partnership model is treated under India's foreign-medical-graduate recognition rules before enrolling",
+      "Students comfortable with a young, newly licensed private college (MFHEA-licensed since 2020) rather than a long-established public medical faculty, in exchange for a small-cohort, Mediterranean-based English-medium environment",
+      "Students who want a compact, English-speaking EU island base close to Malta's St Julian's/Sliema student and social hub, with ACS-managed accommodation options rather than needing to arrange private rentals independently",
+      "Students who are prepared to budget for the listed EUR 15,500/year tuition and reconfirm current fees, intake dates, and any additional Medical University of Plovdiv-side charges directly with ACS before applying",
+      "Students who will treat NMC/FMGE eligibility, and MFHEA/Plovdiv accreditation currency, as items to verify directly with official regulators rather than assuming automatic recognition, given that ACS's own program FAQ sections are still marked as under construction"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Degree in Medicine (Doctor of Medicine, MD) - awarded by Medical University of Plovdiv",
+        "officialProgramUrl": "https://www.acs-college.com/course-doctor-of-medicine-surgery",
+        "medium": "English",
+        "durationYears": 6,
+        "notes": "360-ECTS, 6-year MD delivered on ACS's Pembroke, Malta campus in academic partnership with the Medical University of Plovdiv, Bulgaria, which is the degree-awarding institution. Clinical rotations occur in Malta or at accredited partner hospitals/institutions elsewhere in Europe, per the official course page. Listed academic fee is EUR 15,500 per year; intake window listed as 5 February 2026 - 24 September 2026, with the homepage also referencing an October 2026 course start. IMPORTANT CAVEAT: this is a teach-out/partnership arrangement -- students study physically in Malta at ACS, while the MD is conferred by the Medical University of Plovdiv, whose own WDOMS-listed location is Plovdiv, Bulgaria. India's National Medical Commission (NMC) Foreign Medical Graduate Licentiate framework generally expects the full course of study, internship, and clinical training to be completed at a single foreign medical institution in the country where that institution is actually located and WDOMS-listed, with no part of training undertaken in a third country. Prospective Indian students must verify directly with NMC, and in writing with both ACS and the Medical University of Plovdiv, exactly how this Malta-based delivery model is treated for NMC screening/FMGE-NExT eligibility purposes before enrolling -- this page does not assert NMC recognition or FMGE eligibility for the Malta-delivered pathway, since that could not be independently corroborated during this research pass. The programme's official FAQ section is explicitly marked by ACS as still being updated."
+      },
+      {
+        "courseSlug": "bds",
+        "title": "Degree in Dental Medicine (Doctor of Dental Medicine) - awarded by Medical University of Plovdiv",
+        "officialProgramUrl": "https://www.acs-college.com/course-doctor-of-dental-medicine",
+        "medium": "English",
+        "durationYears": 6,
+        "notes": "360-ECTS, 6-year Dental Medicine degree delivered on ACS's Pembroke, Malta campus, in the same academic partnership and degree-award structure as the MD programme (final degree awarded by the Medical University of Plovdiv, Bulgaria). Clinical training occurs in Malta or at accredited partner dental clinics/institutions elsewhere in Europe. Listed academic fee is EUR 15,500 per year, with the same intake window as the MD programme. IMPORTANT CAVEAT: as with the MD programme above, this is a Malta-delivered, Bulgaria-degree-awarded partnership pathway. Indian students should independently verify with India's Dental Council/National Medical Commission framework and directly with ACS and the Medical University of Plovdiv how this specific delivery model is treated for Indian dental-degree recognition purposes before enrolling; this page does not assert Indian regulatory recognition for the Malta-delivered pathway. The programme's official FAQ section is explicitly marked by ACS as still being updated."
+      }
+    ],
+    "recognitionBadges": [],
+    "recognitionLinks": [],
+    "teachingHospitals": [],
+    "similarUniversitySlugs": [],
+    "researchNotes": "ASOMI College of Sciences (ACS) is a private Higher Education Institution licensed by Malta's Further and Higher Education Authority (MFHEA), Licence Number 2020-009 (per ACS's own About Us page, independently listed with a matching sector/locality description on the Malta government's Euroguidance portal). The 2020-009 licence format indicates MFHEA licensing from 2020, which this draft uses as the establishedYear (ACS's founding/licensing year); no earlier founding date was corroborated. ACS holds registered-office status at Navi Building, Pantar Road, Lija, Malta, and operates three educational campuses: Pembroke (Giorgio Mitrovich Street -- the main clinical-programme campus referenced by this draft's city field), Swieqi, and St Julian's. ACS was awarded the Erasmus Charter for Higher Education (ECHE) 2021-2027 by the EACEA, corroborated independently by a third-party Malta education consultancy's case study (dated July 2025) as well as ACS's own site. ACS's flagship regulated-profession programmes are a 6-year, 360-ECTS Doctor of Medicine (MD) and a 6-year, 360-ECTS Doctor of Dental Medicine, both delivered entirely in English on the Malta campus under an academic partnership with the Medical University of Plovdiv, Bulgaria -- a WDOMS-listed medical school (WDOMS record confirms Plovdiv, Bulgaria as its base). Under this partnership, ACS delivers the teaching in Malta while the Medical University of Plovdiv issues the final degree; ACS explicitly markets this as letting students avoid relocating to Bulgaria. This is the single most important structural fact for Indian applicants: India's NMC Foreign Medical Graduate Licentiate (FMGL) 2021 framework, as generally described in independent secondary sourcing, expects the entire course of study, clinical clerkship, and internship to be completed at one foreign medical institution located in the country where that institution is actually WDOMS-listed, without any part of the training happening in a third country -- which is exactly the structure of ACS's Malta-delivered, Bulgaria-awarded model. No official NMC statement specific to ACS or to this Malta-Plovdiv partnership could be found during this research pass, so this draft explicitly withholds any claim of NMC recognition or FMGE eligibility and instead instructs students to verify directly with NMC, ACS, and the Medical University of Plovdiv before enrolling. The same caution applies to the Dental Medicine degree with respect to Indian dental-recognition authorities. ACS also offers a wider range of non-clinical/allied-health programmes (Dental Hygiene, Osteopathy, Physiotherapy, Psychology, Sport Physiotherapy MSc, various MBAs) that are outside the mbbs/medical-pg/bsc-nursing/pharmacy/bds course-slug scope of this draft and are not covered here. No independent, corroborated MBBS/BDS-equivalent nursing or pharmacy programme was found at ACS (its own course catalogue does not list Nursing or Pharmacy degrees), so bsc-nursing and pharmacy course slugs are correctly omitted rather than fabricated. Tuition for both flagship programmes is listed at EUR 15,500 per year on ACS's own official pages; no independent third-party fee corroboration was found, so this figure should be treated as ACS's own quoted rate at time of research and reconfirmed directly before budgeting. ACS operates its own managed student accommodation (Single, Twin, and limited Studio rooms, with 24/7 security and utilities typically included) rather than requiring students to source private housing independently, per ACS's own accommodation page; no independent third-party review of this accommodation was found during this pass. Pembroke itself (per independent secondary sourcing, e.g. general Malta locality/student-life material) is a small, relatively new residential town in Malta's northeast, a short walk or bus ride from the busier St Julian's and Paceville nightlife/dining district and from Sliema's shopping and dining scene, giving ACS students easy access to Malta's main student and social hub despite Pembroke itself being quieter and more residential. Malta's broader safety profile (English/Maltese bilingual EU island nation, generally low-to-moderate crime by European comparison per general independent indices) provides reasonable context for the city profile and safety-overview narrative fields, though no ACS-specific security data beyond its own accommodation security claims was found. No dedicated Indian-student community or Indian-food-specific data point tied to ACS or Pembroke specifically was corroborated in this pass; the Indian food/community narrative is grounded conservatively in Malta's general modest-but-present Indian dining scene (concentrated more in Sliema/St Julian's than in Pembroke itself) rather than any ACS-specific claim.",
+    "recognitionNotes": "ACS is MFHEA-licensed (Malta Further and Higher Education Authority, Licence Number 2020-009) and holds the Erasmus Charter for Higher Education (ECHE) 2021-2027, both independently corroborated. Its Medicine and Dental Medicine degrees are awarded by the Medical University of Plovdiv (Bulgaria), a WDOMS-listed medical school based in Plovdiv -- not by ACS itself and not under an ACS-specific WDOMS listing for the Malta delivery site. Whether India's National Medical Commission (or, for dentistry, the corresponding Indian dental regulator) recognises this specific Malta-delivered, Bulgaria-awarded partnership pathway for FMGE/NExT or equivalent licensing purposes could not be independently corroborated during this research pass and is NOT asserted anywhere in this draft. Students must verify current NMC/regulator status directly before enrolling."
+  },
+  "draftContent": {
+    "summary": "ASOMI College of Sciences (ACS) is a private higher education institution on Malta's Pembroke campus, licensed by the Malta Further and Higher Education Authority (MFHEA, Licence Number 2020-009) and holder of the Erasmus Charter for Higher Education (ECHE) 2021-2027. Its flagship clinical programmes are a 6-year, 360-ECTS Doctor of Medicine (MD) and a 6-year, 360-ECTS Doctor of Dental Medicine, both taught entirely in English on the Malta campus under an academic partnership with the Medical University of Plovdiv in Bulgaria, which is the institution that actually confers the final degree. This delivery structure -- studying in Malta while graduating with a Bulgarian university's degree -- is the single most important thing Indian students need to understand and verify before applying, since India's foreign-medical-graduate recognition framework is generally built around completing an entire programme at one institution in the country where that institution is actually based and internationally listed. This page does not claim NMC, FMGE, or equivalent Indian regulatory recognition for ACS's Malta-delivered pathway, because that could not be independently confirmed; students must check directly with the National Medical Commission, and get written clarification from both ACS and the Medical University of Plovdiv, before committing. Listed academic fees for both programmes are EUR 15,500 per year, and ACS provides its own managed student accommodation near the Pembroke campus.",
+    "campusLifestyle": "ACS's clinical programmes are based at its Pembroke educational campus on Giorgio Mitrovich Street, one of three campuses the college operates in Malta alongside sites in Swieqi and St Julian's. As a young institution (MFHEA-licensed since 2020) with an Erasmus Charter for Higher Education, ACS positions itself around small-cohort teaching, English-medium instruction, and close academic-partner ties -- most notably with the Medical University of Plovdiv for its Medicine and Dental Medicine degrees. Because ACS is considerably newer and smaller than long-established public medical faculties, students should expect a compact campus community rather than a large multi-faculty university environment, with mentoring, academic support, and administrative guidance delivered directly by ACS staff alongside the academic standards set by its Plovdiv partner.",
+    "cityProfile": "Pembroke is a small, relatively new residential town in Malta's northeast, sitting just a short walk or quick bus ride from St Julian's and the Paceville nightlife district, and within easy reach of Sliema's shopping, dining, and waterfront scene. This gives ACS students a quieter, more residential home base while keeping Malta's busiest student and social hub close at hand for evenings, weekends, and everyday errands. Malta as a whole is a compact, English- and Maltese-speaking EU island nation with a Mediterranean climate of hot, dry summers and mild winters, and its small size means students can reach the capital Valletta, the airport, and other coastal towns quickly by bus or short taxi ride. Cost of living is generally presented as more moderate than major Western European capitals, though students should still budget for EU-level prices rather than assuming South Asian cost levels, and reconfirm current living-cost estimates before finalising a budget.",
+    "clinicalExposure": "Both the Medicine and Dental Medicine degrees combine theoretical and biomedical coursework with clinical training delivered on campus in Malta and through accredited partner hospitals, medical centres, and dental clinics elsewhere in Europe, per ACS's official programme pages. For Medicine, ACS describes rotations across departments including Internal Medicine, Surgery, Paediatrics, Obstetrics and Gynaecology, Emergency Medicine, and Psychiatry, supervised by qualified physicians, alongside simulation-lab training before students progress to patient-facing care. For Dental Medicine, ACS describes hands-on clinical placements at partner dental clinics and hospitals intended to build operative and diagnostic competence alongside academic coursework. Because both degrees are awarded by the Medical University of Plovdiv, the detailed clinical curriculum, rotation scheduling, and examination standards are ultimately governed by Plovdiv's own academic framework as applied to the Malta teaching site; applicants should request the current, detailed clinical-rotation schedule directly from ACS before enrolling, since ACS's own programme FAQ sections are still marked as under construction.",
+    "hostelOverview": "ACS operates its own dedicated student accommodation near its Malta campuses rather than leaving students to arrange private rentals independently. Options include a private Single Room (bed, desk, and wardrobe, with shared kitchen and bathroom), a Twin Room for students who prefer shared, more budget-friendly living, and a limited-availability Studio with a private kitchenette and bathroom for students wanting more independence. ACS states that its accommodation includes 24/7 security and controlled access, dedicated residence staff, reliable Wi-Fi throughout rooms and communal areas, and utilities typically included in the rent, with a stated goal of keeping housing costs affordable without compromising safety or comfort. Because this accommodation is ACS-managed rather than independently reviewed in this research pass, students should confirm current room availability, exact pricing, and lease terms directly with ACS's accommodation team before booking.",
+    "indianFoodSupport": "Pembroke itself is a small residential town without a large, established Indian community, so students should not expect an extensive Indian grocery or restaurant scene within the town itself. However, nearby St Julian's and Sliema -- both a short walk or bus ride from the Pembroke campus -- form Malta's busiest dining and social district and offer more food variety, including some Indian and South Asian dining options, than Pembroke alone. Malta overall does not have a large, long-established Indian student population on the scale of bigger European study destinations, so students who rely heavily on specific Indian ingredients or home-style cooking should expect to supplement supermarket shopping with occasional trips to specialty stores, and should reach out to any existing Indian or South Asian student groups at ACS or in Malta more broadly for current, first-hand guidance before arrival.",
+    "safetyOverview": "Malta is broadly regarded as a safe, EU-regulated island nation, and Pembroke's residential character, close to but distinct from the livelier St Julian's/Paceville nightlife strip, generally offers a calmer day-to-day environment for students. ACS's own accommodation is described as including 24/7 security, controlled access, and dedicated residence staff, which is a relevant safety point specific to ACS students rather than a general Malta-wide claim. As with any international move, students should still follow standard personal-safety practices, ensure they meet Malta's visa and residence-registration requirements as international students, and stay in touch with the nearest Indian diplomatic mission covering Malta for updated consular guidance throughout their stay.",
+    "studentSupport": "ACS states that it provides academic mentoring, counselling services, career guidance, and general wellbeing support to students on both the Medicine and Dental Medicine programmes, delivered by ACS's own staff alongside the academic standards set by its partner, the Medical University of Plovdiv. International applicants should work directly with ACS's admissions team for country-specific guidance, visa and residency support, and current entry-requirement details, since ACS's own programme FAQ sections are explicitly marked as still being updated at the time of this research. Given the Malta-delivery/Bulgaria-degree-award structure of both flagship programmes, Indian applicants in particular should treat direct, written confirmation from ACS, from the Medical University of Plovdiv, and from India's National Medical Commission as a required step before enrolling, rather than relying solely on marketing material from either institution, and should also consult India's nearest accredited diplomatic mission covering Malta for consular and visa guidance.",
+    "whyChoose": [
+      "English-medium, 6-year Medicine and Dental Medicine degrees delivered on a compact, small-cohort Malta campus, backed by an academic partnership with the WDOMS-listed Medical University of Plovdiv",
+      "MFHEA-licensed institution (Licence Number 2020-009) that has also secured the Erasmus Charter for Higher Education (ECHE) 2021-2027, both independently corroborated beyond ACS's own marketing",
+      "ACS-managed student accommodation near the Pembroke campus, with 24/7 security, on-site support staff, and utilities typically bundled into the rent, reducing the burden of independently sourcing private housing",
+      "Pembroke's quiet, residential character combined with easy walking/bus access to Malta's busiest student hub in St Julian's, Paceville, and Sliema for social life, dining, and everyday errands",
+      "A small, English-speaking Mediterranean EU island setting with generally moderate living costs relative to larger Western European capitals, and straightforward day-to-day English-language accessibility across Malta"
+    ],
+    "thingsToConsider": [
+      "The MD and Dental Medicine degrees are taught in Malta but formally awarded by the Medical University of Plovdiv in Bulgaria; this Malta-delivery/Bulgaria-degree-award structure must be independently verified with India's National Medical Commission for NMC screening, FMGE, or NExT eligibility before enrolling, since this page does not assert automatic recognition for the Malta-delivered pathway",
+      "ACS is a young institution, MFHEA-licensed only since 2020, and does not have the multi-decade or centuries-long track record of some public medical faculties in Europe, so applicants should weigh this against their own risk tolerance and research priorities",
+      "Both flagship clinical programmes' official FAQ sections are explicitly marked by ACS as still being updated at the time of this research, so several practical admissions and curriculum details should be confirmed directly and in writing with ACS before applying",
+      "Listed tuition is EUR 15,500 per year for both Medicine and Dental Medicine on ACS's own official pages; no independent third-party fee corroboration was found, so students should reconfirm the current-year figure, payment schedule, and any Plovdiv-side charges directly with ACS",
+      "Pembroke itself is a small, quiet residential town without an established Indian community or extensive Indian food scene; students who want that specifically should expect to travel to nearby St Julian's or Sliema rather than finding it within Pembroke",
+      "Accommodation is ACS-managed rather than independently reviewed in this research; students should confirm current room types, pricing, and lease terms directly with ACS's accommodation team before booking",
+      "Applicants for the Medicine and Dental Medicine programmes should note ACS's published legal notice that enrollment is subject to statutory and regulatory requirements for entry into regulated clinical professions, including possible criminal-record clearance documentation"
+    ],
+    "faq": [
+      {
+        "question": "Who actually awards the MD and Dental Medicine degrees at ASOMI College of Sciences (ACS)?",
+        "answer": "ACS delivers both the Medicine (MD) and Dental Medicine programmes on its Malta campus, but the final degree in both cases is awarded by ACS's academic partner, the Medical University of Plovdiv in Bulgaria, per ACS's own official programme and partnership pages. This means students study in Malta throughout but graduate holding a Medical University of Plovdiv qualification. Applicants should understand this structure clearly and confirm directly with both institutions exactly how it is documented on transcripts and diplomas."
+      },
+      {
+        "question": "Will an ACS Medicine or Dental Medicine degree be recognised by India's National Medical Commission (NMC) for FMGE/NExT eligibility?",
+        "answer": "This is not confirmed, and this page does not assert that it is. India's NMC generally expects the entire course of foreign medical study, including clinical training and internship, to be completed at a single foreign medical institution located in the country where that institution is actually based and internationally listed. Because ACS's Medicine and Dental Medicine programmes are delivered in Malta while the degree is awarded by the Medical University of Plovdiv (whose recognised base is Plovdiv, Bulgaria), Indian applicants must independently verify, in writing, with the NMC directly -- and separately with ACS and the Medical University of Plovdiv -- exactly how this specific partnership model is treated for NMC screening and FMGE/NExT eligibility before enrolling."
+      },
+      {
+        "question": "Is ASOMI College of Sciences a licensed, accredited institution?",
+        "answer": "Yes. ACS is licensed by Malta's Further and Higher Education Authority (MFHEA) under Licence Number 2020-009, which independent government-portal listings corroborate, and it has also been awarded the Erasmus Charter for Higher Education (ECHE) 2021-2027 by the EACEA, confirmed by an independent third-party case study in addition to ACS's own site. This licensing and Erasmus recognition apply to ACS as a Maltese higher-education institution; it is separate from, and does not itself establish, Indian regulatory recognition of degrees earned through the Medical University of Plovdiv partnership."
+      },
+      {
+        "question": "How much do the Medicine and Dental Medicine programmes cost at ACS?",
+        "answer": "ACS's official course pages list an academic fee of EUR 15,500 per year for both the 6-year Medicine (MD) and 6-year Dental Medicine programmes, current at the time of this research. No independent third-party fee corroboration was found, so applicants should reconfirm the current-year figure, payment schedule, and whether any additional charges apply from the Medical University of Plovdiv side, directly with ACS before budgeting."
+      },
+      {
+        "question": "Where do ACS students live, and does the college provide accommodation?",
+        "answer": "ACS operates its own managed student accommodation near its Malta campuses, offering Single Room, Twin Room, and limited-availability Studio options, with 24/7 security, on-site support staff, Wi-Fi, and utilities typically included in the rent. This is presented as an ACS-run option rather than independent private rental, though students should confirm current pricing, room types, and lease terms directly with ACS's accommodation team, since this was not independently reviewed by a third party during this research pass."
+      },
+      {
+        "question": "What is it like to live in Pembroke, Malta, as an international student?",
+        "answer": "Pembroke is a small, relatively new residential town in Malta's northeast. It is quieter than neighbouring areas but sits a short walk or quick bus ride from St Julian's and Paceville, Malta's busiest nightlife and dining district, and from Sliema's shopping and waterfront scene. This gives ACS students a calmer home base while keeping Malta's main student social hub within easy reach, alongside the wider benefits of Malta's English-speaking, compact, EU-island setting."
+      },
+      {
+        "question": "Does ACS offer MBBS-equivalent Nursing or Pharmacy degrees for Indian students?",
+        "answer": "No corroborated Nursing or Pharmacy degree programme was found in ACS's own course catalogue during this research; its confirmed programme range centres on Medicine, Dental Medicine, Dental Hygiene, Osteopathy, Physiotherapy, Psychology, Sport Physiotherapy, and various MBAs. Students specifically seeking a Nursing or Pharmacy pathway in Malta should look at other Malta-based institutions and should not assume ACS offers these programmes."
+      }
+    ]
+  }
+}

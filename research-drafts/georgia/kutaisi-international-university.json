@@ -1,0 +1,129 @@
+{
+  "countrySlug": "georgia",
+  "universitySlug": "kutaisi-international-university",
+  "schoolName": "Kutaisi International University",
+  "cityName": "Kutaisi",
+  "priority": "medium",
+  "officialWebsite": "https://kiu.edu.ge/",
+  "programUrl": "https://www.kiu.edu.ge/eng/program/detailed/495/About-Program",
+  "admissionUrl": "https://www.kiu.edu.ge/eng/admission",
+  "qualityScore": 82,
+  "reviewNotes": "Auto-researched from KIU official program/admission pages, Wikipedia, and Georgia's NCEQE (eqe.ge) accreditation reports. Tuition omitted: official tuition/living page returned no readable figures and agent-portal fee figures were not treated as reliable. NMC/WHO recognition NOT asserted (only claimed by third-party agent portals, not the official site or a regulator); students are told to verify eligibility independently. Note: several web sources conflate KIU (public, kiu.edu.ge, founded 2020, TUM partnership) with the unrelated private 'Kutaisi University' (UNIK) and 'Central University of Europe' - facts here are scoped to KIU only.",
+  "verifiedAt": "2026-07-07",
+  "sourceBundle": {
+    "sources": [
+      {
+        "label": "Kutaisi International University - School of Medicine, About Program (official)",
+        "url": "https://www.kiu.edu.ge/eng/program/detailed/495/About-Program",
+        "kind": "official-program",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms Medical Doctor (MD) degree, English language of instruction, 12-semester (6-year) / 360-ECTS duration, and double diploma with University of Naples Federico II."
+      },
+      {
+        "label": "Kutaisi International University - Admission (official)",
+        "url": "https://www.kiu.edu.ge/eng/admission",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Confirms KIU opened its first cohort in fall 2020, is located in Kutaisi, operates in partnership with the Technical University of Munich (TUM), and partners with University of Naples Federico II and University of Bamberg."
+      },
+      {
+        "label": "Kutaisi International University - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kutaisi_International_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07",
+        "notes": "Public research university, established/opened 2020, Kutaisi (Imereti), 1500+ students, honorary president Wolfgang A. Herrmann (former TUM president), rector Vakhtang Tsagareli, TUM strategic partnership, lists a Single-Cycle program in Medicine."
+      },
+      {
+        "label": "NCEQE / National Center for Educational Quality Enhancement - accreditation expert report (Georgia regulator, eqe.ge)",
+        "url": "https://eqe.ge/media/28417/Kutaisi-New-MD-program-in-Tbilisi-review-report-5-Dec.-2024.pdf",
+        "kind": "government",
+        "checkedAt": "2026-07-07",
+        "notes": "Georgian national quality-assurance body accreditation review documentation for KIU's MD program (6-year / 360-credit single-cycle qualified-doctor program following ECTS)."
+      }
+    ]
+  },
+  "structuredFacts": {
+    "name": "Kutaisi International University",
+    "slug": "kutaisi-international-university",
+    "city": "Kutaisi",
+    "type": "Public",
+    "establishedYear": 2020,
+    "officialWebsite": "https://kiu.edu.ge/",
+    "bestFitFor": [
+      "Students seeking an English-taught, single-cycle Medical Doctor (MD) degree at a young public university in Georgia",
+      "Applicants attracted to KIU's international academic partnerships (Technical University of Munich; double diploma with University of Naples Federico II)",
+      "Students who prefer a smaller, modern campus city (Kutaisi) over a large metropolitan capital",
+      "Indian and international students comfortable independently verifying home-country licensing eligibility (NMC/NEET/FMGE) before enrolling"
+    ],
+    "programs": [
+      {
+        "courseSlug": "mbbs",
+        "title": "Medical Doctor (MD) - Single-Cycle Program in Medicine",
+        "officialProgramUrl": "https://www.kiu.edu.ge/eng/program/detailed/495/About-Program",
+        "medium": "English",
+        "durationYears": 6,
+        "intakeMonths": ["September"],
+        "feeNotes": "Official tuition and living-cost figures were not readable on KIU's public tuition page at the time of research, so no fee amount is published here. Confirm current tuition, living costs, and payment schedule directly with KIU admissions before applying.",
+        "sourceUrls": [
+          "https://www.kiu.edu.ge/eng/program/detailed/495/About-Program",
+          "https://www.kiu.edu.ge/eng/admission"
+        ]
+      }
+    ],
+    "recognitionLinks": [
+      {
+        "label": "KIU School of Medicine - MD program (official)",
+        "url": "https://www.kiu.edu.ge/eng/program/detailed/495/About-Program"
+      },
+      {
+        "label": "NCEQE accreditation review report (Georgia regulator)",
+        "url": "https://eqe.ge/media/28417/Kutaisi-New-MD-program-in-Tbilisi-review-report-5-Dec.-2024.pdf"
+      }
+    ],
+    "similarUniversitySlugs": []
+  },
+  "draftContent": {
+    "summary": "Kutaisi International University (KIU) is a public research university in Kutaisi, western Georgia, that opened its doors to its first students in the autumn of 2020. It was developed in strategic partnership with the Technical University of Munich (TUM), and its honorary president is Wolfgang A. Herrmann, a former TUM president. KIU's School of Medicine runs an English-taught, single-cycle Medical Doctor (MD) program spanning 12 semesters (six years) and 360 ECTS credits, delivered in collaboration with the University of Naples Federico II, whose graduates receive diplomas from both institutions. Because KIU is a relatively new medical faculty, prospective international students - including those from India - should treat it as an emerging option and independently confirm its current accreditation status and their own home-country licensing pathway before committing.",
+    "campusLifestyle": "KIU is built as a modern, purpose-designed campus on a large landholding on the edge of Kutaisi, planned around the operating model KIU developed with the Technical University of Munich. The university describes itself as aiming to become a regional hub for education, science and technology, and it teaches its degree programs, including medicine, in English. With a reported student body of roughly 1,500 and a mix of Georgian and international students, campus life centers on academic facilities, laboratories and a growing set of student activities rather than a large legacy university-town culture. Students should expect a newer institution still expanding its facilities and traditions rather than a centuries-old campus.",
+    "cityProfile": "Kutaisi is one of Georgia's oldest and largest cities and the administrative center of the Imereti region in the country's west. It is smaller and more affordable than the capital, Tbilisi, and is known for historic sites such as the Bagrati Cathedral and Gelati Monastery, as well as proximity to natural attractions like the Prometheus and Sataplia caves. Kutaisi has its own international airport with budget-airline connections to several European cities, which can make travel to and from home more convenient. The pace of life is quieter than in Tbilisi, and day-to-day costs for food, transport and essentials are generally modest by European standards.",
+    "clinicalExposure": "KIU's medical program is a single-cycle MD delivered in partnership with the University of Naples Federico II, and the university highlights a mix of theoretical study and practical, hands-on training in association with its Italian partner. As with Georgian single-cycle medical degrees generally, the six-year, 360-ECTS structure combines pre-clinical study in the early years with clinical training in the later years. Because KIU's medical faculty is new, applicants should ask admissions directly for specifics on which teaching hospitals and clinical sites current students rotate through, the balance between simulation-based and bedside training, and how clinical placements are supervised, so they can judge the depth of hands-on exposure for themselves.",
+    "hostelOverview": "KIU is a modern, purpose-built campus, and international students typically arrange either on-campus/university-affiliated accommodation or private rented housing in Kutaisi. Because published, verified details of KIU's student housing (room types, occupancy, catering and current charges) were not available at the time of research, prospective students should request the university's official accommodation options, costs and application steps from KIU admissions, and confirm whether housing is guaranteed for first-year international students. Rental housing in Kutaisi is generally more affordable than in Tbilisi, which can be a factor for students comparing living costs across Georgian cities.",
+    "indianFoodSupport": "As a mid-sized Georgian city, Kutaisi has local markets, supermarkets and restaurants where students can buy vegetables, rice, lentils, spices and other staples to cook familiar meals, and Georgian cuisine itself includes many vegetarian-friendly dishes. Dedicated Indian restaurants and grocery stores are far fewer than in Tbilisi, so students who rely on specific Indian ingredients often self-cater and stock up during trips to the capital. Prospective students who follow vegetarian, halal or other specific diets should plan to cook for themselves and confirm kitchen access in their chosen accommodation.",
+    "safetyOverview": "Georgia is generally regarded as a safe country for international students, with low levels of violent crime, and Kutaisi is a relatively quiet regional city. As anywhere, students should take normal precautions - safeguarding documents and valuables, being cautious at night and using reputable transport. International students should keep their passport, residence permit and university registration documents in order, register as required by Georgian immigration rules, and stay in contact with the university's international student office and, where relevant, their home-country embassy for consular support.",
+    "studentSupport": "KIU positions itself as an internationally oriented university built on its partnership with the Technical University of Munich, and it teaches in English, which lowers the language barrier for international students in the classroom. Support typically includes admissions guidance for international applicants, help with enrollment, and academic support structures associated with a modern university. Because KIU is still a young institution, prospective students should ask specifically about the size and services of the international student office, help with visas and residence permits, orientation, and academic mentoring, so they know what practical support to expect on arrival.",
+    "whyChoose": [
+      "English-taught single-cycle Medical Doctor (MD) program, removing the need to study medicine in Georgian",
+      "Public university developed in strategic partnership with the Technical University of Munich (TUM), one of Europe's leading technical universities",
+      "Double-diploma arrangement with the University of Naples Federico II, so graduates receive diplomas from both KIU and its Italian partner",
+      "Modern, purpose-built campus in Kutaisi, a comparatively affordable Georgian city with its own international airport"
+    ],
+    "thingsToConsider": [
+      "KIU's medical faculty is new (the university itself only opened in 2020), so it lacks the long track record of older Georgian medical schools",
+      "Tuition and living costs are not published on this page because official figures were not verifiable at research time - confirm all costs directly with KIU before applying",
+      "Recognition claims made by third-party agents (e.g. WHO/NMC listings) should not be taken at face value; verify KIU's current accreditation and your home-country licensing pathway (for Indian students, NMC eligibility, NEET qualification and the FMGE/NExT screening test) with the official regulators",
+      "Details on clinical rotation hospitals and student accommodation were limited at research time and should be confirmed with the university"
+    ],
+    "faq": [
+      {
+        "question": "Is the medical program at Kutaisi International University taught in English?",
+        "answer": "Yes. KIU's official School of Medicine page states that its single-cycle Medical Doctor (MD) program is delivered in English, with the language of instruction listed as English."
+      },
+      {
+        "question": "How long is the MD program and how is it structured?",
+        "answer": "KIU's official program page lists the medicine program as 12 semesters (six years) covering 360 ECTS credits. It is a single-cycle qualified-doctor program that combines pre-clinical study with clinical training in the later years, delivered in collaboration with the University of Naples Federico II."
+      },
+      {
+        "question": "Is Kutaisi International University a public or private university, and when was it founded?",
+        "answer": "KIU is a public research university in Kutaisi, Georgia. It opened to its first cohort of students in the autumn of 2020 and was developed in strategic partnership with the Technical University of Munich (TUM)."
+      },
+      {
+        "question": "Can Indian students study MBBS at KIU and practise in India afterwards?",
+        "answer": "KIU offers a single-cycle MD in medicine that is broadly equivalent to an MBBS. However, eligibility to practise in India depends on meeting India's National Medical Commission (NMC) requirements, having qualified in NEET, and clearing the FMGE/NExT screening examination. Because KIU's medical faculty is new, Indian applicants should independently verify its current recognition status and their licensing pathway with the NMC before enrolling rather than relying on agent claims."
+      },
+      {
+        "question": "How much does it cost to study medicine at KIU?",
+        "answer": "Verified official tuition and living-cost figures were not available on KIU's public pages at the time this profile was compiled, so no amount is published here. Contact KIU admissions directly for the current tuition fee, living-cost estimates and payment schedule."
+      }
+    ]
+  }
+}
