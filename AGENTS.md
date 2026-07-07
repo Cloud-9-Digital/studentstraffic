@@ -10,4 +10,4 @@ Before writing or revising admissions, scholarship, or SEO landing-page content,
 
 ## University/program data pipeline
 
-Before adding, researching, or publishing universities or programs, read `docs/university-pipeline-architecture.md` (schema + pipeline mechanics) and `docs/university-expansion-plan.md` (strategy, sequencing, country priority) instead of re-deriving them from source. Update the relevant doc in the same change whenever the schema, pipeline scripts, scope, priority queue, or editorial publish/hold rules change.
+Before adding, researching, or publishing universities or programs, read `docs/university-pipeline-architecture.md` (schema + pipeline mechanics), `docs/university-expansion-plan.md` (strategy, sequencing, country priority), and `docs/university-content-spec.md` (minimum content depth/structure per field — recognition badges, narrative field decomposition, FAQ count and coverage). Update the relevant doc in the same change whenever the schema, pipeline scripts, scope, priority queue, editorial publish/hold rules, or content depth bar change.
