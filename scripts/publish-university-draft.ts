@@ -333,6 +333,20 @@ function validateDraft(record: DraftRecord) {
     }
   }
 
+  // `summary` renders as the hero paragraph — above the fold, the one field every visitor
+  // actually reads regardless of scroll depth. Content passes tend to under-serve it relative to
+  // the other narrative fields (see docs/university-content-spec.md, audited 2026-07-09: a batch
+  // of "expanded" universities still averaged only ~970 characters here vs. a ~2,000-2,800
+  // character / 300-450 word target). Gate at 1,500 chars — below the target but well above what
+  // slips through unnoticed otherwise — to force a second pass on genuinely thin summaries without
+  // being so strict it blocks every draft outright.
+  const summaryValue = asString(draftContent.summary);
+  if (summaryValue && summaryValue.length < 1500) {
+    issues.push(
+      `Draft content field "summary" is only ${summaryValue.length} characters — this is the hero paragraph and needs ~2,000-2,800 characters (300-450 words) per docs/university-content-spec.md, not parity with the other narrative fields.`,
+    );
+  }
+
   const whyChoose = asStringArray(draftContent.whyChoose);
   const thingsToConsider = asStringArray(draftContent.thingsToConsider);
   const bestFitFor = asStringArray(structuredFacts.bestFitFor);

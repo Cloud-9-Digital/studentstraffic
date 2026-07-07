@@ -60,7 +60,27 @@ from early templated batch scripts. Cleaned up, but the pattern must not recur:
 - Facts about clinical/industry partnerships (e.g. a named teaching hospital or company partnership)
   belong in `clinicalExposure`/`teachingHospitals`, not `recognitionBadges`, even when true.
 
-### Narrative fields (`summary`, `campusLifestyle`, `clinicalExposure`, `hostelOverview`,
+### `summary` — the hero field, needs outsized attention
+
+`summary` renders as the hero paragraph — the large text directly under the page title, above the
+fold, before any scrolling. It is the one field every visitor actually reads, unlike the other
+narrative fields further down the page that depend on scroll depth. **Audited this specifically
+2026-07-09 after a batch of "expanded" universities still averaged only ~970 characters (~150-160
+words) here** — DIT Deggendorf's reference `summary` runs ~2,700+ characters (~450 words). A
+content pass that decomposes facts evenly across all 7 narrative fields under-serves `summary`
+specifically, since it competes with campusLifestyle/hostelOverview/etc. for the same research
+facts instead of getting a disproportionate share.
+
+**Target: 300-450 words (~2,000-2,800 characters) for `summary`.** It should function as a
+standalone, complete mini-profile — founding year, size, ranking/reputation context if genuine,
+program structure basics, cost headline, and at least one honest, specific, non-flattering data
+point where one exists (e.g. Sechenov's summary in our own DB already does this well: it states its
+2024 FMGE pass rate is *below* the national average, rather than only citing its prestigious global
+ranking — that specificity and honesty is the right pattern, it just needs 2-3x more length around
+it). When revising a university already in the DB, treat `summary` as the field to expand first and
+most, not evenly with the others.
+
+### Other narrative fields (`campusLifestyle`, `clinicalExposure`, `hostelOverview`,
 `indianFoodSupport`, `safetyOverview`, `studentSupport`) — decompose, don't compress
 Each field should read like DIT's dedicated sub-sections, not one generic paragraph:
 - `campusLifestyle`: physical campus facts (founding year, student count, % international,
