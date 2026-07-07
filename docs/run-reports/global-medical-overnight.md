@@ -220,3 +220,37 @@ Sources: https://dentistry.usask.ca/, https://admissions.usask.ca/dentistry.php,
 3. **Quick-fix holds (citation/figure corrections only):** Humanitas University (fix two 404 URLs), Università Campus Bio-Medico di Roma (fix establishedYear to 1993), Kauno Kolegija (fix two dead `/en/` links to `/english/`, correct dormitory floor price to EUR 80), Hochschule Bremen Nursing (fix/replace the semester-fee citation and figure), Vita-Salute San Raffaele (add missing citations for indianFoodSupport/safetyOverview/scholarship claims, drop or verify karangupta.com).
 4. **Correctly held, no action needed unless facts change:** Georgia (GANC, BMEDA — both vocational-only, no path to publish), Vietnam (5 institutions — all lack English-medium/international admissions tracks; revisit if any launches one), Lithuania VIKO (revisit only if an English-medium nursing track is confirmed), Canada (all 3 dentistry colleges — structurally citizenship/PR-gated at entry level; revisit only if IDDP-equivalent entry-level policy changes).
 5. All held drafts have companion `.md` research records alongside their `.json` files in `research-drafts/<country>/` for full audit trail and resumability without re-research.
+
+---
+
+## Follow-up resolution (2026-07-07)
+
+All items in the "Quick-fix hold" and "Schema fix needed" follow-ups above were resolved:
+
+- **Schema fix:** `program_offerings.duration_years` migrated from `integer` to `numeric(4,1)`
+  (`drizzle/0051_program_offering_duration_years_numeric.sql`). **IMU Kyrgyzstan** (queue-id 80,
+  draft-id 86) republished successfully — live at `/university/international-medical-university`.
+- **UNIZKM (Albania):** corrected to reflect the real English-taught Medicine and Surgery program
+  (EUR 5,360/year, Tor Vergata joint diploma). Live at
+  `/university/catholic-university-our-lady-of-good-counsel-unizkm`.
+- **Humanitas University (Italy):** fixed two dead URLs, softened the Nobel-laureate faculty claim
+  to visiting-professor/advisory-board status. Live at `/university/humanitas-university`.
+- **Università Campus Bio-Medico di Roma (Italy):** corrected establishedYear to 1993. Live at
+  `/university/universita-campus-bio-medico-di-roma`.
+- **Vita-Salute San Raffaele (Italy):** fixed uncited/mismatched claims (Indian restaurants, safety
+  areas, OSAP/DSU scholarship sourcing), dropped the unverifiable karangupta.com source and the
+  unverifiable OSAP-specific claim. Live at `/university/vita-salute-san-raffaele-university`.
+- **Kauno Kolegija (Lithuania):** fixed two dead `/en/` links (correct path is `/english/`) and
+  corrected dormitory floor price to EUR 80/month. Live at
+  `/university/kauno-kolegija-kaunas-university-of-applied-sciences`.
+- **Hochschule Bremen Nursing (Germany):** replaced the misattributed EUR 443 (Universität Bremen)
+  semester-fee figure with HSB's own EUR 418.90 figure, sourced from HSB's own Fachschaften body.
+  Live at `/university/hochschule-bremen-city-university-of-applied-sciences`.
+
+Note: none of these 6 non-schema fixes had existing `university_research_queue`/
+`universityResearchDrafts` rows — each required `scripts/seed-nonwdoms-draft.ts --file <path>` before
+`publish-university-draft.ts` could run. See "Known issues" in
+`docs/university-pipeline-architecture.md`.
+
+All 11 "correctly held, no action needed" items (Georgia x2, Vietnam x5, Lithuania VIKO, Canada x3)
+remain held — no facts have changed for those.

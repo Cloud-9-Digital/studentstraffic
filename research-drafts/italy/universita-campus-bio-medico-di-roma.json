@@ -51,7 +51,7 @@
         "url": "https://en.wikipedia.org/wiki/Universit%C3%A0_Campus_Bio-Medico",
         "kind": "other",
         "checkedAt": "2026-07-07",
-        "notes": "Corroborates 1991 legal establishment / 1993 first degree courses, Opus Dei-linked promotion, Trigoria campus (2008), Catholic religious affiliation, and university hospital details."
+        "notes": "Corroborates 1993 establishment (promoting Campus Bio-Medico Association/S.p.A. formed in 1990; first degree courses in medicine and nursing began October 1993), Opus Dei-linked promotion, Trigoria campus (2008), Catholic religious affiliation, and university hospital details."
       },
       {
         "label": "TopUniversities profile – Università Campus Bio-Medico di Roma",
@@ -60,11 +60,18 @@
         "checkedAt": "2026-07-07"
       },
       {
+        "label": "UCBM – Mission and History (official)",
+        "url": "https://www.unicampus.it/en/ateneo/mission-and-history/",
+        "kind": "official-university",
+        "checkedAt": "2026-07-07",
+        "notes": "Official account of the university's founding: Campus Bio-Medico Association and Campus Bio-Medico S.p.A. formed in 1990 to promote the university; first degree courses (medicine and surgery, nursing) began in October 1993, which is treated as the university's establishment year. Used to correct an earlier draft figure (1991) traced to an unreliable secondary source (MedlinkStudents), which is no longer cited for this fact."
+      },
+      {
         "label": "MedlinkStudents profile – Campus Bio-Medico University of Rome",
         "url": "https://www.medlinkstudents.com/universities/campus-bio-medico-university-rome/",
         "kind": "other",
         "checkedAt": "2026-07-07",
-        "notes": "Independent study-abroad consultancy profile, used only as a corroborating cross-check for program/fee framing, not as a primary fact source."
+        "notes": "Independent study-abroad consultancy profile, used only as a corroborating cross-check for program/fee framing, not as a primary fact source. Not used for the establishment year, since it previously stated an incorrect 1991 founding date contradicted by the official site and Wikipedia."
       }
     ]
   },
@@ -72,7 +79,7 @@
     "name": "Università Campus Bio-Medico di Roma",
     "city": "Rome",
     "type": "Private",
-    "establishedYear": 1991,
+    "establishedYear": 1993,
     "officialWebsite": "https://www.unicampus.it/en/",
     "bestFitFor": [
       "Indian students who want a small, hospital-integrated private medical university in Rome rather than a large public faculty",
@@ -99,7 +106,7 @@
     ]
   },
   "draftContent": {
-    "summary": "Università Campus Bio-Medico di Roma (UCBM) is a private university in Rome founded in 1991, with its first degree courses in medicine and nursing starting in 1993. It grew out of an initiative supported by Opus Dei and is organised as three departmental faculties — Medicine, Surgery and Dentistry; Engineering; and Science and Biotechnology — built around its own university hospital (Policlinico Universitario Campus Bio-Medico). For Indian and other international applicants, UCBM offers a 6-year, English-medium single-cycle Master's Degree in Medicine and Surgery (LM-41), taught alongside a parallel English-medium \"MedTech\" track, both distinct from a separate Italian-medium Medicine and Surgery cohort run for domestic and EU applicants. Entry to the English-medium program is by a dedicated written admission test (logic, biology, chemistry, and maths/physics, entirely in English) with a limited number of seats reserved for non-EU applicants each year. Official tuition is EUR 18,000 per academic year, with merit- and income-based scholarships available. Students weighing this option should independently verify current-year seat numbers, fee figures, and — critically — how a UCBM MD degree is treated by India's National Medical Commission and the FMGE/NExT licensing process before committing, since this research pass could not locate an official NMC registry confirmation either way.",
+    "summary": "Università Campus Bio-Medico di Roma (UCBM) is a private university in Rome established in 1993, when its first degree courses in medicine and nursing began, after the promoting Campus Bio-Medico Association and Campus Bio-Medico S.p.A. were formed in 1990. It grew out of an initiative supported by Opus Dei and is organised as three departmental faculties — Medicine, Surgery and Dentistry; Engineering; and Science and Biotechnology — built around its own university hospital (Policlinico Universitario Campus Bio-Medico). For Indian and other international applicants, UCBM offers a 6-year, English-medium single-cycle Master's Degree in Medicine and Surgery (LM-41), taught alongside a parallel English-medium \"MedTech\" track, both distinct from a separate Italian-medium Medicine and Surgery cohort run for domestic and EU applicants. Entry to the English-medium program is by a dedicated written admission test (logic, biology, chemistry, and maths/physics, entirely in English) with a limited number of seats reserved for non-EU applicants each year. Official tuition is EUR 18,000 per academic year, with merit- and income-based scholarships available. Students weighing this option should independently verify current-year seat numbers, fee figures, and — critically — how a UCBM MD degree is treated by India's National Medical Commission and the FMGE/NExT licensing process before committing, since this research pass could not locate an official NMC registry confirmation either way.",
     "campusLifestyle": "UCBM's main campus is in Trigoria, on the southern edge of Rome bordering the Regional Park of Decima-Malafede — a quieter, greener suburban setting rather than the historic city centre, reached by university shuttle and local transport links into Rome. The campus was inaugurated in 2008 on land partly donated by actor Alberto Sordi and houses teaching buildings, the Advanced Research Center in Biomedicine and Bioengineering, a chapel, a university canteen, and the university hospital itself, so pre-clinical and clinical life happens largely on one integrated site. Campus life includes a student theatre laboratory, a university choir, a chamber ensemble, sports activities, cultural visits, and an annual \"Campus' Got Talent\" event, reflecting a small, close-knit student body (official figures put total enrolment at roughly 2,600–2,700 students across all faculties) rather than a sprawling multi-campus university.",
     "cityProfile": "Rome is Italy's capital and largest city, with a metropolitan population above four million, and is one of the world's most visited cities for its classical, Renaissance and Baroque heritage alongside a modern capital's transport, healthcare and business infrastructure. For a student based at UCBM's Trigoria campus, day-to-day city life is a mix of a residential southern suburb (with supermarkets, local transport, and the Fonte Laurentina area where affiliated student housing sits) and easy onward access to central Rome's historic core, museums, and international airport connections (Fiumicino and Ciampino) for holiday travel back to India. English is widely used in tourist and university-adjacent areas, but everyday administrative, medical, and social life in Rome runs mainly in Italian, so building conversational Italian is genuinely useful even on an English-medium degree.",
     "clinicalExposure": "UCBM's defining feature is that its own university hospital, the Policlinico Universitario Campus Bio-Medico, sits on the same campus as the teaching buildings and operates under an agreement with Italy's National Health Service (Servizio Sanitario Nazionale), with outpatient, day-hospital, day-surgery and inpatient departments organised by intensity of care and more than thirty operating units. The English-medium Medicine and Surgery (LM-41) curriculum is structured over 12 semesters: the first two years cover pre-clinical sciences (anatomy, physiology, biochemistry, genetics) through lab-based and practical teaching, clinical rotations begin from the third year integrating pharmacology, diagnostic imaging and pathology with core clinical subjects, and the sixth year emphasises hands-on involvement in emergency medicine, general surgery, and general/family medicine. Because the hospital is embedded in the campus rather than an external affiliated site, students get comparatively early and continuous contact with real patients and clinical staff as part of the university's own teaching-hospital model.",

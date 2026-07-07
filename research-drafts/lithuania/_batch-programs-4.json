@@ -1,0 +1,40 @@
+[
+  {
+    "universitySlug": "klaipeda-state-university-of-applied-sciences",
+    "courseSlug": "bsc-nursing",
+    "title": "General Practice Nursing",
+    "durationYears": 3.5,
+    "medium": "English",
+    "officialProgramUrl": "https://www.kvk.lt/en/program/general-practice-nursing/",
+    "annualTuitionUsd": 3835,
+    "officialFeeCurrency": "EUR",
+    "officialAnnualTuitionAmount": 3540,
+    "intakeMonths": ["September"],
+    "feeNotes": "Tuition €3,540/year (English-medium international track) plus a one-time €120 application fee, per apply.kvk.lt. English proficiency minimum B1 required (IELTS 4.5-5.0 / TOEFL iBT 42-71); Duolingo not accepted.",
+    "feeVerifiedAt": "2026-07-07",
+    "sourceUrls": [
+      "https://www.kvk.lt/en/program/general-practice-nursing/",
+      "https://apply.kvk.lt/courses/course/13-general-practice-nursing",
+      "https://studyin.lt/programs/general-practice-nursing-6/"
+    ]
+  },
+  {
+    "universitySlug": "siauliai-state-university-of-applied-sciences-siauliu-valstybine-kolegija",
+    "courseSlug": "bsc-nursing",
+    "title": "General Practice Nursing",
+    "durationYears": 3.5,
+    "medium": "English",
+    "officialProgramUrl": "https://svako.lt/en/degree-studies/study-programmes/health-sciences/general-practice-nursing",
+    "annualTuitionUsd": 3685,
+    "officialFeeCurrency": "EUR",
+    "officialAnnualTuitionAmount": 3400,
+    "intakeMonths": ["September"],
+    "feeNotes": "2026 international-student tuition table on svako.lt lists General Practice Nursing (English medium) at €3,400/year. Independent studyin.lt listing shows a prior-year non-EU figure of €3,300/year.",
+    "feeVerifiedAt": "2026-07-07",
+    "sourceUrls": [
+      "https://svako.lt/en/degree-studies/study-programmes/health-sciences/general-practice-nursing",
+      "https://svako.lt/en/degree-studies/admission",
+      "https://old.studyin.lt/programs/general-practice-nursing-3/"
+    ]
+  }
+]

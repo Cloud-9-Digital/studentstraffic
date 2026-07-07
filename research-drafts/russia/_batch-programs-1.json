@@ -1,0 +1,64 @@
+[
+  {
+    "universitySlug": "buryat-state-university-medical-institute",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Lechebnoye Delo) — Specialist Degree",
+    "durationYears": 6,
+    "medium": "Russian",
+    "officialProgramUrl": "https://www.bsu.ru/university/napravleniya-podgotovki/310501/",
+    "intakeMonths": ["September"],
+    "sourceUrls": [
+      "https://www.bsu.ru/university/napravleniya-podgotovki/310501/",
+      "https://www.bsu.ru/university/departments/institutes/mi/",
+      "https://www.bsu.ru/abit/international/",
+      "https://www.ucheba.ru/program/480222"
+    ]
+  },
+  {
+    "universitySlug": "kaluga-state-university-medical-institute",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Lechebnoye Delo) — Specialist Degree",
+    "durationYears": 6,
+    "medium": "Russian",
+    "officialProgramUrl": "https://tksu.ru/en/about_the_university/faculties/m1/",
+    "intakeMonths": ["September"],
+    "sourceUrls": [
+      "https://tksu.ru/en/about_the_university/faculties/m1/",
+      "https://tksu.ru/en/admission/training/",
+      "https://tabiturient.ru/vuzu/tksu/proxodnoi/?1244",
+      "https://en.wikipedia.org/wiki/Kaluga_State_University"
+    ]
+  },
+  {
+    "universitySlug": "khakasia-state-university-medical-faculty",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Lechebnoye Delo) — Specialist Degree",
+    "durationYears": 6,
+    "medium": "Russian",
+    "officialProgramUrl": "https://khsu.ru/abitur/special/sprogr/31.05.01_lechebnoe_delo_okazanie_pervichnoj_pomoshi",
+    "intakeMonths": ["September"],
+    "sourceUrls": [
+      "https://khsu.ru/abitur/special/sprogr/31.05.01_lechebnoe_delo_okazanie_pervichnoj_pomoshi",
+      "https://tabiturient.ru/vuzu/khsu/proxodnoi/?1244=",
+      "https://postupi.info/vuz/hgu-im.-n.f.katanova/spec/265",
+      "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BA%D0%B0%D1%81%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82"
+    ],
+    "feeNotes": "Program is administered by the university's Medico-Psychological-Social Institute (Медико-психолого-социальный институт), which houses the 85-year-old regional Medical College and a 20+ year general-medicine faculty."
+  },
+  {
+    "universitySlug": "kirov-state-medical-university-komi-branch",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Lechebnoye Delo) — Specialist Degree",
+    "durationYears": 6,
+    "medium": "Russian",
+    "officialProgramUrl": "https://www.syktsu.ru/edu/if/mi/",
+    "intakeMonths": ["September"],
+    "sourceUrls": [
+      "https://www.syktsu.ru/edu/if/mi/",
+      "https://en.syktsu.ru/medical-institute/",
+      "https://tabiturient.ru/vuzu/syktsu/proxodnoi/?1244=",
+      "https://syktyvkar.postupi.online/vuz/medicinskij-institut-sgu/programma/774/varianti/"
+    ],
+    "feeNotes": "IMPORTANT DATA-QUALITY NOTE (not published to program_offerings, for maintainer follow-up): the independent Kirov State Medical Academy 'Komi branch' that operated 1996-2014 was fully absorbed in July 2014 into the Medical Institute of Pitirim Sorokin Syktyvkar State University — a different parent institution with its own site (syktsu.ru), not kirovgma.ru. This program entry describes the genuine current successor institution in Syktyvkar; the university row's official_website (kirovgma.ru) is stale and should be corrected to reflect syktsu.ru separately from this program-offerings change."
+  }
+]

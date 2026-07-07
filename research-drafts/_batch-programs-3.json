@@ -1,0 +1,62 @@
+[
+  {
+    "universitySlug": "novosibirsk-state-university-zelman-medicine",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Specialist Degree Program) — English Medium, V. Zelman Institute of Medicine and Psychology / Institute of Medicine and Medical Technologies",
+    "durationYears": 6,
+    "medium": "English",
+    "officialProgramUrl": "https://english.nsu.ru/admission/programs/specialist-degree-program-english/",
+    "sourceUrls": [
+      "https://english.nsu.ru/admission/programs/specialist-degree-program-english/",
+      "https://education.nsu.ru/institutemedicinepsychology/",
+      "https://en.wikipedia.org/wiki/Novosibirsk_State_University"
+    ],
+    "feeNotes": "Fee figures from consultancy sites ($4,800-$6,500/yr range) not confirmed on an official NSU fee page — omitted per exhaustive-then-omit rule."
+  },
+  {
+    "universitySlug": "pitirim-sorokin-syktyvkar-state-university",
+    "courseSlug": "mbbs",
+    "title": "Lechebnoye Delo (General Medicine), Medical Institute",
+    "durationYears": 6,
+    "medium": "English (years 1-3), transitioning to Russian-medium clinical instruction from year 4",
+    "officialProgramUrl": "https://www.syktsu.ru/edu/if/mi/",
+    "sourceUrls": [
+      "https://www.syktsu.ru/edu/if/mi/",
+      "https://www.rsr-online.ru/",
+      "https://mbbsadmissionabroad.in/"
+    ],
+    "feeNotes": "A recurring ~RUB 291,878/year figure appears consistently across multiple independent consultancy sites but was not found on syktsu.ru itself — omitted per exhaustive-then-omit rule pending official confirmation."
+  },
+  {
+    "universitySlug": "peoples-friendship-university-russia",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Institute of Medicine)",
+    "durationYears": 6,
+    "medium": "Russian (1-year preparatory course for foreign students precedes the main program)",
+    "officialProgramUrl": "https://eng.rudn.ru/education/educational-programs/18041",
+    "annualTuitionUsd": 9450,
+    "officialFeeCurrency": "USD",
+    "officialAnnualTuitionAmount": 9450,
+    "feeVerifiedAt": "2026-07-07",
+    "feeNotes": "An alternate $9,100/year figure also appears on the same official page, possibly for a different cohort/year — $9,450 used as primary per most recent citation.",
+    "sourceUrls": [
+      "https://eng.rudn.ru/education/educational-programs/18041",
+      "https://eng.rudn.ru/education/schools-and-departments/institutions/institute-of-medicine/",
+      "https://russianmbbs.com/blogs/peoples-friendship-university-rudn-mbbs-2026"
+    ]
+  },
+  {
+    "universitySlug": "edu-digital-education-holdings-edu-medical-faculty-of-medicine",
+    "courseSlug": "mbbs",
+    "title": "Bachelor of Medicine / Master of Medicine (Medicine Programme) — nonstandard Bachelor+Master structure, approximated to MBBS-equivalent",
+    "durationYears": 5.5,
+    "medium": "English",
+    "officialProgramUrl": "https://medical.edu.mt/faculty-of-medicine-and-health/medicine-programme/",
+    "sourceUrls": [
+      "https://deh.mt/",
+      "https://future-mbbs.com/mbbs-malta/",
+      "https://www.future-doctor.eu/medical-studies-malta/"
+    ],
+    "feeNotes": "11-semester Bachelor of Medicine (3yr) + Master of Medicine (~2.5yr), fully online with clinical placements at partner teaching hospitals. Only single-sourced fee figure (~EUR 19,500/yr) found — omitted per exhaustive-then-omit rule."
+  }
+]

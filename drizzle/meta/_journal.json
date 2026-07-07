@@ -253,6 +253,13 @@
       "when": 1783337400000,
       "tag": "0050_study_abroad_guides_facet_indexes",
       "breakpoints": true
+    },
+    {
+      "idx": 50,
+      "version": "7",
+      "when": 1783419138947,
+      "tag": "0051_program_offering_duration_years_numeric",
+      "breakpoints": true
     }
   ]
 }

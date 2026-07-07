@@ -1,0 +1,59 @@
+[
+  {
+    "universitySlug": "lobachevsky-state-university-medical-institute",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Lechebnoye Delo) — Specialist Degree",
+    "durationYears": 6,
+    "medium": "English-medium international track with a Russian-language component (WDOMS lists both Russian and English as languages of instruction)",
+    "officialProgramUrl": "https://gm.unn.ru/",
+    "intakeMonths": ["October"],
+    "officialFeeCurrency": "RUB",
+    "officialAnnualTuitionAmount": 410000,
+    "feeNotes": "Official gm.unn.ru page lists 410,000 RUB/year for the General Medicine programme; an older archived version of eng.unn.ru cited 240,000 RUB/year, so fees have risen over time — confirm the current-year figure directly with UNN admissions before relying on either number.",
+    "feeVerifiedAt": "2026-07-07",
+    "sourceUrls": [
+      "https://gm.unn.ru/",
+      "https://search.wdoms.org/home/SchoolDetail/F0006897",
+      "http://eng.unn.ru/academic-programmes/degree-programmes-2/general-medicine"
+    ]
+  },
+  {
+    "universitySlug": "murmansk-arctic-state-university",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Lechebnoye Delo) — Specialist Degree",
+    "durationYears": 6,
+    "medium": "Russian",
+    "officialProgramUrl": "https://www.masu.edu.ru/en/studies/310501/",
+    "sourceUrls": [
+      "https://search.wdoms.org/home/GetSchoolDetail/F0007521",
+      "https://web.archive.org/web/20240817183758/https://www.masu.edu.ru/structure/faculties/med/"
+    ]
+  },
+  {
+    "universitySlug": "north-caucasian-state-academy",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Lechebnoye Delo) — Specialist Degree",
+    "durationYears": 6,
+    "medium": "Russian, with a reported (consultancy-sourced, not independently confirmed on an official page) English-medium international track since 2016",
+    "officialProgramUrl": "https://ncsa.ru/institutes/mi/faculties/Gen_Medicine.php",
+    "intakeMonths": ["September"],
+    "sourceUrls": [
+      "https://ncsa.ru/institutes/mi/faculties/Gen_Medicine.php",
+      "https://ncsa.ru/en/students/foreign_students/",
+      "https://search.wdoms.org/home/SchoolDetail/F0003395"
+    ]
+  },
+  {
+    "universitySlug": "maykop-state-technological-university-medical",
+    "courseSlug": "mbbs",
+    "title": "General Medicine (Lechebnoye Delo) — Specialist Degree",
+    "durationYears": 6,
+    "medium": "Russian (with a Russian-as-a-Foreign-Language preparatory track for international students; not English-medium despite some consultancy marketing claims)",
+    "officialProgramUrl": "https://mkgtu.ru/en/universitet/struktura/meditsinskiy-institut/lechebnyy-fakultet/informatsiya-o-fakultete.php",
+    "sourceUrls": [
+      "https://search.wdoms.org/home/SchoolDetail/F0004579",
+      "https://mkgtu.ru/en/universitet/struktura/meditsinskiy-institut/lechebnyy-fakultet/informatsiya-o-fakultete.php",
+      "https://mkgtu.ru/postuplenie/inostrannym-abiturientam/"
+    ]
+  }
+]

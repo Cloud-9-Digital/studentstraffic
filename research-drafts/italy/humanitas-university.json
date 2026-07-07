@@ -3,9 +3,9 @@
   "schoolName": "Humanitas University",
   "cityName": "Pieve Emanuele (Milan)",
   "priority": "medium",
-  "officialWebsite": "https://www.hunimed.eu/en/",
+  "officialWebsite": "https://www.hunimed.eu/",
   "programUrl": "https://www.hunimed.eu/course/medicine/",
-  "hostelUrl": "https://www.hunimed.eu/campus-and-accomodation/",
+  "hostelUrl": "https://www.hunimed.eu/campus/",
   "admissionUrl": "https://www.hunimed.eu/admissions-med-schools/",
   "qualityScore": 80,
   "reviewNotes": "Researched via WebSearch across official hunimed.eu pages, Wikipedia, Camplus (residence operator), and independent Indian study-abroad consultancy sources. Tuition presented as an indicative range with a feeNotes caveat rather than a fixed number, since non-EU tuition varies by scholarship/merit outcome. NEET/NMC framing included per corroborated general Italy-MBBS guidance, with explicit advice for students to verify current NMC status directly.",
@@ -14,7 +14,7 @@
     "sources": [
       {
         "label": "Humanitas University - official homepage (Hunimed)",
-        "url": "https://www.hunimed.eu/en/",
+        "url": "https://www.hunimed.eu/",
         "kind": "official-university",
         "checkedAt": "2026-07-07"
       },
@@ -32,13 +32,19 @@
       },
       {
         "label": "Humanitas University - Campus and Accommodation (official)",
-        "url": "https://www.hunimed.eu/campus-and-accomodation/",
+        "url": "https://www.hunimed.eu/campus/",
         "kind": "official-university",
         "checkedAt": "2026-07-07"
       },
       {
         "label": "Humanitas University - Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Humanitas_University",
+        "kind": "other",
+        "checkedAt": "2026-07-07"
+      },
+      {
+        "label": "Humanitas Programme (Nobel Laureate Visiting Professors) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Humanitas_Programme",
         "kind": "other",
         "checkedAt": "2026-07-07"
       },
@@ -74,7 +80,7 @@
     "city": "Pieve Emanuele (Milan)",
     "type": "Private",
     "establishedYear": 2014,
-    "officialWebsite": "https://www.hunimed.eu/en/",
+    "officialWebsite": "https://www.hunimed.eu/",
     "bestFitFor": [
       "Indian students who want an English-taught MBBS equivalent (Medicine and Surgery) inside a working research-hospital campus rather than a purely teaching-hospital setup",
       "Students who want hands-on clinical exposure starting from the third year at Humanitas Research Hospital and its affiliated hospitals",
@@ -104,7 +110,7 @@
     "summary": "Humanitas University (Hunimed) is a private Italian medical university established in 2014, built on and integrated with the Humanitas Research Hospital campus in Pieve Emanuele, roughly 13 km south of central Milan. It offers a six-year, English-taught Medicine and Surgery degree that blends classroom study with early simulation training and hospital-based clerkships from the third year onward, drawing on a research hospital environment rather than a traditional standalone medical faculty. For Indian students, it is one of a small number of Italian medical universities that teaches entirely in English on a single, modern, purpose-built campus with its own student residence.",
     "campusLifestyle": "The Humanitas University campus in Pieve Emanuele spans roughly 42,000 square metres across six buildings, combining teaching centres, a simulation centre of about 1,000 square metres, research laboratories, an international canteen, sports facilities, and an on-campus student residence, all seamlessly connected to the adjacent Humanitas Research Hospital. This single-site design means lectures, simulation training, the library, and hospital-based learning are all within walking distance of student housing, which is a distinctive feature compared with universities spread across a city. The compact, campus-style setup makes day-to-day student life straightforward, though it also means social and city life is more concentrated around the campus and nearby Milan rather than a dense historic university-town centre.",
     "cityProfile": "Pieve Emanuele is a municipality of roughly 16,000 residents in the Lombardy region, located about 13 km south of Milan's city centre and well connected to it by regional transport. Milan itself is Italy's second-largest city and its financial and design capital, home to a large, well-established international student community across universities such as Bocconi, Politecnico di Milano, and the University of Milan, along with extensive public transport, international food options, and typical big-city amenities. Students at Humanitas benefit from Pieve Emanuele's quieter, more residential setting for day-to-day campus life while having full access to Milan's international city life a short commute away.",
-    "clinicalExposure": "Clinical training begins early: from the first year, theoretical modules are paired with hands-on simulation activities in the campus Simulation Centre, and structured clerkships begin in the third year at Humanitas Research Hospital and other Humanitas Group-affiliated hospitals, under supervision from clinical tutors. Humanitas Research Hospital is a large, research-oriented teaching hospital directly attached to the university campus, giving students routine exposure to a working clinical environment rather than periodic hospital visits. The university states its faculty includes internationally recognised clinicians and researchers, including Nobel Prize-winning faculty, supporting the clinical and research training pathway alongside standard coursework.",
+    "clinicalExposure": "Clinical training begins early: from the first year, theoretical modules are paired with hands-on simulation activities in the campus Simulation Centre, and structured clerkships begin in the third year at Humanitas Research Hospital and other Humanitas Group-affiliated hospitals, under supervision from clinical tutors. Humanitas Research Hospital is a large, research-oriented teaching hospital directly attached to the university campus, giving students routine exposure to a working clinical environment rather than periodic hospital visits. The university also brings in internationally recognised clinicians and researchers as Visiting Professors, including several Nobel Prize laureates who contribute through guest lectures and the Research International Advisory Board rather than as core resident faculty, adding an extra layer of international academic exposure alongside standard coursework.",
     "hostelOverview": "On-campus accommodation is provided through the Mario Luzzatto Student House, a purpose-built university residence with 240 beds located inside the Humanitas University campus in Pieve Emanuele, managed by Camplus, Italy's largest university-residence operator. Rooms are organised as shared apartments (for two or four residents) with private bedrooms, air conditioning, and utilities included, and the residence includes common facilities such as a bar, restaurant, gym, games room, study rooms, library access, terrace, garden, and 24/7 reception. Because the residence sits inside the same campus as the teaching buildings and hospital, students can live within a short walk of classes, simulation labs, and clinical placements; students should confirm current room availability and pricing directly with Camplus/Hunimed before committing, since residence capacity is limited relative to total enrolment.",
     "indianFoodSupport": "Pieve Emanuele itself is a small residential town without a large Indian food scene, but Milan, a short commute away, has an established Indian restaurant and grocery presence, including multiple Indian restaurants across the city and online Indian grocery delivery services that serve the Milan area. Students typically rely on the campus international canteen for daily meals and travel into Milan, or use grocery delivery, for Indian ingredients and occasional dining out; this is a genuine trade-off compared with Italian cities that have a larger, more walkable Indian-student and Indian-restaurant cluster, and prospective students should factor in this commute for consistent access to Indian food.",
     "safetyOverview": "Milan is generally regarded as safe for international students and residents, with violent crime being rare; the most common issues reported are property crime such as theft, consistent with any large European city, rather than violent crime targeting students. Pieve Emanuele itself is a smaller, quieter residential municipality outside central Milan, and the Humanitas campus is a controlled, purpose-built environment with on-site security and 24/7 reception at the student residence. As with any study-abroad destination, students should follow standard city-safety precautions (secure belongings on public transport, avoid poorly lit areas late at night) and register with their institution's international student office on arrival.",
