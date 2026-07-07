@@ -15,7 +15,8 @@ import {
 } from "@/lib/content-governance";
 import { getAuthor, isValidAuthorSlug } from "@/lib/authors";
 import {
-  getPublishedBlogPostMetadata,
+  getAllPublishedBlogPostsMetadata,
+  getPublishedBlogPostBySlug,
 } from "@/lib/data/catalog";
 import type { BlogPostSearchMetadata } from "@/lib/data/types";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
@@ -33,12 +34,11 @@ type RelatedPost = {
 };
 
 async function getPublishedPosts() {
-  return getPublishedBlogPostMetadata();
+  return getAllPublishedBlogPostsMetadata();
 }
 
 async function getPost(slug: string) {
-  const posts = await getPublishedPosts();
-  return posts.find((post) => post.slug === slug) ?? null;
+  return getPublishedBlogPostBySlug(slug);
 }
 
 async function getRelatedPosts(

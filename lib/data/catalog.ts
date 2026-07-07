@@ -601,6 +601,114 @@ export async function getPublishedBlogPostMetadata() {
   return snapshot.publishedPosts;
 }
 
+// ── Direct, blog-tagged readers ─────────────────────────────────────────────
+// The blog detail page must never go through `getCatalogSnapshot()` above:
+// that snapshot is tagged catalog/countries/courses/universities/
+// program-offerings/india-colleges (no "blog" tag) and is additionally frozen
+// behind a hand-rolled 12h in-memory TTL cache that `revalidateTag`/
+// `revalidatePath` cannot invalidate. A freshly published blog post would
+// then 404 on /blog/[slug] until that in-memory cache expired or the app
+// restarted, even though /blog and /blog/category/[slug] (which query
+// blogPosts directly, tagged "blog") already show it. These readers query
+// blogPosts directly and tag themselves "blog" (+ a per-slug tag), matching
+// the pattern used by getUniversityBySlug's `university:${slug}` tag and by
+// the /blog/category/[slug] reader.
+
+export async function getAllPublishedBlogPostsMetadata(): Promise<
+  BlogPostSearchMetadata[]
+> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("blog");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      slug: blogPosts.slug,
+      title: blogPosts.title,
+      excerpt: blogPosts.excerpt,
+      content: blogPosts.content,
+      coverUrl: blogPosts.coverUrl,
+      category: blogPosts.category,
+      metaTitle: blogPosts.metaTitle,
+      metaDescription: blogPosts.metaDescription,
+      authorSlug: blogPosts.authorSlug,
+      readingTimeMinutes: blogPosts.readingTimeMinutes,
+      publishedAt: blogPosts.publishedAt,
+      updatedAt: blogPosts.updatedAt,
+    })
+    .from(blogPosts)
+    .where(eq(blogPosts.status, "published"))
+    .orderBy(desc(blogPosts.publishedAt));
+
+  return rows.map((post) => ({
+    slug: post.slug,
+    title: post.title,
+    excerpt: post.excerpt,
+    content: post.content,
+    coverUrl: post.coverUrl,
+    category: post.category,
+    metaTitle: post.metaTitle,
+    metaDescription: post.metaDescription,
+    authorSlug: post.authorSlug,
+    readingTimeMinutes: post.readingTimeMinutes,
+    publishedAt: post.publishedAt?.toISOString(),
+    updatedAt: post.updatedAt?.toISOString(),
+  }));
+}
+
+export async function getPublishedBlogPostBySlug(
+  slug: string,
+): Promise<BlogPostSearchMetadata | null> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("blog");
+  cacheTag(`blog:${slug}`);
+
+  const db = getDb();
+  if (!db) return null;
+
+  const [post] = await db
+    .select({
+      slug: blogPosts.slug,
+      title: blogPosts.title,
+      excerpt: blogPosts.excerpt,
+      content: blogPosts.content,
+      coverUrl: blogPosts.coverUrl,
+      category: blogPosts.category,
+      metaTitle: blogPosts.metaTitle,
+      metaDescription: blogPosts.metaDescription,
+      authorSlug: blogPosts.authorSlug,
+      readingTimeMinutes: blogPosts.readingTimeMinutes,
+      publishedAt: blogPosts.publishedAt,
+      updatedAt: blogPosts.updatedAt,
+    })
+    .from(blogPosts)
+    .where(and(eq(blogPosts.status, "published"), eq(blogPosts.slug, slug)))
+    .limit(1);
+
+  if (!post) return null;
+
+  return {
+    slug: post.slug,
+    title: post.title,
+    excerpt: post.excerpt,
+    content: post.content,
+    coverUrl: post.coverUrl,
+    category: post.category,
+    metaTitle: post.metaTitle,
+    metaDescription: post.metaDescription,
+    authorSlug: post.authorSlug,
+    readingTimeMinutes: post.readingTimeMinutes,
+    publishedAt: post.publishedAt?.toISOString(),
+    updatedAt: post.updatedAt?.toISOString(),
+  };
+}
+
 export async function getFeaturedLandingPages() {
   return landingPages.slice(0, 4);
 }

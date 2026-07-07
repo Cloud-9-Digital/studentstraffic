@@ -127,6 +127,7 @@ export async function POST(request: NextRequest) {
 
     for (const slug of slugs) {
       staticPaths.add(`/blog/${slug}`);
+      tags.add(`blog:${slug}`);
     }
   }
 
