@@ -5,11 +5,7 @@ import Link from "next/link";
 import { MapPin, GraduationCap, ShieldCheck, Phone, ArrowRight } from "lucide-react";
 
 import type { Author } from "@/lib/authors";
-import type { CountryContent } from "@/lib/data/country-content";
-import type { SharedCityProfile } from "@/lib/data/city-content";
-import type { CountryRegulatoryAdvisory, UniversityRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
-import type { Country, FinderProgram, University, WdomsDirectoryEntry } from "@/lib/data/types";
-import type { LocationMedia } from "@/lib/location-media";
+import type { Country, FinderProgram, University } from "@/lib/data/types";
 import { parseUniversitySlug, UNIVERSITY_SECTIONS, type UniversitySection } from "@/lib/university-sections";
 import { recordRecentlyViewed } from "@/lib/recently-viewed";
 import { formatProgramAnnualFee, hasRenderableProgramAnnualFee } from "@/lib/utils";
@@ -17,27 +13,15 @@ import { getUniversityHref } from "@/lib/routes";
 
 const SECTION_TITLES: Record<UniversitySection, string> = {
   programs: "Programs & Courses",
-  academics: "Academics & Curriculum",
-  admissions: "Admissions Process",
-  eligibility: "Eligibility & Requirements",
   "student-life": "Student Life",
-  fees: "Fee Structure",
-  recognition: "Recognition & Accreditation",
   hostel: "Hostel & Accommodation",
-  country: "About the Country",
-  city: "About the City",
   faq: "FAQ",
 };
 
-import { UniversityAcademicsSection } from "./academics-section";
-import { UniversityAdmissionsSection } from "./admissions-section";
-import { UniversityCitySection, UniversityCountrySection } from "./content-sections";
 import { UniversityFaqSection } from "./faq-section";
-import { UniversityFeesDetailSection } from "./fees-detail-section";
 import { UniversityHeroSection } from "./hero-section";
 import { UniversityHostelDetailSection } from "./hostel-detail-section";
 import { UniversityProgramsSection } from "./programs-section";
-import { UniversityRecognitionDetailSection } from "./recognition-detail-section";
 import { UniversityStudentLifeSection } from "./student-life-section";
 import { UniversityPageNav } from "./sticky-nav";
 
@@ -55,13 +39,6 @@ type Props = HeroProps & {
   programs: FinderProgram[];
   primaryProgram: FinderProgram | undefined;
   country: Country;
-  wdomsEntry: WdomsDirectoryEntry | null;
-  countryContent: CountryContent | null;
-  countryAdvisory: CountryRegulatoryAdvisory | null;
-  universityAdvisory: UniversityRegulatoryAdvisory | null;
-  cityMedia: LocationMedia | null;
-  countryMedia: LocationMedia | null;
-  cityProfile: SharedCityProfile | null;
   lastVerifiedAt: string;
   primaryProgramShortName?: string;
   author?: Author | null;
@@ -76,25 +53,11 @@ function getSectionSummary(
   const course = primaryProgramShortName ?? "MBBS";
   switch (section) {
     case "programs":
-      return `All ${course} programs at ${university.name} — course duration, medium of instruction, annual intake, and official program details.`;
-    case "academics":
-      return `Academic structure, teaching phases, clinical training, and curriculum at ${university.name} — everything Indian students need before enrolling.`;
-    case "admissions":
-      return `How to apply for ${course} at ${university.name} — step-by-step process, documents required, and application timeline.`;
-    case "eligibility":
-      return `NEET score requirements, age limit, and academic qualifications needed to apply for ${course} at ${university.name}.`;
+      return `All programs at ${university.name} — course duration, medium of instruction, annual intake, and official program details.`;
     case "student-life":
       return `Campus life, Indian student community, food options, and day-to-day living at ${university.name} in ${university.city}.`;
-    case "fees":
-      return `Year-wise ${course} fee breakdown at ${university.name} — annual tuition, hostel costs, and total program cost in USD.`;
-    case "recognition":
-      return `NMC, WHO, and international recognition status of ${university.name} — accreditation badges and official verification links.`;
     case "hostel":
       return `Hostel facilities, Indian food availability, campus safety, and accommodation options at ${university.name}.`;
-    case "country":
-      return `Why Indian students choose ${country.name} for ${course} — climate, culture, safety, currency, and career opportunities.`;
-    case "city":
-      return `Living in ${university.city} as a medical student — cost of living, transport, safety, food, and student community.`;
     case "faq":
       return `Answers to the most common questions Indian students ask about ${course} at ${university.name}.`;
     default:
@@ -110,13 +73,6 @@ export function UniversitySectionShell({
   programs,
   primaryProgram,
   country,
-  wdomsEntry,
-  countryContent,
-  countryAdvisory,
-  universityAdvisory,
-  cityMedia,
-  countryMedia,
-  cityProfile,
   coverImage,
   logoUrl,
   logoInitials,
@@ -172,7 +128,7 @@ export function UniversitySectionShell({
         logoUrl={logoUrl}
         coverImage={coverImage}
         logoInitials={logoInitials}
-        activeSection={activeSection}
+        activeSectionLabel={activeSection ? SECTION_TITLES[activeSection] : null}
         lastVerifiedAt={lastVerifiedAt}
         author={author}
       />
@@ -199,41 +155,9 @@ export function UniversitySectionShell({
               {activeSection === "programs" && programs.length > 0 && (
                 <UniversityProgramsSection programs={programs} />
               )}
-              {activeSection === "academics" && primaryProgram && (
-                <UniversityAcademicsSection
-                  university={university}
-                  primaryProgram={primaryProgram}
-                />
-              )}
-              {(activeSection === "admissions" || activeSection === "eligibility") && (
-                <UniversityAdmissionsSection
-                  university={university}
-                  primaryProgram={primaryProgram}
-                  countryContent={countryContent}
-                  countryAdvisory={countryAdvisory}
-                  universityAdvisory={universityAdvisory}
-                  wdomsEntry={wdomsEntry}
-                />
-              )}
               {activeSection === "student-life" && (
                 <UniversityStudentLifeSection
                   university={university}
-                  country={country}
-                  primaryProgram={primaryProgram}
-                />
-              )}
-              {activeSection === "fees" && (
-                <UniversityFeesDetailSection
-                  programs={programs}
-                  universityName={university.name}
-                  university={university}
-                  country={country}
-                />
-              )}
-              {activeSection === "recognition" && (
-                <UniversityRecognitionDetailSection
-                  university={university}
-                  wdomsEntry={wdomsEntry}
                   country={country}
                   primaryProgram={primaryProgram}
                 />
@@ -242,22 +166,6 @@ export function UniversitySectionShell({
                 <UniversityHostelDetailSection
                   university={university}
                   programs={programs}
-                />
-              )}
-              {activeSection === "country" && (
-                <UniversityCountrySection
-                  country={country}
-                  countryContent={countryContent}
-                  countryMedia={countryMedia}
-                />
-              )}
-              {activeSection === "city" && cityProfile && (
-                <UniversityCitySection
-                  cityProfile={cityProfile}
-                  city={university.city}
-                  countryName={country.name}
-                  universityName={university.name}
-                  cityMedia={cityMedia}
                 />
               )}
               {activeSection === "faq" && (

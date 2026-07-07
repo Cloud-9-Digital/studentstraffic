@@ -7,7 +7,8 @@ import { absoluteUrl } from "@/lib/metadata";
 import { getUniversities, getUniversitySitemapSlice } from "@/lib/data/catalog";
 import { UNIVERSITY_SECTIONS } from "@/lib/university-sections";
 
-// 1 base URL + 11 section URLs per university
+// 1 base URL + UNIVERSITY_SECTIONS.length section URLs per university (programs, student-life,
+// hostel, faq — the program-specific sections moved to /programs/sitemap.ts as of 2026-07-08)
 const ENTRIES_PER_UNIVERSITY = 1 + UNIVERSITY_SECTIONS.length;
 const universitiesPerPage = Math.floor(maxSitemapUrls / ENTRIES_PER_UNIVERSITY);
 

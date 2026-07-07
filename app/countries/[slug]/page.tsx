@@ -48,7 +48,6 @@ import {
   getStructuredDataGraph,
 } from "@/lib/structured-data";
 import { getCountryHeroImage } from "@/lib/country-media";
-import { isValidRecognitionBadge } from "@/lib/data/recognition-bodies";
 import { getInrExchangeRate } from "@/lib/exchange-rate";
 import { getLandingPageHref } from "@/lib/routes";
 import { getCountryContent } from "@/lib/data/country-content";
@@ -235,11 +234,7 @@ export default async function CountryPage({
   const intakeMonths = [...new Set(programs.flatMap((p) => p.offering.intakeMonths))];
   const licenseExams = [...new Set(programs.flatMap((p) => p.offering.licenseExamSupport))];
   const allRecognitionBadges = [
-    ...new Set(
-      programs
-        .flatMap((p) => p.university.recognitionBadges)
-        .filter(isValidRecognitionBadge)
-    ),
+    ...new Set(programs.flatMap((p) => p.university.recognitionBadges)),
   ];
   const uniqueDurations = [...new Set(programs.map((p) => p.offering.durationYears))].sort(
     (a, b) => a - b

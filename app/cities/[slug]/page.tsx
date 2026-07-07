@@ -45,7 +45,6 @@ import {
   formatProgramMedium,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
-import { isValidRecognitionBadge } from "@/lib/data/recognition-bodies";
 
 export async function generateStaticParams() {
   const cities = await getUniqueCities();
@@ -168,11 +167,7 @@ export default async function CityPage({
 
   const uniqueCourses = [...new Set(programs.map((p) => p.course.shortName))];
   const allRecognitionBadges = [
-    ...new Set(
-      programs
-        .flatMap((p) => p.university.recognitionBadges)
-        .filter(isValidRecognitionBadge),
-    ),
+    ...new Set(programs.flatMap((p) => p.university.recognitionBadges)),
   ];
   const allMediums = [
     ...new Set(
@@ -417,7 +412,7 @@ export default async function CityPage({
               </thead>
               <tbody className="divide-y divide-border">
                 {tablePrograms.map((program) => {
-                  const badges = program.university.recognitionBadges.filter(isValidRecognitionBadge);
+                  const badges = program.university.recognitionBadges;
                   return (
                     <tr
                       key={`${program.university.slug}-${program.course.slug}`}

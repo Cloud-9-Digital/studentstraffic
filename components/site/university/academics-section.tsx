@@ -1,4 +1,6 @@
 import {
+  Briefcase,
+  Building2,
   CircleDollarSign,
   FlaskConical,
   GraduationCap,
@@ -34,6 +36,28 @@ export function UniversityAcademicsSection({
   const hasAnnualFeeSummary =
     hasPublishedUsdAmount(primaryProgram.offering.annualTuitionUsd) ||
     hasRenderableProgramLivingFee(primaryProgram.offering);
+
+  const isMedicalStream = (
+    ["medicine", "nursing", "dental", "pharmacy", "physiotherapy"] as const
+  ).includes(
+    primaryProgram.course.stream as
+      | "medicine"
+      | "nursing"
+      | "dental"
+      | "pharmacy"
+      | "physiotherapy",
+  );
+  const practicalExposureLabel = isMedicalStream
+    ? "Clinical exposure"
+    : "Practical training & industry exposure";
+  const practicalPartnersLabel = isMedicalStream
+    ? "Teaching hospitals"
+    : "Industry & placement partners";
+  const supportSectionLabel = isMedicalStream
+    ? "Clinical & support"
+    : "Training & support";
+  const PracticalPartnersIcon = isMedicalStream ? Hospital : Building2;
+  const PracticalExposureIcon = isMedicalStream ? FlaskConical : Briefcase;
 
   return (
     <div id="academics" className="deferred-render scroll-mt-24 space-y-5 py-10">
@@ -167,19 +191,19 @@ export function UniversityAcademicsSection({
         )}
       </div>
 
-      {/* ── Clinical & support ──────────────────────────────────────── */}
+      {/* ── Clinical & support (medical) / Training & support (other streams) ── */}
       <div className="rounded-2xl border border-border bg-card overflow-hidden">
         <div className="border-b border-border bg-muted/30 px-6 py-3">
           <p className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-muted-foreground">
-            Clinical &amp; support
+            {supportSectionLabel}
           </p>
         </div>
         <div className="divide-y divide-border/50">
           <div className="flex gap-4 px-6 py-4">
-            <FlaskConical className="mt-0.5 size-4 shrink-0 text-accent" />
+            <PracticalExposureIcon className="mt-0.5 size-4 shrink-0 text-accent" />
             <div>
               <p className="text-sm font-semibold text-foreground">
-                Clinical exposure
+                {practicalExposureLabel}
               </p>
               <p className="mt-1 text-sm leading-6 text-muted-foreground">
                 {university.clinicalExposure}
@@ -189,10 +213,10 @@ export function UniversityAcademicsSection({
 
           {university.teachingHospitals.length > 0 && (
             <div className="flex gap-4 px-6 py-4">
-              <Hospital className="mt-0.5 size-4 shrink-0 text-accent" />
+              <PracticalPartnersIcon className="mt-0.5 size-4 shrink-0 text-accent" />
               <div>
                 <p className="text-sm font-semibold text-foreground">
-                  Teaching hospitals
+                  {practicalPartnersLabel}
                 </p>
                 <ul className="mt-2 space-y-1.5">
                   {university.teachingHospitals.map((h) => (

@@ -9,7 +9,6 @@ import { ShortlistButton } from "@/components/site/shortlist-button";
 import { ShareButton } from "@/components/site/university/share-button";
 import { UniversityLogoBadge } from "@/components/site/university/shared";
 import type { Author } from "@/lib/authors";
-import type { UniversitySection } from "@/lib/university-sections";
 
 function formatVerifiedDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -21,20 +20,6 @@ function formatVerifiedDate(dateStr: string): string {
   });
 }
 
-const SECTION_HEADINGS: Record<UniversitySection, string> = {
-  programs: "Programs & Courses",
-  academics: "Academics & Curriculum",
-  admissions: "Admissions Process",
-  eligibility: "Eligibility & Requirements",
-  "student-life": "Student Life",
-  fees: "Fee Structure",
-  recognition: "Recognition & Accreditation",
-  hostel: "Hostel & Accommodation",
-  country: "About the Country",
-  city: "About the City",
-  faq: "Frequently Asked Questions",
-};
-
 export function UniversityHeroSection({
   universityName,
   universitySlug,
@@ -42,7 +27,7 @@ export function UniversityHeroSection({
   logoUrl,
   coverImage,
   logoInitials,
-  activeSection,
+  activeSectionLabel,
   lastVerifiedAt,
   author,
 }: {
@@ -52,7 +37,7 @@ export function UniversityHeroSection({
   logoUrl?: string;
   coverImage: { url: string; alt: string } | null;
   logoInitials: string;
-  activeSection?: UniversitySection | null;
+  activeSectionLabel?: string | null;
   lastVerifiedAt: string;
   author?: Author | null;
 }) {
@@ -92,8 +77,8 @@ export function UniversityHeroSection({
 
             <div className="space-y-3">
               <h1 className="font-display text-4xl font-semibold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
-                {activeSection
-                  ? `${universityName}: ${SECTION_HEADINGS[activeSection]}`
+                {activeSectionLabel
+                  ? `${universityName}: ${activeSectionLabel}`
                   : universityName}
               </h1>
               <p className="max-w-2xl text-sm leading-7 text-white/65 md:text-base md:leading-8">

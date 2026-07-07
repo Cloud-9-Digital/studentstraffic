@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import {
   AlertCircle,
   CalendarDays,
@@ -9,14 +7,10 @@ import {
   GraduationCap,
   Languages,
   MapPinned,
-  ShieldCheck,
   Target,
 } from "lucide-react";
 
-import type { CountryContent } from "@/lib/data/country-content";
-import type { SharedCityProfile } from "@/lib/data/city-content";
 import type { Country, FinderProgram, University } from "@/lib/data/types";
-import type { LocationMedia } from "@/lib/location-media";
 import {
   formatProgramAnnualFee,
   formatProgramDuration,
@@ -24,10 +18,7 @@ import {
   getProgramAnnualFeeLabel,
 } from "@/lib/utils";
 
-import {
-  FitCard,
-  SectionLabel,
-} from "./shared";
+import { SectionLabel } from "./shared";
 import { cn } from "@/lib/utils";
 
 export function UniversitySnapshotSection({
@@ -208,121 +199,3 @@ export function UniversityOverviewSection({
   );
 }
 
-export function UniversityCitySection({
-  cityProfile,
-  city,
-  countryName,
-  universityName,
-  cityMedia,
-}: {
-  cityProfile: SharedCityProfile;
-  city: string;
-  countryName: string;
-  universityName: string;
-  cityMedia: LocationMedia | null;
-}) {
-  return (
-    <div className="overflow-hidden rounded-2xl border border-border bg-card">
-      <div className="grid md:grid-cols-2">
-        {/* Content — left */}
-        <div className="p-6">
-          <h3 className="mb-2 text-sm font-bold text-foreground">About {city}</h3>
-          <p className="text-sm leading-7 text-muted-foreground">{cityProfile.summary}</p>
-          <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 border-t border-border/60 pt-3">
-            <div className="space-y-0.5">
-              <p className="text-[0.58rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-                Country
-              </p>
-              <p className="text-sm font-semibold text-foreground">{countryName}</p>
-            </div>
-            <div className="space-y-0.5">
-              <p className="text-[0.58rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-                Universities here
-              </p>
-              <p className="text-sm font-semibold text-foreground">
-                {cityProfile.universityCount > 1
-                  ? `${cityProfile.universityCount} listed`
-                  : universityName}
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Image — right */}
-        {cityMedia ? (
-          <div className="relative min-h-[200px] overflow-hidden">
-            <Image
-              src={cityMedia.url}
-              alt={cityMedia.alt}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/10" />
-          </div>
-        ) : null}
-      </div>
-    </div>
-  );
-}
-
-export function UniversityCountrySection({
-  country,
-  countryContent,
-  countryMedia,
-}: {
-  country: Country;
-  countryContent: CountryContent | null | undefined;
-  countryMedia: LocationMedia | null;
-}) {
-  return (
-    <div className="overflow-hidden rounded-2xl border border-border bg-card">
-      <div className="grid md:grid-cols-2">
-        {/* Image — left */}
-        {countryMedia ? (
-          <div className="relative min-h-[200px] overflow-hidden md:order-first">
-            <Image
-              src={countryMedia.url}
-              alt={countryMedia.alt}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/10" />
-          </div>
-        ) : null}
-        {/* Content — right */}
-        <div className="p-6">
-        <h3 className="mb-2 text-sm font-bold text-foreground">About {country.name}</h3>
-        <p className="text-sm leading-7 text-muted-foreground">{country.summary}</p>
-        <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 border-t border-border/60 pt-3">
-          <div className="space-y-0.5">
-            <p className="flex items-center gap-1 text-[0.58rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-              <MapPinned className="size-3" />
-              Region
-            </p>
-            <p className="text-sm font-semibold text-foreground">{country.region}</p>
-          </div>
-          <div className="space-y-0.5">
-            <p className="flex items-center gap-1 text-[0.58rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-              <ShieldCheck className="size-3" />
-              Climate
-            </p>
-            <p className="text-sm font-semibold text-foreground">{country.climate}</p>
-          </div>
-          {countryContent ? (
-            <div className="space-y-0.5">
-              <p className="flex items-center gap-1 text-[0.58rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
-                <CircleDollarSign className="size-3" />
-                Living cost
-              </p>
-              <p className="text-sm font-semibold text-foreground">
-                {countryContent.costOfLiving.intro}
-              </p>
-            </div>
-          ) : null}
-        </div>
-        </div>
-      </div>
-    </div>
-  );
-}

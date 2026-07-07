@@ -14,8 +14,8 @@ export function getUniversityHref(universitySlug: string) {
   return `/university/${universitySlug}`;
 }
 
-export function getUniversityProgramHref(universitySlug: string, courseSlug: string) {
-  return `/university/${universitySlug}/programs/${courseSlug}`;
+export function getUniversityProgramHref(programSlug: string) {
+  return `/${programSlug}`;
 }
 
 export function getStudyAbroadGuideHref(guideSlug: string) {

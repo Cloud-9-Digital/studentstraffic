@@ -45,6 +45,7 @@ import {
   getCoursesIndexHref,
   getCourseHref,
   getUniversityHref,
+  getUniversityProgramHref,
   getWdomsDirectoryHref,
   getWdomsSchoolHref,
 } from "@/lib/routes";
@@ -1747,6 +1748,35 @@ export async function getProgramsForUniversity(universitySlug: string) {
   return programs.filter((program) => program.university.slug === universitySlug);
 }
 
+export async function getProgramBySlug(programSlug: string) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("finder");
+  cacheTag("program-offerings");
+  cacheTag("courses");
+  cacheTag("universities");
+  cacheTag(`program:${programSlug}`);
+
+  const databasePrograms = await selectFinderProgramsFromDatabase(
+    and(
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+      eq(programOfferingsTable.slug, programSlug),
+    ),
+  );
+
+  if (databasePrograms) {
+    return databasePrograms[0] ?? null;
+  }
+
+  const programs = await getFinderProgramsBase();
+  return (
+    programs.find((program) => program.offering.slug === programSlug) ?? null
+  );
+}
+
 export async function getProgramsForCity(citySlug: string) {
   "use cache";
 
@@ -1938,6 +1968,21 @@ export async function getUniversitySitemapSlice(start: number, end: number) {
     slug: university.slug,
     path: getUniversityHref(university.slug),
     updatedAt: university.updatedAt,
+  }));
+}
+
+export async function getPublishedProgramSlugs() {
+  const offerings = await getProgramOfferings();
+  return offerings.filter((offering) => offering.published).map((offering) => offering.slug);
+}
+
+export async function getProgramSitemapSlice(start: number, end: number) {
+  const offerings = await getProgramOfferings();
+  const published = offerings.filter((offering) => offering.published);
+  return published.slice(start, end).map((offering) => ({
+    slug: offering.slug,
+    path: getUniversityProgramHref(offering.slug),
+    updatedAt: offering.updatedAt,
   }));
 }
 

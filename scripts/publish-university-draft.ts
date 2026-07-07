@@ -614,7 +614,7 @@ async function main() {
     const programTitle = asString(rawProgram.title)!;
     const programSlug =
       asString(rawProgram.slug) ??
-      createSlug(`${savedUniversity.slug}-${programTitle}-${courseSlug}`);
+      createSlug(`${courseSlug}-in-${savedUniversity.slug}`);
     const sourceUrls = asStringArray(rawProgram.sourceUrls);
     const officialProgramUrl =
       asString(rawProgram.officialProgramUrl) ?? validation.officialWebsite!;

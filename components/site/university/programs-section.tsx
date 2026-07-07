@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CalendarDays, Clock, DollarSign } from "lucide-react";
 
 import type { FinderProgram } from "@/lib/data/types";
@@ -7,6 +8,7 @@ import {
   formatProgramMedium,
   formatProgramDuration,
 } from "@/lib/utils";
+import { getUniversityProgramHref } from "@/lib/routes";
 
 import { SectionLabel } from "./shared";
 
@@ -43,12 +45,13 @@ function ProgramOfferingsTable({
           ))}
         </div>
         {programs.map((program) => (
-          <div
+          <Link
             key={program.offering.slug}
+            href={getUniversityProgramHref(program.offering.slug)}
             className="group grid grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr] items-center gap-4 border-b border-border/50 bg-card px-6 py-4 last:border-b-0 hover:bg-muted/20 transition-colors"
           >
             <div className="min-w-0">
-              <p className="text-sm font-medium text-foreground leading-5">
+              <p className="text-sm font-medium text-foreground leading-5 group-hover:text-primary">
                 {program.offering.title}
               </p>
             </div>
@@ -67,16 +70,17 @@ function ProgramOfferingsTable({
             <span className="text-sm text-muted-foreground">
               {program.offering.intakeMonths.join(", ")}
             </span>
-          </div>
+          </Link>
         ))}
       </div>
 
       {/* Mobile cards */}
       <div className="grid gap-3 lg:hidden">
         {programs.map((program) => (
-          <div
+          <Link
             key={program.offering.slug}
-            className="rounded-2xl border border-border bg-card overflow-hidden"
+            href={getUniversityProgramHref(program.offering.slug)}
+            className="block rounded-2xl border border-border bg-card overflow-hidden"
           >
             <div className="p-4">
               <p className="text-sm font-semibold text-foreground leading-5">
@@ -124,7 +128,7 @@ function ProgramOfferingsTable({
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </>

@@ -30,7 +30,11 @@ import {
   formatContentDate,
 } from "@/lib/content-governance";
 import { siteConfig } from "@/lib/constants";
-import { getCountryFlagCode } from "@/lib/university-media";
+import {
+  getCountryFlagCode,
+  getUniversityCoverImage,
+  getUniversityInitials,
+} from "@/lib/university-media";
 import {
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
@@ -40,12 +44,15 @@ import {
   getItemListStructuredDataId,
   getProgramItemListStructuredData,
   getStructuredDataGraph,
+  getUniversityStructuredData,
 } from "@/lib/structured-data";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getLandingPageBySlug,
   getLandingPageContext,
   getLandingPageSlugs,
+  getProgramBySlug,
+  getWdomsDirectoryEntryForUniversity,
 } from "@/lib/data/catalog";
 import {
   getPublishedStudyAbroadGuideSlugs,
@@ -54,11 +61,20 @@ import {
 import { getRelatedContent } from "@/lib/data/related-content";
 import { RelatedContentSection } from "@/components/site/related-content-section";
 import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
-import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
+import {
+  getCountryRegulatoryAdvisory,
+  getUniversityRegulatoryAdvisory,
+} from "@/lib/data/regulatory-advisories";
 import {
   getCountryHref,
   getUniversityHref,
+  getUniversityProgramHref,
 } from "@/lib/routes";
+import { getCountryContent } from "@/lib/data/country-content";
+import { getAuthor } from "@/lib/authors";
+import { getUniversityAuthorSlug } from "@/lib/university-authors";
+import { parseProgramSlug } from "@/lib/university-sections";
+import { ProgramSectionShell } from "@/components/site/university/program-section-shell";
 
 export async function generateStaticParams() {
   const [landingPageSlugs, guideSlugs] = await Promise.all([
@@ -92,6 +108,62 @@ async function getLandingPageRouteData(slug: string) {
   };
 }
 
+async function getProgramPageData(rawSlug: string) {
+  const { programSlug, section } = parseProgramSlug(rawSlug);
+  const program = await getProgramBySlug(programSlug);
+
+  if (!program) return null;
+
+  const { university, country } = program;
+  const [wdomsEntry, countryContent] = await Promise.all([
+    getWdomsDirectoryEntryForUniversity(university.slug),
+    Promise.resolve(getCountryContent(country.slug)),
+  ]);
+  const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
+  const universityAdvisory = getUniversityRegulatoryAdvisory(
+    country.slug,
+    university.slug,
+  );
+
+  return {
+    programSlug,
+    section,
+    program,
+    university,
+    country,
+    wdomsEntry,
+    countryContent,
+    countryAdvisory,
+    universityAdvisory,
+  };
+}
+
+const PROGRAM_SECTION_META: Record<
+  string,
+  { title: (course: string, university: string) => string; description: (course: string, university: string, city: string) => string }
+> = {
+  admissions: {
+    title: (course, university) => `${university} ${course} Admissions 2026 | How to Apply for Indian Students`,
+    description: (course, university, city) =>
+      `Step-by-step ${course} admissions process for Indian students at ${university}, ${city} — eligibility, documents, application timeline, and visa process.`,
+  },
+  eligibility: {
+    title: (course, university) => `${university} ${course} Eligibility | Admission Requirements`,
+    description: (course, university, city) =>
+      `Academic eligibility, age limit, and admission requirements for ${course} at ${university}, ${city}. Complete eligibility criteria for Indian students 2026.`,
+  },
+  fees: {
+    title: (course, university) => `${university} ${course} Fees 2026 | Year-wise Tuition & Hostel Costs`,
+    description: (course, university, city) =>
+      `Complete year-wise ${course} fee breakdown at ${university}, ${city} — annual tuition, hostel costs, total program cost in USD, and scholarship information.`,
+  },
+  recognition: {
+    title: (course, university) => `Is ${university} ${course} Recognised? | Accreditation Status`,
+    description: (course, university, city) =>
+      `Recognition and accreditation status of the ${course} program at ${university}, ${city} — what it means for Indian students and official verification links.`,
+  },
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -103,6 +175,25 @@ export async function generateMetadata({
   if (!page) {
     const guide = await getStudyAbroadGuideBySlug(slug);
     if (guide) return buildIndexableMetadata(guide.metadata);
+
+    const programData = await getProgramPageData(slug);
+    if (programData) {
+      const { program, university, section } = programData;
+      const course = program.course.shortName;
+      const sectionMeta = section ? PROGRAM_SECTION_META[section] : null;
+      const title = sectionMeta
+        ? sectionMeta.title(course, university.name)
+        : `${course} at ${university.name} | Fees, Academics & Eligibility`;
+      const description = sectionMeta
+        ? sectionMeta.description(course, university.name, university.city)
+        : `Detailed ${course} program information at ${university.name}, ${university.city} — duration, fee breakdown, medium of instruction, and academic structure for Indian students.`;
+      return buildIndexableMetadata({
+        title,
+        description,
+        path: `/${slug}`,
+      });
+    }
+
     return { title: "Page Not Found" };
   }
   const keywords = [
@@ -164,6 +255,12 @@ export default async function LandingPageRoute({
         </>
       );
     }
+
+    const programData = await getProgramPageData(slug);
+    if (programData) {
+      return <ProgramPageRoute {...programData} />;
+    }
+
     notFound();
   }
 
@@ -1169,6 +1266,71 @@ export default async function LandingPageRoute({
           </div>
         </div>
       </section>
+
+      <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
+    </>
+  );
+}
+
+async function ProgramPageRoute({
+  programSlug,
+  section,
+  program,
+  university,
+  country,
+  wdomsEntry,
+  countryContent,
+  countryAdvisory,
+  universityAdvisory,
+}: NonNullable<Awaited<ReturnType<typeof getProgramPageData>>>) {
+  const coverImage = getUniversityCoverImage(university);
+  const pageReviewedAt = university.lastVerifiedAt || catalogReviewedAt;
+  const authorSlug = getUniversityAuthorSlug(university.slug);
+  const author = authorSlug ? getAuthor(authorSlug) : null;
+  const path = section ? `/${programSlug}-${section}` : `/${programSlug}`;
+
+  const countryStructuredData = getCountryStructuredData(country);
+  const courseStructuredData = getCourseStructuredData(program.course);
+  const universityStructuredData = getUniversityStructuredData({
+    university,
+    country,
+    programs: [program],
+    sameAs: [...new Set([
+      ...university.recognitionLinks.map((item) => item.url),
+      wdomsEntry?.schoolUrl,
+    ].filter(Boolean))] as string[],
+  });
+  const structuredDataItems = [
+    getBreadcrumbStructuredData([
+      { name: "Home", path: "/" },
+      { name: "Universities", path: "/universities" },
+      { name: university.name, path: getUniversityHref(university.slug) },
+      { name: program.course.shortName, path },
+    ]),
+    countryStructuredData,
+    courseStructuredData,
+    universityStructuredData,
+    university.faq.length ? getFaqStructuredData(university.faq, path) : null,
+  ];
+
+  return (
+    <>
+      <ProgramSectionShell
+        initialSection={section}
+        programSlug={programSlug}
+        program={program}
+        university={university}
+        country={country}
+        wdomsEntry={wdomsEntry}
+        countryContent={countryContent}
+        countryAdvisory={countryAdvisory}
+        universityAdvisory={universityAdvisory}
+        coverImage={coverImage}
+        logoUrl={university.logoUrl ?? undefined}
+        logoInitials={getUniversityInitials(university.name)}
+        lastVerifiedAt={pageReviewedAt}
+        author={author}
+      />
 
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
     </>

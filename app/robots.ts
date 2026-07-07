@@ -34,6 +34,7 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       absoluteUrl("/sitemap.xml"),
       absoluteUrl("/universities/sitemap/0.xml"),
+      absoluteUrl("/programs/sitemap/0.xml"),
       absoluteUrl("/news-sitemap.xml"),
     ],
   };
