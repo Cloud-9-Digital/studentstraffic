@@ -4,15 +4,15 @@ const countryHeroImages: Record<string, { url: string; alt: string }> = {
     alt: "University-style campus building in Australia",
   },
   germany: {
-    url: "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1779736142/studentstraffic/countries/germany-scholarship-hero.jpg",
+    url: "/images/countries/germany.jpg",
     alt: "Students celebrating a study abroad scholarship outcome for Germany",
   },
   russia: {
-    url: "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=900&q=85",
+    url: "/images/countries/russia-hero.jpg",
     alt: "Saint Basil's Cathedral, Moscow, Russia",
   },
   vietnam: {
-    url: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=85",
+    url: "/images/countries/vietnam-hero.jpg",
     alt: "Ho Chi Minh City skyline at sunset, Vietnam",
   },
   uzbekistan: {
@@ -24,19 +24,35 @@ const countryHeroImages: Record<string, { url: string; alt: string }> = {
     alt: "Italy — study medicine in one of Europe's most celebrated academic destinations",
   },
   canada: {
-    url: "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=85",
+    url: "/images/countries/canada.jpg",
     alt: "University campus in Ontario, Canada",
   },
+  georgia: {
+    url: "/images/countries/georgia.jpg",
+    alt: "Historic hillside architecture in Georgia",
+  },
+  kyrgyzstan: {
+    url: "/images/countries/kyrgyzstan.jpg",
+    alt: "Mountain landscape in Kyrgyzstan",
+  },
   albania: {
-    url: "https://images.unsplash.com/photo-1558642369-e4a03cc80b26?auto=format&fit=crop&w=900&q=85",
-    alt: "Tirana, Albania — colourful city centre with Skanderbeg Square",
+    url: "/images/countries/albania.jpg",
+    alt: "Skanderbeg Square and the city of Tirana, Albania",
   },
   lithuania: {
-    url: "https://images.unsplash.com/photo-1599422094275-57cb54a4dbb2?auto=format&fit=crop&w=900&q=85",
-    alt: "Kaunas, Lithuania — Town Hall Square and historic old town",
+    url: "/images/countries/lithuania.jpg",
+    alt: "Vilnius Old Town skyline, Lithuania",
   },
 };
 
+// Generic destination image used when a country has no dedicated hero photo
+// yet (e.g. a newly added destination). Keeps every call site working
+// without a falsy/missing-image case.
+const defaultHeroImage = {
+  url: "/images/home/country-options.jpg",
+  alt: "Counsellor and student reviewing study-abroad destinations on a world map",
+};
+
 export function getCountryHeroImage(slug: string) {
-  return countryHeroImages[slug] ?? null;
+  return countryHeroImages[slug] ?? defaultHeroImage;
 }

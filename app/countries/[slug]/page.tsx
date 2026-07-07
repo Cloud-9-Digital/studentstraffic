@@ -14,9 +14,11 @@ import {
   CheckCircle2,
   ChevronRight,
   CircleDollarSign,
+  Coins,
   GraduationCap,
   Globe2,
   MapPin,
+  Sun,
 } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -262,6 +264,9 @@ export default async function CountryPage({
   });
   const countryContent = getCountryContent(country.slug);
   const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
+  const heroLeadDisplay = truncateToSentence(editorialCopy.heroLead, 220);
+  const climateSummary = truncateToSentence(country.climate, 40);
+  const overviewLeadShort = truncateToSentence(editorialCopy.overviewLead, 280);
   const landingPagePromise = curatedLandingPageHref
     ? getLandingPageBySlug(curatedLandingPageHref.slice(1))
     : Promise.resolve(null);
@@ -303,9 +308,21 @@ export default async function CountryPage({
                   <em className="not-italic text-accent">{country.name}</em>
                 </h1>
 
-                <p className="mt-7 max-w-2xl text-base leading-8 text-white/62 md:text-lg md:leading-9">
-                  {editorialCopy.heroLead}
+                <p className="mt-6 max-w-lg text-base leading-7 text-white/60">
+                  {heroLeadDisplay}
                 </p>
+
+                <div className="mt-7 flex flex-wrap gap-2">
+                  <HeroStatPill icon={<Globe2 className="size-3.5" />} label={country.region} />
+                  <HeroStatPill icon={<Coins className="size-3.5" />} label={country.currencyCode} />
+                  {programs.length > 0 ? (
+                    <HeroStatPill
+                      icon={<Building2 className="size-3.5" />}
+                      label={`${programs.length}+ colleges`}
+                    />
+                  ) : null}
+                  <HeroStatPill icon={<Sun className="size-3.5" />} label={climateSummary} />
+                </div>
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <Button
@@ -378,20 +395,15 @@ export default async function CountryPage({
           <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl lg:text-5xl">
             {country.name} as a study destination
           </h2>
-          <div className="mt-6 max-w-3xl space-y-4 text-base leading-8 text-muted-foreground md:text-[1.04rem] [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-1 [&_strong]:font-semibold [&_strong]:text-foreground">
-            <p>{editorialCopy.overviewLead}</p>
-            {!countryAdvisory &&
-            country.whyStudentsChooseIt &&
-            editorialCopy.overviewLead !== country.whyStudentsChooseIt && (
-              <ReactMarkdown>{country.whyStudentsChooseIt}</ReactMarkdown>
-            )}
-          </div>
+          <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground md:text-[1.04rem]">
+            {overviewLeadShort}
+          </p>
 
           {/* Fact tiles */}
           <div className="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             <FactRow label="Region" value={country.region} />
             <FactRow label="Currency" value={country.currencyCode} />
-            <FactRow label="Climate" value={country.climate} />
+            <FactRow label="Climate" value={climateSummary} />
             <FactRow
               label="Program lengths"
               value={
@@ -443,6 +455,66 @@ export default async function CountryPage({
             </div>
           ) : null}
         </div>
+
+        {/* ── LIFE IN {COUNTRY} ───────────────────────────────── */}
+        {country.whyStudentsChooseIt || country.climate || countryContent?.hostelInfo ? (
+          <div className="py-14 md:py-18">
+            <SectionLabel icon={<Sun className="size-3.5" />} text={`Life in ${country.name}`} />
+
+            <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl lg:text-5xl">
+              What everyday life looks like
+            </h2>
+
+            <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-start">
+              {heroImage ? (
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem] lg:sticky lg:top-24">
+                  <Image
+                    src={heroImage.url}
+                    alt={heroImage.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 40vw, 100vw"
+                  />
+                </div>
+              ) : null}
+
+              <div className="space-y-8">
+                {!countryAdvisory && country.whyStudentsChooseIt ? (
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
+                      Why students choose {country.name}
+                    </p>
+                    <div className="mt-3 space-y-4 text-base leading-8 text-muted-foreground [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-1 [&_strong]:font-semibold [&_strong]:text-foreground">
+                      <ReactMarkdown>{country.whyStudentsChooseIt}</ReactMarkdown>
+                    </div>
+                  </div>
+                ) : null}
+
+                {country.climate ? (
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
+                      Climate &amp; weather
+                    </p>
+                    <p className="mt-3 text-base leading-8 text-muted-foreground">
+                      {country.climate}
+                    </p>
+                  </div>
+                ) : null}
+
+                {countryContent?.hostelInfo ? (
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
+                      Accommodation &amp; daily life
+                    </p>
+                    <p className="mt-3 text-base leading-8 text-muted-foreground">
+                      {countryContent.hostelInfo}
+                    </p>
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          </div>
+        ) : null}
 
         {/* ── COSTS ───────────────────────────────────────────── */}
         <div className="py-14 md:py-18">
@@ -886,6 +958,27 @@ function FactRow({ label, value }: { label: string; value: string }) {
     <div className="rounded-[1.1rem] border border-border/60 bg-[#faf8f4] px-5 py-4">
       <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">{label}</p>
       <p className="mt-1.5 text-sm font-medium text-foreground">{value}</p>
+    </div>
+  );
+}
+
+// Caps long free-text fields (e.g. a full climate paragraph) to a short,
+// glanceable phrase — cuts at the first sentence boundary where possible,
+// otherwise at a word boundary near the character limit.
+function truncateToSentence(text: string, maxLength: number) {
+  const firstSentence = text.split(/(?<=[.!?])\s/)[0] ?? text;
+  if (firstSentence.length <= maxLength) return firstSentence;
+
+  const truncated = firstSentence.slice(0, maxLength);
+  const lastSpace = truncated.lastIndexOf(" ");
+  return `${truncated.slice(0, lastSpace > 0 ? lastSpace : maxLength)}…`;
+}
+
+function HeroStatPill({ icon, label }: { icon: ReactNode; label: string }) {
+  return (
+    <div className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-white/75">
+      <span className="text-accent">{icon}</span>
+      {label}
     </div>
   );
 }
