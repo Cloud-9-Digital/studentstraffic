@@ -1,6 +1,6 @@
 "use client";
 
-import { forwardRef, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import PhoneInput, {
   type Country,
   isValidPhoneNumber,
@@ -16,6 +16,11 @@ interface PhoneInputFieldProps {
   defaultCountry?: Country;
   defaultValue?: string;
   className?: string;
+  placeholder?: string;
+  /** When true, locks the country to `defaultCountry` and hides the country picker/calling-code editing. */
+  lockCountry?: boolean;
+  /** Fired whenever the field's validity changes, so the parent form can block submission. */
+  onValidityChange?: (valid: boolean) => void;
 }
 
 const InnerInput = forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
@@ -40,12 +45,24 @@ export function PhoneInputField({
   defaultCountry = "IN",
   defaultValue,
   className,
+  placeholder = "Phone number",
+  lockCountry = false,
+  onValidityChange,
 }: PhoneInputFieldProps) {
   const [value, setValue] = useState<Value | undefined>(
     (defaultValue as Value) ?? undefined
   );
   const [touched, setTouched] = useState(false);
-  const isInvalid = touched && value !== undefined && value !== "" && !isValidPhoneNumber(value);
+  const isEmpty = value === undefined || value === "";
+  const isInvalid = touched && !isEmpty && !isValidPhoneNumber(value);
+
+  useEffect(() => {
+    const valid = required
+      ? !isEmpty && isValidPhoneNumber(value ?? "")
+      : isEmpty || isValidPhoneNumber(value ?? "");
+    onValidityChange?.(valid);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [value, required]);
 
   return (
     <div className="space-y-1">
@@ -60,12 +77,14 @@ export function PhoneInputField({
           "[&_.PhoneInputCountryFlag]:overflow-hidden [&_.PhoneInputCountryFlag]:rounded-sm",
           "[&_.PhoneInputCountryIcon]:size-5 [&_.PhoneInputCountryIcon]:shrink-0",
           "[&_.PhoneInputCountryIconInternational]:size-5 [&_.PhoneInputCountryIconInternational]:text-muted-foreground",
+          lockCountry && "[&_.PhoneInputCountrySelectArrow]:hidden [&_.PhoneInputCountrySelect]:pointer-events-none",
         )}
       >
         <PhoneInput
           id={id}
           international
-          countryCallingCodeEditable={true}
+          countryCallingCodeEditable={!lockCountry}
+          countries={lockCountry ? [defaultCountry] : undefined}
           defaultCountry={defaultCountry}
           value={value}
           onChange={setValue}
@@ -73,7 +92,7 @@ export function PhoneInputField({
           inputComponent={InnerInput}
           className="flex w-full items-center pr-3"
           numberInputProps={{
-            placeholder: "Phone number",
+            placeholder,
           }}
         />
       </div>

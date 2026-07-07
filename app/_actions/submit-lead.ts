@@ -49,6 +49,7 @@ const leadSchema = z.object({
   userState: z.string().trim().min(2, "Please enter your state."),
   formVariant: z.enum(["mbbs", "scholarship"]).default("mbbs"),
   neetScore: z.string().trim().optional(),
+  neetCategory: z.string().trim().optional(),
   targetDegreeLevel: z.string().trim().optional(),
   preferredIntake: z.string().trim().optional(),
   currentAcademics: z.string().trim().optional(),
@@ -80,6 +81,7 @@ export async function submitLeadAction(
     userState: getFormString(formData, "userState"),
     formVariant: getFormString(formData, "formVariant") || "mbbs",
     neetScore: getFormString(formData, "neetScore"),
+    neetCategory: getFormString(formData, "neetCategory"),
     targetDegreeLevel: getFormString(formData, "targetDegreeLevel"),
     preferredIntake: getFormString(formData, "preferredIntake"),
     currentAcademics: getFormString(formData, "currentAcademics"),
@@ -128,7 +130,10 @@ export async function submitLeadAction(
     neetScore = parsedNeetScore;
   }
 
-  const scholarshipNotes = [
+  const variantNotes = [
+    data.formVariant === "mbbs" && data.neetCategory
+      ? `NEET category: ${data.neetCategory}`
+      : null,
     data.formVariant === "scholarship" && data.targetDegreeLevel
       ? `Target degree level: ${data.targetDegreeLevel}`
       : null,
@@ -146,7 +151,7 @@ export async function submitLeadAction(
       : null,
   ].filter(Boolean);
 
-  const combinedNotes = [data.notes?.trim(), ...scholarshipNotes]
+  const combinedNotes = [data.notes?.trim(), ...variantNotes]
     .filter(Boolean)
     .join("\n");
 

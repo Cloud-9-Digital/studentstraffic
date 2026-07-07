@@ -83,9 +83,25 @@ export type LeadFormProps = {
    * the NEET field — are unchanged.
    */
   showInterestSelects?: boolean;
+  /** When true, hides input placeholder text (labels still show the field purpose). */
+  hidePlaceholders?: boolean;
+  /** When true, renders a NEET category select alongside the NEET score field. */
+  showNeetCategory?: boolean;
+  /** When true, locks the phone field to +91 (India) and hides the country picker. */
+  lockPhoneToIndia?: boolean;
   className?: string;
   children?: React.ReactNode;
 };
+
+function RequiredMark() {
+  return (
+    <span className="text-destructive" aria-hidden="true">
+      {" "}*
+    </span>
+  );
+}
+
+const NEET_CATEGORIES = ["General", "EWS", "OBC-NCL", "SC", "ST", "PwD"];
 
 export function LeadForm({
   sourcePath,
@@ -102,6 +118,9 @@ export function LeadForm({
   embedded = false,
   stacked = false,
   showInterestSelects = false,
+  hidePlaceholders = false,
+  showNeetCategory = false,
+  lockPhoneToIndia = false,
   className,
   children,
 }: LeadFormProps) {
@@ -113,6 +132,8 @@ export function LeadForm({
   const formRef = useRef<HTMLFormElement>(null);
   const startedAtInputRef = useRef<HTMLInputElement>(null);
   const hasTrackedSubmitRef = useRef(false);
+  const phoneValidRef = useRef(false);
+  const [clientError, setClientError] = useState<string | null>(null);
 
   // Course/country options for the visible interest selects. Sourced from the
   // same catalog data (via the nav client providers) used across the site.
@@ -155,6 +176,49 @@ export function LeadForm({
     });
   };
 
+  const emailField = (
+    <div className="space-y-2">
+      <Label htmlFor={`${fieldPrefix}-email`}>
+        Email
+        {emailRequired ? (
+          <RequiredMark />
+        ) : (
+          <span className="font-normal text-muted-foreground"> (optional)</span>
+        )}
+      </Label>
+      <Input
+        id={`${fieldPrefix}-email`}
+        name="email"
+        type="email"
+        placeholder={hidePlaceholders ? undefined : "you@email.com"}
+        required={emailRequired}
+      />
+    </div>
+  );
+
+  const stateField = (
+    <div className="space-y-2">
+      <Label htmlFor={`${fieldPrefix}-state`}>
+        State<RequiredMark />
+      </Label>
+      <div className="relative">
+        <select
+          id={`${fieldPrefix}-state`}
+          name="userState"
+          required
+          defaultValue=""
+          className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          <option value="" disabled className="text-muted-foreground">Select state</option>
+          {INDIAN_STATES.map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
+        </select>
+        <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+      </div>
+    </div>
+  );
+
   const fields = (
     <form
       ref={formRef}
@@ -163,8 +227,16 @@ export function LeadForm({
       onFocusCapture={armStartedAt}
       onPointerDownCapture={armStartedAt}
       onKeyDownCapture={armStartedAt}
-      onSubmitCapture={() => {
+      onSubmitCapture={(event) => {
         armStartedAt();
+
+        if (!phoneValidRef.current) {
+          event.preventDefault();
+          setClientError("Please enter a valid phone number.");
+          return;
+        }
+
+        setClientError(null);
         trackSubmit();
       }}
     >
@@ -192,55 +264,39 @@ export function LeadForm({
 
       <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
         <div className="space-y-2">
-          <Label htmlFor={`${fieldPrefix}-name`}>Full name</Label>
+          <Label htmlFor={`${fieldPrefix}-name`}>
+            Full name<RequiredMark />
+          </Label>
           <Input
             id={`${fieldPrefix}-name`}
             name="fullName"
-            placeholder="Student or parent name"
+            placeholder={hidePlaceholders ? undefined : "Student or parent name"}
             required
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor={`${fieldPrefix}-phone`}>Phone number</Label>
-          <PhoneInputField id={`${fieldPrefix}-phone`} name="phone" required />
+          <Label htmlFor={`${fieldPrefix}-phone`}>
+            Phone number<RequiredMark />
+          </Label>
+          <PhoneInputField
+            id={`${fieldPrefix}-phone`}
+            name="phone"
+            required
+            placeholder={hidePlaceholders ? "" : undefined}
+            lockCountry={lockPhoneToIndia}
+            onValidityChange={(valid) => {
+              phoneValidRef.current = valid;
+            }}
+          />
         </div>
       </div>
 
-      <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
-        <div className="space-y-2">
-          <Label htmlFor={`${fieldPrefix}-email`}>
-            Email{" "}
-            {!emailRequired ? (
-              <span className="font-normal text-muted-foreground">(optional)</span>
-            ) : null}
-          </Label>
-          <Input
-            id={`${fieldPrefix}-email`}
-            name="email"
-            type="email"
-            placeholder="you@email.com"
-            required={emailRequired}
-          />
+      {!showNeetCategory ? (
+        <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
+          {emailField}
+          {stateField}
         </div>
-        <div className="space-y-2">
-          <Label htmlFor={`${fieldPrefix}-state`}>State</Label>
-          <div className="relative">
-            <select
-              id={`${fieldPrefix}-state`}
-              name="userState"
-              required
-              defaultValue=""
-              className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              <option value="" disabled className="text-muted-foreground">Select state</option>
-              {INDIAN_STATES.map((s) => (
-                <option key={s} value={s}>{s}</option>
-              ))}
-            </select>
-            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-          </div>
-        </div>
-      </div>
+      ) : null}
 
       {showInterestSelects ? (
         <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
@@ -289,9 +345,55 @@ export function LeadForm({
             </div>
           </div>
         </div>
+      ) : formVariant === "mbbs" && showNeetCategory ? (
+        <>
+          <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
+            {emailField}
+            <div className="space-y-2">
+              <Label htmlFor={`${fieldPrefix}-neet`}>
+                NEET score<RequiredMark />
+              </Label>
+              <Input
+                id={`${fieldPrefix}-neet`}
+                name="neetScore"
+                type="number"
+                inputMode="numeric"
+                min={0}
+                max={720}
+                placeholder={hidePlaceholders ? undefined : "Enter NEET score"}
+                required
+              />
+            </div>
+          </div>
+          <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
+            <div className="space-y-2">
+              <Label htmlFor={`${fieldPrefix}-neet-category`}>
+                Category<RequiredMark />
+              </Label>
+              <div className="relative">
+                <select
+                  id={`${fieldPrefix}-neet-category`}
+                  name="neetCategory"
+                  required
+                  defaultValue=""
+                  className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  <option value="" disabled className="text-muted-foreground">Select category</option>
+                  {NEET_CATEGORIES.map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              </div>
+            </div>
+            {stateField}
+          </div>
+        </>
       ) : formVariant === "mbbs" ? (
         <div className="space-y-2">
-          <Label htmlFor={`${fieldPrefix}-neet`}>NEET score</Label>
+          <Label htmlFor={`${fieldPrefix}-neet`}>
+            NEET score<RequiredMark />
+          </Label>
           <Input
             id={`${fieldPrefix}-neet`}
             name="neetScore"
@@ -299,7 +401,7 @@ export function LeadForm({
             inputMode="numeric"
             min={0}
             max={720}
-            placeholder="Enter NEET score"
+            placeholder={hidePlaceholders ? undefined : "Enter NEET score"}
             required
           />
         </div>
@@ -307,9 +409,9 @@ export function LeadForm({
 
       {children}
 
-      {state.error && (
+      {(clientError || state.error) && (
         <p className="rounded-2xl border border-destructive/20 bg-destructive/10 px-4 py-3 text-sm text-destructive">
-          {state.error}
+          {clientError || state.error}
         </p>
       )}
 
