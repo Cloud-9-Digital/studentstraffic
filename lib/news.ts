@@ -17,14 +17,22 @@ export type NewsGroup = {
   articles: NewsArticle[];
 };
 
+// Negative keywords appended to every query as a first line of defense against
+// finance/trading-app news drift (e.g. "MBA" + "India" pulling in fintech stories).
+// This is defense-in-depth only — Google News/GNews search is semantic/fuzzy and
+// won't respect these 100% of the time, so isOffTopic() below is the real backstop.
+const FINANCE_EXCLUSIONS =
+  '-stock -shares -"share price" -trading -fintech -ipo -"mutual fund" -sensex -nifty -upstox -zerodha -groww -"share market" -demat -"stock market"';
+
 // Each query is tied to a display section. Multiple queries can share a topic.
 const QUERIES: { q: string; topic: string }[] = [
-  { q: "NMC India medical university approved overseas license -cbse -school -board", topic: "MBBS & Medical" },
-  { q: "medical university accreditation WDOMS WHO recognition overseas -cbse -school", topic: "MBBS & Medical" },
-  { q: "overseas medical college India students policy -cbse -school -board -class", topic: "MBBS & Medical" },
-  { q: "FMGE NExT USMLE PLAB medical licensing exam India -school -board -class", topic: "Exams & Licensing" },
-  { q: "study abroad university visa India -cbse -school -board -class10 -class12", topic: "Study Abroad" },
-  { q: "nursing engineering MBA university abroad India -school -board -cbse", topic: "Other Programs" },
+  { q: `NMC India medical university approved overseas license -cbse -school -board ${FINANCE_EXCLUSIONS}`, topic: "MBBS & Medical" },
+  { q: `medical university accreditation WDOMS WHO recognition overseas -cbse -school ${FINANCE_EXCLUSIONS}`, topic: "MBBS & Medical" },
+  { q: `overseas medical college India students policy -cbse -school -board -class ${FINANCE_EXCLUSIONS}`, topic: "MBBS & Medical" },
+  { q: `FMGE NExT USMLE PLAB medical licensing exam India -school -board -class ${FINANCE_EXCLUSIONS}`, topic: "Exams & Licensing" },
+  { q: `study abroad university visa India -cbse -school -board -class10 -class12 ${FINANCE_EXCLUSIONS}`, topic: "Study Abroad" },
+  { q: `"MBA abroad" OR "study MBA" university admission India -school -board -cbse ${FINANCE_EXCLUSIONS}`, topic: "Other Programs" },
+  { q: `nursing engineering degree university abroad India admission -school -board -cbse ${FINANCE_EXCLUSIONS}`, topic: "Other Programs" },
 ];
 
 const TOPIC_ORDER: { label: string; slug: string }[] = [
@@ -107,11 +115,45 @@ const PROMO_DOMAINS = new Set([
   "globenewswire.com",
   "einpresswire.com",
   "aninews.in",
+  // Finance/trading-only platforms — never publish education journalism, safe to
+  // blanket-block outright (unlike mixed-content outlets like ET/Mint, which are
+  // NOT listed here — those are handled by the keyword-based isOffTopic() check).
+  "upstox.com",
+  "zerodha.com",
+  "groww.in",
+  "angelone.in",
+  "paytmmoney.com",
+  "moneycontrol.com",
+  "5paisa.com",
+  "icicidirect.com",
+  "hdfcsec.com",
+  "kotaksecurities.com",
+  "sharekhan.com",
+  "motilaloswal.com",
 ]);
 
 function isPromotional(article: NewsArticle): boolean {
   if (article.sourceDomain && PROMO_DOMAINS.has(article.sourceDomain)) return true;
   return PROMO_TITLE_PATTERNS.some((p) => p.test(article.title));
+}
+
+// ── Off-topic / finance-drift filter ──────────────────────────────────────
+// Google News/GNews search is semantic, so query-level negative keywords alone
+// don't fully stop finance/trading-app stories (e.g. Upstox) from surfacing under
+// broad queries like "MBA ... India". This is the real backstop: require an
+// on-topic keyword AND reject strong finance/trading vocabulary.
+
+const ON_TOPIC_KEYWORDS =
+  /\b(university|universities|college|colleges|campus|admission|admissions|scholarship|scholarships|student|students|study\s+abroad|studying\s+abroad|degree|course|courses|curriculum|medical|medicine|mbbs|nursing|engineering|engineer|mba|masters?|bachelor|undergraduate|postgraduate|phd|visa|intake|semester|enroll|enrolment|enrollment|accreditation|recognition|nmc|who|wdoms|faimer|neet|fmge|next\b|usmle|plab|ielts|toefl|gre|gmat|sat\b|exam|examination|licensing|residency|internship|hostel|tuition|fee(s)?)\b/i;
+
+const FINANCE_KEYWORDS =
+  /\b(stock(s)?|share\s*price|share\s+market|stock\s+market|sensex|nifty|trading|trader|fintech|ipo|nfo|mutual\s+funds?|demat|broker(age)?|upstox|zerodha|groww|angel\s*one|paytm\s*money|moneycontrol|equity\s+market|sip\s+investment|nse\b|bse\b|f&o|derivatives|crypto(currency)?|bitcoin|forex)\b/i;
+
+function isOffTopic(article: NewsArticle): boolean {
+  const text = article.title;
+  if (FINANCE_KEYWORDS.test(text)) return true;
+  if (!ON_TOPIC_KEYWORDS.test(text)) return true;
+  return false;
 }
 
 // ── GNews API (returns images) ────────────────────────────────────────────
@@ -234,6 +276,7 @@ async function fetchGrouped(apiKey: string | undefined): Promise<Map<string, New
     for (const a of articles) {
       if (!a.publishedAt) continue;
       if (isPromotional(a)) continue;
+      if (isOffTopic(a)) continue;
       if (seenUrls.has(a.url)) continue;
       const nt = normalizeTitle(a.title);
       if (seenTitles.has(nt)) continue;

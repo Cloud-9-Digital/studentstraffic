@@ -18,23 +18,28 @@ export default async function NewsPage() {
 
   return (
     <main>
-      {/* Page header */}
-      <section className="border-b border-border py-10 md:py-14">
+      {/* Masthead */}
+      <section className="border-b border-border bg-[#faf8f4] py-8 md:py-12">
         <div className="container-shell">
-          <div className="max-w-2xl space-y-3">
-            <h1 className="font-display text-3xl font-bold text-heading md:text-4xl">
-              News
-            </h1>
-            <p className="text-base leading-7 text-muted-foreground">
-              Latest updates across study abroad, higher education, university
-              admissions, career pathways, and policy changes — curated for
-              Indian students.
-            </p>
+          <div className="flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary/70">
+            <span className="relative flex size-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent/60" />
+              <span className="relative inline-flex size-2 rounded-full bg-accent" />
+            </span>
+            Updated every 2 hours
           </div>
+          <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-heading md:text-5xl">
+            News
+          </h1>
+          <p className="mt-3 max-w-2xl text-base leading-7 text-muted-foreground">
+            Study abroad, higher education, university admissions, career
+            pathways, and policy changes — curated and filtered for Indian
+            students.
+          </p>
         </div>
       </section>
 
-      <section className="py-8 md:py-12">
+      <section className="py-6 md:py-10">
         <div className="container-shell">
           {!hasArticles ? (
             <p className="rounded-2xl border border-border bg-muted/30 px-6 py-10 text-center text-sm text-muted-foreground">
