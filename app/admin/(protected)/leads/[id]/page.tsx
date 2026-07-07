@@ -168,6 +168,14 @@ async function LeadDetail({ id }: { id: string }) {
               {lead.alternatePhone && <InfoRow label="Alternate Phone" value={lead.alternatePhone} />}
             </InfoCard>
 
+            {/* NEET Details */}
+            {(lead.neetScore !== null || lead.neetCategory) && (
+              <InfoCard title="NEET Details">
+                {lead.neetScore !== null && <InfoRow label="NEET Score" value={lead.neetScore} />}
+                {lead.neetCategory && <InfoRow label="Category" value={lead.neetCategory} />}
+              </InfoCard>
+            )}
+
             {/* Seminar Details - Only if seminar lead */}
             {isSeminarLead && (
               <InfoCard title="Seminar Registration" icon={Calendar} className="border-blue-200 bg-blue-50/50">

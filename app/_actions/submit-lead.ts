@@ -130,10 +130,10 @@ export async function submitLeadAction(
     neetScore = parsedNeetScore;
   }
 
+  const neetCategory =
+    data.formVariant === "mbbs" ? emptyToUndefined(data.neetCategory) : undefined;
+
   const variantNotes = [
-    data.formVariant === "mbbs" && data.neetCategory
-      ? `NEET category: ${data.neetCategory}`
-      : null,
     data.formVariant === "scholarship" && data.targetDegreeLevel
       ? `Target degree level: ${data.targetDegreeLevel}`
       : null,
@@ -227,6 +227,7 @@ export async function submitLeadAction(
         email: emptyToUndefined(data.email),
         userState: data.userState,
         neetScore,
+        neetCategory,
         courseSlug: emptyToUndefined(data.courseSlug),
         countrySlug: emptyToUndefined(data.countrySlug),
         universitySlug: emptyToUndefined(data.universitySlug),
@@ -277,6 +278,7 @@ export async function submitLeadAction(
         email: emptyToUndefined(data.email),
         userState: data.userState,
         neetScore,
+        neetCategory,
         courseSlug: emptyToUndefined(data.courseSlug),
         countrySlug: emptyToUndefined(data.countrySlug),
         universitySlug: emptyToUndefined(data.universitySlug),
