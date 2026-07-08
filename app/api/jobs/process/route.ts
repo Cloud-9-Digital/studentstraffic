@@ -30,7 +30,8 @@ async function handle(request: Request) {
   const url = new URL(request.url);
   const requestedLimit = Number(url.searchParams.get("limit"));
   const limit = Number.isFinite(requestedLimit) ? requestedLimit : 10;
-  const result = await processPendingBackgroundJobs({ limit });
+  const sourcePathFilter = url.searchParams.get("sourcePath") ?? undefined;
+  const result = await processPendingBackgroundJobs({ limit, sourcePathFilter });
 
   return NextResponse.json({
     ok: true,

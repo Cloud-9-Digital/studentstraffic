@@ -29,6 +29,8 @@ type LeadDeliveryJobPayload = {
 
 type ProcessJobsOptions = {
   limit?: number;
+  /** When set, only processes lead.delivery jobs whose lead originated from this sourcePath. */
+  sourcePathFilter?: string;
 };
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -125,7 +127,10 @@ export async function processPendingBackgroundJobs(options: ProcessJobsOptions =
     .where(
       and(
         eq(backgroundJobs.status, "pending"),
-        lte(backgroundJobs.runAfter, now)
+        lte(backgroundJobs.runAfter, now),
+        options.sourcePathFilter
+          ? sql`${backgroundJobs.payload}->'leadHandoffPayload'->>'sourcePath' = ${options.sourcePathFilter}`
+          : undefined
       )
     )
     .orderBy(asc(backgroundJobs.createdAt))
