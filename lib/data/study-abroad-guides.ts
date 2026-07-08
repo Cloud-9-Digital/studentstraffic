@@ -596,7 +596,7 @@ export const studyAbroadGuides = {
       leadTitle: "Want a Russia scholarship reality check?",
       leadDescription: "We can help you compare official scholarship signals, university fit, and total out-of-pocket cost before you commit.",
       notes: "Interest: MBBS in Russia with scholarship",
-      formVariant: "scholarship",
+      guideVariant: "scholarship",
       keyTakeaways: [
   "Russia allocates a limited number of fully funded seats to Indian students each year through a federal government quota programme. Competition is high — seats are merit-based and the application window is fixed annually. We assess quota eligibility early in the admissions cycle and manage the application process for families where this route is viable.",
   "Full scholarships cover tuition only ($3,000-6,000/year value). Students still pay for hostel ($600-1,500/year), living expenses ($2,000-3,000/year), medical insurance ($150-300/year), and travel (₹40,000-60,000 per trip). Total 6-year cost even with scholarship: $20,000-30,000.",
@@ -716,7 +716,7 @@ export const studyAbroadGuides = {
       publishedDate: "2026-05-25",
       countrySlug: "germany",
       courseSlug: "",
-      formVariant: "scholarship",
+      guideVariant: "scholarship",
       primaryHref: "/countries/germany",
       primaryLabel: "Explore Germany universities",
       secondaryLabel: "Get scholarship counselling",

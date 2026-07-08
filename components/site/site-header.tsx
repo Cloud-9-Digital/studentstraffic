@@ -407,7 +407,6 @@ function SiteHeaderInner() {
               triggerVariant="accent"
               triggerSize="sm"
               triggerClassName="gap-1.5 px-5 shadow-cta hover:shadow-cta-hover"
-              showInterestSelects
               triggerContent={
                 <>
                   Request counselling
@@ -570,7 +569,6 @@ function SiteHeaderInner() {
               triggerVariant="accent"
               triggerClassName="w-full gap-2"
               onTriggerClick={closeMobile}
-              showInterestSelects
               triggerContent={
                 <>
                   Request counselling

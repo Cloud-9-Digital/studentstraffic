@@ -24,7 +24,10 @@ import {
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
-import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
+import {
+  getLeadDeliveryRoute,
+  NEET_PREDICTOR_SOURCE_PATH,
+} from "@/lib/lead-delivery-routes";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
 import { getTrackingSnapshot } from "@/lib/tracking";
 import {
@@ -48,14 +51,8 @@ const leadSchema = z.object({
       message: "Please enter a valid email address.",
     }),
   userState: z.string().trim().min(2, "Please enter your state."),
-  formVariant: z.enum(["mbbs", "scholarship"]).default("mbbs"),
   neetScore: z.string().trim().optional(),
   neetCategory: z.string().trim().optional(),
-  targetDegreeLevel: z.string().trim().optional(),
-  preferredIntake: z.string().trim().optional(),
-  currentAcademics: z.string().trim().optional(),
-  scholarshipBudgetNeed: z.string().trim().optional(),
-  preferredCourse: z.string().trim().optional(),
   courseSlug: z.string().trim().optional(),
   countrySlug: z.string().trim().optional(),
   universitySlug: z.string().trim().optional(),
@@ -80,14 +77,8 @@ export async function submitLeadAction(
     phone: getFormString(formData, "phone"),
     email: getFormString(formData, "email"),
     userState: getFormString(formData, "userState"),
-    formVariant: getFormString(formData, "formVariant") || "mbbs",
     neetScore: getFormString(formData, "neetScore"),
     neetCategory: getFormString(formData, "neetCategory"),
-    targetDegreeLevel: getFormString(formData, "targetDegreeLevel"),
-    preferredIntake: getFormString(formData, "preferredIntake"),
-    currentAcademics: getFormString(formData, "currentAcademics"),
-    scholarshipBudgetNeed: getFormString(formData, "scholarshipBudgetNeed"),
-    preferredCourse: getFormString(formData, "preferredCourse"),
     courseSlug: getFormString(formData, "courseSlug"),
     countrySlug: getFormString(formData, "countrySlug"),
     universitySlug: getFormString(formData, "universitySlug"),
@@ -115,7 +106,9 @@ export async function submitLeadAction(
   const trimmedNeetScore = data.neetScore?.trim();
   let neetScore: number | undefined;
 
-  if (data.formVariant === "mbbs") {
+  const isNeetPredictorSubmission = data.sourcePath === NEET_PREDICTOR_SOURCE_PATH;
+
+  if (isNeetPredictorSubmission) {
     if (!trimmedNeetScore) {
       return { error: "Please enter your NEET score." };
     }
@@ -131,30 +124,11 @@ export async function submitLeadAction(
     neetScore = parsedNeetScore;
   }
 
-  const neetCategory =
-    data.formVariant === "mbbs" ? emptyToUndefined(data.neetCategory) : undefined;
+  const neetCategory = isNeetPredictorSubmission
+    ? emptyToUndefined(data.neetCategory)
+    : undefined;
 
-  const variantNotes = [
-    data.formVariant === "scholarship" && data.targetDegreeLevel
-      ? `Target degree level: ${data.targetDegreeLevel}`
-      : null,
-    data.formVariant === "scholarship" && data.preferredIntake
-      ? `Preferred intake: ${data.preferredIntake}`
-      : null,
-    data.formVariant === "scholarship" && data.currentAcademics
-      ? `Current academics: ${data.currentAcademics}`
-      : null,
-    data.formVariant === "scholarship" && data.scholarshipBudgetNeed
-      ? `Scholarship or budget need: ${data.scholarshipBudgetNeed}`
-      : null,
-    data.formVariant === "scholarship" && data.preferredCourse
-      ? `Preferred course: ${data.preferredCourse}`
-      : null,
-  ].filter(Boolean);
-
-  const combinedNotes = [data.notes?.trim(), ...variantNotes]
-    .filter(Boolean)
-    .join("\n");
+  const combinedNotes = data.notes?.trim() ?? "";
 
   if (data.website) {
     return {

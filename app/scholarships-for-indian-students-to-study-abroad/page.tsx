@@ -352,7 +352,6 @@ export default function ScholarshipsForIndianStudentsToStudyAbroadPage() {
                 description="Leave your number and we will call you with guidance on countries, scholarships, university fit, and the next admission step that matches your profile."
                 className="rounded-full bg-foreground px-5 py-3 font-semibold text-background transition hover:opacity-90"
                 ctaVariant="scholarship-hub-hero"
-                formVariant="scholarship"
               />
               <Link
                 href="/guides"
@@ -679,7 +678,6 @@ export default function ScholarshipsForIndianStudentsToStudyAbroadPage() {
                     description="Leave your number and we will call you to discuss scholarship routes, admission fit, and how to structure your application."
                     className="inline-flex w-full items-center justify-center rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background transition hover:opacity-90"
                     ctaVariant="scholarship-hub-profile"
-                    formVariant="scholarship"
                   />
                 </div>
               </div>
@@ -833,7 +831,6 @@ export default function ScholarshipsForIndianStudentsToStudyAbroadPage() {
                 title="Get free scholarship counselling"
                 description="Share your details and our team will call you with guidance on scholarships, university shortlisting, and the next step."
                 submitLabel="Request callback"
-                formVariant="scholarship"
                 notes="Interest: scholarships for Indian students to study abroad"
                 embedded
                 stacked

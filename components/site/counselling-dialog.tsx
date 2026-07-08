@@ -27,11 +27,9 @@ export function CounsellingDialog({
   description = "Leave your number and we will call you with guidance on countries, universities, scholarships, and the next admission step that fits your profile. Parents are welcome on the call.",
   submitLabel,
   ctaVariant = "header_dialog",
-  formVariant = "mbbs",
   countrySlug,
   courseSlug,
   notes,
-  showInterestSelects = false,
 }: {
   triggerContent: React.ReactNode;
   triggerClassName?: string;
@@ -43,22 +41,10 @@ export function CounsellingDialog({
   description?: string;
   submitLabel?: string;
   ctaVariant?: string;
-  formVariant?: "mbbs" | "scholarship";
   countrySlug?: string;
   courseSlug?: string;
   notes?: string;
-  /**
-   * When true, the form shows "Interested course" and "Interested country"
-   * selects (in place of the NEET field) that map to courseSlug/countrySlug.
-   * Because NEET is then not collected, the form is submitted with the
-   * non-mbbs variant so the server action does not require a NEET score.
-   */
-  showInterestSelects?: boolean;
 }) {
-  // With interest selects, NEET is not collected — submit as the non-mbbs
-  // variant so submitLeadAction does not require a NEET score. Callers that
-  // rely on the NEET (mbbs) flow simply leave showInterestSelects off.
-  const effectiveFormVariant = showInterestSelects ? "scholarship" : formVariant;
   const [open, setOpen] = useState(false);
   const contentId = useId();
 
@@ -128,14 +114,12 @@ export function CounsellingDialog({
             </div>
 
             <DialogLeadForm
-              key={`${ctaVariant}:${effectiveFormVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}`}
+              key={`${ctaVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}`}
               ctaVariant={ctaVariant}
               submitLabel={submitLabel}
               countrySlug={countrySlug}
               courseSlug={courseSlug}
-              formVariant={effectiveFormVariant}
               notes={notes}
-              showInterestSelects={showInterestSelects}
               embedded
             />
           </div>

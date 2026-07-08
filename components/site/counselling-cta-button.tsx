@@ -10,7 +10,6 @@ type CounsellingCtaButtonProps = {
   countrySlug?: string;
   courseSlug?: string;
   ctaVariant?: string;
-  formVariant?: "mbbs" | "scholarship";
 };
 
 export function CounsellingCtaButton({
@@ -21,7 +20,6 @@ export function CounsellingCtaButton({
   countrySlug,
   courseSlug,
   ctaVariant = "page-cta",
-  formVariant = "mbbs",
 }: CounsellingCtaButtonProps) {
   return (
     <CounsellingDialog
@@ -34,7 +32,6 @@ export function CounsellingCtaButton({
       ctaVariant={ctaVariant}
       countrySlug={countrySlug}
       courseSlug={courseSlug}
-      formVariant={formVariant}
     />
   );
 }

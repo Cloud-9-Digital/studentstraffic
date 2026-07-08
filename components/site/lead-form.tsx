@@ -69,23 +69,18 @@ export type LeadFormProps = {
   submitLabel?: string;
   emailRequired?: boolean;
   notes?: string;
-  formVariant?: "mbbs" | "scholarship";
   courseSlug?: string;
   countrySlug?: string;
   universitySlug?: string;
   embedded?: boolean;
   stacked?: boolean;
-  /**
-   * When true, renders visible "Interested course" and "Interested country"
-   * selects (wired to courseSlug/countrySlug) and hides the NEET field
-   * regardless of formVariant. Used by the counselling dialog. Other surfaces
-   * (mbbs/scholarship landing pages) leave this off so their behaviour — and
-   * the NEET field — are unchanged.
-   */
-  showInterestSelects?: boolean;
   /** When true, hides input placeholder text (labels still show the field purpose). */
   hidePlaceholders?: boolean;
-  /** When true, renders a NEET category select alongside the NEET score field. */
+  /**
+   * When true, renders the NEET score and category fields (alongside email
+   * and state). Only the NEET College Predictor tool sets this — every other
+   * lead form no longer asks for a NEET score.
+   */
   showNeetCategory?: boolean;
   /** When true, locks the phone field to +91 (India) and hides the country picker. */
   lockPhoneToIndia?: boolean;
@@ -111,13 +106,11 @@ export function LeadForm({
   submitLabel = "Request a free counselling call",
   emailRequired = false,
   notes,
-  formVariant = "mbbs",
   courseSlug,
   countrySlug,
   universitySlug,
   embedded = false,
   stacked = false,
-  showInterestSelects = false,
   hidePlaceholders = false,
   showNeetCategory = false,
   lockPhoneToIndia = false,
@@ -175,10 +168,10 @@ export function LeadForm({
     trackLeadFormSubmit({
       source_path: sourcePath,
       cta_variant: ctaVariant,
-      course_slug: showInterestSelects
+      course_slug: !showNeetCategory
         ? selectedCourseSlug || undefined
         : courseSlug,
-      country_slug: showInterestSelects
+      country_slug: !showNeetCategory
         ? selectedCountrySlug || undefined
         : countrySlug,
       university_slug: universitySlug,
@@ -259,11 +252,11 @@ export function LeadForm({
       <input type="hidden" name="documentReferrer" />
       <input type="hidden" name="clientContext" defaultValue="{}" />
       <input type="hidden" name="notes" value={notes ?? ""} />
-      <input type="hidden" name="formVariant" value={formVariant} />
-      {/* When the visible interest selects are shown, they carry the
-          courseSlug/countrySlug names themselves — so we omit the hidden
-          inputs here to avoid duplicate form fields. */}
-      {!showInterestSelects ? (
+      {/* The NEET predictor branch doesn't render the visible interest
+          selects, so it needs these hidden fallback inputs instead. Every
+          other form shows the selects, which carry the courseSlug/countrySlug
+          names themselves — rendering both would create duplicate fields. */}
+      {showNeetCategory ? (
         <>
           <input type="hidden" name="courseSlug" value={courseSlug ?? ""} />
           <input type="hidden" name="countrySlug" value={countrySlug ?? ""} />
@@ -309,7 +302,7 @@ export function LeadForm({
         </div>
       ) : null}
 
-      {showInterestSelects ? (
+      {!showNeetCategory ? (
         <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
           <div className="space-y-2">
             <Label htmlFor={`${fieldPrefix}-course`}>Interested course</Label>
@@ -356,7 +349,7 @@ export function LeadForm({
             </div>
           </div>
         </div>
-      ) : formVariant === "mbbs" && showNeetCategory ? (
+      ) : (
         <>
           <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
             {emailField}
@@ -400,23 +393,7 @@ export function LeadForm({
             {stateField}
           </div>
         </>
-      ) : formVariant === "mbbs" ? (
-        <div className="space-y-2">
-          <Label htmlFor={`${fieldPrefix}-neet`}>
-            NEET score<RequiredMark />
-          </Label>
-          <Input
-            id={`${fieldPrefix}-neet`}
-            name="neetScore"
-            type="number"
-            inputMode="numeric"
-            min={0}
-            max={720}
-            placeholder={hidePlaceholders ? undefined : "Enter NEET score"}
-            required
-          />
-        </div>
-      ) : null}
+      )}
 
       {children}
 

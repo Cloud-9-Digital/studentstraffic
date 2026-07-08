@@ -74,7 +74,8 @@ export type StudyAbroadGuidePageProps = {
   leadDescription: string;
   leadSubmitLabel?: string;
   notes: string;
-  formVariant?: "mbbs" | "scholarship";
+  /** Gates the "Scholarship Planning Hub" cross-link section — purely a page-content toggle, unrelated to the lead form. */
+  guideVariant?: "mbbs" | "scholarship";
   showUniversities?: boolean;
 };
 
@@ -97,7 +98,7 @@ export function StudyAbroadGuidePage({
   leadDescription,
   leadSubmitLabel = "Request callback",
   notes,
-  formVariant = "mbbs",
+  guideVariant = "mbbs",
   showUniversities = false,
 }: StudyAbroadGuidePageProps) {
   const heroImage = countrySlug ? getCountryHeroImage(countrySlug) : null;
@@ -159,7 +160,6 @@ export function StudyAbroadGuidePage({
                 description={leadDescription}
                 submitLabel={leadSubmitLabel}
                 ctaVariant="seo-guide-hero"
-                formVariant={formVariant}
                 countrySlug={countrySlug}
                 courseSlug={courseSlug}
               />
@@ -278,7 +278,7 @@ export function StudyAbroadGuidePage({
               </nav>
             </details>
 
-            {formVariant === "scholarship" ? (
+            {guideVariant === "scholarship" ? (
               <div className="mt-8 rounded-2xl border border-accent/20 bg-[linear-gradient(145deg,rgba(233,123,59,0.07)_0%,rgba(15,61,55,0.03)_100%)] p-5 sm:p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
                   Scholarship Planning Hub
@@ -474,7 +474,6 @@ export function StudyAbroadGuidePage({
                 title="Get free counselling"
                 description="Share your details and we'll call you back with a personalized shortlist."
                 submitLabel={leadSubmitLabel}
-                formVariant={formVariant}
                 countrySlug={countrySlug}
                 courseSlug={courseSlug}
                 notes={notes}
