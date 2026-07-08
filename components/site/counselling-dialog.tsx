@@ -103,6 +103,14 @@ export function CounsellingDialog({
         <Dialog.Content
           id={contentId}
           className="fixed left-1/2 top-1/2 z-50 max-h-[min(92vh,780px)] w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl bg-background shadow-dialog outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200 lg:max-w-lg"
+          onOpenAutoFocus={(event) => {
+            // Radix auto-focuses the first form field on open by default, which
+            // arms the form's anti-bot "startedAt" timer before the user has
+            // actually interacted -- fast fillers (autofill, quick typers) then
+            // trip the "submitted too fast" rejection. Let focus land on the
+            // dialog container instead; the timer arms on real user input.
+            event.preventDefault();
+          }}
         >
           <Dialog.Close className="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-black/6 hover:text-foreground">
             <X className="size-4" />

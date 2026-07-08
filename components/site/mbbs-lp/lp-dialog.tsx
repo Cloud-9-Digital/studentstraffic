@@ -32,7 +32,15 @@ export function LpDialogProvider({ sourcePath, countryName, children }: Props) {
       <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
         <Dialog.Portal>
           <Dialog.Overlay className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 duration-200" />
-          <Dialog.Content className="fixed left-1/2 top-1/2 z-50 w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl bg-white shadow-2xl outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200">
+          <Dialog.Content
+            className="fixed left-1/2 top-1/2 z-50 w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl bg-white shadow-2xl outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200"
+            onOpenAutoFocus={(event) => {
+              // See counselling-dialog.tsx: prevents Radix's default
+              // auto-focus-into-form from arming the anti-bot timer before the
+              // user has actually interacted with the form.
+              event.preventDefault();
+            }}
+          >
             <div className="flex items-start justify-between border-b border-gray-100 px-6 py-4">
               <div>
                 <Dialog.Title className="text-lg font-bold" style={{ color: "#0f3d37" }}>
