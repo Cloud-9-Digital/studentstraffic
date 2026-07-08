@@ -320,10 +320,10 @@ async function seed() {
       INSERT INTO universities (
         country_id, slug, name, city, type, established_year, summary,
         published, featured, official_website,
-        campus_lifestyle, city_profile, clinical_exposure,
-        hostel_overview, indian_food_support, safety_overview, student_support,
+        campus_lifestyle, city_profile, practical_exposure,
+        hostel_overview, dietary_support, safety_overview, student_support,
         why_choose, things_to_consider, best_fit_for,
-        teaching_hospitals, recognition_badges, recognition_links, faq,
+        industry_partners, recognition_badges, recognition_links, faq,
         admissions_content, last_verified_at,
         updated_at
       ) VALUES (
@@ -347,15 +347,15 @@ async function seed() {
         official_website    = EXCLUDED.official_website,
         campus_lifestyle    = EXCLUDED.campus_lifestyle,
         city_profile        = EXCLUDED.city_profile,
-        clinical_exposure   = EXCLUDED.clinical_exposure,
+        practical_exposure   = EXCLUDED.practical_exposure,
         hostel_overview     = EXCLUDED.hostel_overview,
-        indian_food_support = EXCLUDED.indian_food_support,
+        dietary_support = EXCLUDED.dietary_support,
         safety_overview     = EXCLUDED.safety_overview,
         student_support     = EXCLUDED.student_support,
         why_choose          = EXCLUDED.why_choose,
         things_to_consider  = EXCLUDED.things_to_consider,
         best_fit_for        = EXCLUDED.best_fit_for,
-        teaching_hospitals  = EXCLUDED.teaching_hospitals,
+        industry_partners  = EXCLUDED.industry_partners,
         recognition_badges  = EXCLUDED.recognition_badges,
         recognition_links   = EXCLUDED.recognition_links,
         faq                 = EXCLUDED.faq,
@@ -404,7 +404,7 @@ async function seed() {
         university_id, course_id, slug, title,
         duration_years, annual_tuition_usd, total_tuition_usd, living_usd,
         medium, official_program_url, published,
-        teaching_phases, yearly_cost_breakdown, license_exam_support,
+        teaching_phases, yearly_cost_breakdown, professional_exam_support,
         intake_months, fee_verified_at,
         updated_at
       ) VALUES (
@@ -426,7 +426,7 @@ async function seed() {
         published             = EXCLUDED.published,
         teaching_phases       = EXCLUDED.teaching_phases,
         yearly_cost_breakdown = EXCLUDED.yearly_cost_breakdown,
-        license_exam_support  = EXCLUDED.license_exam_support,
+        professional_exam_support  = EXCLUDED.professional_exam_support,
         intake_months         = EXCLUDED.intake_months,
         fee_verified_at       = EXCLUDED.fee_verified_at,
         updated_at            = NOW();

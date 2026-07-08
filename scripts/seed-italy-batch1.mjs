@@ -1144,9 +1144,9 @@ async function seed() {
         `INSERT INTO universities (
           country_id, slug, name, city, type, established_year, summary,
           published, featured, official_website, campus_lifestyle, city_profile,
-          clinical_exposure, hostel_overview, indian_food_support, safety_overview,
+          practical_exposure, hostel_overview, dietary_support, safety_overview,
           student_support, why_choose, things_to_consider, best_fit_for,
-          teaching_hospitals, recognition_badges, faq, updated_at
+          industry_partners, recognition_badges, faq, updated_at
         ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, NOW())
         ON CONFLICT (slug) DO UPDATE SET
           name = EXCLUDED.name,
@@ -1158,15 +1158,15 @@ async function seed() {
           official_website = EXCLUDED.official_website,
           campus_lifestyle = EXCLUDED.campus_lifestyle,
           city_profile = EXCLUDED.city_profile,
-          clinical_exposure = EXCLUDED.clinical_exposure,
+          practical_exposure = EXCLUDED.practical_exposure,
           hostel_overview = EXCLUDED.hostel_overview,
-          indian_food_support = EXCLUDED.indian_food_support,
+          dietary_support = EXCLUDED.dietary_support,
           safety_overview = EXCLUDED.safety_overview,
           student_support = EXCLUDED.student_support,
           why_choose = EXCLUDED.why_choose,
           things_to_consider = EXCLUDED.things_to_consider,
           best_fit_for = EXCLUDED.best_fit_for,
-          teaching_hospitals = EXCLUDED.teaching_hospitals,
+          industry_partners = EXCLUDED.industry_partners,
           recognition_badges = EXCLUDED.recognition_badges,
           faq = EXCLUDED.faq,
           updated_at = NOW()

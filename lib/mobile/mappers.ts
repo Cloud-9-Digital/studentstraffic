@@ -41,9 +41,9 @@ export function mapUniversityDetail(
     officialWebsite: university.officialWebsite,
     campusLifestyle: university.campusLifestyle,
     cityProfile: university.cityProfile,
-    clinicalExposure: university.clinicalExposure,
+    practicalExposure: university.practicalExposure,
     hostelOverview: university.hostelOverview,
-    indianFoodSupport: university.indianFoodSupport,
+    dietarySupport: university.dietarySupport,
     safetyOverview: university.safetyOverview,
     studentSupport: university.studentSupport,
     whyChoose: university.whyChoose,
@@ -51,7 +51,7 @@ export function mapUniversityDetail(
     bestFitFor: university.bestFitFor,
     recognitionBadges: university.recognitionBadges,
     recognitionLinks: university.recognitionLinks,
-    teachingHospitals: university.teachingHospitals,
+    industryPartners: university.industryPartners,
     faq: university.faq,
     admissionsContent: university.admissionsContent,
     lastVerifiedAt: university.lastVerifiedAt,
@@ -69,7 +69,7 @@ export function mapUniversityDetail(
           intakeMonths: primaryOffering.intakeMonths,
           yearlyCostBreakdown: primaryOffering.yearlyCostBreakdown,
           feeNotes: primaryOffering.feeNotes,
-          licenseExamSupport: primaryOffering.licenseExamSupport,
+          professionalExamSupport: primaryOffering.professionalExamSupport,
         }
       : null,
     offerings: offerings.map((offering) => ({
@@ -85,7 +85,7 @@ export function mapUniversityDetail(
       intakeMonths: offering.intakeMonths,
       yearlyCostBreakdown: offering.yearlyCostBreakdown,
       feeNotes: offering.feeNotes,
-      licenseExamSupport: offering.licenseExamSupport,
+      professionalExamSupport: offering.professionalExamSupport,
     })),
   };
 }

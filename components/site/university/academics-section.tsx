@@ -206,12 +206,12 @@ export function UniversityAcademicsSection({
                 {practicalExposureLabel}
               </p>
               <p className="mt-1 text-sm leading-6 text-muted-foreground">
-                {university.clinicalExposure}
+                {university.practicalExposure}
               </p>
             </div>
           </div>
 
-          {university.teachingHospitals.length > 0 && (
+          {university.industryPartners.length > 0 && (
             <div className="flex gap-4 px-6 py-4">
               <PracticalPartnersIcon className="mt-0.5 size-4 shrink-0 text-accent" />
               <div>
@@ -219,7 +219,7 @@ export function UniversityAcademicsSection({
                   {practicalPartnersLabel}
                 </p>
                 <ul className="mt-2 space-y-1.5">
-                  {university.teachingHospitals.map((h) => (
+                  {university.industryPartners.map((h) => (
                     <li key={h} className="flex items-start gap-2 text-sm leading-6 text-muted-foreground">
                       <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary/40" />
                       {h}
@@ -230,7 +230,7 @@ export function UniversityAcademicsSection({
             </div>
           )}
 
-          {primaryProgram.offering.licenseExamSupport.length > 0 && (
+          {primaryProgram.offering.professionalExamSupport.length > 0 && (
             <div className="flex gap-4 px-6 py-4">
               <GraduationCap className="mt-0.5 size-4 shrink-0 text-accent" />
               <div>
@@ -238,7 +238,7 @@ export function UniversityAcademicsSection({
                   Licensing &amp; exam support
                 </p>
                 <ul className="mt-2 space-y-1.5">
-                  {primaryProgram.offering.licenseExamSupport.map((item) => (
+                  {primaryProgram.offering.professionalExamSupport.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm leading-6 text-muted-foreground">
                       <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary/40" />
                       {item}

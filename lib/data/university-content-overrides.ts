@@ -6,7 +6,7 @@ type UniversityContentOverride = Partial<
     | "summary"
     | "campusLifestyle"
     | "cityProfile"
-    | "clinicalExposure"
+    | "practicalExposure"
     | "studentSupport"
     | "safetyOverview"
     | "whyChoose"
@@ -107,7 +107,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "Kazan is a city of one million with a functioning metro, reliable public transport, and a large student population. The Indian student community is one of the largest among Russian university cities — peer support, Indian mess, and grocery access are well-established rather than something students have to build from scratch.",
     cityProfile:
       "Kazan is Russia's third-largest city by student population and capital of Tatarstan. It has a genuine university-city character — better transport, more services, and more international student infrastructure than smaller regional destinations. Winter temperatures reach -20°C to -30°C, which students need to prepare for.",
-    clinicalExposure:
+    practicalExposure:
       "Clinical rotations from Year 3 take place in Kazan's major public teaching hospitals. Patient communication is in Russian — students who invest in Russian language from Year 1 have meaningfully better clinical experiences. The university's strong basic sciences teaching is credited for its above-average FMGE performance.",
     studentSupport:
       "Best suited to students who want a well-established Indian community, proven FMGE outcomes, and a major city environment — and who are willing to pay slightly more than the cheapest Russian options to get these.",
@@ -119,7 +119,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus experience is more regional and quieter than Kazan or Moscow-oriented options, which can work well for students who prefer a simpler daily routine.",
     cityProfile:
       "Barnaul is a smaller Siberian city, so students trade big-city convenience for a calmer and usually more cost-aware academic environment.",
-    clinicalExposure:
+    practicalExposure:
       "The value case here depends on public-university structure and regional hospital exposure rather than on a premium metropolitan clinical brand.",
     studentSupport:
       "It fits applicants who want a Russian public-university pathway with a steadier cost profile and fewer distractions than larger city campuses.",
@@ -131,7 +131,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment feels structured and campus-centered, with medicine presented as a flagship track rather than one department inside a loose private-university mix.",
     cityProfile:
       "Can Tho gives students a southern regional hub with a calmer pace than Ho Chi Minh City and enough scale to avoid the isolation of a small provincial town.",
-    clinicalExposure:
+    practicalExposure:
       "The main academic question is how consistently Nam Can Tho University Hospital and partner sites support bedside learning once students move beyond the early pre-clinical phase.",
     studentSupport:
       "This profile is strongest for families who want a private-university process with closer handholding and a city that feels easier to navigate than the major metros.",
@@ -158,7 +158,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus feels more medical-school-first than broad private-university lifestyle brand, with simulation, museum, and hospital-linked facilities shaping the student experience.",
     cityProfile:
       "Da Nang gives PCTU a strong lifestyle advantage: a modern coastal city with better mobility and day-to-day comfort than many provincial medical-school locations.",
-    clinicalExposure:
+    practicalExposure:
       "Its strongest differentiator is the integrated hospital model, so the real comparison point is how early skills training and owned-hospital exposure translate into sustained clinical depth.",
     studentSupport:
       "This is a strong fit for students who want a tightly focused private medical environment rather than a large multidisciplinary campus.",
@@ -185,7 +185,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus experience feels city-based and modern rather than residential, which appeals to students who want an accessible urban setting.",
     cityProfile:
       "Tbilisi gives students a more cosmopolitan day-to-day environment, broader housing choices, and easier international connectivity than smaller Georgian cities.",
-    clinicalExposure:
+    practicalExposure:
       "Students should compare how the English-medium model transitions into hospital learning and how consistently partner-clinic exposure develops in later years.",
     studentSupport:
       "It suits applicants who value Tbilisi city life, English-medium delivery, and a private-university experience that feels relatively accessible for first-time families.",
@@ -197,7 +197,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The university sits within a modern city-campus setting rather than a classic standalone medical-school environment.",
     cityProfile:
       "Tbilisi remains the main draw here, offering mobility, services, and a city rhythm that many international students find easier to settle into than smaller destinations.",
-    clinicalExposure:
+    practicalExposure:
       "The key question is how the program converts classroom delivery into hospital-based learning and how students prepare for later clinical communication demands.",
     studentSupport:
       "This profile works best for students who want an English-medium path in Tbilisi and are willing to compare institutional depth carefully.",
@@ -209,7 +209,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment is more internationally mixed than many regional campuses, which shapes both classroom culture and peer networks.",
     cityProfile:
       "Bishkek offers a relatively manageable capital-city environment, with more services and institutional activity than smaller Kyrgyz destinations.",
-    clinicalExposure:
+    practicalExposure:
       "Students should pay attention to the balance between campus teaching, simulation, and partner-hospital training as they move into clinical years.",
     studentSupport:
       "It suits applicants looking for a longer-established Kyrgyz option with visible foreign student enrollment and a more familiar admissions profile.",
@@ -221,7 +221,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The student experience is shaped more by cost efficiency and peer community than by a large standalone university ecosystem.",
     cityProfile:
       "Its value appeal comes from a simpler daily environment and lower-cost planning rather than from metropolitan infrastructure or prestige-city advantages.",
-    clinicalExposure:
+    practicalExposure:
       "Students should compare how the low-fee model translates into faculty availability, skills training, and later-stage clinical exposure.",
     studentSupport:
       "This profile fits applicants whose first filter is affordability but who still want a program with a visible international intake pattern.",
@@ -233,7 +233,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment is academically focused and regionally grounded, with medicine tied closely to local healthcare needs in the highlands.",
     cityProfile:
       "Buon Ma Thuot offers a quieter inland city with a very different feel from coastal Da Nang or the larger metros, which can either sharpen focus or feel too remote depending on the student.",
-    clinicalExposure:
+    practicalExposure:
       "The appeal here is the combination of campus hospital access and regional clinical relevance, but students should still compare how broad the later-year exposure becomes.",
     studentSupport:
       "It suits students who are comfortable with a smaller-city routine and want a medical setting that feels more community-oriented than commercially packaged.",
@@ -260,7 +260,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The academic culture feels clearly medical and professionally focused, with less lifestyle packaging than private campuses and a stronger sense of institutional continuity.",
     cityProfile:
       "Can Tho is large enough to feel connected and practical, but calmer and easier to manage than Ho Chi Minh City or Hanoi.",
-    clinicalExposure:
+    practicalExposure:
       "CTUMP's strength is its long-established regional hospital ecosystem, so the key comparison is not access alone but how that public-hospital exposure aligns with your training style.",
     studentSupport:
       "This profile works especially well for students who want a public specialist institution in the south without paying for a premium private-city brand.",
@@ -287,7 +287,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus feels practical and professionally oriented, with medicine sitting alongside other health disciplines rather than dominating the university identity.",
     cityProfile:
       "Da Nang is a major advantage here because students get one of Vietnam's most comfortable city environments even though the institution itself is not built around international medicine branding.",
-    clinicalExposure:
+    practicalExposure:
       "Students need to verify how the medical program currently uses Da Nang's hospital network and how mature the international-facing pathway really is.",
     studentSupport:
       "This option is more about city and public-health-sciences environment than about a polished international medical-admissions pipeline.",
@@ -314,7 +314,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The setting is distinctly private-university and modern, with medicine placed inside a newer Hanoi campus rather than a legacy public teaching-school atmosphere.",
     cityProfile:
       "Hanoi is the strategic draw: students sit inside Vietnam's deepest northern hospital ecosystem and a much larger academic network than most provincial options can offer.",
-    clinicalExposure:
+    practicalExposure:
       "Its academic case depends on how well the faculty converts partner-hospital access and its Hanoi relationships into a consistent six-year clinical pathway.",
     studentSupport:
       "This profile suits students who want the capital-city advantage at a lower entry price than many premium private schools, while accepting that the faculty itself is still newer.",
@@ -341,7 +341,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment feels multidisciplinary and contemporary, so medicine benefits from a polished private-campus experience rather than a traditional medical-school culture.",
     cityProfile:
       "Da Nang is a major part of the appeal, giving students a cleaner, more navigable city than the two biggest metros while still offering real urban convenience.",
-    clinicalExposure:
+    practicalExposure:
       "The critical question is how effectively the program turns simulation, faculty mix, and hospital partnerships into robust bedside training later on.",
     studentSupport:
       "This profile works best for students who want a modern private campus in Da Nang and do not mind evaluating a newer medicine setup carefully.",
@@ -368,7 +368,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus feels bigger and more institutionally varied than most private medical entrants, so medicine benefits from scale, facilities, and a visible research-oriented brand.",
     cityProfile:
       "Da Nang gives Duy Tan a meaningful lifestyle edge, combining coastal livability with much easier daily movement than Hanoi or Ho Chi Minh City.",
-    clinicalExposure:
+    practicalExposure:
       "Duy Tan is strongest when families value brand, infrastructure, and city together, but the real evaluation still rests on the depth and continuity of hospital-based training.",
     studentSupport:
       "This profile fits applicants who want a well-known private university rather than a narrow medical-only campus and are comfortable paying for that broader brand.",
@@ -395,7 +395,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus feels straightforward and professional rather than heavily marketed, with medicine training tied closely to regional public-service needs.",
     cityProfile:
       "Hai Phong offers a working coastal city with better urban infrastructure than a small provincial town but less pressure and cost than the capital.",
-    clinicalExposure:
+    practicalExposure:
       "Its value comes from a large regional hospital network and steady public-university clinical exposure rather than from a national-elite prestige story.",
     studentSupport:
       "This option suits students who want northern Vietnam outside Hanoi and prefer a public institution with a clear regional role.",
@@ -422,7 +422,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment is academically serious and classically medical, with far less lifestyle packaging than private schools and a much stronger professional identity.",
     cityProfile:
       "Hanoi adds another layer of advantage by placing students near national hospitals, ministries, research institutes, and a dense academic ecosystem.",
-    clinicalExposure:
+    practicalExposure:
       "This is the most compelling part of the HMU story: students are comparing national-level clinical training depth, not just city access or brand alone.",
     studentSupport:
       "It is best suited to students who want a top public medical brand and are ready for a more demanding, less hand-held university culture.",
@@ -449,7 +449,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus experience feels urban, polished, and health-sciences-forward, with medicine positioned as a flagship private-sector offering rather than a small add-on department.",
     cityProfile:
       "Ho Chi Minh City is the biggest everyday advantage: students get the country's largest metropolitan healthcare and services ecosystem.",
-    clinicalExposure:
+    practicalExposure:
       "HIU is most attractive when families want a private-city program with multiple hospital touchpoints, but they should still compare how structured and continuous the rotations are across the years.",
     studentSupport:
       "This profile works best for students who want an urban private-campus model in the south and are comfortable with a higher-fee bracket.",
@@ -476,7 +476,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "Hue's medical setting feels serious and academically grounded, with medicine and pharmacy clearly at the center of the institution rather than sharing attention with a large private-university brand.",
     cityProfile:
       "Hue offers a smaller and quieter urban rhythm, which often suits students who want focus, culture, and affordability more than big-city pace.",
-    clinicalExposure:
+    practicalExposure:
       "Its clinical appeal comes from strong central-region hospital relevance and a university-hospital model that feels more established than most private competitors.",
     studentSupport:
       "This profile is strongest for students who want a respected public school with real academic substance but do not need Hanoi or Ho Chi Minh City scale.",
@@ -503,7 +503,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus experience is more broad-university and city-facing than pure medical-school, which can appeal to students who want a wider institutional environment.",
     cityProfile:
       "Ho Chi Minh City gives the program its main strategic advantage: the largest labor market, hospital density, and international exposure in the country.",
-    clinicalExposure:
+    practicalExposure:
       "Students should judge the medicine pathway on current hospital integration and academic maturity rather than assuming the larger university brand answers those questions.",
     studentSupport:
       "This profile works better for city-first applicants who want a private university in Ho Chi Minh City and are prepared to verify program specifics carefully.",
@@ -530,7 +530,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "Phenikaa feels newer and more planned than legacy public schools, with a cleaner research-university identity and a more contemporary campus experience.",
     cityProfile:
       "Hanoi gives the faculty access to the strongest northern hospital and academic ecosystem, which is crucial when evaluating a newer private medical program.",
-    clinicalExposure:
+    practicalExposure:
       "The key question is how effectively Phenikaa turns modern labs, research culture, and external partnerships into mature bedside training over time.",
     studentSupport:
       "This profile suits students who like a technology-forward university environment and want to compare a new-generation Hanoi private faculty against older public names.",
@@ -557,7 +557,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The student experience is centered on a self-contained private campus and associated hospital environment, not on a dense city-university district.",
     cityProfile:
       "Its location near the Ho Chi Minh City corridor offers access to the south without requiring students to study inside the congestion and cost of the metro core.",
-    clinicalExposure:
+    practicalExposure:
       "The program is most compelling for students who value its MD-style positioning and hospital tie-ins, but they should test that fit against India-return licensing plans and long-term clinical depth.",
     studentSupport:
       "This option works best for students who actively want a private-campus model and a different academic flavor from the standard Vietnamese public route.",
@@ -584,7 +584,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment is practical and regionally grounded, with a domestic public-university character rather than a heavily international-facing brand.",
     cityProfile:
       "Buon Ma Thuot offers a quieter inland setting and lower daily intensity than coastal or metro options, which some students value and others may find limiting.",
-    clinicalExposure:
+    practicalExposure:
       "Its academic case rests on regional public-health relevance, the university hospital, and a straightforward state-university pathway rather than on prestige-city hospital branding.",
     studentSupport:
       "This option is best for students comfortable with a more local academic environment and willing to confirm international-pathway details directly.",
@@ -611,7 +611,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The campus culture is straightforward, professionally oriented, and more study-led than lifestyle-led, which can be a real advantage for disciplined students.",
     cityProfile:
       "Thai Binh is a quieter provincial city, so the daily environment is simpler and cheaper but far less dynamic than Hanoi or Hai Phong.",
-    clinicalExposure:
+    practicalExposure:
       "Its appeal is the classic public medical-school model and provincial clinical training base, not premium facilities or a large-city hospital halo.",
     studentSupport:
       "This profile works well for students who want a focused public institution and are comfortable with a quieter north-Vietnam setting.",
@@ -638,7 +638,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment feels like a serious public university with enough scale, postgraduate depth, and international activity to stand apart from smaller regional options.",
     cityProfile:
       "Thai Nguyen gives students a workable middle ground: closer and calmer than Hanoi, but more connected and industrial-academic than many provincial cities.",
-    clinicalExposure:
+    practicalExposure:
       "The key attraction is an established public-school structure with quality-assurance activity and a regional hospital network that feels more mature than many newer entrants.",
     studentSupport:
       "This profile suits students who want northern Vietnam outside Hanoi but still want a university with visible scale and some international engagement.",
@@ -665,7 +665,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment feels newer and service-oriented, with medicine expanding inside a broader public university rather than operating as a century-old standalone medical school.",
     cityProfile:
       "Tra Vinh is a smaller delta city, so the lifestyle is quieter and more localized than Can Tho or Ho Chi Minh City.",
-    clinicalExposure:
+    practicalExposure:
       "Its strongest case is the practice-based learning model and university-hospital link, but students should still compare the maturity of the medicine school with older public options.",
     studentSupport:
       "This profile suits applicants who are open to a newer regional public school and want to evaluate growth potential rather than only legacy reputation.",
@@ -692,7 +692,7 @@ const universityContentOverrides: Record<string, UniversityContentOverride> = {
       "The environment is focused, city-based, and professionally oriented, with less lifestyle packaging than the large private universities in Ho Chi Minh City.",
     cityProfile:
       "Ho Chi Minh City gives students the country's deepest southern hospital ecosystem, but also a faster pace and higher day-to-day cost than smaller cities.",
-    clinicalExposure:
+    practicalExposure:
       "Its appeal is closely tied to the intensity and breadth of Ho Chi Minh City clinical exposure, so students should assess whether they want that pace rather than a quieter public-school path.",
     studentSupport:
       "This profile works best for students who want a public medical university in the south and value hospital immersion more than campus styling.",
@@ -724,14 +724,14 @@ export function applyUniversityContentOverride(university: University): Universi
   const hostelContent = merged.hostelOverview?.trim() && merged.hostelOverview !== hostelFallback
     ? merged.hostelOverview
     : hostelFallback;
-  const foodContent = merged.indianFoodSupport?.trim() && merged.indianFoodSupport !== settlingFallback
-    ? merged.indianFoodSupport
+  const foodContent = merged.dietarySupport?.trim() && merged.dietarySupport !== settlingFallback
+    ? merged.dietarySupport
     : settlingFallback;
 
   return {
     ...merged,
     hostelOverview: hostelContent,
-    indianFoodSupport: foodContent,
+    dietarySupport: foodContent,
     recognitionBadges: merged.recognitionBadges.filter(
       (badge) => !topicFilterPattern.test(badge)
     ),

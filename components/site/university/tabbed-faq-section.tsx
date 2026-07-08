@@ -26,7 +26,7 @@ export function TabbedFaqSection({
 
   const activeSection = sections.find((s) => s.slug === activeSlug) ?? sections[0];
   const totalCount = sections.reduce((sum, s) => sum + s.faqs.length, 0);
-  const course = primaryProgramShortName ?? "BN";
+  const course = primaryProgramShortName ?? "this program";
 
   if (!sections.length) return null;
 
@@ -43,7 +43,7 @@ export function TabbedFaqSection({
             Browse by topic using the tabs below. Every question Indian students
             and parents ask before applying
             {city ? ` for ${course} in ${city}` : ""} — covering admissions,
-            fees, clinical training, visa, career pathways, and more.
+            fees, practical training, visa, career pathways, and more.
           </p>
         </div>
       )}

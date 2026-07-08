@@ -50,7 +50,7 @@ function getSectionSummary(
   country: Country,
   primaryProgramShortName: string | undefined,
 ): string {
-  const course = primaryProgramShortName ?? "MBBS";
+  const course = primaryProgramShortName ?? "this program";
   switch (section) {
     case "programs":
       return `All programs at ${university.name} — course duration, medium of instruction, annual intake, and official program details.`;

@@ -163,9 +163,9 @@ export const universities = pgTable(
     coverImageUrl: text("cover_image_url"),
     campusLifestyle: text("campus_lifestyle").notNull(),
     cityProfile: text("city_profile").notNull(),
-    clinicalExposure: text("clinical_exposure").notNull(),
+    practicalExposure: text("practical_exposure").notNull(),
     hostelOverview: text("hostel_overview").notNull(),
-    indianFoodSupport: text("indian_food_support").notNull(),
+    dietarySupport: text("dietary_support").notNull(),
     safetyOverview: text("safety_overview").notNull(),
     studentSupport: text("student_support").notNull(),
     whyChoose: jsonb("why_choose").$type<string[]>().notNull().default([]),
@@ -174,7 +174,7 @@ export const universities = pgTable(
       .notNull()
       .default([]),
     bestFitFor: jsonb("best_fit_for").$type<string[]>().notNull().default([]),
-    teachingHospitals: text("teaching_hospitals").array().notNull().default([]),
+    industryPartners: text("industry_partners").array().notNull().default([]),
     recognitionBadges: text("recognition_badges").array().notNull().default([]),
     recognitionLinks: jsonb("recognition_links")
       .$type<LinkItem[]>()
@@ -239,7 +239,7 @@ export const programOfferings = pgTable(
       .$type<YearlyCostBreakdown[]>()
       .notNull()
       .default([]),
-    licenseExamSupport: jsonb("license_exam_support")
+    professionalExamSupport: jsonb("professional_exam_support")
       .$type<string[]>()
       .notNull()
       .default([]),

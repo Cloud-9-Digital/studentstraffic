@@ -11,7 +11,20 @@ export type Country = {
   updatedAt?: string;
 };
 
-export type CourseStream = "medicine" | "nursing" | "dental" | "pharmacy" | "physiotherapy" | "engineering" | "vocational" | "other";
+export type CourseStream =
+  | "medicine"
+  | "nursing"
+  | "dental"
+  | "pharmacy"
+  | "physiotherapy"
+  | "engineering"
+  | "business"
+  | "law"
+  | "hospitality"
+  | "agriculture"
+  | "education"
+  | "vocational"
+  | "other";
 
 export type Course = {
   slug: string;
@@ -79,15 +92,15 @@ export type University = {
   officialWebsite: string;
   campusLifestyle: string;
   cityProfile: string;
-  clinicalExposure: string;
+  practicalExposure: string;
   hostelOverview: string;
-  indianFoodSupport: string;
+  dietarySupport: string;
   safetyOverview: string;
   studentSupport: string;
   whyChoose: string[];
   thingsToConsider: string[];
   bestFitFor: string[];
-  teachingHospitals: string[];
+  industryPartners: string[];
   recognitionBadges: string[];
   recognitionLinks: LinkItem[];
   faq: Faq[];
@@ -172,7 +185,7 @@ export type ProgramOffering = {
   published: boolean;
   teachingPhases: TeachingPhase[];
   yearlyCostBreakdown: YearlyCostBreakdown[];
-  licenseExamSupport: string[];
+  professionalExamSupport: string[];
   intakeMonths: string[];
   feeVerifiedAt?: string;
   fxRateDate?: string;

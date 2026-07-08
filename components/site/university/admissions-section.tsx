@@ -296,8 +296,8 @@ export function UniversityAdmissionsSection({
             icon={<GraduationCap className="size-4 text-accent" />}
             title="Exam support"
             body={
-              primaryProgram?.offering.licenseExamSupport.length
-                ? primaryProgram.offering.licenseExamSupport.join(", ")
+              primaryProgram?.offering.professionalExamSupport.length
+                ? primaryProgram.offering.professionalExamSupport.join(", ")
                 : "Published exam support is not currently listed for this page."
             }
           />

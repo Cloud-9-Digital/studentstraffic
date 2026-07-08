@@ -53,9 +53,11 @@ copy, not just labels.
 2. Redesign `recognition-detail-section.tsx` and `admissions-section.tsx` to be stream-aware (or build
    parallel field-specific variants) once #1 is answered.
 3. New `courses` table rows for the target fields (schema supports this with zero migration —
-   `stream` is a free-text-backed union type already covering `engineering`/`other`; would want to
-   extend `CourseStream` in `lib/data/types.ts` with `business`, `law`, `hospitality`, `agriculture`,
-   `education` for semantic clarity, still zero-migration since it's a TS union over a text column).
+   `stream` is a free-text-backed union type). **Done 2026-07-09:** `CourseStream` in
+   `lib/data/types.ts` now includes `business`, `law`, `hospitality`, `agriculture`, and `education`
+   alongside the existing `engineering`/`vocational`/`other` streams (still zero-migration — a TS union
+   over the existing `courses.stream` text column). Adding the actual `courses` rows and the
+   universities/programs is the data step that is still not started.
 4. Only then: run the discover+research → verify+publish pipeline for Vietnam's general universities,
    same 2-stage pattern as medical, but scoped to these new course categories.
 
@@ -80,3 +82,42 @@ template redesign described in "What's needed before data population can resume"
 Do not read the brand-copy pivot as progress on that work — the catalog today is still MBBS/BDS/
 MD-MS/Nursing only, and no brand copy was written that overclaims specific non-medical program or
 university counts.
+
+## Correction — 2026-07-09 (later same day): the template blocker above was already resolved
+
+The paragraph directly above ("technical blocker... completely unchanged") was inaccurate at the time
+it was written — commit `aba4124` ("Restructure university pages: dedicated program pages,
+stream-aware content", 2026-07-07) had already made both `recognition-detail-section.tsx` and
+`admissions-section.tsx` branch on `primaryProgram.course.stream`, landing **before** this doc's
+2026-07-08 write-up but not reflected in it. Re-audited both files end-to-end during the scalability
+refactor pass (2026-07-09):
+
+- `recognition-detail-section.tsx` — intro copy, the verify-status banner, and the "what this means
+  for you" closing section all branch on `isMedicalStream` (derived from
+  `["medicine","nursing","dental","pharmacy","physiotherapy"]`). Non-medical rendering uses honest,
+  generic accreditation language (no invented UGC/AICTE/BCI claims) and reads `recognitionBadges`/
+  `recognitionLinks` from the DB either way. The WDOMS block only renders when a `wdomsEntry` is
+  actually present, which is naturally medical-only data — no hardcoding needed there.
+- `admissions-section.tsx` — `admissionsIntro`, `defaultSteps`, eligibility intro/items/documents, and
+  the eligibility FAQ all branch the same way. The "Licensing Pathway" sub-section (FMGE/NExT/WDOMS
+  career-pathway copy) is now gated behind `isMedicalStream &&` — it does not render at all for
+  non-medical streams, rather than rendering a false pathway.
+- `academics-section.tsx` was already confirmed fixed in the paragraphs above.
+
+**Remaining minor items from the original findings, fixed 2026-07-09:** the `course.shortName ?? "MBBS"`
+(and one `?? "BN"`) fallbacks in `faq-section.tsx`, `fees-detail-section.tsx`,
+`recognition-detail-section.tsx`, `section-shell.tsx`, `student-life-section.tsx`, and
+`tabbed-faq-section.tsx` now fall back to the neutral `"this program"` instead of an MBBS-specific
+default (this fallback only ever shows when a university has no published program at all, regardless
+of stream). `tabbed-faq-section.tsx`'s static intro line was reworded from "clinical training" to
+"practical training".
+
+**Net effect:** the university page template is now stream-aware end-to-end and does not require
+further template work to unblock non-medical rendering. `hero-section.tsx`, `counselling-section.tsx`,
+`content-sections.tsx`, `sticky-nav.tsx`, `shared.tsx`, `hostel-detail-section.tsx`,
+`programs-section.tsx`, `program-nav.tsx`, and `program-section-shell.tsx` were re-checked and contain
+no medical-specific hardcoding. What is still genuinely open (per "What's needed before data
+population can resume" above, still valid): #1 domain research on what recognition/admissions
+actually mean per non-medical field, and #4 running the discover/research/publish pipeline for
+non-medical universities. #2 and #3 (partially — see `lib/data/types.ts` `CourseStream` union) are
+now done.

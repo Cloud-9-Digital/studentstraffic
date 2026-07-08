@@ -260,15 +260,15 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       coverImageUrl: universitiesTable.coverImageUrl,
       campusLifestyle: universitiesTable.campusLifestyle,
       cityProfile: universitiesTable.cityProfile,
-      clinicalExposure: universitiesTable.clinicalExposure,
+      practicalExposure: universitiesTable.practicalExposure,
       hostelOverview: universitiesTable.hostelOverview,
-      indianFoodSupport: universitiesTable.indianFoodSupport,
+      dietarySupport: universitiesTable.dietarySupport,
       safetyOverview: universitiesTable.safetyOverview,
       studentSupport: universitiesTable.studentSupport,
       whyChoose: universitiesTable.whyChoose,
       thingsToConsider: universitiesTable.thingsToConsider,
       bestFitFor: universitiesTable.bestFitFor,
-      teachingHospitals: universitiesTable.teachingHospitals,
+      industryPartners: universitiesTable.industryPartners,
       recognitionBadges: universitiesTable.recognitionBadges,
       recognitionLinks: universitiesTable.recognitionLinks,
       faq: universitiesTable.faq,
@@ -380,16 +380,16 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         coverImageUrl: university.coverImageUrl ?? undefined,
         campusLifestyle: university.campusLifestyle,
         cityProfile: university.cityProfile,
-        clinicalExposure: university.clinicalExposure,
+        practicalExposure: university.practicalExposure,
         hostelOverview: university.hostelOverview,
-        indianFoodSupport: university.indianFoodSupport,
+        dietarySupport: university.dietarySupport,
         safetyOverview: university.safetyOverview,
         studentSupport: university.studentSupport,
         whyChoose: university.whyChoose as University["whyChoose"],
         thingsToConsider:
           university.thingsToConsider as University["thingsToConsider"],
         bestFitFor: university.bestFitFor as University["bestFitFor"],
-        teachingHospitals: university.teachingHospitals,
+        industryPartners: university.industryPartners,
         recognitionBadges: university.recognitionBadges,
         recognitionLinks:
           university.recognitionLinks as University["recognitionLinks"],
@@ -438,8 +438,8 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
           program.teachingPhases as ProgramOffering["teachingPhases"],
         yearlyCostBreakdown:
           program.yearlyCostBreakdown as ProgramOffering["yearlyCostBreakdown"],
-        licenseExamSupport:
-          program.licenseExamSupport as ProgramOffering["licenseExamSupport"],
+        professionalExamSupport:
+          program.professionalExamSupport as ProgramOffering["professionalExamSupport"],
         intakeMonths: program.intakeMonths,
         feeVerifiedAt: program.feeVerifiedAt ?? undefined,
         fxRateDate: program.fxRateDate ?? undefined,
@@ -1133,7 +1133,7 @@ type FinderProgramRow = {
   universityWhyChoose: University["whyChoose"];
   universityThingsToConsider: University["thingsToConsider"];
   universityBestFitFor: University["bestFitFor"];
-  universityTeachingHospitals: University["teachingHospitals"];
+  universityTeachingHospitals: University["industryPartners"];
   universityRecognitionBadges: University["recognitionBadges"];
   universityRecognitionLinks: University["recognitionLinks"];
   universityFaq: University["faq"];
@@ -1156,7 +1156,7 @@ type FinderProgramRow = {
   offeringPublished: boolean;
   offeringTeachingPhases: ProgramOffering["teachingPhases"];
   offeringYearlyCostBreakdown: ProgramOffering["yearlyCostBreakdown"];
-  offeringLicenseExamSupport: ProgramOffering["licenseExamSupport"];
+  offeringLicenseExamSupport: ProgramOffering["professionalExamSupport"];
   offeringIntakeMonths: ProgramOffering["intakeMonths"];
   offeringFeeVerifiedAt: string | null;
   offeringFxRateDate: string | null;
@@ -1182,15 +1182,15 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
     officialWebsite: row.universityOfficialWebsite,
     campusLifestyle: row.universityCampusLifestyle,
     cityProfile: row.universityCityProfile,
-    clinicalExposure: row.universityClinicalExposure,
+    practicalExposure: row.universityClinicalExposure,
     hostelOverview: row.universityHostelOverview,
-    indianFoodSupport: row.universityIndianFoodSupport,
+    dietarySupport: row.universityIndianFoodSupport,
     safetyOverview: row.universitySafetyOverview,
     studentSupport: row.universityStudentSupport,
     whyChoose: row.universityWhyChoose,
     thingsToConsider: row.universityThingsToConsider,
     bestFitFor: row.universityBestFitFor,
-    teachingHospitals: row.universityTeachingHospitals,
+    industryPartners: row.universityTeachingHospitals,
     recognitionBadges: row.universityRecognitionBadges,
     recognitionLinks: row.universityRecognitionLinks,
     faq: row.universityFaq,
@@ -1241,7 +1241,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       published: row.offeringPublished,
       teachingPhases: row.offeringTeachingPhases,
       yearlyCostBreakdown: row.offeringYearlyCostBreakdown,
-      licenseExamSupport: row.offeringLicenseExamSupport,
+      professionalExamSupport: row.offeringLicenseExamSupport,
       intakeMonths: row.offeringIntakeMonths,
       feeVerifiedAt: row.offeringFeeVerifiedAt ?? undefined,
       fxRateDate: row.offeringFxRateDate ?? undefined,
@@ -1298,15 +1298,15 @@ async function selectFinderProgramsFromDatabase(
       universityOfficialWebsite: universitiesTable.officialWebsite,
       universityCampusLifestyle: universitiesTable.campusLifestyle,
       universityCityProfile: universitiesTable.cityProfile,
-      universityClinicalExposure: universitiesTable.clinicalExposure,
+      universityClinicalExposure: universitiesTable.practicalExposure,
       universityHostelOverview: universitiesTable.hostelOverview,
-      universityIndianFoodSupport: universitiesTable.indianFoodSupport,
+      universityIndianFoodSupport: universitiesTable.dietarySupport,
       universitySafetyOverview: universitiesTable.safetyOverview,
       universityStudentSupport: universitiesTable.studentSupport,
       universityWhyChoose: universitiesTable.whyChoose,
       universityThingsToConsider: universitiesTable.thingsToConsider,
       universityBestFitFor: universitiesTable.bestFitFor,
-      universityTeachingHospitals: universitiesTable.teachingHospitals,
+      universityTeachingHospitals: universitiesTable.industryPartners,
       universityRecognitionBadges: universitiesTable.recognitionBadges,
       universityRecognitionLinks: universitiesTable.recognitionLinks,
       universityFaq: universitiesTable.faq,
@@ -1329,7 +1329,7 @@ async function selectFinderProgramsFromDatabase(
       offeringPublished: programOfferingsTable.published,
       offeringTeachingPhases: programOfferingsTable.teachingPhases,
       offeringYearlyCostBreakdown: programOfferingsTable.yearlyCostBreakdown,
-      offeringLicenseExamSupport: programOfferingsTable.licenseExamSupport,
+      offeringLicenseExamSupport: programOfferingsTable.professionalExamSupport,
       offeringIntakeMonths: programOfferingsTable.intakeMonths,
       offeringFeeVerifiedAt: programOfferingsTable.feeVerifiedAt,
       offeringFxRateDate: programOfferingsTable.fxRateDate,

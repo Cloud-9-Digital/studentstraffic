@@ -26,7 +26,7 @@ export function UniversityFeesDetailSection({
 }) {
   const publishedPrograms = programs.filter((p) => p.offering.published);
   const primaryProgram = publishedPrograms[0];
-  const course = primaryProgram?.course.shortName ?? "MBBS";
+  const course = primaryProgram?.course.shortName ?? "this program";
   const countryName = country?.name ?? "the country";
 
   return (

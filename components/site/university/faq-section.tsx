@@ -23,7 +23,7 @@ export function UniversityFaqSection({
     return null;
   }
 
-  const course = primaryProgramShortName ?? "MBBS";
+  const course = primaryProgramShortName ?? "this program";
 
   return (
     <div id="faq" className="deferred-render scroll-mt-24 space-y-6 py-10">

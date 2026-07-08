@@ -46,11 +46,11 @@ export function UniversityHostelDetailSection({
         />
       )}
 
-      {university.indianFoodSupport && (
+      {university.dietarySupport && (
         <DetailCard
           icon={<UtensilsCrossed className="size-4 text-accent" />}
           title="Food & daily living"
-          body={university.indianFoodSupport}
+          body={university.dietarySupport}
         />
       )}
 
@@ -133,7 +133,7 @@ export function UniversityHostelDetailSection({
       )}
 
       {!university.hostelOverview &&
-        !university.indianFoodSupport &&
+        !university.dietarySupport &&
         !university.campusLifestyle &&
         !university.safetyOverview &&
         !hasHostelCostData && (

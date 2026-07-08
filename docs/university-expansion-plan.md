@@ -10,14 +10,23 @@ sequencing, that file is "how the pipeline works").
 health (physiotherapy, medical lab tech, etc.) — matches the `courses` table today (`mbbs`,
 `medical-pg`, `bds`, `bsc-nursing`, `pharmacy`).
 
-**Future (Phase 3, scoped but not started):** Engineering, MBA, Law, Hospitality, Agriculture,
+**Future (Phase 3, scoped but not started):** Engineering, MBA/Business, Law, Hospitality, Agriculture,
 Education, and other non-medical fields, worldwide (Vietnam planned as the pilot country). Same
 pipeline mechanics, reused once proven — needs new `courses` rows and country/program research
-reoriented to those fields. **Blocked on template work, not data work** — see
-`docs/non-medical-expansion-scope.md` (written 2026-07-08): the university page template
-(`recognition-detail-section.tsx`, `admissions-section.tsx`) is structurally built around India's
-medical licensing pathway (WDOMS/NMC/FMGE/NExT), which doesn't map to other fields. Don't restart
-data population for non-medical fields until that scoping doc's open items are resolved.
+reoriented to those fields.
+
+**2026-07-09 — the template blocker is now cleared (data still not started).** The scalability
+refactor made the template capable of non-medical content: `recognition-detail-section.tsx` and
+`admissions-section.tsx` are stream-aware (medical streams render the WDOMS/NMC/FMGE pathway
+unchanged; other streams render honest, data-driven accreditation copy with a generic fallback — no
+hardcoded UGC/AICTE/BCI claims). The `CourseStream` union (`lib/data/types.ts`) now includes
+`business`, `law`, `hospitality`, `agriculture`, and `education` alongside the existing streams — a
+pure TS-union-over-text-column change, **zero DB migration**. The medically-flavored `universities`/
+`program_offerings` columns were renamed to stream-neutral names (drizzle `0054`, see
+`docs/university-pipeline-architecture.md`). **What remains before data population** is domain
+research on what recognition/admissions mean per non-medical field, and running the discovery
+pipeline for a non-medical source — see `docs/non-medical-expansion-scope.md`. Do NOT publish any
+non-medical university/program/regulatory data until that research is done.
 
 **2026-07-09 update:** the business has confirmed it wants to actively pivot toward a multi-stream,
 "one-stop destination for all streams, programs, universities and countries abroad" positioning —

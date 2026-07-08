@@ -10,21 +10,69 @@ Keep it current — see "Keeping this doc current" at the bottom.
 - **`courses`** — course catalog (e.g. `mbbs`, `bds`, `bsc-nursing`, `pharmacy`). Programs reference a course.
 - **`universities`** — one row per published university. Key fields:
   `slug`, `name`, `city`, `type`, `establishedYear`, `officialWebsite`, `published`, `featured`,
-  narrative fields (`campusLifestyle`, `cityProfile`, `clinicalExposure`, `hostelOverview`,
-  `indianFoodSupport`, `safetyOverview`, `studentSupport`), array fields (`whyChoose`,
-  `thingsToConsider`, `bestFitFor`, `teachingHospitals`, `recognitionBadges`), `faq`,
+  narrative fields (`campusLifestyle`, `cityProfile`, `practicalExposure`, `hostelOverview`,
+  `dietarySupport`, `safetyOverview`, `studentSupport`), array fields (`whyChoose`,
+  `thingsToConsider`, `bestFitFor`, `industryPartners`, `recognitionBadges`), `faq`,
   `researchSources` (citations), `lastVerifiedAt`.
 - **`programOfferings`** — one row per program at a university, FK to `universities` + `courses`.
   Key fields: `slug`, `title`, `durationYears` (⚠️ **integer column** — see Known issues),
   `annualTuitionUsd`/`totalTuitionUsd`/`livingUsd` (normalized USD), `officialFeeCurrency` +
   `officialAnnualTuitionAmount`/`officialTotalTuitionAmount` (native-currency figures, bigint),
-  `officialProgramUrl`, `medium` (language of instruction), `intakeMonths`, `sourceUrls`, `published`.
+  `officialProgramUrl`, `medium` (language of instruction), `intakeMonths`, `professionalExamSupport`,
+  `sourceUrls`, `published`.
+
+  > **2026-07-09 column rename (drizzle `0054_rename_medical_columns`).** Four medically/India-flavored
+  > columns were renamed to stream-neutral names so the schema can hold non-medical content honestly:
+  > `universities.clinical_exposure → practical_exposure`,
+  > `universities.teaching_hospitals → industry_partners`,
+  > `universities.indian_food_support → dietary_support`,
+  > `program_offerings.license_exam_support → professional_exam_support`. Pure renames, no data change.
+  > The stream-aware university template (see `docs/non-medical-expansion-scope.md`) reads these under
+  > medical labels ("Clinical exposure", "Teaching hospitals", "Licensing & exam support") for medical
+  > streams and neutral labels ("Practical training", "Industry & placement partners") otherwise.
+  > **DEPLOY:** apply `0054` in the same release that ships the renamed `schema.ts` + call sites — the
+  > previously deployed code selects the old names, so migrating ahead of that code breaks live queries.
+  > **ETL note:** the research-pipeline draft/facts JSON shapes (`UniversityResearchDraftContent`,
+  > `UniversityResearchStructuredFacts` in `schema.ts`, and the zod schema in
+  > `lib/research/university-guide-drafts.ts`) intentionally KEEP the old source key names
+  > (`clinicalExposure`, `teachingHospitals`, `indianFoodSupport`, `licenseExamSupport`) so historical
+  > `research-drafts/*.json` stay loadable; `publish-university-draft.ts` maps those source keys onto the
+  > renamed destination columns.
 - **`universityResearchQueue`** — candidate universities sourced from WDOMS (World Directory of
   Medical Schools) or manually added. Status lifecycle: `new → researching → draft_ready →
   published | hold | rejected`. Has `priority` (high/medium/low).
 - **`universityResearchDrafts`** — one draft per queue entry: `sourceBundle` (raw source URLs/content),
   `structuredFacts`, `draftContent` (shaped to match the `universities`/`programOfferings` schema),
   `qualityScore`, `reviewNotes`, `verifiedAt`.
+
+## Generalizing discovery to non-medical fields (scoped, NOT built)
+
+Today the discovery queue is medical-only: `universityResearchQueue` rows are seeded from **WDOMS**
+(World Directory of Medical Schools) — see `wdomsDirectoryEntries` and
+`scripts/seed-university-research-queue.ts`. WDOMS is a single authoritative global registry of medical
+schools, which is why the whole discover→research→publish pipeline could bootstrap from one import. The
+column `universityResearchQueue.wdomsSchoolId` and the `wdoms_school_id` on drafts are the only
+medicine-specific hooks in the queue; everything downstream (research, draft, publish) is already
+field-generic now that the columns are renamed (above) and the template is stream-aware.
+
+When non-medical discovery is actually built (out of scope here — do NOT build or seed it now), a
+"non-medical discovery source" would replace WDOMS as the seed for the queue. There is no single
+global registry equivalent to WDOMS for business/engineering/law/etc., so expect **per-field,
+per-country accreditor lists** instead of one import, e.g.:
+- Engineering: national accreditation bodies / ministry-approved institution lists (e.g. a country's
+  higher-education ministry register), or a recognized ranking/registry for that field.
+- Business: AACSB / EQUIS / AMBA accredited-school directories, or national B-school registries.
+- Law / others: the relevant national regulator or university-grants-commission register for the
+  destination country.
+
+Concretely, generalizing would mean: (1) a `discoverySource` discriminator on the queue (`"wdoms"`
+today; `"accreditor:<body>"` / `"registry:<name>"` for others) so `wdomsSchoolId` isn't assumed;
+(2) a per-source seed importer analogous to `seed-university-research-queue.ts` that writes queue rows
+with a generic external id; (3) the same research/publish scripts unchanged. The **recognition** copy
+must stay data-driven (read from `recognitionBadges`/`recognitionLinks`) with the honest generic
+fallback — never hardcode field-specific regulatory claims (UGC/AICTE/BCI etc.), because those differ
+by field and country and several (e.g. BCI for foreign law degrees) are materially different from the
+medical NMC pathway. See `docs/non-medical-expansion-scope.md`.
 
 ## Two ways to add universities
 

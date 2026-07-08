@@ -20,7 +20,7 @@ export function UniversityRecognitionDetailSection({
     ? (MEDICAL_STREAMS as readonly string[]).includes(primaryProgram.course.stream)
     : true; // no primaryProgram -> keep existing (medical) default behavior, zero change
 
-  const course = primaryProgram?.course.shortName ?? "MBBS";
+  const course = primaryProgram?.course.shortName ?? "this program";
   const countryName = country?.name ?? "the study country";
 
   return (

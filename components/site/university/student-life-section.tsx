@@ -39,7 +39,7 @@ export function UniversityStudentLifeSection({
   primaryProgram?: FinderProgram;
 }) {
   const safetyBody = `${university.safetyOverview} ${university.studentSupport}`.trim();
-  const course = primaryProgram?.course.shortName ?? "MBBS";
+  const course = primaryProgram?.course.shortName ?? "this program";
   const countryName = country?.name ?? "the country";
 
   return (
@@ -72,7 +72,7 @@ export function UniversityStudentLifeSection({
         <LifeCell
           icon={<UtensilsCrossed />}
           label="Daily living support"
-          body={university.indianFoodSupport}
+          body={university.dietarySupport}
         />
         <LifeCell
           icon={<ShieldCheck />}
