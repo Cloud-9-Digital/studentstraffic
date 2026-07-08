@@ -1,31 +1,32 @@
 import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
-import Image from "next/image";
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
 import { notFound } from "next/navigation";
-import type { ReactNode } from "react";
 import { Suspense } from "react";
 import { unstable_cache } from "next/cache";
-import {
-  ArrowRight,
-  BookOpen,
-  Building2,
-  CheckCircle2,
-  ChevronRight,
-  CircleDollarSign,
-  Coins,
-  GraduationCap,
-  Globe2,
-  MapPin,
-  Sun,
-} from "lucide-react";
+import { BookOpen, ChevronRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
+import { CountryAccommodationSection } from "@/components/site/country/country-accommodation-section";
+import { CountryCostSection } from "@/components/site/country/country-cost-section";
+import { CountryFaqSection } from "@/components/site/country/country-faq-section";
+import { CountryFinalCta } from "@/components/site/country/country-final-cta";
+import { CountryHero } from "@/components/site/country/country-hero";
+import { CountryLifeSection } from "@/components/site/country/country-life-section";
+import { CountryOverviewSection } from "@/components/site/country/country-overview-section";
+import { CountryScholarshipsSection } from "@/components/site/country/country-scholarships-section";
+import {
+  CountryStudyFieldsSection,
+  type CountryStudyField,
+} from "@/components/site/country/country-study-fields-section";
+import {
+  CountryUniversitiesSection,
+  type CountryUniversityCardData,
+} from "@/components/site/country/country-universities-section";
+import { CountryVisaSection } from "@/components/site/country/country-visa-section";
+import { CountryStudentLifeSection } from "@/components/site/country/country-student-life-section";
 import { DeferredCurrencyConverter } from "@/components/site/deferred-currency-converter";
-import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
-import { UniversityCard } from "@/components/site/university-card";
 import { Button } from "@/components/ui/button";
 import { catalogReviewedAt } from "@/lib/content-governance";
 import {
@@ -34,6 +35,7 @@ import {
   getLandingPageBySlug,
   getProgramsForCountry,
 } from "@/lib/data/catalog";
+import type { FinderProgram } from "@/lib/data/types";
 import { and, eq, ilike } from "drizzle-orm";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
@@ -43,6 +45,7 @@ import {
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
   getCountryStructuredData,
+  getFaqStructuredData,
   getItemListStructuredDataId,
   getProgramItemListStructuredData,
   getStructuredDataGraph,
@@ -52,14 +55,16 @@ import { getInrExchangeRate } from "@/lib/exchange-rate";
 import { getLandingPageHref } from "@/lib/routes";
 import { getCountryContent } from "@/lib/data/country-content";
 import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
-import {
-  cn,
-  formatCurrencyUsd,
-  formatProgramMedium,
-  formatProgramDuration,
-  hasPublishedUsdAmount,
-} from "@/lib/utils";
+import { getCountryFlagCode } from "@/lib/university-media";
+import { formatCurrencyUsd, formatProgramMedium, hasPublishedUsdAmount } from "@/lib/utils";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
+
+// Generic fallback used by getCountryHeroImage() when a country has no
+// dedicated hero photo yet — matches the constant in lib/country-media.ts.
+// When the hero resolves to this exact image we swap in a branded gradient
+// treatment instead of showing an unrelated stock photo (see AGENTS.md image
+// rules: no generic/irrelevant imagery on the hero).
+const GENERIC_COUNTRY_HERO_IMAGE_URL = "/images/home/country-options.jpg";
 
 export async function generateStaticParams() {
   const countries = await getCountries();
@@ -142,38 +147,12 @@ export default async function CountryPage({
   const curatedLandingPageHref = primaryProgram
     ? getLandingPageHref(primaryProgram.course.slug, country.slug)
     : null;
-  const previewPrograms = programs.slice(0, 3);
 
   const path = `/countries/${country.slug}`;
   const countryPageDescription = primaryProgram
     ? `Explore ${country.name} as a study destination for ${primaryProgram.course.shortName} with universities, fee range, city spread, teaching language, and intake context.`
     : `Explore ${country.name} as a study destination with universities, fee range, city spread, teaching language, and intake context.`;
   const countryStructuredData = getCountryStructuredData(country);
-  const structuredDataItems = [
-    getBreadcrumbStructuredData([
-      { name: "Home", path: "/" },
-      { name: "Guides", path: "/guides" },
-      { name: "Countries", path: "/countries" },
-      { name: country.name, path },
-    ]),
-    countryStructuredData,
-    getCollectionPageStructuredData({
-      path,
-      name: `Study in ${country.name}`,
-      description: countryPageDescription,
-      aboutIds: [countryStructuredData["@id"]],
-      mainEntityId: programs.length ? getItemListStructuredDataId(path) : undefined,
-      datePublished: catalogReviewedAt,
-      dateModified: catalogReviewedAt,
-    }),
-    programs.length
-      ? getProgramItemListStructuredData({
-          path,
-          name: `${country.name} university options`,
-          programs,
-        })
-      : null,
-  ];
 
   const publicPrograms = programs.filter((p) => p.university.type === "Public");
   const privatePrograms = programs.filter((p) => p.university.type === "Private");
@@ -222,8 +201,8 @@ export default async function CountryPage({
       )
     : null;
 
-  const uniqueCourses = [...new Set(programs.map((p) => p.course.shortName))];
   const uniqueCities = [...new Set(programs.map((p) => p.university.city))];
+  const uniqueUniversitySlugs = new Set(programs.map((p) => p.university.slug));
   const uniqueMediums = [
     ...new Set(
       programs.map((p) =>
@@ -232,14 +211,6 @@ export default async function CountryPage({
     ),
   ];
   const intakeMonths = [...new Set(programs.flatMap((p) => p.offering.intakeMonths))];
-  const licenseExams = [...new Set(programs.flatMap((p) => p.offering.licenseExamSupport))];
-  const allRecognitionBadges = [
-    ...new Set(programs.flatMap((p) => p.university.recognitionBadges)),
-  ];
-  const uniqueDurations = [...new Set(programs.map((p) => p.offering.durationYears))].sort(
-    (a, b) => a - b
-  );
-
 
   const costRange = formatUsdRange(minTuition, maxTuition);
   const livingRange = formatUsdRange(minLiving, maxLiving);
@@ -248,129 +219,103 @@ export default async function CountryPage({
     ? `/universities?country=${country.slug}&course=${primaryProgram.course.slug}`
     : `/universities?country=${country.slug}`;
   const heroImage = getCountryHeroImage(country.slug);
+  const isBrandedHeroFallback = heroImage.url === GENERIC_COUNTRY_HERO_IMAGE_URL;
+  const flagCode = getCountryFlagCode(country.slug);
+
   const editorialCopy = getCountryEditorialCopy({
     slug: country.slug,
-    name: country.name,
     summary: country.summary,
     whyStudentsChooseIt: country.whyStudentsChooseIt,
-    programCount: programs.length,
-    cityCount: uniqueCities.length,
-    courseCount: uniqueCourses.length,
   });
   const countryContent = getCountryContent(country.slug);
   const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
-  const heroLeadDisplay = truncateToSentence(editorialCopy.heroLead, 220);
+  const heroLeadDisplay = truncateToSentence(editorialCopy.heroLead, 200);
   const climateSummary = truncateToSentence(country.climate, 40);
-  const overviewLeadShort = truncateToSentence(editorialCopy.overviewLead, 280);
+  const overviewLeadShort = truncateToSentence(editorialCopy.overviewLead, 260);
+
+  const studyFields = buildStudyFields(programs);
+  const { universities: popularUniversities, totalCount: totalUniversityCount } =
+    buildPopularUniversities(programs, 6);
+
+  const lifeQuickFacts = (countryContent?.quickFacts ?? []).filter(
+    (f) => !["region", "currency", "climate"].includes(f.label.toLowerCase()) && !/regulatory/i.test(f.label)
+  );
+
   const landingPagePromise = curatedLandingPageHref
     ? getLandingPageBySlug(curatedLandingPageHref.slice(1))
     : Promise.resolve(null);
+
+  const landingPageForFaq = curatedLandingPageHref ? await landingPagePromise : null;
+  const faqs =
+    landingPageForFaq && landingPageForFaq.faq.length
+      ? landingPageForFaq.faq
+      : getFallbackCountryFaqs(country.name);
+
+  const structuredDataItems = [
+    getBreadcrumbStructuredData([
+      { name: "Home", path: "/" },
+      { name: "Guides", path: "/guides" },
+      { name: "Countries", path: "/countries" },
+      { name: country.name, path },
+    ]),
+    countryStructuredData,
+    getCollectionPageStructuredData({
+      path,
+      name: `Study in ${country.name}`,
+      description: countryPageDescription,
+      aboutIds: [countryStructuredData["@id"]],
+      mainEntityId: programs.length ? getItemListStructuredDataId(path) : undefined,
+      datePublished: catalogReviewedAt,
+      dateModified: catalogReviewedAt,
+    }),
+    programs.length
+      ? getProgramItemListStructuredData({
+          path,
+          name: `${country.name} university options`,
+          programs,
+        })
+      : null,
+    faqs.length ? getFaqStructuredData(faqs, path) : null,
+  ];
 
   return (
     <>
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />
 
-      {/* ── HERO ────────────────────────────────────────────────── */}
-      <section>
-        <div className="relative overflow-hidden bg-[#0d1f1d]">
-          {/* Subtle texture */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_-10%,rgba(240,138,68,0.18),transparent),radial-gradient(ellipse_40%_50%_at_0%_60%,rgba(255,255,255,0.04),transparent)]"
-          />
-          <div aria-hidden className="hero-grid-lines absolute inset-0 opacity-20 pointer-events-none" />
-
-          <div className="container-shell relative py-10 md:py-14 lg:py-20">
-            <div className={cn(
-              "grid gap-10 lg:items-center",
-              heroImage ? "lg:grid-cols-[1fr_420px]" : ""
-            )}>
-              <div>
-                {/* Breadcrumb */}
-                <nav className="mb-6 flex items-center gap-1.5 text-xs text-white/36">
-                  <Link href="/" className="hover:text-white/70 transition-colors">Home</Link>
-                  <ChevronRight className="size-3 shrink-0" />
-                  <Link href="/guides" className="hover:text-white/70 transition-colors">Guides</Link>
-                  <ChevronRight className="size-3 shrink-0" />
-                  <Link href="/countries" className="hover:text-white/70 transition-colors">Countries</Link>
-                  <ChevronRight className="size-3 shrink-0" />
-                  <span className="text-white/60">{country.name}</span>
-                </nav>
-
-                {/* Headline */}
-                <h1 className="font-display text-[clamp(3rem,8vw,6.5rem)] font-semibold leading-[0.88] tracking-tight text-white">
-                  Study in<br />
-                  <em className="not-italic text-accent">{country.name}</em>
-                </h1>
-
-                <p className="mt-6 max-w-lg text-base leading-7 text-white/60">
-                  {heroLeadDisplay}
-                </p>
-
-                <div className="mt-7 flex flex-wrap gap-2">
-                  <HeroStatPill icon={<Globe2 className="size-3.5" />} label={country.region} />
-                  <HeroStatPill icon={<Coins className="size-3.5" />} label={country.currencyCode} />
-                  {programs.length > 0 ? (
-                    <HeroStatPill
-                      icon={<Building2 className="size-3.5" />}
-                      label={`${programs.length}+ colleges`}
-                    />
-                  ) : null}
-                  <HeroStatPill icon={<Sun className="size-3.5" />} label={climateSummary} />
-                </div>
-
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <Button
-                    asChild
-                    size="lg"
-                    className="!bg-white !text-[#0d1f1d] hover:!bg-white/90 hover:!text-[#0d1f1d] shadow-none"
-                  >
-                    <Link href={heroPrimaryHref}>
-                      Browse colleges
-                      <ArrowRight className="size-4" />
-                    </Link>
-                  </Button>
-                  {primaryProgram && curatedLandingPageHref ? (
-                    <Suspense
-                      fallback={
-                        <div
-                          aria-hidden="true"
-                          className="h-12 w-44 rounded-xl border border-white/20 bg-white/5"
-                        />
-                      }
-                    >
-                      <CountryHeroGuideLink
-                        landingPagePromise={landingPagePromise}
-                        href={curatedLandingPageHref}
-                        courseLabel={primaryProgram.course.shortName}
-                      />
-                    </Suspense>
-                  ) : null}
-                </div>
-              </div>
-
-              {heroImage ? (
-                <div className="relative hidden lg:block">
-                  <div className="relative h-[480px] overflow-hidden rounded-[2rem]">
-                    <Image
-                      src={heroImage.url}
-                      alt={heroImage.alt}
-                      fill
-                      className="object-cover"
-                      sizes="420px"
-                      priority
-                    />
-                  </div>
-                  <p className="mt-2.5 text-right text-[0.65rem] text-white/28">
-                    {heroImage.alt}
-                  </p>
-                </div>
-              ) : null}
-            </div>
-
-          </div>
-        </div>
-      </section>
+      <CountryHero
+        countryName={country.name}
+        flagCode={flagCode}
+        region={country.region}
+        currencyCode={country.currencyCode}
+        climateSummary={climateSummary}
+        leadText={heroLeadDisplay}
+        heroImage={heroImage}
+        isBrandedFallback={isBrandedHeroFallback}
+        stats={{
+          universities: uniqueUniversitySlugs.size,
+          cities: uniqueCities.length,
+          studyFields: studyFields.length,
+        }}
+        primaryHref={heroPrimaryHref}
+        guideSlot={
+          primaryProgram && curatedLandingPageHref ? (
+            <Suspense
+              fallback={
+                <div
+                  aria-hidden="true"
+                  className="h-12 w-44 rounded-xl border border-white/20 bg-white/5"
+                />
+              }
+            >
+              <CountryHeroGuideLink
+                landingPagePromise={landingPagePromise}
+                href={curatedLandingPageHref}
+                courseLabel={primaryProgram.course.shortName}
+              />
+            </Suspense>
+          ) : undefined
+        }
+      />
 
       {countryAdvisory ? (
         <section className="border-b border-border/60 bg-[#fff8f2] py-8 md:py-10">
@@ -380,449 +325,80 @@ export default async function CountryPage({
         </section>
       ) : null}
 
-      {/* ── BODY ────────────────────────────────────────────────── */}
       <div className="container-shell space-y-0 divide-y divide-border/60 pb-24">
+        <CountryOverviewSection
+          countryName={country.name}
+          overviewLead={overviewLeadShort}
+          whyStudentsChooseIt={country.whyStudentsChooseIt}
+          showWhyStudentsChooseIt={!countryAdvisory && Boolean(country.whyStudentsChooseIt)}
+        />
 
-        {/* ── ABOUT ───────────────────────────────────────────── */}
-        <div id="country-overview" className="py-14 md:py-18">
-          <SectionLabel icon={<Globe2 className="size-3.5" />} text="Country Overview" />
+        <CountryLifeSection
+          countryName={country.name}
+          climate={country.climate}
+          quickFacts={lifeQuickFacts}
+        />
 
-          <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl lg:text-5xl">
-            {country.name} as a study destination
-          </h2>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground md:text-[1.04rem]">
-            {overviewLeadShort}
-          </p>
+        <CountryStudyFieldsSection
+          countryName={country.name}
+          countrySlug={country.slug}
+          fields={studyFields}
+        />
 
-          {/* Fact tiles */}
-          <div className="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            <FactRow label="Region" value={country.region} />
-            <FactRow label="Currency" value={country.currencyCode} />
-            <FactRow label="Climate" value={climateSummary} />
-            <FactRow
-              label="Program lengths"
-              value={
-                uniqueDurations.length
-                  ? uniqueDurations.map((d) => formatProgramDuration(d)).join(" · ")
-                  : "Verify by institution"
-              }
-            />
-            <FactRow
-              label="Available tracks"
-              value={uniqueCourses.length ? uniqueCourses.join(", ") : "Verify by institution"}
-            />
-            {countryContent?.quickFacts
-              .filter(
-                (f) =>
-                  !["region", "currency", "climate"].includes(f.label.toLowerCase())
-              )
-              .map((f) => (
-                <FactRow key={f.label} label={f.label} value={f.value} />
-              ))}
-          </div>
+        <CountryUniversitiesSection
+          countryName={country.name}
+          countrySlug={country.slug}
+          universities={popularUniversities}
+          totalCount={totalUniversityCount}
+          flagCode={flagCode}
+        />
 
-          {allRecognitionBadges.length ? (
-            <div className="mt-5">
-              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-3">
-                Recognition
-              </p>
-              <div className="flex flex-wrap items-center gap-3">
-                {allRecognitionBadges.map((badge) => (
-                  <RecognitionBadge key={badge} badge={badge} />
-                ))}
-              </div>
-            </div>
-          ) : null}
+        <CountryCostSection
+          countryName={country.name}
+          costRange={costRange}
+          livingRange={livingRange}
+          totalRange={totalRange}
+          publicCount={publicCount}
+          privateCount={privateCount}
+          avgPublicTuition={avgPublicTuition ? formatCurrencyUsd(avgPublicTuition) : null}
+          avgPrivateTuition={avgPrivateTuition ? formatCurrencyUsd(avgPrivateTuition) : null}
+          teachingMediums={uniqueMediums}
+          intakeMonths={intakeMonths}
+          monthlyCostOfLiving={countryContent?.costOfLiving ?? null}
+          addOnsSlot={
+            <Suspense fallback={null}>
+              <CountryCostAddOns
+                currencyCode={country.currencyCode}
+                courseSlug={primaryProgram?.course.slug}
+              />
+            </Suspense>
+          }
+        />
 
-          {licenseExams.length ? (
-            <div className="mt-6">
-              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-3">
-                License exam support
-              </p>
-              <ul className="space-y-2">
-                {licenseExams.map((exam) => (
-                  <li key={exam} className="flex gap-3 text-sm leading-7 text-muted-foreground">
-                    <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-primary/60" />
-                    {exam}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
-        </div>
-
-        {/* ── LIFE IN {COUNTRY} ───────────────────────────────── */}
-        {country.whyStudentsChooseIt || country.climate || countryContent?.hostelInfo ? (
-          <div className="py-14 md:py-18">
-            <SectionLabel icon={<Sun className="size-3.5" />} text={`Life in ${country.name}`} />
-
-            <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl lg:text-5xl">
-              What everyday life looks like
-            </h2>
-
-            <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-start">
-              {heroImage ? (
-                <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem] lg:sticky lg:top-24">
-                  <Image
-                    src={heroImage.url}
-                    alt={heroImage.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 1024px) 40vw, 100vw"
-                  />
-                </div>
-              ) : null}
-
-              <div className="space-y-8">
-                {!countryAdvisory && country.whyStudentsChooseIt ? (
-                  <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
-                      Why students choose {country.name}
-                    </p>
-                    <div className="mt-3 space-y-4 text-base leading-8 text-muted-foreground [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-1 [&_strong]:font-semibold [&_strong]:text-foreground">
-                      <ReactMarkdown>{country.whyStudentsChooseIt}</ReactMarkdown>
-                    </div>
-                  </div>
-                ) : null}
-
-                {country.climate ? (
-                  <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
-                      Climate &amp; weather
-                    </p>
-                    <p className="mt-3 text-base leading-8 text-muted-foreground">
-                      {country.climate}
-                    </p>
-                  </div>
-                ) : null}
-
-                {countryContent?.hostelInfo ? (
-                  <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
-                      Accommodation &amp; daily life
-                    </p>
-                    <p className="mt-3 text-base leading-8 text-muted-foreground">
-                      {countryContent.hostelInfo}
-                    </p>
-                  </div>
-                ) : null}
-              </div>
-            </div>
-          </div>
+        {countryContent?.hostelInfo ? (
+          <CountryAccommodationSection countryName={country.name} hostelInfo={countryContent.hostelInfo} />
         ) : null}
 
-        {/* ── COSTS ───────────────────────────────────────────── */}
-        <div className="py-14 md:py-18">
-          <SectionLabel icon={<CircleDollarSign className="size-3.5" />} text="Cost Picture" />
-
-          <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            Understand the fee and living-cost spread
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground">
-            Country-level cost ranges show where the market starts. The final number depends
-            on city, hostel setup, and the specific university you choose.
-          </p>
-
-          {/* Main cost table */}
-          <div className="mt-8 overflow-hidden rounded-[1.6rem] border border-border/70">
-            <div className="grid grid-cols-3 border-b border-border/60 bg-[#f7f5f0] px-5 py-3">
-              <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Category</span>
-              <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-center">Annual range</span>
-              <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-right">Notes</span>
-            </div>
-            <CostRow label="Tuition" value={costRange ?? "Check notices"} note="Published annual" />
-            <CostRow label="Living costs" value={livingRange ?? "Varies by city"} note="Accom. + daily" border />
-            <CostRow label="All-in estimate" value={totalRange ?? "Build totals"} note="Tuition + living" border highlight />
-          </div>
-
-          {/* Public vs private route cards */}
-          {(avgPublicTuition || avgPrivateTuition) ? (
-            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {avgPublicTuition ? (
-                <RouteCard type="Public" count={publicCount} avg={formatCurrencyUsd(avgPublicTuition)} tone="green" />
-              ) : null}
-              {avgPrivateTuition ? (
-                <RouteCard type="Private" count={privateCount} avg={formatCurrencyUsd(avgPrivateTuition)} tone="amber" />
-              ) : null}
-            </div>
-          ) : null}
-
-          {/* Academic snapshot */}
-          <div className="mt-10">
-            <SectionLabel icon={<BookOpen className="size-3.5" />} text="Academic Snapshot" />
-            <div className="mt-5 flex flex-wrap gap-8">
-              {uniqueMediums.length ? (
-                <TagGroup label="Teaching medium" items={uniqueMediums} />
-              ) : null}
-              {intakeMonths.length ? (
-                <TagGroup label="Intake months" items={intakeMonths} />
-              ) : null}
-              {uniqueCourses.length ? (
-                <TagGroup label="Study tracks" items={uniqueCourses} />
-              ) : null}
-            </div>
-          </div>
-
-          <Suspense fallback={null}>
-            <CountryCostAddOns
-              currencyCode={country.currencyCode}
-              courseSlug={primaryProgram?.course.slug}
-            />
-          </Suspense>
-
-          {/* Monthly living cost breakdown */}
-          {countryContent?.costOfLiving ? (
-            <div className="mt-10">
-              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-1">
-                Monthly living costs
-              </p>
-              <p className="text-sm leading-7 text-muted-foreground mb-5">
-                {countryContent.costOfLiving.intro}
-              </p>
-              <div className="overflow-hidden rounded-[1.6rem] border border-border/70">
-                <div className="grid grid-cols-3 border-b border-border/60 bg-[#f7f5f0] px-5 py-3">
-                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Category</span>
-                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-center">Monthly range</span>
-                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground text-right">Notes</span>
-                </div>
-                {countryContent.costOfLiving.items.map((item, i) => (
-                  <CostRow
-                    key={item.category}
-                    label={item.category}
-                    value={item.range}
-                    note={item.notes ?? ""}
-                    border={i > 0}
-                    highlight={i === countryContent.costOfLiving.items.length - 1}
-                  />
-                ))}
-              </div>
-            </div>
-          ) : null}
-        </div>
-
-        {/* ── UNIVERSITY DIRECTORY ────────────────────────────── */}
-        {programs.length ? (
-          <div className="deferred-render py-14 md:py-18">
-            <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Finder Preview" />
-
-            <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-              Browse colleges in {country.name}
-            </h2>
-            <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground">
-              If you want to browse all currently listed universities in
-              {` ${country.name}, `}this section gives you a quick preview before
-              you open the full university list.
-            </p>
-
-            {/* Snapshot row */}
-            <div className="mt-6 flex flex-wrap gap-2">
-              <DirectoryChip label="Total" value={`${programs.length} listed`} />
-              <DirectoryChip label="Public" value={`${publicCount}`} />
-              <DirectoryChip label="Private" value={`${privateCount}`} />
-              {costRange ? <DirectoryChip label="Fee band" value={costRange} /> : null}
-              {uniqueCities.length ? <DirectoryChip label="Cities" value={`${uniqueCities.length}`} /> : null}
-            </div>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {previewPrograms.map((program, index) => (
-                <UniversityCard
-                  key={program.offering.slug}
-                  program={program}
-                  imagePriority={index === 0}
-                />
-              ))}
-            </div>
-            <div className="mt-6">
-              <Button asChild variant="outline">
-                <Link href={heroPrimaryHref}>
-                  See all {country.name} universities
-                  <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-            </div>
-
-          </div>
+        {countryContent?.scholarshipInfo ? (
+          <CountryScholarshipsSection countryName={country.name} scholarshipInfo={countryContent.scholarshipInfo} />
         ) : null}
 
-        {/* ── COUNTRY CONTENT SECTIONS ────────────────────────── */}
-        {countryContent && (
-          <>
-            {/* Eligibility */}
-            <div className="deferred-render py-14 md:py-18">
-              <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Eligibility" />
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Eligibility for Indian students
-              </h2>
-              <p className="mt-4 max-w-2xl text-base leading-8 text-muted-foreground">
-                {countryContent.eligibility.intro}
-              </p>
-              <div className="mt-8 space-y-3">
-                {countryContent.eligibility.items.map((item, i) => (
-                  <div key={i} className="flex gap-4">
-                    <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-white mt-0.5">
-                      {i + 1}
-                    </span>
-                    <p className="text-sm leading-7 text-muted-foreground">{item}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+        <CountryVisaSection countryName={country.name} countrySlug={country.slug} />
 
-            {/* Admission Process */}
-            <div className="deferred-render py-14 md:py-18">
-              <SectionLabel icon={<BookOpen className="size-3.5" />} text="Admission Process" />
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                How to apply — step by step
-              </h2>
-              <div className="mt-8 space-y-3">
-                {countryContent.admissionSteps.map((step, i) => (
-                  <div key={i} className="flex gap-4">
-                    <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-white mt-0.5">
-                      {i + 1}
-                    </span>
-                    <p className="text-sm leading-7 text-muted-foreground">{step}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+        <CountryStudentLifeSection countryName={country.name} />
 
-            {/* Documents Required */}
-            <div className="deferred-render py-14 md:py-18">
-              <SectionLabel icon={<Building2 className="size-3.5" />} text="Documents Required" />
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Documents required
-              </h2>
-              <div className="mt-8 grid gap-8 sm:grid-cols-2">
-                <div>
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-4">
-                    Educational documents
-                  </p>
-                  <ul className="space-y-3">
-                    {countryContent.documentsRequired.educational.map((doc) => (
-                      <li key={doc} className="flex gap-3">
-                        <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
-                        <span className="text-sm leading-6 text-muted-foreground">{doc}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-4">
-                    Visa documents
-                  </p>
-                  <ul className="space-y-3">
-                    {countryContent.documentsRequired.visa.map((doc) => (
-                      <li key={doc} className="flex gap-3">
-                        <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
-                        <span className="text-sm leading-6 text-muted-foreground">{doc}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <CountryFaqSection countryName={country.name} faqs={faqs} />
 
-            {countryContent.verificationChecklist?.length ? (
-              <div className="deferred-render py-14 md:py-18">
-                <SectionLabel icon={<CheckCircle2 className="size-3.5" />} text="Admissions Checks" />
-                <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                  How we handle admissions
-                </h2>
-                <ul className="mt-8 space-y-3">
-                  {countryContent.verificationChecklist.map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
-                      <span className="text-sm leading-7 text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-
-            {/* Hostel & Accommodation */}
-            <div className="deferred-render py-14 md:py-18">
-              <SectionLabel icon={<MapPin className="size-3.5" />} text="Hostel & Accommodation" />
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Hostel &amp; accommodation
-              </h2>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-muted-foreground">
-                {countryContent.hostelInfo}
-              </p>
-            </div>
-
-            {/* Scholarships */}
-            <div className="deferred-render py-14 md:py-18">
-              <SectionLabel icon={<CircleDollarSign className="size-3.5" />} text="Scholarships" />
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Scholarships &amp; financial support
-              </h2>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-muted-foreground">
-                {countryContent.scholarshipInfo}
-              </p>
-            </div>
-
-            {/* Career Opportunities */}
-            <div className="deferred-render py-14 md:py-18">
-              <SectionLabel icon={<GraduationCap className="size-3.5" />} text="Career Opportunities" />
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Career opportunities after studying in {country.name}
-              </h2>
-              <ul className="mt-8 space-y-3">
-                {countryContent.careerOpportunities.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" />
-                    <span className="text-sm leading-7 text-muted-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </>
-        )}
-
-        {/* ── RELATED BLOG POST ───────────────────────────────── */}
         <Suspense fallback={null}>
           <CountryRelatedBlogPost countrySlug={country.slug} />
         </Suspense>
 
-        {/* ── NEXT STEP ───────────────────────────────────────── */}
-        <div className="deferred-render py-14 md:py-18">
-          <SectionLabel text="Next Step" />
-          <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            Need help after you have explored {country.name}?
-          </h2>
-          <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground">
-            Share your details if you want help understanding the differences
-            between universities, expected costs, or the next admissions step
-            for studying in {country.name}.
-          </p>
-
-          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <GuidancePoint label="University differences" text="How to compare options beyond the headline fee" />
-            <GuidancePoint label="City context" text={`What changes between university cities in ${country.name}`} />
-            <GuidancePoint label="Cost estimates" text="Realistic yearly and total cost modelling" />
-            <GuidancePoint label="Next steps" text="What to verify before sending an application" />
-          </div>
-
-          <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-start">
-            <div className="flex flex-wrap gap-3">
-              <Button asChild size="lg">
-                <Link href={heroPrimaryHref}>Explore colleges</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/contact">Talk to our team</Link>
-              </Button>
-            </div>
-
-            <DeferredLeadForm
-              sourcePath={`/countries/${country.slug}`}
-              ctaVariant="country_sidebar"
-              title={`Apply to study in ${country.name}`}
-              description="Leave your number and our counsellors will call you with college options in this country that fit your NEET score, budget, and priorities."
-              countrySlug={country.slug}
-              courseSlug={primaryProgram?.course.slug}
-            />
-          </div>
-        </div>
+        <CountryFinalCta
+          countryName={country.name}
+          countrySlug={country.slug}
+          courseSlug={primaryProgram?.course.slug}
+          primaryHref={heroPrimaryHref}
+        />
       </div>
     </>
   );
@@ -869,7 +445,7 @@ async function CountryRelatedBlogPost({
   }
 
   return (
-    <div className="border-t border-border py-8">
+    <div className="py-8">
       <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
         From the blog
       </p>
@@ -894,72 +470,148 @@ async function CountryRelatedBlogPost({
   );
 }
 
-// ── Sub-components ──────────────────────────────────────────────────────────
+// ── Data shaping helpers ──────────────────────────────────────────────────
 
-const RECOGNITION_LOGOS: Record<string, { src: string; width: number; height: number }> = {
-  NMC: { src: "/images/recognition/nmc.png", width: 40, height: 40 },
-  WHO: { src: "/images/recognition/who.png", width: 40, height: 40 },
-  WFME: { src: "/images/recognition/wfme.png", width: 40, height: 40 },
-  FAIMER: { src: "/images/recognition/faimer.svg", width: 80, height: 40 },
-};
+function buildStudyFields(programs: FinderProgram[]): CountryStudyField[] {
+  const streams = new Map<
+    string,
+    {
+      universities: Set<string>;
+      courses: Map<
+        string,
+        { slug: string; shortName: string; durationYears: number; universities: Set<string> }
+      >;
+    }
+  >();
 
-function RecognitionBadge({ badge }: { badge: string }) {
-  const key = Object.keys(RECOGNITION_LOGOS).find((k) =>
-    badge.toUpperCase().startsWith(k)
-  );
-  const logo = key ? RECOGNITION_LOGOS[key] : null;
+  for (const program of programs) {
+    const streamKey = program.course.stream;
+    if (!streams.has(streamKey)) {
+      streams.set(streamKey, { universities: new Set(), courses: new Map() });
+    }
+    const streamEntry = streams.get(streamKey)!;
+    streamEntry.universities.add(program.university.slug);
 
-  if (logo) {
-    return (
-      <div className="flex items-center gap-2 rounded-[1rem] border border-border/70 bg-white px-3 py-2">
-        <Image
-          src={logo.src}
-          alt={key!}
-          width={logo.width}
-          height={logo.height}
-          className="size-7 object-contain"
-        />
-        <span className="text-xs font-medium text-foreground">{badge}</span>
-      </div>
-    );
+    if (!streamEntry.courses.has(program.course.slug)) {
+      streamEntry.courses.set(program.course.slug, {
+        slug: program.course.slug,
+        shortName: program.course.shortName,
+        durationYears: program.course.durationYears,
+        universities: new Set(),
+      });
+    }
+    streamEntry.courses.get(program.course.slug)!.universities.add(program.university.slug);
   }
 
-  return (
-    <span className="rounded-full border border-border/70 bg-white px-3 py-1.5 text-xs font-medium text-foreground">
-      {badge}
-    </span>
-  );
+  return [...streams.entries()]
+    .map(([stream, data]) => ({
+      stream,
+      universityCount: data.universities.size,
+      courses: [...data.courses.values()]
+        .map((c) => ({
+          slug: c.slug,
+          shortName: c.shortName,
+          durationYears: c.durationYears,
+          universityCount: c.universities.size,
+        }))
+        .sort((a, b) => b.universityCount - a.universityCount),
+    }))
+    .sort((a, b) => b.universityCount - a.universityCount);
 }
 
-function SectionLabel({
-  icon,
-  text,
-}: {
-  icon?: ReactNode;
-  text: string;
-}) {
-  return (
-    <div className="flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary/70">
-      {icon}
-      {text}
-    </div>
-  );
+function buildPopularUniversities(
+  programs: FinderProgram[],
+  limit: number
+): { universities: CountryUniversityCardData[]; totalCount: number } {
+  const byUniversity = new Map<
+    string,
+    {
+      slug: string;
+      name: string;
+      city: string;
+      type: "Public" | "Private";
+      logoUrl?: string;
+      coverImageUrl?: string;
+      featured: boolean;
+      courses: Set<string>;
+      minTuitionUsd: number | null;
+    }
+  >();
+
+  for (const program of programs) {
+    const university = program.university;
+    if (!byUniversity.has(university.slug)) {
+      byUniversity.set(university.slug, {
+        slug: university.slug,
+        name: university.name,
+        city: university.city,
+        type: university.type,
+        logoUrl: university.logoUrl,
+        coverImageUrl: university.coverImageUrl,
+        featured: university.featured,
+        courses: new Set(),
+        minTuitionUsd: null,
+      });
+    }
+
+    const entry = byUniversity.get(university.slug)!;
+    entry.courses.add(program.course.slug);
+
+    if (hasPublishedUsdAmount(program.offering.annualTuitionUsd)) {
+      entry.minTuitionUsd =
+        entry.minTuitionUsd === null
+          ? program.offering.annualTuitionUsd
+          : Math.min(entry.minTuitionUsd, program.offering.annualTuitionUsd);
+    }
+  }
+
+  const all: CountryUniversityCardData[] = [...byUniversity.values()].map((u) => ({
+    slug: u.slug,
+    name: u.name,
+    city: u.city,
+    type: u.type,
+    logoUrl: u.logoUrl,
+    coverImageUrl: u.coverImageUrl,
+    featured: u.featured,
+    courseCount: u.courses.size,
+    minTuitionUsd: u.minTuitionUsd,
+  }));
+
+  all.sort((a, b) => {
+    if (a.featured !== b.featured) return a.featured ? -1 : 1;
+    if (a.courseCount !== b.courseCount) return b.courseCount - a.courseCount;
+    const aFee = a.minTuitionUsd ?? Number.POSITIVE_INFINITY;
+    const bFee = b.minTuitionUsd ?? Number.POSITIVE_INFINITY;
+    return aFee - bFee;
+  });
+
+  return { universities: all.slice(0, limit), totalCount: all.length };
 }
 
-
-
-function FactRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-[1.1rem] border border-border/60 bg-[#faf8f4] px-5 py-4">
-      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">{label}</p>
-      <p className="mt-1.5 text-sm font-medium text-foreground">{value}</p>
-    </div>
-  );
+// Country-agnostic, non-fabricated FAQ fallback used when no curated landing
+// page (with its own researched FAQ set) exists for this country's primary
+// course yet. Kept general on purpose — no country-specific facts here.
+function getFallbackCountryFaqs(countryName: string) {
+  return [
+    {
+      question: `How do I choose the right university in ${countryName}?`,
+      answer: `Start with your budget, preferred course, and city — then compare shortlisted universities on fees, teaching medium, and hostel setup. Our counsellors can walk you through this comparison once you share your priorities.`,
+    },
+    {
+      question: `What does a realistic budget for ${countryName} look like?`,
+      answer: `Tuition and living costs vary by city and university type (public vs private). Use the cost ranges on this page as a starting point, and confirm the current fee schedule directly with the university before you commit.`,
+    },
+    {
+      question: `How does Students Traffic help with admissions in ${countryName}?`,
+      answer: `We help you shortlist universities that fit your profile and budget, prepare your application documents, and stay in touch through the admission and visa process.`,
+    },
+    {
+      question: `Is there support once I land in ${countryName}?`,
+      answer: `Most universities have an international student office for enrollment and local registration. We also stay reachable for any documentation or admissions questions that come up after you arrive.`,
+    },
+  ];
 }
 
-// Caps long free-text fields (e.g. a full climate paragraph) to a short,
-// glanceable phrase — cuts at the first sentence boundary where possible,
-// otherwise at a word boundary near the character limit.
 function truncateToSentence(text: string, maxLength: number) {
   const firstSentence = text.split(/(?<=[.!?])\s/)[0] ?? text;
   if (firstSentence.length <= maxLength) return firstSentence;
@@ -967,108 +619,6 @@ function truncateToSentence(text: string, maxLength: number) {
   const truncated = firstSentence.slice(0, maxLength);
   const lastSpace = truncated.lastIndexOf(" ");
   return `${truncated.slice(0, lastSpace > 0 ? lastSpace : maxLength)}…`;
-}
-
-function HeroStatPill({ icon, label }: { icon: ReactNode; label: string }) {
-  return (
-    <div className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-white/75">
-      <span className="text-accent">{icon}</span>
-      {label}
-    </div>
-  );
-}
-
-function CostRow({
-  label,
-  value,
-  note,
-  border,
-  highlight,
-}: {
-  label: string;
-  value: string;
-  note: string;
-  border?: boolean;
-  highlight?: boolean;
-}) {
-  return (
-    <div
-      className={cn(
-        "grid grid-cols-3 items-center px-5 py-4",
-        border && "border-t border-border/60",
-        highlight && "bg-[#f7f5f0]"
-      )}
-    >
-      <span className={cn("text-sm", highlight ? "font-semibold text-foreground" : "text-muted-foreground")}>{label}</span>
-      <span className={cn("text-center font-display text-lg font-semibold tracking-tight", highlight ? "text-heading" : "text-foreground")}>{value}</span>
-      <span className="text-right text-xs text-muted-foreground">{note}</span>
-    </div>
-  );
-}
-
-function RouteCard({
-  type,
-  count,
-  avg,
-  tone,
-}: {
-  type: string;
-  count: number;
-  avg: string;
-  tone: "green" | "amber";
-}) {
-  return (
-    <div
-      className={cn(
-        "rounded-[1.25rem] border px-4 py-4",
-        tone === "green"
-          ? "border-emerald-200/70 bg-emerald-50"
-          : "border-amber-200/70 bg-amber-50"
-      )}
-    >
-      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-        {type} route · {count} options
-      </p>
-      <p className="mt-2 font-display text-xl font-semibold text-heading">{avg}<span className="text-sm font-normal text-muted-foreground">/yr avg</span></p>
-    </div>
-  );
-}
-
-function TagGroup({ label, items }: { label: string; items: string[] }) {
-  return (
-    <div>
-      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-2.5">{label}</p>
-      <div className="flex flex-wrap gap-2">
-        {items.map((item) => (
-          <span
-            key={item}
-            className="rounded-full border border-border/70 bg-white px-3 py-1.5 text-xs font-medium text-foreground"
-          >
-            {item}
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-
-function DirectoryChip({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex items-center gap-2 rounded-full border border-border/70 bg-[#f7f5f0] px-4 py-1.5 text-sm">
-      <span className="text-muted-foreground">{label}</span>
-      <span className="font-semibold text-foreground">{value}</span>
-    </div>
-  );
-}
-
-function GuidancePoint({ label, text }: { label: string; text: string }) {
-  return (
-    <div className="rounded-[1.15rem] border border-border/70 bg-[#faf8f4] px-4 py-3.5">
-      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-primary/70 mb-1">{label}</p>
-      <p className="text-sm leading-6 text-muted-foreground">{text}</p>
-    </div>
-  );
 }
 
 async function CountryHeroGuideLink({
@@ -1137,7 +687,6 @@ async function CountryCostAddOns({
           <Button asChild variant="outline" size="sm" className="w-full justify-between">
             <Link href={`/budget/${recommendedBudgetGuide.slug}`}>
               Explore budget guide
-              <ArrowRight className="size-4" />
             </Link>
           </Button>
         </div>
@@ -1145,7 +694,6 @@ async function CountryCostAddOns({
     </>
   );
 }
-
 
 function formatUsdRange(minValue: number | null, maxValue: number | null) {
   if (minValue === null || maxValue === null) return null;
@@ -1156,20 +704,12 @@ function formatUsdRange(minValue: number | null, maxValue: number | null) {
 
 function getCountryEditorialCopy({
   slug,
-  name,
   summary,
   whyStudentsChooseIt,
-  programCount,
-  cityCount,
-  courseCount,
 }: {
   slug: string;
-  name: string;
   summary: string;
   whyStudentsChooseIt: string;
-  programCount: number;
-  cityCount: number;
-  courseCount: number;
 }) {
   const overrides: Record<string, { heroLead: string; overviewLead: string }> = {
     russia: {
@@ -1211,10 +751,5 @@ function getCountryEditorialCopy({
     overviewLead:
       override?.overviewLead ??
       `${whyStudentsChooseIt} Country-level guidance is most useful when it helps you understand the structure of the destination before you move into university-level differences.`,
-    directoryLead:
-      courseCount > 1
-        ? `Compare the ${programCount} listed options across ${cityCount} cities and ${courseCount} study tracks.`
-        : `Compare the ${programCount} listed options across ${cityCount} cities.`,
-    guidanceLead: `If you want a second opinion after reading this page, we can help you interpret the differences between universities in ${name}, estimate realistic costs, and identify the next questions to ask before applying.`,
   };
 }

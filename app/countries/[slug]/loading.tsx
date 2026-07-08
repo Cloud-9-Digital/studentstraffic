@@ -5,8 +5,14 @@ export default function CountryDetailLoading() {
         <div className="container-shell py-12 md:py-16">
           <div className="space-y-5">
             <div className="h-4 w-44 rounded-full bg-white/10 animate-pulse" />
+            <div className="h-8 w-32 rounded-full bg-white/[0.08] animate-pulse" />
             <div className="h-16 w-full max-w-2xl rounded-3xl bg-white/10 animate-pulse" />
             <div className="h-6 w-full max-w-3xl rounded-full bg-white/[0.08] animate-pulse" />
+            <div className="flex gap-6 border-y border-white/10 py-4">
+              {Array.from({ length: 3 }).map((_, index) => (
+                <div key={index} className="h-10 w-16 rounded-lg bg-white/[0.08] animate-pulse" />
+              ))}
+            </div>
             <div className="flex gap-3">
               <div className="h-12 w-44 rounded-xl bg-white/10 animate-pulse" />
               <div className="h-12 w-40 rounded-xl bg-white/[0.08] animate-pulse" />
