@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-import { useActionState, useId, useRef, useState } from "react";
+import { useActionState, useEffect, useId, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 import {
@@ -154,6 +154,17 @@ export function LeadForm({
       startedAtInputRef.current.value = String(Date.now());
     }
   };
+
+  // Arm on mount (not just on focus/pointerdown/keydown): browser autofill
+  // can populate every field without dispatching those events, so a user who
+  // fills the form entirely via autofill and clicks submit would otherwise
+  // have the timer armed by that same click -- making the elapsed time
+  // measured at submit always ~0ms and always tripping wasSubmittedTooFast,
+  // no matter how long they actually spent on the form.
+  useEffect(() => {
+    armStartedAt();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const trackSubmit = () => {
     if (hasTrackedSubmitRef.current) {
