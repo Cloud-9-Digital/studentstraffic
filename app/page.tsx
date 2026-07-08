@@ -44,19 +44,19 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Medical Education Abroad for Indian Students | MBBS, MD & More",
+  title: "Study Abroad Consultants for Indian Students | Students Traffic",
   description:
-    "Compare medical universities abroad for Indian students. Check fees, NMC recognition, and eligibility for MBBS, MD, and other medical programs in Russia, Georgia, Vietnam, Kyrgyzstan and more. Free counselling available.",
+    "Students Traffic is a one-stop study-abroad platform for Indian students — compare universities, fees, and eligibility across countries and programs, with free counselling and admissions support.",
   path: "/",
   keywords: [
-    "medical education abroad for Indian students",
+    "study abroad for Indian students",
+    "study abroad consultants India",
+    "universities abroad for Indian students",
     "MBBS abroad for Indian students",
-    "MD abroad India",
-    "NMC recognized medical colleges",
-    "medical universities abroad fees",
-    "study medicine abroad India",
-    "MBBS Russia Georgia Vietnam",
-    "medical degree abroad Indian students",
+    "study abroad admissions guidance",
+    "study abroad platform India",
+    "universities in Russia Georgia Vietnam",
+    "study abroad counselling India",
   ],
 });
 
@@ -113,14 +113,14 @@ export default async function HomePage() {
         <div className="container-shell relative px-4 py-12 text-center md:px-6 md:py-16">
           <div className="mx-auto max-w-5xl space-y-6 md:space-y-8">
             {/* Main Heading */}
-            <h1 className="font-display text-[2rem] font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              <span className="block text-heading">Study medicine abroad</span>
+            <h1 className="font-display text-[2.75rem] font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+              <span className="block text-heading">Study abroad</span>
               <span className="mt-2 block italic text-accent">the right way</span>
             </h1>
 
             {/* Description */}
             <p className="mx-auto max-w-[30ch] text-base leading-relaxed text-muted-foreground sm:max-w-lg sm:text-lg md:text-xl">
-              Free guidance for Indian students on MBBS, MD, and all medical degrees abroad — college selection, admissions, and FMGE coaching included.
+              Free guidance for Indian students across countries, universities, and programs — college selection, admissions, and application support included.
             </p>
 
             {/* Search */}

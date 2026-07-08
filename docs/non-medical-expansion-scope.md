@@ -60,3 +60,23 @@ copy, not just labels.
    same 2-stage pattern as medical, but scoped to these new course categories.
 
 ## Status: paused, awaiting the user's call on how to proceed (2026-07-08)
+
+## Update 2026-07-09 — business has decided to pivot, brand copy updated; technical blocker unchanged
+
+The user has now confirmed this is not just a Vietnam Phase 3 pilot decision — the business intends
+to actively move toward "all kinds of courses ... not limited to medical only," positioning Students
+Traffic as "a one-stop destination for all streams, programs, universities and countries."
+
+As of this change, the brand-level copy across the site (homepage hero + metadata, `lib/constants.ts`
+site description, `app/about/page.tsx` metadata/hero/mission copy) has been reworded away from
+MBBS/medical-only framing toward this broader "one-stop destination" positioning. This was a
+**copy/positioning change only** — no new data was populated and no template code was touched.
+
+**The technical blocker documented above is completely unchanged.** `recognition-detail-section.tsx`
+and `admissions-section.tsx` are still hardcoded for India's medical regulatory pathway (WDOMS/NMC/
+FMGE/NExT) and still cannot render non-medical recognition or admissions info (UGC/AICTE/BCI, etc.).
+Real non-medical university/program data still cannot be populated until the domain research and
+template redesign described in "What's needed before data population can resume" (above) is done.
+Do not read the brand-copy pivot as progress on that work — the catalog today is still MBBS/BDS/
+MD-MS/Nursing only, and no brand copy was written that overclaims specific non-medical program or
+university counts.

@@ -19,6 +19,14 @@ reoriented to those fields. **Blocked on template work, not data work** — see
 medical licensing pathway (WDOMS/NMC/FMGE/NExT), which doesn't map to other fields. Don't restart
 data population for non-medical fields until that scoping doc's open items are resolved.
 
+**2026-07-09 update:** the business has confirmed it wants to actively pivot toward a multi-stream,
+"one-stop destination for all streams, programs, universities and countries abroad" positioning —
+this is no longer just a scoped-but-paused Vietnam pilot idea, it's the stated direction. Brand-level
+copy (homepage, about page, site description) has been updated accordingly. This is copy only —
+the Phase 3 technical blocker above is unchanged; no non-medical data/universities/programs exist yet
+and none should be published until the recognition/admissions template redesign is done. See the
+"Update 2026-07-09" section in `docs/non-medical-expansion-scope.md` for full detail.
+
 ## Pipeline shape — reduced to 2 agent stages (not 4)
 
 Old shape (expensive): discover agent → 1 research agent *per university* → 1 verify agent *per

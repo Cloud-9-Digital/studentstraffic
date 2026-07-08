@@ -13,9 +13,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "About Students Traffic | India's MBBS Abroad Research Platform",
+  title: "About Students Traffic | India's Study Abroad Research Platform",
   description:
-    "Students Traffic is India's most detailed MBBS abroad resource — 500+ universities, country guides, honest fee comparisons, and free admissions support.",
+    "Students Traffic is a one-stop study-abroad platform for Indian students — university comparisons, country guides, honest fee breakdowns, and free admissions support across streams and destinations.",
   path: "/about",
 });
 
@@ -24,7 +24,7 @@ const pillars = [
     Icon: Search,
     label: "500+ Universities Listed",
     heading: "The most complete database",
-    body: "Every MBBS and medical program listed includes tuition fees, hostel costs, NMC recognition status, intake dates, eligibility criteria, and teaching medium — updated regularly so the numbers you see are the numbers you can plan around.",
+    body: "Every program listed includes tuition fees, hostel costs, recognition status, intake dates, eligibility criteria, and teaching medium — updated regularly so the numbers you see are the numbers you can plan around.",
   },
   {
     Icon: MessageCircle,
@@ -99,10 +99,11 @@ export default function AboutPage() {
                 <span className="italic text-accent">Better decisions.</span>
               </h1>
               <p className="max-w-lg text-base leading-8 text-muted-foreground">
-                500+ MBBS and medical programs across Russia, Georgia,
+                500+ universities and programs across Russia, Georgia,
                 Kazakhstan, Vietnam, Kyrgyzstan, and more — with real reviews,
                 peer connect, and free admissions support from enquiry to
-                enrolment.
+                enrolment, as we grow into a one-stop destination for every
+                stream, country, and university.
               </p>
               <div className="flex flex-wrap gap-3 pt-1">
                 <CounsellingDialog
@@ -207,7 +208,9 @@ export default function AboutPage() {
               testimonials from real students, connect you with peers already
               enrolled so you can ask the questions agents won&apos;t answer, and
               only then offer free admissions support when you are ready to
-              move forward.
+              move forward. Our goal is to be a genuine one-stop destination
+              for Indian students — across streams, programs, universities,
+              and countries — not just a single course or destination.
             </p>
           </div>
         </div>
