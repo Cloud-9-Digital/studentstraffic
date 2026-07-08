@@ -17,10 +17,15 @@ export type LeadDeliveryRoute = {
 export const NEET_PREDICTOR_SOURCE_PATH = "/neet-college-predictor";
 const SEMINAR_SOURCE_PATH_PREFIX = "/seminar-2026";
 
+// Pabbly is off for every flow: its automation scenario sends its own WhatsApp
+// message on receipt regardless of the whatsapp flag below, which caused
+// unwanted/duplicate messages we don't control from this codebase. WhatsApp
+// now goes through WATI directly (the whatsapp flag), and Google Sheets
+// logging goes through lib/google-sheets.ts -- neither depends on Pabbly.
 const ROUTES: Record<LeadDeliveryFlow, LeadDeliveryRoute> = {
-  neetPredictor: { crm: false, leadSquared: true, pabbly: true, whatsapp: false },
-  seminar: { crm: true, leadSquared: false, pabbly: true, whatsapp: true },
-  default: { crm: true, leadSquared: false, pabbly: true, whatsapp: true },
+  neetPredictor: { crm: false, leadSquared: true, pabbly: false, whatsapp: false },
+  seminar: { crm: true, leadSquared: false, pabbly: false, whatsapp: true },
+  default: { crm: true, leadSquared: false, pabbly: false, whatsapp: true },
 };
 
 export function getLeadDeliveryFlow(sourcePath: string): LeadDeliveryFlow {
