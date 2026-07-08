@@ -2,9 +2,22 @@ import { footerPopularRoutes, navCourses, siteConfig } from "@/lib/constants";
 import { absoluteUrl } from "@/lib/metadata";
 import { logPublicRouteRequest } from "@/lib/route-observability";
 import { getNavCountries } from "@/lib/data/nav-countries";
+import { getAllPublishedBlogPostsMetadata } from "@/lib/data/catalog";
 
 function toBulletList(items: Array<{ label: string; href: string }>) {
   return items.map((item) => `- ${item.label}: ${absoluteUrl(item.href)}`);
+}
+
+const NEWS_CATEGORIES = new Set(["Latest Updates"]);
+const KEY_BLOG_GUIDES_COUNT = 8;
+
+async function getKeyBlogGuides() {
+  const posts = await getAllPublishedBlogPostsMetadata();
+  // Prefer evergreen guides over dated news posts for a stable "best of" list.
+  return posts
+    .filter((post) => !post.category || !NEWS_CATEGORIES.has(post.category))
+    .slice(0, KEY_BLOG_GUIDES_COUNT)
+    .map((post) => ({ label: post.title, href: `/blog/${post.slug}` }));
 }
 
 export async function GET(request: Request) {
@@ -14,14 +27,17 @@ export async function GET(request: Request) {
     sampleRate: 1,
   });
 
-  const navCountries = await getNavCountries();
+  const [navCountries, keyBlogGuides] = await Promise.all([
+    getNavCountries(),
+    getKeyBlogGuides(),
+  ]);
 
   const lines = [
     `# ${siteConfig.name}`,
     "",
     `> ${siteConfig.description}`,
     "",
-    "Students Traffic publishes study-abroad guidance for Indian students, with an emphasis on medical admissions, university discovery, fees, and counselling.",
+    "Students Traffic publishes study-abroad guidance for Indian students across countries, streams, and programs — MBBS and beyond — covering university discovery, fees, admissions, and counselling.",
     "",
     "## Preferred URLs",
     `- Home: ${absoluteUrl("/")}`,
@@ -71,6 +87,9 @@ export async function GET(request: Request) {
         href: route.href,
       }))
     ),
+    "",
+    "## Key blog guides",
+    ...toBulletList(keyBlogGuides),
     "",
     "## Contact",
     `- Email: ${siteConfig.email}`,

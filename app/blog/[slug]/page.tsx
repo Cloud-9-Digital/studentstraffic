@@ -6,6 +6,7 @@ import { CalendarDays, Clock, ChevronLeft, ChevronRight, ArrowRight } from "luci
 import readingTime from "reading-time";
 
 import { MarkdownContent } from "@/components/site/markdown-content";
+import { TableOfContents } from "@/components/blog/table-of-contents";
 import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
 import { buildLinkRules, linkifyMarkdown } from "@/lib/blog-autolinks";
 import { ReadingProgress } from "@/components/blog/reading-progress";
@@ -22,6 +23,13 @@ import type { BlogPostSearchMetadata } from "@/lib/data/types";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 const PLACEHOLDER_BLOG_SLUG = "__blog-fallback__";
+
+// "Latest Updates" is the category already used across seed scripts (e.g. the
+// NEET UG 2026 cancellation post) for genuinely dated/time-sensitive posts.
+// Reuse that existing signal instead of inventing a new flag: only posts in
+// this category are time-sensitive journalism (NewsArticle); everything else
+// is an evergreen guide (BlogPosting).
+const NEWS_CATEGORIES = new Set(["Latest Updates"]);
 
 type RelatedPost = {
   title: string;
@@ -116,15 +124,36 @@ function mapRelatedPost(post: BlogPostSearchMetadata): RelatedPost {
 }
 
 export async function generateStaticParams() {
-  return ensureNonEmptyStaticParams([], { slug: PLACEHOLDER_BLOG_SLUG });
+  // 78 published posts as of writing — small enough to prerender at build
+  // time for faster TTFB on every post, with no build fragility. New posts
+  // published after a build simply render dynamically (still using the same
+  // "use cache" data layer) until the next deploy, so nothing breaks if this
+  // list drifts from the live DB.
+  const posts = await getAllPublishedBlogPostsMetadata();
+  const slugs = posts.map((post) => ({ slug: post.slug }));
+  return ensureNonEmptyStaticParams(slugs, { slug: PLACEHOLDER_BLOG_SLUG });
 }
 
 function resolvePostAuthor(authorSlug: string | null | undefined) {
-  if (authorSlug && isValidAuthorSlug(authorSlug)) {
-    const a = getAuthor(authorSlug);
-    return { name: a.name, path: `/author/${a.slug}` };
+  const slug =
+    authorSlug && isValidAuthorSlug(authorSlug) ? authorSlug : contentAuthorSlug;
+  if (isValidAuthorSlug(slug)) {
+    const a = getAuthor(slug);
+    return {
+      name: a.name,
+      path: `/author/${a.slug}`,
+      jobTitle: a.title,
+      knowsAbout: a.knowsAbout,
+      sameAs: a.sameAs,
+    };
   }
-  return { name: contentAuthorName, path: `/author/${contentAuthorSlug}` };
+  return {
+    name: contentAuthorName,
+    path: `/author/${contentAuthorSlug}`,
+    jobTitle: undefined as string | undefined,
+    knowsAbout: undefined as string[] | undefined,
+    sameAs: undefined as string[] | undefined,
+  };
 }
 
 export async function generateMetadata({
@@ -189,6 +218,30 @@ function extractFaqs(content: string): Array<{ question: string; answer: string 
   return faqs;
 }
 
+// Approximate the rendered word count instead of counting raw markdown
+// tokens (so "**bold**", "[link](url)", "#" headings, etc. don't inflate it).
+function countRenderedWords(markdown: string): number {
+  const plainText = markdown
+    .replace(/```[\s\S]*?```/g, " ") // fenced code blocks
+    .replace(/`[^`]*`/g, " ") // inline code
+    .replace(/!\[([^\]]*)\]\([^)]*\)/g, "$1") // images -> alt text
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1") // links -> link text
+    .replace(/^#{1,6}\s+/gm, "") // heading markers
+    .replace(/(\*\*\*|___)(.*?)\1/g, "$2") // bold+italic
+    .replace(/(\*\*|__)(.*?)\1/g, "$2") // bold
+    .replace(/(\*|_)(.*?)\1/g, "$2") // italic
+    .replace(/^>\s?/gm, "") // blockquote markers
+    .replace(/^\s*[-*+]\s+/gm, "") // unordered list markers
+    .replace(/^\s*\d+\.\s+/gm, "") // ordered list markers
+    .replace(/^-{3,}$/gm, "") // horizontal rules
+    .replace(/\|/g, " ") // table pipes
+    .replace(/<[^>]+>/g, " ") // stray HTML tags
+    .replace(/[#>*_~`]/g, "") // leftover markdown punctuation
+    .replace(/\s+/g, " ")
+    .trim();
+  return plainText ? plainText.split(" ").length : 0;
+}
+
 export default async function BlogPostPage({
   params,
 }: {
@@ -206,6 +259,7 @@ export default async function BlogPostPage({
   const rt = readingTime(content);
   const faqs = extractFaqs(content);
   const author = resolvePostAuthor(post.authorSlug);
+  const isNewsPost = post.category ? NEWS_CATEGORIES.has(post.category) : false;
   const [related, { prev, next }, linkRules] = await Promise.all([
     getRelatedPosts(post.slug, post.category),
     getPrevNext(post.slug, post.publishedAt),
@@ -236,8 +290,16 @@ export default async function BlogPostPage({
         {/* Mobile: cover image above text */}
         {post.coverUrl && (
           <div className="md:hidden px-5 sm:px-6 pt-6">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={post.coverUrl} alt={post.title} className="w-full h-auto block rounded-2xl" />
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl">
+              <Image
+                src={post.coverUrl}
+                alt={post.title}
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         )}
 
@@ -279,12 +341,16 @@ export default async function BlogPostPage({
             {/* Right — cover image (desktop only) */}
             {post.coverUrl && (
               <div className="hidden md:block shrink-0 self-start w-[380px] lg:w-[440px]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={post.coverUrl}
-                  alt={post.title}
-                  className="w-full h-auto rounded-2xl block"
-                />
+                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl">
+                  <Image
+                    src={post.coverUrl}
+                    alt={post.title}
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 380px, 440px"
+                    className="object-cover"
+                  />
+                </div>
               </div>
             )}
           </div>
@@ -293,6 +359,9 @@ export default async function BlogPostPage({
 
       {/* ── Article wrapper ───────────────────────────────────────── */}
       <div className="mx-auto max-w-[720px] px-5 pb-24 md:px-6 pt-10">
+        {/* ── Table of contents ─────────────────────────────────────── */}
+        <TableOfContents content={linkedContent} />
+
         {/* ── Article body ──────────────────────────────────────────── */}
         <article className="mb-14">
           <MarkdownContent content={linkedContent} />
@@ -460,7 +529,10 @@ export default async function BlogPostPage({
                   })),
                 }] : []),
                 {
-                  "@type": "NewsArticle",
+                  // Evergreen guides use BlogPosting; only genuinely dated/news
+                  // posts (category === "Latest Updates") use NewsArticle, which
+                  // Google reserves for time-sensitive journalism.
+                  "@type": isNewsPost ? "NewsArticle" : "BlogPosting",
                   "@id": absoluteUrl(`/blog/${post.slug}`),
                   url: absoluteUrl(`/blog/${post.slug}`),
                   headline: post.title,
@@ -469,14 +541,27 @@ export default async function BlogPostPage({
                   datePublished: post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined,
                   dateModified: post.updatedAt ? new Date(post.updatedAt).toISOString() : undefined,
                   inLanguage: "en-IN",
-                  wordCount: content.split(/\s+/).length,
+                  wordCount: countRenderedWords(content),
                   articleSection: post.category ?? "MBBS Abroad",
                   author: {
                     "@type": "Person",
                     name: author.name,
                     url: absoluteUrl(author.path),
+                    ...(author.jobTitle ? { jobTitle: author.jobTitle } : {}),
+                    ...(author.knowsAbout?.length ? { knowsAbout: author.knowsAbout } : {}),
+                    ...(author.sameAs?.length ? { sameAs: author.sameAs } : {}),
                   },
-                  publisher: { "@type": "Organization", name: "Students Traffic", url: absoluteUrl("/") },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Students Traffic",
+                    url: absoluteUrl("/"),
+                    logo: {
+                      "@type": "ImageObject",
+                      url: absoluteUrl("/logo.webp"),
+                      width: 1600,
+                      height: 176,
+                    },
+                  },
                   mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(`/blog/${post.slug}`) },
                   isPartOf: { "@type": "WebSite", "@id": absoluteUrl("/"), name: "Students Traffic", url: absoluteUrl("/") },
                 },

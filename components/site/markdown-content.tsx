@@ -3,14 +3,37 @@
 import type { ComponentPropsWithoutRef } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeSlug from "rehype-slug";
 
 function ScrollableTable({ children, ...props }: ComponentPropsWithoutRef<"table">) {
   return (
     <div className="my-6 w-full overflow-x-auto rounded-xl border border-border">
-      <table {...props} className="min-w-full text-sm">
+      <table {...props} className="min-w-full border-collapse text-sm">
         {children}
       </table>
     </div>
+  );
+}
+
+function TableHeaderCell({ children, ...props }: ComponentPropsWithoutRef<"th">) {
+  return (
+    <th
+      {...props}
+      className="border-b border-border bg-muted px-4 py-3 text-left align-top font-semibold text-foreground"
+    >
+      {children}
+    </th>
+  );
+}
+
+function TableCell({ children, ...props }: ComponentPropsWithoutRef<"td">) {
+  return (
+    <td
+      {...props}
+      className="border-t border-border/60 px-4 py-3 align-top text-foreground"
+    >
+      {children}
+    </td>
   );
 }
 
@@ -18,8 +41,8 @@ export function MarkdownContent({ content }: { content: string }) {
   return (
     <div className="prose prose-slate max-w-none
       prose-headings:font-display prose-headings:text-foreground prose-headings:font-bold
-      prose-h1:text-3xl prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-      prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+      prose-h1:text-3xl prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:scroll-mt-28
+      prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-h3:scroll-mt-28
       prose-p:text-foreground prose-p:leading-relaxed prose-p:text-base
       prose-a:text-accent prose-a:no-underline hover:prose-a:underline
       prose-strong:text-foreground prose-strong:font-semibold
@@ -35,7 +58,8 @@ export function MarkdownContent({ content }: { content: string }) {
     ">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
-        components={{ table: ScrollableTable }}
+        rehypePlugins={[rehypeSlug]}
+        components={{ table: ScrollableTable, th: TableHeaderCell, td: TableCell }}
       >
         {content}
       </ReactMarkdown>

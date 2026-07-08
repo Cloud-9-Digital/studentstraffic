@@ -7,6 +7,12 @@ export type Author = {
   promise: string;
   longBio: string[];
   avatarUrl?: string;
+  /** Safe, topical E-E-A-T signals for Person structured data — no fabricated credentials. */
+  knowsAbout?: string[];
+  /** Verified external profile URLs (LinkedIn, etc). Left empty until confirmed — never guessed. */
+  sameAs?: string[];
+  /** Optional formal credential string (e.g. degree, license). Left unset unless verified. */
+  credentials?: string;
 };
 
 const AUTHORS = {
@@ -22,6 +28,11 @@ const AUTHORS = {
       "Over five years, Bharat has personally researched and verified hundreds of universities across Russia, Georgia, Kyrgyzstan, Uzbekistan, Vietnam, and the Philippines. He has visited campuses, spoken with Indian student unions, cross-checked data against NMC and WHO directories, and dug through ministry records to verify what universities claim about themselves. If a university has an issue, he would rather tell a student and lose the click than stay quiet and damage someone's future.",
       "Before Students Traffic, Bharat worked in digital product development — which is why the platform is built the way it is. He believes the best guidance is the kind that empowers students to make their own informed decision, not one that steers them toward whichever university pays the highest referral fee.",
     ],
+    knowsAbout: [
+      "MBBS abroad admissions",
+      "University recognition and NMC/WHO verification",
+      "Study abroad for Indian students",
+    ],
   },
   yamini: {
     slug: "yamini",
@@ -34,6 +45,11 @@ const AUTHORS = {
       "Yamini joined Students Traffic because she believed in what it was trying to do. There were plenty of websites about MBBS abroad — most of them recycling the same marketing copy universities hand out. She wanted to write content that was actually useful: the kind that tells you what the hostel food is really like, what Indian students actually think of the campus after Year 2, and whether the city is safe for a teenager living away from home for the first time.",
       "She spends a significant amount of her time talking directly to Indian students who are already studying abroad — asking them the questions that prospective students are too shy or too far removed to ask themselves. That on-ground insight shapes everything she writes at Students Traffic, from city guides and student life sections to FAQ pages and hostel breakdowns.",
       "Yamini believes that transparent, plainly written content is a form of student support. She avoids jargon, never writes to make a university look better than it is, and always flags gaps in available information rather than papering over them. If something isn't verified, she says so.",
+    ],
+    knowsAbout: [
+      "MBBS abroad student life",
+      "University comparisons for Indian students",
+      "Study abroad for Indian students",
     ],
   },
   "vijaya-raghavan": {
@@ -48,6 +64,11 @@ const AUTHORS = {
       "He has seen first-hand how the lack of reliable information damages students' futures. Families spend their savings on MBBS seats at universities with weak NMC standing, poor clinical training, and no India-return support — often because they trusted the wrong source. Vijaya built Students Traffic's advisory framework around reversing that dynamic: independent verification before recommendation, transparent fee structures, and guidance that holds up five years after a student enrols.",
       "His focus at Students Traffic is on the decisions that shape a student's entire career — country selection, university shortlisting, NExT readiness, and the transition back to India after graduation. He works closely with the team to ensure that every major guide published on the platform reflects not just current data, but the kind of considered judgement that only comes with years of watching students navigate these systems.",
     ],
+    knowsAbout: [
+      "MBBS abroad admissions counselling",
+      "NExT exam readiness",
+      "Study abroad for Indian students",
+    ],
   },
   "rajendra-kumar-deepak": {
     slug: "rajendra-kumar-deepak",
@@ -60,6 +81,11 @@ const AUTHORS = {
       "Rajendra Kumar Deepak brings more than 15 years of hands-on experience in student advisory, institutional relations, and overseas education to his role as Advisor at Students Traffic. He has spent the better part of his career working directly with students and their families at the moment they need clarity most — when they are choosing a path that will define the next decade of their lives.",
       "His background spans admissions consulting, university partnership development, and pre-departure student support across multiple countries. He has worked with medical universities in Russia, Georgia, Kyrgyzstan, and Vietnam, giving him an unusually detailed understanding of what the on-ground experience actually looks like for Indian students — beyond what any brochure or agent will tell you. That insider knowledge informs every piece of guidance Students Traffic publishes.",
       "At Students Traffic, Rajendra oversees the practical, process-oriented content that students rely on most: fee structures, admission timelines, visa documentation, hostel realities, and what returning to India after six years abroad actually involves. He believes that a student who understands the process from day one is a student who finishes the degree, clears NExT, and builds a real career — and that is what every guide he contributes to is designed to deliver.",
+    ],
+    knowsAbout: [
+      "MBBS abroad admissions process",
+      "Visa and pre-departure guidance",
+      "Overseas medical education fee structures",
     ],
   },
 } as const satisfies Record<string, Author>;

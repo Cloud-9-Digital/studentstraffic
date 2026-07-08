@@ -448,3 +448,33 @@ For new blog posts, follow this order:
 5. Verify locally and in production.
 
 If there is a conflict between speed and safety, prefer the Cloudinary-first path. It is the least fragile workflow for a DB-backed blog.
+
+---
+
+## Future SEO backlog (needs migration)
+
+These items were identified during the blog SEO/performance pass but require a `blog_posts` schema change (new columns and/or a taxonomy table), so they were intentionally **not** implemented. Each needs a `db:generate` + `db:push` migration, planned and run deliberately (not as a drive-by change), before the corresponding code lands.
+
+### 1. Structured `faq` jsonb field
+
+FAQs are currently extracted from `content` at render time with a brittle regex (`**Q: ...**` pattern matching in `app/blog/[slug]/page.tsx`). This breaks silently if an author's Markdown formatting drifts even slightly, and it can't express rich answers (lists, links) cleanly inside the `acceptedAnswer.text` string.
+
+Proposed shape: add a `faq: jsonb` column to `blog_posts` holding `Array<{ question: string; answer: string }>`, authored explicitly in the publish script instead of being inferred from prose. Update `app/blog/[slug]/page.tsx` to read `post.faq` directly for the `FAQPage` JSON-LD, falling back to the regex extractor only for old posts that haven't been backfilled.
+
+### 2. Tags/topics many-to-many taxonomy + topic-hub pages
+
+`category` is a single free-text column, which only supports one broad bucket per post (e.g. "MBBS Abroad", "Latest Updates"). There's no way to tag a post with multiple cross-cutting topics (e.g. "Georgia" + "NEET" + "Fees") or to build topic-hub landing pages that aggregate posts across categories for topical clustering (an SEO technique Google rewards for demonstrating topical authority).
+
+Proposed shape: a `blog_tags` table plus a `blog_post_tags` join table, with topic-hub pages at a new route (e.g. `/blog/topic/[slug]`) that list every post carrying a given tag. This is a larger schema + routing change and should be scoped as its own project, not bundled into a content pass.
+
+### 3. Structured `sources`/citations field
+
+YMYL content (medical admissions, fees, regulation) benefits from visible sourcing, and LLM answer engines increasingly prefer citable, source-attributed content when selecting passages to quote. Today sources are only ever informally mentioned inline in prose, if at all.
+
+Proposed shape: add a `sources: jsonb` column holding `Array<{ label: string; url: string }>`, rendered as a "Sources" block at the end of the article (below Related posts) and optionally included in the `NewsArticle`/`BlogPosting` JSON-LD as `citation`.
+
+### 4. "Reviewed by" / expert-reviewer signal
+
+For medical/YMYL content, an explicit "Reviewed by [name], [credential]" line (distinct from the author byline) is a well-documented Google E-E-A-T signal, especially for exam, regulation, and admissions accuracy content.
+
+Proposed shape: add a `reviewer_slug: text` column to `blog_posts` referencing an entry in `lib/authors.ts` (or a new lightweight reviewers table if reviewers shouldn't also be listed as post authors), rendered near the byline and added to the article JSON-LD as an additional `Person` in a `reviewedBy`-style extension (schema.org doesn't have a first-class "reviewedBy" property for Article, so this would likely surface as a visible on-page credit rather than a JSON-LD field, pending confirmation of the intended schema pattern). Only wire this up once real reviewers with genuine medical/admissions credentials are identified — never populate with a placeholder name.
