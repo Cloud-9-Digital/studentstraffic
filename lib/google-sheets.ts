@@ -6,6 +6,7 @@ import { env } from "@/lib/env";
 import {
   appendSeminarLeadToGoogleSheets as appendSeminarLeadToGoogleSheetsCore,
   appendWatiInboundLeadToGoogleSheets as appendWatiInboundLeadToGoogleSheetsCore,
+  appendWebsiteLeadToGoogleSheets as appendWebsiteLeadToGoogleSheetsCore,
   type GoogleSheetsConfig,
   type GoogleSheetsSyncResult,
 } from "@/lib/google-sheets-core";
@@ -14,6 +15,8 @@ import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 const GOOGLE_SHEETS_SCOPE = "https://www.googleapis.com/auth/spreadsheets";
 const WATI_GOOGLE_SHEETS_SPREADSHEET_ID = "1Cs0BfdToaSFh-Pqrhoy0234If7BgIM3PtkmgXpXehVU";
 const WATI_GOOGLE_SHEETS_SHEET_NAME = "Main";
+const WEBSITE_LEADS_GOOGLE_SHEETS_SPREADSHEET_ID = "1jt1gygqJevGWeUfCmOYpQCxPKZLbLsgTuNj8TN_AW-o";
+const WEBSITE_LEADS_GOOGLE_SHEETS_SHEET_NAME = "Master";
 
 function trimOrUndefined(value?: string | null) {
   const trimmed = value?.trim();
@@ -56,6 +59,13 @@ function getWatiGoogleSheetsConfig(): GoogleSheetsConfig | null {
   return createGoogleSheetsConfig(
     WATI_GOOGLE_SHEETS_SPREADSHEET_ID,
     WATI_GOOGLE_SHEETS_SHEET_NAME
+  );
+}
+
+function getWebsiteLeadsGoogleSheetsConfig(): GoogleSheetsConfig | null {
+  return createGoogleSheetsConfig(
+    WEBSITE_LEADS_GOOGLE_SHEETS_SPREADSHEET_ID,
+    WEBSITE_LEADS_GOOGLE_SHEETS_SHEET_NAME
   );
 }
 
@@ -109,6 +119,22 @@ export async function appendWatiInboundLeadToGoogleSheets(
 
   if (result.status === "failed") {
     console.error("WATI inbound Google Sheets lead sync failed.", result.error);
+  }
+
+  return result;
+}
+
+export async function appendWebsiteLeadToGoogleSheets(
+  payload: LeadSyncPayload
+): Promise<GoogleSheetsSyncResult> {
+  const result = await appendWebsiteLeadToGoogleSheetsCore(
+    payload,
+    getWebsiteLeadsGoogleSheetsConfig(),
+    { getAccessToken: getGoogleSheetsAccessToken }
+  );
+
+  if (result.status === "failed") {
+    console.error("Website leads Google Sheets sync failed.", result.error);
   }
 
   return result;

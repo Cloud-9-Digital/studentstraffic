@@ -5,7 +5,10 @@ import { eq } from "drizzle-orm";
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
-import { appendSeminarLeadToGoogleSheets } from "@/lib/google-sheets";
+import {
+  appendSeminarLeadToGoogleSheets,
+  appendWebsiteLeadToGoogleSheets,
+} from "@/lib/google-sheets";
 import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 
@@ -408,7 +411,10 @@ async function syncLeadToLeadSquared(
 }
 
 async function syncLeadToGoogleSheets(payload: LeadSyncPayload) {
-  await appendSeminarLeadToGoogleSheets(payload);
+  await Promise.allSettled([
+    appendSeminarLeadToGoogleSheets(payload),
+    appendWebsiteLeadToGoogleSheets(payload),
+  ]);
 }
 
 export async function syncLeadDestinations(

@@ -148,6 +148,17 @@ export function buildWatiInboundGoogleSheetsLeadRow(payload: LeadSyncPayload) {
   ];
 }
 
+export function buildWebsiteLeadGoogleSheetsRow(payload: LeadSyncPayload) {
+  return [
+    formatDateForSheet(payload.submittedAt),
+    withDefault(payload.fullName),
+    withDefault(payload.phone),
+    withDefault(payload.email),
+    withDefault(payload.userState),
+    buildGoogleSheetsSource(payload),
+  ];
+}
+
 function getAppendUrl(config: GoogleSheetsConfig, rangeValue: string) {
   const range = encodeURIComponent(`${config.sheetName}!${rangeValue}`);
   const params = new URLSearchParams({
@@ -238,5 +249,16 @@ export async function appendWatiInboundLeadToGoogleSheets(
   const row = buildWatiInboundGoogleSheetsLeadRow(payload);
   return appendLeadRowToGoogleSheets(row, config, deps, {
     range: "A:C",
+  });
+}
+
+export async function appendWebsiteLeadToGoogleSheets(
+  payload: LeadSyncPayload,
+  config: GoogleSheetsConfig | null,
+  deps: GoogleSheetsSyncDeps
+): Promise<GoogleSheetsSyncResult> {
+  const row = buildWebsiteLeadGoogleSheetsRow(payload);
+  return appendLeadRowToGoogleSheets(row, config, deps, {
+    range: GOOGLE_SHEETS_RANGE,
   });
 }
