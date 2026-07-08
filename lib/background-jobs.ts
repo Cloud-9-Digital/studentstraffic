@@ -4,6 +4,7 @@ import { and, asc, eq, inArray, lte, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import { backgroundJobs } from "@/lib/db/schema";
+import { env } from "@/lib/env";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import { cleanupExpiredPeerCallSessions } from "@/lib/peer-calls";
@@ -92,7 +93,7 @@ async function processLeadDeliveryJob(payload: Record<string, unknown>) {
     syncLeadDestinations(payload.leadId, payload.leadHandoffPayload),
   ];
 
-  if (payload.whatsappPayload) {
+  if (payload.whatsappPayload && !env.skipLeadWhatsapp) {
     deliveries.push(
       sendLeadWhatsAppMessage(payload.whatsappPayload, payload.leadId, {
         skipInboundLeadCheck: true,

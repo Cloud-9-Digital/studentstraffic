@@ -31,6 +31,7 @@ const envSchema = z.object({
   TYPESENSE_COLLECTION: z.string().min(1).optional(),
   LOG_DB_SLOW_QUERIES: z.enum(["0", "1"]).optional(),
   ENABLE_INLINE_JOB_PROCESSING: z.enum(["0", "1"]).optional(),
+  SKIP_LEAD_WHATSAPP: z.enum(["0", "1"]).optional(),
   // Rate limiting and caching (Upstash Redis)
   UPSTASH_REDIS_REST_URL: z.string().url().optional(),
   UPSTASH_REDIS_REST_TOKEN: z.string().min(1).optional(),
@@ -76,6 +77,7 @@ const parsedEnv = envSchema.safeParse({
   TYPESENSE_COLLECTION: optionalEnv(process.env.TYPESENSE_COLLECTION),
   LOG_DB_SLOW_QUERIES: optionalEnv(process.env.LOG_DB_SLOW_QUERIES),
   ENABLE_INLINE_JOB_PROCESSING: optionalEnv(process.env.ENABLE_INLINE_JOB_PROCESSING),
+  SKIP_LEAD_WHATSAPP: optionalEnv(process.env.SKIP_LEAD_WHATSAPP),
   UPSTASH_REDIS_REST_URL: optionalEnv(process.env.UPSTASH_REDIS_REST_URL),
   UPSTASH_REDIS_REST_TOKEN: optionalEnv(process.env.UPSTASH_REDIS_REST_TOKEN),
   NEXT_PUBLIC_SENTRY_DSN: optionalEnv(process.env.NEXT_PUBLIC_SENTRY_DSN),
@@ -166,6 +168,7 @@ export const env = {
   logDbSlowQueries: parsedEnv.data.LOG_DB_SLOW_QUERIES === "1",
   enableInlineJobProcessing:
     parsedEnv.data.ENABLE_INLINE_JOB_PROCESSING === "1",
+  skipLeadWhatsapp: parsedEnv.data.SKIP_LEAD_WHATSAPP === "1",
   upstashRedisRestUrl: parsedEnv.data.UPSTASH_REDIS_REST_URL,
   upstashRedisRestToken: parsedEnv.data.UPSTASH_REDIS_REST_TOKEN,
   sentryDsn: parsedEnv.data.NEXT_PUBLIC_SENTRY_DSN,
