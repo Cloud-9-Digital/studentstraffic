@@ -155,7 +155,7 @@ function DeleteLeadButton({
   );
 }
 
-function LeadActionsMenu({
+export function LeadActionsMenu({
   leadId,
   leadName,
   canDelete,

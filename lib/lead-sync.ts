@@ -16,6 +16,10 @@ type LeadSyncUpdate = {
   pabblySyncStatus?: string;
   pabblySyncedAt?: Date | null;
   pabblySyncError?: string | null;
+  leadSquaredSyncStatus?: string;
+  leadSquaredSyncedAt?: Date | null;
+  leadSquaredSyncError?: string | null;
+  leadSquaredExternalId?: string | null;
 };
 
 type CrmSyncResponse = {
@@ -26,6 +30,17 @@ type CrmSyncResponse = {
   error?: string;
   message?: string;
 };
+
+// LeadSquared's Lead Capture API responds with {"Status":"Success","Message":{"Id":"<prospect-guid>","IsNew":true}}
+// on success, or {"Status":"Error","ExceptionMessage":"..."} on failure.
+type LeadSquaredCaptureResponse = {
+  Status?: string;
+  Message?: { Id?: string; IsNew?: boolean };
+  ExceptionMessage?: string;
+};
+
+const LEADSQUARED_API_HOST = "https://api-in21.leadsquared.com/v2/";
+const NEET_PREDICTOR_SOURCE_PATH = "/neet-college-predictor";
 
 const SYNC_TIMEOUT_MS = 8_000;
 const SYNC_PLACEHOLDER = "NA";
@@ -205,6 +220,17 @@ export async function syncLeadToCrm(
   leadId: number | undefined,
   payload: LeadSyncPayload
 ) {
+  // NEET College Predictor leads route to LeadSquared instead (see syncLeadToLeadSquared).
+  if (payload.sourcePath === NEET_PREDICTOR_SOURCE_PATH) {
+    await updateLeadSyncState(leadId, {
+      crmSyncStatus: "skipped",
+      crmSyncedAt: null,
+      crmSyncError: null,
+      crmExternalId: null,
+    });
+    return;
+  }
+
   if (!env.hasCrmLeadSyncConfig || !env.crmLeadIntakeUrl || !env.crmLeadIntakeSecret) {
     await updateLeadSyncState(leadId, {
       crmSyncStatus: "skipped",
@@ -293,6 +319,79 @@ async function syncLeadToPabbly(
   }
 }
 
+async function syncLeadToLeadSquared(
+  leadId: number | undefined,
+  payload: LeadSyncPayload
+) {
+  if (payload.sourcePath !== NEET_PREDICTOR_SOURCE_PATH) {
+    return;
+  }
+
+  if (
+    !env.hasLeadSquaredConfig ||
+    !env.leadSquaredAccessKey ||
+    !env.leadSquaredSecretKey
+  ) {
+    await updateLeadSyncState(leadId, {
+      leadSquaredSyncStatus: "skipped",
+      leadSquaredSyncedAt: null,
+      leadSquaredSyncError: null,
+      leadSquaredExternalId: null,
+    });
+    return;
+  }
+
+  try {
+    const captureUrl = new URL("LeadManagement.svc/Lead.Capture", LEADSQUARED_API_HOST);
+    captureUrl.searchParams.set("accessKey", env.leadSquaredAccessKey);
+    captureUrl.searchParams.set("secretKey", env.leadSquaredSecretKey);
+
+    const attributes = [
+      { Attribute: "FirstName", Value: payload.fullName },
+      { Attribute: "Phone", Value: payload.phone },
+      payload.email ? { Attribute: "EmailAddress", Value: payload.email } : null,
+      payload.userState ? { Attribute: "mx_State", Value: payload.userState } : null,
+      payload.city ? { Attribute: "mx_City", Value: payload.city } : null,
+      payload.neetScore !== undefined
+        ? { Attribute: "mx_NEET_Score", Value: String(payload.neetScore) }
+        : null,
+      payload.neetCategory
+        ? { Attribute: "mx_Category", Value: payload.neetCategory }
+        : null,
+      { Attribute: "Source", Value: "Meta Ads" },
+    ].filter((attribute): attribute is { Attribute: string; Value: string } =>
+      Boolean(attribute)
+    );
+
+    const response = await postJson(captureUrl.toString(), attributes);
+    const rawText = await response.text();
+    const parsed = rawText
+      ? (JSON.parse(rawText) as LeadSquaredCaptureResponse)
+      : {};
+
+    if (!response.ok || parsed.Status !== "Success") {
+      throw new Error(
+        parsed.ExceptionMessage ??
+          `LeadSquared capture failed with status ${response.status}.`
+      );
+    }
+
+    await updateLeadSyncState(leadId, {
+      leadSquaredSyncStatus: "synced",
+      leadSquaredSyncedAt: new Date(),
+      leadSquaredSyncError: null,
+      leadSquaredExternalId: parsed.Message?.Id ?? null,
+    });
+  } catch (error) {
+    console.error("LeadSquared lead sync failed.", error);
+    await updateLeadSyncState(leadId, {
+      leadSquaredSyncStatus: "failed",
+      leadSquaredSyncedAt: null,
+      leadSquaredSyncError: truncateErrorMessage(error),
+    });
+  }
+}
+
 async function syncLeadToGoogleSheets(payload: LeadSyncPayload) {
   await appendSeminarLeadToGoogleSheets(payload);
 }
@@ -304,6 +403,7 @@ export async function syncLeadDestinations(
   await Promise.allSettled([
     syncLeadToCrm(leadId, payload),
     syncLeadToPabbly(leadId, payload),
+    syncLeadToLeadSquared(leadId, payload),
     syncLeadToGoogleSheets(payload),
   ]);
 }

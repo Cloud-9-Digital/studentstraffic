@@ -267,6 +267,13 @@
       "when": 1783420000000,
       "tag": "0052_neet_category_field",
       "breakpoints": true
+    },
+    {
+      "idx": 52,
+      "version": "7",
+      "when": 1783421000000,
+      "tag": "0053_leadsquared_sync_fields",
+      "breakpoints": true
     }
   ]
 }

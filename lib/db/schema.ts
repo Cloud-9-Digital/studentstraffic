@@ -440,6 +440,12 @@ export const leads = pgTable(
       .default("not_attempted"),
     pabblySyncedAt: timestamp("pabbly_synced_at", { withTimezone: true }),
     pabblySyncError: text("pabbly_sync_error"),
+    leadSquaredSyncStatus: text("leadsquared_sync_status")
+      .notNull()
+      .default("not_attempted"),
+    leadSquaredSyncedAt: timestamp("leadsquared_synced_at", { withTimezone: true }),
+    leadSquaredSyncError: text("leadsquared_sync_error"),
+    leadSquaredExternalId: text("leadsquared_external_id"),
     watiMessageStatus: text("wati_message_status")
       .notNull()
       .default("not_attempted"),

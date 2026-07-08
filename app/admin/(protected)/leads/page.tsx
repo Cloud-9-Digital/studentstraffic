@@ -134,14 +134,22 @@ export default async function AdminLeadsPage({ searchParams }: { searchParams: S
             {hasActiveFilters && " (filtered)"}
           </p>
         </div>
-        {session.user.adminRole === "owner" ? (
-          <Button asChild className="shrink-0 bg-primary !text-white hover:bg-surface-dark-2">
-            <Link href="/admin/leads/export">
-              <Download className="size-4" />
-              <span className="hidden sm:inline">Export CSV</span>
+        <div className="flex shrink-0 items-center gap-2">
+          <Button asChild variant="outline">
+            <Link href="/admin/leads/neet-predictor">
+              <span className="hidden sm:inline">NEET Predictor Leads</span>
+              <span className="sm:hidden">NEET</span>
             </Link>
           </Button>
-        ) : null}
+          {session.user.adminRole === "owner" ? (
+            <Button asChild className="bg-primary !text-white hover:bg-surface-dark-2">
+              <Link href="/admin/leads/export">
+                <Download className="size-4" />
+                <span className="hidden sm:inline">Export CSV</span>
+              </Link>
+            </Button>
+          ) : null}
+        </div>
       </div>
 
       {/* Filters and Search */}

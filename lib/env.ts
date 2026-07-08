@@ -14,6 +14,8 @@ const envSchema = z.object({
   REVALIDATE_SECRET: z.string().min(1).optional(),
   CRON_SECRET: z.string().min(1).optional(),
   PABBLY_LEAD_WEBHOOK_URL: z.string().url().optional(),
+  LEADSQUARED_ACCESS_KEY: z.string().min(1).optional(),
+  LEADSQUARED_SECRET_KEY: z.string().min(1).optional(),
   NEXTAUTH_SECRET: z.string().min(1).optional(),
   BREVO_API_KEY: z.string().min(1).optional(),
   BREVO_SENDER_EMAIL: z.string().email().optional(),
@@ -57,6 +59,8 @@ const parsedEnv = envSchema.safeParse({
   REVALIDATE_SECRET: optionalEnv(process.env.REVALIDATE_SECRET),
   CRON_SECRET: optionalEnv(process.env.CRON_SECRET),
   PABBLY_LEAD_WEBHOOK_URL: optionalEnv(process.env.PABBLY_LEAD_WEBHOOK_URL),
+  LEADSQUARED_ACCESS_KEY: optionalEnv(process.env.LEADSQUARED_ACCESS_KEY),
+  LEADSQUARED_SECRET_KEY: optionalEnv(process.env.LEADSQUARED_SECRET_KEY),
   NEXTAUTH_SECRET: optionalEnv(process.env.NEXTAUTH_SECRET),
   BREVO_API_KEY: optionalEnv(process.env.BREVO_API_KEY),
   BREVO_SENDER_EMAIL: optionalEnv(process.env.BREVO_SENDER_EMAIL),
@@ -113,6 +117,8 @@ export const env = {
   revalidateSecret: parsedEnv.data.REVALIDATE_SECRET,
   cronSecret: parsedEnv.data.CRON_SECRET,
   pabblyLeadWebhookUrl: parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL,
+  leadSquaredAccessKey: parsedEnv.data.LEADSQUARED_ACCESS_KEY,
+  leadSquaredSecretKey: parsedEnv.data.LEADSQUARED_SECRET_KEY,
   nextAuthSecret: parsedEnv.data.NEXTAUTH_SECRET,
   brevoApiKey: parsedEnv.data.BREVO_API_KEY,
   brevoSenderEmail: parsedEnv.data.BREVO_SENDER_EMAIL ?? "updates@studentstraffic.com",
@@ -140,6 +146,9 @@ export const env = {
   hasRevalidateSecret: Boolean(parsedEnv.data.REVALIDATE_SECRET),
   hasCronSecret: Boolean(parsedEnv.data.CRON_SECRET),
   hasPabblyLeadWebhook: Boolean(parsedEnv.data.PABBLY_LEAD_WEBHOOK_URL),
+  hasLeadSquaredConfig: Boolean(
+    parsedEnv.data.LEADSQUARED_ACCESS_KEY && parsedEnv.data.LEADSQUARED_SECRET_KEY
+  ),
   hasAdminAuthConfig: Boolean(parsedEnv.data.NEXTAUTH_SECRET),
   hasBrevo: Boolean(parsedEnv.data.BREVO_API_KEY),
   hasWati: Boolean(

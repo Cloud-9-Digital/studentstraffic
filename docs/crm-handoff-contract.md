@@ -55,3 +55,15 @@ This repo does not own:
 ## Backward compatibility rule
 
 New fields added to the handoff payload should be additive. Existing fields should not be renamed or removed without coordinating with the CRM repository.
+
+## Routing exception: NEET College Predictor leads
+
+Leads with `sourcePath === "/neet-college-predictor"` do **not** go to the primary CRM (`crm.studentstraffic.com`). They route exclusively to LeadSquared instead. This is handled in `lib/lead-sync.ts`:
+
+- `syncLeadToCrm` short-circuits (writes `crmSyncStatus: "skipped"`) whenever `sourcePath` matches the NEET predictor path.
+- `syncLeadToLeadSquared` only fires for that same `sourcePath`; all other leads skip it.
+- Config: `LEADSQUARED_ACCESS_KEY` / `LEADSQUARED_SECRET_KEY` env vars. API host is hardcoded (`https://api-in21.leadsquared.com/v2/`) since it's account-specific, not environment-specific.
+- Field mapping: `FirstName`, `Phone`, `EmailAddress`, `mx_State`, `mx_City`, `mx_NEET_Score`, `mx_Category` (NEET category), `Source` (hardcoded `"Meta Ads"`).
+- Sync status is tracked on the `leads` row via `leadSquaredSyncStatus` / `leadSquaredSyncedAt` / `leadSquaredSyncError` / `leadSquaredExternalId` (mirrors the `crmSync*` column pattern).
+
+If another source path needs the same LeadSquared routing in the future, generalize the `NEET_PREDICTOR_SOURCE_PATH` check in `lib/lead-sync.ts` rather than hardcoding a second path inline.

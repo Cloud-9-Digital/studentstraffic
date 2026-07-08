@@ -252,6 +252,24 @@ async function LeadDetail({ id }: { id: string }) {
                 )}
               </div>
 
+              {(lead.neetScore !== null || lead.neetCategory) && (
+                <div className="border-t border-slate-100 pt-3">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-medium text-slate-500">LeadSquared</span>
+                    <StatusBadge status={lead.leadSquaredSyncStatus} />
+                  </div>
+                  {lead.leadSquaredSyncedAt && (
+                    <p className="text-xs text-slate-400">{fmt.format(lead.leadSquaredSyncedAt)}</p>
+                  )}
+                  {lead.leadSquaredExternalId && (
+                    <p className="text-xs text-slate-400 mt-1 break-words overflow-wrap-anywhere">Prospect ID: {lead.leadSquaredExternalId}</p>
+                  )}
+                  {lead.leadSquaredSyncError && (
+                    <p className="mt-2 rounded-lg bg-red-50 p-2 text-xs text-red-700 break-words overflow-wrap-anywhere">{lead.leadSquaredSyncError}</p>
+                  )}
+                </div>
+              )}
+
               <div className="border-t border-slate-100 pt-3">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs font-medium text-slate-500">WhatsApp</span>
