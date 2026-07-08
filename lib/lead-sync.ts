@@ -40,7 +40,7 @@ type LeadSquaredCaptureResponse = {
 };
 
 const LEADSQUARED_API_HOST = "https://api-in21.leadsquared.com/v2/";
-const NEET_PREDICTOR_SOURCE_PATH = "/neet-college-predictor";
+export const NEET_PREDICTOR_SOURCE_PATH = "/neet-college-predictor";
 
 const SYNC_TIMEOUT_MS = 8_000;
 const SYNC_PLACEHOLDER = "NA";
