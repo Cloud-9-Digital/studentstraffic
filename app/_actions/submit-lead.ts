@@ -24,8 +24,8 @@ import {
 import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
+import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
 import { buildLeadHandoffPayload } from "@/lib/lead-handoff";
-import { NEET_PREDICTOR_SOURCE_PATH } from "@/lib/lead-sync";
 import { getTrackingSnapshot } from "@/lib/tracking";
 import {
   consumePublicFormRateLimits,
@@ -303,22 +303,21 @@ export async function submitLeadAction(
       });
 
       if (insertedLeadId) {
-        // NEET College Predictor leads route to LeadSquared only; no WhatsApp confirmation.
-        const skipWhatsapp = data.sourcePath === NEET_PREDICTOR_SOURCE_PATH;
+        const deliveryRoute = getLeadDeliveryRoute(data.sourcePath);
 
         await enqueueLeadDeliveryJob({
           leadId: insertedLeadId,
           leadHandoffPayload: handoffPayload,
-          whatsappPayload: skipWhatsapp
-            ? undefined
-            : {
+          whatsappPayload: deliveryRoute.whatsapp
+            ? {
                 fullName: data.fullName,
                 phone: data.phone,
                 courseSlug: emptyToUndefined(data.courseSlug),
                 countrySlug: emptyToUndefined(data.countrySlug),
                 universitySlug: emptyToUndefined(data.universitySlug),
                 sourcePath: data.sourcePath,
-              },
+              }
+            : undefined,
         });
 
         if (env.enableInlineJobProcessing) {

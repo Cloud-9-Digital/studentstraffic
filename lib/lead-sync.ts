@@ -6,6 +6,7 @@ import { getDb } from "@/lib/db/server";
 import { leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { appendSeminarLeadToGoogleSheets } from "@/lib/google-sheets";
+import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 
 type LeadSyncUpdate = {
@@ -40,7 +41,6 @@ type LeadSquaredCaptureResponse = {
 };
 
 const LEADSQUARED_API_HOST = "https://api-in21.leadsquared.com/v2/";
-export const NEET_PREDICTOR_SOURCE_PATH = "/neet-college-predictor";
 
 const SYNC_TIMEOUT_MS = 8_000;
 const SYNC_PLACEHOLDER = "NA";
@@ -220,8 +220,7 @@ export async function syncLeadToCrm(
   leadId: number | undefined,
   payload: LeadSyncPayload
 ) {
-  // NEET College Predictor leads route to LeadSquared instead (see syncLeadToLeadSquared).
-  if (payload.sourcePath === NEET_PREDICTOR_SOURCE_PATH) {
+  if (!getLeadDeliveryRoute(payload.sourcePath).crm) {
     await updateLeadSyncState(leadId, {
       crmSyncStatus: "skipped",
       crmSyncedAt: null,
@@ -280,7 +279,11 @@ async function syncLeadToPabbly(
   leadId: number | undefined,
   payload: LeadSyncPayload
 ) {
-  if (!env.hasPabblyLeadWebhook || !env.pabblyLeadWebhookUrl) {
+  if (
+    !getLeadDeliveryRoute(payload.sourcePath).pabbly ||
+    !env.hasPabblyLeadWebhook ||
+    !env.pabblyLeadWebhookUrl
+  ) {
     await updateLeadSyncState(leadId, {
       pabblySyncStatus: "skipped",
       pabblySyncedAt: null,
@@ -323,7 +326,19 @@ async function syncLeadToLeadSquared(
   leadId: number | undefined,
   payload: LeadSyncPayload
 ) {
-  if (payload.sourcePath !== NEET_PREDICTOR_SOURCE_PATH) {
+  if (!getLeadDeliveryRoute(payload.sourcePath).leadSquared) {
+    return;
+  }
+
+  // Only lower-scoring NEET leads (more likely to need counselling on realistic
+  // options) get pushed to LeadSquared; everyone else is intentionally excluded.
+  if (payload.neetScore === undefined || payload.neetScore >= 400) {
+    await updateLeadSyncState(leadId, {
+      leadSquaredSyncStatus: "skipped",
+      leadSquaredSyncedAt: null,
+      leadSquaredSyncError: null,
+      leadSquaredExternalId: null,
+    });
     return;
   }
 
