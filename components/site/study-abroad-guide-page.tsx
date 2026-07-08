@@ -43,11 +43,27 @@ export type GuideSectionCard = {
   body: string;
 };
 
+/**
+ * Generic tabular data for a guide section — e.g. university-wise fee comparisons or
+ * cost/decision matrices. Kept intentionally generic (headers + string rows) rather than a
+ * fees-specific shape so any guide (fees, comparison, decision-matrix style pages) can use it.
+ * Prefer populating rows from live DB data (program_offerings/universities) at
+ * authoring/migration time over hand-typed estimates — see the `mbbs-in-russia-fees` entry in
+ * `lib/data/study-abroad-guides.ts` (migrated to the DB via
+ * `scripts/migrate-study-abroad-guides-to-db.ts`) for the pattern.
+ */
+export type GuideTable = {
+  headers: string[];
+  rows: string[][];
+  note?: string;
+};
+
 export type GuideSection = {
   title: string;
   paragraphs?: string[];
   bullets?: string[];
   cards?: GuideSectionCard[];
+  table?: GuideTable;
 };
 
 export type GuideFaq = {
@@ -346,6 +362,51 @@ export function StudyAbroadGuidePage({
                           </p>
                         </div>
                       ))}
+                    </div>
+                  ) : null}
+
+                  {/* Table - University/cost comparisons sourced from data, not hardcoded JSX */}
+                  {section.table ? (
+                    <div className="mt-8 overflow-hidden rounded-xl border border-border">
+                      <div className="overflow-x-auto">
+                        <table className="w-full">
+                          <thead className="border-b border-border bg-muted/50">
+                            <tr>
+                              {section.table.headers.map((header) => (
+                                <th
+                                  key={header}
+                                  className="px-6 py-4 text-left text-sm font-semibold text-foreground"
+                                >
+                                  {header}
+                                </th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-border">
+                            {section.table.rows.map((row, rowIdx) => (
+                              <tr key={rowIdx} className="hover:bg-muted/30">
+                                {row.map((cell, cellIdx) => (
+                                  <td
+                                    key={cellIdx}
+                                    className={
+                                      cellIdx === 0
+                                        ? "px-6 py-4 text-sm font-medium text-foreground"
+                                        : "px-6 py-4 text-sm text-muted-foreground"
+                                    }
+                                  >
+                                    {cell}
+                                  </td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                      {section.table.note ? (
+                        <p className="border-t border-border/60 bg-muted/20 px-6 py-3 text-xs leading-5 text-muted-foreground">
+                          {section.table.note}
+                        </p>
+                      ) : null}
                     </div>
                   ) : null}
 

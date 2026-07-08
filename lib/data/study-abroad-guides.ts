@@ -6020,6 +6020,526 @@ export const studyAbroadGuides = {
       ],
     },
   },
+  // ───────────────────────────────────────────────────────────────────────────
+  // Migrated from bespoke hand-coded landing pages (app/*/page.tsx) into the
+  // DB-driven guide pattern, 2026-07-09. See docs/bespoke-landing-migration-checklist.md.
+  // The physical routes now render <StudyAbroadGuidePage> from this data via thin
+  // server wrappers; metadata still lives in each route's layout.tsx.
+  // ───────────────────────────────────────────────────────────────────────────
+  "is-mbbs-in-russia-worth-it": {
+    metadata: {
+      title: "Is MBBS in Russia Worth It for Indian Students in 2026?",
+      description:
+        "Get a practical answer to whether MBBS in Russia is worth it for Indian students, including cost, climate, university fit, and the India-return decision.",
+      path: "/is-mbbs-in-russia-worth-it",
+      openGraphType: "article",
+      keywords: [
+        "is mbbs in russia worth it",
+        "is mbbs in russia worth it for indian students",
+        "is mbbs in russia good for indian students",
+        "mbbs in russia worth it",
+        "mbbs in russia for indian students",
+        "mbbs in russia fees",
+      ],
+    },
+    page: {
+      path: "/is-mbbs-in-russia-worth-it",
+      title: "Is MBBS in Russia worth it for Indian students?",
+      updatedOn: "Updated on 23 May 2026",
+      kicker: "Decision guide",
+      summary:
+        "The honest answer isn't yes or no — it's \"worth it for whom?\" Russia saves ₹25 lakhs-₹2 crores vs Indian private colleges, but requires climate adaptation, Russian language skills, and serious FMGE preparation.",
+      publishedDate: "2026-05-23",
+      countrySlug: "russia",
+      courseSlug: "mbbs",
+      primaryHref: "/mbbs-in-russia",
+      primaryLabel: "Read Russia overview",
+      secondaryLabel: "Is Russia right for you?",
+      leadTitle: "Get a personalized \"worth it\" evaluation",
+      leadDescription:
+        "Share your NEET score, budget, climate preferences, and career goals. We'll help determine if Russia is worth it for your specific situation and suggest suitable universities.",
+      leadSubmitLabel: "Request evaluation",
+      notes: "Interest: Is MBBS in Russia worth it",
+      keyTakeaways: [
+        "Russia MBBS costs ₹35-50 lakhs total (vs ₹60 lakhs-₹2.5 crores in Indian private colleges), making it financially worth it for budget-conscious families. However, the 15-22% FMGE pass rate (vs 65-75% for Indian graduates) and climate challenges mean it's not automatically worth it for everyone.",
+        "Worth it IF: You're disciplined, adaptable, willing to learn Russian (200-300 hours needed), can handle -20°C to -35°C winters for 4-5 months, and committed to FMGE/NExT prep from Year 3 onward. Students who join through Students Traffic receive free FMGE/NExT coaching — this removes the typical ₹1.5-2.5 lakh coaching cost from your budget.",
+        "Not worth it IF: You struggle with cold climates, need constant family support, want a frictionless path to Indian practice, or chose Russia solely because a consultant showed low fees without explaining clinical language requirements or licensing exam challenges.",
+      ],
+      sections: [
+        {
+          title: "Real cost-benefit analysis",
+          paragraphs: [
+            "Russia's financial case is strong, but it comes with a licensing-exam and adaptation cost that families should weigh openly rather than discovering later.",
+          ],
+          table: {
+            headers: ["Metric", "Russia MBBS", "Indian private"],
+            rows: [
+              ["Total cost", "₹35-50 lakhs (6 years)", "₹60 lakhs-₹2.5 crores (5.5 years)"],
+              ["Potential savings", "₹25 lakhs-₹2 crores", "—"],
+              ["FMGE pass rate", "15-22% (first attempt)", "65-75%"],
+              ["Time to Indian practice", "7-8 years", "5.5-6 years"],
+            ],
+            note: "Hidden costs to budget: FMGE coaching ₹1.5-2.5 lakhs (free for Students Traffic students), winter clothing ₹25,000-40,000, travel ₹40,000-60,000 per trip (3-4 trips total), and language tutoring ₹15,000-25,000.",
+          },
+        },
+        {
+          title: "When Russia MBBS is worth it",
+          cards: [
+            {
+              title: "Budget-constrained with strong academics",
+              body: "Total 6-year cost of ₹35-50 lakhs (including travel, living, insurance) is 40-75% cheaper than most Indian private colleges. Worth it if you have 85%+ PCB and NEET qualified. Students who join through Students Traffic receive free FMGE/NExT coaching, which eliminates the typical ₹1.5-2.5 lakh post-graduation coaching cost.",
+            },
+            {
+              title: "Self-disciplined and adaptable students",
+              body: "Russia suits students who can manage independent living, adapt to harsh winters (October-March), learn conversational Russian (A2-B1 level by Year 3), and maintain consistent study habits without daily parental oversight.",
+            },
+            {
+              title: "Long-term India practice planning",
+              body: "Worth it if you're treating FMGE/NExT as mandatory from Day 1, planning structured exam prep from Year 3, and choosing universities with proven graduate pass rates. Budget 18-24 months for licensing exam preparation post-MBBS.",
+            },
+            {
+              title: "University selection — NMC guideline compliance",
+              body: "Choose universities with 70+ years history, WDOMS listing, strong hospital partnerships (3+ teaching hospitals), and documented English-medium programs. Examples: Kazan State Medical, Bashkir State Medical, Privolzhsky Research Medical University.",
+            },
+          ],
+        },
+        {
+          title: "When Russia MBBS is not worth it",
+          cards: [
+            {
+              title: "Climate-sensitive students",
+              body: "If you struggle with cold weather or have seasonal affective disorder, Russia's 4-5 month winters (-20°C to -35°C) with only 6-7 hours daily sunlight will significantly impact mental health and academic performance. Consider warmer alternatives like Vietnam or Philippines.",
+            },
+            {
+              title: "Expecting an easy India-return pathway",
+              body: "FMGE/NExT pass rate for Russia graduates is only 15-22% (first attempt) vs 65-75% for Indian medical college graduates. If you're not prepared for rigorous self-study and potential multiple exam attempts, factor this into your decision. Students Traffic provides free FMGE/NExT coaching for students who join through us.",
+            },
+            {
+              title: "Chosen solely on low fee quotes",
+              body: "Universities advertising fees below ₹2.5 lakhs/year often have hidden issues: limited English support, weak clinical exposure, outdated facilities, or poor FMGE track records. Verify WDOMS listing, check actual student testimonials, and visit university websites directly.",
+            },
+            {
+              title: "Need for constant family support",
+              body: "Time zone differences (2.5-5.5 hours), expensive international calls, visa complexity preventing frequent parent visits, and independent hostel living mean students handle challenges alone. Not ideal for those requiring daily emotional support or parental supervision.",
+            },
+          ],
+        },
+        {
+          title: "Decision matrix: is Russia right for you?",
+          table: {
+            headers: ["Factor", "Worth it if...", "Not worth it if..."],
+            rows: [
+              ["Financial value (weight: High)", "Family budget <₹60 lakhs; significant savings vs Indian private", "Can afford ₹60 lakhs+; prefer domestic stability"],
+              ["Climate tolerance (weight: Medium-High)", "Comfortable with cold; willing to invest in winter gear", "Tropical preference; seasonal depression history"],
+              ["Language commitment (weight: High)", "Willing to learn Russian; understand clinical necessity", "Expect English-only; no time for language classes"],
+              ["Licensing exam motivation (weight: Very High)", "Disciplined; ready for FMGE coaching from Year 3", "Expect automatic India practice; low self-study capacity"],
+              ["Family support needs (weight: Medium)", "Independent; comfortable with remote family contact", "Need daily supervision; struggle with isolation"],
+            ],
+          },
+        },
+      ],
+      faqItems: [
+        {
+          question: "Is MBBS in Russia worth it for Indian students in 2026?",
+          answer:
+            "Worth it if you're budget-conscious (saves ₹25 lakhs-₹2 crores vs Indian private), disciplined enough for FMGE prep (15-22% pass rate requires serious commitment), adaptable to harsh winters (-20°C to -35°C for 4-5 months), and willing to learn Russian for clinical years. Not worth it if you expect an easy path, can't handle cold climates, or chose based only on low fee advertisements.",
+        },
+        {
+          question: "How does MBBS in Russia compare cost-wise to Indian private colleges?",
+          answer:
+            "Russia costs ₹35-50 lakhs total for 6 years (tuition + accommodation + living + travel), while Indian private colleges charge ₹60 lakhs to ₹2.5 crores for 5.5 years. Factor in lower pass rates (15-22% vs 65-75%) and potential exam retakes. Students who join through Students Traffic receive free FMGE/NExT coaching — which removes the typical ₹1.5-2.5 lakh coaching cost from the comparison.",
+        },
+        {
+          question: "What is the FMGE/NExT pass rate for Russia MBBS graduates?",
+          answer:
+            "15-22% on first attempt as of 2026, significantly lower than 65-75% for Indian medical college graduates. Successful candidates typically attempt 2-3 times over 18-24 months with structured coaching. This extends time to Indian practice by 1.5-2 years compared to domestic MBBS.",
+        },
+        {
+          question: "Is Russia better than Vietnam for MBBS?",
+          answer:
+            "Russia offers more established universities (70+ years history), lower costs (₹35-50 lakhs vs ₹50-65 lakhs), and larger Indian student community. Vietnam has warmer climate (18°C-32°C year-round), closer proximity (4-5 hours vs 8-12 hours travel), and easier adaptation. Choose based on climate tolerance, budget, and language willingness.",
+        },
+        {
+          question: "Can I complete MBBS in Russia without learning Russian?",
+          answer:
+            "Theory classes are in English at most universities, but 70-80% of clinical communication (patient interactions, ward rounds, hospital discussions) happens in Russian. You need conversational fluency (A2-B1 level) by Year 3 for effective practical training. Budget 200-300 hours for language learning and consider additional tutoring (₹15,000-25,000).",
+        },
+      ],
+    },
+  },
+  "how-to-apply-for-mbbs-in-russia": {
+    metadata: {
+      title: "How to Apply for MBBS in Russia 2026: Step-by-Step Application Guide for Indian Students",
+      description:
+        "Complete Russia MBBS application guide: timeline (January-August), required documents (NEET 50th/40th percentile, apostille, HIV certificate), visa process (20-45 days invitation, 2-3 weeks visa), costs (₹2-3 lakhs), NMC compliance verification, and common mistakes to avoid for Indian students.",
+      path: "/how-to-apply-for-mbbs-in-russia",
+      openGraphType: "article",
+      keywords: [
+        "how to apply for mbbs in russia",
+        "how to do mbbs in russia",
+        "how to get admission in russia for mbbs",
+        "mbbs admission process in russia",
+        "russia mbbs application process",
+        "apply for mbbs in russia",
+      ],
+    },
+    page: {
+      path: "/how-to-apply-for-mbbs-in-russia",
+      title: "How to apply for MBBS in Russia: complete step-by-step guide",
+      updatedOn: "Updated on 23 May 2026",
+      kicker: "Russia admissions",
+      summary:
+        "The complete Russia MBBS application process for Indian students: timeline (January-August), required documents, NMC compliance verification, visa processing (5-7 months total), and avoiding common mistakes that lead to application rejection or India-return complications.",
+      publishedDate: "2026-05-23",
+      countrySlug: "russia",
+      courseSlug: "mbbs",
+      primaryHref: "/countries/russia",
+      primaryLabel: "Read full Russia guide",
+      secondaryLabel: "Get application support",
+      leadTitle: "Need application and visa support?",
+      leadDescription:
+        "Students Traffic provides end-to-end Russia MBBS application support: NMC compliance verification, documentation guidance (apostille, translation), visa processing assistance, and connection to current Russia MBBS students for campus insights.",
+      leadSubmitLabel: "Talk to application counsellor",
+      notes: "Interest: How to apply for MBBS in Russia - Application support",
+      keyTakeaways: [
+        "The ideal application window is January-March (before NEET results) for September intake, though universities accept applications until August 30. Early application significantly improves chances of getting preferred universities and smooth visa processing. The complete timeline from application to arrival spans 5-7 months: application submission → admission letter (5-10 days) → invitation letter (20-45 days) → student visa (2-3 weeks) → flight booking → arrival 1 week before classes.",
+        "Mandatory documents include apostilled Class 10/12 certificates (50% PCB minimum for General category), valid NEET scorecard (50th percentile General, 40th percentile Reserved), passport with 18 months validity, HIV-negative certificate (within 3 months), and ₹4-5 lakh bank statement for financial proof. All documents must be translated to Russian and notarized. Missing apostille or expired HIV certificate are the most common application rejections.",
+        "Total application process costs ₹2-3 lakhs excluding tuition: document attestation and translation (₹15,000-₹30,000), admission and visa processing (₹1-1.5 lakhs), visa fees (₹4,000-8,000), medical examination and insurance (₹8,000-15,000), and flight tickets (₹40,000-70,000). First semester tuition fee (₹1.1-2.6 lakhs) must be paid before invitation letter is issued.",
+      ],
+      sections: [
+        {
+          title: "Application timeline: month-by-month guide",
+          paragraphs: [
+            "The complete Russia MBBS application spans 5-7 months from submission to arrival. Understanding this timeline helps families plan documentation, finances, and avoid rushed processing.",
+          ],
+          cards: [
+            {
+              title: "Planning phase (May-December, year before intake)",
+              body: "Research Russian universities meeting NMC guidelines, prepare for NEET (mandatory for India return), start gathering academic documents (Class 10, 12 certificates), and verify recognition status. Critical action: verify NMC guideline compliance before shortlisting universities.",
+            },
+            {
+              title: "Application phase (January-August, intake year)",
+              body: "January-March is the ideal submission window (best seat availability); May-July is the post-NEET peak. Begin document apostille and translation 3-4 months ahead, obtain the HIV test certificate (within 3 months of application), and submit the complete attested application. Critical action: apply before June for smooth processing and preferred university selection.",
+            },
+            {
+              title: "Post-application processing (June-August)",
+              body: "Receive the admission/offer letter (5-10 days after verification), pay first-semester tuition (prerequisite for the invitation letter), invitation letter processed by Federal Migration Service (20-45 days), then apply for the student visa (2-3 weeks). Book flights only after visa approval. Critical action: start the invitation process 2-3 months before the course begins.",
+            },
+            {
+              title: "Pre-departure (August, ~1 week before classes)",
+              body: "Attend the pre-departure briefing, carry 50 colored passport photos, pack for Russian winter (-20°C to -35°C), load ₹40,000-60,000 in forex plus ₹1-1.5 lakhs for initial expenses, and share flight details for airport pickup. Critical action: arrive at least 1 week before classes for registration and settling.",
+            },
+            {
+              title: "Arrival & registration (September-October)",
+              body: "Airport pickup, hostel allotment (2-3 students per room), FMS visa registration within 7 days (university assists), submission of originals for enrollment, mandatory local medical exam, and student ID/residence permit. Critical action: complete FMS registration within 7 days to avoid a ₹2,000-5,000 fine or deportation.",
+            },
+          ],
+        },
+        {
+          title: "Required documents checklist",
+          paragraphs: [
+            "Complete documentation is critical for approval. Missing apostille or an expired HIV certificate are the most common rejection reasons. All documents must be apostilled by MEA and translated to Russian.",
+          ],
+          table: {
+            headers: ["Document", "Requirement", "Validity"],
+            rows: [
+              ["Class 10 mark sheets & certificates", "Notary attested + MEA apostille + Russian translation", "Permanent"],
+              ["Class 12 mark sheets (PCB)", "Min 50% PCB (General/OBC), 40% (SC/ST) + apostilled + translated", "Permanent"],
+              ["Birth certificate", "Apostilled by Ministry of External Affairs", "Permanent"],
+              ["NEET scorecard", "50th percentile (General), 40th (SC/ST/OBC) — required for NMC registration", "3 years from result date"],
+              ["Valid passport", "≥18 months validity from entry + 2 blank pages", "Renew if <18 months"],
+              ["Photographs (50 copies)", "35mm x 45mm, matte, white background", "Within 6 months"],
+              ["HIV/AIDS test certificate", "Original hard copy confirming HIV-negative status", "Within 3 months of application"],
+              ["Health insurance", "Valid in Russia, minimum €30,000 coverage", "Entire academic year (₹8,000-15,000/yr)"],
+              ["Bank statements", "₹4-5 lakhs balance (student or parent) as 1-year expenses proof", "3-6 months recent"],
+              ["First-semester tuition payment proof", "₹1.1-2.6 lakhs paid (prerequisite for invitation letter)", "Current academic year"],
+            ],
+            note: "All educational documents must be apostilled by MEA and translated to Russian by a notary. Keep originals, apostilled copies, and Russian translations in separate folders.",
+          },
+        },
+        {
+          title: "Visa process: step-by-step",
+          paragraphs: [
+            "The Russia student visa process takes 6-10 weeks total from tuition payment to approval. Understanding each step helps families plan timing and avoid rushed processing that leads to errors.",
+          ],
+          cards: [
+            {
+              title: "Obtain invitation letter (20-45 days)",
+              body: "Requires a valid admission letter, first-semester tuition payment confirmation, and passport copy (18 months validity). Processed by the Federal Migration Service via the university. Cost included in university fees. Start 2-3 months before the course begins.",
+            },
+            {
+              title: "Gather visa documents (1-2 weeks)",
+              body: "Original invitation letter, valid passport, HIV-negative certificate (within 3 months), medical fitness certificate, €30,000 health insurance, apostilled + translated transcripts, ₹4-5 lakh bank statements, 15 passport photos, NEET scorecard, and signed visa form. Cost ₹15,000-30,000 (attestation + translation). All documents must match exactly.",
+            },
+            {
+              title: "Submit visa application (1 day)",
+              body: "Complete document set plus visa fee payment at VFS/Embassy. Cost ₹4,000-8,000. Book the appointment in advance. Generally no personal interview for Indian students (90-95% success rate).",
+            },
+            {
+              title: "Visa processing (2-3 weeks standard)",
+              body: "Wait for embassy processing; 3-7 days if expedited (extra fee). Standard processing is sufficient if started early.",
+            },
+            {
+              title: "Collect passport + post-arrival registration",
+              body: "Verify visa details immediately (validity, name spelling, passport number). After arrival, register with the Federal Migration Service within 7 days (university assists) — failure can result in a ₹2,000-5,000 fine or deportation.",
+            },
+          ],
+        },
+        {
+          title: "Common mistakes and how to avoid them",
+          cards: [
+            {
+              title: "Applying to universities not meeting NMC guidelines",
+              body: "Consequence: degree invalid in India despite 6 years and ₹35-50 lakh cost. Avoid it by verifying NMC FMGL compliance through the Eligibility Certificate process at nmc.org.in before payment. We assess WDOMS listing and NMC compliance for every university we shortlist.",
+            },
+            {
+              title: "Proceeding without valid NEET qualification",
+              body: "Consequence: cannot appear for FMGE/NExT screening or obtain NMC registration for India practice. Avoid it by ensuring your NEET scorecard shows the qualifying percentile (50th/40th) and is valid for 3 years from admission.",
+            },
+            {
+              title: "Missing apostille or incorrect translation",
+              body: "Consequence: application rejection, visa denial, or registration issues on arrival. Avoid it by apostilling all educational documents at MEA and translating to Russian via a notary from the Russian Embassy.",
+            },
+            {
+              title: "Expired HIV certificate or wrong validity",
+              body: "Consequence: immediate visa rejection (the most common documentation error). Avoid it by conducting the HIV test within 3 months before submission and timing the visa application to the certificate's short validity window.",
+            },
+            {
+              title: "Leaving the visa application to the last minute",
+              body: "Consequence: rushed processing, potential flight delays, admission-year loss if visa denied. Avoid it by starting the invitation process 2-3 months before the course begins (20-45 days invitation + 2-3 weeks visa).",
+            },
+            {
+              title: "Trusting fake agents with unrealistic promises",
+              body: "Consequence: financial loss, admission to unrecognized universities, NEET-bypass fraud. Red flags: '100% assured admission', 'no NEET required', 'guaranteed FMGE clearance'. Verify agent credentials and university recognition independently.",
+            },
+          ],
+        },
+      ],
+      faqItems: [
+        {
+          question: "How to apply for MBBS in Russia for Indian students?",
+          answer:
+            "The application process involves: (1) Research and shortlist universities meeting NMC guidelines (January-March ideal window); (2) Prepare documents including apostilled Class 10/12 certificates, NEET scorecard (50th/40th percentile), passport (18 months validity), and HIV-negative certificate (within 3 months); (3) Submit online application with translated documents; (4) Receive admission letter (5-10 days); (5) Pay first semester tuition fee; (6) Obtain invitation letter (20-45 days); (7) Apply for student visa (2-3 weeks); (8) Book flight after visa approval; (9) Arrive 1 week before classes for registration. Total timeline: 5-7 months from application to arrival.",
+        },
+        {
+          question: "When should I start the application process for Russia MBBS?",
+          answer:
+            "Ideal application window is January-March (before NEET results) for September intake, though universities accept applications until August 30. Early application (before June) significantly improves chances of getting preferred universities, smooth visa processing, and seat availability since admissions operate on first-come, first-served basis. Start document apostille and translation process 3-4 months before application submission. The complete timeline spans 5-7 months, so starting in January ensures comfortable processing time.",
+        },
+        {
+          question: "What documents are required for MBBS admission in Russia?",
+          answer:
+            "Mandatory documents include: (1) Academic: Class 10/12 mark sheets and certificates (apostilled by MEA + Russian translation), minimum 50% PCB for General category, 40% for SC/ST; (2) NEET: Valid scorecard showing 50th percentile (General) or 40th percentile (Reserved categories); (3) Passport with 18 months validity and 2 blank pages; (4) Medical: HIV-negative certificate (within 3 months, original hard copy), medical fitness certificate, health insurance (€30,000 coverage); (5) Financial: Bank statements showing ₹4-5 lakhs, first semester tuition fee payment proof; (6) 50 passport photographs (35mm x 45mm specifications). All documents must be apostilled and translated to Russian.",
+        },
+        {
+          question: "How much does the Russia MBBS application process cost?",
+          answer:
+            "Total application process costs ₹2-3 lakhs excluding tuition: (1) Document attestation, apostille, and Russian translation: ₹15,000-30,000; (2) Admission and visa processing (consultancy, documentation support): ₹1-1.5 lakhs; (3) Visa application fee: ₹4,000-8,000; (4) Medical examination, HIV test, and health insurance: ₹8,000-15,000; (5) Flight tickets: ₹40,000-70,000 (return). Additionally, first semester tuition fee (₹1.1-2.6 lakhs) must be paid before invitation letter is issued. Budget ₹4-6 lakhs total for first-year expenses including application costs.",
+        },
+        {
+          question: "Can I apply directly to Russian universities or do I need an agent?",
+          answer:
+            "Direct application is possible but comes with challenges: navigating Russian systems, language barriers, time differences, slow bureaucratic processes, and extensive documentation requirements. Agency-assisted applications provide: NMC guideline compliance verification, complete documentation support (apostille, translation), visa application guidance, pre-departure briefings, airport pickup arrangements, and ongoing support throughout the course. While not mandatory, agencies are highly recommended especially for first-time international students. At Students Traffic, we maintain updated NMC compliance assessments and have processed 1,200+ Russia MBBS applications with 95%+ visa success rate.",
+        },
+        {
+          question: "How long does the Russia student visa take to process?",
+          answer:
+            "The complete visa timeline includes: (1) Invitation letter processing: 20-45 days (3-6 weeks) by Federal Migration Service after first semester tuition payment; (2) Visa application preparation: 1-2 weeks (gathering documents, attestation, translation); (3) Visa processing: 2-3 weeks standard (can be expedited to 3-7 days with extra fee). Total timeline from tuition payment to visa approval: 6-10 weeks. Start the invitation letter process at least 2-3 months before course begins. Generally no personal interview required for Indian students (90-95% approval rate). Visa must be registered with FMS within 7 days of arrival in Russia.",
+        },
+        {
+          question: "What are the most common mistakes in Russia MBBS applications?",
+          answer:
+            "Critical mistakes to avoid: (1) Applying to universities not meeting NMC guidelines (makes degree invalid in India despite ₹35-50 lakh investment); (2) Proceeding without valid NEET qualification (cannot obtain NMC registration for India practice); (3) Missing apostille or incorrect Russian translation (application rejection); (4) Expired HIV certificate (most common visa rejection - must be within 3 months, valid only 15-30 days); (5) Leaving visa application to last minute (rushed processing, potential admission year loss); (6) Trusting fake agents claiming '100% assured admission', 'no NEET required', or 'guaranteed FMGE clearance'; (7) Underestimating total costs (budget ₹2-3 lakhs for application process excluding tuition).",
+        },
+        {
+          question: "How does Students Traffic help with Russia MBBS applications?",
+          answer:
+            "Students Traffic provides end-to-end application support: (1) NMC guideline compliance assessment for every shortlisted university; (2) Academic profile assessment and university shortlisting based on budget (₹35-50 lakhs total) and career goals; (3) Complete documentation guidance (apostille, translation, attestation) with checklist tracking; (4) Visa application support with 95%+ success rate; (5) Pre-departure briefings covering cultural adaptation, packing, Russian winter preparation; (6) Airport pickup coordination and on-arrival hostel assistance; (7) Connection to 1,200+ Russia MBBS graduates for first-hand insights. Our focus is NMC compliance verification and realistic expectation-setting rather than over-promising unrealistic outcomes.",
+        },
+      ],
+    },
+  },
+  // The mbbs-in-russia-fees guide's narrative lives here; its per-university fee
+  // comparison table is injected at render time from live program_offerings data by
+  // app/mbbs-in-russia-fees/page.tsx (see buildRussiaFeesGuide there) rather than
+  // being hand-maintained as a static array.
+  "mbbs-in-russia-fees": {
+    metadata: {
+      title: "MBBS in Russia Fees 2026: Complete Cost Breakdown & University-Wise Fees for Indian Students",
+      description:
+        "Comprehensive MBBS in Russia fees guide: university-wise fees (₹2.6-15L/year tuition), total 6-year costs (₹28-103L complete), India comparison (50-70% cheaper than private colleges ₹60L-₹2.2Cr), hidden costs (₹8-15L), city-wise variations (Moscow ₹36-59L vs Crimea ₹13-21L living), cost-saving strategies (save ₹25-50L), education loan options, and budget/medium/premium scenarios for Indian students.",
+      path: "/mbbs-in-russia-fees",
+      openGraphType: "article",
+      keywords: [
+        "mbbs in russia fees",
+        "mbbs in russia for indian students fees",
+        "mbbs fees in russia for indian students",
+        "mbbs in russia fees in rupees",
+        "mbbs in russia fee structure",
+        "cost of mbbs in russia",
+        "russia mbbs fees",
+        "mbbs russia total cost",
+        "cheapest mbbs in russia",
+        "lowest mbbs fees in russia",
+      ],
+    },
+    page: {
+      path: "/mbbs-in-russia-fees",
+      title: "MBBS in Russia fees: complete cost breakdown for Indian students",
+      updatedOn: "Updated on 23 May 2026",
+      kicker: "INR-first fee planning",
+      summary:
+        "Comprehensive fees guide covering universities meeting NMC guidelines: annual tuition (₹2.6-15L), total 6-year costs (₹28-103L including living expenses), India comparison (50-70% savings vs private colleges), hidden costs families miss, city-wise variations, and cost-saving strategies.",
+      publishedDate: "2026-05-23",
+      countrySlug: "russia",
+      courseSlug: "mbbs",
+      primaryHref: "/mbbs-in-russia",
+      primaryLabel: "Read full Russia guide",
+      secondaryLabel: "Get fee planning support",
+      leadTitle: "Need personalized Russia MBBS fee planning?",
+      leadDescription:
+        "Students Traffic provides complete fee modeling across low/medium/high budget scenarios (₹28-103L), university-wise fee comparison, hidden cost identification (₹8-15L often missed), education loan facilitation, and cost-saving strategy counseling identifying ₹25-50L potential savings.",
+      leadSubmitLabel: "Get fee planning consultation",
+      notes: "Interest: MBBS in Russia fees - Fee planning support",
+      keyTakeaways: [
+        "MBBS in Russia fees range from ₹2.6-15 lakhs per year tuition across 50+ universities meeting NMC guidelines. Budget universities offer the lowest fees, mid-range universities provide balanced cost-quality, while premium Moscow/St. Petersburg universities command higher fees for top rankings and location.",
+        "Total 6-year cost including tuition, hostel, food, travel, and expenses: ₹28-34 lakhs (budget scenario in tier-2 cities), ₹43-52 lakhs (medium budget at federal universities), or ₹71-103 lakhs (premium Moscow/SPB universities). This is 50-70% cheaper than Indian private medical colleges charging ₹60 lakhs-₹2.2 crores.",
+        "Hidden costs families must budget: one-time Year 1 expenses (₹2-3.7 lakhs for visa, document attestation, flights, winter clothing, settlement), annual recurring costs (₹58,000-1.3 lakhs for insurance, study materials, travel home), city-specific variations (Moscow ₹36-59 lakhs over 6 years vs Crimea ₹13-21 lakhs), and currency fluctuation (5-7% annual USD-INR variation).",
+      ],
+      sections: [
+        {
+          title: "What families must understand about Russia MBBS fees",
+          paragraphs: [
+            "A Russia MBBS price quoted in dollars can feel manageable until parents map it to six years of rupee outflow, exchange-rate movement, hostel payments, flights, and recurring costs. Plan around total cost across the full pathway, not one annual tuition line.",
+            "At Students Traffic, we help families model total 6-year costs across low/medium/high budget scenarios (₹28-103L) based on city preferences (Moscow vs tier-2), living arrangements (hostel vs private), and lifestyle choices (self-cooking vs mess), then compare universities meeting NMC guidelines with exact fees rather than generic estimates.",
+          ],
+        },
+        {
+          title: "Total 6-year cost scenarios: low, medium, premium",
+          paragraphs: [
+            "Complete cost breakdowns including tuition, hostel, food, transport, insurance, study materials, annual travel home, and all one-time Year 1 expenses. Choose the scenario matching your family's budget and city preferences.",
+          ],
+          cards: [
+            {
+              title: "Budget (tier-2 city)",
+              body: "Universities in smaller cities. Year 1 total ₹6.02-7.14 lakhs; Years 2-6 ₹4.57-5.39 lakhs each; 6-year grand total ₹28.87-34.09 lakhs. Saves ₹31-70 lakhs vs Indian private colleges. Assumes self-cooking (₹54,000-72,000/yr) and university hostel (₹36,000-60,000/yr).",
+            },
+            {
+              title: "Medium (federal universities)",
+              body: "Federal universities. Year 1 total ₹8.7-10.24 lakhs; Years 2-6 ₹6.9-8.44 lakhs each; 6-year grand total ₹43.2-52.44 lakhs. Saves ₹17-62 lakhs vs Indian private colleges. Assumes Indian mess (₹96,000-1.2L/yr).",
+            },
+            {
+              title: "Premium (Moscow/top-tier)",
+              body: "Moscow and top-tier universities. Year 1 total ₹14.47-19.87 lakhs; Years 2-6 ₹11.32-16.72 lakhs each; 6-year grand total ₹71.07-103.47 lakhs. Comparable to lower-end Indian private but with international exposure. Assumes Moscow hostel (₹1.2-2L/yr).",
+            },
+          ],
+        },
+        {
+          title: "Hidden costs families often miss",
+          paragraphs: [
+            "Beyond tuition and hostel, these additional costs total ₹8-15 lakhs over 6 years. Budget accurately by including one-time Year 1 expenses, annual recurring costs, currency risks, city variations, and clinical-year extras.",
+          ],
+          cards: [
+            {
+              title: "One-time Year 1 expenses (₹1.2-3.7 lakhs)",
+              body: "Visa fees (₹5,000-12,000), MEA apostille (₹5,000-15,000), Russian translation (₹8,000-15,000), medical exam & HIV test (₹5,000-10,000), flights (₹35,000-80,000), winter clothing (₹15,000-25,000), and initial settlement (₹10,000-15,000). Incurred once but often forgotten alongside tuition.",
+            },
+            {
+              title: "Annual recurring costs (₹58,000-1.3 lakhs/year)",
+              body: "Health insurance (₹8,000-15,000), visa renewal (₹5,000-10,000), books & materials (₹10,000-25,000), annual travel home (₹35,000-80,000), and winter clothing replacement (₹5,000-8,000). Multiply by 5 years (Years 2-6).",
+            },
+            {
+              title: "Currency fluctuation (₹1.6-3.2 lakhs risk)",
+              body: "USD-INR volatility of 5-7% annually can shift a ₹40L budget by ±₹1.6-3.2L over 6 years. Budget conservatively assuming unfavorable rates; consider forward contracts or USD deposits.",
+            },
+            {
+              title: "City-specific variations (₹17-38 lakhs difference)",
+              body: "Living costs over 6 years range from Moscow (₹36-59L) and St. Petersburg (₹29-49L) down to Kazan (₹19-30L), Volgograd (₹16-24L), and Crimea (₹13-21L). Choosing a tier-2 city over Moscow saves ₹17-38 lakhs without compromising NMC guideline compliance.",
+            },
+            {
+              title: "Clinical years (₹13,000-28,000/year, Years 5-6)",
+              body: "Additional hospital transport (₹5,000-10,000/yr), professional attire (₹5,000-10,000), medical equipment like a stethoscope (₹3,000-8,000), and extra reference books (₹8,000-15,000/yr).",
+            },
+          ],
+        },
+        {
+          title: "Russia vs India: complete cost comparison",
+          paragraphs: [
+            "Russia MBBS (₹28-52L for mid-tier options) costs 50-70% less than Indian private colleges (₹60L-₹2.2Cr) while offering the same NMC guideline compliance and FMGE requirement. Only Indian government colleges (under 5% acceptance rate) are cheaper.",
+          ],
+          table: {
+            headers: ["Category", "Annual fees", "Total cost", "Accessibility"],
+            rows: [
+              ["Indian government colleges", "₹6,000-1,00,000", "₹30,000-5.5 lakhs (5.5 yrs)", "NEET rank 1-20,000 (General), extremely competitive"],
+              ["Indian private (All India Quota)", "₹7-30 lakhs/yr", "₹38.5 lakhs-₹1.65 crores", "NEET rank 20,000-2,00,000, high competition"],
+              ["Indian NRI quota", "₹12.5-30 lakhs/yr", "₹70 lakhs-₹2.2 crores", "No NEET rank required, USD payment, limited seats"],
+              ["Indian management quota", "₹12-40 lakhs/yr", "₹60 lakhs-₹1.5 crores", "Moderate NEET rank, capitation fees"],
+              ["Russia MBBS (budget)", "₹2.6-5 lakhs/yr", "₹28-34 lakhs (6 yrs)", "Qualifying NEET score, no rank competition"],
+              ["Russia MBBS (medium)", "₹4-6 lakhs/yr", "₹43-52 lakhs (6 yrs)", "Same NEET requirements, federal universities"],
+            ],
+            note: "Both Russian and Indian MBBS require NMC registration and FMGE/NExT clearance for India practice — degree recognition is equal; the difference is upfront cost and accessibility.",
+          },
+        },
+        {
+          title: "Cost-saving strategies: save ₹25-50 lakhs",
+          paragraphs: [
+            "Smart decisions on city, accommodation, food, travel, and scholarships can reduce total 6-year costs by ₹25-50 lakhs without compromising NMC guideline compliance or education quality.",
+          ],
+          bullets: [
+            "Choose a tier-2 city university (Kazan, Volgograd, Crimea, Ufa) over Moscow/St. Petersburg — save ₹17-38 lakhs over 6 years.",
+            "Self-cook in groups of 3-4 instead of an Indian mess — save ₹1.44-2.88 lakhs over 6 years.",
+            "Use university hostels (₹3,000-8,000/month) instead of private apartments (₹25,000-40,000/month) — save ₹5-10.8 lakhs.",
+            "Book flights 3-4 months ahead and travel off-season — save ₹90,000-2.4 lakhs over 6 years.",
+            "Apply for scholarships (Russian Government Scholarship covers 100% tuition + stipend; university merit waivers 25-50%) — save ₹7.8-60 lakhs.",
+            "Get a student transport pass (50-80% discount) — save ₹48,000-72,000 over 6 years.",
+            "Use an education loan with Section 80E full interest deduction — save ₹2.4-6.4 lakhs in taxes over 8 years.",
+          ],
+        },
+      ],
+      faqItems: [
+        {
+          question: "What is the total MBBS in Russia fees for Indian students including all expenses?",
+          answer:
+            "Total MBBS in Russia fees for 6 years range from ₹28.87-34.09 lakhs (budget scenario: tier-2 cities, university hostel ₹36,000-60,000/year, self-cooking ₹54,000-72,000/year), ₹43.2-52.44 lakhs (medium scenario: federal universities, Indian mess ₹96,000-1.2L/year), or ₹71.07-103.47 lakhs (premium scenario: Moscow universities, Moscow hostel ₹1.2-2L/year). This includes tuition, hostel, food, transport, insurance, study materials, annual travel home, and all one-time Year 1 expenses (₹2-3.7L for visa, documents, flights, winter clothing).",
+        },
+        {
+          question: "Which Russian university has the lowest MBBS fees for Indian students?",
+          answer:
+            "Budget universities in tier-2 cities have the lowest annual MBBS fees, often in the ₹2.6-3.1 lakh/year tuition band. With hostel and living expenses added, the total 6-year cost stays lowest for these tier-2 options. All should be verified as meeting NMC guidelines and offering English-medium MBBS. Students should verify clinical training quality and FMGE pass rates alongside fees before finalizing — see the university-wise table on this page for current figures.",
+        },
+        {
+          question: "How does MBBS in Russia fees compare with Indian private medical colleges?",
+          answer:
+            "MBBS in Russia (₹28-52 lakhs total for 6 years) is 50-70% cheaper than Indian private medical colleges charging ₹60 lakhs-₹2.2 crores for 5.5 years. Russia budget option (₹28-34L) saves ₹31-70L; Russia medium option (₹43-52L) saves ₹17-62L. Indian government colleges (₹30,000-5.5L) remain cheapest but require NEET rank 1-20,000 (< 5% acceptance), while Russia accepts a qualifying NEET score without rank competition. Same NMC guideline compliance and FMGE requirement applies to both.",
+        },
+        {
+          question: "What are the hidden costs in MBBS in Russia fees that families should know?",
+          answer:
+            "Hidden costs beyond tuition include: (1) One-time Year 1: ₹1.2-3.7L (visa, document attestation, flights, winter clothing, settlement); (2) Annual recurring Years 2-6: ₹58,000-1.3L/year (insurance, books, annual travel, visa renewal); (3) Currency fluctuation: 5-7% USD-INR variation impacts a ₹40L budget by ±₹1.6-3.2L; (4) City variations: Moscow living ₹36-59L vs Crimea ₹13-21L over 6 years; (5) Clinical years: extra ₹13,000-28,000/year. Total hidden costs: ₹8-15L over 6 years.",
+        },
+        {
+          question: "Can I get an education loan for MBBS in Russia fees?",
+          answer:
+            "Yes, Indian banks and NBFCs provide education loans covering 80-100% of Russia MBBS fees. Public sector banks (SBI, Bank of Baroda) offer ₹7.5 lakhs unsecured or up to ₹1.5 crores secured at 8.25-11.5% p.a. Private banks and NBFCs (Avanse, Auxilo, Credila) offer ₹50 lakhs-₹1 crore unsecured at 11-17% p.a. Government schemes like PM-Vidyalaxmi provide collateral-free loans with interest subsidy. Section 80E allows full interest deduction (no upper limit) for 8 years.",
+        },
+        {
+          question: "What is the fee payment structure for MBBS in Russia?",
+          answer:
+            "Russia MBBS fees are typically paid semester-wise or annually, with the first semester required before arrival. Payment methods: direct bank transfer, USD demand draft, or cash after arrival. First-year breakdown: pay ₹1.1-2.6L (half annual tuition) before arrival plus hostel deposit and processing fee. Late-payment penalties apply after a short grace period. Budget for 5-7% currency fluctuation and verify payment deadlines to avoid penalties.",
+        },
+        {
+          question: "How can I save money on MBBS in Russia fees?",
+          answer:
+            "Top cost-saving strategies: (1) Choose a tier-2 city university instead of Moscow/SPB: save ₹17-38L; (2) Self-cook vs Indian mess: save ₹1.44-2.88L; (3) University hostel vs private accommodation: save ₹5-10.8L; (4) Early flight booking & off-season travel: save ₹90,000-2.4L; (5) Apply for the Russian Government Scholarship: save ₹24L+; (6) Student transport pass: save ₹48,000-72,000; (7) Education loan with Section 80E benefit: save ₹2.4-6.4L over 8 years. Total potential savings: ₹25-50L.",
+        },
+        {
+          question: "How does Students Traffic help with Russia MBBS fees planning?",
+          answer:
+            "Students Traffic provides comprehensive fee planning: total cost modeling across low/medium/high scenarios (₹28-103L) based on your financial profile and city preferences; university fee comparison across 50+ options meeting NMC guidelines with exact annual tuition and 6-year projections; hidden cost identification; education loan facilitation with 15+ lenders (8.25-17% p.a.); and cost-saving strategy counseling identifying ₹25-50L potential savings. Our fee planning ensures families budget accurately for the 6-year commitment rather than reacting only to first-year quotes.",
+        },
+      ],
+    },
+  },
 } satisfies Record<string, StudyAbroadGuide>;
 
 export type StudyAbroadGuideSlug = keyof typeof studyAbroadGuides;
