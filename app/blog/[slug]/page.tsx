@@ -128,9 +128,10 @@ export async function generateStaticParams() {
   // published after a build simply render dynamically (still using the same
   // "use cache" data layer) until the next deploy, so nothing breaks if this
   // list drifts from the live DB.
-  // Keep detail pages request-driven so a newly published post is not 404ed
-  // simply because its slug was absent from the last deployment's build list.
-  return [];
+  // Cache Components requires at least one build-time param. Keep this
+  // non-content fallback so real blog slugs remain request-driven and newly
+  // published posts are not 404ed simply because they missed the build list.
+  return [{ slug: PLACEHOLDER_BLOG_SLUG }];
 }
 
 function resolvePostAuthor(authorSlug: string | null | undefined) {
