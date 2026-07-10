@@ -1,17 +1,19 @@
 import "server-only";
 
-import { and, asc, eq, inArray, lte, sql } from "drizzle-orm";
+import { and, asc, eq, inArray, lte, lt, or, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
-import { backgroundJobs } from "@/lib/db/schema";
+import { backgroundJobs, leads } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 import { syncLeadDestinations } from "@/lib/lead-sync";
+import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
 import { cleanupExpiredPeerCallSessions } from "@/lib/peer-calls";
 import { sendLeadWhatsAppMessage } from "@/lib/wati";
 
 const LEAD_DELIVERY_JOB_KIND = "lead.delivery";
 const DEFAULT_MAX_ATTEMPTS = 5;
+const JOB_LEASE_TIMEOUT_MS = 10 * 60_000;
 
 type LeadWhatsAppJobPayload = {
   fullName: string;
@@ -89,19 +91,56 @@ async function processLeadDeliveryJob(payload: Record<string, unknown>) {
     throw new Error("Invalid lead delivery job payload.");
   }
 
-  const deliveries: Array<Promise<unknown>> = [
-    syncLeadDestinations(payload.leadId, payload.leadHandoffPayload),
-  ];
+  await syncLeadDestinations(payload.leadId, payload.leadHandoffPayload);
 
   if (payload.whatsappPayload && !env.skipLeadWhatsapp) {
-    deliveries.push(
-      sendLeadWhatsAppMessage(payload.whatsappPayload, payload.leadId, {
-        skipInboundLeadCheck: true,
-      }),
-    );
+    const result = await sendLeadWhatsAppMessage(payload.whatsappPayload, payload.leadId, {
+      skipInboundLeadCheck: true,
+    });
+
+    if (!result.ok && result.status !== "skipped") {
+      throw new Error(result.error ?? "WhatsApp lead delivery failed.");
+    }
   }
 
-  await Promise.allSettled(deliveries);
+  const db = getDb();
+  if (!db) {
+    throw new Error("Database unavailable while checking lead delivery status.");
+  }
+
+  const [lead] = await db
+    .select({
+      sourcePath: leads.sourcePath,
+      crmSyncStatus: leads.crmSyncStatus,
+      leadSquaredSyncStatus: leads.leadSquaredSyncStatus,
+      pabblySyncStatus: leads.pabblySyncStatus,
+    })
+    .from(leads)
+    .where(eq(leads.id, payload.leadId))
+    .limit(1);
+
+  if (!lead) {
+    throw new Error(`Lead ${payload.leadId} was not found after delivery.`);
+  }
+
+  const route = getLeadDeliveryRoute(lead.sourcePath);
+  const failedDestinations = [
+    route.crm && lead.crmSyncStatus !== "synced" && lead.crmSyncStatus !== "skipped"
+      ? `crm:${lead.crmSyncStatus}`
+      : null,
+    route.leadSquared &&
+    lead.leadSquaredSyncStatus !== "synced" &&
+    lead.leadSquaredSyncStatus !== "skipped"
+      ? `leadsquared:${lead.leadSquaredSyncStatus}`
+      : null,
+    route.pabbly && lead.pabblySyncStatus !== "synced" && lead.pabblySyncStatus !== "skipped"
+      ? `pabbly:${lead.pabblySyncStatus}`
+      : null,
+  ].filter((value): value is string => Boolean(value));
+
+  if (failedDestinations.length > 0) {
+    throw new Error(`Lead delivery incomplete: ${failedDestinations.join(", ")}`);
+  }
 }
 
 async function processJob(job: typeof backgroundJobs.$inferSelect) {
@@ -120,6 +159,7 @@ export async function processPendingBackgroundJobs(options: ProcessJobsOptions =
   }
 
   const now = new Date();
+  const staleLeaseCutoff = new Date(now.getTime() - JOB_LEASE_TIMEOUT_MS);
   const limit = Math.max(1, Math.min(options.limit ?? 10, 50));
   const expiredCallsCleaned = await cleanupExpiredPeerCallSessions();
   const pendingJobs = await db
@@ -127,8 +167,10 @@ export async function processPendingBackgroundJobs(options: ProcessJobsOptions =
     .from(backgroundJobs)
     .where(
       and(
-        eq(backgroundJobs.status, "pending"),
-        lte(backgroundJobs.runAfter, now),
+        or(
+          and(eq(backgroundJobs.status, "pending"), lte(backgroundJobs.runAfter, now)),
+          and(eq(backgroundJobs.status, "processing"), lt(backgroundJobs.lockedAt, staleLeaseCutoff))
+        ),
         options.sourcePathFilter
           ? sql`${backgroundJobs.payload}->'leadHandoffPayload'->>'sourcePath' = ${options.sourcePathFilter}`
           : undefined
@@ -152,7 +194,13 @@ export async function processPendingBackgroundJobs(options: ProcessJobsOptions =
       .where(
         and(
           eq(backgroundJobs.id, pendingJob.id),
-          eq(backgroundJobs.status, "pending")
+          or(
+            eq(backgroundJobs.status, "pending"),
+            and(
+              eq(backgroundJobs.status, "processing"),
+              lt(backgroundJobs.lockedAt, staleLeaseCutoff)
+            )
+          )
         )
       )
       .returning();
@@ -168,6 +216,7 @@ export async function processPendingBackgroundJobs(options: ProcessJobsOptions =
         .set({
           status: "completed",
           completedAt: new Date(),
+          lockedAt: null,
           lastError: null,
           updatedAt: new Date(),
         })

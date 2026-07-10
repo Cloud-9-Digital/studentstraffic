@@ -13,6 +13,7 @@ import {
   uniqueIndex,
   varchar,
 } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
 import type {
   CourseStream,
   Faq,
@@ -472,6 +473,9 @@ export const leads = pgTable(
     index("leads_fbclid_idx").on(table.fbclid),
     index("leads_wati_local_message_id_idx").on(table.watiLocalMessageId),
     index("leads_wati_whatsapp_message_id_idx").on(table.watiWhatsappMessageId),
+    uniqueIndex("leads_wati_whatsapp_message_unique_idx")
+      .on(table.watiWhatsappMessageId)
+      .where(sql`${table.watiWhatsappMessageId} IS NOT NULL`),
   ]
 );
 

@@ -158,7 +158,7 @@ console.log('[rate-limit]', {
 **Test Connection**:
 ```bash
 curl "https://close-buzzard-88151.upstash.io/ping" \
-  -H "Authorization: Bearer gQAAAAAAAVhXAAIgcDI1Y2U4ZjFkN2FmMTk0YjZiYWIxMDdkODkwMThhYzA4Nw"
+  -H "Authorization: Bearer $UPSTASH_REDIS_REST_TOKEN"
 
 # Should return: {"result":"PONG"}
 ```

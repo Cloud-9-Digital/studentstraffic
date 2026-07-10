@@ -7,6 +7,7 @@ import {
   rateLimitConfigs,
   getRateLimitIdentifier,
   createRateLimitResponse,
+  hasDistributedRateLimiter,
 } from "@/lib/rate-limit";
 
 /**
@@ -31,6 +32,22 @@ export async function proxy(request: NextRequest) {
 
   // Apply rate limiting to API routes
   if (pathname.startsWith("/api/")) {
+    const requiresDistributedLimit =
+      pathname.startsWith("/api/auth/") ||
+      pathname.startsWith("/api/mobile/v1/auth/") ||
+      pathname.startsWith("/api/revalidate") ||
+      pathname.startsWith("/api/cache/invalidate") ||
+      pathname.startsWith("/api/jobs/process") ||
+      pathname.includes("/lead") ||
+      pathname.startsWith("/api/wati/");
+
+    if (process.env.NODE_ENV === "production" && requiresDistributedLimit && !hasDistributedRateLimiter()) {
+      return NextResponse.json(
+        { error: "This endpoint requires distributed rate limiting." },
+        { status: 503 }
+      );
+    }
+
     // Determine which rate limit config to use
     let config: { limit: number; window: number } = rateLimitConfigs.api;
 

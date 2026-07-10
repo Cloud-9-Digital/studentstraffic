@@ -1,4 +1,6 @@
-# Query Optimization Status Report
+# Archived: Query Optimization Status Report (May 2026)
+
+> Historical snapshot. Several statuses and file references are no longer current. Use the current backend architecture and reliability documentation for active guidance.
 Generated: 2026-05-07
 
 ## ✅ COMPLETED OPTIMIZATIONS

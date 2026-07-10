@@ -144,6 +144,10 @@ function getRateLimiter(): InMemoryRateLimiter | UpstashRateLimiter {
   return rateLimiter;
 }
 
+export function hasDistributedRateLimiter() {
+  return Boolean(env.upstashRedisRestUrl && env.upstashRedisRestToken);
+}
+
 /**
  * Rate limit configurations for different endpoints
  */

@@ -24,10 +24,10 @@ Go to your Vercel project → Settings → Environment Variables
 ```bash
 # Redis (rate limiting + caching) - WORKING LOCALLY ✅
 UPSTASH_REDIS_REST_URL=https://close-buzzard-88151.upstash.io
-UPSTASH_REDIS_REST_TOKEN=gQAAAAAAAVhXAAIgcDI1Y2U4ZjFkN2FmMTk0YjZiYWIxMDdkODkwMThhYzA4Nw
+UPSTASH_REDIS_REST_TOKEN=<set-in-Upstash>
 
 # Cache revalidation (already have secret locally ✅)
-REVALIDATE_SECRET=db1bb0e609913d6e3182b94cc3e2c4b244ba3ac67ffbd25636d77188dcce8968
+REVALIDATE_SECRET=<set-in-Vercel>
 
 # Sentry Error Tracking - CONFIGURED LOCALLY ✅
 NEXT_PUBLIC_SENTRY_DSN=https://e1b00cdad9c1e7865f98cd3e6bf715b5@o4511445384888320.ingest.us.sentry.io/4511445386199040
@@ -178,15 +178,15 @@ If you decide to add error tracking:
 
 ### Issue: Rate limiting returns 429 immediately
 
-**Cause**: Middleware is applying rate limits too aggressively
+**Cause**: The proxy is applying rate limits too aggressively
 
-**Fix**: Check middleware.ts configuration, verify Redis is connected
+**Fix**: Check proxy.ts configuration, verify Redis is connected
 
 **Test**:
 ```bash
 # Check Redis connection
 curl "https://close-buzzard-88151.upstash.io/ping" \
-  -H "Authorization: Bearer gQAAAAAAAVhXAAIgcDI1Y2U4ZjFkN2FmMTk0YjZiYWIxMDdkODkwMThhYzA4Nw"
+  -H "Authorization: Bearer $UPSTASH_REDIS_REST_TOKEN"
 # Should return: {"result":"PONG"}
 ```
 

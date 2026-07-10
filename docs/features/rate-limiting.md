@@ -6,9 +6,9 @@ Protect your API routes from abuse with intelligent rate limiting powered by Ups
 
 Rate limiting prevents API abuse, DDoS attacks, and excessive resource usage by limiting requests per IP address.
 
-**Implementation**: Edge Middleware (runs globally before your app)
+**Implementation**: `proxy.ts` (runs before the Next.js app)
 
-**Storage**: Upstash Redis (with in-memory fallback)
+**Storage**: Upstash Redis in production; in-memory fallback for development/public reads
 
 **Coverage**: All `/api/*` routes automatically
 
@@ -33,7 +33,7 @@ User Request
     ↓
 Vercel Edge Network
     ↓
-Middleware (rate-limit.ts)
+Proxy (rate-limit.ts)
     ↓
 Check Redis for IP count
     ↓
@@ -52,8 +52,8 @@ Check Redis for IP count
 
 ## 📁 Files
 
-### `/middleware.ts`
-Edge middleware that intercepts all API requests:
+### `/proxy.ts`
+The Next.js proxy intercepts API requests:
 
 ```typescript
 export async function middleware(request: NextRequest) {
@@ -119,9 +119,9 @@ function getRateLimitIdentifier(request: Request): string {
 }
 ```
 
-### 2. Redis Sliding Window
+### 2. Redis Fixed Window
 ```typescript
-// Store: ratelimit:{ip}:{timestamp}
+// Store: ratelimit:{ip}:{window}
 // Key expires after window duration
 // Count increments on each request
 // Limit checked before allowing request
@@ -169,7 +169,7 @@ export const rateLimitConfigs = {
 
 ### Add New Endpoint Rules
 
-Edit `/middleware.ts`:
+Edit `/proxy.ts`:
 
 ```typescript
 if (pathname.startsWith("/api/premium-feature")) {
@@ -275,13 +275,13 @@ api: {
 ### Rate Limit Not Working
 
 **Check**:
-1. Is `middleware.ts` in project root? ✅
+1. Is `proxy.ts` in project root? ✅
 2. Are Redis credentials correct? ✅
 3. Is path matching in middleware? ✅
 
 **Debug**:
 ```typescript
-// Add logging in middleware.ts
+// Add logging in proxy.ts
 console.log('[rate-limit]', {
   path: pathname,
   ip: identifier,

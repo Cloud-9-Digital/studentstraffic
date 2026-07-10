@@ -18,7 +18,7 @@ Automatic monitoring of all database queries with:
 
 ## 📊 What's Monitored
 
-### Every Query Tracked
+### Query Monitoring
 
 ```json
 {
@@ -43,6 +43,8 @@ Automatic monitoring of all database queries with:
   "sampleQuery": "SELECT u.*, p.* FROM universities u..."
 }
 ```
+
+Production logs no longer need to be treated as a complete query audit. Use slow-query and error events for diagnosis, and avoid copying raw query text into external tickets if it contains sensitive schema details.
 
 ### Errors
 

@@ -411,17 +411,25 @@ async function syncLeadToLeadSquared(
 }
 
 async function syncLeadToGoogleSheets(payload: LeadSyncPayload) {
-  await Promise.allSettled([
+  const results = await Promise.all([
     appendSeminarLeadToGoogleSheets(payload),
     appendWebsiteLeadToGoogleSheets(payload),
   ]);
+
+  const failures = results
+    .filter((result) => result.status === "failed")
+    .map((result) => result.error ?? "unknown Google Sheets error");
+
+  if (failures.length > 0) {
+    throw new Error(`Google Sheets delivery failed: ${failures.join("; ")}`);
+  }
 }
 
 export async function syncLeadDestinations(
   leadId: number | undefined,
   payload: LeadSyncPayload
 ) {
-  await Promise.allSettled([
+  await Promise.all([
     syncLeadToCrm(leadId, payload),
     syncLeadToPabbly(leadId, payload),
     syncLeadToLeadSquared(leadId, payload),

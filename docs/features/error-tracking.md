@@ -44,9 +44,9 @@ Your error tracking is fully set up and ready to use.
 - ✅ Database errors
 - ✅ Server action failures
 
-**Edge Runtime** (Middleware):
+**Edge Runtime** (Next.js Proxy):
 - ✅ Rate limiting errors
-- ✅ Middleware exceptions
+- ✅ Proxy exceptions
 
 ---
 

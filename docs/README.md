@@ -33,6 +33,14 @@ Quick reference for configurations and APIs.
 - **[API Endpoints](./reference/api-endpoints.md)** - Internal API documentation
 - **[Configuration](./reference/configuration.md)** - Config files explained
 
+### 🧭 Product and historical records
+
+- **[CTA Conversion Status](./analytics/cta-conversion-summary.md)** - Current CTA conversion backlog and historical rollout notes
+- **[SEO Improvements Log](./seo/seo-improvements-2026.md)** - Historical SEO/design implementation record
+- **[Archived Optimization Plan](./archive/performance/optimization-plan-2026-05.md)** - Superseded performance recommendations
+- **[Archived Optimization Status](./archive/performance/optimization-status-2026-05.md)** - May 2026 optimization snapshot
+- **[Archived Deployment Checklist](./archive/operations/final-deployment-2026-05.md)** - Historical checklist; not current deployment authority
+
 ---
 
 ## 🎯 Quick Start
@@ -54,6 +62,9 @@ Quick reference for configurations and APIs.
 
 ## 🏗️ Architecture Overview
 
+- **[Backend Architecture](./backend-architecture.md)** - Request boundaries, database-cost rules, jobs, idempotency, and endpoint checklist
+- **[Backend Reliability and Cost Runbook](./operations/backend-reliability-and-cost-controls.md)** - Production checks, job recovery, cost reviews, and incident response
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                         Users                                │
@@ -65,7 +76,7 @@ Quick reference for configurations and APIs.
                     └────────┬─────────┘
                              │
                     ┌────────▼─────────┐
-                    │   Middleware     │
+                    │   Proxy         │
                     │ Rate Limiting    │
                     └────────┬─────────┘
                              │
@@ -114,7 +125,7 @@ Quick reference for configurations and APIs.
 
 ### Performance Features
 - **ISR** - Incremental Static Regeneration
-- **Edge Middleware** - Global rate limiting
+- **Next.js Proxy** - Request interception and global rate limiting
 - **Connection Pooling** - Database optimization
 - **Background Jobs** - Async processing
 
@@ -178,7 +189,7 @@ See [Scaling Guide](./guides/scaling.md) for detailed cost projections.
 
 ### External Resources
 - [Next.js ISR Documentation](https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration)
-- [Vercel Edge Middleware](https://vercel.com/docs/functions/edge-middleware)
+- [Next.js Proxy](https://nextjs.org/docs/app/api-reference/file-conventions/proxy)
 - [Upstash Redis Docs](https://docs.upstash.com/redis)
 - [Sentry Next.js Guide](https://docs.sentry.io/platforms/javascript/guides/nextjs/)
 

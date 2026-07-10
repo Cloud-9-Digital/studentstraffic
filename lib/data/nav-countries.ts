@@ -27,21 +27,16 @@ export type NavCountryRegionGroup = {
 // be bundled into client code.
 export { FEATURED_NAV_COUNTRY_SLUG } from "@/lib/data/nav-constants";
 
-// Short nav descriptions keyed by slug; new countries fall back to first
-// sentence of their DB summary — no manual update needed.
-const NAV_DESCRIPTIONS: Record<string, string> = {
-  russia:     "Established NMC pathways, top public universities",
-  vietnam:    "Affordable fees, growing English-medium options",
-  georgia:    "WHO & NMC recognised, European standard",
-  kyrgyzstan: "Low cost of living, NMC eligible programs",
-  uzbekistan: "English medium programs, highly affordable",
-  italy:      "IMAT-based admission, WHO & NMC recognised",
-};
-
-function deriveDescription(slug: string, summary: string): string {
-  if (NAV_DESCRIPTIONS[slug]) return NAV_DESCRIPTIONS[slug];
+// Nav descriptions are derived from each country's DB `summary` (first
+// sentence, trimmed) rather than a hand-maintained map. A hardcoded
+// slug -> copy table silently degrades every country that isn't added to it
+// (this covered 6 of 11 countries before), which only gets worse as the
+// catalog grows toward many more countries. Deriving from live data means
+// every country - present and future - gets an accurate, non-empty
+// description with zero manual upkeep.
+function deriveDescription(summary: string): string {
   const first = summary.split(/[.!?]/)[0]?.trim() ?? summary;
-  return first.length > 70 ? first.slice(0, 67) + "…" : first;
+  return first.length > 84 ? first.slice(0, 81) + "…" : first;
 }
 
 export async function getNavCountries(): Promise<NavCountry[]> {
@@ -66,7 +61,7 @@ export async function getNavCountries(): Promise<NavCountry[]> {
     name: r.name,
     href: getCountryHref(r.slug),
     isoCode: getCountryFlagCode(r.slug),
-    description: deriveDescription(r.slug, r.summary),
+    description: deriveDescription(r.summary),
   }));
 }
 
@@ -96,7 +91,7 @@ export async function getNavCountriesByRegion(): Promise<NavCountryRegionGroup[]
       name: row.name,
       href: getCountryHref(row.slug),
       isoCode: getCountryFlagCode(row.slug),
-      description: deriveDescription(row.slug, row.summary),
+      description: deriveDescription(row.summary),
     };
 
     const existing = groupsByRegion.get(row.region);

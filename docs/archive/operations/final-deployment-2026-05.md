@@ -1,4 +1,6 @@
-# 🚀 Final Deployment Guide
+# Archived: Final Deployment Guide (May 2026)
+
+> This is a historical deployment checklist, not the current source of truth. Do not copy credentials or assume the performance claims below still apply. Use [the deployment guide](../../getting-started/deployment.md), [environment setup](../../getting-started/environment-setup.md), and the [backend reliability runbook](../../operations/backend-reliability-and-cost-controls.md).
 
 Everything is ready! Here's what you need to do to deploy.
 
@@ -27,12 +29,12 @@ Add these for **Production**, **Preview**, and **Development**:
 
 DATABASE_URL=<your-neon-database-url>
 NEXT_PUBLIC_SITE_URL=https://your-domain.com
-REVALIDATE_SECRET=db1bb0e609913d6e3182b94cc3e2c4b244ba3ac67ffbd25636d77188dcce8968
+REVALIDATE_SECRET=<set-in-Vercel>
 
 # ===== REDIS (Required for rate limiting & caching) =====
 
-UPSTASH_REDIS_REST_URL=https://close-buzzard-88151.upstash.io
-UPSTASH_REDIS_REST_TOKEN=gQAAAAAAAVhXAAIgcDI1Y2U4ZjFkN2FmMTk0YjZiYWIxMDdkODkwMThhYzA4Nw
+UPSTASH_REDIS_REST_URL=<set-in-Upstash>
+UPSTASH_REDIS_REST_TOKEN=<set-in-Upstash>
 
 # ===== SENTRY (Required for error tracking) =====
 
@@ -165,7 +167,7 @@ After deployment, you should see:
 ## 🚨 If Something Goes Wrong
 
 ### Rate Limiting Not Working
-1. Check middleware.ts is deployed (Vercel → Files)
+1. Check proxy.ts is deployed (Vercel → Files)
 2. Verify Redis credentials in Vercel
 3. Check Vercel logs for `[rate-limit]` messages
 
@@ -184,7 +186,7 @@ After deployment, you should see:
 1. Test connection manually:
    ```bash
    curl "https://close-buzzard-88151.upstash.io/ping" \
-     -H "Authorization: Bearer gQAAAAAAAVhXAAIgcDI1Y2U4ZjFkN2FmMTk0YjZiYWIxMDdkODkwMThhYzA4Nw"
+     -H "Authorization: Bearer $UPSTASH_REDIS_REST_TOKEN"
    ```
 2. Should return: `{"result":"PONG"}`
 
@@ -255,7 +257,7 @@ Your application is now:
 - ✅ Monitored for errors
 - ✅ Ready to scale to 1M+ users/month
 
-**Next Steps**:
+**Historical next steps**:
 1. Add environment variables to Vercel (Step 1)
 2. Push to deploy (Step 2)
 3. Test everything (Step 3)

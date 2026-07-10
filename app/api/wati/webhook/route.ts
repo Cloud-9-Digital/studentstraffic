@@ -364,7 +364,12 @@ async function syncInboundMessageLead(payload: WatiWebhookPayload) {
       watiStatusUpdatedAt: submittedAt,
       createdAt: submittedAt,
     })
+    .onConflictDoNothing({ target: leads.watiWhatsappMessageId })
     .returning({ id: leads.id });
+
+  if (!insertedLead) {
+    return { created: false, skipped: true };
+  }
 
   const insertedLeadId = insertedLead?.id;
 

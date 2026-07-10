@@ -110,13 +110,23 @@ export async function generateMetadata({
     return { title: "Country Not Found" };
   }
 
+  // country.metaTitle / country.metaDescription are curated, per-country copy
+  // (see scripts/update-country-meta.mjs) that accounts for whether a
+  // country's published catalog is single-stream (e.g. Georgia is ~100%
+  // MBBS) or spans multiple streams (e.g. Albania covers nursing, medicine,
+  // dental, and pharmacy) — do not derive title/description from
+  // programs[0], which is an arbitrarily-ordered "first" program and can
+  // misrepresent a multi-stream country as course-specific. The dynamic
+  // fallback below only applies to a future country added before curated
+  // metadata exists for it, and is intentionally generic (not course-locked)
+  // for that reason.
   const primaryCourse = programs[0]?.course.shortName;
-  const title = primaryCourse
-    ? `Study ${primaryCourse} in ${country.name} | Universities, Fees, Cities & Teaching`
-    : `Study in ${country.name} | Universities, Fees, Cities & Teaching`;
-  const description = primaryCourse
-    ? `Compare ${primaryCourse} universities in ${country.name} by fees, city, teaching medium, and NMC recognition. Intake details and student support context for Indian students.`
-    : `Compare universities in ${country.name} by fees, city, and teaching medium. Intake details and student support context for Indian students.`;
+  const title =
+    country.metaTitle ||
+    `Study in ${country.name} | Universities, Fees & Programs`;
+  const description =
+    country.metaDescription ||
+    `Compare universities in ${country.name} by fees, city, and teaching medium, across the streams and programs available there.`;
 
   return buildIndexableMetadata({
     title,
@@ -149,9 +159,16 @@ export default async function CountryPage({
     : null;
 
   const path = `/countries/${country.slug}`;
-  const countryPageDescription = primaryProgram
-    ? `Explore ${country.name} as a study destination for ${primaryProgram.course.shortName} with universities, fee range, city spread, teaching language, and intake context.`
-    : `Explore ${country.name} as a study destination with universities, fee range, city spread, teaching language, and intake context.`;
+  // Structured-data (CollectionPage) description only — not rendered as
+  // visible copy anywhere on the page. Reuses the same curated
+  // country.metaDescription as generateMetadata() above so this doesn't
+  // reintroduce the primaryProgram.course.shortName course-locking bug for a
+  // country whose published catalog spans multiple streams (see
+  // scripts/update-country-meta.mjs). Same generic fallback shape as
+  // generateMetadata for a country without curated metadata yet.
+  const countryPageDescription =
+    country.metaDescription ||
+    `Explore ${country.name} as a study destination with universities, fee range, city spread, teaching language, and intake context.`;
   const countryStructuredData = getCountryStructuredData(country);
 
   const publicPrograms = programs.filter((p) => p.university.type === "Public");

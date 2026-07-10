@@ -6,6 +6,7 @@ import {
   RUSSIA_LP_CONFIG,
   RUSSIA_LP_FEATURED_SLUGS,
   getCountryLpStats,
+  getFeaturedPrograms,
 } from "@/lib/data/mbbs-country-lp";
 import { buildIndexableMetadata } from "@/lib/metadata";
 
@@ -29,6 +30,14 @@ export const metadata: Metadata = buildIndexableMetadata({
 export default async function MbbsInRussiaAdmissionPage() {
   const programs = await getProgramsForCountry("russia");
   const stats = getCountryLpStats(programs, RUSSIA_LP_FEATURED_SLUGS);
+  const featuredPrograms = getFeaturedPrograms(programs, RUSSIA_LP_FEATURED_SLUGS);
 
-  return <CountryMbbsLandingPage path={path} config={RUSSIA_LP_CONFIG} stats={stats} />;
+  return (
+    <CountryMbbsLandingPage
+      path={path}
+      config={RUSSIA_LP_CONFIG}
+      stats={stats}
+      featuredPrograms={featuredPrograms}
+    />
+  );
 }

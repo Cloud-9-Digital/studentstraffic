@@ -1,25 +1,28 @@
 import { NextResponse } from "next/server";
+import { timingSafeEqual } from "node:crypto";
 
 import { processPendingBackgroundJobs } from "@/lib/background-jobs";
 import { env } from "@/lib/env";
 
 function isAuthorized(request: Request) {
-  const secret = env.cronSecret ?? env.revalidateSecret;
+  const secret = env.cronSecret;
 
   if (!secret) {
     return false;
   }
 
   const authHeader = request.headers.get("authorization");
-  const expected = `Bearer ${secret}`;
+  const provided = authHeader?.startsWith("Bearer ")
+    ? authHeader.slice("Bearer ".length).trim()
+    : null;
 
-  if (authHeader === expected) {
-    return true;
+  if (!provided) {
+    return false;
   }
 
-  const url = new URL(request.url);
-
-  return url.searchParams.get("secret") === secret;
+  const input = Buffer.from(provided);
+  const expected = Buffer.from(secret);
+  return input.length === expected.length && timingSafeEqual(input, expected);
 }
 
 async function handle(request: Request) {

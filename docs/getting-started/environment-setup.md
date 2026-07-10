@@ -132,8 +132,7 @@ This guide shows you how to get all the environment variables needed for the sca
    # Option 2: Node.js
    node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
 
-   # Example output:
-   # K7gNU3sdo+OL0wNhqoVWhr3g6s1xYv72ol/pe/Unols=
+   # Use the generated output as the secret value; do not commit it.
    ```
 
 2. **Add to Vercel**
@@ -142,12 +141,12 @@ This guide shows you how to get all the environment variables needed for the sca
    # Project → Settings → Environment Variables → Add
    # If REVALIDATE_SECRET already exists, update it with a strong value
 
-   REVALIDATE_SECRET=K7gNU3sdo+OL0wNhqoVWhr3g6s1xYv72ol/pe/Unols=
+   REVALIDATE_SECRET=<generate-a-random-secret>
    ```
 
 3. **Add to Local Development** (`.env.local`):
    ```bash
-   REVALIDATE_SECRET=K7gNU3sdo+OL0wNhqoVWhr3g6s1xYv72ol/pe/Unols=
+   REVALIDATE_SECRET=<generate-a-random-secret>
    ```
 
 ---
@@ -251,7 +250,7 @@ Or click "Redeploy" in Vercel dashboard.
 
 ### "Rate limiting not working"
 - **Without Redis**: Still works with in-memory storage, but less reliable
-- **Check middleware**: Should be file `middleware.ts` in project root
+- **Check proxy**: Should be file `proxy.ts` in project root
 - **Verify deployment**: Check Vercel Functions logs for rate limit messages
 
 ---

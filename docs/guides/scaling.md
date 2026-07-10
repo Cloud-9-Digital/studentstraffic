@@ -29,10 +29,10 @@ The following optimizations have been implemented to prepare the site for high t
   - Contact tracking: 300 req/min per IP
 
 ### Implementation
-- **Middleware**: `/middleware.ts` - Edge runtime for global distribution
-- **Rate limiter**: `/lib/rate-limit.ts` - Upstash Redis or in-memory fallback
+- **Proxy**: `/proxy.ts` - request interception and rate limiting
+- **Rate limiter**: `/lib/rate-limit.ts` - Upstash Redis in production, local fallback for development/public reads
 
-### Setup (Optional - works without Redis)
+### Setup (Required for sensitive production endpoints)
 ```bash
 # Free tier: 10K requests/day
 # Sign up at: https://console.upstash.com/
@@ -362,7 +362,7 @@ curl -X POST https://your-site.com/api/cache/invalidate \
 ## 🔧 Troubleshooting
 
 ### Rate Limiting Not Working
-- Check middleware is deployed: `middleware.ts` should be in root
+- Check the proxy is deployed: `proxy.ts` should be in root
 - Verify Upstash credentials (optional)
 - Check Vercel logs for rate limit messages
 
@@ -386,7 +386,7 @@ curl -X POST https://your-site.com/api/cache/invalidate \
 ## 📚 Further Reading
 
 - [Next.js ISR Documentation](https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration)
-- [Vercel Edge Middleware](https://vercel.com/docs/functions/edge-middleware)
+- [Next.js Proxy](https://nextjs.org/docs/app/api-reference/file-conventions/proxy)
 - [Upstash Redis](https://docs.upstash.com/redis)
 - [Neon Postgres Scaling](https://neon.tech/docs/introduction/auto-scaling)
 - [Sentry Error Tracking](https://docs.sentry.io/platforms/javascript/guides/nextjs/)

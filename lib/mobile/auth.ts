@@ -13,6 +13,7 @@ import {
 } from "@/lib/security/rate-limit";
 
 const MOBILE_SESSION_DAYS = 60;
+const SESSION_HEARTBEAT_INTERVAL_MS = 5 * 60_000;
 const MOBILE_LOGIN_EMAIL_LIMIT = { limit: 5, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
 const MOBILE_LOGIN_IP_LIMIT = { limit: 12, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
 const MOBILE_LOGIN_COMBO_LIMIT = { limit: 6, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
@@ -146,6 +147,7 @@ export async function getMobileSession(request: Request) {
     .select({
       sessionId: mobileSessions.id,
       expiresAt: mobileSessions.expiresAt,
+      lastUsedAt: mobileSessions.lastUsedAt,
       user: {
         id: users.id,
         name: users.name,
@@ -169,10 +171,16 @@ export async function getMobileSession(request: Request) {
     .limit(1);
 
   if (row) {
-    await db
-      .update(mobileSessions)
-      .set({ lastUsedAt: new Date(), updatedAt: new Date() })
-      .where(eq(mobileSessions.id, row.sessionId));
+    const now = new Date();
+    if (
+      !row.lastUsedAt ||
+      now.getTime() - row.lastUsedAt.getTime() >= SESSION_HEARTBEAT_INTERVAL_MS
+    ) {
+      await db
+        .update(mobileSessions)
+        .set({ lastUsedAt: now, updatedAt: now })
+        .where(eq(mobileSessions.id, row.sessionId));
+    }
   }
 
   return row ?? null;

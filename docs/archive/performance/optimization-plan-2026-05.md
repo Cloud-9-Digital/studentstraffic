@@ -1,4 +1,6 @@
-# Database & API Query Optimization Plan
+# Archived: Database & API Query Optimization Plan (May 2026)
+
+> Superseded by [Backend Architecture](../../backend-architecture.md), [Backend Reliability and Cost Runbook](../../operations/backend-reliability-and-cost-controls.md), and the current code/migrations. Treat the recommendations below as historical context, not an active task list.
 
 ## Critical Priority (Do First)
 

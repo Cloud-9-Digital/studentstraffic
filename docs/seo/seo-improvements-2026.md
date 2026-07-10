@@ -1,5 +1,7 @@
 # SEO & Design Improvements - May 2026
 
+> Historical implementation log. Keep for context and measurement history; current editorial and publishing rules live in [Project Standards](../project-standards.md), the [MBBS SEO Roadmap](../mbbs-seo-roadmap.md), and the publishing workflow documents.
+
 ## Overview
 Comprehensive design and content improvements implemented based on latest 2026 SEO best practices, Google algorithm updates, and LLM citation optimization.
 

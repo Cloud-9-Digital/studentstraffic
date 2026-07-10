@@ -1,4 +1,6 @@
-# CTA Conversion Summary - Contact Links to Dialogs
+# CTA Conversion Status - Contact Links to Dialogs
+
+> Reviewed July 2026. This document is an active backlog for CTA conversion work. The original May 2026 completion notes below are retained as history.
 
 ## ✅ Completed
 
@@ -32,38 +34,18 @@
 
 ## 🔄 Remaining Pages (Need Manual Update)
 
-### Commercial SEO Pages
-These have `/contact` links and should use CounsellingCtaButton:
+### Current remaining commercial/listing work
+The following still contain primary `/contact` links and should be reviewed:
 
-1. **Vietnam Pages:**
-   - `/disadvantages-of-studying-mbbs-in-vietnam` (line 188)
-   - `/is-neet-required-for-mbbs-in-vietnam` (line 174)
-   - `/is-mbbs-in-vietnam-good-for-indian-students` (line 167)
-   - `/is-mbbs-in-vietnam-valid-in-india` (line 186)
-
-2. **Russia Pages:**
-   - `/is-neet-required-for-mbbs-in-russia` (line 193)
-
-3. **General Pages:**
-   - `/free-mbbs-in-abroad-for-indian-students` (line 199)
+1. `/free-mbbs-in-abroad-for-indian-students`
+2. `/cities`
+3. `/compare`
 
 ### Listing/Comparison Pages
 These may need different treatment:
 
-1. `/cities/page.tsx` (line 150)
-   - Context: City listing page
-   - Current: Generic contact link
-   - Recommendation: Could use CounsellingDialog with city-specific context
-
-2. `/compare/page.tsx` (line 279)
-   - Context: University comparison tool
-   - Current: "Submit your details" link
-   - Recommendation: Should trigger dialog with comparison data
-
-3. `/countries/[slug]/page.tsx` (line 746)
-   - Context: Dynamic country page
-   - Current: "Talk to our team" link
-   - Recommendation: Use dialog with country context from params
+1. `/cities/page.tsx` — city listing context
+2. `/compare/page.tsx` — university comparison context
 
 ### Static/Informational Pages
 These can keep /contact links (not primary CTAs):
@@ -189,10 +171,10 @@ export function ClientCta({ countrySlug }: { countrySlug: string }) {
 - Instant dialog
 - Context preserved
 
-### Remaining Work
-- 6 commercial pages to update (~30 minutes)
-- 3 listing pages need custom handling (~1 hour)
-- 1 informational page (keep as-is)
+### Current status
+- Most Vietnam/Russia commercial pages listed in the original report are now converted.
+- Three primary CTA locations remain to review: one general page and two listing/tool pages.
+- `/editorial-policy` remains informational and should keep its `/contact` link.
 
 ## 🔧 Technical Details
 

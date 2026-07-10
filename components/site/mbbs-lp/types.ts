@@ -39,6 +39,20 @@ export type CountryLpTestimonial = {
   photoUrl?: string;
 };
 
+export type DeepDiveBlock =
+  | { kind: "paragraph"; text: string }
+  | { kind: "list"; items: string[]; ordered?: boolean }
+  | { kind: "table"; headers: string[]; rows: string[][] }
+  | { kind: "callout"; tone: "warning" | "info"; text: string };
+
+export type DeepDiveSection = {
+  id: string;
+  eyebrow: string;
+  heading: string;
+  intro?: string;
+  blocks: DeepDiveBlock[];
+};
+
 export type CountryLpConfig = {
   slug: string;
   countryName: string;
@@ -52,4 +66,8 @@ export type CountryLpConfig = {
   documents?: string[];
   testimonials: CountryLpTestimonial[];
   faqs: CountryLpFaq[];
+  /** ISO date this page's content was last substantively reviewed/updated. Falls back to catalogReviewedAt if omitted. */
+  contentReviewedAt?: string;
+  /** Optional long-form authority sections (policy context, curriculum, outcomes data, city/visa detail) rendered between the comparison table and the pathways section. */
+  deepDive?: DeepDiveSection[];
 };

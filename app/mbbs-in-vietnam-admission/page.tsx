@@ -6,6 +6,7 @@ import {
   VIETNAM_LP_CONFIG,
   VIETNAM_LP_FEATURED_SLUGS,
   getCountryLpStats,
+  getFeaturedPrograms,
 } from "@/lib/data/mbbs-country-lp";
 import { buildIndexableMetadata } from "@/lib/metadata";
 
@@ -29,6 +30,14 @@ export const metadata: Metadata = buildIndexableMetadata({
 export default async function MbbsInVietnamAdmissionPage() {
   const programs = await getProgramsForCountry("vietnam");
   const stats = getCountryLpStats(programs, VIETNAM_LP_FEATURED_SLUGS);
+  const featuredPrograms = getFeaturedPrograms(programs, VIETNAM_LP_FEATURED_SLUGS);
 
-  return <CountryMbbsLandingPage path={path} config={VIETNAM_LP_CONFIG} stats={stats} />;
+  return (
+    <CountryMbbsLandingPage
+      path={path}
+      config={VIETNAM_LP_CONFIG}
+      stats={stats}
+      featuredPrograms={featuredPrograms}
+    />
+  );
 }

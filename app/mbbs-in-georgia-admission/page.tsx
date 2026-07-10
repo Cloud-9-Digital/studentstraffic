@@ -6,6 +6,7 @@ import {
   GEORGIA_LP_CONFIG,
   GEORGIA_LP_FEATURED_SLUGS,
   getCountryLpStats,
+  getFeaturedPrograms,
 } from "@/lib/data/mbbs-country-lp";
 import { buildIndexableMetadata } from "@/lib/metadata";
 
@@ -29,6 +30,14 @@ export const metadata: Metadata = buildIndexableMetadata({
 export default async function MbbsInGeorgiaAdmissionPage() {
   const programs = await getProgramsForCountry("georgia");
   const stats = getCountryLpStats(programs, GEORGIA_LP_FEATURED_SLUGS);
+  const featuredPrograms = getFeaturedPrograms(programs, GEORGIA_LP_FEATURED_SLUGS);
 
-  return <CountryMbbsLandingPage path={path} config={GEORGIA_LP_CONFIG} stats={stats} />;
+  return (
+    <CountryMbbsLandingPage
+      path={path}
+      config={GEORGIA_LP_CONFIG}
+      stats={stats}
+      featuredPrograms={featuredPrograms}
+    />
+  );
 }
