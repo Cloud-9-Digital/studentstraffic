@@ -20,7 +20,6 @@ import {
   getPublishedBlogPostBySlug,
 } from "@/lib/data/catalog";
 import type { BlogPostSearchMetadata } from "@/lib/data/types";
-import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 const PLACEHOLDER_BLOG_SLUG = "__blog-fallback__";
 
@@ -129,9 +128,9 @@ export async function generateStaticParams() {
   // published after a build simply render dynamically (still using the same
   // "use cache" data layer) until the next deploy, so nothing breaks if this
   // list drifts from the live DB.
-  const posts = await getAllPublishedBlogPostsMetadata();
-  const slugs = posts.map((post) => ({ slug: post.slug }));
-  return ensureNonEmptyStaticParams(slugs, { slug: PLACEHOLDER_BLOG_SLUG });
+  // Keep detail pages request-driven so a newly published post is not 404ed
+  // simply because its slug was absent from the last deployment's build list.
+  return [];
 }
 
 function resolvePostAuthor(authorSlug: string | null | undefined) {

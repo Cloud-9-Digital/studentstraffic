@@ -1,4 +1,7 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+
+dotenv.config({ path: ".env" });
+dotenv.config({ path: ".env.local", override: true });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const revalidateSecret = process.env.REVALIDATE_SECRET;
