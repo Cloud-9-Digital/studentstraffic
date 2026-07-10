@@ -110,10 +110,273 @@ export const RUSSIA_LP_FEATURED_SLUGS = [
   "kazan-federal-university",
 ];
 
+const RUSSIA_DEEP_DIVE: DeepDiveSection[] = [
+  {
+    id: "safety-2026",
+    eyebrow: "The Honest Answer",
+    heading: "Is MBBS in Russia still safe for Indian students in 2026?",
+    intro:
+      "This is the first question every parent asks, and it deserves a direct, current answer instead of a one-line dismissal.",
+    blocks: [
+      {
+        kind: "paragraph",
+        text: "Russia and India maintain a longstanding strategic relationship, and that has not changed through the Russia-Ukraine conflict. As of 2026, the Indian Embassy in Moscow has issued no travel advisory against Indian students studying in Russia. Ministry of External Affairs data shows more than 27,000 Indian students currently studying medicine in Russia, and enrolment has actually grown since 2022 rather than fallen.",
+      },
+      {
+        kind: "paragraph",
+        text: "The universities we feature — in Astrakhan, Nalchik, Volgograd, Ufa, Simferopol, and Kazan — are all far from the conflict zone in western Russia and Ukraine, and daily academic life, hostel operations, and clinical rotations have continued without disruption throughout. That does not mean the situation is permanently static, which is exactly why we do not treat 'Russia is safe' as a line we say once and move on from.",
+      },
+      {
+        kind: "callout",
+        tone: "info",
+        text: "We track the Ministry of External Affairs and Indian Embassy Moscow's official advisories on an ongoing basis, and we will tell you directly — before you commit to any university — if that position changes for a specific city or region.",
+      },
+    ],
+  },
+  {
+    id: "cost-breakdown",
+    eyebrow: "Full Cost Picture",
+    heading: "What your ₹19L–₹35L actually covers",
+    intro:
+      "As with every MBBS-abroad destination, the total cost we quote is tuition. Here is what living costs add, and how much they vary by city.",
+    blocks: [
+      {
+        kind: "paragraph",
+        text: "The ₹19L–₹35L 'total cost for 6 years' figure on this page is tuition only, at the government (state and federal) medical universities we feature. This is standard practice across MBBS-abroad consultancies, but it is not the full picture, so we would rather be upfront about it here than have a family discover the gap later.",
+      },
+      {
+        kind: "paragraph",
+        text: "Hostel and living costs vary more by city in Russia than in most destinations — from roughly $700–$1,500 per year in more affordable cities like Astrakhan, up to $2,000–$3,500 per year in a larger city like Kazan. Across 6 years, that typically adds somewhere between ₹3.5L and ₹18L to your total budget depending on which city you choose, on top of the tuition figure quoted above.",
+      },
+      {
+        kind: "callout",
+        tone: "info",
+        text: "We build a full year-by-year cost plan — tuition, hostel, food, flights, and visa costs, specific to your chosen city — for every student before they commit to a university, so there are no surprises in year 3 or 4.",
+      },
+    ],
+  },
+  {
+    id: "neet-eligibility",
+    eyebrow: "Eligibility, Explained",
+    heading: "NEET eligibility for MBBS in Russia — the rules explained",
+    intro:
+      "The eligibility bar for MBBS in Russia is lower than for a government seat in India, but it isn't zero. Here's what the rules actually mean.",
+    blocks: [
+      {
+        kind: "list",
+        items: [
+          "NEET qualifying score: you need to clear NEET's qualifying cutoff (50th percentile for General category, 40th percentile for reserved categories) — not the much higher rank needed for a government MBBS seat in India. A qualifying NEET score, even a modest one, is what matters here, not your rank.",
+          "Class 12 marks: a minimum of 50-60% aggregate in Physics, Chemistry, and Biology, depending on the specific university's own admission policy.",
+          "Age: at least 17 years old by December 31 of your admission year, per NMC rules.",
+          "Subjects: Physics, Chemistry, Biology, and English are mandatory in Class 12 — there are no exceptions to this, regardless of which university you choose.",
+        ],
+      },
+      {
+        kind: "paragraph",
+        text: "The most common misconception we hear is that a 'low' NEET score disqualifies a student from MBBS abroad entirely. It doesn't — NEET is a qualifying exam for this pathway, not a ranking exam the way it is for Indian government seats. What actually varies by university is the Class 12 percentage requirement and, at a small number of more selective universities, an internal interview or entrance assessment. We check your exact numbers against each university's real, current criteria before you apply, rather than giving you a generic 'yes you qualify' answer.",
+      },
+    ],
+  },
+  {
+    id: "curriculum",
+    eyebrow: "Course Structure",
+    heading: "How the 6-year MBBS is structured in Russia",
+    intro:
+      "Every university we feature runs a curriculum built to satisfy India's NMC Foreign Medical Graduate Licentiate (FMGL) Regulations 2021 — not just Russia's own accreditation.",
+    blocks: [
+      {
+        kind: "list",
+        ordered: true,
+        items: [
+          "Years 1–2: Basic sciences — anatomy, physiology, and biochemistry — plus foundational clinical skills, taught fully in English.",
+          "Years 3–4: Para-clinical and early clinical subjects — pathology, pharmacology, microbiology, and forensic medicine — alongside hospital-based clinical exposure.",
+          "Years 5–6: Full clinical rotations across medicine, surgery, obstetrics & gynaecology, paediatrics, and allied specialities.",
+          "Final year: A compulsory 12-month clinical internship completed at the same institution — this is a specific FMGL requirement, not an optional add-on.",
+        ],
+      },
+      {
+        kind: "paragraph",
+        text: "Under the FMGL Regulations 2021, a foreign MBBS degree is only eligible for NMC registration if the course runs a minimum of 54 months of coursework plus a further 12 months of internship at the same institution, is taught entirely in English, and follows a curriculum the NMC considers commensurate with India's own Graduate Medical Education Regulations. Every university we feature meets this structure — we verify it before we ever recommend a university, not after a student has already enrolled.",
+      },
+      {
+        kind: "paragraph",
+        text: "The full course, including internship, must also be completed within 10 years of joining — a rule that mainly matters if a student needs to repeat a year. We build realistic academic timelines with every student from day one rather than promising an unrealistic fast-track.",
+      },
+    ],
+  },
+  {
+    id: "fmge-outcomes",
+    eyebrow: "Licensing Outcomes",
+    heading: "FMGE / NExT pass rates for MBBS graduates from Russia — and why you should question exact percentages",
+    intro:
+      "A Russian MBBS degree is only useful in India once you clear FMGE (soon NExT). Pass-rate data for Russia is cited more often online than for almost any other destination — but a lot of what circulates does not hold up.",
+    blocks: [
+      {
+        kind: "paragraph",
+        text: "According to NBEMS FMGE 2024 data widely cited across exam-prep resources, Russia's overall pass rate was approximately 29.5%, meaningfully above the destinations-wide average of roughly 25.8%. That national figure is reasonably well corroborated across independent sources.",
+      },
+      {
+        kind: "paragraph",
+        text: "Per-university figures are a different story. While researching this page, we cross-checked several sites claiming specific 2024 pass percentages for individual Russian universities and found genuine disagreement between sources for the same university and the same year — in one case, two sites cited pass rates for the same university that differed by nearly 20 percentage points. The only official per-university dataset we could locate, published by the Indian Embassy in Moscow, covers 2015-2018 and is now out of date. We would rather tell you this directly than repeat an unverifiable number as fact.",
+      },
+      {
+        kind: "callout",
+        tone: "warning",
+        text: "If a consultancy or website quotes you a precise FMGE percentage for a specific Russian university, ask where the number comes from. We share the most recent verified data we can source for each university during your counselling call, and we tell you plainly when a figure cannot be confirmed against an official source instead of presenting an estimate as fact. Our own free NEET college predictor tool can also help you gauge realistic options based on your actual score.",
+      },
+    ],
+  },
+  {
+    id: "choosing-your-city",
+    eyebrow: "Choosing Your City",
+    heading: "Kazan, Volgograd, Astrakhan, Ufa, Simferopol, or Nalchik — which city fits you?",
+    intro:
+      "Our featured universities span six different Russian cities. Here is a quick, honest read on each.",
+    blocks: [
+      {
+        kind: "table",
+        headers: ["City", "University", "What it's known for"],
+        rows: [
+          ["Kazan", "Kazan Federal University", "Large, modern city; strong academic reputation; the highest tuition among our six but also the most established Indian student community"],
+          ["Volgograd", "Volgograd State Medical University", "Historic city on the Volga river; long-running, well-established medical university with decades of Indian student intake"],
+          ["Astrakhan", "Astrakhan State Medical University", "Southern city near the Caspian Sea; one of the more affordable options among our six featured universities"],
+          ["Ufa", "Bashkir State Medical University", "Capital of Bashkortostan; large teaching hospital network attached to the university"],
+          ["Simferopol", "Crimea Federal University", "Located in Crimea; NMC- and WHO-recognized, with its own distinct administrative and travel considerations worth discussing on your call"],
+          ["Nalchik", "Kabardino-Balkarian State University", "Smaller city in the North Caucasus; the most budget-friendly option among our six, with a smaller but growing Indian student base"],
+        ],
+      },
+      {
+        kind: "paragraph",
+        text: "None of these cities is objectively 'best' — a student choosing Kazan is usually prioritising reputation and community size, while a student choosing Astrakhan or Nalchik is usually prioritising budget. We talk through the trade-offs specific to your situation on the counselling call rather than defaulting every student to the same one or two cities.",
+      },
+    ],
+  },
+  {
+    id: "student-life",
+    eyebrow: "Daily Life",
+    heading: "Life as an Indian medical student in Russia — food, hostel, and daily life",
+    intro:
+      "Beyond the classroom, day-to-day life is often what determines whether a student settles in or struggles. Here is the practical picture.",
+    blocks: [
+      {
+        kind: "paragraph",
+        text: "Every university we feature provides on-campus or university-arranged hostel accommodation, typically shared between 2-3 students per room, with basic furnishing, heating (essential given Russian winters), and Wi-Fi. Hostel costs are already included in the living-cost figures elsewhere on this page.",
+      },
+      {
+        kind: "paragraph",
+        text: "Indian food is more available than most students expect. Every one of our featured university cities has an established Indian student community large enough to support at least one Indian mess or tiffin service, and most hostels have a shared kitchen where students cook for themselves. That said, expect to adapt — fresh vegetables and specific spices can be harder to source in smaller cities like Nalchik or Astrakhan compared to a larger city like Kazan.",
+      },
+      {
+        kind: "paragraph",
+        text: "Winters are the biggest adjustment for most Indian students, particularly in the first year. Temperatures in cities like Kazan, Ufa, and Volgograd can fall well below freezing between November and March. Universities and senior students typically help new arrivals buy appropriate winter clothing locally in the first week, rather than expecting students to carry it all from India.",
+      },
+      {
+        kind: "callout",
+        tone: "info",
+        text: "We connect every student with a current senior at their specific university before departure, so questions about food, hostel rooms, and what to pack come from someone actually living it, not a generic checklist.",
+      },
+    ],
+  },
+  {
+    id: "visa-process",
+    eyebrow: "Visa & Documentation",
+    heading: "Russia's student visa process — the real step-by-step",
+    intro:
+      "Indian students apply for a Russian student visa through the embassy or VFS Global. Here is the actual sequence.",
+    blocks: [
+      {
+        kind: "list",
+        ordered: true,
+        items: [
+          "Your chosen university issues an official invitation/admission letter once you accept your seat and pay the first-year deposit — the visa process cannot begin without this.",
+          "You submit your passport, the invitation letter, required supporting documents, and an HIV-negative test report at the Russian Embassy or VFS Global.",
+          "Processing typically takes 10–20 working days, and most students receive their visa within 3–4 weeks of applying.",
+          "You travel to Russia and, shortly after arrival, complete local migration registration — a step your university's international office typically manages for you.",
+        ],
+      },
+      {
+        kind: "callout",
+        tone: "info",
+        text: "We prepare and file the full document set on your behalf and coordinate directly with your university's international office, so the visa timeline stays predictable instead of becoming a source of last-minute stress before your intake.",
+      },
+    ],
+  },
+  {
+    id: "scholarships",
+    eyebrow: "Reducing Your Cost",
+    heading: "Scholarships and ways to lower your MBBS cost in Russia",
+    intro:
+      "Russia has more genuine scholarship pathways than most MBBS-abroad destinations — here is what's real.",
+    blocks: [
+      {
+        kind: "list",
+        items: [
+          "The Russian Government Scholarship — a limited, competitive quota (around 300 seats reserved for Indian students in recent intake cycles) covering full tuition for eligible programmes, allocated through a formal application process, not something any consultancy can guarantee you.",
+          "University merit scholarships — many of our featured universities offer their own tuition discounts, typically 25-50% and occasionally more, based on your Class 12 PCB percentage and NEET score.",
+          "Early-application pricing — some universities hold slightly lower fees for students who confirm their seat well ahead of the September intake.",
+        ],
+      },
+      {
+        kind: "paragraph",
+        text: "Government scholarship seats are limited and competitive, and university merit-scholarship bands change every intake — so treat any 'guaranteed scholarship' claim with real caution. We check what you genuinely qualify for, at which of our featured universities, before you apply.",
+      },
+    ],
+  },
+  {
+    id: "evaluating-claims",
+    eyebrow: "Before You Commit",
+    heading: "How to evaluate a Russian medical university beyond the marketing",
+    intro:
+      "MBBS in Russia is one of the most heavily marketed education categories online, which makes it one of the easiest to oversell. A few honest checks before you commit.",
+    blocks: [
+      {
+        kind: "list",
+        items: [
+          "Ask for the university's current NMC/WDOMS listing status directly, not just a screenshot — recognition status is checkable, not something to take on trust.",
+          "Ask to speak to a current Indian student at that specific university, in that specific city, before you pay anything — a real conversation, not a testimonial video.",
+          "Be skeptical of any FMGE pass-rate percentage quoted without a stated source. As we found while researching this page, several public claims for the same Russian university and the same year directly contradict each other.",
+          "Ask what clinical and internship exposure actually looks like in practice — hands-on time varies more by university than most marketing suggests.",
+        ],
+      },
+      {
+        kind: "callout",
+        tone: "info",
+        text: "We connect every student with a current senior at their shortlisted university before they commit — the same standard we'd want if it were our own child choosing a university thousands of kilometres from home.",
+      },
+    ],
+  },
+  {
+    id: "russia-vs-others",
+    eyebrow: "Country Comparison",
+    heading: "Russia vs Georgia vs Vietnam — how the three compare",
+    intro:
+      "All three are NMC-recognized MBBS-abroad destinations we work with. Here is how they actually differ, not how any one of them markets itself.",
+    blocks: [
+      {
+        kind: "table",
+        headers: ["", "Russia", "Georgia", "Vietnam"],
+        rows: [
+          ["6-year tuition (featured universities)", "₹19L–₹35L", "₹28L–₹40L", "₹21L–₹30L"],
+          ["Ownership of featured universities", "Government (state / federal)", "Private", "Private"],
+          ["University choice", "60+ NMC-aligned universities", "40+ private, NMC-aligned universities", "A handful of genuine English-medium options"],
+          ["Language of instruction", "English at all featured universities", "English at all featured universities", "English only at our featured universities — most Vietnamese colleges teach in Vietnamese"],
+          ["Climate", "Cold winters across most cities", "Continental (Tbilisi) to subtropical (Batumi)", "Tropical, warm year-round"],
+          ["Flight time from India", "Approx. 6–9 hours depending on city", "Approx. 5–7 hours", "Approx. 4–6 hours — shortest of the three"],
+        ],
+      },
+      {
+        kind: "paragraph",
+        text: "There is no single 'best' country — the right fit depends on your NEET score, budget, and what you and your family are comfortable with. We compare all three honestly against your specific situation on the counselling call, instead of steering every student toward whichever destination we happen to be promoting that month.",
+      },
+    ],
+  },
+];
+
 export const RUSSIA_LP_CONFIG: CountryLpConfig = {
   slug: "russia",
   countryName: "Russia",
   flag: "🇷🇺",
+  contentReviewedAt: "2026-07-10",
   heroKicker: "Trusted MBBS Admission Partner Since 2014",
   heroHeadlinePrefix: "Want to become a doctor?",
   heroHeadlineHighlight: "Study MBBS in Russia. We will get you admitted.",
@@ -168,8 +431,8 @@ export const RUSSIA_LP_CONFIG: CountryLpConfig = {
       a: "Total cost for 6 years, including tuition and hostel, typically ranges from ₹19L to ₹35L at the universities we feature, and can go higher at premium institutions like Kazan State Medical University or Sechenov. This is a fraction of private MBBS fees in India, which can cross ₹1.5 crore. We give you a full cost breakdown on the counselling call.",
     },
     {
-      q: "Is it safe for Indian students to study in Russia?",
-      a: "Yes. Russia has hosted Indian medical students since the 1990s and has one of the largest Indian student communities of any MBBS destination. We connect you with current students before you decide, so you can ask them directly.",
+      q: "Is it safe for Indian students to study in Russia, given the Russia-Ukraine conflict?",
+      a: "Yes. As of 2026, the Indian Embassy in Moscow has issued no travel advisory against Indian students studying in Russia, and Indian student enrolment in Russian medical universities has actually grown since 2022 — Ministry of External Affairs data shows more than 27,000 Indian students currently studying medicine in Russia. The universities we feature are in Astrakhan, Nalchik, Volgograd, Ufa, Simferopol, and Kazan, all far from the conflict zone, and daily academic life has continued without disruption. We track official advisories on an ongoing basis and will tell you directly if that position changes for any specific city.",
     },
     {
       q: "Do I need to know Russian to study MBBS there?",
@@ -184,6 +447,7 @@ export const RUSSIA_LP_CONFIG: CountryLpConfig = {
       a: "Most Russian medical universities have their main intake in September. Applications open from March onward, and popular universities fill up early. The earlier you start, the better your choice of university and hostel.",
     },
   ],
+  deepDive: RUSSIA_DEEP_DIVE,
 };
 
 // All featured universities must be private. Georgia's Ministry of Education announced in

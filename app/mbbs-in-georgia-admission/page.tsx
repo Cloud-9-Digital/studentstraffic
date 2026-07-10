@@ -14,16 +14,16 @@ const path = "/mbbs-in-georgia-admission";
 
 export const metadata: Metadata = buildIndexableMetadata({
   path,
-  title: "MBBS in Georgia for Indian Students 2026 | Fees, Top Universities, Admission",
+  title: "MBBS in Georgia Admission 2026 | Free Counselling & Application Support",
   description:
-    "Get MBBS admission in Georgia with free counselling from Students Traffic. European-standard, English-medium, NMC-aligned universities, fees from ₹28L. Check eligibility and top colleges.",
+    "Book a free counselling call for MBBS admission in Georgia. Students Traffic handles your university shortlist, application, visa, and admission process end-to-end at private, NMC-aligned universities.",
   keywords: [
-    "mbbs in georgia",
-    "mbbs in georgia for indian students",
-    "mbbs admission in georgia",
-    "mbbs in georgia fees",
-    "top mbbs colleges in georgia",
-    "study mbbs in georgia 2026",
+    "mbbs georgia admission consultants",
+    "mbbs georgia counselling free",
+    "book mbbs georgia application",
+    "mbbs georgia admission agent",
+    "mbbs abroad consultants for georgia",
+    "students traffic mbbs georgia",
   ],
 });
 

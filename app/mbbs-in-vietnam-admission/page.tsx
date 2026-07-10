@@ -14,16 +14,16 @@ const path = "/mbbs-in-vietnam-admission";
 
 export const metadata: Metadata = buildIndexableMetadata({
   path,
-  title: "MBBS in Vietnam for Indian Students 2026 | Fees, Top Universities, Admission",
+  title: "MBBS in Vietnam Admission 2026 | Free Counselling & Application Support",
   description:
-    "Get MBBS admission in Vietnam with free counselling from Students Traffic. English-medium, NMC-aligned universities, fees from ₹21L. Check eligibility and top colleges.",
+    "Book a free counselling call for MBBS admission in Vietnam. Students Traffic handles your university shortlist, application, visa, and admission process end-to-end at English-medium, NMC-aligned universities.",
   keywords: [
-    "mbbs in vietnam",
-    "mbbs in vietnam for indian students",
-    "mbbs admission in vietnam",
-    "mbbs in vietnam fees",
-    "english medium mbbs in vietnam",
-    "study mbbs in vietnam 2026",
+    "mbbs vietnam admission consultants",
+    "mbbs vietnam counselling free",
+    "book mbbs vietnam application",
+    "mbbs vietnam admission agent",
+    "mbbs abroad consultants for vietnam",
+    "students traffic mbbs vietnam",
   ],
 });
 

@@ -34,6 +34,11 @@ export const landingPages: LandingPage[] = [
           "Yes — graduates from Russian universities meeting NMC guidelines can sit the FMGE/NExT screening exam to obtain an NMC licence and practise medicine in India. Compliance is university-specific, not country-wide. Every university we process admissions for is assessed against NMC's FMGL guidelines before shortlisting.",
       },
       {
+        question: "Is it safe for Indian students to study in Russia, given the Russia-Ukraine conflict?",
+        answer:
+          "Yes. As of 2026, the Indian Embassy in Moscow has issued no travel advisory against Indian students studying in Russia, and Indian student enrolment in Russian medical universities has actually grown since 2022 — Ministry of External Affairs data shows more than 27,000 Indian students currently studying medicine in Russia. Established university cities such as Kazan, Astrakhan, and Volgograd are far from the conflict zone, and daily academic life has continued without disruption. We track official advisories on an ongoing basis and will flag any change for a specific city directly to students already shortlisting.",
+      },
+      {
         question: "Is MBBS in Russia affordable for Indian students?",
         answer:
           "Russia offers one of the widest fee spreads among MBBS destinations — annual tuition ranges from $3,500 to $9,000 depending on the university and city. When you add hostel ($80–150/month) and living costs ($200–400/month), the total 6-year budget typically falls between ₹30 lakh and ₹65 lakh, making it significantly cheaper than Indian private medical colleges.",
@@ -332,6 +337,11 @@ export const landingPages: LandingPage[] = [
         answer:
           "Yes — Vietnam's proximity to India (3–5 hour direct flights to major Indian cities) makes it one of the most home-accessible MBBS destinations. Return tickets during semester breaks typically cost ₹15,000–₹30,000, which is significantly cheaper than flying back from Russia, Kazakhstan, or Eastern Europe.",
       },
+      {
+        question: "What is the FMGE pass rate for MBBS graduates from Vietnam?",
+        answer:
+          "Vietnam's FMGE pass rate for Indian graduates runs around 20-25% based on NBEMS-cited results, below the destinations-wide average and notably below Georgia's 35.65%. Vietnam is a newer MBBS-abroad destination for Indian students than Russia or Georgia, so there is less multi-year track record to draw on. This isn't a reason to rule Vietnam out — proximity, cost, and English-medium delivery are genuine advantages — but it's a real trade-off to weigh, and we recommend factoring in dedicated FMGE/NExT preparation regardless of which university you choose.",
+      },
     ],
     metaTitle: "MBBS in Vietnam for Indian Students 2026 | Universities, Fees & Admissions",
     metaDescription:
@@ -443,6 +453,28 @@ export const landingPages: LandingPage[] = [
       "Vietnam's location gives graduates proximity to Singapore, Malaysia, and other regional medical markets",
       "Academic or research roles at Vietnamese medical universities or WHO-affiliated health institutions",
     ],
+    intakeTimeline: [
+      { milestone: "Application Opens", timeline: "January – June", details: "Submit academic documents (10th/12th marksheets) for the September intake." },
+      { milestone: "Admission Offer", timeline: "4-6 weeks after application", details: "University issues the official admission offer letter." },
+      { milestone: "Visa Processing", timeline: "6-8 weeks before departure", details: "Vietnam student visa applied for at the Vietnamese Embassy in India." },
+      { milestone: "Departure & Classes", timeline: "September", details: "Pre-departure briefing, travel, and orientation before English-medium classes begin." },
+    ],
+    livingCostBreakdown: [
+      { item: "Accommodation (Hostel)", cost: "$70 – $150 / month" },
+      { item: "Food & Groceries", cost: "$100 – $150 / month" },
+      { item: "Transport", cost: "$15 – $25 / month" },
+      { item: "Miscellaneous", cost: "$30 – $50 / month" },
+    ],
+    challenges: [
+      {
+        title: "Most Vietnamese medical colleges are Vietnamese-medium",
+        realityCheck: "Only a specific set of universities run a genuine international, English-medium MBBS track for foreign students — most Vietnamese public medical universities teach primarily in Vietnamese. We only shortlist the universities that run a verified English-medium programme, not the wider Vietnamese-medium majority.",
+      },
+      {
+        title: "Shorter India-return track record than Russia or Georgia",
+        realityCheck: "Vietnam is a newer MBBS-abroad destination for Indian students than Russia or Georgia, so there is less historical FMGE data to draw on. Per NBEMS-cited results, Vietnam's FMGE pass rate runs around 20-25%, below Georgia's 35.65% — a real trade-off for students weighing proximity and cost against India-return outcomes.",
+      },
+    ],
   },
   {
     slug: "medical-pg-in-vietnam",
@@ -500,7 +532,7 @@ export const landingPages: LandingPage[] = [
     slug: "mbbs-in-georgia",
     courseSlug: "mbbs",
     countrySlug: "georgia",
-    title: "MBBS in Georgia",
+    title: "MBBS in Georgia for Indian Students",
     kicker: "English-medium urban medical programs",
     summary:
       "Evaluate English-medium MBBS options in Georgia with city-based campuses, cleaner admissions comparisons, and modern student support.",
@@ -527,6 +559,16 @@ export const landingPages: LandingPage[] = [
         question: "Is MBBS in Georgia valid in India?",
         answer:
           "Yes — graduates from NMC-compliant Georgian universities can sit FMGE/NExT to practise medicine in India. Georgia has several universities that follow NMC guidelines, but compliance is university-specific. We verify each institution's current NMC status before shortlisting.",
+      },
+      {
+        question: "Is it true that Georgia has banned foreign students from MBBS? Can I still get admission in 2026?",
+        answer:
+          "Georgia has not banned MBBS for foreign students, but there is a real policy change worth understanding. In December 2025, Georgia's Ministry of Education announced that government (state) universities — including Tbilisi State Medical University — will stop admitting new foreign students from the 2026-27 academic year onward, except in limited bilateral-agreement cases. Students already enrolled at state universities are not affected and can complete their degree as planned. This does not affect Georgia's private, NMC-aligned medical universities, which remain fully open to Indian applicants — every university on this page is private. Because this is a recent government policy, confirm the latest position for any specific university before committing.",
+      },
+      {
+        question: "What is the FMGE pass rate for MBBS graduates from Georgia?",
+        answer:
+          "Per NBEMS FMGE 2024 results, Indian students who completed MBBS in Georgia cleared FMGE at 35.65% overall — the highest national pass rate among commonly chosen MBBS-abroad destinations. Individual universities perform differently from that average; Georgian American University, for example, is among the strongest performers. Pass rates vary by exam cycle and university, so treat any single cited figure as a starting point for research rather than a permanent guarantee.",
       },
       {
         question: "Is Georgia a good MBBS destination for English-medium study?",
@@ -559,7 +601,7 @@ export const landingPages: LandingPage[] = [
           "NMC compliance, actual medium of instruction (not just stated), hospital affiliation quality for clinical years, hostel availability, the size of the Indian student community, and fee transparency matter more than brochure rankings or marketing claims. Georgia's smaller universities vary significantly in quality, so choosing two or three carefully evaluated options is better than applying broadly.",
       },
     ],
-    metaTitle: "MBBS in Georgia 2026 | Fees, Universities, English Medium",
+    metaTitle: "MBBS in Georgia for Indian Students 2026 | Fees, Universities, English Medium",
     metaDescription:
       "Compare MBBS in Georgia options by university, fee, hostel, and support quality with a high-intent landing page built for Indian students.",
     intakeTimeline: [

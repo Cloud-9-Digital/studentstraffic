@@ -14,16 +14,16 @@ const path = "/mbbs-in-russia-admission";
 
 export const metadata: Metadata = buildIndexableMetadata({
   path,
-  title: "MBBS in Russia for Indian Students 2026 | Fees, Top Universities, Admission",
+  title: "MBBS in Russia Admission 2026 | Free Counselling & Application Support",
   description:
-    "Get MBBS admission in Russia with free counselling from Students Traffic. NMC-aligned universities, English medium, fees from ₹19L. Check eligibility and top colleges.",
+    "Book a free counselling call for MBBS admission in Russia. Students Traffic handles your university shortlist, application, visa, and admission process end-to-end at NMC-aligned universities.",
   keywords: [
-    "mbbs in russia",
-    "mbbs in russia for indian students",
-    "mbbs admission in russia",
-    "mbbs in russia fees",
-    "top mbbs colleges in russia",
-    "study mbbs in russia 2026",
+    "mbbs russia admission consultants",
+    "mbbs russia counselling free",
+    "book mbbs russia application",
+    "mbbs russia admission agent",
+    "mbbs abroad consultants for russia",
+    "students traffic mbbs russia",
   ],
 });
 
