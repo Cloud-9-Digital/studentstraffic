@@ -192,8 +192,8 @@ function SiteHeaderInner() {
           <SiteLogo showTagline />
 
           {/* Desktop nav */}
-          <nav className="absolute inset-x-0 hidden items-center justify-center gap-0.5 lg:flex">
-            <div className="relative" ref={countriesMenuRef}>
+          <nav className="pointer-events-none absolute inset-x-0 hidden items-center justify-center gap-0.5 lg:flex">
+            <div className="pointer-events-auto relative" ref={countriesMenuRef}>
               <button
                 type="button"
                 className={cn(
@@ -295,7 +295,7 @@ function SiteHeaderInner() {
               </div>
             </div>
 
-            <div className="relative" ref={universitiesMenuRef}>
+            <div className="pointer-events-auto relative" ref={universitiesMenuRef}>
               <button
                 type="button"
                 className={cn(
@@ -487,7 +487,7 @@ function SiteHeaderInner() {
                 key={href}
                 href={href}
                 className={cn(
-                  "rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                  "pointer-events-auto rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
                   isActive(href)
                     ? "bg-primary/8 text-primary"
                     : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
