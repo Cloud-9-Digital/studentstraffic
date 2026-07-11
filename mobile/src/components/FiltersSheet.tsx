@@ -161,6 +161,10 @@ export function FiltersSheet({ visible, onClose, filters, onChange, onApply, opt
           style={s.scroll}
           contentContainerStyle={s.scrollContent}
           showsVerticalScrollIndicator={false}
+          nestedScrollEnabled
+          alwaysBounceVertical
+          overScrollMode="always"
+          keyboardShouldPersistTaps="handled"
         >
           {/* Sort */}
           <Section title="SORT BY">
@@ -259,8 +263,8 @@ const s = StyleSheet.create({
     color: colors.coral,
   },
 
-  scroll: { flex: 1 },
-  scrollContent: { gap: 26, paddingBottom: 16 },
+  scroll: { flex: 1, minHeight: 0 },
+  scrollContent: { flexGrow: 1, gap: 26, paddingBottom: 24 },
 
   applyBtn: {
     flexDirection: "row",
