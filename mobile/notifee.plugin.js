@@ -196,10 +196,21 @@ function withNativeIncomingCallFiles(config) {
       // Declining from the native system UI must never bring the app forward.
       // The server expiry will close an unanswered web call if RN is cold.
       source = source.replace('        launchStudentsTrafficCallActivity("decline");\n', "");
+      const telecomDeclineBlock = "        // STUDENTSTRAFFIC_TELECOM_DECLINE\n        Intent declineIntent = new Intent();\n        declineIntent.setClassName(context, context.getPackageName() + \".IncomingCallActionReceiver\");\n        declineIntent.setAction(context.getPackageName() + \".TELECOM_DECLINE\");\n        declineIntent.putExtra(context.getPackageName() + \".CALL_ID\", handle.get(EXTRA_CALL_UUID));\n        context.sendBroadcast(declineIntent);\n";
+      // Older local builds inserted this after onDisconnect. Remove it there:
+      // a successful answer may disconnect the ringing leg while becoming active.
+      source = source.replace(
+        "        sendCallRequestToActivity(ACTION_END_CALL, handle);\n" + telecomDeclineBlock + "        Log.d(TAG, \"[VoiceConnection] onDisconnect executed\");",
+        "        sendCallRequestToActivity(ACTION_END_CALL, handle);\n        Log.d(TAG, \"[VoiceConnection] onDisconnect executed\");",
+      );
+      source = source.replace(
+        "        sendCallRequestToActivity(ACTION_END_CALL, handle);\n" + telecomDeclineBlock + "        Log.d(TAG, \"[VoiceConnection] onAbort executed\");",
+        "        sendCallRequestToActivity(ACTION_END_CALL, handle);\n        Log.d(TAG, \"[VoiceConnection] onAbort executed\");",
+      );
       if (!source.includes("STUDENTSTRAFFIC_TELECOM_DECLINE")) {
         source = source.replace(
-          "        sendCallRequestToActivity(ACTION_END_CALL, handle);",
-          "        sendCallRequestToActivity(ACTION_END_CALL, handle);\n        // STUDENTSTRAFFIC_TELECOM_DECLINE\n        Intent declineIntent = new Intent();\n        declineIntent.setClassName(context, context.getPackageName() + \".IncomingCallActionReceiver\");\n        declineIntent.setAction(context.getPackageName() + \".TELECOM_DECLINE\");\n        declineIntent.putExtra(context.getPackageName() + \".CALL_ID\", handle.get(EXTRA_CALL_UUID));\n        context.sendBroadcast(declineIntent);",
+          "        setDisconnected(new DisconnectCause(DisconnectCause.REJECTED));\n        sendCallRequestToActivity(ACTION_END_CALL, handle);\n        Log.d(TAG, \"[VoiceConnection] onReject executed\");",
+          "        setDisconnected(new DisconnectCause(DisconnectCause.REJECTED));\n        sendCallRequestToActivity(ACTION_END_CALL, handle);\n" + telecomDeclineBlock + "        Log.d(TAG, \"[VoiceConnection] onReject executed\");",
         );
       }
       fs.writeFileSync(voiceConnectionPath, source);

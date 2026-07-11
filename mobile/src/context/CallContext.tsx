@@ -188,7 +188,9 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
       setActiveCall(call);
       setIncomingCall(null);
       stopRecoverySync();
-      cancelIncomingCallNotification(callId).catch(() => {});
+      // Do not call cancelIncomingCallNotification here: it invokes
+      // RNCallKeep.endCall(), which tears down the just-accepted Telecom call.
+      // setCurrentCallActive below promotes the existing system call instead.
       startCallForegroundService(call.callId, call.displayName).catch(() => {});
       setCallKeepCallActive(callId);
     } catch (e: any) {
