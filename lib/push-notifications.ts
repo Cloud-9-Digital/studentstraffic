@@ -114,3 +114,21 @@ export async function sendCallEndedPushNotification(recipientUserId: string, cal
       : Promise.resolve(),
   ]);
 }
+
+/** Delivers a lightweight conversation update so mobile inboxes refresh immediately. */
+export async function sendGuideMessagePushNotification(
+  recipientUserId: string,
+  payload: { conversationId: number; senderName: string; body: string }
+) {
+  const db = getDb();
+  if (!db) return;
+  const sessions = await db.select({ pushToken: mobileSessions.pushToken }).from(mobileSessions).where(and(eq(mobileSessions.userId, recipientUserId), isNull(mobileSessions.revokedAt), gt(mobileSessions.expiresAt, new Date()), isNotNull(mobileSessions.pushToken)));
+  const tokens = sessions.map((session) => session.pushToken!);
+  const data = { type: "guide_message", conversationId: String(payload.conversationId), senderName: payload.senderName, body: payload.body.slice(0, 120) };
+  const fcmTokens = tokens.filter((token) => !isExpoPushToken(token));
+  const expoTokens = tokens.filter(isExpoPushToken);
+  await Promise.all([
+    ...fcmTokens.map((token) => sendFCMDataMessage(token, data, { ttlMs: 60 * 60 * 1000 }).catch(() => null)),
+    expoTokens.length > 0 ? expo.sendPushNotificationsAsync(expoTokens.map<ExpoPushMessage>((to) => ({ to, title: payload.senderName, body: payload.body.slice(0, 120), sound: "default", priority: "high", data }))).catch(() => null) : Promise.resolve(),
+  ]);
+}

@@ -8,6 +8,7 @@ import {
   sendGuideConversationMessage,
 } from "@/lib/guide-chat";
 import { publishGuideChatUserEvent } from "@/lib/realtime/ably";
+import { sendGuideMessagePushNotification } from "@/lib/push-notifications";
 
 export async function POST(
   request: Request,
@@ -66,6 +67,10 @@ export async function POST(
       message: guideMessage,
       clientNonce,
     }),
+    sendGuideMessagePushNotification(
+      userId === conversation.peerUserId ? conversation.studentUserId : conversation.peerUserId,
+      { conversationId, senderName: userId === conversation.peerUserId ? guideView?.displayName ?? "Student guide" : studentView?.displayName ?? "Student", body: text }
+    ),
   ]);
 
   return NextResponse.json({

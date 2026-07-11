@@ -2,6 +2,7 @@ import { NativeModules, Platform } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const PENDING_CALL_KEY = "ST_PENDING_CALL_DATA_V3";
+const PENDING_CHAT_KEY = "ST_PENDING_CHAT_DATA_V1";
 const CHANNEL_ACTIVE   = "active_call";
 const INCOMING_RING_TIMEOUT_MS = 60_000;
 
@@ -192,9 +193,34 @@ export function registerBackgroundHandlers() {
   if (Platform.OS === "web") return;
 
   try {
+    const notifee = require("@notifee/react-native").default;
+    const { EventType } = require("@notifee/react-native");
+    notifee.onBackgroundEvent(async ({ type, detail }: any) => {
+      if (type !== EventType.PRESS) return;
+      const conversationId = detail.notification?.data?.conversationId;
+      if (conversationId) await AsyncStorage.setItem(PENDING_CHAT_KEY, JSON.stringify({ conversationId }));
+    });
+  } catch {}
+
+  try {
     const messaging = require("@react-native-firebase/messaging").default;
     messaging().setBackgroundMessageHandler(async (message: any) => {
       const data = message.data as Record<string, string>;
+      if (data?.type === "guide_message") {
+        if (Platform.OS === "android") {
+          const notifee = require("@notifee/react-native").default;
+          const { AndroidImportance } = require("@notifee/react-native");
+          await notifee.createChannel({ id: "messages", name: "Messages", importance: AndroidImportance.HIGH });
+          await notifee.displayNotification({
+            id: `message_${data.conversationId}`,
+            title: data.senderName || "Students Traffic",
+            body: data.body || "You have a new message",
+            data: { conversationId: data.conversationId || "" },
+            android: { channelId: "messages", pressAction: { id: "default", launchActivity: "default" } },
+          });
+        }
+        return;
+      }
       if (data?.type !== "incoming_call") return;
 
       // Android's native receiver renders the incoming UI before React Native
@@ -213,4 +239,13 @@ export function registerBackgroundHandlers() {
     console.error("[fcm] background handler registration failed", error);
   }
 
+}
+
+export async function consumePendingChatNavigation(): Promise<{ conversationId: string } | null> {
+  try {
+    const raw = await AsyncStorage.getItem(PENDING_CHAT_KEY);
+    if (!raw) return null;
+    await AsyncStorage.removeItem(PENDING_CHAT_KEY);
+    return JSON.parse(raw) as { conversationId: string };
+  } catch { return null; }
 }

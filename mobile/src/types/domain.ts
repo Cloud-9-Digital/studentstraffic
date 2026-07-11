@@ -130,6 +130,7 @@ export type GuideConversation = {
   lastMessageText: string | null;
   lastMessageAt: string | null;
   unreadCount: number;
+  counterpartLastReadAt?: string | null;
 };
 
 export type GuideConversationStarter = {

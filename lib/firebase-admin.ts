@@ -33,6 +33,7 @@ function getFirebaseMessaging() {
 export async function sendFCMDataMessage(
   fcmToken: string,
   data: Record<string, string>,
+  options?: { ttlMs?: number },
 ) {
   const messaging = getFirebaseMessaging();
   if (!messaging) return false;
@@ -45,7 +46,7 @@ export async function sendFCMDataMessage(
       data,
       android: {
         priority: "high",      // wakes device even from Doze
-        ttl: 60 * 1000,        // discard after 60s — stale calls are noise
+        ttl: options?.ttlMs ?? 60 * 1000,
       },
     });
     console.info("[fcm] message accepted", {

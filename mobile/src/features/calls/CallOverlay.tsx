@@ -182,6 +182,12 @@ export function CallOverlay({ appId, channelName, token, uid, displayName, unive
   );
 }
 
+export function OutgoingCallOverlay({ displayName, universityName, onCancel }: { displayName: string; universityName: string; onCancel: () => void }) {
+  const insets = useSafeAreaInsets();
+  const initials = displayName.split(" ").slice(0, 2).map((word) => word[0]).join("").toUpperCase();
+  return <View style={[s.root, { paddingTop: insets.top + 20, paddingBottom: insets.bottom + 32 }]}><View style={s.infoSection}><Text style={s.uniLabel}>{universityName}</Text><View style={s.avatarWrap}><PulsingRing /><View style={s.avatar}><Text style={s.avatarText}>{initials}</Text></View></View><Text style={s.name}>{displayName}</Text><Text style={s.statusLabel}>Calling…</Text></View><View style={s.controls}><Pressable onPress={onCancel} style={s.endBtn}><Ionicons name="call" size={28} color="#fff" style={{ transform: [{ rotate: "135deg" }] }} /></Pressable></View></View>;
+}
+
 const s = StyleSheet.create({
   root: {
     flex: 1,

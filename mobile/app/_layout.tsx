@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Modal, Platform } from "react-native";
-import { Stack } from "expo-router";
+import { Stack, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
@@ -19,7 +19,7 @@ import {
 } from "@expo-google-fonts/fraunces";
 import { PaperProvider } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { QueryClient } from "@tanstack/react-query";
+import { QueryClient, useQueryClient } from "@tanstack/react-query";
 import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
 import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -30,12 +30,13 @@ import { paperTheme } from "../src/theme/paper-theme";
 import { ToastProvider } from "../src/components/Toast";
 import { CompareProvider } from "../src/context/CompareContext";
 import { CallProvider, useCall } from "../src/context/CallContext";
-import { CallOverlay } from "../src/features/calls/CallOverlay";
+import { CallOverlay, OutgoingCallOverlay } from "../src/features/calls/CallOverlay";
 import { IncomingCallBanner } from "../src/features/calls/IncomingCallBanner";
 import { usePushToken } from "../src/hooks/usePushToken";
 import {
   setupCallKeep,
   consumePendingCallData,
+  consumePendingChatNavigation,
   displayIncomingCall,
   endCallKeepCall,
 } from "../src/services/callNotificationService";
@@ -122,6 +123,7 @@ export default function RootLayout() {
             <FCMForegroundHandler />
             <IOSPushNotificationHandler />
             <CallKeepEventHandler />
+            <PendingChatNavigation />
             <StatusBar style="dark" />
             <Stack
               screenOptions={{
@@ -155,9 +157,9 @@ export default function RootLayout() {
 }
 
 function ActiveCallModal() {
-  const { activeCall } = useCall();
+  const { activeCall, outgoingCall, cancelOutgoingCall } = useCall();
   return (
-    <Modal visible={!!activeCall} animationType="slide" statusBarTranslucent>
+    <Modal visible={!!activeCall || !!outgoingCall} animationType="slide" statusBarTranslucent>
       {activeCall && (
         <CallOverlay
           appId={activeCall.appId}
@@ -168,6 +170,7 @@ function ActiveCallModal() {
           universityName={activeCall.universityName}
         />
       )}
+      {!activeCall && outgoingCall && <OutgoingCallOverlay {...outgoingCall} onCancel={cancelOutgoingCall} />}
     </Modal>
   );
 }
@@ -181,6 +184,7 @@ function PushNotificationSetup() {
 // Background / killed state is handled by registerBackgroundHandlers() above.
 function FCMForegroundHandler() {
   const { dismissCallById, openIncomingCallById } = useCall();
+  const queryClient = useQueryClient();
 
   useEffect(() => {
     if (Platform.OS !== "android") return;
@@ -195,12 +199,26 @@ function FCMForegroundHandler() {
           openIncomingCallById(data.callId, data.callerDisplayName, data.universityName);
         } else if (data?.type === "call_ended" && data.callId) {
           dismissCallById(data.callId);
+        } else if (data?.type === "guide_message") {
+          const conversationId = Number(data.conversationId);
+          queryClient.invalidateQueries({ queryKey: ["conversations"] });
+          if (Number.isFinite(conversationId)) queryClient.invalidateQueries({ queryKey: ["conversation", conversationId] });
         }
       });
     } catch {}
     return () => unsub?.();
-  }, [dismissCallById, openIncomingCallById]);
+  }, [dismissCallById, openIncomingCallById, queryClient]);
 
+  return null;
+}
+
+function PendingChatNavigation() {
+  const router = useRouter();
+  useEffect(() => {
+    consumePendingChatNavigation().then((pending) => {
+      if (pending?.conversationId) router.push({ pathname: "/chat/[id]", params: { id: pending.conversationId } });
+    });
+  }, [router]);
   return null;
 }
 

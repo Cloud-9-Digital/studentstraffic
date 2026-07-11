@@ -21,9 +21,11 @@ type ActiveCall = {
   universityName: string;
   isPeerParticipant: boolean;
 };
+type OutgoingCall = { displayName: string; universityName: string };
 
 type CallContextValue = {
   activeCall: ActiveCall | null;
+  outgoingCall: OutgoingCall | null;
   incomingCall: IncomingCall | null;
   startCall: (bookingId: number, peerName: string, universityName: string) => Promise<void>;
   acceptIncomingCall: () => Promise<void>;
@@ -31,6 +33,7 @@ type CallContextValue = {
   declineIncomingCall: () => void;
   declineIncomingCallById: (callId: string) => void;
   endCall: () => Promise<void>;
+  cancelOutgoingCall: () => void;
   dismissCallById: (callId: string) => void;
   openIncomingCallById: (callId: string, callerDisplayName: string, universityName: string) => void;
   callError: string | null;
@@ -41,6 +44,7 @@ const CallContext = createContext<CallContextValue | null>(null);
 
 export function CallProvider({ children }: { children: React.ReactNode }) {
   const [activeCall, setActiveCall] = useState<ActiveCall | null>(null);
+  const [outgoingCall, setOutgoingCall] = useState<OutgoingCall | null>(null);
   const [incomingCall, setIncomingCall] = useState<IncomingCall | null>(null);
   const [callError, setCallError] = useState<string | null>(null);
   const [isStarting, setIsStarting] = useState(false);
@@ -52,6 +56,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
   const acceptingCallIdsRef = useRef(new Set<string>());
   const appStateRef = useRef(AppState.currentState);
   const incomingExpiryCleanupRef = useRef<(() => void) | null>(null);
+  const outgoingCancelledRef = useRef(false);
 
   useEffect(() => {
     activeCallRef.current = activeCall;
@@ -144,8 +149,14 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
   const startCall = useCallback(async (bookingId: number, peerName: string, universityName: string) => {
     setIsStarting(true);
     setCallError(null);
+    outgoingCancelledRef.current = false;
+    setOutgoingCall({ displayName: peerName, universityName });
     try {
       const { callId } = await mobileClient.startCall(bookingId);
+      if (outgoingCancelledRef.current) {
+        await mobileClient.endCall(callId).catch(() => undefined);
+        return;
+      }
       const tokenData = await mobileClient.getCallToken(callId);
       const call: ActiveCall = {
         callId,
@@ -158,14 +169,21 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
         isPeerParticipant: tokenData.call.isPeerParticipant,
       };
       setActiveCall(call);
+      setOutgoingCall(null);
       setIncomingCall(null);
       stopRecoverySync();
       startCallForegroundService(call.callId, call.displayName).catch(() => {});
     } catch (e: any) {
       setCallError(e?.message ?? "Failed to start call.");
     } finally {
+      setOutgoingCall(null);
       setIsStarting(false);
     }
+  }, []);
+
+  const cancelOutgoingCall = useCallback(() => {
+    outgoingCancelledRef.current = true;
+    setOutgoingCall(null);
   }, []);
 
   const acceptIncomingCallById = useCallback(async (callId: string) => {
@@ -272,6 +290,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
     <CallContext.Provider
       value={{
         activeCall,
+        outgoingCall,
         incomingCall,
         startCall,
         acceptIncomingCall,
@@ -279,6 +298,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
         declineIncomingCall,
         declineIncomingCallById,
         endCall,
+        cancelOutgoingCall,
         dismissCallById,
         openIncomingCallById,
         callError,
@@ -292,6 +312,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
 
 const EMPTY_CALL_CTX: CallContextValue = {
   activeCall: null,
+  outgoingCall: null,
   incomingCall: null,
   startCall: async () => {},
   acceptIncomingCall: async () => {},
@@ -299,6 +320,7 @@ const EMPTY_CALL_CTX: CallContextValue = {
   declineIncomingCall: () => {},
   declineIncomingCallById: () => {},
   endCall: async () => {},
+  cancelOutgoingCall: () => {},
   dismissCallById: () => {},
   openIncomingCallById: () => {},
   callError: null,
