@@ -98,7 +98,7 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
     .where(
       and(
         eq(peerCallSessions.peerId, peer.id),
-        eq(peerCallSessions.callerUserId, booking.studentUserId),
+        eq(peerCallSessions.callerUserId, peerUserId),
         inArray(peerCallSessions.status, ["ringing", "active"]),
         gt(peerCallSessions.expiresAt, now)
       )
@@ -118,8 +118,11 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
     channelName,
     universityId: peer.universityId,
     peerId: peer.id,
-    peerUserId,
-    callerUserId: booking.studentUserId,
+    // The peer/callee is the student receiving the web-initiated call.
+    // Reversing these IDs makes mobile incoming-call queries and Agora roles
+    // treat the caller as the recipient.
+    peerUserId: booking.studentUserId,
+    callerUserId: peerUserId,
     status: "ringing",
     startedAt: now,
     expiresAt,

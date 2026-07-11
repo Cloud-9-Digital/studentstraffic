@@ -4,7 +4,7 @@ import { getDb } from "@/lib/db/server";
 import { peerCallSessions } from "@/lib/db/schema";
 import { requireMobileSession } from "@/lib/mobile/auth";
 import { mobileError, mobileJson } from "@/lib/mobile/http";
-import { getAuthorizedPeerCallSession } from "@/lib/peer-calls";
+import { getAuthorizedPeerCallSession, notifyPeerCallParticipants } from "@/lib/peer-calls";
 
 export async function POST(
   request: Request,
@@ -31,6 +31,8 @@ export async function POST(
         inArray(peerCallSessions.status, ["ringing", "active"])
       )
     );
+
+  notifyPeerCallParticipants([call.peerUserId, call.callerUserId], "ended");
 
   return mobileJson({ success: true });
 }
