@@ -111,7 +111,7 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
 
   const callId = crypto.randomUUID();
   const channelName = `peer-call-${callId}`;
-  const expiresAt = new Date(now.getTime() + 60 * 60 * 1000);
+  const expiresAt = new Date(now.getTime() + 60 * 1000);
 
   await db.insert(peerCallSessions).values({
     id: callId,

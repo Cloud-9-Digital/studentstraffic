@@ -39,7 +39,14 @@ export async function POST(
       const answeredAt = new Date();
       await db
         .update(peerCallSessions)
-        .set({ status: "active", answeredAt, updatedAt: answeredAt })
+        .set({
+          status: "active",
+          answeredAt,
+          // Once answered, allow a normal long conversation. The one-minute
+          // expiry applies only while the call is ringing.
+          expiresAt: new Date(answeredAt.getTime() + 60 * 60 * 1000),
+          updatedAt: answeredAt,
+        })
         .where(and(eq(peerCallSessions.id, call.id), eq(peerCallSessions.status, "ringing")));
     }
   }

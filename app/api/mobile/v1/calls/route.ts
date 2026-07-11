@@ -7,7 +7,7 @@ import { mobileError, mobileJson, readJson } from "@/lib/mobile/http";
 import { peerCallBookings, peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
 import { sendCallPushNotification } from "@/lib/push-notifications";
 
-const CALL_TTL_MS = 60 * 60 * 1000;
+const RINGING_TTL_MS = 60 * 1000;
 
 // GET — list booked guides for the student
 export async function GET(request: Request) {
@@ -124,7 +124,7 @@ export async function POST(request: Request) {
 
   const callId = crypto.randomUUID();
   const channelName = `peer-call-${callId}`;
-  const expiresAt = new Date(now.getTime() + CALL_TTL_MS);
+  const expiresAt = new Date(now.getTime() + RINGING_TTL_MS);
 
   await db.insert(peerCallSessions).values({
     id: callId,
