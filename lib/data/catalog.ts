@@ -48,6 +48,7 @@ import {
 import {
   createSlug,
   getSortableUsdValue,
+  getTeachingLanguageFilterLabel,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
 
@@ -779,7 +780,15 @@ function buildFinderProgramConditions(filters: FinderFilters) {
   }
 
   if (filters.medium) {
-    conditions.push(eq(programOfferingsTable.medium, filters.medium as ProgramOffering["medium"]));
+    const language = getTeachingLanguageFilterLabel(filters.medium);
+    // Filter by the concise category returned to the client. This includes
+    // detailed source-backed variants such as "English (confirmed ...)".
+    conditions.push(
+      or(
+        ilike(programOfferingsTable.medium, `${language}%`),
+        ilike(programOfferingsTable.medium, `% ${language}%`)
+      )!
+    );
   }
 
   if (filters.intake) {
@@ -1450,7 +1459,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
     return {
       countries: countryRows.map((row) => ({ slug: row.slug, name: row.name })),
       courses: courseRows.map((row) => ({ slug: row.slug, shortName: row.shortName })),
-      mediums: mediumRows.map((row) => row.medium as ProgramOffering["medium"]),
+      mediums: [...new Set(mediumRows.map((row) => getTeachingLanguageFilterLabel(row.medium)))].sort(),
       intakes: intakeRows.rows.map((row) => row.intake).filter(Boolean),
     };
   }
@@ -1470,7 +1479,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
       slug: program.course.slug,
       shortName: program.course.shortName,
     });
-    mediums.add(program.offering.medium);
+    mediums.add(getTeachingLanguageFilterLabel(program.offering.medium) as ProgramOffering["medium"]);
     for (const intake of program.offering.intakeMonths) {
       intakes.add(intake);
     }

@@ -164,6 +164,36 @@ export function formatProgramMedium(
   return medium;
 }
 
+/**
+ * The catalogue keeps detailed source notes in some medium-of-instruction
+ * values. Filters need a short, human-readable language category instead.
+ */
+export function getTeachingLanguageFilterLabel(medium: string) {
+  const value = medium.trim();
+  const lower = value.toLowerCase();
+  const languages = [
+    "English",
+    "Russian",
+    "German",
+    "Albanian",
+    "Italian",
+    "Vietnamese",
+    "Kyrgyz",
+    "Georgian",
+    "Uzbek",
+    "Chinese",
+    "French",
+    "Spanish",
+  ];
+
+  const language = languages.find((candidate) => lower.includes(candidate.toLowerCase()));
+  if (language) return language;
+
+  // A safe fallback for a new language not covered above: preserve only the
+  // first concise phrase, not any parenthetical research explanation.
+  return value.split(/\s*(?:\(|--|,|;|\.)\s*/)[0]?.trim() || value;
+}
+
 export function formatNumber(value: number) {
   return new Intl.NumberFormat("en-IN").format(value);
 }
