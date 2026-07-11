@@ -14,6 +14,7 @@ object IncomingCallStore {
   private const val KEY_CALLER_NAME = "callerDisplayName"
   private const val KEY_UNIVERSITY_NAME = "universityName"
   private const val KEY_ACTION = "action"
+  private const val KEY_ACTION_TOKEN = "actionToken"
 
   const val EXTRA_CALL_ID = "com.studentstraffic.app.CALL_ID"
   const val EXTRA_CALLER_NAME = "com.studentstraffic.app.CALLER_NAME"
@@ -27,12 +28,13 @@ object IncomingCallStore {
     val action: String?
   )
 
-  fun saveIncoming(context: Context, callId: String, callerDisplayName: String, universityName: String) {
+  fun saveIncoming(context: Context, callId: String, callerDisplayName: String, universityName: String, actionToken: String? = null) {
     preferences(context).edit()
       .putString(KEY_CALL_ID, callId)
       .putString(KEY_CALLER_NAME, callerDisplayName)
       .putString(KEY_UNIVERSITY_NAME, universityName)
       .remove(KEY_ACTION)
+      .putString(KEY_ACTION_TOKEN, actionToken)
       .apply()
   }
 
@@ -46,6 +48,10 @@ object IncomingCallStore {
       prefs.edit().clear().apply()
     }
   }
+
+  fun actionToken(context: Context, callId: String) = preferences(context)
+    .takeIf { it.getString(KEY_CALL_ID, null) == callId }
+    ?.getString(KEY_ACTION_TOKEN, null)
 
   fun captureLaunchIntent(context: Context, intent: Intent?) {
     val callId = intent?.getStringExtra(EXTRA_CALL_ID) ?: return

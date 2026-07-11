@@ -6,6 +6,7 @@ import { and, gt, isNotNull, isNull, eq } from "drizzle-orm";
 import { getDb } from "./db/server";
 import { mobileSessions } from "./db/schema";
 import { sendFCMDataMessage } from "./firebase-admin";
+import { createCallActionToken } from "./call-action-token";
 
 const expo = new Expo();
 
@@ -51,6 +52,7 @@ export async function sendCallPushNotification(
     callId: payload.callId,
     callerDisplayName: payload.callerDisplayName,
     universityName: payload.universityName,
+    actionToken: createCallActionToken(payload.callId, recipientUserId) ?? "",
   };
 
   await Promise.all([

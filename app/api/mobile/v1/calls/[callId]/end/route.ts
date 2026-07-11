@@ -5,21 +5,29 @@ import { peerCallSessions } from "@/lib/db/schema";
 import { requireMobileSession } from "@/lib/mobile/auth";
 import { mobileError, mobileJson } from "@/lib/mobile/http";
 import { getAuthorizedPeerCallSession, notifyPeerCallEnded, notifyPeerCallParticipants } from "@/lib/peer-calls";
+import { verifyCallActionToken } from "@/lib/call-action-token";
 
 export async function POST(
   request: Request,
   context: { params: Promise<{ callId: string }> }
 ) {
-  const session = await requireMobileSession(request);
-  if (!session) return mobileError("unauthorized", "Please sign in again.", 401);
-
   const { callId } = await context.params;
-  const call = await getAuthorizedPeerCallSession(callId, session.user.id);
-
-  if (!call) return mobileError("not_found", "Call session not found.", 404);
-
+  const session = await requireMobileSession(request);
   const db = getDb();
   if (!db) return mobileError("unavailable", "Service unavailable.", 503);
+  const actionToken = request.headers.get("x-call-action-token");
+  const [unscopedCall] = actionToken
+    ? await db.select().from(peerCallSessions).where(eq(peerCallSessions.id, callId)).limit(1)
+    : [null];
+  const nativeDeclineAuthorized = Boolean(
+    unscopedCall && verifyCallActionToken(actionToken, callId, unscopedCall.peerUserId)
+  );
+  if (!session && !nativeDeclineAuthorized) return mobileError("unauthorized", "Please sign in again.", 401);
+  const call = nativeDeclineAuthorized
+    ? unscopedCall
+    : await getAuthorizedPeerCallSession(callId, session!.user.id);
+
+  if (!call) return mobileError("not_found", "Call session not found.", 404);
 
   const endedAt = new Date();
   await db

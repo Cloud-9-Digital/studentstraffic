@@ -28,7 +28,7 @@ class IncomingCallReceiver : BroadcastReceiver() {
     val callId = data["callId"] ?: return
     val caller = data["callerDisplayName"] ?: "Incoming call"
     val university = data["universityName"] ?: "Students Traffic"
-    IncomingCallStore.saveIncoming(context, callId, caller, university)
+    IncomingCallStore.saveIncoming(context, callId, caller, university, data["actionToken"])
     val telecomCaller = when {
       caller.equals("Incoming call", ignoreCase = true) -> "Students Traffic call"
       caller.contains("Students Traffic", ignoreCase = true) -> caller

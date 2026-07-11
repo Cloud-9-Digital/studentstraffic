@@ -196,6 +196,12 @@ function withNativeIncomingCallFiles(config) {
       // Declining from the native system UI must never bring the app forward.
       // The server expiry will close an unanswered web call if RN is cold.
       source = source.replace('        launchStudentsTrafficCallActivity("decline");\n', "");
+      if (!source.includes("STUDENTSTRAFFIC_TELECOM_DECLINE")) {
+        source = source.replace(
+          "        sendCallRequestToActivity(ACTION_END_CALL, handle);",
+          "        sendCallRequestToActivity(ACTION_END_CALL, handle);\n        // STUDENTSTRAFFIC_TELECOM_DECLINE\n        Intent declineIntent = new Intent();\n        declineIntent.setClassName(context, context.getPackageName() + \".IncomingCallActionReceiver\");\n        declineIntent.setAction(context.getPackageName() + \".TELECOM_DECLINE\");\n        declineIntent.putExtra(context.getPackageName() + \".CALL_ID\", handle.get(EXTRA_CALL_UUID));\n        context.sendBroadcast(declineIntent);",
+        );
+      }
       fs.writeFileSync(voiceConnectionPath, source);
     }
 
