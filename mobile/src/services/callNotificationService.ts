@@ -68,6 +68,14 @@ export function endCallKeepCall(callId: string) {
   } catch {}
 }
 
+export function setCallKeepCallActive(callId: string) {
+  if (Platform.OS !== "android") return;
+  try {
+    const RNCallKeep = require("react-native-callkeep").default;
+    RNCallKeep.setCurrentCallActive(callId);
+  } catch {}
+}
+
 export function scheduleIncomingCallExpiry(callId: string) {
   const timeout = setTimeout(() => {
     cancelIncomingCallNotification(callId).catch(() => {});

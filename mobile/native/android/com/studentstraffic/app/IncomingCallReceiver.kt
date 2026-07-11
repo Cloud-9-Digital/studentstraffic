@@ -29,13 +29,18 @@ class IncomingCallReceiver : BroadcastReceiver() {
     val caller = data["callerDisplayName"] ?: "Incoming call"
     val university = data["universityName"] ?: "Students Traffic"
     IncomingCallStore.saveIncoming(context, callId, caller, university)
+    val telecomCaller = when {
+      caller.equals("Incoming call", ignoreCase = true) -> "Students Traffic call"
+      caller.contains("Students Traffic", ignoreCase = true) -> caller
+      else -> "$caller via Students Traffic"
+    }
 
     // The actual incoming-call path is Android Telecom.  It binds the
     // CallKeep ConnectionService and gives the device's call UI ownership of
     // answer/reject/lock-screen behavior.  A CallStyle notification remains a
     // fallback for devices where the phone account has been disabled or
     // Telecom cannot accept another call.
-    if (!IncomingCallTelecom.reportIncomingCall(context, callId, caller)) {
+    if (!IncomingCallTelecom.reportIncomingCall(context, callId, telecomCaller)) {
       IncomingCallNotification.show(context, callId, caller, university)
     }
   }

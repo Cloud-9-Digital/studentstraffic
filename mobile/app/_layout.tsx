@@ -296,9 +296,9 @@ function CallKeepEventHandler() {
     }
 
     const onAnswer = ({ callUUID }: { callUUID: string }) => {
-      endCallKeepCall(callUUID); // dismiss native call UI
-      // Use the CallKeep UUID directly. The pending call state may not have
-      // finished hydrating when Android delivers answerCall after a cold start.
+      // Keep the Android Telecom call alive.  The successful token exchange
+      // promotes it to ACTIVE, so the system UI never reports a false ended
+      // call while the in-app audio session is starting.
       acceptIncomingCallById(callUUID).catch(() => {});
     };
 

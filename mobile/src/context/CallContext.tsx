@@ -5,6 +5,8 @@ import { mobileClient } from "../api/mobileClient";
 import type { IncomingCall } from "../types/domain";
 import {
   cancelIncomingCallNotification,
+  endCallKeepCall,
+  setCallKeepCallActive,
   startCallForegroundService,
   stopCallForegroundService,
 } from "../services/callNotificationService";
@@ -47,6 +49,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
   const syncInFlightRef = useRef(false);
   const lastSyncAtRef = useRef(0);
   const activeCallRef = useRef<ActiveCall | null>(null);
+  const acceptingCallIdsRef = useRef(new Set<string>());
   const appStateRef = useRef(AppState.currentState);
   const incomingExpiryCleanupRef = useRef<(() => void) | null>(null);
 
@@ -166,6 +169,8 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const acceptIncomingCallById = useCallback(async (callId: string) => {
+    if (activeCallRef.current?.callId === callId || acceptingCallIdsRef.current.has(callId)) return;
+    acceptingCallIdsRef.current.add(callId);
     setIsStarting(true);
     setCallError(null);
     try {
@@ -185,9 +190,11 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
       stopRecoverySync();
       cancelIncomingCallNotification(callId).catch(() => {});
       startCallForegroundService(call.callId, call.displayName).catch(() => {});
+      setCallKeepCallActive(callId);
     } catch (e: any) {
       setCallError(e?.message ?? "Failed to join call.");
     } finally {
+      acceptingCallIdsRef.current.delete(callId);
       setIsStarting(false);
     }
   }, [stopRecoverySync]);
@@ -238,6 +245,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
     const { callId } = activeCall;
     setActiveCall(null);
     stopCallForegroundService(callId).catch(() => {});
+    endCallKeepCall(callId);
     try {
       await mobileClient.endCall(callId);
     } catch {

@@ -37,10 +37,10 @@ object IncomingCallTelecom {
         context.applicationInfo.loadLabel(context.packageManager).toString(),
       )
 
-      // The session ID is not a phone number.  Supply a harmless generic
-      // address because Telecom requires a URI while the caller name is what
-      // Android displays to the recipient.
-      val number = "0000000000"
+      // This is an app-to-app call, not a telephone call.  Telecom requires a
+      // non-null URI to construct the CallKeep connection, but an empty tel
+      // address avoids falsely presenting a made-up telephone number.
+      val number = ""
       val extras = Bundle().apply {
         putParcelable(TelecomManager.EXTRA_INCOMING_CALL_ADDRESS, Uri.fromParts(PhoneAccount.SCHEME_TEL, number, null))
         putString(EXTRA_CALLER_NAME, callerDisplayName)
