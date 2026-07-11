@@ -6,8 +6,68 @@ import { getDb } from "@/lib/db/server";
 import { peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
 import type { PeerCallStatus } from "@/lib/data/types";
 import { publishPeerCallsUserEvent } from "@/lib/realtime/ably";
+import { sendCallEndedPushNotification, sendCallPushNotification } from "@/lib/push-notifications";
 
 const OPEN_CALL_STATUSES: PeerCallStatus[] = ["ringing", "active"];
+export const RINGING_CALL_TTL_MS = 60 * 1000;
+
+type CreatePeerCallInput = {
+  peerId: number;
+  universityId: number;
+  callerUserId: string;
+  recipientUserId: string;
+  callerDisplayName: string;
+  universityName: string;
+};
+
+/**
+ * The single creation path for browser and mobile calls. A session is the
+ * authority: realtime events and push only tell clients to fetch that state.
+ */
+export async function createOrReusePeerCallSession(input: CreatePeerCallInput) {
+  const db = getDb();
+  if (!db) throw new Error("Call service is unavailable.");
+
+  const now = new Date();
+  const [existing] = await db
+    .select({ id: peerCallSessions.id })
+    .from(peerCallSessions)
+    .where(
+      and(
+        eq(peerCallSessions.peerId, input.peerId),
+        eq(peerCallSessions.callerUserId, input.callerUserId),
+        inArray(peerCallSessions.status, OPEN_CALL_STATUSES),
+        gt(peerCallSessions.expiresAt, now)
+      )
+    )
+    .limit(1);
+
+  if (existing) return { callId: existing.id, reused: true };
+
+  const callId = crypto.randomUUID();
+  await db.insert(peerCallSessions).values({
+    id: callId,
+    channelName: `peer-call-${callId}`,
+    universityId: input.universityId,
+    peerId: input.peerId,
+    peerUserId: input.recipientUserId,
+    callerUserId: input.callerUserId,
+    status: "ringing",
+    startedAt: now,
+    expiresAt: new Date(now.getTime() + RINGING_CALL_TTL_MS),
+    createdAt: now,
+    updatedAt: now,
+  });
+
+  notifyPeerCallParticipants([input.callerUserId, input.recipientUserId], "ringing");
+  await sendCallPushNotification(input.recipientUserId, {
+    callId,
+    callerDisplayName: input.callerDisplayName,
+    universityName: input.universityName,
+  });
+
+  return { callId, reused: false };
+}
 
 // Tells a participant's dashboard/mobile client to refetch its incoming-calls
 // list, replacing 8s polling with a push-then-pull refresh.
@@ -19,6 +79,14 @@ export function notifyPeerCallParticipants(
   for (const userId of userIds) {
     publishPeerCallsUserEvent(userId, "calls.changed", { reason }).catch(() => undefined);
   }
+}
+
+export async function notifyPeerCallEnded(
+  participants: Array<string | null | undefined>,
+  callId: string
+) {
+  const userIds = new Set(participants.filter((id): id is string => Boolean(id)));
+  await Promise.all([...userIds].map((userId) => sendCallEndedPushNotification(userId, callId)));
 }
 
 export type AuthorizedPeerCallSession = {
@@ -80,11 +148,11 @@ export async function cleanupExpiredPeerCallSessions(userId?: string) {
 
   const [affectedRinging, affectedActive] = await Promise.all([
     db
-      .select({ peerUserId: peerCallSessions.peerUserId, callerUserId: peerCallSessions.callerUserId })
+      .select({ id: peerCallSessions.id, peerUserId: peerCallSessions.peerUserId, callerUserId: peerCallSessions.callerUserId })
       .from(peerCallSessions)
       .where(ringingWhere),
     db
-      .select({ peerUserId: peerCallSessions.peerUserId, callerUserId: peerCallSessions.callerUserId })
+      .select({ id: peerCallSessions.id, peerUserId: peerCallSessions.peerUserId, callerUserId: peerCallSessions.callerUserId })
       .from(peerCallSessions)
       .where(activeWhere),
   ]);
@@ -100,6 +168,7 @@ export async function cleanupExpiredPeerCallSessions(userId?: string) {
 
   for (const row of [...affectedRinging, ...affectedActive]) {
     notifyPeerCallParticipants([row.peerUserId, row.callerUserId], "expired");
+    await notifyPeerCallEnded([row.peerUserId, row.callerUserId], row.id);
   }
 
   return expiredRingingCalls.rowCount + endedActiveCalls.rowCount;

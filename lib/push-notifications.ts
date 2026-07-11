@@ -74,3 +74,41 @@ export async function sendCallPushNotification(
       : Promise.resolve(),
   ]);
 }
+
+/** Sends a data-only stop signal so every signed-in device closes this call. */
+export async function sendCallEndedPushNotification(recipientUserId: string, callId: string) {
+  const db = getDb();
+  if (!db) return;
+
+  const sessions = await db
+    .select({ pushToken: mobileSessions.pushToken })
+    .from(mobileSessions)
+    .where(
+      and(
+        eq(mobileSessions.userId, recipientUserId),
+        isNull(mobileSessions.revokedAt),
+        gt(mobileSessions.expiresAt, new Date()),
+        isNotNull(mobileSessions.pushToken)
+      )
+    );
+
+  const tokens = sessions.map((session) => session.pushToken!);
+  const data = { type: "call_ended", callId };
+  const fcmTokens = tokens.filter((token) => !isExpoPushToken(token));
+  const expoTokens = tokens.filter(isExpoPushToken);
+
+  await Promise.all([
+    ...fcmTokens.map((token) => sendFCMDataMessage(token, data).catch(() => null)),
+    expoTokens.length > 0
+      ? expo.sendPushNotificationsAsync(
+          expoTokens.map<ExpoPushMessage>((to) => ({
+            to,
+            contentAvailable: true,
+            priority: "high",
+            ttl: 60,
+            data,
+          }))
+        ).catch(() => null)
+      : Promise.resolve(),
+  ]);
+}

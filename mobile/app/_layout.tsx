@@ -36,10 +36,19 @@ import { usePushToken } from "../src/hooks/usePushToken";
 import {
   setupCallKeep,
   consumePendingCallData,
+  displayIncomingCall,
   endCallKeepCall,
 } from "../src/services/callNotificationService";
 
 SplashScreen.preventAutoHideAsync();
+
+const PERSISTED_QUERY_KEYS = new Set([
+  "profile",
+  "dashboard",
+  "shortlists",
+  "applications",
+  "searchOptions",
+]);
 
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
@@ -82,7 +91,16 @@ export default function RootLayout() {
   return (
     <PersistQueryClientProvider
       client={queryClient}
-      persistOptions={{ persister, maxAge: 24 * 60 * 60_000 }}
+      persistOptions={{
+        persister,
+        maxAge: 24 * 60 * 60_000,
+        // Keep useful account data available offline, but do not serialize
+        // thousands of search rows into AsyncStorage on every cache update.
+        dehydrateOptions: {
+          shouldDehydrateQuery: (query) =>
+            typeof query.queryKey[0] === "string" && PERSISTED_QUERY_KEYS.has(query.queryKey[0]),
+        },
+      }}
     >
       <SafeAreaProvider>
         <PaperProvider
@@ -102,6 +120,7 @@ export default function RootLayout() {
             <CallProvider>
             <PushNotificationSetup />
             <FCMForegroundHandler />
+            <IOSPushNotificationHandler />
             <CallKeepEventHandler />
             <StatusBar style="dark" />
             <Stack
@@ -169,7 +188,7 @@ function PushNotificationSetup() {
 // Handles FCM messages while the app is in the foreground.
 // Background / killed state is handled by registerBackgroundHandlers() above.
 function FCMForegroundHandler() {
-  const { openIncomingCallById } = useCall();
+  const { dismissCallById, openIncomingCallById } = useCall();
 
   useEffect(() => {
     if (Platform.OS !== "android") return;
@@ -182,11 +201,60 @@ function FCMForegroundHandler() {
           // App is open — the polling banner will show within 3s.
           // Immediately show it without waiting for next poll.
           openIncomingCallById(data.callId, data.callerDisplayName, data.universityName);
+        } else if (data?.type === "call_ended" && data.callId) {
+          dismissCallById(data.callId);
         }
       });
     } catch {}
     return () => unsub?.();
-  }, [openIncomingCallById]);
+  }, [dismissCallById, openIncomingCallById]);
+
+  return null;
+}
+
+// iOS standard push notifications are the fallback until PushKit/VoIP
+// credentials are configured. Tapping one opens the same incoming-call flow.
+function IOSPushNotificationHandler() {
+  const { dismissCallById, openIncomingCallById } = useCall();
+
+  useEffect(() => {
+    if (Platform.OS !== "ios") return;
+
+    let receivedSubscription: { remove: () => void } | undefined;
+    let responseSubscription: { remove: () => void } | undefined;
+    try {
+      const Notifications = require("expo-notifications");
+      const handleCallData = (data: Record<string, unknown>) => {
+        if (typeof data.callId !== "string") return;
+        if (data.type === "call_ended") {
+          dismissCallById(data.callId);
+          return;
+        }
+        if (data.type !== "incoming_call") return;
+        const callerDisplayName = typeof data.callerDisplayName === "string" ? data.callerDisplayName : "Incoming call";
+        const universityName = typeof data.universityName === "string" ? data.universityName : "Students Traffic";
+        displayIncomingCall(data.callId, callerDisplayName).catch(() => {});
+        openIncomingCallById(data.callId, callerDisplayName, universityName);
+      };
+
+      receivedSubscription = Notifications.addNotificationReceivedListener((notification: any) => {
+        handleCallData(notification.request.content.data ?? {});
+      });
+      responseSubscription = Notifications.addNotificationResponseReceivedListener((response: any) => {
+        handleCallData(response.notification.request.content.data ?? {});
+      });
+      Notifications.getLastNotificationResponseAsync().then((response: any) => {
+        if (response) handleCallData(response.notification.request.content.data ?? {});
+      }).catch(() => {});
+    } catch {
+      // expo-notifications is unavailable in a bare web runtime.
+    }
+
+    return () => {
+      receivedSubscription?.remove();
+      responseSubscription?.remove();
+    };
+  }, [dismissCallById, openIncomingCallById]);
 
   return null;
 }
@@ -209,6 +277,14 @@ function CallKeepEventHandler() {
     // pending call data was stored in AsyncStorage by the background handler.
     consumePendingCallData().then((pending) => {
       if (!pending) return;
+      if (pending.action === "accept") {
+        acceptIncomingCallById(pending.callId).catch(() => {});
+        return;
+      }
+      if (pending.action === "decline") {
+        declineIncomingCallById(pending.callId);
+        return;
+      }
       openIncomingCallById(pending.callId, pending.callerDisplayName, pending.universityName);
     }).catch(() => {});
 

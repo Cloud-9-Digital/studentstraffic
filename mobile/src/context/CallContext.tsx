@@ -29,6 +29,7 @@ type CallContextValue = {
   declineIncomingCall: () => void;
   declineIncomingCallById: (callId: string) => void;
   endCall: () => Promise<void>;
+  dismissCallById: (callId: string) => void;
   openIncomingCallById: (callId: string, callerDisplayName: string, universityName: string) => void;
   callError: string | null;
   isStarting: boolean;
@@ -246,6 +247,17 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
     startRecoverySync(10_000, 5_000);
   }, [activeCall, startRecoverySync, syncIncomingCalls]);
 
+  const dismissCallById = useCallback((callId: string) => {
+    cancelIncomingCallNotification(callId).catch(() => {});
+    setIncomingCall((current) => current?.id === callId ? null : current);
+    setActiveCall((current) => {
+      if (current?.callId !== callId) return current;
+      stopCallForegroundService(callId).catch(() => {});
+      return null;
+    });
+    startRecoverySync(10_000, 5_000);
+  }, [startRecoverySync]);
+
   return (
     <CallContext.Provider
       value={{
@@ -257,6 +269,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
         declineIncomingCall,
         declineIncomingCallById,
         endCall,
+        dismissCallById,
         openIncomingCallById,
         callError,
         isStarting,
@@ -276,6 +289,7 @@ const EMPTY_CALL_CTX: CallContextValue = {
   declineIncomingCall: () => {},
   declineIncomingCallById: () => {},
   endCall: async () => {},
+  dismissCallById: () => {},
   openIncomingCallById: () => {},
   callError: null,
   isStarting: false,

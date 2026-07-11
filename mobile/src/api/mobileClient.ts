@@ -1,8 +1,15 @@
 import type { CallBooking, CallTokenResponse, IndiaCollege, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
-import { Platform } from "react-native";
+import { PermissionsAndroid, Platform } from "react-native";
+import Constants from "expo-constants";
 import { clearToken, getToken, setToken } from "./tokenStore";
 
 const API_URL = (process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:3000").replace(/\/$/, "");
+const REQUEST_TIMEOUT_MS = 20_000;
+const APP_VERSION = Constants.expoConfig?.version ?? "0.0.0";
+const APP_BUILD = Platform.select({
+  android: Constants.expoConfig?.android?.versionCode?.toString(),
+  ios: Constants.expoConfig?.ios?.buildNumber,
+});
 let pushTokenRefreshUnsubscribe: (() => void) | null = null;
 
 type ApiErrorBody = {
@@ -13,28 +20,40 @@ type ApiErrorBody = {
 };
 
 async function request<T>(path: string, init?: RequestInit & { auth?: boolean }): Promise<T> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   const headers = new Headers(init?.headers);
   headers.set("Content-Type", "application/json");
   headers.set("Accept", "application/json");
   headers.set("X-Platform", Platform.OS);
-  headers.set("X-App-Version", "0.1.0");
+  headers.set("X-App-Version", APP_BUILD ? `${APP_VERSION} (${APP_BUILD})` : APP_VERSION);
 
   if (init?.auth !== false) {
     const token = await getToken();
     if (token) headers.set("Authorization", `Bearer ${token}`);
   }
 
-  const response = await fetch(`${API_URL}${path}`, {
-    ...init,
-    headers,
-  });
+  try {
+    const response = await fetch(`${API_URL}${path}`, {
+      ...init,
+      headers,
+      signal: controller.signal,
+    });
 
-  const body = (await response.json().catch(() => ({}))) as ApiErrorBody;
-  if (!response.ok) {
-    throw new Error(body.error?.message ?? `Request failed (${response.status})`);
+    const body = (await response.json().catch(() => ({}))) as ApiErrorBody;
+    if (!response.ok) {
+      throw new Error(body.error?.message ?? `Request failed (${response.status})`);
+    }
+
+    return body as T;
+  } catch (error) {
+    if (controller.signal.aborted) {
+      throw new Error("Request timed out. Check your connection and try again.");
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeout);
   }
-
-  return body as T;
 }
 
 function toUniversity(input: any): University {
@@ -113,6 +132,13 @@ export const mobileClient = {
     if (Platform.OS !== "android") return false;
 
     try {
+      if (Platform.Version >= 33) {
+        const notificationPermission = await PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS,
+        );
+        if (notificationPermission !== PermissionsAndroid.RESULTS.GRANTED) return false;
+      }
+
       const messaging = require("@react-native-firebase/messaging").default;
       const authStatus = await messaging().requestPermission();
       const enabled =
@@ -169,7 +195,7 @@ export const mobileClient = {
       this.getProfile(),
       this.getShortlists().catch(() => []),
       this.getApplications().catch(() => []),
-      this.getUniversities({}).then(r => r.universities).catch(() => []),
+      this.getUniversities({}, 1, 4).then(r => r.universities).catch(() => []),
     ]);
 
     return {
@@ -190,8 +216,8 @@ export const mobileClient = {
     medium?: string;
     universityType?: string;
     sort?: string;
-  } = {}, page = 1) {
-    const params = new URLSearchParams({ pageSize: "30", page: String(page) });
+  } = {}, page = 1, pageSize = 30) {
+    const params = new URLSearchParams({ pageSize: String(Math.min(Math.max(pageSize, 1), 30)), page: String(page) });
     if (filters.q?.trim())        params.set("q",               filters.q.trim());
     if (filters.country)          params.set("country",          filters.country);
     if (filters.course)           params.set("course",           filters.course);

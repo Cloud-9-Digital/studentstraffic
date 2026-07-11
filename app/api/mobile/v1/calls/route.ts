@@ -1,13 +1,11 @@
-import { and, eq, gt, inArray } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { requireMobileSession } from "@/lib/mobile/auth";
 import { mobileError, mobileJson, readJson } from "@/lib/mobile/http";
-import { peerCallBookings, peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
-import { sendCallPushNotification } from "@/lib/push-notifications";
-
-const RINGING_TTL_MS = 60 * 1000;
+import { peerCallBookings, studentPeers, universities, users } from "@/lib/db/schema";
+import { createOrReusePeerCallSession } from "@/lib/peer-calls";
 
 // GET — list booked guides for the student
 export async function GET(request: Request) {
@@ -102,50 +100,14 @@ export async function POST(request: Request) {
     return mobileError("not_found", "Guide not available.", 404);
   }
 
-  const now = new Date();
-
-  // Reuse any existing open session for this pair
-  const [existingCall] = await db
-    .select({ id: peerCallSessions.id })
-    .from(peerCallSessions)
-    .where(
-      and(
-        eq(peerCallSessions.peerId, peer.id),
-        eq(peerCallSessions.callerUserId, session.user.id),
-        inArray(peerCallSessions.status, ["ringing", "active"]),
-        gt(peerCallSessions.expiresAt, now)
-      )
-    )
-    .limit(1);
-
-  if (existingCall) {
-    return mobileJson({ callId: existingCall.id });
-  }
-
-  const callId = crypto.randomUUID();
-  const channelName = `peer-call-${callId}`;
-  const expiresAt = new Date(now.getTime() + RINGING_TTL_MS);
-
-  await db.insert(peerCallSessions).values({
-    id: callId,
-    channelName,
-    universityId: peer.universityId,
+  const call = await createOrReusePeerCallSession({
     peerId: peer.id,
-    peerUserId: peer.peerUserId,
+    universityId: peer.universityId,
     callerUserId: session.user.id,
-    status: "ringing",
-    startedAt: now,
-    expiresAt,
-    createdAt: now,
-    updatedAt: now,
-  });
-
-  // Notify the peer (guide) that a student is calling
-  await sendCallPushNotification(peer.peerUserId, {
-    callId,
+    recipientUserId: peer.peerUserId,
     callerDisplayName: caller?.name?.trim() || "A student",
     universityName: peer.universityName,
   });
 
-  return mobileJson({ callId });
+  return mobileJson({ callId: call.callId });
 }

@@ -1,16 +1,12 @@
 "use server";
 
-import { and, eq, gt, inArray } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
-import { peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
-import { notifyPeerCallParticipants } from "@/lib/peer-calls";
-import { sendCallPushNotification } from "@/lib/push-notifications";
-
-const REUSABLE_CALL_STATUSES = ["ringing", "active"] as const;
-const RINGING_TTL_MS = 60 * 1000;
+import { studentPeers, universities, users } from "@/lib/db/schema";
+import { createOrReusePeerCallSession } from "@/lib/peer-calls";
 
 export type StartPeerCallResult = {
   callId?: string;
@@ -74,51 +70,14 @@ export async function startPeerCallAction(
     return { error: "You cannot start a call with your own peer profile." };
   }
 
-  const now = new Date();
-  const [existingCall] = await db
-    .select({ id: peerCallSessions.id })
-    .from(peerCallSessions)
-    .where(
-      and(
-        eq(peerCallSessions.peerId, peer.id),
-        eq(peerCallSessions.callerUserId, callerUserId),
-        inArray(peerCallSessions.status, [...REUSABLE_CALL_STATUSES]),
-        gt(peerCallSessions.expiresAt, now)
-      )
-    )
-    .limit(1);
-
-  if (existingCall) {
-    return { callId: existingCall.id };
-  }
-
-  const callId = crypto.randomUUID();
-  const channelName = `peer-call-${callId}`;
-  const expiresAt = new Date(now.getTime() + RINGING_TTL_MS);
-
-  await db.insert(peerCallSessions).values({
-    id: callId,
-    channelName,
-    universityId: peer.universityId,
+  const call = await createOrReusePeerCallSession({
     peerId: peer.id,
-    peerUserId: peer.peerUserId,
+    universityId: peer.universityId,
     callerUserId,
-    status: "ringing",
-    startedAt: now,
-    expiresAt,
-    createdAt: now,
-    updatedAt: now,
-  });
-
-  notifyPeerCallParticipants([peer.peerUserId], "ringing");
-
-  // The guide is using the mobile app in this direction, so realtime browser
-  // events are not enough. Send the high-priority FCM/Expo call notification.
-  await sendCallPushNotification(peer.peerUserId, {
-    callId,
+    recipientUserId: peer.peerUserId,
     callerDisplayName: callerUser.name?.trim() || "A student",
     universityName: peer.universityName,
   });
 
-  return { callId };
+  return { callId: call.callId };
 }

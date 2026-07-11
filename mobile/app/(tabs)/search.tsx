@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import {
   ActivityIndicator,
   Animated,
-  FlatList,
   Platform,
   Pressable,
   ScrollView,
@@ -16,6 +15,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import * as Haptics from "expo-haptics";
+import { FlashList, type ListRenderItemInfo } from "@shopify/flash-list";
+import { useQuery } from "@tanstack/react-query";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { CountryFlag } from "../../src/components/CountryFlag";
@@ -57,6 +58,16 @@ const INDIA_STATES = [
 ];
 
 const INDIA_MANAGEMENT = ["Govt.", "Private"];
+const UNIVERSITY_LIST_DRAW_DISTANCE = 600;
+
+function ListSeparator() {
+  return <View style={s.sep} />;
+}
+
+function appendUnique<T>(current: T[], incoming: T[], getKey: (item: T) => string) {
+  const seen = new Set(current.map(getKey));
+  return [...current, ...incoming.filter((item) => !seen.has(getKey(item)))];
+}
 
 type AbroadOptions = {
   countries: { slug: string; name: string }[];
@@ -197,6 +208,9 @@ export default function SearchScreen() {
   // ── Shared ──
   const [query, setQuery] = useState("");
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isFirstSearchRunRef = useRef(true);
+  const abroadRequestIdRef = useRef(0);
+  const indiaRequestIdRef = useRef(0);
   const bottomInset = insets.bottom + 90;
 
   // ── Abroad state ──
@@ -235,6 +249,17 @@ export default function SearchScreen() {
   const [indiaLoading, setIndiaLoading]         = useState(false);
   const [indiaLoadingMore, setIndiaLoadingMore] = useState(false);
 
+  const { data: shortlists = [] } = useQuery({
+    queryKey: ["shortlists"],
+    queryFn: () => mobileClient.getShortlists(),
+    staleTime: 30_000,
+    retry: false,
+  });
+  const shortlistedSlugs = useMemo(
+    () => new Set(shortlists.map((university) => university.slug)),
+    [shortlists],
+  );
+
   // ── React to URL params ──
   useEffect(() => {
     if (indiaParam === "1") setMode("india");
@@ -257,6 +282,7 @@ export default function SearchScreen() {
   const loadAbroad = useCallback(async (
     q: string, f: FilterState, pageNum: number, append: boolean,
   ) => {
+    const requestId = ++abroadRequestIdRef.current;
     if (pageNum === 1) setAbroadLoading(true); else setAbroadLoadingMore(true);
     try {
       const feeRange = FEE_RANGES.find(r => r.value === f.feeRange);
@@ -270,7 +296,11 @@ export default function SearchScreen() {
         feeMin: feeRange?.feeMin,
         feeMax: feeRange?.feeMax,
       }, pageNum);
-      setUniversities(prev => append ? [...prev, ...result.universities] : result.universities);
+      if (requestId !== abroadRequestIdRef.current) return;
+      setUniversities(prev => append
+        ? appendUnique(prev, result.universities, (university) => university.offeringSlug ?? university.slug)
+        : result.universities,
+      );
       setAbroadHasNext(result.hasNextPage);
       setAbroadTotal(result.totalItems);
       setAbroadPage(pageNum);
@@ -280,25 +310,34 @@ export default function SearchScreen() {
           countries: sortCountries(result.options.countries),
         });
       }
-    } catch { /* keep existing */ } finally {
-      setAbroadLoading(false); setAbroadLoadingMore(false);
+    } catch { /* keep existing results while a request fails */ } finally {
+      if (requestId === abroadRequestIdRef.current) {
+        setAbroadLoading(false); setAbroadLoadingMore(false);
+      }
     }
   }, []);
 
   const loadIndia = useCallback(async (
     q: string, state: string, mgmt: string, pageNum: number, append: boolean,
   ) => {
+    const requestId = ++indiaRequestIdRef.current;
     if (pageNum === 1) setIndiaLoading(true); else setIndiaLoadingMore(true);
     try {
       const result = await mobileClient.getIndiaColleges({
         q: q || undefined, state: state || undefined, management: mgmt || undefined,
       }, pageNum);
-      setColleges(prev => append ? [...prev, ...result.colleges] : result.colleges);
+      if (requestId !== indiaRequestIdRef.current) return;
+      setColleges(prev => append
+        ? appendUnique(prev, result.colleges, (college) => college.slug)
+        : result.colleges,
+      );
       setIndiaHasNext(result.hasNextPage);
       setIndiaTotal(result.totalItems);
       setIndiaPage(pageNum);
-    } catch { /* keep existing */ } finally {
-      setIndiaLoading(false); setIndiaLoadingMore(false);
+    } catch { /* keep existing results while a request fails */ } finally {
+      if (requestId === indiaRequestIdRef.current) {
+        setIndiaLoading(false); setIndiaLoadingMore(false);
+      }
     }
   }, []);
 
@@ -313,6 +352,10 @@ export default function SearchScreen() {
 
   // Debounced text search
   useEffect(() => {
+    if (isFirstSearchRunRef.current) {
+      isFirstSearchRunRef.current = false;
+      return;
+    }
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
       if (mode === "abroad") loadAbroad(query, abroadFilters, 1, false);
@@ -320,6 +363,32 @@ export default function SearchScreen() {
     }, 350);
     return () => { if (debounceRef.current) clearTimeout(debounceRef.current); };
   }, [query]);
+
+  const renderUniversity = useCallback(({ item }: ListRenderItemInfo<University>) => (
+    <UniversityCard university={item} isShortlisted={shortlistedSlugs.has(item.slug)} />
+  ), [shortlistedSlugs]);
+
+  const renderIndiaCollege = useCallback(({ item }: ListRenderItemInfo<IndiaCollege>) => (
+    <IndiaCollegeCard
+      college={item}
+      onCounsel={() => {
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+        router.push("/counselling");
+      }}
+    />
+  ), [router]);
+
+  const loadMoreAbroad = useCallback(() => {
+    if (abroadHasNext && !abroadLoadingMore && !abroadLoading) {
+      loadAbroad(query, abroadFilters, abroadPage + 1, true);
+    }
+  }, [abroadFilters, abroadHasNext, abroadLoading, abroadLoadingMore, abroadPage, loadAbroad, query]);
+
+  const loadMoreIndia = useCallback(() => {
+    if (indiaHasNext && !indiaLoadingMore && !indiaLoading) {
+      loadIndia(query, indiaState, indiaMgmt, indiaPage + 1, true);
+    }
+  }, [indiaHasNext, indiaLoading, indiaLoadingMore, indiaMgmt, indiaPage, indiaState, loadIndia, query]);
 
   // ── Mode switch with slide + fade animation ──
   function handleModeChange(m: Mode) {
@@ -545,18 +614,17 @@ export default function SearchScreen() {
           abroadLoading ? (
             <View style={s.loadingWrap}><ActivityIndicator color={colors.primary} /></View>
           ) : (
-            <FlatList
+            <FlashList
               data={universities}
               keyExtractor={(u, i) => u.offeringSlug ?? `${u.slug}-${i}`}
-              renderItem={({ item }) => <UniversityCard university={item} />}
+              renderItem={renderUniversity}
+              extraData={shortlistedSlugs}
+              drawDistance={UNIVERSITY_LIST_DRAW_DISTANCE}
               contentContainerStyle={[s.listContent, { paddingBottom: bottomInset }]}
-              ItemSeparatorComponent={() => <View style={s.sep} />}
+              ItemSeparatorComponent={ListSeparator}
               keyboardShouldPersistTaps="handled"
               keyboardDismissMode="on-drag"
-              onEndReached={() => {
-                if (abroadHasNext && !abroadLoadingMore)
-                  loadAbroad(query, abroadFilters, abroadPage + 1, true);
-              }}
+              onEndReached={loadMoreAbroad}
               onEndReachedThreshold={0.3}
               ListHeaderComponent={
                 universities.length > 0 ? (
@@ -582,26 +650,16 @@ export default function SearchScreen() {
           indiaLoading ? (
             <View style={s.loadingWrap}><ActivityIndicator color={colors.primary} /></View>
           ) : (
-            <FlatList
+            <FlashList
               data={colleges}
               keyExtractor={(c) => c.slug}
-              renderItem={({ item }) => (
-                <IndiaCollegeCard
-                  college={item}
-                  onCounsel={() => {
-                    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-                    router.push("/counselling");
-                  }}
-                />
-              )}
+              renderItem={renderIndiaCollege}
+              drawDistance={UNIVERSITY_LIST_DRAW_DISTANCE}
               contentContainerStyle={[s.listContent, { paddingBottom: bottomInset }]}
-              ItemSeparatorComponent={() => <View style={s.sep} />}
+              ItemSeparatorComponent={ListSeparator}
               keyboardShouldPersistTaps="handled"
               keyboardDismissMode="on-drag"
-              onEndReached={() => {
-                if (indiaHasNext && !indiaLoadingMore)
-                  loadIndia(query, indiaState, indiaMgmt, indiaPage + 1, true);
-              }}
+              onEndReached={loadMoreIndia}
               onEndReachedThreshold={0.3}
               ListHeaderComponent={
                 colleges.length > 0 ? (

@@ -1,9 +1,10 @@
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import { useEffect, useState } from "react";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { memo, useState } from "react";
+import { useQueryClient } from "@tanstack/react-query";
 import * as Haptics from "expo-haptics";
 
 import type { University } from "../types/domain";
@@ -35,10 +36,11 @@ function getInitials(name: string) {
 
 type Props = {
   university: University;
+  isShortlisted?: boolean;
   onShortlistChange?: (slug: string, isShortlisted: boolean) => void;
 };
 
-export function UniversityCard({ university, onShortlistChange }: Props) {
+export const UniversityCard = memo(function UniversityCard({ university, isShortlisted, onShortlistChange }: Props) {
   const router = useRouter();
   const queryClient = useQueryClient();
   const { showToast } = useToast();
@@ -48,22 +50,10 @@ export function UniversityCard({ university, onShortlistChange }: Props) {
   const [toggling, setToggling] = useState(false);
 
   // Initialize from shortlists cache if available, otherwise from prop
-  const [saved, setSaved] = useState(() => {
-    const cached = queryClient.getQueryData<University[]>(["shortlists"]);
-    return cached?.some(u => u.slug === university.slug) ?? (university.isShortlisted ?? false);
-  });
-
-  // Subscribe to shortlists cache updates reactively (enabled:false = read-only, no fetch)
-  const { data: shortlists } = useQuery({
-    queryKey: ["shortlists"],
-    queryFn: () => mobileClient.getShortlists(),
-    enabled: false,
-  });
-  useEffect(() => {
-    if (!toggling && shortlists !== undefined) {
-      setSaved(shortlists.some(u => u.slug === university.slug));
-    }
-  }, [shortlists, toggling, university.slug]);
+  // Search screens pass a shared shortlist set, avoiding one React Query
+  // observer per rendered card. The local value only bridges an optimistic tap.
+  const [optimisticSaved, setOptimisticSaved] = useState<boolean | null>(null);
+  const saved = optimisticSaved ?? isShortlisted ?? university.isShortlisted ?? false;
 
   const showImage = !imgError && !!university.logoUrl;
   const tone = university.imageTone as Tone;
@@ -72,7 +62,7 @@ export function UniversityCard({ university, onShortlistChange }: Props) {
     if (toggling) return;
     Haptics.impactAsync(saved ? Haptics.ImpactFeedbackStyle.Light : Haptics.ImpactFeedbackStyle.Medium);
     const next = !saved;
-    setSaved(next); // optimistic
+    setOptimisticSaved(next);
     showToast(next ? "Added to shortlist" : "Removed from shortlist", next ? "add" : "remove");
     onShortlistChange?.(university.slug, next);
     setToggling(true);
@@ -82,10 +72,13 @@ export function UniversityCard({ university, onShortlistChange }: Props) {
       } else {
         await mobileClient.removeShortlist(university.slug);
       }
-      queryClient.invalidateQueries({ queryKey: ["shortlists"] });
+      queryClient.setQueryData<University[]>(["shortlists"], (current = []) => {
+        if (next) return current.some((item) => item.slug === university.slug) ? current : [...current, { ...university, isShortlisted: true }];
+        return current.filter((item) => item.slug !== university.slug);
+      });
       queryClient.invalidateQueries({ queryKey: ["dashboard"] });
     } catch {
-      setSaved(!next); // revert on error
+      setOptimisticSaved(!next); // revert on error
       onShortlistChange?.(university.slug, !next);
     } finally {
       setToggling(false);
@@ -104,9 +97,11 @@ export function UniversityCard({ university, onShortlistChange }: Props) {
       {showImage ? (
         <View style={s.visual}>
           <Image
-            source={{ uri: university.logoUrl! }}
+            source={university.logoUrl!}
             style={s.logo}
-            resizeMode="contain"
+            contentFit="contain"
+            cachePolicy="memory-disk"
+            recyclingKey={university.logoUrl}
             onError={() => setImgError(true)}
           />
         </View>
@@ -182,7 +177,7 @@ export function UniversityCard({ university, onShortlistChange }: Props) {
       </View>
     </Pressable>
   );
-}
+});
 
 const s = StyleSheet.create({
   card: {

@@ -1,14 +1,13 @@
 "use server";
 
-import { and, eq, gt, inArray } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 
 import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
-import { peerCallBookings, peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
-import { notifyPeerCallParticipants } from "@/lib/peer-calls";
+import { peerCallBookings, studentPeers, universities, users } from "@/lib/db/schema";
+import { createOrReusePeerCallSession } from "@/lib/peer-calls";
 import { resolveDbUserId } from "@/lib/server-session";
-import { sendCallPushNotification } from "@/lib/push-notifications";
 
 export type StartCallAsPeerResult = {
   callId?: string;
@@ -89,55 +88,14 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
     return { error: "Student account not found." };
   }
 
-  const now = new Date();
-
-  // Reuse any open session between this peer and student
-  const [existingCall] = await db
-    .select({ id: peerCallSessions.id })
-    .from(peerCallSessions)
-    .where(
-      and(
-        eq(peerCallSessions.peerId, peer.id),
-        eq(peerCallSessions.callerUserId, peerUserId),
-        inArray(peerCallSessions.status, ["ringing", "active"]),
-        gt(peerCallSessions.expiresAt, now)
-      )
-    )
-    .limit(1);
-
-  if (existingCall) {
-    return { callId: existingCall.id };
-  }
-
-  const callId = crypto.randomUUID();
-  const channelName = `peer-call-${callId}`;
-  const expiresAt = new Date(now.getTime() + 60 * 1000);
-
-  await db.insert(peerCallSessions).values({
-    id: callId,
-    channelName,
-    universityId: peer.universityId,
+  const call = await createOrReusePeerCallSession({
     peerId: peer.id,
-    // The peer/callee is the student receiving the web-initiated call.
-    // Reversing these IDs makes mobile incoming-call queries and Agora roles
-    // treat the caller as the recipient.
-    peerUserId: booking.studentUserId,
+    universityId: peer.universityId,
     callerUserId: peerUserId,
-    status: "ringing",
-    startedAt: now,
-    expiresAt,
-    createdAt: now,
-    updatedAt: now,
-  });
-
-  notifyPeerCallParticipants([peerUserId, booking.studentUserId], "ringing");
-
-  // Notify the student that their guide is calling
-  await sendCallPushNotification(booking.studentUserId, {
-    callId,
+    recipientUserId: booking.studentUserId,
     callerDisplayName: peer.fullName?.trim() || "Your guide",
     universityName: peer.universityName,
   });
 
-  return { callId };
+  return { callId: call.callId };
 }

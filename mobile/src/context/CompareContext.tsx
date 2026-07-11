@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useState } from "react";
+import { createContext, useCallback, useContext, useMemo, useState } from "react";
 
 export type CompareItem = {
   slug: string;
@@ -45,8 +45,10 @@ export function CompareProvider({ children }: { children: React.ReactNode }) {
     [items],
   );
 
+  const value = useMemo(() => ({ items, add, remove, clear, isIn }), [items, add, remove, clear, isIn]);
+
   return (
-    <CompareContext.Provider value={{ items, add, remove, clear, isIn }}>
+    <CompareContext.Provider value={value}>
       {children}
     </CompareContext.Provider>
   );

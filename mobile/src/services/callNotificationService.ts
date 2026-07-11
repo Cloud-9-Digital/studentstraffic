@@ -1,4 +1,4 @@
-import { Platform } from "react-native";
+import { NativeModules, Platform } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const PENDING_CALL_KEY = "ST_PENDING_CALL_DATA_V3";
@@ -15,10 +15,17 @@ export type PendingCallAction = {
 // ─── CallKeep setup ──────────────────────────────────────────────────────────
 
 export async function setupCallKeep() {
-  if (Platform.OS !== "android") return false;
+  if (Platform.OS === "web") return false;
   try {
     const RNCallKeep = require("react-native-callkeep").default;
     const accepted = await RNCallKeep.setup({
+      ios: {
+        appName: "Students Traffic",
+        supportsVideo: false,
+        maximumCallGroups: "1",
+        maximumCallsPerCallGroup: "1",
+        includesCallsInRecents: false,
+      },
       android: {
         alertTitle: "Phone account permission",
         alertDescription: "Students Traffic needs access to your phone accounts to receive calls",
@@ -42,7 +49,7 @@ export async function setupCallKeep() {
 // ─── Show incoming call via ConnectionService (works even when app is killed) ─
 
 export async function displayIncomingCall(callId: string, callerDisplayName: string) {
-  if (Platform.OS !== "android") return false;
+  if (Platform.OS === "web") return false;
   try {
     const RNCallKeep = require("react-native-callkeep").default;
     await RNCallKeep.displayIncomingCall(callId, callerDisplayName, callerDisplayName, "generic", false);
@@ -62,7 +69,11 @@ export function endCallKeepCall(callId: string) {
 }
 
 export function scheduleIncomingCallExpiry(callId: string) {
-  const timeout = setTimeout(() => endCallKeepCall(callId), INCOMING_RING_TIMEOUT_MS);
+  const timeout = setTimeout(() => {
+    cancelIncomingCallNotification(callId).catch(() => {});
+    const { mobileClient } = require("../api/mobileClient");
+    mobileClient.endCall(callId).catch(() => undefined);
+  }, INCOMING_RING_TIMEOUT_MS);
   return () => clearTimeout(timeout);
 }
 
@@ -76,12 +87,19 @@ export async function storePendingCallData(data: {
   await AsyncStorage.setItem(PENDING_CALL_KEY, JSON.stringify(data));
 }
 
-export async function consumePendingCallData() {
+export async function consumePendingCallData(): Promise<{
+  callId: string;
+  callerDisplayName: string;
+  universityName: string;
+  action?: "accept" | "decline";
+} | null> {
   try {
+    const nativePending = await NativeModules.IncomingCallStore?.consumePendingCall?.();
+    if (nativePending?.callId) return nativePending;
     const raw = await AsyncStorage.getItem(PENDING_CALL_KEY);
     if (!raw) return null;
     await AsyncStorage.removeItem(PENDING_CALL_KEY);
-    return JSON.parse(raw) as { callId: string; callerDisplayName: string; universityName: string };
+    return JSON.parse(raw) as { callId: string; callerDisplayName: string; universityName: string; action?: "accept" | "decline" };
   } catch {
     return null;
   }
@@ -146,14 +164,22 @@ export async function stopCallForegroundService(callId: string) {
   } catch {}
 }
 
-export async function cancelIncomingCallNotification(_callId: string) {
-  // With CallKeep, calls are ended via endCallKeepCall — nothing to cancel here
+export async function cancelIncomingCallNotification(callId: string) {
+  endCallKeepCall(callId);
+  try {
+    NativeModules.IncomingCallStore?.cancelIncomingCall?.(callId);
+  } catch {}
+  if (Platform.OS !== "android") return;
+  try {
+    const notifee = require("@notifee/react-native").default;
+    await notifee.cancelNotification(`incoming_${callId}`);
+  } catch {}
 }
 
 // ─── Background handlers (must run in index.js before React mounts) ──────────
 
 export function registerBackgroundHandlers() {
-  if (Platform.OS !== "android") return;
+  if (Platform.OS === "web") return;
 
   try {
     const messaging = require("@react-native-firebase/messaging").default;
@@ -161,30 +187,20 @@ export function registerBackgroundHandlers() {
       const data = message.data as Record<string, string>;
       if (data?.type !== "incoming_call") return;
 
-      // Store call data so the app can use it when it opens after user accepts
+      // Android's native receiver renders the incoming UI before React Native
+      // starts. A second JS UI here causes delayed or duplicate calls.
+      if (Platform.OS === "android") return;
+
       await storePendingCallData({
         callId: data.callId,
         callerDisplayName: data.callerDisplayName,
         universityName: data.universityName,
       });
-
-      // Ensure phone account is registered before showing call UI
       const setupSucceeded = await setupCallKeep();
-      if (!setupSucceeded) return;
-
-      // Show native Android incoming call screen via ConnectionService
-      const displayed = await displayIncomingCall(data.callId, data.callerDisplayName);
-      if (displayed) scheduleIncomingCallExpiry(data.callId);
+      if (setupSucceeded) await displayIncomingCall(data.callId, data.callerDisplayName);
     });
   } catch (error) {
     console.error("[fcm] background handler registration failed", error);
   }
 
-  // Notifee background event — only needed for active-call foreground service dismissal
-  try {
-    const notifee = require("@notifee/react-native").default;
-    notifee.onBackgroundEvent(async () => {});
-  } catch (error) {
-    console.error("[notifee] background handler registration failed", error);
-  }
 }

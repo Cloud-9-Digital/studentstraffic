@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
@@ -27,7 +28,7 @@ type Props = {
   onCounsel?: (college: IndiaCollege) => void;
 };
 
-export function IndiaCollegeCard({ college, onCounsel }: Props) {
+export const IndiaCollegeCard = memo(function IndiaCollegeCard({ college, onCounsel }: Props) {
   const router = useRouter();
   const isGovt = college.managementType === "Govt.";
   const displayName = cleanCollegeName(college.collegeName, college.cityName);
@@ -98,7 +99,7 @@ export function IndiaCollegeCard({ college, onCounsel }: Props) {
       </View>
     </Pressable>
   );
-}
+});
 
 const s = StyleSheet.create({
   card: {
