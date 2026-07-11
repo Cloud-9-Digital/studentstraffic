@@ -7,9 +7,10 @@ import { getDb } from "@/lib/db/server";
 import { env } from "@/lib/env";
 import { peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
 import { notifyPeerCallParticipants } from "@/lib/peer-calls";
+import { sendCallPushNotification } from "@/lib/push-notifications";
 
 const REUSABLE_CALL_STATUSES = ["ringing", "active"] as const;
-const CALL_TTL_MS = 60 * 60 * 1000;
+const RINGING_TTL_MS = 60 * 1000;
 
 export type StartPeerCallResult = {
   callId?: string;
@@ -36,7 +37,7 @@ export async function startPeerCallAction(
 
   // Resolve real user ID by email (session.user.id is unreliable for admin sessions)
   const [callerUser] = await db
-    .select({ id: users.id })
+    .select({ id: users.id, name: users.name })
     .from(users)
     .where(eq(users.email, session.user.email))
     .limit(1);
@@ -52,6 +53,7 @@ export async function startPeerCallAction(
       id: studentPeers.id,
       peerUserId: studentPeers.peerUserId,
       universityId: studentPeers.universityId,
+      universityName: universities.name,
     })
     .from(studentPeers)
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
@@ -92,7 +94,7 @@ export async function startPeerCallAction(
 
   const callId = crypto.randomUUID();
   const channelName = `peer-call-${callId}`;
-  const expiresAt = new Date(now.getTime() + CALL_TTL_MS);
+  const expiresAt = new Date(now.getTime() + RINGING_TTL_MS);
 
   await db.insert(peerCallSessions).values({
     id: callId,
@@ -109,6 +111,14 @@ export async function startPeerCallAction(
   });
 
   notifyPeerCallParticipants([peer.peerUserId], "ringing");
+
+  // The guide is using the mobile app in this direction, so realtime browser
+  // events are not enough. Send the high-priority FCM/Expo call notification.
+  await sendCallPushNotification(peer.peerUserId, {
+    callId,
+    callerDisplayName: callerUser.name?.trim() || "A student",
+    universityName: peer.universityName,
+  });
 
   return { callId };
 }

@@ -51,6 +51,9 @@ export async function POST(
         .set({
           status: "active",
           answeredAt,
+          // A short expiry is only for unanswered ringing calls. Once the
+          // guide accepts, allow a normal long conversation.
+          expiresAt: new Date(answeredAt.getTime() + 60 * 60 * 1000),
           updatedAt: answeredAt,
         })
         .where(

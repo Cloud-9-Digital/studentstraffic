@@ -19,6 +19,9 @@ type Phase = "connecting" | "ringing" | "connected" | "ended" | "error";
 type NetQuality = 0 | 1 | 2 | 3 | 4 | 5 | 6; // 0=unknown, 1=excellent … 6=disconnected
 
 const JOIN_TIMEOUT_MS = 30_000;
+const RING_TIMEOUT_MS = 60_000;
+const CALL_STATUS_POLL_MS = 3_000;
+const FINISHED_CALL_STATUSES = new Set(["ended", "expired", "declined", "missed"]);
 
 type AgoraJoinPayload = {
   appId: string;
@@ -168,6 +171,51 @@ export function CallOverlay({
     window.addEventListener("beforeunload", guard);
     return () => window.removeEventListener("beforeunload", guard);
   }, [phase]);
+
+  // The caller joins Agora before the recipient accepts. Poll the session only
+  // while ringing so a remote decline/expiry dismisses this overlay even if a
+  // realtime event is missed or the other client never joins the channel.
+  useEffect(() => {
+    if (phase !== "ringing") return;
+
+    let cancelled = false;
+    let timeout: ReturnType<typeof setTimeout> | null = null;
+    const startedAt = Date.now();
+
+    const finish = () => {
+      if (cancelled) return;
+      setPhase("ended");
+      window.setTimeout(() => {
+        if (!cancelled) onClose();
+      }, 500);
+    };
+
+    const checkStatus = async () => {
+      try {
+        const response = await fetch(`/api/peer-calls/${callId}/status`, { cache: "no-store" });
+        const payload = (await response.json().catch(() => ({}))) as { status?: string };
+        if (FINISHED_CALL_STATUSES.has(payload.status ?? "")) {
+          finish();
+          return;
+        }
+      } catch {
+        // Keep ringing through a transient network failure; the timeout below
+        // remains the final safety net.
+      }
+
+      if (Date.now() - startedAt >= RING_TIMEOUT_MS) {
+        finish();
+        return;
+      }
+      timeout = setTimeout(checkStatus, CALL_STATUS_POLL_MS);
+    };
+
+    timeout = setTimeout(checkStatus, CALL_STATUS_POLL_MS);
+    return () => {
+      cancelled = true;
+      if (timeout) clearTimeout(timeout);
+    };
+  }, [callId, onClose, phase]);
 
   // ── Agora join ──────────────────────────────────────────────────────────────
   useEffect(() => {
