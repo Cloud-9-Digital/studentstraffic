@@ -42,7 +42,7 @@
         "android.permission.RECEIVE_BOOT_COMPLETED",
         "android.permission.POST_NOTIFICATIONS"
       ],
-      "versionCode": 12
+      "versionCode": 13
     },
     "web": {
       "favicon": "./assets/favicon.png"

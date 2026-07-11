@@ -37,10 +37,10 @@ object IncomingCallTelecom {
         context.applicationInfo.loadLabel(context.packageManager).toString(),
       )
 
-      // This is an app-to-app call, not a telephone call.  Telecom requires a
-      // non-null URI to construct the CallKeep connection, but an empty tel
-      // address avoids falsely presenting a made-up telephone number.
-      val number = ""
+      // The managed Android Telecom + CallKeep path requires a valid tel URI
+      // to construct the Connection. The visible caller identity is supplied
+      // separately as "<caller> via Students Traffic" above.
+      val number = "0000000000"
       val extras = Bundle().apply {
         putParcelable(TelecomManager.EXTRA_INCOMING_CALL_ADDRESS, Uri.fromParts(PhoneAccount.SCHEME_TEL, number, null))
         putString(EXTRA_CALLER_NAME, callerDisplayName)
