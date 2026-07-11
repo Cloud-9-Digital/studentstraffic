@@ -78,7 +78,7 @@ export default function HelpScreen() {
         <View style={s.supportCard}>
           <Ionicons name="chatbubble-ellipses-outline" size={23} color={colors.coral} />
           <View style={s.supportCopy}><Text style={s.supportTitle}>Still need help?</Text><Text style={s.supportText}>Our counsellors can guide you through the next step.</Text></View>
-          <Pressable onPress={openCounselling} style={s.supportButton}><Text style={s.supportButtonText}>Contact us</Text></Pressable>
+          <Pressable onPress={openCounselling} style={s.supportButton}><Text style={s.supportButtonText}>Talk to a counsellor</Text></Pressable>
         </View>
         <Pressable onPress={() => Linking.openURL(WHATSAPP_URL)} style={({ pressed }) => [s.whatsapp, pressed && s.pressed]}><Ionicons name="logo-whatsapp" size={18} color="#16794c" /><Text style={s.whatsappText}>Chat on WhatsApp</Text></Pressable>
       </ScrollView>

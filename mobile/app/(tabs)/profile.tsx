@@ -418,7 +418,7 @@ export default function ProfileScreen() {
           <SettingsGroup>
             <SettingsRow
               icon="chatbubble-ellipses-outline"
-              label="Talk to counsellor"
+              label="Talk to a Students Traffic counsellor"
               onPress={() => router.push("/counselling")}
             />
             <SettingsRow
