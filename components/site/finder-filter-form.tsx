@@ -19,7 +19,6 @@ import type {
   FinderCountryOption,
   FinderCourseOption,
   FinderFilters,
-  ProgramOffering,
 } from "@/lib/data/types";
 
 export type FinderFilterChangeOptions = {
@@ -29,7 +28,7 @@ export type FinderFilterChangeOptions = {
 type FinderFilterFormProps = {
   countries: FinderCountryOption[];
   courses: FinderCourseOption[];
-  mediums: ProgramOffering["medium"][];
+  mediums: string[];
   intakes: string[];
   filters: FinderFilters;
   heroMode?: boolean;
@@ -192,7 +191,7 @@ function FilterFields({
 }: {
   countries: FinderCountryOption[];
   courses: FinderCourseOption[];
-  mediums: ProgramOffering["medium"][];
+  mediums: string[];
   intakes: string[];
   filters: FinderFilters;
   isFiltered: boolean;

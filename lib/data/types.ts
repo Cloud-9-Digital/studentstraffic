@@ -378,7 +378,7 @@ export type FinderCardProgram = {
 export type FinderOptions = {
   countries: FinderCountryOption[];
   courses: FinderCourseOption[];
-  mediums: ProgramOffering["medium"][];
+  mediums: string[];
   intakes: string[];
 };
 

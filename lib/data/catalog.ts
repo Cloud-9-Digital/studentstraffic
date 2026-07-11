@@ -1467,7 +1467,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
   const programs = await getFinderProgramsBase();
   const countriesBySlug = new Map<string, FinderCountryOption>();
   const coursesBySlug = new Map<string, FinderCourseOption>();
-  const mediums = new Set<ProgramOffering["medium"]>();
+  const mediums = new Set<string>();
   const intakes = new Set<string>();
 
   for (const program of programs) {
@@ -1479,7 +1479,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
       slug: program.course.slug,
       shortName: program.course.shortName,
     });
-    mediums.add(getTeachingLanguageFilterLabel(program.offering.medium) as ProgramOffering["medium"]);
+    mediums.add(getTeachingLanguageFilterLabel(program.offering.medium));
     for (const intake of program.offering.intakeMonths) {
       intakes.add(intake);
     }
