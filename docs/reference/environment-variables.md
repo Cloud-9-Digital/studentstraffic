@@ -313,6 +313,21 @@ LOG_DB_SLOW_QUERIES=1
 
 ---
 
+### LOG_DB_QUERIES
+```bash
+LOG_DB_QUERIES=1
+```
+
+**Purpose**: Print every successful database request with timing and a shortened query summary
+
+**Required**: No
+
+**Default**: `0` (disabled)
+
+**When to use**: Short, focused database diagnostics only. Keep disabled during builds and normal production traffic.
+
+---
+
 ### ENABLE_INLINE_JOB_PROCESSING
 ```bash
 ENABLE_INLINE_JOB_PROCESSING=1

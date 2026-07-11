@@ -30,6 +30,7 @@ const envSchema = z.object({
   TYPESENSE_SEARCH_API_KEY: z.string().min(1).optional(),
   TYPESENSE_COLLECTION: z.string().min(1).optional(),
   LOG_DB_SLOW_QUERIES: z.enum(["0", "1"]).optional(),
+  LOG_DB_QUERIES: z.enum(["0", "1"]).optional(),
   ENABLE_INLINE_JOB_PROCESSING: z.enum(["0", "1"]).optional(),
   SKIP_LEAD_WHATSAPP: z.enum(["0", "1"]).optional(),
   // Rate limiting and caching (Upstash Redis)
@@ -76,6 +77,7 @@ const parsedEnv = envSchema.safeParse({
   TYPESENSE_SEARCH_API_KEY: optionalEnv(process.env.TYPESENSE_SEARCH_API_KEY),
   TYPESENSE_COLLECTION: optionalEnv(process.env.TYPESENSE_COLLECTION),
   LOG_DB_SLOW_QUERIES: optionalEnv(process.env.LOG_DB_SLOW_QUERIES),
+  LOG_DB_QUERIES: optionalEnv(process.env.LOG_DB_QUERIES),
   ENABLE_INLINE_JOB_PROCESSING: optionalEnv(process.env.ENABLE_INLINE_JOB_PROCESSING),
   SKIP_LEAD_WHATSAPP: optionalEnv(process.env.SKIP_LEAD_WHATSAPP),
   UPSTASH_REDIS_REST_URL: optionalEnv(process.env.UPSTASH_REDIS_REST_URL),
@@ -166,6 +168,7 @@ export const env = {
     parsedEnv.data.TYPESENSE_HOST && parsedEnv.data.TYPESENSE_API_KEY
   ),
   logDbSlowQueries: parsedEnv.data.LOG_DB_SLOW_QUERIES === "1",
+  logDbQueries: parsedEnv.data.LOG_DB_QUERIES === "1",
   enableInlineJobProcessing:
     parsedEnv.data.ENABLE_INLINE_JOB_PROCESSING === "1",
   skipLeadWhatsapp: parsedEnv.data.SKIP_LEAD_WHATSAPP === "1",

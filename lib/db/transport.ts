@@ -130,8 +130,9 @@ export function configureDatabaseTransport() {
           );
         }
 
-        // Also log all queries in production for basic metrics
-        if (process.env.NODE_ENV === "production") {
+        // Full query logging is noisy during builds and normal production
+        // traffic, so enable it only for focused database diagnostics.
+        if (env.logDbQueries) {
           console.info(
             "[db-query]",
             JSON.stringify({
