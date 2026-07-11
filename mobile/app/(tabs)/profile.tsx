@@ -424,7 +424,7 @@ export default function ProfileScreen() {
             <SettingsRow
               icon="help-circle-outline"
               label="Help & FAQ"
-              onPress={() => {}}
+              onPress={() => router.push("/help")}
               last
             />
           </SettingsGroup>
