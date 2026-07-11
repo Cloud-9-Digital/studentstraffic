@@ -5,6 +5,7 @@ import { ChatWorkspace, type ChatStarterItem } from "@/components/dashboard/chat
 import { env } from "@/lib/env";
 import {
   listGuideConversationMessages,
+  listGuideConversationCallEvents,
   listStudentConversationCandidates,
   listStudentGuideConversations,
 } from "@/lib/guide-chat";
@@ -45,9 +46,12 @@ export default async function StudentMessagesPage({
       ? requestedConversationId
       : fallbackConversationId;
 
-  const initialMessages = selectedConversationId
-    ? await listGuideConversationMessages(selectedConversationId, userId)
-    : [];
+  const [initialMessages, initialCalls] = selectedConversationId
+    ? await Promise.all([
+        listGuideConversationMessages(selectedConversationId, userId),
+        listGuideConversationCallEvents(selectedConversationId, userId),
+      ])
+    : [[], []];
 
   const starters: ChatStarterItem[] = starterOptions.map((option) => ({
     kind: "student",
@@ -77,6 +81,7 @@ export default async function StudentMessagesPage({
       initialStarters={starters}
       initialSelectedConversationId={selectedConversationId}
       initialMessages={initialMessages}
+      initialCalls={initialCalls}
       realtimeEnabled={env.hasAblyRealtime}
       voiceEnabled={env.hasAgoraVoice}
     />

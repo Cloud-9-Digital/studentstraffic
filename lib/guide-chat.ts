@@ -3,6 +3,7 @@ import "server-only";
 import { and, count, desc, eq, gt, ne, or } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
+import { listPeerCallTimelineEvents, type PeerCallTimelineEvent } from "@/lib/peer-calls";
 import {
   guideConversations,
   guideMessages,
@@ -562,6 +563,17 @@ export async function listGuideConversationMessages(
     messageType: row.messageType,
     isMine: row.senderUserId === userId,
   }));
+}
+
+export type GuideCallTimelineEvent = PeerCallTimelineEvent;
+
+export async function listGuideConversationCallEvents(
+  conversationId: number,
+  userId: string
+): Promise<GuideCallTimelineEvent[]> {
+  const conversation = await getAuthorizedGuideConversation(conversationId, userId);
+  if (!conversation) return [];
+  return listPeerCallTimelineEvents(conversation.peerId, userId);
 }
 
 export async function markGuideConversationRead(

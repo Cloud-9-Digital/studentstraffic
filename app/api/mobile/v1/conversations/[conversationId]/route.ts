@@ -1,6 +1,6 @@
 import { requireMobileSession } from "@/lib/mobile/auth";
 import { mobileError, mobileJson } from "@/lib/mobile/http";
-import { getAuthorizedGuideConversation, getGuideConversationSummaryForUser, listGuideConversationMessages } from "@/lib/guide-chat";
+import { getAuthorizedGuideConversation, getGuideConversationSummaryForUser, listGuideConversationCallEvents, listGuideConversationMessages } from "@/lib/guide-chat";
 
 export async function GET(request: Request, { params }: { params: Promise<{ conversationId: string }> }) {
   const session = await requireMobileSession(request);
@@ -9,9 +9,10 @@ export async function GET(request: Request, { params }: { params: Promise<{ conv
   if (!Number.isFinite(conversationId)) return mobileError("validation_error", "Invalid conversation.", 422);
   const conversation = await getAuthorizedGuideConversation(conversationId, session.user.id);
   if (!conversation) return mobileError("not_found", "Conversation not found.", 404);
-  const [summary, messages] = await Promise.all([
+  const [summary, messages, calls] = await Promise.all([
     getGuideConversationSummaryForUser(conversationId, session.user.id),
     listGuideConversationMessages(conversationId, session.user.id),
+    listGuideConversationCallEvents(conversationId, session.user.id),
   ]);
-  return mobileJson({ conversation: summary, messages });
+  return mobileJson({ conversation: summary, messages, calls });
 }

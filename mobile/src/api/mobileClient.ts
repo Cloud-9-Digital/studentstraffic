@@ -1,4 +1,4 @@
-import type { CallBooking, CallTokenResponse, GuideConversation, GuideConversationStarter, GuideMessage, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
+import type { CallBooking, CallTokenResponse, GuideCallEvent, GuideConversation, GuideConversationStarter, GuideMessage, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
 import { PermissionsAndroid, Platform } from "react-native";
 import Constants from "expo-constants";
 import { clearToken, getToken, setToken } from "./tokenStore";
@@ -316,7 +316,7 @@ export const mobileClient = {
   },
 
   async getConversation(conversationId: number) {
-    return request<{ conversation: GuideConversation; messages: GuideMessage[] }>(`/api/mobile/v1/conversations/${conversationId}`);
+    return request<{ conversation: GuideConversation; messages: GuideMessage[]; calls: GuideCallEvent[] }>(`/api/mobile/v1/conversations/${conversationId}`);
   },
 
   async sendConversationMessage(conversationId: number, body: string) {

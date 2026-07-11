@@ -5,7 +5,7 @@ import { and, desc, eq, gt, inArray, lt, or } from "drizzle-orm";
 import { getDb } from "@/lib/db/server";
 import { peerCallSessions, studentPeers, universities, users } from "@/lib/db/schema";
 import type { PeerCallStatus } from "@/lib/data/types";
-import { publishPeerCallsUserEvent } from "@/lib/realtime/ably";
+import { publishGuideChatUserEvent, publishPeerCallsUserEvent } from "@/lib/realtime/ably";
 import { sendCallEndedPushNotification, sendCallPushNotification } from "@/lib/push-notifications";
 
 const OPEN_CALL_STATUSES: PeerCallStatus[] = ["ringing", "active"];
@@ -78,7 +78,65 @@ export function notifyPeerCallParticipants(
   const userIds = new Set(participants.filter((id): id is string => Boolean(id)));
   for (const userId of userIds) {
     publishPeerCallsUserEvent(userId, "calls.changed", { reason }).catch(() => undefined);
+    // The same participants can have the conversation open in the dashboard.
+    // Refreshing its authoritative timeline keeps call outcomes in sync with chat.
+    publishGuideChatUserEvent(userId, "call.updated", { reason }).catch(() => undefined);
   }
+}
+
+export type PeerCallTimelineEvent = {
+  id: string;
+  callId: string;
+  direction: "incoming" | "outgoing";
+  status: PeerCallStatus;
+  createdAt: Date | null;
+  answeredAt: Date | null;
+  endedAt: Date | null;
+  durationSeconds: number | null;
+};
+
+/** Returns call records for one participant in one guide relationship. */
+export async function listPeerCallTimelineEvents(
+  peerId: number,
+  userId: string
+): Promise<PeerCallTimelineEvent[]> {
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      id: peerCallSessions.id,
+      status: peerCallSessions.status,
+      callerUserId: peerCallSessions.callerUserId,
+      createdAt: peerCallSessions.createdAt,
+      answeredAt: peerCallSessions.answeredAt,
+      endedAt: peerCallSessions.endedAt,
+    })
+    .from(peerCallSessions)
+    .where(
+      and(
+        eq(peerCallSessions.peerId, peerId),
+        or(eq(peerCallSessions.callerUserId, userId), eq(peerCallSessions.peerUserId, userId))
+      )
+    )
+    .orderBy(peerCallSessions.createdAt);
+
+  return rows.map((row) => {
+    const durationSeconds =
+      row.answeredAt && row.endedAt
+        ? Math.max(0, Math.floor((row.endedAt.getTime() - row.answeredAt.getTime()) / 1000))
+        : null;
+    return {
+      id: `call-${row.id}`,
+      callId: row.id,
+      direction: row.callerUserId === userId ? "outgoing" : "incoming",
+      status: row.status,
+      createdAt: row.createdAt,
+      answeredAt: row.answeredAt,
+      endedAt: row.endedAt,
+      durationSeconds,
+    };
+  });
 }
 
 export async function notifyPeerCallEnded(

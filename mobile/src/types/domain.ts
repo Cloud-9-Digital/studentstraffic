@@ -154,6 +154,17 @@ export type GuideMessage = {
   isMine: boolean;
 };
 
+export type GuideCallEvent = {
+  id: string;
+  callId: string;
+  direction: "incoming" | "outgoing";
+  status: string;
+  createdAt: string | null;
+  answeredAt: string | null;
+  endedAt: string | null;
+  durationSeconds: number | null;
+};
+
 export type CallTokenResponse = {
   appId: string;
   channelName: string;

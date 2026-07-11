@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-import type { GuideChatMessage, GuideConversationSummary } from "@/lib/guide-chat";
+import type { GuideCallTimelineEvent, GuideChatMessage, GuideConversationSummary } from "@/lib/guide-chat";
 import { getGuideChatRealtimeClient } from "@/lib/realtime/ably-browser";
 import { cn } from "@/lib/utils";
 import { startPeerCallAction } from "@/app/_actions/start-peer-call";
@@ -50,6 +50,7 @@ type LiveMessage = GuideChatMessage & {
 type ConversationResponse = {
   conversation: GuideConversationSummary | null;
   messages: GuideChatMessage[];
+  calls: GuideCallTimelineEvent[];
 };
 
 type ConversationListResponse = {
@@ -78,6 +79,7 @@ type ChatWorkspaceProps = {
   initialStarters: ChatStarterItem[];
   initialSelectedConversationId: number | null;
   initialMessages: GuideChatMessage[];
+  initialCalls: GuideCallTimelineEvent[];
   realtimeEnabled: boolean;
   voiceEnabled?: boolean;
 };
@@ -97,6 +99,23 @@ function formatMessageTime(date: DateValue) {
   if (!date) return "";
   const d = date instanceof Date ? date : new Date(date);
   return d.toLocaleString("en-IN", { hour: "2-digit", minute: "2-digit" });
+}
+
+function formatCallDuration(seconds: number | null) {
+  if (seconds == null) return null;
+  const minutes = Math.floor(seconds / 60);
+  const remainder = seconds % 60;
+  return `${minutes}:${String(remainder).padStart(2, "0")}`;
+}
+
+function getCallLabel(call: GuideCallTimelineEvent) {
+  const duration = formatCallDuration(call.durationSeconds);
+  if (call.answeredAt) return `${call.direction === "outgoing" ? "Outgoing" : "Incoming"} voice call${duration ? ` · ${duration}` : ""}`;
+  if (call.status === "expired" || call.status === "missed") {
+    return call.direction === "incoming" ? "Missed voice call" : "No answer";
+  }
+  if (call.status === "ringing") return `${call.direction === "outgoing" ? "Calling" : "Incoming"} voice call`;
+  return call.direction === "outgoing" ? "Outgoing call cancelled" : "Missed voice call";
 }
 
 function formatDateSeparator(date: DateValue) {
@@ -187,6 +206,7 @@ export function ChatWorkspace({
   initialStarters,
   initialSelectedConversationId,
   initialMessages,
+  initialCalls,
   realtimeEnabled,
   voiceEnabled = false,
 }: ChatWorkspaceProps) {
@@ -197,6 +217,7 @@ export function ChatWorkspace({
   const [starters, setStarters] = useState(initialStarters);
   const [selectedConversationId, setSelectedConversationId] = useState(initialSelectedConversationId);
   const [messages, setMessages] = useState<LiveMessage[]>(initialMessages);
+  const [calls, setCalls] = useState<GuideCallTimelineEvent[]>(initialCalls);
   const [draft, setDraft] = useState("");
   const [loadingConversation, setLoadingConversation] = useState(false);
   const [sending, setSending] = useState(false);
@@ -270,6 +291,7 @@ export function ChatWorkspace({
           setConversations((current) => upsertConversation(current, data.conversation!));
         }
         setMessages(data.messages);
+        setCalls(data.calls);
         setSelectedConversationId(conversationId);
         lastMarkedConversationIdRef.current = null;
         if (options?.syncUrl !== false) replaceUrl(conversationId);
@@ -337,6 +359,10 @@ export function ChatWorkspace({
         }
       }
 
+      if (eventName === "call.updated" && selectedConversationIdRef.current) {
+        void loadConversation(selectedConversationIdRef.current, { syncUrl: false, openThread: false });
+      }
+
       if (
         eventName === "conversation.read" &&
         payload.conversation &&
@@ -354,7 +380,7 @@ export function ChatWorkspace({
     if (desktopMessageListRef.current) {
       desktopMessageListRef.current.scrollTop = desktopMessageListRef.current.scrollHeight;
     }
-  }, [messages]);
+  }, [messages, calls]);
 
   useEffect(() => {
     if (!realtimeEnabled) return;
@@ -532,9 +558,18 @@ export function ChatWorkspace({
   // ─── Shared sub-renders ───────────────────────────────────────────────────
 
   function MessageBubbles({ listRef }: { listRef: React.RefObject<HTMLDivElement | null> }) {
+    const timeline = [
+      ...messages.map((message) => ({ kind: "message" as const, createdAt: message.createdAt, message })),
+      ...calls.map((call) => ({ kind: "call" as const, createdAt: call.createdAt, call })),
+    ].sort((left, right) => {
+      const leftTime = left.createdAt ? new Date(left.createdAt).getTime() : 0;
+      const rightTime = right.createdAt ? new Date(right.createdAt).getTime() : 0;
+      return leftTime - rightTime;
+    });
+
     return (
       <div ref={listRef} className="flex-1 overflow-y-auto overscroll-contain bg-white">
-        {messages.length === 0 ? (
+        {timeline.length === 0 ? (
           <div className="flex h-full min-h-[200px] items-center justify-center px-6">
             <div className="max-w-xs text-center">
               <div className="mx-auto mb-3 flex size-14 items-center justify-center rounded-full bg-[#edf2f1]">
@@ -546,17 +581,44 @@ export function ChatWorkspace({
           </div>
         ) : (
           <div className="px-4 py-4 sm:px-5">
-            {messages.map((message, index) => {
-              const first = isFirstInGroup(messages, index);
-              const last = isLastInGroup(messages, index);
-              const showDateSep = needsDateSeparator(message, messages[index - 1]);
+            {timeline.map((item, index) => {
+              const previous = timeline[index - 1];
+              const showDateSep = !previous ||
+                (item.createdAt && previous.createdAt && new Date(item.createdAt).toDateString() !== new Date(previous.createdAt).toDateString());
+
+              if (item.kind === "call") {
+                return (
+                  <div key={item.call.id}>
+                    {showDateSep && (
+                      <div className="my-3 flex items-center gap-2">
+                        <div className="h-px flex-1 bg-[#e5eeeb]" />
+                        <span className="text-[10px] font-semibold uppercase tracking-wide text-[#9aada8]">{formatDateSeparator(item.createdAt)}</span>
+                        <div className="h-px flex-1 bg-[#e5eeeb]" />
+                      </div>
+                    )}
+                    <div className="my-3 flex justify-center">
+                      <div className="flex items-center gap-2 rounded-full bg-[#edf5f2] px-3 py-1.5 text-xs font-medium text-[#35665e]">
+                        <PhoneCall className="size-3.5" />
+                        <span>{getCallLabel(item.call)}</span>
+                        <span className="text-[10px] text-[#7b938d]">{formatMessageTime(item.createdAt)}</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+
+              const message = item.message;
+              const messageIndex = messages.findIndex((candidate) => candidate.id === message.id);
+              const first = isFirstInGroup(messages, messageIndex);
+              const last = isLastInGroup(messages, messageIndex);
+              const showMessageDateSep = showDateSep;
               const receipt = last
                 ? getOutgoingMessageReceipt(message, selectedConversation!.counterpartLastReadAt)
                 : null;
 
               return (
                 <div key={String(message.id)}>
-                  {showDateSep && (
+                  {showMessageDateSep && (
                     <div className="my-3 flex items-center gap-2">
                       <div className="h-px flex-1 bg-[#e5eeeb]" />
                       <span className="text-[10px] font-semibold uppercase tracking-wide text-[#9aada8]">
@@ -570,7 +632,7 @@ export function ChatWorkspace({
                     className={cn(
                       "flex",
                       message.isMine ? "justify-end" : "justify-start",
-                      first && !showDateSep ? "mt-3" : "mt-0.5"
+                      first && !showMessageDateSep ? "mt-3" : "mt-0.5"
                     )}
                   >
                     <div className="max-w-[82%] sm:max-w-[72%]">

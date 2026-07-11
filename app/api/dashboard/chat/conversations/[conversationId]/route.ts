@@ -4,6 +4,7 @@ import { requireDashboardRequestUserId } from "@/app/api/dashboard/chat/_lib";
 import {
   getAuthorizedGuideConversation,
   getGuideConversationSummaryForUser,
+  listGuideConversationCallEvents,
   listGuideConversationMessages,
 } from "@/lib/guide-chat";
 
@@ -27,13 +28,15 @@ export async function GET(
     return NextResponse.json({ error: "Conversation not found." }, { status: 404 });
   }
 
-  const [summary, messages] = await Promise.all([
+  const [summary, messages, calls] = await Promise.all([
     getGuideConversationSummaryForUser(conversationId, userId),
     listGuideConversationMessages(conversationId, userId),
+    listGuideConversationCallEvents(conversationId, userId),
   ]);
 
   return NextResponse.json({
     conversation: summary,
     messages,
+    calls,
   });
 }
