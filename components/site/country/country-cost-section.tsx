@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { CircleDollarSign } from "lucide-react";
+import { ArrowUpRight, CircleDollarSign } from "lucide-react";
 
 import { SectionHeading, SectionIntro, SectionKicker } from "@/components/site/country/shared";
 import { cn } from "@/lib/utils";
@@ -16,7 +16,6 @@ export function CountryCostSection({
   teachingMediums,
   intakeMonths,
   monthlyCostOfLiving,
-  addOnsSlot,
 }: {
   countryName: string;
   costRange: string | null;
@@ -29,183 +28,128 @@ export function CountryCostSection({
   teachingMediums: string[];
   intakeMonths: string[];
   monthlyCostOfLiving: { intro: string; items: Array<{ category: string; range: string; notes?: string }> } | null;
-  addOnsSlot?: ReactNode;
 }) {
   return (
-    <div className="py-12 md:py-16">
-      <SectionKicker icon={<CircleDollarSign className="size-3.5" />} text="Cost picture" />
-      <SectionHeading>What studying in {countryName} actually costs</SectionHeading>
-      <SectionIntro>
-        Country-level ranges show where the market starts. The exact number depends on the city,
-        hostel setup, and the specific university you shortlist — our counsellors help you turn
-        this range into a real budget.
-      </SectionIntro>
+    <section className="py-14 md:py-20">
+      <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+        <div>
+          <SectionKicker icon={<CircleDollarSign className="size-3.5" />} text="Budget planning" />
+          <SectionHeading>What studying in {countryName} actually costs.</SectionHeading>
+          <SectionIntro>
+            These are estimated country-level costs. Check the university and programme pages for exact fees, intakes and living costs.
+          </SectionIntro>
+        </div>
 
-      <div className="mt-8 grid gap-3 sm:grid-cols-3">
-        <CostStat label="Tuition / year" value={costRange ?? "Check notices"} />
-        <CostStat label="Living / year" value={livingRange ?? "Varies by city"} />
-        <CostStat label="All-in estimate" value={totalRange ?? "Build totals"} highlight />
+        <div>
+          {(costRange || livingRange || totalRange) ? (
+            <div className="border-y border-primary/20">
+              {costRange ? <BudgetRow label="Tuition" detail="Typical annual range" value={costRange} /> : null}
+              {livingRange ? <BudgetRow label="Living" detail="Typical annual range" value={livingRange} /> : null}
+              {totalRange ? <BudgetRow label="Total planning range" detail="Tuition + living" value={totalRange} emphasis /> : null}
+            </div>
+          ) : null}
+
+          {avgPublicTuition || avgPrivateTuition ? (
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {avgPublicTuition ? <RouteRow type="Public universities" value={`${avgPublicTuition}/yr average`} /> : null}
+              {avgPrivateTuition ? <RouteRow type="Private universities" value={`${avgPrivateTuition}/yr average`} /> : null}
+            </div>
+          ) : null}
+
+          {(teachingMediums.length || intakeMonths.length) ? (
+            <div className="mt-8 grid gap-6 border-t border-border/70 pt-6 sm:grid-cols-2">
+              {teachingMediums.length ? <TagGroup label="Teaching medium" items={teachingMediums} kind="medium" /> : null}
+              {intakeMonths.length ? <TagGroup label="Common intakes" items={intakeMonths} kind="intake" /> : null}
+            </div>
+          ) : null}
+        </div>
       </div>
 
-      {avgPublicTuition || avgPrivateTuition ? (
-        <div className="mt-4 grid gap-3 sm:grid-cols-2">
-          {avgPublicTuition ? (
-            <RouteCard type="Public" count={publicCount} avg={avgPublicTuition} tone="green" />
-          ) : null}
-          {avgPrivateTuition ? (
-            <RouteCard type="Private" count={privateCount} avg={avgPrivateTuition} tone="amber" />
-          ) : null}
-        </div>
-      ) : null}
-
-      {(teachingMediums.length || intakeMonths.length) ? (
-        <div className="mt-6 flex flex-wrap gap-6">
-          {teachingMediums.length ? <TagGroup label="Teaching medium" items={teachingMediums} /> : null}
-          {intakeMonths.length ? <TagGroup label="Intake months" items={intakeMonths} /> : null}
-        </div>
-      ) : null}
-
-      {addOnsSlot}
-
       {monthlyCostOfLiving ? (
-        <div className="mt-10">
-          <p className="mb-1 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-            Monthly living costs
-          </p>
-          <p className="mb-5 text-sm leading-7 text-muted-foreground">{monthlyCostOfLiving.intro}</p>
-          <div className="overflow-hidden rounded-[1.6rem] border border-border/70">
-            <div className="grid grid-cols-3 border-b border-border/60 bg-[#f7f5f0] px-5 py-3">
-              <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Category
-              </span>
-              <span className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Monthly range
-              </span>
-              <span className="text-right text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Notes
-              </span>
+        <div className="mt-12 border-t border-border/70 pt-8">
+          <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+            <div>
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-primary/70">Monthly living costs</p>
+              <p className="mt-2 max-w-2xl text-sm leading-7 text-muted-foreground">{monthlyCostOfLiving.intro}</p>
             </div>
-            {monthlyCostOfLiving.items.map((item, i) => (
-              <CostRow
-                key={item.category}
-                label={item.category}
-                value={item.range}
-                note={item.notes ?? ""}
-                border={i > 0}
-                highlight={i === monthlyCostOfLiving.items.length - 1}
-              />
+            <ArrowUpRight aria-hidden="true" className="hidden size-5 text-primary/50 sm:block" />
+          </div>
+
+          <div className="mt-6 overflow-hidden border-y border-border/70">
+            {monthlyCostOfLiving.items.map((item, index) => (
+              <div key={item.category} className={cn("grid gap-1 px-0 py-4 sm:grid-cols-[1fr_auto_1fr] sm:items-center sm:gap-6", index > 0 && "border-t border-border/60")}>
+                <span className="text-sm font-semibold text-foreground">{item.category}</span>
+                <span className="font-display text-lg font-semibold tracking-tight text-heading sm:text-right">{item.range}</span>
+                <span className="text-xs leading-5 text-muted-foreground sm:text-right">{item.notes ?? ""}</span>
+              </div>
             ))}
           </div>
         </div>
       ) : null}
-    </div>
+    </section>
   );
 }
 
-function CostStat({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
+export function CountryCurrencySection({ countryName, addOnsSlot }: { countryName: string; addOnsSlot: ReactNode }) {
   return (
-    <div
-      className={cn(
-        "rounded-[1.4rem] border px-5 py-4",
-        highlight ? "border-primary/25 bg-primary/[0.06]" : "border-border/60 bg-[#faf8f4]"
-      )}
-    >
-      <p className="text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-        {label}
-      </p>
-      <p
-        className={cn(
-          "mt-1.5 font-display text-xl font-semibold tracking-tight sm:text-2xl",
-          highlight ? "text-heading" : "text-foreground"
-        )}
-      >
-        {value}
-      </p>
-    </div>
+    <section className="py-10 md:py-14">
+      <div className="container-shell">
+        <div className="overflow-hidden rounded-[1.75rem] border border-primary/15 bg-primary/[0.045] px-5 py-6 shadow-[0_18px_50px_-36px_hsl(var(--primary)/0.45)] sm:px-8 sm:py-8 lg:px-12 lg:py-10">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-16">
+            <div className="min-w-0">
+              <SectionKicker icon={<CircleDollarSign className="size-3.5" />} text="Currency converter" />
+              <SectionHeading className="mt-3 max-w-[14ch] text-2xl sm:text-3xl">Plan your budget in your currency.</SectionHeading>
+              <p className="mt-3 max-w-md text-sm leading-7 text-muted-foreground">Use this converter to understand the country-level costs for {countryName}. Check the programme page for the final university fees.</p>
+            </div>
+            <div className="min-w-0">{addOnsSlot}</div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
-function CostRow({
-  label,
-  value,
-  note,
-  border,
-  highlight,
-}: {
-  label: string;
-  value: string;
-  note: string;
-  border?: boolean;
-  highlight?: boolean;
-}) {
+function BudgetRow({ label, detail, value, emphasis }: { label: string; detail: string; value: string; emphasis?: boolean }) {
   return (
-    <div
-      className={cn(
-        "grid grid-cols-3 items-center px-5 py-4",
-        border && "border-t border-border/60",
-        highlight && "bg-[#f7f5f0]"
-      )}
-    >
-      <span className={cn("text-sm", highlight ? "font-semibold text-foreground" : "text-muted-foreground")}>
-        {label}
-      </span>
-      <span
-        className={cn(
-          "text-center font-display text-lg font-semibold tracking-tight",
-          highlight ? "text-heading" : "text-foreground"
-        )}
-      >
-        {value}
-      </span>
-      <span className="text-right text-xs text-muted-foreground">{note}</span>
+    <div className={cn("grid gap-2 px-0 py-5 sm:grid-cols-[0.8fr_1fr_auto] sm:items-center sm:gap-6", emphasis && "bg-primary/[0.04]")}>
+      <div>
+        <p className={cn("font-display text-xl font-semibold tracking-tight", emphasis ? "text-heading" : "text-foreground")}>{label}</p>
+        <p className="mt-1 text-xs text-muted-foreground">{detail}</p>
+      </div>
+      <div className="hidden h-px bg-border/70 sm:block" />
+      <p className={cn("font-display text-xl font-semibold tracking-tight sm:text-right sm:text-2xl", emphasis ? "text-heading" : "text-foreground")}>{value}</p>
     </div>
   );
 }
 
-function RouteCard({
-  type,
-  count,
-  avg,
-  tone,
-}: {
-  type: string;
-  count: number;
-  avg: string;
-  tone: "green" | "amber";
-}) {
+function RouteRow({ type, value }: { type: string; value: string }) {
   return (
-    <div
-      className={cn(
-        "rounded-[1.25rem] border px-4 py-4",
-        tone === "green" ? "border-emerald-200/70 bg-emerald-50" : "border-amber-200/70 bg-amber-50"
-      )}
-    >
-      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-        {type} route · {count} options
-      </p>
-      <p className="mt-2 font-display text-xl font-semibold text-heading">
-        {avg}
-        <span className="text-sm font-normal text-muted-foreground">/yr avg</span>
-      </p>
+    <div className="border-l-2 border-primary/25 pl-4">
+      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">{type}</p>
+      <p className="mt-1 font-display text-lg font-semibold text-heading">{value}</p>
     </div>
   );
 }
 
-function TagGroup({ label, items }: { label: string; items: string[] }) {
+function TagGroup({ label, items, kind }: { label: string; items: string[]; kind: "medium" | "intake" }) {
+  const normalizedItems = kind === "medium"
+    ? items.flatMap((item) => item.split(/,|\band\b/i).map((part) => part.replace(/^(primarily|mainly|mostly)\s+/i, "").trim()))
+    : items.map((item) => item.trim());
+  const uniqueItems = Array.from(
+    new Map(
+      normalizedItems
+        .filter((item) => item && !/official\s+notice|check\s+with/i.test(item))
+        .map((item) => [item.toLowerCase(), item]),
+    ).values(),
+  );
+
+  if (!uniqueItems.length) return null;
+
   return (
     <div>
-      <p className="mb-2.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-        {label}
-      </p>
-      <div className="flex flex-wrap gap-2">
-        {items.map((item) => (
-          <span
-            key={item}
-            className="rounded-full border border-border/70 bg-white px-3 py-1.5 text-xs font-medium text-foreground"
-          >
-            {item}
-          </span>
-        ))}
+      <p className="mb-2.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">{label}</p>
+      <div className="flex flex-wrap gap-x-4 gap-y-2">
+        {uniqueItems.map((item) => <span key={item} className="text-sm font-medium text-foreground">{item}</span>)}
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ function deriveDescription(summary: string): string {
 
 export async function getNavCountries(): Promise<NavCountry[]> {
   "use cache";
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("countries");
 
   const db = getDb();
@@ -67,7 +67,7 @@ export async function getNavCountries(): Promise<NavCountry[]> {
 
 export async function getNavCountriesByRegion(): Promise<NavCountryRegionGroup[]> {
   "use cache";
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("countries");
 
   const db = getDb();

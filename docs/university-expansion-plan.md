@@ -80,9 +80,9 @@ verification (built into the script's validation).
 
 ## Country/scope priority queue
 
-1. **Fill existing gaps (in progress / next up):** 21 published universities have zero published
-   programs (17 Russia, 3 Lithuania, 1 Malta as of 2026-07-08) — cheapest possible win, no new
-   discovery needed, uses `add-program-offerings.mjs`.
+1. **Fill existing gaps (in progress / next up):** 6 published universities currently have zero
+   published programs (live database audit, 2026-07-11) — cheapest possible win, no new discovery
+   needed, uses `add-program-offerings.mjs`.
 2. **Fresh discovery pass on Russia** — largest existing footprint (85 universities), likely still
    has undiscovered medical schools.
 3. **New high-demand countries not yet covered**, prioritized by actual Indian MBBS-aspirant demand:

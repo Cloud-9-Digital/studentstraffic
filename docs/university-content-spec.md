@@ -1,5 +1,9 @@
 # University & Program Content Spec
 
+> Page-level structure, section budgets and mobile presentation rules live in
+> [`docs/university-page-architecture.md`](./university-page-architecture.md). Read that file
+> before this field-level research spec.
+
 Content minimums and structure for agents researching/writing university and program content
 (the fields on `universities` and `program_offerings` in `lib/db/schema.ts`, and
 `university.admissionsContent`). Read this alongside `docs/university-pipeline-architecture.md`

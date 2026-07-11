@@ -8,9 +8,8 @@ import { BookOpen, ChevronRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { CountryAccommodationSection } from "@/components/site/country/country-accommodation-section";
-import { CountryCostSection } from "@/components/site/country/country-cost-section";
+import { CountryCostSection, CountryCurrencySection } from "@/components/site/country/country-cost-section";
 import { CountryFaqSection } from "@/components/site/country/country-faq-section";
-import { CountryFinalCta } from "@/components/site/country/country-final-cta";
 import { CountryHero } from "@/components/site/country/country-hero";
 import { CountryLifeSection } from "@/components/site/country/country-life-section";
 import { CountryOverviewSection } from "@/components/site/country/country-overview-section";
@@ -28,6 +27,7 @@ import { CountryStudentLifeSection } from "@/components/site/country/country-stu
 import { DeferredCurrencyConverter } from "@/components/site/deferred-currency-converter";
 import { RegulatoryAdvisoryPanel } from "@/components/site/regulatory-advisory-panel";
 import { Button } from "@/components/ui/button";
+import { CounsellingCtaButton } from "@/components/site/counselling-cta-button";
 import { catalogReviewedAt } from "@/lib/content-governance";
 import {
   getCountries,
@@ -54,6 +54,7 @@ import { getCountryHeroImage } from "@/lib/country-media";
 import { getInrExchangeRate } from "@/lib/exchange-rate";
 import { getLandingPageHref } from "@/lib/routes";
 import { getCountryContent } from "@/lib/data/country-content";
+import { getCountryVisaContent } from "@/lib/data/country-visa";
 import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import { getCountryFlagCode } from "@/lib/university-media";
 import { formatCurrencyUsd, formatProgramMedium, hasPublishedUsdAmount } from "@/lib/utils";
@@ -104,15 +105,14 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const { country, programs } = await getCountryPageData(slug);
+  const { country } = await getCountryPageData(slug);
 
   if (!country) {
     return { title: "Country Not Found" };
   }
 
-  // country.metaTitle / country.metaDescription are curated, per-country copy
-  // (see scripts/update-country-meta.mjs) that accounts for whether a
-  // country's published catalog is single-stream (e.g. Georgia is ~100%
+  // Country metadata must stay destination-level even when a country's
+  // published catalog is currently dominated by one stream (e.g. Georgia is ~100%
   // MBBS) or spans multiple streams (e.g. Albania covers nursing, medicine,
   // dental, and pharmacy) — do not derive title/description from
   // programs[0], which is an arbitrarily-ordered "first" program and can
@@ -120,13 +120,9 @@ export async function generateMetadata({
   // fallback below only applies to a future country added before curated
   // metadata exists for it, and is intentionally generic (not course-locked)
   // for that reason.
-  const primaryCourse = programs[0]?.course.shortName;
-  const title =
-    country.metaTitle ||
-    `Study in ${country.name} | Universities, Fees & Programs`;
+  const title = `Study in ${country.name} | Universities, Programs & Fees`;
   const description =
-    country.metaDescription ||
-    `Compare universities in ${country.name} by fees, city, and teaching medium, across the streams and programs available there.`;
+    `Compare universities and programs in ${country.name} by tuition, admissions, student life, and visa process. Explore study options across the fields available in this destination.`;
 
   return buildIndexableMetadata({
     title,
@@ -134,10 +130,9 @@ export async function generateMetadata({
     path: `/countries/${country.slug}`,
     keywords: [
       `study in ${country.name}`,
-      primaryCourse ? `${primaryCourse} in ${country.name}` : undefined,
-      primaryCourse ? `${primaryCourse} ${country.name} fees` : undefined,
       `${country.name} universities`,
-      `${country.name} medical university`,
+      `${country.name} programs`,
+      `${country.name} university fees`,
     ].filter(Boolean) as string[],
   });
 }
@@ -160,15 +155,10 @@ export default async function CountryPage({
 
   const path = `/countries/${country.slug}`;
   // Structured-data (CollectionPage) description only — not rendered as
-  // visible copy anywhere on the page. Reuses the same curated
-  // country.metaDescription as generateMetadata() above so this doesn't
-  // reintroduce the primaryProgram.course.shortName course-locking bug for a
-  // country whose published catalog spans multiple streams (see
-  // scripts/update-country-meta.mjs). Same generic fallback shape as
-  // generateMetadata for a country without curated metadata yet.
+  // Structured data must use the same destination-level description as the
+  // public metadata; never pull course-specific country metadata from the DB.
   const countryPageDescription =
-    country.metaDescription ||
-    `Explore ${country.name} as a study destination with universities, fee range, city spread, teaching language, and intake context.`;
+    `Explore ${country.name} as a study destination with universities, programs, fees, admissions, visa process, and student life context.`;
   const countryStructuredData = getCountryStructuredData(country);
 
   const publicPrograms = programs.filter((p) => p.university.type === "Public");
@@ -218,8 +208,6 @@ export default async function CountryPage({
       )
     : null;
 
-  const uniqueCities = [...new Set(programs.map((p) => p.university.city))];
-  const uniqueUniversitySlugs = new Set(programs.map((p) => p.university.slug));
   const uniqueMediums = [
     ...new Set(
       programs.map((p) =>
@@ -239,20 +227,16 @@ export default async function CountryPage({
   const isBrandedHeroFallback = heroImage.url === GENERIC_COUNTRY_HERO_IMAGE_URL;
   const flagCode = getCountryFlagCode(country.slug);
 
-  const editorialCopy = getCountryEditorialCopy({
-    slug: country.slug,
-    summary: country.summary,
-    whyStudentsChooseIt: country.whyStudentsChooseIt,
-  });
-  const countryContent = getCountryContent(country.slug);
+  const editorialCopy = getCountryEditorialCopy(country.name);
+    const countryContent = getCountryContent(country.slug);
+    const visaContent = getCountryVisaContent(country.slug);
   const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
   const heroLeadDisplay = truncateToSentence(editorialCopy.heroLead, 200);
-  const climateSummary = truncateToSentence(country.climate, 40);
   const overviewLeadShort = truncateToSentence(editorialCopy.overviewLead, 260);
 
   const studyFields = buildStudyFields(programs);
   const { universities: popularUniversities, totalCount: totalUniversityCount } =
-    buildPopularUniversities(programs, 6);
+    buildPopularUniversities(programs, 8);
 
   const lifeQuickFacts = (countryContent?.quickFacts ?? []).filter(
     (f) => !["region", "currency", "climate"].includes(f.label.toLowerCase()) && !/regulatory/i.test(f.label)
@@ -303,34 +287,18 @@ export default async function CountryPage({
         countryName={country.name}
         flagCode={flagCode}
         region={country.region}
-        currencyCode={country.currencyCode}
-        climateSummary={climateSummary}
         leadText={heroLeadDisplay}
         heroImage={heroImage}
         isBrandedFallback={isBrandedHeroFallback}
-        stats={{
-          universities: uniqueUniversitySlugs.size,
-          cities: uniqueCities.length,
-          studyFields: studyFields.length,
-        }}
         primaryHref={heroPrimaryHref}
         guideSlot={
-          primaryProgram && curatedLandingPageHref ? (
-            <Suspense
-              fallback={
-                <div
-                  aria-hidden="true"
-                  className="h-12 w-44 rounded-xl border border-white/20 bg-white/5"
-                />
-              }
-            >
-              <CountryHeroGuideLink
-                landingPagePromise={landingPagePromise}
-                href={curatedLandingPageHref}
-                courseLabel={primaryProgram.course.shortName}
-              />
-            </Suspense>
-          ) : undefined
+          <CounsellingCtaButton
+            label="Talk to an advisor"
+            countrySlug={country.slug}
+            courseSlug={primaryProgram?.course.slug}
+            ctaVariant="country_hero"
+            className="inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-primary/15 bg-white px-5 text-sm font-semibold text-primary transition-colors hover:border-primary/30 hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+          />
         }
       />
 
@@ -382,6 +350,10 @@ export default async function CountryPage({
           teachingMediums={uniqueMediums}
           intakeMonths={intakeMonths}
           monthlyCostOfLiving={countryContent?.costOfLiving ?? null}
+        />
+
+        <CountryCurrencySection
+          countryName={country.name}
           addOnsSlot={
             <Suspense fallback={null}>
               <CountryCostAddOns
@@ -397,10 +369,10 @@ export default async function CountryPage({
         ) : null}
 
         {countryContent?.scholarshipInfo ? (
-          <CountryScholarshipsSection countryName={country.name} scholarshipInfo={countryContent.scholarshipInfo} />
+          <CountryScholarshipsSection countryName={country.name} countrySlug={country.slug} scholarshipInfo={countryContent.scholarshipInfo} />
         ) : null}
 
-        <CountryVisaSection countryName={country.name} countrySlug={country.slug} />
+          <CountryVisaSection countryName={country.name} countrySlug={country.slug} visaContent={visaContent} />
 
         <CountryStudentLifeSection countryName={country.name} />
 
@@ -410,12 +382,6 @@ export default async function CountryPage({
           <CountryRelatedBlogPost countrySlug={country.slug} />
         </Suspense>
 
-        <CountryFinalCta
-          countryName={country.name}
-          countrySlug={country.slug}
-          courseSlug={primaryProgram?.course.slug}
-          primaryHref={heroPrimaryHref}
-        />
       </div>
     </>
   );
@@ -638,33 +604,6 @@ function truncateToSentence(text: string, maxLength: number) {
   return `${truncated.slice(0, lastSpace > 0 ? lastSpace : maxLength)}…`;
 }
 
-async function CountryHeroGuideLink({
-  landingPagePromise,
-  href,
-  courseLabel,
-}: {
-  landingPagePromise: Promise<Awaited<ReturnType<typeof getLandingPageBySlug>>>;
-  href: string;
-  courseLabel: string;
-}) {
-  const landingPage = await landingPagePromise;
-
-  if (!landingPage) {
-    return null;
-  }
-
-  return (
-    <Button
-      asChild
-      size="lg"
-      variant="outline"
-      className="!bg-transparent !text-white !border-white/30 hover:!bg-white/20 hover:!text-white hover:!border-white/50"
-    >
-      <Link href={href}>Open {courseLabel} guide</Link>
-    </Button>
-  );
-}
-
 async function CountryCostAddOns({
   currencyCode,
   courseSlug,
@@ -684,7 +623,7 @@ async function CountryCostAddOns({
   return (
     <>
       {exchangeRate ? (
-        <div className="mt-10 max-w-sm">
+        <div className="w-full max-w-lg">
           <DeferredCurrencyConverter
             rate={exchangeRate.rate}
             localCurrency={currencyCode}
@@ -694,7 +633,7 @@ async function CountryCostAddOns({
       ) : null}
 
       {recommendedBudgetGuide ? (
-        <div className="mt-6 max-w-sm rounded-[1.4rem] border border-border/70 bg-[#fff9f2] p-5">
+        <div className="mt-6 w-full max-w-lg rounded-[1.4rem] border border-border/70 bg-[#fff9f2] p-5">
           <p className="mb-3 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#a06030]">
             Budget guide available
           </p>
@@ -719,54 +658,9 @@ function formatUsdRange(minValue: number | null, maxValue: number | null) {
     : `${formatCurrencyUsd(minValue)} – ${formatCurrencyUsd(maxValue)}`;
 }
 
-function getCountryEditorialCopy({
-  slug,
-  summary,
-  whyStudentsChooseIt,
-}: {
-  slug: string;
-  summary: string;
-  whyStudentsChooseIt: string;
-}) {
-  const overrides: Record<string, { heroLead: string; overviewLead: string }> = {
-    russia: {
-      heroLead:
-        "Russia remains one of the most established destinations for Indian students looking for large public medical universities, long-running MBBS infrastructure, and multiple cities with mature study ecosystems.",
-      overviewLead:
-        "The country-level story is about scale: more institutions, more city variation, and clearer differences between legacy public universities and smaller private options.",
-    },
-    vietnam: {
-      heroLead:
-        "Vietnam is a closer-to-home option for students comparing a smaller set of urban medical universities and shorter travel from India.",
-      overviewLead:
-        "The most useful comparison points are city, teaching language support, and whether the full course structure fits your India-return plans.",
-    },
-    georgia: {
-      heroLead:
-        "Georgia attracts students who prioritise English-medium delivery, compact urban study environments, and universities that can feel easier to navigate for first-time international families.",
-      overviewLead:
-        "The country view matters here because teaching language, city experience, and student support can differ noticeably even when headline fees look similar.",
-    },
-    kyrgyzstan: {
-      heroLead:
-        "Kyrgyzstan is usually evaluated for affordability first, but the real differences appear in hostel access, city infrastructure, academic support, and how each university handles international students.",
-      overviewLead:
-        "This destination makes the most sense when you compare beyond the lowest fee and look at whether the city, campus setup, and support model suit the student.",
-    },
-    uzbekistan: {
-      heroLead:
-        "Uzbekistan may still look affordable on paper, but Indian students now need much tighter due diligence after the 1 April 2026 NMC alert and Embassy-reported concerns on standards, training, and agent-led admissions.",
-      overviewLead:
-        "The real question is no longer just fees. It is whether the exact university, branch, teaching medium, clinical training, and internship pathway stay aligned with FMGL 2021 and the India-return licensing route.",
-    },
-  };
-
-  const override = overrides[slug];
-
+function getCountryEditorialCopy(countryName: string) {
   return {
-    heroLead: override?.heroLead ?? summary,
-    overviewLead:
-      override?.overviewLead ??
-      `${whyStudentsChooseIt} Country-level guidance is most useful when it helps you understand the structure of the destination before you move into university-level differences.`,
+    heroLead: `Explore universities and programs in ${countryName}, with practical details on admissions, fees, student life and the trade-offs between cities and institutions.`,
+    overviewLead: `Use this guide to understand ${countryName} as a study destination, then compare the programs and universities that fit your goals, budget and preferred learning environment.`,
   };
 }

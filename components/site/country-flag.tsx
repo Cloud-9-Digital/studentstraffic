@@ -21,7 +21,7 @@ export function CountryFlag({
       style={{ width, height }}
     >
       <Image
-        src={`https://flagcdn.com/w40/${countryCode}.png`}
+        src={`https://flagcdn.com/${countryCode}.svg`}
         alt={alt}
         fill
         sizes={`${width}px`}

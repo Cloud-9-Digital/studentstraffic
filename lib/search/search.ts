@@ -398,7 +398,7 @@ async function searchInMemory(
 async function getCachedSearchDocuments(): Promise<SearchDocument[]> {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("search");
   cacheTag("india-colleges");

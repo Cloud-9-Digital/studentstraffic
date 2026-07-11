@@ -25,11 +25,12 @@ Required env:
 Sync command:
 
 ```bash
-npm run db:seed
 npm run search:sync:typesense
 ```
 
-`npm run db:seed` rebuilds the free Postgres `search_documents` index and, when Typesense admin env is present, also syncs Typesense. `npm run search:sync:typesense` mirrors the current Postgres search index to Typesense without rebuilding Postgres.
+The former `npm run db:seed` command was removed with the historical seed scripts. Search index
+updates now belong to the approved content publish/revalidation workflow.
+`npm run search:sync:typesense` mirrors the current Postgres search index to Typesense when configured.
 
 When Typesense env is present, `/search` tries Typesense first and falls back to Postgres automatically if Typesense is unavailable.
 

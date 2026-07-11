@@ -77,6 +77,15 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   cacheComponents: true,
+  cacheLife: {
+    // Catalog entities change infrequently. Keep them hot for a week and
+    // invalidate their tags explicitly after an editorial/data publish.
+    catalog: {
+      stale: 300,
+      revalidate: 60 * 60 * 24 * 7,
+      expire: 60 * 60 * 24 * 30,
+    },
+  },
   experimental: {
     serverActions: {
       bodySizeLimit: "15mb",

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
+    "dev:fast": "next dev --turbopack --hostname 127.0.0.1",
     "build": "npm run typecheck && next build",
     "start": "next start",
     "mobile:start": "npm --prefix mobile run start",
@@ -17,8 +18,6 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
-    "db:seed": "tsx scripts/seed.ts",
-    "db:import:guide-drafts": "tsx scripts/import-university-guide-drafts.ts",
     "db:import:india-mbbs": "tsx scripts/import-india-mbbs-colleges.ts",
     "db:import:india-medical-programs": "tsx scripts/import-india-medical-programs.ts",
     "db:studio": "drizzle-kit studio",

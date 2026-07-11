@@ -75,15 +75,15 @@ The article should clearly separate:
 
 That is especially important for exams, regulations, rankings, fees, and admissions.
 
-### 2. Write the article inside a publish script
+### 2. Write and publish through the approved content workflow
+
+Historical `scripts/seed*` files were removed on 2026-07-11. Do not create a new seed script for a
+blog post. Prepare the structured blog record through the current publishing workflow, validate the
+metadata and content, then revalidate the cache for the published slug.
 
 Use a script in `scripts/` as the publishing artifact.
 
-Recommended naming:
-
-- `scripts/seed-<slug>.mjs`
-
-The script should define:
+The structured record should define:
 
 - slug
 - title
@@ -93,10 +93,9 @@ The script should define:
 - meta description
 - markdown `content`
 
-This is the pattern already used by existing scripts like:
+The following historical examples are no longer valid publishing instructions:
 
-- [scripts/seed-blogs-batch6-post4.mjs](/Users/bharat/Documents/studentstraffic/scripts/seed-blogs-batch6-post4.mjs)
-- [scripts/seed-neet-ug-2026-cancelled.mjs](/Users/bharat/Documents/studentstraffic/scripts/seed-neet-ug-2026-cancelled.mjs)
+These historical script examples have been removed and must not be recreated.
 
 ### 3. Generate a cover image as a raster file
 
@@ -345,7 +344,7 @@ high detail, professional magazine cover feel, horizontal 16:9, no logos, no wat
 After publishing, run checks like:
 
 ```sh
-node scripts/seed-example-post.mjs
+Use the approved blog publishing workflow and then run the slug-specific cache revalidation command.
 ```
 
 ```sh

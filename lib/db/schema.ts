@@ -201,7 +201,6 @@ export const universities = pgTable(
   },
   (table) => [
     uniqueIndex("universities_slug_idx").on(table.slug),
-    index("universities_country_idx").on(table.countryId),
     index("universities_country_city_idx").on(table.countryId, table.city),
   ]
 );
@@ -256,7 +255,13 @@ export const programOfferings = pgTable(
   },
   (table) => [
     uniqueIndex("program_offerings_slug_idx").on(table.slug),
-    index("program_offerings_university_idx").on(table.universityId),
+    uniqueIndex("program_offerings_university_course_idx").on(
+      table.universityId,
+      table.courseId,
+    ),
+    index("program_offerings_published_university_idx")
+      .on(table.universityId)
+      .where(sql`${table.published} = true`),
     index("program_offerings_course_idx").on(table.courseId),
     index("program_offerings_fee_idx").on(table.annualTuitionUsd),
     index("program_offerings_medium_idx").on(table.medium),
@@ -915,7 +920,6 @@ export const blogPosts = pgTable(
   },
   (table) => [
     uniqueIndex("blog_posts_slug_idx").on(table.slug),
-    index("blog_posts_status_idx").on(table.status),
     index("blog_posts_published_at_idx").on(table.publishedAt),
     index("blog_posts_status_published_at_idx").on(
       table.status,

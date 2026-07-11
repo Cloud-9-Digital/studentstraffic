@@ -146,7 +146,7 @@ function getTypeRank(type: Suggestion["type"]) {
 async function getSuggestionSource(): Promise<SuggestionSource> {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
 

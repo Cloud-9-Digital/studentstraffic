@@ -23,8 +23,8 @@ export function CounsellingDialog({
   triggerSize = "default",
   plainTrigger = false,
   onTriggerClick,
-  title = "Request your admissions counselling call",
-  description = "Leave your number and we will call you with guidance on countries, universities, scholarships, and the next admission step that fits your profile. Parents are welcome on the call.",
+  title = "Speak to a study abroad counsellor",
+  description = "Share your details and we will call you with the next steps.",
   submitLabel,
   ctaVariant = "header_dialog",
   countrySlug,
@@ -88,7 +88,7 @@ export function CounsellingDialog({
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 duration-200" />
         <Dialog.Content
           id={contentId}
-          className="fixed left-1/2 top-1/2 z-50 max-h-[min(92vh,780px)] w-[calc(100%-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl bg-background shadow-dialog outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200 lg:max-w-lg"
+          className="fixed left-1/2 top-1/2 z-50 max-h-[min(92vh,820px)] w-[calc(100%-1.5rem)] max-w-3xl -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-[1.75rem] border border-primary/15 bg-background shadow-dialog outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 duration-200"
           onOpenAutoFocus={(event) => {
             // Radix auto-focuses the first form field on open by default, which
             // arms the form's anti-bot "startedAt" timer before the user has
@@ -98,30 +98,34 @@ export function CounsellingDialog({
             event.preventDefault();
           }}
         >
-          <Dialog.Close className="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-black/6 hover:text-foreground">
+          <Dialog.Close className="absolute right-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-border/70 bg-background/90 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
             <X className="size-4" />
             <span className="sr-only">Close</span>
           </Dialog.Close>
 
-          <div className="p-6 sm:p-7">
-            <div className="mb-6 flex flex-col gap-1.5 border-b border-border pb-5 pr-8">
-              <Dialog.Title className="text-xl font-semibold text-heading">
+          <div className="grid md:grid-cols-[0.78fr_1.22fr]">
+            <div className="bg-gradient-to-br from-primary via-primary to-accent p-5 text-white sm:p-8">
+              <Dialog.Title className="max-w-[18ch] font-display text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl">
                 {title}
               </Dialog.Title>
-              <Dialog.Description className="text-sm leading-relaxed text-muted-foreground">
+              <Dialog.Description className="sr-only">
                 {description}
               </Dialog.Description>
+
             </div>
 
-            <DialogLeadForm
-              key={`${ctaVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}`}
-              ctaVariant={ctaVariant}
-              submitLabel={submitLabel}
-              countrySlug={countrySlug}
-              courseSlug={courseSlug}
-              notes={notes}
-              embedded
-            />
+            <div className="border-t border-border p-6 sm:p-8 md:border-l md:border-t-0">
+              <DialogLeadForm
+                key={`${ctaVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}`}
+                ctaVariant={ctaVariant}
+                submitLabel={submitLabel}
+                countrySlug={countrySlug}
+                courseSlug={courseSlug}
+                notes={notes}
+                embedded
+                stacked
+              />
+            </div>
           </div>
         </Dialog.Content>
       </Dialog.Portal>

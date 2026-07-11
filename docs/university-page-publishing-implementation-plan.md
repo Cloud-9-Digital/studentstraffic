@@ -1,5 +1,9 @@
 # University Page Publishing Implementation Plan
 
+> Historical planning document. The implementation is now governed by
+> [`docs/content-seeding-runbook.md`](./content-seeding-runbook.md). The old draft-import and seed
+> script paths described below are retired; do not recreate them.
+
 This document turns the publishing flow in
 [docs/university-page-publishing-flow.md](/Users/bharat/Documents/studentstraffic/docs/university-page-publishing-flow.md)
 into a concrete implementation plan for this repo.
@@ -41,8 +45,7 @@ These parts already exist and should be reused:
   [lib/db/schema.ts](/Users/bharat/Documents/studentstraffic/lib/db/schema.ts)
 - current catalog readers:
   [lib/data/catalog.ts](/Users/bharat/Documents/studentstraffic/lib/data/catalog.ts)
-- prior draft-import pattern:
-  [scripts/import-university-guide-drafts.ts](/Users/bharat/Documents/studentstraffic/scripts/import-university-guide-drafts.ts)
+- prior draft-import pattern: retired; see `docs/content-seeding-runbook.md`
 
 This means we do not need to invent a brand-new architecture. We need to add an internal publishing workflow around the existing catalog model.
 

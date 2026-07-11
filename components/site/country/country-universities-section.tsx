@@ -38,27 +38,25 @@ export function CountryUniversitiesSection({
   return (
     <div className="deferred-render py-12 md:py-16">
       <SectionKicker icon={<GraduationCap className="size-3.5" />} text="Popular universities" />
-      <SectionHeading>Where students are shortlisting in {countryName}</SectionHeading>
+      <SectionHeading>Universities in {countryName}</SectionHeading>
       <SectionIntro>
-        A first look at {universities.length === totalCount ? "every" : "the most-shortlisted"}{" "}
-        university {countryName} currently has listed. Open a profile for the full picture on fees,
-        hostel life, and programs offered.
+        Compare {universities.length === totalCount ? "all" : "popular"} universities listed in {countryName}. Open a profile to check fees,
+        accommodation and programmes.
       </SectionIntro>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         {universities.map((university, index) => (
           <CountryUniversityCard
             key={university.slug}
             university={university}
             flagCode={flagCode}
-            featureLayout={index === 0}
             imagePriority={index === 0}
           />
         ))}
       </div>
 
-      <div className="mt-6">
-        <Button asChild variant="outline">
+      <div className="mt-8 flex justify-center">
+        <Button asChild className="bg-primary text-white hover:bg-primary/90">
           <Link href={`/universities?country=${countrySlug}`}>
             See all {countryName} universities
             <ArrowRight className="size-4" />
@@ -72,12 +70,10 @@ export function CountryUniversitiesSection({
 function CountryUniversityCard({
   university,
   flagCode,
-  featureLayout,
   imagePriority,
 }: {
   university: CountryUniversityCardData;
   flagCode: string;
-  featureLayout: boolean;
   imagePriority: boolean;
 }) {
   const href = getUniversityHref(university.slug);
@@ -86,8 +82,7 @@ function CountryUniversityCard({
   return (
     <div
       className={cn(
-        "group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md",
-        featureLayout ? "sm:col-span-2 lg:col-span-1" : ""
+        "group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-[transform,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-md"
       )}
     >
       <Link href={href} className="absolute inset-0 z-[1]" aria-label={university.name} />

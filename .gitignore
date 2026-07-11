@@ -25,6 +25,7 @@
 *.pem
 /.indexnow/
 /.tmp/
+/tmp/
 
 # debug
 npm-debug.log*

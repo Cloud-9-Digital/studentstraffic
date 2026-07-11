@@ -190,8 +190,9 @@ export function LeadForm({
           <span className="font-normal text-muted-foreground"> (optional)</span>
         )}
       </Label>
-      <Input
-        id={`${fieldPrefix}-email`}
+          <Input
+            className="h-12"
+            id={`${fieldPrefix}-email`}
         name="email"
         type="email"
         placeholder={hidePlaceholders ? undefined : "you@email.com"}
@@ -211,7 +212,7 @@ export function LeadForm({
           name="userState"
           required
           defaultValue=""
-          className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+          className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
         >
           <option value="" disabled className="text-muted-foreground">Select state</option>
           {INDIAN_STATES.map((s) => (
@@ -272,6 +273,7 @@ export function LeadForm({
             Full name<RequiredMark />
           </Label>
           <Input
+            className="h-12"
             id={`${fieldPrefix}-name`}
             name="fullName"
             placeholder={hidePlaceholders ? undefined : "Student or parent name"}
@@ -286,6 +288,7 @@ export function LeadForm({
             id={`${fieldPrefix}-phone`}
             name="phone"
             required
+            className="h-12"
             placeholder={hidePlaceholders ? "" : undefined}
             lockCountry={lockPhoneToIndia}
             onValidityChange={(valid) => {
@@ -312,7 +315,7 @@ export function LeadForm({
                 name="courseSlug"
                 value={selectedCourseSlug}
                 onChange={(event) => setSelectedCourseSlug(event.target.value)}
-                className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+          className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <option value="" className="text-muted-foreground">
                   Select a course
@@ -334,7 +337,7 @@ export function LeadForm({
                 name="countrySlug"
                 value={selectedCountrySlug}
                 onChange={(event) => setSelectedCountrySlug(event.target.value)}
-                className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+                className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <option value="" className="text-muted-foreground">
                   Select a country
@@ -380,7 +383,7 @@ export function LeadForm({
                   name="neetCategory"
                   required
                   defaultValue=""
-                  className="h-11 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="h-12 w-full min-w-0 appearance-none rounded-xl border border-input bg-transparent px-4 py-2 pr-9 text-sm leading-normal text-foreground shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <option value="" disabled className="text-muted-foreground">Select category</option>
                   {NEET_CATEGORIES.map((c) => (

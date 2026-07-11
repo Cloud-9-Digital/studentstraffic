@@ -69,6 +69,34 @@ export function SectionIntro({ children }: { children: ReactNode }) {
   );
 }
 
+export function CountryImagePlaceholder({
+  label,
+  aspect = "wide",
+}: {
+  label: string;
+  aspect?: "wide" | "portrait";
+}) {
+  return (
+    <div
+      className={cn(
+        "relative flex overflow-hidden rounded-[1.5rem] border border-primary/10 bg-primary text-white",
+        aspect === "portrait" ? "min-h-[360px]" : "min-h-[240px] sm:min-h-[300px]"
+      )}
+    >
+      <div aria-hidden="true" className="hero-grid-lines pointer-events-none absolute inset-0 opacity-30" />
+      <div aria-hidden="true" className="absolute -right-16 -top-16 size-56 rounded-full border border-white/10" />
+      <div aria-hidden="true" className="absolute -bottom-24 -left-10 size-64 rounded-full border border-white/10" />
+      <div className="relative mt-auto flex w-full items-end justify-between gap-4 p-5 sm:p-7">
+        <div>
+          <p className="text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-white/55">Image placeholder</p>
+          <p className="mt-1 max-w-[18ch] font-display text-2xl font-semibold leading-tight text-white sm:text-3xl">{label}</p>
+        </div>
+        <span aria-hidden="true" className="font-display text-5xl leading-none text-white/20">ST</span>
+      </div>
+    </div>
+  );
+}
+
 // A slot used for sections that are honest, general-guidance shells rather
 // than country-specific facts (visa steps, student life). Visually distinct
 // (dashed border) so editors can spot at a glance which sections still need
@@ -91,7 +119,7 @@ export function FactTile({
   value: string;
 }) {
   return (
-    <div className="flex items-start gap-3 rounded-[1.1rem] border border-border/60 bg-[#faf8f4] px-4 py-3.5">
+    <div className="flex items-start gap-3 border-b border-border/60 py-4 last:border-b-0">
       {icon ? (
         <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/8 text-primary">
           {icon}

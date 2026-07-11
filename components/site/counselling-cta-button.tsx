@@ -14,8 +14,8 @@ type CounsellingCtaButtonProps = {
 
 export function CounsellingCtaButton({
   label,
-  title = "Request your admissions counselling call",
-  description = "Leave your number and we will call you with guidance on countries, universities, scholarships, and the next admission step that fits your profile.",
+  title = "Speak to a study abroad counsellor",
+  description = "Share your details and we will call you with the next steps.",
   className = "rounded-full border border-border bg-background px-5 py-3 font-medium text-foreground transition hover:bg-muted",
   countrySlug,
   courseSlug,

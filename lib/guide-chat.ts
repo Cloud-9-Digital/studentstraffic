@@ -91,9 +91,12 @@ export type StudentConversationStarterSummary = {
 
 export type GuideConversationStarterSummary = {
   bookingId: number;
+  peerId: number;
   studentUserId: string;
   studentName: string | null;
   studentEmail: string;
+  universityName: string;
+  universitySlug: string;
   bookingStatus: string;
   conversationId: number | null;
   lastMessageAt: Date | null;

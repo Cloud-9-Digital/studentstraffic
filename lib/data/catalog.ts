@@ -81,14 +81,9 @@ function createEmptyCatalogSnapshot(): CatalogSnapshot {
 
 const globalForCatalogWarnings = globalThis as typeof globalThis & {
   __catalogDbWarningShown?: boolean;
-  __catalogSnapshotCache?: {
-    value: CatalogSnapshot;
-    expiresAt: number;
-  };
   __catalogSnapshotPromise?: Promise<CatalogSnapshot>;
 };
 
-const catalogSnapshotTtlMs = 12 * 60 * 60 * 1000;
 const buildCatalogSnapshotPath = path.join(
   process.cwd(),
   ".next",
@@ -494,7 +489,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
 export async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("countries");
   cacheTag("courses");
@@ -502,29 +497,13 @@ export async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
   cacheTag("program-offerings");
   cacheTag("india-colleges");
 
-  const now = Date.now();
-  const cachedSnapshot = globalForCatalogWarnings.__catalogSnapshotCache;
-
-  if (cachedSnapshot && cachedSnapshot.expiresAt > now) {
-    return cachedSnapshot.value;
-  }
-
   if (!globalForCatalogWarnings.__catalogSnapshotPromise) {
     globalForCatalogWarnings.__catalogSnapshotPromise = (async () => {
       const dbSnapshot = shouldUseBuildCatalogSnapshot()
         ? ((await readBuildCatalogSnapshotFromDisk()) ?? (await createBuildCatalogSnapshot()))
         : await readCatalogFromDatabase();
 
-      if (dbSnapshot) {
-        // Only cache when we got real data — don't freeze an empty fallback in-memory for 12h
-        globalForCatalogWarnings.__catalogSnapshotCache = {
-          value: dbSnapshot,
-          expiresAt: Date.now() + catalogSnapshotTtlMs,
-        };
-        return dbSnapshot;
-      }
-
-      return createEmptyCatalogSnapshot();
+      return dbSnapshot ?? createEmptyCatalogSnapshot();
     })().finally(() => {
       globalForCatalogWarnings.__catalogSnapshotPromise = undefined;
     });
@@ -541,7 +520,7 @@ export async function getCountries() {
 export async function getCountryBySlug(slug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("countries");
 
@@ -567,7 +546,7 @@ export async function getUniversities() {
 export async function getUniversityBySlug(slug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("universities");
   cacheTag(`university:${slug}`);
@@ -592,24 +571,17 @@ export async function getPublishedBlogPostMetadata() {
 }
 
 // ── Direct, blog-tagged readers ─────────────────────────────────────────────
-// The blog detail page must never go through `getCatalogSnapshot()` above:
-// that snapshot is tagged catalog/countries/courses/universities/
-// program-offerings/india-colleges (no "blog" tag) and is additionally frozen
-// behind a hand-rolled 12h in-memory TTL cache that `revalidateTag`/
-// `revalidatePath` cannot invalidate. A freshly published blog post would
-// then 404 on /blog/[slug] until that in-memory cache expired or the app
-// restarted, even though /blog and /blog/category/[slug] (which query
-// blogPosts directly, tagged "blog") already show it. These readers query
-// blogPosts directly. The listing reader below is tagged "blog" and the
-// detail reader uses a per-slug tag, so a publish can invalidate the index and
-// only the affected post instead of every cached post page.
+// The blog detail page must not go through `getCatalogSnapshot()` above:
+// blog content has its own cache tag and the detail reader uses a per-slug tag,
+// so a publish can invalidate the index and only the affected post instead of
+// every cached catalog page.
 
 export async function getAllPublishedBlogPostsMetadata(): Promise<
   BlogPostSearchMetadata[]
 > {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("days");
   cacheTag("blog");
 
   const db = getDb();
@@ -655,7 +627,7 @@ export async function getPublishedBlogPostBySlug(
 ): Promise<BlogPostSearchMetadata | null> {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("days");
   // Do not attach the broad "blog" tag here. That tag belongs to the index;
   // individual posts must be invalidated by slug to avoid flushing every post
   // page when one post is published or edited.
@@ -720,7 +692,7 @@ export async function getLandingPageSlugs() {
 async function getFinderProgramsBase() {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
 
@@ -1269,7 +1241,7 @@ function sortFinderPrograms(programs: FinderProgram[], sort: FinderSort) {
 export async function listFinderPrograms(filters: FinderFilters) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
 
@@ -1348,7 +1320,7 @@ export async function getFinderProgramsPage(
 ): Promise<FinderProgramsPage> {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
 
@@ -1406,7 +1378,7 @@ export async function queryFinderCardProgramsPage(
 ): Promise<FinderCardProgramsPage> {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
 
@@ -1436,7 +1408,7 @@ export async function queryFinderCardProgramsPage(
 export async function getFinderOptions(): Promise<FinderOptions> {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
 
@@ -1519,7 +1491,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
 export async function getFeaturedPrograms(limit = 4) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
   cacheTag("program-offerings");
@@ -1533,7 +1505,7 @@ export async function getFeaturedPrograms(limit = 4) {
 export async function getProgramsForCountry(countrySlug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
   cacheTag("program-offerings");
@@ -1558,7 +1530,7 @@ export async function getProgramsForCountry(countrySlug: string) {
 export async function getProgramsForCourse(courseSlug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
   cacheTag("program-offerings");
@@ -1583,7 +1555,7 @@ export async function getProgramsForCourse(courseSlug: string) {
 export async function getProgramsForUniversity(universitySlug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
   cacheTag("program-offerings");
@@ -1610,7 +1582,7 @@ export async function getProgramsForUniversity(universitySlug: string) {
 export async function getProgramBySlug(programSlug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
   cacheTag("program-offerings");
@@ -1639,7 +1611,7 @@ export async function getProgramBySlug(programSlug: string) {
 export async function getProgramsForCity(citySlug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
   cacheTag("program-offerings");

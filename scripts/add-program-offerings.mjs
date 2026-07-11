@@ -85,6 +85,36 @@ function validateEntry(entry, index) {
   return true;
 }
 
+async function revalidateCatalogCache() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const secret = process.env.REVALIDATE_SECRET;
+
+  if (!siteUrl || !secret) {
+    console.warn(
+      "Skipping cache revalidation: NEXT_PUBLIC_SITE_URL or REVALIDATE_SECRET is not configured.",
+    );
+    return;
+  }
+
+  const endpoint = new URL("/api/revalidate?scope=catalog", siteUrl);
+  for (const tag of ["catalog", "universities", "program-offerings"]) {
+    endpoint.searchParams.append("tag", tag);
+  }
+
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${secret}` },
+  });
+
+  if (!response.ok) {
+    throw new Error(
+      `Catalog cache revalidation failed: ${response.status} ${await response.text()}`,
+    );
+  }
+
+  console.log("Revalidated catalog, university, and program-offering caches.");
+}
+
 async function main() {
   const { file } = parseArgs(process.argv.slice(2));
   if (!file) {
@@ -107,8 +137,9 @@ async function main() {
 
     for (const [index, entry] of entries.entries()) {
       if (!validateEntry(entry, index)) {
-        skipped += 1;
-        continue;
+        throw new Error(
+          `Input validation failed for entry ${index + 1}. No program offerings were published from this batch.`,
+        );
       }
 
       const uniResult = await client.query(
@@ -191,6 +222,7 @@ async function main() {
       published += 1;
     }
 
+    await revalidateCatalogCache();
     console.log(`\nDone. Published/updated: ${published}. Skipped: ${skipped}.`);
   } finally {
     client.release();

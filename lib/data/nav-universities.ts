@@ -1,12 +1,11 @@
 import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
-import { asc, desc, eq, sql } from "drizzle-orm";
+import { asc, desc, eq } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import {
   countries as countriesTable,
-  programOfferings as programOfferingsTable,
   universities as universitiesTable,
 } from "@/lib/db/schema";
 import { getUniversityHref } from "@/lib/routes";
@@ -23,8 +22,6 @@ export type NavUniversityCountryGroup = {
   countryName: string;
   href: string;
   universities: NavUniversity[];
-  /** Count of ALL published universities in this country, not just the ones included above. */
-  totalPublishedCount: number;
 };
 
 // How many universities to surface per country before "View all in <country>"
@@ -40,9 +37,8 @@ const MAX_UNIVERSITIES_PER_COUNTRY = 5;
  * group here - this used to filter on `featured = true` only, which left
  * countries with zero featured rows (Vietnam, Uzbekistan, Italy, Malta)
  * rendering an empty section in the menu. The fallback ranking below
- * (featured first, then most programs offered, then name) means a country
- * with no featured picks still surfaces its most substantial universities
- * instead of nothing.
+ * (featured first, then name) means a country with no featured picks still
+ * surfaces useful universities instead of nothing.
  *
  * No hard cap on the number of countries returned - the mega menu is
  * expected to hold up as the catalog grows to many more countries, so
@@ -50,15 +46,12 @@ const MAX_UNIVERSITIES_PER_COUNTRY = 5;
  */
 export async function getNavUniversitiesByCountry(): Promise<NavUniversityCountryGroup[]> {
   "use cache";
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("countries");
   cacheTag("universities");
-  cacheTag("program-offerings");
 
   const db = getDb();
   if (!db) return [];
-
-  const programCount = sql<number>`count(${programOfferingsTable.id}) filter (where ${programOfferingsTable.published} = true)::int`;
 
   const rows = await db
     .select({
@@ -68,25 +61,13 @@ export async function getNavUniversitiesByCountry(): Promise<NavUniversityCountr
       universityName: universitiesTable.name,
       universityCity: universitiesTable.city,
       featured: universitiesTable.featured,
-      programCount,
     })
     .from(universitiesTable)
     .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
-    .leftJoin(programOfferingsTable, eq(programOfferingsTable.universityId, universitiesTable.id))
     .where(eq(universitiesTable.published, true))
-    .groupBy(
-      countriesTable.slug,
-      countriesTable.name,
-      universitiesTable.id,
-      universitiesTable.slug,
-      universitiesTable.name,
-      universitiesTable.city,
-      universitiesTable.featured,
-    )
     .orderBy(
       asc(countriesTable.name),
       desc(universitiesTable.featured),
-      desc(programCount),
       asc(universitiesTable.name),
     );
 
@@ -102,7 +83,6 @@ export async function getNavUniversitiesByCountry(): Promise<NavUniversityCountr
 
     const existing = groupsByCountry.get(row.countrySlug);
     if (existing) {
-      existing.totalPublishedCount += 1;
       if (existing.universities.length < MAX_UNIVERSITIES_PER_COUNTRY) {
         existing.universities.push(navUniversity);
       }
@@ -112,14 +92,11 @@ export async function getNavUniversitiesByCountry(): Promise<NavUniversityCountr
         countryName: row.countryName,
         href: `/universities?country=${row.countrySlug}`,
         universities: [navUniversity],
-        totalPublishedCount: 1,
       });
     }
   }
 
   return Array.from(groupsByCountry.values()).sort(
-    (left, right) =>
-      right.totalPublishedCount - left.totalPublishedCount ||
-      left.countryName.localeCompare(right.countryName),
+    (left, right) => left.countryName.localeCompare(right.countryName),
   );
 }

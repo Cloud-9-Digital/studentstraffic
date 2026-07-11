@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight, Check } from "lucide-react";
 
 import { ThankYouAnalytics } from "@/components/site/thank-you-analytics";
 import { buildNoIndexMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildNoIndexMetadata(
-  {
-    title: "Thank You",
-    description: "Your Students Traffic enquiry has been received.",
-  },
-  {
-    canonicalPath: "/thank-you",
-  }
+  { title: "Thank You", description: "Your Students Traffic enquiry has been received." },
+  { canonicalPath: "/thank-you" },
 );
 
 export default async function ThankYouPage({
@@ -21,214 +17,54 @@ export default async function ThankYouPage({
 }) {
   const params = await searchParams;
   const source = Array.isArray(params.source) ? params.source[0] : params.source;
-  const interest = Array.isArray(params.interest)
-    ? params.interest[0]
-    : params.interest;
+  const interest = Array.isArray(params.interest) ? params.interest[0] : params.interest;
   const isNeetPredictor = source === "/neet-college-predictor";
-  const steps = isNeetPredictor ? predictorSteps : defaultSteps;
+  const heading = isNeetPredictor
+    ? "Your NEET prediction request has been received."
+    : interest
+      ? `Your enquiry about ${interest} has been received.`
+      : "Your request has been received.";
 
   return (
-    <>
-      <style>{`
-        @keyframes ring-pop {
-          0%   { transform: scale(0.55); opacity: 0; }
-          70%  { transform: scale(1.06); opacity: 1; }
-          100% { transform: scale(1);    opacity: 1; }
-        }
-        @keyframes check-draw {
-          from { stroke-dashoffset: 60; }
-          to   { stroke-dashoffset: 0; }
-        }
-        @keyframes fade-up {
-          from { opacity: 0; transform: translateY(22px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fade-in {
-          from { opacity: 0; }
-          to   { opacity: 1; }
-        }
-        @keyframes step-in {
-          from { opacity: 0; transform: translateX(-14px); }
-          to   { opacity: 1; transform: translateX(0); }
-        }
-        .ty-ring  { animation: ring-pop  0.55s cubic-bezier(0.34,1.56,0.64,1) 0.15s both; }
-        .ty-check { stroke-dasharray: 60; stroke-dashoffset: 60;
-                    animation: check-draw 0.45s ease-out 0.65s both; }
-        .ty-label { animation: fade-in   0.4s ease-out 0.35s both; }
-        .ty-h1    { animation: fade-up   0.65s ease-out 0.5s  both; }
-        .ty-sub   { animation: fade-up   0.65s ease-out 0.7s  both; }
-        .ty-btns  { animation: fade-up   0.55s ease-out 0.88s both; }
-        .ty-steps { animation: fade-up   0.55s ease-out 0.15s both; }
-        .ty-s1    { animation: step-in   0.45s ease-out 0.35s both; }
-        .ty-s2    { animation: step-in   0.45s ease-out 0.55s both; }
-        .ty-s3    { animation: step-in   0.45s ease-out 0.75s both; }
-      `}</style>
-
-      {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <div className="relative overflow-hidden bg-surface-dark">
-        {/* Warm glow from top */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 90% 55% at 50% -5%, rgba(240,138,75,0.14) 0%, transparent 70%)",
-          }}
-        />
-        {/* Subtle grid texture */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)",
-            backgroundSize: "32px 32px",
-          }}
-        />
-
-        <div className="container-shell relative z-10 py-24 text-center md:py-32 lg:py-36">
-          {/* Animated ring + checkmark */}
-          <div className="ty-ring mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-accent/25 bg-accent/10">
-            <svg
-              viewBox="0 0 40 40"
-              className="h-10 w-10"
-              fill="none"
-              aria-hidden
-            >
-              <path
-                className="ty-check"
-                d="M10 20.5 L17 27.5 L30 13.5"
-                stroke="#f08a4b"
-                strokeWidth="2.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-
-          {/* Eyebrow */}
-          <p className="ty-label mb-4 font-sans text-xs font-semibold uppercase tracking-[0.18em] text-accent/75">
-            Enquiry received
-          </p>
-
-          {/* Headline */}
-          <h1 className="ty-h1 font-display mx-auto max-w-2xl text-5xl leading-[1.08] tracking-tight text-white md:text-6xl lg:text-7xl">
-            You&apos;re in good hands.
-          </h1>
-
-          <ThankYouAnalytics source={source} interest={interest} />
-          <p className="ty-sub mx-auto mt-5 max-w-md text-lg leading-relaxed text-white/55">
-            {isNeetPredictor
-              ? "Your NEET college prediction request is in. Predicted colleges will be sent to your email."
-              : interest
-                ? `Our counsellor will call you about ${interest} — usually within one business day.`
-                : "Our counsellor will call you — usually within one business day."}
-          </p>
-
-          {/* Actions */}
-          <div className="ty-btns mt-10 flex items-center justify-center">
-            <Link
-              href="/universities"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white! transition-all duration-150 hover:scale-[1.02] hover:bg-accent-strong active:scale-[0.98]"
-            >
-              Explore colleges
-              <svg
-                className="h-4 w-4"
-                viewBox="0 0 16 16"
-                fill="none"
-                aria-hidden
-              >
-                <path
-                  d="M3 8h10M9 4l4 4-4 4"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* ── What happens next ──────────────────────────────────────────────── */}
-      <section className="section-space bg-white">
-        <div className="container-shell">
-          <div className="mx-auto max-w-2xl">
-            <p className="ty-steps mb-10 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              What happens next
-            </p>
-
+    <main className="min-h-screen bg-muted/30">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-accent">
+        <div className="container-shell relative py-12 md:py-20 lg:py-24">
+          <div className="mx-auto max-w-3xl text-center">
             <div>
-              {steps.map((step, i) => {
-                const animClass = `ty-s${i + 1}` as "ty-s1" | "ty-s2" | "ty-s3";
-                return (
-                  <div
-                    key={step.title}
-                    className={`${animClass} relative flex gap-6 pb-10`}
-                  >
-                    {/* Connector line */}
-                    {i < steps.length - 1 && (
-                      <div
-                        aria-hidden
-                        className="absolute bottom-0 left-[19px] top-10 w-px bg-border"
-                      />
-                    )}
+              <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-accent text-white shadow-lg shadow-black/10">
+                <Check className="size-7" strokeWidth={2.5} />
+              </div>
+              <p className="mt-7 text-xs font-semibold uppercase tracking-[0.2em] text-white/60">Enquiry received</p>
+              <h1 className="mx-auto mt-4 max-w-[17ch] font-display text-5xl font-semibold leading-[1.04] tracking-tight text-white md:text-6xl lg:text-7xl">
+                {heading}
+              </h1>
 
-                    {/* Step number */}
-                    <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-accent/20 bg-accent/8 text-sm font-semibold text-accent">
-                      {i + 1}
-                    </div>
-
-                    {/* Content */}
-                    <div className="pt-2">
-                      <h3 className="mb-1 text-base font-semibold text-primary">
-                        {step.title}
-                      </h3>
-                      <p className="text-sm leading-relaxed text-muted-foreground">
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
+              <ThankYouAnalytics source={source} interest={interest} />
+              <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-white/70 md:text-lg">
+                {isNeetPredictor
+                  ? "Your NEET college prediction request is in. We will send the results to your email."
+                  : interest
+                    ? `Our counsellor will call you about ${interest}.`
+                    : "Our counsellor will call you about your enquiry."}
+              </p>
             </div>
           </div>
         </div>
       </section>
-    </>
+
+      <section className="container-shell py-10 md:py-14">
+        <div className="flex flex-col justify-between gap-5 rounded-[1.5rem] border border-border bg-background p-6 sm:flex-row sm:items-center sm:p-8">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary/60">While you wait</p>
+            <h2 className="mt-2 font-display text-2xl font-semibold tracking-tight text-heading">Explore universities and programmes.</h2>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">Compare options before your counselling call.</p>
+          </div>
+          <Link href="/universities" className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-strong">
+            Explore universities
+            <ArrowRight className="size-4" />
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }
-
-/* ── Data ──────────────────────────────────────────────────────────────────── */
-
-const defaultSteps = [
-  {
-    title: "Keep an eye on your phone",
-    description:
-      "If we need to follow up on your request, we'll use the contact details you just shared.",
-  },
-  {
-    title: "Have your details ready",
-    description:
-      "Your NEET score, PCB percentage, passport status, and budget range — the counsellor will ask for these to give you a specific recommendation.",
-  },
-  {
-    title: "Keep reading",
-    description:
-      "Use the time to go through the university and country guides — the more you know, the faster the call goes.",
-  },
-] as const;
-
-const predictorSteps = [
-  {
-    title: "Your request has been received",
-    description:
-      "Your NEET college predictor request has been successfully submitted.",
-  },
-  {
-    title: "Predicted colleges will be sent by email",
-    description:
-      "Your likely college options will be shared on the email address from your submission.",
-  },
-] as const;

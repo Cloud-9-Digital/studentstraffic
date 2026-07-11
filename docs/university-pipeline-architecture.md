@@ -1,5 +1,17 @@
 # University & Program Data Pipeline — Reference
 
+> Historical `scripts/seed*` files were removed on 2026-07-11. Any older seed-script references in
+> this historical reference are obsolete. Use [`docs/content-seeding-runbook.md`](./content-seeding-runbook.md)
+> and the generic publisher/importer tools only. Never recreate a country-specific seeder.
+
+> Public page composition and AI writing limits are defined in
+> [`docs/university-page-architecture.md`](./university-page-architecture.md). This document
+> covers data mechanics and publishing flow; it does not replace the page architecture contract.
+>
+> The canonical content research and seeding workflow is
+> [`docs/content-seeding-runbook.md`](./content-seeding-runbook.md). Historical country-specific
+> seed scripts are not templates and should not be used for new content.
+
 Read this before touching university/program data (schema, seed scripts, or the
 research-and-publish pipeline) instead of re-deriving it from source each time.
 Keep it current — see "Keeping this doc current" at the bottom.
@@ -155,3 +167,22 @@ Update this file whenever you: change the schema for these tables, change the pi
 flow or file locations, fix the `duration_years` type issue, or establish a new editorial rule that
 changes what gets published vs. held. Treat stale info here as worse than no info — fix it in the
 same change that makes it stale.
+
+## Program offering integrity (2026-07-11)
+
+`program_offerings` has one canonical row per `(university_id, course_id)` pair. Migration
+`0058_program_offering_integrity` removed older duplicate rows while retaining the published/latest
+record, then added a unique database index and a partial index for published offerings by university.
+Batch imports must preserve this invariant by upserting the natural pair instead of creating a second
+draft/live row.
+
+Migration `0059_remove_orphaned_unpublished_universities` also removed four unpublished staging
+universities that were not attached to the research queue; published universities remain untouched.
+
+`scripts/add-program-offerings.mjs` revalidates the catalog, university, and program-offering cache
+tags after a successful direct database batch, so newly added programs become visible without waiting
+for the long catalog cache profile to expire.
+
+Migration `0061_remove_duplicate_legacy_content_columns` removed the unused duplicate medical-only
+database columns left behind by the stream-neutral schema migration. Research JSON/source keys may
+still use the historical names because the publisher maps them into the neutral database columns.
