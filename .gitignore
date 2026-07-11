@@ -43,3 +43,6 @@ yarn-error.log*
 next-env.d.ts
 public/guides/raster/
 .env*.local
+
+# Android Studio / IntelliJ project metadata
+mobile/app/.idea/
