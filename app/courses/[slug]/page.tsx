@@ -24,6 +24,7 @@ import {
 import { getBudgetGuidesForCourse } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
+  getArticleStructuredData,
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
   getCourseStructuredData,
@@ -134,6 +135,13 @@ export default async function CoursePage({
       description: course.metaDescription,
       aboutIds: [courseStructuredData["@id"]],
       mainEntityId: programs.length ? getItemListStructuredDataId(path) : undefined,
+      datePublished: catalogReviewedAt,
+      dateModified: catalogReviewedAt,
+    }),
+    getArticleStructuredData({
+      path,
+      headline: `${course.shortName} abroad`,
+      description: course.metaDescription,
       datePublished: catalogReviewedAt,
       dateModified: catalogReviewedAt,
     }),

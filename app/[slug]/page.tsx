@@ -36,14 +36,17 @@ import {
   getUniversityInitials,
 } from "@/lib/university-media";
 import {
+  getArticleStructuredData,
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
   getCountryStructuredData,
   getCourseStructuredData,
   getFaqStructuredData,
   getItemListStructuredDataId,
+  getProgramOfferingStructuredData,
   getProgramItemListStructuredData,
   getStructuredDataGraph,
+  getWebPageStructuredData,
   getUniversityStructuredData,
 } from "@/lib/structured-data";
 import { buildIndexableMetadata } from "@/lib/metadata";
@@ -67,7 +70,6 @@ import {
 import {
   getCountryHref,
   getUniversityHref,
-  getUniversityProgramHref,
 } from "@/lib/routes";
 import { getCountryContent } from "@/lib/data/country-content";
 import { getAuthor } from "@/lib/authors";
@@ -1293,6 +1295,7 @@ async function ProgramPageRoute({
       ...university.recognitionLinks.map((item) => item.url),
     ].filter(Boolean))] as string[],
   });
+  const programStructuredData = getProgramOfferingStructuredData(program);
   const structuredDataItems = [
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
@@ -1303,6 +1306,28 @@ async function ProgramPageRoute({
     countryStructuredData,
     courseStructuredData,
     universityStructuredData,
+    getWebPageStructuredData({
+      path,
+      name: `${program.course.shortName} at ${university.name}`,
+      description: `${program.course.shortName} fees, admissions, eligibility, academics and recognition at ${university.name}, ${university.city}.`,
+      aboutIds: [
+        countryStructuredData["@id"],
+        universityStructuredData["@id"],
+        courseStructuredData["@id"],
+      ],
+      mainEntityId: programStructuredData["@id"],
+      datePublished: pageReviewedAt,
+      dateModified: pageReviewedAt,
+    }),
+    getArticleStructuredData({
+      path,
+      headline: `${program.course.shortName} at ${university.name}`,
+      description: `${program.course.shortName} fees, admissions, eligibility, academics and recognition at ${university.name}, ${university.city}.`,
+      datePublished: pageReviewedAt,
+      dateModified: pageReviewedAt,
+      image: coverImage?.url,
+    }),
+    programStructuredData,
     university.faq.length ? getFaqStructuredData(university.faq, path) : null,
   ];
 

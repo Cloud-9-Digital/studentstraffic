@@ -38,6 +38,7 @@ import { getRelatedContent } from "@/lib/data/related-content";
 import { RelatedContentSection } from "@/components/site/related-content-section";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
+  getArticleStructuredData,
   getBreadcrumbStructuredData,
   getCountryStructuredData,
   getCourseStructuredData,
@@ -274,6 +275,14 @@ export default async function UniversityDetailPage({
       mainEntityId: universityStructuredData["@id"],
       datePublished: pageReviewedAt,
       dateModified: pageReviewedAt,
+    }),
+    getArticleStructuredData({
+      path,
+      headline: university.name,
+      description: university.summary,
+      datePublished: pageReviewedAt,
+      dateModified: pageReviewedAt,
+      image: coverImage?.url,
     }),
     universityStructuredData,
     programs.length

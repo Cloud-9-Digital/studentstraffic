@@ -42,6 +42,7 @@ import { blogPosts } from "@/lib/db/schema";
 import { getRecommendedBudgetGuideForCourse } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
+  getArticleStructuredData,
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
   getCountryStructuredData,
@@ -268,6 +269,14 @@ export default async function CountryPage({
       mainEntityId: programs.length ? getItemListStructuredDataId(path) : undefined,
       datePublished: catalogReviewedAt,
       dateModified: catalogReviewedAt,
+    }),
+    getArticleStructuredData({
+      path,
+      headline: `Study in ${country.name}`,
+      description: countryPageDescription,
+      datePublished: catalogReviewedAt,
+      dateModified: catalogReviewedAt,
+      image: heroImage.url,
     }),
     programs.length
       ? getProgramItemListStructuredData({

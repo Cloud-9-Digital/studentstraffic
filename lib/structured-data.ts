@@ -17,9 +17,10 @@ import {
   getCountryHref,
   getCourseHref,
   getUniversityHref,
+  getUniversityProgramHref,
 } from "@/lib/routes";
 import { getIndexableUniversityImageUrls } from "@/lib/university-media";
-import { formatProgramMedium, hasPublishedUsdAmount } from "@/lib/utils";
+import { hasPublishedUsdAmount } from "@/lib/utils";
 
 type BreadcrumbItem = {
   name: string;
@@ -66,19 +67,27 @@ function getAbsoluteMediaUrls(urls: Array<string | undefined>) {
 
 const contentAuthorPath = `/author/${contentAuthorSlug}`;
 
-function getProgramCourseStructuredData(program: FinderProgram) {
-  const universityUrl = absoluteUrl(getUniversityHref(program.university.slug));
+export function getProgramStructuredDataId(programSlug: string) {
+  return withFragment(getUniversityProgramHref(programSlug), "program");
+}
+
+export function getProgramOfferingStructuredData(program: FinderProgram) {
+  const programPath = getUniversityProgramHref(program.offering.slug);
+  const programUrl = absoluteUrl(programPath);
+  const universityId = getUniversityStructuredDataId(program.university.slug);
   const hasPublishedFee = hasPublishedUsdAmount(program.offering.annualTuitionUsd);
 
   return {
     "@type": "Course",
+    "@id": getProgramStructuredDataId(program.offering.slug),
     name: program.offering.title,
     description: `${program.course.shortName} at ${program.university.name} in ${program.university.city}, ${program.country.name}.`,
-    url: universityUrl,
+    url: programUrl,
     provider: {
       "@type": "CollegeOrUniversity",
+      "@id": universityId,
       name: program.university.name,
-      url: universityUrl,
+      url: absoluteUrl(getUniversityHref(program.university.slug)),
       address: {
         "@type": "PostalAddress",
         addressLocality: program.university.city,
@@ -86,25 +95,67 @@ function getProgramCourseStructuredData(program: FinderProgram) {
       },
     },
     courseCode: program.course.shortName,
-    courseMode: formatProgramMedium(
-      program.offering.medium,
-      program.country.slug,
-    ),
+    courseMode: "Onsite",
     educationalCredentialAwarded: program.course.shortName,
     inLanguage: "en",
     timeRequired: Number.isInteger(program.offering.durationYears)
       ? `P${program.offering.durationYears}Y`
       : `P${Math.round(program.offering.durationYears * 12)}M`,
+    hasCourseInstance: {
+      "@type": "CourseInstance",
+      courseMode: "Onsite",
+      courseWorkload: Number.isInteger(program.offering.durationYears)
+        ? `P${program.offering.durationYears}Y`
+        : `P${Math.round(program.offering.durationYears * 12)}M`,
+    },
     offers: hasPublishedFee
       ? {
           "@type": "Offer",
-          url: universityUrl,
+          url: programUrl,
           priceCurrency: "USD",
           price: program.offering.annualTuitionUsd,
-          category: program.course.shortName,
+          category: "Paid",
         }
       : undefined,
+    mainEntityOfPage: {
+      "@id": getWebPageStructuredDataId(programPath),
+    },
   };
+}
+
+export function getArticleStructuredData(input: {
+  path: string;
+  headline: string;
+  description: string;
+  datePublished: string;
+  dateModified: string;
+  image?: string;
+}) {
+  return {
+    "@type": "Article",
+    "@id": withFragment(input.path, "article"),
+    mainEntityOfPage: {
+      "@id": getWebPageStructuredDataId(input.path),
+    },
+    headline: input.headline,
+    description: input.description,
+    datePublished: input.datePublished,
+    dateModified: input.dateModified,
+    author: {
+      "@id": getAuthorStructuredDataId(),
+    },
+    publisher: {
+      "@id": getOrganizationStructuredDataId(),
+    },
+    image: {
+      "@type": "ImageObject",
+      url: input.image ?? getOgImageUrl(input.path),
+    },
+  };
+}
+
+function getProgramCourseStructuredData(program: FinderProgram) {
+  return getProgramOfferingStructuredData(program);
 }
 
 export function getOrganizationStructuredDataId() {
