@@ -14,7 +14,11 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.Person
 
 object IncomingCallNotification {
-  private const val CHANNEL_ID = "incoming_calls"
+  // Android preserves user changes to a notification channel across app updates.
+  // Earlier builds created `incoming_calls`, which some devices have since muted.
+  // A new channel lets the app request call-grade alerts again without overriding
+  // a user's explicit notification preference.
+  private const val CHANNEL_ID = "incoming_calls_v2"
 
   fun show(context: Context, callId: String, callerDisplayName: String, universityName: String) {
     createChannel(context)

@@ -158,11 +158,29 @@ function withNativeIncomingCallFiles(config) {
     // react-native-callkeep emits answer/reject through an in-process event.
     // When React Native is cold, launch the app with a persisted native action
     // as well, so accepting a system call always joins the real session.
-    const voiceConnectionPath = path.join(
+    const callKeepSourceDir = path.join(
       config.modRequest.projectRoot,
       "node_modules", "react-native-callkeep", "android", "src", "main",
-      "java", "io", "wazo", "callkeep", "VoiceConnection.java",
+      "java", "io", "wazo", "callkeep",
     );
+    const voiceConnectionServicePath = path.join(callKeepSourceDir, "VoiceConnectionService.java");
+    if (fs.existsSync(voiceConnectionServicePath)) {
+      let source = fs.readFileSync(voiceConnectionServicePath, "utf8");
+      // CallKeep's ConnectionService can be launched by Telecom while the app
+      // process is cold. Its stock foreground-service code assumes the RN
+      // module singleton already exists and dereferences it, crashing before
+      // the phone UI can ring. The actual active-call FGS starts from JS after
+      // the user answers, so it is safe (and necessary) to defer this here.
+      if (!source.includes("STUDENTSTRAFFIC_COLD_START_GUARD")) {
+        source = source.replace(
+          '        Log.d(TAG, "[VoiceConnectionService] startForegroundService");',
+          '        // STUDENTSTRAFFIC_COLD_START_GUARD\\n        if (RNCallKeepModule.instance == null) {\\n            Log.d(TAG, "[VoiceConnectionService] Skipping RN foreground service during cold start");\\n            return;\\n        }\\n        Log.d(TAG, "[VoiceConnectionService] startForegroundService");',
+        );
+        fs.writeFileSync(voiceConnectionServicePath, source);
+      }
+    }
+
+    const voiceConnectionPath = path.join(callKeepSourceDir, "VoiceConnection.java");
     if (fs.existsSync(voiceConnectionPath)) {
       let source = fs.readFileSync(voiceConnectionPath, "utf8");
       if (!source.includes("STUDENTSTRAFFIC_CALLKEEP_HANDOFF")) {
@@ -171,15 +189,14 @@ function withNativeIncomingCallFiles(config) {
           "sendCallRequestToActivity(ACTION_AUDIO_SESSION, handle);\n        launchStudentsTrafficCallActivity(\"accept\");\n        Log.d(TAG, \"[VoiceConnection] onAnswer executed\");",
         );
         source = source.replace(
-          "sendCallRequestToActivity(ACTION_END_CALL, handle);\n        Log.d(TAG, \"[VoiceConnection] onReject executed\");",
-          "sendCallRequestToActivity(ACTION_END_CALL, handle);\n        launchStudentsTrafficCallActivity(\"decline\");\n        Log.d(TAG, \"[VoiceConnection] onReject executed\");",
-        );
-        source = source.replace(
           "    /*\n     * Send call request to the RNCallKeepModule",
           "    // STUDENTSTRAFFIC_CALLKEEP_HANDOFF\n    private void launchStudentsTrafficCallActivity(String action) {\n        Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage(context.getPackageName());\n        if (launchIntent == null) return;\n        launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);\n        launchIntent.putExtra(context.getPackageName() + \".CALL_ID\", handle.get(EXTRA_CALL_UUID));\n        launchIntent.putExtra(context.getPackageName() + \".CALLER_NAME\", handle.get(EXTRA_CALLER_NAME));\n        launchIntent.putExtra(context.getPackageName() + \".CALL_ACTION\", action);\n        context.startActivity(launchIntent);\n    }\n\n    /*\n     * Send call request to the RNCallKeepModule",
         );
-        fs.writeFileSync(voiceConnectionPath, source);
       }
+      // Declining from the native system UI must never bring the app forward.
+      // The server expiry will close an unanswered web call if RN is cold.
+      source = source.replace('        launchStudentsTrafficCallActivity("decline");\n', "");
+      fs.writeFileSync(voiceConnectionPath, source);
     }
 
     return config;

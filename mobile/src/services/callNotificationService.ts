@@ -33,7 +33,9 @@ export async function setupCallKeep() {
         okButton: "Allow",
         additionalPermissions: [],
         foregroundService: {
-          channelId: "incoming_calls",
+          // Keep this aligned with IncomingCallNotification.kt. The original
+          // channel may be muted permanently by Android after an app update.
+          channelId: "incoming_calls_v2",
           channelName: "Incoming Calls",
           notificationTitle: "Waiting for calls",
         },
