@@ -21,6 +21,7 @@ import type {
   LinkItem,
   PeerRequestStatus,
   PeerCallStatus,
+  ProgramOffering,
   SearchDocument,
   StudentPeerApplicationStatus,
   StudentPeerStatus,
@@ -29,6 +30,7 @@ import type {
   UniversityReviewType,
   UniversityReviewVerificationStatus,
   UniversityReviewVisibilityStatus,
+  University,
   UniversityAdmissionsContent,
   YearlyCostBreakdown,
 } from "@/lib/data/types";
@@ -131,6 +133,11 @@ export const courses = pgTable(
     name: text("name").notNull(),
     shortName: text("short_name").notNull(),
     stream: text("stream").$type<CourseStream>().notNull().default("medicine"),
+    level: text("level").notNull().default("bachelors"),
+    discipline: text("discipline").notNull().default("general"),
+    aliases: text("aliases").array().notNull().default([]),
+    active: boolean("active").notNull().default(true),
+    displayOrder: integer("display_order").notNull().default(0),
     durationYears: integer("duration_years").notNull(),
     summary: text("summary").notNull(),
     metaTitle: text("meta_title").notNull(),
@@ -141,6 +148,11 @@ export const courses = pgTable(
   (table) => [
     uniqueIndex("courses_slug_idx").on(table.slug),
     index("courses_stream_idx").on(table.stream),
+    index("courses_active_stream_order_idx").on(
+      table.active,
+      table.stream,
+      table.displayOrder,
+    ),
   ]
 );
 
@@ -162,6 +174,10 @@ export const universities = pgTable(
     officialWebsite: text("official_website").notNull(),
     logoUrl: text("logo_url"),
     coverImageUrl: text("cover_image_url"),
+    mediaAttribution: jsonb("media_attribution")
+      .$type<University["mediaAttribution"]>()
+      .notNull()
+      .default({}),
     campusLifestyle: text("campus_lifestyle").notNull(),
     cityProfile: text("city_profile").notNull(),
     practicalExposure: text("practical_exposure").notNull(),
@@ -229,6 +245,16 @@ export const programOfferings = pgTable(
       mode: "number",
     }),
     officialProgramUrl: text("official_program_url").notNull(),
+    audienceEligibility: jsonb("audience_eligibility")
+      .$type<ProgramOffering["audienceEligibility"]>()
+      .notNull()
+      .default({
+        availability: "global",
+        eligibleAudiences: [],
+        restrictions: [],
+        verifiedAt: "",
+        sourceUrl: "",
+      }),
     medium: text("medium").notNull(),
     published: boolean("published").notNull().default(true),
     teachingPhases: jsonb("teaching_phases")
@@ -255,7 +281,7 @@ export const programOfferings = pgTable(
   },
   (table) => [
     uniqueIndex("program_offerings_slug_idx").on(table.slug),
-    uniqueIndex("program_offerings_university_course_idx").on(
+    index("program_offerings_university_course_idx").on(
       table.universityId,
       table.courseId,
     ),

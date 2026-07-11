@@ -243,6 +243,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       officialWebsite: universitiesTable.officialWebsite,
       logoUrl: universitiesTable.logoUrl,
       coverImageUrl: universitiesTable.coverImageUrl,
+      mediaAttribution: universitiesTable.mediaAttribution,
       campusLifestyle: universitiesTable.campusLifestyle,
       cityProfile: universitiesTable.cityProfile,
       practicalExposure: universitiesTable.practicalExposure,
@@ -335,6 +336,11 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       name: course.name,
       shortName: course.shortName,
       stream: course.stream,
+      level: course.level,
+      discipline: course.discipline,
+      aliases: course.aliases,
+      active: course.active,
+      displayOrder: course.displayOrder,
       durationYears: course.durationYears,
       summary: course.summary,
       metaTitle: course.metaTitle,
@@ -363,6 +369,8 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         officialWebsite: university.officialWebsite,
         logoUrl: university.logoUrl ?? undefined,
         coverImageUrl: university.coverImageUrl ?? undefined,
+        mediaAttribution:
+          university.mediaAttribution as University["mediaAttribution"],
         campusLifestyle: university.campusLifestyle,
         cityProfile: university.cityProfile,
         practicalExposure: university.practicalExposure,
@@ -417,6 +425,8 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         officialTotalTuitionAmount:
           program.officialTotalTuitionAmount ?? undefined,
         officialProgramUrl: program.officialProgramUrl,
+        audienceEligibility:
+          program.audienceEligibility as ProgramOffering["audienceEligibility"],
         medium: program.medium as ProgramOffering["medium"],
         published: program.published,
         teachingPhases:

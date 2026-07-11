@@ -15,6 +15,10 @@ appropriate source.
 - Omit facts that cannot be verified. Never guess missing fees, deadlines, recognition, outcomes or visa rules.
 - If authoritative sources conflict, record the conflict and hold the claim until resolved.
 - Never promise admission, visa approval, employment, salary, migration or recognition outcomes.
+- The catalogue serves a global audience. A legitimate university programme may be published even
+  when it is unavailable to Indian applicants, international applicants, student-visa holders or a
+  particular nationality/residency group. Store and display the restriction precisely; never imply
+  that every reader is eligible.
 - Do not write country pages around one program. Program-specific SEO belongs on program pages.
 - Do not expose source URLs, research notes or citations in the public page unless product requirements change.
 
@@ -43,6 +47,11 @@ Create a scope record containing:
 Do not begin with a free-form prompt such as “write everything about this country”.
 
 ### 2. Use the canonical taxonomy
+
+For Engineering and Business/MBA offerings, use the approved registry in
+[`programme-taxonomy.md`](./programme-taxonomy.md) and `lib/data/program-taxonomy.ts`. Store the
+university's exact official programme title separately from the Indian-facing canonical programme
+name. An agent must never create a new catalogue name while publishing a university.
 
 Do not create one generic course called `engineering` when the source distinguishes Computer,
 Mechanical, Civil or Electrical Engineering. Course rows should represent the decision students make.
@@ -78,6 +87,10 @@ For each university and program, collect separate source records for:
 A university website alone is not enough for visa rules, national recognition or post-study work
 claims. Add the relevant government or regulator source for those claims.
 
+Audience eligibility is programme data, not a global publication gate. Research citizenship,
+residency, nationality, prior-qualification, location and visa restrictions explicitly. A local-only
+programme can still have a factual catalogue page when its restriction is prominent.
+
 ### 4. Build the complete publishing payload
 
 AI agents must return one complete structured payload matching the destination schema and page
@@ -99,6 +112,31 @@ Each material claim must carry internal provenance:
 Public copy limits and page order are defined in
 [`university-page-architecture.md`](./university-page-architecture.md). Field-level depth and
 research quality rules are defined in [`university-content-spec.md`](./university-content-spec.md).
+
+University media is part of the payload. Prefer an official logo and a high-quality campus/location
+cover from an official media kit, a clearly reusable licensed source, a user-supplied asset or an
+original generated image. Store the source URL, rights basis, verification date and cover alt text.
+Never copy an arbitrary search-result image or publish an asset with unclear usage rights.
+
+### University media hosting — mandatory
+
+All public university logos and cover images must be copied into the Students Traffic Cloudinary
+account before publication. Never save an external university, CDN, stock-site or search-result URL
+in `universities.logo_url` or `universities.cover_image_url`.
+
+Required order:
+
+1. verify that the source asset is official, reusable, user-supplied or an approved original;
+2. upload it to Cloudinary under `studentstraffic/universities/<university-slug>/`;
+3. store only the resulting `https://res.cloudinary.com/...` URL in the public logo/cover field;
+4. preserve the original source URL, rights basis, checked date and cover alt text in
+   `media_attribution`;
+5. confirm the Cloudinary asset returns HTTP 200 before publishing the university;
+6. revalidate the university cache after assigning or replacing media.
+
+Do not use a favicon as a university logo when an approved SVG or high-resolution brand asset is not
+available. Leave the logo empty until a suitable asset is obtained. Do not hotlink external images,
+even when the external source is the university's official website.
 
 ### 5. Validate before writing anything
 
@@ -168,6 +206,7 @@ Reject the complete payload when any of these is true:
 - a recognition badge does not name a real body/designation;
 - a visa/work claim lacks an official government source;
 - a program has no official program URL;
+- a programme has an eligibility restriction that is omitted, softened or contradicted by the page;
 - country metadata targets one program;
 - content exceeds the hard page or field limit;
 - the copy contains guarantees, invented rankings, placeholder text or generic filler.
@@ -242,7 +281,9 @@ current availability.
 - Countries, universities and courses use stable slugs.
 - Every published university must have a country.
 - Every published program must reference a university and canonical course.
-- There must be one canonical offering per `(university_id, course_id)`.
+- A programme offering is identified by its globally unique programme slug. Multiple distinct
+  offerings at one university may map to the same canonical course; never overwrite one merely
+  because the canonical course matches.
 - Do not add columns for one country or one profession; use neutral fields or structured content.
 - Do not store raw research prose in public fields when a structured field is available.
 - Preserve source bundles and review notes for auditability.

@@ -31,6 +31,11 @@ export type Course = {
   name: string;
   shortName: string;
   stream: CourseStream;
+  level?: string;
+  discipline?: string;
+  aliases?: string[];
+  active?: boolean;
+  displayOrder?: number;
   durationYears: number;
   summary: string;
   metaTitle: string;
@@ -85,6 +90,10 @@ export type University = {
   type: "Public" | "Private";
   logoUrl?: string;
   coverImageUrl?: string;
+  mediaAttribution?: {
+    logo?: { sourceUrl: string; rights: string; checkedAt: string };
+    cover?: { sourceUrl: string; rights: string; checkedAt: string; altText: string };
+  };
   establishedYear: number;
   summary: string;
   featured: boolean;
@@ -175,6 +184,14 @@ export type ProgramOffering = {
   officialAnnualTuitionAmount?: number;
   officialTotalTuitionAmount?: number;
   officialProgramUrl: string;
+  audienceEligibility?: {
+    availability: "global" | "restricted" | "local-only";
+    eligibleAudiences: string[];
+    restrictions: string[];
+    notes?: string;
+    verifiedAt: string;
+    sourceUrl: string;
+  };
   medium:
     | "English"
     | "English + Local Support"

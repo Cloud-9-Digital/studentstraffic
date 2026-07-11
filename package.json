@@ -25,7 +25,8 @@
     "sheets:backfill:seminars": "tsx scripts/backfill-google-sheets-seminar-leads.ts",
     "seo:indexnow": "tsx scripts/submit-indexnow.ts",
     "search:sync:typesense": "tsx scripts/sync-typesense-search.ts",
-    "cache:revalidate:blog": "node scripts/revalidate-blog-cache.mjs"
+    "cache:revalidate:blog": "node scripts/revalidate-blog-cache.mjs",
+    "audit:programme-taxonomy": "tsx scripts/audit-programme-taxonomy.ts"
   },
   "dependencies": {
     "@auth/core": "^0.41.2",

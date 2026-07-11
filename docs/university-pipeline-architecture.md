@@ -111,8 +111,10 @@ Editorial safeguards already enforced by this pipeline (see [[project_university
 memory and `docs/project-standards.md`):
 - Multi-source verification required — never trust one official site alone.
 - Facts must be omitted, not fabricated, if unverifiable ("exhaustive-then-omit").
-- Programs must map to an actual course in the catalog and be genuinely open to
-  international/Indian students (citizenship/PR-gated or vocational-only programs get **held**, not published).
+- Programmes must map to an actual course in the catalogue. Citizenship, residency, nationality,
+  location and visa restrictions do not by themselves prevent publication for the global audience;
+  they must be verified, stored and shown clearly. Hold only when the restriction or programme
+  identity cannot be verified.
 - Every hold/publish decision + sources gets logged in a run report under `docs/run-reports/`.
 
 ### 1b. Adding programs to an already-published university (no new university needed)
@@ -170,11 +172,10 @@ same change that makes it stale.
 
 ## Program offering integrity (2026-07-11)
 
-`program_offerings` has one canonical row per `(university_id, course_id)` pair. Migration
-`0058_program_offering_integrity` removed older duplicate rows while retaining the published/latest
-record, then added a unique database index and a partial index for published offerings by university.
-Batch imports must preserve this invariant by upserting the natural pair instead of creating a second
-draft/live row.
+Migration `0058_program_offering_integrity` historically reduced offerings to one row per
+`(university_id, course_id)`. That rule was suitable for the original small medical catalogue but is
+superseded by migration `0063` below. Programme slug is now the write identity; university/course is
+a non-unique lookup relationship.
 
 Migration `0059_remove_orphaned_unpublished_universities` also removed four unpublished staging
 universities that were not attached to the research queue; published universities remain untouched.
@@ -186,3 +187,31 @@ for the long catalog cache profile to expire.
 Migration `0061_remove_duplicate_legacy_content_columns` removed the unused duplicate medical-only
 database columns left behind by the stream-neutral schema migration. Research JSON/source keys may
 still use the historical names because the publisher maps them into the neutral database columns.
+
+## Canonical programme foundation (2026-07-12)
+
+Migration `0063_programme_taxonomy_foundation` adds `level`, `discipline`, `aliases`, `active` and
+`display_order` to `courses`. The executable approved taxonomy is
+`lib/data/program-taxonomy.ts`; public offering titles continue to store the university's exact
+official title.
+
+The former unique `(university_id, course_id)` constraint was incorrect for a multi-programme
+catalogue because one university may offer several distinct programmes mapped to the same canonical
+category. It is now a non-unique lookup index. `program_offerings.slug` remains globally unique
+because public programme routes resolve by slug without a university segment.
+
+New publishing requires an explicit approved canonical slug and an active course row. Title-based
+course inference has been removed. The legacy `medical-pg` and mixed `pharmacy` course rows are
+inactive for new writes but remain readable for existing pages until their offerings are researched
+and remapped. Run `npm run audit:programme-taxonomy` for the non-mutating review report.
+
+Both programme import paths now use one database transaction per payload. A validation or database
+failure rolls the complete batch back; cache and search refresh run only after the database commit.
+
+## University media delivery (2026-07-12)
+
+`universities.logo_url` and `universities.cover_image_url` accept Students Traffic Cloudinary URLs
+only. The validated catalogue publisher rejects non-Cloudinary public media. Original source and
+rights information belong in `universities.media_attribution`; they must not be used as public image
+delivery URLs. Upload media before publication and verify the Cloudinary response. Never use an
+external hotlink or substitute a pixelated favicon for a proper university logo.

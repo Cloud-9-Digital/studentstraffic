@@ -337,6 +337,27 @@
       "when": 1783720800000,
       "tag": "0062_drop_redundant_prefix_indexes",
       "breakpoints": true
+    },
+    {
+      "idx": 62,
+      "version": "7",
+      "when": 1783852200000,
+      "tag": "0063_programme_taxonomy_foundation",
+      "breakpoints": true
+    },
+    {
+      "idx": 63,
+      "version": "7",
+      "when": 1783855800000,
+      "tag": "0064_programme_audience_eligibility",
+      "breakpoints": true
+    },
+    {
+      "idx": 64,
+      "version": "7",
+      "when": 1783859400000,
+      "tag": "0065_university_media_attribution",
+      "breakpoints": true
     }
   ]
 }

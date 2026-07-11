@@ -1,6 +1,6 @@
 import "dotenv/config";
 
-import { and, eq, inArray } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/core";
 import {
@@ -13,6 +13,7 @@ import {
 } from "@/lib/db/schema";
 import { env } from "@/lib/env";
 import { syncTypesenseSearchIndex } from "@/lib/search/admin";
+import { isApprovedCanonicalProgramme } from "@/lib/data/program-taxonomy";
 import { createSlug } from "@/lib/utils";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
 
@@ -221,24 +222,8 @@ function inferUniversityType(input?: string | null) {
 }
 
 function inferCourseSlug(program: ProgramLike, summary?: string | null) {
-  const direct = asString(program.courseSlug);
-  if (direct) {
-    return direct;
-  }
-
-  const title = `${asString(program.title) ?? ""} ${summary ?? ""}`.toLowerCase();
-
-  if (
-    title.includes("mbbs") ||
-    title.includes("general medicine") ||
-    title.includes("medicine") ||
-    title.includes("doctor of medicine") ||
-    title.includes("md")
-  ) {
-    return "mbbs";
-  }
-
-  return null;
+  void summary;
+  return asString(program.courseSlug);
 }
 
 function findWeakContentMarkers(value: string) {
@@ -380,7 +365,11 @@ function validateDraft(record: DraftRecord) {
     const durationYears = asNumber(program.durationYears);
 
     if (!courseSlug) {
-      issues.push(`Program ${index + 1} is missing a recognizable course slug.`);
+      issues.push(`Program ${index + 1} is missing an explicit canonical course slug.`);
+    } else if (!isApprovedCanonicalProgramme(courseSlug)) {
+      issues.push(
+        `Program ${index + 1} uses unapproved canonical course slug "${courseSlug}". Hold it for taxonomy review.`,
+      );
     }
 
     if (!title) {
@@ -397,6 +386,10 @@ function validateDraft(record: DraftRecord) {
 
     if (!durationYears) {
       issues.push(`Program ${index + 1} is missing duration years.`);
+    }
+
+    if (asStringArray(program.sourceUrls).length < 2) {
+      issues.push(`Program ${index + 1} requires at least two source URLs.`);
     }
   }
 
@@ -489,13 +482,17 @@ async function main() {
     );
   }
 
-  const [countryRow, courseRows] = await Promise.all([
-    db
+  const { savedUniversity, publishedPrograms } = await db.transaction(async (tx) => {
+    const [countryRow, courseRows] = await Promise.all([
+    tx
       .select({ id: countries.id })
       .from(countries)
       .where(eq(countries.slug, record.countrySlug))
       .limit(1),
-    db.select({ id: courses.id, slug: courses.slug }).from(courses),
+    tx
+      .select({ id: courses.id, slug: courses.slug })
+      .from(courses)
+      .where(eq(courses.active, true)),
   ]);
 
   const countryId = countryRow[0]?.id;
@@ -521,7 +518,7 @@ async function main() {
     "Published from internal research draft workflow.";
   const incomingLogoUrl = asString(structuredFacts.logoUrl);
   const incomingCoverImageUrl = asString(structuredFacts.coverImageUrl);
-  const existingRows = await db
+  const existingRows = await tx
     .select({
       logoUrl: universities.logoUrl,
       coverImageUrl: universities.coverImageUrl,
@@ -531,7 +528,7 @@ async function main() {
     .limit(1);
   const existingUniversity = existingRows[0];
 
-  const [savedUniversity] = await db
+  const [savedUniversity] = await tx
     .insert(universities)
     .values({
       countryId,
@@ -616,7 +613,9 @@ async function main() {
     const courseSlug = inferCourseSlug(rawProgram, asString(draftContent.summary));
 
     if (!courseSlug) {
-      throw new Error(`Unable to infer course slug for program "${rawProgram.title ?? "unknown"}".`);
+      throw new Error(
+        `Missing explicit canonical course slug for programme "${rawProgram.title ?? "unknown"}".`,
+      );
     }
 
     const courseId = courseIdBySlug.get(courseSlug);
@@ -628,7 +627,7 @@ async function main() {
     const programTitle = asString(rawProgram.title)!;
     const programSlug =
       asString(rawProgram.slug) ??
-      createSlug(`${courseSlug}-in-${savedUniversity.slug}`);
+      createSlug(`${programTitle}-${savedUniversity.slug}`);
     const sourceUrls = asStringArray(rawProgram.sourceUrls);
     const officialProgramUrl =
       asString(rawProgram.officialProgramUrl) ?? validation.officialWebsite!;
@@ -637,24 +636,21 @@ async function main() {
       sourceUrls.push(officialProgramUrl);
     }
 
-    const existingProgramRows = await db
+    const existingProgramRows = await tx
       .select({
         id: programOfferings.id,
         slug: programOfferings.slug,
+        universityId: programOfferings.universityId,
       })
       .from(programOfferings)
-      .where(
-        and(
-          eq(programOfferings.universityId, savedUniversity.id),
-          eq(programOfferings.courseId, courseId),
-        ),
-      )
-      .orderBy(programOfferings.id);
+      .where(eq(programOfferings.slug, programSlug))
+      .limit(1);
 
-    const reusableProgram =
-      existingProgramRows.find((row) => row.slug === programSlug) ??
-      existingProgramRows[0] ??
-      null;
+    const reusableProgram = existingProgramRows[0] ?? null;
+
+    if (reusableProgram && reusableProgram.universityId !== savedUniversity.id) {
+      throw new Error(`Programme slug "${programSlug}" belongs to another university.`);
+    }
 
     const programPayload = {
       universityId: savedUniversity.id,
@@ -689,12 +685,12 @@ async function main() {
     };
 
     if (reusableProgram) {
-      await db
+      await tx
         .update(programOfferings)
         .set(programPayload)
         .where(eq(programOfferings.id, reusableProgram.id));
     } else {
-      await db
+      await tx
         .insert(programOfferings)
         .values({
           ...programPayload,
@@ -706,24 +702,10 @@ async function main() {
         });
     }
 
-    const duplicateProgramIds = existingProgramRows
-      .filter((row) => row.id !== reusableProgram?.id)
-      .map((row) => row.id);
-
-    if (duplicateProgramIds.length > 0) {
-      await db
-        .update(programOfferings)
-        .set({
-          published: false,
-          updatedAt: now,
-        })
-        .where(inArray(programOfferings.id, duplicateProgramIds));
-    }
-
     publishedPrograms += 1;
   }
 
-  await db
+  await tx
     .update(universityResearchQueue)
     .set({
       status: "published",
@@ -734,6 +716,9 @@ async function main() {
       notes: `Published to /universities/${savedUniversity.slug} from research draft ${record.draftId}.`,
     })
     .where(eq(universityResearchQueue.id, record.queueId));
+
+    return { savedUniversity, publishedPrograms };
+  });
 
   console.log(`Published university: ${savedUniversity.slug}`);
   console.log(`Programs published: ${publishedPrograms}`);

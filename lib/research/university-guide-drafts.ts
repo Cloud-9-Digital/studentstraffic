@@ -51,7 +51,7 @@ export const programDraftSchema = z.object({
   slug: z.string().min(1),
   courseSlug: z.string().min(1),
   title: z.string().min(1),
-  durationYears: z.number().int().positive(),
+  durationYears: z.number().positive(),
   officialFeeCurrency: z.string().min(1).optional(),
   officialAnnualTuitionAmount: z.number().int().nonnegative().optional(),
   officialTotalTuitionAmount: z.number().int().nonnegative().optional(),
@@ -59,12 +59,7 @@ export const programDraftSchema = z.object({
   totalTuitionUsd: z.number().int().nonnegative().optional(),
   livingUsd: z.number().int().nonnegative().default(0),
   officialProgramUrl: z.string().url(),
-  medium: z.enum([
-    "English",
-    "English + Local Support",
-    "English + Vietnamese Support",
-    "Vietnamese",
-  ]),
+  medium: z.string().min(1),
   teachingPhases: z.array(teachingPhaseSchema).default([]),
   yearlyCostBreakdown: z.array(yearlyCostBreakdownSchema).default([]),
   licenseExamSupport: z.array(z.string().min(1)).default([]),
@@ -75,7 +70,7 @@ export const programDraftSchema = z.object({
   fxRateDate: isoDateSchema.optional(),
   fxRateSourceUrl: z.string().url().optional(),
   feeNotes: z.string().min(1).optional(),
-  sourceUrls: z.array(z.string().url()).min(1),
+  sourceUrls: z.array(z.string().url()).min(2),
 });
 
 export const universityDraftSchema = z.object({

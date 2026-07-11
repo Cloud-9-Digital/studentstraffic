@@ -15,6 +15,18 @@ Education, and other non-medical fields, worldwide (Vietnam planned as the pilot
 pipeline mechanics, reused once proven — needs new `courses` rows and country/program research
 reoriented to those fields.
 
+**2026-07-12 taxonomy update:** the first controlled Engineering and MBA/Business programme names
+are defined in [`programme-taxonomy.md`](./programme-taxonomy.md) and the executable registry at
+`lib/data/program-taxonomy.ts`. University research must retain each official programme title while
+mapping it to an approved canonical slug. The registry is the first expansion scope, not permission
+to populate course rows directly; publication still goes through the complete validated workflow.
+
+The same registry now also covers the existing MBBS, Medical PG, B.Sc. Nursing and Pharmacy scope.
+A live-title audit found that the current `medical-pg` offerings are generic university-level
+descriptions rather than named programmes, and the `pharmacy` course mixes bachelor and integrated
+master awards. Do not reproduce those mappings in new batches: re-research Medical PG by speciality
+and split Pharmacy offerings into the approved canonical programmes before expansion.
+
 **2026-07-09 — the template blocker is now cleared (data still not started).** The scalability
 refactor made the template capable of non-medical content: `recognition-detail-section.tsx` and
 `admissions-section.tsx` are stream-aware (medical streams render the official regulatory sources/NMC/FMGE pathway
@@ -46,8 +58,8 @@ context/tool-loading cost.
 - **Stage A — Discover+Research (one agent, one batch of ~5–8 universities):** dedupes against the
   DB, researches and drafts the whole batch in one call, applying sourcing rules (multi-source,
   omit-don't-fabricate) as it writes rather than leaving that to a separate step.
-- **Stage B — Verify+Publish (one agent, same batch):** adversarially checks each draft (citations,
-  eligibility for Indian students, dedup), then itself runs the seed+publish scripts for everything
+- **Stage B — Verify+Publish (one agent, same batch):** adversarially checks each draft (sources,
+  audience-specific eligibility restrictions, dedup), then itself runs the publish workflow for everything
   that passes. Holds + logs anything that fails, same as before.
 
 That's ~2 agent spawns per batch of 6 universities instead of ~13.
@@ -105,6 +117,16 @@ verification (built into the script's validation).
   then (2) fresh Russia discovery pass, then (3) new countries in the priority order above.
 - Update this section's "current queue position" as batches complete, so the next session picks up
   from the right place without re-deriving it.
+
+## Multi-stream pilot queue (selected 2026-07-12)
+
+The first Engineering and MBA vertical slice is **Constructor University, Bremen, Germany**. Germany
+already exists; the university does not. The locked scope and initial six programme mappings are in
+[`research-scopes/constructor-university-bremen.md`](./research-scopes/constructor-university-bremen.md).
+
+Research and publish this pilot before selecting a second multi-stream university. Its two distinct
+MBA formats deliberately test whether multiple offerings can share one canonical course without
+overwriting each other.
 
 ## Operational notes
 

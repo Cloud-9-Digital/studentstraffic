@@ -12,6 +12,10 @@ This website is not a pure editorial publication whose job ends at informing the
 - application and admissions support
 - lead capture and service conversion
 
+Students Traffic serves a global audience. Indian students and parents remain an important audience,
+but country, university and programme coverage must not be limited to Indian eligibility or Indian
+search intent.
+
 That means every serious page should help the reader understand their options and also make it natural to take the next step with Students Traffic.
 
 The brand promise should feel:
@@ -88,7 +92,8 @@ Scholarship pages should:
 - Avoid internal phrasing like "this page converts well" or "this keyword works because".
 - Avoid writing that sounds like an editorial strategy memo.
 - Prefer concrete advice, realistic expectations, and calm authority.
-- Where appropriate, speak directly to Indian students and parents, since that is a core audience.
+- Use globally clear English by default. Add India-specific guidance only where it is relevant and
+  label it as such; do not make it the assumed eligibility rule for every reader.
 - Do not write like a journalist explaining a topic from a distance.
 - Write like an expert team that understands the topic and can actively help the student move forward.
 - When useful, connect informational clarity to action with language such as shortlist, counseling, admission support, application help, or fit assessment.
