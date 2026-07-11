@@ -494,9 +494,12 @@ export async function listGuideConversationStarters(
   return db
     .select({
       bookingId: peerCallBookings.id,
+      peerId: studentPeers.id,
       studentUserId: peerCallBookings.studentUserId,
       studentName: users.name,
       studentEmail: users.email,
+      universityName: universities.name,
+      universitySlug: universities.slug,
       bookingStatus: peerCallBookings.status,
       conversationId: guideConversations.id,
       lastMessageAt: guideConversations.lastMessageAt,
@@ -504,6 +507,7 @@ export async function listGuideConversationStarters(
     .from(peerCallBookings)
     .innerJoin(studentPeers, eq(peerCallBookings.peerId, studentPeers.id))
     .innerJoin(users, eq(peerCallBookings.studentUserId, users.id))
+    .innerJoin(universities, eq(studentPeers.universityId, universities.id))
     .leftJoin(
       guideConversations,
       and(

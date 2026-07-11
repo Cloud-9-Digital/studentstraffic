@@ -8,14 +8,14 @@ const fonts = {
   headlineMedium:{ fontFamily: "Fraunces-Regular",        fontSize: 28, lineHeight: 36, letterSpacing: 0,     fontWeight: "400" as const },
   headlineSmall: { fontFamily: "Fraunces-Regular",        fontSize: 24, lineHeight: 32, letterSpacing: 0,     fontWeight: "400" as const },
   titleLarge:    { fontFamily: "PlusJakartaSans-Bold",    fontSize: 22, lineHeight: 28, letterSpacing: 0,     fontWeight: "400" as const },
-  titleMedium:   { fontFamily: "PlusJakartaSans-SemiBold",fontSize: 16, lineHeight: 24, letterSpacing: 0.15,  fontWeight: "500" as const },
-  titleSmall:    { fontFamily: "PlusJakartaSans-Medium",  fontSize: 14, lineHeight: 20, letterSpacing: 0.1,   fontWeight: "500" as const },
-  bodyLarge:     { fontFamily: "PlusJakartaSans-Regular", fontSize: 16, lineHeight: 24, letterSpacing: 0.5,   fontWeight: "400" as const },
-  bodyMedium:    { fontFamily: "PlusJakartaSans-Regular", fontSize: 14, lineHeight: 20, letterSpacing: 0.25,  fontWeight: "400" as const },
-  bodySmall:     { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, lineHeight: 16, letterSpacing: 0.4,   fontWeight: "400" as const },
+  titleMedium:   { fontFamily: "PlusJakartaSans-SemiBold",fontSize: 16, lineHeight: 24, letterSpacing: 0,     fontWeight: "500" as const },
+  titleSmall:    { fontFamily: "PlusJakartaSans-Medium",  fontSize: 14, lineHeight: 20, letterSpacing: 0,     fontWeight: "500" as const },
+  bodyLarge:     { fontFamily: "PlusJakartaSans-Regular", fontSize: 16, lineHeight: 24, letterSpacing: 0,     fontWeight: "400" as const },
+  bodyMedium:    { fontFamily: "PlusJakartaSans-Regular", fontSize: 14, lineHeight: 20, letterSpacing: 0,     fontWeight: "400" as const },
+  bodySmall:     { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, lineHeight: 16, letterSpacing: 0,     fontWeight: "400" as const },
   labelLarge:    { fontFamily: "PlusJakartaSans-Bold",    fontSize: 14, lineHeight: 20, letterSpacing: 0.1,   fontWeight: "500" as const },
-  labelMedium:   { fontFamily: "PlusJakartaSans-SemiBold",fontSize: 12, lineHeight: 16, letterSpacing: 0.5,   fontWeight: "500" as const },
-  labelSmall:    { fontFamily: "PlusJakartaSans-Medium",  fontSize: 11, lineHeight: 16, letterSpacing: 0.5,   fontWeight: "500" as const },
+  labelMedium:   { fontFamily: "PlusJakartaSans-SemiBold",fontSize: 12, lineHeight: 16, letterSpacing: 0,     fontWeight: "500" as const },
+  labelSmall:    { fontFamily: "PlusJakartaSans-Medium",  fontSize: 11, lineHeight: 16, letterSpacing: 0,     fontWeight: "500" as const },
 };
 
 export const paperTheme = {

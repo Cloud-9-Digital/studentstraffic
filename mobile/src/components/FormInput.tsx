@@ -157,7 +157,7 @@ function AndroidInput({
 
 const android = StyleSheet.create({
   input: { backgroundColor: "#fafafa" },
-  content: { fontFamily: "PlusJakartaSans-Regular", fontSize: 15 },
+  content: { fontFamily: "PlusJakartaSans-Regular", fontSize: 15, letterSpacing: 0 },
   outline: { borderRadius: 12 },
   helperText: { fontFamily: "PlusJakartaSans-Regular" },
 });

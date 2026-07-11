@@ -1,4 +1,4 @@
-import type { CallBooking, CallTokenResponse, IndiaCollege, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
+import type { CallBooking, CallTokenResponse, GuideConversation, GuideConversationStarter, GuideMessage, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
 import { PermissionsAndroid, Platform } from "react-native";
 import Constants from "expo-constants";
 import { clearToken, getToken, setToken } from "./tokenStore";
@@ -72,7 +72,6 @@ function toUniversity(input: any): University {
     tuitionUsd: input.tuitionUsd ?? input.primaryOffering?.annualTuitionUsd ?? 0,
     duration: input.primaryOffering ? `${input.primaryOffering.durationYears} years` : undefined,
     medium: input.primaryOffering?.medium,
-    recognition: input.recognitionBadges ?? input.recognition ?? [],
     summary: input.summary,
     fit: input.bestFitFor?.[0],
     isShortlisted: input.isShortlisted,
@@ -88,7 +87,7 @@ function toApplication(input: any): StudentApplication {
     universityCity: input.universityCity,
     countryName: input.countryName,
     universityLogoUrl: input.universityLogoUrl,
-    course: input.courseSlug?.replace(/-/g, " ").toUpperCase() ?? "MBBS",
+    course: input.courseSlug?.replace(/-/g, " ").toUpperCase() ?? "Program",
     courseSlug: input.courseSlug,
     status: input.status,
     nextStep:
@@ -300,33 +299,31 @@ export const mobileClient = {
     return toApplication(result.application);
   },
 
-  async getIndiaColleges(
-    filters: { q?: string; state?: string; management?: string; sort?: string } = {},
-    page = 1,
-  ) {
-    const params = new URLSearchParams({ page: String(page), pageSize: "20" });
-    if (filters.q?.trim())     params.set("q",          filters.q.trim());
-    if (filters.state)         params.set("state",      filters.state);
-    if (filters.management)    params.set("management", filters.management);
-    if (filters.sort)          params.set("sort",       filters.sort);
-
-    const result = await request<{
-      colleges: IndiaCollege[];
-      totalItems: number;
-      totalPages: number;
-      hasNextPage: boolean;
-    }>(`/api/india-mbbs-finder?${params.toString()}`, { auth: false });
-
-    return {
-      colleges: result.colleges,
-      totalItems: result.totalItems,
-      hasNextPage: result.hasNextPage,
-    };
+  async getCallBookings(role: "student" | "guide" = "student") {
+    const result = await request<{ bookings: CallBooking[] }>(`/api/mobile/v1/calls?role=${role}`);
+    return result.bookings;
   },
 
-  async getCallBookings() {
-    const result = await request<{ bookings: CallBooking[] }>("/api/mobile/v1/calls");
-    return result.bookings;
+  async getConversations(role: "student" | "guide" = "student") {
+    return request<{ role: "student" | "guide"; capabilities: { guide: boolean }; conversations: GuideConversation[]; starters: GuideConversationStarter[] }>(`/api/mobile/v1/conversations?role=${role}`);
+  },
+
+  async openConversation(peerId: number, role: "student" | "guide" = "student", bookingId?: number) {
+    return request<{ conversationId: number; conversation: GuideConversation }>("/api/mobile/v1/conversations", {
+      method: "POST",
+      body: JSON.stringify(role === "guide" ? { role, bookingId } : { peerId }),
+    });
+  },
+
+  async getConversation(conversationId: number) {
+    return request<{ conversation: GuideConversation; messages: GuideMessage[] }>(`/api/mobile/v1/conversations/${conversationId}`);
+  },
+
+  async sendConversationMessage(conversationId: number, body: string) {
+    return request<{ ok: true; conversation: GuideConversation }>(`/api/mobile/v1/conversations/${conversationId}/messages`, {
+      method: "POST",
+      body: JSON.stringify({ body }),
+    });
   },
 
   async startCall(bookingId: number) {
@@ -365,7 +362,6 @@ export const mobileClient = {
     phone: string;
     email?: string;
     userState: string;
-    neetScore?: number | null;
     universitySlug?: string;
     courseSlug?: string;
     notes?: string;

@@ -155,6 +155,23 @@ function withNativeIncomingCallFiles(config) {
       }
     }
 
+    // Notifee publishes its Android core as a local Maven artifact. Add that
+    // repository at the root so debug builds resolve it before Gradle evaluates
+    // the Notifee subproject (release builds may otherwise only work by cache).
+    const rootBuildGradlePath = path.join(config.modRequest.platformProjectRoot, "build.gradle");
+    if (fs.existsSync(rootBuildGradlePath)) {
+      const source = fs.readFileSync(rootBuildGradlePath, "utf8");
+      if (!source.includes("STUDENTSTRAFFIC_NOTIFEE_MAVEN")) {
+        fs.writeFileSync(
+          rootBuildGradlePath,
+          source.replace(
+            "    mavenCentral()\n    maven { url 'https://www.jitpack.io' }",
+            "    mavenCentral()\n    // STUDENTSTRAFFIC_NOTIFEE_MAVEN\n    maven { url \"$rootDir/../node_modules/@notifee/react-native/android/libs\" }\n    maven { url 'https://www.jitpack.io' }",
+          ),
+        );
+      }
+    }
+
     // react-native-callkeep emits answer/reject through an in-process event.
     // When React Native is cold, launch the app with a persisted native action
     // as well, so accepting a system call always joins the real session.

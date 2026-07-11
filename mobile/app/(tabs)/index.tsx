@@ -37,7 +37,7 @@ function initials(name: string) {
   return name.split(" ").slice(0, 2).map((w) => w[0]).join("").toUpperCase();
 }
 
-const DEST_ORDER = ["vietnam", "russia", "georgia", "kyrgyzstan", "uzbekistan", "india"];
+const DEST_ORDER = ["vietnam", "russia", "georgia", "kyrgyzstan", "uzbekistan"];
 
 const COUNTRY_IMAGES: Record<string, ReturnType<typeof require>> = {
   vietnam:     require("../../assets/vietnam.jpg"),
@@ -88,7 +88,7 @@ type ActionItem = {
 };
 const QUICK_ACTIONS: ActionItem[] = [
   { icon: "wallet-outline",            label: "Budget picks",    sub: "Under $5k/yr",        gradient: ["#064e3b", "#0d9467"], params: { feeRange: "u5k" } },
-  { icon: "shield-checkmark-outline",  label: "NMC recognised",  sub: "India-approved",      gradient: ["#0c3547", "#0e6d9e"], params: { sort: "" } },
+  { icon: "sparkles-outline",           label: "Top picks",       sub: "Explore universities", gradient: ["#0c3547", "#0e6d9e"], params: { sort: "" } },
   { icon: "language-outline",          label: "English medium",  sub: "No language barrier", gradient: ["#1e1b4b", "#3730a3"], params: { medium: "English" } },
   { icon: "trophy-outline",            label: "Lowest fees",     sub: "Sort by fee",         gradient: ["#431407", "#9a3412"], params: { sort: "tuition_asc" } },
 ];
@@ -172,11 +172,10 @@ export default function HomeScreen() {
 
   const apiSlugs = new Set((searchOptions?.countries ?? []).map(c => c.slug.toLowerCase()));
   const allCountryMap = Object.fromEntries((searchOptions?.countries ?? []).map(c => [c.slug.toLowerCase(), c]));
-  // Show pinned countries in fixed order; India is always appended regardless of API
+  // Show featured destinations in a fixed order when they are available.
   const countries = DEST_ORDER
-    .filter(slug => slug === "india" || apiSlugs.has(slug) || COUNTRY_IMAGES[slug])
+    .filter(slug => apiSlugs.has(slug) || COUNTRY_IMAGES[slug])
     .map(slug => {
-      if (slug === "india") return { slug: "india", name: "India" };
       return allCountryMap[slug] ?? { slug, name: slug.charAt(0).toUpperCase() + slug.slice(1) };
     });
 
@@ -203,7 +202,7 @@ export default function HomeScreen() {
             <View style={s.emptyIcon}>
               <Ionicons name="school-outline" size={40} color={colors.primary} />
             </View>
-            <Text style={s.emptyTitle}>Plan your MBBS abroad</Text>
+            <Text style={s.emptyTitle}>Plan your studies abroad</Text>
             <Text style={s.emptySub}>Sign in to access personalised recommendations, shortlists, and your application tracker.</Text>
             <Button label="Sign in" icon="log-in" onPress={() => router.replace("/(auth)/login")} />
             <Button label="Create free account" variant="secondary" icon="person-add" onPress={() => router.replace("/(auth)/register")} />
@@ -279,29 +278,12 @@ export default function HomeScreen() {
           <Text style={s.greetName}>{firstName} 👋</Text>
         </View>
 
-        {/* ── NEET Match banner ── */}
-        <Pressable
-          onPress={() => { Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light); router.push("/neet-match"); }}
-          style={({ pressed }) => [s.neetBanner, pressed && s.neetBannerPressed]}
-        >
-          <View style={s.neetLeft}>
-            <View style={s.neetIconWrap}>
-              <Ionicons name="school-outline" size={18} color={colors.primary} />
-            </View>
-            <View style={{ flex: 1 }}>
-              <Text style={s.neetTitle}>Find your MBBS matches</Text>
-              <Text style={s.neetSub}>Enter your NEET score → get ranked universities</Text>
-            </View>
-          </View>
-          <Ionicons name="chevron-forward" size={16} color={colors.primary} />
-        </Pressable>
-
         {/* ── Study destinations ── */}
         {countries.length > 0 && (
           <>
             <View style={s.sectionRow}>
               <Text style={s.sectionTitle}>Study destinations</Text>
-              <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/search"); }} hitSlop={8}>
+              <Pressable onPress={() => { Haptics.selectionAsync(); router.push("/countries"); }} hitSlop={8}>
                 <Text style={s.seeAll}>See all</Text>
               </Pressable>
             </View>
@@ -321,12 +303,7 @@ export default function HomeScreen() {
                   index={i}
                   onPress={() => {
                     Haptics.selectionAsync();
-                    if (c.slug === "india") {
-                      // Open the Search tab pre-selected on India mode
-                      router.push({ pathname: "/(tabs)/search", params: { india: "1" } });
-                    } else {
-                      router.push({ pathname: "/country/[slug]", params: { slug: c.slug, name: c.name } });
-                    }
+                    router.push({ pathname: "/country/[slug]", params: { slug: c.slug, name: c.name } });
                   }}
                 />
               ))}
@@ -421,30 +398,6 @@ const s = StyleSheet.create({
   avatarText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 13, color: "#fff" },
 
   scroll: { paddingHorizontal: 20 },
-
-  // NEET Match banner
-  neetBanner: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    backgroundColor: colors.primarySoft,
-    borderRadius: 18,
-    borderWidth: 1,
-    borderColor: "rgba(15,61,55,0.12)",
-    padding: 14,
-    marginBottom: 22,
-    ...shadow,
-  },
-  neetBannerPressed: { opacity: 0.85 },
-  neetLeft: { flexDirection: "row", alignItems: "center", gap: 12, flex: 1 },
-  neetIconWrap: {
-    width: 38, height: 38, borderRadius: 11,
-    backgroundColor: "#fff",
-    alignItems: "center", justifyContent: "center",
-    flexShrink: 0,
-  },
-  neetTitle: { fontFamily: "PlusJakartaSans-Bold", fontSize: 13, color: colors.ink, lineHeight: 18 },
-  neetSub: { fontFamily: "PlusJakartaSans-Regular", fontSize: 11, color: colors.muted, marginTop: 2 },
 
   // Greeting
   greetBlock: { marginBottom: 20 },

@@ -11,28 +11,14 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { TextInput as PaperInput } from "react-native-paper";
 import { StatusBar } from "expo-status-bar";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import * as Haptics from "expo-haptics";
-import Svg, { Path } from "react-native-svg";
 
-import { Button } from "../../src/components/Button";
 import { mobileClient } from "../../src/api/mobileClient";
 import { colors } from "../../src/theme/tokens";
-
-function GoogleIcon() {
-  return (
-    <Svg width={20} height={20} viewBox="0 0 24 24">
-      <Path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-      <Path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-      <Path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
-      <Path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
-    </Svg>
-  );
-}
 
 // ─── iOS — native grouped input card ─────────────────────────────────────────
 
@@ -132,7 +118,23 @@ const ig = StyleSheet.create({
   },
 });
 
-// ─── Android — Paper MD3 inputs ───────────────────────────────────────────────
+// ─── Android — branded outlined inputs ────────────────────────────────────────
+
+function AndroidField({ icon, right, ...props }: any) {
+  return (
+    <View style={aig.field}>
+      <Ionicons name={icon} size={22} color={colors.faint} style={aig.icon} />
+      <TextInput
+        {...props}
+        style={aig.input}
+        placeholderTextColor={colors.faint}
+        selectionColor={colors.primary}
+        onFocus={() => { Haptics.selectionAsync(); props.onFocus?.(); }}
+      />
+      {right}
+    </View>
+  );
+}
 
 function AndroidInputGroup({
   email, setEmail, password, setPassword, showPwd, setShowPwd, onSubmit,
@@ -143,40 +145,28 @@ function AndroidInputGroup({
   onSubmit: () => void;
 }) {
   return (
-    <View style={{ gap: 12 }}>
-      <PaperInput
-        label="Email address"
-        mode="outlined"
+    <View style={aig.stack}>
+      <AndroidField
+        icon="mail-outline"
+        placeholder="Email address"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
         autoCapitalize="none"
-        left={<PaperInput.Icon icon={p => <Ionicons name="mail-outline" size={p.size - 2} color={p.color} />} />}
-        onFocus={() => Haptics.selectionAsync()}
-        style={aig.input}
-        outlineStyle={aig.outline}
-        contentStyle={aig.content}
+        autoComplete="email"
         returnKeyType="next"
       />
-      <PaperInput
-        label="Password"
-        mode="outlined"
+      <AndroidField
+        icon="lock-closed-outline"
+        placeholder="Password"
         value={password}
         onChangeText={setPassword}
         secureTextEntry={!showPwd}
         autoComplete="password"
-        left={<PaperInput.Icon icon={p => <Ionicons name="lock-closed-outline" size={p.size - 2} color={p.color} />} />}
-        right={
-          <PaperInput.Icon
-            icon={p => <Ionicons name={showPwd ? "eye-off-outline" : "eye-outline"} size={p.size - 2} color={p.color} />}
-            onPress={() => { Haptics.selectionAsync(); setShowPwd(!showPwd); }}
-          />
-        }
-        onFocus={() => Haptics.selectionAsync()}
+        right={<Pressable onPress={() => { Haptics.selectionAsync(); setShowPwd(!showPwd); }} hitSlop={10} style={aig.eyeBtn}>
+          <Ionicons name={showPwd ? "eye-off-outline" : "eye-outline"} size={22} color={colors.faint} />
+        </Pressable>}
         onSubmitEditing={onSubmit}
-        style={aig.input}
-        outlineStyle={aig.outline}
-        contentStyle={aig.content}
         returnKeyType="done"
       />
     </View>
@@ -184,9 +174,11 @@ function AndroidInputGroup({
 }
 
 const aig = StyleSheet.create({
-  input: { backgroundColor: "#fafafa" },
-  outline: { borderRadius: 12 },
-  content: { fontFamily: "PlusJakartaSans-Regular", fontSize: 15 },
+  stack: { gap: 12 },
+  field: { height: 58, borderRadius: 14, borderWidth: 1, borderColor: "rgba(15,61,55,0.15)", backgroundColor: "#FAFAFA", flexDirection: "row", alignItems: "center", paddingHorizontal: 16 },
+  icon: { marginRight: 13 },
+  input: { flex: 1, alignSelf: "stretch", fontFamily: "PlusJakartaSans-Regular", fontSize: 16, letterSpacing: 0, color: colors.ink, paddingTop: 0, paddingBottom: 0, textAlignVertical: "center", includeFontPadding: false },
+  eyeBtn: { alignItems: "center", justifyContent: "center", paddingLeft: 12, alignSelf: "stretch" },
 });
 
 // ─── Screen ───────────────────────────────────────────────────────────────────
@@ -228,39 +220,18 @@ export default function LoginScreen() {
           showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled"
         >
-          {/* ── Nav: back + logo ── */}
           <View style={s.navRow}>
-            <Pressable
-              onPress={() => { Haptics.selectionAsync(); router.back(); }}
-              hitSlop={12}
-            >
-              <View style={s.backBtn}>
-                <Ionicons name="chevron-back" size={18} color={colors.ink} />
-              </View>
+            <Pressable onPress={() => { Haptics.selectionAsync(); router.back(); }} hitSlop={12}>
+              <View style={s.backBtn}><Ionicons name="chevron-back" size={18} color={colors.ink} /></View>
             </Pressable>
-            <Image source={require("../../assets/logo.png")} style={s.logo} resizeMode="contain" />
           </View>
-
-          {/* ── Title ── */}
+          <View style={s.brandBlock}>
+            <Image source={require("../../assets/logo.png")} style={s.logo} resizeMode="contain" />
+            <Text style={s.tagline}>India’s trusted study abroad platform</Text>
+          </View>
           <View style={s.titleBlock}>
             <Text style={s.title}>Welcome back</Text>
-            <Text style={s.subtitle}>Sign in to continue your MBBS journey.</Text>
-          </View>
-
-          {/* ── Google ── */}
-          <Pressable
-            onPress={() => Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)}
-            style={({ pressed }) => [s.googleBtn, pressed && s.googlePressed]}
-          >
-            <GoogleIcon />
-            <Text style={s.googleLabel}>Continue with Google</Text>
-          </Pressable>
-
-          {/* ── Divider ── */}
-          <View style={s.divider}>
-            <View style={s.divLine} />
-            <Text style={s.divText}>or</Text>
-            <View style={s.divLine} />
+            <Text style={s.subtitle}>Sign in to continue planning your next step.</Text>
           </View>
 
           {/* ── Inputs ── */}
@@ -289,7 +260,7 @@ export default function LoginScreen() {
           {/* ── CTA ── */}
           {loading
             ? <ActivityIndicator color={colors.primary} style={s.spinner} />
-            : <Button label="Sign in" icon="log-in" onPress={handleSignIn} />
+            : <Pressable onPress={handleSignIn} style={({ pressed }) => [s.submit, pressed && s.submitPressed]}><Text style={s.submitText}>Sign in</Text></Pressable>
           }
 
           {/* ── Register link ── */}
@@ -308,30 +279,29 @@ export default function LoginScreen() {
 }
 
 const s = StyleSheet.create({
-  root: { flex: 1, backgroundColor: Platform.OS === "ios" ? "#f2f2f7" : colors.background },
+  root: { flex: 1, backgroundColor: "#FBFCFA" },
   flex: { flex: 1 },
-  scroll: { paddingHorizontal: 20, gap: 22 },
+  scroll: { gap: 20, paddingHorizontal: 24 },
 
-  navRow: { flexDirection: "row", alignItems: "center", gap: 14 },
+  navRow: { flexDirection: "row", alignItems: "center" },
   backBtn: {
     width: 36, height: 36, borderRadius: 18,
-    backgroundColor: "#fff",
+    backgroundColor: "#F1F5F2",
     alignItems: "center", justifyContent: "center",
-    shadowColor: "#000", shadowOpacity: 0.07, shadowRadius: 4, shadowOffset: { width: 0, height: 1 },
-    elevation: 2,
+    borderWidth: 1, borderColor: "#E1E9E4",
   },
-  logoCentre: { flex: 1, alignItems: "center" },
-  logo: { width: 148, height: 30 },
-  navSpacer: { width: 36 },
+  brandBlock: { alignItems: "flex-start", marginTop: 28 },
+  logo: { width: 205, height: 44, marginBottom: 4 },
+  tagline: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 11, lineHeight: 16, letterSpacing: 0.28, color: colors.muted },
 
-  titleBlock: { gap: 5 },
+  titleBlock: { gap: 6, paddingTop: 34 },
   title: {
     fontFamily: "Fraunces-SemiBold",
-    fontSize: 34, color: colors.ink, letterSpacing: -0.5,
+    fontSize: 28, color: colors.ink, letterSpacing: -0.45,
   },
   subtitle: {
     fontFamily: "PlusJakartaSans-Regular",
-    fontSize: 15, color: colors.muted, lineHeight: 22,
+    fontSize: 14, color: colors.muted, lineHeight: 21,
   },
 
   googleBtn: {
@@ -360,6 +330,9 @@ const s = StyleSheet.create({
   },
   errorText: { fontFamily: "PlusJakartaSans-Regular", fontSize: 13, color: "#dc2626", flex: 1 },
   spinner: { marginVertical: 8 },
+  submit: { height: 54, borderRadius: 16, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
+  submitText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 16, color: "#fff" },
+  submitPressed: { opacity: 0.86, transform: [{ scale: 0.985 }] },
 
   switchRow: { flexDirection: "row", justifyContent: "center", alignItems: "center" },
   switchText: { fontFamily: "PlusJakartaSans-Regular", fontSize: 14, color: colors.muted },

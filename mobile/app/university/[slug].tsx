@@ -234,13 +234,6 @@ export default function UniversityDetailScreen() {
             {/* Est. pill */}
             <View style={sk.pill} />
 
-            {/* Recognition badges row */}
-            <View style={sk.row}>
-              {[96, 110, 82].map((w, i) => (
-                <View key={i} style={[sk.badge, { width: w }]} />
-              ))}
-            </View>
-
             {/* 3 fact tiles */}
             <View style={sk.factRow}>
               {[1, 2, 3].map(i => <View key={i} style={sk.factTile} />)}
@@ -285,7 +278,6 @@ export default function UniversityDetailScreen() {
   const usd = (n: number) => `$${n.toLocaleString()}`;
 
   const campusSections = [
-    { icon: "medkit-outline",     title: "Clinical Exposure",    body: university.clinicalExposure },
     { icon: "home-outline",       title: "Hostel & Accommodation", body: university.hostelOverview },
     { icon: "restaurant-outline", title: "Indian Food",          body: university.indianFoodSupport },
     { icon: "shield-checkmark-outline", title: "Safety",         body: university.safetyOverview },
@@ -387,23 +379,6 @@ export default function UniversityDetailScreen() {
               <Ionicons name="business-outline" size={13} color={colors.faint} />
               <Text style={s.estText}>Established {university.establishedYear}</Text>
             </View>
-          )}
-
-          {/* Recognition badges */}
-          {university.recognitionBadges?.length > 0 && (
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={s.badgeRow}
-              style={s.badgeScroll}
-            >
-              {university.recognitionBadges.map(b => (
-                <View key={b} style={s.recBadge}>
-                  <Ionicons name="ribbon-outline" size={12} color={colors.primary} />
-                  <Text style={s.recBadgeText}>{b}</Text>
-                </View>
-              ))}
-            </ScrollView>
           )}
 
           {/* Key facts */}
@@ -520,18 +495,6 @@ export default function UniversityDetailScreen() {
                 )}
               </View>
 
-              {/* Licensing pathway */}
-              {(university.admissionsContent.licensingPathway?.length ?? 0) > 0 && (
-                <View style={[s.admBlock, { marginTop: 12 }]}>
-                  <View style={s.admLabelRow}>
-                    <Ionicons name="medal-outline" size={15} color={colors.primary} />
-                    <Text style={s.admLabel}>Licensing Pathway</Text>
-                  </View>
-                  {university.admissionsContent.licensingPathway!.map((step, i) => (
-                    <CheckItem key={i} text={step} variant="check" />
-                  ))}
-                </View>
-              )}
             </View>
           )}
 
@@ -621,35 +584,6 @@ export default function UniversityDetailScreen() {
             </View>
           )}
 
-          {/* Teaching hospitals */}
-          {university.teachingHospitals?.length > 0 && (
-            <View style={s.section}>
-              <SectionTitle>Teaching Hospitals</SectionTitle>
-              <View style={s.hospitalList}>
-                {university.teachingHospitals.map((h, i) => (
-                  <View key={i} style={s.hospitalRow}>
-                    <View style={s.hospitalIndex}>
-                      <Text style={s.hospitalIndexText}>{i + 1}</Text>
-                    </View>
-                    <Text style={s.hospitalName}>{h}</Text>
-                  </View>
-                ))}
-              </View>
-            </View>
-          )}
-
-          {/* License exam support */}
-          {(o?.licenseExamSupport?.length ?? 0) > 0 && (
-            <View style={s.section}>
-              <SectionTitle>Exam & Licensing Support</SectionTitle>
-              <View style={s.bulletList}>
-                {o!.licenseExamSupport.map((item, i) => (
-                  <CheckItem key={i} text={item} variant="check" />
-                ))}
-              </View>
-            </View>
-          )}
-
           {/* Things to consider */}
           {university.thingsToConsider?.length > 0 && (
             <View style={s.section}>
@@ -706,7 +640,7 @@ export default function UniversityDetailScreen() {
 
           {/* WhatsApp */}
           <Pressable
-            onPress={() => { Haptics.selectionAsync(); Linking.openURL("https://wa.me/919176162888?text=Hi%2C+I%27m+interested+in+MBBS+abroad.+Can+you+help+me%3F"); }}
+            onPress={() => { Haptics.selectionAsync(); Linking.openURL("https://wa.me/919176162888?text=Hi%2C+I%27m+exploring+study+abroad+options.+Can+you+help+me%3F"); }}
             style={({ pressed }) => [s.counselBtn, pressed && s.counselBtnPressed]}
           >
             <Ionicons name="logo-whatsapp" size={19} color={colors.primary} />
@@ -744,18 +678,6 @@ const sk = StyleSheet.create({
     height: 32,
     width: 130,
     borderRadius: 999,
-    backgroundColor: colors.line,
-  },
-  // Generic flex row
-  row: {
-    flexDirection: "row",
-    gap: 8,
-    marginTop: 4,
-  },
-  // Recognition badge placeholder
-  badge: {
-    height: 32,
-    borderRadius: 8,
     backgroundColor: colors.line,
   },
   // Fact tiles row

@@ -1,340 +1,42 @@
-import {
-  ActivityIndicator,
-  Pressable,
-  RefreshControl,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { ActivityIndicator, Pressable, RefreshControl, ScrollView, StyleSheet, Text, View } from "react-native";
+import { useState } from "react";
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useQuery } from "@tanstack/react-query";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "expo-router";
 import * as Haptics from "expo-haptics";
 
 import { mobileClient } from "../../src/api/mobileClient";
-import { useCall } from "../../src/context/CallContext";
-import { colors, shadow } from "../../src/theme/tokens";
-import type { CallBooking } from "../../src/types/domain";
+import { colors } from "../../src/theme/tokens";
 
-const AVATAR_COLORS = [
-  "#0f3d37", "#c2410c", "#7c3aed", "#0369a1", "#047857",
-];
+function initials(name: string) { return name.split(" ").slice(0, 2).map((word) => word[0]).join("").toUpperCase(); }
+function timeLabel(value: string | null) { if (!value) return ""; const date = new Date(value); return Number.isNaN(date.valueOf()) ? "" : date.toLocaleDateString(undefined, { month: "short", day: "numeric" }); }
 
-function avatarColor(name: string) {
-  return AVATAR_COLORS[name.charCodeAt(0) % AVATAR_COLORS.length];
-}
-
-function PeerAvatar({ name }: { name: string }) {
-  const initials = name.split(" ").slice(0, 2).map((w) => w[0]).join("").toUpperCase();
-  return (
-    <View style={[av.wrap, { backgroundColor: avatarColor(name) }]}>
-      <Text style={av.text}>{initials}</Text>
-    </View>
-  );
-}
-
-const av = StyleSheet.create({
-  wrap: {
-    width: 48,
-    height: 48,
-    borderRadius: 16,
-    alignItems: "center",
-    justifyContent: "center",
-    flexShrink: 0,
-  },
-  text: { fontFamily: "PlusJakartaSans-Bold", fontSize: 16, color: "#fff" },
-});
-
-function StatusBadge({ status }: { status: string }) {
-  if (status === "accepted") {
-    return (
-      <View style={[badge.base, badge.accepted]}>
-        <Ionicons name="checkmark-circle" size={11} color={colors.success} />
-        <Text style={[badge.text, { color: colors.success }]}>Ready</Text>
-      </View>
-    );
-  }
-  if (status === "pending") {
-    return (
-      <View style={[badge.base, badge.pending]}>
-        <Ionicons name="time" size={11} color={colors.amber} />
-        <Text style={[badge.text, { color: colors.amber }]}>Pending</Text>
-      </View>
-    );
-  }
-  return (
-    <View style={[badge.base, badge.declined]}>
-      <Text style={[badge.text, { color: colors.muted }]}>Declined</Text>
-    </View>
-  );
-}
-
-const badge = StyleSheet.create({
-  base: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 20,
-    borderWidth: 1,
-  },
-  accepted: { backgroundColor: "#f0fdf4", borderColor: "#bbf7d0" },
-  pending:  { backgroundColor: colors.amberSoft, borderColor: "#fde68a" },
-  declined: { backgroundColor: colors.line, borderColor: colors.line },
-  text: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 11 },
-});
-
-function BookingCard({ booking }: { booking: CallBooking }) {
-  const { startCall, isStarting, callError } = useCall();
-  const isAccepted = booking.bookingStatus === "accepted";
-
-  const handleCall = () => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-    startCall(booking.bookingId, booking.fullName, booking.universityName);
-  };
-
-  return (
-    <View style={card.row}>
-      <PeerAvatar name={booking.fullName} />
-      <View style={card.info}>
-        <Text style={card.name} numberOfLines={1}>{booking.fullName}</Text>
-        <Text style={card.sub} numberOfLines={1}>{booking.universityName}</Text>
-        {booking.courseName && (
-          <Text style={card.detail} numberOfLines={1}>{booking.courseName}</Text>
-        )}
-      </View>
-      <View style={card.right}>
-        <StatusBadge status={booking.bookingStatus} />
-        {isAccepted && (
-          <Pressable
-            onPress={handleCall}
-            disabled={isStarting}
-            style={({ pressed }) => [card.callBtn, pressed && card.callBtnPressed, isStarting && card.callBtnDisabled]}
-          >
-            <Ionicons name="call" size={16} color="#fff" />
-            <Text style={card.callBtnText}>Call</Text>
-          </Pressable>
-        )}
-      </View>
-    </View>
-  );
-}
-
-const card = StyleSheet.create({
-  row: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    gap: 12,
-    backgroundColor: colors.surface,
-  },
-  info: { flex: 1, minWidth: 0 },
-  name: { fontFamily: "PlusJakartaSans-Bold", fontSize: 14, color: colors.ink },
-  sub: { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, color: colors.muted, marginTop: 2 },
-  detail: { fontFamily: "PlusJakartaSans-Regular", fontSize: 11, color: colors.faint, marginTop: 1 },
-  right: { alignItems: "flex-end", gap: 8, flexShrink: 0 },
-  callBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    backgroundColor: colors.primary,
-    borderRadius: 12,
-    paddingHorizontal: 14,
-    paddingVertical: 8,
-  },
-  callBtnPressed: { opacity: 0.8, transform: [{ scale: 0.97 }] },
-  callBtnDisabled: { opacity: 0.5 },
-  callBtnText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 13, color: "#fff" },
-});
-
-export default function CallsScreen() {
+export default function ConnectScreen() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
-  const { callError } = useCall();
+  const client = useQueryClient();
+  const [role, setRole] = useState<"student" | "guide">("student");
+  const [roleMenuOpen, setRoleMenuOpen] = useState(false);
+  const { data, isLoading, error, isRefetching, refetch } = useQuery({ queryKey: ["conversations", role], queryFn: () => mobileClient.getConversations(role), staleTime: 15_000 });
+  const conversations = data?.conversations ?? [];
+  const starters = (data?.starters ?? []).filter((starter) => !starter.conversationId);
 
-  const { data, isLoading, error, refetch, isRefetching } = useQuery({
-    queryKey: ["call-bookings"],
-    queryFn: () => mobileClient.getCallBookings(),
-    staleTime: 30_000,
-  });
+  async function open(peerId: number, bookingId?: number) {
+    Haptics.selectionAsync();
+    const result = await mobileClient.openConversation(peerId, role, bookingId);
+    await client.invalidateQueries({ queryKey: ["conversations"] });
+    router.push({ pathname: "/chat/[id]", params: { id: String(result.conversationId), role } });
+  }
 
-  const bookings = data ?? [];
-  const accepted = bookings.filter((b) => b.bookingStatus === "accepted");
-  const others = bookings.filter((b) => b.bookingStatus !== "accepted");
-
-  return (
-    <View style={s.root}>
-      <SafeAreaView edges={["top"]} style={s.headerSafe}>
-        <View style={s.header}>
-          <Text style={s.title}>My Calls</Text>
-        </View>
-      </SafeAreaView>
-
-      {callError && (
-        <View style={s.errorBanner}>
-          <Ionicons name="alert-circle" size={14} color="#b71c1c" />
-          <Text style={s.errorText}>{callError}</Text>
-        </View>
-      )}
-
-      <ScrollView
-        contentContainerStyle={[s.scroll, { paddingBottom: insets.bottom + 100 }]}
-        showsVerticalScrollIndicator={false}
-        refreshControl={<RefreshControl refreshing={isRefetching} onRefresh={refetch} tintColor={colors.primary} />}
-      >
-        {isLoading ? (
-          <View style={s.center}>
-            <ActivityIndicator color={colors.primary} />
-          </View>
-        ) : error ? (
-          <View style={s.center}>
-            <Ionicons name="alert-circle-outline" size={40} color={colors.faint} />
-            <Text style={s.emptyTitle}>Couldn't load calls</Text>
-            <Text style={s.emptySub}>Sign in to see your booked guides.</Text>
-          </View>
-        ) : bookings.length === 0 ? (
-          <View style={s.emptyState}>
-            <View style={s.emptyIcon}>
-              <Ionicons name="call-outline" size={36} color={colors.primary} />
-            </View>
-            <Text style={s.emptyTitle}>No calls booked yet</Text>
-            <Text style={s.emptySub}>
-              Browse universities, find a student guide, and book a call to get first-hand advice.
-            </Text>
-            <Pressable
-              onPress={() => { Haptics.selectionAsync(); router.push("/(tabs)/search"); }}
-              style={({ pressed }) => [s.browseBtn, pressed && s.browseBtnPressed]}
-            >
-              <Text style={s.browseBtnText}>Browse universities</Text>
-              <Ionicons name="arrow-forward" size={15} color="#fff" />
-            </Pressable>
-          </View>
-        ) : (
-          <>
-            {/* Ready to call */}
-            {accepted.length > 0 && (
-              <View style={s.section}>
-                <Text style={s.sectionLabel}>Ready to call</Text>
-                <View style={s.listCard}>
-                  {accepted.map((b, i) => (
-                    <View key={b.bookingId}>
-                      {i > 0 && <View style={s.divider} />}
-                      <BookingCard booking={b} />
-                    </View>
-                  ))}
-                </View>
-              </View>
-            )}
-
-            {/* Other bookings */}
-            {others.length > 0 && (
-              <View style={s.section}>
-                <Text style={s.sectionLabel}>{accepted.length > 0 ? "Other requests" : "Booked guides"}</Text>
-                <View style={s.listCard}>
-                  {others.map((b, i) => (
-                    <View key={b.bookingId}>
-                      {i > 0 && <View style={s.divider} />}
-                      <BookingCard booking={b} />
-                    </View>
-                  ))}
-                </View>
-              </View>
-            )}
-          </>
-        )}
-      </ScrollView>
-    </View>
-  );
+  return <View style={s.root}>
+    <SafeAreaView edges={["top"]} style={s.safe}><View style={s.header}><View><Text style={s.title}>Connect</Text><Text style={s.subtitle}>{role === "guide" ? "Messages with students" : "Messages with your student guides"}</Text></View>{data?.capabilities.guide ? <View style={s.roleWrap}><Pressable onPress={() => setRoleMenuOpen((open) => !open)} style={s.roleButton}><Text style={s.roleText}>{role === "guide" ? "Student guide" : "My studies"}</Text><Ionicons name="chevron-down" size={14} color={colors.primary} /></Pressable>{roleMenuOpen ? <View style={s.roleMenu}><Pressable onPress={() => { setRole("student"); setRoleMenuOpen(false); }} style={s.roleOption}><Text style={s.roleOptionText}>My studies</Text></Pressable><Pressable onPress={() => { setRole("guide"); setRoleMenuOpen(false); }} style={s.roleOption}><Text style={s.roleOptionText}>Student guide</Text></Pressable></View> : null}</View> : null}</View></SafeAreaView>
+    {isLoading ? <View style={s.center}><ActivityIndicator color={colors.primary} /></View> : error ? <View style={s.empty}><View style={s.emptyIcon}><Ionicons name="cloud-offline-outline" size={34} color={colors.primary} /></View><Text style={s.emptyTitle}>Couldn’t load Connect</Text><Text style={s.emptySub}>Check your connection and try again.</Text><Pressable onPress={() => refetch()} style={s.retry}><Text style={s.retryText}>Try again</Text></Pressable></View> : <ScrollView contentContainerStyle={[s.scroll, { paddingBottom: insets.bottom + 86 }]} refreshControl={<RefreshControl refreshing={isRefetching} onRefresh={refetch} tintColor={colors.primary} />}>
+      {conversations.length === 0 && starters.length === 0 ? <View style={s.empty}><View style={s.emptyIcon}><Ionicons name="chatbubbles-outline" size={34} color={colors.primary} /></View><Text style={s.emptyTitle}>No conversations yet</Text><Text style={s.emptySub}>{role === "guide" ? "Student conversations will appear here." : "When you connect with a student guide, your messages will appear here."}</Text></View> : null}
+      {conversations.map((conversation) => <Pressable key={conversation.id} onPress={() => router.push({ pathname: "/chat/[id]", params: { id: String(conversation.id), role } })} style={({ pressed }) => [s.row, pressed && s.pressed]}><View style={s.avatar}><Text style={s.avatarText}>{initials(conversation.displayName)}</Text></View><View style={s.copy}><View style={s.nameRow}><Text style={s.name}>{conversation.displayName}</Text><Text style={s.time}>{timeLabel(conversation.lastMessageAt)}</Text></View><Text style={s.university} numberOfLines={1}>{conversation.universityName}</Text><Text style={s.preview} numberOfLines={1}>{conversation.lastMessageText ?? "Start the conversation"}</Text></View>{conversation.unreadCount > 0 ? <View style={s.unread}><Text style={s.unreadText}>{conversation.unreadCount}</Text></View> : null}</Pressable>)}
+      {starters.length > 0 ? <><Text style={s.section}>{role === "guide" ? "STUDENTS" : "YOUR GUIDES"}</Text>{starters.map((starter) => <Pressable key={`${starter.peerId}-${starter.bookingId ?? ""}`} onPress={() => open(starter.peerId, starter.bookingId)} style={({ pressed }) => [s.row, pressed && s.pressed]}><View style={s.avatar}><Text style={s.avatarText}>{initials(starter.peerName)}</Text></View><View style={s.copy}><Text style={s.name}>{starter.peerName}</Text><Text style={s.university} numberOfLines={1}>{starter.universityName}</Text><Text style={s.preview}>Tap to start a message</Text></View><Ionicons name="chevron-forward" size={18} color={colors.faint} /></Pressable>)}</> : null}
+    </ScrollView>}
+  </View>;
 }
 
-const s = StyleSheet.create({
-  root: { flex: 1, backgroundColor: colors.background },
-  headerSafe: { backgroundColor: colors.background },
-  header: {
-    paddingHorizontal: 20,
-    paddingTop: 10,
-    paddingBottom: 14,
-  },
-  title: {
-    fontFamily: "Fraunces-SemiBold",
-    fontSize: 28,
-    color: colors.ink,
-    letterSpacing: -0.4,
-  },
-
-  errorBanner: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    marginHorizontal: 16,
-    marginBottom: 8,
-    backgroundColor: "#fff5f5",
-    borderRadius: 12,
-    padding: 12,
-    borderWidth: 1,
-    borderColor: "#fed7d7",
-  },
-  errorText: { fontFamily: "PlusJakartaSans-Medium", fontSize: 13, color: "#b71c1c", flex: 1 },
-
-  scroll: { paddingHorizontal: 16, paddingTop: 8 },
-  center: { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 80, gap: 12 },
-
-  section: { marginBottom: 24 },
-  sectionLabel: {
-    fontFamily: "PlusJakartaSans-Bold",
-    fontSize: 11,
-    color: colors.faint,
-    textTransform: "uppercase",
-    letterSpacing: 0.8,
-    marginBottom: 10,
-  },
-  listCard: {
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: colors.line,
-    overflow: "hidden",
-    ...shadow,
-  },
-  divider: { height: 1, backgroundColor: colors.line, marginLeft: 76 },
-
-  emptyState: {
-    alignItems: "center",
-    paddingTop: 60,
-    paddingHorizontal: 24,
-    gap: 12,
-  },
-  emptyIcon: {
-    width: 72,
-    height: 72,
-    borderRadius: 22,
-    backgroundColor: colors.primarySoft,
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: 4,
-  },
-  emptyTitle: { fontFamily: "Fraunces-SemiBold", fontSize: 22, color: colors.ink, textAlign: "center" },
-  emptySub: {
-    fontFamily: "PlusJakartaSans-Regular",
-    fontSize: 14,
-    color: colors.muted,
-    textAlign: "center",
-    lineHeight: 22,
-  },
-  browseBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-    backgroundColor: colors.primary,
-    borderRadius: 16,
-    paddingHorizontal: 22,
-    paddingVertical: 13,
-    marginTop: 4,
-  },
-  browseBtnPressed: { opacity: 0.85, transform: [{ scale: 0.97 }] },
-  browseBtnText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 14, color: "#fff" },
-});
+const s = StyleSheet.create({ root: { flex: 1, backgroundColor: colors.background }, safe: { backgroundColor: colors.background, zIndex: 2 }, header: { paddingHorizontal: 20, paddingTop: 10, paddingBottom: 16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, title: { fontFamily: "Fraunces-SemiBold", fontSize: 30, letterSpacing: -0.5, color: colors.ink }, subtitle: { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, color: colors.muted, marginTop: 3 }, roleWrap: { position: "relative" }, roleButton: { flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: 10, paddingVertical: 8, borderRadius: 12, backgroundColor: colors.primarySoft }, roleText: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 11, color: colors.primary }, roleMenu: { position: "absolute", top: 42, right: 0, width: 146, paddingVertical: 5, borderRadius: 12, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.line, shadowColor: "#000", shadowOpacity: 0.12, shadowRadius: 12, elevation: 5 }, roleOption: { paddingHorizontal: 12, paddingVertical: 10 }, roleOptionText: { fontFamily: "PlusJakartaSans-Medium", fontSize: 12, color: colors.ink }, center: { flex: 1, alignItems: "center", justifyContent: "center" }, scroll: { paddingHorizontal: 16 }, row: { minHeight: 78, flexDirection: "row", alignItems: "center", gap: 12, paddingVertical: 12, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: colors.line }, pressed: { opacity: 0.7 }, avatar: { width: 50, height: 50, borderRadius: 17, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" }, avatarText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 15, color: "#fff" }, copy: { flex: 1, minWidth: 0 }, nameRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8 }, name: { flex: 1, fontFamily: "PlusJakartaSans-Bold", fontSize: 14, color: colors.ink }, time: { fontFamily: "PlusJakartaSans-Regular", fontSize: 10, color: colors.faint }, university: { fontFamily: "PlusJakartaSans-Regular", fontSize: 11, color: colors.muted, marginTop: 2 }, preview: { fontFamily: "PlusJakartaSans-Regular", fontSize: 12, color: colors.faint, marginTop: 3 }, unread: { minWidth: 19, height: 19, borderRadius: 10, alignItems: "center", justifyContent: "center", backgroundColor: colors.primary }, unreadText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 10, color: "#fff" }, section: { marginTop: 24, marginBottom: 4, fontFamily: "PlusJakartaSans-Bold", fontSize: 11, letterSpacing: 0.8, color: colors.faint }, empty: { alignItems: "center", paddingTop: 90, paddingHorizontal: 30 }, emptyIcon: { width: 72, height: 72, borderRadius: 24, backgroundColor: colors.primarySoft, alignItems: "center", justifyContent: "center" }, emptyTitle: { fontFamily: "Fraunces-SemiBold", fontSize: 24, color: colors.ink, marginTop: 18 }, emptySub: { fontFamily: "PlusJakartaSans-Regular", fontSize: 13, lineHeight: 20, textAlign: "center", color: colors.muted, marginTop: 8 }, retry: { marginTop: 18, paddingHorizontal: 16, paddingVertical: 10, borderRadius: 12, backgroundColor: colors.primary }, retryText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 13, color: "#fff" } });

@@ -16,7 +16,7 @@ import { mobileClient } from "../src/api/mobileClient";
 import { colors, shadow } from "../src/theme/tokens";
 
 const COUNSELLOR_PHONE = "+919176162888";
-const WHATSAPP_URL = `https://wa.me/919176162888?text=Hi%2C+I%27m+interested+in+MBBS+abroad.+Can+you+help+me%3F`;
+const WHATSAPP_URL = `https://wa.me/919176162888?text=Hi%2C+I%27m+exploring+study+abroad+options.+Can+you+help+me%3F`;
 
 export default function CounsellingScreen() {
   const router = useRouter();

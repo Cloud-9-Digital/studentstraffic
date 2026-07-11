@@ -6,10 +6,11 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "studentstraffic",
+    "newArchEnabled": false,
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "cover",
+      "image": "./assets/splash-transparent.png",
+      "resizeMode": "contain",
       "backgroundColor": "#0a4a3a"
     },
     "ios": {

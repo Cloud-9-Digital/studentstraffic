@@ -11,7 +11,6 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { TextInput as PaperInput } from "react-native-paper";
 import { StatusBar } from "expo-status-bar";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -91,7 +90,7 @@ function SuccessScreen() {
         <Ionicons name="checkmark" size={38} color={colors.primary} />
       </View>
       <Text style={sc.title}>Account created!</Text>
-      <Text style={sc.sub}>You're all set. Sign in to start your MBBS journey.</Text>
+      <Text style={sc.sub}>You're all set. Sign in to start exploring your options.</Text>
       <Button
         label="Sign in now"
         icon="log-in"
@@ -187,38 +186,52 @@ const ig = StyleSheet.create({
   sep: { height: StyleSheet.hairlineWidth, backgroundColor: "rgba(0,0,0,0.10)", marginLeft: 45 },
 });
 
-// ─── Android Paper inputs ─────────────────────────────────────────────────────
+// ─── Android branded outlined inputs ──────────────────────────────────────────
+
+function AndroidField({ icon, right, ...props }: any) {
+  return (
+    <View style={aig.field}>
+      <Ionicons name={icon} size={22} color={colors.faint} style={aig.icon} />
+      <TextInput
+        {...props}
+        style={aig.input}
+        placeholderTextColor={colors.faint}
+        selectionColor={colors.primary}
+        onFocus={() => { Haptics.selectionAsync(); props.onFocus?.(); }}
+      />
+      {right}
+    </View>
+  );
+}
 
 function AndroidInputs({ name, setName, email, setEmail, phone, setPhone, password, setPassword, showPwd, setShowPwd, onSubmit }: any) {
   return (
-    <View style={{ gap: 12 }}>
+    <View style={aig.stack}>
       {[
         { label: "Full name",     value: name,     set: setName,     icon: "person-outline",      kbType: "default",       autoComp: "name",         caps: "words"  },
         { label: "Email address", value: email,    set: setEmail,    icon: "mail-outline",        kbType: "email-address", autoComp: "email",        caps: "none"   },
         { label: "Phone number",  value: phone,    set: setPhone,    icon: "call-outline",        kbType: "phone-pad",     autoComp: "tel",          caps: "none"   },
       ].map(f => (
-        <PaperInput key={f.label} label={f.label} mode="outlined" value={f.value} onChangeText={f.set}
+        <AndroidField key={f.label} icon={f.icon} placeholder={f.label} value={f.value} onChangeText={f.set}
           keyboardType={f.kbType as any} autoCapitalize={f.caps as any} autoComplete={f.autoComp as any}
-          left={<PaperInput.Icon icon={p => <Ionicons name={f.icon as any} size={p.size - 2} color={p.color} />} />}
-          onFocus={() => Haptics.selectionAsync()}
-          style={aig.input} outlineStyle={aig.outline} contentStyle={aig.content} returnKeyType="next" />
+          returnKeyType="next" />
       ))}
-      <PaperInput label="Password" mode="outlined" value={password} onChangeText={setPassword}
+      <AndroidField icon="lock-closed-outline" placeholder="Password" value={password} onChangeText={setPassword}
         secureTextEntry={!showPwd} autoComplete="new-password"
-        left={<PaperInput.Icon icon={p => <Ionicons name="lock-closed-outline" size={p.size - 2} color={p.color} />} />}
-        right={<PaperInput.Icon
-          icon={p => <Ionicons name={showPwd ? "eye-off-outline" : "eye-outline"} size={p.size - 2} color={p.color} />}
-          onPress={() => { Haptics.selectionAsync(); setShowPwd(!showPwd); }} />}
-        onFocus={() => Haptics.selectionAsync()} onSubmitEditing={onSubmit}
-        style={aig.input} outlineStyle={aig.outline} contentStyle={aig.content} returnKeyType="done" />
+        right={<Pressable onPress={() => { Haptics.selectionAsync(); setShowPwd(!showPwd); }} hitSlop={10} style={aig.eyeBtn}>
+          <Ionicons name={showPwd ? "eye-off-outline" : "eye-outline"} size={22} color={colors.faint} />
+        </Pressable>}
+        onSubmitEditing={onSubmit} returnKeyType="done" />
     </View>
   );
 }
 
 const aig = StyleSheet.create({
-  input: { backgroundColor: "#fafafa" },
-  outline: { borderRadius: 12 },
-  content: { fontFamily: "PlusJakartaSans-Regular", fontSize: 15 },
+  stack: { gap: 12 },
+  field: { height: 58, borderRadius: 14, borderWidth: 1, borderColor: "rgba(15,61,55,0.15)", backgroundColor: "#FAFAFA", flexDirection: "row", alignItems: "center", paddingHorizontal: 16 },
+  icon: { marginRight: 13 },
+  input: { flex: 1, alignSelf: "stretch", fontFamily: "PlusJakartaSans-Regular", fontSize: 16, letterSpacing: 0, color: colors.ink, paddingTop: 0, paddingBottom: 0, textAlignVertical: "center", includeFontPadding: false },
+  eyeBtn: { alignItems: "center", justifyContent: "center", paddingLeft: 12, alignSelf: "stretch" },
 });
 
 // ─── Screen ───────────────────────────────────────────────────────────────────
@@ -265,26 +278,24 @@ export default function RegisterScreen() {
           showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled"
         >
-          {/* ── Nav row ── */}
           <View style={s.navRow}>
             <Pressable onPress={() => { Haptics.selectionAsync(); router.back(); }} hitSlop={12}>
-              <View style={s.backBtn}>
-                <Ionicons name="chevron-back" size={18} color={colors.ink} />
-              </View>
+              <View style={s.backBtn}><Ionicons name="chevron-back" size={18} color={colors.ink} /></View>
             </Pressable>
-            <Image source={require("../../assets/logo.png")} style={s.logo} resizeMode="contain" />
           </View>
+          {!done && <View style={s.brandBlock}>
+            <Image source={require("../../assets/logo.png")} style={s.logo} resizeMode="contain" />
+            <Text style={s.tagline}>India’s trusted study abroad platform</Text>
+          </View>}
+          {!done && <View style={s.titleBlock}>
+            <Text style={s.title}>Create your account</Text>
+            <Text style={s.subtitle}>Save your research and keep your options organised.</Text>
+          </View>}
 
           {done ? (
             <View style={s.successWrap}><SuccessScreen /></View>
           ) : (
             <>
-              {/* ── Title ── */}
-              <View style={s.titleBlock}>
-                <Text style={s.title}>Create your{"\n"}free account.</Text>
-                <Text style={s.subtitle}>Join 10,000+ students planning their MBBS abroad.</Text>
-              </View>
-
               {/* ── Inputs ── */}
               {Platform.OS === "ios"
                 ? <IOSGroupedInputs {...inputProps} />
@@ -305,7 +316,7 @@ export default function RegisterScreen() {
               {/* ── CTA ── */}
               {loading
                 ? <ActivityIndicator color={colors.primary} style={s.spinner} />
-                : <Button label="Create account" icon="person-add" onPress={handleCreate} />
+                : <Pressable onPress={handleCreate} style={({ pressed }) => [s.submit, pressed && s.submitPressed]}><Text style={s.submitText}>Create account</Text></Pressable>
               }
 
               <View style={s.switchRow}>
@@ -325,21 +336,22 @@ export default function RegisterScreen() {
 }
 
 const s = StyleSheet.create({
-  root: { flex: 1, backgroundColor: Platform.OS === "ios" ? "#f2f2f7" : colors.background },
+  root: { flex: 1, backgroundColor: "#FBFCFA" },
   flex: { flex: 1 },
-  scroll: { paddingHorizontal: 20, gap: 20 },
+  scroll: { gap: 20, paddingHorizontal: 24 },
 
-  navRow: { flexDirection: "row", alignItems: "center", gap: 14 },
+  navRow: { flexDirection: "row", alignItems: "center" },
   backBtn: {
-    width: 36, height: 36, borderRadius: 18, backgroundColor: "#fff",
+    width: 36, height: 36, borderRadius: 18, backgroundColor: "#F1F5F2",
     alignItems: "center", justifyContent: "center",
-    shadowColor: "#000", shadowOpacity: 0.07, shadowRadius: 4, shadowOffset: { width: 0, height: 1 },
-    elevation: 2,
+    borderWidth: 1, borderColor: "#E1E9E4",
   },
-  logo: { width: 148, height: 30 },
+  brandBlock: { alignItems: "flex-start", marginTop: 24 },
+  logo: { width: 192, height: 41, marginBottom: 4 },
+  tagline: { fontFamily: "PlusJakartaSans-SemiBold", fontSize: 11, lineHeight: 16, letterSpacing: 0.28, color: colors.muted },
 
-  titleBlock: { gap: 5 },
-  title: { fontFamily: "Fraunces-SemiBold", fontSize: 32, color: colors.ink, letterSpacing: -0.5, lineHeight: 40 },
+  titleBlock: { gap: 6, paddingTop: 28 },
+  title: { fontFamily: "Fraunces-SemiBold", fontSize: 28, color: colors.ink, letterSpacing: -0.45, lineHeight: 34 },
   subtitle: { fontFamily: "PlusJakartaSans-Regular", fontSize: 14, color: colors.muted, lineHeight: 21 },
 
   errorBox: {
@@ -350,6 +362,9 @@ const s = StyleSheet.create({
   },
   errorText: { fontFamily: "PlusJakartaSans-Regular", fontSize: 13, color: "#dc2626", flex: 1 },
   spinner: { marginVertical: 8 },
+  submit: { height: 54, borderRadius: 16, backgroundColor: colors.primary, alignItems: "center", justifyContent: "center" },
+  submitText: { fontFamily: "PlusJakartaSans-Bold", fontSize: 16, color: "#fff" },
+  submitPressed: { opacity: 0.86, transform: [{ scale: 0.985 }] },
 
   switchRow: { flexDirection: "row", justifyContent: "center", alignItems: "center" },
   switchText: { fontFamily: "PlusJakartaSans-Regular", fontSize: 14, color: colors.muted },

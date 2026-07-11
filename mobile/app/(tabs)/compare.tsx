@@ -40,7 +40,6 @@ const ROWS: Row[] = [
   { label: "Intake",       icon: "calendar-outline",  get: u => u.primaryOffering?.intakeMonths?.slice(0, 2).join(", ") ?? "—" },
   { label: "Location",     icon: "location-outline",  get: u => `${u.city}, ${u.country}` },
   { label: "Est.",         icon: "business-outline",  get: u => u.establishedYear ? String(u.establishedYear) : "—" },
-  { label: "Recognition",  icon: "ribbon-outline",    get: u => u.recognitionBadges?.slice(0, 2).join(", ") || "—" },
   { label: "Hostel",       icon: "home-outline",      get: u => u.hostelOverview ? "Available" : "—" },
   { label: "Food",         icon: "restaurant-outline",get: u => u.indianFoodSupport ? "Indian food" : "—" },
 ];

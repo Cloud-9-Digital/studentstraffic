@@ -142,14 +142,6 @@ export default function RootLayout() {
                 name="country/[slug]"
                 options={{ animation: "slide_from_right" }}
               />
-              <Stack.Screen
-                name="neet-match"
-                options={{
-                  presentation: "modal",
-                  animation: "slide_from_bottom",
-                  contentStyle: { backgroundColor: "transparent" },
-                }}
-              />
             </Stack>
             <ActiveCallModal />
             <IncomingCallBanner />

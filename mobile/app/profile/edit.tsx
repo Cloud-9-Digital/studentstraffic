@@ -19,7 +19,6 @@ export default function EditProfileScreen() {
   });
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [neetScore, setNeetScore] = useState("");
   const [budgetUsd, setBudgetUsd] = useState("");
   const [preferredCountries, setPreferredCountries] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -29,7 +28,6 @@ export default function EditProfileScreen() {
     if (!profile) return;
     setName(profile.name ?? "");
     setPhone(profile.phone ?? "");
-    setNeetScore(profile.neetScore ? String(profile.neetScore) : "");
     setBudgetUsd(profile.budgetUsd ? String(profile.budgetUsd) : "");
     setPreferredCountries(profile.preferredCountries.join(", "));
   }, [profile]);
@@ -41,7 +39,6 @@ export default function EditProfileScreen() {
       await mobileClient.updateProfile({
         name,
         phone,
-        neetScore: neetScore ? Number(neetScore) : null,
         budgetUsd: budgetUsd ? Number(budgetUsd) : null,
         preferredCountries: preferredCountries.split(",").map((item) => item.trim()).filter(Boolean),
       });
@@ -61,7 +58,6 @@ export default function EditProfileScreen() {
       <View style={styles.form}>
         <TextInput value={name} onChangeText={setName} placeholder="Full name" style={styles.input} />
         <TextInput value={phone} onChangeText={setPhone} placeholder="Phone" keyboardType="phone-pad" style={styles.input} />
-        <TextInput value={neetScore} onChangeText={setNeetScore} placeholder="NEET score" keyboardType="number-pad" style={styles.input} />
         <TextInput value={budgetUsd} onChangeText={setBudgetUsd} placeholder="Budget USD" keyboardType="number-pad" style={styles.input} />
         <TextInput value={preferredCountries} onChangeText={setPreferredCountries} placeholder="Preferred countries comma separated" style={styles.input} />
         {error ? <Text style={styles.error}>{error}</Text> : null}

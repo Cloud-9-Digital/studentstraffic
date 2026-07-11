@@ -55,71 +55,28 @@ const COUNTRY_GRADIENTS: Record<string, [string, string]> = {
 
 type Fact = { icon: string; label: string; value: string };
 
-const COUNTRY_FACTS: Record<string, Fact[]> = {
-  vietnam: [
-    { icon: "cash-outline",              label: "Annual fee",      value: "$3,500 – $5,000" },
-    { icon: "time-outline",              label: "Duration",        value: "6 years" },
-    { icon: "language-outline",          label: "Medium",          value: "English" },
-    { icon: "shield-checkmark-outline",  label: "NMC status",     value: "Recognised" },
-    { icon: "thermometer-outline",       label: "Climate",         value: "Tropical" },
-    { icon: "people-outline",            label: "Indian students", value: "Large community" },
-  ],
-  russia: [
-    { icon: "cash-outline",              label: "Annual fee",      value: "$4,000 – $8,000" },
-    { icon: "time-outline",              label: "Duration",        value: "6 years" },
-    { icon: "language-outline",          label: "Medium",          value: "English / Russian" },
-    { icon: "shield-checkmark-outline",  label: "NMC status",     value: "NMC & WHO approved" },
-    { icon: "thermometer-outline",       label: "Climate",         value: "Cold continental" },
-    { icon: "people-outline",            label: "Indian students", value: "Very large community" },
-  ],
-  georgia: [
-    { icon: "cash-outline",              label: "Annual fee",      value: "$5,000 – $8,000" },
-    { icon: "time-outline",              label: "Duration",        value: "6 years" },
-    { icon: "language-outline",          label: "Medium",          value: "English" },
-    { icon: "shield-checkmark-outline",  label: "NMC status",     value: "Recognised" },
-    { icon: "thermometer-outline",       label: "Climate",         value: "Temperate" },
-    { icon: "people-outline",            label: "Indian students", value: "Growing community" },
-  ],
-  kyrgyzstan: [
-    { icon: "cash-outline",              label: "Annual fee",      value: "$2,500 – $4,000" },
-    { icon: "time-outline",              label: "Duration",        value: "5 years" },
-    { icon: "language-outline",          label: "Medium",          value: "English" },
-    { icon: "shield-checkmark-outline",  label: "NMC status",     value: "Recognised" },
-    { icon: "thermometer-outline",       label: "Climate",         value: "Continental" },
-    { icon: "people-outline",            label: "Indian students", value: "Medium community" },
-  ],
-  uzbekistan: [
-    { icon: "cash-outline",              label: "Annual fee",      value: "$3,000 – $5,500" },
-    { icon: "time-outline",              label: "Duration",        value: "6 years" },
-    { icon: "language-outline",          label: "Medium",          value: "English" },
-    { icon: "shield-checkmark-outline",  label: "NMC status",     value: "Recognised" },
-    { icon: "thermometer-outline",       label: "Climate",         value: "Continental" },
-    { icon: "people-outline",            label: "Indian students", value: "Growing community" },
-  ],
-};
-
 const DEFAULT_FACTS: Fact[] = [
-  { icon: "cash-outline",             label: "Annual fee",  value: "Varies by university" },
-  { icon: "time-outline",             label: "Duration",    value: "5 – 6 years" },
-  { icon: "language-outline",         label: "Medium",      value: "English available" },
-  { icon: "shield-checkmark-outline", label: "NMC status",  value: "Check per university" },
+  { icon: "cash-outline",     label: "Tuition",            value: "Varies by program" },
+  { icon: "school-outline",   label: "Study levels",       value: "Undergrad & postgrad" },
+  { icon: "language-outline", label: "Teaching language",  value: "Varies by university" },
+  { icon: "document-outline", label: "Admissions",         value: "Check requirements" },
 ];
 
 const COUNTRY_ABOUT: Record<string, string> = {
   vietnam:
-    "Vietnam offers one of the most affordable English-medium MBBS programs in Asia. The tropical climate, vibrant street life, and a well-established Indian student community make settling in comfortable. Listed colleges meet NMC guidelines, providing a clear pathway back to Indian medical practice.",
+    "Vietnam combines a fast-growing education sector with vibrant cities, a tropical climate, and a welcoming student experience. Explore universities, programs, living costs, and admission requirements to find the right fit.",
 
   russia:
-    "Russia's medical universities — many over a century old — are respected globally, with WHO recognition and strong NMC guideline compliance across top institutions. The cold continental climate is offset by a very large Indian student presence in cities like Kazan and Volgograd. Strong clinical exposure and a rigorous research culture define the academic experience.",
+    "Russia offers a broad range of universities across major cities and regional campuses. Its strong academic tradition, research culture, and established international student communities make it worth comparing across programs and budgets.",
 
   georgia:
-    "Georgia combines European-standard medical education with affordable fees, entirely in English and within a safe, modern country. Tbilisi campuses offer a high quality of life in a temperate climate, and a growing Indian student community makes peer support readily available.",
+    "Georgia offers a modern study environment, compact cities, and a growing international student community. Compare teaching language, program structure, tuition, and lifestyle before shortlisting a university.",
 
   kyrgyzstan:
-    "Kyrgyzstan is among the most budget-friendly MBBS destinations globally — no donation fees, no capitation, just straightforward English-medium programs meeting NMC guidelines. The continental climate brings warm summers and cold winters, which most students from India adjust to quickly.",
+    "Kyrgyzstan is a budget-conscious destination with a mix of urban and campus-based experiences. Use university profiles to compare programs, fees, accommodation, and the support available to international students.",
 
   uzbekistan:
-    "Uzbekistan's medical education sector is modernising rapidly, backed by government investment and international partnerships. Fees are competitive, programs are English-medium, and cultural familiarity with South Asia makes daily life comfortable. The climate is warm in summer and cold in winter.",
+    "Uzbekistan is expanding its higher-education landscape through international partnerships and modern campuses. Compare university options, program language, living costs, and city life as you build your shortlist.",
 };
 
 // ── Info row ──────────────────────────────────────────────────────────────────
@@ -179,7 +136,7 @@ export default function CountryDetailScreen() {
   const key        = (slug ?? "").toLowerCase();
   const localImage = COUNTRY_IMAGES[key];
   const gradient   = COUNTRY_GRADIENTS[key] ?? ["#0a2620", "#0f3d37"];
-  const facts      = COUNTRY_FACTS[key]     ?? DEFAULT_FACTS;
+  const facts      = DEFAULT_FACTS;
   const aboutText  = COUNTRY_ABOUT[key]     ?? "";
   const displayName = nameParam ?? (slug ? slug.charAt(0).toUpperCase() + slug.slice(1) : "");
 
@@ -243,7 +200,7 @@ export default function CountryDetailScreen() {
             pointerEvents="none"
           >
             <View style={s.heroTextWrap}>
-              <Text style={s.heroSub}>MBBS Destination</Text>
+              <Text style={s.heroSub}>STUDY DESTINATION</Text>
               <Text style={s.heroName}>{displayName}</Text>
             </View>
           </LinearGradient>

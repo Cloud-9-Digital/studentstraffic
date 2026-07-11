@@ -13,7 +13,6 @@ export type University = {
   tuitionUsd: number;
   duration?: string;
   medium?: string;
-  recognition?: string[];
   summary?: string;
   fit?: string;
   isShortlisted?: boolean;
@@ -60,7 +59,6 @@ export type UniversityDetail = University & {
   officialWebsite?: string;
   campusLifestyle?: string;
   cityProfile?: string;
-  clinicalExposure?: string;
   hostelOverview?: string;
   indianFoodSupport?: string;
   safetyOverview?: string;
@@ -68,9 +66,6 @@ export type UniversityDetail = University & {
   whyChoose: string[];
   thingsToConsider: string[];
   bestFitFor: string[];
-  recognitionBadges: string[];
-  recognitionLinks: { label: string; url: string }[];
-  teachingHospitals: string[];
   faq: { question: string; answer: string }[];
   admissionsContent?: AdmissionsContent;
   primaryOffering: Offering | null;
@@ -103,23 +98,10 @@ export type StudentApplication = {
   updatedAt: string;
 };
 
-export type IndiaCollege = {
-  slug: string;
-  collegeName: string;
-  programName: string;
-  stateName: string;
-  cityName?: string;
-  managementType?: string;
-  universityName?: string;
-  yearOfInception?: number;
-  annualIntakeSeats?: number;
-};
-
 export type StudentProfile = {
   name: string;
   email: string;
   phone: string;
-  neetScore?: number | null;
   budgetUsd?: number | null;
   preferredCountries: string[];
 };
@@ -135,6 +117,40 @@ export type CallBooking = {
   universitySlug: string;
   bookingStatus: string;
   createdAt?: string | null;
+};
+
+export type GuideConversation = {
+  id: number;
+  peerId: number;
+  bookingId: number | null;
+  displayName: string;
+  subtitle: string;
+  universityName: string;
+  universitySlug: string;
+  lastMessageText: string | null;
+  lastMessageAt: string | null;
+  unreadCount: number;
+};
+
+export type GuideConversationStarter = {
+  peerId: number;
+  bookingId?: number;
+  peerName: string;
+  universityName: string;
+  universitySlug: string;
+  bookingStatus: string;
+  conversationId: number | null;
+  lastMessageAt: string | null;
+};
+
+export type GuideMessage = {
+  id: number;
+  conversationId: number;
+  senderUserId: string;
+  senderName: string | null;
+  body: string;
+  createdAt: string | null;
+  isMine: boolean;
 };
 
 export type CallTokenResponse = {

@@ -26,7 +26,7 @@ const TAB_LABELS: Record<string, string> = {
   search:     "Search",
   compare:    "Compare",
   shortlists: "Saved",
-  calls:      "Calls",
+  calls:      "Connect",
   profile:    "Profile",
 };
 

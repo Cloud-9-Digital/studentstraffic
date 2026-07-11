@@ -7,7 +7,7 @@ import { mobileError, mobileJson, readJson } from "@/lib/mobile/http";
 import { peerCallBookings, studentPeers, universities, users } from "@/lib/db/schema";
 import { createOrReusePeerCallSession } from "@/lib/peer-calls";
 
-// GET — list booked guides for the student
+// GET — list connected contacts for either the student or their approved guide profile
 export async function GET(request: Request) {
   const session = await requireMobileSession(request);
   if (!session) return mobileError("unauthorized", "Please sign in again.", 401);
@@ -15,11 +15,13 @@ export async function GET(request: Request) {
   const db = getDb();
   if (!db) return mobileError("unavailable", "Service unavailable.", 503);
 
+  const guideMode = new URL(request.url).searchParams.get("role") === "guide";
   const bookings = await db
     .select({
       bookingId: peerCallBookings.id,
       peerId: studentPeers.id,
-      fullName: studentPeers.fullName,
+      guideName: studentPeers.fullName,
+      studentName: users.name,
       courseName: studentPeers.courseName,
       currentYearOrBatch: studentPeers.currentYearOrBatch,
       photoUrl: studentPeers.photoUrl,
@@ -31,10 +33,11 @@ export async function GET(request: Request) {
     .from(peerCallBookings)
     .innerJoin(studentPeers, eq(peerCallBookings.peerId, studentPeers.id))
     .innerJoin(universities, eq(studentPeers.universityId, universities.id))
-    .where(eq(peerCallBookings.studentUserId, session.user.id))
+    .leftJoin(users, eq(peerCallBookings.studentUserId, users.id))
+    .where(guideMode ? eq(studentPeers.peerUserId, session.user.id) : eq(peerCallBookings.studentUserId, session.user.id))
     .orderBy(peerCallBookings.createdAt);
 
-  return mobileJson({ bookings });
+  return mobileJson({ bookings: bookings.map((booking) => ({ ...booking, fullName: guideMode ? booking.studentName?.trim() || "Student" : booking.guideName })) });
 }
 
 // POST — start a call by bookingId
@@ -60,14 +63,15 @@ export async function POST(request: Request) {
       id: peerCallBookings.id,
       status: peerCallBookings.status,
       peerId: peerCallBookings.peerId,
+      studentUserId: peerCallBookings.studentUserId,
+      peerUserId: studentPeers.peerUserId,
+      universityId: studentPeers.universityId,
+      universityName: universities.name,
     })
     .from(peerCallBookings)
-    .where(
-      and(
-        eq(peerCallBookings.id, bookingId),
-        eq(peerCallBookings.studentUserId, session.user.id)
-      )
-    )
+    .innerJoin(studentPeers, eq(peerCallBookings.peerId, studentPeers.id))
+    .innerJoin(universities, eq(studentPeers.universityId, universities.id))
+    .where(eq(peerCallBookings.id, bookingId))
     .limit(1);
 
   if (!booking) {
@@ -77,36 +81,19 @@ export async function POST(request: Request) {
     return mobileError("forbidden", "This booking has not been accepted yet.", 403);
   }
 
-  const [[peer], [caller]] = await Promise.all([
-    db
-      .select({
-        id: studentPeers.id,
-        peerUserId: studentPeers.peerUserId,
-        universityId: studentPeers.universityId,
-        universityName: universities.name,
-      })
-      .from(studentPeers)
-      .innerJoin(universities, eq(studentPeers.universityId, universities.id))
-      .where(eq(studentPeers.id, booking.peerId))
-      .limit(1),
-    db
-      .select({ name: users.name })
-      .from(users)
-      .where(eq(users.id, session.user.id))
-      .limit(1),
-  ]);
-
-  if (!peer?.peerUserId) {
-    return mobileError("not_found", "Guide not available.", 404);
-  }
+  const isStudent = booking.studentUserId === session.user.id;
+  const isGuide = booking.peerUserId === session.user.id;
+  if (!isStudent && !isGuide) return mobileError("not_found", "Booking not found.", 404);
+  if (!booking.peerUserId) return mobileError("not_found", "Guide not available.", 404);
+  const [caller] = await db.select({ name: users.name }).from(users).where(eq(users.id, session.user.id)).limit(1);
 
   const call = await createOrReusePeerCallSession({
-    peerId: peer.id,
-    universityId: peer.universityId,
+    peerId: booking.peerId,
+    universityId: booking.universityId,
     callerUserId: session.user.id,
-    recipientUserId: peer.peerUserId,
-    callerDisplayName: caller?.name?.trim() || "A student",
-    universityName: peer.universityName,
+    recipientUserId: isStudent ? booking.peerUserId : booking.studentUserId,
+    callerDisplayName: caller?.name?.trim() || (isGuide ? "Student guide" : "A student"),
+    universityName: booking.universityName,
   });
 
   return mobileJson({ callId: call.callId });
