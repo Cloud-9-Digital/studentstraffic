@@ -364,6 +364,7 @@ export const mobileClient = {
     userState: string;
     universitySlug?: string;
     courseSlug?: string;
+    countrySlug?: string;
     notes?: string;
   }) {
     return request<{ success: boolean; leadId: number }>("/api/mobile/v1/counselling", {
