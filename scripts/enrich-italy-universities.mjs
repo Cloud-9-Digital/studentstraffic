@@ -37,7 +37,7 @@ function buildAdmissionsContent(uni) {
     licensingPathway: [
       `${uni.name}'s Medicine and Surgery degree is WHO-recognised and graduates are eligible for FMGE/NExT — the licensing examination required for NMC registration and the right to practise medicine in India.`,
       "ECFMG certification is available for graduates of WHO-listed Italian universities — opening USMLE Steps 1, 2 CK, and 3 for US medical residency.",
-      "WDOMS listing enables the PLAB 1 and PLAB 2 pathway to UK GMC registration.",
+      "official regulatory verification enables the PLAB 1 and PLAB 2 pathway to UK GMC registration.",
       "WHO listing meets the AMC CAT and Clinical Exam eligibility for Australian medical registration.",
     ],
     documentsRequired: {

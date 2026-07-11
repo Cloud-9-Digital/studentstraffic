@@ -71,7 +71,7 @@ export default function TamilNaduHubPage() {
     {
       question: "How do I verify if a university meets NMC guidelines?",
       answer:
-        "NMC publishes guidelines (FMGL 2021) that foreign universities must meet. The practical verification is the NMC Eligibility Certificate process at nmc.org.in — NMC will only issue the certificate for universities meeting current guidelines. We also cross-check WDOMS (WHO database) listing. During counselling, we show you exactly how this works.",
+        "NMC publishes guidelines (FMGL 2021) that foreign universities must meet. The practical verification is the NMC Eligibility Certificate process at nmc.org.in — NMC will only issue the certificate for universities meeting current guidelines. We also cross-check official medical-school directory listing. During counselling, we show you exactly how this works.",
     },
     {
       question: "What NEET score is required for MBBS abroad?",
@@ -413,9 +413,9 @@ export default function TamilNaduHubPage() {
                   <CheckCircle className="size-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-heading">NMC & WDOMS Verification</h3>
+                  <h3 className="font-semibold text-heading">NMC & official regulatory sources Verification</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    Every recommended university is cross-verified against National Medical Commission (NMC) approved foreign institutions list and World Directory of Medical Schools (WDOMS).
+                    Every recommended university is cross-verified against National Medical Commission (NMC) approved foreign institutions list and World Directory of Medical Schools (official regulatory sources).
                     We explain FMGE/NExT exam requirements, eligibility criteria, pass rates, and complete medical licensing procedure for practicing in India after graduation.
                     We show you exactly how to independently verify recognition status on official websites.
                   </p>

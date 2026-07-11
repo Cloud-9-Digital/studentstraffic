@@ -109,7 +109,7 @@ Some of the most reputable private colleges with high Indian enrollment:
 - **Green Life Medical College**
 - **Holy Family Red Crescent Medical College**
 
-*Always verify your chosen college independently on the WDOMS list and current NMC advisories.*
+*Always verify your chosen college independently on the official regulatory sources list and current NMC advisories.*
 
 ---
 
@@ -239,7 +239,7 @@ If your absolute maximum budget for 6 years of medical education—covering tuit
 
 You cannot afford Georgia, the Philippines, Bangladesh, or the top-tier universities in Russia and Kazakhstan (like KazNMU or Kazan Federal).
 
-However, you *can* still become a doctor. There are fully NMC-recognized, WDOMS-listed universities that fit this budget. The key is understanding that "cheapest" involves trade-offs in clinical exposure, infrastructure, and native academic environment. If you accept those trade-offs and rely on intense self-study for NExT, the budget path is viable.
+However, you *can* still become a doctor. There are fully NMC-recognized, officially verified universities that fit this budget. The key is understanding that "cheapest" involves trade-offs in clinical exposure, infrastructure, and native academic environment. If you accept those trade-offs and rely on intense self-study for NExT, the budget path is viable.
 
 Here are the genuine, verifiable cheapest options for MBBS abroad in 2026.
 

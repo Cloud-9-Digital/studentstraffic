@@ -81,7 +81,7 @@ const verificationChecklist = [
   },
   {
     item: "NMC guideline compliance",
-    whatToCheck: "Every university we process admissions for is assessed against NMC's FMGL guidelines and verified via WDOMS listing before any offer is accepted.",
+    whatToCheck: "Every university we process admissions for is assessed against NMC's FMGL guidelines and verified via official regulatory verification before any offer is accepted.",
   },
   {
     item: "NEET compliance clarity",

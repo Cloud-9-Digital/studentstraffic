@@ -16,7 +16,7 @@ import type {
   CountryRegulatoryAdvisory,
   UniversityRegulatoryAdvisory,
 } from "@/lib/data/regulatory-advisories";
-import type { FinderProgram, University, WdomsDirectoryEntry } from "@/lib/data/types";
+import type { FinderProgram, University } from "@/lib/data/types";
 import {
   getRussiaOfficialPageAudit,
   getRussiaOfficialPageAuditSummary,
@@ -96,14 +96,12 @@ export function UniversityAdmissionsSection({
   countryContent,
   countryAdvisory,
   universityAdvisory,
-  wdomsEntry,
 }: {
   university: University;
   primaryProgram: FinderProgram | undefined;
   countryContent: CountryContent | null;
   countryAdvisory: CountryRegulatoryAdvisory | null;
   universityAdvisory: UniversityRegulatoryAdvisory | null;
-  wdomsEntry: WdomsDirectoryEntry | null;
 }) {
   const isMedicalStream = isMedical(primaryProgram);
 
@@ -124,7 +122,7 @@ export function UniversityAdmissionsSection({
 
   const defaultSteps = isMedicalStream
     ? [
-        `We assess your NEET score, Class 12 PCB marks, budget, and preferences, then shortlist universities in ${countryName} that match your profile. Every university we present is WDOMS-listed, meets NMC guidelines, and confirmed open for foreign applicants in the current cycle.`,
+        `We assess your NEET score, Class 12 PCB marks, budget, and preferences, then shortlist universities in ${countryName} that match your profile. We verify current official admissions and India-return requirements before presenting an option.`,
         `We prepare your complete application document set in the format required — academic records, NEET scorecard, passport copy, photographs, and medical fitness certificate. We confirm any apostille, legalisation, or translation requirements before submission.`,
         `We submit your application through the university's official international admissions route and track the invitation or admission letter through to issue. We review the letter for accuracy before presenting it to you.`,
         `We guide you through the NMC Eligibility Certificate application at nmc.org.in after the admission letter is received. This is mandatory before departure; NMC issues it only for universities meeting current FMGL guidelines.`,
@@ -283,7 +281,7 @@ export function UniversityAdmissionsSection({
               Where can you practice after this degree?
             </h3>
             <p className="mt-3 text-base leading-8 text-muted-foreground">
-              A WDOMS-listed MBBS opens six career pathways. India return via FMGE/NExT
+              An overseas MBBS opens six career pathways. India return via FMGE/NExT
               is the most common, but the same degree qualifies you to sit licensing
               exams for the USA, UK, Australia, Canada, and New Zealand — or stay for
               PG in {primaryProgram?.country.name ?? "your study country"}.
@@ -305,9 +303,7 @@ export function UniversityAdmissionsSection({
             icon={<ShieldCheck className="size-4 text-accent" />}
             title="Recognition cross-check"
             body={
-              wdomsEntry
-                ? "This university has a mapped WDOMS record on the page, which gives you one more recognition checkpoint."
-                : "Recognition status is cross-checked against official sources before this university is recommended to any family."
+              "Recognition status is cross-checked against current official sources before this university is recommended to any family."
             }
           />
         </div>

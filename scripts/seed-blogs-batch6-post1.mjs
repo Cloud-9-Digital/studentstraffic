@@ -83,7 +83,7 @@ Before applying, you must meet all of the following conditions:
 | NEET | Valid NEET qualifying score — 50th percentile (General); 40th percentile (SC/ST/OBC) |
 | NEET validity | NEET score must be from the year of admission or within 3 years prior |
 | Age | 17+ years as of 31 December of the admission year |
-| University status | The foreign university must be listed on both the NMC approved list (nmc.org.in) and WDOMS (wdoms.org) |
+| University status | The foreign university must be listed on both the NMC approved list (nmc.org.in) and official regulatory sources (official regulator websites) |
 
 **OCI card holders:** As of NMC FMGL 2021, OCI card holders are treated on par with Indian citizens for this purpose and may apply for the EC. The process is identical; submit OCI card in lieu of Aadhaar where applicable.
 
@@ -100,7 +100,7 @@ The portal uses the **NMC ePortal** (eportal.nmc.org.in). Create a new applicant
 ### Step 2: Verify University NMC Recognition
 Before filling out the form, confirm your university is on the current NMC approved list. The list is updated annually; do not rely on a PDF downloaded months ago. Navigate to **Undergraduate → Approved Foreign Medical Colleges** on nmc.org.in and search for your institution by name and country.
 
-Also verify on WDOMS (wdoms.org). Search by institution name and country. Both listings are required.
+Also verify on official regulatory sources (official regulator websites). Search by institution name and country. Both listings are required.
 
 **If your university is not on both lists: stop. Do not proceed with admission to that institution.**
 
@@ -112,7 +112,7 @@ The EC application form requires the following information:
 - NEET percentile and qualifying status
 - Class 10 details (board, year, aggregate)
 - Class 12 details (board, year, aggregate, subject-wise marks)
-- Name of the foreign university (must match WDOMS exactly)
+- Name of the foreign university (must match official regulatory sources exactly)
 - Country of institution
 - Duration of the program
 - Mode of admission (direct / through agent / bilateral)
@@ -284,7 +284,7 @@ Indian embassies abroad are not typically involved in EC verification during you
 Use this checklist before submitting your EC application:
 
 - [ ] University confirmed on NMC approved list (current year — nmc.org.in)
-- [ ] University confirmed on WDOMS (wdoms.org)
+- [ ] University confirmed on official regulatory sources (official regulator websites)
 - [ ] NEET scorecard downloaded from NTA portal — percentile confirmed meeting NMC cutoff
 - [ ] NEET score is within 3-year validity window
 - [ ] University admission/invitation letter received on official letterhead

@@ -23,7 +23,7 @@ const env = Object.fromEntries(
 const VIETNAM_OVERVIEW = `
 ### Vietnam
 
-Vietnam is an emerging and underrated MBBS destination for Indian students. Several universities are listed in the World Directory of Medical Schools (WDOMS/FAIMER), and a growing number have obtained NMC approval. The country offers tropical climate, low cost of living, and English-medium programs — all at fees significantly lower than Russia or Kazakhstan.
+Vietnam is an emerging and underrated MBBS destination for Indian students. Several universities are listed in the World Directory of Medical Schools (official directory sources), and a growing number have obtained NMC approval. The country offers tropical climate, low cost of living, and English-medium programs — all at fees significantly lower than Russia or Kazakhstan.
 
 **Duration:** 6 years  
 **Language:** English medium at international programs (Vietnamese language classes included)  

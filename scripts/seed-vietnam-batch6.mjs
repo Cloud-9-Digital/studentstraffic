@@ -50,7 +50,7 @@ const universities = [
     ],
     thingsToConsider: [
       "The medicine program is taught in Vietnamese — international students need to account for a full language transition before and during clinical rotations.",
-      "NMC recognition status should be independently verified before applying; the university's WDOMS/FAIMER listing should be confirmed at wdoms.org.",
+      "NMC recognition status should be independently verified before applying; the university's official directory sources listing should be confirmed at official regulator websites.",
       "The on-demand employer-partnership model means some intake slots are employer-reserved — applicants should verify open international seats for the relevant year.",
       "Vinh Long has no established Indian student network and very limited English-language services outside campus academic structures.",
       "As a private institution, Cuu Long's international standing for India-return licensing purposes (NExT/FMGE) requires direct verification rather than assumption.",

@@ -22,7 +22,7 @@ const FAQS = [
   },
   {
     q: "Can I practice in USA, UK, or Australia after MBBS abroad?",
-    a: "Yes. An MBBS from a WDOMS-listed university opens multiple international pathways. For USA, you sit the USMLE (Steps 1, 2, 3) and match into a residency. For UK, you clear PLAB 1 and PLAB 2 to get GMC registration. For Australia/New Zealand, you clear the AMC CAT and Clinical exam. For Canada, you clear MCCQE Part 1 and NAC OSCE. You can also do your PG in the same country where you studied. The right pathway depends on your target country — our counsellors help you plan this from day one.",
+    a: "Yes. An MBBS from a officially verified university opens multiple international pathways. For USA, you sit the USMLE (Steps 1, 2, 3) and match into a residency. For UK, you clear PLAB 1 and PLAB 2 to get GMC registration. For Australia/New Zealand, you clear the AMC CAT and Clinical exam. For Canada, you clear MCCQE Part 1 and NAC OSCE. You can also do your PG in the same country where you studied. The right pathway depends on your target country — our counsellors help you plan this from day one.",
   },
   {
     q: "Is it safe to study in Russia or Kyrgyzstan?",

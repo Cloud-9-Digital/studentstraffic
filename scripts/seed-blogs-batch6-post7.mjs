@@ -65,7 +65,7 @@ Do not let an agent pick your country and university. This is your career — yo
 1. Set your total budget (6-year all-in cap)
 2. Selection countries that fit the budget (see our [fees comparison guide](/blog/mbbs-abroad-fees-country-comparison-2026))
 3. Within each country, look up NMC-approved universities at nmc.org.in
-4. Check WDOMS listing at wdoms.org for each selected university
+4. Check official regulatory verification at official regulator websites for each selected university
 5. Research FMGE/NExT pass rate data for each university (coaching institute data, student forums)
 6. Talk to current students at those universities (Students Traffic peer connect)
 
@@ -115,7 +115,7 @@ Do not proceed to any payment or government application without this letter in h
 ## STEP 4: Verify NMC Recognition (Again, Before Any Payment)
 **When:** Immediately upon receiving invitation letter
 
-Cross-check the exact institution name on the letter against the current NMC approved list (nmc.org.in → Undergraduate → Approved Foreign Medical Colleges). The name must match precisely. Also verify on WDOMS (wdoms.org).
+Cross-check the exact institution name on the letter against the current NMC approved list (nmc.org.in → Undergraduate → Approved Foreign Medical Colleges). The name must match precisely. Also verify on official regulatory sources (official regulator websites).
 
 If there is a discrepancy in the name (even minor), confirm with NMC which version is the recognized entity — do not assume.
 

@@ -48,7 +48,7 @@ Kyrgyzstan has several NMC-recognized medical universities — Osh State Univers
 
 What matters procedurally at this stage:
 
-1. **Verify current NMC/WDOMS status directly.** Before shortlisting any university, check its current listing on the NMC website and the World Directory of Medical Schools (WDOMS/FAIMER). Recognition is university-specific and can change — never rely on a brochure or agent's word alone.
+1. **Verify current NMC and official regulatory sources status directly.** Before shortlisting any university, check its current listing on the NMC website and the World Directory of Medical Schools (official directory sources). Recognition is university-specific and can change — never rely on a brochure or agent's word alone.
 2. **Decide city vs. cost trade-off.** Bishkek (capital) offers more infrastructure and a bigger hospital network; Osh and Jalal-Abad are more affordable with a large, well-established Indian student community.
 3. **Talk to current students if possible.** Ask specifically about hostel conditions, mess quality, clinical rotation access, and how responsive the university's international office is — these vary more than fee sheets suggest.
 4. **Shortlist 2–3 universities**, not one. Having a backup avoids losing an admission cycle if your first choice's seats fill or documentation gets delayed.
@@ -103,7 +103,7 @@ A realistic planning timeline looks like this:
 
 | Phase | Approximate window | What happens |
 |---|---|---|
-| Research & university shortlisting | March – May | Compare universities, verify NMC/WDOMS status, shortlist 2–3 options |
+| Research & university shortlisting | March – May | Compare universities, verify NMC and official regulatory sources status, shortlist 2–3 options |
 | Application submission | April – June | Submit forms and scanned documents; receive conditional offer |
 | Fee payment & Invitation Letter | June – July | Pay confirmation fee; receive official university invitation |
 | Document attestation (HRD + MEA apostille) | Run in parallel, ideally starting May–June | Get school certificates HRD-attested and apostilled |
@@ -162,7 +162,7 @@ As of 2026, the **National Exit Test (NExT)** — which is meant to eventually s
 
 ### What you need to clear FMGE (or NExT, once applicable)
 
-1. Your foreign medical degree must come from a university listed in the **WDOMS** and satisfy NMC's FMGL Regulations 2021 — course duration (minimum 54 months of academic study), a 12-month internship, 100% English medium instruction, and host-country licensing eligibility.
+1. Your foreign medical degree must come from a university listed in the **official regulatory sources** and satisfy NMC's FMGL Regulations 2021 — course duration (minimum 54 months of academic study), a 12-month internship, 100% English medium instruction, and host-country licensing eligibility.
 2. You register for and appear in the **FMGE**, conducted twice a year, through the National Board of Examinations.
 3. On clearing FMGE, you're eligible to register with a State Medical Council or the National Medical Register and begin practicing/pursuing further studies in India.
 4. If NExT for foreign graduates comes into effect before you graduate, expect a two-part structure — a theory step (NExT-1) that must be cleared before your internship, and a practical/clinical step (NExT-2) after — but do not plan your final years around this until NMC issues a confirmed applicability date for your graduating batch.

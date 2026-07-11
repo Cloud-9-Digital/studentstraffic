@@ -17,8 +17,7 @@ export const finderPageSize = 12;
 
 export const marketingNav = [
   { href: "/", label: "Home" },
-  { href: "/universities", label: "MBBS Abroad" },
-  { href: "/india-mbbs-colleges", label: "India MBBS Colleges" },
+  { href: "/universities", label: "Universities" },
   { href: "/guides", label: "Guides" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -39,7 +38,7 @@ export const guideNav = [
   {
     href: "/courses",
     label: "Course Guides",
-    description: "Understand MBBS, BDS, nursing, and postgraduate routes",
+    description: "Understand courses, destinations, fees, and admissions routes",
   },
   {
     href: "/compare",

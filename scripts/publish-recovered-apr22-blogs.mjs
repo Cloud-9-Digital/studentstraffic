@@ -185,7 +185,7 @@ ${bullets([
 That matters because many poor MBBS abroad decisions begin with misclassification. When families classify Bosnia as a budget country, they under-plan. When they classify it as automatically superior because it is in Europe, they stop asking hard questions. When they classify it as equivalent to any other Bosnia university, they miss the fact that medical outcomes are created at the institutional level, not the passport-map level.`
     ),
     section(
-      "Recognition, WDOMS, and India-Return Reality",
+      "Recognition, official regulatory sources, and India-Return Reality",
       `For Indian students, the biggest Bosnia decision is not whether the country sounds impressive. It is whether the exact university and exact program satisfy the recognition pathway you will later depend on.
 
 At a minimum, families should independently verify:

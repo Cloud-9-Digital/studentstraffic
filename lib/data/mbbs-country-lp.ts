@@ -332,7 +332,7 @@ const RUSSIA_DEEP_DIVE: DeepDiveSection[] = [
       {
         kind: "list",
         items: [
-          "Ask for the university's current NMC/WDOMS listing status directly, not just a screenshot — recognition status is checkable, not something to take on trust.",
+          "Ask for the university's current NMC and official regulatory sources listing status directly, not just a screenshot — recognition status is checkable, not something to take on trust.",
           "Ask to speak to a current Indian student at that specific university, in that specific city, before you pay anything — a real conversation, not a testimonial video.",
           "Be skeptical of any FMGE pass-rate percentage quoted without a stated source. As we found while researching this page, several public claims for the same Russian university and the same year directly contradict each other.",
           "Ask what clinical and internship exposure actually looks like in practice — hands-on time varies more by university than most marketing suggests.",

@@ -50,7 +50,7 @@ This guide covers everything you actually need to know — not the brochure vers
 Yes — provided you choose a university that is:
 
 1. Listed on the **NMC (National Medical Commission) approved list** — verify at nmc.org.in before enrolling
-2. Listed in the **World Directory of Medical Schools (WDOMS/FAIMER)**
+2. Listed in the **World Directory of Medical Schools (official directory sources)**
 3. You have a valid NEET score meeting the NMC cutoff (50th percentile for General, 40th for SC/ST/OBC)
 4. You clear **NExT Part 1 and Part 2** after returning to India
 

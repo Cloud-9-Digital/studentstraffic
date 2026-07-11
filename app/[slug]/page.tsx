@@ -52,7 +52,6 @@ import {
   getLandingPageContext,
   getLandingPageSlugs,
   getProgramBySlug,
-  getWdomsDirectoryEntryForUniversity,
 } from "@/lib/data/catalog";
 import {
   getPublishedStudyAbroadGuideSlugs,
@@ -115,10 +114,7 @@ async function getProgramPageData(rawSlug: string) {
   if (!program) return null;
 
   const { university, country } = program;
-  const [wdomsEntry, countryContent] = await Promise.all([
-    getWdomsDirectoryEntryForUniversity(university.slug),
-    Promise.resolve(getCountryContent(country.slug)),
-  ]);
+  const countryContent = getCountryContent(country.slug);
   const countryAdvisory = getCountryRegulatoryAdvisory(country.slug);
   const universityAdvisory = getUniversityRegulatoryAdvisory(
     country.slug,
@@ -131,7 +127,6 @@ async function getProgramPageData(rawSlug: string) {
     program,
     university,
     country,
-    wdomsEntry,
     countryContent,
     countryAdvisory,
     universityAdvisory,
@@ -1278,7 +1273,6 @@ async function ProgramPageRoute({
   program,
   university,
   country,
-  wdomsEntry,
   countryContent,
   countryAdvisory,
   universityAdvisory,
@@ -1297,7 +1291,6 @@ async function ProgramPageRoute({
     programs: [program],
     sameAs: [...new Set([
       ...university.recognitionLinks.map((item) => item.url),
-      wdomsEntry?.schoolUrl,
     ].filter(Boolean))] as string[],
   });
   const structuredDataItems = [
@@ -1321,7 +1314,6 @@ async function ProgramPageRoute({
         program={program}
         university={university}
         country={country}
-        wdomsEntry={wdomsEntry}
         countryContent={countryContent}
         countryAdvisory={countryAdvisory}
         universityAdvisory={universityAdvisory}

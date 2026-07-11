@@ -39,7 +39,7 @@ status it confers** — not a descriptive fact about the university itself. Audi
 redundant metadata, generic ownership descriptors) that had been written into this field, likely
 from early templated batch scripts. Cleaned up, but the pattern must not recur:
 
-- **Real (keep this pattern):** `"NMC FMGL 2021 Compliant"`, `"CASN Accredited"`, `"WDOMS Listed"`,
+- **Real (keep this pattern):** `"NMC FMGL 2021 Compliant"`, `"CASN Accredited"`, `"official regulatory sources Listed"`,
   `"AMEE (Association for Medical Education in Europe) — Member"`, `"IRCCS Research Hospital"`
   (a real Italian institutional designation), `"QAA (UK) — Five-Year Institutional Accreditation
   (reviewed June 2025)"`, `"DLI: O19395164223"` (a real Canadian government designation), `"EQF

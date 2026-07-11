@@ -39,7 +39,7 @@ const universities = [
     teachingHospitals: ["Partner State Polyclinics in Bishkek", "National Hospital"],
     recognitionBadges: ["NMC Compliant curriculum", "WHO Recognized", "FAIMER Listed"],
     faq: [
-      { question: "Is Adam University recognized in India?", answer: "Yes, it is WDOMS listed and its extended degree complies with NMC dictates." },
+      { question: "Is Adam University recognized in India?", answer: "Yes, it is official regulatory sources listed and its extended degree complies with NMC dictates." },
       { question: "What is the cost of living?", answer: "Living in Bishkek is highly affordable, usually under $250 USD a month." }
     ],
     programs: [
@@ -159,11 +159,11 @@ const universities = [
     indianFoodSupport: "Excellent access to Bishkek's Indian community resources.",
     safetyOverview: "Extremely safe.",
     studentSupport: "Smaller cohorts guarantee high faculty interaction.",
-    whyChoose: ["WDOMS Listed", "Bishkek Location", "Highly Affordable"],
+    whyChoose: ["official regulatory sources Listed", "Bishkek Location", "Highly Affordable"],
     thingsToConsider: ["Brand recognition is developing compared to state flagships."],
     bestFitFor: ["Budget-conscious private school seekers"],
     teachingHospitals: ["Partner Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -193,11 +193,11 @@ const universities = [
     indianFoodSupport: "Growing Indian mess network.",
     safetyOverview: "High campus security.",
     studentSupport: "Very competitive support structures to attract global students.",
-    whyChoose: ["Modern private infrastructure", "WDOMS Listed"],
+    whyChoose: ["Modern private infrastructure", "official regulatory sources Listed"],
     thingsToConsider: ["Brand is relatively new (Est. 2018)"],
     bestFitFor: ["Early adopters"],
     teachingHospitals: ["Capital Clinical Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -227,11 +227,11 @@ const universities = [
     indianFoodSupport: "Bishkek standard.",
     safetyOverview: "Safe city environment.",
     studentSupport: "High attention to detail for pioneer classes.",
-    whyChoose: ["WDOMS Listed", "European alignment focus"],
+    whyChoose: ["official regulatory sources Listed", "European alignment focus"],
     thingsToConsider: ["Extremely new institution; track record is nascent"],
     bestFitFor: ["Pioneering independent students"],
     teachingHospitals: ["Private Bishkek Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -261,11 +261,11 @@ const universities = [
     indianFoodSupport: "Standard Bishkek amenities.",
     safetyOverview: "Excellent.",
     studentSupport: "Highly versatile mentoring.",
-    whyChoose: ["WDOMS Listed interdisciplinary hub"],
+    whyChoose: ["official regulatory sources Listed interdisciplinary hub"],
     thingsToConsider: ["Medical faculty is part of a broader business institute"],
     bestFitFor: ["Students interested in healthcare administration"],
     teachingHospitals: ["Partner State Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -295,11 +295,11 @@ const universities = [
     indianFoodSupport: "Massive support; multiple dedicated Indian messes.",
     safetyOverview: "High security, strictly monitored.",
     studentSupport: "Exceptional FMGE coaching networks built into the curriculum.",
-    whyChoose: ["WDOMS Listed", "Massive South-Asian student focused infrastructure"],
+    whyChoose: ["official regulatory sources Listed", "Massive South-Asian student focused infrastructure"],
     thingsToConsider: ["Newer university"],
     bestFitFor: ["FMGE focused students"],
     teachingHospitals: ["Bishkek Network Hospitals"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -340,7 +340,7 @@ const universities = [
     ],
     bestFitFor: ["Budget-conscious students", "Nature lovers"],
     teachingHospitals: ["Karakol Regional Clinical Hospital"],
-    recognitionBadges: ["WDOMS Listed", "Major Regional Hub"],
+    recognitionBadges: ["official regulatory sources Listed", "Major Regional Hub"],
     faq: [],
     programs: [
       {
@@ -370,11 +370,11 @@ const universities = [
     indianFoodSupport: "Bishkek standard.",
     safetyOverview: "Safe city protocols.",
     studentSupport: "High teacher engagement due to specialization.",
-    whyChoose: ["WDOMS Listed", "Small class sizes"],
+    whyChoose: ["official regulatory sources Listed", "Small class sizes"],
     thingsToConsider: ["Significant focus remains on dental sciences"],
     bestFitFor: ["Independent students"],
     teachingHospitals: ["Partner Specialty Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -392,7 +392,7 @@ const universities = [
 ];
 
 async function seed() {
-  console.log("=== Kyrgyzstan Deep Enrichment: Batch 1 (Top WDOMS Match) ===\n");
+  console.log("=== Kyrgyzstan Deep Enrichment: Batch 1 (Top official regulatory sources Match) ===\n");
   const client = await pool.connect();
 
   try {

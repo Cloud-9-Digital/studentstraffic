@@ -441,7 +441,7 @@ Before approaching any bank, download the current NMC approved list and confirm 
 - Admission/Offer Letter (official, on university letterhead)
 - Fee structure for all 6 years (or per year)
 - Hostel cost breakdown
-- University WDOMS listing reference (for bank verification purposes)
+- University official regulatory verification reference (for bank verification purposes)
 
 ### Step 3: Prepare Co-applicant Documents
 - PAN card

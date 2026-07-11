@@ -55,7 +55,7 @@ const whatValidityActuallyMeans = [
 
 const validityVsRecognition = {
   recognition: {
-    what: "University appears on NMC/WDOMS lists",
+    what: "University appears on NMC and official regulatory sources lists",
     means: "Degree is recognized as legitimate medical qualification",
     doesNotMean: "Automatic license to practice in India without screening exam",
   },
@@ -101,8 +101,8 @@ const commonMisconceptions = [
     risk: "High",
   },
   {
-    myth: "WDOMS listing is sufficient proof of validity",
-    reality: "WDOMS (World Directory of Medical Schools) is a WHO database of existing medical schools. Listing indicates the school exists, not that graduates can practice in India without screening exams.",
+    myth: "official regulatory verification is sufficient proof of validity",
+    reality: "official regulatory sources (World Directory of Medical Schools) is a WHO database of existing medical schools. Listing indicates the school exists, not that graduates can practice in India without screening exams.",
     risk: "Medium",
   },
   {
@@ -129,9 +129,9 @@ const faqItems = [
       "Key Vietnamese medical universities meeting NMC guidelines include Hanoi Medical University (est. 1902), Hue University of Medicine and Pharmacy (1957), Pham Ngoc Thach University of Medicine (1947), and University of Medicine and Pharmacy at Ho Chi Minh City (1947). Verify each institution through the NMC Eligibility Certificate process at nmc.org.in — compliance is institution-specific.",
   },
   {
-    question: "Does WDOMS listing mean MBBS in Vietnam is valid in India?",
+    question: "Does official regulatory verification mean MBBS in Vietnam is valid in India?",
     answer:
-      "No. WDOMS (World Directory of Medical Schools) is a WHO database confirming the medical school exists globally. WDOMS listing does NOT mean: (1) graduates can practice in India without FMGE, (2) the university meets NMC's FMGL guidelines, or (3) the degree pathway satisfies India medical council requirements. WDOMS is a necessary baseline but not sufficient — NMC guideline compliance is verified separately through the Eligibility Certificate process.",
+      "No. official regulatory sources (World Directory of Medical Schools) is a WHO database confirming the medical school exists globally. official regulatory verification does NOT mean: (1) graduates can practice in India without FMGE, (2) the university meets NMC's FMGL guidelines, or (3) the degree pathway satisfies India medical council requirements. official regulatory sources is a necessary baseline but not sufficient — NMC guideline compliance is verified separately through the Eligibility Certificate process.",
   },
   {
     question: "What is the complete India practice pathway for Vietnam MBBS graduates?",

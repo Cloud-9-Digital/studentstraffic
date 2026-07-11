@@ -73,6 +73,6 @@ Status: **Publish-ready** (ok=true) - draft JSON meets the publisher gate.
 
 Seed and publish with:
 ```
-tsx scripts/seed-nonwdoms-draft.ts --file research-drafts/kyrgyzstan/international-medical-university.json
+tsx scripts/seed-university-draft.ts --file research-drafts/kyrgyzstan/international-medical-university.json
 tsx scripts/publish-university-draft.ts --queue-id <id-from-above>
 ```

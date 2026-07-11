@@ -27,7 +27,7 @@ const FINANCE_EXCLUSIONS =
 // Each query is tied to a display section. Multiple queries can share a topic.
 const QUERIES: { q: string; topic: string }[] = [
   { q: `NMC India medical university approved overseas license -cbse -school -board ${FINANCE_EXCLUSIONS}`, topic: "MBBS & Medical" },
-  { q: `medical university accreditation WDOMS WHO recognition overseas -cbse -school ${FINANCE_EXCLUSIONS}`, topic: "MBBS & Medical" },
+  { q: `medical university accreditation official regulatory sources WHO recognition overseas -cbse -school ${FINANCE_EXCLUSIONS}`, topic: "MBBS & Medical" },
   { q: `overseas medical college India students policy -cbse -school -board -class ${FINANCE_EXCLUSIONS}`, topic: "MBBS & Medical" },
   { q: `FMGE NExT USMLE PLAB medical licensing exam India -school -board -class ${FINANCE_EXCLUSIONS}`, topic: "Exams & Licensing" },
   { q: `study abroad university visa India -cbse -school -board -class10 -class12 ${FINANCE_EXCLUSIONS}`, topic: "Study Abroad" },
@@ -144,7 +144,7 @@ function isPromotional(article: NewsArticle): boolean {
 // on-topic keyword AND reject strong finance/trading vocabulary.
 
 const ON_TOPIC_KEYWORDS =
-  /\b(university|universities|college|colleges|campus|admission|admissions|scholarship|scholarships|student|students|study\s+abroad|studying\s+abroad|degree|course|courses|curriculum|medical|medicine|mbbs|nursing|engineering|engineer|mba|masters?|bachelor|undergraduate|postgraduate|phd|visa|intake|semester|enroll|enrolment|enrollment|accreditation|recognition|nmc|who|wdoms|faimer|neet|fmge|next\b|usmle|plab|ielts|toefl|gre|gmat|sat\b|exam|examination|licensing|residency|internship|hostel|tuition|fee(s)?)\b/i;
+  /\b(university|universities|college|colleges|campus|admission|admissions|scholarship|scholarships|student|students|study\s+abroad|studying\s+abroad|degree|course|courses|curriculum|medical|medicine|mbbs|nursing|engineering|engineer|mba|masters?|bachelor|undergraduate|postgraduate|phd|visa|intake|semester|enroll|enrolment|enrollment|accreditation|recognition|nmc|who|official-directory|faimer|neet|fmge|next\b|usmle|plab|ielts|toefl|gre|gmat|sat\b|exam|examination|licensing|residency|internship|hostel|tuition|fee(s)?)\b/i;
 
 const FINANCE_KEYWORDS =
   /\b(stock(s)?|share\s*price|share\s+market|stock\s+market|sensex|nifty|trading|trader|fintech|ipo|nfo|mutual\s+funds?|demat|broker(age)?|upstox|zerodha|groww|angel\s*one|paytm\s*money|moneycontrol|equity\s+market|sip\s+investment|nse\b|bse\b|f&o|derivatives|crypto(currency)?|bitcoin|forex)\b/i;

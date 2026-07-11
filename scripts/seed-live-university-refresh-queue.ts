@@ -77,7 +77,7 @@ async function main() {
     await db
       .insert(universityResearchQueue)
       .values({
-        wdomsSchoolId: syntheticSchoolId,
+        discoveryKey: syntheticSchoolId,
         countrySlug: row.countrySlug,
         schoolName: row.name,
         cityName: row.city,
@@ -88,7 +88,7 @@ async function main() {
         notes: note,
       })
       .onConflictDoUpdate({
-        target: universityResearchQueue.wdomsSchoolId,
+        target: universityResearchQueue.discoveryKey,
         set: {
           countrySlug: row.countrySlug,
           schoolName: row.name,

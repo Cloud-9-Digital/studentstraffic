@@ -46,6 +46,6 @@ Ran the same validation logic as `scripts/publish-university-draft.ts` (`validat
 ## Next step to actually publish
 
 ```
-tsx scripts/seed-nonwdoms-draft.ts --file research-drafts/albania/albanian-university.json
+tsx scripts/seed-university-draft.ts --file research-drafts/albania/albanian-university.json
 tsx scripts/publish-university-draft.ts --queue-id <id-printed-above>
 ```

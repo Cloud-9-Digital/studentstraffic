@@ -5,7 +5,7 @@ import { buildIndexableMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Is MBBS in Vietnam Valid in India? 2026 NMC Recognition Guide",
   description:
-    "Get a practical answer to whether MBBS in Vietnam is valid in India, including NMC recognition requirements, FMGE clearance (15-25% pass rate), WDOMS vs validity, and complete India practice pathway verification.",
+    "Get a practical answer to whether MBBS in Vietnam is valid in India, including NMC recognition requirements, FMGE clearance (15-25% pass rate), official regulatory sources vs validity, and complete India practice pathway verification.",
   path: "/is-mbbs-in-vietnam-valid-in-india",
   openGraphType: "article",
   keywords: [

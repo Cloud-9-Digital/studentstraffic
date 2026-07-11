@@ -63,4 +63,4 @@ Additional pages fetched for cross-checking but not cited as primary facts in th
 - draftContent: all 8 narrative fields present, non-empty, and scanned clean of weak-marker regexes (`pending official-source research`, `not yet verified`, `internal draft`, `needs official...`, `still needs`, `before publication`, `do not publish...`) ✓
 - draftContent.whyChoose: 4 (>= 3) ✓; thingsToConsider: 4 (>= 3) ✓; faq: 6 (>= 3) ✓
 
-JSON parses cleanly via `node -e "JSON.parse(...)"`. This draft should pass `scripts/publish-university-draft.ts` validation once seeded via `scripts/seed-nonwdoms-draft.ts --file <path>`.
+JSON parses cleanly via `node -e "JSON.parse(...)"`. This draft should pass `scripts/publish-university-draft.ts` validation once seeded via `scripts/seed-university-draft.ts --file <path>`.

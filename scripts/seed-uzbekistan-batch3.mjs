@@ -29,7 +29,7 @@ const universities = [
     thingsToConsider: ["Gulistan is less metropolitan than Tashkent or Samarkand"],
     bestFitFor: ["Budget-focused independent students"],
     teachingHospitals: ["Syrdarya Regional Network Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -59,11 +59,11 @@ const universities = [
     indianFoodSupport: "Tashkent network accessible.",
     safetyOverview: "Modern lab security protocols.",
     studentSupport: "Heavy research subsidies.",
-    whyChoose: ["WDOMS Listed", "Pharmacology-heavy foundation"],
+    whyChoose: ["official regulatory sources Listed", "Pharmacology-heavy foundation"],
     thingsToConsider: ["Specialized institute, fewer massive trauma rotations"],
     bestFitFor: ["Research and pharmacology seekers"],
     teachingHospitals: ["Partner Labs and Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -93,11 +93,11 @@ const universities = [
     indianFoodSupport: "Easily accessible in Tashkent.",
     safetyOverview: "Elite private security.",
     studentSupport: "Korean-backed infrastructural support with huge international mobility opportunities.",
-    whyChoose: ["South Korean backed technology and infrastructure", "Located in Tashkent", "WDOMS Listed"],
+    whyChoose: ["South Korean backed technology and infrastructure", "Located in Tashkent", "official regulatory sources Listed"],
     thingsToConsider: ["Brand is rapidly evolving but tuition is slightly higher"],
     bestFitFor: ["Tech-enabled learners"],
     teachingHospitals: ["Partner Capital Clinics"],
-    recognitionBadges: ["WDOMS Listed", "Tech Hub"],
+    recognitionBadges: ["official regulatory sources Listed", "Tech Hub"],
     faq: [],
     programs: [
       {
@@ -127,11 +127,11 @@ const universities = [
     indianFoodSupport: "Minimal; growing with tourism.",
     safetyOverview: "Extremely safe tourist city.",
     studentSupport: "Smaller cohorts enable tailored teaching.",
-    whyChoose: ["Incredible historic location in Khiva", "WDOMS Listed"],
+    whyChoose: ["Incredible historic location in Khiva", "official regulatory sources Listed"],
     thingsToConsider: ["Extremely quiet, non-metropolitan town"],
     bestFitFor: ["History lovers and quiet learners"],
     teachingHospitals: ["Regional Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -161,11 +161,11 @@ const universities = [
     indianFoodSupport: "The Fergana Valley's large international community ensures good access.",
     safetyOverview: "Very safe and community-focused.",
     studentSupport: "Backed by the massive state system.',",
-    whyChoose: ["Located in the bustling Fergana Valley", "Highly affordable State University", "WDOMS Listed"],
+    whyChoose: ["Located in the bustling Fergana Valley", "Highly affordable State University", "official regulatory sources Listed"],
     thingsToConsider: ["Long overland travel from Tashkent"],
     bestFitFor: ["Budget state university searchers"],
     teachingHospitals: ["Namangan State Teaching Hospitals"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -199,7 +199,7 @@ const universities = [
     thingsToConsider: ["Industrial aesthetics vs historic cities"],
     bestFitFor: ["Independent Budget learners"],
     teachingHospitals: ["Navoi State Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -229,11 +229,11 @@ const universities = [
     indianFoodSupport: "Capital city access.",
     safetyOverview: "High state security.",
     studentSupport: "Exceptional clinical coaching.",
-    whyChoose: ["Legacy Tashkent State Hub", "WDOMS Listed"],
+    whyChoose: ["Legacy Tashkent State Hub", "official regulatory sources Listed"],
     thingsToConsider: ["Highly competitive screening"],
     bestFitFor: ["Clinical perfectionists"],
     teachingHospitals: ["Second Tashkent State Hospital"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -267,7 +267,7 @@ const universities = [
     thingsToConsider: ["General MD track available but pediatric focus remains strong institutionally"],
     bestFitFor: ["Future pediatricians and elite academics"],
     teachingHospitals: ["Tashkent Primary Centers"],
-    recognitionBadges: ["WDOMS Listed", "Key Regional Hub"],
+    recognitionBadges: ["official regulatory sources Listed", "Key Regional Hub"],
     faq: [],
     programs: [
       {
@@ -297,11 +297,11 @@ const universities = [
     indianFoodSupport: "Available through local networks.",
     safetyOverview: "High security.",
     studentSupport: "Excellent simulation centers.",
-    whyChoose: ["WDOMS Listed State Platform", "Central capital location"],
+    whyChoose: ["official regulatory sources Listed State Platform", "Central capital location"],
     thingsToConsider: ["Institution primarily branded for dentistry"],
     bestFitFor: ["Boutique learners"],
     teachingHospitals: ["Tashkent Central Polyclinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -335,7 +335,7 @@ const universities = [
     thingsToConsider: ["Termez is extremely hot in summer and very remote"],
     bestFitFor: ["Highly independent academics"],
     teachingHospitals: ["Termez Regional Center"],
-    recognitionBadges: ["State Branch", "WDOMS Listed"],
+    recognitionBadges: ["State Branch", "official regulatory sources Listed"],
     faq: [],
     programs: [
       {

@@ -90,6 +90,7 @@ export async function createBlogPostAction(
 
   revalidatePath("/blog");
   revalidatePath(`/blog/${slug}`);
+  revalidateTag(`blog:${slug}`, "hours");
   revalidateTag("blog", "hours");
 
   return { success: true, postId: inserted.id };
@@ -178,6 +179,8 @@ export async function updateBlogPostAction(
     revalidatePath(`/blog/${existing.slug}`);
   }
   revalidatePath(`/blog/${nextSlug}`);
+  revalidateTag(`blog:${existing.slug}`, "hours");
+  revalidateTag(`blog:${nextSlug}`, "hours");
   revalidateTag("blog", "hours");
 
   return { success: true, postId };
@@ -189,8 +192,18 @@ export async function deleteBlogPostAction(postId: number): Promise<void> {
   const db = getDb();
   if (!db) return;
 
+  const [existing] = await db
+    .select({ slug: blogPosts.slug })
+    .from(blogPosts)
+    .where(eq(blogPosts.id, postId))
+    .limit(1);
+
   await db.delete(blogPosts).where(eq(blogPosts.id, postId));
 
   revalidatePath("/blog");
+  if (existing) {
+    revalidatePath(`/blog/${existing.slug}`);
+    revalidateTag(`blog:${existing.slug}`, "hours");
+  }
   revalidateTag("blog", "hours");
 }

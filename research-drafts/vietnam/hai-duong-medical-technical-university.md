@@ -51,4 +51,4 @@ None of these can be honestly filled because:
 
 ## Recommendation
 
-Hold this university out of the auto-publish pipeline. Do not seed it via `scripts/seed-nonwdoms-draft.ts`. Revisit only if a future check finds HMTU has launched an English-medium program with confirmed international/Indian-student admissions (would need a fresh officialProgramUrl, medium-of-instruction confirmation, and duration before this could pass the gate).
+Hold this university out of the auto-publish pipeline. Do not seed it via `scripts/seed-university-draft.ts`. Revisit only if a future check finds HMTU has launched an English-medium program with confirmed international/Indian-student admissions (would need a fresh officialProgramUrl, medium-of-instruction confirmation, and duration before this could pass the gate).

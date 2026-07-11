@@ -114,7 +114,7 @@ Once eligibility is confirmed, the next decision is which university. This is wh
 
 **What actually matters:**
 
-1. **Is the university currently listed with the National Medical Commission and in the World Directory of Medical Schools (WDOMS)?** This is institution-specific — "Georgia is approved" means nothing on its own. Check the specific university's name against the current NMC list yourself, not through an agent's word.
+1. **Is the university currently listed with the National Medical Commission and in the World Directory of Medical Schools (official regulatory sources)?** This is institution-specific — "Georgia is approved" means nothing on its own. Check the specific university's name against the current NMC list yourself, not through an agent's word.
 2. **Is the medium of instruction genuinely English for the full 6 years**, including clinical rotations, or does it quietly shift to Georgian/Russian in later years?
 3. **What is the university's actual clinical training setup** — affiliated teaching hospitals, patient case-load, simulation labs?
 4. **What do current students say**, not what the brochure says?

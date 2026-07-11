@@ -86,7 +86,7 @@ This is the most critical section of this guide. The NMC approved list changes a
 | Our Lady of Fatima University College of Medicine | Valenzuela/Antipolo | Verify current NMC status |
 | De La Salle Medical and Health Sciences Institute | Dasmarinas, Cavite | Verify current NMC status |
 
-> **Critical warning:** The Philippine medical sector has over 50 medical schools. The vast majority are NOT on NMC's approved list. Admission to any institution not on the NMC list means your degree will not be valid for NExT registration in India. Do not rely on an agent's claim that a college "is NMC recognized." Verify personally at nmc.org.in and cross-check against WDOMS (wdoms.org).
+> **Critical warning:** The Philippine medical sector has over 50 medical schools. The vast majority are NOT on NMC's approved list. Admission to any institution not on the NMC list means your degree will not be valid for NExT registration in India. Do not rely on an agent's claim that a college "is NMC recognized." Verify personally at nmc.org.in and cross-check against official regulatory sources (official regulator websites).
 
 ---
 

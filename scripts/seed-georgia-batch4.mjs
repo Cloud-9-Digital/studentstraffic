@@ -268,7 +268,7 @@ const universities = [
     type: "Private",
     establishedYear: 2021,
     officialWebsite: "#",
-    summary: "A newer private WDOMS-listed institution focused on offering streamlined, 6-year English medium health sciences pathways.",
+    summary: "A newer private officially verified institution focused on offering streamlined, 6-year English medium health sciences pathways.",
     campusLifestyle: "New and rapidly developing.",
     cityProfile: "Tbilisi.",
     clinicalExposure: "Partnered with local capital clinics.",
@@ -276,11 +276,11 @@ const universities = [
     indianFoodSupport: "Tbilisi standard.",
     safetyOverview: "Standard city protocols.",
     studentSupport: "Highly modern, digital-first approach.",
-    whyChoose: ["Modern, digital-first teaching", "Listed in WDOMS"],
+    whyChoose: ["Modern, digital-first teaching", "Listed in official regulatory sources"],
     thingsToConsider: ["Very new institution"],
     bestFitFor: ["Early adopters"],
     teachingHospitals: ["Private Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -314,7 +314,7 @@ const universities = [
     thingsToConsider: ["Smaller infrastructure than Akaki Tsereteli"],
     bestFitFor: ["Budget-conscious independent learners"],
     teachingHospitals: ["Kutaisi Regional Centers"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -336,7 +336,7 @@ const universities = [
     type: "Private",
     establishedYear: 2000,
     officialWebsite: "#",
-    summary: "An ultra-specialized medical academy focusing originally on plastic surgery and reconstruction, now offering broader medical foundations listed in WDOMS.",
+    summary: "An ultra-specialized medical academy focusing originally on plastic surgery and reconstruction, now offering broader medical foundations listed in official regulatory sources.",
     campusLifestyle: "Intensely specialized clinical environment.",
     cityProfile: "Tbilisi.",
     clinicalExposure: "Unprecedented exposure to specialized reconstructive and plastic surgery networks.",
@@ -344,11 +344,11 @@ const universities = [
     indianFoodSupport: "Tbilisi standard.",
     safetyOverview: "High-security clinical zones.",
     studentSupport: "Direct mentorship by specialized surgeons.",
-    whyChoose: ["Incredible exposure to cosmetic and reconstructive surgeries", "WDOMS Listed"],
+    whyChoose: ["Incredible exposure to cosmetic and reconstructive surgeries", "official regulatory sources Listed"],
     thingsToConsider: ["Extremely niche focus for general MBBS candidates"],
     bestFitFor: ["Future specialized surgeons"],
     teachingHospitals: ["Specialized Reconstructive Centers"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -378,11 +378,11 @@ const universities = [
     indianFoodSupport: "Tbilisi standard.",
     safetyOverview: "Standard city protection.",
     studentSupport: "Boutique support structure.",
-    whyChoose: ["WDOMS Listed", "Location in Tbilisi"],
+    whyChoose: ["official regulatory sources Listed", "Location in Tbilisi"],
     thingsToConsider: ["Boutique brand with less international renown than TSMU"],
     bestFitFor: ["Independent learners"],
     teachingHospitals: ["Tbilisi Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -412,11 +412,11 @@ const universities = [
     indianFoodSupport: "Tbilisi standard.",
     safetyOverview: "Safe.",
     studentSupport: "Strong emphasis on medical ethics mentorship.",
-    whyChoose: ["WDOMS Listed classical academy"],
+    whyChoose: ["official regulatory sources Listed classical academy"],
     thingsToConsider: ["Lower infrastructure profile"],
     bestFitFor: ["Ethics-centered scholars"],
     teachingHospitals: ["Partner Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -438,7 +438,7 @@ const universities = [
     type: "Private",
     establishedYear: 2010,
     officialWebsite: "#",
-    summary: "University Sakartvelo provides a streamlined, accessible general medicine program listed in the WDOMS network.",
+    summary: "University Sakartvelo provides a streamlined, accessible general medicine program listed in the official regulatory sources network.",
     campusLifestyle: "Streamlined, independent study-focused.",
     cityProfile: "Tbilisi.",
     clinicalExposure: "Varies; uses capital city clinical partnerships.",
@@ -446,11 +446,11 @@ const universities = [
     indianFoodSupport: "Tbilisi amenities.",
     safetyOverview: "City standard.",
     studentSupport: "Independent learning curve.",
-    whyChoose: ["WDOMS Listed private choice"],
+    whyChoose: ["official regulatory sources Listed private choice"],
     thingsToConsider: ["Requires high student independence"],
     bestFitFor: ["Independent mature students"],
     teachingHospitals: ["Tbilisi Clinic Partners"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -555,7 +555,7 @@ async function seed() {
     client.release();
     await pool.end();
   }
-  console.log("\n✅ Georgia Batch 4 Complete! EVERY WDOMS GEORGIAN UNIVERSITY IS NOW ENRICHED!");
+  console.log("\n✅ Georgia Batch 4 Complete! EVERY official regulatory sources GEORGIAN UNIVERSITY IS NOW ENRICHED!");
 }
 
 seed();

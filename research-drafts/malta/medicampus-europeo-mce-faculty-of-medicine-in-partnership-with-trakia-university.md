@@ -1,6 +1,6 @@
 # MediCampus Europeo (MCE) - Faculty of Medicine, in partnership with Trakia University
 
-Country: Malta | City: Floriana | Research date: 2026-07-07 | Status: Draft, gate-passing, ready for `seed-nonwdoms-draft.ts` + publish review
+Country: Malta | City: Floriana | Research date: 2026-07-07 | Status: Draft, gate-passing, ready for `seed-university-draft.ts` + publish review
 
 ## Key facts (corroborated)
 

@@ -25,11 +25,11 @@ const universities = [
     indianFoodSupport: "Capital city means widespread access to Indian restaurants and groceries.",
     safetyOverview: "Very secure private campus.",
     studentSupport: "Heavy focus on technology-assisted learning and FMGE guidance.",
-    whyChoose: ["Newly built, modern infrastructure in Tashkent", "Listed in WDOMS"],
+    whyChoose: ["Newly built, modern infrastructure in Tashkent", "Listed in official regulatory sources"],
     thingsToConsider: ["Brand is still relatively new in Central Asia"],
     bestFitFor: ["Seekers of modern campus living"],
     teachingHospitals: ["Private Tashkent Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -63,7 +63,7 @@ const universities = [
     thingsToConsider: ["Far removed from the capital; requires internal flights to Urgench airport"],
     bestFitFor: ["Budget-conscious students prioritizing public universities"],
     teachingHospitals: ["Urgench Regional Hospital System"],
-    recognitionBadges: ["WDOMS Listed", "Regional State Hub"],
+    recognitionBadges: ["official regulatory sources Listed", "Regional State Hub"],
     faq: [],
     programs: [
       {
@@ -93,11 +93,11 @@ const universities = [
     indianFoodSupport: "Capital city access.",
     safetyOverview: "High modern security.",
     studentSupport: "Pioneer cohort support focusing on rapid international accreditation.",
-    whyChoose: ["Located in Tashkent", "WDOMS Listed"],
+    whyChoose: ["Located in Tashkent", "official regulatory sources Listed"],
     thingsToConsider: ["Very new institution"],
     bestFitFor: ["Tech-focused students"],
     teachingHospitals: ["Partner Capital Hospitals"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -168,11 +168,11 @@ const universities = [
     indianFoodSupport: "Growing. Bukhara is deeply touristic, meaning diverse food availability.",
     safetyOverview: "Highly secure tourist destination.",
     studentSupport: "Focused on premium mentoring.",
-    whyChoose: ["Located in stunning Bukhara", "Smaller, personalized class sizes", "WDOMS Listed"],
+    whyChoose: ["Located in stunning Bukhara", "Smaller, personalized class sizes", "official regulatory sources Listed"],
     thingsToConsider: ["New regional private competitor"],
     bestFitFor: ["Prestige seekers in historic locations"],
     teachingHospitals: ["Bukhara Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -202,11 +202,11 @@ const universities = [
     indianFoodSupport: "Basic local access.",
     safetyOverview: "Extremely safe.",
     studentSupport: "High utilization of digital learning.",
-    whyChoose: ["WDOMS Listed", "Modernized curriculum"],
+    whyChoose: ["official regulatory sources Listed", "Modernized curriculum"],
     thingsToConsider: ["Pioneering faculty"],
     bestFitFor: ["Independent digital learners"],
     teachingHospitals: ["Bukhara City Networks"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -236,11 +236,11 @@ const universities = [
     indianFoodSupport: "Massive reliance on Indian mess systems.",
     safetyOverview: "Good, quiet valley location.",
     studentSupport: "Heavy FMGE focus.",
-    whyChoose: ["Built exclusively for international needs", "WDOMS Listed"],
+    whyChoose: ["Built exclusively for international needs", "official regulatory sources Listed"],
     thingsToConsider: ["Extremely new university brand"],
     bestFitFor: ["Budget searchers tracking FMGE coaching"],
     teachingHospitals: ["Fergana Polyclinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -274,7 +274,7 @@ const universities = [
     thingsToConsider: ["Not the main Tashkent campus"],
     bestFitFor: ["State legacy seekers on a budget"],
     teachingHospitals: ["Chirchik Municipal Hospital"],
-    recognitionBadges: ["State Branch", "WDOMS Listed"],
+    recognitionBadges: ["State Branch", "official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -304,11 +304,11 @@ const universities = [
     indianFoodSupport: "Tashkent network access.",
     safetyOverview: "High tier.",
     studentSupport: "Massive focus on language tracks and European placements.",
-    whyChoose: ["European curriculum alignment", "Located in Tashkent", "WDOMS Listed"],
+    whyChoose: ["European curriculum alignment", "Located in Tashkent", "official regulatory sources Listed"],
     thingsToConsider: ["High private tuition costs and new brand presence"],
     bestFitFor: ["Future European practitioners"],
     teachingHospitals: ["Partner Premium Tashkent Clinics"],
-    recognitionBadges: ["European Focus", "WDOMS Listed"],
+    recognitionBadges: ["European Focus", "official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -338,11 +338,11 @@ const universities = [
     indianFoodSupport: "Valley networks.",
     safetyOverview: "Excellent.",
     studentSupport: "Established, historically backed state mentorship.",
-    whyChoose: ["Broad state university backing", "Cheap living", "WDOMS Listed"],
+    whyChoose: ["Broad state university backing", "Cheap living", "official regulatory sources Listed"],
     thingsToConsider: ["Different faculty structure than the Fergana Medical Institute of Public Health"],
     bestFitFor: ["State seekers"],
     teachingHospitals: ["State Validation Clinics"],
-    recognitionBadges: ["Historic State Hub", "WDOMS Listed"],
+    recognitionBadges: ["Historic State Hub", "official regulatory sources Listed"],
     faq: [],
     programs: [
       {

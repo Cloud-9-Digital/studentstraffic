@@ -17,7 +17,7 @@ reoriented to those fields.
 
 **2026-07-09 — the template blocker is now cleared (data still not started).** The scalability
 refactor made the template capable of non-medical content: `recognition-detail-section.tsx` and
-`admissions-section.tsx` are stream-aware (medical streams render the WDOMS/NMC/FMGE pathway
+`admissions-section.tsx` are stream-aware (medical streams render the official regulatory sources/NMC/FMGE pathway
 unchanged; other streams render honest, data-driven accreditation copy with a generic fallback — no
 hardcoded UGC/AICTE/BCI claims). The `CourseStream` union (`lib/data/types.ts`) now includes
 `business`, `law`, `hospitality`, `agriculture`, and `education` alongside the existing streams — a

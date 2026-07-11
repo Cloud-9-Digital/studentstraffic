@@ -14,9 +14,9 @@ import {
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS, BDS, Nursing and Medical PG Abroad | Indian Students Guide",
+  title: "Courses Abroad for Indian Students | Fees, Eligibility & Universities",
   description:
-    "Understand MBBS, BDS, Nursing, and Medical PG abroad for Indian students with fees, eligibility, duration, and top countries.",
+    "Compare courses abroad for Indian students with fees, eligibility, duration, universities, and destination guidance.",
   path: "/courses",
 });
 

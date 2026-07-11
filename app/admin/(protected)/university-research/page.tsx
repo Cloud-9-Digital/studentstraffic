@@ -65,7 +65,7 @@ export default async function AdminUniversityResearchPage() {
     cityName: string | null;
     priority: string;
     status: string;
-    wdomsSchoolId: string;
+    discoveryKey: string;
     publishedUniversitySlug: string | null;
     matchedUniversitySlug: string | null;
     draftId: number | null;
@@ -100,7 +100,7 @@ export default async function AdminUniversityResearchPage() {
             cityName: universityResearchQueue.cityName,
             priority: universityResearchQueue.priority,
             status: universityResearchQueue.status,
-            wdomsSchoolId: universityResearchQueue.wdomsSchoolId,
+            discoveryKey: universityResearchQueue.discoveryKey,
             publishedUniversitySlug: universityResearchQueue.publishedUniversitySlug,
             matchedUniversitySlug: universities.slug,
             draftId: universityResearchDrafts.id,
@@ -184,7 +184,7 @@ export default async function AdminUniversityResearchPage() {
           University Research Queue
         </h1>
         <p className="mt-1.5 max-w-3xl text-sm text-white/55">
-          Internal WDOMS-backed backlog for research, draft creation, and publishing into live university pages.
+          Internal backlog for researching, drafting, and publishing live university pages.
         </p>
       </div>
 
@@ -258,7 +258,7 @@ export default async function AdminUniversityResearchPage() {
                   <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500">
                     <span>{row.countrySlug}</span>
                     {row.cityName ? <span>{row.cityName}</span> : null}
-                    <span className="font-mono">{row.wdomsSchoolId}</span>
+                    <span className="font-mono">{row.discoveryKey}</span>
                     {row.qualityScore !== null ? (
                       <span>Quality {row.qualityScore}</span>
                     ) : (

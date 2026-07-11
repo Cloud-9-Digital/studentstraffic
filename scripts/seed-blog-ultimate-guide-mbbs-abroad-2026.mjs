@@ -239,7 +239,7 @@ The admissions landscape for MBBS abroad is unfortunately filled with misleading
 
 **Hidden expenses:** A quote of "complete your MBBS for ₹15 lakh" almost always covers only basic tuition. Request a complete written fee structure covering visa renewals, health insurance, hostel charges, laboratory fees, clinical rotation fees, and local utility costs before making any payment.
 
-**Unaccredited universities:** Verify that any institution you consider is listed in the World Directory of Medical Schools (WDOMS) and that its graduates are eligible to practise medicine in the host country. If these two conditions are not met, you will not be allowed to sit for the NExT exam.
+**Unaccredited universities:** Verify that any institution you consider is listed in the World Directory of Medical Schools (official regulatory sources) and that its graduates are eligible to practise medicine in the host country. If these two conditions are not met, you will not be allowed to sit for the NExT exam.
 
 **The post-graduation abandonment:** Many agents close their relationship with students once they land on campus. Getting your MBBS degree is only 50% of the journey. Clearing the licensing exam, securing clinical observerships, and navigating State Medical Council registration paperwork are where genuine support is needed — and where most agents disappear.
 

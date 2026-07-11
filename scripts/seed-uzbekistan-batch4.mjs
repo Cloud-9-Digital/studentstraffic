@@ -17,7 +17,7 @@ const universities = [
     type: "Private",
     establishedYear: 2021,
     officialWebsite: "#",
-    summary: "A private university in the deep southern city of Termez that has rapidly expanded its faculties to include English-medium WDOMS medical sciences.",
+    summary: "A private university in the deep southern city of Termez that has rapidly expanded its faculties to include English-medium official regulatory sources medical sciences.",
     campusLifestyle: "Highly focused on regional development and affordability.",
     cityProfile: "Termez. One of the hottest and cheapest cities in Uzbekistan. Monthly living <$150 USD.",
     clinicalExposure: "Partnered with local polyclinics.",
@@ -25,11 +25,11 @@ const universities = [
     indianFoodSupport: "Minimal; requires self-cooking mostly.",
     safetyOverview: "Border city security.",
     studentSupport: "New mentoring structures.",
-    whyChoose: ["WDOMS Listed", "Extremely cheap location"],
+    whyChoose: ["official regulatory sources Listed", "Extremely cheap location"],
     thingsToConsider: ["Medical faculty operates within a broader economics university"],
     bestFitFor: ["Budget independent seekers"],
     teachingHospitals: ["Private Termez Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -59,11 +59,11 @@ const universities = [
     indianFoodSupport: "Tashkent access.",
     safetyOverview: "High security.",
     studentSupport: "Tech-reliant mentorship.",
-    whyChoose: ["WDOMS Listed", "Tashkent location"],
+    whyChoose: ["official regulatory sources Listed", "Tashkent location"],
     thingsToConsider: ["Primarily recognized for business logistics historically"],
     bestFitFor: ["Interdisciplinary students"],
     teachingHospitals: ["Partner Networks"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -93,11 +93,11 @@ const universities = [
     indianFoodSupport: "Basic.",
     safetyOverview: "Very safe towns.",
     studentSupport: "High tech and labs.",
-    whyChoose: ["WDOMS Listed technological institute"],
+    whyChoose: ["official regulatory sources Listed technological institute"],
     thingsToConsider: ["Very new brand"],
     bestFitFor: ["Tech-enabled early adopters"],
     teachingHospitals: ["Urgench Analytics Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -127,11 +127,11 @@ const universities = [
     indianFoodSupport: "Massive support operations.",
     safetyOverview: "Elite private security.",
     studentSupport: "Backed by direct healthcare employers.",
-    whyChoose: ["Backed by the massive Zarmed healthcare network", "WDOMS Listed"],
+    whyChoose: ["Backed by the massive Zarmed healthcare network", "official regulatory sources Listed"],
     thingsToConsider: ["Private tuition rates apply"],
     bestFitFor: ["Corporate medicine seekers"],
     teachingHospitals: ["Zarmed Clinics Bukhara"],
-    recognitionBadges: ["Zarmed Private Hub", "WDOMS Listed"],
+    recognitionBadges: ["Zarmed Private Hub", "official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -161,11 +161,11 @@ const universities = [
     indianFoodSupport: "Excellent access in Samarkand.",
     safetyOverview: "Elite security.",
     studentSupport: "Heavy FMGE / Licensing coaching integration.",
-    whyChoose: ["Direct access to Zarmed clinics in Samarkand", "WDOMS Listed"],
+    whyChoose: ["Direct access to Zarmed clinics in Samarkand", "official regulatory sources Listed"],
     thingsToConsider: ["Branch campus of the Bukhara headquarters"],
     bestFitFor: ["Tech and diagnostics lovers"],
     teachingHospitals: ["Zarmed Clinics Samarkand"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -270,7 +270,7 @@ async function seed() {
     client.release();
     await pool.end();
   }
-  console.log("\n✅ Uzbekistan Batch 4 Complete! EVERY WDOMS UZBEK UNIVERSITY IS NOW ENRICHED!");
+  console.log("\n✅ Uzbekistan Batch 4 Complete! EVERY official regulatory sources UZBEK UNIVERSITY IS NOW ENRICHED!");
 }
 
 seed();

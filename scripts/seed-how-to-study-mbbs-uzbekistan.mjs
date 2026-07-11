@@ -107,7 +107,7 @@ The NMC requires any foreign MBBS program to run a minimum of **54 months (4.5 y
 
 This guide will not rank universities for you (see the [complete guide](/blog/mbbs-in-uzbekistan-2026-complete-guide) for that). But before you shortlist anywhere, verify these four things directly, not through an agent's word:
 
-1. **NMC/WDOMS status.** Check the university's exact name against the NMC's current approved list at nmc.org.in and against the World Directory of Medical Schools (WDOMS/FAIMER). Recognition is granted to a specific institution, not to "Uzbekistan" as a country — a nearby or similarly named institute may not carry the same status.
+1. **NMC and official regulatory sources status.** Check the university's exact name against the NMC's current approved list at nmc.org.in and against the World Directory of Medical Schools (official directory sources). Recognition is granted to a specific institution, not to "Uzbekistan" as a country — a nearby or similarly named institute may not carry the same status.
 2. **Genuine English-medium delivery**, especially in the clinical years (Years 4–6) when instruction shifts from lecture halls to hospital wards. Ask specifically how clinical postings are conducted for international students and whether translators or bilingual faculty are assigned.
 3. **Teaching hospital access.** Confirm which hospitals the university is affiliated with, how many beds they have, and whether international students get real patient contact or mostly observation.
 4. **Realistic FMGE/NExT outcomes.** Ask the university (or better, ask actual alumni) for their graduates' licensing exam pass rates. Treat marketing claims of "90%+ pass rate" with skepticism unless backed by verifiable numbers.
@@ -146,7 +146,7 @@ Uzbekistan's main intake for international students is centered on the **Septemb
 
 | Phase | Approximate Window | What Happens |
 |---|---|---|
-| Research & shortlisting | January – March | Compare universities, verify NMC/WDOMS status, talk to current students if possible |
+| Research & shortlisting | January – March | Compare universities, verify NMC and official regulatory sources status, talk to current students if possible |
 | Document preparation | March – May | Gather NEET scorecard, academic records, passport, photographs, medical certificate |
 | Application submission | April – July | Submit application form and documents to the university; most universities review within days to a couple of weeks |
 | Admission/invitation letter | Within days to a few weeks of a complete application | University issues an official offer/admission letter |
@@ -216,7 +216,7 @@ What does not change regardless of which exam is current when you graduate:
 
 ## Common Mistakes That Delay or Derail the Process
 
-- **Applying without confirming NMC/WDOMS status of the exact institution name.** A similar-sounding university name is not the same as the one on the approved list.
+- **Applying without confirming NMC and official regulatory sources status of the exact institution name.** A similar-sounding university name is not the same as the one on the approved list.
 - **Treating an agent's fee quote as final** without independently confirming amounts and payment channels with the university.
 - **Booking flights before the visa is issued.**
 - **Assuming dormitory housing is automatic** — confirm this at the admission stage if you want it, since availability can be limited.

@@ -6,7 +6,7 @@ into a concrete implementation plan for this repo.
 
 The target outcome is:
 
-- WDOMS stays internal
+- official regulatory sources stays internal
 - only high-quality `/universities/[slug]` pages go public
 - the agent can handle most of the work end-to-end
 
@@ -23,7 +23,7 @@ This plan covers:
 5. publish action into existing `universities` and `program_offerings`
 6. first rollout order
 
-This plan does **not** introduce public WDOMS pages.
+This plan does **not** introduce public official regulatory sources pages.
 
 ---
 
@@ -31,11 +31,11 @@ This plan does **not** introduce public WDOMS pages.
 
 These parts already exist and should be reused:
 
-- WDOMS ingestion:
-  [scripts/import-wdoms-directory.ts](/Users/bharat/Documents/studentstraffic/scripts/import-wdoms-directory.ts)
-- WDOMS scraping and matching helpers:
-  [lib/wdoms.ts](/Users/bharat/Documents/studentstraffic/lib/wdoms.ts)
-- raw WDOMS table:
+- official regulatory sources ingestion:
+  [scripts/import-official-directory-directory.ts](/Users/bharat/Documents/studentstraffic/scripts/import-official-directory-directory.ts)
+- official regulatory sources scraping and matching helpers:
+  [lib/official-directory.ts](/Users/bharat/Documents/studentstraffic/lib/official-directory.ts)
+- raw official regulatory sources table:
   [lib/db/schema.ts](/Users/bharat/Documents/studentstraffic/lib/db/schema.ts)
 - current public university model:
   [lib/db/schema.ts](/Users/bharat/Documents/studentstraffic/lib/db/schema.ts)
@@ -56,17 +56,17 @@ The system should have 4 layers.
 
 Purpose:
 
-- store the imported universe of schools from WDOMS
+- store the imported universe of schools from official regulatory sources
 
 Primary source:
 
-- `wdoms_directory_entries`
+- `official-directory_directory_entries`
 
 ### 2. Queue layer
 
 Purpose:
 
-- track which WDOMS schools should be researched and published
+- track which official regulatory sources schools should be researched and published
 
 New table:
 
@@ -101,12 +101,12 @@ Existing tables:
 
 Purpose:
 
-- one row per WDOMS school that we may want to turn into a public university page
+- one row per official regulatory sources school that we may want to turn into a public university page
 
 Suggested columns:
 
 - `id`
-- `wdoms_school_id`
+- `official-directory_school_id`
 - `country_slug`
 - `school_name`
 - `city_name`
@@ -126,7 +126,7 @@ Recommended enums:
 
 Rules:
 
-- `wdoms_school_id` should be unique
+- `official-directory_school_id` should be unique
 - `status = published` means a corresponding public university row exists
 
 ## 2. `university_research_drafts`
@@ -139,13 +139,13 @@ Suggested columns:
 
 - `id`
 - `queue_id`
-- `wdoms_school_id`
+- `official-directory_school_id`
 - `official_website`
 - `program_url`
 - `fees_url`
 - `hostel_url`
 - `admission_url`
-- `wdoms_url`
+- `official-directory_url`
 - `source_bundle`
 - `structured_facts`
 - `draft_content`
@@ -261,7 +261,7 @@ Suggested file:
 
 Purpose:
 
-- read `wdoms_directory_entries`
+- read `official-directory_directory_entries`
 - create queue rows for schools not already queued
 - apply initial priority rules
 
@@ -375,7 +375,7 @@ Required checks:
 
 - official website found
 - medical program page found
-- WDOMS identity is clear
+- official regulatory sources identity is clear
 - enough facts exist to write a useful page
 - fee information is sourced or clearly qualified
 - no major unresolved contradictions
@@ -508,7 +508,7 @@ Deliverables:
 
 ## Suggested First Country
 
-Start with one country already configured in WDOMS and already relevant to your MBBS business.
+Start with one country already configured in official regulatory sources and already relevant to your MBBS business.
 
 Best starting choices:
 
@@ -534,7 +534,7 @@ Reason:
 
 Example:
 
-- WDOMS school: `Alte University`
+- official regulatory sources school: `Alte University`
 - country: `georgia`
 
 ### Step 1
@@ -552,7 +552,7 @@ Research runner collects:
 - medicine page
 - admissions page
 - tuition source
-- WDOMS source
+- official regulatory sources source
 
 Queue becomes:
 
@@ -600,7 +600,7 @@ Public page:
 
 This implementation is considered done when:
 
-- WDOMS schools can be queued internally
+- official regulatory sources schools can be queued internally
 - one queued school can be researched into a draft
 - one reviewed draft can be published into the public catalog
 - the process can be repeated reliably without creating public placeholder pages

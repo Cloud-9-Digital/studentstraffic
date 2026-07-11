@@ -313,7 +313,7 @@ export const studyAbroadGuides = {
       keyTakeaways: [
   "The lowest MBBS fees in Russia start from $2,800/year at regional universities like Bashkir State Medical University (Ufa), compared to $6,000-8,000/year in Moscow. Total 6-year cost ranges from $35,000-$50,000 including accommodation and living expenses.",
   "Low tuition ≠ low total cost. A university charging $3,000/year in an expensive city may ultimately cost more than one charging $4,000/year in an affordable region. Factor in hostel ($600-1,500/year), living costs ($2,000-3,000/year), and travel ($500-800/year).",
-  "The cheapest option isn't always the smartest. Universities with fees below $2,500/year often lack proper English-medium instruction, adequate hospital partnerships, or WDOMS recognition. Check graduate FMGE pass rates and confirm clinical training quality before choosing based solely on price.",
+  "The cheapest option isn't always the smartest. Universities with fees below $2,500/year often lack proper English-medium instruction, adequate hospital partnerships, or official recognition. Check graduate FMGE pass rates and confirm clinical training quality before choosing based solely on price.",
 ],
       sections: [
   {
@@ -403,7 +403,7 @@ export const studyAbroadGuides = {
   {
     question: "Are low-fee Russian medical universities recognized in India?",
     answer:
-      "Yes. Low-fee regional universities like Kazan State Medical University, Belgorod State University, and Kursk State Medical University are WDOMS-listed and meet NMC's FMGL guidelines, qualifying their graduates for FMGE/NExT screening. NMC compliance is based on meeting published guidelines, not tuition cost — we verify each university's status before shortlisting.",
+      "Yes. Low-fee regional universities like Kazan State Medical University, Belgorod State University, and Kursk State Medical University are officially verified and meet NMC's FMGL guidelines, qualifying their graduates for FMGE/NExT screening. NMC compliance is based on meeting published guidelines, not tuition cost — we verify each university's status before shortlisting.",
   },
   {
     question: "How can I verify the lowest MBBS fees are genuine?",
@@ -1394,7 +1394,7 @@ export const studyAbroadGuides = {
     title: "What breaks the India-return pathway most often",
     bullets: [
       "Choosing a university first and asking about NMC implications only after paying.",
-      "Assuming that being in WDOMS or being commonly marketed in India is enough by itself.",
+      "Assuming that being in official regulatory sources or being commonly marketed in India is enough by itself.",
       "Ignoring the medium, internship, or full-duration details because a consultant said the university is 'approved'.",
       "Joining without handling NEET correctly while still expecting to practise in India later.",
       "Confusing a lower fee with a lower-risk pathway.",
@@ -1420,9 +1420,9 @@ export const studyAbroadGuides = {
       "No. Students returning from a foreign medical degree still need to satisfy the licensing route that applies in India for foreign medical graduates.",
   },
   {
-    question: "Is WDOMS listing enough to make a Russian MBBS valid in India?",
+    question: "Is official regulatory verification enough to make a Russian MBBS valid in India?",
     answer:
-      "No. WDOMS visibility is not the same thing as confirming that the entire academic and clinical pathway fits India's return requirements.",
+      "No. official regulatory sources visibility is not the same thing as confirming that the entire academic and clinical pathway fits India's return requirements.",
   },
   {
     question: "Does NEET matter if I study MBBS in Russia?",
@@ -1931,7 +1931,7 @@ export const studyAbroadGuides = {
     metadata: {
       title: "Russian Medical Colleges Approved by NMC 2026 | Full University List for Indian Students",
       description:
-        "Complete list of Russian medical colleges meeting NMC guidelines — 50+ universities with WDOMS listing, fees, city, and what to verify before enrolling. NMC compliance guide included.",
+        "Complete list of Russian medical colleges meeting NMC guidelines — 50+ universities with official regulatory verification, fees, city, and what to verify before enrolling. NMC compliance guide included.",
       path: "/russia-medical-university-list",
       openGraphType: "article",
       keywords: [
@@ -1950,7 +1950,7 @@ export const studyAbroadGuides = {
       title: "Russian Medical Colleges Approved by NMC: Which Universities Are Safe to Enrol In",
       updatedOn: "Updated on 30 May 2026",
       kicker: "NMC-approved university directory",
-      summary: "Russia has 50+ medical colleges meeting India's National Medical Commission (NMC) guidelines. This page lists them, explains what NMC compliance means versus WDOMS listing, and shows you how to verify any university's status before paying an admission fee.",
+      summary: "Russia has 50+ medical colleges meeting India's National Medical Commission (NMC) guidelines. This page lists them, explains what NMC compliance means versus official regulatory verification, and shows you how to verify any university's status before paying an admission fee.",
       publishedDate: "2026-05-30",
       countrySlug: "russia",
       primaryHref: "/mbbs-in-russia",
@@ -1961,8 +1961,8 @@ export const studyAbroadGuides = {
       notes: "Interest: Russia medical university list",
       keyTakeaways: [
         "Russia has over 50 government medical universities recognised by WHO and WFME. Of these, approximately 30–35 actively accept Indian students into English-medium MBBS programs. Not all 50+ institutions are equally suited — some are large research universities with small international cohorts, others are dedicated medical institutions with established Indian student infrastructure.",
-        "NMC compliance is not the same as being a 'top' university. A university can be WDOMS-listed and NMC-eligible but still have poor English-medium delivery, weak hospital affiliations, or limited Indian student support. The list is a necessary filter, not a sufficient one.",
-        "The practical shortlisting criteria for Indian students go beyond the list: Indian community size, city livability, hostel quality, annual tuition, clinical hospital affiliation, and track record of Indian graduates clearing FMGE/NExT. Verify all of these, not just the WDOMS status.",
+        "NMC compliance is not the same as being a 'top' university. A university can be officially verified and NMC-eligible but still have poor English-medium delivery, weak hospital affiliations, or limited Indian student support. The list is a necessary filter, not a sufficient one.",
+        "The practical shortlisting criteria for Indian students go beyond the list: Indian community size, city livability, hostel quality, annual tuition, clinical hospital affiliation, and track record of Indian graduates clearing FMGE/NExT. Verify all of these, not just the official regulatory status.",
       ],
       sections: [
         {
@@ -1976,12 +1976,12 @@ export const studyAbroadGuides = {
           title: "How to verify a university meets NMC guidelines",
           cards: [
             {
-              title: "Check WDOMS (WHO Directory of Medical Schools)",
-              body: "The starting point is the WDOMS database, which lists medical schools worldwide that meet WHO's basic recognition criteria. Go to wdoms.org, search for Russia, and verify your target university appears. This is the foundation for NMC eligibility — but WDOMS listing alone does not guarantee NMC approval.",
+              title: "Check official medical-school directory",
+              body: "The starting point is the official regulatory sources database, which lists medical schools worldwide that meet WHO's basic recognition criteria. Go to official regulator websites, search for Russia, and verify your target university appears. This is the foundation for NMC eligibility — but official regulatory verification alone does not guarantee NMC approval.",
             },
             {
               title: "Verify NMC guideline compliance",
-              body: "NMC publishes the Foreign Medical Graduate Licentiate (FMGL) 2021 guidelines that foreign universities must meet for graduates to appear for NExT. NMC does not maintain a curated approved-university list — compliance is assessed against published criteria. The practical verification mechanism is the NMC Eligibility Certificate at nmc.org.in — NMC will only issue the certificate if the university meets current guidelines. We assess each university's WDOMS status and FMGL compliance before shortlisting.",
+              body: "NMC publishes the Foreign Medical Graduate Licentiate (FMGL) 2021 guidelines that foreign universities must meet for graduates to appear for NExT. NMC does not maintain a curated approved-university list — compliance is assessed against published criteria. The practical verification mechanism is the NMC Eligibility Certificate at nmc.org.in — NMC will only issue the certificate if the university meets current guidelines. We assess each university's official regulatory status and FMGL compliance before shortlisting.",
             },
             {
               title: "NMC Eligibility Certificate",
@@ -1992,8 +1992,8 @@ export const studyAbroadGuides = {
         {
           title: "What the university list tells you — and what it doesn't",
           paragraphs: [
-            "WDOMS listing tells you that a university exists, is government-recognised in Russia, and meets baseline international medical education standards. It does not tell you anything about English delivery quality, hospital affiliation depth, hostel infrastructure, Indian student community, or FMGE pass rate outcomes for graduates of that specific institution.",
-            "Two WDOMS-listed universities can both meet NMC guidelines — one with 500 Indian students, an Indian mess, a 200-bed teaching hospital on campus, and a 35% FMGE pass rate; the other with 20 Indian students, no Indian food, a teaching hospital 40 minutes away, and no documented pass rate data. WDOMS and NMC compliance give you the first filter; everything else requires research.",
+            "official regulatory verification tells you that a university exists, is government-recognised in Russia, and meets baseline international medical education standards. It does not tell you anything about English delivery quality, hospital affiliation depth, hostel infrastructure, Indian student community, or FMGE pass rate outcomes for graduates of that specific institution.",
+            "Two officially verified universities can both meet NMC guidelines — one with 500 Indian students, an Indian mess, a 200-bed teaching hospital on campus, and a 35% FMGE pass rate; the other with 20 Indian students, no Indian food, a teaching hospital 40 minutes away, and no documented pass rate data. official regulatory sources and NMC compliance give you the first filter; everything else requires research.",
           ],
         },
         {
@@ -2012,9 +2012,9 @@ export const studyAbroadGuides = {
         {
           title: "What to verify per university before shortlisting",
           bullets: [
-            "WDOMS listing: wdoms.org → Russia → confirm university name appears. This is the baseline international recognition required for NMC guideline compliance.",
+            "official regulatory verification: official regulator websites → Russia → confirm university name appears. This is the baseline international recognition required for NMC guideline compliance.",
             "NMC guideline compliance: verified through the NMC Eligibility Certificate process at nmc.org.in — NMC will only issue the certificate for a university meeting current FMGL guidelines.",
-            "English-medium program: ask the university directly for the English-medium MBBS program brochure and fee schedule. Not all programs at WDOMS-listed universities are in English.",
+            "English-medium program: ask the university directly for the English-medium MBBS program brochure and fee schedule. Not all programs at officially verified universities are in English.",
             "Hospital affiliation: how many teaching hospitals, what is the bed count, how far from campus, do students rotate there from Year 3 or only Year 5.",
             "Indian student count: ask current Indian students through social media groups, not through the consultant who profits from the referral.",
             "FMGE/NExT pass rate: this data is difficult to get from universities officially. Ask Indian student alumni directly in community forums.",
@@ -2031,7 +2031,7 @@ export const studyAbroadGuides = {
         {
           title: "Red flags when evaluating the university list",
           bullets: [
-            "A university not appearing on WDOMS — do not enrol regardless of what a consultant says. WDOMS listing is the baseline international recognition required for NMC guideline compliance.",
+            "A university not appearing on official regulatory sources — do not enrol regardless of what a consultant says. official regulatory verification is the baseline international recognition required for NMC guideline compliance.",
             "A consultant who cannot provide the official university fee schedule (not a custom 'package price') for the program.",
             "A university with fees significantly below the market range ($2,000/year or less) for an English-medium program — investigate why before paying anything.",
             "No documented Indian student community, no verifiable alumni, no social media presence of Indian students at that institution.",
@@ -2043,17 +2043,17 @@ export const studyAbroadGuides = {
         {
           question: "How many medical universities are there in Russia?",
           answer:
-            "Russia has approximately 50–60 government medical universities recognised by WHO/WFME. Of these, around 30–35 actively accept Indian students into English-medium programs. We verify each university's WDOMS status and NMC guideline compliance before recommending it.",
+            "Russia has approximately 50–60 government medical universities recognised by WHO/WFME. Of these, around 30–35 actively accept Indian students into English-medium programs. We verify each university's official regulatory status and NMC guideline compliance before recommending it.",
         },
         {
           question: "Which Russian medical universities are approved by NMC?",
           answer:
-            "NMC publishes guidelines (FMGL 2021 / Screening Test Regulations 2022) that foreign universities must meet for their graduates to qualify for NExT — NMC does not maintain a curated approved-university list. Universities that are WDOMS-listed and meet these guidelines include Kazan State Medical University, Bashkir State Medical University, Kemerovo State Medical University, Volgograd State Medical University, Kursk State Medical University, Sechenov First Moscow State Medical University, and others. We assess each university's WDOMS status and FMGL compliance before shortlisting.",
+            "NMC publishes guidelines (FMGL 2021 / Screening Test Regulations 2022) that foreign universities must meet for their graduates to qualify for NExT — NMC does not maintain a curated approved-university list. Universities that are officially verified and meet these guidelines include Kazan State Medical University, Bashkir State Medical University, Kemerovo State Medical University, Volgograd State Medical University, Kursk State Medical University, Sechenov First Moscow State Medical University, and others. We assess each university's official regulatory status and FMGL compliance before shortlisting.",
         },
         {
-          question: "Is WDOMS listing the same as NMC approval for Russian universities?",
+          question: "Is official regulatory verification the same as NMC approval for Russian universities?",
           answer:
-            "Not exactly. WDOMS (WHO Directory of Medical Schools) listing confirms a university meets international standards and is the baseline for NMC guideline compliance. NMC compliance is assessed against published guidelines (FMGL 2021 / Screening Test Regulations 2022) — the practical verification is through the NMC Eligibility Certificate process, where NMC will only issue the certificate for universities meeting current guidelines. We verify WDOMS status and NMC guideline compliance as part of our shortlisting process.",
+            "Not exactly. official medical-school directory listing confirms a university meets international standards and is the baseline for NMC guideline compliance. NMC compliance is assessed against published guidelines (FMGL 2021 / Screening Test Regulations 2022) — the practical verification is through the NMC Eligibility Certificate process, where NMC will only issue the certificate for universities meeting current guidelines. We verify official regulatory status and NMC guideline compliance as part of our shortlisting process.",
         },
         {
           question: "Are all Russian medical universities government institutions?",
@@ -2063,7 +2063,7 @@ export const studyAbroadGuides = {
         {
           question: "How do I confirm whether a specific Russian university meets NMC guidelines?",
           answer:
-            "The primary verification mechanism is the NMC Eligibility Certificate process at nmc.org.in. NMC will only issue the Eligibility Certificate for a university whose graduates are eligible for NExT — a rejection at this stage is a definitive signal the university does not meet NMC guidelines. We also cross-check WDOMS listing (wdoms.org) as the baseline before this step. Do not rely on a consultant's claim of NMC compliance — the Eligibility Certificate process is the authoritative verification.",
+            "The primary verification mechanism is the NMC Eligibility Certificate process at nmc.org.in. NMC will only issue the Eligibility Certificate for a university whose graduates are eligible for NExT — a rejection at this stage is a definitive signal the university does not meet NMC guidelines. We also cross-check official regulatory verification (official regulator websites) as the baseline before this step. Do not rely on a consultant's claim of NMC compliance — the Eligibility Certificate process is the authoritative verification.",
         },
       ],
       showUniversities: true,
@@ -2117,7 +2117,7 @@ export const studyAbroadGuides = {
           cards: [
             {
               title: "Kazan State Medical University",
-              body: "One of Russia's oldest dedicated medical universities (founded 1814), with 300–500 Indian students. Kazan has an active Indian mess, Indian grocery stores, and a strong senior-student NExT preparation culture. Annual tuition: $4,000–5,500. City is well-connected, cold but manageable winters (-15°C average). WDOMS-registered and meets NMC guidelines.",
+              body: "One of Russia's oldest dedicated medical universities (founded 1814), with 300–500 Indian students. Kazan has an active Indian mess, Indian grocery stores, and a strong senior-student NExT preparation culture. Annual tuition: $4,000–5,500. City is well-connected, cold but manageable winters (-15°C average). officially registered and meets NMC guidelines.",
             },
             {
               title: "Bashkir State Medical University (Ufa)",
@@ -2174,7 +2174,7 @@ export const studyAbroadGuides = {
         {
           title: "What to verify before finalising any shortlist",
           bullets: [
-            "Confirm WDOMS listing at wdoms.org — and verify NMC guideline compliance through the Eligibility Certificate process at nmc.org.in.",
+            "Confirm official regulatory verification at official regulator websites — and verify NMC guideline compliance through the Eligibility Certificate process at nmc.org.in.",
             "Ask current Indian students directly (Facebook groups, YouTube channels by Indian students at that university) — not through the university's own testimonials.",
             "Get the official year-by-year fee schedule from the university website or directly from the international admissions office.",
             "Confirm hostel availability for Year 1 international students — including room sharing, distance to campus, and utility inclusion.",
@@ -2214,7 +2214,7 @@ export const studyAbroadGuides = {
         {
           question: "How do I know if a Russian medical college is genuinely good for Indian students?",
           answer:
-            "We assess: NMC/WDOMS listing (non-negotiable), active Indian student community verified through student-run sources not university marketing, confirmed Indian mess availability, clinical hospital affiliation quality, and alumni NExT/FMGE outcomes. We also connect families with current students in Year 4 or above as part of the shortlisting process.",
+            "We assess: NMC and official regulatory sources listing (non-negotiable), active Indian student community verified through student-run sources not university marketing, confirmed Indian mess availability, clinical hospital affiliation quality, and alumni NExT/FMGE outcomes. We also connect families with current students in Year 4 or above as part of the shortlisting process.",
         },
       ],
     },
@@ -2268,8 +2268,8 @@ export const studyAbroadGuides = {
         {
           title: "Step 1 — Shortlist the right university",
           paragraphs: [
-            "University selection is where most mistakes happen. The shortlist criteria that matter for Indian students: WDOMS listing and NMC guideline compliance (verified through the Eligibility Certificate process), English-medium program confirmed in writing, hospital affiliation details (which hospitals, how far, from which year), Indian student community size, city liveability and climate, and total 6-year cost including living.",
-            "Do not start with the cheapest option and work up. Start with WDOMS-listed institutions, eliminate universities you cannot verify against NMC guidelines, then compare the remaining options on quality, location, and cost. A shortlist of 3–5 universities that all pass the non-negotiable filters is more useful than 20 options with no quality threshold.",
+            "University selection is where most mistakes happen. The shortlist criteria that matter for Indian students: official regulatory verification and NMC guideline compliance (verified through the Eligibility Certificate process), English-medium program confirmed in writing, hospital affiliation details (which hospitals, how far, from which year), Indian student community size, city liveability and climate, and total 6-year cost including living.",
+            "Do not start with the cheapest option and work up. Start with officially verified institutions, eliminate universities you cannot verify against NMC guidelines, then compare the remaining options on quality, location, and cost. A shortlist of 3–5 universities that all pass the non-negotiable filters is more useful than 20 options with no quality threshold.",
           ],
         },
         {
@@ -6099,7 +6099,7 @@ export const studyAbroadGuides = {
             },
             {
               title: "University selection — NMC guideline compliance",
-              body: "Choose universities with 70+ years history, WDOMS listing, strong hospital partnerships (3+ teaching hospitals), and documented English-medium programs. Examples: Kazan State Medical, Bashkir State Medical, Privolzhsky Research Medical University.",
+              body: "Choose universities with 70+ years history, official regulatory verification, strong hospital partnerships (3+ teaching hospitals), and documented English-medium programs. Examples: Kazan State Medical, Bashkir State Medical, Privolzhsky Research Medical University.",
             },
           ],
         },
@@ -6116,7 +6116,7 @@ export const studyAbroadGuides = {
             },
             {
               title: "Chosen solely on low fee quotes",
-              body: "Universities advertising fees below ₹2.5 lakhs/year often have hidden issues: limited English support, weak clinical exposure, outdated facilities, or poor FMGE track records. Verify WDOMS listing, check actual student testimonials, and visit university websites directly.",
+              body: "Universities advertising fees below ₹2.5 lakhs/year often have hidden issues: limited English support, weak clinical exposure, outdated facilities, or poor FMGE track records. Verify official regulatory verification, check actual student testimonials, and visit university websites directly.",
             },
             {
               title: "Need for constant family support",
@@ -6290,7 +6290,7 @@ export const studyAbroadGuides = {
           cards: [
             {
               title: "Applying to universities not meeting NMC guidelines",
-              body: "Consequence: degree invalid in India despite 6 years and ₹35-50 lakh cost. Avoid it by verifying NMC FMGL compliance through the Eligibility Certificate process at nmc.org.in before payment. We assess WDOMS listing and NMC compliance for every university we shortlist.",
+              body: "Consequence: degree invalid in India despite 6 years and ₹35-50 lakh cost. Avoid it by verifying NMC FMGL compliance through the Eligibility Certificate process at nmc.org.in before payment. We assess official regulatory verification and NMC compliance for every university we shortlist.",
             },
             {
               title: "Proceeding without valid NEET qualification",

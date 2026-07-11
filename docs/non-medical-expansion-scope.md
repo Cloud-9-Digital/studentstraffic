@@ -20,7 +20,7 @@ copy, not just labels.
 
 **Deep/structural — needs real design work, not just relabeling:**
 - `recognition-detail-section.tsx` — entire section is built around India's medical licensing chain:
-  WDOMS listing → NMC approval → FMGE/NExT exam eligibility. Has hardcoded explanatory copy about
+  official regulatory verification → NMC approval → FMGE/NExT exam eligibility. Has hardcoded explanatory copy about
   this specific regulatory pathway. A business/engineering/law degree has a **completely different**
   recognition concept (UGC equivalence, AICTE approval for engineering, possibly NAAC/NBA
   accreditation, BCI for law — and BCI generally does NOT recognize foreign law degrees for Indian
@@ -75,7 +75,7 @@ MBBS/medical-only framing toward this broader "one-stop destination" positioning
 **copy/positioning change only** — no new data was populated and no template code was touched.
 
 **The technical blocker documented above is completely unchanged.** `recognition-detail-section.tsx`
-and `admissions-section.tsx` are still hardcoded for India's medical regulatory pathway (WDOMS/NMC/
+and `admissions-section.tsx` are still hardcoded for India's medical regulatory pathway (official regulatory sources/NMC/
 FMGE/NExT) and still cannot render non-medical recognition or admissions info (UGC/AICTE/BCI, etc.).
 Real non-medical university/program data still cannot be populated until the domain research and
 template redesign described in "What's needed before data population can resume" (above) is done.
@@ -96,10 +96,10 @@ refactor pass (2026-07-09):
   for you" closing section all branch on `isMedicalStream` (derived from
   `["medicine","nursing","dental","pharmacy","physiotherapy"]`). Non-medical rendering uses honest,
   generic accreditation language (no invented UGC/AICTE/BCI claims) and reads `recognitionBadges`/
-  `recognitionLinks` from the DB either way. The WDOMS block only renders when a `wdomsEntry` is
+  `recognitionLinks` from the DB either way. The official regulatory sources block only renders when a `official-directoryEntry` is
   actually present, which is naturally medical-only data — no hardcoding needed there.
 - `admissions-section.tsx` — `admissionsIntro`, `defaultSteps`, eligibility intro/items/documents, and
-  the eligibility FAQ all branch the same way. The "Licensing Pathway" sub-section (FMGE/NExT/WDOMS
+  the eligibility FAQ all branch the same way. The "Licensing Pathway" sub-section (FMGE/NExT/official regulatory sources
   career-pathway copy) is now gated behind `isMedicalStream &&` — it does not render at all for
   non-medical streams, rather than rendering a false pathway.
 - `academics-section.tsx` was already confirmed fixed in the paragraphs above.

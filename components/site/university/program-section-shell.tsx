@@ -7,7 +7,7 @@ import { MapPin, GraduationCap, Phone, ArrowRight } from "lucide-react";
 import type { Author } from "@/lib/authors";
 import type { CountryContent } from "@/lib/data/country-content";
 import type { CountryRegulatoryAdvisory, UniversityRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
-import type { Country, FinderProgram, University, WdomsDirectoryEntry } from "@/lib/data/types";
+import type { Country, FinderProgram, University } from "@/lib/data/types";
 import { parseProgramSlug, PROGRAM_SECTIONS, type ProgramSection } from "@/lib/university-sections";
 import { formatProgramAnnualFee, hasRenderableProgramAnnualFee } from "@/lib/utils";
 import { getUniversityHref, getUniversityProgramHref } from "@/lib/routes";
@@ -52,7 +52,6 @@ export function ProgramSectionShell({
   program,
   university,
   country,
-  wdomsEntry,
   countryContent,
   countryAdvisory,
   universityAdvisory,
@@ -67,7 +66,6 @@ export function ProgramSectionShell({
   program: FinderProgram;
   university: University;
   country: Country;
-  wdomsEntry: WdomsDirectoryEntry | null;
   countryContent: CountryContent | null;
   countryAdvisory: CountryRegulatoryAdvisory | null;
   universityAdvisory: UniversityRegulatoryAdvisory | null;
@@ -144,7 +142,6 @@ export function ProgramSectionShell({
                 countryContent={countryContent}
                 countryAdvisory={countryAdvisory}
                 universityAdvisory={universityAdvisory}
-                wdomsEntry={wdomsEntry}
               />
             )}
             {activeSection === "eligibility" && (
@@ -165,7 +162,6 @@ export function ProgramSectionShell({
             {activeSection === "recognition" && (
               <UniversityRecognitionDetailSection
                 university={university}
-                wdomsEntry={wdomsEntry}
                 country={country}
                 primaryProgram={program}
               />

@@ -24,7 +24,6 @@ import type {
   LandingPage,
   ProgramOffering,
   University,
-  WdomsDirectoryEntry,
 } from "@/lib/data/types";
 import { getDb } from "@/lib/db/server";
 import {
@@ -35,7 +34,6 @@ import {
   programOfferings as programOfferingsTable,
   blogPosts,
   universities as universitiesTable,
-  wdomsDirectoryEntries as wdomsDirectoryEntriesTable,
 } from "@/lib/db/schema";
 import {
   getBudgetIndexHref,
@@ -46,8 +44,6 @@ import {
   getCourseHref,
   getUniversityHref,
   getUniversityProgramHref,
-  getWdomsDirectoryHref,
-  getWdomsSchoolHref,
 } from "@/lib/routes";
 import {
   createSlug,
@@ -61,13 +57,6 @@ export function cityNameToSlug(city: string) {
 import { finderPageSize } from "@/lib/constants";
 import { getFinderSort } from "@/lib/filters";
 import { applyUniversityContentOverride } from "@/lib/data/university-content-overrides";
-import {
-  buildWdomsUniversityLookup,
-  matchWdomsSchoolToUniversity,
-  getWdomsSchoolRouteSlug,
-  wdomsCountryConfigs,
-} from "@/lib/wdoms";
-
 type CatalogSnapshot = {
   countries: Country[];
   courses: Course[];
@@ -611,9 +600,9 @@ export async function getPublishedBlogPostMetadata() {
 // then 404 on /blog/[slug] until that in-memory cache expired or the app
 // restarted, even though /blog and /blog/category/[slug] (which query
 // blogPosts directly, tagged "blog") already show it. These readers query
-// blogPosts directly and tag themselves "blog" (+ a per-slug tag), matching
-// the pattern used by getUniversityBySlug's `university:${slug}` tag and by
-// the /blog/category/[slug] reader.
+// blogPosts directly. The listing reader below is tagged "blog" and the
+// detail reader uses a per-slug tag, so a publish can invalidate the index and
+// only the affected post instead of every cached post page.
 
 export async function getAllPublishedBlogPostsMetadata(): Promise<
   BlogPostSearchMetadata[]
@@ -667,7 +656,9 @@ export async function getPublishedBlogPostBySlug(
   "use cache";
 
   cacheLife("hours");
-  cacheTag("blog");
+  // Do not attach the broad "blog" tag here. That tag belongs to the index;
+  // individual posts must be invalidated by slug to avoid flushing every post
+  // page when one post is published or edited.
   cacheTag(`blog:${slug}`);
 
   const db = getDb();
@@ -724,138 +715,6 @@ export async function getLandingPageBySlug(slug: string) {
 
 export async function getLandingPageSlugs() {
   return landingPages.map((page) => page.slug);
-}
-
-export async function getWdomsDirectoryEntries(countrySlug: string) {
-  "use cache";
-
-  cacheLife("hours");
-  cacheTag("catalog");
-  cacheTag("wdoms-directory");
-  cacheTag(`wdoms-directory:${countrySlug}`);
-
-  const db = getDb();
-
-  if (!db) {
-    return [] as WdomsDirectoryEntry[];
-  }
-
-  const [directoryRows, publishedUniversities] = await Promise.all([
-    db
-      .select({
-        countrySlug: wdomsDirectoryEntriesTable.countrySlug,
-        countryName: wdomsDirectoryEntriesTable.countryName,
-        schoolId: wdomsDirectoryEntriesTable.schoolId,
-        schoolName: wdomsDirectoryEntriesTable.schoolName,
-        cityName: wdomsDirectoryEntriesTable.cityName,
-        schoolUrl: wdomsDirectoryEntriesTable.schoolUrl,
-        schoolType: wdomsDirectoryEntriesTable.schoolType,
-        operationalStatus: wdomsDirectoryEntriesTable.operationalStatus,
-        yearInstructionStarted: wdomsDirectoryEntriesTable.yearInstructionStarted,
-        academicAffiliation: wdomsDirectoryEntriesTable.academicAffiliation,
-        clinicalFacilities: wdomsDirectoryEntriesTable.clinicalFacilities,
-        clinicalTraining: wdomsDirectoryEntriesTable.clinicalTraining,
-        schoolWebsite: wdomsDirectoryEntriesTable.schoolWebsite,
-        mainAddress: wdomsDirectoryEntriesTable.mainAddress,
-        qualificationTitle: wdomsDirectoryEntriesTable.qualificationTitle,
-        curriculumDuration: wdomsDirectoryEntriesTable.curriculumDuration,
-        languageOfInstruction: wdomsDirectoryEntriesTable.languageOfInstruction,
-        prerequisiteEducation: wdomsDirectoryEntriesTable.prerequisiteEducation,
-        foreignStudents: wdomsDirectoryEntriesTable.foreignStudents,
-        entranceExam: wdomsDirectoryEntriesTable.entranceExam,
-      })
-      .from(wdomsDirectoryEntriesTable)
-      .where(eq(wdomsDirectoryEntriesTable.countrySlug, countrySlug))
-      .orderBy(
-        asc(wdomsDirectoryEntriesTable.schoolName),
-        asc(wdomsDirectoryEntriesTable.cityName),
-      ),
-    db
-      .select({
-        slug: universitiesTable.slug,
-        name: universitiesTable.name,
-        city: universitiesTable.city,
-      })
-      .from(universitiesTable)
-      .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
-      .where(
-        and(
-          eq(countriesTable.slug, countrySlug),
-          eq(universitiesTable.published, true),
-        ),
-      ),
-  ]);
-
-  const universityLookup = buildWdomsUniversityLookup(publishedUniversities);
-
-  return directoryRows.map((entry) => {
-    const matchedUniversity = matchWdomsSchoolToUniversity(entry, universityLookup);
-
-    return {
-      countrySlug: entry.countrySlug,
-      countryName: entry.countryName,
-      schoolId: entry.schoolId,
-      schoolName: entry.schoolName,
-      cityName: entry.cityName,
-      schoolUrl: entry.schoolUrl,
-      schoolType: entry.schoolType ?? undefined,
-      operationalStatus: entry.operationalStatus ?? undefined,
-      yearInstructionStarted: entry.yearInstructionStarted ?? undefined,
-      academicAffiliation: entry.academicAffiliation ?? undefined,
-      clinicalFacilities: entry.clinicalFacilities ?? undefined,
-      clinicalTraining: entry.clinicalTraining ?? undefined,
-      schoolWebsite: entry.schoolWebsite ?? undefined,
-      mainAddress: entry.mainAddress ?? undefined,
-      qualificationTitle: entry.qualificationTitle ?? undefined,
-      curriculumDuration: entry.curriculumDuration ?? undefined,
-      languageOfInstruction: entry.languageOfInstruction ?? undefined,
-      prerequisiteEducation: entry.prerequisiteEducation ?? undefined,
-      foreignStudents: entry.foreignStudents ?? undefined,
-      entranceExam: entry.entranceExam ?? undefined,
-      routeSlug: getWdomsSchoolRouteSlug(entry.schoolName, entry.schoolId),
-      matchedUniversitySlug: matchedUniversity?.slug,
-      matchedUniversityName: matchedUniversity?.name,
-    };
-  });
-}
-
-export async function getWdomsDirectoryEntryForUniversity(universitySlug: string) {
-  const university = await getUniversityBySlug(universitySlug);
-
-  if (!university) {
-    return null;
-  }
-
-  const entries = await getWdomsDirectoryEntries(university.countrySlug);
-
-  return (
-    entries.find((entry) => entry.matchedUniversitySlug === university.slug) ?? null
-  );
-}
-
-export async function getWdomsDirectoryEntryByRoute(
-  countrySlug: string,
-  schoolRouteSlug: string,
-) {
-  const entries = await getWdomsDirectoryEntries(countrySlug);
-  return entries.find((entry) => entry.routeSlug === schoolRouteSlug) ?? null;
-}
-
-export async function getWdomsUniversityPreviewGroups(limitPerCountry = 4) {
-  const groups = await Promise.all(
-    wdomsCountryConfigs.map(async (config) => ({
-      config,
-      allEntries: await getWdomsDirectoryEntries(config.slug),
-    })),
-  );
-
-  return groups
-    .map((group) => ({
-      config: group.config,
-      entries: group.allEntries.slice(0, limitPerCountry),
-      totalCount: group.allEntries.length,
-    }))
-    .filter((group) => group.totalCount > 0);
 }
 
 async function getFinderProgramsBase() {
@@ -1924,15 +1783,9 @@ export async function getFeaturedUniversities(limit = 4) {
 }
 
 export async function getSitemapStaticUrls() {
-  const [countries, courses, wdomsProfileGroups] = await Promise.all([
+  const [countries, courses] = await Promise.all([
     getCountries(),
     getCourses(),
-    Promise.all(
-      wdomsCountryConfigs.map(async (config) => ({
-        config,
-        entries: await getWdomsDirectoryEntries(config.slug),
-      })),
-    ),
   ]);
 
   return [
@@ -1949,14 +1802,6 @@ export async function getSitemapStaticUrls() {
     getCompareIndexHref(),
     getBudgetIndexHref(),
     ...landingPages.map((page) => `/${page.slug}`),
-    ...wdomsCountryConfigs
-      .filter((config) => !config.landingPageSlug)
-      .map((config) => getWdomsDirectoryHref(config.slug)),
-    ...wdomsProfileGroups.flatMap((group) =>
-      group.entries.map((entry) =>
-        getWdomsSchoolHref(group.config.slug, entry.routeSlug),
-      ),
-    ),
     ...countries.map((country) => getCountryHref(country.slug)),
     ...courses.map((course) => getCourseHref(course.slug)),
   ];

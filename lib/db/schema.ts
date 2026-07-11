@@ -263,55 +263,6 @@ export const programOfferings = pgTable(
   ]
 );
 
-export const cityProfiles = pgTable(
-  "city_profiles",
-  {
-    id: serial("id").primaryKey(),
-    countrySlug: text("country_slug").notNull(),
-    city: text("city").notNull(),
-    content: text("content").notNull(),
-    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
-    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
-  },
-  (table) => [
-    uniqueIndex("city_profiles_country_city_idx").on(table.countrySlug, table.city),
-    index("city_profiles_country_idx").on(table.countrySlug),
-  ]
-);
-
-export const wdomsDirectoryEntries = pgTable(
-  "wdoms_directory_entries",
-  {
-    id: serial("id").primaryKey(),
-    countrySlug: text("country_slug").notNull(),
-    countryName: text("country_name").notNull(),
-    schoolId: text("school_id").notNull(),
-    schoolName: text("school_name").notNull(),
-    cityName: text("city_name").notNull(),
-    schoolUrl: text("school_url").notNull(),
-    schoolType: text("school_type"),
-    operationalStatus: text("operational_status"),
-    yearInstructionStarted: integer("year_instruction_started"),
-    academicAffiliation: text("academic_affiliation"),
-    clinicalFacilities: text("clinical_facilities"),
-    clinicalTraining: text("clinical_training"),
-    schoolWebsite: text("school_website"),
-    mainAddress: text("main_address"),
-    qualificationTitle: text("qualification_title"),
-    curriculumDuration: text("curriculum_duration"),
-    languageOfInstruction: text("language_of_instruction"),
-    prerequisiteEducation: text("prerequisite_education"),
-    foreignStudents: text("foreign_students"),
-    entranceExam: text("entrance_exam"),
-    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
-    updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),
-  },
-  (table) => [
-    uniqueIndex("wdoms_directory_entries_school_id_idx").on(table.schoolId),
-    index("wdoms_directory_entries_country_idx").on(table.countrySlug),
-  ]
-);
-
 export const indiaMedicalColleges = pgTable(
   "india_medical_colleges",
   {
@@ -1007,7 +958,7 @@ export const universityResearchQueue = pgTable(
   "university_research_queue",
   {
     id: serial("id").primaryKey(),
-    wdomsSchoolId: text("wdoms_school_id").notNull(),
+    discoveryKey: text("discovery_key").notNull(),
     countrySlug: text("country_slug").notNull(),
     schoolName: text("school_name").notNull(),
     cityName: text("city_name"),
@@ -1030,8 +981,8 @@ export const universityResearchQueue = pgTable(
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [
-    uniqueIndex("university_research_queue_wdoms_school_id_idx").on(
-      table.wdomsSchoolId
+    uniqueIndex("university_research_queue_discovery_key_idx").on(
+      table.discoveryKey
     ),
     index("university_research_queue_country_idx").on(table.countrySlug),
     index("university_research_queue_priority_idx").on(table.priority),
@@ -1049,13 +1000,12 @@ export const universityResearchDrafts = pgTable(
     queueId: integer("queue_id")
       .notNull()
       .references(() => universityResearchQueue.id, { onDelete: "cascade" }),
-    wdomsSchoolId: text("wdoms_school_id").notNull(),
+    discoveryKey: text("discovery_key").notNull(),
     officialWebsite: text("official_website"),
     programUrl: text("program_url"),
     feesUrl: text("fees_url"),
     hostelUrl: text("hostel_url"),
     admissionUrl: text("admission_url"),
-    wdomsUrl: text("wdoms_url"),
     sourceBundle: jsonb("source_bundle")
       .$type<UniversityResearchSourceBundle>()
       .notNull()
@@ -1076,8 +1026,8 @@ export const universityResearchDrafts = pgTable(
   },
   (table) => [
     uniqueIndex("university_research_drafts_queue_id_idx").on(table.queueId),
-    index("university_research_drafts_wdoms_school_id_idx").on(
-      table.wdomsSchoolId
+    index("university_research_drafts_discovery_key_idx").on(
+      table.discoveryKey
     ),
     index("university_research_drafts_verified_at_idx").on(table.verifiedAt),
   ]
@@ -1104,7 +1054,6 @@ export type StudentPeerApplicationInsert = typeof studentPeerApplications.$infer
 export type StudentPeerApplicationRow = typeof studentPeerApplications.$inferSelect;
 export type UniversityResearchQueueRow = typeof universityResearchQueue.$inferSelect;
 export type UniversityResearchDraftRow = typeof universityResearchDrafts.$inferSelect;
-export type CityProfileRow = typeof cityProfiles.$inferSelect;
 export type BackgroundJobRow = typeof backgroundJobs.$inferSelect;
 
 // ─────────────────────────────────────────────────────────────────────────────

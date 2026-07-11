@@ -47,7 +47,7 @@ Note: one Vietnam entry (HUTECH — Medicine and Traditional Medicine Program) i
   - https://jasu.kg/academic-council-fmge-pmdc-bmdc-nmc-classesacademic-council/
   - https://jasu.kg/jasu-scholarship-program/
   - https://jasu.kg/contact/
-  - https://search.wdoms.org/Home/SchoolDetail/F0000580
+  - https://search.official regulator websites/Home/SchoolDetail/F0000580
   - https://www.ruseducation.in/university/jalal-abad-state-medical-university-in-kyrgyzstan/
   - https://www.selectyouruniversity.com/college/jalalabad-state-university-cid-300150
   - https://en.wikipedia.org/wiki/Jalal-Abad
@@ -65,7 +65,7 @@ Note: one Vietnam entry (HUTECH — Medicine and Traditional Medicine Program) i
   - https://centralasian.uz/admissionregulations
   - https://centralasian.uz/tpost/r6zxlm9km1-akfa-university-is-becoming-central-asia
   - https://centralasian.uz/tpost/09x5uc3kg1-akfa-medline-becomes-part-of-central-asi
-  - https://search.wdoms.org/home/SchoolDetail/F0006802
+  - https://search.official regulator websites/home/SchoolDetail/F0006802
   - https://en.wikipedia.org/wiki/Central_Asian_University
 
 ### Albania
@@ -95,7 +95,7 @@ Note: one Vietnam entry (HUTECH — Medicine and Traditional Medicine Program) i
   - https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-mjekesise-dentare-2/
   - https://umed.edu.al/en/rreth-nesh/fakultetet/fakulteti-i-shkencave-mjekesore-teknike/
   - https://en.wikipedia.org/wiki/University_of_Medicine,_Tirana
-  - https://search.wdoms.org/home/SchoolDetail/F0001900
+  - https://search.official regulator websites/home/SchoolDetail/F0001900
   - https://www.unipage.net/en/4798/university_of_medicine_tirana
   - https://mbbsmithram.com/universities/university-of-medicine-tirana/
   - https://indembtirana.gov.in/bilateral-relations
@@ -121,7 +121,7 @@ Sources: https://www.bmeda.edu.ge/en, https://bmeda.edu.ge/en/history, https://b
 **International Medical University (IMU)** — FAILED (technical, not editorial)
 Draft: `research-drafts/kyrgyzstan/international-medical-university.json`
 Reason: Seed step succeeded (queue-id 80, draft-id 86). Publish step failed with a database type error: the program "Doctor of Medicine / General Medicine (MBBS-equivalent)" has `duration_years = 5.5`, but the `program_offerings.duration_years` column is an integer type in the DB, so Postgres rejected the insert (`invalid input syntax for type integer: "5.5"`). This is a schema/data-type mismatch, not a content/verification failure. No live row was published; no workaround was attempted. Queue entry (queue-id 80, draft-id 86) remains in the review queue awaiting a schema fix (e.g., migrate `duration_years` to numeric/decimal) or a data-rounding decision.
-Sources: https://imu.edu.kg/en/about-us, https://search.wdoms.org/home/SchoolDetail/F0005118, https://imu.edu.kg/en/education/faculties-of-the-university/general-medicine, https://imu.edu.kg/en/to-the-applicant/welcome-to-imu, https://imu.edu.kg/en
+Sources: https://imu.edu.kg/en/about-us, https://search.official regulator websites/home/SchoolDetail/F0005118, https://imu.edu.kg/en/education/faculties-of-the-university/general-medicine, https://imu.edu.kg/en/to-the-applicant/welcome-to-imu, https://imu.edu.kg/en
 
 ### Vietnam
 
@@ -248,7 +248,7 @@ All items in the "Quick-fix hold" and "Schema fix needed" follow-ups above were 
   Live at `/university/hochschule-bremen-city-university-of-applied-sciences`.
 
 Note: none of these 6 non-schema fixes had existing `university_research_queue`/
-`universityResearchDrafts` rows — each required `scripts/seed-nonwdoms-draft.ts --file <path>` before
+`universityResearchDrafts` rows — each required `scripts/seed-nonofficial-directory-draft.ts --file <path>` before
 `publish-university-draft.ts` could run. See "Known issues" in
 `docs/university-pipeline-architecture.md`.
 

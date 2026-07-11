@@ -25,11 +25,11 @@ const universities = [
     indianFoodSupport: "Massive support with dedicated mess operations.",
     safetyOverview: "Very safe Southern Kyrgyzstan region.",
     studentSupport: "Heavy FMGE preparation.",
-    whyChoose: ["WDOMS Listed", "Incredibly affordable tuition and living expenses"],
+    whyChoose: ["official regulatory sources Listed", "Incredibly affordable tuition and living expenses"],
     thingsToConsider: ["Located far from Bishkek"],
     bestFitFor: ["Budget-conscious families"],
     teachingHospitals: ["Jalal-Abad Region Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -59,11 +59,11 @@ const universities = [
     indianFoodSupport: "Capital city access.",
     safetyOverview: "Modern campus security.",
     studentSupport: "Highly personalized.",
-    whyChoose: ["Listed in WDOMS", "Located in the capital"],
+    whyChoose: ["Listed in official regulatory sources", "Located in the capital"],
     thingsToConsider: ["Newer brand"],
     bestFitFor: ["Early adopters"],
     teachingHospitals: ["Private Bishkek Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -93,11 +93,11 @@ const universities = [
     indianFoodSupport: "Indian messes available.",
     safetyOverview: "Very safe.",
     studentSupport: "Dedicated South Asian mentorship programs.",
-    whyChoose: ["Affordable and peaceful", "WDOMS Listed"],
+    whyChoose: ["Affordable and peaceful", "official regulatory sources Listed"],
     thingsToConsider: ["Brand recognition is developing"],
     bestFitFor: ["Budget-conscious private sector searchers"],
     teachingHospitals: ["Regional Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -127,11 +127,11 @@ const universities = [
     indianFoodSupport: "Easy access.",
     safetyOverview: "High modern security.",
     studentSupport: "Very competitive admissions packages.",
-    whyChoose: ["WDOMS Listed"],
+    whyChoose: ["official regulatory sources Listed"],
     thingsToConsider: ["Newly established"],
     bestFitFor: ["Pioneering cohorts"],
     teachingHospitals: ["Capital Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -153,7 +153,7 @@ const universities = [
     type: "Public/State",
     establishedYear: 1933,
     officialWebsite: "#",
-    summary: "Historically the flagship agrarian university, its massive state resources have recently expanded to include foundational health sciences listed in WDOMS.",
+    summary: "Historically the flagship agrarian university, its massive state resources have recently expanded to include foundational health sciences listed in official regulatory sources.",
     campusLifestyle: "Massive historical state campus.",
     cityProfile: "Bishkek.",
     clinicalExposure: "State-brokered partnerships.",
@@ -161,11 +161,11 @@ const universities = [
     indianFoodSupport: "Bishkek standard.",
     safetyOverview: "State-level security.",
     studentSupport: "Huge library infrastructure.",
-    whyChoose: ["Massive historic state presence", "WDOMS Listed"],
+    whyChoose: ["Massive historic state presence", "official regulatory sources Listed"],
     thingsToConsider: ["Medical faculty is newly integrated; agrarian history"],
     bestFitFor: ["State university seekers"],
     teachingHospitals: ["State Capital Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -195,11 +195,11 @@ const universities = [
     indianFoodSupport: "Capital city networks.",
     safetyOverview: "Peak state security.",
     studentSupport: "Oldest comprehensive library and massive exchange programs.",
-    whyChoose: ["Prestige of the National University brand", "WDOMS Listed", "Highly subsidized state tuition rates for the caliber"],
+    whyChoose: ["Prestige of the National University brand", "official regulatory sources Listed", "Highly subsidized state tuition rates for the caliber"],
     thingsToConsider: ["Massive student body; highly competitive"],
     bestFitFor: ["Legacy seekers"],
     teachingHospitals: ["Leading National Bishkek Hospitals"],
-    recognitionBadges: ["National University Hub", "WDOMS Listed"],
+    recognitionBadges: ["National University Hub", "official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -275,12 +275,12 @@ const universities = [
     whyChoose: [
       "Built exclusively around international medical students' needs",
       "Located in the highly affordable city of Osh",
-      "WDOMS Listed and 100% focused on 6-year NMC alignment"
+      "official regulatory sources Listed and 100% focused on 6-year NMC alignment"
     ],
     thingsToConsider: ["Private counterpart to Osh State University"],
     bestFitFor: ["Budget seekers prioritizing ease of transition"],
     teachingHospitals: ["Osh Central Clinical Networks"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -318,7 +318,7 @@ const universities = [
     thingsToConsider: ["Premium infrastructure means slightly higher private tuition costs"],
     bestFitFor: ["Students desiring high-tech facilities"],
     teachingHospitals: ["Salymbekov Health Affiliates", "Bishkek Capital Clinics"],
-    recognitionBadges: ["High-Tech Hub", "WDOMS Listed"],
+    recognitionBadges: ["High-Tech Hub", "official regulatory sources Listed"],
     faq: [],
     programs: [
       {

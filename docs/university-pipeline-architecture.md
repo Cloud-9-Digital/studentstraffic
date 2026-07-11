@@ -38,26 +38,32 @@ Keep it current — see "Keeping this doc current" at the bottom.
   > (`clinicalExposure`, `teachingHospitals`, `indianFoodSupport`, `licenseExamSupport`) so historical
   > `research-drafts/*.json` stay loadable; `publish-university-draft.ts` maps those source keys onto the
   > renamed destination columns.
-- **`universityResearchQueue`** — candidate universities sourced from WDOMS (World Directory of
-  Medical Schools) or manually added. Status lifecycle: `new → researching → draft_ready →
-  published | hold | rejected`. Has `priority` (high/medium/low).
+- **`universityResearchQueue`** — candidate universities discovered or manually added. Each row has
+  a generic `discoveryKey`; dedicated university pages remain the public source of truth. Status
+  lifecycle: `new → researching → draft_ready → published | hold | rejected`. Has `priority`
+  (high/medium/low).
 - **`universityResearchDrafts`** — one draft per queue entry: `sourceBundle` (raw source URLs/content),
   `structuredFacts`, `draftContent` (shaped to match the `universities`/`programOfferings` schema),
   `qualityScore`, `reviewNotes`, `verifiedAt`.
 
 ## Generalizing discovery to non-medical fields (scoped, NOT built)
 
-Today the discovery queue is medical-only: `universityResearchQueue` rows are seeded from **WDOMS**
-(World Directory of Medical Schools) — see `wdomsDirectoryEntries` and
-`scripts/seed-university-research-queue.ts`. WDOMS is a single authoritative global registry of medical
+**Current implementation note (2026-07-10):** official regulatory sources has been retired completely. The official regulatory sources directory
+table, official regulatory sources-specific queue/draft columns, importers, matchers, and public rendering have been
+removed. The live schema uses `discoveryKey`; existing official regulatory sources-backed queue rows are deleted by
+`drizzle/0056_remove_official-directory.sql`. The older historical notes below describe the former design only.
+
+Today the discovery queue is medical-only: `universityResearchQueue` rows are seeded from **official regulatory sources**
+(World Directory of Medical Schools) — see `official-directoryDirectoryEntries` and
+`scripts/seed-university-research-queue.ts`. official regulatory sources is a single authoritative global registry of medical
 schools, which is why the whole discover→research→publish pipeline could bootstrap from one import. The
-column `universityResearchQueue.wdomsSchoolId` and the `wdoms_school_id` on drafts are the only
+column `universityResearchQueue.official-directorySchoolId` and the `official-directory_school_id` on drafts are the only
 medicine-specific hooks in the queue; everything downstream (research, draft, publish) is already
 field-generic now that the columns are renamed (above) and the template is stream-aware.
 
 When non-medical discovery is actually built (out of scope here — do NOT build or seed it now), a
-"non-medical discovery source" would replace WDOMS as the seed for the queue. There is no single
-global registry equivalent to WDOMS for business/engineering/law/etc., so expect **per-field,
+"non-medical discovery source" would replace official regulatory sources as the seed for the queue. There is no single
+global registry equivalent to official regulatory sources for business/engineering/law/etc., so expect **per-field,
 per-country accreditor lists** instead of one import, e.g.:
 - Engineering: national accreditation bodies / ministry-approved institution lists (e.g. a country's
   higher-education ministry register), or a recognized ranking/registry for that field.
@@ -65,8 +71,8 @@ per-country accreditor lists** instead of one import, e.g.:
 - Law / others: the relevant national regulator or university-grants-commission register for the
   destination country.
 
-Concretely, generalizing would mean: (1) a `discoverySource` discriminator on the queue (`"wdoms"`
-today; `"accreditor:<body>"` / `"registry:<name>"` for others) so `wdomsSchoolId` isn't assumed;
+Concretely, generalizing would mean: (1) a `discoverySource` discriminator on the queue (`"official-directory"`
+today; `"accreditor:<body>"` / `"registry:<name>"` for others) so `official-directorySchoolId` isn't assumed;
 (2) a per-source seed importer analogous to `seed-university-research-queue.ts` that writes queue rows
 with a generic external id; (3) the same research/publish scripts unchanged. The **recognition** copy
 must stay data-driven (read from `recognitionBadges`/`recognitionLinks`) with the honest generic
@@ -79,12 +85,12 @@ medical NMC pathway. See `docs/non-medical-expansion-scope.md`.
 ### 1. Automated research-and-publish pipeline (preferred for net-new universities)
 
 ```
-scripts/seed-university-research-queue.ts   → populate universityResearchQueue (from WDOMS import)
+scripts/seed-university-research-queue.ts   → populate universityResearchQueue (from official regulatory sources import)
 scripts/run-university-research.ts          → research a queued candidate, write a draft
                                                (also writes a human-readable .md alongside the .json
                                                in research-drafts/<country>/ for audit trail)
 scripts/publish-university-draft.ts         → validate + insert draft into universities/programOfferings
-scripts/seed-nonwdoms-draft.ts              → for universities not in WDOMS (surrogate id `disc-<country>-<slug>`)
+scripts/seed-nonofficial-directory-draft.ts              → for universities not in official regulatory sources (surrogate id `disc-<country>-<slug>`)
 ```
 
 Drafts live as JSON in `research-drafts/<country-slug>/<university-slug>.json` before publish.
@@ -119,10 +125,10 @@ above for new work; these remain mainly as historical reference and for one-off 
 
 - **A `research-drafts/<country>/<slug>.json` file existing does NOT mean it's in the DB.**
   `publish-university-draft.ts` reads only from the `universityResearchQueue` /
-  `universityResearchDrafts` tables via `--queue-id`, never from the JSON file directly. Non-WDOMS
-  drafts (and some WDOMS drafts that were held before ever being ingested) frequently have no queue
+  `universityResearchDrafts` tables via `--queue-id`, never from the JSON file directly. Non-official regulatory sources
+  drafts (and some official regulatory sources drafts that were held before ever being ingested) frequently have no queue
   row at all. **Always check for an existing queue row first**; if none exists, run
-  `scripts/seed-nonwdoms-draft.ts --file <path>` to create the queue+draft pair from the JSON (prints
+  `scripts/seed-nonofficial-directory-draft.ts --file <path>` to create the queue+draft pair from the JSON (prints
   the resulting `--queue-id`), then publish with that id. Skipping this step makes
   `publish-university-draft.ts` fail with "no matching draft found." (Discovered 2026-07-07: 5 of 6
   quick-fix drafts from the overnight run hit this exact wall.)

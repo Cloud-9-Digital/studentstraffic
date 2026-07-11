@@ -75,6 +75,6 @@ Ran a local Node script re-implementing `scripts/publish-university-draft.ts`'s 
 ## Publish Command (when ready)
 
 ```
-tsx scripts/seed-nonwdoms-draft.ts --file research-drafts/lithuania/klaipeda-state-university-of-applied-sciences.json
+tsx scripts/seed-university-draft.ts --file research-drafts/lithuania/klaipeda-state-university-of-applied-sciences.json
 tsx scripts/publish-university-draft.ts --queue-id <id returned above>
 ```

@@ -15,7 +15,7 @@ import { getLandingPageHref } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "MBBS Abroad Guides for Indian Students | Fees, Eligibility, Countries",
+  title: "Study Abroad Guides for Indian Students | Fees, Eligibility & Countries",
   description:
     "Read MBBS abroad guides on fees, eligibility, countries, NMC recognition, and college comparison for Indian students and parents.",
   path: "/guides",

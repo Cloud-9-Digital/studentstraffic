@@ -125,9 +125,8 @@ function mapRelatedPost(post: BlogPostSearchMetadata): RelatedPost {
 export async function generateStaticParams() {
   // 78 published posts as of writing — small enough to prerender at build
   // time for faster TTFB on every post, with no build fragility. New posts
-  // published after a build simply render dynamically (still using the same
-  // "use cache" data layer) until the next deploy, so nothing breaks if this
-  // list drifts from the live DB.
+  // published after a build render dynamically once their slug cache is
+  // revalidated.
   // Cache Components requires at least one build-time param. Keep this
   // non-content fallback so real blog slugs remain request-driven and newly
   // published posts are not 404ed simply because they missed the build list.

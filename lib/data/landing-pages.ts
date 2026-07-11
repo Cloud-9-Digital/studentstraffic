@@ -96,7 +96,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Is MBBS in Russia good for Indian students?",
         answer:
-          "MBBS in Russia is a well-established, legitimate pathway for Indian students who clear NEET but do not get a government seat in India and cannot afford private college fees of ₹80 lakh–₹2 crore. Russian universities are government-run, English-medium, and WDOMS-listed. The trade-offs are real — you'll be 6 years away from home, need to learn basic Russian for clinical years, and must clear FMGE/NExT on return. Whether it is 'good' depends on which university you choose, how seriously you prepare for FMGE, and your budget.",
+          "MBBS in Russia is a well-established, legitimate pathway for Indian students who clear NEET but do not get a government seat in India and cannot afford private college fees of ₹80 lakh–₹2 crore. Russian universities are government-run, English-medium, and officially verified. The trade-offs are real — you'll be 6 years away from home, need to learn basic Russian for clinical years, and must clear FMGE/NExT on return. Whether it is 'good' depends on which university you choose, how seriously you prepare for FMGE, and your budget.",
       },
       {
         question: "What are the fees of MBBS in Russia in total?",
@@ -116,7 +116,7 @@ export const landingPages: LandingPage[] = [
       {
         question: "Which Russian medical colleges are approved by NMC (formerly MCI)?",
         answer:
-          "NMC publishes guidelines (FMGL 2021 / Screening Test Regulations 2022) that foreign universities must meet for graduates to qualify for NExT — NMC does not maintain a curated approved-university list. As of 2026, 50+ Russian medical universities are WDOMS-listed and meet NMC's FMGL criteria, including Sechenov First Moscow State Medical University, Kazan State Medical University, Volgograd State Medical University, Orenburg State Medical University, Kemerovo State Medical University, Bashkir State Medical University, and Samara State Medical University. We assess each university's compliance before shortlisting.",
+          "NMC publishes guidelines (FMGL 2021 / Screening Test Regulations 2022) that foreign universities must meet for graduates to qualify for NExT — NMC does not maintain a curated approved-university list. As of 2026, 50+ Russian medical universities are officially verified and meet NMC's FMGL criteria, including Sechenov First Moscow State Medical University, Kazan State Medical University, Volgograd State Medical University, Orenburg State Medical University, Kemerovo State Medical University, Bashkir State Medical University, and Samara State Medical University. We assess each university's compliance before shortlisting.",
       },
       {
         question: "What is the hostel facility like for Indian MBBS students in Russia?",
@@ -354,7 +354,7 @@ export const landingPages: LandingPage[] = [
       { label: "Intake", value: "September" },
       { label: "Medium", value: "English (with Vietnamese clinical orientation)" },
       { label: "NEET required", value: "Not for admission — required before program start if practising in India" },
-      { label: "Recognition", value: "WDOMS / WHO listing and India-return fit are university-specific" },
+      { label: "Recognition", value: "official regulatory sources / WHO listing and India-return fit are university-specific" },
     ],
     eligibility: {
       intro:

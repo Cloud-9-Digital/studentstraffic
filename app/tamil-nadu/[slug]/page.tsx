@@ -248,7 +248,7 @@ export default async function TamilNaduCityPageRoute({
               <div>
                 <h3 className="font-semibold text-heading">NMC Recognition Verification</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Verify university against NMC and WDOMS databases. Understand FMGE/NExT requirements.
+                  Verify university against NMC and official regulatory sources databases. Understand FMGE/NExT requirements.
                   Get complete clarity on medical licensing for practice in India.
                 </p>
               </div>

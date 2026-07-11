@@ -4,21 +4,26 @@ import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "rea
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowRight, ChevronDown, GraduationCap, Menu, Search, X } from "lucide-react";
+import {
+  ArrowRight,
+  Building2,
+  ChevronDown,
+  GraduationCap,
+  MapPinned,
+  Menu,
+  X,
+} from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { UserMenu, UserMenuMobile } from "@/components/site/user-menu";
 import { CountryFlag } from "@/components/site/country-flag";
 import { SearchPalette } from "@/components/site/search-palette";
-import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import {
   useNavCountries,
-  useNavCountriesByRegion,
 } from "@/components/app/nav-countries-client-provider";
 import { useNavUniversities } from "@/components/app/nav-universities-client-provider";
 import { FEATURED_NAV_COUNTRY_SLUG } from "@/lib/data/nav-constants";
-import { getCountryHeroImage } from "@/lib/country-media";
 
 function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; showTagline?: boolean }) {
   return (
@@ -45,7 +50,6 @@ function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; show
 
 const navLinks = [
   { href: "/students",     label: "Talk to Students" },
-  { href: "/reviews",      label: "Reviews" },
   { href: "/news",         label: "News" },
   { href: "/blog",         label: "Blog" },
 ] as const;
@@ -56,61 +60,12 @@ const universityQuickLinks = [
     label: "Abroad Colleges",
     description: "Browse universities across top study-abroad destinations",
   },
-  {
-    href: "/india-mbbs-colleges",
-    label: "India MBBS Colleges",
-    description: "Browse government and private MBBS colleges in India",
-  },
 ] as const;
-
-// Simple, dependency-free substring match used by every search/filter box in
-// the nav. Case-insensitive; an empty query matches everything.
-function matchesQuery(name: string, query: string) {
-  const trimmed = query.trim().toLowerCase();
-  return trimmed.length === 0 || name.toLowerCase().includes(trimmed);
-}
-
-function NavSearchInput({
-  value,
-  onChange,
-  placeholder,
-  className,
-}: {
-  value: string;
-  onChange: (value: string) => void;
-  placeholder: string;
-  className?: string;
-}) {
-  return (
-    <div className={cn("relative", className)}>
-      <Search
-        aria-hidden
-        className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
-      />
-      <Input
-        type="search"
-        value={value}
-        onChange={(event) => onChange(event.target.value)}
-        placeholder={placeholder}
-        aria-label={placeholder}
-        className="h-10 rounded-xl pl-10 text-sm"
-      />
-    </div>
-  );
-}
 
 function SiteHeaderInner() {
   const pathname = usePathname();
   const navCountries = useNavCountries();
-  const navCountriesByRegion = useNavCountriesByRegion();
   const navUniversitiesByCountry = useNavUniversities();
-  const featuredCountry = navCountries.find(
-    (country) => country.slug === FEATURED_NAV_COUNTRY_SLUG,
-  );
-  const featuredCountryImage = featuredCountry
-    ? getCountryHeroImage(featuredCountry.slug)
-    : null;
-
   const countryBySlug = useMemo(
     () => new Map(navCountries.map((country) => [country.slug, country] as const)),
     [navCountries],
@@ -124,13 +79,6 @@ function SiteHeaderInner() {
   const [mobileUniversitiesOpen, setMobileUniversitiesOpen] = useState(false);
   const countriesMenuRef = useRef<HTMLDivElement | null>(null);
   const universitiesMenuRef = useRef<HTMLDivElement | null>(null);
-
-  // Search/filter state. Shared between the desktop mega menu and the mobile
-  // accordion equivalent for the same section - only one of the two is ever
-  // visible at a given viewport width, so there's no real cross-talk, and it
-  // keeps the amount of state manageable as the catalog grows.
-  const [countryQuery, setCountryQuery] = useState("");
-  const [universityQuery, setUniversityQuery] = useState("");
 
   // Which country's universities are previewed in the desktop mega menu's
   // right-hand panel. Defaults to the featured destination when it has a
@@ -149,25 +97,9 @@ function SiteHeaderInner() {
     string | null
   >(null);
 
-  const filteredRegionGroups = useMemo(() => {
-    if (!countryQuery.trim()) return navCountriesByRegion;
-    return navCountriesByRegion
-      .map((group) => ({
-        ...group,
-        countries: group.countries.filter((country) => matchesQuery(country.name, countryQuery)),
-      }))
-      .filter((group) => group.countries.length > 0);
-  }, [navCountriesByRegion, countryQuery]);
+  const filteredNavCountries = navCountries;
 
-  const filteredNavCountries = useMemo(
-    () => navCountries.filter((country) => matchesQuery(country.name, countryQuery)),
-    [navCountries, countryQuery],
-  );
-
-  const filteredUniversityGroups = useMemo(
-    () => navUniversitiesByCountry.filter((group) => matchesQuery(group.countryName, universityQuery)),
-    [navUniversitiesByCountry, universityQuery],
-  );
+  const filteredUniversityGroups = navUniversitiesByCountry;
 
   const activeUniversityGroup =
     filteredUniversityGroups.find((group) => group.countrySlug === activeUniversityCountrySlug) ??
@@ -195,23 +127,8 @@ function SiteHeaderInner() {
     setMobileUniversitiesOpen(false);
   }, [pathname]);
 
-  // Reset each menu's search box (and the mobile inline expansion) once it
-  // closes, so reopening it always starts from a clean, fully-visible state.
-  useEffect(() => {
-    if (!countriesOpen) setCountryQuery("");
-  }, [countriesOpen]);
-
-  useEffect(() => {
-    if (!universitiesOpen) setUniversityQuery("");
-  }, [universitiesOpen]);
-
-  useEffect(() => {
-    if (!mobileCountriesOpen) setCountryQuery("");
-  }, [mobileCountriesOpen]);
-
   useEffect(() => {
     if (!mobileUniversitiesOpen) {
-      setUniversityQuery("");
       setMobileExpandedUniversityCountry(null);
     }
   }, [mobileUniversitiesOpen]);
@@ -254,8 +171,7 @@ function SiteHeaderInner() {
       : pathname === href || pathname.startsWith(href + "/");
 
   const countriesActive = isActive("/countries");
-  const universitiesActive =
-    isActive("/universities") || isActive("/india-mbbs-colleges");
+  const universitiesActive = isActive("/universities");
 
   return (
     <>
@@ -276,7 +192,7 @@ function SiteHeaderInner() {
           <SiteLogo showTagline />
 
           {/* Desktop nav */}
-          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-0.5 lg:flex">
+          <nav className="absolute inset-x-0 hidden items-center justify-center gap-0.5 lg:flex">
             <div className="relative" ref={countriesMenuRef}>
               <button
                 type="button"
@@ -302,66 +218,55 @@ function SiteHeaderInner() {
               <div
                 inert={!countriesOpen}
                 className={cn(
-                  "absolute left-0 top-full mt-2 w-[52rem] max-w-[90vw] overflow-hidden rounded-2xl border border-border bg-background shadow-xl transition-all duration-200",
+                  "fixed inset-x-0 top-16 z-40 w-screen overflow-hidden rounded-b-3xl border border-t-0 border-border bg-white shadow-xl transition-all duration-200",
                   countriesOpen
                     ? "pointer-events-auto translate-y-0 opacity-100"
                     : "pointer-events-none -translate-y-1 opacity-0",
                 )}
               >
-                <div className="flex items-center justify-between gap-4 border-b border-border/60 px-5 py-3">
+                <div className="float-left min-h-[18rem] w-64 border-r border-border bg-white px-6 py-7">
                   <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-primary/70">
-                      Countries
+                    <p className="flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-accent">
+                      <MapPinned className="size-3.5" /> 01 / WHERE TO GO
                     </p>
-                    <h3 className="mt-0.5 text-sm font-semibold text-heading">
-                      Choose a destination
+                    <h3 className="mt-2 font-display text-3xl font-semibold leading-none tracking-[-0.04em] text-primary">
+                      Where will your degree take you?
                     </h3>
+                    <p className="mt-2 max-w-sm text-xs leading-5 text-muted-foreground">
+                      A quick way into the countries, cities, and stories students compare most.
+                    </p>
                   </div>
-                  <NavSearchInput
-                    value={countryQuery}
-                    onChange={setCountryQuery}
-                    placeholder="Search countries…"
-                    className="w-56"
-                  />
                 </div>
 
-                <div className="flex gap-6 p-5">
-                  <div className="max-h-[24rem] flex-1 overflow-y-auto pr-1">
-                    {filteredRegionGroups.length > 0 ? (
-                      <div className="grid grid-cols-3 gap-x-6 gap-y-4">
-                        {filteredRegionGroups.map((group) => (
-                          <div key={group.region}>
-                            <p className="px-3 text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-                              {group.region}
-                            </p>
-                            <div className="mt-1">
-                              {group.countries.map((destination) => (
-                                <Link
-                                  key={destination.href}
-                                  href={destination.href}
-                                  onClick={() => setCountriesOpen(false)}
-                                  className="group flex items-center gap-2.5 rounded-xl px-3 py-2 transition-colors hover:bg-muted"
-                                >
-                                  <CountryFlag
-                                    countryCode={destination.isoCode}
-                                    alt={destination.name}
-                                    width={22}
-                                    height={15}
-                                    className="rounded-sm border border-black/5 shadow-sm"
-                                  />
-                                  <span className="min-w-0 flex-1 truncate text-sm font-medium text-foreground">
-                                    {destination.name}
-                                  </span>
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
+                <div className="ml-64 min-h-[18rem] bg-white p-5">
+                  <div className="max-h-[27rem] min-w-0 overflow-y-auto pr-1">
+                    {filteredNavCountries.length > 0 ? (
+                      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+                        {filteredNavCountries.map((destination) => (
+                          <Link
+                            key={destination.href}
+                            href={destination.href}
+                            onClick={() => setCountriesOpen(false)}
+                            className="group relative flex min-h-20 flex-col items-start justify-between gap-3 rounded-2xl border border-border bg-card p-3.5 transition-all hover:-translate-y-0.5 hover:border-primary/20 hover:bg-muted/30 hover:shadow-sm"
+                          >
+                            <CountryFlag
+                              countryCode={destination.isoCode}
+                              alt={destination.name}
+                              width={26}
+                              height={18}
+                              className="rounded-sm border border-black/5 shadow-sm"
+                            />
+                            <span className="min-w-0 break-words text-sm font-semibold leading-5 text-foreground">
+                              {destination.name}
+                            </span>
+                            <ArrowRight className="absolute right-3.5 top-3.5 size-3.5 text-accent opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" />
+                          </Link>
                         ))}
                       </div>
                     ) : (
                       <div className="flex h-40 flex-col items-center justify-center gap-2 text-center">
                         <p className="text-sm font-medium text-foreground">
-                          No destinations match &ldquo;{countryQuery}&rdquo;
+                          No destinations available
                         </p>
                         <Link
                           href="/countries"
@@ -374,45 +279,14 @@ function SiteHeaderInner() {
                     )}
                   </div>
 
-                  {featuredCountry && featuredCountryImage && (
-                    <Link
-                      href={featuredCountry.href}
-                      onClick={() => setCountriesOpen(false)}
-                      className="group relative flex w-56 shrink-0 flex-col overflow-hidden rounded-2xl border border-border/60"
-                    >
-                      <div className="relative h-28 w-full overflow-hidden">
-                        <Image
-                          src={featuredCountryImage.url}
-                          alt={featuredCountryImage.alt}
-                          fill
-                          sizes="224px"
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <span className="absolute left-2.5 top-2.5 rounded-full bg-accent/90 px-2.5 py-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-white">
-                          Popular
-                        </span>
-                      </div>
-                      <div className="flex flex-1 flex-col gap-1 bg-muted/40 p-3.5">
-                        <p className="text-sm font-semibold text-heading">
-                          {featuredCountry.name}
-                        </p>
-                        <p className="text-xs leading-5 text-muted-foreground">
-                          {featuredCountry.description}
-                        </p>
-                        <span className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-primary">
-                          Explore {featuredCountry.name}
-                          <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-                        </span>
-                      </div>
-                    </Link>
-                  )}
                 </div>
 
-                <div className="border-t border-border/60 p-2">
+                <div className="clear-both flex items-center justify-between gap-3 border-t border-border bg-muted/20 px-7 py-3.5">
+                  <p className="text-xs font-medium text-muted-foreground">Explore destinations</p>
                   <Link
                     href="/countries"
                     onClick={() => setCountriesOpen(false)}
-                    className="flex items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-muted hover:text-primary"
+                    className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/8"
                   >
                     View all countries
                     <ArrowRight className="size-4" />
@@ -446,32 +320,44 @@ function SiteHeaderInner() {
               <div
                 inert={!universitiesOpen}
                 className={cn(
-                  "absolute left-0 top-full mt-2 w-[46rem] max-w-[92vw] overflow-hidden rounded-2xl border border-border bg-background shadow-xl transition-all duration-200",
+                  "fixed inset-x-0 top-16 z-40 w-screen overflow-hidden rounded-b-3xl border border-t-0 border-border bg-white shadow-xl transition-all duration-200",
                   universitiesOpen
                     ? "pointer-events-auto translate-y-0 opacity-100"
                     : "pointer-events-none -translate-y-1 opacity-0",
                 )}
               >
-                <div className="flex items-center justify-between gap-4 border-b border-border/60 px-5 py-3">
+                <div className="float-left min-h-[25rem] w-80 border-r border-border bg-white px-6 py-7">
                   <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-primary/70">
-                      Explore Colleges
-                    </p>
-                    <h3 className="mt-0.5 text-sm font-semibold text-heading">
-                      Choose a college finder
-                    </h3>
+                    <div>
+                      <p className="flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                        <Building2 className="size-3.5" /> University atlas
+                      </p>
+                      <h3 className="mt-1 font-display text-xl font-semibold tracking-tight text-primary">
+                        Start with the destination, then meet the right university
+                      </h3>
+                      <p className="mt-1 text-xs text-muted-foreground">
+                        Explore verified options by country, city, and student fit.
+                      </p>
+                    </div>
+                    <Link
+                      href="/universities"
+                      onClick={() => setUniversitiesOpen(false)}
+                      className="mt-8 flex w-fit items-center gap-2 rounded-xl border border-primary/20 bg-primary/5 px-3 py-2 text-xs font-semibold text-primary transition-colors hover:bg-primary/10"
+                    >
+                      Open finder <ArrowRight className="size-3.5" />
+                    </Link>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2 border-b border-border/60 p-3">
+                <div className="ml-80 grid grid-cols-1 gap-3 border-b border-border/60 bg-white p-4 sm:grid-cols-2">
                   {universityQuickLinks.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
                       onClick={() => setUniversitiesOpen(false)}
-                      className="group flex items-center gap-3 rounded-xl bg-muted/40 px-3 py-2.5 transition-colors hover:bg-muted"
+                      className="group flex items-center gap-3 rounded-2xl border border-primary/10 bg-white px-4 py-3 transition-all hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-sm"
                     >
-                      <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/8 text-primary">
+                        <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary/8 text-primary">
                         <GraduationCap className="size-4" />
                       </span>
                       <div className="min-w-0 flex-1">
@@ -488,19 +374,13 @@ function SiteHeaderInner() {
                 </div>
 
                 {navUniversitiesByCountry.length > 0 && (
-                  <div className="flex">
+                  <div className="ml-80 flex bg-background">
                     {/* Country rail: scrollable + searchable, scales to any number of countries */}
-                    <div className="w-56 shrink-0 border-r border-border/60 p-3">
-                      <NavSearchInput
-                        value={universityQuery}
-                        onChange={setUniversityQuery}
-                        placeholder="Search countries…"
-                        className="mb-2"
-                      />
+                    <div className="w-60 shrink-0 border-r border-border/60 bg-muted/20 p-4">
                       <div
                         role="tablist"
                         aria-label="Countries with university listings"
-                        className="max-h-72 space-y-0.5 overflow-y-auto"
+                        className="max-h-80 space-y-1 overflow-y-auto"
                       >
                         {filteredUniversityGroups.length > 0 ? (
                           filteredUniversityGroups.map((group) => {
@@ -515,10 +395,10 @@ function SiteHeaderInner() {
                                 onFocus={() => setActiveUniversityCountrySlug(group.countrySlug)}
                                 onClick={() => setActiveUniversityCountrySlug(group.countrySlug)}
                                 className={cn(
-                                  "flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-sm transition-colors",
+                                  "flex w-full items-center gap-2 rounded-xl border border-transparent px-3 py-2.5 text-left text-sm transition-all",
                                   active
-                                    ? "bg-primary/8 font-semibold text-primary"
-                                    : "text-foreground/80 hover:bg-muted",
+                                    ? "border-primary/10 bg-white font-semibold text-primary shadow-sm"
+                                    : "text-foreground/80 hover:bg-white hover:shadow-sm",
                                 )}
                               >
                                 <CountryFlag
@@ -528,26 +408,23 @@ function SiteHeaderInner() {
                                   height={13}
                                   className="shrink-0 rounded-sm border border-black/5"
                                 />
-                                <span className="min-w-0 flex-1 truncate">{group.countryName}</span>
-                                <span className="shrink-0 text-[0.7rem] text-muted-foreground">
-                                  {group.totalPublishedCount}
-                                </span>
+                                <span className="min-w-0 flex-1 break-words leading-5">{group.countryName}</span>
                               </button>
                             );
                           })
                         ) : (
                           <p className="px-2 py-4 text-xs text-muted-foreground">
-                            No countries match &ldquo;{universityQuery}&rdquo;
+                            No countries with university listings
                           </p>
                         )}
                       </div>
                     </div>
 
                     {/* University preview panel for the active/hovered country */}
-                    <div className="min-w-0 flex-1 p-4">
+                    <div className="min-w-0 flex-1 p-5">
                       {activeUniversityGroup ? (
                         <>
-                          <div className="mb-2.5 flex items-center justify-between gap-2">
+                          <div className="mb-4 flex items-center justify-between gap-2 border-b border-border/60 pb-3">
                             <div className="flex items-center gap-2">
                               <CountryFlag
                                 countryCode={countryBySlug.get(activeUniversityGroup.countrySlug)?.isoCode ?? ""}
@@ -556,24 +433,21 @@ function SiteHeaderInner() {
                                 height={14}
                                 className="rounded-sm border border-black/5"
                               />
-                              <h4 className="text-sm font-semibold text-heading">
+                              <h4 className="font-display text-lg font-semibold tracking-tight text-heading">
                                 {activeUniversityGroup.countryName}
                               </h4>
                             </div>
-                            <span className="text-xs text-muted-foreground">
-                              {activeUniversityGroup.totalPublishedCount} universities
-                            </span>
                           </div>
-                          <div className="space-y-0.5">
+                          <div className="grid max-h-[24rem] gap-1.5 overflow-y-auto pr-1 sm:grid-cols-2">
                             {activeUniversityGroup.universities.map((university) => (
                               <Link
                                 key={university.href}
                                 href={university.href}
                                 onClick={() => setUniversitiesOpen(false)}
-                                className="group flex items-center justify-between gap-3 rounded-lg px-2.5 py-2 text-sm text-foreground transition-colors hover:bg-muted hover:text-primary"
+                                className="group flex items-center justify-between gap-3 rounded-xl border border-border/60 bg-card px-3 py-2.5 text-sm text-foreground transition-all hover:-translate-y-0.5 hover:border-primary/20 hover:text-primary hover:shadow-sm"
                               >
-                                <span className="min-w-0 flex-1 truncate">{university.name}</span>
-                                <span className="shrink-0 truncate text-xs text-muted-foreground">
+                                <span className="min-w-0 flex-1 break-words leading-5">{university.name}</span>
+                                <span className="shrink-0 text-right text-xs text-muted-foreground">
                                   {university.city}
                                 </span>
                               </Link>
@@ -584,14 +458,14 @@ function SiteHeaderInner() {
                             onClick={() => setUniversitiesOpen(false)}
                             className="mt-2.5 inline-flex items-center gap-1 rounded-lg px-2.5 py-1 text-xs font-semibold text-primary transition-colors hover:underline"
                           >
-                            View all {activeUniversityGroup.totalPublishedCount} in {activeUniversityGroup.countryName}
+                            View all in {activeUniversityGroup.countryName}
                             <ArrowRight className="size-3" />
                           </Link>
                         </>
                       ) : (
                         <div className="flex h-full min-h-40 flex-col items-center justify-center gap-2 text-center">
                           <p className="text-sm font-medium text-foreground">
-                            No countries match &ldquo;{universityQuery}&rdquo;
+                            No countries with university listings
                           </p>
                           <Link
                             href="/universities"
@@ -727,12 +601,6 @@ function SiteHeaderInner() {
 
                     {navUniversitiesByCountry.length > 0 && (
                       <>
-                        <NavSearchInput
-                          value={universityQuery}
-                          onChange={setUniversityQuery}
-                          placeholder="Search countries…"
-                          className="px-1 py-1.5"
-                        />
                         <p className="px-3 pt-1 text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                           Browse by country
                         </p>
@@ -759,9 +627,6 @@ function SiteHeaderInner() {
                                     />
                                     <span className="min-w-0 flex-1 truncate text-left font-medium text-foreground">
                                       {group.countryName}
-                                    </span>
-                                    <span className="shrink-0 text-xs text-muted-foreground">
-                                      {group.totalPublishedCount}
                                     </span>
                                     <ChevronDown
                                       className={cn(
@@ -804,7 +669,7 @@ function SiteHeaderInner() {
                             })
                           ) : (
                             <p className="px-3 py-4 text-sm text-muted-foreground">
-                              No countries match &ldquo;{universityQuery}&rdquo;
+                              No countries with university listings
                             </p>
                           )}
                         </div>
@@ -839,12 +704,6 @@ function SiteHeaderInner() {
               >
                 <div inert={!mobileCountriesOpen} className="overflow-hidden">
                   <div className="space-y-1 px-2 pb-3">
-                    <NavSearchInput
-                      value={countryQuery}
-                      onChange={setCountryQuery}
-                      placeholder="Search countries…"
-                      className="px-1 py-1.5"
-                    />
                     {filteredNavCountries.length > 0 ? (
                       filteredNavCountries.map((destination) => (
                         <Link
@@ -869,7 +728,7 @@ function SiteHeaderInner() {
                       ))
                     ) : (
                       <p className="px-3 py-4 text-sm text-muted-foreground">
-                        No destinations match &ldquo;{countryQuery}&rdquo;
+                        No destinations available
                       </p>
                     )}
                   </div>

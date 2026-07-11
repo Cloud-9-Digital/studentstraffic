@@ -150,10 +150,10 @@ CTA: Get a city-specific budget estimate from our counsellors.
 Angle: A verified, NMC-compliant list of Russian medical universities that enrol Indian students, with quick-reference data (city, fees range, NMC status) so parents can shortlist without reading 20 separate pages.
 
 Must-have sections:
-1. Intro: How many medical universities exist in Russia total (~50+ government medical universities), how many are listed on the NMC/WDOMS directory, how many regularly enrol Indian students (~20–30 active)
+1. Intro: How many medical universities exist in Russia total (~50+ government medical universities), how many are listed on the NMC and official regulatory sources directory, how many regularly enrol Indian students (~20–30 active)
 2. The list itself: University name, city, annual tuition range (USD), NMC listed (Yes/No), link to full university page
 3. Filter/sort note: sorted by fee (lowest first) so budget-conscious families can scan quickly
-4. What makes a Russian university NMC-compliant: brief explainer (listed on WDOMS, passed NMC inspection, runs English-medium program with clinical training)
+4. What makes a Russian university NMC-compliant: brief explainer (listed on official regulatory sources, passed NMC inspection, runs English-medium program with clinical training)
 5. Universities to be cautious about: newer institutions without a track record of NMC inspections
 6. FAQ: Which Russian medical universities are approved by MCI/NMC? Is the list updated yearly?
 
@@ -308,7 +308,7 @@ Check the page at the given slug. If a full fee breakdown and ranking section al
 - Explicit year-by-year tuition fee table in USD and INR equivalent
 - Total 6-year cost calculation (tuition + hostel + living)
 - Current world ranking (QS, Times, Webometrics) with the year stated
-- NMC/WDOMS listing confirmation with link
+- NMC and official regulatory sources listing confirmation with link
 - Indian student count (approximate)
 - Clinical hospital affiliation name
 - Intake months and application deadline
@@ -506,7 +506,7 @@ Must-have sections:
 3. Advantage 3 — Government universities: most MBBS universities are established government institutions, not private colleges with no track record
 4. Advantage 4 — English medium: theory and exams in English at all major universities
 5. Advantage 5 — Established Indian student community: 30+ years of Indian students in Russia, functional Indian mess and community networks in major cities
-6. Advantage 6 — NMC recognition: universities that are WDOMS-listed are recognised by NMC, enabling India-return pathway
+6. Advantage 6 — NMC recognition: universities that are officially verified are recognised by NMC, enabling India-return pathway
 7. Advantage 7 — Clinical exposure: large government hospitals attached to universities provide patient volume
 8. Caveat per advantage: Cost advantage assumes regional cities, not Moscow. English medium does not mean all clinical interaction is in English. NMC recognition is university-specific, not country-wide.
 

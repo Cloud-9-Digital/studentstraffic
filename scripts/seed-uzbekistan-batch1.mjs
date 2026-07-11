@@ -115,7 +115,7 @@ const universities = [
     thingsToConsider: ["Extremely competitive entrance"],
     bestFitFor: ["Top academic performers"],
     teachingHospitals: ["First Tashkent State Clinics"],
-    recognitionBadges: ["Legacy Hub", "WDOMS Listed"],
+    recognitionBadges: ["Legacy Hub", "official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -145,11 +145,11 @@ const universities = [
     indianFoodSupport: "Basic local access.",
     safetyOverview: "Very safe.",
     studentSupport: "Highly personalized for pioneer cohorts.",
-    whyChoose: ["WDOMS Listed", "Affordable private option near Tashkent"],
+    whyChoose: ["official regulatory sources Listed", "Affordable private option near Tashkent"],
     thingsToConsider: ["Brand is extremely new"],
     bestFitFor: ["Pioneering independent students"],
     teachingHospitals: ["Angren City Hospitals"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -179,11 +179,11 @@ const universities = [
     indianFoodSupport: "Capital city access.",
     safetyOverview: "Modern campus security.",
     studentSupport: "Direct focus on FMGE success.",
-    whyChoose: ["Modern curriculum", "Listed in WDOMS"],
+    whyChoose: ["Modern curriculum", "Listed in official regulatory sources"],
     thingsToConsider: ["Track record is still building"],
     bestFitFor: ["Tech-focused students"],
     teachingHospitals: ["Partner Capital Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -217,7 +217,7 @@ const universities = [
     thingsToConsider: ["Far from Tashkent"],
     bestFitFor: ["Budget state university seekers"],
     teachingHospitals: ["Karshi State Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -251,7 +251,7 @@ const universities = [
     thingsToConsider: ["It is a branch campus, not the main Kokand hub"],
     bestFitFor: ["Quiet town seekers"],
     teachingHospitals: ["Andijan Network Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -285,7 +285,7 @@ const universities = [
     thingsToConsider: ["Nukus is extremely remote and deals with distinct ecological challenges (Aral Sea region)"],
     bestFitFor: ["Adventurous medical students"],
     teachingHospitals: ["Nukus Regional Networks"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -307,7 +307,7 @@ const universities = [
     type: "Private",
     establishedYear: 2020,
     officialWebsite: "#",
-    summary: "Profi University is a modern, broad private university in Tashkent that recently incorporated a dedicated, WDOMS-listed medical faculty.",
+    summary: "Profi University is a modern, broad private university in Tashkent that recently incorporated a dedicated, officially verified medical faculty.",
     campusLifestyle: "Corporate, digitized, and highly modern.",
     cityProfile: "Tashkent.",
     clinicalExposure: "Agreements with capital area polyclinics.",
@@ -319,7 +319,7 @@ const universities = [
     thingsToConsider: ["Medical faculty represents a small portion of the overall university"],
     bestFitFor: ["Tech-enabled learners"],
     teachingHospitals: ["Private Tashkent Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -353,7 +353,7 @@ const universities = [
     thingsToConsider: ["Core legacy is pharmacy, not general surgery"],
     bestFitFor: ["Research and pharmacology seekers"],
     teachingHospitals: ["Tashkent Medical Networks"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -371,7 +371,7 @@ const universities = [
 ];
 
 async function seed() {
-  console.log("=== Uzbekistan Deep Enrichment: Batch 1 (Top WDOMS Match) ===\n");
+  console.log("=== Uzbekistan Deep Enrichment: Batch 1 (Top official regulatory sources Match) ===\n");
   const client = await pool.connect();
 
   try {

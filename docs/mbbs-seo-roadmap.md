@@ -35,7 +35,7 @@ The local graph should support the national graph, not compete with it.
 ### 3. Compliance pages
 
 - NMC Rules for MBBS Abroad
-- WDOMS vs NMC Recognition
+- official regulatory sources vs NMC Recognition
 - NExT After MBBS Abroad
 - Return to India After MBBS Abroad
 - Internship After MBBS Abroad

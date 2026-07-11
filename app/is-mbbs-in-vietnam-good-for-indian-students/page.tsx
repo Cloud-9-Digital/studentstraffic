@@ -143,7 +143,7 @@ const faqItems = [
   {
     question: "Is MBBS in Vietnam better than private MBBS colleges in India?",
     answer:
-      "For families with budget constraints, yes. Vietnam offers 50-90% cost savings (₹28-40 lakhs vs ₹60 lakhs-₹2.5 crores for Indian private colleges) with WDOMS-listed degrees meeting NMC guidelines and international exposure. Students Traffic provides free FMGE/NExT coaching for students who join through us, removing the typical ₹1.5-2.5 lakh coaching cost from the comparison. However, India advantages include: no language barrier, higher FMGE pass rates (65-75% vs 15-25% for foreign graduates), no adaptation stress, and familiar medical practice patterns.",
+      "For families with budget constraints, yes. Vietnam offers 50-90% cost savings (₹28-40 lakhs vs ₹60 lakhs-₹2.5 crores for Indian private colleges) with officially verified degrees meeting NMC guidelines and international exposure. Students Traffic provides free FMGE/NExT coaching for students who join through us, removing the typical ₹1.5-2.5 lakh coaching cost from the comparison. However, India advantages include: no language barrier, higher FMGE pass rates (65-75% vs 15-25% for foreign graduates), no adaptation stress, and familiar medical practice patterns.",
   },
   {
     question: "What makes Vietnam a poor choice despite lower fees?",

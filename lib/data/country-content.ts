@@ -40,7 +40,7 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     admissionSteps: [
-      "We assess your NEET score, Class 12 PCB marks, budget, and city preference, then shortlist 3–5 Russian universities that match your profile. Every university we present is WDOMS-listed, meets NMC guidelines, and confirmed open for foreign applicants in the current cycle.",
+      "We assess your NEET score, Class 12 PCB marks, budget, and city preference, then shortlist 3–5 Russian universities that match your profile. Every university we present is officially verified, meets NMC guidelines, and confirmed open for foreign applicants in the current cycle.",
       "We prepare your complete document set in the exact format required: Class 10 and 12 marksheets with apostille, notarised Russian translations of all academic records, NEET scorecard, photographs, and medical fitness certificate. Apostille and translation are mandatory for Russia — we manage this from your city.",
       "We submit your application through the university's official international admissions route. For students eligible for the Russian Government Scholarship quota, we process through the Indian Ministry of Education pathway — a separate route we handle in parallel.",
       "We obtain the university's official invitation letter on your behalf, typically within 2–4 weeks of a complete application. We review the invitation for accuracy — institution name, course, fee terms — before presenting it to you.",
@@ -119,7 +119,7 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     admissionSteps: [
-      "We assess your profile and shortlist Vietnamese universities based on WDOMS listing, NMC guideline compliance, clinical training hospital quality, and 6-year budget. Vietnam's universities vary significantly — we only present institutions with a documented track record for Indian students.",
+      "We assess your profile and shortlist Vietnamese universities based on official regulatory verification, NMC guideline compliance, clinical training hospital quality, and 6-year budget. Vietnam's universities vary significantly — we only present institutions with a documented track record for Indian students.",
       "We prepare your complete application documents: Class 10 and 12 marksheets with apostille, NEET scorecard, passport copy, photographs, and medical fitness certificate. Where the university requires Vietnamese translation of academic records, we arrange this as part of the process.",
       "We submit your application to the university's international office. Vietnam has no government quota pathway — all admissions go through the university directly. Admission letters are typically issued within 2–4 weeks of a complete application, and we review them before presenting to you.",
       "We guide you through the NMC Eligibility Certificate application at nmc.org.in after the admission letter is received. This is mandatory before departure.",
@@ -188,7 +188,7 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     admissionSteps: [
-      "We assess your profile and shortlist Georgian universities based on NMC guideline compliance, WDOMS listing, English-medium delivery, and 6-year cost. Georgia has 36+ private medical universities in Tbilisi alone — we present only institutions with a verified track record for Indian students and documented FMGE outcomes.",
+      "We assess your profile and shortlist Georgian universities based on NMC guideline compliance, official regulatory verification, English-medium delivery, and 6-year cost. Georgia has 36+ private medical universities in Tbilisi alone — we present only institutions with a verified track record for Indian students and documented FMGE outcomes.",
       "We prepare your application documents: Class 10 and 12 marksheets, NEET scorecard, passport copy, and photographs. Georgia does not require apostille on Indian academic documents, which simplifies preparation compared to Russia and Kyrgyzstan.",
       "We submit your application through the university's official international admissions process. Most Georgian universities issue an admission letter within 1–3 weeks. Where the university conducts an entrance interview or English proficiency check, we prepare you in advance.",
       "We guide you through the NMC Eligibility Certificate application at nmc.org.in after the admission letter is received. This is mandatory before departure.",
@@ -258,7 +258,7 @@ const countryContentMap: Record<string, CountryContent> = {
       ],
     },
     admissionSteps: [
-      "We assess your profile and shortlist Kyrgyz universities based on WDOMS listing, NMC guideline compliance, and 6-year budget. We advise on city — Bishkek has the largest Indian student community and the most developed FMGE coaching infrastructure; Osh is cheaper but has fewer options.",
+      "We assess your profile and shortlist Kyrgyz universities based on official regulatory verification, NMC guideline compliance, and 6-year budget. We advise on city — Bishkek has the largest Indian student community and the most developed FMGE coaching infrastructure; Osh is cheaper but has fewer options.",
       "We prepare your complete document set: Class 10 and 12 marksheets with apostille, NEET scorecard, passport copy, and photographs. Where the university requires notarised Russian or Kyrgyz translation of academic records, we arrange this as part of the process.",
       "We submit your application to the university's international department and track the invitation letter, typically issued within 1–3 weeks. Where the university requires an entrance examination in biology and chemistry, we prepare you in advance — these can usually be taken online.",
       "We guide you through the NMC Eligibility Certificate application at nmc.org.in after the invitation letter is received. This is mandatory before departure.",

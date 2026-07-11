@@ -11,7 +11,7 @@ const COURSE_MBBS_ID = 13;
 
 const universities = [
   {
-    wdomsNameMatches: "Alte University",
+    official-directoryNameMatches: "Alte University",
     slug: "alte-university-georgia",
     name: "Alte University",
     city: "Tbilisi",
@@ -58,7 +58,7 @@ const universities = [
     ]
   },
   {
-    wdomsNameMatches: "Batumi Shota Rustaveli",
+    official-directoryNameMatches: "Batumi Shota Rustaveli",
     slug: "batumi-shota-rustaveli-state-university",
     name: "Batumi Shota Rustaveli State University",
     city: "Batumi",
@@ -105,7 +105,7 @@ const universities = [
     ]
   },
   {
-    wdomsNameMatches: "BAU International",
+    official-directoryNameMatches: "BAU International",
     slug: "bau-international-university-batumi",
     name: "BAU International University",
     city: "Batumi",
@@ -150,7 +150,7 @@ const universities = [
     ]
   },
   {
-    wdomsNameMatches: "Georgian National University SEU",
+    official-directoryNameMatches: "Georgian National University SEU",
     slug: "seu-georgian-national-university",
     name: "Georgian National University SEU",
     city: "Tbilisi",
@@ -196,7 +196,7 @@ const universities = [
     ]
   },
   {
-    wdomsNameMatches: "East European University",
+    official-directoryNameMatches: "East European University",
     slug: "east-european-university-eeu",
     name: "East European University",
     city: "Tbilisi",
@@ -241,7 +241,7 @@ const universities = [
     ]
   },
   {
-    wdomsNameMatches: "European University",
+    official-directoryNameMatches: "European University",
     slug: "european-university-georgia",
     name: "European University",
     city: "Tbilisi",
@@ -288,15 +288,15 @@ const universities = [
 ];
 
 async function seed() {
-  console.log("=== Georgia Deep Enrichment: Batch 1 (Top WDOMS Match) ===\n");
+  console.log("=== Georgia Deep Enrichment: Batch 1 (Top official regulatory sources Match) ===\n");
   const client = await pool.connect();
 
   try {
     for (const uni of universities) {
       console.log(`Deeply Enriching: ${uni.name}...`);
 
-      // Find the university ID from wdoms entries or universities table by name matching
-      // Since they are currently in wdoms_directory_entries AND imported by user maybe to universities?
+      // Find the university ID from official-directory entries or universities table by name matching
+      // Since they are currently in official-directory_directory_entries AND imported by user maybe to universities?
       // "already all these universities are imported to the website, they are not published."
       // Let's UPDATE the existing university if it exists, otherwise INSERT.
       

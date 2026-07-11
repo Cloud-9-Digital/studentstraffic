@@ -59,6 +59,11 @@ const securityHeaders = [
 ] satisfies Array<{ key: string; value: string }>;
 
 const nextConfig: NextConfig = {
+  // Keep Turbopack scoped to this app when other projects have lockfiles
+  // higher in the Documents tree.
+  turbopack: {
+    root: process.cwd(),
+  },
   allowedDevOrigins: ["192.168.1.8"],
   serverExternalPackages: ["ably"],
   logging: {

@@ -23,7 +23,7 @@ Legend: ✅ decided · ❓ open (needs your input) · 🔍 to be answered by the
 - ✅ **Vietnam = pilot (small net-new set). Real volume = Russia & Georgia.** Build & validate the pipeline on Vietnam's handful of net-new, then run it for Russia and Georgia where many more universities exist.
 
 ### 2. Discovery (how it finds universities)
-- ✅ **Do NOT use WDOMS** — all WDOMS universities are already added.
+- ✅ **Do NOT use official regulatory sources** — all official regulatory sources universities are already added.
 - ✅ Discover from **all other sources**: web search, Vietnam Ministry of Education & Training / Ministry of Health lists, ranking & directory sites, credible aggregators.
 - ✅ **Dedupe against the existing `universities` table** so nothing already-present is re-added.
 - ✅ **Dedup strictness: CONSERVATIVE — strictly no redundant content.** When unsure whether a discovered university already exists in the DB, skip/flag it rather than risk a duplicate live page. Match across name variants/abbreviations/local-language spellings before adding anything.
@@ -120,19 +120,19 @@ The pages must be **structured and length-disciplined**, not walls of text. "The
 Two headline findings from the read-only investigation:
 
 ### Finding 1 — The "research runner" is a STUB. We have to BUILD the AI brain.
-- `scripts/run-university-research.ts` does **no web research and calls no LLM** — it just reshapes existing WDOMS data into **placeholder text** ("Pending official-source research… do not publish"). Those placeholders are exactly what the publish gate rejects, so it can never feed live pages.
+- `scripts/run-university-research.ts` does **no web research and calls no LLM** — it just reshapes existing official regulatory sources data into **placeholder text** ("Pending official-source research… do not publish"). Those placeholders are exactly what the publish gate rejects, so it can never feed live pages.
 - **`scripts/publish-university-draft.ts` is real and production-grade** — strict publish gate (already our hard-fail floor: needs official site, ≥2 sources, 8 filled prose fields free of placeholder markers, ≥3 items in each list, ≥3 FAQs, ≥1 valid program), idempotent upsert, sets `published=true`, triggers search-index + revalidation. **Reusable as-is.**
 - **So this is a BUILD project, not a "run a script overnight" job.** The plumbing to publish exists; the *intelligence* (discover + multi-source research + write) must be built. That build is what gets reused for Russia & Georgia.
 
 ### Finding 2 — Vietnam is already ~done. Net-new is a handful, not hundreds.
-- **30 Vietnam medical universities are already published** and all 29 WDOMS Vietnam entries are already ingested. This is already a near-complete set of Vietnam's accredited medical schools.
-- **Net-new discoverable universities are likely ~0–10** (newer private faculties, or nursing/pharmacy-only schools not in WDOMS). An overnight "find all Vietnam medical universities" run would surface **very little**.
-- Implication: the big *volume* is **Russia & Georgia**, not Vietnam. And a separate, possibly higher-value Vietnam opportunity is **enriching the existing 30 pages** to the new multi-source / India-optimised / SEO-AEO standard (they were seeded from WDOMS and may be thin).
+- **30 Vietnam medical universities are already published** and all 29 official regulatory sources Vietnam entries are already ingested. This is already a near-complete set of Vietnam's accredited medical schools.
+- **Net-new discoverable universities are likely ~0–10** (newer private faculties, or nursing/pharmacy-only schools not in official regulatory sources). An overnight "find all Vietnam medical universities" run would surface **very little**.
+- Implication: the big *volume* is **Russia & Georgia**, not Vietnam. And a separate, possibly higher-value Vietnam opportunity is **enriching the existing 30 pages** to the new multi-source / India-optimised / SEO-AEO standard (they were seeded from official regulatory sources and may be thin).
 
 ### Build list — must be done before ANY autonomous run
 1. 🛠️ **New research stage** (LLM + web search/fetch) that emits real, gate-passing `structured_facts` + `draft_content` + `source_bundle` (≥2 sources). Replaces the stub. **No LLM SDK / search API is in the repo today** — this needs wiring (model API + a web-search/fetch capability).
-2. 🛠️ **Non-WDOMS queue seeding.** Schema blocker: `wdoms_school_id` is `NOT NULL + UNIQUE` on both `university_research_queue` and `university_research_drafts`, and the stub inner-joins to WDOMS. Options: surrogate ids (e.g. `disc-vietnam-<slug>`, zero schema change) OR a migration adding a nullable `origin` column. → build a new non-WDOMS seeder.
-3. 🛠️ **Dedup glue for STRICT no-duplicates.** Reusable matcher exists (`buildWdomsUniversityLookup` / `matchWdomsSchoolToUniversity` in `lib/wdoms.ts`, works on generic `{name, city}`), but it can miss genuine matches — add a fuzzy fallback (`pg_trgm` already enabled) + LLM tiebreak that **skips/holds on ambiguity**. Dedupe against the existing 30 (list captured in investigation).
+2. 🛠️ **Non-official regulatory sources queue seeding.** Schema blocker: `official-directory_school_id` is `NOT NULL + UNIQUE` on both `university_research_queue` and `university_research_drafts`, and the stub inner-joins to official regulatory sources. Options: surrogate ids (e.g. `disc-vietnam-<slug>`, zero schema change) OR a migration adding a nullable `origin` column. → build a new non-official regulatory sources seeder.
+3. 🛠️ **Dedup glue for STRICT no-duplicates.** The retired directory matcher is no longer part of the pipeline. New discovery importers must deduplicate against existing university pages using generic `{name, city}` matching plus an ambiguity hold; do not publish uncertain matches.
 4. 🛠️ **Add a `pharmacy` course row.** Existing medical courses: `mbbs`(13), `medical-pg`(14), `bsc-nursing`(15), `bds`(17). **No `pharmacy` course exists** and the publisher throws on an unknown course slug — insert it before running. Also: every non-MBBS program must carry an explicit `courseSlug` (publisher only auto-detects mbbs).
 5. 🛠️ **Unpublish escape hatch** (`scripts/unpublish-university.ts`) — none exists today; needed to reverse a bad batch (flip `published=false` + reset queue row + revalidate).
 6. ✅ **Fee policy: OMIT / "not verified" — never show a fake `0`.** If a fee can't be corroborated across sources, don't display a number; render "fee not verified — contact for latest". Requires adjusting how content is generated so the publisher's `0`-default fee never surfaces as a real figure on the page.
@@ -147,7 +147,7 @@ Two headline findings from the read-only investigation:
 
 1. 🔍 What does `scripts/run-university-research.ts` actually do — self-contained/autonomous, or a scaffold needing per-item driving? Does it call an LLM / web search? What env/API keys does it need (search, model API, `DATABASE_URL`)?
 2. 🔍 How does `scripts/publish-university-draft.ts` map draft → `universities` + `program_offerings`? Writes to production? Idempotent?
-3. 🔍 How is the research **queue** seeded, and how do we seed a Vietnam queue from *non-WDOMS* discovery?
+3. 🔍 How is the research **queue** seeded, and how do we seed a Vietnam queue from *non-official regulatory sources* discovery?
 4. 🔍 How does dedup against existing universities work / need to be added?
 5. 🔍 Can it loop autonomously (research → publish → next) unattended? Rough token/time estimate for the batch.
 6. 🔍 Does the current draft-generation prompt already satisfy multi-source + non-editorial + exhaustive-then-omit + SEO/AEO + India-focus + length-discipline? If not, what needs changing?
@@ -170,7 +170,7 @@ Approach: research is orchestrated via **agents with web search/fetch** (the rep
   6. Van Lang University (HCMC) — General Medicine, Pharmacy, Nursing, Dentistry
   7. Tay Do University (Can Tho) — Pharmacy, Nursing [verify official site]
   Review: Hong Duc University (Thanh Hoa — confirm degree-level); Bac Giang (likely a college — exclude).
-- **Step 1b — Foundations (safe/additive code).** ✅ DONE. `scripts/unpublish-university.ts` (escape hatch), `pharmacy` course inserted (**id=18**), `scripts/seed-nonwdoms-draft.ts` (surrogate `wdoms_school_id = disc-<country>-<slug>`, status `draft_ready`). Pipeline order: `seed-nonwdoms-draft.ts --file X.json` → `publish-university-draft.ts --queue-id N` → (`unpublish-university.ts --slug S` to reverse).
+- **Step 1b — Foundations (safe/additive code).** ✅ DONE. `scripts/unpublish-university.ts` (escape hatch), `pharmacy` course inserted (**id=18**), `scripts/seed-nonofficial-directory-draft.ts` (surrogate `official-directory_school_id = disc-<country>-<slug>`, status `draft_ready`). Pipeline order: `seed-nonofficial-directory-draft.ts --file X.json` → `publish-university-draft.ts --queue-id N` → (`unpublish-university.ts --slug S` to reverse).
 - **NOTE on fetch:** WebFetch works from the MAIN thread but was BLOCKED for the discovery SUBAGENT (permission prompts can't be answered in subagents). → Research is driven from the main thread / with confirmed fetch, not blindly delegated to subagents that may be fetch-blocked.
 - **Step 2 — Research (Opus, per net-new university).** Multi-source, exhaustive-then-omit, non-editorial, India-optimised, structured per the field spec → gate-passing `structured_facts` + `draft_content` + `source_bundle` (≥2 sources). Fees OMIT when unsourced (never `0`).
 - **Step 3 — Verify (independent Opus verifier, G).** Confirm each material claim (esp. NMC/WHO recognition, fees, program details) is source-backed; hold unsupported → draft.
@@ -196,4 +196,4 @@ Pipeline per run: query DB (countries + existing universities) → per-country *
 - Safeguards enforced in every agent prompt: multi-source, non-editorial, exhaustive-then-omit (never fabricate), fees omit if unsourced, recognition only if corroborated w/ correct regulator, conservative dedup, held-local on failure. Reversible via `unpublish-university.ts`.
 
 ## Notes / changelog
-- 2026-07-07: Plan drafted. Confirmed: skip WDOMS, medical/health scope (MBBS + PG/residency + Nursing + Pharmacy + more), auto-publish w/ hard-fail floor, multi-source + non-editorial rules, **exhaustive-then-omit (never fabricate)**, **structured + SEO/AEO + India-optimised content (spec to be designed)**, local run (PC stays on), replicate for **Russia + Georgia** after Vietnam. Open: dedup strictness (A), model choice (D, rec hybrid/Opus), content-structure spec (E).
+- 2026-07-07: Plan drafted. Confirmed: skip official regulatory sources, medical/health scope (MBBS + PG/residency + Nursing + Pharmacy + more), auto-publish w/ hard-fail floor, multi-source + non-editorial rules, **exhaustive-then-omit (never fabricate)**, **structured + SEO/AEO + India-optimised content (spec to be designed)**, local run (PC stays on), replicate for **Russia + Georgia** after Vietnam. Open: dedup strictness (A), model choice (D, rec hybrid/Opus), content-structure spec (E).

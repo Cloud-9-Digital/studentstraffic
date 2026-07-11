@@ -114,11 +114,11 @@ The National Medical Commission (NMC) is India's apex medical regulatory body. A
 **Common misconception:** Many agents claim their recommended university is "NMC recognized" and show fabricated certificates. Always verify independently on the NMC portal. Filter by country and university name.
 
 NMC also requires that the university be listed in one or more of these directories:
-- World Directory of Medical Schools (WDOMS / FAIMER)
+- World Directory of Medical Schools (official regulatory sources / FAIMER)
 - ECFMG (for US licensing)
 - WHO World Directory (legacy entries)
 
-A university not in WDOMS is a serious red flag regardless of what an agent claims.
+A university not in official regulatory sources is a serious red flag regardless of what an agent claims.
 
 ---
 
@@ -272,7 +272,7 @@ This is not an exam you can prepare for only after returning. Students who consi
 ## Red Flags: How to Spot a Bad University or Agent
 
 **University-level red flags:**
-- Not listed in WDOMS/FAIMER directory
+- Not listed in official directory sources directory
 - Not on current NMC approved list
 - No teaching hospital affiliation mentioned clearly
 - Claims of "guaranteed FMGE coaching" included in fees (this is a sales tactic, not a quality indicator)

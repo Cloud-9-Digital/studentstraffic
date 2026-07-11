@@ -89,7 +89,7 @@ const mitigationStrategies = [
   {
     problem: "University quality",
     solution:
-      "Verify NMC guideline compliance and WDOMS listing, review actual student testimonials (not consultant-provided), visit university websites directly, and prioritize institutions with 70+ years of medical education history.",
+      "Verify NMC guideline compliance and official regulatory verification, review actual student testimonials (not consultant-provided), visit university websites directly, and prioritize institutions with 70+ years of medical education history.",
   },
   {
     problem: "India licensing",

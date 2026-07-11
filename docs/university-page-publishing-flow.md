@@ -1,10 +1,10 @@
 # University Page Publishing Flow
 
-This document defines the intended workflow for creating **real university pages** from WDOMS-sourced institutions without publishing thin directory pages.
+This document defines the intended workflow for creating **real university pages** from official regulatory sources-sourced institutions without publishing thin directory pages.
 
 The goal is simple:
 
-- WDOMS is used only as an internal source list
+- official regulatory sources is used only as an internal source list
 - the public website gets only fully written university pages
 - each published university page must be useful, source-backed, and decision-ready
 
@@ -16,7 +16,7 @@ There should be **no public discovery pages**, **no placeholder pages**, and **n
 
 The system should work like this:
 
-1. Import WDOMS schools into an internal queue.
+1. Import official regulatory sources schools into an internal queue.
 2. Pick one university from that queue.
 3. Research the university from official and primary sources.
 4. Convert that research into structured facts.
@@ -31,7 +31,7 @@ Public output:
 
 Internal-only inputs:
 
-- `wdoms_directory_entries`
+- `official-directory_directory_entries`
 - research queue
 - research drafts
 
@@ -39,7 +39,7 @@ Internal-only inputs:
 
 ## Core Principle
 
-WDOMS tells us that a school exists.
+official regulatory sources tells us that a school exists.
 
 It does **not** by itself give enough information to justify a Students Traffic university page.
 
@@ -71,14 +71,14 @@ Only one public artifact should exist:
 
 The internal system should manage:
 
-- raw WDOMS entries
+- raw official regulatory sources entries
 - queue status
 - source collection
 - structured facts
 - draft content
 - review notes
 
-This is important because not every WDOMS school deserves publication.
+This is important because not every official regulatory sources school deserves publication.
 
 ---
 
@@ -86,30 +86,30 @@ This is important because not every WDOMS school deserves publication.
 
 ### 1. Discovery
 
-Input comes from WDOMS import.
+Input comes from official regulatory sources import.
 
 Relevant code today:
 
-- [scripts/import-wdoms-directory.ts](/Users/bharat/Documents/studentstraffic/scripts/import-wdoms-directory.ts)
-- [lib/wdoms.ts](/Users/bharat/Documents/studentstraffic/lib/wdoms.ts)
+- [scripts/import-official-directory-directory.ts](/Users/bharat/Documents/studentstraffic/scripts/import-official-directory-directory.ts)
+- [lib/official-directory.ts](/Users/bharat/Documents/studentstraffic/lib/official-directory.ts)
 - [lib/db/schema.ts](/Users/bharat/Documents/studentstraffic/lib/db/schema.ts)
 
-WDOMS data should be treated as the initial backlog only.
+official regulatory sources data should be treated as the initial backlog only.
 
 At this stage we know:
 
 - school name
 - country
 - city
-- WDOMS school ID
-- WDOMS detail URL
+- official regulatory sources school ID
+- official regulatory sources detail URL
 - some basic school metadata
 
 We do **not** yet have enough to publish.
 
 ### 2. Queueing
 
-Every WDOMS school enters an internal publishing queue.
+Every official regulatory sources school enters an internal publishing queue.
 
 Recommended statuses:
 
@@ -138,7 +138,7 @@ Required sources:
 - official medical faculty or medicine program page
 - official admissions page
 - official tuition or fees source
-- WDOMS entry
+- official regulatory sources entry
 
 Preferred sources:
 
@@ -271,7 +271,7 @@ A university page should not go live unless it satisfies this minimum bar:
 - tuition information is reasonably sourced or qualified
 - there is enough material to explain campus, location, admissions, and training at a useful level
 
-If a university only has a WDOMS row and a homepage, that is not enough.
+If a university only has a official regulatory sources row and a homepage, that is not enough.
 
 ---
 
@@ -282,15 +282,15 @@ Example university:
 - `Alte University`
 - country: Georgia
 
-### Step 1: WDOMS discovery
+### Step 1: official regulatory sources discovery
 
-The WDOMS import finds the school and stores:
+The official regulatory sources import finds the school and stores:
 
 - school name
 - country
 - city
-- WDOMS school ID
-- WDOMS detail URL
+- official regulatory sources school ID
+- official regulatory sources detail URL
 
 Queue status:
 
@@ -305,7 +305,7 @@ Collect:
 - tuition page
 - admission page
 - hostel or student life page if available
-- WDOMS entry
+- official regulatory sources entry
 
 Queue status:
 
@@ -366,7 +366,7 @@ If no:
 
 The current repo already has:
 
-- `wdoms_directory_entries`
+- `official-directory_directory_entries`
 - `universities`
 - `program_offerings`
 
@@ -376,12 +376,12 @@ To support this workflow cleanly, add two internal tables.
 
 Purpose:
 
-- track which WDOMS schools are waiting for research or publication
+- track which official regulatory sources schools are waiting for research or publication
 
 Suggested fields:
 
 - `id`
-- `wdoms_school_id`
+- `official-directory_school_id`
 - `country_slug`
 - `school_name`
 - `priority`
@@ -401,7 +401,7 @@ Purpose:
 Suggested fields:
 
 - `id`
-- `wdoms_school_id`
+- `official-directory_school_id`
 - `official_website`
 - `program_url`
 - `fees_url`
@@ -422,9 +422,9 @@ Suggested fields:
 
 These rules should remain true unless the product strategy changes:
 
-- do not publish WDOMS directory pages publicly
+- do not publish official regulatory sources directory pages publicly
 - do not create placeholder university pages
-- do not treat WDOMS listing as equal to NMC approval or full regulatory safety
+- do not treat official regulatory verification as equal to NMC approval or full regulatory safety
 - do not auto-publish every imported school
 - do publish only when the page is good enough to help a student make a real decision
 
@@ -434,7 +434,7 @@ These rules should remain true unless the product strategy changes:
 
 The safest rollout is:
 
-1. choose one country already covered by WDOMS configs
+1. choose one country already covered by official regulatory sources configs
 2. create queue items for all schools in that country
 3. prioritize the most relevant universities first
 4. publish only the strongest pages

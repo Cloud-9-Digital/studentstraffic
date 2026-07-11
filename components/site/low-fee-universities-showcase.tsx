@@ -45,7 +45,7 @@ const lowFeeUniversities: LowFeeUniversity[] = [
     highlights: [
       "One of the most affordable options",
       "Total package includes hostel",
-      "WDOMS listed",
+      "official regulatory sources listed",
     ],
   },
   {

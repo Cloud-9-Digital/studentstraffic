@@ -19,7 +19,7 @@ import { triggerRevalidate } from "./lib/trigger-revalidate";
 type DraftRecord = {
   draftId: number;
   queueId: number;
-  wdomsSchoolId: string;
+  discoveryKey: string;
   officialWebsite: string | null;
   sourceBundle: Record<string, unknown>;
   structuredFacts: Record<string, unknown>;
@@ -429,7 +429,7 @@ async function getDraftRecord(args: PublishArgs): Promise<DraftRecord | null> {
     .select({
       draftId: universityResearchDrafts.id,
       queueId: universityResearchQueue.id,
-      wdomsSchoolId: universityResearchDrafts.wdomsSchoolId,
+      discoveryKey: universityResearchDrafts.discoveryKey,
       officialWebsite: universityResearchDrafts.officialWebsite,
       sourceBundle: universityResearchDrafts.sourceBundle,
       structuredFacts: universityResearchDrafts.structuredFacts,

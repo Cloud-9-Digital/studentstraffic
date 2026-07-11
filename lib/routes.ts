@@ -58,14 +58,6 @@ export function getCompareIndexHref() {
   return "/compare";
 }
 
-export function getWdomsDirectoryHref(countrySlug: string) {
-  return `/wdoms/${countrySlug}`;
-}
-
-export function getWdomsSchoolHref(countrySlug: string, schoolSlug: string) {
-  return `/wdoms/${countrySlug}/${schoolSlug}`;
-}
-
 export function getCitiesIndexHref() {
   return "/cities";
 }

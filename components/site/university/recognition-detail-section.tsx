@@ -1,17 +1,15 @@
 import { ExternalLink, Info, ShieldCheck } from "lucide-react";
 
-import type { Country, FinderProgram, University, WdomsDirectoryEntry } from "@/lib/data/types";
+import type { Country, FinderProgram, University } from "@/lib/data/types";
 
 import { SectionLabel } from "./shared";
 
 export function UniversityRecognitionDetailSection({
   university,
-  wdomsEntry,
   country,
   primaryProgram,
 }: {
   university: University;
-  wdomsEntry: WdomsDirectoryEntry | null;
   country?: Country;
   primaryProgram?: FinderProgram;
 }) {
@@ -50,7 +48,7 @@ export function UniversityRecognitionDetailSection({
                 </strong>{" "}
                 which sets India-return requirements, the{" "}
                 <strong className="font-semibold text-foreground">
-                  World Directory of Medical Schools (WDOMS)
+                  current official regulatory guidance
                 </strong>{" "}
                 which is the internationally recognised database used by licensing
                 bodies worldwide, and{" "}
@@ -95,8 +93,7 @@ export function UniversityRecognitionDetailSection({
           <Info className="mt-0.5 size-4 shrink-0 text-blue-600" />
           {isMedicalStream ? (
             <>
-              Recognition status can change. NMC updates its approved list and WDOMS
-              listings are updated by universities. Always verify current status on
+              Recognition status can change. Always verify current status on
               official sources before paying any fees. Students Traffic confirms
               current recognition before any application is submitted.
             </>
@@ -173,119 +170,6 @@ export function UniversityRecognitionDetailSection({
         </div>
       )}
 
-      {wdomsEntry && (
-        <div className="overflow-hidden rounded-2xl border border-border bg-card">
-          <div className="border-b border-border bg-muted/30 px-6 py-4">
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="size-4 text-primary" />
-              <p className="font-display text-base font-semibold text-heading">
-                World Directory of Medical Schools (WDOMS)
-              </p>
-            </div>
-            <p className="mt-1 text-sm leading-6 text-muted-foreground">
-              WDOMS listing is mandatory for NMC FMGE/NExT eligibility and for
-              licensing exams in the USA (USMLE), UK (PLAB), Canada (MCCQE), and
-              Australia (AMC). A confirmed WDOMS entry means this degree is
-              recognised at the international level.
-            </p>
-          </div>
-          <div className="px-6 py-5">
-            <div className="grid gap-3 sm:grid-cols-2">
-              {wdomsEntry.schoolName !== university.name && (
-                <WdomsRow label="Listed as" value={wdomsEntry.schoolName} />
-              )}
-              {wdomsEntry.cityName && (
-                <WdomsRow label="City" value={wdomsEntry.cityName} />
-              )}
-              {wdomsEntry.schoolType && (
-                <WdomsRow label="School type" value={wdomsEntry.schoolType} />
-              )}
-              {wdomsEntry.operationalStatus && (
-                <WdomsRow
-                  label="Status"
-                  value={wdomsEntry.operationalStatus}
-                />
-              )}
-              {wdomsEntry.yearInstructionStarted && (
-                <WdomsRow
-                  label="Instruction started"
-                  value={String(wdomsEntry.yearInstructionStarted)}
-                />
-              )}
-              {wdomsEntry.languageOfInstruction && (
-                <WdomsRow
-                  label="Language of instruction"
-                  value={wdomsEntry.languageOfInstruction}
-                />
-              )}
-              {wdomsEntry.curriculumDuration && (
-                <WdomsRow
-                  label="Curriculum duration"
-                  value={wdomsEntry.curriculumDuration}
-                />
-              )}
-              {wdomsEntry.qualificationTitle && (
-                <WdomsRow
-                  label="Qualification"
-                  value={wdomsEntry.qualificationTitle}
-                />
-              )}
-              {wdomsEntry.foreignStudents && (
-                <WdomsRow
-                  label="Foreign students"
-                  value={wdomsEntry.foreignStudents}
-                />
-              )}
-              {wdomsEntry.entranceExam && (
-                <WdomsRow
-                  label="Entrance exam"
-                  value={wdomsEntry.entranceExam}
-                />
-              )}
-              {wdomsEntry.academicAffiliation && (
-                <WdomsRow
-                  label="Academic affiliation"
-                  value={wdomsEntry.academicAffiliation}
-                />
-              )}
-            </div>
-            {wdomsEntry.clinicalFacilities && (
-              <div className="mt-4 rounded-xl bg-muted/30 px-4 py-3">
-                <p className="mb-1 text-[0.6rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">
-                  Clinical facilities
-                </p>
-                <p className="text-sm leading-6 text-muted-foreground">
-                  {wdomsEntry.clinicalFacilities}
-                </p>
-              </div>
-            )}
-            {wdomsEntry.clinicalTraining && (
-              <div className="mt-3 rounded-xl bg-muted/30 px-4 py-3">
-                <p className="mb-1 text-[0.6rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">
-                  Clinical training
-                </p>
-                <p className="text-sm leading-6 text-muted-foreground">
-                  {wdomsEntry.clinicalTraining}
-                </p>
-              </div>
-            )}
-            {wdomsEntry.schoolUrl && (
-              <div className="mt-4">
-                <a
-                  href={wdomsEntry.schoolUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex w-fit items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
-                >
-                  View WDOMS listing
-                  <ExternalLink className="size-3.5" />
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-
       {/* What recognition means for India-return (medical) / for you (other streams) */}
       {isMedicalStream ? (
         <div className="overflow-hidden rounded-2xl border border-border bg-card">
@@ -298,16 +182,16 @@ export function UniversityRecognitionDetailSection({
             <p>
               For Indian students, the recognition chain that matters is:{" "}
               <strong className="font-semibold text-foreground">
-                NMC FMGE/NExT eligibility → WDOMS listing → country accreditation
+                NMC FMGE/NExT eligibility → official university records → country accreditation
               </strong>
               . All three must be satisfied for a degree from an overseas university
               to support India-return medical practice.
             </p>
             <p>
-              If {university.name} is NMC-approved and WDOMS-listed, graduates who
+              If {university.name} meets current NMC requirements and host-country accreditation rules, graduates who
               pass FMGE (or NExT after 2024 implementation) can register with the
               State Medical Council in India and practise as licensed doctors. If any
-              link in the chain is broken — NMC delisting, WDOMS removal — that
+              link in the chain is broken — for example, if current regulatory requirements change — that
               eligibility is at risk. Students Traffic monitors these lists and
               alerts enrolled students to any changes that could affect their pathway.
             </p>
@@ -332,23 +216,12 @@ export function UniversityRecognitionDetailSection({
 
       {university.recognitionBadges.length === 0 &&
         university.recognitionLinks.length === 0 &&
-        !wdomsEntry && (
+        (
           <p className="rounded-2xl border border-border bg-muted/30 px-6 py-5 text-sm text-muted-foreground">
             Recognition details are not yet published for this university.
             Contact us for the latest information.
           </p>
         )}
-    </div>
-  );
-}
-
-function WdomsRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <p className="text-[0.6rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">
-        {label}
-      </p>
-      <p className="mt-0.5 text-sm font-medium text-foreground">{value}</p>
     </div>
   );
 }

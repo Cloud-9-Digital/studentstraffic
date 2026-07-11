@@ -428,7 +428,7 @@ Below is the practical checklist families should use before paying any deposit.
 | Medium of instruction | Marketing language is not enough. You need clarity on how the whole course works, especially the clinical years. |
 | Clinical training model | Hospital names alone do not solve compliance. Families need to understand where, when, and how rotations happen. |
 | Local licensure or registration relevance | A foreign degree should not be disconnected from the local professional pathway in the country of study. |
-| WDOMS and program identity | The university and qualification details should be documentable, not vague. |
+| official regulatory sources and program identity | The university and qualification details should be documentable, not vague. |
 | India-return preparation | Even if the degree structure is acceptable, the student still needs a strong plan for the licensing/screening pathway that applies when they return. |
 
 That last point is crucial. "Valid" does not mean "easy." It means the path is still open if the underlying conditions are satisfied.
@@ -508,7 +508,7 @@ You should try to collect:
 - written statement on medium of instruction
 - current course duration and internship structure
 - hospital rotation map or department list
-- WDOMS entry or equivalent listing reference
+- official regulatory sources entry or equivalent listing reference
 - written note on whether the qualification aligns with local registration or licensure expectations
 - fee sheet for the actual intake
 - academic calendar and intake letter

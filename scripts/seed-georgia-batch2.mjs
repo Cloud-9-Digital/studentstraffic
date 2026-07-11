@@ -288,7 +288,7 @@ const universities = [
     studentSupport: "Smaller faculty allows for direct mentorship.",
     whyChoose: [
       "Boutique learning environment",
-      "Listed in WDOMS",
+      "Listed in official regulatory sources",
       "Fully compliant with NMC FMGL 2021 criteria (6 years)"
     ],
     thingsToConsider: [
@@ -296,7 +296,7 @@ const universities = [
     ],
     bestFitFor: ["Niche learners", "Independent students"],
     teachingHospitals: ["Private Tbilisi Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -318,7 +318,7 @@ const universities = [
     type: "Private",
     establishedYear: 2002,
     officialWebsite: "#",
-    summary: "Tbilisi University 'Metekhi' is a private Georgian higher education institution listed in WDOMS, providing medical sciences instruction within an independent teaching framework.",
+    summary: "Tbilisi University 'Metekhi' is a private Georgian higher education institution listed in official regulatory sources, providing medical sciences instruction within an independent teaching framework.",
     campusLifestyle: "Independent, smaller campus environment.",
     cityProfile: "Tbilisi. Standard European lifestyle.",
     clinicalExposure: "Clinical partnerships with local secondary healthcare facilities.",
@@ -326,11 +326,11 @@ const universities = [
     indianFoodSupport: "Standard Tbilisi amenities apply.",
     safetyOverview: "Safe city environment.",
     studentSupport: "Basic international student services.",
-    whyChoose: ["WDOMS Listed", "European location in Tbilisi", "Compliant 6-year duration"],
+    whyChoose: ["official regulatory sources Listed", "European location in Tbilisi", "Compliant 6-year duration"],
     thingsToConsider: ["Brand recognition is lower than major state universities"],
     bestFitFor: ["Independent students"],
     teachingHospitals: ["Local Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -360,11 +360,11 @@ const universities = [
     indianFoodSupport: "Standard Tbilisi amenities.",
     safetyOverview: "Safe city environment.",
     studentSupport: "Basic international student services.",
-    whyChoose: ["WDOMS Listed", "European location"],
+    whyChoose: ["official regulatory sources Listed", "European location"],
     thingsToConsider: ["Very niche institution"],
     bestFitFor: ["Independent students"],
     teachingHospitals: ["Local Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -386,7 +386,7 @@ const universities = [
     type: "Private",
     establishedYear: 1994,
     officialWebsite: "#",
-    summary: "University of Legia & Company is a historically listed private institution in WDOMS offering medical programs based in Georgia.",
+    summary: "University of Legia & Company is a historically listed private institution in official regulatory sources offering medical programs based in Georgia.",
     campusLifestyle: "Highly independent.",
     cityProfile: "Tbilisi.",
     clinicalExposure: "Local clinical affiliations.",
@@ -394,11 +394,11 @@ const universities = [
     indianFoodSupport: "Tbilisi standard.",
     safetyOverview: "Tbilisi standard.",
     studentSupport: "Independent study focus.",
-    whyChoose: ["WDOMS Listed"],
+    whyChoose: ["official regulatory sources Listed"],
     thingsToConsider: ["Historical institution, check current NMC advisory"],
     bestFitFor: ["Independent students", "Researchers"],
     teachingHospitals: ["Local Affiliates"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {

@@ -39,7 +39,7 @@ const tamilNaduCityPages: TamilNaduCityPage[] = [
       "Chennai is the strongest local intent market for the site right now because it combines parent research depth, early counselling demand, and seminar traction.",
     audience: [
       "Students comparing MBBS abroad with private MBBS in Tamil Nadu",
-      "Parents validating NMC, WDOMS, and long-term career safety",
+      "Parents validating NMC, official regulatory sources, and long-term career safety",
       "Families looking for an in-person seminar or a fast counselling callback",
     ],
     commonQuestions: [

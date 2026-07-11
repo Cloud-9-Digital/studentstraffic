@@ -49,11 +49,11 @@ This guide documents specifically what the current fraud landscape looks like, h
 
 Understanding the conditions that make fraud possible is the first step in avoiding it:
 
-1. **Information asymmetry**: Families making a ₹40–60 lakh decision rarely know which websites to check, what NMC approval actually means, or how to read a WDOMS entry. Fraudulent agents exploit this gap expertly.
+1. **Information asymmetry**: Families making a ₹40–60 lakh decision rarely know which websites to check, what NMC approval actually means, or how to read a official regulatory sources entry. Fraudulent agents exploit this gap expertly.
 2. **Emotional urgency**: After a disappointing NEET result, families are desperate for a path forward. Desperation clouds due diligence.
 3. **Upfront payment pressure**: Agents and fraudulent operators use artificial urgency ("seats are filling fast, pay the booking amount today") to push payment before families have verified anything.
 4. **Social proof manipulation**: Agents use fake testimonials, WhatsApp groups with paid participants, and doctored social media posts to simulate satisfied student communities.
-5. **Complexity used as a shield**: Regulatory complexity (NMC lists, WDOMS, eligibility certificates) is cited as too complicated for families to navigate without an agent — which happens to be the agent's sales pitch.
+5. **Complexity used as a shield**: Regulatory complexity (NMC lists, official regulatory sources, eligibility certificates) is cited as too complicated for families to navigate without an agent — which happens to be the agent's sales pitch.
 
 ---
 
@@ -75,12 +75,12 @@ Understanding the conditions that make fraud possible is the first step in avoid
 
 ---
 
-### Fraud Pattern 3: The WDOMS Entry Misrepresentation
-**How it works:** Agent says the university is "WHO approved" because it appears on WDOMS (World Directory of Medical Schools). WDOMS lists universities as a global directory — being listed on WDOMS does not mean NMC recognition. It is a necessary but not sufficient condition. Agents conflate the two to confuse families.
+### Fraud Pattern 3: The official regulatory sources Entry Misrepresentation
+**How it works:** Agent says the university is "WHO approved" because it appears on official regulatory sources (World Directory of Medical Schools). official regulatory sources lists universities as a global directory — being listed on official regulatory sources does not mean NMC recognition. It is a necessary but not sufficient condition. Agents conflate the two to confuse families.
 
-**The truth:** NMC requires WDOMS listing *and* separate NMC approval. WDOMS listing alone means nothing for Indian licensing.
+**The truth:** NMC requires official regulatory verification *and* separate NMC approval. official regulatory verification alone means nothing for Indian licensing.
 
-**Verification:** Check both nmc.org.in (for NMC approval) AND wdoms.org (for WDOMS listing). Both must be confirmed. NMC listing is the deciding factor.
+**Verification:** Check both nmc.org.in (for NMC approval) AND official regulator websites (for official regulatory verification). Both must be confirmed. NMC listing is the deciding factor.
 
 ---
 
@@ -160,7 +160,7 @@ Understanding the conditions that make fraud possible is the first step in avoid
 
 This is most common for universities in smaller African nations and occasionally in Southeast Asia — rarely in Russia, Kazakhstan, or Georgia, where physical institutions are verifiable.
 
-**Verification:** Google Street View the university address. Check independent news coverage about the institution. For Russia and CIS countries, many major universities have Russian-language Wikipedia entries and Russian Ministry of Education recognition that can be cross-checked. Look for the university on WDOMS — ghost universities are not listed.
+**Verification:** Google Street View the university address. Check independent news coverage about the institution. For Russia and CIS countries, many major universities have Russian-language Wikipedia entries and Russian Ministry of Education recognition that can be cross-checked. Look for the university on official regulatory sources — ghost universities are not listed.
 
 ---
 
@@ -188,8 +188,8 @@ Apply this checklist in sequence. Do not proceed to the next step until the curr
 - The name in the NMC list must match the name on the admission letter exactly
 - If not listed: **stop immediately**
 
-### Step 2: Verify University on WDOMS
-- Go to wdoms.org
+### Step 2: Verify University on official regulatory sources
+- Go to official regulator websites
 - Search the institution name
 - Confirm the listing is current and shows an active status
 

@@ -196,32 +196,6 @@ export type ProgramOffering = {
   updatedAt?: string;
 };
 
-export type WdomsDirectoryEntry = {
-  countrySlug: string;
-  countryName: string;
-  schoolId: string;
-  schoolName: string;
-  cityName: string;
-  schoolUrl: string;
-  schoolType?: string;
-  operationalStatus?: string;
-  yearInstructionStarted?: number;
-  academicAffiliation?: string;
-  clinicalFacilities?: string;
-  clinicalTraining?: string;
-  schoolWebsite?: string;
-  mainAddress?: string;
-  qualificationTitle?: string;
-  curriculumDuration?: string;
-  languageOfInstruction?: string;
-  prerequisiteEducation?: string;
-  foreignStudents?: string;
-  entranceExam?: string;
-  routeSlug: string;
-  matchedUniversitySlug?: string;
-  matchedUniversityName?: string;
-};
-
 export type UniversityReviewType = "text" | "youtube_video";
 
 export type UniversityReviewVisibilityStatus = "live" | "hidden" | "archived";

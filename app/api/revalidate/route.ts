@@ -121,8 +121,12 @@ export async function POST(request: NextRequest) {
       staticPaths.add(path);
     }
 
-    for (const path of blogDynamicPagePaths) {
-      dynamicPagePaths.add(path);
+    // A slug-specific publish should not invalidate every cached blog detail
+    // page. Only a broad blog revalidation needs the dynamic route pattern.
+    if (slugs.length === 0) {
+      for (const path of blogDynamicPagePaths) {
+        dynamicPagePaths.add(path);
+      }
     }
 
     for (const slug of slugs) {

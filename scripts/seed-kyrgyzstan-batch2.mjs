@@ -35,7 +35,7 @@ const universities = [
     ],
     bestFitFor: ["Budget-conscious students"],
     teachingHospitals: ["Jalal-Abad Regional Hospitals"],
-    recognitionBadges: ["WDOMS Listed", "NMC FMGL 2021 Compliant"],
+    recognitionBadges: ["official regulatory sources Listed", "NMC FMGL 2021 Compliant"],
     faq: [],
     programs: [
       {
@@ -69,7 +69,7 @@ const universities = [
     thingsToConsider: ["Medical faculty is newer compared to KSMA"],
     bestFitFor: ["Seekers of state universities"],
     teachingHospitals: ["Bishkek City Hospitals"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -103,7 +103,7 @@ const universities = [
     thingsToConsider: ["Osh is outside the capital city"],
     bestFitFor: ["Budget-conscious academics"],
     teachingHospitals: ["Osh Public Clinical Hospitals"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -137,7 +137,7 @@ const universities = [
     thingsToConsider: ["Extremely remote; very harsh winters"],
     bestFitFor: ["Nature lovers", "Deep-focus learners"],
     teachingHospitals: ["Naryn Regional Hospital"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -167,11 +167,11 @@ const universities = [
     indianFoodSupport: "Massive support with customized canteens.",
     safetyOverview: "High security, privately monitored.",
     studentSupport: "Aggressive FMGE coaching strategy.",
-    whyChoose: ["Modern private amenities", "WDOMS Listed", "Favorable 6-year track format"],
+    whyChoose: ["Modern private amenities", "official regulatory sources Listed", "Favorable 6-year track format"],
     thingsToConsider: ["Newly established brand"],
     bestFitFor: ["Modern campus seekers"],
     teachingHospitals: ["Partner Bishkek Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -201,11 +201,11 @@ const universities = [
     indianFoodSupport: "The core focus of their operational model. Massive Indian messes.",
     safetyOverview: "High security.",
     studentSupport: "FMGE integrated completely into daily learning.",
-    whyChoose: ["Designed specifically for South Asian licensing success", "WDOMS Listed"],
+    whyChoose: ["Designed specifically for South Asian licensing success", "official regulatory sources Listed"],
     thingsToConsider: ["Niche international profile"],
     bestFitFor: ["FMGE focused students"],
     teachingHospitals: ["Affiliated Capital Hospitals"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -239,7 +239,7 @@ const universities = [
     thingsToConsider: ["Tuition is premium for Kyrgyzstan"],
     bestFitFor: ["Prestige seekers"],
     teachingHospitals: ["Private Bishkek Clinics"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -269,11 +269,11 @@ const universities = [
     indianFoodSupport: "Basic local access.",
     safetyOverview: "Extremely safe suburban atmosphere.",
     studentSupport: "Dedicated FMGE tracks.",
-    whyChoose: ["Suburban peace", "WDOMS Listed"],
+    whyChoose: ["Suburban peace", "official regulatory sources Listed"],
     thingsToConsider: ["Kant is a smaller town"],
     bestFitFor: ["Suburban lovers"],
     teachingHospitals: ["Kant and Bishkek Centers"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
@@ -303,11 +303,11 @@ const universities = [
     indianFoodSupport: "Growing mess support.",
     safetyOverview: "Modern campus security.",
     studentSupport: "Focused entirely on medical licensing success.",
-    whyChoose: ["Custom built for international medical students", "WDOMS Listed"],
+    whyChoose: ["Custom built for international medical students", "official regulatory sources Listed"],
     thingsToConsider: ["Brand is growing"],
     bestFitFor: ["Licensing-focused students"],
     teachingHospitals: ["Bishkek Partner Network"],
-    recognitionBadges: ["WDOMS Listed"],
+    recognitionBadges: ["official regulatory sources Listed"],
     faq: [],
     programs: [
       {
