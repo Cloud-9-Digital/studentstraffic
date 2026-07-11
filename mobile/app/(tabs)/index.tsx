@@ -89,7 +89,6 @@ type ActionItem = {
 const QUICK_ACTIONS: ActionItem[] = [
   { icon: "wallet-outline",            label: "Budget picks",    sub: "Under $5k/yr",        gradient: ["#064e3b", "#0d9467"], params: { feeRange: "u5k" } },
   { icon: "sparkles-outline",           label: "Top picks",       sub: "Explore universities", gradient: ["#0c3547", "#0e6d9e"], params: { sort: "" } },
-  { icon: "language-outline",          label: "English medium",  sub: "No language barrier", gradient: ["#1e1b4b", "#3730a3"], params: { medium: "English" } },
   { icon: "trophy-outline",            label: "Lowest fees",     sub: "Sort by fee",         gradient: ["#431407", "#9a3412"], params: { sort: "tuition_asc" } },
 ];
 

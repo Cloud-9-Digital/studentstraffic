@@ -26,7 +26,6 @@ import { colors } from "../../src/theme/tokens";
 type SearchOptions = {
   countries: { slug: string; name: string }[];
   courses: { slug: string; shortName: string }[];
-  mediums: string[];
   intakes: string[];
 };
 
@@ -55,20 +54,19 @@ function ListSeparator() {
 }
 
 export default function SearchScreen() {
-  const params = useLocalSearchParams<{ country?: string; feeRange?: string; medium?: string; sort?: string }>();
+  const params = useLocalSearchParams<{ country?: string; feeRange?: string; sort?: string }>();
   const insets = useSafeAreaInsets();
   const [query, setQuery] = useState("");
   const [filters, setFilters] = useState<FilterState>(() => ({
     ...DEFAULT_FILTERS,
     country: params.country ?? "",
     feeRange: params.feeRange ?? "",
-    medium: params.medium ?? "",
     sort: params.sort ?? "",
   }));
   const [pendingFilters, setPendingFilters] = useState<FilterState>(filters);
   const [sheetVisible, setSheetVisible] = useState(false);
   const [universities, setUniversities] = useState<University[]>([]);
-  const [options, setOptions] = useState<SearchOptions>({ countries: [], courses: [], mediums: [], intakes: [] });
+  const [options, setOptions] = useState<SearchOptions>({ countries: [], courses: [], intakes: [] });
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [hasNextPage, setHasNextPage] = useState(false);
@@ -88,13 +86,12 @@ export default function SearchScreen() {
     const patch: Partial<FilterState> = {};
     if (params.country !== undefined) patch.country = params.country;
     if (params.feeRange !== undefined) patch.feeRange = params.feeRange;
-    if (params.medium !== undefined) patch.medium = params.medium;
     if (params.sort !== undefined) patch.sort = params.sort;
     if (Object.keys(patch).length) {
       setFilters((current) => ({ ...current, ...patch }));
       setPendingFilters((current) => ({ ...current, ...patch }));
     }
-  }, [params.country, params.feeRange, params.medium, params.sort]);
+  }, [params.country, params.feeRange, params.sort]);
 
   const loadUniversities = useCallback(async (nextPage: number, append: boolean) => {
     const id = ++requestId.current;
@@ -105,7 +102,6 @@ export default function SearchScreen() {
         q: query.trim() || undefined,
         country: filters.country || undefined,
         course: filters.course || undefined,
-        medium: filters.medium || undefined,
         universityType: filters.universityType || undefined,
         sort: filters.sort || undefined,
         feeMin: feeRange?.feeMin,

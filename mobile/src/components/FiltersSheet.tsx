@@ -16,7 +16,6 @@ export type FilterState = {
   sort: string;
   country: string;
   course: string;
-  medium: string;
   universityType: string;
   feeRange: string;
 };
@@ -25,7 +24,6 @@ export const DEFAULT_FILTERS: FilterState = {
   sort: "",
   country: "",
   course: "",
-  medium: "",
   universityType: "",
   feeRange: "",
 };
@@ -48,7 +46,6 @@ export const SORT_OPTIONS = [
 type Options = {
   countries: { slug: string; name: string }[];
   courses: { slug: string; shortName: string }[];
-  mediums: string[];
 };
 
 type Props = {
@@ -186,15 +183,6 @@ export function FiltersSheet({ visible, onClose, filters, onChange, onApply, opt
             <Section title="COURSE">
               {options.courses.map(c => (
                 <Pill key={c.slug} label={c.shortName} selected={filters.course === c.slug} onPress={() => set("course", c.slug)} />
-              ))}
-            </Section>
-          )}
-
-          {/* Teaching language */}
-          {options.mediums.length > 0 && (
-            <Section title="TEACHING LANGUAGE">
-              {options.mediums.map(m => (
-                <Pill key={m} label={m} selected={filters.medium === m} onPress={() => set("medium", m)} />
               ))}
             </Section>
           )}
