@@ -9,7 +9,10 @@ function getFirebaseMessaging() {
   const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
   const privateKey  = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n");
 
-  if (!projectId || !clientEmail || !privateKey) return null;
+  if (!projectId || !clientEmail || !privateKey) {
+    console.error("[fcm] Firebase Admin credentials are not configured");
+    return null;
+  }
 
   try {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -21,7 +24,8 @@ function getFirebaseMessaging() {
     }
     _messaging = admin.messaging();
     return _messaging;
-  } catch {
+  } catch (error) {
+    console.error("[fcm] Firebase Admin initialization failed", error);
     return null;
   }
 }
@@ -45,7 +49,12 @@ export async function sendFCMDataMessage(
       },
     });
     return true;
-  } catch {
+  } catch (error: any) {
+    console.error("[fcm] message delivery failed", {
+      code: error?.code,
+      message: error?.message,
+      tokenSuffix: fcmToken.slice(-8),
+    });
     return false;
   }
 }

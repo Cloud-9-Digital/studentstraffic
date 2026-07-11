@@ -25,7 +25,9 @@ type CallContextValue = {
   incomingCall: IncomingCall | null;
   startCall: (bookingId: number, peerName: string, universityName: string) => Promise<void>;
   acceptIncomingCall: () => Promise<void>;
+  acceptIncomingCallById: (callId: string) => Promise<void>;
   declineIncomingCall: () => void;
+  declineIncomingCallById: (callId: string) => void;
   endCall: () => Promise<void>;
   openIncomingCallById: (callId: string, callerDisplayName: string, universityName: string) => void;
   callError: string | null;
@@ -45,6 +47,7 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
   const lastSyncAtRef = useRef(0);
   const activeCallRef = useRef<ActiveCall | null>(null);
   const appStateRef = useRef(AppState.currentState);
+  const incomingExpiryCleanupRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
     activeCallRef.current = activeCall;
@@ -161,14 +164,13 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
-  const acceptIncomingCall = useCallback(async () => {
-    if (!incomingCall) return;
+  const acceptIncomingCallById = useCallback(async (callId: string) => {
     setIsStarting(true);
     setCallError(null);
     try {
-      const tokenData = await mobileClient.getCallToken(incomingCall.id);
+      const tokenData = await mobileClient.getCallToken(callId);
       const call: ActiveCall = {
-        callId: incomingCall.id,
+        callId,
         appId: tokenData.appId,
         channelName: tokenData.channelName,
         token: tokenData.token,
@@ -180,22 +182,43 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
       setActiveCall(call);
       setIncomingCall(null);
       stopRecoverySync();
-      cancelIncomingCallNotification(incomingCall.id).catch(() => {});
+      cancelIncomingCallNotification(callId).catch(() => {});
       startCallForegroundService(call.callId, call.displayName).catch(() => {});
     } catch (e: any) {
       setCallError(e?.message ?? "Failed to join call.");
     } finally {
       setIsStarting(false);
     }
-  }, [incomingCall, stopRecoverySync]);
+  }, [stopRecoverySync]);
 
-  const declineIncomingCall = useCallback(() => {
-    if (incomingCall) {
-      mobileClient.endCall(incomingCall.id).catch(() => null);
-    }
+  const acceptIncomingCall = useCallback(async () => {
+    if (incomingCall) await acceptIncomingCallById(incomingCall.id);
+  }, [acceptIncomingCallById, incomingCall]);
+
+  const declineIncomingCallById = useCallback((callId: string) => {
+    mobileClient.endCall(callId).catch(() => null);
     setIncomingCall(null);
     startRecoverySync(10_000, 5_000);
-  }, [incomingCall, startRecoverySync]);
+  }, [startRecoverySync]);
+
+  const declineIncomingCall = useCallback(() => {
+    if (incomingCall) declineIncomingCallById(incomingCall.id);
+  }, [declineIncomingCallById, incomingCall]);
+
+  useEffect(() => {
+    incomingExpiryCleanupRef.current?.();
+    incomingExpiryCleanupRef.current = null;
+
+    if (!incomingCall) return;
+
+    const timeout = setTimeout(() => declineIncomingCallById(incomingCall.id), 60_000);
+    incomingExpiryCleanupRef.current = () => clearTimeout(timeout);
+
+    return () => {
+      incomingExpiryCleanupRef.current?.();
+      incomingExpiryCleanupRef.current = null;
+    };
+  }, [incomingCall, declineIncomingCallById]);
 
   const openIncomingCallById = useCallback((callId: string, callerDisplayName: string, universityName: string) => {
     if (activeCall?.callId === callId) return;
@@ -230,7 +253,9 @@ export function CallProvider({ children }: { children: React.ReactNode }) {
         incomingCall,
         startCall,
         acceptIncomingCall,
+        acceptIncomingCallById,
         declineIncomingCall,
+        declineIncomingCallById,
         endCall,
         openIncomingCallById,
         callError,
@@ -247,7 +272,9 @@ const EMPTY_CALL_CTX: CallContextValue = {
   incomingCall: null,
   startCall: async () => {},
   acceptIncomingCall: async () => {},
+  acceptIncomingCallById: async () => {},
   declineIncomingCall: () => {},
+  declineIncomingCallById: () => {},
   endCall: async () => {},
   openIncomingCallById: () => {},
   callError: null,

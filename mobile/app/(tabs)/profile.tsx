@@ -18,12 +18,17 @@ import { useEffect, useRef, useState } from "react";
 import * as Haptics from "expo-haptics";
 
 import { StatusBar } from "expo-status-bar";
+import Constants from "expo-constants";
 
 import { mobileClient } from "../../src/api/mobileClient";
 import { colors, shadow } from "../../src/theme/tokens";
 import { Skeleton } from "../../src/components/Skeleton";
 
 const BG = Platform.OS === "ios" ? "#f2f2f7" : colors.background;
+const APP_VERSION = Constants.expoConfig?.version ?? "1.0.0";
+const APP_BUILD = Platform.OS === "android"
+  ? Constants.expoConfig?.android?.versionCode
+  : Constants.expoConfig?.ios?.buildNumber;
 
 function initials(name: string) {
   return name.split(" ").slice(0, 2).map((w) => w[0]).join("").toUpperCase();
@@ -453,7 +458,9 @@ export default function ProfileScreen() {
             />
           </SettingsGroup>
 
-          <Text style={s.version}>Students Traffic · v1.0.0</Text>
+          <Text style={s.version}>
+            Students Traffic · v{APP_VERSION}{APP_BUILD != null ? ` · Build ${APP_BUILD}` : ""}
+          </Text>
         </View>
       </ScrollView>
 

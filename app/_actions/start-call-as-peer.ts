@@ -130,11 +130,11 @@ export async function startCallAsPeerAction(bookingId: number): Promise<StartCal
   notifyPeerCallParticipants([peerUserId, booking.studentUserId], "ringing");
 
   // Notify the student that their guide is calling
-  sendCallPushNotification(booking.studentUserId, {
+  await sendCallPushNotification(booking.studentUserId, {
     callId,
     callerDisplayName: peer.fullName?.trim() || "Your guide",
     universityName: peer.universityName,
-  }).catch(() => null);
+  });
 
   return { callId };
 }

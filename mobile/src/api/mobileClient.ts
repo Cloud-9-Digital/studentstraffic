@@ -1,7 +1,9 @@
 import type { CallBooking, CallTokenResponse, IndiaCollege, IncomingCall, StudentApplication, StudentProfile, University, UniversityDetail } from "../types/domain";
+import { Platform } from "react-native";
 import { clearToken, getToken, setToken } from "./tokenStore";
 
 const API_URL = (process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:3000").replace(/\/$/, "");
+let pushTokenRefreshUnsubscribe: (() => void) | null = null;
 
 type ApiErrorBody = {
   error?: {
@@ -14,7 +16,7 @@ async function request<T>(path: string, init?: RequestInit & { auth?: boolean })
   const headers = new Headers(init?.headers);
   headers.set("Content-Type", "application/json");
   headers.set("Accept", "application/json");
-  headers.set("X-Platform", "ios");
+  headers.set("X-Platform", Platform.OS);
   headers.set("X-App-Version", "0.1.0");
 
   if (init?.auth !== false) {
@@ -92,6 +94,7 @@ export const mobileClient = {
       body: JSON.stringify({ email, password }),
     });
     await setToken(result.token);
+    await this.registerAndroidPushToken().catch(() => {});
     return result.user;
   },
 
@@ -102,7 +105,37 @@ export const mobileClient = {
       body: JSON.stringify(input),
     });
     await setToken(result.token);
+    await this.registerAndroidPushToken().catch(() => {});
     return result.user;
+  },
+
+  async registerAndroidPushToken() {
+    if (Platform.OS !== "android") return false;
+
+    try {
+      const messaging = require("@react-native-firebase/messaging").default;
+      const authStatus = await messaging().requestPermission();
+      const enabled =
+        authStatus === messaging.AuthorizationStatus?.AUTHORIZED ||
+        authStatus === messaging.AuthorizationStatus?.PROVISIONAL ||
+        authStatus === 1 || authStatus === 2;
+      if (!enabled) return false;
+
+      const fcmToken = await messaging().getToken();
+      if (!fcmToken) return false;
+
+      await this.updatePushToken(fcmToken);
+      if (!pushTokenRefreshUnsubscribe) {
+        pushTokenRefreshUnsubscribe = messaging().onTokenRefresh((token: string) => {
+          if (token) this.updatePushToken(token).catch(() => {});
+        });
+      }
+      console.log(`[push] FCM token registered …${fcmToken.slice(-8)}`);
+      return true;
+    } catch (error) {
+      console.error("[push] FCM token registration failed", error);
+      return false;
+    }
   },
 
   async logout() {

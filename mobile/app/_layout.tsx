@@ -34,14 +34,10 @@ import { CallOverlay } from "../src/features/calls/CallOverlay";
 import { IncomingCallBanner } from "../src/features/calls/IncomingCallBanner";
 import { usePushToken } from "../src/hooks/usePushToken";
 import {
-  registerBackgroundHandlers,
   setupCallKeep,
   consumePendingCallData,
   endCallKeepCall,
 } from "../src/services/callNotificationService";
-
-// Covers foreground/background scenarios; killed-state is handled by index.js entry point.
-registerBackgroundHandlers();
 
 SplashScreen.preventAutoHideAsync();
 
@@ -198,7 +194,11 @@ function FCMForegroundHandler() {
 // Handles CallKeep events (Accept / Decline on native call screen)
 // and processes pending call data stored when app was killed.
 function CallKeepEventHandler() {
-  const { openIncomingCallById, acceptIncomingCall, declineIncomingCall } = useCall();
+  const {
+    openIncomingCallById,
+    acceptIncomingCallById,
+    declineIncomingCallById,
+  } = useCall();
 
   useEffect(() => {
     if (Platform.OS !== "android") return;
@@ -221,12 +221,14 @@ function CallKeepEventHandler() {
 
     const onAnswer = ({ callUUID }: { callUUID: string }) => {
       endCallKeepCall(callUUID); // dismiss native call UI
-      acceptIncomingCall();
+      // Use the CallKeep UUID directly. The pending call state may not have
+      // finished hydrating when Android delivers answerCall after a cold start.
+      acceptIncomingCallById(callUUID).catch(() => {});
     };
 
     const onDecline = ({ callUUID }: { callUUID: string }) => {
       endCallKeepCall(callUUID);
-      declineIncomingCall();
+      declineIncomingCallById(callUUID);
     };
 
     const answerSub = RNCallKeep.addEventListener("answerCall", onAnswer);
@@ -236,7 +238,7 @@ function CallKeepEventHandler() {
       answerSub?.remove?.();
       declineSub?.remove?.();
     };
-  }, [openIncomingCallById, acceptIncomingCall, declineIncomingCall]);
+  }, [openIncomingCallById, acceptIncomingCallById, declineIncomingCallById]);
 
   return null;
 }

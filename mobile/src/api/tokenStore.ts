@@ -2,6 +2,7 @@ import * as SecureStore from "expo-secure-store";
 
 const TOKEN_KEY = "students_traffic_mobile_token";
 let memoryToken: string | null = null;
+const tokenListeners = new Set<(token: string | null) => void>();
 
 function canUseLocalStorage() {
   return typeof localStorage !== "undefined";
@@ -24,6 +25,7 @@ export async function setToken(token: string) {
   } catch {
     if (canUseLocalStorage()) localStorage.setItem(TOKEN_KEY, token);
   }
+  tokenListeners.forEach((listener) => listener(token));
 }
 
 export async function clearToken() {
@@ -33,4 +35,10 @@ export async function clearToken() {
   } catch {
     if (canUseLocalStorage()) localStorage.removeItem(TOKEN_KEY);
   }
+  tokenListeners.forEach((listener) => listener(null));
+}
+
+export function subscribeToToken(listener: (token: string | null) => void) {
+  tokenListeners.add(listener);
+  return () => tokenListeners.delete(listener);
 }

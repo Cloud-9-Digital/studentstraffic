@@ -141,11 +141,11 @@ export async function POST(request: Request) {
   });
 
   // Notify the peer (guide) that a student is calling
-  sendCallPushNotification(peer.peerUserId, {
+  await sendCallPushNotification(peer.peerUserId, {
     callId,
     callerDisplayName: caller?.name?.trim() || "A student",
     universityName: peer.universityName,
-  }).catch(() => null);
+  });
 
   return mobileJson({ callId });
 }

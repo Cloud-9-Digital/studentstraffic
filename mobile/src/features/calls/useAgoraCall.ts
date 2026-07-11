@@ -35,6 +35,7 @@ function loadAgora() {
 }
 
 const agora = loadAgora();
+const RING_TIMEOUT_MS = 60_000;
 
 type AgoraCallState = "idle" | "connecting" | "ringing" | "connected" | "ended" | "error" | "unavailable";
 
@@ -152,6 +153,20 @@ export function useAgoraCall({ appId, channelName, token, uid, onEnd }: UseAgora
     engineRef.current?.leaveChannel();
     safe(() => setCallState("ended"));
   }, [safe]);
+
+  // Do not leave callers stuck in a ringing state forever. Once the remote
+  // party joins, callState changes to connected and this timer is cleared.
+  useEffect(() => {
+    if (callState !== "ringing") return;
+
+    const timeout = setTimeout(() => {
+      engineRef.current?.leaveChannel();
+      safe(() => setCallState("ended"));
+      onEnd?.();
+    }, RING_TIMEOUT_MS);
+
+    return () => clearTimeout(timeout);
+  }, [callState, onEnd, safe]);
 
   return { callState, remoteJoined, isMuted, isSpeakerOn, toggleMute, toggleSpeaker, leaveChannel, error };
 }
