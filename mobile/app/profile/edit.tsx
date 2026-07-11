@@ -19,7 +19,6 @@ export default function EditProfileScreen() {
   });
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [budgetUsd, setBudgetUsd] = useState("");
   const [preferredCountries, setPreferredCountries] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -28,7 +27,6 @@ export default function EditProfileScreen() {
     if (!profile) return;
     setName(profile.name ?? "");
     setPhone(profile.phone ?? "");
-    setBudgetUsd(profile.budgetUsd ? String(profile.budgetUsd) : "");
     setPreferredCountries(profile.preferredCountries.join(", "));
   }, [profile]);
 
@@ -39,7 +37,6 @@ export default function EditProfileScreen() {
       await mobileClient.updateProfile({
         name,
         phone,
-        budgetUsd: budgetUsd ? Number(budgetUsd) : null,
         preferredCountries: preferredCountries.split(",").map((item) => item.trim()).filter(Boolean),
       });
       await queryClient.invalidateQueries({ queryKey: ["profile"] });
@@ -58,7 +55,6 @@ export default function EditProfileScreen() {
       <View style={styles.form}>
         <TextInput value={name} onChangeText={setName} placeholder="Full name" style={styles.input} />
         <TextInput value={phone} onChangeText={setPhone} placeholder="Phone" keyboardType="phone-pad" style={styles.input} />
-        <TextInput value={budgetUsd} onChangeText={setBudgetUsd} placeholder="Budget USD" keyboardType="number-pad" style={styles.input} />
         <TextInput value={preferredCountries} onChangeText={setPreferredCountries} placeholder="Preferred countries comma separated" style={styles.input} />
         {error ? <Text style={styles.error}>{error}</Text> : null}
         {loading ? <ActivityIndicator color={colors.primary} /> : <Button label="Save profile" icon="checkmark" onPress={submit} />}

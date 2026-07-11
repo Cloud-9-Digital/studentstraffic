@@ -194,8 +194,10 @@ function FCMForegroundHandler() {
       unsub = messaging().onMessage(async (message: any) => {
         const data = message.data as Record<string, string>;
         if (data?.type === "incoming_call") {
-          // App is open — the polling banner will show within 3s.
-          // Immediately show it without waiting for next poll.
+          // Use Android Telecom even in the foreground. It owns ringtone and
+          // vibration, respects DND/ringer settings, and keeps the alert
+          // consistent with a call received while the app is backgrounded.
+          await displayIncomingCall(data.callId, data.callerDisplayName);
           openIncomingCallById(data.callId, data.callerDisplayName, data.universityName);
         } else if (data?.type === "call_ended" && data.callId) {
           dismissCallById(data.callId);

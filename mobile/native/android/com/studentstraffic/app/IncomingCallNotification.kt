@@ -7,6 +7,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.media.AudioAttributes
 import android.os.Build
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
@@ -84,7 +85,13 @@ object IncomingCallNotification {
     ).apply {
       description = "Incoming Student Traffic calls"
       enableVibration(true)
-      setSound(android.provider.Settings.System.DEFAULT_RINGTONE_URI, null)
+      vibrationPattern = longArrayOf(0, 700, 500, 700)
+      setSound(
+        android.provider.Settings.System.DEFAULT_RINGTONE_URI,
+        AudioAttributes.Builder()
+          .setUsage(AudioAttributes.USAGE_NOTIFICATION_RINGTONE)
+          .build()
+      )
       lockscreenVisibility = android.app.Notification.VISIBILITY_PUBLIC
     }
     context.getSystemService(NotificationManager::class.java).createNotificationChannel(channel)

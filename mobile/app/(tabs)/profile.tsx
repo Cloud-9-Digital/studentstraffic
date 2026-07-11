@@ -37,7 +37,7 @@ function initials(name: string) {
 // ── Field edit modal ──────────────────────────────────────────────────────────
 
 type FieldConfig = {
-  key: "name" | "phone" | "budgetUsd";
+  key: "name" | "phone";
   title: string;
   hint?: string;
   keyboardType: "default" | "phone-pad" | "numeric";
@@ -48,7 +48,6 @@ type FieldConfig = {
 const FIELD_CONFIGS: FieldConfig[] = [
   { key: "name",      title: "Full name",    keyboardType: "default", placeholder: "Your full name", autoCapitalize: "words" },
   { key: "phone",     title: "Phone number", hint: "We'll use this to call you back", keyboardType: "phone-pad", placeholder: "+91 98765 43210", autoCapitalize: "none" },
-  { key: "budgetUsd", title: "Annual budget", hint: "Your total budget per year in USD", keyboardType: "numeric", placeholder: "e.g. 6000" },
 ];
 
 type EditModalProps = {
@@ -273,7 +272,6 @@ export default function ProfileScreen() {
     if (!profile) return "";
     if (key === "name") return profile.name ?? "";
     if (key === "phone") return profile.phone ?? "";
-    if (key === "budgetUsd") return profile.budgetUsd ? String(profile.budgetUsd) : "";
     return "";
   }
 
@@ -282,7 +280,6 @@ export default function ProfileScreen() {
     const patch: Record<string, unknown> = {};
     if (activeField.key === "name") patch.name = value;
     else if (activeField.key === "phone") patch.phone = value;
-    else if (activeField.key === "budgetUsd") patch.budgetUsd = value ? Number(value) : null;
     await mobileClient.updateProfile(patch as Parameters<typeof mobileClient.updateProfile>[0]);
     await queryClient.invalidateQueries({ queryKey: ["profile"] });
     await queryClient.invalidateQueries({ queryKey: ["dashboard"] });
@@ -397,12 +394,6 @@ export default function ProfileScreen() {
                   label="Phone"
                   value={profile?.phone ?? "Add phone"}
                   onPress={() => openField("phone")}
-                />
-                <SettingsRow
-                  icon="wallet-outline"
-                  label="Budget"
-                  value={profile?.budgetUsd ? `$${profile.budgetUsd.toLocaleString()}/yr` : "Not added"}
-                  onPress={() => openField("budgetUsd")}
                   last
                 />
               </SettingsGroup>
