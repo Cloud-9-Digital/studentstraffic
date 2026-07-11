@@ -38,7 +38,7 @@ export async function sendFCMDataMessage(
   if (!messaging) return false;
 
   try {
-    await messaging.send({
+    const messageId = await messaging.send({
       token: fcmToken,
       // Data-only — no notification payload.
       // The app's background handler (notifee) creates the real call notification.
@@ -47,6 +47,11 @@ export async function sendFCMDataMessage(
         priority: "high",      // wakes device even from Doze
         ttl: 60 * 1000,        // discard after 60s — stale calls are noise
       },
+    });
+    console.info("[fcm] message accepted", {
+      messageId,
+      tokenSuffix: fcmToken.slice(-8),
+      type: data.type,
     });
     return true;
   } catch (error: any) {
