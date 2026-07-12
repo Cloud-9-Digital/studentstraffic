@@ -46,6 +46,32 @@ Create a scope record containing:
 
 Do not begin with a free-form prompt such as “write everything about this country”.
 
+### 1a. Claim the university in the shared publishing ledger
+
+Before researching a university, every agent must read
+`research/university-publishing-ledger.csv` and check both the canonical university slug and known
+name aliases. If a row is already `claimed`, `researching`, `validated` or `published`, do not start
+duplicate work unless the existing owner explicitly hands it over.
+
+To claim new work, append or update one row with:
+
+- canonical university slug and official name;
+- country slug;
+- `status=claimed`;
+- the agent/thread identifier in `owner_agent_id`;
+- an ISO-8601 `claimed_at` timestamp;
+- intended payload path;
+- a short scope note.
+
+Allowed statuses are `claimed`, `researching`, `held`, `validated`, `published` and `abandoned`.
+Update the same row as work progresses; never add a second row for the same institution. Historical
+names, campuses and faculties must be checked so a renamed institution is not claimed twice.
+
+Because CSV files do not provide transactional locking, the publishing agent must re-read the ledger
+and query the live database immediately before publication. If another owner has published or claimed
+the institution, stop and reconcile rather than overwriting it. After a successful transaction,
+record `status=published`, `published_at`, the final programme count and payload path.
+
 ### 2. Use the canonical taxonomy
 
 For Engineering and Business/MBA offerings, use the approved registry in

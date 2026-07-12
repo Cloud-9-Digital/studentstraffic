@@ -14,7 +14,7 @@ export async function triggerRevalidate(tags: string[]) {
     return;
   }
 
-  const endpoint = new URL("/api/revalidate", env.siteUrl);
+  const endpoint = new URL("/api/revalidate?scope=catalog", env.siteUrl);
   for (const tag of tags) endpoint.searchParams.append("tag", tag);
 
   try {

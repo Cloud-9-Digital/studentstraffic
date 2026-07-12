@@ -123,11 +123,13 @@ async function main() {
     if (!isApprovedCanonicalProgramme(course.slug)) {
       throw new Error(`Unapproved canonical programme: ${course.slug}`);
     }
-    if (!course.metaTitle.toLowerCase().includes(course.shortName.toLowerCase())) {
-      throw new Error(`Meta title must include focus keyword '${course.shortName}'.`);
+    const normalizeFocus = (value: string) => value.toLowerCase().replace(/&/g, "and");
+    const focusKeywords = [course.shortName, course.name].map(normalizeFocus);
+    if (!focusKeywords.some((keyword) => normalizeFocus(course.metaTitle).includes(keyword))) {
+      throw new Error(`Meta title must include focus keyword '${course.shortName}' or '${course.name}'.`);
     }
-    if (!course.metaDescription.toLowerCase().includes(course.shortName.toLowerCase())) {
-      throw new Error(`Meta description must include focus keyword '${course.shortName}'.`);
+    if (!focusKeywords.some((keyword) => normalizeFocus(course.metaDescription).includes(keyword))) {
+      throw new Error(`Meta description must include focus keyword '${course.shortName}' or '${course.name}'.`);
     }
   }
 

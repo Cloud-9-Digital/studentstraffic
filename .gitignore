@@ -46,4 +46,18 @@ public/guides/raster/
 .env*.local
 
 # Android Studio / IntelliJ project metadata
+.idea/
 mobile/app/.idea/
+
+# Local Codex/browser verification artefacts
+.codex-dev-*.log
+/outputs/
+
+# Publishing media is uploaded to Cloudinary; keep only durable payloads/reports
+/research/media/
+/research/catalog-media/
+/research/catalog-payloads/
+
+# One-off local publishing helpers
+/scripts/_dry-*
+/scripts/_tmp-*

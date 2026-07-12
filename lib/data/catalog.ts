@@ -867,44 +867,86 @@ async function queryFinderProgramsFromDatabase(
   }
 
   const whereClause = buildFinderProgramConditions(filters);
-  const [countRow] = await db
-    .select({ value: count() })
-    .from(programOfferingsTable)
-    .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-    .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
-    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
-    .where(whereClause);
-
-  const totalItems = countRow?.value ?? 0;
-  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
-  const safePage = Math.min(Math.max(page, 1), totalPages);
-  const offset = (safePage - 1) * pageSize;
-
-  const rows = await db
+  const rankedPrograms = db
     .select({
-      universitySlug: universitiesTable.slug,
-      universityName: universitiesTable.name,
-      universityCity: universitiesTable.city,
-      universityType: universitiesTable.type,
-      universityLogoUrl: universitiesTable.logoUrl,
-      universityCoverImageUrl: universitiesTable.coverImageUrl,
-      universityFeatured: universitiesTable.featured,
-      countrySlug: countriesTable.slug,
-      countryName: countriesTable.name,
-      courseSlug: coursesTable.slug,
-      courseShortName: coursesTable.shortName,
-      offeringSlug: programOfferingsTable.slug,
-      annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
-      officialFeeCurrency: programOfferingsTable.officialFeeCurrency,
-      officialAnnualTuitionAmount: programOfferingsTable.officialAnnualTuitionAmount,
-      offeringFeatured: programOfferingsTable.featured,
+      universitySlug: sql<string>`${universitiesTable.slug}`.as("university_slug"),
+      universityName: sql<string>`${universitiesTable.name}`.as("university_name"),
+      universityCity: sql<string>`${universitiesTable.city}`.as("university_city"),
+      universityType: sql<string>`${universitiesTable.type}`.as("university_type"),
+      universityLogoUrl: sql<string | null>`${universitiesTable.logoUrl}`.as("university_logo_url"),
+      universityCoverImageUrl: sql<string | null>`${universitiesTable.coverImageUrl}`.as("university_cover_image_url"),
+      universityFeatured: sql<boolean>`${universitiesTable.featured}`.as("university_featured"),
+      countrySlug: sql<string>`${countriesTable.slug}`.as("country_slug"),
+      countryName: sql<string>`${countriesTable.name}`.as("country_name"),
+      courseSlug: sql<string>`${coursesTable.slug}`.as("course_slug"),
+      courseShortName: sql<string>`${coursesTable.shortName}`.as("course_short_name"),
+      offeringSlug: sql<string>`${programOfferingsTable.slug}`.as("offering_slug"),
+      annualTuitionUsd: sql<number>`${programOfferingsTable.annualTuitionUsd}`.as("annual_tuition_usd"),
+      officialFeeCurrency: sql<string | null>`${programOfferingsTable.officialFeeCurrency}`.as("official_fee_currency"),
+      officialAnnualTuitionAmount: sql<number | null>`${programOfferingsTable.officialAnnualTuitionAmount}`.as("official_annual_tuition_amount"),
+      offeringFeatured: sql<boolean>`${programOfferingsTable.featured}`.as("offering_featured"),
+      universityRank: sql<number>`row_number() over (
+        partition by ${universitiesTable.id}
+        order by ${sql.join([...getFinderProgramOrder(filters.sort)], sql`, `)}
+      )`.as("university_rank"),
     })
     .from(programOfferingsTable)
     .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
     .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
     .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
     .where(whereClause)
-    .orderBy(...getFinderProgramOrder(filters.sort))
+    .as("ranked_finder_programs");
+
+  const [countRow] = await db
+    .select({ value: count() })
+    .from(rankedPrograms)
+    .where(eq(rankedPrograms.universityRank, 1));
+
+  const totalItems = countRow?.value ?? 0;
+  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+  const safePage = Math.min(Math.max(page, 1), totalPages);
+  const offset = (safePage - 1) * pageSize;
+
+  const rankedProgramOrder = (() => {
+    switch (getFinderSort(filters.sort)) {
+      case "tuition_asc":
+        return [
+          sql`CASE WHEN ${rankedPrograms.annualTuitionUsd} > 0 THEN 0 ELSE 1 END`,
+          asc(rankedPrograms.annualTuitionUsd),
+          asc(rankedPrograms.universityName),
+          asc(rankedPrograms.courseShortName),
+          asc(rankedPrograms.countryName),
+        ] as const;
+      case "tuition_desc":
+        return [
+          sql`CASE WHEN ${rankedPrograms.annualTuitionUsd} > 0 THEN 0 ELSE 1 END`,
+          desc(rankedPrograms.annualTuitionUsd),
+          asc(rankedPrograms.universityName),
+          asc(rankedPrograms.courseShortName),
+          asc(rankedPrograms.countryName),
+        ] as const;
+      case "name_asc":
+        return [
+          asc(rankedPrograms.universityName),
+          asc(rankedPrograms.courseShortName),
+          asc(rankedPrograms.countryName),
+        ] as const;
+      default:
+        return [
+          desc(rankedPrograms.offeringFeatured),
+          sql`CASE WHEN ${rankedPrograms.annualTuitionUsd} > 0 THEN ${rankedPrograms.annualTuitionUsd} ELSE 2147483647 END`,
+          asc(rankedPrograms.universityName),
+          asc(rankedPrograms.courseShortName),
+          asc(rankedPrograms.countryName),
+        ] as const;
+    }
+  })();
+
+  const rows = await db
+    .select()
+    .from(rankedPrograms)
+    .where(eq(rankedPrograms.universityRank, 1))
+    .orderBy(...rankedProgramOrder)
     .limit(pageSize)
     .offset(offset);
 
@@ -1257,6 +1299,19 @@ function sortFinderPrograms(programs: FinderProgram[], sort: FinderSort) {
   });
 }
 
+function getOneFinderProgramPerUniversity(programs: FinderProgram[]) {
+  const seenUniversitySlugs = new Set<string>();
+
+  return programs.filter((program) => {
+    if (seenUniversitySlugs.has(program.university.slug)) {
+      return false;
+    }
+
+    seenUniversitySlugs.add(program.university.slug);
+    return true;
+  });
+}
+
 export async function listFinderPrograms(filters: FinderFilters) {
   "use cache";
 
@@ -1343,7 +1398,9 @@ export async function getFinderProgramsPage(
   cacheTag("catalog");
   cacheTag("finder");
 
-  const allPrograms = await listFinderPrograms(filters);
+  const allPrograms = getOneFinderProgramPerUniversity(
+    await listFinderPrograms(filters),
+  );
   const totalItems = allPrograms.length;
   const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
   const currentPage = Math.min(Math.max(page, 1), totalPages);
@@ -1407,7 +1464,9 @@ export async function queryFinderCardProgramsPage(
     return databasePage;
   }
 
-  const allPrograms = await listFinderPrograms(filters);
+  const allPrograms = getOneFinderProgramPerUniversity(
+    await listFinderPrograms(filters),
+  );
   const totalItems = allPrograms.length;
   const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
   const safePage = Math.min(Math.max(page, 1), totalPages);

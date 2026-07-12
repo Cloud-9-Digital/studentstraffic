@@ -128,6 +128,37 @@ agent effort re-deriving the same INSERT/UPDATE logic every time). Research agen
 to produce the JSON; this script handles validation (course slug exists, >=2 sources, required
 fields) and insertion.
 
+### 1c. Catalogue-payload pipeline for new universities (`scripts/publish-catalog-payload.ts`)
+
+A third, newer path (used for the 2026-07-12 "scalable programme publishing" pilot batch) publishes
+a brand-new university and its programmes in one atomic transaction from a single hand-authored
+JSON file (see `research/catalog-payloads/*.json` for examples; `western-university.json` is a
+worked reference). Run as `tsx scripts/publish-catalog-payload.ts --file <payload.json>`.
+
+**Important restriction, discovered 2026-07-12 while researching University of Malta:**
+`courseSchema.stream` in this script is `z.enum(["engineering", "business"])` — it does not accept
+`medicine`, `dental`, `nursing`, `pharmacy` or any other stream. Every course referenced by a
+programme in the payload must also appear in that payload's own `courses` array (the script builds
+its course-id map only from `payload.courses`, never from the live DB), and that array is validated
+against the same enum. **Consequence: this script cannot publish a new university's first medicine,
+dental, nursing or pharmacy programme, even against an already-`active=true` canonical course row
+such as `mbbs`, `bds` or `bsc-nursing`.** This is broader than the `medical-pg`/`pharmacy`
+`active=false` restriction described in `docs/university-expansion-plan.md` — it also blocks the
+three `active=true` medical/dental/nursing slugs for any university that doesn't already exist in
+the DB.
+
+The workaround is the existing two-stage pattern: publish the university's engineering/business
+programmes first via `publish-catalog-payload.ts` (which creates the university row), then run a
+second pass via `scripts/add-program-offerings.mjs` (§1b above), which has no stream restriction and
+only requires the target university to already be `published = true` and the target course to be
+`active = true`. See `research/catalog-payloads/university-of-malta-stage2-medical-dental-nursing.json`
+and `docs/research-scopes/university-of-malta.md` for a worked example of a held stage-2 batch.
+
+Fix candidates for a future change (not applied here — out of scope for a single-university research
+pass): widen `courseSchema.stream` to match `program-taxonomy.ts`'s full stream union, or have the
+script look up already-active courses from the DB instead of requiring every referenced course to be
+re-declared in the payload.
+
 ### 2. Manual batch seed scripts (used historically per-country, e.g. Russia/Georgia/Uzbekistan/Kyrgyzstan)
 
 Pattern: `scripts/seed-<country>-batch<N>.mjs` — a plain array of university objects (same shape as
@@ -207,6 +238,20 @@ and remapped. Run `npm run audit:programme-taxonomy` for the non-mutating review
 
 Both programme import paths now use one database transaction per payload. A validation or database
 failure rolls the complete batch back; cache and search refresh run only after the database commit.
+
+## Cross-agent publishing coordination
+
+`research/university-publishing-ledger.csv` is the shared coordination ledger for university work.
+Every research or publishing agent must claim its university there before research and update the
+same row through `researching`, `validated`, `published`, `held` or `abandoned`. Before the database
+transaction, re-read the ledger and query the live university slug/name to catch concurrent work.
+The ledger prevents accidental duplication operationally; the database slug constraints remain the
+final integrity boundary.
+
+The existing-university programme importer also persists structured `audienceEligibility` and
+`professionalExamSupport` values when supplied. Programme-only batches must therefore carry precise
+visa, nationality, residency or prior-qualification restrictions instead of treating every
+international applicant as eligible.
 
 ## University media delivery (2026-07-12)
 
