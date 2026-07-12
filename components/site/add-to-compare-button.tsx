@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Plus } from "lucide-react";
+import { GitCompare } from "lucide-react";
 
 import { useCompare } from "@/lib/compare-context";
 
@@ -41,17 +41,8 @@ export function AddToCompareButton({
             : "border-border bg-muted text-muted-foreground hover:border-accent hover:bg-accent/8 hover:text-accent",
       ].join(" ")}
     >
-      {selected ? (
-        <>
-          <Check className="size-3 shrink-0" strokeWidth={2.5} />
-          <span>Added</span>
-        </>
-      ) : (
-        <>
-          <Plus className="size-3 shrink-0" strokeWidth={2.5} />
-          <span>Compare</span>
-        </>
-      )}
+      <GitCompare className="size-3.5 shrink-0" strokeWidth={2.5} />
+      <span className="hidden sm:inline">{selected ? "Added" : "Compare"}</span>
     </button>
   );
 }

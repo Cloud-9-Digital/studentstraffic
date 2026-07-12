@@ -22,6 +22,7 @@ import {
   University,
   UsersRound,
   X,
+  type LucideIcon,
 } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
@@ -65,51 +66,76 @@ type ProgrammeMenuGroup = {
 };
 
 function ProgrammeMenuPanel({
+  icon: Icon,
+  label,
+  description,
   groups,
   open,
   onClose,
 }: {
+  icon: LucideIcon;
+  label: string;
+  description: string;
   groups: ProgrammeMenuGroup[];
   open: boolean;
   onClose: () => void;
 }) {
+  const totalCourses = groups.reduce((sum, group) => sum + group.courses.length, 0);
+
   return (
     <div
       inert={!open}
       className={cn(
-        "absolute left-1/2 top-full z-[60] mt-1 w-[min(34rem,calc(100vw-2rem))] -translate-x-1/2 overflow-hidden rounded-2xl border border-border bg-white shadow-xl transition-all duration-200",
+        "absolute left-1/2 top-full z-[60] mt-2 w-[min(38rem,calc(100vw-2rem))] -translate-x-1/2 overflow-hidden rounded-2xl border border-border bg-white shadow-xl transition-all duration-200",
         open ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0",
       )}
     >
-      <div className="max-h-[min(32rem,calc(100vh-6rem))] overflow-y-auto p-3">
+      <div className="flex items-start gap-3 border-b border-border bg-gradient-to-r from-primary/[0.07] via-transparent to-accent/[0.07] px-5 py-4">
+        <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-white text-primary shadow-sm ring-1 ring-border">
+          <Icon className="size-4.5" />
+        </span>
+        <div className="min-w-0">
+          <p className="text-sm font-semibold text-foreground">{label}</p>
+          <p className="mt-0.5 text-xs leading-5 text-muted-foreground">{description}</p>
+        </div>
+      </div>
+
+      <div className="max-h-[min(28rem,calc(100vh-10rem))] overflow-y-auto p-3">
         <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2">
           {groups.map((group) => (
             <section key={group.stream}>
-              <p className="border-b border-border px-2 pb-2 text-xs font-semibold uppercase tracking-[0.12em] text-primary">
+              <p className="px-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary/80">
                 {group.label}
               </p>
-              <div className="mt-1 space-y-0.5">
+              <div className="mt-1.5 space-y-1">
                 {group.courses.map((course) => (
                   <Link
                     key={course.slug}
                     href={course.href}
                     onClick={onClose}
-                    className="flex items-center justify-between gap-3 rounded-lg px-2 py-2 text-sm text-foreground transition-colors hover:bg-primary/5 hover:text-primary"
+                    className="group flex items-center justify-between gap-3 rounded-xl border border-transparent px-2.5 py-2 text-sm text-foreground transition-all hover:border-primary/15 hover:bg-primary/5 hover:text-primary"
                   >
                     <span className="min-w-0 truncate">{course.name}</span>
-                    <ArrowRight className="size-3 shrink-0 text-muted-foreground" />
+                    <ArrowRight className="size-3 shrink-0 -translate-x-0.5 text-muted-foreground opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
                   </Link>
                 ))}
               </div>
             </section>
           ))}
         </div>
+      </div>
+
+      <div className="flex items-center justify-between gap-3 border-t border-border bg-muted/20 px-5 py-3">
+        <p className="text-xs font-medium text-muted-foreground">
+          {totalCourses} program{totalCourses === 1 ? "" : "s"} in {label}
+        </p>
         <Link
           href="/courses"
           onClick={onClose}
-          className="mt-4 flex items-center gap-1 rounded-lg px-2 py-2 text-xs font-semibold text-primary hover:bg-primary/5"
+          className="flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-sm font-semibold text-primary transition-colors hover:bg-primary/8"
         >
-          View all programs <ArrowRight className="size-3.5" />
+          View all programs
+          <ArrowRight className="size-3.5" />
         </Link>
       </div>
     </div>
@@ -219,49 +245,26 @@ function SiteHeaderInner() {
     () => groupProgrammeNavigationCourses(navCourses),
     [navCourses],
   );
-  const programmeMenus = useMemo(() => [
-    {
-      id: "engineering",
-      label: "Engineering",
-      icon: Cpu,
-      streams: ["engineering", "computing-information-systems"],
-    },
-    {
-      id: "medicine",
-      label: "Medicine",
-      icon: Stethoscope,
-      streams: ["medicine", "nursing", "dental", "pharmacy", "physiotherapy", "public-health-allied-health"],
-    },
-    {
-      id: "business",
-      label: "MBA & Business",
-      icon: BriefcaseBusiness,
-      streams: ["business", "economics-commerce"],
-    },
-  ].map((menu) => ({
-    ...menu,
-    groups: programmeGroups.filter((group) => menu.streams.includes(group.stream)),
-  })), [programmeGroups]);
-  const primaryProgrammeStreams = new Set(programmeMenus.flatMap((menu) => menu.streams));
-  const additionalProgrammeGroups = programmeGroups.filter(
-    (group) => !primaryProgrammeStreams.has(group.stream),
-  );
 
-  // The mobile drawer has room for more top-level categories than the
-  // horizontal desktop bar does, so the full taxonomy is split into six
-  // named buckets (instead of desktop's 3 + one flat "everything else" dump)
-  // to keep any single drill-down panel short and scannable.
+  // Shared category taxonomy for both the mobile drawer's drill-down panel
+  // and the desktop sub-row. Desktop uses shortLabel (space is tight in a
+  // single-line pill bar); mobile uses the fuller label since it lists
+  // categories vertically with room to spare.
   const mobileProgrammeCategories = useMemo(() => {
     const categories = [
       {
         id: "engineering",
         label: "Engineering & Computing",
+        shortLabel: "Engineering",
+        description: "Core engineering, IT & computing degrees.",
         icon: Cpu,
         streams: ["engineering", "computing-information-systems"],
       },
       {
         id: "medicine",
         label: "Medicine & Health Sciences",
+        shortLabel: "Medicine",
+        description: "Medicine, nursing, dental, pharmacy & allied health.",
         icon: Stethoscope,
         streams: [
           "medicine", "nursing", "dental", "pharmacy", "physiotherapy",
@@ -271,24 +274,32 @@ function SiteHeaderInner() {
       {
         id: "business",
         label: "Business & Economics",
+        shortLabel: "Business",
+        description: "MBA, business, economics & hospitality management.",
         icon: BriefcaseBusiness,
         streams: ["business", "economics-commerce", "hospitality"],
       },
       {
         id: "law",
         label: "Law & Public Policy",
+        shortLabel: "Law & Policy",
+        description: "Law, public policy & international relations.",
         icon: Scale,
         streams: ["law", "public-policy-international-relations"],
       },
       {
         id: "sciences",
         label: "Sciences & Environment",
+        shortLabel: "Sciences",
+        description: "Natural sciences, maths, environment & agriculture.",
         icon: FlaskConical,
         streams: ["natural-sciences", "mathematics-statistics", "environment-sustainability", "agriculture"],
       },
       {
         id: "arts",
         label: "Arts, Media & Design",
+        shortLabel: "Arts & Media",
+        description: "Arts, humanities, media, design & social sciences.",
         icon: Palette,
         streams: [
           "arts-humanities", "design-creative-arts", "media-communication",
@@ -306,6 +317,8 @@ function SiteHeaderInner() {
       categories.push({
         id: "more-programs",
         label: "More Programs",
+        shortLabel: "More",
+        description: "Every other program we cover, all in one place.",
         icon: Grid2X2,
         streams: [],
         groups: otherGroups,
@@ -321,12 +334,16 @@ function SiteHeaderInner() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Locks page scroll while the mobile drawer or any desktop dropdown
+  // (countries panel, programme menus) is open, so scrolling inside the
+  // dropdown never bleeds through to the page behind it.
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    const shouldLock = mobileOpen || countriesOpen || courseMenuOpen !== null;
+    document.body.style.overflow = shouldLock ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [mobileOpen]);
+  }, [mobileOpen, countriesOpen, courseMenuOpen]);
 
   // Reset the drill-down panel whenever the drawer closes, so reopening it
   // always starts back at the root list rather than wherever it was left.
@@ -379,6 +396,9 @@ function SiteHeaderInner() {
 
   const countriesActive = isActive("/countries");
   const universitiesActive = isActive("/universities");
+  const studentsActive = isActive("/students");
+  const newsActive = isActive("/news");
+  const blogActive = isActive("/blog");
 
   return (
     <>
@@ -398,8 +418,8 @@ function SiteHeaderInner() {
         <div className="relative flex h-16 items-center px-4 sm:px-6 lg:px-8">
           <SiteLogo showTagline />
 
-          {/* Desktop nav */}
-          <nav ref={courseMenuRef} className="pointer-events-none absolute inset-x-0 hidden items-center justify-center gap-0.5 lg:flex">
+          {/* Desktop main nav */}
+          <nav className="pointer-events-none absolute inset-x-0 hidden items-center justify-center gap-0.5 lg:flex">
             <div className="pointer-events-auto relative" ref={countriesMenuRef}>
               <button
                 type="button"
@@ -516,59 +536,44 @@ function SiteHeaderInner() {
               Universities
             </Link>
 
-            {programmeMenus.map(({ id, label, icon: Icon, groups }) => {
-              const open = courseMenuOpen === id;
-              return (
-                <div key={id} className="pointer-events-auto relative">
-                  <button
-                    type="button"
-                    aria-expanded={open}
-                    aria-haspopup="menu"
-                    onClick={() => {
-                      setCountriesOpen(false);
-                      setCourseMenuOpen(open ? null : id);
-                    }}
-                    className={cn(
-                      "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium whitespace-nowrap transition-colors",
-                      open ? "bg-primary/8 text-primary" : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-                    )}
-                  >
-                    <Icon className="size-3.5 text-primary/65" />
-                    {label}
-                    <ChevronDown className={cn("size-3.5 transition-transform", open && "rotate-180")} />
-                  </button>
-                  <ProgrammeMenuPanel groups={groups} open={open} onClose={() => setCourseMenuOpen(null)} />
-                </div>
-              );
-            })}
+            <Link
+              href="/students"
+              className={cn(
+                "pointer-events-auto flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                studentsActive
+                  ? "bg-primary/8 text-primary"
+                  : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+              )}
+            >
+              <UsersRound className="size-3.5 text-primary/65" />
+              Talk to a student
+            </Link>
 
-            {additionalProgrammeGroups.length > 0 ? (
-              <div className="pointer-events-auto relative">
-                <button
-                  type="button"
-                  aria-expanded={courseMenuOpen === "more-programs"}
-                  aria-haspopup="menu"
-                  onClick={() => {
-                    setCountriesOpen(false);
-                    setCourseMenuOpen(courseMenuOpen === "more-programs" ? null : "more-programs");
-                  }}
-                  className={cn(
-                    "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium whitespace-nowrap transition-colors",
-                    courseMenuOpen === "more-programs" ? "bg-primary/8 text-primary" : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-                  )}
-                >
-                  <Grid2X2 className="size-3.5 text-primary/65" />
-                  More programs
-                  <ChevronDown className={cn("size-3.5 transition-transform", courseMenuOpen === "more-programs" && "rotate-180")} />
-                </button>
-                <ProgrammeMenuPanel
-                  groups={additionalProgrammeGroups}
-                  open={courseMenuOpen === "more-programs"}
-                  onClose={() => setCourseMenuOpen(null)}
-                />
-              </div>
-            ) : null}
+            <Link
+              href="/news"
+              className={cn(
+                "pointer-events-auto flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                newsActive
+                  ? "bg-primary/8 text-primary"
+                  : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+              )}
+            >
+              <Newspaper className="size-3.5 text-primary/65" />
+              News
+            </Link>
 
+            <Link
+              href="/blog"
+              className={cn(
+                "pointer-events-auto flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                blogActive
+                  ? "bg-primary/8 text-primary"
+                  : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+              )}
+            >
+              <BookOpen className="size-3.5 text-primary/65" />
+              Blog
+            </Link>
           </nav>
 
           {/* Desktop actions */}
@@ -601,6 +606,44 @@ function SiteHeaderInner() {
           </div>
         </div>
 
+        {/* Desktop sub-row: program category shortcuts (same categorisation as the mobile drawer) */}
+        <nav
+          ref={courseMenuRef}
+          className="hidden flex-wrap items-center justify-center gap-x-0.5 gap-y-1 border-t border-border/70 bg-gradient-to-r from-primary/[0.07] via-primary/[0.02] to-accent/[0.07] px-4 py-1.5 lg:flex"
+        >
+          {mobileProgrammeCategories.map(({ id, label, shortLabel, description, icon: Icon, groups }) => {
+            const open = courseMenuOpen === id;
+            return (
+              <div key={id} className="relative shrink-0">
+                <button
+                  type="button"
+                  aria-expanded={open}
+                  aria-haspopup="menu"
+                  onClick={() => {
+                    setCountriesOpen(false);
+                    setCourseMenuOpen(open ? null : id);
+                  }}
+                  className={cn(
+                    "flex items-center gap-1 rounded-lg px-3 py-1.5 text-[0.8rem] font-medium whitespace-nowrap transition-colors",
+                    open ? "bg-primary/10 text-primary" : "text-foreground/60 hover:bg-black/5 hover:text-foreground",
+                  )}
+                >
+                  <Icon className="size-3.5 text-primary/65" />
+                  {shortLabel}
+                  <ChevronDown className={cn("size-3 transition-transform", open && "rotate-180")} />
+                </button>
+                <ProgrammeMenuPanel
+                  icon={Icon}
+                  label={label}
+                  description={description}
+                  groups={groups}
+                  open={open}
+                  onClose={() => setCourseMenuOpen(null)}
+                />
+              </div>
+            );
+          })}
+        </nav>
       </header>
 
       {/* Mobile overlay */}

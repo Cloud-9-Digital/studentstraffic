@@ -8,12 +8,7 @@ import type { FinderCardProgram } from "@/lib/data/types";
 import { universityImageBlurDataURL, universityLogoBlurDataURL } from "@/lib/image-placeholder";
 import { getUniversityHref } from "@/lib/routes";
 import { getCountryFlagCode, getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
-import {
-  cn,
-  formatProgramAnnualFee,
-  getProgramAnnualFeeLabel,
-  hasRenderableProgramAnnualFee,
-} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 export function UniversityCard({
   program,
@@ -22,11 +17,10 @@ export function UniversityCard({
   program: FinderCardProgram;
   imagePriority?: boolean;
 }) {
-  const { university, country, course, offering } = program;
+  const { university, country } = program;
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
   const coverImage = getUniversityCoverImage(university);
-  const hasPublishedFee = hasRenderableProgramAnnualFee(offering);
 
   return (
     // Wrapper is a plain div — Link covers the whole card via absolute inset,
@@ -117,45 +111,21 @@ export function UniversityCard({
       </div>
 
       {/* Card body ─────────────────────────────────────────────── */}
-      <div className="relative flex flex-1 flex-col gap-3 p-4">
-        <div>
-          <h3 className="text-sm font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
-            {university.name}
-          </h3>
-        </div>
+      <div className="relative flex flex-1 flex-col gap-4 p-4">
+        <h3 className="text-sm font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
+          {university.name}
+        </h3>
 
-        <div className="mt-auto flex flex-col gap-2.5 border-t border-border pt-3">
-          <div className="grid grid-cols-2 gap-2">
-            <div className="flex flex-col">
-              <span className="text-[0.65rem] text-muted-foreground">
-                {hasPublishedFee
-                  ? `${getProgramAnnualFeeLabel(offering)} / yr`
-                  : "Fee"}
-              </span>
-              <span
-                className={cn(
-                  "font-bold text-foreground",
-                  hasPublishedFee ? "text-sm" : "text-xs leading-5"
-                )}
-              >
-                {formatProgramAnnualFee(offering)}
-              </span>
-            </div>
-            <div className="flex flex-col items-end">
-              <span className="text-[0.65rem] text-muted-foreground">Course</span>
-              <span className="text-sm font-semibold text-foreground">{course.shortName}</span>
-            </div>
-          </div>
-
-          {/* Action buttons — z-10 so they intercept clicks above the card link */}
-          <div className="relative z-10 grid grid-cols-2 gap-1.5">
-            <ShortlistButton slug={university.slug} name={university.name} />
-            <AddToCompareButton
-              slug={university.slug}
-              name={university.name}
-              logoUrl={university.logoUrl}
-            />
-          </div>
+        {/* Action buttons — z-10 so they intercept clicks above the card link.
+            Icon-only below sm (buttons hide their label there) so the pair
+            never gets cramped on a narrow 2-up mobile grid. */}
+        <div className="relative z-10 mt-auto grid grid-cols-2 gap-1.5">
+          <ShortlistButton slug={university.slug} name={university.name} />
+          <AddToCompareButton
+            slug={university.slug}
+            name={university.name}
+            logoUrl={university.logoUrl}
+          />
         </div>
       </div>
     </div>

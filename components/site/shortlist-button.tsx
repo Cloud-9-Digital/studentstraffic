@@ -88,13 +88,13 @@ export function ShortlistButton({ slug, name }: { slug: string; name: string }) 
         ].join(" ")}
       >
         {pending ? (
-          <Loader2 className="size-3 shrink-0 animate-spin" />
+          <Loader2 className="size-3.5 shrink-0 animate-spin" />
         ) : shortlisted ? (
-          <BookmarkCheck className="size-3 shrink-0" strokeWidth={2.5} />
+          <BookmarkCheck className="size-3.5 shrink-0" strokeWidth={2.5} />
         ) : (
-          <Bookmark className="size-3 shrink-0" strokeWidth={2.5} />
+          <Bookmark className="size-3.5 shrink-0" strokeWidth={2.5} />
         )}
-        <span>{shortlisted ? "Shortlisted" : "Shortlist"}</span>
+        <span className="hidden sm:inline">{shortlisted ? "Shortlisted" : "Shortlist"}</span>
       </button>
 
       <AuthGateModal

@@ -138,35 +138,19 @@ async function UniversitiesExplorerSection({
 function UniversitiesExplorerFallback() {
   return (
     <>
-      <div className="relative overflow-hidden bg-surface-dark">
-        <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
-        <div className="hero-grid-lines absolute inset-0 pointer-events-none" />
-        <div
-          className="hero-orb hero-orb--warm pointer-events-none absolute -right-16 -top-20 size-96 opacity-40"
-          aria-hidden
-        />
-        <div
-          className="hero-orb hero-orb--cool pointer-events-none absolute -bottom-10 left-10 size-72 opacity-60"
-          aria-hidden
-        />
+      <div className="relative overflow-hidden bg-primary">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-[#7ccfbf]/30 to-[#d95f38]/40" />
 
-        <div className="container-shell relative py-10 pb-8 md:py-16 md:pb-10">
-          <div className="mb-7 space-y-3 text-center md:mb-9">
-            <h1 className="font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-5xl">
-              Browse 500+ universities abroad
-            </h1>
-            <p className="mx-auto max-w-lg text-sm leading-6 text-white/60 md:text-base md:leading-7">
-              Filter by country, fees, intake, teaching medium, and NMC
-              recognition across Russia, Georgia, Vietnam, Kyrgyzstan,
-              Kazakhstan, and more.
-            </p>
-          </div>
-
-          <div className="flex gap-2 lg:hidden">
-            <div className="h-12 flex-1 rounded-xl bg-white/10" />
-            <div className="h-12 w-28 rounded-xl bg-white/10" />
-          </div>
+        <div className="container-shell relative py-3 md:py-4">
+          <h1 className="whitespace-nowrap text-center font-display text-[clamp(1.65rem,7.5vw,2.5rem)] font-bold tracking-tight text-white">
+            Browse universities
+          </h1>
         </div>
+      </div>
+
+      <div className="container-shell flex gap-2 py-3 lg:hidden">
+        <div className="h-11 flex-1 rounded-xl bg-muted sm:h-12" />
+        <div className="h-11 w-28 rounded-xl bg-muted sm:h-12" />
       </div>
 
       <section className="py-10 md:py-14">

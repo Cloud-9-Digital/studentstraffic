@@ -445,28 +445,30 @@ export function FinderFilterForm({
           heroMode && "mx-auto w-full max-w-2xl",
         )}
       >
-        <DebouncedSearchInput
-          key={`hero:${filters.q ?? ""}`}
-          initialValue={filters.q ?? ""}
-          placeholder="Search universities, cities, countries…"
-          wrapperClassName="min-w-0 flex-1"
-          iconClassName={cn(
-            "pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2",
-            heroMode ? "text-foreground/40" : "text-muted-foreground",
-          )}
-          inputClassName={cn(
-            "h-12 w-full rounded-xl pl-11 pr-10 text-base outline-none transition-shadow",
-            heroMode
-              ? "border-0 bg-white text-foreground shadow-lg placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-white/60"
-              : "border border-input bg-card text-foreground shadow-sm placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50",
-          )}
-          clearButtonClassName="absolute right-3.5 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
-          onQueryChange={(nextValue) =>
-            onFiltersChange(mergeFilters(filters, { q: nextValue }), {
-              history: "replace",
-            })
-          }
-        />
+        <div className="min-w-0 flex-1">
+          <DebouncedSearchInput
+            key={`hero:${filters.q ?? ""}`}
+            initialValue={filters.q ?? ""}
+            placeholder="Search…"
+            wrapperClassName="relative w-full"
+            iconClassName={cn(
+              "pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2",
+              heroMode ? "text-foreground/40" : "text-muted-foreground",
+            )}
+            inputClassName={cn(
+              "h-11 w-full rounded-xl pl-11 pr-10 text-sm outline-none transition-shadow sm:h-12 sm:text-base",
+              heroMode
+                ? "border border-primary/30 bg-white text-foreground placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-primary/40"
+                : "border border-input bg-card text-foreground shadow-sm placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50",
+            )}
+            clearButtonClassName="absolute right-3.5 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+            onQueryChange={(nextValue) =>
+              onFiltersChange(mergeFilters(filters, { q: nextValue }), {
+                history: "replace",
+              })
+            }
+          />
+        </div>
 
         <button
           type="button"
@@ -477,9 +479,9 @@ export function FinderFilterForm({
               : "Open filters"
           }
           className={cn(
-            "flex h-12 shrink-0 items-center justify-center gap-2 rounded-xl px-3 text-sm font-semibold transition-colors sm:px-4",
+            "flex h-11 shrink-0 items-center justify-center gap-2 rounded-xl px-3 text-sm font-semibold transition-colors sm:h-12 sm:px-4",
             heroMode
-              ? "bg-accent text-white shadow-lg hover:bg-accent-strong"
+              ? "bg-accent text-white hover:bg-accent-strong"
               : cn(
                   "border shadow-sm",
                   isFiltered
