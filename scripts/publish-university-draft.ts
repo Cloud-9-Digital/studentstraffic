@@ -482,7 +482,8 @@ async function main() {
     );
   }
 
-  const { savedUniversity, publishedPrograms } = await db.transaction(async (tx) => {
+  const { savedUniversity, publishedPrograms, publishedProgramSlugs } =
+    await db.transaction(async (tx) => {
     const [countryRow, courseRows] = await Promise.all([
     tx
       .select({ id: countries.id })
@@ -608,6 +609,7 @@ async function main() {
   }
 
   let publishedPrograms = 0;
+  const publishedProgramSlugs: string[] = [];
 
   for (const rawProgram of validation.programs) {
     const courseSlug = inferCourseSlug(rawProgram, asString(draftContent.summary));
@@ -703,6 +705,7 @@ async function main() {
     }
 
     publishedPrograms += 1;
+    publishedProgramSlugs.push(programSlug);
   }
 
   await tx
@@ -717,7 +720,7 @@ async function main() {
     })
     .where(eq(universityResearchQueue.id, record.queueId));
 
-    return { savedUniversity, publishedPrograms };
+    return { savedUniversity, publishedPrograms, publishedProgramSlugs };
   });
 
   console.log(`Published university: ${savedUniversity.slug}`);
@@ -731,7 +734,10 @@ async function main() {
     console.warn("Skipping Typesense sync: TYPESENSE_HOST/TYPESENSE_API_KEY are not configured.");
   }
 
-  await triggerRevalidate(["catalog", "universities", "program-offerings"]);
+  await triggerRevalidate([], {
+    scope: "catalog",
+    slugs: publishedProgramSlugs,
+  });
 }
 
 main().catch((error) => {

@@ -193,7 +193,7 @@ async function main() {
   });
 
   await pool.end();
-  await triggerRevalidate(["catalog", "countries", "universities", "program-offerings", "courses"]);
+  await triggerRevalidate([], { scope: "catalog", slugs: result });
   console.log(JSON.stringify({ publishedProgrammes: result }, null, 2));
 }
 

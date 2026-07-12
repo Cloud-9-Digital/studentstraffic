@@ -149,8 +149,18 @@ export async function POST(request: NextRequest) {
     // revalidated. Without this, a newly published university/program renders correct
     // body content (dynamic per-request via connection()) but keeps a stale/"Not Found"
     // <title> from the last prerendered shell. See catalogDynamicPagePaths below.
-    for (const path of catalogDynamicPagePaths) {
-      dynamicPagePaths.add(path);
+    if (slugs.length === 0) {
+      for (const path of catalogDynamicPagePaths) {
+        dynamicPagePaths.add(path);
+      }
+    }
+
+    // A programme publish only expires that programme's data and rendered
+    // route. The next request regenerates it and stores it in the normal
+    // long-lived catalogue cache without flushing unrelated programme pages.
+    for (const slug of slugs) {
+      tags.add(`program:${slug}`);
+      staticPaths.add(`/${slug}`);
     }
   }
 
