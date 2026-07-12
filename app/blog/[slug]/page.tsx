@@ -123,14 +123,20 @@ function mapRelatedPost(post: BlogPostSearchMetadata): RelatedPost {
 }
 
 export async function generateStaticParams() {
-  // 78 published posts as of writing — small enough to prerender at build
-  // time for faster TTFB on every post, with no build fragility. New posts
-  // published after a build render dynamically once their slug cache is
-  // revalidated.
-  // Cache Components requires at least one build-time param. Keep this
-  // non-content fallback so real blog slugs remain request-driven and newly
-  // published posts are not 404ed simply because they missed the build list.
-  return [{ slug: PLACEHOLDER_BLOG_SLUG }];
+  // Give Cache Components real examples of the route instead of validating
+  // the segment only through the not-found fallback. The latter can produce a
+  // cached 404 shell for valid runtime slugs in production. Published posts
+  // are a small set, so prerender them all; posts published after the build
+  // can still be generated on their first request and revalidated by slug.
+  const posts = await getPublishedPosts();
+
+  if (posts.length === 0) {
+    // Keep builds without a configured database valid (for example, a local
+    // UI-only build) while never using the fallback when content is present.
+    return [{ slug: PLACEHOLDER_BLOG_SLUG }];
+  }
+
+  return posts.map(({ slug }) => ({ slug }));
 }
 
 function resolvePostAuthor(authorSlug: string | null | undefined) {

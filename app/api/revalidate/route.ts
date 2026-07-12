@@ -20,11 +20,6 @@ const blogStaticPaths = [
   "/sitemap.xml",
 ];
 
-const blogDynamicPagePaths = [
-  "/blog/[slug]",
-  "/blog/category/[slug]",
-] as const;
-
 const catalogDynamicPagePaths = [
   "/university/[slug]",
   "/[slug]",
@@ -128,12 +123,15 @@ export async function POST(request: NextRequest) {
       staticPaths.add(path);
     }
 
-    // A slug-specific publish should not invalidate every cached blog detail
-    // page. Only a broad blog revalidation needs the dynamic route pattern.
+    // Always expire the blog detail route shell. With Cache Components, an
+    // exact path/tag invalidation can leave the shared dynamic shell serving a
+    // previously cached not-found result for a newly published database slug.
+    // Post data remains slug-tagged, so this does not flush every article's
+    // data cache. Category shells only need broad blog revalidation.
+    dynamicPagePaths.add("/blog/[slug]");
+
     if (slugs.length === 0) {
-      for (const path of blogDynamicPagePaths) {
-        dynamicPagePaths.add(path);
-      }
+      dynamicPagePaths.add("/blog/category/[slug]");
     }
 
     for (const slug of slugs) {
