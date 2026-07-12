@@ -53,11 +53,9 @@ import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getLandingPageBySlug,
   getLandingPageContext,
-  getLandingPageSlugs,
   getProgramBySlug,
 } from "@/lib/data/catalog";
 import {
-  getPublishedStudyAbroadGuideSlugs,
   getStudyAbroadGuideBySlug,
 } from "@/lib/data/study-abroad-guides-db";
 import { getRelatedContent } from "@/lib/data/related-content";
@@ -77,13 +75,13 @@ import { getUniversityAuthorSlug } from "@/lib/university-authors";
 import { parseProgramSlug } from "@/lib/university-sections";
 import { ProgramSectionShell } from "@/components/site/university/program-section-shell";
 
+const PLACEHOLDER_ROOT_SLUG = "__root-fallback__";
+
 export async function generateStaticParams() {
-  const [landingPageSlugs, guideSlugs] = await Promise.all([
-    getLandingPageSlugs(),
-    getPublishedStudyAbroadGuideSlugs(),
-  ]);
-  const slugs = new Set([...landingPageSlugs, ...guideSlugs]);
-  return Array.from(slugs).map((slug) => ({ slug }));
+  // Cache Components requires at least one build-time param. Keep the real
+  // root-level routes request-driven so programmes published after a build
+  // can be generated and cached on first request, just like blog detail pages.
+  return [{ slug: PLACEHOLDER_ROOT_SLUG }];
 }
 
 async function getLandingPageRouteData(slug: string) {
@@ -167,6 +165,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  if (slug === PLACEHOLDER_ROOT_SLUG) return {};
   const { page, context } = await getLandingPageRouteData(slug);
 
   if (!page) {
@@ -235,6 +234,7 @@ export default async function LandingPageRoute({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  if (slug === PLACEHOLDER_ROOT_SLUG) notFound();
   const { page, context } = await getLandingPageRouteData(slug);
 
   if (!page) {
