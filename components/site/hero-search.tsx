@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { Search, MapPin, GraduationCap, ChevronDown } from "lucide-react";
 
@@ -15,6 +15,7 @@ export function HeroSearch() {
   const navCourses = useNavCourses();
   const [country, setCountry] = useState("");
   const [course, setCourse] = useState("");
+  const [courseQuery, setCourseQuery] = useState("");
   const [activeField, setActiveField] = useState<"country" | "course" | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -40,6 +41,14 @@ export function HeroSearch() {
     (d) => d.href.split("/").pop() === country
   );
   const selectedCourse = navCourses.find((item) => item.slug === course);
+  const matchingCourses = useMemo(() => {
+    const query = courseQuery.trim().toLocaleLowerCase();
+    const source = query
+      ? navCourses.filter((item) => `${item.name} ${item.shortName}`.toLocaleLowerCase().includes(query))
+      : navCourses;
+
+    return source.slice(0, query ? 60 : 18);
+  }, [courseQuery, navCourses]);
 
   return (
     <div ref={containerRef} className="mx-auto w-full max-w-2xl">
@@ -115,7 +124,10 @@ export function HeroSearch() {
           <div className="relative">
             <button
               type="button"
-              onClick={() => setActiveField(activeField === "course" ? null : "course")}
+              onClick={() => {
+                setActiveField(activeField === "course" ? null : "course");
+                setCourseQuery("");
+              }}
               className={cn(
                 "flex w-full items-center gap-3 px-5 py-4 text-left transition-colors hover:bg-muted/40",
                 activeField === "course" && "bg-muted/40"
@@ -135,22 +147,42 @@ export function HeroSearch() {
 
             {/* Course dropdown */}
             {activeField === "course" && (
-              <div className="absolute left-0 top-full z-50 w-full min-w-[260px] rounded-b-xl border border-border bg-white p-3 shadow-xl">
-                <div className="grid grid-cols-2 gap-1">
-                  {navCourses.map((c) => (
+              <div className="absolute left-0 top-full z-50 w-full min-w-[280px] rounded-b-xl border border-border bg-white p-3 shadow-xl sm:w-[380px]">
+                <label className="flex items-center gap-2 rounded-xl border border-border bg-muted/20 px-3 py-2">
+                  <Search className="size-3.5 shrink-0 text-muted-foreground" />
+                  <input
+                    autoFocus
+                    value={courseQuery}
+                    onChange={(event) => setCourseQuery(event.target.value)}
+                    placeholder="Search programs"
+                    className="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground"
+                  />
+                </label>
+                <div className="mt-2 max-h-72 space-y-0.5 overflow-y-auto pr-1">
+                  {matchingCourses.map((c) => (
                     <button
                       key={c.slug}
                       type="button"
-                      onClick={() => { setCourse(c.slug); setActiveField(null); }}
+                      onClick={() => { setCourse(c.slug); setCourseQuery(""); setActiveField(null); }}
                       className={cn(
-                        "flex flex-col rounded-lg px-3 py-2.5 text-left transition-colors hover:bg-muted",
+                        "flex w-full items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-left transition-colors hover:bg-muted",
                         course === c.slug && "bg-primary/8 text-primary"
                       )}
                     >
-                      <span className="text-sm font-semibold">{c.name}</span>
-                      <span className="text-xs text-muted-foreground">{c.shortName}</span>
+                      <span className="min-w-0 text-sm font-semibold">{c.name}</span>
+                      <span className="shrink-0 text-xs text-muted-foreground">{c.shortName}</span>
                     </button>
                   ))}
+                  {matchingCourses.length === 0 ? (
+                    <p className="px-3 py-6 text-center text-sm text-muted-foreground">
+                      No published program matches that search.
+                    </p>
+                  ) : null}
+                  {!courseQuery && navCourses.length > matchingCourses.length ? (
+                    <p className="px-3 py-2 text-xs text-muted-foreground">
+                      Showing the first {matchingCourses.length}. Search by program name to see the rest.
+                    </p>
+                  ) : null}
                 </div>
               </div>
             )}

@@ -3,13 +3,20 @@
 import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   ArrowRight,
+  BriefcaseBusiness,
   ChevronDown,
-  GraduationCap,
+  ChevronLeft,
+  Cpu,
+  FlaskConical,
+  Grid2X2,
   MapPinned,
   Menu,
+  Palette,
+  Scale,
+  Stethoscope,
   University,
   X,
 } from "lucide-react";
@@ -48,16 +55,159 @@ function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; show
   );
 }
 
+type ProgrammeMenuGroup = {
+  stream: string;
+  label: string;
+  courses: Array<{ slug: string; name: string; href: string }>;
+};
+
+function ProgrammeMenuPanel({
+  groups,
+  open,
+  onClose,
+}: {
+  groups: ProgrammeMenuGroup[];
+  open: boolean;
+  onClose: () => void;
+}) {
+  return (
+    <div
+      inert={!open}
+      className={cn(
+        "absolute left-1/2 top-full z-[60] mt-1 w-[min(34rem,calc(100vw-2rem))] -translate-x-1/2 overflow-hidden rounded-2xl border border-border bg-white shadow-xl transition-all duration-200",
+        open ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0",
+      )}
+    >
+      <div className="max-h-[min(32rem,calc(100vh-6rem))] overflow-y-auto p-3">
+        <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2">
+          {groups.map((group) => (
+            <section key={group.stream}>
+              <p className="border-b border-border px-2 pb-2 text-xs font-semibold uppercase tracking-[0.12em] text-primary">
+                {group.label}
+              </p>
+              <div className="mt-1 space-y-0.5">
+                {group.courses.map((course) => (
+                  <Link
+                    key={course.slug}
+                    href={course.href}
+                    onClick={onClose}
+                    className="flex items-center justify-between gap-3 rounded-lg px-2 py-2 text-sm text-foreground transition-colors hover:bg-primary/5 hover:text-primary"
+                  >
+                    <span className="min-w-0 truncate">{course.name}</span>
+                    <ArrowRight className="size-3 shrink-0 text-muted-foreground" />
+                  </Link>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+        <Link
+          href="/courses"
+          onClick={onClose}
+          className="mt-4 flex items-center gap-1 rounded-lg px-2 py-2 text-xs font-semibold text-primary hover:bg-primary/5"
+        >
+          View all programs <ArrowRight className="size-3.5" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+// Renders just the course-group list for one mobile drill-down panel. Kept
+// out of the DOM entirely while its panel isn't active (see MobilePanelStack)
+// so a large taxonomy never bloats the mobile drawer's node count.
+function MobileCategoryGroups({
+  groups,
+  onNavigate,
+}: {
+  groups: ProgrammeMenuGroup[];
+  onNavigate: (href: string) => void;
+}) {
+  return (
+    <div className="space-y-5 px-5 py-4 sm:px-7">
+      {groups.map((group) => (
+        <section key={group.stream}>
+          <p className="px-3 text-xs font-semibold uppercase tracking-[0.12em] text-primary">{group.label}</p>
+          <div className="mt-1 space-y-0.5">
+            {group.courses.map((course) => (
+              <Link
+                key={course.slug}
+                href={course.href}
+                onClick={(event) => {
+                  // Closing the full-screen drawer makes it inert before Link can
+                  // complete its default action on some mobile browsers. Navigate
+                  // first through the router so the selected finder filter is kept.
+                  event.preventDefault();
+                  onNavigate(course.href);
+                }}
+                className="flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-muted/40 hover:text-primary"
+              >
+                <span>{course.name}</span>
+                <ArrowRight className="size-3.5 shrink-0 text-muted-foreground" />
+              </Link>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  );
+}
+
+// A single tappable row on the mobile drawer's root list (a category, or a
+// direct link like "Universities").
+function MobileMenuRow({
+  icon,
+  label,
+  href,
+  onClick,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  href?: string;
+  onClick?: () => void;
+}) {
+  const content = (
+    <>
+      <span className="flex items-center gap-3">
+        <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary/8">{icon}</span>
+        <span className="text-sm font-semibold">{label}</span>
+      </span>
+      <ChevronDown className="size-4 -rotate-90 text-muted-foreground" />
+    </>
+  );
+  const className =
+    "flex w-full items-center justify-between border-b border-border/70 bg-white px-5 py-4 text-left text-foreground transition-colors hover:bg-muted/40 sm:px-7";
+
+  if (href) {
+    return (
+      <Link href={href} onClick={onClick} className={className}>
+        {content}
+      </Link>
+    );
+  }
+
+  return (
+    <button type="button" onClick={onClick} className={className}>
+      {content}
+    </button>
+  );
+}
+
 function SiteHeaderInner() {
   const pathname = usePathname();
+  const router = useRouter();
   const navCountries = useNavCountries();
   const navCourses = useNavCourses();
 
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [countriesOpen, setCountriesOpen] = useState(false);
-  const [mobileCountriesOpen, setMobileCountriesOpen] = useState(false);
   const [courseMenuOpen, setCourseMenuOpen] = useState<string | null>(null);
+  // Which drill-down panel the mobile drawer is showing: null = root list,
+  // "countries" = the countries panel, or a mobile category id. Kept separate
+  // from courseMenuOpen (desktop-only) so resizing the viewport can never let
+  // the two menus bleed state into each other.
+  const [mobilePanel, setMobilePanel] = useState<string | null>(null);
   const countriesMenuRef = useRef<HTMLDivElement | null>(null);
   const courseMenuRef = useRef<HTMLElement | null>(null);
 
@@ -66,8 +216,101 @@ function SiteHeaderInner() {
     () => groupProgrammeNavigationCourses(navCourses),
     [navCourses],
   );
-  const programsOpen = courseMenuOpen === "programs";
+  const programmeMenus = useMemo(() => [
+    {
+      id: "engineering",
+      label: "Engineering",
+      icon: Cpu,
+      streams: ["engineering", "computing-information-systems"],
+    },
+    {
+      id: "medicine",
+      label: "Medicine",
+      icon: Stethoscope,
+      streams: ["medicine", "nursing", "dental", "pharmacy", "physiotherapy", "public-health-allied-health"],
+    },
+    {
+      id: "business",
+      label: "MBA & Business",
+      icon: BriefcaseBusiness,
+      streams: ["business", "economics-commerce"],
+    },
+  ].map((menu) => ({
+    ...menu,
+    groups: programmeGroups.filter((group) => menu.streams.includes(group.stream)),
+  })), [programmeGroups]);
+  const primaryProgrammeStreams = new Set(programmeMenus.flatMap((menu) => menu.streams));
+  const additionalProgrammeGroups = programmeGroups.filter(
+    (group) => !primaryProgrammeStreams.has(group.stream),
+  );
 
+  // The mobile drawer has room for more top-level categories than the
+  // horizontal desktop bar does, so the full taxonomy is split into six
+  // named buckets (instead of desktop's 3 + one flat "everything else" dump)
+  // to keep any single drill-down panel short and scannable.
+  const mobileProgrammeCategories = useMemo(() => {
+    const categories = [
+      {
+        id: "engineering",
+        label: "Engineering & Computing",
+        icon: Cpu,
+        streams: ["engineering", "computing-information-systems"],
+      },
+      {
+        id: "medicine",
+        label: "Medicine & Health Sciences",
+        icon: Stethoscope,
+        streams: [
+          "medicine", "nursing", "dental", "pharmacy", "physiotherapy",
+          "public-health-allied-health", "veterinary",
+        ],
+      },
+      {
+        id: "business",
+        label: "Business & Economics",
+        icon: BriefcaseBusiness,
+        streams: ["business", "economics-commerce", "hospitality"],
+      },
+      {
+        id: "law",
+        label: "Law & Public Policy",
+        icon: Scale,
+        streams: ["law", "public-policy-international-relations"],
+      },
+      {
+        id: "sciences",
+        label: "Sciences & Environment",
+        icon: FlaskConical,
+        streams: ["natural-sciences", "mathematics-statistics", "environment-sustainability", "agriculture"],
+      },
+      {
+        id: "arts",
+        label: "Arts, Media & Design",
+        icon: Palette,
+        streams: [
+          "arts-humanities", "design-creative-arts", "media-communication",
+          "social-sciences", "psychology", "education", "architecture",
+        ],
+      },
+    ].map((category) => ({
+      ...category,
+      groups: programmeGroups.filter((group) => category.streams.includes(group.stream)),
+    })).filter((category) => category.groups.length > 0);
+
+    const categorizedStreams = new Set(categories.flatMap((category) => category.streams));
+    const otherGroups = programmeGroups.filter((group) => !categorizedStreams.has(group.stream));
+    if (otherGroups.length > 0) {
+      categories.push({
+        id: "more-programs",
+        label: "More Programs",
+        icon: Grid2X2,
+        streams: [],
+        groups: otherGroups,
+      });
+    }
+
+    return categories;
+  }, [programmeGroups]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 6);
@@ -80,6 +323,14 @@ function SiteHeaderInner() {
     return () => {
       document.body.style.overflow = "";
     };
+  }, [mobileOpen]);
+
+  // Reset the drill-down panel whenever the drawer closes, so reopening it
+  // always starts back at the root list rather than wherever it was left.
+  useEffect(() => {
+    if (!mobileOpen) {
+      setMobilePanel(null);
+    }
   }, [mobileOpen]);
 
   useEffect(() => {
@@ -113,6 +364,10 @@ function SiteHeaderInner() {
   }, [countriesOpen, courseMenuOpen]);
 
   const closeMobile = useCallback(() => setMobileOpen(false), []);
+  const navigateMobile = useCallback((href: string) => {
+    router.push(href);
+    setMobileOpen(false);
+  }, [router]);
 
   const isActive = (href: string) =>
     href === "/"
@@ -258,79 +513,58 @@ function SiteHeaderInner() {
               Universities
             </Link>
 
-            <div className="pointer-events-auto relative">
-              <button
-                type="button"
-                aria-expanded={programsOpen}
-                aria-haspopup="menu"
-                onClick={() => {
-                  setCountriesOpen(false);
-                  setCourseMenuOpen(programsOpen ? null : "programs");
-                }}
-                className={cn(
-                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
-                  programsOpen ? "bg-primary/8 text-primary" : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-                )}
-              >
-                <GraduationCap className="size-3.5 text-primary/65" />
-                Programs
-                <ChevronDown className={cn("size-3.5 transition-transform", programsOpen && "rotate-180")} />
-              </button>
-
-              <div
-                inert={!programsOpen}
-                className={cn(
-                  "fixed inset-x-0 top-16 z-40 overflow-hidden rounded-b-3xl border border-t-0 border-border bg-white shadow-xl transition-all duration-200",
-                  programsOpen ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0",
-                )}
-              >
-                <div className="mx-auto grid max-w-[1380px] lg:grid-cols-[15rem_minmax(0,1fr)]">
-                  <div className="border-b border-border bg-muted/20 px-6 py-6 lg:border-b-0 lg:border-r">
-                    <p className="flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-accent">
-                      <GraduationCap className="size-3.5" /> Programs
-                    </p>
-                    <h3 className="mt-2 font-display text-3xl font-semibold leading-none tracking-[-0.04em] text-primary">
-                      Find what you want to study.
-                    </h3>
-                    <p className="mt-3 text-xs leading-5 text-muted-foreground">
-                      Browse every published programme, grouped by academic field.
-                    </p>
-                    <Link
-                      href="/courses"
-                      onClick={() => setCourseMenuOpen(null)}
-                      className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
-                    >
-                      View all programs <ArrowRight className="size-3.5" />
-                    </Link>
-                  </div>
-
-                  <div className="max-h-[calc(100vh-7rem)] overflow-y-auto p-5">
-                    <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 xl:grid-cols-3">
-                      {programmeGroups.map((group) => (
-                        <section key={group.stream}>
-                          <p className="border-b border-border pb-2 text-xs font-semibold uppercase tracking-[0.13em] text-primary">
-                            {group.label}
-                          </p>
-                          <div className="mt-2 space-y-0.5">
-                            {group.courses.map((course) => (
-                              <Link
-                                key={course.slug}
-                                href={course.href}
-                                onClick={() => setCourseMenuOpen(null)}
-                                className="flex items-center justify-between gap-3 rounded-lg px-2 py-1.5 text-sm text-foreground transition-colors hover:bg-primary/5 hover:text-primary"
-                              >
-                                <span className="min-w-0 truncate">{course.name}</span>
-                                <ArrowRight className="size-3 shrink-0 text-muted-foreground" />
-                              </Link>
-                            ))}
-                          </div>
-                        </section>
-                      ))}
-                    </div>
-                  </div>
+            {programmeMenus.map(({ id, label, icon: Icon, groups }) => {
+              const open = courseMenuOpen === id;
+              return (
+                <div key={id} className="pointer-events-auto relative">
+                  <button
+                    type="button"
+                    aria-expanded={open}
+                    aria-haspopup="menu"
+                    onClick={() => {
+                      setCountriesOpen(false);
+                      setCourseMenuOpen(open ? null : id);
+                    }}
+                    className={cn(
+                      "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium whitespace-nowrap transition-colors",
+                      open ? "bg-primary/8 text-primary" : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+                    )}
+                  >
+                    <Icon className="size-3.5 text-primary/65" />
+                    {label}
+                    <ChevronDown className={cn("size-3.5 transition-transform", open && "rotate-180")} />
+                  </button>
+                  <ProgrammeMenuPanel groups={groups} open={open} onClose={() => setCourseMenuOpen(null)} />
                 </div>
+              );
+            })}
+
+            {additionalProgrammeGroups.length > 0 ? (
+              <div className="pointer-events-auto relative">
+                <button
+                  type="button"
+                  aria-expanded={courseMenuOpen === "more-programs"}
+                  aria-haspopup="menu"
+                  onClick={() => {
+                    setCountriesOpen(false);
+                    setCourseMenuOpen(courseMenuOpen === "more-programs" ? null : "more-programs");
+                  }}
+                  className={cn(
+                    "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium whitespace-nowrap transition-colors",
+                    courseMenuOpen === "more-programs" ? "bg-primary/8 text-primary" : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+                  )}
+                >
+                  <Grid2X2 className="size-3.5 text-primary/65" />
+                  More programs
+                  <ChevronDown className={cn("size-3.5 transition-transform", courseMenuOpen === "more-programs" && "rotate-180")} />
+                </button>
+                <ProgrammeMenuPanel
+                  groups={additionalProgrammeGroups}
+                  open={courseMenuOpen === "more-programs"}
+                  onClose={() => setCourseMenuOpen(null)}
+                />
               </div>
-            </div>
+            ) : null}
 
           </nav>
 
@@ -397,166 +631,120 @@ function SiteHeaderInner() {
           </button>
         </div>
 
-        <div className="flex flex-1 flex-col overflow-y-auto">
-          <nav className="mx-auto flex w-full max-w-3xl flex-1 flex-col overflow-y-auto bg-white pb-4">
-            <Link
-              href="/universities"
-              onClick={closeMobile}
-              className="order-2 flex w-full items-center justify-between border-b border-border/70 bg-white px-5 py-4 text-foreground transition-colors hover:bg-muted/40 sm:px-7"
-            >
-              <span className="flex items-center gap-3">
-                <span className="flex size-9 items-center justify-center rounded-xl bg-primary/8">
-                  <University className="size-4 text-primary" />
-                </span>
-                <span className="text-sm font-semibold">Universities</span>
-              </span>
-              <ArrowRight className="size-4 text-muted-foreground" />
-            </Link>
-
-            <div className="order-1 border-b border-border/70 bg-white">
-              <button
-                type="button"
-                onClick={() => {
-                  setMobileCountriesOpen((open) => !open);
-                }}
-                className="flex w-full items-center justify-between px-5 py-4 text-left text-foreground transition-colors hover:bg-muted/40 sm:px-7"
-                aria-expanded={mobileCountriesOpen}
-              >
-                <span className="flex items-center gap-3">
-                  <span className="flex size-9 items-center justify-center rounded-xl bg-primary/8">
-                    <MapPinned className="size-4 text-primary" />
-                  </span>
-                  <span className="text-sm font-semibold">Countries</span>
-                </span>
-                <ChevronDown
-                  className={cn(
-                    "size-4 text-muted-foreground transition-transform",
-                    mobileCountriesOpen ? "rotate-180" : "",
-                  )}
+        <div className="relative flex flex-1 flex-col overflow-hidden">
+          {/* Root panel: direct links plus one row per category. Always
+              mounted (it's cheap), but the heavy per-category course lists
+              below are lazy — only the active drill-down panel mounts them. */}
+          <div
+            inert={mobilePanel !== null}
+            className={cn(
+              "absolute inset-0 flex flex-col overflow-y-auto bg-white transition-transform duration-250 ease-[cubic-bezier(0.32,0.72,0,1)]",
+              mobilePanel !== null ? "-translate-x-full" : "translate-x-0",
+            )}
+          >
+            <nav className="mx-auto flex w-full max-w-3xl flex-1 flex-col bg-white pb-4">
+              <MobileMenuRow
+                icon={<MapPinned className="size-4 text-primary" />}
+                label="Countries"
+                onClick={() => setMobilePanel("countries")}
+              />
+              <MobileMenuRow
+                icon={<University className="size-4 text-primary" />}
+                label="Universities"
+                href="/universities"
+                onClick={closeMobile}
+              />
+              {mobileProgrammeCategories.map(({ id, label, icon: Icon }) => (
+                <MobileMenuRow
+                  key={id}
+                  icon={<Icon className="size-4 text-primary" />}
+                  label={label}
+                  onClick={() => setMobilePanel(id)}
                 />
-              </button>
+              ))}
+            </nav>
 
-              <div
-                className={cn(
-                  "grid transition-[grid-template-rows] duration-200 ease-out",
-                  mobileCountriesOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
-                )}
-              >
-                <div inert={!mobileCountriesOpen} className="overflow-hidden">
-                  <div className="space-y-1 bg-muted/15 px-5 pb-4 pt-1 sm:px-7">
-                    {filteredNavCountries.length > 0 ? (
-                      filteredNavCountries.map((destination) => (
-                        <Link
-                          key={destination.href}
-                          href={destination.href}
-                          onClick={closeMobile}
-                          className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm transition-colors hover:bg-primary/5"
-                        >
-                          <CountryFlag
-                            countryCode={destination.isoCode}
-                            alt={destination.name}
-                            width={24}
-                            height={18}
-                            className="rounded-sm border border-black/5"
-                          />
-                          <div className="min-w-0">
-                            <p className="font-semibold text-foreground">
-                              {destination.name}
-                            </p>
-                          </div>
-                        </Link>
-                      ))
-                    ) : (
-                      <p className="px-3 py-4 text-sm text-muted-foreground">
-                        No destinations available
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
+            <div className="mx-auto w-full max-w-3xl px-4 pb-2 sm:px-6">
+              <UserMenuMobile onClose={closeMobile} />
             </div>
 
-            <div className="order-3 border-b border-border/70 bg-white">
-              <button
-                type="button"
-                onClick={() => {
-                  setCourseMenuOpen(programsOpen ? null : "programs");
-                  setMobileCountriesOpen(false);
-                }}
-                className="flex w-full items-center justify-between px-5 py-4 text-left text-foreground transition-colors hover:bg-muted/40 sm:px-7"
-                aria-expanded={programsOpen}
-              >
-                <span className="flex items-center gap-3">
-                  <span className="flex size-9 items-center justify-center rounded-xl bg-primary/8">
-                    <GraduationCap className="size-4 text-primary" />
-                  </span>
-                  <span className="text-sm font-semibold">Programs</span>
-                </span>
-                <ChevronDown
-                  className={cn(
-                    "size-4 text-muted-foreground transition-transform",
-                    programsOpen ? "rotate-180" : "",
-                  )}
-                />
-              </button>
-              <div
-                className={cn(
-                  "grid transition-[grid-template-rows] duration-200 ease-out",
-                  programsOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
-                )}
-              >
-                <div inert={!programsOpen} className="overflow-hidden">
-                  <div className="space-y-5 bg-muted/15 px-5 pb-4 pt-3 sm:px-7">
-                    {programmeGroups.map((group) => (
-                      <section key={group.stream}>
-                        <p className="px-3 text-xs font-semibold uppercase tracking-[0.12em] text-primary">
-                          {group.label}
-                        </p>
-                        <div className="mt-1 space-y-0.5">
-                          {group.courses.map((course) => (
-                            <Link
-                              key={course.slug}
-                              href={course.href}
-                              onClick={closeMobile}
-                              className="flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-muted/40 hover:text-primary"
-                            >
-                              <span>{course.name}</span>
-                              <ArrowRight className="size-3.5 shrink-0 text-muted-foreground" />
-                            </Link>
-                          ))}
-                        </div>
-                      </section>
-                    ))}
-                    <Link
-                      href="/courses"
-                      onClick={closeMobile}
-                      className="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-primary"
-                    >
-                      View all programs <ArrowRight className="size-3.5" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
+            <div className="flex-shrink-0 border-t border-border bg-white p-4 sm:px-6">
+              <CounsellingDialog
+                triggerVariant="accent"
+                triggerClassName="w-full gap-2"
+                onTriggerClick={closeMobile}
+                triggerContent={
+                  <>
+                    Request counselling
+                    <ArrowRight className="size-4" />
+                  </>
+                }
+              />
             </div>
-
-          </nav>
-
-          <div className="mx-auto w-full max-w-3xl px-4 pb-2 sm:px-6">
-            <UserMenuMobile onClose={closeMobile} />
           </div>
 
-          <div className="flex-shrink-0 border-t border-border bg-white p-4 sm:px-6">
-            <CounsellingDialog
-              triggerVariant="accent"
-              triggerClassName="w-full gap-2"
-              onTriggerClick={closeMobile}
-              triggerContent={
-                <>
-                  Request counselling
-                  <ArrowRight className="size-4" />
-                </>
-              }
-            />
+          {/* Drill-down panel: only its own content is mounted, and only
+              while it's the active panel, so switching categories never
+              accumulates DOM nodes for categories the user hasn't opened. */}
+          <div
+            inert={mobilePanel === null}
+            className={cn(
+              "absolute inset-0 flex flex-col overflow-y-auto bg-white transition-transform duration-250 ease-[cubic-bezier(0.32,0.72,0,1)]",
+              mobilePanel !== null ? "translate-x-0" : "translate-x-full",
+            )}
+          >
+            {mobilePanel !== null ? (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setMobilePanel(null)}
+                  className="sticky top-0 z-10 flex w-full items-center gap-2 border-b border-border bg-white/95 px-5 py-4 text-left text-sm font-semibold text-foreground backdrop-blur sm:px-7"
+                >
+                  <ChevronLeft className="size-4 text-muted-foreground" />
+                  {mobilePanel === "countries"
+                    ? "Countries"
+                    : mobileProgrammeCategories.find((category) => category.id === mobilePanel)?.label}
+                </button>
+                <div className="mx-auto w-full max-w-3xl flex-1">
+                  {mobilePanel === "countries" ? (
+                    <div className="space-y-1 px-5 py-4 sm:px-7">
+                      {filteredNavCountries.length > 0 ? (
+                        filteredNavCountries.map((destination) => (
+                          <Link
+                            key={destination.href}
+                            href={destination.href}
+                            onClick={closeMobile}
+                            className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm transition-colors hover:bg-primary/5"
+                          >
+                            <CountryFlag
+                              countryCode={destination.isoCode}
+                              alt={destination.name}
+                              width={24}
+                              height={18}
+                              className="rounded-sm border border-black/5"
+                            />
+                            <div className="min-w-0">
+                              <p className="font-semibold text-foreground">
+                                {destination.name}
+                              </p>
+                            </div>
+                          </Link>
+                        ))
+                      ) : (
+                        <p className="px-3 py-4 text-sm text-muted-foreground">
+                          No destinations available
+                        </p>
+                      )}
+                    </div>
+                  ) : (
+                    <MobileCategoryGroups
+                      groups={mobileProgrammeCategories.find((category) => category.id === mobilePanel)?.groups ?? []}
+                      onNavigate={navigateMobile}
+                    />
+                  )}
+                </div>
+              </>
+            ) : null}
           </div>
         </div>
       </div>

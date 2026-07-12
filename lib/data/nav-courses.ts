@@ -3,7 +3,6 @@ import "server-only";
 import { cacheLife, cacheTag } from "next/cache";
 
 import { getCourses, getProgramOfferings } from "@/lib/data/catalog";
-import { getCourseHref } from "@/lib/routes";
 import type { CourseStream } from "@/lib/data/types";
 
 export type NavCourse = {
@@ -33,7 +32,7 @@ export async function getNavCourses(): Promise<NavCourse[]> {
       name: course.name,
       shortName: course.shortName,
       stream: course.stream,
-      href: getCourseHref(course.slug),
+      href: `/universities?course=${encodeURIComponent(course.slug)}`,
     }))
     .sort((left, right) => left.name.localeCompare(right.name));
 }
