@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
   ArrowRight,
+  BookOpen,
   BriefcaseBusiness,
   ChevronDown,
   ChevronLeft,
@@ -14,10 +15,12 @@ import {
   Grid2X2,
   MapPinned,
   Menu,
+  Newspaper,
   Palette,
   Scale,
   Stethoscope,
   University,
+  UsersRound,
   X,
 } from "lucide-react";
 
@@ -654,14 +657,29 @@ function SiteHeaderInner() {
                 href="/universities"
                 onClick={closeMobile}
               />
-              {mobileProgrammeCategories.map(({ id, label, icon: Icon }) => (
-                <MobileMenuRow
-                  key={id}
-                  icon={<Icon className="size-4 text-primary" />}
-                  label={label}
-                  onClick={() => setMobilePanel(id)}
-                />
-              ))}
+              <MobileMenuRow
+                icon={<Grid2X2 className="size-4 text-primary" />}
+                label="Programs"
+                onClick={() => setMobilePanel("programs")}
+              />
+              <MobileMenuRow
+                icon={<UsersRound className="size-4 text-primary" />}
+                label="Talk to a student"
+                href="/students"
+                onClick={closeMobile}
+              />
+              <MobileMenuRow
+                icon={<Newspaper className="size-4 text-primary" />}
+                label="News & events"
+                href="/news"
+                onClick={closeMobile}
+              />
+              <MobileMenuRow
+                icon={<BookOpen className="size-4 text-primary" />}
+                label="Blog"
+                href="/blog"
+                onClick={closeMobile}
+              />
             </nav>
 
             <div className="mx-auto w-full max-w-3xl px-4 pb-2 sm:px-6">
@@ -697,12 +715,16 @@ function SiteHeaderInner() {
               <>
                 <button
                   type="button"
-                  onClick={() => setMobilePanel(null)}
+                  onClick={() => setMobilePanel(
+                    mobilePanel === "countries" || mobilePanel === "programs" ? null : "programs",
+                  )}
                   className="sticky top-0 z-10 flex w-full items-center gap-2 border-b border-border bg-white/95 px-5 py-4 text-left text-sm font-semibold text-foreground backdrop-blur sm:px-7"
                 >
                   <ChevronLeft className="size-4 text-muted-foreground" />
                   {mobilePanel === "countries"
                     ? "Countries"
+                    : mobilePanel === "programs"
+                      ? "Programs"
                     : mobileProgrammeCategories.find((category) => category.id === mobilePanel)?.label}
                 </button>
                 <div className="mx-auto w-full max-w-3xl flex-1">
@@ -735,6 +757,17 @@ function SiteHeaderInner() {
                           No destinations available
                         </p>
                       )}
+                    </div>
+                  ) : mobilePanel === "programs" ? (
+                    <div className="space-y-1 px-5 py-4 sm:px-7">
+                      {mobileProgrammeCategories.map(({ id, label, icon: Icon }) => (
+                        <MobileMenuRow
+                          key={id}
+                          icon={<Icon className="size-4 text-primary" />}
+                          label={label}
+                          onClick={() => setMobilePanel(id)}
+                        />
+                      ))}
                     </div>
                   ) : (
                     <MobileCategoryGroups
