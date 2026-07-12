@@ -106,6 +106,18 @@ verification (built into the script's validation).
 
 ## Country/scope priority queue
 
+**Prominence-first rule (2026-07-12):** for general catalogue expansion, prioritise widely searched,
+internationally recognised universities that attract substantial cross-border student interest.
+Balance institutional prominence, international programme breadth and likely student search intent;
+do not exhaust a country through small regional institutions before covering its major universities.
+This is a sequencing rule, not permission to make unsourced ranking claims in public copy. Continue
+to publish only verified facts, complete postgraduate coverage and exact taxonomy matches.
+
+**Market balance (2026-07-12):** prioritise the USA, UK and Canada as core high-demand study-abroad
+markets. Where a country foundation is absent, publish one complete authoritative country record with
+the first major university before expanding further institutions in that country. Continue Germany,
+Italy and other destinations, but do not let repeated same-country batches crowd out the core markets.
+
 1. **Fill existing gaps (in progress / next up):** 6 published universities currently have zero
    published programs (live database audit, 2026-07-11) — cheapest possible win, no new discovery
    needed, uses `add-program-offerings.mjs`.

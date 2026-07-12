@@ -1,8 +1,16 @@
-const PROGRAMME_SUFFIX_SEPARATOR = /\s+[—–]\s+/u;
+const PROGRAMME_SUFFIX_SEPARATOR = /\s+(?:\u2014|\u2013|-)\s+/u;
+const PROGRAMME_SUFFIX_MARKER =
+  /\b(?:bachelor|master|honours|bsc|b\.sc|bscn|msc|m\.sc|mbbs|md|mba|nursing|engineering|computer science|general practice nurse)\b/i;
 
 export function getUniversityDisplayName(name: string) {
-  const [institutionName] = name.split(PROGRAMME_SUFFIX_SEPARATOR, 1);
-  return institutionName.trim() || name.trim();
+  const normalized = name.trim();
+  const separator = normalized.match(PROGRAMME_SUFFIX_SEPARATOR);
+  if (!separator?.index) return normalized;
+
+  const suffix = normalized.slice(separator.index + separator[0].length);
+  if (!PROGRAMME_SUFFIX_MARKER.test(suffix)) return normalized;
+
+  return normalized.slice(0, separator.index).trim() || normalized;
 }
 
 export function getUniversityHeroSummary(summary: string, maxCharacters = 320) {

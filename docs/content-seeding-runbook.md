@@ -152,6 +152,12 @@ cover from an official media kit, a clearly reusable licensed source, a user-sup
 original generated image. Store the source URL, rights basis, verification date and cover alt text.
 Never copy an arbitrary search-result image or publish an asset with unclear usage rights.
 
+Student-living media is optional and section-specific. When rights-safe assets exist, provide at most
+one image each for campus environment, accommodation, daily living and safety/support through
+`mediaAttribution.studentLife`. Do not reuse one image across all four sections merely to fill space.
+Upload every selected asset to Cloudinary and retain its original source, rights basis, checked date
+and alt text. If no suitable image exists, omit it; imagery must never delay otherwise valid content.
+
 ### University media hosting — mandatory
 
 All public university logos and cover images must be copied into the Students Traffic Cloudinary

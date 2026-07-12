@@ -82,6 +82,26 @@ belong in their dedicated sections below the hero.
 
 ### Other narrative fields (`campusLifestyle`, `clinicalExposure`, `hostelOverview`,
 `indianFoodSupport`, `safetyOverview`, `studentSupport`) — decompose, don't compress
+
+Student-living fields use hard character budgets. These are ceilings, not targets: never pad a field
+to reach a minimum and never repeat facts already stated elsewhere.
+
+| Public section | Source field(s) | Hard maximum |
+|---|---|---:|
+| Campus environment | `campusLifestyle` | 700 characters |
+| Accommodation | `hostelOverview` | 800 characters |
+| Daily living support | `dietarySupport` | 550 characters |
+| Safety and support | `safetyOverview` + `studentSupport` | 450 characters each |
+
+Every sentence must add a verifiable fact, useful cost, named facility/service, restriction or
+practical action. Remove promotional adjectives, generic reassurance, repeated institutional history
+and filler transitions. A short accurate section is preferable to a complete-looking generic one.
+
+Each section may carry one optional image under `mediaAttribution.studentLife`. Allowed keys are
+`campusEnvironment`, `accommodation`, `dailyLiving` and `safetySupport`. Each image record must include
+the Students Traffic Cloudinary URL, original source URL, rights basis, checked date and useful alt
+text. Use official or clearly reusable assets only. Never hotlink. Missing section imagery must not
+block publication or be replaced with an unrelated stock image.
 Each field should read like DIT's dedicated sub-sections, not one generic paragraph:
 - `campusLifestyle`: physical campus facts (founding year, student count, % international,
   specific facilities — library, labs, language center), not just "modern campus with good

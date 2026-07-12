@@ -4,14 +4,15 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Search, MapPin, GraduationCap, ChevronDown } from "lucide-react";
 
-import { navCourses } from "@/lib/constants";
 import { CountryFlag } from "@/components/site/country-flag";
 import { useNavCountries } from "@/components/app/nav-countries-client-provider";
+import { useNavCourses } from "@/components/app/nav-courses-client-provider";
 import { cn } from "@/lib/utils";
 
 export function HeroSearch() {
   const router = useRouter();
   const navCountries = useNavCountries();
+  const navCourses = useNavCourses();
   const [country, setCountry] = useState("");
   const [course, setCourse] = useState("");
   const [activeField, setActiveField] = useState<"country" | "course" | null>(null);
@@ -38,9 +39,7 @@ export function HeroSearch() {
   const selectedDestination = navCountries.find(
     (d) => d.href.split("/").pop() === country
   );
-  const selectedCourse = navCourses.find(
-    (c) => c.href.split("/").pop() === course
-  );
+  const selectedCourse = navCourses.find((item) => item.slug === course);
 
   return (
     <div ref={containerRef} className="mx-auto w-full max-w-2xl">
@@ -140,16 +139,16 @@ export function HeroSearch() {
                 <div className="grid grid-cols-2 gap-1">
                   {navCourses.map((c) => (
                     <button
-                      key={c.href}
+                      key={c.slug}
                       type="button"
-                      onClick={() => { setCourse(c.href.split("/").pop()!); setActiveField(null); }}
+                      onClick={() => { setCourse(c.slug); setActiveField(null); }}
                       className={cn(
                         "flex flex-col rounded-lg px-3 py-2.5 text-left transition-colors hover:bg-muted",
-                        course === c.href.split("/").pop() && "bg-primary/8 text-primary"
+                        course === c.slug && "bg-primary/8 text-primary"
                       )}
                     >
                       <span className="text-sm font-semibold">{c.name}</span>
-                      <span className="text-xs text-muted-foreground">{c.description}</span>
+                      <span className="text-xs text-muted-foreground">{c.shortName}</span>
                     </button>
                   ))}
                 </div>

@@ -67,7 +67,7 @@ export function UniversitySnapshotSection({
     <div id="snapshot" className="scroll-mt-24 pb-10">
       <SectionLabel>At a glance</SectionLabel>
       <div className="mt-5 overflow-hidden rounded-2xl border border-border">
-        <div className="grid grid-cols-2 gap-px bg-border sm:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-px bg-border sm:grid-cols-3">
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col gap-2 bg-card px-5 py-4">
               <div className="flex items-center gap-1.5 text-accent">
@@ -152,7 +152,7 @@ export function UniversityOverviewSection({
         <div className="flex flex-wrap gap-2 pt-1">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/40 px-3 py-1 text-xs font-semibold text-foreground">
             <MapPinned className="size-3 text-muted-foreground" />
-            {university.city}
+            {university.city}, {country.name}
           </span>
           <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/40 px-3 py-1 text-xs font-semibold text-foreground">
             <CalendarDays className="size-3 text-muted-foreground" />
@@ -165,8 +165,7 @@ export function UniversityOverviewSection({
         </div>
       </div>
 
-      {/* Fit cards — 3-col grid */}
-      <div className="grid gap-4 sm:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2">
         {fitCards.map((card) => (
           <div
             key={card.title}

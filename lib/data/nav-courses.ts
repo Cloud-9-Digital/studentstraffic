@@ -2,12 +2,16 @@ import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
 
-import { getCourses } from "@/lib/data/catalog";
+import { getCourses, getProgramOfferings } from "@/lib/data/catalog";
+import { getCourseHref } from "@/lib/routes";
+import type { CourseStream } from "@/lib/data/types";
 
 export type NavCourse = {
   slug: string;
   name: string;
   shortName: string;
+  stream: CourseStream;
+  href: string;
 };
 
 // A lightweight, client-safe list of courses for populating select inputs
@@ -19,13 +23,17 @@ export async function getNavCourses(): Promise<NavCourse[]> {
   cacheTag("catalog");
   cacheTag("courses");
 
-  const courses = await getCourses();
+  const [courses, offerings] = await Promise.all([getCourses(), getProgramOfferings()]);
+  const publishedCourseSlugs = new Set(offerings.map((offering) => offering.courseSlug));
 
   return courses
+    .filter((course) => course.active !== false && publishedCourseSlugs.has(course.slug))
     .map((course) => ({
       slug: course.slug,
       name: course.name,
       shortName: course.shortName,
+      stream: course.stream,
+      href: getCourseHref(course.slug),
     }))
     .sort((left, right) => left.name.localeCompare(right.name));
 }

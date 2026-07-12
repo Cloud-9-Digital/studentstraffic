@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CalendarDays, Clock, DollarSign } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import type { FinderProgram } from "@/lib/data/types";
 import {
@@ -18,8 +18,13 @@ export function UniversityProgramsSection({
   programs: FinderProgram[];
 }) {
   return (
-    <div id="programs" className="deferred-render scroll-mt-24 space-y-6 py-10">
-      <SectionLabel>Programs at this university</SectionLabel>
+    <div id="programs" className="deferred-render scroll-mt-24 space-y-5 py-10">
+      <div className="flex items-end justify-between gap-4">
+        <SectionLabel>Programs at this university</SectionLabel>
+        <span className="shrink-0 text-xs font-medium text-muted-foreground">
+          {programs.length} {programs.length === 1 ? "programme" : "programmes"}
+        </span>
+      </div>
       <ProgramOfferingsTable programs={programs} />
     </div>
   );
@@ -31,106 +36,47 @@ function ProgramOfferingsTable({
   programs: FinderProgram[];
 }) {
   return (
-    <>
-      {/* Desktop table */}
-      <div className="hidden overflow-hidden rounded-2xl border border-border lg:block">
-        <div className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr] border-b border-border bg-muted/50 px-6 py-3">
-          {["Program", "Tuition fee", "Estimated hostel fee with food", "Duration", "Medium", "Intake"].map((label) => (
-            <span
-              key={label}
-              className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-muted-foreground"
-            >
-              {label}
-            </span>
-          ))}
-        </div>
+    <div className="space-y-4">
+      <p className="max-w-2xl text-sm leading-6 text-muted-foreground">
+        Select a programme to view eligibility, fees, curriculum and application details.
+      </p>
+      <div className="grid gap-4 md:grid-cols-2">
         {programs.map((program) => (
           <Link
             key={program.offering.slug}
             href={getUniversityProgramHref(program.offering.slug)}
-            className="group grid grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr] items-center gap-4 border-b border-border/50 bg-card px-6 py-4 last:border-b-0 hover:bg-muted/20 transition-colors"
+            className="group flex flex-col rounded-2xl border border-border bg-card p-4 transition-colors hover:border-primary/30"
           >
-            <div className="min-w-0">
-              <p className="text-sm font-medium text-foreground leading-5 group-hover:text-primary">
+            <div className="flex items-start justify-between gap-3">
+              <p className="min-w-0 text-sm font-semibold leading-snug text-heading transition-colors group-hover:text-primary">
                 {program.offering.title}
               </p>
+              <span className="mt-0.5 flex shrink-0 items-center gap-1 text-xs font-semibold text-primary">
+                Details
+                <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
+              </span>
             </div>
-            <span className="text-sm font-semibold text-foreground">
-              {formatProgramAnnualFee(program.offering)}
-            </span>
-            <span className="text-sm text-muted-foreground">
-              {formatProgramLivingFee(program.offering)}
-            </span>
-            <span className="text-sm text-muted-foreground">
-              {formatProgramDuration(program.offering.durationYears)}
-            </span>
-            <span className="text-sm text-muted-foreground">
-              {formatProgramMedium(program.offering.medium, program.country.slug)}
-            </span>
-            <span className="text-sm text-muted-foreground">
-              {program.offering.intakeMonths.join(", ")}
-            </span>
-          </Link>
-        ))}
-      </div>
-
-      {/* Mobile cards */}
-      <div className="grid gap-3 lg:hidden">
-        {programs.map((program) => (
-          <Link
-            key={program.offering.slug}
-            href={getUniversityProgramHref(program.offering.slug)}
-            className="block rounded-2xl border border-border bg-card overflow-hidden"
-          >
-            <div className="p-4">
-              <p className="text-sm font-semibold text-foreground leading-5">
-                {program.offering.title}
-              </p>
-              <p className="mt-1 text-xs text-muted-foreground">
-                Medium: {formatProgramMedium(program.offering.medium, program.country.slug)}
-              </p>
-              <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4">
-                <div className="flex flex-col gap-1 rounded-xl bg-muted/40 px-3 py-2.5">
-                  <span className="flex items-center gap-1 text-[0.6rem] font-bold uppercase tracking-wider text-muted-foreground">
-                    <DollarSign className="size-2.5" />
-                    Tuition fee
-                  </span>
-                  <span className="text-xs font-semibold text-foreground">
-                    {formatProgramAnnualFee(program.offering)}
-                  </span>
-                </div>
-                <div className="flex flex-col gap-1 rounded-xl bg-muted/40 px-3 py-2.5">
-                  <span className="flex items-center gap-1 text-[0.6rem] font-bold uppercase tracking-wider text-muted-foreground">
-                    <DollarSign className="size-2.5" />
-                    Hostel fee with food
-                  </span>
-                  <span className="text-xs font-semibold text-foreground">
-                    {formatProgramLivingFee(program.offering)}
-                  </span>
-                </div>
-                <div className="flex flex-col gap-1 rounded-xl bg-muted/40 px-3 py-2.5">
-                  <span className="flex items-center gap-1 text-[0.6rem] font-bold uppercase tracking-wider text-muted-foreground">
-                    <Clock className="size-2.5" />
-                    Duration
-                  </span>
-                  <span className="text-xs font-semibold text-foreground">
-                    {formatProgramDuration(program.offering.durationYears)}
-                  </span>
-                </div>
-                <div className="flex flex-col gap-1 rounded-xl bg-muted/40 px-3 py-2.5">
-                  <span className="flex items-center gap-1 text-[0.6rem] font-bold uppercase tracking-wider text-muted-foreground">
-                    <CalendarDays className="size-2.5" />
-                    Intake
-                  </span>
-                  <span className="text-xs font-semibold text-foreground">
-                    {program.offering.intakeMonths.join(", ")}
-                  </span>
-                </div>
+            <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-border pt-3">
+              <ProgramFact label="Tuition" value={formatProgramAnnualFee(program.offering)} />
+              <ProgramFact label="Duration" value={formatProgramDuration(program.offering.durationYears)} />
+              <ProgramFact label="Medium" value={formatProgramMedium(program.offering.medium, program.country.slug)} />
+              <ProgramFact label="Intake" value={program.offering.intakeMonths.join(", ")} />
+              <div className="col-span-2">
+                <ProgramFact label="Living estimate" value={formatProgramLivingFee(program.offering)} />
               </div>
-            </div>
+            </dl>
           </Link>
         ))}
       </div>
-    </>
+    </div>
+  );
+}
+
+function ProgramFact({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="min-w-0">
+      <dt className="text-[0.65rem] text-muted-foreground">{label}</dt>
+      <dd className="text-sm font-semibold leading-5 text-foreground">{value}</dd>
+    </div>
   );
 }

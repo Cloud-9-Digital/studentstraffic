@@ -82,15 +82,21 @@ const universitySchema = z.object({
   mediaAttribution: z.object({
     logo: z.object({ sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string() }).optional(),
     cover: z.object({ sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+    studentLife: z.object({
+      campusEnvironment: z.object({ url: cloudinaryImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+      accommodation: z.object({ url: cloudinaryImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+      dailyLiving: z.object({ url: cloudinaryImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+      safetySupport: z.object({ url: cloudinaryImageUrlSchema, sourceUrl: z.string().url(), rights: z.string().min(5), checkedAt: z.string(), altText: z.string().min(10) }).optional(),
+    }).optional(),
   }).default({}),
   summary: z.string().min(180).max(500),
-  campusLifestyle: z.string().min(250).max(1800),
+  campusLifestyle: z.string().min(40).max(700),
   cityProfile: z.string().min(200).max(1500),
   practicalExposure: z.string().min(250).max(1800),
-  hostelOverview: z.string().min(200).max(1500),
-  dietarySupport: z.string().min(120).max(1000),
-  safetyOverview: z.string().min(150).max(1200),
-  studentSupport: z.string().min(200).max(1500),
+  hostelOverview: z.string().min(40).max(800),
+  dietarySupport: z.string().min(40).max(550),
+  safetyOverview: z.string().min(40).max(450),
+  studentSupport: z.string().min(40).max(450),
   whyChoose: z.array(z.string().min(20)).min(3).max(6),
   thingsToConsider: z.array(z.string().min(20)).min(3).max(6),
   bestFitFor: z.array(z.string().min(20)).min(3).max(6),
@@ -103,7 +109,20 @@ const universitySchema = z.object({
   programmes: z.array(programmeSchema).min(1),
 });
 
+const countrySchema = z.object({
+  slug: z.string().min(2),
+  name: z.string().min(2),
+  region: z.string().min(2),
+  summary: z.string().min(120).max(900),
+  whyStudentsChooseIt: z.string().min(80).max(900),
+  climate: z.string().min(20).max(300),
+  currencyCode: z.string().length(3),
+  metaTitle: z.string().min(20).max(70),
+  metaDescription: z.string().min(80).max(170),
+});
+
 const payloadSchema = z.object({
+  countries: z.array(countrySchema).default([]),
   courses: z.array(courseSchema).min(1),
   universities: z.array(universitySchema).min(1),
 });
@@ -138,6 +157,26 @@ async function main() {
   }
 
   const result = await db.transaction(async (tx) => {
+    const countryIds = new Map<string, number>();
+    for (const country of payload.countries) {
+      const [row] = await tx.insert(countries).values({
+        slug: country.slug,
+        name: country.name,
+        region: country.region,
+        summary: country.summary,
+        whyStudentsChooseIt: country.whyStudentsChooseIt,
+        climate: country.climate,
+        currencyCode: country.currencyCode,
+        metaTitle: country.metaTitle,
+        metaDescription: country.metaDescription,
+      }).onConflictDoUpdate({
+        target: countries.slug,
+        set: { ...country, updatedAt: new Date() },
+      }).returning({ id: countries.id });
+      if (!row) throw new Error(`Failed to publish country ${country.slug}`);
+      countryIds.set(country.slug, row.id);
+    }
+
     const courseIds = new Map<string, number>();
     for (const course of payload.courses) {
       const [row] = await tx.insert(courses).values({ ...course, active: true }).onConflictDoUpdate({
@@ -152,12 +191,13 @@ async function main() {
     for (const university of payload.universities) {
       const country = await tx.select({ id: countries.id }).from(countries)
         .where(eq(countries.slug, university.countrySlug)).limit(1);
-      if (!country[0]) throw new Error(`Country does not exist: ${university.countrySlug}`);
+      const countryId = country[0]?.id ?? countryIds.get(university.countrySlug);
+      if (!countryId) throw new Error(`Country does not exist: ${university.countrySlug}`);
 
       const { programmes, ...content } = university;
       const [saved] = await tx.insert(universities).values({
         ...content,
-        countryId: country[0].id,
+        countryId,
         featured: false,
         published: true,
         similarUniversitySlugs: [],
@@ -165,7 +205,7 @@ async function main() {
         researchNotes: "Published through validated multi-stream catalogue payload.",
       }).onConflictDoUpdate({
         target: universities.slug,
-        set: { ...content, countryId: country[0].id, published: true, updatedAt: new Date() },
+        set: { ...content, countryId, published: true, updatedAt: new Date() },
       }).returning({ id: universities.id, slug: universities.slug });
       if (!saved) throw new Error(`Failed to publish university ${university.slug}`);
 
@@ -198,9 +238,11 @@ async function main() {
 
   await pool.end();
   const universitySlugs = payload.universities.map((university) => university.slug);
+  const countrySlugs = payload.countries.map((country) => country.slug);
   await triggerRevalidate(
     [
       "universities",
+      ...countrySlugs.map((slug) => `country:${slug}`),
       ...universitySlugs.flatMap((slug) => [
         `university:${slug}`,
         `university-programs:${slug}`,
@@ -209,7 +251,10 @@ async function main() {
     {
       scope: "catalog",
       slugs: result,
-      paths: universitySlugs.map((slug) => `/university/${slug}`),
+      paths: [
+        ...countrySlugs.map((slug) => `/countries/${slug}`),
+        ...universitySlugs.map((slug) => `/university/${slug}`),
+      ],
     },
   );
   console.log(JSON.stringify({ publishedProgrammes: result }, null, 2));

@@ -26,6 +26,12 @@ Keep it current — see "Keeping this doc current" at the bottom.
   `dietarySupport`, `safetyOverview`, `studentSupport`), array fields (`whyChoose`,
   `thingsToConsider`, `bestFitFor`, `industryPartners`, `recognitionBadges`), `faq`,
   `researchSources` (citations), `lastVerifiedAt`.
+
+  `media_attribution` also carries optional section media under `studentLife` with the keys
+  `campusEnvironment`, `accommodation`, `dailyLiving` and `safetySupport`. Each record stores a
+  Students Traffic Cloudinary URL plus original source, rights basis, checked date and alt text.
+  This uses the existing JSONB field; no section-specific image columns are required. Student-living
+  text is validated against the hard field limits in `docs/university-content-spec.md` before write.
 - **`programOfferings`** — one row per program at a university, FK to `universities` + `courses`.
   Key fields: `slug`, `title`, `durationYears` (⚠️ **integer column** — see Known issues),
   `annualTuitionUsd`/`totalTuitionUsd`/`livingUsd` (normalized USD), `officialFeeCurrency` +

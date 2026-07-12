@@ -1,17 +1,15 @@
 "use client";
 
-import { Suspense, useCallback, useEffect, useRef, useState } from "react";
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   ArrowRight,
-  Cpu,
   ChevronDown,
+  GraduationCap,
   MapPinned,
   Menu,
-  BriefcaseBusiness,
-  Stethoscope,
   University,
   X,
 } from "lucide-react";
@@ -24,6 +22,8 @@ import { cn } from "@/lib/utils";
 import {
   useNavCountries,
 } from "@/components/app/nav-countries-client-provider";
+import { useNavCourses } from "@/components/app/nav-courses-client-provider";
+import { groupProgrammeNavigationCourses } from "@/lib/data/programme-navigation";
 
 function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; showTagline?: boolean }) {
   return (
@@ -48,15 +48,10 @@ function SiteLogo({ onClick, showTagline = false }: { onClick?: () => void; show
   );
 }
 
-const courseNavItems = [
-  { label: "Engineering", icon: Cpu, items: [{ label: "B.Tech / Engineering", href: "/universities" }, { label: "Computer Science", href: "/universities" }, { label: "Engineering universities", href: "/universities" }] },
-  { label: "Medicine", icon: Stethoscope, items: [{ label: "MBBS", href: "/courses/mbbs" }, { label: "BDS", href: "/courses/bds" }, { label: "MD / MS", href: "/courses/medical-pg" }, { label: "Nursing", href: "/courses/nursing" }, { label: "Pharmacy", href: "/universities" }] },
-  { label: "MBA", icon: BriefcaseBusiness, items: [{ label: "MBA", href: "/universities" }, { label: "Business administration", href: "/universities" }, { label: "Management universities", href: "/universities" }] },
-] as const;
-
 function SiteHeaderInner() {
   const pathname = usePathname();
   const navCountries = useNavCountries();
+  const navCourses = useNavCourses();
 
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -67,6 +62,11 @@ function SiteHeaderInner() {
   const courseMenuRef = useRef<HTMLElement | null>(null);
 
   const filteredNavCountries = navCountries;
+  const programmeGroups = useMemo(
+    () => groupProgrammeNavigationCourses(navCourses),
+    [navCourses],
+  );
+  const programsOpen = courseMenuOpen === "programs";
 
 
   useEffect(() => {
@@ -81,13 +81,6 @@ function SiteHeaderInner() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
-
-  useEffect(() => {
-    setMobileOpen(false);
-    setCountriesOpen(false);
-    setCourseMenuOpen(null);
-    setMobileCountriesOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     if (!countriesOpen && !courseMenuOpen) {
@@ -106,6 +99,7 @@ function SiteHeaderInner() {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setCountriesOpen(false);
+        setCourseMenuOpen(null);
       }
     };
 
@@ -264,59 +258,79 @@ function SiteHeaderInner() {
               Universities
             </Link>
 
-            {courseNavItems.map(({ label, icon: Icon, items }) => {
-              const open = courseMenuOpen === label;
-              return (
-                <div key={label} className="pointer-events-auto relative">
-                  <button
-                    type="button"
-                    aria-expanded={open}
-                    aria-haspopup="menu"
-                    onClick={() => {
-                      setCountriesOpen(false);
-                      setCourseMenuOpen(open ? null : label);
-                    }}
-                    className={cn(
-                      "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium whitespace-nowrap transition-colors",
-                      open ? "bg-primary/8 text-primary" : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
-                    )}
-                  >
-                    <Icon className="size-3.5 text-primary/65" />
-                    {label}
-                    <ChevronDown className={cn("size-3.5 transition-transform", open && "rotate-180")} />
-                  </button>
+            <div className="pointer-events-auto relative">
+              <button
+                type="button"
+                aria-expanded={programsOpen}
+                aria-haspopup="menu"
+                onClick={() => {
+                  setCountriesOpen(false);
+                  setCourseMenuOpen(programsOpen ? null : "programs");
+                }}
+                className={cn(
+                  "flex items-center gap-1 rounded-xl px-3.5 py-2 text-sm font-medium transition-colors",
+                  programsOpen ? "bg-primary/8 text-primary" : "text-foreground/70 hover:bg-black/5 hover:text-foreground",
+                )}
+              >
+                <GraduationCap className="size-3.5 text-primary/65" />
+                Programs
+                <ChevronDown className={cn("size-3.5 transition-transform", programsOpen && "rotate-180")} />
+              </button>
 
-                  <div
-                    inert={!open}
-                    className={cn(
-                      "absolute left-1/2 top-full z-[60] w-72 -translate-x-1/2 rounded-2xl border border-border bg-white p-2 shadow-xl transition-all duration-200",
-                      open ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0",
-                    )}
-                  >
-                    <div className="border-b border-border/70 px-3 py-2">
-                      <p className="text-[0.63rem] font-semibold uppercase tracking-[0.16em] text-primary/60">Browse programmes</p>
-                      <p className="mt-1 text-xs text-muted-foreground">Choose a course to start comparing options.</p>
-                    </div>
-                    <div className="py-1">
-                      {items.map((item) => (
-                        <Link
-                          key={item.label}
-                          href={item.href}
-                          onClick={() => setCourseMenuOpen(null)}
-                          className="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-primary/5 hover:text-primary"
-                        >
-                          {item.label}
-                          <ArrowRight className="size-3.5 text-muted-foreground" />
-                        </Link>
-                      ))}
-                    </div>
-                    <Link href="/courses" onClick={() => setCourseMenuOpen(null)} className="flex items-center gap-1 rounded-xl px-3 py-2 text-xs font-semibold text-primary hover:bg-primary/5">
-                      View all courses <ArrowRight className="size-3.5" />
+              <div
+                inert={!programsOpen}
+                className={cn(
+                  "fixed inset-x-0 top-16 z-40 overflow-hidden rounded-b-3xl border border-t-0 border-border bg-white shadow-xl transition-all duration-200",
+                  programsOpen ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0",
+                )}
+              >
+                <div className="mx-auto grid max-w-[1380px] lg:grid-cols-[15rem_minmax(0,1fr)]">
+                  <div className="border-b border-border bg-muted/20 px-6 py-6 lg:border-b-0 lg:border-r">
+                    <p className="flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-accent">
+                      <GraduationCap className="size-3.5" /> Programs
+                    </p>
+                    <h3 className="mt-2 font-display text-3xl font-semibold leading-none tracking-[-0.04em] text-primary">
+                      Find what you want to study.
+                    </h3>
+                    <p className="mt-3 text-xs leading-5 text-muted-foreground">
+                      Browse every published programme, grouped by academic field.
+                    </p>
+                    <Link
+                      href="/courses"
+                      onClick={() => setCourseMenuOpen(null)}
+                      className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+                    >
+                      View all programs <ArrowRight className="size-3.5" />
                     </Link>
                   </div>
+
+                  <div className="max-h-[calc(100vh-7rem)] overflow-y-auto p-5">
+                    <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 xl:grid-cols-3">
+                      {programmeGroups.map((group) => (
+                        <section key={group.stream}>
+                          <p className="border-b border-border pb-2 text-xs font-semibold uppercase tracking-[0.13em] text-primary">
+                            {group.label}
+                          </p>
+                          <div className="mt-2 space-y-0.5">
+                            {group.courses.map((course) => (
+                              <Link
+                                key={course.slug}
+                                href={course.href}
+                                onClick={() => setCourseMenuOpen(null)}
+                                className="flex items-center justify-between gap-3 rounded-lg px-2 py-1.5 text-sm text-foreground transition-colors hover:bg-primary/5 hover:text-primary"
+                              >
+                                <span className="min-w-0 truncate">{course.name}</span>
+                                <ArrowRight className="size-3 shrink-0 text-muted-foreground" />
+                              </Link>
+                            ))}
+                          </div>
+                        </section>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              );
-            })}
+              </div>
+            </div>
 
           </nav>
 
@@ -350,63 +364,6 @@ function SiteHeaderInner() {
           </div>
         </div>
 
-        <div className="hidden">
-          <nav aria-label="Browse by course" className="mx-auto flex h-12 max-w-[1380px] items-center justify-center gap-0.5 px-4">
-            {courseNavItems.map(({ label, icon: Icon, items }) => {
-              const open = courseMenuOpen === label;
-              return (
-                <div key={label} className="relative">
-                  <button
-                    type="button"
-                    aria-expanded={open}
-                    aria-haspopup="menu"
-                    onClick={() => {
-                      setCountriesOpen(false);
-                      setCourseMenuOpen(open ? null : label);
-                    }}
-                    className={cn(
-                      "flex items-center gap-1.5 rounded-lg px-3 py-2 text-[0.78rem] font-medium whitespace-nowrap transition-colors",
-                      open ? "bg-primary/8 text-primary" : "text-foreground/75 hover:bg-black/5 hover:text-foreground",
-                    )}
-                  >
-                    <Icon className="size-3.5 text-primary/65" />
-                    {label}
-                    <ChevronDown className={cn("size-3.5 transition-transform", open && "rotate-180")} />
-                  </button>
-
-                  <div
-                    inert={!open}
-                    className={cn(
-                      "absolute left-1/2 top-full z-[60] w-72 -translate-x-1/2 rounded-2xl border border-border bg-white p-2 shadow-xl transition-all duration-200",
-                      open ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0",
-                    )}
-                  >
-                    <div className="border-b border-border/70 px-3 py-2">
-                      <p className="text-[0.63rem] font-semibold uppercase tracking-[0.16em] text-primary/60">Browse programmes</p>
-                      <p className="mt-1 text-xs text-muted-foreground">Choose a course to start comparing options.</p>
-                    </div>
-                    <div className="py-1">
-                      {items.map((item) => (
-                        <Link
-                          key={item.label}
-                          href={item.href}
-                          onClick={() => setCourseMenuOpen(null)}
-                          className="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-primary/5 hover:text-primary"
-                        >
-                          {item.label}
-                          <ArrowRight className="size-3.5 text-muted-foreground" />
-                        </Link>
-                      ))}
-                    </div>
-                    <Link href="/courses" onClick={() => setCourseMenuOpen(null)} className="flex items-center gap-1 rounded-xl px-3 py-2 text-xs font-semibold text-primary hover:bg-primary/5">
-                      View all courses <ArrowRight className="size-3.5" />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </nav>
-        </div>
       </header>
 
       {/* Mobile overlay */}
@@ -519,65 +476,68 @@ function SiteHeaderInner() {
               </div>
             </div>
 
-            {courseNavItems.map(({ label, icon: Icon, items }) => {
-              const open = courseMenuOpen === label;
-              return (
-                <div key={label} className="order-3 border-b border-border/70 bg-white">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setCourseMenuOpen(open ? null : label);
-                      setMobileCountriesOpen(false);
-                    }}
-                    className="flex w-full items-center justify-between px-5 py-4 text-left text-foreground transition-colors hover:bg-muted/40 sm:px-7"
-                    aria-expanded={open}
-                  >
-                    <span className="flex items-center gap-3">
-                      <span className="flex size-9 items-center justify-center rounded-xl bg-primary/8">
-                        <Icon className="size-4 text-primary" />
-                      </span>
-                      <span className="text-sm font-semibold">{label}</span>
-                    </span>
-                    <ChevronDown
-                      className={cn(
-                        "size-4 text-muted-foreground transition-transform",
-                        open ? "rotate-180" : "",
-                      )}
-                    />
-                  </button>
-                  <div
-                    className={cn(
-                      "grid transition-[grid-template-rows] duration-200 ease-out",
-                      open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
-                    )}
-                  >
-                    <div inert={!open} className="overflow-hidden">
-                      <div className="space-y-0.5 bg-muted/15 px-5 pb-4 pt-1 sm:px-7">
-                        {items.map((item) => (
-                          <Link
-                            key={item.label}
-                            href={item.href}
-                            onClick={closeMobile}
-                            className="flex items-center justify-between rounded-lg py-2.5 pl-12 pr-3 text-sm text-foreground transition-colors hover:bg-muted/40 hover:text-primary"
-                          >
-                            {item.label}
-                            <ArrowRight className="size-3.5 text-muted-foreground" />
-                          </Link>
-                        ))}
-                        <Link
-                          href="/courses"
-                          onClick={closeMobile}
-                          className="flex items-center gap-1 py-2 pl-12 text-xs font-semibold text-primary"
-                        >
-                          View all courses
-                          <ArrowRight className="size-3.5" />
-                        </Link>
-                      </div>
-                    </div>
+            <div className="order-3 border-b border-border/70 bg-white">
+              <button
+                type="button"
+                onClick={() => {
+                  setCourseMenuOpen(programsOpen ? null : "programs");
+                  setMobileCountriesOpen(false);
+                }}
+                className="flex w-full items-center justify-between px-5 py-4 text-left text-foreground transition-colors hover:bg-muted/40 sm:px-7"
+                aria-expanded={programsOpen}
+              >
+                <span className="flex items-center gap-3">
+                  <span className="flex size-9 items-center justify-center rounded-xl bg-primary/8">
+                    <GraduationCap className="size-4 text-primary" />
+                  </span>
+                  <span className="text-sm font-semibold">Programs</span>
+                </span>
+                <ChevronDown
+                  className={cn(
+                    "size-4 text-muted-foreground transition-transform",
+                    programsOpen ? "rotate-180" : "",
+                  )}
+                />
+              </button>
+              <div
+                className={cn(
+                  "grid transition-[grid-template-rows] duration-200 ease-out",
+                  programsOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+                )}
+              >
+                <div inert={!programsOpen} className="overflow-hidden">
+                  <div className="space-y-5 bg-muted/15 px-5 pb-4 pt-3 sm:px-7">
+                    {programmeGroups.map((group) => (
+                      <section key={group.stream}>
+                        <p className="px-3 text-xs font-semibold uppercase tracking-[0.12em] text-primary">
+                          {group.label}
+                        </p>
+                        <div className="mt-1 space-y-0.5">
+                          {group.courses.map((course) => (
+                            <Link
+                              key={course.slug}
+                              href={course.href}
+                              onClick={closeMobile}
+                              className="flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-muted/40 hover:text-primary"
+                            >
+                              <span>{course.name}</span>
+                              <ArrowRight className="size-3.5 shrink-0 text-muted-foreground" />
+                            </Link>
+                          ))}
+                        </div>
+                      </section>
+                    ))}
+                    <Link
+                      href="/courses"
+                      onClick={closeMobile}
+                      className="flex items-center gap-1 px-3 py-2 text-xs font-semibold text-primary"
+                    >
+                      View all programs <ArrowRight className="size-3.5" />
+                    </Link>
                   </div>
                 </div>
-              );
-            })}
+              </div>
+            </div>
 
           </nav>
 

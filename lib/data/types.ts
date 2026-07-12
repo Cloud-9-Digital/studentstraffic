@@ -108,6 +108,16 @@ export type University = {
   mediaAttribution?: {
     logo?: { sourceUrl: string; rights: string; checkedAt: string };
     cover?: { sourceUrl: string; rights: string; checkedAt: string; altText: string };
+    studentLife?: Partial<Record<
+      "campusEnvironment" | "accommodation" | "dailyLiving" | "safetySupport",
+      {
+        url: string;
+        sourceUrl: string;
+        rights: string;
+        checkedAt: string;
+        altText: string;
+      }
+    >>;
   };
   establishedYear: number;
   summary: string;
