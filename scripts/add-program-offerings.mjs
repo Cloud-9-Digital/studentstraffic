@@ -5,12 +5,11 @@
  *
  * Run: node scripts/add-program-offerings.mjs --file <programmes.json>
  */
+import "./lib/load-script-env.mjs";
+
 import { readFileSync } from "node:fs";
 import { neonConfig, Pool } from "@neondatabase/serverless";
 import { WebSocket } from "ws";
-import dotenv from "dotenv";
-
-dotenv.config();
 neonConfig.webSocketConstructor = WebSocket;
 
 function parseArgs(argv) {

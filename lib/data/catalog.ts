@@ -58,6 +58,7 @@ export function cityNameToSlug(city: string) {
 import { finderPageSize } from "@/lib/constants";
 import { getFinderSort } from "@/lib/filters";
 import { applyUniversityContentOverride } from "@/lib/data/university-content-overrides";
+import { getUniversityDisplayName } from "@/lib/university-presentation";
 type CatalogSnapshot = {
   countries: Country[];
   courses: Course[];
@@ -359,7 +360,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       applyUniversityContentOverride({
         slug: university.slug,
         countrySlug: countrySlugsById.get(university.countryId) ?? "",
-        name: university.name,
+        name: getUniversityDisplayName(university.name),
         city: university.city,
         type: university.type as University["type"],
         establishedYear: university.establishedYear,
@@ -954,7 +955,7 @@ async function queryFinderProgramsFromDatabase(
     programs: rows.map((row) => ({
       university: {
         slug: row.universitySlug,
-        name: row.universityName,
+        name: getUniversityDisplayName(row.universityName),
         city: row.universityCity,
         type: row.universityType as FinderCardProgram["university"]["type"],
         logoUrl: row.universityLogoUrl ?? undefined,
@@ -1062,7 +1063,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
   const university = applyUniversityContentOverride({
     slug: row.universitySlug,
     countrySlug: row.countrySlug,
-    name: row.universityName,
+    name: getUniversityDisplayName(row.universityName),
     city: row.universityCity,
     type: row.universityType,
     logoUrl: row.universityLogoUrl ?? undefined,
@@ -1658,16 +1659,10 @@ export async function getProgramsForUniversity(universitySlug: string) {
 }
 
 export async function getProgramBySlug(programSlug: string) {
-  "use cache";
-
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("finder");
-  cacheTag("program-offerings");
-  cacheTag("courses");
-  cacheTag("universities");
-  cacheTag(`program:${programSlug}`);
-
+  // Do not persist negative detail lookups independently of the rendered
+  // route. A programme may be published after the deployment was built; the
+  // regenerated route must read that row immediately. Next/Vercel caches the
+  // completed HTML route, so this query is not executed on every page view.
   const databasePrograms = await selectFinderProgramsFromDatabase(
     and(
       eq(programOfferingsTable.published, true),

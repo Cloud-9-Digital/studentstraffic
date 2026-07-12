@@ -21,6 +21,20 @@ are defined in [`programme-taxonomy.md`](./programme-taxonomy.md) and the execut
 mapping it to an approved canonical slug. The registry is the first expansion scope, not permission
 to populate course rows directly; publication still goes through the complete validated workflow.
 
+**2026-07-12 postgraduate expansion:** selected universities must be researched for both UG and PG
+programmes. The canonical registry now includes common M.Sc. computing, M.E./M.Tech Engineering,
+Engineering Management, non-MBA Business master's and MBA programme groups. Agents must publish
+verified master's programmes when an exact mapping exists and hold only genuinely unmatched
+specialisations for taxonomy review.
+
+**2026-07-12 global taxonomy expansion:** publication is no longer limited to medicine,
+engineering and business. The executable registry now supports the major worldwide families in law,
+architecture, arts/humanities, sciences, mathematics, economics/commerce, design, psychology,
+allied health, media, environment, agriculture, veterinary science, education, hospitality,
+aviation/maritime/logistics, public policy/international relations and information systems, plus
+doctoral and professional awards. Research complete portfolios, but continue exact matching and use
+the taxonomy-gap register for interdisciplinary or uncommon awards.
+
 The same registry now also covers the existing MBBS, Medical PG, B.Sc. Nursing and Pharmacy scope.
 A live-title audit found that the current `medical-pg` offerings are generic university-level
 descriptions rather than named programmes, and the `pharmacy` course mixes bachelor and integrated

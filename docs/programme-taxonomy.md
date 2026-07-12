@@ -1,7 +1,8 @@
 # Canonical Programme Taxonomy
 
-This document defines how Students Traffic names and maps Medicine, Nursing, Pharmacy, Engineering
-and Business/MBA programmes.
+This document defines how Students Traffic names and maps the major worldwide university programme
+families across health, technology, business, law, architecture, arts, sciences, social sciences,
+design, education, agriculture, hospitality, public policy and professional study.
 The executable registry is `lib/data/program-taxonomy.ts`. New university offerings must select a
 canonical programme from that registry; agents must not invent catalogue names during research.
 
@@ -34,9 +35,31 @@ discovery aliases for readers who use that terminology.
    programme or award. An elective, pathway or concentration inside a general MBA remains mapped to
    `mba` and is described in the programme content.
 5. If no approved programme is accurate, hold the offering and propose a taxonomy addition. Do not
-   use the nearest incorrect programme.
-6. Adding a canonical programme requires a stable slug, Indian-facing name, short name, level,
+   use the nearest incorrect programme. Record the university, exact official programme title,
+   award, level, proposed canonical name/slug, primary source and mismatch reason in
+   `research/programme-taxonomy-gaps.md`, and reference that row in the university run report.
+6. Adding a canonical programme requires a stable slug, globally understandable name, short name, level,
    stream, discipline, aliases, documentation review and a taxonomy test run.
+
+## Qualification levels
+
+The executable registry supports foundation, certificate, diploma, associate, bachelor's,
+integrated-master's, postgraduate certificate, postgraduate diploma, master's, doctorate, residency
+and professional qualifications. A level describes the actual award; agents must not infer it from
+programme duration or entry requirements.
+
+## Global programme-family coverage
+
+The registry includes common UG and PG families for Architecture and Planning, Law, Arts and
+Humanities, Social Sciences, Natural Sciences, Mathematics and Statistics, Economics and Commerce,
+Design and Creative Arts, Psychology, Public Health and Allied Health, Media and Communication,
+Environment and Sustainability, Agriculture and Forestry, Veterinary Science, Education,
+Hospitality and Tourism, Aviation/Maritime/Logistics, Public Policy/International Relations and
+Information Systems, alongside the existing Medicine, Engineering, Computing and Business scope.
+
+This is broad coverage, not permission to approximate. Universities often use interdisciplinary or
+regulated titles that do not fit an existing family exactly. Record those in
+`research/programme-taxonomy-gaps.md` for review rather than weakening matching accuracy.
 
 ## Current medical catalogue decisions
 
@@ -61,13 +84,18 @@ discovery aliases for readers who use that terminology.
 - Bachelor of Pharmacy and an integrated/single-cycle Master of Pharmacy are separate canonical
   programmes. They must not continue to share one generic `pharmacy` mapping.
 
-## Initial approved scope
+## Approved postgraduate scope
 
-The first registry intentionally covers undergraduate medicine, common MD/MS specialities, B.Sc.
-Nursing, bachelor and integrated-master Pharmacy programmes, common Engineering bachelor's
-programmes and MBA specialisations. It does not yet include super-speciality medicine, every
-Engineering master's degree or non-MBA business master's degree. Add those only when a selected
-university requires them.
+Postgraduate programmes are a first-class catalogue scope, not an optional extension. The registry
+covers common M.Sc. computing programmes, discipline-specific M.E./M.Tech Engineering groups,
+Engineering Management, non-MBA Business master's programmes, MBA specialisations, Medical PG /
+Residency specialities and integrated-master Pharmacy programmes.
+
+Research and publish both undergraduate and postgraduate programmes offered by the selected
+university when each programme has an exact approved canonical match and current primary-source
+evidence. Do not omit a valid master's programme merely because the university also offers a related
+bachelor's degree. Equally, do not map a specialised master's programme to a broad or inaccurate
+canonical label. Hold it and propose a reviewed taxonomy addition when no exact match exists.
 
 Programme pages and metadata must use the official programme title where the page describes one
 specific university offering. Catalogue and discovery pages may use the canonical programme name.

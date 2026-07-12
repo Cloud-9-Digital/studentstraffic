@@ -9,6 +9,7 @@ import { ShortlistButton } from "@/components/site/shortlist-button";
 import { ShareButton } from "@/components/site/university/share-button";
 import { UniversityLogoBadge } from "@/components/site/university/shared";
 import type { Author } from "@/lib/authors";
+import { getUniversityHeroSummary } from "@/lib/university-presentation";
 
 function formatVerifiedDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -41,6 +42,8 @@ export function UniversityHeroSection({
   lastVerifiedAt: string;
   author?: Author | null;
 }) {
+  const heroSummary = getUniversityHeroSummary(universitySummary);
+
   return (
     <div className="relative overflow-hidden bg-surface-dark">
       <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-surface-dark to-surface-dark-2" />
@@ -82,7 +85,7 @@ export function UniversityHeroSection({
                   : universityName}
               </h1>
               <p className="max-w-2xl text-sm leading-7 text-white/65 md:text-base md:leading-8">
-                {universitySummary}
+                {heroSummary}
               </p>
               <div className="flex items-center gap-2 pt-1 text-xs text-white/40">
                 <ShieldCheck className="size-3.5 shrink-0 text-accent/70" />

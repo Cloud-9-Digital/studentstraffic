@@ -162,6 +162,14 @@ export async function POST(request: NextRequest) {
       tags.add(`program:${slug}`);
       staticPaths.add(`/${slug}`);
     }
+
+    if (slugs.length > 0) {
+      // With Cache Components, the root dynamic route can retain the
+      // build-time fallback shell even after an exact path is expired. Expire
+      // that rendered shell as well. Programme data remains slug-scoped, so
+      // unrelated pages reuse their existing data caches when regenerated.
+      dynamicPagePaths.add("/[slug]");
+    }
   }
 
   if (tags.size === 0 && staticPaths.size === 0 && dynamicPagePaths.size === 0) {

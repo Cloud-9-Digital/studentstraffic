@@ -1,4 +1,4 @@
-import "dotenv/config";
+import "./lib/load-script-env.mjs";
 
 import { eq } from "drizzle-orm";
 
@@ -734,10 +734,18 @@ async function main() {
     console.warn("Skipping Typesense sync: TYPESENSE_HOST/TYPESENSE_API_KEY are not configured.");
   }
 
-  await triggerRevalidate([], {
-    scope: "catalog",
-    slugs: publishedProgramSlugs,
-  });
+  await triggerRevalidate(
+    [
+      "universities",
+      `university:${savedUniversity.slug}`,
+      `university-programs:${savedUniversity.slug}`,
+    ],
+    {
+      scope: "catalog",
+      slugs: publishedProgramSlugs,
+      paths: [`/university/${savedUniversity.slug}`],
+    },
+  );
 }
 
 main().catch((error) => {

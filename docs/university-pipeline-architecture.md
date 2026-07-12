@@ -217,9 +217,22 @@ for the long catalog cache profile to expire.
 
 Validated catalogue publishers use slug-scoped revalidation. After the transaction commits, they
 send only the programme slugs written by that batch to `/api/revalidate?scope=catalog`. The endpoint
-expires `program:<slug>` and the exact `/<slug>` page for each programme; it must not invalidate the
-catalogue-wide tags or every dynamic catalogue route. The first request regenerates the affected page
-and stores it under the normal long-lived catalogue cache, while unrelated programme pages remain hot.
+expires `program:<slug>`, the exact `/<slug>` page and the root dynamic route shell. The shell expiry
+is required because Cache Components can otherwise retain the build-time not-found fallback for a
+new root slug. It must not invalidate catalogue-wide data tags. The first request regenerates the
+affected page and Vercel caches the completed HTML; unrelated catalogue data caches remain hot, so
+programme detail queries do not run on every visit.
+
+When the same transaction creates or enriches a university, the publisher also expires the affected
+`/university/<slug>` path, `university:<slug>` and `university-programs:<slug>` entries. The shared
+`universities` snapshot is refreshed once so a newly created university can be discovered; this does
+not make university pages query the database on every request.
+
+Standalone publishers must import `scripts/lib/load-script-env.mjs` before modules that read
+`lib/env.ts`. The bootstrap uses `@next/env` so `.env.local` overrides `.env`, while values explicitly
+provided by the shell or CI remain authoritative. Do not replace it with body-level `dotenv.config()`:
+ES module dependencies are evaluated before that body runs, which can make `lib/env.ts` capture stale
+values and silently skip production revalidation.
 
 Migration `0061_remove_duplicate_legacy_content_columns` removed the unused duplicate medical-only
 database columns left behind by the stream-neutral schema migration. Research JSON/source keys may

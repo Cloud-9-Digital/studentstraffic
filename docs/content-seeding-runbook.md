@@ -74,9 +74,9 @@ record `status=published`, `published_at`, the final programme count and payload
 
 ### 2. Use the canonical taxonomy
 
-For Engineering and Business/MBA offerings, use the approved registry in
+For every programme stream and qualification level, use the approved registry in
 [`programme-taxonomy.md`](./programme-taxonomy.md) and `lib/data/program-taxonomy.ts`. Store the
-university's exact official programme title separately from the Indian-facing canonical programme
+university's exact official programme title separately from the global canonical programme
 name. An agent must never create a new catalogue name while publishing a university.
 
 Do not create one generic course called `engineering` when the source distinguishes Computer,
@@ -84,12 +84,20 @@ Mechanical, Civil or Electrical Engineering. Course rows should represent the de
 
 Examples:
 
-- `beng-computer-science`
-- `beng-mechanical-engineering`
-- `beng-civil-engineering`
+- `be-btech-computer-science-engineering`
+- `be-btech-mechanical-engineering`
+- `msc-computer-science`
+- `me-mtech-civil-engineering`
 - `msc-engineering-management`
-- `business-analytics`
+- `msc-business-analytics`
 - `mba`
+
+Research the university's complete supported undergraduate and postgraduate portfolio. Master's
+programmes are important catalogue records and must not be omitted simply because a bachelor's
+programme has already been published. Publish only exact canonical matches and retain the official
+award title separately; record unmatched specialisations in
+`research/programme-taxonomy-gaps.md` with the university and official programme source, then hold
+them for taxonomy review.
 
 Before creating a course, check for an existing equivalent. Do not create duplicate slugs or two
 course rows that mean the same thing. A program offering must map to exactly one canonical course.

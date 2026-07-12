@@ -1,4 +1,4 @@
-import "dotenv/config";
+import "./lib/load-script-env.mjs";
 
 import { readFile } from "node:fs/promises";
 import { eq } from "drizzle-orm";
@@ -9,7 +9,11 @@ import { z } from "zod";
 
 import { countries, courses, programOfferings, universities } from "@/lib/db/schema";
 import * as schema from "@/lib/db/schema";
-import { isApprovedCanonicalProgramme } from "@/lib/data/program-taxonomy";
+import {
+  isApprovedCanonicalProgramme,
+  programmeLevels,
+  programmeStreams,
+} from "@/lib/data/program-taxonomy";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
 
 const sourceSchema = z.object({
@@ -29,8 +33,8 @@ const courseSchema = z.object({
   slug: z.string().min(2),
   name: z.string().min(2),
   shortName: z.string().min(2),
-  stream: z.enum(["engineering", "business"]),
-  level: z.enum(["bachelors", "masters"]),
+  stream: z.enum(programmeStreams),
+  level: z.enum(programmeLevels),
   discipline: z.string().min(2),
   aliases: z.array(z.string().min(2)),
   displayOrder: z.number().int().nonnegative(),
@@ -193,7 +197,21 @@ async function main() {
   });
 
   await pool.end();
-  await triggerRevalidate([], { scope: "catalog", slugs: result });
+  const universitySlugs = payload.universities.map((university) => university.slug);
+  await triggerRevalidate(
+    [
+      "universities",
+      ...universitySlugs.flatMap((slug) => [
+        `university:${slug}`,
+        `university-programs:${slug}`,
+      ]),
+    ],
+    {
+      scope: "catalog",
+      slugs: result,
+      paths: universitySlugs.map((slug) => `/university/${slug}`),
+    },
+  );
   console.log(JSON.stringify({ publishedProgrammes: result }, null, 2));
 }
 
