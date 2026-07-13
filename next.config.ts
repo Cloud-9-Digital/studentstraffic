@@ -6,6 +6,7 @@ const mediaHostnames = (process.env.MEDIA_HOSTNAMES ?? "")
   .map((hostname) => hostname.trim())
   .filter(Boolean);
 const isDevelopment = process.env.NODE_ENV !== "production";
+const shouldUploadSentrySourceMaps = Boolean(process.env.SENTRY_AUTH_TOKEN);
 const contentSecurityPolicy = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com${
@@ -188,14 +189,14 @@ export default withSentryConfig(nextConfig, {
   silent: !process.env.CI,
 
   // Upload source maps during production builds
-  widenClientFileUpload: true,
+  widenClientFileUpload: shouldUploadSentrySourceMaps,
 
   // Route browser requests to Sentry through a Next.js rewrite
   tunnelRoute: "/monitoring",
 
   // Source maps configuration
   sourcemaps: {
-    disable: false,
+    disable: !shouldUploadSentrySourceMaps,
   },
 
   webpack: {
