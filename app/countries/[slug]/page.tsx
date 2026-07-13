@@ -30,6 +30,7 @@ import { Button } from "@/components/ui/button";
 import { CounsellingCtaButton } from "@/components/site/counselling-cta-button";
 import { catalogReviewedAt } from "@/lib/content-governance";
 import {
+  getCountries,
   getCountryBySlug,
   getLandingPageBySlug,
   getProgramsForCountry,
@@ -58,6 +59,7 @@ import { getCountryVisaContent } from "@/lib/data/country-visa";
 import { getCountryRegulatoryAdvisory } from "@/lib/data/regulatory-advisories";
 import { getCountryFlagCode } from "@/lib/university-media";
 import { formatCurrencyUsd, formatProgramMedium, hasPublishedUsdAmount } from "@/lib/utils";
+import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 // Generic fallback used by getCountryHeroImage() when a country has no
 // dedicated hero photo yet — matches the constant in lib/country-media.ts.
@@ -65,6 +67,14 @@ import { formatCurrencyUsd, formatProgramMedium, hasPublishedUsdAmount } from "@
 // treatment instead of showing an unrelated stock photo (see AGENTS.md image
 // rules: no generic/irrelevant imagery on the hero).
 const GENERIC_COUNTRY_HERO_IMAGE_URL = "/images/home/country-options.jpg";
+
+export async function generateStaticParams() {
+  const countries = await getCountries();
+  return ensureNonEmptyStaticParams(
+    countries.map((country) => ({ slug: country.slug })),
+    { slug: "__country-fallback__" },
+  );
+}
 
 async function getCountryPageData(slug: string) {
   "use cache";

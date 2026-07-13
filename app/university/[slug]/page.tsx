@@ -30,6 +30,7 @@ import {
   getCountryBySlug,
   getProgramsForCountry,
   getProgramsForUniversity,
+  getUniversities,
   getUniversityBySlug,
 } from "@/lib/data/catalog";
 import { getCityHref, getCountryHref, getUniversityProgramHref } from "@/lib/routes";
@@ -53,6 +54,26 @@ import {
 } from "@/lib/university-media";
 import { parseUniversitySlug } from "@/lib/university-sections";
 import { hasPublishedUsdAmount } from "@/lib/utils";
+import { ensureNonEmptyStaticParams } from "@/lib/static-params";
+
+// Cap build-time enumeration so build times stay bounded as the catalog grows —
+// this project uses Cache Components, where slugs outside generateStaticParams
+// already render on-demand by default (dynamicParams isn't available under
+// cacheComponents) and get cached by the existing cacheLife("hours")/cacheTag()
+// machinery below.
+const MAX_STATIC_UNIVERSITY_PARAMS = 300;
+
+export async function generateStaticParams() {
+  const universities = await getUniversities();
+  const capped = [...universities]
+    .sort((a, b) => Number(b.featured) - Number(a.featured))
+    .slice(0, MAX_STATIC_UNIVERSITY_PARAMS);
+  const params: { slug: string }[] = [];
+  for (const university of capped) {
+    params.push({ slug: university.slug });
+  }
+  return ensureNonEmptyStaticParams(params, { slug: "__catalog-fallback__" });
+}
 
 // Redirects for the pre-2026-07-08 URL structure, where Academics/Admissions/Eligibility/Fees/
 // Recognition and Country/City lived as /university/[slug]-{section} suffixes on this page. Those

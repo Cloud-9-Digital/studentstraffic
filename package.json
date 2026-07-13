@@ -32,6 +32,7 @@
     "@auth/core": "^0.41.2",
     "@auth/drizzle-adapter": "^1.11.2",
     "@neondatabase/serverless": "^1.0.2",
+    "@sentry/nextjs": "^10.53.1",
     "@tailwindcss/typography": "^0.5.19",
     "@uiw/react-md-editor": "^4.1.0",
     "@vercel/analytics": "^2.0.1",
