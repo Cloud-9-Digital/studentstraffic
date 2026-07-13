@@ -11,12 +11,9 @@ import {
   getPublishedBlogPostMetadata,
 } from "@/lib/data/catalog";
 import { getTamilNaduCityPages } from "@/lib/data/tamil-nadu-local";
-import { getAllComparisonPages, getBudgetGuides } from "@/lib/discovery-pages";
 import {
-  getBudgetGuideHref,
   getBudgetIndexHref,
   getCompareIndexHref,
-  getComparisonHref,
   getCountriesIndexHref,
   getCountryHref,
   getCoursesIndexHref,
@@ -33,14 +30,11 @@ function uniqueUrls(urls: Array<string | undefined>) {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const tamilNaduCityPages = getTamilNaduCityPages();
-  const [snapshot, landingPages, comparisonPages, budgetGuides, publishedPosts] =
-    await Promise.all([
-      getCatalogSnapshot(),
-      getAllLandingPages(),
-      getAllComparisonPages(),
-      getBudgetGuides(),
-      getPublishedBlogPostMetadata(),
-    ]);
+  const [snapshot, landingPages, publishedPosts] = await Promise.all([
+    getCatalogSnapshot(),
+    getAllLandingPages(),
+    getPublishedBlogPostMetadata(),
+  ]);
   const { countries, courses, universities, programOfferings } = snapshot;
   const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
   const courseBySlug = new Map(courses.map((course) => [course.slug, course]));
@@ -509,63 +503,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         page.courseSlug,
         page.countrySlug
       ),
-    })),
-    ...comparisonPages.map((guide) => ({
-      url: absoluteUrl(getComparisonHref(guide.slug)),
-      priority: 0.78,
-      changeFrequency: "weekly" as const,
-      lastModified: getLatestDate([
-        catalogReviewedAt,
-        guide.kind === "university"
-          ? guide.left.course.updatedAt
-          : guide.course.updatedAt,
-        ...(guide.kind === "university"
-          ? [
-              guide.right.course.updatedAt,
-              guide.left.university.updatedAt,
-              guide.right.university.updatedAt,
-              guide.left.offering.updatedAt,
-              guide.right.offering.updatedAt,
-            ]
-          : guide.kind === "country"
-            ? [
-                guide.leftCountry.updatedAt,
-                guide.rightCountry.updatedAt,
-                ...guide.leftPrograms.flatMap((program) => [
-                  program.university.updatedAt,
-                  program.offering.updatedAt,
-                ]),
-                ...guide.rightPrograms.flatMap((program) => [
-                  program.university.updatedAt,
-                  program.offering.updatedAt,
-                ]),
-              ]
-            : [
-                guide.leftCountry.updatedAt,
-                guide.rightCountry.updatedAt,
-                ...guide.leftPrograms.flatMap((program) => [
-                  program.university.updatedAt,
-                  program.offering.updatedAt,
-                ]),
-                ...guide.rightPrograms.flatMap((program) => [
-                  program.university.updatedAt,
-                  program.offering.updatedAt,
-                ]),
-              ]),
-      ]),
-    })),
-    ...budgetGuides.map((guide) => ({
-      url: absoluteUrl(getBudgetGuideHref(guide.slug)),
-      priority: 0.78,
-      changeFrequency: "weekly" as const,
-      lastModified: getLatestDate([
-        catalogReviewedAt,
-        guide.course.updatedAt,
-        ...guide.programs.flatMap((program) => [
-          program.university.updatedAt,
-          program.offering.updatedAt,
-        ]),
-      ]),
     })),
     ...tamilNaduCityPages.map((page) => ({
       url: absoluteUrl(getTamilNaduCityHref(page.slug)),
