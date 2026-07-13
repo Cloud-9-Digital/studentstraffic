@@ -15,6 +15,8 @@ import {
   programmeStreams,
 } from "@/lib/data/program-taxonomy";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
+import { env } from "@/lib/env";
+import { syncTypesenseSearchForUniversities } from "@/lib/search/admin";
 
 const sourceSchema = z.object({
   label: z.string().min(2),
@@ -239,6 +241,10 @@ async function main() {
   await pool.end();
   const universitySlugs = payload.universities.map((university) => university.slug);
   const countrySlugs = payload.countries.map((country) => country.slug);
+  if (env.hasTypesenseAdmin) {
+    const searchResult = await syncTypesenseSearchForUniversities(universitySlugs);
+    console.log(`Typesense search sync complete. Upserted ${searchResult.imported} affected documents.`);
+  }
   await triggerRevalidate(
     [
       "universities",

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { connection } from "next/server";
 import { ArrowRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -44,8 +43,6 @@ const courseThemes: Record<string, { card: string; action: string }> = {
 };
 
 export default async function BudgetIndexPage() {
-  await connection();
-
   const guides = await getBudgetGuideSummaries();
 
   const budgetCards = [...guides]

@@ -51,7 +51,7 @@ function validateEntry(entry, index) {
   }
 }
 
-async function revalidateCatalogCache() {
+async function revalidateCatalogCache({ programSlugs, universitySlugs }) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
   const secret = process.env.REVALIDATE_SECRET;
 
@@ -63,8 +63,15 @@ async function revalidateCatalogCache() {
   }
 
   const endpoint = new URL("/api/revalidate?scope=catalog", siteUrl);
-  for (const tag of ["catalog", "universities", "program-offerings", "courses"]) {
+  for (const tag of universitySlugs.flatMap((slug) => [
+    `university:${slug}`,
+    `university-programs:${slug}`,
+  ])) {
     endpoint.searchParams.append("tag", tag);
+  }
+  for (const slug of programSlugs) endpoint.searchParams.append("slug", slug);
+  for (const slug of universitySlugs) {
+    endpoint.searchParams.append("path", `/university/${slug}`);
   }
 
   const response = await fetch(endpoint, {
@@ -94,41 +101,53 @@ async function main() {
 
   const pool = new Pool({ connectionString: process.env.DATABASE_URL });
   const client = await pool.connect();
+  const requestedUniversitySlugs = [...new Set(entries.map((entry) => entry.universitySlug))];
+  const requestedCourseSlugs = [...new Set(entries.map((entry) => entry.courseSlug))];
+  const requestedProgramSlugs = entries.map(
+    (entry) => entry.slug ?? createSlug(`${entry.title}-${entry.universitySlug}`),
+  );
 
   try {
     await client.query("BEGIN");
 
     try {
+      const [universityResult, courseResult, existingResult] = await Promise.all([
+        client.query(
+          `SELECT id, slug FROM universities WHERE slug = ANY($1::text[]) AND published = true`,
+          [requestedUniversitySlugs],
+        ),
+        client.query(
+          `SELECT id, slug FROM courses WHERE slug = ANY($1::text[]) AND active = true`,
+          [requestedCourseSlugs],
+        ),
+        client.query(
+          `SELECT id, slug, university_id FROM program_offerings WHERE slug = ANY($1::text[])`,
+          [requestedProgramSlugs],
+        ),
+      ]);
+      const universityIds = new Map(universityResult.rows.map((row) => [row.slug, row.id]));
+      const courseIds = new Map(courseResult.rows.map((row) => [row.slug, row.id]));
+      const existingBySlug = new Map(existingResult.rows.map((row) => [row.slug, row]));
+
       for (const [index, entry] of entries.entries()) {
-        const universityResult = await client.query(
-          `SELECT id FROM universities WHERE slug = $1 AND published = true`,
-          [entry.universitySlug],
-        );
-        if (universityResult.rowCount === 0) {
+        const universityId = universityIds.get(entry.universitySlug);
+        if (!universityId) {
           throw new Error(
             `Entry ${index + 1}: no published university '${entry.universitySlug}'`,
           );
         }
 
-        const courseResult = await client.query(
-          `SELECT id FROM courses WHERE slug = $1 AND active = true`,
-          [entry.courseSlug],
-        );
-        if (courseResult.rowCount === 0) {
+        const courseId = courseIds.get(entry.courseSlug);
+        if (!courseId) {
           throw new Error(
             `Entry ${index + 1}: '${entry.courseSlug}' is not an active canonical programme`,
           );
         }
 
-        const universityId = universityResult.rows[0].id;
-        const courseId = courseResult.rows[0].id;
         const slug = entry.slug ?? createSlug(`${entry.title}-${entry.universitySlug}`);
-        const existing = await client.query(
-          `SELECT id, university_id FROM program_offerings WHERE slug = $1`,
-          [slug],
-        );
+        const existing = existingBySlug.get(slug);
 
-        if (existing.rowCount > 0 && existing.rows[0].university_id !== universityId) {
+        if (existing && existing.university_id !== universityId) {
           throw new Error(`Entry ${index + 1}: slug '${slug}' belongs to another university`);
         }
 
@@ -154,7 +173,7 @@ async function main() {
           entry.professionalExamSupport ?? [],
         ];
 
-        if (existing.rowCount > 0) {
+        if (existing) {
           await client.query(
             `UPDATE program_offerings SET
               university_id=$1, course_id=$2, slug=$3, title=$4, duration_years=$5,
@@ -165,19 +184,25 @@ async function main() {
               audience_eligibility=$18, professional_exam_support=$19,
               published=true, updated_at=NOW()
             WHERE id=$20`,
-            [...values, existing.rows[0].id],
+            [...values, existing.id],
           );
         } else {
-          await client.query(
+          const inserted = await client.query(
             `INSERT INTO program_offerings (
               university_id, course_id, slug, title, duration_years, annual_tuition_usd,
               total_tuition_usd, living_usd, official_fee_currency,
               official_annual_tuition_amount, official_total_tuition_amount,
               official_program_url, medium, intake_months, fee_verified_at, fee_notes,
               source_urls, audience_eligibility, professional_exam_support, published
-            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,true)`,
+            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,true)
+            RETURNING id`,
             values,
           );
+          existingBySlug.set(slug, {
+            id: inserted.rows[0].id,
+            slug,
+            university_id: universityId,
+          });
         }
       }
 
@@ -187,7 +212,10 @@ async function main() {
       throw error;
     }
 
-    await revalidateCatalogCache();
+    await revalidateCatalogCache({
+      programSlugs: requestedProgramSlugs,
+      universitySlugs: requestedUniversitySlugs,
+    });
     console.log(`Published/updated ${entries.length} programme offerings atomically.`);
   } finally {
     client.release();

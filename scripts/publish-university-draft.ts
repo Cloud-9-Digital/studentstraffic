@@ -12,7 +12,7 @@ import {
   universityResearchQueue,
 } from "@/lib/db/schema";
 import { env } from "@/lib/env";
-import { syncTypesenseSearchIndex } from "@/lib/search/admin";
+import { syncTypesenseSearchForUniversities } from "@/lib/search/admin";
 import { isApprovedCanonicalProgramme } from "@/lib/data/program-taxonomy";
 import { createSlug } from "@/lib/utils";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
@@ -728,8 +728,8 @@ async function main() {
   console.log(`Queue item updated: ${record.queueId}`);
 
   if (env.hasTypesenseAdmin) {
-    const result = await syncTypesenseSearchIndex();
-    console.log(`Typesense search sync complete. Indexed ${result.imported} documents.`);
+    const result = await syncTypesenseSearchForUniversities([savedUniversity.slug]);
+    console.log(`Typesense search sync complete. Upserted ${result.imported} affected documents.`);
   } else {
     console.warn("Skipping Typesense sync: TYPESENSE_HOST/TYPESENSE_API_KEY are not configured.");
   }

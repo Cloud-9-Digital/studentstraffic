@@ -9,7 +9,6 @@ import type {
   University,
 } from "@/lib/data/types";
 import type { StudyAbroadGuidePageProps } from "@/components/site/study-abroad-guide-page";
-import { buildCatalogIndexes } from "@/lib/catalog/indexes";
 import {
   getCountryHref,
   getCourseHref,
@@ -23,11 +22,53 @@ import {
   hasPublishedUsdAmount,
 } from "@/lib/utils";
 
+export type SearchCountry = Pick<
+  Country,
+  "slug" | "name" | "region" | "summary" | "whyStudentsChooseIt" | "climate" | "currencyCode"
+>;
+export type SearchCourse = Pick<
+  Course,
+  "slug" | "name" | "shortName" | "durationYears" | "summary"
+>;
+export type SearchUniversity = Pick<
+  University,
+  | "slug"
+  | "countrySlug"
+  | "name"
+  | "city"
+  | "summary"
+  | "featured"
+  | "campusLifestyle"
+  | "cityProfile"
+  | "practicalExposure"
+  | "safetyOverview"
+  | "studentSupport"
+  | "whyChoose"
+  | "thingsToConsider"
+  | "bestFitFor"
+  | "industryPartners"
+  | "recognitionBadges"
+  | "faq"
+>;
+export type SearchProgramOffering = Pick<
+  ProgramOffering,
+  | "slug"
+  | "universitySlug"
+  | "courseSlug"
+  | "title"
+  | "annualTuitionUsd"
+  | "medium"
+  | "professionalExamSupport"
+  | "teachingPhases"
+  | "intakeMonths"
+  | "featured"
+>;
+
 type SearchCatalogInput = {
-  countries: Country[];
-  courses: Course[];
-  universities: University[];
-  programOfferings: ProgramOffering[];
+  countries: SearchCountry[];
+  courses: SearchCourse[];
+  universities: SearchUniversity[];
+  programOfferings: SearchProgramOffering[];
   landingPages: LandingPage[];
   studyAbroadGuides?: StudyAbroadGuidePageProps[];
   blogPosts?: BlogPostSearchMetadata[];
@@ -72,19 +113,32 @@ export function buildSearchDocuments({
   blogPosts = [],
   indiaColleges = [],
 }: SearchCatalogInput): SearchDocument[] {
-  const {
-    countryBySlug,
-    courseBySlug,
-    universityBySlug,
-    universitiesByCountrySlug,
-    programsByCourseSlug,
-    programsByUniversitySlug,
-  } = buildCatalogIndexes({
-    countries,
-    courses,
-    universities,
-    programOfferings,
-  });
+  const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
+  const courseBySlug = new Map(courses.map((course) => [course.slug, course]));
+  const universityBySlug = new Map(
+    universities.map((university) => [university.slug, university]),
+  );
+  const universitiesByCountrySlug = new Map<string, SearchUniversity[]>();
+  const programsByCourseSlug = new Map<string, SearchProgramOffering[]>();
+  const programsByUniversitySlug = new Map<string, SearchProgramOffering[]>();
+
+  for (const university of universities) {
+    universitiesByCountrySlug.set(university.countrySlug, [
+      ...(universitiesByCountrySlug.get(university.countrySlug) ?? []),
+      university,
+    ]);
+  }
+
+  for (const program of programOfferings) {
+    programsByCourseSlug.set(program.courseSlug, [
+      ...(programsByCourseSlug.get(program.courseSlug) ?? []),
+      program,
+    ]);
+    programsByUniversitySlug.set(program.universitySlug, [
+      ...(programsByUniversitySlug.get(program.universitySlug) ?? []),
+      program,
+    ]);
+  }
 
   const countryDocuments: SearchDocument[] = countries.map((country) => {
     const countryUniversities =

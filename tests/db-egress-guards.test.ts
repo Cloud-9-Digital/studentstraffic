@@ -60,3 +60,40 @@ test("university related comparisons do not scan the full program catalog", asyn
   assert.doesNotMatch(universityComparisonSource, /getCachedComparisonGuides\(\)/);
   assert.match(source, /getProgramsForUniversity\(universitySlug\)/);
 });
+
+test("comparison indexes and detail lookup avoid full-catalog program reads", async () => {
+  const [discoverySource, comparePage, budgetPage] = await Promise.all([
+    readProjectFile("lib/discovery-pages.ts"),
+    readProjectFile("app/compare/page.tsx"),
+    readProjectFile("app/budget/page.tsx"),
+  ]);
+
+  assert.doesNotMatch(discoverySource, /listFinderPrograms\(\{\}\)/);
+  assert.doesNotMatch(discoverySource, /getCachedAllComparisonPages/);
+  assert.match(discoverySource, /count\(\$\{programOfferingsTable\.id\}\)/);
+  assert.doesNotMatch(comparePage, /connection\(\)/);
+  assert.doesNotMatch(budgetPage, /connection\(\)/);
+});
+
+test("search rebuilds use projected reads and university publishing is incremental", async () => {
+  const [searchAdmin, universityPublisher, catalogPublisher] = await Promise.all([
+    readProjectFile("lib/search/admin.ts"),
+    readProjectFile("scripts/publish-university-draft.ts"),
+    readProjectFile("scripts/publish-catalog-payload.ts"),
+  ]);
+
+  assert.doesNotMatch(searchAdmin, /getCatalogSnapshot/);
+  assert.match(searchAdmin, /syncTypesenseSearchForUniversities/);
+  assert.doesNotMatch(universityPublisher, /syncTypesenseSearchIndex/);
+  assert.match(universityPublisher, /syncTypesenseSearchForUniversities/);
+  assert.match(catalogPublisher, /syncTypesenseSearchForUniversities/);
+});
+
+test("program importer batches relationship lookups and uses scoped revalidation", async () => {
+  const source = await readProjectFile("scripts/add-program-offerings.mjs");
+
+  assert.match(source, /slug = ANY\(\$1::text\[\]\)/);
+  assert.doesNotMatch(source, /for \(const \[index, entry\][\s\S]*SELECT id FROM universities/);
+  assert.doesNotMatch(source, /\["catalog", "universities", "program-offerings", "courses"\]/);
+  assert.match(source, /programSlugs: requestedProgramSlugs/);
+});

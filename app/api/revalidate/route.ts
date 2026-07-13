@@ -27,6 +27,12 @@ const catalogDynamicPagePaths = [
   "/countries/[slug]",
 ] as const;
 
+const catalogStaticPaths = [
+  "/universities",
+  "/compare",
+  "/budget",
+] as const;
+
 function parseStringList(value: unknown): string[] {
   if (typeof value === "string") {
     return value.trim() ? [value.trim()] : [];
@@ -141,6 +147,14 @@ export async function POST(request: NextRequest) {
   }
 
   if (scope === "catalog") {
+    tags.add("finder");
+    tags.add("comparison-guides");
+    tags.add("budget-guides");
+
+    for (const path of catalogStaticPaths) {
+      staticPaths.add(path);
+    }
+
     // revalidateTag() alone busts the "use cache" data entries (getUniversityBySlug etc.)
     // but does not regenerate the prerendered route shell — generateMetadata's output
     // (e.g. the <title> tag) stays stale until the dynamic route pattern itself is

@@ -1,26 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { connection } from "next/server";
 import { ArrowRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
+import { ComparisonDirectorySection } from "@/components/site/comparison-directory-sections";
 import { Button } from "@/components/ui/button";
 import {
   getBudgetComparisonGuides,
   getComparisonGuides,
   getCountryComparisonGuides,
-  type BudgetComparisonGuide,
-  type ComparisonGuide,
-  type CountryComparisonGuide,
 } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
-import { getComparisonHref } from "@/lib/routes";
 import {
   getBreadcrumbStructuredData,
   getCollectionPageStructuredData,
   getStructuredDataGraph,
 } from "@/lib/structured-data";
-import { formatCurrencyUsd, hasPublishedUsdAmount } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS Abroad Comparison Pages | Fees, Country and University Comparison",
@@ -29,185 +24,9 @@ export const metadata: Metadata = buildIndexableMetadata({
   path: "/compare",
 });
 
-function getFeeRangeLabel(programs: Array<ComparisonGuide["left"]>) {
-  const fees = programs
-    .map((program) => program.offering.annualTuitionUsd)
-    .filter(hasPublishedUsdAmount);
-
-  if (!fees.length) {
-    return "Check fee details";
-  }
-
-  return `${formatCurrencyUsd(Math.min(...fees))} - ${formatCurrencyUsd(
-    Math.max(...fees)
-  )}`;
-}
-
-function CompareEntryCard({
-  title,
-  description,
-  href,
-  footer,
-  kicker,
-}: {
-  title: string;
-  description: string;
-  href: string;
-  footer: string;
-  kicker: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className="group flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/20 hover:shadow-md"
-    >
-      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
-        {kicker}
-      </p>
-      <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-heading">
-        {title}
-      </h2>
-      <p className="mt-3 flex-1 text-sm leading-7 text-muted-foreground">
-        {description}
-      </p>
-      <div className="mt-5 border-t border-border/70 pt-4">
-        <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
-          {footer}
-          <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-        </span>
-      </div>
-    </Link>
-  );
-}
-
-function UniversityComparisonSection({
-  guides,
-}: {
-  guides: ComparisonGuide[];
-}) {
-  return (
-    <section className="section-space">
-      <div className="container-shell">
-        <div className="mb-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-            University Comparison
-          </p>
-          <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            University vs university pages
-          </h2>
-          <p className="mt-3 max-w-3xl text-sm leading-7 text-muted-foreground">
-            These pages are useful when a student has already narrowed down a
-            few universities and wants to compare fees, city, medium, and
-            recognition details before submitting an enquiry.
-          </p>
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {guides.map((guide) => (
-            <CompareEntryCard
-              key={guide.slug}
-              kicker={guide.left.course.shortName}
-              title={`${guide.left.university.name} vs ${guide.right.university.name}`}
-              description={`Compare annual fees, teaching medium, city, recognition, and admission details for Indian students.`}
-              href={getComparisonHref(guide.slug)}
-              footer="Open comparison"
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function CountryComparisonSection({
-  guides,
-}: {
-  guides: CountryComparisonGuide[];
-}) {
-  return (
-    <section className="border-t border-border py-16 md:py-20">
-      <div className="container-shell">
-        <div className="mb-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-            Country Comparison
-          </p>
-          <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            Country vs country pages
-          </h2>
-          <p className="mt-3 max-w-3xl text-sm leading-7 text-muted-foreground">
-            These pages compare the full decision level: fees, climate,
-            eligibility, cost of living, and the universities currently listed
-            in each country.
-          </p>
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {guides.map((guide) => (
-            <CompareEntryCard
-              key={guide.slug}
-              kicker={`${guide.course.shortName} country comparison`}
-              title={`${guide.leftCountry.name} vs ${guide.rightCountry.name}`}
-              description={`Compare ${guide.course.shortName} in ${guide.leftCountry.name} and ${guide.rightCountry.name} by fees, climate, eligibility, and student living costs.`}
-              href={getComparisonHref(guide.slug)}
-              footer="Open comparison"
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function BudgetComparisonSection({
-  guides,
-}: {
-  guides: BudgetComparisonGuide[];
-}) {
-  return (
-    <section className="border-t border-border py-16 md:py-20">
-      <div className="container-shell">
-        <div className="mb-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-            Budget Comparison
-          </p>
-          <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-            Budget vs country pages
-          </h2>
-          <p className="mt-3 max-w-3xl text-sm leading-7 text-muted-foreground">
-            These pages focus on one budget band and compare which countries
-            currently have more options under that fee level.
-          </p>
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {guides.map((guide) => {
-            const leftFeeRange = getFeeRangeLabel(guide.leftPrograms);
-            const rightFeeRange = getFeeRangeLabel(guide.rightPrograms);
-
-            return (
-              <CompareEntryCard
-                key={guide.slug}
-                kicker={`${guide.course.shortName} under ${formatCurrencyUsd(guide.budgetUsd)}`}
-                title={`${guide.leftCountry.name} vs ${guide.rightCountry.name}`}
-                description={`${guide.leftPrograms.length} option${
-                  guide.leftPrograms.length === 1 ? "" : "s"
-                } in ${guide.leftCountry.name} and ${guide.rightPrograms.length} option${
-                  guide.rightPrograms.length === 1 ? "" : "s"
-                } in ${guide.rightCountry.name}. Fee range: ${leftFeeRange} and ${rightFeeRange}.`}
-                href={getComparisonHref(guide.slug)}
-                footer="Open comparison"
-              />
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
-}
+const initialComparisonCount = 24;
 
 export default async function CompareIndexPage() {
-  await connection();
-
   const [universityGuides, countryGuides, budgetGuides] = await Promise.all([
     getComparisonGuides(),
     getCountryComparisonGuides(),
@@ -287,15 +106,38 @@ export default async function CompareIndexPage() {
       </section>
 
       {sortedUniversityGuides.length > 0 ? (
-        <UniversityComparisonSection guides={sortedUniversityGuides} />
+        <ComparisonDirectorySection
+          type="university"
+          initialGuides={sortedUniversityGuides.slice(0, initialComparisonCount)}
+          total={sortedUniversityGuides.length}
+          eyebrow="University Comparison"
+          title="University vs university pages"
+          description="These pages are useful when a student has already narrowed down a few universities and wants to compare fees, city, medium, and recognition details before submitting an enquiry."
+        />
       ) : null}
 
       {sortedCountryGuides.length > 0 ? (
-        <CountryComparisonSection guides={sortedCountryGuides} />
+        <ComparisonDirectorySection
+          type="country"
+          initialGuides={sortedCountryGuides.slice(0, initialComparisonCount)}
+          total={sortedCountryGuides.length}
+          eyebrow="Country Comparison"
+          title="Country vs country pages"
+          description="These pages compare the full decision level: fees, climate, eligibility, cost of living, and the universities currently listed in each country."
+          bordered
+        />
       ) : null}
 
       {sortedBudgetGuides.length > 0 ? (
-        <BudgetComparisonSection guides={sortedBudgetGuides} />
+        <ComparisonDirectorySection
+          type="budget"
+          initialGuides={sortedBudgetGuides.slice(0, initialComparisonCount)}
+          total={sortedBudgetGuides.length}
+          eyebrow="Budget Comparison"
+          title="Budget vs country pages"
+          description="These pages focus on one budget band and compare which countries currently have more options under that fee level."
+          bordered
+        />
       ) : null}
 
       <JsonLd data={getStructuredDataGraph(structuredDataItems)} />

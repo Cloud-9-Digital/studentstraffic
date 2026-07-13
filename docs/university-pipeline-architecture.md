@@ -264,6 +264,27 @@ and remapped. Run `npm run audit:programme-taxonomy` for the non-mutating review
 Both programme import paths now use one database transaction per payload. A validation or database
 failure rolls the complete batch back; cache and search refresh run only after the database commit.
 
+## Cost-safe publication refresh (2026-07-14)
+
+Catalogue publication must not rebuild or download the complete catalogue after each university.
+`publish-university-draft.ts` and `publish-catalog-payload.ts` now upsert only the affected
+university, its published programmes, and the directly related country/course documents into
+Typesense. The admin search screen and `scripts/sync-typesense-search.ts` retain the full rebuild as
+an explicit recovery/maintenance operation; it is not part of the per-university hot path.
+
+`add-program-offerings.mjs` resolves all referenced university, course and existing programme slugs
+with three batched lookups before writing the transaction, rather than repeating those reads for
+every programme. Its post-commit refresh is slug-scoped: affected programme and university paths are
+expired, while unrelated catalogue data remains cached. The catalogue revalidation endpoint also
+refreshes the `/universities`, `/compare`, and `/budget` route shells and their narrow finder/
+comparison summary caches so newly published options appear without a broad catalogue snapshot
+reload.
+
+These are internal data-access changes only. Public URLs, comparison eligibility (at least two
+published programmes per country/budget side), fee ranges, counts, university detail content and
+lead flows must remain functionally equivalent. Any future publisher must follow the same
+incremental-search and scoped-revalidation pattern.
+
 ## Cross-agent publishing coordination
 
 `research/university-publishing-ledger.csv` is the shared coordination ledger for university work.

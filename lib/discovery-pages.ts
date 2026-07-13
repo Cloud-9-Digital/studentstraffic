@@ -5,7 +5,6 @@ import type { Country, Course, FinderProgram } from "@/lib/data/types";
 import {
   getCountries,
   getCourseBySlug,
-  getCourses,
   getProgramsForUniversity,
   getUniversityBySlug,
   listFinderPrograms,
@@ -23,6 +22,19 @@ export type ComparisonGuide = {
   slug: string;
   left: FinderProgram;
   right: FinderProgram;
+};
+
+export type ComparisonGuideSummary = {
+  kind: "university";
+  slug: string;
+  left: {
+    university: Pick<FinderProgram["university"], "slug" | "name">;
+    course: Pick<FinderProgram["course"], "shortName">;
+  };
+  right: {
+    university: Pick<FinderProgram["university"], "slug" | "name">;
+    course: Pick<FinderProgram["course"], "shortName">;
+  };
 };
 
 export type CountryComparisonGuide = {
@@ -44,6 +56,32 @@ export type BudgetComparisonGuide = {
   rightCountry: Country;
   leftPrograms: FinderProgram[];
   rightPrograms: FinderProgram[];
+};
+
+export type CountryComparisonGuideSummary = Omit<
+  CountryComparisonGuide,
+  "course" | "leftCountry" | "rightCountry" | "leftPrograms" | "rightPrograms"
+> & {
+  course: Pick<Course, "slug" | "name" | "shortName">;
+  leftCountry: Pick<Country, "slug" | "name">;
+  rightCountry: Pick<Country, "slug" | "name">;
+};
+
+type BudgetCountryStats = {
+  programCount: number;
+  minimumAnnualTuitionUsd: number;
+  maximumAnnualTuitionUsd: number;
+};
+
+export type BudgetComparisonGuideSummary = Omit<
+  BudgetComparisonGuide,
+  "course" | "leftCountry" | "rightCountry" | "leftPrograms" | "rightPrograms"
+> & {
+  course: Pick<Course, "slug" | "name" | "shortName">;
+  leftCountry: Pick<Country, "slug" | "name">;
+  rightCountry: Pick<Country, "slug" | "name">;
+  leftStats: BudgetCountryStats;
+  rightStats: BudgetCountryStats;
 };
 
 export type ComparisonPage =
@@ -100,26 +138,47 @@ function getBudgetGuideSlug(courseSlug: string, budgetUsd: number) {
   return `${courseSlug}-under-${budgetUsd}-usd`;
 }
 
-function getPrimaryProgramsByUniversity(programs: FinderProgram[]) {
-  const primaryPrograms = new Map<string, FinderProgram>();
-
-  for (const program of programs) {
-    if (!primaryPrograms.has(program.university.slug)) {
-      primaryPrograms.set(program.university.slug, program);
-    }
-  }
-
-  return primaryPrograms;
-}
-
 async function buildComparisonGuides() {
-  const programs = await listFinderPrograms({});
-  const primaryPrograms = getPrimaryProgramsByUniversity(programs);
+  const db = getDb();
+  if (!db) return [];
+
+  const result = await db.execute<{
+    universitySlug: string;
+    universityName: string;
+    similarUniversitySlugs: string[];
+    courseShortName: string;
+  }>(sql`
+    SELECT DISTINCT ON (${universitiesTable.id})
+      ${universitiesTable.slug} AS "universitySlug",
+      ${universitiesTable.name} AS "universityName",
+      ${universitiesTable.similarUniversitySlugs} AS "similarUniversitySlugs",
+      ${coursesTable.shortName} AS "courseShortName"
+    FROM ${universitiesTable}
+    INNER JOIN ${programOfferingsTable}
+      ON ${programOfferingsTable.universityId} = ${universitiesTable.id}
+    INNER JOIN ${coursesTable}
+      ON ${programOfferingsTable.courseId} = ${coursesTable.id}
+    WHERE ${universitiesTable.published} = true
+      AND ${programOfferingsTable.published} = true
+    ORDER BY
+      ${universitiesTable.id},
+      ${programOfferingsTable.featured} DESC,
+      CASE
+        WHEN ${programOfferingsTable.annualTuitionUsd} > 0
+          THEN ${programOfferingsTable.annualTuitionUsd}
+        ELSE 2147483647
+      END,
+      ${coursesTable.shortName},
+      ${programOfferingsTable.slug}
+  `);
+  const primaryPrograms = new Map(
+    result.rows.map((row) => [row.universitySlug, row]),
+  );
   const seenPairs = new Set<string>();
-  const guides: ComparisonGuide[] = [];
+  const guides: ComparisonGuideSummary[] = [];
 
   for (const program of primaryPrograms.values()) {
-    for (const similarSlug of program.university.similarUniversitySlugs) {
+    for (const similarSlug of program.similarUniversitySlugs) {
       const similarProgram = primaryPrograms.get(similarSlug);
 
       if (!similarProgram) {
@@ -127,8 +186,8 @@ async function buildComparisonGuides() {
       }
 
       const pairKey = sortPair(
-        program.university.slug,
-        similarProgram.university.slug
+        program.universitySlug,
+        similarProgram.universitySlug
       ).join("::");
 
       if (seenPairs.has(pairKey)) {
@@ -137,20 +196,25 @@ async function buildComparisonGuides() {
 
       seenPairs.add(pairKey);
 
+      const [left, right] =
+        program.universitySlug.localeCompare(similarProgram.universitySlug) <= 0
+          ? [program, similarProgram]
+          : [similarProgram, program];
+
       guides.push({
         kind: "university",
         slug: getComparisonGuideSlug(
-          program.university.slug,
-          similarProgram.university.slug
+          program.universitySlug,
+          similarProgram.universitySlug
         ),
-        left:
-          program.university.slug.localeCompare(similarProgram.university.slug) <= 0
-            ? program
-            : similarProgram,
-        right:
-          program.university.slug.localeCompare(similarProgram.university.slug) <= 0
-            ? similarProgram
-            : program,
+        left: {
+          university: { slug: left.universitySlug, name: left.universityName },
+          course: { shortName: left.courseShortName },
+        },
+        right: {
+          university: { slug: right.universitySlug, name: right.universityName },
+          course: { shortName: right.courseShortName },
+        },
       });
     }
   }
@@ -170,11 +234,6 @@ async function getCachedComparisonGuides() {
 
 export async function getComparisonGuides() {
   return getCachedComparisonGuides();
-}
-
-export async function getComparisonGuideBySlug(slug: string) {
-  const guides = await getCachedComparisonGuides();
-  return guides.find((guide) => guide.slug === slug) ?? null;
 }
 
 async function buildComparisonGuidesForUniversity(
@@ -249,33 +308,46 @@ export async function getComparisonGuidesForUniversity(universitySlug: string, l
 }
 
 async function buildCountryComparisonGuides() {
-  const [countries, courses, programs] = await Promise.all([
-    getCountries(),
-    getCourses(),
-    listFinderPrograms({}),
-  ]);
-  const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
-  const guides: CountryComparisonGuide[] = [];
+  const db = getDb();
+  if (!db) return [];
 
-  for (const course of courses) {
-    const coursePrograms = programs.filter(
-      (program) => program.course.slug === course.slug
-    );
-    const countriesForCourse = [...new Set(
-      coursePrograms.map((program) => program.country.slug)
-    )]
-      .map((countrySlug) => ({
-        country: countryBySlug.get(countrySlug) ?? null,
-        programs: coursePrograms.filter(
-          (program) => program.country.slug === countrySlug
-        ),
-      }))
-      .filter(
-        (
-          entry
-        ): entry is { country: Country; programs: FinderProgram[] } =>
-          entry.country !== null && entry.programs.length >= 2
-      );
+  const result = await db.execute<{
+    courseSlug: string;
+    courseName: string;
+    courseShortName: string;
+    countrySlug: string;
+    countryName: string;
+  }>(sql`
+    SELECT
+      ${coursesTable.slug} AS "courseSlug",
+      ${coursesTable.name} AS "courseName",
+      ${coursesTable.shortName} AS "courseShortName",
+      ${countriesTable.slug} AS "countrySlug",
+      ${countriesTable.name} AS "countryName"
+    FROM ${programOfferingsTable}
+    INNER JOIN ${universitiesTable}
+      ON ${programOfferingsTable.universityId} = ${universitiesTable.id}
+    INNER JOIN ${coursesTable}
+      ON ${programOfferingsTable.courseId} = ${coursesTable.id}
+    INNER JOIN ${countriesTable}
+      ON ${universitiesTable.countryId} = ${countriesTable.id}
+    WHERE ${programOfferingsTable.published} = true
+      AND ${universitiesTable.published} = true
+    GROUP BY
+      ${coursesTable.slug}, ${coursesTable.name}, ${coursesTable.shortName},
+      ${countriesTable.slug}, ${countriesTable.name}
+    HAVING count(${programOfferingsTable.id}) >= 2
+    ORDER BY ${coursesTable.slug}, ${countriesTable.slug}
+  `);
+  const rowsByCourse = new Map<string, typeof result.rows>();
+  for (const row of result.rows) {
+    rowsByCourse.set(row.courseSlug, [...(rowsByCourse.get(row.courseSlug) ?? []), row]);
+  }
+  const guides: CountryComparisonGuideSummary[] = [];
+
+  for (const countriesForCourse of rowsByCourse.values()) {
+    const courseRow = countriesForCourse[0];
+    if (!courseRow) continue;
 
     for (let index = 0; index < countriesForCourse.length; index += 1) {
       for (
@@ -283,25 +355,23 @@ async function buildCountryComparisonGuides() {
         innerIndex < countriesForCourse.length;
         innerIndex += 1
       ) {
-        const leftEntry = countriesForCourse[index];
-        const rightEntry = countriesForCourse[innerIndex];
-        const [leftCountry, rightCountry] =
-          leftEntry.country.slug.localeCompare(rightEntry.country.slug) <= 0
-            ? [leftEntry, rightEntry]
-            : [rightEntry, leftEntry];
+        const leftCountry = countriesForCourse[index];
+        const rightCountry = countriesForCourse[innerIndex];
 
         guides.push({
           kind: "country",
           slug: getCountryComparisonGuideSlug(
-            course.slug,
-            leftCountry.country.slug,
-            rightCountry.country.slug
+            courseRow.courseSlug,
+            leftCountry.countrySlug,
+            rightCountry.countrySlug
           ),
-          course,
-          leftCountry: leftCountry.country,
-          rightCountry: rightCountry.country,
-          leftPrograms: leftCountry.programs,
-          rightPrograms: rightCountry.programs,
+          course: {
+            slug: courseRow.courseSlug,
+            name: courseRow.courseName,
+            shortName: courseRow.courseShortName,
+          },
+          leftCountry: { slug: leftCountry.countrySlug, name: leftCountry.countryName },
+          rightCountry: { slug: rightCountry.countrySlug, name: rightCountry.countryName },
         });
       }
     }
@@ -326,40 +396,61 @@ export async function getCountryComparisonGuides() {
 }
 
 async function buildBudgetComparisonGuides() {
-  const [countries, courses, programs] = await Promise.all([
-    getCountries(),
-    getCourses(),
-    listFinderPrograms({}),
-  ]);
-  const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
-  const guides: BudgetComparisonGuide[] = [];
+  const db = getDb();
+  if (!db) return [];
 
-  for (const course of courses) {
-    const coursePrograms = programs.filter(
-      (program) => program.course.slug === course.slug
-    );
+  const result = await db.execute<{
+    courseSlug: string;
+    courseName: string;
+    courseShortName: string;
+    budgetUsd: number;
+    countrySlug: string;
+    countryName: string;
+    programCount: number;
+    minimumAnnualTuitionUsd: number;
+    maximumAnnualTuitionUsd: number;
+  }>(sql`
+    WITH budgets (budget_usd) AS (
+      VALUES (4000), (5000), (6000), (8000), (10000)
+    )
+    SELECT
+      ${coursesTable.slug} AS "courseSlug",
+      ${coursesTable.name} AS "courseName",
+      ${coursesTable.shortName} AS "courseShortName",
+      budgets.budget_usd::int AS "budgetUsd",
+      ${countriesTable.slug} AS "countrySlug",
+      ${countriesTable.name} AS "countryName",
+      count(${programOfferingsTable.id})::int AS "programCount",
+      min(${programOfferingsTable.annualTuitionUsd})::int AS "minimumAnnualTuitionUsd",
+      max(${programOfferingsTable.annualTuitionUsd})::int AS "maximumAnnualTuitionUsd"
+    FROM ${programOfferingsTable}
+    INNER JOIN ${universitiesTable}
+      ON ${programOfferingsTable.universityId} = ${universitiesTable.id}
+    INNER JOIN ${coursesTable}
+      ON ${programOfferingsTable.courseId} = ${coursesTable.id}
+    INNER JOIN ${countriesTable}
+      ON ${universitiesTable.countryId} = ${countriesTable.id}
+    CROSS JOIN budgets
+    WHERE ${programOfferingsTable.published} = true
+      AND ${universitiesTable.published} = true
+      AND ${programOfferingsTable.annualTuitionUsd} > 0
+      AND ${programOfferingsTable.annualTuitionUsd} <= budgets.budget_usd
+    GROUP BY
+      ${coursesTable.slug}, ${coursesTable.name}, ${coursesTable.shortName},
+      budgets.budget_usd, ${countriesTable.slug}, ${countriesTable.name}
+    HAVING count(${programOfferingsTable.id}) >= 2
+    ORDER BY ${coursesTable.slug}, budgets.budget_usd, ${countriesTable.slug}
+  `);
+  const rowsByCourseAndBudget = new Map<string, typeof result.rows>();
+  for (const row of result.rows) {
+    const key = `${row.courseSlug}:${row.budgetUsd}`;
+    rowsByCourseAndBudget.set(key, [...(rowsByCourseAndBudget.get(key) ?? []), row]);
+  }
+  const guides: BudgetComparisonGuideSummary[] = [];
 
-    for (const budgetUsd of budgetThresholds) {
-      const matchingPrograms = coursePrograms.filter(
-        (program) =>
-          program.offering.annualTuitionUsd > 0 &&
-          program.offering.annualTuitionUsd <= budgetUsd
-      );
-      const countriesWithinBudget = [...new Set(
-        matchingPrograms.map((program) => program.country.slug)
-      )]
-        .map((countrySlug) => ({
-          country: countryBySlug.get(countrySlug) ?? null,
-          programs: matchingPrograms.filter(
-            (program) => program.country.slug === countrySlug
-          ),
-        }))
-        .filter(
-          (
-            entry
-          ): entry is { country: Country; programs: FinderProgram[] } =>
-            entry.country !== null && entry.programs.length >= 2
-        );
+  for (const countriesWithinBudget of rowsByCourseAndBudget.values()) {
+    const firstRow = countriesWithinBudget[0];
+    if (!firstRow) continue;
 
       for (let index = 0; index < countriesWithinBudget.length; index += 1) {
         for (
@@ -367,31 +458,38 @@ async function buildBudgetComparisonGuides() {
           innerIndex < countriesWithinBudget.length;
           innerIndex += 1
         ) {
-          const leftEntry = countriesWithinBudget[index];
-          const rightEntry = countriesWithinBudget[innerIndex];
-          const [leftCountry, rightCountry] =
-            leftEntry.country.slug.localeCompare(rightEntry.country.slug) <= 0
-              ? [leftEntry, rightEntry]
-              : [rightEntry, leftEntry];
+          const leftCountry = countriesWithinBudget[index];
+          const rightCountry = countriesWithinBudget[innerIndex];
 
           guides.push({
             kind: "budget",
             slug: getBudgetComparisonGuideSlug(
-              course.slug,
-              budgetUsd,
-              leftCountry.country.slug,
-              rightCountry.country.slug
+              firstRow.courseSlug,
+              firstRow.budgetUsd,
+              leftCountry.countrySlug,
+              rightCountry.countrySlug
             ),
-            budgetUsd,
-            course,
-            leftCountry: leftCountry.country,
-            rightCountry: rightCountry.country,
-            leftPrograms: leftCountry.programs,
-            rightPrograms: rightCountry.programs,
+            budgetUsd: firstRow.budgetUsd,
+            course: {
+              slug: firstRow.courseSlug,
+              name: firstRow.courseName,
+              shortName: firstRow.courseShortName,
+            },
+            leftCountry: { slug: leftCountry.countrySlug, name: leftCountry.countryName },
+            rightCountry: { slug: rightCountry.countrySlug, name: rightCountry.countryName },
+            leftStats: {
+              programCount: leftCountry.programCount,
+              minimumAnnualTuitionUsd: leftCountry.minimumAnnualTuitionUsd,
+              maximumAnnualTuitionUsd: leftCountry.maximumAnnualTuitionUsd,
+            },
+            rightStats: {
+              programCount: rightCountry.programCount,
+              minimumAnnualTuitionUsd: rightCountry.minimumAnnualTuitionUsd,
+              maximumAnnualTuitionUsd: rightCountry.maximumAnnualTuitionUsd,
+            },
           });
         }
       }
-    }
   }
 
   return guides.sort((left, right) => left.slug.localeCompare(right.slug));
@@ -412,87 +510,90 @@ export async function getBudgetComparisonGuides() {
   return getCachedBudgetComparisonGuides();
 }
 
-async function getCachedAllComparisonPages() {
-  "use cache";
-
-  cacheLife("hours");
-  cacheTag("catalog");
-  cacheTag("comparison-guides");
-
-  const [universityGuides, countryGuides, budgetGuides] = await Promise.all([
-    getCachedComparisonGuides(),
-    getCachedCountryComparisonGuides(),
-    getCachedBudgetComparisonGuides(),
-  ]);
-
-  return [
-    ...universityGuides,
-    ...countryGuides,
-    ...budgetGuides,
-  ].sort((left, right) => left.slug.localeCompare(right.slug));
-}
-
-export async function getAllComparisonPages() {
-  return getCachedAllComparisonPages();
-}
-
 export async function getComparisonPageBySlug(
   slug: string,
 ): Promise<ComparisonPage | null> {
-  const pages = await getCachedAllComparisonPages();
-  return pages.find((page) => page.slug === slug) ?? null;
-}
-
-async function buildBudgetGuides() {
-  const [courses, programs] = await Promise.all([getCourses(), listFinderPrograms({})]);
-  const guides: BudgetGuide[] = [];
-
-  for (const course of courses) {
-    const coursePrograms = programs.filter(
-      (program) => program.course.slug === course.slug
+  if (slug.startsWith("country-")) {
+    const summary = (await getCachedCountryComparisonGuides()).find(
+      (guide) => guide.slug === slug,
     );
+    if (!summary) return null;
 
-    for (const budgetUsd of budgetThresholds) {
-      const matchingPrograms = coursePrograms.filter(
-        (program) =>
-          program.offering.annualTuitionUsd > 0 &&
-          program.offering.annualTuitionUsd <= budgetUsd
-      );
-
-      if (matchingPrograms.length < 2) {
-        continue;
-      }
-
-      guides.push({
-        slug: getBudgetGuideSlug(course.slug, budgetUsd),
-        budgetUsd,
-        course,
-        programs: matchingPrograms,
-      });
+    const [course, countries, leftPrograms, rightPrograms] = await Promise.all([
+      getCourseBySlug(summary.course.slug),
+      getCountries(),
+      listFinderPrograms({
+        course: summary.course.slug,
+        country: summary.leftCountry.slug,
+      }),
+      listFinderPrograms({
+        course: summary.course.slug,
+        country: summary.rightCountry.slug,
+      }),
+    ]);
+    const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
+    const leftCountry = countryBySlug.get(summary.leftCountry.slug);
+    const rightCountry = countryBySlug.get(summary.rightCountry.slug);
+    if (!course || !leftCountry || !rightCountry || leftPrograms.length < 2 || rightPrograms.length < 2) {
+      return null;
     }
+
+    return { kind: "country", slug, course, leftCountry, rightCountry, leftPrograms, rightPrograms };
   }
 
-  return guides.sort((a, b) => {
-    if (a.course.slug !== b.course.slug) {
-      return a.course.slug.localeCompare(b.course.slug);
+  if (slug.startsWith("budget-")) {
+    const summary = (await getCachedBudgetComparisonGuides()).find(
+      (guide) => guide.slug === slug,
+    );
+    if (!summary) return null;
+
+    const [course, countries, leftPrograms, rightPrograms] = await Promise.all([
+      getCourseBySlug(summary.course.slug),
+      getCountries(),
+      listFinderPrograms({
+        course: summary.course.slug,
+        country: summary.leftCountry.slug,
+        feeMax: summary.budgetUsd,
+      }),
+      listFinderPrograms({
+        course: summary.course.slug,
+        country: summary.rightCountry.slug,
+        feeMax: summary.budgetUsd,
+      }),
+    ]);
+    const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
+    const leftCountry = countryBySlug.get(summary.leftCountry.slug);
+    const rightCountry = countryBySlug.get(summary.rightCountry.slug);
+    if (!course || !leftCountry || !rightCountry || leftPrograms.length < 2 || rightPrograms.length < 2) {
+      return null;
     }
 
-    return a.budgetUsd - b.budgetUsd;
-  });
-}
+    return {
+      kind: "budget",
+      slug,
+      budgetUsd: summary.budgetUsd,
+      course,
+      leftCountry,
+      rightCountry,
+      leftPrograms,
+      rightPrograms,
+    };
+  }
 
-async function getCachedBudgetGuides() {
-  "use cache";
+  const summary = (await getCachedComparisonGuides()).find(
+    (guide) => guide.slug === slug,
+  );
+  if (!summary) return null;
 
-  cacheLife("hours");
-  cacheTag("catalog");
-  cacheTag("budget-guides");
+  const [leftPrograms, rightPrograms] = await Promise.all([
+    getProgramsForUniversity(summary.left.university.slug),
+    getProgramsForUniversity(summary.right.university.slug),
+  ]);
+  const left = leftPrograms[0];
+  const right = rightPrograms[0];
+  if (!left || !right) return null;
 
-  return buildBudgetGuides();
-}
-
-export async function getBudgetGuides() {
-  return getCachedBudgetGuides();
+  return { kind: "university", slug, left, right };
 }
 
 export async function getBudgetGuideBySlug(slug: string) {
