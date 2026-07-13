@@ -63,6 +63,20 @@ const programmeSchema = z.object({
     verifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     sourceUrl: z.string().url(),
   }),
+  admissionsContent: z.object({
+    overview: z.string().min(40).max(420),
+    eligibility: z.object({
+      intro: z.string().min(30).max(320),
+      items: z.array(z.string().min(8).max(220)).min(1).max(8),
+    }),
+    applicationSteps: z.array(z.string().min(12).max(280)).min(2).max(8),
+    documentsRequired: z.object({
+      academic: z.array(z.string().min(4).max(180)).min(1).max(10),
+      application: z.array(z.string().min(4).max(180)).min(1).max(10),
+    }),
+    deadlinesNote: z.string().min(20).max(300).optional(),
+    visaConsiderations: z.array(z.string().min(8).max(220)).max(5).optional(),
+  }),
   medium: z.string().min(2),
   intakeMonths: z.array(z.string().min(2)).min(1),
   feeVerifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),

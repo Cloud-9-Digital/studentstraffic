@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "dev:fast": "next dev --turbopack --hostname 127.0.0.1",
-    "build": "npm run typecheck && next build",
+    "build": "npm run typecheck && node scripts/next-build.mjs",
     "start": "next start",
     "mobile:start": "npm --prefix mobile run start",
     "mobile:web": "npm --prefix mobile run web",

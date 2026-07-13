@@ -358,6 +358,13 @@
       "when": 1783859400000,
       "tag": "0065_university_media_attribution",
       "breakpoints": true
+    },
+    {
+      "idx": 65,
+      "version": "7",
+      "when": 1783863000000,
+      "tag": "0066_programme_admissions_content",
+      "breakpoints": true
     }
   ]
 }

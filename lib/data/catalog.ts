@@ -165,6 +165,7 @@ function mapProgramOfferingRow(
       program.officialTotalTuitionAmount ?? undefined,
     officialProgramUrl: program.officialProgramUrl,
     audienceEligibility: program.audienceEligibility,
+    admissionsContent: program.admissionsContent,
     medium: program.medium as ProgramOffering["medium"],
     published: program.published,
     teachingPhases: program.teachingPhases,

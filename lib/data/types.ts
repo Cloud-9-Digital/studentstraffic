@@ -217,6 +217,7 @@ export type ProgramOffering = {
     verifiedAt: string;
     sourceUrl: string;
   };
+  admissionsContent?: ProgramAdmissionsContent;
   medium:
     | "English"
     | "English + Local Support"
@@ -276,6 +277,18 @@ export type EligibilityCriteria = {
 export type DocumentsRequired = {
   educational: string[];
   visa: string[];
+};
+
+export type ProgramAdmissionsContent = {
+  overview: string;
+  eligibility: EligibilityCriteria;
+  applicationSteps: string[];
+  documentsRequired: {
+    academic: string[];
+    application: string[];
+  };
+  deadlinesNote?: string;
+  visaConsiderations?: string[];
 };
 
 export type UniversityAdmissionsContent = {

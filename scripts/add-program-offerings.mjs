@@ -196,6 +196,7 @@ async function main() {
           entry.feeNotes ?? null,
           entry.sourceUrls,
           entry.audienceEligibility ?? null,
+          entry.admissionsContent ?? {},
           entry.professionalExamSupport ?? [],
         ];
 
@@ -207,9 +208,9 @@ async function main() {
               official_fee_currency=$9, official_annual_tuition_amount=$10,
               official_total_tuition_amount=$11, official_program_url=$12, medium=$13,
               intake_months=$14, fee_verified_at=$15, fee_notes=$16, source_urls=$17,
-              audience_eligibility=$18, professional_exam_support=$19,
+              audience_eligibility=$18, admissions_content=$19, professional_exam_support=$20,
               published=true, updated_at=NOW()
-            WHERE id=$20`,
+            WHERE id=$21`,
             [...values, existing.id],
           );
         } else {
@@ -219,8 +220,8 @@ async function main() {
               total_tuition_usd, living_usd, official_fee_currency,
               official_annual_tuition_amount, official_total_tuition_amount,
               official_program_url, medium, intake_months, fee_verified_at, fee_notes,
-              source_urls, audience_eligibility, professional_exam_support, published
-            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,true)
+              source_urls, audience_eligibility, admissions_content, professional_exam_support, published
+            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,true)
             RETURNING id`,
             values,
           );

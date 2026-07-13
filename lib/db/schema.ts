@@ -255,6 +255,10 @@ export const programOfferings = pgTable(
         verifiedAt: "",
         sourceUrl: "",
       }),
+    admissionsContent: jsonb("admissions_content")
+      .$type<ProgramOffering["admissionsContent"] | Record<string, never>>()
+      .notNull()
+      .default({}),
     medium: text("medium").notNull(),
     published: boolean("published").notNull().default(true),
     teachingPhases: jsonb("teaching_phases")

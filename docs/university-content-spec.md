@@ -28,6 +28,19 @@ None of this requires fabrication — DIT's numbers are all real, sourced facts.
 **research depth and structural decomposition**, not invented detail. Everything below is about
 digging up and organizing more real facts, never padding with generic filler or guessing.
 
+## Programme admissions content — required and programme-specific
+
+Every published programme must carry its own `admissionsContent`. This is distinct from the
+university-level admissions overview and country visa guidance. It must include a short verified
+overview, exact academic/language/test/work-experience eligibility, ordered application steps,
+academic and application-document lists, and a deadline note where the official source provides
+one. Add visa considerations only when they materially differ for the programme.
+
+Never reuse MBBS/NEET/PCB, country-wide, or another programme's requirements as a fallback. If an
+official programme page does not publish a requirement, omit that claim and record the gap for a
+later research pass. Pages must show only verified programme-specific requirements; no generic
+medical admissions copy is permitted on engineering, business, arts or other programmes.
+
 ## Minimum bar per field
 
 ### `recognitionBadges` / `recognitionLinks` — never leave empty, and never write non-recognitions

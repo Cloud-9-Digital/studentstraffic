@@ -35,6 +35,24 @@ function isMedical(primaryProgram: FinderProgram | undefined): boolean {
     : true; // no primaryProgram -> keep existing (medical) default behavior, zero change
 }
 
+function hasProgramAdmissions(
+  program: FinderProgram | undefined,
+): program is FinderProgram & {
+  offering: FinderProgram["offering"] & {
+    admissionsContent: NonNullable<FinderProgram["offering"]["admissionsContent"]>;
+  };
+} {
+  const content = program?.offering.admissionsContent;
+  return Boolean(
+    content &&
+      typeof content.overview === "string" &&
+      content.overview.trim() &&
+      content.eligibility &&
+      Array.isArray(content.applicationSteps) &&
+      content.applicationSteps.length > 0,
+  );
+}
+
 function AdmissionSteps({ items }: { items: string[] }) {
   return (
     <ol className="space-y-0">
@@ -104,6 +122,9 @@ export function UniversityAdmissionsSection({
   universityAdvisory: UniversityRegulatoryAdvisory | null;
 }) {
   const isMedicalStream = isMedical(primaryProgram);
+  const programAdmissions = hasProgramAdmissions(primaryProgram)
+    ? primaryProgram.offering.admissionsContent
+    : null;
 
   const intakeMonths = primaryProgram?.offering.intakeMonths ?? [];
   const universityAdmissions = university.admissionsContent;
@@ -115,8 +136,8 @@ export function UniversityAdmissionsSection({
     ? getRussiaOfficialPageAuditSummary(russiaOfficialAudit)
     : null;
   const admissionsIntro = primaryProgram
-    ? universityAdmissions?.overview ??
-      `Admissions to ${primaryProgram.course.shortName} at ${university.name} follow the ${university.type.toLowerCase()} university process for international ${isMedicalStream ? "medical " : ""}applicants in ${primaryProgram.country.name}. We confirm the current cycle, seat availability, and document format as part of the admissions process.`
+    ? programAdmissions?.overview ??
+      "Programme-specific admission requirements are being verified with the university. Do not rely on another programme's requirements when preparing an application."
     : `We confirm current intake availability and document requirements directly with ${university.name}'s international office before presenting an offer to families.`;
   const countryName = primaryProgram?.country.name ?? "the study country";
 
@@ -156,13 +177,19 @@ export function UniversityAdmissionsSection({
         <p className="text-base leading-8 text-muted-foreground">
           {admissionsIntro}
         </p>
-        <AdmissionSteps
-          items={
-            universityAdmissions?.admissionSteps ??
-            countryContent?.admissionSteps ??
-            defaultSteps
-          }
-        />
+        {primaryProgram ? (
+          programAdmissions ? (
+            <AdmissionSteps items={programAdmissions.applicationSteps} />
+          ) : (
+            <InfoCard
+              icon={<FileText className="size-4 text-accent" />}
+              title="Requirements being verified"
+              body="Application steps will appear here once they have been checked against the university's current programme page."
+            />
+          )
+        ) : (
+          <AdmissionSteps items={universityAdmissions?.admissionSteps ?? countryContent?.admissionSteps ?? defaultSteps} />
+        )}
         {russiaOfficialAuditSummary && (
           <InfoCard
             icon={<FileText className="size-4 text-accent" />}
@@ -173,21 +200,20 @@ export function UniversityAdmissionsSection({
       </div>
 
       {/* ── Visa documents ───────────────────────────────────────────── */}
+      {(!primaryProgram || programAdmissions?.visaConsiderations?.length) && (
       <div id="visa-documents" className="scroll-mt-24 space-y-4">
         <SectionLabel>Visa Documents</SectionLabel>
         <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
           <CheckList
             items={
-              universityAdmissions?.documentsRequired?.visa ??
-              countryContent?.documentsRequired.visa ?? [
-                "University offer or invitation letter",
-                "Visa application documents",
-                "Medical and financial proof as required by the destination",
-              ]
+              primaryProgram
+                ? programAdmissions?.visaConsiderations ?? []
+                : universityAdmissions?.documentsRequired?.visa ?? countryContent?.documentsRequired.visa ?? []
             }
           />
         </div>
       </div>
+      )}
 
       {/* ── Deadlines & Intake ───────────────────────────────────────── */}
       <div id="deadlines" className="scroll-mt-24 space-y-4">
@@ -221,15 +247,18 @@ export function UniversityAdmissionsSection({
               Admissions notes
             </p>
             <p className="text-sm leading-6 text-muted-foreground">
-              {universityAdmissions?.deadlinesNote ??
-                "Seat availability, invitation timelines, fee notices, hostel options, and visa processing should be rechecked for the current cycle."}
+              {primaryProgram
+                ? programAdmissions?.deadlinesNote ??
+                  "No programme-specific deadline note is currently published. Confirm the current application deadline with the university."
+                : universityAdmissions?.deadlinesNote ??
+                  "No university-wide deadline note is currently published."}
             </p>
           </div>
         </div>
       </div>
 
       {/* ── Admissions Checks ────────────────────────────────────────── */}
-      {countryContent?.verificationChecklist?.length ? (
+      {!primaryProgram && countryContent?.verificationChecklist?.length ? (
         <div id="admissions-checks" className="scroll-mt-24 space-y-4">
           <SectionLabel>Admissions Checks</SectionLabel>
           <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
@@ -239,14 +268,13 @@ export function UniversityAdmissionsSection({
       ) : null}
 
       {/* ── Scholarships ─────────────────────────────────────────────── */}
+      {universityAdmissions?.scholarshipInfo ? (
       <div id="scholarships" className="scroll-mt-24 space-y-4">
         <SectionLabel>Scholarships</SectionLabel>
         <div className="overflow-hidden rounded-2xl border border-border bg-card divide-y divide-border">
           <div className="p-5 sm:p-6">
             <p className="text-sm leading-7 text-muted-foreground">
-              {universityAdmissions?.scholarshipInfo ??
-                countryContent?.scholarshipInfo ??
-                `Scholarship availability at ${university.name} should be confirmed directly with the university's international admissions or finance office.`}
+              {universityAdmissions.scholarshipInfo}
             </p>
           </div>
           <div className="grid gap-6 p-5 sm:grid-cols-2 sm:p-6">
@@ -271,9 +299,10 @@ export function UniversityAdmissionsSection({
           </div>
         </div>
       </div>
+      ) : null}
 
       {/* ── Licensing Pathway (medical streams only — no honest non-medical equivalent) ── */}
-      {isMedicalStream && (
+      {isMedicalStream && primaryProgram?.offering.professionalExamSupport.length ? (
         <div id="licensing" className="scroll-mt-24 space-y-4">
           <SectionLabel>Licensing Pathway</SectionLabel>
           <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
@@ -307,7 +336,7 @@ export function UniversityAdmissionsSection({
             }
           />
         </div>
-      )}
+      ) : null}
     </div>
   );
 }
@@ -328,46 +357,41 @@ export function UniversityEligibilitySection({
   countryContent: CountryContent | null;
 }) {
   const isMedicalStream = isMedical(primaryProgram);
+  const programAdmissions = hasProgramAdmissions(primaryProgram)
+    ? primaryProgram.offering.admissionsContent
+    : null;
   const universityAdmissions = university.admissionsContent;
   const course = primaryProgram?.course.shortName ?? "this program";
-  const countryName = primaryProgram?.country.name ?? "the study country";
+  const audienceEligibility = primaryProgram?.offering.audienceEligibility;
+  const audienceItems = [
+    ...(audienceEligibility?.eligibleAudiences ?? []).map(
+      (audience) => `Open to: ${audience}`,
+    ),
+    ...(audienceEligibility?.restrictions ?? []),
+  ];
 
   const eligibilityIntro =
-    universityAdmissions?.eligibility?.intro ??
-    countryContent?.eligibility.intro ??
-    (isMedicalStream
-      ? `We confirm current PCB, NEET, age, passport, and university-specific academic requirements for ${university.name} before any application is submitted.`
-      : `We confirm current academic, English-proficiency, age, passport, and university-specific requirements for ${university.name} before any application is submitted.`);
+    primaryProgram
+      ? programAdmissions?.eligibility.intro ??
+        audienceEligibility?.notes ??
+        "The programme's academic and document requirements are being verified with the university."
+      : universityAdmissions?.eligibility?.intro ??
+        countryContent?.eligibility.intro ??
+        "Eligibility requirements are confirmed with the university for each programme and intake.";
 
   const eligibilityItems =
-    universityAdmissions?.eligibility?.items ??
-    countryContent?.eligibility.items ??
-    (isMedicalStream
-      ? [
-          "Check current PCB and NEET expectations for Indian applicants.",
-          "Confirm minimum age and passport validity requirements.",
-          "Review whether the current course structure aligns with your long-term licensing plan.",
-        ]
-      : [
-          "Check current academic eligibility and English proficiency requirements for international applicants.",
-          "Confirm minimum age and passport validity requirements.",
-          "Review whether the current course structure aligns with your career or further-study plans.",
-        ]);
+    primaryProgram
+      ? programAdmissions?.eligibility.items ?? audienceItems
+      : universityAdmissions?.eligibility?.items ?? countryContent?.eligibility.items ?? [];
 
   const educationalDocuments =
-    universityAdmissions?.documentsRequired?.educational ??
-    countryContent?.documentsRequired.educational ??
-    (isMedicalStream
+    primaryProgram
       ? [
-          "Class 10 and 12 academic records",
-          "NEET scorecard, if required for your pathway",
-          "Passport and photographs",
+          ...(programAdmissions?.documentsRequired.academic ?? []),
+          ...(programAdmissions?.documentsRequired.application ?? []),
         ]
-      : [
-          "Class 10 and 12 (or equivalent) academic records",
-          "English proficiency scorecard (IELTS/TOEFL), if required for your pathway",
-          "Passport and photographs",
-        ]);
+      : universityAdmissions?.documentsRequired?.educational ??
+        countryContent?.documentsRequired.educational ?? [];
 
   const faqItems = isMedicalStream
     ? [
@@ -443,7 +467,13 @@ export function UniversityEligibilitySection({
         <SectionLabel>Eligibility Criteria</SectionLabel>
         <div className="overflow-hidden rounded-2xl border border-border bg-card p-5 sm:p-6">
           <p className="mb-5 text-sm leading-7 text-muted-foreground">{eligibilityIntro}</p>
-          <CheckList items={eligibilityItems} />
+          {eligibilityItems.length ? (
+            <CheckList items={eligibilityItems} />
+          ) : (
+            <p className="text-sm leading-7 text-muted-foreground">
+              Detailed academic requirements have not yet been published for this programme.
+            </p>
+          )}
         </div>
       </div>
 
@@ -458,6 +488,7 @@ export function UniversityEligibilitySection({
       )}
 
       {/* ── Educational documents ────────────────────────────────────── */}
+      {educationalDocuments.length ? (
       <div id="educational-documents" className="scroll-mt-24 space-y-4">
         <SectionLabel>Educational Documents</SectionLabel>
         <div className="rounded-2xl border border-border bg-card p-5 sm:p-6">
@@ -468,12 +499,15 @@ export function UniversityEligibilitySection({
           <CheckList items={educationalDocuments} />
         </div>
       </div>
+      ) : null}
 
       {/* ── Eligibility FAQ ──────────────────────────────────────────── */}
+      {!primaryProgram && (
       <div id="eligibility-faq" className="scroll-mt-24 space-y-4">
         <SectionLabel>Eligibility Questions</SectionLabel>
         <FaqAccordion items={faqItems} />
       </div>
+      )}
     </div>
   );
 }

@@ -1,6 +1,11 @@
-import "dotenv/config";
+import dotenv from "dotenv";
 
 import { defineConfig } from "drizzle-kit";
+
+// Drizzle runs outside Next.js, so load environment files in the same precedence
+// order as the app. Local credentials must override shared defaults.
+dotenv.config({ path: ".env" });
+dotenv.config({ path: ".env.local", override: true });
 
 export default defineConfig({
   out: "./drizzle",

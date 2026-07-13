@@ -125,6 +125,12 @@ Audience eligibility is programme data, not a global publication gate. Research 
 residency, nationality, prior-qualification, location and visa restrictions explicitly. A local-only
 programme can still have a factual catalogue page when its restriction is prominent.
 
+For every programme, populate `admissionsContent` with the programme-specific eligibility,
+application steps, academic documents, application documents, and any verified deadline or
+programme-specific visa note. Do not let a programme inherit university, country or medical
+defaults. Where the official source is incomplete, publish only verified facts and log the missing
+item for follow-up; never fill the gap with generic NEET, PCB, language-test or visa text.
+
 ### 4. Build the complete publishing payload
 
 AI agents must return one complete structured payload matching the destination schema and page
