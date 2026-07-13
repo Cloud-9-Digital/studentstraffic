@@ -67,11 +67,14 @@ import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 // treatment instead of showing an unrelated stock photo (see AGENTS.md image
 // rules: no generic/irrelevant imagery on the hero).
 const GENERIC_COUNTRY_HERO_IMAGE_URL = "/images/home/country-options.jpg";
+const MAX_STATIC_COUNTRY_PARAMS = 1;
 
 export async function generateStaticParams() {
   const countries = await getCountries();
   return ensureNonEmptyStaticParams(
-    countries.map((country) => ({ slug: country.slug })),
+    countries
+      .slice(0, MAX_STATIC_COUNTRY_PARAMS)
+      .map((country) => ({ slug: country.slug })),
     { slug: "__country-fallback__" },
   );
 }
