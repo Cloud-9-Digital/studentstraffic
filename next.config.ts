@@ -94,6 +94,10 @@ const nextConfig: NextConfig = {
     serverActions: {
       bodySizeLimit: "15mb",
     },
+    // Catalog pages retain substantial database-backed render state. Render
+    // one page at a time per worker to keep peak heap below Next's isolated
+    // worker limit while still using multiple workers.
+    staticGenerationMaxConcurrency: 1,
   },
   async redirects() {
     return [
