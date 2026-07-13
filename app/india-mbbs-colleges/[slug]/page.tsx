@@ -20,7 +20,7 @@ import {
 } from "@/lib/structured-data";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
-const STATIC_COLLEGE_SAMPLE_SIZE = 24;
+const STATIC_COLLEGE_SAMPLE_SIZE = 1;
 
 function getDatePart(value?: string) {
   return value?.slice(0, 10);

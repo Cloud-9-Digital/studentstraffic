@@ -39,21 +39,11 @@ import {
   getItemListStructuredDataId,
   getStructuredDataGraph,
 } from "@/lib/structured-data";
-import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 import {
   formatCurrencyUsd,
   formatProgramMedium,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
-
-export async function generateStaticParams() {
-  const cities = await getUniqueCities();
-  const filteredCities = cities.filter((c) => c.universityCount >= 2);
-  return ensureNonEmptyStaticParams(
-    filteredCities.slice(0, 1).map((c) => ({ slug: c.slug })),
-    { slug: "__city-fallback__" },
-  );
-}
 
 export async function generateMetadata({
   params,

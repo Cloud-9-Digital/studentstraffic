@@ -18,7 +18,6 @@ import {
 } from "@/lib/content-governance";
 import {
   getCourseBySlug,
-  getCourses,
   getProgramsForCourse,
 } from "@/lib/data/catalog";
 import { getBudgetGuidesForCourse } from "@/lib/discovery-pages";
@@ -33,15 +32,6 @@ import {
   getStructuredDataGraph,
 } from "@/lib/structured-data";
 import { getCountryHref } from "@/lib/routes";
-import { ensureNonEmptyStaticParams } from "@/lib/static-params";
-
-export async function generateStaticParams() {
-  const courses = await getCourses();
-  return ensureNonEmptyStaticParams(
-    courses.slice(0, 1).map((course) => ({ slug: course.slug })),
-    { slug: "__course-fallback__" },
-  );
-}
 
 async function getCoursePageData(slug: string) {
   "use cache";
