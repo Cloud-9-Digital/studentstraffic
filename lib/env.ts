@@ -36,9 +36,6 @@ const envSchema = z.object({
   // Rate limiting and caching (Upstash Redis)
   UPSTASH_REDIS_REST_URL: z.string().url().optional(),
   UPSTASH_REDIS_REST_TOKEN: z.string().min(1).optional(),
-  // Error tracking (Sentry)
-  NEXT_PUBLIC_SENTRY_DSN: z.string().url().optional(),
-  SENTRY_AUTH_TOKEN: z.string().min(1).optional(),
   NEXT_PUBLIC_AGORA_APP_ID: z.string().min(1).optional(),
   AGORA_APP_CERTIFICATE: z.string().min(1).optional(),
   ABLY_API_KEY: z.string().min(1).optional(),
@@ -82,8 +79,6 @@ const parsedEnv = envSchema.safeParse({
   SKIP_LEAD_WHATSAPP: optionalEnv(process.env.SKIP_LEAD_WHATSAPP),
   UPSTASH_REDIS_REST_URL: optionalEnv(process.env.UPSTASH_REDIS_REST_URL),
   UPSTASH_REDIS_REST_TOKEN: optionalEnv(process.env.UPSTASH_REDIS_REST_TOKEN),
-  NEXT_PUBLIC_SENTRY_DSN: optionalEnv(process.env.NEXT_PUBLIC_SENTRY_DSN),
-  SENTRY_AUTH_TOKEN: optionalEnv(process.env.SENTRY_AUTH_TOKEN),
   NEXT_PUBLIC_AGORA_APP_ID: optionalEnv(process.env.NEXT_PUBLIC_AGORA_APP_ID),
   AGORA_APP_CERTIFICATE: optionalEnv(process.env.AGORA_APP_CERTIFICATE),
   ABLY_API_KEY: optionalEnv(process.env.ABLY_API_KEY),
@@ -174,8 +169,6 @@ export const env = {
   skipLeadWhatsapp: parsedEnv.data.SKIP_LEAD_WHATSAPP === "1",
   upstashRedisRestUrl: parsedEnv.data.UPSTASH_REDIS_REST_URL,
   upstashRedisRestToken: parsedEnv.data.UPSTASH_REDIS_REST_TOKEN,
-  sentryDsn: parsedEnv.data.NEXT_PUBLIC_SENTRY_DSN,
-  sentryAuthToken: parsedEnv.data.SENTRY_AUTH_TOKEN,
   agoraAppId: parsedEnv.data.NEXT_PUBLIC_AGORA_APP_ID,
   agoraAppCertificate: parsedEnv.data.AGORA_APP_CERTIFICATE,
   ablyApiKey: parsedEnv.data.ABLY_API_KEY,
@@ -183,7 +176,6 @@ export const env = {
   hasUpstashRedis: Boolean(
     parsedEnv.data.UPSTASH_REDIS_REST_URL && parsedEnv.data.UPSTASH_REDIS_REST_TOKEN
   ),
-  hasSentry: Boolean(parsedEnv.data.NEXT_PUBLIC_SENTRY_DSN),
   hasAgoraVoice: Boolean(
     parsedEnv.data.NEXT_PUBLIC_AGORA_APP_ID && parsedEnv.data.AGORA_APP_CERTIFICATE
   ),

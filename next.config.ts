@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
-import { withSentryConfig } from "@sentry/nextjs";
 
 const mediaHostnames = (process.env.MEDIA_HOSTNAMES ?? "")
   .split(",")
   .map((hostname) => hostname.trim())
   .filter(Boolean);
 const isDevelopment = process.env.NODE_ENV !== "production";
-const shouldUploadSentrySourceMaps = Boolean(process.env.SENTRY_AUTH_TOKEN);
 const contentSecurityPolicy = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com${
@@ -179,32 +177,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-// Sentry configuration
-export default withSentryConfig(nextConfig, {
-  // Sentry options
-  org: process.env.SENTRY_ORG,
-  project: process.env.SENTRY_PROJECT,
-
-  // Only print logs for uploading source maps in CI
-  silent: !process.env.CI,
-
-  // Upload source maps during production builds
-  widenClientFileUpload: shouldUploadSentrySourceMaps,
-
-  // Route browser requests to Sentry through a Next.js rewrite
-  tunnelRoute: "/monitoring",
-
-  // Source maps configuration
-  sourcemaps: {
-    disable: !shouldUploadSentrySourceMaps,
-  },
-
-  webpack: {
-    // Automatically tree-shake Sentry logger statements
-    treeshake: {
-      removeDebugLogging: true,
-    },
-    // Enables automatic instrumentation of Vercel Cron Monitors
-    automaticVercelMonitors: true,
-  },
-});
+export default nextConfig;
