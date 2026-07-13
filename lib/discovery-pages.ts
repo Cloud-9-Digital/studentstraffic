@@ -6,6 +6,8 @@ import {
   getCountries,
   getCourseBySlug,
   getCourses,
+  getProgramsForUniversity,
+  getUniversityBySlug,
   listFinderPrograms,
 } from "@/lib/data/catalog";
 import { getDb } from "@/lib/db/server";
@@ -175,15 +177,75 @@ export async function getComparisonGuideBySlug(slug: string) {
   return guides.find((guide) => guide.slug === slug) ?? null;
 }
 
+async function buildComparisonGuidesForUniversity(
+  universitySlug: string,
+  limit: number,
+) {
+  const university = await getUniversityBySlug(universitySlug);
+  if (!university) return [];
+
+  const relatedUniversitySlugs = [
+    ...new Set(
+      university.similarUniversitySlugs.filter(
+        (slug) => slug && slug !== universitySlug,
+      ),
+    ),
+  ].slice(0, Math.max(0, limit));
+
+  if (relatedUniversitySlugs.length === 0) return [];
+
+  const [universityPrograms, ...relatedProgramGroups] = await Promise.all([
+    getProgramsForUniversity(universitySlug),
+    ...relatedUniversitySlugs.map((slug) => getProgramsForUniversity(slug)),
+  ]);
+  const primaryProgram = universityPrograms[0];
+
+  if (!primaryProgram) return [];
+
+  return relatedProgramGroups.flatMap((programs): ComparisonGuide[] => {
+    const relatedProgram = programs[0];
+    if (!relatedProgram) return [];
+
+    const [left, right] =
+      primaryProgram.university.slug.localeCompare(
+        relatedProgram.university.slug,
+      ) <= 0
+        ? [primaryProgram, relatedProgram]
+        : [relatedProgram, primaryProgram];
+
+    return [
+      {
+        kind: "university",
+        slug: getComparisonGuideSlug(
+          primaryProgram.university.slug,
+          relatedProgram.university.slug,
+        ),
+        left,
+        right,
+      },
+    ];
+  });
+}
+
+async function getCachedComparisonGuidesForUniversity(
+  universitySlug: string,
+  limit: number,
+) {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("comparison-guides");
+  cacheTag(`university-comparison-guides:${universitySlug}`);
+
+  return buildComparisonGuidesForUniversity(universitySlug, limit);
+}
+
 export async function getComparisonGuidesForUniversity(universitySlug: string, limit = 2) {
-  const guides = await getCachedComparisonGuides();
-  return guides
-    .filter(
-      (guide) =>
-        guide.left.university.slug === universitySlug ||
-        guide.right.university.slug === universitySlug
-    )
-    .slice(0, limit);
+  return getCachedComparisonGuidesForUniversity(
+    universitySlug,
+    Math.max(0, limit),
+  );
 }
 
 async function buildCountryComparisonGuides() {

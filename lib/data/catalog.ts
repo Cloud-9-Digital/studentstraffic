@@ -4,6 +4,7 @@ import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { cacheLife, cacheTag } from "next/cache";
+import { cache } from "react";
 import { and, asc, count, desc, eq, gte, ilike, inArray, lte, or, sql } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
@@ -768,14 +769,11 @@ export async function getUniversities() {
   );
 }
 
-export async function getUniversityBySlug(slug: string) {
-  "use cache";
-
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("universities");
-  cacheTag(`university:${slug}`);
-
+// Deduplicate metadata/page reads within one render without persisting a
+// negative lookup. University records are inserted directly by catalogue
+// workers, so a long-lived cached null would keep a newly published page in a
+// "not found" state even after the row exists.
+export const getUniversityBySlug = cache(async (slug: string) => {
   const db = getDb();
   if (!db) return null;
 
@@ -798,7 +796,7 @@ export async function getUniversityBySlug(slug: string) {
     .limit(1);
 
   return row ? mapUniversityRow(row.university, row.countrySlug) : null;
-}
+});
 
 export async function getProgramOfferings() {
   "use cache";

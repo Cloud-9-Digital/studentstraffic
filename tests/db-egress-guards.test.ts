@@ -41,3 +41,22 @@ test("large sitemap collections use count and paginated slice queries", async ()
   assert.match(universitySource, /getUniversitySitemapSlice/);
   assert.doesNotMatch(universitySource, /getUniversities/);
 });
+
+test("university related comparisons do not scan the full program catalog", async () => {
+  const source = await readProjectFile("lib/discovery-pages.ts");
+  const start = source.indexOf(
+    "export async function getComparisonGuidesForUniversity",
+  );
+  const end = source.indexOf(
+    "async function buildCountryComparisonGuides",
+    start,
+  );
+  const universityComparisonSource = source.slice(start, end);
+
+  assert.match(
+    universityComparisonSource,
+    /getCachedComparisonGuidesForUniversity/,
+  );
+  assert.doesNotMatch(universityComparisonSource, /getCachedComparisonGuides\(\)/);
+  assert.match(source, /getProgramsForUniversity\(universitySlug\)/);
+});
