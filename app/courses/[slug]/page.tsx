@@ -38,7 +38,7 @@ import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 export async function generateStaticParams() {
   const courses = await getCourses();
   return ensureNonEmptyStaticParams(
-    courses.map((course) => ({ slug: course.slug })),
+    courses.slice(0, 1).map((course) => ({ slug: course.slug })),
     { slug: "__course-fallback__" },
   );
 }

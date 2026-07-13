@@ -89,6 +89,11 @@ const nextConfig: NextConfig = {
     serverActions: {
       bodySizeLimit: "15mb",
     },
+    // Keep database-backed prerendering gentle on both the build worker heap
+    // and Neon. High-cardinality routes render on demand after one build-time
+    // validation sample, so workers do not need broad concurrency here.
+    staticGenerationMaxConcurrency: 2,
+    staticGenerationRetryCount: 2,
   },
   async redirects() {
     return [
