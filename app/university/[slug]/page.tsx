@@ -61,7 +61,7 @@ import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 // already render on-demand by default (dynamicParams isn't available under
 // cacheComponents) and get cached by the existing cacheLife("hours")/cacheTag()
 // machinery below.
-const MAX_STATIC_UNIVERSITY_PARAMS = 1;
+const MAX_STATIC_UNIVERSITY_PARAMS = 300;
 
 export async function generateStaticParams() {
   const universities = await getUniversities();

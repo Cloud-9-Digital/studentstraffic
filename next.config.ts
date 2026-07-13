@@ -77,6 +77,10 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   cacheComponents: true,
+  // Cache Components enables prerender source maps by default. Keeping them
+  // disabled prevents static-generation workers from retaining source-map
+  // data while rendering the production catalog.
+  enablePrerenderSourceMaps: false,
   cacheLife: {
     // Catalog entities change infrequently. Keep them hot for a week and
     // invalidate their tags explicitly after an editorial/data publish.
