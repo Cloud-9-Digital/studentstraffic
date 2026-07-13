@@ -97,3 +97,34 @@ test("program importer batches relationship lookups and uses scoped revalidation
   assert.doesNotMatch(source, /\["catalog", "universities", "program-offerings", "courses"\]/);
   assert.match(source, /programSlugs: requestedProgramSlugs/);
 });
+
+test("country and course pages use narrow summaries plus bounded previews", async () => {
+  const [catalogSource, countryPage, coursePage, universityPage] = await Promise.all([
+    readProjectFile("lib/data/catalog.ts"),
+    readProjectFile("app/countries/[slug]/page.tsx"),
+    readProjectFile("app/courses/[slug]/page.tsx"),
+    readProjectFile("app/university/[slug]/page.tsx"),
+  ]);
+
+  assert.doesNotMatch(catalogSource, /export async function getProgramsForCountry/);
+  assert.doesNotMatch(catalogSource, /export async function getProgramsForCourse/);
+  assert.match(countryPage, /getCountryProgramDirectoryRows/);
+  assert.match(countryPage, /getProgramPreviewForCountry\(country\.slug, 8\)/);
+  assert.match(coursePage, /getCourseProgramDirectorySummary/);
+  assert.match(coursePage, /getProgramPreviewForCourse\(course\.slug, 3\)/);
+  assert.match(universityPage, /queryFinderCardProgramsPage\(\{ country: countrySlug \}, 1, 13\)/);
+});
+
+test("high-cardinality directories progressively load bounded batches", async () => {
+  const [comparePage, coursePage, compareApi, courseApi] = await Promise.all([
+    readProjectFile("app/compare/page.tsx"),
+    readProjectFile("app/courses/page.tsx"),
+    readProjectFile("app/api/comparisons/route.ts"),
+    readProjectFile("app/api/courses-directory/route.ts"),
+  ]);
+
+  assert.match(comparePage, /slice\(0, initialComparisonCount\)/);
+  assert.match(coursePage, /courseCards\.slice\(0, 24\)/);
+  assert.match(compareApi, /const PAGE_SIZE = 24/);
+  assert.match(courseApi, /const pageSize = 24/);
+});

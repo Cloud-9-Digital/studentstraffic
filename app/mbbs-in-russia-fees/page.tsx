@@ -4,7 +4,7 @@ import {
   type GuideSection,
   type StudyAbroadGuidePageProps,
 } from "@/components/site/study-abroad-guide-page";
-import { getProgramsForCountry } from "@/lib/data/catalog";
+import { listFinderPrograms } from "@/lib/data/catalog";
 import { getRelatedContent } from "@/lib/data/related-content";
 import { studyAbroadGuides } from "@/lib/data/study-abroad-guides";
 
@@ -25,10 +25,9 @@ function formatUsd(value: number): string {
  * "University-wise MBBS fees" table into the guide's sections (after the intro).
  */
 async function buildRussiaFeesGuide(): Promise<StudyAbroadGuidePageProps> {
-  const programs = (await getProgramsForCountry("russia"))
+  const programs = (await listFinderPrograms({ country: "russia", course: "mbbs" }))
     .filter(
       (program) =>
-        program.course.slug === "mbbs" &&
         program.offering.published &&
         program.offering.annualTuitionUsd > 0,
     )

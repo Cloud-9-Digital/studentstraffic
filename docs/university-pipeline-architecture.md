@@ -285,6 +285,14 @@ published programmes per country/budget side), fee ranges, counts, university de
 lead flows must remain functionally equivalent. Any future publisher must follow the same
 incremental-search and scoped-revalidation pattern.
 
+The same rule applies to public catalogue pages. Country and course guides must calculate their
+counts, fee ranges, fields and destination lists from projected summary queries, then fetch only the
+small number of full programme rows actually rendered or emitted as structured data. University
+related-content carousels use a bounded finder-card query rather than loading every programme in the
+country. High-cardinality `/compare` and `/courses` directories render the first 24 unchanged cards
+and progressively fetch cached 24-item batches, preventing multi-megabyte HTML responses without
+removing any option from the user journey.
+
 ## Cross-agent publishing coordination
 
 `research/university-publishing-ledger.csv` is the shared coordination ledger for university work.

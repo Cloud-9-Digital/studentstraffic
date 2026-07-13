@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { CountryFeesPage, buildCountryFeesMetadata } from "@/components/site/country-fees-page";
-import { getProgramsForCountry } from "@/lib/data/catalog";
+import { listFinderPrograms } from "@/lib/data/catalog";
 
 const path = "/mbbs-in-vietnam-fees";
 const publishedDate = "2026-05-22";
@@ -22,9 +22,7 @@ export const metadata: Metadata = buildCountryFeesMetadata({
 });
 
 export default async function MbbsInVietnamFeesPage() {
-  const programs = (await getProgramsForCountry("vietnam")).filter(
-    (program) => program.course.slug === "mbbs",
-  );
+  const programs = await listFinderPrograms({ country: "vietnam", course: "mbbs" });
 
   return (
     <CountryFeesPage

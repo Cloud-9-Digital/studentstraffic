@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-import { getCountryBySlug, getProgramsForCountry } from "@/lib/data/catalog";
+import { getCountryBySlug, getCountryProgramDirectoryRows } from "@/lib/data/catalog";
 import {
   createSeoImage,
   ogImageContentType,
@@ -23,7 +23,7 @@ export default async function Image({
     notFound();
   }
 
-  const programs = await getProgramsForCountry(country.slug);
+  const programs = await getCountryProgramDirectoryRows(country.slug);
   const uniqueUniversities = new Set(programs.map((program) => program.university.slug));
   const primaryCourse = programs[0]?.course.shortName ?? "Study Abroad";
 

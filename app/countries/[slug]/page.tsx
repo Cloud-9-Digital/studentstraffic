@@ -32,10 +32,11 @@ import { catalogReviewedAt } from "@/lib/content-governance";
 import {
   getCountries,
   getCountryBySlug,
+  getCountryProgramDirectoryRows,
   getLandingPageBySlug,
-  getProgramsForCountry,
+  getProgramPreviewForCountry,
 } from "@/lib/data/catalog";
-import type { FinderProgram } from "@/lib/data/types";
+import type { CountryProgramDirectoryRow } from "@/lib/data/catalog";
 import { and, eq, ilike } from "drizzle-orm";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
@@ -91,15 +92,20 @@ async function getCountryPageData(slug: string) {
   if (!country) {
     return {
       country: null,
-      programs: [],
+      programRows: [],
+      structuredPrograms: [],
     };
   }
 
-  const programs = await getProgramsForCountry(country.slug);
+  const [programRows, structuredPrograms] = await Promise.all([
+    getCountryProgramDirectoryRows(country.slug),
+    getProgramPreviewForCountry(country.slug, 8),
+  ]);
 
   return {
     country,
-    programs,
+    programRows,
+    structuredPrograms,
   };
 }
 
@@ -109,7 +115,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const { country } = await getCountryPageData(slug);
+  const country = await getCountryBySlug(slug);
 
   if (!country) {
     return { title: "Country Not Found" };
@@ -147,7 +153,7 @@ export default async function CountryPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const { country, programs } = await getCountryPageData(slug);
+  const { country, programRows: programs, structuredPrograms } = await getCountryPageData(slug);
 
   if (!country) {
     notFound();
@@ -215,7 +221,7 @@ export default async function CountryPage({
   const uniqueMediums = [
     ...new Set(
       programs.map((p) =>
-        formatProgramMedium(p.offering.medium, p.country.slug),
+        formatProgramMedium(p.offering.medium, country.slug),
       ),
     ),
   ];
@@ -281,11 +287,11 @@ export default async function CountryPage({
       dateModified: catalogReviewedAt,
       image: heroImage.url,
     }),
-    programs.length
+    structuredPrograms.length
       ? getProgramItemListStructuredData({
           path,
           name: `${country.name} university options`,
-          programs,
+          programs: structuredPrograms,
         })
       : null,
     faqs.length ? getFaqStructuredData(faqs, path) : null,
@@ -467,7 +473,7 @@ async function CountryRelatedBlogPost({
 
 // ── Data shaping helpers ──────────────────────────────────────────────────
 
-function buildStudyFields(programs: FinderProgram[]): CountryStudyField[] {
+function buildStudyFields(programs: CountryProgramDirectoryRow[]): CountryStudyField[] {
   const streams = new Map<
     string,
     {
@@ -515,7 +521,7 @@ function buildStudyFields(programs: FinderProgram[]): CountryStudyField[] {
 }
 
 function buildPopularUniversities(
-  programs: FinderProgram[],
+  programs: CountryProgramDirectoryRow[],
   limit: number
 ): { universities: CountryUniversityCardData[]; totalCount: number } {
   const byUniversity = new Map<

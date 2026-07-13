@@ -28,7 +28,7 @@ import {
 import {
   cityNameToSlug,
   getCountryBySlug,
-  getProgramsForCountry,
+  queryFinderCardProgramsPage,
   getProgramsForUniversity,
   getPublishedUniversityParams,
   getUniversityBySlug,
@@ -378,7 +378,6 @@ export default async function UniversityDetailPage({
                 countrySlug={university.countrySlug}
                 countryName={country.name}
                 courseSlug={primaryProgram?.course.slug}
-                courseShortName={primaryProgram?.course.shortName}
               />
             </Suspense>
           </div>
@@ -399,17 +398,13 @@ async function getUniversityRelatedData(
 ) {
   const [comparisonGuides, countryPrograms, relatedContent] = await Promise.all([
     getComparisonGuidesForUniversity(universitySlug, 10),
-    getProgramsForCountry(countrySlug),
+    queryFinderCardProgramsPage({ country: countrySlug }, 1, 13),
     getRelatedContent({ countrySlug, courseSlug, excludeSlug: universitySlug, limit: 6 }),
   ]);
 
-  const otherCountryPrograms = Array.from(
-    new Map(
-      countryPrograms
-        .filter((program) => program.university.slug !== universitySlug)
-        .map((program) => [program.university.slug, program])
-    ).values()
-  ).slice(0, 12);
+  const otherCountryPrograms = countryPrograms.programs
+    .filter((program) => program.university.slug !== universitySlug)
+    .slice(0, 12);
 
   const relatedGuides = relatedContent.filter((item) => item.type === "guide");
 
@@ -421,13 +416,11 @@ async function UniversityRelatedSection({
   countrySlug,
   countryName,
   courseSlug,
-  courseShortName,
 }: {
   universitySlug: string;
   countrySlug: string;
   countryName: string;
   courseSlug?: string;
-  courseShortName?: string;
 }) {
   const { comparisonGuides, otherCountryPrograms, relatedGuides } =
     await getUniversityRelatedData(universitySlug, countrySlug, courseSlug);

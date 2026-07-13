@@ -18,7 +18,6 @@ import type {
   FinderOptions,
   FinderFilters,
   FinderProgram,
-  FinderProgramsPage,
   FinderSort,
   BlogPostSearchMetadata,
   IndiaMbbsCard,
@@ -645,6 +644,19 @@ export async function getCountries() {
   return rows.map(mapCountryRow);
 }
 
+export async function getCountryCount() {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("countries");
+
+  const db = getDb();
+  if (!db) return 0;
+  const [row] = await db.select({ value: count() }).from(countriesTable);
+  return row?.value ?? 0;
+}
+
 export async function getCountryBySlug(slug: string) {
   "use cache";
 
@@ -741,34 +753,6 @@ export async function getCourseCatalogStats() {
     .groupBy(coursesTable.slug);
 }
 
-export async function getUniversities() {
-  "use cache";
-
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("universities");
-
-  const db = getDb();
-  if (!db) return [];
-
-  const rows = await db
-    .select({
-      university: universitiesTable,
-      countrySlug: countriesTable.slug,
-    })
-    .from(universitiesTable)
-    .innerJoin(
-      countriesTable,
-      eq(universitiesTable.countryId, countriesTable.id),
-    )
-    .where(eq(universitiesTable.published, true))
-    .orderBy(desc(universitiesTable.featured), asc(universitiesTable.name));
-
-  return rows.map((row) =>
-    mapUniversityRow(row.university, row.countrySlug),
-  );
-}
-
 // Deduplicate metadata/page reads within one render without persisting a
 // negative lookup. University records are inserted directly by catalogue
 // workers, so a long-lived cached null would keep a newly published page in a
@@ -797,73 +781,6 @@ export const getUniversityBySlug = cache(async (slug: string) => {
 
   return row ? mapUniversityRow(row.university, row.countrySlug) : null;
 });
-
-export async function getProgramOfferings() {
-  "use cache";
-
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("program-offerings");
-
-  const db = getDb();
-  if (!db) return [];
-
-  const rows = await db
-    .select({
-      offering: programOfferingsTable,
-      universitySlug: universitiesTable.slug,
-      courseSlug: coursesTable.slug,
-    })
-    .from(programOfferingsTable)
-    .innerJoin(
-      universitiesTable,
-      eq(programOfferingsTable.universityId, universitiesTable.id),
-    )
-    .innerJoin(
-      coursesTable,
-      eq(programOfferingsTable.courseId, coursesTable.id),
-    )
-    .where(
-      and(
-        eq(programOfferingsTable.published, true),
-        eq(universitiesTable.published, true),
-      ),
-    )
-    .orderBy(asc(programOfferingsTable.slug));
-
-  return rows.map((row) =>
-    mapProgramOfferingRow(
-      row.offering,
-      row.universitySlug,
-      row.courseSlug,
-    ),
-  );
-}
-
-export async function getJoinUniversityOptions() {
-  "use cache";
-
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("universities");
-
-  const db = getDb();
-  if (!db) return [];
-
-  return db
-    .select({
-      id: universitiesTable.id,
-      name: universitiesTable.name,
-      countryId: universitiesTable.countryId,
-      countryName: countriesTable.name,
-    })
-    .from(universitiesTable)
-    .innerJoin(
-      countriesTable,
-      eq(universitiesTable.countryId, countriesTable.id),
-    )
-    .orderBy(asc(universitiesTable.name));
-}
 
 export async function getCatalogLinkOptions() {
   "use cache";
@@ -1517,6 +1434,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
 
 async function selectFinderProgramsFromDatabase(
   whereClause?: ReturnType<typeof and>,
+  limit?: number,
 ): Promise<FinderProgram[] | null> {
   const db = getDb();
 
@@ -1524,7 +1442,7 @@ async function selectFinderProgramsFromDatabase(
     return null;
   }
 
-  const rows = await db
+  const query = db
     .select({
       countrySlug: countriesTable.slug,
       countryName: countriesTable.name,
@@ -1601,7 +1519,11 @@ async function selectFinderProgramsFromDatabase(
     .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
     .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
     .where(whereClause)
-    .orderBy(...getFinderProgramOrder(undefined));
+    .orderBy(...getFinderProgramOrder(undefined))
+    .$dynamic();
+  const rows = limit == null
+    ? await query
+    : await query.limit(Math.max(0, limit));
 
   return rows.map((row) => mapFinderProgramRow(row as FinderProgramRow));
 }
@@ -1754,36 +1676,6 @@ export async function listFinderPrograms(filters: FinderFilters) {
   });
 
   return sortFinderPrograms(filteredPrograms, getFinderSort(filters.sort));
-}
-
-export async function getFinderProgramsPage(
-  filters: FinderFilters,
-  page = 1,
-  pageSize = finderPageSize,
-): Promise<FinderProgramsPage> {
-  "use cache";
-
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("finder");
-
-  const allPrograms = getOneFinderProgramPerUniversity(
-    await listFinderPrograms(filters),
-  );
-  const totalItems = allPrograms.length;
-  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
-  const currentPage = Math.min(Math.max(page, 1), totalPages);
-  const start = (currentPage - 1) * pageSize;
-
-  return {
-    programs: allPrograms.slice(start, start + pageSize),
-    totalItems,
-    totalPages,
-    currentPage,
-    pageSize,
-    hasPreviousPage: currentPage > 1,
-    hasNextPage: currentPage < totalPages,
-  };
 }
 
 function toFinderCardProgram(program: FinderProgram): FinderCardProgram {
@@ -1960,54 +1852,170 @@ export async function getFeaturedPrograms(limit = 4) {
     .slice(0, Math.max(0, limit));
 }
 
-export async function getProgramsForCountry(countrySlug: string) {
+export async function getProgramPreviewForCountry(countrySlug: string, limit = 8) {
   "use cache";
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("finder");
   cacheTag("program-offerings");
-  cacheTag("countries");
   cacheTag(`country-programs:${countrySlug}`);
 
-  const databasePrograms = await selectFinderProgramsFromDatabase(
+  return (await selectFinderProgramsFromDatabase(
     and(
+      eq(countriesTable.slug, countrySlug),
       eq(programOfferingsTable.published, true),
       eq(universitiesTable.published, true),
-      eq(countriesTable.slug, countrySlug),
     ),
-  );
-
-  if (databasePrograms) {
-    return databasePrograms;
-  }
-
-  return listFinderPrograms({ country: countrySlug });
+    limit,
+  )) ?? [];
 }
 
-export async function getProgramsForCourse(courseSlug: string) {
+export type CountryProgramDirectoryRow = {
+  university: {
+    slug: string;
+    name: string;
+    city: string;
+    type: University["type"];
+    logoUrl?: string;
+    coverImageUrl?: string;
+    featured: boolean;
+  };
+  course: {
+    slug: string;
+    shortName: string;
+    stream: Course["stream"];
+    durationYears: number;
+  };
+  offering: {
+    annualTuitionUsd: number;
+    livingUsd: number;
+    medium: ProgramOffering["medium"];
+    intakeMonths: string[];
+  };
+};
+
+export async function getCountryProgramDirectoryRows(countrySlug: string) {
   "use cache";
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("finder");
   cacheTag("program-offerings");
-  cacheTag("courses");
-  cacheTag(`course-programs:${courseSlug}`);
+  cacheTag(`country-programs:${countrySlug}`);
 
-  const databasePrograms = await selectFinderProgramsFromDatabase(
-    and(
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      universitySlug: universitiesTable.slug,
+      universityName: universitiesTable.name,
+      universityCity: universitiesTable.city,
+      universityType: universitiesTable.type,
+      universityLogoUrl: universitiesTable.logoUrl,
+      universityCoverImageUrl: universitiesTable.coverImageUrl,
+      universityFeatured: universitiesTable.featured,
+      courseSlug: coursesTable.slug,
+      courseShortName: coursesTable.shortName,
+      courseStream: coursesTable.stream,
+      courseDurationYears: coursesTable.durationYears,
+      annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
+      livingUsd: programOfferingsTable.livingUsd,
+      medium: programOfferingsTable.medium,
+      intakeMonths: programOfferingsTable.intakeMonths,
+    })
+    .from(programOfferingsTable)
+    .innerJoin(
+      universitiesTable,
+      eq(programOfferingsTable.universityId, universitiesTable.id),
+    )
+    .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+    .where(and(
+      eq(countriesTable.slug, countrySlug),
       eq(programOfferingsTable.published, true),
       eq(universitiesTable.published, true),
+    ))
+    .orderBy(...getFinderProgramOrder(undefined));
+
+  return rows.map((row): CountryProgramDirectoryRow => ({
+    university: {
+      slug: row.universitySlug,
+      name: getUniversityDisplayName(row.universityName),
+      city: row.universityCity,
+      type: row.universityType as University["type"],
+      logoUrl: row.universityLogoUrl ?? undefined,
+      coverImageUrl: row.universityCoverImageUrl ?? undefined,
+      featured: row.universityFeatured,
+    },
+    course: {
+      slug: row.courseSlug,
+      shortName: row.courseShortName,
+      stream: row.courseStream,
+      durationYears: row.courseDurationYears,
+    },
+    offering: {
+      annualTuitionUsd: row.annualTuitionUsd,
+      livingUsd: row.livingUsd,
+      medium: row.medium as ProgramOffering["medium"],
+      intakeMonths: row.intakeMonths,
+    },
+  }));
+}
+
+export async function getProgramPreviewForCourse(courseSlug: string, limit = 3) {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("program-offerings");
+  cacheTag(`course-programs:${courseSlug}`);
+
+  return (await selectFinderProgramsFromDatabase(
+    and(
       eq(coursesTable.slug, courseSlug),
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
     ),
-  );
+    limit,
+  )) ?? [];
+}
 
-  if (databasePrograms) {
-    return databasePrograms;
-  }
+export async function getCourseProgramDirectorySummary(courseSlug: string) {
+  "use cache";
 
-  return listFinderPrograms({ course: courseSlug });
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("program-offerings");
+  cacheTag(`course-programs:${courseSlug}`);
+
+  const db = getDb();
+  if (!db) return { programCount: 0, countries: [] };
+
+  const rows = await db
+    .select({
+      countrySlug: countriesTable.slug,
+      countryName: countriesTable.name,
+      programCount: sql<number>`count(${programOfferingsTable.id})::int`,
+    })
+    .from(programOfferingsTable)
+    .innerJoin(
+      universitiesTable,
+      eq(programOfferingsTable.universityId, universitiesTable.id),
+    )
+    .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+    .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+    .where(and(
+      eq(coursesTable.slug, courseSlug),
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+    ))
+    .groupBy(countriesTable.slug, countriesTable.name)
+    .orderBy(asc(countriesTable.name));
+
+  return {
+    programCount: rows.reduce((total, row) => total + row.programCount, 0),
+    countries: rows.map((row) => ({ slug: row.countrySlug, name: row.countryName })),
+  };
 }
 
 export async function getProgramsForUniversity(universitySlug: string) {
@@ -2098,6 +2106,14 @@ export async function getProgramsForCity(citySlug: string) {
 }
 
 export async function getUniqueCities() {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+  cacheTag("program-offerings");
+  cacheTag("cities");
+
   const db = getDb();
 
   if (db) {
@@ -2291,34 +2307,6 @@ export async function getPublishedUniversityParams(limit: number) {
     .where(eq(universitiesTable.published, true))
     .orderBy(desc(universitiesTable.featured), asc(universitiesTable.name))
     .limit(Math.max(0, limit));
-}
-
-export async function getPublishedProgramSlugs() {
-  "use cache";
-
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("program-offerings");
-
-  const db = getDb();
-  if (!db) return [];
-
-  const rows = await db
-    .select({ slug: programOfferingsTable.slug })
-    .from(programOfferingsTable)
-    .innerJoin(
-      universitiesTable,
-      eq(programOfferingsTable.universityId, universitiesTable.id),
-    )
-    .where(
-      and(
-        eq(programOfferingsTable.published, true),
-        eq(universitiesTable.published, true),
-      ),
-    )
-    .orderBy(asc(programOfferingsTable.slug));
-
-  return rows.map((row) => row.slug);
 }
 
 export async function getPublishedProgramCount() {

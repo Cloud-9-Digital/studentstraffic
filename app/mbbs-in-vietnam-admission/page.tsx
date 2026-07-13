@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { CountryMbbsLandingPage } from "@/components/site/mbbs-lp/country-landing-page";
-import { getProgramsForCountry } from "@/lib/data/catalog";
+import { listFinderPrograms } from "@/lib/data/catalog";
 import {
   VIETNAM_LP_CONFIG,
   VIETNAM_LP_FEATURED_SLUGS,
@@ -28,7 +28,7 @@ export const metadata: Metadata = buildIndexableMetadata({
 });
 
 export default async function MbbsInVietnamAdmissionPage() {
-  const programs = await getProgramsForCountry("vietnam");
+  const programs = await listFinderPrograms({ country: "vietnam", course: "mbbs" });
   const stats = getCountryLpStats(programs, VIETNAM_LP_FEATURED_SLUGS);
   const featuredPrograms = getFeaturedPrograms(programs, VIETNAM_LP_FEATURED_SLUGS);
 

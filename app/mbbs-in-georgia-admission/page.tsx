@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { CountryMbbsLandingPage } from "@/components/site/mbbs-lp/country-landing-page";
-import { getProgramsForCountry } from "@/lib/data/catalog";
+import { listFinderPrograms } from "@/lib/data/catalog";
 import {
   GEORGIA_LP_CONFIG,
   GEORGIA_LP_FEATURED_SLUGS,
@@ -28,7 +28,7 @@ export const metadata: Metadata = buildIndexableMetadata({
 });
 
 export default async function MbbsInGeorgiaAdmissionPage() {
-  const programs = await getProgramsForCountry("georgia");
+  const programs = await listFinderPrograms({ country: "georgia", course: "mbbs" });
   const stats = getCountryLpStats(programs, GEORGIA_LP_FEATURED_SLUGS);
   const featuredPrograms = getFeaturedPrograms(programs, GEORGIA_LP_FEATURED_SLUGS);
 

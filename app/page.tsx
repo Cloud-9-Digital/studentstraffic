@@ -31,7 +31,7 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { HeroSearch } from "@/components/site/hero-search";
 import { Button } from "@/components/ui/button";
-import { getCountries } from "@/lib/data/catalog";
+import { getCountryCount } from "@/lib/data/catalog";
 import {
   catalogReviewedAt,
   governancePublishedAt,
@@ -85,8 +85,7 @@ const startingPoints = [
 ] as const;
 
 export default async function HomePage() {
-  const countries = await getCountries();
-  const countriesCount = countries.length;
+  const countriesCount = await getCountryCount();
   const path = "/";
   const structuredDataItems = [
     getBreadcrumbStructuredData([{ name: "Home", path }]),

@@ -29,8 +29,12 @@ const catalogDynamicPagePaths = [
 
 const catalogStaticPaths = [
   "/universities",
+  "/courses",
+  "/countries",
   "/compare",
   "/budget",
+  "/api/comparisons",
+  "/api/courses-directory",
 ] as const;
 
 function parseStringList(value: unknown): string[] {
@@ -148,6 +152,7 @@ export async function POST(request: NextRequest) {
 
   if (scope === "catalog") {
     tags.add("finder");
+    tags.add("program-offerings");
     tags.add("comparison-guides");
     tags.add("budget-guides");
 

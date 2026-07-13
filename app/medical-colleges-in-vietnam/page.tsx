@@ -4,7 +4,7 @@ import {
   CountryShortlistPage,
   buildCountryShortlistMetadata,
 } from "@/components/site/country-shortlist-page";
-import { getProgramsForCountry } from "@/lib/data/catalog";
+import { listFinderPrograms } from "@/lib/data/catalog";
 
 const path = "/medical-colleges-in-vietnam";
 const publishedDate = "2026-05-23";
@@ -36,9 +36,7 @@ export const metadata: Metadata = buildCountryShortlistMetadata({
 });
 
 export default async function MedicalCollegesVietnamPage() {
-  const countryPrograms = (await getProgramsForCountry("vietnam")).filter(
-    (program) => program.course.slug === "mbbs",
-  );
+  const countryPrograms = await listFinderPrograms({ country: "vietnam", course: "mbbs" });
   const programByUniversitySlug = new Map(
     countryPrograms.map((program) => [program.university.slug, program]),
   );

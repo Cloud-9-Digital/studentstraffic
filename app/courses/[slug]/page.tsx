@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, BookOpen, Building2, Globe2, Lightbulb, Map as MapIcon, TrendingUp } from "lucide-react";
+import { ArrowRight, BookOpen, Building2, Globe2, Lightbulb, TrendingUp } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
@@ -18,10 +18,11 @@ import {
 } from "@/lib/content-governance";
 import {
   getCourseBySlug,
+  getCourseProgramDirectorySummary,
   getCourses,
-  getProgramsForCourse,
+  getProgramPreviewForCourse,
 } from "@/lib/data/catalog";
-import { getBudgetGuidesForCourse } from "@/lib/discovery-pages";
+import { getBudgetGuideSummaries } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getArticleStructuredData,
@@ -59,19 +60,24 @@ async function getCoursePageData(slug: string) {
   if (!course) {
     return {
       course: null,
-      programs: [],
+      summary: { programCount: 0, countries: [] },
+      previewPrograms: [],
       budgetGuides: [],
     };
   }
 
-  const [programs, budgetGuides] = await Promise.all([
-    getProgramsForCourse(course.slug),
-    getBudgetGuidesForCourse(course.slug),
+  const [summary, previewPrograms, budgetGuides] = await Promise.all([
+    getCourseProgramDirectorySummary(course.slug),
+    getProgramPreviewForCourse(course.slug, 3),
+    getBudgetGuideSummaries().then((guides) =>
+      guides.filter((guide) => guide.course.slug === course.slug),
+    ),
   ]);
 
   return {
     course,
-    programs,
+    summary,
+    previewPrograms,
     budgetGuides,
   };
 }
@@ -82,13 +88,13 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const { course, programs } = await getCoursePageData(slug);
+  const { course, summary } = await getCoursePageData(slug);
 
   if (!course) {
     return { title: "Course Not Found" };
   }
 
-  const countries = [...new Set(programs.map((program) => program.country.name))];
+  const countries = summary.countries.map((country) => country.name);
 
   return buildIndexableMetadata({
     title: `${course.metaTitle} | Countries, Universities, Fees & Eligibility`,
@@ -112,16 +118,13 @@ export default async function CoursePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const { course, programs, budgetGuides } = await getCoursePageData(slug);
+  const { course, summary, previewPrograms, budgetGuides } = await getCoursePageData(slug);
 
   if (!course) {
     notFound();
   }
-  const countries = Array.from(
-    new Map(programs.map((program) => [program.country.slug, program.country])).values()
-  );
+  const countries = summary.countries;
   const finderHref = `/universities?course=${course.slug}`;
-  const previewPrograms = programs.slice(0, 3);
 
   const path = `/courses/${course.slug}`;
   const courseStructuredData = getCourseStructuredData(course);
@@ -138,7 +141,7 @@ export default async function CoursePage({
       name: `${course.shortName} abroad`,
       description: course.metaDescription,
       aboutIds: [courseStructuredData["@id"]],
-      mainEntityId: programs.length ? getItemListStructuredDataId(path) : undefined,
+      mainEntityId: previewPrograms.length ? getItemListStructuredDataId(path) : undefined,
       datePublished: catalogReviewedAt,
       dateModified: catalogReviewedAt,
     }),
@@ -149,7 +152,7 @@ export default async function CoursePage({
       datePublished: catalogReviewedAt,
       dateModified: catalogReviewedAt,
     }),
-    programs.length
+    previewPrograms.length
       ? getProgramItemListStructuredData({
           path,
           name: `${course.shortName} programs`,
@@ -239,7 +242,7 @@ export default async function CoursePage({
                 University options
               </p>
               <h2 className="mt-4 font-display text-2xl font-bold tracking-tight text-heading">
-                {programs.length} listed option{programs.length === 1 ? "" : "s"}
+                {summary.programCount} listed option{summary.programCount === 1 ? "" : "s"}
               </h2>
               <p className="mt-3 text-base leading-7 text-muted-foreground group-hover:text-foreground/80 transition-colors">
                 Browse these options when you want to move from course guidance to
@@ -305,7 +308,7 @@ export default async function CoursePage({
                     </h2>
                     <div className="relative z-10 mt-8 flex items-center justify-between">
                       <p className="text-sm font-medium text-white/80">
-                        {guide.programs.length} listed options inside this band.
+                        {guide.programCount} listed options inside this band.
                       </p>
                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md group-hover:bg-white group-hover:text-primary transition-colors">
                         <ArrowRight className="h-5 w-5" />
@@ -353,7 +356,7 @@ export default async function CoursePage({
                   Want help choosing the right {course.shortName} route?
                 </h2>
                 <p className="mt-5 text-lg text-muted-foreground max-w-lg leading-relaxed">
-                  Connect directly with our senior counsellors. We'll help you evaluate destinations, compare specific university safety and fees, and build a personalized roadmap. No commitments required.
+                  Connect directly with our senior counsellors. We&apos;ll help you evaluate destinations, compare specific university safety and fees, and build a personalized roadmap. No commitments required.
                 </p>
               </div>
               
