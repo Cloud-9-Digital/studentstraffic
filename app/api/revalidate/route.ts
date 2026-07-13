@@ -180,6 +180,36 @@ export async function POST(request: NextRequest) {
       staticPaths.add(`/${slug}`);
     }
 
+    const countrySlugs = new Set<string>();
+
+    for (const tag of tags) {
+      const match = tag.match(/^country:([^:]+)$/);
+      if (match) {
+        countrySlugs.add(match[1]);
+      }
+    }
+
+    for (const path of [...staticPaths]) {
+      const match = path.match(/^\/countries\/([^/]+)$/);
+      if (match) {
+        countrySlugs.add(match[1]);
+      }
+    }
+
+    // Country pages use the shared cached country snapshot. A country-specific
+    // publish must expire that snapshot as well as its own route; otherwise a
+    // newly inserted country can keep rendering the prior cached null value.
+    if (countrySlugs.size > 0) {
+      tags.add("catalog");
+      tags.add("countries");
+      dynamicPagePaths.add("/countries/[slug]");
+
+      for (const countrySlug of countrySlugs) {
+        tags.add(`country:${countrySlug}`);
+        staticPaths.add(`/countries/${countrySlug}`);
+      }
+    }
+
     if (slugs.length > 0) {
       // With Cache Components, the root dynamic route can retain the
       // build-time fallback shell even after an exact path is expired. Expire

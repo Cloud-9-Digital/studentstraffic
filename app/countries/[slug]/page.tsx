@@ -81,6 +81,10 @@ export async function generateStaticParams() {
   );
 }
 
+// Countries are published after deployment as well as at build time.
+// Let a new slug render on demand once its catalogue tags are invalidated.
+export const dynamicParams = true;
+
 async function getCountryPageData(slug: string) {
   "use cache";
 
