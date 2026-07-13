@@ -22,6 +22,7 @@ import {
 import type { BlogPostSearchMetadata } from "@/lib/data/types";
 
 const PLACEHOLDER_BLOG_SLUG = "__blog-fallback__";
+const BLOG_PRERENDER_SAMPLE_SIZE = 1;
 
 // "Latest Updates" is the category already used across seed scripts (e.g. the
 // NEET UG 2026 cancellation post) for genuinely dated/time-sensitive posts.
@@ -136,7 +137,9 @@ export async function generateStaticParams() {
     return [{ slug: PLACEHOLDER_BLOG_SLUG }];
   }
 
-  return posts.map(({ slug }) => ({ slug }));
+  return posts
+    .slice(0, BLOG_PRERENDER_SAMPLE_SIZE)
+    .map(({ slug }) => ({ slug }));
 }
 
 function resolvePostAuthor(authorSlug: string | null | undefined) {
