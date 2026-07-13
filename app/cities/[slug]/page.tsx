@@ -46,11 +46,15 @@ import {
   hasPublishedUsdAmount,
 } from "@/lib/utils";
 
+const MAX_STATIC_CITY_PARAMS = 1;
+
 export async function generateStaticParams() {
   const cities = await getUniqueCities();
   const filteredCities = cities.filter((c) => c.universityCount >= 2);
   return ensureNonEmptyStaticParams(
-    filteredCities.map((c) => ({ slug: c.slug })),
+    filteredCities
+      .slice(0, MAX_STATIC_CITY_PARAMS)
+      .map((c) => ({ slug: c.slug })),
     { slug: "__city-fallback__" },
   );
 }
