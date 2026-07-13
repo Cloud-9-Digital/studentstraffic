@@ -22,6 +22,7 @@ import {
 import type { BlogPostSearchMetadata } from "@/lib/data/types";
 
 const PLACEHOLDER_BLOG_SLUG = "__blog-fallback__";
+const BLOG_PRERENDER_LIMIT = 50;
 
 // "Latest Updates" is the category already used across seed scripts (e.g. the
 // NEET UG 2026 cancellation post) for genuinely dated/time-sensitive posts.
@@ -125,9 +126,10 @@ function mapRelatedPost(post: BlogPostSearchMetadata): RelatedPost {
 export async function generateStaticParams() {
   // Give Cache Components real examples of the route instead of validating
   // the segment only through the not-found fallback. The latter can produce a
-  // cached 404 shell for valid runtime slugs in production. Published posts
-  // are a small set, so prerender them all; posts published after the build
-  // can still be generated on their first request and revalidated by slug.
+  // cached 404 shell for valid runtime slugs in production. Prerender only the
+  // newest posts so database growth cannot make production builds unbounded;
+  // older posts and posts published after the build are generated on their
+  // first request and continue to be revalidated by slug.
   const posts = await getPublishedPosts();
 
   if (posts.length === 0) {
@@ -136,7 +138,9 @@ export async function generateStaticParams() {
     return [{ slug: PLACEHOLDER_BLOG_SLUG }];
   }
 
-  return posts.map(({ slug }) => ({ slug }));
+  return posts
+    .slice(0, BLOG_PRERENDER_LIMIT)
+    .map(({ slug }) => ({ slug }));
 }
 
 function resolvePostAuthor(authorSlug: string | null | undefined) {
