@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { connection } from "next/server";
 import { ArrowRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -205,6 +206,8 @@ function BudgetComparisonSection({
 }
 
 export default async function CompareIndexPage() {
+  await connection();
+
   const [universityGuides, countryGuides, budgetGuides] = await Promise.all([
     getComparisonGuides(),
     getCountryComparisonGuides(),
