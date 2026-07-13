@@ -30,7 +30,7 @@ import {
   getCountryBySlug,
   getProgramsForCountry,
   getProgramsForUniversity,
-  getUniversities,
+  getPublishedUniversityParams,
   getUniversityBySlug,
 } from "@/lib/data/catalog";
 import { getCityHref, getCountryHref, getUniversityProgramHref } from "@/lib/routes";
@@ -64,10 +64,9 @@ import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 const MAX_STATIC_UNIVERSITY_PARAMS = 1;
 
 export async function generateStaticParams() {
-  const universities = await getUniversities();
-  const capped = [...universities]
-    .sort((a, b) => Number(b.featured) - Number(a.featured))
-    .slice(0, MAX_STATIC_UNIVERSITY_PARAMS);
+  const capped = await getPublishedUniversityParams(
+    MAX_STATIC_UNIVERSITY_PARAMS,
+  );
   const params: { slug: string }[] = [];
   for (const university of capped) {
     params.push({ slug: university.slug });

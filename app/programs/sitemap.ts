@@ -4,7 +4,10 @@ import { getLatestDate } from "@/lib/content-dates";
 import { catalogReviewedAt } from "@/lib/content-governance";
 import { maxSitemapUrls } from "@/lib/constants";
 import { absoluteUrl } from "@/lib/metadata";
-import { getPublishedProgramSlugs, getProgramSitemapSlice } from "@/lib/data/catalog";
+import {
+  getPublishedProgramCount,
+  getProgramSitemapSlice,
+} from "@/lib/data/catalog";
 import { PROGRAM_SECTIONS } from "@/lib/university-sections";
 
 // 1 base URL + 4 section URLs per program (admissions/eligibility/fees/recognition)
@@ -12,8 +15,8 @@ const ENTRIES_PER_PROGRAM = 1 + PROGRAM_SECTIONS.length;
 const programsPerPage = Math.floor(maxSitemapUrls / ENTRIES_PER_PROGRAM);
 
 export async function generateSitemaps() {
-  const slugs = await getPublishedProgramSlugs();
-  const totalPages = Math.max(1, Math.ceil(slugs.length / programsPerPage));
+  const programCount = await getPublishedProgramCount();
+  const totalPages = Math.max(1, Math.ceil(programCount / programsPerPage));
   return Array.from({ length: totalPages }, (_, index) => ({ id: index }));
 }
 

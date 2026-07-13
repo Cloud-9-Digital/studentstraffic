@@ -4,7 +4,7 @@ import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { cacheLife, cacheTag } from "next/cache";
-import { and, asc, count, desc, eq, gte, ilike, lte, or, sql } from "drizzle-orm";
+import { and, asc, count, desc, eq, gte, ilike, inArray, lte, or, sql } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
 import type {
@@ -67,6 +67,134 @@ type CatalogSnapshot = {
   indiaColleges: IndiaMbbsCard[];
   joinUniversities: Array<{ id: number; name: string; countryId: number; countryName: string }>;
   publishedPosts: BlogPostSearchMetadata[];
+};
+
+function mapCountryRow(country: typeof countriesTable.$inferSelect): Country {
+  return {
+    slug: country.slug,
+    name: country.name,
+    region: country.region,
+    summary: country.summary,
+    whyStudentsChooseIt: country.whyStudentsChooseIt,
+    climate: country.climate,
+    currencyCode: country.currencyCode,
+    metaTitle: country.metaTitle,
+    metaDescription: country.metaDescription,
+    updatedAt: country.updatedAt?.toISOString(),
+  };
+}
+
+function mapCourseRow(course: typeof coursesTable.$inferSelect): Course {
+  return {
+    slug: course.slug,
+    name: course.name,
+    shortName: course.shortName,
+    stream: course.stream,
+    level: course.level,
+    discipline: course.discipline,
+    aliases: course.aliases,
+    active: course.active,
+    displayOrder: course.displayOrder,
+    durationYears: course.durationYears,
+    summary: course.summary,
+    metaTitle: course.metaTitle,
+    metaDescription: course.metaDescription,
+    updatedAt: course.updatedAt?.toISOString(),
+  };
+}
+
+function mapUniversityRow(
+  university: typeof universitiesTable.$inferSelect,
+  countrySlug: string,
+): University {
+  return applyUniversityContentOverride({
+    slug: university.slug,
+    countrySlug,
+    name: getUniversityDisplayName(university.name),
+    city: university.city,
+    type: university.type as University["type"],
+    establishedYear: university.establishedYear,
+    summary: university.summary,
+    featured: university.featured,
+    published: university.published,
+    officialWebsite: university.officialWebsite,
+    logoUrl: university.logoUrl ?? undefined,
+    coverImageUrl: university.coverImageUrl ?? undefined,
+    mediaAttribution: university.mediaAttribution,
+    campusLifestyle: university.campusLifestyle,
+    cityProfile: university.cityProfile,
+    practicalExposure: university.practicalExposure,
+    hostelOverview: university.hostelOverview,
+    dietarySupport: university.dietarySupport,
+    safetyOverview: university.safetyOverview,
+    studentSupport: university.studentSupport,
+    whyChoose: university.whyChoose,
+    thingsToConsider: university.thingsToConsider,
+    bestFitFor: university.bestFitFor,
+    industryPartners: university.industryPartners,
+    recognitionBadges: university.recognitionBadges,
+    recognitionLinks: university.recognitionLinks,
+    faq: university.faq,
+    similarUniversitySlugs: university.similarUniversitySlugs,
+    lastVerifiedAt: university.lastVerifiedAt ?? undefined,
+    researchSources: university.researchSources,
+    researchNotes: university.researchNotes ?? undefined,
+    admissionsContent: university.admissionsContent ?? undefined,
+    updatedAt: university.updatedAt?.toISOString(),
+  });
+}
+
+function mapProgramOfferingRow(
+  program: typeof programOfferingsTable.$inferSelect,
+  universitySlug: string,
+  courseSlug: string,
+): ProgramOffering {
+  return {
+    slug: program.slug,
+    universitySlug,
+    courseSlug,
+    title: program.title,
+    durationYears: program.durationYears,
+    annualTuitionUsd: program.annualTuitionUsd,
+    totalTuitionUsd: program.totalTuitionUsd,
+    livingUsd: program.livingUsd,
+    officialFeeCurrency: program.officialFeeCurrency ?? undefined,
+    officialAnnualTuitionAmount:
+      program.officialAnnualTuitionAmount ?? undefined,
+    officialTotalTuitionAmount:
+      program.officialTotalTuitionAmount ?? undefined,
+    officialProgramUrl: program.officialProgramUrl,
+    audienceEligibility: program.audienceEligibility,
+    medium: program.medium as ProgramOffering["medium"],
+    published: program.published,
+    teachingPhases: program.teachingPhases,
+    yearlyCostBreakdown: program.yearlyCostBreakdown,
+    professionalExamSupport: program.professionalExamSupport,
+    intakeMonths: program.intakeMonths,
+    feeVerifiedAt: program.feeVerifiedAt ?? undefined,
+    fxRateDate: program.fxRateDate ?? undefined,
+    fxRateSourceUrl: program.fxRateSourceUrl ?? undefined,
+    feeNotes: program.feeNotes ?? undefined,
+    sourceUrls: program.sourceUrls,
+    featured: program.featured,
+    updatedAt: program.updatedAt?.toISOString(),
+  };
+}
+
+export type SitemapCatalogData = {
+  countries: Array<{ slug: string; updatedAt?: string }>;
+  courses: Array<{ slug: string; updatedAt?: string }>;
+  universities: Array<{
+    slug: string;
+    countrySlug: string;
+    updatedAt?: string;
+  }>;
+  programOfferings: Array<{
+    slug: string;
+    universitySlug: string;
+    courseSlug: string;
+    updatedAt?: string;
+  }>;
 };
 
 function createEmptyCatalogSnapshot(): CatalogSnapshot {
@@ -230,42 +358,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
   }
 
   const universityRowsQuery = db
-    .select({
-      id: universitiesTable.id,
-      countryId: universitiesTable.countryId,
-      slug: universitiesTable.slug,
-      name: universitiesTable.name,
-      city: universitiesTable.city,
-      type: universitiesTable.type,
-      establishedYear: universitiesTable.establishedYear,
-      summary: universitiesTable.summary,
-      featured: universitiesTable.featured,
-      published: universitiesTable.published,
-      officialWebsite: universitiesTable.officialWebsite,
-      logoUrl: universitiesTable.logoUrl,
-      coverImageUrl: universitiesTable.coverImageUrl,
-      mediaAttribution: universitiesTable.mediaAttribution,
-      campusLifestyle: universitiesTable.campusLifestyle,
-      cityProfile: universitiesTable.cityProfile,
-      practicalExposure: universitiesTable.practicalExposure,
-      hostelOverview: universitiesTable.hostelOverview,
-      dietarySupport: universitiesTable.dietarySupport,
-      safetyOverview: universitiesTable.safetyOverview,
-      studentSupport: universitiesTable.studentSupport,
-      whyChoose: universitiesTable.whyChoose,
-      thingsToConsider: universitiesTable.thingsToConsider,
-      bestFitFor: universitiesTable.bestFitFor,
-      industryPartners: universitiesTable.industryPartners,
-      recognitionBadges: universitiesTable.recognitionBadges,
-      recognitionLinks: universitiesTable.recognitionLinks,
-      faq: universitiesTable.faq,
-      similarUniversitySlugs: universitiesTable.similarUniversitySlugs,
-      lastVerifiedAt: universitiesTable.lastVerifiedAt,
-      researchSources: universitiesTable.researchSources,
-      researchNotes: universitiesTable.researchNotes,
-      admissionsContent: universitiesTable.admissionsContent,
-      updatedAt: universitiesTable.updatedAt,
-    })
+    .select()
     .from(universitiesTable)
     .where(eq(universitiesTable.published, true));
 
@@ -319,35 +412,8 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
 
     const countryNamesById = new Map(countryRows.map((c) => [c.id, c.name]));
 
-    const countries: Country[] = countryRows.map((country) => ({
-      slug: country.slug,
-      name: country.name,
-      region: country.region,
-      summary: country.summary,
-      whyStudentsChooseIt: country.whyStudentsChooseIt,
-      climate: country.climate,
-      currencyCode: country.currencyCode,
-      metaTitle: country.metaTitle,
-      metaDescription: country.metaDescription,
-      updatedAt: country.updatedAt?.toISOString(),
-    }));
-
-    const courses: Course[] = courseRows.map((course) => ({
-      slug: course.slug,
-      name: course.name,
-      shortName: course.shortName,
-      stream: course.stream,
-      level: course.level,
-      discipline: course.discipline,
-      aliases: course.aliases,
-      active: course.active,
-      displayOrder: course.displayOrder,
-      durationYears: course.durationYears,
-      summary: course.summary,
-      metaTitle: course.metaTitle,
-      metaDescription: course.metaDescription,
-      updatedAt: course.updatedAt?.toISOString(),
-    }));
+    const countries = countryRows.map(mapCountryRow);
+    const courses = courseRows.map(mapCourseRow);
 
     const countrySlugsById = new Map(
       countryRows.map((country) => [country.id, country.slug]),
@@ -356,47 +422,11 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
       courseRows.map((course) => [course.id, course.slug]),
     );
 
-    const universities: University[] = universityRows.map((university) =>
-      applyUniversityContentOverride({
-        slug: university.slug,
-        countrySlug: countrySlugsById.get(university.countryId) ?? "",
-        name: getUniversityDisplayName(university.name),
-        city: university.city,
-        type: university.type as University["type"],
-        establishedYear: university.establishedYear,
-        summary: university.summary,
-        featured: university.featured,
-        published: university.published,
-        officialWebsite: university.officialWebsite,
-        logoUrl: university.logoUrl ?? undefined,
-        coverImageUrl: university.coverImageUrl ?? undefined,
-        mediaAttribution:
-          university.mediaAttribution as University["mediaAttribution"],
-        campusLifestyle: university.campusLifestyle,
-        cityProfile: university.cityProfile,
-        practicalExposure: university.practicalExposure,
-        hostelOverview: university.hostelOverview,
-        dietarySupport: university.dietarySupport,
-        safetyOverview: university.safetyOverview,
-        studentSupport: university.studentSupport,
-        whyChoose: university.whyChoose as University["whyChoose"],
-        thingsToConsider:
-          university.thingsToConsider as University["thingsToConsider"],
-        bestFitFor: university.bestFitFor as University["bestFitFor"],
-        industryPartners: university.industryPartners,
-        recognitionBadges: university.recognitionBadges,
-        recognitionLinks:
-          university.recognitionLinks as University["recognitionLinks"],
-        faq: university.faq as University["faq"],
-        similarUniversitySlugs: university.similarUniversitySlugs,
-        lastVerifiedAt: university.lastVerifiedAt ?? undefined,
-        researchSources:
-          university.researchSources as University["researchSources"],
-        researchNotes: university.researchNotes ?? undefined,
-        admissionsContent:
-          (university.admissionsContent as University["admissionsContent"]) ?? undefined,
-        updatedAt: university.updatedAt?.toISOString(),
-      }),
+    const universities = universityRows.map((university) =>
+      mapUniversityRow(
+        university,
+        countrySlugsById.get(university.countryId) ?? "",
+      ),
     );
 
     const universitySlugsById = new Map(
@@ -411,40 +441,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         return [];
       }
 
-      return [{
-        slug: program.slug,
-        universitySlug,
-        courseSlug,
-        title: program.title,
-        durationYears: program.durationYears,
-        annualTuitionUsd: program.annualTuitionUsd,
-        totalTuitionUsd: program.totalTuitionUsd,
-        livingUsd: program.livingUsd,
-        officialFeeCurrency: program.officialFeeCurrency ?? undefined,
-        officialAnnualTuitionAmount:
-          program.officialAnnualTuitionAmount ?? undefined,
-        officialTotalTuitionAmount:
-          program.officialTotalTuitionAmount ?? undefined,
-        officialProgramUrl: program.officialProgramUrl,
-        audienceEligibility:
-          program.audienceEligibility as ProgramOffering["audienceEligibility"],
-        medium: program.medium as ProgramOffering["medium"],
-        published: program.published,
-        teachingPhases:
-          program.teachingPhases as ProgramOffering["teachingPhases"],
-        yearlyCostBreakdown:
-          program.yearlyCostBreakdown as ProgramOffering["yearlyCostBreakdown"],
-        professionalExamSupport:
-          program.professionalExamSupport as ProgramOffering["professionalExamSupport"],
-        intakeMonths: program.intakeMonths,
-        feeVerifiedAt: program.feeVerifiedAt ?? undefined,
-        fxRateDate: program.fxRateDate ?? undefined,
-        fxRateSourceUrl: program.fxRateSourceUrl ?? undefined,
-        feeNotes: program.feeNotes ?? undefined,
-        sourceUrls: program.sourceUrls,
-        featured: program.featured,
-        updatedAt: program.updatedAt?.toISOString(),
-      }];
+      return [mapProgramOfferingRow(program, universitySlug, courseSlug)];
     });
 
     const indiaColleges: IndiaMbbsCard[] = indiaCollegeRows.map((row) => ({
@@ -524,9 +521,127 @@ export async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
   return globalForCatalogWarnings.__catalogSnapshotPromise;
 }
 
+export async function getSitemapCatalogData(): Promise<SitemapCatalogData> {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("sitemap");
+  cacheTag("countries");
+  cacheTag("courses");
+  cacheTag("universities");
+  cacheTag("program-offerings");
+
+  const db = getDb();
+
+  if (!db) {
+    return {
+      countries: [],
+      courses: [],
+      universities: [],
+      programOfferings: [],
+    };
+  }
+
+  try {
+    const [countryRows, courseRows, universityRows, offeringRows] =
+      await Promise.all([
+        db
+          .select({
+            slug: countriesTable.slug,
+            updatedAt: countriesTable.updatedAt,
+          })
+          .from(countriesTable),
+        db
+          .select({
+            slug: coursesTable.slug,
+            updatedAt: coursesTable.updatedAt,
+          })
+          .from(coursesTable),
+        db
+          .select({
+            slug: universitiesTable.slug,
+            countrySlug: countriesTable.slug,
+            updatedAt: universitiesTable.updatedAt,
+          })
+          .from(universitiesTable)
+          .innerJoin(
+            countriesTable,
+            eq(universitiesTable.countryId, countriesTable.id),
+          )
+          .where(eq(universitiesTable.published, true)),
+        db
+          .select({
+            slug: programOfferingsTable.slug,
+            universitySlug: universitiesTable.slug,
+            courseSlug: coursesTable.slug,
+            updatedAt: programOfferingsTable.updatedAt,
+          })
+          .from(programOfferingsTable)
+          .innerJoin(
+            universitiesTable,
+            eq(programOfferingsTable.universityId, universitiesTable.id),
+          )
+          .innerJoin(
+            coursesTable,
+            eq(programOfferingsTable.courseId, coursesTable.id),
+          )
+          .where(
+            and(
+              eq(programOfferingsTable.published, true),
+              eq(universitiesTable.published, true),
+            ),
+          ),
+      ]);
+
+    return {
+      countries: countryRows.map((row) => ({
+        slug: row.slug,
+        updatedAt: row.updatedAt?.toISOString(),
+      })),
+      courses: courseRows.map((row) => ({
+        slug: row.slug,
+        updatedAt: row.updatedAt?.toISOString(),
+      })),
+      universities: universityRows.map((row) => ({
+        slug: row.slug,
+        countrySlug: row.countrySlug,
+        updatedAt: row.updatedAt?.toISOString(),
+      })),
+      programOfferings: offeringRows.map((row) => ({
+        slug: row.slug,
+        universitySlug: row.universitySlug,
+        courseSlug: row.courseSlug,
+        updatedAt: row.updatedAt?.toISOString(),
+      })),
+    };
+  } catch (error) {
+    logCatalogDatabaseFallback(error);
+    return {
+      countries: [],
+      courses: [],
+      universities: [],
+      programOfferings: [],
+    };
+  }
+}
+
 export async function getCountries() {
-  const snapshot = await getCatalogSnapshot();
-  return snapshot.countries;
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("countries");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select()
+    .from(countriesTable)
+    .orderBy(asc(countriesTable.name));
+
+  return rows.map(mapCountryRow);
 }
 
 export async function getCountryBySlug(slug: string) {
@@ -536,23 +651,121 @@ export async function getCountryBySlug(slug: string) {
   cacheTag("catalog");
   cacheTag("countries");
 
-  const countries = await getCountries();
-  return countries.find((country) => country.slug === slug) ?? null;
+  const db = getDb();
+  if (!db) return null;
+
+  const [row] = await db
+    .select()
+    .from(countriesTable)
+    .where(eq(countriesTable.slug, slug))
+    .limit(1);
+
+  return row ? mapCountryRow(row) : null;
 }
 
 export async function getCourses() {
-  const snapshot = await getCatalogSnapshot();
-  return snapshot.courses;
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("courses");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select()
+    .from(coursesTable)
+    .orderBy(asc(coursesTable.displayOrder), asc(coursesTable.name));
+
+  return rows.map(mapCourseRow);
 }
 
 export async function getCourseBySlug(slug: string) {
-  const courses = await getCourses();
-  return courses.find((course) => course.slug === slug) ?? null;
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("courses");
+  cacheTag(`course:${slug}`);
+
+  const db = getDb();
+  if (!db) return null;
+
+  const [row] = await db
+    .select()
+    .from(coursesTable)
+    .where(eq(coursesTable.slug, slug))
+    .limit(1);
+
+  return row ? mapCourseRow(row) : null;
+}
+
+export async function getCourseCatalogStats() {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("courses");
+  cacheTag("program-offerings");
+
+  const db = getDb();
+  if (!db) return [];
+
+  return db
+    .select({
+      courseSlug: coursesTable.slug,
+      programCount: sql<number>`count(${programOfferingsTable.id})::int`,
+      countryCount: sql<number>`count(distinct ${countriesTable.id})::int`,
+    })
+    .from(programOfferingsTable)
+    .innerJoin(
+      universitiesTable,
+      eq(programOfferingsTable.universityId, universitiesTable.id),
+    )
+    .innerJoin(
+      coursesTable,
+      eq(programOfferingsTable.courseId, coursesTable.id),
+    )
+    .innerJoin(
+      countriesTable,
+      eq(universitiesTable.countryId, countriesTable.id),
+    )
+    .where(
+      and(
+        eq(programOfferingsTable.published, true),
+        eq(universitiesTable.published, true),
+      ),
+    )
+    .groupBy(coursesTable.slug);
 }
 
 export async function getUniversities() {
-  const snapshot = await getCatalogSnapshot();
-  return snapshot.universities;
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      university: universitiesTable,
+      countrySlug: countriesTable.slug,
+    })
+    .from(universitiesTable)
+    .innerJoin(
+      countriesTable,
+      eq(universitiesTable.countryId, countriesTable.id),
+    )
+    .where(eq(universitiesTable.published, true))
+    .orderBy(desc(universitiesTable.featured), asc(universitiesTable.name));
+
+  return rows.map((row) =>
+    mapUniversityRow(row.university, row.countrySlug),
+  );
 }
 
 export async function getUniversityBySlug(slug: string) {
@@ -563,23 +776,174 @@ export async function getUniversityBySlug(slug: string) {
   cacheTag("universities");
   cacheTag(`university:${slug}`);
 
-  const universities = await getUniversities();
-  return universities.find((university) => university.slug === slug) ?? null;
+  const db = getDb();
+  if (!db) return null;
+
+  const [row] = await db
+    .select({
+      university: universitiesTable,
+      countrySlug: countriesTable.slug,
+    })
+    .from(universitiesTable)
+    .innerJoin(
+      countriesTable,
+      eq(universitiesTable.countryId, countriesTable.id),
+    )
+    .where(
+      and(
+        eq(universitiesTable.slug, slug),
+        eq(universitiesTable.published, true),
+      ),
+    )
+    .limit(1);
+
+  return row ? mapUniversityRow(row.university, row.countrySlug) : null;
 }
 
 export async function getProgramOfferings() {
-  const snapshot = await getCatalogSnapshot();
-  return snapshot.programOfferings;
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("program-offerings");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      offering: programOfferingsTable,
+      universitySlug: universitiesTable.slug,
+      courseSlug: coursesTable.slug,
+    })
+    .from(programOfferingsTable)
+    .innerJoin(
+      universitiesTable,
+      eq(programOfferingsTable.universityId, universitiesTable.id),
+    )
+    .innerJoin(
+      coursesTable,
+      eq(programOfferingsTable.courseId, coursesTable.id),
+    )
+    .where(
+      and(
+        eq(programOfferingsTable.published, true),
+        eq(universitiesTable.published, true),
+      ),
+    )
+    .orderBy(asc(programOfferingsTable.slug));
+
+  return rows.map((row) =>
+    mapProgramOfferingRow(
+      row.offering,
+      row.universitySlug,
+      row.courseSlug,
+    ),
+  );
 }
 
 export async function getJoinUniversityOptions() {
-  const snapshot = await getCatalogSnapshot();
-  return snapshot.joinUniversities;
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+
+  const db = getDb();
+  if (!db) return [];
+
+  return db
+    .select({
+      id: universitiesTable.id,
+      name: universitiesTable.name,
+      countryId: universitiesTable.countryId,
+      countryName: countriesTable.name,
+    })
+    .from(universitiesTable)
+    .innerJoin(
+      countriesTable,
+      eq(universitiesTable.countryId, countriesTable.id),
+    )
+    .orderBy(asc(universitiesTable.name));
+}
+
+export async function getCatalogLinkOptions() {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+
+  const db = getDb();
+  if (!db) return { countries: [], universities: [] };
+
+  const [countryRows, universityRows] = await Promise.all([
+    db
+      .select({ slug: countriesTable.slug, name: countriesTable.name })
+      .from(countriesTable)
+      .orderBy(asc(countriesTable.name)),
+    db
+      .select({ slug: universitiesTable.slug, name: universitiesTable.name })
+      .from(universitiesTable)
+      .where(eq(universitiesTable.published, true))
+      .orderBy(asc(universitiesTable.name)),
+  ]);
+
+  return { countries: countryRows, universities: universityRows };
+}
+
+export async function getUniversityMediaBySlugs(slugs: string[]) {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+
+  if (slugs.length === 0) return [];
+
+  const db = getDb();
+  if (!db) return [];
+
+  return db
+    .select({
+      slug: universitiesTable.slug,
+      name: universitiesTable.name,
+      coverImageUrl: universitiesTable.coverImageUrl,
+    })
+    .from(universitiesTable)
+    .where(
+      and(
+        eq(universitiesTable.published, true),
+        inArray(universitiesTable.slug, slugs),
+      ),
+    );
 }
 
 export async function getPublishedBlogPostMetadata() {
-  const snapshot = await getCatalogSnapshot();
-  return snapshot.publishedPosts;
+  "use cache";
+
+  cacheLife("days");
+  cacheTag("blog");
+  cacheTag("sitemap");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      slug: blogPosts.slug,
+      publishedAt: blogPosts.publishedAt,
+      updatedAt: blogPosts.updatedAt,
+    })
+    .from(blogPosts)
+    .where(eq(blogPosts.status, "published"))
+    .orderBy(desc(blogPosts.publishedAt));
+
+  return rows.map((post) => ({
+    slug: post.slug,
+    publishedAt: post.publishedAt?.toISOString(),
+    updatedAt: post.updatedAt?.toISOString(),
+  }));
 }
 
 // ── Direct, blog-tagged readers ─────────────────────────────────────────────
@@ -707,6 +1071,17 @@ async function getFinderProgramsBase() {
   cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
+
+  const databasePrograms = await selectFinderProgramsFromDatabase(
+    and(
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+    ),
+  );
+
+  if (databasePrograms) {
+    return databasePrograms;
+  }
 
   const snapshot = await getCatalogSnapshot();
 
@@ -857,10 +1232,6 @@ async function queryFinderProgramsFromDatabase(
   page: number,
   pageSize: number,
 ): Promise<FinderCardProgramsPage | null> {
-  if (shouldUseBuildCatalogSnapshot()) {
-    return null;
-  }
-
   const db = getDb();
 
   if (!db) {
@@ -1149,10 +1520,6 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
 async function selectFinderProgramsFromDatabase(
   whereClause?: ReturnType<typeof and>,
 ): Promise<FinderProgram[] | null> {
-  if (shouldUseBuildCatalogSnapshot()) {
-    return null;
-  }
-
   const db = getDb();
 
   if (!db) {
@@ -1320,7 +1687,10 @@ export async function listFinderPrograms(filters: FinderFilters) {
   cacheTag("catalog");
   cacheTag("finder");
 
-  const programs = await getFinderProgramsBase();
+  const programs =
+    (await selectFinderProgramsFromDatabase(
+      buildFinderProgramConditions(filters),
+    )) ?? (await getFinderProgramsBase());
 
   const filteredPrograms = programs.filter((program) => {
     if (filters.q) {
@@ -1493,7 +1863,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
 
   const db = getDb();
 
-  if (db && !shouldUseBuildCatalogSnapshot()) {
+  if (db) {
     const [countryRows, courseRows, mediumRows, intakeRows] = await Promise.all([
       db
         .selectDistinct({ slug: countriesTable.slug, name: countriesTable.name })
@@ -1575,10 +1945,21 @@ export async function getFeaturedPrograms(limit = 4) {
   cacheTag("finder");
   cacheTag("program-offerings");
 
-  const featuredPrograms = await listFinderPrograms({});
-  return featuredPrograms
+  const featuredPrograms = await selectFinderProgramsFromDatabase(
+    and(
+      eq(programOfferingsTable.published, true),
+      eq(universitiesTable.published, true),
+      eq(programOfferingsTable.featured, true),
+    ),
+  );
+
+  if (featuredPrograms) {
+    return featuredPrograms.slice(0, Math.max(0, limit));
+  }
+
+  return (await listFinderPrograms({}))
     .filter((program) => program.offering.featured)
-    .slice(0, limit);
+    .slice(0, Math.max(0, limit));
 }
 
 export async function getProgramsForCountry(countrySlug: string) {
@@ -1719,37 +2100,6 @@ export async function getProgramsForCity(citySlug: string) {
 }
 
 export async function getUniqueCities() {
-  if (shouldUseBuildCatalogSnapshot()) {
-    const programs = await getFinderProgramsBase();
-
-    const cityMeta = new Map<string, { slug: string; name: string; countrySlug: string; countryName: string }>();
-    const uniSetsPerCity = new Map<string, Set<string>>();
-
-    for (const program of programs) {
-      const key = `${program.country.slug}:${program.university.city}`;
-      const slug = cityNameToSlug(program.university.city);
-      if (!cityMeta.has(key)) {
-        cityMeta.set(key, {
-          slug,
-          name: program.university.city,
-          countrySlug: program.country.slug,
-          countryName: program.country.name,
-        });
-      }
-      if (!uniSetsPerCity.has(key)) {
-        uniSetsPerCity.set(key, new Set());
-      }
-      uniSetsPerCity.get(key)!.add(program.university.slug);
-    }
-
-    return Array.from(cityMeta.entries())
-      .map(([key, entry]) => ({
-        ...entry,
-        universityCount: uniSetsPerCity.get(key)?.size ?? 0,
-      }))
-      .sort((a, b) => b.universityCount - a.universityCount);
-  }
-
   const db = getDb();
 
   if (db) {
@@ -1821,10 +2171,37 @@ export async function getRelatedLandingPages(
 }
 
 export async function getFeaturedUniversities(limit = 4) {
-  const universities = await getUniversities();
-  return universities
-    .filter((university) => university.featured)
-    .slice(0, limit);
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      university: universitiesTable,
+      countrySlug: countriesTable.slug,
+    })
+    .from(universitiesTable)
+    .innerJoin(
+      countriesTable,
+      eq(universitiesTable.countryId, countriesTable.id),
+    )
+    .where(
+      and(
+        eq(universitiesTable.published, true),
+        eq(universitiesTable.featured, true),
+      ),
+    )
+    .orderBy(asc(universitiesTable.name))
+    .limit(Math.max(0, limit));
+
+  return rows.map((row) =>
+    mapUniversityRow(row.university, row.countrySlug),
+  );
 }
 
 export async function getSitemapStaticUrls() {
@@ -1853,26 +2230,162 @@ export async function getSitemapStaticUrls() {
 }
 
 export async function getUniversitySitemapSlice(start: number, end: number) {
-  const universities = await getUniversities();
-  return universities.slice(start, end).map((university) => ({
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+  cacheTag("sitemap");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      slug: universitiesTable.slug,
+      updatedAt: universitiesTable.updatedAt,
+    })
+    .from(universitiesTable)
+    .where(eq(universitiesTable.published, true))
+    .orderBy(asc(universitiesTable.slug))
+    .limit(Math.max(0, end - start))
+    .offset(Math.max(0, start));
+
+  return rows.map((university) => ({
     slug: university.slug,
     path: getUniversityHref(university.slug),
-    updatedAt: university.updatedAt,
+    updatedAt: university.updatedAt?.toISOString(),
   }));
 }
 
+export async function getPublishedUniversityCount() {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+  cacheTag("sitemap");
+
+  const db = getDb();
+  if (!db) return 0;
+
+  const [row] = await db
+    .select({ value: count() })
+    .from(universitiesTable)
+    .where(eq(universitiesTable.published, true));
+
+  return row?.value ?? 0;
+}
+
+export async function getPublishedUniversityParams(limit: number) {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+
+  const db = getDb();
+  if (!db) return [];
+
+  return db
+    .select({ slug: universitiesTable.slug })
+    .from(universitiesTable)
+    .where(eq(universitiesTable.published, true))
+    .orderBy(desc(universitiesTable.featured), asc(universitiesTable.name))
+    .limit(Math.max(0, limit));
+}
+
 export async function getPublishedProgramSlugs() {
-  const offerings = await getProgramOfferings();
-  return offerings.filter((offering) => offering.published).map((offering) => offering.slug);
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("program-offerings");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({ slug: programOfferingsTable.slug })
+    .from(programOfferingsTable)
+    .innerJoin(
+      universitiesTable,
+      eq(programOfferingsTable.universityId, universitiesTable.id),
+    )
+    .where(
+      and(
+        eq(programOfferingsTable.published, true),
+        eq(universitiesTable.published, true),
+      ),
+    )
+    .orderBy(asc(programOfferingsTable.slug));
+
+  return rows.map((row) => row.slug);
+}
+
+export async function getPublishedProgramCount() {
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("program-offerings");
+  cacheTag("sitemap");
+
+  const db = getDb();
+  if (!db) return 0;
+
+  const [row] = await db
+    .select({ value: count() })
+    .from(programOfferingsTable)
+    .innerJoin(
+      universitiesTable,
+      eq(programOfferingsTable.universityId, universitiesTable.id),
+    )
+    .where(
+      and(
+        eq(programOfferingsTable.published, true),
+        eq(universitiesTable.published, true),
+      ),
+    );
+
+  return row?.value ?? 0;
 }
 
 export async function getProgramSitemapSlice(start: number, end: number) {
-  const offerings = await getProgramOfferings();
-  const published = offerings.filter((offering) => offering.published);
-  return published.slice(start, end).map((offering) => ({
+  "use cache";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("program-offerings");
+  cacheTag("sitemap");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const rows = await db
+    .select({
+      slug: programOfferingsTable.slug,
+      updatedAt: programOfferingsTable.updatedAt,
+    })
+    .from(programOfferingsTable)
+    .innerJoin(
+      universitiesTable,
+      eq(programOfferingsTable.universityId, universitiesTable.id),
+    )
+    .where(
+      and(
+        eq(programOfferingsTable.published, true),
+        eq(universitiesTable.published, true),
+      ),
+    )
+    .orderBy(asc(programOfferingsTable.slug))
+    .limit(Math.max(0, end - start))
+    .offset(Math.max(0, start));
+
+  return rows.map((offering) => ({
     slug: offering.slug,
     path: getUniversityProgramHref(offering.slug),
-    updatedAt: offering.updatedAt,
+    updatedAt: offering.updatedAt?.toISOString(),
   }));
 }
 

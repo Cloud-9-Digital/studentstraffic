@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
-import { getUniversities } from "@/lib/data/catalog";
+import { getUniversityMediaBySlugs } from "@/lib/data/catalog";
 import {
   getCountryFlagCode,
   getCountryPlaceholder,
@@ -112,7 +112,12 @@ const SEMINAR_COVER_OVERRIDES: Record<string, { url: string; alt: string }> = {
 };
 
 export async function SeminarTopUniversities() {
-  const universities = await getUniversities();
+  const requestedSlugs = UNIVERSITY_GROUPS.flatMap((group) =>
+    group.universities.flatMap((university) =>
+      university.slug ? [university.slug] : [],
+    ),
+  );
+  const universities = await getUniversityMediaBySlugs(requestedSlugs);
   const universitiesBySlug = new Map(
     universities.map((university) => [university.slug, university])
   );

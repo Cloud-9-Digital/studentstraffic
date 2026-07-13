@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { catalogReviewedAt } from "@/lib/content-governance";
 import {
   getBudgetGuideBySlug,
-  getBudgetGuides,
+  getBudgetGuideSummaries,
 } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
@@ -28,9 +28,9 @@ import { formatCurrencyUsd } from "@/lib/utils";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 export async function generateStaticParams() {
-  const guides = await getBudgetGuides();
+  const guides = await getBudgetGuideSummaries();
   return ensureNonEmptyStaticParams(
-    guides.map((guide) => ({ slug: guide.slug })),
+    guides.slice(0, 1).map((guide) => ({ slug: guide.slug })),
     { slug: "__budget-fallback__" },
   );
 }

@@ -1,7 +1,20 @@
 import { cacheLife, cacheTag } from "next/cache";
+import { sql } from "drizzle-orm";
 
 import type { Country, Course, FinderProgram } from "@/lib/data/types";
-import { getCountries, getCourses, listFinderPrograms } from "@/lib/data/catalog";
+import {
+  getCountries,
+  getCourseBySlug,
+  getCourses,
+  listFinderPrograms,
+} from "@/lib/data/catalog";
+import { getDb } from "@/lib/db/server";
+import {
+  countries as countriesTable,
+  courses as coursesTable,
+  programOfferings as programOfferingsTable,
+  universities as universitiesTable,
+} from "@/lib/db/schema";
 
 export type ComparisonGuide = {
   kind: "university";
@@ -41,6 +54,14 @@ export type BudgetGuide = {
   budgetUsd: number;
   course: Course;
   programs: FinderProgram[];
+};
+
+export type BudgetGuideSummary = {
+  slug: string;
+  budgetUsd: number;
+  course: Pick<Course, "slug" | "name" | "shortName">;
+  programCount: number;
+  countryNames: string[];
 };
 
 const budgetThresholds = [4000, 5000, 6000, 8000, 10000];
@@ -353,7 +374,9 @@ export async function getAllComparisonPages() {
   return getCachedAllComparisonPages();
 }
 
-export async function getComparisonPageBySlug(slug: string) {
+export async function getComparisonPageBySlug(
+  slug: string,
+): Promise<ComparisonPage | null> {
   const pages = await getCachedAllComparisonPages();
   return pages.find((page) => page.slug === slug) ?? null;
 }
@@ -411,13 +434,114 @@ export async function getBudgetGuides() {
 }
 
 export async function getBudgetGuideBySlug(slug: string) {
-  const guides = await getCachedBudgetGuides();
-  return guides.find((guide) => guide.slug === slug) ?? null;
+  const match = /^(.+)-under-(\d+)-usd$/.exec(slug);
+  if (!match) return null;
+
+  const courseSlug = match[1];
+  const budgetUsd = Number(match[2]);
+  if (!budgetThresholds.includes(budgetUsd)) return null;
+
+  const [course, programs] = await Promise.all([
+    getCourseBySlug(courseSlug),
+    listFinderPrograms({ course: courseSlug, feeMax: budgetUsd }),
+  ]);
+  const matchingPrograms = programs.filter(
+    (program) =>
+      program.offering.annualTuitionUsd > 0 &&
+      program.offering.annualTuitionUsd <= budgetUsd,
+  );
+
+  if (!course || matchingPrograms.length < 2) return null;
+
+  return { slug, budgetUsd, course, programs: matchingPrograms };
 }
 
 export async function getBudgetGuidesForCourse(courseSlug: string) {
-  const guides = await getCachedBudgetGuides();
-  return guides.filter((guide) => guide.course.slug === courseSlug);
+  const [course, programs] = await Promise.all([
+    getCourseBySlug(courseSlug),
+    listFinderPrograms({ course: courseSlug }),
+  ]);
+
+  if (!course) return [];
+
+  return budgetThresholds.flatMap((budgetUsd) => {
+    const matchingPrograms = programs.filter(
+      (program) =>
+        program.offering.annualTuitionUsd > 0 &&
+        program.offering.annualTuitionUsd <= budgetUsd,
+    );
+
+    return matchingPrograms.length >= 2
+      ? [{
+          slug: getBudgetGuideSlug(course.slug, budgetUsd),
+          budgetUsd,
+          course,
+          programs: matchingPrograms,
+        }]
+      : [];
+  });
+}
+
+export async function getBudgetGuideSummaries(): Promise<BudgetGuideSummary[]> {
+  "use cache";
+
+  cacheLife("hours");
+  cacheTag("catalog");
+  cacheTag("budget-guides");
+
+  const db = getDb();
+  if (!db) return [];
+
+  const result = await db.execute<{
+    courseSlug: string;
+    courseName: string;
+    courseShortName: string;
+    budgetUsd: number;
+    programCount: number;
+    countryNames: string[];
+  }>(sql`
+    WITH budgets (budget_usd) AS (
+      VALUES (4000), (5000), (6000), (8000), (10000)
+    )
+    SELECT
+      ${coursesTable.slug} AS "courseSlug",
+      ${coursesTable.name} AS "courseName",
+      ${coursesTable.shortName} AS "courseShortName",
+      budgets.budget_usd::int AS "budgetUsd",
+      count(${programOfferingsTable.id})::int AS "programCount",
+      array_agg(DISTINCT ${countriesTable.name} ORDER BY ${countriesTable.name}) AS "countryNames"
+    FROM ${programOfferingsTable}
+    INNER JOIN ${universitiesTable}
+      ON ${programOfferingsTable.universityId} = ${universitiesTable.id}
+    INNER JOIN ${coursesTable}
+      ON ${programOfferingsTable.courseId} = ${coursesTable.id}
+    INNER JOIN ${countriesTable}
+      ON ${universitiesTable.countryId} = ${countriesTable.id}
+    CROSS JOIN budgets
+    WHERE ${programOfferingsTable.published} = true
+      AND ${universitiesTable.published} = true
+      AND ${programOfferingsTable.annualTuitionUsd} > 0
+      AND ${programOfferingsTable.annualTuitionUsd} <= budgets.budget_usd
+    GROUP BY
+      ${coursesTable.slug},
+      ${coursesTable.name},
+      ${coursesTable.shortName},
+      budgets.budget_usd
+    HAVING count(${programOfferingsTable.id}) >= 2
+    ORDER BY ${coursesTable.slug}, budgets.budget_usd
+  `);
+
+  return result.rows.map((row) => ({
+    slug: getBudgetGuideSlug(row.courseSlug, row.budgetUsd),
+    budgetUsd: row.budgetUsd,
+    course: {
+      slug: row.courseSlug,
+      name: row.courseName,
+      shortName: row.courseShortName,
+    },
+    programCount: row.programCount,
+    countryNames: row.countryNames,
+  }));
 }
 
 export async function getRecommendedBudgetGuideForCourse(courseSlug: string) {

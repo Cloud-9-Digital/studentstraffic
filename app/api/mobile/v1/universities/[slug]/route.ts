@@ -1,4 +1,7 @@
-import { getCountries, getProgramOfferings, getUniversityBySlug } from "@/lib/data/catalog";
+import {
+  getProgramsForUniversity,
+  getUniversityBySlug,
+} from "@/lib/data/catalog";
 import { mobileError, mobilePublicJson } from "@/lib/mobile/http";
 import { mapUniversityDetail } from "@/lib/mobile/mappers";
 
@@ -7,18 +10,17 @@ export async function GET(
   context: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await context.params;
-  const university = await getUniversityBySlug(slug);
+  const [university, programs] = await Promise.all([
+    getUniversityBySlug(slug),
+    getProgramsForUniversity(slug),
+  ]);
   if (!university) return mobileError("not_found", "University not found.", 404);
 
-  const [countries, offerings] = await Promise.all([
-    getCountries(),
-    getProgramOfferings(),
-  ]);
-
-  const country = countries.find((item) => item.slug === university.countrySlug);
-  const universityOfferings = offerings.filter((item) => item.universitySlug === university.slug);
-
   return mobilePublicJson({
-    university: mapUniversityDetail(university, country?.name, universityOfferings),
+    university: mapUniversityDetail(
+      university,
+      programs[0]?.country.name,
+      programs.map((program) => program.offering),
+    ),
   });
 }

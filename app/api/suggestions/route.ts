@@ -1,13 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cacheLife, cacheTag } from "next/cache";
+import { and, asc, eq, ilike, or } from "drizzle-orm";
 
+import { getAllLandingPages } from "@/lib/data/catalog";
+import { getDb } from "@/lib/db/server";
 import {
-  getAllLandingPages,
-  getCatalogSnapshot,
-  getCountries,
-  getCourses,
-  getUniversities,
-} from "@/lib/data/catalog";
+  countries as countriesTable,
+  courses as coursesTable,
+  indiaMedicalColleges,
+  indiaMedicalPrograms,
+  universities as universitiesTable,
+} from "@/lib/db/schema";
 import { logPublicRouteRequest } from "@/lib/route-observability";
 import {
   getCountryHref,
@@ -30,15 +33,27 @@ type RankedSuggestion = Suggestion & {
 };
 
 type SuggestionSource = {
-  countries: Awaited<ReturnType<typeof getCountries>>;
-  courses: Awaited<ReturnType<typeof getCourses>>;
-  universities: Awaited<ReturnType<typeof getUniversities>>;
-  indiaColleges: Awaited<ReturnType<typeof getCatalogSnapshot>>["indiaColleges"];
+  countries: Array<{ slug: string; name: string; region: string }>;
+  courses: Array<{ slug: string; name: string; shortName: string }>;
+  universities: Array<{
+    slug: string;
+    name: string;
+    city: string;
+    countryName: string;
+  }>;
+  indiaColleges: Array<{
+    slug: string;
+    collegeName: string;
+    programName: string;
+    stateName: string;
+    cityName: string | null;
+    universityName: string | null;
+  }>;
   landingPages: Awaited<ReturnType<typeof getAllLandingPages>>;
 };
 
 function dedupeIndiaColleges(
-  colleges: Awaited<ReturnType<typeof getCatalogSnapshot>>["indiaColleges"],
+  colleges: SuggestionSource["indiaColleges"],
 ) {
   const uniqueBySlug = new Map<string, (typeof colleges)[number]>();
 
@@ -143,26 +158,118 @@ function getTypeRank(type: Suggestion["type"]) {
   }
 }
 
-async function getSuggestionSource(): Promise<SuggestionSource> {
+async function getSuggestionSource(query: string): Promise<SuggestionSource> {
   "use cache";
 
-  cacheLife("catalog");
+  cacheLife("hours");
   cacheTag("catalog");
   cacheTag("finder");
+  cacheTag("suggestions");
 
-  const [countries, courses, universities, catalogSnapshot, landingPages] = await Promise.all([
-    getCountries(),
-    getCourses(),
-    getUniversities(),
-    getCatalogSnapshot(),
-    getAllLandingPages(),
+  const landingPages = await getAllLandingPages();
+  const db = getDb();
+
+  if (!db) {
+    return {
+      countries: [],
+      courses: [],
+      universities: [],
+      indiaColleges: [],
+      landingPages,
+    };
+  }
+
+  const pattern = `%${query}%`;
+  const [countries, courses, universities, indiaCollegeRows] = await Promise.all([
+    db
+      .select({
+        slug: countriesTable.slug,
+        name: countriesTable.name,
+        region: countriesTable.region,
+      })
+      .from(countriesTable)
+      .where(
+        or(
+          ilike(countriesTable.name, pattern),
+          ilike(countriesTable.region, pattern),
+        ),
+      )
+      .orderBy(asc(countriesTable.name))
+      .limit(12),
+    db
+      .select({
+        slug: coursesTable.slug,
+        name: coursesTable.name,
+        shortName: coursesTable.shortName,
+      })
+      .from(coursesTable)
+      .where(
+        and(
+          eq(coursesTable.active, true),
+          or(
+            ilike(coursesTable.name, pattern),
+            ilike(coursesTable.shortName, pattern),
+          ),
+        ),
+      )
+      .orderBy(asc(coursesTable.name))
+      .limit(20),
+    db
+      .select({
+        slug: universitiesTable.slug,
+        name: universitiesTable.name,
+        city: universitiesTable.city,
+        countryName: countriesTable.name,
+      })
+      .from(universitiesTable)
+      .innerJoin(
+        countriesTable,
+        eq(universitiesTable.countryId, countriesTable.id),
+      )
+      .where(
+        and(
+          eq(universitiesTable.published, true),
+          or(
+            ilike(universitiesTable.name, pattern),
+            ilike(universitiesTable.city, pattern),
+            ilike(countriesTable.name, pattern),
+          ),
+        ),
+      )
+      .orderBy(asc(universitiesTable.name))
+      .limit(40),
+    db
+      .select({
+        slug: indiaMedicalColleges.slug,
+        collegeName: indiaMedicalColleges.collegeName,
+        programName: indiaMedicalPrograms.courseName,
+        stateName: indiaMedicalColleges.stateName,
+        cityName: indiaMedicalColleges.cityName,
+        universityName: indiaMedicalColleges.universityName,
+      })
+      .from(indiaMedicalColleges)
+      .innerJoin(
+        indiaMedicalPrograms,
+        eq(indiaMedicalPrograms.collegeId, indiaMedicalColleges.id),
+      )
+      .where(
+        or(
+          ilike(indiaMedicalColleges.collegeName, pattern),
+          ilike(indiaMedicalColleges.cityName, pattern),
+          ilike(indiaMedicalColleges.stateName, pattern),
+          ilike(indiaMedicalColleges.universityName, pattern),
+          ilike(indiaMedicalPrograms.courseName, pattern),
+        ),
+      )
+      .orderBy(asc(indiaMedicalColleges.collegeName))
+      .limit(40),
   ]);
 
   return {
     countries,
     courses,
     universities,
-    indiaColleges: dedupeIndiaColleges(catalogSnapshot.indiaColleges),
+    indiaColleges: dedupeIndiaColleges(indiaCollegeRows),
     landingPages,
   };
 }
@@ -181,14 +288,12 @@ export async function GET(req: NextRequest) {
   }
 
   const { countries, courses, universities, indiaColleges, landingPages } =
-    await getSuggestionSource();
+    await getSuggestionSource(q);
 
-  const countryMap = new Map(countries.map((country) => [country.slug, country.name]));
   const rankedResults: RankedSuggestion[] = [];
 
   for (const university of universities) {
-    const countryName = countryMap.get(university.countrySlug) ?? "";
-    const subtitle = `${university.city}${countryName ? `, ${countryName}` : ""}`;
+    const subtitle = `${university.city}, ${university.countryName}`;
     const primarySignals = getSuggestionSignals(q, university.name, subtitle);
     const secondarySignals = getSuggestionSignals(q, university.city, university.name);
     const strongestSignals =

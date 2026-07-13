@@ -4,7 +4,10 @@ import { getLatestDate } from "@/lib/content-dates";
 import { catalogReviewedAt } from "@/lib/content-governance";
 import { maxSitemapUrls } from "@/lib/constants";
 import { absoluteUrl } from "@/lib/metadata";
-import { getUniversities, getUniversitySitemapSlice } from "@/lib/data/catalog";
+import {
+  getPublishedUniversityCount,
+  getUniversitySitemapSlice,
+} from "@/lib/data/catalog";
 import { UNIVERSITY_SECTIONS } from "@/lib/university-sections";
 
 // 1 base URL + UNIVERSITY_SECTIONS.length section URLs per university (programs, student-life,
@@ -13,8 +16,8 @@ const ENTRIES_PER_UNIVERSITY = 1 + UNIVERSITY_SECTIONS.length;
 const universitiesPerPage = Math.floor(maxSitemapUrls / ENTRIES_PER_UNIVERSITY);
 
 export async function generateSitemaps() {
-  const universities = await getUniversities();
-  const totalPages = Math.max(1, Math.ceil(universities.length / universitiesPerPage));
+  const universityCount = await getPublishedUniversityCount();
+  const totalPages = Math.max(1, Math.ceil(universityCount / universitiesPerPage));
   return Array.from({ length: totalPages }, (_, index) => ({ id: index }));
 }
 

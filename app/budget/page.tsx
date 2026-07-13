@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { Button } from "@/components/ui/button";
-import { getBudgetGuides } from "@/lib/discovery-pages";
+import { getBudgetGuideSummaries } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
@@ -46,15 +46,9 @@ const courseThemes: Record<string, { card: string; action: string }> = {
 export default async function BudgetIndexPage() {
   await connection();
 
-  const guides = await getBudgetGuides();
+  const guides = await getBudgetGuideSummaries();
 
   const budgetCards = [...guides]
-    .map((guide) => ({
-      ...guide,
-      countryNames: [...new Set(guide.programs.map((program) => program.country.name))].sort(
-        (left, right) => left.localeCompare(right),
-      ),
-    }))
     .sort((left, right) => {
       const leftIndex = courseOrder.indexOf(
         left.course.slug as (typeof courseOrder)[number],
@@ -160,13 +154,13 @@ export default async function BudgetIndexPage() {
                         Matching
                       </p>
                       <p className="mt-2 text-sm font-semibold text-heading">
-                        {guide.programs.length} option{guide.programs.length === 1 ? "" : "s"}
+                        {guide.programCount} option{guide.programCount === 1 ? "" : "s"}
                       </p>
                     </div>
                   </div>
 
                   <p className="mt-4 text-sm leading-7 text-muted-foreground">
-                    {guide.programs.length} listed option{guide.programs.length === 1 ? "" : "s"} across{" "}
+                    {guide.programCount} listed option{guide.programCount === 1 ? "" : "s"} across{" "}
                     {guide.countryNames.length} countr{guide.countryNames.length === 1 ? "y" : "ies"} with
                     annual tuition at or below {formatCurrencyUsd(guide.budgetUsd)}.
                   </p>

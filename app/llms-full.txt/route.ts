@@ -1,15 +1,15 @@
-import { eq, desc } from "drizzle-orm";
+import { and, asc, desc, eq } from "drizzle-orm";
 import { unstable_cache } from "next/cache";
 
 import { siteConfig } from "@/lib/constants";
-import {
-  getCountries,
-  getCourses,
-  getProgramOfferings,
-  getUniversities,
-} from "@/lib/data/catalog";
 import { getDb } from "@/lib/db/server";
-import { blogPosts } from "@/lib/db/schema";
+import {
+  blogPosts,
+  countries as countriesTable,
+  courses as coursesTable,
+  programOfferings as programOfferingsTable,
+  universities as universitiesTable,
+} from "@/lib/db/schema";
 import { absoluteUrl } from "@/lib/metadata";
 import { logPublicRouteRequest } from "@/lib/route-observability";
 import {
@@ -43,6 +43,85 @@ const getPublishedBlogIndex = unstable_cache(
   { tags: ["blog"], revalidate: 3600 }
 );
 
+const getLlmsCatalogIndex = unstable_cache(
+  async () => {
+    const db = getDb();
+    if (!db) {
+      return { countries: [], courses: [], universities: [], offerings: [] };
+    }
+
+    const [countries, courses, universities, offerings] = await Promise.all([
+      db
+        .select({
+          slug: countriesTable.slug,
+          name: countriesTable.name,
+          region: countriesTable.region,
+          summary: countriesTable.summary,
+        })
+        .from(countriesTable)
+        .orderBy(asc(countriesTable.name)),
+      db
+        .select({
+          slug: coursesTable.slug,
+          name: coursesTable.name,
+          shortName: coursesTable.shortName,
+          durationYears: coursesTable.durationYears,
+          summary: coursesTable.summary,
+        })
+        .from(coursesTable)
+        .where(eq(coursesTable.active, true))
+        .orderBy(asc(coursesTable.displayOrder), asc(coursesTable.name)),
+      db
+        .select({
+          slug: universitiesTable.slug,
+          name: universitiesTable.name,
+          countrySlug: countriesTable.slug,
+          city: universitiesTable.city,
+          type: universitiesTable.type,
+          establishedYear: universitiesTable.establishedYear,
+          recognitionBadges: universitiesTable.recognitionBadges,
+          summary: universitiesTable.summary,
+        })
+        .from(universitiesTable)
+        .innerJoin(
+          countriesTable,
+          eq(universitiesTable.countryId, countriesTable.id),
+        )
+        .where(eq(universitiesTable.published, true))
+        .orderBy(asc(universitiesTable.name)),
+      db
+        .select({
+          universitySlug: universitiesTable.slug,
+          courseSlug: coursesTable.slug,
+          durationYears: programOfferingsTable.durationYears,
+          annualTuitionUsd: programOfferingsTable.annualTuitionUsd,
+          totalTuitionUsd: programOfferingsTable.totalTuitionUsd,
+          medium: programOfferingsTable.medium,
+        })
+        .from(programOfferingsTable)
+        .innerJoin(
+          universitiesTable,
+          eq(programOfferingsTable.universityId, universitiesTable.id),
+        )
+        .innerJoin(
+          coursesTable,
+          eq(programOfferingsTable.courseId, coursesTable.id),
+        )
+        .where(
+          and(
+            eq(programOfferingsTable.published, true),
+            eq(universitiesTable.published, true),
+          ),
+        )
+        .orderBy(asc(universitiesTable.name), asc(coursesTable.name)),
+    ]);
+
+    return { countries, courses, universities, offerings };
+  },
+  ["llms-full-catalog-index"],
+  { tags: ["catalog", "llms"], revalidate: 86400 },
+);
+
 export async function GET(request: Request) {
   logPublicRouteRequest({
     route: "llms-full.txt",
@@ -50,11 +129,8 @@ export async function GET(request: Request) {
     sampleRate: 1,
   });
 
-  const [universities, countries, courses, offerings, posts] = await Promise.all([
-    getUniversities(),
-    getCountries(),
-    getCourses(),
-    getProgramOfferings(),
+  const [{ universities, countries, courses, offerings }, posts] = await Promise.all([
+    getLlmsCatalogIndex(),
     getPublishedBlogIndex(),
   ]);
 
@@ -229,7 +305,7 @@ export async function GET(request: Request) {
           : "";
         programLines.push(
           `  - ${courseName}: ${fee}${totalFee}, ${offering.durationYears} years, ${formatProgramMedium(
-            offering.medium,
+            offering.medium as Parameters<typeof formatProgramMedium>[0],
             university.countrySlug,
           )}`,
         );

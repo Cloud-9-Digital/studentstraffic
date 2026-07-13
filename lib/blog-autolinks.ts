@@ -9,7 +9,7 @@
 
 import { unstable_cache } from "next/cache";
 
-import { getCountries, getUniversities } from "@/lib/data/catalog";
+import { getCatalogLinkOptions } from "@/lib/data/catalog";
 import { getCountryHref, getUniversityHref } from "@/lib/routes";
 
 export type LinkRule = {
@@ -91,10 +91,7 @@ const STATIC_RULES: LinkRule[] = [
 export const buildLinkRules = unstable_cache(
   async (currentSlug: string): Promise<LinkRule[]> => {
   void currentSlug;
-  const [countries, universities] = await Promise.all([
-    getCountries(),
-    getUniversities(),
-  ]);
+  const { countries, universities } = await getCatalogLinkOptions();
 
   const rules: LinkRule[] = [...STATIC_RULES];
 

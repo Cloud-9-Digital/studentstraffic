@@ -7,8 +7,8 @@ import {
 import { absoluteUrl } from "@/lib/metadata";
 import {
   getAllLandingPages,
-  getCatalogSnapshot,
   getPublishedBlogPostMetadata,
+  getSitemapCatalogData,
 } from "@/lib/data/catalog";
 import { getTamilNaduCityPages } from "@/lib/data/tamil-nadu-local";
 import {
@@ -30,12 +30,12 @@ function uniqueUrls(urls: Array<string | undefined>) {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const tamilNaduCityPages = getTamilNaduCityPages();
-  const [snapshot, landingPages, publishedPosts] = await Promise.all([
-    getCatalogSnapshot(),
+  const [sitemapCatalog, landingPages, publishedPosts] = await Promise.all([
+    getSitemapCatalogData(),
     getAllLandingPages(),
     getPublishedBlogPostMetadata(),
   ]);
-  const { countries, courses, universities, programOfferings } = snapshot;
+  const { countries, courses, universities, programOfferings } = sitemapCatalog;
   const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
   const courseBySlug = new Map(courses.map((course) => [course.slug, course]));
   const universityBySlug = new Map(

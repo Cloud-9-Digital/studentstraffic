@@ -1,8 +1,14 @@
 import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
+import { and, asc, eq } from "drizzle-orm";
 
-import { getCourses, getProgramOfferings } from "@/lib/data/catalog";
+import { getDb } from "@/lib/db/server";
+import {
+  courses,
+  programOfferings,
+  universities,
+} from "@/lib/db/schema";
 import type { CourseStream } from "@/lib/data/types";
 
 export type NavCourse = {
@@ -22,11 +28,29 @@ export async function getNavCourses(): Promise<NavCourse[]> {
   cacheTag("catalog");
   cacheTag("courses");
 
-  const [courses, offerings] = await Promise.all([getCourses(), getProgramOfferings()]);
-  const publishedCourseSlugs = new Set(offerings.map((offering) => offering.courseSlug));
+  const db = getDb();
+  if (!db) return [];
 
-  return courses
-    .filter((course) => course.active !== false && publishedCourseSlugs.has(course.slug))
+  const rows = await db
+    .selectDistinct({
+      slug: courses.slug,
+      name: courses.name,
+      shortName: courses.shortName,
+      stream: courses.stream,
+    })
+    .from(courses)
+    .innerJoin(programOfferings, eq(programOfferings.courseId, courses.id))
+    .innerJoin(universities, eq(programOfferings.universityId, universities.id))
+    .where(
+      and(
+        eq(courses.active, true),
+        eq(programOfferings.published, true),
+        eq(universities.published, true),
+      ),
+    )
+    .orderBy(asc(courses.name));
+
+  return rows
     .map((course) => ({
       slug: course.slug,
       name: course.name,

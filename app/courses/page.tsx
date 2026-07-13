@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
-import { getCourses, getProgramsForCourse } from "@/lib/data/catalog";
+import { getCourseCatalogStats, getCourses } from "@/lib/data/catalog";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import { getCourseHref } from "@/lib/routes";
 import {
@@ -69,21 +69,18 @@ function formatDuration(durationYears: number) {
 }
 
 export default async function CoursesPage() {
-  const courses = await getCourses();
-
-  const courseCards = await Promise.all(
-    courses.map(async (course) => {
-      const programs = await getProgramsForCourse(course.slug);
-      const countryCount = new Set(programs.map((program) => program.country.slug))
-        .size;
-
-      return {
-        ...course,
-        countryCount,
-        programCount: programs.length,
-      };
-    }),
+  const [courses, stats] = await Promise.all([
+    getCourses(),
+    getCourseCatalogStats(),
+  ]);
+  const statsByCourseSlug = new Map(
+    stats.map((entry) => [entry.courseSlug, entry]),
   );
+  const courseCards = courses.map((course) => ({
+    ...course,
+    countryCount: statsByCourseSlug.get(course.slug)?.countryCount ?? 0,
+    programCount: statsByCourseSlug.get(course.slug)?.programCount ?? 0,
+  }));
 
   courseCards.sort((left, right) => {
     const leftIndex = courseOrder.indexOf(left.slug as (typeof courseOrder)[number]);

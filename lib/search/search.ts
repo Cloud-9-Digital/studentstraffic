@@ -5,7 +5,6 @@ import { count, sql } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
 import { studyAbroadGuides } from "@/lib/data/study-abroad-guides";
-import { getCatalogSnapshot } from "@/lib/data/catalog";
 import type {
   SearchDocument,
   SearchDocumentType,
@@ -403,13 +402,15 @@ async function getCachedSearchDocuments(): Promise<SearchDocument[]> {
   cacheTag("search");
   cacheTag("india-colleges");
 
-  const snapshot = await getCatalogSnapshot();
-
   return buildSearchDocuments({
-    ...snapshot,
+    countries: [],
+    courses: [],
+    universities: [],
+    programOfferings: [],
+    indiaColleges: [],
     landingPages,
     studyAbroadGuides: Object.values(studyAbroadGuides).map((guide) => guide.page),
-    blogPosts: snapshot.publishedPosts,
+    blogPosts: [],
   });
 }
 

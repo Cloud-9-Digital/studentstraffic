@@ -23,7 +23,6 @@ import { getCountryContent } from "@/lib/data/country-content";
 import type { CountryContent } from "@/lib/data/country-content";
 import type { FinderProgram } from "@/lib/data/types";
 import {
-  getAllComparisonPages,
   getComparisonGuidesForUniversity,
   getComparisonPageBySlug,
   type BudgetComparisonGuide,
@@ -366,41 +365,6 @@ function getPageDescription(page: ComparisonPage) {
     default:
       return "Comparison page";
   }
-}
-
-function getRelatedComparisonPages(
-  currentPage: ComparisonPage,
-  allPages: ComparisonPage[]
-) {
-  return allPages
-    .filter((page) => page.slug !== currentPage.slug)
-    .filter((page) => {
-      if (currentPage.kind === "university") {
-        return (
-          page.kind === "university" &&
-          (page.left.course.slug === currentPage.left.course.slug ||
-            page.right.course.slug === currentPage.left.course.slug)
-        );
-      }
-
-      if (currentPage.kind === "country") {
-        return (
-          page.kind === "country" &&
-          page.course.slug === currentPage.course.slug &&
-          (page.leftCountry.slug === currentPage.leftCountry.slug ||
-            page.leftCountry.slug === currentPage.rightCountry.slug ||
-            page.rightCountry.slug === currentPage.leftCountry.slug ||
-            page.rightCountry.slug === currentPage.rightCountry.slug)
-        );
-      }
-
-      return (
-        page.kind === "budget" &&
-        page.course.slug === currentPage.course.slug &&
-        page.budgetUsd === currentPage.budgetUsd
-      );
-    })
-    .slice(0, 4);
 }
 
 function ComparisonHero({
@@ -1218,8 +1182,7 @@ export default async function ComparisonGuidePage({
     );
   }
 
-  const allPages = await getAllComparisonPages();
-  const relatedPages = getRelatedComparisonPages(page, allPages);
+  const relatedPages: ComparisonPage[] = [];
 
   if (page.kind === "university") {
     const universityRelated = await Promise.all([
