@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { ArrowRight, BookOpen, Building2, Globe2, Lightbulb, TrendingUp } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -117,6 +118,9 @@ export default async function CoursePage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // Course slugs outside the single build-time sample must resolve from the
+  // incoming request instead of inheriting the sample's cached fallback shell.
+  await connection();
   const { slug } = await params;
   const { course, summary, previewPrograms, budgetGuides } = await getCoursePageData(slug);
 

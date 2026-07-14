@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { Suspense } from "react";
 import { unstable_cache } from "next/cache";
 import { BookOpen, ChevronRight } from "lucide-react";
@@ -152,6 +153,10 @@ export default async function CountryPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // Only one representative slug is prerendered to keep catalog builds bounded.
+  // Wait for the request before resolving every other slug so the prerendered
+  // sample cannot be reused as a cached "Country Not Found" shell.
+  await connection();
   const { slug } = await params;
   const { country, programRows: programs, structuredPrograms } = await getCountryPageData(slug);
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import {
   ArrowRight,
   BookOpen,
@@ -142,6 +143,9 @@ export default async function CityPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // The city catalog grows independently of deployments. Resolve non-sample
+  // slugs at request time so valid cities never reuse the build fallback page.
+  await connection();
   const { slug } = await params;
   const programs = await getProgramsForCity(slug);
 

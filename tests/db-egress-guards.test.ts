@@ -115,6 +115,19 @@ test("country and course pages use narrow summaries plus bounded previews", asyn
   assert.match(universityPage, /queryFinderCardProgramsPage\(\{ country: countrySlug \}, 1, 13\)/);
 });
 
+test("capped dynamic catalogs resolve non-sample slugs at request time", async () => {
+  const pages = await Promise.all([
+    readProjectFile("app/countries/[slug]/page.tsx"),
+    readProjectFile("app/courses/[slug]/page.tsx"),
+    readProjectFile("app/cities/[slug]/page.tsx"),
+  ]);
+
+  for (const source of pages) {
+    assert.match(source, /from "next\/server"/);
+    assert.match(source, /await connection\(\)/);
+  }
+});
+
 test("high-cardinality directories progressively load bounded batches", async () => {
   const [comparePage, coursePage, compareApi, courseApi] = await Promise.all([
     readProjectFile("app/compare/page.tsx"),
