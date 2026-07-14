@@ -663,6 +663,7 @@ export async function getCountryBySlug(slug: string) {
   cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("countries");
+  cacheTag(`country:${slug}`);
 
   const db = getDb();
   if (!db) return null;
@@ -883,7 +884,6 @@ export async function getAllPublishedBlogPostsMetadata(): Promise<
       slug: blogPosts.slug,
       title: blogPosts.title,
       excerpt: blogPosts.excerpt,
-      content: blogPosts.content,
       coverUrl: blogPosts.coverUrl,
       category: blogPosts.category,
       metaTitle: blogPosts.metaTitle,
@@ -901,7 +901,6 @@ export async function getAllPublishedBlogPostsMetadata(): Promise<
     slug: post.slug,
     title: post.title,
     excerpt: post.excerpt,
-    content: post.content,
     coverUrl: post.coverUrl,
     category: post.category,
     metaTitle: post.metaTitle,
@@ -1605,7 +1604,9 @@ export async function listFinderPrograms(filters: FinderFilters) {
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("finder");
+  cacheTag("catalog-details");
+  if (filters.country) cacheTag(`country-programs:${filters.country}`);
+  if (filters.course) cacheTag(`course-programs:${filters.course}`);
 
   const programs =
     (await selectFinderProgramsFromDatabase(
@@ -1719,7 +1720,14 @@ export async function queryFinderCardProgramsPage(
   cacheTag("catalog");
   cacheTag("finder");
 
-  const databasePage = await queryFinderProgramsFromDatabase(filters, page, pageSize);
+  const safePageSize = Number.isFinite(pageSize)
+    ? Math.min(Math.max(Math.floor(pageSize), 1), 100)
+    : finderPageSize;
+  const databasePage = await queryFinderProgramsFromDatabase(
+    filters,
+    page,
+    safePageSize,
+  );
 
   if (databasePage) {
     return databasePage;
@@ -1729,16 +1737,18 @@ export async function queryFinderCardProgramsPage(
     await listFinderPrograms(filters),
   );
   const totalItems = allPrograms.length;
-  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+  const totalPages = Math.max(1, Math.ceil(totalItems / safePageSize));
   const safePage = Math.min(Math.max(page, 1), totalPages);
-  const start = (safePage - 1) * pageSize;
+  const start = (safePage - 1) * safePageSize;
 
   return {
-    programs: allPrograms.slice(start, start + pageSize).map(toFinderCardProgram),
+    programs: allPrograms
+      .slice(start, start + safePageSize)
+      .map(toFinderCardProgram),
     totalItems,
     totalPages,
     currentPage: safePage,
-    pageSize,
+    pageSize: safePageSize,
     hasPreviousPage: safePage > 1,
     hasNextPage: safePage < totalPages,
   };
@@ -1841,6 +1851,7 @@ export async function getFeaturedPrograms(limit = 4) {
       eq(universitiesTable.published, true),
       eq(programOfferingsTable.featured, true),
     ),
+    limit,
   );
 
   if (featuredPrograms) {
@@ -1857,7 +1868,6 @@ export async function getProgramPreviewForCountry(countrySlug: string, limit = 8
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("program-offerings");
   cacheTag(`country-programs:${countrySlug}`);
 
   return (await selectFinderProgramsFromDatabase(
@@ -1899,7 +1909,6 @@ export async function getCountryProgramDirectoryRows(countrySlug: string) {
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("program-offerings");
   cacheTag(`country-programs:${countrySlug}`);
 
   const db = getDb();
@@ -1967,7 +1976,6 @@ export async function getProgramPreviewForCourse(courseSlug: string, limit = 3) 
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("program-offerings");
   cacheTag(`course-programs:${courseSlug}`);
 
   return (await selectFinderProgramsFromDatabase(
@@ -1985,7 +1993,6 @@ export async function getCourseProgramDirectorySummary(courseSlug: string) {
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("program-offerings");
   cacheTag(`course-programs:${courseSlug}`);
 
   const db = getDb();
@@ -2023,10 +2030,7 @@ export async function getProgramsForUniversity(universitySlug: string) {
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("finder");
-  cacheTag("program-offerings");
   cacheTag("courses");
-  cacheTag("universities");
   cacheTag(`university-programs:${universitySlug}`);
 
   const databasePrograms = await selectFinderProgramsFromDatabase(
@@ -2073,9 +2077,6 @@ export async function getProgramsForCity(citySlug: string) {
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("finder");
-  cacheTag("program-offerings");
-  cacheTag("universities");
   cacheTag(`city-programs:${citySlug}`);
 
   const city = (await getUniqueCities()).find((entry) => entry.slug === citySlug);

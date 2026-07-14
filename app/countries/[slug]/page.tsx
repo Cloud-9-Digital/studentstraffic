@@ -87,6 +87,8 @@ async function getCountryPageData(slug: string) {
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("countries");
+  cacheTag(`country:${slug}`);
+  cacheTag(`country-programs:${slug}`);
 
   const country = await getCountryBySlug(slug);
 

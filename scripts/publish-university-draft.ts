@@ -482,7 +482,7 @@ async function main() {
     );
   }
 
-  const { savedUniversity, publishedPrograms, publishedProgramSlugs } =
+  const { savedUniversity, publishedPrograms, publishedProgramSlugs, publishedCourseSlugs } =
     await db.transaction(async (tx) => {
     const [countryRow, courseRows] = await Promise.all([
     tx
@@ -610,6 +610,7 @@ async function main() {
 
   let publishedPrograms = 0;
   const publishedProgramSlugs: string[] = [];
+  const publishedCourseSlugs = new Set<string>();
 
   for (const rawProgram of validation.programs) {
     const courseSlug = inferCourseSlug(rawProgram, asString(draftContent.summary));
@@ -706,6 +707,7 @@ async function main() {
 
     publishedPrograms += 1;
     publishedProgramSlugs.push(programSlug);
+    publishedCourseSlugs.add(courseSlug);
   }
 
   await tx
@@ -720,7 +722,12 @@ async function main() {
     })
     .where(eq(universityResearchQueue.id, record.queueId));
 
-    return { savedUniversity, publishedPrograms, publishedProgramSlugs };
+    return {
+      savedUniversity,
+      publishedPrograms,
+      publishedProgramSlugs,
+      publishedCourseSlugs: [...publishedCourseSlugs],
+    };
   });
 
   console.log(`Published university: ${savedUniversity.slug}`);
@@ -737,6 +744,10 @@ async function main() {
   await triggerRevalidate(
     [
       "universities",
+      `country:${record.countrySlug}`,
+      `country-programs:${record.countrySlug}`,
+      ...publishedCourseSlugs.map((slug) => `course-programs:${slug}`),
+      `city-programs:${createSlug(validation.city!)}`,
       `university:${savedUniversity.slug}`,
       `university-programs:${savedUniversity.slug}`,
     ],

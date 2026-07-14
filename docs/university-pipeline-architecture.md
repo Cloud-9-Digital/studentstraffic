@@ -275,10 +275,22 @@ an explicit recovery/maintenance operation; it is not part of the per-university
 `add-program-offerings.mjs` resolves all referenced university, course and existing programme slugs
 with three batched lookups before writing the transaction, rather than repeating those reads for
 every programme. Its post-commit refresh is slug-scoped: affected programme and university paths are
-expired, while unrelated catalogue data remains cached. The catalogue revalidation endpoint also
-refreshes the `/universities`, `/compare`, and `/budget` route shells and their narrow finder/
-comparison summary caches so newly published options appear without a broad catalogue snapshot
-reload.
+expired, while unrelated catalogue data remains cached. The importer also resolves the affected
+country and city in that same batched university lookup. All three validated publishers send
+`country-programs:<slug>`, `course-programs:<slug>` and `city-programs:<slug>` tags for only the
+locations and canonical courses written by the transaction. The catalogue revalidation endpoint
+continues to refresh the `/universities`, `/compare`, and `/budget` route shells and their narrow
+finder/comparison summary caches so newly published options appear immediately.
+
+Rich programme readers (`listFinderPrograms`, country/course previews and directories, university
+programme lists, and city programme lists) must not depend on the broad `finder`, `universities`, or
+`program-offerings` refresh tags. Four concurrent publishers can commit every few minutes; attaching
+rich readers to those broad tags defeats the long-lived cache and repeatedly transfers complete
+programme/university narrative records. Rich readers instead use the affected country, course,
+university, or city tag above. Compact finder cards, aggregate counts, index options and sitemaps may
+still use broad refresh tags because their projections are bounded or narrow. Blog index/related-post
+metadata similarly excludes the full article `content`; only the slug-specific blog detail reader
+downloads a body.
 
 These are internal data-access changes only. Public URLs, comparison eligibility (at least two
 published programmes per country/budget side), fee ranges, counts, university detail content and

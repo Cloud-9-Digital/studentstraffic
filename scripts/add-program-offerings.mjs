@@ -51,7 +51,13 @@ function validateEntry(entry, index) {
   }
 }
 
-async function revalidateCatalogCache({ programSlugs, universitySlugs }) {
+async function revalidateCatalogCache({
+  programSlugs,
+  universitySlugs,
+  courseSlugs,
+  countrySlugs,
+  citySlugs,
+}) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
   const secret = process.env.REVALIDATE_SECRET;
 
@@ -68,6 +74,15 @@ async function revalidateCatalogCache({ programSlugs, universitySlugs }) {
     `university-programs:${slug}`,
   ])) {
     endpoint.searchParams.append("tag", tag);
+  }
+  for (const slug of courseSlugs) {
+    endpoint.searchParams.append("tag", `course-programs:${slug}`);
+  }
+  for (const slug of countrySlugs) {
+    endpoint.searchParams.append("tag", `country-programs:${slug}`);
+  }
+  for (const slug of citySlugs) {
+    endpoint.searchParams.append("tag", `city-programs:${slug}`);
   }
   for (const slug of programSlugs) endpoint.searchParams.append("slug", slug);
   for (const slug of universitySlugs) {
@@ -106,6 +121,8 @@ async function main() {
   const requestedProgramSlugs = entries.map(
     (entry) => entry.slug ?? createSlug(`${entry.title}-${entry.universitySlug}`),
   );
+  let affectedCountrySlugs = [];
+  let affectedCitySlugs = [];
 
   try {
     await client.query("BEGIN");
@@ -113,7 +130,10 @@ async function main() {
     try {
       const [universityResult, courseResult, existingResult] = await Promise.all([
         client.query(
-          `SELECT id, slug FROM universities WHERE slug = ANY($1::text[]) AND published = true`,
+          `SELECT u.id, u.slug, u.city, c.slug AS country_slug
+           FROM universities u
+           INNER JOIN countries c ON c.id = u.country_id
+           WHERE u.slug = ANY($1::text[]) AND u.published = true`,
           [requestedUniversitySlugs],
         ),
         client.query(
@@ -126,6 +146,12 @@ async function main() {
         ),
       ]);
       const universityIds = new Map(universityResult.rows.map((row) => [row.slug, row.id]));
+      affectedCountrySlugs = [...new Set(
+        universityResult.rows.map((row) => row.country_slug),
+      )];
+      affectedCitySlugs = [...new Set(
+        universityResult.rows.map((row) => createSlug(row.city)),
+      )];
       const courseIds = new Map(courseResult.rows.map((row) => [row.slug, row.id]));
       const existingBySlug = new Map(existingResult.rows.map((row) => [row.slug, row]));
 
@@ -215,6 +241,9 @@ async function main() {
     await revalidateCatalogCache({
       programSlugs: requestedProgramSlugs,
       universitySlugs: requestedUniversitySlugs,
+      courseSlugs: requestedCourseSlugs,
+      countrySlugs: affectedCountrySlugs,
+      citySlugs: affectedCitySlugs,
     });
     console.log(`Published/updated ${entries.length} programme offerings atomically.`);
   } finally {

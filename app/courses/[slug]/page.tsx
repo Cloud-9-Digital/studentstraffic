@@ -55,6 +55,8 @@ async function getCoursePageData(slug: string) {
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("courses");
+  cacheTag(`course:${slug}`);
+  cacheTag(`course-programs:${slug}`);
 
   const course = await getCourseBySlug(slug);
 

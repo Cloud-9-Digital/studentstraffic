@@ -240,7 +240,24 @@ async function main() {
 
   await pool.end();
   const universitySlugs = payload.universities.map((university) => university.slug);
-  const countrySlugs = payload.countries.map((country) => country.slug);
+  const countrySlugs = [...new Set([
+    ...payload.countries.map((country) => country.slug),
+    ...payload.universities.map((university) => university.countrySlug),
+  ])];
+  const courseSlugs = [...new Set([
+    ...payload.courses.map((course) => course.slug),
+    ...payload.universities.flatMap((university) =>
+      university.programmes.map((programme) => programme.canonicalCourseSlug),
+    ),
+  ])];
+  const citySlugs = [...new Set(
+    payload.universities.map((university) =>
+      university.city.toLowerCase().normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, ""),
+    ),
+  )];
   if (env.hasTypesenseAdmin) {
     const searchResult = await syncTypesenseSearchForUniversities(universitySlugs);
     console.log(`Typesense search sync complete. Upserted ${searchResult.imported} affected documents.`);
@@ -248,7 +265,12 @@ async function main() {
   await triggerRevalidate(
     [
       "universities",
-      ...countrySlugs.map((slug) => `country:${slug}`),
+      ...countrySlugs.flatMap((slug) => [
+        `country:${slug}`,
+        `country-programs:${slug}`,
+      ]),
+      ...courseSlugs.map((slug) => `course-programs:${slug}`),
+      ...citySlugs.map((slug) => `city-programs:${slug}`),
       ...universitySlugs.flatMap((slug) => [
         `university:${slug}`,
         `university-programs:${slug}`,

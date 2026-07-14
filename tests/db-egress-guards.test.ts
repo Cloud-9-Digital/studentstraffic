@@ -115,6 +115,47 @@ test("country and course pages use narrow summaries plus bounded previews", asyn
   assert.match(universityPage, /queryFinderCardProgramsPage\(\{ country: countrySlug \}, 1, 13\)/);
 });
 
+test("rich catalogue caches survive unrelated publication batches", async () => {
+  const [catalogSource, universityPublisher, catalogPublisher, programImporter] =
+    await Promise.all([
+      readProjectFile("lib/data/catalog.ts"),
+      readProjectFile("scripts/publish-university-draft.ts"),
+      readProjectFile("scripts/publish-catalog-payload.ts"),
+      readProjectFile("scripts/add-program-offerings.mjs"),
+    ]);
+
+  const richListStart = catalogSource.indexOf(
+    "export async function listFinderPrograms",
+  );
+  const richListEnd = catalogSource.indexOf(
+    "function toFinderCardProgram",
+    richListStart,
+  );
+  const richListSource = catalogSource.slice(richListStart, richListEnd);
+
+  assert.doesNotMatch(richListSource, /cacheTag\("finder"\)/);
+  assert.match(richListSource, /country-programs:/);
+  assert.match(richListSource, /course-programs:/);
+  for (const publisher of [universityPublisher, catalogPublisher, programImporter]) {
+    assert.match(publisher, /country-programs:/);
+    assert.match(publisher, /course-programs:/);
+  }
+});
+
+test("blog index metadata does not download every article body", async () => {
+  const source = await readProjectFile("lib/data/catalog.ts");
+  const start = source.indexOf(
+    "export async function getAllPublishedBlogPostsMetadata",
+  );
+  const end = source.indexOf(
+    "export async function getPublishedBlogPostBySlug",
+    start,
+  );
+  const metadataReader = source.slice(start, end);
+
+  assert.doesNotMatch(metadataReader, /content: blogPosts\.content/);
+});
+
 test("capped dynamic catalogs resolve non-sample slugs at request time", async () => {
   const pages = await Promise.all([
     readProjectFile("app/countries/[slug]/page.tsx"),
@@ -140,4 +181,17 @@ test("high-cardinality directories progressively load bounded batches", async ()
   assert.match(coursePage, /courseCards\.slice\(0, 24\)/);
   assert.match(compareApi, /const PAGE_SIZE = 24/);
   assert.match(courseApi, /const pageSize = 24/);
+});
+
+test("finder query limits are finite and centrally bounded", async () => {
+  const source = await readProjectFile("lib/data/catalog.ts");
+  const start = source.indexOf(
+    "export async function queryFinderCardProgramsPage",
+  );
+  const end = source.indexOf("export async function getFinderOptions", start);
+  const finderPageSource = source.slice(start, end);
+
+  assert.match(finderPageSource, /Number\.isFinite\(pageSize\)/);
+  assert.match(finderPageSource, /Math\.min\(Math\.max\(Math\.floor\(pageSize\), 1\), 100\)/);
+  assert.match(finderPageSource, /pageSize: safePageSize/);
 });
