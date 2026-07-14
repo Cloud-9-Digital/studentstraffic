@@ -8,6 +8,7 @@ import {
   getPublishedUniversityCount,
   getUniversitySitemapSlice,
 } from "@/lib/data/catalog";
+import { getIndexableUniversitySections } from "@/lib/sitemap-indexability";
 import { UNIVERSITY_SECTIONS } from "@/lib/university-sections";
 
 // 1 base URL + UNIVERSITY_SECTIONS.length section URLs per university (programs, student-life,
@@ -31,6 +32,7 @@ export default async function sitemap(props: {
 
   return universities.flatMap((university) => {
     const lastModified = getLatestDate([catalogReviewedAt, university.updatedAt]);
+    const sections = getIndexableUniversitySections(university);
     return [
       {
         url: absoluteUrl(university.path),
@@ -38,7 +40,7 @@ export default async function sitemap(props: {
         changeFrequency: "weekly" as const,
         lastModified,
       },
-      ...UNIVERSITY_SECTIONS.map((section) => ({
+      ...sections.map((section) => ({
         url: absoluteUrl(`/university/${university.slug}-${section}`),
         priority: 0.65,
         changeFrequency: "weekly" as const,

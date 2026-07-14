@@ -1,5 +1,11 @@
 # Caching Strategy
 
+> **Historical reference:** the ISR tables, Redis references and one-hour examples below predate the
+> current Next.js 16 Cache Components implementation. The live catalogue uses the `catalog` cache
+> profile in `next.config.ts`, scoped tags in `lib/data/catalog.ts`, and the protected publisher
+> endpoint in `app/api/revalidate/route.ts`. Use `docs/university-pipeline-architecture.md` for current
+> operations.
+
 Multi-layer caching for maximum performance and minimal database load.
 
 ## 🎯 Overview

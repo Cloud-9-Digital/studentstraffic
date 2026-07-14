@@ -8,6 +8,7 @@ import {
   getPublishedProgramCount,
   getProgramSitemapSlice,
 } from "@/lib/data/catalog";
+import { getIndexableProgramSections } from "@/lib/sitemap-indexability";
 import { PROGRAM_SECTIONS } from "@/lib/university-sections";
 
 // 1 base URL + 4 section URLs per program (admissions/eligibility/fees/recognition)
@@ -30,6 +31,7 @@ export default async function sitemap(props: {
 
   return programs.flatMap((program) => {
     const lastModified = getLatestDate([catalogReviewedAt, program.updatedAt]);
+    const sections = getIndexableProgramSections(program);
     return [
       {
         url: absoluteUrl(program.path),
@@ -37,7 +39,7 @@ export default async function sitemap(props: {
         changeFrequency: "weekly" as const,
         lastModified,
       },
-      ...PROGRAM_SECTIONS.map((section) => ({
+      ...sections.map((section) => ({
         url: absoluteUrl(`${program.path}-${section}`),
         priority: 0.6,
         changeFrequency: "weekly" as const,

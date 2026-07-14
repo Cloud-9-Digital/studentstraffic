@@ -1,14 +1,19 @@
 # Blog Publishing Workflow
 
+> **Current publishing authority:** use the authenticated blog publishing workflow required by
+> `docs/content-seeding-runbook.md`. Older SQL/script examples in this document are retained only as
+> historical implementation reference and are not approved publishing templates. A database-only
+> blog publish requires slug-specific cache revalidation; it does not require a Vercel deployment.
+
 This document explains the recommended workflow for writing a blog post, generating a cover image, uploading the cover to Cloudinary, publishing the post into `blog_posts`, and verifying that it works in production.
 
 The short version:
 
 1. Research the topic and verify claims.
-2. Write the article in Markdown inside a publish script in `scripts/`.
+2. Write and validate the article in the authenticated publishing workflow.
 3. Generate a raster cover image.
 4. Upload the cover to Cloudinary.
-5. Upsert the blog post into the database with the Cloudinary `cover_url`.
+5. Publish the blog post atomically with the Cloudinary `cover_url`.
 6. Verify the slug, image URL, and rendered page.
 
 ---
@@ -147,7 +152,8 @@ After the script runs, confirm:
 4. the image URL returns `200`
 5. the article reads correctly in the blog page
 
-If production caching is involved, also revalidate or redeploy as needed.
+After the transaction commits, run the slug-specific blog cache revalidation. Do not redeploy for a
+database-only blog change.
 
 ---
 
@@ -428,7 +434,7 @@ Symptom:
 Fix:
 
 - revalidate blog cache
-- redeploy if necessary
+- verify that slug-specific revalidation completed successfully
 
 Script available:
 

@@ -293,6 +293,32 @@ country. High-cardinality `/compare` and `/courses` directories render the first
 and progressively fetch cached 24-item batches, preventing multi-megabyte HTML responses without
 removing any option from the user journey.
 
+## Sitemap promotion policy (2026-07-14)
+
+Sitemaps always promote every published university and programme base URL. Section URLs remain live
+and navigable, but are included in sitemaps only when the database contains enough corresponding
+source data to justify a separate search result. Sitemap filtering alone must not add `noindex`,
+change a self-canonical URL, redirect a tab, or remove a route.
+
+Programme section promotion uses these conservative signals:
+
+- admissions: curated university admissions content, or a specific intake backed by at least two sources;
+- eligibility: curated admissions content or explicit audience restrictions/eligibility;
+- recognition: at least one recognition badge and one official verification link;
+- fees: published annual tuition, a verification date, and either a year-wise breakdown, substantial
+  fee notes, or an official-currency annual/total amount.
+
+University section promotion uses these signals:
+
+- programs: at least one published programme;
+- student life: substantial combined campus, city and student-support narrative;
+- hostel: substantial combined accommodation, dietary and safety narrative;
+- FAQ: at least four maintained questions.
+
+The executable policy is `lib/sitemap-indexability.ts`; the sitemap queries project only boolean
+quality signals rather than downloading full university/programme records. Publishing or enrichment
+can therefore promote a section naturally after the normal `sitemap` cache tag is revalidated.
+
 ## Cross-agent publishing coordination
 
 `research/university-publishing-ledger.csv` is the shared coordination ledger for university work.

@@ -1,5 +1,10 @@
 # Scaling Implementation Guide
 
+> **Historical reference:** route counts, Sentry setup, one-hour ISR examples and cache-invalidation
+> commands below predate the current Next.js 16 Cache Components architecture. For current production
+> behavior, use `docs/university-pipeline-architecture.md`, `docs/content-seeding-runbook.md`,
+> `next.config.ts`, and `app/api/revalidate/route.ts`. Do not use this file as a publishing runbook.
+
 This document explains the scaling improvements implemented to handle millions of visitors per month.
 
 ## 🎯 Overview

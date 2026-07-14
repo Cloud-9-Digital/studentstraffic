@@ -231,6 +231,7 @@ The publish operation must:
 - preserve internal source/provenance data;
 - update search documents;
 - revalidate only affected cache tags;
+- recalculate sitemap promotion from the published record's actual content depth;
 - write a publish audit record.
 
 If any database, search or cache step fails, report the failure clearly and do not mark the payload as
@@ -260,6 +261,10 @@ validated publishing path:
 - the authenticated blog publishing workflow for blog posts;
 - `/api/revalidate` or the approved cache workflow for country/university/program changes.
 
+Database-only content publication does not require a Vercel build. It does require the approved
+post-commit search sync and cache/path revalidation before the payload is considered published.
+Never use a deployment as a substitute for cache invalidation.
+
 The old draft importer and one-off seed scripts are retired. A failed validation must abort the whole
 publish operation; partial or silently skipped content is not considered published.
 
@@ -288,6 +293,13 @@ After publication:
 6. Check search documents and sitemap entries are refreshed.
 7. Revalidate only affected cache tags.
 8. Record the publish and verification result in a run report.
+
+Sitemap inclusion is a quality signal, not a completeness dump. Base country, university and
+programme pages remain eligible when published. A programme or university section URL is promoted
+only when its corresponding verified fields meet the sitemap policy documented in
+`docs/university-pipeline-architecture.md`. A section that does not qualify remains accessible to
+users; withholding it from the sitemap must not turn it into a 404, redirect it, or change its
+canonical as part of an automated publishing batch.
 
 ## Metadata rules
 

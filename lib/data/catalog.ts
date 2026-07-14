@@ -2258,6 +2258,22 @@ export async function getUniversitySitemapSlice(start: number, end: number) {
     .select({
       slug: universitiesTable.slug,
       updatedAt: universitiesTable.updatedAt,
+      hasPublishedPrograms: sql<boolean>`exists(
+        select 1 from ${programOfferingsTable}
+        where ${programOfferingsTable.universityId} = ${universitiesTable.id}
+          and ${programOfferingsTable.published} = true
+      )`,
+      hasSubstantialStudentLife: sql<boolean>`
+        length(trim(${universitiesTable.campusLifestyle}))
+        + length(trim(${universitiesTable.cityProfile}))
+        + length(trim(${universitiesTable.studentSupport})) >= 600
+      `,
+      hasSubstantialHostel: sql<boolean>`
+        length(trim(${universitiesTable.hostelOverview}))
+        + length(trim(${universitiesTable.dietarySupport}))
+        + length(trim(${universitiesTable.safetyOverview})) >= 450
+      `,
+      hasSubstantialFaq: sql<boolean>`jsonb_array_length(${universitiesTable.faq}) >= 4`,
     })
     .from(universitiesTable)
     .where(eq(universitiesTable.published, true))
@@ -2269,6 +2285,10 @@ export async function getUniversitySitemapSlice(start: number, end: number) {
     slug: university.slug,
     path: getUniversityHref(university.slug),
     updatedAt: university.updatedAt?.toISOString(),
+    hasPublishedPrograms: university.hasPublishedPrograms,
+    hasSubstantialStudentLife: university.hasSubstantialStudentLife,
+    hasSubstantialHostel: university.hasSubstantialHostel,
+    hasSubstantialFaq: university.hasSubstantialFaq,
   }));
 }
 
@@ -2352,6 +2372,30 @@ export async function getProgramSitemapSlice(start: number, end: number) {
     .select({
       slug: programOfferingsTable.slug,
       updatedAt: programOfferingsTable.updatedAt,
+      hasAdmissionsContent: sql<boolean>`${universitiesTable.admissionsContent} <> '{}'::jsonb`,
+      hasSpecificIntakeSources: sql<boolean>`
+        cardinality(${programOfferingsTable.intakeMonths}) > 0
+        and cardinality(${programOfferingsTable.sourceUrls}) >= 2
+      `,
+      hasAudienceRestrictions: sql<boolean>`
+        coalesce(${programOfferingsTable.audienceEligibility}->>'availability', 'global') <> 'global'
+        or jsonb_array_length(coalesce(${programOfferingsTable.audienceEligibility}->'restrictions', '[]'::jsonb)) > 0
+        or jsonb_array_length(coalesce(${programOfferingsTable.audienceEligibility}->'eligibleAudiences', '[]'::jsonb)) > 0
+      `,
+      hasRecognitionEvidence: sql<boolean>`
+        cardinality(${universitiesTable.recognitionBadges}) > 0
+        and jsonb_array_length(${universitiesTable.recognitionLinks}) > 0
+      `,
+      hasVerifiedDetailedFees: sql<boolean>`
+        ${programOfferingsTable.annualTuitionUsd} > 0
+        and nullif(trim(coalesce(${programOfferingsTable.feeVerifiedAt}, '')), '') is not null
+        and (
+          jsonb_array_length(${programOfferingsTable.yearlyCostBreakdown}) > 0
+          or length(coalesce(${programOfferingsTable.feeNotes}, '')) >= 80
+          or ${programOfferingsTable.officialAnnualTuitionAmount} is not null
+          or ${programOfferingsTable.officialTotalTuitionAmount} is not null
+        )
+      `,
     })
     .from(programOfferingsTable)
     .innerJoin(
@@ -2372,6 +2416,11 @@ export async function getProgramSitemapSlice(start: number, end: number) {
     slug: offering.slug,
     path: getUniversityProgramHref(offering.slug),
     updatedAt: offering.updatedAt?.toISOString(),
+    hasAdmissionsContent: offering.hasAdmissionsContent,
+    hasSpecificIntakeSources: offering.hasSpecificIntakeSources,
+    hasAudienceRestrictions: offering.hasAudienceRestrictions,
+    hasRecognitionEvidence: offering.hasRecognitionEvidence,
+    hasVerifiedDetailedFees: offering.hasVerifiedDetailedFees,
   }));
 }
 
