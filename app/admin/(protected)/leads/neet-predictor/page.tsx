@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { and, desc, eq, ilike, or, sql } from "drizzle-orm";
-import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, BarChart3, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
@@ -110,6 +110,14 @@ export default async function NeetPredictorLeadsPage({
               {search && " (filtered)"}
             </p>
           </div>
+          <Link
+            href="/admin/leads/neet-predictor/analytics"
+            className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-[#0b312b] px-4 py-2.5 text-sm font-medium text-white transition hover:bg-[#164a42]"
+          >
+            <BarChart3 className="size-4" />
+            <span className="hidden sm:inline">View analytics</span>
+            <span className="sm:hidden">Analytics</span>
+          </Link>
         </div>
       </div>
 
