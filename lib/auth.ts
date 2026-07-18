@@ -28,6 +28,7 @@ import {
 import { getRequestIpAddress } from "@/lib/security/request";
 
 const ADMIN_ROLE = "admin" as const;
+const SESSION_MAX_AGE_SECONDS = 30 * 24 * 60 * 60;
 const DEFAULT_LOGIN_ERROR = "Invalid email or password.";
 const LOGIN_EMAIL_LIMIT = { limit: 5, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
 const LOGIN_IP_LIMIT = { limit: 12, windowMs: 15 * 60_000, blockMs: 30 * 60_000 };
@@ -85,7 +86,7 @@ async function validateAdminSession(session: Session | null): Promise<AdminSessi
 export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: DrizzleAdapter(getDb()!),
   secret: env.nextAuthSecret,
-  session: { strategy: "jwt", maxAge: 12 * 60 * 60 },
+  session: { strategy: "jwt", maxAge: SESSION_MAX_AGE_SECONDS },
   pages: { signIn: "/login", error: "/login" },
   providers: [
     ...authConfig.providers,

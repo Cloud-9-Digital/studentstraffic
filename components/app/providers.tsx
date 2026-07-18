@@ -12,7 +12,12 @@ export function Providers({
   session?: Session | null;
 }) {
   return (
-    <SessionProvider session={session}>
+    <SessionProvider
+      session={session}
+      refetchInterval={60 * 60}
+      refetchOnWindowFocus
+      refetchWhenOffline={false}
+    >
       <ShortlistProvider>{children}</ShortlistProvider>
     </SessionProvider>
   );

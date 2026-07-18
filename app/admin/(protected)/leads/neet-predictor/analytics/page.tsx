@@ -6,6 +6,7 @@ import {
   CalendarDays,
   CheckCircle2,
   CircleAlert,
+  Download,
   MousePointerClick,
   Target,
   Users,
@@ -183,7 +184,7 @@ export default async function NeetPredictorAnalyticsPage({
 }: {
   searchParams: SearchParams;
 }) {
-  await requireAdminSession();
+  const session = await requireAdminSession();
 
   const params = await searchParams;
   const today = getIndiaDate();
@@ -576,6 +577,15 @@ export default async function NeetPredictorAnalyticsPage({
             <Button asChild size="sm">
               <Link href="?">Since 17 Jul</Link>
             </Button>
+            {session.user.adminRole === "owner" ? (
+              <Button asChild variant="outline" size="sm">
+                <Link
+                  href={`/admin/leads/neet-predictor/analytics/export?from=${selectedFrom}&to=${selectedTo}`}
+                >
+                  <Download className="size-4" /> Export CSV
+                </Link>
+              </Button>
+            ) : null}
           </div>
         </div>
       </header>
