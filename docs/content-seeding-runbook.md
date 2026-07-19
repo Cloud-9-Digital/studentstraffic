@@ -72,6 +72,24 @@ and query the live database immediately before publication. If another owner has
 the institution, stop and reconcile rather than overwriting it. After a successful transaction,
 record `status=published`, `published_at`, the final programme count and payload path.
 
+### 1b. Keep research offline and create a numbered content migration
+
+Research agents must not connect to, query or write the production database while researching or
+drafting. They produce one complete source-backed payload under
+`content-migrations/<NNNN>-<scope>/` with a `manifest.json` and the referenced `payload.json`.
+The directory name and manifest ID are the immutable content-migration ID.
+
+- Validate all local bundles without database access with `npm run content:validate`.
+- Never edit a bundle after it has been applied. Create the next numbered migration for a correction.
+- Do not run `publish-catalog-payload.ts` directly; its direct CLI path is retired.
+- The only catalogue write command is `npm run content:migrate -- --apply`. It checks the live
+  publishing ledger, validates pending bundles, applies them in sequence and records each ID and
+  checksum in `content_migrations`.
+
+The `content_migrations` table is environment-specific and is the source of truth for whether a
+bundle reached staging or production. This allows a long research period to remain completely
+offline while the database wakes only for the deliberate publication window.
+
 ### 2. Use the canonical taxonomy
 
 For every programme stream and qualification level, use the approved registry in
@@ -225,7 +243,7 @@ Rules:
 - normally enable no more than two optional sections per page;
 - visa is country-level by default, university/program-specific only where the institution or course changes the process.
 
-### 7. Publish atomically
+### 7. Publish atomically through the content-migration runner
 
 After validation passes, publish the complete payload in one transaction. The transaction must either
 write the complete country/university/program content or write nothing.
@@ -242,6 +260,10 @@ The publish operation must:
 
 If any database, search or cache step fails, report the failure clearly and do not mark the payload as
 published.
+
+One `content:migrate -- --apply` invocation may process several pending migration directories, but
+each numbered migration remains independently atomic. A later failed bundle does not undo earlier,
+recorded migrations; fix it in a new bundle and rerun the command.
 
 ### 8. Publish/hold rules
 
@@ -298,7 +320,8 @@ After publication:
 5. Check optional sections show or hide correctly.
 6. Check search documents and sitemap entries are refreshed.
 7. Revalidate only affected cache tags.
-8. Record the publish and verification result in a run report.
+8. Record the publish and verification result in the committed content-migration manifest and the
+   environment's `content_migrations` ledger entry.
 
 Sitemap inclusion is a quality signal, not a completeness dump. Base country, university and
 programme pages remain eligible when published. A programme or university section URL is promoted
@@ -344,10 +367,13 @@ current availability.
   because the canonical course matches.
 - Do not add columns for one country or one profession; use neutral fields or structured content.
 - Do not store raw research prose in public fields when a structured field is available.
-- Preserve source bundles and review notes for auditability.
+- Preserve the source-backed content-migration bundle and applied ledger entry for auditability.
+  Raw research downloads, exploratory scopes and generated run reports are local artifacts and are
+  intentionally ignored after their reviewed migration is committed.
 
 ## What belongs in this runbook
 
 Update this document when the schema, page architecture, validation rules, content limits, publishing
 workflow or source-quality standard changes. Historical scripts, old prompts and one-off country
-decisions do not belong here; record those in run reports or the archive instead.
+decisions do not belong here; keep any necessary durable record in the relevant content migration or
+external archive instead.

@@ -298,6 +298,23 @@ export const programOfferings = pgTable(
   ]
 );
 
+/**
+ * Immutable record of catalogue content bundles applied to this database.
+ * Each environment owns its own ledger, so staging and production can be
+ * advanced independently while sharing the same versioned files in Git.
+ */
+export const contentMigrations = pgTable(
+  "content_migrations",
+  {
+    migrationId: text("migration_id").primaryKey(),
+    checksum: text("checksum").notNull(),
+    payloadCount: integer("payload_count").notNull(),
+    summary: jsonb("summary").notNull().default({}),
+    appliedAt: timestamp("applied_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [index("content_migrations_applied_at_idx").on(table.appliedAt)],
+);
+
 export const indiaMedicalColleges = pgTable(
   "india_medical_colleges",
   {

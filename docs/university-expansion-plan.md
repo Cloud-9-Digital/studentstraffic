@@ -6,14 +6,10 @@ sequencing, that file is "how the pipeline works").
 
 ## Scope
 
-**Now (Phase 1–2):** MBBS, Medical PG/Residency, BDS, Nursing, Pharmacy, and other medical/allied
-health (physiotherapy, medical lab tech, etc.) — matches the `courses` table today (`mbbs`,
-`medical-pg`, `bds`, `bsc-nursing`, `pharmacy`).
-
-**Future (Phase 3, scoped but not started):** Engineering, MBA/Business, Law, Hospitality, Agriculture,
-Education, and other non-medical fields, worldwide (Vietnam planned as the pilot country). Same
-pipeline mechanics, reused once proven — needs new `courses` rows and country/program research
-reoriented to those fields.
+**Current:** all approved catalogue streams may be published worldwide: Medicine, Medical
+PG/Residency, Dentistry, Nursing, Pharmacy, Engineering, Business/MBA, Law, Architecture,
+Arts, Sciences and the other families in `programme-taxonomy.md`. Every record must still use
+the complete validated publishing workflow, primary sources and an exact taxonomy match.
 
 **2026-07-12 taxonomy update:** the first controlled Engineering and MBA/Business programme names
 are defined in [`programme-taxonomy.md`](./programme-taxonomy.md) and the executable registry at
@@ -103,6 +99,27 @@ university pipeline. Use `scripts/add-program-offerings.mjs` directly (see
 writes them straight to a JSON file for that script to insert. No discover/verify-as-separate-agent
 needed since the university itself is already vetted; only the program facts need 2+ source
 verification (built into the script's validation).
+
+## Content-migration operating model (2026-07-19)
+
+The two agent stages above remain the research and verification stages, but direct database publishing
+is superseded by a third, user-triggered publication stage:
+
+1. **Discover + research:** create source-backed local payloads without `DATABASE_URL` access.
+2. **Verify + package:** create one immutable directory under `content-migrations/NNNN-scope/` for
+   the reviewed batch; holds remain local and are logged as before.
+3. **Controlled publish:** the user runs `npm run content:migrate -- --apply` in a deliberate
+   publication window. The runner applies every pending reviewed bundle and records its ID/checksum
+   in the target environment's `content_migrations` ledger.
+
+Stage B may prepare a full reviewed batch autonomously, but may not connect to or publish to the
+database. Corrections use a new numbered migration; use `scripts/unpublish-university.ts --slug
+<slug>` only when unpublishing is the intended remedy. This replaces earlier standing authorization
+for agents to publish direct to the database.
+
+For programme-only additions to already-published universities, skip net-new discovery but still
+research, validate and package the entries as a content migration. Do not run
+`add-program-offerings.mjs` directly from a research session.
 
 ## Country/scope priority queue
 

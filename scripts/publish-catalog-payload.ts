@@ -1,6 +1,6 @@
 import "./lib/load-script-env.mjs";
 
-import { readFile } from "node:fs/promises";
+import { spawn } from "node:child_process";
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import { neonConfig, Pool } from "@neondatabase/serverless";
@@ -16,7 +16,6 @@ import {
 } from "@/lib/data/program-taxonomy";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
 import { env } from "@/lib/env";
-import { syncTypesenseSearchForUniversities } from "@/lib/search/admin";
 
 const sourceSchema = z.object({
   label: z.string().min(2),
@@ -137,26 +136,43 @@ const countrySchema = z.object({
   metaDescription: z.string().min(80).max(170),
 });
 
-const payloadSchema = z.object({
+export const payloadSchema = z.object({
   countries: z.array(countrySchema).default([]),
   courses: z.array(courseSchema).min(1),
   universities: z.array(universitySchema).min(1),
 });
 
-function argument(name: string) {
-  const index = process.argv.indexOf(name);
-  return index >= 0 ? process.argv[index + 1] : undefined;
+export type CatalogPayload = z.infer<typeof payloadSchema>;
+
+function syncTypesenseSearch() {
+  return new Promise<void>((resolve, reject) => {
+    const child = spawn(
+      process.execPath,
+      ["--import", "tsx", "scripts/sync-typesense-search.ts"],
+      { cwd: process.cwd(), env: process.env, stdio: "inherit" },
+    );
+    child.on("error", reject);
+    child.on("exit", (code) => {
+      if (code === 0) {
+        resolve();
+        return;
+      }
+      reject(new Error(`Typesense search sync exited with code ${code ?? "unknown"}.`));
+    });
+  });
 }
 
-async function main() {
-  const file = argument("--file");
-  if (!file) throw new Error("Usage: tsx scripts/publish-catalog-payload.ts --file <payload.json>");
-
-  const payload = payloadSchema.parse(JSON.parse(await readFile(file, "utf8")));
+/**
+ * Apply one already-validated catalogue payload. This is intentionally only
+ * exported for the content-migration runner; do not add a new direct CLI path.
+ */
+export async function publishCatalogPayload(payload: CatalogPayload) {
   if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is required.");
   neonConfig.webSocketConstructor = WebSocket;
   const pool = new Pool({ connectionString: process.env.DATABASE_URL });
   const db = drizzle(pool, { schema });
+
+  try {
 
   for (const course of payload.courses) {
     if (!isApprovedCanonicalProgramme(course.slug)) {
@@ -252,7 +268,6 @@ async function main() {
     return published;
   });
 
-  await pool.end();
   const universitySlugs = payload.universities.map((university) => university.slug);
   const countrySlugs = [...new Set([
     ...payload.countries.map((country) => country.slug),
@@ -273,8 +288,7 @@ async function main() {
     ),
   )];
   if (env.hasTypesenseAdmin) {
-    const searchResult = await syncTypesenseSearchForUniversities(universitySlugs);
-    console.log(`Typesense search sync complete. Upserted ${searchResult.imported} affected documents.`);
+    await syncTypesenseSearch();
   }
   await triggerRevalidate(
     [
@@ -299,10 +313,17 @@ async function main() {
       ],
     },
   );
-  console.log(JSON.stringify({ publishedProgrammes: result }, null, 2));
+  return { publishedProgrammes: result };
+  } finally {
+    await pool.end();
+  }
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+// This command used to write an arbitrary JSON file directly to production.
+// Content must now be committed as an immutable numbered bundle and applied by
+// `npm run content:migrate -- --apply`, which records its checksum in the DB.
+if (process.argv[1]?.endsWith("publish-catalog-payload.ts")) {
+  throw new Error(
+    "Direct catalogue publishing is disabled. Put the payload in content-migrations/<sequence>/ and run npm run content:migrate -- --apply.",
+  );
+}

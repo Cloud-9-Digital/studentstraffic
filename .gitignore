@@ -58,6 +58,26 @@ mobile/app/.idea/
 /research/catalog-media/
 /research/catalog-payloads/
 
+# Completed publication is tracked by content-migrations/ and the DB ledger.
+# Keep raw research, exploratory reports, downloaded assets, and generated covers local.
+/research/assets/
+/research/payloads/
+/research/reports/
+/research/research-scopes/
+/research/run-reports/
+/research/programme-taxonomy-gaps/
+/research/programme-taxonomy-gaps-*.md
+/research/*-scope.md
+/docs/research-scopes/
+/docs/run-reports/
+/public/generated-blog-covers/
+.codex-qa-*.log
+/*scratchpad*.json
+
+# One-off blog publishing helpers; published posts are the durable record.
+/scripts/publish-mbbs-abroad-*.mjs
+/scripts/how-to-read-mbbs-abroad-*.md
+
 # One-off local publishing helpers
 /scripts/_dry-*
 /scripts/_tmp-*

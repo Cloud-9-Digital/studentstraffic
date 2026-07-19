@@ -26,7 +26,9 @@
     "seo:indexnow": "tsx scripts/submit-indexnow.ts",
     "search:sync:typesense": "tsx scripts/sync-typesense-search.ts",
     "cache:revalidate:blog": "node scripts/revalidate-blog-cache.mjs",
-    "audit:programme-taxonomy": "tsx scripts/audit-programme-taxonomy.ts"
+    "audit:programme-taxonomy": "tsx scripts/audit-programme-taxonomy.ts",
+    "content:validate": "tsx scripts/migrate-content.ts --validate",
+    "content:migrate": "tsx scripts/migrate-content.ts"
   },
   "dependencies": {
     "@auth/core": "^0.41.2",

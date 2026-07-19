@@ -17,6 +17,80 @@ export type CountryContent = {
 };
 
 const countryContentMap: Record<string, CountryContent> = {
+  "united-states": {
+    quickFacts: [
+      { label: "Capital", value: "Washington, D.C." },
+      { label: "Currency", value: "United States dollar (USD)" },
+      { label: "Higher-education language", value: "English is the principal language of instruction; requirements are institution- and programme-specific" },
+      { label: "Academic structure", value: "Universities and colleges set their own admissions, calendars, fees and award requirements" },
+      { label: "Climate", value: "Highly variable: coastal, continental, desert, subtropical and alpine regions" },
+      { label: "Student visa", value: "F-1 for academic study; M-1 for vocational study; confirm the route with the institution and U.S. government" },
+    ],
+    eligibility: {
+      intro: "There is no single national entry standard for U.S. higher education. Each institution and programme sets its own academic prerequisites, application platform, English-language evidence, tests, deadlines, portfolio or interview requirements, and financial-aid rules. EducationUSA advises applicants to check the international admissions office of every institution rather than relying on a country-wide cutoff.",
+      items: [
+        "Undergraduate applicants normally submit a secondary-school credential and certified transcripts; institutions may also request national examination results, recommendations, essays and SAT or ACT scores.",
+        "Graduate and professional applicants normally need a recognised undergraduate degree or the programme's stated prerequisite qualification; departments may add tests, writing samples, portfolios, interviews, work experience or prerequisite courses.",
+        "English evidence may be required through TOEFL, IELTS, Duolingo or another institution-approved route. Exemptions and minimum scores vary by school and programme.",
+        "International students need a funding plan covering tuition, fees, living costs, health insurance and travel; the institution must be able to issue the immigration document only after its own requirements are met.",
+        "Regulated professional routes such as medicine, dentistry, law and teacher education have separate entry and licensing requirements; a related degree does not itself confer a U.S. professional licence.",
+      ],
+    },
+    admissionSteps: [
+      "Define the level, field, campus location, delivery mode and accreditation or professional requirements before comparing institutions.",
+      "Use the institution's current international admissions page to confirm academic prerequisites, English evidence, tests, portfolio or interview requirements, application platform, fees and deadline for the intended intake.",
+      "Submit certified academic records and required translations, recommendations, essays or statements, test scores and financial-aid forms by the programme's own deadline.",
+      "After admission, complete the institution's international-student process and provide the financial evidence needed for the Form I-20 or other applicable document.",
+      "Pay the I-901 SEVIS fee where required, apply for the correct student visa through the U.S. Department of State, and follow the school's arrival and registration instructions.",
+    ],
+    verificationChecklist: [
+      "Confirm that the institution is authorised for the intended student-visa route and that the chosen programme is eligible for the status being requested.",
+      "Check the exact intake, deadline and test policy on the department or school page; graduate deadlines can differ from the university-wide calendar.",
+      "Ask the international office for the current annual cost-of-attendance figure and the amount required for immigration financial certification.",
+      "Keep separate budgets for tuition, mandatory health fees, housing, food, books, transport, visa charges and travel; U.S. costs vary materially by city and institution.",
+      "Do not begin employment until the designated school official confirms that the proposed work is authorised under the student's status.",
+    ],
+    documentsRequired: {
+      educational: [
+        "Valid passport",
+        "Secondary-school certificate and certified transcripts for undergraduate admission",
+        "Degree certificate and transcripts for graduate or professional admission",
+        "Certified English translations where the issuing records are not in English",
+        "English-language test score where the institution requires it",
+        "SAT, ACT, GRE, GMAT, LSAT, MCAT, portfolio, writing sample or interview evidence where the programme requires it",
+        "Recommendations, statement of purpose, personal statement or resume where required",
+      ],
+      visa: [
+        "Admission confirmation from the institution",
+        "Form I-20 for F-1/M-1 study, issued by the designated school official",
+        "Receipt for the I-901 SEVIS fee where required",
+        "DS-160 confirmation and visa appointment documents",
+        "Passport and compliant photograph",
+        "Proof of funds for the institution's certified study and living costs",
+        "Evidence requested by the consular officer, which may include academic records and evidence of ties or study purpose",
+      ],
+    },
+    hostelInfo: "Housing is not standardised nationally. Institutions may offer residence halls, graduate housing, dining plans or housing referrals, while availability, contract length and cost depend on the campus and city. Cambridge/Boston planning figures published by Harvard Griffin GSAS for 2026–27 estimate housing at about USD 2,030 per month on campus or USD 2,260 per month off campus for a single student; this is a Harvard planning figure, not a national U.S. rate. Confirm the exact residence deadline and full contract cost with each institution before paying a deposit.",
+    scholarshipInfo: "Funding is institution- and programme-specific. EducationUSA says U.S. institutions offer different combinations of scholarships, tuition waivers, aid and other provisions, and that competition is high. Harvard College states that its international admissions and financial-aid processes are the same regardless of nationality, while Harvard Business School and Harvard T.H. Chan publish school-specific need-based or grant policies. Treat every award as conditional on the named school's rules and deadline; do not assume federal aid, an external scholarship or campus work will cover the full cost.",
+    costOfLiving: {
+      intro: "The United States has no single student budget. EducationUSA states that tuition and living costs vary by institution and location, with housing and food generally lower in many suburban or rural parts of the South and Midwest than in major coastal cities. Use the university's current cost-of-attendance page for the actual study plan and keep a contingency for health care, travel and housing deposits.",
+      items: [
+        { category: "Tuition and mandatory fees", range: "Programme- and institution-specific", notes: "Confirm the current academic-year schedule directly with the institution" },
+        { category: "Housing", range: "City, campus and contract dependent", notes: "Harvard Griffin GSAS 2026–27 planning figure: USD 2,030/month on campus or USD 2,260/month off campus for a single student" },
+        { category: "Food", range: "Budget separately from housing", notes: "Meal plans, groceries and local prices vary by campus and city" },
+        { category: "Health insurance", range: "Usually a required student charge unless an approved waiver applies", notes: "Check the school's current health-plan rules and dependent costs" },
+        { category: "Visa, SEVIS and travel", range: "Case-specific government and travel charges", notes: "Use the U.S. Department of State, DHS and institution pages for current amounts" },
+        { category: "Financial buffer", range: "Plan for deposits, books, winter clothing and emergencies", notes: "Do not rely on unauthorised work to meet the initial funding requirement" },
+      ],
+    },
+    careerOpportunities: [
+      "F-1 students may have limited on-campus employment subject to status and school rules; Study in the States says students must consult the designated school official before working.",
+      "Off-campus work and practical training are not automatic. Eligibility, timing and authorisation depend on the immigration category, programme and documented circumstances.",
+      "Optional Practical Training or other post-study routes are policy-sensitive and do not guarantee employment, a visa extension or settlement; confirm current rules with USCIS, DHS and the institution.",
+      "Medicine, dentistry, law, teaching, nursing and other regulated careers require state or professional-board licensing beyond academic admission.",
+      "Use the university career service and the relevant U.S. regulator to plan progression rather than treating a degree as a professional licence or employment guarantee.",
+    ],
+  },
   russia: {
     quickFacts: [
       { label: "Capital", value: "Moscow" },
@@ -654,6 +728,74 @@ const countryContentMap: Record<string, CountryContent> = {
       "Anerkennung from EU nursing degree: Indian students who studied BSc Nursing in Lithuania or Albania obtain German Anerkennung via EU Directive 2005/36/EC, submit all degree documents with certified German translations to the relevant state authority (Landesbehorde), complete any required adaptation period or aptitude test, and receive German nursing registration. German B2 is separately required for the Berufserlaubnis (professional licence) regardless of the recognition pathway.",
       "UK NMC or Canadian NNAS registration: German-registered nurses with IELTS 7.0 can additionally apply for UK NMC registration or Canadian NNAS credential evaluation — maintaining multiple pathway options without re-studying.",
       "Academic and leadership nursing in Germany: German BSc Nursing graduates can progress to MSc in Pflegemanagement (nursing management), Pflegpadagogik (nursing education), or Advanced Nursing Practice at German universities of applied sciences — accessing nursing director, chief nursing officer, and academic roles.",
+    ],
+  },
+  "united-kingdom": {
+    quickFacts: [
+      { label: "Capital", value: "London" },
+      { label: "Study language", value: "English; course-specific language evidence applies" },
+      { label: "Currency", value: "Pound sterling (GBP)" },
+      { label: "Climate", value: "Temperate maritime; cool winters and mild summers" },
+      { label: "Main undergraduate route", value: "UCAS; Oxford's deadline is earlier than most UK courses" },
+      { label: "Student visa funds", value: "GOV.UK maintenance amount depends on location and current rules" },
+    ],
+    eligibility: {
+      intro: "The UK has no single country-wide admissions rule. Each university and course sets its own academic qualification, subject, language, test, portfolio and deadline requirements. Oxford uses course-specific selection and qualification guidance for international applicants.",
+      items: [
+        "An accepted qualification equivalent to the level and grade profile required by the chosen university and course",
+        "Course-specific subject prerequisites, admissions tests, interviews, written work or portfolio evidence where stated",
+        "English-language evidence at the level required by the institution and course",
+        "A valid passport and any academic documents, certified translations or verification requested by the institution",
+        "A Confirmation of Acceptance for Studies (CAS) and Student visa eligibility where immigration permission is required",
+      ],
+    },
+    admissionSteps: [
+      "Compare the official course page, qualification requirements, language rules, fees and deadline before selecting a route.",
+      "Prepare the required academic record, references, personal statement or research proposal and any test, portfolio or written-work evidence.",
+      "Apply through the route named by the institution: UCAS for most undergraduate applications, or the university's graduate application system for postgraduate study.",
+      "If shortlisted, complete interviews or assessments and respond to any conditional offer requirements by the stated deadline.",
+      "Arrange funding, accommodation and immigration documents early; visa timing and evidence rules are separate from academic admission.",
+    ],
+    verificationChecklist: [
+      "Check the exact course page rather than relying on a general country eligibility statement.",
+      "Confirm whether the course is full-time, its expected attendance pattern and whether it is eligible for a Student visa.",
+      "Recheck fees, deposit, scholarship deadline and fee status for the intended entry year.",
+      "Use GOV.UK for current visa, work and post-study conditions; do not rely on an older agent checklist.",
+    ],
+    documentsRequired: {
+      educational: [
+        "Passport or other accepted identity document",
+        "School or university transcripts and certificates",
+        "Certified English translations where documents are not in English",
+        "English-language test evidence when required",
+        "References, personal statement, CV, portfolio or research proposal where required by the course",
+      ],
+      visa: [
+        "CAS issued by the licensed student sponsor",
+        "Valid passport",
+        "Proof of funds for course fees and maintenance when required",
+        "ATAS certificate or tuberculosis test where applicable",
+        "Biometric or digital identity evidence and any documents listed by GOV.UK",
+      ],
+    },
+    hostelInfo: "Accommodation is organised by institution and city. Oxford's undergraduate admissions guidance says first-year students are offered guaranteed college accommodation, while graduate applicants should check the college and university housing position for the specific course. In other UK cities, halls, private rentals and shared housing vary by demand, contract length and location; secure a place only after checking the provider and total contract cost.",
+    scholarshipInfo: "Funding is not uniform across the UK. Universities, colleges, governments and external bodies publish their own eligibility and deadlines. Oxford states that its 2026–27 graduate cycle expects more than 1,100 full or partial scholarships, while undergraduate support differs materially between Home and Overseas fee status. Treat scholarships as competitive funding, not an automatic fee reduction, and check the official award conditions before relying on them.",
+    costOfLiving: {
+      intro: "UK costs vary by city, housing type, course length and lifestyle. Use the university's current living-cost estimate for planning and GOV.UK's Student visa maintenance figure for immigration evidence; they are different measures and neither replaces a personal budget.",
+      items: [
+        { category: "Visa maintenance evidence outside London", range: "£1,171/month for up to 9 months", notes: "Current GOV.UK figure checked 12 July 2026; rules can change" },
+        { category: "Visa maintenance evidence in London", range: "£1,529/month for up to 9 months", notes: "Current GOV.UK figure checked 12 July 2026; rules can change" },
+        { category: "Tuition", range: "Course-specific; Home and Overseas rates differ", notes: "Check the official university fee page for the intended entry year" },
+        { category: "Accommodation", range: "City and contract dependent", notes: "Oxford's 2026–27 graduate planning range is £825–£990/month" },
+        { category: "Food, transport and personal costs", range: "Build a separate monthly budget", notes: "Do not treat the visa maintenance figure as a guaranteed real-life cost" },
+      ],
+    },
+    careerOpportunities: [
+      "Student visa work rights depend on course level, sponsor and immigration conditions; check the current GOV.UK rules before accepting work.",
+      "A Student visa does not guarantee a post-study visa, employment or settlement outcome.",
+      "Eligible graduates may consider the Graduate visa route, but duration, eligibility and switching rules are policy-sensitive and must be checked on GOV.UK.",
+      "Regulated professions such as law, medicine, teaching and healthcare require separate professional registration or qualification rules.",
+      "Use the university careers service and the relevant professional regulator for progression planning rather than assuming that a UK degree confers a licence to practise.",
     ],
   },
 };

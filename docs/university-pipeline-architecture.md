@@ -64,7 +64,31 @@ Keep it current — see "Keeping this doc current" at the bottom.
   `structuredFacts`, `draftContent` (shaped to match the `universities`/`programOfferings` schema),
   `qualityScore`, `reviewNotes`, `verifiedAt`.
 
-## Generalizing discovery to non-medical fields (scoped, NOT built)
+## Content-migration publication layer
+
+All net-new catalogue content now follows a migration-style workflow:
+
+```text
+research + source bundle (offline) → complete local payload → content-migrations/NNNN-scope/
+→ npm run content:validate → reviewed commit → npm run content:migrate -- --apply
+```
+
+`manifest.json` identifies the bundle and its `payload.json`. The runner hashes both files, rejects
+any change to an already-applied migration, applies pending migrations in sequence, and records the
+ID/checksum in `content_migrations`. It performs live duplicate/ledger checks only during that final
+publish command. See [`content-migrations/README.md`](../content-migrations/README.md) for the
+directory contract.
+
+`scripts/publish-catalog-payload.ts` is now an internal write engine, not a direct CLI. Do not let a
+research agent invoke it or any old one-off writer directly. Use the migration runner so that local
+research sessions do not wake the database.
+
+## Generalizing discovery to non-medical fields
+
+> **Current operational note (2026-07-13):** the automatic discovery queue remains medical-source
+> based, but it is not a publishing gate. For non-medical universities, the shared publishing ledger
+> plus a complete primary-source payload is the approved discovery path. Do not hold a validated
+> non-medical university merely because it was not seeded from a medical directory.
 
 **Current implementation note (2026-07-10):** official regulatory sources has been retired completely. The official regulatory sources directory
 table, official regulatory sources-specific queue/draft columns, importers, matchers, and public rendering have been

@@ -144,6 +144,17 @@ function mapUniversityRow(
   });
 }
 
+function mapProgramAdmissionsContent(
+  admissionsContent: typeof programOfferingsTable.$inferSelect["admissionsContent"],
+): ProgramOffering["admissionsContent"] {
+  // Older published offerings predate programme-level admissions content and
+  // legitimately store the schema default `{}`. Do not expose that as a
+  // complete admissions object to page consumers.
+  return !admissionsContent || Object.keys(admissionsContent).length === 0
+    ? undefined
+    : (admissionsContent as ProgramOffering["admissionsContent"]);
+}
+
 function mapProgramOfferingRow(
   program: typeof programOfferingsTable.$inferSelect,
   universitySlug: string,
@@ -165,7 +176,7 @@ function mapProgramOfferingRow(
       program.officialTotalTuitionAmount ?? undefined,
     officialProgramUrl: program.officialProgramUrl,
     audienceEligibility: program.audienceEligibility,
-    admissionsContent: program.admissionsContent,
+    admissionsContent: mapProgramAdmissionsContent(program.admissionsContent),
     medium: program.medium as ProgramOffering["medium"],
     published: program.published,
     teachingPhases: program.teachingPhases,

@@ -138,6 +138,34 @@
         "kind": "other",
         "checkedAt": "2026-07-07",
         "notes": "Independent federal statistical profile of crime and safety indicators for the Halifax census metropolitan area, used to corroborate general city-safety context (police-reported crime in Halifax has declined over the preceding decade per related Statistics Canada/HRP reporting) rather than asserting Halifax as a top-ranked 'safest city' superlative."
+      },
+      {
+        "label": "Dalhousie University - Explore Programs (official current catalogue)",
+        "url": "https://www.dal.ca/study/programs.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-12",
+        "notes": "Current official catalogue states that Dalhousie supports more than 300 undergraduate, graduate and professional degrees across 13 faculties and lists the current degree-bearing programme titles used for portfolio reconciliation."
+      },
+      {
+        "label": "Dalhousie Faculty of Graduate Studies - Graduate programs (official)",
+        "url": "https://www.dal.ca/faculty/gradstudies/programs/graduate-programs.html",
+        "kind": "official-program",
+        "checkedAt": "2026-07-12",
+        "notes": "Current official graduate catalogue states that Dalhousie offers 100+ graduate programmes, including thesis-based, course-based master's and PhD programmes; individual offerings were mapped only where an exact active canonical course exists."
+      },
+      {
+        "label": "Dalhousie International Tuition Guarantee 2026-2027 (official)",
+        "url": "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html",
+        "kind": "official-fee",
+        "checkedAt": "2026-07-12",
+        "notes": "Official 2026-2027 international undergraduate tuition guarantee lists CAD 37,992 for Arts & Social Sciences and Science, CAD 48,592 for Engineering, and CAD 42,042 for Management before course-dependent and mandatory fees."
+      },
+      {
+        "label": "Dalhousie International applicants (official)",
+        "url": "https://www.dal.ca/admissions/how-to-apply/undergraduate-admissions/international-applicants.html",
+        "kind": "official-university",
+        "checkedAt": "2026-07-12",
+        "notes": "Official international-admissions page confirms international applicants can review undergraduate programmes and that 2026-2027 tuition prices are published in Canadian dollars; programme-specific restrictions remain separate and explicit."
       }
     ]
   },
@@ -147,6 +175,21 @@
     "type": "Public",
     "establishedYear": 1818,
     "officialWebsite": "https://www.dal.ca/",
+    "logoUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1783844323/studentstraffic/universities/dalhousie-university/logo.svg",
+    "coverImageUrl": "https://res.cloudinary.com/dlh6tmx7h/image/upload/v1783844325/studentstraffic/universities/dalhousie-university/cover.jpg",
+    "mediaAttribution": {
+      "logo": {
+        "sourceUrl": "https://www.dal.ca/content/experience-fragments/www/global/homepage-header/master/_jcr_content/root/wrapper/flex_wrapper/image.coreimg.svg/1709069699013/dalhousie-logo-black.svg",
+        "rights": "Official Dalhousie University brand asset hosted on dal.ca; used as institutional identity media.",
+        "checkedAt": "2026-07-12"
+      },
+      "cover": {
+        "sourceUrl": "https://www.dal.ca/_jcr_content/root/maincontent/main/hero_816095912_copy.coreimg.jpeg/1782998900967/halifax-ferry-students.jpeg",
+        "rights": "Official Dalhousie University homepage image hosted on dal.ca; uploaded to Students Traffic Cloudinary for catalogue use.",
+        "checkedAt": "2026-07-12",
+        "altText": "Students travelling by ferry in Halifax near Dalhousie University"
+      }
+    },
     "bestFitFor": [
       "Students who already have roughly 60 university credit hours (about 3 years) of prior post-secondary science-heavy coursework completed and are targeting a genuine four-year Doctor of Dental Surgery (DDS) degree in Canada, not a direct-from-high-school MBBS-style pathway",
       "Applicants who can sit the Canadian/American Dental Aptitude Test (DAT) rather than relying on NEET, and who are comfortable applying through AADSAS or the Dalhousie portal, including submitting a WES course-by-course evaluation of prior international coursework",
@@ -171,6 +214,7 @@
     "programs": [
       {
         "courseSlug": "bds",
+        "slug": "bds-in-dalhousie-university",
         "title": "Doctor of Dental Surgery (DDS)",
         "officialProgramUrl": "https://www.dal.ca/study/programs/graduate-professional/dentistry-dds.html",
         "medium": "English (English-language proficiency test required for applicants whose first language is not English)",
@@ -183,11 +227,165 @@
           "https://www.dal.ca/study/programs/graduate-professional/dentistry-dds.html",
           "https://cdn.dal.ca/content/dam/dalhousie/pdf/admissions/MoneyMatters/Dentistry%20and%20Medicine%202026-2027.pdf"
         ]
+      },
+      {
+        "courseSlug": "be-btech-chemical-engineering",
+        "title": "Chemical Engineering (BEng)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 48592,
+        "officialTotalTuitionAmount": 194368,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 48,592 annual guaranteed tuition for international students entering Engineering, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "be-btech-civil-engineering",
+        "title": "Civil Engineering (BEng)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 48592,
+        "officialTotalTuitionAmount": 194368,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 48,592 annual guaranteed tuition for international students entering Engineering, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "be-btech-electrical-engineering",
+        "title": "Electrical Engineering (BEng)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 48592,
+        "officialTotalTuitionAmount": 194368,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 48,592 annual guaranteed tuition for international students entering Engineering, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "be-btech-mechanical-engineering",
+        "title": "Mechanical Engineering (BEng)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 48592,
+        "officialTotalTuitionAmount": 194368,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 48,592 annual guaranteed tuition for international students entering Engineering, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "bachelor-economics",
+        "title": "Economics (BSc)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 37992,
+        "officialTotalTuitionAmount": 151968,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 37,992 annual guaranteed tuition for international students entering Science, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "bsc-mathematics",
+        "title": "Mathematics (BSc)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 37992,
+        "officialTotalTuitionAmount": 151968,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 37,992 annual guaranteed tuition for international students entering Science, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "bsc-chemistry",
+        "title": "Chemistry (BSc)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 37992,
+        "officialTotalTuitionAmount": 151968,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 37,992 annual guaranteed tuition for international students entering Science, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "bsc-physics",
+        "title": "Physics (BSc)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 37992,
+        "officialTotalTuitionAmount": 151968,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 37,992 annual guaranteed tuition for international students entering Science, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "ba-history",
+        "title": "History (BA)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 37992,
+        "officialTotalTuitionAmount": 151968,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 37,992 annual guaranteed tuition for international students entering Arts & Social Sciences, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "ba-philosophy",
+        "title": "Philosophy (BA)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 37992,
+        "officialTotalTuitionAmount": 151968,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 37,992 annual guaranteed tuition for international students entering Arts & Social Sciences, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
+      },
+      {
+        "courseSlug": "bachelor-psychology",
+        "title": "Psychology (BSc) (BA)",
+        "officialProgramUrl": "https://www.dal.ca/study/programs.html",
+        "medium": "English",
+        "durationYears": 4,
+        "intakeMonths": ["September"],
+        "officialFeeCurrency": "CAD",
+        "officialAnnualTuitionAmount": 37992,
+        "officialTotalTuitionAmount": 151968,
+        "feeVerifiedAt": "2026-07-12",
+        "feeNotes": "Dalhousie's 2026-2027 International Tuition Guarantee lists CAD 37,992 annual guaranteed tuition for international students entering Science or Arts & Social Sciences, before course-dependent and mandatory fees.",
+        "sourceUrls": ["https://www.dal.ca/study/programs.html", "https://www.dal.ca/admissions/money_matters/tuition_payments/International_Tuition_Guarantee.html"]
       }
     ]
   },
   "draftContent": {
-    "summary": "Dalhousie University is a large public research university founded in 1818, based in Halifax, Nova Scotia, and ranked among Canada's top 15 research-intensive universities. For Indian students researching health-professional degrees, it is important to understand Dalhousie's actual international-admissions rules program by program rather than assume a single blanket policy. Dalhousie's MD (medicine) program is not open to a general international applicant pool -- it is restricted to Canadian citizens and permanent residents, with only a small number of government-sponsored supernumerary seats for specific countries. The entry-to-practice PharmD (pharmacy) program primarily serves Maritime-province and Canadian-citizen/permanent-resident applicants without a described direct international pathway, and the direct-entry BScN (nursing) program is likewise restricted mainly to permanent residents of Nova Scotia. The one clearly confirmed exception is the four-year Doctor of Dental Surgery (DDS) program: Dalhousie's own official admission fact sheet states that 18 of the 44 total seats admitted in the most recent published cycle were reserved for international applicants, alongside a clearly published international tuition figure -- making this the one health-professional program covered in this profile. This information is compiled from Dalhousie's own official websites and PDFs (dal.ca, medicine.dal.ca, cdn.dal.ca) and independent sources (Wikipedia, The Canadian Encyclopedia, BeMo Academic Consulting, CBC News, Statistics Canada); Indian applicants should independently verify current eligibility, fees and licensing requirements directly with Dalhousie before applying.",
+    "summary": "Dalhousie University is a public research university founded in 1818 in Halifax, Nova Scotia, with a second Agricultural Campus in Truro and more than 300 undergraduate, graduate and professional degrees across 13 faculties. This catalogue reconciliation publishes exact active mappings across dentistry, engineering, economics, mathematics, chemistry, physics, history, philosophy and psychology, while keeping programme-specific international restrictions and unmatched awards explicit.",
     "campusLifestyle": "Dalhousie's main campuses sit in Halifax, Nova Scotia's capital and largest city, with an additional Agricultural Campus in Truro (Bible Hill). The university hosts roughly 21,000 students overall, including students from 47 countries living in its 11 residences, and offers hundreds of clubs, societies, and recreational facilities typical of a large multi-faculty research university. Because the DDS program is a small, cohort-based professional program (around 44 students admitted per year) embedded within this larger university, day-to-day student life for DDS students centres heavily on the Faculty of Dentistry building on the Halifax campus and its own clinics, labs, and student groups, rather than the wider undergraduate campus experience -- prospective applicants should confirm current DDS-specific student-life details directly with the Faculty of Dentistry.",
     "cityProfile": "Halifax is the capital of Nova Scotia and the largest city in Atlantic Canada, with a metropolitan population of roughly 440,000 as of the 2021 census. It is a historic port city and a regional hub for education, healthcare, and government, generally considered more affordable and less congested than Canada's largest metropolitan centres, while offering a full range of city amenities. Halifax's South Asian and Indian community is smaller than in cities like Toronto or Vancouver but is actively growing, with independent local reporting (CBC News) confirming new Indian and other Asian specialty grocery stores have been opening in the Halifax area alongside longer-established stores, serving a fast-growing Asian population. Students should note Halifax's Atlantic Canada climate (cold, often snowy winters and a notable coastal-weather pattern) as a significant adjustment from most parts of India, and should independently review current cost-of-living estimates before committing.",
     "clinicalExposure": "As a four-year professional Doctor of Dental Surgery (DDS) degree, the program combines pre-clinical coursework with hands-on clinical training delivered through the Faculty of Dentistry's own teaching clinics in Halifax, where students treat patients under faculty supervision as they progress through the curriculum, consistent with Canadian dental education standards. Because exact clinical rotation structures, patient-load requirements, and any external placement partnerships can change between admission cycles, applicants should review Dalhousie's current DDS curriculum information and confirm specifics directly with the Faculty of Dentistry before applying.",

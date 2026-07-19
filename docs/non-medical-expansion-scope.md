@@ -1,11 +1,13 @@
 # Non-Medical University Expansion — Scoping Notes
 
 Written 2026-07-08 when the user asked to add Vietnam's general universities/programs (Business, IT,
-Engineering, Law, Hospitality, Agriculture, etc.), matching a competitor's broader "Study in Vietnam"
-coverage. Paused before data population once it became clear the university page template assumes a
-medical program throughout — this file captures what was found so the next session doesn't have to
-rediscover it. This is **Phase 3** of `docs/university-expansion-plan.md` — not started, this is just
-scoping.
+Engineering, Law, Hospitality, Agriculture, etc.).
+
+> **Current operational status (2026-07-13):** this document is historical design context, not a
+> publishing gate. The page template is stream-aware and the approved worldwide taxonomy is live.
+> A non-medical university or programme may be published when it has primary-source evidence,
+> exact taxonomy mapping, validated field limits, clear restrictions and a complete atomic payload.
+> Do not hold a record merely because its stream is non-medical.
 
 ## Why this isn't just a data task
 

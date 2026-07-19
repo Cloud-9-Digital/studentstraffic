@@ -365,6 +365,13 @@
       "when": 1783863000000,
       "tag": "0066_programme_admissions_content",
       "breakpoints": true
+    },
+    {
+      "idx": 66,
+      "version": "7",
+      "when": 1784457000000,
+      "tag": "0067_content_migrations",
+      "breakpoints": true
     }
   ]
 }
