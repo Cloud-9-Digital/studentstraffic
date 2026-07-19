@@ -3,6 +3,10 @@
 Page structure and content budgets for destination and program expansion.
 This document is the contract for research agents, content agents and frontend implementation.
 
+The companion [`content-framework.md`](./content-framework.md) defines when a section is eligible to
+exist, how authority is kept private, how fee availability is presented, and how each section connects
+to an admissions action.
+
 ## Product principle
 
 These pages should help a student answer one question at a time:

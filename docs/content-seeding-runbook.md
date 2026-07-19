@@ -4,6 +4,10 @@ This is the canonical instruction for adding countries, universities and program
 Future agents must read this file before researching, drafting, importing or publishing study-abroad
 content. Do not use historical country-specific seed scripts as templates.
 
+The companion [`content-framework.md`](./content-framework.md) defines the public authority,
+non-editorial writing, fee-status, optional-section, freshness and conversion rules that each payload
+must meet.
+
 ## Non-negotiable content standard
 
 Students Traffic publishes verified information, not generated opinions. The public page must be useful

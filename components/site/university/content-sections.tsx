@@ -34,7 +34,7 @@ export function UniversitySnapshotSection({
     {
       icon: <CircleDollarSign className="size-3.5" />,
       label: getProgramAnnualFeeLabel(primaryProgram.offering),
-      value: formatProgramAnnualFee(primaryProgram.offering),
+      value: formatProgramAnnualFee(primaryProgram.offering, "Fee plan on request"),
     },
     {
       icon: <Clock className="size-3.5" />,
@@ -49,7 +49,7 @@ export function UniversitySnapshotSection({
     {
       icon: <CalendarDays className="size-3.5" />,
       label: "Intake",
-      value: primaryProgram.offering.intakeMonths.join(", "),
+      value: primaryProgram.offering.intakeMonths.join(", ") || "Guidance available",
     },
     {
       icon: <MapPinned className="size-3.5" />,
@@ -66,10 +66,10 @@ export function UniversitySnapshotSection({
   return (
     <div id="snapshot" className="scroll-mt-24 pb-10">
       <SectionLabel>At a glance</SectionLabel>
-      <div className="mt-5 overflow-hidden rounded-2xl border border-border">
+      <div className="mt-5 overflow-hidden rounded-2xl border border-border bg-card shadow-[0_18px_45px_-40px_rgba(15,61,55,0.55)]">
         <div className="grid grid-cols-2 gap-px bg-border sm:grid-cols-3">
           {stats.map((stat) => (
-            <div key={stat.label} className="flex flex-col gap-2 bg-card px-5 py-4">
+            <div key={stat.label} className="flex flex-col gap-2 bg-card px-5 py-4 transition-colors hover:bg-muted/25">
               <div className="flex items-center gap-1.5 text-accent">
                 {stat.icon}
                 <span className="text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
@@ -166,7 +166,7 @@ export function UniversityOverviewSection({
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        {fitCards.map((card) => (
+        {fitCards.filter((card) => card.items.length > 0).map((card) => (
           <div
             key={card.title}
             className={cn(

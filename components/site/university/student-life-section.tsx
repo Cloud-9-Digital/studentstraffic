@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {
   BedDouble,
-  ImageIcon,
   ShieldCheck,
   UtensilsCrossed,
   Trees,
@@ -32,13 +31,13 @@ function LifeCell({ icon, label, body, index, image }: Cell) {
       id={sectionId}
       className={`scroll-mt-24 overflow-hidden rounded-2xl border border-border ${sectionBackground}`}
     >
-      <div className="grid lg:grid-cols-2 lg:items-stretch">
-        <div
-          className={`min-h-52 border-b border-border bg-muted/45 lg:min-h-80 lg:border-b-0 ${
-            imageOnLeft ? "lg:border-r" : "lg:order-2 lg:border-l"
-          }`}
-        >
-          {image ? (
+      <div className={image ? "grid lg:grid-cols-2 lg:items-stretch" : undefined}>
+        {image ? (
+          <div
+            className={`min-h-52 border-b border-border bg-muted/45 lg:min-h-80 lg:border-b-0 ${
+              imageOnLeft ? "lg:border-r" : "lg:order-2 lg:border-l"
+            }`}
+          >
             <div className="relative h-full min-h-52 lg:min-h-80">
               <Image
                 src={image.url}
@@ -48,20 +47,10 @@ function LifeCell({ icon, label, body, index, image }: Cell) {
                 className="object-cover"
               />
             </div>
-          ) : (
-            <div className="flex h-full min-h-52 flex-col items-center justify-center gap-3 px-6 py-10 text-center text-muted-foreground lg:min-h-80">
-              <span className="flex size-12 items-center justify-center rounded-full border border-border bg-card/80 text-primary">
-                <ImageIcon className="size-5" />
-              </span>
-              <div>
-                <p className="text-sm font-semibold text-foreground">{label} image</p>
-                <p className="mt-1 text-xs">Image placeholder</p>
-              </div>
-            </div>
-          )}
-        </div>
+          </div>
+        ) : null}
 
-        <div className={`flex flex-col justify-center px-5 py-7 sm:px-8 sm:py-9 ${imageOnLeft ? "" : "lg:order-1"}`}>
+        <div className={`flex flex-col justify-center px-5 py-7 sm:px-8 sm:py-9 ${image ? (imageOnLeft ? "" : "lg:order-1") : "max-w-3xl"}`}>
           <div className="flex items-center gap-3">
             <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent [&_svg]:size-4">
               {icon}

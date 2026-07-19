@@ -118,6 +118,30 @@ export function UniversitySectionShell({
   };
 
   const summary = getSectionSummary(activeSection, university, country, primaryProgramShortName);
+  const heroDecisionFacts = activeSection
+    ? []
+    : [
+        {
+          label: "Location",
+          value: `${university.city}, ${country.name}`,
+        },
+        {
+          label: "Programme focus",
+          value: primaryProgram?.course.shortName ?? "Explore programmes",
+        },
+        {
+          label: primaryProgram
+            ? getProgramAnnualFeeLabel(primaryProgram.offering)
+            : "Fee planning",
+          value: primaryProgram
+            ? formatProgramAnnualFee(primaryProgram.offering, "Fee plan on request")
+            : "Available on request",
+        },
+        {
+          label: "Next intake",
+          value: primaryProgram?.offering.intakeMonths.join(", ") || "Guidance available",
+        },
+      ];
 
   return (
     <>
@@ -131,6 +155,9 @@ export function UniversitySectionShell({
         activeSectionLabel={activeSection ? SECTION_TITLES[activeSection] : null}
         lastVerifiedAt={lastVerifiedAt}
         author={author}
+        decisionFacts={heroDecisionFacts}
+        countrySlug={country.slug}
+        courseSlug={primaryProgram?.course.slug}
       />
 
       <UniversityPageNav

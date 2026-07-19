@@ -2,6 +2,9 @@
 
 This document stores working standards for Students Traffic so content, UX, and conversion decisions stay consistent across the project.
 
+For the authoritative, non-editorial catalogue-content policy, evidence model, fee states,
+optional-section gate and CTA contract, see [`content-framework.md`](./content-framework.md).
+
 ## Purpose
 
 Students Traffic should position itself as a trusted study-abroad partner that helps students move toward their dream country, dream university, and best-fit admission outcome.

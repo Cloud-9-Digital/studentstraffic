@@ -31,6 +31,9 @@ export function UniversityHeroSection({
   activeSectionLabel,
   lastVerifiedAt,
   author,
+  decisionFacts = [],
+  countrySlug,
+  courseSlug,
 }: {
   universityName: string;
   universitySlug: string;
@@ -41,6 +44,9 @@ export function UniversityHeroSection({
   activeSectionLabel?: string | null;
   lastVerifiedAt: string;
   author?: Author | null;
+  decisionFacts?: Array<{ label: string; value: string }>;
+  countrySlug?: string;
+  courseSlug?: string;
 }) {
   const heroSummary = getUniversityHeroSummary(universitySummary);
 
@@ -113,15 +119,20 @@ export function UniversityHeroSection({
 
             <div className="flex flex-wrap gap-3">
               <CounsellingDialog
-                triggerContent="Get admission guidance"
+                triggerContent="Plan my application"
                 triggerVariant="accent"
                 triggerSize="default"
+                title={`Plan your application to ${universityName}`}
+                description="Share your details and an admissions specialist will help you plan the next steps."
+                ctaVariant="university_hero_application_plan"
+                countrySlug={countrySlug}
+                courseSlug={courseSlug}
               />
               <ScrollToButton
-                targetId="talk-to-peers"
+                targetId="programs"
                 className="border border-white/20 bg-white/8 !text-white hover:bg-white/15 hover:!text-white"
               >
-                Talk to a student
+                Explore programmes
               </ScrollToButton>
             </div>
 
@@ -134,6 +145,24 @@ export function UniversityHeroSection({
               </div>
               <ShareButton title={universityName} />
             </div>
+
+            {decisionFacts.length > 0 ? (
+              <div className="grid max-w-2xl grid-cols-2 overflow-hidden rounded-2xl border border-white/12 bg-white/[0.06] sm:grid-cols-4">
+                {decisionFacts.map((fact) => (
+                  <div
+                    key={fact.label}
+                    className="min-w-0 border-b border-r border-white/10 px-3 py-3 last:border-r-0 even:border-r-0 sm:border-b-0 sm:even:border-r sm:last:border-r-0"
+                  >
+                    <p className="text-[0.6rem] font-semibold uppercase tracking-[0.13em] text-white/45">
+                      {fact.label}
+                    </p>
+                    <p className="mt-1 text-xs font-semibold leading-5 text-white/90">
+                      {fact.value}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ) : null}
           </div>
 
           <div className="min-w-0 lg:justify-self-end">
@@ -166,7 +195,7 @@ function UniversityHeroMedia({
   return (
     <figure className="group relative mx-auto w-full max-w-[580px] overflow-hidden rounded-[2rem] border border-white/12 bg-card shadow-[0_30px_100px_-50px_rgba(7,10,19,0.9)]">
       {coverImage ? (
-        <div className="relative h-[320px] overflow-hidden md:h-[420px] lg:h-[560px]">
+        <div className="relative h-[320px] overflow-hidden md:h-[420px] lg:h-[500px]">
           <Image
             src={coverImage.url}
             alt={coverImage.alt}
