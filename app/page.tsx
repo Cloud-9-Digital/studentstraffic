@@ -48,7 +48,7 @@ export default function HomePage() {
     <>
       <section className="home-hero relative overflow-hidden bg-background">
         <HeroCountryStrip />
-        <div className="container-shell relative mt-auto grid items-center gap-8 py-8 lg:mt-0 lg:h-full lg:min-h-0 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,0.82fr)] lg:gap-12 lg:py-0 xl:gap-16">
+        <div className="container-shell relative grid items-center gap-8 py-8 lg:h-full lg:min-h-0 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,0.82fr)] lg:gap-12 lg:py-0 xl:gap-16">
           <div className="max-w-2xl text-left">
             <h1 className="max-w-[11ch] font-display text-[3.15rem] font-semibold leading-[0.94] tracking-[-0.055em] text-heading sm:text-6xl lg:text-[4.5rem]">
               Find the right university abroad.
