@@ -8,7 +8,11 @@ import type { Author } from "@/lib/authors";
 import type { Country, FinderProgram, University } from "@/lib/data/types";
 import { parseUniversitySlug, UNIVERSITY_SECTIONS, type UniversitySection } from "@/lib/university-sections";
 import { recordRecentlyViewed } from "@/lib/recently-viewed";
-import { formatProgramAnnualFee, hasRenderableProgramAnnualFee } from "@/lib/utils";
+import {
+  formatProgramAnnualFee,
+  getProgramAnnualFeeLabel,
+  hasRenderableProgramAnnualFee,
+} from "@/lib/utils";
 import { getUniversityHref } from "@/lib/routes";
 
 const SECTION_TITLES: Record<UniversitySection, string> = {

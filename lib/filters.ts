@@ -1,6 +1,11 @@
 import type { FinderFilters, FinderSort } from "@/lib/data/types";
+import {
+  normalizeIntakeMonthCode,
+  normalizeTeachingLanguageCode,
+} from "@/lib/catalogue-facets";
+import { programmeLevels } from "@/lib/data/program-taxonomy";
 
-export const defaultFinderSort: FinderSort = "recommended";
+export const defaultFinderSort: FinderSort = "name_asc";
 export const finderSortValues = [
   "recommended",
   "tuition_asc",
@@ -60,15 +65,21 @@ function parseUniversityType(value?: string): "Public" | "Private" | undefined {
   return undefined;
 }
 
+function parseProgrammeLevel(value?: string) {
+  return programmeLevels.find((level) => level === value);
+}
+
 export function normalizeFinderFilters(filters: FinderFilters): FinderFilters {
   return {
     q: filters.q?.trim() || undefined,
     country: filters.country || undefined,
+    city: filters.city?.trim() || undefined,
+    level: parseProgrammeLevel(filters.level),
     course: filters.course || undefined,
     feeMin: filters.feeMin,
     feeMax: filters.feeMax,
-    medium: filters.medium || undefined,
-    intake: filters.intake || undefined,
+    medium: normalizeTeachingLanguageCode(filters.medium),
+    intake: normalizeIntakeMonthCode(filters.intake),
     universityType: filters.universityType || undefined,
     sort: normalizeFinderSort(filters.sort),
   };
@@ -78,6 +89,8 @@ export function parseFinderFilters(raw: FinderParamsInput): FinderFilters {
   return normalizeFinderFilters({
     q: getFirstValue(raw, "q") || undefined,
     country: getFirstValue(raw, "country") || undefined,
+    city: getFirstValue(raw, "city") || undefined,
+    level: parseProgrammeLevel(getFirstValue(raw, "level")),
     course: getFirstValue(raw, "course") || undefined,
     feeMin: parseNumber(getFirstValue(raw, "fee_min")),
     feeMax: parseNumber(getFirstValue(raw, "fee_max")),
@@ -99,6 +112,8 @@ export function createFinderSearchParams(filters: FinderFilters, page = 1) {
 
   if (normalized.q) params.set("q", normalized.q);
   if (normalized.country) params.set("country", normalized.country);
+  if (normalized.city) params.set("city", normalized.city);
+  if (normalized.level) params.set("level", normalized.level);
   if (normalized.course) params.set("course", normalized.course);
   if (normalized.medium) params.set("medium", normalized.medium);
   if (normalized.intake) params.set("intake", normalized.intake);

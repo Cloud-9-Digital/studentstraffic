@@ -11,7 +11,7 @@ import {
 } from "@/lib/guide-chat";
 import { resolveDbUserId } from "@/lib/server-session";
 
-export const metadata = { title: "Messages | Dashboard" };
+export const metadata = { title: "Connect | Dashboard" };
 
 export default async function StudentMessagesPage({
   searchParams,
@@ -72,8 +72,8 @@ export default async function StudentMessagesPage({
       role="student"
       userId={userId}
       basePath="/dashboard/messages"
-      title="Messages"
-      subtitle="Live conversations with your guides, designed to feel fast and natural on mobile and desktop."
+      title="Connect"
+      subtitle="Message your student guides and start voice calls from the same conversation."
       composerPlaceholder="Message {name}..."
       emptyStateTitle="Start the conversation"
       emptyStateDescription="Ask about accommodation, budget, daily life, academics, or anything you want clarity on before the next step."

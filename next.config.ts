@@ -69,12 +69,6 @@ const nextConfig: NextConfig = {
     browserToTerminal: "error",
     serverFunctions: false,
   },
-  typescript: {
-    // Type checking is done explicitly via `tsc --noEmit` in the build command.
-    // This prevents Next.js from running its own cached TS check which can fail
-    // when Vercel restores a stale build cache with old tsbuildinfo artifacts.
-    ignoreBuildErrors: true,
-  },
   cacheComponents: true,
   // Cache Components enables prerender source maps by default. Keeping them
   // disabled prevents static-generation workers from retaining source-map

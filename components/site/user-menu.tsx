@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, BookmarkCheck, FileText, LogOut, User, ChevronDown, AlertCircle } from "lucide-react";
+import { ArrowRight, LayoutDashboard, BookmarkCheck, MessagesSquare, LogOut, User, ChevronDown, AlertCircle } from "lucide-react";
 
 function SignOutDialog({ open, onConfirm, onCancel }: { open: boolean; onConfirm: () => void; onCancel: () => void }) {
   if (!open || typeof document === "undefined") return null;
@@ -48,8 +48,14 @@ function SignOutDialog({ open, onConfirm, onCancel }: { open: boolean; onConfirm
 const menuItems = [
   { href: "/dashboard",             icon: LayoutDashboard, label: "Dashboard" },
   { href: "/dashboard/shortlists",  icon: BookmarkCheck,   label: "My Shortlists" },
-  { href: "/dashboard/applications",icon: FileText,        label: "My Applications" },
+  { href: "/dashboard/messages",    icon: MessagesSquare,  label: "Connect" },
 ];
+
+const subscribeToHydration = () => () => {};
+
+function useHydrated() {
+  return useSyncExternalStore(subscribeToHydration, () => true, () => false);
+}
 
 function Avatar({ name, image, size = 8 }: { name?: string | null; image?: string | null; size?: number }) {
   const initial = name?.charAt(0).toUpperCase() ?? "U";
@@ -74,23 +80,18 @@ function Avatar({ name, image, size = 8 }: { name?: string | null; image?: strin
 export function UserMenu() {
   const { data: session, status } = useSession();
   const pathname = usePathname();
-  const [mounted, setMounted] = useState(false);
-  const [open, setOpen] = useState(false);
+  const mounted = useHydrated();
+  const [openPathname, setOpenPathname] = useState<string | null>(null);
   const [confirmSignOut, setConfirmSignOut] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => { setOpen(false); }, [pathname]);
+  const open = openPathname === pathname;
 
   useEffect(() => {
     if (!open) return;
     const handler = (e: MouseEvent) => {
-      if (!menuRef.current?.contains(e.target as Node)) setOpen(false);
+      if (!menuRef.current?.contains(e.target as Node)) setOpenPathname(null);
     };
-    const keyHandler = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
+    const keyHandler = (e: KeyboardEvent) => { if (e.key === "Escape") setOpenPathname(null); };
     document.addEventListener("mousedown", handler);
     document.addEventListener("keydown", keyHandler);
     return () => {
@@ -121,7 +122,7 @@ export function UserMenu() {
     <div className="relative" ref={menuRef}>
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => setOpenPathname(open ? null : pathname)}
         className="flex items-center gap-2 rounded-xl border border-[#0f3d37]/15 bg-[#f0f7f5] pl-1.5 pr-3 py-1.5 transition hover:bg-[#e4f0ed]"
         aria-expanded={open}
       >
@@ -152,7 +153,7 @@ export function UserMenu() {
             <Link
               key={href}
               href={href}
-              onClick={() => setOpen(false)}
+              onClick={() => setOpenPathname(null)}
               className="flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium text-[#374151] transition-colors hover:bg-[#f3f4f6] hover:text-[#0f3d37]"
             >
               <Icon className="size-4 shrink-0 text-[#9ca3af]" />
@@ -165,7 +166,7 @@ export function UserMenu() {
         <div className="border-t border-border/60 p-1.5">
           <button
             type="button"
-            onClick={() => { setOpen(false); setConfirmSignOut(true); }}
+            onClick={() => { setOpenPathname(null); setConfirmSignOut(true); }}
             className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-medium text-red-600 transition-colors hover:bg-red-50"
           >
             <LogOut className="size-4 shrink-0" />
@@ -186,12 +187,9 @@ export function UserMenu() {
 /** Compact version for mobile drawer */
 export function UserMenuMobile({ onClose }: { onClose: () => void }) {
   const { data: session, status } = useSession();
-  const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
+  const mounted = useHydrated();
   const [confirmSignOut, setConfirmSignOut] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   if (!mounted || status === "loading") return null;
 
@@ -220,31 +218,49 @@ export function UserMenuMobile({ onClose }: { onClose: () => void }) {
   const user = session.user;
 
   return (
-    <div className="border-t border-border px-3 py-3 space-y-0.5">
-      <div className="flex items-center gap-3 rounded-xl px-3 py-2 mb-1">
-        <Avatar name={user.name} image={user.image} size={9} />
-        <div className="min-w-0">
-          <p className="truncate text-sm font-semibold text-[#0f1f1c]">{user.name ?? "User"}</p>
-          <p className="truncate text-xs text-[#6b7280]">{user.email}</p>
+    <div className="px-3 py-3">
+      <Link
+        href="/dashboard"
+        onClick={onClose}
+        className="group flex items-center gap-3 rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/[0.28] via-primary/[0.20] to-accent/[0.24] px-3.5 py-3 transition-colors hover:border-primary/40 hover:from-primary/[0.34] hover:via-primary/[0.25] hover:to-accent/[0.28]"
+      >
+        <Avatar name={user.name} image={user.image} size={10} />
+        <div className="min-w-0 flex-1">
+          <p className="truncate text-sm font-bold text-foreground">{user.name ?? "Your account"}</p>
+          <p className="truncate text-xs text-muted-foreground">{user.email}</p>
         </div>
-      </div>
+        <ArrowRight className="size-4 shrink-0 text-primary transition-transform group-hover:translate-x-0.5" />
+      </Link>
 
-      {menuItems.map(({ href, icon: Icon, label }) => (
-        <Link
-          key={href}
-          href={href}
-          onClick={onClose}
-          className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-black/5"
-        >
-          <Icon className="size-4 text-muted-foreground" />
-          {label}
-        </Link>
-      ))}
+      <div className="mt-3 grid grid-cols-3 gap-2">
+        {menuItems.map(({ href, icon: Icon, label }) => {
+          const active = href === "/dashboard"
+            ? pathname === href
+            : pathname.startsWith(href);
+
+          return (
+            <Link
+              key={href}
+              href={href}
+              onClick={onClose}
+              aria-current={active ? "page" : undefined}
+              className={`flex min-h-20 flex-col items-center justify-center gap-1.5 rounded-xl border px-2 text-center text-[0.7rem] font-semibold leading-tight transition-colors ${
+                active
+                  ? "border-primary/25 bg-primary/10 text-primary"
+                  : "border-border bg-white text-foreground hover:border-primary/20 hover:bg-primary/5"
+              }`}
+            >
+              <Icon className={`size-4 ${active ? "text-primary" : "text-muted-foreground"}`} />
+              <span>{label.replace("My ", "")}</span>
+            </Link>
+          );
+        })}
+      </div>
 
       <button
         type="button"
         onClick={() => { onClose(); setConfirmSignOut(true); }}
-        className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-semibold text-red-600 transition-colors hover:bg-red-50"
+        className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border border-red-200 bg-red-50 px-3 py-2.5 text-sm font-semibold text-red-600 transition-colors hover:bg-red-100"
       >
         <LogOut className="size-4" />
         Sign out

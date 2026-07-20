@@ -7,6 +7,9 @@ export const siteConfig = {
   email: "hello@studentstraffic.com",
   phone: "+91 91761 62888",
   whatsappNumber: "919176162888",
+  // TODO: replace with the live listing URLs once the app is published.
+  playStoreUrl: "https://play.google.com/store/apps",
+  appStoreUrl: "https://apps.apple.com/app",
 };
 
 export const maxSitemapUrls = 50_000;

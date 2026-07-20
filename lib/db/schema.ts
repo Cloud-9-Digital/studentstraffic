@@ -260,6 +260,7 @@ export const programOfferings = pgTable(
       .notNull()
       .default({}),
     medium: text("medium").notNull(),
+    instructionLanguages: text("instruction_languages").array().notNull().default([]),
     published: boolean("published").notNull().default(true),
     teachingPhases: jsonb("teaching_phases")
       .$type<TeachingPhase[]>()
@@ -274,6 +275,7 @@ export const programOfferings = pgTable(
       .notNull()
       .default([]),
     intakeMonths: text("intake_months").array().notNull().default([]),
+    intakeCodes: text("intake_codes").array().notNull().default([]),
     feeVerifiedAt: text("fee_verified_at"),
     fxRateDate: text("fx_rate_date"),
     fxRateSourceUrl: text("fx_rate_source_url"),

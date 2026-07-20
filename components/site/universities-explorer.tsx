@@ -284,6 +284,8 @@ export function UniversitiesExplorer({
       <div className="container-shell py-3 lg:hidden">
         <FinderFilterForm
           countries={options.countries}
+          cities={options.cities}
+          levels={options.levels}
           courses={options.courses}
           mediums={options.mediums}
           intakes={options.intakes}
@@ -302,6 +304,8 @@ export function UniversitiesExplorer({
             <aside className="hidden lg:block lg:sticky lg:top-20">
               <FinderFilterForm
                 countries={options.countries}
+                cities={options.cities}
+                levels={options.levels}
                 courses={options.courses}
                 mediums={options.mediums}
                 intakes={options.intakes}

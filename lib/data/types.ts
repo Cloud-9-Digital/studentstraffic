@@ -218,18 +218,17 @@ export type ProgramOffering = {
     sourceUrl: string;
   };
   admissionsContent?: ProgramAdmissionsContent;
-  medium:
-    | "English"
-    | "English + Local Support"
-    | "English + Vietnamese Support"
-    | "English + Russian Support"
-    | "English + Kyrgyz Support"
-    | "Vietnamese";
+  medium: string;
+  /** Controlled teaching-language facets. Never infer these from prose at read time. */
+  instructionLanguages: import("@/lib/catalogue-facets").TeachingLanguageCode[];
   published: boolean;
   teachingPhases: TeachingPhase[];
   yearlyCostBreakdown: YearlyCostBreakdown[];
   professionalExamSupport: string[];
+  /** Legacy/source display values. Use intakeCodes for finder filters and canonical UI labels. */
   intakeMonths: string[];
+  /** Controlled intake-month facets. */
+  intakeCodes: import("@/lib/catalogue-facets").IntakeMonthCode[];
   feeVerifiedAt?: string;
   fxRateDate?: string;
   fxRateSourceUrl?: string;
@@ -370,6 +369,8 @@ export type LandingPage = {
 export type FinderFilters = {
   q?: string;
   country?: string;
+  city?: string;
+  level?: string;
   course?: string;
   feeMin?: number;
   feeMax?: number;
@@ -397,9 +398,15 @@ export type FinderCountryOption = {
   name: string;
 };
 
+export type FinderCityOption = {
+  countrySlug: string;
+  name: string;
+};
+
 export type FinderCourseOption = {
   slug: string;
   shortName: string;
+  level?: string;
 };
 
 /** Lean projection used by the finder card list — strips all rich-text fields */
@@ -432,6 +439,8 @@ export type FinderCardProgram = {
 
 export type FinderOptions = {
   countries: FinderCountryOption[];
+  cities: FinderCityOption[];
+  levels: string[];
   courses: FinderCourseOption[];
   mediums: string[];
   intakes: string[];

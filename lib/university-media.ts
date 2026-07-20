@@ -71,7 +71,7 @@ const COUNTRY_FLAG_CODES: Record<string, string> = {
   afghanistan: "af", armenia: "am", azerbaijan: "az",
   bahrain: "bh", bangladesh: "bd", bhutan: "bt",
   cambodia: "kh", china: "cn", cyprus: "cy",
-  georgia: "ge", india: "in", indonesia: "id",
+  georgia: "ge", "hong-kong": "hk", india: "in", indonesia: "id",
   iran: "ir", iraq: "iq", israel: "il",
   japan: "jp", jordan: "jo", kazakhstan: "kz",
   kuwait: "kw", kyrgyzstan: "kg", laos: "la",

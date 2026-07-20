@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Suspense } from "react";
 
-import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { UniversitiesExplorer } from "@/components/site/universities-explorer";
 import { finderPageSize } from "@/lib/constants";
 import {
@@ -45,65 +43,9 @@ export default function UniversitiesPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   return (
-    <>
-      <Suspense fallback={<UniversitiesExplorerFallback />}>
-        <UniversitiesExplorerSection searchParams={searchParams} />
-      </Suspense>
-
-      <section className="border-b border-border/70 bg-background py-8">
-        <div className="container-shell">
-          <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
-            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-              <div className="space-y-2">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
-                  Looking for India colleges?
-                </p>
-                <h2 className="font-display text-2xl font-semibold tracking-tight text-heading md:text-3xl">
-                  This page is for abroad universities only.
-                </h2>
-                <p className="max-w-3xl text-sm leading-7 text-muted-foreground md:text-base">
-                  If you want MBBS colleges in India, use our separate India
-                  catalogue so your India and abroad research stay cleanly
-                  separated.
-                </p>
-              </div>
-
-              <Link
-                href="/india-mbbs-colleges"
-                className="inline-flex h-12 items-center justify-center rounded-xl bg-primary px-5 text-sm font-semibold text-primary-foreground transition hover:opacity-95"
-              >
-                Browse India MBBS colleges
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pb-10 md:pb-14">
-        <div className="container-shell">
-          <div className="grid gap-8 rounded-3xl border border-border bg-card p-6 md:p-8 lg:grid-cols-[1.1fr_0.9fr]">
-            <div className="space-y-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
-                Free Counselling
-              </p>
-              <h2 className="font-display text-3xl font-semibold tracking-tight text-heading md:text-4xl">
-                Tell us your NEET score and budget. We&apos;ll help you compare the right options.
-              </h2>
-              <p className="max-w-2xl text-base leading-8 text-muted-foreground">
-                Share your NEET score, budget, and destination preference. Our counsellors will call you with college options, country guidance, and the next admission step that makes sense for you.
-              </p>
-            </div>
-
-            <DeferredLeadForm
-              sourcePath="/universities"
-              ctaVariant="finder_cta"
-              title="Get your admission guidance"
-              description="Leave your number and our team will call you with college options that match your score, budget, and preferred country."
-            />
-          </div>
-        </div>
-      </section>
-    </>
+    <Suspense fallback={<UniversitiesExplorerFallback />}>
+      <UniversitiesExplorerSection searchParams={searchParams} />
+    </Suspense>
   );
 }
 
@@ -128,6 +70,14 @@ async function UniversitiesExplorerSection({
 
   return (
     <UniversitiesExplorer
+      // Forces a fresh mount (and fresh internal state) whenever the
+      // filters/page actually change. Without this, React reconciles the
+      // existing UniversitiesExplorer instance across navigations (e.g.
+      // home -> universities -> home -> universities with different
+      // selections) and its useState(initialFilters)/useState(initialResults)
+      // initializers never re-run, so the page keeps showing stale results
+      // even though the URL and server-fetched props are correct.
+      key={`${JSON.stringify(filters)}::${page}`}
       options={options}
       initialFilters={filters}
       initialResults={initialResults}

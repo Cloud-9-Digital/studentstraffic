@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -239,6 +239,7 @@ function SiteHeaderInner() {
   const [mobilePanel, setMobilePanel] = useState<string | null>(null);
   const countriesMenuRef = useRef<HTMLDivElement | null>(null);
   const courseMenuRef = useRef<HTMLElement | null>(null);
+  const headerRef = useRef<HTMLElement | null>(null);
 
   const filteredNavCountries = navCountries;
   const programmeGroups = useMemo(
@@ -334,6 +335,23 @@ function SiteHeaderInner() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Publishes the header's real rendered height (both rows, including the
+  // desktop category sub-row that only appears at lg+) as a CSS variable so
+  // viewport-height sections like the homepage hero can subtract the exact
+  // value instead of a hard-coded rem guess that drifts out of sync with the
+  // nav (e.g. when the category row wraps or the tagline changes).
+  useLayoutEffect(() => {
+    const node = headerRef.current;
+    if (!node) return;
+    const setHeaderHeightVar = () => {
+      document.documentElement.style.setProperty("--site-header-h", `${node.offsetHeight}px`);
+    };
+    setHeaderHeightVar();
+    const observer = new ResizeObserver(setHeaderHeightVar);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
   // Locks page scroll while the mobile drawer or any desktop dropdown
   // (countries panel, programme menus) is open, so scrolling inside the
   // dropdown never bleeds through to the page behind it.
@@ -403,6 +421,7 @@ function SiteHeaderInner() {
   return (
     <>
       <header
+        ref={headerRef}
         className={cn(
           "sticky top-0 z-50 transition-all duration-300",
           scrolled ? "shadow-[0_4px_24px_rgba(0,0,0,0.08)]" : "border-b border-white/60",
@@ -419,7 +438,7 @@ function SiteHeaderInner() {
           <SiteLogo showTagline />
 
           {/* Desktop main nav */}
-          <nav className="pointer-events-none absolute inset-x-0 hidden items-center justify-center gap-0.5 lg:flex">
+          <nav className="pointer-events-none absolute inset-x-0 hidden items-center justify-center gap-0.5 xl:flex">
             <div className="pointer-events-auto relative" ref={countriesMenuRef}>
               <button
                 type="button"
@@ -577,7 +596,7 @@ function SiteHeaderInner() {
           </nav>
 
           {/* Desktop actions */}
-          <div className="ml-auto hidden items-center gap-2 lg:flex">
+          <div className="ml-auto hidden items-center gap-2 xl:flex">
             <SearchPalette />
             <UserMenu />
             <CounsellingDialog
@@ -594,8 +613,7 @@ function SiteHeaderInner() {
           </div>
 
           {/* Mobile toggle */}
-          <div className="ml-auto flex items-center gap-1 lg:hidden">
-            <SearchPalette />
+          <div className="ml-auto flex items-center gap-1 xl:hidden">
             <button
               onClick={() => setMobileOpen(true)}
               aria-label="Open navigation"
@@ -609,7 +627,7 @@ function SiteHeaderInner() {
         {/* Desktop sub-row: program category shortcuts (same categorisation as the mobile drawer) */}
         <nav
           ref={courseMenuRef}
-          className="hidden flex-wrap items-center justify-center gap-x-0.5 gap-y-1 border-t border-border/70 bg-gradient-to-r from-primary/[0.07] via-primary/[0.02] to-accent/[0.07] px-4 py-1.5 lg:flex"
+          className="hidden flex-wrap items-center justify-center gap-x-0.5 gap-y-1 border-t border-white/15 bg-[linear-gradient(90deg,var(--primary)_0%,var(--primary)_24%,var(--accent)_100%)] px-4 py-1.5 xl:flex"
         >
           {mobileProgrammeCategories.map(({ id, label, shortLabel, description, icon: Icon, groups }) => {
             const open = courseMenuOpen === id;
@@ -625,10 +643,10 @@ function SiteHeaderInner() {
                   }}
                   className={cn(
                     "flex items-center gap-1 rounded-lg px-3 py-1.5 text-[0.8rem] font-medium whitespace-nowrap transition-colors",
-                    open ? "bg-primary/10 text-primary" : "text-foreground/60 hover:bg-black/5 hover:text-foreground",
+                    open ? "bg-white/20 text-white" : "text-white/80 hover:bg-white/12 hover:text-white",
                   )}
                 >
-                  <Icon className="size-3.5 text-primary/65" />
+                  <Icon className="size-3.5 text-white/75" />
                   {shortLabel}
                   <ChevronDown className={cn("size-3 transition-transform", open && "rotate-180")} />
                 </button>
@@ -650,7 +668,7 @@ function SiteHeaderInner() {
       <div
         aria-hidden="true"
         className={cn(
-          "fixed inset-0 z-50 bg-black/30 backdrop-blur-sm transition-opacity duration-300 lg:hidden",
+          "fixed inset-0 z-50 bg-black/30 backdrop-blur-sm transition-opacity duration-300 xl:hidden",
           mobileOpen
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0",
@@ -662,7 +680,7 @@ function SiteHeaderInner() {
       <div
         inert={!mobileOpen}
         className={cn(
-          "fixed inset-0 z-50 flex h-full w-full flex-col bg-white shadow-drawer transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden",
+          "fixed inset-0 z-50 flex h-full w-full flex-col bg-white shadow-drawer transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] xl:hidden",
           mobileOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
@@ -688,6 +706,13 @@ function SiteHeaderInner() {
               mobilePanel !== null ? "-translate-x-full" : "translate-x-0",
             )}
           >
+            <div className="border-b border-border/70 px-5 py-4 sm:px-7">
+              <SearchPalette
+                variant="mobile-menu"
+                onOpen={closeMobile}
+                enableShortcut={false}
+              />
+            </div>
             <nav className="mx-auto flex w-full max-w-3xl flex-1 flex-col bg-white pb-4">
               <MobileMenuRow
                 icon={<MapPinned className="size-4 text-primary" />}

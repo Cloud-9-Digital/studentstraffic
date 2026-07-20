@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import { eq } from "drizzle-orm";
 import { ArrowLeft, Trash2 } from "lucide-react";
@@ -9,7 +10,32 @@ import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 
-export default async function EditBlogPostPage({
+export default function EditBlogPostPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  return (
+    <Suspense fallback={<EditBlogPostFallback />}>
+      <EditBlogPostContent params={params} />
+    </Suspense>
+  );
+}
+
+function EditBlogPostFallback() {
+  return (
+    <div className="space-y-6" aria-busy="true" aria-label="Loading blog post editor">
+      <div className="space-y-3">
+        <div className="h-5 w-20 animate-pulse rounded bg-slate-200" />
+        <div className="h-8 w-40 animate-pulse rounded bg-slate-200" />
+        <div className="h-4 w-28 animate-pulse rounded bg-slate-200" />
+      </div>
+      <div className="h-[32rem] animate-pulse rounded-2xl border border-border bg-white" />
+    </div>
+  );
+}
+
+async function EditBlogPostContent({
   params,
 }: {
   params: Promise<{ id: string }>;

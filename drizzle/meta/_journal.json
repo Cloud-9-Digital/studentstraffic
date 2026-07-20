@@ -372,6 +372,13 @@
       "when": 1784457000000,
       "tag": "0067_content_migrations",
       "breakpoints": true
+    },
+    {
+      "idx": 67,
+      "version": "7",
+      "when": 1784505600000,
+      "tag": "0068_catalogue_intake_and_language_facets",
+      "breakpoints": true
     }
   ]
 }

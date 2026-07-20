@@ -49,6 +49,10 @@ public/guides/raster/
 .idea/
 mobile/app/.idea/
 
+# Local Android release/test bundles (publish through the app stores, not Git)
+/*.aab
+/*.apk
+
 # Local Codex/browser verification artefacts
 .codex-dev-*.log
 /outputs/

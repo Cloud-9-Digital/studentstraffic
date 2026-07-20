@@ -18,8 +18,8 @@ import {
   Users,
   UserCog,
   Inbox,
-  PhoneCall,
   MessageSquare,
+  MessagesSquare,
   MoreHorizontal,
   X,
 } from "lucide-react";
@@ -64,8 +64,7 @@ function SignOutDialog({ open, onConfirm, onCancel }: { open: boolean; onConfirm
 
 const studentNavItems = [
   { href: "/dashboard",              icon: LayoutDashboard, label: "Overview" },
-  { href: "/dashboard/messages",     icon: MessageSquare,   label: "Messages" },
-  { href: "/dashboard/calls",        icon: PhoneCall,       label: "My Calls" },
+  { href: "/dashboard/messages",     icon: MessagesSquare,  label: "Connect" },
   { href: "/dashboard/shortlists",   icon: BookmarkCheck,   label: "Shortlists" },
   { href: "/dashboard/applications", icon: FileText,        label: "Applications" },
   { href: "/dashboard/settings",     icon: Settings,        label: "Settings" },
@@ -239,8 +238,7 @@ export function DashboardMobileHeader() {
 
 const bottomNavItems = [
   { href: "/dashboard",              icon: LayoutDashboard, label: "Home" },
-  { href: "/dashboard/messages",     icon: MessageSquare,   label: "Messages" },
-  { href: "/dashboard/calls",        icon: PhoneCall,       label: "Calls" },
+  { href: "/dashboard/messages",     icon: MessagesSquare,  label: "Connect" },
   { href: "/dashboard/shortlists",   icon: BookmarkCheck,   label: "Shortlists" },
 ];
 

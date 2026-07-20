@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Headphones, Phone } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { TrackedContactLink } from "@/components/site/tracked-contact-link";
 import { siteConfig } from "@/lib/constants";
+import { usesMobileBottomNavigation } from "@/components/site/mobile-navigation-routes";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -16,6 +18,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 export function MobileStickyBar() {
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -25,6 +28,8 @@ export function MobileStickyBar() {
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  if (usesMobileBottomNavigation(pathname)) return null;
 
   return (
     <div

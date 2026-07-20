@@ -13,6 +13,7 @@ import type {
   Course,
   FinderCardProgram,
   FinderCardProgramsPage,
+  FinderCityOption,
   FinderCountryOption,
   FinderCourseOption,
   FinderOptions,
@@ -48,9 +49,15 @@ import {
 import {
   createSlug,
   getSortableUsdValue,
-  getTeachingLanguageFilterLabel,
   hasPublishedUsdAmount,
 } from "@/lib/utils";
+import {
+  sortIntakeMonthCodes,
+  sortTeachingLanguageCodes,
+  type IntakeMonthCode,
+  type TeachingLanguageCode,
+} from "@/lib/catalogue-facets";
+import { programmeLevels, type ProgrammeLevel } from "@/lib/data/program-taxonomy";
 
 export function cityNameToSlug(city: string) {
   return createSlug(city);
@@ -178,11 +185,14 @@ function mapProgramOfferingRow(
     audienceEligibility: program.audienceEligibility,
     admissionsContent: mapProgramAdmissionsContent(program.admissionsContent),
     medium: program.medium as ProgramOffering["medium"],
+    instructionLanguages:
+      program.instructionLanguages as ProgramOffering["instructionLanguages"],
     published: program.published,
     teachingPhases: program.teachingPhases,
     yearlyCostBreakdown: program.yearlyCostBreakdown,
     professionalExamSupport: program.professionalExamSupport,
     intakeMonths: program.intakeMonths,
+    intakeCodes: program.intakeCodes as ProgramOffering["intakeCodes"],
     feeVerifiedAt: program.feeVerifiedAt ?? undefined,
     fxRateDate: program.fxRateDate ?? undefined,
     fxRateSourceUrl: program.fxRateSourceUrl ?? undefined,
@@ -1083,6 +1093,14 @@ function buildFinderProgramConditions(filters: FinderFilters) {
     conditions.push(eq(countriesTable.slug, filters.country));
   }
 
+  if (filters.city) {
+    conditions.push(eq(universitiesTable.city, filters.city));
+  }
+
+  if (filters.level) {
+    conditions.push(eq(coursesTable.level, filters.level));
+  }
+
   if (filters.course) {
     conditions.push(eq(coursesTable.slug, filters.course));
   }
@@ -1092,19 +1110,15 @@ function buildFinderProgramConditions(filters: FinderFilters) {
   }
 
   if (filters.medium) {
-    const language = getTeachingLanguageFilterLabel(filters.medium);
-    // Filter by the concise category returned to the client. This includes
-    // detailed source-backed variants such as "English (confirmed ...)".
     conditions.push(
-      or(
-        ilike(programOfferingsTable.medium, `${language}%`),
-        ilike(programOfferingsTable.medium, `% ${language}%`)
-      )!
+      sql`${programOfferingsTable.instructionLanguages} @> ARRAY[${filters.medium}]::text[]`,
     );
   }
 
   if (filters.intake) {
-    conditions.push(sql`${programOfferingsTable.intakeMonths} @> ARRAY[${filters.intake}]::text[]`);
+    conditions.push(
+      sql`${programOfferingsTable.intakeCodes} @> ARRAY[${filters.intake}]::text[]`,
+    );
   }
 
   if (filters.feeMin != null) {
@@ -1343,11 +1357,13 @@ type FinderProgramRow = {
   offeringOfficialTotalTuitionAmount: number | null;
   offeringOfficialProgramUrl: string;
   offeringMedium: ProgramOffering["medium"];
+  offeringInstructionLanguages: ProgramOffering["instructionLanguages"];
   offeringPublished: boolean;
   offeringTeachingPhases: ProgramOffering["teachingPhases"];
   offeringYearlyCostBreakdown: ProgramOffering["yearlyCostBreakdown"];
   offeringLicenseExamSupport: ProgramOffering["professionalExamSupport"];
   offeringIntakeMonths: ProgramOffering["intakeMonths"];
+  offeringIntakeCodes: ProgramOffering["intakeCodes"];
   offeringFeeVerifiedAt: string | null;
   offeringFxRateDate: string | null;
   offeringFxRateSourceUrl: string | null;
@@ -1439,6 +1455,9 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       feeNotes: row.offeringFeeNotes ?? undefined,
       sourceUrls: row.offeringSourceUrls,
       featured: row.offeringFeatured,
+      instructionLanguages:
+        row.offeringInstructionLanguages as ProgramOffering["instructionLanguages"],
+      intakeCodes: row.offeringIntakeCodes as ProgramOffering["intakeCodes"],
     },
   };
 }
@@ -1513,11 +1532,13 @@ async function selectFinderProgramsFromDatabase(
       offeringOfficialTotalTuitionAmount: programOfferingsTable.officialTotalTuitionAmount,
       offeringOfficialProgramUrl: programOfferingsTable.officialProgramUrl,
       offeringMedium: programOfferingsTable.medium,
+      offeringInstructionLanguages: programOfferingsTable.instructionLanguages,
       offeringPublished: programOfferingsTable.published,
       offeringTeachingPhases: programOfferingsTable.teachingPhases,
       offeringYearlyCostBreakdown: programOfferingsTable.yearlyCostBreakdown,
       offeringLicenseExamSupport: programOfferingsTable.professionalExamSupport,
       offeringIntakeMonths: programOfferingsTable.intakeMonths,
+      offeringIntakeCodes: programOfferingsTable.intakeCodes,
       offeringFeeVerifiedAt: programOfferingsTable.feeVerifiedAt,
       offeringFxRateDate: programOfferingsTable.fxRateDate,
       offeringFxRateSourceUrl: programOfferingsTable.fxRateSourceUrl,
@@ -1643,6 +1664,14 @@ export async function listFinderPrograms(filters: FinderFilters) {
       return false;
     }
 
+    if (filters.city && program.university.city !== filters.city) {
+      return false;
+    }
+
+    if (filters.level && program.course.level !== filters.level) {
+      return false;
+    }
+
     if (
       filters.universityType &&
       program.university.type !== filters.universityType
@@ -1674,13 +1703,18 @@ export async function listFinderPrograms(filters: FinderFilters) {
       }
     }
 
-    if (filters.medium && program.offering.medium !== filters.medium) {
+    if (
+      filters.medium &&
+      !program.offering.instructionLanguages.includes(
+        filters.medium as TeachingLanguageCode,
+      )
+    ) {
       return false;
     }
 
     if (
       filters.intake &&
-      !program.offering.intakeMonths.includes(filters.intake)
+      !program.offering.intakeCodes.includes(filters.intake as IntakeMonthCode)
     ) {
       return false;
     }
@@ -1776,7 +1810,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
   const db = getDb();
 
   if (db) {
-    const [countryRows, courseRows, mediumRows, intakeRows] = await Promise.all([
+    const [countryRows, cityRows, levelRows, courseRows, mediumRows, intakeRows] = await Promise.all([
       db
         .selectDistinct({ slug: countriesTable.slug, name: countriesTable.name })
         .from(programOfferingsTable)
@@ -1785,54 +1819,102 @@ export async function getFinderOptions(): Promise<FinderOptions> {
         .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
         .orderBy(asc(countriesTable.name)),
       db
-        .selectDistinct({ slug: coursesTable.slug, shortName: coursesTable.shortName })
+        .selectDistinct({
+          countrySlug: countriesTable.slug,
+          name: universitiesTable.city,
+        })
+        .from(programOfferingsTable)
+        .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+        .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
+        .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
+        .orderBy(asc(countriesTable.slug), asc(universitiesTable.city)),
+      db
+        .selectDistinct({ level: coursesTable.level })
+        .from(programOfferingsTable)
+        .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
+        .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
+        .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true))),
+      db
+        .selectDistinct({
+          slug: coursesTable.slug,
+          shortName: coursesTable.shortName,
+          level: coursesTable.level,
+        })
         .from(programOfferingsTable)
         .innerJoin(coursesTable, eq(programOfferingsTable.courseId, coursesTable.id))
         .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
         .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
         .orderBy(asc(coursesTable.shortName)),
-      db
-        .selectDistinct({ medium: programOfferingsTable.medium })
-        .from(programOfferingsTable)
-        .innerJoin(universitiesTable, eq(programOfferingsTable.universityId, universitiesTable.id))
-        .where(and(eq(programOfferingsTable.published, true), eq(universitiesTable.published, true)))
-        .orderBy(asc(programOfferingsTable.medium)),
-      db.execute<{ intake: string }>(sql`
-        SELECT DISTINCT unnest(${programOfferingsTable.intakeMonths}) AS intake
+      db.execute<{ medium: string }>(sql`
+        SELECT DISTINCT unnest(${programOfferingsTable.instructionLanguages}) AS medium
         FROM ${programOfferingsTable}
         INNER JOIN ${universitiesTable}
           ON ${programOfferingsTable.universityId} = ${universitiesTable.id}
         WHERE ${programOfferingsTable.published} = true
           AND ${universitiesTable.published} = true
-        ORDER BY intake ASC
+      `),
+      db.execute<{ intake: string }>(sql`
+        SELECT DISTINCT unnest(${programOfferingsTable.intakeCodes}) AS intake
+        FROM ${programOfferingsTable}
+        INNER JOIN ${universitiesTable}
+          ON ${programOfferingsTable.universityId} = ${universitiesTable.id}
+        WHERE ${programOfferingsTable.published} = true
+          AND ${universitiesTable.published} = true
       `),
     ]);
 
     return {
       countries: countryRows.map((row) => ({ slug: row.slug, name: row.name })),
-      courses: courseRows.map((row) => ({ slug: row.slug, shortName: row.shortName })),
-      mediums: [...new Set(mediumRows.map((row) => getTeachingLanguageFilterLabel(row.medium)))].sort(),
-      intakes: intakeRows.rows.map((row) => row.intake).filter(Boolean),
+      cities: cityRows.map((row) => ({
+        countrySlug: row.countrySlug,
+        name: row.name,
+      })),
+      levels: programmeLevels.filter((level) =>
+        levelRows.some((row) => row.level === level),
+      ),
+      courses: courseRows.map((row) => ({
+        slug: row.slug,
+        shortName: row.shortName,
+        level: row.level ?? undefined,
+      })),
+      mediums: sortTeachingLanguageCodes(
+        mediumRows.rows.map((row) => row.medium).filter(Boolean) as TeachingLanguageCode[],
+      ),
+      intakes: sortIntakeMonthCodes(
+        intakeRows.rows.map((row) => row.intake).filter(Boolean) as IntakeMonthCode[],
+      ),
     };
   }
 
   const programs = await getFinderProgramsBase();
   const countriesBySlug = new Map<string, FinderCountryOption>();
+  const citiesByKey = new Map<string, FinderCityOption>();
   const coursesBySlug = new Map<string, FinderCourseOption>();
-  const mediums = new Set<string>();
-  const intakes = new Set<string>();
+  const levels = new Set<ProgrammeLevel>();
+  const mediums = new Set<TeachingLanguageCode>();
+  const intakes = new Set<IntakeMonthCode>();
 
   for (const program of programs) {
     countriesBySlug.set(program.country.slug, {
       slug: program.country.slug,
       name: program.country.name,
     });
+    citiesByKey.set(`${program.country.slug}:${program.university.city}`, {
+      countrySlug: program.country.slug,
+      name: program.university.city,
+    });
     coursesBySlug.set(program.course.slug, {
       slug: program.course.slug,
       shortName: program.course.shortName,
+      level: program.course.level,
     });
-    mediums.add(getTeachingLanguageFilterLabel(program.offering.medium));
-    for (const intake of program.offering.intakeMonths) {
+    if (programmeLevels.includes(program.course.level as ProgrammeLevel)) {
+      levels.add(program.course.level as ProgrammeLevel);
+    }
+    for (const medium of program.offering.instructionLanguages) {
+      mediums.add(medium);
+    }
+    for (const intake of program.offering.intakeCodes) {
       intakes.add(intake);
     }
   }
@@ -1841,11 +1923,15 @@ export async function getFinderOptions(): Promise<FinderOptions> {
     countries: [...countriesBySlug.values()].sort((left, right) =>
       left.name.localeCompare(right.name),
     ),
+    cities: [...citiesByKey.values()].sort((left, right) =>
+      left.countrySlug.localeCompare(right.countrySlug) || left.name.localeCompare(right.name),
+    ),
+    levels: programmeLevels.filter((level) => levels.has(level)),
     courses: [...coursesBySlug.values()].sort((left, right) =>
       left.shortName.localeCompare(right.shortName),
     ),
-    mediums: [...mediums].sort(),
-    intakes: [...intakes].sort(),
+    mediums: sortTeachingLanguageCodes(mediums),
+    intakes: sortIntakeMonthCodes(intakes),
   };
 }
 

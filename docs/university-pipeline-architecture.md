@@ -36,8 +36,16 @@ Keep it current — see "Keeping this doc current" at the bottom.
   Key fields: `slug`, `title`, `durationYears` (⚠️ **integer column** — see Known issues),
   `annualTuitionUsd`/`totalTuitionUsd`/`livingUsd` (normalized USD), `officialFeeCurrency` +
   `officialAnnualTuitionAmount`/`officialTotalTuitionAmount` (native-currency figures, bigint),
-  `officialProgramUrl`, `medium` (language of instruction), `intakeMonths`, `professionalExamSupport`,
-  `sourceUrls`, `published`.
+  `officialProgramUrl`, `medium` (source-backed delivery explanation), `instructionLanguages`
+  (controlled language-facet codes), `intakeMonths` (source display values), `intakeCodes`
+  (controlled calendar-facet codes), `professionalExamSupport`, `sourceUrls`, `published`.
+
+  **2026-07-20 facet normalization (drizzle `0068`).** `/universities` must filter only on
+  `instruction_languages` and `intake_codes`, never on free-text `medium` or `intake_months`.
+  `lib/catalogue-facets.ts` is the single allowed vocabulary and label/order source. The descriptive
+  fields remain because programme pages must retain the verified delivery nuance and exact admissions
+  timing. Legacy rows are backfilled only for exact unambiguous values; ambiguous rows remain absent
+  from those facets until a source-backed content migration corrects them.
 
   > **2026-07-09 column rename (drizzle `0054_rename_medical_columns`).** Four medically/India-flavored
   > columns were renamed to stream-neutral names so the schema can hold non-medical content honestly:

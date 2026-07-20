@@ -37,7 +37,7 @@ function UniversitiesResultsLoadingState() {
         <div className="h-4 w-36 rounded-full bg-muted/70 animate-pulse" />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
         {Array.from({ length: 6 }).map((_, index) => (
           <div
             key={index}
@@ -176,7 +176,7 @@ export function UniversitiesResultsPanel({
       ) : results.programs.length ? (
         <>
           <h2 className="sr-only">University results</h2>
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
             {results.programs.map((program, index) => (
               <UniversityCard
                 key={program.offering.slug}

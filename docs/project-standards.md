@@ -110,6 +110,13 @@ Scholarship pages should:
 - Make sure headings, badges, and card elements never overlap.
 - Favor readability and scanning over decorative complexity.
 
+## Shared navigation and footer standards
+
+- Shared navigation must represent the active study-abroad catalogue as a whole, not a legacy medical-only slice of it.
+- Use data-backed country and programme links in shared navigation wherever possible, so newly published catalogue coverage can appear without another hard-coded footer rewrite.
+- Reserve specialist or niche routes for their relevant landing pages. Do not let a long list of MBBS-only cities or guides dominate the global footer once the product supports wider programmes and destinations.
+- Footer links should help a student enter by destination, programme, university, budget, comparison, scholarship, or student conversation—the practical decisions that apply across disciplines.
+
 ## Operational note
 
 This file should be updated whenever the team makes a new project-wide decision about content, conversion style, trust signals, or page structure.

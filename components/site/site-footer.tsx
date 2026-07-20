@@ -6,17 +6,28 @@ import { ArrowRight, Mail, Phone } from "lucide-react";
 
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { TrackedContactLink } from "@/components/site/tracked-contact-link";
-import {
-  footerCityGuides,
-  footerPopularRoutes,
-  guideNav,
-  navCourses,
-  siteConfig,
-} from "@/lib/constants";
+import { useNavCourses } from "@/components/app/nav-courses-client-provider";
+import { siteConfig } from "@/lib/constants";
 import { useNavCountries } from "@/components/app/nav-countries-client-provider";
 
 export function SiteFooter() {
   const navCountries = useNavCountries();
+  const navCourses = useNavCourses();
+  const programmeStreams = [
+    "computing-information-systems",
+    "engineering",
+    "business",
+    "medicine",
+    "nursing",
+    "law",
+    "design-creative-arts",
+    "public-health-allied-health",
+  ];
+  const featuredProgrammes = programmeStreams.flatMap((stream) =>
+    navCourses.filter((course) => course.stream === stream).slice(0, 2),
+  );
+  const footerProgrammes =
+    featuredProgrammes.length >= 8 ? featuredProgrammes : navCourses.slice(0, 12);
 
   return (
     <footer className="bg-surface-dark text-white">
@@ -89,6 +100,36 @@ export function SiteFooter() {
                 {siteConfig.email}
               </a>
             </div>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={siteConfig.playStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block transition-opacity hover:opacity-85"
+              >
+                <Image
+                  src="/images/badges/google-play-badge.png"
+                  alt="Get it on Google Play"
+                  width={360}
+                  height={120}
+                  className="h-10 w-auto"
+                />
+              </a>
+              <a
+                href={siteConfig.appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block transition-opacity hover:opacity-85"
+              >
+                <Image
+                  src="/images/badges/app-store-badge.png"
+                  alt="Download on the App Store"
+                  width={360}
+                  height={120}
+                  className="h-10 w-auto"
+                />
+              </a>
+            </div>
           </div>
 
           <div>
@@ -98,9 +139,10 @@ export function SiteFooter() {
             <ul className="space-y-2.5">
               {[
                 { label: "Universities Abroad", href: "/universities" },
-                { label: "NEET College Predictor", href: "/neet-college-predictor" },
+                { label: "Explore Countries", href: "/countries" },
+                { label: "Explore Programmes", href: "/courses" },
                 { label: "Talk to Students", href: "/students" },
-                { label: "Become a Student Guide", href: "/join" },
+                { label: "Compare Universities", href: "/compare" },
                 { label: "Guides", href: "/guides" },
                 { label: "Contact", href: "/contact" },
               ].map((item) => (
@@ -118,16 +160,15 @@ export function SiteFooter() {
 
           <div>
             <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-white/55">
-              Planning
+              Plan your move
             </p>
             <ul className="space-y-2.5">
               {[
-                ...guideNav.filter((item) => item.href !== "/guides"),
-                {
-                  href: "/scholarships-for-indian-students-to-study-abroad",
-                  label: "Study Abroad Scholarships",
-                },
-                { href: "/tamil-nadu", label: "Tamil Nadu MBBS Guides" },
+                { href: "/budget", label: "Plan your budget" },
+                { href: "/scholarships-for-indian-students-to-study-abroad", label: "Find scholarships" },
+                { href: "/compare", label: "Compare your options" },
+                { href: "/cities", label: "Explore student cities" },
+                { href: "/guides", label: "Read planning guides" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link
@@ -169,31 +210,10 @@ export function SiteFooter() {
 
       <div className="border-t border-white/8">
         <div className="container-shell space-y-6 py-8">
-          <div>
-            <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">
-              Popular Guides
-            </p>
-            <div className="flex flex-wrap gap-x-1 gap-y-1">
-              {footerPopularRoutes.map((route, index) => (
-                <span key={route.href} className="flex items-center">
-                  <Link
-                    href={route.href}
-                    className="text-sm text-white/65 transition-colors hover:text-white"
-                  >
-                    {route.label}
-                  </Link>
-                  {index < footerPopularRoutes.length - 1 ? (
-                    <span className="mx-2.5 text-white/15">·</span>
-                  ) : null}
-                </span>
-              ))}
-            </div>
-          </div>
-
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
               <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">
-                Country Guides
+                Explore destinations
               </p>
               <div className="flex flex-wrap gap-x-1 gap-y-1">
                 {navCountries.map((destination, index) => (
@@ -214,10 +234,10 @@ export function SiteFooter() {
 
             <div>
               <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">
-                Course Guides
+                Explore programmes
               </p>
               <div className="flex flex-wrap gap-x-1 gap-y-1">
-                {navCourses.map((course, index) => (
+                {footerProgrammes.map((course, index) => (
                   <span key={course.href} className="flex items-center">
                     <Link
                       href={course.href}
@@ -225,7 +245,7 @@ export function SiteFooter() {
                     >
                       {course.name}
                     </Link>
-                    {index < navCourses.length - 1 ? (
+                    {index < footerProgrammes.length - 1 ? (
                       <span className="mx-2.5 text-white/15">·</span>
                     ) : null}
                   </span>
@@ -234,26 +254,6 @@ export function SiteFooter() {
             </div>
           </div>
 
-          <div>
-            <p className="mb-2.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white/50">
-              City Guides
-            </p>
-            <div className="flex flex-wrap gap-x-1 gap-y-1">
-              {footerCityGuides.map((city, index) => (
-                <span key={city.href} className="flex items-center">
-                  <Link
-                    href={city.href}
-                    className="text-sm text-white/65 transition-colors hover:text-white"
-                  >
-                    {city.name}
-                  </Link>
-                  {index < footerCityGuides.length - 1 ? (
-                    <span className="mx-2.5 text-white/15">·</span>
-                  ) : null}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 

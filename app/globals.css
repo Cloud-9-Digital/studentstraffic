@@ -306,9 +306,44 @@ select {
   gap: 1rem;
 }
 
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100svh - var(--site-header-h, 4rem) - var(--mobile-bottom-nav-h, 4.5rem));
+}
+
 @media (min-width: 768px) {
   .field-grid--two {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-hero {
+    flex-direction: row;
+    align-items: center;
+    min-height: 0;
+    height: calc(100svh - var(--site-header-h, 4rem));
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 26s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    overflow-x: auto;
   }
 }
 

@@ -1,6 +1,10 @@
 import { z } from "zod";
 
 import { programmeLevels, programmeStreams } from "@/lib/data/program-taxonomy";
+import {
+  intakeMonthCodes,
+  teachingLanguageCodes,
+} from "@/lib/catalogue-facets";
 
 const sourceSchema = z.object({
   label: z.string().min(2),
@@ -62,7 +66,9 @@ const programmeSchema = z.object({
     visaConsiderations: z.array(z.string().min(8).max(220)).max(5).optional(),
   }),
   medium: z.string().min(2),
+  instructionLanguages: z.array(z.enum(teachingLanguageCodes)).min(1),
   intakeMonths: z.array(z.string().min(2)).min(1),
+  intakeCodes: z.array(z.enum(intakeMonthCodes)).min(1),
   feeVerifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   feeNotes: z.string().min(40).max(1200),
   teachingPhases: z.array(z.object({ phase: z.string(), language: z.string(), details: z.string() })).min(1),

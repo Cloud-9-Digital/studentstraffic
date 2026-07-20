@@ -153,6 +153,25 @@ programme-specific visa note. Do not let a programme inherit university, country
 defaults. Where the official source is incomplete, publish only verified facts and log the missing
 item for follow-up; never fill the gap with generic NEET, PCB, language-test or visa text.
 
+### 3a. Normalize finder facts at research time
+
+Every programme payload has both source-detail fields and controlled finder facets. Research agents
+must select the controlled values from `lib/catalogue-facets.ts`; they must not write new aliases or
+ask the renderer to infer them from prose.
+
+| Research fact | Payload field | Rule |
+|---|---|---|
+| How teaching is delivered, including phase changes and local-language clinical requirements | `medium` and `teachingPhases` | Preserve the precise, source-backed explanation. |
+| Verified languages actually used for instruction | `instructionLanguages` | Use only controlled language codes, e.g. `english`, `russian`. Do not add `english` merely because an English test is required, an English option is marketed without confirmation, or the source mentions English in another context. |
+| Official intake wording and current timing context | `intakeMonths` and `admissionsContent.deadlinesNote` | Preserve the source wording and any deadline in the decision content. |
+| Month(s) represented by a verified intake | `intakeCodes` | Use only calendar codes, e.g. `september`, `january`. `Fall`, `Spring`, `September intake`, dates and country-wide assumptions are not valid codes. |
+
+If a source confirms a mixed English/local-language programme, record every verified instructional
+language in `instructionLanguages` and explain the transition in `medium` or `teachingPhases`.
+If an intake or teaching language is uncertain, leave its controlled facet empty only in legacy
+repair work; for new payloads, resolve it from a primary source or hold the programme. Never guess
+to make a finder option appear.
+
 ### 4. Build the complete publishing payload
 
 AI agents must return one complete structured payload matching the destination schema and page
@@ -222,6 +241,8 @@ At minimum, validation checks:
 - the focus keyword matches the page level and target intent;
 - no metadata or page copy targets an unrelated page type;
 - sources, fees, deadlines and visa information pass freshness rules;
+- `instructionLanguages` and `intakeCodes` use only the controlled taxonomy and agree with their
+  source-backed programme explanation;
 - all university/course relationships are valid and unique.
 
 ### 6. Apply section configuration

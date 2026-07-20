@@ -17,6 +17,21 @@ export const programmeLevels = [
 
 export type ProgrammeLevel = (typeof programmeLevels)[number];
 
+export const programmeLevelLabels: Record<ProgrammeLevel, string> = {
+  foundation: "Foundation",
+  certificate: "Certificate",
+  diploma: "Diploma",
+  associate: "Associate degree",
+  bachelors: "Bachelor's",
+  "integrated-masters": "Integrated master's",
+  "postgraduate-certificate": "Postgraduate certificate",
+  "postgraduate-diploma": "Postgraduate diploma",
+  masters: "Master's",
+  doctorate: "Doctorate",
+  residency: "Residency",
+  professional: "Professional degree",
+};
+
 export const programmeStreams = [
   "medicine", "nursing", "dental", "pharmacy", "physiotherapy", "engineering", "business",
   "law", "hospitality", "agriculture", "education", "architecture", "arts-humanities",

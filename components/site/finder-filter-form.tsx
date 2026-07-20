@@ -13,10 +13,17 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { formatProgramMedium } from "@/lib/utils";
 import { sortCountryOptionObjects } from "@/lib/country-order";
+import { programmeLevelLabels } from "@/lib/data/program-taxonomy";
+import {
+  getIntakeMonthLabel,
+  getTeachingLanguageLabel,
+  type IntakeMonthCode,
+  type TeachingLanguageCode,
+} from "@/lib/catalogue-facets";
 import type {
   FinderCountryOption,
+  FinderCityOption,
   FinderCourseOption,
   FinderFilters,
 } from "@/lib/data/types";
@@ -27,6 +34,8 @@ export type FinderFilterChangeOptions = {
 
 type FinderFilterFormProps = {
   countries: FinderCountryOption[];
+  cities: FinderCityOption[];
+  levels: string[];
   courses: FinderCourseOption[];
   mediums: string[];
   intakes: string[];
@@ -180,6 +189,8 @@ function FeeRangePicker({
 
 function FilterFields({
   countries,
+  cities,
+  levels,
   courses,
   mediums,
   intakes,
@@ -190,6 +201,8 @@ function FilterFields({
   onFiltersChange,
 }: {
   countries: FinderCountryOption[];
+  cities: FinderCityOption[];
+  levels: string[];
   courses: FinderCourseOption[];
   mediums: string[];
   intakes: string[];
@@ -205,6 +218,14 @@ function FilterFields({
   const orderedCountries = useMemo(
     () => sortCountryOptionObjects(countries),
     [countries]
+  );
+  const availableCities = useMemo(
+    () => cities.filter((city) => city.countrySlug === filters.country),
+    [cities, filters.country],
+  );
+  const availableCourses = useMemo(
+    () => courses.filter((course) => !filters.level || course.level === filters.level),
+    [courses, filters.level],
   );
 
   function navigate(overrides: Partial<FinderFilters>) {
@@ -228,7 +249,10 @@ function FilterFields({
               name="country"
               value={filters.country ?? ""}
               onChange={(event) =>
-                navigate({ country: event.target.value || undefined })
+                navigate({
+                  country: event.target.value || undefined,
+                  city: undefined,
+                })
               }
               className={selectClassName()}
             >
@@ -236,6 +260,60 @@ function FilterFields({
               {orderedCountries.map((country) => (
                 <option key={country.slug} value={country.slug}>
                   {country.name}
+                </option>
+              ))}
+            </select>
+          </SelectWrapper>
+        </div>
+
+        <div className="space-y-1.5">
+          <Label htmlFor={`${idPrefix}-city`} className="text-xs font-medium">
+            City
+          </Label>
+          <SelectWrapper>
+            <select
+              id={`${idPrefix}-city`}
+              name="city"
+              value={filters.city ?? ""}
+              disabled={!filters.country}
+              onChange={(event) =>
+                navigate({ city: event.target.value || undefined })
+              }
+              className={selectClassName()}
+            >
+              <option value="">
+                {filters.country ? "All cities" : "Choose a country first"}
+              </option>
+              {availableCities.map((city) => (
+                <option key={city.name} value={city.name}>
+                  {city.name}
+                </option>
+              ))}
+            </select>
+          </SelectWrapper>
+        </div>
+
+        <div className="space-y-1.5">
+          <Label htmlFor={`${idPrefix}-level`} className="text-xs font-medium">
+            Study level
+          </Label>
+          <SelectWrapper>
+            <select
+              id={`${idPrefix}-level`}
+              name="level"
+              value={filters.level ?? ""}
+              onChange={(event) =>
+                navigate({
+                  level: event.target.value || undefined,
+                  course: undefined,
+                })
+              }
+              className={selectClassName()}
+            >
+              <option value="">All study levels</option>
+              {levels.map((level) => (
+                <option key={level} value={level}>
+                  {programmeLevelLabels[level as keyof typeof programmeLevelLabels]}
                 </option>
               ))}
             </select>
@@ -257,7 +335,7 @@ function FilterFields({
               className={selectClassName()}
             >
               <option value="">All courses</option>
-              {courses.map((course) => (
+              {availableCourses.map((course) => (
                 <option key={course.slug} value={course.slug}>
                   {course.shortName}
                 </option>
@@ -283,7 +361,7 @@ function FilterFields({
               <option value="">Any medium</option>
               {mediums.map((medium) => (
                 <option key={medium} value={medium}>
-                  {formatProgramMedium(medium)}
+                  {getTeachingLanguageLabel(medium as TeachingLanguageCode)}
                 </option>
               ))}
             </select>
@@ -307,7 +385,7 @@ function FilterFields({
               <option value="">Any intake</option>
               {intakes.map((intake) => (
                 <option key={intake} value={intake}>
-                  {intake}
+                  {getIntakeMonthLabel(intake as IntakeMonthCode)}
                 </option>
               ))}
             </select>
@@ -391,6 +469,8 @@ function SidebarSearch({
 
 export function FinderFilterForm({
   countries,
+  cities,
+  levels,
   courses,
   mediums,
   intakes,
@@ -424,6 +504,8 @@ export function FinderFilterForm({
           <SidebarSearch filters={filters} onFiltersChange={onFiltersChange} />
           <FilterFields
             countries={countries}
+            cities={cities}
+            levels={levels}
             courses={courses}
             mediums={mediums}
             intakes={intakes}
@@ -538,6 +620,8 @@ export function FinderFilterForm({
             )}
             <FilterFields
               countries={countries}
+              cities={cities}
+              levels={levels}
               courses={courses}
               mediums={mediums}
               intakes={intakes}
