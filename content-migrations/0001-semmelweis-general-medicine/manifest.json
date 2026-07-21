@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "id": "0001-semmelweis-general-medicine",
+  "description": "Package Semmelweis University General Medicine MD with private evidence and explicit fee status.",
+  "createdAt": "2026-07-20",
+  "payload": "payload.json"
+}

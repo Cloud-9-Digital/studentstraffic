@@ -7,7 +7,13 @@ import { neonConfig, Pool } from "@neondatabase/serverless";
 import { WebSocket } from "ws";
 import { z } from "zod";
 
-import { countries, courses, programOfferings, universities } from "@/lib/db/schema";
+import {
+  catalogContentEvidence,
+  countries,
+  courses,
+  programOfferings,
+  universities,
+} from "@/lib/db/schema";
 import * as schema from "@/lib/db/schema";
 import {
   isApprovedCanonicalProgramme,
@@ -19,6 +25,7 @@ import {
   teachingLanguageCodes,
 } from "@/lib/catalogue-facets";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
+import type { CatalogPayload } from "./lib/catalog-payload-schema";
 import { env } from "@/lib/env";
 
 const sourceSchema = z.object({
@@ -148,7 +155,7 @@ export const payloadSchema = z.object({
   universities: z.array(universitySchema).min(1),
 });
 
-export type CatalogPayload = z.infer<typeof payloadSchema>;
+export type LegacyCatalogPayload = z.infer<typeof payloadSchema>;
 
 function syncTypesenseSearch() {
   return new Promise<void>((resolve, reject) => {
@@ -247,18 +254,59 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
       }).returning({ id: universities.id, slug: universities.slug });
       if (!saved) throw new Error(`Failed to publish university ${university.slug}`);
 
+      const programmeIds = new Map<string, number>();
       for (const programme of programmes) {
         const courseId = courseIds.get(programme.canonicalCourseSlug);
         if (!courseId) throw new Error(`Course missing from payload: ${programme.canonicalCourseSlug}`);
-        const { canonicalCourseSlug: _canonicalCourseSlug, officialTitle, ...offering } = programme;
+        const { canonicalCourseSlug: _canonicalCourseSlug, officialTitle, fee, ...offering } = programme;
         void _canonicalCourseSlug;
-        await tx.insert(programOfferings).values({
+        const feeFields = fee.status === "confirmed"
+          ? {
+              feeStatus: fee.status,
+              feeAcademicYear: fee.academicYear,
+              officialFeeCurrency: fee.officialFeeCurrency,
+              officialAnnualTuitionAmount: fee.officialAnnualTuitionAmount,
+              officialTotalTuitionAmount: fee.officialTotalTuitionAmount ?? null,
+              annualTuitionUsd: fee.annualTuitionUsd ?? 0,
+              totalTuitionUsd: fee.totalTuitionUsd ?? 0,
+              indicativeAnnualTuitionMinUsd: null,
+              indicativeAnnualTuitionMaxUsd: null,
+              feeVerifiedAt: fee.verifiedAt,
+              feeNotes: fee.notes,
+            }
+          : fee.status === "indicative"
+            ? {
+                feeStatus: fee.status,
+                feeAcademicYear: fee.academicYear,
+                officialFeeCurrency: null,
+                officialAnnualTuitionAmount: null,
+                officialTotalTuitionAmount: null,
+                annualTuitionUsd: 0,
+                totalTuitionUsd: 0,
+                indicativeAnnualTuitionMinUsd: fee.annualTuitionMinUsd,
+                indicativeAnnualTuitionMaxUsd: fee.annualTuitionMaxUsd,
+                feeVerifiedAt: fee.verifiedAt,
+                feeNotes: fee.notes,
+              }
+            : {
+                feeStatus: fee.status,
+                feeAcademicYear: null,
+                officialFeeCurrency: null,
+                officialAnnualTuitionAmount: null,
+                officialTotalTuitionAmount: null,
+                annualTuitionUsd: 0,
+                totalTuitionUsd: 0,
+                indicativeAnnualTuitionMinUsd: null,
+                indicativeAnnualTuitionMaxUsd: null,
+                feeVerifiedAt: fee.verifiedAt,
+                feeNotes: fee.notes,
+              };
+        const [savedProgramme] = await tx.insert(programOfferings).values({
           ...offering,
+          ...feeFields,
           universityId: saved.id,
           courseId,
           title: officialTitle,
-          annualTuitionUsd: 0,
-          totalTuitionUsd: 0,
           livingUsd: 0,
           professionalExamSupport: [],
           yearlyCostBreakdown: [],
@@ -266,10 +314,68 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
           published: true,
         }).onConflictDoUpdate({
           target: programOfferings.slug,
-          set: { ...offering, universityId: saved.id, courseId, title: officialTitle, published: true, updatedAt: new Date() },
-        });
+          set: {
+            ...offering,
+            ...feeFields,
+            universityId: saved.id,
+            courseId,
+            title: officialTitle,
+            published: true,
+            updatedAt: new Date(),
+          },
+        }).returning({ id: programOfferings.id });
+        if (!savedProgramme) throw new Error(`Failed to publish programme ${programme.slug}`);
+        programmeIds.set(programme.slug, savedProgramme.id);
         published.push(programme.slug);
       }
+
+      await tx.delete(catalogContentEvidence)
+        .where(eq(catalogContentEvidence.universityId, saved.id));
+      for (const programmeId of programmeIds.values()) {
+        await tx.delete(catalogContentEvidence)
+          .where(eq(catalogContentEvidence.programOfferingId, programmeId));
+      }
+      const universityEvidence = payload.evidence.filter(
+        (evidence) => evidence.universitySlug === university.slug,
+      );
+      for (const evidence of universityEvidence) {
+        const programOfferingId = evidence.entity === "programme"
+          ? programmeIds.get(evidence.programmeSlug ?? "")
+          : undefined;
+        if (evidence.entity === "programme" && !programOfferingId) {
+          throw new Error(`Evidence references a missing programme: ${evidence.programmeSlug}`);
+        }
+        await tx.insert(catalogContentEvidence).values({
+          universityId: evidence.entity === "university" ? saved.id : undefined,
+          programOfferingId,
+          publicField: evidence.publicField,
+          claimText: evidence.claimText,
+          contentStatus: evidence.status,
+          sourceLabel: evidence.sourceLabel,
+          sourceUrl: evidence.sourceUrl,
+          sourceGrade: evidence.sourceGrade,
+          checkedAt: evidence.checkedAt,
+          reviewBy: evidence.reviewBy,
+          internalNotes: evidence.internalNotes,
+        });
+      }
+    }
+
+    for (const countryEvidence of payload.evidence.filter((evidence) => evidence.entity === "country")) {
+      const countryId = countryEvidence.countrySlug ? countryIds.get(countryEvidence.countrySlug) : undefined;
+      if (!countryId) throw new Error(`Evidence references a missing country: ${countryEvidence.countrySlug}`);
+      await tx.insert(catalogContentEvidence).values({
+        countryId,
+        publicField: countryEvidence.publicField,
+        claimText: countryEvidence.claimText,
+        contentStatus: countryEvidence.status,
+        sourceLabel: countryEvidence.sourceLabel,
+        sourceUrl: countryEvidence.sourceUrl,
+        sourceGrade: countryEvidence.sourceGrade,
+        checkedAt: countryEvidence.checkedAt,
+        reviewBy: countryEvidence.reviewBy,
+        internalNotes: countryEvidence.internalNotes,
+      });
     }
     return published;
   });

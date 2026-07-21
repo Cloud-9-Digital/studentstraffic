@@ -181,6 +181,12 @@ function mapProgramOfferingRow(
       program.officialAnnualTuitionAmount ?? undefined,
     officialTotalTuitionAmount:
       program.officialTotalTuitionAmount ?? undefined,
+    feeStatus: program.feeStatus ?? undefined,
+    feeAcademicYear: program.feeAcademicYear ?? undefined,
+    indicativeAnnualTuitionMinUsd:
+      program.indicativeAnnualTuitionMinUsd ?? undefined,
+    indicativeAnnualTuitionMaxUsd:
+      program.indicativeAnnualTuitionMaxUsd ?? undefined,
     officialProgramUrl: program.officialProgramUrl,
     audienceEligibility: program.audienceEligibility,
     admissionsContent: mapProgramAdmissionsContent(program.admissionsContent),
@@ -1355,6 +1361,10 @@ type FinderProgramRow = {
   offeringOfficialFeeCurrency: string | null;
   offeringOfficialAnnualTuitionAmount: number | null;
   offeringOfficialTotalTuitionAmount: number | null;
+  offeringFeeStatus: ProgramOffering["feeStatus"] | null;
+  offeringFeeAcademicYear: string | null;
+  offeringIndicativeAnnualTuitionMinUsd: number | null;
+  offeringIndicativeAnnualTuitionMaxUsd: number | null;
   offeringOfficialProgramUrl: string;
   offeringMedium: ProgramOffering["medium"];
   offeringInstructionLanguages: ProgramOffering["instructionLanguages"];
@@ -1442,6 +1452,12 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
       officialFeeCurrency: row.offeringOfficialFeeCurrency ?? undefined,
       officialAnnualTuitionAmount: row.offeringOfficialAnnualTuitionAmount ?? undefined,
       officialTotalTuitionAmount: row.offeringOfficialTotalTuitionAmount ?? undefined,
+      feeStatus: row.offeringFeeStatus ?? undefined,
+      feeAcademicYear: row.offeringFeeAcademicYear ?? undefined,
+      indicativeAnnualTuitionMinUsd:
+        row.offeringIndicativeAnnualTuitionMinUsd ?? undefined,
+      indicativeAnnualTuitionMaxUsd:
+        row.offeringIndicativeAnnualTuitionMaxUsd ?? undefined,
       officialProgramUrl: row.offeringOfficialProgramUrl,
       medium: row.offeringMedium,
       published: row.offeringPublished,
@@ -1530,6 +1546,12 @@ async function selectFinderProgramsFromDatabase(
       offeringOfficialFeeCurrency: programOfferingsTable.officialFeeCurrency,
       offeringOfficialAnnualTuitionAmount: programOfferingsTable.officialAnnualTuitionAmount,
       offeringOfficialTotalTuitionAmount: programOfferingsTable.officialTotalTuitionAmount,
+      offeringFeeStatus: programOfferingsTable.feeStatus,
+      offeringFeeAcademicYear: programOfferingsTable.feeAcademicYear,
+      offeringIndicativeAnnualTuitionMinUsd:
+        programOfferingsTable.indicativeAnnualTuitionMinUsd,
+      offeringIndicativeAnnualTuitionMaxUsd:
+        programOfferingsTable.indicativeAnnualTuitionMaxUsd,
       offeringOfficialProgramUrl: programOfferingsTable.officialProgramUrl,
       offeringMedium: programOfferingsTable.medium,
       offeringInstructionLanguages: programOfferingsTable.instructionLanguages,

@@ -123,6 +123,14 @@ research, validate and package the entries as a content migration. Do not run
 
 ## Country/scope priority queue
 
+**2026-07-20 Vietnam Medicine quality pass:** the first gold-standard correction bundle covers Dai
+Nam University, Dong A University, Buon Ma Thuot Medical University and Can Tho University of
+Medicine and Pharmacy. The full 30-slug inventory and the release/hold rules are recorded in
+[`vietnam-medicine-gold-standard.md`](./vietnam-medicine-gold-standard.md).
+Complete the priority-2 international-route review before adding new Vietnam universities. Existing
+local Medicine records are not international English MBBS inventory until current eligibility,
+language, intake and fee evidence establishes that route.
+
 **Prominence-first rule (2026-07-12):** for general catalogue expansion, prioritise widely searched,
 internationally recognised universities that attract substantial cross-border student interest.
 Balance institutional prominence, international programme breadth and likely student search intent;
@@ -155,9 +163,10 @@ Italy and other destinations, but do not let repeated same-country batches crowd
   time (unfamiliar institutions = more misattribution risk). Gap-filling on already-published
   universities gets audited periodically (~every 3rd batch), not every time — proven reliable on
   2026-07-08 (20/20 clean).
-- **Current queue position:** next up is (1) Russian University of Medicine follow-up (small,
-  targeted — official page fetch failed, fee figures conflicted, needs direct re-verification),
-  then (2) fresh Russia discovery pass, then (3) new countries in the priority order above.
+- **Current queue position:** (1) apply or review the packaged four-university Vietnam Medicine
+  correction; (2) research the Vietnam priority-2 international-route list in two small batches;
+  (3) resume the Russian University of Medicine fee-conflict follow-up and Russia discovery pass;
+  then (4) continue new countries in the priority order above.
 - Update this section's "current queue position" as batches complete, so the next session picks up
   from the right place without re-deriving it.
 

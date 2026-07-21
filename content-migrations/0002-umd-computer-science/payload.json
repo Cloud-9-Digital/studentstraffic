@@ -1,0 +1,480 @@
+{
+  "courses": [
+    {
+      "slug": "be-btech-computer-science-engineering",
+      "name": "B.E./B.Tech in Computer Science and Engineering",
+      "shortName": "B.E./B.Tech CSE",
+      "stream": "engineering",
+      "level": "bachelors",
+      "discipline": "computer-science-engineering",
+      "aliases": [
+        "Bachelor of Engineering in Computer Science",
+        "Bachelor of Engineering in Computer Science and Engineering",
+        "Bachelor of Technology in Computer Science and Engineering",
+        "BEng Computer Science",
+        "BSc Computer Science"
+      ],
+      "displayOrder": 0,
+      "durationYears": 4,
+      "summary": "Computer science bachelor's programmes build a foundation in programming, mathematical reasoning, algorithms and computer systems. The precise award title, curriculum, admissions route, costs and progression rules depend on the university and should be assessed at programme level before an applicant shortlists an option.",
+      "metaTitle": "B.E./B.Tech CSE: Computer Science Programmes",
+      "metaDescription": "Explore B.E./B.Tech CSE programmes with programme-level curriculum, eligibility, fees, intake and application requirements for a Computer Science shortlist."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "united-states",
+      "slug": "university-of-maryland-college-park",
+      "name": "University of Maryland, College Park",
+      "city": "College Park",
+      "type": "Public",
+      "establishedYear": 1856,
+      "officialWebsite": "https://umd.edu/",
+      "mediaAttribution": {},
+      "summary": "University of Maryland, College Park is Maryland's flagship public research university, founded in 1856. Its B.S. Computer Science major is offered through the College of Computer, Mathematical, and Natural Sciences.",
+      "campusLifestyle": "UMD's College Park campus is 8 miles (13 km) from Washington, D.C. The university identifies itself as Maryland's flagship public research university, founded in 1856.",
+      "cityProfile": "College Park is 8 miles (13 km) from Washington, D.C. For 2026-27, UMD publishes an on-campus planning example of USD 10,290 for a standard double room with air conditioning and USD 6,820 for the base resident dining plan. These are separate charges and the room type is not universal.",
+      "practicalExposure": "Computer Science students can pursue CMSC 499A, a faculty-sponsored research-for-credit option available after CMSC 330 and CMSC 351. The work culminates in a research paper, website or another approved product. UCC@CMNS reports that more than 85% of 2023 Computer Science graduates completed at least one undergraduate internship; it also points students to Handshake and department career fairs held twice a year. These are routes and support structures, not a placement guarantee.",
+      "hostelOverview": "For 2026-27, UMD publishes on-campus double-room rates from USD 9,216 for a traditional room without air conditioning to USD 11,629 for an apartment room. A standard double room with air conditioning is listed at USD 10,290. The rate description includes wireless internet and washers and dryers; dining is billed separately.",
+      "dietarySupport": "The 2026-27 published base resident dining plan is USD 6,820. It is a separate planning component from residence-hall housing, rather than part of the published room rate.",
+      "safetyOverview": "International Student & Scholar Services supports admitted international students with transition and immigration requirements after admission.",
+      "studentSupport": "UMD directs international applicants to Common App or ApplyWeb and sets out its credential-evaluation and English-proficiency requirements. After admission, International Student & Scholar Services supports transition and immigration requirements.",
+      "whyChoose": [
+        "A B.S. curriculum spanning programming, systems, discrete structures and calculus.",
+        "Faculty-sponsored research for credit through CMSC 499A after the stated prerequisites.",
+        "Documented career-fair and internship-support infrastructure for Computer Science students."
+      ],
+      "thingsToConsider": [
+        "Computer Science has a separate Limited Enrollment Program review alongside UMD admission.",
+        "Full-time Computer Science juniors and seniors pay a USD 3,375 differential tuition charge.",
+        "Enrolled Computer Science students face separate 45- and 75-credit academic benchmarks."
+      ],
+      "bestFitFor": [
+        "Applicants prepared for a separate Computer Science major-selection review.",
+        "Students seeking a curriculum with programming, systems, theory and mathematics requirements.",
+        "Applicants who can plan around non-resident tuition and conditional upper-level charges."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Middle States Commission on Higher Education (MSCHE) accredited",
+        "Maryland Higher Education Commission (MHEC) authorised"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "UMD institutional accreditation",
+          "url": "https://provost.umd.edu/leadership/accreditation"
+        },
+        {
+          "label": "MHEC authorisation and programme approval",
+          "url": "https://provost.umd.edu/leadership/accreditation"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Computer Science admission separate from admission to UMD?",
+          "answer": "Yes. Computer Science is a Limited Enrollment Program. A first-year applicant selects it as a preferred major, but the university admission review and the Computer Science LEP review are separate. Admission to UMD does not itself mean an offer for the Computer Science major."
+        },
+        {
+          "question": "What does the B.S. Computer Science curriculum include?",
+          "answer": "The published major includes lower-level programming, computer systems, discrete structures and calculus. Upper-level work spans systems, information processing, software engineering and programming languages, theory and numerical analysis. The B.S. also includes upper-level work outside CMSC under the published degree rules."
+        },
+        {
+          "question": "What are the current English-proficiency scores for international applicants?",
+          "answer": "UMD lists passing scores of 120 on the Duolingo English Test, 7 on IELTS and 95 on TOEFL. Scores must be less than two years old, unless the Admissions Office grants an English-proficiency waiver under its policy."
+        },
+        {
+          "question": "Is UMD test-optional for this programme?",
+          "answer": "UMD states that SAT and ACT scores are optional through Spring and Fall 2027. This policy is separate from the English-proficiency requirement for international applicants, which applies unless the Admissions Office grants a waiver."
+        },
+        {
+          "question": "What is the published non-resident tuition for 2026-27?",
+          "answer": "For 2026-27, published full-time non-resident undergraduate tuition is USD 42,266 and mandatory fees are USD 1,820. Full-time Computer Science juniors and seniors have an additional USD 3,375 differential tuition charge, so the applicable class level matters when planning costs."
+        },
+        {
+          "question": "What on-campus housing and dining costs are published?",
+          "answer": "UMD lists 2026-27 double-room rates from USD 9,216 to USD 11,629 by room type. A standard double room with air conditioning is USD 10,290, while the base resident dining plan is USD 6,820. Dining is a separate charge from housing."
+        },
+        {
+          "question": "How do international first-year applicants apply?",
+          "answer": "International first-year applicants submit one application through Common App or ApplyWeb. The published materials include the application, essay, activities or awards, fee or approved waiver, two recommendations and official secondary-school transcripts. Non-U.S. post-secondary credentials require the specified third-party evaluation."
+        },
+        {
+          "question": "What practical learning routes are documented for Computer Science?",
+          "answer": "CMSC 499A offers faculty-sponsored research for credit after CMSC 330 and CMSC 351. UCC@CMNS also describes Handshake, Computer Science career fairs and its report that more than 85% of 2023 Computer Science graduates completed at least one undergraduate internship."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "UMD About",
+          "url": "https://umd.edu/About",
+          "kind": "official-university",
+          "checkedAt": "2026-07-20",
+          "notes": "Identity, public research character and founding year."
+        },
+        {
+          "label": "UMD accreditation",
+          "url": "https://provost.umd.edu/leadership/accreditation",
+          "kind": "recognition",
+          "checkedAt": "2026-07-20",
+          "notes": "MSCHE accreditation and MHEC authorisation."
+        },
+        {
+          "label": "UMD Computer Science major catalog",
+          "url": "https://academiccatalog.umd.edu/undergraduate/colleges-schools/computer-mathematical-natural-sciences/computer-science/computer-science-major/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-20",
+          "notes": "B.S. curriculum and Limited Enrollment Program status."
+        },
+        {
+          "label": "UMD international applicants",
+          "url": "https://admissions.umd.edu/apply/international-applicants",
+          "kind": "official-university",
+          "checkedAt": "2026-07-20",
+          "notes": "International application route and documents."
+        },
+        {
+          "label": "UMD 2026-27 tuition and fees",
+          "url": "https://academiccatalog.umd.edu/undergraduate/fees-expenses-financial-aid/tuition-fees/tuition-fees.pdf",
+          "kind": "official-fee",
+          "checkedAt": "2026-07-20",
+          "notes": "Non-resident tuition, mandatory fees and Computer Science differential."
+        },
+        {
+          "label": "UMD Computer Science four-year academic plan",
+          "url": "https://undergrad.cs.umd.edu/sites/undergrad.cs.umd.edu/files/images/u167/CMSC%2007010%204%20Year%20Plan.pdf",
+          "kind": "official-program",
+          "checkedAt": "2026-07-20",
+          "notes": "Official Computer Science four-year academic plan."
+        }
+      ],
+      "admissionsContent": {
+        "overview": "University admission and Computer Science major selection are separate. Students Traffic can assess first-year or transfer readiness, English-test status and the documents needed for the chosen application route.",
+        "sectionStates": {
+          "scholarships": "absent",
+          "rankings": "absent",
+          "studentPerspective": "absent",
+          "safety": "absent",
+          "dietarySupport": "absent",
+          "practicalLearning": "published",
+          "fees": "published",
+          "accommodation": "published"
+        },
+        "ctas": [
+          {
+            "context": "eligibility",
+            "label": "Check my eligibility",
+            "capture": ["qualification", "grades", "mathematics preparation", "English-test status", "route"]
+          },
+          {
+            "context": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["entry year", "residency or citizenship", "housing preference", "budget range", "funding need"]
+          },
+          {
+            "context": "application",
+            "label": "Start my application review",
+            "capture": ["application platform", "transcript readiness", "recommendations", "English-test status", "target deadline"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "umd-bs-computer-science",
+          "canonicalCourseSlug": "be-btech-computer-science-engineering",
+          "officialTitle": "Computer Science, B.S.",
+          "durationYears": 4,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026-27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 42266,
+            "annualTuitionUsd": 42266,
+            "verifiedAt": "2026-07-20",
+            "notes": "Published for full-time non-resident undergraduates. Mandatory fees are USD 1,820 for students registered for 9+ credits. Full-time Computer Science juniors and seniors also pay USD 3,375 differential tuition; that charge is not a first-year or sophomore tuition figure."
+          },
+          "officialProgramUrl": "https://academiccatalog.umd.edu/undergraduate/colleges-schools/computer-mathematical-natural-sciences/computer-science/computer-science-major/",
+          "audienceEligibility": {
+            "availability": "global",
+            "eligibleAudiences": ["International first-year applicants", "International transfer applicants", "U.S. applicants"],
+            "restrictions": ["Computer Science is a Limited Enrollment Program with a separate major-selection review.", "Admission to UMD does not itself guarantee admission to the Computer Science major."],
+            "notes": "First-year, transfer and current-student routes have different requirements.",
+            "verifiedAt": "2026-07-20",
+            "sourceUrl": "https://admissions.umd.edu/apply/international-applicants"
+          },
+          "admissionsContent": {
+            "overview": "First-year applicants select Computer Science as a preferred major, then receive separate UMD admission and Computer Science LEP reviews. International applicants use the published application route and must meet the English-proficiency rule unless UMD grants a waiver.",
+            "eligibility": {
+              "intro": "For the first-year route, UMD sets minimum secondary-school preparation and a separate English-proficiency requirement for international applicants.",
+              "items": [
+                "Four years of English preparation.",
+                "Four years of mathematics including Algebra I, Geometry and Algebra II.",
+                "Three years of science across at least two areas, including two lab experiences.",
+                "Two years of foreign language and three years of history or social science.",
+                "English proficiency unless the Admissions Office grants a waiver.",
+                "Computer Science preferred-major selection is reviewed separately from UMD admission."
+              ]
+            },
+            "applicationSteps": [
+              "Submit one first-year application through Common App or ApplyWeb.",
+              "Select Computer Science as the preferred major for the separate LEP review.",
+              "Provide the required academic records, essay, activities and recommendations.",
+              "Arrange an approved course-by-course evaluation for applicable non-U.S. post-secondary credentials.",
+              "Send an accepted English-proficiency score unless UMD grants a waiver."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "Official Grades 9-12 secondary-school transcripts.",
+                "National examination results or certificates where applicable.",
+                "Course-by-course evaluation for applicable non-U.S. post-secondary credentials."
+              ],
+              "application": [
+                "Completed Common App or ApplyWeb application.",
+                "Application essay.",
+                "Activities and awards list or resume.",
+                "Two recommendations: counsellor and teacher.",
+                "USD 80 application fee or approved waiver.",
+                "Accepted English-proficiency test score where required."
+              ]
+            },
+            "deadlinesNote": "UMD lists fall early action on November 1 and regular decision on January 20. International first-year applicants for fall are automatically considered for spring; the published international spring deadline is August 1.",
+            "visaConsiderations": [
+              "For a completed admissions application, UMD requests visa and financial-certification documents after admission rather than with the initial application."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["August", "January"],
+          "intakeCodes": ["august", "january"],
+          "feeVerifiedAt": "2026-07-20",
+          "feeNotes": "Confirmed 2026–27 non-resident undergraduate tuition; mandatory fees and upper-division Computer Science differential tuition are separate documented charges.",
+          "teachingPhases": [
+            {
+              "phase": "B.S. Computer Science",
+              "language": "English",
+              "details": "International applicants must meet UMD's English-proficiency requirement unless the Admissions Office grants a waiver."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "university-of-maryland-college-park",
+      "publicField": "summary",
+      "claimText": "University of Maryland, College Park is Maryland's flagship public research university, founded in 1856, and the B.S. Computer Science major is within the College of Computer, Mathematical, and Natural Sciences.",
+      "status": "verified",
+      "sourceLabel": "UMD About and Computer Science major catalog",
+      "sourceUrl": "https://umd.edu/About",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-07-20"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-maryland-college-park",
+      "publicField": "recognition",
+      "claimText": "UMD is institutionally accredited by MSCHE, with accreditation reaffirmed in 2026, and MHEC authorises the institution and its degree and certificate programmes.",
+      "status": "verified",
+      "sourceLabel": "UMD Provost accreditation",
+      "sourceUrl": "https://provost.umd.edu/leadership/accreditation",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-01-16"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-maryland-college-park",
+      "publicField": "campus-city",
+      "claimText": "UMD describes College Park as 8 miles (13 km) from Washington, D.C.",
+      "status": "verified",
+      "sourceLabel": "UMD facts and figures",
+      "sourceUrl": "https://research.umd.edu/about/facts-and-figures",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-07-20"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-maryland-college-park",
+      "publicField": "accommodation",
+      "claimText": "For 2026-27, published on-campus double-room rates range from USD 9,216 to USD 11,629 by room type, with a standard double room with air conditioning at USD 10,290; dining is separately billed.",
+      "status": "verified",
+      "sourceLabel": "UMD Resident Life rates and terms",
+      "sourceUrl": "https://www.reslife.umd.edu/apply-housing/rates-terms",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-03-31"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "university-of-maryland-college-park",
+      "publicField": "international-support",
+      "claimText": "International Student & Scholar Services supports admitted international students with transition and immigration requirements; visa and financial-certification documents are requested after admission rather than for a completed application.",
+      "status": "verified",
+      "sourceLabel": "UMD international applicants",
+      "sourceUrl": "https://admissions.umd.edu/apply/international-applicants",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "duration",
+      "claimText": "UMD publishes a Computer Science Four Year Academic Plan for the B.S. programme.",
+      "status": "verified",
+      "sourceLabel": "UMD Computer Science Four Year Academic Plan",
+      "sourceUrl": "https://undergrad.cs.umd.edu/sites/undergrad.cs.umd.edu/files/images/u167/CMSC%2007010%204%20Year%20Plan.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-07-20",
+      "internalNotes": "Supports the four-year duration value required by the programme schema."
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "decision-summary",
+      "claimText": "Computer Science is a Limited Enrollment Program; first-year applicants select it as a preferred major and university admission does not itself mean admission to Computer Science.",
+      "status": "verified",
+      "sourceLabel": "UMD Computer Science major catalog",
+      "sourceUrl": "https://academiccatalog.umd.edu/undergraduate/colleges-schools/computer-mathematical-natural-sciences/computer-science/computer-science-major/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-07-20"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "curriculum",
+      "claimText": "The B.S. requires programming, systems, discrete structures and calculus, followed by upper-level work across systems, information processing, software and programming languages, theory and numerical analysis, plus upper-level non-CMSC study.",
+      "status": "verified",
+      "sourceLabel": "UMD Computer Science major catalog",
+      "sourceUrl": "https://academiccatalog.umd.edu/undergraduate/colleges-schools/computer-mathematical-natural-sciences/computer-science/computer-science-major/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-07-20"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "academic-progression",
+      "claimText": "Students enrolled in Computer Science are assessed at 45 and 75 credits under published course-grade and GPA benchmarks.",
+      "status": "verified",
+      "sourceLabel": "UMD undergraduate Computer Science degree requirements",
+      "sourceUrl": "https://undergrad.cs.umd.edu/degree-requirements-cs-major/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-07-20"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "eligibility",
+      "claimText": "UMD publishes minimum first-year preparation in English, mathematics, science, foreign language and history or social science, while international applicants must meet English proficiency unless granted a waiver.",
+      "status": "verified",
+      "sourceLabel": "UMD freshman and international applicants",
+      "sourceUrl": "https://admissions.umd.edu/apply/freshman-applicants",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "english-proficiency",
+      "claimText": "Current published English passing scores are DET 120, IELTS 7 and TOEFL 95, with scores less than two years old.",
+      "status": "verified",
+      "sourceLabel": "UMD English language proficiency",
+      "sourceUrl": "https://admissions.umd.edu/apply/english-language-proficiency",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "admissions",
+      "claimText": "International first-year applicants use Common App or ApplyWeb and submit the published application, essay, activities or awards, fee or approved waiver, two recommendations and official secondary transcripts; applicable non-U.S. post-secondary credentials need the stated third-party evaluation.",
+      "status": "verified",
+      "sourceLabel": "UMD international applicants",
+      "sourceUrl": "https://admissions.umd.edu/apply/international-applicants",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "intake",
+      "claimText": "UMD lists fall early action on November 1 and regular decision on January 20; fall starts in late August, international fall applicants are automatically considered for spring, and the international spring deadline is August 1.",
+      "status": "verified",
+      "sourceLabel": "UMD application deadlines",
+      "sourceUrl": "https://admissions.umd.edu/apply/application-deadlines",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "fee",
+      "claimText": "For 2026-27, non-resident full-time undergraduate tuition is USD 42,266 and mandatory fees are USD 1,820; full-time Computer Science juniors and seniors pay a USD 3,375 differential tuition charge.",
+      "status": "verified",
+      "sourceLabel": "UMD 2026-27 undergraduate tuition and fees",
+      "sourceUrl": "https://academiccatalog.umd.edu/undergraduate/fees-expenses-financial-aid/tuition-fees/tuition-fees.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "research-learning",
+      "claimText": "CMSC 499A is a faculty-sponsored research-for-credit option after CMSC 330 and CMSC 351, with a research paper, website or other product as the deliverable.",
+      "status": "verified",
+      "sourceLabel": "UMD undergraduate Computer Science research",
+      "sourceUrl": "https://undergrad.cs.umd.edu/node/34",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-07-20"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "practical-learning",
+      "claimText": "UCC@CMNS reports that more than 85% of 2023 Computer Science graduates completed at least one undergraduate internship and describes Handshake and Computer Science career fairs.",
+      "status": "verified",
+      "sourceLabel": "UMD undergraduate Computer Science internships and careers",
+      "sourceUrl": "https://undergrad.cs.umd.edu/node/9",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-07-20"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "university-of-maryland-college-park",
+      "programmeSlug": "umd-bs-computer-science",
+      "publicField": "transfer-route",
+      "claimText": "For Fall 2024-and-later internal or transfer LEP applicants, the published gateway policy requires B- grades in specified gateway courses and a 3.0 GPA across attempted college work, with a stated repeat policy.",
+      "status": "verified",
+      "sourceLabel": "UMD Computer Science LEP fact sheet",
+      "sourceUrl": "https://lep.umd.edu/documents/ComputerScience2024andlater.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    }
+  ]
+}

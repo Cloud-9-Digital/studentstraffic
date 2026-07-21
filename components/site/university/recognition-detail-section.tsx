@@ -1,4 +1,4 @@
-import { ExternalLink, Info, ShieldCheck } from "lucide-react";
+import { Info, ShieldCheck } from "lucide-react";
 
 import type { Country, FinderProgram, University } from "@/lib/data/types";
 
@@ -133,43 +133,6 @@ export function UniversityRecognitionDetailSection({
         </div>
       )}
 
-      {university.recognitionLinks.length > 0 && (
-        <div className="overflow-hidden rounded-2xl border border-border bg-card">
-          <div className="border-b border-border bg-muted/30 px-6 py-4">
-            <p className="font-display text-base font-semibold text-heading">
-              Official recognition sources
-            </p>
-            <p className="mt-0.5 text-sm text-muted-foreground">
-              Verify recognition directly from the issuing authority
-            </p>
-          </div>
-          <div className="divide-y divide-border/50">
-            {university.recognitionLinks.map((link) => (
-              <div
-                key={link.url}
-                className="flex items-center justify-between gap-4 px-6 py-4"
-              >
-                <div className="flex items-center gap-3">
-                  <ShieldCheck className="size-4 shrink-0 text-primary/60" />
-                  <span className="text-sm font-medium text-foreground">
-                    {link.label}
-                  </span>
-                </div>
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex shrink-0 items-center gap-1.5 rounded-xl border border-border px-3 py-1.5 text-xs font-medium text-muted-foreground transition hover:border-primary/30 hover:text-primary"
-                >
-                  Verify
-                  <ExternalLink className="size-3" />
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
       {/* What recognition means for India-return (medical) / for you (other streams) */}
       {isMedicalStream ? (
         <div className="overflow-hidden rounded-2xl border border-border bg-card">
@@ -180,20 +143,16 @@ export function UniversityRecognitionDetailSection({
           </div>
           <div className="space-y-4 px-6 py-5 text-sm leading-7 text-muted-foreground">
             <p>
-              For Indian students, the recognition chain that matters is:{" "}
+              For an India-return medical pathway, the decision record includes:{" "}
               <strong className="font-semibold text-foreground">
-                NMC FMGE/NExT eligibility → official university records → country accreditation
+                the foreign qualification rules → the programme&apos;s host-country status → its course and clinical structure → the applicable registration route
               </strong>
-              . All three must be satisfied for a degree from an overseas university
-              to support India-return medical practice.
+              . These checks are completed for the applicant&apos;s intended intake and professional destination.
             </p>
             <p>
-              If {university.name} meets current NMC requirements and host-country accreditation rules, graduates who
-              pass FMGE (or NExT after 2024 implementation) can register with the
-              State Medical Council in India and practise as licensed doctors. If any
-              link in the chain is broken — for example, if current regulatory requirements change — that
-              eligibility is at risk. Students Traffic monitors these lists and
-              alerts enrolled students to any changes that could affect their pathway.
+              The named designations above describe the institution and programme evidence held for {university.name}.
+              India-return eligibility is assessed for the individual admission route against the regulations in force
+              for that intake; directory listing alone is not presented as approval or a practice licence.
             </p>
           </div>
         </div>
@@ -206,9 +165,9 @@ export function UniversityRecognitionDetailSection({
           </div>
           <div className="px-6 py-5 text-sm leading-7 text-muted-foreground">
             <p>
-              Confirm accreditation status directly with {university.name} and with
-              the relevant professional body in your home country before relying on
-              this degree for licensing, employment, or further study.
+              The named designations above describe the accreditation and recognition
+              evidence held for {university.name}. Programme-specific professional
+              outcomes are assessed as part of the applicant&apos;s admission plan.
             </p>
           </div>
         </div>

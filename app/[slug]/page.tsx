@@ -648,12 +648,13 @@ export default async function LandingPageRoute({
         <section id="fees" className="deferred-render border-b border-border py-14 md:py-20">
           <div className="container-shell">
             <h2 className="font-display text-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              {page.title} fees in 2026
+              {page.title} tuition fees
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground">
-              Verified fee breakdowns for colleges that have shared their 2026
-              structure. Amounts are in USD unless stated otherwise, so families
-              can compare tuition, hostel, and one-time charges clearly.
+              Academic-year-specific tuition published for the international
+              Medicine route. Each card states what is included so applicants can
+              compare university charges without mixing in travel, accommodation,
+              visa, or service estimates.
             </p>
 
             <div className="mt-10 space-y-6">
@@ -664,69 +665,62 @@ export default async function LandingPageRoute({
                     <h3 className="font-display text-lg font-semibold text-heading">
                       {fs.universityName}
                     </h3>
-                    <div className="flex flex-wrap items-center gap-4">
-                      {fs.singlePaymentFee && (
-                        <span className="text-sm text-muted-foreground">
-                          Single payment:{" "}
-                          <span className="font-semibold text-primary">{fs.singlePaymentFee}</span>
-                          <span className="ml-1.5 text-xs line-through">{fs.totalUniversityFee}</span>
-                        </span>
-                      )}
-                      <span className="rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-                        Total: {fs.totalUniversityFee}
-                      </span>
-                    </div>
+                    <span className="rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
+                      {fs.academicYear}
+                    </span>
                   </div>
 
                   <div className="grid divide-y divide-border sm:grid-cols-3 sm:divide-x sm:divide-y-0">
                     {/* Tuition */}
                     <div className="px-6 py-5">
                       <p className="mb-4 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                        Tuition (Years 1–6)
+                        Confirmed annual tuition
                       </p>
-                      <p className="text-2xl font-semibold text-heading">{fs.annualFee}</p>
+                      <p className="text-2xl font-semibold text-heading">{fs.annualTuition}</p>
                       <p className="mt-1 text-sm text-muted-foreground">per year</p>
                       <p className="mt-3 text-xs text-muted-foreground">
-                        {fs.semestersPerYear} semester{fs.semestersPerYear > 1 ? "s" : ""} × {fs.semesterFee} each
+                        Programme length: {fs.programmeLength}
                       </p>
-                      <div className="mt-4 border-t border-border pt-4">
+                      {fs.totalTuition && <div className="mt-4 border-t border-border pt-4">
                         <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-1">
-                          University reg. fee
+                          Published course total
                         </p>
-                        <p className="text-sm font-medium text-foreground">{fs.registrationFee}</p>
-                      </div>
+                        <p className="text-sm font-medium text-foreground">{fs.totalTuition}</p>
+                      </div>}
                     </div>
 
                     {/* Hostel */}
                     <div className="px-6 py-5">
                       <p className="mb-4 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                        Hostel fee
+                        Fee structure
                       </p>
                       <div className="space-y-2.5">
-                        {fs.hostelOptions.map((h) => (
-                          <div key={h.sharing} className="flex items-center justify-between gap-2">
-                            <span className="text-sm text-muted-foreground">{h.sharing}</span>
-                            <span className="text-sm font-semibold text-foreground">{h.amountPerYear}</span>
+                        {fs.paymentSchedule && (
+                          <div className="flex items-start justify-between gap-3">
+                            <span className="text-sm text-muted-foreground">Payment schedule</span>
+                            <span className="text-right text-sm font-semibold text-foreground">{fs.paymentSchedule}</span>
                           </div>
-                        ))}
+                        )}
+                        {fs.scholarship && (
+                          <div className="flex items-start justify-between gap-3">
+                            <span className="text-sm text-muted-foreground">{fs.scholarship.label}</span>
+                            <span className="text-right text-sm font-semibold text-foreground">{fs.scholarship.amount}</span>
+                          </div>
+                        )}
                       </div>
-                      <div className="mt-4 border-t border-border pt-4">
+                      {fs.confirmedCharges.length > 0 && <div className="mt-4 border-t border-border pt-4">
                         <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground mb-2">
                           One-time charges
                         </p>
                         <div className="space-y-1.5">
-                          {fs.oneTimeCharges.map((c) => (
+                          {fs.confirmedCharges.map((c) => (
                             <div key={c.label} className="flex items-start justify-between gap-2">
                               <span className="text-xs leading-5 text-muted-foreground">{c.label}</span>
                               <span className="shrink-0 text-xs font-semibold text-foreground">{c.amount}</span>
                             </div>
                           ))}
                         </div>
-                        <div className="mt-2 flex items-center justify-between rounded-lg bg-muted px-3 py-2">
-                          <span className="text-xs font-semibold text-foreground">Total one-time</span>
-                          <span className="text-xs font-bold text-primary">{fs.totalOneTimeCharges}</span>
-                        </div>
-                      </div>
+                      </div>}
                     </div>
 
                     {/* Notes */}

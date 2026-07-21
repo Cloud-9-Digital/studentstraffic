@@ -91,6 +91,24 @@ directory contract.
 research agent invoke it or any old one-off writer directly. Use the migration runner so that local
 research sessions do not wake the database.
 
+### Framework payload contract (2026-07-20)
+
+The migration payload is now the enforcement point for the catalogue content framework:
+
+- every programme supplies a `fee` object with explicit `confirmed`, `indicative` or `on_request`
+  status rather than a zero-value fee sentinel;
+- every material claim is carried in a private root `evidence` record with entity target, public
+  field, claim text, source grade, checked date and review-by date;
+- `npm run content:validate` rejects Grade C evidence, expired evidence, prohibited filler, missing
+  eligibility/admissions/intake evidence and fee/evidence mismatches before opening a database
+  connection;
+- database migration `0068_catalog_content_framework.sql` adds fee-state fields and the private
+  `catalog_content_evidence` table. Run `npm run db:migrate` before applying a framework payload.
+
+Evidence is never mapped into public page props, search documents or source links. Existing legacy
+catalogue records retain their prior fields until they are explicitly refreshed; their fee state must
+be classified during that refresh rather than inferred by an agent at display time.
+
 ## Generalizing discovery to non-medical fields
 
 > **Current operational note (2026-07-13):** the automatic discovery queue remains medical-source

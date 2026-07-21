@@ -14,6 +14,61 @@ const sourceSchema = z.object({
   notes: z.string().optional(),
 });
 
+const evidenceSchema = z.object({
+  entity: z.enum(["country", "university", "programme"]),
+  countrySlug: z.string().min(2).optional(),
+  universitySlug: z.string().min(2).optional(),
+  programmeSlug: z.string().min(2).optional(),
+  publicField: z.string().min(2).max(80),
+  claimText: z.string().min(12).max(1200),
+  status: z.enum(["verified", "indicative", "omit"]),
+  sourceLabel: z.string().min(2).max(180),
+  sourceUrl: z.string().url(),
+  sourceGrade: z.enum(["A", "B", "C"]),
+  checkedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  reviewBy: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  internalNotes: z.string().max(1200).optional(),
+}).superRefine((evidence, ctx) => {
+  if (evidence.entity === "country" && !evidence.countrySlug) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, message: "Country evidence needs countrySlug." });
+  }
+  if (evidence.entity === "university" && !evidence.universitySlug) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, message: "University evidence needs universitySlug." });
+  }
+  if (evidence.entity === "programme" && (!evidence.universitySlug || !evidence.programmeSlug)) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, message: "Programme evidence needs universitySlug and programmeSlug." });
+  }
+});
+
+const feeSchema = z.discriminatedUnion("status", [
+  z.object({
+    status: z.literal("confirmed"),
+    academicYear: z.string().min(4).max(40),
+    officialFeeCurrency: z.string().length(3),
+    officialAnnualTuitionAmount: z.number().int().positive(),
+    officialTotalTuitionAmount: z.number().int().positive().nullable().optional(),
+    annualTuitionUsd: z.number().int().positive().nullable().optional(),
+    totalTuitionUsd: z.number().int().positive().nullable().optional(),
+    verifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    notes: z.string().min(20).max(1200),
+  }),
+  z.object({
+    status: z.literal("indicative"),
+    academicYear: z.string().min(4).max(40),
+    annualTuitionMinUsd: z.number().int().positive(),
+    annualTuitionMaxUsd: z.number().int().positive(),
+    verifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    notes: z.string().min(20).max(1200),
+  }).refine((fee) => fee.annualTuitionMinUsd <= fee.annualTuitionMaxUsd, {
+    message: "Indicative fee minimum must not exceed its maximum.",
+  }),
+  z.object({
+    status: z.literal("on_request"),
+    verifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    notes: z.string().min(20).max(1200),
+  }),
+]);
+
 const cloudinaryImageUrlSchema = z.string().url().refine(
   (value) => new URL(value).hostname === "res.cloudinary.com",
   "Public university images must be hosted on Cloudinary.",
@@ -39,9 +94,7 @@ const programmeSchema = z.object({
   canonicalCourseSlug: z.string().min(2),
   officialTitle: z.string().min(2),
   durationYears: z.number().positive(),
-  officialFeeCurrency: z.string().length(3),
-  officialAnnualTuitionAmount: z.number().int().nonnegative().nullable(),
-  officialTotalTuitionAmount: z.number().int().nonnegative().nullable(),
+  fee: feeSchema,
   officialProgramUrl: z.string().url(),
   audienceEligibility: z.object({
     availability: z.enum(["global", "restricted", "local-only"]),
@@ -72,7 +125,6 @@ const programmeSchema = z.object({
   feeVerifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   feeNotes: z.string().min(40).max(1200),
   teachingPhases: z.array(z.object({ phase: z.string(), language: z.string(), details: z.string() })).min(1),
-  sourceUrls: z.array(z.string().url()).min(2),
 });
 
 const universitySchema = z.object({
@@ -131,6 +183,7 @@ export const catalogPayloadSchema = z.object({
   countries: z.array(countrySchema).default([]),
   courses: z.array(courseSchema).min(1),
   universities: z.array(universitySchema).min(1),
+  evidence: z.array(evidenceSchema).min(1),
 });
 
 export type CatalogPayload = z.infer<typeof catalogPayloadSchema>;

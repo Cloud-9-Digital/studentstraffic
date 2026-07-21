@@ -46,9 +46,15 @@ export function hasOfficialFeeAmount(
 export function hasRenderableProgramAnnualFee(
   offering: Pick<
     ProgramOffering,
-    "annualTuitionUsd" | "officialAnnualTuitionAmount" | "officialFeeCurrency"
+    | "annualTuitionUsd"
+    | "officialAnnualTuitionAmount"
+    | "officialFeeCurrency"
+    | "feeStatus"
   >,
 ) {
+  if (offering.feeStatus && offering.feeStatus !== "confirmed") {
+    return false;
+  }
   return (
     hasPublishedUsdAmount(offering.annualTuitionUsd) ||
     hasOfficialFeeAmount(
@@ -58,12 +64,29 @@ export function hasRenderableProgramAnnualFee(
   );
 }
 
+export function isConfirmedProgramFee(
+  offering: Pick<
+    ProgramOffering,
+    | "annualTuitionUsd"
+    | "officialAnnualTuitionAmount"
+    | "officialFeeCurrency"
+    | "feeStatus"
+  >,
+) {
+  return hasRenderableProgramAnnualFee(offering);
+}
+
 export function getProgramAnnualFeeLabel(
   offering: Pick<
     ProgramOffering,
-    "annualTuitionUsd" | "officialAnnualTuitionAmount" | "officialFeeCurrency"
+    | "annualTuitionUsd"
+    | "officialAnnualTuitionAmount"
+    | "officialFeeCurrency"
+    | "feeStatus"
   >,
 ) {
+  if (offering.feeStatus === "indicative") return "Indicative annual tuition";
+  if (offering.feeStatus === "on_request") return "Fee plan";
   return hasOfficialFeeAmount(
     offering.officialAnnualTuitionAmount,
     offering.officialFeeCurrency,
@@ -77,10 +100,25 @@ export function getProgramAnnualFeeLabel(
 export function formatProgramAnnualFee(
   offering: Pick<
     ProgramOffering,
-    "annualTuitionUsd" | "officialAnnualTuitionAmount" | "officialFeeCurrency"
+    | "annualTuitionUsd"
+    | "officialAnnualTuitionAmount"
+    | "officialFeeCurrency"
+    | "feeStatus"
+    | "indicativeAnnualTuitionMinUsd"
+    | "indicativeAnnualTuitionMaxUsd"
   >,
-  fallback = "Check official fee",
+  fallback = "Fee plan on request",
 ) {
+  if (
+    offering.feeStatus === "indicative" &&
+    hasPublishedUsdAmount(offering.indicativeAnnualTuitionMinUsd) &&
+    hasPublishedUsdAmount(offering.indicativeAnnualTuitionMaxUsd)
+  ) {
+    return `${formatCurrencyUsd(offering.indicativeAnnualTuitionMinUsd)}–${formatCurrencyUsd(offering.indicativeAnnualTuitionMaxUsd)}`;
+  }
+
+  if (offering.feeStatus === "on_request") return fallback;
+
   if (hasPublishedUsdAmount(offering.annualTuitionUsd)) {
     return formatCurrencyUsd(offering.annualTuitionUsd);
   }

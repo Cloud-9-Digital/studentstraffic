@@ -1,0 +1,386 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": [
+        "Bachelor of Medicine and Bachelor of Surgery",
+        "Doctor of Medicine",
+        "General Medicine",
+        "Medicine and Surgery",
+        "Single-Cycle Degree in Medicine and Surgery"
+      ],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medicine degrees. Semmelweis University maps its General Medicine award to this category: a six-year, English-language programme leading to Doctor of General Medicine MD qualification.",
+      "metaTitle": "MBBS and General Medicine Programs Abroad",
+      "metaDescription": "Explore undergraduate-entry MBBS and General Medicine programs abroad, including course duration, teaching language, tuition and admissions guidance."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "hungary",
+      "slug": "semmelweis-university",
+      "name": "Semmelweis University",
+      "city": "Budapest",
+      "type": "Public",
+      "establishedYear": 1769,
+      "officialWebsite": "https://semmelweis.hu/english/",
+      "mediaAttribution": {},
+      "summary": "Semmelweis University in Budapest offers General Medicine as a six-year, full-time English programme. The Faculty of Medicine award is Doctor of General Medicine (MD), structured across 12 semesters and 360 credits.",
+      "campusLifestyle": "The Faculty of Medicine is part of a university setting that reports four clinical centres and nearly 40 departments. This profile focuses on the documented General Medicine study structure rather than broad campus claims.",
+      "cityProfile": "Budapest is the programme location. For housing planning, Semmelweis publishes central-Budapest reference rents of about EUR 300 for a room and EUR 500 for a studio. These are housing planning figures, not an all-inclusive living-cost estimate.",
+      "practicalExposure": "The programme moves from theoretical study in years 1–2 to a pre-clinical third year, clinical training in years 4–5 and an internship in year 6. Clinical disciplines use small-group block rotations. The final year includes bedside work at university clinics or accredited teaching hospitals, with major disciplines including internal medicine, surgery, paediatrics, obstetrics and gynaecology, neurology and psychiatry, alongside family medicine, emergency care, infectology and transfusion medicine.",
+      "hostelOverview": "Semmelweis reports five dormitories and two professional dormitories with capacity for more than 900 students. First-year accommodation is limited and assessed on social and financial need, so it should be treated as an application-based option rather than a guaranteed placement.",
+      "dietarySupport": "Accommodation planning needs a separate budget line. The published room and studio figures are housing references only; this profile does not combine them with unsupported food, transport or personal-cost estimates.",
+      "safetyOverview": "The evidence packet does not establish a separate university safety service or city-safety metric, so this profile does not make a safety claim.",
+      "studentSupport": "For first-year housing, the university uses a social and financial need assessment. A cost-and-funding planning conversation can combine the confirmed tuition position with accommodation preference and the applicant’s budget.",
+      "whyChoose": [
+        "Six-year English General Medicine structure with 360 credits.",
+        "Clinical study uses small-group block rotations in years 4–5.",
+        "Final-year bedside work is documented at university clinics or accredited teaching hospitals.",
+        "Faculty of Medicine accreditation decision is valid through 30 June 2031."
+      ],
+      "thingsToConsider": [
+        "The English-programme access rule includes a foreign-nationality and FELVI restriction.",
+        "The 2026/27 fee is confirmed, but it is not a future-cycle tuition promise.",
+        "First-year dormitory places are limited and based on social and financial need.",
+        "Medical registration and practice rights depend on the intended destination and are not automatic."
+      ],
+      "bestFitFor": [
+        "Applicants prepared for biology, chemistry and assessed English-language admission requirements.",
+        "Applicants seeking a staged route from foundations to clinical rotations and internship.",
+        "Applicants who want to plan tuition, housing and professional destination separately."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "Hungarian Accreditation Committee (MAB) — Faculty of Medicine accreditation",
+        "MAB Decision 2023/6/XV — valid through 30 June 2031 under WFME 2020 standards"
+      ],
+      "recognitionLinks": [
+        {
+          "label": "MAB Faculty of Medicine assessment report",
+          "url": "https://www.mab.hu/wp-content/uploads/Site-visit-team-assessment-report-WFME-SE-%C3%81OK.pdf"
+        },
+        {
+          "label": "Semmelweis General Medicine programme",
+          "url": "https://semmelweis.hu/admission/programs/medicine/"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the General Medicine award at Semmelweis University?",
+          "answer": "The Faculty of Medicine offers General Medicine as a full-time English programme leading to the Doctor of General Medicine (MD), described by the university as a one-tier master’s degree. The course runs for six years across 12 semesters and carries 360 credits."
+        },
+        {
+          "question": "How is the six-year General Medicine course structured?",
+          "answer": "Years 1–2 cover the theoretical module, year 3 is pre-clinical, years 4–5 are clinical and year 6 is the internship year. Foundational subjects include anatomy, histology, embryology and physiology, while the final year includes major clinical disciplines and defined specialty blocks."
+        },
+        {
+          "question": "What is the Semmelweis General Medicine tuition fee?",
+          "answer": "For academic year 2026/27, tuition is USD 10,450 per semester. Across 12 semesters, the calculated tuition total is USD 125,400, excluding living costs and other listed charges. The admission procedure fee is USD 400, the enrolment fee is USD 230, and a USD 2,000 deposit is included in first-semester tuition."
+        },
+        {
+          "question": "What academic preparation does General Medicine require?",
+          "answer": "The programme expects completed or final-year upper-secondary education with a strong biology and chemistry background. The English admission route has a specific foreign-nationality and FELVI restriction, so eligibility should be assessed against the applicant’s school system and application route."
+        },
+        {
+          "question": "How is English assessed for the Semmelweis medicine programme?",
+          "answer": "The programme expects upper-intermediate English and biomedical-English knowledge. The published admission process assesses General English and Biomedical English through written testing and an English component in the interview or oral assessment."
+        },
+        {
+          "question": "What practical learning takes place in the final year?",
+          "answer": "The sixth year is an internship year with bedside work at university clinics or accredited teaching hospitals. It includes internal medicine, surgery, paediatrics, obstetrics and gynaecology, neurology and psychiatry, plus blocks such as family medicine, emergency care, infectology and transfusion medicine."
+        },
+        {
+          "question": "What does the Faculty of Medicine accreditation cover?",
+          "answer": "The Hungarian Accreditation Committee decision covers the Semmelweis Faculty of Medicine medical-school accreditation under WFME 2020 standards and is valid through 30 June 2031. It does not by itself establish medical-registration or practice rights in another country."
+        },
+        {
+          "question": "What accommodation information is available for General Medicine students?",
+          "answer": "Semmelweis reports more than 900 dormitory places across five dormitories and two professional dormitories. First-year places are limited and assessed on social and financial need; for private housing planning, the university lists central-Budapest reference rents of about EUR 300 for a room and EUR 500 for a studio."
+        }
+      ],
+      "researchSources": [
+        {
+          "label": "Semmelweis General Medicine programme",
+          "url": "https://semmelweis.hu/admission/programs/medicine/",
+          "kind": "official-program",
+          "checkedAt": "2026-07-20",
+          "notes": "Private evidence for programme identity, curriculum and admissions mechanics."
+        },
+        {
+          "label": "Semmelweis admission rules 2026/27",
+          "url": "https://semmelweis.hu/registrar/information/rules/admission-rules/",
+          "kind": "official-university",
+          "checkedAt": "2026-07-20",
+          "notes": "Private evidence for eligibility restrictions, route and fees."
+        },
+        {
+          "label": "Hungarian Accreditation Committee assessment report",
+          "url": "https://www.mab.hu/wp-content/uploads/Site-visit-team-assessment-report-WFME-SE-%C3%81OK.pdf",
+          "kind": "recognition",
+          "checkedAt": "2026-07-20",
+          "notes": "Private evidence for Faculty of Medicine accreditation scope."
+        },
+        {
+          "label": "Semmelweis housing information",
+          "url": "https://semmelweis.hu/admission/life-at/housing/",
+          "kind": "official-university",
+          "checkedAt": "2026-07-20",
+          "notes": "Private evidence for housing capacity and planning figures."
+        }
+      ],
+      "admissionsContent": {
+        "contentState": "research_ready",
+        "sectionStates": {
+          "decisionSummary": "research_ready",
+          "eligibility": "research_ready",
+          "fees": "research_ready",
+          "admissions": "research_ready",
+          "academics": "published",
+          "recognition": "published",
+          "studentLiving": "research_ready",
+          "scholarships": "absent",
+          "funding": "absent",
+          "placements": "absent"
+        },
+        "ctas": [
+          {
+            "trigger": "eligibility",
+            "label": "Check my Medicine eligibility",
+            "capture": ["current qualification", "biology and chemistry preparation", "English level", "citizenship or residency", "intended intake"]
+          },
+          {
+            "trigger": "fees",
+            "label": "Build my cost and funding plan",
+            "capture": ["intended intake", "budget", "accommodation preference", "funding need"]
+          },
+          {
+            "trigger": "application",
+            "label": "Plan my next application review",
+            "capture": ["school-completion status", "document readiness", "intended intake"]
+          },
+          {
+            "trigger": "professional pathway",
+            "label": "Plan my professional pathway",
+            "capture": ["intended country of practice", "postgraduate-training interest"]
+          }
+        ]
+      },
+      "programmes": [
+        {
+          "slug": "semmelweis-university-general-medicine",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "General Medicine",
+          "durationYears": 6,
+          "fee": {
+            "status": "confirmed",
+            "academicYear": "2026/27",
+            "officialFeeCurrency": "USD",
+            "officialAnnualTuitionAmount": 20900,
+            "officialTotalTuitionAmount": 125400,
+            "annualTuitionUsd": 20900,
+            "totalTuitionUsd": 125400,
+            "verifiedAt": "2026-07-20",
+            "notes": "Tuition is USD 10,450 per semester for 12 semesters. The calculated USD 125,400 total excludes living costs and listed charges; USD 400 admission procedure fee and USD 230 enrolment fee are separate, while the USD 2,000 deposit is included in first-semester tuition."
+          },
+          "officialProgramUrl": "https://semmelweis.hu/admission/programs/medicine/",
+          "audienceEligibility": {
+            "availability": "restricted",
+            "eligibleAudiences": ["Applicants meeting the English-programme access rule"],
+            "restrictions": ["The English programme is restricted by the foreign-nationality and FELVI rule described in the 2026/27 admission rules."],
+            "notes": "No country-specific equivalency or home-country examination requirement is asserted in this bundle.",
+            "verifiedAt": "2026-07-20",
+            "sourceUrl": "https://semmelweis.hu/registrar/information/rules/admission-rules/"
+          },
+          "admissionsContent": {
+            "overview": "The documented route uses the SEMAPHOR online application system and an entrance assessment. The 2026 application cycle is closed, so this package records the route and assessment mechanics without presenting a new application deadline.",
+            "eligibility": {
+              "intro": "Applicants need completed or final-year upper-secondary education, a strong biology and chemistry foundation, and upper-intermediate English with biomedical-English knowledge.",
+              "items": [
+                "Completed or final-year upper-secondary education",
+                "Strong preparation in biology and chemistry",
+                "Upper-intermediate English and biomedical-English knowledge",
+                "Eligibility under the English-programme foreign-nationality and FELVI rule"
+              ]
+            },
+            "applicationSteps": [
+              "Prepare the school certificate or final-year academic record.",
+              "Compile the English CV, motivation letter, identity document and portrait photo.",
+              "Submit the application through the documented SEMAPHOR route when the current cycle is open.",
+              "Complete the published biology, chemistry, English and biomedical-English assessment stages."
+            ],
+            "documentsRequired": {
+              "academic": [
+                "School-leaving certificate or final-year academic record",
+                "Certified English translation where the document is not in English"
+              ],
+              "application": [
+                "English CV",
+                "Motivation letter",
+                "Passport or eligible Schengen identity document",
+                "Portrait photo",
+                "Minor declaration where applicable",
+                "University medical certificate after an offer"
+              ]
+            },
+            "deadlinesNote": "The documented 2026/27 application deadline has passed. Use an application review to prepare for the next published intake rather than relying on the closed cycle.",
+            "visaConsiderations": [
+              "The 2026/27 rules state that applicants needing a student visa may be required to pay first-semester or first-two-semester tuition before visa processing; this is not a visa outcome claim."
+            ]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-20",
+          "feeNotes": "Confirmed 2026/27 General Medicine tuition; the calculated course total excludes living costs and separately listed charges.",
+          "teachingPhases": [
+            {
+              "phase": "Years 1–2: theoretical module",
+              "language": "English",
+              "details": "Medical chemistry, cell science, biophysics, molecular and cell biology, anatomy, histology, embryology and physiology."
+            },
+            {
+              "phase": "Year 3: pre-clinical module",
+              "language": "English",
+              "details": "Pathology, pathophysiology, microbiology and immunology."
+            },
+            {
+              "phase": "Years 4–5: clinical module",
+              "language": "English",
+              "details": "Clinical disciplines are taught through small-group block rotations; behavioural subjects continue through the programme."
+            },
+            {
+              "phase": "Year 6: internship",
+              "language": "English",
+              "details": "Bedside work at university clinics or accredited teaching hospitals, with major clinical disciplines and defined specialty blocks."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "entity": "university",
+      "universitySlug": "semmelweis-university",
+      "publicField": "identity",
+      "claimText": "Semmelweis University Faculty of Medicine in Budapest offers General Medicine as a full-time English programme leading to Doctor of General Medicine MD / one-tier master's degree over six years, 12 semesters and 360 credits.",
+      "status": "verified",
+      "sourceLabel": "Semmelweis University General Medicine programme",
+      "sourceUrl": "https://semmelweis.hu/admission/programs/medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "semmelweis-university",
+      "publicField": "student living",
+      "claimText": "Semmelweis reports five dormitories and two professional dormitories for more than 900 students; first-year placement is limited and assessed on social and financial need, with central-Budapest rent guidance of about EUR 300 per room and EUR 500 per studio.",
+      "status": "indicative",
+      "sourceLabel": "Semmelweis University Housing",
+      "sourceUrl": "https://semmelweis.hu/admission/life-at/housing/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-01-20"
+    },
+    {
+      "entity": "university",
+      "universitySlug": "semmelweis-university",
+      "publicField": "recognition",
+      "claimText": "MAB Decision 2023/6/XV accredits the Semmelweis Faculty of Medicine medical school through 30 June 2031 under WFME 2020 standards and includes a monitoring procedure/site visit by 31 December 2027.",
+      "status": "verified",
+      "sourceLabel": "Hungarian Accreditation Committee Faculty of Medicine assessment report",
+      "sourceUrl": "https://www.mab.hu/wp-content/uploads/Site-visit-team-assessment-report-WFME-SE-%C3%81OK.pdf",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-12-31"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "semmelweis-university",
+      "programmeSlug": "semmelweis-university-general-medicine",
+      "publicField": "fee",
+      "claimText": "For academic year 2026/27, General Medicine tuition is USD 10,450 per semester; calculated 12-semester tuition is USD 125,400 excluding living costs and listed charges. The admission procedure fee is USD 400, enrolment fee is USD 230, and the USD 2,000 deposit is included in first-semester tuition.",
+      "status": "verified",
+      "sourceLabel": "Semmelweis University General Medicine programme and 2026/27 admission rules",
+      "sourceUrl": "https://semmelweis.hu/registrar/information/rules/admission-rules/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "semmelweis-university",
+      "programmeSlug": "semmelweis-university-general-medicine",
+      "publicField": "eligibility",
+      "claimText": "Applicants need completed or final-year upper-secondary education, strong biology and chemistry preparation, upper-intermediate English with biomedical-English knowledge, and eligibility under the 2026/27 English-programme foreign-nationality and FELVI rule.",
+      "status": "verified",
+      "sourceLabel": "Semmelweis University 2026/27 admission rules",
+      "sourceUrl": "https://semmelweis.hu/registrar/information/rules/admission-rules/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "semmelweis-university",
+      "programmeSlug": "semmelweis-university-general-medicine",
+      "publicField": "admissions",
+      "claimText": "The documented route uses SEMAPHOR, supported by school certificate, CV, motivation letter, identity document and photo, with online written tests in medical biology, medical chemistry, general English and biomedical English followed by interview or oral assessment.",
+      "status": "verified",
+      "sourceLabel": "Semmelweis University General Medicine programme and 2026/27 admission rules",
+      "sourceUrl": "https://semmelweis.hu/admission/programs/medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "semmelweis-university",
+      "programmeSlug": "semmelweis-university-general-medicine",
+      "publicField": "intake",
+      "claimText": "The 2026/27 rules state that the academic year begins in September; the 2026/27 application window is closed and no future-cycle deadline is represented as current in this bundle.",
+      "status": "verified",
+      "sourceLabel": "Semmelweis University 2026/27 admission rules",
+      "sourceUrl": "https://semmelweis.hu/registrar/information/rules/admission-rules/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2026-09-18"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "semmelweis-university",
+      "programmeSlug": "semmelweis-university-general-medicine",
+      "publicField": "academics",
+      "claimText": "General Medicine uses theoretical study in years 1–2, pre-clinical study in year 3, clinical small-group block rotations in years 4–5, and a final internship with bedside work at university clinics or accredited teaching hospitals.",
+      "status": "verified",
+      "sourceLabel": "Semmelweis University General Medicine programme and Faculty of Medicine",
+      "sourceUrl": "https://semmelweis.hu/english/faculties/medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-01-20"
+    },
+    {
+      "entity": "programme",
+      "universitySlug": "semmelweis-university",
+      "programmeSlug": "semmelweis-university-general-medicine",
+      "publicField": "professional pathway",
+      "claimText": "The university describes specialist training and doctoral study as post-degree pathways, including clinical, research, public-health and health-administration contexts; it does not establish destination-specific medical registration or employment rights.",
+      "status": "verified",
+      "sourceLabel": "Semmelweis University General Medicine programme",
+      "sourceUrl": "https://semmelweis.hu/admission/programs/medicine/",
+      "sourceGrade": "A",
+      "checkedAt": "2026-07-20",
+      "reviewBy": "2027-01-20"
+    }
+  ]
+}

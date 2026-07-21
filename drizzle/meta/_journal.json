@@ -379,6 +379,13 @@
       "when": 1784505600000,
       "tag": "0068_catalogue_intake_and_language_facets",
       "breakpoints": true
+    },
+    {
+      "idx": 68,
+      "version": "7",
+      "when": 1784572200000,
+      "tag": "0069_catalog_content_framework",
+      "breakpoints": true
     }
   ]
 }

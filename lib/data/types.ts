@@ -77,6 +77,8 @@ export type ResearchSource = {
   notes?: string;
 };
 
+export type FeeStatus = "confirmed" | "indicative" | "on_request";
+
 export type Faq = {
   question: string;
   answer: string;
@@ -208,6 +210,11 @@ export type ProgramOffering = {
   officialFeeCurrency?: string;
   officialAnnualTuitionAmount?: number;
   officialTotalTuitionAmount?: number;
+  /** Explicit for framework-published content; legacy records are classified during backfill. */
+  feeStatus?: FeeStatus;
+  feeAcademicYear?: string;
+  indicativeAnnualTuitionMinUsd?: number;
+  indicativeAnnualTuitionMaxUsd?: number;
   officialProgramUrl: string;
   audienceEligibility?: {
     availability: "global" | "restricted" | "local-only";

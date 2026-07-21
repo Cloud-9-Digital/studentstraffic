@@ -1,5 +1,6 @@
-import { CircleDollarSign, ExternalLink, Info } from "lucide-react";
+import { CircleDollarSign, Info } from "lucide-react";
 
+import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import type { Country, FinderProgram, University } from "@/lib/data/types";
 import {
   formatProgramAnnualFee,
@@ -35,23 +36,21 @@ export function UniversityFeesDetailSection({
 
       <div className="space-y-3">
         <h2 className="font-display text-2xl font-semibold text-heading">
-          {universityName} {course} fee structure 2026
+          {universityName} {course} fee structure
         </h2>
         <p className="max-w-2xl text-base leading-8 text-muted-foreground">
-          Complete year-wise fee breakdown for {course} at {universityName} in{" "}
-          {university?.city ?? "the city"}, {countryName}. Includes annual
-          tuition, hostel and food costs, and the total program cost across all
-          years — all converted to USD for easy comparison with other
-          universities.
+          Tuition and living-cost information for {course} at {universityName}
+          in {university?.city ?? "the city"}, {countryName}. The treatment
+          below reflects the evidence available for each programme.
         </p>
       </div>
 
       <div className="rounded-2xl border border-amber-200 bg-amber-50/60 px-5 py-4">
         <p className="flex items-start gap-2.5 text-sm leading-6 text-amber-800">
           <Info className="mt-0.5 size-4 shrink-0 text-amber-600" />
-          All fees shown in USD for comparison. Official fees are charged in the
-          local currency of the university&apos;s country. Exchange rates vary —
-          verify with the university before making payments.
+          Confirmed fees retain the university&apos;s published currency. Where a
+          current programme fee is not public, request a tailored cost and
+          funding plan instead of relying on a placeholder amount.
         </p>
       </div>
 
@@ -59,7 +58,6 @@ export function UniversityFeesDetailSection({
         <ProgramFeeCard
           key={program.offering.slug}
           program={program}
-          universityName={universityName}
         />
       ))}
 
@@ -75,10 +73,8 @@ export function UniversityFeesDetailSection({
 
 function ProgramFeeCard({
   program,
-  universityName,
 }: {
   program: FinderProgram;
-  universityName: string;
 }) {
   const { offering } = program;
   const hasYearlyData = offering.yearlyCostBreakdown.some(
@@ -107,29 +103,18 @@ function ProgramFeeCard({
               {offering.intakeMonths.join(", ")} intake
             </p>
           </div>
-          {offering.officialProgramUrl && (
-            <a
-              href={offering.officialProgramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex shrink-0 items-center gap-1.5 rounded-xl border border-border px-3 py-1.5 text-xs font-medium text-muted-foreground transition hover:border-primary/30 hover:text-primary"
-            >
-              Official page
-              <ExternalLink className="size-3" />
-            </a>
-          )}
         </div>
       </div>
 
       {/* Summary cost cards */}
-      {(hasAnnualFee || hasLivingFee || totalCostUsd) && (
+      {(hasAnnualFee || hasLivingFee || totalCostUsd || offering.feeStatus) && (
         <div className="grid grid-cols-1 gap-px border-b border-border bg-border sm:grid-cols-3">
           <div className="bg-card px-5 py-4">
             <p className="text-[0.6rem] font-bold uppercase tracking-[0.14em] text-muted-foreground">
               Annual tuition
             </p>
             <p className="mt-1.5 text-xl font-bold text-foreground">
-              {hasAnnualFee ? formatProgramAnnualFee(offering) : "—"}
+              {formatProgramAnnualFee(offering)}
             </p>
             {offering.officialFeeCurrency &&
               offering.officialAnnualTuitionAmount ? (
@@ -163,6 +148,24 @@ function ProgramFeeCard({
           </div>
         </div>
       )}
+
+      {offering.feeStatus === "on_request" ? (
+        <div className="border-t border-border/60 bg-primary/[0.035] px-6 py-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <p className="max-w-xl text-sm leading-6 text-muted-foreground">
+              Tell us your intended intake and accommodation preference to receive a current tuition and full-cost plan.
+            </p>
+            <CounsellingDialog
+              triggerContent="Get my cost plan"
+              triggerVariant="default"
+              triggerSize="sm"
+              countrySlug={program.country.slug}
+              courseSlug={program.course.slug}
+              ctaVariant="programme_fee_plan"
+            />
+          </div>
+        </div>
+      ) : null}
 
       {/* Year-wise breakdown */}
       {hasYearlyData ? (

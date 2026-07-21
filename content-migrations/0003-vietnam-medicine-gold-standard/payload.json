@@ -1,0 +1,386 @@
+{
+  "countries": [],
+  "courses": [
+    {
+      "slug": "mbbs",
+      "name": "MBBS",
+      "shortName": "MBBS",
+      "stream": "medicine",
+      "level": "bachelors",
+      "discipline": "general-medicine",
+      "aliases": ["Bachelor of Medicine and Bachelor of Surgery", "Doctor of Medicine", "General Medicine", "Medical Doctor"],
+      "displayOrder": 0,
+      "durationYears": 6,
+      "summary": "MBBS is the Students Traffic catalogue category for undergraduate-entry medical degrees. In Vietnam, the universities in this package award a six-year Doctor of Medicine or General Medicine qualification and publish a distinct route for international applicants.",
+      "metaTitle": "MBBS and Doctor of Medicine Programs in Vietnam",
+      "metaDescription": "Compare international Doctor of Medicine programs in Vietnam by current tuition, entry requirements, teaching language and clinical training structure."
+    }
+  ],
+  "universities": [
+    {
+      "countrySlug": "vietnam",
+      "slug": "dai-nam-university-faculty-of-medicine",
+      "name": "Dai Nam University",
+      "city": "Hanoi",
+      "type": "Private",
+      "establishedYear": 2007,
+      "officialWebsite": "https://med.dainam.edu.vn/en",
+      "mediaAttribution": {},
+      "summary": "Dai Nam University in Hanoi runs a six-year, full-time Medical Doctor programme for international students. The programme is delivered in English and publishes annual tuition of USD 5,000 for its international medical cohort.",
+      "campusLifestyle": "Medicine teaching is based at Dai Nam University in Hanoi, with classroom, laboratory and clinical stages presented as one continuous six-year programme for the international cohort.",
+      "cityProfile": "Hanoi is Vietnam's capital and the location of the programme. The practical advantage for a medical applicant is access to a large hospital network and an international airport; accommodation, local transport and personal spending remain separate planning lines from the published university tuition.",
+      "practicalExposure": "The international programme describes two initial years of medical-science teaching followed by four years with clinical internships. Dai Nam reports clinical-training links with 11 hospitals and places the programme within its health-sciences group. The public programme material does not name a guaranteed rotation allocation for each applicant, so the profile records the documented phase structure without assigning a specific hospital or specialty timetable.",
+      "hostelOverview": "The international programme advertises student accommodation and Indian food support. A room type, annual hostel charge and meal-plan price are not included because the current public programme page does not publish a complete academic-year package.",
+      "dietarySupport": "Indian food is presented as part of the international-student accommodation proposition. The available programme material does not publish a menu, meal frequency or separately itemised food charge.",
+      "safetyOverview": "The current evidence packet establishes the Hanoi campus and hospital-linked training model, but it does not publish a medicine-specific security service or a measurable safety outcome.",
+      "studentSupport": "The international medical programme has a dedicated contact route and teaching team drawn from Vietnam and India. Eligibility, document readiness, tuition and accommodation can therefore be handled as separate admission-planning decisions.",
+      "whyChoose": [
+        "Six-year international Medical Doctor programme taught in English.",
+        "Published annual tuition of USD 5,000 for the international medical programme.",
+        "Two-year academic foundation followed by a four-year clinical-internship phase.",
+        "Dedicated international medical programme contact and an operating Indian cohort."
+      ],
+      "thingsToConsider": [
+        "The public international page does not publish a fixed six-year tuition guarantee.",
+        "Hostel, meals, visa, insurance, travel and partner services are not included in the USD 5,000 tuition figure.",
+        "A hospital-by-hospital rotation schedule is not promised in the public programme material.",
+        "The final admission decision depends on the university's review of the applicant's foreign school record."
+      ],
+      "bestFitFor": [
+        "Applicants seeking an English-taught medical programme in Hanoi.",
+        "Applicants who want a defined transition from academic study to clinical internships.",
+        "Applicants prepared to submit a foreign high-school record for an individual admission assessment."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": [
+        "CEA-VNU Hanoi — institutional accreditation, cycle 2 (2025)",
+        "World Directory of Medical Schools — FAIMER School ID F0006909"
+      ],
+      "recognitionLinks": [
+        {"label": "Dai Nam institutional accreditation cycle 2", "url": "https://dainam.edu.vn/en/news/dai-nam-university-received-the-certificate-of-institutional-accreditation-for-cycle-2-a-commitment-to-quality-and-proven-credibility"},
+        {"label": "World Directory medical-school record", "url": "https://search.wdoms.org/home/SchoolDetail/F0006909"}
+      ],
+      "faq": [
+        {"question": "What medical degree does Dai Nam University offer international students?", "answer": "Dai Nam University presents a full-time, six-year Medical Doctor programme for international students. It is an undergraduate-entry medicine route and the international programme is taught in English."},
+        {"question": "What is the Dai Nam University Medicine tuition fee?", "answer": "The international programme publishes tuition of USD 5,000 per year. The page does not state that this amount is fixed for all six years, so a calculated six-year figure is not presented as a guaranteed course price."},
+        {"question": "How is the six-year programme structured?", "answer": "The university describes two years of theoretical study on campus followed by four years of clinical internships. Its international portal also publishes the programme curriculum by year and includes medical sciences, clinical subjects and Vietnamese-language modules."},
+        {"question": "Is the Dai Nam medical programme taught in English?", "answer": "Yes. Dai Nam's international medical portal describes the programme as 100% English-medium, with professors and doctors from Vietnam and India contributing to teaching."},
+        {"question": "What admission record is assessed for an international applicant?", "answer": "The route is for applicants with completed secondary education. The university assesses the foreign high-school qualification and academic record before issuing an admission decision; the international page does not publish one universal country-by-country score conversion."},
+        {"question": "Does the tuition include accommodation and other admission costs?", "answer": "No. USD 5,000 is presented as tuition. Accommodation, meals, visa, insurance, travel and any separately contracted partner service are distinct costs and are not represented as university tuition on this profile."},
+        {"question": "What institutional quality information is recorded for Dai Nam University?", "answer": "Dai Nam University received cycle-two institutional accreditation in 2025 from the Centre for Education Quality Accreditation at Vietnam National University Hanoi. The medical school also has FAIMER School ID F0006909 in the World Directory of Medical Schools."}
+      ],
+      "researchSources": [
+        {"label": "Dai Nam international medical programme", "url": "https://med.dainam.edu.vn/en", "kind": "official-program", "checkedAt": "2026-07-20"},
+        {"label": "Dai Nam international Medical Doctor launch", "url": "https://med.dainam.edu.vn/", "kind": "official-university", "checkedAt": "2026-07-20", "notes": "Programme delivery, cohort, phase structure and annual tuition."},
+        {"label": "Dai Nam institutional accreditation cycle 2", "url": "https://dainam.edu.vn/en/news/dai-nam-university-received-the-certificate-of-institutional-accreditation-for-cycle-2-a-commitment-to-quality-and-proven-credibility", "kind": "recognition", "checkedAt": "2026-07-20"},
+        {"label": "World Directory Dai Nam record", "url": "https://search.wdoms.org/home/SchoolDetail/F0006909", "kind": "recognition", "checkedAt": "2026-07-20"}
+      ],
+      "admissionsContent": {"contentState": "research_ready", "sectionStates": {"fees": "research_ready", "eligibility": "research_ready", "admissions": "research_ready", "academics": "research_ready", "recognition": "research_ready", "studentLiving": "research_ready"}, "ctas": [{"trigger": "eligibility", "label": "Check my Dai Nam Medicine eligibility", "capture": ["nationality", "school qualification", "science subjects", "English level", "intended intake"]}, {"trigger": "fees", "label": "Build my Vietnam cost plan", "capture": ["intended intake", "budget", "accommodation preference", "funding need"]}, {"trigger": "application", "label": "Start my admission file review", "capture": ["contact details", "passport status", "school documents", "intended intake"]}]},
+      "programmes": [
+        {
+          "slug": "dai-nam-university-faculty-of-medicine-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medical Doctor",
+          "durationYears": 6,
+          "fee": {"status": "confirmed", "academicYear": "Current international programme", "officialFeeCurrency": "USD", "officialAnnualTuitionAmount": 5000, "annualTuitionUsd": 5000, "verifiedAt": "2026-07-20", "notes": "Published annual tuition for the English-medium international programme; accommodation and other non-tuition charges are excluded and no fixed six-year total is asserted."},
+          "officialProgramUrl": "https://med.dainam.edu.vn/en",
+          "audienceEligibility": {"availability": "restricted", "eligibleAudiences": ["International applicants with completed secondary education"], "restrictions": ["Admission is subject to university review of the foreign high-school qualification and academic record."], "notes": "No universal country-specific score conversion is asserted.", "verifiedAt": "2026-07-20", "sourceUrl": "https://med.dainam.edu.vn/en"},
+          "admissionsContent": {
+            "overview": "The international route uses an individual university review of the completed secondary-school record before an admission decision. The current international portal provides the programme contact route but not a single global deadline table.",
+            "eligibility": {"intro": "Applicants need completed secondary education and an academic record suitable for undergraduate medical study.", "items": ["Completed high-school or equivalent qualification", "Foreign academic transcript for university assessment", "Readiness for an English-medium medical curriculum", "Passport and identity record matching the application"]},
+            "applicationSteps": ["Submit contact and intended-intake details through the international Medicine route.", "Provide the high-school certificate and full academic transcript for assessment.", "Complete the university's applicant review and any requested admission interaction.", "Accept the admission decision and complete the university's enrolment document process."],
+            "documentsRequired": {"academic": ["High-school completion certificate", "High-school academic transcript"], "application": ["Passport copy", "University application information", "English-language evidence requested for the applicant's route", "Medical fitness record requested for enrolment"]},
+            "deadlinesNote": "The international programme page does not publish a current universal closing date; the intended intake must be recorded before the admission file is opened."
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-20",
+          "feeNotes": "Confirmed annual tuition for the current international programme; no fixed six-year total or non-tuition package is asserted.",
+          "teachingPhases": [
+            {"phase": "Years 1–2: academic foundation", "language": "English", "details": "Foundational medical sciences and the early curriculum are taught on campus."},
+            {"phase": "Years 3–6: clinical internship phase", "language": "English with Vietnamese clinical-language study", "details": "The university describes four years of clinical internships and includes Vietnamese-language modules in the published curriculum."}
+          ]
+        }
+      ]
+    },
+    {
+      "countrySlug": "vietnam",
+      "slug": "dong-a-university-college-of-medicine",
+      "name": "Dong A University",
+      "city": "Da Nang",
+      "type": "Private",
+      "establishedYear": 2002,
+      "officialWebsite": "https://y.donga.edu.vn/en/",
+      "mediaAttribution": {},
+      "summary": "Dong A University in Da Nang offers a six-year International Doctor of Medicine programme delivered entirely in English. Its 2026 admission notice publishes precise academic, English, document, deadline and fixed tuition terms.",
+      "campusLifestyle": "The Faculty of Medicine publishes a dedicated international route, a defined laboratory inventory and an International Medical Education Center supporting the English Doctor of Medicine cohort.",
+      "cityProfile": "Da Nang is a central Vietnamese coastal city with an international airport and a regional hospital network. For programme planning, the relevant distinction is between the fixed university tuition and separate accommodation, food, transport, visa, insurance and personal costs.",
+      "practicalExposure": "The Faculty of Medicine lists anatomy, pathology, pharmacology, physiology, microbiology, histology, biochemistry and preclinical simulation facilities. It also names clinical partners including Hue Central Hospital, Da Nang Hospital, Da Nang Hospital for Women and Children, C Hospital Da Nang and Hospital 199. A 2026 faculty update documents international medical students beginning clinical practice at Hue Central Hospital from the third year.",
+      "hostelOverview": "The 2026 international Doctor of Medicine admission notice fixes tuition but does not publish a university hostel tariff. Accommodation therefore remains a separate cost-planning item rather than part of the USD 27,000 tuition total.",
+      "dietarySupport": "The current admission notice does not include a priced meal plan. Food preference and monthly spending should be captured separately from tuition during counselling.",
+      "safetyOverview": "The faculty publishes its Da Nang campus contact and clinical partner network. It does not publish a medicine-specific incident rate or guaranteed personal-safety outcome.",
+      "studentSupport": "The International Medical Education Center and Faculty of Medicine provide dedicated programme contacts. The published process also defines document legalization, arrival and original-document submission duties for international students.",
+      "whyChoose": [
+        "Entirely English six-year Doctor of Medicine programme for international students.",
+        "2026 entry, English, document and interview rules are published in one admission notice.",
+        "Net tuition is fixed at USD 4,500 per year after the published scholarship.",
+        "Named laboratories, preclinical simulation and documented third-year clinical practice."
+      ],
+      "thingsToConsider": [
+        "Applicants need at least 65% of the maximum score in the accepted school or national examination.",
+        "The application includes an interview and may include an English assessment.",
+        "Foreign documents require authentication, consular legalization where applicable and certified Vietnamese translations.",
+        "Accommodation, food, travel, visa, insurance and partner services are outside the fixed tuition total."
+      ],
+      "bestFitFor": [
+        "International applicants with the accepted science-subject combinations and at least 65% performance.",
+        "Applicants seeking a fully English medical programme with published IELTS or MOI routes.",
+        "Applicants who want a fixed six-year tuition figure and semester payment schedule."
+      ],
+      "industryPartners": ["Hue Central Hospital", "Da Nang Hospital", "Da Nang Hospital for Women and Children", "C Hospital Da Nang", "Hospital 199"],
+      "recognitionBadges": ["World Directory of Medical Schools — FAIMER School ID F0009459", "Vietnam programme code 7720101 — General Medicine"],
+      "recognitionLinks": [
+        {"label": "World Directory Dong A record", "url": "https://search.wdoms.org/home/SchoolDetail/F0009459"},
+        {"label": "Dong A 2026 international Medicine admission notice", "url": "https://y.donga.edu.vn/en/news-events/detail/admission-announcement-on-international-doctor-of-medicine--md--program-for-international-students-in-2026-44203"}
+      ],
+      "faq": [
+        {"question": "What is the international medical programme at Dong A University?", "answer": "It is a six-year undergraduate General Medicine programme delivered entirely in English and leading to the Doctor of Medicine degree. The programme code in the 2026 admission notice is 7720101."},
+        {"question": "What is the 2026 Dong A Medicine tuition fee?", "answer": "Gross tuition is USD 5,000 per year. The university publishes scholarship support of USD 500 per year, producing net tuition of USD 4,500 per year, USD 2,250 per semester and USD 27,000 across the fixed six-year programme."},
+        {"question": "What academic score is required for Dong A Medicine?", "answer": "The 2026 notice requires at least 65% of the maximum possible score in the applicant's high-school graduation, national or equivalent examination, together with an accepted science-subject combination."},
+        {"question": "Which school subjects are accepted for admission?", "answer": "Accepted combinations are Mathematics-Chemistry-Biology, Mathematics-Physics-Chemistry, or Physics-Chemistry-Biology. Where Biology is absent, Botany and Zoology grades may be considered equivalent."},
+        {"question": "What English evidence does Dong A University accept?", "answer": "The university accepts English-medium instruction evidence, a transcript showing English as the teaching language, or a certificate equivalent to IELTS 5.5 or Vietnamese framework B2. Other applicants complete an English assessment during admission."},
+        {"question": "When is the Dong A international Medicine application deadline?", "answer": "The 2026 admission announcement states that applications are accepted from the announcement date until 30 December each year. Legal and administrative enrolment requirements must be completed before 31 December of the relevant academic year."},
+        {"question": "What clinical facilities are documented for the programme?", "answer": "The faculty lists preclinical laboratories and a simulation centre, plus hospital relationships across central Vietnam. A 2026 update documents international students starting clinical practice at Hue Central Hospital from the third year."},
+        {"question": "Does the USD 27,000 total include living and admission-service costs?", "answer": "No. USD 27,000 is the net six-year tuition after the published scholarship. Accommodation, meals, travel, visa, insurance and any separately contracted service package are not included in that total."}
+      ],
+      "researchSources": [
+        {"label": "Dong A 2026 international Medicine admission notice", "url": "https://y.donga.edu.vn/en/news-events/detail/admission-announcement-on-international-doctor-of-medicine--md--program-for-international-students-in-2026-44203", "kind": "official-program", "checkedAt": "2026-07-20"},
+        {"label": "Dong A Faculty of Medicine", "url": "https://y.donga.edu.vn/en/", "kind": "official-university", "checkedAt": "2026-07-20"},
+        {"label": "Dong A international clinical practice update", "url": "https://y.donga.edu.vn/en/news-events", "kind": "official-university", "checkedAt": "2026-07-20"},
+        {"label": "World Directory Dong A record", "url": "https://search.wdoms.org/home/SchoolDetail/F0009459", "kind": "recognition", "checkedAt": "2026-07-20"}
+      ],
+      "admissionsContent": {"contentState": "research_ready", "sectionStates": {"fees": "research_ready", "eligibility": "research_ready", "admissions": "research_ready", "academics": "research_ready", "recognition": "research_ready", "studentLiving": "research_ready"}, "ctas": [{"trigger": "eligibility", "label": "Check my Dong A Medicine eligibility", "capture": ["qualification", "science subjects", "marks", "English evidence", "intended intake"]}, {"trigger": "fees", "label": "Get my six-year cost plan", "capture": ["intended intake", "budget", "accommodation preference", "funding need"]}, {"trigger": "application", "label": "Start document and legalization review", "capture": ["contact details", "passport", "school documents", "English evidence"]}]},
+      "programmes": [
+        {
+          "slug": "dong-a-university-college-of-medicine-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "International Doctor of Medicine",
+          "durationYears": 6,
+          "fee": {"status": "confirmed", "academicYear": "2026 international intake", "officialFeeCurrency": "USD", "officialAnnualTuitionAmount": 4500, "officialTotalTuitionAmount": 27000, "annualTuitionUsd": 4500, "totalTuitionUsd": 27000, "verifiedAt": "2026-07-20", "notes": "Net tuition after the published USD 500 annual scholarship; gross tuition is USD 5,000 per year and the net amount is fixed for six years at USD 2,250 per semester."},
+          "officialProgramUrl": "https://y.donga.edu.vn/en/news-events/detail/admission-announcement-on-international-doctor-of-medicine--md--program-for-international-students-in-2026-44203",
+          "audienceEligibility": {"availability": "restricted", "eligibleAudiences": ["International high-school graduates meeting the published academic and English thresholds"], "restrictions": ["At least 65% of the maximum examination score is required.", "An accepted science-subject combination and university interview are required."], "verifiedAt": "2026-07-20", "sourceUrl": "https://y.donga.edu.vn/en/news-events/detail/admission-announcement-on-international-doctor-of-medicine--md--program-for-international-students-in-2026-44203"},
+          "admissionsContent": {
+            "overview": "Dong A assesses the recognized secondary-school result and a university interview. The same 2026 notice defines science subjects, English evidence, legalized documents, arrival duties, deadline and tuition.",
+            "eligibility": {"intro": "Applicants need a recognized foreign secondary qualification, the published science preparation, at least 65% performance and qualifying English evidence or assessment.", "items": ["Recognized foreign high-school or equivalent qualification", "At least 65% of the maximum school or national examination score", "One accepted Mathematics, Physics, Chemistry and Biology combination", "MOI evidence, English-medium transcript, IELTS 5.5 or B2 equivalent, or university English assessment", "Admission interview conducted by Dong A University"]},
+            "applicationSteps": ["Prepare the high-school completion record, score report and science-subject transcript.", "Prepare passport, English evidence and the prescribed medical certificate.", "Submit scanned legalized documents through the international admission route.", "Attend the university admission interview and English assessment where required.", "After arrival, submit original documents within 30 days and complete enrolment formalities."],
+            "documentsRequired": {"academic": ["High-school examination certificate or equivalent completion certificate", "High-school transcript or national examination score report", "Certified Vietnamese translations where required"], "application": ["Dong A application form", "Valid passport copy", "English certificate or English-medium evidence", "Medical certificate for international study in Vietnam", "Consular legalization for foreign documents where applicable"]},
+            "deadlinesNote": "The notice accepts applications until 30 December each year and requires the relevant legal and administrative enrolment work to be completed before 31 December.",
+            "visaConsiderations": ["Legalized education and language records must be completed before entry where Vietnamese rules require legalization.", "Original enrolment documents are due within 30 days of arrival."]
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-20",
+          "feeNotes": "Confirmed 2026 net tuition after the published annual scholarship; the net amount is fixed for the six-year programme.",
+          "teachingPhases": [
+            {"phase": "Foundational and preclinical study", "language": "English", "details": "Medical sciences use the faculty's anatomy, physiology, pathology, pharmacology and related laboratories plus preclinical simulation."},
+            {"phase": "Clinical study from year 3", "language": "English with Vietnamese clinical communication", "details": "The university documents third-year clinical practice at Hue Central Hospital and lists additional central-Vietnam hospital partners."}
+          ]
+        }
+      ]
+    },
+    {
+      "countrySlug": "vietnam",
+      "slug": "buon-ma-thuot-medical-university",
+      "name": "Buon Ma Thuot Medical University",
+      "city": "Buon Ma Thuot",
+      "type": "Private",
+      "establishedYear": 2014,
+      "officialWebsite": "https://bmu.edu.vn/",
+      "mediaAttribution": {},
+      "summary": "Buon Ma Thuot Medical University offers a 2026 English-taught Medicine intake for foreign high-school graduates. The six-year Doctor of Medicine route publishes 120 international places, defined entry requirements and annual tuition of USD 5,500.",
+      "campusLifestyle": "The medical university and its university hospital operate in Buon Ma Thuot. The 2026 international intake is presented as a distinct English-taught route for foreign secondary-school graduates.",
+      "cityProfile": "Buon Ma Thuot is the administrative centre of Dak Lak in Vietnam's Central Highlands. Applicants should budget separately for accommodation, meals, local transport, insurance and travel because the international admission notice publishes tuition but not an all-inclusive living package.",
+      "practicalExposure": "Buon Ma Thuot University Hospital is documented as meeting the requirements of a clinical-practice facility for health-sciences training under Dak Lak Department of Health notice 056/TB-SYT dated 24 February 2026. The World Directory record describes clinical training as 50–74% of the curriculum. A named rotation guarantee for each international student is not included in the admission notice.",
+      "hostelOverview": "The 2026 international admission notice does not publish a room tariff or guarantee a hostel place. Accommodation is therefore handled as a separate selection and cost item after programme eligibility is established.",
+      "dietarySupport": "The university's current international admission notice does not publish a priced meal plan or dietary-service specification, so food cost is not bundled into the tuition figure.",
+      "safetyOverview": "The evidence records the university campus, university hospital and health requirements for enrolment. It does not establish a medicine-specific incident rate or guaranteed safety outcome.",
+      "studentSupport": "The university publishes a dedicated admissions office and contact route for international applicants. The application can be initiated by scanned documents before the university completes academic, English and health review.",
+      "whyChoose": [
+        "2026 English-taught Medicine intake specifically open to foreign high-school graduates.",
+        "Published academic threshold, IELTS route, application window and annual tuition.",
+        "University hospital approved as a clinical-practice facility for health-sciences training.",
+        "World Directory sponsor note records ECFMG application eligibility for stated graduation years, subject to ECFMG requirements."
+      ],
+      "thingsToConsider": [
+        "The international route requires a converted overall result of at least 6.5 on a 10-point scale.",
+        "Applicants without an English-medium exemption need recognized English at IELTS 6.0 equivalent or above.",
+        "The international application window closes on 30 September 2026 for the October intake.",
+        "The USD 5,500 annual tuition does not include an evidenced hostel, meal, visa, insurance or service package."
+      ],
+      "bestFitFor": [
+        "Foreign high-school graduates meeting the 6.5 academic threshold.",
+        "Applicants with English-medium education or IELTS 6.0-equivalent proficiency.",
+        "Applicants seeking a medical-university setting with an associated teaching hospital."
+      ],
+      "industryPartners": ["Buon Ma Thuot University Hospital"],
+      "recognitionBadges": ["World Directory of Medical Schools — FAIMER School ID F0008518", "ECFMG sponsor note — graduation years 2021 to current, subject to requirements"],
+      "recognitionLinks": [
+        {"label": "World Directory Buon Ma Thuot record", "url": "https://search.wdoms.org/home/SchoolDetail/F0008518"},
+        {"label": "Dak Lak clinical-practice facility notice", "url": "https://bmu.edu.vn/benh-vien-dai-hoc-y-duoc-buon-ma-thuot-buh-dap-ung-yeu-cau-la-co-so-thuc-hanh-trong-dao-tao-khoi-nganh-suc-khoe"}
+      ],
+      "faq": [
+        {"question": "Who can apply for the 2026 English Medicine programme?", "answer": "The route is for foreign applicants who completed high school outside Vietnam. The university requires an equivalent secondary qualification, an overall or graduation result of at least 6.5 on a 10-point scale, a suitable personal record and the university's health conditions."},
+        {"question": "What is the Buon Ma Thuot international Medicine tuition?", "answer": "The university's 2026 international admission notice publishes tuition of USD 5,500 per year. It does not publish a fixed six-year total, so the annual amount is presented without treating future annual rates as guaranteed."},
+        {"question": "What English level is required?", "answer": "Applicants educated in an eligible English-medium programme may receive an exemption. Other applicants need a recognized English certificate equivalent to IELTS 6.0 or above."},
+        {"question": "What are the 2026 application and enrolment dates?", "answer": "Applications are accepted from 30 March to 30 September 2026. The admission review and enrolment are scheduled for October 2026."},
+        {"question": "How many international Medicine places are published?", "answer": "The 2026 English-programme notice publishes 120 places for Medicine, leading to the general medical doctor qualification."},
+        {"question": "What documents are required for the international application?", "answer": "The notice asks for the foreign-student application form, identity document, education certificate and academic results, plus recognized English evidence for applicants who are not exempt. Scanned records are submitted by email for the application stage."},
+        {"question": "What clinical-training facility is connected to the university?", "answer": "Buon Ma Thuot University Hospital was documented in February 2026 as meeting the requirements of a clinical-practice facility for health-sciences education. This establishes a training facility, not an individual rotation guarantee."},
+        {"question": "What does the World Directory sponsor note mean?", "answer": "The World Directory record assigns FAIMER School ID F0008518 and includes an ECFMG sponsor note for listed graduation years. Any ECFMG application remains subject to the eligibility and procedural requirements in force for the individual applicant."}
+      ],
+      "researchSources": [
+        {"label": "Buon Ma Thuot 2026 international English Medicine admission", "url": "https://bmu.edu.vn/tuyen-sinh-dai-hoc-he-chinh-quy-chuong-trinh-dao-tao-su-dung-tieng-anh-danh-cho-luu-hoc-sinh-tot-nghiep-thpt-nuoc-ngoai-nam-2026", "kind": "official-program", "checkedAt": "2026-07-20"},
+        {"label": "Buon Ma Thuot University Hospital clinical-practice notice", "url": "https://bmu.edu.vn/benh-vien-dai-hoc-y-duoc-buon-ma-thuot-buh-dap-ung-yeu-cau-la-co-so-thuc-hanh-trong-dao-tao-khoi-nganh-suc-khoe", "kind": "government", "checkedAt": "2026-07-20"},
+        {"label": "Buon Ma Thuot Medical University", "url": "https://bmu.edu.vn/", "kind": "official-university", "checkedAt": "2026-07-20"},
+        {"label": "World Directory Buon Ma Thuot record", "url": "https://search.wdoms.org/home/SchoolDetail/F0008518", "kind": "recognition", "checkedAt": "2026-07-20"}
+      ],
+      "admissionsContent": {"contentState": "research_ready", "sectionStates": {"fees": "research_ready", "eligibility": "research_ready", "admissions": "research_ready", "academics": "research_ready", "recognition": "research_ready", "studentLiving": "research_ready"}, "ctas": [{"trigger": "eligibility", "label": "Check my BMU Medicine eligibility", "capture": ["nationality", "school result", "English route", "health-document status", "intended intake"]}, {"trigger": "fees", "label": "Build my 2026 cost plan", "capture": ["budget", "accommodation preference", "funding need"]}, {"trigger": "application", "label": "Start my October intake file", "capture": ["contact details", "passport", "school documents", "English certificate"]}]},
+      "programmes": [
+        {
+          "slug": "buon-ma-thuot-medical-university-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medicine (General Medical Doctor)",
+          "durationYears": 6,
+          "fee": {"status": "confirmed", "academicYear": "2026 international intake", "officialFeeCurrency": "USD", "officialAnnualTuitionAmount": 5500, "annualTuitionUsd": 5500, "verifiedAt": "2026-07-20", "notes": "Annual tuition in the 2026 English-programme international admission notice; no fixed six-year total or non-tuition package is asserted."},
+          "officialProgramUrl": "https://bmu.edu.vn/tuyen-sinh-dai-hoc-he-chinh-quy-chuong-trinh-dao-tao-su-dung-tieng-anh-danh-cho-luu-hoc-sinh-tot-nghiep-thpt-nuoc-ngoai-nam-2026",
+          "audienceEligibility": {"availability": "restricted", "eligibleAudiences": ["Foreign high-school graduates meeting the published academic, English and health conditions"], "restrictions": ["Overall or graduation result must convert to at least 6.5 on a 10-point scale.", "Applicants without an English-medium exemption need IELTS 6.0-equivalent English."], "verifiedAt": "2026-07-20", "sourceUrl": "https://bmu.edu.vn/tuyen-sinh-dai-hoc-he-chinh-quy-chuong-trinh-dao-tao-su-dung-tieng-anh-danh-cho-luu-hoc-sinh-tot-nghiep-thpt-nuoc-ngoai-nam-2026"},
+          "admissionsContent": {
+            "overview": "The 2026 route uses academic selection for foreign high-school graduates. Applicants email scanned records, and the university assesses the school result, English route, personal record and health condition for the October intake.",
+            "eligibility": {"intro": "Applicants need a foreign secondary qualification, at least 6.5/10 academic performance, the required English route and the university's health condition.", "items": ["Foreign high-school completion equivalent to Vietnamese secondary education", "Overall course or graduation result of at least 6.5 on a 10-point scale", "English-medium exemption or recognized English equivalent to IELTS 6.0 or above", "Clear personal record and compliance with the university's health condition"]},
+            "applicationSteps": ["Complete the university form for foreign applicants studying in Vietnam.", "Prepare identity, academic qualification and result records as scanned copies.", "Add recognized English evidence unless the published exemption applies.", "Submit the application by email before the stated closing date.", "Complete the university's selection and October enrolment process."],
+            "documentsRequired": {"academic": ["Foreign high-school completion certificate", "Academic transcript or graduation examination results"], "application": ["Foreign-student application form", "Identity document copy", "Recognized English certificate where exemption does not apply", "Health documentation requested by the university"]},
+            "deadlinesNote": "Applications run from 30 March to 30 September 2026, with selection and enrolment scheduled for October 2026."
+          },
+          "medium": "English",
+          "instructionLanguages": ["english"],
+          "intakeMonths": ["October"],
+          "intakeCodes": ["october"],
+          "feeVerifiedAt": "2026-07-20",
+          "feeNotes": "Confirmed annual tuition for the 2026 English-programme international intake; no fixed six-year total is asserted.",
+          "teachingPhases": [
+            {"phase": "Foundational and preclinical Medicine", "language": "English", "details": "The international route is a Medicine programme using English for instruction."},
+            {"phase": "Clinical Medicine", "language": "English with Vietnamese clinical communication", "details": "Clinical preparation is supported by the university hospital, which is documented as meeting health-sciences practice-facility requirements."}
+          ]
+        }
+      ]
+    },
+    {
+      "countrySlug": "vietnam",
+      "slug": "can-tho-university-medicine-pharmacy",
+      "name": "Can Tho University of Medicine and Pharmacy",
+      "city": "Can Tho",
+      "type": "Public",
+      "establishedYear": 1979,
+      "officialWebsite": "https://ctump.edu.vn/",
+      "mediaAttribution": {},
+      "summary": "Can Tho University of Medicine and Pharmacy is a public health-sciences university in Can Tho. Its six-year Medical Doctor programme is listed with English instruction, and the 2026–27 international English-programme tuition is VND 131,890,000 per year.",
+      "campusLifestyle": "The university is a specialist medicine-and-pharmacy institution serving the Mekong Delta. The Faculty of Medicine and international education pages provide the academic setting for the undergraduate Medical Doctor route.",
+      "cityProfile": "Can Tho is the principal urban and healthcare centre of Vietnam's Mekong Delta. The university tuition decision covers the academic charge; accommodation, meals, local transport, insurance, travel and personal spending require a separate budget rather than an inferred package total.",
+      "practicalExposure": "The World Directory record describes a six-year programme with clinical training occupying 50–74% of the curriculum and instruction available in Vietnamese and English. The university's international education site documents English-language undergraduate medical teaching activity. The current evidence packet does not assign a specific hospital rotation to every international applicant, so no hospital guarantee is made.",
+      "hostelOverview": "The current 2026–27 tuition decision does not establish an international hostel tariff or guaranteed room. Accommodation is therefore treated as a separate admission-planning item.",
+      "dietarySupport": "No priced international meal plan is included in the 2026–27 fee decision. Food preference and monthly spending should be recorded separately from tuition.",
+      "safetyOverview": "The evidence identifies the public university and its Can Tho teaching location. It does not publish a programme-specific incident rate or guarantee a personal-safety outcome.",
+      "studentSupport": "The international education unit provides the English-language programme contact route. The profile separates eligibility review, tuition, accommodation and professional-pathway planning so each decision uses the relevant evidence.",
+      "whyChoose": [
+        "Public specialist university focused on medicine and pharmacy in the Mekong Delta.",
+        "Current 2026–27 international English-programme tuition is published in an official fee decision.",
+        "Six-year Medical Doctor record lists both Vietnamese and English instruction.",
+        "World Directory sponsor note covers ECFMG applications for stated graduation years, subject to requirements."
+      ],
+      "thingsToConsider": [
+        "The 2026–27 annual fee is not a fixed six-year tuition promise.",
+        "The international education pages do not publish one universal eligibility table for every foreign school system.",
+        "Clinical communication may require Vietnamese even where academic instruction is available in English.",
+        "Hostel, food, visa, insurance, travel and service charges are outside the VND 131,890,000 tuition figure."
+      ],
+      "bestFitFor": [
+        "Applicants seeking a public medical university in southern Vietnam.",
+        "Applicants prepared for an individual foreign-qualification and document assessment.",
+        "Applicants who can plan English academic study alongside Vietnamese clinical communication."
+      ],
+      "industryPartners": [],
+      "recognitionBadges": ["World Directory of Medical Schools — FAIMER School ID F0001375", "ECFMG sponsor note — graduation years 1979 to current, subject to requirements"],
+      "recognitionLinks": [
+        {"label": "World Directory Can Tho record", "url": "https://search.wdoms.org/home/SchoolDetail/F0001375"},
+        {"label": "Can Tho 2026–27 official tuition decision", "url": "https://ctump.edu.vn/khoa/muc-thu-hoc-phi-nam-hoc-2026-2027.html"}
+      ],
+      "faq": [
+        {"question": "What is the Medicine programme at Can Tho University of Medicine and Pharmacy?", "answer": "The undergraduate Medical Doctor route is a six-year programme. The World Directory record lists Vietnamese and English as languages of instruction and foreign students as eligible for admission."},
+        {"question": "What is the 2026–27 international tuition fee?", "answer": "Decision 1519/QD-DHYDCT dated 6 April 2026 sets the international-student English-programme tuition at VND 131,890,000 for the 2026–27 academic year."},
+        {"question": "How is the tuition paid during the academic year?", "answer": "The 2026–27 decision uses three payment periods in the academic year, with deadlines on 30 November 2026, 30 March 2027 and 30 July 2027. The profile does not infer equal instalments where the decision does not state that split."},
+        {"question": "Is VND 131,890,000 fixed for the full six-year course?", "answer": "No full-course guarantee is stated in the 2026–27 decision. The amount is authoritative for that academic year, so future years remain separate fee decisions rather than a multiplied total."},
+        {"question": "Is the Medical Doctor programme taught in English?", "answer": "The World Directory record lists both Vietnamese and English instruction, while the international education site documents English-language undergraduate medical activity. Vietnamese clinical communication remains relevant during patient-facing study."},
+        {"question": "How is an international applicant assessed?", "answer": "The university admits foreign students to the programme, but the current public English pages do not provide one country-by-country score table. The foreign school qualification, transcript, identity record and language readiness require an individual university assessment."},
+        {"question": "What does the World Directory record establish?", "answer": "It identifies the school with FAIMER School ID F0001375, records the six-year programme and includes an ECFMG sponsor note for stated graduation years. It is not a substitute for an individual licensing or registration decision."},
+        {"question": "Which costs are outside the published tuition?", "answer": "Accommodation, meals, local transport, visa, insurance, travel and any separately contracted admission service are not included in the VND 131,890,000 annual tuition displayed on this profile."}
+      ],
+      "researchSources": [
+        {"label": "Can Tho 2026–27 tuition decision", "url": "https://ctump.edu.vn/khoa/muc-thu-hoc-phi-nam-hoc-2026-2027.html", "kind": "official-fee", "checkedAt": "2026-07-20", "notes": "Decision 1519/QD-DHYDCT, visually reviewed from the attached ten-page scan."},
+        {"label": "Can Tho Faculty of Medicine", "url": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html", "kind": "official-program", "checkedAt": "2026-07-20"},
+        {"label": "Can Tho international medical education", "url": "https://engtdhydct.ctump.edu.vn/an-initial-development-in-international-medical-education-department-of-orthopaedic-surgery-successfully-introduces-english-language-undergraduate-tex.html", "kind": "official-university", "checkedAt": "2026-07-20"},
+        {"label": "World Directory Can Tho record", "url": "https://search.wdoms.org/home/SchoolDetail/F0001375", "kind": "recognition", "checkedAt": "2026-07-20"}
+      ],
+      "admissionsContent": {"contentState": "research_ready", "sectionStates": {"fees": "research_ready", "eligibility": "research_ready", "admissions": "research_ready", "academics": "research_ready", "recognition": "research_ready", "studentLiving": "research_ready"}, "ctas": [{"trigger": "eligibility", "label": "Check my Can Tho Medicine eligibility", "capture": ["nationality", "school qualification", "science subjects", "language background", "intended intake"]}, {"trigger": "fees", "label": "Build my Can Tho cost plan", "capture": ["intended intake", "budget", "accommodation preference", "funding need"]}, {"trigger": "application", "label": "Start my foreign-document review", "capture": ["contact details", "passport", "school certificate", "transcript"]}]},
+      "programmes": [
+        {
+          "slug": "can-tho-university-medicine-pharmacy-mbbs",
+          "canonicalCourseSlug": "mbbs",
+          "officialTitle": "Medical Doctor",
+          "durationYears": 6,
+          "fee": {"status": "confirmed", "academicYear": "2026–27", "officialFeeCurrency": "VND", "officialAnnualTuitionAmount": 131890000, "verifiedAt": "2026-07-20", "notes": "Official 2026–27 international-student English-programme tuition from Decision 1519/QD-DHYDCT; the same decision lists VND 5,311,000 per credit for Medicine, Dentistry and Pharmacy and uses three annual payment periods."},
+          "officialProgramUrl": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html",
+          "audienceEligibility": {"availability": "restricted", "eligibleAudiences": ["International applicants whose secondary qualification and records are accepted by CTUMP"], "restrictions": ["The foreign qualification and academic record require individual university assessment.", "The current English pages do not publish one universal country-specific score threshold."], "notes": "Eligibility is recorded at the level supported by the current public international pages.", "verifiedAt": "2026-07-20", "sourceUrl": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html"},
+          "admissionsContent": {
+            "overview": "The international route begins with an individual assessment of the completed secondary qualification, academic transcript and identity record. The current public English pages establish the programme and international contact route but do not publish a universal deadline or score-conversion table.",
+            "eligibility": {"intro": "Applicants need completed secondary education suitable for undergraduate Medicine and an accepted foreign-document record.", "items": ["Completed high-school or equivalent qualification", "Academic transcript suitable for individual university assessment", "Passport and foreign-student identity record", "Readiness for English academic teaching and Vietnamese clinical communication"]},
+            "applicationSteps": ["Submit intended-intake and contact information for the international Medicine route.", "Provide the completed secondary certificate and full academic transcript.", "Provide passport and any language or health records requested for the route.", "Complete the university's foreign-qualification and document assessment.", "Follow the admission decision and enrolment instructions issued for the accepted intake."],
+            "documentsRequired": {"academic": ["High-school completion certificate", "Full high-school academic transcript"], "application": ["Passport copy", "International application information", "Language evidence requested for the assessed route", "Medical fitness and legalized records requested for enrolment"]},
+            "deadlinesNote": "A current universal international application closing date is not published on the English programme pages; the intended intake is required before the file can be scheduled."
+          },
+          "medium": "English with Vietnamese clinical communication",
+          "instructionLanguages": ["english", "vietnamese"],
+          "intakeMonths": ["September"],
+          "intakeCodes": ["september"],
+          "feeVerifiedAt": "2026-07-20",
+          "feeNotes": "Confirmed 2026–27 international English-programme tuition; the decision does not establish a fixed six-year total.",
+          "teachingPhases": [
+            {"phase": "Foundational and preclinical Medicine", "language": "English and Vietnamese", "details": "The six-year programme begins with academic medical sciences and preparation for clinical study."},
+            {"phase": "Clinical Medicine", "language": "English with Vietnamese clinical communication", "details": "The World Directory record describes clinical training as 50–74% of the curriculum; patient-facing learning requires local clinical-language preparation."}
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {"entity": "programme", "universitySlug": "dai-nam-university-faculty-of-medicine", "programmeSlug": "dai-nam-university-faculty-of-medicine-mbbs", "publicField": "fee", "claimText": "Dai Nam's international Medical Doctor programme publishes annual tuition of USD 5,000; the current page does not state a fixed six-year total.", "status": "verified", "sourceLabel": "Dai Nam international medical programme", "sourceUrl": "https://med.dainam.edu.vn/en", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "dai-nam-university-faculty-of-medicine", "programmeSlug": "dai-nam-university-faculty-of-medicine-mbbs", "publicField": "eligibility", "claimText": "The international route is for secondary-school graduates and uses an individual review of the foreign qualification and academic record.", "status": "verified", "sourceLabel": "Dai Nam international medical programme", "sourceUrl": "https://med.dainam.edu.vn/en", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "dai-nam-university-faculty-of-medicine", "programmeSlug": "dai-nam-university-faculty-of-medicine-mbbs", "publicField": "admissions", "claimText": "The international programme provides a dedicated Medicine contact route for applicant assessment and enrolment handling.", "status": "verified", "sourceLabel": "Dai Nam international medical programme", "sourceUrl": "https://med.dainam.edu.vn/en", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "dai-nam-university-faculty-of-medicine", "programmeSlug": "dai-nam-university-faculty-of-medicine-mbbs", "publicField": "intake", "claimText": "Dai Nam operates a full-time international Medical Doctor cohort; the current portal does not publish a universal closing date for a new intake.", "status": "verified", "sourceLabel": "Dai Nam international Medical Doctor launch", "sourceUrl": "https://med.dainam.edu.vn/", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "dong-a-university-college-of-medicine", "programmeSlug": "dong-a-university-college-of-medicine-mbbs", "publicField": "fee", "claimText": "For the 2026 international Doctor of Medicine intake, gross tuition is USD 5,000 per year, scholarship support is USD 500 per year, and fixed net tuition is USD 4,500 per year or USD 27,000 for six years.", "status": "verified", "sourceLabel": "Dong A 2026 international Medicine admission notice", "sourceUrl": "https://y.donga.edu.vn/en/news-events/detail/admission-announcement-on-international-doctor-of-medicine--md--program-for-international-students-in-2026-44203", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "dong-a-university-college-of-medicine", "programmeSlug": "dong-a-university-college-of-medicine-mbbs", "publicField": "eligibility", "claimText": "Dong A requires a recognized foreign secondary qualification, an accepted science combination, at least 65% of the maximum examination score, qualifying English evidence or assessment, and an interview.", "status": "verified", "sourceLabel": "Dong A 2026 international Medicine admission notice", "sourceUrl": "https://y.donga.edu.vn/en/news-events/detail/admission-announcement-on-international-doctor-of-medicine--md--program-for-international-students-in-2026-44203", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "dong-a-university-college-of-medicine", "programmeSlug": "dong-a-university-college-of-medicine-mbbs", "publicField": "admissions", "claimText": "The 2026 application needs the university form, school certificate and results, passport, English evidence and medical certificate, with legalization and certified Vietnamese translation requirements for foreign records.", "status": "verified", "sourceLabel": "Dong A 2026 international Medicine admission notice", "sourceUrl": "https://y.donga.edu.vn/en/news-events/detail/admission-announcement-on-international-doctor-of-medicine--md--program-for-international-students-in-2026-44203", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "dong-a-university-college-of-medicine", "programmeSlug": "dong-a-university-college-of-medicine-mbbs", "publicField": "intake", "claimText": "The 2026 notice accepts applications until 30 December each year and requires relevant enrolment formalities to be completed by 31 December.", "status": "verified", "sourceLabel": "Dong A 2026 international Medicine admission notice", "sourceUrl": "https://y.donga.edu.vn/en/news-events/detail/admission-announcement-on-international-doctor-of-medicine--md--program-for-international-students-in-2026-44203", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "buon-ma-thuot-medical-university", "programmeSlug": "buon-ma-thuot-medical-university-mbbs", "publicField": "fee", "claimText": "Buon Ma Thuot Medical University's 2026 English-programme notice publishes international Medicine tuition of USD 5,500 per year.", "status": "verified", "sourceLabel": "Buon Ma Thuot 2026 international admission notice", "sourceUrl": "https://bmu.edu.vn/tuyen-sinh-dai-hoc-he-chinh-quy-chuong-trinh-dao-tao-su-dung-tieng-anh-danh-cho-luu-hoc-sinh-tot-nghiep-thpt-nuoc-ngoai-nam-2026", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-09-30"},
+    {"entity": "programme", "universitySlug": "buon-ma-thuot-medical-university", "programmeSlug": "buon-ma-thuot-medical-university-mbbs", "publicField": "eligibility", "claimText": "Foreign high-school graduates need a result of at least 6.5/10, an eligible English-medium exemption or IELTS 6.0-equivalent English, a clear personal record and the university's health condition.", "status": "verified", "sourceLabel": "Buon Ma Thuot 2026 international admission notice", "sourceUrl": "https://bmu.edu.vn/tuyen-sinh-dai-hoc-he-chinh-quy-chuong-trinh-dao-tao-su-dung-tieng-anh-danh-cho-luu-hoc-sinh-tot-nghiep-thpt-nuoc-ngoai-nam-2026", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-09-30"},
+    {"entity": "programme", "universitySlug": "buon-ma-thuot-medical-university", "programmeSlug": "buon-ma-thuot-medical-university-mbbs", "publicField": "admissions", "claimText": "The international application uses a foreign-student form, identity record, education certificate and results, and English evidence where the exemption does not apply; scanned records are submitted by email.", "status": "verified", "sourceLabel": "Buon Ma Thuot 2026 international admission notice", "sourceUrl": "https://bmu.edu.vn/tuyen-sinh-dai-hoc-he-chinh-quy-chuong-trinh-dao-tao-su-dung-tieng-anh-danh-cho-luu-hoc-sinh-tot-nghiep-thpt-nuoc-ngoai-nam-2026", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-09-30"},
+    {"entity": "programme", "universitySlug": "buon-ma-thuot-medical-university", "programmeSlug": "buon-ma-thuot-medical-university-mbbs", "publicField": "intake", "claimText": "Applications run from 30 March to 30 September 2026, with selection and enrolment scheduled for October 2026 and 120 Medicine places published.", "status": "verified", "sourceLabel": "Buon Ma Thuot 2026 international admission notice", "sourceUrl": "https://bmu.edu.vn/tuyen-sinh-dai-hoc-he-chinh-quy-chuong-trinh-dao-tao-su-dung-tieng-anh-danh-cho-luu-hoc-sinh-tot-nghiep-thpt-nuoc-ngoai-nam-2026", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-09-30"},
+    {"entity": "programme", "universitySlug": "can-tho-university-medicine-pharmacy", "programmeSlug": "can-tho-university-medicine-pharmacy-mbbs", "publicField": "fee", "claimText": "Can Tho Decision 1519/QD-DHYDCT sets 2026–27 international English-programme tuition at VND 131,890,000 per year and lists VND 5,311,000 per credit for Medicine, Dentistry and Pharmacy.", "status": "verified", "sourceLabel": "Can Tho 2026–27 official tuition decision", "sourceUrl": "https://ctump.edu.vn/khoa/muc-thu-hoc-phi-nam-hoc-2026-2027.html", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "can-tho-university-medicine-pharmacy", "programmeSlug": "can-tho-university-medicine-pharmacy-mbbs", "publicField": "eligibility", "claimText": "The six-year Medical Doctor record admits foreign students; the current international pages require individual assessment of the foreign secondary qualification and academic record rather than publishing a universal score table.", "status": "verified", "sourceLabel": "Can Tho Faculty of Medicine and World Directory record", "sourceUrl": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "can-tho-university-medicine-pharmacy", "programmeSlug": "can-tho-university-medicine-pharmacy-mbbs", "publicField": "admissions", "claimText": "The current international route begins with submission of the foreign secondary certificate, transcript and identity record for university assessment; a universal document and deadline table is not published on the English programme pages.", "status": "verified", "sourceLabel": "Can Tho Faculty of Medicine", "sourceUrl": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"},
+    {"entity": "programme", "universitySlug": "can-tho-university-medicine-pharmacy", "programmeSlug": "can-tho-university-medicine-pharmacy-mbbs", "publicField": "intake", "claimText": "The Medical Doctor programme is a six-year undergraduate route; the current English pages do not publish one universal international application closing date for the next intake.", "status": "verified", "sourceLabel": "Can Tho Faculty of Medicine", "sourceUrl": "https://engtdhydct.ctump.edu.vn/faculty-of-medicine.html", "sourceGrade": "A", "checkedAt": "2026-07-20", "reviewBy": "2026-10-18"}
+  ]
+}

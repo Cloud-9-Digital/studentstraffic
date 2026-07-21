@@ -254,3 +254,11 @@ content framework = evidence, usefulness, freshness and conversion eligibility
 Implement the framework first for a small benchmark batch of high-demand programmes. Use those
 pages to calibrate research effort, conversion performance and validation rules before applying the
 standard to legacy catalogue pages.
+
+### Framework enforcement status (2026-07-20)
+
+The migration schema now carries the programme fee state and private claim-level evidence. Offline
+validation blocks Grade C evidence, expired evidence, prohibited filler and unsupported fee states
+before it opens a database connection. The first benchmark set is Semmelweis General Medicine MD,
+University of Maryland B.S. Computer Science and a held Kyrgyzstan legacy-identity repair. Existing
+legacy records remain a refresh queue; do not treat an old numeric field as newly reviewed evidence.

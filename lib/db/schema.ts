@@ -16,6 +16,7 @@ import {
 import { sql } from "drizzle-orm";
 import type {
   CourseStream,
+  FeeStatus,
   Faq,
   IndiaMbbsCollegeEditorialContent,
   LinkItem,
@@ -244,6 +245,10 @@ export const programOfferings = pgTable(
     officialTotalTuitionAmount: bigint("official_total_tuition_amount", {
       mode: "number",
     }),
+    feeStatus: text("fee_status").$type<FeeStatus>(),
+    feeAcademicYear: text("fee_academic_year"),
+    indicativeAnnualTuitionMinUsd: integer("indicative_annual_tuition_min_usd"),
+    indicativeAnnualTuitionMaxUsd: integer("indicative_annual_tuition_max_usd"),
     officialProgramUrl: text("official_program_url").notNull(),
     audienceEligibility: jsonb("audience_eligibility")
       .$type<ProgramOffering["audienceEligibility"]>()
@@ -298,6 +303,35 @@ export const programOfferings = pgTable(
     index("program_offerings_fee_idx").on(table.annualTuitionUsd),
     index("program_offerings_medium_idx").on(table.medium),
   ]
+);
+
+/** Private source-of-truth for evidence behind public catalogue copy. */
+export const catalogContentEvidence = pgTable(
+  "catalog_content_evidence",
+  {
+    id: serial("id").primaryKey(),
+    countryId: integer("country_id").references(() => countries.id, { onDelete: "cascade" }),
+    universityId: integer("university_id").references(() => universities.id, { onDelete: "cascade" }),
+    programOfferingId: integer("program_offering_id").references(() => programOfferings.id, { onDelete: "cascade" }),
+    publicField: text("public_field").notNull(),
+    claimText: text("claim_text").notNull(),
+    contentStatus: text("content_status")
+      .$type<"verified" | "indicative" | "omit">()
+      .notNull(),
+    sourceLabel: text("source_label").notNull(),
+    sourceUrl: text("source_url").notNull(),
+    sourceGrade: text("source_grade").$type<"A" | "B" | "C">().notNull(),
+    checkedAt: text("checked_at").notNull(),
+    reviewBy: text("review_by").notNull(),
+    internalNotes: text("internal_notes"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    index("catalog_content_evidence_country_idx").on(table.countryId),
+    index("catalog_content_evidence_university_idx").on(table.universityId),
+    index("catalog_content_evidence_programme_idx").on(table.programOfferingId),
+    index("catalog_content_evidence_review_by_idx").on(table.reviewBy),
+  ],
 );
 
 /**
