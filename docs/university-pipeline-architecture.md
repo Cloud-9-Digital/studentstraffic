@@ -87,6 +87,10 @@ ID/checksum in `content_migrations`. It performs live duplicate/ledger checks on
 publish command. See [`content-migrations/README.md`](../content-migrations/README.md) for the
 directory contract.
 
+Offline validation also enforces the publisher's course focus-keyword rule for `metaTitle` and
+`metaDescription`, so an SEO metadata failure is caught before the runner opens a database
+connection.
+
 `scripts/publish-catalog-payload.ts` is now an internal write engine, not a direct CLI. Do not let a
 research agent invoke it or any old one-off writer directly. Use the migration runner so that local
 research sessions do not wake the database.

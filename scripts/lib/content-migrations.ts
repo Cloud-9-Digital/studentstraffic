@@ -47,6 +47,21 @@ function assertFutureReviewDate(value: string, context: string) {
 }
 
 function assertContentFramework(payload: CatalogPayload, migrationId: string) {
+  for (const course of payload.courses) {
+    const normalizeFocus = (value: string) => value.toLowerCase().replace(/&/g, "and");
+    const focusKeywords = [course.shortName, course.name].map(normalizeFocus);
+    if (!focusKeywords.some((keyword) => normalizeFocus(course.metaTitle).includes(keyword))) {
+      throw new Error(
+        `${migrationId} course '${course.slug}' meta title must include '${course.shortName}' or '${course.name}'.`,
+      );
+    }
+    if (!focusKeywords.some((keyword) => normalizeFocus(course.metaDescription).includes(keyword))) {
+      throw new Error(
+        `${migrationId} course '${course.slug}' meta description must include '${course.shortName}' or '${course.name}'.`,
+      );
+    }
+  }
+
   for (const evidence of payload.evidence) {
     if (evidence.sourceGrade === "C") {
       throw new Error(`${migrationId} includes Grade C evidence for '${evidence.publicField}'. Grade C sources are discovery-only.`);

@@ -386,6 +386,20 @@
       "when": 1784572200000,
       "tag": "0069_catalog_content_framework",
       "breakpoints": true
+    },
+    {
+      "idx": 69,
+      "version": "7",
+      "when": 1784593200000,
+      "tag": "0070_umd_computer_science_slug_reconciliation",
+      "breakpoints": true
+    },
+    {
+      "idx": 70,
+      "version": "7",
+      "when": 1784594100000,
+      "tag": "0071_catalogue_gold_standard_slug_reconciliation",
+      "breakpoints": true
     }
   ]
 }
