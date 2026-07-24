@@ -1,4 +1,5 @@
 import dotenv from "dotenv";
+import { revalidatePublishedBlog } from "./lib/revalidate-blog-cache.mjs";
 
 dotenv.config({ path: ".env" });
 dotenv.config({ path: ".env.local", override: true });
@@ -14,22 +15,19 @@ if (!revalidateSecret) {
   throw new Error("REVALIDATE_SECRET is required.");
 }
 
-const slugs = process.argv.slice(2).filter(Boolean);
-const endpoint = new URL("/api/revalidate?scope=blog", siteUrl);
+const slugs = [...new Set(process.argv.slice(2).map((slug) => slug.trim()).filter(Boolean))];
 
-const response = await fetch(endpoint, {
-  method: "POST",
-  headers: {
-    Authorization: `Bearer ${revalidateSecret}`,
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(slugs.length > 0 ? { slug: slugs } : {}),
-});
-
-const text = await response.text();
-
-if (!response.ok) {
-  throw new Error(`Revalidation failed: ${response.status} ${text}`);
+if (slugs.length === 0) {
+  throw new Error(
+    "At least one blog slug is required. Usage: npm run cache:revalidate:blog -- <slug>",
+  );
 }
 
-console.log(text);
+for (const slug of slugs) {
+  const result = await revalidatePublishedBlog({
+    slug,
+    siteUrl,
+    revalidateSecret,
+  });
+  console.log(JSON.stringify(result));
+}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { CalendarDays, Clock, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import readingTime from "reading-time";
 
@@ -252,6 +253,10 @@ export default async function BlogPostPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // Posts are published independently of application deployments. Resolve the
+  // incoming slug at request time so a slug that was absent during the build
+  // cannot inherit the prerendered fallback/not-found shell.
+  await connection();
   const { slug } = await params;
   if (slug === PLACEHOLDER_BLOG_SLUG) {
     notFound();

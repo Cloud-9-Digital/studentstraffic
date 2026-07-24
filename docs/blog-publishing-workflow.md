@@ -14,7 +14,8 @@ The short version:
 3. Generate a raster cover image.
 4. Upload the cover to Cloudinary.
 5. Publish the blog post atomically with the Cloudinary `cover_url`.
-6. Verify the slug, image URL, and rendered page.
+6. Revalidate the exact slug as part of the publishing command.
+7. Verify the slug, image URL, and rendered page.
 
 ---
 
@@ -86,7 +87,11 @@ Historical `scripts/seed*` files were removed on 2026-07-11. Do not create a new
 blog post. Prepare the structured blog record through the current publishing workflow, validate the
 metadata and content, then revalidate the cache for the published slug.
 
-Use a script in `scripts/` as the publishing artifact.
+Use a script in `scripts/` as the publishing artifact. A successful publisher must call
+`revalidatePublishedBlog` from `scripts/lib/revalidate-blog-cache.mjs` after the database insert.
+The helper expires the blog index, the slug-specific data cache, and the shared dynamic route shell,
+then verifies that the live URL returns successfully. The publisher must fail if revalidation or live
+verification fails; inserting the row alone is not a completed publish.
 
 The structured record should define:
 
@@ -350,7 +355,7 @@ high detail, professional magazine cover feel, horizontal 16:9, no logos, no wat
 After publishing, run checks like:
 
 ```sh
-Use the approved blog publishing workflow and then run the slug-specific cache revalidation command.
+npm run cache:revalidate:blog -- example-post
 ```
 
 ```sh
@@ -436,6 +441,10 @@ Fix:
 - revalidate blog cache
 - verify that slug-specific revalidation completed successfully
 
+The blog index and detail page use different cache entries. Seeing a post on `/blog` does not prove
+that `/blog/<slug>` is available. Always pass the final slug; broad revalidation alone cannot expire
+the slug-specific cached lookup reliably.
+
 Script available:
 
 - [scripts/revalidate-blog-cache.mjs](/Users/bharat/Documents/studentstraffic/scripts/revalidate-blog-cache.mjs)
@@ -450,7 +459,8 @@ For new blog posts, follow this order:
 2. Generate a raster cover image.
 3. Upload the cover to Cloudinary first.
 4. Upsert the blog row with the Cloudinary URL.
-5. Verify locally and in production.
+5. Revalidate the exact slug from the same publishing script.
+6. Verify locally and in production.
 
 If there is a conflict between speed and safety, prefer the Cloudinary-first path. It is the least fragile workflow for a DB-backed blog.
 

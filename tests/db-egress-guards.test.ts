@@ -161,6 +161,7 @@ test("capped dynamic catalogs resolve non-sample slugs at request time", async (
     readProjectFile("app/countries/[slug]/page.tsx"),
     readProjectFile("app/courses/[slug]/page.tsx"),
     readProjectFile("app/cities/[slug]/page.tsx"),
+    readProjectFile("app/blog/[slug]/page.tsx"),
   ]);
 
   for (const source of pages) {
