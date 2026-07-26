@@ -37,14 +37,10 @@ import {
 import { getCountryHref } from "@/lib/routes";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
-const MAX_STATIC_COURSE_PARAMS = 1;
-
 export async function generateStaticParams() {
   const courses = await getCourses();
   return ensureNonEmptyStaticParams(
-    courses
-      .slice(0, MAX_STATIC_COURSE_PARAMS)
-      .map((course) => ({ slug: course.slug })),
+    courses.map((course) => ({ slug: course.slug })),
     { slug: "__course-fallback__" },
   );
 }
@@ -120,8 +116,8 @@ export default async function CoursePage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  // Course slugs outside the single build-time sample must resolve from the
-  // incoming request instead of inheriting the sample's cached fallback shell.
+  // Courses created after a deployment must resolve from the incoming request
+  // instead of inheriting a cached fallback shell.
   await connection();
   const { slug } = await params;
   const { course, summary, previewPrograms, budgetGuides } = await getCoursePageData(slug);

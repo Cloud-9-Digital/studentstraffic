@@ -61,7 +61,10 @@ import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 // already render on-demand by default (dynamicParams isn't available under
 // cacheComponents) and get cached by the existing cacheLife("hours")/cacheTag()
 // machinery below.
-const MAX_STATIC_UNIVERSITY_PARAMS = 1;
+// 34 published universities are featured. This modest buffer keeps the
+// static build bounded while covering all featured pages plus newly promoted
+// entries awaiting the next publish.
+const MAX_STATIC_UNIVERSITY_PARAMS = 40;
 
 export async function generateStaticParams() {
   const capped = await getPublishedUniversityParams(

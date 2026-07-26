@@ -93,11 +93,19 @@ export async function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Match all API routes and dashboard pages
-     * - /api/*
-     * - /dashboard/*
+     * Match dashboard pages plus API routes that are authenticated, mutate
+     * state, run jobs, or receive webhooks. Cacheable public catalogue reads
+     * are rate-limited at the Vercel Firewall instead, so a CDN hit never has
+     * to invoke this proxy or its backing rate limiter.
+     *
+     * Excluded public GET endpoints:
+     * - /api/finder
+     * - /api/suggestions
+     * - /api/india-mbbs-finder
+     * - /api/courses-directory
+     * - /api/comparisons
      */
-    "/api/:path*",
     "/dashboard/:path*",
+    "/api/((?!finder(?:/|$)|suggestions(?:/|$)|india-mbbs-finder(?:/|$)|courses-directory(?:/|$)|comparisons(?:/|$)).*)",
   ],
 };

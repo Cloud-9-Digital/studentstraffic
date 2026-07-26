@@ -120,10 +120,11 @@ export async function POST(request: NextRequest) {
     ...parseStringList(body.tag),
     ...request.nextUrl.searchParams.getAll("tag").map((tag) => tag.trim()).filter(Boolean),
   ]);
-  const staticPaths = new Set<string>([
+  const requestedPaths = new Set<string>([
     ...parseStringList(body.path),
     ...request.nextUrl.searchParams.getAll("path").map((path) => path.trim()).filter(Boolean),
   ]);
+  const staticPaths = new Set(requestedPaths);
   const dynamicPagePaths = new Set<string>();
 
   if (scope === "blog") {
@@ -166,7 +167,18 @@ export async function POST(request: NextRequest) {
     // revalidated. Without this, a newly published university/program renders correct
     // body content (dynamic per-request via connection()) but keeps a stale/"Not Found"
     // <title> from the last prerendered shell. See catalogDynamicPagePaths below.
-    if (slugs.length === 0) {
+    // A targeted publish already supplies the programme slug, an exact path,
+    // or an entity-specific tag. Revalidating every dynamic catalogue route in
+    // that case creates unnecessary ISR writes and cache churn. Keep the broad
+    // fallback only for an intentionally global catalogue refresh.
+    const hasSpecificCatalogTarget =
+      slugs.length > 0 ||
+      requestedPaths.size > 0 ||
+      [...tags].some((tag) =>
+        /^(?:country|course|city|university|program):/.test(tag),
+      );
+
+    if (!hasSpecificCatalogTarget) {
       for (const path of catalogDynamicPagePaths) {
         dynamicPagePaths.add(path);
       }

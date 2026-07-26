@@ -69,14 +69,10 @@ import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 // treatment instead of showing an unrelated stock photo (see AGENTS.md image
 // rules: no generic/irrelevant imagery on the hero).
 const GENERIC_COUNTRY_HERO_IMAGE_URL = "/images/home/country-options.jpg";
-const MAX_STATIC_COUNTRY_PARAMS = 1;
-
 export async function generateStaticParams() {
   const countries = await getCountries();
   return ensureNonEmptyStaticParams(
-    countries
-      .slice(0, MAX_STATIC_COUNTRY_PARAMS)
-      .map((country) => ({ slug: country.slug })),
+    countries.map((country) => ({ slug: country.slug })),
     { slug: "__country-fallback__" },
   );
 }
@@ -155,9 +151,9 @@ export default async function CountryPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  // Only one representative slug is prerendered to keep catalog builds bounded.
-  // Wait for the request before resolving every other slug so the prerendered
-  // sample cannot be reused as a cached "Country Not Found" shell.
+  // Every current country is prerendered. Keep the request boundary so countries
+  // created after a deployment resolve their own slug instead of inheriting a
+  // cached fallback shell.
   await connection();
   const { slug } = await params;
   const { country, programRows: programs, structuredPrograms } = await getCountryPageData(slug);
