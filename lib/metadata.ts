@@ -30,7 +30,16 @@ export function absoluteUrl(path = "/") {
 }
 
 export function getOgImagePath(path = "/") {
-  return path === "/" ? "/opengraph-image" : `${path}/opengraph-image`;
+  // Only emit a page-specific image URL when the corresponding metadata
+  // route exists. Returning a non-existent URL breaks social cards entirely;
+  // the root branded image is a reliable fallback for every other route.
+  if (
+    /^\/(countries|courses|university)\/[^/]+$/.test(path)
+  ) {
+    return `${path}/opengraph-image`;
+  }
+
+  return "/opengraph-image";
 }
 
 export function getOgImageUrl(path = "/") {
@@ -41,9 +50,15 @@ export function buildIndexableMetadata(
   input: IndexableMetadataInput
 ): Metadata {
   const imageUrl = getOgImageUrl(input.path);
+  const title = input.title.trim();
+  const hasBrandInTitle = title
+    .toLocaleLowerCase()
+    .includes(siteConfig.name.toLocaleLowerCase());
 
   return {
-    title: input.title,
+    // The root layout applies the brand template to ordinary page titles.
+    // Preserve titles that already include the brand without duplicating it.
+    title: hasBrandInTitle ? { absolute: title } : title,
     description: input.description,
     keywords: input.keywords,
     category: input.category ?? "education",
@@ -56,20 +71,20 @@ export function buildIndexableMetadata(
       locale: "en_IN",
       siteName: siteConfig.name,
       url: absoluteUrl(input.path),
-      title: input.title,
+      title,
       description: input.description,
       images: [
         {
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: input.title,
+          alt: title,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: input.title,
+      title,
       description: input.description,
       images: [imageUrl],
     },

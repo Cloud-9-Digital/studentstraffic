@@ -41,7 +41,7 @@ export function SiteFooter() {
               Get clarity on colleges, fees, and admission steps before you decide.
             </h2>
             <p className="mt-2 max-w-xl text-sm text-white/60">
-              Our counsellors help Indian students and parents compare countries, shortlist universities, understand scholarships, and move forward with the right admission plan. Request counselling and get practical guidance for your profile, budget, and next step.
+              Our counsellors help students and families compare destinations, shortlist universities, understand scholarship options, and move forward with the right admission plan. Get practical guidance for your profile, budget, and next step.
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-3">
@@ -58,7 +58,7 @@ export function SiteFooter() {
               href="/universities"
               className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/18"
             >
-              Browse colleges
+              Browse universities
             </Link>
           </div>
         </div>
@@ -77,8 +77,8 @@ export function SiteFooter() {
               />
             </Link>
             <p className="max-w-sm text-sm leading-6 text-white/70">
-              Students Traffic helps Indian students and parents explore
-              study-abroad options, compare countries and universities, and get
+              Students Traffic helps students and families worldwide explore
+              study-abroad options, compare destinations and universities, and get
               trusted guidance through counseling, shortlisting, applications,
               and admissions.
             </p>
@@ -165,7 +165,7 @@ export function SiteFooter() {
             <ul className="space-y-2.5">
               {[
                 { href: "/budget", label: "Plan your budget" },
-                { href: "/scholarships-for-indian-students-to-study-abroad", label: "Find scholarships" },
+                { href: "/scholarships-for-indian-students-to-study-abroad", label: "Scholarship guidance (India)" },
                 { href: "/compare", label: "Compare your options" },
                 { href: "/cities", label: "Explore student cities" },
                 { href: "/guides", label: "Read planning guides" },

@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Students Traffic",
   shortName: "Students Traffic",
   description:
-    "Students Traffic helps Indian students choose the right university abroad — across countries, streams, and programs — and secure admission with end-to-end guidance, moving confidently toward enrolment.",
+    "Students Traffic helps students and families worldwide compare universities, programmes, destinations, and admission pathways for study abroad.",
   copyrightYear: 2026,
   email: "hello@studentstraffic.com",
   phone: "+91 91761 62888",

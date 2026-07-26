@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { buildIndexableMetadata } from "@/lib/metadata";
+
 import { LpCta } from "./_components/lp-cta";
 import { LpCountries } from "./_components/lp-countries";
 import { LpDialogProvider } from "./_components/lp-dialog";
@@ -14,17 +16,11 @@ import { LpProcess } from "./_components/lp-process";
 import { LpTrust } from "./_components/lp-trust";
 import { LpWhyAbroad } from "./_components/lp-why-abroad";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildIndexableMetadata({
+  path: "/mbbs-abroad",
   title: "MBBS Abroad Admission 2026 for Indian Students | Fees, Eligibility, NMC",
   description:
     "Get MBBS abroad admission for Indian students in Russia, Georgia, Kyrgyzstan, Vietnam and more. Check fees, eligibility, and NMC recognition with free counselling.",
-  robots: { index: true, follow: true },
-  openGraph: {
-    title: "MBBS Abroad Admission 2026 for Indian Students",
-    description:
-      "Compare MBBS abroad fees, NMC recognition, and eligibility across top countries for Indian students.",
-    type: "website",
-  },
   keywords: [
     "MBBS abroad for Indian students",
     "MBBS abroad fees",
@@ -39,7 +35,7 @@ export const metadata: Metadata = {
     "MBBS abroad eligibility",
     "FMGE NExT MBBS abroad",
   ],
-};
+});
 
 export default function MbbsAbroadPage() {
   return (

@@ -5,7 +5,7 @@ import { buildIndexableMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Salary After MBBS in Russia 2026: Career Pathways & Realistic Earnings Guide",
   description:
-    "Comprehensive salary guide for Russia MBBS graduates: Russia practice (40,000-400,000 RUB/month), India return (₹4-50+ LPA), Gulf careers (₹8-21 lakh/month), US/UK pathways, career timelines, and ROI analysis for Indian students.",
+    "Explore career pathways after an MBBS from Russia, including licensing, further training, and the factors that shape earnings for Indian graduates.",
   path: "/salary-after-mbbs-in-russia",
   openGraphType: "article",
   keywords: [

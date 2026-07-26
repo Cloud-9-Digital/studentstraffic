@@ -9,7 +9,7 @@ import readingTime from "reading-time";
 
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
-import { absoluteUrl } from "@/lib/metadata";
+import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
 
 // Canonical category definitions — slug → display name
 const CATEGORIES: Record<string, string> = {
@@ -71,9 +71,10 @@ export async function generateMetadata({
   const title = `${categoryName} — Blog | Students Traffic`;
   const description = `All articles in the "${categoryName}" category — guides and insights for Indian students planning to study MBBS abroad.`;
   const canonicalUrl = absoluteUrl(`/blog/category/${slug}`);
+  const ogImage = getOgImageUrl(`/blog/category/${slug}`);
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: canonicalUrl },
     openGraph: {
@@ -83,8 +84,9 @@ export async function generateMetadata({
       url: canonicalUrl,
       title,
       description,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: { card: "summary_large_image", title, description, images: [ogImage] },
   };
 }
 

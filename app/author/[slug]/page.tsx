@@ -5,7 +5,7 @@ import { ArrowLeft, Quote } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { getAllAuthors, getAuthor, isValidAuthorSlug } from "@/lib/authors";
-import { absoluteUrl } from "@/lib/metadata";
+import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
 import { getProfilePageStructuredData } from "@/lib/structured-data";
 
 export function generateStaticParams() {
@@ -21,16 +21,26 @@ export async function generateMetadata({
   if (!isValidAuthorSlug(slug)) return {};
   const author = getAuthor(slug);
   const url = absoluteUrl(`/author/${slug}`);
+  const title = `${author.name} — ${author.title} | Students Traffic`;
+  const ogImage = getOgImageUrl(`/author/${slug}`);
   return {
-    title: `${author.name} — ${author.title} | Students Traffic`,
+    title: { absolute: title },
     description: author.bio,
     alternates: { canonical: url },
     openGraph: {
       type: "profile",
       url,
-      title: `${author.name} — ${author.title}`,
+      title,
       description: author.bio,
       siteName: "Students Traffic",
+      locale: "en_IN",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: author.bio,
+      images: [ogImage],
     },
   };
 }

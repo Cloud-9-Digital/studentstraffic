@@ -27,7 +27,7 @@ const path = "/guides/neet-2026-paper-analysis-expected-cutoff";
 const title =
   "NEET 2026 Answer Key Live: Official Provisional Key, OMR Challenge, Expected Cut Off";
 const description =
-  "NEET 2026 answer key live update after the May 3 exam, refreshed from our May 12, 2026, 10:54 AM IST official-source check across NEET and NTA pages, with the official provisional answer key notice dated May 6, 2026 still live, the May 10 press release still visible, the public notices page now listing the answer-key items, and no official OMR challenge window or result notice visible yet.";
+  "A May 12, 2026 snapshot of the NEET provisional answer key, OMR challenge, and expected cut-off context. Check the NTA website for current results and notices.";
 const publishedAt = "2026-05-03";
 const updatedAt = "2026-05-12";
 const reviewedAt = "May 12, 2026, 10:54 AM IST";
@@ -38,7 +38,7 @@ const canonicalUrl = absoluteUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
 export const metadata: Metadata = {
-  title: `${title} | Students Traffic`,
+  title: { absolute: `${title} | Students Traffic` },
   description,
   alternates: {
     canonical: canonicalUrl,

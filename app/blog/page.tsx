@@ -7,7 +7,7 @@ import { Rss, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
-import { absoluteUrl } from "@/lib/metadata";
+import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
 import { categoryToSlug } from "@/app/blog/category/[slug]/page";
 
 const PAGE_SIZE = 12;
@@ -61,12 +61,15 @@ export async function generateMetadata({
   const totalPages = Math.ceil(total / PAGE_SIZE);
 
   const canonical = page === 1 ? absoluteUrl("/blog") : absoluteUrl(`/blog?page=${page}`);
+  const title = page === 1
+    ? "MBBS Abroad Blog | Students Traffic"
+    : `MBBS Abroad Blog — Page ${page} of ${totalPages} | Students Traffic`;
+  const description = "Practical MBBS abroad guidance, fee clarity, comparison help, and admission updates for Indian students and parents.";
+  const ogImage = getOgImageUrl("/blog");
 
   return {
-    title: page === 1
-      ? "MBBS Abroad Blog | Students Traffic"
-      : `MBBS Abroad Blog — Page ${page} of ${totalPages} | Students Traffic`,
-    description: "Practical MBBS abroad guidance, fee clarity, comparison help, and admission updates for Indian students and parents.",
+    title: { absolute: title },
+    description,
     alternates: {
       canonical,
       types: { "application/rss+xml": absoluteUrl("/blog/feed.xml") },
@@ -78,13 +81,15 @@ export async function generateMetadata({
       locale: "en_IN",
       siteName: "Students Traffic",
       url: canonical,
-      title: "MBBS Abroad Blog | Students Traffic",
-      description: "Practical MBBS abroad guidance, fee clarity, comparison help, and admission updates for Indian students and parents.",
+      title,
+      description,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "MBBS Abroad Blog | Students Traffic",
-      description: "Practical MBBS abroad guidance, fee clarity, comparison help, and admission updates for Indian students and parents.",
+      title,
+      description,
+      images: [ogImage],
     },
   };
 }

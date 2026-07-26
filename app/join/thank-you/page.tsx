@@ -1,11 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { CheckCircle, Clock, Mail } from "lucide-react";
+import { buildNoIndexMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Application Received | Students Traffic",
-  robots: { index: false },
-};
+export const metadata: Metadata = buildNoIndexMetadata(
+  {
+    title: { absolute: "Application Received | Students Traffic" },
+    description: "Your student-guide application has been received by Students Traffic.",
+  },
+  { canonicalPath: "/join/thank-you" },
+);
 
 export default function JoinThankYouPage() {
   return (

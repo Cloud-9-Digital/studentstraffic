@@ -16,17 +16,17 @@ import {
 } from "@/lib/content-governance";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Study Abroad Consultants for Indian Students | Students Traffic",
+  title: "Study Abroad Guidance for Students Worldwide | Students Traffic",
   description:
-    "Search universities, compare fees and eligibility, and get trusted study-abroad guidance from Students Traffic—built for Indian students and parents.",
+    "Compare universities, programmes, fees, and entry requirements, then get trusted guidance for your study-abroad plan.",
   path: "/",
   keywords: [
-    "study abroad for Indian students",
-    "study abroad consultants India",
-    "universities abroad for Indian students",
+    "study abroad guidance",
+    "universities abroad",
+    "international student admissions",
     "study abroad courses",
     "study abroad budget planning",
-    "study abroad counselling India",
+    "university admissions support",
   ],
 });
 
@@ -38,7 +38,7 @@ export default function HomePage() {
       path,
       name: "Students Traffic Home",
       description:
-        "Students Traffic helps Indian students and parents explore universities, compare study-abroad options, and get admissions guidance.",
+        "Students Traffic helps students and families worldwide explore universities, compare study-abroad options, and get admissions guidance.",
       datePublished: governancePublishedAt,
       dateModified: catalogReviewedAt,
     }),
@@ -51,10 +51,10 @@ export default function HomePage() {
         <div className="container-shell relative grid items-center gap-8 py-8 lg:h-full lg:min-h-0 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,0.82fr)] lg:gap-12 lg:py-0 xl:gap-16">
           <div className="max-w-2xl text-left">
             <h1 className="max-w-[11ch] font-display text-[3.15rem] font-semibold leading-[0.94] tracking-[-0.055em] text-heading sm:text-6xl lg:text-[4.5rem]">
-              Find the right university abroad.
+              Find the right university, anywhere in the world.
             </h1>
             <p className="mt-5 max-w-md text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
-              Search universities, courses, fees and intake dates. Then talk to students who are already studying there.
+              Search universities, programmes, fees, and intake dates. Build a shortlist that fits your goals, budget, and next step.
             </p>
             <div className="mt-7 max-w-2xl">
               <HeroSearch />

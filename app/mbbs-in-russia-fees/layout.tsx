@@ -5,7 +5,7 @@ import { buildIndexableMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "MBBS in Russia Fees 2026: Complete Cost Breakdown & University-Wise Fees for Indian Students",
   description:
-    "Comprehensive MBBS in Russia fees guide: university-wise fees (₹2.6-15L/year tuition), total 6-year costs (₹28-103L complete), India comparison (50-70% cheaper than private colleges ₹60L-₹2.2Cr), hidden costs (₹8-15L), city-wise variations (Moscow ₹36-59L vs Crimea ₹13-21L living), cost-saving strategies (save ₹25-50L), education loan options, and budget/medium/premium scenarios for Indian students.",
+    "Understand tuition, living costs, and fee differences across Russian medical universities, with a practical MBBS budget plan for Indian students.",
   path: "/mbbs-in-russia-fees",
   openGraphType: "article",
   keywords: [

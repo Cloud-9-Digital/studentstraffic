@@ -3,12 +3,16 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 import { SeminarRegistrationForm } from "./_components/seminar-registration-form";
+import { buildNoIndexMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Register for Free MBBS Seminar 2026 | Students Traffic",
-  description:
-    "Register now for our free MBBS abroad seminars across Tamil Nadu. Talk to FMGE-cleared doctors and get honest answers about studying MBBS in Russia, Georgia, and more.",
-};
+export const metadata: Metadata = buildNoIndexMetadata(
+  {
+    title: { absolute: "Register for Free MBBS Seminar 2026 | Students Traffic" },
+    description:
+      "Register now for our free MBBS abroad seminars across Tamil Nadu. Talk to FMGE-cleared doctors and get honest answers about studying MBBS in Russia, Georgia, and more.",
+  },
+  { canonicalPath: "/seminar-2026/register" },
+);
 
 export default function SeminarRegistrationPage() {
   return (

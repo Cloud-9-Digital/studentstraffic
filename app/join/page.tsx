@@ -8,12 +8,16 @@ import { auth } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { countries, universities, users } from "@/lib/db/schema";
 import { JoinFlow } from "@/components/site/join-flow";
+import { buildNoIndexMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Help Other Students — Become a Guide | Students Traffic",
-  description:
-    "Are you studying MBBS abroad? Help fellow Indian students make the right choice. Share your experience and get listed on our platform.",
-};
+export const metadata: Metadata = buildNoIndexMetadata(
+  {
+    title: { absolute: "Help Other Students — Become a Guide | Students Traffic" },
+    description:
+      "Are you studying MBBS abroad? Help fellow Indian students make the right choice. Share your experience and get listed on our platform.",
+  },
+  { canonicalPath: "/join" },
+);
 
 export default async function JoinPage() {
   const session = await auth();

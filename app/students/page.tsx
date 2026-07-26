@@ -10,7 +10,7 @@ import { auth } from "@/lib/auth";
 export const metadata: Metadata = buildIndexableMetadata({
   title: "Talk to Students Studying Abroad | Students Traffic",
   description:
-    "Connect directly on WhatsApp with Indian students already studying MBBS abroad. Get honest answers on fees, hostel life, and daily experience — from peers, not agents.",
+    "Connect with students at listed universities for practical answers on fees, accommodation, campus life, and daily experience.",
   path: "/students",
 });
 

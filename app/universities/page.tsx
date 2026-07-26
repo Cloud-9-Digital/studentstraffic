@@ -7,7 +7,7 @@ import {
   getFinderOptions,
   queryFinderCardProgramsPage,
 } from "@/lib/data/catalog";
-import { buildNoIndexMetadata } from "@/lib/metadata";
+import { buildIndexableMetadata, buildNoIndexMetadata } from "@/lib/metadata";
 import {
   hasFinderFilters,
   parseFinderFilters,
@@ -24,11 +24,12 @@ export async function generateMetadata({
   const pageParam = Array.isArray(raw.page) ? raw.page[0] : raw.page;
   const page = parseFinderPage(pageParam);
 
-  const base: Metadata = {
-    title: "MBBS Abroad Colleges for Indian Students | Fees, NMC Recognition",
+  const base = buildIndexableMetadata({
+    path: "/universities",
+    title: "Universities Abroad | Programmes, Fees & Entry Requirements",
     description:
-      "Browse MBBS abroad colleges by country, fees, intake, teaching medium, and NMC recognition for Indian students.",
-  };
+      "Browse universities abroad by destination, programme, fees, intake, teaching language, and entry requirements.",
+  });
 
   if (hasFinderFilters(filters) || page > 1) {
     return buildNoIndexMetadata(base, { canonicalPath: "/universities" });

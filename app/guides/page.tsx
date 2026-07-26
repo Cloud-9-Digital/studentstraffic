@@ -15,9 +15,9 @@ import { getLandingPageHref } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Study Abroad Guides for Indian Students | Fees, Eligibility & Countries",
+  title: "Study Abroad Guides | Universities, Costs & Admission Planning",
   description:
-    "Read MBBS abroad guides on fees, eligibility, countries, NMC recognition, and college comparison for Indian students and parents.",
+    "Use practical study-abroad guides to compare destinations, programmes, costs, entry requirements, and university options.",
   path: "/guides",
 });
 
@@ -100,7 +100,7 @@ export default async function GuidesPage() {
     ]),
     getCollectionPageStructuredData({
       path,
-      name: "MBBS abroad guides",
+      name: "Study abroad guides",
       description:
         "Planning hub for country, course, comparison, and budget decision pages.",
     }),

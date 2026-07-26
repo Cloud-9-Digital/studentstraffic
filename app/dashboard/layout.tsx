@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { eq } from "drizzle-orm";
 
@@ -11,6 +12,10 @@ import { DashboardSidebar, DashboardBottomNav, DashboardMobileHeader } from "@/c
 import { IncomingCallsFloating } from "@/components/dashboard/incoming-calls-floating";
 import { IncomingStudentCallsFloating } from "@/components/dashboard/incoming-student-calls";
 import { RejoinCallBanner } from "@/components/dashboard/rejoin-call-banner";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();

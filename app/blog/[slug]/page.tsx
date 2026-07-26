@@ -172,16 +172,21 @@ export async function generateMetadata({
   const post = await getPost(slug);
   if (!post) return {};
 
-  const title = post.metaTitle || post.title;
-  const description = post.metaDescription || post.excerpt || undefined;
+  const title = post.metaTitle?.trim() || post.title;
+  const description =
+    post.metaDescription?.trim() ||
+    post.excerpt?.trim() ||
+    `Read ${post.title}, a Students Traffic guide for students planning their next admission step.`;
   const author = resolvePostAuthor(post.authorSlug);
 
   const canonicalUrl = absoluteUrl(`/blog/${slug}`);
   const ogImage = post.coverUrl ?? getOgImageUrl("/");
-  const coverImages = [{ url: ogImage, width: 1200, height: 630, alt: title }];
+  const coverImages = post.coverUrl
+    ? [{ url: ogImage, alt: title }]
+    : [{ url: ogImage, width: 1200, height: 630, alt: title }];
 
   return {
-    title: `${title} | Students Traffic`,
+    title: { absolute: `${title} | Students Traffic` },
     description,
     authors: [{ name: author.name, url: absoluteUrl(author.path) }],
     alternates: { canonical: canonicalUrl },

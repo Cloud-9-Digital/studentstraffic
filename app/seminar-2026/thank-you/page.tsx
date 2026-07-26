@@ -8,12 +8,15 @@ import { SeminarDialogProvider } from "../_components/seminar-dialog-context";
 import { SeminarHeader } from "../_components/seminar-header";
 import { SeminarFooter } from "../_components/seminar-footer";
 import { siteConfig } from "@/lib/constants";
+import { buildNoIndexMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "You're registered! | Free MBBS Seminar 2026",
-  description: "Your seat is reserved. We'll WhatsApp you the venue details shortly.",
-  robots: { index: false, follow: false },
-};
+export const metadata: Metadata = buildNoIndexMetadata(
+  {
+    title: { absolute: "You're registered! | Free MBBS Seminar 2026" },
+    description: "Your seat is reserved. We'll WhatsApp you the venue details shortly.",
+  },
+  { canonicalPath: "/seminar-2026/thank-you" },
+);
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (

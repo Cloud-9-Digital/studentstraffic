@@ -6,13 +6,13 @@ import {
 
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
-export const alt = "Students Traffic — Study MBBS abroad, the right way.";
+export const alt = "Students Traffic — Find the right university, anywhere in the world.";
 
 export default async function Image() {
   return createSeoImage({
-    eyebrow: "India's Most Transparent MBBS Abroad Platform",
-    title: "Study MBBS abroad —",
-    accentTitle: "the right way.",
-    tags: ["3,000+ Students", "500+ Universities", "10+ Countries", "100% Free"],
+    eyebrow: "Global study-abroad guidance",
+    title: "Find the right university",
+    accentTitle: "anywhere in the world.",
+    tags: ["Universities", "Programmes", "Destinations", "Admission support"],
   });
 }

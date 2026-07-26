@@ -13,9 +13,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "About Students Traffic | India's Study Abroad Research Platform",
+  title: "About Students Traffic | Global Study Abroad Guidance",
   description:
-    "Students Traffic is a one-stop study-abroad platform for Indian students — university comparisons, country guides, honest fee breakdowns, and free admissions support across streams and destinations.",
+    "Students Traffic helps students and families worldwide compare universities, destinations, costs, and admission pathways with practical guidance.",
   path: "/about",
 });
 
@@ -78,7 +78,7 @@ export default function AboutPage() {
       path,
       name: "About Students Traffic",
       description:
-        "Students Traffic helps Indian students find and apply to the best universities abroad — with transparent comparisons and free expert admissions support.",
+        "Students Traffic helps students and families find and apply to suitable universities abroad with transparent comparisons and expert admissions support.",
     }),
   ];
 
@@ -99,11 +99,10 @@ export default function AboutPage() {
                 <span className="italic text-accent">Better decisions.</span>
               </h1>
               <p className="max-w-lg text-base leading-8 text-muted-foreground">
-                500+ universities and programs across Russia, Georgia,
-                Kazakhstan, Vietnam, Kyrgyzstan, and more — with real reviews,
-                peer connect, and free admissions support from enquiry to
-                enrolment, as we grow into a one-stop destination for every
-                stream, country, and university.
+                Compare universities and programmes across destinations, with
+                practical guidance on fees, fit, applications, and the move
+                ahead. We began with strong India-to-abroad expertise and are
+                building Students Traffic for students everywhere.
               </p>
               <div className="flex flex-wrap gap-3 pt-1">
                 <CounsellingDialog
@@ -196,7 +195,7 @@ export default function AboutPage() {
               Why We Exist
             </p>
             <h2 className="mt-6 font-display text-3xl font-semibold leading-[1.18] tracking-tight text-primary sm:text-4xl lg:text-5xl">
-              Indian students deserve{" "}
+              Every student deserves{" "}
               <span className="italic text-accent">complete information</span>
               {" "}— not a curated list.
             </h2>
@@ -209,8 +208,9 @@ export default function AboutPage() {
               enrolled so you can ask the questions agents won&apos;t answer, and
               only then offer free admissions support when you are ready to
               move forward. Our goal is to be a genuine one-stop destination
-              for Indian students — across streams, programs, universities,
-              and countries — not just a single course or destination.
+              for students across backgrounds, programmes, universities, and
+              destinations — not just a single course, origin country, or
+              pathway.
             </p>
           </div>
         </div>

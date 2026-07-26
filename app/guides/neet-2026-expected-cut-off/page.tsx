@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/shared/json-ld";
 import { ContentTrustPanel } from "@/components/site/content-trust-panel";
 import { DeferredLeadForm } from "@/components/site/deferred-lead-form";
 import { Button } from "@/components/ui/button";
-import { absoluteUrl } from "@/lib/metadata";
+import { absoluteUrl, getOgImageUrl } from "@/lib/metadata";
 import {
   getBreadcrumbStructuredData,
   getStructuredDataGraph,
@@ -21,15 +21,16 @@ const path = "/guides/neet-2026-expected-cut-off";
 const title =
   "NEET 2026 Expected Cut Off: Category-Wise Estimate After Provisional Answer Key";
 const description =
-  "NEET 2026 expected cut off guide for students and parents, updated after our May 12, 2026, 10:54 AM IST official-source check, with the official provisional answer key still live on the NEET homepage, the public notices page now showing the answer-key items, and no official result or cut off notice visible yet.";
+  "A May 12, 2026 expected cut-off planning guide based on NEET's provisional answer key. Use current NTA results and counselling notices for final decisions.";
 const publishedAt = "2026-05-04";
 const updatedAt = "2026-05-12";
 const reviewedAt = "May 12, 2026, 10:54 AM IST";
 const canonicalUrl = absoluteUrl(path);
+const ogImage = getOgImageUrl(path);
 const authorUrl = absoluteUrl(`/authors/${contentAuthorSlug}`);
 
 export const metadata: Metadata = {
-  title: `${title} | Students Traffic`,
+  title: { absolute: `${title} | Students Traffic` },
   description,
   alternates: { canonical: canonicalUrl },
   openGraph: {
@@ -43,11 +44,13 @@ export const metadata: Metadata = {
     modifiedTime: `${updatedAt}T00:00:00.000Z`,
     authors: [contentAuthorName],
     section: "Admissions",
+    images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: [ogImage],
   },
 };
 

@@ -89,18 +89,9 @@ if (!parsedEnv.success) {
   throw new Error(`Invalid environment variables: ${parsedEnv.error.message}`);
 }
 
-const globalForEnvWarnings = globalThis as typeof globalThis & {
-  __siteUrlWarningShown?: boolean;
-};
-
-if (
-  process.env.NODE_ENV === "production" &&
-  !parsedEnv.data.NEXT_PUBLIC_SITE_URL &&
-  !globalForEnvWarnings.__siteUrlWarningShown
-) {
-  globalForEnvWarnings.__siteUrlWarningShown = true;
-  console.warn(
-    "NEXT_PUBLIC_SITE_URL is not set in production. Canonical URLs and social metadata will fall back to http://localhost:3000."
+if (process.env.NODE_ENV === "production" && !parsedEnv.data.NEXT_PUBLIC_SITE_URL) {
+  throw new Error(
+    "NEXT_PUBLIC_SITE_URL is required in production so canonical URLs and social previews never point to localhost."
   );
 }
 

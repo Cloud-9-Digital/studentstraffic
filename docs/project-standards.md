@@ -19,6 +19,10 @@ Students Traffic serves a global audience. Indian students and parents remain an
 but country, university and programme coverage must not be limited to Indian eligibility or Indian
 search intent.
 
+Global-platform rule: shared brand surfaces (home, shared navigation, footer, default metadata,
+and social previews) must speak to students and families worldwide. India-specific and MBBS-specific
+guidance belongs on clearly labelled specialist routes, rather than defining the whole platform.
+
 That means every serious page should help the reader understand their options and also make it natural to take the next step with Students Traffic.
 
 The brand promise should feel:

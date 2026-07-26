@@ -11,9 +11,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = buildIndexableMetadata({
-  title: "Courses Abroad for Indian Students | Fees, Eligibility & Universities",
+  title: "Study Abroad Programmes | Universities, Fees & Entry Requirements",
   description:
-    "Compare courses abroad for Indian students with fees, eligibility, duration, universities, and destination guidance.",
+    "Compare study-abroad programmes by fees, entry requirements, duration, universities, and destination guidance.",
   path: "/courses",
 });
 
