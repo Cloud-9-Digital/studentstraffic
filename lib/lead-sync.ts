@@ -26,6 +26,14 @@ type LeadSyncUpdate = {
   leadSquaredExternalId?: string | null;
 };
 
+type LeadSyncOptions = {
+  /**
+   * The lead row was inserted with accurate pending/skipped delivery states.
+   * Avoid writing those same skipped values again when the worker runs.
+   */
+  skipPersistedSkipStates?: boolean;
+};
+
 type CrmSyncResponse = {
   ok?: boolean;
   leadId?: number;
@@ -221,25 +229,30 @@ async function postJson(url: string, body: unknown, headers?: HeadersInit) {
 
 export async function syncLeadToCrm(
   leadId: number | undefined,
-  payload: LeadSyncPayload
+  payload: LeadSyncPayload,
+  options: LeadSyncOptions = {},
 ) {
   if (!getLeadDeliveryRoute(payload.sourcePath).crm) {
-    await updateLeadSyncState(leadId, {
-      crmSyncStatus: "skipped",
-      crmSyncedAt: null,
-      crmSyncError: null,
-      crmExternalId: null,
-    });
+    if (!options.skipPersistedSkipStates) {
+      await updateLeadSyncState(leadId, {
+        crmSyncStatus: "skipped",
+        crmSyncedAt: null,
+        crmSyncError: null,
+        crmExternalId: null,
+      });
+    }
     return;
   }
 
   if (!env.hasCrmLeadSyncConfig || !env.crmLeadIntakeUrl || !env.crmLeadIntakeSecret) {
-    await updateLeadSyncState(leadId, {
-      crmSyncStatus: "skipped",
-      crmSyncedAt: null,
-      crmSyncError: null,
-      crmExternalId: null,
-    });
+    if (!options.skipPersistedSkipStates) {
+      await updateLeadSyncState(leadId, {
+        crmSyncStatus: "skipped",
+        crmSyncedAt: null,
+        crmSyncError: null,
+        crmExternalId: null,
+      });
+    }
     return;
   }
 
@@ -280,18 +293,21 @@ export async function syncLeadToCrm(
 
 async function syncLeadToPabbly(
   leadId: number | undefined,
-  payload: LeadSyncPayload
+  payload: LeadSyncPayload,
+  options: LeadSyncOptions = {},
 ) {
   if (
     !getLeadDeliveryRoute(payload.sourcePath).pabbly ||
     !env.hasPabblyLeadWebhook ||
     !env.pabblyLeadWebhookUrl
   ) {
-    await updateLeadSyncState(leadId, {
-      pabblySyncStatus: "skipped",
-      pabblySyncedAt: null,
-      pabblySyncError: null,
-    });
+    if (!options.skipPersistedSkipStates) {
+      await updateLeadSyncState(leadId, {
+        pabblySyncStatus: "skipped",
+        pabblySyncedAt: null,
+        pabblySyncError: null,
+      });
+    }
     return;
   }
 
@@ -327,7 +343,8 @@ async function syncLeadToPabbly(
 
 async function syncLeadToLeadSquared(
   leadId: number | undefined,
-  payload: LeadSyncPayload
+  payload: LeadSyncPayload,
+  options: LeadSyncOptions = {},
 ) {
   if (!getLeadDeliveryRoute(payload.sourcePath).leadSquared) {
     return;
@@ -336,12 +353,14 @@ async function syncLeadToLeadSquared(
   // Only lower-scoring NEET leads (more likely to need counselling on realistic
   // options) get pushed to LeadSquared; everyone else is intentionally excluded.
   if (payload.neetScore === undefined || payload.neetScore >= 400) {
-    await updateLeadSyncState(leadId, {
-      leadSquaredSyncStatus: "skipped",
-      leadSquaredSyncedAt: null,
-      leadSquaredSyncError: null,
-      leadSquaredExternalId: null,
-    });
+    if (!options.skipPersistedSkipStates) {
+      await updateLeadSyncState(leadId, {
+        leadSquaredSyncStatus: "skipped",
+        leadSquaredSyncedAt: null,
+        leadSquaredSyncError: null,
+        leadSquaredExternalId: null,
+      });
+    }
     return;
   }
 
@@ -350,12 +369,14 @@ async function syncLeadToLeadSquared(
     !env.leadSquaredAccessKey ||
     !env.leadSquaredSecretKey
   ) {
-    await updateLeadSyncState(leadId, {
-      leadSquaredSyncStatus: "skipped",
-      leadSquaredSyncedAt: null,
-      leadSquaredSyncError: null,
-      leadSquaredExternalId: null,
-    });
+    if (!options.skipPersistedSkipStates) {
+      await updateLeadSyncState(leadId, {
+        leadSquaredSyncStatus: "skipped",
+        leadSquaredSyncedAt: null,
+        leadSquaredSyncError: null,
+        leadSquaredExternalId: null,
+      });
+    }
     return;
   }
 
@@ -427,12 +448,13 @@ async function syncLeadToGoogleSheets(payload: LeadSyncPayload) {
 
 export async function syncLeadDestinations(
   leadId: number | undefined,
-  payload: LeadSyncPayload
+  payload: LeadSyncPayload,
+  options: LeadSyncOptions = {},
 ) {
   await Promise.all([
-    syncLeadToCrm(leadId, payload),
-    syncLeadToPabbly(leadId, payload),
-    syncLeadToLeadSquared(leadId, payload),
+    syncLeadToCrm(leadId, payload, options),
+    syncLeadToPabbly(leadId, payload, options),
+    syncLeadToLeadSquared(leadId, payload, options),
     syncLeadToGoogleSheets(payload),
   ]);
 }

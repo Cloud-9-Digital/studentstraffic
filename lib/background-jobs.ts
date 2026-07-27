@@ -8,7 +8,6 @@ import { env } from "@/lib/env";
 import type { LeadSyncPayload } from "@/lib/lead-sync-payload";
 import { syncLeadDestinations } from "@/lib/lead-sync";
 import { getLeadDeliveryRoute } from "@/lib/lead-delivery-routes";
-import { cleanupExpiredPeerCallSessions } from "@/lib/peer-calls";
 import { sendLeadWhatsAppMessage } from "@/lib/wati";
 
 const LEAD_DELIVERY_JOB_KIND = "lead.delivery";
@@ -28,6 +27,12 @@ type LeadDeliveryJobPayload = {
   leadId: number;
   leadHandoffPayload: LeadSyncPayload;
   whatsappPayload?: LeadWhatsAppJobPayload;
+  /**
+   * Newer lead submissions persist their delivery statuses while inserting
+   * the lead. Older queued jobs omit this flag and retain the legacy status
+   * updates when they are processed.
+   */
+  deliveryStateInitialized?: boolean;
 };
 
 type ProcessJobsOptions = {
@@ -76,14 +81,19 @@ export async function enqueueLeadDeliveryJob(payload: LeadDeliveryJobPayload) {
   const db = getDb();
 
   if (!db) {
-    return;
+    return undefined;
   }
 
-  await db.insert(backgroundJobs).values({
-    kind: LEAD_DELIVERY_JOB_KIND,
-    payload,
-    maxAttempts: DEFAULT_MAX_ATTEMPTS,
-  });
+  const [job] = await db
+    .insert(backgroundJobs)
+    .values({
+      kind: LEAD_DELIVERY_JOB_KIND,
+      payload,
+      maxAttempts: DEFAULT_MAX_ATTEMPTS,
+    })
+    .returning({ id: backgroundJobs.id });
+
+  return job?.id;
 }
 
 async function processLeadDeliveryJob(payload: Record<string, unknown>) {
@@ -91,7 +101,9 @@ async function processLeadDeliveryJob(payload: Record<string, unknown>) {
     throw new Error("Invalid lead delivery job payload.");
   }
 
-  await syncLeadDestinations(payload.leadId, payload.leadHandoffPayload);
+  await syncLeadDestinations(payload.leadId, payload.leadHandoffPayload, {
+    skipPersistedSkipStates: payload.deliveryStateInitialized === true,
+  });
 
   if (payload.whatsappPayload && !env.skipLeadWhatsapp) {
     const result = await sendLeadWhatsAppMessage(payload.whatsappPayload, payload.leadId, {
@@ -151,17 +163,108 @@ async function processJob(job: typeof backgroundJobs.$inferSelect) {
   await processLeadDeliveryJob(job.payload);
 }
 
+async function claimPendingJob(
+  jobId: number,
+  now: Date,
+  staleLeaseCutoff: Date,
+) {
+  const db = getDb();
+
+  if (!db) {
+    return undefined;
+  }
+
+  const [claimedJob] = await db
+    .update(backgroundJobs)
+    .set({
+      status: "processing",
+      attempts: sql`${backgroundJobs.attempts} + 1`,
+      lockedAt: now,
+      updatedAt: now,
+    })
+    .where(
+      and(
+        eq(backgroundJobs.id, jobId),
+        or(
+          eq(backgroundJobs.status, "pending"),
+          and(
+            eq(backgroundJobs.status, "processing"),
+            lt(backgroundJobs.lockedAt, staleLeaseCutoff),
+          ),
+        ),
+      ),
+    )
+    .returning();
+
+  return claimedJob;
+}
+
+async function processClaimedJob(job: typeof backgroundJobs.$inferSelect) {
+  const db = getDb();
+
+  if (!db) {
+    return { processed: 0, failed: 0 };
+  }
+
+  try {
+    await processJob(job);
+    await db
+      .update(backgroundJobs)
+      .set({
+        status: "completed",
+        completedAt: new Date(),
+        lockedAt: null,
+        lastError: null,
+        updatedAt: new Date(),
+      })
+      .where(eq(backgroundJobs.id, job.id));
+    return { processed: 1, failed: 0 };
+  } catch (error) {
+    const attempts = job.attempts;
+    const status = attempts >= job.maxAttempts ? "failed" : "pending";
+    const runAfter = new Date(Date.now() + getRetryDelayMs(attempts));
+
+    await db
+      .update(backgroundJobs)
+      .set({
+        status,
+        runAfter,
+        lockedAt: null,
+        lastError: truncateError(error),
+        updatedAt: new Date(),
+      })
+      .where(eq(backgroundJobs.id, job.id));
+    return { processed: 0, failed: 1 };
+  }
+}
+
+/**
+ * Handle the job just created by a lead submission. This preserves durable
+ * retries, but avoids scanning the queue (and unrelated peer-call cleanup)
+ * for every conversion.
+ */
+export async function processBackgroundJobById(jobId: number) {
+  const now = new Date();
+  const staleLeaseCutoff = new Date(now.getTime() - JOB_LEASE_TIMEOUT_MS);
+  const claimedJob = await claimPendingJob(jobId, now, staleLeaseCutoff);
+
+  if (!claimedJob) {
+    return { processed: 0, failed: 0 };
+  }
+
+  return processClaimedJob(claimedJob);
+}
+
 export async function processPendingBackgroundJobs(options: ProcessJobsOptions = {}) {
   const db = getDb();
 
   if (!db) {
-    return { processed: 0, failed: 0, expiredCallsCleaned: 0 };
+    return { processed: 0, failed: 0 };
   }
 
   const now = new Date();
   const staleLeaseCutoff = new Date(now.getTime() - JOB_LEASE_TIMEOUT_MS);
   const limit = Math.max(1, Math.min(options.limit ?? 10, 50));
-  const expiredCallsCleaned = await cleanupExpiredPeerCallSessions();
   const pendingJobs = await db
     .select()
     .from(backgroundJobs)
@@ -183,65 +286,22 @@ export async function processPendingBackgroundJobs(options: ProcessJobsOptions =
   let failed = 0;
 
   for (const pendingJob of pendingJobs) {
-    const [claimedJob] = await db
-      .update(backgroundJobs)
-      .set({
-        status: "processing",
-        attempts: sql`${backgroundJobs.attempts} + 1`,
-        lockedAt: now,
-        updatedAt: now,
-      })
-      .where(
-        and(
-          eq(backgroundJobs.id, pendingJob.id),
-          or(
-            eq(backgroundJobs.status, "pending"),
-            and(
-              eq(backgroundJobs.status, "processing"),
-              lt(backgroundJobs.lockedAt, staleLeaseCutoff)
-            )
-          )
-        )
-      )
-      .returning();
+    const claimedJob = await claimPendingJob(
+      pendingJob.id,
+      now,
+      staleLeaseCutoff,
+    );
 
     if (!claimedJob) {
       continue;
     }
 
-    try {
-      await processJob(claimedJob);
-      await db
-        .update(backgroundJobs)
-        .set({
-          status: "completed",
-          completedAt: new Date(),
-          lockedAt: null,
-          lastError: null,
-          updatedAt: new Date(),
-        })
-        .where(eq(backgroundJobs.id, claimedJob.id));
-      processed += 1;
-    } catch (error) {
-      const attempts = claimedJob.attempts;
-      const status = attempts >= claimedJob.maxAttempts ? "failed" : "pending";
-      const runAfter = new Date(Date.now() + getRetryDelayMs(attempts));
-
-      await db
-        .update(backgroundJobs)
-        .set({
-          status,
-          runAfter,
-          lockedAt: null,
-          lastError: truncateError(error),
-          updatedAt: new Date(),
-        })
-        .where(eq(backgroundJobs.id, claimedJob.id));
-      failed += 1;
-    }
+    const result = await processClaimedJob(claimedJob);
+    processed += result.processed;
+    failed += result.failed;
   }
 
-  return { processed, failed, expiredCallsCleaned };
+  return { processed, failed };
 }
 
 export async function retryBackgroundJobs(jobIds: number[]) {

@@ -2,14 +2,13 @@
 
 import { and, eq, gte } from "drizzle-orm";
 import { cookies, headers } from "next/headers";
-import { revalidateTag } from "next/cache";
 import { redirect } from "next/navigation";
 import { after } from "next/server";
 import { z } from "zod";
 
 import {
   enqueueLeadDeliveryJob,
-  processPendingBackgroundJobs,
+  processBackgroundJobById,
 } from "@/lib/background-jobs";
 import {
   ClientContext,
@@ -155,6 +154,16 @@ export async function submitLeadAction(
     let insertedLeadId: number | undefined;
 
     if (db) {
+      const deliveryRoute = getLeadDeliveryRoute(data.sourcePath);
+      const shouldSyncCrm = deliveryRoute.crm && env.hasCrmLeadSyncConfig;
+      const shouldSyncPabbly =
+        deliveryRoute.pabbly && env.hasPabblyLeadWebhook;
+      const shouldSyncLeadSquared =
+        deliveryRoute.leadSquared &&
+        neetScore !== undefined &&
+        neetScore < 400 &&
+        env.hasLeadSquaredConfig;
+
       const [recentLead] = await db
         .select({ id: leads.id })
         .from(leads)
@@ -233,16 +242,15 @@ export async function submitLeadAction(
         ipAddress,
         acceptLanguage: headerStore.get("accept-language") ?? null,
         clientContext,
-        crmSyncStatus: env.hasCrmLeadSyncConfig ? "pending" : "skipped",
-        pabblySyncStatus: env.hasPabblyLeadWebhook ? "pending" : "skipped",
+        crmSyncStatus: shouldSyncCrm ? "pending" : "skipped",
+        pabblySyncStatus: shouldSyncPabbly ? "pending" : "skipped",
+        leadSquaredSyncStatus: shouldSyncLeadSquared ? "pending" : "skipped",
         createdAt: submittedAt,
       }).returning({
         id: leads.id,
       });
 
       insertedLeadId = insertedLead?.id;
-
-      revalidateTag("admin-leads", "minutes");
 
       const handoffPayload = buildLeadHandoffPayload({
         leadKind: "general_enquiry",
@@ -277,11 +285,10 @@ export async function submitLeadAction(
       });
 
       if (insertedLeadId) {
-        const deliveryRoute = getLeadDeliveryRoute(data.sourcePath);
-
-        await enqueueLeadDeliveryJob({
+        const jobId = await enqueueLeadDeliveryJob({
           leadId: insertedLeadId,
           leadHandoffPayload: handoffPayload,
+          deliveryStateInitialized: true,
           whatsappPayload: deliveryRoute.whatsapp
             ? {
                 fullName: data.fullName,
@@ -294,8 +301,8 @@ export async function submitLeadAction(
             : undefined,
         });
 
-        if (env.enableInlineJobProcessing) {
-          after(() => processPendingBackgroundJobs({ limit: 1 }));
+        if (env.enableInlineJobProcessing && jobId) {
+          after(() => processBackgroundJobById(jobId));
         }
       }
     } else {
