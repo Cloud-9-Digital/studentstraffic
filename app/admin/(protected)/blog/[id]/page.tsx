@@ -3,7 +3,6 @@ import Link from "next/link";
 import { eq } from "drizzle-orm";
 import { ArrowLeft, Trash2 } from "lucide-react";
 import { notFound } from "next/navigation";
-import { connection } from "next/server";
 
 import { updateBlogPostAction, deleteBlogPostAction } from "@/app/_actions/manage-blog";
 import { BlogEditor } from "@/components/admin/blog-editor";
@@ -11,16 +10,11 @@ import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
 
-export default async function EditBlogPostPage({
+export default function EditBlogPostPage({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
-  // This authenticated editor always needs an incoming request. Mark the
-  // route dynamic before rendering its Suspense boundary so Cache Components
-  // does not attempt to prerender an admin record at build time.
-  await connection();
-
   return (
     <Suspense fallback={<EditBlogPostFallback />}>
       <EditBlogPostContent params={params} />

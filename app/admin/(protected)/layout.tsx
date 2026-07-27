@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import { connection } from "next/server";
 
 import { AdminShell } from "@/components/admin/admin-shell";
 import { requireAdminSession } from "@/lib/auth";
@@ -33,10 +32,6 @@ async function AuthenticatedAdminShell({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Admin pages always depend on the request-bound session. Explicitly defer
-  // this subtree until a request arrives so Cache Components does not attempt
-  // to prerender protected pages during the production build.
-  await connection();
   const session = await requireAdminSession();
 
   return <AdminShell session={session}>{children}</AdminShell>;

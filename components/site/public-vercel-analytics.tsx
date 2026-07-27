@@ -2,6 +2,7 @@
 
 import { Analytics } from "@vercel/analytics/next";
 import { usePathname } from "next/navigation";
+import { Suspense } from "react";
 
 const privateRoutePattern = /^\/(?:admin|dashboard)(?:\/|$)/;
 
@@ -10,7 +11,7 @@ const privateRoutePattern = /^\/(?:admin|dashboard)(?:\/|$)/;
  * from staff-only routes consume Vercel Web Analytics usage without improving
  * marketing or product decisions.
  */
-export function PublicVercelAnalytics() {
+function PublicVercelAnalyticsContent() {
   const pathname = usePathname();
 
   if (privateRoutePattern.test(pathname ?? "")) {
@@ -18,4 +19,14 @@ export function PublicVercelAnalytics() {
   }
 
   return <Analytics />;
+}
+
+export function PublicVercelAnalytics() {
+  // usePathname() is request-bound during prerendering. Keep it inside a
+  // local boundary so it never blocks a route's static shell.
+  return (
+    <Suspense fallback={null}>
+      <PublicVercelAnalyticsContent />
+    </Suspense>
+  );
 }
