@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Suspense } from "react";
 import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 
 import { AppChrome } from "@/components/app/app-chrome";
 import { NavCountriesClientProvider } from "@/components/app/nav-countries-client-provider";
@@ -13,6 +12,7 @@ import { getNavCourses } from "@/lib/data/nav-courses";
 import { getNavUniversitiesByCountry } from "@/lib/data/nav-universities";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
+import { PublicVercelAnalytics } from "@/components/site/public-vercel-analytics";
 import { JsonLd } from "@/components/shared/json-ld";
 import { Toaster } from "@/components/ui/sonner";
 import { defaultMetadata } from "@/lib/metadata";
@@ -80,7 +80,7 @@ export default async function RootLayout({
             </NavCoursesClientProvider>
           </NavCountriesClientProvider>
         </Providers>
-        <Analytics />
+        <PublicVercelAnalytics />
         <Toaster position="top-center" />
         <JsonLd
           data={getStructuredDataGraph([

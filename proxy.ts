@@ -104,8 +104,9 @@ export const config = {
      * - /api/india-mbbs-finder
      * - /api/courses-directory
      * - /api/comparisons
+     * - /api/mobile/v1/universities
      */
     "/dashboard/:path*",
-    "/api/((?!finder(?:/|$)|suggestions(?:/|$)|india-mbbs-finder(?:/|$)|courses-directory(?:/|$)|comparisons(?:/|$)).*)",
+    "/api/((?!finder(?:/|$)|suggestions(?:/|$)|india-mbbs-finder(?:/|$)|courses-directory(?:/|$)|comparisons(?:/|$)|mobile/v1/universities(?:/|$)).*)",
   ],
 };

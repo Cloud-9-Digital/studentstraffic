@@ -31,10 +31,6 @@ const catalogStaticPaths = [
   "/universities",
   "/courses",
   "/countries",
-  "/compare",
-  "/budget",
-  "/api/comparisons",
-  "/api/courses-directory",
 ] as const;
 
 function parseStringList(value: unknown): string[] {
@@ -157,6 +153,10 @@ export async function POST(request: NextRequest) {
     tags.add("comparison-guides");
     tags.add("budget-guides");
 
+    // Keep the primary discovery indexes immediately fresh. The comparison,
+    // budget and catalogue API indexes are already CDN-cached independently;
+    // invalidating them for every single university or media update produces
+    // several unnecessary ISR writes and origin regenerations.
     for (const path of catalogStaticPaths) {
       staticPaths.add(path);
     }
