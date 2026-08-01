@@ -75,12 +75,23 @@ const nextConfig: NextConfig = {
   // data while rendering the production catalog.
   enablePrerenderSourceMaps: false,
   cacheLife: {
-    // Catalog entities change infrequently. Keep them hot for a week and
-    // invalidate their tags explicitly after an editorial/data publish.
+    // Catalog entities only change when an editorial/data publish runs, and
+    // every publish path already invalidates the exact tags it touched
+    // (publishCatalogPayload fans out `country:<slug>`, `university:<slug>`,
+    // `course-programs:<slug>`, ... via scripts/lib/trigger-revalidate).
+    //
+    // So there is no reason to refresh on a timer: a time-based revalidate
+    // just re-runs every catalog query on a schedule and re-renders pages
+    // whose content did not change. That timer was regenerating ~586 pages an
+    // hour and was the single largest source of steady database load.
+    //
+    // `revalidate` is a year and `expire` is deliberately omitted, which Next
+    // treats as INFINITE_CACHE - entries never expire on their own. Tag
+    // invalidation is the only thing that refreshes them. `expire` must stay
+    // omitted (or exceed `revalidate`) or Next rejects the config.
     catalog: {
       stale: 300,
-      revalidate: 60 * 60 * 24 * 7,
-      expire: 60 * 60 * 24 * 30,
+      revalidate: 60 * 60 * 24 * 365,
     },
   },
   experimental: {

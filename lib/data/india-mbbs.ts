@@ -152,7 +152,7 @@ export async function getIndiaMbbsFilterOptions(): Promise<
 > {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("india-medical-colleges");
   cacheTag("india-medical-programs");
   cacheTag("india-mbbs-finder");
@@ -310,7 +310,7 @@ async function cachedIndiaMbbsCollegesPage(
 ): Promise<IndiaMbbsPage> {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("india-medical-colleges");
   cacheTag("india-medical-programs");
   cacheTag("india-mbbs-finder");
@@ -340,7 +340,7 @@ export async function queryIndiaMbbsCollegesPage(
 export async function getIndiaMbbsCollegeSlugs(limit = 24) {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("india-medical-colleges");
 
   const db = getDb();
@@ -359,7 +359,7 @@ export async function getIndiaMbbsCollegeSlugs(limit = 24) {
 export async function getAllIndiaMbbsCollegeEntries() {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("india-medical-colleges");
 
   const db = getDb();
@@ -387,7 +387,7 @@ export async function getIndiaMbbsCollegeBySlug(
 ): Promise<IndiaMbbsCollegeDetail | null> {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("india-medical-colleges");
   cacheTag("india-medical-programs");
   cacheTag("india-mbbs-finder");

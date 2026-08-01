@@ -13,6 +13,7 @@ import {
   indiaMedicalColleges,
   indiaMedicalPrograms,
 } from "@/lib/db/schema";
+import { triggerRevalidate } from "./lib/trigger-revalidate";
 
 type ParsedArgs = {
   filePath: string;
@@ -406,6 +407,16 @@ async function main() {
   console.log(
     `Imported ${importedPrograms} India medical program rows into india_medical_programs. Skipped ${skipped} rows (${skippedForMissingCode} without a validated NMC college code).`,
   );
+
+  // See import-india-mbbs-colleges.ts: the India MBBS caches never expire on a
+  // timer, so an out-of-band import must invalidate its own tags.
+  if (importedPrograms > 0) {
+    await triggerRevalidate([
+      "india-medical-colleges",
+      "india-medical-programs",
+      "india-mbbs-finder",
+    ]);
+  }
 }
 
 main().catch((error) => {

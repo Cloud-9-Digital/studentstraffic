@@ -26,7 +26,7 @@ export async function getNavCourses(): Promise<NavCourse[]> {
   // Shared remote cache - see getNavCountries in ./nav-countries for why plain
   // `use cache` was not enough here.
   "use cache: remote";
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("courses");
 

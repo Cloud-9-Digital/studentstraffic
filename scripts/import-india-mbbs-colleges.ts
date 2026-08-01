@@ -10,6 +10,7 @@ import {
   buildIndiaProgramSlug,
 } from "@/lib/india-mbbs-slugs";
 import { indiaMedicalColleges, indiaMedicalPrograms } from "@/lib/db/schema";
+import { triggerRevalidate } from "./lib/trigger-revalidate";
 
 type ParsedArgs = {
   filePath: string;
@@ -421,6 +422,17 @@ async function main() {
   console.log(
     `Imported ${imported} India MBBS college rows into india_medical_colleges and india_medical_programs. Skipped ${skipped} rows.`,
   );
+
+  // The India MBBS read paths cache under the never-expiring "catalog" profile,
+  // so nothing refreshes them on a timer. This out-of-band write has to bust the
+  // tags itself or the imported rows would stay invisible indefinitely.
+  if (imported > 0) {
+    await triggerRevalidate([
+      "india-medical-colleges",
+      "india-medical-programs",
+      "india-mbbs-finder",
+    ]);
+  }
 }
 
 main().catch((error) => {

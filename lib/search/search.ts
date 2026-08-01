@@ -437,7 +437,7 @@ function getMonotonicTimeMs() {
 async function hasSearchBm25Index() {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("search");
 
   const db = getDb();
@@ -750,7 +750,7 @@ async function cachedSearchCatalogResultSet(
 ): Promise<SearchCatalogResultSet> {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("search");
   cacheTag("india-colleges");

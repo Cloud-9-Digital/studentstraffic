@@ -50,7 +50,7 @@ export async function getRelatedContent({
   limit = 6,
 }: GetRelatedContentInput): Promise<RelatedContentItem[]> {
   "use cache: remote";
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("study-abroad-guides");
 

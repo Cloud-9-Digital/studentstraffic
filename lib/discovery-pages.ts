@@ -225,7 +225,7 @@ async function buildComparisonGuides() {
 async function getCachedComparisonGuides() {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("comparison-guides");
 
@@ -292,7 +292,7 @@ async function getCachedComparisonGuidesForUniversity(
 ) {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("comparison-guides");
   cacheTag(`university-comparison-guides:${universitySlug}`);
@@ -383,7 +383,7 @@ async function buildCountryComparisonGuides() {
 async function getCachedCountryComparisonGuides() {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("comparison-guides");
   cacheTag("country-comparison-guides");
@@ -498,7 +498,7 @@ async function buildBudgetComparisonGuides() {
 async function getCachedBudgetComparisonGuides() {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("comparison-guides");
   cacheTag("budget-comparison-guides");
@@ -648,7 +648,7 @@ export async function getBudgetGuidesForCourse(courseSlug: string) {
 export async function getBudgetGuideSummaries(): Promise<BudgetGuideSummary[]> {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("budget-guides");
 
