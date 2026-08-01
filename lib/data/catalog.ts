@@ -524,7 +524,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
 }
 
 export async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -550,7 +550,7 @@ export async function getCatalogSnapshot(): Promise<CatalogSnapshot> {
 }
 
 export async function getSitemapCatalogData(): Promise<SitemapCatalogData> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -655,7 +655,7 @@ export async function getSitemapCatalogData(): Promise<SitemapCatalogData> {
 }
 
 export async function getCountries() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -673,7 +673,7 @@ export async function getCountries() {
 }
 
 export async function getCountryCount() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -686,7 +686,7 @@ export async function getCountryCount() {
 }
 
 export async function getCountryBySlug(slug: string) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -706,7 +706,7 @@ export async function getCountryBySlug(slug: string) {
 }
 
 export async function getCourses() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -724,7 +724,7 @@ export async function getCourses() {
 }
 
 export async function getCourseBySlug(slug: string) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -744,7 +744,7 @@ export async function getCourseBySlug(slug: string) {
 }
 
 export async function getCourseCatalogStats() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -812,7 +812,7 @@ export const getUniversityBySlug = cache(async (slug: string) => {
 });
 
 export async function getCatalogLinkOptions() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -837,7 +837,7 @@ export async function getCatalogLinkOptions() {
 }
 
 export async function getUniversityMediaBySlugs(slugs: string[]) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -864,7 +864,7 @@ export async function getUniversityMediaBySlugs(slugs: string[]) {
 }
 
 export async function getPublishedBlogPostMetadata() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("days");
   cacheTag("blog");
@@ -899,7 +899,7 @@ export async function getPublishedBlogPostMetadata() {
 export async function getAllPublishedBlogPostsMetadata(): Promise<
   BlogPostSearchMetadata[]
 > {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("days");
   cacheTag("blog");
@@ -943,7 +943,7 @@ export async function getAllPublishedBlogPostsMetadata(): Promise<
 export async function getPublishedBlogPostBySlug(
   slug: string,
 ): Promise<BlogPostSearchMetadata | null> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("days");
   // Do not attach the broad "blog" tag here. That tag belongs to the index;
@@ -1008,7 +1008,7 @@ export async function getLandingPageSlugs() {
 }
 
 async function getFinderProgramsBase() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -1655,7 +1655,7 @@ function getOneFinderProgramPerUniversity(programs: FinderProgram[]) {
 }
 
 export async function listFinderPrograms(filters: FinderFilters) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -1777,17 +1777,34 @@ function toFinderCardProgram(program: FinderProgram): FinderCardProgram {
   };
 }
 
-export async function queryFinderCardProgramsPage(
+/**
+ * Normalises facet values so filters differing only in case or spacing share a
+ * cache entry. `use cache` keys on its arguments, so "Russia" and "russia"
+ * would otherwise be two entries for one result set.
+ */
+function normalizeFinderFilters(filters: FinderFilters): FinderFilters {
+  const normalizeValue = (value: string | undefined) => {
+    if (!value) return undefined;
+    return value.trim().replace(/\s+/g, " ").toLowerCase() || undefined;
+  };
+
+  return {
+    ...filters,
+    q: normalizeValue(filters.q),
+    country: normalizeValue(filters.country),
+    city: normalizeValue(filters.city),
+    level: normalizeValue(filters.level),
+    course: normalizeValue(filters.course),
+    medium: normalizeValue(filters.medium),
+    intake: normalizeValue(filters.intake),
+  };
+}
+
+async function executeFinderCardProgramsPage(
   filters: FinderFilters,
-  page = 1,
-  pageSize = finderPageSize,
+  page: number,
+  pageSize: number,
 ): Promise<FinderCardProgramsPage> {
-  "use cache";
-
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("finder");
-
   const safePageSize = Number.isFinite(pageSize)
     ? Math.min(Math.max(Math.floor(pageSize), 1), 100)
     : finderPageSize;
@@ -1822,8 +1839,40 @@ export async function queryFinderCardProgramsPage(
   };
 }
 
+async function cachedFinderCardProgramsPage(
+  filters: FinderFilters,
+  page: number,
+  pageSize: number,
+): Promise<FinderCardProgramsPage> {
+  "use cache: remote";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("finder");
+
+  return executeFinderCardProgramsPage(filters, page, pageSize);
+}
+
+export async function queryFinderCardProgramsPage(
+  filters: FinderFilters,
+  page = 1,
+  pageSize = finderPageSize,
+): Promise<FinderCardProgramsPage> {
+  const normalized = normalizeFinderFilters(filters);
+
+  // Free-text search is unbounded user input: every distinct phrase would mint
+  // a cache entry written once and rarely read again. Facet browsing
+  // (country/city/level/course/sort/page) is a small, heavily reused key space
+  // and stays cached — that is the path landing pages and crawlers hit.
+  if (normalized.q) {
+    return executeFinderCardProgramsPage(normalized, page, pageSize);
+  }
+
+  return cachedFinderCardProgramsPage(normalized, page, pageSize);
+}
+
 export async function getFinderOptions(): Promise<FinderOptions> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -1958,7 +2007,7 @@ export async function getFinderOptions(): Promise<FinderOptions> {
 }
 
 export async function getFeaturedPrograms(limit = 4) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -1984,7 +2033,7 @@ export async function getFeaturedPrograms(limit = 4) {
 }
 
 export async function getProgramPreviewForCountry(countrySlug: string, limit = 8) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2025,7 +2074,7 @@ export type CountryProgramDirectoryRow = {
 };
 
 export async function getCountryProgramDirectoryRows(countrySlug: string) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2092,7 +2141,7 @@ export async function getCountryProgramDirectoryRows(countrySlug: string) {
 }
 
 export async function getProgramPreviewForCourse(courseSlug: string, limit = 3) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2109,7 +2158,7 @@ export async function getProgramPreviewForCourse(courseSlug: string, limit = 3) 
 }
 
 export async function getCourseProgramDirectorySummary(courseSlug: string) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2146,7 +2195,7 @@ export async function getCourseProgramDirectorySummary(courseSlug: string) {
 }
 
 export async function getProgramsForUniversity(universitySlug: string) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2193,7 +2242,7 @@ export async function getProgramBySlug(programSlug: string) {
 }
 
 export async function getProgramsForCity(citySlug: string) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2227,7 +2276,7 @@ export async function getProgramsForCity(citySlug: string) {
 }
 
 export async function getUniqueCities() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2306,7 +2355,7 @@ export async function getRelatedLandingPages(
 }
 
 export async function getFeaturedUniversities(limit = 4) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2365,7 +2414,7 @@ export async function getSitemapStaticUrls() {
 }
 
 export async function getUniversitySitemapSlice(start: number, end: number) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2414,7 +2463,7 @@ export async function getUniversitySitemapSlice(start: number, end: number) {
 }
 
 export async function getPublishedUniversityCount() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2433,7 +2482,7 @@ export async function getPublishedUniversityCount() {
 }
 
 export async function getPublishedUniversityParams(limit: number) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2451,7 +2500,7 @@ export async function getPublishedUniversityParams(limit: number) {
 }
 
 export async function getPublishedProgramCount() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -2479,7 +2528,7 @@ export async function getPublishedProgramCount() {
 }
 
 export async function getProgramSitemapSlice(start: number, end: number) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");

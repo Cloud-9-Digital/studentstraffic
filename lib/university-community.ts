@@ -35,7 +35,7 @@ export function getUniversityPeersTag(universitySlug: string) {
 export async function getUniversityPeerAvailability(
   universitySlug: string
 ): Promise<UniversityPeerAvailability> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
   cacheTag(getUniversityPeersTag(universitySlug));
@@ -101,7 +101,7 @@ export type PublicPeer = {
 export async function getActivePeersForUniversity(
   universitySlug: string
 ): Promise<PeerWithUniversity[]> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
   cacheTag(getUniversityPeersTag(universitySlug));
@@ -155,7 +155,7 @@ export type PeerWithUniversity = PublicPeer & {
 };
 
 export async function getAllActivePeers(): Promise<PeerWithUniversity[]> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
 
@@ -210,7 +210,7 @@ export type UniversityWithPeers = {
 };
 
 export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithPeers[]> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
 
@@ -279,7 +279,7 @@ export async function getUniversitiesWithPeerProfiles(): Promise<UniversityWithP
 export async function getUniversitiesWithActivePeers(
   limit = 6
 ): Promise<PeerUniversity[]> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
 

@@ -7,7 +7,7 @@ import { NavCountriesClientProvider } from "@/components/app/nav-countries-clien
 import { NavCoursesClientProvider } from "@/components/app/nav-courses-client-provider";
 import { NavUniversitiesClientProvider } from "@/components/app/nav-universities-client-provider";
 import { Providers } from "@/components/app/providers";
-import { getNavCountries, getNavCountriesByRegion } from "@/lib/data/nav-countries";
+import { getNavCountries } from "@/lib/data/nav-countries";
 import { getNavCourses } from "@/lib/data/nav-courses";
 import { getNavUniversitiesByCountry } from "@/lib/data/nav-universities";
 import { GoogleAnalytics } from "@/components/google-analytics";
@@ -51,9 +51,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [navCountries, navCountriesByRegion, navUniversitiesByCountry, navCourses] = await Promise.all([
+  const [navCountries, navUniversitiesByCountry, navCourses] = await Promise.all([
     getNavCountries(),
-    getNavCountriesByRegion(),
     getNavUniversitiesByCountry(),
     getNavCourses(),
   ]);
@@ -71,7 +70,7 @@ export default async function RootLayout({
         <Providers>
           <Suspense><GoogleAnalytics /></Suspense>
           <Suspense><MetaPixel /></Suspense>
-          <NavCountriesClientProvider countries={navCountries} regionGroups={navCountriesByRegion}>
+          <NavCountriesClientProvider countries={navCountries}>
             <NavCoursesClientProvider courses={navCourses}>
               <NavUniversitiesClientProvider countryGroups={navUniversitiesByCountry}>
                 <AppChrome>{children}</AppChrome>

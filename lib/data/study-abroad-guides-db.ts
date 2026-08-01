@@ -15,7 +15,7 @@ export type StudyAbroadGuideRow = {
 };
 
 export async function getPublishedStudyAbroadGuideSlugs(): Promise<string[]> {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("study-abroad-guides");
@@ -34,7 +34,7 @@ export async function getPublishedStudyAbroadGuideSlugs(): Promise<string[]> {
 export async function getStudyAbroadGuideBySlug(
   slug: string,
 ): Promise<StudyAbroadGuideRow | null> {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("study-abroad-guides");

@@ -395,7 +395,7 @@ async function searchInMemory(
 }
 
 async function getCachedSearchDocuments(): Promise<SearchDocument[]> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("catalog");
   cacheTag("catalog");
@@ -424,7 +424,7 @@ function getMonotonicTimeMs() {
 }
 
 async function hasSearchBm25Index() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
   cacheTag("search");
@@ -708,11 +708,36 @@ async function executeSearchCatalog(
   }
 }
 
-export async function searchCatalogResultSet(
+/**
+ * Collapses filter values that differ only in case or whitespace.
+ *
+ * `use cache` derives its key from the arguments, so "MBBS", "mbbs" and
+ * "mbbs  abroad" would otherwise mint three separate cache entries despite
+ * matching identically (both Typesense and the Postgres fallback are
+ * case-insensitive). Every distinct key is a cache write, and search terms are
+ * unbounded user input, so normalising here is a direct reduction in write
+ * volume for zero change in results.
+ */
+function normalizeSearchFilters(filters: SearchFilters): SearchFilters {
+  const normalizeValue = (value: string | undefined) => {
+    if (!value) return undefined;
+    const collapsed = value.trim().replace(/\s+/g, " ").toLowerCase();
+    return collapsed || undefined;
+  };
+
+  return {
+    ...filters,
+    q: normalizeValue(filters.q),
+    country: normalizeValue(filters.country),
+    course: normalizeValue(filters.course),
+  };
+}
+
+async function cachedSearchCatalogResultSet(
   filters: SearchFilters,
-  limit = 24
+  limit: number
 ): Promise<SearchCatalogResultSet> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
   cacheTag("catalog");
@@ -723,6 +748,16 @@ export async function searchCatalogResultSet(
     results: await executeSearchCatalog(filters, limit),
     generatedAtMs: getMonotonicTimeMs(),
   };
+}
+
+export async function searchCatalogResultSet(
+  filters: SearchFilters,
+  limit = 24
+): Promise<SearchCatalogResultSet> {
+  // Normalise before the cache boundary so the key space stays as small as the
+  // result space. Doing this inside the cached function would be too late — the
+  // raw arguments would already have formed the key.
+  return cachedSearchCatalogResultSet(normalizeSearchFilters(filters), limit);
 }
 
 export async function searchCatalog(

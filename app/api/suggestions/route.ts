@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cacheLife, cacheTag } from "next/cache";
-import { and, asc, eq, ilike, or } from "drizzle-orm";
+import { asc, eq } from "drizzle-orm";
 
 import { getAllLandingPages } from "@/lib/data/catalog";
 import { getDb } from "@/lib/db/server";
@@ -158,29 +158,50 @@ function getTypeRank(type: Suggestion["type"]) {
   }
 }
 
-async function getSuggestionSource(query: string): Promise<SuggestionSource> {
-  "use cache";
+/** Case-insensitive substring test, mirroring Postgres `ilike '%needle%'`. */
+function matchesAny(needle: string, ...haystacks: Array<string | null>) {
+  const target = needle.toLowerCase();
+  return haystacks.some(
+    (value) => value != null && value.toLowerCase().includes(target),
+  );
+}
 
-  cacheLife("hours");
+/**
+ * The full searchable catalogue, cached as a SINGLE entry.
+ *
+ * This deliberately takes no arguments. `use cache` derives its key from the
+ * function's arguments and closure variables, so the previous version — which
+ * took the raw query string — minted a distinct cache entry for every prefix a
+ * visitor typed ("ka", "kaz", "kaza", ...), each holding up to ~112 rows.
+ * Cardinality was unbounded and most entries were written once and never read
+ * again, which pushed cache writes above cache reads and made incremental-cache
+ * writes the largest single driver of this project's Vercel usage.
+ *
+ * Caching the whole catalogue once follows the existing precedent in
+ * getSitemapCatalogData(), which already selects every published university
+ * into one "use cache: remote" entry under the same cacheLife profile.
+ *
+ * Keep this argument-free. If the catalogue grows past what is comfortable to
+ * hold in one entry, the answer is a dedicated search index — not a return to
+ * per-query cache keys.
+ */
+async function getSuggestionIndex(): Promise<
+  Omit<SuggestionSource, "landingPages">
+> {
+  "use cache: remote";
+
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("finder");
   cacheTag("suggestions");
 
-  const landingPages = await getAllLandingPages();
   const db = getDb();
 
   if (!db) {
-    return {
-      countries: [],
-      courses: [],
-      universities: [],
-      indiaColleges: [],
-      landingPages,
-    };
+    return { countries: [], courses: [], universities: [], indiaColleges: [] };
   }
 
-  const pattern = `%${query}%`;
-  const [countries, courses, universities, indiaCollegeRows] = await Promise.all([
+  const [countries, courses, universities, indiaColleges] = await Promise.all([
     db
       .select({
         slug: countriesTable.slug,
@@ -188,14 +209,7 @@ async function getSuggestionSource(query: string): Promise<SuggestionSource> {
         region: countriesTable.region,
       })
       .from(countriesTable)
-      .where(
-        or(
-          ilike(countriesTable.name, pattern),
-          ilike(countriesTable.region, pattern),
-        ),
-      )
-      .orderBy(asc(countriesTable.name))
-      .limit(12),
+      .orderBy(asc(countriesTable.name)),
     db
       .select({
         slug: coursesTable.slug,
@@ -203,17 +217,8 @@ async function getSuggestionSource(query: string): Promise<SuggestionSource> {
         shortName: coursesTable.shortName,
       })
       .from(coursesTable)
-      .where(
-        and(
-          eq(coursesTable.active, true),
-          or(
-            ilike(coursesTable.name, pattern),
-            ilike(coursesTable.shortName, pattern),
-          ),
-        ),
-      )
-      .orderBy(asc(coursesTable.name))
-      .limit(20),
+      .where(eq(coursesTable.active, true))
+      .orderBy(asc(coursesTable.name)),
     db
       .select({
         slug: universitiesTable.slug,
@@ -226,18 +231,10 @@ async function getSuggestionSource(query: string): Promise<SuggestionSource> {
         countriesTable,
         eq(universitiesTable.countryId, countriesTable.id),
       )
-      .where(
-        and(
-          eq(universitiesTable.published, true),
-          or(
-            ilike(universitiesTable.name, pattern),
-            ilike(universitiesTable.city, pattern),
-            ilike(countriesTable.name, pattern),
-          ),
-        ),
-      )
-      .orderBy(asc(universitiesTable.name))
-      .limit(40),
+      .where(eq(universitiesTable.published, true))
+      .orderBy(asc(universitiesTable.name)),
+    // Kept as joined college x program rows because programName is one of the
+    // matched fields. De-duplication still happens after filtering, as before.
     db
       .select({
         slug: indiaMedicalColleges.slug,
@@ -252,24 +249,47 @@ async function getSuggestionSource(query: string): Promise<SuggestionSource> {
         indiaMedicalPrograms,
         eq(indiaMedicalPrograms.collegeId, indiaMedicalColleges.id),
       )
-      .where(
-        or(
-          ilike(indiaMedicalColleges.collegeName, pattern),
-          ilike(indiaMedicalColleges.cityName, pattern),
-          ilike(indiaMedicalColleges.stateName, pattern),
-          ilike(indiaMedicalColleges.universityName, pattern),
-          ilike(indiaMedicalPrograms.courseName, pattern),
-        ),
-      )
-      .orderBy(asc(indiaMedicalColleges.collegeName))
-      .limit(40),
+      .orderBy(asc(indiaMedicalColleges.collegeName)),
+  ]);
+
+  return { countries, courses, universities, indiaColleges };
+}
+
+/**
+ * Filters the cached index for one query. Reproduces exactly what the per-query
+ * SQL did: same matched fields, same ordering (the index is pre-sorted by the
+ * same columns) and the same result caps.
+ */
+async function getSuggestionSource(query: string): Promise<SuggestionSource> {
+  const [index, landingPages] = await Promise.all([
+    getSuggestionIndex(),
+    getAllLandingPages(),
   ]);
 
   return {
-    countries,
-    courses,
-    universities,
-    indiaColleges: dedupeIndiaColleges(indiaCollegeRows),
+    countries: index.countries
+      .filter((row) => matchesAny(query, row.name, row.region))
+      .slice(0, 12),
+    courses: index.courses
+      .filter((row) => matchesAny(query, row.name, row.shortName))
+      .slice(0, 20),
+    universities: index.universities
+      .filter((row) => matchesAny(query, row.name, row.city, row.countryName))
+      .slice(0, 40),
+    indiaColleges: dedupeIndiaColleges(
+      index.indiaColleges
+        .filter((row) =>
+          matchesAny(
+            query,
+            row.collegeName,
+            row.cityName,
+            row.stateName,
+            row.universityName,
+            row.programName,
+          ),
+        )
+        .slice(0, 40),
+    ),
     landingPages,
   };
 }

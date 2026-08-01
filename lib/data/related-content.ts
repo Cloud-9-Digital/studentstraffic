@@ -49,7 +49,7 @@ export async function getRelatedContent({
   excludeSlug,
   limit = 6,
 }: GetRelatedContentInput): Promise<RelatedContentItem[]> {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("study-abroad-guides");

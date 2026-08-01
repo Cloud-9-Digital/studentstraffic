@@ -16,11 +16,6 @@ export type NavCountry = {
   description: string;
 };
 
-export type NavCountryRegionGroup = {
-  region: string;
-  countries: NavCountry[];
-};
-
 // Re-exported for backwards compatibility with existing server-side importers.
 // Client Components should import this directly from "@/lib/data/nav-constants"
 // instead, since this file also contains "use cache" functions that must never
@@ -40,7 +35,12 @@ function deriveDescription(summary: string): string {
 }
 
 export async function getNavCountries(): Promise<NavCountry[]> {
-  "use cache";
+  // `use cache: remote` (not plain `use cache`) because this runs in the root
+  // layout on every render. Plain `use cache` is an in-memory LRU that does not
+  // persist across serverless instances, so every new Vercel instance re-ran
+  // this query - ~81k executions per 12 days, which kept the Neon compute from
+  // ever scaling to zero. The remote handler is shared across all instances.
+  "use cache: remote";
   cacheLife("catalog");
   cacheTag("countries");
 
@@ -65,44 +65,9 @@ export async function getNavCountries(): Promise<NavCountry[]> {
   }));
 }
 
-export async function getNavCountriesByRegion(): Promise<NavCountryRegionGroup[]> {
-  "use cache";
-  cacheLife("catalog");
-  cacheTag("countries");
-
-  const db = getDb();
-  if (!db) return [];
-
-  const rows = await db
-    .select({
-      slug: countriesTable.slug,
-      name: countriesTable.name,
-      summary: countriesTable.summary,
-      region: countriesTable.region,
-    })
-    .from(countriesTable)
-    .orderBy(asc(countriesTable.region), asc(countriesTable.name));
-
-  const groupsByRegion = new Map<string, NavCountry[]>();
-
-  for (const row of rows) {
-    const navCountry: NavCountry = {
-      slug: row.slug,
-      name: row.name,
-      href: getCountryHref(row.slug),
-      isoCode: getCountryFlagCode(row.slug),
-      description: deriveDescription(row.summary),
-    };
-
-    const existing = groupsByRegion.get(row.region);
-    if (existing) {
-      existing.push(navCountry);
-    } else {
-      groupsByRegion.set(row.region, [navCountry]);
-    }
-  }
-
-  return Array.from(groupsByRegion.entries())
-    .map(([region, countries]) => ({ region, countries }))
-    .sort((left, right) => left.region.localeCompare(right.region));
-}
+// A region-grouped variant used to live here and was wired through the root
+// layout into a context that nothing ever read. It cost one catalog query per
+// render and serialized a second copy of every country into each page's RSC
+// payload (RSC dedupes by object reference, and these were distinct objects).
+// If a region-grouped menu is needed again, group `getNavCountries()` on the
+// client rather than issuing a second query.

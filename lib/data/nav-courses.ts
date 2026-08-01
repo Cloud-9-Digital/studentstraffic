@@ -1,7 +1,7 @@
 import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
-import { and, asc, eq } from "drizzle-orm";
+import { and, asc, eq, exists, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import {
@@ -23,7 +23,9 @@ export type NavCourse = {
 // (e.g. the "Interested course" field in the counselling dialog). Sorted by
 // display name so the dropdown reads alphabetically.
 export async function getNavCourses(): Promise<NavCourse[]> {
-  "use cache";
+  // Shared remote cache - see getNavCountries in ./nav-countries for why plain
+  // `use cache` was not enough here.
+  "use cache: remote";
   cacheLife("hours");
   cacheTag("catalog");
   cacheTag("courses");
@@ -31,21 +33,37 @@ export async function getNavCourses(): Promise<NavCourse[]> {
   const db = getDb();
   if (!db) return [];
 
+  // EXISTS rather than DISTINCT over a three-table join: the join fanned every
+  // course out across all of its published offerings (~12.7M rows scanned per
+  // 81k calls) purely to deduplicate back down to ~157 courses. The semi-join
+  // stops at the first matching offering per course.
   const rows = await db
-    .selectDistinct({
+    .select({
       slug: courses.slug,
       name: courses.name,
       shortName: courses.shortName,
       stream: courses.stream,
     })
     .from(courses)
-    .innerJoin(programOfferings, eq(programOfferings.courseId, courses.id))
-    .innerJoin(universities, eq(programOfferings.universityId, universities.id))
     .where(
       and(
         eq(courses.active, true),
-        eq(programOfferings.published, true),
-        eq(universities.published, true),
+        exists(
+          db
+            .select({ one: sql`1` })
+            .from(programOfferings)
+            .innerJoin(
+              universities,
+              eq(programOfferings.universityId, universities.id),
+            )
+            .where(
+              and(
+                eq(programOfferings.courseId, courses.id),
+                eq(programOfferings.published, true),
+                eq(universities.published, true),
+              ),
+            ),
+        ),
       ),
     )
     .orderBy(asc(courses.name));

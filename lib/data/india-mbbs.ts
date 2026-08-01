@@ -150,7 +150,7 @@ function applySort(sort?: IndiaMbbsFilters["sort"]) {
 export async function getIndiaMbbsFilterOptions(): Promise<
   IndiaMbbsOptions & { totalColleges: number }
 > {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
   cacheTag("india-medical-colleges");
@@ -211,18 +211,33 @@ export async function getIndiaMbbsFilterOptions(): Promise<
   };
 }
 
-export async function queryIndiaMbbsCollegesPage(
-  filters: IndiaMbbsFilters = {},
-  page = 1,
-  pageSize = 12,
+/**
+ * Normalises facet values so entries differing only in case or spacing collapse
+ * onto one cache key. `use cache` keys on the arguments, so "Tamil Nadu" and
+ * "tamil nadu" would otherwise be two entries for one result set.
+ */
+function normalizeIndiaMbbsFilters(
+  filters: IndiaMbbsFilters,
+): IndiaMbbsFilters {
+  const normalizeValue = (value: string | undefined) => {
+    if (!value) return undefined;
+    return value.trim().replace(/\s+/g, " ").toLowerCase() || undefined;
+  };
+
+  return {
+    ...filters,
+    q: normalizeValue(filters.q),
+    course: normalizeValue(filters.course),
+    state: normalizeValue(filters.state),
+    management: normalizeValue(filters.management),
+  };
+}
+
+async function executeIndiaMbbsCollegesPage(
+  filters: IndiaMbbsFilters,
+  page: number,
+  pageSize: number,
 ): Promise<IndiaMbbsPage> {
-  "use cache";
-
-  cacheLife("hours");
-  cacheTag("india-medical-colleges");
-  cacheTag("india-medical-programs");
-  cacheTag("india-mbbs-finder");
-
   const db = getDb();
 
   if (!db) {
@@ -288,8 +303,42 @@ export async function queryIndiaMbbsCollegesPage(
   };
 }
 
+async function cachedIndiaMbbsCollegesPage(
+  filters: IndiaMbbsFilters,
+  page: number,
+  pageSize: number,
+): Promise<IndiaMbbsPage> {
+  "use cache: remote";
+
+  cacheLife("hours");
+  cacheTag("india-medical-colleges");
+  cacheTag("india-medical-programs");
+  cacheTag("india-mbbs-finder");
+
+  return executeIndiaMbbsCollegesPage(filters, page, pageSize);
+}
+
+export async function queryIndiaMbbsCollegesPage(
+  filters: IndiaMbbsFilters = {},
+  page = 1,
+  pageSize = 12,
+): Promise<IndiaMbbsPage> {
+  const normalized = normalizeIndiaMbbsFilters(filters);
+
+  // Free-text search is unbounded user input: each distinct phrase would mint a
+  // cache entry that is written once and almost never read again, which is how
+  // incremental-cache writes came to outweigh reads on this project. Facet
+  // browsing (state/course/management/sort/page) is a small, highly reused key
+  // space and stays cached.
+  if (normalized.q) {
+    return executeIndiaMbbsCollegesPage(normalized, Math.max(page, 1), pageSize);
+  }
+
+  return cachedIndiaMbbsCollegesPage(normalized, Math.max(page, 1), pageSize);
+}
+
 export async function getIndiaMbbsCollegeSlugs(limit = 24) {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
   cacheTag("india-medical-colleges");
@@ -308,7 +357,7 @@ export async function getIndiaMbbsCollegeSlugs(limit = 24) {
 }
 
 export async function getAllIndiaMbbsCollegeEntries() {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
   cacheTag("india-medical-colleges");
@@ -336,7 +385,7 @@ export async function getAllIndiaMbbsCollegeEntries() {
 export async function getIndiaMbbsCollegeBySlug(
   slug: string,
 ): Promise<IndiaMbbsCollegeDetail | null> {
-  "use cache";
+  "use cache: remote";
 
   cacheLife("hours");
   cacheTag("india-medical-colleges");

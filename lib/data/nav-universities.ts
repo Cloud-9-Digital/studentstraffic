@@ -1,7 +1,7 @@
 import "server-only";
 
 import { cacheLife, cacheTag } from "next/cache";
-import { asc, desc, eq } from "drizzle-orm";
+import { asc, eq, lte, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/server";
 import {
@@ -45,7 +45,9 @@ const MAX_UNIVERSITIES_PER_COUNTRY = 5;
  * trimming happens client-side (default visible count + search), not here.
  */
 export async function getNavUniversitiesByCountry(): Promise<NavUniversityCountryGroup[]> {
-  "use cache";
+  // Shared remote cache - see getNavCountries in ./nav-countries for why plain
+  // `use cache` was not enough here.
+  "use cache: remote";
   cacheLife("catalog");
   cacheTag("countries");
   cacheTag("universities");
@@ -53,23 +55,41 @@ export async function getNavUniversitiesByCountry(): Promise<NavUniversityCountr
   const db = getDb();
   if (!db) return [];
 
-  const rows = await db
+  // Rank inside SQL and keep only the rows the menu actually renders. This
+  // previously selected every published university (~690 rows) and dropped all
+  // but MAX_UNIVERSITIES_PER_COUNTRY per country in JS, so ~70% of every result
+  // set was fetched only to be discarded.
+  // Every column is aliased explicitly: countries and universities both have
+  // `slug` and `name`, and an unaliased derived table would expose duplicates
+  // that Postgres rejects as ambiguous (42702).
+  const ranked = db
     .select({
-      countrySlug: countriesTable.slug,
-      countryName: countriesTable.name,
-      universitySlug: universitiesTable.slug,
-      universityName: universitiesTable.name,
-      universityCity: universitiesTable.city,
-      featured: universitiesTable.featured,
+      countrySlug: sql<string>`${countriesTable.slug}`.as("country_slug"),
+      countryName: sql<string>`${countriesTable.name}`.as("country_name"),
+      universitySlug: sql<string>`${universitiesTable.slug}`.as("university_slug"),
+      universityName: sql<string>`${universitiesTable.name}`.as("university_name"),
+      universityCity: sql<string>`${universitiesTable.city}`.as("university_city"),
+      rank: sql<number>`row_number() over (
+        partition by ${countriesTable.slug}
+        order by ${universitiesTable.featured} desc, ${universitiesTable.name} asc
+      )`.as("rank"),
     })
     .from(universitiesTable)
     .innerJoin(countriesTable, eq(universitiesTable.countryId, countriesTable.id))
     .where(eq(universitiesTable.published, true))
-    .orderBy(
-      asc(countriesTable.name),
-      desc(universitiesTable.featured),
-      asc(universitiesTable.name),
-    );
+    .as("ranked");
+
+  const rows = await db
+    .select({
+      countrySlug: ranked.countrySlug,
+      countryName: ranked.countryName,
+      universitySlug: ranked.universitySlug,
+      universityName: ranked.universityName,
+      universityCity: ranked.universityCity,
+    })
+    .from(ranked)
+    .where(lte(ranked.rank, MAX_UNIVERSITIES_PER_COUNTRY))
+    .orderBy(asc(ranked.countryName), asc(ranked.rank));
 
   const groupsByCountry = new Map<string, NavUniversityCountryGroup>();
 
@@ -83,9 +103,7 @@ export async function getNavUniversitiesByCountry(): Promise<NavUniversityCountr
 
     const existing = groupsByCountry.get(row.countrySlug);
     if (existing) {
-      if (existing.universities.length < MAX_UNIVERSITIES_PER_COUNTRY) {
-        existing.universities.push(navUniversity);
-      }
+      existing.universities.push(navUniversity);
     } else {
       groupsByCountry.set(row.countrySlug, {
         countrySlug: row.countrySlug,
