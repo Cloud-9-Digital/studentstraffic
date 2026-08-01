@@ -158,12 +158,44 @@ function getTypeRank(type: Suggestion["type"]) {
   }
 }
 
-/** Case-insensitive substring test, mirroring Postgres `ilike '%needle%'`. */
-function matchesAny(needle: string, ...haystacks: Array<string | null>) {
-  const target = needle.toLowerCase();
-  return haystacks.some(
-    (value) => value != null && value.toLowerCase().includes(target),
-  );
+/**
+ * Case-insensitive substring test, mirroring Postgres `ilike '%needle%'`.
+ * `needle` must already be lower-cased by the caller so it is not re-lowered
+ * once per row.
+ */
+function matchesAny(lowerNeedle: string, ...haystacks: Array<string | null>) {
+  for (const value of haystacks) {
+    if (value != null && value.toLowerCase().includes(lowerNeedle)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Filters a pre-sorted list, stopping as soon as `limit` matches are found.
+ *
+ * The naive `.filter(...).slice(0, limit)` walks the entire collection even
+ * after the cap is reached — roughly 2,000 rows per request across the four
+ * entity types. Because the index is pre-sorted on the same columns the old SQL
+ * ordered by, taking the first `limit` matches in order is exactly equivalent
+ * to `ORDER BY ... LIMIT n`, so exiting early changes nothing but the work done.
+ */
+function takeMatching<T>(
+  rows: readonly T[],
+  limit: number,
+  predicate: (row: T) => boolean,
+): T[] {
+  const matched: T[] = [];
+
+  for (const row of rows) {
+    if (predicate(row)) {
+      matched.push(row);
+      if (matched.length === limit) break;
+    }
+  }
+
+  return matched;
 }
 
 /**
@@ -266,29 +298,30 @@ async function getSuggestionSource(query: string): Promise<SuggestionSource> {
     getAllLandingPages(),
   ]);
 
+  // Lower-case once for the whole request rather than once per row per field.
+  const needle = query.toLowerCase();
+
   return {
-    countries: index.countries
-      .filter((row) => matchesAny(query, row.name, row.region))
-      .slice(0, 12),
-    courses: index.courses
-      .filter((row) => matchesAny(query, row.name, row.shortName))
-      .slice(0, 20),
-    universities: index.universities
-      .filter((row) => matchesAny(query, row.name, row.city, row.countryName))
-      .slice(0, 40),
+    countries: takeMatching(index.countries, 12, (row) =>
+      matchesAny(needle, row.name, row.region),
+    ),
+    courses: takeMatching(index.courses, 20, (row) =>
+      matchesAny(needle, row.name, row.shortName),
+    ),
+    universities: takeMatching(index.universities, 40, (row) =>
+      matchesAny(needle, row.name, row.city, row.countryName),
+    ),
     indiaColleges: dedupeIndiaColleges(
-      index.indiaColleges
-        .filter((row) =>
-          matchesAny(
-            query,
-            row.collegeName,
-            row.cityName,
-            row.stateName,
-            row.universityName,
-            row.programName,
-          ),
-        )
-        .slice(0, 40),
+      takeMatching(index.indiaColleges, 40, (row) =>
+        matchesAny(
+          needle,
+          row.collegeName,
+          row.cityName,
+          row.stateName,
+          row.universityName,
+          row.programName,
+        ),
+      ),
     ),
     landingPages,
   };
