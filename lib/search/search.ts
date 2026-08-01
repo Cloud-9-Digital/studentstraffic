@@ -358,7 +358,7 @@ async function searchInMemory(
   filters: SearchFilters,
   limit: number
 ): Promise<SearchResult[]> {
-  const documents = await getCachedSearchDocuments();
+  const documents = getCachedSearchDocuments();
 
   const results = documents
     .filter((document) => matchesStaticFilters(document, filters))
@@ -394,15 +394,24 @@ async function searchInMemory(
   return rerankSearchResults(results, filters, limit);
 }
 
-async function getCachedSearchDocuments(): Promise<SearchDocument[]> {
-  "use cache: remote";
+/**
+ * In-process memo for the static fallback search documents.
+ *
+ * These are built entirely from module constants already resident in the bundle
+ * (landing-pages.ts and study-abroad-guides.ts, ~570 KB of source between them).
+ * Routing them through the remote cache meant writing that payload and reading
+ * it back over the network to reproduce data the process already held — origin
+ * transfer and serialisation cost for no benefit.
+ *
+ * A module-level memo is the correct cache here: Fluid reuses instances across
+ * requests, so this is computed at most once per warm instance, with no network
+ * hop and nothing to invalidate (the inputs only change on deploy, which
+ * replaces the instance anyway).
+ */
+let staticSearchDocumentsMemo: SearchDocument[] | undefined;
 
-  cacheLife("catalog");
-  cacheTag("catalog");
-  cacheTag("search");
-  cacheTag("india-colleges");
-
-  return buildSearchDocuments({
+function getCachedSearchDocuments(): SearchDocument[] {
+  staticSearchDocumentsMemo ??= buildSearchDocuments({
     countries: [],
     courses: [],
     universities: [],
@@ -412,6 +421,8 @@ async function getCachedSearchDocuments(): Promise<SearchDocument[]> {
     studyAbroadGuides: Object.values(studyAbroadGuides).map((guide) => guide.page),
     blogPosts: [],
   });
+
+  return staticSearchDocumentsMemo;
 }
 
 type SearchCatalogResultSet = {
@@ -757,7 +768,25 @@ export async function searchCatalogResultSet(
   // Normalise before the cache boundary so the key space stays as small as the
   // result space. Doing this inside the cached function would be too late — the
   // raw arguments would already have formed the key.
-  return cachedSearchCatalogResultSet(normalizeSearchFilters(filters), limit);
+  const normalized = normalizeSearchFilters(filters);
+
+  // Free-text search is unbounded user input. Normalising collapses case and
+  // whitespace variants but cannot bound the key space, so every novel phrase
+  // still mints an entry that is written once and never read again — the same
+  // pattern that made cache writes exceed reads across this project.
+  //
+  // Search is already backed by Typesense (see executeSearchCatalog), which is
+  // purpose-built to answer these queries directly, so skipping the incremental
+  // cache costs little and removes the unbounded writes. Facet-only requests
+  // (no `q`) are a small, reusable key space and stay cached.
+  if (normalized.q) {
+    return {
+      results: await executeSearchCatalog(normalized, limit),
+      generatedAtMs: getMonotonicTimeMs(),
+    };
+  }
+
+  return cachedSearchCatalogResultSet(normalized, limit);
 }
 
 export async function searchCatalog(
