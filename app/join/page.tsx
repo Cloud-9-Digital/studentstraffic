@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { GraduationCap, MessageCircle, Star } from "lucide-react";
@@ -66,8 +67,17 @@ export default async function JoinPage() {
 
         <div className="relative flex h-full flex-col justify-between p-12">
           <Link href="/">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-white.png" alt="Students Traffic" className="h-9 w-auto object-contain" />
+            {/* Intrinsic size is 2392x263; CSS drives the rendered height, next/image
+                handles format negotiation and downscaling. */}
+            <Image
+              src="/logo-white.png"
+              alt="Students Traffic"
+              width={2392}
+              height={263}
+              priority
+              sizes="180px"
+              className="h-9 w-auto object-contain"
+            />
           </Link>
 
           <div className="space-y-10">
@@ -107,8 +117,15 @@ export default async function JoinPage() {
       {/* ── Right: form panel ─────────────────────────────── */}
       <div className="flex flex-1 flex-col items-center justify-center bg-white px-6 py-12">
         <Link href="/" className="mb-10 lg:hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.webp" alt="Students Traffic" className="h-8 w-auto object-contain" />
+          {/* Intrinsic size is 1600x176. */}
+          <Image
+            src="/logo.webp"
+            alt="Students Traffic"
+            width={1600}
+            height={176}
+            sizes="160px"
+            className="h-8 w-auto object-contain"
+          />
         </Link>
 
         <div className="w-full max-w-[420px]">
