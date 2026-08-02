@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { cache } from "react";
 import {
   AlertTriangle,
   ArrowRight,
@@ -108,7 +109,14 @@ async function getLandingPageRouteData(slug: string) {
   };
 }
 
-async function getProgramPageData(rawSlug: string) {
+// Memoized with React's cache() so generateMetadata and the page body share
+// one fetch per request instead of two independent ones. Two independent
+// async data-fetch calls can resolve at different points relative to Next's
+// PPR postpone/resume boundaries, which was producing "Expected the resume
+// to render <div> ... instead it rendered <__next_metadata_boundary__>"
+// errors and forcing a full client-render fallback on a large share of
+// program-page requests.
+const getProgramPageData = cache(async (rawSlug: string) => {
   const { programSlug, section } = parseProgramSlug(rawSlug);
   const program = await getProgramBySlug(programSlug);
 
@@ -132,7 +140,7 @@ async function getProgramPageData(rawSlug: string) {
     countryAdvisory,
     universityAdvisory,
   };
-}
+});
 
 // Keyword-first titles/descriptions: long official university names (e.g.
 // "... named after Jusup Balasagyn") push everything after them past

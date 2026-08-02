@@ -1,5 +1,6 @@
 import { cacheLife, cacheTag } from "next/cache";
 import { sql } from "drizzle-orm";
+import { cache } from "react";
 
 import type { Country, Course, FinderProgram } from "@/lib/data/types";
 import {
@@ -510,9 +511,16 @@ export async function getBudgetComparisonGuides() {
   return getCachedBudgetComparisonGuides();
 }
 
-export async function getComparisonPageBySlug(
+// Memoized with React's cache() so generateMetadata and the page body
+// (app/compare/[slug]/page.tsx calls this once each) share one fetch per
+// request instead of two independent ones. Two independent async calls can
+// resolve at different points relative to Next's PPR postpone/resume
+// boundaries, producing "Expected the resume to render <div> ... instead it
+// rendered <__next_metadata_boundary__>" errors and forcing a full
+// client-render fallback.
+export const getComparisonPageBySlug = cache(async (
   slug: string,
-): Promise<ComparisonPage | null> {
+): Promise<ComparisonPage | null> => {
   if (slug.startsWith("country-")) {
     const summary = (await getCachedCountryComparisonGuides()).find(
       (guide) => guide.slug === slug,
@@ -594,7 +602,7 @@ export async function getComparisonPageBySlug(
   if (!left || !right) return null;
 
   return { kind: "university", slug, left, right };
-}
+});
 
 export async function getBudgetGuideBySlug(slug: string) {
   const match = /^(.+)-under-(\d+)-usd$/.exec(slug);

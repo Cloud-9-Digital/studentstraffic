@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { connection } from "next/server";
 import { notFound, redirect } from "next/navigation";
-import { Suspense } from "react";
+import { cache, Suspense } from "react";
 
 import { JsonLd } from "@/components/shared/json-ld";
 import { CardCarousel, CarouselItem } from "@/components/site/card-carousel";
@@ -129,7 +129,14 @@ async function redirectLegacySectionUrl(rawSlug: string) {
   }
 }
 
-async function getUniversityPageData(slug: string) {
+// Memoized with React's cache() so generateMetadata and the page body share
+// one fetch per request instead of two independent ones. Two independent
+// async data-fetch calls can resolve at different points relative to Next's
+// PPR postpone/resume boundaries, which was producing "Expected the resume
+// to render <div> ... instead it rendered <__next_metadata_boundary__>"
+// errors and forcing a full client-render fallback on ~30% of requests
+// across this and the sibling [slug]/compare templates.
+const getUniversityPageData = cache(async (slug: string) => {
   const university = await getUniversityBySlug(slug);
 
   if (!university) {
@@ -150,7 +157,7 @@ async function getUniversityPageData(slug: string) {
     programs,
     country,
   };
-}
+});
 
 export async function generateMetadata({
   params,
