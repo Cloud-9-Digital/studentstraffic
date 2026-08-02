@@ -43,6 +43,38 @@ export function hasOfficialFeeAmount(
   return typeof value === "number" && value > 0 && Boolean(currencyCode);
 }
 
+// Mirrors formatProgramAnnualFee's source-of-truth logic without the
+// fallback string, so callers (e.g. meta description generation) can check
+// whether a real, renderable fee exists before leading with it.
+export function hasRenderableProgramFee(
+  offering: Pick<
+    ProgramOffering,
+    | "annualTuitionUsd"
+    | "officialAnnualTuitionAmount"
+    | "officialFeeCurrency"
+    | "feeStatus"
+    | "indicativeAnnualTuitionMinUsd"
+    | "indicativeAnnualTuitionMaxUsd"
+  >
+) {
+  if (offering.feeStatus === "on_request") return false;
+
+  if (
+    offering.feeStatus === "indicative" &&
+    hasPublishedUsdAmount(offering.indicativeAnnualTuitionMinUsd) &&
+    hasPublishedUsdAmount(offering.indicativeAnnualTuitionMaxUsd)
+  ) {
+    return true;
+  }
+
+  if (hasPublishedUsdAmount(offering.annualTuitionUsd)) return true;
+
+  return hasOfficialFeeAmount(
+    offering.officialAnnualTuitionAmount,
+    offering.officialFeeCurrency
+  );
+}
+
 export function hasRenderableProgramAnnualFee(
   offering: Pick<
     ProgramOffering,

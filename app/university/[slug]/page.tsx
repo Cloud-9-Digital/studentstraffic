@@ -53,7 +53,7 @@ import {
   getUniversityInitials,
 } from "@/lib/university-media";
 import { parseUniversitySlug } from "@/lib/university-sections";
-import { hasPublishedUsdAmount } from "@/lib/utils";
+import { formatProgramAnnualFee, hasRenderableProgramFee } from "@/lib/utils";
 import { ensureNonEmptyStaticParams } from "@/lib/static-params";
 
 // Cap build-time enumeration so build times stay bounded as the catalog grows —
@@ -168,7 +168,7 @@ export async function generateMetadata({
   const primaryProgram =
     programs.find((p) => p.offering.featured) ?? programs[0];
   const primaryProgramHasPublishedFee = primaryProgram
-    ? hasPublishedUsdAmount(primaryProgram.offering.annualTuitionUsd)
+    ? hasRenderableProgramFee(primaryProgram.offering)
     : false;
   const courseName = primaryProgram?.course.shortName;
   const pathSuffix = section ? `-${section}` : "";
@@ -191,14 +191,29 @@ export async function generateMetadata({
     title = `${university.name} FAQ | ${university.faq.length > 0 ? `${university.faq.length} Questions` : "Common Questions"} Answered for Indian Students`;
     description = `Answers to the most common questions Indian students ask about ${university.name}, ${loc} — programs, hostel, and student life.`;
   } else {
+    // Google truncates SERP titles at ~60 chars. Long official university
+    // names push a trailing "Fees" past that cutoff, so it never becomes
+    // visible for "[university] fees" queries. Lead with course + "Fees"
+    // instead, university name after — survives truncation regardless of
+    // name length.
     title = primaryProgram
-      ? `${university.name} | ${courseName} ${
+      ? `${courseName} ${
           primaryProgramHasPublishedFee ? "Fees, " : ""
-        }Admissions & Course Details`
+        }Admissions & Course Details | ${university.name}`
       : `${university.name} | University Details`;
+    // Google truncates meta descriptions at ~155-160 chars in the SERP snippet.
+    // "[university] fees"-style queries are our single biggest zero-click
+    // cluster on page-1 rankings — the fee figure previously lived only deep
+    // inside `university.summary`, past that truncation point. Lead with it.
     description =
       primaryProgram && country
-        ? `${university.summary} Compare ${courseName} ${
+        ? `${
+            primaryProgramHasPublishedFee
+              ? `${university.name} ${courseName} annual fees: ${formatProgramAnnualFee(
+                  primaryProgram.offering
+                )}. `
+              : ""
+          }${university.summary} Compare ${courseName} ${
             primaryProgramHasPublishedFee ? "annual tuition, " : ""
           }medium of instruction, intake, and student support in ${university.city}, ${country.name}.`
         : university.summary;
