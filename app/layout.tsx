@@ -12,6 +12,7 @@ import { getNavCourses } from "@/lib/data/nav-courses";
 import { getNavUniversitiesByCountry } from "@/lib/data/nav-universities";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
+import { MicrosoftClarity } from "@/components/microsoft-clarity";
 import { JsonLd } from "@/components/shared/json-ld";
 import { Toaster } from "@/components/ui/sonner";
 import { defaultMetadata } from "@/lib/metadata";
@@ -70,6 +71,7 @@ export default async function RootLayout({
         <Providers>
           <Suspense><GoogleAnalytics /></Suspense>
           <Suspense><MetaPixel /></Suspense>
+          <Suspense><MicrosoftClarity /></Suspense>
           <NavCountriesClientProvider countries={navCountries}>
             <NavCoursesClientProvider courses={navCourses}>
               <NavUniversitiesClientProvider countryGroups={navUniversitiesByCountry}>

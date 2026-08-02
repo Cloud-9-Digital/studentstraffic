@@ -7,7 +7,7 @@ const mediaHostnames = (process.env.MEDIA_HOSTNAMES ?? "")
 const isDevelopment = process.env.NODE_ENV !== "production";
 const contentSecurityPolicy = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com${
+  `script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms${
     isDevelopment ? " 'unsafe-eval'" : ""
   }`,
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
