@@ -110,6 +110,11 @@ const nextConfig: NextConfig = {
         destination: "/university/:slug",
         permanent: true,
       },
+      {
+        source: "/mbbs-in-vietnam-a-to-z-guide-for-indian-students-2025",
+        destination: "/blog/mbbs-in-vietnam-2026-complete-guide",
+        permanent: true,
+      },
     ];
   },
   async headers() {

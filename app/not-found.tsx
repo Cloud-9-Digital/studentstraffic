@@ -2,10 +2,12 @@ import Link from "next/link";
 import { MoveRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { NotFoundTracker } from "@/components/site/not-found-tracker";
 
 export default function NotFound() {
   return (
     <div className="relative min-h-[88vh] overflow-hidden bg-background">
+      <NotFoundTracker />
 
       {/* Dot-grid texture */}
       <div

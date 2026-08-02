@@ -554,6 +554,25 @@ export const contactClickEvents = pgTable(
   ]
 );
 
+export const notFoundEvents = pgTable(
+  "not_found_events",
+  {
+    id: serial("id").primaryKey(),
+    path: text("path").notNull(),
+    referrer: text("referrer"),
+    userAgent: text("user_agent"),
+    ipAddress: text("ip_address"),
+    createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+  },
+  (table) => [
+    index("not_found_events_created_at_idx").on(table.createdAt),
+    index("not_found_events_path_created_at_idx").on(
+      table.path,
+      table.createdAt.desc()
+    ),
+  ]
+);
+
 export const adminUsers = pgTable(
   "admin_users",
   {

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart3, ClipboardList, FileSearch, GraduationCap, LayoutDashboard, MessageCircleMore, MessageSquareQuote, NotebookPen, SendHorizontal, Users, Users2, WalletCards } from "lucide-react";
+import { BarChart3, ClipboardList, FileSearch, GraduationCap, LayoutDashboard, LinkIcon, MessageCircleMore, MessageSquareQuote, NotebookPen, SendHorizontal, Users, Users2, WalletCards } from "lucide-react";
 import type { AdminUserRole } from "@/lib/db/schema";
 
 const navigation = [
@@ -11,6 +11,7 @@ const navigation = [
   { href: "/admin/leads", label: "Leads", icon: WalletCards, ownerOnly: false },
   { href: "/admin/lead-delivery", label: "Delivery", icon: SendHorizontal, ownerOnly: false },
   { href: "/admin/whatsapp-logs", label: "WhatsApp", icon: MessageCircleMore, ownerOnly: false },
+  { href: "/admin/not-found-logs", label: "404 Logs", icon: LinkIcon, ownerOnly: false },
   { href: "/admin/peers", label: "Students", icon: GraduationCap, ownerOnly: false },
   { href: "/admin/peer-applications", label: "Applications", icon: ClipboardList, ownerOnly: false },
   { href: "/admin/peer-requests", label: "Peer Requests", icon: Users2, ownerOnly: false },
