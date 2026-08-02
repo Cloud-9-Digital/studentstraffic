@@ -195,11 +195,13 @@ export async function generateMetadata({
     // names push a trailing "Fees" past that cutoff, so it never becomes
     // visible for "[university] fees" queries. Lead with course + "Fees"
     // instead, university name after — survives truncation regardless of
-    // name length.
+    // name length. "Complete Guide for Indian Students" matches the pattern
+    // used by every competitor checked in the GSC review — plain keyword
+    // titles ranked but read as dry metadata next to it.
     title = primaryProgram
-      ? `${courseName} ${
-          primaryProgramHasPublishedFee ? "Fees, " : ""
-        }Admissions & Course Details | ${university.name}`
+      ? primaryProgramHasPublishedFee
+        ? `${courseName} Fees at ${university.name} 2026 — Complete Guide for Indian Students`
+        : `${courseName} Admissions & Course Details — Complete Guide for Indian Students | ${university.name}`
       : `${university.name} | University Details`;
     // Google truncates meta descriptions at ~155-160 chars in the SERP snippet.
     // "[university] fees"-style queries are our single biggest zero-click
@@ -211,11 +213,9 @@ export async function generateMetadata({
             primaryProgramHasPublishedFee
               ? `${university.name} ${courseName} annual fees: ${formatProgramAnnualFee(
                   primaryProgram.offering
-                )}. `
-              : ""
-          }${university.summary} Compare ${courseName} ${
-            primaryProgramHasPublishedFee ? "annual tuition, " : ""
-          }medium of instruction, intake, and student support in ${university.city}, ${country.name}.`
+                )}. Complete 2026 guide covering tuition, eligibility, intake, medium of instruction, and admission process for Indian students — ${university.city}, ${country.name}. `
+              : `Complete 2026 guide to ${courseName} at ${university.name} for Indian students — eligibility, admissions process, medium of instruction, and student support. `
+          }${university.summary}`
         : university.summary;
   }
 

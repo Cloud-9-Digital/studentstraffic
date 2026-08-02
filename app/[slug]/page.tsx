@@ -158,9 +158,9 @@ const PROGRAM_SECTION_META: Record<
   },
   fees: {
     title: (course, university, feeText) =>
-      `${course} Fees at ${university} 2026${feeText ? `: ${feeText}` : ""} | Year-wise Tuition & Hostel Costs`,
+      `${course} Fees at ${university} 2026${feeText ? `: ${feeText}` : ""} — Complete Guide for Indian Students`,
     description: (course, university, city, feeText) =>
-      `${course} annual fees at ${university}${feeText ? `: ${feeText}` : ""}. Year-wise tuition, hostel costs, total program cost in USD, and scholarship information — ${city}.`,
+      `${course} annual fees at ${university}${feeText ? `: ${feeText}` : ""}. Complete 2026 guide covering year-wise tuition, hostel costs, total program cost in USD, and scholarship information — ${city}.`,
   },
   recognition: {
     title: (course, university) => `Is ${course} at ${university} Recognised? | Accreditation Status`,
@@ -194,9 +194,11 @@ export async function generateMetadata({
       // Balasagyn") push everything after them past Google's ~60-char title
       // truncation. Put "Fees" and the year right after the short course
       // name so they survive truncation regardless of university name length.
+      // "Complete Guide for Indian Students" matches the pattern used by
+      // every competitor checked in the GSC review.
       const title = sectionMeta
         ? sectionMeta.title(course, university.name, feeText)
-        : `${course} Fees at ${university.name} 2026 | Eligibility & Admissions`;
+        : `${course} Fees at ${university.name} 2026 — Complete Guide for Indian Students`;
       // Same truncation problem hits the description (~155-160 chars): lead
       // with the actual fee figure so Google's snippet answers the "fees"
       // query directly instead of discarding our description and scraping
@@ -205,7 +207,7 @@ export async function generateMetadata({
         ? sectionMeta.description(course, university.name, university.city, feeText)
         : `${course} annual fees at ${university.name}${
             feeText ? `: ${feeText}` : ""
-          }. Duration, fee breakdown, medium of instruction, and academic structure for Indian students, ${university.city}.`;
+          }. Complete 2026 guide covering duration, fee breakdown, eligibility, medium of instruction, and academic structure for Indian students — ${university.city}.`;
       return buildIndexableMetadata({
         title,
         description,
