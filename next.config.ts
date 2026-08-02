@@ -115,6 +115,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/mbbs-in-vietnam-2026-complete-guide",
         permanent: true,
       },
+      {
+        source: "/free-mbbs-abroad-counselling-for-indian-students",
+        destination: "/free-mbbs-in-abroad-for-indian-students",
+        permanent: true,
+      },
     ];
   },
   async headers() {

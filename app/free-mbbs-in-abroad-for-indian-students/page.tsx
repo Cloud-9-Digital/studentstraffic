@@ -5,6 +5,11 @@ import { CounsellingCtaButton } from "@/components/site/counselling-cta-button";
 import { JsonLd } from "@/components/shared/json-ld";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
+  contentAuthorName,
+  contentAuthorSlug,
+  formatContentDate,
+} from "@/lib/content-governance";
+import {
   getBreadcrumbStructuredData,
   getFaqStructuredData,
   getStructuredDataGraph,
@@ -13,6 +18,10 @@ import {
 
 const pagePath = "/free-mbbs-in-abroad-for-indian-students";
 const publishedDate = "2026-05-21";
+// Deduped the competing /free-mbbs-abroad-counselling-for-indian-students
+// URL into this page and added the visible author byline below — a real
+// content change, so the modified date moves with it.
+const updatedDate = "2026-08-02";
 
 export const metadata: Metadata = buildIndexableMetadata({
   title:
@@ -161,7 +170,7 @@ export default function FreeMbbsAbroadPage() {
       description:
         "A realistic 2026 guide on whether Indian students can study MBBS abroad for free, including scholarship routes, NMC checks, hidden costs, and practical planning advice.",
       datePublished: publishedDate,
-      dateModified: publishedDate,
+      dateModified: updatedDate,
     }),
     getBreadcrumbStructuredData([
       { name: "Home", path: "/" },
@@ -178,8 +187,16 @@ export default function FreeMbbsAbroadPage() {
       <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-accent/10 via-background to-background px-6 py-16 sm:px-8 lg:px-12">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.12),transparent_30%),linear-gradient(to_right,rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:auto,28px_28px,28px_28px]" />
         <div className="relative mx-auto max-w-5xl">
-          <div className="mb-5 inline-flex rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
-            Updated on 21 May 2026
+          <div className="mb-5 flex flex-wrap items-center gap-3 text-sm">
+            <span className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-4 py-2 font-medium text-accent">
+              Updated on {formatContentDate(updatedDate)}
+            </span>
+            <Link
+              href={`/author/${contentAuthorSlug}`}
+              className="text-muted-foreground transition hover:text-foreground"
+            >
+              By {contentAuthorName}
+            </Link>
           </div>
           <h1 className="max-w-4xl font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             Free MBBS in Abroad for Indian Students: the honest 2026 answer
