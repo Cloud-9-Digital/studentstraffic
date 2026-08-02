@@ -15,20 +15,20 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
-        userAgent: ["GPTBot", "OAI-SearchBot"],
-        disallow: ["/"],
+        userAgent: ["GPTBot", "OAI-SearchBot", "ChatGPT-User"],
+        allow: "/",
       },
       {
-        userAgent: ["Claude-SearchBot"],
-        disallow: ["/"],
+        userAgent: ["Claude-SearchBot", "Claude-User", "ClaudeBot", "anthropic-ai"],
+        allow: "/",
       },
       {
         userAgent: ["PerplexityBot"],
-        disallow: ["/"],
+        allow: "/",
       },
       {
         userAgent: ["Google-Extended"],
-        disallow: ["/"],
+        allow: "/",
       },
     ],
     sitemap: [
