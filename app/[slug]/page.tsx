@@ -61,6 +61,7 @@ import {
 } from "@/lib/data/study-abroad-guides-db";
 import { getRelatedContent } from "@/lib/data/related-content";
 import { RelatedContentSection } from "@/components/site/related-content-section";
+import { getCountryComparisonGuides } from "@/lib/discovery-pages";
 import { getFeeStructuresForSlugs } from "@/lib/data/university-fee-structures";
 import {
   getCountryRegulatoryAdvisory,
@@ -323,6 +324,38 @@ export default async function LandingPageRoute({
       : null,
     page.faq.length ? { href: "#faq", label: "FAQ" } : null,
   ].filter(Boolean) as { href: string; label: string }[];
+  // Country-vs-country comparison pages are real, content-rich pages (not
+  // thin stubs) but were entirely absent from every sitemap and had no
+  // inbound links from anywhere on the site — effectively invisible to
+  // search engines. Surfacing the 1-2 most relevant ones here (same course,
+  // this country on either side) gives them real internal link equity from
+  // one of the highest-traffic page types on the site.
+  const allCountryComparisonGuides = await getCountryComparisonGuides();
+  // Prefer comparisons against well-known, high-traffic study destinations
+  // over alphabetically-first-but-obscure ones (e.g. Albania, Armenia) —
+  // the guides array itself is sorted by slug, so without this a plain
+  // .slice(0, 2) would surface the least useful pairing most of the time.
+  const highTrafficCountrySlugs = new Set([
+    "russia", "georgia", "vietnam", "uzbekistan", "kyrgyzstan",
+    "united-states", "united-kingdom", "canada", "australia", "germany",
+  ]);
+  const relevantComparisonGuides = allCountryComparisonGuides
+    .filter(
+      (guide) =>
+        guide.course.slug === course.slug &&
+        (guide.leftCountry.slug === country.slug ||
+          guide.rightCountry.slug === country.slug),
+    )
+    .sort((left, right) => {
+      const otherSlug = (guide: typeof left) =>
+        guide.leftCountry.slug === country.slug
+          ? guide.rightCountry.slug
+          : guide.leftCountry.slug;
+      const leftScore = highTrafficCountrySlugs.has(otherSlug(left)) ? 0 : 1;
+      const rightScore = highTrafficCountrySlugs.has(otherSlug(right)) ? 0 : 1;
+      return leftScore - rightScore;
+    })
+    .slice(0, 2);
   const relatedSearchLinks = [
     {
       href: getCountryHref(country.slug),
@@ -339,6 +372,17 @@ export default async function LandingPageRoute({
       title: `${course.shortName} fees and budget planning`,
       description: "Compare fee bands, total budget, and affordability before choosing colleges.",
     },
+    ...relevantComparisonGuides.map((guide) => {
+      const otherCountry =
+        guide.leftCountry.slug === country.slug
+          ? guide.rightCountry
+          : guide.leftCountry;
+      return {
+        href: `/compare/${guide.slug}`,
+        title: `${course.shortName} in ${country.name} vs ${otherCountry.name}`,
+        description: `Fees, eligibility, and cost comparison to help you decide between ${country.name} and ${otherCountry.name}.`,
+      };
+    }),
     {
       href: "/compare",
       title: `Compare ${course.shortName} options`,
