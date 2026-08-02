@@ -337,7 +337,21 @@ async function buildCountryComparisonGuides() {
     GROUP BY
       ${coursesTable.slug}, ${coursesTable.name}, ${coursesTable.shortName},
       ${countriesTable.slug}, ${countriesTable.name}
-    HAVING count(${programOfferingsTable.id}) >= 2
+    -- A course+country cell only earns a comparison slot with real depth on
+    -- both counts: enough programs to be a genuine shortlist (not just 2
+    -- barely-there options), and at least one with actual fee data — a
+    -- database audit found 71.5% of pairs generated under the old >=2-count-
+    -- only bar had fewer than 3 programs or zero fee data on one side,
+    -- exactly the kind of thin, templated-looking page Google's spam
+    -- policies target when submitted to search at scale via a sitemap.
+    HAVING count(${programOfferingsTable.id}) >= 3
+      AND count(*) FILTER (
+        WHERE ${programOfferingsTable.annualTuitionUsd} > 0
+          OR (
+            ${programOfferingsTable.officialAnnualTuitionAmount} > 0
+            AND ${programOfferingsTable.officialFeeCurrency} IS NOT NULL
+          )
+      ) >= 1
     ORDER BY ${coursesTable.slug}, ${countriesTable.slug}
   `);
   const rowsByCourse = new Map<string, typeof result.rows>();
