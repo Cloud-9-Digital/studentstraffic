@@ -342,6 +342,15 @@ export default async function BlogPostPage({
                     {fmtDate.format(new Date(post.publishedAt!))}
                   </span>
                 )}
+                {post.updatedAt &&
+                  post.publishedAt &&
+                  new Date(post.updatedAt).getTime() -
+                    new Date(post.publishedAt).getTime() >
+                    24 * 60 * 60 * 1000 && (
+                    <span className="flex items-center gap-1.5 text-white/55">
+                      Updated {fmtDate.format(new Date(post.updatedAt))}
+                    </span>
+                  )}
                 <span className="flex items-center gap-1.5">
                   <Clock className="size-3" />
                   {Math.ceil(rt.minutes)} min read
