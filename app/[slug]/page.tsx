@@ -160,7 +160,7 @@ const PROGRAM_SECTION_META: Record<
       `${course} admissions process at ${university}, ${city} for Indian students — eligibility, documents, application timeline, and visa process.`,
   },
   eligibility: {
-    title: (course, university) => `${course} Eligibility at ${university} | Admission Requirements`,
+    title: (course, university) => `${course} Eligibility at ${university} 2026 | Requirements for Indian Students`,
     description: (course, university, city) =>
       `Academic eligibility, age limit, and admission requirements for ${course} at ${university}, ${city}. Complete eligibility criteria for Indian students 2026.`,
   },
@@ -171,7 +171,7 @@ const PROGRAM_SECTION_META: Record<
       `${course} annual fees at ${university}${feeText ? `: ${feeText}` : ""}. Complete 2026 guide covering year-wise tuition, hostel costs, total program cost in USD, and scholarship information — ${city}.`,
   },
   recognition: {
-    title: (course, university) => `Is ${course} at ${university} Recognised? | Accreditation Status`,
+    title: (course, university) => `Is ${course} at ${university} Recognised? 2026 | Accreditation Status for Indian Students`,
     description: (course, university, city) =>
       `Recognition and accreditation status of ${course} at ${university}, ${city} — what it means for Indian students and official verification links.`,
   },
