@@ -118,8 +118,16 @@ export function CountryFeesPage({
       <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-accent/10 via-background to-background px-6 py-16 sm:px-8 lg:px-12">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.12),transparent_30%),linear-gradient(to_right,rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-[size:auto,28px_28px,28px_28px]" />
         <div className="relative mx-auto max-w-6xl">
-          <div className="mb-5 inline-flex rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-sm font-medium text-accent">
-            Updated on {updatedDate}
+          <div className="mb-5 flex flex-wrap items-center gap-3 text-sm">
+            <span className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-4 py-2 font-medium text-accent">
+              Updated on {updatedDate}
+            </span>
+            <Link
+              href={`/mbbs-in-${countrySlug}`}
+              className="text-muted-foreground transition hover:text-foreground"
+            >
+              ← MBBS in {countryName}
+            </Link>
           </div>
           <h1 className="max-w-4xl font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             {title}

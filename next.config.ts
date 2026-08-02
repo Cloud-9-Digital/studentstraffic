@@ -111,8 +111,15 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        // A site-restricted search still shows this dead URL as Google's
+        // top pick for our Vietnam content, ahead of the live hub page —
+        // it's carrying real authority/backlink signal. Route that signal
+        // to /mbbs-in-vietnam (the actual head-term hub, currently stuck at
+        // position ~27 for "mbbs in vietnam") rather than a single blog
+        // post, since hub intent matches the dead URL's "A to Z guide"
+        // framing more closely.
         source: "/mbbs-in-vietnam-a-to-z-guide-for-indian-students-2025",
-        destination: "/blog/mbbs-in-vietnam-2026-complete-guide",
+        destination: "/mbbs-in-vietnam",
         permanent: true,
       },
       {
