@@ -85,3 +85,6 @@ mobile/app/.idea/
 # One-off local publishing helpers
 /scripts/_dry-*
 /scripts/_tmp-*
+
+# Playwright MCP debug artifacts
+.playwright-mcp/
