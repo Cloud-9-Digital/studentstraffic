@@ -251,12 +251,11 @@ test("public client payloads exclude unused global and worldwide datasets", asyn
   assert.match(mobileUniversities, /Math\.max\([^,]+, 1\)/);
 });
 
-test("university social cards convert unsupported WebP covers before ImageResponse", async () => {
-  const source = await readProjectFile("app/university/[slug]/opengraph-image.tsx");
+test("social cards use a static CDN asset instead of dynamic ImageResponse routes", async () => {
+  const source = await readProjectFile("lib/metadata.ts");
 
-  assert.match(source, /\/image\/upload\/f_jpg,q_auto\//);
-  assert.match(source, /if \(coverImageUrl\)/);
-  assert.doesNotMatch(source, /src=\{coverImage\.url\}/);
+  assert.match(source, /return "\/images\/home\/apply-confidence\.jpg"/);
+  assert.doesNotMatch(source, /return `\$\{path\}\/opengraph-image`/);
 });
 
 test("background-job fallback cron does not force a fifteen-minute database wake-up", async () => {

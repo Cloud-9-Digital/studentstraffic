@@ -30,16 +30,12 @@ export function absoluteUrl(path = "/") {
 }
 
 export function getOgImagePath(path = "/") {
-  // Only emit a page-specific image URL when the corresponding metadata
-  // route exists. Returning a non-existent URL breaks social cards entirely;
-  // the root branded image is a reliable fallback for every other route.
-  if (
-    /^\/(countries|courses|university)\/[^/]+$/.test(path)
-  ) {
-    return `${path}/opengraph-image`;
-  }
-
-  return "/opengraph-image";
+  void path;
+  // Generated ImageResponse routes were uncached on Vercel and invoked a
+  // function for every social-bot request. Serve one durable study-abroad
+  // image from the static CDN instead; page-specific titles and descriptions
+  // remain in the Open Graph metadata.
+  return "/images/home/apply-confidence.jpg";
 }
 
 export function getOgImageUrl(path = "/") {
