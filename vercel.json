@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/jobs/process?limit=50",
-      "schedule": "*/15 * * * *"
+      "schedule": "*/30 * * * *"
     }
   ]
 }

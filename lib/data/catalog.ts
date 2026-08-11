@@ -782,11 +782,14 @@ export async function getCourseCatalogStats() {
     .groupBy(coursesTable.slug);
 }
 
-// Deduplicate metadata/page reads within one render without persisting a
-// negative lookup. University records are inserted directly by catalogue
-// workers, so a long-lived cached null would keep a newly published page in a
-// "not found" state even after the row exists.
-export const getUniversityBySlug = cache(async (slug: string) => {
+async function getCachedUniversityBySlug(slug: string) {
+  "use cache: remote";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("universities");
+  cacheTag(`university:${slug}`);
+
   const db = getDb();
   if (!db) return null;
 
@@ -809,7 +812,12 @@ export const getUniversityBySlug = cache(async (slug: string) => {
     .limit(1);
 
   return row ? mapUniversityRow(row.university, row.countrySlug) : null;
-});
+}
+
+// React cache deduplicates metadata/page reads in one render. The remote cache
+// prevents repeated wide university reads across function instances; catalogue
+// publishing invalidates university:<slug>, including a cached not-found value.
+export const getUniversityBySlug = cache(getCachedUniversityBySlug);
 
 export async function getCatalogLinkOptions() {
   "use cache: remote";
@@ -2219,10 +2227,16 @@ export async function getProgramsForUniversity(universitySlug: string) {
 }
 
 export async function getProgramBySlug(programSlug: string) {
-  // Do not persist negative detail lookups independently of the rendered
-  // route. A programme may be published after the deployment was built; the
-  // regenerated route must read that row immediately. Next/Vercel caches the
-  // completed HTML route, so this query is not executed on every page view.
+  "use cache: remote";
+
+  cacheLife("catalog");
+  cacheTag("catalog");
+  cacheTag("program-offerings");
+  cacheTag(`program:${programSlug}`);
+
+  // Programme publishing invalidates program:<slug>, so caching a not-found
+  // value is safe while preventing repeated wide reads for bot traffic and
+  // metadata/page render pairs.
   const databasePrograms = await selectFinderProgramsFromDatabase(
     and(
       eq(programOfferingsTable.published, true),

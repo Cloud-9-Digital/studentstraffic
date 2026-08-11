@@ -7,14 +7,15 @@ async function readProjectFile(relativePath: string) {
   return readFile(path.join(process.cwd(), relativePath), "utf8");
 }
 
-test("autocomplete uses bounded, query-scoped database reads", async () => {
+test("autocomplete uses one cached index and bounded in-memory matches", async () => {
   const source = await readProjectFile("app/api/suggestions/route.ts");
 
   assert.doesNotMatch(source, /getCatalogSnapshot|getProgramOfferings|getUniversities/);
   assert.match(source, /getSuggestionSource\(q\)/);
-  assert.match(source, /\.limit\(12\)/);
-  assert.match(source, /\.limit\(20\)/);
-  assert.equal((source.match(/\.limit\(40\)/g) ?? []).length, 2);
+  assert.match(source, /getSuggestionIndex\(\)/);
+  assert.match(source, /takeMatching\(index\.countries, 12/);
+  assert.match(source, /takeMatching\(index\.courses, 20/);
+  assert.equal((source.match(/takeMatching\(index\.(?:universities|indiaColleges), 40/g) ?? []).length, 2);
 });
 
 test("public sitemap and search fallbacks do not load the full catalog snapshot", async () => {
@@ -75,7 +76,7 @@ test("comparison indexes and detail lookup avoid full-catalog program reads", as
   assert.doesNotMatch(budgetPage, /connection\(\)/);
 });
 
-test("search rebuilds use projected reads and university publishing is incremental", async () => {
+test("search rebuilds use projected reads and single-university publishing is incremental", async () => {
   const [searchAdmin, universityPublisher, catalogPublisher] = await Promise.all([
     readProjectFile("lib/search/admin.ts"),
     readProjectFile("scripts/publish-university-draft.ts"),
@@ -86,7 +87,7 @@ test("search rebuilds use projected reads and university publishing is increment
   assert.match(searchAdmin, /syncTypesenseSearchForUniversities/);
   assert.doesNotMatch(universityPublisher, /syncTypesenseSearchIndex/);
   assert.match(universityPublisher, /syncTypesenseSearchForUniversities/);
-  assert.match(catalogPublisher, /syncTypesenseSearchForUniversities/);
+  assert.match(catalogPublisher, /syncTypesenseSearch\(\)/);
 });
 
 test("program importer batches relationship lookups and uses scoped revalidation", async () => {
@@ -156,18 +157,85 @@ test("blog index metadata does not download every article body", async () => {
   assert.doesNotMatch(metadataReader, /content: blogPosts\.content/);
 });
 
-test("capped dynamic catalogs resolve non-sample slugs at request time", async () => {
-  const pages = await Promise.all([
+test("complete catalog pages stay cacheable while capped catalogs resolve at request time", async () => {
+  const [countryPage, coursePage, universityPage, ...cappedPages] = await Promise.all([
     readProjectFile("app/countries/[slug]/page.tsx"),
     readProjectFile("app/courses/[slug]/page.tsx"),
+    readProjectFile("app/university/[slug]/page.tsx"),
     readProjectFile("app/cities/[slug]/page.tsx"),
     readProjectFile("app/blog/[slug]/page.tsx"),
   ]);
 
-  for (const source of pages) {
+  for (const source of [countryPage, coursePage, universityPage]) {
+    assert.doesNotMatch(source, /from "next\/server"/);
+    assert.doesNotMatch(source, /await connection\(\)/);
+  }
+
+  for (const source of cappedPages) {
     assert.match(source, /from "next\/server"/);
     assert.match(source, /await connection\(\)/);
   }
+});
+
+test("country budget add-ons use narrow summaries instead of wide program rows", async () => {
+  const source = await readProjectFile("app/countries/[slug]/page.tsx");
+
+  assert.match(source, /getBudgetGuideSummaries/);
+  assert.doesNotMatch(source, /getRecommendedBudgetGuideForCourse/);
+});
+
+test("detail lookups use remotely invalidated caches", async () => {
+  const source = await readProjectFile("lib/data/catalog.ts");
+
+  const universityStart = source.indexOf("async function getCachedUniversityBySlug");
+  const universityEnd = source.indexOf("export async function getCatalogLinkOptions", universityStart);
+  const programStart = source.indexOf("export async function getProgramBySlug");
+  const programEnd = source.indexOf("export async function getProgramsForCity", programStart);
+
+  assert.match(source.slice(universityStart, universityEnd), /"use cache: remote"/);
+  assert.match(source.slice(universityStart, universityEnd), /university:\$\{slug\}/);
+  assert.match(source.slice(programStart, programEnd), /"use cache: remote"/);
+  assert.match(source.slice(programStart, programEnd), /program:\$\{programSlug\}/);
+});
+
+test("sitemap does not opt into request-time rendering with a bare current date", async () => {
+  const source = await readProjectFile("app/sitemap.ts");
+  assert.doesNotMatch(source, /new Date\(\)/);
+});
+
+test("attribution cookies are bounded and absent campaign keys are expired", async () => {
+  const source = await readProjectFile("components/site/attribution-tracking.tsx");
+
+  assert.match(source, /MAX_URL_LENGTH = 1024/);
+  assert.match(source, /MAX_CAMPAIGN_VALUE_LENGTH = 256/);
+  assert.match(source, /function deleteCookie/);
+  assert.doesNotMatch(source, /setCookie\(key, searchParams\.get\(key\) \?\? ""/);
+});
+
+test("rich university and program models stay on the server side of section shells", async () => {
+  const [universityShell, universityClient, programShell, programClient] =
+    await Promise.all([
+      readProjectFile("components/site/university/section-shell.tsx"),
+      readProjectFile("components/site/university/section-shell-client.tsx"),
+      readProjectFile("components/site/university/program-section-shell.tsx"),
+      readProjectFile("components/site/university/program-section-shell-client.tsx"),
+    ]);
+
+  assert.doesNotMatch(universityShell, /^"use client"/);
+  assert.match(universityClient, /^"use client"/);
+  assert.doesNotMatch(universityClient, /FinderProgram|\bUniversity\b|\bCountry\b/);
+  assert.match(universityShell, /programsContent=/);
+
+  assert.doesNotMatch(programShell, /^"use client"/);
+  assert.match(programClient, /^"use client"/);
+  assert.doesNotMatch(programClient, /FinderProgram|CountryContent|RegulatoryAdvisory/);
+  assert.match(programShell, /admissionsContent=/);
+});
+
+test("background-job fallback cron does not force a fifteen-minute database wake-up", async () => {
+  const config = await readProjectFile("vercel.json");
+  assert.match(config, /"schedule": "\*\/30 \* \* \* \*"/);
+  assert.doesNotMatch(config, /"schedule": "\*\/15 \* \* \* \*"/);
 });
 
 test("high-cardinality directories progressively load bounded batches", async () => {
@@ -186,9 +254,7 @@ test("high-cardinality directories progressively load bounded batches", async ()
 
 test("finder query limits are finite and centrally bounded", async () => {
   const source = await readProjectFile("lib/data/catalog.ts");
-  const start = source.indexOf(
-    "export async function queryFinderCardProgramsPage",
-  );
+  const start = source.indexOf("async function executeFinderCardProgramsPage");
   const end = source.indexOf("export async function getFinderOptions", start);
   const finderPageSource = source.slice(start, end);
 

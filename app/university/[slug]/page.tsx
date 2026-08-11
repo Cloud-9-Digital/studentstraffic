@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { connection } from "next/server";
 import { notFound, redirect } from "next/navigation";
 import { cache, Suspense } from "react";
 
@@ -248,7 +247,6 @@ export default async function UniversityDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  await connection();
   const { slug: rawSlug } = await params;
 
   await redirectLegacySectionUrl(rawSlug);

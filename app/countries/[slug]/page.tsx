@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { connection } from "next/server";
 import { Suspense } from "react";
 import { unstable_cache } from "next/cache";
 import { BookOpen, ChevronRight } from "lucide-react";
@@ -41,7 +40,7 @@ import type { CountryProgramDirectoryRow } from "@/lib/data/catalog";
 import { and, eq, ilike } from "drizzle-orm";
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
-import { getRecommendedBudgetGuideForCourse } from "@/lib/discovery-pages";
+import { getBudgetGuideSummaries } from "@/lib/discovery-pages";
 import { buildIndexableMetadata } from "@/lib/metadata";
 import {
   getArticleStructuredData,
@@ -151,10 +150,6 @@ export default async function CountryPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  // Every current country is prerendered. Keep the request boundary so countries
-  // created after a deployment resolve their own slug instead of inheriting a
-  // cached fallback shell.
-  await connection();
   const { slug } = await params;
   const { country, programRows: programs, structuredPrograms } = await getCountryPageData(slug);
 
@@ -634,7 +629,11 @@ async function CountryCostAddOns({
 }) {
   const [exchangeRate, recommendedBudgetGuide] = await Promise.all([
     getInrExchangeRate(currencyCode),
-    courseSlug ? getRecommendedBudgetGuideForCourse(courseSlug) : Promise.resolve(null),
+    courseSlug
+      ? getBudgetGuideSummaries().then(
+          (guides) => guides.find((guide) => guide.course.slug === courseSlug) ?? null,
+        )
+      : Promise.resolve(null),
   ]);
 
   if (!exchangeRate && !recommendedBudgetGuide) {

@@ -23,6 +23,21 @@ function setCookie(name: string, value: string, maxAgeSeconds: number) {
   document.cookie = `${name}=${encodeURIComponent(value)}; Max-Age=${maxAgeSeconds}; Path=/; SameSite=Lax${secure}`;
 }
 
+function deleteCookie(name: string) {
+  const secure = window.location.protocol === "https:" ? "; Secure" : "";
+  document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax${secure}`;
+}
+
+function capped(value: string, maxLength: number) {
+  return value.slice(0, maxLength);
+}
+
+const MAX_PATH_LENGTH = 512;
+const MAX_URL_LENGTH = 1024;
+const MAX_REFERRER_LENGTH = 512;
+const MAX_CAMPAIGN_VALUE_LENGTH = 256;
+const MAX_CLICK_ID_LENGTH = 512;
+
 function setCookieOnce(name: string, value: string, maxAgeSeconds: number) {
   if (getCookie(name) !== undefined) return;
   setCookie(name, value, maxAgeSeconds);
@@ -58,17 +73,17 @@ export function AttributionTracking() {
     );
     setCookieOnce(
       trackingCookieNames.initialLandingPath,
-      url.pathname,
+      capped(url.pathname, MAX_PATH_LENGTH),
       ATTRIBUTION_COOKIE_MAX_AGE
     );
     setCookieOnce(
       trackingCookieNames.initialLandingUrl,
-      url.toString(),
+      capped(url.toString(), MAX_URL_LENGTH),
       ATTRIBUTION_COOKIE_MAX_AGE
     );
     setCookieOnce(
       trackingCookieNames.initialReferrer,
-      document.referrer,
+      capped(document.referrer, MAX_REFERRER_LENGTH),
       ATTRIBUTION_COOKIE_MAX_AGE
     );
 
@@ -77,7 +92,7 @@ export function AttributionTracking() {
     if (hasUtmParams) {
       setCookieOnce(
         trackingCookieNames.initialUtmLandingUrl,
-        url.toString(),
+        capped(url.toString(), MAX_URL_LENGTH),
         ATTRIBUTION_COOKIE_MAX_AGE
       );
 
@@ -85,17 +100,28 @@ export function AttributionTracking() {
       // every key together (clearing ones absent from this URL) rather than
       // merging with a possibly-unrelated prior campaign's leftover values.
       for (const key of UTM_KEYS) {
-        setCookie(key, searchParams.get(key) ?? "", TRACKING_COOKIE_MAX_AGE);
+        const value = searchParams.get(key);
+        if (value) {
+          setCookie(
+            key,
+            capped(value, MAX_CAMPAIGN_VALUE_LENGTH),
+            TRACKING_COOKIE_MAX_AGE,
+          );
+        } else {
+          // Expire absent keys instead of retaining empty cookies on every
+          // request. This preserves coordinated last-touch semantics while
+          // reducing request-header bytes.
+          deleteCookie(key);
+        }
       }
     }
 
     for (const key of CLICK_ID_KEYS) {
       const value = searchParams.get(key);
       if (value) {
-        setCookie(key, value, TRACKING_COOKIE_MAX_AGE);
+        setCookie(key, capped(value, MAX_CLICK_ID_LENGTH), TRACKING_COOKIE_MAX_AGE);
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname, searchParams]);
 
   return null;

@@ -24,10 +24,6 @@ import {
   getTamilNaduHubHref,
 } from "@/lib/routes";
 
-function uniqueUrls(urls: Array<string | undefined>) {
-  return [...new Set(urls.filter(Boolean))];
-}
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const tamilNaduCityPages = getTamilNaduCityPages();
   const [sitemapCatalog, landingPages, publishedPosts] = await Promise.all([
@@ -138,13 +134,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl("/news"),
       priority: 0.75,
       changeFrequency: "hourly",
-      lastModified: new Date(),
+      lastModified: governanceLastModified,
     },
     {
       url: absoluteUrl("/blog"),
       priority: 0.8,
       changeFrequency: "weekly",
-      lastModified: publishedPosts[0]?.publishedAt ? new Date(publishedPosts[0].publishedAt) : new Date(),
+      lastModified: latestBlogModified,
     },
     {
       url: absoluteUrl(getTamilNaduHubHref()),
@@ -156,7 +152,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl("/blog/feed.xml"),
       priority: 0.3,
       changeFrequency: "daily" as const,
-      lastModified: publishedPosts[0]?.publishedAt ? new Date(publishedPosts[0].publishedAt) : new Date(),
+      lastModified: latestBlogModified,
     },
     // Category archive pages
     ...["mbbs-abroad","country-guide","nmc-licensing","university-guide","admissions","student-life","fees-scholarships","tips-advice"].map((cat) => ({
@@ -169,7 +165,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl(`/blog/${post.slug}`),
       priority: 0.75,
       changeFrequency: "monthly" as const,
-      lastModified: post.updatedAt ? new Date(post.updatedAt) : post.publishedAt ? new Date(post.publishedAt) : new Date(),
+      lastModified: post.updatedAt
+        ? new Date(post.updatedAt)
+        : post.publishedAt
+          ? new Date(post.publishedAt)
+          : governanceLastModified,
     })),
     {
       url: absoluteUrl("/about"),
