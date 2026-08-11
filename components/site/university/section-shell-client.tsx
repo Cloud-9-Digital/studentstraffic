@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode, useEffect, useState } from "react";
+import { type ReactNode, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight, GraduationCap, MapPin, Phone, ShieldCheck } from "lucide-react";
 
@@ -8,7 +8,6 @@ import type { Author } from "@/lib/authors";
 import { recordRecentlyViewed } from "@/lib/recently-viewed";
 import { getUniversityHref } from "@/lib/routes";
 import {
-  parseUniversitySlug,
   UNIVERSITY_SECTIONS,
   type UniversitySection,
 } from "@/lib/university-sections";
@@ -44,11 +43,7 @@ type Props = {
   recognitionBadge?: string;
   lastVerifiedAt: string;
   author?: Author | null;
-  overviewContent: ReactNode;
-  programsContent: ReactNode;
-  studentLifeContent: ReactNode;
-  hostelContent: ReactNode;
-  faqContent: ReactNode;
+  content: ReactNode;
 };
 
 function getSectionSummary(section: UniversitySection | null, props: Props) {
@@ -68,7 +63,7 @@ function getSectionSummary(section: UniversitySection | null, props: Props) {
 }
 
 export function UniversitySectionShellClient(props: Props) {
-  const [activeSection, setActiveSection] = useState(props.initialSection);
+  const activeSection = props.initialSection;
 
   useEffect(() => {
     recordRecentlyViewed({
@@ -79,40 +74,6 @@ export function UniversitySectionShellClient(props: Props) {
       countryName: props.countryName,
     });
   }, [props.universitySlug, props.universityName, props.logoUrl, props.universityCity, props.countryName]);
-
-  useEffect(() => {
-    const handlePopState = () => {
-      const rawSlug = window.location.pathname.replace("/university/", "");
-      const { section } = parseUniversitySlug(rawSlug);
-      if (!section) {
-        window.location.reload();
-        return;
-      }
-      setActiveSection(section);
-    };
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
-  }, []);
-
-  const handleSectionChange = (section: UniversitySection | null) => {
-    if (section === null) {
-      window.location.href = `/university/${props.universitySlug}`;
-      return;
-    }
-    setActiveSection(section);
-    window.history.pushState({}, "", `/university/${props.universitySlug}-${section}`);
-    document.title = `${props.universityName}: ${SECTION_TITLES[section]} | Students Traffic`;
-  };
-
-  const sectionContent = activeSection === "programs"
-    ? props.programsContent
-    : activeSection === "student-life"
-      ? props.studentLifeContent
-      : activeSection === "hostel"
-        ? props.hostelContent
-        : activeSection === "faq"
-          ? props.faqContent
-          : props.overviewContent;
 
   return (
     <>
@@ -139,7 +100,6 @@ export function UniversitySectionShellClient(props: Props) {
       <UniversityPageNav
         universitySlug={props.universitySlug}
         activeSection={activeSection}
-        onSectionChange={handleSectionChange}
       />
 
       <section className="py-10 md:py-14">
@@ -147,10 +107,10 @@ export function UniversitySectionShellClient(props: Props) {
           {activeSection ? (
             <div className="min-w-0 space-y-0">
               <UniversityContextStrip {...props} activeSection={activeSection} />
-              {sectionContent}
+              {props.content}
               <SectionCounsellingCta {...props} />
             </div>
-          ) : sectionContent}
+          ) : props.content}
         </div>
       </section>
     </>

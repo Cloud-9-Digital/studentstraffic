@@ -1,13 +1,12 @@
 "use client";
 
-import { type ReactNode, useEffect, useState } from "react";
+import { type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight, GraduationCap, MapPin, Phone } from "lucide-react";
 
 import type { Author } from "@/lib/authors";
 import { getUniversityHref, getUniversityProgramHref } from "@/lib/routes";
 import {
-  parseProgramSlug,
   PROGRAM_SECTIONS,
   type ProgramSection,
 } from "@/lib/university-sections";
@@ -40,11 +39,7 @@ type Props = {
   logoInitials: string;
   lastVerifiedAt: string;
   author?: Author | null;
-  academicsContent: ReactNode;
-  admissionsContent: ReactNode;
-  eligibilityContent: ReactNode;
-  feesContent: ReactNode;
-  recognitionContent: ReactNode;
+  content: ReactNode;
 };
 
 function getSectionSummary(section: ProgramSection | null, props: Props) {
@@ -63,35 +58,7 @@ function getSectionSummary(section: ProgramSection | null, props: Props) {
 }
 
 export function ProgramSectionShellClient(props: Props) {
-  const [activeSection, setActiveSection] = useState(props.initialSection);
-
-  useEffect(() => {
-    const handlePopState = () => {
-      const rawSlug = window.location.pathname.replace(/^\//, "");
-      setActiveSection(parseProgramSlug(rawSlug).section);
-    };
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
-  }, []);
-
-  const handleSectionChange = (section: ProgramSection | null) => {
-    setActiveSection(section);
-    const nextPath = section ? `/${props.programSlug}-${section}` : `/${props.programSlug}`;
-    window.history.pushState({}, "", nextPath);
-    document.title = section
-      ? `${props.courseShortName} at ${props.universityName}: ${SECTION_TITLES[section]} | Students Traffic`
-      : `${props.courseShortName} at ${props.universityName} | Students Traffic`;
-  };
-
-  const sectionContent = activeSection === "admissions"
-    ? props.admissionsContent
-    : activeSection === "eligibility"
-      ? props.eligibilityContent
-      : activeSection === "fees"
-        ? props.feesContent
-        : activeSection === "recognition"
-          ? props.recognitionContent
-          : props.academicsContent;
+  const activeSection = props.initialSection;
 
   return (
     <>
@@ -109,13 +76,12 @@ export function ProgramSectionShellClient(props: Props) {
       <ProgramPageNav
         programSlug={props.programSlug}
         activeSection={activeSection}
-        onSectionChange={handleSectionChange}
       />
       <section className="py-10 md:py-14">
         <div className="container-shell">
           <div className="min-w-0 space-y-0">
             <ProgramContextStrip {...props} activeSection={activeSection} />
-            {sectionContent}
+            {props.content}
             <ProgramCounsellingCta {...props} />
           </div>
         </div>

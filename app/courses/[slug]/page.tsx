@@ -47,7 +47,7 @@ export async function generateStaticParams() {
 async function getCoursePageData(slug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("courses");
   cacheTag(`course:${slug}`);

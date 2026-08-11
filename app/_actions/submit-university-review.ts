@@ -2,7 +2,7 @@
 
 import { headers } from "next/headers";
 import { and, eq, gte } from "drizzle-orm";
-import { refresh, updateTag } from "next/cache";
+import { refresh } from "next/cache";
 import { z } from "zod";
 
 import {
@@ -15,7 +15,6 @@ import {
 import { getDb } from "@/lib/db/server";
 import { universities, universityReviews } from "@/lib/db/schema";
 import { consumePublicFormRateLimits } from "@/lib/security/public-form-guard";
-import { getUniversityReviewsTag } from "@/lib/university-community";
 import { getYouTubeIsShort, getYouTubeVideoId, getYouTubeWatchUrl } from "@/lib/youtube";
 
 export type UniversityReviewFormState = {
@@ -276,7 +275,6 @@ export async function submitUniversityReviewAction(
     };
   }
 
-  updateTag(getUniversityReviewsTag(universityRecord.slug));
   refresh();
 
   return {

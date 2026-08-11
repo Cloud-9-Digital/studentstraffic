@@ -8,7 +8,10 @@ import { requireAdminSession } from "@/lib/auth";
 import { getDb } from "@/lib/db/server";
 import { universities, universityReviews } from "@/lib/db/schema";
 import { recordAdminAuditLog } from "@/lib/security/admin-audit";
-import { getUniversityReviewsTag } from "@/lib/university-community";
+import {
+  allUniversityReviewsTag,
+  getUniversityReviewsTag,
+} from "@/lib/university-community";
 
 export type ModerationAction = "show" | "hide" | "archive" | "feature" | "unfeature";
 
@@ -71,6 +74,7 @@ export async function moderateReviewAction(
   });
 
   updateTag(getUniversityReviewsTag(review.universitySlug));
+  updateTag(allUniversityReviewsTag);
   refresh();
 
   return {};

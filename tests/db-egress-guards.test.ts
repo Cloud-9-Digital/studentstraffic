@@ -212,7 +212,7 @@ test("attribution cookies are bounded and absent campaign keys are expired", asy
   assert.doesNotMatch(source, /setCookie\(key, searchParams\.get\(key\) \?\? ""/);
 });
 
-test("rich university and program models stay on the server side of section shells", async () => {
+test("section shells keep rich models server-side and send only the active section", async () => {
   const [universityShell, universityClient, programShell, programClient] =
     await Promise.all([
       readProjectFile("components/site/university/section-shell.tsx"),
@@ -224,12 +224,31 @@ test("rich university and program models stay on the server side of section shel
   assert.doesNotMatch(universityShell, /^"use client"/);
   assert.match(universityClient, /^"use client"/);
   assert.doesNotMatch(universityClient, /FinderProgram|\bUniversity\b|\bCountry\b/);
-  assert.match(universityShell, /programsContent=/);
+  assert.match(universityShell, /content=\{content\}/);
+  assert.doesNotMatch(universityClient, /programsContent|studentLifeContent|hostelContent|faqContent/);
 
   assert.doesNotMatch(programShell, /^"use client"/);
   assert.match(programClient, /^"use client"/);
   assert.doesNotMatch(programClient, /FinderProgram|CountryContent|RegulatoryAdvisory/);
-  assert.match(programShell, /admissionsContent=/);
+  assert.match(programShell, /content=\{content\}/);
+  assert.doesNotMatch(programClient, /academicsContent|admissionsContent|eligibilityContent|feesContent|recognitionContent/);
+});
+
+test("public client payloads exclude unused global and worldwide datasets", async () => {
+  const [layout, indiaCities, categoryPage, mobileUniversities] = await Promise.all([
+    readProjectFile("app/layout.tsx"),
+    readProjectFile("lib/data/india-cities.ts"),
+    readProjectFile("app/blog/category/[slug]/page.tsx"),
+    readProjectFile("app/api/mobile/v1/universities/route.ts"),
+  ]);
+
+  assert.doesNotMatch(layout, /NavUniversitiesClientProvider|getNavUniversitiesByCountry/);
+  assert.doesNotMatch(indiaCities, /from ["']country-state-city["']|require\(["']country-state-city["']\)/);
+  assert.match(indiaCities, /CITIES_BY_STATE/);
+  assert.doesNotMatch(categoryPage, /blogPosts\.content|readingTime\(/);
+  assert.match(categoryPage, /blogPosts\.readingTimeMinutes/);
+  assert.match(mobileUniversities, /Math\.trunc\(requestedPageSize\)/);
+  assert.match(mobileUniversities, /Math\.max\([^,]+, 1\)/);
 });
 
 test("background-job fallback cron does not force a fifteen-minute database wake-up", async () => {

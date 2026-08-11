@@ -47,6 +47,30 @@ export function UniversitySectionShell({
   const hasFee = Boolean(
     primaryProgram && hasRenderableProgramAnnualFee(primaryProgram.offering),
   );
+  const content = initialSection === "programs"
+    ? programs.length > 0
+      ? <UniversityProgramsSection programs={programs} />
+      : null
+    : initialSection === "student-life"
+      ? (
+          <UniversityStudentLifeSection
+            university={university}
+            country={country}
+            primaryProgram={primaryProgram}
+          />
+        )
+      : initialSection === "hostel"
+        ? <UniversityHostelDetailSection university={university} programs={programs} />
+        : initialSection === "faq"
+          ? (
+              <UniversityFaqSection
+                faq={university.faq}
+                universityName={university.name}
+                city={university.city}
+                primaryProgramShortName={primaryProgramShortName}
+              />
+            )
+          : children;
 
   return (
     <UniversitySectionShellClient
@@ -78,28 +102,7 @@ export function UniversitySectionShell({
       recognitionBadge={university.recognitionBadges[0]}
       lastVerifiedAt={lastVerifiedAt}
       author={author}
-      overviewContent={children}
-      programsContent={
-        programs.length > 0 ? <UniversityProgramsSection programs={programs} /> : null
-      }
-      studentLifeContent={
-        <UniversityStudentLifeSection
-          university={university}
-          country={country}
-          primaryProgram={primaryProgram}
-        />
-      }
-      hostelContent={
-        <UniversityHostelDetailSection university={university} programs={programs} />
-      }
-      faqContent={
-        <UniversityFaqSection
-          faq={university.faq}
-          universityName={university.name}
-          city={university.city}
-          primaryProgramShortName={primaryProgramShortName}
-        />
-      }
+      content={content}
     />
   );
 }

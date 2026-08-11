@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { unstable_cache } from "next/cache";
 import { CalendarDays, Clock, ArrowLeft } from "lucide-react";
-import readingTime from "reading-time";
 
 import { getDb } from "@/lib/db/server";
 import { blogPosts } from "@/lib/db/schema";
@@ -48,7 +47,7 @@ const getPostsByCategory = unstable_cache(
         excerpt: blogPosts.excerpt,
         coverUrl: blogPosts.coverUrl,
         category: blogPosts.category,
-        content: blogPosts.content,
+        readingTimeMinutes: blogPosts.readingTimeMinutes,
         publishedAt: blogPosts.publishedAt,
       })
       .from(blogPosts)
@@ -173,7 +172,7 @@ export default async function CategoryPage({
                       )}
                       <span className="flex items-center gap-1">
                         <Clock className="size-3" />
-                        {Math.ceil(readingTime(post.content).minutes)} min
+                        {post.readingTimeMinutes ?? 5} min
                       </span>
                     </div>
                   </div>

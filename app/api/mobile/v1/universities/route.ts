@@ -9,10 +9,12 @@ import { mobilePublicJson } from "@/lib/mobile/http";
 export async function GET(request: NextRequest) {
   const filters = parseFinderFilters(request.nextUrl.searchParams);
   const page = parseFinderPage(request.nextUrl.searchParams.get("page") ?? undefined);
-  const pageSize = Math.min(
-    Number(request.nextUrl.searchParams.get("pageSize") ?? finderPageSize),
-    30
+  const requestedPageSize = Number(
+    request.nextUrl.searchParams.get("pageSize") ?? finderPageSize,
   );
+  const pageSize = Number.isFinite(requestedPageSize)
+    ? Math.min(Math.max(Math.trunc(requestedPageSize), 1), 30)
+    : finderPageSize;
   const [results, options] = await Promise.all([
     queryFinderCardProgramsPage(filters, page, pageSize),
     getFinderOptions(),

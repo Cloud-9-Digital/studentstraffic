@@ -5,11 +5,9 @@ import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 import { AppChrome } from "@/components/app/app-chrome";
 import { NavCountriesClientProvider } from "@/components/app/nav-countries-client-provider";
 import { NavCoursesClientProvider } from "@/components/app/nav-courses-client-provider";
-import { NavUniversitiesClientProvider } from "@/components/app/nav-universities-client-provider";
 import { Providers } from "@/components/app/providers";
 import { getNavCountries } from "@/lib/data/nav-countries";
 import { getNavCourses } from "@/lib/data/nav-courses";
-import { getNavUniversitiesByCountry } from "@/lib/data/nav-universities";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { MetaPixel } from "@/components/meta-pixel";
 import { MicrosoftClarity } from "@/components/microsoft-clarity";
@@ -53,9 +51,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [navCountries, navUniversitiesByCountry, navCourses] = await Promise.all([
+  const [navCountries, navCourses] = await Promise.all([
     getNavCountries(),
-    getNavUniversitiesByCountry(),
     getNavCourses(),
   ]);
 
@@ -76,9 +73,7 @@ export default async function RootLayout({
           <Suspense><AttributionTracking /></Suspense>
           <NavCountriesClientProvider countries={navCountries}>
             <NavCoursesClientProvider courses={navCourses}>
-              <NavUniversitiesClientProvider countryGroups={navUniversitiesByCountry}>
-                <AppChrome>{children}</AppChrome>
-              </NavUniversitiesClientProvider>
+              <AppChrome>{children}</AppChrome>
             </NavCoursesClientProvider>
           </NavCountriesClientProvider>
         </Providers>

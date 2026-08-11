@@ -28,6 +28,8 @@ export function getUniversityReviewsTag(universitySlug: string) {
   return `university-reviews:${universitySlug}`;
 }
 
+export const allUniversityReviewsTag = "university-reviews:all";
+
 export function getUniversityPeersTag(universitySlug: string) {
   return `university-peers:${universitySlug}`;
 }
@@ -37,7 +39,7 @@ export async function getUniversityPeerAvailability(
 ): Promise<UniversityPeerAvailability> {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag(getUniversityPeersTag(universitySlug));
 
   const db = getDb();
@@ -103,7 +105,7 @@ export async function getActivePeersForUniversity(
 ): Promise<PeerWithUniversity[]> {
   "use cache: remote";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag(getUniversityPeersTag(universitySlug));
 
   const db = getDb();
@@ -322,7 +324,7 @@ export async function getUniversityReviews(
 ): Promise<UniversityReview[]> {
   "use cache";
 
-  cacheLife("minutes");
+  cacheLife("catalog");
   cacheTag(getUniversityReviewsTag(universitySlug));
 
   const db = getDb();
@@ -400,7 +402,8 @@ export type ReviewWithUniversity = UniversityReview & {
 export async function getAllLiveReviews(): Promise<ReviewWithUniversity[]> {
   "use cache";
 
-  cacheLife("minutes");
+  cacheLife("catalog");
+  cacheTag(allUniversityReviewsTag);
 
   const db = getDb();
   if (!db) return [];

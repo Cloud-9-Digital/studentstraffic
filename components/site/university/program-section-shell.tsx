@@ -46,6 +46,43 @@ export function ProgramSectionShell({
   lastVerifiedAt: string;
   author?: Author | null;
 }) {
+  const content = initialSection === "admissions"
+    ? (
+        <UniversityAdmissionsSection
+          university={university}
+          primaryProgram={program}
+          countryContent={countryContent}
+          countryAdvisory={countryAdvisory}
+          universityAdvisory={universityAdvisory}
+        />
+      )
+    : initialSection === "eligibility"
+      ? (
+          <UniversityEligibilitySection
+            university={university}
+            primaryProgram={program}
+            countryContent={countryContent}
+          />
+        )
+      : initialSection === "fees"
+        ? (
+            <UniversityFeesDetailSection
+              programs={[program]}
+              universityName={university.name}
+              university={university}
+              country={country}
+            />
+          )
+        : initialSection === "recognition"
+          ? (
+              <UniversityRecognitionDetailSection
+                university={university}
+                country={country}
+                primaryProgram={program}
+              />
+            )
+          : <UniversityAcademicsSection university={university} primaryProgram={program} />;
+
   return (
     <ProgramSectionShellClient
       initialSection={initialSection}
@@ -65,40 +102,7 @@ export function ProgramSectionShell({
       logoInitials={logoInitials}
       lastVerifiedAt={lastVerifiedAt}
       author={author}
-      academicsContent={
-        <UniversityAcademicsSection university={university} primaryProgram={program} />
-      }
-      admissionsContent={
-        <UniversityAdmissionsSection
-          university={university}
-          primaryProgram={program}
-          countryContent={countryContent}
-          countryAdvisory={countryAdvisory}
-          universityAdvisory={universityAdvisory}
-        />
-      }
-      eligibilityContent={
-        <UniversityEligibilitySection
-          university={university}
-          primaryProgram={program}
-          countryContent={countryContent}
-        />
-      }
-      feesContent={
-        <UniversityFeesDetailSection
-          programs={[program]}
-          universityName={university.name}
-          university={university}
-          country={country}
-        />
-      }
-      recognitionContent={
-        <UniversityRecognitionDetailSection
-          university={university}
-          country={country}
-          primaryProgram={program}
-        />
-      }
+      content={content}
     />
   );
 }

@@ -79,7 +79,7 @@ export async function generateStaticParams() {
 async function getCountryPageData(slug: string) {
   "use cache";
 
-  cacheLife("hours");
+  cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("countries");
   cacheTag(`country:${slug}`);
@@ -429,7 +429,7 @@ const getRelatedBlogPostForCountry = unstable_cache(
     return relatedBlogPost ?? null;
   },
   ["country-related-blog-post"],
-  { tags: ["blog"], revalidate: 3600 }
+  { tags: ["blog"], revalidate: 60 * 60 * 24 * 365 }
 );
 
 async function CountryRelatedBlogPost({

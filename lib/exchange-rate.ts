@@ -15,7 +15,10 @@ export async function getInrExchangeRate(
 
   async function fetchFrom(base: string): Promise<ExchangeRateResult> {
     const res = await fetch(`${base}/inr.json`, {
-      next: { revalidate: 3600 },
+      // The converter is an indicative planning aid, not a trading quote.
+      // Daily refresh avoids regenerating every country page each hour while
+      // still displaying the provider's effective date beside the rate.
+      next: { revalidate: 60 * 60 * 24 },
     });
     if (!res.ok) return null;
     const data = await res.json();
