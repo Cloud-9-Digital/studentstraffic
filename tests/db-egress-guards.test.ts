@@ -251,6 +251,14 @@ test("public client payloads exclude unused global and worldwide datasets", asyn
   assert.match(mobileUniversities, /Math\.max\([^,]+, 1\)/);
 });
 
+test("university social cards convert unsupported WebP covers before ImageResponse", async () => {
+  const source = await readProjectFile("app/university/[slug]/opengraph-image.tsx");
+
+  assert.match(source, /\/image\/upload\/f_jpg,q_auto\//);
+  assert.match(source, /if \(coverImageUrl\)/);
+  assert.doesNotMatch(source, /src=\{coverImage\.url\}/);
+});
+
 test("background-job fallback cron does not force a fifteen-minute database wake-up", async () => {
   const config = await readProjectFile("vercel.json");
   assert.match(config, /"schedule": "\*\/30 \* \* \* \*"/);

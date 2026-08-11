@@ -18,6 +18,27 @@ export const size = ogImageSize;
 export const contentType = ogImageContentType;
 export const alt = "University details page";
 
+function getImageResponseCoverUrl(url: string) {
+  try {
+    const parsed = new URL(url);
+
+    if (
+      parsed.hostname === "res.cloudinary.com" &&
+      parsed.pathname.includes("/image/upload/")
+    ) {
+      parsed.pathname = parsed.pathname.replace(
+        "/image/upload/",
+        "/image/upload/f_jpg,q_auto/",
+      );
+      return parsed.toString();
+    }
+
+    return /\.(?:jpe?g|png)$/i.test(parsed.pathname) ? parsed.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
 export default async function Image({
   params,
 }: {
@@ -41,8 +62,11 @@ export default async function Image({
   }
 
   const coverImage = getUniversityCoverImage(university);
+  const coverImageUrl = coverImage
+    ? getImageResponseCoverUrl(coverImage.url)
+    : null;
 
-  if (coverImage) {
+  if (coverImageUrl) {
     return new ImageResponse(
       (
         <div
@@ -55,9 +79,8 @@ export default async function Image({
           }}
         >
           {/* Cover photo */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={coverImage.url}
+            src={coverImageUrl}
             alt=""
             style={{
               position: "absolute",
