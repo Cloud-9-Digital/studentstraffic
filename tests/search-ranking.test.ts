@@ -1,23 +1,28 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
+import { sql } from "drizzle-orm";
 import { PgDialect } from "drizzle-orm/pg-core";
 
 import type { SearchResult } from "@/lib/data/types";
 import {
   analyzeSearchQuery,
   buildBm25SearchQuery,
+  buildSearchTextCoverageSql,
   getEditDistance,
   MAX_PROGRAMS_PER_UNIVERSITY,
+  type RankableSearchResult,
   rerankSearchResults,
+  toRankableSearchResult,
 } from "@/lib/search/ranking";
+import { orderSectionsByTopResult } from "@/lib/search/result-sections";
 
 let nextId = 1;
 
 function fixture(
-  overrides: Partial<SearchResult> & Pick<SearchResult, "title" | "documentType">,
+  overrides: Partial<RankableSearchResult> & Pick<SearchResult, "title" | "documentType">,
   textLength = 600,
-): SearchResult {
+): RankableSearchResult {
   const id = nextId++;
   const slug = overrides.sourceSlug ?? `doc-${id}`;
 
@@ -26,7 +31,8 @@ function fixture(
     sourceSlug: slug,
     path: `/university/${overrides.universitySlug ?? slug}`,
     summary: overrides.title,
-    searchText: `${overrides.title} ${"lorem ".repeat(Math.ceil(textLength / 6))}`,
+    searchTextLength: textLength,
+    searchTextCoverage: 1,
     highlights: [],
     featured: false,
     intakeMonths: [],
@@ -173,4 +179,82 @@ test("exact titles still outrank typo-tolerant matches", () => {
   ];
 
   assert.equal(titles(rerankSearchResults(results, "deakin university", 24))[0], "Deakin University");
+});
+
+test("a query that is exactly a country name leads with that country's hub", () => {
+  const results = [
+    fixture({ title: "Georgia Institute of Technology", documentType: "university", score: 23 }, 9000),
+    fixture({ title: "Georgian Technical University", documentType: "university", score: 22 }, 15000),
+    fixture({ title: "Study in Georgia", documentType: "country", countrySlug: "georgia", score: 10 }, 5000),
+  ];
+
+  assert.equal(titles(rerankSearchResults(results, "georgia", 24))[0], "Study in Georgia");
+  assert.equal(titles(rerankSearchResults(results, "Study in Georgia", 24))[0], "Study in Georgia");
+  assert.equal(
+    titles(rerankSearchResults(results, "georgia technology", 24))[0],
+    "Georgia Institute of Technology",
+  );
+});
+
+test("ranked results never carry search text or its ranking inputs to the page", () => {
+  const document = fixture({ title: "Deakin University", documentType: "university" });
+
+  for (const [result] of [
+    rerankSearchResults([document], "deakin", 24),
+    rerankSearchResults([document], undefined, 24),
+  ]) {
+    assert.equal("searchText" in result, false);
+    assert.equal("searchTextLength" in result, false);
+    assert.equal("searchTextCoverage" in result, false);
+  }
+
+  const rankable = toRankableSearchResult(
+    {
+      id: 1,
+      score: 0,
+      documentType: "university",
+      sourceSlug: "tsmu",
+      path: "/university/tsmu",
+      title: "TSMU",
+      summary: "",
+      searchText: "Tbilisi MBBS fees",
+      highlights: [],
+      featured: false,
+      intakeMonths: [],
+    },
+    "mbbs tbilisi fees",
+  );
+
+  assert.equal("searchText" in rankable, false);
+  assert.equal(rankable.searchTextLength, 17);
+  assert.equal(rankable.searchTextCoverage, 1);
+
+  const coverage = new PgDialect().sqlToQuery(
+    buildSearchTextCoverageSql(sql`lowered.search_text`, ["mbbs", "georgia"]),
+  );
+  assert.match(coverage.sql, /strpos\(lowered\.search_text, \$1\)/);
+  assert.deepEqual(coverage.params, ["mbbs", "georgia"]);
+});
+
+test("orders result sections by their best-ranked result, then configured order", () => {
+  const sections = [
+    { type: "university" },
+    { type: "program" },
+    { type: "landing_page" },
+    { type: "country" },
+  ] as const;
+
+  assert.deepEqual(
+    orderSectionsByTopResult(sections, [
+      { documentType: "landing_page" },
+      { documentType: "university" },
+      { documentType: "landing_page" },
+      { documentType: "program" },
+    ]).map((section) => section.type),
+    ["landing_page", "university", "program", "country"],
+  );
+  assert.deepEqual(
+    orderSectionsByTopResult(sections, []).map((section) => section.type),
+    ["university", "program", "landing_page", "country"],
+  );
 });

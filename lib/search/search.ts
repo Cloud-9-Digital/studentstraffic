@@ -15,9 +15,12 @@ import { buildSearchDocuments } from "@/lib/search/documents";
 import {
   analyzeSearchQuery,
   buildBm25SearchQuery,
+  buildSearchTextCoverageSql,
   getTypeRank,
   MAX_PROGRAMS_PER_UNIVERSITY,
+  type RankableSearchResult,
   rerankSearchResults,
+  toRankableSearchResult,
 } from "@/lib/search/ranking";
 
 const globalSearchLoggingState = globalThis as typeof globalThis & {
@@ -155,7 +158,11 @@ async function searchInMemory(
     })
     .slice(0, Math.max(limit * 3, 48));
 
-  return rerankSearchResults(results, filters.q, limit);
+  return rerankSearchResults(
+    results.map((result) => toRankableSearchResult(result, filters.q)),
+    filters.q,
+    limit,
+  );
 }
 
 /**
@@ -252,11 +259,16 @@ async function executeSearchCatalog(
       const candidateLimit = Math.max(limit * 3, 48);
       const bm25MatchPoolSize = 200;
       const analysis = analyzeSearchQuery(query);
+      const countryHubName = analysis.coreTerms.join(" ");
       const canUseBm25 = await hasSearchBm25Index();
       const exactMatchBoost = sql`
         CASE
           WHEN lower(title) = lower(${query}) THEN 12
           WHEN lower(title) LIKE lower(${query}) || '%' THEN 5
+          -- A query that is exactly a country name should reach the candidate
+          -- pool with its hub; the rerank then puts the hub first.
+          WHEN document_type = 'country'
+            AND replace(country_slug, '-', ' ') IN (${countryHubName}, ${analysis.normalized}) THEN 12
           ELSE 0
         END
       `;
@@ -291,7 +303,7 @@ async function executeSearchCatalog(
         // the returned candidates. The matched pool is bounded with a top-N
         // sort first: partitioning every match for the window functions made
         // Postgres start parallel workers, which cost ~10ms per search.
-        const bm25Results = await db.execute<SearchResult>(sql`
+        const bm25Results = await db.execute<RankableSearchResult>(sql`
           WITH matched AS (
             SELECT
               id,
@@ -341,7 +353,6 @@ async function executeSearchCatalog(
             documents.title,
             documents.subtitle,
             documents.summary,
-            documents.search_text AS "searchText",
             documents.highlights,
             documents.country_slug AS "countrySlug",
             documents.course_slug AS "courseSlug",
@@ -351,9 +362,17 @@ async function executeSearchCatalog(
             documents.annual_tuition_usd AS "annualTuitionUsd",
             documents.medium,
             documents.intake_months AS "intakeMonths",
+            length(documents.search_text) AS "searchTextLength",
+            ${buildSearchTextCoverageSql(sql`lowered.search_text`, analysis.coreTerms)} AS "searchTextCoverage",
             candidates.score
           FROM candidates
           INNER JOIN search_documents AS documents ON documents.id = candidates.id
+          -- search_text stays in the database: only its length and term
+          -- coverage are returned. OFFSET 0 stops the planner flattening the
+          -- subquery, so lower() runs once per row rather than once per term.
+          CROSS JOIN LATERAL (
+            SELECT lower(documents.search_text) AS search_text OFFSET 0
+          ) AS lowered
           ORDER BY candidates.score DESC, candidates.featured DESC, candidates.type_rank, candidates.title ASC
         `);
 
@@ -362,7 +381,7 @@ async function executeSearchCatalog(
         }
       }
 
-      const trigramResults = await db.execute<SearchResult>(sql`
+      const trigramResults = await db.execute<RankableSearchResult>(sql`
         SELECT
           id,
           document_type AS "documentType",
@@ -371,7 +390,6 @@ async function executeSearchCatalog(
           title,
           subtitle,
           summary,
-          search_text AS "searchText",
           highlights,
           country_slug AS "countrySlug",
           course_slug AS "courseSlug",
@@ -381,6 +399,8 @@ async function executeSearchCatalog(
           annual_tuition_usd AS "annualTuitionUsd",
           medium,
           intake_months AS "intakeMonths",
+          length(search_text) AS "searchTextLength",
+          ${buildSearchTextCoverageSql(sql`lower(search_text)`, analysis.coreTerms)} AS "searchTextCoverage",
           (
             similarity(title, ${query})
             + CASE
@@ -418,7 +438,6 @@ async function executeSearchCatalog(
         title,
         subtitle,
         summary,
-        search_text AS "searchText",
         highlights,
         country_slug AS "countrySlug",
         course_slug AS "courseSlug",
@@ -447,7 +466,8 @@ async function executeSearchCatalog(
       LIMIT ${limit}
     `);
 
-    return rerankSearchResults(browseResults.rows, filters.q, limit);
+    // Facet browse has no query to rank by: SQL already orders and limits it.
+    return browseResults.rows;
   } catch (error) {
     warnSearchOnce(
       "database-fallback",

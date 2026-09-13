@@ -18,6 +18,7 @@ import { Label } from "@/components/ui/label";
 import { buildNoIndexMetadata } from "@/lib/metadata";
 import type { SearchDocumentType } from "@/lib/data/types";
 import { parseSearchFilters } from "@/lib/search/filters";
+import { orderSectionsByTopResult } from "@/lib/search/result-sections";
 import { searchCatalogResultSet } from "@/lib/search/search";
 
 export const metadata: Metadata = buildNoIndexMetadata(
@@ -127,6 +128,10 @@ export default async function SearchPage({
     );
   }
 
+  // Results arrive in rank order; lead with the section that holds the top
+  // result so the best match is the first card, not buried below other types.
+  const orderedResultSections = orderSectionsByTopResult(resultSections, results);
+
   return (
     <div className="min-h-screen">
       {/* Hero Search Section */}
@@ -206,7 +211,7 @@ export default async function SearchPage({
 
               {results.length ? (
                 <div className="space-y-10 md:space-y-12">
-                  {resultSections.map((section) => {
+                  {orderedResultSections.map((section) => {
                     const sectionResults = resultsByType.get(section.type) ?? [];
 
                     if (!sectionResults.length) {

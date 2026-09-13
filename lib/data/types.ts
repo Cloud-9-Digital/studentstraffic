@@ -597,7 +597,11 @@ export type BlogPostSearchMetadata = {
   updatedAt?: string;
 };
 
-export type SearchResult = SearchDocument & {
+/**
+ * A rendered search result. `searchText` is index-only: it can be tens of KB
+ * per document and is never sent to the page.
+ */
+export type SearchResult = Omit<SearchDocument, "searchText"> & {
   id: number;
   score: number;
 };

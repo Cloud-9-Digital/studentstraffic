@@ -3,7 +3,19 @@
 // fixture documents. `search.ts` owns execution; this module owns relevance.
 import { sql, type SQL } from "drizzle-orm";
 
-import type { SearchDocumentType, SearchResult } from "@/lib/data/types";
+import type { SearchDocument, SearchDocumentType, SearchResult } from "@/lib/data/types";
+
+/**
+ * A search result plus the two ranking inputs derived from `search_text`.
+ * SQL computes them next to the row so the (often multi-KB) search text never
+ * leaves the database; they are stripped before results reach the page.
+ */
+export type RankableSearchResult = SearchResult & {
+  /** Character length of the document's search_text. */
+  searchTextLength: number;
+  /** Share (0-1) of required query terms found as substrings of lower(search_text). */
+  searchTextCoverage: number;
+};
 
 /**
  * Words that describe what the searcher wants to know about an entity rather
@@ -207,10 +219,66 @@ function isTypoTolerantTitleMatch(analysis: SearchQueryAnalysis, titleTokens: st
   );
 }
 
-function getSubstringCoverage(terms: string[], haystack: string) {
+/** JS mirror of buildSearchTextCoverageSql, for documents already in memory. */
+export function getSearchTextCoverage(terms: string[], searchText: string) {
   if (!terms.length) return 0;
 
+  const haystack = searchText.toLowerCase();
+
   return terms.filter((term) => haystack.includes(term)).length / terms.length;
+}
+
+/**
+ * SQL for the share of `terms` found in an already-lowercased search text, so
+ * the rerank can use document coverage without transferring search_text.
+ */
+export function buildSearchTextCoverageSql(loweredSearchText: SQL, terms: string[]): SQL {
+  if (!terms.length) return sql`0::float`;
+
+  const hits = terms.map(
+    (term) => sql`CASE WHEN strpos(${loweredSearchText}, ${term}) > 0 THEN 1 ELSE 0 END`,
+  );
+
+  return sql`((${sql.join(hits, sql` + `)})::float / ${sql.raw(String(terms.length))})`;
+}
+
+/** Converts an in-memory document into a rank input, dropping search_text. */
+export function toRankableSearchResult(
+  { searchText, ...document }: SearchDocument & { id: number; score: number },
+  query: string | undefined,
+): RankableSearchResult {
+  return {
+    ...document,
+    searchTextLength: searchText.length,
+    searchTextCoverage: query
+      ? getSearchTextCoverage(analyzeSearchQuery(query).coreTerms, searchText)
+      : 0,
+  };
+}
+
+function toSearchResult(candidate: RankableSearchResult): SearchResult {
+  const result: SearchResult & Partial<RankableSearchResult> = { ...candidate };
+
+  delete result.searchTextLength;
+  delete result.searchTextCoverage;
+
+  return result;
+}
+
+/** Country hub name as query terms: "united-kingdom" -> "united kingdom". */
+export function getCountryHubQueryName(countrySlug: string) {
+  return analyzeSearchQuery(countrySlug).coreTerms.join(" ");
+}
+
+/**
+ * A query that is exactly a country name ("georgia", "study in canada") is
+ * navigational: the visitor wants that country's hub, not every document that
+ * mentions the name.
+ */
+function isCountryHubMatch(result: SearchResult, analysis: SearchQueryAnalysis) {
+  if (result.documentType !== "country" || !result.countrySlug) return false;
+
+  return analysis.coreTerms.join(" ") === getCountryHubQueryName(result.countrySlug);
 }
 
 /**
@@ -218,13 +286,13 @@ function getSubstringCoverage(terms: string[], haystack: string) {
  * well-documented pages below thin stubs with the same terms; this nudges
  * them back without outweighing any title signal (max +5, vs +18..+80).
  */
-export function getContentDepthPrior(searchText: string) {
-  const length = Math.max(searchText.length, 400);
+export function getContentDepthPrior(searchTextLength: number) {
+  const length = Math.max(searchTextLength, 400);
 
   return Math.min(5, 1.25 * Math.log(length / 400));
 }
 
-export function getSearchSignals(result: SearchResult, analysis: SearchQueryAnalysis) {
+export function getSearchSignals(result: RankableSearchResult, analysis: SearchQueryAnalysis) {
   const normalizedQuery = analysis.normalized;
   const normalizedTitle = normalizeSearchValue(result.title);
   const normalizedSubtitle = normalizeSearchValue(result.subtitle ?? "");
@@ -242,17 +310,17 @@ export function getSearchSignals(result: SearchResult, analysis: SearchQueryAnal
 
   const titleCoverage = getTokenCoverage(analysis, titleTokens);
   const subtitleCoverage = getTokenCoverage(analysis, subtitleTokens);
-  // search_text can be tens of KB per document (blog posts); a lowercase
-  // substring check is enough here and avoids Unicode-normalising it per search.
-  const searchCoverage = Math.max(
-    getSubstringCoverage(analysis.coreTerms, result.searchText.toLowerCase()),
-    titleCoverage,
-  );
+  const searchCoverage = Math.max(result.searchTextCoverage, titleCoverage);
 
   let directTitleTier = 0;
   let boost = 0;
 
-  if (titleExact) {
+  if (isCountryHubMatch(result, analysis)) {
+    // Navigational query: the country hub leads, ahead of titles that merely
+    // start with or contain the country name.
+    directTitleTier = 4;
+    boost += 95;
+  } else if (titleExact) {
     directTitleTier = 4;
     boost += 80;
   } else if (titleTypoMatch) {
@@ -328,7 +396,7 @@ export function getSearchSignals(result: SearchResult, analysis: SearchQueryAnal
       break;
   }
 
-  boost += getContentDepthPrior(result.searchText);
+  boost += getContentDepthPrior(result.searchTextLength);
 
   return {
     directTitleTier,
@@ -386,12 +454,12 @@ function capProgramsPerUniversity<T extends { result: SearchResult }>(entries: T
 }
 
 export function rerankSearchResults(
-  results: SearchResult[],
+  results: RankableSearchResult[],
   query: string | undefined,
   limit: number,
-) {
+): SearchResult[] {
   if (!query) {
-    return results.slice(0, limit);
+    return results.slice(0, limit).map(toSearchResult);
   }
 
   const analysis = analyzeSearchQuery(query);
@@ -485,7 +553,7 @@ export function rerankSearchResults(
 
   return capProgramsPerUniversity(sortedResults)
     .slice(0, limit)
-    .map((entry) => entry.result);
+    .map((entry) => toSearchResult(entry.result));
 }
 
 function bm25Field(field: string) {
