@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { CheckCircle2, Database, Search, Server, XCircle } from "lucide-react";
+import { Database, Search } from "lucide-react";
 
 import { requireAdminSession } from "@/lib/auth";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { getSearchIndexHealth, testSearchQuery } from "@/lib/search/admin";
@@ -20,27 +19,6 @@ const fmtDate = new Intl.DateTimeFormat("en-IN", {
   hour: "numeric",
   minute: "2-digit",
 });
-
-function StatusBadge({
-  ok,
-  label,
-}: {
-  ok: boolean;
-  label: string;
-}) {
-  return (
-    <Badge
-      className={
-        ok
-          ? "border-emerald-200 bg-emerald-50 text-emerald-700"
-          : "border-slate-200 bg-slate-100 text-slate-600"
-      }
-    >
-      {ok ? <CheckCircle2 className="size-3" /> : <XCircle className="size-3" />}
-      {label}
-    </Badge>
-  );
-}
 
 export default async function AdminSearchPage({
   searchParams,
@@ -66,12 +44,12 @@ export default async function AdminSearchPage({
           Search Index Health
         </h1>
         <p className="mt-1.5 max-w-2xl text-sm text-white/55">
-          Monitor indexed documents, Typesense availability, and quick result
-          quality without changing the public search UI.
+          Monitor indexed Postgres documents and quick result quality without
+          changing the public search UI.
         </p>
       </div>
 
-      <div className="grid gap-3 md:grid-cols-3">
+      <div className="grid gap-3 md:grid-cols-2">
         <div className="rounded-2xl border border-slate-200 bg-white p-5">
           <div className="mb-3 inline-flex size-9 items-center justify-center rounded-xl bg-[#0b312b]/8 text-[#0b312b]">
             <Database className="size-4" />
@@ -81,30 +59,6 @@ export default async function AdminSearchPage({
           </p>
           <p className="mt-1 font-display text-4xl font-semibold text-[#0b312b]">
             {formatNumber(health.totalDocuments)}
-          </p>
-        </div>
-
-        <div className="rounded-2xl border border-slate-200 bg-white p-5">
-          <div className="mb-3 inline-flex size-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
-            <Server className="size-4" />
-          </div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
-            Typesense
-          </p>
-          <div className="mt-2 flex flex-wrap gap-2">
-            <StatusBadge
-              ok={health.typesense.configured}
-              label={health.typesense.configured ? "Configured" : "Not configured"}
-            />
-            <StatusBadge
-              ok={health.typesense.reachable}
-              label={health.typesense.reachable ? "Reachable" : "Not reachable"}
-            />
-          </div>
-          <p className="mt-3 text-sm text-slate-500">
-            {health.typesense.documentCount == null
-              ? "No Typesense document count available."
-              : `${formatNumber(health.typesense.documentCount)} documents in collection.`}
           </p>
         </div>
 
@@ -164,20 +118,15 @@ export default async function AdminSearchPage({
             Index actions
           </p>
           <h2 className="mt-1 text-lg font-semibold text-[#0b312b]">
-            Rebuild and sync
+            Rebuild
           </h2>
           <p className="mt-2 text-sm leading-6 text-slate-500">
-            Rebuild Postgres after content changes. Sync Typesense when the
-            optional search engine is configured.
+            Publishing a university refreshes its own search rows. Rebuild the
+            full Postgres index after bulk or non-university content changes.
           </p>
           <div className="mt-5">
             <SearchActions canManage={canManage} />
           </div>
-          {health.typesense.error ? (
-            <p className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-700">
-              {health.typesense.error}
-            </p>
-          ) : null}
         </section>
       </div>
 

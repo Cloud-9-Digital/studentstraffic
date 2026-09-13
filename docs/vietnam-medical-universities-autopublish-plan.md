@@ -178,7 +178,7 @@ Approach: research is orchestrated via **agents with web search/fetch** (the rep
   - Van Lang University → `/university/van-lang-university` (queue-id 68, 4 programs) — rich.
   - Hanoi University of Pharmacy → `/university/hanoi-university-of-pharmacy` (queue-id 69, 1 program) — leaner, honest caveats.
   - ⏸️ AWAITING USER REVIEW of the two live pages before publishing the remaining 5 net-new.
-  - **Invocation note for future runs:** the publisher must be run as `NODE_OPTIONS="--conditions=react-server" npx tsx scripts/publish-university-draft.ts --queue-id N` (it transitively imports `server-only`; the flag resolves it to a no-op). The seeder runs with plain `npx tsx`. `.env`/`.env.local` supply `DATABASE_URL`. Typesense + revalidate auto-skip locally (non-fatal).
+  - **Invocation note for future runs:** the publisher must be run as `NODE_OPTIONS="--conditions=react-server" npx tsx scripts/publish-university-draft.ts --queue-id N` (it transitively imports `server-only`; the flag resolves it to a no-op). The seeder runs with plain `npx tsx`. `.env`/`.env.local` supply `DATABASE_URL`. Revalidate auto-skips locally (non-fatal); search rows are refreshed directly in Postgres `search_documents`.
   - Remaining net-new (5): Nam Dinh Univ of Nursing, Hai Duong Medical Technical Univ, Hanoi Univ of Public Health, Yersin Univ, Tay Do Univ. Plus review: Hong Duc (confirm degree-level), Bac Giang (exclude — likely a college).
 - **Step 5 — After user OK: publish the rest.** On any push failure → keep draft local + record.
 - **Step 6 — End-of-run report** (`docs/run-reports/vietnam-medical-<date>.md`) with per-university outcomes, durations, totals, and **verifiable links** (live page URL + all source URLs).

@@ -1,10 +1,23 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import test from "node:test";
 import path from "node:path";
 
 async function readProjectFile(relativePath: string) {
   return readFile(path.join(process.cwd(), relativePath), "utf8");
+}
+
+async function listProjectSourceFiles(relativeDir: string) {
+  const entries = await readdir(path.join(process.cwd(), relativeDir), {
+    recursive: true,
+    withFileTypes: true,
+  });
+
+  return entries
+    .filter((entry) => entry.isFile() && /\.(?:[cm]?[jt]sx?)$/.test(entry.name))
+    .map((entry) =>
+      path.relative(process.cwd(), path.join(entry.parentPath, entry.name)),
+    );
 }
 
 test("autocomplete uses one cached index and bounded in-memory matches", async () => {
@@ -77,17 +90,46 @@ test("comparison indexes and detail lookup avoid full-catalog program reads", as
 });
 
 test("search rebuilds use projected reads and single-university publishing is incremental", async () => {
-  const [searchAdmin, universityPublisher, catalogPublisher] = await Promise.all([
-    readProjectFile("lib/search/admin.ts"),
-    readProjectFile("scripts/publish-university-draft.ts"),
-    readProjectFile("scripts/publish-catalog-payload.ts"),
-  ]);
+  const [searchAdmin, universitySearch, universityPublisher, catalogPublisher] =
+    await Promise.all([
+      readProjectFile("lib/search/admin.ts"),
+      readProjectFile("lib/search/university-search-documents.ts"),
+      readProjectFile("scripts/publish-university-draft.ts"),
+      readProjectFile("scripts/publish-catalog-payload.ts"),
+    ]);
 
   assert.doesNotMatch(searchAdmin, /getCatalogSnapshot/);
-  assert.match(searchAdmin, /syncTypesenseSearchForUniversities/);
-  assert.doesNotMatch(universityPublisher, /syncTypesenseSearchIndex/);
-  assert.match(universityPublisher, /syncTypesenseSearchForUniversities/);
-  assert.match(catalogPublisher, /syncTypesenseSearch\(\)/);
+  // Publish scripts run outside Next.js and must stay slug-bounded.
+  assert.doesNotMatch(universitySearch, /server-only|next\/cache|getCatalogSnapshot/);
+  assert.match(universitySearch, /inArray\(universities\.slug, slugs\)/);
+  assert.match(universitySearch, /onConflictDoUpdate/);
+
+  for (const publisher of [universityPublisher, catalogPublisher]) {
+    assert.match(publisher, /refreshSearchDocumentsForUniversities\(db, /);
+    assert.doesNotMatch(publisher, /rebuildPostgresSearchIndex|buildCurrentSearchDocuments/);
+  }
+});
+
+test("runtime code no longer references the removed Typesense integration", async () => {
+  const directories = [
+    "lib/search",
+    "scripts",
+    "app/_actions",
+    "app/admin/(protected)/search",
+  ];
+  const files = [
+    "lib/env.ts",
+    "app/api/revalidate/route.ts",
+    "package.json",
+    ...(await Promise.all(directories.map(listProjectSourceFiles))).flat(),
+  ];
+  const sources = await Promise.all(
+    files.map(async (file) => [file, await readProjectFile(file)] as const),
+  );
+
+  for (const [file, source] of sources) {
+    assert.doesNotMatch(source, /typesense/i, file);
+  }
 });
 
 test("program importer batches relationship lookups and uses scoped revalidation", async () => {

@@ -25,10 +25,6 @@ const envSchema = z.object({
   WATI_ACCESS_TOKEN: z.string().min(1).optional(),
   WATI_CHANNEL_NUMBER: z.string().min(1).optional(),
   WATI_WEBHOOK_TOKEN: z.string().min(1).optional(),
-  TYPESENSE_HOST: z.string().url().optional(),
-  TYPESENSE_API_KEY: z.string().min(1).optional(),
-  TYPESENSE_SEARCH_API_KEY: z.string().min(1).optional(),
-  TYPESENSE_COLLECTION: z.string().min(1).optional(),
   LOG_DB_SLOW_QUERIES: z.enum(["0", "1"]).optional(),
   LOG_DB_QUERIES: z.enum(["0", "1"]).optional(),
   ENABLE_INLINE_JOB_PROCESSING: z.enum(["0", "1"]).optional(),
@@ -69,10 +65,6 @@ const parsedEnv = envSchema.safeParse({
   WATI_ACCESS_TOKEN: optionalEnv(process.env.WATI_ACCESS_TOKEN),
   WATI_CHANNEL_NUMBER: optionalEnv(process.env.WATI_CHANNEL_NUMBER),
   WATI_WEBHOOK_TOKEN: optionalEnv(process.env.WATI_WEBHOOK_TOKEN),
-  TYPESENSE_HOST: optionalEnv(process.env.TYPESENSE_HOST),
-  TYPESENSE_API_KEY: optionalEnv(process.env.TYPESENSE_API_KEY),
-  TYPESENSE_SEARCH_API_KEY: optionalEnv(process.env.TYPESENSE_SEARCH_API_KEY),
-  TYPESENSE_COLLECTION: optionalEnv(process.env.TYPESENSE_COLLECTION),
   LOG_DB_SLOW_QUERIES: optionalEnv(process.env.LOG_DB_SLOW_QUERIES),
   LOG_DB_QUERIES: optionalEnv(process.env.LOG_DB_QUERIES),
   ENABLE_INLINE_JOB_PROCESSING: optionalEnv(process.env.ENABLE_INLINE_JOB_PROCESSING),
@@ -118,11 +110,6 @@ export const env = {
   watiAccessToken: parsedEnv.data.WATI_ACCESS_TOKEN,
   watiChannelNumber: parsedEnv.data.WATI_CHANNEL_NUMBER,
   watiWebhookToken: parsedEnv.data.WATI_WEBHOOK_TOKEN,
-  typesenseHost: parsedEnv.data.TYPESENSE_HOST,
-  typesenseApiKey: parsedEnv.data.TYPESENSE_API_KEY,
-  typesenseSearchApiKey: parsedEnv.data.TYPESENSE_SEARCH_API_KEY,
-  typesenseCollection:
-    parsedEnv.data.TYPESENSE_COLLECTION ?? "studentstraffic_search",
   hasDatabase: Boolean(parsedEnv.data.DATABASE_URL),
   hasCrmLeadSyncConfig: Boolean(
     parsedEnv.data.CRM_LEAD_INTAKE_URL && parsedEnv.data.CRM_LEAD_INTAKE_SECRET
@@ -145,13 +132,6 @@ export const env = {
     parsedEnv.data.WATI_API_BASE_URL &&
       parsedEnv.data.WATI_ACCESS_TOKEN &&
       parsedEnv.data.WATI_CHANNEL_NUMBER
-  ),
-  hasTypesenseSearch: Boolean(
-    parsedEnv.data.TYPESENSE_HOST &&
-      (parsedEnv.data.TYPESENSE_SEARCH_API_KEY || parsedEnv.data.TYPESENSE_API_KEY)
-  ),
-  hasTypesenseAdmin: Boolean(
-    parsedEnv.data.TYPESENSE_HOST && parsedEnv.data.TYPESENSE_API_KEY
   ),
   logDbSlowQueries: parsedEnv.data.LOG_DB_SLOW_QUERIES === "1",
   logDbQueries: parsedEnv.data.LOG_DB_QUERIES === "1",

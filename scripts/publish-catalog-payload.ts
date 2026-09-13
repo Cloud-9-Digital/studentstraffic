@@ -1,6 +1,5 @@
 import "./lib/load-script-env.mjs";
 
-import { spawn } from "node:child_process";
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import { neonConfig, Pool } from "@neondatabase/serverless";
@@ -26,7 +25,7 @@ import {
 } from "@/lib/catalogue-facets";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
 import type { CatalogPayload } from "./lib/catalog-payload-schema";
-import { env } from "@/lib/env";
+import { refreshSearchDocumentsForUniversities } from "@/lib/search/university-search-documents";
 
 const sourceSchema = z.object({
   label: z.string().min(2),
@@ -156,24 +155,6 @@ export const payloadSchema = z.object({
 });
 
 export type LegacyCatalogPayload = z.infer<typeof payloadSchema>;
-
-function syncTypesenseSearch() {
-  return new Promise<void>((resolve, reject) => {
-    const child = spawn(
-      process.execPath,
-      ["--import", "tsx", "scripts/sync-typesense-search.ts"],
-      { cwd: process.cwd(), env: process.env, stdio: "inherit" },
-    );
-    child.on("error", reject);
-    child.on("exit", (code) => {
-      if (code === 0) {
-        resolve();
-        return;
-      }
-      reject(new Error(`Typesense search sync exited with code ${code ?? "unknown"}.`));
-    });
-  });
-}
 
 /**
  * Apply one already-validated catalogue payload. This is intentionally only
@@ -399,9 +380,11 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
         .replace(/^-+|-+$/g, ""),
     ),
   )];
-  if (env.hasTypesenseAdmin) {
-    await syncTypesenseSearch();
-  }
+  // Incremental: only these universities' rows in search_documents change.
+  const searchRefresh = await refreshSearchDocumentsForUniversities(db, universitySlugs);
+  console.log(
+    `Search documents refreshed: ${searchRefresh.upserted} upserted, ${searchRefresh.removed} removed.`,
+  );
   // Only entity-scoped tags: the shared "universities"/"catalog" tags would
   // expire every university page on each publish and regenerate them all
   // against Neon at once.

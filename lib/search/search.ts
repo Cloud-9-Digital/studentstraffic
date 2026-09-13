@@ -13,7 +13,6 @@ import type {
 } from "@/lib/data/types";
 import { getDb } from "@/lib/db/server";
 import { buildSearchDocuments } from "@/lib/search/documents";
-import { searchTypesenseCatalog } from "@/lib/search/typesense";
 
 const globalSearchLoggingState = globalThis as typeof globalThis & {
   __searchWarningKeys?: Set<string>;
@@ -462,20 +461,6 @@ async function executeSearchCatalog(
   filters: SearchFilters,
   limit = 24
 ): Promise<SearchResult[]> {
-  try {
-    const typesenseResults = await searchTypesenseCatalog(filters, limit);
-
-    if (typesenseResults) {
-      return rerankSearchResults(typesenseResults, filters, limit);
-    }
-  } catch (error) {
-    warnSearchOnce(
-      "typesense-fallback",
-      "Typesense failed; using Postgres fallback.",
-      error,
-    );
-  }
-
   const db = getDb();
 
   if (!db) {
@@ -724,10 +709,10 @@ async function executeSearchCatalog(
  *
  * `use cache` derives its key from the arguments, so "MBBS", "mbbs" and
  * "mbbs  abroad" would otherwise mint three separate cache entries despite
- * matching identically (both Typesense and the Postgres fallback are
- * case-insensitive). Every distinct key is a cache write, and search terms are
- * unbounded user input, so normalising here is a direct reduction in write
- * volume for zero change in results.
+ * matching identically (Postgres search is case-insensitive). Every distinct
+ * key is a cache write, and search terms are unbounded user input, so
+ * normalising here is a direct reduction in write volume for zero change in
+ * results.
  */
 function normalizeSearchFilters(filters: SearchFilters): SearchFilters {
   const normalizeValue = (value: string | undefined) => {
@@ -775,10 +760,10 @@ export async function searchCatalogResultSet(
   // still mints an entry that is written once and never read again — the same
   // pattern that made cache writes exceed reads across this project.
   //
-  // Search is already backed by Typesense (see executeSearchCatalog), which is
-  // purpose-built to answer these queries directly, so skipping the incremental
-  // cache costs little and removes the unbounded writes. Facet-only requests
-  // (no `q`) are a small, reusable key space and stay cached.
+  // Search runs directly against the indexed search_documents table (see
+  // executeSearchCatalog), so skipping the incremental cache costs little and
+  // removes the unbounded writes. Facet-only requests (no `q`) are a small,
+  // reusable key space and stay cached.
   if (normalized.q) {
     return {
       results: await executeSearchCatalog(normalized, limit),

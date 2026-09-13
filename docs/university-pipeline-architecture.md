@@ -364,10 +364,14 @@ failure rolls the complete batch back; cache and search refresh run only after t
 ## Cost-safe publication refresh (2026-07-14)
 
 Catalogue publication must not rebuild or download the complete catalogue after each university.
-`publish-university-draft.ts` and `publish-catalog-payload.ts` now upsert only the affected
-university, its published programmes, and the directly related country/course documents into
-Typesense. The admin search screen and `scripts/sync-typesense-search.ts` retain the full rebuild as
-an explicit recovery/maintenance operation; it is not part of the per-university hot path.
+`publish-university-draft.ts` and `publish-catalog-payload.ts` refresh only the affected
+universities' rows in the Postgres `search_documents` table via
+`refreshSearchDocumentsForUniversities` (`lib/search/university-search-documents.ts`): four
+slug-bounded reads, one batched upsert of each university's `university` document and its published
+`program` documents, then one delete of that university's rows that are no longer published.
+Country and course documents aggregate many universities and are not rebuilt per publish. The admin
+search screen's "Rebuild Postgres index" retains the full rebuild as an explicit recovery/maintenance
+operation; it is not part of the per-university hot path.
 
 `add-program-offerings.mjs` resolves all referenced university, course and existing programme slugs
 with three batched lookups before writing the transaction, rather than repeating those reads for

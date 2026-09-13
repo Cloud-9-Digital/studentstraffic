@@ -1,6 +1,6 @@
 import "server-only";
 
-import { and, asc, count, desc, eq, inArray, sql } from "drizzle-orm";
+import { and, asc, count, desc, eq, sql } from "drizzle-orm";
 import { revalidateTag } from "next/cache";
 
 import { studyAbroadGuides } from "@/lib/data/study-abroad-guides";
@@ -16,16 +16,16 @@ import {
   searchDocuments,
   universities,
 } from "@/lib/db/schema";
-import {
-  buildSearchDocuments,
-  type SearchProgramOffering,
-} from "@/lib/search/documents";
-import {
-  ensureTypesenseSearchCollection,
-  getTypesenseSearchHealth,
-  importTypesenseSearchDocuments,
-} from "@/lib/search/typesense";
+import { buildSearchDocuments } from "@/lib/search/documents";
 import { searchCatalog } from "@/lib/search/search";
+import {
+  searchCountryColumns,
+  searchCourseColumns,
+  searchProgramColumns,
+  searchUniversityColumns,
+  toSearchDocumentRow,
+  toSearchProgramOfferings,
+} from "@/lib/search/university-search-documents";
 
 async function ensurePostgresSearchIndexes() {
   const db = getDb();
@@ -76,55 +76,12 @@ export async function buildCurrentSearchDocuments() {
 
   const [countryRows, courseRows, universityRows, programRows, indiaColleges, publishedPosts] =
     await Promise.all([
-      db.select({
-        slug: countries.slug,
-        name: countries.name,
-        region: countries.region,
-        summary: countries.summary,
-        whyStudentsChooseIt: countries.whyStudentsChooseIt,
-        climate: countries.climate,
-        currencyCode: countries.currencyCode,
-      }).from(countries),
-      db.select({
-        slug: courses.slug,
-        name: courses.name,
-        shortName: courses.shortName,
-        durationYears: courses.durationYears,
-        summary: courses.summary,
-      }).from(courses),
-      db.select({
-        slug: universities.slug,
-        countrySlug: countries.slug,
-        name: universities.name,
-        city: universities.city,
-        summary: universities.summary,
-        featured: universities.featured,
-        campusLifestyle: universities.campusLifestyle,
-        cityProfile: universities.cityProfile,
-        practicalExposure: universities.practicalExposure,
-        safetyOverview: universities.safetyOverview,
-        studentSupport: universities.studentSupport,
-        whyChoose: universities.whyChoose,
-        thingsToConsider: universities.thingsToConsider,
-        bestFitFor: universities.bestFitFor,
-        industryPartners: universities.industryPartners,
-        recognitionBadges: universities.recognitionBadges,
-        faq: universities.faq,
-      }).from(universities)
+      db.select(searchCountryColumns).from(countries),
+      db.select(searchCourseColumns).from(courses),
+      db.select(searchUniversityColumns).from(universities)
         .innerJoin(countries, eq(universities.countryId, countries.id))
         .where(eq(universities.published, true)),
-      db.select({
-        slug: programOfferings.slug,
-        universitySlug: universities.slug,
-        courseSlug: courses.slug,
-        title: programOfferings.title,
-        annualTuitionUsd: programOfferings.annualTuitionUsd,
-        medium: programOfferings.medium,
-        professionalExamSupport: programOfferings.professionalExamSupport,
-        teachingPhases: programOfferings.teachingPhases,
-        intakeMonths: programOfferings.intakeMonths,
-        featured: programOfferings.featured,
-      }).from(programOfferings)
+      db.select(searchProgramColumns).from(programOfferings)
         .innerJoin(universities, eq(programOfferings.universityId, universities.id))
         .innerJoin(courses, eq(programOfferings.courseId, courses.id))
         .where(and(
@@ -158,10 +115,7 @@ export async function buildCurrentSearchDocuments() {
     countries: countryRows,
     courses: courseRows,
     universities: universityRows,
-    programOfferings: programRows.map((program) => ({
-      ...program,
-      medium: program.medium as SearchProgramOffering["medium"],
-    })),
+    programOfferings: toSearchProgramOfferings(programRows),
     indiaColleges: indiaColleges.map((college) => ({
       ...college,
       cityName: college.cityName ?? undefined,
@@ -193,26 +147,7 @@ export async function rebuildPostgresSearchIndex() {
     await tx.delete(searchDocuments);
 
     if (documents.length) {
-      await tx.insert(searchDocuments).values(
-        documents.map((document) => ({
-          documentType: document.documentType,
-          sourceSlug: document.sourceSlug,
-          path: document.path,
-          title: document.title,
-          subtitle: document.subtitle,
-          summary: document.summary,
-          searchText: document.searchText,
-          highlights: document.highlights,
-          countrySlug: document.countrySlug,
-          courseSlug: document.courseSlug,
-          universitySlug: document.universitySlug,
-          city: document.city,
-          featured: document.featured,
-          annualTuitionUsd: document.annualTuitionUsd,
-          medium: document.medium,
-          intakeMonths: document.intakeMonths,
-        })),
-      );
+      await tx.insert(searchDocuments).values(documents.map(toSearchDocumentRow));
     }
   });
   await ensurePostgresSearchIndexes();
@@ -224,116 +159,8 @@ export async function rebuildPostgresSearchIndex() {
   };
 }
 
-export async function syncTypesenseSearchIndex() {
-  const documents = await buildCurrentSearchDocuments();
-
-  await ensureTypesenseSearchCollection();
-  const result = await importTypesenseSearchDocuments(documents);
-  revalidateTag("search", "hours");
-
-  return result;
-}
-
-export async function syncTypesenseSearchForUniversities(universitySlugs: string[]) {
-  const db = getDb();
-  const slugs = [...new Set(universitySlugs.filter(Boolean))];
-  if (!db) throw new Error("Database unavailable.");
-  if (slugs.length === 0) return { imported: 0 };
-
-  const [countryRows, courseRows, universityRows, programRows] = await Promise.all([
-    db.selectDistinct({
-      slug: countries.slug,
-      name: countries.name,
-      region: countries.region,
-      summary: countries.summary,
-      whyStudentsChooseIt: countries.whyStudentsChooseIt,
-      climate: countries.climate,
-      currencyCode: countries.currencyCode,
-    }).from(countries)
-      .innerJoin(universities, eq(universities.countryId, countries.id))
-      .where(and(
-        inArray(universities.slug, slugs),
-        eq(universities.published, true),
-      )),
-    db.selectDistinct({
-      slug: courses.slug,
-      name: courses.name,
-      shortName: courses.shortName,
-      durationYears: courses.durationYears,
-      summary: courses.summary,
-    }).from(courses)
-      .innerJoin(programOfferings, eq(programOfferings.courseId, courses.id))
-      .innerJoin(universities, eq(programOfferings.universityId, universities.id))
-      .where(and(
-        inArray(universities.slug, slugs),
-        eq(universities.published, true),
-        eq(programOfferings.published, true),
-      )),
-    db.select({
-      slug: universities.slug,
-      countrySlug: countries.slug,
-      name: universities.name,
-      city: universities.city,
-      summary: universities.summary,
-      featured: universities.featured,
-      campusLifestyle: universities.campusLifestyle,
-      cityProfile: universities.cityProfile,
-      practicalExposure: universities.practicalExposure,
-      safetyOverview: universities.safetyOverview,
-      studentSupport: universities.studentSupport,
-      whyChoose: universities.whyChoose,
-      thingsToConsider: universities.thingsToConsider,
-      bestFitFor: universities.bestFitFor,
-      industryPartners: universities.industryPartners,
-      recognitionBadges: universities.recognitionBadges,
-      faq: universities.faq,
-    }).from(universities)
-      .innerJoin(countries, eq(universities.countryId, countries.id))
-      .where(and(
-        inArray(universities.slug, slugs),
-        eq(universities.published, true),
-      )),
-    db.select({
-      slug: programOfferings.slug,
-      universitySlug: universities.slug,
-      courseSlug: courses.slug,
-      title: programOfferings.title,
-      annualTuitionUsd: programOfferings.annualTuitionUsd,
-      medium: programOfferings.medium,
-      professionalExamSupport: programOfferings.professionalExamSupport,
-      teachingPhases: programOfferings.teachingPhases,
-      intakeMonths: programOfferings.intakeMonths,
-      featured: programOfferings.featured,
-    }).from(programOfferings)
-      .innerJoin(universities, eq(programOfferings.universityId, universities.id))
-      .innerJoin(courses, eq(programOfferings.courseId, courses.id))
-      .where(and(
-        inArray(universities.slug, slugs),
-        eq(universities.published, true),
-        eq(programOfferings.published, true),
-      )),
-  ]);
-
-  const documents = buildSearchDocuments({
-    countries: countryRows,
-    courses: courseRows,
-    universities: universityRows,
-    programOfferings: programRows.map((program) => ({
-      ...program,
-      medium: program.medium as SearchProgramOffering["medium"],
-    })),
-    landingPages: [],
-  });
-
-  await ensureTypesenseSearchCollection();
-  const result = await importTypesenseSearchDocuments(documents);
-  revalidateTag("search", "hours");
-  return result;
-}
-
 export async function getSearchIndexHealth() {
   const db = getDb();
-  const typesense = await getTypesenseSearchHealth();
 
   if (!db) {
     return {
@@ -346,7 +173,6 @@ export async function getSearchIndexHealth() {
         path: string;
         updatedAt: Date | null;
       }>,
-      typesense,
     };
   }
 
@@ -382,7 +208,6 @@ export async function getSearchIndexHealth() {
     documentsByType: typeRows,
     latestUpdatedAt: latestRows[0]?.updatedAt ?? null,
     recentDocuments,
-    typesense,
   };
 }
 

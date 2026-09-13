@@ -11,8 +11,7 @@ import {
   universityResearchDrafts,
   universityResearchQueue,
 } from "@/lib/db/schema";
-import { env } from "@/lib/env";
-import { syncTypesenseSearchForUniversities } from "@/lib/search/admin";
+import { refreshSearchDocumentsForUniversities } from "@/lib/search/university-search-documents";
 import { isApprovedCanonicalProgramme } from "@/lib/data/program-taxonomy";
 import { createSlug } from "@/lib/utils";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
@@ -734,12 +733,11 @@ async function main() {
   console.log(`Programs published: ${publishedPrograms}`);
   console.log(`Queue item updated: ${record.queueId}`);
 
-  if (env.hasTypesenseAdmin) {
-    const result = await syncTypesenseSearchForUniversities([savedUniversity.slug]);
-    console.log(`Typesense search sync complete. Upserted ${result.imported} affected documents.`);
-  } else {
-    console.warn("Skipping Typesense sync: TYPESENSE_HOST/TYPESENSE_API_KEY are not configured.");
-  }
+  // Incremental: only this university's rows in search_documents change.
+  const searchRefresh = await refreshSearchDocumentsForUniversities(db, [savedUniversity.slug]);
+  console.log(
+    `Search documents refreshed: ${searchRefresh.upserted} upserted, ${searchRefresh.removed} removed.`,
+  );
 
   await triggerRevalidate(
     [

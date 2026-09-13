@@ -155,6 +155,9 @@ export async function POST(request: NextRequest) {
     // Sitemap readers are bounded count/slice queries; expiring them keeps a
     // newly published slug discoverable without touching any page cache.
     tags.add("sitemap");
+    // Search result/facet caches are a bounded key space (free-text queries
+    // are not cached), and publish scripts refresh search_documents first.
+    tags.add("search");
 
     // Keep the primary discovery indexes immediately fresh. The comparison,
     // budget and catalogue API indexes are already CDN-cached independently;

@@ -57,8 +57,8 @@ per-unique-search to roughly once per cache period per instance.
 ### The rule
 
 `getSuggestionIndex()` must stay **argument-free**. If the catalogue outgrows a
-single cache entry, the answer is a dedicated search index (Typesense is already
-in this repo) — *not* a return to per-query cache keys.
+single cache entry, the answer is a dedicated search index (such as querying the
+Postgres `search_documents` table directly) — *not* a return to per-query cache keys.
 
 ---
 
@@ -80,7 +80,8 @@ never-read entry — the pattern that caused the bill above. Facet browsing
 reused key space and **stays cached** — that is the path landing pages and
 crawlers hit.
 
-Search is backed by Typesense, which is built to answer these directly.
+Free-text search runs directly against the indexed Postgres `search_documents` table
+(ParadeDB BM25 / pg_trgm), which answers these without a cache entry.
 
 **Do not** move normalisation inside the cached function (too late — the raw
 arguments have already formed the key), and **do not** re-add caching for `q`.
