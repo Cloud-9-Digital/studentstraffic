@@ -3968,7 +3968,7 @@ export const studyAbroadGuides = {
       summary:
         "Germany employs over 306,700 foreign nursing staff and projects a shortage of hundreds of thousands more by 2030. For Indian graduates of EU-standard BSc Nursing programs, the pathway to German nursing registration — the Berufsanerkennung process — is structured, documented, and increasingly well-supported. This guide explains every step from graduation to a German hospital ward, the German B2 language requirement, the salary reality, and how Students Traffic prepares the complete recognition package.",
       publishedDate: "2026-06-04",
-      countrySlug: "albania",
+      countrySlug: "germany",
       primaryHref: "/bsc-nursing-in-albania",
       primaryLabel: "BSc Nursing in Albania guide",
       secondaryLabel: "Talk to nursing career team",
@@ -5716,7 +5716,7 @@ export const studyAbroadGuides = {
       summary:
         "Malta College of Arts, Science and Technology (MCAST) offers two nursing pathways for Indian students: a 3-year BSc (Hons) Nursing and a 6-month Nursing Bridging Course for existing Indian BSc Nursing graduates. Both deliver an EU-recognised qualification, in English, in an EU and Schengen country where English is an official language. After just one year working as a registered nurse in Malta, Indian nurses can register with the UK NMC with IELTS and OET completely waived. This guide covers both pathways in full — eligibility, fees, visa, MQRIC, CNM registration, the UK NMC shortcut, and the honest India recognition picture.",
       publishedDate: "2026-07-01",
-      countrySlug: "albania",
+      countrySlug: "malta",
       primaryHref: "/bsc-nursing-in-albania",
       primaryLabel: "Compare BSc Nursing in Albania",
       secondaryLabel: "Talk to our Malta nursing team",

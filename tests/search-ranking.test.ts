@@ -216,6 +216,24 @@ test("detects catalogue countries named in the query, including common aliases",
   assert.deepEqual(detect("tbilsi medical"), []);
 });
 
+test("ordinary words, origin countries and compound place names create no country intent", () => {
+  const catalogue = ["canada", "georgia", "india", "south-korea", "united-kingdom", "united-states"];
+  const detect = (query: string) => findQueryCountrySlugs(analyzeSearchQuery(query), catalogue);
+
+  assert.deepEqual(detect("contact us"), []);
+  assert.deepEqual(detect("why choose us"), []);
+  assert.deepEqual(detect("about us"), []);
+  assert.deepEqual(detect("study in the usa"), ["united-states"]);
+  assert.deepEqual(detect("u.s. medical schools"), ["united-states"]);
+  assert.deepEqual(detect("study in america"), ["united-states"]);
+  assert.deepEqual(detect("mbbs in latin america"), []);
+  assert.deepEqual(detect("mbbs abroad from india"), []);
+  assert.deepEqual(detect("study in canada from india"), ["canada"]);
+  assert.deepEqual(detect("mbbs in india"), ["india"]);
+  assert.deepEqual(detect("study in south korea"), ["south-korea"]);
+  assert.deepEqual(detect("georgia"), ["georgia"]);
+});
+
 test("country intent removes documents in other countries once the named country has results", () => {
   const results = [
     fixture({ title: "Germany nursing career pathway", documentType: "landing_page", countrySlug: "albania", score: 40 }, 20000),

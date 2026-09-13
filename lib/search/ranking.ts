@@ -86,6 +86,9 @@ const BM25_PHRASE_FIELDS = ["title", "search_text"] as const;
 /**
  * Everyday names for catalogue countries, keyed by normalised query phrase and
  * mapped to the country slug written with spaces ("united-kingdom").
+ *
+ * Bare "us" is deliberately absent: it is an ordinary word ("contact us",
+ * "why choose us"). "u.s." normalises to "u s".
  */
 const COUNTRY_ALIASES: Readonly<Record<string, string>> = {
   uk: "united kingdom",
@@ -94,8 +97,9 @@ const COUNTRY_ALIASES: Readonly<Record<string, string>> = {
   england: "united kingdom",
   scotland: "united kingdom",
   wales: "united kingdom",
-  us: "united states",
   usa: "united states",
+  "u s": "united states",
+  "u s a": "united states",
   america: "united states",
   "united states of america": "united states",
   uae: "united arab emirates",
@@ -107,6 +111,25 @@ const COUNTRY_ALIASES: Readonly<Record<string, string>> = {
   nz: "new zealand",
 };
 const MAX_COUNTRY_PHRASE_TOKENS = 4;
+/**
+ * "mbbs abroad from india": a country right after "from" is where the student
+ * comes from (this site's audience is mostly Indian), not where they want to
+ * study, so it creates no country intent.
+ */
+const COUNTRY_ORIGIN_WORDS = new Set(["from"]);
+/**
+ * A one-word alias after one of these names a different place ("latin
+ * america", "north korea", "new england"), so the alias is not applied.
+ */
+const COUNTRY_COMPOUND_QUALIFIERS = new Set([
+  "north",
+  "south",
+  "east",
+  "west",
+  "central",
+  "latin",
+  "new",
+]);
 /** Added when a document is in a country the query names. */
 export const COUNTRY_MATCH_BOOST = 6;
 /** Subtracted when a document is in a different country than the query names. */
@@ -170,12 +193,19 @@ export function getCountryQueryPhrases(analysis: SearchQueryAnalysis): string[] 
   const { tokens } = analysis;
 
   for (let start = 0; start < tokens.length; start += 1) {
+    const previousToken = tokens[start - 1] ?? "";
+
+    if (COUNTRY_ORIGIN_WORDS.has(previousToken)) continue;
+
     for (
       let size = 1;
       size <= MAX_COUNTRY_PHRASE_TOKENS && start + size <= tokens.length;
       size += 1
     ) {
-      phrases.add(resolveCountryAlias(tokens.slice(start, start + size).join(" ")));
+      const phrase = tokens.slice(start, start + size).join(" ");
+      const insideCompound = size === 1 && COUNTRY_COMPOUND_QUALIFIERS.has(previousToken);
+
+      phrases.add(insideCompound ? phrase : resolveCountryAlias(phrase));
     }
   }
 
