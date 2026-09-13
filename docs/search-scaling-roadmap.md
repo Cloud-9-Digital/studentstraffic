@@ -11,6 +11,27 @@ The current site search uses the `search_documents` table first, with an in-memo
 - Log production search latency and inferred cache hit/miss behavior from `/search`.
 - No external search engine is used: `/search` runs on Postgres only (ParadeDB BM25 when `search_documents_bm25_idx` exists, otherwise pg_trgm, otherwise an in-memory fallback).
 
+## Ranking model (2026-09-13)
+
+`lib/search/ranking.ts` holds the ranking model (pure, unit tested in `tests/search-ranking.test.ts`); `lib/search/search.ts` executes it. A free-text search issues one ranking statement plus the cached `pg_indexes` check; exact and typo-tolerant matching share that statement. The pg_trgm fallback runs only when the BM25 index is missing or nothing matches.
+
+Candidate generation (ParadeDB BM25):
+
+- The query is normalised (lowercase, diacritics stripped) into at most 8 terms. Intent words (`in`, `of`, `for`, `fees`, `cost`, `best`, `top`, `study`, `abroad`, ...) are optional: they add score but are never required, so a page that says "fee" still matches "mbbs georgia fees".
+- Every other term must match in some field (title, subtitle, summary, search_text): exactly (BM25 scored), within a typo budget on title or subtitle (0 edits for terms of up to 4 characters so acronyms such as KIIT or LPU stay exact, 1 edit for 5-7, 2 for 8+; a transposition counts as one edit), or as a prefix for the last term of 4+ characters ("manipal univ").
+- Adjacent query words that appear as a phrase in the title or search_text add score ("computer science").
+- Score = BM25 + exact-title boost + a small type and `featured` boost. The best 200 matches are taken with a top-N sort, capped at the result limit per document type and at 3 programmes per university, and the best 72 are joined back for display columns.
+
+Rerank (in process, no extra queries):
+
+- Title signals: exact title (+80); the whole title matches with per-word typos (+60, "univercity of copenhagen"); title starts with or contains the query (+55 / +42); subtitle contains it (+18); all or 75% of query words in the title, typo tolerant (+18 / +8); all query words in the subtitle (+6); all required words in the document (+4). Universities, India colleges and programmes that match by title get a type boost; guides, countries and courses that do not are demoted.
+- Medical intent: queries containing mbbs, md, medicine, medical or doctor add +10 to universities, India colleges and programmes whose title names a medical or health faculty.
+- Content depth prior: up to +5 (1.25 x ln(search_text length / 400)), so thorough pages beat thin stubs with the same terms. It is always smaller than any title signal.
+- Strong title matches filter out weaker entity results (unchanged), at most 3 programmes per university reach the results, and ties break on title tier, `featured`, document type and title.
+- `/search` renders results grouped by type (universities, programmes, guides, articles, India colleges, countries, courses), so ranking decides the order within each section and which results survive the 24-result limit.
+
+Evaluation: a 32-query set (exact names, misspellings, acronyms, medical and programme intent, country hubs) scored by displayed position improved from success@1 0.69, success@3 0.75, MRR 0.74 (22 of 32 targets met) to success@1 0.81, success@3 0.84, MRR 0.84 (27 of 32).
+
 ## Keeping The Index Fresh
 
 - University publishes (`scripts/publish-university-draft.ts` and catalogue payloads applied through `scripts/publish-catalog-payload.ts`) call `refreshSearchDocumentsForUniversities` (`lib/search/university-search-documents.ts`). It upserts only those universities' `university` and `program` rows in `search_documents` and deletes their rows that are no longer published, then the publish triggers `/api/revalidate` (catalog scope), which expires the `search` cache tag.
