@@ -85,13 +85,16 @@ const nextConfig: NextConfig = {
     // whose content did not change. That timer was regenerating ~586 pages an
     // hour and was the single largest source of steady database load.
     //
-    // `revalidate` is a year and `expire` is deliberately omitted, which Next
-    // treats as INFINITE_CACHE - entries never expire on their own. Tag
-    // invalidation is the only thing that refreshes them. `expire` must stay
-    // omitted (or exceed `revalidate`) or Next rejects the config.
+    // Tag invalidation is still the primary refresh path. The timers below are
+    // only a safety net: `revalidate` refreshes an entry in the background the
+    // first time it is read after a week, so a page nobody visits costs
+    // nothing, and `expire` guarantees that a bad entry (for example a
+    // not-found result captured during a database incident) can never outlive
+    // a month. `expire` must be >= `revalidate` or Next rejects the config.
     catalog: {
       stale: 300,
-      revalidate: 60 * 60 * 24 * 365,
+      revalidate: 60 * 60 * 24 * 7,
+      expire: 60 * 60 * 24 * 30,
     },
   },
   experimental: {

@@ -402,9 +402,11 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
   if (env.hasTypesenseAdmin) {
     await syncTypesenseSearch();
   }
+  // Only entity-scoped tags: the shared "universities"/"catalog" tags would
+  // expire every university page on each publish and regenerate them all
+  // against Neon at once.
   await triggerRevalidate(
     [
-      "universities",
       ...countrySlugs.flatMap((slug) => [
         `country:${slug}`,
         `country-programs:${slug}`,

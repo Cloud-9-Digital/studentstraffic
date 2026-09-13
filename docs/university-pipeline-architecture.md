@@ -226,6 +226,45 @@ Pattern: `scripts/seed-<country>-batch<N>.mjs` — a plain array of university o
 a SQL `Pool`. Use `scripts/seed-russian-universities-batch1.mjs` as the template. Prefer the pipeline
 above for new work; these remain mainly as historical reference and for one-off manual corrections.
 
+## Rendering and cache-invalidation model (2026-09-13)
+
+The four catalogue detail routes (`app/university/[slug]`, `app/countries/[slug]`,
+`app/courses/[slug]` and the root `app/[slug]` programme/guide route) render per request. Each
+page and its `generateMetadata` begins with `await connection()`, which is the request boundary
+that Cache Components needs before a dynamic slug is resolved.
+
+- **Why the boundary is mandatory.** `generateStaticParams` enumerates only a subset of catalogue
+  slugs at build time. Without a request boundary every other slug is served the build-time
+  fallback shell, which renders "not found" with HTTP 200 (a soft 404) instead of the real page.
+  Removing `await connection()` from these routes is a production outage, not an optimisation.
+- **All reads stay cached.** The boundary only defers rendering to request time; every database
+  read behind it remains inside `"use cache"` / `"use cache: remote"` functions using the `catalog`
+  `cacheLife` profile (`next.config.ts`): 7-day `revalidate`, 30-day `expire`. Tag invalidation is
+  the primary refresh path; the timers are a safety net so a bad entry cannot outlive a month and an
+  unvisited page costs nothing. `expire` must stay >= `revalidate` or Next rejects the config.
+- **Not-found lookups are cached for minutes only.** `getCountryBySlug`, the cached university
+  reader and `getProgramBySlug` call `cacheLife(CATALOG_MISS_CACHE_LIFE)` (`lib/data/catalog.ts`,
+  1 min stale / 5 min revalidate / 15 min expire) on their miss path. Hits keep the long-lived
+  profile; a slug published without a matching invalidation, or an empty read during a database
+  incident, heals on its own.
+- **Publishes send entity-scoped tags only.** `scripts/publish-catalog-payload.ts` and
+  `app/api/revalidate/route.ts` may only emit `university:<slug>`, `university-programs:<slug>`,
+  `country:<slug>`, `country-programs:<slug>`, `course-programs:<slug>`, `city-programs:<slug>` and
+  `program:<slug>`, plus the three index paths (`/universities`, `/compare`, `/budget`). Never send
+  the shared `universities`, `catalog` or `countries` tags, and never expire dynamic route patterns
+  such as `/[slug]` or `/countries/[slug]`: those regenerate the entire catalogue against Neon at
+  once. This supersedes the earlier note that the root route shell had to be expired for new
+  slugs; the request boundary makes that unnecessary. `tests/db-egress-guards.test.ts` enforces
+  all of the above.
+
+Incident note (2026-09-09): commit `78df9c9` (2026-08-11) had removed `await connection()` from
+the university, country and course routes. On 2026-09-09 a publish run invalidated the shared
+`universities`/`catalog` tags and the dynamic route patterns, evicting the cached pages. Because
+the routes no longer had a request boundary, every non-enumerated slug fell back to the build-time
+shell: roughly 700 university pages, 4,400 programme pages and the new country pages (for example
+`/countries/india`) rendered "not found" with a 200 status until the boundary was restored and
+publish invalidation was scoped to entity tags.
+
 ## Known issues / gotchas
 
 - **A `research-drafts/<country>/<slug>.json` file existing does NOT mean it's in the DB.**

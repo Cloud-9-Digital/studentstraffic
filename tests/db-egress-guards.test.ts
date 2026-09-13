@@ -157,24 +157,48 @@ test("blog index metadata does not download every article body", async () => {
   assert.doesNotMatch(metadataReader, /content: blogPosts\.content/);
 });
 
-test("complete catalog pages stay cacheable while capped catalogs resolve at request time", async () => {
-  const [countryPage, coursePage, universityPage, ...cappedPages] = await Promise.all([
+test("catalogue detail pages resolve slugs at request time behind cached data reads", async () => {
+  // Catalogue entities are published between deployments and only partly
+  // enumerated at build. Without a request boundary, unlisted slugs inherit
+  // the build fallback shell and render "not found" (2026-09-09 outage).
+  const pages = await Promise.all([
     readProjectFile("app/countries/[slug]/page.tsx"),
     readProjectFile("app/courses/[slug]/page.tsx"),
     readProjectFile("app/university/[slug]/page.tsx"),
+    readProjectFile("app/[slug]/page.tsx"),
     readProjectFile("app/cities/[slug]/page.tsx"),
     readProjectFile("app/blog/[slug]/page.tsx"),
   ]);
 
-  for (const source of [countryPage, coursePage, universityPage]) {
-    assert.doesNotMatch(source, /from "next\/server"/);
-    assert.doesNotMatch(source, /await connection\(\)/);
-  }
-
-  for (const source of cappedPages) {
-    assert.match(source, /from "next\/server"/);
+  for (const source of pages) {
+    assert.match(source, /import \{ connection \} from "next\/server"/);
     assert.match(source, /await connection\(\)/);
   }
+
+  // The boundary must not push database reads to per-request: every
+  // catalogue detail page keeps its data behind "use cache".
+  for (const source of pages.slice(0, 4)) {
+    assert.match(source, /"use cache/);
+  }
+});
+
+test("catalogue publishes never flush the whole catalogue", async () => {
+  const [publisher, route, config, catalog] = await Promise.all([
+    readProjectFile("scripts/publish-catalog-payload.ts"),
+    readProjectFile("app/api/revalidate/route.ts"),
+    readProjectFile("next.config.ts"),
+    readProjectFile("lib/data/catalog.ts"),
+  ]);
+
+  assert.doesNotMatch(publisher, /\n\s*"universities",\n/);
+  assert.doesNotMatch(route, /tags\.add\("countries"\)/);
+  assert.doesNotMatch(route, /dynamicPagePaths\.add\("\/\[slug\]"\)/);
+  assert.match(config, /expire: 60 \* 60 \* 24 \* 30/);
+  // Slug readers cache misses only briefly.
+  assert.equal(
+    (catalog.match(/cacheLife\(CATALOG_MISS_CACHE_LIFE\)/g) ?? []).length,
+    3,
+  );
 });
 
 test("country budget add-ons use narrow summaries instead of wide program rows", async () => {

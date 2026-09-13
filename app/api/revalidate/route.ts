@@ -208,27 +208,17 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    // Country pages use the shared cached country snapshot. A country-specific
-    // publish must expire that snapshot as well as its own route; otherwise a
-    // newly inserted country can keep rendering the prior cached null value.
+    // Country routes render per request and read country:<slug>-tagged
+    // caches, so a country publish only needs its own tags and path. The
+    // shared "catalog"/"countries" tags and the route pattern flush would
+    // regenerate every country page against Neon at once.
     if (countrySlugs.size > 0) {
-      tags.add("catalog");
-      tags.add("countries");
-      dynamicPagePaths.add("/countries/[slug]");
-
       for (const countrySlug of countrySlugs) {
         tags.add(`country:${countrySlug}`);
         staticPaths.add(`/countries/${countrySlug}`);
       }
     }
 
-    if (slugs.length > 0) {
-      // With Cache Components, the root dynamic route can retain the
-      // build-time fallback shell even after an exact path is expired. Expire
-      // that rendered shell as well. Programme data remains slug-scoped, so
-      // unrelated pages reuse their existing data caches when regenerated.
-      dynamicPagePaths.add("/[slug]");
-    }
   }
 
   if (tags.size === 0 && staticPaths.size === 0 && dynamicPagePaths.size === 0) {

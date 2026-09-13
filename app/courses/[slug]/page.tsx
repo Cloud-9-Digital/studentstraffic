@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { ArrowRight, BookOpen, Building2, Globe2, Lightbulb, TrendingUp } from "lucide-react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -85,6 +86,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  await connection();
   const { slug } = await params;
   const { course, summary } = await getCoursePageData(slug);
 
@@ -115,6 +117,14 @@ export default async function CoursePage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // Courses are published continuously between deployments, and only a small
+  // subset is enumerated by generateStaticParams. Without a request boundary,
+  // every slug outside that subset is served the build-time fallback shell,
+  // which renders "not found" (this took the whole catalogue offline on
+  // 2026-09-09). connection() keeps the render per request while every
+  // database read below stays behind the long-lived "use cache" layer, so
+  // Neon is not queried per request.
+  await connection();
   const { slug } = await params;
   const { course, summary, previewPrograms, budgetGuides } = await getCoursePageData(slug);
 

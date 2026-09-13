@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { Suspense } from "react";
 import { unstable_cache } from "next/cache";
 import { BookOpen, ChevronRight } from "lucide-react";
@@ -112,6 +113,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  await connection();
   const { slug } = await params;
   const country = await getCountryBySlug(slug);
 
@@ -150,6 +152,14 @@ export default async function CountryPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // Countries are published continuously between deployments, and only a small
+  // subset is enumerated by generateStaticParams. Without a request boundary,
+  // every slug outside that subset is served the build-time fallback shell,
+  // which renders "not found" (this took the whole catalogue offline on
+  // 2026-09-09). connection() keeps the render per request while every
+  // database read below stays behind the long-lived "use cache" layer, so
+  // Neon is not queried per request.
+  await connection();
   const { slug } = await params;
   const { country, programRows: programs, structuredPrograms } = await getCountryPageData(slug);
 

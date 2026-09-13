@@ -225,6 +225,18 @@ export type SitemapCatalogData = {
   }>;
 };
 
+// Lifetime for a not-found catalogue slug. Multiple cacheLife() calls in one
+// scope resolve to the shortest values, so calling this on the miss path of a
+// reader that already declared cacheLife("catalog") shortens just that entry:
+// hits keep the long-lived catalogue profile, misses heal within minutes even
+// when no tag invalidation reaches the cache. Inline (not a named profile in
+// next.config) so typecheck does not depend on Next's generated profile types.
+const CATALOG_MISS_CACHE_LIFE = {
+  stale: 60,
+  revalidate: 60 * 5,
+  expire: 60 * 15,
+} as const;
+
 function createEmptyCatalogSnapshot(): CatalogSnapshot {
   return {
     countries: [],
@@ -702,7 +714,12 @@ export async function getCountryBySlug(slug: string) {
     .where(eq(countriesTable.slug, slug))
     .limit(1);
 
-  return row ? mapCountryRow(row) : null;
+  if (!row) {
+    cacheLife(CATALOG_MISS_CACHE_LIFE);
+    return null;
+  }
+
+  return mapCountryRow(row);
 }
 
 export async function getCourses() {
@@ -811,7 +828,12 @@ async function getCachedUniversityBySlug(slug: string) {
     )
     .limit(1);
 
-  return row ? mapUniversityRow(row.university, row.countrySlug) : null;
+  if (!row) {
+    cacheLife(CATALOG_MISS_CACHE_LIFE);
+    return null;
+  }
+
+  return mapUniversityRow(row.university, row.countrySlug);
 }
 
 // React cache deduplicates metadata/page reads in one render. The remote cache
@@ -2234,9 +2256,11 @@ export async function getProgramBySlug(programSlug: string) {
   cacheTag("program-offerings");
   cacheTag(`program:${programSlug}`);
 
-  // Programme publishing invalidates program:<slug>, so caching a not-found
-  // value is safe while preventing repeated wide reads for bot traffic and
-  // metadata/page render pairs.
+  // Programme publishing invalidates program:<slug>. A not-found value is still
+  // cached (it prevents repeated wide reads for bot traffic and metadata/page
+  // render pairs) but only for minutes, so a slug published without a
+  // matching invalidation, or an empty read during a database incident,
+  // heals on its own.
   const databasePrograms = await selectFinderProgramsFromDatabase(
     and(
       eq(programOfferingsTable.published, true),
@@ -2245,14 +2269,17 @@ export async function getProgramBySlug(programSlug: string) {
     ),
   );
 
-  if (databasePrograms) {
-    return databasePrograms[0] ?? null;
+  const program = databasePrograms
+    ? (databasePrograms[0] ?? null)
+    : ((await getFinderProgramsBase()).find(
+        (entry) => entry.offering.slug === programSlug,
+      ) ?? null);
+
+  if (!program) {
+    cacheLife(CATALOG_MISS_CACHE_LIFE);
   }
 
-  const programs = await getFinderProgramsBase();
-  return (
-    programs.find((program) => program.offering.slug === programSlug) ?? null
-  );
+  return program;
 }
 
 export async function getProgramsForCity(citySlug: string) {

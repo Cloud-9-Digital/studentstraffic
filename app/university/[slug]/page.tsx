@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
+import { connection } from "next/server";
 import { cache, Suspense } from "react";
 
 import { JsonLd } from "@/components/shared/json-ld";
@@ -163,6 +164,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  await connection();
   const { slug: rawSlug } = await params;
   const { universitySlug: slug, section } = parseUniversitySlug(rawSlug);
   const { university, country, programs } = await getUniversityPageData(slug);
@@ -247,6 +249,14 @@ export default async function UniversityDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  // Universities are published continuously between deployments, and only a small
+  // subset is enumerated by generateStaticParams. Without a request boundary,
+  // every slug outside that subset is served the build-time fallback shell,
+  // which renders "not found" (this took the whole catalogue offline on
+  // 2026-09-09). connection() keeps the render per request while every
+  // database read below stays behind the long-lived "use cache" layer, so
+  // Neon is not queried per request.
+  await connection();
   const { slug: rawSlug } = await params;
 
   await redirectLegacySectionUrl(rawSlug);
