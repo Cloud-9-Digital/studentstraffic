@@ -147,6 +147,17 @@ export async function POST(request: NextRequest) {
     }
   }
 
+  // "guide" and "exact" add no shared tags and no route-pattern flushes: the
+  // requested tags and exact paths are the whole invalidation. "guide" also
+  // maps each slug to its guide:<slug> data tag and root /<slug> page, where
+  // app/[slug] renders study-abroad guides. "exact" adds nothing.
+  if (scope === "guide") {
+    for (const slug of slugs) {
+      tags.add(`guide:${slug}`);
+      staticPaths.add(`/${slug}`);
+    }
+  }
+
   if (scope === "catalog") {
     tags.add("finder");
     tags.add("program-offerings");

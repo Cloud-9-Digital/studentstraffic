@@ -739,9 +739,10 @@ async function main() {
     `Search documents refreshed: ${searchRefresh.upserted} upserted, ${searchRefresh.removed} removed.`,
   );
 
+  // Only entity-scoped tags: the shared "universities"/"catalog" tags would
+  // expire every university page and regenerate them all against Neon.
   await triggerRevalidate(
     [
-      "universities",
       `country:${record.countrySlug}`,
       `country-programs:${record.countrySlug}`,
       ...publishedCourseSlugs.map((slug) => `course-programs:${slug}`),

@@ -411,11 +411,14 @@ async function main() {
   // See import-india-mbbs-colleges.ts: the India MBBS caches never expire on a
   // timer, so an out-of-band import must invalidate its own tags.
   if (importedPrograms > 0) {
-    await triggerRevalidate([
-      "india-medical-colleges",
-      "india-medical-programs",
-      "india-mbbs-finder",
-    ]);
+    // Global refresh: a bulk import rewrites rows across the whole India MBBS
+    // dataset, so its dataset-wide tags are expired on purpose, plus the
+    // bounded sitemap readers. scope "exact" adds nothing else; the old
+    // implicit "catalog" scope also expired every catalogue route pattern.
+    await triggerRevalidate(
+      ["india-medical-colleges", "india-medical-programs", "india-mbbs-finder", "sitemap"],
+      { scope: "exact" },
+    );
   }
 }
 

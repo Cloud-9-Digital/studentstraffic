@@ -6,7 +6,12 @@ import { getDb } from "@/lib/db/core";
 import { studyAbroadGuides as studyAbroadGuidesTable } from "@/lib/db/schema";
 import { studyAbroadGuides } from "@/lib/data/study-abroad-guides";
 import type { CourseStream } from "@/lib/data/types";
+import { getStudyAbroadGuideHref } from "@/lib/routes";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
+
+// Above this many inserted guides, one study-abroad-guides tag replaces the
+// per-guide tags to keep the revalidation request short.
+const GUIDE_TAG_LIMIT = 10;
 
 function inferStreamAndCourse(
   slug: string,
@@ -36,7 +41,7 @@ async function main() {
     throw new Error("DATABASE_URL is missing. Add it to .env before running this script.");
   }
 
-  let inserted = 0;
+  const insertedSlugs: string[] = [];
   let skipped = 0;
 
   for (const [slug, guide] of Object.entries(studyAbroadGuides)) {
@@ -66,15 +71,32 @@ async function main() {
       lastVerifiedAt,
     });
 
-    inserted += 1;
+    insertedSlugs.push(slug);
   }
 
   console.log(
-    `Migrated ${inserted} study-abroad guides to the database (${skipped} already existed, skipped).`,
+    `Migrated ${insertedSlugs.length} study-abroad guides to the database (${skipped} already existed, skipped).`,
   );
 
-  if (inserted > 0) {
-    await triggerRevalidate(["catalog", "study-abroad-guides"]);
+  if (insertedSlugs.length > 0) {
+    // Only the inserted guides change. Guide pages read
+    // getStudyAbroadGuideBySlug (tagged guide:<slug>) on the root /[slug]
+    // route, so their own tags and exact paths are enough. The shared
+    // "catalog" tag, or the old implicit catalog scope, would regenerate every
+    // catalogue page against Neon.
+    // Global refresh: past GUIDE_TAG_LIMIT inserts, expire study-abroad-guides
+    // instead. It covers only the guide readers (one small table), never
+    // catalogue entities.
+    const refreshAllGuides = insertedSlugs.length > GUIDE_TAG_LIMIT;
+    await triggerRevalidate(
+      refreshAllGuides
+        ? ["study-abroad-guides"]
+        : insertedSlugs.map((slug) => `guide:${slug}`),
+      {
+        scope: "guide",
+        paths: insertedSlugs.map((slug) => getStudyAbroadGuideHref(slug)),
+      },
+    );
   }
 }
 

@@ -4,10 +4,13 @@ import { and, eq } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/core";
 import {
+  countries,
+  courses,
   programOfferings,
   universities,
   universityResearchQueue,
 } from "@/lib/db/schema";
+import { createSlug } from "@/lib/utils";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
 
 type UnpublishArgs = {
@@ -58,8 +61,11 @@ async function main() {
       id: universities.id,
       slug: universities.slug,
       published: universities.published,
+      city: universities.city,
+      countrySlug: countries.slug,
     })
     .from(universities)
+    .leftJoin(countries, eq(universities.countryId, countries.id))
     .where(eq(universities.slug, args.slug))
     .limit(1);
 
@@ -86,8 +92,13 @@ async function main() {
 
   // Reset all of its program offerings.
   const publishedPrograms = await db
-    .select({ id: programOfferings.id })
+    .select({
+      id: programOfferings.id,
+      slug: programOfferings.slug,
+      courseSlug: courses.slug,
+    })
     .from(programOfferings)
+    .leftJoin(courses, eq(programOfferings.courseId, courses.id))
     .where(
       and(
         eq(programOfferings.universityId, university.id),
@@ -172,7 +183,37 @@ async function main() {
     return;
   }
 
-  await triggerRevalidate(["catalog", "universities", "program-offerings"]);
+  // Only this university's entities change: its page, its programme pages and
+  // the country, course and city listings that included it. The shared
+  // "catalog"/"universities" tags would regenerate every catalogue page against
+  // Neon (2026-09-09 outage). scope "catalog" still adds the bounded discovery
+  // indexes (finder, program-offerings, sitemap, search).
+  const courseSlugs = [
+    ...new Set(
+      publishedPrograms
+        .map((program) => program.courseSlug)
+        .filter((slug): slug is string => Boolean(slug)),
+    ),
+  ];
+  await triggerRevalidate(
+    [
+      `university:${university.slug}`,
+      `university-programs:${university.slug}`,
+      ...(university.countrySlug
+        ? [`country:${university.countrySlug}`, `country-programs:${university.countrySlug}`]
+        : []),
+      ...courseSlugs.map((slug) => `course-programs:${slug}`),
+      `city-programs:${createSlug(university.city)}`,
+    ],
+    {
+      scope: "catalog",
+      slugs: publishedPrograms.map((program) => program.slug),
+      paths: [
+        `/university/${university.slug}`,
+        ...(university.countrySlug ? [`/countries/${university.countrySlug}`] : []),
+      ],
+    },
+  );
 
   console.log(`Done. Unpublished "${university.slug}".`);
 }

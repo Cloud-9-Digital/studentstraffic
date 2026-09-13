@@ -38,6 +38,8 @@ export async function getStudyAbroadGuideBySlug(
   cacheLife("catalog");
   cacheTag("catalog");
   cacheTag("study-abroad-guides");
+  // Per-guide tag: a guide sync expires only the guides it changed.
+  cacheTag(`guide:${slug}`);
 
   const db = getDb();
   if (!db) return null;

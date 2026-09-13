@@ -367,3 +367,147 @@ test("finder query limits are finite and centrally bounded", async () => {
   assert.match(finderPageSource, /Math\.min\(Math\.max\(Math\.floor\(pageSize\), 1\), 100\)/);
   assert.match(finderPageSource, /pageSize: safePageSize/);
 });
+
+// Tags that expire a whole dataset. The first four regenerate the entire
+// catalogue against Neon (2026-09-09 outage).
+const SHARED_CATALOGUE_TAGS = ["catalog", "universities", "countries", "courses"];
+const DATASET_WIDE_TAGS = [
+  ...SHARED_CATALOGUE_TAGS,
+  "study-abroad-guides",
+  "india-medical-colleges",
+  "india-medical-programs",
+  "india-mbbs-finder",
+];
+
+// Scripts allowed to expire dataset-wide tags. Every entry also needs a
+// "// Global refresh:" comment in the script saying why entity tags are not
+// enough. No script is allow-listed for the shared catalogue tags.
+const GLOBAL_REFRESH_ALLOW_LIST: Record<string, string[]> = {
+  // A bulk India MBBS import rewrites rows across the whole India dataset.
+  "scripts/import-india-mbbs-colleges.ts": [
+    "india-medical-colleges",
+    "india-medical-programs",
+    "india-mbbs-finder",
+  ],
+  "scripts/import-india-medical-programs.ts": [
+    "india-medical-colleges",
+    "india-medical-programs",
+    "india-mbbs-finder",
+  ],
+  // Seeding more than GUIDE_TAG_LIMIT guides expires the small guide table's tag.
+  "scripts/migrate-study-abroad-guides-to-db.ts": ["study-abroad-guides"],
+};
+
+const REVALIDATE_SCOPES = /^(?:blog|catalog|guide|exact)$/;
+
+function extractCallArguments(source: string, callee: string) {
+  const calls: string[] = [];
+  let start = source.indexOf(`${callee}(`);
+  while (start !== -1) {
+    const open = start + callee.length;
+    let depth = 0;
+    let end = open;
+    for (; end < source.length; end += 1) {
+      if (source[end] === "(") depth += 1;
+      if (source[end] === ")") {
+        depth -= 1;
+        if (depth === 0) break;
+      }
+    }
+    calls.push(source.slice(open + 1, end));
+    start = source.indexOf(`${callee}(`, end);
+  }
+  return calls;
+}
+
+function plainStringLiterals(text: string) {
+  // Double, single or backtick strings without interpolation, on one line.
+  return [...text.matchAll(/"([^"\n]*)"|'([^'\n]*)'|`([^`$\n]*)`/g)].map(
+    (match) => match[1] ?? match[2] ?? match[3],
+  );
+}
+
+test("scripts never send shared catalogue cache tags outside allow-listed global refreshes", async () => {
+  const helper = await readProjectFile("scripts/lib/trigger-revalidate.ts");
+  // No implicit scope: the old default silently added catalogue-wide work.
+  assert.doesNotMatch(helper, /options\.scope \?\?/);
+  assert.match(helper, /scope: "blog" \| "catalog" \| "guide" \| "exact";/);
+  assert.match(helper, /Refusing to expire shared cache tag/);
+
+  const files = (await listProjectSourceFiles("scripts"))
+    .map((file) => file.split(path.sep).join("/"))
+    .filter((file) => file !== "scripts/lib/trigger-revalidate.ts");
+  const sentByFile = new Map<string, string[]>();
+
+  for (const file of files) {
+    const source = await readProjectFile(file);
+    const calls = extractCallArguments(source, "triggerRevalidate");
+    const sendsDirectly = source.includes("/api/revalidate");
+    if (calls.length === 0 && !sendsDirectly) continue;
+
+    const sentTags: string[] = [];
+    for (const call of calls) {
+      const scope = call.match(/scope: "([^"]+)"/)?.[1];
+      assert.ok(scope && REVALIDATE_SCOPES.test(scope), `${file}: triggerRevalidate needs an explicit scope`);
+      if (scope === "catalog") {
+        // Without a target the route expires every catalogue route pattern.
+        assert.match(call, /\b(?:slugs|paths):/, `${file}: scope "catalog" must target slugs or paths`);
+      }
+      sentTags.push(...plainStringLiterals(call.replace(/scope: "[^"]*"/g, "")));
+    }
+
+    if (sendsDirectly) {
+      for (const match of source.matchAll(/\/api\/revalidate([^"'`]*)/g)) {
+        const scope = match[1].match(/[?&]scope=([\w-]+)/)?.[1];
+        assert.ok(scope && REVALIDATE_SCOPES.test(scope), `${file}: /api/revalidate needs an explicit scope`);
+        if (scope === "catalog") {
+          assert.match(source, /append\(\s*"(?:path|slug)"/, `${file}: scope=catalog must target slugs or paths`);
+        }
+      }
+      for (const match of source.matchAll(/append\(\s*"tag",\s*(["'`])([^"'`$]*)\1\s*\)/g)) {
+        sentTags.push(match[2]);
+      }
+      for (const match of source.matchAll(/[?&]tag=([\w:-]+)/g)) sentTags.push(match[1]);
+    }
+
+    sentByFile.set(file, sentTags);
+    const allowed = GLOBAL_REFRESH_ALLOW_LIST[file] ?? [];
+    for (const tag of sentTags.filter((tag) => DATASET_WIDE_TAGS.includes(tag))) {
+      assert.ok(allowed.includes(tag), `${file} sends dataset-wide cache tag "${tag}" without an allow-list entry`);
+    }
+  }
+
+  // The scan must actually see the revalidating scripts.
+  assert.ok(sentByFile.size >= 8, `only ${sentByFile.size} revalidating scripts found`);
+
+  for (const [file, tags] of Object.entries(GLOBAL_REFRESH_ALLOW_LIST)) {
+    const source = await readProjectFile(file);
+    assert.match(source, /\/\/ Global refresh: \S/, `${file}: allow-listed refresh needs a justification comment`);
+    for (const tag of tags) {
+      assert.ok(sentByFile.get(file)?.includes(tag), `${file}: stale allow-list entry "${tag}"`);
+    }
+  }
+});
+
+test("guide syncs expire only the guides they change", async () => {
+  const [route, reader, sync] = await Promise.all([
+    readProjectFile("app/api/revalidate/route.ts"),
+    readProjectFile("lib/data/study-abroad-guides-db.ts"),
+    readProjectFile("scripts/migrate-study-abroad-guides-to-db.ts"),
+  ]);
+
+  const guideReader = reader.slice(reader.indexOf("export async function getStudyAbroadGuideBySlug"));
+  assert.match(guideReader, /cacheTag\(`guide:\$\{slug\}`\)/);
+
+  const guideBranch = route.slice(
+    route.indexOf('if (scope === "guide")'),
+    route.indexOf('if (scope === "catalog")'),
+  );
+  assert.match(guideBranch, /tags\.add\(`guide:\$\{slug\}`\)/);
+  assert.doesNotMatch(guideBranch, /dynamicPagePaths|tags\.add\("/);
+
+  const syncCalls = extractCallArguments(sync, "triggerRevalidate");
+  assert.equal(syncCalls.length, 1);
+  assert.match(syncCalls[0], /scope: "guide"/);
+  assert.doesNotMatch(syncCalls[0], /"catalog"/);
+});

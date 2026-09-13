@@ -427,11 +427,14 @@ async function main() {
   // so nothing refreshes them on a timer. This out-of-band write has to bust the
   // tags itself or the imported rows would stay invisible indefinitely.
   if (imported > 0) {
-    await triggerRevalidate([
-      "india-medical-colleges",
-      "india-medical-programs",
-      "india-mbbs-finder",
-    ]);
+    // Global refresh: a bulk import rewrites rows across the whole India MBBS
+    // dataset, so its dataset-wide tags are expired on purpose, plus the
+    // bounded sitemap readers. scope "exact" adds nothing else; the old
+    // implicit "catalog" scope also expired every catalogue route pattern.
+    await triggerRevalidate(
+      ["india-medical-colleges", "india-medical-programs", "india-mbbs-finder", "sitemap"],
+      { scope: "exact" },
+    );
   }
 }
 

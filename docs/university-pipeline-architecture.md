@@ -260,6 +260,31 @@ that Cache Components needs before a dynamic slug is resolved.
   once. This supersedes the earlier note that the root route shell had to be expired for new
   slugs; the request boundary makes that unnecessary. `tests/db-egress-guards.test.ts` enforces
   all of the above.
+- **Every revalidating script names its scope.** `scripts/lib/trigger-revalidate.ts` has no
+  default scope and refuses the shared `catalog`, `universities`, `countries` and `courses`
+  tags at runtime. Scopes on `/api/revalidate`: `catalog` adds the bounded discovery tags and
+  index paths above and must carry slugs or paths (with no target the route still expires every
+  catalogue route pattern, so scripts never send it bare); `guide` maps each slug to
+  `guide:<slug>` plus `/<slug>`; `exact` sends only the given tags and paths; `blog` is for
+  blog posts; a missing scope means `blog`. Current senders:
+
+  | Script | Scope | Tags and paths |
+  | --- | --- | --- |
+  | `publish-catalog-payload.ts` | catalog | entity tags, programme slugs, university and country paths |
+  | `publish-university-draft.ts` | catalog | entity tags (the shared `universities` tag was removed), programme slugs, university path |
+  | `unpublish-university.ts` | catalog | `university:`, `university-programs:`, `country:`, `country-programs:`, `course-programs:`, `city-programs:`, programme slugs, university and country paths (previously `catalog`, `universities`, `program-offerings` with no target) |
+  | `add-program-offerings.mjs`, `update-program-fees.mjs` | catalog | entity tags, programme slugs, university paths |
+  | `migrate-study-abroad-guides-to-db.ts` | guide | `guide:<slug>` for inserted guides, or `study-abroad-guides` past 10, plus `/<slug>` paths (previously `catalog`, `study-abroad-guides` on the implicit catalog scope) |
+  | `import-india-mbbs-colleges.ts`, `import-india-medical-programs.ts` | exact | global refresh of the India dataset: `india-medical-colleges`, `india-medical-programs`, `india-mbbs-finder`, `sitemap` (previously the implicit catalog scope, which also expired every catalogue route pattern) |
+  | `revalidate-blog-cache.mjs` (via `lib/revalidate-blog-cache.mjs`) | blog | blog slug |
+
+  Guide readers: `getStudyAbroadGuideBySlug` carries `guide:<slug>`, so a guide sync
+  re-queries only the changed guides. Related-content lists keep their cached guide set until
+  `study-abroad-guides` expires. `tests/db-egress-guards.test.ts` scans every file under
+  `scripts/`: dataset-wide tags (the four shared tags, `study-abroad-guides` and the India
+  dataset tags) may be sent only by files on its `GLOBAL_REFRESH_ALLOW_LIST`, and each of those
+  files needs a `// Global refresh:` comment explaining why. No script is allow-listed for the
+  four shared catalogue tags.
 
 Incident note (2026-09-09): commit `78df9c9` (2026-08-11) had removed `await connection()` from
 the university, country and course routes. On 2026-09-09 a publish run invalidated the shared
