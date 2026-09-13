@@ -15,6 +15,13 @@ export type RankableSearchResult = SearchResult & {
   searchTextLength: number;
   /** Share (0-1) of required query terms found as substrings of lower(search_text). */
   searchTextCoverage: number;
+  /** Catalogue countries named by the query; SQL repeats it on every row. */
+  queryCountrySlugs?: string[] | null;
+};
+
+export type SearchRankingContext = {
+  /** Country slugs the query names ("nursing germany" -> ["germany"]); empty when none. */
+  queryCountrySlugs?: readonly string[];
 };
 
 /**
@@ -76,6 +83,35 @@ const BM25_FUZZY_FIELDS = ["title", "subtitle"] as const;
 const BM25_PREFIX_FIELDS = ["title", "search_text"] as const;
 const BM25_PHRASE_FIELDS = ["title", "search_text"] as const;
 
+/**
+ * Everyday names for catalogue countries, keyed by normalised query phrase and
+ * mapped to the country slug written with spaces ("united-kingdom").
+ */
+const COUNTRY_ALIASES: Readonly<Record<string, string>> = {
+  uk: "united kingdom",
+  britain: "united kingdom",
+  "great britain": "united kingdom",
+  england: "united kingdom",
+  scotland: "united kingdom",
+  wales: "united kingdom",
+  us: "united states",
+  usa: "united states",
+  america: "united states",
+  "united states of america": "united states",
+  uae: "united arab emirates",
+  holland: "netherlands",
+  korea: "south korea",
+  czechia: "czech republic",
+  bosnia: "bosnia and herzegovina",
+  macedonia: "north macedonia",
+  nz: "new zealand",
+};
+const MAX_COUNTRY_PHRASE_TOKENS = 4;
+/** Added when a document is in a country the query names. */
+export const COUNTRY_MATCH_BOOST = 6;
+/** Subtracted when a document is in a different country than the query names. */
+export const COUNTRY_MISMATCH_PENALTY = 60;
+
 export type SearchQueryAnalysis = {
   /** Normalised query, tokens joined by single spaces. */
   normalized: string;
@@ -116,6 +152,74 @@ export function analyzeSearchQuery(query: string): SearchQueryAnalysis {
     coreTerms,
     optionalTerms,
     medicalIntent: terms.some((term) => MEDICAL_INTENT_TERMS.has(term)),
+  };
+}
+
+export function resolveCountryAlias(phrase: string) {
+  return COUNTRY_ALIASES[phrase] ?? phrase;
+}
+
+/**
+ * Phrases that could name a catalogue country: every run of up to four
+ * consecutive query tokens, with aliases expanded ("llm uk" -> "llm",
+ * "united kingdom", "llm uk"). SQL matches them against the country documents,
+ * so detection follows whichever countries are published.
+ */
+export function getCountryQueryPhrases(analysis: SearchQueryAnalysis): string[] {
+  const phrases = new Set<string>();
+  const { tokens } = analysis;
+
+  for (let start = 0; start < tokens.length; start += 1) {
+    for (
+      let size = 1;
+      size <= MAX_COUNTRY_PHRASE_TOKENS && start + size <= tokens.length;
+      size += 1
+    ) {
+      phrases.add(resolveCountryAlias(tokens.slice(start, start + size).join(" ")));
+    }
+  }
+
+  return [...phrases];
+}
+
+/** JS mirror of the SQL country detection, for in-memory documents and tests. */
+export function findQueryCountrySlugs(
+  analysis: SearchQueryAnalysis,
+  countrySlugs: Iterable<string>,
+) {
+  const phrases = new Set(getCountryQueryPhrases(analysis));
+
+  return [...new Set(countrySlugs)]
+    .filter((slug) => phrases.has(slug.replace(/-/g, " ")))
+    .sort();
+}
+
+type CountryIntent = {
+  slugs: readonly string[];
+  /** The query also names something else ("georgia institute of technology"). */
+  namesMoreThanCountry: boolean;
+};
+
+const NO_COUNTRY_INTENT: CountryIntent = { slugs: [], namesMoreThanCountry: false };
+
+function getCountryIntent(
+  analysis: SearchQueryAnalysis,
+  context: SearchRankingContext,
+): CountryIntent {
+  const slugs = context.queryCountrySlugs ?? [];
+
+  if (!slugs.length) return NO_COUNTRY_INTENT;
+
+  const names = new Set(slugs.map((slug) => slug.replace(/-/g, " ")));
+  const countryWords = new Set([...names].flatMap((name) => name.split(" ")));
+
+  for (const [alias, name] of Object.entries(COUNTRY_ALIASES)) {
+    if (names.has(name)) alias.split(" ").forEach((word) => countryWords.add(word));
+  }
+
+  return {
+    slugs,
+    namesMoreThanCountry: analysis.coreTerms.some((term) => !countryWords.has(term)),
   };
 }
 
@@ -261,6 +365,7 @@ function toSearchResult(candidate: RankableSearchResult): SearchResult {
 
   delete result.searchTextLength;
   delete result.searchTextCoverage;
+  delete result.queryCountrySlugs;
 
   return result;
 }
@@ -278,7 +383,10 @@ export function getCountryHubQueryName(countrySlug: string) {
 function isCountryHubMatch(result: SearchResult, analysis: SearchQueryAnalysis) {
   if (result.documentType !== "country" || !result.countrySlug) return false;
 
-  return analysis.coreTerms.join(" ") === getCountryHubQueryName(result.countrySlug);
+  return (
+    resolveCountryAlias(analysis.coreTerms.join(" ")) ===
+    getCountryHubQueryName(result.countrySlug)
+  );
 }
 
 /**
@@ -292,7 +400,11 @@ export function getContentDepthPrior(searchTextLength: number) {
   return Math.min(5, 1.25 * Math.log(length / 400));
 }
 
-export function getSearchSignals(result: RankableSearchResult, analysis: SearchQueryAnalysis) {
+export function getSearchSignals(
+  result: RankableSearchResult,
+  analysis: SearchQueryAnalysis,
+  countryIntent: CountryIntent = NO_COUNTRY_INTENT,
+) {
   const normalizedQuery = analysis.normalized;
   const normalizedTitle = normalizeSearchValue(result.title);
   const normalizedSubtitle = normalizeSearchValue(result.subtitle ?? "");
@@ -365,6 +477,26 @@ export function getSearchSignals(result: RankableSearchResult, analysis: SearchQ
     boost += 10;
   }
 
+  // Country intent: a query that names a country wants documents in it.
+  // Documents without a country (courses, generic articles) stay neutral.
+  let countryMismatch = false;
+
+  if (countryIntent.slugs.length && result.countrySlug) {
+    if (countryIntent.slugs.includes(result.countrySlug)) {
+      boost += COUNTRY_MATCH_BOOST;
+    } else {
+      // Keep entity names that merely contain a country word
+      // ("georgia institute of technology") when the title matches the query.
+      const titleMatchesQuery =
+        titleExact || titleTypoMatch || titleStartsWith || titleContains;
+
+      if (!(countryIntent.namesMoreThanCountry && titleMatchesQuery)) {
+        countryMismatch = true;
+        boost -= COUNTRY_MISMATCH_PENALTY;
+      }
+    }
+  }
+
   switch (result.documentType) {
     case "university":
       if (directTitleTier >= 2 || titleCoverage >= 0.75) {
@@ -403,6 +535,7 @@ export function getSearchSignals(result: RankableSearchResult, analysis: SearchQ
     titleCoverage,
     subtitleCoverage,
     searchCoverage,
+    countryMismatch,
     boost,
   };
 }
@@ -457,14 +590,16 @@ export function rerankSearchResults(
   results: RankableSearchResult[],
   query: string | undefined,
   limit: number,
+  context: SearchRankingContext = {},
 ): SearchResult[] {
   if (!query) {
     return results.slice(0, limit).map(toSearchResult);
   }
 
   const analysis = analyzeSearchQuery(query);
+  const countryIntent = getCountryIntent(analysis, context);
   const rankedResults = results.map((result) => {
-    const signals = getSearchSignals(result, analysis);
+    const signals = getSearchSignals(result, analysis, countryIntent);
 
     return {
       result: {
@@ -523,6 +658,22 @@ export function rerankSearchResults(
           return true;
       }
     });
+  }
+
+  // Enforce country intent. /search groups results into typed sections, so a
+  // penalised document can still surface near the top of its section; once the
+  // named country has results, documents in other countries are dropped. With
+  // no result in the named country they stay, ranked below by the penalty.
+  if (
+    countryIntent.slugs.length &&
+    filteredResults.some(
+      (entry) =>
+        entry.result.countrySlug !== undefined &&
+        entry.result.countrySlug !== null &&
+        countryIntent.slugs.includes(entry.result.countrySlug),
+    )
+  ) {
+    filteredResults = filteredResults.filter((entry) => !entry.signals.countryMismatch);
   }
 
   const sortedResults = filteredResults.sort((left, right) => {

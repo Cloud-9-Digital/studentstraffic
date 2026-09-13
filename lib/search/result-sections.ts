@@ -1,30 +1,40 @@
 import type { SearchDocumentType } from "@/lib/data/types";
 
+/** Best matches shown as one mixed list above the typed sections. */
+export const TOP_RESULTS_COUNT = 4;
+
+export type SearchResultLayout<Section, Result> = {
+  topResults: Result[];
+  sections: Array<{ section: Section; results: Result[] }>;
+};
+
 /**
- * Orders the /search result sections so the section holding the best-ranked
- * result is shown first; the visitor then sees the top result before any
- * other card. `results` must be in rank order (as returned by searchCatalog),
- * so a section's first position is its best score. Sections are otherwise kept
- * in their configured order, which is also where empty sections end up.
+ * Lays out /search results: the best `TOP_RESULTS_COUNT` results across all
+ * types first, then the remaining results grouped into typed sections in their
+ * configured order. Every result appears exactly once. `results` must be in
+ * rank order (as returned by searchCatalog).
+ *
+ * Chosen over ordering whole sections by their single best result, which let
+ * weak results of the leading type sit above stronger results of other types
+ * (for "manipal univ", four India colleges before Manipal Academy of Higher
+ * Education).
  */
-export function orderSectionsByTopResult<Section extends { type: SearchDocumentType }>(
+export function buildSearchResultLayout<
+  Section extends { type: SearchDocumentType },
+  Result extends { documentType: SearchDocumentType },
+>(
   sections: readonly Section[],
-  results: readonly { documentType: SearchDocumentType }[],
-): Section[] {
-  const bestPositionByType = new Map<SearchDocumentType, number>();
+  results: readonly Result[],
+): SearchResultLayout<Section, Result> {
+  const remaining = results.slice(TOP_RESULTS_COUNT);
 
-  results.forEach((result, position) => {
-    if (!bestPositionByType.has(result.documentType)) {
-      bestPositionByType.set(result.documentType, position);
-    }
-  });
-
-  return sections
-    .map((section, order) => ({
-      section,
-      order,
-      bestPosition: bestPositionByType.get(section.type) ?? Number.MAX_SAFE_INTEGER,
-    }))
-    .sort((left, right) => left.bestPosition - right.bestPosition || left.order - right.order)
-    .map(({ section }) => section);
+  return {
+    topResults: results.slice(0, TOP_RESULTS_COUNT),
+    sections: sections
+      .map((section) => ({
+        section,
+        results: remaining.filter((result) => result.documentType === section.type),
+      }))
+      .filter((group) => group.results.length > 0),
+  };
 }

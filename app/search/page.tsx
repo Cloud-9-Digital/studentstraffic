@@ -9,6 +9,7 @@ import {
   FileText,
   Building2,
   Lightbulb,
+  Sparkles,
 } from "lucide-react";
 
 import { SearchResultCard } from "@/components/site/search-result-card";
@@ -18,7 +19,7 @@ import { Label } from "@/components/ui/label";
 import { buildNoIndexMetadata } from "@/lib/metadata";
 import type { SearchDocumentType } from "@/lib/data/types";
 import { parseSearchFilters } from "@/lib/search/filters";
-import { orderSectionsByTopResult } from "@/lib/search/result-sections";
+import { buildSearchResultLayout } from "@/lib/search/result-sections";
 import { searchCatalogResultSet } from "@/lib/search/search";
 
 export const metadata: Metadata = buildNoIndexMetadata(
@@ -119,18 +120,8 @@ export default async function SearchPage({
     });
   }
 
-  const resultsByType = new Map<SearchDocumentType, typeof results>();
-
-  for (const section of resultSections) {
-    resultsByType.set(
-      section.type,
-      results.filter((result) => result.documentType === section.type),
-    );
-  }
-
-  // Results arrive in rank order; lead with the section that holds the top
-  // result so the best match is the first card, not buried below other types.
-  const orderedResultSections = orderSectionsByTopResult(resultSections, results);
+  // Best matches across all types first, then the rest grouped by type.
+  const layout = buildSearchResultLayout(resultSections, results);
 
   return (
     <div className="min-h-screen">
@@ -211,9 +202,37 @@ export default async function SearchPage({
 
               {results.length ? (
                 <div className="space-y-10 md:space-y-12">
-                  {orderedResultSections.map((section) => {
-                    const sectionResults = resultsByType.get(section.type) ?? [];
+                  {layout.topResults.length ? (
+                    <section aria-labelledby="top-results-heading" className="space-y-5">
+                      <div className="flex items-center gap-3">
+                        <div className="inline-flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                          <Sparkles className="size-5" aria-hidden="true" />
+                        </div>
+                        <div>
+                          <h2
+                            id="top-results-heading"
+                            className="font-display text-xl font-semibold tracking-tight text-heading md:text-2xl"
+                          >
+                            {layout.topResults.length === 1 ? "Top result" : "Top results"}
+                          </h2>
+                          <p className="text-xs text-muted-foreground md:text-sm">
+                            Best matches across all result types
+                          </p>
+                        </div>
+                      </div>
 
+                      <div className="grid gap-4 md:grid-cols-2 lg:gap-5">
+                        {layout.topResults.map((result) => (
+                          <SearchResultCard
+                            key={`top:${result.documentType}:${result.sourceSlug}`}
+                            result={result}
+                          />
+                        ))}
+                      </div>
+                    </section>
+                  ) : null}
+
+                  {layout.sections.map(({ section, results: sectionResults }) => {
                     if (!sectionResults.length) {
                       return null;
                     }

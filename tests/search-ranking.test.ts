@@ -9,13 +9,14 @@ import {
   analyzeSearchQuery,
   buildBm25SearchQuery,
   buildSearchTextCoverageSql,
+  findQueryCountrySlugs,
   getEditDistance,
   MAX_PROGRAMS_PER_UNIVERSITY,
   type RankableSearchResult,
   rerankSearchResults,
   toRankableSearchResult,
 } from "@/lib/search/ranking";
-import { orderSectionsByTopResult } from "@/lib/search/result-sections";
+import { buildSearchResultLayout, TOP_RESULTS_COUNT } from "@/lib/search/result-sections";
 
 let nextId = 1;
 
@@ -196,6 +197,80 @@ test("a query that is exactly a country name leads with that country's hub", () 
   );
 });
 
+test("detects catalogue countries named in the query, including common aliases", () => {
+  const catalogue = [
+    "bosnia-and-herzegovina",
+    "canada",
+    "georgia",
+    "germany",
+    "united-kingdom",
+    "united-states",
+  ];
+  const detect = (query: string) => findQueryCountrySlugs(analyzeSearchQuery(query), catalogue);
+
+  assert.deepEqual(detect("nursing germany"), ["germany"]);
+  assert.deepEqual(detect("llm uk"), ["united-kingdom"]);
+  assert.deepEqual(detect("study in the USA"), ["united-states"]);
+  assert.deepEqual(detect("mbbs in bosnia and herzegovina"), ["bosnia-and-herzegovina"]);
+  assert.deepEqual(detect("mbbs in russia vs georgia"), ["georgia"]);
+  assert.deepEqual(detect("tbilsi medical"), []);
+});
+
+test("country intent removes documents in other countries once the named country has results", () => {
+  const results = [
+    fixture({ title: "Germany nursing career pathway", documentType: "landing_page", countrySlug: "albania", score: 40 }, 20000),
+    fixture({ title: "BSc Nursing in Albania", documentType: "landing_page", countrySlug: "albania", score: 30 }, 20000),
+    fixture({ title: "Western Balkans University (WBU)", documentType: "university", countrySlug: "albania", score: 19.3 }, 8000),
+    fixture({ title: "Hamburg University of Applied Sciences (HAW Hamburg)", documentType: "university", countrySlug: "germany", score: 21.2 }, 8000),
+    fixture({ title: "Deggendorf Institute of Technology (DIT)", documentType: "university", countrySlug: "germany", score: 19.5 }, 8000),
+    fixture({ title: "B.Sc. Nursing Abroad", documentType: "course", score: 12 }, 3000),
+  ];
+
+  const ranked = rerankSearchResults(results, "nursing germany", 24, {
+    queryCountrySlugs: ["germany"],
+  });
+  assert.equal(ranked[0].countrySlug, "germany");
+  assert.deepEqual(
+    titles(ranked.filter((result) => result.countrySlug && result.countrySlug !== "germany")),
+    [],
+  );
+  // Documents without a country stay neutral.
+  assert.ok(titles(ranked).includes("B.Sc. Nursing Abroad"), titles(ranked).join(" | "));
+
+  // With no result in the named country, other countries stay but rank below
+  // neutral documents.
+  const foreignOnly = rerankSearchResults(
+    results.filter((result) => result.countrySlug !== "germany"),
+    "nursing germany",
+    24,
+    { queryCountrySlugs: ["germany"] },
+  );
+  assert.equal(foreignOnly.length, 4);
+  assert.equal(foreignOnly[0].title, "B.Sc. Nursing Abroad");
+  // Without a named country the rerank is unchanged.
+  assert.equal(
+    titles(rerankSearchResults(results, "nursing germany", 24))[0],
+    "Germany nursing career pathway",
+  );
+});
+
+test("an entity whose name contains a country word keeps its place", () => {
+  const results = [
+    fixture({ title: "Georgia Institute of Technology", documentType: "university", countrySlug: "united-states", score: 20 }, 9000),
+    fixture({ title: "Georgian Technical University", documentType: "university", countrySlug: "georgia", score: 22 }, 15000),
+  ];
+  const context = { queryCountrySlugs: ["georgia"] };
+
+  assert.equal(
+    titles(rerankSearchResults(results, "georgia institute of technology", 24, context))[0],
+    "Georgia Institute of Technology",
+  );
+  assert.equal(
+    titles(rerankSearchResults(results, "georgia", 24, context))[0],
+    "Georgian Technical University",
+  );
+});
+
 test("ranked results never carry search text or its ranking inputs to the page", () => {
   const document = fixture({ title: "Deakin University", documentType: "university" });
 
@@ -236,25 +311,45 @@ test("ranked results never carry search text or its ranking inputs to the page",
   assert.deepEqual(coverage.params, ["mbbs", "georgia"]);
 });
 
-test("orders result sections by their best-ranked result, then configured order", () => {
+test("shows the best results across types first, then typed sections without duplicates", () => {
   const sections = [
     { type: "university" },
     { type: "program" },
     { type: "landing_page" },
-    { type: "country" },
+    { type: "india_college" },
+  ] as const;
+  const results = [
+    { documentType: "india_college", title: "Sikkim Manipal Institute" },
+    { documentType: "university", title: "Manipal Academy of Higher Education" },
+    { documentType: "program", title: "MBA at Manipal Academy" },
+    { documentType: "india_college", title: "Kasturba Medical College, Manipal" },
+    { documentType: "india_college", title: "Kasturba Medical College, Mangalore" },
+    { documentType: "university", title: "Another University" },
   ] as const;
 
+  const layout = buildSearchResultLayout(sections, results);
+
+  assert.equal(TOP_RESULTS_COUNT, 4);
+  // A strong result of another type is not buried behind weaker same-type results.
   assert.deepEqual(
-    orderSectionsByTopResult(sections, [
-      { documentType: "landing_page" },
-      { documentType: "university" },
-      { documentType: "landing_page" },
-      { documentType: "program" },
-    ]).map((section) => section.type),
-    ["landing_page", "university", "program", "country"],
+    layout.topResults.map((result) => result.title),
+    [
+      "Sikkim Manipal Institute",
+      "Manipal Academy of Higher Education",
+      "MBA at Manipal Academy",
+      "Kasturba Medical College, Manipal",
+    ],
   );
+  // The rest keep the configured section order; empty sections are omitted.
   assert.deepEqual(
-    orderSectionsByTopResult(sections, []).map((section) => section.type),
-    ["university", "program", "landing_page", "country"],
+    layout.sections.map(({ section, results: sectionResults }) => [
+      section.type,
+      sectionResults.map((result) => result.title),
+    ]),
+    [
+      ["university", ["Another University"]],
+      ["india_college", ["Kasturba Medical College, Mangalore"]],
+    ],
   );
+  assert.deepEqual(buildSearchResultLayout(sections, []), { topResults: [], sections: [] });
 });

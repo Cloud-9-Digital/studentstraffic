@@ -16,10 +16,13 @@ import {
   analyzeSearchQuery,
   buildBm25SearchQuery,
   buildSearchTextCoverageSql,
+  findQueryCountrySlugs,
+  getCountryQueryPhrases,
   getTypeRank,
   MAX_PROGRAMS_PER_UNIVERSITY,
   type RankableSearchResult,
   rerankSearchResults,
+  resolveCountryAlias,
   toRankableSearchResult,
 } from "@/lib/search/ranking";
 
@@ -158,10 +161,18 @@ async function searchInMemory(
     })
     .slice(0, Math.max(limit * 3, 48));
 
+  const queryCountrySlugs = filters.q
+    ? findQueryCountrySlugs(
+        analyzeSearchQuery(filters.q),
+        documents.flatMap((document) => (document.countrySlug ? [document.countrySlug] : [])),
+      )
+    : [];
+
   return rerankSearchResults(
     results.map((result) => toRankableSearchResult(result, filters.q)),
     filters.q,
     limit,
+    { queryCountrySlugs },
   );
 }
 
@@ -259,7 +270,7 @@ async function executeSearchCatalog(
       const candidateLimit = Math.max(limit * 3, 48);
       const bm25MatchPoolSize = 200;
       const analysis = analyzeSearchQuery(query);
-      const countryHubName = analysis.coreTerms.join(" ");
+      const countryHubName = resolveCountryAlias(analysis.coreTerms.join(" "));
       const canUseBm25 = await hasSearchBm25Index();
       const exactMatchBoost = sql`
         CASE
@@ -294,6 +305,30 @@ async function executeSearchCatalog(
             ELSE 7
         END
       `;
+      // Country intent, resolved inside the search statement: catalogue
+      // countries named by the query (aliases such as "uk" included). Documents
+      // in a named country move up the candidate pool, documents in another
+      // country move down, and documents without a country are neutral.
+      const countryPhrases = getCountryQueryPhrases(analysis);
+      const queryCountriesCte = sql`query_countries AS (
+        SELECT coalesce(array_agg(country_slug ORDER BY country_slug), ARRAY[]::text[]) AS slugs
+        FROM search_documents
+        WHERE document_type = 'country'
+          AND replace(country_slug, '-', ' ') IN (${
+            countryPhrases.length
+              ? sql.join(countryPhrases.map((phrase) => sql`${phrase}`), sql`, `)
+              : sql`NULL`
+          })
+      )`;
+      const countryIntentBoost = sql`
+        CASE
+          WHEN country_slug IS NULL OR cardinality((SELECT slugs FROM query_countries)) = 0 THEN 0
+          -- The ::text[] cast keeps ANY in array form; without it Postgres
+          -- reads a parenthesised subquery as "= ANY (SELECT ...)".
+          WHEN country_slug = ANY((SELECT slugs FROM query_countries)::text[]) THEN 4
+          ELSE -8
+        END
+      `;
 
       if (canUseBm25 && analysis.coreTerms.length) {
         // A single statement: typo-tolerant BM25 matching (see
@@ -304,14 +339,20 @@ async function executeSearchCatalog(
         // sort first: partitioning every match for the window functions made
         // Postgres start parallel workers, which cost ~10ms per search.
         const bm25Results = await db.execute<RankableSearchResult>(sql`
-          WITH matched AS (
+          WITH ${queryCountriesCte},
+          matched AS (
             SELECT
               id,
               document_type,
               university_slug,
               featured,
               title,
-              (coalesce(paradedb.score(id), 0) + ${exactMatchBoost} + ${businessBoost})::float AS score
+              (
+                coalesce(paradedb.score(id), 0)
+                + ${exactMatchBoost}
+                + ${businessBoost}
+                + ${countryIntentBoost}
+              )::float AS score
             FROM search_documents
             WHERE ${sql.join(
               [...conditions, sql`id @@@ ${buildBm25SearchQuery(analysis)}`],
@@ -364,6 +405,7 @@ async function executeSearchCatalog(
             documents.intake_months AS "intakeMonths",
             length(documents.search_text) AS "searchTextLength",
             ${buildSearchTextCoverageSql(sql`lowered.search_text`, analysis.coreTerms)} AS "searchTextCoverage",
+            (SELECT slugs FROM query_countries) AS "queryCountrySlugs",
             candidates.score
           FROM candidates
           INNER JOIN search_documents AS documents ON documents.id = candidates.id
@@ -377,11 +419,14 @@ async function executeSearchCatalog(
         `);
 
         if (bm25Results.rows.length) {
-          return rerankSearchResults(bm25Results.rows, filters.q, limit);
+          return rerankSearchResults(bm25Results.rows, filters.q, limit, {
+            queryCountrySlugs: bm25Results.rows[0]?.queryCountrySlugs ?? [],
+          });
         }
       }
 
       const trigramResults = await db.execute<RankableSearchResult>(sql`
+        WITH ${queryCountriesCte}
         SELECT
           id,
           document_type AS "documentType",
@@ -401,6 +446,7 @@ async function executeSearchCatalog(
           intake_months AS "intakeMonths",
           length(search_text) AS "searchTextLength",
           ${buildSearchTextCoverageSql(sql`lower(search_text)`, analysis.coreTerms)} AS "searchTextCoverage",
+          (SELECT slugs FROM query_countries) AS "queryCountrySlugs",
           (
             similarity(title, ${query})
             + CASE
@@ -409,6 +455,7 @@ async function executeSearchCatalog(
                 ELSE 0
               END
             + ${businessBoost}
+            + ${countryIntentBoost}
           )::float AS score
         FROM search_documents
         WHERE ${sql.join(
@@ -426,7 +473,9 @@ async function executeSearchCatalog(
         LIMIT ${candidateLimit}
       `);
 
-      return rerankSearchResults(trigramResults.rows, filters.q, limit);
+      return rerankSearchResults(trigramResults.rows, filters.q, limit, {
+        queryCountrySlugs: trigramResults.rows[0]?.queryCountrySlugs ?? [],
+      });
     }
 
     const browseResults = await db.execute<SearchResult>(sql`
