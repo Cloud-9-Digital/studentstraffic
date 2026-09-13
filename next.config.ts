@@ -85,16 +85,16 @@ const nextConfig: NextConfig = {
     // whose content did not change. That timer was regenerating ~586 pages an
     // hour and was the single largest source of steady database load.
     //
-    // Tag invalidation is still the primary refresh path. The timers below are
-    // only a safety net: `revalidate` refreshes an entry in the background the
-    // first time it is read after a week, so a page nobody visits costs
-    // nothing, and `expire` guarantees that a bad entry (for example a
-    // not-found result captured during a database incident) can never outlive
-    // a month. `expire` must be >= `revalidate` or Next rejects the config.
+    // Tag invalidation is the ONLY refresh path: a publish expires exactly
+    // the entity tags it touched (university:<slug>, program:<slug>, ...), and
+    // nothing refreshes on a timer. `revalidate` is a year and `expire` is
+    // deliberately omitted, which Next treats as INFINITE_CACHE. `expire` must
+    // stay omitted (or exceed `revalidate`) or Next rejects the config.
+    // Not-found lookups are the one exception: slug readers shorten their own
+    // miss entries via CATALOG_MISS_CACHE_LIFE (lib/data/catalog.ts).
     catalog: {
       stale: 300,
-      revalidate: 60 * 60 * 24 * 7,
-      expire: 60 * 60 * 24 * 30,
+      revalidate: 60 * 60 * 24 * 365,
     },
   },
   experimental: {

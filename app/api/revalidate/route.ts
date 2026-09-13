@@ -152,6 +152,9 @@ export async function POST(request: NextRequest) {
     tags.add("program-offerings");
     tags.add("comparison-guides");
     tags.add("budget-guides");
+    // Sitemap readers are bounded count/slice queries; expiring them keeps a
+    // newly published slug discoverable without touching any page cache.
+    tags.add("sitemap");
 
     // Keep the primary discovery indexes immediately fresh. The comparison,
     // budget and catalogue API indexes are already CDN-cached independently;

@@ -193,7 +193,20 @@ test("catalogue publishes never flush the whole catalogue", async () => {
   assert.doesNotMatch(publisher, /\n\s*"universities",\n/);
   assert.doesNotMatch(route, /tags\.add\("countries"\)/);
   assert.doesNotMatch(route, /dynamicPagePaths\.add\("\/\[slug\]"\)/);
-  assert.match(config, /expire: 60 \* 60 \* 24 \* 30/);
+  // No timer-based expiry on catalogue entries: only tags refresh them.
+  assert.match(config, /revalidate: 60 \* 60 \* 24 \* 365/);
+  assert.doesNotMatch(
+    config.slice(config.indexOf("catalog: {"), config.indexOf("},", config.indexOf("catalog: {"))),
+    /expire:/,
+  );
+  // Sitemaps refresh on catalogue publishes.
+  assert.match(route, /tags\.add\("sitemap"\)/);
+  // Programme slug lookups are not on the shared program-offerings tag.
+  const programReader = catalog.slice(
+    catalog.indexOf("export async function getProgramBySlug"),
+    catalog.indexOf("export async function getProgramsForCity"),
+  );
+  assert.doesNotMatch(programReader, /cacheTag\("program-offerings"\)/);
   // Slug readers cache misses only briefly.
   assert.equal(
     (catalog.match(/cacheLife\(CATALOG_MISS_CACHE_LIFE\)/g) ?? []).length,

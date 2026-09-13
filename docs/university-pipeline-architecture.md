@@ -239,9 +239,9 @@ that Cache Components needs before a dynamic slug is resolved.
   Removing `await connection()` from these routes is a production outage, not an optimisation.
 - **All reads stay cached.** The boundary only defers rendering to request time; every database
   read behind it remains inside `"use cache"` / `"use cache: remote"` functions using the `catalog`
-  `cacheLife` profile (`next.config.ts`): 7-day `revalidate`, 30-day `expire`. Tag invalidation is
-  the primary refresh path; the timers are a safety net so a bad entry cannot outlive a month and an
-  unvisited page costs nothing. `expire` must stay >= `revalidate` or Next rejects the config.
+  `cacheLife` profile (`next.config.ts`): one-year `revalidate`, no `expire` (infinite). There is
+  no timer-based refresh at all: an entry changes only when a publish expires its own tag. A cached
+  page that nobody publishes to is never re-queried.
 - **Not-found lookups are cached for minutes only.** `getCountryBySlug`, the cached university
   reader and `getProgramBySlug` call `cacheLife(CATALOG_MISS_CACHE_LIFE)` (`lib/data/catalog.ts`,
   1 min stale / 5 min revalidate / 15 min expire) on their miss path. Hits keep the long-lived
@@ -250,7 +250,11 @@ that Cache Components needs before a dynamic slug is resolved.
 - **Publishes send entity-scoped tags only.** `scripts/publish-catalog-payload.ts` and
   `app/api/revalidate/route.ts` may only emit `university:<slug>`, `university-programs:<slug>`,
   `country:<slug>`, `country-programs:<slug>`, `course-programs:<slug>`, `city-programs:<slug>` and
-  `program:<slug>`, plus the three index paths (`/universities`, `/compare`, `/budget`). Never send
+  `program:<slug>`, plus the three index paths (`/universities`, `/courses`, `/countries`), the
+  bounded discovery-index tags (`finder`, `program-offerings`, `comparison-guides`,
+  `budget-guides`) and `sitemap`. Per-slug readers must not carry any of those shared tags
+  (`getProgramBySlug` deliberately omits `program-offerings`), so a publish re-queries exactly the
+  entities it touched plus a handful of bounded index reads. Never send
   the shared `universities`, `catalog` or `countries` tags, and never expire dynamic route patterns
   such as `/[slug]` or `/countries/[slug]`: those regenerate the entire catalogue against Neon at
   once. This supersedes the earlier note that the root route shell had to be expired for new

@@ -2253,7 +2253,10 @@ export async function getProgramBySlug(programSlug: string) {
 
   cacheLife("catalog");
   cacheTag("catalog");
-  cacheTag("program-offerings");
+  // Deliberately not tagged "program-offerings": that shared tag is expired by
+  // every catalogue publish and would lazily re-query all ~4.4k programme
+  // pages. Only program:<slug> (per publish) or "catalog" (explicit global
+  // refresh) invalidates this entry.
   cacheTag(`program:${programSlug}`);
 
   // Programme publishing invalidates program:<slug>. A not-found value is still
