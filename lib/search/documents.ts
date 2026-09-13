@@ -15,6 +15,7 @@ import {
   getIndiaMbbsCollegeHref,
   getLandingPageHref,
   getUniversityHref,
+  getUniversityProgramHref,
 } from "@/lib/routes";
 import {
   formatProgramMedium,
@@ -262,7 +263,9 @@ export function buildSearchDocuments({
     return {
       documentType: "program",
       sourceSlug: offering.slug,
-      path: university ? getUniversityHref(university.slug) : "/universities",
+      // The programme page (app/[slug]), the same href the catalogue and
+      // sitemap use, rather than the parent university page.
+      path: getUniversityProgramHref(offering.slug),
       title: course && university ? `${course.shortName} at ${university.name}` : offering.title,
       subtitle:
         university && country ? `${university.city}, ${country.name}` : offering.title,

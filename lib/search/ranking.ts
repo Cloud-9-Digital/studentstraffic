@@ -606,11 +606,12 @@ function capProgramsPerUniversity<T extends { result: SearchResult }>(entries: T
   const programsByUniversity = new Map<string, number>();
 
   return entries.filter(({ result }) => {
-    if (result.documentType !== "program") return true;
+    // Key on university_slug (as the SQL candidate cap does): programme paths
+    // are the programmes' own pages, so they no longer identify the university.
+    if (result.documentType !== "program" || !result.universitySlug) return true;
 
-    const key = result.universitySlug ?? result.path;
-    const seen = programsByUniversity.get(key) ?? 0;
-    programsByUniversity.set(key, seen + 1);
+    const seen = programsByUniversity.get(result.universitySlug) ?? 0;
+    programsByUniversity.set(result.universitySlug, seen + 1);
 
     return seen < MAX_PROGRAMS_PER_UNIVERSITY;
   });

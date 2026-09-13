@@ -17,6 +17,8 @@ import {
   toRankableSearchResult,
 } from "@/lib/search/ranking";
 import { buildSearchResultLayout, TOP_RESULTS_COUNT } from "@/lib/search/result-sections";
+import { buildSearchDocuments } from "@/lib/search/documents";
+import { getUniversityHref, getUniversityProgramHref } from "@/lib/routes";
 
 let nextId = 1;
 
@@ -30,7 +32,12 @@ function fixture(
   return {
     id,
     sourceSlug: slug,
-    path: `/university/${overrides.universitySlug ?? slug}`,
+    // Mirrors the index: programmes link to their own pages, everything in
+    // these fixtures else to a university page.
+    path:
+      overrides.documentType === "program"
+        ? getUniversityProgramHref(slug)
+        : getUniversityHref(overrides.universitySlug ?? slug),
     summary: overrides.title,
     searchTextLength: textLength,
     searchTextCoverage: 1,
@@ -370,4 +377,153 @@ test("shows the best results across types first, then typed sections without dup
     ],
   );
   assert.deepEqual(buildSearchResultLayout(sections, []), { topResults: [], sections: [] });
+});
+
+test("programme documents link to the programme page, not the parent university page", () => {
+  const university = {
+    slug: "deakin-university",
+    countrySlug: "australia",
+    name: "Deakin University",
+    city: "Geelong",
+    summary: "Public university in Victoria.",
+    featured: false,
+    campusLifestyle: "",
+    cityProfile: "",
+    practicalExposure: "",
+    safetyOverview: "",
+    studentSupport: "",
+    whyChoose: [],
+    thingsToConsider: [],
+    bestFitFor: [],
+    industryPartners: [],
+    recognitionBadges: [],
+    faq: [],
+  };
+  const offering = (slug: string, courseSlug: string, universitySlug = university.slug) => ({
+    slug,
+    universitySlug,
+    courseSlug,
+    title: slug,
+    annualTuitionUsd: 40000,
+    medium: "english",
+    professionalExamSupport: [],
+    teachingPhases: [],
+    intakeMonths: ["March"],
+    featured: false,
+  });
+
+  const documents = buildSearchDocuments({
+    countries: [
+      {
+        slug: "australia",
+        name: "Australia",
+        region: "Oceania",
+        summary: "",
+        whyStudentsChooseIt: "",
+        climate: "",
+        currencyCode: "AUD",
+      },
+    ],
+    courses: [
+      { slug: "mbbs", name: "Bachelor of Medicine", shortName: "MBBS", durationYears: 6, summary: "" },
+      { slug: "mba", name: "Master of Business Administration", shortName: "MBA", durationYears: 2, summary: "" },
+    ],
+    universities: [university],
+    programOfferings: [
+      offering("mbbs-at-deakin-university", "mbbs"),
+      offering("mba-at-deakin-university", "mba"),
+      // An offering whose university is not in the input still links to its own page.
+      offering("mba-at-unlisted-university", "mba", "unlisted-university"),
+    ],
+    landingPages: [],
+  });
+
+  const pathsByType = (documentType: string) =>
+    documents
+      .filter((document) => document.documentType === documentType)
+      .map((document) => [document.sourceSlug, document.path]);
+
+  assert.deepEqual(pathsByType("program"), [
+    ["mbbs-at-deakin-university", "/mbbs-at-deakin-university"],
+    ["mba-at-deakin-university", "/mba-at-deakin-university"],
+    ["mba-at-unlisted-university", "/mba-at-unlisted-university"],
+  ]);
+  for (const [slug, path] of pathsByType("program")) {
+    assert.equal(path, getUniversityProgramHref(slug));
+  }
+  assert.deepEqual(pathsByType("university"), [["deakin-university", "/university/deakin-university"]]);
+  // The university association the ranking caps on is unchanged.
+  assert.deepEqual(
+    documents.filter((document) => document.documentType === "program").map((document) => document.universitySlug),
+    ["deakin-university", "deakin-university", "unlisted-university"],
+  );
+});
+
+test("the per-university programme cap keys on university_slug, not on distinct programme paths", () => {
+  const deakinPrograms = Array.from({ length: MAX_PROGRAMS_PER_UNIVERSITY + 3 }, (_, index) =>
+    fixture({
+      title: `MBBS Pathway ${index} at Deakin University`,
+      documentType: "program",
+      sourceSlug: `mbbs-pathway-${index}-at-deakin-university`,
+      universitySlug: "deakin-university",
+      score: 30 - index,
+    }),
+  );
+  const monashProgram = fixture({
+    title: "MBBS at Monash University",
+    documentType: "program",
+    sourceSlug: "mbbs-at-monash-university",
+    universitySlug: "monash-university",
+    score: 5,
+  });
+
+  // Every programme has its own path, so a path-keyed cap would keep them all.
+  assert.equal(new Set(deakinPrograms.map((result) => result.path)).size, deakinPrograms.length);
+
+  const ranked = rerankSearchResults([...deakinPrograms, monashProgram], "mbbs", 24);
+  const deakin = ranked.filter((result) => result.universitySlug === "deakin-university");
+
+  assert.equal(deakin.length, MAX_PROGRAMS_PER_UNIVERSITY);
+  assert.deepEqual(
+    deakin.map((result) => result.sourceSlug),
+    deakinPrograms.slice(0, MAX_PROGRAMS_PER_UNIVERSITY).map((result) => result.sourceSlug),
+  );
+  assert.ok(ranked.some((result) => result.sourceSlug === "mbbs-at-monash-university"));
+  for (const result of ranked) {
+    assert.equal(result.path, getUniversityProgramHref(result.sourceSlug));
+  }
+});
+
+test("top results and sections list each document once when a university and its programmes match", () => {
+  const sections = [{ type: "university" }, { type: "program" }] as const;
+  const results = [
+    fixture({ title: "Deakin University", documentType: "university", sourceSlug: "deakin-university", score: 20 }),
+    ...["mbbs", "mba", "msc-nursing", "bsc-psychology"].map((course, index) =>
+      fixture({
+        title: `${course.toUpperCase()} at Deakin University`,
+        documentType: "program",
+        sourceSlug: `${course}-at-deakin-university`,
+        universitySlug: "deakin-university",
+        score: 19 - index,
+      }),
+    ),
+    fixture({ title: "Deakin College", documentType: "university", sourceSlug: "deakin-college", score: 2 }),
+  ];
+
+  const ranked = rerankSearchResults(results, "deakin", 24);
+  const layout = buildSearchResultLayout(sections, ranked);
+  const shown = [...layout.topResults, ...layout.sections.flatMap((group) => group.results)];
+  const keys = shown.map((result) => `${result.documentType}:${result.sourceSlug}`);
+
+  assert.equal(layout.topResults.length, TOP_RESULTS_COUNT);
+  assert.equal(new Set(keys).size, keys.length);
+  assert.deepEqual([...keys].sort(), ranked.map((result) => `${result.documentType}:${result.sourceSlug}`).sort());
+  // The university result and its programmes stay separate links.
+  const universityPath = getUniversityHref("deakin-university");
+  assert.equal(shown.filter((result) => result.path === universityPath).length, 1);
+  assert.ok(
+    shown
+      .filter((result) => result.documentType === "program")
+      .every((result) => result.path === getUniversityProgramHref(result.sourceSlug)),
+  );
 });

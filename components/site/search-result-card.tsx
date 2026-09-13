@@ -15,6 +15,7 @@ function getActionLabel(documentType: SearchDocumentType) {
     case "blog_post":
       return "Open article";
     case "program":
+      return "Open program";
     case "university":
       return "Open university";
     default:
