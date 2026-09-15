@@ -465,7 +465,11 @@ function SiteHeaderInner() {
               <div
                 inert={!countriesOpen}
                 className={cn(
-                  "fixed inset-x-0 top-16 z-40 w-screen overflow-hidden rounded-b-3xl border border-t-0 border-border bg-white shadow-xl transition-all duration-200",
+                  // No `w-screen`: the header's backdrop-filter makes it this
+                  // panel's containing block, so `inset-x-0` already spans the
+                  // header, while 100vw would add the vertical-scrollbar width
+                  // as horizontal page overflow on classic-scrollbar browsers.
+                  "fixed inset-x-0 top-16 z-40 overflow-hidden rounded-b-3xl border border-t-0 border-border bg-white shadow-xl transition-all duration-200",
                   countriesOpen
                     ? "pointer-events-auto translate-y-0 opacity-100"
                     : "pointer-events-none -translate-y-1 opacity-0",
