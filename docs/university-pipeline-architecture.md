@@ -36,8 +36,14 @@ Keep it current — see "Keeping this doc current" at the bottom.
   Key fields: `slug`, `title`, `durationYears` (⚠️ **integer column** — see Known issues),
   `annualTuitionUsd`/`totalTuitionUsd`/`livingUsd` (normalized USD), `officialFeeCurrency` +
   `officialAnnualTuitionAmount`/`officialTotalTuitionAmount` (native-currency figures, bigint),
-  `officialProgramUrl`, `medium` (source-backed delivery explanation), `instructionLanguages`
-  (controlled language-facet codes), `intakeMonths` (source display values), `intakeCodes`
+  `officialProgramUrl`, `medium` (short display label: language names only joined with " / ",
+  e.g. `English` or `English / Russian`; payload zod enforces max 40 chars, rejects `. ; : ( )`
+  or newlines, and rejects placeholder values `Not confirmed`, `TBC`, `To be confirmed`, `Unknown`
+  and `N/A` case-insensitively — omit the programme until the language is verified), `mediumNote` (optional, nullable `medium_note`, drizzle `0073`: 10-300 chars of
+  source-backed delivery nuance such as phase transitions or local-language clinical requirements;
+  selected only by university/programme detail queries, never search documents, cards or facets),
+  `instructionLanguages`
+  (controlled language-facet codes, at least one required), `intakeMonths` (source display values), `intakeCodes`
   (controlled calendar-facet codes), `professionalExamSupport`, `sourceUrls`, `published`.
 
   **2026-07-20 facet normalization (drizzle `0068`).** `/universities` must filter only on
@@ -87,6 +93,16 @@ ID/checksum in `content_migrations`. It performs live duplicate/ledger checks on
 publish command. See [`content-migrations/README.md`](../content-migrations/README.md) for the
 directory contract.
 
+Mixed Codex/Claude runs reserve sequence numbers with `npm run content:reserve`; the reservation is
+protected by a filesystem lock. University ownership is changed only through the `queue:*` commands,
+which lock and atomically replace the shared CSV. Research agents never publish and never update a
+row to `published` themselves.
+
+Migration recording is crash-recoverable. Catalogue writes and the `db_applied` migration record
+commit in one database transaction. Scoped search/cache refresh runs after commit and advances the
+record to `applied`. A later invocation resumes refresh for any `db_applied` entry before applying
+new work, so a process interruption cannot leave an unrecorded publication or force a payload replay.
+
 Offline validation also enforces the publisher's course focus-keyword rule for `metaTitle` and
 `metaDescription`, so an SEO metadata failure is caught before the runner opens a database
 connection.
@@ -103,10 +119,20 @@ The migration payload is now the enforcement point for the catalogue content fra
   status rather than a zero-value fee sentinel;
 - every material claim is carried in a private root `evidence` record with entity target, public
   field, claim text, source grade, checked date and review-by date;
-- `npm run content:validate` rejects Grade C evidence, expired evidence, prohibited filler, missing
+- `npm run content:validate` rejects Grade C evidence, prohibited filler, missing
   eligibility/admissions/intake evidence and fee/evidence mismatches before opening a database
   connection;
-- database migration `0068_catalog_content_framework.sql` adds fee-state fields and the private
+- expired review-by dates (2026-09-15 change) are warnings offline and for applied bundles. At
+  database-connected check/apply time they are errors only for pending bundles, except a pending
+  bundle fully superseded by a later pending bundle. Logic: `classifyReviewByExpiry` in
+  `scripts/lib/content-migrations.ts`;
+- supersede rule (2026-09-15): a later bundle may republish a university from an earlier bundle.
+  The university's single ledger row points `migration_id`/`payload_file` at the newest local bundle
+  containing its slug (`readLatestMigrationIdByUniversitySlug`). Earlier bundles for that slug pass
+  `assertMigrationLedgerEligibility` as historical. A row left on the earlier bundle is an explicit
+  error. The superseding bundle publishes through the normal upsert path, with entity-scoped cache
+  tags only. Full rule: `content-migrations/README.md`;
+- database migration `0069_catalog_content_framework.sql` adds fee-state fields and the private
   `catalog_content_evidence` table. Run `npm run db:migrate` before applying a framework payload.
 
 Evidence is never mapped into public page props, search documents or source links. Existing legacy
@@ -152,11 +178,16 @@ fallback — never hardcode field-specific regulatory claims (UGC/AICTE/BCI etc.
 by field and country and several (e.g. BCI for foreign law degrees) are materially different from the
 medical NMC pathway. See `docs/non-medical-expansion-scope.md`.
 
-## Two ways to add universities
+## Retired direct-publishing paths (historical reference only)
 
-### 1. Automated research-and-publish pipeline (preferred for net-new universities)
+The sections below explain legacy artifacts that still exist in the repository. Do not run these
+commands to publish content. Convert reusable verified facts into a numbered content migration,
+validate offline and use the controlled migration runner.
 
-```
+### 1. Historical database-backed research queue
+
+```text
+DO NOT RUN FROM A RESEARCH AGENT
 scripts/seed-university-research-queue.ts   → populate universityResearchQueue (from official regulatory sources import)
 scripts/run-university-research.ts          → research a queued candidate, write a draft
                                                (also writes a human-readable .md alongside the .json
@@ -177,23 +208,46 @@ memory and `docs/project-standards.md`):
   identity cannot be verified.
 - Every hold/publish decision + sources gets logged in a run report under `docs/run-reports/`.
 
-### 1b. Adding programs to an already-published university (no new university needed)
+### 1b. Historical existing-university programme importer
 
-Use `scripts/add-program-offerings.mjs --file <programs.json>` — a generic, reusable inserter.
+`scripts/add-program-offerings.mjs --file <programs.json>` was a generic, reusable inserter.
 Takes a plain JSON array of program entries (see the script's header comment for the exact shape)
 and upserts `program_offerings` rows for existing published universities. **Do not write a bespoke
 one-off `.mjs`/`.ts` script per university for this** (the codebase used to do this — see
 `scripts/enrich-geomedi-university.mjs` for the old pattern — it's one-off, non-reusable, and wastes
-agent effort re-deriving the same INSERT/UPDATE logic every time). Research agents should only need
-to produce the JSON; this script handles validation (course slug exists, >=2 sources, required
-fields) and insertion.
+agent effort re-deriving the same INSERT/UPDATE logic every time). Research agents must not invoke
+it. Package programme additions through `content:reserve`, associate the validated ledger rows with
+that migration and let `content:migrate -- --apply` perform the write.
 
-### 1c. Catalogue-payload pipeline for new universities (`scripts/publish-catalog-payload.ts`)
+**Teaching-language guard on the legacy writers (2026-09-15).** `add-program-offerings.mjs` and
+`publish-university-draft.ts` both print a deprecation warning recommending `content:reserve` /
+`content:migrate`, and both validate every offering before any database write — one failing
+offering rejects the whole run. The rules come from `scripts/lib/programme-medium.ts`, the same
+module the content-migration payload schema uses:
+- `medium` is required and must pass `programmeMediumSchema` (2-40 chars, no `. ; : ( )` or newlines,
+  no placeholders such as `Not confirmed` / `TBC` / `Unknown` / `N/A`). There is no `"English"`
+  fallback any more.
+- `instructionLanguages` is required, non-empty, and every code must be in
+  `teachingLanguageCodes` (`lib/catalogue-facets.ts`).
+- `mediumNote` is optional (10-300 chars when present).
+- Content-migration bundles use the same strict rule, except the 18 frozen, already-applied bundles in
+  `LEGACY_FREE_TEXT_MEDIUM_MIGRATION_IDS` (`scripts/lib/content-migrations.ts`), which parse with the old
+  free-text `medium` (`z.string().min(2)`, stored verbatim) because they are checksum-locked; every new
+  bundle must use a language label in `medium` plus `mediumNote` for detail.
 
-A third, newer path (used for the 2026-07-12 "scalable programme publishing" pilot batch) publishes
+Both writers persist `instruction_languages`; `medium_note` is written only when supplied (an
+UPDATE keeps an existing note otherwise). Run the importer with `npx tsx
+scripts/add-program-offerings.mjs --file <programs.json>`: the shared guard is TypeScript with the
+`@/` alias, so plain `node` fails at import time before connecting. Before this guard, the importer
+created 73 live rows with empty `instruction_languages` and placeholder `medium` values; those rows
+still need a corrective content migration.
+
+### 1c. Retired direct catalogue-payload CLI
+
+A former path (used for the 2026-07-12 "scalable programme publishing" pilot batch) published
 a brand-new university and its programmes in one atomic transaction from a single hand-authored
-JSON file (see `research/catalog-payloads/*.json` for examples; `western-university.json` is a
-worked reference). Run as `tsx scripts/publish-catalog-payload.ts --file <payload.json>`.
+JSON file. The direct CLI is disabled. The module is now an internal write engine called only by
+the numbered content-migration runner.
 
 **Important restriction, discovered 2026-07-12 while researching University of Malta:**
 `courseSchema.stream` in this script is `z.enum(["engineering", "business"])` — it does not accept
@@ -207,24 +261,19 @@ such as `mbbs`, `bds` or `bsc-nursing`.** This is broader than the `medical-pg`/
 three `active=true` medical/dental/nursing slugs for any university that doesn't already exist in
 the DB.
 
-The workaround is the existing two-stage pattern: publish the university's engineering/business
-programmes first via `publish-catalog-payload.ts` (which creates the university row), then run a
-second pass via `scripts/add-program-offerings.mjs` (§1b above), which has no stream restriction and
-only requires the target university to already be `published = true` and the target course to be
-`active = true`. See `research/catalog-payloads/university-of-malta-stage2-medical-dental-nursing.json`
-and `docs/research-scopes/university-of-malta.md` for a worked example of a held stage-2 batch.
+That historical workaround is retired. Current payloads use the full executable taxonomy and are
+published only as numbered content migrations. Old stage-two JSON is a research lead, not executable
+publication input.
 
 Fix candidates for a future change (not applied here — out of scope for a single-university research
 pass): widen `courseSchema.stream` to match `program-taxonomy.ts`'s full stream union, or have the
 script look up already-active courses from the DB instead of requiring every referenced course to be
 re-declared in the payload.
 
-### 2. Manual batch seed scripts (used historically per-country, e.g. Russia/Georgia/Uzbekistan/Kyrgyzstan)
+### 2. Retired manual batch seed scripts
 
-Pattern: `scripts/seed-<country>-batch<N>.mjs` — a plain array of university objects (same shape as
-`draftContent`/`universities` columns above) with a nested `programs[]` array, inserted directly via
-a SQL `Pool`. Use `scripts/seed-russian-universities-batch1.mjs` as the template. Prefer the pipeline
-above for new work; these remain mainly as historical reference and for one-off manual corrections.
+Historical `scripts/seed-<country>-batch<N>.mjs` files inserted arrays directly with a SQL pool.
+They are not templates and must never be recreated. Corrections also use a new numbered migration.
 
 ## Rendering and cache-invalidation model (2026-09-13)
 
@@ -296,15 +345,11 @@ publish invalidation was scoped to entity tags.
 
 ## Known issues / gotchas
 
-- **A `research-drafts/<country>/<slug>.json` file existing does NOT mean it's in the DB.**
-  `publish-university-draft.ts` reads only from the `universityResearchQueue` /
-  `universityResearchDrafts` tables via `--queue-id`, never from the JSON file directly. Non-official regulatory sources
-  drafts (and some official regulatory sources drafts that were held before ever being ingested) frequently have no queue
-  row at all. **Always check for an existing queue row first**; if none exists, run
-  `scripts/seed-nonofficial-directory-draft.ts --file <path>` to create the queue+draft pair from the JSON (prints
-  the resulting `--queue-id`), then publish with that id. Skipping this step makes
-  `publish-university-draft.ts` fail with "no matching draft found." (Discovered 2026-07-07: 5 of 6
-  quick-fix drafts from the overnight run hit this exact wall.)
+- **A `research-drafts/<country>/<slug>.json` file existing does NOT mean it is current or in the DB.**
+  These files belong to the retired database-backed draft workflow. Treat them as discovery leads,
+  claim the university through the shared CSV queue and repackage only currently verified facts in
+  a numbered content migration. Do not seed the historical queue or invoke
+  `publish-university-draft.ts` from a research session.
 - Country/city narrative content must stay consistent with `docs/project-standards.md` (voice, no
   editorial/newsroom tone, commercial bridge woven in).
 
@@ -460,11 +505,11 @@ can therefore promote a section naturally after the normal `sitemap` cache tag i
 ## Cross-agent publishing coordination
 
 `research/university-publishing-ledger.csv` is the shared coordination ledger for university work.
-Every research or publishing agent must claim its university there before research and update the
-same row through `researching`, `validated`, `published`, `held` or `abandoned`. Before the database
-transaction, re-read the ledger and query the live university slug/name to catch concurrent work.
-The ledger prevents accidental duplication operationally; the database slug constraints remain the
-final integrity boundary.
+Every Codex or Claude agent must use `queue:claim`, `queue:update` and `queue:release`; manual CSV
+editing is prohibited. The queue rejects duplicate canonical slugs and normalized names while its
+lock prevents concurrent writers from losing updates. The migration runner validates the complete
+ledger and payload association before connecting to Neon. Database slug constraints remain the final
+identity boundary, and only one controlled integrator applies pending migrations.
 
 The existing-university programme importer also persists structured `audienceEligibility` and
 `professionalExamSupport` values when supplied. Programme-only batches must therefore carry precise

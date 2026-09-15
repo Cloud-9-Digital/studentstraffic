@@ -264,7 +264,10 @@ export const programOfferings = pgTable(
       .$type<ProgramOffering["admissionsContent"] | Record<string, never>>()
       .notNull()
       .default({}),
+    /** Short display label: language names only, e.g. "English / Russian". */
     medium: text("medium").notNull(),
+    /** Optional source-backed delivery nuance (phase transitions, local-language clinical work). */
+    mediumNote: text("medium_note"),
     instructionLanguages: text("instruction_languages").array().notNull().default([]),
     published: boolean("published").notNull().default(true),
     teachingPhases: jsonb("teaching_phases")
@@ -344,11 +347,15 @@ export const contentMigrations = pgTable(
   {
     migrationId: text("migration_id").primaryKey(),
     checksum: text("checksum").notNull(),
+    status: text("status").notNull().default("applied"),
     payloadCount: integer("payload_count").notNull(),
     summary: jsonb("summary").notNull().default({}),
     appliedAt: timestamp("applied_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (table) => [index("content_migrations_applied_at_idx").on(table.appliedAt)],
+  (table) => [
+    index("content_migrations_applied_at_idx").on(table.appliedAt),
+    index("content_migrations_status_idx").on(table.status),
+  ],
 );
 
 export const indiaMedicalColleges = pgTable(

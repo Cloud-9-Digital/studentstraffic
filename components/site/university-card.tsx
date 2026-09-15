@@ -20,7 +20,7 @@ export function UniversityCard({
   const { university, country } = program;
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
-  const coverImage = getUniversityCoverImage(university);
+  const coverImage = getUniversityCoverImage({ ...university, countrySlug: country.slug });
 
   return (
     // Wrapper is a plain div — Link covers the whole card via absolute inset,

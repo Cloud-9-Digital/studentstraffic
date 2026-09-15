@@ -266,7 +266,7 @@ export function CountryShortlistPage({
                         {formatCurrencyUsd(program.offering.annualTuitionUsd)}
                       </td>
                       <td className="px-4 py-4 text-sm text-muted-foreground">
-                        {formatProgramMedium(program.offering.medium, countrySlug)}
+                        {formatProgramMedium(program.offering.medium, countrySlug) ?? "—"}
                       </td>
                       <td className="px-4 py-4 text-sm text-muted-foreground">
                         {program.university.bestFitFor[0] ?? "Open the full profile"}

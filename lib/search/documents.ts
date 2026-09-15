@@ -205,7 +205,7 @@ export function buildSearchDocuments({
       .filter(Boolean) as string[];
     const cheapestProgram = universityPrograms[0];
     const formattedMedium = cheapestProgram
-      ? formatProgramMedium(cheapestProgram.medium, university.countrySlug)
+      ? formatProgramMedium(cheapestProgram.medium, university.countrySlug) ?? undefined
       : undefined;
 
     return {
@@ -255,10 +255,9 @@ export function buildSearchDocuments({
     const university = universityBySlug.get(offering.universitySlug);
     const course = courseBySlug.get(offering.courseSlug);
     const country = university ? countryBySlug.get(university.countrySlug) : undefined;
-    const formattedMedium = formatProgramMedium(
-      offering.medium,
-      country?.slug,
-    );
+    // Placeholder mediums ("Not confirmed") become undefined → stored as null.
+    const formattedMedium =
+      formatProgramMedium(offering.medium, country?.slug) ?? undefined;
 
     return {
       documentType: "program",
@@ -284,7 +283,7 @@ export function buildSearchDocuments({
         ),
       ]),
       highlights: [
-        formattedMedium,
+        ...(formattedMedium ? [formattedMedium] : []),
         "Verify licensing fit",
       ],
       countrySlug: university?.countrySlug,

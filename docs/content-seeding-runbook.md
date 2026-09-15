@@ -52,12 +52,21 @@ Do not begin with a free-form prompt such as “write everything about this coun
 
 ### 1a. Claim the university in the shared publishing ledger
 
-Before researching a university, every agent must read
-`research/university-publishing-ledger.csv` and check both the canonical university slug and known
-name aliases. If a row is already `claimed`, `researching`, `validated` or `published`, do not start
-duplicate work unless the existing owner explicitly hands it over.
+Before researching a university, every agent must validate and claim work through the locked queue
+commands. Do not edit `research/university-publishing-ledger.csv` by hand.
 
-To claim new work, append or update one row with:
+```text
+npm run queue:validate
+npm run queue:claim -- --slug <slug> --name "<name>" --country <country> --owner <agent-id> --batch <batch-id> --priority <priority>
+npm run queue:update -- --slug <slug> --owner <agent-id> --status researching
+```
+
+The claim operation runs under an inter-process file lock, rejects duplicate slugs and normalized
+names, and writes the CSV through atomic replacement. This allows Codex and Claude to share one
+working queue without last-writer-wins data loss. Agents must still check known aliases, historical
+names, campuses and faculties before selecting a canonical identity.
+
+The queue command creates or reclaims one row with:
 
 - canonical university slug and official name;
 - country slug;
@@ -71,10 +80,15 @@ Allowed statuses are `claimed`, `researching`, `held`, `validated`, `published` 
 Update the same row as work progresses; never add a second row for the same institution. Historical
 names, campuses and faculties must be checked so a renamed institution is not claimed twice.
 
-Because CSV files do not provide transactional locking, the publishing agent must re-read the ledger
-and query the live database immediately before publication. If another owner has published or claimed
-the institution, stop and reconcile rather than overwriting it. After a successful transaction,
-record `status=published`, `published_at`, the final programme count and payload path.
+Research agents stop at `validated`. The content-migration runner re-reads and validates the ledger
+before opening a database connection and requires exactly one `validated` or previously `published`
+row per university in the payload. Only the controlled publishing integrator moves validated rows to
+`published` after the migration is applied.
+
+Workers run as continuation units. A held candidate or an empty queue check is not a terminal
+assignment: the worker should move to the next non-duplicate discovery candidate within its bounded
+turn, and the supervisor should relaunch the worker immediately after completion. This keeps the
+research pipeline moving without weakening evidence holds or creating duplicate claims.
 
 ### 1b. Keep research offline and create a numbered content migration
 
@@ -83,16 +97,31 @@ drafting. They produce one complete source-backed payload under
 `content-migrations/<NNNN>-<scope>/` with a `manifest.json` and the referenced `payload.json`.
 The directory name and manifest ID are the immutable content-migration ID.
 
+When Codex and Claude package concurrently, reserve the next sequence with
+`npm run content:reserve -- --name <scope> --description "<description>"`. Never choose a sequence
+number by inspection or create two directories with the same numeric prefix.
+
 - Validate all local bundles without database access with `npm run content:validate`.
+- Numbered reservations that contain only `manifest.json` are reported and skipped until their
+  referenced `payload.json` exists; they remain non-publishable holds rather than empty migrations.
 - Never edit a bundle after it has been applied. Create the next numbered migration for a correction.
+  Copy the university's full payload into the new bundle. Then point that university's ledger row
+  (`migration_id`, `payload_file`) at the new bundle with status `validated`. That is the supersede
+  rule in `content-migrations/README.md`: earlier bundles for the slug become historical.
+- Expired review-by dates are warnings in `content:validate` and for applied bundles. They block
+  check/apply only for pending bundles. Refresh expired evidence on published content with a
+  superseding correction bundle.
 - Do not run `publish-catalog-payload.ts` directly; its direct CLI path is retired.
 - The only catalogue write command is `npm run content:migrate -- --apply`. It checks the live
   publishing ledger, validates pending bundles, applies them in sequence and records each ID and
   checksum in `content_migrations`.
 
 The `content_migrations` table is environment-specific and is the source of truth for whether a
-bundle reached staging or production. This allows a long research period to remain completely
-offline while the database wakes only for the deliberate publication window.
+bundle reached staging or production. A migration is recorded as `db_applied` inside the same
+transaction as its catalogue writes, then becomes `applied` after search and cache refresh. An
+interrupted `db_applied` migration resumes refresh on the next run without replaying catalogue
+writes. This allows a long research period to remain completely offline while the database wakes
+only for the deliberate publication window.
 
 ### 2. Use the canonical taxonomy
 
@@ -161,13 +190,15 @@ ask the renderer to infer them from prose.
 
 | Research fact | Payload field | Rule |
 |---|---|---|
-| How teaching is delivered, including phase changes and local-language clinical requirements | `medium` and `teachingPhases` | Preserve the precise, source-backed explanation. |
+| Display label for the teaching language(s) | `medium` | Language names only, joined with " / " (e.g. `English`, `English / Russian`). Max 40 characters; no `. ; : ( )` or newlines. Never put a sentence here: it renders verbatim on cards, tables and search. |
+| How teaching is delivered, including phase changes and local-language clinical requirements | `mediumNote` and `teachingPhases` | Preserve the precise, source-backed explanation in `mediumNote` (optional, 10-300 characters) or `teachingPhases`. |
 | Verified languages actually used for instruction | `instructionLanguages` | Use only controlled language codes, e.g. `english`, `russian`. Do not add `english` merely because an English test is required, an English option is marketed without confirmation, or the source mentions English in another context. |
 | Official intake wording and current timing context | `intakeMonths` and `admissionsContent.deadlinesNote` | Preserve the source wording and any deadline in the decision content. |
 | Month(s) represented by a verified intake | `intakeCodes` | Use only calendar codes, e.g. `september`, `january`. `Fall`, `Spring`, `September intake`, dates and country-wide assumptions are not valid codes. |
 
 If a source confirms a mixed English/local-language programme, record every verified instructional
-language in `instructionLanguages` and explain the transition in `medium` or `teachingPhases`.
+language in `instructionLanguages`, list them in the `medium` label, and explain the transition in
+`mediumNote` or `teachingPhases`.
 If an intake or teaching language is uncertain, leave its controlled facet empty only in legacy
 repair work; for new payloads, resolve it from a primary source or hold the programme. Never guess
 to make a finder option appear.
@@ -177,6 +208,25 @@ to make a finder option appear.
 AI agents must return one complete structured payload matching the destination schema and page
 architecture. They must not return a long article for an agent to split later, and they must not
 publish section-by-section.
+
+#### Agent completion contract
+
+Research and writing are one end-to-end assignment. A research report, enrichment note or draft
+JSON under `research-drafts/` is supporting material, not a completed publishing result. A worker
+may report a candidate as `validated` only after it has reserved a numbered migration, written the
+complete executable `payload.json`, passed scoped offline validation, and linked that migration
+and payload path in the shared ledger. A worker that cannot meet the evidence bar must mark the
+candidate `held` with the exact blocking facts; it must not pad the public copy or claim that an
+enrichment note is publish-ready.
+
+The completion message for every end-to-end worker must include:
+
+1. the migration ID and payload path, or an explicit `held`/`no-claim` status;
+2. the scoped validation result;
+3. the ledger status and any remaining evidence gaps.
+
+This prevents a discovery-only pass from being mistaken for content creation and keeps the final
+publication step a deliberate user-controlled migration window.
 
 Each material claim must carry internal provenance:
 

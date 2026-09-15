@@ -214,16 +214,50 @@ const LOCAL_LANGUAGE_BY_COUNTRY: Record<string, string> = {
   uzbekistan: "Uzbek",
 };
 
+const MAX_PROGRAM_MEDIUM_LABEL_LENGTH = 40;
+const SENTENCE_LIKE_MEDIUM = /[.;:()\r\n]|--/;
+
+const PLACEHOLDER_PROGRAM_MEDIUMS = new Set([
+  "",
+  "not confirmed",
+  "tbc",
+  "tbd",
+  "to be confirmed",
+  "unknown",
+  "n/a",
+  "na",
+]);
+
+/**
+ * True when a stored `medium` is a placeholder rather than a verified language
+ * label. Placeholders must never be shown, and must never be replaced with a
+ * guessed language.
+ */
+export function isPlaceholderProgramMedium(
+  medium: string | null | undefined,
+): boolean {
+  return PLACEHOLDER_PROGRAM_MEDIUMS.has((medium ?? "").trim().toLowerCase());
+}
+
+/**
+ * `medium` is a short language label ("English / Russian"); delivery nuance
+ * lives in `mediumNote`. Some legacy rows still hold a source sentence, so
+ * those are reduced to their first concise phrase for display.
+ *
+ * Returns `null` for placeholder values ("Not confirmed", "TBC", empty) so
+ * callers omit the medium entirely instead of displaying or guessing one.
+ */
 export function formatProgramMedium(
-  medium: string,
+  medium: string | null | undefined,
   countrySlug?: string | null,
-) {
-  const englishSupportMatch = medium.match(/^English \+ (.+) Support$/);
-  if (englishSupportMatch?.[1]) {
-    return `English, ${englishSupportMatch[1]}`;
+): string | null {
+  if (isPlaceholderProgramMedium(medium)) {
+    return null;
   }
 
-  if (medium === "English + Local Support") {
+  const value = (medium ?? "").trim();
+  // Checked before the generic pattern below, which would otherwise swallow it.
+  if (value === "English + Local Support") {
     const localLanguage = countrySlug
       ? LOCAL_LANGUAGE_BY_COUNTRY[countrySlug]
       : null;
@@ -231,37 +265,21 @@ export function formatProgramMedium(
     return localLanguage ? `English, ${localLanguage}` : "English + Local Support";
   }
 
-  return medium;
-}
+  const englishSupportMatch = value.match(/^English \+ (.+) Support$/);
+  if (englishSupportMatch?.[1]) {
+    return `English, ${englishSupportMatch[1]}`;
+  }
 
-/**
- * The catalogue keeps detailed source notes in some medium-of-instruction
- * values. Filters need a short, human-readable language category instead.
- */
-export function getTeachingLanguageFilterLabel(medium: string) {
-  const value = medium.trim();
-  const lower = value.toLowerCase();
-  const languages = [
-    "English",
-    "Russian",
-    "German",
-    "Albanian",
-    "Italian",
-    "Vietnamese",
-    "Kyrgyz",
-    "Georgian",
-    "Uzbek",
-    "Chinese",
-    "French",
-    "Spanish",
-  ];
+  if (
+    value.length <= MAX_PROGRAM_MEDIUM_LABEL_LENGTH &&
+    !SENTENCE_LIKE_MEDIUM.test(value)
+  ) {
+    return value;
+  }
 
-  const language = languages.find((candidate) => lower.includes(candidate.toLowerCase()));
-  if (language) return language;
-
-  // A safe fallback for a new language not covered above: preserve only the
-  // first concise phrase, not any parenthetical research explanation.
-  return value.split(/\s*(?:\(|--|,|;|\.)\s*/)[0]?.trim() || value;
+  const shortened =
+    value.split(/\s*(?:\(|--|,|;|:|\.|\r|\n)\s*/)[0]?.trim() || value;
+  return isPlaceholderProgramMedium(shortened) ? null : shortened;
 }
 
 export function formatNumber(value: number) {

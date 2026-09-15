@@ -82,6 +82,13 @@ export type LeadFormProps = {
    * lead form no longer asks for a NEET score.
    */
   showNeetCategory?: boolean;
+  /**
+   * When true, the "Interested course"/"Interested country" selects are
+   * replaced by hidden inputs carrying the caller-supplied slugs. Used on
+   * university and program pages, where both values are already known from the
+   * page itself — asking again is redundant and costs a filled field.
+   */
+  lockInterest?: boolean;
   /** When true, locks the phone field to +91 (India) and hides the country picker. */
   lockPhoneToIndia?: boolean;
   className?: string;
@@ -113,6 +120,7 @@ export function LeadForm({
   stacked = false,
   hidePlaceholders = false,
   showNeetCategory = false,
+  lockInterest = false,
   lockPhoneToIndia = false,
   className,
   children,
@@ -253,11 +261,12 @@ export function LeadForm({
       <input type="hidden" name="documentReferrer" />
       <input type="hidden" name="clientContext" defaultValue="{}" />
       <input type="hidden" name="notes" value={notes ?? ""} />
-      {/* The NEET predictor branch doesn't render the visible interest
-          selects, so it needs these hidden fallback inputs instead. Every
-          other form shows the selects, which carry the courseSlug/countrySlug
-          names themselves — rendering both would create duplicate fields. */}
-      {showNeetCategory ? (
+      {/* The NEET predictor and locked-interest branches don't render the
+          visible interest selects, so they need these hidden fallback inputs
+          instead. Every other form shows the selects, which carry the
+          courseSlug/countrySlug names themselves — rendering both would create
+          duplicate fields. */}
+      {showNeetCategory || lockInterest ? (
         <>
           <input type="hidden" name="courseSlug" value={courseSlug ?? ""} />
           <input type="hidden" name="countrySlug" value={countrySlug ?? ""} />
@@ -305,7 +314,7 @@ export function LeadForm({
         </div>
       ) : null}
 
-      {!showNeetCategory ? (
+      {!showNeetCategory && !lockInterest ? (
         <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
           <div className="space-y-2">
             <Label htmlFor={`${fieldPrefix}-course`}>Interested course</Label>
@@ -352,7 +361,7 @@ export function LeadForm({
             </div>
           </div>
         </div>
-      ) : (
+      ) : showNeetCategory ? (
         <>
           <div className={cn(stacked ? "field-grid" : "field-grid field-grid--two")}>
             {emailField}
@@ -396,7 +405,7 @@ export function LeadForm({
             {stateField}
           </div>
         </>
-      )}
+      ) : null}
 
       {children}
 

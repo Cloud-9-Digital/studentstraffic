@@ -3,8 +3,12 @@ import { z } from "zod";
 import { programmeLevels, programmeStreams } from "@/lib/data/program-taxonomy";
 import {
   intakeMonthCodes,
-  teachingLanguageCodes,
 } from "@/lib/catalogue-facets";
+import {
+  instructionLanguagesSchema,
+  programmeMediumNoteSchema,
+  programmeMediumSchema,
+} from "./programme-medium";
 
 const sourceSchema = z.object({
   label: z.string().min(2),
@@ -69,6 +73,19 @@ const feeSchema = z.discriminatedUnion("status", [
   }),
 ]);
 
+// Teaching-language rules (medium label, placeholder rejection, mediumNote, instructionLanguages)
+// live in ./programme-medium.ts so the legacy direct writers enforce the same schema.
+export { programmeMediumNoteSchema, programmeMediumSchema };
+
+/**
+ * Pre-2026-09 offering `medium` rule: any free-text string of 2+ chars, stored verbatim.
+ * Only for grandfathered, already-applied content-migration bundles listed in
+ * `LEGACY_FREE_TEXT_MEDIUM_MIGRATION_IDS` (scripts/lib/content-migrations.ts). Never use it for new bundles.
+ */
+export const legacyFreeTextMediumSchema = z.string().min(2);
+
+type OfferingMediumSchema = typeof programmeMediumSchema | typeof legacyFreeTextMediumSchema;
+
 const cloudinaryImageUrlSchema = z.string().url().refine(
   (value) => new URL(value).hostname === "res.cloudinary.com",
   "Public university images must be hosted on Cloudinary.",
@@ -89,7 +106,7 @@ const courseSchema = z.object({
   metaDescription: z.string().min(80).max(170),
 });
 
-const programmeSchema = z.object({
+const createProgrammeSchema = (mediumSchema: OfferingMediumSchema) => z.object({
   slug: z.string().min(2),
   canonicalCourseSlug: z.string().min(2),
   officialTitle: z.string().min(2),
@@ -118,8 +135,9 @@ const programmeSchema = z.object({
     deadlinesNote: z.string().min(20).max(300).optional(),
     visaConsiderations: z.array(z.string().min(8).max(220)).max(5).optional(),
   }),
-  medium: z.string().min(2),
-  instructionLanguages: z.array(z.enum(teachingLanguageCodes)).min(1),
+  medium: mediumSchema,
+  mediumNote: programmeMediumNoteSchema,
+  instructionLanguages: instructionLanguagesSchema,
   intakeMonths: z.array(z.string().min(2)).min(1),
   intakeCodes: z.array(z.enum(intakeMonthCodes)).min(1),
   feeVerifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
@@ -127,7 +145,7 @@ const programmeSchema = z.object({
   teachingPhases: z.array(z.object({ phase: z.string(), language: z.string(), details: z.string() })).min(1),
 });
 
-const universitySchema = z.object({
+const createUniversitySchema = (mediumSchema: OfferingMediumSchema) => z.object({
   countrySlug: z.string().min(2),
   slug: z.string().min(2),
   name: z.string().min(2),
@@ -164,7 +182,7 @@ const universitySchema = z.object({
   faq: z.array(z.object({ question: z.string().min(10), answer: z.string().min(40).max(700) })).min(6).max(13),
   researchSources: z.array(sourceSchema).min(4),
   admissionsContent: z.record(z.string(), z.unknown()),
-  programmes: z.array(programmeSchema).min(1),
+  programmes: z.array(createProgrammeSchema(mediumSchema)).min(1),
 });
 
 const countrySchema = z.object({
@@ -179,11 +197,26 @@ const countrySchema = z.object({
   metaDescription: z.string().min(80).max(170),
 });
 
-export const catalogPayloadSchema = z.object({
-  countries: z.array(countrySchema).default([]),
-  courses: z.array(courseSchema).min(1),
-  universities: z.array(universitySchema).min(1),
-  evidence: z.array(evidenceSchema).min(1),
-});
+/**
+ * Builds the catalogue payload schema. Every rule is shared; only the offering `medium` rule varies,
+ * so the legacy variant cannot drift from the strict schema in any other field.
+ */
+function createCatalogPayloadSchema(mediumSchema: OfferingMediumSchema) {
+  return z.object({
+    countries: z.array(countrySchema).default([]),
+    courses: z.array(courseSchema).min(1),
+    universities: z.array(createUniversitySchema(mediumSchema)).min(1),
+    evidence: z.array(evidenceSchema).min(1),
+  });
+}
+
+/** Strict schema for every new content-migration bundle. */
+export const catalogPayloadSchema = createCatalogPayloadSchema(programmeMediumSchema);
+
+/**
+ * Identical to `catalogPayloadSchema` except offering `medium` uses `legacyFreeTextMediumSchema`.
+ * Only for the frozen grandfathered bundle ids in scripts/lib/content-migrations.ts.
+ */
+export const legacyFreeTextMediumCatalogPayloadSchema = createCatalogPayloadSchema(legacyFreeTextMediumSchema);
 
 export type CatalogPayload = z.infer<typeof catalogPayloadSchema>;

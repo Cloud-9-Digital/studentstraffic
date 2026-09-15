@@ -4,10 +4,12 @@ import { CounsellingDialog } from "@/components/site/counselling-dialog";
 
 export function UniversityCounsellingSection({
   universityName,
+  universitySlug,
   countrySlug,
   courseSlug,
 }: {
   universityName: string;
+  universitySlug: string;
   countrySlug: string;
   courseSlug?: string;
 }) {
@@ -39,11 +41,15 @@ export function UniversityCounsellingSection({
             triggerVariant="default"
             triggerSize="lg"
             triggerClassName="w-full sm:w-auto"
+            universitySlug={universitySlug}
             countrySlug={countrySlug}
             courseSlug={courseSlug}
             title={`Plan your application to ${universityName}`}
             description="Share your details and an admissions specialist will help you plan the next steps."
+            submitLabel="Get free admission help"
             ctaVariant="university_application_plan"
+            notes={`University enquiry: ${universityName}`}
+            lockInterest
           />
         </div>
       </div>

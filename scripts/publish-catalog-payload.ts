@@ -8,6 +8,7 @@ import { z } from "zod";
 
 import {
   catalogContentEvidence,
+  contentMigrations,
   countries,
   courses,
   programOfferings,
@@ -24,7 +25,11 @@ import {
   teachingLanguageCodes,
 } from "@/lib/catalogue-facets";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
-import type { CatalogPayload } from "./lib/catalog-payload-schema";
+import {
+  programmeMediumNoteSchema,
+  programmeMediumSchema,
+  type CatalogPayload,
+} from "./lib/catalog-payload-schema";
 import { refreshSearchDocumentsForUniversities } from "@/lib/search/university-search-documents";
 
 const sourceSchema = z.object({
@@ -86,7 +91,8 @@ const programmeSchema = z.object({
     deadlinesNote: z.string().min(20).max(300).optional(),
     visaConsiderations: z.array(z.string().min(8).max(220)).max(5).optional(),
   }),
-  medium: z.string().min(2),
+  medium: programmeMediumSchema,
+  mediumNote: programmeMediumNoteSchema,
   instructionLanguages: z.array(z.enum(teachingLanguageCodes)).min(1),
   intakeMonths: z.array(z.string().min(2)).min(1),
   intakeCodes: z.array(z.enum(intakeMonthCodes)).min(1),
@@ -160,7 +166,17 @@ export type LegacyCatalogPayload = z.infer<typeof payloadSchema>;
  * Apply one already-validated catalogue payload. This is intentionally only
  * exported for the content-migration runner; do not add a new direct CLI path.
  */
-export async function publishCatalogPayload(payload: CatalogPayload) {
+type ContentMigrationRecord = {
+  migrationId: string;
+  checksum: string;
+  payloadCount: number;
+  summary: Record<string, unknown>;
+};
+
+export async function publishCatalogPayload(
+  payload: CatalogPayload,
+  options: { contentMigration?: ContentMigrationRecord; deferRefresh?: boolean } = {},
+) {
   if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is required.");
   neonConfig.webSocketConstructor = WebSocket;
   const pool = new Pool({ connectionString: process.env.DATABASE_URL });
@@ -282,8 +298,12 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
                 feeVerifiedAt: fee.verifiedAt,
                 feeNotes: fee.notes,
               };
+        // Explicit null so a republish without a note clears a stale one
+        // (drizzle skips undefined keys in the on-conflict update).
+        const mediumNote = offering.mediumNote ?? null;
         const [savedProgramme] = await tx.insert(programOfferings).values({
           ...offering,
+          mediumNote,
           ...feeFields,
           universityId: saved.id,
           courseId,
@@ -297,6 +317,7 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
           target: programOfferings.slug,
           set: {
             ...offering,
+            mediumNote,
             ...feeFields,
             universityId: saved.id,
             courseId,
@@ -358,9 +379,30 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
         internalNotes: countryEvidence.internalNotes,
       });
     }
+    if (options.contentMigration) {
+      await tx.insert(contentMigrations).values({
+        ...options.contentMigration,
+        status: "db_applied",
+      });
+    }
     return published;
   });
 
+  if (!options.deferRefresh) {
+    await refreshCatalogPayload(payload, result);
+  }
+  return { publishedProgrammes: result };
+  } finally {
+    await pool.end();
+  }
+}
+
+export async function refreshCatalogPayload(
+  payload: CatalogPayload,
+  publishedProgrammes = payload.universities.flatMap((university) =>
+    university.programmes.map((programme) => programme.slug),
+  ),
+) {
   const universitySlugs = payload.universities.map((university) => university.slug);
   const countrySlugs = [...new Set([
     ...payload.countries.map((country) => country.slug),
@@ -380,8 +422,15 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
         .replace(/^-+|-+$/g, ""),
     ),
   )];
+  // The refresh runs after the publish transaction's pool has closed (and is
+  // resumed on its own by the migration runner), so it opens its own pool.
+  if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is required.");
+  neonConfig.webSocketConstructor = WebSocket;
+  const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+  const db = drizzle(pool, { schema });
   // Incremental: only these universities' rows in search_documents change.
-  const searchRefresh = await refreshSearchDocumentsForUniversities(db, universitySlugs);
+  const searchRefresh = await refreshSearchDocumentsForUniversities(db, universitySlugs)
+    .finally(() => pool.end());
   console.log(
     `Search documents refreshed: ${searchRefresh.upserted} upserted, ${searchRefresh.removed} removed.`,
   );
@@ -403,17 +452,13 @@ export async function publishCatalogPayload(payload: CatalogPayload) {
     ],
     {
       scope: "catalog",
-      slugs: result,
+      slugs: publishedProgrammes,
       paths: [
         ...countrySlugs.map((slug) => `/countries/${slug}`),
         ...universitySlugs.map((slug) => `/university/${slug}`),
       ],
     },
   );
-  return { publishedProgrammes: result };
-  } finally {
-    await pool.end();
-  }
 }
 
 // This command used to write an arbitrary JSON file directly to production.

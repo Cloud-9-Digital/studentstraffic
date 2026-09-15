@@ -179,9 +179,9 @@ export default async function CityPage({
   ];
   const allMediums = [
     ...new Set(
-      programs.map((p) =>
-        formatProgramMedium(p.offering.medium, p.country.slug),
-      ),
+      programs
+        .map((p) => formatProgramMedium(p.offering.medium, p.country.slug))
+        .filter((medium): medium is string => medium !== null),
     ),
   ];
   const allIntakeMonths = [...new Set(programs.flatMap((p) => p.offering.intakeMonths))].sort();
@@ -450,7 +450,7 @@ export default async function CityPage({
                           )}
                       </td>
                       <td className="px-5 py-4 text-xs text-muted-foreground">
-                        {formatProgramMedium(program.offering.medium, program.country.slug)}
+                        {formatProgramMedium(program.offering.medium, program.country.slug) ?? "—"}
                       </td>
                       <td className="px-5 py-4">
                         {badges.length > 0 ? (

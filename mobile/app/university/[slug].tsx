@@ -385,7 +385,9 @@ export default function UniversityDetailScreen() {
           <View style={s.factRow}>
             <FactTile icon="cash-outline"     label="Annual Fee" value={o ? usd(o.annualTuitionUsd) : usd(university.tuitionUsd)} />
             <FactTile icon="time-outline"     label="Duration"   value={o ? `${o.durationYears} years` : (university.duration ?? "6 years")} />
-            <FactTile icon="language-outline" label="Medium"     value={o?.medium ?? university.medium ?? "English"} />
+            {(o?.medium ?? university.medium) ? (
+              <FactTile icon="language-outline" label="Medium" value={(o?.medium ?? university.medium)!} />
+            ) : null}
           </View>
 
           {/* About */}

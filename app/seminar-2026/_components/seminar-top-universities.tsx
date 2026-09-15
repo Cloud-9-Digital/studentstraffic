@@ -139,6 +139,8 @@ export async function SeminarTopUniversities() {
           slug: university.slug,
           name: university.name,
           coverImageUrl: university.coverImageUrl,
+          city: university.city,
+          countrySlug: item.countrySlug,
         })
       : null;
     const placeholder = getCountryPlaceholder(item.countrySlug);

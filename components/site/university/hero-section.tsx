@@ -6,6 +6,7 @@ import { AddToCompareButton } from "@/components/site/add-to-compare-button";
 import { CounsellingDialog } from "@/components/site/counselling-dialog";
 import { ScrollToButton } from "@/components/site/scroll-to-button";
 import { ShortlistButton } from "@/components/site/shortlist-button";
+import { FocusApplyRailButton } from "@/components/site/university/apply-panel";
 import { ShareButton } from "@/components/site/university/share-button";
 import { UniversityLogoBadge } from "@/components/site/university/shared";
 import type { Author } from "@/lib/authors";
@@ -118,16 +119,27 @@ export function UniversityHeroSection({
             </div>
 
             <div className="flex flex-wrap gap-3">
+              {/* Below lg there is no sticky rail, so the hero opens the
+                  dialog. From lg up the rail form is already on screen and the
+                  CTA just focuses it. */}
               <CounsellingDialog
                 triggerContent="Plan my application"
                 triggerVariant="accent"
                 triggerSize="default"
+                triggerClassName="lg:hidden"
                 title={`Plan your application to ${universityName}`}
                 description="Share your details and an admissions specialist will help you plan the next steps."
+                submitLabel="Get free admission help"
                 ctaVariant="university_hero_application_plan"
+                universitySlug={universitySlug}
                 countrySlug={countrySlug}
                 courseSlug={courseSlug}
+                notes={`University enquiry: ${universityName}`}
+                lockInterest
               />
+              <FocusApplyRailButton className="hidden lg:inline-flex">
+                Plan my application
+              </FocusApplyRailButton>
               <ScrollToButton
                 targetId="programs"
                 className="border border-white/20 bg-white/8 !text-white hover:bg-white/15 hover:!text-white"

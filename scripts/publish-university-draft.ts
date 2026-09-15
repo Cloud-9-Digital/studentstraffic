@@ -14,6 +14,12 @@ import {
 import { refreshSearchDocumentsForUniversities } from "@/lib/search/university-search-documents";
 import { isApprovedCanonicalProgramme } from "@/lib/data/program-taxonomy";
 import { createSlug } from "@/lib/utils";
+import {
+  checkOfferingLanguageFields,
+  contentMigrationGuidance,
+  warnLegacyOfferingWriter,
+  type OfferingLanguageFields,
+} from "./lib/programme-medium";
 import { triggerRevalidate } from "./lib/trigger-revalidate";
 
 type DraftRecord = {
@@ -66,6 +72,8 @@ type ProgramLike = {
   officialTotalTuitionAmount?: number;
   officialProgramUrl?: string;
   medium?: string;
+  mediumNote?: string | null;
+  instructionLanguages?: string[];
   teachingPhases?: Array<{ phase: string; language: string; details: string }>;
   yearlyCostBreakdown?: Array<{
     yearLabel: string;
@@ -255,6 +263,7 @@ function validateDraft(record: DraftRecord) {
     ? (structuredFacts.programs as ProgramLike[])
     : [];
   const issues: string[] = [];
+  const programLanguageFields: OfferingLanguageFields[] = [];
 
   const officialWebsite =
     asString(record.officialWebsite) ?? asString(structuredFacts.officialWebsite);
@@ -360,7 +369,11 @@ function validateDraft(record: DraftRecord) {
     const courseSlug = inferCourseSlug(program, asString(draftContent.summary));
     const title = asString(program.title);
     const officialProgramUrl = asString(program.officialProgramUrl);
-    const medium = asString(program.medium);
+    const languageCheck = checkOfferingLanguageFields({
+      medium: program.medium,
+      mediumNote: program.mediumNote,
+      instructionLanguages: program.instructionLanguages,
+    });
     const durationYears = asNumber(program.durationYears);
 
     if (!courseSlug) {
@@ -379,8 +392,11 @@ function validateDraft(record: DraftRecord) {
       issues.push(`Program ${index + 1} is missing an official program URL.`);
     }
 
-    if (!medium) {
-      issues.push(`Program ${index + 1} is missing medium of instruction.`);
+    if (languageCheck.ok) {
+      programLanguageFields.push(languageCheck.value);
+    } else {
+      const label = `Program ${index + 1} ("${title ?? courseSlug ?? "untitled"}")`;
+      issues.push(...languageCheck.issues.map((issue) => `${label} ${issue}`));
     }
 
     if (!durationYears) {
@@ -403,6 +419,7 @@ function validateDraft(record: DraftRecord) {
     draftContent,
     structuredFacts,
     programs,
+    programLanguageFields,
     whyChoose,
     thingsToConsider,
     bestFitFor,
@@ -455,6 +472,8 @@ async function getDraftRecord(args: PublishArgs): Promise<DraftRecord | null> {
 }
 
 async function main() {
+  warnLegacyOfferingWriter("scripts/publish-university-draft.ts");
+
   const db = getDb();
 
   if (!db) {
@@ -477,7 +496,7 @@ async function main() {
 
   if (validation.issues.length > 0) {
     throw new Error(
-      `Draft is not publishable:\n- ${validation.issues.join("\n- ")}`,
+      `Draft is not publishable (nothing was written):\n- ${validation.issues.join("\n- ")}\n${contentMigrationGuidance}`,
     );
   }
 
@@ -611,7 +630,11 @@ async function main() {
   const publishedProgramSlugs: string[] = [];
   const publishedCourseSlugs = new Set<string>();
 
-  for (const rawProgram of validation.programs) {
+  for (const [programIndex, rawProgram] of validation.programs.entries()) {
+    const languageFields = validation.programLanguageFields[programIndex];
+    if (!languageFields) {
+      throw new Error(`Programme "${rawProgram.title ?? "unknown"}" has no validated teaching-language fields.`);
+    }
     const courseSlug = inferCourseSlug(rawProgram, asString(draftContent.summary));
 
     if (!courseSlug) {
@@ -667,7 +690,10 @@ async function main() {
       officialAnnualTuitionAmount: asNumber(rawProgram.officialAnnualTuitionAmount),
       officialTotalTuitionAmount: asNumber(rawProgram.officialTotalTuitionAmount),
       officialProgramUrl,
-      medium: asString(rawProgram.medium) ?? "English",
+      medium: languageFields.medium,
+      instructionLanguages: languageFields.instructionLanguages,
+      // Only overwrite an existing medium_note when the draft supplies one.
+      ...(languageFields.mediumNote ? { mediumNote: languageFields.mediumNote } : {}),
       published: true,
       teachingPhases: Array.isArray(rawProgram.teachingPhases)
         ? rawProgram.teachingPhases

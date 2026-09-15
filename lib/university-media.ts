@@ -1,7 +1,11 @@
+import { getCityMedia, getCountryMedia } from "@/lib/location-media";
+
 type UniversityMediaInput = {
   slug: string;
   name: string;
   coverImageUrl?: string | null;
+  city?: string | null;
+  countrySlug?: string | null;
 };
 
 const stockImageHostnames = new Set(["picsum.photos"]);
@@ -52,15 +56,40 @@ export function getUniversityInitials(name: string): string {
 }
 
 export function getUniversityCoverImage(input: UniversityMediaInput) {
-  if (!input.coverImageUrl || !isRealUniversityImageUrl(input.coverImageUrl)) {
-    return null;
+  if (input.coverImageUrl && isRealUniversityImageUrl(input.coverImageUrl)) {
+    return {
+      url: input.coverImageUrl,
+      alt: `${input.name} campus overview`,
+      caption: "Campus overview",
+      isFallback: false as const,
+    };
   }
 
-  return {
-    url: input.coverImageUrl,
-    alt: `${input.name} campus overview`,
-    caption: "Campus overview",
-  };
+  // No verified campus photo yet — fall back to a city image, then a country
+  // image, so the card never shows a bare gradient when better imagery exists.
+  if (input.countrySlug) {
+    const city = input.city ? getCityMedia(input.countrySlug, input.city) : null;
+    if (city) {
+      return {
+        url: city.url,
+        alt: city.alt,
+        caption: `${input.city}, city view`,
+        isFallback: true as const,
+      };
+    }
+
+    const country = getCountryMedia(input.countrySlug);
+    if (country) {
+      return {
+        url: country.url,
+        alt: country.alt,
+        caption: "Destination overview",
+        isFallback: true as const,
+      };
+    }
+  }
+
+  return null;
 }
 
 // ISO 3166-1 alpha-2 codes for flagcdn.com.

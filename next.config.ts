@@ -130,6 +130,40 @@ const nextConfig: NextConfig = {
         destination: "/free-mbbs-in-abroad-for-indian-students",
         permanent: true,
       },
+      // Duplicate catalogue records merged 2026-07-27 — see
+      // scripts/apply-media-enrichment.ts commit history / media-enrichment audit
+      // for background. Each pair covers the university page (with its 4 section
+      // suffixes) and the program page (with its 4 section suffixes).
+      {
+        source: "/university/seu-georgian-national-university:suffix(-student-life|-programs|-hostel|-faq)?",
+        destination: "/university/georgian-national-university-seu:suffix",
+        permanent: true,
+      },
+      {
+        source: "/mbbs-in-seu-georgian-national-university:suffix(-eligibility|-recognition|-admissions|-fees)?",
+        destination: "/mbbs-in-georgian-national-university-seu:suffix",
+        permanent: true,
+      },
+      {
+        source: "/university/east-european-university-eeu:suffix(-student-life|-programs|-hostel|-faq)?",
+        destination: "/university/east-european-university:suffix",
+        permanent: true,
+      },
+      {
+        source: "/mbbs-in-east-european-university-eeu:suffix(-eligibility|-recognition|-admissions|-fees)?",
+        destination: "/mbbs-in-east-european-university:suffix",
+        permanent: true,
+      },
+      {
+        source: "/university/asian-international-university:suffix(-student-life|-programs|-hostel|-faq)?",
+        destination: "/university/asian-medical-institute:suffix",
+        permanent: true,
+      },
+      {
+        source: "/mbbs-in-asian-international-university:suffix(-eligibility|-recognition|-admissions|-fees)?",
+        destination: "/mbbs-in-asian-medical-institute:suffix",
+        permanent: true,
+      },
     ];
   },
   async headers() {

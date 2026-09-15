@@ -400,6 +400,20 @@
       "when": 1784594100000,
       "tag": "0071_catalogue_gold_standard_slug_reconciliation",
       "breakpoints": true
+    },
+    {
+      "idx": 71,
+      "version": "7",
+      "when": 1784937600000,
+      "tag": "0072_resumable_content_migrations",
+      "breakpoints": true
+    },
+    {
+      "idx": 72,
+      "version": "7",
+      "when": 1789430400000,
+      "tag": "0073_program_offering_medium_note",
+      "breakpoints": true
     }
   ]
 }

@@ -1,5 +1,9 @@
 # Medical Universities — Autonomous Research & Auto-Publish Plan (Vietnam → Russia → Georgia)
 
+> **RETIRED HISTORICAL PLAN — DO NOT EXECUTE.** Direct agent publishing and the database-backed
+> draft commands below were superseded by the locked shared CSV queue and numbered offline content
+> migrations. Follow `docs/content-seeding-runbook.md` and `research/university-agent-briefing.md`.
+
 > **Status:** DRAFTING THE PLAN (no agent has run yet, no production writes yet)
 > **Last updated:** 2026-07-07
 > Living document. Edit decisions here; once everything is ✅ we turn it into the agent brief and run it.

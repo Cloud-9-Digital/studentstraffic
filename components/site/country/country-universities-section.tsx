@@ -5,7 +5,7 @@ import { ArrowRight, Building2, GraduationCap } from "lucide-react";
 import { SectionHeading, SectionIntro, SectionKicker } from "@/components/site/country/shared";
 import { Button } from "@/components/ui/button";
 import { getUniversityHref } from "@/lib/routes";
-import { getUniversityInitials } from "@/lib/university-media";
+import { getUniversityCoverImage, getUniversityInitials } from "@/lib/university-media";
 import { cn, formatCurrencyUsd } from "@/lib/utils";
 
 export type CountryUniversityCardData = {
@@ -49,6 +49,7 @@ export function CountryUniversitiesSection({
           <CountryUniversityCard
             key={university.slug}
             university={university}
+            countrySlug={countrySlug}
             flagCode={flagCode}
             imagePriority={index === 0}
           />
@@ -69,15 +70,18 @@ export function CountryUniversitiesSection({
 
 function CountryUniversityCard({
   university,
+  countrySlug,
   flagCode,
   imagePriority,
 }: {
   university: CountryUniversityCardData;
+  countrySlug: string;
   flagCode: string;
   imagePriority: boolean;
 }) {
   const href = getUniversityHref(university.slug);
   const initials = getUniversityInitials(university.name);
+  const coverImage = getUniversityCoverImage({ ...university, countrySlug });
 
   return (
     <div
@@ -91,10 +95,10 @@ function CountryUniversityCard({
         className="relative h-36 w-full shrink-0 overflow-hidden"
         style={{ background: "linear-gradient(135deg, #0f3d37 0%, #1a4a43 45%, #7c2610 100%)" }}
       >
-        {university.coverImageUrl ? (
+        {coverImage ? (
           <Image
-            src={university.coverImageUrl}
-            alt={`${university.name} campus`}
+            src={coverImage.url}
+            alt={coverImage.alt}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             priority={imagePriority}

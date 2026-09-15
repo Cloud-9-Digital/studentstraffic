@@ -58,6 +58,10 @@ export function UniversityAcademicsSection({
     : "Training & support";
   const PracticalPartnersIcon = isMedicalStream ? Hospital : Building2;
   const PracticalExposureIcon = isMedicalStream ? FlaskConical : Briefcase;
+  const primaryMedium = formatProgramMedium(
+    primaryProgram.offering.medium,
+    university.countrySlug,
+  );
 
   return (
     <div id="academics" className="deferred-render scroll-mt-24 space-y-5 py-10">
@@ -74,17 +78,24 @@ export function UniversityAcademicsSection({
             <span className="mx-1.5 text-border">—</span>
             {formatProgramDuration(primaryProgram.offering.durationYears)}
           </span>
-          <span className="text-sm text-muted-foreground">
-            <span className="font-medium text-foreground">Medium</span>
-            <span className="mx-1.5 text-border">—</span>
-            {formatProgramMedium(primaryProgram.offering.medium, university.countrySlug)}
-          </span>
+          {primaryMedium ? (
+            <span className="text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">Medium</span>
+              <span className="mx-1.5 text-border">—</span>
+              {primaryMedium}
+            </span>
+          ) : null}
           <span className="text-sm text-muted-foreground">
             <span className="font-medium text-foreground">Intake</span>
             <span className="mx-1.5 text-border">—</span>
             {primaryProgram.offering.intakeMonths.join(", ")}
           </span>
         </div>
+        {primaryProgram.offering.mediumNote ? (
+          <p className="mt-2 max-w-2xl text-xs leading-5 text-muted-foreground">
+            {primaryProgram.offering.mediumNote}
+          </p>
+        ) : null}
         {hasAnnualFeeSummary ? (
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl border border-border bg-muted/30 px-4 py-3">

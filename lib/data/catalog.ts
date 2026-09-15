@@ -5,7 +5,7 @@ import path from "node:path";
 
 import { cacheLife, cacheTag } from "next/cache";
 import { cache } from "react";
-import { and, asc, count, desc, eq, gte, ilike, inArray, lte, or, sql } from "drizzle-orm";
+import { and, asc, count, desc, eq, getTableColumns, gte, ilike, inArray, lte, or, sql } from "drizzle-orm";
 
 import { landingPages } from "@/lib/data/landing-pages";
 import type {
@@ -163,7 +163,7 @@ function mapProgramAdmissionsContent(
 }
 
 function mapProgramOfferingRow(
-  program: typeof programOfferingsTable.$inferSelect,
+  program: Omit<typeof programOfferingsTable.$inferSelect, "mediumNote">,
   universitySlug: string,
   courseSlug: string,
 ): ProgramOffering {
@@ -390,6 +390,11 @@ function logCatalogDatabaseFallback(error: unknown) {
   console.error("Failed to read catalog from database:", error);
 }
 
+// The snapshot feeds list/sitemap consumers; detail-only prose stays out of it.
+const { mediumNote: _snapshotOmitsMediumNote, ...programSnapshotColumns } =
+  getTableColumns(programOfferingsTable);
+void _snapshotOmitsMediumNote;
+
 async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
   const db = getDb();
 
@@ -409,7 +414,7 @@ async function readCatalogFromDatabase(): Promise<CatalogSnapshot | null> {
         db.select().from(coursesTable),
         universityRowsQuery,
         db
-          .select()
+          .select(programSnapshotColumns)
           .from(programOfferingsTable)
           .where(eq(programOfferingsTable.published, true)),
         db
@@ -883,6 +888,7 @@ export async function getUniversityMediaBySlugs(slugs: string[]) {
       slug: universitiesTable.slug,
       name: universitiesTable.name,
       coverImageUrl: universitiesTable.coverImageUrl,
+      city: universitiesTable.city,
     })
     .from(universitiesTable)
     .where(
@@ -1397,6 +1403,8 @@ type FinderProgramRow = {
   offeringIndicativeAnnualTuitionMaxUsd: number | null;
   offeringOfficialProgramUrl: string;
   offeringMedium: ProgramOffering["medium"];
+  /** Present only when selected with `includeMediumNote` (detail queries). */
+  offeringMediumNote?: string | null;
   offeringInstructionLanguages: ProgramOffering["instructionLanguages"];
   offeringPublished: boolean;
   offeringTeachingPhases: ProgramOffering["teachingPhases"];
@@ -1490,6 +1498,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
         row.offeringIndicativeAnnualTuitionMaxUsd ?? undefined,
       officialProgramUrl: row.offeringOfficialProgramUrl,
       medium: row.offeringMedium,
+      mediumNote: row.offeringMediumNote ?? undefined,
       published: row.offeringPublished,
       teachingPhases: row.offeringTeachingPhases,
       yearlyCostBreakdown: row.offeringYearlyCostBreakdown,
@@ -1511,6 +1520,7 @@ function mapFinderProgramRow(row: FinderProgramRow): FinderProgram {
 async function selectFinderProgramsFromDatabase(
   whereClause?: ReturnType<typeof and>,
   limit?: number,
+  options: { includeMediumNote?: boolean } = {},
 ): Promise<FinderProgram[] | null> {
   const db = getDb();
 
@@ -1584,6 +1594,9 @@ async function selectFinderProgramsFromDatabase(
         programOfferingsTable.indicativeAnnualTuitionMaxUsd,
       offeringOfficialProgramUrl: programOfferingsTable.officialProgramUrl,
       offeringMedium: programOfferingsTable.medium,
+      ...(options.includeMediumNote
+        ? { offeringMediumNote: programOfferingsTable.mediumNote }
+        : {}),
       offeringInstructionLanguages: programOfferingsTable.instructionLanguages,
       offeringPublished: programOfferingsTable.published,
       offeringTeachingPhases: programOfferingsTable.teachingPhases,
@@ -2238,6 +2251,8 @@ export async function getProgramsForUniversity(universitySlug: string) {
       eq(universitiesTable.published, true),
       eq(universitiesTable.slug, universitySlug),
     ),
+    undefined,
+    { includeMediumNote: true },
   );
 
   if (databasePrograms) {
@@ -2270,6 +2285,8 @@ export async function getProgramBySlug(programSlug: string) {
       eq(universitiesTable.published, true),
       eq(programOfferingsTable.slug, programSlug),
     ),
+    undefined,
+    { includeMediumNote: true },
   );
 
   const program = databasePrograms

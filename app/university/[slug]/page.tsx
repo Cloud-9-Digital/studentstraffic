@@ -385,6 +385,7 @@ export default async function UniversityDetailPage({
           <div className="deferred-render py-10">
             <UniversityCounsellingSection
               universityName={university.name}
+              universitySlug={university.slug}
               countrySlug={country.slug}
               courseSlug={primaryProgram?.course.slug}
             />

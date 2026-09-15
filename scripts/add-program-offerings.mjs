@@ -3,13 +3,31 @@
  * Input must use an active canonical course slug and retain the university's
  * exact official programme title.
  *
- * Run: node scripts/add-program-offerings.mjs --file <programmes.json>
+ * DEPRECATED legacy direct writer. Prefer content migrations
+ * (`npm run content:reserve` then `npm run content:migrate -- --apply`).
+ *
+ * Every entry must carry `medium` (short language label, no placeholders),
+ * `instructionLanguages` (non-empty codes from lib/catalogue-facets.ts) and may
+ * carry `mediumNote`. Rules are shared with the content-migration schema via
+ * scripts/lib/programme-medium.ts; the whole file is rejected before any write
+ * if any entry fails.
+ *
+ * Run: npx tsx scripts/add-program-offerings.mjs --file <programmes.json>
+ * (tsx is required: the shared TypeScript guard uses the "@/" path alias, so
+ * plain `node` fails at import time before touching the database.)
  */
 import "./lib/load-script-env.mjs";
 
 import { readFileSync } from "node:fs";
 import { neonConfig, Pool } from "@neondatabase/serverless";
 import { WebSocket } from "ws";
+
+// tsx loads the TS module as CommonJS here (package.json has no "type": "module"), so named
+// ESM imports are not statically visible; read them off the namespace/default export instead.
+import * as programmeMediumModule from "./lib/programme-medium.ts";
+
+const { assertOfferingsLanguageFields, warnLegacyOfferingWriter } =
+  programmeMediumModule.default ?? programmeMediumModule;
 neonConfig.webSocketConstructor = WebSocket;
 
 function parseArgs(argv) {
@@ -32,23 +50,47 @@ function createSlug(value) {
     .replace(/^-+|-+$/g, "");
 }
 
-function validateEntry(entry, index) {
-  const issues = [];
-  if (!entry.universitySlug) issues.push("missing universitySlug");
-  if (!entry.courseSlug) issues.push("missing courseSlug");
-  if (!entry.title) issues.push("missing official programme title");
-  if (!entry.medium) issues.push("missing medium");
-  if (typeof entry.durationYears !== "number" || entry.durationYears <= 0) {
-    issues.push("missing/invalid durationYears");
+function entryLabel(entry, index) {
+  const name = entry?.slug ?? entry?.title ?? "untitled";
+  return `Entry ${index + 1} (${name} @ ${entry?.universitySlug ?? "unknown university"})`;
+}
+
+/**
+ * Validates every entry before any database connection. Throws one aggregated
+ * error so a partially valid file never produces partial writes. Returns the
+ * normalized teaching-language fields aligned with `entries`.
+ */
+function validateEntries(entries) {
+  const failures = [];
+  for (const [index, entry] of entries.entries()) {
+    const issues = [];
+    if (!entry.universitySlug) issues.push("missing universitySlug");
+    if (!entry.courseSlug) issues.push("missing courseSlug");
+    if (!entry.title) issues.push("missing official programme title");
+    if (typeof entry.durationYears !== "number" || entry.durationYears <= 0) {
+      issues.push("missing/invalid durationYears");
+    }
+    if (!entry.officialProgramUrl) issues.push("missing officialProgramUrl");
+    if (!Array.isArray(entry.sourceUrls) || entry.sourceUrls.length < 2) {
+      issues.push("needs at least 2 sourceUrls");
+    }
+    if (issues.length > 0) failures.push(`${entryLabel(entry, index)} is invalid: ${issues.join(", ")}`);
   }
-  if (!entry.officialProgramUrl) issues.push("missing officialProgramUrl");
-  if (!Array.isArray(entry.sourceUrls) || entry.sourceUrls.length < 2) {
-    issues.push("needs at least 2 sourceUrls");
+  if (failures.length > 0) {
+    throw new Error(`add-program-offerings: nothing was written.\n  ${failures.join("\n  ")}`);
   }
 
-  if (issues.length > 0) {
-    throw new Error(`Entry ${index + 1} is invalid: ${issues.join(", ")}`);
-  }
+  return assertOfferingsLanguageFields(
+    entries.map((entry, index) => ({
+      label: entryLabel(entry, index),
+      input: {
+        medium: entry.medium,
+        mediumNote: entry.mediumNote,
+        instructionLanguages: entry.instructionLanguages,
+      },
+    })),
+    "add-program-offerings",
+  );
 }
 
 async function revalidateCatalogCache({
@@ -102,9 +144,11 @@ async function revalidateCatalogCache({
 }
 
 async function main() {
+  warnLegacyOfferingWriter("scripts/add-program-offerings.mjs");
+
   const { file } = parseArgs(process.argv.slice(2));
   if (!file) {
-    throw new Error("Usage: node scripts/add-program-offerings.mjs --file <programmes.json>");
+    throw new Error("Usage: npx tsx scripts/add-program-offerings.mjs --file <programmes.json>");
   }
 
   const entries = JSON.parse(readFileSync(file, "utf8"));
@@ -112,7 +156,7 @@ async function main() {
     throw new Error("Input file must contain a non-empty JSON array.");
   }
 
-  entries.forEach(validateEntry);
+  const languageFields = validateEntries(entries);
 
   const pool = new Pool({ connectionString: process.env.DATABASE_URL });
   const client = await pool.connect();
@@ -177,6 +221,7 @@ async function main() {
           throw new Error(`Entry ${index + 1}: slug '${slug}' belongs to another university`);
         }
 
+        const { medium, mediumNote, instructionLanguages } = languageFields[index];
         const values = [
           universityId,
           courseId,
@@ -190,7 +235,7 @@ async function main() {
           entry.officialAnnualTuitionAmount ?? null,
           entry.officialTotalTuitionAmount ?? null,
           entry.officialProgramUrl,
-          entry.medium,
+          medium,
           entry.intakeMonths ?? [],
           entry.feeVerifiedAt ?? null,
           entry.feeNotes ?? null,
@@ -198,9 +243,12 @@ async function main() {
           entry.audienceEligibility ?? null,
           entry.admissionsContent ?? {},
           entry.professionalExamSupport ?? [],
+          instructionLanguages,
+          mediumNote,
         ];
 
         if (existing) {
+          // medium_note is only overwritten when the entry provides one.
           await client.query(
             `UPDATE program_offerings SET
               university_id=$1, course_id=$2, slug=$3, title=$4, duration_years=$5,
@@ -209,8 +257,9 @@ async function main() {
               official_total_tuition_amount=$11, official_program_url=$12, medium=$13,
               intake_months=$14, fee_verified_at=$15, fee_notes=$16, source_urls=$17,
               audience_eligibility=$18, admissions_content=$19, professional_exam_support=$20,
+              instruction_languages=$21::text[], medium_note=COALESCE($22, medium_note),
               published=true, updated_at=NOW()
-            WHERE id=$21`,
+            WHERE id=$23`,
             [...values, existing.id],
           );
         } else {
@@ -220,8 +269,9 @@ async function main() {
               total_tuition_usd, living_usd, official_fee_currency,
               official_annual_tuition_amount, official_total_tuition_amount,
               official_program_url, medium, intake_months, fee_verified_at, fee_notes,
-              source_urls, audience_eligibility, admissions_content, professional_exam_support, published
-            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,true)
+              source_urls, audience_eligibility, admissions_content, professional_exam_support,
+              instruction_languages, medium_note, published
+            ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21::text[],$22,true)
             RETURNING id`,
             values,
           );

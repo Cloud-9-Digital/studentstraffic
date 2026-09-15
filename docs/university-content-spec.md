@@ -143,7 +143,9 @@ and find the *actual* mechanism, not a hedge.
 ### `faq` — target 10-13 questions, not 4-6
 Cover these categories at minimum (skip only if genuinely inapplicable to the field/country):
 1. Public or private institution?
-2. Language/medium — including any transition (e.g. English-then-local-language structures)
+2. Language/medium — including any transition (e.g. English-then-local-language structures). The
+   programme `medium` field itself stays a short language label (`English / Russian`); the
+   transition detail belongs in `mediumNote`/`teachingPhases` and this FAQ answer.
 3. Direct admission eligibility straight after qualifying exam, or bridge requirements
 4. Total cost breakdown (tuition + fees + living, not just headline tuition)
 5. How to apply — exact portal/route, not "apply through the university"

@@ -225,7 +225,10 @@ export type ProgramOffering = {
     sourceUrl: string;
   };
   admissionsContent?: ProgramAdmissionsContent;
+  /** Short display label: language names only, e.g. "English / Russian". */
   medium: string;
+  /** Source-backed delivery nuance. Loaded only by university/programme detail queries. */
+  mediumNote?: string;
   /** Controlled teaching-language facets. Never infer these from prose at read time. */
   instructionLanguages: import("@/lib/catalogue-facets").TeachingLanguageCode[];
   published: boolean;

@@ -43,7 +43,9 @@ function ProgramOfferingsTable({
         Open a programme profile for eligibility, tuition, curriculum and application planning.
       </p>
       <div className="grid gap-4 md:grid-cols-2">
-        {programs.map((program) => (
+        {programs.map((program) => {
+          const medium = formatProgramMedium(program.offering.medium, program.country.slug);
+          return (
           <Link
             key={program.offering.slug}
             href={getUniversityProgramHref(program.offering.slug)}
@@ -64,7 +66,7 @@ function ProgramOfferingsTable({
                 value={formatProgramAnnualFee(program.offering, "Fee plan on request")}
               />
               <ProgramFact label="Duration" value={formatProgramDuration(program.offering.durationYears)} />
-              <ProgramFact label="Medium" value={formatProgramMedium(program.offering.medium, program.country.slug)} />
+              {medium ? <ProgramFact label="Medium" value={medium} /> : null}
               <ProgramFact label="Intake" value={program.offering.intakeMonths.join(", ") || "Guidance available"} />
               {hasRenderableProgramLivingFee(program.offering) ? (
                 <div className="col-span-2 rounded-xl bg-muted/40 px-3 py-2.5">
@@ -73,7 +75,8 @@ function ProgramOfferingsTable({
               ) : null}
             </dl>
           </Link>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

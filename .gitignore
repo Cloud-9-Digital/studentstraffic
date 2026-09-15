@@ -88,3 +88,7 @@ mobile/app/.idea/
 
 # Playwright MCP debug artifacts
 .playwright-mcp/
+
+# Short-lived cross-agent queue/sequence locks
+/research/university-publishing-ledger.csv.lock
+/content-migrations/.sequence.lock

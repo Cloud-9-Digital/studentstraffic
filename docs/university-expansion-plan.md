@@ -93,12 +93,10 @@ opinion. Mitigate with periodic spot-audits (re-check ~1 in 10 published univers
 sources) rather than double-verifying everything — cheaper and catches systemic problems without
 doubling the cost of every run.
 
-**For program-only additions to already-published universities:** don't run the full 2-stage
-university pipeline. Use `scripts/add-program-offerings.mjs` directly (see
-`docs/university-pipeline-architecture.md` §1b) — one agent researches program facts for a batch and
-writes them straight to a JSON file for that script to insert. No discover/verify-as-separate-agent
-needed since the university itself is already vetted; only the program facts need 2+ source
-verification (built into the script's validation).
+**For program-only additions to already-published universities:** don't run the full discovery
+pipeline. One agent researches the programme facts, packages them in a numbered content migration
+and stops at `validated`. The controlled integrator applies the migration; the historical direct
+`add-program-offerings.mjs` path is not permitted from a research session.
 
 ## Content-migration operating model (2026-07-19)
 
@@ -117,9 +115,26 @@ database. Corrections use a new numbered migration; use `scripts/unpublish-unive
 <slug>` only when unpublishing is the intended remedy. This replaces earlier standing authorization
 for agents to publish direct to the database.
 
+### Mixed Codex/Claude execution (2026-07-25)
+
+Codex and Claude may research separate 3-6 university batches concurrently in the same workspace.
+They share `research/university-publishing-ledger.csv`, but all ownership transitions go through the
+locked `queue:*` commands. Each agent edits only its assigned payload files, performs its own
+source-backed research without nested agents and stops at `validated`.
+
+Reserve final migration numbers through `content:reserve`; never infer the next number manually.
+Deterministic offline validation replaces a routine second-model review. Cross-audit approximately
+one in ten universities and every unfamiliar new-country batch. One user-controlled integrator runs
+the pending migrations together so research does not keep Neon awake.
+
 For programme-only additions to already-published universities, skip net-new discovery but still
 research, validate and package the entries as a content migration. Do not run
-`add-program-offerings.mjs` directly from a research session.
+`add-program-offerings.mjs` directly from a research session. If the user does run the legacy
+importer (via `npx tsx`), every entry must carry a verified `medium` (no `Not confirmed` / `TBC` /
+`Unknown` / `N/A` placeholders) and a non-empty `instructionLanguages` array from
+`lib/catalogue-facets.ts`; otherwise the whole file is rejected before any write. The same rules
+apply to `publish-university-draft.ts` and to content-migration payloads (see
+`docs/university-pipeline-architecture.md` §1b).
 
 ## Country/scope priority queue
 
@@ -145,7 +160,8 @@ Italy and other destinations, but do not let repeated same-country batches crowd
 
 1. **Fill existing gaps (in progress / next up):** 6 published universities currently have zero
    published programs (live database audit, 2026-07-11) — cheapest possible win, no new discovery
-   needed, uses `add-program-offerings.mjs`.
+   needed; package as a content migration (the legacy `add-program-offerings.mjs` now requires
+   `medium` + `instructionLanguages` on every entry and is deprecated).
 2. **Fresh discovery pass on Russia** — largest existing footprint (85 universities), likely still
    has undiscovered medical schools.
 3. **New high-demand countries not yet covered**, prioritized by actual Indian MBBS-aspirant demand:

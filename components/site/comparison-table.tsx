@@ -73,7 +73,7 @@ function buildRows(programs: FinderProgram[]): Row[] {
     {
       label: "Teaching medium",
       values: programs.map((p) =>
-        formatProgramMedium(p.offering.medium, p.country.slug),
+        formatProgramMedium(p.offering.medium, p.country.slug) ?? "—",
       ),
     },
     {

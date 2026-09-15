@@ -1,5 +1,6 @@
 import type { FinderCardProgram, ProgramOffering, University } from "@/lib/data/types";
 import type { ApplicationRow } from "@/lib/db/schema";
+import { formatProgramMedium } from "@/lib/utils";
 
 export function mapFinderCardProgram(program: FinderCardProgram) {
   return {
@@ -65,7 +66,8 @@ export function mapUniversityDetail(
           totalTuitionUsd: primaryOffering.totalTuitionUsd,
           livingUsd: primaryOffering.livingUsd,
           officialProgramUrl: primaryOffering.officialProgramUrl,
-          medium: primaryOffering.medium,
+          // null for placeholder mediums; clients must hide the field, not guess.
+          medium: formatProgramMedium(primaryOffering.medium, university.countrySlug),
           intakeMonths: primaryOffering.intakeMonths,
           yearlyCostBreakdown: primaryOffering.yearlyCostBreakdown,
           feeNotes: primaryOffering.feeNotes,
@@ -81,7 +83,7 @@ export function mapUniversityDetail(
       totalTuitionUsd: offering.totalTuitionUsd,
       livingUsd: offering.livingUsd,
       officialProgramUrl: offering.officialProgramUrl,
-      medium: offering.medium,
+      medium: formatProgramMedium(offering.medium, university.countrySlug),
       intakeMonths: offering.intakeMonths,
       yearlyCostBreakdown: offering.yearlyCostBreakdown,
       feeNotes: offering.feeNotes,

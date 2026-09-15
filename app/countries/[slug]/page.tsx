@@ -228,9 +228,9 @@ export default async function CountryPage({
 
   const uniqueMediums = [
     ...new Set(
-      programs.map((p) =>
-        formatProgramMedium(p.offering.medium, country.slug),
-      ),
+      programs
+        .map((p) => formatProgramMedium(p.offering.medium, country.slug))
+        .filter((medium): medium is string => medium !== null),
     ),
   ];
   const intakeMonths = [...new Set(programs.flatMap((p) => p.offering.intakeMonths))];

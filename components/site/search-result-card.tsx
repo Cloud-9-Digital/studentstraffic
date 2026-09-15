@@ -2,7 +2,11 @@ import Link from "next/link";
 import { ArrowUpRight, MapPin, DollarSign, Calendar } from "lucide-react";
 
 import type { SearchDocumentType, SearchResult } from "@/lib/data/types";
-import { formatCurrencyUsd, hasPublishedUsdAmount } from "@/lib/utils";
+import {
+  formatCurrencyUsd,
+  hasPublishedUsdAmount,
+  isPlaceholderProgramMedium,
+} from "@/lib/utils";
 
 function getActionLabel(documentType: SearchDocumentType) {
   switch (documentType) {
@@ -61,7 +65,8 @@ function getMetaItems(result: SearchResult) {
     items.push(`${formatCurrencyUsd(result.annualTuitionUsd)} / yr`);
   }
 
-  if (result.medium) {
+  // Stored documents may predate the build-time placeholder guard.
+  if (result.medium && !isPlaceholderProgramMedium(result.medium)) {
     items.push(result.medium);
   }
 
@@ -83,7 +88,9 @@ function MetaBadge({ icon: Icon, children }: { icon: typeof MapPin; children: Re
 
 export function SearchResultCard({ result }: { result: SearchResult }) {
   const metaItems = getMetaItems(result);
-  const highlights = result.highlights.filter(Boolean).slice(0, 2);
+  const highlights = result.highlights
+    .filter((highlight) => highlight && !isPlaceholderProgramMedium(highlight))
+    .slice(0, 2);
 
   const hasFee = hasPublishedUsdAmount(result.annualTuitionUsd);
   const hasLocation = result.city || result.countrySlug;

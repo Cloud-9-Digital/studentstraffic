@@ -249,7 +249,7 @@ export function CountryFeesPage({
                           : "Check yearly structure"}
                       </td>
                       <td className="px-4 py-4 text-sm text-muted-foreground">
-                        {formatProgramMedium(program.offering.medium, countrySlug)}
+                        {formatProgramMedium(program.offering.medium, countrySlug) ?? "—"}
                       </td>
                     </tr>
                   ))}

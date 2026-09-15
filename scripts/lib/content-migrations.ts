@@ -5,7 +5,43 @@ import { basename, join, relative, resolve, sep } from "node:path";
 
 import { z } from "zod";
 
-import { catalogPayloadSchema, type CatalogPayload } from "./catalog-payload-schema";
+import {
+  catalogPayloadSchema,
+  legacyFreeTextMediumCatalogPayloadSchema,
+  type CatalogPayload,
+} from "./catalog-payload-schema";
+
+/**
+ * FROZEN grandfather list — do not add to it.
+ *
+ * These bundles were applied (and checksum-locked) before `programmeMediumSchema` required `medium`
+ * to be a short language label. Their payloads contain sentence-style mediums and can never be
+ * edited, so they are parsed with the old free-text rule (`z.string().min(2)`); every other rule is
+ * unchanged and publish still stores their `medium` verbatim. Built from a full scan of
+ * content-migrations/ (2026-09-15): exactly the bundles that failed only the strict medium rule.
+ * Every other bundle, including reserved folders that receive a payload later, must use a language
+ * label in `medium` and put delivery detail in `mediumNote`.
+ */
+export const LEGACY_FREE_TEXT_MEDIUM_MIGRATION_IDS: ReadonlySet<string> = new Set([
+  "0003-vietnam-medicine-gold-standard",
+  "0005-uzbekistan-tuit-2026",
+  "0006-germany-italy-university-batch",
+  "0007-uk-lsbu-computer-science",
+  "0009-uk-gcu-computer-science",
+  "0011-uk-robert-gordon-university-2026",
+  "0015-georgia-medical-universities",
+  "0051-macau-must-mbbs",
+  "0056-estonia-university-of-tartu-medicine",
+  "0057-bvi-phsu-md",
+  "0058-universidad-catolica-del-uruguay-medicine",
+  "0059-croatia-rijeka-medicine",
+  "0060-portugal-university-of-lisbon-medicine",
+  "0063-slovenia-maribor-general-medicine",
+  "0065-botswana-university-of-botswana-mbbs",
+  "0067-namibia-unam-mbchb",
+  "0091-india-manipal-academy-of-higher-education",
+  "0095-india-srm-institute-of-science-and-technology",
+]);
 
 const migrationIdPattern = /^\d{4}-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
@@ -19,6 +55,14 @@ const manifestSchema = z
   })
   .strict();
 
+export type ExpiredEvidence = {
+  publicField: string;
+  universitySlug?: string;
+  programmeSlug?: string;
+  countrySlug?: string;
+  reviewBy: string;
+};
+
 export type ContentMigration = {
   id: string;
   description: string;
@@ -27,6 +71,12 @@ export type ContentMigration = {
   payloadPath: string;
   checksum: string;
   payload: CatalogPayload;
+  /**
+   * Evidence whose review-by date has passed. Expiry is not a structural framework failure: it is
+   * reported as a warning offline and for applied (checksum-locked) bundles, and becomes a hard
+   * error only for pending bundles at check/apply time — see `classifyReviewByExpiry`.
+   */
+  expiredEvidence: ExpiredEvidence[];
 };
 
 const bannedPublicCopy = [
@@ -39,14 +89,16 @@ const bannedPublicCopy = [
   /affordable option/i,
 ];
 
-function assertFutureReviewDate(value: string, context: string) {
+function isExpiredReviewDate(value: string, context: string, now: Date) {
   const reviewBy = new Date(`${value}T00:00:00.000Z`);
-  if (Number.isNaN(reviewBy.getTime()) || reviewBy.getTime() < Date.now()) {
-    throw new Error(`${context} has an expired review-by date (${value}).`);
+  if (Number.isNaN(reviewBy.getTime())) {
+    throw new Error(`${context} has an invalid review-by date (${value}).`);
   }
+  return reviewBy.getTime() < now.getTime();
 }
 
-function assertContentFramework(payload: CatalogPayload, migrationId: string) {
+function assertContentFramework(payload: CatalogPayload, migrationId: string, now: Date) {
+  const expiredEvidence: ExpiredEvidence[] = [];
   for (const course of payload.courses) {
     const normalizeFocus = (value: string) => value.toLowerCase().replace(/&/g, "and");
     const focusKeywords = [course.shortName, course.name].map(normalizeFocus);
@@ -66,7 +118,15 @@ function assertContentFramework(payload: CatalogPayload, migrationId: string) {
     if (evidence.sourceGrade === "C") {
       throw new Error(`${migrationId} includes Grade C evidence for '${evidence.publicField}'. Grade C sources are discovery-only.`);
     }
-    assertFutureReviewDate(evidence.reviewBy, `${migrationId} evidence for '${evidence.publicField}'`);
+    if (isExpiredReviewDate(evidence.reviewBy, `${migrationId} evidence for '${evidence.publicField}'`, now)) {
+      expiredEvidence.push({
+        publicField: evidence.publicField,
+        universitySlug: evidence.universitySlug,
+        programmeSlug: evidence.programmeSlug,
+        countrySlug: evidence.countrySlug,
+        reviewBy: evidence.reviewBy,
+      });
+    }
   }
 
   for (const university of payload.universities) {
@@ -133,9 +193,11 @@ function assertContentFramework(payload: CatalogPayload, migrationId: string) {
       }
     }
   }
+
+  return expiredEvidence;
 }
 
-function compareMigrationIds(left: string, right: string) {
+export function compareMigrationIds(left: string, right: string) {
   const leftNumber = Number(left.slice(0, 4));
   const rightNumber = Number(right.slice(0, 4));
   return leftNumber - rightNumber || left.localeCompare(right);
@@ -154,7 +216,11 @@ export function contentMigrationChecksum(manifest: string, payload: string) {
     .digest("hex");
 }
 
-export async function readContentMigrations(rootDirectory = "content-migrations") {
+export async function readContentMigrations(
+  rootDirectory = "content-migrations",
+  options: { onlyId?: string; now?: Date } = {},
+) {
+  const now = options.now ?? new Date();
   const root = resolve(rootDirectory);
   let entries: Dirent[];
 
@@ -170,7 +236,12 @@ export async function readContentMigrations(rootDirectory = "content-migrations"
   const directories = entries
     .filter((entry) => entry.isDirectory() && migrationIdPattern.test(entry.name))
     .map((entry) => entry.name)
+    .filter((directory) => !options.onlyId || directory === options.onlyId)
     .sort(compareMigrationIds);
+
+  if (options.onlyId && directories.length === 0) {
+    throw new Error(`Content migration '${options.onlyId}' does not exist.`);
+  }
 
   const numericIds = new Set<number>();
   const migrations: ContentMigration[] = [];
@@ -198,9 +269,24 @@ export async function readContentMigrations(rootDirectory = "content-migrations"
       throw new Error(`Content migration ${directoryName} has an invalid payload path.`);
     }
 
-    const payloadRaw = await readFile(payloadPath, "utf8");
-    const payload = catalogPayloadSchema.parse(JSON.parse(payloadRaw));
-    assertContentFramework(payload, manifest.id);
+    let payloadRaw: string;
+    try {
+      payloadRaw = await readFile(payloadPath, "utf8");
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+        // A numbered directory may be reserved while research is in progress.
+        // Keep the reservation visible on disk, but do not treat it as an
+        // executable migration until its payload has been created.
+        console.warn(`Skipping reserved content migration ${manifest.id}: payload is not present yet.`);
+        continue;
+      }
+      throw error;
+    }
+    const payloadSchema = LEGACY_FREE_TEXT_MEDIUM_MIGRATION_IDS.has(manifest.id)
+      ? legacyFreeTextMediumCatalogPayloadSchema
+      : catalogPayloadSchema;
+    const payload = payloadSchema.parse(JSON.parse(payloadRaw));
+    const expiredEvidence = assertContentFramework(payload, manifest.id, now);
     migrations.push({
       id: manifest.id,
       description: manifest.description,
@@ -209,8 +295,119 @@ export async function readContentMigrations(rootDirectory = "content-migrations"
       payloadPath,
       checksum: contentMigrationChecksum(manifestRaw, payloadRaw),
       payload,
+      expiredEvidence,
     });
   }
 
   return migrations;
+}
+
+/**
+ * Maps each university slug to the NEWEST local bundle (by sequence) whose payload contains it.
+ * Reads every numbered bundle's payload as raw JSON, independent of `--id` scoping, so a scoped
+ * validation still knows whether a later correction bundle supersedes the bundle being checked.
+ * Reservations without a payload and unparseable payloads are skipped here; the unscoped
+ * `readContentMigrations` run is what rejects malformed bundles.
+ */
+export async function readLatestMigrationIdByUniversitySlug(rootDirectory = "content-migrations") {
+  const root = resolve(rootDirectory);
+  const latest = new Map<string, string>();
+  let entries: Dirent[];
+  try {
+    entries = await readdir(root, { withFileTypes: true });
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return latest;
+    throw error;
+  }
+
+  const directories = entries
+    .filter((entry) => entry.isDirectory() && migrationIdPattern.test(entry.name))
+    .map((entry) => entry.name)
+    .sort(compareMigrationIds);
+
+  for (const directoryName of directories) {
+    try {
+      const manifest = JSON.parse(await readFile(join(root, directoryName, "manifest.json"), "utf8")) as {
+        payload?: unknown;
+      };
+      if (typeof manifest.payload !== "string") continue;
+      const payloadPath = resolve(root, directoryName, manifest.payload);
+      if (!isChildPath(join(root, directoryName), payloadPath)) continue;
+      const payload = JSON.parse(await readFile(payloadPath, "utf8")) as {
+        universities?: Array<{ slug?: unknown }>;
+      };
+      for (const university of payload.universities ?? []) {
+        // Directories are visited in ascending sequence, so the last write wins as the newest.
+        if (typeof university.slug === "string") latest.set(university.slug, directoryName);
+      }
+    } catch {
+      continue;
+    }
+  }
+  return latest;
+}
+
+/** True when every university in the bundle is also covered by a later local bundle. */
+export function isFullySupersededMigration(
+  migration: Pick<ContentMigration, "id" | "payload">,
+  latestMigrationIdBySlug: ReadonlyMap<string, string>,
+) {
+  return (
+    migration.payload.universities.length > 0 &&
+    migration.payload.universities.every((university) => {
+      const latest = latestMigrationIdBySlug.get(university.slug);
+      return latest !== undefined && compareMigrationIds(latest, migration.id) > 0;
+    })
+  );
+}
+
+function describeExpiredEvidence(migrationId: string, evidence: ExpiredEvidence) {
+  const target = evidence.programmeSlug ?? evidence.universitySlug ?? evidence.countrySlug ?? "payload";
+  return `${migrationId} evidence for '${evidence.publicField}' (${target}) has an expired review-by date (${evidence.reviewBy}).`;
+}
+
+/**
+ * Review-by expiry semantics.
+ *
+ * - Offline (`appliedIds` omitted): every expired date is a warning. Validation never fails on the
+ *   passage of time alone, because applied bundles are checksum-locked and cannot be refreshed.
+ * - Database-connected check/apply (`appliedIds` given): expired evidence in an APPLIED bundle is a
+ *   warning (correct it with a later superseding bundle). Expired evidence in a PENDING bundle is an
+ *   error, unless every university in that bundle is superseded by a later bundle that is also
+ *   pending — that later bundle overwrites the same universities in the same run.
+ */
+export function classifyReviewByExpiry(
+  migrations: ReadonlyArray<Pick<ContentMigration, "id" | "payload" | "expiredEvidence">>,
+  options: {
+    appliedIds?: ReadonlySet<string>;
+    latestMigrationIdBySlug?: ReadonlyMap<string, string>;
+  } = {},
+) {
+  const warnings: string[] = [];
+  const errors: string[] = [];
+  const { appliedIds, latestMigrationIdBySlug } = options;
+
+  for (const migration of migrations) {
+    if (migration.expiredEvidence.length === 0) continue;
+    const messages = migration.expiredEvidence.map((evidence) => describeExpiredEvidence(migration.id, evidence));
+
+    if (!appliedIds || appliedIds.has(migration.id)) {
+      warnings.push(...messages);
+      continue;
+    }
+
+    const supersededInSameRun =
+      latestMigrationIdBySlug !== undefined &&
+      isFullySupersededMigration(migration, latestMigrationIdBySlug) &&
+      migration.payload.universities.every(
+        (university) => !appliedIds.has(latestMigrationIdBySlug.get(university.slug)!),
+      );
+    if (supersededInSameRun) {
+      warnings.push(...messages.map((message) => `${message} Pending bundle is superseded by a later pending bundle.`));
+    } else {
+      errors.push(...messages.map((message) => `${message} Pending bundles cannot be applied with expired evidence; re-verify in a new numbered bundle.`));
+    }
+  }
+
+  return { warnings, errors };
 }

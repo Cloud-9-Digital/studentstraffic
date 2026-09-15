@@ -27,7 +27,14 @@
     "cache:revalidate:blog": "node scripts/revalidate-blog-cache.mjs",
     "audit:programme-taxonomy": "tsx scripts/audit-programme-taxonomy.ts",
     "content:validate": "tsx scripts/migrate-content.ts --validate",
-    "content:migrate": "tsx scripts/migrate-content.ts"
+    "content:migrate": "tsx scripts/migrate-content.ts",
+    "content:reserve": "tsx scripts/reserve-content-migration.ts",
+    "queue:claim": "tsx scripts/university-queue.ts claim",
+    "queue:update": "tsx scripts/university-queue.ts update",
+    "queue:release": "tsx scripts/university-queue.ts release",
+    "queue:status": "tsx scripts/university-queue.ts status",
+    "queue:validate": "tsx scripts/university-queue.ts validate",
+    "queue:normalize": "tsx scripts/university-queue.ts validate --fix"
   },
   "dependencies": {
     "@auth/core": "^0.41.2",

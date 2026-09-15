@@ -448,9 +448,9 @@ export function UniversityEligibilitySection({
               Medium
             </p>
             <p className="text-sm font-bold text-foreground">
-              {primaryProgram
-                ? formatProgramMedium(primaryProgram.offering.medium, primaryProgram.country.slug)
-                : "—"}
+              {(primaryProgram &&
+                formatProgramMedium(primaryProgram.offering.medium, primaryProgram.country.slug)) ||
+                "—"}
             </p>
           </div>
           <div className="flex flex-col gap-1 bg-card px-4 py-4">

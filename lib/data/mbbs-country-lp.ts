@@ -1,6 +1,7 @@
 import "server-only";
 
 import type { FinderProgram } from "@/lib/data/types";
+import { formatProgramMedium } from "@/lib/utils";
 import type {
   CountryLpConfig,
   CountryLpProgram,
@@ -29,7 +30,8 @@ function toCountryLpProgram(p: FinderProgram): CountryLpProgram {
     annualTuitionUsd: p.offering.annualTuitionUsd,
     totalTuitionUsd: p.offering.totalTuitionUsd,
     livingUsd: p.offering.livingUsd,
-    medium: p.offering.medium,
+    // Eligible programmes are filtered to English-medium, so this is never a placeholder.
+    medium: formatProgramMedium(p.offering.medium, p.country.slug) ?? "",
   };
 }
 

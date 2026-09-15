@@ -6,6 +6,7 @@ import {
   formatProgramAnnualFee,
   formatProgramDuration,
   formatProgramLivingFee,
+  formatProgramMedium,
   formatUsdAmountOrTbd,
   hasPublishedUsdAmount,
   hasRenderableProgramAnnualFee,
@@ -87,6 +88,7 @@ function ProgramFeeCard({
   const hasLivingFee = hasRenderableProgramLivingFee(offering);
   const totalCostUsd =
     hasPublishedUsdAmount(offering.totalTuitionUsd) ? offering.totalTuitionUsd : null;
+  const medium = formatProgramMedium(offering.medium, program.country.slug);
 
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-card">
@@ -99,9 +101,14 @@ function ProgramFeeCard({
             </p>
             <p className="mt-0.5 text-sm text-muted-foreground">
               {formatProgramDuration(offering.durationYears)} ·{" "}
-              {offering.medium} medium ·{" "}
+              {medium ? <>{medium} medium ·{" "}</> : null}
               {offering.intakeMonths.join(", ")} intake
             </p>
+            {offering.mediumNote ? (
+              <p className="mt-1 max-w-2xl text-xs leading-5 text-muted-foreground">
+                {offering.mediumNote}
+              </p>
+            ) : null}
           </div>
         </div>
       </div>

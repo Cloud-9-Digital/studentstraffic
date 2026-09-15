@@ -12,7 +12,7 @@ export type University = {
   offeringSlug?: string;
   tuitionUsd: number;
   duration?: string;
-  medium?: string;
+  medium?: string | null;
   summary?: string;
   fit?: string;
   isShortlisted?: boolean;
@@ -47,7 +47,8 @@ export type Offering = {
   totalTuitionUsd: number;
   livingUsd: number;
   officialProgramUrl?: string;
-  medium: string;
+  /** null when the medium is not verified; hide the field rather than guess. */
+  medium?: string | null;
   intakeMonths: string[];
   yearlyCostBreakdown: YearlyCost[];
   feeNotes?: string;

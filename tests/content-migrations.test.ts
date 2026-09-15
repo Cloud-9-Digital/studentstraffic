@@ -5,8 +5,11 @@ import { join } from "node:path";
 import test from "node:test";
 
 import {
+  classifyReviewByExpiry,
   contentMigrationChecksum,
+  LEGACY_FREE_TEXT_MEDIUM_MIGRATION_IDS,
   readContentMigrations,
+  readLatestMigrationIdByUniversitySlug,
 } from "../scripts/lib/content-migrations";
 
 const courseSummary = "Verified MBBS catalogue information for students. ".repeat(5);
@@ -80,6 +83,17 @@ const validPayload = {
           canonicalCourseSlug: "mbbs",
           officialTitle: "Bachelor of Medicine, Bachelor of Surgery",
           durationYears: 6,
+          fee: {
+            status: "confirmed",
+            academicYear: "2026-27",
+            officialFeeCurrency: "USD",
+            officialAnnualTuitionAmount: 10000,
+            officialTotalTuitionAmount: 60000,
+            annualTuitionUsd: 10000,
+            totalTuitionUsd: 60000,
+            verifiedAt: "2026-07-19",
+            notes: "The official fixture fee is confirmed for the stated academic year.",
+          },
           officialFeeCurrency: "USD",
           officialAnnualTuitionAmount: 10000,
           officialTotalTuitionAmount: 60000,
@@ -109,6 +123,19 @@ const validPayload = {
       ],
     },
   ],
+  evidence: ["eligibility", "admissions", "intake", "fee"].map((publicField) => ({
+    entity: "programme",
+    universitySlug: "test-university",
+    programmeSlug: "test-university-mbbs",
+    publicField,
+    claimText: `Verified ${publicField} claim for the test university migration fixture.`,
+    status: "verified",
+    sourceLabel: `Official ${publicField} source`,
+    sourceUrl: `https://example.edu/${publicField}`,
+    sourceGrade: "A",
+    checkedAt: "2026-07-19",
+    reviewBy: "2027-07-19",
+  })),
 };
 
 async function withTemporaryMigrations(run: (root: string) => Promise<void>) {
@@ -157,5 +184,131 @@ test("rejects a bundle whose manifest id does not match its sequence directory",
     await writeFile(join(migrationDirectory, "payload.json"), JSON.stringify(validPayload));
 
     await assert.rejects(readContentMigrations(root), /must use the directory name/);
+  });
+});
+
+test("validates one reserved migration while another agent's reservation is incomplete", async () => {
+  await withTemporaryMigrations(async (root) => {
+    const completeDirectory = join(root, "0001-test-university");
+    const incompleteDirectory = join(root, "0002-other-agent");
+    await mkdir(completeDirectory);
+    await mkdir(incompleteDirectory);
+    await writeFile(join(completeDirectory, "manifest.json"), JSON.stringify({
+      version: 1,
+      id: "0001-test-university",
+      description: "Publish the complete test university fixture.",
+      createdAt: "2026-07-19",
+      payload: "payload.json",
+    }));
+    await writeFile(join(completeDirectory, "payload.json"), JSON.stringify(validPayload));
+
+    const migrations = await readContentMigrations(root, { onlyId: "0001-test-university" });
+    assert.equal(migrations.length, 1);
+    assert.equal(migrations[0]?.id, "0001-test-university");
+  });
+});
+
+async function writeExpiryBundle(root: string, id: string, reviewBy: string) {
+  const payload = structuredClone(validPayload);
+  payload.evidence[1]!.reviewBy = reviewBy;
+  const directory = join(root, id);
+  await mkdir(directory);
+  await writeFile(join(directory, "manifest.json"), JSON.stringify({
+    version: 1,
+    id,
+    description: "Publish the complete test university fixture.",
+    createdAt: "2026-07-19",
+    payload: "payload.json",
+  }));
+  await writeFile(join(directory, "payload.json"), JSON.stringify(payload));
+}
+
+const expiryNow = new Date("2026-09-15T00:00:00.000Z");
+
+test("expired review-by dates are warnings offline and for applied bundles, not validation failures", async () => {
+  await withTemporaryMigrations(async (root) => {
+    await writeExpiryBundle(root, "0001-test-university", "2026-09-11");
+    const migrations = await readContentMigrations(root, { now: expiryNow });
+    assert.equal(migrations.length, 1);
+    assert.deepEqual(migrations[0]?.expiredEvidence.map((item) => item.publicField), ["admissions"]);
+
+    const offline = classifyReviewByExpiry(migrations);
+    assert.equal(offline.errors.length, 0);
+    assert.equal(offline.warnings.length, 1);
+    assert.match(offline.warnings[0]!, /expired review-by date \(2026-09-11\)/);
+
+    const applied = classifyReviewByExpiry(migrations, { appliedIds: new Set(["0001-test-university"]) });
+    assert.equal(applied.errors.length, 0);
+    assert.equal(applied.warnings.length, 1);
+  });
+});
+
+test("expired review-by dates block a pending bundle at check/apply time", async () => {
+  await withTemporaryMigrations(async (root) => {
+    await writeExpiryBundle(root, "0001-test-university", "2026-09-11");
+    const migrations = await readContentMigrations(root, { now: expiryNow });
+    const latestMigrationIdBySlug = await readLatestMigrationIdByUniversitySlug(root);
+    const result = classifyReviewByExpiry(migrations, { appliedIds: new Set(), latestMigrationIdBySlug });
+    assert.equal(result.warnings.length, 0);
+    assert.equal(result.errors.length, 1);
+    assert.match(result.errors[0]!, /0001-test-university .*Pending bundles cannot be applied/);
+  });
+});
+
+test("an expired pending bundle superseded by a later pending bundle only warns", async () => {
+  await withTemporaryMigrations(async (root) => {
+    await writeExpiryBundle(root, "0001-test-university", "2026-09-11");
+    await writeExpiryBundle(root, "0002-test-university-correction", "2027-03-01");
+    const migrations = await readContentMigrations(root, { now: expiryNow });
+    const latestMigrationIdBySlug = await readLatestMigrationIdByUniversitySlug(root);
+    assert.equal(latestMigrationIdBySlug.get("test-university"), "0002-test-university-correction");
+
+    const bothPending = classifyReviewByExpiry(migrations, { appliedIds: new Set(), latestMigrationIdBySlug });
+    assert.equal(bothPending.errors.length, 0);
+    assert.equal(bothPending.warnings.length, 1);
+
+    // If the superseding bundle is already applied, replaying the stale bundle would overwrite newer content.
+    const correctionApplied = classifyReviewByExpiry(migrations, {
+      appliedIds: new Set(["0002-test-university-correction"]),
+      latestMigrationIdBySlug,
+    });
+    assert.equal(correctionApplied.errors.length, 1);
+  });
+});
+
+test("grandfathered legacy bundles keep free-text mediums while every other bundle needs a language label", async () => {
+  const sentenceMediumPayload = structuredClone(validPayload);
+  sentenceMediumPayload.universities[0]!.programmes[0]!.medium =
+    "English throughout all eight semesters, including laboratory work and assessment.";
+
+  async function writeBundle(root: string, id: string) {
+    const directory = join(root, id);
+    await mkdir(directory);
+    await writeFile(join(directory, "manifest.json"), JSON.stringify({
+      version: 1,
+      id,
+      description: "Publish the complete test university fixture.",
+      createdAt: "2026-07-19",
+      payload: "payload.json",
+    }));
+    await writeFile(join(directory, "payload.json"), JSON.stringify(sentenceMediumPayload));
+  }
+
+  const legacyId = "0091-india-manipal-academy-of-higher-education";
+  assert.ok(LEGACY_FREE_TEXT_MEDIUM_MIGRATION_IDS.has(legacyId));
+
+  await withTemporaryMigrations(async (root) => {
+    await writeBundle(root, legacyId);
+    const migrations = await readContentMigrations(root);
+    assert.equal(migrations.length, 1);
+    assert.equal(
+      migrations[0]?.payload.universities[0]?.programmes[0]?.medium,
+      sentenceMediumPayload.universities[0]!.programmes[0]!.medium,
+    );
+  });
+
+  await withTemporaryMigrations(async (root) => {
+    await writeBundle(root, "0098-test-university");
+    await assert.rejects(readContentMigrations(root), /put delivery detail in mediumNote/);
   });
 });

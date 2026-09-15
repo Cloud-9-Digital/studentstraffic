@@ -30,7 +30,9 @@ export function CounsellingDialog({
   ctaVariant = "header_dialog",
   countrySlug,
   courseSlug,
+  universitySlug,
   notes,
+  lockInterest = false,
 }: {
   triggerContent: React.ReactNode;
   triggerClassName?: string;
@@ -44,7 +46,11 @@ export function CounsellingDialog({
   ctaVariant?: string;
   countrySlug?: string;
   courseSlug?: string;
+  /** Attributes the lead to a specific university (stored on leads.university_slug). */
+  universitySlug?: string;
   notes?: string;
+  /** Replaces the course/country selects with hidden inputs — see LeadForm. */
+  lockInterest?: boolean;
 }) {
   const [open, setOpen] = useState(false);
   const contentId = useId();
@@ -127,12 +133,14 @@ export function CounsellingDialog({
 
             <div className="border-t border-border p-6 sm:p-8 md:border-l md:border-t-0">
               <DialogLeadForm
-                key={`${ctaVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}`}
+                key={`${ctaVariant}:${countrySlug ?? ""}:${courseSlug ?? ""}:${universitySlug ?? ""}`}
                 ctaVariant={ctaVariant}
                 submitLabel={submitLabel}
                 countrySlug={countrySlug}
                 courseSlug={courseSlug}
+                universitySlug={universitySlug}
                 notes={notes}
+                lockInterest={lockInterest}
                 embedded
                 stacked
               />

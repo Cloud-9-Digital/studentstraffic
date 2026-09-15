@@ -30,6 +30,7 @@ export function UniversitySnapshotSection({
   university: University;
   country: Country;
 }) {
+  const medium = formatProgramMedium(primaryProgram.offering.medium, country.slug);
   const stats = [
     {
       icon: <CircleDollarSign className="size-3.5" />,
@@ -41,11 +42,15 @@ export function UniversitySnapshotSection({
       label: "Duration",
       value: formatProgramDuration(primaryProgram.offering.durationYears),
     },
-    {
-      icon: <Languages className="size-3.5" />,
-      label: "Medium",
-      value: formatProgramMedium(primaryProgram.offering.medium, country.slug),
-    },
+    ...(medium
+      ? [
+          {
+            icon: <Languages className="size-3.5" />,
+            label: "Medium",
+            value: medium,
+          },
+        ]
+      : []),
     {
       icon: <CalendarDays className="size-3.5" />,
       label: "Intake",

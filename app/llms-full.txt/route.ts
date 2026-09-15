@@ -303,11 +303,11 @@ export async function GET(request: Request) {
         const totalFee = hasPublishedUsdAmount(offering.totalTuitionUsd)
           ? `, $${offering.totalTuitionUsd.toLocaleString("en-US")} total`
           : "";
+        const medium = formatProgramMedium(offering.medium, university.countrySlug);
         programLines.push(
-          `  - ${courseName}: ${fee}${totalFee}, ${offering.durationYears} years, ${formatProgramMedium(
-            offering.medium as Parameters<typeof formatProgramMedium>[0],
-            university.countrySlug,
-          )}`,
+          `  - ${courseName}: ${fee}${totalFee}, ${offering.durationYears} years${
+            medium ? `, ${medium}` : ""
+          }`,
         );
       }
       lines.push(`- Programs:`);
